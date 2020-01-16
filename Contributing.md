@@ -43,7 +43,7 @@ You can submit minor changes or larger submissions as follows:
 
 * **Minor changes** - You can easily contribute minor updates by clicking the **Edit** button in the topic that you want to modify.
 
-* **Larger submissions** - If you're making substantial changes to an existing topic, adding or changing images, or contributing a new topic, you need to fork the **MicrosoftDocs/Dynamics-365-Operations** repository, use GitHub or install your favorite Markdown editor, and learn some Git commands.
+* **Larger submissions** - If you're making substantial changes to an existing topic, adding or changing images, or contributing a new topic, you need to fork the **DXCANZProduct/ICOND365/master** repository, use GitHub or install your favorite Markdown editor, and learn some Git commands.
 
 ### Minor changes
 If you only need to make textual updates to an existing topic, you can use GitHub's web-based Markdown editor to submit your changes. 
@@ -71,7 +71,7 @@ For the following sorts of work, we strongly recommend that you install and lear
 
 If you're making substantial changes to an existing topic, adding or changing images, or contributing a new topic, follow these steps. 
 
-1. Fork the **MicrosoftDocs/Dynamics-365-Unified-Operations** repository.
+1. Fork the **DXCANZProduct/ICOND365/master** repository.
 
 2. Create a branch for your topic.
 
@@ -83,17 +83,15 @@ If you're making substantial changes to an existing topic, adding or changing im
 
    - Be sure to follow the proper Markdown syntax. See [Markdown basics](https://help.github.com/articles/markdown-basics/) for more information.
 
-4. Submit a pull request from your branch to **MicrosoftDocs/Dynamics-365-Operations/master**. Your pull request will be reviewed, and we'll let you know if the change looks good or if there are any other updates or changes needed in order to approve it.
+4. Submit a pull request from your branch to **DXCANZProduct/ICOND365/master**. Your pull request will be reviewed, and we'll let you know if the change looks good or if there are any other updates or changes needed in order to approve it.
 
 5. If needed, make any necessary updates to your branch. Your pull request will be merged into the master branch after it has been reviewed and your changes are approved.
 
-On a certain cadence, we push all commits from the master branch into the live branch, after which you'll be able to see your contribution live at https://docs.microsoft.com/en-us/dynamics365/.
+On a certain cadence, we push all commits from the master branch into the live branch, this will eventually be added to a live branch once published to D365.  This has not been done, but will be once product team has sufficient documentation complete.
 
 ## Contributing to samples
 If you have sample code, include the code as inline code blocks in your topic. There are currently no sample code repositories available for public contributions.
 
-## Contributor License Agreement
-If you submit a pull request with new or significant changes to documentation, you will need to submit an online Contributor License Agreement (CLA) if you are not an employee of Microsoft. You will need complete the online form before your pull request can be accepted. You must sign the CLA before your pull request is merged. This is a one-time requirement for projects on the Dynamics 365 documentation site. You can read more about [Contributor License Agreements (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
 
 ## Do's and don'ts
 Here are some guiding rules that you should keep in mind when you're contributing to the documentation.
