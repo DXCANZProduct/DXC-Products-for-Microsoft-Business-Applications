@@ -1,2 +1,2 @@
 # ICOND365
-Repository for ICON Products on D365 F&amp;O
+Repository for ICON Products on D365 Financials and Operations
