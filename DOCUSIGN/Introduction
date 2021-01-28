@@ -1,32 +1,3 @@
----
-# required metadata
-
-title: [Docusign Introduction]
-description: [Introduction to Docusign integration into D365 Finance and Operations]
-author: [davidsna]
-manager: Kym Parker
-ms.date: 11/28/2020
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Not specific to AOT object]
-audience: [Application]
-# ms.devlang: 
-ms.reviewer: [Natalie Davidson]
-ms.search.scope: [Functional client]
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: [Global]
-# ms.search.industry: [ ]
-ms.author: [ndavidson2]
-ms.search.validFrom: [Original release 2017]
-ms.dyn365.ops.version: [D365 Version 8.0]
----
-
 # **Introduction**
 
 > The DocuSign for Dynamics 365 for Operations module couples Microsoft D365 Finance and Operations with the DocuSign® solution. 
