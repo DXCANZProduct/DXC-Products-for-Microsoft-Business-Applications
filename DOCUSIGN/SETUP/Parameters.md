@@ -41,6 +41,9 @@ The Docusign parameters form is used to set up the connection between your Dynam
 | **Password**                      | Enter the passoword associated with the Docusign administrator account.     | 
 | **Log exception**                 | Select *Yes* to capture the Docusign error messages when they occur.  The messages will appear on the **Exeptions** page within the Docusign integration. <br> <br> The errors will allow for investiation and resolution by an administrator.      | 
 
+When working within the parameters form, the web services UI will be varied both across environments and across regions.  The test environments will have a working services connection by connecting to the following:  https://demo.docusign.net/restapi .  This is regardless of the region of the business.  
+
+When moving to a production environment, you must update your integration to use the right base URL for API calls instead of https://demo.docusign.net/restapi . The base URL will vary, depending on the DocuSign account being used.  Each registered DocuSign user for your application can access one or more accounts. Each account has an associated base URL. Currently, the production base URLs include: www.docusign.net, na2.docusign.net, eu.docusign.net, etc. Additional base URLs are added regularly.  
 
 
 ## Updates FastTab 
