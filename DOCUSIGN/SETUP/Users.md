@@ -46,3 +46,5 @@ To create a new user:
 | **Operator name**                | The name associated to the UserId selected in the **UserId** field.  This is set up on the **Users** page.     |
  
 
+Multiple D365 user accounts can be added to the same Docusign user name.  New users can be added to the existing Docusign account by following steps 3 and 4 above. Dynamics 365 users are required to have an assigned Docusign User account to process correctly.
+
