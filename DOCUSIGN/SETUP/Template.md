@@ -40,7 +40,7 @@ On opening the page, the templates overview shows all of the available templates
 | :-------------------------------- |:-------------------------------------| 
 | **Template**                      | Select the Unique ID that will be the template name.   |
 | **Description**                   | A description of the template.     |
-| **Signing sequence**              | The sequence of signing of the *Docusign* document that will be sent.  Three options are available for signing:  <b>**External only** - only parties external to the business will sign the document.
+| **Signing sequence**              | The sequence of signing of the *Docusign* document that will be sent.  Three options are available for signing:  <> **External only** - only parties external to the business will sign the document.
                                       **External/Internal** - both external and internal parties must sign th edocument. The external parties must complete their requirements first. 
                                       **Internal** - Internal parties will sign the document. | 
 
