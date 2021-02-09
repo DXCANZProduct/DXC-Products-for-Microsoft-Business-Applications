@@ -41,7 +41,7 @@ On opening the page, the templates overview shows all of the available templates
 | :-------------------------------- |:-------------------------------------| 
 | **Template**                      | Select the Unique ID that will be the template name.   |
 | **Description**                   | A description of the template.     |
-| **Signing sequence**              | The sequence of signing of the *Docusign* document that will be sent.  Three options are available for signing: <br> **External only** - only parties external to the business will sign the document. <br> **External/Internal** - both external and internal parties must sign th edocument. The external parties must complete their requirements first. <br>  **Internal** - Internal parties will sign the document. | 
+| **Signing sequence**              | The sequence of signing of the *Docusign* document that will be sent.  Three options are available for signing: <br> <br> **External only** - only parties external to the business will sign the document. <br> **External/Internal** - both external and internal parties must sign th edocument. The external parties must complete their requirements first. <br>  **Internal** - Internal parties will sign the document. | 
 
 
 When creating a new Docusign template, a new page will open to allow users to create a new template.   There are three sections on the *New Record*  Templates page view.  The **Template** section contains the templates overview information outlined above.  There are two additional sections available for creating templates and will be outlined below.
@@ -55,5 +55,6 @@ To add a signatory to the template, select the **Add** action in the signatory s
 | **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
 | **Sorting**                      | The sorting number determines the order the document will be signed.  This will allow users to define if the order will be signed internally or externally first.  The **Sorting** field works in conjunction with **Dependency** field to identify the order documents are sent through *Docusign*.   |
-| **Description**                   | A description of the signatory.     |
-| **Signing sequence**              | The sequence of signing of the *Docusign* document that will be sent.  Three options are available for signing: <br> **External only** - only parties external to the business will sign the document. <br> **External/Internal** - both external and internal parties must sign th edocument. The external parties must complete their requirements first. <br>  **Internal** - Internal parties will sign the document. | 
+| **Description**                   | A description of the signatory. This will be a description of the person who will be signing the document, such as a Purchasing agent or Sales Manager.     |
+| **Depedency**              | If there is a dependency required, enter the **sorting** value of the signatory.  This number will determine who signs a document first, and every subsequent signatory. | 
+| **Type**                          |  Enter the **Type** of the party that will sign the document.  <br> <br> *External* will be a party external to the business. <br> <br> *Internal* will be a party within the business. | 
