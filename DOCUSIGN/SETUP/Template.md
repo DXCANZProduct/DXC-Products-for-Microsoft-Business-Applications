@@ -28,9 +28,17 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 
-#Templates
+# Templates
 
 Docusign templates provide the configuration of various documents inside of D365.  Templated determine whether the document should be authorised by external users, internal users, or both.  Templates also identify the order of authorization and the details of the information and placement of *signatory* information.  At least one template must be created in order to use this module; however multiple templates can be created depending upon business requirements.  Templates are created by going to the **Organization Administration > Setup > Docusign > Templates** page.
 
 
+On opening the page, the templates overview shows all of the available templates that have been created.
+
+
+| **Field**                         | **Description**                      | 
+| :-------------------------------- |:-------------------------------------| 
+| **Template**                      | Select the Unique ID that will be the template name.   |
+| **Description**                   | A description of the template.     |
+| **Signing sequence**              | The sequence of signing of the *Docusign* document that will be sent.  Three options are available for signing: <b>  **External only** - only parties external to the business will sign the document. <b> **External/Internal** - both external and internal parties must sign th edocument. The external parties must complete their requirements first. <b> **Internal** - Internal parties will sign the document. | 
 
