@@ -32,6 +32,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 Docusign templates provide the configuration of various documents inside of D365.  Templated determine whether the document should be authorised by external users, internal users, or both.  Templates also identify the order of authorization and the details of the information and placement of *signatory* information.  At least one template must be created in order to use this module; however multiple templates can be created depending upon business requirements.  Templates are created by going to the **Organization Administration > Setup > Docusign > Templates** page.
 
+## Overview ##
 
 On opening the page, the templates overview shows all of the available templates that have been created.
 
@@ -42,3 +43,17 @@ On opening the page, the templates overview shows all of the available templates
 | **Description**                   | A description of the template.     |
 | **Signing sequence**              | The sequence of signing of the *Docusign* document that will be sent.  Three options are available for signing: <br> **External only** - only parties external to the business will sign the document. <br> **External/Internal** - both external and internal parties must sign th edocument. The external parties must complete their requirements first. <br>  **Internal** - Internal parties will sign the document. | 
 
+
+When creating a new Docusign template, a new page will open to allow users to create a new template.   There are three sections on the *New Record*  Templates page view.  The **Template** section contains the templates overview information outlined above.  There are two additional sections available for creating templates and will be outlined below.
+
+## Signatories ##
+
+In the **Signatories** section, you will enter the parties that will sign the document,  the order of completion, and if there are any dependencies in signing.  Multiple parties can be set up in this section to sign a document. The number and type of signatories are defined the **Template** section.   
+
+To add a signatory to the template, select the **Add** action in the signatory section. 
+
+| **Field**                         | **Description**                      | 
+| :-------------------------------- |:-------------------------------------| 
+| **Sorting**                      | The sorting number determines the order the document will be signed.  This will allow users to define if the order will be signed internally or externally first.  The **Sorting** field works in conjunction with **Dependency** field to identify the order documents are sent through *Docusign*.   |
+| **Description**                   | A description of the signatory.     |
+| **Signing sequence**              | The sequence of signing of the *Docusign* document that will be sent.  Three options are available for signing: <br> **External only** - only parties external to the business will sign the document. <br> **External/Internal** - both external and internal parties must sign th edocument. The external parties must complete their requirements first. <br>  **Internal** - Internal parties will sign the document. | 
