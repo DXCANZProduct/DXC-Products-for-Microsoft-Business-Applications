@@ -29,7 +29,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 #  Exceptions
 
-The exceptions page provides the details of any Docusign documents that have had an error at the time of confirmation of the document.  The administrator will be able to review the errors associated.  From there, the administrator can update the details of the document so that it will be successfully processed in future transactions.  The **Exceptions** page is found by navigating to **Organization administration > 
+The exceptions page provides the details of any Docusign documents that have had an error at the time of confirmation of the document.  The administrator will be able to review the errors associated.  From there, the administrator can update the details of the document so that it will be successfully processed in future transactions.  The **Exceptions** page is found by navigating to **Organization administration > Inquiries and Reports > Docusign > Exceptions.**
 
 
 | **Field**                         | **Description**                      | 
