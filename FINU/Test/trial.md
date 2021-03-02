@@ -33,3 +33,214 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 Setup &gt; Advanced bank reconciliation setup &gt; BANK STATEMENT FORMAT </span>***
 
 When the finance utilities parameter Enable custom bank statement formats is enabled, a new checkbox field customized format becomes active in the bank statement format form.  When the customized format is selected, the following below fields and buttons will also be activated
+
+#### 3.1.2.1.	Fields
+<table>
+    <tr>
+                 <td>  <b> Field </b> </ td> 
+                 <td>  <b> Description</b> </ td>         
+   </tr>
+    <tr>
+       <td> ABSR File type  </ td>    
+       <td> Choose the file format of the bank statement – options include:   
+            <br> -	Flat File  
+            <br> - 	BAI2 File   
+            <br> -	NAI File 
+            <br> -	BRS 
+            <br> -	Custom
+       </ td>   
+    </tr> 
+    <tr>
+       <td> Field delimiter   </ td>    
+       <td> 
+       The type of field delimiter the file uses. E.g. a comma “,”  
+       </td>   
+    </tr>
+       <td> Record code field position  </ td>    
+       <td> This field is active only if the ABSR file type is BAI2, NAI or BRS file. This field captures the position of the Line type code in each line of the file.
+E.g. if Field Number =1, the first field of each line in the file determines the Line Type (i.e. 01, 02, 03, 16, 49, 98, 99).
+    </td>   
+      <tr>
+       <td> Record code field length </td>    
+       <td> Applicable to BRS Files as record length isn’t always 1 </td>   
+    </tr> 
+</table>
+
+
+#### Note: 
+When creating a bank statement format, processing group is mandatory (including finance utilities custom bank statement formats). Before configuring a custom bank format, a processing group linked to 'bank statements' must be created. Below are the steps to create such a processing group: 
+1.	In the bank statement format, right click on processing group field and select the option 'View details' (There is no direct navigation to 'Processing group' form) 
+2.	In the processing group form, create a new processing group 'Bank Statement' 
+3.	Click 'entities' button 
+4.	In the entities form, Add an entity 'Bank statements' and select the source data format 'XMLElement' 
+5.	Click 'Save' button and close the form 
+6.	Attach the processing group ‘BankStatement’ while configuring the bank statement format 
+
+
+#### 3.1.2.2.	Custom Format
+
+Only available when Custom format is ticked
+#### <I> Buttons </I>
+
+<table>
+    <tr>
+                 <td>  <b> Button </b> </ td> 
+                 <td>  <b> Description </b> </ td>         
+   </tr>
+    <tr>
+       <td> <b> Custom Format > Lines  </b> </td>    
+       <td> The Lines form stores the column definition to use whilst importing the bank statement.   </td>   
+    </tr> 
+     <tr>
+       <td> <b> Custom Format > Line Codes  </b> </td>    
+       <td> The Line codes form stores the format line type. 
+Note: Line codes button is active only if the ABSR file type is Custom or BRS
+       </td> 
+     </tr>
+    <tr>
+       <td> <b> Custom Format > Line codes format </b> </td>    
+       <td> The Type codes stores the relation between statement code and transaction direction (debit/credit) for BAI2 or NAI file 
+Note: Type codes button is active only if the ABSR file type is BAI2 file, NAI file or Custom. 
+       </td>   
+    </tr> 
+          
+</table>
+
+#### Custom Format - Line Codes
+
+***<span style="font-variant:small-caps;">CASH AND BANK MANAGEMENT  &gt;
+ SETUP &gt; ADVANCED BANK RECONCILIATION SETUP  &gt; BANK STATEMENT FORMAT</span>***
+
+***<span style="font-variant:small-caps;"> Custom Format - Line codes button </span>*** is used to determine the line identifier for this bank statement. It is used in the Custom Format - Lines definition. It contains the following fields; 
+
+<table>
+    <tr>
+                 <td>  <b> Field </b> </ td> 
+                 <td>  <b> Description </b> </ td>         
+   </tr>
+    <tr>
+       <td> <b> Line Code </b> </td>    
+       <td> The field number corresponds to the format line type specified on the bank statement </td>   
+    </tr> 
+      <tr>
+       <td> <b> Description </b> </td>    
+       <td> Specifies the format line type description. </td>   
+    </tr>       
+</table>
+
+***<span style="font-variant:small-caps;"> Custom Format – Lines</span>***
+
+***<span style="font-variant:small-caps;"> CASH AND BANK MANAGEMENT  &gt;> SETUP  &gt; ADVANCED BANK RECONCILIATION SETUP  &gt; BANK STATEMENT FORMAT </span>***
+
+***<span style="font-variant:small-caps;"> Custom Format - Lines button </span>***
+
+The Lines form defines the column definitions to use whilst importing the bank statement. It identifies which fields to use, and their position on the Bank Statement file, for the system to use when loading the detail into the system. It contains the following fields;
+
+<table>
+    <tr>
+                 <td>  <b> Field </b> </ td> 
+                 <td>  <b> Description </b> </ td>         
+   </tr>
+    <tr>
+       <td> <b> Field number  </b></td>    
+       <td> The field number corresponds to the column number on the bank statement.  Note: Not all columns in the statement need to be configured. 
+        </td>   
+    </tr> 
+      <tr>
+       <td> <b> Line code  </b></td>    
+       <td> This option appears when the ABSR File Type is either BAI2 File, NAI File, BRS or Custom.    
+       <br>    Line type of the file where the Bank Statement fields map to Dynamics 365 Bank Transactions: 
+       <br>    02	– Group Header   
+       <br>    03	– Account Identifier  
+       <br>    16 – Transaction detail  
+       <br>    88 – Continuation Record  
+       <br>    Custom (This will use the codes specified on the Line Codes form) 
+       </td> 
+    </tr> 
+      <tr>
+       <td> <b> Field  </b></td>    
+       <td> The corresponding bank account transaction field in Dynamics 365 that this bank statement field maps to - options include:  
+	       <br>   - Date
+         <br>   - Bank statement transaction code 
+         <br>   -	Description
+         <br>   - Amount
+         <br>   - Reference no. 
+         <br>   - Entry reference 
+         <br>   - Bank account number 
+         <br>   - Currency 
+         <br>   - Trading party
+         <br>   - Document number 
+         <br>   -	Related bank account
+        </td> 
+    </tr> 
+    <tr>
+       <td> <b> Start position  </b></td>    
+       <td> If no delimiter is selected on the header, the start position of the field will need to be entered.  </td>    
+    </tr> 
+    <tr>
+       <td> <b> Length  </b></td>    
+       <td> If no delimiter is selected on the header, the length of the field will need to be entered.  </td> 	   
+    </tr> 
+    <tr>
+       <td> <b> Strip leading zeros  </b></td>    
+       <td> Specifies whether any leading zeroes in this field should be removed.  </td> 	   
+    </tr>
+    <tr>
+       <td> <b> Date format  </b></td>    
+       <td> This specifies the date format in the bank statement. Note: This option appears when the Bank Account Transaction Field is Date. 
+       </td> 	   
+    </tr> 
+      <tr>
+       <td> <b> Use Julian date format </b></td>    
+       <td> Y/N </td> 	   
+    </tr> 
+      <tr>
+       <td> <b> Julian date format </b></td>    
+       <td> This specifies the Julian date format in the bank statement.  </td> 	   
+    </tr> 
+      <tr>
+       <td> <b> Decimal adjustment  </b></td>    
+       <td> This specifies the Decimal format in the bank statement. Note: This option appears when the File Type is BAI2 File or BRS and Bank. Account Transaction Field is Amount.  
+       </td> 	   
+    </tr>
+      <tr>
+       <td> <b> Position credit/debit </b></td>    
+       <td> This specifies the position of the credit/debit indicator for BRS file’s Amount field </td> 	   
+    </tr>
+</table>
+
+***<span style="font-variant:small-caps;"><U> Custom Format - Line Codes Format </U> </span>***
+
+***<span style="font-variant:small-caps;">CASH AND BANK MANAGEMENT  &gt;
+ SETUP  &gt; ADVANCED BANK RECONCILIATION SETUP  &gt; BANK STATEMENT FORMAT </span>***
+ 
+<b> Custom Format - Line codes format button.  </b> The line codes format form controls how transaction types are posted
+
+<table>
+    <tr>
+                 <td>  <b> Field </b> </ td> 
+                 <td>  <b> Description </b> </ td>         
+   </tr>   
+    <tr>
+       <td> <b> From type code  </b></td>    
+       <td> Transaction type code range from the Bank Statement Transaction Types  </td> 	   
+    </tr> 
+      <tr>
+       <td> <b> To type code  </b></td>    
+       <td> Transaction type code range from the Bank Statement Transaction Types </td> 	   
+    </tr> 
+      <tr>
+       <td> <b> Debit/Credit  </b></td>    
+       <td> Area to specify if transaction statement line amount is: 
+             <br> -	Debit in the system (i.e. positive) 
+             <br> -	Credit in the system (i.e. negative) 
+       </td> 	   
+    </tr>
+    <tr>
+       <td> <b> Description </b></td>    
+       <td> Description of the particular rule  </td> 	   
+    </tr>        
+</table>
+
+
+The line codes format form is available only when either the <b> BAI2, NAI File, </b> or  <b> Custom </b> format is selected.
