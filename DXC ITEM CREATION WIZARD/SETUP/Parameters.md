@@ -33,8 +33,9 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 Item creation utilizes a series of setup parameters to create items.  The item creation wizard can be found by navigating to *Item creation > Setup > Item creation parameters > General (tab)*
 
-| **Field**   |  **Description** | 
-|---|---|
+|:---|:---|
+|  **Field**  | **Description** | 
+|:---|:---|
 | Item creation |       
 |  Delete product dimension value with a variant  | What should happen when a product dimension value with an existing variant is deleted |   
 
