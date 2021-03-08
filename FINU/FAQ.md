@@ -28,7 +28,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # 	Frequently Asked Questions
-## .	Version and Support Information
+## 	Version and Support Information
 
 
 **Where can I find contact information for support?**
