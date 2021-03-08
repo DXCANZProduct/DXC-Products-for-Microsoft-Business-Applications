@@ -30,10 +30,15 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # 	Frequently Asked Questions
 ## .	Version and Support Information
 
-	**Where can I find contact information for support?**
-    <br> o	Support contact details can be located on the Finance Utilities parameters form on the About tab.
-  -	Where can I identify the installed version of the Finance Utilities module
-    <br> o	Navigate to Settings > About.  A list of Loaded Packages and their models will be displayed.  Search for and expand DXCFinanceUtilities. The version information will be displayed on the right (i.e. DXC Finance Utilities 10.0.240.2019443 (isv))
+
+**Where can I find contact information for support?**
+   
+Support contact details can be located on the Finance Utilities parameters form on the About tab.
+  
+ **Where can I identify the installed version of the Finance Utilities module**
+
+Navigate to **Settings > About**
+A list of Loaded Packages and their models will be displayed.  Search for and expand DXCFinanceUtilities. The version information will be displayed on the right (i.e. DXC Finance Utilities 10.0.240.2019443 (isv))
 
 
 ## 	Troubleshooting
