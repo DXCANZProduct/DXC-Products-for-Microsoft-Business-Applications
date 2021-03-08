@@ -50,5 +50,4 @@ Each time a bulk item import is processed, a record is created in the Item creat
 8.	Once item has been updated, select the  **Validate** button.
 
 *Note: When using a multi-step item creation template, all item information is imported at once, same way as in single step. However, data validation, update and correction must happen step by step.
-All items loaded within a single session must pass validation before workflow can be processed and next step completed. A single item from the bulk upload cannot be separated, validated and processed through workflow independently. 
-*
+All items loaded within a single session must pass validation before workflow can be processed and next step completed. A single item from the bulk upload cannot be separated, validated and processed through workflow independently.*
