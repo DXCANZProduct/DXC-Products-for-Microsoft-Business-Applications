@@ -29,6 +29,11 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ### 2.1.2	Set up Workflow
 
+The workflow form is used to set up the approval process within your Dynamics 365 environment and your workflow approval account. 
+Within this form, you will set up the details regarding the administrator of the workflow account that will be sending template for approval through item creation workflow. 
+
+You can reach the item creation workflow form by navigating to
+
 **Item creation > Setup > Item creation workflows**
 
 1 workflow must be created.
