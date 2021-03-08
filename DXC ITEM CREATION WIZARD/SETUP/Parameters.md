@@ -40,7 +40,8 @@ Item creation utilizes a series of setup parameters to create items.  The item c
    </tr> 
    <tbody>
    <tr>
-        <td colspan = "2"> Item creation </td>    	   
+        <td> Item creation </td>
+       <td> *???* </td>
     </tr> 
     <tr>
        <td> <b> Delete product dimension value with a variant </b></td>     
@@ -49,7 +50,7 @@ Item creation utilizes a series of setup parameters to create items.  The item c
     </tbody>      
 </table>
 
-The item creation wizard uses number sequences to create records, which are shared across legal entities within the D365 system. The number sequences are referenced in the following page and can be found by navigating to <b> Item creation > Setup > Item creation parameters > Shared number sequences (tab) </b>
+The item creation wizard uses number sequences to create records, which are shared across legal entities within the D365 system. The number sequences are referenced in the following page and can be found by navigating to <b> Item creation > Setup > Item creation parameters > Shared number sequences  </b>
 
 <table style="width: 100%">
     <tr>
