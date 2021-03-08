@@ -27,8 +27,14 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-### 4.2.1.	Setup BPAY payment
-#### 4.2.1.1.	Method of payment
+### Setup BPAY payment
+
+A paragraph about this process is required... 
+
+
+#### 	Method of payment
+
+
 <b> ACCOUNTS PAYABLE > PAYMENT SETUP > METHODS OF PAYMENT </b>
 
 Enabling  <b> BPAY method of payment </b> updates the following:
@@ -39,18 +45,18 @@ The following fields have been added as part of the BPAY modification, but are o
 -	Payment control > Lodgement reference is mandatory
 -	Payment attributes > Lodgement reference 
 
-#### 4.2.1.2.	Company bank
+#### Company bank
 <b> CASH AND BANK MANAGEMENT > BANK ACCOUNTS > BANK ACCOUNTS </b>
 The following field have been added as part of the BPAY modification and can be for mapping in the GER:
 -	BPAY batch ID. Under Additional identification section.
 
-#### 4.2.1.3.	Vendor bank account
+#### 	Vendor bank account
 ACCOUNTS PAYABLE > VENDORS > ALL VENDORS
 The following fields have been added as part of the BPAY modification:
 - Biller code (length 10)
 -	Lodgement reference (length 18)
 
-#### 4.2.1.4.	Data entities
+#### Data entities
 The new BPAY fields have been added to the applicable data entities:
 
 <table>
@@ -86,13 +92,12 @@ The new BPAY fields have been added to the applicable data entities:
    </tr>  
 </table>
 
-#### 4.2.2.	BPAY Vendor Invoices
-<b> ACCOUNTS PAYABLE > INVOICES > TAX INVOICE JOURNAL
+#### 	BPAY Vendor Invoices
+*ACCOUNTS PAYABLE > INVOICES > TAX INVOICE JOURNAL
 ACCOUNTS PAYABLE > INVOICES > PENDING VENDOR INVOICES
 ACCOUNTS PAYABLE > INVOICES > TAX INVOICE REGISTER
 GENERAL LEDGER > JOURNAL ENTRIES > GENERAL JOURNALS
-PROJECT MANAGEMENT AND ACCOUNTING > JOURNALS > EXPENSE
-</b>  
+PROJECT MANAGEMENT AND ACCOUNTING > JOURNALS > EXPENSE*  
 
 Payment id is currently on the vendor invoicing forms and will be utilized for BPAY. New BPAY field 
 <b> Lodgement reference </b> has also been added.
@@ -103,7 +108,7 @@ The BPAY modification uses the method of payment control settings to validate fo
 
 If these Payment control mandatory fields are blank the invoice posting will error.
 
-### 4.2.3.	BPAY Vendor Payments
+### BPAY Vendor Payments
 <b> ACCOUNTS PAYABLE > PAYMENTS > VENDOR PAYMENT JOURNAL </b>
 
 New BPAY field <b> Lodgement reference </b> has been added to Vendor payment proposal form. 
