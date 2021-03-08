@@ -32,7 +32,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 The View/Update Imported Items form is used to view or edit the imported items. 
 Within this form, you will view or edit the details regarding the template imported, 
 along with a status that will be utilized when sending template to the approval. 
-You can reach the parameters form by navigating to
+You can reach the Item creation import sessions form by navigating to
 
 **Item creation > Inquiries > Item creation import sessions**
 
