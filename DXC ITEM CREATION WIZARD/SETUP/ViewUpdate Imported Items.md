@@ -29,6 +29,11 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ### 3.2.2	 View/Update Imported Items
 
+The View/Update Imported Items form is used to view or edit the imported items. 
+Within this form, you will view or edit the details regarding the template imported, 
+along with a status that will be utilized when sending template to the approval. 
+You can reach the parameters form by navigating to
+
 **Item creation > Inquiries > Item creation import sessions**
 
 Each time a bulk item import is processed, a record is created in the Item creation import sessions form.
@@ -43,7 +48,7 @@ Each time a bulk item import is processed, a record is created in the Item creat
 
 5.	Each item imported is allocated an item creation # and allocated a status to **notify of any errors.**
 
-6.	The **Log **button will detail further information about the error.
+6.	The **Log** button will detail further information about the error.
 
 7.	To **view/rectify** validation errors, select the **Designer** button
 
