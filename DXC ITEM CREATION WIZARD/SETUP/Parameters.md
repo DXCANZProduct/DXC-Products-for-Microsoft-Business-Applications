@@ -33,10 +33,10 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 Item creation utilizes a series of setup parameters to create items.  The item creation wizard can be found by navigating to *Item creation > Setup > Item creation parameters > General (tab)*
 
-| Field   |  Description | 
+| **Field**   |  **Description** | 
 |---|---|
-| Delete product dimension   | What should happen when a product dimension value with an existing   |   
-| value with a variant  |  variant is deleted |   
+| Item creation | What should happen when a product dimension value with an existing   |   
+|  Delete product dimension value with a variant  |  variant is deleted |   
 
 The item creation wizard uses number sequences to create records, which are shared across legal entities within the D365 system. The number sequences are referenced in the following page and can be found by navigating to <b> Item creation > Setup > Item creation parameters > Shared number sequences  </b>
 
