@@ -29,26 +29,26 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ### 3.2.2	 View/Update Imported Items
 
-<b> Item creation > Inquiries > Item creation import sessions </b>
+**Item creation > Inquiries > Item creation import sessions**
 
 Each time a bulk item import is processed, a record is created in the Item creation import sessions form.
 
-1.	Select a relevant <b> session </b>.  Each import session is date/time stamped with the Start date/time that the import was processed.
+1.	Select a relevant **session**.  Each import session is date/time stamped with the Start date/time that the import was processed.
 
-2.	The <b> End date/time </b> identified the date/time that workflow was completed and the item created.
+2.	The **End date/time** identified the date/time that workflow was completed and the item created.
 
-3.	<b> Status </b> indicates the workflow status. The workflow history can also be viewed via the <b> Action > view history </b> button.  For further information, please see standard Microsoft user guides.
+3.	**Status** indicates the workflow status. The workflow history can also be viewed via the **Action > view history** button.  For further information, please see standard Microsoft user guides.
 
-4.	Click <b> Lines </b> button. 
+4.	Click **Lines** button. 
 
-5.	Each item imported is allocated an item creation # and allocated a status to <b> notify of any errors.</b>
+5.	Each item imported is allocated an item creation # and allocated a status to **notify of any errors.**
 
-6.	The <b> Log </b> button will detail further information about the error.
+6.	The **Log **button will detail further information about the error.
 
-7.	To <b> view/rectify </b> validation errors, select the <b> Designer </b> button
+7.	To **view/rectify** validation errors, select the **Designer** button
 
-8.	Once item has been updated, select the <b> Validate </b> button.
+8.	Once item has been updated, select the  **Validate** button.
 
-<I> Note: When using a multi-step item creation template, all item information is imported at once, same way as in single step. However, data validation, update and correction must happen step by step.
+*Note: When using a multi-step item creation template, all item information is imported at once, same way as in single step. However, data validation, update and correction must happen step by step.
 All items loaded within a single session must pass validation before workflow can be processed and next step completed. A single item from the bulk upload cannot be separated, validated and processed through workflow independently. 
-</I>
+*
