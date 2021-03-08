@@ -31,7 +31,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ## 2.1	Setting up for Item Creation
 ### 2.1.1	Set up Parameters 
 
-<b> Item creation > Setup > Item creation parameters > General (tab) </b>
+Item creation utilizes a series of setup parameters to create items.  The item creation wizard can be found by navigating to <b> Item creation > Setup > Item creation parameters > General (tab) </b>
 
 <table style="width: 100%">
     <tr>
@@ -49,7 +49,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
     </tbody>      
 </table>
 
-<b> Item creation > Setup > Item creation parameters > Shared number sequences (tab) </b>
+The item creation wizard uses number sequences to create records, which are shared across legal entities within the D365 system. The number sequences are referenced in the following page and can be found by navigating to <b> Item creation > Setup > Item creation parameters > Shared number sequences (tab) </b>
 
 <table style="width: 100%">
     <tr>
