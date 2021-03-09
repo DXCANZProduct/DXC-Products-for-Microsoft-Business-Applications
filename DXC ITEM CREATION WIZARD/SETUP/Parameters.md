@@ -31,7 +31,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ## Setting up for Item Creation
 ### Set up Parameters 
 
-Item creation utilizes a series of setup parameters to create items.  The item creation wizard can be found by navigating to *Item creation > Setup > Item creation parameters > General (tab)*
+Item creation utilizes a series of setup parameters to create items within your Dynamics 365 environmen.  
+The item creation wizard can be found by navigating to *Item creation > Setup > Item creation parameters > General (tab)*
 
 
 |  **Field**  | **Description** | 
