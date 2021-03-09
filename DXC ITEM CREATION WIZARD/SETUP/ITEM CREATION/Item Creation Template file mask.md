@@ -39,7 +39,7 @@ ou can reach the Item creation import file masks form by navigating to
 
 Import file name masks need to be created in the system. You need to specify masks for all the files you will be creating and using for the bulk item upload templates. 
 
-*Note: Import file mask ‘Attrib*’ will look in the folder location specified for any files beginning with ‘Attrib’*
+*Note: Import file mask ‘Attrib*’ *will look in the folder location specified for any files beginning with ‘Attrib’*
 
 1.	Click the **New** button. 
 2.	In the **File Mask field** enter the name of the .csv file to be uploaded. The file mask can end with a * to allow for numbering of files. 
