@@ -32,6 +32,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
  
 Item creation template tabs allow you to organise the data within the product template in a similar way that fast tabs organise data within list pages. It is possible to translate your Tabs for other languages that are used within your organisation.
 You can reach the Item creation template tabs form by navigating to
+ 
  **Item creation > Setup > Item Creation > Item creation template tabs**
  
 1.	Click the **New** button.
