@@ -27,8 +27,8 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-### 2.1.4	Managing Item Creation Templates
-#### 2.1.4.1	Create A New Version
+### Managing Item Creation Templates
+#### Create A New Version
 
 The Item Creation Templates form is used to set up the template within your Dynamics 365 environment and your items. 
 Within this form, you will set up the details regarding the items attributes, along with a company that can utilized the item. 
@@ -46,8 +46,8 @@ Versions allow the same template to be used but with an update, a new version nu
 6.	If this new version should be the Current version click the check box **Set as current version.**
 7.	Click **OK**.
 
-##### 2.1.4.2	 Manage Versions
-###### 2.1.4.2.1	View Versions
+##### Manage Versions
+###### View Versions
 
 **Item creation > Setup > Item creation > Item creation templates > Versions (button)**
 
@@ -59,21 +59,21 @@ Managing versions by clicking the Versions icon on the Ribbon bar allows the pos
 4.	Click the **Activate** button.
 5.	To set the 'current' version select click the **Set current** button.
 
-###### 2.1.4.2.2	Activate a Version
+###### Activate a Version
 **Item creation > Setup > Item creation > Item creation templates > Activate (button)**
 To use an Item Creation template, it must be activated. It is not possible to edit an Activated template.
 
 1.	Select the **template** which you wish to activate.
 2.	Click the **Activate** icon on the Ribbon bar.
 
-##### 2.1.4.2.3	Deactivate a Version
+##### Deactivate a Version
 **Item creation > Setup > Item creation > Item creation templates > Deactivate (button)**
 
 It is possible to stop using an Item creation template by deactivating it.
 1.	Select the **Template** you wish to deactivate.
 2.	Click the **Manage > Deactivate** icon from the Ribbon bar.
 
-#### 2.1.4.3	 Copy Versions
+#### Copy Versions
 **Item creation > Setup > Item creation > Item creation templates > Copy (button)**
 
 It is possible to stop using an Item Creation template by Deactivating it.
