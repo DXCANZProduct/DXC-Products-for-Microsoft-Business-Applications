@@ -27,7 +27,7 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-### 2.4.2	Update Group of Items
+### Update Group of Items
 
 A periodic job is available that can be either manually run to update the item status as of a specified date for a range of items. Category hierarchy can be used to help filter products. 
 Where this is the case it allows for item status updated to be planned and entered into AX prior to the effective date.  Reports/inquiries can then be run to filter down based on the item status at a specific date.
@@ -45,7 +45,7 @@ You can reach the Update item status form by navigating to
 
 *Note: Optionally select the Batch tab to run the report on a batch. Please see Microsoft User Guides  For further information*
 
-#### 2.4.2.1	 Update Based on Stock on Hand Rules
+#### Update Based on Stock on Hand Rules
 
 Automatic status change rules can be setup to update the item status based on certain events that take place.  For example, an item that has been set to 'Run Out' can be updated to 'Discontinued' Once the stock on hand becomes zero. 
 You can reach the Automatic status change rule form by navigating to
@@ -59,11 +59,11 @@ You can reach the Automatic status change rule form by navigating to
 5.	Repeat as necessary.
 6.	Click **Close**  once completed.
 
-### 2.4.3	Item Status Visibility
-#### 2.4.3.1	Released Products
+### Item Status Visibility
+####	Released Products
 
 When viewing the Released Product details, the inventory status symbol will be displayed directly below the Item number and description.
 
-#### 2.4.3.2	Inventory Transactions
+####	Inventory Transactions
 When creating a sales/purchase order, the inventory status symbol will be displayed in the first column of the sales/purchase line.  This will enable the user to identify that the item is ‘active’, discontinued’ etc.
 
