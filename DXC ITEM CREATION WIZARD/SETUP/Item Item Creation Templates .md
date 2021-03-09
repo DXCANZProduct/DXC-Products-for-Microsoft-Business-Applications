@@ -27,13 +27,13 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-### 2.1.3	Setting up item creation templates
-#### 2.1.3.1	Create Template Tabs
- 
- **Item creation > Setup > Item Creation > Item creation template tabs**
+### Setting up item creation templates
+#### Create Template Tabs
  
 Item creation template tabs allow you to organise the data within the product template in a similar way that fast tabs organise data within list pages. It is possible to translate your Tabs for other languages that are used within your organisation.
-
+You can reach the Item creation template tabs form by navigating to
+ **Item creation > Setup > Item Creation > Item creation template tabs**
+ 
 1.	Click the **New** button.
 2.	In the **Tab name** field enter a name for the Fast Tab within the creation template. 
 3.	The **Position** will default depending on the record you had created this new tab name. 
@@ -44,20 +44,20 @@ Item creation template tabs allow you to organise the data within the product te
 8.	Select the language from the list of options.
 9.	In the translated text field enter the translation for the tab name in the selected language.
 
-#### 2.1.3.2	 Create Templates
+#### Create Templates
 
 Use this feature to set up all your item creation templates and their respective values and requirements.  For example, you could set up a template per product type, in an apparel organisation this may be menswear / womenswear or shirts / dresses, in a toy manufacturer this could be wooden / metal or by age group etc...  
 
 Getting the right balance between auto-completing as many fields as possible versus the number of templates is critical to the success of the ease of use.  As a rough guide between 10 and 50 templates is a sensible quantity.
-
+You can reach the Item creation templates form by navigating to
 **Item creation > Setup > Item creation > Item creation templates**
 
 Use this feature to set up all your item creation templates and their respective values and requirements.  For example, you could set up a template per product type, in an apparel organisation this may be menswear / womenswear or shirts / dresses, in a toy manufacturer this could be wooden / metal or by age group etc...  
 
 Getting the right balance between auto-completing as many fields as possible versus the number of templates is critical to the success of the ease of use.  As a rough guide between 10 and 50 templates is a sensible quantity.
 
-###### 2.1.3.2.1	Create New
-
+###### Create New
+The View/Update/New in item creation template form is used to set up a new template. 
 **Item creation > Setup > Item creation > Item creation templates > New template (button)**
 
 1.	Click the **New** template button. 
@@ -85,7 +85,9 @@ Note: This number can be renamed later if this is a product design product only.
 
 *Note: To use the template it must be activated.*
 
-###### 2.1.3.2.2	Template header
+###### Template header
+The header view wwithin the item creation templates form is used to control or view the version of the template created. 
+You can reach the header view (button) form by navigating to
 **Item creation > Setup > Item creation > Item creation templates > header view (button)**
 
 |   **Field name**           |   Field Description                                                                                                                                                                                    |
@@ -113,25 +115,25 @@ Note: This number can be renamed later if this is a product design product only.
 
 *Note:  Once a template has been activated, no further modifications can be made.  To make a change, a new version must be created.*
 
-###### 2.1.3.2.3.1	Add a step
+###### Add a step
 1.	Click **Add line** on the Fast Tab **Steps**
 
 2.	In the **Step** field enter a name to identify the step when the user is creating the product.     
 
 3.	Choose **Select companies** if the companies which the product will be released to will be adjusted at this time.
-*<br> Note: At least one step should have select companies selected.*
+*Note: At least one step should have select companies selected.*
 
 4.	Choose Attributes if item attributes are to be entered for the selected step.
-*<br> Note: As attributes are dynamics based on the product category, there is no need to define these in the template fields.*
+*Note: As attributes are dynamics based on the product category, there is no need to define these in the template fields.*
 
-###### 2.1.3.2.3.2	Remove a step
+###### Remove a step
 1.	Select the step to remove
 
 2.	Click the remove button
 
 *Note: It is only possible to remove a step if the Template has not been made active*
 
-###### 2.1.3.2.4	Fields
+###### Fields
 **Item creation > Setup > Item creation > Item creation templates > line view (button) > Setup > Fields (Button)**
 
 All tables and fields available from the released products form are available for selection within the item creation templates
@@ -157,7 +159,7 @@ Where this is the case, a new record for Site:2, Warehouse: 24 will be created.
 13.	To change the **position of the fields** within the Template click on the Field you wish to move and click either the Up or Down button until it is in the desired position. 
 14.	If using the **Bulk Import Product Creation** feature the Import file position and the Import file mask must be populated. 
 
-##### 2.1.3.2.5	Linked Fields
+##### Linked Fields
 
 **Item creation > Setup > Item creation > Item creation templates > Lines view (button) > Fields (button) > Linked fields (button)** 
 
@@ -178,11 +180,11 @@ Ie. The user will populate the **Product name**, and the **search name** will au
 
 <br> Note: Fields that require a new line to be created within the item creation designer (ie. Product Name) can only be linked to other fields within the same table (ie. Description) unless the table is added to the record setup table & once only is selected*
 
-#### 2.1.3.3	 Assign Companies
-
-**Item creation > Setup > Item creation > Item creation templates > Companies (button)**
+#### Assign Companies
 
 Products in D365 are released to companies for use within those companies.  This function allows the organisation to select the companies which the products that they create or copy to be specified.  The companies selected can be amended at the time of product creation or copy.
+
+**Item creation > Setup > Item creation > Item creation templates > Companies (button)**
 
 1.	Select the **Companies** icon from the Ribbon bar on the Item creation template. 
 
@@ -192,11 +194,11 @@ Products in D365 are released to companies for use within those companies.  This
 
 *Note: Where information such as default order settings are defaulted in a template, it may not be possible to release an item to multiple companies. Where this is the case the **release to new company** template should be configured.*
 
-#### 2.1.3.4	 Record Setup
-
-**Item creation > Setup > Item creation > Item creation templates > Record setup (button)**
+#### Record Setup
 
 It is possible to further control the item creation process by selecting tables that must have at least one record resulting in a more complete data setup for your products or to simplify the item creation process even further it is possible to change the table from allowing multiple records to only allow one record.  Companies often require just one record and have no requirement for multiple records, it only serves to complicate the setup. 
+
+**Item creation > Setup > Item creation > Item creation templates > Record setup (button)**
 
 *Note: These features are only available on a select number of tables*
 
@@ -207,7 +209,7 @@ It is possible to further control the item creation process by selecting tables 
 5.	Check the **Once only** option to limit the creation of records within this table for the Product being created to one.
 6.	To delete the setup, select the relevant record and click the **Delete** button.
 
-#### 2.1.3.5	 Assign Teams
+#### Assign Teams
 **Item creation > Setup > Item creation > Item creation templates > Assign teams (button)**
 
 Teams are used to allow or prevent a group of users from using an Item creation template.  This serves two purposes:
@@ -220,15 +222,15 @@ Teams are used to allow or prevent a group of users from using an Item creation 
 3.	Select the  **Assign Teams** icon from the Ribbon bar on the Item creation template.
 4.	Select the team from the **Available Teams** pane and use the **Add** button.
 
-<I> Note: It is possible to access the Creation templates if the user belongs to the administrator group. </I>
+*Note: It is possible to access the Creation templates if the user belongs to the administrator group.*
 5.	To remove a team from the Item creation template, select the team in the **Assigned Teams** pane and click the Remove button.
 6.	Click the **Close** button once complete.
 
-#### 2.1.3.6	 Assign Attributes
-
-**Item creation > Setup > Item creation > Item creation templates > Default attributes (button)**
+#### Assign Attributes
 
 Attributes in D365 are linked to the Product Category. Therefore, when the ‘attributes’ flag is selected on the step, attributes linked to the selected product category are displayed in the template for population. As an alternative, it is possible to specify default attributes to be displayed within the template. This is particularly useful for an update template where the product category may not be specified. Only attributes that are valid for the selected product category will be populated on the released product. 
+You can reach the Default attributes (button) form by navigating to
+**Item creation > Setup > Item creation > Item creation templates > Default attributes (button)**
 
 1.	Select the **Default Attributes** icon from the Ribbon bar on the Item creation template.
 2.	Click **New** button to create a record. 
@@ -240,11 +242,11 @@ Attributes in D365 are linked to the Product Category. Therefore, when the ‘at
 
 *Note: Default attributes can only be edited and updated when item creation template is not active. Only attributes that are valid for the selected product category will be populated on the release product regardless of the attributes populated on the import. The attribute template file can hold all available attributes. This may make the management of templates easier to manage as attribute mapping is done once. Any new attributes can be simply added at the end of the template file and mapped respectively. In addition to the default attributes being mapped, the item number must also be mapped for the file mask.*
 
-#### 2.1.3.7	 Assign Record Templates
-
-**Item creation > Setup > Item creation > Item creation templates > Record templates (button)**
+#### Assign Record Templates
 
 Record Templates can be configured for tables that may have multiple records.  An example of this may be site specific order settings.  Record templates can be used to default this information for multiple sites.
+You can reach the  Record templates (button) form by navigating to
+**Item creation > Setup > Item creation > Item creation templates > Record templates (button)**
 
 1.	Select the **Record Templates** icon from the Ribbon bar on the Item creation template.
 2.	Click **New** button to create a record.
