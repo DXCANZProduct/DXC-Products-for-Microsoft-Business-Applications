@@ -32,9 +32,11 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 The View/New/Update import Items file mask is used to set up the pattern of characters used to match the import files within your Dynamics 365 environment.
 Within this form, you will set up the new items attributes and etc before creating the template. 
-You can reach the Item creation import file masks form by navigating to 
+Y
+ou can reach the Item creation import file masks form by navigating to 
 
 **Item creation > Setup > Item creation > Item creation import file masks**
+
 Import file name masks need to be created in the system. You need to specify masks for all the files you will be creating and using for the bulk item upload templates. 
 
 *Note: Import file mask ‘Attrib*’ will look in the folder location specified for any files beginning with ‘Attrib’*
