@@ -27,10 +27,10 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-## 2.3	Setting up for Item Status
+## Setting up for Item Status
 
 Prior to using the Item Status functionality, some setup must be completed.
-### 2.3.1	Set up Parameters
+### Set up Parameters
 
 Before you start using the item status, setup must be completed for the parameters applicable to **item status.**
 
@@ -42,7 +42,7 @@ It is possible to enable/disable the Item status functionality as well as set a 
 
 Note: The **Default item status** will be setup at the item level.
 
-### 2.3.2	Set up Item Status
+### Set up Item Status
 
 The item status form is used to set up the status of your items in Dynamics 365 environment. 
 Within this form, you will set up the details regarding the status of the items, 
@@ -66,7 +66,7 @@ The items status controls whether a product can be purchased, sales order (creat
 
 *Note: The status indicator is displayed on the Released products form as a display only field.*
 
-#### 2.3.2.1	 Set up Allowed Status transitions
+#### Set up Allowed Status transitions
 
 This option is to limiti the amendment of a status transition allows the organisation to control how the user changes the lifecycle of a product. 
 
