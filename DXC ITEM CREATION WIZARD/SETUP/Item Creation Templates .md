@@ -68,7 +68,7 @@ The View/Update/New in item creation template form is used to set up a new templ
 
 Note: This number can be renamed later if this is a product design product only. This is useful for some organisations who may use a design Id until the ‘design’ becomes approved where upon the temporary number is changed into the go to market product number. 
 
-5.	The **Template type** has the following options: If you want to create a product, select Create**.
+5.	The **Template type** has the following options: If you want to create a product, select **Create**.
 
 |  Field name               |   Field Description                                                                                                                                                                                                  |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
