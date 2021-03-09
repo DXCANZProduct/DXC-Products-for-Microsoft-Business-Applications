@@ -30,8 +30,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 #### Setting up Item Creation Templates
 ##### Create Import File Masks
 
-The View/New/Update import Items file mask is used to set up the pattern of characters used to match the import fikles within your Dynamics 365 environment.
-Within this form, you will set up the new items attributes and etc. 
+The View/New/Update import Items file mask is used to set up the pattern of characters used to match the import files within your Dynamics 365 environment.
+Within this form, you will set up the new items attributes and etc before creating the template. 
 You can reach the Item creation import file masks form by navigating to 
 
 **Item creation > Setup > Item creation > Item creation import file masks**
