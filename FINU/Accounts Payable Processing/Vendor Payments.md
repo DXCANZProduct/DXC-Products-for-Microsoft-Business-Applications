@@ -62,10 +62,13 @@ DXC has parameterised the format of the last two balancing lines on EFT file pay
 This functionality populates the Payment Reference field in Accounts Payable Payment Journal automatically with a unique number on generation of the EFT payment file. Each payment line is unique regardless of the number of vendors during generation via EFT method of payment.
 
 **ACCOUNTS PAYABLE > SETUP > PAYMENT SETUP > METHODS OF PAYMENT**
+
 -	Auto payment reference number = Yes
 
 **ACCOUNTS PAYABLE > SETUP > ACCOUNTS PAYABLE PARAMETERS**
-	-Number sequences > Payment reference
+
+-Number sequences > Payment reference
+
 This number sequence “Payment Reference” will be used when generating payments for a method of payment which has the auto payment reference checkbox selected.
 After the payment has been generated:
 -	The Payment Reference number is reflected on the header of DXC Finance Utilities Payment Advice
@@ -87,6 +90,7 @@ This setup will use the Vendor’s Bank Account Name instead of the Vendor’s N
 A custom-built report has been developed to provide a remittance advice to vendors upon processing a payment run. The report will show the vendor bank account details where the payment is deposited, as well as the invoices numbers paid, what amount and what discount applied. This remittance advice report works in conjunction with the Smart Send Emailing functionality. The report is available when Payment status is Sent.
 
 **ACCOUNTS PAYABLE > SETUP > FORMS > FORM SETUP**
+
 Add the ‘Payment advice’ heading and the Report format selection. Select the DXC payment advice.
 
 The Payment advice can be used in conjunction with sending via Email to the Vendor. Access to the new form is available from;
