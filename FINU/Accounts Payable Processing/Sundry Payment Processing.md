@@ -33,65 +33,37 @@ The functionality gives the ability to enter a supplier name and address on an i
 ### 4.1.1.	Setup Sundry payment
 #### 4.1.1.1.	Method of Payment
 
-<b> ACCOUNTS PAYABLE > PAYMENT SETUP > METHODS OF PAYMENT </b>
-
+ACCOUNTS PAYABLE > PAYMENT SETUP > METHODS OF PAYMENT
 
 A Sundry vendor needs its own method of payment. This is what differentiates the Sundry vendor from other vendors. A new field has been added to record this.
 
-<table>
-    <tr>
-                 <td>  <b> Field	</b> </td> 
-                 <td>  <b> Description </b> </td>         
-   </tr>   
-    <tr>
-       <td colSpan="2"> <b> File Formats </b></td>    	   
-    </tr> 
-    <tr>
-       <td> <b> Sundry Method of Payment </b></td>    
-       <td> 	Select YES for Sundry Payment processing </td> 	   
-    </tr>         
-</table>
+|    Field	  |    Description   |
+|-|-|
+|   File Formats  |  |
+|   Sundry Method of Payment  |  	Select YES for Sundry Payment processing  |
 	
 #### 4.1.1.2.	Sundry Vendor
 Define the Vendor to be used for Sundry payments, and set the Method of Payment to that identified for Sundry Payment processing.
 
 ### 4.1.2.	Sundry Vendor Invoices
-<b> ACCOUNTS PAYABLE > INVOICES > INVOICE JOURNAL </b> Create the new invoice journal header, as per standard Dynamics D365O and press the Lines button to begin entering the invoice/s. Selection of the Sundry Vendor will require the addition of details associated with the Payment of each Vendor (on each Invoice line); 
+**ACCOUNTS PAYABLE > INVOICES > INVOICE JOURNAL** Create the new invoice journal header, as per standard Dynamics D365O and press the Lines button to begin entering the invoice/s. Selection of the Sundry Vendor will require the addition of details associated with the Payment of each Vendor (on each Invoice line); 
 
-<table>
-    <tr>
-                 <td>  <b> Field</b> </td> 
-                 <td>  <b> Description </b> </td>         
-   </tr>   
-    <tr>
-       <td colSpan ="2" > <b> SUNDRY VENDOR </b></td>    	   
-    </tr> 
-    <tr>
-       <td> Sundry vendor name</td>    
-       <td> Sundry Vendor name is required </td> 	   
-    </tr>   
-    <tr>
-       <td> Sundry address</td>    
-       <td> Sundry Vendor address is required </td> 	   
-    </tr>  
-    <tr>
-       <td> Sundry BSB routing number</td>    
-       <td> If payment is via EFT Sundry Vendor, bank routing number is required</td> 	   
-    </tr> 
-    <tr>
-       <td> Sundry bank account</td>    
-       <td> If payment is via EFT Sundry Vendor, bank account number is required</td> 	   
-    </tr> 
-</table>
+|    Field  |    Description   |
+|-|-|
+|   SUNDRY VENDOR  |  |
+|  Sundry vendor name |  Sundry Vendor name is required  |
+|  Sundry address |  Sundry Vendor address is required  |
+|  Sundry BSB routing number |  If payment is via EFT Sundry Vendor, bank routing number is required |
+|  Sundry bank account |  If payment is via EFT Sundry Vendor, bank account number is required |
 
 The Sundry Vendor detail can be changed, prior to posting.
 
 #### 4.1.3.	Sundry Vendor Payments
-<b> ACCOUNTS PAYABLE > PAYMENTS > RECEIPT JOURNAL </b> the Sundry invoices can now be paid using cheques or by EFT, depending on the payment method entered on the invoice.
+**ACCOUNTS PAYABLE > PAYMENTS > RECEIPT JOURNAL** the Sundry invoices can now be paid using cheques or by EFT, depending on the payment method entered on the invoice.
 
-Enter the journal header, and from the <b> Lines tab </b> click on <b> Payment proposal - Create payment proposal</b> . This function can be used to pay more than one sundry invoice; it breaks down the sundry invoices into separate lines. If due dates and EFT bank details match the sundry invoices will be grouped into one payment.
+Enter the journal header, and from the **Lines tab** click on **Payment proposal - Create payment proposal** . This function can be used to pay more than one sundry invoice; it breaks down the sundry invoices into separate lines. If due dates and EFT bank details match the sundry invoices will be grouped into one payment.
 
-From the <b> General tab </b> it is possible to review the Sundry Vendor Name, Address, BSB and Account Number to be paid.
+From the **General tab** it is possible to review the Sundry Vendor Name, Address, BSB and Account Number to be paid.
 
-Selection of the <b> Create payments </b> button will create the journal lines (one for each Sundry payment), so that there will be a payment generated for each invoice/grouped invoices. The Vendor Payment Advice generated, uses the Bank account number and BSB from the sundry fields, and not from the Vendor.
+Selection of the **Create payments** button will create the journal lines (one for each Sundry payment), so that there will be a payment generated for each invoice/grouped invoices. The Vendor Payment Advice generated, uses the Bank account number and BSB from the sundry fields, and not from the Vendor.
 
