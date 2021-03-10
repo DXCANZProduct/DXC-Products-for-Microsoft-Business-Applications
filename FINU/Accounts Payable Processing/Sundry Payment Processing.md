@@ -44,11 +44,14 @@ A Sundry vendor needs its own method of payment. This is what differentiates the
 |   Sundry Method of Payment  |  	Select YES for Sundry Payment processing  |
 	
 #### Sundry Vendor
+
 Define the Vendor to be used for Sundry payments, and set the Method of Payment to that identified for Sundry Payment processing.
 
 ### Sundry Vendor Invoices
 
-**ACCOUNTS PAYABLE > INVOICES > INVOICE JOURNAL** Create the new invoice journal header, as per standard Dynamics D365O and press the Lines button to begin entering the invoice/s. Selection of the Sundry Vendor will require the addition of details associated with the Payment of each Vendor (on each Invoice line); 
+**ACCOUNTS PAYABLE > INVOICES > INVOICE JOURNAL** 
+
+Create the new invoice journal header, as per standard Dynamics D365O and press the Lines button to begin entering the invoice/s. Selection of the Sundry Vendor will require the addition of details associated with the Payment of each Vendor (on each Invoice line); 
 
 |    Field  |    Description   |
 |-|-|
@@ -63,7 +66,8 @@ The Sundry Vendor detail can be changed, prior to posting.
 #### Sundry Vendor Payments
 
 **ACCOUNTS PAYABLE > PAYMENTS > RECEIPT JOURNAL** 
-the Sundry invoices can now be paid using cheques or by EFT, depending on the payment method entered on the invoice.
+
+The Sundry invoices can now be paid using cheques or by EFT, depending on the payment method entered on the invoice.
 
 Enter the journal header, and from the **Lines tab** click on **Payment proposal - Create payment proposal** . This function can be used to pay more than one sundry invoice; it breaks down the sundry invoices into separate lines. If due dates and EFT bank details match the sundry invoices will be grouped into one payment.
 
