@@ -28,6 +28,10 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 ##	Vendor Payments
+
+The Vendor Payments form is used to set up and generate the EFT file from your Dynamics 365 environment. 
+Within this form, you will set up the details regarding the vendor payment of the vendor account, that will be utilized when sending EFT file to your bank. 
+
 Note: Only applicable to custom DXC Finance Utilities EFT formats
 Some improvements to the AP EFT payment processing have been created, these include: 
 -	Balance Line, Totaling functions on the EFT File format.
