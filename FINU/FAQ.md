@@ -44,15 +44,15 @@ A list of Loaded Packages and their models will be displayed.  Search for and ex
 ## 	Troubleshooting
 ### 	Bank statement doesn’t import
 
-<U> Issue: </U>
+*Issue:*
 Bank statement doesn't import.
  
-<U> Resolution: </U>
+*Resolution:*
 Usually the issue is with the bank account number or date (import date doesn't match file's date).
 To check bank account:
 Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format
 Please compare your setup to similar format in our latest Product test environment: 
-<U> Current Test Environments in DXC Eclipse ANZ IP </U>
+*Current Test Environments in DXC Eclipse ANZ IP*
 Things to check:
 
 1.	'Field delimiter' and 'Record code field position' (if applicable). Else the fields can't be extracted and matched.
@@ -64,7 +64,7 @@ Bank accounts: Bank account number field only (not bsb): Does it match to import
 Bank statement format > Lines > Bank account number. If import file contains bsb+account and your bank setup is split into bsb and bank account number fields, set up appropriate start position.
 
 ### 	Generating AP payment - AuthenticationFailed
-<U> Error: </U>
+*Error:*
 AP > Payments > Vendor receipt journal
 When Generating AP payment:
 <br>
@@ -83,17 +83,17 @@ Signature did not match. String to sign used was r 2019-07-02T04:48:06Z 2019-07-
 <br>
 </Error>
 <br>
-<U> Resolution: </U>
+*Resolution:*
 AP > Payment setup > Methods of payment
 
 If 'Enable file parameters' is Yes on your Method of Payment, the 'File format' requires a value:
 
 
 ### 	AP Payment advice – Vendor bank details missing
-<U> Issue: </U>
+*Issue:*
 AP Payment advice doesn't show Vendor bank details:
 
-<U> Resolution: </U>
+*Resolution:*
 If a payment advice is generated prior to installing DXC Finance Utilities, the payment advice defaults to standard D365 report.
 
 To fix via Interface (planned for next release): Update print management (AP > Setup > Forms > Form setup)  to: ECL_BankPaymAdviceVend.Report 
