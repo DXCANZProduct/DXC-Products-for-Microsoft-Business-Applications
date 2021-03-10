@@ -28,10 +28,11 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 ## BPAY Payment Processing
-### Setup BPAY payment
 
 The BPAY form is used to set up the additional fields needed between your Dynamics 365 environment and your BPAY account. 
-Within this form, you will set up the BPAY details for the BAPY reference account, 
+Within this form, you will set up the BPAY details for the BAPY reference account.
+
+### Setup BPAY payment
  
 You can reach the METHODS OF PAYMENT form by navigating to
 #### 	Method of payment
