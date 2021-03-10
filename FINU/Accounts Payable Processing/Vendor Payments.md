@@ -75,6 +75,7 @@ After the payment has been generated:
 
 ###	Vendor bank name
 **CASH AND BANK MANAGEMENT > BANK ACCOUNTS > BANK ACCOUNTS**
+
 Note: Only applicable to custom DXC Finance Utilities EFT formats
 
 This setup will use the Vendor’s Bank Account Name instead of the Vendor’s Name when generating the EFT payment file.
