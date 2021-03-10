@@ -35,9 +35,9 @@ A paragraph about this process is required...
 #### 	Method of payment
 
 
-<b> ACCOUNTS PAYABLE > PAYMENT SETUP > METHODS OF PAYMENT </b>
+**ACCOUNTS PAYABLE > PAYMENT SETUP > METHODS OF PAYMENT**
 
-Enabling  <b> BPAY method of payment </b> updates the following:
+Enabling  **BPAY method of payment** updates the following:
 -	Since Eclipse EFT formats will be deprecated in future, BPAY only supports Generic electronic formats. Generic electronic format is enabled and locked.
 -	Payment control > Payment id is mandatory is enabled and locked
 -	Payment attributes > Payment id is enabled and locked
@@ -46,7 +46,7 @@ The following fields have been added as part of the BPAY modification, but are o
 -	Payment attributes > Lodgement reference 
 
 #### Company bank
-<b> CASH AND BANK MANAGEMENT > BANK ACCOUNTS > BANK ACCOUNTS </b>
+**CASH AND BANK MANAGEMENT > BANK ACCOUNTS > BANK ACCOUNTS**
 The following field have been added as part of the BPAY modification and can be for mapping in the GER:
 -	BPAY batch ID. Under Additional identification section.
 
@@ -59,38 +59,13 @@ The following fields have been added as part of the BPAY modification:
 #### Data entities
 The new BPAY fields have been added to the applicable data entities:
 
-<table>
-    <tr>
-                 <td>  <b> Field  </b> </td> 
-                 <td>  <b> Data entity </b> </td>  
-                 <td>  <b> DFU field </b> </td>  
-   </tr>   
-   <tr>
-       <td> PAY Batch id </td>    
-       <td> Bank accounts </td> 	
-       <td> DFUBPAYBatchId </td> 
-   </tr> 
-   <tr>
-       <td> Biller code</td>    
-       <td> Vendor bank accounts </td> 	
-       <td> DFUBillerCode </td> 
-   </tr> 
-    <tr>
-       <td> Lodgement reference</td>    
-       <td> Vendor bank accounts </td> 	
-       <td> DFULodgementRef </td> 
-   </tr>  
-   <tr>
-       <td> Validate lodgement reference is mandatory</td>    
-       <td> Vendor payment method </td> 	
-       <td> DFUValidateLodgementRefIsMandatory </td> 
-   </tr>  
-   <tr>
-       <td> Lodgement reference attribute</td>    
-       <td> Vendor payment method </td> 	
-       <td> DFUAtrributeLodgementRefEnabled </td> 
-   </tr>  
-</table>
+|    Field    |    Data entity   |    DFU field   |
+|-|-|-|
+|  PAY Batch id  |  Bank accounts  |  DFUBPAYBatchId  |
+|  Biller code |  Vendor bank accounts  |  DFUBillerCode  |
+|  Lodgement reference |  Vendor bank accounts  |  DFULodgementRef  |
+|  Validate lodgement reference is mandatory |  Vendor payment method  |  DFUValidateLodgementRefIsMandatory  |
+|  Lodgement reference attribute |  Vendor payment method  |  DFUAtrributeLodgementRefEnabled  |
 
 #### 	BPAY Vendor Invoices
 *ACCOUNTS PAYABLE > INVOICES > TAX INVOICE JOURNAL
@@ -100,18 +75,18 @@ GENERAL LEDGER > JOURNAL ENTRIES > GENERAL JOURNALS
 PROJECT MANAGEMENT AND ACCOUNTING > JOURNALS > EXPENSE*  
 
 Payment id is currently on the vendor invoicing forms and will be utilized for BPAY. New BPAY field 
-<b> Lodgement reference </b> has also been added.
+**Lodgement reference** has also been added.
 
-- <b>	Payment id </b> is populated by MS from the Vendor’s Payment id. The field can be manually edited on the vendor invoice entry prior to posting the invoice
--	<b>Lodgement reference </b> is populated by DXC Finance Utilities by the vendor/third party bank account on the invoice. When changing to a different vendor bank account, the Lodgement reference will automatically update. The field can be manually edited on the vendor invoice entry prior to posting the invoice.
+- **Payment id** is populated by MS from the Vendor’s Payment id. The field can be manually edited on the vendor invoice entry prior to posting the invoice
+- **Lodgement reference** is populated by DXC Finance Utilities by the vendor/third party bank account on the invoice. When changing to a different vendor bank account, the Lodgement reference will automatically update. The field can be manually edited on the vendor invoice entry prior to posting the invoice.
 The BPAY modification uses the method of payment control settings to validate for mandatory fields Payment id and Lodgement reference (if also flagged as mandatory).
 
 If these Payment control mandatory fields are blank the invoice posting will error.
 
 ### BPAY Vendor Payments
-<b> ACCOUNTS PAYABLE > PAYMENTS > VENDOR PAYMENT JOURNAL </b>
+**ACCOUNTS PAYABLE > PAYMENTS > VENDOR PAYMENT JOURNAL**
 
-New BPAY field <b> Lodgement reference </b> has been added to Vendor payment proposal form. 
-Payments are already being grouped by MS on Payment Id, and with the BPAY modification the <b> Lodgement reference </b> is also used in the grouping.
+New BPAY field **Lodgement reference** has been added to Vendor payment proposal form. 
+Payments are already being grouped by MS on Payment Id, and with the BPAY modification the **Lodgement reference** is also used in the grouping.
 
-<b>Lodgement reference </b> can be viewed on the <b> Payment </b> tab. The field is editable.
+**Lodgement reference** can be viewed on the **Payment** tab. The field is editable.
