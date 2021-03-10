@@ -52,7 +52,7 @@ The changes required to support this functionality in the Bank reconciliation Wo
 -	New checkboxes to keep the reconciled totals up to date, on the form
 -	The standard click on Match re-sorts and removes filter; the filter is now retained.
 
-####New Buttons
+#### New Buttons
 
 |    Buttons   |    Description   |
 |-|-|
