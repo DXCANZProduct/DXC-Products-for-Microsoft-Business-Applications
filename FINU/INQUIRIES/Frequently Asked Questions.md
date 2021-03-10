@@ -27,8 +27,8 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# 8.	Frequently Asked Questions
-## 8.1.	Version and Support Information
+# Frequently Asked Questions
+## 	Version and Support Information
 
   -		Where can I find contact information for support?
     <br> o	Support contact details can be located on the Finance Utilities parameters form on the About tab.
@@ -36,8 +36,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
     <br> o	Navigate to Settings > About.  A list of Loaded Packages and their models will be displayed.  Search for and expand DXCFinanceUtilities. The version information will be displayed on the right (i.e. DXC Finance Utilities 10.0.240.2019443 (isv))
 
 
-## 8.2.	Troubleshooting
-### 8.2.1.	Bank statement doesn’t import
+## 	Troubleshooting
+###	Bank statement doesn’t import
 
 <U> Issue: </U>
 Bank statement doesn't import.
@@ -58,8 +58,8 @@ Import file's bank account: Does it contain bsb+account or just account
 Bank accounts: Bank account number field only (not bsb): Does it match to import file's bank account number?
 Bank statement format > Lines > Bank account number. If import file contains bsb+account and your bank setup is split into bsb and bank account number fields, set up appropriate start position.
 
-### 8.2.2.	Generating AP payment - AuthenticationFailed
-<U> Error: </U>
+###	Generating AP payment - AuthenticationFailed
+*Error:*
 AP > Payments > Vendor receipt journal
 When Generating AP payment:
 <br>
@@ -78,17 +78,18 @@ Signature did not match. String to sign used was r 2019-07-02T04:48:06Z 2019-07-
 <br>
 </Error>
 <br>
-<U> Resolution: </U>
+
+*Resolution:*
 AP > Payment setup > Methods of payment
 
 If 'Enable file parameters' is Yes on your Method of Payment, the 'File format' requires a value:
 
 
-### 8.2.3.	AP Payment advice – Vendor bank details missing
-<U> Issue: </U>
+### AP Payment advice – Vendor bank details missing
+*Issue:*
 AP Payment advice doesn't show Vendor bank details:
 
-<U> Resolution: </U>
+*Resolution:*
 If a payment advice is generated prior to installing DXC Finance Utilities, the payment advice defaults to standard D365 report.
 
 To fix via Interface (planned for next release): Update print management (AP > Setup > Forms > Form setup)  to: ECL_BankPaymAdviceVend.Report 
@@ -102,12 +103,12 @@ Find the below records.
 
 Update Green circle to 1
 
-### 8.2.4.	Saving to secure location
+### Saving to secure location
 
 If there is an error saving the file to secure location and Stop processing on failure was enabled the processing will error and Payment status remains None. Example error ‘The process stopped because the delivery of file ‘%’ to the destination failed. The payments cannot be generated.’
 Check setup on the applicable Electronic reporting export connections
 
-### 8.2.5.	Number sequences are not available to setup
+###	Number sequences are not available to setup
 
 To load all new number sequence references click the button:
 <br> Organization administration > Number sequences > Number sequences > Manual cleanup > Reset </br>
