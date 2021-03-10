@@ -27,7 +27,7 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-## 4.4.	Save Electronic reporting file to secure location
+## Save Electronic reporting file to secure location
 The file exported cn be used for any Electronic reporting file, but the example provided is for a Vendor GER EFT payment. The feature uses the Archive functionality with the following setup steps
 -	Step 1: Setup Electronic reporting export connection
 -	Step 2: Setup Document types, using Step 1’s Connection
@@ -36,8 +36,8 @@ The file exported cn be used for any Electronic reporting file, but the example 
 
 Processing: When generating a payment for a method of payment with above GER, the Archive destination is defaulted, and EFT payment file is saved to assigned connection path.
 
-### 4.4.1.	Setup location
-#### 4.4.1.1.	Electronic reporting export connections
+### Setup location
+####	Electronic reporting export connections
 **ORGANISATION ADMINISTRATION > ELECTRONIC REPORTING > ELECTRONIC REPORTING EXPORT CONNECTIONS**
 
 Create the location where GER file is to be saved. Connection options include FTP/FTPS, SFTP or Azure blob
@@ -85,7 +85,7 @@ Click Save the applicable Setup will be displayed as per Connection type selecte
 |Key vault certificate |	Enabled when Credential type = Key vault. Select applicable Key vault certificate.	||
 
 
-#### 4.4.1.2.	Document types
+####	Document types
 
 **ORGANISATION ADMINISTRATION > DOCUMENT MANAGEMENT > DOCUMENT TYPES**
 Setup the Document type and assign the connection created in step 1
@@ -102,7 +102,7 @@ Setup the Document type and assign the connection created in step 1
 |  Ask for confirmation  |  Should confirmation be requested priori to removing the file  |  - Yes <br> - No         |
 |  Electronic report export connection  |  Select the Electronic reporting export connection setup in step 1 |  Example ANZ_FTP         |
 
-#### 4.4.1.3.	Electronic reporting destination
+####	Electronic reporting destination
 **ORGANISATION ADMINISTRATION > ELECTRONIC REPORTING > ELECTRONIC REPORTING DESTINATION**
 
 Setup Electronic reporting destination for selected GER and allocate Document type created in step 2.
@@ -120,10 +120,10 @@ Setup Electronic reporting destination for selected GER and allocate Document ty
 |  Save in job archive  |  Enable saving  |  - Yes <br> - No          |
 |  Type  |  Select the Document type created in step 2  |  Example GER          |
 
-#### 4.4.1.4.	Method of payment
+####	Method of payment
 Enable Generic electronic Export format and select the Electronic reporting reference from Setup Step 3 in the Accounts payable Method of payment’s Export format configuration
 
-### 4.4.2.	Generate payment
+###	Generate payment
 When a Vendor payment journal with the above Method of payment is used, the archive destination is defaulted when generating the payment.
 
 If there is an error saving the file to secure location and Stop processing on failure was enabled the processing will error and Payment status remains None. Example error ‘The process stopped because the delivery of file ‘%’ to the destination failed. The payments cannot be generated.’
