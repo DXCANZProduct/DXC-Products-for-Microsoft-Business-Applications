@@ -36,6 +36,7 @@ Within this form, you will set up the details regarding the transaction details 
 You can reach the DIMENSIONS form by navigating to
 
 **BUDGETING > SETUP > BASIC BUDGETING > DIMENSIONS**
+
 Select the financial dimensions to use for budgeting. Only these ‘Budget dimensions’ will be available in the Budget Utilities parameters *
 
 You can reach the BUDGET UTILITIES PARAMETERS form by navigating to
