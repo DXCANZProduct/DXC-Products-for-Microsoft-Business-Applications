@@ -27,11 +27,11 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-## 4.1.	Sundry Payment Processing
+## Sundry Payment Processing
 
 The functionality gives the ability to enter a supplier name and address on an individual invoice allowing these details to be used on cheque payments, as well as one-off BSB and Account Number for EFT Payments. Therefore, many one-time vendor invoices can be stored on a single sundry vendor record but allowing for separate payments without a change to the vendor record information.  This also makes it possible to pay all sundry invoices in one payment proposal.
-### 4.1.1.	Setup Sundry payment
-#### 4.1.1.1.	Method of Payment
+### Setup Sundry payment
+#### Method of Payment
 
 ACCOUNTS PAYABLE > PAYMENT SETUP > METHODS OF PAYMENT
 
@@ -42,10 +42,10 @@ A Sundry vendor needs its own method of payment. This is what differentiates the
 |   File Formats  |  |
 |   Sundry Method of Payment  |  	Select YES for Sundry Payment processing  |
 	
-#### 4.1.1.2.	Sundry Vendor
+#### Sundry Vendor
 Define the Vendor to be used for Sundry payments, and set the Method of Payment to that identified for Sundry Payment processing.
 
-### 4.1.2.	Sundry Vendor Invoices
+### Sundry Vendor Invoices
 
 **ACCOUNTS PAYABLE > INVOICES > INVOICE JOURNAL** Create the new invoice journal header, as per standard Dynamics D365O and press the Lines button to begin entering the invoice/s. Selection of the Sundry Vendor will require the addition of details associated with the Payment of each Vendor (on each Invoice line); 
 
@@ -59,7 +59,7 @@ Define the Vendor to be used for Sundry payments, and set the Method of Payment 
 
 The Sundry Vendor detail can be changed, prior to posting.
 
-#### 4.1.3.	Sundry Vendor Payments
+#### Sundry Vendor Payments
 
 **ACCOUNTS PAYABLE > PAYMENTS > RECEIPT JOURNAL** the Sundry invoices can now be paid using cheques or by EFT, depending on the payment method entered on the invoice.
 
