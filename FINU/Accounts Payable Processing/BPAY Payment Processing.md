@@ -30,8 +30,10 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ## BPAY Payment Processing
 ### Setup BPAY payment
 
-A paragraph about this process is required... 
-
+The BPAY form is used to set up the additional fields needed between your Dynamics 365 environment and your BPAY account. 
+Within this form, you will set up the BPAY details for the BAPY reference account, 
+ 
+You can reach the METHODS OF PAYMENT form by navigating to
 #### 	Method of payment
 
 **ACCOUNTS PAYABLE > PAYMENT SETUP > METHODS OF PAYMENT**
@@ -45,11 +47,13 @@ The following fields have been added as part of the BPAY modification, but are o
 -	Payment attributes > Lodgement reference 
 
 #### Company bank
+You can reach the BANK ACCOUNTS form by navigating to
 **CASH AND BANK MANAGEMENT > BANK ACCOUNTS > BANK ACCOUNTS**
 The following field have been added as part of the BPAY modification and can be for mapping in the GER:
 -	BPAY batch ID. Under Additional identification section.
 
 #### 	Vendor bank account
+You can reach the ALL VENDORS form by navigating to
 ACCOUNTS PAYABLE > VENDORS > ALL VENDORS
 The following fields have been added as part of the BPAY modification:
 - Biller code (length 10)
@@ -83,6 +87,7 @@ The BPAY modification uses the method of payment control settings to validate fo
 If these Payment control mandatory fields are blank the invoice posting will error.
 
 ### BPAY Vendor Payments
+You can reach the VENDOR PAYMENT JOURNAL form by navigating to
 **ACCOUNTS PAYABLE > PAYMENTS > VENDOR PAYMENT JOURNAL**
 
 New BPAY field **Lodgement reference** has been added to Vendor payment proposal form. 
