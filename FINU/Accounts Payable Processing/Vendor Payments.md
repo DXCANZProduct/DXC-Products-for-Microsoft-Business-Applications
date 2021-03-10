@@ -38,7 +38,7 @@ Some improvements to the AP EFT payment processing have been created, these incl
 
 ### 4.3.1.	EFT File Balance Line
 
-<b> CASH AND BANK MANAGEMENT > BANK ACCOUNTS > BANK ACCOUNTS </b>
+**CASH AND BANK MANAGEMENT > BANK ACCOUNTS > BANK ACCOUNTS**
 
 Note: Only applicable to custom DXC Finance Utilities EFT formats
 
@@ -57,10 +57,10 @@ DXC has parameterised the format of the last two balancing lines on EFT file pay
 ### 4.3.2.	Auto Generation of Payment Reference
 This functionality populates the Payment Reference field in Accounts Payable Payment Journal automatically with a unique number on generation of the EFT payment file. Each payment line is unique regardless of the number of vendors during generation via EFT method of payment.
 
-<b> ACCOUNTS PAYABLE > SETUP > PAYMENT SETUP > METHODS OF PAYMENT </b>
+**ACCOUNTS PAYABLE > SETUP > PAYMENT SETUP > METHODS OF PAYMENT**
 -	Auto payment reference number = Yes
 
-<b> ACCOUNTS PAYABLE > SETUP > ACCOUNTS PAYABLE PARAMETERS </b>
+**ACCOUNTS PAYABLE > SETUP > ACCOUNTS PAYABLE PARAMETERS**
 	-Number sequences > Payment reference
 This number sequence “Payment Reference” will be used when generating payments for a method of payment which has the auto payment reference checkbox selected.
 After the payment has been generated:
@@ -70,7 +70,7 @@ After the payment has been generated:
 -	The payment advice when reprinted reflects the correct reference number
 
 ### 4.3.3.	Vendor bank name
-<b> CASH AND BANK MANAGEMENT > BANK ACCOUNTS > BANK ACCOUNTS </b>
+**CASH AND BANK MANAGEMENT > BANK ACCOUNTS > BANK ACCOUNTS**
 Note: Only applicable to custom DXC Finance Utilities EFT formats
 
 This setup will use the Vendor’s Bank Account Name instead of the Vendor’s Name when generating the EFT payment file.
@@ -81,7 +81,7 @@ This setup will use the Vendor’s Bank Account Name instead of the Vendor’s N
 ### 4.3.4.	Vendor payment advice
 A custom-built report has been developed to provide a remittance advice to vendors upon processing a payment run. The report will show the vendor bank account details where the payment is deposited, as well as the invoices numbers paid, what amount and what discount applied. This remittance advice report works in conjunction with the Smart Send Emailing functionality. The report is available when Payment status is Sent.
 
-<b> ACCOUNTS PAYABLE > SETUP > FORMS > FORM SETUP </b>
+**ACCOUNTS PAYABLE > SETUP > FORMS > FORM SETUP**
 Add the ‘Payment advice’ heading and the Report format selection. Select the DXC payment advice.
 
 The Payment advice can be used in conjunction with sending via Email to the Vendor. Access to the new form is available from;
@@ -94,12 +94,12 @@ This modification is to automatically populate EFT file name based on the number
 File information fields will be automatically filled with the file name that has following pattern:
 “BankAccountIdNumberSequence.FileFormat. 
 
-<b> ACCOUNTS PAYABLE > SETUP > PAYMENT SETUP > METHODS OF PAYMENT </b>
+**ACCOUNTS PAYABLE > SETUP > PAYMENT SETUP > METHODS OF PAYMENT**
 -	Highlight applicable method of payment
 -	Expand EFT Fast tab and click Enable file parameters checkbox
 -	Enter file format, example txt
 
-<b> ACCOUNTS PAYABLE > SETUP > ACCOUNTS PAYABLE PARAMETERS </b>
+**ACCOUNTS PAYABLE > SETUP > ACCOUNTS PAYABLE PARAMETERS**
 -	Number sequences > EFT file name
 
 ### 4.3.6.	Payments
