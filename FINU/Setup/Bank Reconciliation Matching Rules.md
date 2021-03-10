@@ -27,10 +27,10 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-### 3.1.4. Bank Reconciliation Matching Rules
-#### 3.1.4.1	Group by Document Capability
+### Bank Reconciliation Matching Rules
+#### Group by Document Capability
 
-D365 standard does not have the capability to match one transaction in the bank statement to multiple transactions in the D365 Bank Transactions that have the same journal id or cheque number. This functionality extends the automatic reconciliation matching rules by adding <b> ‘Group by document’. </b>
+D365 standard does not have the capability to match one transaction in the bank statement to multiple transactions in the D365 Bank Transactions that have the same journal id or cheque number. This functionality extends the automatic reconciliation matching rules by adding **‘Group by document’.**
 
 The feature can be activated from ***Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules***
 
@@ -38,7 +38,7 @@ The feature can be activated from ***Cash and bank management > Setup > Advanced
 |-|-|
 | **BASIC CRITERIA > Group by document number** | This feature combines the D365 bank transactions amount that have the same Document number (populated with the Journal id or check number) during the Bank reconciliation process, from **Run matching rules.** |
 
-#### 3.1.4.2 Matching Parameter - Included In
+#### Matching Parameter - Included In
 If the Parameter Extended matching rule operator is set to Yes, the option ‘Included in’ is available for selection, as shown in Step 1: Define the matching rule. 
 
 When the Operator **Included in** is selected, Dynamics 365 checks whether the Value of the **Field** is included in the Value of the **Statement Fields**.
@@ -71,7 +71,7 @@ When the Operator **Included in** is selected, Dynamics 365 checks whether the V
 
 In this example, when the Reconciliation Matching rule **Document No** is run, Dynamics 365 Bank Transactions Line 1 will be matched with Bank Statement Transactions Line 1 because the **Document number** value “AAU1367611” is included in the value of the field Reference No “CBA pmt AAU1367611”.
 
-#### 3.1.4.3 Mark as New Additional Defaults
+#### Mark as New Additional Defaults
 
 If the **Extended financial details for new transaction** parameter is set to Yes, the option to capture the following details automatically, if the bank statement line **Mark as new** is selected.
 -	Financial dimensions 
