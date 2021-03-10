@@ -28,13 +28,13 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Advanced Bank Statement Functionality
-## Setup
-### Finance Utilities Parameters
 
 The  Financial utilities parameter form is used to set up the connection between your Dynamics 365 environment and your finance account. 
 Within this form, the Financial utilities parameter controls the functionality related to finance utilities, 
 along with a worksheet that will be utilized for your bank statement matching process. 
 
+## Setup
+### Finance Utilities Parameters
 
 You can reach the FINANCIAL UTILITIES PARAMETERS form by navigating to
 
