@@ -27,7 +27,7 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-### 3.1.2 Bank Statement format
+### Bank Statement format
 
 When the finance utilities parameter Enable custom bank statement formats is enabled, a new checkbox field customized format becomes active in the bank statement format form.  When the customized format is selected, the following below fields and buttons will also be activated
 
@@ -35,7 +35,7 @@ You can reach the **CASH AND BANK MANAGEMENT > SETUP > ADVANCED BANK RECONCILIAT
  form by navigating to
 **CASH AND BANK MANAGEMENT > SETUP > ADVANCED BANK RECONCILIATION SETUP > BANK STATEMENT FORMAT**
 
-#### 3.1.2.1.	Fields
+#### Fields
 
 | Field | Description |
 |-|-|
@@ -54,7 +54,7 @@ When creating a bank statement format, processing group is mandatory (including 
 6.	Attach the processing group ‘BankStatement’ while configuring the bank statement format 
 
 
-#### 3.1.2.2.	Custom Format
+#### Custom Format
 
 Only available when Custom format is ticked
 #### *Buttons*
