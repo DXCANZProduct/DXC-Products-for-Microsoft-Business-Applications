@@ -29,7 +29,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 #	Data entities
 
-DXC Finance utilities include its own data entities:
+DXC Finance utilities include its own data entities in Dynamics 365 environment :
 
 |   Entity    |   Target entity   |
 |-|-|
