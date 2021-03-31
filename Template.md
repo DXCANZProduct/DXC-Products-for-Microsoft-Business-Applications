@@ -95,7 +95,7 @@ There **must** be only one first-level heading (H1) in your topic, which will be
 
 If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Define a data method in C# #`.     
 
-Second-level headings will generate the on-page TOC that appears in the "In this article" section under the on-page title.
+## **Second-level headings** will generate the on-page TOC that appears in the "In this article" section under the on-page title.
 
 ### Third-level heading
 #### Fourth-level heading
