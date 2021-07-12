@@ -56,11 +56,11 @@ The changes required to support this functionality in the Bank reconciliation Wo
 
 |    Buttons   |    Description   |
 |-|-|
-|   **Match ID Button **  |  Users can manually click this button when the system does not automatically assign a match id on mark transactions.  |
-|   **Remove Match ID Button**  |  Once clicked this will remove the Match ID on both sides but will retain the mark on the ‘Mark’ checkbox column  |
-|  **Clear All Button**  |  “Clear All” button will unmark all transactions marked with match id transactions on both sides from the open statement and open bank document sections. <br> This removes all the match ids on both statement and bank transaction. They are marked for matching where match ids are already assigned          |
-|  **Mark filtered bank statement transactions button** |  This will allow the user to Mark All filtered lines in the bank reconciliation worksheet for the Bank statement transactions grid  |
-| **Mark filtered bank transactions button** |  This will allow the user to Mark All filtered lines in the bank reconciliation worksheet for the Bank transactions grid  |
+|   **Match ID**  |  Users can manually click this button when the system does not automatically assign a match id on mark transactions.  |
+|   **Remove Match ID**  |  Once clicked this will remove the Match ID on both sides but will retain the mark on the ‘Mark’ checkbox column  |
+|  **Clear All**  |  “Clear All” button will unmark all transactions marked with match id transactions on both sides from the open statement and open bank document sections. <br> This removes all the match ids on both statement and bank transaction. They are marked for matching where match ids are already assigned          |
+|  **Mark filtered bank statement transactions** |  This will allow the user to Mark All filtered lines in the bank reconciliation worksheet for the Bank statement transactions grid  |
+| **Mark filtered bank transactions** |  This will allow the user to Mark All filtered lines in the bank reconciliation worksheet for the Bank transactions grid  |
 |  **Maximise / Minimise**  |  Maximise and Minimise the unmatched transactions section  |
 
 #### Mark and Match Id Columns
