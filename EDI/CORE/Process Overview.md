@@ -42,3 +42,5 @@ An event in D365 will trigger an EDI document to be evaluated. If the document i
 Once the staging data is created an appropriate template is applied to generate an EDI document file and placed into the outbound documents queue. 
 
 The outbound documents queue is periodically processed, and the files are placed into their setup destinations for the Trading partner or VAN to retrieve.
+
+![Export process image](image/Core_ExportProcess.png)
