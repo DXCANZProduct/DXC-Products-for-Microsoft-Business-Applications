@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: [Docusign]
+title: [EDI Core]
 description: [Setup Parameters]
 author: [ndavidson2]
 manager: Kym Parker
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [SAB_EDIBatchControl]
 audience: [Application User]
 # ms.devlang: 
 ms.reviewer: [ndavidson2]
