@@ -33,8 +33,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 EDI contains the following documents pertaining to all Trading partners.
 - Inbound
- - Functional Acknowledgement – Receive functional acknowledgement that outbound document has been received by Trading partner.
+ - - Functional Acknowledgement – Receive functional acknowledgement that outbound document has been received by Trading partner.
 - Outbound
- - Functional Acknowledgement – Send functional acknowledgement that inbound document has been received.
+ -- Functional Acknowledgement – Send functional acknowledgement that inbound document has been received.
 
 
