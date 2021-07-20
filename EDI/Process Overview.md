@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: [Docusign]
-description: [Setup Parameters]
-author: [ndavidson2]
+title: [EDI Process overview]
+description: [Overview of the EDI import and export process]
+author: [jdutoit2]
 manager: Kym Parker
 ms.date: 12/01/2020
 ms.topic: article
@@ -28,3 +28,16 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Process Overview
+
+## Import process overview
+The Trading partner or VAN will place data into a ‘cloud accessible’ location (i.e. FTP, SFTP or Azure blob) and D365 will periodically import these files into an inbound document staging area for processing.
+
+D365 will use templates to read the data from the inbound documents and create staging data. The staging data is then processed into target documents within D365 and standard application processing rules are applied.
+
+
+## Export process overview
+An event in D365 will trigger an EDI document to be evaluated. If the document is enabled (based on an associated Trading partner) D365 will create staging data from the event’s information (i.e. invoice posting, picking list posting).
+
+Once the staging data is created an appropriate template is applied to generate an EDI document file and placed into the outbound documents queue. 
+
+The outbound documents queue is periodically processed, and the files are placed into their setup destinations for the Trading partner or VAN to retrieve.
