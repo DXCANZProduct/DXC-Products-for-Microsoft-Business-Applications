@@ -88,7 +88,7 @@ EDI contains the following documents pertaining to 3PL Trading partners.
 
 ## Freight forwarder Landed cost EDI documents (Freight forwarder license only)
 
-EDI contains the following documents pertaining to Freight forwarder landed cost Trading partners.
+EDI contains the following documents pertaining to Freight forwarder Landed cost Trading partners.
 - Inbound
 	- Voyage creator – Creates Landed cost voyage/s with relevant auto costs and tracking legs and update Purchase orders and/or Transfers orders with shipment details.
 	- Voyage tracking – Updates tracking on Landed cost voyage
