@@ -37,4 +37,41 @@ EDI contains the following documents pertaining to all Trading partners.
 - Outbound
 	- Functional Acknowledgement – Send functional acknowledgement that inbound document has been received.
 
+## Customer EDI documents (Customer license only)
+
+EDI contains the following documents pertaining to Customer Trading partners.
+- Inbound
+	- Customer purchase order - Allows a customer to send a Purchase Order, which in turn creates a Sales Order in D365
+	- Customer purchase order change - Allows a customer to send a change for an existing EDI Purchase Order, which in turn updates the applicable Sales Order in D365.
+- Outbound
+	- Customer purchase order acknowledgement (POA) - Allows D365 to send an Acknowledgement once a PO has been received and verified.
+	- Customer advanced shipping notice (ASN) - Allows D365 to send delivery information to the customer with the packaging details.
+	- Sales Invoice - Allows D365 to send a Tax Invoice document to the customer.
+
+## 3PL EDI documents (3PL license only)
+
+EDI contains the following documents pertaining to 3PL Trading partners.
+- Outbound
+	- Picking List – Allows D365 to send picking list information to the 3PL, triggered by posting picking list in either:
+		- Sales Order
+		- Transfer Order
+	- Shipment Advice – Allows D365 to send shipment advice to the 3PL advising them of stock arriving at the 3PL, trigger points for each document:
+		- Purchase Order – Generate Receipt list
+		- Transfer Order – Ship transfer order
+		- Return Order – Send return order
+		- Voyage (Landed cost) – Send to EDI
+- Inbound
+	- Picking list Registration – Allows a 3PL to send picking list registration which in turns posts the picking list registration in D365
+		- Sales Order
+		- Transfer Order
+	- Shipment Receipt - Allows a 3PL to send shipment receipt information which in turns creates the Arrival journal for below in D365
+		- Purchase Order
+		- Transfer Order
+		- Return Order
+		- Voyage (Landed cost)
+	- Inventory Adjustment – Allows a 3PL to send inventory adjustment information which in turns adjust the stock in D365
+		- Transfer – Creates a transfer journal which can be set to automatically post
+		- Counting – Creates a movement journal for the calculated variances, which can be set to automatically post
+		- Reconciliation – Creates an inventory adjustment journal which creates a movement journal for the variances. Provides more control over reconciling all on-hand stock and accepting/rejecting specific lines.
+		- Movement Creates a movement journal for the provided variances, which can be set to automatically post
 
