@@ -31,7 +31,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ## Communication methods overview
 Various communication methods (FTP, FTPS, SFTP, Azure cloud blob storage and web services) can be used to:
-- Import EDI documents from the VAN or Trading partner
+- Import EDI documents from the VAN or Trading partner and/or
 - Export EDI documents generated within D365to the VAN or Trading partner.
 
 ### Setting up FTP Sites
@@ -39,4 +39,10 @@ Various communication methods (FTP, FTPS, SFTP, Azure cloud blob storage and web
 FTP is a communication method that can be used for this module. FTPS and FTP protocols are supported. 
 The FTP sites setup form holds the information required to connect to, retrieve and create files in/from FTP sites as well as the EDI document paths in the FTP site.
 
-
+#### Create a new site configuration
+To begin, create a new FTP site record and fill out the connection parameters
+| **Field**                         | **Description**                      | 
+| :-------------------------------- |:-------------------------------------| 
+| Site name                 | Specify a **Name** for the FTP site |
+| Active                      | indicates if the site is active. To activate, select the **Activate** button available in the ribbon. |
+| **Connection**               |
