@@ -60,7 +60,8 @@ It is possible to configure a different FTP site path per EDI document type.
 A common way to configure this is to setup a FTP site for the UAT environment versus the PROD environment so the PROD database can easily be rolled over into the UAT environment by simply changing the active site.
 Incoming documents have 2 paths that are required to be defined:
 - Inbound
-- Archive <br>
+- Archive
+
 Select **Populate paths** to create the incoming and outgoing paths for all the licensed documents.
 
 | **Field**                         | **Description**                      | 
