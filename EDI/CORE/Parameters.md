@@ -31,5 +31,5 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ## Refresh module
 
-The refresh module button available via * EDI > Setup > EDI Parameters* on the General Tab, should be run after each deployment.  
+The refresh module button available via **EDI > Setup > EDI Parameters** on the General Tab, should be run after each deployment.  
 This option will refresh the modules artefacts and ensure the module is up to date.
