@@ -150,8 +150,7 @@ The Web API setup form holds the information required to connect to, retrieve an
 
 #### Create a web API connection
 
-| **Field**                         | **Description**                      | 
-{set:cellbgcolor:red}
+| **Field** {set:cellbgcolor:red}   | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
 | **Name**                 			| Specify a **Name** for the web API connection |
 | **Description**                 	| Enter the **Description** of web API |
