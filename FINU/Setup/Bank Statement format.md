@@ -40,7 +40,7 @@ You can reach the **CASH AND BANK MANAGEMENT > SETUP > ADVANCED BANK RECONCILIAT
 | **Field** | **Description** |
 |-|-|
 **ABSR File type** |Choose the file format of the bank statement – options include:  <br> -	Flat File  <br> - BAI2 File <br> - NAI File <br> - BRS <br> - Custom |
-|Field delimiter|The type of field delimiter the file uses. E.g. a comma “,”  |
+|**Field delimiter**|The type of field delimiter the file uses. E.g. a comma “,”  |
 |**Record code field position**|This field is active only if the ABSR file type is BAI2, NAI or BRS file. This field captures the position of the Line type code in each line of the file. E.g. if Field Number =1, the first field of each line in the file determines the Line Type (i.e. 01, 02, 03, 16, 49, 98, 99).
 | **Record code field length** | Applicable to BRS Files as record length isn’t always 1 |
 
