@@ -35,7 +35,7 @@ Various communication methods (FTP, FTPS, SFTP, Azure cloud blob storage and web
 - Export EDI documents generated within D365to the VAN or Trading partner.
 
 ### Setting up FTP Sites
-*EDI > SETUP > CONNECTION SETUP > FTP SITES*
+**EDI > Setup > Connection setup > FTP sites**
 FTP is a communication method that can be used for this module. FTPS and FTP protocols are supported. 
 The FTP sites setup form holds the information required to connect to, retrieve and create files in/from FTP sites as well as the EDI document paths in the FTP site.
 
