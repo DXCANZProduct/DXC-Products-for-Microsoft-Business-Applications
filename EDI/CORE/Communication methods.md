@@ -51,6 +51,6 @@ To begin, create a new FTP site record and fill out the connection parameters
 | Enable TLS          		| Select to enable FTPS using TLS |
 | **Credentials**      		|  |
 | User                 		| Specify the **Username** used for authentication to the FTP site |
-| Password                  | Specify the Password used for authentication to the FTP site. br> *Note: this is encrypted and displayed as ……. within the form.* |
+| Password                  | Specify the Password used for authentication to the FTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
 
 *Note: Select **Test Connection** to confirm that a connection can be made with the FTP site specified.*
