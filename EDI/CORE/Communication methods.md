@@ -78,6 +78,8 @@ Outgoing documents have a single path that is required to be defined
 | EDI document type                 | Specify the **Document type** the path relates to |
 | Path			                    | Specify the FTP path where the outbound file will be saved |
 
+*Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br> The results will be shown on the far right of the grid.*
+
 ### Setting up SFTP Sites
 **EDI > Setup > Connection setup > SFTP sites**
 The SFTP sites setup form holds the information required to connect to, retrieve and create files in/from SFTP sites as well as the EDI document paths in the SFTP site.
@@ -94,13 +96,41 @@ To begin, create a new SFTP site record and fill out the connection parameters
 | Port                 			| Specify the **Port** for the SFTP site|
 | **Credentials**      			|  |
 | User                 			| Specify the **Username** used for authentication to the SFTP site |
-| Password                  	| Specify the Password used for authentication to the SFTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
+| Password                  	| Specify the **Password** used for authentication to the SFTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
 | **Proxy** (where applicable)  	|  |
-| Proxy type                 	| Select the applicable Proxy type, options <br> - Socks4 <br> - Socks5 <br> - Http |
-| Proxy host 	             	| Specify the proxy host for the SFTP site |
-| Proxy port                 	| Specify the proxy port for the SFTP site |
+| Proxy type                 	| Select the applicable **Proxy type**, options <br> - Socks4 <br> - Socks5 <br> - Http |
+| Proxy host 	             	| Specify the **Proxy host** for the SFTP site |
+| Proxy port                 	| Specify the **Proxy port** for the SFTP site |
 | Proxy user name              	| Specify the **Proxy username** used for authentication to the SFTP site |
 | Proxy password               	| Specify the **Proxy password** used for authentication to the SFTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
 | **Private key** (where applicable) 	|  |
 | Private key                 	| Specify the **Private key** used for authentication to the SFTP site |
 | Pass phrase                 	| Specify the **Pass phrase** used for authentication to the SFTP site |
+
+*Note: Select Test Connection to confirm that a connection can be made with the SFTP site specified.*
+
+#### Site paths
+It is possible to configure a different SFTP site path per EDI document type.
+A common way to configure this is to setup a SFTP site for the UAT environment versus the PROD environment so the PROD database can easily be rolled over into the UAT environment by simply changing the active site. 
+Incoming documents have 2 paths that are required to be defined:
+- Inbound
+- Archive
+
+Select **Populate paths** on the Action pane, to create the incoming and outgoing paths for all the licensed documents.
+
+| **Field**                         | **Description**                      | 
+| :-------------------------------- |:-------------------------------------| 
+| EDI document type                 | Specify the **Document type** the path relates to |
+| Type                				| The type of path: <br> **Inbound** - The path the EDI document files will be retrieved from <br> **Archive** - Once the file has been pulled from the inbound path it will be moved to this path |
+| Search mode		                | Specify to use either the Trading partner’s **Search mask** as prefix or suffix to identify ‘who’ the file is from. <br> Options: <br> **File name must start with** – Filename must start with Trading partner’s Search mask <br> **File name must end with** – Filename must end with Trading partner’s Search mask |
+| Path			                    | Specify the SFTP path |
+
+Outgoing documents have a single path that is required to be defined
+
+| **Field**                         | **Description**                      | 
+| :-------------------------------- |:-------------------------------------| 
+| EDI document type                 | Specify the **Document type** the path relates to |
+| Path			                    | Specify the SFTP path where the outbound file will be saved |
+
+*Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br> The results will be shown on the far right of the grid.*
+
