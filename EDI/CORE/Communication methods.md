@@ -41,7 +41,7 @@ The FTP sites setup form holds the information required to connect to, retrieve 
 
 #### Create a new site configuration
 To begin, create a new FTP site record and fill out the connection parameters
-| ***Field***                         | ***Description***                      | 
+| **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
 | Site name                 | Specify a **Name** for the FTP site |
 | Active                    | indicates if the site is active. To activate, select the **Activate** button available in the ribbon. |
@@ -54,3 +54,21 @@ To begin, create a new FTP site record and fill out the connection parameters
 | Password                  | Specify the Password used for authentication to the FTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
 
 *Note: Select **Test Connection** to confirm that a connection can be made with the FTP site specified.*
+
+#### Site paths
+It is possible to configure a different FTP site path per EDI document type.
+A common way to configure this is to setup a FTP site for the UAT environment versus the PROD environment so the PROD database can easily be rolled over into the UAT environment by simply changing the active site.
+Incoming documents have 2 paths that are required to be defined:
+- Inbound
+- Archive
+Select **Populate paths** to create the incoming and outgoing paths for all the licensed documents.
+
+| **Field**                         | **Description**                      | 
+| :-------------------------------- |:-------------------------------------| 
+| EDI document type                 | Specify the **Document type** the path relates to |
+| Type                				| The type of path: <br> **Inbound** - the path the EDI document files will be retrieved from <br> **Archive** - once the file has been pulled from the inbound path it will be moved to this path |
+| Search mode		                | Specify to use either the Trading partner’s **Search mask** as prefix or suffix to identify ‘who’ the file is from.
+<br> Options: <br>
+**File name must start with** – Filename must start with Trading partner’s Search mask
+**File name must end with** – Filename must end with Trading partner’s Search mask |
+| Path			                    | Specify the FTP path |
