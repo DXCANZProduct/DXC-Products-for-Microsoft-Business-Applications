@@ -34,7 +34,7 @@ D365 batches provide the ability to schedule the various processes involved with
 The EDI module process flow is made up of 5 basic steps:
 
 | **Process**            				| **Description**                                                                                                                             	|
-|------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------	|
+|------------------------------------------	|-------------------------------------------------------------------------------------------------------------------	|
 | <ins>**Inbound documents**</ins>  	|                                                                                                                                             	|
 | **Import**                 			| Files   are retrieved and imported into the modules inbound file staging area                                                          	 	|
 | **Process to staging**     			| Files in the inbound file staging area are read and transformed based on the templates into the EDI document type staging tables    			|
