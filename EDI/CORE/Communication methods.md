@@ -41,7 +41,7 @@ The FTP sites setup form holds the information required to connect to, retrieve 
 
 #### Create a new site configuration
 To begin, create a new FTP site record and fill out the connection parameters
-| **Field**                         | **Description**                      | 
+| ***Field***                         | ***Description***                      | 
 | :-------------------------------- |:-------------------------------------| 
 | Site name                 | Specify a **Name** for the FTP site |
 | Active                    | indicates if the site is active. To activate, select the **Activate** button available in the ribbon. |
