@@ -45,11 +45,11 @@ To begin, create a new FTP site record and fill out the connection parameters
 | :-------------------------------- |:-------------------------------------| 
 | **Site name**                 | Specify a **Name** for the FTP site |
 | **Active**                    | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
-| **CONNECTION**           |  |
+**Connection**           | 
 | **Host**                 		| Specify the **Host** for the FTP site <br> *Note: FTP:// is not required* |
 | **Port**                 		| Specify the **Port** for the FTP site|
 | **Enable TLS**          		| Select to enable FTPS using TLS |
-| **CREDENTIALS**     		|  |
+**Credentials**     		| 
 | **User**                 		| Specify the **Username** used for authentication to the FTP site |
 | **Password**                  | Specify the Password used for authentication to the FTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
 
