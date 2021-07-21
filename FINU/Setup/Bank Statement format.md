@@ -66,7 +66,7 @@ Only available when Custom format is ticked
 | **Custom Format > Line codes format** | The **Type codes** stores the relation between statement code and transaction direction (debit/credit) for BAI2 or NAI file <br> Note: Type codes button is active only if the **ABSR file type** is BAI2 file, NAI file or Custom. | 
 
 
-*Note: Line codes button is active only if the ABSR file type is Custom or BRS. *
+*Note: Line codes button is active only if the ABSR file type is Custom or BRS.*
 
 
 **Custom Format - Line Codes**
