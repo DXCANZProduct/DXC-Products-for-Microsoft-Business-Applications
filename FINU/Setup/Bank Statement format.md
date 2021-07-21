@@ -37,9 +37,9 @@ You can reach the **CASH AND BANK MANAGEMENT > SETUP > ADVANCED BANK RECONCILIAT
 
 #### Fields
 
-| Field | Description |
+| **Field** | **Description** |
 |-|-|
-ABSR File type |Choose the file format of the bank statement – options include:  <br> -	Flat File  <br> - BAI2 File <br> - NAI File <br> - BRS <br> - Custom |
+**ABSR File type** |Choose the file format of the bank statement – options include:  <br> -	Flat File  <br> - BAI2 File <br> - NAI File <br> - BRS <br> - Custom |
 |Field delimiter|The type of field delimiter the file uses. E.g. a comma “,”  |
 |**Record code field position**|This field is active only if the ABSR file type is BAI2, NAI or BRS file. This field captures the position of the Line type code in each line of the file. E.g. if Field Number =1, the first field of each line in the file determines the Line Type (i.e. 01, 02, 03, 16, 49, 98, 99).
 | **Record code field length** | Applicable to BRS Files as record length isn’t always 1 |
@@ -59,14 +59,14 @@ When creating a bank statement format, processing group is mandatory (including 
 Only available when Custom format is ticked
 #### *Buttons*
 
-| Button | Description |
+| **Button** | **Description** |
 |-|-|
 | **Custom Format > Lines** | The Lines form stores the column definition to use whilst importing the bank statement. |
 | **Custom Format > Line Codes** | The Line codes form stores the format line type. |
 | **Custom Format > Line codes format** | The **Type codes** stores the relation between statement code and transaction direction (debit/credit) for BAI2 or NAI file <br> Note: Type codes button is active only if the **ABSR file type** is BAI2 file, NAI file or Custom. | 
 
 
-Note: Line codes button is active only if the ABSR file type is Custom or BRS. 
+*Note: Line codes button is active only if the ABSR file type is Custom or BRS. *
 
 
 **Custom Format - Line Codes**
@@ -75,7 +75,7 @@ Note: Line codes button is active only if the ABSR file type is Custom or BRS.
 
 **Custom Format - Line codes button** is used to determine the line identifier for this bank statement. It is used in the **Custom Format - Lines** definition. It contains the following fields;
 
-| Field | Description |
+| **Field** | **Description** |
 |-|-|
 | **Line Code** | The field number corresponds to the format line type specified on the bank statement. |
 | **Description** | Specifies the format line type description. |
@@ -88,7 +88,7 @@ Note: Line codes button is active only if the ABSR file type is Custom or BRS.
 
 The Lines form defines the column definitions to use whilst importing the bank statement. It identifies which fields to use, and their position on the Bank Statement file, for the system to use when loading the detail into the system. It contains the following fields;
 
-| Field | Description |
+| **Field** | **Description** |
 |-|-|
 | **Field number**| The field number corresponds to the column number on the bank statement.  Note: Not all columns in the statement need to be configured. |
 | **Line code** | This option appears when the ABSR File Type is either BAI2 File, NAI File, BRS or Custom. <br> Line type of the file where the Bank Statement fields map to Dynamics 365 Bank Transactions: <br> 02	– Group Header  <br> 03	– Account Identifier <br> 16 – Transaction detail <br> 88 – Continuation Record <br>  Custom (This will use the codes specified on the Line Codes form)|
