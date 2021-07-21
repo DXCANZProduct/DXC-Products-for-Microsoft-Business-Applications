@@ -44,7 +44,7 @@ To begin, create a new FTP site record and fill out the connection parameters
 | **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
 | Site name                 | Specify a **Name** for the FTP site |
-| Active                    | indicates if the site is active. To activate, select the **Activate** button available in the ribbon. |
+| Active                    | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
 | **Connection**            |  |
 | Host                 		| Specify the **Host** for the FTP site <br> *Note: FTP:// is not required* |
 | Port                 		| Specify the **Port** for the FTP site|
@@ -60,7 +60,7 @@ It is possible to configure a different FTP site path per EDI document type.
 A common way to configure this is to setup a FTP site for the UAT environment versus the PROD environment so the PROD database can easily be rolled over into the UAT environment by simply changing the active site.
 Incoming documents have 2 paths that are required to be defined:
 - Inbound
-- Archive
+- Archive <br>
 Select **Populate paths** to create the incoming and outgoing paths for all the licensed documents.
 
 | **Field**                         | **Description**                      | 
@@ -70,9 +70,28 @@ Select **Populate paths** to create the incoming and outgoing paths for all the 
 | Search mode		                | Specify to use either the Trading partner’s **Search mask** as prefix or suffix to identify ‘who’ the file is from. <br> Options: <br> **File name must start with** – Filename must start with Trading partner’s Search mask <br> **File name must end with** – Filename must end with Trading partner’s Search mask |
 | Path			                    | Specify the FTP path |
 
-Outgoing documents have the single path this is required to be defined
+Outgoing documents have a single path that is required to be defined
 
 | **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
 | EDI document type                 | Specify the **Document type** the path relates to |
-| Path			                    | Specify the FTP path where the outbound file will be saved|
+| Path			                    | Specify the FTP path where the outbound file will be saved |
+
+### Setting up SFTP Sites
+**EDI > Setup > Connection setup > SFTP sites**
+The SFTP sites setup form holds the information required to connect to, retrieve and create files in/from SFTP sites as well as the EDI document paths in the SFTP site.
+
+#### Create a new site configuration
+To begin, create a new SFTP site record and fill out the connection parameters
+
+| **Field**                         | **Description**                      | 
+| :-------------------------------- |:-------------------------------------| 
+| Site name                 | Specify a **Name** for the SFTP site |
+| Active                    | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
+| **Connection**            |  |
+| Host                 		| Specify the **Host** for the FTP site <br> *Note: FTP:// is not required* |
+| Port                 		| Specify the **Port** for the FTP site|
+| Enable TLS          		| Select to enable FTPS using TLS |
+| **Credentials**      		|  |
+| User                 		| Specify the **Username** used for authentication to the FTP site |
+| Password                  | Specify the Password used for authentication to the FTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
