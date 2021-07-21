@@ -139,7 +139,21 @@ Outgoing documents have a single path that is required to be defined
 Azure cloud blob storage is a communication method that can be used for this module. 
 The Azure sites setup form holds the information required to connect to, retrieve and create files in/from Azure sites as well as the EDI document path in the Azure site.
 
+#### Create a new site configuration
+To begin, create a new Azure site record and fill out the connection parameters.
 
+| **Field** 					    | **Description**                      | 
+| :-------------------------------- |:-------------------------------------| 
+| **Site name**                		| Specify a **Name** for the Azure site |
+| **Active**                   	    | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
+<ins>**Credential type**</ins> 		|
+**Credential type**					| Select between *Key vault* or *Database*
+<ins>**Credentials**</ins> 			|	
+**Storage account name**			|Specify the **storage account name** used for authentication to the Azure site
+**Storage account key**				|Specify the **storage account key** used for authentication to the Azure site. 
+**Key Vault certificate**			| Assign Key vault (if applicable)
+             		
+*Note: Select **Test Connection** to confirm that a connection can be made with the Azure site specified.*
 
 ### Setting up for web services
 This is a base framework that will allow developers to build custom connections to consume external APIs and integrate them with the module. Out of the box the module does not include any functional connections and only provides development examples as a guide. 
