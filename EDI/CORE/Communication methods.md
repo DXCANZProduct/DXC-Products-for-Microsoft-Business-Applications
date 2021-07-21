@@ -45,11 +45,11 @@ To begin, create a new FTP site record and fill out the connection parameters
 | :-------------------------------- |:-------------------------------------| 
 | **Site name**                 | Specify a **Name** for the FTP site |
 | **Active**                    | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
-**Connection**           | 
+<ins>**Connection**</ins>           | 
 | **Host**                 		| Specify the **Host** for the FTP site <br> *Note: FTP:// is not required* |
 | **Port**                 		| Specify the **Port** for the FTP site|
 | **Enable TLS**          		| Select to enable FTPS using TLS |
-**Credentials**     		| 
+<ins>**Credentials**</ins>     		| 
 | **User**                 		| Specify the **Username** used for authentication to the FTP site |
 | **Password**                  | Specify the Password used for authentication to the FTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
 
@@ -91,19 +91,19 @@ To begin, create a new SFTP site record and fill out the connection parameters
 | :-------------------------------- |:-------------------------------------| 
 | **Site name**                 	| Specify a **Name** for the SFTP site |
 | **Active**                   	    | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
-| **Connection**            	|  |
+| <ins>**Connection**</ins>            	|  |
 | **Host**                 			| Specify the **Host** for the SFTP site <br> *Note: SFTP:// is not required* |
 | **Port**                			| Specify the **Port** for the SFTP site|
-| **Credentials**      			|  |
+| <ins>**Credentials**</ins>      			|  |
 | **User**                 			| Specify the **Username** used for authentication to the SFTP site |
 | **Password**                  	| Specify the **Password** used for authentication to the SFTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
-| **Proxy** (where applicable)  	|  |
+| <ins>**Proxy**</ins> (where applicable)  	|  |
 | **Proxy type**                 	| Select the applicable **Proxy type**, options <br> - Socks4 <br> - Socks5 <br> - Http |
 | **Proxy host** 	             	| Specify the **Proxy host** for the SFTP site |
 | **Proxy port**                 	| Specify the **Proxy port** for the SFTP site |
 | **Proxy user name**              	| Specify the **Proxy username** used for authentication to the SFTP site |
 | **Proxy password**               	| Specify the **Proxy password** used for authentication to the SFTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
-| **Private key** (where applicable) 	|  |
+| <ins>**Private key**</ins> (where applicable) 	|  |
 | **Private key**                 	| Specify the **Private key** used for authentication to the SFTP site |
 | **Pass phrase**                 	| Specify the **Pass phrase** used for authentication to the SFTP site |
 
@@ -159,7 +159,7 @@ The Web API setup form holds the information required to connect to, retrieve an
 | **Web API type**                 	| A list of available connections that have been developed for the implementation |
 | **Internet address**             	| The base URL of the API |
 | **Service endpoint**             	| The specific services endpoint |
-| <u>**Connection details**</u>       		
+| <ins>**Connection details**</ins>       		
 | **User**                  		| Specify the **Username**  used for authentication to the web API |
 | **Password**                 		| Specify the **Password**  used for authentication to the Web API |
 | **Application Id**                | Specify the **Application Id**  used for the web API |
