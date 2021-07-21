@@ -36,6 +36,7 @@ Various communication methods (FTP, FTPS, SFTP, Azure cloud blob storage and web
 
 ### Setting up FTP Sites
 **EDI > Setup > Connection setup > FTP sites**
+
 FTP is a communication method that can be used for this module. FTPS and FTP protocols are supported. 
 The FTP sites setup form holds the information required to connect to, retrieve and create files in/from FTP sites as well as the EDI document paths in the FTP site.
 
@@ -82,6 +83,7 @@ Outgoing documents have a single path that is required to be defined
 
 ### Setting up SFTP Sites
 **EDI > Setup > Connection setup > SFTP sites**
+
 The SFTP sites setup form holds the information required to connect to, retrieve and create files in/from SFTP sites as well as the EDI document paths in the SFTP site.
 
 #### Create a new site configuration
@@ -136,6 +138,7 @@ Outgoing documents have a single path that is required to be defined
 
 ### Setting up for Azure blob storage sites
 **EDI > Setup > Connection setup > Azure sites**
+
 Azure cloud blob storage is a communication method that can be used for this module. 
 The Azure sites setup form holds the information required to connect to, retrieve and create files in/from Azure sites as well as the EDI document path in the Azure site.
 
@@ -160,6 +163,7 @@ This is a base framework that will allow developers to build custom connections 
 For further information, please request the ‘Technical Guide - Web services for EDI 8.1.200’ document.
 
 **EDI > Setup > Connection setup > Web API settings**
+
 The Web API setup form holds the information required to connect to, retrieve and create files via web services. It is designed with some based fields as a framework and can be extended within the implementation as required.
 
 #### Create a web API connection
