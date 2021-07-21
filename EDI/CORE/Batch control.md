@@ -37,10 +37,10 @@ The EDI module process flow is made up of 5 basic steps:
 |------------------------------------------	|-------------------------------------------------------------------------------------------------------------------	|
 | <ins>**Inbound documents**</ins>  	|                                                                                                                                             	|
 | **Import**                 			| Files   are retrieved and imported into the modules inbound file staging area                                                          	 	|
-| **Process to staging**     			| Files in the inbound file staging area are read and transformed based on the templates into the EDI document type staging tables    			|
-| **Process to target**      			| The EDI document type staging tables are processed to their target D365 documents and business functions are performed.                     	|
+| **Process to staging**     			| Files in the inbound file staging area are read and transformed based on the templates <br>into the EDI document type staging tables    			|
+| **Process to target**      			| The EDI document type staging tables are processed to their target D365 documents and <br>business functions are performed.                     	|
 | <ins>**Outbound documents**</ins> 	|                                                                                                                                             	|
-| **Process to outbound**    			| EDI document type staging table records are processed based on the templates and files are generated into the outbound file staging area    	|
+| **Process to outbound**    			| EDI document type staging table records are processed based on the templates and files are <br>generated into the outbound file staging area    	|
 | **Export**                 			| Files in the outbound file staging area are exported.                                                                                 		|
 
 Each of these steps has a batch job that can be scheduled to automate it. Each of these batch jobs is run per company and will run over all enabled EDI document types. 
