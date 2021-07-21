@@ -34,7 +34,7 @@ The Trading partner or VAN will place data into a ‘cloud accessible’ locatio
 
 D365 will use templates to read the data from the inbound documents and create staging data. The staging data is then processed into target documents within D365 and standard application processing rules are applied.
 
-![alt text](image/Core_ImportProcess.png "Import process image")
+![alt text](image/Core_ImportProcess.png "EDI import process")
 
 ## Export process overview
 An event in D365 will trigger an EDI document to be evaluated. If the document is enabled (based on an associated Trading partner) D365 will create staging data from the event’s information (i.e. invoice posting, picking list posting).
@@ -43,4 +43,4 @@ Once the staging data is created an appropriate template is applied to generate 
 
 The outbound documents queue is periodically processed, and the files are placed into their setup destinations for the Trading partner or VAN to retrieve.
 
-![alt text](image/Core_ExportProcess.png "Export process image")
+![alt text](image/Core_ExportProcess.png "EDI export process")
