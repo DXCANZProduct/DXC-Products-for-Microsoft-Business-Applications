@@ -45,4 +45,5 @@ To begin, create a new FTP site record and fill out the connection parameters
 | :-------------------------------- |:-------------------------------------| 
 | Site name                 | Specify a **Name** for the FTP site |
 | Active                      | indicates if the site is active. To activate, select the **Activate** button available in the ribbon. |
-| **Connection**               |
+| **Connection**              
+| Host                 | Specify the Host for the FTP site <br> Note: FTP:// is not required |
