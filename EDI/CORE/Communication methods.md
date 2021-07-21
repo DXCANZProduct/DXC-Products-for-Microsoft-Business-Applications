@@ -78,7 +78,7 @@ Outgoing documents have a single path that is required to be defined
 | EDI document type                 | Specify the **Document type** the path relates to |
 | Path			                    | Specify the FTP path where the outbound file will be saved |
 
-*Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br> The results will be shown on the far right of the grid.*
+*Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br>The results will be shown on the far right of the grid.*
 
 ### Setting up SFTP Sites
 **EDI > Setup > Connection setup > SFTP sites**
@@ -132,5 +132,5 @@ Outgoing documents have a single path that is required to be defined
 | EDI document type                 | Specify the **Document type** the path relates to |
 | Path			                    | Specify the SFTP path where the outbound file will be saved |
 
-*Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br> The results will be shown on the far right of the grid.*
+*Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br>The results will be shown on the far right of the grid.*
 
