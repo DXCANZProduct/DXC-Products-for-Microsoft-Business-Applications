@@ -153,10 +153,10 @@ The Web API setup form holds the information required to connect to, retrieve an
 | **Internet address**             	| The base URL of the API |
 | **Service endpoint**             	| The specific services endpoint |
 | **Connection details**          	|  |
-| **User**                  		| Specify the ** Username**  used for authentication to the web API |
-| **Password**                 		| Specify the ** Password**  used for authentication to the Web API |
-| **Application Id**                | Specify the ** Application Id**  used for the web API |
-| **Application key**               | Specify the ** Application key**  for the web API |
+| **User**                  		| Specify the **Username**  used for authentication to the web API |
+| **Password**                 		| Specify the **Password**  used for authentication to the Web API |
+| **Application Id**                | Specify the **Application Id**  used for the web API |
+| **Application key**               | Specify the **Application key**  for the web API |
 
 #### Inbound
 The EDI module exposes various functions to send files into the inbound staging area for processing. 
