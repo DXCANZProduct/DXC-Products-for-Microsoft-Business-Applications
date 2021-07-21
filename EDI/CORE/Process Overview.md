@@ -5,7 +5,7 @@ title: [EDI Process overview]
 description: [Overview of the EDI import and export process]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 12/01/2020
+ms.date: 21/07/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
