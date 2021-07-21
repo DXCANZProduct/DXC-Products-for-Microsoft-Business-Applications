@@ -67,8 +67,5 @@ Select **Populate paths** to create the incoming and outgoing paths for all the 
 | :-------------------------------- |:-------------------------------------| 
 | EDI document type                 | Specify the **Document type** the path relates to |
 | Type                				| The type of path: <br> **Inbound** - the path the EDI document files will be retrieved from <br> **Archive** - once the file has been pulled from the inbound path it will be moved to this path |
-| Search mode		                | Specify to use either the Trading partner’s **Search mask** as prefix or suffix to identify ‘who’ the file is from.
-<br> Options: <br>
-**File name must start with** – Filename must start with Trading partner’s Search mask
-**File name must end with** – Filename must end with Trading partner’s Search mask |
+| Search mode		                | Specify to use either the Trading partner’s **Search mask** as prefix or suffix to identify ‘who’ the file is from. <br> Options: <br> **File name must start with** – Filename must start with Trading partner’s Search mask <br> **File name must end with** – Filename must end with Trading partner’s Search mask |
 | Path			                    | Specify the FTP path |
