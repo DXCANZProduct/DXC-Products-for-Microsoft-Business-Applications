@@ -65,14 +65,14 @@ The inbound files form has the option to manually upload files in an ad-hoc fash
 - Select **Inbound Files > Upload** file from the Import group on the Inbound files ribbon
 - Select the parameters as required
 
-**Dialog parameter** 	         | **Description**
+**Dialog parameter** 	            | **Description**
 :-------------------------------- |:------------------------------------- 
-File location	                | Browse file locations to select the required file.
-Is a package?	                | For use with web services – many files can be uploaded via a package (zip file with a manifest)
-Company	                      | The company to filter the trading partners that will have documents retrieved. 
-EDI document type	            | The document type you wish to upload.
-Trading Partner	              | Select the trading partner associated with the file. Automatically filtered by the document type selected.
-File name pattern search mode	| Similar to setup on connections, select the applicable search mode. The mode and Search mask on the Trading partner’s Incoming documents are used to find the applicable match. This has been introduced to support multiple incoming document feature.
+**File location**	                | Browse file locations to select the required file.
+**Is a package?**	                | For use with web services – many files can be uploaded via a package (zip file with a manifest)
+**Company**	                      | The company to filter the trading partners that will have documents retrieved. 
+**EDI document type**	            | The document type you wish to upload.
+**Trading Partner**	              | Select the trading partner associated with the file. Automatically filtered by the document type selected.
+**File name pattern search mode**	| Similar to setup on connections, select the applicable search mode. The mode and Search mask on the Trading partner’s Incoming documents are used to find the applicable match. This has been introduced to support multiple incoming document feature.
 
 Once the process has run, the inbound file records will appear in a pending status in the grid. Any errors with the process will be shown as an info log.
 
