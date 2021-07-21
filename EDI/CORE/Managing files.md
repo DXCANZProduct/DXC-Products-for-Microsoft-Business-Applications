@@ -37,26 +37,26 @@ Automatic archiving of the document handling attachment can be setup with **Arch
 Filename uniqueness is validated by *Document type* and *Trading partner*. It thus allows same filename for different Trading partners.
 
 Note: The document is also available via the **attachments** tab of the inbound file record. 
-- Select the EDI Document to review
-- Select the Status of the document you wish to review. The options are:
-- Pending – File has not been processed. Default option for the form.
-- Processed – File processing is complete
-- Error – An error was identified during file processing.  The file has not been processed
-- Processing – File is currently processing
-- Archived – The file has been archived
-- Once a file is processed, it is possible to view the staging document by selecting Staging document from the ribbon.
-- To view errors, select the Log button from the ribbon.
-- Select Reset Status to update the status back to pending and reprocess the file.
-- See Retry/Reset process for more details on Edit reset status recurrence
-- Select Reset template to update the document template used for processing from import to staging.
-- Select Download attachment to download the selected file/s attachment. When multiple files are selected a zip is created.
+- Select the **EDI Document** to review
+- Select the **Status** of the document you wish to review. The options are:
+  - **Pending** – File has not been processed. Default option for the form.
+  - **Processed** – File processing is complete
+  - **Error** – An error was identified during file processing.  The file has not been processed
+  - **Processing** – File is currently processing
+  - **Archived** – The file has been archived
+- Once a file is processed, it is possible to view the staging document by selecting **Staging document** from the ribbon.
+- To view errors, select the **Log** button from the ribbon.
+- Select **Reset Status** to update the status back to pending and reprocess the file.
+- See Retry/Reset process for more details on **Edit reset status recurrence**
+- Select **Reset template** to update the document template used for processing from import to staging.
+- Select **Download attachment** to download the selected file/s attachment. When multiple files are selected a zip is created.
 - The following fields are available for review on the Overview:
-- EDI Document – The inbound document type
-- File Name – Name of the file imported
-- Company – Company file is processing in
-- Account Number – Depending on the Document Type, this could be a Customer account, Warehouse or Vendor account
-- Name – The Name of the Customer, Warehouse or Vendor
-- Status – The status of the file
-- Created Date and Time – Date/Time file was received
+  - **EDI Document** – The inbound document type
+  - **File Name** – Name of the file imported
+  - **Company** – Company file is processing in
+  - **Account Number** – Depending on the Document Type, this could be a Customer account, Warehouse or Vendor account
+  - **Name** – The Name of the Customer, Warehouse or Vendor
+  - **Status** – The status of the file
+  - **Created Date and Time** – Date/Time file was received
 
 
