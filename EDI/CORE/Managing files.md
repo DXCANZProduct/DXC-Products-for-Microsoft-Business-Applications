@@ -72,7 +72,7 @@ The inbound files form has the option to manually upload files in an ad-hoc fash
 **Company**	                      | The company to filter the trading partners that will have documents retrieved. 
 **EDI document type**	            | The document type you wish to upload.
 **Trading Partner**	              | Select the trading partner associated with the file. Automatically filtered by the document type selected.
-**File name pattern search mode**	| Similar to setup on connections, select the applicable search mode. The mode and Search mask on the Trading partner’s Incoming documents are used to find the applicable match. This has been introduced to support multiple incoming document feature.
+**File name pattern search mode**	| Similar to setup on connections, select the applicable search mode. <br>The mode and Search mask on the Trading partner’s Incoming documents are used to find the applicable match. <br>This has been introduced to support multiple incoming document feature.
 
 Once the process has run, the inbound file records will appear in a pending status in the grid. Any errors with the process will be shown as an info log.
 
