@@ -62,7 +62,7 @@ Incoming documents have 2 paths that are required to be defined:
 - Inbound
 - Archive
 
-Select **Populate paths** to create the incoming and outgoing paths for all the licensed documents.
+Select **Populate paths** on the Action pane, to create the incoming and outgoing paths for all the licensed documents.
 
 | **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
@@ -87,12 +87,20 @@ To begin, create a new SFTP site record and fill out the connection parameters
 
 | **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
-| Site name                 | Specify a **Name** for the SFTP site |
-| Active                    | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
-| **Connection**            |  |
-| Host                 		| Specify the **Host** for the FTP site <br> *Note: FTP:// is not required* |
-| Port                 		| Specify the **Port** for the FTP site|
-| Enable TLS          		| Select to enable FTPS using TLS |
-| **Credentials**      		|  |
-| User                 		| Specify the **Username** used for authentication to the FTP site |
-| Password                  | Specify the Password used for authentication to the FTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
+| Site name                 	| Specify a **Name** for the SFTP site |
+| Active                   	    | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
+| **Connection**            	|  |
+| Host                 			| Specify the **Host** for the SFTP site <br> *Note: SFTP:// is not required* |
+| Port                 			| Specify the **Port** for the SFTP site|
+| **Credentials**      			|  |
+| User                 			| Specify the **Username** used for authentication to the SFTP site |
+| Password                  	| Specify the Password used for authentication to the SFTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
+| **Proxy** (where applicable)  	|  |
+| Proxy type                 	| Select the applicable Proxy type, options <br> - Socks4 <br> - Socks5 <br> - Http |
+| Proxy host 	             	| Specify the proxy host for the SFTP site |
+| Proxy port                 	| Specify the proxy port for the SFTP site |
+| Proxy user name              	| Specify the **Proxy username** used for authentication to the SFTP site |
+| Proxy password               	| Specify the **Proxy password** used for authentication to the SFTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
+| **Private key** (where applicable) 	|  |
+| Private key                 	| Specify the **Private key** used for authentication to the SFTP site |
+| Pass phrase                 	| Specify the **Pass phrase** used for authentication to the SFTP site |
