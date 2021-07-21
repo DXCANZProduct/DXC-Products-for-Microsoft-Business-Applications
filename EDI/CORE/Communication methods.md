@@ -43,15 +43,15 @@ The FTP sites setup form holds the information required to connect to, retrieve 
 To begin, create a new FTP site record and fill out the connection parameters
 | **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
-| Site name                 | Specify a **Name** for the FTP site |
-| Active                    | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
-| **Connection**            |  |
-| Host                 		| Specify the **Host** for the FTP site <br> *Note: FTP:// is not required* |
-| Port                 		| Specify the **Port** for the FTP site|
-| Enable TLS          		| Select to enable FTPS using TLS |
-| **Credentials**      		|  |
-| User                 		| Specify the **Username** used for authentication to the FTP site |
-| Password                  | Specify the Password used for authentication to the FTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
+| **Site name**                 | Specify a **Name** for the FTP site |
+| **Active**                    | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
+| ***Connection***            |  |
+| **Host**                 		| Specify the **Host** for the FTP site <br> *Note: FTP:// is not required* |
+| **Port**                 		| Specify the **Port** for the FTP site|
+| **Enable TLS**          		| Select to enable FTPS using TLS |
+| ***Credentials***     		|  |
+| **User**                 		| Specify the **Username** used for authentication to the FTP site |
+| **Password**                  | Specify the Password used for authentication to the FTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
 
 *Note: Select **Test Connection** to confirm that a connection can be made with the FTP site specified.*
 
