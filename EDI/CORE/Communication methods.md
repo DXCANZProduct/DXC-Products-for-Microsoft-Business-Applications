@@ -134,3 +134,33 @@ Outgoing documents have a single path that is required to be defined
 
 *Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br>The results will be shown on the far right of the grid.*
 
+### Setting up for web services
+This is a base framework that will allow developers to build custom connections to consume external APIs and integrate them with the module. Out of the box the module does not include any functional connections and only provides development examples as a guide. 
+For further information, please request the ‘Technical Guide - Web services for EDI 8.1.200’ document.
+
+**EDI > Setup > Connection setup > Web API settings**
+The Web API setup form holds the information required to connect to, retrieve and create files via web services. It is designed with some based fields as a framework and can be extended within the implementation as required.
+
+#### Create a web API connection
+
+| **Field**                         | **Description**                      | 
+| :-------------------------------- |:-------------------------------------| 
+| **Name**                 			| Specify a **Name** for the web API connection |
+| **Description**                 	| Enter the **Description** of web API |
+| **Active**                   	    | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
+| **General**                 		|  |
+| **Web API type**                 	| A list of available connections that have been developed for the implementation |
+| **Internet address**             	| The base URL of the API |
+| **Service endpoint**             	| The specific services endpoint |
+| **Connection details**          	|  |
+| **User**                  		| Specify the ** Username**  used for authentication to the web API |
+| **Password**                 		| Specify the ** Password**  used for authentication to the Web API |
+| **Application Id**                | Specify the ** Application Id**  used for the web API |
+| **Application key**               | Specify the ** Application key**  for the web API |
+
+#### Inbound
+The EDI module exposes various functions to send files into the inbound staging area for processing. 
+
+#### Outbound
+The EDI module exposes various functions to pull files from the outbound inbound staging area for download.
+An oData feed of the outbound file queue (/data/SAB_EDIFileExport) is available for discovering the outbound queued file references.
