@@ -150,16 +150,16 @@ The Web API setup form holds the information required to connect to, retrieve an
 
 #### Create a web API connection
 
-| **Field** {set:cellbgcolor:red}   | **Description**                      | 
+| **Field** 					    | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
 | **Name**                 			| Specify a **Name** for the web API connection |
 | **Description**                 	| Enter the **Description** of web API |
 | **Active**                   	    | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
-| - **General**                 		|  |
+| ##### General                		|  |
 | **Web API type**                 	| A list of available connections that have been developed for the implementation |
 | **Internet address**             	| The base URL of the API |
 | **Service endpoint**             	| The specific services endpoint |
-| - **Connection details**         	|  |
+| ##### Connection details        	|  |
 | **User**                  		| Specify the **Username**  used for authentication to the web API |
 | **Password**                 		| Specify the **Password**  used for authentication to the Web API |
 | **Application Id**                | Specify the **Application Id**  used for the web API |
