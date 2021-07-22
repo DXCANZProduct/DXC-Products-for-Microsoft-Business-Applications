@@ -44,7 +44,7 @@ Inbound and outbound files will need to be deleted periodically to make room in 
 
 Archiving of inbound and/or outbound filess attachments can be processed as a recurring batch.
 
-Th process removes the document attachment record and marks the EDI import/export record as archived.
+The process removes the document attachment record and marks the EDI import/export record as archived.
 The document removal option is managed by **Organization administration > Document management > Document types**
 
 **Field** 	                                | **Description**
