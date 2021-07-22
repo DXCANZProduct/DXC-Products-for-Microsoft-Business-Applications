@@ -35,7 +35,7 @@ When an outbound file is created, a new record will be created in this table. In
 Once the file has been processed successfully it can be archived and the document deleted from document handling. 
 Automatic archiving of the document handling attachment can be setup with **Archive file queue**.
 
-*Note: Where the document's filename has an extension, the **Attachments** tab can be used for quick viewing of each inbound file record.*
+*Note: Where the document's filename has an extension, the **Attachments** tab can be used for quick viewing of each outbound file record.*
 
 - Select the **EDI Document** to review
 - Select the **Status** of the document you wish to review. The options are:
