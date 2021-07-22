@@ -35,7 +35,7 @@ Users can access the form by navigating to **EDI > Inquiries and reports > Funct
 When assigning outbound documents for a trading partner, the user has an option to set that an Inbound functional acknowledgement is required.
 This is achieved by setting **Acknowledgement** to *Yes* on the Trading partner's Outgoing documents.
 
-This inqury form provides a view of outgoing documents that requires an Inbound functional acknowledgement.
+This inqury form provides a view of outgoing documents that requires an Inbound functional acknowledgement. <br>
 **Outbound files** on the Action pane opens the Outbound file for the staging record.
 
 Filter pane options:
