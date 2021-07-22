@@ -62,7 +62,7 @@ Filename uniqueness is validated by *Document type* and *Trading partner*. It th
 
 ###	Upload files manually
 The inbound files form has the option to manually upload files in an ad-hoc fashion.  It is intended that this option is only used during testing of the EDI module.
-- Select **Inbound Files > Upload** file from the Import group on the Inbound files ribbon
+- Select **Inbound Files > Upload file** from the Import group on the Inbound files ribbon
 - Select the parameters as required
 
 **Dialog parameter** 	            | **Description**
@@ -71,8 +71,25 @@ The inbound files form has the option to manually upload files in an ad-hoc fash
 **Is a package?**	                | For use with web services – many files can be uploaded via a package (zip file with a manifest)
 **Company**	                      | The company to filter the trading partners that will have documents retrieved. 
 **EDI document type**	            | The document type you wish to upload.
-**Trading Partner**	              | Select the trading partner associated with the file. Automatically filtered by the document type selected.
+**Trading Partner**	              | Select the trading partner associated with the file. Automatically filtered by the company and document type selected.
 **File name pattern search mode**	| Similar to setup on connections, select the applicable search mode. <br>The mode and Search mask on the Trading partner’s Incoming documents are used to find the applicable match. <br>This has been introduced to support multiple incoming document feature.
+
+Once the process has run, the inbound file records will appear in a pending status in the grid. Any errors with the process will be shown as an info log.
+
+###	Retrieve files manually
+The inbound files form has the option to retrieve files in an ad-hoc fashion on top of the batch control from all the licensed document types.
+- Select **Inbound Files > Retrieve files** from the Import group on the Inbound files ribbon
+- Select the parameters as required
+
+**Dialog parameter** 	            | **Description**
+:-------------------------------- |:------------------------------------- 
+**EDI Document type**	            | The specific document type to retrieve. <br> *Note: If left blank, all document types will be retrieved.*
+**Company**                       | The company to filter the trading partners that will have documents retrieved. <br> *Note: If left blank, all companies will be run.*
+**File transfer type**            | The transfer method to use. <br> *Note: This field is Mandatory.*
+**Connection profile**            |	Option to select a specific Connection profile. Filtered options based on File transfer type selected. <br> *Note: This field is not Mandatory*
+
+- Optionally run this on batch
+- Select OK
 
 Once the process has run, the inbound file records will appear in a pending status in the grid. Any errors with the process will be shown as an info log.
 
