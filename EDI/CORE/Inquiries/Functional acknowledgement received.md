@@ -43,6 +43,7 @@ Filter pane options:
 - **EDI Document type** - Filter records to a specific EDI document type.
 - **Company** - Filter records to a specific company.
 
+
 Available fields for the outgoing staging records:
 - **EDI number**
 - **Company**
