@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI Core]
-description: [EDI Core - Setup]
+description: [EDI Core - Setup cleanup profile]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 22/07/2021
