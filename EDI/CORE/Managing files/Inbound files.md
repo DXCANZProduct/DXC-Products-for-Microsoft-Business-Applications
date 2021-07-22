@@ -30,7 +30,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Managing inbound files
 
 ## Inbound files
-Users can access the form by navigating to **EDI > files > Inbound files**. <br>
+Users can access the form by navigating to **EDI > Files > Inbound files**. <br>
 When an incoming file is located, a new record will be created in this table.  In addition the document will be attached to the record via document handling to allow for easy review where an error has occurred.  Once the file has been processed successfully it can be archived and the document deleted from document handling. 
 Automatic archiving of the document handling attachment can be setup with **Archive file queue**.
 
