@@ -50,7 +50,7 @@ The document removal option is managed by **Organization administration > Docume
 **Field** 	                                | **Description**
 :--------------------------------           |:------------------------------------- 
 <ins>**Document removal options**</ins>     |
-**Remove**	                                | - **Document only**: deletes the attachment record from database. <br> - **Document and physical file**: deletes the file from Azure storage or SharePoint
+**Remove**	                                | - **Document only** - deletes the attachment record from database. <br> - **Document and physical file** - deletes the file from Azure storage or SharePoint
 
 See topic [Configure document management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management)
 for more details on how to configure document management (document handling) so that it stores file attachments and notes for records.
