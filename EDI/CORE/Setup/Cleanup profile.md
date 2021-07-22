@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [Docusign]
-description: [Setup Parameters]
-author: [ndavidson2]
+title: [EDI Core]
+description: [EDI Core - Setup]
+author: [jdutoit2]
 manager: Kym Parker
-ms.date: 12/01/2020
+ms.date: 22/07/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: [Application User]
 # ms.devlang: 
-ms.reviewer: [ndavidson2]
+ms.reviewer: [jdutoit2]
 ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -28,3 +28,24 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Cleanup profile
+
+## Setup Cleanup profile
+Users can access the form by navigating to **EDI > Setup > Cleanup profile**.
+The cleanup profile is used to automatically delete staging record/s.
+
+The configured Cleanup profiles can be used either in:
+- EDI shared parameters, and/or
+- Trading partner’s Options, and/or
+- Trading partner’s Incoming and Outgoing documents
+
+Also required to setup a period task to run the cleanup via  **EDI > Periodic tasks > Cleanup staging**.
+- Click **New** to create a new record. 
+- In the **Name** field, enter the name of the Cleanup profile group
+- In the **Description** field, enter a description of the Cleanup profile group
+- In the **Mappings** fast tab, select **Add** to create a new record
+- Select the **Staging to target status**. Options:
+  - Not started
+  - Completed
+  - Error
+  - Cancelled
+- Specify the **Age days**. When the batch job is run, staging records older than this value will be deleted.
