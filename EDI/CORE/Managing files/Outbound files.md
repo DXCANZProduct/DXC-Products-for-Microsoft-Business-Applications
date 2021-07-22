@@ -61,7 +61,7 @@ Automatic archiving of the document handling attachment can be setup with **Arch
 ###	Send files manually
 From the outbound files form, files can be sent in an ad-hoc manner separately to the batch control process.
 - Select **Outbound Files > Send files** from the ribbon on the Outbound files form
-- Optionally, select the records to include and **Outbound Files > Send selected files**
+- Optionally, select the records to include and select **Outbound Files > Send selected files**
 - Select **OK**
 
 ###	Create Files manually 
