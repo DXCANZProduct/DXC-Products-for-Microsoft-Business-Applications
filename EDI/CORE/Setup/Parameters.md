@@ -63,7 +63,7 @@ If they are setup as Custom, the custom date and time format must be specified.
 <ins>**Custom time format**</ins> | Enabled when **Culture** is set to *Custom*
 **Format**                        |	Select the default **time** format to be used for all text templates
 **Separator**                     |	Select the default **time separator** used for all text templates
-<ins>**Custom date and time format**</ins> | Enabled when Date and time format = Custom
+<ins>**Custom date and time format**</ins> | Enabled when **Date and time format** is set to _Custom_
 **Custom date and time format**   |	Enter custom date and time format
 **Formatted date and time example** |	Displays example date and time for Custom date and time format (in UTC timezone)
 **Custom time format**            |	Enter custom time format
