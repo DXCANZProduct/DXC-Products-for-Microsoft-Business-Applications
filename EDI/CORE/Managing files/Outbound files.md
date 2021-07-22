@@ -68,7 +68,7 @@ From the outbound files form, files can be sent in an ad-hoc manner separately t
 Users can access the form by navigating to **EDI > Periodic tasks > Export batch jobs**. <br>
 When EDI documents are posted within D365, a record is created in the staging table where it is then possible to prepare a file to be sent to the VAN or partner.
 
-*Note: A **batch job** should be setup to create outgoing files and default **Connection profile** in EDI parameters.*
+*Note: A **batch job** should be setup to create outgoing files and default **Connection profile** assigned in EDI parameters.*
 - Select the **EDI Document** to be created
 - Select the **Company**
 - If required, set **Batch Processing** to *Yes* and set the recurrence
