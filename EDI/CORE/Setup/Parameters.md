@@ -42,3 +42,32 @@ XML and JSON uses standard ISO formats, but can be overridden on a document leve
 Leave XML and JSON as Standard date format to utilities the standard formats. 
 If they are setup as Custom, the custom date and time format must be specified.
 
+**Field** 	                      | **Description**
+:-------------------------------- |:-------------------------------------
+<ins>**Document Types**</ins>
+**File Attachment Document Type** |	Specify the document management type used to store EDI files that are sent and received for review.
+<ins>**Connection**</ins>         |
+**Connection profile**	          | Specify the default Connection profile to be used when sending Outbound documents. This default can be overridden on Trading partner or Trading partner’s document level.
+<ins>**Date**</ins>
+**Date and time format**          |	**Standard** – Enables standard date/time formats. <br> Enables the following fields: <br> -	Standard date and time format <br> -	Standard time format <br> -	Culture <br> **Custom** – Provides ability to specify a custom date/time format. Enables the following fields <br> -	Custom date and time format <br> -	Custom time format
+**Standard date and time format** |	Enabled when ‘Date and time format’ = Standard <br> Options as per https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings
+**Standard time format**          |	Select between **Short time** or **Long time**
+**Culture**                       |	Enabled when ‘Date and time format’ = Standard <br> -	**Custom** – Enables the Custom date and Custom time format fields <br> -	**[Invariant](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.invariantculture?view=netframework-4.8)** – Culture insensitive, associated with English language but not with any country/region <br> -	**Standard** – Enables Standard language field, to select applicable std language 
+**Standard language**             |	Enabled when Culture = Standard. <br> Select applicable standard language
+<ins>**Custom date format**</ins> | Enabled when Culture = Custom
+**Format**                        |	Select the default date format to be used for all text templates
+**Day**                           |	Select the default format used for day for all text templates
+**Month**                         |	Select the default format used for month for all text templates
+**Year**                          |	Select the default format used for year for all text templates
+**Separator**                     |	Select the default date separator used for all text templates
+<ins>**Custom time format**</ins> | Enabled when Culture = Custom
+**Format**                        |	Select the default time format to be used for all text templates
+**Separator**                     |	Select the default time separator used for all text templates
+<ins>**Custom date and time format**</ins> | Enabled when Date and time format = Custom
+**Custom date and time format**   |	Enter custom date and time format
+**Formatted date and time example** |	Displays example date and time for Custom date and time format (in UTC timezone)
+**Custom time format**            |	Enter custom time format
+**Formatted time example**        |	Displays example time for Custom time format (in UTC timezone)
+<ins>**Sales orders**</ins>
+**Allow historic PO types**       |	Customer order types: Confirmation, Cancel and Change have been moved to Order purpose. This field provides Backwards compatibility to still show these deprecated options under order types
+
