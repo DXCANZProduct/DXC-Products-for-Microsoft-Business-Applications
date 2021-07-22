@@ -88,7 +88,7 @@ The inbound files form has the option to retrieve files in an ad-hoc fashion on 
 **File transfer type**            | The transfer method to use. <br> *Note: This field is Mandatory.*
 **Connection profile**            |	Option to select a specific Connection profile. Filtered options based on File transfer type selected. <br> *Note: This field is not Mandatory*
 
-- Optionally run this on batch
+- Optionally setup a recurrence to run this process as a batch.
 - Select OK
 
 Once the process has run, the inbound file records will appear in a pending status in the grid. Any errors with the process will be shown as an info log.
