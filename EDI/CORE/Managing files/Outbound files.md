@@ -53,8 +53,8 @@ Automatic archiving of the document handling attachment can be setup with **Arch
   - **EDI Document** – The inbound document type
   - **File Name** – Name of the file imported
   - **Company** – Company file is processing in
-  - **Account Number** – Depending on the Document Type, this could be a Customer account or Warehouse
-  - **Name** – The Name of the Customer or Warehouse
+  - **Account Number** – Depending on the Document Type, this could be a Customer, Vendor account or Warehouse
+  - **Name** – The Name of the Customer, Vendor or Warehouse
   - **Status** – The status of the file
   - **Created Date and Time** – Date/Time file was received
 
