@@ -36,7 +36,7 @@ Automatic archiving of the document handling attachment can be setup with **Arch
 
 Filename uniqueness is validated by *Document type* and *Trading partner*. It thus allows same filename for different Trading partners.
 
-*Note: The document is also available via the **attachments** tab of the inbound file record.*
+*Note: Where the document's filename has an extension, the document can also be viewed via the **Attachments** tab of the inbound file record.*
 
 - Select the **EDI Document** to review
 - Select the **Status** of the document you wish to review. The options are:
