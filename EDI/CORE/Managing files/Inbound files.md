@@ -93,3 +93,8 @@ The inbound files form has the option to retrieve files in an ad-hoc fashion on 
 
 Once the process has run, the inbound file records will appear in a pending status in the grid. Any errors with the process will be shown as an info log.
 
+###	Process files manually
+From the **Inbound files** form, files can be processed to their staging records in an ad-hoc manner separately to the batch control process.
+- Select **Inbound Files > Process files** from the ribbon on the Inbound files form
+- Optionally, select the records to include and **Inbound Files > Process selected files**
+- Select OK
