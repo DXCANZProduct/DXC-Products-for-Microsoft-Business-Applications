@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [EDI paramters]
-description: [Setup Parameters]
+title: [EDI Core]
+description: [EDI Core - Setup EDI parameters]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 12/01/2020
@@ -31,6 +31,14 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 Users can access the form by navigating to **EDI > Setup > EDI Parameters**
 
 ## Refresh module
-
 After each deployment, users should select the **Refresh module** button on the General Tab of EDI parameters.  
 This option will refresh the modules artefacts and ensure the module is up to date.
+
+## General
+The parameters control the operation for the module per legal entity.
+The EDI parameter’s Date format will be used to default Text document type’s Date formats. 
+XML and JSON uses standard ISO formats, but can be overridden on a document level.
+
+Leave XML and JSON as Standard date format to utilities the standard formats. 
+If they are setup as Custom, the custom date and time format must be specified.
+
