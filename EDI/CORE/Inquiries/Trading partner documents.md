@@ -31,8 +31,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Trading partner documents
 
 ##	Trading partners inquiry
-Users can access the form by navigating to **EDI > Inquiries and reports > Trading partner documents**.
-
+Users can access the form by navigating to **EDI > Inquiries and reports > Trading partner documents**. <br>
 The Trading partner documents allows for an easy to view list of all EDI Trading partners and their enabled document types.
 
 Users can control what records are displayed in the grid:
