@@ -96,5 +96,5 @@ Once the process has run, the inbound file records will appear in a pending stat
 ###	Process files manually
 From the **Inbound files** form, files can be processed to their staging records in an ad-hoc manner separately to the batch control process.
 - Select **Inbound Files > Process files** from the ribbon on the Inbound files form
-- Optionally, select the records to include and **Inbound Files > Process selected files**
+- Optionally, select the records to include and select **Inbound Files > Process selected files**
 - Select OK
