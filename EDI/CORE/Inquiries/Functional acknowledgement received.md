@@ -45,12 +45,12 @@ Filter pane options:
 
 
 Available fields for the outgoing staging records:
-- **EDI number**
-- **Company**
+- **EDI number** - EDI number for the record
+- **Company** - Company for the record
 - **Type** - Customer, Vendor or Warehouse
 - **Trading partner account** - Customer account, Vendor account or Warehouse
 - **Name** - Trading partner's name
-- **EDI Document type**
+- **EDI document type** - EDI document type for the record
 - **Group control number** - Used for matching the Inbound functional acknowledgement to the correct outgoing staging record.
 - **Sent timestamp** - Date stamp of when the record was sent
 - **Received** - Indicates if an Inbound functional acknowledgement has been received for the Group control number
