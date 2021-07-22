@@ -35,7 +35,7 @@ Users can access the form by navigating to **EDI > Inquiries and reports > Funct
 When assigning outbound documents for a trading partner, the user has an option to set that an Inbound functional acknowledgement is required.
 This is achieved by setting **Acknowledgement** to *Yes* on the Trading partner's Outgoing documents.
 
-This inqury form provides a view of outgoing documents that haven't received an Inbound functional acknowledgement.
+This inqury form provides a view of outgoing documents that that requires an Inbound functional acknowledgement.
 **Outbound files** on the Action pane opens the Outbound file for the staging record.
 
 Filter pane options:
@@ -44,12 +44,13 @@ Filter pane options:
 - **Company** - Filter records to a specific company.
 
 Available fields for the outgoing staging records:
-- EDI number
-- Company
-- Type - Customer, Vendor or Warehouse
-- Trading partner account - Customer account, Vendor account or Warehouse
-- Name - Trading partner's name
-- EDI Document type
-- Group control number
-- Sent timestamp - Date stamp of when the record was sent
-
+- **EDI number**
+- **Company**
+- **Type** - Customer, Vendor or Warehouse
+- **Trading partner account** - Customer account, Vendor account or Warehouse
+- **Name** - Trading partner's name
+- **EDI Document type**
+- **Group control number** - Used for matching the Inbound functional acknowledgement to the correct outgoing staging record.
+- **Sent timestamp** - Date stamp of when the record was sent
+- **Received** - Indicates if an Inbound functional acknowledgement has been received for the Group control number
+- **Received timestamp** - Date/time when the Inbound functional acknowledgement has been receibed for the Group control number
