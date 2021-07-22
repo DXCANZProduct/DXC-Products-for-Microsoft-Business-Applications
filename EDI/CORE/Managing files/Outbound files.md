@@ -27,9 +27,56 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Managing files
+# Managing outbound files
 
 ## Outbound files
+Users can access the form by navigating to **EDI > Files > Outbound files**. <br>
+When an outbound file is created, a new record will be created in this table. In addition the document will be attached to the record via document handling. 
+Once the file has been processed successfully it can be archived and the document deleted from document handling. 
+Automatic archiving of the document handling attachment can be setup with **Archive file queue**.
+
+*Note: Where the document's filename has an extension, the **Attachments** tab can be used for quick viewing of each inbound file record.*
+
+- Select the **EDI Document** to review
+- Select the **Status** of the document you wish to review. The options are:
+  - **Pending** – File has not been processed
+  - **Processed** – File processing is complete
+  - **Error** – An error was identified during file processing.  The file has not been processed
+  - **Processing** – File is currently processing
+  - **Archived** – The file has been archived
+- View the staging document by selecting **Staging document** from the ribbon.
+- To view errors, select the **Log** button from the ribbon.
+- Select **Reset Status** to update the status back to pending and reprocess the file.
+- See Retry/Reset process for more details on **Edit reset status recurrence**.
+- Select **Download attachment** to download the selected file/s attachment. When multiple files are selected a zip is created.
+- The following fields are available for review on the Overview:
+  - **EDI Document** – The inbound document type
+  - **File Name** – Name of the file imported
+  - **Company** – Company file is processing in
+  - **Account Number** – Depending on the Document Type, this could be a Customer account or Warehouse
+  - **Name** – The Name of the Customer or Warehouse
+  - **Status** – The status of the file
+  - **Created Date and Time** – Date/Time file was received
+
+###	Send files manually
+From the outbound files form, files can be sent in an ad-hoc manner separately to the batch control process.
+- Select **Outbound Files > Send files** from the ribbon on the Outbound files form
+- Optionally, select the records to include and **Outbound Files > Send selected files**
+- Select **OK**
+
+###	Create Files manually 
+Users can access the form by navigating to **EDI > Periodic tasks > Export batch jobs**.
+When EDI documents are posted within D365 a record is created in the staging table where it is then possible to prepare a file to be sent to the VAN or partner.  
+*Note: A **batch job** should be setup to create outgoing files and default **Connection profile** in EDI parameters.*
+- Select the **EDI Document** to be created
+- Select the **Company**
+- If required, set **Batch Processing** to *Yes* and set the recurrence
+- Select **OK**
+
+Once outbound files have been created, they must be sent to the applicable party. 
+- Select the **File Transfer Type**.
+- If required, set **Batch Processing** to *Yes* and set the recurrence
+- Select **OK**
 
 
 
