@@ -36,12 +36,20 @@ When assigning outbound documents for a trading partner, the user has an option 
 This is achieved by setting **Acknowledgement** to *Yes* on the Trading partner's Outgoing documents.
 
 This inqury form provides a view of outgoing documents that haven't received an Inbound functional acknowledgement.
+**Outbound files** on the Action pane opens the Outbound file for the staging record.
 
 Filter pane options:
 - **Type** - Filter records to a Trading partner type.
 - **EDI Document type** - Filter records to a specific EDI document type.
 - **Company** - Filter records to a specific company.
 
-Available fields:
+Available fields for the outgoing staging records:
 - EDI number
+- Company
+- Type - Customer, Vendor or Warehouse
+- Trading partner account - Customer account, Vendor account or Warehouse
+- Name - Trading partner's name
+- EDI Document type
+- Group control number
+- Sent timestamp - Date stamp of when the record was sent
 
