@@ -27,112 +27,79 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-### Setting up item creation templates
-#### Create Template Tabs
- 
-Item creation template tabs allow you to organise the data within the product template in a similar way that fast tabs organise data within list pages. It is possible to translate your Tabs for other languages that are used within your organisation.
-You can reach the Item creation template tabs form by navigating to
- 
- **Item creation > Setup > Item Creation > Item creation template tabs**
- 
-1.	Click the **New** button.
-2.	In the **Tab name** field enter a name for the Fast Tab within the creation template. 
-3.	The **Position** will default depending on the record you had created this new tab name. 
-4.	Click the up or down buttons to change the position of the fast tab. 
-5.	To add translations to the Item creation template tabs
-6.	Click the **Translations** button on the Item creation template tabs form to allow the organisations users to view the Tab name in their language of choice.     
-7.	To add a translated text, click the + icon
-8.	Select the language from the list of options.
-9.	In the translated text field enter the translation for the tab name in the selected language.
-
-#### Create Templates
-
-Use this feature to set up all your item creation templates and their respective values and requirements.  For example, you could set up a template per product type, in an apparel organisation this may be menswear / womenswear or shirts / dresses, in a toy manufacturer this could be wooden / metal or by age group etc...  
-
-Getting the right balance between auto-completing as many fields as possible versus the number of templates is critical to the success of the ease of use.  As a rough guide between 10 and 50 templates is a sensible quantity.
-You can reach the Item creation templates form by navigating to
-**Item creation > Setup > Item creation > Item creation templates**
+# Item creation templates
 
 Use this feature to set up all your item creation templates and their respective values and requirements.  For example, you could set up a template per product type, in an apparel organisation this may be menswear / womenswear or shirts / dresses, in a toy manufacturer this could be wooden / metal or by age group etc...  
 
 Getting the right balance between auto-completing as many fields as possible versus the number of templates is critical to the success of the ease of use.  As a rough guide between 10 and 50 templates is a sensible quantity.
 
-###### Create New
-The View/Update/New in item creation template form is used to set up a new template. 
-**Item creation > Setup > Item creation > Item creation templates > New template (button)**
+You can reach the Item creation templates form by navigating to **Item creation > Setup > Item creation > Item creation templates**.
 
-1.	Click the **New** template button. 
-2.	Enter a short **Template** name to identify what the template is used for i.e. wooden toys. 
-3.	In the **Description** field, type a detailed description for your template. 
-4.	Select the **Number sequence code** that this product will be given. If you choose to leave this blank, then the standard product number sequence will be used. 
+## Create a new template
 
-Note: This number can be renamed later if this is a product design product only. This is useful for some organisations who may use a design Id until the ‘design’ becomes approved where upon the temporary number is changed into the go to market product number. 
+1.	Click the *New* template button. 
+2.	Enter a short *Template* name to identify what the template is used for. 
+3.	In the *Description* field, type a detailed description for your template. 
+4.	Select the *Number sequence code* that this product will be given. If you choose to leave this blank, then the standard product number sequence will be used. 
 
-5.	The **Template type** has the following options: If you want to create a product, select **Create**.
+    *Note: This number can be renamed later if this is a product design product only. This is useful for some organisations who may use a design Id until the ‘design’ becomes approved where upon the temporary number is changed into the go to market product number.* 
 
-|  Field name               |   Field Description                                                                                                                                                                                                  |
-|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   Create                  |  If you want to create a product, select **Create**                                                                                                                                                                    |
-|   Copy                    |   If you want to copy an existing product select **Copy**                                                                                                                                                               |
-|   Update                  |  If you want to update an existing product, select **Update**                                                                                                                                                           |
-|   Release to new company  |  If you want to release an existing product to another legal entity, select . **Release to new company Note: The item must be released in at least 1 legal entity to use this option**  |
+5.	The *Template type* has the following options: 
 
+|  **Template type**  | **Purpose** | 
+|:---|:---|     
+|  **Create**  | Used to create a new product. |  
+|  **Update**  | Used to update an existing product. |  
+|  **Copy**  | Used to create a new product using details from an existing product. |  
+|  **Release to new company**  | Used to release an existing product to another legal entity. |  
 
-*Note: If either update, copy or release to new company is selected when you use this template it will request the product Id which you either want to update or copy.*
+6.	Select the *Product subtype*.
+7.	Select the *Status* of the product once the template has been used. 
+8.	Select one or more *Assign teams* to limit visibility of the template to selected users
+9.	Click *OK* to create the template
 
-6.	Select the **Product subtype**, for further definition about this option please review the Microsoft Help Text or User Guides. 
-7.	Select the **Status** of the Product once the template has been used. See below for further information about the Status. 
-8.	Click **OK**, this will open a new form, the Line view will be open
-
-*Note: To use the template it must be activated.*
-
-###### Template header
-The header view wwithin the item creation templates form is used to control or view the version of the template created. 
+## Template header
+The header view within the item creation templates form is used to control or view the version of the template created. 
 You can reach the header view (button) form by navigating to
 **Item creation > Setup > Item creation > Item creation templates > header view (button)**
 
-|   **Field name**           |   Field Description                                                                                                                                                                                    |
-|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   **Version**              |  Versions allow the same template to be used but with an update, a new version number is generated.  It is possible to see the      version used to create the Product for logging and audit purposes  |
-|   **Number sequence code** |  In STD D365, a single number sequence can be specified for all items.  This field allows for a different number sequence to be used per template.                                                     |
-
-1.	Select **Header view** to populate the barcode creation information (if required) 
- -	Barcode Creation – Select the method for barcode creation.  
- -	Barcode Setup – If Use barcode mask is selected, specify the mask to be used 
- -	Unit – Specify the UOM that should be used for the barcode creation
-
-2.	Select Header view to populate the GTIN information (if required) 
-- A new field must be specified on the template header called Barcode setup. This allows you to select the type of barcode (ie. EAN13, UPC etc.) that should be used to create the GTIN. 
-
-3.	Specify the Import folder name for import files
-
-*Note: Only the Folder within the ‘Input’ folder must be specified here.  To import images from a local folder to the cloud, please see the **File Maintenance** user guide.*
-
-4.	**Import files** should be of **.csv format** . Specify the separator that is used in the file. 
-
-5.	If file has a **header row** you can specify this. The header row will therefore be skipped during import.
-
-6.	If an **‘Update’ template** is being created the Update Product Number Position field will be available for selection. This field should be used in conjunction with a manual number sequence and will allow the Item Number to be updated in the selected companies.
+|  **Field**  | **Description** | 
+|:---|:---|     
+|  **Template name**  | Set on template creation. |  
+|  **Template type**  | Set on template creation. |  
+|  **Product subtype**  | Set on template creation. |  
+|  **Version**  | Versions allow the same template to be used but with an update, a new version number is generated. |  
+|  **Number sequence code**  | Set on template creation. |
+|  **Description**  | Set on template creation. |  
+|  **Active**  | Is the template active. Only templates that have been activated are available for use. |
+|  **Status**  | Set on template creation. |  
+|  **Barcode creation**  | Select the method for barcode creation. |
+|  **Bar code setup**  | If *Use barcode mask* is selected as the method of barcode creation, specify the mask to be used. |
+|  **Unit**  | Specify the unit of measure that should be used for the barcode creation. |
+|  **Folder name**  | File path within the *input* folder. |  
+|  **Separator**  | The separator that is used to distiguish fields within the .csv import file. |  
+|  **Header rows**  | The number of rows containing header information in the import file/s. The header row will be excluded during import. |  
+|  **Update product number position**  | Applicable to the ‘Update’ template type. This field should be used in conjunction with a manual number sequence and will allow the item number to be updated. |  
+|  **Clear field value**  | Applicable to the 'Update' template type. Including this value in a import field will remove the current value in the fieldd. |  
+|  **Bar code setup**  | Allows you to select the type of barcode (ie. EAN13, UPC etc.) that should be used to create the GTIN. |
 
 *Note:  Once a template has been activated, no further modifications can be made.  To make a change, a new version must be created.*
 
-###### Add a step
-1.	Click **Add line** on the Fast Tab **Steps**
+## Steps
 
-2.	In the **Step** field enter a name to identify the step when the user is creating the product.     
+A step represents a subset of fields that must be processed before the template can be submitted to workflow. For a manually initiated template there is no limit on the number of steps that can be created. Only a single step is supported when importing records from a .csv file. 
 
-3.	Choose **Select companies** if the companies which the product will be released to will be adjusted at this time.
-*Note: At least one step should have select companies selected.*
+The order of the steps will determine the order in which the information is entered into the template when a template is initiated manually within D365 and processed through the workflow
 
-4.	Choose Attributes if item attributes are to be entered for the selected step.
-*Note: As attributes are dynamics based on the product category, there is no need to define these in the template fields.*
+A new step can be created by selecting to *Add line*.
 
-###### Remove a step
-1.	Select the step to remove
+|  **Field**  | **Description** | 
+|:---|:---|     
+|  **Step**  | Used to identify the step when the user is creating the product. |  
+|  **Selected companies**  | Select if the companies which the product will be released to or updated in will be defined in this step. |  
+|  **Attributes**  | Select if item attributes are to be entered for the selected step. Applicable attributes will be determined dynamically based on the selected category hierarchy. | 
 
-2.	Click the remove button
-
-*Note: It is only possible to remove a step if the Template has not been made active*
+*Note:  Select companies and attributes are only applicable to manual template. The fields should be marked no more than once per template.*
 
 ###### Fields
 **Item creation > Setup > Item creation > Item creation templates > line view (button) > Setup > Fields (Button)**
