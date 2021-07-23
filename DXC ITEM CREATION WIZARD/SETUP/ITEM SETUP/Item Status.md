@@ -27,55 +27,35 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-## Setting up for Item Status
+# Item Status
 
-Prior to using the Item Status functionality, some setup must be completed.
-### Set up Parameters
+The item status form is used to create statuses that can be applied to released products. For each status the allowed transaction types can be set. If a status is not enabled for a transaction type, a released product with the status will not be able to be added to the transaction. This can be used to prevent the creation of inventory transactions through purchase or sales orders if a product is completely configured, or to prevent more inventory being ordered after the product has been retired. You can reach the form by navigating to **Item creation > Setup > Item Setup > Item Status**
 
-Before you start using the item status, setup must be completed for the parameters applicable to **item status.**
+The restriction of transactions can be enabled/disabled from the [parameters](Item_creation_parameters.md) form. 
 
-**Item creation > Setup > Item creation parameters> Item status (tab)**
+## Item status creation
 
-It is possible to enable/disable the Item status functionality as well as set a default item status to suit organisation/business needs for new items.  
-1.	Select the **Status control enabled** flag.  This will enable the transactions specified in the Item status setup form. 
-2.	Select the **Default item status** if required. 
-
-Note: The **Default item status** will be setup at the item level.
-
-### Set up Item Status
-
-The item status form is used to set up the status of your items in Dynamics 365 environment. 
-Within this form, you will set up the details regarding the status of the items, 
-along with a status indicator that will be utilized for sales order, sales picking, sales delivery, web sales, sales return and sales indicator. 
-You can reach the Item status form by navigating to
-
-**Item creation > Setup > Item Setup > Item Status**
 The items status controls whether a product can be purchased, sales order (create a sales order), sales picking (create a pick list or output order) or sales return (allow sales returns).  
 
-1.	Click the **New** button. 
-2.	Enter a **Status** name which will be recognised by the business users.
-3.	Tick the **Purchase order** check box to select whether a product with this status can be purchased. 
+|  **Field**  | **Description** | 
+|:---|:---|     
+|  **Status**  | User defined, this should be easily recognised by the business users. |  
+|  **Purchase order**  | Determines whether a product with this status can be added to a purchase order. |  
+|  **Sales order**  | Determines whether a product with this status can be added to a sales order. |
+|  **Sales picking**  | Determines whether a product with this status can be picked. |
+|  **Sales delivery**  | Determines whether a product with this status can be delivered or invoiced. |
+|  **Web sales**  |  |
+|  **Sales return**  | Determines whether a product with this status can be purchased returned. |
+|  **Status indicator**  | Select an icon which will appear with the status on the released product form. This will appear as a display field only.  |
 
-*Note: Even if this was not ticked it will still be possible to return a product.*
+## Allowed status transitions
 
-4.	Tick the **Sales order** check box to select whether a product with this status can be selected on a sales order.
-5.	Tick the **Sales picking** check box to select whether a product with this status can be picked.
-6.	Tick the **Sales delivery** check box to select whether a product with this status can be delivered or invoiced.
-7.	Tick the **Sales return** check box to allow a product to be returned.
-8.	Select a **Status indicator** to identify the status of the item on the Released products list page and from the Purchase and Sales lines.
+Allowed status transitions prevent a change in status from the selected status to any value not listed in this form, allowing the organisation to control how the user changes the lifecycle of a product. This can be accessed from within the item status form by selecting **Allowed status transitions** from the action pane.
 
-*Note: The status indicator is displayed on the Released products form as a display only field.*
+For information on transitioning between items statuses see [Managing item statuses](Managing_item_statuses).
 
-#### Set up Allowed Status transitions
+|  **Field**  | **Description** | 
+|:---|:---|     
+|  **To status**  | Status value a released product can be updated to, based on the current status value. |
 
-This option is to limiti the amendment of a status transition allows the organisation to control how the user changes the lifecycle of a product. 
-
-**Item creation > Setup > Item Setup > Item status > Allowed status transitions (button)**
-
-1.	Within the Status form select the **status.** 
-2.	Click the button **Allowed status transitions.**
-3.	Click the **New** button. 
-4.	Select the To Status. 
-5.	Repeat as necessary. 
-6.	Click **Close** once completed. 
-
+*Note: Attempting to update a status to a value that has not been defined as an allowe status transition will return an error preventing the action from being completed.*
