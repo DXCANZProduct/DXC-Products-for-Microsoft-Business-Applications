@@ -27,19 +27,30 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-### Workflow
+# Item creation workflows
 
-The workflow form is used to set up the approval process within your Dynamics 365 environment and your workflow approval account. 
-Within this form, you will set up the details regarding the administrator of the workflow account that will be sending template for approval through item creation workflow. 
+Workflows are used in item creation to manage the approval of created, released or updated products. You can reach the item creation workflow form by navigating to **Item creation > Setup > Item creation workflows**
 
-You can reach the item creation workflow form by navigating to
+## Workflow types
 
-**Item creation > Setup > Item creation workflows**
+A default workflow must be created for each of the creation methods in use.
 
-1 workflow must be created.
+|  **Workflow type**  | **Description** | 
+|:---|:---|     
+|  **Item creation workflow**  | Workflow applied to item creation records initiated manually from within the *All creation items* form |  
+|  **Item creation import workflow**  | Workflow applied to imported records visible from the *Item creation import sessions* form |  
 
-1.	Item creation workflow - workflow must be created to *create/update items via manual input.*
+## Workflow elements
 
-2.	Item creation import workflow - workflow must be *created to create/update items in bulk via import.* 
+Additional elements have been created for use with item creation workflow.
 
-Note: For information on how to create workflows please refer to the *standard Dynamics 365 Finance and Operations, Enterprise Edition functionality.*
+|  **Workflow element**  | **Description** | 
+|:---|:---|     
+|  **Approve item creation step**  | Use this element to approve an item creation step. |  
+|  **Change item status**  | This element will update the item status based on the template configuration. |  
+|  **Create/update item**  | Will create or update the item that has been submitted to the workflow. Applicable to *Item creation workflow* |  
+|  **Run creation**  | Will create or update all items in the import session that has been submitted to the workflow. Applicable to *Item creation import workflow* | 
+|  **Set next step**  | Will update the item creation record to the next step in the template. | 
+|  **Edit step**  | Allows for editing of the record that has been submitted. | 
+
+Note: For information on how to create a workflow please refer to the [standard Dynamics 365 Finance and Operations, Enterprise Edition functionality.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/finance/toc.json)
