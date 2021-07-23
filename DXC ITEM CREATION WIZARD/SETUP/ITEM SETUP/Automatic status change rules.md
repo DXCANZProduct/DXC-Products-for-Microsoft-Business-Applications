@@ -2,7 +2,7 @@
 # required metadata
 
 title: [DXC Item Creation Wizard ]
-description: [DXC Item Creation Wizard - Managing item statuses  ]
+description: [DXC Item Creation Wizard - Automatic status change rults]
 author: [Liam Coll]
 manager: Kym Parker
 ms.date: 23/07/2021
@@ -27,12 +27,14 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-#	Managing Item Status
+#	Automatic status change rules
 
-There are 4 methods to update the item status on a released product. 
+Automatic status change rules can be configured to trigger the update of a status based on events related to the current stock on hand level of an item. The form can be reached by navigating to **Item creation > Setup > Item Setup > Automatic status change rules**
 
-## Updating using a creation template
+|  **Field**  | **Description** | 
+|:---|:---|     
+|  **Status**  | Current status for the item. |  
+|  **Event**  | Inventory event required to trigger status change. | 
+|  **New status**  | Status the item will be updated to. | 
 
-A status value can be assigned to an [item creation template](Item_Creation_Templates). Use of this template to create, release or update an item will apply the template status to the released product where the Change item status element has been included in the approval [workflow](Item_creation_workflows).
-
-Where no item status exists on a released product and the template does not have a value defined, the default value set in the [parameters](Item_creation_workflows) form will be used.
+For details on updating an item status using the Automatic status change rule see [managing item statuses](Managing_item_statuses).
