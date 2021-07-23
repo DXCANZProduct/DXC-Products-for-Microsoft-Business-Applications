@@ -1,0 +1,35 @@
+2.4	Managing Item Status
+There are 3 ways within D365 to update the item status.
+2.4.1	Update Single Item
+Item Creation > Products > Released Products > Item creation > Item status link (button)
+The items status controls whether a product can be purchased, sales order (create a sales order), sales picking (create a pick list or output order) or sales return (allow sales returns). In addition, the status can be used by the business to determine where in its lifecycle the product is. The item status can be held at the item or item dimension level. The item status can be manually updated via the released products form. 
+1.	The form will default to show current records once opened.  
+2.	Enter the as at date.
+3.	Select Apply.
+Note: The Item Status displayed at the top of the released products form is the item status at the item level, not the item dimension level.
+2.4.2	Update Group of Items
+Item creation > Periodic Tasks > Update item status
+A periodic job is available that can be either manually run to update the item status as of a specified date for a range of items. Category hierarchy can be used to help filter products. 
+Where this is the case it allows for item status updated to be planned and entered into AX prior to the effective date.  Reports/inquiries can then be run to filter down based on the item status at a specific date.
+1.	Select the From Status.
+2.	Select the To Status
+3.	Enter an effective date if required.  To make effective immediately, leave blank.
+4.	Select a Category hierarchy if required to filter down to a group of products.
+5.	Select the filters applicable in the Tree Pane section. Use the + and - to open up the branches of the tree.  Click on the categories at any level to restrict items. 
+6.	Select the items that must be updated. 
+7.	Select OK.
+Note: Optionally select the Batch tab to run the report on a batch. Please see Microsoft User Guides  For further information
+2.4.2.1	 Update Based on Stock on Hand Rules
+Item creation > Setup > Item Setup > Automatic status change rules
+Automatic status change rules can be setup to update the item status based on certain events that take place.  For example, an item that has been set to 'Run Out' can be updated to 'Discontinued' Once the stock on hand becomes zero. 
+1.	Within the Status form select the status.
+2.	Click the button Allowed status transitions.
+3.	Click the New button.
+4.	Select the To Status.
+5.	Repeat as necessary.
+6.	Click Close once completed.
+2.4.3	Item Status Visibility
+2.4.3.1	Released Products
+When viewing the Released Product details, the inventory status symbol will be displayed directly below the Item number and description.
+2.4.3.2	Inventory Transactions
+When creating a sales/purchase order, the inventory status symbol will be displayed in the first column of the sales/purchase line.  This will enable the user to identify that the item is ‘active’, discontinued’ etc.
