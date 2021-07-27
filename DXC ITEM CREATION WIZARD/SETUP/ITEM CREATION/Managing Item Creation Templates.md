@@ -2,10 +2,10 @@
 # required metadata
 
 title: [DXC Item Creation Wizard]
-description: [DXC Item Creation Wizard  - Managing Item Creation Template]
-author: [helenho]
+description: [DXC Item Creation Wizard  - Template versions]
+author: [Liam Coll]
 manager: Kym Parker
-ms.date: 02/03/2021
+ms.date: 27/07/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,59 +27,59 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-### Managing Item Creation Templates
-#### Create A New Version
+# Template versions
 
-The Item Creation Templates form is used to set up the template within your Dynamics 365 environment and your items. 
-Within this form, you will set up the details regarding the items attributes, along with a company that can utilized the item. 
-You can reach the item creation template form by navigating to
+Item creation templates are version controlled to allow the tracking of fields added and removed from templates over time. The version used to create or update a product is recorded against the item creation record for logging and audit purposes. 
 
-**Item creation > Setup > Item creation > Item creation templates > New version (button)**
+## Activate a version
 
-Versions allow the same template to be used but with an update, a new version number is generated.  It is possible to see the version used to create the Product for logging and audit purposes. 
+To use an Item creation template, it must be activated. It is not possible to edit an activated template. Activation of a template is achieved from the action pane at **Item creation > Setup > Item creation > Item creation templates > Manage > Activate**.
 
-1.	Select the **template** which you wish to copy.
-2.	Click **New version** icon from the Ribbon bar.
-3.	Select the template in the **Copy from** field, this will default from the record selected.
-4.	Select the Version that you wish to copy, this will default from the record selected.
-5.	Enter a **Description**.
-6.	If this new version should be the Current version click the check box **Set as current version.**
-7.	Click **OK**.
+## Deactivate a version
 
-##### Manage Versions
-###### View Versions
+It is possible to stop using an Item creation template version by deactivating it. Deactivating a template version does not allow for the template to be edited. Deactivation occurs by selecting **Item creation > Setup > Item creation > Item creation templates > Manage > Deactivate**.
 
-**Item creation > Setup > Item creation > Item creation templates > Versions (button)**
+## Create a new version
 
-Managing versions by clicking the Versions icon on the Ribbon bar allows the possibility to Edit the description, Activate a version, Set as the current version etc… by clicking the respective button. In addition, it is possible to delete a version, add a new version or copy a version from this form.
+To edit an activated item creation template a new version needs to be created, a new version number will be allocated. **Item creation > Setup > Item creation > Item creation templates > New version**
 
-1.	Select the **template** which you wish to modify.
-2.	Click the **Manage > Versions** icon on the Ribbon bar.
-3.	Select the **Version.**
-4.	Click the **Activate** button.
-5.	To set the 'current' version select click the **Set current** button.
+|  **Field**  | **Description** | 
+|:---|:---|     
+|  **Copy from**  | Existing version for the selected template that will be used as the basis for the new version. This does not need to be the latest or current version. This will populate with the version currently being viewed. | 
+|  **Description**  | This can include changes made or the reason for changes so as to distiguish between past versions. | 
+|  **Set as current version**  | This version will become the current version. The template will not be available for use until the version has been activated. | 
 
-###### Activate a Version
-**Item creation > Setup > Item creation > Item creation templates > Activate (button)**
-To use an Item Creation template, it must be activated. It is not possible to edit an Activated template.
+## View/manage versions
 
-1.	Select the **template** which you wish to activate.
-2.	Click the **Activate** icon on the Ribbon bar.
+It is possible to view all versions for a template by selecting versions from with the action pane. **Item creation > Setup > Item creation > Item creation templates > Manage >  Versions**
 
-##### Deactivate a Version
-**Item creation > Setup > Item creation > Item creation templates > Deactivate (button)**
+|  **Field**  | **Description** | 
+|:---|:---|     
+|  **Current**  | Identifies the version of the template referenced when the template is used. Only one version can be current. The current version must be active to be available for use.  | 
+|  **Description**  | This can include changes made or the reason for changes so as to distiguish between past versions. | 
+|  **Version**  | The version number for the selected template. | 
+|  **Activated**  | Identifies the version as having been activated. The current version must be active to be available for use.  |
 
-It is possible to stop using an Item creation template by deactivating it.
-1.	Select the **Template** you wish to deactivate.
-2.	Click the **Manage > Deactivate** icon from the Ribbon bar.
+Versions can be managed from within this slider by selecting the following actions. 
 
-#### Copy Versions
-**Item creation > Setup > Item creation > Item creation templates > Copy (button)**
+|  **Action**  | **Description** | 
+|:---|:---|     
+|  **View**  | Opens the selected version in view mode. | 
+|  **Edit**  | Opens the selected version in edit mode. Versions that have been activated cannot be edited in this mode. | 
+|  **New version**  | Will provide the options for creating a new version. *Copy from* will populate with the version selected at the time. | 
+|  **Delete**  | Delete the version. A version can only be deleted if it has not been used to create/update an item. | 
+|  **Set current**  | Set the selected version as the current version, making this the version that will be used when the template is selected. Only one version can be current. | 
+|  **Activate**  | Activates the selected version making it available for use. This version can no longer be updated. | 
+|  **Copy**  | Create a new template using the selected version. | 
 
-It is possible to stop using an Item Creation template by Deactivating it.
-1.	Click **Copy.**
-2.	Enter a **Template** name. 
-3.	Select the **Template type** 
-4.	Select the **Status** that the Product gets set to when using this template for Product creation.
-5.	To copy only the current version, tick the check box **Only current version.**
-6.	Click **OK.** 
+### Copy a version
+
+A new template can be created by copying all configuration for the selected template version. The following information to define the charateristics of the new template.
+**Item creation > Setup > Item creation > Item creation templates > Manage > Copy**
+
+|  **Field**  | **Description** | 
+|:---|:---|     
+|  **Template  name**  | Identifier for the template, used to determine its purpose. | 
+|  **Template type**  | The action that will be taken when the template is used. | 
+|  **Status**  | The item status that will be applied to items on use of the template. Update of the item status is also controlled by [workflow](Item_creation_workflows) configuration. | 
+|  **Only current version**  | Determines if all versions from the selected template are copied into the new template, or only the current version. | 
