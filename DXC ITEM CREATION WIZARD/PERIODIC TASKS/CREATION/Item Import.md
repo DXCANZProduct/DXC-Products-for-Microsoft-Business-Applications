@@ -35,4 +35,4 @@ An infolog will be displayed that will notify the user of an error in processing
 
 The function is able to be configured to run as a recurring job, preventing the need to create the import sessions manually.
 
-*Note: To import files from a local folder to the cloud for staging in the File management workspace, please see the [File Maintenance user guide.](File_maintenance)
+*Note: To import files from a local folder to the cloud for staging in the File management workspace, please see the [File management user guide.](File_management)
