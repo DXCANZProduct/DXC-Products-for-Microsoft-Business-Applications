@@ -2,10 +2,10 @@
 # required metadata
 
 title: [DXC Item Creation Wizard ]
-description: [DXC Item Creation Wizard  - Bulk Import]
-author: [helenho]
+description: [DXC Item Creation Wizard  - Item import]
+author: [Liam Coll]
 manager: Kym Parker
-ms.date: 02/03/2021
+ms.date: 27/07/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,19 +27,12 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-## Create Items – Bulk Import
-### Import Items
+# Item Import
 
-The View/Update Imported Items form enables the selection of a previously created template to be used for the import of items into your Dynamics 365 environment.
+Item import is a job that collects staged files imported into the *File management* workspace and creates an [import session](Creation_import_sessions) that will be automatically submitted to the active import [workflow](Item_creation_workflows). A *template name* should be selected when run to refine the files included in the import session. You can reach the Item import job by navigating to **Item creation > Periodic Tasks > Creation > Item import**.
 
-You can reach the Item import form by navigating to
-**Item creation > Periodic Tasks > Creation > Item import**
+An infolog will be displayed that will notify the user of an error in processing of the import session. Additional details relating to the error can be accessed from the log on the import session line.
 
-*Note: There is an assumption that workflow has been created. For information on how to create workflows please refer to the standard Dynamics 365 Finance and Operations, Enterprise Edition functionality*
+The function is able to be configured to run as a recurring job, preventing the need to create the import sessions manually.
 
-1.	Select the **Template name** for the import
-2.	Select **OK**
-3.	An **Infolog** box will be displayed that will notify of any errors during import.
-4.	Further information relating to the import and errors can be found in the Item creation import sessions. 
-
-*Note: To import items from a local folder to the cloud, please see the **File Maintenance** user guide.*
+*Note: To import files from a local folder to the cloud for staging in the File management workspace, please see the [File Maintenance user guide.](File_maintenance)
