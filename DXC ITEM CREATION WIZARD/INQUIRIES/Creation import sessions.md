@@ -36,20 +36,8 @@ When one or more files are imported against a template an import session is crea
 |  **Import session**  | Unique identification for the import session. |   
 |  **Start date/time**  | Creation date and time for the import session. |  
 |  **End date/time**  |  |
-|  **Status**  | Represent the stage of processsing through the workflow. |   
+|  **Status**  | Represent the stage of processsing through the workflow. <br /> * **Not submitted** - Import session was not submitted to workflow. Can be caused by a validation error or difference in mask and number of import fields. <br /> * **Submitted** - Import session has been submitted to workflow and is awaiting processing. <br /> * **Approved** - Import session has been approved in workflow and is awaiting actions. <br /> * **Completed** - Import session has been processed through workflow and items created/udpated. <br /> * **Canceled** - Workflow has been recalled. |   
 |  **Template version**  | The template name and version number used for all records included in the import session. |   
-
-#### Status values
-
-The status values applied to a creation import session related to progress along the workflow.
-
-|  **Status**  | **Description** | 
-|:---|:---|     
-|  **Not submitted**  | Import session was not submitted to workflow. Can be caused by a validation error or difference in mask and number of import fields.  |  
-|  **Submitted**  | Import session has been submitted to workflow and is awaiting processing. |  
-|  **Approved**  | Import session has been approved in workflow and is awaiting actions. |  
-|  **Completed**  | Import session has been processed through workflow and items created/udpated. |  
-|  **Canceled**  | Workflow has been recalled. |  
 
 #### Deleting an import session
 
