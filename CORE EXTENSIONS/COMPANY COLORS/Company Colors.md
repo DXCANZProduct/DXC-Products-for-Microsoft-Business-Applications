@@ -37,6 +37,9 @@ From the Legal Entity form you can set the color theme for the current selected 
 
 1. Navigate to **Organization administration > Organizations > Legal Entity**. 
 2. Click on Edit button and expand the *Company color* fast tab and set *Enable Company color* to ‘Yes’. 
-3. Choose the required color and save.
-    * If company color is enabled, then the selected color theme for all user’s will be displayed.
-    * If company color is disabled, then the user’s selected color theme for all user’s will be displayed.
+3. Choose the required color theme and save.
+
+|  **Field**  | **Description** | 
+|:---|:---|     
+|  **Enable company color**  | **Enabled** - the selected color theme will be applied to all users. <br /> **Disabled** - the selected color theme will be applied to the current user.|   
+|  **Color theme**  | List of available colour themes.|   
