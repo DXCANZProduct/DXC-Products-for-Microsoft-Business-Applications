@@ -82,7 +82,7 @@ Create and assign number sequence for the functionalities that will be used with
 **Group control number**          |	Unique identifier when creating outbound records. The Inbound functional acknowledgement needs to refer to the outbound document's Group control number in order to reconcile against the correct outbound record and update the Received status to Yes.
 
 ## Hold codes
-Customer license only. Assign the Hold codes to be used when creating the Sales order when processing Customer purchase order records.
+Customer license only. Assign the Hold codes to be used when creating the Sales order when processing Customer purchase order records. <br>
 If required, create new Hold codes via **Sales and marketing > Setup > Sales orders > Order hold codes**
 
 **Field** 	                      | **Description**
