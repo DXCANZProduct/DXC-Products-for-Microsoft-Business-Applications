@@ -83,6 +83,7 @@ Create and assign number sequence for the functionalities that will be used with
 
 ## Hold codes
 Customer license only. Assign the Hold codes to be used when creating the Sales order when processing Customer purchase order records.
+If required, create new Hold codes via **Sales and marketing > Setup > Sales orders > Order hold codes**
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
