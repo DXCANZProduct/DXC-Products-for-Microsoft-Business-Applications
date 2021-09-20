@@ -83,6 +83,7 @@ Create and assign number sequence for the functionalities that will be used with
 
 ## Hold codes
 Customer license only. Assign the Hold codes to be used when creating the Sales order when processing Customer purchase order records.
+
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
 **POC pending hold code**         |	Specify the hold code to be used for sales orders that require a Purchase order confirmation (POC). <br> When Customer purchase order acknowledgement document setting **PO confirmation required** is set to Yes, the Sales order will be created with this Hold code.
