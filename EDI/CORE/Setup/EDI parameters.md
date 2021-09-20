@@ -80,3 +80,11 @@ Create and assign number sequence for the functionalities that will be used with
 **ASN number**                    |	Unique identifier when creating a Customer Advanced Shipping Notice (ASN) record. Customer license only
 **Reconciliation Id**             |	Unique identifier when creating a 3PL Reconciliation Id. 3PL license only
 **Group control number**          |	Unique identifier when creating outbound records. The Inbound functional acknowledgement needs to refer to the outbound document's Group control number in order to reconcile against the correct outbound record and update the Received status to Yes.
+
+## Hold codes
+Customer license only. Assign the Hold codes to be used when creating the Sales order when processing Customer purchase order records.
+**Field** 	                      | **Description**
+:-------------------------------- |:-------------------------------------
+**POC pending hold code**         |	Specify the hold code to be used for sales orders that require a Purchase order confirmation (POC). When Customer purchase order acknowledgement document setting **PO confirmation required** is set to Yes, the Sales order will be created with this Hold code.
+**POA pending hold code**	        | Specify the hold code to be used for orders that require a POA must be sent. When Customer purchase order acknowledgement document setting **Lock order** is set to Yes, the Sales order will be created with this Hold code.
+**Validation error hold code**    |	Specify the hold code to be used for validation errors. When the Customer purchase order violates Error type validations, the sales order will be created with this Hold code.
