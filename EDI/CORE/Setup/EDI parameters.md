@@ -28,7 +28,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # EDI parameters
-Users can access the form by navigating to **EDI > Setup > EDI Parameters**
+Users can access the form by navigating to **EDI > Setup > EDI parameters**
 
 ## Refresh module
 After each deployment, users should select the **Refresh module** button on the General Tab of EDI parameters.  
