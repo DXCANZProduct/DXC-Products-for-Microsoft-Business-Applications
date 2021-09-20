@@ -29,8 +29,38 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Reset status profile
 
-## Setup Cleanup profile
-Users can access the form by navigating to **EDI > Setup > Cleanup profile**.
+## Retry/reset process
+
+The Reset status functionality provides companies the option to set an automatic _retry_ process. <br>
+Files and/or documents with error status can be reset based on the reset profile’s recurrence and the number of reset attempts (End after in Recurrence).
+The files and/or documents will then be picked up in the next normal processing batch. If the underlying issue has been fixed, the file can be successfully processed. If the underlying issue still exist and all the reset attempts have completed the automatic resets will end. There is also an option to **Edit status recurrence** whereby the number reset attempts will be started again. Users can also select a different ‘Reset status profile’ on the document or file’s header.
+
+## Setup retry/reset process
+The setup is split into the following:
+1.	[**Setup Reset status profile**](### Setup Reset status profile): Set recurrence of reset.
+a.	**End after** sets the number of reset attempts. <br>
+b.	**Recurrence pattern** sets the interval of resetting. <br>
+Example: **End after** of 5 with **Recurrence pattern** of 2 minutes will reset error records every 2 minutes for 5 times. The reset will then stop and can be manually overridden by assigning a **Retry profile** on the record or using **Edit status recurrence** to start the process again by setting retry attempts to 0 and the retry date/time will start again based on retry profile’s recurrence interval. When using **Edit status recurrence** values needs to be updated in order to reset the **Reset status attempts** to zero.
+2.	Assign default **Reset profile** on [EDI shared parameters](EDI_SharedParameters.md) or set up on only the applicable Trading partner’s documents (step 3)
+3.	Optional: Ability to override default reset profiles from shared parameters on the Trading partner’s documents.
+4.	Setup the [**Reset documents status**] periodic task; similar to a workflow processor job.
+
+Example issues that could result in an Error status:
+
+**Step** 	                        | **Path**                              | **Example issue and fix**
+:-------------------------------- |:------------------------------------- |:-------------------------------------
+<ins>**Files**</ins>
+**Inbound to staging**            |	EDI > Files > Inbound files           |	Assigned template doesn’t match file’s format. <br> Fix: Reset template to correct template or fix assigned template
+**Export**                        |	EDI > Files > Outbound files          |	Connection issue. <br> Fix: If setup issue, fix on Connection setup else fix network issue.
+<ins>**Documents**</ins>	
+**Staging to target**             |	EDI > Documents                       | Unmapped order type. <br> Fix: Add mapping to Order type group
+**Process to outbound**           |	EDI > Documents                       |	Text document type doesn’t have any mappings which results in Empty file. <br> Fix: Assign field mappings to template.
+
+
+### Setup Reset status profile
+
+Users can access the form by navigating to **EDI > Setup > Reset status profile**.
+
 The cleanup profile is used to automatically delete staging record/s.
 
 Create a new Cleanup profile by:
