@@ -79,4 +79,4 @@ Create and assign number sequence for the functionalities that will be used with
 **EDI number**                    |	Unique identifier for EDI staging. This stores the data in D365 in an intermediary/staging tables before creating the target record.
 **ASN number**                    |	Unique identifier when creating a Customer Advanced Shipping Notice (ASN) record. Customer license only
 **Reconciliation Id**             |	Unique identifier when creating a 3PL Reconciliation Id. 3PL license only
-**Group control number**          |	Unique identifier when creating outbound records. When a Trading partner returns an Inbound Functional acknowledgements, they need to refer to this number in order to reconcile against the correct outbound record and update the Received status to Yes.
+**Group control number**          |	Unique identifier when creating outbound records. The Inbound functional acknowledgement needs to refer to the outbound document's Group control number in order to reconcile against the correct outbound record and update the Received status to Yes.
