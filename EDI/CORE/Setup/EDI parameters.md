@@ -71,3 +71,13 @@ If they are setup as Custom, the custom date and time format must be specified.
 <ins>**Sales orders**</ins>
 **Allow historic PO types**       |	Customer order types: Confirmation, Cancel and Change have been moved to Order purpose. This field provides Backwards compatibility to still show these deprecated options under order types
 
+## Number sequence
+Create and assign number sequence for the functionalities that will be used within the EDI module. Number sequences displayed is dependent on enabled licensed modules.
+
+**Field** 	                      | **Description**
+:-------------------------------- |:-------------------------------------
+<ins>**Document Types**</ins>
+**EDI number**                    |	Unique identifier for EDI staging. This stores the data in D365 in an intermediary/staging tables before creating the target record.
+**ASN number**                    |	Unique identifier for the Customer Advanced Shipping Notice (ASN) record. 
+**Reconciliation Id**             |	Unique identifier for the Reconciliation Id
+**Group control number**          |	Unique identifier for Outbound Functional acknowledgements
