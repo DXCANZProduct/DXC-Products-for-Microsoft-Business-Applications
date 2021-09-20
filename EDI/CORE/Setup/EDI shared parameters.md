@@ -32,4 +32,4 @@ Users can access the form by navigating to **EDI > Setup > EDI shared parameters
 
 ## Prerequisites ##
 * Setup [Cleanup profile](CleanupProfile.mb)
-* Setup [Reset status profile](/Reset status profile.mb)
+* Setup [Reset status profile](ResetStatusProfile.mb)
