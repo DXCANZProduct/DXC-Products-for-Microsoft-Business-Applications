@@ -27,7 +27,7 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Reset status profile
+# Reset status process
 
 ## Retry/reset process
 
@@ -61,24 +61,21 @@ Example issues that could result in an Error status:
 
 Users can access the form by navigating to **EDI > Setup > Reset status profile**.
 
-The cleanup profile is used to automatically delete staging record/s.
+Various reset status profiles can be created to specify different recurrences. <br>
+- Click **New** to create a new record.
+- In the **Name** field, enter the name of the Reset status profile group
+- In the **Description** field, enter a description of the Reset status profile group
+-	Select **Recurrence** and set: <br>
+  - End after: Number of retry attempts. <br>
+  - Recurrence pattern: Retry interval.
 
-Create a new Cleanup profile by:
-- Click **New** to create a new record. 
-- In the **Name** field, enter the name of the Cleanup profile group
-- In the **Description** field, enter a description of the Cleanup profile group
-- In the **Mappings** fast tab, select **Add** to create a new record
-- Select the **Staging to target status**. Options:
-  - Not started
-  - Completed
-  - Error
-  - Cancelled
-- Specify the **Age days**. When the batch job is run, staging records older than this value will be deleted.
+The configured Reset status profiles can be used either in:
+- [EDI shared parameters](EDI_SharedParameters.md):
+  - **Documents reset status**: Assign default Reset status profile for all staging documents. <br>
+  - **Files reset status**: Assign default Reset status profile for all inbound and outbound file. <br>
+- Trading partner’s Incoming and Outgoing documents (overrides the default from EDI shared parameters)
 
-The configured Cleanup profiles can be used either in:
-- EDI shared parameters, and/or
-- Trading partner’s Options, and/or
-- Trading partner’s Incoming and Outgoing documents
-
-Also required to setup a period task to run the cleanup via  **EDI > Periodic tasks > Cleanup documents**.
+### Setup Reset document status periodic task
+Users can access the form by navigating to **EDI > Periodic tasks > Reset document status**
+Similar to a workflow processing job, set the periodic task to run infinite according to its schedule. An error document is like a workflow task which needs to be processed to it’s assigned reset profile recurrence.
 
