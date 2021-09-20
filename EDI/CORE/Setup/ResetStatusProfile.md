@@ -37,7 +37,7 @@ The files and/or documents will then be picked up in the next normal processing 
 
 ## Setup retry/reset process
 The setup is split into the following:
-1.	[**Setup Reset status profile**](#setup-reset-status-profile): Set recurrence of the reset.
+1.	[**Setup Reset status profile**](#setup-reset-status-profile): Set recurrence of the reset. <br>
 a.	**End after** sets the number of reset attempts. <br>
 b.	**Recurrence pattern** sets the interval of resetting. <br>
 Example: **End after** of 5 with **Recurrence pattern** of 2 minutes will reset error records every 2 minutes for 5 times. The reset will then stop and can be manually overridden by assigning a **Retry profile** on the record or using **Edit status recurrence** to start the process again by setting retry attempts to 0 and the retry date/time will start again based on retry profile’s recurrence interval. When using **Edit status recurrence** values needs to be updated in order to reset the **Reset status attempts** to zero.
