@@ -42,8 +42,6 @@ Users can access the form by navigating to **EDI > Setup > EDI shared parameters
 **Cleanup profile**	              | Specify the default cleanup profile that will apply to all inbound and outbound staging records. <br> Can be overridden on Trading partner or Trading partner’s document level. <br> This field can also be left blank here and selected on only the specific Trading partner or Trading partner’s document level. <br> _Note: Setup the periodic job to run the cleanup/delete of staging records via **EDI > Periodic tasks > Cleanup documents**_
 <ins>**Reset status**</ins>       | 
 **Documents reset status**        |	Assign default Reset status profile for all staging documents. <br> Can be overridden on Trading partner’s document level. <br> This field can also be left blank here and selected on only the specific Trading partner’s document level. <br> _Note: Setup the periodic job to run the reset status of staging records via **EDI > Periodic tasks > Reset document status**_
-**Files reset status**            |	Assign default Reset status profile for all inbound and outbound files. This field can't be specified/overridden on a Trading partner's document level.
+**Files reset status**            |	Assign default Reset status profile for all inbound and outbound files. This field can't be specified/overridden on a Trading partner's document level. <br> _Note: Setup the periodic job to run the reset status of inbound and outbound files via **EDI > Periodic tasks > Reset document status**_
 <ins>**Options**</ins> 
 **Enable XLST scripting**         |	Option to enable scripting for XLST. If not enabled and scripting is used on XLST document, it will error with _Execution of scripts was prohibited_
-
-
