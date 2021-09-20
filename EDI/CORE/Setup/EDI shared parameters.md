@@ -34,6 +34,8 @@ Users can access the form by navigating to **EDI > Setup > EDI shared parameters
 * Setup [Cleanup profile](CleanupProfile.md)
 * Setup [Reset status profile](ResetStatusProfile.md)
 
+## Setup EDI shared parameters
+
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
 <ins>**Cleanup**</ins>
