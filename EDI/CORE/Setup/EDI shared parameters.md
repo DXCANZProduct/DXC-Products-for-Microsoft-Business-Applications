@@ -33,3 +33,15 @@ Users can access the form by navigating to **EDI > Setup > EDI shared parameters
 ## Prerequisites ##
 * Setup [Cleanup profile](CleanupProfile.md)
 * Setup [Reset status profile](ResetStatusProfile.md)
+
+**Field** 	                      | **Description**
+:-------------------------------- |:-------------------------------------
+<ins>**Cleanup**</ins>
+**Cleanup profile**	              | Specify the default cleanup profile that will apply to all inbound and outbound staging records. <br> Can be overridden on Trading partner or Trading partner’s document level. <br> This field can also be left blank here and selected on only the specific Trading partner or Trading partner’s document level. <br> __Note: The periodic to run the cleanup/delete of staging records needs to be setup via EDI > PERIODIC TASKS > CLEANUP STAGING__
+<ins>**Reset status**</ins>       | 
+**Documents reset status**        |	Assign default Reset status profile for all staging documents
+**Files reset status**            |	Assign default Reset status profile for all inbound and outbound files
+<ins>**Options**</ins> 
+**Enable XLST scripting**         |	Option to enable scripting for XLST. If not enabled and scripting is used on XLST document, it will error with _Execution of scripts was prohibited_
+
+
