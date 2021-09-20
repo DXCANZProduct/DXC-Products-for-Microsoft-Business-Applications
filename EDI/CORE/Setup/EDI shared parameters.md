@@ -31,5 +31,5 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 Users can access the form by navigating to **EDI > Setup > EDI shared parameters**
 
 ## Prerequisites ##
-* Setup [Cleanup profile](Cleanup profile.mb)
-* Setup [Reset status profile](Reset status profile.mb)
+* Setup [Cleanup profile](/Cleanup profile.mb)
+* Setup [Reset status profile](/Reset status profile.mb)
