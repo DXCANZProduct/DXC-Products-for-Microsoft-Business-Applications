@@ -32,8 +32,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ## Functional acknowledgement received inquiry
 Users can access the form by navigating to **EDI > Inquiries and reports > Functional acknowledgement received**. <br>
-When assigning outbound documents for a trading partner, the user has an option to set that an Inbound functional acknowledgement is required.
-This is achieved by setting **Acknowledgement** to *Yes* on the Trading partner's Outgoing documents.
+When assigning outbound documents to a trading partner, the user has an option to set that an Inbound functional acknowledgement is required to be received from the trading partner.
+This is achieved by setting **Acknowledgement** to *Yes* on each of the applicable Trading partner's Outgoing documents.
 
 This inqury form provides a view of outgoing documents that requires an Inbound functional acknowledgement. <br>
 **Outbound files** on the Action pane opens the Outbound file for the staging record.
