@@ -130,7 +130,7 @@ A Structured file can have many different file sections, all with an associated 
     - **Line** – Related to Item information.  This may or may not include quantities
     - **Line Detail** – A sub line data line whose data will be mapped to the same record as the Line’s section type data (i.e. Item Quantity information)
     - **Footer** – Summary/Total information
-> Note: A single record is possible for Header, Footer and Line sections within a file Section. Multiple records are possible for Header and Line Details
+> Note: A single record is possible for Header, Footer and Line sections within a file Section. Multiple records are possible for Header and Line Details. <br>
 > Note:  Each section type that is included in the file must be specified even if no mappings are required. 
 - Enter the section type **Description**
 - Enter the **Record Identifier** - The identifier value used to identify the line type from the files data. The position of this identifier is specified on the template's setup called _Row identifier position_.
