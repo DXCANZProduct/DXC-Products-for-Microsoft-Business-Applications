@@ -29,7 +29,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Document types - File templates
 
-Users can access the form by navigating to **EDI > Setup > Document types**.
+Users can access the form by navigating to **EDI > Setup > Document types** and selecting FastTab **Templates**.
 
 The EDI templates hold the settings required to translate the EDI document into or out of the document type’s staging tables. Trading partners will often supply information in different formats and use different fields to specify information.  Having templates allows us to configure these differences in a simple reusable fashion.
 -	Select **Create**, a new dialog box will be displayed
