@@ -51,8 +51,7 @@ The standard setup that applies to all types will be described first, thereafter
 
 ### Standard setup
 
-<ins>**Regional settings:**</ins>
-Select the default regional settings used within the file.
+**Regional settings** - Select the default regional settings used within the file.
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
@@ -61,8 +60,7 @@ Select the default regional settings used within the file.
 **Time zone preference**          |	The time zone offset used when processing the document type: <br> **Auto** (default) – The standard D365 time zone logic applies. <br> **User** – The user who is running the process’s time zone. <br> **No Conversion** – no time zone offset is applied. <br> **Company** – the legal entities time zone offset is applied. <br> **Manual** – use the proceeding ‘time zone’ parameter.
 **Time zone**                     |	Enabled and used to set the timezone when **Time zone preference** is set to _Manual_.
 
-<ins>**Decimals settings:**</ins>
-Select the default decimal settings used within the file.
+**Decimals settings** - Select the default decimal settings used within the file.
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
@@ -70,8 +68,7 @@ Select the default decimal settings used within the file.
 **Separator**                     | The decimal separator applied.
 **Thousand separator**            | Only applies to Text templates. The thousand separator applied.
 
-<ins>**Date setttings:**</ins>
-Select the default date settings used withing the file.
+**Date setttings** - Select the default date settings used withing the file.
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
