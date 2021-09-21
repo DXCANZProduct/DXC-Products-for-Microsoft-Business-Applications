@@ -36,7 +36,7 @@ The EDI module is made up of two underlying parts: <br>
 Each document type is made up of different configurations which are brought together to ultimately import or export an EDI document provided by the Trading partner.
 The Document types are arranged in a logical hierarchy based on their purpose as well as their direction.
 
-_Note: As new documents are added to the implementation (either through customer development, upgrades or the licensing of new modules) pressing the **Refresh module** button on **EDI > Setup > EDI parameters** will rebuild the tree with the new documents._
+> Note: As new documents are added to the implementation (either through customer development, upgrades or the licensing of new modules) pressing the **Refresh module** button on **EDI > Setup > EDI parameters** will rebuild the tree with the new documents.
 
 Document type setup are split into:
 1. [File templates](DocumentTypes/File%20templates.md): applicable to all document types
