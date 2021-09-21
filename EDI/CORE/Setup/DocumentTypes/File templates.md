@@ -56,7 +56,7 @@ The standard setup that applies to all types will be described first, thereafter
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
 **Code page**                     |	Select the applicable code page.
-**Time zone preference**          |	The time zone offset used when processing the document type: <br> **Auto** (default) – The standard D365 time zone logic applies. <br> **User** – The user who is running the process’s time zone. <br> **No Conversion** – no time zone offset is applied. <br> **Company** – the legal entities time zone offset is applied. <br> **Manual** – use the proceeding ‘time zone’ parameter.
+**Time zone preference**          |	Select the time zone offset used when processing the document type: <br> **Auto** (default) – The standard D365 time zone logic applies. <br> **User** – The user who is running the process’s time zone. <br> **No Conversion** – no time zone offset is applied. <br> **Company** – the legal entities time zone offset is applied. <br> **Manual** – use the proceeding ‘time zone’ parameter.
 **Time zone**                     |	Enabled and used to set the timezone when **Time zone preference** is set to _Manual_.
 
 **Decimals settings** - Select the default decimal settings used within the file.
