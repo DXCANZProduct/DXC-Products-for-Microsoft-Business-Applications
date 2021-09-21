@@ -1,1 +1,0 @@
-##Rebates information
