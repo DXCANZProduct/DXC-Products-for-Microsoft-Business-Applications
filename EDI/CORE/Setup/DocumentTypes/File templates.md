@@ -253,7 +253,7 @@ Date settings allow for ability to override default JSON ISO standard date forma
 ### EDIFACT files
 
 #### Prerequisites
-License: IconEDIStandardFormats
+License: IconEDIStandardFormats <br>
 Feature enabled: EDI - Standard formats
 
 #### EDIFACT files templates setup
@@ -272,7 +272,7 @@ The following Options under General, are defaulted for EDIFACT and are used to p
 If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).
 
 > Note: The **Decimal separator** is linked to the **Decimal mark**
-> Note: Date formats can also be overridden for a specific field within Mappings by using Custom format. For example, the document’s date format is set to yyyyMMdd, but can use yyyyMMddHHmm for specific field CreatedDateTime.
+> Date formats can also be overridden for a specific field within Mappings by using Custom format. For example, the document’s date format is set to yyyyMMdd, but can use yyyyMMddHHmm for specific field CreatedDateTime.
 
 #### EDIFACT files template mappings
 
@@ -312,7 +312,7 @@ It also includes **EDIFACT message**, which includes options like:
 - Where applicable, enter a [Custom format] for the field.
 
 > Note: To **Delete** a Segment, select the record then select **Delete**. <br>
-> Note: Segments can be moved up or down within its Section by using the **Up** and **Down** buttons.
+> Segments can be moved up or down within its Section by using the **Up** and **Down** buttons.
 
 Example Segments for a EDIFACT D01B are:
 - 0010 UNH Message header:
