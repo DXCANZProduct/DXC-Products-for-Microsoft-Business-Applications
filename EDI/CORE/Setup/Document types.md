@@ -40,8 +40,8 @@ _Note: As new documents are added to the implementation (either through customer
 
 Document type setup are split into:
 1. [File templates](DocumentTypes/File%20templates.md): applicable to all document types
-2. [Setting profiles]: where applicable for the document type
-3. [Validation profiles]: where applicable for the document type
-4. [Outbound file names]: applicable to all outbound document types
-5. [Field metadata]: optionally update staging form's display name and help text per field
+2. [Setting profiles](DocumentTypes/Setting%20profiles.md): where applicable for the document type
+3. [Validation profiles](DocumentTypes/Validation%20profiles.md): where applicable for the document type
+4. [Outbound file names](DocumentTypes/Outbound%20filenames): applicable to all outbound document types
+5. [Field metadata](DocumentTypes/Field%20metadata): optionally update staging form's display name and help text per field
 
