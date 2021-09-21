@@ -86,7 +86,7 @@ The standard setup that applies to all types will be described first, thereafter
 **Custom time format**            |	Enter custom time format
 **Formatted time example**        |	Displays example time for **Custom time format** (in UTC timezone)
 
-### Text file templates setup
+### Text files templates setup
 
 Text file are a very common way to transfer data. They are often delimited files with header and line information. This template type gives the ability to map such files to and from the documents staging tables. Text file can handle multiple headers. <br>
 Select the **Setup** button to set the following for text templates:
@@ -206,3 +206,26 @@ Field mappings can have functions applied to them to transform the data or perfo
 > Note: The list of available functions can also be located via **EDI > Setup > Configurations > Template field functions**
 
 ### XML files
+
+XML file format is available using a standard format based on the fields currently available for each document.  Where a new format is required, this can be managed using style sheets. <br> XML Collection should be used for XML files with multiple headers.
+
+> Note: The elements in the XML format use the D365 table field names.  To identify the correct label for each of the elements, please see the **Field label** available within the [**Field metadata**](Field%20metadata.md)
+
+### XML files templates setup
+If required, update the general settings by seleting the **Setup** button.
+
+**Field** 	                      | **Description**                      
+:-------------------------------- |:-------------------------------------
+**Remove blank elements**         |	Select to remove elements from the outbound file that do not have data.  This is required for XSD validation.
+**XLST output is XML**            |	Select if the XLST output is XML
+**Suppress BOM characters**       |	**No** – Include byte order mark (BOM) characters in generated outbound XML files. <br> **Yes** – Suppress byte order mark (BOM) characters in outbound files
+
+The same standard setup settings for regional and decimals apply.
+
+### JSON files
+
+
+### EDIFACT files
+EDI - standard formats license only.
+
+
