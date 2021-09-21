@@ -39,7 +39,7 @@ Templates hold the settings required to translate the EDI document into or out o
     - [Text file](#text-files) - multiple headers supported
     - [XSLT Transformation](#xml-files) - multiple headers not supported
     - [XSLT Collection](#xml-files) - multiple headers supported
-    - [Code Transformation] - multiple headers not supported
+    - Code Transformation - multiple headers not supported
     - [JSON](#json-files) - multiple headers not supported
     - [JSON Collection](#json-files) - multiple headers supported
     - [EDIFACT](#edifact-files) - EDI - Standard formats license only
