@@ -104,3 +104,36 @@ Select the **Setup** button to set the following for text templates:
 ## Mappings
 
 ### Text files mapping
+
+Each document type has its own fields that can be either mapped to for inbound files or mapped from for outbound files. <br>
+The mapping is made up of two sections: <br> 
+- File sections (structured only) and
+- Field mappings (structured and flat)
+Select **Mappings** button to specify the columns within the file that are to be mapped.
+
+#### File sections
+
+##### Flat
+
+Select **Edit** to update mappings for a text file
+> Note: The Section type information will be defaulted and only a single Line entry is possible for flat text templates.
+
+##### Structured
+
+File sections are the different types of lines that can be found in a **structured** type file (as defined in the Template's setup called _Flat or structured_). Field mappings belong to each file section.
+
+A Structured file can have many different file sections, all with an associated section type.
+- Select **New** to create a new record
+- Specify the **Name** of the file section. Exampled include header, lines, summary.
+- Select the **Section type**. The options are:
+    - **Header** – Header information often related to the Customer information.
+    - **Line** – Related to Item information.  This may or may not include quantities
+    - **Line Detail** – A sub line data line whose data will be mapped to the same record as the Line’s section type data (i.e. Item Quantity information)
+    - **Footer** – Summary/Total information
+> Note: A single record is possible for Header, Footer and Line sections within a file Section. Multiple records are possible for Header and Line Details
+> Note:  Each section type that is included in the file must be specified even if no mappings are required. 
+- Enter the section type **Description**
+- Enter the **Record Identifier** - The identifier value used to identify the line type from the files data. The position of this identifier is specified on the template's setup called _Row identifier position_.
+
+#### Field mappings
+
