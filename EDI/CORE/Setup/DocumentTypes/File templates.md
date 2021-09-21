@@ -156,7 +156,7 @@ There are two ways to add a field mapping:
 2. Select if the **Value type** will be:
     - Field - mapped to or from staging field, or 
     - Static - Static value used
-4. If the Value type is Static, complete the **Static value** <br> > Note: Static value can be either plain text or a method between brackets. Example: <br> 
+4. If the Value type is Static, complete the **Static value** <br> _Note: Static value can be either plain text or a method between brackets. Example:_ <br> 
 (currentDate()) <br> 
 (currentLanguageId()) <br> 
 (currentSessionDate()) <br> 
