@@ -86,35 +86,20 @@ The standard setup that applies to all types will be described first, thereafter
 **Custom time format**            |	Enter custom time format
 **Formatted time example**        |	Displays example time for **Custom time format** (in UTC timezone)
 
-### Text files
-
-#### Text files setup
-
-
+### Text file templates setup
 
 Text file are a very common way to transfer data. They are often delimited files with header and line information. This template type gives the ability to map such files to and from the documents staging tables. Text file can handle multiple headers. <br>
-Select the **Setup** button to set the following:
+Select the **Setup** button to set the following for text templates:
 
-
-- Flat – A single line per record. Each line of text in the file has all the header information on it as well as the line information
-- Structured – Multiple lines per record. Each line in the file is either a header type or a line type
-•	Select if the file is:
-•	Delimited – Columns using a defined separator
-•	Fixed – Fixed width (to be implemented in future version of the module)
-•	Specify if the First row is header record. This row will then be ignored.
-•	Select the Row delimiter used within the file
-•	{CR}{LF} – Carriage return/line feed for windows
-•	{CR} – Carriage return for MAC
-•	{LF} – Line feed for UNIX
-•	{;} – Semicolon
-•	{:} – Colon
-•	{,} – Comma
-•	{t} – Tab
-•	{|} Vertical bar
-•	Select the Column delimiter used within the file, same selection as Row delimiter
-•	Specify the Text qualifier used to identify text within the file. This will then be removed from the string when writing data to staging.
-•	Where the file is Structured, specify the Record identifier position
-•	If required, update the regional settings
+**Field** 	                      | **Description**
+:-------------------------------- |:-------------------------------------
+**Flat or structured**            | **Flat** – A single line per record. Each line of text in the file has all the header information on it as well as the line information. <br> **Structured** – Multiple lines per record. Each line in the file is either a header type or a line type
+**Delimited or fixed**            | **Delimited** – Columns using a defined separator. <br> **Fixed** – Fixed width (to be implemented in future version of the module)
+**First row is header**           | Specify if the First row is header record. This row will then be ignored on the inbound file.
+**Row delimiter**                 |	Select the Row delimiter used within the file, options: <br> **{CR}{LF}** – Carriage return/line feed for windows <br> **{CR}** – Carriage return for MAC. <br> **{LF}** – Line feed for UNIX <br> **{;}** – Semicolon <br> **{:}** – Colon <br> **{,}** – Comma <br> **{t}** – Tab <br> **{|}** Vertical bar
+**Column delimiter**              |	Select the Column delimiter used within the file, same selection as Row delimiter
+**Text qualifier**                |	Specify the Text qualifier used to identify text within the file. This will then be removed from the string when writing data to staging.
+**Record identifier position**    |	Where the file is Structured, specify the Record identifier position
 
 ## Mappings
 
