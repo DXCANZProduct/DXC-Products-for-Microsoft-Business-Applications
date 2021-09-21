@@ -158,7 +158,7 @@ There are two ways to add a field mapping:
 2. Select if the **Value type** will be:
     - Field - mapped to or from staging field, or 
     - Static - Static value used
-4. If the Value type is Static, complete the **Static value** <br> _Note: Static value can be either plain text or a method between brackets. Example:_ <br> 
+4. If the Value type is Static, complete the **Static value** <br> _Note: Static value can be either plain text or a method between brackets for outbound files. Example:_ <br> 
 (currentDate()) <br> 
 (currentLanguageId()) <br> 
 (currentSessionDate()) <br> 
@@ -170,3 +170,15 @@ There are two ways to add a field mapping:
 
 ##### Field chooser
 
+Alternatively, a bulk field chooser can be used to add multiple mappings at once. 
+- Select **Field chooser**
+- A new form is displayed allowing Header and Line selection of multiple available records
+
+**Field** 	                      | **Description**                      
+:-------------------------------- |:-------------------------------------
+**Add**                           |	Mark whether to add the field
+**Field label**                   |	The label of the field
+**Help**                          |	The help text of the field
+**Qty**                           |	The number of times to add the field
+
+- Select **Create** to add the selected lines
