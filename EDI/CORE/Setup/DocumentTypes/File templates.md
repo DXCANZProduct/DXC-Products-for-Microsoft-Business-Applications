@@ -101,6 +101,8 @@ Select the **Setup** button to set the following for text templates:
 **Text qualifier**                |	Specify the Text qualifier used to identify text within the file. This will then be removed from the string when writing data to staging.
 **Record identifier position**    |	Where the file is Structured, specify the Record identifier position
 
+> Note: **Flat or structured** cannot be changed when mappings exist.
+
 ## Mappings
 
 ### Text files mapping
