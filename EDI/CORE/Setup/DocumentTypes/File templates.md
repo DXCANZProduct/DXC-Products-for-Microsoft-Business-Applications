@@ -36,13 +36,13 @@ Templates hold the settings required to translate the EDI document into or out o
 - Select **Create**, a new dialog box called **Create a new template** will be displayed.
 - Specify the **Template ID** and **Description**
 - Select the **Type** of file for which the template is being created, options:
-    - Text file (multiple headers supported)
-    - XSLT Transformation (multiple headers not supported)
-    - XSLT Collection (multiple headers supported)
-    - Code Transformation (multiple headers not supported)
-    - JSON (multiple headers not supported)
-    - JSON Collection (multiple headers supported)
-    - EDIFACT (EDI - Standard formats license only)
+    - [Text file](#text-files) - multiple headers supported
+    - [XSLT Transformation](#xml-files) - multiple headers not supported
+    - [XSLT Collection](#xml-files) - multiple headers supported
+    - [Code Transformation] - multiple headers not supported
+    - [JSON](#json-files)(#json-files) - multiple headers not supported
+    - [JSON Collection](#json-files) - multiple headers supported
+    - [EDIFACT](#edifact-files) - EDI - Standard formats license only
 -	Select **Create**
 
 ## Setup
