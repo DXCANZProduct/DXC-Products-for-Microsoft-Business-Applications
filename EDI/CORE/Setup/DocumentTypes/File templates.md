@@ -324,6 +324,29 @@ Example Segments for a EDIFACT D01B are:
 
 ##### Composites
 
+The level under Segments is called **Composites**. 
+- Select the applicable Segment and select **New** to add a Composite.
+- Enter a **Static value** OR select the applicable **Staging field**. <br>
+When selecting a **Staging field**, the Staging table options include the header, line staging tables. <br>
+It also includes **EDIFACT message**, which includes options like:
+    - Created date
+    - Created time
+    - Segment count, and
+    - Service string fields
+- **Name** is defaulted from the Static value / Staging field but can be overridden.
+- Where applicable, enter a [Custom format] for the field.
+
+> Note: To **Delete** a composite, select the record then select **Delete**. <br>
+> Composites can be moved up or down within its Segment by using the **Up** and **Down** buttons.
+
+Example Composites for Segment UNH for an outbound Vendor purchase order:
+- 0062 Message reference number:
+    - Staging field = Group control number
+    - Name = 0062 Message reference number
+- 0065 Message type
+    - Static value = ORDERS
+    - Name = 0065 Message type
+
 ##### Elements
 
 ##### Custom format
