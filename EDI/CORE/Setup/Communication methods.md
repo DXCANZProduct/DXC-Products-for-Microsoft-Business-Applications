@@ -54,7 +54,7 @@ To begin, create a new FTP site record and fill out the connection parameters
 | **User**                 		| Specify the **Username** used for authentication to the FTP site |
 | **Password**                  | Specify the Password used for authentication to the FTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
 
-*Note: Select **Test Connection** to confirm that a connection can be made with the FTP site specified.*
+> Note: Select **Test Connection** to confirm that a connection can be made with the FTP site specified.
 
 #### Site paths
 It is possible to configure a different FTP site path per EDI document type.
@@ -79,7 +79,7 @@ Outgoing documents have a single path that is required to be defined
 | **EDI document type**                 | Specify the **Document type** the path relates to |
 | **Path**			                    | Specify the FTP path where the outbound file will be saved |
 
-*Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br>The results will be shown on the far right of the grid.*
+> Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br>The results will be shown on the far right of the grid.
 
 ### Setting up SFTP Sites
 Users can access the form by navigating to **EDI > Setup > Connection setup > SFTP sites**
@@ -109,7 +109,7 @@ To begin, create a new SFTP site record and fill out the connection parameters
 | **Private key**                 	| Specify the **Private key** used for authentication to the SFTP site |
 | **Pass phrase**                 	| Specify the **Pass phrase** used for authentication to the SFTP site |
 
-*Note: Select Test Connection to confirm that a connection can be made with the SFTP site specified.*
+> Note: Select Test Connection to confirm that a connection can be made with the SFTP site specified.
 
 #### Site paths
 It is possible to configure a different SFTP site path per EDI document type.
@@ -134,7 +134,7 @@ Outgoing documents have a single path that is required to be defined
 | **EDI document type**                 | Specify the **Document type** the path relates to |
 | **Path**			                    | Specify the SFTP path where the outbound file will be saved |
 
-*Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br>The results will be shown on the far right of the grid.*
+> Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br>The results will be shown on the far right of the grid.
 
 ### Setting up for Azure blob storage sites
 Users can access the form by navigating to **EDI > Setup > Connection setup > Azure sites**
@@ -156,7 +156,7 @@ To begin, create a new Azure site record and fill out the connection parameters.
 **Storage account key**				|Specify the **storage account key** used for authentication to the Azure site. 
 **Key Vault certificate**			| Assign Key vault (if applicable)
              		
-*Note: Select **Test Connection** to confirm that a connection can be made with the Azure site specified.*
+> Note: Select **Test Connection** to confirm that a connection can be made with the Azure site specified.
 
 #### Site paths
 It is possible to configure a different Azure site path per EDI document type. 
@@ -180,7 +180,7 @@ Outgoing documents have a single path that is required to be defined
 | **EDI document type**             	| Specify the **Document type** the path relates to |
 | **Azure blob storage container name**	| Specify the blob storage container |
 
-*Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br>The results will be shown on the far right of the grid.*
+> Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br>The results will be shown on the far right of the grid.*
 
 ### Setting up for web services
 This is a base framework that will allow developers to build custom connections to consume external APIs and integrate them with the module. Out of the box the module does not include any functional connections and only provides development examples as a guide. 
