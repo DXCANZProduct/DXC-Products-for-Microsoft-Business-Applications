@@ -220,7 +220,7 @@ If required, update the general settings by seleting the **Setup** button.
 **XLST output is XML**            |	Select if the XLST output is XML
 **Suppress BOM characters**       |	**No** – Include byte order mark (BOM) characters in generated outbound XML files. <br> **Yes** – Suppress byte order mark (BOM) characters in outbound files
 
-The same standard setup settings for regional and decimals apply.
+If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).
 
 ### JSON files
 
