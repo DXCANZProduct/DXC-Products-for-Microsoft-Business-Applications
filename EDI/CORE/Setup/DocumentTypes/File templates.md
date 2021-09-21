@@ -383,10 +383,10 @@ Short example to display section, segment, composite, element relation:
 **Section** 	                   | **Segment**                  | **Composite**                 | **Element**                    
 :----------------------------------|:-----------------------------|:------------------------------|:---------------------
 Header section	                   | UNH (Message header)         | Message reference number      | 
-				   |                              | ORDERS (Message type)         | D (Message version number)		
-				   |                              |                               | 01B (Message release number)
-			           |                              |                               | UN (Controlling agency, code)
-		                   |                              |                               | EAN010 (Association assigned code)
+Header section			   | UNH (Message header)         | ORDERS (Message type)         | D (Message version number)		
+Header section			   | UNH (Message header)         | ORDERS (Message type)         | 01B (Message release number)
+Header section		           | UNH (Message header)         | ORDERS (Message type)         | UN (Controlling agency, code)
+Header section		           | UNH (Message header)         | ORDERS (Message type)         | EAN010 (Association assigned code)
 
 ##### Custom format
 
