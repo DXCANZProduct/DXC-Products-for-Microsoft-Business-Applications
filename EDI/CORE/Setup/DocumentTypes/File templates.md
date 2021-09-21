@@ -229,7 +229,7 @@ Paste XLST code on XLST tab. Can use **Run transformation** to check for compile
 When opening the form, it will also display any compile errors.
 **Validate XSD** is used to validate transformed XML, not the XSLT.
 Click **Save XSLT**.
-If scripting is allowed, ensure [EDI Shared parameter](..\EDI%20shared%20parameters.md) **Enable XLST scripting** is enabled.
+If scripting is allowed, ensure [EDI Shared parameter](\..\EDI%20shared%20parameters.md) **Enable XLST scripting** is enabled.
 
 ### JSON files
 
