@@ -276,9 +276,51 @@ If required to update regional, decimals or date settings, see [Standard setup](
 
 #### EDIFACT files template mappings
 
+Each document type has its own fields that can be either mapped to for incoming files or mapped from for outgoing files. When creating an EDIFACT template, it automatically creates the EDI message and populates UNA segment under Mappings. EDIFACT mappings uses a tree structure, and normally includes a:
+- **Header section** – Header provides information related to the message, recipient, sender, reference, name and address, etc.
+- **Detail section** - Related to line-item information. For example: line number, item numbers, quantities, and pricing.
+- **Summary section** – Document’s total monetary amounts. Also includes Section control, Control total and Message trailer.
+
+Select **Mappings** to access the template’s mappings.
+
+EDIFACT hierarchy is (Section) > Segment > Composites > Elements
+
 ##### Sections
 
+- Select **Add section** and enter a **Name**. Sections can be added under existing sections to create a tree structure. <br>
+When creating the **Detail section** (that will be repeated for each line), select the applicable **Staging table** next to the Section’s **Name**. This will ensure the section is repeated for each line record. This is not required for Header or Summary section.
+<br>
+Example Sections are:
+- Header section
+- Detail section
+- Summary section
+
+> Note: To **Delete** a section, select the section then select **Delete section**.
+
 ##### Segment
+
+The level under Section is called **Segments**. <br>
+- Select the applicable Section and select **New** to add a Segment.
+- Enter a **Static value** OR select the applicable **Staging field**. Segments are usually Static values like UNH, BGM, etc. <br>
+When selecting a **Staging field**, the Staging table options include the header, line staging tables. <br>
+It also includes **EDIFACT message**, which includes options like:
+    - Created date
+    - Created time
+    - Segment count, and
+    - Service string fields
+- **Name** is defaulted from the Static value / Staging field but can be overridden.
+- Where applicable, enter a [Custom format] for the field.
+
+> Note: To **Delete** a Segment, select the record then select **Delete**. <br>
+> Note: Segments can be moved up or down within its Section by using the **Up** and **Down** buttons.
+
+Example Segments for a EDIFACT D01B are:
+- 0010 UNH Message header:
+    - Static value = UNH 
+    - Name = 0010 Message header
+- 0020 BGM Beginning of message
+    - Static value = BGM
+    - Name = 0020 Beginning of message
 
 ##### Composites
 
