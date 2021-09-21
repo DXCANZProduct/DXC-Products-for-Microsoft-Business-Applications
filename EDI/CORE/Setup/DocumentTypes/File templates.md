@@ -211,7 +211,7 @@ XML file format is available using a standard format based on the fields current
 
 > Note: The elements in the XML format use the D365 table field names.  To identify the correct label for each of the elements, please see the **Field label** available within the [**Field metadata**](Field%20metadata.md)
 
-### XML files templates setup
+#### XML files templates setup
 If required, update the general settings by seleting the **Setup** button.
 
 **Field** 	                      | **Description**                      
@@ -221,6 +221,15 @@ If required, update the general settings by seleting the **Setup** button.
 **Suppress BOM characters**       |	**No** – Include byte order mark (BOM) characters in generated outbound XML files. <br> **Yes** – Suppress byte order mark (BOM) characters in outbound files
 
 If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).
+
+#### XML Transformation
+
+XML file can be transformed by utilizing **Mappings > XSLT**
+Paste XLST code on XLST tab. Can use **Run transformation** to check for compile errors. <br>
+When opening the form, it will also display any compile errors.
+**Validate XSD** is used to validate transformed XML, not the XSLT.
+Click **Save XSLT**.
+If scripting is allowed, ensure [EDI Shared parameter](..\EDI%20shared%20parameters.md) **Enable XLST scripting** is enabled.
 
 ### JSON files
 
