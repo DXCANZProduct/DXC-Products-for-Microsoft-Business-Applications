@@ -271,7 +271,7 @@ The following Options under General, are defaulted for EDIFACT and are used to p
 
 If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).
 
-> Note: The **Decimal separator** is linked to the **Decimal mark**
+> Note: The **Decimal separator** is linked to the **Decimal mark**. <br>
 > Date formats can also be overridden for a specific field within Mappings by using Custom format. For example, the document’s date format is set to yyyyMMdd, but can use yyyyMMddHHmm for specific field CreatedDateTime.
 
 #### EDIFACT files template mappings
