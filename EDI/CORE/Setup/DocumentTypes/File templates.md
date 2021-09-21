@@ -137,3 +137,15 @@ A Structured file can have many different file sections, all with an associated 
 
 #### Field mappings
 
+Field mappings define how the data is positioned in the file on the section line. Fields can also be statically set to values and certain functions are available to transform the fields data if required.
+
+**Field** 	                      | **Description**                      
+:-------------------------------- |:-------------------------------------
+**Value type**                    |	Whether the field value is a static value or a mapped field value	
+**Static value**	              | If the field type is a static type, then this is the static value	
+**Staging field**	              | The mapped field	                                                
+**Staging table**	              | The table the mapped field represents
+**Field position**	              | The position in the file the mapping represents
+**Function**	                  | Apply an optional function to the data of this field
+
+There are two ways to add a field mapping:
