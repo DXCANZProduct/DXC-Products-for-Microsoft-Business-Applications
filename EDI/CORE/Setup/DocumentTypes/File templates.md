@@ -46,7 +46,7 @@ The EDI templates hold the settings required to translate the EDI document into 
 
 ## Setup
 Next step is to update **Setup** for the created template.
-The standard setup that applies to all types will be described first, thereafte setup that are specific to each Type will be discussed.
+The standard setup that applies to all types will be described first, thereafter unique setup for each Type will be discussed.
 
 ### Standard setup
 
