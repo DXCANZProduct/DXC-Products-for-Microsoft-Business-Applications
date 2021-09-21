@@ -149,3 +149,22 @@ Field mappings define how the data is positioned in the file on the section line
 **Function**	                  | Apply an optional function to the data of this field
 
 There are two ways to add a field mapping:
+
+##### Manual selection
+
+1. To create a new mapping, select **Add** from the mapping FastTab.
+2. Select if the **Value type** will be:
+    - Field - mapped to or from staging field, or 
+    - Static - Static value used
+4. If the Value type is Static, complete the **Static value** <br> > Note: Static value can be either plain text or a method between brackets. Example: <br> 
+(currentDate()) <br> 
+(currentLanguageId()) <br> 
+(currentSessionDate()) <br> 
+(currentSessionDateTime()) <br> 
+5.  Specify the **Staging field**. Switch bewteen the header and lines table to find the required field.
+7.  Enter the **Field position** within the file.
+
+> Note: To delete a line, select the record then select **Remove**
+
+##### Field chooser
+
