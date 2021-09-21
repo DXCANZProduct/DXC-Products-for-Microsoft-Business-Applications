@@ -58,7 +58,7 @@ The standard setup that applies to all types will be described first, thereafter
 **Code page**                     |	Select the applicable code page.
 **Time zone preference**          |	Select the time zone offset used when processing the document type: <br> **Auto** (default) – The standard D365 time zone logic applies. <br> **User** – The user who is running the process’s time zone. <br> **No Conversion** – no time zone offset is applied. <br> **Company** – the legal entities time zone offset is applied. <br> **Manual** – use the proceeding ‘time zone’ parameter.
 **Time zone**                     |	Enabled and used to set the timezone when **Time zone preference** is set to _Manual_.
-
+<br><br>
 
 **Decimals settings** - Select the default decimal settings used within the file.
 
@@ -67,7 +67,7 @@ The standard setup that applies to all types will be described first, thereafter
 **Decimals**                      |	The decimal precision applied.
 **Separator**                     | The decimal separator applied.
 **Thousand separator**            | Only applies to Text templates. The thousand separator applied.
-
+<br><br>
 
 **Date setttings** - Select the default date settings used withing the file.
 
@@ -87,6 +87,7 @@ The standard setup that applies to all types will be described first, thereafter
 **Formatted date and time example** |	Displays example date and time for Custom date and time format (in UTC timezone)
 **Custom time format**            |	Enter custom time format
 **Formatted time example**        |	Displays example time for **Custom time format** (in UTC timezone)
+<br><br>
 
 ### Text file templates setup
 
