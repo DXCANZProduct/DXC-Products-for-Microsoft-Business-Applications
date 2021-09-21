@@ -29,12 +29,13 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Document types - File templates
 
-Users can access the form by navigating to **EDI > Setup > Document types** and selecting FastTab **Templates**.
+Users can access the form by navigating to **EDI > Setup > Document types**. <br>
+Select or filter the applicable Document in the List and select FastTab **Templates**.
 
-The EDI templates hold the settings required to translate the EDI document into or out of the document type’s staging tables. Trading partners will often supply information in different formats and use different fields to specify information.  Having templates allows us to configure these differences in a simple reusable fashion.
--	Select **Create**, a new dialog box will be displayed
+Templates hold the settings required to translate the EDI document into or out of the document type’s staging tables. Trading partners will often supply information in different formats and use different fields to specify information.  Having templates allows us to configure these differences in a simple reusable fashion.
+- Select **Create**, a new dialog box called **Create a new template** will be displayed.
 - Specify the **Template ID** and **Description**
--	Select the Type of file for which the template is being created, options:
+- Select the **Type** of file for which the template is being created, options:
     - Text file (multiple headers supported)
     - XSLT Transformation (multiple headers not supported)
     - XSLT Collection (multiple headers supported)
