@@ -86,7 +86,9 @@ The standard setup that applies to all types will be described first, thereafter
 **Custom time format**            |	Enter custom time format
 **Formatted time example**        |	Displays example time for **Custom time format** (in UTC timezone)
 
-### Text files templates setup
+### Text files
+
+#### Text files templates setup
 
 Text file are a very common way to transfer data. They are often delimited files with header and line information. This template type gives the ability to map such files to and from the documents staging tables. Text file can handle multiple headers. <br>
 Select the **Setup** button to set the following for text templates:
@@ -101,11 +103,11 @@ Select the **Setup** button to set the following for text templates:
 **Text qualifier**                |	Specify the Text qualifier used to identify text within the file. This will then be removed from the string when writing data to staging.
 **Record identifier position**    |	Where the file is Structured, specify the Record identifier position
 
+If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).
+
 > Note: **Flat or structured** cannot be changed when mappings exist.
 
-## Mappings
-
-### Text files mapping
+#### Text files template mappings
 
 Each document type has its own fields that can be either mapped to for inbound files or mapped from for outbound files. <br>
 The mapping is made up of two sections: <br> 
@@ -233,6 +235,14 @@ If scripting is allowed, ensure [EDI Shared parameter](../EDI%20shared%20paramet
 
 ### JSON files
 
+JSON file format is available using a standard format based on the fields currently available for each document. 
+JSON Collection should be used for JSON files with multiple headers.
+
+> Note: The elements in the JSON format use the D365 table field names.  To identify the correct label for each of the elements, please see the **Field Label** available within the [**Field metadata**](Field%20metadata.md)
+
+#### JSON files templates setup
+If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).
+Date settings allow for ability to override default JSON ISO standard date format yyyy-MM-dd'T'HH:mm:ss.ff
 
 ### EDIFACT files
 EDI - standard formats license only.
