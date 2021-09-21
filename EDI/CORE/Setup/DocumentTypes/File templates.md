@@ -166,7 +166,7 @@ There are two ways to add a field mapping:
 5.  Specify the **Staging field**. Switch bewteen the header and lines table to find the required field.
 7.  Enter the **Field position** within the file.
 
-> Note: To delete a line, select the record then select **Remove**
+> Note: To delete a line, select the record then select **Remove**. 
 
 ##### Field chooser
 
@@ -182,3 +182,27 @@ Alternatively, a bulk field chooser can be used to add multiple mappings at once
 **Qty**                           |	The number of times to add the field
 
 - Select **Create** to add the selected lines
+
+> Note: To delete a line, select the record then select **Remove**. Lines can also be moved using the **Move up** or **Move down** buttons.
+
+##### Field functions
+
+Field mappings can have functions applied to them to transform the data or perform calculations based on that data. The functions are only available for certain data types based on their functionality.
+
+**Field function** 	              | **Field data type**                  | **Description**                       
+:-------------------------------- |:-------------------------------------|:-----------------------
+**Average**                       |	Number	                             | Average value across all staging records for the selected field
+**Earliest**                      |	Date	                             | Earliest value across all staging records for the selected field
+**First**	                      | Any type                             | First selected value across all staging records for the selected field
+**Last**                          |	Any type	                         | Last selected value across all staging records for the selected field
+**Latest**                        |	Date	                             | Latest value across all staging records for the selected field
+**Max**                           |	Number	                             | Max value across all staging records for the selected field
+**Min**                           |	Number	                             | Min value across all staging records for the selected field
+**Remove carriage returns**       |	String	                             | Remove Carriage returns in the value of the selected field
+**Remove decimal**                |	Number	                             | Remove decimals in the value of the selected field. Example: Line numbers.
+**Remove space**                  |	String	                             | Remove spaces in the value of the selected field
+**Sum**                           |	Number	                             | Sum of values across all staging records for the selected field
+
+> Note: The list of available functions can also be located via **EDI > Setup > Configurations > Template field functions**
+
+### XML files
