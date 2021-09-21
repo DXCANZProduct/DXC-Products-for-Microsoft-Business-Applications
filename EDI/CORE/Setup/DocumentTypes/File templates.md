@@ -96,7 +96,7 @@ Select the **Setup** button to set the following for text templates:
 **Flat or structured**            | **Flat** – A single line per record. Each line of text in the file has all the header information on it as well as the line information. <br> **Structured** – Multiple lines per record. Each line in the file is either a header type or a line type
 **Delimited or fixed**            | **Delimited** – Columns using a defined separator. <br> **Fixed** – Fixed width (to be implemented in future version of the module)
 **First row is header**           | Specify if the First row is header record. This row will then be ignored on the inbound file.
-**Row delimiter**                 |	Select the Row delimiter used within the file, options: <br> **{CR}{LF}** – Carriage return/line feed for windows <br> **{CR}** – Carriage return for MAC. <br> **{LF}** – Line feed for UNIX <br> **{;}** – Semicolon <br> **{:}** – Colon <br> **{,}** – Comma <br> **{t}** – Tab <br> **{'|'}** Vertical bar
+**Row delimiter**                 |	Select the Row delimiter used within the file, options: <br> **{CR}{LF}** – Carriage return/line feed for windows <br> **{CR}** – Carriage return for MAC. <br> **{LF}** – Line feed for UNIX <br> **{;}** – Semicolon <br> **{:}** – Colon <br> **{,}** – Comma <br> **{t}** – Tab <br> **{"|"}** Vertical bar
 **Column delimiter**              |	Select the Column delimiter used within the file, same selection as Row delimiter
 **Text qualifier**                |	Specify the Text qualifier used to identify text within the file. This will then be removed from the string when writing data to staging.
 **Record identifier position**    |	Where the file is Structured, specify the Record identifier position
