@@ -337,7 +337,7 @@ It also includes **EDIFACT message**, which includes options like:
 - Where applicable, enter a [Custom format] for the field.
 
 > Note: To **Delete** a composite, select the record then select **Delete**. <br>
-> Composites can be moved up or down within its Segment by using the **Up** and **Down** buttons.
+> Composites can be moved up or down within its Segment by using the **Up** and **Down** buttons. <br>
 
 Example Composites for Segment UNH for an outbound Vendor purchase order:
 - 0062 Message reference number:
@@ -348,6 +348,45 @@ Example Composites for Segment UNH for an outbound Vendor purchase order:
     - Name = 0065 Message type
 
 ##### Elements
+
+The level under Composites is called **Elements**. 
+- Select the applicable Composite and select **New** to add an Element.
+- Enter a **Static value** OR select the applicable **Staging field**. <br>
+When selecting a **Staging field**, the Staging table options include the header, line staging tables. <br>
+It also includes **EDIFACT message**, which includes options like:
+    - Created date
+    - Created time
+    - Segment count, and
+    - Service string fields
+- **Name** is defaulted from the Static value / Staging field but can be overridden.
+- Where applicable, enter a [Custom format] for the field.
+
+> Note: To **Delete** an Element, select the record then select **Delete**. <br>
+> Elements can be moved up or down within its Composite by using the **Up** and **Down** buttons. <br> 
+
+Example Elements for Segment 0065 Message type:
+- 0052 Message version number
+    - Static value = D
+    - Name = 	0052 Message version number
+- 0054 Message release number
+    - Static value = 01B
+    - Name = 	0054 Message release number
+- 0051 Controlling agency, code
+    - Static value = UN
+    - Name = 0051 Controlling agency, code
+- 0057 Association assigned code
+    - Static value = EAN010
+    - Name = 0057 Association assigned code
+
+Short example to display section, segment, composite, element relation:
+
+**Section** 	                   | **Segment**                  | **Composite**                 | **Element**                    
+:----------------------------------|:-----------------------------|:------------------------------|:---------------------
+Header section	                   | UNH (Message header)	      | Message reference number      |
+		                           |                              | ORDERS (Message type)	      | D (Message version number)
+			                       |                              |                               | 01B (Message release number)
+			                       |                              |                               | UN (Controlling agency, code)
+			                       |                              |                               | EAN010 (Association assigned code)
 
 ##### Custom format
 
