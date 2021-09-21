@@ -39,7 +39,7 @@ The Document types are arranged in a logical hierarchy based on their purpose as
 _Note: As new documents are added to the implementation (either through customer development, upgrades or the licensing of new modules) pressing the **Refresh module** button on **EDI > Setup > EDI parameters** will rebuild the tree with the new documents._
 
 Document type setup are split into:
-1. [File templates]: applicable to all document types
+1. [File templates](DocumentTypes/File-templates.md): applicable to all document types
 2. [Setting profiles]: where applicable for the document type
 3. [Validation profiles]: where applicable for the document type
 4. [Outbound file names]: applicable to all outbound document types
