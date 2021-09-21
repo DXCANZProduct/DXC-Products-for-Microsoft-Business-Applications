@@ -67,7 +67,7 @@ The standard setup that applies to all types will be described first, thereafter
 **Separator**                     | The decimal separator applied.
 **Thousand separator**            | Only applies to Text templates. The thousand separator applied.
 
-**Date setttings** - Select the default date settings used withing the file.
+**Date setttings** - Select the default date settings used within the file.
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
