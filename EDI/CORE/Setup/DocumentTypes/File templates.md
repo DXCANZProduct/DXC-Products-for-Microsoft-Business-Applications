@@ -207,6 +207,8 @@ Field mappings can have functions applied to them to transform the data or perfo
 
 > Note: The list of available functions can also be located via **EDI > Setup > Configurations > Template field functions**
 
+#### Text template data entities
+
 ### XML files
 
 XML file format is available using a standard format based on the fields currently available for each document.  Where a new format is required, this can be managed using style sheets. <br> XML Collection should be used for XML files with multiple headers.
@@ -233,6 +235,8 @@ When opening the form, it will also display any compile errors.
 Click **Save XSLT**.
 If scripting is allowed, ensure [EDI Shared parameter](../EDI%20shared%20parameters.md) **Enable XLST scripting** is enabled.
 
+#### XML template data entities
+
 ### JSON files
 
 JSON file format is available using a standard format based on the fields currently available for each document. 
@@ -244,7 +248,44 @@ JSON Collection should be used for JSON files with multiple headers.
 If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).
 Date settings allow for ability to override default JSON ISO standard date format yyyy-MM-dd'T'HH:mm:ss.ff
 
+#### JSON template data entities
+
 ### EDIFACT files
-EDI - standard formats license only.
 
+#### Prerequisites
+License: IconEDIStandardFormats
+Feature enabled: EDI - Standard formats
 
+#### EDIFACT files templates setup
+If required, update the general settings by seleting the **Setup** button. <br>
+
+The following Options under General, are defaulted for EDIFACT and are used to populate the mappings in UNA Service string.
+
+**Field** 	                            | **Default**                      
+:---------------------------------------|:-------------------------------------
+**Component data element separator**    | :
+**Data element separator**		        | +
+**Decimal mark** **		                | .
+**Release character**	            	| ?
+**Segment terminator**		            | ‘
+
+If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).
+
+> Note: The **Decimal separator** is linked to the **Decimal mark**
+> Note: Date formats can also be overridden for a specific field within Mappings by using Custom format. For example, the document’s date format is set to yyyyMMdd, but can use yyyyMMddHHmm for specific field CreatedDateTime.
+
+#### EDIFACT files template mappings
+
+##### Sections
+
+##### Segment
+
+##### Composites
+
+##### Elements
+
+##### Custom format
+
+##### Example
+
+#### EDIFACT template data entities
