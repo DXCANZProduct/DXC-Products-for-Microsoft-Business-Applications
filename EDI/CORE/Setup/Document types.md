@@ -51,8 +51,8 @@ The following Document types are available and depends on licensing and enabled 
   - [Functional acknowledgement outbound](../DOCUMENTS/Functional%20acknowledgement%20outbound.md)
 - **Customer**
   - [Customer purchase order](../../CUSTOMER/DOCUMENTS/Customer%20Purchase%20order.md) (inbound)
-  - [Customer purchase order change](../../CUSTOMER/DOCUMENTS/Customer%20Purchase%20order%20change.md) (inbound)
-  - [Customer purchase order acknowledgement](../../CUSTOMER/DOCUMENTS/Customer%20Purchase%20order%20acknowledgement.md) (outbound)
+  - [Customer purchase order change](../../CUSTOMER/DOCUMENTS/Customer%20purchase%20order%20change.md) (inbound)
+  - [Customer purchase order acknowledgement](../../CUSTOMER/DOCUMENTS/Customer%20purchase%20order%20acknowledgement.md) (outbound)
   - [Customer advanced shipping notice](../../CUSTOMER/DOCUMENTS/Customer%20advanced%20shipping%20notice.md) (outbound)
   - [Sales invoice](../../CUSTOMER/DOCUMENTS/Sales%20invoice.md) (outbound)
 - **Vendor**
