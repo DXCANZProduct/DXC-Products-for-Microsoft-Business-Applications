@@ -51,17 +51,18 @@ The Trading partner provides a centralized location to manage all trading partne
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
 **Trading partner GLN**           |	The GLN we know the trading partner as. <br> This field denotes the trading partner GLN. The module will use this field as a match to <br> - Customer trading partner: Customer account <br> -	Warehouse/3PL trading partner: Warehouse <br> -	Vendor trading partner: Vendor <br> - Freight forwarder landed cost: vendor account with Voyages' **Shipment type** set to _Shipping company_.
-**Company**                       |	The D365 company this trading partner relates to 
-**Type**	                        | The type of trading partner (i.e. Customer, Warehouse, Vendor, Freight forwarder landed cost)
-**Trading partner account**       |	The primary identifier of the trading partner (i.e. Customer account, Warehouse number or Vendor account)
+**Company**                       |	The **D365 company** this trading partner relates to 
+**Type**	                        | The **type** of trading partner (i.e. Customer, Warehouse, Vendor, Freight forwarder landed cost)
+**Trading partner account**       |	The **primary identifier** of the trading partner (i.e. Customer account, Warehouse number or Vendor account)
 **Name**                          |	The trading partner account's name
-**Company GLN**                   |	The GLN the trading partner knows ‘us’ as. This field denotes the trading ID - GLN (Global Location Number) - of your company to be sent on documents to this trading partner.
+**Company GLN**                   |	The GLN the trading partner knows **us** as. This field denotes the trading ID - GLN (Global Location Number) - of your company to be sent on documents to this trading partner.
 
 > Note: Selecting the trading partner GLN will display the detailed form relating to the trading partner
 > It also provides the setup for trading partner level options as well as defining which incoming and outgoing document types are enabled for the trading partner.
 
 ## Trading partner details
 
+Users can access the form by navigating to **EDI > Setup > Trading partners**. <br>
 Select the **Trading partner GLN** hyperlink or the **Details** button to update trading partner's details. <br>
 The following setup applies to all types of Trading partners and will be discussed in the Core module. The module specific setup/mappings will be discussed in each Module's guides.
 
@@ -76,3 +77,25 @@ The following setup applies to all types of Trading partners and will be discuss
 **Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> - Outgoing documents: Connection profile setup on [**EDI > Setup > EDI parameters**](EDI%20parameters.md) <br> - Incoming documents: All active connection incoming paths as setup in [**Connections**](Communication%20methods.md).
 **Cleanup profile**               |	Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level. If blank, default Cleanup profile will be used as setup on [**EDI > Setup > EDI shared parameters**](EDI%20shared%20parameters.md)
 
+## Outgoing documents
+
+Users can access the form by navigating to **EDI > Setup > Trading partners**. <br>
+Select the **Trading partner GLN** hyperlink or the **Details** button to update trading partner's details. <br>
+
+The Outgoing documents FastTab defines the outgoing EDI document types that have been configured and enabled for the trading partner. It brings the document template and mappings together with the settings profile to enable the document for the trading partner.
+
+**Field** 	                      | **Description**
+:-------------------------------- |:-------------------------------------
+**EDI Document type**             |	EDI document type. Users can add outgoing documents as available for the trading partner type on 
+Template	Document type template that has been previously defined
+Setting profile	Settings profile that has been previously defined
+Note: View details displays the settings profiles in read only
+File name setup	Select the outbound file name mask to use for the document
+Connection profile	Ability to override the default EDI connection profile on document level.
+If blank, the trading partner’s Connection profile will be used
+Cleanup profile	Ability to override the default Cleanup profile on document level.
+If blank, the trading partner’s Cleanup profile will be used
+Reset status profile	Ability to override the default Reset status on document level. If blank, EDI shared parameters will be used.
+Acknowledgement	Require an Inbound Functional Acknowledgement from trading partner for the outgoing document.
+Also required to setup the Functional acknowledgement inbound document
+Enabled	Enabled – Yes/No
