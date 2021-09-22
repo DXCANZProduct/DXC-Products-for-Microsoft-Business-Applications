@@ -232,6 +232,16 @@ If required, update the general settings by seleting the **Setup** button.
 
 If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).
 
+#### XML template mappings
+
+When creating **XLST Transformation** or **XLST Collection** templates:
+- Select **Mappings**, the following options are available:
+    - **XSD** – (XML Schema Definition) describes the elements within the XML document
+    - **XML** – Shows the XML document that will be produced for each document
+    - **XSLT** – Ability to apply an XSLT transformation (if required)
+
+> Note: If the document type has staging record/s, users can use the following to create an example XML populated with information. Select **Mappings > XML > Set data**, select a staging table record, then select Choose.
+
 #### XML Transformation
 
 XML file can be transformed by utilizing **Mappings > XSLT**
