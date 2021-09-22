@@ -5,7 +5,7 @@ title: [EDI Core]
 description: [EDI Core - Setup document types - Setting profiles]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 12/01/2020
+ms.date: 22/09/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
