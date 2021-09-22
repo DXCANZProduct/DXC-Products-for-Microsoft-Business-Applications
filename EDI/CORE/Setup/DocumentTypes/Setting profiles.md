@@ -38,4 +38,4 @@ Setting profiles can be created to specify the handling of specific scenarios. O
 - Specify the **Settings profile id** and **Description** of the profile.
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details. 
 
-Each document's Setting profile options will be discussed in more detail when each Document type 
+Each document's Setting profile will be discussed in more detail with each document's details.
