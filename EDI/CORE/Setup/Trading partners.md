@@ -50,12 +50,12 @@ The Trading partner provides a centralized location to manage all trading partne
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
-**Trading partner GLN**           |	The GLN we know the trading partner as. <br> Note: This field denotes the trading partner GLN. The module will use this field as a match to <br> - Customer trading partner: Customer account <br> -	Warehouse/3PL trading partner: Warehouse <br> -	Vendor trading partner: Vendor <br> - Freight forwarder landed cost: vendor account with Voutages' **Shippment type** set to _Shipping company_. <br> > Note: Selecting the trading partner GLN will display the detailed form relating to the trading partner
+**Trading partner GLN**           |	The GLN we know the trading partner as. <br> This field denotes the trading partner GLN. The module will use this field as a match to <br> - Customer trading partner: Customer account <br> -	Warehouse/3PL trading partner: Warehouse <br> -	Vendor trading partner: Vendor <br> - Freight forwarder landed cost: vendor account with Voyages' **Shipment type** set to _Shipping company_.
 **Company**                       |	The D365 company this trading partner relates to 
 **Type**	                        | The type of trading partner (i.e. Customer, Warehouse, Vendor, Freight forwarder landed cost)
 **Trading partner account**       |	The primary identifier of the trading partner (i.e. Customer account, Warehouse number or Vendor account)
 **Name**                          |	The trading partner account's name
-**Company GLN**                   |	The GLN the trading partner knows ‘us’ as. <br> 
-> Note: This field denotes the trading ID - GLN (Global Location Number) - of your company to be sent on documents to this trading partner.
+**Company GLN**                   |	The GLN the trading partner knows ‘us’ as. This field denotes the trading ID - GLN (Global Location Number) - of your company to be sent on documents to this trading partner.
 
-It also provides the setup for trading partner level options as well as defining which incoming and outgoing document types are enabled for the trading partner.
+> Note: Selecting the trading partner GLN will display the detailed form relating to the trading partner
+> It also provides the setup for trading partner level options as well as defining which incoming and outgoing document types are enabled for the trading partner.
