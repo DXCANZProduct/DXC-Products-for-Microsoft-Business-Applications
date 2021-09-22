@@ -29,3 +29,23 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Document types - Outbound filenames
 
+## Setting up Outbound filenames
+
+Users can access the form by navigating to **EDI > Setup > Document types**.
+
+Outbound documents require a filename, so they can be created as files. The module allows per document type many different file name masks to be configured and one to be specified on the trading partners setup for each document type.
+
+A file name mask can have information from fields within the document embedded so file name uniqueness and readability can be achieved.
+
+- In the **EDI document type** field, select the outbound document you wish to create a file mask for.
+- Specify the **Name** for the file mask
+- Select **Single file per document** to create one or multiple files per customer/warehouse for each document
+  - **No** – Create one file for all outgoing records for the specified customer/warehouse document combination
+  > Note: Information on the header of the staging table will not be available for selection as this is specific to a single document.
+  - **Yes** – Create one file per outgoing record in the staging table for each document
+  > Note: Information on the header of the staging table will be available for selection as this is specific to a single document.
+  > These filenames will only be available for selection for the document type supports multiple headers (Text, XML Collection and JSON Collection)
+- Specify the **file name mask** to be used for each file, then select the **Editor** button. <br>
+Various fields from the staging table are available as a placeholder. Add the file name mask text and insert placeholders from the documents available fields into the mask by selecting the placeholder and pressing the **Insert at end** button. Move the placeholder text that was just inserted (all the text between the $ and including the $ signs) to where it’s required in the file name mask. <br>
+End the filename mask with the applicable file extension for outbound file's **Attachment** preview to work. If a file extenstion is not include in the filename, the outbound file will still be created, but the Attachment preview tab requires a file extension in order to read the file.
+- Once the filename mask is complete save and close the editor.
