@@ -413,3 +413,14 @@ An example of the document’s format can be viewed under the **Example** FastTa
 Where **Set data** is blank, the Example message staging fields will not be populated, but will display the mapped {Table.Field} value. <br>
 
 #### EDIFACT template data entities
+
+Data entities can be used to import standard formats, and then adjusted to match to company’s format. <br>
+The following is a summary of data entities available for the EDIFACT document template: <br>
+
+**Order**	                       | **Entity**	 
+:----------------------------------|:-----------------------------
+1	                               | EDI Template EDIFACT
+2	                               | EDI Template EDIFACT section
+3	                               | EDI Template EDIFACT element
+
+> Note: If the EDIFACT template has been created manually (not via data entity), first delete the default UNA elements before importing Section and Element entities for the template.
