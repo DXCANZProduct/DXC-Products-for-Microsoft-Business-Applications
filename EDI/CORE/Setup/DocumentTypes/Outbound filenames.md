@@ -45,14 +45,15 @@ A file name mask can have information from fields within the document embedded s
 - Specify the **file name mask** to be used for each file, then select the **Editor** button. <br>
 Various fields from the staging table are available as a placeholder. Add the file name mask text and insert placeholders from the documents available fields into the mask by selecting the placeholder and pressing the **Insert at end** button. Move the placeholder text that was just inserted (all the text between the $ and including the $ signs) to where it’s required in the file name mask. <br>
 End the filename mask with the applicable file extension for outbound file's **Attachment** preview to work. If a file extenstion is not included in the filename, the outbound file will still be created, but the Attachment preview tab requires a file extension in order to read the file.
-- Once the filename mask is complete save and close the editor.
 
-> Note: Placeholders available for selection as file name mask depends on setting **Single file per document**
+**Placeholders** available for selection as file name mask depends on setting **Single file per document**
 
 **Single file per document**      | **Trading partner **    | **Header staging**        
 :-------------------------------- |:-----------------------:|:-----------------------:
 **Yes**                           |	Yes                     | Yes
 **No**                            | Yes                     | No
+
+- Once the filename mask is complete save and close the editor.
 
 > Note: When assigning an Outbound filename to a Trading parner's document type. The Template assigned will also determine which filenames are available for selection.
 > For example where the filename's Single file per document is set to No, it will only be available for selection on templates that support multiple headers, like Text, XML Collection and JSON Collection.
