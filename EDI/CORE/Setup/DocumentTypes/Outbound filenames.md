@@ -37,7 +37,7 @@ Outbound documents require a filename, so they can be created as files. The modu
 
 A file name mask can have information from fields within the document embedded so file name uniqueness and readability can be achieved.
 
-- In the **EDI document type** field, select the outbound document you wish to create a file mask for.
+- To create a new record, select the applicable outbound document type and select the **New** button in the **Outbound file names** FastTab.
 - Specify the **Name** for the file mask
 - Select **Single file per document** to create one or multiple files per customer/warehouse for each document
   - **No** – Create one file for all outgoing records for the specified customer/warehouse document combination
