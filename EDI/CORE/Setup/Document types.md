@@ -48,7 +48,7 @@ Document type setup are split into:
 The following Document types are available and depends on licensing and enabled features:
 - **Core**
   - [Functional acknowledgement inbound](../DOCUMENTS/Functional%20acknowledgement%20inbound.md)
-  - Functional acknowledgement outbound
+  - [Functional acknowledgement outbound](../DOCUMENTS/Functional%20acknowledgement%20outbound.md)
 - **Customer**
   - Customer purchase order (inbound)
   - Customer purchase order change (inbound)
