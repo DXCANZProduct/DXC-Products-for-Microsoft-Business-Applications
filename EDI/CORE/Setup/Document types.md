@@ -45,3 +45,37 @@ Document type setup are split into:
 4. [Outbound file names](DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
 5. [Field metadata](DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
 
+The following Document types are available and depends on licensing and enabled features:
+- **Core**
+  - Functional acknowledgement inbound
+  - Functional acknowledgement outbound
+- **Customer**
+  - Customer purchase order (inbound)
+  - Customer purchase order change (inbound)
+  - Customer purchase order acknowledgement (outbound)
+  - Customer advanced shipping notice (outbound)
+  - Sales invoice (outbound)
+- **Vendor**
+  - Vendor purchase order (outbound)
+  - Vendor purchase order change (outbound)
+  - Vendor purchase order acknowledgement (inbound)
+  - Vendor advanced shipping noticed (inbound)
+  - Purchase inoice (inbound)
+- **3PL**
+  - Picking list (outbound)
+  - Picking list registration (inbound)
+  - Shipment advice - Purchase order (outbound)
+  - Shipment receipt - Purchase order (inbound)
+  - Shipment advice - Transfer order (outbound)
+  - Shipment receipt - Transfer order (inbound)
+  - Shipment advice - Return order (outbound)
+  - Shipment receipt - Return order (inbound)
+  - Shipment advice - Voyage (outbound)
+  - Shipment receipt - Voyage (outbound)
+  - Inventory adjustment - Transfer (inbound)
+  - Inventory adjustment - Counting (inbound)
+  - Inventory adjustment - Reconciliation (inbound)
+  - Inventory adjustment - Movement (inbound)
+- **Freight forwarder landed cost**
+  - Voyage creator (inbound)
+  - Voyage tracking (inbound)
