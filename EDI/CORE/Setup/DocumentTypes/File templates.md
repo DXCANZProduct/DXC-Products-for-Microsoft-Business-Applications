@@ -209,6 +209,12 @@ Field mappings can have functions applied to them to transform the data or perfo
 
 #### Text template data entities
 
+**Order**	                       | **Entity**	                    | **Description**
+:----------------------------------|:-------------------------------|:-----------------------------
+1	                               | EDI Template file              | Create new **Text file** template and setup
+2	                               | EDI Template file section      | Section details for the **Text file** template
+3	                               | EDI Template file line element | Mapping details for each section for the **Text file** template
+
 ### XML files
 
 XML file format is available using a standard format based on the fields currently available for each document.  Where a new format is required, this can be managed using style sheets. <br> XML Collection should be used for XML files with multiple headers.
@@ -237,6 +243,11 @@ If scripting is allowed, ensure [EDI Shared parameter](../EDI%20shared%20paramet
 
 #### XML template data entities
 
+**Order**	                       | **Entity**	                  | **Description**
+:----------------------------------|:-----------------------------|:-----------------------------
+N/A	                               | EDI Template XLST            | Create new **XLST Transformation** template and setup
+N/A	                               | EDI Template XLST collection | Create new **XLST Collection** template and setup
+
 ### JSON files
 
 JSON file format is available using a standard format based on the fields currently available for each document. 
@@ -249,6 +260,11 @@ If required to update regional, decimals or date settings, see [Standard setup](
 Date settings allow for ability to override default JSON ISO standard date format yyyy-MM-dd'T'HH:mm:ss.ff
 
 #### JSON template data entities
+
+**Order**	                       | **Entity**	                  | **Description**
+:----------------------------------|:-----------------------------|:-----------------------------
+N/A	                               | EDI Template JSON            | Create new **JSON** template and setup
+N/A	                               | EDI Template JSON collection | Create new **JSON Collection** template and setup
 
 ### EDIFACT files
 
@@ -417,10 +433,10 @@ Where **Set data** is blank, the Example message staging fields will not be popu
 Data entities can be used to import standard formats, and then adjusted to match to company’s format. <br>
 The following is a summary of data entities available for the EDIFACT document template: <br>
 
-**Order**	                       | **Entity**	 
-:----------------------------------|:-----------------------------
-1	                               | EDI Template EDIFACT
-2	                               | EDI Template EDIFACT section
-3	                               | EDI Template EDIFACT element
+**Order**	                       | **Entity**	                  | **Description**
+:----------------------------------|:-----------------------------|:-----------------------------
+1	                               | EDI Template EDIFACT         | Create new **EDIFACT** template and setup
+2	                               | EDI Template EDIFACT section | Section details for the **EDIFACT** template
+3	                               | EDI Template EDIFACT element | Element details for each section for the **EDIFACT** template
 
 > Note: If the EDIFACT template has been created manually (not via data entity), first delete the default UNA elements before importing Section and Element entities for the template.
