@@ -396,7 +396,7 @@ Field mappings can have C# formats applied by using the field Custom format, som
 :----------------------------------|:-----------------------------|:------------------------------|:---------------------
 35	                               | Left 35 characters of string |	Long description item that is more than 35 characters	| Long description item that is more
 3,5	                               | Substring (3,5)	          | 123456789	                  | 34567
-prefix{0,20:3,5}postfix	           | Align example                |	123456789	                  | prefix               34567postfix
+prefix{0,7:3,5}postfix	           | Align example with prefix and postfix               |	123456789	                  | prefix 34567postfix
 C4                                 | Currency with 4 decimals	  | 123.45676	                  | $123.4567
 N2	                               | 2 decimals	                  | 123.45676	                  | 123.45
 N0	                               | 0 decimals (for example line number)	| 1.0000000           |	1
