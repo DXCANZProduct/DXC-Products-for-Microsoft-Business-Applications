@@ -39,7 +39,7 @@ The Trading partner provides a centralized location to manage all trading partne
 - Select the trading partner **Type**. Available options depends on licensing and enabled features.
 - Select the Trading partner's **Company**
 -	Select the **Account number**. Only account numbers for the selected company that are not assigned for the specified trading partner type are available.
--	Enter the **Trading partner GLN**. This value will be used in the Import-to-staging step to create the incoming staging against the correct Trading partner GLN and should thus be provided in the Inbound file.
+-	Enter the **Trading partner GLN**. This value will be used in the Import-to-staging step to create the incoming staging against the correct Trading partner GLN and should thus be provided in the Inbound file. The Trading partner GLN is required to be unique by Type.
 -	Select **Create**, then complete the remaining setup for the trading partner.
 
 ## Prerequisites ##
@@ -59,3 +59,21 @@ The Trading partner provides a centralized location to manage all trading partne
 
 > Note: Selecting the trading partner GLN will display the detailed form relating to the trading partner
 > It also provides the setup for trading partner level options as well as defining which incoming and outgoing document types are enabled for the trading partner.
+
+## Trading partner details
+
+Select the **Trading partner GLN** hyperlink or the **Details** button to update trading partner's details.
+The following applies to all types of Trading partners and will be discussed in the Core module. The module specific setup/mappings will be discussed in each Module's guides.
+
+**Field** 	                      | **Description**
+:-------------------------------- |:-------------------------------------
+**Company**	                      | The D365 company this trading partner relates to. This field is not editable after creation.
+**Type**                          | The type of trading partner (i.e. Customer, Warehouse, Vendor, Freight forwarder landed cost). This field is not editable after creation. 
+**Company GLN**                   |	The GLN the trading partner knows ‘us’ as. Note: This field denotes the trading ID - GLN (Global Location Number) - of your company to be sent on documents to this trading partner.
+**Trading partner account**       |	The primary identifier of the trading partner (i.e. Customer account, Warehouse number or Vendor account). This field is not editable after creation.
+**Name**                          |	The trading partner account's name. Not editable in this form. Links to customer, warehouse or vendor account's name.
+**Trading partner GLN**           |	The GLN we know the trading partner as. Note: This field denotes the trading partner GLN. The module will use this field as a match to the customer, warehouse or vendor. 
+**Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> - Outgoing documents: Connection profile setup on [**EDI > Setup > EDI parameters**](EDI%20parameters.md) <br> - Incoming documents: All active connection incoming paths as setup in [**Connections**](Communication%20methods.md).
+**Cleanup profile**               |	Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level.
+If blank, default Cleanup profile will be used as setup on [**EDI > Setup > EDI shared parameters**](EDI%20shared%20parameters.md)
+
