@@ -46,9 +46,9 @@ A file name mask can have information from fields within the document embedded s
 Various fields from the staging table are available as a placeholder. Add the file name mask text and insert placeholders from the documents available fields into the mask by selecting the placeholder and pressing the **Insert at end** button. Move the placeholder text that was just inserted (all the text between the $ and including the $ signs) to where it’s required in the file name mask. <br>
 End the filename mask with the applicable file extension for outbound file's **Attachment** preview to work. If a file extenstion is not included in the filename, the outbound file will still be created, but the Attachment preview tab requires a file extension in order to read the file.
 
-  **Placeholders** available for selection as file name mask depends on setting **Single file per document**
+  **Placeholders** fields available for selection as file name mask depends on setting **Single file per document**
 
-  **Single file per document**      | **Trading partner **    | **Header staging**        
+  **Single file per document**      | **Trading partner**    | **Header staging**        
   :-------------------------------- |:-----------------------:|:-----------------------:
   **Yes**                           |	Yes                     | Yes
   **No**                            | Yes                     | No
