@@ -29,7 +29,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Setup Trading partners
 
-Users can access the form by navigating to **EDI > Setup > Trading partners**
+Users can access the form by navigating to **EDI > Setup > Trading partners**.
 
 EDI works on the basis that an external entity (trading partner) wants to send or receive information from us. To this end, the module is built to link the documents and their associated settings to those entities (trading partners). <br>
 A trading partner can be created based on an existing D365 entity like a warehouse, vendor or a customer. Depending on the various modules installed, different trading partner types will be available for setup.
@@ -37,8 +37,8 @@ A trading partner can be created based on an existing D365 entity like a warehou
 The Trading partner provides a centralized location to manage all trading partners.
 - To create a new record, select **New**
 - Select the trading partner **Type**. Available options depends on licensing and enabled features.
-- Select the Trading partner **Company**
--	Select the **Account number**. Only account numbers that are not assigned for the specified trading partner type are available.
+- Select the Trading partner's **Company**
+-	Select the **Account number**. Only account numbers for the selected company that are not assigned for the specified trading partner type are available.
 -	Enter the **Trading partner GLN**. This value will be used in the Import-to-staging step to create the incoming staging against the correct Trading partner GLN and should thus be provided in the Inbound file.
 -	Select **Create**, then complete the remaining setup for the trading partner.
 
