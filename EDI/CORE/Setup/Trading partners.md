@@ -44,7 +44,7 @@ The Trading partner provides a centralized location to manage all trading partne
 
 ## Prerequisites ##
 * Module setup/Mappings. This will be assigned to the Trading partner where their value doesn't match to D365 value.
-* Document types. Template, setting profile, outbound filenames for each applicable document type will be assigned to the Trading partner.
+* [Document types](DocumentTypes/File%20templates.md). Template, setting profile, outbound filenames for each applicable document type will be assigned to the Trading partner.
 
 ## Trading partner list
 
