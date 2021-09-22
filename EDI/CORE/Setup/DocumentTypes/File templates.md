@@ -39,7 +39,7 @@ Templates hold the settings required to translate the EDI document into or out o
     - [Text file](#text-files) - multiple headers supported
     - [XSLT Transformation](#xml-files) - single header supported
     - [XSLT Collection](#xml-files) - multiple headers supported
-    - Code Transformation - single header supported
+    - [Code Transformation](#code-transformation-files) - single header supported
     - [JSON](#json-files) - single header supported
     - [JSON Collection](#json-files) - multiple headers supported
     - [EDIFACT](#edifact-files) - EDI - Standard formats license only
@@ -265,6 +265,26 @@ Date settings allow for ability to override default JSON ISO standard date forma
 :----------------------------------|:-----------------------------|:-----------------------------
 N/A	                               | EDI Template JSON            | Create new **JSON** template and setup
 N/A	                               | EDI Template JSON collection | Create new **JSON Collection** template and setup
+
+### Code transformation files
+
+Code transformation file format is available and uses the Incoming/outgoing transformation as developed in **EDI > Setup > Configurations > Template code transformations**
+
+#### Code transformation files templates setup
+
+If required, update the general settings by seleting the **Setup** button.
+
+**Field** 	                            | **Default**                      
+:---------------------------------------|:-------------------------------------
+**Transformation**                      | Select the applicable Transformation Name. Values are filtered to Direction of the document template (Outgoing vs. Incoming)
+
+If required to update decimals or date settings, see [Standard setup](#standard-setup).
+
+#### Code transformation template data entities
+
+**Order**	                       | **Entity**	                       | **Description**
+:----------------------------------|:----------------------------------|:-----------------------------
+N/A	                               | EDI template code transformation  | Create new **Code transformation** template and setup
 
 ### EDIFACT files
 
