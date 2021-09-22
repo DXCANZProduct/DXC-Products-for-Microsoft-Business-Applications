@@ -86,9 +86,9 @@ The Outgoing documents FastTab defines the outgoing EDI document types that have
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
-**EDI Document type**             |	EDI document type. Users can add outgoing documents as available for the trading partner type on 
-Template	Document type template that has been previously defined
-Setting profile	Settings profile that has been previously defined
+**EDI Document type**             |	[EDI document type](Document%20types.md). Users can add outgoing document types as available for the trading partner type. 
+**Template**                      |	Document type template that has been previously defined
+**Setting profile**               |	Settings profile that has been previously defined
 Note: View details displays the settings profiles in read only
 File name setup	Select the outbound file name mask to use for the document
 Connection profile	Ability to override the default EDI connection profile on document level.
