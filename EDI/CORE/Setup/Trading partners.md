@@ -74,6 +74,5 @@ The following setup applies to all types of Trading partners and will be discuss
 **Name**                          |	The trading partner account's name. Not editable in this form. Links to customer, warehouse or vendor account's name.
 **Trading partner GLN**           |	The GLN we know the trading partner as. Note: This field denotes the trading partner GLN. The module will use this field as a match to the customer, warehouse or vendor. 
 **Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> - Outgoing documents: Connection profile setup on [**EDI > Setup > EDI parameters**](EDI%20parameters.md) <br> - Incoming documents: All active connection incoming paths as setup in [**Connections**](Communication%20methods.md).
-**Cleanup profile**               |	Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level.
-If blank, default Cleanup profile will be used as setup on [**EDI > Setup > EDI shared parameters**](EDI%20shared%20parameters.md)
+**Cleanup profile**               |	Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level. If blank, default Cleanup profile will be used as setup on [**EDI > Setup > EDI shared parameters**](EDI%20shared%20parameters.md)
 
