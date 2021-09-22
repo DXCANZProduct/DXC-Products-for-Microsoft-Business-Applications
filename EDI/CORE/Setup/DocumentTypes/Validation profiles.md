@@ -42,7 +42,7 @@ Once a validation profile is created it can be configured by adding validation r
 - Specify the **Name** and **Description** of the profile.
 - Select the **Name** hyperlink or the **Setup** button to update profile details.
 - Select **Add** to add the validation rule.
-- Select the Validation instance and rule for validation
+- Select the **Validation rule**.
 - Select the **Error tolerance** to specify the validation level.  If a validation rule fails, this will be used to determine how it reacts. Options:
   - **Info** - An Infolog is displayed with information only. If the validation rule fails a message will be written to the staging records log but the record will continue to process.
   - **Warning** - An Infolog is displayed with a warning. If the validation rule fails a message will be written to the staging records log but the record will continue to process. 
