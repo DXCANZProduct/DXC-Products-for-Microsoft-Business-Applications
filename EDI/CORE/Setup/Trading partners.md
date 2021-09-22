@@ -38,7 +38,7 @@ The Trading partner provides a centralized location to manage all trading partne
 - To create a new record, select **New**
 - Select the trading partner **Type**. Available options depends on licensing and enabled features.
 - Select the Trading partner **Company**
--	Select the **Account number**. Only account numbers that are not assigned to the specified trading partner type are available.
+-	Select the **Account number**. Only account numbers that are not assigned for the specified trading partner type are available.
 -	Enter the **Trading partner GLN**. This value will be used in the Import-to-staging step to create the incoming staging against the correct Trading partner GLN and should thus be provided in the Inbound file.
 -	Select **Create**, then complete the remaining setup for the trading partner.
 
