@@ -41,7 +41,7 @@ The Field metadata fast tab displays all the available fields for the Document t
 
 - Select the document type to create the display name or help text for.
 - All available fields will be displayed
-> Note: Use the Toggle button to filter based on _header_ or _lines_ fields
+  > Note: Use the Toggle button to filter based on _header_ or _lines_ fields
 - Select the field to update
 
 **Field** 	                      | **Description**
@@ -59,7 +59,7 @@ As setting these fields via the grid may be time consuming, a bulk update functi
 
 - Select the **document type** to create the display name or help text for.
 - All available fields will be displayed
-> Note: Use the Toggle button to filter based on header or lines fields
+  > Note: Use the Toggle button to filter based on _header_ or _lines_ fields
 - Select the **Field upload** button
 - To download a template, select **Template** from the dialog box, then **Download**
 - Update the csv file, then save as csv
