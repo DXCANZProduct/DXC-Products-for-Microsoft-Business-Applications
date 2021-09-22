@@ -62,8 +62,8 @@ The Trading partner provides a centralized location to manage all trading partne
 
 ## Trading partner details
 
-Select the **Trading partner GLN** hyperlink or the **Details** button to update trading partner's details.
-The following applies to all types of Trading partners and will be discussed in the Core module. The module specific setup/mappings will be discussed in each Module's guides.
+Select the **Trading partner GLN** hyperlink or the **Details** button to update trading partner's details. <br>
+The following setup applies to all types of Trading partners and will be discussed in the Core module. The module specific setup/mappings will be discussed in each Module's guides.
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
