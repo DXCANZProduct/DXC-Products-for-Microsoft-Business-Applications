@@ -407,4 +407,9 @@ More examples:
 
 ##### Example
 
+An example of the document’s format can be viewed under the **Example** FastTab in **Mappings**. <br>
+**Segment** will display the selected Segment’s example, whereas **Message** displays the complete message’s example. <br>
+**Set data** can be used to select an existing staging record to populate the Message example. <br>
+Where **Set data** is blank, the Example message staging fields will not be populated, but will display the mapped {Table.Field} value. <br>
+
 #### EDIFACT template data entities
