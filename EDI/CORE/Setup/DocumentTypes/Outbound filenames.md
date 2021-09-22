@@ -56,4 +56,4 @@ End the filename mask with the applicable file extension for outbound file's **A
 - Once the filename mask is complete save and close the editor.
 
 > Note: When assigning an Outbound filename to a Trading parner's document type. The Template assigned will also determine which filenames are available for selection.
-> For example where the filename's Single file per document is set to No, it will only be available for selection on templates that support multiple headers, like Text, XML Collection and JSON Collection.
+> For example filenames with **Single file per document** set to No will only be available for selection on templates that support multiple headers like Text, XML Collection and JSON Collection.
