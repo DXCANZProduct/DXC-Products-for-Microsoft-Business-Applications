@@ -40,8 +40,8 @@ A file name mask can have information from fields within the document embedded s
 - To create a new record, select the applicable outbound document type and select the **New** button in the **Outbound file names** FastTab.
 - Specify the **Name** for the file mask
 - Select **Single file per document** to create one or multiple files per Trading partner for each document
-  - **No** – Create one file for all outgoing records for the specified Trading partner document combination. For example user can select multiple staging records and create one outbound file per Trading partner.
-  - **Yes** – Create one file per outgoing record in the staging table for each document. For example if user selects multiple staging records, a file will be created per header staging record.
+  - **No** – Create one file for all outgoing records for the specified Trading partner document combination. For example user/batch can select multiple staging records and create one outbound file per Trading partner.
+  - **Yes** – Create one file per outgoing record in the staging table for each document. For example user/batch can select multiple staging records, but a file will be created per record.
 - Specify the **file name mask** to be used for each file, then select the **Editor** button. <br>
 Various fields from the staging table are available as a placeholder. Add the file name mask text and insert placeholders from the documents available fields into the mask by selecting the placeholder and pressing the **Insert at end** button. Move the placeholder text that was just inserted (all the text between the $ and including the $ signs) to where it’s required in the file name mask. <br>
 End the filename mask with the applicable file extension for outbound file's **Attachment** preview to work. If a file extenstion is not include in the filename, the outbound file will still be created, but the Attachment preview tab requires a file extension in order to read the file.
