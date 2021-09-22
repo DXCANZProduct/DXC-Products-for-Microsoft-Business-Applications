@@ -2,10 +2,10 @@
 # required metadata
 
 title: [EDI Core]
-description: [EDI Core - Setup EDI shared parameters]
+description: [EDI Core - Setup Trading partners]
 author: [jdutoi2]
 manager: Kym Parker
-ms.date: 12/01/2020
+ms.date: 22/09/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,21 +27,40 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# EDI shared parameters
-Users can access the form by navigating to **EDI > Setup > EDI shared parameters**
+# Setup Trading partners
+
+Users can access the form by navigating to **EDI > Setup > Trading partners**
+
+EDI works on the basis that an external entity (trading partner) wants to send or receive information from us. To this end, the module is built to link the documents and their associated settings to those entities (trading partners). <br>
+A trading partner can be created based on an existing D365 entity like a warehouse, vendor or a customer. Depending on the various modules installed, different trading partner types will be available for setup.
+
+The Trading partner provides a centralized location to manage all trading partners.
+- To create a new record, select **New**
+- Select the trading partner **Type**. Available options depends on licensing and enabled features.
+- Select the Trading partner **Company**
+•	Select the **Account number**. Only account numbers that are not assigned to the specified trading partner type are available.
+•	Enter the **Trading partner GLN**. This value will be used in the Import-to-staging step to create the incoming staging against the correct Trading partner GLN and should thus be provided in the Inbound file.
+•	Select **Create**, then complete the remaining setup for the trading partner.
 
 ## Prerequisites ##
-* Setup [Cleanup profile](CleanupProfile.md)
-* Setup [Reset status profile](ResetStatusProcess.md#setup-reset-status-profile)
+* Module setup/Mappings. This will be assigned to the Trading partner where their value doesn't match to D365 value.
+* Document types. Template, setting profile , outbound filenames for each applicable document type will be assigned to the Trading partner.
 
-## Setup EDI shared parameters
+## Trading partner list
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
-<ins>**Cleanup**</ins>
-**Cleanup profile**	              | Specify the default cleanup profile that will apply to all inbound and outbound staging records. <br> Can be overridden on Trading partner or Trading partner’s document level. <br> This field can also be left blank here and selected on only the specific Trading partner or Trading partner’s document level. <br> _Note: Setup the periodic job to run the cleanup/delete of staging records via **EDI > Periodic tasks > Cleanup documents**_
-<ins>**Reset status**</ins>       | 
-**Documents reset status**        |	Assign default Reset status profile for all staging documents. <br> Can be overridden on Trading partner’s document level. <br> This field can also be left blank here and selected on only the specific Trading partner’s document level. <br> _Note: Setup the periodic job to run the reset status of staging records via **EDI > Periodic tasks > Reset document status**_
-**Files reset status**            |	Assign default Reset status profile for all inbound and outbound files. This field can't be specified/overridden on a Trading partner's document level. <br> _Note: Setup the periodic job to run the reset status of inbound and outbound files via **EDI > Periodic tasks > Reset document status**_
-<ins>**Options**</ins> 
-**Enable XLST scripting**         |	Option to enable scripting for XLST. If not enabled and scripting is used on XLST document, it will error with _Execution of scripts was prohibited_
+**Trading partner GLN**           |	The GLN we know the trading partner as. <br> Note: This field denotes the trading partner GLN. The module will use this field as a match to: <br> 
+- Customer trading partner: Customer account <br>
+-	Warehouse/3PL trading partner: Warehouse <br> 
+-	Vendor trading partner: Vendor <br>
+- Freight forwarder landed cost: vendor account with Voutages' **Shippment type** set to _Shipping company_. <br>
+> Note: Selecting the trading partner GLN will display the detailed form relating to the trading partner
+**Company**                       |	The D365 company this trading partner relates to 
+**Type**	                        | The type of trading partner (i.e. Customer, Warehouse, Vendor, Freight forwarder landed cost)
+**Trading partner account**       |	The primary identifier of the trading partner (i.e. Customer account, Warehouse number or Vendor account)
+**Name**                          |	The trading partner account's name
+**Company GLN**                   |	The GLN the trading partner knows ‘us’ as. <br> 
+> Note: This field denotes the trading ID - GLN (Global Location Number) - of your company to be sent on documents to this trading partner.
+
+It also provides the setup for trading partner level options as well as defining which incoming and outgoing document types are enabled for the trading partner.
