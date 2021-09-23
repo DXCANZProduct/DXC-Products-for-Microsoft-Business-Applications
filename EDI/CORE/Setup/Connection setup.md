@@ -32,7 +32,12 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ## Connection methods overview
 Various communication methods (FTP, FTPS, SFTP, Azure cloud blob storage and web services) can be used to:
 - Import EDI documents from the VAN or Trading partner and/or
-- Export EDI documents generated within D365to the VAN or Trading partner.
+- Export EDI documents generated within D365 to the VAN or Trading partner.
+
+Default EDI connection is determined by: <br>
+- Outgoing documents: Connection profile setup on [**EDI > Setup > EDI parameters**](EDI%20parameters.md) <br> 
+- Incoming documents: All active connection incoming paths as setup below.
+The default EDI connection can be overridden on Trading partner or Trading partner document level for outgoing and incoming documents.
 
 ### Setting up FTP Sites
 Users can access the form by navigating to **EDI > Setup > Connection setup > FTP sites**
