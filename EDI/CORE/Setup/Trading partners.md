@@ -93,7 +93,7 @@ The Outgoing documents FastTab defines the outgoing EDI document types that have
 **Connection profile**            |	Ability to override the default [EDI connection profile](Connection%20setup.md) on document level. If blank, the trading partner’s Connection profile will be used.
 **Cleanup profile**               |	Ability to override the default [Cleanup profile](Cleanup%20profile.md) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](EDI%20shared%20parameters.md) will be used.
 **Reset status profile**          |	Ability to override the default [Reset status](Reset%20status.md) on document level. If blank, [EDI shared parameters](EDI%20shared%20parameters.md) will be used.
-**Acknowledgement**               |	An Inbound Functional Acknowledgement is required from the trading partner for the outgoing document. Note: Also required to setup the Functional acknowledgement inbound document.
+**Acknowledgement**               |	An Inbound Functional Acknowledgement is required from the trading partner for the outgoing document. Note: Also required to setup the Functional acknowledgement inbound document under Incoming documents.
 **Enabled**                       |	Enable the document for the Trading partner – Yes/No
 
 ## Incoming documents
