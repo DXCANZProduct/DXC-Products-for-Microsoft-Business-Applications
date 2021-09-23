@@ -36,7 +36,7 @@ Various communication methods (FTP, FTPS, SFTP, Azure cloud blob storage and web
 
 Default EDI connection is determined by: <br>
 - Outgoing documents: Connection profile setup on [**EDI > Setup > EDI parameters**](EDI%20parameters.md) <br> 
-- Incoming documents: All active connection incoming paths as setup below.
+- Incoming documents: All active connection incoming paths as setup below. <br>
 The default EDI connection can be overridden on Trading partner or Trading partner document level for outgoing and incoming documents.
 
 ### Setting up FTP Sites
