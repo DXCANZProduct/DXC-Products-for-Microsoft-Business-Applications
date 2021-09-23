@@ -118,7 +118,7 @@ The Incoming documents FastTab defines the incoming EDI document types that have
 **Acknowledgement**               |	Trading partner requires an Outbound Functional Acknowledgement for the incoming document. Note: Also required to setup the Functional acknowledgement outbound document under Outgoing documents.
 **Enabled**                       |	Enable the document for the Trading partner – Yes/No
 
-##### Examples for Search mask:
+#### Examples for Search mask:
 - Example 1: <br>
   - File mask: LCAB10 <br>
   - Search mode:  File name must start with <br>
