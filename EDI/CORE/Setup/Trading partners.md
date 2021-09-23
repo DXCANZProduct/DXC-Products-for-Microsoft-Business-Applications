@@ -137,8 +137,7 @@ Additionally, regular expressions can be used for the file mask <br>
   - The following file names will be matched:
     - **US-001**_1234.json
     - 1234_**US-001**.json
-    - PO347Cust**US-001**-1234.xml
-    - PO6796Cust**US-001**-353433.xml <br>
+    - 1234_**US-001**_5678.xml <br>
 
 - Example 4: <br>
   - File mask: ^PO_.*_CustUS-001.xml <br>
