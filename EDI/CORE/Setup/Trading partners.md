@@ -145,4 +145,4 @@ Additionally, regular expressions can be used for the file mask <br>
     - **PO**347**CustUS-001.xml**
     - **PO**6796**CustUs-001.xml** <br>
 
-Note: ^ - String Anchor ‘Starts with’ and & - String Anchor ‘Ends with’
+  Note: ^ - String Anchor ‘Starts with’ and & - String Anchor ‘Ends with’
