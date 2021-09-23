@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [EDI Communication methods]
-description: [Overview of the EDI communication methods]
+title: [EDI Connection setup]
+description: [Overview of the EDI connection methods]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 21/07/2021
@@ -27,9 +27,9 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Communication methods
+# Connectionn methods
 
-## Communication methods overview
+## Connection methods overview
 Various communication methods (FTP, FTPS, SFTP, Azure cloud blob storage and web services) can be used to:
 - Import EDI documents from the VAN or Trading partner and/or
 - Export EDI documents generated within D365to the VAN or Trading partner.
