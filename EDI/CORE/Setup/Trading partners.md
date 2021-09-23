@@ -133,8 +133,16 @@ The Incoming documents FastTab defines the incoming EDI document types that have
 
 Additionally, regular expressions can be used for the file mask <br>
 - Example 3: <br>
+  - File mask: *US-001 <br>
+  - The following file names will be matched:
+    - **US-001**_1234.json
+    - 1234_**US-001**.json
+    - PO347Cust**US-001**-1234.xml
+    - PO6796Cust**US-001**-353433.xml <br>
+
+- Example 4: <br>
   - File mask: ^PO_.*_CustUS-001.xml <br>
   - The following file names will be matched:
-    - PO347CustUS-001.xml
-    - PO6796CustUs-001.xml <br>
+    - PO347**CustUS-001.xml**
+    - PO6796**CustUs-001.xml** <br>
 Note: ^ - String Anchor ‘Starts with’ and & - String Anchor ‘Ends with’
