@@ -43,7 +43,7 @@ The Trading partner provides a centralized location to manage all trading partne
 -	Select **Create**, then complete the remaining setup for the trading partner.
 
 ## Prerequisites ##
-- **Module setup/Mappings**. This will be assigned to the Trading partner where their value doesn't match to D365 value.
+- **Module setup/Mappings**. This can be assigned to the Trading partner to map Trading partner value to D365 value.
 - [**Document types**](Document%20types.md). Template, setting profile, outbound filenames for each applicable document type will be assigned to the Trading partner.
 
 ## Trading partner list
