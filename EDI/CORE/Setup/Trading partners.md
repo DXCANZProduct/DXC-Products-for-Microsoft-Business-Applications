@@ -142,6 +142,6 @@ Additionally, regular expressions can be used for the file mask <br>
 - Example 4: <br>
   - File mask: ^PO_.*_CustUS-001.xml <br>
   - The following file names will be matched:
-    - PO347**CustUS-001.xml**
-    - PO6796**CustUs-001.xml** <br>
+    - **PO**347**CustUS-001.xml**
+    - **PO**6796**CustUs-001.xml** <br>
 Note: ^ - String Anchor ‘Starts with’ and & - String Anchor ‘Ends with’
