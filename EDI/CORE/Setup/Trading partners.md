@@ -111,14 +111,14 @@ The Incoming documents FastTab defines the incoming EDI document types that have
 **Template**                      |	[Document type template](DocumentTypes/File%20templates.md) that has been previously defined.
 **Setting profile**               |	[Settings profile](DocumentTypes/Setting%20profiles.md) that has been previously defined. Note: View details displays the settings profiles in read only.
 **Validation profile**            |	[Validation profile](DocumentTypes/Validation%20profiles.md) that has been previously defined.
-**Search mask**                   |	A file mask is used to match files in the document type’s defined directories. <br> The setup of the directory (i.e. FTP site) configures whether the file mask is matched at the start of the file name or at the end (For further information, see Site Paths in [Connection setup](Connection%20setup.md)). See examples for Search mask below.
+**Search mask**                   |	A file mask is used to match files in the document type’s defined directories. <br> The setup of the directory (i.e. FTP site) configures whether the file mask is matched at the start of the file name or at the end (For further information, see Site Paths in [Connection setup](Connection%20setup.md)). See [examples for Search mask](#examples-for-search-mask) below.
 **Connection profile**	          | Ability to override the default [EDI connection profile](Connection%20setup.md) on document level. If blank, the trading partner’s Connection profile will be used.
 **Cleanup profile**               |	Ability to override the default [Cleanup profile](Cleanup%20profile.md) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](EDI%20shared%20parameters.md) will be used.
 **Reset status profile**          |	Ability to override the default [Reset status](Reset%20status.md) on document level. If blank, [EDI shared parameters](EDI%20shared%20parameters.md) will be used.
 **Acknowledgement**               |	Trading partner requires an Outbound Functional Acknowledgement for the incoming document. Note: Also required to setup the Functional acknowledgement outbound document under Outgoing documents.
 **Enabled**                       |	Enable the document for the Trading partner – Yes/No
 
-### Examples for Search mask:
+##### Examples for Search mask:
 - Example 1: <br>
   - File mask: LCAB10 <br>
   - Search mode:  File name must start with <br>
