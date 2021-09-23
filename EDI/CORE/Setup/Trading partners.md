@@ -136,7 +136,7 @@ Additionally, regular expressions can be used for the file mask <br>
   - File mask: *US-001 <br>
   - The following file names will be matched:
     - **US-001**_1234.json
-    - 1234_**US-001**.json
+    - 1234_**US-001**
     - 1234_**US-001**_5678.xml <br>
 
 - Example 4: <br>
