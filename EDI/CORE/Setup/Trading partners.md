@@ -74,7 +74,7 @@ The following setup applies to all types of Trading partners and will be discuss
 **Trading partner account**       |	The primary identifier of the trading partner (i.e. Customer account, Warehouse number or Vendor account). This field is not editable after creation.
 **Name**                          |	The trading partner account's name. Not editable in this form. Links to customer, warehouse or vendor account's name.
 **Trading partner GLN**           |	The GLN we know the trading partner as. Note: This field denotes the trading partner GLN. The module will use this field as a match to the customer, warehouse or vendor. 
-**Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> - Outgoing documents: Connection profile setup on [**EDI > Setup > EDI parameters**](EDI%20parameters.md) <br> - Incoming documents: All active connection incoming paths as setup in [**Connections**](Communication%20methods.md).
+**Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> - Outgoing documents: Connection profile setup on [**EDI > Setup > EDI parameters**](EDI%20parameters.md) <br> - Incoming documents: All active connection incoming paths as setup in [**Connections**](Connection%20setup.md).
 **Cleanup profile**               |	Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level. If blank, default Cleanup profile will be used as setup on [**EDI > Setup > EDI shared parameters**](EDI%20shared%20parameters.md)
 
 ## Outgoing documents
@@ -87,15 +87,11 @@ The Outgoing documents FastTab defines the outgoing EDI document types that have
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
 **EDI Document type**             |	[EDI document type](Document%20types.md). Users can add outgoing document types as available for the trading partner type. 
-**Template**                      |	Document type template that has been previously defined
-**Setting profile**               |	Settings profile that has been previously defined
-Note: View details displays the settings profiles in read only
-File name setup	Select the outbound file name mask to use for the document
-Connection profile	Ability to override the default EDI connection profile on document level.
-If blank, the trading partner’s Connection profile will be used
-Cleanup profile	Ability to override the default Cleanup profile on document level.
-If blank, the trading partner’s Cleanup profile will be used
-Reset status profile	Ability to override the default Reset status on document level. If blank, EDI shared parameters will be used.
-Acknowledgement	Require an Inbound Functional Acknowledgement from trading partner for the outgoing document.
-Also required to setup the Functional acknowledgement inbound document
-Enabled	Enabled – Yes/No
+**Template**                      |	[Document type template](DocumentTypes/File%20templates.md) that has been previously defined
+**Setting profile**               |	[Settings profile](DocumentTypes/Setting%20profiles.md) that has been previously defined. Note: View details displays the settings profiles in read only.
+**File name setup**               |	Select the [Outbound file name mask](DocumentTypes/Outbound%20filenames.md) to use for the document
+**Connection profile**            |	Ability to override the default [EDI connection profile](Connection%20setup.md) on document level. If blank, the trading partner’s Connection profile will be used.
+**Cleanup profile**               |	Ability to override the default [Cleanup profile](Cleanup%20profile.md) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](EDI%20shared%20parameters.md) will be used.
+**Reset status profile**          |	Ability to override the default [Reset status](Reset%20status.md) on document level. If blank, [EDI shared parameters](EDI%20shared%20parameters.md) will be used.
+**Acknowledgement**               |	An Inbound Functional Acknowledgement is required from the trading partner for the outgoing document. Note: Also required to setup the Functional acknowledgement inbound document.
+**Enabled**                       |	Enable the document – Yes/No
