@@ -51,9 +51,9 @@ Below modules are determined by licensing and enabled features.
   - [Freight forwarder landed cost setup](../../FREIGHT%20FORWARDER/SETUP/Freight%20forwarder%20setup.md)
 - **Document types**: Template, setting profile, outbound filenames for each applicable document type will be assigned to the Trading partner.
   - [Customer document types](../../CUSTOMER/SETUP/Document%20types.md)
-  - [Vendor document types]
-  - [3PL document types]
-  - [Freight forwarder landed document types]
+  - [Vendor document types](../../VENDOR/SETUP/Document%20types.md)
+  - [3PL document types](../../3PL/SETUP/Document%20types.md)
+  - [Freight forwarder landed document types](../../FREIGHT%20FORWARDER/SETUP/Document%20types.md)
 
 ## Trading partner list
 
