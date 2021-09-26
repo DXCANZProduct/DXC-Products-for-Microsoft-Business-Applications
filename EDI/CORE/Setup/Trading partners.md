@@ -56,7 +56,7 @@ The Trading partner provides a centralized location to manage all trading partne
 -	Enter the **Trading partner GLN**. This value will be used in the Import-to-staging step to create the incoming staging against the correct Trading partner GLN and should thus be provided in the Inbound file. The Trading partner GLN is required to be unique by Type.
 -	Select **Create**, then complete the remaining setup for the trading partner.
 
-## Trading partner list
+### Trading partner list
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
@@ -70,7 +70,7 @@ The Trading partner provides a centralized location to manage all trading partne
 > Note: Selecting the trading partner GLN will display the detailed form relating to the trading partner
 > It also provides the setup for trading partner level options as well as defining which incoming and outgoing document types are enabled for the trading partner.
 
-## Trading partner details
+### Trading partner details
 
 Users can access the form by navigating to **EDI > Setup > Trading partners**. <br>
 Select the **Trading partner GLN** hyperlink or the **Details** button to update trading partner's details. <br>
@@ -87,7 +87,7 @@ The following setup applies to all types of Trading partners and will be discuss
 **Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> - Outgoing documents: Connection profile setup on [**EDI > Setup > EDI parameters**](EDI%20parameters.md) <br> - Incoming documents: All active connection incoming paths as setup in [**Connections**](Connection%20setup.md).
 **Cleanup profile**               |	Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level. If blank, default Cleanup profile will be used as setup on [**EDI > Setup > EDI shared parameters**](EDI%20shared%20parameters.md)
 
-## Outgoing documents
+### Outgoing documents
 
 Users can access the form by navigating to **EDI > Setup > Trading partners**. <br>
 Select the **Trading partner GLN** hyperlink or the **Details** button to update trading partner's details. <br>
@@ -106,7 +106,7 @@ The Outgoing documents FastTab defines the outgoing EDI document types that have
 **Acknowledgement**               |	An Inbound Functional Acknowledgement is required from the trading partner for the outgoing document. Note: Also required to setup the Functional acknowledgement inbound document under Incoming documents.
 **Enabled**                       |	Enable the document for the Trading partner – Yes/No
 
-## Incoming documents
+### Incoming documents
 
 Users can access the form by navigating to **EDI > Setup > Trading partners**. <br>
 Select the **Trading partner GLN** hyperlink or the **Details** button to update trading partner's details. <br>
