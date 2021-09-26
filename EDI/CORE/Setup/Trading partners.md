@@ -27,20 +27,10 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Setup Trading partners
-
-Users can access the form by navigating to **EDI > Setup > Trading partners**.
+# Trading partners
 
 EDI works on the basis that an external entity (trading partner) wants to send or receive information from us. To this end, the module is built to link the documents and their associated settings to those entities (trading partners). <br>
 A trading partner can be created based on an existing D365 entity like a warehouse, vendor or a customer. Depending on the various modules installed, different trading partner types will be available for setup.
-
-The Trading partner provides a centralized location to manage all trading partners.
-- To create a new record, select **New**
-- Select the trading partner **Type**. Available options depends on licensing and enabled features.
-- Select the Trading partner's **Company**
--	Select the **Account number**. Only account numbers for the selected company that are not assigned for the specified trading partner type are available.
--	Enter the **Trading partner GLN**. This value will be used in the Import-to-staging step to create the incoming staging against the correct Trading partner GLN and should thus be provided in the Inbound file. The Trading partner GLN is required to be unique by Type.
--	Select **Create**, then complete the remaining setup for the trading partner.
 
 ## Prerequisites ##
 Below modules are determined by licensing and enabled features.
@@ -51,11 +41,22 @@ Below modules are determined by licensing and enabled features.
   - [Freight forwarder landed cost setup](../../FREIGHT%20FORWARDER/SETUP/Freight%20forwarder%20setup.md)
 - **Document types**: Template, setting profile, outbound filenames for each applicable document type will be assigned to the Trading partner.
   - [Customer document types](../../CUSTOMER/SETUP/Document%20types.md)
-  - [Vendor document types]
-  - [3PL document types]
-  - [Freight forwarder landed document types]
+  - [Vendor document types](../../VENDOR/SETUP/Document%20types.md)
+  - [3PL document types](../../3PL/SETUP/Document%20types.md)
+  - [Freight forwarder landed document types](../../FREIGHT%20FORWARDER/SETUP/Document%20types.md)
 
-## Trading partner list
+## Setup Trading partners
+Users can access the form by navigating to **EDI > Setup > Trading partners**.
+
+The Trading partner provides a centralized location to manage all trading partners.
+- To create a new record, select **New**
+- Select the trading partner **Type**. Available options depends on licensing and enabled features.
+- Select the Trading partner's **Company**
+-	Select the **Account number**. Only account numbers for the selected company that are not assigned for the specified trading partner type are available.
+-	Enter the **Trading partner GLN**. This value will be used in the Import-to-staging step to create the incoming staging against the correct Trading partner GLN and should thus be provided in the Inbound file. The Trading partner GLN is required to be unique by Type.
+-	Select **Create**, then complete the remaining setup for the trading partner.
+
+### Trading partner list
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
@@ -69,7 +70,7 @@ Below modules are determined by licensing and enabled features.
 > Note: Selecting the trading partner GLN will display the detailed form relating to the trading partner
 > It also provides the setup for trading partner level options as well as defining which incoming and outgoing document types are enabled for the trading partner.
 
-## Trading partner details
+### Trading partner details
 
 Users can access the form by navigating to **EDI > Setup > Trading partners**. <br>
 Select the **Trading partner GLN** hyperlink or the **Details** button to update trading partner's details. <br>
@@ -86,7 +87,7 @@ The following setup applies to all types of Trading partners and will be discuss
 **Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> - Outgoing documents: Connection profile setup on [**EDI > Setup > EDI parameters**](EDI%20parameters.md) <br> - Incoming documents: All active connection incoming paths as setup in [**Connections**](Connection%20setup.md).
 **Cleanup profile**               |	Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level. If blank, default Cleanup profile will be used as setup on [**EDI > Setup > EDI shared parameters**](EDI%20shared%20parameters.md)
 
-## Outgoing documents
+### Outgoing documents
 
 Users can access the form by navigating to **EDI > Setup > Trading partners**. <br>
 Select the **Trading partner GLN** hyperlink or the **Details** button to update trading partner's details. <br>
@@ -105,7 +106,7 @@ The Outgoing documents FastTab defines the outgoing EDI document types that have
 **Acknowledgement**               |	An Inbound Functional Acknowledgement is required from the trading partner for the outgoing document. Note: Also required to setup the Functional acknowledgement inbound document under Incoming documents.
 **Enabled**                       |	Enable the document for the Trading partner – Yes/No
 
-## Incoming documents
+### Incoming documents
 
 Users can access the form by navigating to **EDI > Setup > Trading partners**. <br>
 Select the **Trading partner GLN** hyperlink or the **Details** button to update trading partner's details. <br>
