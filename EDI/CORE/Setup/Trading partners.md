@@ -43,9 +43,17 @@ The Trading partner provides a centralized location to manage all trading partne
 -	Select **Create**, then complete the remaining setup for the trading partner.
 
 ## Prerequisites ##
-- **Module setup/Mappings**. This can be assigned to the Trading partner to map Trading partner value to D365 value.
+Below modules are determined by licensing and enabled features.
+- **Module setup/Mappings**: This can be assigned to the Trading partner to map Trading partner value to D365 value. 
   - [Customer setup](../../CUSTOMER/SETUP/Customer%20setup.md)
-- [**Document types**](Document%20types.md). Template, setting profile, outbound filenames for each applicable document type will be assigned to the Trading partner.
+  - [Vendor setup]
+  - [3PL setup]
+  - [Freight forwarder landed cost setup]
+- **Document types**: Template, setting profile, outbound filenames for each applicable document type will be assigned to the Trading partner.
+  - [Customer document types](../../CUSTOMER/SETUP/Document%20types.md)
+  - [Vendor document types]
+  - [3PL document types]
+  - [Freight forwarder landed document types]
 
 ## Trading partner list
 
