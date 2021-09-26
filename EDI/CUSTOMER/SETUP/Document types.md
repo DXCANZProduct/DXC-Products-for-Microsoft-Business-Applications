@@ -30,4 +30,4 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Customer - Document types
 
 ## Prerequisites:
-- [Document type setup](../../EDI/CORE/Setup/Document%20types.md)
+- [Document type setup](../../CORE/Setup/Document%20types.md)
