@@ -43,8 +43,17 @@ The Trading partner provides a centralized location to manage all trading partne
 -	Select **Create**, then complete the remaining setup for the trading partner.
 
 ## Prerequisites ##
-- **Module setup/Mappings**. This will be assigned to the Trading partner where their value doesn't match to D365 value.
-- [**Document types**](Document%20types.md). Template, setting profile, outbound filenames for each applicable document type will be assigned to the Trading partner.
+Below modules are determined by licensing and enabled features.
+- **Module setup/Mappings**: This can be assigned to the Trading partner to map Trading partner value to D365 value. 
+  - [Customer setup](../../CUSTOMER/SETUP/Customer%20setup.md)
+  - [Vendor setup]
+  - [3PL setup]
+  - [Freight forwarder landed cost setup]
+- **Document types**: Template, setting profile, outbound filenames for each applicable document type will be assigned to the Trading partner.
+  - [Customer document types](../../CUSTOMER/SETUP/Document%20types.md)
+  - [Vendor document types]
+  - [3PL document types]
+  - [Freight forwarder landed document types]
 
 ## Trading partner list
 
@@ -74,7 +83,7 @@ The following setup applies to all types of Trading partners and will be discuss
 **Trading partner account**       |	The primary identifier of the trading partner (i.e. Customer account, Warehouse number or Vendor account). This field is not editable after creation.
 **Name**                          |	The trading partner account's name. Not editable in this form. Links to customer, warehouse or vendor account's name.
 **Trading partner GLN**           |	The GLN we know the trading partner as. Note: This field denotes the trading partner GLN. The module will use this field as a match to the customer, warehouse or vendor. 
-**Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> - Outgoing documents: Connection profile setup on [**EDI > Setup > EDI parameters**](EDI%20parameters.md) <br> - Incoming documents: All active connection incoming paths as setup in [**Connections**](Communication%20methods.md).
+**Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> - Outgoing documents: Connection profile setup on [**EDI > Setup > EDI parameters**](EDI%20parameters.md) <br> - Incoming documents: All active connection incoming paths as setup in [**Connections**](Connection%20setup.md).
 **Cleanup profile**               |	Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level. If blank, default Cleanup profile will be used as setup on [**EDI > Setup > EDI shared parameters**](EDI%20shared%20parameters.md)
 
 ## Outgoing documents
@@ -82,20 +91,67 @@ The following setup applies to all types of Trading partners and will be discuss
 Users can access the form by navigating to **EDI > Setup > Trading partners**. <br>
 Select the **Trading partner GLN** hyperlink or the **Details** button to update trading partner's details. <br>
 
-The Outgoing documents FastTab defines the outgoing EDI document types that have been configured and enabled for the trading partner. It brings the document template and mappings together with the settings profile to enable the document for the trading partner.
+The Outgoing documents FastTab defines the outgoing EDI document types that have been configured and enabled for the trading partner. It brings the document template, mappings and filename setup together with the settings profile to enable the document for the trading partner.
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
-**EDI Document type**             |	EDI document type. Users can add outgoing documents as available for the trading partner type on 
-Template	Document type template that has been previously defined
-Setting profile	Settings profile that has been previously defined
-Note: View details displays the settings profiles in read only
-File name setup	Select the outbound file name mask to use for the document
-Connection profile	Ability to override the default EDI connection profile on document level.
-If blank, the trading partner’s Connection profile will be used
-Cleanup profile	Ability to override the default Cleanup profile on document level.
-If blank, the trading partner’s Cleanup profile will be used
-Reset status profile	Ability to override the default Reset status on document level. If blank, EDI shared parameters will be used.
-Acknowledgement	Require an Inbound Functional Acknowledgement from trading partner for the outgoing document.
-Also required to setup the Functional acknowledgement inbound document
-Enabled	Enabled – Yes/No
+**EDI Document type**             |	[EDI document type](Document%20types.md). Users can add outgoing document types as available for the trading partner type. 
+**Template**                      |	[Document type template](DocumentTypes/File%20templates.md) that has been previously defined.
+**Setting profile**               |	[Settings profile](DocumentTypes/Setting%20profiles.md) that has been previously defined. Note: View details displays the settings profiles in read only.
+**File name setup**               |	Select the [Outbound file name mask](DocumentTypes/Outbound%20filenames.md) to use for the document. Note: Options displayed depends if the selected template supports multiple headers. If assigned template only supports single headers, only Outbound files with **Single file per document** set to _Yes_ will be available.
+**Connection profile**            |	Ability to override the default [EDI connection profile](Connection%20setup.md) on document level. If blank, the trading partner’s Connection profile will be used.
+**Cleanup profile**               |	Ability to override the default [Cleanup profile](Cleanup%20profile.md) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](EDI%20shared%20parameters.md) will be used.
+**Reset status profile**          |	Ability to override the default [Reset status](Reset%20status.md) on document level. If blank, [EDI shared parameters](EDI%20shared%20parameters.md) will be used.
+**Acknowledgement**               |	An Inbound Functional Acknowledgement is required from the trading partner for the outgoing document. Note: Also required to setup the Functional acknowledgement inbound document under Incoming documents.
+**Enabled**                       |	Enable the document for the Trading partner – Yes/No
+
+## Incoming documents
+
+Users can access the form by navigating to **EDI > Setup > Trading partners**. <br>
+Select the **Trading partner GLN** hyperlink or the **Details** button to update trading partner's details. <br>
+
+The Incoming documents FastTab defines the incoming EDI document types that have been configured and enabled for the trading partner. It brings the document template, mappings, validation profile and setting profiles together along with a file mask for importing to enable the document for the trading partner.
+
+**Up** and **Down** buttons set the sequence of processing in batch. This applies where the same incoming document type is setup against the Trading partner with different Search mask.
+
+**Field** 	                      | **Description**
+:-------------------------------- |:-------------------------------------
+**EDI Document type**             |	[EDI document type](Document%20types.md). Users can add incoming document types as available for the trading partner type. 
+**Template**                      |	[Document type template](DocumentTypes/File%20templates.md) that has been previously defined.
+**Setting profile**               |	[Settings profile](DocumentTypes/Setting%20profiles.md) that has been previously defined. Note: View details displays the settings profiles in read only.
+**Validation profile**            |	[Validation profile](DocumentTypes/Validation%20profiles.md) that has been previously defined.
+**Search mask**                   |	A file mask is used to match files in the document type’s defined directories. <br> The setup of the directory (i.e. FTP site) configures whether the file mask is matched at the start of the file name or at the end (For further information, see Site Paths in [Connection setup](Connection%20setup.md)). See [examples for Search mask](#examples-for-search-mask) below.
+**Connection profile**	          | Ability to override the default [EDI connection profile](Connection%20setup.md) on document level. If blank, the trading partner’s Connection profile will be used.
+**Cleanup profile**               |	Ability to override the default [Cleanup profile](Cleanup%20profile.md) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](EDI%20shared%20parameters.md) will be used.
+**Reset status profile**          |	Ability to override the default [Reset status](Reset%20status.md) on document level. If blank, [EDI shared parameters](EDI%20shared%20parameters.md) will be used.
+**Acknowledgement**               |	Trading partner requires an Outbound Functional Acknowledgement for the incoming document. Note: Also required to setup the Functional acknowledgement outbound document under Outgoing documents.
+**Enabled**                       |	Enable the document for the Trading partner – Yes/No
+
+#### Examples for Search mask:
+- Example 1: <br>
+  - File mask: LCAB10 <br>
+  - Search mode:  File name must start with <br>
+  - Will match file: **LCAB10**20170623.txt <br>
+  - Won’t match file: ACAB1020170623.txt <br>
+  
+- Example 2: <br>
+  - File mask: SalesInvoice.xml <br>
+  - Search mode:  File name must end with <br>
+  - Will match file: 20170623_**SalesInvoice.xml** <br>
+  - Won’t match file: 20170623_SalesInvoice.txt <br>
+
+Additionally, regular expressions can be used for the file mask <br>
+- Example 3: <br>
+  - File mask: *US-001 <br>
+  - The following file names will be matched:
+    - **US-001**_1234.json
+    - 1234_**US-001**
+    - 1234_**US-001**_5678.xml <br>
+
+- Example 4: <br>
+  - File mask: ^PO_.*_CustUS-001.xml <br>
+  - The following file names will be matched:
+    - **PO**347**CustUS-001.xml**
+    - **PO**6796**CustUs-001.xml** <br>
+
+  Note: ^ - String Anchor ‘Starts with’ and & - String Anchor ‘Ends with’
