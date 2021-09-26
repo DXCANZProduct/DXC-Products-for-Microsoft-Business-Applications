@@ -27,20 +27,10 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Setup Trading partners
-
-Users can access the form by navigating to **EDI > Setup > Trading partners**.
+# Trading partners
 
 EDI works on the basis that an external entity (trading partner) wants to send or receive information from us. To this end, the module is built to link the documents and their associated settings to those entities (trading partners). <br>
 A trading partner can be created based on an existing D365 entity like a warehouse, vendor or a customer. Depending on the various modules installed, different trading partner types will be available for setup.
-
-The Trading partner provides a centralized location to manage all trading partners.
-- To create a new record, select **New**
-- Select the trading partner **Type**. Available options depends on licensing and enabled features.
-- Select the Trading partner's **Company**
--	Select the **Account number**. Only account numbers for the selected company that are not assigned for the specified trading partner type are available.
--	Enter the **Trading partner GLN**. This value will be used in the Import-to-staging step to create the incoming staging against the correct Trading partner GLN and should thus be provided in the Inbound file. The Trading partner GLN is required to be unique by Type.
--	Select **Create**, then complete the remaining setup for the trading partner.
 
 ## Prerequisites ##
 Below modules are determined by licensing and enabled features.
@@ -54,6 +44,17 @@ Below modules are determined by licensing and enabled features.
   - [Vendor document types](../../VENDOR/SETUP/Document%20types.md)
   - [3PL document types](../../3PL/SETUP/Document%20types.md)
   - [Freight forwarder landed document types](../../FREIGHT%20FORWARDER/SETUP/Document%20types.md)
+
+## Setup Trading partners
+Users can access the form by navigating to **EDI > Setup > Trading partners**.
+
+The Trading partner provides a centralized location to manage all trading partners.
+- To create a new record, select **New**
+- Select the trading partner **Type**. Available options depends on licensing and enabled features.
+- Select the Trading partner's **Company**
+-	Select the **Account number**. Only account numbers for the selected company that are not assigned for the specified trading partner type are available.
+-	Enter the **Trading partner GLN**. This value will be used in the Import-to-staging step to create the incoming staging against the correct Trading partner GLN and should thus be provided in the Inbound file. The Trading partner GLN is required to be unique by Type.
+-	Select **Create**, then complete the remaining setup for the trading partner.
 
 ## Trading partner list
 
