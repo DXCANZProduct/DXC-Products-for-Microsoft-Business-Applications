@@ -31,16 +31,16 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 Users can access the form by navigating to **EDI > EDI Document maintenance**.
 
-The EDI document maintenance workspace provides a quick and easy way to view all errors relating to the processing of:
-•	Inbound file imports – Inbound Files that could not create a staging table record.
-•	Document errors – Staging table records that could not create the target D365 transaction.
+The EDI document maintenance workspace provides a quick and easy way to view all errors relating to the processing of: <br>
+- Inbound file imports – Inbound Files that could not create a staging table record.
+- Document errors – Staging table records that could not create the target D365 transaction.
 
 In addition, from within the workspace it is possible to view and even process information relating to the selected records.
 
 Each module also displays the outstanding inbound functional acknowledgements. <br> The staging record/s that still requires the inbound functional acknowledgement is determined by:
-•	Acknowledgement is set to Yes on the Trading partner’s outgoing documents
-•	The outbound document’s status = Processed, i.e. the outbound document has been sent to the Trading partner.
-•	An inbound functional acknowledgement referring to the outgoing document’s Group control number hasn’t been received.
+- Acknowledgement is set to Yes on the Trading partner’s outgoing documents
+- The outbound document’s status = Processed, i.e. the outbound document has been sent to the Trading partner.
+-	An inbound functional acknowledgement referring to the outgoing document’s Group control number hasn’t been received.
 
 **Option** 	                                | **Description**
 :--------------------------------           |:------------------------------------- 
