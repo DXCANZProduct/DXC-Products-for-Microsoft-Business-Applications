@@ -75,8 +75,8 @@ EDI > Setup > Document types (Template, Validation, Outbound file names and EDI 
 6		  | EDI template JSON			| Create new **JSON** template and setup
 7		  | EDI template JSON collection	| Create new **JSON Collection** template and setup
 8		  | EDI template code transformation	| Create new **Code transformation** template and setup
-9		  | EDI Validation profile		| Create new **Validation profiles** for all applicable document types	| EDI Validation profile
-10		| EDI Validation profile line		| Create new **Validation profile lines** for all applicable document types
+9		  | EDI Validation profile		| Create new **Validation profiles** for all applicable document types	
+10		| EDI Validation profile line		| Create new **Validation profile lines** for all applicable document types | EDI Validation profile
 11		| EDI Outbound file names		| Create new outbound file names
 12		| EDI Field metadata			| Update document type's field metadata
 
