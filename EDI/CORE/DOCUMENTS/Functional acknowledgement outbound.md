@@ -38,4 +38,4 @@ When a Trading partner requires a Functional Acknowledgement for sent EDI files,
 
 **Field** 	                                | **Description**                     | **Options/example**
 :--------------------------------           |:------------------------------------|:------------------------------------
-**Document type mapping**                   | Assign applicable document type mapping to setting	| Mappings setup at [**EDI > Setup > Document type mapping**](/Document%20type%20mapping.md)
+**Document type mapping**                   | Assign applicable document type mapping to setting	| Mappings setup at [**EDI > Setup > Document type mapping**](Document%20type%20mapping.md)
