@@ -32,6 +32,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 The following is a summary of data entities available for the core EDI module:
 
 ## Parameters
+EDI > Setup
 
 **Order**         | **Entity**
 :-----------------|:------------------------------------
@@ -39,51 +40,57 @@ The following is a summary of data entities available for the core EDI module:
 2                 | EDI Shared Parameters
 
 ## Connections
+EDI > Setup > Connection setup
 
 **Order**         | **Entity**
 :-----------------|:------------------------------------
 1		  | EDI FTP sites
 
 ## Core setup
+EDI > Setup
 
-**Order**         | **Entity**
-:-----------------|:------------------------------------
-1		  | UOM mapping
-2	          | UOM mapping lines
-3		  | Cleanup profile
-4		  | Cleanup profile line
-5		  | Functional acknowledgement document type mapping
-6		  | Functional acknowledgement document type mapping lines
-7		  | Reset status profile
+**Order**         | **Entity**				| **Description**							| **Dependency**
+:-----------------|:------------------------------------|:-------------------------						|:-------------------------
+1		  | UOM mapping				| Create new UOM mapping group (EDI > Setup > UOM mapping)
+2	          | UOM mapping lines			| Create new UOM mapping lines (EDI > Setup > UOM mapping)		| UOM mapping	
+3		  | Cleanup profile			| Create new Cleanup profile (EDI > Setup > Cleanup profile)
+4		  | Cleanup profile line		| Create new Cleanup profile lines (EDI > Setup > Cleanup profile)	| Cleanup profile
+5		  | Functional acknowledgement document type mapping | Create new Document type mapping (EDI > Setup > Document type mapping)
+6		  | Functional acknowledgement document type mapping lines | Create new Document type mapping lines (EDI > Setup > Document type mapping)	| Functional acknowledgement document type mapping
+7		  | Reset status profile		| Create new Reset status profile recurrence (EDI > Setup > Reset status profile)
 
 ## Core document setting profiles
+EDI > Setup > Document types (Setting profiles for EDI core documents)
 
-**Order**         | **Entity**
-:-----------------|:------------------------------------
-1		  | EDI settings - Functional acknowledgement inbound
+**Order**         | **Entity**						| **Description**
+:-----------------|:------------------------------------		|:-------------------------
+1		  | EDI settings - Functional acknowledgement inbound	| Create new
 2		  | EDI settings - Functional acknowledgement outbound
 
 ## Document types
+EDI > Setup > Document types (Template, Validation, Outbound file names and EDI Field metadata)
 
-**Order**         | **Entity**				
-:-----------------|:------------------------------------
-1		  | EDI Template file
-2		  | EDI Template file section
-3		  | EDI Template file line section
-4		  | EDI Template XSLT
-5		  | EDI template XSLT collection
-6		  | EDI template JSON
-7		  | EDI template JSON collection
-8		  | EDI template code transformation
-9		  | EDI Validation profile
-10		  | EDI Validation profile line
-11		  | EDI Outbound file names
-12		  | EDI Field metadata
+**Order**         | **Entity**				| **Description**							| **Dependency**
+:-----------------|:------------------------------------|:-------------------------						|:-------------------------
+1		  | EDI Template file			| Create new **Text** template and setup
+2		  | EDI Template file section		| Section details for the **Text** template				| EDI Template file
+3		  | EDI Template file line section	| Line details for each section for the **EDIFACT** template		| EDI Template file section
+4		  | EDI Template XSLT			| Create new **XSLT Transformation** template and setup
+5		  | EDI template XSLT collection	| Create new **XSLT Collection** template and setup
+6		  | EDI template JSON			| Create new **JSON** template and setup
+7		  | EDI template JSON collection	| Create new **JSON Collection** template and setup
+8		  | EDI template code transformation	| Create new **Code transformation** template and setup
+9		  | EDI Validation profile		| Create new **Validation profiles** for all applicable document types	| EDI Validation profile
+10		  | EDI Validation profile line		| Create new **Validation profile lines** for all applicable document types
+11		  | EDI Outbound file names		| Create new outbound file names
+12		  | EDI Field metadata			| Update document type's field metadata
 
 
 The following entities are applicable to all EDI - Standard format module:
-**Section** 	                  | **Order**         | **Entity**		 	    | **Description**
-:-------------------------------- |:------------------|:------------------------------------
-**Document type**		  | 1	                               | EDI Template EDIFACT         | Create new **EDIFACT** template and setup
-	2	                               | EDI Template EDIFACT section | Section details for the **EDIFACT** template
-3	                               | EDI Template EDIFACT element | Element details for each section for the **EDIFACT** template
+EDI > Setup > Document types (Template)
+
+ **Order**        | **Entity**		 	    | **Description**								| **Dependency**
+:-----------------|:--------------------------------|:-------------------------							|:-------------------------
+1	          | EDI Template EDIFACT            | Create new **EDIFACT** template and setup					|
+2	          | EDI Template EDIFACT section    | Section details for the **EDIFACT** template				| EDI Template EDIFACT
+3	          | EDI Template EDIFACT element    | Element details for each section for the **EDIFACT** template		| EDI Template EDIFACT section
