@@ -49,15 +49,15 @@ EDI > Setup > Connection setup
 ## Core setup
 EDI > Setup
 
-**Order**         | **Entity**				| **Description**							| **Dependency**
-:-----------------|:------------------------------------|:-------------------------						|:-------------------------
-1		  | UOM mapping				| Create new UOM mapping group (EDI > Setup > UOM mapping)
-2	          | UOM mapping lines			| Create new UOM mapping lines (EDI > Setup > UOM mapping)		| UOM mapping	
-3		  | Cleanup profile			| Create new Cleanup profile (EDI > Setup > Cleanup profile)
-4		  | Cleanup profile line		| Create new Cleanup profile lines (EDI > Setup > Cleanup profile)	| Cleanup profile
-5		  | Functional acknowledgement document type mapping | Create new Document type mapping (EDI > Setup > Document type mapping)
-6		  | Functional acknowledgement document type mapping lines | Create new Document type mapping lines (EDI > Setup > Document type mapping)	| Functional acknowledgement document type mapping
-7		  | Reset status profile		| Create new Reset status profile recurrence (EDI > Setup > Reset status profile)
+**Order**         | **Entity**				                  | **Description**							                                  | **Dependency**
+:-----------------|:------------------------------------|:--------------------------------------------------------------|:-------------------------
+1		              | UOM mapping				                  | Create new UOM mapping group <br> EDI > Setup > UOM mapping   |
+2	                | UOM mapping lines			              | Create new UOM mapping lines <br> EDI > Setup > UOM mapping  	| UOM mapping	
+3		              | Cleanup profile			                | Create new Cleanup profile <br> EDI > Setup > Cleanup profile |
+4		              | Cleanup profile line		            | Create new Cleanup profile lines <br> EDI > Setup > Cleanup profile | Cleanup profile
+5		              | Functional acknowledgement document type mapping | Create new Document type mapping <br> EDI > Setup > Document type mapping  | 
+6		              | Functional acknowledgement document type mapping lines | Create new Document type mapping lines <br> EDI > Setup > Document type mapping)	| Functional acknowledgement document type mapping
+7		              | Reset status profile            		| Create new Reset status profile recurrence <br> EDI > Setup > Reset status profile
 
 ## Core document setting profiles
 EDI > Setup > Document types (Setting profiles for EDI core documents)
