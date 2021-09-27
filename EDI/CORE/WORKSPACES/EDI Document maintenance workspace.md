@@ -33,7 +33,7 @@ Users can access the form by navigating to **EDI > EDI Document maintenance**.
 
 The EDI document maintenance workspace provides a quick and easy way to view all errors relating to the processing of: <br>
 - Inbound file imports – Inbound Files that could not create a staging table record.
-- Document errors – Staging table records that could not create the target D365 transaction.
+- Document errors – Staging table records that could not create/update the target D365 transaction.
 
 In addition, from within the workspace it is possible to view and even process information relating to the selected records.
 
