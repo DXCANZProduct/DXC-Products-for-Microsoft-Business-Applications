@@ -29,4 +29,35 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Data entities
 
+The following is a summary of data entities available for the core EDI module:
+
+**Section** 	                    | **Order**         | **Entity**
+:-------------------------------- |:------------------|:------------------------------------
+**Parameters**                    |	1                 |	EDI parameters
+-                                 |	2                 |	EDI Shared Parameters
+**Connections**                   | 3	                | EDI FTP sites
+**Setup**                         |	4	                | UOM mapping
+-                                 |	5                 |	UOM mapping lines
+	6	Cleanup profile
+	7	Cleanup profile line
+	8	Functional acknowledgement document type mapping
+	9	Functional acknowledgement document type mapping lines
+	10	Reset status profile
+Document setting profiles	11	EDI settings - Functional acknowledgement inbound
+	12	EDI settings - Functional acknowledgement outbound
+
+The following entities are applicable to all EDI modules:
+Section	Order	Entity
+Document type	1	EDI Template file
+	2	EDI Template file section
+	3	EDI Template file line section
+	4	EDI Template XSLT
+	5	EDI template XSLT collection
+	6	EDI template JSON
+	7	EDI template JSON collection
+	8	EDI template code transformation
+	9	EDI Validation profile
+	10	EDI Validation profile line
+	11	EDI Outbound file names
+	12	EDI Field metadata
 
