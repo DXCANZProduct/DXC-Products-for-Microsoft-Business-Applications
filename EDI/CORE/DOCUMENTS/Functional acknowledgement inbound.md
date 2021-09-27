@@ -28,3 +28,47 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Functional acknowledgement inbound
+
+When the Company requires the Trading partner to send a Functional Acknowledgement for outbound EDI files, the following is required:
+1.	Create document [Template](../Setup/DocumentTypes/File%20templates.md) Functional acknowledgement inbound.
+1.	Add the Functional acknowledgement inbound document type to [Trading Partner’s](../Setup/Trading%20partners.md) Incoming documents and Enable.
+1.	For each [Trading partner's](../Setup/Trading%20partners.md) outgoing documents that requires to receive a Functional acknowledgement, set **Acknowledgement** to _Yes_.
+
+## Setting profiles
+
+Users can access the form by navigating to **EDI > Setup > Document types** and filtering/selecting the **Functional acknowledgement inbound** document. <br>
+See [Setting profiles](../Setup/DocumentTypes/Setting%20profiles.md) for more details on how to create a Setting profile.
+
+**Field** 	                                | **Description**                     | **Options/example**
+:--------------------------------           |:------------------------------------|:------------------------------------
+**Document type mapping**                   | Assign applicable document type mapping to setting	| Mappings setup at [**EDI > Setup > Document type mapping**](../Setup/Document%20type%20mapping.md)
+
+## View Staging table records
+
+### Functional acknowledgement inbound staging records
+
+Users can access the form by navigating to **EDI > Documents > Functional acknowledgement inbound**. <br>
+Use this form to review staging records and optionally manually process the staging record.
+
+#### List page
+
+**Field** 	                      | **Description**
+:-------------------------------- |:-------------------------------------
+**EDI number**                    |	EDI Staging table record id.
+**Company account**               |	Company account for the staging record.
+**Template Id**                   |	Document type template used to process the document.
+**Staging to target status**      |	The current status of the staging. <br> Options include: <br> •	**Not Started**: The staging record has been created but not processed. <br> •	**Error**: The staging record has been processed but there are errors with the record that need to be reviewed. <br> •	**Completed**: The staging record has been successfully processed.
+**Trading partner account**       |	Trading partner account for the staging record.
+**Trading partner GLN**           |	The trading partners’ global location number is shown here.
+**Company GLN**                   |	The company’s global location number is shown here.
+**Group control number**          |	Company’s Group control number being acknowledged.
+**Created date and time**         |	The date and time the staging record was created
+**Sent**                          |	Indicates if an Outbound Functional Acknowledgement has been sent.
+
+#### Buttons
+
+#### Header fields
+
+#### Line fields
+
+The Functional Acknowledgement only has header fields. Header details are repeated.
