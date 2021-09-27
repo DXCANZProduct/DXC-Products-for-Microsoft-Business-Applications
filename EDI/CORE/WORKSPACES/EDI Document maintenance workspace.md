@@ -48,11 +48,10 @@ Each module also displays the outstanding inbound functional acknowledgements. <
 **Reset status**                            |	Reset the staging transfer status to enable reprocessing document errors.
 **Show log**                                |	If there are Errors within the staging table, it is possible to review them at any time using this button.
 **Version log**                             |	View all defined errors for the record. When a document’s status reset and reprocessed a new log version is created. If the log is not defined, more information can be viewed via Execution log.
-**Staging to target status**                |	The current status of the Inbound or Outbound staging record. <br> Outbound options include:- <br>
-•	Not Started – The record has been created but no file has yet been generated.
-•	Error – The record has been processed but no file has been created.  There are errors with the record that need to be reviewed.
-•	Completed – The record file has been created and added to the outbound file queue. <br>
-Inbound options include:- <br>
-•	Not Started – the order has been successfully processed from the inbound file to the staging table but not processed.
-•	Error – The EDI order has been processed from the staging table, but no Sales order has yet been created.  There are errors with the record that need to be reviewed.
-•	Completed – The EDI order has been converted to an Arrival journal.
+**Staging to target status**                |	The current status of the Inbound or Outbound staging record. <br> Outbound options include:- <br> 
+- **Not Started** – The record has been created but no outbound file has yet been generated.
+- **Error** – The record has been processed but no file has been created.  There are errors with the record that needs to be reviewed.
+- **Completed** – The record file has been created and added to the outbound file queue. <br> Inbound options include:- <br>
+- **Not Started** – the inbound file has successfully created the staging record, but the staging record hasn't been processed to D365 target.
+- **Error** – The inbound staging record has been processed, but no D365 target has yet been created/updated.  There are errors with the record that need to be reviewed.
+- **Completed** – The inbound staging record has been processed and D365 target created/updated..
