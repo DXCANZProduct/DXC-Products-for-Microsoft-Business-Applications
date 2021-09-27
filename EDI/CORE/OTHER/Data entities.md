@@ -34,9 +34,10 @@ The following is a summary of data entities available for the core EDI module:
 ## Connections
 EDI > Setup > Connection setup
 
-**Order**         | **Entity**
-:-----------------|:------------------------------------
-1		  | EDI FTP sites
+**Order**         | **Entity**              | **Description**	
+:-----|:------------------------------------|:-------------------
+1		  | EDI FTP sites                       | FTP and SFTP connection details, excluding passwords
+2     | EDI FTP Folder setup                | FTP and SFTP Incoming and Outgoing paths
 
 ## Core setup
 EDI > Setup
