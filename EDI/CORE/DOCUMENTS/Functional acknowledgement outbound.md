@@ -54,11 +54,12 @@ Users can access the form by navigating to **EDI > Documents > Functional acknow
 Use this form to review staging records and optionally manually process the staging record.
 
 #### List page
+
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
-**EDI number**                    |	EDI Staging table record id
-**Company**                       |	Company account for the staging record
-**Template Id**                   |	Document type template used to process the document
+**EDI number**                    |	EDI Staging table record id.
+**Company**                       |	Company account for the staging record.
+**Template Id**                   |	Document type template that will be used to create the outbound file to the staging record.
 **Staging to target status**      |	The current status of the staging record. <br> Options include: <br> •	**Not Started**: The Functional Acknowledgement has been created but no file has yet been generated. <br> •	**Error**: The Functional Acknowledgement has been processed but no file has been created.  There are errors with the record that need to be reviewed. <br> •	**Completed**: The Functional Acknowledgement file has been created and added to the outbound file queue.
 **Trading partner account**       |	Trading partner account for the staging record.
 **Trading partner GLN**           |	The trading partners’ global location number is shown here.
@@ -77,10 +78,18 @@ Use this form to review staging records and optionally manually process the stag
 **Trading partner**               |	View the staging record's Trading partner details
 **Show log**                      |	If there are Errors within the staging record, it is possible to review them at any time using this button.
 **Reset status**                  |	Reset the staging's **Staging to target status** to enable resending of the staging record. Enabled where the record's **Staging to target status** is not set to _Not Started_.
-**Edit reset status recurrence**  | Option to edit the reset status recurrence for the record. Enabled where the **Staging to target status** is set to _Yes_.
+**Edit reset status recurrence**  | Option to edit the reset status recurrence for the record. Enabled where the **Staging to target status** is set to _Error_.
 **Reset template**	              | Reset the template that will be used to create the outbound file for the selected record. Enabled where the record's **Staging to target status** is not set to _Completed_.
 
 #### Header fields
 
+**Field** 	                      | **Description**
+:-------------------------------- |:-------------------------------------
+**EDI number**	                  | EDI Staging table record id.
+**Company**                       |	Company account for the staging record.
+**Template Id**                   |	Document type template that will be used to create the outbound file to the staging record.
+**Staging to target status**      |	The current status of the staging record. <br> Options include: <br> •	**Not Started**: The Functional Acknowledgement has been created but no file has yet been generated. <br> •	**Error**: The Functional Acknowledgement has been processed but no file has been created.  There are errors with the record that need to be reviewed. <br> •	**Completed**: The Functional Acknowledgement file has been created and added to the outbound file queue.
+
 #### Line fields
 
+The Functional Acknowledgement only has header fields, and thus no line fields. Header details are repeated.
