@@ -85,7 +85,7 @@ Use this form to review staging records and optionally manually process the stag
 **EDI number**	                  | EDI Staging table record id.
 **Company**                       |	Company account for the staging record.
 **Template Id**                   |	Document type template used to process the document.
-**Staging to target status**      |	The current status of the staging record. <br> Options include: <br> •	**Not Started**: The EDI file has been successfully processed from the inbound file to the staging table. <br> •	**Error**: The EDI file has been processed from the staging table but errored on processing to target. There are errors with the record that needs to be reviewed. <br> •	**Completed**: The EDI file has been processed to target which updates the original outgoing document with info that functional acknowledgement has been received.
+**Staging to target status**      |	The current status of the staging record. Options include: <br> •	**Not Started**: The EDI file has been successfully processed from the inbound file to the staging table. <br> •	**Error**: The EDI file has been processed from the staging table but errored on processing to target. There are errors with the record that needs to be reviewed. <br> •	**Completed**: The EDI file has been processed to target which updates the original outgoing document with info that functional acknowledgement has been received.
 
 #### Line fields
 
