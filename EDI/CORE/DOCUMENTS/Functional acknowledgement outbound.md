@@ -92,4 +92,4 @@ Use this form to review staging records and optionally manually process the stag
 
 #### Line fields
 
-The Functional Acknowledgement only has header fields, and thus no line fields. Header details are repeated.
+The Functional Acknowledgement only has header fields. Header details are repeated.
