@@ -34,32 +34,33 @@ The following is a summary of data entities available for the core EDI module:
 ## Connections
 EDI > Setup > Connection setup
 
-**Order**         | **Entity**
-:-----------------|:------------------------------------
-1		  | EDI FTP sites
+**Order**         | **Entity**              | **Description**	                                         | **Dependency**
+:-----|:------------------------------------|:-------------------                                      |:------------------------
+1		  | EDI FTP sites                       | FTP and SFTP **Connection details**, excluding passwords |
+2     | EDI FTP Folder setup                | FTP and SFTP **Incoming and Outgoing paths**             | EDI FTP sites
 
 ## Core setup
 EDI > Setup
 
-**Order**         | **Entity**				                  | **Description**							                                  | **Dependency**
+**Order**         | **Entity**				                  | **Description**							                             | **Dependency**
 :--|:----------------------------------------------|:--------------------------------------------------------------|:-------------------------
-1	 | UOM mapping				                  | Create new UOM mapping group <br> EDI > Setup > UOM mapping   |
-2	 | UOM mapping lines			              | Create new UOM mapping lines <br> EDI > Setup > UOM mapping  	| UOM mapping	
-3	 | Cleanup profile			                | Create new Cleanup profile <br> EDI > Setup > Cleanup profile |
-4	 | Cleanup profile line		            | Create new Cleanup profile lines <br> EDI > Setup > Cleanup profile | Cleanup profile
-5	 | Functional acknowledgement <br>document type mapping | Create new Document type mapping <br> EDI > Setup > Document type mapping  | 
-6	 | Functional acknowledgement <br>document type mapping lines | Create new Document type mapping lines <br> EDI > Setup > Document type mapping	| Functional acknowledgement <br>document type mapping
-7	 | Reset status profile            		| Create new Reset status profile recurrence <br> EDI > Setup > Reset status profile
-8  | EDI parameters                      | Create new EDI parameters per legal entity                    |
-9  | EDI Shared Parameters               | Create new EDI shared parameters                              |
+1	 | UOM mapping				                  | Create new **UOM mapping group**. EDI > Setup > UOM mapping   |
+2	 | UOM mapping lines			              | Create new **UOM mapping lines**. EDI > Setup > UOM mapping  	| UOM mapping	
+3	 | Cleanup profile			                | Create new **Cleanup profile**. EDI > Setup > Cleanup profile |
+4	 | Cleanup profile line		            | Create new **Cleanup profile lines**. EDI > Setup > Cleanup profile | Cleanup profile
+5	 | Functional acknowledgement document type mapping | Create new **Document type mapping** used for Functional acknowledgement. EDI > Setup > Document type mapping  | 
+6	 | Functional acknowledgement document type mapping lines | Create new **Document type mapping lines** used for Functional acknowledgement. EDI > Setup > Document type mapping	| Functional acknowledgement <br>document type mapping
+7	 | Reset status profile            		| Create new **Reset status profile** recurrence <br> EDI > Setup > Reset status profile
+8  | EDI parameters                      | Create new **EDI parameters** per legal entity                    |
+9  | EDI Shared Parameters               | Create new **EDI shared parameters**                              |
 
 ## Core document setting profiles
 EDI > Setup > Document types (Setting profiles for EDI core documents)
 
-**Order**         | **Entity**						| **Description**
-:-----------------|:------------------------------------		|:-------------------------
-1		  | EDI settings - Functional acknowledgement inbound	| Create new
-2		  | EDI settings - Functional acknowledgement outbound
+**Order**         | **Entity**						| **Description**                             | **Dependency**
+:-----------------|:------------------------------------		|:------------------------- |:-------------------------
+1		  | EDI settings - Functional <br>acknowledgement inbound	| Create new document type **Settings profile** for Functional <br>acknowledgement inbound
+2		  | EDI settings - Functional <br>acknowledgement outbound | Create new document type **Settings profile** for Functional <br>acknowledgement outbound
 
 ## Document types
 EDI > Setup > Document types (Template, Validation, Outbound file names and EDI Field metadata)
@@ -74,13 +75,12 @@ EDI > Setup > Document types (Template, Validation, Outbound file names and EDI 
 6		  | EDI template JSON			| Create new **JSON** template and setup
 7		  | EDI template JSON collection	| Create new **JSON Collection** template and setup
 8		  | EDI template code transformation	| Create new **Code transformation** template and setup
-9		  | EDI Validation profile		| Create new **Validation profiles** for all applicable document types	| EDI Validation profile
-10		  | EDI Validation profile line		| Create new **Validation profile lines** for all applicable document types
-11		  | EDI Outbound file names		| Create new outbound file names
-12		  | EDI Field metadata			| Update document type's field metadata
+9		  | EDI Validation profile		| Create new **Validation profiles** for all applicable document types	
+10		| EDI Validation profile line		| Create new **Validation profile lines** for all applicable document types | EDI Validation profile
+11		| EDI Outbound file names		| Create new **Outbound file names**
+12		| EDI Field metadata			| Update document type's **Field metadata**
 
-
-The following entities are applicable to all EDI - Standard format module:
+The following entities are applicable to all **EDI - Standard formats** module:
 EDI > Setup > Document types (Template)
 
  **Order**        | **Entity**		 	    | **Description**								| **Dependency**
