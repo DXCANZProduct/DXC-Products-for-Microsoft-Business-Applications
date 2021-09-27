@@ -71,7 +71,7 @@ Ongoing maintenance is an important aspect of D365 batches. The batch control fo
 
 ## **EDI Batch Control Workspace**
 
-To assist with monitoring of batch control, a workspace is available to show, at a glance, the status of EDI batches.  The workspace can be found by navigatinb to **EDI > EDI Batch Control**
+To assist with monitoring of batch control, a workspace is available to show, at a glance, the status of EDI batches.  The workspace can be found by navigating to **EDI > EDI Batch Control**
 
 
 ### Active Batches
