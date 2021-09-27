@@ -91,7 +91,7 @@ Use this form to review staging records and optionally manually process the stag
 **EDI number**	                  | EDI Staging table record id.
 **Company**                       |	Company account for the staging record.
 **Template Id**                   |	Document type template that will be used to create the outbound file to the staging record.
-**Staging to target status**      |	The current status of the staging record. <br> Options include: <br> •	**Not Started**: The Functional Acknowledgement has been created but no file has yet been generated. <br> •	**Error**: The Functional Acknowledgement has been processed but no file has been created.  There are errors with the record that need to be reviewed. <br> •	**Completed**: The Functional Acknowledgement file has been created and added to the outbound file queue.
+**Staging to target status**      |	The current status of the staging record. Options include: <br> •	**Not Started**: The Functional Acknowledgement has been created but no file has yet been generated. <br> •	**Error**: The Functional Acknowledgement has been processed but no file has been created.  There are errors with the record that need to be reviewed. <br> •	**Completed**: The Functional Acknowledgement file has been created and added to the outbound file queue.
 
 #### Line fields
 
