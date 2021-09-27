@@ -30,12 +30,41 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Functional acknowledgement outbound
 
 When a Trading partner requires a Functional Acknowledgement for sent EDI files, the following is required:
-1.	Create document template for Functional acknowledgement outbound.
-1.	Add the Functional acknowledgement outbound document type to Trading Partner’s Outgoing documents and Enable.
-1.	On each applicable incoming documents for the Trading partner, set **Acknowledgement** to _Yes_.
+1.	Create document Template for Functional acknowledgement outbound.
+2.	If required, create Setting profile for the Functional acknowledgement outbound
+3.	Add the Functional acknowledgement outbound document type to Trading Partner’s Outgoing documents and Enable.
+4.	On each applicable incoming documents for the Trading partner, set **Acknowledgement** to _Yes_.
 
 ## Setting profiles
 
 **Field** 	                                | **Description**                     | **Options/example**
 :--------------------------------           |:------------------------------------|:------------------------------------
 **Document type mapping**                   | Assign applicable document type mapping to setting	| Mappings setup at [**EDI > Setup > Document type mapping**](../Setup/Document%20type%20mapping.md)
+
+## View Staging table records
+
+### Incoming staging records
+
+Users can access the form by navigating to **EDI > Documents**
+All Inbound EDI staging forms has a field **Sent** indicating if a Functional acknowledgement outbound has been sent to the trading partner for each incoming document.
+
+### Functional acknowledgement outbound staging records
+
+Users can access the form by navigating to **EDI > Documents > Functional acknowledgement outbound**. <br>
+Use this form to review staging records and optionally manually process the staging record.
+
+#### List page
+**Field** 	                      | **Description**
+:-------------------------------- |:-------------------------------------
+**EDI number**                    |	EDI Staging table record id
+**Company**                       |	Company account for the staging record
+**Template Id**                   |	Document type template used to process the document
+**Staging to target status**      |	The current status of the staging record. <br> Options include: <br> •	Not Started – The Functional Acknowledgement has been created but no file has yet been generated.
+•	Error – The Functional Acknowledgement has been processed but no file has been created.  There are errors with the record that need to be reviewed.
+•	Completed – The Functional Acknowledgement file has been created and added to the outbound file queue.
+Trading partner account	Trading partner account for the Functional Acknowledgement record
+Trading partner GLN	The trading partners’ global location number is shown here.
+Company GLN	The company’s global location number is shown here.
+Group control number	Trading partner’s original document being acknowledged group control number
+Document type	Trading partner’s original document being acknowledged. ‘Document type mapping’ required to be setup prior to receipt of inbound document.
+Created date and time	The date and time the ASN was created
