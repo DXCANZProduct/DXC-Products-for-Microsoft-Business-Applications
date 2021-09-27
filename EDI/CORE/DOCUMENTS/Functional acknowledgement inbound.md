@@ -57,7 +57,7 @@ Use this form to review staging records and optionally manually process the stag
 **EDI number**                    |	EDI Staging table record id.
 **Company account**               |	Company account for the staging record.
 **Template Id**                   |	Document type template used to process the document.
-**Staging to target status**      |	The current status of the staging. <br> Options include: <br> •	**Not Started**: The staging record has been created but not processed. <br> •	**Error**: The staging record has been processed but there are errors with the record that need to be reviewed. <br> •	**Completed**: The staging record has been successfully processed.
+**Staging to target status**      |	The current status of the staging. Options include: <br> •	**Not Started**: The staging record has been created but not processed. <br> •	**Error**: The staging record has been processed but there are errors with the record that need to be reviewed. <br> •	**Completed**: The staging record has been successfully processed.
 **Trading partner account**       |	Trading partner account for the staging record.
 **Trading partner GLN**           |	The trading partners’ global location number is shown here.
 **Company GLN**                   |	The company’s global location number is shown here.
