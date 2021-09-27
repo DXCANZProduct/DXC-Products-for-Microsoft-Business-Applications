@@ -34,7 +34,7 @@ The following is a summary of data entities available for the core EDI module:
 **Section** 	                    | **Order**         | **Entity**
 :-------------------------------- |:------------------|:------------------------------------
 **Parameters**                    |	1                 |	EDI parameters
--                                 |	2                 |	EDI Shared Parameters
+.-.                                 |	2                 |	EDI Shared Parameters
 **Connections**                   | 3	                | EDI FTP sites
 **Setup**                         |	4	                | UOM mapping
 -                                 |	5                 |	UOM mapping lines
