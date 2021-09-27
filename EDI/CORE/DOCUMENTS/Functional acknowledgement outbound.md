@@ -66,3 +66,21 @@ Use this form to review staging records and optionally manually process the stag
 **Group control number**          |	Trading partner’s original document that is being acknowledged's group control number.
 **Document type**                 |	Trading partner’s original document type being acknowledged. [Document type mapping](../Setup/Document%20type%20mapping.md)
 **Created date and time**         |	The date and time the staging record was created.
+
+#### Buttons
+
+**Button** 	                      | **Description**
+:-------------------------------- |:-------------------------------------
+**Create selected files**         |	Create the file for export for the selected records. Button is only enabled for records with **Staging to target status** set to _Not Started_.
+**Create files**                  |	Create the files for export. Creates outbound files for all records with **Staging to target status** set to _Not Started_
+**Outbound files**                |	View the outbound file record created for the staging record.
+**Trading partner**               |	View the staging record's Trading partner details
+**Show log**                      |	If there are Errors within the staging record, it is possible to review them at any time using this button.
+**Reset status**                  |	Reset the staging's **Staging to target status** to enable resending of the staging record. Enabled where the record's **Staging to target status** is not set to _Not Started_.
+**Edit reset status recurrence**  | Option to edit the reset status recurrence for the record. Enabled where the **Staging to target status** is set to _Yes_.
+**Reset template**	              | Reset the template that will be used to create the outbound file for the selected record. Enabled where the record's **Staging to target status** is not set to _Completed_.
+
+#### Header fields
+
+#### Line fields
+
