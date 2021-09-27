@@ -34,15 +34,15 @@ The following is a summary of data entities available for the core EDI module:
 ## Connections
 EDI > Setup > Connection setup
 
-**Order**         | **Entity**              | **Description**	
-:-----|:------------------------------------|:-------------------
-1		  | EDI FTP sites                       | FTP and SFTP connection details, excluding passwords
-2     | EDI FTP Folder setup                | FTP and SFTP Incoming and Outgoing paths
+**Order**         | **Entity**              | **Description**	                                      | **Dependency**
+:-----|:------------------------------------|:-------------------                                   |:------------------------
+1		  | EDI FTP sites                       | FTP and SFTP connection details, excluding passwords  |
+2     | EDI FTP Folder setup                | FTP and SFTP Incoming and Outgoing paths              | EDI FTP sites
 
 ## Core setup
 EDI > Setup
 
-**Order**         | **Entity**				                  | **Description**							                                  | **Dependency**
+**Order**         | **Entity**				                  | **Description**							                             | **Dependency**
 :--|:----------------------------------------------|:--------------------------------------------------------------|:-------------------------
 1	 | UOM mapping				                  | Create new UOM mapping group <br> EDI > Setup > UOM mapping   |
 2	 | UOM mapping lines			              | Create new UOM mapping lines <br> EDI > Setup > UOM mapping  	| UOM mapping	
