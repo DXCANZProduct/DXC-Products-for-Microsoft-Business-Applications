@@ -30,7 +30,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Functional acknowledgement outbound
 
 When a Trading partner requires a Functional Acknowledgement for sent EDI files, the following is required:
-1.	Create document Template for Functional acknowledgement outbound.
+1.	Create document [Template](../Setup/DocumentTypes/File%20templates.md) for Functional acknowledgement outbound.
 2.	If required, create Setting profile for the Functional acknowledgement outbound
 3.	Add the Functional acknowledgement outbound document type to Trading Partner’s Outgoing documents and Enable.
 4.	On each applicable incoming documents for the Trading partner, set **Acknowledgement** to _Yes_.
