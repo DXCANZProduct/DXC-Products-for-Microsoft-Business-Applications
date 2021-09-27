@@ -59,12 +59,10 @@ Use this form to review staging records and optionally manually process the stag
 **EDI number**                    |	EDI Staging table record id
 **Company**                       |	Company account for the staging record
 **Template Id**                   |	Document type template used to process the document
-**Staging to target status**      |	The current status of the staging record. <br> Options include: <br> •	Not Started – The Functional Acknowledgement has been created but no file has yet been generated.
-•	Error – The Functional Acknowledgement has been processed but no file has been created.  There are errors with the record that need to be reviewed.
-•	Completed – The Functional Acknowledgement file has been created and added to the outbound file queue.
-Trading partner account	Trading partner account for the Functional Acknowledgement record
-Trading partner GLN	The trading partners’ global location number is shown here.
-Company GLN	The company’s global location number is shown here.
-Group control number	Trading partner’s original document being acknowledged group control number
-Document type	Trading partner’s original document being acknowledged. ‘Document type mapping’ required to be setup prior to receipt of inbound document.
-Created date and time	The date and time the ASN was created
+**Staging to target status**      |	The current status of the staging record. <br> Options include: <br> •	**Not Started**: The Functional Acknowledgement has been created but no file has yet been generated. <br> •	**Error**: The Functional Acknowledgement has been processed but no file has been created.  There are errors with the record that need to be reviewed. <br> •	**Completed**: The Functional Acknowledgement file has been created and added to the outbound file queue.
+**Trading partner account**       |	Trading partner account for the staging record.
+**Trading partner GLN**           |	The trading partners’ global location number is shown here.
+**Company GLN**                   |	The company’s global location number is shown here.
+**Group control number**          |	Trading partner’s original document that is being acknowledged's group control number.
+**Document type**                 |	Trading partner’s original document type being acknowledged. [Document type mapping](../Setup/Document%20type%20mapping.md)
+**Created date and time**         |	The date and time the staging record was created.
