@@ -28,3 +28,31 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # EDI Document workspace
+
+Users can access the form by navigating to **EDI > EDI Document maintenance**.
+
+The EDI document maintenance workspace provides a quick and easy way to view all errors relating to the processing of:
+•	Inbound file imports – Inbound Files that could not create a staging table record.
+•	Document errors – Staging table records that could not create the target D365 transaction.
+
+In addition, from within the workspace it is possible to view and even process information relating to the selected records.
+
+Each module also displays the outstanding inbound functional acknowledgements. <br> The staging record/s that still requires the inbound functional acknowledgement is determined by:
+•	Acknowledgement is set to Yes on the Trading partner’s outgoing documents
+•	The outbound document’s status = Processed, i.e. the outbound document has been sent to the Trading partner.
+•	An inbound functional acknowledgement referring to the outgoing document’s Group control number hasn’t been received.
+
+**Option** 	                                | **Description**
+:--------------------------------           |:------------------------------------- 
+**Process**                                 | Process the selected record in the staging table.
+**Reset status**                            |	Reset the staging transfer status to enable reprocessing document errors.
+**Show log**                                |	If there are Errors within the staging table, it is possible to review them at any time using this button.
+**Version log**                             |	View all defined errors for the record. When a document’s status reset and reprocessed a new log version is created. If the log is not defined, more information can be viewed via Execution log.
+**Staging to target status**                |	The current status of the Inbound or Outbound staging record. <br> Outbound options include:- <br>
+•	Not Started – The record has been created but no file has yet been generated.
+•	Error – The record has been processed but no file has been created.  There are errors with the record that need to be reviewed.
+•	Completed – The record file has been created and added to the outbound file queue. <br>
+Inbound options include:- <br>
+•	Not Started – the order has been successfully processed from the inbound file to the staging table but not processed.
+•	Error – The EDI order has been processed from the staging table, but no Sales order has yet been created.  There are errors with the record that need to be reviewed.
+•	Completed – The EDI order has been converted to an Arrival journal.
