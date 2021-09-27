@@ -31,20 +31,20 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 The following is a summary of data entities available for the core EDI module:
 
-**Section** 	                    | **Order**         | **Entity**
+**Section** 	                  | **Order**         | **Entity**
 :-------------------------------- |:------------------|:------------------------------------
-**Parameters**                    |	1                 |	EDI parameters
-<br>                              |	2                 |	EDI Shared Parameters
-**Connections**                   | 3	                | EDI FTP sites
-**Setup**                         |	4	                | UOM mapping
--                                 |	5                 |	UOM mapping lines
-	6	Cleanup profile
-	7	Cleanup profile line
-	8	Functional acknowledgement document type mapping
-	9	Functional acknowledgement document type mapping lines
-	10	Reset status profile
-Document setting profiles	11	EDI settings - Functional acknowledgement inbound
-	12	EDI settings - Functional acknowledgement outbound
+**Parameters**                    | 1                 |	EDI parameters
+<br>                              | 2                 |	EDI Shared Parameters
+**Connections**                   | 3	              | EDI FTP sites
+**Setup**                         | 4	              | UOM mapping
+<br>                              | 5                 |	UOM mapping lines
+<br>                              | 6		      | Cleanup profile
+<br>                              | 7		      | Cleanup profile line
+<br>                              | 8		      | Functional acknowledgement document type mapping
+<br>                              | 9		      | Functional acknowledgement document type mapping lines
+<br>                              | 10		      | Reset status profile
+Document setting profiles	  | 11		      | EDI settings - Functional acknowledgement inbound
+<br>                              | 12		      | EDI settings - Functional acknowledgement outbound
 
 The following entities are applicable to all EDI modules:
 Section	Order	Entity
