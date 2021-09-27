@@ -59,8 +59,8 @@ EDI > Setup > Document types (Setting profiles for EDI core documents)
 
 **Order**         | **Entity**						| **Description**                             | **Dependency**
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
-1		  | EDI settings - Functional <br>acknowledgement inbound	| Create new document type settings profile for Functional acknowledgement inbound
-2		  | EDI settings - Functional <br>acknowledgement outbound | Create new document type settings profile for Functional acknowledgement outbound
+1		  | EDI settings - Functional <br>acknowledgement inbound	| Create new document type settings profile for Functional <br>acknowledgement inbound
+2		  | EDI settings - Functional <br>acknowledgement outbound | Create new document type settings profile for Functional <br>acknowledgement outbound
 
 ## Document types
 EDI > Setup > Document types (Template, Validation, Outbound file names and EDI Field metadata)
