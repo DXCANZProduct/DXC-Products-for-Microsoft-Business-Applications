@@ -42,16 +42,16 @@ EDI > Setup > Connection setup
 EDI > Setup
 
 **Order**         | **Entity**				                  | **Description**							                                  | **Dependency**
-:-----------------|:------------------------------------|:--------------------------------------------------------------|:-------------------------
-1		              | UOM mapping				                  | Create new UOM mapping group <br> EDI > Setup > UOM mapping   |
-2	                | UOM mapping lines			              | Create new UOM mapping lines <br> EDI > Setup > UOM mapping  	| UOM mapping	
-3		              | Cleanup profile			                | Create new Cleanup profile <br> EDI > Setup > Cleanup profile |
-4		              | Cleanup profile line		            | Create new Cleanup profile lines <br> EDI > Setup > Cleanup profile | Cleanup profile
-5		              | Functional acknowledgement document type mapping | Create new Document type mapping <br> EDI > Setup > Document type mapping  | 
-6		              | Functional acknowledgement document type mapping lines | Create new Document type mapping lines <br> EDI > Setup > Document type mapping)	| Functional acknowledgement document type mapping
-7		              | Reset status profile            		| Create new Reset status profile recurrence <br> EDI > Setup > Reset status profile
-8                 | EDI parameters                      | Create new EDI parameters per legal entity                    |
-9                 | EDI Shared Parameters               | Create new EDI shared parameters                              |
+:--|:------------------------------------|:--------------------------------------------------------------|:-------------------------
+1	 | UOM mapping				                  | Create new UOM mapping group <br> EDI > Setup > UOM mapping   |
+2	 | UOM mapping lines			              | Create new UOM mapping lines <br> EDI > Setup > UOM mapping  	| UOM mapping	
+3	 | Cleanup profile			                | Create new Cleanup profile <br> EDI > Setup > Cleanup profile |
+4	 | Cleanup profile line		            | Create new Cleanup profile lines <br> EDI > Setup > Cleanup profile | Cleanup profile
+5	 | Functional acknowledgement <br>document type mapping | Create new Document type mapping <br> EDI > Setup > Document type mapping  | 
+6	 | Functional acknowledgement <br>document type mapping lines | Create new Document type mapping lines <br> EDI > Setup > Document type mapping)	| Functional acknowledgement document type mapping
+7	 | Reset status profile            		| Create new Reset status profile recurrence <br> EDI > Setup > Reset status profile
+8  | EDI parameters                      | Create new EDI parameters per legal entity                    |
+9  | EDI Shared Parameters               | Create new EDI shared parameters                              |
 
 ## Core document setting profiles
 EDI > Setup > Document types (Setting profiles for EDI core documents)
