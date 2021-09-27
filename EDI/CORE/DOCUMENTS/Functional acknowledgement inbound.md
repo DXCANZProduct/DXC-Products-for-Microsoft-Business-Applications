@@ -67,7 +67,25 @@ Use this form to review staging records and optionally manually process the stag
 
 #### Buttons
 
+**Button** 	                      | **Description**
+:-------------------------------- |:-------------------------------------
+**Process selected**              |	Process selected records in the staging table. Button is only enabled for records with **Staging to target status** set to _Not Started_.
+**Process all**                   |	Process all records with **Staging to target status** set to _Not Started_.
+**Inbound files**                 |	View the inbound file record that created the functional acknowledgement staging record.
+**Trading partner**               |	View staging record’s Trading partner details.
+**Show log**                      |	If there are Errors within the staging record, it is possible to review them at any time using this button. Shows only current version.
+**Version log**                   |	View all defined errors. When a document’s status reset and reprocessed a new log version is created. If the log is not defined, more information can be viewed via Execution log.
+**Reset status**                  |	Reset the staging's **Staging to target status** to enable reprocessing of the staging record. Enabled where the record's **Staging to target status** is not set to _Not Started_.
+**Edit reset status recurrence**  | Option to edit the reset status recurrence for the record. Enabled where the **Staging to target status** is set to _Error_.
+
 #### Header fields
+
+**Field** 	                      | **Description**
+:-------------------------------- |:-------------------------------------
+**EDI number**	                  | EDI Staging table record id.
+**Company**                       |	Company account for the staging record.
+**Template Id**                   |	Document type template used to process the document.
+**Staging to target status**      |	The current status of the staging record. <br> Options include: <br> •	**Not Started**: The EDI file has been successfully processed from the inbound file to the staging table. <br> •	**Error**: The EDI file has been processed from the staging table but errored on processing to target. There are errors with the record that needs to be reviewed. <br> •	**Completed**: The EDI file has been processed to target which updates the original outgoing document with info that functional acknowledgement has been received.
 
 #### Line fields
 
