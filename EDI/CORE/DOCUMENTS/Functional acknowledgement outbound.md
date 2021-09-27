@@ -33,7 +33,7 @@ When a Trading partner requires a Functional Acknowledgement for sent EDI files,
 1.	Create document [Template](../Setup/DocumentTypes/File%20templates.md) for Functional acknowledgement outbound.
 2.	If required, create Setting profile for the Functional acknowledgement outbound. See below.
 3.	Add the Functional acknowledgement outbound document type to [Trading Partner’s](../Setup/Trading%20partners.md) Outgoing documents and Enable.
-4.	On each applicable incoming documents for the Trading partner (../Setup/Trading%20partners.md), set **Acknowledgement** to _Yes_.
+4.	On each applicable incoming documents for the [Trading partner](../Setup/Trading%20partners.md), set **Acknowledgement** to _Yes_.
 
 ## Setting profiles
 
