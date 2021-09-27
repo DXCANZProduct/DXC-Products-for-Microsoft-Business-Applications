@@ -31,14 +31,6 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 The following is a summary of data entities available for the core EDI module:
 
-## Parameters
-EDI > Setup
-
-**Order**         | **Entity**
-:-----------------|:------------------------------------
-1                 | EDI parameters
-2                 | EDI Shared Parameters
-
 ## Connections
 EDI > Setup > Connection setup
 
@@ -58,6 +50,8 @@ EDI > Setup
 5		              | Functional acknowledgement document type mapping | Create new Document type mapping <br> EDI > Setup > Document type mapping  | 
 6		              | Functional acknowledgement document type mapping lines | Create new Document type mapping lines <br> EDI > Setup > Document type mapping)	| Functional acknowledgement document type mapping
 7		              | Reset status profile            		| Create new Reset status profile recurrence <br> EDI > Setup > Reset status profile
+8                 | EDI parameters                      | Create new EDI parameters per legal entity                    |
+9                 | EDI Shared Parameters               | Create new EDI shared parameters                              |
 
 ## Core document setting profiles
 EDI > Setup > Document types (Setting profiles for EDI core documents)
