@@ -48,8 +48,7 @@ Each module also displays the outstanding inbound functional acknowledgements. <
 **Reset status**                            |	Reset the staging transfer status to enable reprocessing document errors.
 **Show log**                                |	If there are Errors within the staging table, it is possible to review them at any time using this button.
 **Version log**                             |	View all defined errors for the record. When a document’s status is reset and reprocessed a new log version is created. If the log is not defined, more information can be viewed via Execution log.
-**Staging to target status**                |	The current status of the Inbound or Outbound staging record. <br> Outbound options include: <br> 
-- **Not Started** - The record has been created but no outbound file has yet been generated. <br> 
+**Staging to target status**                |	The current status of the Inbound or Outbound staging record. <br> Outbound options include: <br> - **Not Started** - The record has been created but no outbound file has yet been generated. <br> 
 - **Error** – The record has been processed but no file has been created. There are errors with the record that needs to be reviewed. <br> 
 - **Completed** – The record file has been created and added to the outbound file queue. <br> Inbound options include: <br>
 - **Not Started** – the inbound file has successfully created the staging record, but the staging record hasn't been processed to D365 target. <br> 
