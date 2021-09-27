@@ -40,41 +40,46 @@ The following is a summary of data entities available for the core EDI module:
 
 ## Connections
 
+**Order**         | **Entity**
+:-----------------|:------------------------------------
+1		  | EDI FTP sites
 
-## Setup
+## Core setup
 
-## Document setting profiles
+**Order**         | **Entity**
+:-----------------|:------------------------------------
+1		  | UOM mapping
+2	          | UOM mapping lines
+3		  | Cleanup profile
+4		  | Cleanup profile line
+5		  | Functional acknowledgement document type mapping
+6		  | Functional acknowledgement document type mapping lines
+7		  | Reset status profile
 
-**Section** 	                  | **Order**         | **Entity**
-:-------------------------------- |:------------------|:------------------------------------
-**Parameters**                    | 1                 |	EDI parameters
-<br>                              | 2                 |	EDI Shared Parameters
-**Connections**                   | 3	              | EDI FTP sites
-**Setup**                         | 4	              | UOM mapping
-<br>                              | 5                 |	UOM mapping lines
-<br>                              | 6		      | Cleanup profile
-<br>                              | 7		      | Cleanup profile line
-<br>                              | 8		      | Functional acknowledgement document type mapping
-<br>                              | 9		      | Functional acknowledgement document type mapping lines
-<br>                              | 10		      | Reset status profile
-**Document setting profiles**	  | 11		      | EDI settings - Functional acknowledgement inbound
-<br>                              | 12		      | EDI settings - Functional acknowledgement outbound
+## Core document setting profiles
 
-The following entities are applicable to all EDI modules:
-**Section** 	                  | **Order**         | **Entity**
-:-------------------------------- |:------------------|:------------------------------------
-**Document type**		  | 1		      | EDI Template file
-<br>                              | 2		      | EDI Template file section
-<br>                              | 3		      | EDI Template file line section
-<br>                              | 4		      | EDI Template XSLT
-<br>                              | 5		      | EDI template XSLT collection
-<br>                              | 6		      | EDI template JSON
-<br>                              | 7		      | EDI template JSON collection
-<br>                              | 8		      | EDI template code transformation
-<br>                              | 9		      | EDI Validation profile
-<br>                              | 10		      | EDI Validation profile line
-<br>                              | 11		      | EDI Outbound file names
-<br>                              | 12		      | EDI Field metadata
+**Order**         | **Entity**
+:-----------------|:------------------------------------
+1		  | EDI settings - Functional acknowledgement inbound
+2		  | EDI settings - Functional acknowledgement outbound
+
+## Document types
+
+**Order**         | **Entity**				
+:-----------------|:------------------------------------
+1		  | EDI Template file
+2		  | EDI Template file section
+3		  | EDI Template file line section
+4		  | EDI Template XSLT
+5		  | EDI template XSLT collection
+6		  | EDI template JSON
+7		  | EDI template JSON collection
+8		  | EDI template code transformation
+9		  | EDI Validation profile
+10		  | EDI Validation profile line
+11		  | EDI Outbound file names
+12		  | EDI Field metadata
+
 
 The following entities are applicable to all EDI - Standard format module:
 **Section** 	                  | **Order**         | **Entity**		 	    | **Description**
