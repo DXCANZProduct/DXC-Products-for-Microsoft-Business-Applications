@@ -31,6 +31,20 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 The following is a summary of data entities available for the core EDI module:
 
+## Parameters
+
+**Order**         | **Entity**
+:-----------------|:------------------------------------
+1                 | EDI parameters
+2                 | EDI Shared Parameters
+
+## Connections
+
+
+## Setup
+
+## Document setting profiles
+
 **Section** 	                  | **Order**         | **Entity**
 :-------------------------------- |:------------------|:------------------------------------
 **Parameters**                    | 1                 |	EDI parameters
@@ -43,21 +57,28 @@ The following is a summary of data entities available for the core EDI module:
 <br>                              | 8		      | Functional acknowledgement document type mapping
 <br>                              | 9		      | Functional acknowledgement document type mapping lines
 <br>                              | 10		      | Reset status profile
-Document setting profiles	  | 11		      | EDI settings - Functional acknowledgement inbound
+**Document setting profiles**	  | 11		      | EDI settings - Functional acknowledgement inbound
 <br>                              | 12		      | EDI settings - Functional acknowledgement outbound
 
 The following entities are applicable to all EDI modules:
-Section	Order	Entity
-Document type	1	EDI Template file
-	2	EDI Template file section
-	3	EDI Template file line section
-	4	EDI Template XSLT
-	5	EDI template XSLT collection
-	6	EDI template JSON
-	7	EDI template JSON collection
-	8	EDI template code transformation
-	9	EDI Validation profile
-	10	EDI Validation profile line
-	11	EDI Outbound file names
-	12	EDI Field metadata
+**Section** 	                  | **Order**         | **Entity**
+:-------------------------------- |:------------------|:------------------------------------
+**Document type**		  | 1		      | EDI Template file
+<br>                              | 2		      | EDI Template file section
+<br>                              | 3		      | EDI Template file line section
+<br>                              | 4		      | EDI Template XSLT
+<br>                              | 5		      | EDI template XSLT collection
+<br>                              | 6		      | EDI template JSON
+<br>                              | 7		      | EDI template JSON collection
+<br>                              | 8		      | EDI template code transformation
+<br>                              | 9		      | EDI Validation profile
+<br>                              | 10		      | EDI Validation profile line
+<br>                              | 11		      | EDI Outbound file names
+<br>                              | 12		      | EDI Field metadata
 
+The following entities are applicable to all EDI - Standard format module:
+**Section** 	                  | **Order**         | **Entity**		 	    | **Description**
+:-------------------------------- |:------------------|:------------------------------------
+**Document type**		  | 1	                               | EDI Template EDIFACT         | Create new **EDIFACT** template and setup
+	2	                               | EDI Template EDIFACT section | Section details for the **EDIFACT** template
+3	                               | EDI Template EDIFACT element | Element details for each section for the **EDIFACT** template
