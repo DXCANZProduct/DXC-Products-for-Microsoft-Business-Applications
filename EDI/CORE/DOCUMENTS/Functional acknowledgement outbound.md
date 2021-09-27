@@ -31,11 +31,14 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 When a Trading partner requires a Functional Acknowledgement for sent EDI files, the following is required:
 1.	Create document [Template](../Setup/DocumentTypes/File%20templates.md) for Functional acknowledgement outbound.
-2.	If required, create Setting profile for the Functional acknowledgement outbound. See below.
+2.	If required, create [Setting profile](../Setup/DocumentTypes/Setting%20profiles.md) for the Functional acknowledgement outbound. See below.
 3.	Add the Functional acknowledgement outbound document type to [Trading Partner’s](../Setup/Trading%20partners.md) Outgoing documents and Enable.
 4.	On each applicable incoming documents for the [Trading partner](../Setup/Trading%20partners.md), set **Acknowledgement** to _Yes_.
 
 ## Setting profiles
+
+Users can access the form by navigating to **EDI > Setup > Document types** and filtering/selecting the **Functional acknowledgement outbound** document. <br>
+See [Setting profiles](../Setup/DocumentTypes/Setting%20profiles.md) for more details on how to create a Setting profile.
 
 **Field** 	                                | **Description**                     | **Options/example**
 :--------------------------------           |:------------------------------------|:------------------------------------
@@ -45,7 +48,7 @@ When a Trading partner requires a Functional Acknowledgement for sent EDI files,
 
 ### Incoming staging records
 
-Users can access the form by navigating to **EDI > Documents**
+Users can access the form by navigating to **EDI > Documents**.
 All Inbound EDI staging forms has a field **Sent** indicating if a Functional acknowledgement outbound has been sent to the trading partner for each incoming document.
 
 ### Functional acknowledgement outbound staging records
