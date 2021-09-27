@@ -42,7 +42,7 @@ EDI > Setup > Connection setup
 EDI > Setup
 
 **Order**         | **Entity**				                  | **Description**							                                  | **Dependency**
-:--|:------------------------------------|:--------------------------------------------------------------|:-------------------------
+:--|:----------------------------------------------|:--------------------------------------------------------------|:-------------------------
 1	 | UOM mapping				                  | Create new UOM mapping group <br> EDI > Setup > UOM mapping   |
 2	 | UOM mapping lines			              | Create new UOM mapping lines <br> EDI > Setup > UOM mapping  	| UOM mapping	
 3	 | Cleanup profile			                | Create new Cleanup profile <br> EDI > Setup > Cleanup profile |
