@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI Core]
-description: [EDI Core - Data entities]
+description: [EDI Core - Error reporting]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 27/09/2021
@@ -27,64 +27,43 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Data entities
+# Error reporting
 
-The following is a summary of data entities available for the core EDI module:
+When EDI documents are processed, they may fail for various reasons.
+EDI module includes defined errors (via development), else the standard D365 error will be provided.
 
-## Connections
-EDI > Setup > Connection setup
+## Process
+When an Inbound document is received and processed via EDI it could fail for various reasons, examples:
+- Unit conversion not found
+- Receipt date not valid
+- Quantity not available ATP
+- Not within multiple/max qty
+- Item or Customer on hold
+- Mandatory dimension not specified
 
-**Order**         | **Entity**
-:-----------------|:------------------------------------
-1		  | EDI FTP sites
+Previously these errors were only available as text log on the applicable staging document.
+Staging processing errors are now defined and saved to a table for reporting purposes.
 
-## Core setup
-EDI > Setup
+## Version log
 
-**Order**         | **Entity**				                  | **Description**							                                  | **Dependency**
-:--|:----------------------------------------------|:--------------------------------------------------------------|:-------------------------
-1	 | UOM mapping				                  | Create new UOM mapping group <br> EDI > Setup > UOM mapping   |
-2	 | UOM mapping lines			              | Create new UOM mapping lines <br> EDI > Setup > UOM mapping  	| UOM mapping	
-3	 | Cleanup profile			                | Create new Cleanup profile <br> EDI > Setup > Cleanup profile |
-4	 | Cleanup profile line		            | Create new Cleanup profile lines <br> EDI > Setup > Cleanup profile | Cleanup profile
-5	 | Functional acknowledgement <br>document type mapping | Create new Document type mapping <br> EDI > Setup > Document type mapping  | 
-6	 | Functional acknowledgement <br>document type mapping lines | Create new Document type mapping lines <br> EDI > Setup > Document type mapping	| Functional acknowledgement <br>document type mapping
-7	 | Reset status profile            		| Create new Reset status profile recurrence <br> EDI > Setup > Reset status profile
-8  | EDI parameters                      | Create new EDI parameters per legal entity                    |
-9  | EDI Shared Parameters               | Create new EDI shared parameters                              |
+Users can access the staging forms by navigating to **EDI > Documents**. 
+These errors can also be viewed on the **Version log** form on each Staging form.
+If a record’s status was reset and reprocessed the **Version log** will show all the version’s status and if there were any errors, split these into Header and Lines. If there were no errors, a version is still created with blank error details. If an error is not defined the Staging to target status will be Error and the standard D365 error will be provided. <br>
+**Show log** shows only the latest log. <br>
+**Version log** form displays the following fields for each processing version: <br>
 
-## Core document setting profiles
-EDI > Setup > Document types (Setting profiles for EDI core documents)
-
-**Order**         | **Entity**						| **Description**
-:-----------------|:------------------------------------		|:-------------------------
-1		  | EDI settings - Functional acknowledgement inbound	| Create new
-2		  | EDI settings - Functional acknowledgement outbound
-
-## Document types
-EDI > Setup > Document types (Template, Validation, Outbound file names and EDI Field metadata)
-
-**Order**         | **Entity**				| **Description**							| **Dependency**
-:-----------------|:------------------------------------|:-------------------------						|:-------------------------
-1		  | EDI Template file			| Create new **Text** template and setup
-2		  | EDI Template file section		| Section details for the **Text** template				| EDI Template file
-3		  | EDI Template file line section	| Line details for each section for the **EDIFACT** template		| EDI Template file section
-4		  | EDI Template XSLT			| Create new **XSLT Transformation** template and setup
-5		  | EDI template XSLT collection	| Create new **XSLT Collection** template and setup
-6		  | EDI template JSON			| Create new **JSON** template and setup
-7		  | EDI template JSON collection	| Create new **JSON Collection** template and setup
-8		  | EDI template code transformation	| Create new **Code transformation** template and setup
-9		  | EDI Validation profile		| Create new **Validation profiles** for all applicable document types	| EDI Validation profile
-10		  | EDI Validation profile line		| Create new **Validation profile lines** for all applicable document types
-11		  | EDI Outbound file names		| Create new outbound file names
-12		  | EDI Field metadata			| Update document type's field metadata
-
-
-The following entities are applicable to all EDI - Standard format module:
-EDI > Setup > Document types (Template)
-
- **Order**        | **Entity**		 	    | **Description**								| **Dependency**
-:-----------------|:--------------------------------|:-------------------------							|:-------------------------
-1	          | EDI Template EDIFACT            | Create new **EDIFACT** template and setup					|
-2	          | EDI Template EDIFACT section    | Section details for the **EDIFACT** template				| EDI Template EDIFACT
-3	          | EDI Template EDIFACT element    | Element details for each section for the **EDIFACT** template		| EDI Template EDIFACT section
+**Field** 	                      | **Description**
+:-------------------------------- |:-------------------------------------
+**Version**                       |	Starts at 1. If record is reset and reprocessed version will increment accordingly
+**Start timestamp**               |	Date/time version was created
+**EDI Document type**             |	Staging document type, example Customer purchase order
+**Staging to target status**      |	The status of the processing record. Options include: <br> •	**Error**: The EDI file has been processed but there are errors with the record that needs to be reviewed. <br> •	**Completed**: The EDI file has been successfully processed.
+<ins>**Header**</ins>
+**Error type**                    |	Displays defined error
+**Level**                         |	Options include: Error or Warning
+**Message**                       |	Detailed error message
+<ins>**Lines**</ins>
+**Line number**                   |	Staging line number
+**Error type**                    |	Displays defined error
+**Level**                         |	Options include: Error or Warning
+**Message**                       |	Detailed error message
