@@ -36,7 +36,7 @@ EDI purchase orders can be received from trading partners with many order purpos
 -	Click **New** to create a new record. 
 -	In the **Name** field, enter the name of the order purpose group
 -	In the **Description** field, enter a description of the order purpose group
--	In the **Mappings** fast tab, select **Add** to create a new record
+-	In the **Mappings** FastTab, select **Add** to create a new record
 -	Select the **Order purpose code**. Options are:
     -	**Original** - Indicates this the first/original order or agreement. Applies to document type **Customer purchase order**. 
     -	**Change** - Specifies the sales order change indicator. Applies to document type **Customer purchase order change**.
