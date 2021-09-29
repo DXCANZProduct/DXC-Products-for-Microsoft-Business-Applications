@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [Docusign]
-description: [Setup Parameters]
+title: [EDI Core]
+description: [EDI Core - UOM mapping]
 author: [ndavidson2]
 manager: Kym Parker
 ms.date: 12/01/2020
