@@ -71,7 +71,9 @@ Customer module specific document type setup:
 	- [Sales invoice]
 
 ## Workspaces
-- [EDI Document maintenance]
+- EDI Document maintenance
+	- [Applicable to all modules](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md)
+	- [Customer specific]
 - [EDI Sales order processing]
 
 ## Other
