@@ -46,7 +46,7 @@ Used to map D365/EDI value to Customer's value and assigned on Customer Trading 
 	- [Unit of measure mapping]
 
 Assigned on EDI parameters: <br>
-**Sales and marketing > Setup > Sales orders > Order hold codes**<br>
+- Sales and marketing setup: **Sales and marketing > Setup > Sales orders > Order hold codes**<br>
 	- [Hold codes] <br>
 
 ## Customer Document type setup
