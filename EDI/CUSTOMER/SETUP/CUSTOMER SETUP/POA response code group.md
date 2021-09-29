@@ -59,7 +59,7 @@ POA Response codes are used to identify the status of information used in a Purc
 **Line item – inner accept**      |	Item inner accepted	                  | LIA
 **Line item – inner difference**  |	Advise of inner difference	          | ID
 
-- In the **Allow auto trigger** field, select if the POA response can be triggered by **Auto set response codes**. <br> The following response codes can only be manually trigger and thus their Allow auto trigger is set to No and disabled:
+- In the **Allow auto trigger** field, select if the POA response can be triggered by **Auto set response codes**. <br> The following response codes can only be manually triggered and thus their Allow auto trigger is set to No and disabled:
     - Header – not accepted
     - Line item – withdrawn
 - In the **Allow auto send** field, select if the POA response should be included in the periodic task **Send customer purchase order acknowledgement**
