@@ -60,7 +60,7 @@ Customer module specific document type setup:
 ## Trading partner setup
 - [Trading partner]
 
-## Documents
+## Customer documents
 
 - Staging forms
 	- [Customer purchase order]
