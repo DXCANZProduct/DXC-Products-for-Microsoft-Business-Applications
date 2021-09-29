@@ -61,6 +61,8 @@ Customer module specific document type setup:
 - [Trading partner]
 
 ## Documents
+
+- Staging forms
 	- [Customer purchase order]
 	- [Customer purchase order change]
 	- [Review sales orders]
@@ -73,5 +75,6 @@ Customer module specific document type setup:
 - [EDI Sales order processing]
 
 ## Other
-[Frequently asked questions]
+- [Data entities]
+- [Frequently asked questions]
 
