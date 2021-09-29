@@ -32,7 +32,7 @@ This section provides a short overview of the required prequisites for setting u
 The Trading partner fields are used to describe how the prequisites setups are allocated to an EDI customer:
 Users can access the form by navigating to **EDI > Setup > Trading partners**
 
-Customer Trading Partner Setup - Quick Summary (detail to follow):
+Customer Trading Partner Setup - Quick Summary:
 **Setup** 	                      | **Short description**                 | **Setup path**
 :-------------------------------- |:------------------------------------- |:-------------------------------------
 <ins>**Option**s</ins>		
