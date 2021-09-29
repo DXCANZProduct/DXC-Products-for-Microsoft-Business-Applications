@@ -40,10 +40,10 @@ EDI purchase orders can be received from trading partners with many order types.
 -	In the **Description** field, enter a description of the order type group
 -	In the **Mappings** FastTab, select **Add** to create a new record
 -	Select the **Order Type**. Options are: <br>
-    -	**Order** - When receiving a PO from a customer used to identify a "normal" order using these characters. Creates a standalone D365 sales order.
-    -	\* **Confirmation** - When receiving a POC from a customer used to identify a "confirmation". Confirms an existing D365 sales order. Usually receive in response to a POA sent to the customer.
-    -	**Agreement** - When receiving a PO from a customer used to identify a "blanket" order. Creates a D365 sales agreement.
-    -	**Release order** - When receiving a PO from a customer used to identify a "release" order. Creates a D365 release order against a D365 sales agreement. Customer purchase order document setting 'Create release order without a blanket order' provides options No, Yes, Warning in cases where a release order is sent without a matching D365 sales agreement.
+    -	**Order** - When receiving a Purchase Order from a customer used to identify a "normal" order using these characters. Creates a standalone D365 sales order.
+    -	\* **Confirmation** - When receiving a Purchase Order Confirmation (POC) from a customer used to identify a "confirmation". Confirms an existing D365 sales order. Usually receive in response to a Purchase Order Acknowledgement (POA) sent to the customer.
+    -	**Agreement** - When receiving a Purchase Order from a customer used to identify a "blanket" order. Creates a D365 sales agreement.
+    -	**Release order** - When receiving a Purchase Order from a customer used to identify a "release" order. Creates a D365 release order against a D365 sales agreement. Customer purchase order document setting 'Create release order without a blanket order' provides options No, Yes, Warning in cases where a release order is sent without a matching D365 sales agreement.
     -	\* **Cancellation** - Specifies the sales order cancellation indicator. Cancels the D365 sales order or agreement.
 -	Specify the **indicator**/Customer's value used to identify the EDI order type.
 
