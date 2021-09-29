@@ -41,7 +41,7 @@ Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 - [POA response code group]
 - [Order line change type group]
 
-**EDI > Setup**
+  **EDI > Setup**
 - [Unit of measure mapping]
 
 2. Assigned on EDI parameters:
