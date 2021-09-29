@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: [Docusign]
+title: [EDI Core]
 description: [Setup Parameters]
 author: [ndavidson2]
 manager: Kym Parker
