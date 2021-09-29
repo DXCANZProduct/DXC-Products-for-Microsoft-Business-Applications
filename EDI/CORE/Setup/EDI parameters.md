@@ -45,7 +45,7 @@ If they are setup as Custom, the custom date and time format must be specified.
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
 <ins>**Document Types**</ins>
-**File Attachment Document Type** |	Specify the **Document management type** used to store EDI files that are sent and received for review.
+**File Attachment Document Type** |	Specify the **Document management type** used to store EDI files that are sent and received for review. <br> Ensure file types/extensions that will be received from Trading partners, are included in **File types** at **Organization administration > Document management > Document management parameters**.
 <ins>**Connection**</ins>         |
 **Connection profile**	          | Specify the default **Connection profile** to be used when sending Outbound documents. This default can be overridden on Trading partner or Trading partner’s document level.
 <ins>**Date**</ins>
