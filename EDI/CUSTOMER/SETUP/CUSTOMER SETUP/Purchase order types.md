@@ -54,6 +54,9 @@ Examples: <br>
 **Agreement**                     |	**KA** - Agreement <br> **KB** - Blanket Purchase Agreement | **221** - Blanket order
 **Release order**                 |	**RL** - Release or Delivery Order	  | **226** - Call off order
 
+## Where used
+Customer EDI order type group is assigned on the Customer Trading partner's Options field called **Customer EDI order types**.
+
 ## Data entities:
 - Customer EDI order type group
 - Customer EDI order type lines
