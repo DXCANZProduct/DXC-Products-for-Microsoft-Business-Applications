@@ -59,7 +59,7 @@ If a record’s status was reset and reprocessed the **Version log** will show a
 **EDI Document type**             |	Staging document type, example Customer purchase order
 **Staging to target status**      |	The status of the processing record. Options include: <br> •	**Error**: The EDI file has been processed but there are errors with the record that needs to be reviewed. <br> •	**Completed**: The EDI file has been successfully processed.
 <ins>**Header**</ins>
-**Error type**                    |	Displays:<br> • Defined errors, examples 'Order duplicate', 'Store code not found', 'Purchase order '%' already exists on sales order '%''<br> • Processing error: displays the standard D365 error.
+**Error type**                    |	Displays:<br> • **Defined errors**, examples 'Order duplicate', 'Store code not found', 'Purchase order '%' already exists on sales order '%''<br> • **Processing error**: displays the standard D365 error, example 'Inventory dimension Site is mandatory and must consequently be specified.'
 **Level**                         |	Options include: Error or Warning
 **Message**                       |	Detailed error message
 <ins>**Lines**</ins>
