@@ -47,6 +47,7 @@ This section will provide a quick overview of the Customer EDI module.
 - [Validation profiles]
 	- [Customer purchase order]
 	- [Customer purchase order change]
+- [Document type summary]
 
 ## Trading partner setup
 - [Trading partner]
