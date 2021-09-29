@@ -60,4 +60,3 @@ Customer EDI order type group is assigned on the Customer Trading partner's Opti
 ## Data entities:
 - Customer EDI order type group
 - Customer EDI order type lines
-
