@@ -41,35 +41,35 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ## Incoming orders
 -	The Customer has sent the GTIN, however this is not being recognised when processing the order
-  - Check that the GTIN from the file is mapped to the Barcode field in the staging table.
-  - Check that the Item ID source is set to GTIN in the settings profile
+   - Check that the GTIN from the file is mapped to the Barcode field in the staging table.
+   - Check that the Item ID source is set to GTIN in the settings profile
 -	My inbound file has been processed but there is no staging record
-  - Check the template that is associated with the trading partner
+   - Check the template that is associated with the trading partner
 - Staging table cannot be processed.  
-  - Check the Version log for more details on the error.
+   - Check the Version log for more details on the error.
   
 ## Sales orders
 -	I am trying to edit the sales order however it is not possible
-  - It is not possible to edit a sales order if a POA has been send and the Safety level if POA sent flag is set to locked (see POA settings profiles for further details)
-  - Check that the sales order is not invoiced
+   - It is not possible to edit a sales order if a POA has been send and the Safety level if POA sent flag is set to locked (see POA settings profiles for further details)
+   - Check that the sales order is not invoiced
 -	I am trying to post the pick list, however the button is not available.
-  - Check that the sales order is not on hold
+   - Check that the sales order is not on hold
 -	I am trying to release the order to the warehouse, however this is not possible
-  - Check that the sales order is not on hold
+   - Check that the sales order is not on hold
 -	I am trying to post the delivery note, however the button is not available.
-  - Check that the sales order is not on hold
+   - Check that the sales order is not on hold
 -	I am trying to post the sales invoice, however the button is not available.
-  - Check that the sales order is not on hold
+   - Check that the sales order is not on hold
 -	My incoming file had 4 sales order lines, however my sales order only has 1 line
-  - Check and validate the line number in the file.  This issue will occur where all line numbers are the same.  A warning will be displayed on the sales order 'EDI staging line 2.00 updated sales EDI line 1.00'
+   - Check and validate the line number in the file.  This issue will occur where all line numbers are the same.  A warning will be displayed on the sales order 'EDI staging line 2.00 updated sales EDI line 1.00'
 - If I manually create a Sales order to an EDI customer, can I still send them EDI for this order.
-  - Can’t send a POA as the POA compares to data sent by the Customer, but are able to send ASN and Invoice
+   - Can’t send a POA as the POA compares to data sent by the Customer, but are able to send ASN and Invoice
 -	I am trying to create an ASN, however this is not possible
-  - ASN requires SSCC and Consignment assigned
+   - ASN requires SSCC and Consignment assigned
   
 ## Released product setup
 -	I am trying to select the unit of measure for the inner and outer on the released products form, however the unit is not displayed
-  - Check that there is a valid unit of conversion from the sales unit to the unit you wish to select.
+   - Check that there is a valid unit of conversion from the sales unit to the unit you wish to select.
 
 ## Number sequences are not available to setup
 To load all new number sequence references, select **Reset** on **Organization administration > Number sequences > Number sequences > Manual cleanup**
