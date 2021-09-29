@@ -68,11 +68,17 @@ POA Response codes are used to identify the status of information used in a Purc
 POA response code group is assigned on the Customer Trading partner's Options field called **POA responde code group**.
 
 ## Scenarios
-The following section will decribe how the EDI module determines which POA response code to send.
+The following section decribes how the EDI module sets the POA auto response code. <br>
+This applicable to Response codes where **Allow auto trigger** is set to Yes.
 
 ### Line price
+- Line price - accept: The sales order line's unit price = Customer's EDI purchase order's unit price
+- Line price - advise: The sales order line's unit price <> Customer's EDI purchase order's unit price.
 
-
+### Line item quantity
+- Line item - accept: Acknowledged quantity = Customer's EDI purchase order's quantity.
+- Line item - out of stock: 
+- line item - withdrawn: Can't be auto triggered.
 
 ## Data entities:
 - POA response code group
