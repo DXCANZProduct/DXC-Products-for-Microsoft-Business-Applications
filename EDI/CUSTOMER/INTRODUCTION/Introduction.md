@@ -30,7 +30,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Introduction
 This section will provide a quick overview of the Customer EDI module.
 
-Customer setup includes:
+## Customer setup
 - [Purchase order types]
 - [Order purpose group]
 - [POA response code group]
@@ -38,7 +38,7 @@ Customer setup includes:
 - [Unit of measure mapping]
 - [Hold codes]
 
-Customer Document type setup includes:
+## Customer Document type setup
 - [Seting profiles]
 	- [Customer purchase order]
 	- [Customer purchase order change]
@@ -48,9 +48,10 @@ Customer Document type setup includes:
 	- [Customer purchase order]
 	- [Customer purchase order change]
 
-- Trading partner setup
+## Trading partner setup
+- [Trading partner]
 
-Documents includes:
+## Documents
 	- [Customer purchase order]
 	- [Customer purchase order change]
 	- [Review sales orders]
