@@ -28,35 +28,51 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Customer setup
-## Setup purchase order types
+## Setup POA responde codes
 
-Users can access the form by navigating to **EDI > Setup > Customer setup > Customer EDI order type group**
+Users can access the form by navigating to **EDI > Setup > Customer setup > POA response code group**
 
-EDI purchase orders can be received from trading partners with many order types.  The type identifier received can change the way the order is processed within D365. <br>
-> Note: Fields flagged with \* has been deprecated from **Customer EDI order type group**. Backwards compatibility option (EDI parameters > Allow historic PO types) allows companies to show these deprecated options in Customer EDI order type group. These \* options have been moved to **Order purpose group**
-
+POA Response codes are used to identify the status of information used in a Purchase Order Acknowledgement (POA) for each customer.
 - Click **New** to create a new record. 
--	In the **Name** field, enter the name of the order type group
--	In the **Description** field, enter a description of the order type group
--	In the **Mappings** FastTab, select **Add** to create a new record
--	Select the **Order Type**. Options are: <br>
-    -	**Order** - When receiving a Purchase Order from a customer used to identify a "normal" order using these characters. Creates a standalone D365 sales order.
-    -	\* **Confirmation** - When receiving a Purchase Order Confirmation (POC) from a customer used to identify a "confirmation". Confirms an existing D365 sales order. Usually receive in response to a Purchase Order Acknowledgement (POA) sent to the customer.
-    -	**Agreement** - When receiving a Purchase Order from a customer used to identify a "blanket" order. Creates a D365 sales agreement.
-    -	**Release order** - When receiving a Purchase Order from a customer used to identify a "release" order. Creates a D365 release order against a D365 sales agreement. Customer purchase order document setting 'Create release order without a blanket order' provides options No, Yes, Warning in cases where a release order is recieved without a matching D365 sales agreement.
-    -	\* **Cancellation** - Specifies the sales order cancellation indicator. Cancels the D365 sales order or agreement.
--	Specify the **indicator**/Customer's value used to identify the EDI order type.
+- In the **Name** field, enter the name of the POA response code group
+- In the **Description** field, enter a description of the POA response code group
+- In the **Mappings** FastTab, select **Add** to create a new record
+- Specify the **POA code** to be used for each response code
+- The POA response codes are:
 
-Examples: <br>
-**Order type** 	                  | **X12 examples**                      | **EDIFACT examples**
+**Response code** 	              | **Description**                       | **Example**
 :-------------------------------- |:------------------------------------- |:-------------------------------------
-**Order**                         |	**SA** - Stand Alone Order <br> **KN** - Purchase Order	| **220** - Order 
-**Agreement**                     |	**KA** - Agreement <br> **KB** - Blanket Purchase Agreement | **221** - Blanket order
-**Release order**                 |	**RL** - Release or Delivery Order	  | **226** - Call off order
+<ins>**Header response codes**</ins>
+**Header – accept**               |	Order accepted	                      | A
+**Header – accepted with reserve**|	Order accepted with reserve	          | AR
+**Header – change**               |	• Header: any change to Delivery Window <br> • Line: any change to Quantity, Price or Pack Size | C	
+**Header – not accepted**         |	Order not accepted	                  | NA
+<ins>**Line response codes**</ins>
+**Line price – accept**           |	Item price accepted                   |	PO
+**Line price – advise**           |	Advise of a price difference	      | PA
+**Line item – accept**            |	Item quantity accepted	              | IA
+**Line item – out of stock**      |	Advise of stock shortage	          | IS
+**Line item – withdrawn**         |	Advise item is no longer available	  | LW
+**Line shipment – partial**       |	Advise of partial shipment	          | SP
+**Line shipment – full**          |	Advise of full shipment               |	SF
+**Line item – pack accept**       |	Item pack accepted	                  | LPA
+**Line item – pack difference**   |	Advise of pack difference	          | PD
+**Line item – inner accept**      |	Item inner accepted	                  | LIA
+**Line item – inner difference**  |	Advise of inner difference	          | ID
+
+- In the **Allow auto trigger** field, select if the POA response can be triggered by **Auto set response codes**
+- In the **Allow auto send** field, select if the POA response should be included in the periodic task **Send customer purchase order acknowledgement**
 
 ## Where used
-Customer EDI order type group is assigned on the Customer Trading partner's Options field called **Customer EDI order types**.
+POA response code group is assigned on the Customer Trading partner's Options field called **POA responde code group**.
+
+## Scenarios
+The following section will decribe how the EDI module determines which POA response code to send.
+
+### Line price
+
+
 
 ## Data entities:
-- Customer EDI order type group
-- Customer EDI order type lines
+- POA response code group
+- POA response code group lines
