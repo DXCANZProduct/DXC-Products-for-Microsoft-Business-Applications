@@ -35,21 +35,22 @@ Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 
 ## Customer setup
 1. Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner: <br>
-**EDI > Setup > Customer setup**
-- [Purchase order types]
-- [Order purpose group]
-- [POA response code group]
-- [Order line change type group]
+- **EDI > Setup > Customer setup**
+	- [Purchase order types]
+	- [Order purpose group]
+	- [POA response code group]
+	- [Order line change type group]
 
-  **EDI > Setup**
-- [Unit of measure mapping]
+- EDI > Setup**
+	- [Unit of measure mapping]
 
 2. Assigned on EDI parameters:
-- [Hold codes]
+- **Sales and marketing > Setup > Sales orders > Order hold codes**
+	- [Hold codes]
 
 ## Customer Document type setup
 Setup Document types and assign on Customer Trading partner.
-**EDI > Setup > Document types**
+- **EDI > Setup > Document types**
 Generic information with regards to all modules:
 - [Document types](../../CORE/Setup/Document%20types.md)
 
