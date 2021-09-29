@@ -33,7 +33,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 Users can access the form by navigating to **EDI > Setup > Customer setup > Customer EDI order type group**
 
 EDI purchase orders can be received from trading partners with many order types.  The type identifier received can change the way the order is processed within D365. <br>
-> Note: Fields flagged with /* has been deprecated from **Customer EDI order type group**. Backwards compatibility option (EDI parameters > Allow historic PO types) allows companies to show these deprecated options in Customer EDI order type group. These /* options have been moved to **Order purpose group**
+> Note: Fields flagged with \* has been deprecated from **Customer EDI order type group**. Backwards compatibility option (EDI parameters > Allow historic PO types) allows companies to show these deprecated options in Customer EDI order type group. These /* options have been moved to **Order purpose group**
 
 - Click **New** to create a new record. 
 -	In the **Name** field, enter the name of the order type group
