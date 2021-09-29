@@ -28,8 +28,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Customer setup
-This section provides a short overview of the required prequisites for setting up EDI for Customers. 
-The Trading partner fields are used to describe how the prequisites setups are allocated to an EDI customer:
+This section provides a short overview of the required prequisites for setting up EDI for Customers. <br>
+The Trading partner fields are used to describe how the prequisites setups are allocated to an EDI customer. <br>
 Users can access the form by navigating to **EDI > Setup > Trading partners**
 
 Customer Trading Partner Setup - Quick Summary:
