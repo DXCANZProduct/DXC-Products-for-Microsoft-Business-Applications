@@ -72,13 +72,17 @@ The following section decribes how the EDI module sets the POA auto response cod
 This applicable to Response codes where **Allow auto trigger** is set to Yes.
 
 ### Line price
-- Line price - accept: The sales order line's unit price = Customer's EDI purchase order's unit price
-- Line price - advise: The sales order line's unit price <> Customer's EDI purchase order's unit price.
+- **Line price - accept**: The sales order line's unit price = Customer's EDI purchase order line's unit price.
+- **Line price - advise**: The sales order line's unit price <> Customer's EDI purchase order line's unit price.
 
 ### Line item quantity
-- Line item - accept: Acknowledged quantity = Customer's EDI purchase order's quantity.
-- Line item - out of stock: 
-- line item - withdrawn: Can't be auto triggered.
+- **Line item - accept**: Acknowledged quantity = Customer's EDI purchase order line's quantity.
+- **Line item - out of stock**: Acknowledged quantity <> Customer's EDI purchase order line's quantity. Customer purchase order acknowledgement document setting **Quantity type** is set to use Reserved quantity, and sales order line's reserved quantity is less than the Customer's EDI purchase order line quantity.
+- **Line item - withdrawn**: Can't be auto triggered.
+
+### Line shipment
+- **Line shipment – partial**
+- **Line shipment – full**
 
 ## Data entities:
 - POA response code group
