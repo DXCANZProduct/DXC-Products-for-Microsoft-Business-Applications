@@ -59,9 +59,10 @@ This section will provide a quick overview of the Customer EDI module.
 	- [Customer advanced shipping notice]
 	- [Sales invoice]
 
-Workspaces includes:
+## Workspaces
 - [EDI Document maintenance]
 - [EDI Sales order processing]
 
+## Other
 [Frequently asked questions]
 
