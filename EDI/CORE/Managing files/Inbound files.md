@@ -98,3 +98,6 @@ From the **Inbound files** form, files can be processed to their staging records
 - Select **Inbound Files > Process files** from the ribbon on the Inbound files form
 - Optionally, select the records to include and select **Inbound Files > Process selected files**
 - Select OK
+
+### File types
+Ensure file types/extensions that will be received from Trading partners, are included in **File types** at **Organization administration > Document management > Document management parameters**.
