@@ -40,11 +40,11 @@ EDI purchase orders can be received from trading partners with many order types.
 -	In the **Description** field, enter a description of the order type group
 -	In the **Mappings** FastTab, select **Add** to create a new record
 -	Select the **Order Type**. Options are: <br>
-  -	**Order** - When receiving a PO from a customer used to identify a "normal" order using these characters.
-  -	/* **Confirmation** - When receiving a POC from a customer used to identify a "confirmation".  
-  -	**Agreement** - When receiving a PO from a customer used to identify a "blanket" order.
-  -	**Release order** - When receiving a PO from a customer used to identify a "release" order.
-  -	/* **Cancellation** - Specifies the sales order cancellation indicator.
+   -	**Order** - When receiving a PO from a customer used to identify a "normal" order using these characters.
+    -	\* **Confirmation** - When receiving a POC from a customer used to identify a "confirmation".  
+   -	**Agreement** - When receiving a PO from a customer used to identify a "blanket" order.
+   -	**Release order** - When receiving a PO from a customer used to identify a "release" order.
+   -	\* **Cancellation** - Specifies the sales order cancellation indicator.
 -	Specify the **indicato**r used to identify the EDI order type (Customer's value).
 
 **Order type** 	                  | **X12 examples**                      | **EDIFACT examples**
