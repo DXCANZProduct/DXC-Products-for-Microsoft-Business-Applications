@@ -52,7 +52,7 @@ Customer Trading Partner Setup - Quick Summary (detail to follow):
 **Connection profile**            |	Ability to override the default [EDI connection profile](Connection%20setup.md) on document level. If blank, the trading partner’s Connection profile will be used. |	EDI > Setup > Connection setup
 **Cleanup profile**               |	Ability to override the default [Cleanup profile](Cleanup%20profile.md) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](EDI%20shared%20parameters.md) will be used.  |	EDI > Setup > Cleanup profile
 **Acknowledgement**	              | An Inbound Functional Acknowledgement is required from the trading partner for the outgoing document. Note: Also required to setup the Functional acknowledgement inbound document under Incoming documents.  |	Y/N
-**Enabled** Ability to enable/disable document type for Trading partner	| Y/N
+**Enabled**                       | Ability to enable/disable document type for Trading partner	| Y/N
 <ins>**Incoming documents**</ins> |	It brings the document template, mappings, settings profile, validation and filename mask together to enable the document for the trading partner
 **EDI Document type**             |	Each applicable inbound document type	                                                                   | EDI > Setup > Document types
 **Template**                      |	Document type templates defined for the document type                                                    | EDI > Setup > Document types
