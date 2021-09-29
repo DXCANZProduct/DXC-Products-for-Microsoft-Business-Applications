@@ -60,7 +60,7 @@ The Trading partner provides a centralized location to manage all trading partne
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
-**Trading partner GLN**           |	The GLN we know the trading partner as. <br> This field denotes the trading partner GLN. The module will use this field as a match to <br> - Customer trading partner: Customer account <br> •	Warehouse/3PL trading partner: Warehouse <br> •	Vendor trading partner: Vendor <br> • Freight forwarder landed cost: vendor account with Voyages' **Shipment type** set to _Shipping company_.
+**Trading partner GLN**           |	The GLN we know the trading partner as. <br> This field denotes the trading partner GLN. The module will use this field as a match to <br> • Customer trading partner: Customer account <br> •	Warehouse/3PL trading partner: Warehouse <br> •	Vendor trading partner: Vendor <br> • Freight forwarder landed cost: vendor account with Voyages' **Shipment type** set to _Shipping company_.
 **Company**                       |	The **D365 company** this trading partner relates to 
 **Type**	                        | The **type** of trading partner (i.e. Customer, Warehouse, Vendor, Freight forwarder landed cost)
 **Trading partner account**       |	The **primary identifier** of the trading partner (i.e. Customer account, Warehouse number or Vendor account)
