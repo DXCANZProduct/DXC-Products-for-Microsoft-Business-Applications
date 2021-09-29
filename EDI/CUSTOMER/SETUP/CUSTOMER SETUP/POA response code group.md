@@ -37,8 +37,7 @@ POA Response codes are used to identify the status of information used in a Purc
 - In the **Name** field, enter the name of the POA response code group
 - In the **Description** field, enter a description of the POA response code group
 - In the **Mappings** FastTab, select **Add** to create a new record
-- Specify the **POA code** to be used for each response code
-- The POA response codes are:
+- Specify the **POA code** to be used for each response code. The POA response codes are:
 
 **Response code** 	              | **Description**                       | **Example**
 :-------------------------------- |:------------------------------------- |:-------------------------------------
