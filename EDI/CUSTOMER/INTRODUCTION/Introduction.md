@@ -34,17 +34,22 @@ This section will provide a quick overview of the Customer EDI module.
 Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 
 ## Customer setup
-Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner:
+1. Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner:
+**EDI > Setup > Customer setup**
 - [Purchase order types]
 - [Order purpose group]
 - [POA response code group]
 - [Order line change type group]
+
+**EDI > Setup**
 - [Unit of measure mapping]
 
-Assigned on EDI parameters:
+2. Assigned on EDI parameters:
 - [Hold codes]
 
 ## Customer Document type setup
+Setup Document types and assign on Customer Trading partner.
+**EDI > Setup > Document types**
 Generic information with regards to all modules:
 - [Document types](../../CORE/Setup/Document%20types.md)
 
@@ -61,9 +66,11 @@ Customer module specific document type setup:
 - [Document type summary]
 
 ## Trading partner setup
+**EDI > Setup > Trading partners**
 - [Trading partner]
 
 ## Customer documents
+**EDI > Documents > Customer documents**
 - Staging forms
 	- [Customer purchase order]
 	- [Customer purchase order change]
@@ -73,6 +80,7 @@ Customer module specific document type setup:
 	- [Sales invoice]
 
 ## Workspaces
+The following workspaces are available:
 - EDI Document maintenance
 	- [Applicable to all modules](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md)
 	- [Customer specific]
