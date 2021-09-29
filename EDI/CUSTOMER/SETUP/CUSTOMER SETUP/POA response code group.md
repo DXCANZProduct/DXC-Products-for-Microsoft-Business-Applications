@@ -44,22 +44,24 @@ POA Response codes are used to identify the status of information used in a Purc
 <ins>**Header response codes**</ins>
 **Header – accept**               |	Order accepted	                      | A
 **Header – accepted with reserve**|	Order accepted with reserve	          | AR
-**Header – change**               |	• Header: any change to Delivery Window <br> • Line: any change to Quantity, Price or Pack Size | C	
+**Header – change**               |	Change to the Order header's dates    | C	
 **Header – not accepted**         |	Order not accepted	                  | NA
 <ins>**Line response codes**</ins>
 **Line price – accept**           |	Item price accepted                   |	PO
-**Line price – advise**           |	Advise of a price difference	      | PA
+**Line price – advise**           |	Advise of a price difference	        | PA
 **Line item – accept**            |	Item quantity accepted	              | IA
-**Line item – out of stock**      |	Advise of stock shortage	          | IS
+**Line item – out of stock**      |	Advise of stock shortage	            | IS
 **Line item – withdrawn**         |	Advise item is no longer available	  | LW
 **Line shipment – partial**       |	Advise of partial shipment	          | SP
 **Line shipment – full**          |	Advise of full shipment               |	SF
 **Line item – pack accept**       |	Item pack accepted	                  | LPA
-**Line item – pack difference**   |	Advise of pack difference	          | PD
+**Line item – pack difference**   |	Advise of pack difference	            | PD
 **Line item – inner accept**      |	Item inner accepted	                  | LIA
 **Line item – inner difference**  |	Advise of inner difference	          | ID
 
-- In the **Allow auto trigger** field, select if the POA response can be triggered by **Auto set response codes**
+- In the **Allow auto trigger** field, select if the POA response can be triggered by **Auto set response codes**. <br> The following response codes can only be manually trigger and thus their Allow auto trigger is set to No and disabled:
+    - Header – not accepted
+    - Line item – withdrawn
 - In the **Allow auto send** field, select if the POA response should be included in the periodic task **Send customer purchase order acknowledgement**
 
 ## Where used
