@@ -31,9 +31,9 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ## Version and Support Information
 -	Where can I find contact information for support?
-  - Support contact details can be located on the EDI parameters form on the About tab.
+   - Support contact details can be located on the EDI parameters form on the About tab.
 - Where can I identify the installed version of the EDI module
-  - Navigate to Settings > About.  A list of installed models will be displayed on the Version tab.  Search for Sable 37 EDI. The version information will be displayed on the right (i.e. Sable37 EDI 10.0.14.202009181 (isv))
+   - Navigate to Settings > About.  A list of installed models will be displayed on the Version tab.  Search for Sable 37 EDI. The version information will be displayed on the right (i.e. Sable37 EDI 10.0.14.202009181 (isv))
   
 ## XML Errors
 - XML file errors when processed into the staging table
