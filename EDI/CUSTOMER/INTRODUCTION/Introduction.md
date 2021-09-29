@@ -34,7 +34,7 @@ This section will provide a quick overview of the Customer EDI module.
 Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 
 ## Customer setup
-1. Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner:
+1. Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner: <br>
 **EDI > Setup > Customer setup**
 - [Purchase order types]
 - [Order purpose group]
