@@ -30,6 +30,9 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Introduction
 This section will provide a quick overview of the Customer EDI module.
 
+## Core setup
+Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
+
 ## Customer setup
 Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner:
 - [Purchase order types]
@@ -61,7 +64,6 @@ Customer module specific document type setup:
 - [Trading partner]
 
 ## Customer documents
-
 - Staging forms
 	- [Customer purchase order]
 	- [Customer purchase order change]
@@ -79,4 +81,3 @@ Customer module specific document type setup:
 ## Other
 - [Data entities]
 - [Frequently asked questions]
-
