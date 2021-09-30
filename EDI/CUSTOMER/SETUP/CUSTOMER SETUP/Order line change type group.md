@@ -42,9 +42,9 @@ Manual Processing method overrides below update tolerances. It is still required
 -	Specify the **Order line change type**
 -	Specify the **indicator**/Customer's value for the line change type in EDI order change type
 -	In the **Update tolerance** field, select if the order line change type can update the existing D365 Sales order with the Automatic processing method. The update tolerance is bypassed for Processing method Manual. Options:
-  - **Approve**: If all the line changes received are approved, the sales order will be updated.
-  - **Approve with warning log**: If all the line changes received are approved, the sales order will be updated. Warning log created on EDI staging record.
-  - **Reject with warning log**: If any of the line changes received are Reject, the sales order will not be updated. The Staging record will error, but change can still be viewed via Changes on the Sales order header – EDI ribbon.
+    - **Approve**: If all the line changes received are approved, the sales order will be updated.
+    - **Approve with warning log**: If all the line changes received are approved, the sales order will be updated. Warning log created on EDI staging record.
+    - **Reject with warning log**: If any of the line changes received are Reject, the sales order will not be updated. The Staging record will error, but change can still be viewed via Changes on the Sales order header – EDI ribbon.
 
 The Order line change types are:
 Examples: <br>
