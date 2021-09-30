@@ -28,3 +28,5 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # UOM mapping
+
+See [Customer setup](../../CUSTOMER/SETUP/CUSTOMER%20SETUP/Unit%20of%20measure%20mapping.md)
