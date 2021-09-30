@@ -43,7 +43,7 @@ Customer Trading Partner Setup - Quick Summary:
 **Order line change type group**  |	Order line change type identifiers. Determines the update tolerance for each EDI order change type       | [EDI > Customer setup > Order line change type group](CUSTOMER%20SETUP/Order%20line%20change%20type%20group.md)
 **POA response code group**       |	Status of information used in Purchase order acknowledgement	                                           | [EDI > Customer setup > POA response code group](CUSTOMER%20SETUP/POA%20response%20code%20group.md)
 **No backorders**                 |	Identify if the trading partner accepts backorders.                                                      | Y/N
-**UOM**                           |	Unit of measure mappings for in- and outbound documents	                                                 | EDI > Setup > UOM mapping
+**UOM**                           |	Unit of measure mappings for in- and outbound documents	                                                 | [EDI > Setup > UOM mapping](../../CORE/Setup/UOM%20mapping.md)
 <ins>**Outgoing documents**</ins> |	It brings the document template, mappings, settings profile together to enable the document for the trading partner <br>
 **EDI Document type**             |	Each applicable outbound document type	                                                                 | EDI > Setup > Document types
 **Template**                      |	Document type template		                                                                               | EDI > Setup > Document types
