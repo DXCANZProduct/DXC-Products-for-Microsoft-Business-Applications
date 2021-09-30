@@ -80,7 +80,7 @@ Users can access the form by navigating to tab **Hold codes** on **EDI > Setup >
 ## Item pack sizes
 Where the **System pack** and **System inner** is used to confirm pack sizes on the **Customer purchase order acknowledgement**, the following is required on each item:
 1. Unit conversion between Inner unit and Outer unit
-2. Inner unit assigned
-3. Outer unit assigned
+2. Inner unit
+3. Outer unit
 
 See [Setup item pack sizes](../../CORE/Setup/Item%20pack%20sizes.md) for more details.
