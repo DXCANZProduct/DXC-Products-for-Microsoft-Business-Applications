@@ -30,18 +30,28 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Introduction
 This section will provide a quick overview of the Customer EDI module.
 
-## Customer setup
-Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner:
-- [Purchase order types]
-- [Order purpose group]
-- [POA response code group]
-- [Order line change type group]
-- [Unit of measure mapping]
+## Core setup
+Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 
-Assigned on EDI parameters:
-- [Hold codes]
+## Customer setup
+Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner: <br>
+
+- Customer setup: **EDI > Setup > Customer setup** <br>
+	- [Purchase order types]
+	- [Order purpose group]
+	- [POA response code group]
+	- [Order line change type group]
+
+- EDI Setup: **EDI > Setup** <br>
+	- [Unit of measure mapping]
+
+Assigned on EDI parameters: <br>
+- Sales and marketing setup: **Sales and marketing > Setup > Sales orders > Order hold codes**<br>
+	- [Hold codes] <br>
 
 ## Customer Document type setup
+Setup Document types and assign on Customer Trading partner. <br>
+Users can access the form by navigating to **EDI > Setup > Document types**
 Generic information with regards to all modules:
 - [Document types](../../CORE/Setup/Document%20types.md)
 
@@ -58,10 +68,11 @@ Customer module specific document type setup:
 - [Document type summary]
 
 ## Trading partner setup
+Users can access the form by navigating to **EDI > Setup > Trading partners**
 - [Trading partner]
 
 ## Customer documents
-
+Users can access the forms by navigating to **EDI > Documents > Customer documents**
 - Staging forms
 	- [Customer purchase order]
 	- [Customer purchase order change]
@@ -71,6 +82,7 @@ Customer module specific document type setup:
 	- [Sales invoice]
 
 ## Workspaces
+The following workspaces are available:
 - EDI Document maintenance
 	- [Applicable to all modules](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md)
 	- [Customer specific]
@@ -79,4 +91,3 @@ Customer module specific document type setup:
 ## Other
 - [Data entities]
 - [Frequently asked questions]
-
