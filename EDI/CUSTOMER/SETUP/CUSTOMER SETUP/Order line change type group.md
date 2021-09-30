@@ -48,7 +48,7 @@ Manual Processing method overrides below update tolerances. It is still required
 
 The Order line change types are:
 **Order line change type** 	        | **If update is allowed**                                      | **X12 examples**
-:-----------------------------------|:-------------------------------------                         |:-------------------------------------
+:-----------------------------------|:-------------------------------------                         |:----------------:
 **No change**                       | Line is ignored	                                            | NC
 **Add additional item**             | New sales order line is added to existing sales order	        | AI
 **Delete items**                    | Existing sales order line’s Deliver remainder is cancelled    | DI
