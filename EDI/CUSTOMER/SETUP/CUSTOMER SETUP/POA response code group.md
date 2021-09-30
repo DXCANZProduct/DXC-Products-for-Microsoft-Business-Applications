@@ -72,17 +72,25 @@ The following section decribes how the EDI module sets the POA auto response cod
 This applicable to Response codes where **Allow auto trigger** is set to Yes.
 
 ### Line price
-- **Line price - accept**: The sales order line's unit price = Customer's EDI purchase order line's unit price.
-- **Line price - advise**: The sales order line's unit price <> Customer's EDI purchase order line's unit price.
+- **Line price - accept**: Acknowledged **unit price** = Customer's EDI purchase order line's **unit price**.
+- **Line price - advise**: Acknowledged **unit price** <> Customer's EDI purchase order line's **unit price**.
 
 ### Line item quantity
-- **Line item - accept**: Acknowledged quantity = Customer's EDI purchase order line's quantity.
-- **Line item - out of stock**: Acknowledged quantity <> Customer's EDI purchase order line's quantity. Customer purchase order acknowledgement document setting **Quantity type** is set to use Reserved quantity, and sales order line's reserved quantity is less than the Customer's EDI purchase order line quantity.
+- **Line item - accept**: Acknowledged **quantity** = Customer's EDI purchase order line's **quantity**.
+- **Line item - out of stock**: Acknowledged **quantity** <> Customer's EDI purchase order line's **quantity**. Customer purchase order acknowledgement document setting **Quantity type** is set to use Reserved quantity, and sales order line's reserved quantity is less than the Customer's EDI purchase order line quantity.
 - **Line item - withdrawn**: Can't be auto triggered.
 
 ### Line shipment
-- **Line shipment – partial**
-- **Line shipment – full**
+- **Line shipment – partial**: Customer Trading partner's **No backorder** is set to _Yes_ and Acknowledged **quantity** <> Customer's EDI purchase order line's **quantity**
+- **Line shipment – full**: Customer Trading partner's **No backorder** is set to _No_. Acknowledged quantity vs. Customer's EDI purchase order line's quantity doesn't impact when **No backorder** is set to No.
+
+### Line item pack
+- **Line item - pack accept**: Acknowledged **Pack** = Customer's EDI purchase order line's **Pack**.
+- **Line item - pack difference**: Acknowledged **Pack** <> Customer's EDI purchase order line's **Pack**. Customer purchase order acknowledgement document setting **Pack type** is set to use **System pack**, and sales order line's pack isn't the same as the Customer's EDI purchase order line's pack.
+
+### Line item inner
+- **Line item - inner accept**: Acknowledged **Inner** = Customer's EDI purchase order line's **Inner**.
+- **Line item - inner difference**: Acknowledged **Inner** <> Customer's EDI purchase order line's **Inner**. Customer purchase order acknowledgement document setting **Inner type** is set to use **System inner**, and sales order line's pack isn't the same as the Customer's EDI purchase order line's pack.
 
 ## Data entities:
 - POA response code group
