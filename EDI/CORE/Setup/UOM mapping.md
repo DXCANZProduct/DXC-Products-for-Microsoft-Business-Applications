@@ -33,6 +33,17 @@ Users can access the form by navigating to **EDI > Setup > UOM mapping**
 
 Ability to map a trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). <br>
 
+## Create new UOM mapping
+
+- Click **New** to create a new record. 
+-	In the **Name** field, enter the name of the unit of measure mapping
+-	In the **Description** field, enter a description of the unit of measure mapping
+-	In the **Mappings** FastTab, select **Add** to create a new record
+-	Select the D365 **Unit**. Options are obtained from Units setup at Organization administration > Setup > Units, examples:
+    - box
+    - pcs
+- Specify the **indicator**/trading partner's value used to identify the **EDI Unit**
+
 ## Customer EDI module
 For **Customer** Trading partners, the Unit of measure mapping is utilized on **Sales unit**:
 - Inbound – receive and ability to use Customer’s unit of measure
@@ -57,17 +68,6 @@ For **Vendor** Trading partners, the Unit of measure mapping is utilized on **Pu
 For **Freight forwarder** Trading partners, the Unit of measure mapping is utilized on **Purchase unit** and **Inventory unit**
 - Inbound – receive and ability to use Freight forwarder’s unit of measure
     - Voyage creator
-
-## Create new UOM mapping
-
-- Click **New** to create a new record. 
--	In the **Name** field, enter the name of the unit of measure mapping
--	In the **Description** field, enter a description of the unit of measure mapping
--	In the **Mappings** FastTab, select **Add** to create a new record
--	Select the D365 **Unit**. Options are obtained from Units setup at Organization administration > Setup > Units, examples:
-    - box
-    - pcs
-- Specify the **indicator**/trading partner's value used to identify the **EDI Unit**
 
 ## Where used
 UOM mapping is assigned on the Customer, Vendor and Freight forwarder Trading partner's Options field called **UOM**.
