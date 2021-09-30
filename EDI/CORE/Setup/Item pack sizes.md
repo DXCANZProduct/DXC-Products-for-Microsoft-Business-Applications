@@ -34,7 +34,7 @@ Users can access the form by navigating to **Product information management > Pr
 
 Specify the **Inner unit** and **Outer unit** that should be used to identify an inner and outer quantity for the item. <br>
 Example: Item has a unit conversion of 1 Case = 4 Six packs. **Outer unit** is set to _Case_, and **Inner unit** is set to _Six pack_.
-> Note: Only those units that have a valid unit of conversion are available for selection.
+> Note: Only those units that have a valid unit of conversion are available for selection. 
 
 ## Customer EDI module
 These units and their unit conversion will be used to compare values received on the **Customer purchase order**. <br>
