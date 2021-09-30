@@ -69,7 +69,7 @@ POA response code group is assigned on the Customer Trading partner's Options fi
 
 ## Scenarios
 The following section decribes how the EDI module sets the POA auto response code. <br>
-This applicable to Response codes where **Allow auto trigger** is set to Yes.
+This is applicable to Response codes where **Allow auto trigger** is set to Yes.
 
 ### Line POA response codes
 #### Line price
