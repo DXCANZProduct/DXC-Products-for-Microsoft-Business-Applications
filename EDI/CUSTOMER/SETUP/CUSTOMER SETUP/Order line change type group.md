@@ -48,16 +48,17 @@ Manual Processing method overrides below update tolerances. It is still required
 
 The Order line change types are:
 Examples: <br>
-**Order type** 	                  | **X12 examples**                      | **EDIFACT examples**
+**Order line change type** 	      | **X12 examples**                      | **X12 examples**
 :-------------------------------- |:------------------------------------- |:-------------------------------------
 **Order**                         |	**SA** - Stand Alone Order <br> **KN** - Purchase Order	| **220** - Order 
 **Agreement**                     |	**KA** - Agreement <br> **KB** - Blanket Purchase Agreement | **221** - Blanket order
 **Release order**                 |	**RL** - Release or Delivery Order	  | **226** - Call off order
 
 ## Where used
-Customer EDI order type group is assigned on the Customer Trading partner's Options field called **Customer EDI order types**.
+Customer EDI order line change type group is assigned on the Customer Trading partner's Options field called **Order line change type group**.
 
 ## Data entities:
-- Customer EDI order type group
-- Customer EDI order type lines
+- Customer EDI order line change type group
+- Customer EDI order line change type group line
+
 
