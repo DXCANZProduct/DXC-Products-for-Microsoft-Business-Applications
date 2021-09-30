@@ -47,10 +47,10 @@ Customer Trading Partner Setup - Quick Summary:
 **No backorders**                 |	Identify if the trading partner accepts backorders.                                                      | Y/N
 **UOM**                           |	Unit of measure mappings for in- and outbound documents	                                                 | [EDI > Setup > UOM mapping](../../CORE/Setup/UOM%20mapping.md)
 <ins>**Outgoing documents**</ins> |	It brings the document template, mappings, settings profile together to enable the document for the trading partner <br>
-**EDI Document type**             |	Each applicable outbound document type	                                                                 | EDI > Setup > Document types
-**Template**                      |	Document type template		                                                                               | EDI > Setup > Document types
-**Setting profile**               |	Settings profile		                                                                                     | EDI > Setup > Document types
-**File name setup**               |	Outbound file name		                                                                                   | EDI > Setup > Document types
+**EDI Document type**             |	Each applicable outbound document type	                                                                 | [EDI > Setup > Document types](../../CORE/Setup/Document%20types.md)
+**Template**                      |	Document type template		                                                                               | [EDI > Setup > Document types]
+**Setting profile**               |	Settings profile		                                                                                     | [EDI > Setup > Document types]
+**File name setup**               |	Outbound file name		                                                                                   | [EDI > Setup > Document types]
 **Connection profile**            |	Ability to override the default [EDI connection profile](../../CORE/Setup/Connection%20setup.md) on document level. If blank, the trading partner’s Connection profile will be used. |	[EDI > Setup > Connection setup](../../CORE/Setup/Connection%20setup.md)
 **Cleanup profile**               |	Ability to override the default [Cleanup profile](../../CORE/Setup/Cleanup%20profile.md) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](../../CORE/Setup/EDI%20shared%20parameters.md) will be used.  |	[EDI > Setup > Cleanup profile](../../CORE/Setup/Cleanup%20profile.md)
 **Acknowledgement**	              | An Inbound Functional Acknowledgement is required from the trading partner for the outgoing document. Note: Also required to setup the Functional acknowledgement inbound document under Incoming documents.  |	Y/N
