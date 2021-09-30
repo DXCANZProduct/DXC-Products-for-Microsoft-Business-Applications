@@ -75,3 +75,11 @@ Users can access the form by navigating to tab **Hold codes** on **EDI > Setup >
 **Validation error hold code**    |	Specify the hold code to be used for validation errors                      |[ Sales and marketing > Setup > Sales orders > Order hold codes](CUSTOMER%20SETUP/Hold%20codes.md)
 **POA pending hold code**         |	Specify the hold code to be used for orders that require a POA must be sent | [Sales and marketing > Setup > Sales orders > Order hold codes](CUSTOMER%20SETUP/Hold%20codes.md)
 **POC pending hold code**         |	Specify the hold code to be used for orders that require a PO confirmation (POC) must be received | [Sales and marketing > Setup > Sales orders > Order hold codes](CUSTOMER%20SETUP/Hold%20codes.md)
+
+## Item pack sizes
+Where the **System pack** and **System inner** is used to confirm pack sizes on the **Customer purchase order acknowledgement**, the following is required on each item:
+1. Unit conversion between Inner unit and Outer unit
+2. Inner unit assigned
+3. Outer unit assigned
+
+See [Setup item pack sizes](../../CORE/Setup/Item%20pack%20sizes.md) for more details.
