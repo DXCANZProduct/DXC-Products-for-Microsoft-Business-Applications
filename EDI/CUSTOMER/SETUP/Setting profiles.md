@@ -41,7 +41,7 @@ Setting profiles can be created to specify the handling of specific scenarios. O
 
 The following customer documents have setting profiles:
 - [Customer purchase order](SETTING%20PROFILES/Customer%20purchase%20order.md)
-- [Customer purchase order change]
-- [Customer purchase order acknowledgement]
+- [Customer purchase order change](SETTING%20PROFILES/Customer%20purchase%20order%20change.md)
+- [Customer purchase order acknowledgement](SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md)
 - [Customer advanced shipping notice]
 
