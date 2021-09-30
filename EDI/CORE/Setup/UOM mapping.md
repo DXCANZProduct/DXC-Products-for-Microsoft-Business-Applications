@@ -33,6 +33,7 @@ Users can access the form by navigating to **EDI > Setup > UOM mapping**
 
 Ability to map a trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). <br>
 
+## Customer EDI module
 For **Customer** Trading partners, the Unit of measure mapping is utilized on **Sales unit**:
 - Inbound – receive and ability to use Customer’s unit of measure
   - Customer purchase order and 
@@ -42,6 +43,7 @@ For **Customer** Trading partners, the Unit of measure mapping is utilized on **
   - Customer advanced shipping notice
   - Sales invoice
 
+## Vendor EDI module
 For **Vendor** Trading partners, the Unit of measure mapping is utilized on **Purchase unit**:
 -	Outbound - sent with Vendor’s unit of measure
   - Vendor purchase order and 
@@ -50,6 +52,8 @@ For **Vendor** Trading partners, the Unit of measure mapping is utilized on **Pu
   - Vendor purchase order acknowledgement
   - Vendor advanced shipping notice
   - Sales invoice
+
+## Create new UOM mapping
 
 - Click **New** to create a new record. 
 -	In the **Name** field, enter the name of the unit of measure mapping
