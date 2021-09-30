@@ -5,7 +5,7 @@ title: [EDI Customer]
 description: [EDI Customer setup - Order line change type group]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 23/09/2021
+ms.date: 30/09/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,16 +35,16 @@ Users can access the form by navigating to **EDI > Setup > Customer setup > Orde
 Order line change type codes are used to identify the type of line change received from the customer in the Customer purchase order change document.
 Manual Processing method overrides below update tolerances. It is still required to setup the line change types for manual processed customers in order to map the Customer’s line change type to D365 line change type, and this determines what can be changed/added.
 
--	Click New to create a new record. 
--	In the Name field, enter the name of the order line change type group
--	In the Description field, enter a description of the order line change type group
--	In the Mappings fast tab, select Add to create a new record
--	Specify the Order line change type
--	Specify the Trading partner’s mapped value for the line change type in EDI order change type
--	In the Update tolerance field, select if the order line change type can update the existing D365 Sales order with the Automatic processing method. The update tolerance is bypassed for Processing method Manual. Options:
-  - Approve: If all the line changes received are approved, the sales order will be updated.
-  - Approve with warning log: If all the line changes received are approved, the sales order will be updated. Warning log created on EDI staging record.
-  - Reject with warning log: If any of the line changes received are Reject, the sales order will not be updated. The Staging record will error, but change can still be viewed via Changes on the Sales order header – EDI ribbon.
+-	Click **New** to create a new record. 
+-	In the **Name** field, enter the name of the order line change type group
+-	In the **Description** field, enter a description of the order line change type group
+-	In the **Mappings** FastTab, select **Add** to create a new record
+-	Specify the **Order line change type**
+-	Specify the **indicator**/Customer's value for the line change type in EDI order change type
+-	In the **Update tolerance** field, select if the order line change type can update the existing D365 Sales order with the Automatic processing method. The update tolerance is bypassed for Processing method Manual. Options:
+  - **Approve**: If all the line changes received are approved, the sales order will be updated.
+  - **Approve with warning log**: If all the line changes received are approved, the sales order will be updated. Warning log created on EDI staging record.
+  - **Reject with warning log**: If any of the line changes received are Reject, the sales order will not be updated. The Staging record will error, but change can still be viewed via Changes on the Sales order header – EDI ribbon.
 
 The Order line change types are:
 Examples: <br>
