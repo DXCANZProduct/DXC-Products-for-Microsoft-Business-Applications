@@ -72,6 +72,6 @@ Users can access the form by navigating to tab **Hold codes** on **EDI > Setup >
 
 **Setup** 	                      | **Short description**                 | **Setup path**
 :-------------------------------- |:------------------------------------- |:-------------------------------------
-**Validation error hold code**    |	Specify the hold code to be used for validation errors                      | Sales and marketing > Setup > Sales orders > Order hold codes
-**POA pending hold code**         |	Specify the hold code to be used for orders that require a POA must be sent | Sales and marketing > Setup > Sales orders > Order hold codes
-**POC pending hold code**         |	Specify the hold code to be used for orders that require a PO confirmation (POC) must be received | Sales and marketing > Setup > Sales orders > Order hold codes
+**Validation error hold code**    |	Specify the hold code to be used for validation errors                      |[ Sales and marketing > Setup > Sales orders > Order hold codes](CUSTOMER%20SETUP/Hold%20codes.md)
+**POA pending hold code**         |	Specify the hold code to be used for orders that require a POA must be sent | [Sales and marketing > Setup > Sales orders > Order hold codes](CUSTOMER%20SETUP/Hold%20codes.md)
+**POC pending hold code**         |	Specify the hold code to be used for orders that require a PO confirmation (POC) must be received | [Sales and marketing > Setup > Sales orders > Order hold codes](CUSTOMER%20SETUP/Hold%20codes.md)
