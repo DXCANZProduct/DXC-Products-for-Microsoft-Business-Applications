@@ -63,16 +63,14 @@ D365 sales order line allowed changes by Order line change type:
 **Order line change type**  | **Requested dates** | **Add new items** | **Cancel deliver remainder** | **Sales qty increase** | **Sales qty decrease** | **Sales unit price**
 :---------------------------|:--:                 | :--:              | :--:                         | :--:                   | :--:                   | :--:
 **No change**	            | N                   |	N	              | N                            |	N                     | N                      | N
-**Add additional item**	N/A	Y	N/A	N/A	N/A	N/A
-**Delete items**	N	N	Y	N	N	N
-**Quantity decrease**	N	N	N	N
-Y (If doc setting allows)	Y	N
-**Quantity increase**	N	N	N	Y	N
-Y (If doc setting allows)	N
-**Change of dates**	Y	N	N	N	N	N
-**Price change**	N	N	N	N	N	Y
-**Price and quantity change**	N	N	N	Y	Y	Y
-**Changes to line items**	Y	N	N	Y	Y	Y
+**Add additional item**	    | N/A	              | Y	              | N/A	                         | N/A	                  | N/A	                   | N/A
+**Delete items**	        | N                   |	N	              | Y	                         | N                      |	N                      | N
+**Quantity decrease**	    | N                   |	N                 |	N                            | N <br> Y (If doc setting allows) | Y            | N
+**Quantity increase**	    | N                   | N	              | N	                         | Y	                  | N <br> Y (If doc setting allows) | N
+**Change of dates**	        | Y	                  |	N	              | N	                         | N	                  | N                      | N
+**Price change**	        | N                   |	N                 |	N                            | N                      |	N                      | Y
+**Price and quantity change** | N                 |	N                 |	N                            | Y	                  | Y	                   | Y
+**Changes to line items**	| Y	                  | N                 |	N                            | Y                      |	Y                      | Y
 
 
 ## Where used
@@ -81,5 +79,3 @@ Customer EDI order line change type group is assigned on the Customer Trading pa
 ## Data entities:
 - Customer EDI order line change type group
 - Customer EDI order line change type group line
-
-
