@@ -53,6 +53,11 @@ For **Vendor** Trading partners, the Unit of measure mapping is utilized on **Pu
   - Vendor advanced shipping notice
   - Sales invoice
 
+## Freight forwarder landed cost EDI module
+For **Freight forwarder** Trading partners, the Unit of measure mapping is utilized on **Purchase unit** and **Inventory unit**
+- Inbound – receive and ability to use Freight forwarder’s unit of measure
+   - Voyage creator
+
 ## Create new UOM mapping
 
 - Click **New** to create a new record. 
