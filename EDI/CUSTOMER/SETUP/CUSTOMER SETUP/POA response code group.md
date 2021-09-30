@@ -108,7 +108,7 @@ This is applicable to Response codes where **Allow auto trigger** is set to Yes.
     - Line item - inner
 - **Header - change**: <br>
     - When either of the acknowledged dates (deadline or delivery) differ from Customer's dates
-    - Line codes have no effect
+    - Line response codes have no effect
 
 ## Data entities:
 - POA response code group
