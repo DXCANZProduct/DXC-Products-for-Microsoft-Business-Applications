@@ -70,7 +70,7 @@ For **Freight forwarder** Trading partners, the Unit of measure mapping is utili
 - Specify the **indicator**/trading partner's value used to identify the **EDI Unit**
 
 ## Where used
-UOM mapping is assigned on the Customer, Vendor and Freight forwarder Trading partner's Options field called **UOM mapping**.
+UOM mapping is assigned on the Customer, Vendor and Freight forwarder Trading partner's Options field called **UOM**.
 
 ## Data entities:
 -	UOM mapping
