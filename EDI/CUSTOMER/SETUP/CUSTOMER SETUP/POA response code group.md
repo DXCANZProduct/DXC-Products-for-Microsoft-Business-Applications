@@ -74,7 +74,7 @@ This is applicable to Response codes where **Allow auto trigger** is set to Yes.
 ### Line POA response codes
 #### Line price
 - **Line price - accept**: Acknowledged **unit price** = Customer's EDI purchase order line's **unit price**.
-- **Line price - advise**: Acknowledged **unit price** <> Customer's EDI purchase order line's **unit price**.
+- **Line price - advise**: Acknowledged **unit price** <> Customer's EDI purchase order line's **unit price**. Customer purchase order document setting **Use customer price** is set to _Yes_, and sales order line's unit price doesn't equal the Customer's EDI purchase order line's unit price.
 
 #### Line item quantity
 - **Line item - accept**: Acknowledged **quantity** = Customer's EDI purchase order line's **quantity**.
