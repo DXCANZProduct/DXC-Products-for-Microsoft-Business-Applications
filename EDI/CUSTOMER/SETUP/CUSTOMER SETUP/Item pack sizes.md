@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [EDI Customer]
-description: [EDI Customer setup - Item pack sizes]
+title: [EDI Core]
+description: [EDI Core - Item pack sizes]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 1/10/2021
