@@ -97,18 +97,18 @@ This is applicable to Response codes where **Allow auto trigger** is set to Yes.
 - **Header - accept**: When all of below applies <br>
     - Header acknowledged dates = Customer's dates
     - Line price - accept
-        - Line item - accept
-        - Line item - pack accept
-        - Line item - inner accept
+    - Line item - accept
+     - Line item - pack accept
+    - Line item - inner accept
 - **Header - accepted with reserve**: <br>
-        - Header acknowledged dates = Customer's dates, and any of below are not accept:
-        - Line price
-        - Line item
-        - Line item - pack
-        - Line item - inner
+    -  Header acknowledged dates = Customer's dates, and any of below are not accept:
+    - Line price
+    - Line item
+    - Line item - pack
+    - Line item - inner
 - **Header - change**: <br>
-        - When either of the acknowledged dates (deadline or delivery) differ from Customer's dates
-        - Line codes have no effect
+    - When either of the acknowledged dates (deadline or delivery) differ from Customer's dates
+    - Line codes have no effect
 
 ## Data entities:
 - POA response code group
