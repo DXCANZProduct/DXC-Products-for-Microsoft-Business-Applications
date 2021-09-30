@@ -29,11 +29,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Unit of measure mapping
 
-Users can access the form by navigating to **EDI > Setup > UOM mapping**
-
 Ability to map a trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). <br>
-
-## Create new UOM mapping
+Users can access the form by navigating to **EDI > Setup > UOM mapping**
 
 - Click **New** to create a new record. 
 -	In the **Name** field, enter the name of the unit of measure mapping
