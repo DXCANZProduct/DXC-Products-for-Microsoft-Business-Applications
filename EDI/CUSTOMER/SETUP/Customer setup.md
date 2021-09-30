@@ -66,7 +66,8 @@ Customer Trading Partner Setup - Quick Summary:
 **Acknowledgement**	              | Trading partner requires an Outbound Functional Acknowledgement for the incoming document. Note: Also required to setup the Functional acknowledgement outbound document under Outgoing documents.  | Y/N
 **Enabled**                       |	Ability to enable/disable document type for Trading partner	                                              | Y/N
 
-## EDI parameters
+## Order hold codes
+During the sales process for EDI orders, there are times when a sales order must be placed on hold. When a sales order is placed on hold, an order hold code is assigned to the sales order to indicate the reason for the hold. <br>
 The following Customer setup is required on EDI parameters. <br>
 Users can access the form by navigating to tab **Hold codes** on **EDI > Setup > EDI parameters**.
 
