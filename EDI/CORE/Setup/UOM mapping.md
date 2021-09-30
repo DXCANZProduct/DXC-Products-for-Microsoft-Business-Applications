@@ -36,27 +36,27 @@ Ability to map a trading partner’s unit of measure (example kgs) to D365 unit 
 ## Customer EDI module
 For **Customer** Trading partners, the Unit of measure mapping is utilized on **Sales unit**:
 - Inbound – receive and ability to use Customer’s unit of measure
-   - Customer purchase order and 
-   - Customer purchase order change
+    - Customer purchase order and 
+    - Customer purchase order change
 -	Outbound - sent with Customer’s unit of measure
-   - Customer purchase order acknowledgement
-   - Customer advanced shipping notice
-   - Sales invoice
+    - Customer purchase order acknowledgement
+    - Customer advanced shipping notice
+    - Sales invoice
 
 ## Vendor EDI module
 For **Vendor** Trading partners, the Unit of measure mapping is utilized on **Purchase unit**:
 -	Outbound - sent with Vendor’s unit of measure
-   - Vendor purchase order and 
-   - Vendor purchase order change
+    - Vendor purchase order and 
+    - Vendor purchase order change
 - Inbound – receive and ability to use Vendor’s unit of measure
-   - Vendor purchase order acknowledgement
-   - Vendor advanced shipping notice
-   - Sales invoice
+    - Vendor purchase order acknowledgement
+    - Vendor advanced shipping notice
+    - Sales invoice
 
 ## Freight forwarder landed cost EDI module
 For **Freight forwarder** Trading partners, the Unit of measure mapping is utilized on **Purchase unit** and **Inventory unit**
 - Inbound – receive and ability to use Freight forwarder’s unit of measure
-   - Voyage creator
+    - Voyage creator
 
 ## Create new UOM mapping
 
