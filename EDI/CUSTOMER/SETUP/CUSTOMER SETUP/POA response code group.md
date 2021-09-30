@@ -95,8 +95,8 @@ This is applicable to Response codes where **Allow auto trigger** is set to Yes.
 
 ### Header POA response codes
 - **Header - accept**: When all of below applies <br>
-        - Header acknowledged dates = Customer's dates
-        - Line price - accept
+    - Header acknowledged dates = Customer's dates
+    - Line price - accept
         - Line item - accept
         - Line item - pack accept
         - Line item - inner accept
