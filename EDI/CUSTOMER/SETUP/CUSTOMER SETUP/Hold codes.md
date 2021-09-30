@@ -31,3 +31,9 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ## Setup order hold codes
 
 Users can access the form by navigating to **Sales and marketing > Setup > Sales orders > Order hold codes**
+
+During the sales process for EDI orders, there are times when a sales order must be placed on hold. When a sales order is placed on hold, an order hold code is assigned to the sales order to indicate the reason for the hold. 
+Hold scenario examples:
+-	**Validation error hold code**: Customer sales price is used when creating sales order, but outside of allowed positive/negative variance (document type > setting profile) and Sales price validation is setup as Error tolerance (document type > validation)
+-	**POA pending hold code**: Customer POA document setting Lock order is yes which means the sales order is put on hold till POA has been sent to the Customer.
+-	**POC pending hold code**: Customer POA document setting PO confirmation required is yes which means the sales order is put on hold till Confirmation has been received from the Customer.
