@@ -29,8 +29,10 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Customer setup
 This section provides a short overview of the required prequisites for setting up EDI for Customers. <br>
+
+## Trading partner
 The Trading partner fields are used to describe how the prequisites setups are allocated to an EDI customer. <br>
-Users can access the form by navigating to **EDI > Setup > Trading partners**
+Users can access the form by navigating to **EDI > Setup > Trading partners** <br>
 
 Customer Trading Partner Setup - Quick Summary:
 **Setup** 	                      | **Short description**                 | **Setup path**
@@ -63,3 +65,13 @@ Customer Trading Partner Setup - Quick Summary:
 **Cleanup profile**               |	Ability to override the default [Cleanup profile](../../CORE/Setup/Cleanup%20profile.md) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](../../CORE/Setup/EDI%20shared%20parameters.md) will be used. |	EDI > Setup > Cleanup profile
 **Acknowledgement**	              | Trading partner requires an Outbound Functional Acknowledgement for the incoming document. Note: Also required to setup the Functional acknowledgement outbound document under Outgoing documents.  | Y/N
 **Enabled**                       |	Ability to enable/disable document type for Trading partner	                                              | Y/N
+
+## EDI parameters
+The following Customer setup is required on EDI parameters. <br>
+Users can access the form by navigating to tab **Hold codes** on **EDI > Setup > EDI parameters**.
+
+**Setup** 	                      | **Short description**                 | **Setup path**
+:-------------------------------- |:------------------------------------- |:-------------------------------------
+**Validation error hold code**    |	Specify the hold code to be used for validation errors                      | Sales and marketing > Setup > Sales orders > Order hold codes
+**POA pending hold code**         |	Specify the hold code to be used for orders that require a POA must be sent | Sales and marketing > Setup > Sales orders > Order hold codes
+**POC pending hold code**         |	Specify the hold code to be used for orders that require a PO confirmation (POC) must be received | Sales and marketing > Setup > Sales orders > Order hold codes
