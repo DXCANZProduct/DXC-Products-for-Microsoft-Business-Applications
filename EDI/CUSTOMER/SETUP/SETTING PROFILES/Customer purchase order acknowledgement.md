@@ -48,17 +48,9 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Pack type**       |	Specify if the customer or system pack should be used as the default	| This option will be used to automatically set the **acknowledged pack quantity**.
 **Inner type**      |	Specify if the customer or system inner should be used as the default	| This option will be used to automatically set the **acknowledged inner quantity**.
 **Field delimiter** |	Specify the field delimiter to use for the POA response codes. Line item status is a combination of the following: Price code + Qty code + Pack code + Inner Code. The field delimiter is used inbetween the codes.
-<ins>**Response codes**</ins>
-Ability to default the POA response codes sent to Customer on the POA.
-For None a blank POA response code needs to be set up with Allow auto send set to Yes
-Auto-triggered option uses automatic POA response codes as calculated by Auto set response codes
-Header acknowledgement default	Specify the default header acknowledgement response code	•	Auto-triggered (default)
-•	None
-•	Header – accept
-•	Header – accepted with reserve
-•	Header – change
-•	Header – not accepted
-Line item status price default	Specify the default line item status price acknowledgement response code	•	Auto-triggered (default)
+<ins>**Response codes**</ins> | Ability to default the POA response codes sent to Customer on the POA. <br> For **None** a blank POA response code needs to be set up with Allow auto send set to Yes. <br> **Auto-triggered** option uses automatic POA response codes as calculated by **Auto set response codes**
+**Header acknowledgement default**  |	Specify the default header acknowledgement response code	| •	Auto-triggered (default) <br> •	None <br> •	Header – accept <br> •	Header – accepted with reserve <br> •	Header – change <br> •	Header – not accepted
+**Line item status price default**	Specify the default line item status price acknowledgement response code	•	Auto-triggered (default)
 •	None
 •	Line price – accept
 •	Line price – advise
