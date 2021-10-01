@@ -30,8 +30,16 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Customer - Document types
 
 ## Setting up Document types
-1. [File templates](../../EDI/CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
-2. [Setting profiles](Setting%20profiles.md): where applicable for the document type
-3. [Validation profiles](Validation%20profiles.md): where applicable for the document type
-4. [Outbound file names](../../EDI/CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
-5. [Field metadata](DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
+- [File templates](../../EDI/CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
+- [Setting profiles](Setting%20profiles.md): where applicable for the document type
+- [Validation profiles](Validation%20profiles.md): where applicable for the document type
+- [Outbound file names](../../EDI/CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
+- [Field metadata](DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
+
+## Documents
+Staging data can be viewed and manually processed:
+- [Customer purchase order](../DOCUMENTS/Customer%20purchase%20order.md)
+- [Customer purchase order change](../DOCUMENTS/Customer%20Purchase%20order%20change.md)
+- [Customer purchase order acknowledgement](../DOCUMENTS/Customer%20Purchase%20order%20acknowledgement.md)
+- [Customer advanced shipping notice](../DOCUMENTS/Customer%20advanced%20shipping%20notice.md)
+- [Sales invoice](../DOCUMENTS/Sales%20invoice.md)
