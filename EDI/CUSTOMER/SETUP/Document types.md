@@ -32,6 +32,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ## Setting up Document types
 - [File templates](../../EDI/CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
 - [Setting profiles](Setting%20profiles.md): where applicable for the document type
+    - [Customer purchase order](SETTING%20PROFILES/Customer%20purchase%20order.md)
 - [Validation profiles](Validation%20profiles.md): where applicable for the document type
 - [Outbound file names](../../EDI/CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
 - [Field metadata](DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
