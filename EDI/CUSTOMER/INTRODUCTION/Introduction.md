@@ -61,8 +61,8 @@ Generic information with regards to all modules:
 - [Document types](../../CORE/Setup/Document%20types.md)
 
 Customer module specific document type setup:
-- [Seting profiles]
-	- [Customer purchase order]
+- Seting profiles
+	- [Customer purchase order](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md)
 	- [Customer purchase order change]
 	- [Customer purchase order acknowledgement]
 	- [Customer advanced shipping notice]
