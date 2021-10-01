@@ -36,38 +36,16 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 - Specify the **Settings profile id** and **Description** of the profile.
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details.
 
-Field	Description	Options/Example
-Purchase order
-Item ID Source	Determine the method of item identification used by this customer when ordering products. Where the External item number, GTIN or Barcode is unique per Variant, EDI will create the sales order against the correct variant, i.e. the customer doesn’t have to supply variant details in inbound document.	•	Our Item number - this is the item ID on the items form
-•	External item number - this is the item Id on the customer external item form
-•	GTIN - this is the GTIN assigned to an item
-•	Barcode - This is the Barcode assigned to an item.
-Price includes tax	Specify if the price (line amount &/or unit price) received from the Customer includes tax 	Yes/No
-Use Customer Price	Select this flag to use the customer's price on the sales order	Yes/No
-Yes: If there is a variance between the trade agreement /list price stored in D365 and the Customers price received in the purchase order, the purchase order will be used if within the variance range.
-Maximum negative price variance	Where “Use Customer Price” = Yes:
-Specify the maximum negative price variance that can occur without warning. 	It is recommended that these settings are set to at least 0.01 if the 'include tax flag is ticked' to avoid any rounding differences between the two solutions being flagged.
-Maximum positive price variance	Where “Use Customer Price” = Yes:
-Specify the maximum positive price variance that can occur without warning	It is recommended that these settings are set to at least 0.01 if the 'include tax flag is ticked' to avoid any rounding differences between the two solutions being flagged.
-Create release order without blanket order	The action taken when a release order is received without a blanket order	•	No - do not allow the release order
-•	Yes - allow the release order
-•	Warning - allow the release order with a warning message
-Duplicate tolerance	If a PO is received twice D365 needs to determine what to do with it	•	Error - Duplicate PO’s not allowed 
-Example:
-PO#1234 exists
-PO#1234 arrived in EDI – ERROR
-•	Accept - Duplicate PO’s allowed
-Example:
-PO#1234 exists
-PO#1234 arrived in EDI – create new SO
-•	Accept on flagged orders - Duplicate PO's allowed if existing order flagged – allows duplicate for where the “bypass duplicate check” on the sales order header = YES
-Example:
-PO#1234 exists
-SO flagged bypass duplicate check = YES
-PO#1234 arrived in EDI – create new SO
-PO#1234 exists
-SO flagged bypass duplicate check = NO
-PO#1234 arrived in EDI – ERROR
+**Field**           |	**Description**	                          | **Options/Example**
+:-------            |:-------                                   |:----------
+<ins>Purchase order</ins>
+**Item ID Source**  |	Determine the method of item identification used by this customer when ordering products. Where the External item number, GTIN or Barcode is unique per Variant, EDI will create the sales order against the correct variant, i.e. the customer doesn’t have to supply variant details in inbound document.	| •	**Our Item number** - this is the item ID on the items form <br> •	**External item number** - this is the item Id on the customer external item form <br> •	**GTIN** - this is the GTIN assigned to an item <br> •	**Barcode** - This is the Barcode assigned to an item.
+**Price includes tax**  |	Specify if the price (line amount &/or unit price) received from the Customer includes tax 	  | Yes/No
+**Use Customer Price**  |	Select this flag to use the customer's price on the sales order	                              | • **Yes**: If there is a variance between the trade agreement /list price stored in D365 and the Customers price received in the purchase order, the purchase order will be used if within the variance range. <br> • **No**: System price will be used when creating the sales order.
+**Maximum negative price variance** |	Where **Use Customer Price** is set to _Yes_: <br> Specify the maximum negative price variance that can occur without warning. 	| It is recommended that these settings are set to at least 0.01 if the '**Price include tax** is ticked' to avoid any rounding differences between the two solutions being flagged.
+**Maximum positive price variance** | Where **Use Customer Price** is set to _Yes_: <br> Specify the maximum positive price variance that can occur without warning	| It is recommended that these settings are set to at least 0.01 if the 'include tax flag is ticked' to avoid any rounding differences between the two solutions being flagged.
+**Create release order without blanket order** | The action taken when a release order is received without a blanket order	| •	**No** - do not allow the release order <br> •	**Yes** - allow the release order <br> •	**Warning** - allow the release order with a warning message
+**Duplicate tolerance** |	If a Customer purchase order (Customer requisition) is received more than once, D365 needs to determine what to do with the duplicate/s | •	**Error** - Duplicate purchase orders not allowed and the staging record will error and not create an additional D365 sales order. <br> •	**Accept** - Duplicate purchase orders are allowed. Duplicate purchase orders will create a new D365 sales order. <br> •	**Accept on flagged orders** - Duplicate purchase orders are only allowed if existing sales order is flagged to allow duplicates. On the original sales order header set on the **EDI FastTab** set **Bypass duplicate check** to _Yes_. Staging records with a duplicate Customer requisition where the sales order's Bypass duplicate check is set to _No_ will error.
 Update confirmed ship date	Updates the confirmed ship and receipt dates on the sales order header which are also used in the POA	Yes/No
 Purchase agreement
 Agreement classification	Select the agreement classification used when blanket orders are created	
