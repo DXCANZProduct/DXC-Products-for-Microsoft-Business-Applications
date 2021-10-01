@@ -29,7 +29,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Customer - Document types
 
-## Setting up Document types:
+## Setting up Document types
 1. [File templates](../../EDI/CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
 2. [Setting profiles](Setting%20profiles.md): where applicable for the document type
 3. [Validation profiles](Validation%20profiles.md): where applicable for the document type
