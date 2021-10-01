@@ -29,7 +29,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Customer document type setting profiles - Purchase order change
 
-Users can access the form by navigating to **EDI > Setup > Document types**.
+Users can access the form by navigating to **EDI > Setup > Document types**. <br>
 < Note: Customer purchase order change doesn’t apply to Sales agreement order types.
 
 - To create a new record, select document type **Customer purchase order change**.
