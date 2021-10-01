@@ -37,7 +37,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**. <br
 - Specify the **Settings profile id** and **Description** of the profile.
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details.
 
-\** Applies only to Automatic processing method. When Change is manually approved these document settings and validations are ignored and applicable D365 sales order fields updated. 
+\** Applies only to **Automatic** processing method. When Change is manually approved these document settings and validations are ignored and applicable D365 sales order fields updated. 
 
 **Field**             |	**Description**	                          | **Options/Example**
 :-------              |:-------                                   |:----------
