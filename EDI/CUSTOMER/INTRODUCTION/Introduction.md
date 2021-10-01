@@ -48,7 +48,7 @@ Used to map D365/EDI value to Customer's value and assigned on Customer Trading 
 
 ### Assigned on EDI parameters:
 - Sales and marketing setup: **Sales and marketing > Setup > Sales orders > Order hold codes**<br>
-	- [Hold codes] <br>
+	- [Hold codes](../SETUP/CUSTOMER%20SETUP/Hold%20codes.md)
 
 ### Assigned on items:
 Required where the confirmed pack sizes within the Customer purchase order acknowledgement is set to use System pack and System inner. <br>
