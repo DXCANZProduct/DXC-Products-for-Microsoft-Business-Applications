@@ -51,7 +51,7 @@ Used to map D365/EDI value to Customer's value and assigned on Customer Trading 
 	- [Hold codes](../SETUP/CUSTOMER%20SETUP/Hold%20codes.md)
 
 ### Assigned on items:
-- Required where the confirmed pack sizes within the Customer purchase order acknowledgement is set to use System pack and System inner. Setup at **Product information management > Products > Released products and selecting FastTab Manage inventory**
+- Required where the confirmed pack sizes within the Customer purchase order acknowledgement is set to use System pack and/or System inner. Setup at **Product information management > Products > Released products and selecting FastTab Manage inventory**
 	- [Item pack sizes](../../CORE/Setup/Item%20pack%20sizes.md)
 
 ## Customer Document type setup
