@@ -37,7 +37,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**. <br
 - Specify the **Settings profile id** and **Description** of the profile.
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details.
 
-/** Applies only to Automatic processing method. When Change is manually approved these document settings and validations are ignored and applicable D365 sales order fields updated. 
+\** Applies only to Automatic processing method. When Change is manually approved these document settings and validations are ignored and applicable D365 sales order fields updated. 
 
 **Field**             |	**Description**	                          | **Options/Example**
 :-------              |:-------                                   |:----------
@@ -45,8 +45,8 @@ Users can access the form by navigating to **EDI > Setup > Document types**. <br
 **Processing method** |	Specify method of processing purchase order changes	| •	**Automatic** – Document settings and validation will be used to automatically process the change and update the D365 sales order, if within the allowed parameters. <br> •	**Manual** – Document settings and validation doesn’t apply and the change is manually approved via the **Sales order processing workspace > Pending PO changes** or **Sales order EDI header > Changes**
 <ins>Purchase order</ins>
 **Item ID Source**  |	Determine the method of item identification used by this customer when ordering products. Where the External item number, GTIN or Barcode is unique per Variant, EDI will create the sales order against the correct variant, i.e. the customer doesn’t have to supply variant details in inbound document.	| •	**Our Item number** - this is the item ID on the items form <br> •	**External item number** - this is the item Id on the customer external item form <br> •	**GTIN** - this is the GTIN assigned to an item <br> •	**Barcode** - This is the Barcode assigned to an item.
-/** **Document status** |	Allow sales orders up to and including this status to be changed	| •	None <br> •	Confirmation <br> •	Picking list / Released to warehouse <br> •	Delivery note <br> •	Tax invoice
-/** **Allow header update** |	If allowed, applicable D365 Sales order fields are updated	  | Yes/No
+\** **Document status** |	Allow sales orders up to and including this status to be changed	| •	None <br> •	Confirmation <br> •	Picking list / Released to warehouse <br> •	Delivery note <br> •	Tax invoice
+\** **Allow header update** |	If allowed, applicable D365 Sales order fields are updated	  | Yes/No
 **Don’t send POA for changes**  |	If the customer has Customer purchase order acknowledgement (POA) setup, should it be sent for the PO Change. Not all customers want/can process a POA for a PO Change.	  | Yes/No
 <ins>**Dates**</ins>
 **Update confirmed ship date**  |	Similar to **Simulate delivery dates**, updates the **Confirmed ship date** and **Confirmed receipt date** on the sales order header, which are also used in the Customer purchase order acknowledgement | Yes/No
@@ -56,7 +56,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**. <br
 **Maximum negative price variance** |	Where **Use Customer Price** is set to _Yes_: <br> Specify the maximum negative price variance that can occur without warning. 	| It is recommended that these settings are set to at least 0.01 if the '**Price include tax** is ticked' to avoid any rounding differences between the two solutions being flagged.
 **Maximum positive price variance** | Where **Use Customer Price** is set to _Yes_: <br> Specify the maximum positive price variance that can occur without warning	| It is recommended that these settings are set to at least 0.01 if the 'include tax flag is ticked' to avoid any rounding differences between the two solutions being flagged.
 <ins>**Quantities**</ins>
-/** **Allow quantity decrease on increase type**  |	If the line change type is quantity increase and the imported quantity is a decrease, make the change regardless	| Yes/No
+\** **Allow quantity decrease on increase type**  |	If the line change type is quantity increase and the imported quantity is a decrease, make the change regardless	| Yes/No
 ** **Allow quantity increase on decrease type**   |	If the line change type is quantity decrease and the imported quantity is an increase, make the change regardless	| Yes/No
 
 ## Where used
