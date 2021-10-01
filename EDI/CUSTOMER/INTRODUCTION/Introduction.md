@@ -34,7 +34,8 @@ This section will provide a quick overview of the Customer EDI module.
 Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 
 ## Customer setup
-1. Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner: <br>
+### Assigned on Customer Trading partner
+Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner: <br>
 
 - Customer setup: **EDI > Setup > Customer setup** <br>
 	- [Purchase order types](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md)
@@ -45,11 +46,11 @@ Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 - Core Setup: **EDI > Setup** <br>
 	- [Unit of measure mapping](../../CORE/Setup/UOM%20mapping.md)
 
-2. Assigned on EDI parameters: <br>
+### Assigned on EDI parameters:
 - Sales and marketing setup: **Sales and marketing > Setup > Sales orders > Order hold codes**<br>
 	- [Hold codes] <br>
 
-3. Assigned on items: <br>
+### Assigned on items:
 Required where the confirmed pack sizes within the Customer purchase order acknowledgement is set to use System pack and System inner. <br>
 [Item pack sizes](../../CORE/Setup/Item%20pack%20sizes.md)
 
