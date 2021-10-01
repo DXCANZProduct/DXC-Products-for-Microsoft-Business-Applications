@@ -30,11 +30,14 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Customer document type setting profiles - Purchase order change
 
 Users can access the form by navigating to **EDI > Setup > Document types**.
+< Note: Customer purchase order change doesn’t apply to Sales agreement order types.
 
 - To create a new record, select document type **Customer purchase order change**.
 - Select the **New** button in the **Settings profiles** FastTab.
 - Specify the **Settings profile id** and **Description** of the profile.
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details.
+
+/** Applies only to Automatic processing method. When Change is manually approved these document settings and validations are ignored and applicable D365 sales order fields updated. 
 
 **Field**           |	**Description**	                          | **Options/Example**
 :-------            |:-------                                   |:----------
@@ -63,4 +66,4 @@ BankReconciliationMatchingRuleEntity  |	Option to automatically Complete the Sal
 The **Setting profile** can be assigned on the Incoming documents FastTab to document type **Customer purchase order** for the Customer Trading partner at **EDI > Setup > Trading partners**.
 
 ## Data entity
-- EDI Settings - PO
+- EDI Settings - Customer purchase order change
