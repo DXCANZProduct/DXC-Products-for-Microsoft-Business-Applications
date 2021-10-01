@@ -31,16 +31,16 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ## Setting up Document types
 - [File templates](../../EDI/CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
-- Setting profiles: applicable for the following document types
+- Setting profiles: applicable to the following document types
     - [Customer purchase order](SETTING%20PROFILES/Customer%20purchase%20order.md)
     - [Customer purchase order change](SETTING%20PROFILES/Customer%20purchase%20order%20change.md)
     - [Customer purchase order acknowledgement](SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md)
     - [Customer advanced shipping notice](SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)
-- Validation profiles: applicable for the following inbound document types
+- Validation profiles: applicable to the following inbound document types
     - [Customer purchase order](VALIDATION%20PROFILES/Customer%20purchase%20order.md)
     - [Customer purchase order change](VALIDATION%20PROFILES/Customer%20purchase%20order%20change.md)
 - [Outbound file names](../../EDI/CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
-- [Field metadata](DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
+- [Field metadata](../../EDI/CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
 
 ## Documents
 Staging data can be viewed and manually processed:
