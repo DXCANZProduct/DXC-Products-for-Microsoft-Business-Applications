@@ -2,10 +2,10 @@
 # required metadata
 
 title: [EDI Customer]
-description: [EDI Customer Setting profiles - Customer purchase order]
+description: [EDI Customer Setup - Document type Setting profiles - Customer purchase order]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 23/09/2021
+ms.date: 1/10/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,4 +27,66 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-#Customer setup
+# Customer document type setting profiles - Purchase order
+
+Users can access the form by navigating to **EDI > Setup > Document types**.
+
+- To create a new record, select document type **Customer purchase order**.
+- Select the **New** button in the **Settings profiles** FastTab.
+- Specify the **Settings profile id** and **Description** of the profile.
+- Select the Settings profile id hyperlink or the **Setup** button to update profile details.
+
+Field	Description	Options/Example
+Purchase order
+Item ID Source	Determine the method of item identification used by this customer when ordering products. Where the External item number, GTIN or Barcode is unique per Variant, EDI will create the sales order against the correct variant, i.e. the customer doesn’t have to supply variant details in inbound document.	•	Our Item number - this is the item ID on the items form
+•	External item number - this is the item Id on the customer external item form
+•	GTIN - this is the GTIN assigned to an item
+•	Barcode - This is the Barcode assigned to an item.
+Price includes tax	Specify if the price (line amount &/or unit price) received from the Customer includes tax 	Yes/No
+Use Customer Price	Select this flag to use the customer's price on the sales order	Yes/No
+Yes: If there is a variance between the trade agreement /list price stored in D365 and the Customers price received in the purchase order, the purchase order will be used if within the variance range.
+Maximum negative price variance	Where “Use Customer Price” = Yes:
+Specify the maximum negative price variance that can occur without warning. 	It is recommended that these settings are set to at least 0.01 if the 'include tax flag is ticked' to avoid any rounding differences between the two solutions being flagged.
+Maximum positive price variance	Where “Use Customer Price” = Yes:
+Specify the maximum positive price variance that can occur without warning	It is recommended that these settings are set to at least 0.01 if the 'include tax flag is ticked' to avoid any rounding differences between the two solutions being flagged.
+Create release order without blanket order	The action taken when a release order is received without a blanket order	•	No - do not allow the release order
+•	Yes - allow the release order
+•	Warning - allow the release order with a warning message
+Duplicate tolerance	If a PO is received twice D365 needs to determine what to do with it	•	Error - Duplicate PO’s not allowed 
+Example:
+PO#1234 exists
+PO#1234 arrived in EDI – ERROR
+•	Accept - Duplicate PO’s allowed
+Example:
+PO#1234 exists
+PO#1234 arrived in EDI – create new SO
+•	Accept on flagged orders - Duplicate PO's allowed if existing order flagged – allows duplicate for where the “bypass duplicate check” on the sales order header = YES
+Example:
+PO#1234 exists
+SO flagged bypass duplicate check = YES
+PO#1234 arrived in EDI – create new SO
+PO#1234 exists
+SO flagged bypass duplicate check = NO
+PO#1234 arrived in EDI – ERROR
+Update confirmed ship date	Updates the confirmed ship and receipt dates on the sales order header which are also used in the POA	Yes/No
+Purchase agreement
+Agreement classification	Select the agreement classification used when blanket orders are created	
+Strip field delimiter	Specify the delimiter used to identify a release order	Some of the trading partners use a slightly different PO number on the Blanket order compared with the Release order.  
+An example of a Blanket order PO number is 0005055365-0000, they will then send four releases with the number 0005055365-0010, 0005055365-0020, 0005055365-0030 and 0005055365-0040.  
+In the template the strip field delimiter would be set to “-“, it should then only match using the number before the delimiter. 
+Supplementary items
+Add mandatory supplementary items	Option to automatically add mandatory supplementary items upon sales order creation	Yes/No
+Add optional free of charge supplementary items	Enabled when Add mandatory supplementary items is Yes. Option to automatically add optional free of charge supplementary items	Yes/No
+Add optional charged supplementary items	Enabled when Add mandatory supplementary items is Yes. Option to automatically add optional charged supplementary items	Yes/No
+Retail		
+Channel	Option to set the channel when creating retail sales order.	Drop-down options from Name as setup in Retail and commerce > Channels > Stores > All stores
+Automatic complete retail order	Option to automatically Complete the Sales order and process payment for retail orders where the customer’s Allow on account is Yes. Utilizes Payment method as set below. If payment can’t be completed the sales order is put on hold.	Yes/No
+Payment method	Option to set the Retail payment method for processing Payment. If Payment method is blank, the first Payment method for the Channel where Default function is Customer is utilized.	Drop-down options from Retail and commerce > Channel setup > Payment methods
+Filtered to Default function = Customer (only Customer supported)
+
+
+## Where used
+Once setup for each applicable document type, the **Setting profile** can be assigned to each document on the Trading partner setup **EDI > Setup > Trading partners** on **Incoming documents** and **Outgoing documents** FastTab.
+
+## Data entity
+- EDI Settings - PO
