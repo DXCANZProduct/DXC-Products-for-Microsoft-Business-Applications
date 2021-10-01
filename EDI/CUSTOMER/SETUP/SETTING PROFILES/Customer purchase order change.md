@@ -39,31 +39,28 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 
 /** Applies only to Automatic processing method. When Change is manually approved these document settings and validations are ignored and applicable D365 sales order fields updated. 
 
-**Field**           |	**Description**	                          | **Options/Example**
-:-------            |:-------                                   |:----------
+**Field**             |	**Description**	                          | **Options/Example**
+:-------              |:-------                                   |:----------
+<ins>**Document**</ins>
+**Processing method** |	Specify method of processing purchase order changes	| •	**Automatic** – Document settings and validation will be used to automatically process the change and update the D365 sales order, if within the allowed parameters. <br> •	**Manual** – Document settings and validation doesn’t apply and the change is manually approved via the **Sales order processing workspace > Pending PO changes** or **Sales order EDI header > Changes**
 <ins>Purchase order</ins>
 **Item ID Source**  |	Determine the method of item identification used by this customer when ordering products. Where the External item number, GTIN or Barcode is unique per Variant, EDI will create the sales order against the correct variant, i.e. the customer doesn’t have to supply variant details in inbound document.	| •	**Our Item number** - this is the item ID on the items form <br> •	**External item number** - this is the item Id on the customer external item form <br> •	**GTIN** - this is the GTIN assigned to an item <br> •	**Barcode** - This is the Barcode assigned to an item.
+/** **Document status** |	Allow sales orders up to and including this status to be changed	| •	None <br> •	Confirmation <br> •	Picking list / Released to warehouse <br> •	Delivery note <br> •	Tax invoice
+/** **Allow header update** |	If allowed, applicable D365 Sales order fields are updated	  | Yes/No
+**Don’t send POA for changes**  |	If the customer has Customer purchase order acknowledgement (POA) setup, should it be sent for the PO Change. Not all customers want/can process a POA for a PO Change.	  | Yes/No
+<ins>**Dates**</ins>
+**Update confirmed ship date**  |	Similar to **Simulate delivery dates**, updates the **Confirmed ship date** and **Confirmed receipt date** on the sales order header, which are also used in the Customer purchase order acknowledgement | Yes/No
+<ins>**Prices**</ins>
 **Price includes tax**  |	Specify if the price (line amount &/or unit price) received from the Customer includes tax 	  | Yes/No
 **Use Customer Price**  |	Select this flag to use the customer's price on the sales order	                              | • **Yes**: If there is a variance between the trade agreement /list price stored in D365 and the Customers price received in the purchase order, the purchase order will be used if within the variance range. <br> • **No**: System price will be used when creating the sales order.
 **Maximum negative price variance** |	Where **Use Customer Price** is set to _Yes_: <br> Specify the maximum negative price variance that can occur without warning. 	| It is recommended that these settings are set to at least 0.01 if the '**Price include tax** is ticked' to avoid any rounding differences between the two solutions being flagged.
 **Maximum positive price variance** | Where **Use Customer Price** is set to _Yes_: <br> Specify the maximum positive price variance that can occur without warning	| It is recommended that these settings are set to at least 0.01 if the 'include tax flag is ticked' to avoid any rounding differences between the two solutions being flagged.
-**Create release order without blanket order** | The action taken when a release order is received without a blanket order	| •	**No** - do not allow the release order <br> •	**Yes** - allow the release order <br> •	**Warning** - allow the release order with a warning message
-**Duplicate tolerance** |	If a Customer purchase order (Customer requisition) is received more than once, D365 needs to determine what to do with the duplicate/s | •	**Error** - Duplicate purchase orders not allowed and the staging record will error and not create an additional D365 sales order. <br> •	**Accept** - Duplicate purchase orders are allowed. Duplicate purchase orders will create a new D365 sales order. <br> •	**Accept on flagged orders** - Duplicate purchase orders are only allowed if existing sales order is flagged to allow duplicates. On the original sales order header set on the **EDI** FastTab set **Bypass duplicate check** to _Yes_. Staging records with a duplicate Customer requisition where the sales order's Bypass duplicate check is set to _No_ will error.
-**Update confirmed ship date**  |	Similar to **Simulate delivery dates**, updates the **Confirmed ship date** and **Confirmed receipt date** on the sales order header, which are also used in the Customer purchase order acknowledgement | Yes/No
-<ins>**Purchase agreement**</ins>
-**Agreement classification**	  | Select the agreement classification used when blanket orders are created	
-**Strip field delimiter**       |	Specify the delimiter used to identify a release order	Some of the trading partners use a slightly different PO number on the Blanket order compared with the Release order. An example of a Blanket order PO number is 0005055365-0000, they will then send four releases with the number 0005055365-0010, 0005055365-0020, 0005055365-0030 and 0005055365-0040. In the template the strip field delimiter would be set to “-“, it should then find the applicable sales agreement by using the number before the delimiter. 
-<ins>**Supplementary items**</ins>
-**Add mandatory supplementary items** |	Option to automatically add mandatory supplementary items upon sales order creation	| Yes/No
-**Add optional free of charge supplementary items** |	Enabled when **Add mandatory supplementary items** is set to _Yes_. Option to automatically add optional free of charge supplementary items	| Yes/No
-**Add optional charged supplementary items**  |	Enabled when **Add mandatory supplementary items** is set to _Yes_. Option to automatically add optional charged supplementary items	| Yes/No
-<ins>**Retail**</ins>
-**Channel**                     |	Option to set the channel when creating retail sales order.	  | Drop-down options from Name as setup in **Retail and commerce > Channels > Stores > All stores**
-BankReconciliationMatchingRuleEntity  |	Option to automatically Complete the Sales order and process payment for retail orders where the customer’s **Allow on account** is set to _Yes_. Utilizes Payment method as set below. If payment can’t be completed the sales order is put on hold.	| Yes/No
-**Payment method**              |	Option to set the **Retail payment method** for processing Payment. If Payment method is blank, the first Payment method for the Channel where **Default function** is Customer is utilized.	| Drop-down options from **Retail and commerce > Channel setup > Payment methods**. Filtered to **Default function = Customer** (only Customer supported)
+<ins>**Quantities**</ins>
+/** **Allow quantity decrease on increase type**  |	If the line change type is quantity increase and the imported quantity is a decrease, make the change regardless	| Yes/No
+** **Allow quantity increase on decrease type**   |	If the line change type is quantity decrease and the imported quantity is an increase, make the change regardless	| Yes/No
 
 ## Where used
-The **Setting profile** can be assigned on the Incoming documents FastTab to document type **Customer purchase order** for the Customer Trading partner at **EDI > Setup > Trading partners**.
+The **Setting profile** can be assigned on the Incoming documents FastTab to document type **Customer purchase order change** for the Customer Trading partner at **EDI > Setup > Trading partners**.
 
 ## Data entity
 - EDI Settings - Customer purchase order change
