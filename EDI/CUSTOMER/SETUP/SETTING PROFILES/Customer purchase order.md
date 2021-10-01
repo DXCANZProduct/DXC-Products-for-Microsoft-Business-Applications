@@ -60,7 +60,7 @@ BankReconciliationMatchingRuleEntity  |	Option to automatically Complete the Sal
 **Payment method**              |	Option to set the **Retail payment method** for processing Payment. If Payment method is blank, the first Payment method for the Channel where **Default function** is Customer is utilized.	| Drop-down options from **Retail and commerce > Channel setup > Payment methods**. Filtered to **Default function = Customer** (only Customer supported)
 
 ## Where used
-Once setup for each applicable document type, the **Setting profile** can be assigned to each document on the Trading partner setup **EDI > Setup > Trading partners** on **Incoming documents** or **Outgoing documents** FastTab.
+The **Setting profile** can be assigned on the Incoming documents FastTab to document type **Customer purchase order** for the Customer Trading partner at **EDI > Setup > Trading partners**.
 
 ## Data entity
 - EDI Settings - PO
