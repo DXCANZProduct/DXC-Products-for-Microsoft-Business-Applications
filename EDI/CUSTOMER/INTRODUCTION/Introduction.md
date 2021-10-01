@@ -61,30 +61,16 @@ Users can access the form by navigating to **EDI > Setup > Document types**
 - [File templates](../../CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
 - Setting profiles: applicable to the following document types
     - [Customer purchase order](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md)
-    - [Customer purchase order change](SETTING%20PROFILES/Customer%20purchase%20order%20change.md)
-    - [Customer purchase order acknowledgement](SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md)
-    - [Customer advanced shipping notice](SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)
+    - [Customer purchase order change](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20change.md)
+    - [Customer purchase order acknowledgement](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md)
+    - [Customer advanced shipping notice](../SETUP/SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)
 - Validation profiles: applicable to the following inbound document types
-    - [Customer purchase order](VALIDATION%20PROFILES/Customer%20purchase%20order.md)
-    - [Customer purchase order change](VALIDATION%20PROFILES/Customer%20purchase%20order%20change.md)
+    - [Customer purchase order](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order.md)
+    - [Customer purchase order change](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order%20change.md)
 - [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
 - [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
 
-
-
-Generic information with regards to all modules:
-- [Document types](../../CORE/Setup/Document%20types.md)
-
-Customer module specific document type setup:
-- Seting profiles
-	- [Customer purchase order](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md)
-	- [Customer purchase order change]
-	- [Customer purchase order acknowledgement]
-	- [Customer advanced shipping notice]
-- [Validation profiles]
-	- [Customer purchase order]
-	- [Customer purchase order change]
-	
+### Customer document type summary
 - [Document type summary]
 
 ## Trading partner setup
