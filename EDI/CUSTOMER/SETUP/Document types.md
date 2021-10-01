@@ -39,7 +39,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ## Documents
 Staging data can be viewed and manually processed:
 - [Customer purchase order](../DOCUMENTS/Customer%20purchase%20order.md)
-- [Customer purchase order change](../DOCUMENTS/Customer%20Purchase%20order%20change.md)
-- [Customer purchase order acknowledgement](../DOCUMENTS/Customer%20Purchase%20order%20acknowledgement.md)
+- [Customer purchase order change](../DOCUMENTS/Customer%20purchase%20order%20change.md)
+- [Customer purchase order acknowledgement](../DOCUMENTS/Customer%20purchase%20order%20acknowledgement.md)
 - [Customer advanced shipping notice](../DOCUMENTS/Customer%20advanced%20shipping%20notice.md)
 - [Sales invoice](../DOCUMENTS/Sales%20invoice.md)
