@@ -52,7 +52,7 @@ Used to map D365/EDI value to Customer's value and assigned on Customer Trading 
 
 ### Assigned on items:
 Required where the confirmed pack sizes within the Customer purchase order acknowledgement is set to use System pack and System inner. <br>
-[Item pack sizes](../../CORE/Setup/Item%20pack%20sizes.md)
+- [Item pack sizes](../../CORE/Setup/Item%20pack%20sizes.md)
 
 ## Customer Document type setup
 Setup Document types and assign on Customer Trading partner. <br>
