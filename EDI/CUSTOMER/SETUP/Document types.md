@@ -5,7 +5,7 @@ title: [EDI Customer]
 description: [EDI Customer - Document types]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 23/09/2021
+ms.date: 1/10/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
