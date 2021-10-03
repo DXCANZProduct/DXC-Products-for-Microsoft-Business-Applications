@@ -39,7 +39,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Field**           |	**Description**	                          | **Options/Example**
 :-------            |:-------                                   |:----------
 <ins>**Invoice type**</ins>
-**Invoice**         | Specify mapping for Invoice               | • EDIFACT example: 388 = Tax invoice or 380 = Commercial invoice <br> X12 example: VJ = Commercial invoice
+**Invoice**         | Specify mapping for Invoice               | • EDIFACT example: 388 = Tax invoice or 380 = Commercial invoice <br> • X12 example: VJ = Commercial invoice
 **Credit adjustment note**  | Specify mapping for Credit note   | • EDIFACT example: 381 = Credit note <br> • X12 example: CR = Credit memo
 **Don't send credit note**  | Specify if credit notes should be sent to the customer  | •	**No** - When posting a credit note, the **Send to EDI** will be disabled and won't create a Sales invoice staging record. <br> •	**Yes** - When posting a credit note, the **Send to EDI** will be enabled and will create a Sales invoice staging record.
 
