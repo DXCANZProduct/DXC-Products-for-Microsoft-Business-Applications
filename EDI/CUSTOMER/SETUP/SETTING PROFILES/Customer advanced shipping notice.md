@@ -39,8 +39,8 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Field**           |	**Description**	                          | **Options/Example**
 :-------            |:-------                                   |:----------
 <ins>**Options**</ins>
-**ASN strategy**    |	Select to send ASN based on delivery note or consignment note number	| •	Single packing slip – Send one ASN per packing slip <br> •	Consolidated packing slip – Send one ASN per consignment note (combination of one or more ASN)
-**Warn when consignment note not assigned** |	Option to warn user when Posting packing slip and Send to EDI is enabled but Consignment note is blank	| •	Yes – Receive warning ‘You are about to post the document without a Consignment note number assigned. The EDI advanced shipping notice will not be sent. Select OK to continue. <br> •	No – No warning will be provided.
+**ASN strategy**    |	Select to send ASN based on delivery note or consignment note number	| •	**Single packing slip** – Send one ASN per packing slip <br> •	**Consolidated packing slip** – Send one ASN per consignment note (combination of one or more ASN)
+**Warn when consignment note not assigned** |	Option to warn user when Posting packing slip and Send to EDI is enabled but Consignment note is blank	| •	**Yes** – Receive warning ‘You are about to post the document without a Consignment note number assigned. The EDI advanced shipping notice will not be sent. Select OK to continue. <br> •	**No** – No warning will be provided.
 <ins>**Shipment Type**</ins>	
 **Part Shipment**   |	Specify the part shipment identifiers for ASN. Populates ShipmentStatus.	  | Example: PS
 **Final Shipment**  |	Specify the final shipment identifiers for ASN.	Populates ShipmentStatus.   | Example: FS
