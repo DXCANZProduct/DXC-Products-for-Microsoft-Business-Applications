@@ -50,31 +50,14 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Field delimiter** |	Specify the field delimiter to use for the POA response codes. Line item status is a combination of the following: Price code + Qty code + Pack code + Inner Code. The field delimiter is used inbetween the codes.
 <ins>**Response codes**</ins> | Ability to default the POA response codes sent to Customer on the POA. <br> For **None** a blank POA response code needs to be set up with Allow auto send set to Yes. <br> **Auto-triggered** option uses automatic POA response codes as calculated by **Auto set response codes**
 **Header acknowledgement default**  |	Specify the default header acknowledgement response code	| •	Auto-triggered (default) <br> •	None <br> •	Header – accept <br> •	Header – accepted with reserve <br> •	Header – change <br> •	Header – not accepted
-**Line item status price default**	Specify the default line item status price acknowledgement response code	•	Auto-triggered (default)
-•	None
-•	Line price – accept
-•	Line price – advise
-Line item status quantity default	Specify the default line item status quantity acknowledgement response code	•	Auto-triggered (default)
-•	None
-•	Line item – accept
-•	Line item – out of stock
-•	Line item – withdrawn
-Line item status pack default	Specify the default line item status pack acknowledgement response code	•	Auto-triggered (default)
-•	None
-•	Line item – pack accept
-•	Line item – pack difference
-Line item status inner default	Specify the default line item status inner acknowledgement response code	•	Auto-triggered (default)
-•	None
-•	Line item – inner accept
-•	Line item – inner difference
-Line shipment status default	Specify the default line shipment status acknowledgement response code	•	Auto-triggered (default)
-•	None
-•	Line shipment – full
-•	Line shipment – partial
-
+**Line item status price default**	| Specify the default line item status price acknowledgement response code	| •	Auto-triggered (default) <br> •	None <br> •	Line price – accept <br> •	Line price – advise
+**Line item status quantity default** |	Specify the default line item status quantity acknowledgement response code	| •	Auto-triggered (default) <br> •	None <br> •	Line item – accept <br> •	Line item – out of stock <br> •	Line item – withdrawn
+**Line item status pack default**     |	Specify the default line item status pack acknowledgement response code	    | •	Auto-triggered (default) <br> •	None <br> •	Line item – pack accept <br> •	Line item – pack difference
+**Line item status inner default**    |	Specify the default line item status inner acknowledgement response code	  | •	Auto-triggered (default) <br> •	None <br> •	Line item – inner accept <br> •	Line item – inner difference
+**Line shipment status default**      |	Specify the default line shipment status acknowledgement response code	    | •	Auto-triggered (default) <br> •	None <br> •	Line shipment – full <br> •	Line shipment – partial
 
 ## Where used
-The **Setting profile** can be assigned on the Incoming documents FastTab to document type **Customer purchase order acknowledgement** for the Customer Trading partner at **EDI > Setup > Trading partners**.
+The **Setting profile** can be assigned on the Outgoing documents FastTab to document type **Customer purchase order acknowledgement** for the Customer Trading partner at **EDI > Setup > Trading partners**.
 
 ## Data entity
 - EDI Settings - POA
