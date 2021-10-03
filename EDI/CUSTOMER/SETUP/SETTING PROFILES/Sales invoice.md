@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI Customer]
-description: [EDI Customer Setting profiles - Customer advanced shipping notice]
+description: [EDI Customer Setting profiles - Sales invoice]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 23/09/2021
@@ -27,30 +27,25 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Customer document type setting profiles - Advanced shipping notice (ASN)
+# Customer document type setting profiles - Sales invoice
 
 Users can access the form by navigating to **EDI > Setup > Document types**.
 
-- To create a new record, select document type **Customer advanced shipping notice**.
+- To create a new record, select document type **Sales invoice**.
 - Select the **New** button in the **Settings profiles** FastTab.
 - Specify the **Settings profile id** and **Description** of the profile.
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details.
 
 **Field**           |	**Description**	                          | **Options/Example**
 :-------            |:-------                                   |:----------
-<ins>**Options**</ins>
-**ASN strategy**    |	Select to send ASN based on delivery note or consignment note number	| •	**Single packing slip** – Send one ASN per packing slip <br> •	**Consolidated packing slip** – Send one ASN per consignment note (combination of one or more ASN)
-**Warn when consignment note not assigned** |	Option to warn user when Posting packing slip and Send to EDI is enabled but Consignment note is blank	| •	**Yes** – Receive warning ‘You are about to post the document without a Consignment note number assigned. The EDI advanced shipping notice will not be sent. Select OK to continue.' <br> •	**No** – No warning will be provided.
-<ins>**Shipment Type**</ins>	
-**Part Shipment**   |	Specify the part shipment identifiers for ASN. Populates ShipmentStatus.	  | Example: PS
-**Final Shipment**  |	Specify the final shipment identifiers for ASN.	Populates ShipmentStatus.   | Example: FS
-<ins>**Dates**</ins>
-**Scheduled delivery date source**  |	Select which delivery date to use in the ASN	              | •	Header <br> •	Lines
-**Scheduled delivery date strategy**  |	Where multiple sources are identified, select the use the earliest or latest date	| •	Earliest <br> •	Latest
+<ins>**Invoice type**</ins>
+**Invoice**         | Specify mapping for Invoice               | • EDIFACT example: 388 = Tax invoice or 380 = Commercial invoice <br> X12 example: VJ = Commercial invoice
+**Credit adjustment note**  | Specify mapping for Credit note   | • EDIFACT example: 381 = Credit note <br> • X12 example: CR = Credit memo
+**Don't send credit note**  | Specify if credit notes should be sent to the customer  | •	**No** - When posting a credit note, the **Send to EDI** will be disabled and won't create a Sales invoice staging record. <br> •	**Yes** - When posting a credit note, the **Send to EDI** will be enabled and will create a Sales invoice staging record.
 
 ## Where used
-The **Setting profile** can be assigned on the Outgoing documents FastTab to document type **Customer advanced shipping notice** for the Customer Trading partner at **EDI > Setup > Trading partners**.
+The **Setting profile** can be assigned on the Outgoing documents FastTab to document type **Sales invoice** for the Customer Trading partner at **EDI > Setup > Trading partners**.
 
 ## Data entity
-- EDI Settings - ASN
+- EDI Settings - Sales invoice
 
