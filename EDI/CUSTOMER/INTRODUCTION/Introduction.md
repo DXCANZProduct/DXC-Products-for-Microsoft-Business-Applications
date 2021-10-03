@@ -64,6 +64,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**
     - [Customer purchase order change](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20change.md)
     - [Customer purchase order acknowledgement](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md)
     - [Customer advanced shipping notice](../SETUP/SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)
+    - [Sales invoice](../SETUP/SETTING%20PROFILES/Sales%20invoice.md)
 - Validation profiles: applicable to the following inbound document types
     - [Customer purchase order](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order.md)
     - [Customer purchase order change](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order%20change.md)
