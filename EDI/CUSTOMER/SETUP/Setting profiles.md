@@ -46,8 +46,9 @@ The following customer documents have setting profiles:
 - [Customer advanced shipping notice](SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)
 - [Sales invoice](SETTING%20PROFILES/Sales%20invoice.md)
 
-When an incoming staging record errors, it has not created/updated the target D365 transaction. <br>
-When an outgoing staging record errors, it has not created the Outbound file. <br>
+## Document errors
+When an incoming staging record/document errors, it has not created/updated the target D365 transaction. <br>
+When an outgoing staging record/document errors, it has not created the Outbound file. <br>
 
 Staging/document errors can be viewed at: <br>
 - **EDI > Documents** - On each document type, user can set filter **Staging to target status** to _Error_
