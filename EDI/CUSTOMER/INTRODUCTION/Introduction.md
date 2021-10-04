@@ -30,6 +30,13 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Introduction
 This section will provide a quick overview of the Customer EDI module.
 
+Customer module includes the following documents:
+1. Customer purchase order (inbound): Creates a D365 sales order, sales agreement or release order.
+2. Customer purchase order change (inbound): Updates an existing D365 sales order by changing any of the following: delivery address, store code, dates, delivery time, quantities, prices and/or adding additional lines.
+3. Customer purchase acknowledgement (outbound): Send an acknowledgement comparing the D365 sales order to customers EDI purchase order.
+4. Customer advanced shipping notice (outbound): Send packing slip information with packing details.
+5. Sales invoice (outbound): Send the sales order tax invoice.
+
 ## Core setup
 Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 
