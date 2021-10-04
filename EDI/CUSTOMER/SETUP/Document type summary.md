@@ -34,7 +34,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ### Customer purchase order
 - EDI standard formats: X12 850 and EDIFACT ORDERS
 
-#### Customer purchase order setting profile options
+#### Customer purchase order Setting profile options
 <ins>Purchase order</ins>
 -	Item Id source: Our/Ext/GTIN/Barcode
 -	Prices include sales tax: Y/N
@@ -56,3 +56,53 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 -	Automatic complete retail order
 -	Channel
 -	Payment method
+
+#### Customer purchase order Validation profile options
+<ins>Sales order</ins>
+-	Delivery date
+
+<ins>Sales order line</ins>
+-	Delivery date
+-	Min/Max qty
+-	Sales price
+-	Sales unit
+
+### D365 max status
+- Sales order = Open order
+
+### Customer purchase order change
+- EDI standard formats: X12 860 and EDIFACT ORDCHG
+
+#### Customer purchase order change Setting profile options
+<ins>Document</ins
+•	Processing method: Automatic/Manual
+  
+<ins>Purchase order</ins
+-	Item Id source: Our/Ext/GTIN/Barcode
+-	Document status: None, Confirmation, Picking list / Released to warehouse, Delivery note or Tax invoice
+-	Allow header update: Y/N
+-	Don’t send POA for changes: Y/N
+  
+<ins>Dates</ins
+-	Update confirmed ship date
+  
+<ins>Prices</ins
+-	Prices include GST: Y/N
+-	Use Customer price: Y/N & Max negative & positive price variance
+  
+<ins>Quantities</ins
+-	Allow quantity decrease on increase type
+-	Allow quantity increase on decrease type
+
+#### Customer purchase order Validation profile options
+<ins>Sales order</ins>
+-	Delivery date
+
+<ins>Sales order line</ins>
+-	Delivery date
+-	Min/Max qty
+-	Sales price
+-	Sales unit
+
+### D365 max status
+- Sales order = Open order / Cancelled
