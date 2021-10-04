@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI Customer]
-description: [EDI Customer Setup]
+description: [EDI Customer Setup - Document type summary]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 23/09/2021
@@ -27,4 +27,30 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-#Customer setup
+# Customer setup - Document types summary
+
+## Inbound
+
+### Customer purchase order
+- EDI standard formats: X12 850 and EDIFACT ORDERS
+
+#### Customer purchase order setting profile options
+Purchase order
+•	Item Id source: Our/Ext/GTIN/Barcode
+•	Prices include GST: Y/N
+•	Use Customer price: Y/N & Max negative & positive price variance
+•	Create release order without blanket order: Error tolerance
+•	Duplicate tolerance: Error/Accept/Accept on flagged orders
+•	Update confirmed ship date
+Purchase agreement
+•	Agreement classification
+•	Strip field delimiter
+Supplementary items
+•	Add mandatory supplementary items: Y/N
+•	Add optional free of charge supplementary items: Y/N
+•	Add optional charged supplementary items: Y/N
+Retail
+•	Automatic complete retail order
+•	Channel
+•	Payment method
+
