@@ -100,8 +100,8 @@ The following workspaces are available:
 - EDI Document maintenance
 	- [Applicable to all modules](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md)
 	- [Customer specific]
-- [EDI Sales order processing]
+- [EDI Sales order processing](../WORKSPACES/EDI%20Sales%20order%20processing.md)
 
 ## Other
-- [Data entities]
-- [Frequently asked questions]
+- [Data entities](../OTHER/Data%20entities.md)
+- [Frequently asked questions](../OTHER/FAQ.md)
