@@ -33,7 +33,7 @@ The **EDI parameters** page is used to define settings that apply across the EDI
 To open the **EDI parameters** page, go to **EDI > Setup > EDI parameters**. Then set the fields as described in the following subsections.
 
 ## Refresh module
-After each deployment, users should select the **Refresh module** button on the General Tab of EDI parameters.  
+After each deployment, users should select the **Refresh module** button on the **General** tab of **EDI parameters** page.  
 This option will refresh the modules artefacts and ensure the module is up to date.
 
 ## General
