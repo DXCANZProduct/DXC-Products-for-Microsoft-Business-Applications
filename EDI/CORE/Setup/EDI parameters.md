@@ -75,10 +75,11 @@ The following table describes the fields that are available on the **General** t
 **Allow historic PO types**       |	Customer order types: Confirmation, Cancel and Change have been moved to Order purpose. This field provides Backwards compatibility to still show these deprecated options under order types
 
 ## Number sequence
-Create and assign number sequence for the functionalities that will be used within the EDI module. Number sequences displayed is dependent on enabled licensed modules. <br>
-The following table describes the fields that are available on the **Number sequence** tab of the **EDI parameters** page.
+Use the **Number sequences** tab on the **EDI parameters** page to assign number sequence codes to the different number sequences that the EDI module uses. The following table describes the purpose of each of those number sequences. For more information about number sequences, see [Number sequences overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview) and its related topics.
 
-**Field** 	                      | **Description**
+> Note: Number sequences displayed is dependent on enabled licensed modules.
+
+**Reference** 	                  | **Description**
 :-------------------------------- |:-------------------------------------
 **EDI number**                    |	Unique identifier for EDI staging. This stores the data in D365 in an intermediary/staging tables before creating the target record.
 **ASN number**                    |	Unique identifier when creating a Customer Advanced Shipping Notice (ASN) record. Customer license only
