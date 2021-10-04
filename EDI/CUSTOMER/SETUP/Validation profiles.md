@@ -45,7 +45,7 @@ Once setup for each document type, the validation profile can be assigned to eac
 - Select the **Error tolerance** to specify the validation level.  If a validation rule fails, this will be used to determine how it reacts. Options:
   - **Info** - An Infolog is displayed with information only. If the validation rule fails a message will be written to the staging records log but the record will continue to process.
   - **Warning** - An Infolog is displayed with a warning. If the validation rule fails a message will be written to the staging records log but the record will continue to process. 
-  - **Error** - An Infolog is displayed with an error. If the validation rule fails, the EDI Document will not be processed, and the staging records will be set to error state.
+  - **Error** - An Infolog is displayed with an error. If the validation rule fails, the staging records will be set to error state and the target document note created/updated. Except for Customer module where an order hold will be applied to the sales order. The **Validation error hold code** that was assigned in EDI parameters will be applied to the Sales order.
 
 The following customer documents have validation profiles:
 - [Customer purchase order](VALIDATION%20PROFILES/Customer%20purchase%20order.md)
