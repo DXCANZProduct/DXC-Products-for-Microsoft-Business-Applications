@@ -87,13 +87,13 @@ Users can access the form by navigating to **EDI > Setup > Trading partners**
 
 ## Customer documents
 Users can access the forms by navigating to **EDI > Documents > Customer documents**
-- Staging forms
-	- [Customer purchase order]
-	- [Customer purchase order change]
-	- [Review sales orders]
-	- [Customer purchase order acknowledgement]
-	- [Customer advanced shipping notice]
-	- [Sales invoice]
+- [Customer purchase order](../DOCUMENTS/Customer%20purchase%20order.md)
+- [Customer purchase order change](../DOCUMENTS/Customer%20purchase%20order%20change.md)
+- [Customer purchase order acknowledgement](../DOCUMENTS/Customer%20purchase%20order%20acknowledgement.md)
+- [Customer advanced shipping notice](../DOCUMENTS/Customer%20advanced%20shipping%20notice.md)
+- [Sales invoice](../DOCUMENTS/Sales%20invoice.md)
+
+## Review sales order
 
 ## Workspaces
 The following workspaces are available:
