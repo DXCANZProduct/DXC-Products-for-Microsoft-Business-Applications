@@ -80,7 +80,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**
 
 ## Trading partner setup
 Users can access the form by navigating to **EDI > Setup > Trading partners**
-- [Trading partner]
+- [Trading partner](../SETUP/Trading%20partner.md)
 
 ## Customer documents
 Users can access the forms by navigating to **EDI > Documents > Customer documents**
