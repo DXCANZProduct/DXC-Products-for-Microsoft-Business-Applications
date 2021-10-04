@@ -35,22 +35,22 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 - EDI standard formats: X12 850 and EDIFACT ORDERS
 
 #### Customer purchase order setting profile options
-Purchase order
-•	Item Id source: Our/Ext/GTIN/Barcode
-•	Prices include GST: Y/N
-•	Use Customer price: Y/N & Max negative & positive price variance
-•	Create release order without blanket order: Error tolerance
-•	Duplicate tolerance: Error/Accept/Accept on flagged orders
-•	Update confirmed ship date
-Purchase agreement
-•	Agreement classification
-•	Strip field delimiter
-Supplementary items
-•	Add mandatory supplementary items: Y/N
-•	Add optional free of charge supplementary items: Y/N
-•	Add optional charged supplementary items: Y/N
-Retail
-•	Automatic complete retail order
-•	Channel
-•	Payment method
+<ins>Purchase order</ins>
+-	Item Id source: Our/Ext/GTIN/Barcode
+-	Prices include GST: Y/N
+-	Use Customer price: Y/N & Max negative & positive price variance
+-	Create release order without blanket order: Error tolerance
+-	Duplicate tolerance: Error/Accept/Accept on flagged orders
+-	Update confirmed ship date
+<ins>Purchase agreement</ins>
+-	Agreement classification
+-	Strip field delimiter
+<ins>Supplementary items</ins>
+-	Add mandatory supplementary items: Y/N
+-	Add optional free of charge supplementary items: Y/N
+-	Add optional charged supplementary items: Y/N
+<ins>Retail</ins>
+-	Automatic complete retail order
+-	Channel
+-	Payment method
 
