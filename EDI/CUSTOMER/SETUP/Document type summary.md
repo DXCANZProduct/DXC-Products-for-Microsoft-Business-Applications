@@ -74,23 +74,23 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 - EDI standard formats: X12 860 and EDIFACT ORDCHG
 
 #### Customer purchase order change Setting profile options
-<ins>Document</ins
+<ins>Document</ins>
 •	Processing method: Automatic/Manual
   
-<ins>Purchase order</ins
+<ins>Purchase order</ins>
 -	Item Id source: Our/Ext/GTIN/Barcode
 -	Document status: None, Confirmation, Picking list / Released to warehouse, Delivery note or Tax invoice
 -	Allow header update: Y/N
 -	Don’t send POA for changes: Y/N
   
-<ins>Dates</ins
+<ins>Dates</ins>
 -	Update confirmed ship date
   
-<ins>Prices</ins
+<ins>Prices</ins>
 -	Prices include GST: Y/N
 -	Use Customer price: Y/N & Max negative & positive price variance
   
-<ins>Quantities</ins
+<ins>Quantities</ins>
 -	Allow quantity decrease on increase type
 -	Allow quantity increase on decrease type
 
