@@ -50,4 +50,3 @@ Once setup for each document type, the validation profile can be assigned to eac
 The following customer documents have validation profiles:
 - [Customer purchase order](VALIDATION%20PROFILES/Customer%20purchase%20order.md)
 - [Customer purchase order change](VALIDATION%20PROFILES/Customer%20purchase%20order%20change.md)
-- 
