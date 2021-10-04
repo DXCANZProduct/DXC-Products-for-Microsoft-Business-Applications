@@ -86,8 +86,12 @@ The following table describes the fields that are available on the **Number sequ
 **Group control number**          |	Unique identifier when creating outbound records. The Inbound functional acknowledgement needs to refer to the outbound document's Group control number in order to reconcile against the correct outbound record and update the Received status to Yes.
 
 ## Hold codes
-Customer license only. Assign the Hold codes to be used when creating the Sales order when processing Customer purchase order records. <br>
+The **Hold codes** tab is only available for Customer license. Assign the Hold codes to be used when creating the Sales order when processing Customer purchase order records. <br>
+
 If required, create new Hold codes via **Sales and marketing > Setup > Sales orders > Order hold codes**. <br>
+**Order hold codes** used for EDI, should have the following fields set to _No_:
+- Default for sales order
+- Remove inventory reservations
 
 The following table describes the fields that are available on the **Hold codes** tab of the **EDI parameters** page.
 **Field** 	                      | **Description**
