@@ -52,4 +52,5 @@ When an outgoing staging record errors, it has not created the Outbound file. <b
 Staging/document errors can be viewed at: <br>
 - **EDI > Documents** - On each document type, user can set filter **Staging to target status** to _Error_
 - [**EDI > EDI Document maintenance**](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md) - The workspace contains a tile and tab for each document type.
+
 Users can use **Show log** and **Version log** to review the issues. And after the issue has been fixes, reset the status of the record. The next processing batch will pick up the _Not started_ status record.
