@@ -78,9 +78,6 @@ Users can access the form by navigating to **EDI > Setup > Document types**
 - [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
 - [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
 
-### Customer document type summary
-- [Document type summary]
-
 ## Trading partner setup
 Users can access the form by navigating to **EDI > Setup > Trading partners**
 - [Trading partner]
