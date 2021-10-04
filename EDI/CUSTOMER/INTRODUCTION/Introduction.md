@@ -79,10 +79,12 @@ Users can access the form by navigating to **EDI > Setup > Document types**
 - [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
 
 ## Trading partner setup
+Assign setup and incoming/outgoing documents on the Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Trading partners**
 - [Trading partner](../SETUP/Trading%20partner.md)
 
 ## Customer documents
+Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents > Customer documents**
 - [Customer purchase order](../DOCUMENTS/Customer%20purchase%20order.md)
 - [Customer purchase order change](../DOCUMENTS/Customer%20purchase%20order%20change.md)
