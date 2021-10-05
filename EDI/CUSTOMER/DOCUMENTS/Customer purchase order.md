@@ -40,8 +40,8 @@ Inbound files have the following three steps:
 1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**
 2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > Customer documents > Customer purchase order**
 3. **Staging to target** - The staging record/s is processed to target. Based on the **Order type**, the target will be either a:
-  - Sales order (**Accounts receivable > Orders > All sales orders**)
-  - Sales agreement (**Accounts receivable > Orders > Sales agreements**
+    - Sales order (**Accounts receivable > Orders > All sales orders**)
+    - Sales agreement (**Accounts receivable > Orders > Sales agreements**
 
 ![alt text](../../CORE/Image/Create_Document.png "EDI Create document process")
 
