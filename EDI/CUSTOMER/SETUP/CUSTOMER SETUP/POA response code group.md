@@ -65,7 +65,7 @@ POA Response codes are used to identify the status of information used in a Purc
 - In the **Allow auto send** field, select if the POA response should be included in the periodic task **Send customer purchase order acknowledgement**
 
 ## Where used
-POA response code group is assigned on the Customer Trading partner's Options field called **POA responde code group**.
+POA response code group is assigned on the [Customer Trading partner's]((../Trading%20partner.md)) Options field called **POA responde code group**.
 
 ## Scenarios
 The following section decribes how the EDI module sets the POA auto response code. <br>
