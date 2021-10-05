@@ -53,7 +53,7 @@ Examples: <br>
 **Confirmation**                  |	06	                                  | 6
 
 ## Where used
-Order purpose group is assigned on the Customer Trading partner's Options field called **Order purpose**.
+Order purpose group is assigned on the [Customer Trading partner's](../Trading%20partner.md) Options field called **Order purpose**.
 
 ## Data entities:
 -	Customer EDI order purpose group
