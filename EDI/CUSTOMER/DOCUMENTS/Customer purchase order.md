@@ -43,9 +43,9 @@ Inbound files have the following three steps:
     - Sales order (**Accounts receivable > Orders > All sales orders**)
     - Sales agreement (**Accounts receivable > Orders > Sales agreements**
 
-![alt text](../../CORE/Image/Create_Document.png "EDI Create document process")
+![alt text](../../CORE/Image/Create_Document.png "Import to Staging to Target process")
 
-![alt text](../IMAGE/HeaderChecks_CustomerPO.png "Header checks - Customer purchase order")
+![alt text](../IMAGE/HeaderChecks_CustomerPO.png "Staging to Target header checks - Customer purchase order")
 
 ## Import
 When a purchase order file is imported, the file name is key to identifying the customer and therefore the document template. See [Trading partners](../../CORE/Setup/Trading%20partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
