@@ -29,12 +29,9 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Customer purchase order
 The following [**Customer EDI order types**](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) and [**Order purposes**](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md) are supported by each Customer inbound document:
-Doc	Order type	Order purpose
-Purchase order	Order	Original
-Confirmation
-Cancellation
-	Agreement	Original
-	Release order	Original
-Purchase order change	Order	Change
-Cancellation
+**Document type**		| **Order type**	| **Order purpose**
+**Customer purchase order**	| **Order**		| Original <br> Confirmation <br> Cancellation
+**Customer purchase order**	| **Agreement**		| Original
+**Customer purchase order**	| **Release order**	| Original
+**Purchase order change**	| **Order**		| Change <br> Cancellation
 
