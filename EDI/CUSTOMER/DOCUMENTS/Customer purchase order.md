@@ -47,6 +47,10 @@ Inbound files have the following three steps:
 ![alt text](../../CORE/Image/Create_Document.png "Create document")
 
 ### Header checks for Customer purchase order
+Header checks performed when:
+1. Importing Customer purchase order, 
+2. Processing from import to staging and 
+3. Processing from staging to target.
 ![alt text](../IMAGE/HeaderChecks_CustomerPO.png "Header checks for Customer purchase order")
 
 ## Step 1 - Import
