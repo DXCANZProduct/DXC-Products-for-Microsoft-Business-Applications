@@ -5,7 +5,7 @@ title: [EDI Customer]
 description: [EDI Customer Documents - Customer purchase order]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 23/09/2021
+ms.date: 5/10/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
