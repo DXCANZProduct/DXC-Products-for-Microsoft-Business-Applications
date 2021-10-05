@@ -74,11 +74,15 @@ Also specifies if an Inbound Functional Acknowledgement is required for each out
 
 The **Outgoing documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Outgoing documents](../../CORE/Setup/Trading%20partners.md#outgoing-documents)
 
+- Data entity: EDI Documents - Customers
+
 #### Incoming documents
 The Incoming documents FastTab defines the incoming EDI document types that have been configured and enabled for the trading partner. It brings the document template, mappings, validation profile and setting profiles together along with a file mask for importing to enable the document for the trading partner.
 Also specifies if the Trading partner requires an Outbound Functional Acknowledgement to be sent for each incoming document.
 
 The **Incoming documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Incoming documents](../../CORE/Setup/Trading%20partners.md#incoming-documents)
+
+- Data entity: EDI Documents - Customers
 
 ### Customers
 EDI trading partner information and Customer documents can be viewed via fact boxes available on the Customer details form.
