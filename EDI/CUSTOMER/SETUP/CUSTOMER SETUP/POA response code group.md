@@ -64,9 +64,6 @@ POA Response codes are used to identify the status of information used in a Purc
     - Line item – withdrawn
 - In the **Allow auto send** field, select if the POA response should be included in the periodic task **Send customer purchase order acknowledgement**
 
-## Where used
-POA response code group is assigned on the [Customer Trading partner's]((../Trading%20partner.md)) Options field called **POA responde code group**.
-
 ## Scenarios
 The following section decribes how the EDI module sets the POA auto response code. <br>
 This is applicable to Response codes where **Allow auto trigger** is set to Yes.
@@ -109,6 +106,9 @@ This is applicable to Response codes where **Allow auto trigger** is set to Yes.
 - **Header - change**: <br>
     - When either of the acknowledged dates (deadline or delivery) differ from Customer's dates
     - Line response codes have no effect
+
+## Where used
+POA response code group is assigned on the [Customer Trading partner's](../Trading%20partner.md) Options field called **POA responde code group**.
 
 ## Data entities:
 - POA response code group
