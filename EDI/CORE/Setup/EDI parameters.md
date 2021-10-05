@@ -28,10 +28,12 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # EDI parameters
-Users can access the form by navigating to **EDI > Setup > EDI parameters**
+The **EDI parameters** page is used to define settings that apply across the EDI module. These settings affect number sequences, and other behaviour. The setup on this page is set per legal entity and can be modified by users who have the appropriate security permissions.
+
+To open the **EDI parameters** page, go to **EDI > Setup > EDI parameters**. Then set the fields as described in the following subsections.
 
 ## Refresh module
-After each deployment, users should select the **Refresh module** button on the General Tab of EDI parameters.  
+After each deployment, users should select the **Refresh module** button on the **General** tab of **EDI parameters** page.  
 This option will refresh the modules artefacts and ensure the module is up to date.
 
 ## General
@@ -42,6 +44,7 @@ XML and JSON uses standard ISO formats, but can be overridden on a document leve
 Leave XML and JSON as Standard date format to utilities the standard formats. 
 If they are setup as Custom, the custom date and time format must be specified.
 
+The following table describes the fields that are available on the **General** tab of the **EDI parameters** page.
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
 <ins>**Document Types**</ins>
@@ -72,9 +75,11 @@ If they are setup as Custom, the custom date and time format must be specified.
 **Allow historic PO types**       |	Customer order types: Confirmation, Cancel and Change have been moved to Order purpose. This field provides Backwards compatibility to still show these deprecated options under order types
 
 ## Number sequence
-Create and assign number sequence for the functionalities that will be used within the EDI module. Number sequences displayed is dependent on enabled licensed modules.
+Use the **Number sequences** tab on the **EDI parameters** page to assign number sequence codes to the different number sequences that the EDI module uses. The following table describes the purpose of each of those number sequences. For more information about number sequences, see [Number sequences overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview) and its related topics.
 
-**Field** 	                      | **Description**
+> Note: Number sequences displayed is dependent on enabled licensed modules.
+
+**Reference** 	                  | **Description**
 :-------------------------------- |:-------------------------------------
 **EDI number**                    |	Unique identifier for EDI staging. This stores the data in D365 in an intermediary/staging tables before creating the target record.
 **ASN number**                    |	Unique identifier when creating a Customer Advanced Shipping Notice (ASN) record. Customer license only
@@ -82,9 +87,14 @@ Create and assign number sequence for the functionalities that will be used with
 **Group control number**          |	Unique identifier when creating outbound records. The Inbound functional acknowledgement needs to refer to the outbound document's Group control number in order to reconcile against the correct outbound record and update the Received status to Yes.
 
 ## Hold codes
-Customer license only. Assign the Hold codes to be used when creating the Sales order when processing Customer purchase order records. <br>
-If required, create new Hold codes via **Sales and marketing > Setup > Sales orders > Order hold codes**
+The **Hold codes** tab is only available for Customer license. Assign the Hold codes to be used when creating the Sales order when processing Customer purchase order records. <br>
 
+If required, create new Hold codes via **Sales and marketing > Setup > Sales orders > Order hold codes**. <br>
+**Order hold codes** used for EDI, should have the following fields set to _No_:
+- Default for sales order
+- Remove inventory reservations
+
+The following table describes the fields that are available on the **Hold codes** tab of the **EDI parameters** page.
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
 **POC pending hold code**         |	Specify the hold code to be used for sales orders that require a Purchase order confirmation (POC). <br> When Customer purchase order acknowledgement document setting **PO confirmation required** is set to Yes, the Sales order will be created with this Hold code.

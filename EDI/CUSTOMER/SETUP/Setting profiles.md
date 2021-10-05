@@ -28,7 +28,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Customer setup
-# Document types - Setting profiles
+## Document types - Setting profiles
 
 Users can access the form by navigating to **EDI > Setup > Document types**.
 Setting profiles can be created to specify the handling of specific scenarios. Once setup for each document type, the setting profile can be assigned to each document on the Trading partner setup in **EDI > Setup > Trading partners**
@@ -44,4 +44,14 @@ The following customer documents have setting profiles:
 - [Customer purchase order change](SETTING%20PROFILES/Customer%20purchase%20order%20change.md)
 - [Customer purchase order acknowledgement](SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md)
 - [Customer advanced shipping notice](SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)
+- [Sales invoice](SETTING%20PROFILES/Sales%20invoice.md)
 
+## Document errors
+When an incoming staging record/document errors, it has not created/updated the target D365 transaction. <br>
+When an outgoing staging record/document errors, it has not created the Outbound file. <br>
+
+Staging/document errors can be viewed at: <br>
+- **EDI > Documents** - On each document type, user can set filter **Staging to target status** to _Error_
+- [**EDI > EDI Document maintenance**](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md) - The workspace contains a tile and tab for each document type.
+
+Users can use **Show log** and **Version log** to review the issues. And after the issue has been fixed, reset the status of the record. The next processing batch will pick up the _Not started_ status record.

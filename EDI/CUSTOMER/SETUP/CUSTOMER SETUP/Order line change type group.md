@@ -74,7 +74,7 @@ D365 sales order line allowed changes by Order line change type:
 
 
 ## Where used
-Customer EDI order line change type group is assigned on the Customer Trading partner's Options field called **Order line change type group**.
+Customer EDI order line change type group is assigned on the [Customer Trading partner's](../Trading%20partner.md) Options field called **Order line change type group**.
 
 ## Data entities:
 - Customer EDI order line change type group

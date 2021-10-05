@@ -30,6 +30,13 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Introduction
 This section will provide a quick overview of the Customer EDI module.
 
+Customer module includes the following documents:
+1. Customer purchase order (inbound): Creates a D365 sales order, sales agreement or release order.
+2. Customer purchase order change (inbound): Updates an existing D365 sales order by changing any of the following: delivery address, store code, dates, delivery time, quantities, prices and/or adding additional lines.
+3. Customer purchase acknowledgement (outbound): Send an acknowledgement comparing the D365 sales order to customers EDI purchase order.
+4. Customer advanced shipping notice (outbound): Send packing slip information with packing details.
+5. Sales invoice (outbound): Send the sales order tax invoice.
+
 ## Core setup
 Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 
@@ -64,36 +71,36 @@ Users can access the form by navigating to **EDI > Setup > Document types**
     - [Customer purchase order change](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20change.md)
     - [Customer purchase order acknowledgement](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md)
     - [Customer advanced shipping notice](../SETUP/SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)
+    - [Sales invoice](../SETUP/SETTING%20PROFILES/Sales%20invoice.md)
 - Validation profiles: applicable to the following inbound document types
     - [Customer purchase order](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order.md)
     - [Customer purchase order change](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order%20change.md)
 - [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
 - [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
 
-### Customer document type summary
-- [Document type summary]
-
 ## Trading partner setup
+Assign setup and incoming/outgoing documents on the Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Trading partners**
-- [Trading partner]
+- [Trading partner](../SETUP/Trading%20partner.md)
 
 ## Customer documents
+Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents > Customer documents**
-- Staging forms
-	- [Customer purchase order]
-	- [Customer purchase order change]
-	- [Review sales orders]
-	- [Customer purchase order acknowledgement]
-	- [Customer advanced shipping notice]
-	- [Sales invoice]
+- [Customer purchase order](../DOCUMENTS/Customer%20purchase%20order.md)
+- [Customer purchase order change](../DOCUMENTS/Customer%20purchase%20order%20change.md)
+- [Customer purchase order acknowledgement](../DOCUMENTS/Customer%20purchase%20order%20acknowledgement.md)
+- [Customer advanced shipping notice](../DOCUMENTS/Customer%20advanced%20shipping%20notice.md)
+- [Sales invoice](../DOCUMENTS/Sales%20invoice.md)
+
+## Review sales order
 
 ## Workspaces
 The following workspaces are available:
 - EDI Document maintenance
 	- [Applicable to all modules](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md)
 	- [Customer specific]
-- [EDI Sales order processing]
+- [EDI Sales order processing](../WORKSPACES/EDI%20Sales%20order%20processing.md)
 
 ## Other
-- [Data entities]
-- [Frequently asked questions]
+- [Data entities](../OTHER/Data%20entities.md)
+- [Frequently asked questions](../OTHER/FAQ.md)

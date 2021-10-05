@@ -28,13 +28,16 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # EDI shared parameters
-Users can access the form by navigating to **EDI > Setup > EDI shared parameters**
+The **EDI shared parameters** page is used to define settings that apply across the **EDI** module. The setup on this page is shared across legal entities and can be modified by users with the appropriate security permissions.
+
+To open the **EDI shared parameters** page, go to **EDI > Setup > EDI shared parameters**. Then set the fields as described in the following subsections.
 
 ## Prerequisites ##
 * Setup [Cleanup profile](CleanupProfile.md)
 * Setup [Reset status profile](ResetStatusProcess.md#setup-reset-status-profile)
 
 ## Setup EDI shared parameters
+The following table describes the fields that are available on the **General** tab on the **EDI shared parameters** page.
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------

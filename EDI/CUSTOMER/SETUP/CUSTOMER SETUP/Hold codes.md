@@ -49,7 +49,7 @@ Users can access the form by navigating to **Sales and marketing > Setup > Sales
 < Note: This option should **not** be selected for EDI hold codes
 
 ## Where used
-The created Order hold codes are assigned on EDI parameters. <br>
+The created Order hold codes are assigned on [EDI parameters](../../../CORE/Setup/EDI%20parameters.md). <br>
 Users can access the form by navigating to **EDI > Setup > EDI parameters**
 
 **Field** 	                    | **Description**

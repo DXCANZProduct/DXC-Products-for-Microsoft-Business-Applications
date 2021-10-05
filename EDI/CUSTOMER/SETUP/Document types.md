@@ -36,6 +36,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
     - [Customer purchase order change](SETTING%20PROFILES/Customer%20purchase%20order%20change.md)
     - [Customer purchase order acknowledgement](SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md)
     - [Customer advanced shipping notice](SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)
+    - [Sales invoice](SETTING%20PROFILES/Sales%20invoice.md)
 - Validation profiles: applicable to the following inbound document types
     - [Customer purchase order](VALIDATION%20PROFILES/Customer%20purchase%20order.md)
     - [Customer purchase order change](VALIDATION%20PROFILES/Customer%20purchase%20order%20change.md)
