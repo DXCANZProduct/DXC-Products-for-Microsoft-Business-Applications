@@ -42,3 +42,4 @@ When a purchase order file is imported, the file name is key to identifying the 
 There are various **Order types** that can be processed via the purchase order document. These order types can be specified in **Trading partners** Options and will change the way the record is processed.
 > Note: Expectation is the customer sends price _inclusive of discounts_. 
 
+![alt text](../IMAGE/HeaderChecks_CustomerPO.png "Header checks - Customer purchase order")
