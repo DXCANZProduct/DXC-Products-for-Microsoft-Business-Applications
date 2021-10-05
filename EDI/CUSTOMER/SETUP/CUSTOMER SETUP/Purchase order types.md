@@ -55,7 +55,7 @@ Examples: <br>
 **Release order**                 |	**RL** - Release or Delivery Order	  | **226** - Call off order
 
 ## Where used
-Customer EDI order type group is assigned on the Customer Trading partner's Options field called **Customer EDI order types**.
+Customer EDI order type group is assigned on the [Customer Trading partner's](../Trading%20partner.md) Options field called **Customer EDI order types**.
 
 ## Data entities:
 - Customer EDI order type group
