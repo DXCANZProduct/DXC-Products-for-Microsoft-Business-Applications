@@ -67,7 +67,7 @@ When the purchase order file is retrieved and imported, there are various valida
 - **EDI > Document maintenance**, tab **Customer documents**, tile **File import errors**
 
 At this step the issues are usually around the file not matching the template.
-- Does file record have the correct template assigned (General tab, field **Template**):
+- Does the file have the correct template assigned (General tab, field **Template**):
   - **No**: Use **Reset template** to assign a different template. If this should apply to future documents for the Trading partner, also update in **Trading partners**.
   - **Yes**: Review **Log** and fix the applicable template in **EDI > Setup > Document types**. Examples issues are date format, new field.
 
