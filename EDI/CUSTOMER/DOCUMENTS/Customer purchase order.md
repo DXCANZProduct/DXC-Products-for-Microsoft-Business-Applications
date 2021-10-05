@@ -62,13 +62,14 @@ When a purchase order file is imported, the file name is key to identifying the 
 
 ## Step 2 - Import to staging - Inbound file validation
 When the purchase order file is retrieved and imported, there are various validations that are completed before the staging record is created in the EDI staging table.
+If the processing of **Import to staging** errors, the Inbound file's **Status** will be set to _Error_ and no staging record created.
 
-**Rule Id**         |	**Details**         |	**Possible error at this step**
-:--                 |:--                  |:---
-**Check Template**  |	Identify a template for the Customer/Document type. This will be used to identify the whereabouts of data within the file 	| If the file doesn't match the template's format, the Inbound file will error and not create the staging record.
+**Rule Id**         |	**Details**         
+:--                 |:--                  
+**Check Template**  |	Identify a template for the Customer/Document type. This will be used to identify the whereabouts of data within the file
 
 ### Possible issues and fixes
-**Import to staging** errors can be viewed in:
+**Import to staging** errors for Customer purchase orders can be viewed in:
 - **EDI > Files > Inbound files** filtered to **Status** set to _Error_
 - **EDI > Document maintenance**, tab **Customer documents**, tile **File import errors**
 
@@ -78,6 +79,29 @@ At this step the issues are usually around the file not matching the template.
   - **Yes**: Review **Log** and fix the applicable template in **EDI > Setup > Document types**. Examples issues are date format, new field.
 
 ## Step 3 - Staging to target - Staging table validation
-There are various **Order types** that can be processed via the purchase order document. These order types can be specified in **Trading partners** Options and will change the way the record is processed.
+There are various **Order types** that can be processed via the purchase order document. These order types can be specified in **Trading partners** Options and will change the way the record is processed. <br>
+If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and no D365 target created i.e. sales order, sales agreement or release order is created.
 
 > Note: Expectation is the customer sends price _inclusive of discounts_. 
+
+**Rule Id**                 | **Details**               
+:---                        |:---                       
+**Check Order type**	    | Check the **EDI order type** field on the staging record, which indicates whether the record should create a sales order, sales agreement (blanket order) or release order.
+**Duplicate PO number**     | Check the customer purchase order rules to validate the purchase order is valid. If document setting **Duplicate tolerance** doesn’t allow duplicates. If duplicates are allowed, a new D365 Sales order will be created with the same Customer requisition.
+
+### Possible issues and fixes
+**Staging to target** errors for Customer purchase order can be viewed in:
+- **EDI > Documents > Customer purchase order** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **Customer documents**, tile **Purchase order errors**
+- **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO**
+
+At this step the issues are usually around mapping/business logic issues.
+Review the **Log** or **Version log** for the applicable record.
+
+**Error**           | **Method to fix**
+:---                |:----
+
+
+- Can **EDI order type** from staging record be found in [**Customer EDI order types**](SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) assigned to the Trading partner
+  - **No**: Use **Reset template** to assign a different template. If this should apply to future documents for the Trading partner, also update in **Trading partners**.
+  - **Yes**: Review **Log** or **Version log**
