@@ -34,5 +34,5 @@ The following [**Customer EDI order types**](../SETUP/CUSTOMER%20SETUP/Purchase%
 **Customer purchase order**	| Order		        | Original <br> Confirmation <br> Cancellation
 **Customer purchase order**	| Agreement		    | Original
 **Customer purchase order**	| Release order	  | Original
-**Purchase order change**	  | Order		        | Change <br> Cancellation
+**Customer purchase order change**	  | Order		        | Change <br> Cancellation
 
