@@ -36,4 +36,4 @@ The following [**Customer EDI order types**](../SETUP/CUSTOMER%20SETUP/Purchase%
 **Customer purchase order**	          | Release order	  | Original
 **Customer purchase order change**	  | Order		        | Change <br> Cancellation
 
-![alt text](../../Core/Image/Create_Document.png "EDI Create document process")
+![alt text](../../CORE/Image/Create_Document.png "EDI Create document process")
