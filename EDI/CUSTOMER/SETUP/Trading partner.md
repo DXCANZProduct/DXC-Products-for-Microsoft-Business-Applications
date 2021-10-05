@@ -54,6 +54,8 @@ The following table describes the customer module fields that are available on t
 **No Backorders**                 |	Identify if the trading partner accepts backorders - Y/N. <br> Where the **Customer purchase order acknowledgement's** document setting **Quantity type** is set to **Reserved quantity**, the sales line’s ordered quantity is adjusted to the quantity reserved for the sales line. <br> The setting is also used on the Customer purchase order acknowledgement to identify **full** or **partial** shipments.
 **UOM**                           |	Unit of measure mappings. Ability to map a customer’s unit of measure (example kgs) to D365 unit of measure (example kg). Used on in- and outbound documents **Sales unit** <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM%20mapping.md)
 
+- Data entity: EDI Customers
+
 #### Adresses
 The following table describes the customer module fields that are available on the **Addresses** FastTab of the **Trading partners** page.
 Allows users with appropriate security permissions to edit and create address records within the **Trading partner** page.
@@ -64,7 +66,7 @@ Each delivery address for a customer must be specified in the addresses form for
 > Note: If a store code is mapped to the sales order header, the address associated with the specified store code will be populated as the delivery address for the sales order.
 If the Purchase order refers to a new store code which hasn’t been mapped to a delivery address, the staging record will error with ‘Could not find address for store code '%'. The store can then be mapped to an address and the staging record reprocessed.
 
-Data entity: Party postal address V2, staging field SAB_EDISTORECODE
+- Data entity: Party postal address V2, staging field SAB_EDISTORECODE
 
 #### Outgoing documents
 The Outgoing documents FastTab defines the outgoing EDI document types that have been configured and enabled for the trading partner. It brings the document template and mappings together with the settings profile to enable the document for the trading partner.
