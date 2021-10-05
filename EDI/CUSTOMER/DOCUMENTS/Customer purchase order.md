@@ -49,12 +49,12 @@ Inbound files have the following three steps:
 ### Header checks for Customer purchase order
 ![alt text](../IMAGE/HeaderChecks_CustomerPO.png "Header checks for Customer purchase order")
 
-## Import
+## Step 1 - Import
 When a purchase order file is imported, the file name is key to identifying the customer and therefore the document template. See [Trading partners](../../CORE/Setup/Trading%20partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
 
 > Note: The file mask is used to identify the trading partner and therefore template
 
-## Import to staging - Inbound file validation
+## Step 2 - Import to staging - Inbound file validation
 When the purchase order file is retrieved and imported, there are various validations that are completed before the staging record is created in the EDI staging table.
 
 **Rule Id**         |	**Details**         |	**Possible error at this step**
@@ -71,7 +71,7 @@ At this step the issues are usually around the file not matching the template.
   - **No**: Use **Reset template** to assign a different template. If this should apply to future documents for the Trading partner, also update in **Trading partners**.
   - **Yes**: Review **Log** and fix the applicable template in **EDI > Setup > Document types**. Examples issues are date format, new field.
 
-## Staging to target - Staging table validation
+## Step 3 - Staging to target - Staging table validation
 There are various **Order types** that can be processed via the purchase order document. These order types can be specified in **Trading partners** Options and will change the way the record is processed.
 
 > Note: Expectation is the customer sends price _inclusive of discounts_. 
