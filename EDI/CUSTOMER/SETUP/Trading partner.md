@@ -67,9 +67,10 @@ If the Purchase order refers to a new store code which hasn’t been mapped to a
 Data entity: Party postal address V2, staging field SAB_EDISTORECODE
 
 #### Outgoing documents
-The **Outgoing documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Outgoing documents](../CORE/Setup/Trading%20partners.md#outgoing-documents)
+The **Outgoing documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Outgoing documents](../../CORE/Setup/Trading%20partners.md#outgoing-documents)
 
 #### Incoming documents
+The **Incoming documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Incoming documents](../../CORE/Setup/Trading%20partners.md#incoming-documents)
 
 ### Customers
 EDI trading partner information and Customer documents can be viewed via fact boxes available on the Customer details form.
