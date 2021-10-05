@@ -51,6 +51,8 @@ Header checks performed when:
 1. Importing Customer purchase order, 
 2. Processing from import to staging and 
 3. Processing from staging to target.
+
+
 ![alt text](../IMAGE/HeaderChecks_CustomerPO.png "Header checks for Customer purchase order")
 
 ## Step 1 - Import
