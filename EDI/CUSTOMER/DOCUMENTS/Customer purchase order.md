@@ -43,3 +43,13 @@ There are various **Order types** that can be processed via the purchase order d
 > Note: Expectation is the customer sends price _inclusive of discounts_. 
 
 ![alt text](../IMAGE/HeaderChecks_CustomerPO.png "Header checks - Customer purchase order")
+
+## Inbound file validation
+The first step is to import the file, which is available in **EDI > Files > Inbound files**
+When the purchase order file is retrieved and imported, there are various validations that are completed before the order is created in the EDI staging table.
+
+**Rule Id**         |	**Details**         |	**Possible error at this step**
+**Check Template**  |	Identify a template for the Customer/Document type. This will be used to identify the whereabouts of data within the file 	| If the file doesn't match the template's format, the Inbound file will error and not create the staging record.
+
+> Note: The file mask is used to identify the trading partner and therefore template
+
