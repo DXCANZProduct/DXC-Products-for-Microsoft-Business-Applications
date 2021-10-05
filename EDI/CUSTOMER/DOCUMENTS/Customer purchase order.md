@@ -36,4 +36,9 @@ The following [**Customer EDI order types**](../SETUP/CUSTOMER%20SETUP/Purchase%
 **Customer purchase order**	          | Release order	  | Original
 **Customer purchase order change**	  | Order		        | Change <br> Cancellation
 
-![alt text](../../Core/Images/Create_Document.png "EDI Create document process")
+![alt text](../../CORE/Image/Create_Document.png "EDI Create document process")
+
+When a purchase order file is imported, the file name is key to identifying the customer and therefore the document template. See [Trading partners](../../CORE/Setup/Trading%20partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table.  
+There are various **Order types** that can be processed via the purchase order document. These order types can be specified in **Trading partners** Options and will change the way the record is processed.
+> Note: Expectation is the customer sends price _inclusive of discounts_. 
+
