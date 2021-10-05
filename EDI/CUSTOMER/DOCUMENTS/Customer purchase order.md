@@ -36,21 +36,40 @@ The following [**Customer EDI order types**](../SETUP/CUSTOMER%20SETUP/Purchase%
 **Customer purchase order**	          | Release order	  | Original
 **Customer purchase order change**	  | Order		        | Change <br> Cancellation
 
-![alt text](../../CORE/Image/Create_Document.png "EDI Create document process")
+Inbound files have the following three steps:
+1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**
+2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > Customer documents > Customer purchase order**
+3. **Staging to target** - The staging record/s is processed to target. Based on the **Order type**, the target will be either a:
+  - Sales order (**Accounts receivable > Orders > All sales orders**)
+  - Sales agreement (**Accounts receivable > Orders > Sales agreements**
 
-When a purchase order file is imported, the file name is key to identifying the customer and therefore the document template. See [Trading partners](../../CORE/Setup/Trading%20partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table.  
-There are various **Order types** that can be processed via the purchase order document. These order types can be specified in **Trading partners** Options and will change the way the record is processed.
-> Note: Expectation is the customer sends price _inclusive of discounts_. 
+![alt text](../../CORE/Image/Create_Document.png "EDI Create document process")
 
 ![alt text](../IMAGE/HeaderChecks_CustomerPO.png "Header checks - Customer purchase order")
 
-## Inbound file validation
-The first step is to import the file, which is available in **EDI > Files > Inbound files**
-When the purchase order file is retrieved and imported, there are various validations that are completed before the order is created in the EDI staging table.
+## Import
+When a purchase order file is imported, the file name is key to identifying the customer and therefore the document template. See [Trading partners](../../CORE/Setup/Trading%20partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
+
+> Note: The file mask is used to identify the trading partner and therefore template
+
+## Import to staging - Inbound file validation
+When the purchase order file is retrieved and imported, there are various validations that are completed before the staging record is created in the EDI staging table.
 
 **Rule Id**         |	**Details**         |	**Possible error at this step**
 :--                 |:--                  |:---
 **Check Template**  |	Identify a template for the Customer/Document type. This will be used to identify the whereabouts of data within the file 	| If the file doesn't match the template's format, the Inbound file will error and not create the staging record.
 
-> Note: The file mask is used to identify the trading partner and therefore template
+### Possible issues and fixes
+**Import to staging** errors can be viewed in:
+- **EDI > Files > Inbound files** filtered to **Status** set to _Error_
+- **EDI > Document maintenance**, tab **Customer documents**, tile **File import errors**
 
+At this step the issues are usually around the file not matching the template.
+- Does file record have the correct template assigned (General tab, field **Template**):
+  - **No**: Use **Reset template** to assign a different template. If this should apply to future documents for the Trading partner, also update in **Trading partners**.
+  - **Yes**: Review **Log** and fix the applicable template in **EDI > Setup > Document types**. Examples issues are date format, new field.
+
+## Staging to target - Staging table validation
+There are various **Order types** that can be processed via the purchase order document. These order types can be specified in **Trading partners** Options and will change the way the record is processed.
+
+> Note: Expectation is the customer sends price _inclusive of discounts_. 
