@@ -81,9 +81,10 @@ At this step the issues are usually around the file not matching the template.
 Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
 
 ## Step 3 - Staging to target
+If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and no D365 target created i.e. sales order, sales agreement or release order is created.
+
 ### Staging header validation
 There are various **Order types** that can be processed via the purchase order document. These order types can be specified in **Trading partners** Options and will change the way the record is processed. <br>
-If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and no D365 target created i.e. sales order, sales agreement or release order is created.
 
 > Note: Expectation is the customer sends price _inclusive of discounts_. 
 
@@ -136,3 +137,53 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 **Error message**                     | **Error type**         | **Method to fix**
 :------------------------------------ |:----                   |:----
 Item not found: %	                  | Item not found         | **EDI > Documents > Customer documents > Customer purchase order** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's <br> [**Setting profile**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
+
+## View staging table records
+To view the Customer purchase order's staging records, go to **EDI > Documents > Customer documents > Customer purchase order**. 
+Use this page to review staging and process EDI Customer purchase order documents and convert into D365 Sales order, Sales agreement or Release order.
+
+### List page
+The following EDI fields are available on the list page.
+
+**Field**               | **Description**
+:---                    |:---
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
+**Company account**     | Legal entity of the document.
+**Company GLN**         | The company’s global location number is shown here.
+**Staging to target status**    | The current status of the staging record. <br> Options include: <br> • Not Started – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • Error – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • Completed – The staging record has been succesfully processed and created a D365 Sales order, Sales agreement or Release order.
+**Trading partner account**     | Customer account assigned to the staging record.
+**Trading partner GLN**         | The Customer’s global location number is shown here.
+**Customer Requisition**        | Customer's purchase order number to be populated in the Customer requisition field of the D365 Sales order header.
+**Purchase order date**         | The purchase order date from the EDI record is shown here.
+**EDI order type**              | The EDI order type is shown here.
+**EDI order purpose**           | The EDI order purpose is shown here. Receiving an Order purpose **Change** will error the staging record, since these should be sent as **Customer purchase order change** document. Only **Original**, **Confirmation** and **Cancellation** order purposes are allowed for **Customer purchase order** document.
+**Store code**                  | The store code from the EDI record is shown here.
+**Store zone**                  | The store zone from the EDI record is shown here.
+**Created Date and Time**       | The date and time the selected record was created in the staging table.
+**Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
+
+### Buttons
+The following buttons are available on the **Customer purchase order** Action Pane, tab **Purchase order import**.
+
+**Button**	                    | **Description**
+:---                            |:----
+**Process selected purchase orders** | Create D365 Sales order, Sales agreement or Release order for the selected record in the staging table.
+**Process all purchase order**	| Create all D365 Sales order, Sales agreement or Release order for the staging records that have a **Staging to target status** set to _Not started_. 
+**Inbound files**               | View the inbound file record the selected staging record.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
+**Sales Order**	                | If the staging record has been completed it is possible to inquire on the **Sales order** or **Release order** it created from this button.
+**Sales agreement**             | If the EDI blanket order staging record has been completed it is possible to inquire on the **Sales agreement** it created from this button.
+**Customers**                   | Inquire on the Customer for the selected record.
+**Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
+**Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
+**Reset Status**                | You can reset the staging to target status if the **Staging to target status** is set to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
+**Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> **Recurrence** text updated with changed recurrence details
+
+The following buttons are available on the **Customer purchase order**'s Action Pane, tab **Acknowledgement**.
+The **Acknowledgement** tab is available on all incoming documents staging pages and enables the user to process or view the **Functional acknowledgement outbound** that has been created for the inbound document.
+
+**Button**	                    | **Description**
+:---                            |:----
+**Send to EDI**                 | If the **Sent** field for the staging record is set to _No_, use this button to create the **Functional acknowledgement outbound** record and also update the **Sent** field to _Yes._
+**Reset flag**                  | If the **Sent** field for the staging record has been set to _Yes_, use this button to reset **Sent** to _No_.
+**Functional acknowledgement**  | Use this button to view the **Functional acknowledgement outbound** record created for the inbound document.
