@@ -96,7 +96,7 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 - **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO**
 
 At this step the issues are usually around mapping/business logic issues.
-Review the **Log** or **Version log** for the applicable record.
+Review the **Log** or **Version log** for the applicable record to find the issue.
 
 **Error**           | **Method to fix**
 :---                |:----
