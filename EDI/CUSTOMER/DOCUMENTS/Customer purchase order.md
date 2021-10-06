@@ -78,6 +78,8 @@ At this step the issues are usually around the file not matching the template.
   - **No**: Use **Reset template** to assign a different template. If this should apply to future documents for the Trading partner, also update in **Trading partners**.
   - **Yes**: Review **Log** and fix the applicable template in **EDI > Setup > Document types**. Examples issues are date format, new field.
 
+Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
+
 ## Step 3 - Staging to target - Staging table validation
 There are various **Order types** that can be processed via the purchase order document. These order types can be specified in **Trading partners** Options and will change the way the record is processed. <br>
 If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and no D365 target created i.e. sales order, sales agreement or release order is created.
@@ -101,14 +103,18 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 > Note: When the Version log displays an **Error type** of _Processing error_, the error hasn't been defined and the error **Message** will display the standard D365 error that stopped the processing. <br>
 > Note: Similar to manually processing a D365 transaction, EDI will stop at the first processing error and only this error is displayed. Fixing the error and reprocessing might result in subsequent standard processing errors which need to be dealt with.
 
+#### Example header errors:
 **Error message**       | **Error type**         | **Method to fix**
 :---                    |:----                   |:----
 Could not find address for store code '%'	| Store code not found    | Add/update existing Customer address with store code in: <br> • [**Trading partners**](../SETUP/Trading%20partner.md) page at **EDI > Setup > Trading partners**, or <br> • Customers page at **Accounts receivable > Customers > All customers**
 Field 'Agreement classification' must be filled in |                   | **EDI > Setup > Document types**. Select applicable **Agreement classification** on Customer purchase order document **Setting profile** in [**Document types**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md)
 Inventory dimension Site is mandatory and must consequently be specified.   | Processing error    | **Accounts receivable > Customers > All customers**. Setup default site or warehouse on the customer or if no default, the original EDI file needs to include these details.  
 The entered receipt date ‘%’ is not valid because it is before today.       |  Processing error   | **EDI > Documents > Customer documents > Customer purchase order**. Edit requested receipt date in the staging page.
-Item not found	    |       |**EDI > Documents > Customer documents > Customer purchase order** and/or **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document [**Setting profile**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md), EDI couldn’t find the staging record's Item Id / Barcode. Either fix staging or setup on the Item.
 Sales Agreement for customer '%', purchase number ‘%’ not found     |   	| Received a Release order referring to Sales agreement that could not be found for the Customer. <br> 1. **EDI > Setup > Docuemnt types** or **EDI > Setup > Trading partners**. If sales agreement is not required, either update document setting **Create release order without blanket order**’ to _Yes_ or assign the correct Setting on the Trading partner. <br> 2. If blanket order is required, create/import the sales agreement or fix the **Customer requisition** on existing sales agreement (if D365 incorrect) or on the staging record (if staging incorrect).
 Invalid order type  | Order type not found          | Review the staging record's **EDI order type** is mapped in the [**Customer EDI order types**](SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) assigned to the Trading partner.
 Purchase order '%' already exists on sales order '%'  | Order duplicate    | The document setting **Duplicate tolerance** doesn't allow duplicate orders. If duplicates are allowed for flagged orders, update the **Bypass duplicate check** on the Sales order hearder under the **EDI** FastTab.
 
+### Example line errors:
+**Error message**       | **Error type**         | **Method to fix**
+:---                    |:----                   |:----
+Item not found: %	    | Item not found         |**EDI > Documents > Customer documents > Customer purchase order** and/or **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document [**Setting profile**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md), EDI couldn’t find the staging record's Item Id / Barcode. Either fix staging or setup on the Item.
