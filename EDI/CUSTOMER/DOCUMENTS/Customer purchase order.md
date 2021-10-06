@@ -191,7 +191,7 @@ The **Acknowledgement** tab is available on all incoming documents staging pages
 ### Header fields
 The following EDI Header fields are available on the header page.
 
-**Field**	            | **Description**	                                    | **Written to sales order field**
+**Field**	            | **Description**	                                    | **Target D365 field**
 :---                    |:---                                                   |:---
 <ins>**Identification**</ins>		
 **EDI number**          | EDI Staging table record id                           | Sales Order > EDI > Original EDI number
