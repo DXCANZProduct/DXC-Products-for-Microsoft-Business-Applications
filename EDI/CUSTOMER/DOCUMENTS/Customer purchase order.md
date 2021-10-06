@@ -104,12 +104,8 @@ Could not find address for store code '%'	| Add/update existing Customer address
 Field 'Agreement classification' must be filled in | **EDI > Setup > Document types**. Select applicable **Agreement classification** on Customer purchase order document **Setting profile** in [**Document types**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md)
 Inventory dimension Site is mandatory and must consequently be specified.   | **Accounts receivable > Customers > All customers**. Setup default site or warehouse on the customer or if no default, the original EDI file needs to include these details.  
 The entered receipt date ‘%’ is not valid because it is before today. | **EDI > Documents > Customer documents > Customer purchase order**. Edit requested receipt date in the staging page.
-Item not found	    | **EDI > Documents > Customer documents > Customer purchase order** and/or **Product information management > Products > Released products** <br> Dependening on Item Id source assigned to Trading partner’s Document [**Setting profile**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md), EDI couldn’t find the staging record's Item Id / Barcode. Either fix staging or setup on the Item.
+Item not found	    | **EDI > Documents > Customer documents > Customer purchase order** and/or **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document [**Setting profile**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md), EDI couldn’t find the staging record's Item Id / Barcode. Either fix staging or setup on the Item.
 Sales Agreement for customer '%', purchase number ‘%’ not found	| Received a Release order referring to Sales agreement that could not be found for the Customer. 
 1. **EDI > Setup > Docuemnt types** or **EDI > Setup > Trading partners**. If sales agreement is not required, either update document setting **Create release order without blanket order**’ to _Yes_ or assign the correct Setting on the Trading partner. 
 2. If blanket order is required, create/import the sales agreement or fix the **Customer requisition** on existing sales agreement (if D365 incorrect) or on the staging record (if staging incorrect).
-
-
-- Can **EDI order type** from staging record be found in [**Customer EDI order types**](SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) assigned to the Trading partner
-  - **No**: Use **Reset template** to assign a different template. If this should apply to future documents for the Trading partner, also update in **Trading partners**.
-  - **Yes**: Review **Log** or **Version log**
+Invalid order type  | Review the staging record's **EDI order type** is mapped in the [**Customer EDI order types**](SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) assigned to the Trading partner.
