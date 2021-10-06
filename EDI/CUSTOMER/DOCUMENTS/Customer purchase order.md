@@ -98,8 +98,8 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 At this step the issues are usually around mapping/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
 
-> Note: When the Version log displays an **Error type** of _Processing error_, the error hasn't been defined and the error **Message** will display the standard D365 error that stopped the processing. 
-> Note: Similart to manually processing a D365 transaction, EDI will stop at the first processing error and only this error is displayed. Fixing the error and reprocessing might result in subsequent standard processing errors which need to be dealt with.
+> Note: When the Version log displays an **Error type** of _Processing error_, the error hasn't been defined and the error **Message** will display the standard D365 error that stopped the processing. <br>
+> Note: Similar to manually processing a D365 transaction, EDI will stop at the first processing error and only this error is displayed. Fixing the error and reprocessing might result in subsequent standard processing errors which need to be dealt with.
 
 **Error message**       | **Error type**         | **Method to fix**
 :---                    |:----                   |:----
