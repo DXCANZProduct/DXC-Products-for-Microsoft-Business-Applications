@@ -119,6 +119,19 @@ Purchase order '%' already exists on sales order '%'  | Order duplicate    | The
 
 ![alt text](../IMAGE/LineChecks_CustomerPO.png "Line checks for Customer purchase order")
 
+**Rule Id**                 | **Details**               
+:---                        |:---                 
+**No Valid Item**           | No valid item based on the different options available
+
+#### Possible issues and fixes
+**Staging to target** errors for Customer purchase order can be viewed in:
+- **EDI > Documents > Customer purchase order** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **Customer documents**, tile **Purchase order errors**
+- **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO**
+
+At this step the issues are usually around setup/business logic issues.
+Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
+
 #### Example line errors:
 **Error message**                     | **Error type**         | **Method to fix**
 :------------------------------------ |:----                   |:----
