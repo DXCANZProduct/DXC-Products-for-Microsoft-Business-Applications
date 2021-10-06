@@ -100,6 +100,20 @@ Review the **Log** or **Version log** for the applicable record.
 
 **Error**           | **Method to fix**
 :---                |:----
+Could not find address for store code '%'	| Add/update existing Customer address with store code in: <br> • [**Trading partners**](../SETUP/Trading%20partner.md) page or <br> • Customers page
+Field 'Agreement classification' must be filled in | Select applicable **Agreement classification** on Customer purchase order document **Setting profile** in **Document types**(../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md)
+**Inventory dimension Site is mandatory and must consequently be specified.**   | ACCOUNTS RECEIVABLE > CUSTOMERS > ALL CUSTOMERS
+Setup default site or warehouse on the customer or if no default, original EDI file needs to include these details.
+The entered receipt date ‘%’ is not valid because it is before today.	EDI > DOCUMENTS > CUSTOMER DOCUMENTS > CUSTOMER PURCHASE ORDER
+Edit requested receipt date in staging form
+Item not found	EDI > DOCUMENTS > CUSTOMER DOCUMENTS > CUSTOMER PURCHASE ORDER
+EDI > DOCUMENTS > CUSTOMER DOCUMENTS > CUSTOMER PURCHASE ORDER CHANGE
+PRODUCT INFORMATION MANAGEMENT > PRODUCTS > RELEASED PRODUCTS
+Dependent on Item Id source assigned to Trading partner’s Document, EDI couldn’t find the PO or PO change’s item. Either fix staging or setup on the Item.
+Sales Agreement for customer '%', purchase number ‘%’ not found	Received a Release order referring to Sales agreement that could not be found for the Customer. 
+1. EDI > SETUP > DOCUMENT TYPES
+If sales agreement is not required, update document setting ‘Create release order without blanket order’ to Yes. 
+2. Create/import sales agreement or fix ‘Customer requisition’ on existing sales agreement (if D365 incorrect)
 
 
 - Can **EDI order type** from staging record be found in [**Customer EDI order types**](SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) assigned to the Trading partner
