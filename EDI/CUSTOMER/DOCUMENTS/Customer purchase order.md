@@ -97,7 +97,7 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 At this step the issues are usually around mapping/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
-When the Version log displayes an **Error type** of _Processing error_, the error hasn't been defined and is displaying standard D365 error.
+When the Version log displays an **Error type** of _Processing error_, the error hasn't been defined and is displaying standard D365 error.
 
 **Error message**       | **Error type**         | **Method to fix**
 :---                    |:----                   |:----
