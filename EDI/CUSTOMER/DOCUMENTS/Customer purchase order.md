@@ -68,7 +68,7 @@ If the processing of **Import to staging** errors, the Inbound file's **Status**
 :--                 |:--                  
 **Check Template**  |	Identify a template for the Customer/Document type. This will be used to identify the whereabouts of data within the file
 
-### Possible issues and fixes
+#### Possible issues and fixes
 **Import to staging** errors for Customer purchase orders can be viewed in:
 - **EDI > Files > Inbound files** filtered to **Status** set to _Error_
 - **EDI > Document maintenance**, tab **Customer documents**, tile **File import errors**
@@ -80,7 +80,8 @@ At this step the issues are usually around the file not matching the template.
 
 Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
 
-## Step 3 - Staging to target - Staging table validation
+## Step 3 - Staging to target
+### Staging header validation
 There are various **Order types** that can be processed via the purchase order document. These order types can be specified in **Trading partners** Options and will change the way the record is processed. <br>
 If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and no D365 target created i.e. sales order, sales agreement or release order is created.
 
@@ -91,7 +92,7 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 **Check Order type**	    | Check the **EDI order type** field on the staging record, which indicates whether the record should create a sales order, sales agreement (blanket order) or release order.
 **Duplicate PO number**     | Check the customer purchase order rules to validate the purchase order is valid. If document setting **Duplicate tolerance** doesn’t allow duplicates. If duplicates are allowed, a new D365 Sales order will be created with the same Customer requisition.
 
-### Possible issues and fixes
+#### Possible issues and fixes
 **Staging to target** errors for Customer purchase order can be viewed in:
 - **EDI > Documents > Customer purchase order** filtered to **Staging to target tatus** set to _Error_
 - **EDI > Document maintenance**, tab **Customer documents**, tile **Purchase order errors**
@@ -114,7 +115,11 @@ Sales Agreement for customer '%', purchase number ‘%’ not found     |  Order
 Invalid order type  | Order type not found          | Review the staging record's **EDI order type** is mapped in the [**Customer EDI order types**](SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) assigned to the Trading partner.
 Purchase order '%' already exists on sales order '%'  | Order duplicate    | The document setting **Duplicate tolerance** doesn't allow duplicate orders. If duplicates are allowed for flagged orders, update the **Bypass duplicate check** on the Sales order hearder under the **EDI** FastTab.
 
-### Example line errors:
+### Staging line validation
+
+![alt text](../IMAGE/LineChecks_CustomerPO.png "Line checks for Customer purchase order")
+
+#### Example line errors:
 **Error message**                     | **Error type**         | **Method to fix**
 :------------------------------------ |:----                   |:----
 Item not found: %	                  | Item not found         | **EDI > Documents > Customer documents > Customer purchase order** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's <br> [**Setting profile**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
