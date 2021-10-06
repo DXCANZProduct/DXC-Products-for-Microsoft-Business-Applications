@@ -105,7 +105,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 
 #### Example header errors:
 **Error message**       | **Error type**         | **Method to fix**
-:---                    |:----                   |:----
+:---------------------- |:----                   |:----
 Could not find address for store code '%'	| Store code not found    | Add/update existing Customer address with store code in: <br> • [**Trading partners**](../SETUP/Trading%20partner.md) page at **EDI > Setup > Trading partners**, or <br> • Customers page at **Accounts receivable > Customers > All customers**
 Field 'Agreement classification' must be filled in |                   | **EDI > Setup > Document types**. Select applicable **Agreement classification** on Customer purchase order document **Setting profile** in [**Document types**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md)
 Inventory dimension Site is mandatory and must consequently be specified.   | Processing error    | **Accounts receivable > Customers > All customers**. Setup default site or warehouse on the customer or if no default, the original EDI file needs to include these details.  
@@ -116,5 +116,5 @@ Purchase order '%' already exists on sales order '%'  | Order duplicate    | The
 
 ### Example line errors:
 **Error message**       | **Error type**         | **Method to fix**
-:---                    |:----                   |:----
+:---------------------- |:----                   |:----
 Item not found: %	    | Item not found         |**EDI > Documents > Customer documents > Customer purchase order** and/or **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document [**Setting profile**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md), EDI couldn’t find the staging record's Item Id / Barcode. Either fix staging or setup on the Item.
