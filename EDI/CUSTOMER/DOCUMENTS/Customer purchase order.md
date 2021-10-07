@@ -250,22 +250,11 @@ The following EDI Line fields are available on the lines page.
 **Line amount excluding tax**   | The total line amount excluding tax.	                                | Sales line > Unit price <br> If document setting's **Use customer price** is set to _Yes_ AND <br> Staging **Unit price** is blank AND <br> document setting's **Prices include GST** is set to _No_: <br> Sales line **Unit price** is calculated by **Line amount excluding tax** / **Customer sales quantity**
 **Line amount including tax**   | The total line amount including tax (if provided else 0)	            | Sales line > Unit price <br> If document setting's **Use customer price** is set to _Yes_ AND <br> Staging **Unit price** is blank AND <br> Document setting's **Prices include GST** is set to _Yes_: <br> Sales line unit price is calculated by **Line amount including tax** / **Customer sales quantity**
 **Customer inners**         | The customer’s inners per outer quantity	                                | Sales line > EDI > POA response > Customer > Inner
-Customer pack	The customer’s pack quantity	 Sales line > EDI > POA response > Customer > Pack
-Configuration	Inventory dimension - Configuration	Sales line > Inventory dimension
-If Item id Source <> Our item number and the External item number/ GTIN/Barcode is unique per variant, the customer doesn’t have to provide Variant details and EDI will find and populate the inventory dimensions on the sales line.
-Colour	Inventory dimension - Colour	
-Size	Inventory dimension - Size	
-Style	Inventory dimension - Style	
-Site	Storage dimension - Site	Sales line > Site
-If staging blank will be populated by Sales order Header. 
-If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
-Warehouse	Storage dimension - Warehouse	Sales line > Warehouse
-If staging blank will be populated by Sales order Header. 
-If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
-Store code	The store code from the EDI PO line is shown here.	Sales line> EDI > General > Store code
-EDI supports different store codes on line level
-Delivery name	Address for Delivery – Delivery name	
-Requested ship date	The requested ship date (delivery window) from the EDI PO is shown here.	Sales line > Delivery > Requested ship date
-If staging blank will be populated by Sales order Header
-Requested receipt date	The requested receipt date (delivery window) from the EDI PO is shown here.	Sales line > Delivery > Requested receipt date
-If staging blank will be populated by Sales order Header
+**Customer pack**           | The customer’s pack quantity	                                            | Sales line > EDI > POA response > Customer > Pack
+**Configuration** <br> **Colour**  <br> **Size** <br> **Style**  | Inventory dimension - Configuration <br> Inventory dimension - Colour <br> Inventory dimension - Size <br> Inventory dimension - Style   | Sales line > Inventory dimension <br> If Item id Source <> Our item number and the External item number/ GTIN/Barcode is unique per variant, the customer doesn’t have to provide Variant details and EDI will find and populate the inventory dimensions on the sales line.
+**Site**                    | Storage dimension - Site	                                                | Sales line > Site <br> If staging blank will be populated by Sales order Header. If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
+**Warehouse**               | Storage dimension - Warehouse	                                            | Sales line > Warehouse <br> If staging blank will be populated by Sales order Header. If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
+**Store code**              | The store code from the EDI saging line is shown here.	                | Sales line > EDI > General > Store code <br> EDI supports different store codes on line level
+**Delivery name**           | Address for Delivery – Delivery name	
+**Requested ship date**     | The requested ship date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested ship date <br> If staging blank will be populated by Sales order Header
+**Requested receipt date**  | The requested receipt date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested receipt date <br> If staging blank will be populated by Sales order Header
