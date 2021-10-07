@@ -36,9 +36,7 @@ Expectation is the customer sends price inclusive of discounts.
 The following [**Customer EDI order types**](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) and [**Order purposes**](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md) are supported by each Customer inbound document:
 **Document type**		                  | **Order type**	| **Order purpose**
 :----                                 |:----            |:----
-**Customer purchase order**	          | Order		        | Original <br> Confirmation <br> Cancellation
-**Customer purchase order**	          | Agreement		    | Original
-**Customer purchase order**	          | Release order	  | Original
+**Customer purchase order**	          | Order <br><br><br> Agreement <br> Release order | Original <br> Confirmation <br> Cancellation <br> Original <br> Original
 **Customer purchase order change**	  | Order		        | Change <br> Cancellation
 
 Inbound files have the following three steps:
