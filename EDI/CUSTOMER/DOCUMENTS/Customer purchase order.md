@@ -83,7 +83,7 @@ Example error for file not matching template: 'Segment '<xml' not found in EDI t
 ## Step 3 - Staging to target
 If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and no D365 target created i.e. sales order, sales agreement or release order is created.
 
-### Staging header validation
+### Staging header validation - Sales order
 There are various **Order types** that can be processed via the purchase order document. These order types can be specified in **Trading partners** Options and will change the way the record is processed. <br>
 
 > Note: Expectation is the customer sends price _inclusive of discounts_. 
@@ -116,7 +116,7 @@ Sales Agreement for customer '%', purchase number ‘%’ not found     |  Order
 Invalid order type  | Order type not found          | Review the staging record's **EDI order type** is mapped in the [**Customer EDI order types**](SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) assigned to the Trading partner.
 Purchase order '%' already exists on sales order '%'  | Order duplicate    | The document setting **Duplicate tolerance** doesn't allow duplicate orders. If duplicates are allowed for flagged orders, update the **Bypass duplicate check** on the Sales order hearder under the **EDI** FastTab.
 
-### Staging line validation
+### Staging line validation - Sales order
 
 ![alt text](../IMAGE/LineChecks_CustomerPO.png "Line checks for Customer purchase order")
 
@@ -138,11 +138,40 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 :------------------------------------ |:----                   |:----
 Item not found: %	                  | Item not found         | **EDI > Documents > Customer documents > Customer purchase order** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's <br> [**Setting profile**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
 
-## View staging table records
+### Sales order header checks
+
+![alt text](../IMAGE/SalesOrderHeaderChecks_CustomerPO.png "Sales order header checks")
+
+**Rule Id**             | **Details**
+**Deadline date**       | A check of this date against the standard rules is required. (i.e. Dates are not historical)
+
+### Staging line validation - Release order
+An EDI sales order and release order will usually be separated per Distribution Centre (DC) with a breakdown per store.  If it is received per DC, one sales order will be created with each sales order line having a ‘store code’ which is used to identify the final delivery destination. 
+
+![alt text](../IMAGE/LineChecks_CustomerReleaseOrder.png "Line checks for Customer release order")
+
+#### Settings
+Settings profiles can be specified and linked to the template which is used to determine how D365 will react.  Options are:
+
+**Setting**                                 | **Details**
+:---                                        |:---
+Create release order without blanket order	| The action taken when a release order is received without a D365 blanket order
+
+### Sales order line checks
+
+![alt text](../IMAGE/SalesOrderLineChecks_CustomerPO.png "Sales order line checks")
+
+**Rule Id**                                 | **Details**
+**Unit of measurement**                     | It should first check that this unit of measurement actually exists, a second check should be the measurement on the inventory table module for sales. If the Customer has a **UOM** mapping assigned, this will also be used to map their value to D365 value.
+**Unit price**                              | The unit price should be checked using the standard D365 pricing rules.  If the prices are slightly different it should check both the **Maximum positive and negative tolerance** and **Use customer price** flag on document's setting before giving an error/warning. Example: <br> Item X trade agreement price 10.25 <br> Item Y trade agreement price 8.88 <br> Customer has a min and max tolerance setting of 0.05 <br> Customer does not have their trade agreements entered including tax
+Customer sends their EDI orders including tax <br> The setting use customer pricing is given <br> Item X EDI file price (before converting) 11.26 (after conversion) 10.24 <br> Item Y EDI file price (before converting) 9.70 (after conversion) 8.82 <br> Template setting against this field is warning. <br> A warning is only given for Item Y because it is outside of the tolerance. 
+**Check multiple**                          | The quantity should be devisable by the multiple specified on the customer multiple table, if there isn’t one then it check the sales multiple on the item table.  
+
+# View staging table records
 To view the Customer purchase order's staging records, go to **EDI > Documents > Customer documents > Customer purchase order**. 
 Use this page to review staging and process EDI Customer purchase order documents and convert into D365 Sales order, Sales agreement or Release order.
 
-### List page
+## List page
 The following EDI fields are available on the list page.
 
 **Field**               | **Description**
@@ -162,7 +191,7 @@ The following EDI fields are available on the list page.
 **Created Date and Time**       | The date and time the selected record was created in the staging table.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
-### Buttons
+## Buttons
 The following buttons are available on the **Customer purchase order** Action Pane, tab **Purchase order import**.
 
 **Button**	                    | **Description**
@@ -188,7 +217,7 @@ The **Acknowledgement** tab is available on all incoming documents staging pages
 **Reset flag**                  | If the **Sent** field for the staging record has been set to _Yes_, use this button to reset **Sent** to _No_.
 **Functional acknowledgement**  | Use this button to view the **Functional acknowledgement outbound** record created for the inbound document.
 
-### Header fields
+## Header fields
 The following EDI Header fields are available on the header page.
 
 **Field**	            | **Description**	                                    | **Target D365 field**
@@ -235,7 +264,7 @@ The following EDI Header fields are available on the header page.
 **Requested receipt date**  | The requested receipt date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested receipt date <br> Sales order > Requested receipt date
 **Delivery time**           | The delivery time from the EDI record is shown here.                      | Sales Order > EDI > Delivery time
 
-### Line fields
+## Line fields
 The following EDI Line fields are available on the lines page.
 
 **Field**                   | **Description**                                                           | **Target D365 field**
@@ -258,3 +287,4 @@ The following EDI Line fields are available on the lines page.
 **Delivery name**           | Address for Delivery – Delivery name	
 **Requested ship date**     | The requested ship date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested ship date <br> If staging blank will be populated by Sales order Header
 **Requested receipt date**  | The requested receipt date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested receipt date <br> If staging blank will be populated by Sales order Header
+
