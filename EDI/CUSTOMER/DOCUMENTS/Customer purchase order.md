@@ -143,6 +143,7 @@ Item not found: %	                  | Item not found         | **EDI > Documents
 ![alt text](../IMAGE/SalesOrderHeaderChecks_CustomerPO.png "Sales order header checks")
 
 **Rule Id**             | **Details**
+:---                    |:---
 **Deadline date**       | A check of this date against the standard rules is required. (i.e. Dates are not historical)
 
 ### Staging line validation - Release order
