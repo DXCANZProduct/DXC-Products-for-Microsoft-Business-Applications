@@ -116,7 +116,7 @@ Sales Agreement for customer '%', purchase number ‘%’ not found     |  Order
 Invalid order type  | Order type not found          | Review the staging record's **EDI order type** is mapped in the [**Customer EDI order types**](SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) assigned to the Trading partner.
 Purchase order '%' already exists on sales order '%'  | Order duplicate    | The document setting **Duplicate tolerance** doesn't allow duplicate orders. If duplicates are allowed for flagged orders, update the **Bypass duplicate check** on the Sales order hearder under the **EDI** FastTab.
 
-### Staging line validation
+### Staging line validation - Sales order
 
 ![alt text](../IMAGE/LineChecks_CustomerPO.png "Line checks for Customer purchase order")
 
@@ -138,10 +138,9 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 :------------------------------------ |:----                   |:----
 Item not found: %	                  | Item not found         | **EDI > Documents > Customer documents > Customer purchase order** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's <br> [**Setting profile**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
 
-### Staging header validation - Sales agreement
-An EDI purchase order can often be sent through before the store breakdown is known.  Where this is the case a sales agreement is created prior to the release order being received.
+### Sales order header checks
 
-![alt text](../IMAGE/HeaderChecks_CustomerSalesAgreement.png "Header checks for Customer sales agreement")
+![alt text](../IMAGE/SalesOrderHeaderChecks_CustomerPO.png "Sales order header checks")
 
 **Rule Id**             | **Details**
 **Deadline date**       | A check of this date against the standard rules is required. (i.e. Dates are not historical)
@@ -158,6 +157,15 @@ Settings profiles can be specified and linked to the template which is used to d
 :---                                        |:---
 Create release order without blanket order	| The action taken when a release order is received without a D365 blanket order
 
+### Sales order line checks
+
+![alt text](../IMAGE/SalesOrderLineChecks_CustomerPO.png "Sales order line checks")
+
+**Rule Id**                                 | **Details**
+**Unit of measurement**                     | It should first check that this unit of measurement actually exists, a second check should be the measurement on the inventory table module for sales. If the Customer has a **UOM** mapping assigned, this will also be used to map their value to D365 value.
+**Unit price**                              | The unit price should be checked using the standard D365 pricing rules.  If the prices are slightly different it should check both the **Maximum positive and negative tolerance** and **Use customer price** flag on document's setting before giving an error/warning. Example: <br> Item X trade agreement price 10.25 <br> Item Y trade agreement price 8.88 <br> Customer has a min and max tolerance setting of 0.05 <br> Customer does not have their trade agreements entered including tax
+Customer sends their EDI orders including tax <br> The setting use customer pricing is given <br> Item X EDI file price (before converting) 11.26 (after conversion) 10.24 <br> Item Y EDI file price (before converting) 9.70 (after conversion) 8.82 <br> Template setting against this field is warning. <br> A warning is only given for Item Y because it is outside of the tolerance. 
+**Check multiple**                          | The quantity should be devisable by the multiple specified on the customer multiple table, if there isn’t one then it check the sales multiple on the item table.  
 
 # View staging table records
 To view the Customer purchase order's staging records, go to **EDI > Documents > Customer documents > Customer purchase order**. 
