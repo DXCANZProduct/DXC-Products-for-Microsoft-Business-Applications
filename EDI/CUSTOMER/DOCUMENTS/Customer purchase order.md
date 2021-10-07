@@ -241,8 +241,8 @@ The following EDI Line fields are available on the lines page.
 **Field**                   | **Description**                                                           | **Target D365 field**
 :---                        |:---                                                                       |:---
 **Line number**             | The line within the EDI table/file	                                    | Sales Line > EDI > General > Line number
-**Item number**             | The item identifier as sent by the trading partner. Used when document type setting **Item Id source**** is: <br> • **Our item number** or <br> • **External item number**	| Sales line > EDI > General > EDI Item number <br> Sales line > Item number
-**Bar code**                | The item identifier as sent by the trading partner. Used when document type setting **Item Id source** is: <br> • **GTIN** or • **Barcode**	| Sales line > Item number
+**Item number**             | The item identifier as sent by the trading partner. 	| Sales line > EDI > General > EDI Item number <br> Used when document type setting **Item Id source**** is: <br> • **Our item number** or <br> • **External item number** is to determine Sales line > Item number
+**Bar code**                | The item identifier as sent by the trading partner. 	| Used when document type setting **Item Id source** is: <br> • **GTIN** or • **Barcode** to determine: Sales line > Item number
 **SKU**                     | SKU for item	
 **Unit Price**              | Customer unit price inclusive of discounts (net price)	                | Sales line > Unit price <br> If document setting **Use customer price** is set to _Yes_
 **Customer sales quantity** | The customer order quantity for this line.	                            | Sales line > EDI > POA response > Customer > Quantity
