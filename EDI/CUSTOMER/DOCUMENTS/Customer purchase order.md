@@ -235,3 +235,37 @@ The following EDI Header fields are available on the header page.
 **Requested receipt date**  | The requested receipt date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested receipt date <br> Sales order > Requested receipt date
 **Delivery time**           | The delivery time from the EDI record is shown here.                      | Sales Order > EDI > Delivery time
 
+### Line fields
+The following EDI Line fields are available on the lines page.
+
+**Field**                   | **Description**                                                           | **Target D365 field**
+:---                        |:---                                                                       |:---
+**Line number**             | The line within the EDI table/file	                                    | Sales Line > EDI > General > Line number
+**Item number**             | The item identifier as sent by the trading partner. Used when document type setting **Item Id source**** is: <br> • **Our item number** or <br> • **External item number**	| Sales line > EDI > General > EDI Item number <br> Sales line > Item number
+**Bar code**                | The item identifier as sent by the trading partner. Used when document type setting **Item Id source** is: <br> • **GTIN** or • **Barcode**	| Sales line > Item number
+**SKU**                     | SKU for item	
+**Unit Price**              | Customer unit price inclusive of discounts (net price)	                | Sales line > Unit price <br> If document setting **Use customer price** is set to _Yes_
+**Customer sales quantity** | The customer order quantity for this line.	                            | Sales line > EDI > POA response > Customer > Quantity
+**Unit**                    | The customer unit of measure for this line.
+**Line amount excluding tax**   | The total line amount excluding tax.	                                | Sales line > Unit price <br> If document setting's **Use customer price** is set to _Yes_ AND <br> Staging **Unit price** is blank AND <br> document setting's **Prices include GST** is set to _No_: <br> Sales line **Unit price** is calculated by **Line amount excluding tax** / **Customer sales quantity**
+**Line amount including tax**   | The total line amount including tax (if provided else 0)	            | Sales line > Unit price <br> If document setting's **Use customer price** is set to _Yes_ AND <br> Staging **Unit price** is blank AND <br> Document setting's **Prices include GST** is set to _Yes_: <br> Sales line unit price is calculated by **Line amount including tax** / **Customer sales quantity**
+**Customer inners**         | The customer’s inners per outer quantity	                                | Sales line > EDI > POA response > Customer > Inner
+Customer pack	The customer’s pack quantity	 Sales line > EDI > POA response > Customer > Pack
+Configuration	Inventory dimension - Configuration	Sales line > Inventory dimension
+If Item id Source <> Our item number and the External item number/ GTIN/Barcode is unique per variant, the customer doesn’t have to provide Variant details and EDI will find and populate the inventory dimensions on the sales line.
+Colour	Inventory dimension - Colour	
+Size	Inventory dimension - Size	
+Style	Inventory dimension - Style	
+Site	Storage dimension - Site	Sales line > Site
+If staging blank will be populated by Sales order Header. 
+If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
+Warehouse	Storage dimension - Warehouse	Sales line > Warehouse
+If staging blank will be populated by Sales order Header. 
+If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
+Store code	The store code from the EDI PO line is shown here.	Sales line> EDI > General > Store code
+EDI supports different store codes on line level
+Delivery name	Address for Delivery – Delivery name	
+Requested ship date	The requested ship date (delivery window) from the EDI PO is shown here.	Sales line > Delivery > Requested ship date
+If staging blank will be populated by Sales order Header
+Requested receipt date	The requested receipt date (delivery window) from the EDI PO is shown here.	Sales line > Delivery > Requested receipt date
+If staging blank will be populated by Sales order Header
