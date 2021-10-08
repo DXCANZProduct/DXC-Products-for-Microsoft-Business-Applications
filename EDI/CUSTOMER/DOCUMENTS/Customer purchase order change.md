@@ -197,9 +197,13 @@ The Customer Purchase order change can update the following Sales order header f
     -	Change order date
     -	Store code
     -	Requested ship date
-   -	Requested receipt date
-   -	Delivery time
-   -	Change version number
-   -	POA status: If POA required for change, will change to Pending
+    -	Requested receipt date
+    -	Delivery time
+    -	Change version number
+    -	POA status: If POA required for change, will change to Pending
 
 The following EDI Header staging fields are available on the header page.
+
+**Field**	              | **Description**	                                      | **Target D365 field**
+:---                    |:---                                                   |:---
+<ins>**Identification**</ins>
