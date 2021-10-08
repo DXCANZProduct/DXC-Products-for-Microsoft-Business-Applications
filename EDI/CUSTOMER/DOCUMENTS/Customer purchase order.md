@@ -219,7 +219,7 @@ The **Acknowledgement** tab is available on all incoming documents staging pages
 **Functional acknowledgement**  | Use this button to view the **Functional acknowledgement outbound** record created for the inbound document.
 
 ## Header fields
-The following EDI Header fields are available on the header page.
+The following EDI Header staging fields are available on the header page.
 
 **Field**	            | **Description**	                                    | **Target D365 field**
 :---                    |:---                                                   |:---
