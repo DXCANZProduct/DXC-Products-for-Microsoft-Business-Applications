@@ -188,18 +188,18 @@ The **Acknowledgement** tab is available on all incoming documents staging pages
 ## Header fields
 The Customer Purchase order change can update the following Sales order header fields
 -	Sales order
-  -	Delivery address: either from Store code or Delivery address
-  -	Requested ship date
-  -	Requested receipt date
-  -	Confirmed dates: If purchase order change’s document setting ‘Update confirmed ship date’ allows automatic update
+    -	Delivery address: either from Store code or Delivery address
+    -	Requested ship date
+    -	Requested receipt date
+    -	Confirmed dates: If purchase order change’s document setting ‘Update confirmed ship date’ allows automatic update
 -	Sales order EDI section - Most recent EDI change record:
-  -	Change EDI number
-  -	Change order date
-  -	Store code
-  -	Requested ship date
-  -	Requested receipt date
-  -	Delivery time
-  -	Change version number
-  -	POA status: If POA required for change, will change to Pending
+    -	Change EDI number
+    -	Change order date
+    -	Store code
+    -	Requested ship date
+   -	Requested receipt date
+   -	Delivery time
+   -	Change version number
+   -	POA status: If POA required for change, will change to Pending
 
 The following EDI Header staging fields are available on the header page.
