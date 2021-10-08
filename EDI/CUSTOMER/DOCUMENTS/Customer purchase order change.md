@@ -161,7 +161,27 @@ The following EDI fields are available on the list page.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
 ## Buttons
-The following buttons are available on the **Customer purchase order** Action Pane, tab **Purchase order import**.
+The following buttons are available on the **Customer purchase order change** Action Pane, tab **Customer purchase order change**.
 
 **Button**	                    | **Description**
 :---                            |:----
+**Process customer changes**    |	Process selected record’s change. If document setting's **Processing method** is: <br> •	Automatic – The ‘Update tolerance’ on Order line change type group’ is used to determine if the line can be changed. <br> o	Approve: If all the line changes received are approved, the sales order will be updated. <br> o	Approve with warning log: If all the line changes received are approved, the sales order will be updated. Warning log created on EDI staging record. <br> o	Reject with warning log: If any of the line changes received are Reject, the sales order will not be updated. The Staging record will error, but change can still be viewed via Changes on the Sales order header – EDI ribbon <br> •	Manual – The record is processed and available for manual Approve/Reject on ‘EDI Sales order processing > Pending PO changes’ or via Changes on the Sales order header – EDI ribbon
+**Process all customer changes**	As per above, but for all staging records that have a **Staging to target status** set to _Not started_. 
+**Inbound files**               | View the inbound file record the selected staging record.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
+**Sales Order**	                | If the staging record has been completed it is possible to inquire on the **Sales order** or **Release order** it created from this button.
+**Sales agreement**             | If the EDI blanket order staging record has been completed it is possible to inquire on the **Sales agreement** it created from this button.
+**Customers**                   | Inquire on the Customer for the selected record.
+**Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
+**Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
+**Reset Status**                | You can reset the staging to target status if the **Staging to target status** is set to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
+**Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
+
+The following buttons are available on the **Customer purchase order**'s Action Pane, tab **Acknowledgement**.
+The **Acknowledgement** tab is available on all incoming documents staging pages and enables the user to process or view the **Functional acknowledgement outbound** that has been created for the inbound document.
+
+**Button**	                    | **Description**
+:---                            |:----
+**Send to EDI**                 | If the **Sent** field for the staging record is set to _No_, use this button to create the **Functional acknowledgement outbound** record and also update the **Sent** field to _Yes._
+**Reset flag**                  | If the **Sent** field for the staging record has been set to _Yes_, use this button to reset **Sent** to _No_.
+**Functional acknowledgement**  | Use this button to view the **Functional acknowledgement outbound** record created for the inbound document.
