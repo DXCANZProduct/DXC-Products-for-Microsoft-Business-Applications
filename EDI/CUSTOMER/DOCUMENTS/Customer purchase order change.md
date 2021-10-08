@@ -137,6 +137,31 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 :------------------------------------ |:----                   |:----
 Item not found: %	                  | Item not found         | **EDI > Documents > Customer documents > Customer purchase order change** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's <br> [**Setting profile**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
 
+# View staging table records
+To view the Customer purchase order change's staging records, go to **EDI > Documents > Customer documents > Customer purchase order change**. 
+Use this page to review staging and process EDI Customer purchase order change documents to cancel or edit an existing D365 sales order.
 
+## List page
+The following EDI fields are available on the list page.
 
+**Field**               | **Description**
+:---                    |:---
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
+**Company account**     | Legal entity of the document.
+**Company GLN**         | The company’s global location number is shown here.
+**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – the order change has been successfully processed from the inbound file to the staging table but not processed. <br> •	**Error** – The order change has been processed from the staging table, but no updates processed to existing D365 Sales order.  There are errors with the record that need to be reviewed. <br> •	**Completed** – The order change has been processed and either automatically processed and D365 Sales order updated or ready for Manual approval.
+**Trading partner account**     | Customer account assigned to the staging record.
+**Trading partner GLN**         | The Customer’s global location number is shown here.
+**Customer Requisition**        | Customers purchase order number which will be used to find the existing D365 sales order which requires changes.
+**Purchase order date**         | The purchase order date from the EDI record is shown here.
+**EDI order purpose**           | The EDI order purpose is shown here. Receiving an Order purpose **Original** and **Confirmation** will error the staging record, since these should be sent as **Customer purchase order** document. Only **Change** and **Cancellation** order purposes are allowed for **Customer purchase order change** document.
+**Store code**                  | The store code from the EDI record is shown here.
+**Store zone**                  | The store zone from the EDI record is shown here.
+**Created Date and Time**       | The date and time the selected record was created in the staging table.
+**Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
+## Buttons
+The following buttons are available on the **Customer purchase order** Action Pane, tab **Purchase order import**.
+
+**Button**	                    | **Description**
+:---                            |:----
