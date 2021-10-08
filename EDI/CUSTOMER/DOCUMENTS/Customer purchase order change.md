@@ -36,15 +36,15 @@ Expectation is the customer sends price inclusive of discounts.
 The following [**Customer EDI order types**](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) and [**Order purposes**](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md) are supported by each Customer inbound document:
 **Document type**		                  | **Order type**	| **Order purpose**
 :----                                 |:----            |:----
-**Customer purchase order**	          | Order <br><br><br> Agreement <br> Release order | Original <br> Confirmation <br> Cancellation <br> Original <br> Original
+**Customer purchase order**	          | Order		        | Original <br> Confirmation <br> Cancellation
+**Customer purchase order**	          | Agreement		    | Original
+**Customer purchase order**	          | Release order	  | Original
 **Customer purchase order change**	  | Order		        | Change <br> Cancellation
 
 Inbound files have the following three steps:
 1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**
-2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > Customer documents > Customer purchase order**
-3. **Staging to target** - The staging record/s is processed to target. Based on the **Order type**, the target will be either a:
-    - Sales order (**Accounts receivable > Orders > All sales orders**)
-    - Sales agreement (**Accounts receivable > Orders > Sales agreements**
+2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > Customer documents > Customer purchase order change**
+3. **Staging to target** - The staging record/s is processed to the target Sales order (**Accounts receivable > Orders > All sales orders**)
 
 ### Create document
 ![alt text](../../CORE/Image/Create_Document.png "Create document")
@@ -95,14 +95,14 @@ There are various **Order purposes** that can be processed via the purchase orde
 **Rule Id**                 | **Details**               
 :---                        |:---                 
 **Check Order purpose**     | Check the Order purpose field on the order which indicate whether it is a **Change** or **Cancellation**
-**Document status**         |	Check if the existing D365 sales order’s **Document status** <= Customer purchase order change’s Document status setting. For example if the sales order has been picked, but the Document setting only allows changes up to Document status set to _Confirmation_, the staging record will error.
-**Line status**             |	If existing D365 sales order line’s status is Completed then sales line can’t be updated, and staging record will error.
+**Document status**         | Check if the existing D365 sales order’s **Document status** <= Customer purchase order change’s Document status setting. For example if the sales order has been picked, but the Document setting only allows changes up to Document status set to _Confirmation_, the staging record will error.
+**Line status**             | If existing D365 sales order line’s status is Completed then sales line can’t be updated, and staging record will error.
 
 #### Possible issues and fixes
-**Staging to target** errors for Customer purchase order can be viewed in:
-- **EDI > Documents > Customer purchase order** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **Customer documents**, tile **Purchase order errors**
-- **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO**
+**Staging to target** errors for Customer purchase order change can be viewed in:
+- **EDI > Documents > Customer purchase order change** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **Customer documents**, tile **PO change errors**
+- **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO change**
 
 At this step the issues are usually around mapping/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
@@ -113,6 +113,29 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example header errors:
 **Error message**       | **Error type**         | **Method to fix**
 :---------------------- |:----                   |:----
+
+### Staging line validation - Sales order
+
+![alt text](../IMAGE/LineChecks_CustomerPO.png "Line checks for Customer purchase order")
+
+**Rule Id**                 | **Details**               
+:---                        |:---                 
+**No Valid Item**           | No valid item based on the different options available
+**No Valid Item and line number combination**   | Item and line number combination used to find applicable Sales line to update. Except where adding new lines.
+
+#### Possible issues and fixes
+**Staging to target** errors for Customer purchase order can be viewed in:
+- **EDI > Documents > Customer purchase order change** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **Customer documents**, tile **PO change errors**
+- **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO change**
+
+At this step the issues are usually around setup/business logic issues.
+Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
+
+#### Example line errors:
+**Error message**                     | **Error type**         | **Method to fix**
+:------------------------------------ |:----                   |:----
+Item not found: %	                  | Item not found         | **EDI > Documents > Customer documents > Customer purchase order change** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's <br> [**Setting profile**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
 
 
 
