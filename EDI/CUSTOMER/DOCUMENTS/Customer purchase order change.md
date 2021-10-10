@@ -207,3 +207,53 @@ The following EDI Header staging fields are available on the header page.
 **Field**	              | **Description**	                                      | **Target D365 field**
 :---                    |:---                                                   |:---
 <ins>**Identification**</ins>
+**EDI number**          |	EDI Staging table record id	                          | Sales Order > EDI > Change EDI number
+**Company account**     |	Legal entity of the document	
+**Company GLN**         |	The company’s global location number is shown here. 	
+**Staging to target status**  |	The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The order change has been processed and either automatically processed and D365 Sales order updated or ready for Manual approval.
+<ins>**Reset status**</ins>
+**Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the Reset status attempts to 0 and reset the Reset status date/time	
+**Reset status date/time**  | Next date/time automatic reset status will run	
+**Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
+**Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start
+<ins>**Overview**</ins>
+**Customer Requisition**    |	Customers purchase order number to be populated in the Customer requisition field of the sales order header.	Used to find applicable D365 Sales order
+**Purchase order date**     |	The purchase order date from the EDI record is shown here.	| Sales Order > EDI > Change order date
+**EDI order purpose**       |	The EDI order purpose is shown here. Receiving an Order purpose **Original** and **Confirmation** will error the staging record, since these should be sent as **Customer purchase order** document. Only **Change** and **Cancellation** order purposes are allowed for **Customer purchase order change** document.	
+**Store code**              |	The store code from the EDI record is shown here.	          | Sales Order > EDI > Store code <br> And used to populate Sales order delivery address if header updates are allowed.
+**Store zone**              |	The store zone from the EDI PO is shown here.	
+<ins>**General**</ins>
+Customer Requisition	Customers purchase order number to be populated in the Customer requisition field of the sales order header.	
+Customer Reference	Customers purchase order reference to be populated in the Customer Reference field of the sales order header.	
+Purchase order date	The purchase order date from the EDI PO is shown here.	Sales Order > EDI > Change order date
+Currency	The currency of the order	
+Company GLN	The company’s global location number is shown here. 	
+Customer GLN	The Customer’s global location number is shown here.	
+Buyer code	The customer’s buyer code from the EDI PO is shown here.	
+Retail buyer location	The customer’s retail buyer location from the EDI PO is shown here.	
+Purpose code	The customer’s purpose code from the EDI PO is shown here.	
+Department	The customer’s department from the EDI PO is shown here.	
+Package characteristic code	The code used to for the package contents.	
+Package label code	The code used for the label.	
+Advertisement Date	The advertisement date applicable for the order	
+Template Id	The EDI templates used to create the staging table record	
+PO version number	The PO version number from the EDI PO.	Sales Order > EDI > Change version number
+Delivery		
+Delivery Name	Address for Delivery	Sales Order > Delivery Address
+Store zone	The store zone from the EDI PO is shown here.	
+Store code	The store code from the EDI PO is shown here.	Sales Order > EDI > Store code
+Name or description	Address for Delivery	Sales Order > Delivery Address
+Store code:
+•	Y – Determines Delivery address
+•	N – EDI delivery address
+Street number		
+Street		
+City		
+Suburb		
+State		
+Postcode		
+Country/region		
+Requested ship date	The requested ship date (delivery window) from the EDI PO is shown here.	Sales Order > EDI > Requested ship date
+If staging blank will be populated by Transport days
+Requested receipt date	The requested receipt date (delivery window) from the EDI PO is shown here.	Sales Order > EDI > Requested receipt date
+Delivery time	The delivery time from the EDI PO is shown here.	Sales Order > EDI > Delivery time
