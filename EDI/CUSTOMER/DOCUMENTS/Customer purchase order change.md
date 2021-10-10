@@ -152,7 +152,7 @@ The following EDI fields are available on the list page.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – the order change has been successfully processed from the inbound file to the staging table but not processed. <br> •	**Error** – The order change has been processed from the staging table, but no updates processed to existing D365 Sales order.  There are errors with the record that need to be reviewed. <br> •	**Completed** – The order change has been processed and either automatically processed and D365 Sales order updated or ready for Manual approval.
 **Trading partner account**     | Customer account assigned to the staging record.
 **Trading partner GLN**         | The Customer’s global location number is shown here.
-**Customer Requisition**        | Customers purchase order number which will be used to find the existing D365 sales order which requires changes.
+**Customer Requisition**        | Customer's purchase order number which will be used to find the existing D365 sales order which requires changes.
 **Purchase order date**         | The purchase order date from the EDI record is shown here.
 **EDI order purpose**           | The EDI order purpose is shown here. Receiving an Order purpose **Original** and **Confirmation** will error the staging record, since these should be sent as **Customer purchase order** document. Only **Change** and **Cancellation** order purposes are allowed for **Customer purchase order change** document.
 **Store code**                  | The store code from the EDI record is shown here.
@@ -187,12 +187,12 @@ The **Acknowledgement** tab is available on all incoming documents staging pages
 
 ## Header fields
 The Customer Purchase order change can update the following Sales order header fields
--	Sales order
+-	**Sales order** - If document setting **Allow header update** is set to _Yes_.
     -	Delivery address: either from Store code or Delivery address
     -	Requested ship date
     -	Requested receipt date
-    -	Confirmed dates: If purchase order change’s document setting ‘Update confirmed ship date’ allows automatic update
--	Sales order EDI section - Most recent EDI change record:
+    -	Confirmed dates: If purchase order change’s document setting **Update confirmed ship date** allows automatic update
+-	**Sales order EDI section** - Most recent EDI change record:
     -	Change EDI number
     -	Change order date
     -	Store code
@@ -217,43 +217,32 @@ The following EDI Header staging fields are available on the header page.
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start
 <ins>**Overview**</ins>
-**Customer Requisition**    |	Customers purchase order number to be populated in the Customer requisition field of the sales order header.	Used to find applicable D365 Sales order
+**Customer Requisition**    |	Customer's purchase order number which will be used to find the existing D365 sales order which requires changes.
 **Purchase order date**     |	The purchase order date from the EDI record is shown here.	| Sales Order > EDI > Change order date
 **EDI order purpose**       |	The EDI order purpose is shown here. Receiving an Order purpose **Original** and **Confirmation** will error the staging record, since these should be sent as **Customer purchase order** document. Only **Change** and **Cancellation** order purposes are allowed for **Customer purchase order change** document.	
 **Store code**              |	The store code from the EDI record is shown here.	          | Sales Order > EDI > Store code <br> And used to populate Sales order delivery address if header updates are allowed.
 **Store zone**              |	The store zone from the EDI PO is shown here.	
 <ins>**General**</ins>
-Customer Requisition	Customers purchase order number to be populated in the Customer requisition field of the sales order header.	
-Customer Reference	Customers purchase order reference to be populated in the Customer Reference field of the sales order header.	
-Purchase order date	The purchase order date from the EDI PO is shown here.	Sales Order > EDI > Change order date
-Currency	The currency of the order	
-Company GLN	The company’s global location number is shown here. 	
-Customer GLN	The Customer’s global location number is shown here.	
-Buyer code	The customer’s buyer code from the EDI PO is shown here.	
-Retail buyer location	The customer’s retail buyer location from the EDI PO is shown here.	
-Purpose code	The customer’s purpose code from the EDI PO is shown here.	
-Department	The customer’s department from the EDI PO is shown here.	
-Package characteristic code	The code used to for the package contents.	
-Package label code	The code used for the label.	
-Advertisement Date	The advertisement date applicable for the order	
-Template Id	The EDI templates used to create the staging table record	
-PO version number	The PO version number from the EDI PO.	Sales Order > EDI > Change version number
-Delivery		
-Delivery Name	Address for Delivery	Sales Order > Delivery Address
-Store zone	The store zone from the EDI PO is shown here.	
-Store code	The store code from the EDI PO is shown here.	Sales Order > EDI > Store code
-Name or description	Address for Delivery	Sales Order > Delivery Address
-Store code:
-•	Y – Determines Delivery address
-•	N – EDI delivery address
-Street number		
-Street		
-City		
-Suburb		
-State		
-Postcode		
-Country/region		
-Requested ship date	The requested ship date (delivery window) from the EDI PO is shown here.	Sales Order > EDI > Requested ship date
-If staging blank will be populated by Transport days
-Requested receipt date	The requested receipt date (delivery window) from the EDI PO is shown here.	Sales Order > EDI > Requested receipt date
-Delivery time	The delivery time from the EDI PO is shown here.	Sales Order > EDI > Delivery time
+**Customer Requisition**    | Customer's purchase order number which will be used to find the existing D365 sales order which requires changes.	
+**Customer Reference**      |	Customer's purchase order reference.
+**Purchase order date**     |	The purchase order date from the EDI record is shown here.	| Sales Order > EDI > Change order date
+**Currency**                |	The currency of the order	
+**Company GLN**             |	The company’s global location number is shown here. 	
+**Customer GLN**            |	The Customer’s global location number is shown here.	
+**Buyer code**              |	The customer’s buyer code from the EDI record is shown here.	
+**Retail buyer location**   |	The customer’s retail buyer location from the EDI record is shown here.	
+**Purpose code**            |	The customer’s purpose code from the EDI record is shown here.	
+**Department**              |	The customer’s department from the EDI record is shown here.	
+**Package characteristic code** |	The code used to for the package contents.	
+**Package label code**      |	The code used for the label.	
+**Advertisement date**	    | The advertisement date applicable for the order	
+**Template Id**             |	The EDI templates used to create the staging table record	
+**PO version number**       |	The PO version number from the EDI record.	                | Sales Order > EDI > Change version number
+<ins>**Delivery**</ins>
+**Delivery Name**           |	Address for Delivery	                                      | Sales Order > Delivery Address. If header updates are allowed.
+**Store code**              |	The store code from the EDI record is shown here.	          | Sales Order > EDI > Store code. If header updates are allowed.
+**Store zone**	            | The store zone from the EDI record is shown here.	
+**Name or description** <br>  **Street number** <br> **Street** <br> **City** <br>  **Suburb** <br>  **State**	<br> **Postcode** <br> **Country/region** |	Address for Delivery | Sales Order > Delivery Address. If header updates are allowed. <br> Store code: <br> • Y – Determines Delivery address <br> •	N – EDI delivery address
+**Requested ship date**     |	The requested ship date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested ship date <br> If staging blank will be populated by Transport days
+**Requested receipt date**  |	The requested receipt date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested receipt date
+**Delivery time**           |	The delivery time from the EDI record is shown here.	    | Sales Order > EDI > Delivery time. If header updates are allowed.
