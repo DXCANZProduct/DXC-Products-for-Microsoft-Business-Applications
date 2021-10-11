@@ -43,7 +43,7 @@ When the **Financial utilities parameter**'s **Enable custom bank statement form
 | **Record code field position** | This field is active only if the **ABSR file type** is set to BAI2, NAI or BRS file. This field captures the position of the **Line code** in each line of the file. E.g. if Field Number = 1, the first field of each line in the file determines the Line code (i.e. 01, 02, 03, 16, 49, 98, 99).
 | **Record code field length** | Applicable to BRS files types as BRS files aren't delimited |
 
-> **Note:** When creating a bank statement format, processing group is mandatory (including for Finance utilities custom bank statement formats). Before configuring a custom bank format, a processing group for entity **Bank statements** must be created as an Import project in **Data management**. See [standard setup](https://docs.microsoft.com/en-us/dynamics365/finance/cash-bank-management/set-up-advanced-bank-reconciliation-import-process) for steps on creating a new progressing group.
+> Note: When creating a bank statement format, processing group is mandatory (including for Finance utilities custom bank statement formats). Before configuring a custom bank format, a processing group for entity **Bank statements** must be created as an Import project in **Data management**. See [standard setup](https://docs.microsoft.com/en-us/dynamics365/finance/cash-bank-management/set-up-advanced-bank-reconciliation-import-process) for steps on creating a new progressing group.
 
 #### Custom Format
 
@@ -57,7 +57,7 @@ Only available when **Custom format** is ticked
 | **Custom Format > Line codes format** | The **Type codes** stores the relation between statement code and transaction direction (debit/credit) for BAI2 or NAI file <br> Note: Type codes button is active only if the **ABSR file type** is BAI2 file, NAI file or Custom. | 
 
 
-*Note: Line codes button is active only if the ABSR file type is Custom or BRS.*
+> Note: Line codes button is active only if the ABSR file type is Custom or BRS.
 
 
 **Custom Format - Line Codes**
