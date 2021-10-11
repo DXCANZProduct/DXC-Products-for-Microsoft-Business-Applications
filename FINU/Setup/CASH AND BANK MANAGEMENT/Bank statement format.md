@@ -96,4 +96,4 @@ The **Line codes format** page controls how transaction **amounts** are posted. 
 | **Debit/Credit** | 	Area to specify if transaction statement line amount is: <br> •	**Debit** in the system (i.e. positive) <br> • **Credit** in the system (i.e. convert to negative) |
 | **Description** |	Description of the particular rule |
 
-> Note: The **Line codes format** page is available only when **ABSR file type** is set to either _BAI2 File_, _NAI File_, or _Custom_. _BRS_ uses the **Position credit/debit** to determine if the Amount is positive (debit) or negative (credit).
+> Note: The **Line codes format** page is available only when **ABSR file type** is set to either _BAI2 File_, _NAI File_, or _Custom_. <br> _BRS_ uses the **Position credit/debit** to determine if the Amount is positive (debit) or negative (credit).
