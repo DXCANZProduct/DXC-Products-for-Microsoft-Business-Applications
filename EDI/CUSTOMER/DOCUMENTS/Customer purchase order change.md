@@ -152,7 +152,7 @@ The following EDI fields are available on the list page.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – the order change has been successfully processed from the inbound file to the staging table but not processed. <br> •	**Error** – The order change has been processed from the staging table, but no updates processed to existing D365 Sales order.  There are errors with the record that need to be reviewed. <br> •	**Completed** – The order change has been processed and either automatically processed and D365 Sales order updated or ready for Manual approval.
 **Trading partner account**     | Customer account assigned to the staging record.
 **Trading partner GLN**         | The Customer’s global location number is shown here.
-**Customer Requisition**        | Customers purchase order number which will be used to find the existing D365 sales order which requires changes.
+**Customer Requisition**        | Customer's purchase order number which will be used to find the existing D365 sales order which requires changes.
 **Purchase order date**         | The purchase order date from the EDI record is shown here.
 **EDI order purpose**           | The EDI order purpose is shown here. Receiving an Order purpose **Original** and **Confirmation** will error the staging record, since these should be sent as **Customer purchase order** document. Only **Change** and **Cancellation** order purposes are allowed for **Customer purchase order change** document.
 **Store code**                  | The store code from the EDI record is shown here.
@@ -161,7 +161,133 @@ The following EDI fields are available on the list page.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
 ## Buttons
-The following buttons are available on the **Customer purchase order** Action Pane, tab **Purchase order import**.
+The following buttons are available on the **Customer purchase order change** Action Pane, tab **Customer purchase order change**.
 
 **Button**	                    | **Description**
 :---                            |:----
+**Process customer changes**    |	Process selected record’s change. If document setting's **Processing method** is: <br> • **Automatic** – The **Update tolerance** on Order line change type group’ is used to determine if the line can be changed. <br>    - **Approve**: If all the line changes received are approved, the sales order will be updated. <br>   -	**Approve with warning log**: If all the line changes received are approved, the sales order will be updated. Warning log created on EDI staging record. <br>   - **Reject with warning log**: If any of the line changes received are Reject, the sales order will not be updated. The Staging record will error, but change can still be viewed via Changes on the Sales order header – EDI ribbon <br> •	**Manual** – The record is processed and available for manual Approve/Reject on ‘EDI Sales order processing > Pending PO changes’ or via Changes on the Sales order header on the EDI tab on the ActionPane.
+**Process all customer changes**	| As per above, but for all staging records that have a **Staging to target status** set to _Not started_. 
+**Inbound files**               | View the inbound file record the selected staging record.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
+**Sales Order**	                | If the staging record has been completed it is possible to inquire on the **Sales order** it updated from this button.
+**Customers**                   | Inquire on the Customer for the selected record.
+**Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
+**Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
+**Reset Status**                | You can reset the staging to target status if the **Staging to target status** is set to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
+**Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
+
+The following buttons are available on the **Customer purchase order change**'s Action Pane, tab **Acknowledgement**.
+The **Acknowledgement** tab is available on all incoming documents staging pages and enables the user to process or view the **Functional acknowledgement outbound** that has been created for the inbound document.
+
+**Button**	                    | **Description**
+:---                            |:----
+**Send to EDI**                 | If the **Sent** field for the staging record is set to _No_, use this button to create the **Functional acknowledgement outbound** record and also update the **Sent** field to _Yes._
+**Reset flag**                  | If the **Sent** field for the staging record has been set to _Yes_, use this button to reset **Sent** to _No_.
+**Functional acknowledgement**  | Use this button to view the **Functional acknowledgement outbound** record created for the inbound document.
+
+## Header fields
+The Customer Purchase order change can update the following Sales order header fields:
+-	**Sales order** - If document setting **Allow header update** is set to _Yes_.
+    -	Delivery address: either from Store code or Delivery address
+    -	Requested ship date
+    -	Requested receipt date
+    -	Confirmed dates: If purchase order change’s document setting **Update confirmed ship date** allows automatic update
+-	**Sales order EDI section** - Most recent EDI change record:
+    -	Change EDI number
+    -	Change order date
+    -	Store code
+    -	Requested ship date
+    -	Requested receipt date
+    -	Delivery time
+    -	Change version number
+    -	POA status: If POA required for change, will change to Pending
+
+The following EDI Header staging fields are available on the header page.
+
+**Field**	              | **Description**	                                      | **Target D365 field**
+:---                    |:---                                                   |:---
+<ins>**Identification**</ins>
+**EDI number**          |	EDI Staging table record id	                          | Sales Order > EDI > Change EDI number
+**Company account**     |	Legal entity of the document	
+**Company GLN**         |	The company’s global location number is shown here. 	
+**Staging to target status**  |	The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The order change has been processed and either automatically processed and D365 Sales order updated or ready for Manual approval.
+<ins>**Reset status**</ins>
+**Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the Reset status attempts to 0 and reset the Reset status date/time	
+**Reset status date/time**  | Next date/time automatic reset status will run	
+**Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
+**Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start
+<ins>**Overview**</ins>
+**Customer Requisition**    |	Customer's purchase order number which will be used to find the existing D365 sales order which requires changes.
+**Purchase order date**     |	The purchase order date from the EDI record is shown here.	| Sales Order > EDI > Change order date
+**EDI order purpose**       |	The EDI order purpose is shown here. Receiving an Order purpose **Original** and **Confirmation** will error the staging record, since these should be sent as **Customer purchase order** document. Only **Change** and **Cancellation** order purposes are allowed for **Customer purchase order change** document.	
+**Store code**              |	The store code from the EDI record is shown here.	          | Sales Order > EDI > Store code <br> And used to populate Sales order delivery address if header updates are allowed.
+**Store zone**              |	The store zone from the EDI PO is shown here.	
+<ins>**General**</ins>
+**Customer Requisition**    | Customer's purchase order number which will be used to find the existing D365 sales order which requires changes.	
+**Customer Reference**      |	Customer's purchase order reference.
+**Purchase order date**     |	The purchase order date from the EDI record is shown here.	| Sales Order > EDI > Change order date
+**Currency**                |	The currency of the order	
+**Company GLN**             |	The company’s global location number is shown here. 	
+**Customer GLN**            |	The Customer’s global location number is shown here.	
+**Buyer code**              |	The customer’s buyer code from the EDI record is shown here.	
+**Retail buyer location**   |	The customer’s retail buyer location from the EDI record is shown here.	
+**Purpose code**            |	The customer’s purpose code from the EDI record is shown here.	
+**Department**              |	The customer’s department from the EDI record is shown here.	
+**Package characteristic code** |	The code used to for the package contents.	
+**Package label code**      |	The code used for the label.	
+**Advertisement date**	    | The advertisement date applicable for the order	
+**Template Id**             |	The EDI templates used to create the staging table record	
+**PO version number**       |	The PO version number from the EDI record.	                | Sales Order > EDI > Change version number
+<ins>**Delivery**</ins>
+**Delivery Name**           |	Address for Delivery	                                      | Sales Order > Delivery Address. If header updates are allowed.
+**Store code**              |	The store code from the EDI record is shown here.	          | Sales Order > EDI > Store code. If header updates are allowed.
+**Store zone**	            | The store zone from the EDI record is shown here.	
+**Name or description** <br>  **Street number** <br> **Street** <br> **City** <br>  **Suburb** <br>  **State**	<br> **Postcode** <br> **Country/region** |	Address for Delivery | Sales Order > Delivery Address. If header updates are allowed. <br> Store code: <br> • Y – Determines Delivery address <br> •	N – EDI delivery address
+**Requested ship date**     |	The requested ship date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested ship date <br> If staging blank will be populated by Transport days
+**Requested receipt date**  |	The requested receipt date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested receipt date. <br> Sales order > Requested receipt date. If header updates are allowed.
+**Delivery time**           |	The delivery time from the EDI record is shown here.	    | Sales Order > EDI > Delivery time. If header updates are allowed.
+
+## Line fields
+Document setting **Processing method** determines if the Customer Purchase order change can update the below Sales order line fields:
+- **Automatic** - **Order line change type group**'s **Update tolerance** determines automatic update is allowed for the change type.
+- **Manual** - User manually accepts change, and **Order line change type group**'s **Update tolerance** has no effect.
+
+Fields:
+-	**Sales order line**
+    - Quantity
+    - Unit price
+    - Requested ship date
+    - Requested receipt date
+    - Delivery address
+-	**Sales order line EDI tab** - Most recent EDI change record:
+    - Order line change type
+
+The following EDI Line staging fields are available on the line page.
+**Field**	              | **Description**	                                      | **Target D365 field**
+:---                    |:---                                                   |:---
+**Line number**         |	The line within the EDI table/file. <br> Used to find applicable sales line to update. Except where adding new lines.	| New lines: Sales Line > EDI > General > Line number
+**EDI order change type** |	The Change or Response type code. Code specifying the type of change to the line item. Used where document setting **Processing method** is set to _Automatic_ to find a match in **Order line change type group** assigned to the Trading partner. | Sales line > EDI General > Order line change type
+**Item number**         |	The item identifier as sent by the trading partner. Used when **Item Id source** is: <br> •	**Our item number** <br> •	**External item number**	| New lines: Sales line> EDI > General > EDI Item number <br> **Barcode**	The item identifier as sent by the trading partner. Used when **Item Id source** is: <br> •	**GTIN** <br> •	Barcode
+**SKU**                 |	SKU for item	
+**Unit Price**          |	Customer unit price inclusive of discounts (net price)	| Sales line > Unit price <br> If document setting **Use customer price** set to _Yes_
+**Customer sales quantity** |	The customer order quantity for this line.	        | Sales line > EDI > POA response > Customer > Quantity
+**Unit**                |	The customer unit of measure for this line	
+**Line amount excluding tax** |	The total line amount excluding tax.	            | Sales line > Unit price <br> If document setting **Use customer price** set to _Yes_ AND Staging's **Unit price** is blank AND document setting **Prices include GST** set to _No_: Sales line's **Unit price** is calculated by **Line amount excluding tax** / **Customer sales quantity**
+**Line amount including tax** |	The total line amount including tax (if provided else 0)	| Sales line > Unit price <br> If document setting **Use customer price** set to _Yes_ AND Staging's **Unit price** is blank AND document setting **Prices include GST** set to _Yes_: Sales line **Unit price** is calculated by **Line amount including tax** / **Customer sales quantity**
+**Customer inners**     |	The customer’s inners per outer quantity	              | Sales line > EDI > POA response > Customer > Inner
+**Customer pack**       |	The customer’s pack quantity	                          | Sales line > EDI > POA response > Customer > Pack
+**Configuration**       |	Inventory dimension - Configuration	                    | Sales line > Inventory dimension
+**Colour**	            | Inventory dimension - Colour	                          | Sales line > Inventory dimension
+**Size**                |	Inventory dimension - Size	
+Style	Inventory dimension - Style	
+Site	Storage dimension - Site	Sales line > Site
+If staging blank will be populated by Sales order Header
+Warehouse	Storage dimension - Warehouse	Sales line > Warehouse
+If staging blank will be populated by Sales order Header
+Store code	The store code from the EDI PO line is shown here.	Sales line> EDI > General > Store code
+EDI supports different store codes on line level
+Delivery name	Address for Delivery – Delivery name	
+Requested ship date	The requested ship date (delivery window) from the EDI PO is shown here.	Sales line > Delivery > Requested ship date
+If staging blank will be populated by Sales order Header
+Requested receipt date	The requested receipt date (delivery window) from the EDI PO is shown here.	Sales line > Delivery > Requested receipt date
+If staging blank will be populated by Sales order Header
