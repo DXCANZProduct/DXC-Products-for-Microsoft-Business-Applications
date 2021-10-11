@@ -2,7 +2,7 @@
 # required metadata
 
 title: [Finance Utilities ]
-description: [Finance Utilities setup - Finance Utilities Parameters]
+description: [Cash and bank management setup - Finance Utilities Parameters]
 author: [helenho]
 manager: Kym Parker
 ms.date: 02/03/2021
