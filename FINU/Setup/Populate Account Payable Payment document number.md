@@ -2,7 +2,7 @@
 # required metadata
 
 title: [Finance Utilities ]
-description: [Finance Utilities setup - Accounts Payable Payment document number]
+description: [Finance Utilities setup - Accounts Payable payment document number]
 author: [helenho]
 manager: Kym Parker
 ms.date: 02/03/2021
