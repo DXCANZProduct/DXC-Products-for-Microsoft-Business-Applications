@@ -46,7 +46,7 @@ Then set the fields as desribed in the following subsections.
 **Bank reconciliation**
 | **Field** | **Description**|
 |--|--|
-| **Ability to reconcile unmatched statements** | If this parameter is not marked, the button **Mark as reconciled** is disabled in the Bank Reconciliation Worksheet when **Unmatched Amount** is _NOT zero_. |
+| **Ability to reconcile unmatched statements** | If this parameter is not marked, the button **Mark as reconciled** is disabled in the Bank Reconciliation Worksheet when **Unmatched amount** is _NOT zero_. |
 | **Ability to enter reconciliation balances** | This parameter allows the user to enter any amount to balance the difference between the statement line and bank transaction line, in a separate Correction column. <br> The correction balance is posted to the account associated with the bank transaction type as setup in **Cash and bank management > Setup > Bank transaction type** |
 | **Auto assign Match id** | Streamline **Match Id** and **Match Bank** reconciliation Worksheet functionality. When marked bank statement and bank transactions balances, the user can select the **Match** button and **Match id** will be auto assigned. This skips the user requiring to select **Match Id** before **Match**.|
 
