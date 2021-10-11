@@ -2,7 +2,7 @@
 # required metadata
 
 title: [Finance Utilities]
-description: [Finance Utilities setup - Bank reconciliation matching rules]
+description: [Cash and bank management setup - Bank reconciliation matching rules]
 author: [helenho]
 manager: Kym Parker
 ms.date: 02/03/2021
