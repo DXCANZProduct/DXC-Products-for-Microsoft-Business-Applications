@@ -38,20 +38,20 @@ To open the **Financial utilities parameters** page, go to **Cash and bank manag
 Then set the fields as desribed in the following subsections.
 
 **Reconciliation matching rule**
-| Field | Description|
+| **Field** | **Description**|
 |--|--|
-| Extended matching rule operator | This parameter activates a new operator **Included in** in the Reconciliation matching rules form. It supplements the Contains capability, and means that the field selected is a part of the nominated Bank statement field. |
-| Extended financial details for new transaction | This parameter enables the capture of the following details automatically if the bank statement line is marked as ‘New’ <br> • Financial dimensions <br> • GST  <br> • Sub-Ledger offset account |
+| Extended matching rule operator | This parameter activates a new operator **Included in** in the Reconciliation matching rules form. It supplements the **Contains** capability, and means that the field selected is a part of the nominated Bank statement field. |
+| Extended financial details for new transaction | This parameter enables the capture of the following details automatically if the bank statement line is marked as 'New' <br> • Financial dimensions <br> • GST  <br> • Sub-Ledger offset account |
 
 **Bank reconciliation**
-| Field | Description|
+| **Field** | **Description**|
 |--|--|
-|Ability to reconcile unmatched statements |If this parameter is not marked, the button Mark as reconciled is disabled in the Bank Reconciliation Worksheet when Unmatched Amount is NOT zero. |
-|Ability to enter reconciliation balances |This parameter allows the user to enter any amount to balance the difference between the statement and bank transactions, in a separate Correction column. <br> The correction balance is posted to the account associated with the bank transaction type.|
-|Auto assign Match id|Streamline **Match Id** and **Match Bank** reconciliation Worksheet functionality. When marked bank statement and bank transactions balances, can click **Match** button and **Match id** will be auto assigned. No need to first click **Match Id** and then **Match**.|
+| **Ability to reconcile unmatched statements** | If this parameter is not marked, the button **Mark as reconciled** is disabled in the Bank Reconciliation Worksheet when **Unmatched Amount** is _NOT zero_. |
+| **Ability to enter reconciliation balances** | This parameter allows the user to enter any amount to balance the difference between the statement line and bank transaction line, in a separate Correction column. <br> The correction balance is posted to the account associated with the bank transaction type as setup in **Cash and bank management > Setup > Bank transaction type** |
+| **Auto assign Match id** | Streamline **Match Id** and **Match Bank** reconciliation Worksheet functionality. When marked bank statement and bank transactions balances, the user can select the **Match** button and **Match id** will be auto assigned. This skips the user requiring to select **Match Id** before **Match**.|
 
 **Bank statement**
-| Field | Description|
+| **Field** | **Description**|
 |--|--|
-|Enable custom bank statement formats |This parameter enables a Customized format field in bank statement format form. <br> If the bank statement format is marked as a customised format, additional fields become active to configure the BAI2/NAI/Flat file statement upload |
-|Auto-post bank statement|When Auto-post bank statement is **YES**, the bank statement will automatically be posted upon selecting **Mark as** reconciled from the **Bank Reconciliation Worksheet** form.|
+| **Enable custom bank statement formats** | This parameter enables a Customized format field in bank statement format in **Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format** <br> If the bank statement format is marked as a customised format, additional fields become active to configure the BAI2/NAI/Flat file statement upload |
+| **Auto-post bank statement** | When Auto-post bank statement is to _Yes_, the bank statement will automatically be posted upon selecting **Mark as reconciled** from the **Bank Reconciliation Worksheet** page.|
