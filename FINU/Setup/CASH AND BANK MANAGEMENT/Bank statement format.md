@@ -47,50 +47,40 @@ When the **Financial utilities parameter**'s **Enable custom bank statement form
 
 #### Custom Format
 
-Only available when **Custom format** is ticked
-#### *Buttons*
+When field **Custom format** is set to _Yes_, the button **Custom format** is enabled on the Action Pane.
+
+#### Buttons
 
 | **Button** | **Description** |
 |-|-|
-| **Custom Format > Lines** | The Lines form stores the column definition to use whilst importing the bank statement. |
-| **Custom Format > Line Codes** | The Line codes form stores the format line type. |
-| **Custom Format > Line codes format** | The **Type codes** stores the relation between statement code and transaction direction (debit/credit) for BAI2 or NAI file <br> Note: Type codes button is active only if the **ABSR file type** is BAI2 file, NAI file or Custom. | 
+| **Custom Format > Lines** | The **Lines** page stores the column definition to use whilst importing the custom bank statement. |
+| **Custom Format > Line codes** | The **Line codes** page stores the **Custom line codes**. The button is only enabled when **ABSR file type** is set to _Custom_ or BRS|
+| **Custom Format > Line codes format** | The **Type codes** stores the relation between statement code and transaction direction (debit/credit) for BAI2 or NAI file <br> Note: Type codes button is active only if the **ABSR file type** is set to _BAI2 file_, _NAI file_ or _Custom_. | 
 
-
-> Note: Line codes button is active only if the ABSR file type is Custom or BRS.
-
-
-**Custom Format - Line Codes**
-
-**CASH AND BANK MANAGEMENT > SETUP > ADVANCED BANK RECONCILIATION SETUP > BANK STATEMENT FORMAT**
-
-**Custom Format - Line codes button** is used to determine the line identifier for this bank statement. It is used in the **Custom Format - Lines** definition. It contains the following fields;
+##### **Custom Format - Line Codes**
+The **Custom Format - Line codes** page is used to determine the line identifier for this bank statement. It is used in the **Custom Format - Lines** definition. It contains the following fields:
 
 | **Field** | **Description** |
 |-|-|
-| **Line Code** | The field number corresponds to the format line type specified on the bank statement. |
-| **Description** | Specifies the format line type description. |
+| **Line Code** | The field number corresponds to the **Custom line code** specified on the bank statement. |
+| **Description** | Specify the format line code description. |
 
-**Custom Format – Lines**
+##### **Custom Format – Lines**
 
-***CASH AND BANK MANAGEMENT > SETUP > ADVANCED BANK RECONCILIATION SETUP > BANK STATEMENT FORMAT***
-
-***Custom Format - Lines button***
-
-The Lines form defines the column definitions to use whilst importing the bank statement. It identifies which fields to use, and their position on the Bank Statement file, for the system to use when loading the detail into the system. It contains the following fields;
+The **Custom Format - Lines** page defines the column definitions to use whilst importing the bank statement. It identifies which fields to use, and their position on the Bank Statement file, for the system to use when loading the detail into the system. It contains the following fields:
 
 | **Field** | **Description** |
 |-|-|
-| **Field number**| The field number corresponds to the column number on the bank statement.  Note: Not all columns in the statement need to be configured. |
-| **Line code** | This option appears when the ABSR File Type is either BAI2 File, NAI File, BRS or Custom. <br> Line type of the file where the Bank Statement fields map to Dynamics 365 Bank Transactions: <br> 02	– Group Header  <br> 03	– Account Identifier <br> 16 – Transaction detail <br> 88 – Continuation Record <br>  Custom (This will use the codes specified on the Line Codes form)|
-| **Field** | The corresponding bank account transaction field in Dynamics 365 that this bank statement field maps to - options include: <br> -	Date <br> - Bank statement transaction code <br> - Dbescription <br> - Amount <br> - Reference no. <br> - Entry reference  <br> - Bank account number <br> - Currency <br> - Trading party <br> - Document number <br> -Related bank account |
-| **Start position** | If no delimiter is selected on the header, the start position of the field will need to be entered. |
-| **Length** | If no delimiter is selected on the header, the length of the field will need to be entered. |
+| **Field number**| The field number corresponds to the **column number** on the bank statement.  Note: Not all columns in the statement need to be configured. |
+| **Line code** or **Custom line code**| The **Line code** option appears when the **ABSR file type** is either _BAI2 File_ or _NAI File_. <br> Line type of the file where the Bank Statement fields map to Dynamics 365 Bank Transactions: <br> **02**	– Group Header  <br> **03**	– Account Identifier <br> **16** – Transaction detail <br> **88** – Continuation Record <br>  The **Custom line code** option appears when the **ABSR file type** is either _BRS_ or _Custom_ and utilizes the **Line code** as setup on **Custom format - Line codes**
+| **Field** | The corresponding bank account transaction field in Dynamics 365 that this bank statement field maps to - options include: <br> •	Date <br> • Bank statement transaction code <br> • Description <br> • Amount <br> • Reference no. <br> • Entry reference  <br> • Bank account number <br> • Currency <br> • Trading party <br> • Document number <br> • Related bank account |
+| **Start position** | If no delimiter is selected on the header, the start position of the field will need to be entered. This field can also be used for files with delimiter where only a set number of characters need to be mapped, for example only map account number starting from 7 for a bank statement field containing bsb (6 characters) + account number (9 characters) |
+| **Length** | If no delimiter is selected on the header, the length of the field will need to be entered. This field can also be used for files with delimiter where only a set number of characters need to be mapped, for example only map account number containing 9 characters for a bank statement field containing bsb (6 characters) + account number (9 characters)|
 | **Strip leading zeros** | Specifies whether any leading zeroes in this field should be removed. |
-| **Date format** | This specifies the date format in the bank statement.  Note: This option appears when the Bank Account Transaction Field is Date. |
-| **Use Julian date format** | 	Y/N |
-| **Decimal adjustment** | This specifies the Decimal format in the bank statement. <br> Note: This option appears when the File Type is **BAI2** File or **BRS** and Bank Account Transaction Field is **Amount**. | 
-| **Position credit/debit** |	This specifies the position of the credit/debit indicator for BRS file’s Amount field|
+| **Date format** | This specifies the date format in the bank statement.  Note: This option appears when the **Field** is set to _Date_. |
+| **Use Julian date format** | Where applicable, enter the bank statement format's date field in Julian format, for example BRS using YYYYDDD |
+| **Decimal adjustment** | This specifies the Decimal adjustment required for the bank statement's Amount. For example bank statement amount is 20055, but last two charactes are decimal, thus amount to be mapped to D365 Bank statement is 200.55 <br> For this example enter 2 in **Decimal adjustment** field.| 
+| **Position credit/debit** |	This specifies the position of the credit/debit indicator for BRS file’s Amount field. Only enabled where **ABSR file type** is _BRS_.|
 
 
 ***Custom Format - Line Codes Format
