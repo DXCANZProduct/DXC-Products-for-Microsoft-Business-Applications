@@ -87,13 +87,13 @@ The **Custom Format - Lines** page defines the column definitions to use whilst 
 
 
 ##### **Custom Format - Line codes format**
-The **Line codes format** page controls how transaction **amounts** are posted. For example all the amounts on the bank statement are positive values, but transactions with a type code set to _Credit_ will be converted to a negative amount when mapped to D365 bank statement.
+The **Line codes format** page controls how transaction **amounts** are posted. For example all the amounts on the bank statement are positive values, but transactions with a **Bank statement transaction code** in the range set to _Credit_ will be converted to a negative amount when mapped to D365 bank statement. 
 
 | Field | Description |
 |-|-|
 | **From type code** | Transaction type code range from the Bank Statement Transaction Types |
 | **To type code** | 	Transaction type code range from the Bank Statement Transaction Types|
-| **Debit/Credit** | 	Area to specify if transaction statement line amount is: <br> •	Debit in the system (i.e. positive) <br> • Credit in the system (i.e. negative) |
+| **Debit/Credit** | 	Area to specify if transaction statement line amount is: <br> •	**Debit** in the system (i.e. positive) <br> • **Credit** in the system (i.e. convert to negative) |
 | **Description** |	Description of the particular rule |
 
 > Note: The **Line codes format** page is available only when **ABSR file type** is set to either _BAI2 File_, _NAI File_, or _Custom_.
