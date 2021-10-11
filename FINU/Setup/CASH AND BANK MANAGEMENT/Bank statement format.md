@@ -40,7 +40,7 @@ When the **Financial utilities parameter**'s **Enable custom bank statement form
 | **Custom format**   | Checkbox option which enables the **Custom format** buttons and following fields.
 | **ABSR file type**  | Choose the file format of the bank statement – options include:  <br> •	Flat File <br> •	NAI File <br> •	BAI2 <br> •	Custom <br> •	BRS |
 | **Field delimiter** | The type of field delimiter the file uses. E.g. a comma “,”  |
-| **Record code field position** | This field is active only if the **ABSR file type** is set to BAI2, NAI or BRS file. This field captures the position of the **Line code** in each line of the file. E.g. if Field Number = 1, the first field of each line in the file determines the Line Type (i.e. 01, 02, 03, 16, 49, 98, 99).
+| **Record code field position** | This field is active only if the **ABSR file type** is set to BAI2, NAI or BRS file. This field captures the position of the **Line code** in each line of the file. E.g. if Field Number = 1, the first field of each line in the file determines the Line code (i.e. 01, 02, 03, 16, 49, 98, 99).
 | **Record code field length** | Applicable to BRS files types as BRS files aren't delimited |
 
 > **Note:** When creating a bank statement format, processing group is mandatory (including for Finance utilities custom bank statement formats). Before configuring a custom bank format, a processing group for entity **Bank statements** must be created as an Import project in **Data management**. See [standard setup](https://docs.microsoft.com/en-us/dynamics365/finance/cash-bank-management/set-up-advanced-bank-reconciliation-import-process) for steps on creating a new progressing group.
