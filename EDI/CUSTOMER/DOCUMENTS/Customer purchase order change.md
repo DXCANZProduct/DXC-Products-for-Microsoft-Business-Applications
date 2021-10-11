@@ -186,7 +186,7 @@ The **Acknowledgement** tab is available on all incoming documents staging pages
 **Functional acknowledgement**  | Use this button to view the **Functional acknowledgement outbound** record created for the inbound document.
 
 ## Header fields
-The Customer Purchase order change can update the following Sales order header fields
+The Customer Purchase order change can update the following Sales order header fields:
 -	**Sales order** - If document setting **Allow header update** is set to _Yes_.
     -	Delivery address: either from Store code or Delivery address
     -	Requested ship date
@@ -244,5 +244,50 @@ The following EDI Header staging fields are available on the header page.
 **Store zone**	            | The store zone from the EDI record is shown here.	
 **Name or description** <br>  **Street number** <br> **Street** <br> **City** <br>  **Suburb** <br>  **State**	<br> **Postcode** <br> **Country/region** |	Address for Delivery | Sales Order > Delivery Address. If header updates are allowed. <br> Store code: <br> • Y – Determines Delivery address <br> •	N – EDI delivery address
 **Requested ship date**     |	The requested ship date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested ship date <br> If staging blank will be populated by Transport days
-**Requested receipt date**  |	The requested receipt date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested receipt date
+**Requested receipt date**  |	The requested receipt date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested receipt date. <br> Sales order > Requested receipt date. If header updates are allowed.
 **Delivery time**           |	The delivery time from the EDI record is shown here.	    | Sales Order > EDI > Delivery time. If header updates are allowed.
+
+## Line fields
+Document setting **Processing method** determines if the Customer Purchase order change can update the below Sales order line fields:
+- **Automatic** - **Order line change type group**'s **Update tolerance** determines automatic update is allowed for the change type.
+- **Manual** - User manually accepts change, and **Order line change type group**'s **Update tolerance** has no effect.
+
+Fields:
+-	**Sales order line**
+    - Quantity
+    - Unit price
+    - Requested ship date
+    - Requested receipt date
+    - Delivery address
+-	**Sales order line EDI tab** - Most recent EDI change record:
+    - Order line change type
+
+The following EDI Line staging fields are available on the line page.
+**Field**	              | **Description**	                                      | **Target D365 field**
+:---                    |:---                                                   |:---
+**Line number**         |	The line within the EDI table/file. <br> Used to find applicable sales line to update. Except where adding new lines.	| New lines: Sales Line > EDI > General > Line number
+**EDI order change type** |	The Change or Response type code. Code specifying the type of change to the line item. Used where document setting **Processing method** is set to _Automatic_ to find a match in **Order line change type group** assigned to the Trading partner. | Sales line > EDI General > Order line change type
+**Item number**         |	The item identifier as sent by the trading partner. Used when **Item Id source** is: <br> •	**Our item number** <br> •	**External item number**	| New lines: Sales line> EDI > General > EDI Item number <br> **Barcode**	The item identifier as sent by the trading partner. Used when **Item Id source** is: <br> •	**GTIN** <br> •	Barcode
+**SKU**                 |	SKU for item	
+**Unit Price**          |	Customer unit price inclusive of discounts (net price)	| Sales line > Unit price <br> If document setting **Use customer price** set to _Yes_
+**Customer sales quantity** |	The customer order quantity for this line.	        | Sales line > EDI > POA response > Customer > Quantity
+**Unit**                |	The customer unit of measure for this line	
+**Line amount excluding tax** |	The total line amount excluding tax.	            | Sales line > Unit price <br> If document setting **Use customer price** set to _Yes_ AND Staging's **Unit price** is blank AND document setting **Prices include GST** set to _No_: Sales line's **Unit price** is calculated by **Line amount excluding tax** / **Customer sales quantity**
+**Line amount including tax** |	The total line amount including tax (if provided else 0)	| Sales line > Unit price <br> If document setting **Use customer price** set to _Yes_ AND Staging's **Unit price** is blank AND document setting **Prices include GST** set to _Yes_: Sales line **Unit price** is calculated by **Line amount including tax** / **Customer sales quantity**
+**Customer inners**     |	The customer’s inners per outer quantity	              | Sales line > EDI > POA response > Customer > Inner
+**Customer pack**       |	The customer’s pack quantity	                          | Sales line > EDI > POA response > Customer > Pack
+**Configuration**       |	Inventory dimension - Configuration	                    | Sales line > Inventory dimension
+**Colour**	            | Inventory dimension - Colour	                          | Sales line > Inventory dimension
+**Size**                |	Inventory dimension - Size	
+Style	Inventory dimension - Style	
+Site	Storage dimension - Site	Sales line > Site
+If staging blank will be populated by Sales order Header
+Warehouse	Storage dimension - Warehouse	Sales line > Warehouse
+If staging blank will be populated by Sales order Header
+Store code	The store code from the EDI PO line is shown here.	Sales line> EDI > General > Store code
+EDI supports different store codes on line level
+Delivery name	Address for Delivery – Delivery name	
+Requested ship date	The requested ship date (delivery window) from the EDI PO is shown here.	Sales line > Delivery > Requested ship date
+If staging blank will be populated by Sales order Header
+Requested receipt date	The requested receipt date (delivery window) from the EDI PO is shown here.	Sales line > Delivery > Requested receipt date
+If staging blank will be populated by Sales order Header
