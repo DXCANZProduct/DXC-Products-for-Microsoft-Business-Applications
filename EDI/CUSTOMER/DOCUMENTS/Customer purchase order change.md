@@ -141,6 +141,7 @@ Item not found: %	                  | Item not found         | **EDI > Documents
 The following sales order checks are done when the document is being:
 - Automatically processed and document setting **Allow header update** is set to _Yes_ or 
 - Manually accepted by the user
+
 ![alt text](../IMAGE/SalesOrderHeaderChecks_CustomerPOChange.png "Sales order header checks")
 
 # View staging table records
