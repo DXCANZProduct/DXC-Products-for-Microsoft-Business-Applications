@@ -31,7 +31,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 The DXC Finance Utilities module provides enhanced functionalities to
 Microsoft Dynamics 365 Cash and bank management, and Accounts payable
-payment processing;
+payment processing:
 
 -   Bank statement import formatting
 
