@@ -81,7 +81,7 @@ The **Custom Format - Lines** page defines the column definitions to use whilst 
 | **Strip leading zeroes** | Specifies whether any leading zeroes in this field should be removed. |
 | **Date format** | This specifies the date format in the bank statement.  Note: This option appears when the **Field** is set to _Date_. |
 | **Use Julian date format** | Where applicable, enter the bank statement format's date field in Julian format, for example BRS using YYYYDDD |
-| **Decimal adjustment** | This specifies the Decimal adjustment required for the bank statement's Amount. For example bank statement amount is 20055, but last two charactes are decimal, thus amount to be mapped to D365 Bank statement is 200.55 <br> For this example enter 2 in **Decimal adjustment** field.| 
+| **Decimal adjustment** | This specifies the Decimal adjustment required for the bank statement's **Amount**. For example bank statement amount is 20055, but last two charactes are decimal, thus amount to be mapped to D365 Bank statement is 200.55 <br> For this example enter 2 in **Decimal adjustment** field.| 
 | **Position credit/debit** |	This specifies the position of the credit/debit indicator for BRS file’s Amount field. Only enabled where **ABSR file type** is _BRS_.|
 
 
