@@ -40,8 +40,8 @@ Then set the fields as desribed in the following subsections.
 **Reconciliation matching rule**
 | **Field** | **Description**|
 |--|--|
-| Extended matching rule operator | This parameter activates a new operator **Included in** in the Reconciliation matching rules form. It supplements the **Contains** capability, and means that the field selected is a part of the nominated Bank statement field. |
-| Extended financial details for new transaction | This parameter enables the capture of the following details automatically if the bank statement line is marked as 'New' <br> • Financial dimensions <br> • GST  <br> • Sub-Ledger offset account |
+| **Extended matching rule operator** | This parameter activates a new operator **Included in** in the Reconciliation matching rules form. It supplements the **Contains** capability, and means that the field selected is a part of the nominated Bank statement field. |
+| **Extended financial details for new transaction** | This parameter enables the capture of the following details automatically if the bank statement line is marked as 'New' <br> • Financial dimensions <br> • GST  <br> • Sub-Ledger offset account |
 
 **Bank reconciliation**
 | **Field** | **Description**|
