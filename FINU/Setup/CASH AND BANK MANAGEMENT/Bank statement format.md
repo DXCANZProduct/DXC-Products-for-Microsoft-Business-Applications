@@ -29,34 +29,25 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ### Bank Statement format
 
-When the finance utilities parameter Enable custom bank statement formats is enabled, a new checkbox field customized format becomes active in the bank statement format form.  When the customized format is selected, the following below fields and buttons will also be activated
-
-You can reach the **CASH AND BANK MANAGEMENT > SETUP > ADVANCED BANK RECONCILIATION SETUP > BANK STATEMENT FORMAT**
- form by navigating to
-**CASH AND BANK MANAGEMENT > SETUP > ADVANCED BANK RECONCILIATION SETUP > BANK STATEMENT FORMAT**
+To open the **Bank statement format** page, go to **Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format**.
 
 #### Fields
 
-| **Field** | **Description** |
+When the **Financial utilities parameter**'s **Enable custom bank statement formats** is enabled, the following Finance utilities fields become active in the **Bank statement format** page.
+
+| **Field**           | **Description** |
 |-|-|
-**ABSR File type** |Choose the file format of the bank statement – options include:  <br> -	Flat File  <br> - BAI2 File <br> - NAI File <br> - BRS <br> - Custom |
-|**Field delimiter**|The type of field delimiter the file uses. E.g. a comma “,”  |
-|**Record code field position**|This field is active only if the ABSR file type is BAI2, NAI or BRS file. This field captures the position of the Line type code in each line of the file. E.g. if Field Number =1, the first field of each line in the file determines the Line Type (i.e. 01, 02, 03, 16, 49, 98, 99).
-| **Record code field length** | Applicable to BRS Files as record length isn’t always 1 |
+| **Custom format**   | Checkbox option which enables the **Custom format** buttons and following fields.
+| **ABSR file type**  | Choose the file format of the bank statement – options include:  <br> •	Flat File <br> •	NAI File <br> •	BAI2 <br> •	Custom <br> •	BRS |
+| **Field delimiter** | The type of field delimiter the file uses. E.g. a comma “,”  |
+| **Record code field position** | This field is active only if the **ABSR file type** is set to BAI2, NAI or BRS file. This field captures the position of the **Line code** in each line of the file. E.g. if Field Number = 1, the first field of each line in the file determines the Line Type (i.e. 01, 02, 03, 16, 49, 98, 99).
+| **Record code field length** | Applicable to BRS files types as BRS files aren't delimited |
 
-**Note:** 
-When creating a bank statement format, processing group is mandatory (including finance utilities custom bank statement formats). Before configuring a custom bank format, a processing group linked to 'bank statements' must be created. Below are the steps to create such a processing group: 
-1.	In the bank statement format, right click on processing group field and select the option 'View details' (There is no direct navigation to 'Processing group' form) 
-2.	In the processing group form, create a new processing group 'Bank Statement' 
-3.	Click 'entities' button 
-4.	In the entities form, Add an entity 'Bank statements' and select the source data format 'XMLElement' 
-5.	Click 'Save' button and close the form 
-6.	Attach the processing group ‘BankStatement’ while configuring the bank statement format 
-
+> **Note:** When creating a bank statement format, processing group is mandatory (including for Finance utilities custom bank statement formats). Before configuring a custom bank format, a processing group for entity **Bank statements** must be created as an Import project in **Data management**. See [standard setup](https://docs.microsoft.com/en-us/dynamics365/finance/cash-bank-management/set-up-advanced-bank-reconciliation-import-process) for steps on creating a new progressing group.
 
 #### Custom Format
 
-Only available when Custom format is ticked
+Only available when **Custom format** is ticked
 #### *Buttons*
 
 | **Button** | **Description** |
