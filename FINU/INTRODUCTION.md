@@ -74,8 +74,6 @@ Finance utilities minimises the manual actions required for reconciling bank acc
 
 The Sundry Payment modification gives the user the ability to enter a supplier name and address on an individual invoice allowing these details to be used on a cheque payments, as well as one-off BSB and Account Number for EFT Payments. Therefore, many one- time vendor invoices can be stored on one sundry vendor record but allowing for separate payments without a change to the vendor record information.  This also makes it possible to pay all sundry invoices in one payment proposal.
 
-A custom-built report has been developed to provide a Payment advice to vendors upon processing an EFT payment run. The report will show the vendor bank account details where the payment is deposited as well as the invoices numbers paid, what amount and what discount applied. This remittance advice report works in conjunction with the Smart Send function.
-
 ## Accounts Payable - BPAY
 
 The BPAY method of payment modification provides the ability to set BPAY required fields on the Vendor and Company bank account. Flagging the method of payment as BPAY, sets the BPAY fields as mandatory for invoice transactions. 
@@ -83,6 +81,10 @@ The BPAY method of payment modification provides the ability to set BPAY require
 When invoice transactions are created for vendors with a BPAY method of payment, the BPAY fields are auto populated from the Vendor details. The BPAY fields can also be entered or edited at time of invoice entry. Posting validation confirms all mandatory BPAY fields are entered else the posting will fail. 
 
 Within the Vendor payment proposal, grouping also occurs for the new BPAY field.
+
+## Accounts Payable - Payment advice report
+
+A custom-built report has been developed to provide a Payment advice to vendors upon processing an EFT payment run. The report will show the vendor bank account details where the payment is deposited as well as the invoices numbers paid, what amount and what discount applied. This remittance advice report works in conjunction with the Smart Send function.
 
 ## Budget import
 
