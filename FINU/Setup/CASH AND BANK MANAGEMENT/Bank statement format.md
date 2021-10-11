@@ -64,6 +64,7 @@ The **Custom Format - Line codes** page is used to determine the line identifier
 |-|-|
 | **Line Code** | The field number corresponds to the **Custom line code** specified on the bank statement. |
 | **Description** | Specify the format line code description. |
+| **Is transaction line** | Specify if the line code is a transaction line. |
 
 ##### **Custom Format – Lines**
 
@@ -85,14 +86,14 @@ The **Custom Format - Lines** page defines the column definitions to use whilst 
 | **Position credit/debit** |	This specifies the position of the credit/debit indicator for BRS file’s Amount field. Only enabled where **ABSR file type** is _BRS_.|
 
 
-***Custom Format - Line Codes Format
-CASH AND BANK MANAGEMENT > SETUP > ADVANCED BANK RECONCILIATION SETUP > BANK STATEMENT FORMAT
-Custom Format - Line codes format button.*** The line codes format form controls how transaction types are posted
+##### **Custom Format - Line codes format**
+The **Line codes format** page controls how transaction **amounts** are posted.
+
 | Field | Description |
 |-|-|
 | **From type code** | Transaction type code range from the Bank Statement Transaction Types |
 | **To type code** | 	Transaction type code range from the Bank Statement Transaction Types|
-| **Debit/Credit** | 	Area to specify if transaction statement line amount is: <br> -	Debit in the system (i.e. positive) <br> -	Credit in the system (i.e. negative) |
+| **Debit/Credit** | 	Area to specify if transaction statement line amount is: <br> •	Debit in the system (i.e. positive) <br> • Credit in the system (i.e. negative) |
 | **Description** |	Description of the particular rule |
 
-The line codes format form is available only when either the **BAI2, NAI** File, or **Custom** format is selected.
+> Note: The **Line codes format** page is available only when **ABSR file type** is set to either _BAI2 File_, _NAI File_, or _Custom_.
