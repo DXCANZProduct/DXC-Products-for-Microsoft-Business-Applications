@@ -144,6 +144,18 @@ The following sales order checks are done when the document is being:
 
 ![alt text](../IMAGE/SalesOrderHeaderChecks_CustomerPOChange.png "Sales order header checks")
 
+**Rule Id**             | **Details**
+:---                    |:---
+**Deadline date**       | A check of this date against the standard rules is required. (i.e. Dates are not historical)
+
+#### Settings
+Settings profiles can be specified and linked to the template which is used to determine how D365 will react.  Options are:
+
+**Setting**                                 | **Details**
+:---                                        |:---
+**Processing method**                       |	Specifies if the changes should automatically be applied or flagged for manual approval.
+**Document status**                         |	Check if the existing D365 sales order’s Document status <= Customer purchase order change **Document setting**'s **Document status** setting. If the Sales order’s document status is “higher”, then the change will not be applied and the EDI staging record will Error.
+
 # View staging table records
 To view the Customer purchase order change's staging records, go to **EDI > Documents > Customer documents > Customer purchase order change**. 
 Use this page to review staging and process EDI Customer purchase order change documents to cancel or edit an existing D365 sales order.
