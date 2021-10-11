@@ -137,6 +137,12 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 :------------------------------------ |:----                   |:----
 Item not found: %	                  | Item not found         | **EDI > Documents > Customer documents > Customer purchase order change** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's <br> [**Setting profile**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
 
+### Sales order header checks
+The following sales order checks are done when the document is being:
+- Automatically processed and document setting **Allow header update** is set to _Yes_ or 
+- Manually accepted by the user
+![alt text](../IMAGE/SalesOrderHeaderChecks_CustomerPOChange.png "Sales order header checks")
+
 # View staging table records
 To view the Customer purchase order change's staging records, go to **EDI > Documents > Customer documents > Customer purchase order change**. 
 Use this page to review staging and process EDI Customer purchase order change documents to cancel or edit an existing D365 sales order.
@@ -278,16 +284,11 @@ The following EDI Line staging fields are available on the line page.
 **Customer pack**       |	The customer’s pack quantity	                          | Sales line > EDI > POA response > Customer > Pack
 **Configuration**       |	Inventory dimension - Configuration	                    | Sales line > Inventory dimension
 **Colour**	            | Inventory dimension - Colour	                          | Sales line > Inventory dimension
-**Size**                |	Inventory dimension - Size	
-Style	Inventory dimension - Style	
-Site	Storage dimension - Site	Sales line > Site
-If staging blank will be populated by Sales order Header
-Warehouse	Storage dimension - Warehouse	Sales line > Warehouse
-If staging blank will be populated by Sales order Header
-Store code	The store code from the EDI PO line is shown here.	Sales line> EDI > General > Store code
-EDI supports different store codes on line level
-Delivery name	Address for Delivery – Delivery name	
-Requested ship date	The requested ship date (delivery window) from the EDI PO is shown here.	Sales line > Delivery > Requested ship date
-If staging blank will be populated by Sales order Header
-Requested receipt date	The requested receipt date (delivery window) from the EDI PO is shown here.	Sales line > Delivery > Requested receipt date
-If staging blank will be populated by Sales order Header
+**Size**                |	Inventory dimension - Size	                            | Sales line > Inventory dimension
+**Style**               |	Inventory dimension - Style	                            | Sales line > Inventory dimension
+**Site**                |	Storage dimension - Site	                              | Sales line > Site. If staging blank will be populated by Sales order Header
+**Warehouse**           |	Storage dimension - Warehouse	                          | Sales line > Warehouse. If staging blank will be populated by Sales order Header
+**Store code**          |	The store code from the EDI record line is shown here.	| Sales line> EDI > General > Store code. EDI supports different store codes on line level
+**Delivery name**       |	Address for Delivery – Delivery name	
+**Requested ship date** |	The requested ship date (delivery window) from the EDI record is shown here.	| Sales line > Delivery > Requested ship date. If staging blank will be populated by Sales order Header
+**Requested receipt date**  |	The requested receipt date (delivery window) from the EDI record is shown here.	| Sales line > Delivery > Requested receipt date. If staging blank will be populated by Sales order Header
