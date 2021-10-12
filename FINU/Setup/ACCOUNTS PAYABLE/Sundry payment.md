@@ -42,8 +42,7 @@ A Sundry vendor needs its own method of payment. This is what differentiates the
 
 |    Field	  |    Description   |
 |-|-|
-|   File Formats  |  |
-|   Sundry method of payment  | Select _Yes_ for Sundry payment processing  |
+|  **Sundry method of payment**  | Select _Yes_ for Sundry payment processing  |
 	
 #### Sundry Vendor
 
