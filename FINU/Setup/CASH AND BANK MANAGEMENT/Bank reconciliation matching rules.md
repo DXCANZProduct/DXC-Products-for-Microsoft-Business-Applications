@@ -86,7 +86,7 @@ If the **Financial utilities parameter**'s **Extended financial details for new 
 |-|-|
 | **Financial Dimensions > Offset account**  |  Financial dimensions that have to be used to post the _new_ transactions. <br> If the dimensions are filled in, it will override the financial dimensions set by default on the selected main account. <br> Else, financial dimensions set by default on the selected main account will apply with the new transaction. |
 | **Offset Company Account**  | Defaults to the current legal entity. <br> Populates the new field Offset Company Account in the Bank Statement Line Details form when a Line – marked as New – is created.           |
-| **Offset Account type**   | Populates the new field Offset Account Type in the Bank Statement Line Details form when a Line – marked as New - is created.                  Note: This field defaults to Ledger; Extended financial details only support offset account type _Ledger_, _Customer_ and _Vendor_.          |
-| **Offset Account**   |  Populates the new field Offset Account in the Bank Statement Line Details form when a Line – marked as New - is created.   |
-| **GST Group**   |  Populates the field GST group in the Bank Statement Line Details form when a Line – marked as New - is created.   |
-| **Item GST Group**    |  Populates the field Item GST group in the Bank Statement Line Details form when a Line – marked as New - is created   |
+| **Offset Account type**   | Populates the new field Offset Account Type in the Bank Statement Line Details form when a **Mark as new** line is created. <br> Note: This field defaults to Ledger; Extended financial details only support offset account type _Ledger_, _Customer_ and _Vendor_.          |
+| **Offset Account**   |  Populates the new field Offset Account in the Bank Statement Line Details form when a **Mark as new** line is created.   |
+| **GST Group**   |  Populates the field GST group in the Bank Statement Line Details form when a **Mark as new** line is created.   |
+| **Item GST Group**    |  Populates the field Item GST group in the Bank Statement Line Details form when a **Mark as new** line is created   |
