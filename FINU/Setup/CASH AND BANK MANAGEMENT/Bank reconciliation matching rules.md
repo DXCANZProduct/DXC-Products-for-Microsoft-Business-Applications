@@ -64,14 +64,14 @@ When the Operator **Included in** is selected, D365 checks whether the value of 
 |-|-|-|-|-|
 |   Payment reference  |  Contains  |  Tick  |    |  Document number  |
 
-|    Source           |   Matched   | Booking Date |   Debit   |   Credit   |   Bank Trx Type  |   Document number      |
-|-                    |:-:          |-             |-          |-           |-                 |-                       |
-| D365 Bank Trx       |             |              |           |            |                  |                        |
-| **Line 1**          | X           |  14/01/2018  |           | 1000       | 01               | **AAU1367611**         |
-| Line 2              |             |  14/01/2018  |           | 1000       | 01               | AAU1367612             |
-| Bank Statement Trx  |             |              |           |            |                  |                        |
-| **Line 1**          | X           |  14/01/2018  |           | 1000       | 699              | CBA pmt **AAU1367611** |
-| Line 2              |             |  14/01/2018  |           | 1000       | 699              | CBA pmt AAU1367613     |
+|    Source              |   Matched   | Booking Date |   Debit   |   Credit   |   Bank Trx Type  |   Document number      |
+|-                       |:-:          |-             |-          |-           |-                 |-                       |
+| **D365 Bank Trx**      |             |              |           |            |                  |                        |
+| Line 1                 | X           |  14/01/2018  |           | 1000       | 01               | **AAU1367611**         |
+| Line 2                 |             |  14/01/2018  |           | 1000       | 01               | AAU1367612             |
+| **Bank Statement Trx** |             |              |           |            |                  |                        |
+| Line 1                 | X           |  14/01/2018  |           | 1000       | 699              | CBA pmt **AAU1367611** |
+| Line 2                 |             |  14/01/2018  |           | 1000       | 699              | CBA pmt AAU1367613     |
 
 In this example, when the above Reconciliation Matching rule is run, D365 Bank Transactions Line 1 will be matched with Bank Statement Transactions Line 1 because the **Document number** value “AAU1367611” is included in the value of the field Reference No “CBA pmt AAU1367611”.
 
