@@ -64,30 +64,30 @@ When the Operator **Included in** is selected, D365 checks whether the value of 
 |-|-|-|-|-|
 |   Payment reference  |  Contains  |  Tick  |    |  Document number  |
 
-|    Source   |   Matched   |   Booking Date   |   Debit   |   Credit   |   Bank Trx Type   |   Document number    |
-|-|-|-|-|-|-|-|
-|   D365 Bank Trx  |  |  |  |  |  |  |
-|    |  X  |  14/01/2018  |   |  1000  |  01  |  AAU1367611  |
-|    |    |  14/01/2018  |   |  1000  |  01  |  AAU1367612  |
-|   Bank Statement Trx  |  |  |  |  |  |  |
-|    |  X  |  14/01/2018  |   |  1000  |  699  |  CBA pmt AAU1367611   |
-|    |  X  |  14/01/2018  |   |  1000  |  699  |  CBA pmt AAU1367613   |
+|    Source           |   Matched   | Booking Date |   Debit   |   Credit   |   Bank Trx Type  |   Document number      |
+|-                    |:-:          |-             |-          |-           |-                 |-                       |
+| D365 Bank Trx       |             |              |           |            |                  |                        |
+| **Line 1**          | X           |  14/01/2018  |           | 1000       | 01               | **AAU1367611**         |
+| Line 2              |             |  14/01/2018  |           | 1000       | 01               | AAU1367612             |
+| Bank Statement Trx  |             |              |           |            |                  |                        |
+| **Line 1**          | X           |  14/01/2018  |           | 1000       | 699              | CBA pmt **AAU1367611** |
+| Line 2              |             |  14/01/2018  |           | 1000       | 699              | CBA pmt AAU1367613     |
 
-In this example, when the Reconciliation Matching rule **Document No** is run, Dynamics 365 Bank Transactions Line 1 will be matched with Bank Statement Transactions Line 1 because the **Document number** value “AAU1367611” is included in the value of the field Reference No “CBA pmt AAU1367611”.
+In this example, when the above Reconciliation Matching rule is run, D365 Bank Transactions Line 1 will be matched with Bank Statement Transactions Line 1 because the **Document number** value “AAU1367611” is included in the value of the field Reference No “CBA pmt AAU1367611”.
 
-#### Mark as New Additional Defaults
+#### Mark as New - Additional defaults
 
-If the **Extended financial details for new transaction** parameter is set to Yes, the option to capture the following details automatically, if the bank statement line **Mark as new** is selected.
+If the **Financial utilities parameter**'s **Extended financial details for new transaction** parameter is set to _Yes_ the option to capture the following details automatically, if the bank statement line is **Mark as new**, can be selected.
 -	Financial dimensions 
 -	GST
 -	Sub-Ledger offset account
 
 |    Field / Button   |    Description   |
 |-|-|
-|  **Financial Dimensions > Offset accoun**  |      Financial dimensions that have to be used to post the new transactions                  If the dimensions are filled in, it will override the financial dimensions set by default on the selected main account                  Else, financial dimensions set by default on the selected main account will apply with the new transaction.           |
-|  **Offset Company Account**  |    Defaults to the current legal entity.                  Populates the new field Offset Company Account in the Bank Statement Line Details form when a Line – marked as New – is created.           |
-|  **Offset Account type**   |      Populates the new field Offset Account Type in the Bank Statement Line Details form when a Line – marked as New - is created.                  Note: This field defaults to Ledger; Extended financial details only support offset account type Ledger, Customer and Vendor          |
-|  **Offset Account**   |  Populates the new field Offset Account in the Bank Statement Line Details form when a Line – marked as New - is created.   |
-|  **GST Group**   |  Populates the field GST group in the Bank Statement Line Details form when a Line – marked as New - is created.   |
-|   **Item GST Group**    |  Populates the field Item GST group in the Bank Statement Line Details form when a Line – marked as New - is created   |
+| **Financial Dimensions > Offset account**  |  Financial dimensions that have to be used to post the _new_ transactions. <br> If the dimensions are filled in, it will override the financial dimensions set by default on the selected main account. <br> Else, financial dimensions set by default on the selected main account will apply with the new transaction. |
+| **Offset Company Account**  | Defaults to the current legal entity. <br> Populates the new field Offset Company Account in the Bank Statement Line Details form when a Line – marked as New – is created.           |
+| **Offset Account type**   | Populates the new field Offset Account Type in the Bank Statement Line Details form when a Line – marked as New - is created.                  Note: This field defaults to Ledger; Extended financial details only support offset account type _Ledger_, _Customer_ and _Vendor_.          |
+| **Offset Account**   |  Populates the new field Offset Account in the Bank Statement Line Details form when a Line – marked as New - is created.   |
+| **GST Group**   |  Populates the field GST group in the Bank Statement Line Details form when a Line – marked as New - is created.   |
+| **Item GST Group**    |  Populates the field Item GST group in the Bank Statement Line Details form when a Line – marked as New - is created   |
 
