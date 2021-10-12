@@ -2,7 +2,7 @@
 # required metadata
 
 title: [Finance Utilities ]
-description: [Finance Utilities - Accounts Payable Processing ]
+description: [Accounts Payable Processing - Sundry payment processing]
 author: [helenho]
 manager: Kym Parker
 ms.date: 02/03/2021
@@ -31,27 +31,11 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 The functionality gives the ability to enter a supplier name and address on an individual invoice allowing these details to be used on cheque payments, as well as one-off BSB and Account Number for EFT Payments. Therefore, many one-time vendor invoices can be stored on a single sundry vendor record but allowing for separate payments without a change to the vendor record information.  This also makes it possible to pay all sundry invoices in one payment proposal.
 
-### Setup Sundry payment
-#### Method of Payment
 
-ACCOUNTS PAYABLE > PAYMENT SETUP > METHODS OF PAYMENT
-
-A Sundry vendor needs its own method of payment. This is what differentiates the Sundry vendor from other vendors. A new field has been added to record this.
-
-|    Field	  |    Description   |
-|-|-|
-|   File Formats  |  |
-|   Sundry Method of Payment  |  	Select YES for Sundry Payment processing  |
-	
-#### Sundry Vendor
-
-Define the Vendor to be used for Sundry payments, and set the Method of Payment to that identified for Sundry Payment processing.
 
 ### Sundry Vendor Invoices
 
-**ACCOUNTS PAYABLE > INVOICES > INVOICE JOURNAL** 
-
-Create the new invoice journal header, as per standard Dynamics D365O and press the Lines button to begin entering the invoice/s. Selection of the Sundry Vendor will require the addition of details associated with the Payment of each Vendor (on each Invoice line); 
+To create a new sundry vendor invoice journal, go to **Accounts payable > Invoices > Invoice journal**, create the new invoice journal header as per standard D365 and press the Lines button to begin entering the invoice/s. Selection of the **Sundry Vendor** created in the setup will require the addition of details associated with the Payment of each Vendor (on each Invoice line); 
 
 |    Field  |    Description   |
 |-|-|
