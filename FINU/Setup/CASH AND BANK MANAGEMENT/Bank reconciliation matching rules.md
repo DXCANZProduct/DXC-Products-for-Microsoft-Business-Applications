@@ -77,7 +77,7 @@ In this example, when the above Reconciliation Matching rule is run, D365 Bank T
 
 #### Mark as New - Additional defaults
 
-If the **Financial utilities parameter**'s **Extended financial details for new transaction** parameter is set to _Yes_ the option to capture the following details automatically, if the bank statement line is **Mark as new**, can be selected.
+If the **Financial utilities parameter**'s **Extended financial details for new transaction** parameter is set to _Yes_, the option to capture the following details automatically for **Mark as new** bank statement lines can be selected.
 -	Financial dimensions 
 -	GST
 -	Sub-Ledger offset account
@@ -90,4 +90,3 @@ If the **Financial utilities parameter**'s **Extended financial details for new 
 | **Offset Account**   |  Populates the new field Offset Account in the Bank Statement Line Details form when a Line – marked as New - is created.   |
 | **GST Group**   |  Populates the field GST group in the Bank Statement Line Details form when a Line – marked as New - is created.   |
 | **Item GST Group**    |  Populates the field Item GST group in the Bank Statement Line Details form when a Line – marked as New - is created   |
-
