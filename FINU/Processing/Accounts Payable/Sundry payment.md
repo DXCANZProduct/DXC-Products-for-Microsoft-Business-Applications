@@ -43,14 +43,14 @@ To create a new sundry vendor invoice journal, go to **Accounts payable > Invoic
 
 |    Field  |    Description   |
 |-|-|
-|   SUNDRY VENDOR  |  |
-|  Sundry vendor name |  Sundry Vendor name is required  |
-|  Sundry address |  Sundry Vendor address is required  |
-|  Sundry BSB routing number |  If payment is via EFT Sundry Vendor, bank routing number is required |
-|  Sundry bank account |  If payment is via EFT Sundry Vendor, bank account number is required |
+|  **Sundry vendor name** |  Sundry vendor name is required  |
+|  **Sundry address** |  Sundry vendor address is required  |
+|  **Sundry BSB\routing number** |  If payment is via EFT, the sundry vendor's bank routing number is required |
+|  **Sundry bank account** |  If payment is via EFT, the sundry vendor's bank account number is required |
 
 The Sundry Vendor detail can be changed, prior to posting. <br>
-If any of the above fields are not entered for a sundry vendor invoice line, an error will stop the user from posting the journal. The error will specify which sundry field must be filled in.
+If any of the above fields are not entered for a sundry vendor invoice line, an error will stop the user from saving the journal line. <br>
+The error will specify which sundry field must be filled in.
 
 ### Sundry Vendor Payments
 
