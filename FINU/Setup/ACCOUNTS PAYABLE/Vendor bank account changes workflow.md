@@ -27,16 +27,16 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Vendor bank account changes Workflow
-##	Setup
+# Accounts payable functionality
+The fields as described in the following subsections are available to control the additional functionality for accounts payable.
 
-The View/Update Vendor bank account changes Workflow form is used to set up the approval process within your Dynamics 365 environment.
-Within this form, you will able to view or control the version of activated workflow, 
+## Vendor bank account changes workflow
 
-You can reach the ACCOUNTS PAYABLE PARAMETERS form by navigating to
+When changes are made to specific vendor fields, standard D365 vendor workflow can be used for approval before the changes are applied to the vendor. 
+Finance utilities has added additional vendor fields that can be managed by the same workflow.
 
-**ACCOUNTS PAYABLE > SETUP > ACCOUNTS PAYABLE PARAMETERS**
-
+### Setup vendor approval
+Users can access the **Accounts payable parameters** page by navigating to **Accounts payable > Setup > Accounts payable parameters**. <br>
 The below fields have been added to the existing Vendor approval fields. When enabled they will be submitted using the existing **Proposed vendor changes workflow.**
 
 **Vendor bank account:**
@@ -44,11 +44,11 @@ The below fields have been added to the existing Vendor approval fields. When en
 -	BSB number
 -	Bank account number
 -	SWIFT code
--	Biller code (new for BPAY)
--	Lodgement reference (new for BPAY)
+-	Biller code (Finance utilities BPAY field)
+-	Lodgement reference (Finance utilities BPAY field)
 -	IBAN
 -	Active date
 -	Expiration date
 
 **Vendor:**
--	Payment id (using for BPAY)
+-	Payment id (existing field used for Finance utilities BPAY)
