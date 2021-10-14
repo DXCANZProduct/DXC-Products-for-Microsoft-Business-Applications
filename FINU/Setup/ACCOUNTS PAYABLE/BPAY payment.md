@@ -43,7 +43,7 @@ The following is required to setup BPAY payment:
 Users can access the form by navigating to **Accounts payable > Payment setup > Methods of payment**.
 
 Enabling field **BPAY method of payment** updates the following:
--	**Generic electronic format** is enabled and locked. Since Eclipse EFT formats will be deprecated in future, BPAY only supports Generic electronic formats. 
+-	**Generic electronic format** is enabled and locked. Since Eclipse EFT formats will be deprecated in future, the BPAY method of payment only supports Generic electronic formats. 
 -	**Payment control > Payment ID is mandatory** is enabled and locked
 -	**Payment attributes > Payment ID** is enabled and locked
 The following fields have been added as part of the BPAY modification, but are _optional_ since not mandatory for all ANZ banks:
