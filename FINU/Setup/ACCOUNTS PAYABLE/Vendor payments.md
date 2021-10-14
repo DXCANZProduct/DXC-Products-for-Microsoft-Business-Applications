@@ -31,17 +31,23 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 The fields as described in the following subsections are available to control the additional functionality for accounts payable.
 
 ## Vendor payments
-
 The Vendor payments form is used to set up and generate the EFT file from your Dynamics 365 environment. 
-Within this form, you will set up the details regarding the vendor payment of the vendor account, that will be utilized when sending EFT file to your bank. 
+Within this form, you will set up the details regarding the payment of the vendor account, that will be utilized when sending EFT file to your bank. 
 
-Note: Only applicable to custom DXC Finance Utilities EFT formats
-Some improvements to the AP EFT payment processing have been created, these include: 
--	Balance Line, Totaling functions on the EFT File format.
--	Auto Generating a Payment Reference for each EFT payment which can be traced in Vendor’s Bank Statement, AX Bank Transactions/Reconciliation and Payment Advice.
--	Vendor Bank Account Name used on EFT file instead of Vendor Name.
--	Payment Advice report, a specific EFT Remittance Advice report has been produced which can be auto emailed at time of generating the EFT File.
--	EFT File Name generation 
+### Finance utilities EFT formats
+> Note: Finance utilities EFT formats is planned for deprecation; no timeline, but a 12 month notice will be provided.
+
+** Finance utilities EFT formats: When setting up Vendor **Method of payments** and selecting **Export format**, Finance utilities currently provides formats with **Class name** that start with **ECL_VendOutPaym**. 
+
+Some improvements to the Accounts Payable EFT payment processing have been created, these include: 
+- The following only applies to vendor payments with a method of payment using the Finance utilities EFT formats **
+  - Balance Line, Totaling functions on the EFT File format.
+  -	Vendor bank account name used on EFT file instead of Vendor Name.
+  -	EFT File name generation 
+
+- The following applies to all method of payment format:
+  -	Auto Generating a Payment Reference for each EFT payment which can be traced in Vendor’s Bank Statement, AX Bank Transactions/Reconciliation and Payment Advice.
+  -	Payment Advice report, a specific EFT Remittance Advice report has been produced which can be auto emailed at time of generating the EFT File.
 
 ### EFT File Balance Line
 
