@@ -47,3 +47,6 @@ A Sundry vendor needs its own method of payment. This is what differentiates the
 #### Sundry Vendor
 
 Define the Vendor to be used for Sundry payments, and set the **Method of payment** to the Sundry method of payment setup in previous step.
+
+### Sundry payment processing
+Sundry payment processing is discussed in detail at [Sundry payment processing](../../Processing/Accounts%20Payable/Sundry%20payment.md).
