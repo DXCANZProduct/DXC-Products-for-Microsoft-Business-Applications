@@ -32,7 +32,7 @@ The fields as described in the following subsections are available to control th
 
 ## Vendor bank account changes workflow
 
-When changes are made to specific vendor fields, standard D365 vendor workflow can be used for approval before the changes are applied to the vendor. <br>
+When changes are made to specific vendor fields, standard D365 vendor workflow can be used for approval before the changes are applied to the vendor. 
 Finance utilities has added additional vendor fields that can be managed by the same workflow.
 
 ### Setup vendor approval
