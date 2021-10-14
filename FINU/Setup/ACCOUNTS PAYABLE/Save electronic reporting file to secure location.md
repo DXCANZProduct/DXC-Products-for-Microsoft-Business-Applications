@@ -89,45 +89,41 @@ Select **Save** and the applicable **Setup** will be displayed as per the **Conn
 
 ### Step 2 - Setup Document types
 
-Users can access the page by navigating to **Organisation administration > Document management > Document types**.
-Setup the **Document type** and assign the **Electronic reporting export connection** created in step 1.
+Users can access the page by navigating to **Organisation administration > Document management > Document types**. <br> 
+Select **New** to create the **Document type** and assign the **Electronic reporting export connection** created in _step 1_.
 
 |   Field    |   Description   |   Example or Options   |
 |-|-|-|
-|  Type  |  Enter the type  |  Example GER  |
-|  Name  |  Enter a name for the document type  |  |
-|  Class  |  Select Attach file  |  •	Attach file <br> •	Attach URL <br> •	Simple note      |
-|  Group  |  Select  File   |  • Note <br> • File <br> • Image <br> • Document <br> • Worksheet <br> • URL         |
-|  Category  |  Select a Category  |  •	None         |
-|  Location SharePoint Address |  Not used, select any Not used  |  • Azure storage <br> • Database <br> • SharePoint         |
-|  Remove  |  Document and physical file  |           |
-|  Ask for confirmation  |  Should confirmation be requested priori to removing the file  |  • Yes <br> • No |
-|  Electronic report export connection  |  Select the Electronic reporting export connection setup in step 1 |  Example ANZ_FTP         |
+| **Type**  |  Enter the type  |  Example GER  |
+| **Name**  |  Enter a name for the document type  |  |
+| **Class**  |  Select **Attach file**  |  •	Attach file <br> •	Attach URL <br> •	Simple note      |
+| **Group**  |  Select  **File**   |  • Note <br> • File <br> • Image <br> • Document <br> • Worksheet <br> • URL         |
+| **Category**  |  Select a **Category**  |  •	None         |
+| **Location** | Not used, select any     |  • Azure storage <br> • Database <br> • SharePoint         |
+| **SharePoint address** |   Not used  
+| **Remove**  |  Document and physical file  |           |
+| **Ask for confirmation**  |  Should confirmation be requested priori to removing the file  |  • Yes <br> • No |
+| **Electronic report export connection**  |  Select the **Electronic reporting export connection** setup in _step 1_ |  Example ANZ_FTP         |
 
 ### Step 3 - Electronic reporting destination
-**ORGANISATION ADMINISTRATION > ELECTRONIC REPORTING > ELECTRONIC REPORTING DESTINATION**
-
-Setup Electronic reporting destination for selected GER and allocate Document type created in step 2.
+Users can access the page by navigating to **Organisation administration > Electronic reporting > Electronic reporting destination**. <br> 
+Select **New** on the Action Pane to create an **Electronic reporting destination** for the selected GER and allocate **Document type** created in _step 2_.
 
 |   Field    |   Description   |    Example or Options   |
 |-|-|-|
-|  Reference  |  Select the  Electronic reporting Reference  |  Example ‘ANZ Direct Credit Service (AU)’  |
-|  Click  + New  in File  |  |  |
-|  Name |  Enter name for the destination  |   |
-|  File component name |  Select  PaymentFile   |   PaymentFile   |
-|  Settings |  |  |
-|  Stop processing on failure  |  If enabled and there are errors when saving the file to location, vendor payment processing  Generate payment  will create a file and attach to the job. The Payment status will remain  None   |  •	Yes <br> •	No          |
-|  Click Settings button and select Archive destination |  |  |
-|  Enabled  |  Enable the Archive destination  |  • Yes <br> • No          |
-|  Save in job archive  |  Enable saving  |  • Yes <br> • No          |
-|  Type  |  Select the Document type created in step 2  |  Example GER          |
+|  **Reference**  |  Select the  Electronic reporting Reference  |  Example ‘ANZ Direct Credit Service (AU)’  |
+|  Select  **New** on the **File destination** FastTab  |  |  |
+|  **Name** |  Enter name for the destination  |   |
+|  **File component name** |  Select  PaymentFile   |   PaymentFile   |
+|  **Stop processing on failure**  |  If enabled and there are errors when saving the file to location, vendor payment processing  **Generate payment**  will create a file and attach to the job. The Payment status will remain  **None**   |  •	Yes <br> •	No          |
+|  Select the **Settings** button on the **File destination** FastTab and select the **Archive** tab |  |  |
+|  **Enabled**  |  Enable the Archive destination  |  • Yes <br> • No          |
+|  **Save in job archive**  |  Enable saving  |  • Yes <br> • No          |
+|  **Type**  |  Select the **Document type** created in _step 2_  |  Example GER          |
 
 ### Step 4 -	Method of payment
-Enable Generic electronic Export format and select the Electronic reporting reference from Setup Step 3 in the Accounts payable Method of payment’s Export format configuration
+On the selected **Method of payment**, enable **Generic electronic Export format**, and in the **Export format configuration** field select the **Reference** from _step 3_.
 
 ## Processing
-### Generate payment
-When a Vendor payment journal with the above Method of payment is used, the archive destination is defaulted when generating the payment.
-
-If there is an error saving the file to secure location and Stop processing on failure was enabled the processing will error and Payment status remains None. Example error ‘The process stopped because the delivery of file ‘%’ to the destination failed. The payments cannot be generated.’
+Vendor payment processing using the above method of payment is discussed at [Processing](../../Processing/Accounts%20Payable/Save%20Electronic%20reporting%20file%20to%20secure%20location.md)
 
