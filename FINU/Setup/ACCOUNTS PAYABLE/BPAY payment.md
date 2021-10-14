@@ -75,4 +75,4 @@ The new BPAY fields have been added to the applicable data entities:
 | **Lodgement reference attribute**             | Vendor payment method  | VendPaymModeTable.DFUAtrributeLodgementRefEnabled  |
 
 ### BPAY payment processing
-BPAY payment processing is discussed in detail [here](../../Processing/Accounts%20Payable/BPAY%20payment.md).
+BPAY payment processing is discussed in detail at [BPAY payment processing](../../Processing/Accounts%20Payable/BPAY%20payment.md).
