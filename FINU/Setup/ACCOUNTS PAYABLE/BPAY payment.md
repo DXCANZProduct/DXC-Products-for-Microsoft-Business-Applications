@@ -74,29 +74,5 @@ The new BPAY fields have been added to the applicable data entities:
 | **Validate lodgement reference is mandatory** | Vendor payment method  | VendPaymModeTable.DFUValidateLodgementRefIsMandatory  |
 | **Lodgement reference attribute**             | Vendor payment method  | VendPaymModeTable.DFUAtrributeLodgementRefEnabled  |
 
-#### 	BPAY Vendor Invoices
-Vendor payment invoices can be created in various different pages. <br>
-The BPAY Finance utilities modification to capture BPAY details for your EFT payment have been added to:
-- **Accounts payable > Invoices > Tax invoice journal**
-- **Accounts payable > Invoices > Pending vendor invoices**
-- **Accounts payable > Invoices > Tax invoice register**
-- **General ledger > Journal entries > General journals**
-- **Project management and accounting > Journals > Expense**
-
-Payment id is currently on the vendor invoicing forms and will be utilized for BPAY. New BPAY field 
-**Lodgement reference** has also been added.
-
-- **Payment id** is populated by MS from the Vendor’s Payment id. The field can be manually edited on the vendor invoice entry prior to posting the invoice
-- **Lodgement reference** is populated by DXC Finance Utilities by the vendor/third party bank account on the invoice. When changing to a different vendor bank account, the Lodgement reference will automatically update. The field can be manually edited on the vendor invoice entry prior to posting the invoice.
-The BPAY modification uses the method of payment control settings to validate for mandatory fields Payment id and Lodgement reference (if also flagged as mandatory).
-
-If these Payment control mandatory fields are blank the invoice posting will error.
-
-### BPAY Vendor Payments
-You can reach the VENDOR PAYMENT JOURNAL form by navigating to
-**ACCOUNTS PAYABLE > PAYMENTS > VENDOR PAYMENT JOURNAL**
-
-New BPAY field **Lodgement reference** has been added to Vendor payment proposal form. 
-Payments are already being grouped by MS on Payment Id, and with the BPAY modification the **Lodgement reference** is also used in the grouping.
-
-**Lodgement reference** can be viewed on the **Payment** tab. The field is editable.
+### BPAY payment processing
+BPAY payment processing is discussed in detail [here](../../Processing/Accounts%20Payable/BPAY%20payment.md).
