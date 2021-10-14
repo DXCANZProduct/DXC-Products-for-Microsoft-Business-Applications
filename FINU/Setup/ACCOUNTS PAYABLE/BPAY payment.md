@@ -75,7 +75,8 @@ The new BPAY fields have been added to the applicable data entities:
 | **Lodgement reference attribute**             | Vendor payment method  | VendPaymModeTable.DFUAtrributeLodgementRefEnabled  |
 
 #### 	BPAY Vendor Invoices
-Vendor payment invoices can be created in various different pages. The BPAY Finance utilities modification to lodge the BPAY references have been added to:
+Vendor payment invoices can be created in various different pages. <br>
+The BPAY Finance utilities modification to capture BPAY details for your EFT payment have been added to:
 - **Accounts payable > Invoices > Tax invoice journal**
 - **Accounts payable > Invoices > Pending vendor invoices**
 - **Accounts payable > Invoices > Tax invoice register**
