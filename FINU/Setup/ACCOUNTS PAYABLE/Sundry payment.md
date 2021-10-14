@@ -37,7 +37,7 @@ The functionality gives the ability to enter a supplier name and address on an i
 ### Setup Sundry payment
 #### Method of Payment
 
-Users can access the form by navigating to **Accounts payable > Payment setup > Methods of payment**.
+Users can access the **Method of payment** page by navigating to **Accounts payable > Payment setup > Methods of payment**. <br>
 A Sundry vendor needs its own method of payment. This is what differentiates the Sundry vendor from other vendors. A new **Method of payment** field called _Sundry method of payment_ has been added to record this.
 
 |    Field	  |    Description   |
@@ -46,4 +46,8 @@ A Sundry vendor needs its own method of payment. This is what differentiates the
 	
 #### Sundry Vendor
 
-Define the Vendor to be used for Sundry payments, and set the **Method of payment** to the Sundry method of payment setup in previous step.
+Users can access the **All vendors** page by navigating to **Accounts payable > Vendors > All vendors**. <br>
+Define the Vendor to be used for Sundry payments, and set the vendor's **Method of payment** to the Sundry method of payment setup in previous step.
+
+### Sundry payment processing
+Sundry payment processing is discussed in detail at [Sundry payment processing](../../Processing/Accounts%20Payable/Sundry%20payment.md).
