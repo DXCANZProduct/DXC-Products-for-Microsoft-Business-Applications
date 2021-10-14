@@ -26,12 +26,14 @@ ms.author: [helenho]
 ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
+# Accounts payable functionality
+The fields as described in the following subsections are available to control the additional functionality for accounts payable.
 
-## BPAY Payment Processing
+## BPAY Payment
 Setup requirements are discussed in detail [here](../../Setup/ACCOUNTS%20PAYABLE/BPAY%20payment.md).
 Processing of the vendor invoices and payments are discussed in the following subsections.
 
-#### 	BPAY Vendor Invoices
+### 	BPAY Vendor Invoices
 Vendor payment invoices can be created in various different pages. <br>
 The BPAY Finance utilities modification to capture BPAY details for your EFT payment have been added to:
 - **Accounts payable > Invoices > Tax invoice journal**
