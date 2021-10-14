@@ -55,6 +55,6 @@ If these Payment control mandatory fields are blank the invoice posting will err
 Second step is to pay the vendor invoices posted in previous step. Users can go to the **Vendor payment journal** page by navigating to **Accounts payable > Payments > Vendor payment journal**. <br>
 
 New Finance utilities BPAY field **Lodgement reference** has been added to Vendor payment proposal page. 
-Payments are already being grouped by standard by Payment ID, and with the BPAY modification the **Lodgement reference** is also used in the grouping.
+Standard D365 already groups payments by Payment ID, and with the BPAY modification the **Lodgement reference** is also used for additional grouping.
 
 **Lodgement reference** can be viewed on the **Payment** tab. The field is editable.
