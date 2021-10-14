@@ -101,7 +101,7 @@ The following setup is required.
 
 This number sequence Payment reference will be used when generating payments for a method of payment which has the auto payment reference checkbox selected.
 After the payment has been generated, the Payment reference number is reflected on: 
-- Header of the Finance Utilities [**Payment Advice**](#vendor-payment-advice) report
+- Header of the Finance Utilities [**Payment Advice**](#payment-advice-report) report
 -	Populated on the Payment reference field on the journal lines
 
 > Note: If the payment status is changed from Sent to None and the payment is generated again, a _new_ payment reference number is generated and replaces the old on the journal line. The payment advice when reprinted reflects the correct reference number
