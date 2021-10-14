@@ -53,7 +53,7 @@ The following fields have been added as part of the BPAY modification, but are _
 
 #### Company bank
 Users can access the Company's **Bank accounts** page by navigating to **Cash and bank management > Bank accounts > Bank accounts**.
-The following field have been added as part of the BPAY modification and can be for mapping in the GER:
+The following field have been added as part of the BPAY modification and can be used for mapping in the GER:
 -	**BPAY batch ID**. Available under **Additional identification** FastTab.
 
 #### 	Vendor bank account
