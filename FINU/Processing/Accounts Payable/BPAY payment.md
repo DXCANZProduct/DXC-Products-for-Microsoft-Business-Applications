@@ -34,6 +34,7 @@ Setup requirements are discussed in detail [here](../../Setup/ACCOUNTS%20PAYABLE
 Processing of the vendor invoices and payments are discussed in the following subsections.
 
 ### 	BPAY Vendor Invoices
+First step is to create and post the vendor invoices. <br>
 Vendor payment invoices can be created in various different pages. <br>
 The BPAY Finance utilities modification to capture BPAY details for your EFT payment have been added to:
 - **Accounts payable > Invoices > Tax invoice journal**
@@ -42,20 +43,18 @@ The BPAY Finance utilities modification to capture BPAY details for your EFT pay
 - **General ledger > Journal entries > General journals**
 - **Project management and accounting > Journals > Expense**
 
-Payment id is currently on the vendor invoicing forms and will be utilized for BPAY. New BPAY field 
-**Lodgement reference** has also been added.
+Payment id is currently on the vendor invoicing forms and will be utilized for BPAY. New BPAY field **Lodgement reference** has also been added.
 
 - **Payment id** is populated by MS from the Vendor’s Payment id. The field can be manually edited on the vendor invoice entry prior to posting the invoice
-- **Lodgement reference** is populated by DXC Finance Utilities by the vendor/third party bank account on the invoice. When changing to a different vendor bank account, the Lodgement reference will automatically update. The field can be manually edited on the vendor invoice entry prior to posting the invoice.
-The BPAY modification uses the method of payment control settings to validate for mandatory fields Payment id and Lodgement reference (if also flagged as mandatory).
+- **Lodgement reference** is populated by Finance Utilities by the vendor/third party bank account on the invoice. When changing to a different vendor bank account, the Lodgement reference will automatically update. The field can also be manually edited on the vendor invoice entry prior to posting the invoice.
 
+The BPAY modification uses the method of payment control settings to validate for mandatory fields Payment id and Lodgement reference (if also flagged as mandatory).
 If these Payment control mandatory fields are blank the invoice posting will error.
 
 ### BPAY Vendor Payments
-You can reach the VENDOR PAYMENT JOURNAL form by navigating to
-**ACCOUNTS PAYABLE > PAYMENTS > VENDOR PAYMENT JOURNAL**
+Second step is to pay the vendor invoices posted in previous step. Users can go to the **Vendor payment journal** page by navigating to **Accounts payable > Payments > Vendor payment journal**. <br>
 
-New BPAY field **Lodgement reference** has been added to Vendor payment proposal form. 
-Payments are already being grouped by MS on Payment Id, and with the BPAY modification the **Lodgement reference** is also used in the grouping.
+New Finance utilities BPAY field **Lodgement reference** has been added to Vendor payment proposal page. 
+Payments are already being grouped by standard by Payment ID, and with the BPAY modification the **Lodgement reference** is also used in the grouping.
 
 **Lodgement reference** can be viewed on the **Payment** tab. The field is editable.
