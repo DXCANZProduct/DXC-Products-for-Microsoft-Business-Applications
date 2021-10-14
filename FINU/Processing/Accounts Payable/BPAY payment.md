@@ -30,7 +30,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 The features as described in the following subsections are available to control the additional functionality for accounts payable.
 
 ## BPAY Payment
-Setup requirements are discussed in detail [BPAY payment setup](../../Setup/ACCOUNTS%20PAYABLE/BPAY%20payment.md). <br>
+Setup requirements are discussed in detail at [BPAY payment setup](../../Setup/ACCOUNTS%20PAYABLE/BPAY%20payment.md). <br>
 Processing of the vendor invoices and payments are discussed in the following subsections.
 
 ### 	BPAY Vendor Invoices
