@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Finance Utilities]
 audience: [Application User]
 # ms.devlang: 
-ms.reviewer: [helenho]
+ms.reviewer: [jdutoit2]
 ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -28,55 +28,17 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 ## BPAY Payment Processing
-
-The BPAY form is used to set up the additional fields needed between your Dynamics 365 environment and your BPAY account. 
-Within this form, you will set up the BPAY details for the BAPY reference account.
-
-### Setup BPAY payment
- 
-You can reach the METHODS OF PAYMENT form by navigating to
-#### 	Method of payment
-
-**ACCOUNTS PAYABLE > PAYMENT SETUP > METHODS OF PAYMENT**
-
-Enabling  **BPAY method of payment** updates the following:
--	Since Eclipse EFT formats will be deprecated in future, BPAY only supports Generic electronic formats. Generic electronic format is enabled and locked.
--	Payment control > Payment id is mandatory is enabled and locked
--	Payment attributes > Payment id is enabled and locked
-The following fields have been added as part of the BPAY modification, but are optional since not mandatory for all ANZ banks:
--	Payment control > Lodgement reference is mandatory
--	Payment attributes > Lodgement reference 
-
-#### Company bank
-You can reach the BANK ACCOUNTS form by navigating to
-**CASH AND BANK MANAGEMENT > BANK ACCOUNTS > BANK ACCOUNTS**
-The following field have been added as part of the BPAY modification and can be for mapping in the GER:
--	BPAY batch ID. Under Additional identification section.
-
-#### 	Vendor bank account
-You can reach the ALL VENDORS form by navigating to
-ACCOUNTS PAYABLE > VENDORS > ALL VENDORS
-The following fields have been added as part of the BPAY modification:
-- Biller code (length 10)
--	Lodgement reference (length 18)
-
-#### Data entities
-The new BPAY fields have been added to the applicable data entities:
-
-|    Field    |    Data entity   |    DFU field   |
-|-|-|-|
-|  PAY Batch id  |  Bank accounts  |  DFUBPAYBatchId  |
-|  Biller code |  Vendor bank accounts  |  DFUBillerCode  |
-|  Lodgement reference |  Vendor bank accounts  |  DFULodgementRef  |
-|  Validate lodgement reference is mandatory |  Vendor payment method  |  DFUValidateLodgementRefIsMandatory  |
-|  Lodgement reference attribute |  Vendor payment method  |  DFUAtrributeLodgementRefEnabled  |
+Setup requirements are discussed in detail [here](../../Setup/ACCOUNTS%20PAYABLE/BPAY%20payment.md).
+Processing of the vendor invoices and payments are discussed in the following subsections.
 
 #### 	BPAY Vendor Invoices
-*ACCOUNTS PAYABLE > INVOICES > TAX INVOICE JOURNAL
-ACCOUNTS PAYABLE > INVOICES > PENDING VENDOR INVOICES
-ACCOUNTS PAYABLE > INVOICES > TAX INVOICE REGISTER
-GENERAL LEDGER > JOURNAL ENTRIES > GENERAL JOURNALS
-PROJECT MANAGEMENT AND ACCOUNTING > JOURNALS > EXPENSE*  
+Vendor payment invoices can be created in various different pages. <br>
+The BPAY Finance utilities modification to capture BPAY details for your EFT payment have been added to:
+- **Accounts payable > Invoices > Tax invoice journal**
+- **Accounts payable > Invoices > Pending vendor invoices**
+- **Accounts payable > Invoices > Tax invoice register**
+- **General ledger > Journal entries > General journals**
+- **Project management and accounting > Journals > Expense**
 
 Payment id is currently on the vendor invoicing forms and will be utilized for BPAY. New BPAY field 
 **Lodgement reference** has also been added.
