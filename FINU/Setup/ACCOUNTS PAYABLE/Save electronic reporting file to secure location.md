@@ -125,5 +125,5 @@ Select **New** on the Action Pane to create an **Electronic reporting destinatio
 On the selected **Method of payment**, enable **Generic electronic Export format**, and in the **Export format configuration** field select the **Reference** from _step 3_.
 
 ## Processing
-Vendor payment processing using the above method of payment is discussed at [Processing](../../Processing/Accounts%20Payable/Save%20Electronic%20reporting%20file%20to%20secure%20location.md)
+Vendor payment processing using the above method of payment is discussed at [Processing](../../Processing/Accounts%20Payable/Save%20electronic%20reporting%20file%20to%20secure%20location.md)
 
