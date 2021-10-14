@@ -39,7 +39,7 @@ Processing of the sundry vendor invoices and payments are discussed in the follo
 
 ### Sundry Vendor invoices
 
-To create a new sundry vendor invoice journal, go to **Accounts payable > Invoices > Invoice journal**, create the new invoice journal header as per standard D365 and press the Lines button to begin entering the invoice/s. Selection of the ]**Sundry Vendor**](../../Setup/ACCOUNTS%20PAYABLE/Sundry%20payment.md#sundry-vendor) created in the setup will require the addition of details associated with the Payment of each Vendor (on each Invoice line):
+To create a new sundry vendor invoice journal, go to **Accounts payable > Invoices > Invoice journal**, create the new invoice journal header as per standard D365 and press the Lines button to begin entering the invoice/s. Selection of the [**Sundry Vendor**](../../Setup/ACCOUNTS%20PAYABLE/Sundry%20payment.md#sundry-vendor) created in the setup will require the addition of details associated with the Payment of each Vendor (on each Invoice line):
 
 |    Field  |    Description   |
 |-|-|
