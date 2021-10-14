@@ -63,5 +63,5 @@ This function can be used to pay more than one sundry invoice; it breaks down th
 From the **General** tab it is possible to review the Sundry Vendor Name, Address, BSB and Account Number to be paid. <br>
 Selection of the **Generate payments** button will create a payment for each payment journal line using the sundry bank details. <br>
 
-The Vendor **Payment advice** report also uses the Bank account number and BSB from the sundry fields, and not from the Vendor. <br>
-> Note: Setup the **Payment advice** report, as per [Payment advice report](../../Setup/ACCOUNTS%20PAYABLE/Vendor%20payments.md#payment-advice-report), to use the applicable Finance utilities report.
+The Finance utilities **Payment advice** report also uses the Bank account number and BSB from the sundry fields, and not from the Vendor. <br>
+> Note: Setup the [**Payment advice**](../../Setup/ACCOUNTS%20PAYABLE/Vendor%20payments.md#payment-advice-report) report to use the applicable Finance utilities report.
