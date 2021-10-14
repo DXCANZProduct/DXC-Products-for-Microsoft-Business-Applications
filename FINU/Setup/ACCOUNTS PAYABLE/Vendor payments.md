@@ -40,15 +40,15 @@ Within this form, you will set up the details regarding the payment of the vendo
 
 Some improvements to the Accounts Payable EFT payment processing have been created, these include: 
 - The following only applies to vendor payments with a method of payment using the Finance utilities EFT formats **
-  - Balance Line, Totaling functions on the EFT file.
-  -	Vendor bank account name used on EFT file instead of Vendor name.
-  -	EFT file name generation 
+  - **Balance line** on the EFT file.
+  -	**Vendor bank account name** used on EFT file instead of Vendor name.
+  -	**EFT file name** generation 
 
 - The following applies to all method of payment format:
-  -	Auto generating a Payment reference for each EFT payment which can be traced in Vendor’s Bank Statement, AX Bank Transactions/Reconciliation and Payment Advice.
-  -	Payment advice report, a specific EFT Remittance Advice report with additional details.
+  -	Auto generating a **Payment reference** for each EFT payment which can be traced in Vendor’s Bank Statement, AX Bank Transactions/Reconciliation and Payment Advice.
+  -	**Payment advice** report, a specific EFT Remittance Advice report with additional details.
 
-## EFT file Balance line
+## Balance line
 
 > Note: Only applicable to custom Finance Utilities EFT formats **
 
@@ -75,20 +75,16 @@ This can be set per company bank account. To open the the **Bank accounts** page
 -	Highlight the **Bank Account** from which EFT payment is drawn.
 -	Expand the Payment Management FastTab and select whether the EFT file should **Use vendor bank name**.
 
-## Auto generation of payment reference
-This functionality populates the Payment Reference field in Accounts Payable Payment Journal automatically with a unique number on generation of the EFT payment file. Each payment line is unique regardless of the number of vendors during generation via EFT method of payment.
+## Automatic generation of payment reference
+This functionality populates the **Payment reference** field in the Accounts payable Payment journal line automatically with a unique number when generating the EFT payment file. Each payment line is unique regardless of the number of vendors during generation via EFT method of payment.
 
-**ACCOUNTS PAYABLE > SETUP > PAYMENT SETUP > METHODS OF PAYMENT**
+The following setup is required.
+- On the **Methods of payment** page, set **Auto payment reference number** to _Yes_.
+- On the **Accounts payable parameters** page, select the **Number sequences** tab, and set a number sequence for **Payment reference**.
 
--	Auto payment reference number = Yes
-
-**ACCOUNTS PAYABLE > SETUP > ACCOUNTS PAYABLE PARAMETERS**
-
-- Number sequences > Payment reference
-
-This number sequence “Payment Reference” will be used when generating payments for a method of payment which has the auto payment reference checkbox selected.
+This number sequence Payment reference will be used when generating payments for a method of payment which has the auto payment reference checkbox selected.
 After the payment has been generated:
--	The Payment Reference number is reflected on the header of DXC Finance Utilities Payment Advice
+-	The Payment reference number is reflected on the header of Finance Utilities [**Payment Advice**]() report
 -	Payment Reference field is populated on the journal lines
 -	If the payment status is changed from Sent to None and the payment is generated again, a new payment reference number is generated and replaces the old on the journal line.
 -	The payment advice when reprinted reflects the correct reference number
