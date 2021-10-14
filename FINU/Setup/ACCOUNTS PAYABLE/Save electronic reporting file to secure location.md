@@ -80,9 +80,9 @@ Select **Save** and the applicable **Setup** will be displayed as per the **Conn
 | **Host** |	Specify the Host for the SFTP site <br> Note: SFTP:// is not required	||
 | **Path**	| Enter the path where the files are to be saved on the SFTP site. |	/GER_ANZ|
 | **Port**	| Specify the Port for the SFTP site |	22 |
-| **Enable TLS** |	Select to enable SFTP over TLS | -	Yes: SFTP over TLS <br> -	No: SFTP|
+| **Enable TLS** |	Select to enable SFTP over TLS | • Yes: SFTP over TLS <br> •	No: SFTP|
 | **User**	| Specify the **Username** used for authentication to the SFTP site	||
-| **Credential type**	| Select applicable Credential type for SFTP site |	-	Key vault <br> - Database |
+| **Credential type**	| Select applicable Credential type for SFTP site |	•	Key vault <br> • Database |
 | **Password**	| Enabled when Credential type is set to _Database_. Specify the Password used for authentication to the SFTP site. *Note: this is encrypted and displayed as •••••••••• within the form.* ||
 | **Key vault certificate** |	Enabled when Credential type is set to _Key vault_. | Select applicable Key vault certificate.	|
 
@@ -96,12 +96,12 @@ Setup the **Document type** and assign the **Electronic reporting export connect
 |-|-|-|
 |  Type  |  Enter the type  |  Example GER  |
 |  Name  |  Enter a name for the document type  |  |
-|  Class  |  Select Attach file  |  -	Attach file <br> -	Attach URL <br> -	Simple note      |
-|  Group  |  Select  File   |  -	Note <br> -	File <br> -	Image <br> - Document <br> - Worksheet <br> - URL         |
-|  Category  |  Select a Category  |  -	None         |
-|  Location SharePoint Address |  Not used, select any Not used  |  - Azure storage <br> - Database <br> - SharePoint         |
+|  Class  |  Select Attach file  |  •	Attach file <br> •	Attach URL <br> •	Simple note      |
+|  Group  |  Select  File   |  • Note <br> • File <br> • Image <br> • Document <br> • Worksheet <br> • URL         |
+|  Category  |  Select a Category  |  •	None         |
+|  Location SharePoint Address |  Not used, select any Not used  |  • Azure storage <br> • Database <br> • SharePoint         |
 |  Remove  |  Document and physical file  |           |
-|  Ask for confirmation  |  Should confirmation be requested priori to removing the file  |  - Yes <br> - No         |
+|  Ask for confirmation  |  Should confirmation be requested priori to removing the file  |  • Yes <br> • No |
 |  Electronic report export connection  |  Select the Electronic reporting export connection setup in step 1 |  Example ANZ_FTP         |
 
 ### Step 3 - Electronic reporting destination
@@ -116,10 +116,10 @@ Setup Electronic reporting destination for selected GER and allocate Document ty
 |  Name |  Enter name for the destination  |   |
 |  File component name |  Select  PaymentFile   |   PaymentFile   |
 |  Settings |  |  |
-|  Stop processing on failure  |  If enabled and there are errors when saving the file to location, vendor payment processing  Generate payment  will create a file and attach to the job. The Payment status will remain  None   |  -	Yes <br> -	No          |
+|  Stop processing on failure  |  If enabled and there are errors when saving the file to location, vendor payment processing  Generate payment  will create a file and attach to the job. The Payment status will remain  None   |  •	Yes <br> •	No          |
 |  Click Settings button and select Archive destination |  |  |
-|  Enabled  |  Enable the Archive destination  |  - Yes <br> - No          |
-|  Save in job archive  |  Enable saving  |  - Yes <br> - No          |
+|  Enabled  |  Enable the Archive destination  |  • Yes <br> • No          |
+|  Save in job archive  |  Enable saving  |  • Yes <br> • No          |
 |  Type  |  Select the Document type created in step 2  |  Example GER          |
 
 ### Step 4 -	Method of payment
