@@ -51,4 +51,4 @@ The below fields have been added to the existing Vendor approval fields. When en
 -	Expiration date
 
 **Vendor:**
--	Payment id (existing field used for BPAY)
+-	Payment id (existing field used for Finance utilities BPAY)
