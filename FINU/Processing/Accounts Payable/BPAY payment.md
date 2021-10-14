@@ -33,7 +33,7 @@ The features as described in the following subsections are available to control 
 Setup requirements are discussed in detail at [BPAY payment setup](../../Setup/ACCOUNTS%20PAYABLE/BPAY%20payment.md). <br>
 Processing of the vendor invoices and payments are discussed in the following subsections.
 
-### 	BPAY Vendor Invoices
+### 	BPAY Vendor invoices
 First step is to create and post the vendor invoices. <br>
 Vendor payment invoices can be created in various different pages. <br>
 The BPAY Finance utilities modification to capture BPAY details for your EFT payment have been added to:
@@ -51,7 +51,7 @@ Payment id is currently on the vendor invoicing forms and will be utilized for B
 The BPAY modification uses the method of payment control settings to validate for mandatory fields Payment id and Lodgement reference (if also flagged as mandatory).
 If these Payment control mandatory fields are blank the invoice posting will error.
 
-### BPAY Vendor Payments
+### BPAY Vendor payments
 Second step is to pay the vendor invoices posted in previous step. Users can go to the **Vendor payment journal** page by navigating to **Accounts payable > Payments > Vendor payment journal**. <br>
 
 New Finance utilities BPAY field **Lodgement reference** has been added to Vendor payment proposal page. 
