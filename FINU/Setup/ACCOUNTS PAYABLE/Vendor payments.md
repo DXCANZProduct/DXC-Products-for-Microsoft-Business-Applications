@@ -83,15 +83,13 @@ The following setup is required.
 - On the **Accounts payable parameters** page, select the **Number sequences** tab, and set a number sequence for **Payment reference**.
 
 This number sequence Payment reference will be used when generating payments for a method of payment which has the auto payment reference checkbox selected.
-After the payment has been generated:
--	The Payment reference number is reflected on the header of Finance Utilities [**Payment Advice**]() report
--	Payment Reference field is populated on the journal lines
--	If the payment status is changed from Sent to None and the payment is generated again, a new payment reference number is generated and replaces the old on the journal line.
--	The payment advice when reprinted reflects the correct reference number
+After the payment has been generated, the Payment reference number is reflected on: 
+- Header of the Finance Utilities [**Payment Advice**](#vendor-payment-advice) report
+-	Populated on the Payment reference field on the journal lines
 
+> Note: If the payment status is changed from Sent to None and the payment is generated again, a _new_ payment reference number is generated and replaces the old on the journal line. The payment advice when reprinted reflects the correct reference number
 
-
-### Vendor payment advice
+## Vendor payment advice
 A custom-built report has been developed to provide a remittance advice to vendors upon processing a payment run. The report will show the vendor bank account details where the payment is deposited, as well as the invoices numbers paid, what amount and what discount applied. This remittance advice report works in conjunction with the **Smart Send** Emailing functionality. The report is available when Payment status is Sent.
 
 Users can select to use the custom-build report by navigating to **Accounts payable > Setup > Forms setup**. <br>
@@ -102,25 +100,26 @@ If feature 'Enable batch processing for bank payment advice reports' is:
 - Disabled - user will be able to select report **ECL_BankPaymAdviceVend.Report**
 - Enabled - user will be able to select report **ECL_BankPaymAdviceVendV2.Report**
 
-The Payment advice can be used in conjunction with sending via Email to the Vendor. Access to the new form is available from;
--	Accounts payable Payment Journal (from Accounts Payable > Payments > Payment journal – when set as Sent the journal line is available for printing
--	From the Posted payment journal
--	From the Accounts Payable Vendor transaction Enquiry
+The Payment advice report can be used in conjunction with sending via Email to the Vendor. Access to the new form is available from;
+-	Accounts payable payment journal (from Accounts Payable > Payments > Payment journal – when set as Sent the journal line is available for printing
+-	Vendor's transactions
+-	Payment history on the vendor
 
-### EFT File name generation
+## EFT file name generation
 This modification is to automatically populate EFT file name based on the number sequence pattern.
 File information fields will be automatically filled with the file name that has following pattern:
-“BankAccountIdNumberSequence.FileFormat. 
+_BankAccountId_**NumberSequence**.FileFormat
 
-**ACCOUNTS PAYABLE > SETUP > PAYMENT SETUP > METHODS OF PAYMENT**
+1. Set the **Number sequence** in the **Accounts payable parameters**
+- On the Number sequence FasTab, set a sequence for **EFT file name**
+
+2. Set whether the method of payment should automatically generate a filename for the EFT file. To open the the **Methods of payment** page, go to **Accounts payable > Setup > Payment setup > Methods of payment**.
 -	Highlight applicable method of payment
--	Expand EFT Fast tab and click Enable file parameters checkbox
--	Enter file format, example txt
+-	Expand **EFT** FastTab and select **Enable file parameters**.
+-	Enter **File format**, example txt
 
-**ACCOUNTS PAYABLE > SETUP > ACCOUNTS PAYABLE PARAMETERS**
--	Number sequences > EFT file name
-
-### Payments
-Added Vendor BSB and Vendor Account on the right for each Vendor payment. This could be used for reconciling payment details prior to generating the payment file.
-
-
+## Payments report
+When creating a **Vendor payment journal**, it can be useful to print the **Payments** report to reconcile vendor bank details, before generating the EFT file.
+Finance utilities has added the following fields on the right for each Vendor payment line:
+- Vendor BSB
+- Vendor account
