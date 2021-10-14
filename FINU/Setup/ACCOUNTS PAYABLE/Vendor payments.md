@@ -123,3 +123,5 @@ When creating a **Vendor payment journal**, it can be useful to print the **Paym
 Finance utilities has added the following fields on the right for each Vendor payment line:
 - Vendor BSB
 - Vendor account
+
+No setup is required to enable the additional fields on the report.
