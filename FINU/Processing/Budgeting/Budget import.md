@@ -38,19 +38,14 @@ Setup requirements are discussed in detail at [Budget import setup](../../Setup/
 Importing the budget file will be discussed in the following subsections.
 
 ### Importing the budget file
+The **Budget register entries** page is used to import the csv file into your D365 environment. 
+Users can reach the **Budget register entries** page by navigating to **Budgeting > Budget register entries**.
 
-The BUDGET REGISTER ENTRIES form is used to import the csv file into your Dynamics 365 environment. 
-
-You can reach the BUDGET REGISTER ENTRIES form by navigating to
-
-**BUDGETING > BUDGET REGISTER ENTRIES**
-1.	Select **New** to create a new record.
-2.	Update the **Default Date** (if required)
-3.	Select the **Budget Model and Budget Code**
-4.	Once the Budget entry header is complete, select **++Import Lines** from the Budget account entries fast tab
-5.	Select **Browse** to search for the file to be imported
-6.	Specify the **Number of Months** that will be imported
-7.	Select **Update Existing** to update existing budget entries.
-
-***Note:*** When selected, the new value imported will be added to the value already in the budget lines.  To import the overwrite the value previously imported, delete the budget lines and re-import. 
-8.	Validate the imported data, then select **Update budget balances**
+-	Select **New** to create a new record.
+-	Update the **Default Date** (if required).
+-	Select the **Budget model** and **Budget code**.
+-	Once the Budget entry header is complete, select **++Import Lines** from the Budget account entries FastTab.
+-	Select **Browse** to search for the file to be imported.
+-	Specify the **Number of Months** that will be imported - defaults from **Budget utilities parameters**.
+-	Select **Update Existing** to update existing budget entries. When selected to update existing, the new value imported will be added to the value already in the budget lines.  To overwrite values previously imported, delete the budget lines and re-import. 
+- Validate the imported data, then select **Update budget balances**.
