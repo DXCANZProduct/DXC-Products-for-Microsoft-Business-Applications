@@ -28,7 +28,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Budgeting functionality
-The following subsections describe the setup used to control the additional Finance utilities functionality for budgeting.
+The following subsections describe the processing requirement for the additional Finance utilities functionality for budgeting.
 
 ## Budget import
 Finance utilities includes the ability to import a csv budget file with monthly columns.
