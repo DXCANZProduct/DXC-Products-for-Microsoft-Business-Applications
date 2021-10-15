@@ -81,7 +81,7 @@ AP > Payment setup > Methods of payment
 If **Enable file parameters** is set to _Yes_ on your Method of Payment, the **File format** requires a value.
 
 
-### 	AP Payment advice – Vendor bank details missing
+### 	Payment advice report – Vendor bank details missing
 *Issue:*
 AP Payment advice doesn't show Vendor bank details:
 
