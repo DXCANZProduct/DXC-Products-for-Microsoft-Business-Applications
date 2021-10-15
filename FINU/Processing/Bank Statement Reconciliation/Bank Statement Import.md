@@ -39,7 +39,7 @@ Where the selected statement format is marked as **Customised format** the follo
 |-                 |-                                                              |-
 | **From date**    | Select transactions >= this date                              | Calendar
 | **To date**      | Select transactions <= this date                              | Calendar
-| **Date**         | Select which date to use when **Mark as new** transactions are posted | •	Today’s date <br> •	Statement Transaction Date - _To date_ of the Bank statement header)
+| **Date**         | Select which date to use when **Mark as new** <br> transactions are posted | •	Today’s date <br> •	Statement Transaction Date <br> (_To date_ of the Bank statement header)
 
 > Note: Where the bank statement file contains transactions related to multiple dates and multiple bank accounts (i.e. the file is imported using the option **Import statement for multiple bank accounts in all legal entities**, separate bank statement records get created in D365 for each bank account. 
  
