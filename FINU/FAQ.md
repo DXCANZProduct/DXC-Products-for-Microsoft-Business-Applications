@@ -33,12 +33,12 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 **Where can I find contact information for support?**
    
-Support contact details can be located on the Finance Utilities parameters form on the About tab.
+Support contact details can be located on the **Financial utilities parameters** page on the **About** tab. Users can navigate to **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters**.
   
- **Where can I identify the installed version of the Finance Utilities module**
+ **Where can I identify the installed version of the Finance utilities module**
 
-Navigate to **Settings > About**
-A list of Loaded Packages and their models will be displayed.  Search for and expand DXCFinanceUtilities. The version information will be displayed on the right (i.e. DXC Finance Utilities 10.0.240.2019443 (isv))
+On the Navigation bar, select **Settings > About**
+A list of installed models will be displayed on the **Version** tab.  Scroll to **DXC Finance Utilities**. The version information will be displayed on the right (i.e. DXC Finance Utilities **10.0.240.2019443** (isv))
 
 
 ## 	Troubleshooting
@@ -48,20 +48,12 @@ A list of Loaded Packages and their models will be displayed.  Search for and ex
 Bank statement doesn't import.
  
 *Resolution:*
-Usually the issue is with the bank account number or date (import date doesn't match file's date).
-To check bank account:
-Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format
-Please compare your setup to similar format in our latest Product test environment: 
-*Current Test Environments in DXC Eclipse ANZ IP*
+To check bank account mapping, navigate to Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format
 Things to check:
-
-1.	'Field delimiter' and 'Record code field position' (if applicable). Else the fields can't be extracted and matched.
-
-2.	Custom format > Lines: Bank account number. Compare:
-
-Import file's bank account: Does it contain bsb+account or just account
-Bank accounts: Bank account number field only (not bsb): Does it match to import file's bank account number?
-Bank statement format > Lines > Bank account number. If import file contains bsb+account and your bank setup is split into bsb and bank account number fields, set up appropriate start position.
+1.	**Field delimiter** and **Record code field position** (if applicable). Else the fields can't be extracted and matched.
+2.	**Custom format > Lines: Bank account number**. Compare:
+- Import file's bank account: Does it contain bsb+account or just account?
+- Company bank accounts: Bank account number field only (not bsb): Does it match to import file's bank account number? If import file contains bsb+account and your bank setup is split into bsb and bank account number fields, set up appropriate start position on **Custom format > Lines**.
 
 ### 	Generating AP payment - AuthenticationFailed
 *Error:*
@@ -83,10 +75,10 @@ Signature did not match. String to sign used was r 2019-07-02T04:48:06Z 2019-07-
 <br>
 </Error>
 <br>
+
 *Resolution:*
 AP > Payment setup > Methods of payment
-
-If 'Enable file parameters' is Yes on your Method of Payment, the 'File format' requires a value:
+If **Enable file parameters** is set to _Yes_ on your Method of Payment, the **File format** requires a value.
 
 
 ### 	AP Payment advice – Vendor bank details missing
@@ -94,25 +86,14 @@ If 'Enable file parameters' is Yes on your Method of Payment, the 'File format' 
 AP Payment advice doesn't show Vendor bank details:
 
 *Resolution:*
-If a payment advice is generated prior to installing DXC Finance Utilities, the payment advice defaults to standard D365 report.
-
-To fix via Interface (planned for next release): Update print management (AP > Setup > Forms > Form setup)  to: ECL_BankPaymAdviceVend.Report 
-
-If fixing via Interface doesn’t work, a developer can fix in SQL table PrintMgmtReportFormat.
-Payment advice uses default D365 payment advice with records where System = 0
-
-Run select * from PrintMgmtReportFormat
-
-Find the below records.
-
-Update Green circle to 1
+Select the Finance utilities report on [Payment advice](Setup/ACCOUNTS%20PAYABLE/Vendor%20payments.md#payment-advice-report) report's Print management.
 
 ### 	Saving to secure location
 
-If there is an error saving the file to secure location and Stop processing on failure was enabled the processing will error and Payment status remains None. Example error ‘The process stopped because the delivery of file ‘%’ to the destination failed. The payments cannot be generated.’
-Check setup on the applicable Electronic reporting export connections
+If there is an error saving the file to secure location and **Stop processing on failure** was enabled on **Electronic reporting destination**, the processing will error and **Payment status** remains _None_. Example error: The process stopped because the delivery of file ‘%’ to the destination failed. The payments cannot be generated. <br>
+Check setup on the applicable [**Electronic reporting export connections**](Setup/ACCOUNTS%20PAYABLE/Save%20electronic%20reporting%20file%20to%20secure%20location.md)
 
 ### 	Number sequences are not available to setup
 
-To load all new number sequence references click the button:
-<br> Organization administration > Number sequences > Number sequences > Manual cleanup > Reset </br>
+To load all new number sequence references click the button **Reset** on: <br>
+Organization administration > Number sequences. Select **Manual cleanup > Reset** on the Action Pane.
