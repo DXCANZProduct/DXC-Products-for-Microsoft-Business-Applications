@@ -36,8 +36,8 @@ The example below is an example of a budget file to be imported.  The file must 
 From column (A), the column details are:
 
 -	Main Account 
--	Dimension 1 - Setup in **Budget utilities parameters** **Dimension format**
--	Dimension 2 - Setup in **Budget utilities parameters** **Dimension format**
+-	Dimension 1 - Setup in Budget utilities parameters's Dimension format
+-	Dimension 2 - Setup in Budget utilities parameters's Dimension format
 -	Account type - Revenue or Expense
 -	Currency
 -	Comment
