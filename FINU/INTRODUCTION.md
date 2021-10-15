@@ -85,8 +85,8 @@ Finance utilities minimises the manual actions required for reconciling bank acc
 
 The Sundry Payment modification gives the user the ability to enter a supplier name and address on an individual invoice allowing these details to be used on a cheque payments, as well as one-off BSB and Account Number for EFT Payments. Therefore, many one- time vendor invoices can be stored on one sundry vendor record but allowing for separate payments without a change to the vendor record information.  This also makes it possible to pay all sundry invoices in one payment proposal.
 
-- Sundry setup
-- Sundry processing
+- [Sundry setup](Setup/ACCOUNTS%20PAYABLE/Sundry%20payment.md)
+- [Sundry processing](Processing/Accounts%20Payable/Sundry%20payment.md)
 
 ## Accounts Payable - BPAY
 
@@ -96,19 +96,31 @@ When invoice transactions are created for vendors with a BPAY method of payment,
 
 Within the Vendor payment proposal, grouping also occurs for the new BPAY field.
 
-- BPAY setup
-- BPAY processing
+- [BPAY setup](Setup/ACCOUNTS%20PAYABLE/BPAY%20payment.md)
+- [BPAY processing](Processing/Accounts%20Payable/BPAY%20payment.md)
 
 ## Accounts Payable - Payment advice report
 
 A custom-built report has been developed to provide a Payment advice to vendors upon processing an EFT payment run. The report will show the vendor bank account details where the payment is deposited as well as the invoices numbers paid, what amount and what discount applied. This remittance advice report works in conjunction with the Smart Send function.
 
-- Vendor payments setup
+- [Vendor payments setup](Setup/ACCOUNTS%20PAYABLE/Vendor%20payments.md)
+
+## Accounts Payable - Vendor bank account changes workflow
+
+Finance utilities have added additional fields to Vendor approval on the **Accounts payable parameters**. This provides companies the option to submit changes to these fields to the standard vendor approval workflow.
+- [Vendor bank account changes worklow setup](Setup/ACCOUNTS%20PAYABLE/Vendor%20bank%20account%20changes%20workflow.md)
+
+## Accounts Payable - Save electronic reporting file to secure location
+
+Modification allows users to automatically save the electronic reporting file to a secure location like ftp, ftps, sftp or azure blob.
+- [Save electronic reporting file to secure location setup](Setup/ACCOUNTS%20PAYABLE/Save%20electronic%20reporting%20file%20to%20secure%20location.md)
+- [Save electronic reporting file to secure location processing](Processing/Accounts%20Payable/Save%20electronic%20reporting%20file%20to%20secure%20location.md)
 
 ## Budget import
 
 Ability to import budget file with monthly columns.
 The modification gives the user the ability to set the budget import file's format and financial dimensions included in the file.
 
-- Budget import setup
-- Budget import processing
+- [Budget import setup](Setup/BUDGETING/Budget%20import.md)
+- [Budget import processing](Processing/Budgeting/Budget%20import.md)
+- [Example file format](Processing/Budgeting/Example%20file%20format.md)
