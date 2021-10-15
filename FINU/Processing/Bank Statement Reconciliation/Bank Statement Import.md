@@ -51,6 +51,6 @@ When a bank statement (BAI2/NAI/BRS/Flat file) is imported, statement lines will
 3.	If **Import statement for multiple bank accounts in all legal entities** is enabled in the import bank statement screen, the **Bank account number** in the bank statement line has to match the bank account number of one of the bank accounts in bank master in any of the legal entities. <br>
 
 In addition, where Import statement for multiple bank accounts in all legal entities is enabled, and if D365 finds multiple bank accounts in same/different legal entities with the same bank account number while importing the statement, following order of priority is applied: 
-1.	Bank accounts with the same **Bank account number** in the same D365 entity in which user is importing the bank statement, system imports the bank statement to the first identified bank account record. 
+1.	Bank accounts with the same Bank account number in the same D365 entity in which user is importing the bank statement, system imports the bank statement to the first identified bank account record. 
 2.	If the bank account exists within multiple D365 entities, the bank statement is imported into the bank account in the D365 entity from which user is importing the bank statement. If this bank account is not in the entity in which user is importing the bank statement, system imports the bank statement to the first identified bank account record 
 
