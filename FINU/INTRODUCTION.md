@@ -71,15 +71,15 @@ Matching rules can be executed either during or after the import, to automatical
 Finance utilities minimises the manual actions required for reconciling bank account statement(s) with bank transactions processed in Dynamics 365FO. 
 
 <ins> **Setup** </ins>
-- Financial utilities parameters
-- Bank statement format
-- Populate accounts payable document number
-- Bank reconciliation matching rules
+- [Financial utilities parameters](Setup/CASH%20AND%20BANK%20MANAGEMENT/Finance%20utilities%20parameters.md)
+- [Bank statement format](Setup/CASH%20AND%20BANK%20MANAGEMENT/Bank%20statement%20format.md)
+- [Populate accounts payable document number](Setup/CASH%20AND%20BANK%20MANAGEMENT/Populate%20account%20payable%20payment%20document%20number.md)
+- [Bank reconciliation matching rules](Setup/CASH%20AND%20BANK%20MANAGEMENT/Bank%20reconciliation%20matching%20rules.md)
 
 <ins> **Processing** </ins>
-- Bank statement import
-- Bank reconciliation worksheet
-- Reports
+- [Bank statement import](Processing/Bank%20Statement%20Reconciliation/Bank%20statement%20import.md)
+- [Bank reconciliation worksheet](Processing/Bank%20Statement%20Reconciliation/Bank%20reconciliation%20worksheet.md)
+- [Reports](Processing/Bank%20Statement%20Reconciliation/Cash%20and%20bank%20management%20reports.md)
 
 ## Accounts Payable - Sundry
 
