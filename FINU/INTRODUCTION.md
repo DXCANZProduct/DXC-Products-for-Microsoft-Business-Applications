@@ -70,9 +70,23 @@ Matching rules can be executed either during or after the import, to automatical
  
 Finance utilities minimises the manual actions required for reconciling bank account statement(s) with bank transactions processed in Dynamics 365FO. 
 
+<ins> **Setup** </ins>
+- Financial utilities parameters
+- Bank statement format
+- Populate accounts payable document number
+- Bank reconciliation matching rules
+
+<ins> **Processing** </ins>
+- Bank statement import
+- Bank reconciliation worksheet
+- Reports
+
 ## Accounts Payable - Sundry
 
 The Sundry Payment modification gives the user the ability to enter a supplier name and address on an individual invoice allowing these details to be used on a cheque payments, as well as one-off BSB and Account Number for EFT Payments. Therefore, many one- time vendor invoices can be stored on one sundry vendor record but allowing for separate payments without a change to the vendor record information.  This also makes it possible to pay all sundry invoices in one payment proposal.
+
+- Sundry setup
+- Sundry processing
 
 ## Accounts Payable - BPAY
 
@@ -82,11 +96,19 @@ When invoice transactions are created for vendors with a BPAY method of payment,
 
 Within the Vendor payment proposal, grouping also occurs for the new BPAY field.
 
+- BPAY setup
+- BPAY processing
+
 ## Accounts Payable - Payment advice report
 
 A custom-built report has been developed to provide a Payment advice to vendors upon processing an EFT payment run. The report will show the vendor bank account details where the payment is deposited as well as the invoices numbers paid, what amount and what discount applied. This remittance advice report works in conjunction with the Smart Send function.
+
+- Vendor payments setup
 
 ## Budget import
 
 Ability to import budget file with monthly columns.
 The modification gives the user the ability to set the budget import file's format and financial dimensions included in the file.
+
+- Budget import setup
+- Budget import processing
