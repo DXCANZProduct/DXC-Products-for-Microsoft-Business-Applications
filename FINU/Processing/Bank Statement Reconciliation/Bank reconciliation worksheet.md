@@ -88,12 +88,12 @@ If the field **Extended financial details for new transactions** has been set on
 
 |   **Heading**    |   **Field**   |   **Description**   |
 |-|-|-|
-|   **OFFSET ACCOUNT**  |   Offset company   |  Required company selection  |
-|  |  Offset account type  |   Usually set to  **Ledger**   |
+|   **Offset account**  |   Offset company   |  Required company selection  |
+|  |  Offset account type  |   Usually set to  **Ledger**, other options include Customer, Vendor and Bank   |
 |  |  Offset account number  |  Main account and dimensions  |
 |  |  Description  |  Transaction description (optional)  |
-|   **BANK**  |  Bank transaction type  |  Select bank transaction type (optional)  |
-|   **TAX**   |  GST sales tax group  |  Sales tax group (optional)  |
+|   **Bank**  |  Bank transaction type  |  Select bank transaction type (optional)  |
+|   **Tax**   |  GST sales tax group  |  Sales tax group (optional)  |
 |  |  Item sales tax group  |  Select Item tax group (optional)  |
 
 ### Mark as reconciled
