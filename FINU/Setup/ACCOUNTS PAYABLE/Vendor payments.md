@@ -47,6 +47,7 @@ Some improvements to the Accounts Payable EFT payment processing have been creat
 - The following applies to all method of payment format:
   -	Auto generating a **Payment reference** for each EFT payment which can be traced in Vendor’s Bank Statement, AX Bank Transactions/Reconciliation and Payment Advice.
   -	**Payment advice** report, a specific EFT Remittance Advice report with additional details.
+  -	**Payments** report, additional fields.
 
 ## Balance line
 
@@ -75,6 +76,22 @@ This can be set per company bank account. To open the the **Bank accounts** page
 -	Highlight the **Bank Account** from which EFT payment is drawn.
 -	Expand the Payment Management FastTab and select whether the EFT file should **Use vendor bank name**.
 
+## EFT file name generation
+
+> Note: Only applicable to custom Finance Utilities EFT formats **
+
+This modification is to automatically populate EFT file name based on the number sequence pattern.
+File information fields will be automatically filled with the file name that has following pattern:
+_BankAccountId_**NumberSequence**.FileFormat
+
+1. Set the **Number sequence** in the **Accounts payable parameters**
+- On the Number sequence FasTab, set a sequence for **EFT file name**
+
+2. Set whether the method of payment should automatically generate a filename for the EFT file. To open the the **Methods of payment** page, go to **Accounts payable > Setup > Payment setup > Methods of payment**.
+-	Highlight applicable method of payment
+-	Expand **EFT** FastTab and select **Enable file parameters**.
+-	Enter **File format**, example txt
+
 ## Automatic generation of payment reference
 This functionality populates the **Payment reference** field in the Accounts payable Payment journal line automatically with a unique number when generating the EFT payment file. Each payment line is unique regardless of the number of vendors during generation via EFT method of payment.
 
@@ -84,12 +101,12 @@ The following setup is required.
 
 This number sequence Payment reference will be used when generating payments for a method of payment which has the auto payment reference checkbox selected.
 After the payment has been generated, the Payment reference number is reflected on: 
-- Header of the Finance Utilities [**Payment Advice**](#vendor-payment-advice) report
+- Header of the Finance Utilities [**Payment Advice**](#payment-advice-report) report
 -	Populated on the Payment reference field on the journal lines
 
 > Note: If the payment status is changed from Sent to None and the payment is generated again, a _new_ payment reference number is generated and replaces the old on the journal line. The payment advice when reprinted reflects the correct reference number
 
-## Vendor payment advice
+## Payment advice report
 A custom-built report has been developed to provide a remittance advice to vendors upon processing a payment run. The report will show the vendor bank account details where the payment is deposited, as well as the invoices numbers paid, what amount and what discount applied. This remittance advice report works in conjunction with the **Smart Send** Emailing functionality. The report is available when Payment status is Sent.
 
 Users can select to use the custom-build report by navigating to **Accounts payable > Setup > Forms setup**. <br>
@@ -104,19 +121,6 @@ The Payment advice report can be used in conjunction with sending via Email to t
 -	Accounts payable payment journal (from Accounts Payable > Payments > Payment journal – when set as Sent the journal line is available for printing
 -	Vendor's transactions
 -	Payment history on the vendor
-
-## EFT file name generation
-This modification is to automatically populate EFT file name based on the number sequence pattern.
-File information fields will be automatically filled with the file name that has following pattern:
-_BankAccountId_**NumberSequence**.FileFormat
-
-1. Set the **Number sequence** in the **Accounts payable parameters**
-- On the Number sequence FasTab, set a sequence for **EFT file name**
-
-2. Set whether the method of payment should automatically generate a filename for the EFT file. To open the the **Methods of payment** page, go to **Accounts payable > Setup > Payment setup > Methods of payment**.
--	Highlight applicable method of payment
--	Expand **EFT** FastTab and select **Enable file parameters**.
--	Enter **File format**, example txt
 
 ## Payments report
 When creating a **Vendor payment journal**, it can be useful to print the **Payments** report to reconcile vendor bank details, before generating the EFT file.
