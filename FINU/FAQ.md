@@ -62,19 +62,15 @@ When Generating AP payment:
 <br>
 <Error>
 
-<Code>AuthenticationFailed</Code>
+/<Code>AuthenticationFailed</Code>
 <br>
 <Message>
-Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature. RequestId:c32c9282-f01e-001f-7992-307f2f000000 Time:2019-07-02T04:53:06.7210430Z
-<br>
-</Message>
-<br>
+Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature. <br>
+</Message> <br>
 <AuthenticationErrorDetail>
-Signature did not match. String to sign used was r 2019-07-02T04:48:06Z 2019-07-02T04:58:06Z /icontest101b5352042be59a/temporary-file/{07E4FA8A-CF12-4259-8472-294E81A18189}/USMF OPER000143 2014-02-14 attachment
-</AuthenticationErrorDetail>
-<br>
-</Error>
-<br>
+Signature did not match. String to sign used was
+</AuthenticationErrorDetail> <br>
+</Error> <br>
 
 *Resolution:*
 AP > Payment setup > Methods of payment
