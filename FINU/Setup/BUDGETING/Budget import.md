@@ -40,7 +40,7 @@ Within the **Budget utilities parameters** page, you will set up the details reg
 #### Dimensions
 First step is to select the **Dimensions** that should be available for selection in the  **Budget utilities parameters** page. <br>
 Users can reach the **Dimensions for budgeting** page by navigating to **Budgeting > Setup > Basic budgeting > Dimensions for budgeting**. <br> 
-Add the financial dimensions from **Chart of accounts dimension** to **Budget dimension** to set the **Dimension code** that will be available in the **Budget utilities parameters**.
+Add the financial dimensions from **Chart of accounts dimension** to **Budget dimension** to set the **Dimension code**(s) that will be available in the **Budget utilities parameters**.
 
 #### Budget utilities parameters
 Second step is to set up the import file fomat in the **Budget utilities parameters** page. <br>
