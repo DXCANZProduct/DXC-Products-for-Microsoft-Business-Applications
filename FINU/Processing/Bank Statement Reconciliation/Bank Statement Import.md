@@ -36,7 +36,7 @@ Select **Import statement**.
 Where the selected statement format is marked as **Customised format** the following additional fields are available on the import:
 
 | **Field**        | **Description**                                               | Options
-|-|-|
+|-                 |-                                                              |-
 | **From date**    | Select transactions equal to, or more recent than, this date  | Calendar
 | **To date**      | Select transactions equal to, or earlier than, this date      | Calendar
 | **Date**         | Select which date to use when **Mark as new** transactions are posted | •	Today’s date <br> •	Statement Transaction Date - _To date_ of the Bank statement header)
