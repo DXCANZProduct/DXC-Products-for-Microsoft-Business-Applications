@@ -48,11 +48,11 @@ Users can reach the **Budget utilities parameters** page by navigating to **Budg
 
 The following table describes the fields that are available on the **Budget import** tab of the **Budget utilities parameters** page.
 
-|   Field    |   Description   |
-|-|-|
-|  **Field separator**    |  Specify the field separator for the CSV file  |
-|  **Number of months**   |  Specify the number of months that will be imported with the file  |
-|  **Skip rows**          |  If the file has a header row, you can specify 1 in this field.  With this setup, the 1st row will be skipped and the 2nd row will be the 1st row to be imported  |
-|  **Dimension code**  |  Select the dimensions required in the import fields for the budget register entries. If any dimensions are not visible, see [Dimensions]()  |
-|  Chart of Accounts Delimiter  |  Select the delimiter used as the delimiter between the dimension elements in the import fields  |
-|  Dimension Format  |  When the dimensions are selected in the dimension code field, these will automatically be populated the Dimension Format field in financial dimension sort order.  To change the order of these fields, simply cut & paste dimensions into required order to match the import file.      <br>      *Note: For all accounts a valid value must be populated in the import file for each financial dimension specified even where the account structure does not require this dimension.* |  
+|   Field    |   Description   | Example
+|-                      |-     |-             
+| **Field separator**   |  Specify the field separator for the CSV file  | , |
+| **Number of months**  |  Specify the number of months that will be imported with the file  | 12 |
+| **Skip rows**         |  If the file has a header row, you can specify 1 in this field.  With this setup, the 1st row will be skipped and the 2nd row will be the 1st row to be imported  | 1
+| **Dimension code**    |  Select all the dimensions that will be included in the import file and press **Select**. If any dimensions are not visible, see [Dimensions](#dimensions). Note: Once the record is saved, this field will revert to blank as it is only used to populate the **Dimension format** field. | 
+| **Dimension segment delimiter**  |  Select the delimiter used as the delimiter between the dimension elements in the import fields  | - |
+| **Dimension format**  |  When the dimensions are selected in the **Dimension code** field, these will automatically populate the **Dimension format** field in financial dimension sort order.  To change the order of these fields, simply cut & paste dimensions into required order to match the import file. | 
