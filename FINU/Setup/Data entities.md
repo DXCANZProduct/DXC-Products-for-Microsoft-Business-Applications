@@ -29,18 +29,20 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Data entities
 
-Finance utilities include its own data entities in Dynamics 365 environment :
+## Finance utilities data entities:
+Finance utilities includes the following data entities :
 
-|   Entity    |   Target entity   |
+| **Entity**                            | **Manual setup path**   |
 |-|-|
-|  Financial utilities parameters  |  SAB_FinUtilParametersEntity  |
-|  Budget utilities parameters |  SAB_FinBudgetParametersEntity |
+|  **Financial utilities parameters**   | Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters |
+|  **Budget utilities parameters**      | Budgeting > Setup > Basic budgeting > Budget utilities parameters  |
 
-And extended the following standard data entities:
+## Standard data entities
+Finance utilities have extended the following standard data entities:
 
-|   Entity    |   Target entity   |
+| **Entity**    | **Additional fields**                     | **Manual setup path**   |
 |-|-|
-|  Bank statement format  |  BankStatementFormatEntity  |
-|  Bank accounts |  BankAccountEntity           <br> - BPAY batch ID        <br> -	Extra balance line on EFT           <br> -	Include balance line in record count           <br> -	Total line order           <br> -	Use vendor bank name      <br> -	User identification          |
-|  Vendor bank accounts  |  VendVendorBankAccountEntity  |
-|  Reconciliation matching rules  |  BankReconciliationMatchingRuleEntity   <br>  -	Include in.              <br> -	Group by document number             <br> -	Offset company   <br> -	Offset account type   <br>  -	Offset account    <br>  -	GST group          <br>  -	Item GST group |
+| **Bank statement format**           |    | Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format 
+| **Bank accounts**                   | • BPAY batch ID <br> •	Extra balance line on EFT <br> • Include balance line in record count <br> • Total line order <br> • Use vendor bank name <br> • User identification  | Cash and bank management > Bank accounts > Bank accounts
+| **Vendor bank accounts**            |    | Accounts payable > Vendors > All vendors - Bank accounts on Vendor FastTab
+| **Reconciliation matching rules**   | • Include in <br> •	Group by document number <br> •	Offset company <br> •	Offset account type <br> •	Offset account <br> •	GST group <br> •	Item GST group | Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules
