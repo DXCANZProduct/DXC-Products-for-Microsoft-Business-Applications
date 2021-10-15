@@ -66,11 +66,11 @@ When Generating AP payment:
 <br>
 <Message>
 Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature. <br>
-</Message> <br>
-<AuthenticationErrorDetail>
+/</Message> <br>
+/<AuthenticationErrorDetail>
 Signature did not match. String to sign used was
-</AuthenticationErrorDetail> <br>
-</Error> <br>
+/</AuthenticationErrorDetail> <br>
+/</Error> <br>
 
 *Resolution:*
 AP > Payment setup > Methods of payment
