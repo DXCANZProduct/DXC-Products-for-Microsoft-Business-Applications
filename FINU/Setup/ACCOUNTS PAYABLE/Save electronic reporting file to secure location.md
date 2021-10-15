@@ -31,7 +31,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 The fields as described in the following subsections are available to control the additional functionality for accounts payable.
 
 ## Save Electronic reporting file to secure location
-The file exported cn be used for any Electronic reporting file, but the example provided is for a Vendor GER EFT payment. The feature uses the **Archive** functionality with the following setup steps
+The below setup can be used for any Electronic reporting file, but the example provided is for a Vendor GER EFT payment. The feature uses the **Archive** functionality with the following setup steps
 -	Step 1: Setup **Electronic reporting export connection**
 -	Step 2: Setup **Document types**, using Step 1’s Connection
 -	Step 3: Setup **Electronic reporting destination**, using Step 2’s Document type

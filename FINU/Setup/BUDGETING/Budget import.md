@@ -30,7 +30,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Budgeting functionality
 The following subsections describe the setup used to control the additional Finance utilities functionality for budgeting.
 
-## Budget Import
+## Budget import
 Finance utilities includes the ability to import a csv budget file with monthly columns.
 
 ### Setup budget import
@@ -56,3 +56,6 @@ The following table describes the fields that are available on the **Budget impo
 | **Dimension code**    |  Select all the dimensions that will be included in the import file and press **Select**. If any dimensions are not visible, see [Dimensions](#dimensions). Note: Once the record is saved, this field will revert to blank as it is only used to populate the **Dimension format** field. | 
 | **Dimension segment delimiter**  |  Select the delimiter used as the delimiter between the dimension elements in the import fields  | - |
 | **Dimension format**  |  When the dimensions are selected in the **Dimension code** field, these will automatically populate the **Dimension format** field in financial dimension sort order.  To change the order of these fields, simply cut & paste dimensions into required order to match the import file. | BusinessUnit-CostCenter
+
+### Budget import processing
+Budget import processing is discussed in detail at [Budget import processing](../../Processing/Budgeting/Budget%20import.md).
