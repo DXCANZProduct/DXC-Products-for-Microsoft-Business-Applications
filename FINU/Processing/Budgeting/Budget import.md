@@ -33,6 +33,9 @@ The following subsections describe the setup used to control the additional Fina
 ## Budget import
 Finance utilities includes the ability to import a csv budget file with monthly columns.
 
+## Example file format
+See [Example file format](Example%20file%20format.md) for example file.
+
 ### Setup budget import
 Setup requirements are discussed in detail at [Budget import setup](../../Setup/BUDGETING/Budget%20import.md). <br>
 Importing the budget file will be discussed in the following subsections.
