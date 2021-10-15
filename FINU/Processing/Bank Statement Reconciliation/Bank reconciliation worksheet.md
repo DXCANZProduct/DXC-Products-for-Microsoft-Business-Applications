@@ -2,7 +2,7 @@
 # required metadata
 
 title: [Finance Utilities ]
-description: [to Finance Utilities - Bank Reconciliation Worksheet ]
+description: [Bank statement reconciliation processing - Bank reconciliation worksheet ]
 author: [helenho]
 manager: Kym Parker
 ms.date: 02/03/2021
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Finance Utilities ]
 audience: [Application User]
 # ms.devlang: 
-ms.reviewer: [helenho]
+ms.reviewer: [jdutoit2]
 ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -27,21 +27,19 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-## Bank Reconciliation Worksheet
+## Bank reconciliation worksheet
 
-The BANK RECONCILIATION – WORKSHEET form is use to match the payment transaction within your Dynamics 365 environment and the bank statement files according to the matching rules that you have defined in the Dynamics 365 environment.
+The **Worksheet** page on the **Bank reconciliation** is used to match the bank transactions within your D365 environment and the bank statement files according to the matching rules that you have defined in the D365 environment.
+Finance utilities includes improved reconciliation worksheet matching capability.
 
-You can reach the BANK RECONCILIATION – WORKSHEET form by navigating to
-**CASH AND BANK MANAGEMENT > BANK STATEMENT RECONCILIATION > BANK RECONCILIATION – WORKSHEET**
+Select **Workheet** on the Action Pane, by navigating to **Cash and bank management > Bank statement reconciliation > Bank reconciliation**
 
-Improved reconciliation worksheet matching capability.
-
-###	Run Matching Rules
+### Run matching rules
 The matching rule capability has been extended, and is activated when this process is executed from the Bank reconciliation. The Configuration section is where the facilities may be set up;
-- The Contains and Included in capability
-- The transaction Document grouping capability
+- The **Contains** and **Included in** capability
+- The transaction **Group by document number** capability
 
-###	Marking and Matching Capability
+### Marking and Matching Capability
 Several changes have been implemented to improve the usability of the matching, including;
 -	In standard you must highlight to match. This functionality allows the user to filter, check, filter again and check another record and match
 -	Corrections (reversals) can be performed in line with the record
@@ -54,21 +52,21 @@ The changes required to support this functionality in the Bank reconciliation Wo
 
 #### New Buttons
 
-|    Buttons   |    Description   |
+| **Buttons**   |    **Description**   |
 |-|-|
-|   **Match ID**  |  Users can manually click this button when the system does not automatically assign a match id on mark transactions.  |
-|   **Remove Match ID**  |  Once clicked this will remove the Match ID on both sides but will retain the mark on the ‘Mark’ checkbox column  |
-|  **Clear All**  |  “Clear All” button will unmark all transactions marked with match id transactions on both sides from the open statement and open bank document sections. <br> This removes all the match ids on both statement and bank transaction. They are marked for matching where match ids are already assigned          |
-|  **Mark filtered bank statement transactions** |  This will allow the user to Mark All filtered lines in the bank reconciliation worksheet for the Bank statement transactions grid  |
-| **Mark filtered bank transactions** |  This will allow the user to Mark All filtered lines in the bank reconciliation worksheet for the Bank transactions grid  |
-|  **Maximise / Minimise**  |  Maximise and Minimise the unmatched transactions section  |
+| **Match ID**                        | Users can manually select this button when the system does not automatically assign a match id on mark transactions.  |
+| **Remove Match ID**                 | Once clicked this will remove the Match ID on both sides but will retain the mark on the ‘Mark’ checkbox column  |
+| **Clear All**                       | This button will unmark all transactions marked with match id transactions on both sides from the open statement and open bank document sections. <br> This removes all the match IDs on both statement and bank transaction. They are marked for matching where match ids are already assigned          |
+| **Mark filtered bank statement transactions** | This will allow the user to Mark All _filtered_ lines in the bank reconciliation worksheet for the **Bank statement transactions** grid  |
+| **Mark filtered bank transactions** | This will allow the user to Mark All _filtered_ lines in the bank reconciliation worksheet for the **Bank transactions** grid  |
+| **Maximise / Minimise**             | Maximise and Minimise the _unmatched_ transactions section  |
 
 #### Mark and Match Id Columns
 These columns provide more visibility of the matching process 
 
-|    Columns   |    Description   |
+| **Columns** | **Description**   |
 |-|-|
-|   **Mark Checkbox**  |  This checkbox allows the user to match statement lines against bank transactions. It validates the following:  |
+| **Mark** |  This checkbox allows the user to match statement lines against bank transactions. It validates the following:  |
 |     |  -	When all lines with same “MATCH ID” are unmarked on the Statement side, the system prompts a warning **“Unmatch all of match id”** When users click **Yes** on the warning message the corresponding lines with the equivalent “MATCH ID” on the bank transactions side are unmarked automatically by the system. If users click **No** on the message, users must manually unmark the corresponding entries. When the users unmark the corresponding entries, the Match id disappears.  |
 |     |  - When all lines with same “MATCH ID” are unmarked on bank transactions side, the system would prompt a warning **“Unmatch all of match id”** When users click Yes on the warning message the corresponding lines with equivalent “MATCH ID” on statement lines are unmarked automatically by the system. If users click **No** on the message, users must manually unmark the corresponding entries. When the users manually unmark the corresponding entries, the Match id disappears.  |
 |     |  -	The new “MARK” checkbox will update the Total amount, Open Amount and Matched amount that appears on top of open statement lines and open bank documents from Bank reconciliation worksheet.   |
