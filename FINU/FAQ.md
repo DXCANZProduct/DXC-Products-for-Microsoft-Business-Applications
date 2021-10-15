@@ -86,7 +86,7 @@ Select the Finance utilities report on [Payment advice](Setup/ACCOUNTS%20PAYABLE
 ### 	Saving to secure location
 
 If there is an error saving the file to secure location and **Stop processing on failure** was enabled on **Electronic reporting destination**, the processing will error and **Payment status** remains _None_. Example error: The process stopped because the delivery of file ‘%’ to the destination failed. The payments cannot be generated. <br>
-Check setup on the applicable [**Electronic reporting export connections**](Setup/ACCOUNTS%20PAYABLE/Save%20electronic%20reporting%20file%20to%20secure%20location.md)
+Check setup on the applicable [Electronic reporting export connections](Setup/ACCOUNTS%20PAYABLE/Save%20electronic%20reporting%20file%20to%20secure%20location.md)
 
 ### 	Number sequences are not available to setup
 
