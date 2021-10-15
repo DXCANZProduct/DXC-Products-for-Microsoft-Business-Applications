@@ -74,19 +74,19 @@ These columns provide more visibility of the matching process
 
 These totals assist with balancing the in-progress Matching.
 
-|   Location of Totals    |   Check Box   |   Description   |
+|   **Location of Totals**    |   **Check Box**   |   **Description**   |
 |-|-|-|
-|   Top of Open Statement lines  |   Total amount <br> Matched amount  <br> Unmatched amount   |  These totals are updated when the Mark checkbox is activated or deactivated on the Bank Statement transactions  |
-|  Top of Open Transaction lines  |  Total amount <br>  Matched amount <br>  Unmatched amount |  These totals are updated when the Mark checkbox is activated or deactivated on the D365 Bank transactions |
-|  Bottom of Open Statement lines  |  Number of Transactions Marked <br> Total Amount Marked <br>  Unmatched amount |  These totals are updated when the Mark checkbox is activated or deactivated on the Bank Statement transactions |
+|   **Top of Open Statement lines**  |   Total amount <br> Matched amount  <br> Unmatched amount   |  These totals are updated when the Mark checkbox is activated or deactivated on the Bank Statement transactions  |
+|  **Top of Open Transaction lines**  |  Total amount <br>  Matched amount <br>  Unmatched amount |  These totals are updated when the Mark checkbox is activated or deactivated on the D365 Bank transactions |
+|  **Bottom of Open Statement lines**  |  Number of Transactions Marked <br> Total Amount Marked <br>  Unmatched amount |  These totals are updated when the Mark checkbox is activated or deactivated on the Bank Statement transactions |
 
-###	Mark as New Extended Financial Details
+### Mark as new extended financial details
 
-If the Extended financial details for new transactions parameter has been set, these Financial details are available from the Bank reconciliation, on new Fast tabs (General and Financial dimensions), for the user to review or change
+If the field **Extended financial details for new transactions** has been set on **Financial utilities parameter**, these Financial details are available from the Bank reconciliation, on new FastTabs (General and Financial dimensions), for the user to review or change
 -	The additional detail can also be populated when a transaction is selected from the Mark as new button
--	When a line is set as Mark as new’ the GL journal creation includes the additional default settings from the ‘Extended financial details’
+-	When a line is set as Mark as new’ the GL journal creation includes the additional default settings from the **Extended financial details** from the applicable **Reconciliation matching rules**
 
-|   Heading    |   Field   |   Description   |
+|   **Heading**    |   **Field**   |   **Description**   |
 |-|-|-|
 |   **OFFSET ACCOUNT**  |   Offset company   |  Required company selection  |
 |  |  Offset account type  |   Usually set to  **Ledger**   |
@@ -96,16 +96,18 @@ If the Extended financial details for new transactions parameter has been set, t
 |   **TAX**   |  GST sales tax group  |  Sales tax group (optional)  |
 |  |  Item sales tax group  |  Select Item tax group (optional)  |
 
-###	Mark as Reconciled Button
-#### Ability to Reconcile Unmatched Statements
-When **Ability to reconcile unmatched statements** is set to No in the Financial Utilities parameters, the button Mark as reconciled is disabled in the Bank Reconciliation Worksheet when Unmatched Amount is different from zero in the Bank Statement Transactions section. The statement cannot be reconciled until the unmatched value is zero.
+### Mark as reconciled
+#### Ability to reconcile unmatched statements
+When **Ability to reconcile unmatched statements** is set to _No_ in the **Financial utilities parameters**, the button **Mark as reconciled** is disabled in the Bank Reconciliation Worksheet when Unmatched Amount is different from zero in the Bank Statement Transactions section. The statement cannot be reconciled until the unmatched value is zero.
 
-####	Mark as New Postings
-When creating the GL journal for ‘Mark as new’ transactions, if the **Extended Financial Details for new Transactions** is activated in the financial utilities parameter, use the Extended financial details to populate the journal line, and the posting Date nominated (Statement date or Today’s date).
+#### Mark as new posting
+When creating the journal for **Mark as new** transactions, if the **Extended financial details for new transactions** is activated in the **Financial utilities parameters**: <br>
+- The **Extended financial details** is used to populate the journal line, and 
+- The posting **date** nominated when the bank statement has been imported (_Statement date_ or _Today’s date_).
 
-####	Automatic Posting
-If the Financial Utilities parameter Auto-post bank statement is set to Yes banking transactions (generated from the Mark as new functionality) will automatically post when the **Mark as reconciled** button is selected.
+#### Automatic Posting
+If the Financial Utilities parameter **Auto-post bank statement** is set to _Yes_, the bank statement and Mark as new transactions will automatically be posted when the **Mark as reconciled** button is selected. 
 
-####	Reconciliation Correction Balance	
-If the Financial Utilities parameter **Ability to enter reconciliation balancing entry** is set to Yes (see above) and the new column Correction Amount has been used, the detail will be posted to the Main account associated with the correction line Transaction type
+#### Reconciliation correction balance	
+If the field **Ability to enter reconciliation balancing entry** on the **Financial utilities parameter** is set to_ Yes_ and the new column **Correction Amount** has been used, the correct amount will be posted to the **Main account** associated with the correction line's **Bank transaction type** as found on **Cash and bank management > Setup > Bank transaction types**.
 
