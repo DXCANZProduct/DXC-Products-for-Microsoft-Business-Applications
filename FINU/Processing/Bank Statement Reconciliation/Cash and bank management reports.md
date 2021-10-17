@@ -2,7 +2,7 @@
 # required metadata
 
 title: [Finance Utilities ]
-description: [Bank statement reconciliation processing - Cash and Bank Management Reports ]
+description: [Bank statement reconciliation processing - Cash and bank management reports ]
 author: [helenho]
 manager: Kym Parker
 ms.date: 02/03/2021
@@ -28,11 +28,10 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 ## Cash and Bank Management Reports
-There are additional reporting has been added to the reconciliation facilities, to enable better problem resolution and auditing.
+Finance utilities have additional reporting for the reconciliation facilities, to enable better problem resolution and auditing.
 
 ### Bank Reconciliation Report
-You can reach the BANK RECONCILIATION form by navigating to
-**CASH AND BANK MANAGEMENT > INQUIRIES AND REPORTS > BANK RECONCILIATION REPORTS > BANK RECONCILIATION**
+Users can reach the **Bank reconciliation** report by navigating to **Cash and bank management > Inquiries and reports > Bank reconciliation reports > Bank reconciliation**.
 
 The report prints a Reconciliation summary report and an Unreconciled bank transactions report if both are set to Yes. The checking date is compared to the bank statement ending date
 Ensure that all lines from the statements are reconciled and the statement posted before printing this report.
@@ -51,7 +50,7 @@ Ensure that all lines from the statements are reconciled and the statement poste
 ||  Actual closing bank account balance |  Actual D365 bank account balance at Checking date |  |
 ||  Difference |  Difference between Expected and Actual bank account balances |  |
 
-####	Unreconciled Bank Transactions 
+#### Unreconciled Bank Transactions 
 
 |   Content    |   Heading   |   Description   |
 |-|-|-|
@@ -68,7 +67,7 @@ Ensure that all lines from the statements are reconciled and the statement poste
 |  | Amount in trx. Currency |  |
 |  | Amount |  |
 
-###	Bank Statement Matching Report
+### Bank Statement Matching Report
 
 **CASH & BANK MGMT. > INQUIRIES & REPORTS > BANK RECONCILIATION REPORTS > BANK STATEMENT MATCH REPORT**
 
