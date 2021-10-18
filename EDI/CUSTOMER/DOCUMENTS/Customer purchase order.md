@@ -168,11 +168,11 @@ Create release order without blanket order	| The action taken when a release ord
 **Unit price**                              | The unit price should be checked using the standard D365 pricing rules.  If the prices are slightly different it should check both the **Maximum positive and negative tolerance** and **Use customer price** flag on document's setting before giving an error/warning. Example: <br> Item X trade agreement price 10.25 <br> Item Y trade agreement price 8.88 <br> Customer has a min and max tolerance setting of 0.05 <br> Customer does not have their trade agreements entered including tax <br> Customer sends their EDI orders including tax <br> The setting use customer pricing is given <br> Item X EDI file price (before converting) 11.26 (after conversion) 10.24 <br> Item Y EDI file price (before converting) 9.70 (after conversion) 8.82 <br> Template setting against this field is warning. <br> A warning is only given for Item Y because it is outside of the tolerance. 
 **Check multiple**                          | The quantity should be devisable by the multiple specified on the customer multiple table, if there isn’t one then it check the sales multiple on the item table.  
 
-# View staging table records
+## View staging table records
 To view the Customer purchase order's staging records, go to **EDI > Documents > Customer documents > Customer purchase order**. 
 Use this page to review staging and process EDI Customer purchase order documents and convert into D365 Sales order, Sales agreement or Release order.
 
-## List page
+### List page
 The following EDI fields are available on the list page.
 
 **Field**               | **Description**
@@ -192,7 +192,7 @@ The following EDI fields are available on the list page.
 **Created Date and Time**       | The date and time the selected record was created in the staging table.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
-## Buttons
+### Buttons
 The following buttons are available on the **Customer purchase order** Action Pane, tab **Purchase order import**.
 
 **Button**	                    | **Description**
@@ -218,7 +218,7 @@ The **Acknowledgement** tab is available on all incoming documents staging pages
 **Reset flag**                  | If the **Sent** field for the staging record has been set to _Yes_, use this button to reset **Sent** to _No_.
 **Functional acknowledgement**  | Use this button to view the **Functional acknowledgement outbound** record created for the inbound document.
 
-## Header fields
+### Header fields
 The following EDI Header staging fields are available on the header page.
 
 **Field**	            | **Description**	                                    | **Target D365 field**
@@ -265,7 +265,7 @@ The following EDI Header staging fields are available on the header page.
 **Requested receipt date**  | The requested receipt date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested receipt date <br> Sales order > Requested receipt date
 **Delivery time**           | The delivery time from the EDI record is shown here.                      | Sales Order > EDI > Delivery time
 
-## Line fields
+### Line fields
 The following EDI Line fields are available on the lines page.
 
 **Field**                   | **Description**                                                           | **Target D365 field**
