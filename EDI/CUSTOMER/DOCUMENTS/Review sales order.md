@@ -34,7 +34,7 @@ The Customer EDI module includes modifications to Sales orders. Users can access
 ## Warnings/Errors
 When the sales order validation resulted in a warning or error, the **EDI log** field on the sales order list page can be used to easily identify that there is an issue that might need investigation. <br>
 - ![alt text](../IMAGE/Error.png "Error") Error identified with the sales order <br>
-- ![alt text](../IMAGE/Warning.png "Warning") Warnings identified with the sales order <br>
+- ![alt text](../IMAGE/Warning.png "Warning")  Warnings identified with the sales order <br>
 
 To view the actual error message, select the **Log** button available via the **EDI** tab on the Action Pane of the sales order.
 
