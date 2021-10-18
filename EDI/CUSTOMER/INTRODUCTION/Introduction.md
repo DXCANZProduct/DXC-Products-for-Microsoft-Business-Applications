@@ -93,6 +93,8 @@ Users can access the forms by navigating to **EDI > Documents > Customer documen
 - [Sales invoice](../DOCUMENTS/Sales%20invoice.md)
 
 ## Review sales order
+The following section describes the additional EDI functionality on Sales orders.
+- [Review sales order](../DOCUMENTS/Review%20sales%20order.md)
 
 ## Workspaces
 The following workspaces are available:
