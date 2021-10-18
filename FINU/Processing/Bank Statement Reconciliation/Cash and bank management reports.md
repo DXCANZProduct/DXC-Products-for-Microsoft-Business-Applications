@@ -52,27 +52,30 @@ Ensure that all statements are reconciled and the statement posted before printi
 ||  Bank account statement date |  From the selection             |  |
 ||  Reconciled date             |  Reconciled date from the bank reconciliation      |  |
 | **Balances** |  Closing balance per bank statement |  Closing balance as per last posted bank statement up to _Checking date_ |  |
-||  Unreconciled bank transactions  |  Bank transactions not yet reconciled up to _Checking date_  |  |
+||  Unreconciled bank transactions  |  Bank transactions not yet reconciled up to _Checking date_. If **Uncleared transaction details** was set to _Yes_, the transaction details can be viewed on **Unreconciled bank transactions** |  |
 ||  Expected closing bank account balance |  Closing balance per bank statement _PLUS_ Unreconciled bank transactions |  |
 ||  Actual closing bank account balance |  Actual D365 bank account balance at _Checking date_ |  |
 ||  Difference |  Difference between Expected and Actual bank account balances |  |
 
 #### Unreconciled bank transactions 
+If parameter **Uncleared transaction details** was set to _Yes_, the following will be printed for all unreconciled bank transactions to the _Checking date_.
+The **Grand total** of this section should equal to the **Unreconciled bank transactions** on **Reconciliation summary**.
 
-|   Content    |   Heading   |   Description   |
+|   Content           |   Heading                 |   Description   |
 |-|-|-|
-|   Header  |  Bank account  |  As selected  |
-|  |  Name |  |
-|  |  Routing number |  |
-|  |  Bank account number |  |
-|  |  Ledger account |  |
-|   Transactions  |  Bank transaction type  |  |
-|  |  Date |  |
-|  |  Cost Center |  |
-|  |  Payment reference |  |
-|  | Transaction text |  |
-|  | Amount in trx. Currency |  |
-|  | Amount |  |
+|   **Header**        |  Bank account             |  As selected  |
+|                     |  Name                     |  Bank account name |
+|                     |  Routing number           |  Bank's routing number |
+|                     |  Bank account number      |  Bank's account number |
+|                     |  Ledger account           |  Bank's ledger account |
+|   **Transactions**  |  Bank transaction type    |  Bank transaction type for the transaction |
+|                     |  Date                     |  Date for the transaction |
+|                     |  Cost Center              |  Cost center for the transaction |
+|                     |  Payment reference        |  Payment reference for the transaction |
+|                     |  Transaction text         |  Transaction text for the reference|
+|                     |  Currency                 |  Currency for the transaction |
+|                     |  Amount in trx. Currency  |  Amount in transaction currency |
+|                     |  Amount                   |  Amount in bank's currency |
 
 ### Bank statement matching report
 
