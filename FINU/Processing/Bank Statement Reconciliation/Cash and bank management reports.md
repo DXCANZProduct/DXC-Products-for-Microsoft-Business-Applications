@@ -38,9 +38,9 @@ In the report parameters, select the following:
 - Checking date: Compared to the bank statement ending date
 - Reconciliation summary - Yes/No **
 - Uncleared transaction details - Yes/No **
-
 ** The report prints a **Reconciliation summary** report and an **Unreconciled bank transactions** report if both are set to _Yes_. <br>
-Ensure that all statements are reconciled and the statement posted before printing this report.
+
+> Note: Ensure that all statements are reconciled and the statement posted before printing this report.
 
 #### Reconciliation summary 
 |   Content                     |   Heading                       |   Description   |
