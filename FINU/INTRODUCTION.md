@@ -132,3 +132,7 @@ The data entities include Finance utilities tables and also enhances existing st
 
 - [Data entities](Setup/Data%20entities.md)
 
+See our FAQ for general information and troubleshooting.
+
+- [FAQ](FAQ.md)
+
