@@ -81,7 +81,7 @@ The **Grand total** of this section should equal to the **Unreconciled bank tran
 
 Users can reach the **Bank statement matching** report by navigating to **Cash and bank management > Inquiries and reports > Bank reconciliation reports > Bank statement matching**.
 
--	The report shows all **matched** lines for each bank statement(s) for the selected bank account.
+-	The report shows all **matched** lines for all bank statement(s) for the selected bank account within the **To date** range.
 -	The report is sorted by **Date** and **Match ID**.
 -	Lines containing vouchers are D365 Bank transactions.
 -	Lines that have no voucher information are Bank statement lines.
@@ -92,8 +92,8 @@ In the report parameters, select the following:
 |   Content                   |   Heading                       |   Description   |
 |-|-|-|
 |   **Header**                |  Bank account                   |  As selected  |
-|                             |  Bank statement                 |  Bank statement identifiers (from the Reconciliation) |
-|                             |  Bank account statement to date |  Shows the most recent if not selected |
+|                             |  Bank statement                 |  Bank statement identifier(s) (from the Reconciliation) |
+|                             |  Bank account statement to date |  Shows the most recent bank statement's date, if not selected in **To date**|
 |   **Matched Transactions**  |  Date                           |  Transaction date  |
 |                             |  Match ID                       |  When transactions have been manually matched on the bank reconciliation. This would be blank where the transactions were matched with a **Reconciliation matching rule**. |
 |                             |  Type                           |  Bank transaction type |
