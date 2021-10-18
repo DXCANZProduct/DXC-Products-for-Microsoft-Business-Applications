@@ -124,3 +124,11 @@ The modification gives the user the ability to set the budget import file's form
 - [Budget import setup](Setup/BUDGETING/Budget%20import.md)
 - [Budget import processing](Processing/Budgeting/Budget%20import.md)
 - [Example file format](Processing/Budgeting/Example%20file%20format.md)
+
+## Other
+
+Finance utilities include data entities to support its enhancements to D365.
+The data entities include Finance utilities tables and also enhances existing standard entities.
+
+- [Data entities](Setup/Data%20entities.md)
+
