@@ -101,7 +101,7 @@ Within the Vendor payment proposal, grouping also occurs for the new BPAY field.
 
 ## Accounts Payable - Payment advice report
 
-A custom-built report has been developed to provide a Payment advice to vendors upon processing an EFT payment run. The report will show the vendor bank account details where the payment is deposited as well as the invoices numbers paid, what amount and what discount applied. This remittance advice report works in conjunction with the Smart Send function.
+A custom-built report has been developed to provide a Payment advice to vendors upon processing an EFT payment run. The report will show the vendor bank account details where the payment is deposited as well as the invoice numbers paid, what amount and what discount applied. This remittance advice report works in conjunction with the Smart Send function.
 
 - [Vendor payments setup](Setup/ACCOUNTS%20PAYABLE/Vendor%20payments.md)
 
