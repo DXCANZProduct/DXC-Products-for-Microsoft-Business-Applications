@@ -97,7 +97,7 @@ In the report parameters, select the following:
 |   **Matched Transactions**  |  Date                           |  Transaction date  |
 |                             |  Match ID                       |  When transactions have been manually matched on the bank reconciliation. This would be blank where the transactions were matched with a **Reconciliation matching rule**. |
 |                             |  Type                           |  Bank transaction type |
-|                             |  Payment reference              |  |
-|                             |  Transaction text               |  |
+|                             |  Payment reference              |  Payment reference for the D365 bank transaction or bank statement line|
+|                             |  Transaction text               |  Transaction text |
 |                             |  Amount                         |  Debit or credit transaction amount |
-|                             |  Voucher                        |  D365 Bank transaction's voucher. When voucher is blank, the transaction is from the Bank statement lines |
+|                             |  Voucher                        |  D365 bank transaction's voucher. When voucher is blank, the transaction is from the bank statement lines |
