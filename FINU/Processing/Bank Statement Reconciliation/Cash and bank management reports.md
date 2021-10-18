@@ -81,20 +81,23 @@ The **Grand total** of this section should equal to the **Unreconciled bank tran
 
 Users can reach the **Bank statement matching** report by navigating to **Cash and bank management > Inquiries and reports > Bank reconciliation reports > Bank statement matching**.
 
--	The report shows all matched lines for the selected bank statement(s) and bank transactions.
--	The report is sorted by Date and Match ID.
--	Lines containing vouchers are D365O transactions.
--	Lines that have no voucher information are statement lines.
+-	The report shows all **matched** lines for each bank statement(s) for the selected bank account.
+-	The report is sorted by **Date** and **Match ID**.
+-	Lines containing vouchers are D365 Bank transactions.
+-	Lines that have no voucher information are Bank statement lines.
 
-|   Content    |   Heading   |   Description   |
+In the report parameters, select the following:
+- Bank account
+
+|   Content                   |   Heading                       |   Description   |
 |-|-|-|
-|   **Header**  |  Bank account  |  As selected  |
-|  |  Bank statement |  Bank statement identifiers (from the Reconciliation) |
-|  |  Bank account statement to date |  Shows the most recent if not selected |
-|   **Matched Transactions**  |  Date  |    |
-|  |  Match ID |  From the bank Reconciliation |
-|  |  Type |  Bank transaction type |
-|  |  Payment reference |  |
-|  |  Transaction text |  |
-|  |  Amount |  |
-|  |  Voucher |  D365O Posting reference |
+|   **Header**                |  Bank account                   |  As selected  |
+|                             |  Bank statement                 |  Bank statement identifiers (from the Reconciliation) |
+|                             |  Bank account statement to date |  Shows the most recent if not selected |
+|   **Matched Transactions**  |  Date                           |  Transaction date  |
+|                             |  Match ID                       |  When transactions have been manually matched on the bank reconciliation. This would be blank where the transactions were matched with a **Reconciliation matching rule**. |
+|                             |  Type                           |  Bank transaction type |
+|                             |  Payment reference              |  |
+|                             |  Transaction text               |  |
+|                             |  Amount                         |  Debit or credit transaction amount |
+|                             |  Voucher                        |  D365 Bank transaction's voucher. When voucher is blank, the transaction is from the Bank statement lines |
