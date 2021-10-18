@@ -156,11 +156,11 @@ Settings profiles can be specified and linked to the template which is used to d
 **Processing method**                       |	Specifies if the changes should automatically be applied or flagged for manual approval.
 **Document status**                         |	Check if the existing D365 sales order’s Document status <= Customer purchase order change **Document setting**'s **Document status** setting. If the Sales order’s document status is “higher”, then the change will not be applied and the EDI staging record will Error.
 
-# View staging table records
+## View staging table records
 To view the Customer purchase order change's staging records, go to **EDI > Documents > Customer documents > Customer purchase order change**. 
 Use this page to review staging and process EDI Customer purchase order change documents to cancel or edit an existing D365 sales order.
 
-## List page
+### List page
 The following EDI fields are available on the list page.
 
 **Field**               | **Description**
@@ -179,7 +179,7 @@ The following EDI fields are available on the list page.
 **Created Date and Time**       | The date and time the selected record was created in the staging table.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
-## Buttons
+### Buttons
 The following buttons are available on the **Customer purchase order change** Action Pane, tab **Customer purchase order change**.
 
 **Button**	                    | **Description**
@@ -204,7 +204,7 @@ The **Acknowledgement** tab is available on all incoming documents staging pages
 **Reset flag**                  | If the **Sent** field for the staging record has been set to _Yes_, use this button to reset **Sent** to _No_.
 **Functional acknowledgement**  | Use this button to view the **Functional acknowledgement outbound** record created for the inbound document.
 
-## Header fields
+### Header fields
 The Customer Purchase order change can update the following Sales order header fields:
 -	**Sales order** - If document setting **Allow header update** is set to _Yes_.
     -	Delivery address: either from Store code or Delivery address
@@ -266,7 +266,7 @@ The following EDI Header staging fields are available on the header page.
 **Requested receipt date**  |	The requested receipt date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested receipt date. <br> Sales order > Requested receipt date. If header updates are allowed.
 **Delivery time**           |	The delivery time from the EDI record is shown here.	    | Sales Order > EDI > Delivery time. If header updates are allowed.
 
-## Line fields
+### Line fields
 Document setting **Processing method** determines if the Customer Purchase order change can update the below Sales order line fields:
 - **Automatic** - **Order line change type group**'s **Update tolerance** determines automatic update is allowed for the change type.
 - **Manual** - User manually accepts change, and **Order line change type group**'s **Update tolerance** has no effect.
