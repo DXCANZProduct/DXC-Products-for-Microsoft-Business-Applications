@@ -129,19 +129,10 @@ All the EDI staging records applicable to the Sales order can be viewed via the 
 
 **Field**			| **Description**
 :--				|:--
-EDI Document type	EDI document type of the staging record
-EDI number	EDI number and link to the staging record
-Reference	Additional information for the staging record, examples:
-Inbound
-Original – First Customer Purchase order received. Only available via Customer purchase order document
-Change – Subsequent change/s to the order. Only available via Customer purchase order change document
-Cancel – Cancellation received. Can be received via Customer purchase order (if ‘EDI parameters > Allow historic PO types’ is enabled) or Customer purchase order change document
-Confirmation – Confirmation received. Can be received via Customer purchase order (if ‘EDI parameters > Allow historic PO types’ is enabled) or Customer purchase order change document
-Outbound
-C - Purchase order acknowledgement response
-ASN345435 – D365 Packing slip for the EDI ASN
-IN4734743 – D365 Sales Invoice number for the EDI record.
-Created date and time	Created date and time of the EDI staging record
+**EDI Document type**		| EDI document type of the staging record
+**EDI number**			| EDI number and link to the staging record
+**Reference**			| Additional information for the staging record, examples: <br> <ins>Inbound</ins> <br> **Original** – First Customer Purchase order received. Only available via Customer purchase order document <br> **Change** – Subsequent change/s to the order. Only available via Customer purchase order change document. <br> **Cancel** – Cancellation received. Can be received via Customer purchase order (if **EDI parameters > Allow historic PO types** is enabled) or Customer purchase order change document <br> **Confirmation** – Confirmation received. Can be received via Customer purchase order (if **EDI parameters > Allow historic PO types** is enabled) or Customer purchase order change document. <br> <ins>Outbound</ins> <br> **C** - Purchase order acknowledgement response <br> **ASN345435** – D365 Packing slip for the EDI ASN <br> **IN4734743** – D365 Sales Invoice number for the EDI record.
+**Created date and time**	| Created date and time of the EDI staging record
 
 ## Header fields
 SALES AND MARKETING > SALES ORDERS > ALL SALES ORDERS
