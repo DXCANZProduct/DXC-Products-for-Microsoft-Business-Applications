@@ -63,21 +63,23 @@ An order that has been placed on EDI hold will be visible via the **Hold** field
 **Do not process**	| Lock sales order for processing
 
 ## Buttons
-SALES AND MARKETING > SALES ORDERS > ALL SALES ORDERS > EDI TAB
-Field	Description
-Validation	
-Validate	Select the Validate button to check validation rules for a sales order. 
-Log	Select the Log button to view the validation errors that have occurred for the order. 
-POA	
-Acknowledgement	Option to manually review and/or process the Purchase order acknowledgement to the Customer. The Send to EDI option is also included within this form
-Send to EDI	Press this button to manually create the Purchase order acknowledgement staging record. This could also be setup as periodic job.
-Reset flag	Select the Reset flag button to reset the EDI status to allow for re-sending of POA to the staging table.
-Change order	
-Changes	Select to view all pending changes for the sales order and approve/reject each.
-The form is filter to Status Pending but can be unfiltered to view automatic or previously processed manual changes. See below for more detail.
-Reference	
-History	See below for more detail
-Trading partners	Link to Trading partner for the Sales order
+
+The Customer EDI module includes modifications to Sales orders. Users can access **All sales orders** page by navigating to **Sales and marketing > Orders > All sales orders**. <br> The following buttons have been added to the EDI tab on the Action Pane.
+
+**Field**		| **Description**
+:--			|:--
+<ins>**Validation**</ins>	
+**Validate**		| Select the **Validate** button to run validation rules for the sales order. 
+**Log**			| Select the **Log** button to view the validation errors that have occurred for the order. 
+<ins>**POA**</ins>	
+**Acknowledgement**	| Option to manually review and/or process the Purchase order acknowledgement to the Customer. The **Send to EDI** option is also included within this form
+**Send to EDI**		| Press this button to manually create the Purchase order acknowledgement staging record using the acknowledged values as per **Acknowledgement** . This could also be setup as periodic job.
+**Reset flag**		| Select the **Reset flag** button to reset the EDI status to allow for re-sending of POA to the staging table.
+<ins>**Change order**</ins>	
+**Changes**		| Select to view all the pending changes for the sales order and approve/reject each. <br> The form is filter to **Pending** status but can be unfiltered to view automatic or previously processed manual changes. See below for more detail.
+<ins>**Reference**</ins>	
+**History**		| See below for more detail
+**Trading partners**	| Link to Trading partner page for the sales order's customer
 
 ### EDI Ribbon – Changes
 All the EDI changes applicable to the Sales order can be manually approved or rejected on Changes. Where the Customer purchase order changes are set to be processed Manually, these would appear as pending changes on this form. All pending records will be displayed in ascending order.
