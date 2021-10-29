@@ -38,7 +38,7 @@ When the sales order validation resulted in a warning or error, the **EDI log** 
 
 To view the actual validation error messages, select the **Log** button available via the **EDI** tab on the Action Pane of the sales order. 
 
-> Note: To setup EDI order validation, see [Setup validation profiles](../SETUP/Validation%20profiles.md)
+> Note: To setup EDI order validation, see [Setup validation profiles](../SETUP/Validation%20profiles.md) <br>
 > Note: For further information relating to validation refer to the validation section(s) in the processing of [Customer purchase order](Customer%20purchase%20order.md).
 
 ## Sales order holds
