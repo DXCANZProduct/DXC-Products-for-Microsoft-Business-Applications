@@ -78,7 +78,7 @@ The Customer EDI module includes modifications to Sales orders. Users can access
 <ins>**Change order**</ins>	
 **Changes**		| Select to view all the pending changes for the sales order and approve/reject each. <br> The form is filter to **Pending** status but can be unfiltered to view automatic or previously processed manual changes. See [below](#edi-ribbon--changes) for more detail.
 <ins>**Reference**</ins>	
-**History**		| Select to view EDI records to the sales order. See [below]((#edi-ribbon--history)) for more detail.
+**History**		| Select to view EDI records to the sales order. See [below](#edi-ribbon--history) for more detail.
 **Trading partners**	| Link to Trading partner page for the sales order's customer
 
 ### EDI Ribbon – Changes
