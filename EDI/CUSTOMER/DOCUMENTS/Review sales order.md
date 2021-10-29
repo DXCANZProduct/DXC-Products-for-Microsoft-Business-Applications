@@ -36,34 +36,33 @@ When the sales order validation resulted in a warning or error, the **EDI log** 
 - ![alt text](../IMAGE/Error.png "Error") Error identified with the sales order <br>
 - ![alt text](../IMAGE/Warning.png "Warning")  Warning identified with the sales order <br>
 
-To view the actual error message, select the **Log** button available via the **EDI** tab on the Action Pane of the sales order.
+To view the actual validation error messages, select the **Log** button available via the **EDI** tab on the Action Pane of the sales order. 
 
-Note: To setup EDI order validation, see setup validation profiles
-Note: For further information relating to validation refer to the validation section(s) in the process all purchase orders section of this document.
+> Note: To setup EDI order validation, see [Setup validation profiles](../SETUP/Validation%20profiles.md)
+> Note: For further information relating to validation refer to the validation section(s) in the processing of [Customer purchase order](Customer%20purchase%20order.md).
 
-3.4.2.1.1.2	Order Holds
-EDI orders will be placed on hold for the following reasons:
-•	Validation errors have been identified.
-Note: For further information see the Warnings/Errors section on this document
-•	POA is required for the customer. 
-Note: Where a Purchase Order Acknowledgement is required for a Customer, a POA documents must be setup on the Customer EDI record. In addition, the Lock order field in the POA settings profile must be active. This hold will be released once the POA has been sent to the Customer.
-•	Purchase order confirmation must be received from the customer following receipt of a POA. 
-Note: Purchase order confirmation requirements are setup via settings profiles
+## Sales order holds
+EDI sales orders can be placed on hold for the following reasons:
+- Validation errors have been identified.
+> Note: For further information see the Warnings/Errors section on this document
+- POA is required for the customer. 
+> Note: Where a purchase order acknowledgement (POA) is required for a customer, the **Customer purchase order acknowledgement** document must be setup on the customer trading partner's Outgoing documents. In addition, the **Lock order** field in the **Customer purchase order acknowledgement**'s settings profile must be active. This hold will be released once the purchase order acknowledgement has been sent to the customer.
+- Purchase order confirmation must be received from the customer following receipt of a purchase order acknowledgement. 
+> Note: Purchase order confirmation requirements are setup via **Customer purchase order acknowledgement** settings profiles **PO confirmation required**.
 
-An order that has been placed on EDI hold will be visible via the Hold field on the sales order list page.  In addition, the reason for the hold will also be displayed.
+An order that has been placed on EDI hold will be visible via the **Hold** field on the sales order list page. 
 
-Note: When an order has been placed on hold, it will not be possible to release the order for picking or post delivery notes and invoices. 
+> Note: When an order has been placed on hold, it will not be possible to release the order for picking or posting delivery notes and invoices. 
 
-3.4.2.1.1.3	List Page
-Field	Description
-EDI Log	Used to identify that a warning or error has occurred.
-POA Status	All EDI orders requiring a POA will have an additional status to identify where the status of the POA. The EDI status’ available are:
-•	Pending – The purchase order acknowledgement document is enabled and pending for the trading partner (POA’s ‘Lock order’ is Yes) and the order is therefore on hold
-•	Sent - Purchase order acknowledgement has been sent to the customer
-•	Confirm Pending – The purchase order acknowledgment has been sent and a confirmation of the purchase order acknowledgement is required by the trading partner and the order is therefore on hold. POA doc setting ‘PO Confirmation required’ is Yes
-Hold 	Used to identify the hold status of the EDI order
-Do not process	Lock Sales order for processing
-3.4.2.1.1.4	Buttons
+## List Page
+Field			| Description
+:--			|:--
+EDI Log			| Used to identify that a warning or error has occurred.
+POA Status		| All EDI orders requiring a POA will have an additional status to identify the status of the POA. The EDI **POA status**' available are: <br> •	**Pending** – The purchase order acknowledgement document is enabled and pending for the trading partner (POA document setting **Lock order** is _Yes_) and the order is therefore on hold. <br> • **Sent** - Purchase order acknowledgement has been sent to the customer, and a confirmation is not required (POA document setting **PO confirmation required** is _No_) <br> • **Confirm Pending** – The purchase order acknowledgment has been sent and a confirmation of the purchase order acknowledgement is required by the trading partner and the order is therefore on hold (POA doc setting **PO Confirmation required** is _Yes_ <br> • **POC Received** – The customer has returned a purchase order confirmation for the purchase order acknowledgement. 
+**Hold**		| Used to identify the hold status of the EDI order
+**Do not process**	| Lock sales order for processing
+
+## Buttons
 SALES AND MARKETING > SALES ORDERS > ALL SALES ORDERS > EDI TAB
 Field	Description
 Validation	
@@ -79,7 +78,8 @@ The form is filter to Status Pending but can be unfiltered to view automatic or 
 Reference	
 History	See below for more detail
 Trading partners	Link to Trading partner for the Sales order
-3.4.2.1.1.4.1	EDI Ribbon – Changes
+
+### EDI Ribbon – Changes
 All the EDI changes applicable to the Sales order can be manually approved or rejected on Changes. Where the Customer purchase order changes are set to be processed Manually, these would appear as pending changes on this form. All pending records will be displayed in ascending order.
 
 Header:
@@ -129,7 +129,7 @@ Requested receipt date	The requested receipt date (delivery window) from the EDI
 Delivery name	Address for Delivery – Delivery name
 Store code	The store code from the EDI PO line is shown here.
 
-3.4.2.1.1.4.2	EDI Ribbon – History
+### EDI Ribbon – History
 All the EDI staging records applicable to the Sales order can be viewed on History
 Field	Description
 EDI Document type	EDI document type of the staging record
@@ -146,7 +146,7 @@ ASN345435 – D365 Packing slip for the EDI ASN
 IN4734743 – D365 Sales Invoice number for the EDI record.
 Created date and time	Created date and time of the EDI staging record
 
-3.4.2.1.1.5	Header fields
+## Header fields
 SALES AND MARKETING > SALES ORDERS > ALL SALES ORDERS
 After selecting the applicable sales order, the following fields have been added to the Header via the EDI fast tab.
 Field	Description	EDI Source
@@ -196,7 +196,8 @@ Options are:
 •	Sent - The POA has been sent and a Confirmation is not required.
 •	Confirm pending - The POA has been sent and a Confirmation is required. POA document setting ‘PO confirmation required’ is Yes.
 •	POC Received - The Confirmation has been received from the Customer	Determined by POA document setting and if POA has been sent and/or PO confirmation received
-3.4.2.1.1.6	Line fields
+
+## Line fields
 SALES AND MARKETING > SALES ORDERS > ALL SALES ORDERS (EDI TAB)
 After selecting the applicable sales order, the following fields have been added to the Line details via the EDI fast tab.
 
