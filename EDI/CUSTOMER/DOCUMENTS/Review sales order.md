@@ -43,19 +43,19 @@ To view the actual validation error messages, select the **Log** button availabl
 
 ## Sales order holds
 EDI sales orders can be placed on hold for the following reasons:
-- Validation errors have been identified.
-> Note: For further information see the Warnings/Errors section on this document
-- POA is required for the customer. 
-> Note: Where a purchase order acknowledgement (POA) is required for a customer, the **Customer purchase order acknowledgement** document must be setup on the customer trading partner's Outgoing documents. In addition, the **Lock order** field in the **Customer purchase order acknowledgement**'s settings profile must be active. This hold will be released once the purchase order acknowledgement has been sent to the customer.
-- Purchase order confirmation must be received from the customer following receipt of a purchase order acknowledgement. 
-> Note: Purchase order confirmation requirements are setup via **Customer purchase order acknowledgement** settings profiles **PO confirmation required**.
+
+**Reason**				| **Description**
+:--					|:--
+Validation errors have been identified  | For further information see the Warnings/Errors section on this document
+POA is required for the customer	| Where a purchase order acknowledgement (POA) is required for a customer, the **Customer purchase order acknowledgement** document must be setup on the customer trading partner's Outgoing documents. In addition, the **Lock order** field in the **Customer purchase order acknowledgement**'s settings profile must be active. This hold will be released once the purchase order acknowledgement has been sent to the customer.
+Purchase order confirmation must be received from the customer following receipt of a purchase order acknowledgement | Purchase order confirmation requirements are setup via **Customer purchase order acknowledgement** settings profiles **PO confirmation required**.
 
 An order that has been placed on EDI hold will be visible via the **Hold** field on the sales order list page. 
 
 > Note: When an order has been placed on hold, it will not be possible to release the order for picking or posting delivery notes and invoices. 
 
 ## List Page
-Field			| Description
+**Field**		| **Description**
 :--			|:--
 EDI Log			| Used to identify that a warning or error has occurred.
 POA Status		| All EDI orders requiring a POA will have an additional status to identify the status of the POA. The EDI **POA status**' available are: <br> •	**Pending** – The purchase order acknowledgement document is enabled and pending for the trading partner (POA document setting **Lock order** is _Yes_) and the order is therefore on hold. <br> • **Sent** - Purchase order acknowledgement has been sent to the customer, and a confirmation is not required (POA document setting **PO confirmation required** is _No_) <br> • **Confirm Pending** – The purchase order acknowledgment has been sent and a confirmation of the purchase order acknowledgement is required by the trading partner and the order is therefore on hold (POA doc setting **PO Confirmation required** is _Yes_ <br> • **POC Received** – The customer has returned a purchase order confirmation for the purchase order acknowledgement. 
