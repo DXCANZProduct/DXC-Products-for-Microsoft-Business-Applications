@@ -42,7 +42,7 @@ To view the actual validation error messages, select the **Log** button availabl
 > Note: For further information relating to validation refer to the validation section(s) in the processing of [Customer purchase order](Customer%20purchase%20order.md).
 
 ## Sales order holds
-EDI sales orders can be placed on hold for the following reasons. One or more order holds can apply to the sales order.
+EDI sales orders can be placed on hold for the following reasons (one or more could apply). 
 
 **Reason**				| **Description**
 :--					|:--
