@@ -84,56 +84,51 @@ The Customer EDI module includes modifications to Sales orders. Users can access
 ### EDI Ribbon – Changes
 All the EDI changes applicable to the Sales order can be manually approved or rejected via the **Changes** button. Where the Customer purchase order change's settings profile **Processing method** are set to be **Manual**, these would appear as **pending** changes on the changes page. All pending records will be displayed in ascending order.
 
-Header:
-Field	Description
-EDI number	EDI number and link to the staging record
-Status	Status of the Customer purchase order change EDI record.
-Filtered to Pending.
-Options are:
-•	Pending: Where Processing method = Manual and the change hasn’t been approved/rejected
-•	Approved: Where Processing method = Manual and the change has been manually approved and the changes applied to Sales order. If POA is required, an Accept POA record will be created.
-•	Rejected: Change has been manually rejected. Sales order has not been updated. If POA is required, a Reject POA record will be created.
-•	Auto: When the change has automatically been approved and applied to Sales order. Processing method is set to Automatic and all the line order change types received where set with tolerance as ‘Approve’. If POA is required, an Accept POA record will be created.
-Where Processing method is set to Automatic and the line order change types received where set with tolerance as ‘Reject with warning log’: the staging record will error. These can still be viewed on Changes, but won’t be applied to Sales order.
-Order purpose code	Indicates the purpose of the EDI record. Examples are:
-•	Change
-Created date and time	The date and time the selected record was created in the staging table
-Group control number	Customer’s group control number for the staging record
+#### Header
+Header fields for the **Changes** is discussed in this section.
 
-Lines – contains the details for each line on the Customer purchase order change record.
-Lines flagged as ‘No change’ will be ignored in the update.
-Field	Description
-Order line change type	The Change or Response type code. Code specifying the type of change to the line item.
-Line number	The line within the EDI table/file.
-Used to find applicable sales line to update. Except where adding new lines.
-Item number	The item identifier as sent by the trading partner. Used when Item Id source is:
-•	Our item number
-External item number
-Bar code	The item identifier as sent by the trading partner. Used when Item Id source is:
-•	GTIN
-Barcode
-SKU	SKU for item
-Site	Storage dimension - Site
-Warehouse	Storage dimension - Warehouse
-Configuration	Inventory dimension - Configuration
-Colour	Inventory dimension - Colour
-Size	Inventory dimension - Size
-Style	Inventory dimension - Style
-Customer sales quantity	The customer order quantity for this line
-Customer inners	The customer’s inners per outer quantity
-Customer pack	The customer’s pack quantity
-Unit	The customer unit of measure for this line
-Unit price	Customer unit price inclusive of discounts (net price)
-Line amount excluding tax	The total line amount excluding tax.
-Line amount including tax	The total line amount including tax (if provided else 0)
-Requested ship date	The requested ship date (delivery window) from the EDI PO is shown here.
-Requested receipt date	The requested receipt date (delivery window) from the EDI PO is shown here.
-Delivery name	Address for Delivery – Delivery name
-Store code	The store code from the EDI PO line is shown here.
+**Field**		| **Description**
+:--			|:--
+**EDI number**		| EDI number and link to the staging record
+**Status**		| Status of the Customer purchase order change EDI record. Filtered to Pending. <br> Options are: <br> • **Pending** - Where **Processing method** is set to  _Manual_ and the change hasn’t been approved/rejected. <br> • **Approved** - Where **Processing method** is set to _Manual_ and the change has been manually approved and the changes applied to Sales order. If POA is required, an Accept POA record will be created. <br> • **Rejected** - Change has been manually rejected. Sales order has not been updated. If POA is required, a **Reject POA** record will be created. <br> • **Auto** - When the change has automatically been approved and applied to the Sales order. **Processing method** is set to _Automatic_ and all the line order change types received where set with tolerance as _Approve_. If a POA is required, an **Accept POA** record will be created. Where **Processing method** is set to _Automatic_ and the line order change types received where set with tolerance as _Reject with warning log_: the staging record will error. These can still be viewed on Changes, but won’t be applied to Sales order.
+**Order purpose code**	| Indicates the purpose of the EDI record. Examples are: <br> •	Change
+**Created date and time**	| The date and time the selected record was created in the staging table
+**Group control number**	| Customer’s group control number for the staging record
+
+#### Lines
+Contains the details for each line on the Customer purchase order change record. <br> 
+Lines flagged as ‘No change’ will be ignored in the update. 
+
+**Field**			| **Description**
+:--				|:--
+**Order line change type**	| The Change or Response type code. Code specifying the type of change to the line item.
+**Line number**			| The line within the EDI table/file. <br> Used to find applicable sales line to update. Except where adding new lines.
+**Item number**			| The item identifier as sent by the trading partner. Used when Item Id source is: <br> • Our item number <br> • External item number
+**Bar code**			| The item identifier as sent by the trading partner. Used when Item Id source is: <br> • GTIN <br> • Barcode
+**SKU**				| SKU for item
+**Site**			| Storage dimension - Site
+**Warehouse**			| Storage dimension - Warehouse
+**Configuration**		| Inventory dimension - Configuration
+**Colour**			| Inventory dimension - Colour
+**Size**			| Inventory dimension - Size
+**Style**			| Inventory dimension - Style
+**Customer sales quantity**	| The customer order quantity for this line
+**Customer inners**		| The customer’s inners per outer quantity
+**Customer pack**		| The customer’s pack quantity
+**Unit**			| The customer unit of measure for this line
+**Unit price**			| Customer unit price inclusive of discounts (net price)
+**Line amount excluding tax**	| The total line amount excluding tax
+**Line amount including tax**	| The total line amount including tax (if provided else 0)
+**Requested ship date**		| The requested ship date (delivery window)
+**Requested receipt date**	| The requested receipt date (delivery window)
+**Delivery name**		| Address for Delivery – Delivery name
+**Store code**			| The store code
 
 ### EDI Ribbon – History
-All the EDI staging records applicable to the Sales order can be viewed on History
-Field	Description
+All the EDI staging records applicable to the Sales order can be viewed via the **History** button.
+
+**Field**			| **Description**
+:--				|:--
 EDI Document type	EDI document type of the staging record
 EDI number	EDI number and link to the staging record
 Reference	Additional information for the staging record, examples:
