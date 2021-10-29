@@ -42,13 +42,13 @@ To view the actual validation error messages, select the **Log** button availabl
 > Note: For further information relating to validation refer to the validation section(s) in the processing of [Customer purchase order](Customer%20purchase%20order.md).
 
 ## Sales order holds
-EDI sales orders can be placed on hold for the following reasons (one or more could apply). 
+EDI sales orders can be placed on hold for the following reasons (one or more could apply) The below also displays which Hold code would be used as setup in **EDI > Setup > EDI parameters**. 
 
-**Reason**				| **Description**
+**Reason**				| **Description**		| **Hold code in EDI parameters**
 :--					|:--
-Validation errors have been identified  | For further information see the Warnings/Errors section on this document
-Purchase order acknowledgement is required for the customer	| Where a purchase order acknowledgement (POA) is required for a customer: <br> • **Customer purchase order acknowledgement** document must be setup on the customer trading partner's Outgoing documents. <br> • **Lock order** field set to _Yes_ on the **Customer purchase order acknowledgement** settings profile. <br> This hold will be released once the purchase order acknowledgement has been sent to the customer.
-Purchase order confirmation must be received from the customer after sending the purchase order acknowledgement | Purchase order confirmation requirements are setup via: <br> • **Customer purchase order** document must be setup on the customer trading partner's Incoming documents. <br> • **PO confirmation required** set to _Yes_ on the **Customer purchase order acknowledgement** settings profiles . <br> This hold will be released once the purchase order confirmation has been received from the customer.
+Validation errors have been identified  | For further information see the Warnings/Errors section on this document	| Validation error hold code
+Purchase order acknowledgement is required for the customer	| Where a purchase order acknowledgement (POA) is required for a customer: <br> • **Customer purchase order acknowledgement** document must be setup on the customer trading partner's Outgoing documents. <br> • **Lock order** field set to _Yes_ on the **Customer purchase order acknowledgement** settings profile. <br> This hold will be released once the purchase order acknowledgement has been sent to the customer. | POA pending hold code
+Purchase order confirmation must be received from the customer after sending the purchase order acknowledgement | Purchase order confirmation requirements are setup via: <br> • **Customer purchase order** document must be setup on the customer trading partner's Incoming documents. <br> • **PO confirmation required** set to _Yes_ on the **Customer purchase order acknowledgement** settings profiles . <br> This hold will be released once the purchase order confirmation has been received from the customer. | POC pending hold code
 
 An order that has been placed on EDI hold will be visible via the **Hold** field on the sales order list page. 
 
