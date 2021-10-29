@@ -48,7 +48,7 @@ EDI sales orders can be placed on hold for the following reasons:
 :--					|:--
 Validation errors have been identified  | For further information see the Warnings/Errors section on this document
 POA is required for the customer	| Where a purchase order acknowledgement (POA) is required for a customer: <br> • **Customer purchase order acknowledgement** document must be setup on the customer trading partner's Outgoing documents. <br> • **Lock order** field in the **Customer purchase order acknowledgement**'s settings profile must be active. This hold will be released once the purchase order acknowledgement has been sent to the customer.
-Purchase order confirmation must be received from the customer following receipt of a purchase order acknowledgement | Purchase order confirmation requirements are setup via **Customer purchase order acknowledgement** settings profiles **PO confirmation required**. This hold will be release once the purchase order confirmation has been received from the customer.
+Purchase order confirmation must be received from the customer after sending the purchase order acknowledgement | Purchase order confirmation requirements are setup via **Customer purchase order acknowledgement** settings profiles **PO confirmation required**. This hold will be release once the purchase order confirmation has been received from the customer.
 
 An order that has been placed on EDI hold will be visible via the **Hold** field on the sales order list page. 
 
