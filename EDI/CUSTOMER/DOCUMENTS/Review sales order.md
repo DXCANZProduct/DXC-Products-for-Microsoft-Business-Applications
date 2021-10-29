@@ -69,7 +69,7 @@ The Customer EDI module includes modifications to Sales orders. Users can access
 **Field**		| **Description**
 :--			|:--
 <ins>**Validation**</ins>	
-**Validate**		| Select the **Validate** button to run validation rules for the sales order. 
+**Validate**		| Select the **Validate** button to run validation rules for the sales order. Validation rules are determined by **Validation profile** setup on the Trading partner's **Customer purchase order** document.
 **Log**			| Select the **Log** button to view the validation errors that have occurred for the order. 
 <ins>**POA**</ins>	
 **Acknowledgement**	| Option to manually review and/or process the Purchase order acknowledgement to the Customer. The **Send to EDI** option is also included within this form
@@ -82,7 +82,7 @@ The Customer EDI module includes modifications to Sales orders. Users can access
 **Trading partners**	| Link to Trading partner page for the sales order's customer
 
 ### EDI Ribbon – Changes
-All the EDI changes applicable to the Sales order can be manually approved or rejected on Changes. Where the Customer purchase order changes are set to be processed Manually, these would appear as pending changes on this form. All pending records will be displayed in ascending order.
+All the EDI changes applicable to the Sales order can be manually approved or rejected via the **Changes** button. Where the Customer purchase order change's settings profile **Processing method** are set to be **Manual**, these would appear as **pending** changes on the changes page. All pending records will be displayed in ascending order.
 
 Header:
 Field	Description
