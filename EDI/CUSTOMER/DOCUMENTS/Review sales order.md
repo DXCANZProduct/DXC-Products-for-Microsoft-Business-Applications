@@ -54,7 +54,7 @@ An order that has been placed on EDI hold will be visible via the **Hold** field
 
 > Note: When an order has been placed on hold, it will not be possible to release the order for picking or posting delivery notes and invoices. 
 
-## List Page
+## Sales order list Page
 **Field**		| **Description**
 :--			|:--
 **EDI Log**		| Used to identify that a warning or error has occurred.
@@ -62,7 +62,7 @@ An order that has been placed on EDI hold will be visible via the **Hold** field
 **Hold**		| Used to identify the hold status of the EDI order
 **Do not process**	| Lock sales order for processing
 
-## Buttons
+## EDI Tab - Buttons
 
 The Customer EDI module includes modifications to Sales orders. Users can access **All sales orders** page by navigating to **Sales and marketing > Orders > All sales orders**. <br> The following buttons have been added to the EDI tab on the Action Pane.
 
@@ -81,7 +81,7 @@ The Customer EDI module includes modifications to Sales orders. Users can access
 **History**		| Select to view EDI records to the sales order. See [below](#edi-ribbon--history) for more detail.
 **Trading partners**	| Link to Trading partner page for the sales order's customer
 
-### EDI Ribbon – Changes
+### EDI Tab – Changes
 All the EDI changes applicable to the Sales order can be manually approved or rejected via the **Changes** button. Where the Customer purchase order change's settings profile **Processing method** are set to be **Manual**, these would appear as **pending** changes on the changes page. All pending records will be displayed in ascending order.
 
 #### Header
@@ -124,14 +124,14 @@ Lines flagged as ‘No change’ will be ignored in the update.
 **Delivery name**		| Address for Delivery – Delivery name
 **Store code**			| The store code
 
-### EDI Ribbon – History
+### EDI Tab – History
 All the EDI staging records applicable to the Sales order can be viewed via the **History** button.
 
 **Field**			| **Description**
 :--				|:--
 **EDI Document type**		| EDI document type of the staging record
 **EDI number**			| EDI number and link to the staging record
-**Reference**			| Additional information for the staging record, examples: <br> <ins>Inbound</ins> <br> **Original** – First Customer Purchase order received. Only available via Customer purchase order document <br> **Change** – Subsequent change/s to the order. Only available via Customer purchase order change document. <br> **Cancel** – Cancellation received. Can be received via Customer purchase order (if **EDI parameters > Allow historic PO types** is enabled) or Customer purchase order change document <br> **Confirmation** – Confirmation received. Can be received via Customer purchase order (if **EDI parameters > Allow historic PO types** is enabled) or Customer purchase order change document. <br> <ins>Outbound</ins> <br> **C** - Purchase order acknowledgement response <br> **ASN345435** – D365 Packing slip for the EDI ASN <br> **IN4734743** – D365 Sales Invoice number for the EDI record.
+**Reference**			| Additional information for the staging record, examples: <br> <ins>Inbound</ins> <br> • **Original** – First Customer Purchase order received. Only available via Customer purchase order document <br> • **Change** – Subsequent change/s to the order. Only available via Customer purchase order change document. <br> • **Cancel** – Cancellation received. Can be received via Customer purchase order (if **EDI parameters > Allow historic PO types** is enabled) or Customer purchase order change document <br> • **Confirmation** – Confirmation received. Can be received via Customer purchase order (if **EDI parameters > Allow historic PO types** is enabled) or Customer purchase order change document. <br> <ins>Outbound</ins> <br> • **C** - Purchase order acknowledgement response <br> • **ASN345435** – D365 Packing slip for the EDI ASN <br> • **IN4734743** – D365 Sales Invoice number for the EDI record.
 **Created date and time**	| Created date and time of the EDI staging record
 
 ## Header fields
