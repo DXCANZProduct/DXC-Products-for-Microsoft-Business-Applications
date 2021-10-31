@@ -62,7 +62,8 @@ An order that has been placed on EDI hold will be visible via the **Hold** field
 **Hold**		| Used to identify the hold status of the EDI order
 **Do not process**	| Lock sales order for processing
 
-## EDI Tab - Buttons
+## EDI tab
+### EDI tab - Buttons
 
 The Customer EDI module includes modifications to Sales orders. Users can access **All sales orders** page by navigating to **Sales and marketing > Orders > All sales orders**. <br> The following buttons have been added to the EDI tab on the Action Pane.
 
@@ -81,10 +82,10 @@ The Customer EDI module includes modifications to Sales orders. Users can access
 **History**		| Select to view EDI records to the sales order. See [below](#edi-ribbon--history) for more detail.
 **Trading partners**	| Link to Trading partner page for the sales order's customer
 
-### EDI Tab – Changes
+### EDI tab – Changes
 All the EDI changes applicable to the Sales order can be manually approved or rejected via the **Changes** button. Where the Customer purchase order change's settings profile **Processing method** are set to be **Manual**, these would appear as **pending** changes on the changes page. All pending records will be displayed in ascending order.
 
-#### Header
+#### Changes header
 Header fields for the **Changes** is discussed in this section.
 
 **Field**		| **Description**
@@ -95,7 +96,7 @@ Header fields for the **Changes** is discussed in this section.
 **Created date and time**	| The date and time the selected record was created in the staging table
 **Group control number**	| Customer’s group control number for the staging record
 
-#### Lines
+#### Changes lines
 Contains the details for each line on the Customer purchase order change record. <br> 
 Lines flagged as ‘No change’ will be ignored in the update. 
 
@@ -124,7 +125,7 @@ Lines flagged as ‘No change’ will be ignored in the update.
 **Delivery name**		| Address for Delivery – Delivery name
 **Store code**			| The store code
 
-### EDI Tab – History
+### EDI tab – History
 All the EDI staging records applicable to the Sales order can be viewed via the **History** button.
 
 **Field**			| **Description**
@@ -134,32 +135,33 @@ All the EDI staging records applicable to the Sales order can be viewed via the 
 **Reference**			| Additional information for the staging record, examples: <br> <ins>Inbound</ins> <br> • **Original** – First Customer Purchase order received. Only available via Customer purchase order document <br> • **Change** – Subsequent change/s to the order. Only available via Customer purchase order change document. <br> • **Cancel** – Cancellation received. Can be received via Customer purchase order (if **EDI parameters > Allow historic PO types** is enabled) or Customer purchase order change document <br> • **Confirmation** – Confirmation received. Can be received via Customer purchase order (if **EDI parameters > Allow historic PO types** is enabled) or Customer purchase order change document. <br> <ins>Outbound</ins> <br> • **C** - Purchase order acknowledgement response <br> • **ASN345435** – D365 Packing slip for the EDI ASN <br> • **IN4734743** – D365 Sales Invoice number for the EDI record.
 **Created date and time**	| Created date and time of the EDI staging record
 
-## Header fields
-SALES AND MARKETING > SALES ORDERS > ALL SALES ORDERS
-After selecting the applicable sales order, the following fields have been added to the Header via the EDI fast tab.
-Field	Description	EDI Source
-Identification		
-Original EDI number	EDI Customer purchase order staging table record id	Original PO
-Change EDI number	Latest EDI Customer purchase order change staging table record id	Change PO
-Company GLN	The company’s global location number is shown here.	Original PO
-Customer GLN	The Customer’s global location number is shown here.	Original PO
-General		
-Original order date	The purchase order date from the EDI PO is shown here	Original PO
-Change order date	The purchase order date from the EDI PO Change is shown here	Change PO
-Advertisement Date	The advertisement date applicable for the order	Original PO
-Package characteristic code	The code used to for the package contents.	Original PO
-Package label code	The code used for the label.	Original PO
-Store zone	The store zone from the EDI PO is shown here.	Original PO
-Department	The customer’s department from the EDI PO is shown here.	Original PO
-Purpose code	The customer’s purpose code from the EDI PO is shown here.	Original PO
-Buyer code	The customer’s buyer code from the EDI PO is shown here.	Original PO
-Retail buyer location	The customer’s retail buyer location from the EDI PO is shown here.	Original PO
-EDI order type	The EDI order type is shown here.	Original PO
-Order purpose code	Latest purpose code: Original, Change, Cancellation or Confirmation	Original PO / Change PO
-Delivery		
-Store code	The store code from the EDI PO is shown here.
-Can be updated by PO Change.	Original PO / Change PO
-Requested receipt date	The requested receipt date (delivery window) from the EDI PO is shown here.
+## Sales order EDI header fields
+
+The following EDI fields have been added to the Sales order's Header and is available on the EDI fast tab.
+
+**Field**			| **Description**		| **Populated by**
+:--				|:--				|:--
+<ins>**Identification**</ins>		
+**Original EDI number**		| EDI Customer purchase order staging table record id			| Original
+**Change EDI number**		| Latest EDI Customer purchase order change staging table record id	| Change
+**Company GLN**			| The company’s global location number is shown here.			| Original
+**Customer GLN**		| The customer’s global location number is shown here. <br> Populated by staging's Customer GLN, if staging blank populated by Trading partner | Original
+<ins>**General**</ins>		
+**Original order date**		| The purchase order date from the EDI order is shown here		| Original
+**Change order date**		| The purchase order date from the EDI order change is shown here	| Change
+**Advertisement date**		| The advertisement date applicable for the order			| Original
+**Package characteristic code**	| The code used to for the package contents				| Original
+**Package label code**		| The code used for the label						| Original
+**Store zone**			| The store zone from the EDI order is shown here			| Original
+**Department**			| The customer’s department from the EDI order is shown here		| Original
+**Purpose code**		| The customer’s purpose code from the EDI order is shown here		| Original
+**Buyer code**			| The customer’s buyer code from the EDI order is shown here		| Original
+**Retail buyer location**	| The customer’s retail buyer location from the EDI order is shown here	| Original
+**EDI order type**		| The EDI order type is shown here					| Original
+**Order purpose code**		| Latest purpose code: Original, Change, Cancellation or Confirmation	| Original / Change
+<ins>**Delivery**</ins>	
+**Store code**			| The store code from the EDI order is shown here. <br> Can be updated by PO Change.	| Original / Change
+**Requested receipt date**	| The requested receipt date (delivery window) from the EDI PO is shown here.
 Can be updated by PO Change.	Original PO / Change PO
 Requested ship date	The requested ship date (delivery window) from the EDI PO is shown here.
 Can be updated by PO Change.	Original PO / Change PO
