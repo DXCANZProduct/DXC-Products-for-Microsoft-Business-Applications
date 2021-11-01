@@ -5,7 +5,7 @@ title: [EDI Customer]
 description: [EDI Customer Documents - Customer purchase order acknowledgement]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 23/09/2021
+ms.date: 1/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,4 +27,21 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Customer purchase order
+# Customer purchase order acknowledgement
+
+Customer purchase order acknowledgement (POA) can be sent for a sales order created via EDI.
+They may even be a requirement and one of the reasons for a sales order being put on hold. Where the [Customer purchase order acknowledgement document setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md) **Lock order** is set to _Yes_, the sales order will be put on hold till the the POA has been sent. The Hold code as setup on **EDI > Setup > EDI parameters** tab **Hold codes** field **POA pending hold code**.
+
+## Sales order
+Users can access **All sales orders** page by navigating to **Sales and marketing > Orders > All sales orders** and view the Acknowledgement's details by using the below buttons that have been added to the **EDI** tab on the Action Pane.
+
+Field	                  | Description
+:--                     |:--
+**Acknowledgement**     |	Select the **Acknowledgement** button to review order details for the POA. The details of this page will be discussed in XXX
+**Send to EDI**         |	Select the **Send to EDI** button to create the **Customer purchase order acknowledgement** staging table record.
+**Reset flag**          |	Select the **Reset flag** button to reset the **EDI status** to allow for re-sending of the POA to the staging table. Note: The POA record on the staging table should be deleted manually before the sales order flag is reset.
+
+## Processing
+The POA can be sent manually or automatically via the EDI periodic job **Send customer purhase order acknowledgement**.
+Both of these options will be discussed in the following subsections.
+
