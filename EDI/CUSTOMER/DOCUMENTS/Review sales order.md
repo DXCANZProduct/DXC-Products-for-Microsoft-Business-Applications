@@ -185,6 +185,7 @@ The following EDI fields have been added to the Sales order's Header and is avai
 The following EDI fields have been added to the Sales order's Lines and is available on the **EDI** tab for the applicable sales order.
 
 **Field**			| **Description**
+:--				|:--
 <ins>**General**</ins>	
 **Line number**			| EDI line number
 **Store code**			| Store code for the individual line
@@ -194,7 +195,7 @@ The following EDI fields have been added to the Sales order's Lines and is avail
 The following EDI fields have been added to the Sales order's Lines and is available on the **POA resonse** tab. <br>
 After selecting the applicable sales order, the following summary table displays details of Purchase Order Acknowledgement (POA) sent for the sales order. <br>
 Example:
-		| **Customer**	| **Acknowledged**	| **Customer code**			| **Auto triggered**
+<br>		| **Customer**	| **Acknowledged**	| **Customer code**			| **Auto triggered**
 :--		|:--		|:--			|:--					|:--		
 **Net Price**	| 40		| 41			| PA (Line price – advise)		| Yes
 **Quantity**	| 100		| 100			| IA (Line item – accept)		| Yes
