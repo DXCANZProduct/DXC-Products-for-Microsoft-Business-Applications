@@ -137,15 +137,22 @@ All the EDI staging records applicable to the Sales order can be viewed via the 
 
 ## Sales order EDI header fields
 
-The following EDI fields have been added to the Sales order's Header and is available on the EDI fast tab.
+The following EDI fields have been added to the Sales order's Header and is available on the EDI fast tab. <br>
+**Populated by** will indicate if the field is populated by:
+- Customer purchase order staging record - Original
+- Change purchase order staging record - Change
+- Customer purchase order staging record, but can be updated by change purchase order staging record - Original / Change
+- Customer trading partner - Trading partner
+- Customer purchase order staging record, but if blank populate by Trading partner - Original / Trading partner
+- Customer purchase order document setting profile - Doc setting
 
-**Field**			| **Description**		| **Populated by**
-:--				|:--				|:--
+**Field**			| **Description**		| **Populated by 
+:--				|:--				|:--							  	
 <ins>**Identification**</ins>		
-**Original EDI number**		| EDI Customer purchase order staging table record id			| Original
+**Original EDI number**		| EDI Customer purchase order staging table record id			| Original	
 **Change EDI number**		| Latest EDI Customer purchase order change staging table record id	| Change
 **Company GLN**			| The company’s global location number is shown here.			| Original
-**Customer GLN**		| The customer’s global location number is shown here. <br> Populated by staging's Customer GLN, if staging blank populated by Trading partner | Original
+**Customer GLN**		| The customer’s global location number is shown here. <br> Populated by staging's Customer GLN, if staging blank populated by Trading partner | Original / Trading partner
 <ins>**General**</ins>		
 **Original order date**		| The purchase order date from the EDI order is shown here		| Original
 **Change order date**		| The purchase order date from the EDI order change is shown here	| Change
@@ -158,36 +165,22 @@ The following EDI fields have been added to the Sales order's Header and is avai
 **Buyer code**			| The customer’s buyer code from the EDI order is shown here		| Original
 **Retail buyer location**	| The customer’s retail buyer location from the EDI order is shown here	| Original
 **EDI order type**		| The EDI order type is shown here					| Original
-**Order purpose code**		| Latest purpose code: Original, Change, Cancellation or Confirmation	| Original / Change
+**Order purpose code**		| Latest purpose code: Original, Change, Cancellation or Confirmation	| Original
 <ins>**Delivery**</ins>	
-**Store code**			| The store code from the EDI order is shown here. <br> Can be updated by PO Change.	| Original / Change
-**Requested receipt date**	| The requested receipt date (delivery window) from the EDI PO is shown here.
-Can be updated by PO Change.	Original PO / Change PO
-Requested ship date	The requested ship date (delivery window) from the EDI PO is shown here.
-Can be updated by PO Change.	Original PO / Change PO
-Delivery time	The delivery time from the EDI PO is shown here.
-Can be updated by PO Change.	Original PO / Change PO
-Version		
-Original version number	The PO version number from the EDI PO.	Original PO
-Change version number	The latest PO version number from the EDI PO change	Change PO
-Settings		
-Bypass duplicate check	Used to validate the customer purchase order number.
-Note: For further information see Duplicate tolerance in settings profiles
-EDI > SETUP > DOCUMENT TYPES > EDI DOCUMENTS > CUSTOMER > INBOUND > PO > SETTINGS. Linked to Customer via Trading partner setup for the applicable document type via:
-EDI > SETUP > TRADING PARTNERS	Determined by PO document setting
-No Backorders	Identify if the trading partner accepts backorders. 
-Note: Copied from the trading partner parameter and used on the POA to identify full or partial shipments
-EDI > SETUP > TRADING PARTNERS	Determined by Trading partner Option
-Status		
-POA status	Current purchase order acknowledgement status.
-This field is populated by EDI module, not editable.
-Options are: 
-•	Pending - The POA document setting is set to ‘Lock order’ and the POA is thus required and haven’t been sent yet.
-•	Sent - The POA has been sent and a Confirmation is not required.
-•	Confirm pending - The POA has been sent and a Confirmation is required. POA document setting ‘PO confirmation required’ is Yes.
-•	POC Received - The Confirmation has been received from the Customer	Determined by POA document setting and if POA has been sent and/or PO confirmation received
+**Store code**			| The store code from the EDI order is shown here. <br> Can be updated by order change.	| Original / Change
+**Requested receipt date**	| The requested receipt date (delivery window) from the EDI order is shown here. <br> Can be updated by order change.	| Original / Change
+**Requested ship date**		| The requested ship date (delivery window) from the EDI order is shown here. <br> Can be updated by order change.	| Original / Change
+**Delivery time**		| The delivery time from the EDI order is shown here. <br> Can be updated by order change.	| Original / Change
+<ins>**Version**</ins>		
+**Original version number**	| The original version number from the EDI order.			| Original
+**Change version number**	| The latest PO version number from the EDI order change		| Change
+<ins>*Settings**</ins>		
+**Bypass duplicate check**	| Used to validate the customer purchase order number. <br> Note: For further information see **Duplicate tolerance** in [Customer purchase order settings profiles](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md)			  | Doc setting
+**No backorders**		| Identify if the trading partner accepts backorders. <br> Note: Copied from the trading partner setup **No backorders** and used on the **Customer purchase order acknowledgement** to identify full or partial shipments. 			 | Trading partner
+<ins>**Status**</ins>		
+**POA status**			| Current purchase order acknowledgement status. This field is populated by the EDI module and not editable. Options are: <br> • **Pending** - The POA document setting **Lock order** is set to _Yes_ which makes the POA required but in this scenario haven’t been sent yet. <br> • **Sent** - The POA has been sent and a Confirmation is not required as POA document setting **PO confirmation required** is set to _No_. <br> •	**Confirm pending** - The POA has been sent and a Confirmation is required. POA document setting **PO confirmation required** is set to _Yes_. <br> • **POC received** - The Confirmation has been received from the Customer. | Doc setting, POA and POC
 
-## Line fields
+## Sales order EDI header fields
 SALES AND MARKETING > SALES ORDERS > ALL SALES ORDERS (EDI TAB)
 After selecting the applicable sales order, the following fields have been added to the Line details via the EDI fast tab.
 
