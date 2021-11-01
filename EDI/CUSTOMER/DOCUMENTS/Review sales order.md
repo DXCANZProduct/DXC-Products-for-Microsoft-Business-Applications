@@ -210,15 +210,19 @@ Example:
 **Inner**	| 6		| 6			| LIA (Line item – inner accept)	| Yes
 
 #### Auto triggered
-POA response tab auto triggered values are calculated by:
-- **Net price**: 
+POA response's auto triggered values are calculated by:
+- **Net price**: Customer purchase order document setting profile **Use customer price**:
+    - **Yes** - EDI order line's unit price 
+    - **No** - System calculated unit price for the customer and item combination
 - **Quantity**: Customer purchase order acknowledgement document setting profile **Quantity type**:
-    - **Customer quantity** - Use the EDI order line's quantity
-    - **Reserved quantity** - Use the sales order line's reserved quantity
-- **Shipment**:
+    - **Customer quantity** - EDI order line's quantity
+    - **Reserved quantity** - Sales order line's reserved quantity
+- **Shipment**: Will there be more shipments for the order line. **POA code** for [POA responde code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md):
+    - **Line shipment - full** - Full EDI order line quantity is reserved on the sales order line or Trading partner setting **No backorders** is set to _Yes_. 
+    - **Line shipment - partial** -  Partial EDI order line quantity is reserved for the sales order line, or the **Customer purchase order acknowledgement** document setting profile **Quantity type** is set to use _Customer quantity_.
 - **Pack**: Customer purchase order acknowledgement document setting profile **Pack type**
-    - **Customer pack** - Use the EDI order line's **Customer pack**
-    - **System pack** - Uses the 
+    - **Customer pack** - EDI order line's **Customer pack**
+    - **System pack** - Purchase order acknowledgement document setting profile **Package size - inner/outer** determines if the inner or outer unit determines the system pack. Example: Product has a outer unit of box and inner unit of ea with a unit conversion of 10 between the two units. For a order of 200 ea, the results for system pack would be the following if **Package size - inner/outer** is set to: <br> • Inner: 200 <br> • Outer: 200/10 = 20
 - **Inner**: Customer purchase order acknowledgement document setting profile **Inner type**:
-    - **Customer inner** - Use the EDI order line's **Customer inners**
-    - **System inner** - Calculated by products's unit conversion between **Outer unit** and **Inner unit** (EDI FasTab on Product). 
+    - **Customer inner** - EDI order line's **Customer inners**
+    - **System inner** - Products's unit conversion between **Outer unit** and **Inner unit**  as setup on EDI FasTab on Product
