@@ -186,14 +186,14 @@ The following EDI fields have been added to the Sales order's Lines and is avail
 
 **Field**			| **Description**
 :--				|:--
-<ins>**General**</ins>	
 **Line number**			| EDI line number
 **Store code**			| Store code for the individual line
 **EDI item number**		| Item number as provided on EDI inbound document
+**Order line change type**  | If the order line was added or updated by a customer purchase order change, the [Order line change type](../SETUP/CUSTOMER%20SETUP/Order%20line%20change%20type%20group.md#setup-order-line-change-type-group) will be displayed. Some examples: • **Add additional item** - The line has been added by a change <br> • **Price change** - The sales line's unit price has been updated by a change <br> • **Delete items** - The sales line's deliver remainder has been cancelled by a change
 
 ### POA resonse tab
 The following EDI fields have been added to the Sales order's Lines and is available on the **POA resonse** tab. <br>
-After selecting the applicable sales order, the following summary table displays details of Purchase Order Acknowledgement (POA) sent for the sales order. <br>
+After selecting the applicable sales order, the following summary table displays details of Purchase Order Acknowledgement (POA) sent for the sales order. <br> 
 Example:
 <br>		| **Customer**	| **Acknowledged**	| **Customer code**			| **Auto triggered**
 :--		|:--		|:--			|:--					|:--		
