@@ -29,7 +29,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Customer purchase order acknowledgement
 
-> Note: Customer purchase order acknowledgement (POA) can only be sent for a sales order created via EDI. <br>
+> Note: Customer purchase order acknowledgement (POA) can only be sent for a sales order created via EDI.
+
 They may even be a requirement and one of the reasons for a sales order being put on hold. Where the [Customer purchase order acknowledgement document setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md) **Lock order** is set to _Yes_, the sales order will be put on hold till the the POA has been sent. The Hold code as setup on **EDI > Setup > EDI parameters** tab **Hold codes** field **POA pending hold code**.
 
 ## Sales order
