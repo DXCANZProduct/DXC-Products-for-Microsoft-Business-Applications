@@ -43,6 +43,41 @@ Field	                  | Description
 **Reset flag**          |	Select the **Reset flag** button to reset the **EDI status** to allow for re-sending of the POA to the staging table. Note: The POA record on the staging table should be deleted manually before the sales order flag is reset.
 
 ## Processing
-The POA can be sent manually or automatically via the EDI periodic job **Send customer purhase order acknowledgement**.
+The POA can be sent [manually] or [automatically] to the customer.
 Both of these options will be discussed in the following subsections.
+
+### Manually processing Purchase order acknowledgement
+The **Acknowledgement** page is accessed by navigating to **Sales and marketing > Orders > All sales orders**, and selecting **Acknowledgement** on the **EDI** tab on the Action Pane.
+
+The Acknowledgement page is split into five tabs:
+1. [Header]() - Manage the POA header response for ship and receipt dates. As well as the POA header code code, for example is the acknowledgement a: <br> • Header - accept <br> • Header - change <br> • Header - accepted with reserved <br> • Header - not accepted
+3. [Line price]() - 
+4. [Line quantity]() - 
+5. [Line pack]() - 
+6. [Line inner]() - 
+
+#### Header
+##### Fields
+Field	Description
+Delivery Date	
+Customer	Customer requested ship date (start of delivery window)
+Acknowledged	Acknowledged receipt date (update requested receipt date)
+Deadline	
+Customer	Customer requested receipt date (end of delivery window)
+Acknowledged	Acknowledged delivery date (update deadline date)
+POA	
+POA code	POA code to be sent to the Customer
+Auto triggered	Update for auto triggered POA codes
+
+##### Buttons
+It is possible to update the POA response codes by using the available buttons:
+Field	Description
+Order POA	Automatically set the response codes.
+Note: When selected the response codes for all tabs will be set.  Where auto generated codes are overwritten, the header code should be manually set.
+Auto response codes:
+•	Header – accept – Where all response codes are ‘accept’
+•	Header - change - Where the customer and acknowledged dates are different
+•	Header - accepted with reserved - Where the customer and acknowledged dates are the same, however one or more items have an ‘advise difference code
+POA Responses	Manually set the response code to either of above response codes or “Not accepted” which is only available for manual selection.
+
 
