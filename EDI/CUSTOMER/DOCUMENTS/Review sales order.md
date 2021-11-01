@@ -212,9 +212,13 @@ Example:
 #### Auto triggered
 POA response tab auto triggered values are calculated by:
 - **Net price**: 
-- **Quantity**: Customer purchase order acknowledgement document setting profile **Quantity type**. <br> • **Customer quantity** - Use the EDI order line's quantity <br> • **Reserved quantity** - Use the sales order line's reserved quantity
+- **Quantity**: Customer purchase order acknowledgement document setting profile **Quantity type**:
+    - **Customer quantity** - Use the EDI order line's quantity
+    - **Reserved quantity** - Use the sales order line's reserved quantity
 - **Shipment**:
-- **Pack**: Customer purchase order acknowledgement document setting profile **Pack type**. <br> • **Customer pack** - Use the EDI order line's **Customer pack** <br> • **System pack** - Uses the 
-- **Inner**: Customer purchase order acknowledgement document setting profile **Inner type**. <br> • **Customer inner** - Use the EDI order line's **Customer inners** <br> • **System inner** - Calculated by products's unit conversion between **Outer unit** and **Inner unit** (EDI FasTab on Product). 
-
-
+- **Pack**: Customer purchase order acknowledgement document setting profile **Pack type**
+    - **Customer pack** - Use the EDI order line's **Customer pack**
+    - **System pack** - Uses the 
+- **Inner**: Customer purchase order acknowledgement document setting profile **Inner type**:
+    - **Customer inner** - Use the EDI order line's **Customer inners**
+    - **System inner** - Calculated by products's unit conversion between **Outer unit** and **Inner unit** (EDI FasTab on Product). 
