@@ -139,12 +139,12 @@ All the EDI staging records applicable to the Sales order can be viewed via the 
 
 The following EDI fields have been added to the Sales order's Header and is available on the EDI fast tab. <br>
 **Populated by** will indicate if the field is populated by:
-- Customer purchase order staging record - Original
-- Change purchase order staging record - Change
-- Customer purchase order staging record, but can be updated by change purchase order staging record - Original / Change
-- Customer trading partner - Trading partner
-- Customer purchase order staging record, but if blank populate by Trading partner - Original / Trading partner
-- Customer purchase order document setting profile - Doc setting
+- Original - Customer purchase order staging record
+- Change - Change purchase order staging record
+- Original / Change - Customer purchase order staging record, but can be updated by change purchase order staging record 
+- Trading partner - Customer trading partner
+- Original / Trading partner - Customer purchase order staging record, but if blank populate by Trading partner
+- Doc setting - Customer purchase order document setting profile
 
 **Field**			| **Description**		| **Populated by 
 :--				|:--				|:--							  	
@@ -178,7 +178,7 @@ The following EDI fields have been added to the Sales order's Header and is avai
 **Bypass duplicate check**	| Used to validate the customer purchase order number. <br> Note: For further information see **Duplicate tolerance** in [Customer purchase order settings profiles](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md)			  | Doc setting
 **No backorders**		| Identify if the trading partner accepts backorders. <br> Note: Copied from the trading partner setup **No backorders** and used on the **Customer purchase order acknowledgement** to identify full or partial shipments. 			 | Trading partner
 <ins>**Status**</ins>		
-**POA status**			| Current purchase order acknowledgement status. This field is populated by the EDI module and not editable. Options are: <br> • **Pending** - The POA document setting **Lock order** is set to _Yes_ which makes the POA required but in this scenario haven’t been sent yet. <br> • **Sent** - The POA has been sent and a Confirmation is not required as POA document setting **PO confirmation required** is set to _No_. <br> •	**Confirm pending** - The POA has been sent and a Confirmation is required. POA document setting **PO confirmation required** is set to _Yes_. <br> • **POC received** - The Confirmation has been received from the Customer. | Doc setting, POA and POC
+**POA status**			| Current purchase order acknowledgement status. This field is populated by the EDI module and not editable. Options are: <br> • **Pending** - The POA document setting **Lock order** is set to _Yes_ which makes the POA required but in this scenario haven’t been sent yet. <br> • **Sent** - The POA has been sent and a Confirmation is not required as POA document setting **PO confirmation required** is set to _No_. <br> •	**Confirm pending** - The POA has been sent and a Confirmation is required. POA document setting **PO confirmation required** is set to _Yes_. <br> • **POC received** - The Confirmation has been received from the Customer. | Doc setting, <br> POA and POC
 
 ## Sales order EDI line fields
 ### EDI tab
@@ -193,8 +193,7 @@ The following EDI fields have been added to the Sales order's Lines and is avail
 
 ### POA resonse tab
 The following EDI fields have been added to the Sales order's Lines and is available on the **POA resonse** tab. <br>
-After selecting the applicable sales order, the following summary table displays details of Purchase Order Acknowledgement (POA) sent for the sales order. <br> 
-Example:
+After selecting the applicable sales order, the following summary table displays details of Purchase Order Acknowledgement (POA) sent for the sales order. Example: <br>
 <br>		| **Customer**	| **Acknowledged**	| **Customer code**			| **Auto triggered**
 :--		|:--		|:--			|:--					|:--		
 **Net Price**	| 40		| 41			| PA (Line price – advise)		| Yes
