@@ -143,7 +143,7 @@ The following EDI fields have been added to the Sales order's Header and is avai
 - Change - Change purchase order staging record
 - Original / Change - Customer purchase order staging record, but can be updated by change purchase order staging record 
 - Trading partner - Customer trading partner
-- Original / Trading partner - Customer purchase order staging record, but if blank populate by Trading partner
+- Original / Trading partner - Customer purchase order staging record, but if blank populated by Trading partner
 - Doc setting - Customer purchase order document setting profile
 
 **Field**			| **Description**		| **Populated by 
