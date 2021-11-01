@@ -146,7 +146,7 @@ The following EDI fields have been added to the Sales order's Header and is avai
 - Original / Trading partner - Customer purchase order staging record, but if blank populated by Trading partner
 - Doc setting - Customer purchase order document setting profile
 
-**Field**			| **Description**		| **Populated by 
+**Field**			| **Description**		| **Populated by** 
 :--				|:--				|:--							  	
 <ins>**Identification**</ins>		
 **Original EDI number**		| EDI Customer purchase order staging table record id			| Original	
