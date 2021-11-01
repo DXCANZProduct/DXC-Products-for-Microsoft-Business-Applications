@@ -50,7 +50,7 @@ Both of these options will be discussed in the following subsections.
 The **Acknowledgement** page is accessed by navigating to **Sales and marketing > Orders > All sales orders**, and selecting **Acknowledgement** on the **EDI** tab on the Action Pane.
 
 The Acknowledgement page is split into five tabs:
-1. [Header]() - Manage the POA header response for ship and receipt dates. As well as the POA header code code, for example is the acknowledgement a: <br> • Header - accept <br> • Header - change <br> • Header - accepted with reserved <br> • Header - not accepted
+1. [Header]() - Manage the POA header response for ship and receipt dates. <br> As well as the POA header code code, for example is the acknowledgement a: <br> • Header - accept <br> • Header - change <br> • Header - accepted with reserved <br> • Header - not accepted
 3. [Line price]() - 
 4. [Line quantity]() - 
 5. [Line pack]() - 
