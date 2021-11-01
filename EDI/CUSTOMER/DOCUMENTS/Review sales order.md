@@ -5,7 +5,7 @@ title: [EDI Customer]
 description: [EDI Customer Documents - Review sales order]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 18/10/2021
+ms.date: 1/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
