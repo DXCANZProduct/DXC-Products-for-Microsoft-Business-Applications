@@ -180,23 +180,25 @@ The following EDI fields have been added to the Sales order's Header and is avai
 <ins>**Status**</ins>		
 **POA status**			| Current purchase order acknowledgement status. This field is populated by the EDI module and not editable. Options are: <br> • **Pending** - The POA document setting **Lock order** is set to _Yes_ which makes the POA required but in this scenario haven’t been sent yet. <br> • **Sent** - The POA has been sent and a Confirmation is not required as POA document setting **PO confirmation required** is set to _No_. <br> •	**Confirm pending** - The POA has been sent and a Confirmation is required. POA document setting **PO confirmation required** is set to _Yes_. <br> • **POC received** - The Confirmation has been received from the Customer. | Doc setting, POA and POC
 
-## Sales order EDI header fields
-SALES AND MARKETING > SALES ORDERS > ALL SALES ORDERS (EDI TAB)
-After selecting the applicable sales order, the following fields have been added to the Line details via the EDI fast tab.
+## Sales order EDI line fields
+### EDI tab
+The following EDI fields have been added to the Sales order's Lines and is available on the **EDI** tab for the applicable sales order.
 
-Field	Description
-General	
-Line number	EDI line number
-Store code	Store code for the individual line
-EDI item number	Item number as provided on EDI inbound document
+**Field**			| **Description**
+<ins>**General**</ins>	
+**Line number**			| EDI line number
+**Store code**			| Store code for the individual line
+**EDI item number**		| Item number as provided on EDI inbound document
 
-SALES AND MARKETING > SALES ORDERS > ALL SALES ORDERS (POA RESPONSE TAB)
-After selecting the applicable sales order, the following summary table of the POA have been added to the Line details via the POA response fast tab.
+### POA resonse tab
+The following EDI fields have been added to the Sales order's Lines and is available on the **POA resonse** tab. <br>
+After selecting the applicable sales order, the following summary table displays details of Purchase Order Acknowledgement (POA) sent for the sales order. <br>
 Example:
-	Customer	Acknowledged	Customer code	Auto triggered
-Net Price	40	41	PA (Line price – advise)	Yes
-Quantity	100	100	IA (Line item – accept)	Yes
-Shipment			SF (Line shipment – full)	Yes
-Pack		8	PD (Line item – pack difference)	Yes
-Inner	6	6	LIA (Line item – inner accept)	Yes
+		| **Customer**	| **Acknowledged**	| **Customer code**			| **Auto triggered**
+:--		|:--		|:--			|:--					|:--		
+**Net Price**	| 40		| 41			| PA (Line price – advise)		| Yes
+**Quantity**	| 100		| 100			| IA (Line item – accept)		| Yes
+**Shipment**	|		|			| SF (Line shipment – full)		| Yes
+**Pack**	|		| 8			| PD (Line item – pack difference)	| Yes
+**Inner**	| 6		| 6			| LIA (Line item – inner accept)	| Yes
 
