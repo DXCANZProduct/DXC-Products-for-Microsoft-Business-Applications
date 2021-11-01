@@ -193,7 +193,14 @@ The following EDI fields have been added to the Sales order's Lines and is avail
 
 ### POA resonse tab
 The following EDI fields have been added to the Sales order's Lines and is available on the **POA resonse** tab. <br>
-After selecting the applicable sales order, the following summary table displays details of Purchase Order Acknowledgement (POA) sent for the sales order. Example: <br>
+After selecting the applicable sales order, the following details available are: 
+- Customer - Customer purchase order values
+Once the Customer purchase order acknowledgement (POA) has been sent, these following values are populated:
+- Acknowledged - Acknowledged value sent on the customer purchase order acknowledgement
+- Customer code - The customer's mapped value for the response as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md)
+- Auto triggered - Indicates if the acknowledgement was auto triggered else it was manually set by a user.
+
+Example:
 <br>		| **Customer**	| **Acknowledged**	| **Customer code**			| **Auto triggered**
 :--		|:--		|:--			|:--					|:--		
 **Net Price**	| 40		| 41			| PA (Line price – advise)		| Yes
@@ -201,4 +208,13 @@ After selecting the applicable sales order, the following summary table displays
 **Shipment**	|		|			| SF (Line shipment – full)		| Yes
 **Pack**	|		| 8			| PD (Line item – pack difference)	| Yes
 **Inner**	| 6		| 6			| LIA (Line item – inner accept)	| Yes
+
+#### Auto triggered
+POA response tab auto triggered values are calculated by:
+- **Net price**: 
+- **Quantity**: Customer purchase order acknowledgement document setting profile **Quantity type**. <br> • **Customer quantity** - Use the EDI order line's quantity <br> • **Reserved quantity** - Use the sales order line's reserved quantity
+- **Shipment**:
+- **Pack**: Customer purchase order acknowledgement document setting profile **Pack type**. <br> • **Customer pack** - Use the EDI order line's **Customer pack** <br> • **System pack** - Uses the 
+- **Inner**: Customer purchase order acknowledgement document setting profile **Inner type**. <br> • **Customer inner** - Use the EDI order line's **Customer inners** <br> • **System inner** - Calculated by products's unit conversion between **Outer unit** and **Inner unit** (EDI FasTab on Product). 
+
 
