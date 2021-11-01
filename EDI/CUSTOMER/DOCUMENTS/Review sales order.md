@@ -174,7 +174,7 @@ The following EDI fields have been added to the Sales order's Header and is avai
 <ins>**Version**</ins>		
 **Original version number**	| The original version number from the EDI order.			| Original
 **Change version number**	| The latest PO version number from the EDI order change		| Change
-<ins>*Settings**</ins>		
+<ins>**Settings**</ins>		
 **Bypass duplicate check**	| Used to validate the customer purchase order number. <br> Note: For further information see **Duplicate tolerance** in [Customer purchase order settings profiles](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md)			  | Doc setting
 **No backorders**		| Identify if the trading partner accepts backorders. <br> Note: Copied from the trading partner setup **No backorders** and used on the **Customer purchase order acknowledgement** to identify full or partial shipments. 			 | Trading partner
 <ins>**Status**</ins>		
