@@ -222,7 +222,7 @@ POA response's auto triggered values are calculated by:
     - **Line shipment - partial** -  Partial EDI order line quantity is reserved for the sales order line, or the **Customer purchase order acknowledgement** document setting profile **Quantity type** is set to use _Customer quantity_.
 - **Pack**: Customer purchase order acknowledgement document setting profile **Pack type**
     - **Customer pack** - EDI order line's **Customer pack**
-    - **System pack** - Purchase order acknowledgement document setting profile **Package size - inner/outer** determines if the inner or outer unit determines the system pack. Example: Product has a outer unit of box and inner unit of ea with a unit conversion of 10 between the two units. For a order of 200 ea, the results for system pack would be the following if **Package size - inner/outer** is set to: <br> • Inner: 200 <br> • Outer: 200/10 = 20
+    - **System pack** - Purchase order acknowledgement document setting profile **Package size - inner/outer** determines if the inner or outer unit determines the system pack. Example: Product has an outer unit of box and inner unit of ea with an unit conversion of 10 between the two units. For an order of 200 ea, the results for system pack would be the following if **Package size - inner/outer** is set to: <br> • Inner: 200 <br> • Outer: 200/10 = 20
 - **Inner**: Customer purchase order acknowledgement document setting profile **Inner type**:
     - **Customer inner** - EDI order line's **Customer inners**
     - **System inner** - Products's unit conversion between **Outer unit** and **Inner unit**  as setup on EDI FasTab on Product
