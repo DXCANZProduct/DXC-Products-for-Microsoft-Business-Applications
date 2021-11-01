@@ -50,11 +50,13 @@ Both of these options will be discussed in the following subsections.
 The **Acknowledgement** page is accessed by navigating to **Sales and marketing > Orders > All sales orders**, and selecting **Acknowledgement** on the **EDI** tab on the Action Pane.
 
 The Acknowledgement page is split into five tabs:
-1. [Header]() - Manage the POA header response for ship and receipt dates. <br> As well as the POA header code code, for example is the acknowledgement a: <br> • Header - accept <br> • Header - change <br> • Header - accepted with reserved <br> • Header - not accepted
-3. [Line price]() - 
+1. [Header](#header) - Manage the POA header response for ship and receipt dates. <br> POA response code for the header, the mapped value for the applicable response will be displayed: <br> • Header - accept <br> • Header - change <br> • Header - accepted with reserved <br> • Header - not accepted
+3. [Line price]() - Manage the POA line price response, example Customer's sales price vs. Net system price. <br> POA responde code for line price, example if: <br> • The acknowledged price matches customer's sales price, the mapped value for **Line price - accept** else <br> • The acknowledged prices doesn't match the customer's sales price, the mapped value for **Line price - advise**
 4. [Line quantity]() - 
 5. [Line pack]() - 
 6. [Line inner]() - 
+
+Customer mapped values for POA response codes are setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) and assigned to the Customer trading partner's **POA response code group**.
 
 #### Header
 ##### Fields
