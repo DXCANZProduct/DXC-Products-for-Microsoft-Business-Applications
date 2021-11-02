@@ -106,7 +106,7 @@ It is possible to update the Acknowledged values and POA response codes by using
 Button              | Description
 :--                 |:--
 **Inventory**       |	Update the dimensions displayed on the POA acknowledgement form
-**Item POA**        |	• **Use system price** - Update the acknowledged price field to the system price <br> • **Use customer price**	Update the acknowledged price field to the customer sales price <br> • **Clear response codes** - Clear previously set response codes <br> **Auto set response codes** - Automatically set the response code to: <br> <pre>  •	**Line price – accept** – Where the customer and acknowledged price are the same <br>  •	**Line price – advise** – Where the customer and acknowledged price are different </pre>
+**Item POA**        |	• **Use system price** - Update the acknowledged price field to the system price <br> • **Use customer price**	Update the acknowledged price field to the customer sales price <br> • **Clear response codes** - Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response code to: <br> <pre>  •	**Line price – accept** – Where the customer and acknowledged price are the same <br>  •	**Line price – advise** – Where the customer and acknowledged price are different </pre>
 **POA responses**	  | Manually set the response code to either of above response codes
 
 #### Line quantity
