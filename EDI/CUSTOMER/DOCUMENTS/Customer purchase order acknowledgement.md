@@ -77,6 +77,6 @@ It is possible to update the POA response codes by using the available buttons:
 Field	              | Description
 :--                 |:--
 **Order POA**       |	Automatically set the response codes. <br> Note: When selected the response codes for all the tabs will be set.  Where auto generated codes are overwritten, the header code should be manually set.
-**POA response**    |	Manually set the response code to either of the following: <br> • Change <br> • Accepted <br> • Not accepted - only available for manual selection <br> • Accepted with reserve. If the auto triggered POA code has been manually overridden using this button, the field **Auto triggered** will be set to _No_.
+**POA response**    |	Manually set the response code to either of the following: <br> • **Change** <br> • **Accepted** <br> • **Not accepted** - only available for manual selection <br> • **Accepted with reserve** <br> If the auto triggered POA code has been manually overridden using this button, the field **Auto triggered** will be set to _No_.
 
 
