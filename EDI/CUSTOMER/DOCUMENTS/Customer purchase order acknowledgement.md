@@ -38,7 +38,7 @@ Users can access **All sales orders** page by navigating to **Sales and marketin
 
 Field	                  | Description
 :--                     |:--
-**Acknowledgement**     |	Select the **Acknowledgement** button to review order details for the POA. The details of this page will be discussed in XXX
+**Acknowledgement**     |	Select the **Acknowledgement** button to review order details for the POA. The details of this page will be discussed in below.
 **Send to EDI**         |	Select the **Send to EDI** button to create the **Customer purchase order acknowledgement** staging table record.
 **Reset flag**          |	Select the **Reset flag** button to reset the **EDI status** to allow for re-sending of the POA to the staging table. Note: The POA record on the staging table should be deleted manually before the sales order flag is reset.
 
@@ -52,7 +52,7 @@ The **Acknowledgement** page is accessed by navigating to **Sales and marketing 
 The Acknowledgement page is split into five tabs:
 1. [Header](#header) - Manage the POA header response for ship and receipt dates. <br> POA response code for the header: <br> • **Header - accept** -  <br> • Header - change <br> • Header - accepted with reserved <br> • Header - not accepted
 3. [Line price]() - Manage the POA line price response, example Customer's sales price vs. Net system price. <br> POA responde code for line price, example if: <br> • **Line price - accept** - The acknowledged price matches customer's sales price <br> • **Line price - advise** - The acknowledged prices doesn't match the customer's sales price
-4. [Line quantity]() - 
+4. [Line quantity]() - Manage the POA line quantity response, example Customer sales quantity vs. Reserved sales quantity
 5. [Line pack]() - 
 6. [Line inner]() - 
 
