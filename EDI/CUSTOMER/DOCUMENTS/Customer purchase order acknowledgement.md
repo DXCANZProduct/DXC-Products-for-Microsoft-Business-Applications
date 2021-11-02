@@ -59,6 +59,8 @@ The Acknowledgement page is split into five tabs:
 Customer mapped values for POA response codes are setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) and assigned to the Customer trading partner's **POA response code group**.
 
 #### Header
+The following tables describe the fields and buttons that are available on the **Header** tab of the Acknowledgement page.
+
 ##### Fields
 Field	              | Description
 :--                 |:--
@@ -70,7 +72,7 @@ Field	              | Description
 **Acknowledged**    |	Acknowledged delivery date. Updates Sales order header's **Confirmed receipt date**.
 <ins>**POA**</ins>
 **POA code**        |	POA header code to be sent to the Customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following header respones: <br> •	**Header – accept** – Where all response codes are _Accept_ <br> •	**Header - change** - Where the customer and acknowledged dates are different <br> •	**Header - accepted with reserved** - Where the customer and acknowledged dates are the same, however one or more lines have an _Advise_ POA difference code.
-**Auto triggered**  |	Indicates if the **POA code** was auto triggered
+**Auto triggered**  |	Indicates if the **POA code** is the auto triggered value.
 
 ##### Buttons
 It is possible to update the POA response codes by using the available buttons:
@@ -80,21 +82,43 @@ Field	              | Description
 **POA response**    |	Manually set the response code to either of the following: <br> • **Change** <br> • **Accepted** <br> • **Not accepted** - only available for manual selection <br> • **Accepted with reserve** <br> If the auto triggered POA code has been manually overridden using this button, the field **Auto triggered** will be set to _No_.
 
 #### Line price
+The following tables describe the fields and buttons that are available on the **Line price** tab of the Acknowledgement page.
+
 ##### Fields
+Field	                    | Description
+:--                       |:--
+**Log**                   |	This will show a warning if the Customer pack does not match the System pack
+**Store code**            |	Sales line store code
+**Item number**           |	Item number from the sales order
+**Barcode**               |	Barcode for the item number from the sales order
+**Product name**          |	Item name for the item number from the sales order
+**Unit**                  |	Unit from the sales line
+**Customer sales price**  |	Unit price received in the EDI purchase order
+**Net system price**      |	Valid trade agreement unit price for the customer, net off any discounts
+**Acknowledged price**    |	Acknowledged price. Note: The acknowledged price will be automatically set as either the customer or system values dependant on the **Use customer price** setting on the [Customer purchase order](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md) document type setting profile.
+**Price code**            | POA line price code to be sent to the Customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line price respones: <br> •	**Line price - accept** - Customer sales price equals Net system price <br> • **Line price - advise** - Customer sales price doesn't equal Net system price.
+**Auto triggered item**   |	Indicates if the **Price code** is the auto triggered value.
+**PO change**             | Indicates if the price was updated by a **Customer purchase order change** record
 
 ##### Buttons
 
 #### Line quantity
+The following tables describe the fields and buttons that are available on the **Line quantity** tab of the Acknowledgement page.
+
 ##### Fields
 
 ##### Buttons
 
 #### Line pack
+The following tables describe the fields and buttons that are available on the **Line pack** tab of the Acknowledgement page.
+
 ##### Fields
 
 ##### Buttons
 
 #### Line inner
+The following tables describe the fields and buttons that are available on the **Line inner** tab of the Acknowledgement page.
+
 ##### Fields
 
 ##### Buttons
