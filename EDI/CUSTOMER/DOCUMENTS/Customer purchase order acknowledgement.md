@@ -76,7 +76,7 @@ Field	              | Description
 
 ##### Buttons
 It is possible to update the POA response codes by using the available buttons:
-Field	              | Description
+Button              | Description
 :--                 |:--
 **Order POA**       |	Automatically set the response codes. <br> Note: When selected the response codes for all the tabs will be set.  Where auto generated codes are overwritten, the header code should be manually set.
 **POA response**    |	Manually set the response code to either of the following: <br> • **Change** <br> • **Accepted** <br> • **Not accepted** - only available for manual selection <br> • **Accepted with reserve** <br> If the auto triggered POA code has been manually overridden using this button, the field **Auto triggered** will be set to _No_.
@@ -88,19 +88,28 @@ The following tables describe the fields and buttons that are available on the *
 Field	                    | Description
 :--                       |:--
 **Log**                   |	This will show a warning if the Customer pack does not match the System pack
-**Store code**            |	Sales line store code
+**Store code**            |	Sales line's store code
 **Item number**           |	Item number from the sales order
 **Barcode**               |	Barcode for the item number from the sales order
 **Product name**          |	Item name for the item number from the sales order
 **Unit**                  |	Unit from the sales line
 **Customer sales price**  |	Unit price received in the EDI purchase order
-**Net system price**      |	Valid trade agreement unit price for the customer, net off any discounts
+**Net system price**      |	Valid trade agreement unit price for the customer, net off discounts
 **Acknowledged price**    |	Acknowledged price. Note: The acknowledged price will be automatically set as either the customer or system values dependant on the **Use customer price** setting on the [Customer purchase order](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md) document type setting profile.
 **Price code**            | POA line price code to be sent to the Customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line price respones: <br> •	**Line price - accept** - Customer sales price equals Net system price <br> • **Line price - advise** - Customer sales price doesn't equal Net system price.
 **Auto triggered item**   |	Indicates if the **Price code** is the auto triggered value.
 **PO change**             | Indicates if the price was updated by a **Customer purchase order change** record
 
 ##### Buttons
+It is possible to update the Acknowledged values and POA response codes by using the available buttons:
+
+Button              | Description
+:--                 |:--
+**Inventory**       |	Update the dimensions displayed on the POA acknowledgement form
+**Item POA**        |	• **Use system price** - Update the acknowledged price field to the system price <br> • **Use customer price**	Update the acknowledged price field to the customer sales price <br> • **Clear response codes** - Clear previously set response codes <br> **Auto set response codes** - Automatically set the response code
+•	Line price – accept – Where the customer and acknowledged price are the same
+•	Line price – advise – Where the customer and acknowledged price are different
+POA Responses	Manually set the response code to either of above response codes
 
 #### Line quantity
 The following tables describe the fields and buttons that are available on the **Line quantity** tab of the Acknowledgement page.
