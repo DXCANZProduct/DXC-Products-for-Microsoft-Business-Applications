@@ -43,7 +43,7 @@ Field	                  | Description
 **Reset flag**          |	Select the **Reset flag** button to reset the **EDI status** to allow for re-sending of the POA to the staging table. Note: The POA record on the staging table should be deleted manually before the sales order flag is reset.
 
 ## Processing
-The POA can be sent [manually] or [automatically] to the customer.
+The POA can be sent [manually]() or [automatically]() to the customer.
 Both of these options will be discussed in the following subsections.
 
 ### Manually processing Purchase order acknowledgement
@@ -79,4 +79,23 @@ Field	              | Description
 **Order POA**       |	Automatically set the response codes. <br> Note: When selected the response codes for all the tabs will be set.  Where auto generated codes are overwritten, the header code should be manually set.
 **POA response**    |	Manually set the response code to either of the following: <br> • **Change** <br> • **Accepted** <br> • **Not accepted** - only available for manual selection <br> • **Accepted with reserve** <br> If the auto triggered POA code has been manually overridden using this button, the field **Auto triggered** will be set to _No_.
 
+#### Line price
+##### Fields
+
+##### Buttons
+
+#### Line quantity
+##### Fields
+
+##### Buttons
+
+#### Line pack
+##### Fields
+
+##### Buttons
+
+#### Line inner
+##### Fields
+
+##### Buttons
 
