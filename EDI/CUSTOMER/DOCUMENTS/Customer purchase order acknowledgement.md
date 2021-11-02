@@ -69,7 +69,7 @@ Field	              | Description
 **Customer**        |	Customer requested receipt date (end of delivery window)
 **Acknowledged**    |	Acknowledged delivery date. Updates Sales order header's **Confirmed receipt date**.
 <ins>**POA**</ins>
-**POA code**        |	POA header code to be sent to the Customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following header respones: •	**Header – accept** – Where all response codes are _Accept_ <br> •	**Header - change** - Where the customer and acknowledged dates are different <br> •	**Header - accepted with reserved** - Where the customer and acknowledged dates are the same, however one or more lines have an _Advise_ POA difference code.
+**POA code**        |	POA header code to be sent to the Customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following header respones: <br> •	**Header – accept** – Where all response codes are _Accept_ <br> •	**Header - change** - Where the customer and acknowledged dates are different <br> •	**Header - accepted with reserved** - Where the customer and acknowledged dates are the same, however one or more lines have an _Advise_ POA difference code.
 **Auto triggered**  |	Indicates if the **POA code** was auto triggered
 
 ##### Buttons
