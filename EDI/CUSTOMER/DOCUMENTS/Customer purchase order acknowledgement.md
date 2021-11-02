@@ -43,7 +43,7 @@ Field	                  | Description
 **Reset flag**          |	Select the **Reset flag** button to reset the **EDI status** to allow for re-sending of the POA to the staging table. Note: The POA record on the staging table should be deleted manually before the sales order flag is reset.
 
 ## Processing
-The POA can be sent [manually](#manually-processing-purchase-order-acknowledgement) or [automatically]() to the customer.
+The POA can be sent [manually](#manually-processing-purchase-order-acknowledgement) or [automatically](#automatically-processing-purchase-order-acknowledgement) to the customer.
 Both of these options will be discussed in the following subsections.
 
 ### Manually processing Purchase order acknowledgement
