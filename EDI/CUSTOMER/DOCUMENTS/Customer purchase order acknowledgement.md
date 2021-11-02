@@ -51,10 +51,10 @@ The **Acknowledgement** page is accessed by navigating to **Sales and marketing 
 
 The Acknowledgement page is split into five tabs:
 1. [Header](#header) - Manage the POA header's response for ship and receipt dates. 
-3. [Line price]() - Manage the POA line' price response, example Customer's sales price vs. Net system price. 
-4. [Line quantity]() - Manage the POA line' quantity response, example Customer sales quantity vs. Reserved sales quantity.
-5. [Line pack]() - Manage the POA line' pack response, example Customer pack vs. System pack
-6. [Line inner]() - Manage the POA line' inner response, example Customer inner vs. System inner
+3. [Line price](#line-price) - Manage the POA line' price response, example Customer's sales price vs. Net system price. 
+4. [Line quantity](#line-quantity) - Manage the POA line' quantity response, example Customer sales quantity vs. Reserved sales quantity.
+5. [Line pack](#line-pack) - Manage the POA line' pack response, example Customer pack vs. System pack
+6. [Line inner](#line-inner) - Manage the POA line' inner response, example Customer inner vs. System inner
 
 Customer mapped values for POA response codes are setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) and assigned to the Customer trading partner's **POA response code group**.
 
