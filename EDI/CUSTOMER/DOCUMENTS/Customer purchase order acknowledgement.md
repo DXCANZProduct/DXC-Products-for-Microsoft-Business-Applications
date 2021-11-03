@@ -96,7 +96,7 @@ Field	                    | Description
 **Customer sales price**  |	Unit price received in the EDI purchase order
 **Net system price**      |	Valid trade agreement unit price for the customer, net off discounts
 **Acknowledged price**    |	Acknowledged price. Note: The acknowledged price will be automatically set as either the customer or system values dependant on the **Use customer price** setting on the [Customer purchase order](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md) document type setting profile.
-**Price code**            | POA line price code to be sent to the Customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line price respones: <br> •	**Line price - accept** - Customer sales price equals Net system price <br> • **Line price - advise** - Customer sales price doesn't equal Net system price.
+**Price code**            | POA line price code to be sent to the Customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line price respones: <br> •	**Line price - accept** - Where the customer and acknowledged price are the same <br> • **Line price - advise** - Where the customer and acknowledged price are different
 **Auto triggered item**   |	Indicates if the **Price code** is the auto triggered value.
 **PO change**             | Indicates if the price was updated by a **Customer purchase order change** record
 
@@ -106,7 +106,7 @@ It is possible to update the Acknowledged values and POA response codes by using
 Button              | Description
 :--                 |:--
 **Inventory**       |	Update the dimensions displayed on the POA acknowledgement form
-**Item POA**        |	• **Use system price** - Update the acknowledged price field to the system price <br> • **Use customer price**	Update the acknowledged price field to the customer sales price <br> • **Clear response codes** - Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response code to: <br> **Line price – accept** – Where the customer and acknowledged price are the same <br> **Line price – advise** – Where the customer and acknowledged price are different
+**Item POA**        |	• **Use system price** - Update the acknowledged price field to the system price <br> • **Use customer price**	Update the acknowledged price field to the customer sales price <br> • **Clear response codes** - Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response code to either > **Line price – accept** or **Line price – advise**.
 **POA responses**	  | Manually set the response code to either of above response codes
 
 #### Line quantity
