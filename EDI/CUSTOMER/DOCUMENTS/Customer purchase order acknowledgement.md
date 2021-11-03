@@ -198,3 +198,18 @@ Button              | Description
 **POA Response**           |	Manually set the mapped value for **Inner code** response to **Inner accept** or **Inner difference**
 
 ### Automatically processing Purchase order acknowledgement
+
+Ability to automatically send customer purchase acknowledgements.
+Users can access the periodic job by navigating to **EDI > Periodic tasks > Send customer purchase order acknowledgement**.
+
+By default only sales orders to fall under the following criteria is included in POA being sent automatically:
+- Sales orders that doesn’t contain any POA response codes where **Allow auto send** is set to _No_ as setup on te [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md#setup-poa-responde-codes)
+- Sales orders that are not on hold (excluding POA and POC pending hold codes)
+- POA is pending, which is determined by **POA status** is _Pending_ or _In progress_. A sales order's POA status changes to **In progress** when clicking on **Acknowledgement** page on the sales order header's EDI tab on the Action Pane and selecting _OK_.
+
+Additional sales order filter options are:
+- Include blank confirmed receipt date – Y/N
+- Include blank confirmed ship date – Y/N
+- Customer account
+- Invoice account
+- Users can also add additional filters like site and warehouse 
