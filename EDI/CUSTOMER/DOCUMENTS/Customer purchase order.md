@@ -206,7 +206,7 @@ The following buttons are available on the **Customer purchase order** Action Pa
 **Customers**                   | Inquire on the Customer for the selected record.
 **Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
 **Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
-**Reset Status**                | You can reset the staging to target status if the **Staging to target status** is set to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
+**Reset Status**                | You can reset the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
 
 The following buttons are available on the **Customer purchase order**'s Action Pane, tab **Acknowledgement**.
