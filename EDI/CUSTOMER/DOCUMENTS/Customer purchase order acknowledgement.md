@@ -70,10 +70,10 @@ Field	              | Description
 **Acknowledged**    |	Acknowledged receipt date. Updates Sales order header's **Confirmed ship date**.
 <ins>**Deadline**</ins>
 **Customer**        |	Customer requested receipt date (end of delivery window)
-**Acknowledged**    |	Acknowledged delivery date. Updates Sales order header's **Confirmed receipt date**.
+**Acknowledged**    |	Acknowledged delivery date to be sent to the customer. Updates Sales order header's **Confirmed receipt date**.
 <ins>**POA**</ins>
-**POA code**        |	POA header code to be sent to the Customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following header responses: <br> •	**Header – accept** – Where all response codes are _Accept_ <br> •	**Header - change** - Where the customer and acknowledged dates are different <br> •	**Header - accepted with reserved** - Where the customer and acknowledged dates are the same, however one or more lines have an _Advise_ POA difference code.
-**Auto triggered**  |	Indicates if the **POA code** is the auto triggered value.
+**POA code**        |	POA header code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following header responses: <br> •	**Header – accept** – Where all response codes are _Accept_ <br> •	**Header - change** - Where the customer and acknowledged dates are different <br> •	**Header - accepted with reserved** - Where the customer and acknowledged dates are the same, however one or more lines have an _Advise_ POA difference code.
+**Auto triggered**  |	Indicates if the **POA code** is an auto triggered value.
 
 ##### Buttons
 It is possible to update the POA response codes by using the available buttons:
@@ -97,8 +97,8 @@ Field	                    | Description
 **Unit**                  |	Unit from the sales line
 **Customer sales price**  |	Unit price received in the EDI purchase order
 **Net system price**      |	Valid trade agreement unit price for the customer, net off discounts
-**Acknowledged price**    |	Acknowledged price. Note: The acknowledged price will be automatically set as either the customer or system values dependant on the **Use customer price** setting on the [Customer purchase order](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md) document type setting profile.
-**Price code**            | POA line price code to be sent to the Customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line price responses: <br> •	**Line price - accept** - Where the customer and acknowledged price are the same <br> • **Line price - advise** - Where the customer and acknowledged price are different
+**Acknowledged price**    |	Acknowledged price to be sent to the customer. Note: The acknowledged price will be automatically set as either the customer or system values dependant on the **Use customer price** setting on the [Customer purchase order](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md) document type setting profile.
+**Price code**            | POA line price code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line price responses: <br> •	**Line price - accept** - Where the customer and acknowledged price are the same <br> • **Line price - advise** - Where the customer and acknowledged price are different
 **Auto triggered item**   |	Indicates if the **Price code** is an auto triggered value
 **PO change**             | Indicates if the price was updated by a **Customer purchase order change** record
 
@@ -109,7 +109,7 @@ Button              | Description
 :--                 |:--
 **Inventory**       |	Update the dimensions displayed on the POA acknowledgement form
 **Item POA**        |	• **Use system price** - Update the acknowledged price field to the system price <br> • **Use customer price**	Update the acknowledged price field to the customer sales price <br> • **Clear response codes** - Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response codes
-**POA responses**	  | Manually set the **Price code** response to mapped value for **Line price - accept** or **Line price - advise**
+**POA responses**	  | Manually set the **Price code** response to mapped value for **Accept price** or **Advise price**
 
 #### Line quantity
 The following tables describe the fields and buttons that are available on the **Line quantity** tab of the Acknowledgement page. <br>
@@ -125,7 +125,7 @@ Field	                    | Description
 **Unit**                  |	Unit from the sales line
 **Customer sales quantity** |	Quantity received in the purchase order
 **Reserved sales quantity** |	Reserved quantity for each sales line. If reservation is set to manual, users have to reserve stock first if “Reserved qty” is to be used for POA since it updates the Sales order line as per POA's **Acknowledged quantity**. 
-**Acknowledged quantity**   |	Acknowledged quantity. Note: The acknowledged quantity will be set as either the customer or reserved values dependant on the **Quantity type** set on the [Customer purchase order acknowledgement](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md) document type setting profile.
+**Acknowledged quantity**   |	Acknowledged quantity to be sent to the customer. Note: The acknowledged quantity will be set as either the customer or reserved values dependant on the **Quantity type** set on the [Customer purchase order acknowledgement](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md) document type setting profile.
 **Qty code**                |	POA line quantity code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line quantity responses: <br> •	**Line item accept** - Where the customer and acknowledged quantities are the same <br> • **Line item - out of stock** - Where the customer and acknowledged quantities are different <br> • **Line item - withdrawn** - Only available for manual selection.
 **Shipment code**           |	POA line shipment code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line shipment responses: <br> • **Line shipment - full** - Where line item POA response is accept or where line item is out of inventory and the Trading partner setting **No backorder** is set to _Yes._ <br> • **Line shipment - partial** - Where line item POA response is out of inventory and the and the Trading partner setting **No backorder** is set to _No_.
 **Auto triggered item**     |	Indicates if the **Qty code** is an auto triggered value
@@ -138,30 +138,67 @@ Button              | Description
 :--                 |:--
 **Inventory**       |	Update the dimensions displayed on the POA acknowledgement form
 **Item POA**        | • **Use customer quantity** -	Update the acknowledged quantity field to the customer quantity <br> • **Use reserved quantity** - Update the acknowledged quantity field to the reserved quantity <br> • **Clear quantity** -	Clear previously set acknowledged quantity <br> • **Clear response codes** -	Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response codes
-**POA responses**   |	Manually set the mapped value for: <br> • **Qty code** response to: **Line item – accept**, **Line item – withdrawn** (only manual) or **Line item – out of inventory** <br> • **Shipment code** response to: **Line shipment – full** or **Line shipment – partial**
+**POA responses**   |	Manually set the mapped value for: <br> • **Qty code** response to: **Accept item**, **Article withdrawn** (only manual) or **Out of inventory** <br> • **Shipment code** response to: **Complete shipment** or **Part shipment**
 
 #### Line pack
 The following tables describe the fields and buttons that are available on the **Line pack** tab of the Acknowledgement page. <br>
 The **Line item - pack** POA response codes are managed on this tab.
 
 ##### Fields
+Field	                    | Description
+:--                       |:--
+**Log**                   |	This will show a warning if the Customer pack does not match the System pack
+**Store code**            |	Sales line's store code
+**Item number**           |	Item number from the sales order
+**Barcode**               |	Barcode for the item number from the sales order
+**Product name**          |	Item name for the item number from the sales order
+**Unit**                  |	Unit from the sales line
+**Customer pack**         |	Pack quantity received in the purchase order
+**System pack**           |	Valid system pack for the inner or outer as specified on **Package size - inner/outer** on the settings profile for the Customer purchase order acknowledgement
+**Acknowledged pack**     |	Acknowledged pack quantity to be sent to the customer. Note: The automatically acknowledged pack (Customer or System) is set on **Pack type** on the settings profile for the Customer purchase order acknowledgement.
+**Pack code**             |	POA line pack code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line pack responses: <br> • **Line item - pack accept** - Where the customer and acknowledged packs are the same <br> • **Line item - pack difference** - Where the customer and acknowledged packs are different
+**Auto triggered item**   |	Indicates if the **Pack code** is an auto triggered value
 
 ##### Buttons
 It is possible to update the Acknowledged values and POA response codes by using the available buttons for a particular or multiple lines:
 
-Button              | Description
-:--                 |:--
+Button                      | Description
+:--                         |:--
+**Inventory**               |	Update the dimensions displayed on the POA acknowledgement form
+**Item POA**                | • **Use system pack** - Update the acknowledged pack field to the system pack. Calculated by using unit conversion and rounding setup on the item. <br> • **Use customer pack** -	Update the acknowledged pack field to the customer pack
+**Clear response codes**    |	Clear previously set response codes
+**Auto set response codes** |	Automatically set the response code
+**POA Responses**           |	Manually set the mapped value for **Pack code** response to **Pack accept** or **Pack difference**
+
 
 #### Line inner
 The following tables describe the fields and buttons that are available on the **Line inner** tab of the Acknowledgement page. <br>
 The **Line item - inner** POA response codes are managed on this tab.
 
 ##### Fields
+Field	                    | Description
+:--                       |:--
+**Log**                   |	This will show a warning if the Customer inner does not match the System inner
+**Store code**            |	Sales line store code
+**Item number**           |	Item number from the sales order
+**Barcode**               |	Barcode for the item number from the sales order
+**Product name**	        | Item name for the item number from the sales order
+**Unit**                  |	Unit from the sales line
+**Customer inners**       | Number of inners received in the purchase order
+**System inners**         |	Valid system number of inners. Note: The number of inners is calculated based on the quantity within an outer and inner.
+**Acknowledged inners**   |	Acknowledged number of inners. Note: The automatically acknowledged inner (Customer or System) is set on **Inner type** on the settings profile for the Customer purchase order acknowledgement.
+**Inner code**            |	POA line inner code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line inner responses: <br> • **Line item - inner accept** - Where the customer and acknowledged inners are the same <br> • **Line item - inner difference** - Where the customer and acknowledged inners are different
+**Auto triggered item**   |	Indicates if the **Inner code** is an auto triggered value
 
 ##### Buttons
 It is possible to update the Acknowledged values and POA response codes by using the available buttons for a particular or multiple lines:
 
 Button              | Description
 :--                 |:--
+**Inventory**               |	Update the dimensions displayed on the POA acknowledgement form
+**Item POA**                | • **Use system inner** - Update the acknowledged inner field to the system inner <br> • **Use customer inner** -	Update the acknowledged inner field to the customer inner
+**Clear response codes**    |	Clear previously set response codes
+**Auto set response codes** |	Automatically set the response code
+**POA Responses**           |	Manually set the mapped value for **Inner code** response to **Inner accept** or **Inner difference**
 
 ### Automatically processing Purchase order acknowledgement
