@@ -165,9 +165,7 @@ It is possible to update the Acknowledged values and POA response codes by using
 Button                      | Description
 :--                         |:--
 **Inventory**               |	Update the dimensions displayed on the POA acknowledgement form
-**Item POA**                | • **Use system pack** - Update the acknowledged pack field to the system pack. Calculated by using unit conversion and rounding setup on the item. <br> • **Use customer pack** -	Update the acknowledged pack field to the customer pack
-**Clear response codes**    |	Clear previously set response codes
-**Auto set response codes** |	Automatically set the response code
+**Item POA**                | • **Use system pack** - Update the acknowledged pack field to the system pack. Calculated by using unit conversion and rounding setup on the item. <br> • **Use customer pack** -	Update the acknowledged pack field to the customer pack <br> • **Clear response codes** - Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response code
 **POA Responses**           |	Manually set the mapped value for **Pack code** response to **Pack accept** or **Pack difference**
 
 
@@ -196,9 +194,7 @@ It is possible to update the Acknowledged values and POA response codes by using
 Button              | Description
 :--                 |:--
 **Inventory**               |	Update the dimensions displayed on the POA acknowledgement form
-**Item POA**                | • **Use system inner** - Update the acknowledged inner field to the system inner <br> • **Use customer inner** -	Update the acknowledged inner field to the customer inner
-**Clear response codes**    |	Clear previously set response codes
-**Auto set response codes** |	Automatically set the response code
+**Item POA**                | • **Use system inner** - Update the acknowledged inner field to the system inner <br> • **Use customer inner** -	Update the acknowledged inner field to the customer inner <br> • **Clear response codes** - Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response code
 **POA Responses**           |	Manually set the mapped value for **Inner code** response to **Inner accept** or **Inner difference**
 
 ### Automatically processing Purchase order acknowledgement
