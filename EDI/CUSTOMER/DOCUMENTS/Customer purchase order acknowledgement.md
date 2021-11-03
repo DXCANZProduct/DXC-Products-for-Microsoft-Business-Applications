@@ -59,7 +59,7 @@ The Acknowledgement page is split into five tabs:
 Customer mapped values for POA response codes are setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) and assigned to the Customer trading partner's **POA response code group**.
 
 #### Header
-The following tables describe the fields and buttons that are available on the **Header** tab of the Acknowledgement page.
+The following tables describe the fields and buttons that are available on the **Header** tab of the Acknowledgement page. <br>
 The **Header** POA response codes are managed on this tab.
 
 ##### Fields
@@ -83,7 +83,7 @@ Button              | Description
 **POA response**    |	Manually set the response code to either of the following: <br> • **Change** <br> • **Accepted** <br> • **Not accepted** - only available for manual selection <br> • **Accepted with reserve** <br> If the auto triggered POA code has been manually overridden using this button, the field **Auto triggered** will be set to _No_.
 
 #### Line price
-The following tables describe the fields and buttons that are available on the **Line price** tab of the Acknowledgement page.
+The following tables describe the fields and buttons that are available on the **Line price** tab of the Acknowledgement page. <br>
 The **Line price** POA response codes are managed on this tab.
 
 ##### Fields
@@ -112,7 +112,7 @@ Button              | Description
 **POA responses**	  | Manually set the response code to **Line price - accept** or **Line price - advise**
 
 #### Line quantity
-The following tables describe the fields and buttons that are available on the **Line quantity** tab of the Acknowledgement page.
+The following tables describe the fields and buttons that are available on the **Line quantity** tab of the Acknowledgement page. <br>
 The **Line item** and **Line shipment** POA response codes are managed on this tab.
 
 ##### Fields
@@ -138,7 +138,7 @@ Button              | Description
 :--                 |:--
 
 #### Line pack
-The following tables describe the fields and buttons that are available on the **Line pack** tab of the Acknowledgement page.
+The following tables describe the fields and buttons that are available on the **Line pack** tab of the Acknowledgement page. <br>
 The **Line item - pack** POA response codes are managed on this tab.
 
 ##### Fields
@@ -150,7 +150,7 @@ Button              | Description
 :--                 |:--
 
 #### Line inner
-The following tables describe the fields and buttons that are available on the **Line inner** tab of the Acknowledgement page.
+The following tables describe the fields and buttons that are available on the **Line inner** tab of the Acknowledgement page. <br>
 The **Line item - inner** POA response codes are managed on this tab.
 
 ##### Fields
