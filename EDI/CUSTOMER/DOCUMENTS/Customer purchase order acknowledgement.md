@@ -249,13 +249,11 @@ The following buttons are available on the **Customer purchase order acknowledge
 **Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
 **Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
-**Reset template**	            | Reset the template used to create the outbound file. Only enabled where the **Staging to target status** is set to _Not started_.
+**Reset template**	            | Reset the template used to create the outbound file. <br> Only enabled where the **Staging to target status** is set to _Not started_.
 
-The following buttons are available on the **Customer purchase order**'s Action Pane, tab **Acknowledgement**.
-The **Acknowledgement** tab is available on all incoming documents staging pages and enables the user to process or view the **Functional acknowledgement outbound** that has been created for the inbound document.
+The following buttons are available on the **Customer purchase order acknowledgement**'s Action Pane, tab **Acknowledgement**.
+The **Acknowledgement** tab is available on all outgoing documents staging pages and enables the user to view the **Functional acknowledgement inbound** that has been received and processed for the outbound document.
 
 **Button**	                    | **Description**
 :---                            |:----
-**Send to EDI**                 | If the **Sent** field for the staging record is set to _No_, use this button to create the **Functional acknowledgement outbound** record and also update the **Sent** field to _Yes._
-**Reset flag**                  | If the **Sent** field for the staging record has been set to _Yes_, use this button to reset **Sent** to _No_.
-**Functional acknowledgement**  | Use this button to view the **Functional acknowledgement outbound** record created for the inbound document.
+**Acknowledgement**             | Use this button to view the **Functional acknowledgement inbound** record received and processed for the outbound document.
