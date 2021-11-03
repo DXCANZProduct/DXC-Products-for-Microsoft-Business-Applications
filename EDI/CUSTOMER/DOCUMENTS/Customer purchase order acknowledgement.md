@@ -224,7 +224,7 @@ The following EDI fields are available on the list page.
 **Field**               | **Description**
 :---                    |:---
 **EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
-**Company account**     | Legal entity of the document.
+**Company**             | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.
 **Trading partner account**     | Customer account assigned to the staging record.
@@ -263,28 +263,33 @@ The following EDI Header staging fields are available on the header page.
 
 **Field**	              | **Description**	                                      | **Source D365 field**
 :---                    |:---                                                   |:---
+<ins>**Identification FastTab**</ins>		
 <ins>**Identification**</ins>		
 **EDI number**          | EDI Staging table record id                           | Sales Order > EDI > Original EDI number
-**Company account**     | Legal entity of the document
-**Company GLN**         | The company’s global location number is shown here.   | Sales order > EDI > Company GLN
+**Company**             | Legal entity of the document
+**Company GLN**         | The company’s global location number is shown here    | Sales order > EDI > Company GLN
+**Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	            
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.	
 <ins>**Reset status**</ins>		
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**Overview**</ins>	
+<ins>**General**</ins>	
 **Customer account**        |	Customer account for the staging record	           | Sales Order > Customer account
 **Sales order**             |	Sales order number for the staging record          | Sales order > Sales order
-**Customer Requisition**    | Customers purchase order number to be populated in the Customer requisition field of the sales order header.	| Sales order > General > Customer requisition
+**Customer requisition**    | Customers purchase order number to be populated in the Customer requisition field of the sales order header.	| Sales order > General > Customer requisition
 **EDI order type**          | The EDI order type is shown here.	                            | Sales Order > EDI > EDI order type
 <ins>**Status**</ins>	
 **Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
 **Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
-<ins>**General**</ins>	
+<ins>**General FastTab**</ins>	
+<ins>**POA**</ins>	
 **POA code**                |	POA Header response codes	                                    | Sales order > Acknowledgement > POA code
+<ins>**Status**</ins>		
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.
 **Created Date and Time**       | The date and time the selected record was created in the staging table.
+<ins>**Other**</ins>	
 **Purchase order date**     | The purchase order date from the EDI record is shown here.    | Sales Order > EDI > Original order date
 **Package characteristic code** | The code used to for the package contents.	              | Sales Order > EDI > Package characteristic code
 **Package label code**      | The code used for the label.	                                | Sales Order > EDI > Package label code
@@ -294,17 +299,6 @@ The following EDI Header staging fields are available on the header page.
 **Buyer code**              | The customer’s buyer code from the EDI record is shown here.	| Sales Order > EDI > Buyer code
 **Retail buyer location**   | The customer’s retail buyer location from the EDI record is shown here.	| Sales Order > EDI > Retail buyer location code
 **Purpose code**            | The customer’s purpose code from the EDI record is shown here.	        | Sales Order > EDI > Purpose code
-
-
-
-**EDI order purpose**       | The EDI order purpose is shown here. Receiving an Order purpose **Change** will error the staging record, since these should be sent as **Customer purchase order change** document. Only **Original**, **Confirmation** and **Cancellation** order purposes are allowed for **Customer purchase order** document.	
-**Store code**              | The store code from the EDI record is shown here.	            | Sales Order > EDI > Store code. <br> And used to populate Sales order delivery address
-**Customer Requisition**    | Customers purchase order number to be populated in the Customer requisition field of the sales order header.	| Sales order > General > Customer requisition
-**Customer Reference**      | Customers purchase order reference to be populated in the Customer Reference field of the sales order header.	| Sales Order > General > Customer reference
-**Purchase order date**     | The purchase order date from the EDI record is shown here.    | Sales Order > EDI > Original order date
-**Currency**                | The currency of the order	                                    | Sales Order > Price and discount > Currency
-**Company GLN**             | The company’s global location number is shown here. 	        | Sales order > EDI > Company GLN <br> If the **Company GLN** staging field is blank, the Company GLN on the Trading partner will be used to populate the **Company GLN** on the Sales order header.
-**Customer GLN**            | The Customer’s global location number is shown here.  | Sales order > EDI > Customer GLN <br> If the **Trading partner GLN** staging field is blank, the Trading partner GLN on the Trading partner will be used to populate the **Customer GLN** on the Sales order header.
 **Our account number**      |	Our account number in the customers system                    | Customer > Account number
 <ins>**Delivery address**</ins>
 **Delivery name**           |	Address for Delivery	                                        | Sales Order > Delivery Address Information
@@ -321,17 +315,4 @@ The following EDI Header staging fields are available on the header page.
 **Building complement**     |	Delivery address - Building complement	
 **Store code**              |	Delivery address - Store code	
 <ins>**Version**</ins>
-
-
-
-
-
-**Template Id**             | The EDI templates used to create the staging table record	                
 **PO version number**       | The PO version number from the EDI record.	                                | Sales Order > EDI > Original version number
-<ins>**Delivery**</ins>	
-**Delivery Name**           | Address for Delivery	                                                    | Sales Order > Delivery Address. If the store code wasn't used to populate sales order address.
-**Store code**              | The store code from the EDI record is shown here.	                        | Sales Order > EDI > Store code
-**Name or description** <br> **Street number** <br> **Street** <br> **City** <br> **Suburb** <br> **State** <br> **Postcode** <br> **Country/region** |Address for delivery	 | Sales Order > Delivery Address <br> Store code populate in staging record: <br> •	**Y** – Determines Delivery address <br> •	**N** – EDI delivery address
-**Requested ship date**     | The requested ship date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested ship date and <br> Sales order > Requested ship date: If staging blank will be populated by Transport days
-**Requested receipt date**  | The requested receipt date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested receipt date <br> Sales order > Requested receipt date
-**Delivery time**           | The delivery time from the EDI record is shown here.                      | Sales Order > EDI > Delivery time
