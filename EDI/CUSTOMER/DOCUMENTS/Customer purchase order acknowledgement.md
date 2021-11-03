@@ -213,3 +213,25 @@ Additional sales order filter options are:
 - Customer account
 - Invoice account
 - Users can also add additional filters like site and warehouse 
+
+## View staging table records
+To view the Customer purchase order acknowledgement staging records, go to **EDI > Documents > Customer documents > Customer purchase order acknowledgement**. 
+Use this page to review staging and process EDI Customer purchase order acknowledgements documents to an Outbound file.
+
+### List page
+The following EDI fields are available on the list page.
+
+**Field**               | **Description**
+:---                    |:---
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
+**Company account**     | Legal entity of the document.
+**Company GLN**         | The company’s global location number is shown here.
+**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.
+**Trading partner account**     | Customer account assigned to the staging record.
+**Trading partner GLN**         | The Customer’s global location number is shown here.
+**Customer Requisition**        | Customer purchase order's Customer requisition.
+**Sales order**                 |	Sales order number for the staging record.
+**Customer reference**          |	Customer purchase order's Customer reference.
+**POA code**                    |	POA Header code group as mapped in [POA response code groups](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md#setup-poa-responde-codes)
+**Created Date and Time**       | The date and time the selected record was created in the staging table.
+**Received**                    |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
