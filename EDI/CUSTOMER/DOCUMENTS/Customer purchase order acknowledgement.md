@@ -138,15 +138,7 @@ Button              | Description
 :--                 |:--
 **Inventory**       |	Update the dimensions displayed on the POA acknowledgement form
 **Item POA**        | • **Use customer quantity** -	Update the acknowledged quantity field to the customer quantity <br> • **Use reserved quantity** - Update the acknowledged quantity field to the reserved quantity <br> • **Clear quantity** -	Clear previously set acknowledged quantity <br> • **Clear response codes** -	Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response codes
-**POA responses**   |	Manually set the: <br> • **Qty code** response to: Line item – accept, Line item – withdrawn (only manual) or Line item – out of inventory
-Line item quantity (Qty code column):
-•	Line item – accept
-•	Line item – withdrawn (only manual)
-•	Line item – out of inventory
-Line shipment quantity (Shipment code column):
-•	Line shipment – full
-•	Line shipment – partial
-
+**POA responses**   |	Manually set the mapped value for: <br> • **Qty code** response to: **Line item – accept**, **Line item – withdrawn** (only manual) or **Line item – out of inventory** <br> • **Shipment code** response to: **Line shipment – full** or **Line shipment – partial**
 
 #### Line pack
 The following tables describe the fields and buttons that are available on the **Line pack** tab of the Acknowledgement page. <br>
