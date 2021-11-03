@@ -109,7 +109,7 @@ Button              | Description
 :--                 |:--
 **Inventory**       |	Update the dimensions displayed on the POA acknowledgement form
 **Item POA**        |	• **Use system price** - Update the acknowledged price field to the system price <br> • **Use customer price**	Update the acknowledged price field to the customer sales price <br> • **Clear response codes** - Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response codes
-**POA responses**	  | Manually set the **Price code** response to mapped value for **Accept price** or **Advise price**
+**POA response**	  | Manually set the **Price code** response to mapped value for **Accept price** or **Advise price**
 
 #### Line quantity
 The following tables describe the fields and buttons that are available on the **Line quantity** tab of the Acknowledgement page. <br>
@@ -138,7 +138,7 @@ Button              | Description
 :--                 |:--
 **Inventory**       |	Update the dimensions displayed on the POA acknowledgement form
 **Item POA**        | • **Use customer quantity** -	Update the acknowledged quantity field to the customer quantity <br> • **Use reserved quantity** - Update the acknowledged quantity field to the reserved quantity <br> • **Clear quantity** -	Clear previously set acknowledged quantity <br> • **Clear response codes** -	Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response codes
-**POA responses**   |	Manually set the mapped value for: <br> • **Qty code** response to: **Accept item**, **Article withdrawn** (only manual) or **Out of inventory** <br> • **Shipment code** response to: **Complete shipment** or **Part shipment**
+**POA response**   |	Manually set the mapped value for: <br> • **Qty code** response to: **Accept item**, **Article withdrawn** (only manual) or **Out of inventory** <br> • **Shipment code** response to: **Complete shipment** or **Part shipment**
 
 #### Line pack
 The following tables describe the fields and buttons that are available on the **Line pack** tab of the Acknowledgement page. <br>
@@ -166,7 +166,7 @@ Button                      | Description
 :--                         |:--
 **Inventory**               |	Update the dimensions displayed on the POA acknowledgement form
 **Item POA**                | • **Use system pack** - Update the acknowledged pack field to the system pack. Calculated by using unit conversion and rounding setup on the item. <br> • **Use customer pack** -	Update the acknowledged pack field to the customer pack <br> • **Clear response codes** - Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response code
-**POA Responses**           |	Manually set the mapped value for **Pack code** response to **Pack accept** or **Pack difference**
+**POA Response**           |	Manually set the mapped value for **Pack code** response to **Pack accept** or **Pack difference**
 
 
 #### Line inner
@@ -195,6 +195,6 @@ Button              | Description
 :--                 |:--
 **Inventory**               |	Update the dimensions displayed on the POA acknowledgement form
 **Item POA**                | • **Use system inner** - Update the acknowledged inner field to the system inner <br> • **Use customer inner** -	Update the acknowledged inner field to the customer inner <br> • **Clear response codes** - Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response code
-**POA Responses**           |	Manually set the mapped value for **Inner code** response to **Inner accept** or **Inner difference**
+**POA Response**           |	Manually set the mapped value for **Inner code** response to **Inner accept** or **Inner difference**
 
 ### Automatically processing Purchase order acknowledgement
