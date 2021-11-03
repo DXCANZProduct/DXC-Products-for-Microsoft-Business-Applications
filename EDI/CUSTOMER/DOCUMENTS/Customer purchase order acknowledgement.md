@@ -80,7 +80,7 @@ It is possible to update the POA response codes by using the available buttons:
 Button              | Description
 :--                 |:--
 **Order POA**       |	Automatically set the response codes. <br> Note: When selected the response codes for all the tabs will be set.  Where auto generated codes are overwritten, the header code should be manually set.
-**POA response**    |	Manually set the response code to either of the following: <br> • **Change** <br> • **Accepted** <br> • **Not accepted** - only available for manual selection <br> • **Accepted with reserve** <br> If the auto triggered POA code has been manually overridden using this button, the field **Auto triggered** will be set to _No_.
+**POA response**    |	Manually set the **POA code** response to mapped values of  <br> • **Change** <br> • **Accepted** <br> • **Not accepted** - only available for manual selection <br> • **Accepted with reserve** <br> If the auto triggered POA code has been manually overridden using this button, the field **Auto triggered** will be set to _No_.
 
 #### Line price
 The following tables describe the fields and buttons that are available on the **Line price** tab of the Acknowledgement page. <br>
@@ -109,7 +109,7 @@ Button              | Description
 :--                 |:--
 **Inventory**       |	Update the dimensions displayed on the POA acknowledgement form
 **Item POA**        |	• **Use system price** - Update the acknowledged price field to the system price <br> • **Use customer price**	Update the acknowledged price field to the customer sales price <br> • **Clear response codes** - Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response codes
-**POA responses**	  | Manually set the response code to **Line price - accept** or **Line price - advise**
+**POA responses**	  | Manually set the **Price code** response to mapped value for **Line price - accept** or **Line price - advise**
 
 #### Line quantity
 The following tables describe the fields and buttons that are available on the **Line quantity** tab of the Acknowledgement page. <br>
@@ -127,7 +127,7 @@ Field	                    | Description
 **Reserved sales quantity** |	Reserved quantity for each sales line. If reservation is set to manual, users have to reserve stock first if “Reserved qty” is to be used for POA since it updates the Sales order line as per POA's **Acknowledged quantity**. 
 **Acknowledged quantity**   |	Acknowledged quantity. Note: The acknowledged quantity will be set as either the customer or reserved values dependant on the **Quantity type** set on the [Customer purchase order acknowledgement](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md) document type setting profile.
 **Qty code**                |	POA line quantity code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line quantity responses: <br> •	**Line item accept** - Where the customer and acknowledged quantities are the same <br> • **Line item - out of stock** - Where the customer and acknowledged quantities are different <br> • **Line item - withdrawn** - Only available for manual selection.
-**Shipment code**           |	POA line shipment code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line shipment responses: <br> • **Line shipment - full** - Where line item – accept or where line item status – out of inventory and the Trading partner setting **No backorder** is set to _Yes._ <br> • **Line shipment - partial** - Where line item status – out of inventory and the and the Trading partner setting **No backorder** is set to _No_.
+**Shipment code**           |	POA line shipment code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line shipment responses: <br> • **Line shipment - full** - Where line item POA response is accept or where line item is out of inventory and the Trading partner setting **No backorder** is set to _Yes._ <br> • **Line shipment - partial** - Where line item POA response is out of inventory and the and the Trading partner setting **No backorder** is set to _No_.
 **Auto triggered item**     |	Indicates if the **Qty code** is an auto triggered value
 **Auto triggered shipment** |	Indicates if the **Shipment code** is an auto triggered value
 
@@ -136,6 +136,17 @@ It is possible to update the Acknowledged values and POA response codes by using
 
 Button              | Description
 :--                 |:--
+**Inventory**       |	Update the dimensions displayed on the POA acknowledgement form
+**Item POA**        | • **Use customer quantity** -	Update the acknowledged quantity field to the customer quantity <br> • **Use reserved quantity** - Update the acknowledged quantity field to the reserved quantity <br> • **Clear quantity** -	Clear previously set acknowledged quantity <br> • **Clear response codes** -	Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response codes
+**POA responses**   |	Manually set the: <br> • **Qty code** response to: Line item – accept, Line item – withdrawn (only manual) or Line item – out of inventory
+Line item quantity (Qty code column):
+•	Line item – accept
+•	Line item – withdrawn (only manual)
+•	Line item – out of inventory
+Line shipment quantity (Shipment code column):
+•	Line shipment – full
+•	Line shipment – partial
+
 
 #### Line pack
 The following tables describe the fields and buttons that are available on the **Line pack** tab of the Acknowledgement page. <br>
