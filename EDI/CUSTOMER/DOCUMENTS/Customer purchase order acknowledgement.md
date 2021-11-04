@@ -321,3 +321,28 @@ The following EDI Header staging fields are available on the header page.
 **Store code**              |	Delivery address - Store code	
 <ins>**Version**</ins>
 **PO version number**       | The PO version number from the EDI record.	                                | Sales Order > EDI > Original version number
+
+### Line fields
+The following EDI Line staging fields are available on the lines page.
+
+**Field**	              | **Description**	                                      | **Source D365 field**
+:---                    |:---                                                   |:---
+**Store code**          |	The store code from the EDI order is shown here.	    | Sales line > EDI > Store code
+**Item number**         |	Item number from the sales order	                    | Sales line > Item number
+**Barcode**             |	Barcode for the item number from the sales order	    | Sales line > Barcode
+**External item number**  |	The external item id specified for this customer/item combination. This is the part number for this item in the Customer’s system.	| Sales line> General > External references > External
+**Style**               |	Inventory dimension - Style	                          | Sales line > Style
+**Size**                |	Inventory dimension - Size	                          | Sales line > Size
+**Colour**              |	Inventory dimension - Colour	                        | Sales line > Colour
+**Configuration**       |	Inventory dimension - Configuration	                  | Sales line > Configuration
+**POA code shipment**   |	Purchase order acknowledgement code for shipment of the item	| Sales line > EDI > POA response > Customer code > Shipment
+**POA code item**       |	Purchase order acknowledgement code for the item <br> Combination of all line item POA codes. <br> Example: PO-IA-PD-LIA <br> PO: Line price - accept <br> IA: Line item - accept <br> PD: Line item - pack difference <br> LIA: Line item - inner accept	<br> Field delimiter: - <br> Note: Line item status is a combination of the following: Price code + Qty code + Pack code + Inner Code. The Customer purchase order acknowledgement document setting **Field delimiter** (can also be blank) is used inbetween the codes.              | Sales line > EDI > POA response > Customer code > Price and Quantity
+**Currency**            |	The currency of the order	                            | Sales order > Currency
+**Unit price excl. tax**  |	The net price per unit excl. tax	                  | Sales line > Price excl. tax
+**Unit price incl. tax**  |	The net price per unit incl. tax	                  | Sales line > Price incl. tax
+**Line amount excl. tax** |	Line amount excl. tax	                              | Sales line amount > Price excl. tax
+**Line amount incl. tax** |	Line amount incl. tax	                              | Sales line amount > Price incl. tax
+**Unit**                  |	This is the Unit of measure that the stock has been ordered in    | Sales line > Unit
+**Sales quantity**        |	The acknowledged quantity for this line             | Sales line > Quantity
+**Acknowledgement inners**  |	Acknowledged quantity of inners per outer	        | Sales line > EDI > POA > Acknowledgement inners
+**Acknowledgement pack**    |	Pack quantity acknowledged	                      | Sales line > EDI > POA > Acknowledgement pack
