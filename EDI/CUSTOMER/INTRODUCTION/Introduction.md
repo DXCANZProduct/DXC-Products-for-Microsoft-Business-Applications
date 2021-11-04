@@ -61,6 +61,10 @@ Used to map D365/EDI value to Customer's value and assigned on Customer Trading 
 - Required where the confirmed pack sizes within the Customer purchase order acknowledgement is set to use System pack and/or System inner. Setup at **Product information management > Products > Released products and selecting FastTab Manage inventory**
 	- [Item pack sizes](../../CORE/Setup/Item%20pack%20sizes.md)
 
+### Assigned on warehouses:
+- Required where advanced shipping notice (ASN) will be sent to EDI customers and determines what information will be used when creating the ASN: 
+	- [ASN line configurations](../DOCUMENTS/Customer%20advanced%20shipping%20notice.md#asn-line-configurations) 
+
 ## Customer Document type setup
 Setup Document types and assign on Customer Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Document types**
