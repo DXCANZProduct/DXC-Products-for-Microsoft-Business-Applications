@@ -38,12 +38,14 @@ Config option       |	Description	            | Warehouse management	    | Conta
 **WHSContainerization** |	The ASN will be generated based on the information in the WHS container and consignments table | WHS enabled <br> Not 3PL	| Used	| The container number will be used as the SSCC Id and therefore should be configured based on SSCC number requirements
 **WHSDeliveredLP**      |	The ASN will be generated based on the information in the WHS license plate and consignments table.	| WHS enabled <br> Not 3PL	| Not used	| The target license plate number will be used as the SSCC Id and therefore should be configured based on SSCC number requirements
 
+
 > Note: Additional options can be created as a customer specific requirement and added to this list for selection on the warehouse form.
 
 INVENTORY MANAGEMENT > SETUP > INVENTORY BREAKDOWN > WAREHOUSES
 To assign the **ASN line configuration** to a warehouse, the user can navigate to **Inventory management > Setup > Inventory breakdown > Warehouses**
 -	Select the applicable warehouse to be used for ASN generation (Ship from warehouse)
 -	Select the ASN line configuration in the **ASN line configuration** field in the EDI FastTab
+
 
 Data entity: Warehouses, staging field SAB_EDICUSTASNLINECONFIGURATIONNAME
 
