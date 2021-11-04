@@ -34,7 +34,7 @@ EDI customers may require a purchase order acknowledgement (POA) for an order an
 > Note: Customer purchase order acknowledgement (POA) can only be sent for a sales order created via EDI.
 
 The following subsections will describe how to view, process and send Customer purchase order acknowledgements. <br>
-The Acknowledgement can be viewed from the [Sales order](#sales-order) and will be populated with default settings as required per Trading partner.<br>
+The Acknowledgement can be viewed from the [Sales order](#sales-order) and will be populated with default values per Trading partner.<br>
 The Acknowledgement can be either [manually](#manually-processing-purchase-order-acknowledgement) processed or [automatically](#automatically-processing-purchase-order-acknowledgement) sent via periodic job. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
 
