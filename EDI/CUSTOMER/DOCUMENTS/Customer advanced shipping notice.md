@@ -33,6 +33,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 There are currently three **ASN line configurations** available and can be viewed at **EDI > Setup > Configurations > ASN line configurations**.
 
 Config option       |	Description	            | Warehouse management	    | Containerization	    | Note
+:--                 |:--                      |:--                        |:--                    |:--
 **Picking list**    |	The ASN will be generated based on information in the pick list registration and consignments table	| Not enabled	 | N/A	| The SSCC should be populated for each line of the picking list registration
 **WHSContainerization** |	The ASN will be generated based on the information in the WHS container and consignments table | WHS enabled <br> Not 3PL	| Used	| The container number will be used as the SSCC Id and therefore should be configured based on SSCC number requirements
 **WHSDeliveredLP**      |	The ASN will be generated based on the information in the WHS license plate and consignments table.	| WHS enabled <br> Not 3PL	| Not used	| The target license plate number will be used as the SSCC Id and therefore should be configured based on SSCC number requirements
