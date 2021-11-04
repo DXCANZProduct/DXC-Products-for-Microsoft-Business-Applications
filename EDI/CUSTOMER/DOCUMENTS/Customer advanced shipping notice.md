@@ -41,7 +41,6 @@ Config option       |	Description	            | Warehouse management	    | Conta
 
 > Note: Additional options can be created as a customer specific requirement and added to this list for selection on the warehouse form.
 
-INVENTORY MANAGEMENT > SETUP > INVENTORY BREAKDOWN > WAREHOUSES
 To assign the **ASN line configuration** to a warehouse, the user can navigate to **Inventory management > Setup > Inventory breakdown > Warehouses**
 -	Select the applicable warehouse to be used for ASN generation (Ship from warehouse)
 -	Select the ASN line configuration in the **ASN line configuration** field in the EDI FastTab
