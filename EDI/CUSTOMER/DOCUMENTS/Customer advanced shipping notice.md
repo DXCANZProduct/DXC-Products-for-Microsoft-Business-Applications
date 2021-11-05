@@ -33,7 +33,7 @@ EDI customers may require an advanced shipping notice (ASN) for a sales order.
 
 > Note: Customer advanced shipping notice can also be sent for a sales order not created via EDI.
 
-The following subsections will describe how to view, process and send Customer advanced shipping notice to applicable Customer Trading partners. <br>
+The following subsections will describe how to view, process and send Customer advanced shipping notice to applicable Customer Trading partners. 
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
 The created ASN record(s) can be viewed for a sales order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Sales order page.<br>
 
