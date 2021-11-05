@@ -103,3 +103,121 @@ The following EDI Header staging fields are available on the header page.
 :---                    |:---                                                     |:---
 <ins>**Identification FastTab**</ins>		
 <ins>**Identification**</ins>		
+**EDI number**          | EDI Staging table record id                             | EDI parameters > Number sequences > EDI number
+**Company**             | Legal entity of the document
+**Company GLN**         | The company’s global location number is shown here      | 
+**Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	            
+**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.	
+<ins>**Reset status**</ins>		
+**Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
+**Reset status date/time**  | Next date/time automatic reset status will run	
+**Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
+**Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
+<ins>**Overview**</ins>	
+**Customer requisition**	| Customers purchase order number to be populated in the Customer requisition field of the sales order header | Sales Order > General > Customer requisition
+**Customer reference**	    | Customers purchase order number to be populated in the Customer reference field of the sales order header   |	Sales Order > General > Customer reference
+<ins>**Details**</ins>		
+**Delivery terms**          | Customer delivery terms	            | Sales Order > Delivery > Delivery terms
+**Terms of payment**	    | Terms of payment	                    | Sales Order > Price and discount > Payment
+**Description**             | Terms of payment (Description)	    | Sales Order > Price and discount > Payment (Description)
+**Carrier**                 | Carrier assigned to the packing slip	| Consignments > Carrier
+**Bill of lading ID**		
+**Customer GLN**            | The Global location number for this customer      | Sales Order > EDI > Customer GLN
+<ins>**Status**</ins>
+**Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
+**Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
+<ins>**General FastTab**</ins>
+<ins>**Delivery address**</ins>
+**Delivery name**           | Address for delivery	                | Sales Order > Delivery Address Information	
+**City**                    | Delivery address - City	
+**Country/region**          | Delivery address - Country/region	
+**ISO**                     | Delivery address - Country/region ISO	
+**County**                  | Delivery address - County	
+**District**                | Delivery address - District	
+**Post box**                | Delivery address - Post box	
+**State**                   | Delivery address - State	
+**Street**                  | Delivery address - Street	
+**Street number**           | Delivery address - Street number	
+**ZIP/postal code**         | Delivery address - Zip/postal code	
+**Building complement**     | Delivery address - Building complement	
+**Store code**              | Delivery address - Store code	
+<ins>**Warehouse**</ins>    | Address for warehouse                  |	Sales Order > Warehouse Information
+**State**                   | Warehouse address - State	
+**Street**                  | Warehouse address - Street	
+**Street number**           | Warehouse address - Street number	
+**ZIP/postal code**         | Warehouse address - ZIP/postal code	
+**Building complement**     | Warehouse address - Building complement	
+**City**                    | Warehouse address - City	
+**Country/region**          | Warehouse address - Country/region	
+**ISO**                     | Warehouse address - Country/region ISO	
+**County**                  | Warehouse address - County	
+**District**                | Warehouse address - District	
+**Post box**                | Warehouse address - Post box	
+<ins>**Invoice**</ins>      | Invoice details		
+**Invoice**                 | D365 Invoice number	                | Invoice > Invoice Number
+**Name**                    | Tax invoice account name	            | Invoice > Invoice Account Name
+**Tax exempt number**       | Invoice account’s tax exempt number	| Invoice > Invoice Account’s VATNum
+**Our account number**      | Our account number in the customers system	
+**Date**                    | Invoice date	                        | Invoice journal > Date
+**Due**                     | Invoice Due Date	                    | Invoice journal > Due Date
+**Invoice amount excluding tax**    | Invoice amount excluding tax	| Invoice journal amount > Price excl. tax
+**Invoice tax amount**      | Invoice total tax amount	            | Invoice journal amount > Sales tax
+**Invoice amount including tax**    | Invoice amount including tax	| Invoice Journal Amount > Price incl. tax
+**Tax rate**                | Calculated invoice tax rate	        | Invoice tax amount / Invoice amount excluding tax \*100
+**Discount percentage**     | Invoice discount percentage	
+<ins>**Invoice address**</ins>      | Invoice address for customer   | Invoice journal > Invoice account > Address information
+**Building complement**     | Invoice address - Building complement	
+**City**                    | Invoice address - City	
+**Country/region**          | Invoice address - Country/region	
+**ISO**                     | Invoice address - ISO	
+**County**                  | Invoice address - County	
+**District**                | Invoice address - District	
+**Post box**                | Invoice address - Post box	
+**State**                   | Invoice address - State	
+**Street**                  | Invoice address - Street	
+**Street number**           | Invoice address - Street number	
+**ZIP/postal code**         | Invoice address - ZIP/postal code	
+<ins>**Company**</ins>      | 		
+**Company name**            | Company name	
+**Company address**         | Address for company                    | Invoice journal > Company > Address information
+**Street number**           | Company address - Street number
+**Building complement**     | Company address - Building complement
+**City**                    | Company address - City
+**Country/region**          | Company address - Country/region
+**County**                  | Company address - County
+**District**                | Company address - District
+**Post box**                | Company address - Post box
+**State**                   | Company address - State
+**Street**                  | Company address - Street
+**ZIP/postal code**         | Company address - ZIP/postal code
+
+### Line fields
+The following EDI Line staging fields are available on the lines page.
+
+**Field**	               | **Description**	                                        | **Source D365 field**
+:---                       |:---                                                        |:---
+Line number	The line within the EDI table/file.	
+Line number document	The line within the D365 Invoice.	Invoice journal line > Line number
+Item number	The D365 item id.	Invoice Journal > Item Number
+Name	The D365 Item name	Invoice Journal > Item Name
+Lot ID	Lot Id / InventTransId for the invoice line	Inventory transaction > InventTransId
+Bar code	The GTIN or barcode.	Sales Line > EDI > EDI Item number
+External Item number	The External item number	Sales Line > General > External
+Unit Price	Unit price for the item	Sales Line > Unit Price
+Unit Tax rate	Tax Unit rate included for the order line	Tax unit rate for the Tax & Item tax groups
+GST Amount	Tax Line Amount included for the order line	Tax amount for the Tax & Item tax groups
+Unit Price incl. tax	Unit Price including tax	Sales Line > Unit Price incl. tax
+Unit	Unit of measure	Sales Line > Unit
+Quantity	Invoice quantity	Invoice Journal > Quantity
+Ordered quantity	Sales order line’s Quantity	Sales line > Quantity
+Line amount excluding tax	Line amount excluding tax	Sales Line Amount > Line amount excl. tax
+Line amount including tax	Line amount including tax	Invoice Journal > Line amount incl. tax
+Delivery Name		Sales Line > Delivery Address Information
+Store Code	Store code for the sales line	Sales Line > Store code
+Customer Reference	Customers purchase order number as per Customer reference field in the sales order line	
+Customer Requisition	Customers purchase order number as per Customer requisition field of the sales order line	
+Purchase order date	The purchase order date from the EDI PO is shown here.	
+Delivery note	Delivery note for the Sales invoice is shown here. If invoice processed with ‘Update’ = Delivery note and only for one Delivery note.	
+Document date	Document date for the Delivery note	
+Consignment note number	Delivery note’s Consignment note number	
+Sales order	Sales order number for the invoice	
