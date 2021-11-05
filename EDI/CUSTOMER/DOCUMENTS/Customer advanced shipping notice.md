@@ -110,7 +110,7 @@ The following EDI fields are available on the list page.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.
 **Trading partner account**     | Customer account assigned to the staging record.
 **Trading partner GLN**         | The Customer’s global location number is shown here.
-**ASN Number**                  | **ASN number** sequence as setup in the EDI parameters
+**ASN Number**                  | ASN number record id. The number sequence is determined by [ASN number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
 **Consignment note number**     | Consignment note identification for the delivery
 **Delivery note**               | Packing slip number
 **Created Date and Time**       | The date and time the selected record was created in the staging table.
