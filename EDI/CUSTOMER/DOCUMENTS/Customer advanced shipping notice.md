@@ -49,9 +49,10 @@ When posting a packing slip for a sales order, it is possible to add consignment
 > Note: Consignment notes will be matched to the delivery based on the Delivery Name, Delivery address, Customer account and warehouse.
 -	Click **Assign** to attach the consignment note number to the packing slip. Where the **ASN strategy** has been configured to:
     - **Single packing slip**, the _Send to EDI_ flag will be set to _Yes_.  Once the packing slip is posted, an Customer advanced shipping notice record will be created in the staging table.
-    - **Consolidate packing slip**, the ASN must be sent to EDI from the Consignment notes table, see below.
+    - **Consolidate packing slip**, the ASN must be sent to EDI from the [Consignment notes](#consignment-notes) page.
 
-Where the ASN strategy (EDI > SETUP > DOCUMENT TYPES > EDI DOCUMENTS > CUSTOMER > OUTBOUND > ASN > SETTINGS. Linked to Customer via Trading partner setup for the applicable document type via: EDI > SETUP > TRADING PARTNERS) 
+> Note: **ASN strategy** is setup on the [Customer advanced shipping notice setting profile](../SETUP/SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)
+and assigned to the Trading partner when setting up the document on their outgoing documents. 
 
 ### Consignment notes
 
