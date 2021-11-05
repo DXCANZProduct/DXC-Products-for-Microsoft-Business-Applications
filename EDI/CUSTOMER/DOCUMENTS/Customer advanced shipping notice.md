@@ -55,12 +55,28 @@ When posting a packing slip for a sales order, it is possible to add consignment
 > Note: **ASN strategy** is setup on the [Customer advanced shipping notice setting profile](../SETUP/SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)
 and assigned to the Trading partner when setting up the document on their outgoing documents. 
 
-> Note: If the packing slip was posted without assigning a consignment note, it is possible to add the packing slip to a consignment note. 
+> Note: If the packing slip was posted without assigning a consignment note, it is possible to add the packing slip to a consignment note afterwards().
 > The Customer advanced shipping notice setting profile, has the option to **Warn when consignment note not assigned**.
 
 ### Consignment notes
+EDI requires the delivery to be assigned to a consignment note. The consignment note can contain one or multiple deliveries.
+The consignment note can be created when posting the packing slip, or by following the steps as per following subsection.
 
 #### Create a consignment note
+To open the **Consignment notes** page, go to **EDI > Inquiries and reports > Consignment notes**. Then set the fields as described below.
+-	To create a new consignment note, select **New**
+-	Select the **Customer account** for the consignment
+-	Enter the **Consignment note number**
+-	Select the **Shipping carrier** and **Carrier service**
+-	Select the **Delivery address information**
+
+#### Add packing slips to a consignment note
+To open the **Consignment notes** page, go to **EDI > Inquiries and reports > Consignment notes**. Then set the fields as described below.
+-	Select the applicable consignment note
+-	To add packing slips, select **Add** from the consignment lines
+-	A list of unassigned packing slips for the customer and delivery address will be displayed
+-	Select valid record(s) to be assigned to the consignment note
+-	Select **Add lines**
 
 #### Create ASN from consignment notes
 
@@ -84,10 +100,10 @@ The following buttons are available on the **Customer purchase order acknowledge
 The following EDI Header staging fields are available on the header page.
 
 **Field**	              | **Description**	                                      | **Source D365 field**
-:---                    |:---                                                   |:---
+:---                      |:---                                                   |:---
 
 ### Line fields
 The following EDI Line staging fields are available on the lines page.
 
 **Field**	              | **Description**	                                      | **Source D365 field**
-:---                    |:---                                                   |:---
+:---                      |:---                                                   |:---
