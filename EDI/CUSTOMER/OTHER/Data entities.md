@@ -38,11 +38,11 @@ EDI > Setup > Customer setup
 :-----            |:------------------------        |:-------------------                                      |:------------------------
 1	                | Customer EDI order type group   | Create new **Customer EDI order type group**. EDI > Setup > Customer setup > Customer EDI order type group
 2	                | Customer EDI order type lines   | Create new **Customer EDI order type lines**. EDI > Setup > Customer setup > Customer EDI order type group  | Customer EDI order type group
-3	Customer EDI order purpose group
-4	Customer EDI order purpose lines
-5	POA response code group
-6	POA response code group lines
-7	Customer EDI order line change type group
-8	Customer EDI order line change type group line
+3	                | Customer EDI order purpose group  | Create new **Customer EDI order purpose group**. EDI > Setup > Customer setup > Customer EDI order purpose group
+4	                | Customer EDI order purpose lines  | Create new **Customer EDI order purpose lines**. EDI > Setup > Customer setup > Customer EDI order purpose group | Customer EDI order purpose group
+5	                | POA response code group           | Create new **POA response code group**. EDI > Setup > Customer setup > POA response code group
+6	                | POA response code group lines     | Create new **POA response code lines**. EDI > Setup > Customer setup > POA response code group  | POA response code group
+7	                | Customer EDI order line change type group       | Create new **Customer EDI order line change type group**. EDI > Setup > Customer setup > Customer EDI order line change type group
+8	                | Customer EDI order line change type group line  | Create new **Customer EDI order line change type lines**. EDI > Setup > Customer setup > Customer EDI order line change type group  | Customer EDI order line change type group
 
 
