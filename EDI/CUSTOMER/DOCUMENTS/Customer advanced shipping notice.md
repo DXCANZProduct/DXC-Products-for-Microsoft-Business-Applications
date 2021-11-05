@@ -42,9 +42,9 @@ The following setup is prerequisites for the customer advanced shipping notice
 
 1. Create [Document template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
 2. Create [Document setting profile](../SETUP/SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md) for the document.
-3. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new record.
-4. Add the customer advanced shipping notice to the [Customer trading partner](../SETUP/Trading%20partner.md)
-5. Assign [ASN line configuration](../SETUP/Warehouses.md) to all the 'ship from' warehouses
+3. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
+4. Add the customer advanced shipping notice to the [Customer trading partner](../SETUP/Trading%20partner.md).
+5. Assign [ASN line configuration](../SETUP/Warehouses.md) to all the 'ship from' warehouses.
 
 ## Processing
 
