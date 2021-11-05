@@ -29,6 +29,20 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Customer purchase order change
 
+## Prerequisites
+The following setup is prerequisites for the customer purchase order change
+
+1. If required to put sales orders on hold till the purchase order confirmation has been received, assign the applicable hold code to [POC pending hold code](../SETUP/CUSTOMER%20SETUP/Hold%20codes.md) in EDI parameters.
+3. Create [Order purpose groups](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md)
+4. If Automatic processing will be used, create [Order line change type groups](../SETUP/CUSTOMER%20SETUP/Order%20line%20change%20type%20group.md)
+5. Create [Document template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
+6. Create [Document setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20change.md) for the document.
+7. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
+8. Assign the Order purpose group and Order line change type group (where applicable) to the customer trading partner.
+9. Add the customer purchase order change document to the [Customer trading partner](../SETUP/Trading%20partner.md).
+
+## Target D365 transactions
+
 When a purchase order change file is imported, the file name is key to identifying the customer and therefore the document template. See [Trading partners](../SETUP/Trading%20partner.md) at **EDI > Setup > Trading partners** for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table.  
 There are two order purposes (**Change** and **Cancellation**) that can be processed via the **Customer purchase order change** document. These order purposes can be specified in Trading partners and will change the way the record is processed.
 Expectation is the customer sends price inclusive of discounts. 
