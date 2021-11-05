@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI Customer]
-description: [EDI Customer Documents - Customer advanced shipping notice]
+description: [EDI Customer Setup - Warehouses]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 5/11/2021
