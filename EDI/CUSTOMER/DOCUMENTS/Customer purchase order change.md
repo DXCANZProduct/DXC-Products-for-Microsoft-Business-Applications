@@ -35,11 +35,16 @@ The following setup is prerequisites for the customer purchase order change
 1. If required to put sales orders on hold till the purchase order confirmation has been received, assign the applicable hold code to [POC pending hold code](../SETUP/CUSTOMER%20SETUP/Hold%20codes.md) in EDI parameters.
 3. Create [Order purpose groups](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md)
 4. If Automatic processing will be used, create [Order line change type groups](../SETUP/CUSTOMER%20SETUP/Order%20line%20change%20type%20group.md)
-5. Create [Document template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-6. Create [Document setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20change.md) for the document.
-7. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
-8. Assign the Order purpose group and Order line change type group (where applicable) to the customer trading partner.
-9. Add the customer purchase order change document to the [Customer trading partner](../SETUP/Trading%20partner.md).
+5. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
+6. Create [Setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20change.md) for the document.
+7. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order%20change.md) for the document.
+8. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
+9. Assign the Order purpose group and Order line change type group (where applicable) to the customer trading partner.
+10. Add and enable the customer purchase order change document to the [Customer trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+    - Template
+    - Setting profile
+    - Validation profile
+    - Search mask
 
 ## Target D365 transactions
 
