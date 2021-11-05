@@ -55,7 +55,7 @@ When posting a packing slip for a sales order, it is possible to add consignment
 > Note: **ASN strategy** is setup on the [Customer advanced shipping notice setting profile](../SETUP/SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)
 and assigned to the Trading partner when setting up the document on their outgoing documents. 
 
-> Note: If the packing slip was posted without assigning a consignment note, it is possible to add the packing slip to a consignment note afterwards().
+> Note: If the packing slip was posted without assigning a consignment note, it is possible to [add the packing slip](#add-packing-slips-to-a-consignment-note) to a consignment note afterwards.
 > The Customer advanced shipping notice setting profile, has the option to **Warn when consignment note not assigned**.
 
 ### Consignment notes
