@@ -44,11 +44,15 @@ The following setup is prerequisites for the customer purchase order acknowledge
 
 1. If required to put sales orders on hold till the POA has been sent, assign the applicable hold code to [POA pending hold code](../SETUP/CUSTOMER%20SETUP/Hold%20codes.md) in EDI parameters.
 2. Create [POA response groups](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md)
-3. Create [Document template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-4. Create [Document setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md) for the document.
-5. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new record.
-6. Assign the POA response groups to the customer trading partner.
-7. Add the customer purchase order acknowledgement document to the [Customer trading partner](../SETUP/Trading%20partner.md).
+3. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
+4. Create [Setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md) for the document.
+5. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md) for the document.
+6. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
+7. Assign the POA response groups to the customer trading partner.
+8. Add and enable the customer purchase order acknowledgement document to the [Customer trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+    - Template
+    - Setting profile
+    - File name setup
 
 ## Sales order
 Users can access **All sales orders** page by navigating to **Sales and marketing > Orders > All sales orders** and manage the EDI order's Acknowledgement's details by using the below buttons that have been added to the **EDI** tab on the Action Pane.
