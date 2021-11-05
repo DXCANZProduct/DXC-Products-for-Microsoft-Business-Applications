@@ -48,7 +48,7 @@ The following setup is prerequisites for the customer purchase order acknowledge
 4. Create [Setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md) for the document.
 5. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md) for the document.
 6. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
-7. Assign the POA response groups to the customer trading partner.
+7. Assign the applicable POA response group to the customer trading partner.
 8. Add and enable the customer purchase order acknowledgement document to the [Customer trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
