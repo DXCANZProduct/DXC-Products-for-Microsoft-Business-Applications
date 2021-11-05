@@ -50,7 +50,7 @@ Field	            | Description
 **Validate**      | Select the **Validate** button to check validation rules for a sales order. 
 
 ### Pending PO changes
-Customer purchase order changes that are set to be processed manually (**Processing method** on Document setting profile is set to _Manual_), will be available here for manual approval. Whether a POA is required can be set via the Customer purchase order change’s Document setting **Don’t send POA for changes**.
+Customer purchase order changes that are set to be processed manually (**Processing method** on [Document setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20change.md) is set to _Manual_), will be available here for manual approval. Whether a POA is required can be set via the Customer purchase order change’s Document setting **Don’t send POA for changes**.
 
 Field	            | Description
 :--               |:--
@@ -59,7 +59,7 @@ Field	            | Description
 
 ### Pending POA
 EDI orders will be placed on hold when a purchase order acknowledgement (POA) is required for the customer. 
-> Note: Where a POA is required for a Customer, the Customer purchase order acknowledgment document must be setup on the Trading partner record and the **Lock order** field in the POA settings profile must be active. This hold will be released once the POA has been sent to the Customer.
+> Note: Where a POA is required for a Customer, the Customer purchase order acknowledgment document must be setup on the Trading partner record and the **Lock order** field in the [POA document settings profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md) must be active. This hold will be released once the POA has been sent to the Customer.
 
 From within the workspace it is possible to view and even process information relating to the selected records
 
@@ -70,10 +70,10 @@ Field	                | Description
 
 ### Pending POA confirm
 EDI orders will be placed on hold when a Purchase order confirmation must be received from the customer following receipt of a POA. 
-Note: Purchase order confirmation requirements are setup via **PO confirmation required** field on the Customer purchase order acknowledgement settings profiles.
+Note: Purchase order confirmation requirements are setup via **PO confirmation required** field on the Customer [POA document settings profiles](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md).
 
 ### Open consignment notes
-Open consignments will be available where the Customer advanced shippiong notice's setting profile's **ASN strategy** is set to _consolidated_ packing slips. Where this is the case, a consolidated consignment should be sent at the end of each day to coincide with the dispatch of the goods.
+Open consignments will be available where the [Customer advanced shipping notice document setting profile](../SETUP/SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)'s **ASN strategy** is set to _consolidated_ packing slips. Where this is the case, a consolidated consignment should be sent at the end of each day to coincide with the dispatch of the goods.
 
 Field	            | Description
 :--               |:--
