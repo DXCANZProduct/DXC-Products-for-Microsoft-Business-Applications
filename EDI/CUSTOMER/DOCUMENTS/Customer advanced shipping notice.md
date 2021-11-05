@@ -130,15 +130,67 @@ The following EDI fields are available on the list page.
 **Received**                    | Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
 
 ### Buttons
-The following buttons are available on the **Customer purchase order acknowledgement** Action Pane, tab **Purchase order acknowledgement**.
+The following buttons are available on the **Customer advanced shipping notice** Action Pane, tab **Advanced shipping notice**.
 
 **Button**	                    | **Description**
+:---                            |:----
+**Create selected files**       | Creates the outbound file for selected records where **Staging to target status** is set to _Not started_.
+**Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_.
+**Outbound files**              | View the outbound file record created by the selected staging record.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
+**Consignment notes**           | View the consignment note relating to the packing slip record.
+**Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
+**Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
+**Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
+**Reset template**	            | Reset the template used to create the outbound file. <br> Only enabled where the **Staging to target status** is set to _Not started_.
+
+The following buttons are available on the **Customer advanced shipping notice**'s Action Pane, tab **Acknowledgement**.
+The **Acknowledgement** tab is available on all outgoing documents staging pages and enables the user to view the **Functional acknowledgement inbound** that has been received and processed for the outbound document.
+
+**Button**	                    | **Description**
+:---                            |:----
+**Acknowledgement**             | Use this button to view the **Functional acknowledgement inbound** record received and processed for the outbound document.
 
 ### Header fields
 The following EDI Header staging fields are available on the header page.
 
-**Field**	              | **Description**	                                      | **Source D365 field**
-:---                      |:---                                                   |:---
+**Field**	            | **Description**	                                      | **Source D365 field**
+:---                    |:---                                                     |:---
+<ins>**Identification FastTab**</ins>		
+<ins>**Identification**</ins>		
+**EDI number**          | ASN number                                              | EDI parameters > Number sequences > ASN number
+**Company**             | Legal entity of the document
+**Company GLN**         | The company’s global location number is shown here      | 
+**Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	            
+**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.	
+<ins>**Reset status**</ins>		
+**Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
+**Reset status date/time**  | Next date/time automatic reset status will run	
+**Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
+**Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
+<ins>**Overview**</ins>	
+**Packing slip**            | Where **ASN strategy** is set to: <br> • **Single** -  the delivery note number will be populated <br> • **Consolidated** - field will be blank. | Consignments > Packing slip
+<ins>**Details**</ins>	
+**Customer GLN**            | The Customer’s global location number is shown here.	| Sales Order > EDI > Customer GLN
+**Carrier**                 | Shipping carrier for the consignment	                | Consignment > Carrier
+**Carrier service**         | Carrier service for the consignment	                | Consignment > Carrier service
+**Our account number**	    | Our account number in the customers system	        | Customers > Account number
+**Customer account**	    | Customer account for the ASN record	
+**Document date**		    | Document date for the record
+**Name**                    | Customer name	                                        | Consignment > Customer account (Name)
+**Ship date**               | Date the goods were shipped	                        | Consignment > Ship date
+**Scheduled delivery date** | Scheduled date for delivery	                        | Consignment > Scheduled delivery date
+**Sales quantity**          | Total quantity within the consignment	
+**Weight**                  | Total weight within the consignment	
+**Volume**                  | Total volume within the consignment	
+**Shipment count**	        | Total number of packing slips within the consignment	
+**Shipment pallet count**	| Total number of lines within the consignment	
+**Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
+**Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
+<ins>**General FastTab**</ins>	
+**Delivery address information**    | Delivery address details
+**Warehouse address information**   | Warehouse (ship from) address details
+
 
 ### Line fields
 The following EDI Line staging fields are available on the lines page.
