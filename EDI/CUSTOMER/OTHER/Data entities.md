@@ -27,15 +27,22 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Introduction
+# Data entities
 
-## Expand your business efficiency with DXC Electronic Data Interchange for Microsoft Dynamics 365
+The following is a summary of data entities available for the Customer EDI module:
 
-EDI is a well-proven business tool for lowering costs, improving business efficiency, speed and accuracy. DXC EDI enables companies to easily setup, send/receive and manage messages with their EDI trading partners, all within Microsoft Dynamics 365 for Operations.
+## Connections
+EDI > Setup > Customer setup
 
-Powerful functionality extends Microsoft Dynamics 365:
-- Receive EDI communications from Customer, 3PL warehouse, Vendor and/or Landed cost Freight Forwarder trading partners and create/update D365 transactions
-- Process D365 transaction and send EDI documents to Customer, Vendor and/or 3PL warehouse Trading partners
-- Trading partners are created and managed within D365 and linked to valid customers, warehouses or vendors easily within D365
-- Effortlessly navigate from EDI incoming and outgoing files to applicable D365 transaction
+**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
+:-----            |:------------------------        |:-------------------                                      |:------------------------
+1	                | Customer EDI order type group   | Create new **Customer EDI order type group**. EDI > Setup > Customer setup > Customer EDI order type group
+2	                | Customer EDI order type lines   | Create new **Customer EDI order type lines**. EDI > Setup > Customer setup > Customer EDI order type group  | Customer EDI order type group
+3	Customer EDI order purpose group
+4	Customer EDI order purpose lines
+5	POA response code group
+6	POA response code group lines
+7	Customer EDI order line change type group
+8	Customer EDI order line change type group line
+
 
