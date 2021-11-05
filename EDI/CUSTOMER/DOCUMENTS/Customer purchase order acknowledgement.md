@@ -37,6 +37,7 @@ The following subsections will describe how to view, process and send Customer p
 The Acknowledgement can be viewed from the [Sales order](#sales-order) and will be populated with default values per Trading partner.<br>
 The Acknowledgement can be either [manually](#manually-processing-purchase-order-acknowledgement) processed or [automatically](#automatically-processing-purchase-order-acknowledgement) sent via periodic job. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
+The created POA record can also be viewed for a sales order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Sales order page.<br>
 
 ## Sales order
 Users can access **All sales orders** page by navigating to **Sales and marketing > Orders > All sales orders** and manage the EDI order's Acknowledgement's details by using the below buttons that have been added to the **EDI** tab on the Action Pane.
