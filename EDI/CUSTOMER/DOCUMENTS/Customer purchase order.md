@@ -35,11 +35,16 @@ The following setup is prerequisites for the customer purchase order
 1. If required to put sales orders on hold till the purchase order confirmation has been received, assign the applicable hold code to [POC pending hold code](../SETUP/CUSTOMER%20SETUP/Hold%20codes.md) in EDI parameters.
 2. Create [Purchase order types](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md)
 3. Create [Order purpose groups](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md)
-4. Create [Document template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-5. Create [Document setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md) for the document.
-6. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
-7. Assign the Purchase order type and Order purpose group to the customer trading partner.
-8. Add the customer purchase order document to the [Customer trading partner](../SETUP/Trading%20partner.md).
+4. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
+5. Create [Setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md) for the document.
+6. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order.md) for the document.
+7. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
+8. Assign the Purchase order type and Order purpose group to the customer trading partner.
+9. Add and enable the customer purchase order document to the [Customer trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+    - Template
+    - Setting profile
+    - Validation profile
+    - Search mask
 
 ## Target D365 transactions
 The following [**Customer EDI order types**](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) and [**Order purposes**](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md) are supported by each Customer inbound document:
