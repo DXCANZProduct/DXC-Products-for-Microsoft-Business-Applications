@@ -29,7 +29,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Customer advanced shipping notice (ASN)
 
-EDI customers may require an advanced shipping notice (ASN) for an order.
+EDI customers may require an advanced shipping notice (ASN) for a sales order.
 
 > Note: Customer advanced shipping notice can also be sent for a sales order not created via EDI.
 
