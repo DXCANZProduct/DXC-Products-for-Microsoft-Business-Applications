@@ -102,9 +102,7 @@ The following section describes the additional EDI functionality on Sales orders
 
 ## Workspaces
 The following workspaces are available:
-- EDI Document maintenance
-	- [Applicable to all modules](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md)
-	- [Customer specific]
+- [EDI Document maintenance](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md)
 - [EDI Sales order processing](../WORKSPACES/EDI%20Sales%20order%20processing.md)
 
 ## Other
