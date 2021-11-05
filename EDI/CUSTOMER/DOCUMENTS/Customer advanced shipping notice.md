@@ -37,6 +37,15 @@ The following subsections will describe how to view, process and send Customer a
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
 The created ASN record(s) can be viewed for a sales order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Sales order page.<br>
 
+## Prerequisites
+The following setup is prerequisites for the customer advanced shipping notice
+
+1. Create [Document template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
+2. Create [Document setting profile](../SETUP/SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md) for the document.
+3. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new record.
+4. Add the customer advanced shipping notice to the [Customer trading partner](../SETUP/Trading%20partner.md)
+5. Assign [ASN line configuration](../SETUP/Warehouses.md) to all the 'ship from' warehouses
+
 ## Processing
 
 ### Post packing slip
