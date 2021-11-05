@@ -195,5 +195,33 @@ The following EDI Header staging fields are available on the header page.
 ### Line fields
 The following EDI Line staging fields are available on the lines page.
 
-**Field**	              | **Description**	                                      | **Source D365 field**
-:---                      |:---                                                   |:---
+**Field**	               | **Description**	                                        | **Source D365 field**
+:---                       |:---                                                        |:---
+**Line number**            | The line within the EDI table/file.	
+**Item number**            | The D365 item number                                       | Packing Slip > Item id
+**Text**                   | The D365 item name	                                        | Packing Slip > Item Name
+**External item number**   | Customer external item number	                            | Sales Line > General > External
+**Bar code**               | The GTIN or barcode                                        | Sales Line > EDI item number
+**Store code**	           | Store code for the delivery line	                        | Sales Line > Store Code
+**Delivery name**          | Delivery name and address information	                    | Consignment/Sales order > Delivery address information
+**Quantity**               | Quantity to be delivered	                                | Packing Slip > Quantity
+**Unit**                   | Unit of measure	                                        | Sales Line > Unit
+**Sales price**            | Sales line unit price	                                    | Sales Line > Unit Price
+**Amount**                 | Line amount	
+**Weight**                 | Line weight	
+**Serial number**		
+**Batch number**		
+**Item Configuration**		
+**Colour**		
+**Size**		
+**Style**		
+**Expiration date**        | Batch expiration date	
+**Manufacturing date**     | Batch manufacturing date	
+**Purchase order date**    | The purchase order date from the EDI order is shown here	   | Header > EDI > Purchase order date
+**Department**             | The customer’s department from the EDI order is shown here    | Sales Order > EDI > Department
+**Package characteristic code** | The code used to for the package contents	               | Sales Order > EDI > Package characteristic code
+**End date/time**          | Date the order was picked	
+**Customer requisition**   | Customers purchase order number to be populated in the Customer requisition field of the sales order header | Header > General > Customer requisition
+**Customer reference**     | Customers purchase order reference to be populated in the Customer reference field of the sales order header |	Header > General > Customer reference
+**Shipment type**          | Status of the shipment (Full/Partial)	
+**SSCC**                   | SSCC #. Dependent on the [ASN line configuration](../SETUP/Warehouses.md#asn-line-configurations) set assigned to the sales order’s warehouse | **Picking List** – Pick List Registration SSCC on the pick lines <br> **WHSContainerization** – Container# <br> **WHSDeliveredLP** – License Plate# 
