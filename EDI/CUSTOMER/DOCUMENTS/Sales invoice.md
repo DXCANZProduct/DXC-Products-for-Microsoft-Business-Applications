@@ -194,30 +194,30 @@ The following EDI Header staging fields are available on the header page.
 ### Line fields
 The following EDI Line staging fields are available on the lines page.
 
-**Field**	               | **Description**	                                        | **Source D365 field**
-:---                       |:---                                                        |:---
-Line number	The line within the EDI table/file.	
-Line number document	The line within the D365 Invoice.	Invoice journal line > Line number
-Item number	The D365 item id.	Invoice Journal > Item Number
-Name	The D365 Item name	Invoice Journal > Item Name
-Lot ID	Lot Id / InventTransId for the invoice line	Inventory transaction > InventTransId
-Bar code	The GTIN or barcode.	Sales Line > EDI > EDI Item number
-External Item number	The External item number	Sales Line > General > External
-Unit Price	Unit price for the item	Sales Line > Unit Price
-Unit Tax rate	Tax Unit rate included for the order line	Tax unit rate for the Tax & Item tax groups
-GST Amount	Tax Line Amount included for the order line	Tax amount for the Tax & Item tax groups
-Unit Price incl. tax	Unit Price including tax	Sales Line > Unit Price incl. tax
-Unit	Unit of measure	Sales Line > Unit
-Quantity	Invoice quantity	Invoice Journal > Quantity
-Ordered quantity	Sales order line’s Quantity	Sales line > Quantity
-Line amount excluding tax	Line amount excluding tax	Sales Line Amount > Line amount excl. tax
-Line amount including tax	Line amount including tax	Invoice Journal > Line amount incl. tax
-Delivery Name		Sales Line > Delivery Address Information
-Store Code	Store code for the sales line	Sales Line > Store code
-Customer Reference	Customers purchase order number as per Customer reference field in the sales order line	
-Customer Requisition	Customers purchase order number as per Customer requisition field of the sales order line	
-Purchase order date	The purchase order date from the EDI PO is shown here.	
-Delivery note	Delivery note for the Sales invoice is shown here. If invoice processed with ‘Update’ = Delivery note and only for one Delivery note.	
-Document date	Document date for the Delivery note	
-Consignment note number	Delivery note’s Consignment note number	
-Sales order	Sales order number for the invoice	
+**Field**	                | **Description**	                                        | **Source D365 field**
+:---                        |:---                                                       |:---
+**Line number**             | The line within the EDI table/file	
+**Line number document**    | The line within the D365 Invoice	                        | Invoice journal line > Line number
+**Item number**             | The D365 item id                                          | Invoice journal line > Item Number
+**Name**                    | The D365 item name	                                    | Invoice journal line > Item Name
+**Lot ID**                  | Lot Id / InventTransId for the invoice line	            | Inventory transaction > InventTransId
+**Bar code**                | The GTIN or barcode	                                    | Sales line > EDI > EDI item number
+**External item number**	| The external item number	                                | Sales line > General > External
+**Unit price**	            | Unit price for the item	                                | Sales line > Unit price
+**Unit tax rate**	        | Tax unit rate included for the order line	                | Tax unit rate for the Tax & Item tax groups
+**Sales tax amount**	    | Tax line amount included for the order line	            | Tax amount for the Tax & Item tax groups
+**Unit Price incl. tax**    | Unit price including tax	                                | Sales line > Unit price incl. tax
+**Unit**                    | Unit of measure	                                        | Sales line > Unit
+**Quantity**                | Invoice quantity	                                        | Invoice journal line > Quantity
+**Ordered quantity**        | Sales order line’s quantity	                            | Sales line > Quantity
+**Line amount excluding tax**   | Line amount excluding tax	                            | Sales line amount > Line amount excl. tax
+**Line amount including tax**   | Line amount including tax	                            | Invoice journal line > Line amount incl. tax
+**Delivery name**		                                                                | Sales line > Delivery Address Information
+**Store code**	            | Store code for the sales line	                            | Sales line > Store code
+**Customer reference**	    | Customers purchase order number as per Customer reference field in the sales order line	
+**Customer requisition**	| Customers purchase order number as per Customer requisition field of the sales order line	
+**Purchase order date**     | The purchase order date from the EDI order is shown here  | Sales order > Original order date	
+**Delivery note**           | Delivery note for the Sales invoice is shown here. If invoice processed with **Update** set to _Delivery note_ and only for one Delivery note.	
+**Document date**           | Document date for the Delivery note	
+**Consignment note number** | Delivery note’s Consignment note number	
+**Sales order**             | Sales order number for the invoice	
