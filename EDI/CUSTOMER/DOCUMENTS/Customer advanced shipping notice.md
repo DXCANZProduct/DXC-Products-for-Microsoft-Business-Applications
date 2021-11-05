@@ -63,7 +63,7 @@ EDI requires the delivery to be assigned to a consignment note. The consignment 
 The consignment note can be created when posting the packing slip, or by following the steps as per following subsection.
 
 #### Create a consignment note
-To open the **Consignment notes** page, go to **EDI > Inquiries and reports > Consignment notes**. Then set the fields as described below.
+To open the **Consignment notes** page, go to **EDI > Inquiries and reports > Consignment notes**.
 -	To create a new consignment note, select **New**
 -	Select the **Customer account** for the consignment
 -	Enter the **Consignment note number**
@@ -71,25 +71,50 @@ To open the **Consignment notes** page, go to **EDI > Inquiries and reports > Co
 -	Select the **Delivery address information**
 
 #### Add packing slips to a consignment note
-To open the **Consignment notes** page, go to **EDI > Inquiries and reports > Consignment notes**. Then set the fields as described below.
+To open the **Consignment notes** page, go to **EDI > Inquiries and reports > Consignment notes**. 
 -	Select the applicable consignment note
 -	To add packing slips, select **Add** from the consignment lines
 -	A list of unassigned packing slips for the customer and delivery address will be displayed
 -	Select valid record(s) to be assigned to the consignment note
 -	Select **Add lines**
 
-#### Create ASN from consignment notes
+#### Create ASN staging record from consignment notes
+To open the **Consignment notes** page, go to **EDI > Inquiries and reports > Consignment notes**. 
+-	Select the applicable consignment note
+-	Select **Send to EDI** to send all consignment information to the Customer advanced shipping notice staging (ASN) table
+-	If required, select **Reset flag** to update the consignment and resend the ASN. The ASN record should be deleted in the staging page and outbound files before the flag is reset.
+
 
 #### Auto generate a consignment note number
+The shipping carriers page has an additional option located on the EDI FastTab to enable users to **Auto generate consignment note Id**.  Where this parameter is set to Yes, the **Pro number sequence** must also be set.
+
+To enable the consignment note to be auto generated, the following criteria must be met:
+-	**Carrier** must be specified on the sales order
+-	**Carrier** must be specified on the Picklist or WHS shipment
+-	**ASN strategy** must be _Single packing slip_
+-	The packing slip must be posted from the **Pick list registration** or the **WHS Shipment**
+
 
 ## View staging table records
-To view the Customer purchase order acknowledgement staging records, go to **EDI > Documents > Customer documents > Customer purchase order acknowledgement**. 
-Use this page to review staging and process EDI Customer purchase order acknowledgements documents to an Outbound file.
+To view the Customer advanced shipping notice staging records, go to **EDI > Documents > Customer documents > Customer advanced shipping notice**. 
+Use this page to review staging and process EDI Customer advanced shipping notice documents to an Outbound file.
 
 ### List page
 The following EDI fields are available on the list page.
 
 **Field**               | **Description**
+:---                    |:---
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
+**Company**             | Legal entity of the document.
+**Company GLN**         | The company’s global location number is shown here.
+**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.
+**Trading partner account**     | Customer account assigned to the staging record.
+**Trading partner GLN**         | The Customer’s global location number is shown here.
+**ASN Number**                  | **ASN number** sequence as setup in the EDI parameters
+**Consignment note number**     | Consignment note identification for the delivery
+**Delivery note**               | Packing slip number
+**Created Date and Time**       | The date and time the selected record was created in the staging table.
+**Received**                    | Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
 
 ### Buttons
 The following buttons are available on the **Customer purchase order acknowledgement** Action Pane, tab **Purchase order acknowledgement**.
