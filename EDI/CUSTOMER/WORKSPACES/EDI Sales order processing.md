@@ -38,8 +38,7 @@ The workspace is also used for manually approving Customer purchase order change
 The following subsections will discuss the various tabs available on the workspace.
 
 ### Warning/Error
-Sales order warnings and errors are identified based on the validation profiles setup for the Customer purchase order document at **EDI > Setup > Document types**. <br> 
-The validation is assigned to the incoming document when setting up the customer trading partner.
+Sales order warnings and errors are identified based on the validation profiles setup for the Customer purchase order document at **EDI > Setup > Document types** and assigned to the incoming document when setting up the customer trading partner.
 > Note: For further information relating to validation refer to the [validation setup](../SETUP/Validation%20profiles.md) and [validation processing](../DOCUMENTS/Customer%20purchase%20order.md#step-3---staging-to-target) sections.
 
 > Note: If a sales order has both errors and warning validations, it will be displayed in the error list only.
