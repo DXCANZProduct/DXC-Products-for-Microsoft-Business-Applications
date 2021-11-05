@@ -29,22 +29,60 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Customer advanced shipping notice (ASN)
 
-## ASN line configurations
-There are currently three **ASN line configurations** available and can be viewed at **EDI > Setup > Configurations > ASN line configurations**.
+EDI customers may require an advanced shipping notice (ASN) for an order.
 
-Config option       |	Description	            | Warehouse management	    | Containerization	    | Note
-:--                 |:--                      |:--                        |:--                    |:--
-**Picking list**    |	The ASN will be generated based on information in the pick list registration and consignments table	| Not enabled	 | N/A	| The SSCC should be populated for each line of the picking list registration
-**WHSContainerization** |	The ASN will be generated based on the information in the WHS container and consignments table | WHS enabled <br> Not 3PL	| Used	| The container number will be used as the SSCC Id and therefore should be configured based on SSCC number requirements
-**WHSDeliveredLP**      |	The ASN will be generated based on the information in the WHS license plate and consignments table.	| WHS enabled <br> Not 3PL	| Not used	| The target license plate number will be used as the SSCC Id and therefore should be configured based on SSCC number requirements
+> Note: Customer advanced shipping notice can also be sent for a sales order not created via EDI.
 
+The following subsections will describe how to view, process and send Customer advanced shipping notice to applicable Customer Trading partners. <br>
+Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
+The created ASN record(s) can be viewed for a sales order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Sales order page.<br>
 
-> Note: Additional options can be created as a customer specific requirement and added to this list for selection on the warehouse form.
+## Processing
 
-To assign the **ASN line configuration** to a warehouse, the user can navigate to **Inventory management > Setup > Inventory breakdown > Warehouses**
--	Select the applicable warehouse to be used for ASN generation (Ship from warehouse)
--	Select the ASN line configuration in the **ASN line configuration** field in the EDI FastTab
+### Post packing slip
+When posting a packing slip for a sales order, it is possible to add consignment information.
+-	From the packing slip posting form, select the **Assign consignment note** button
+-	To create a new consignment note record, select **New**
+    - Update the **Consignment note number**
+    - Select the **Shipping carrier** and **Carrier service**
+-	To select a previously created consignment note, select the record
+> Note: Consignment notes will be matched to the delivery based on the Delivery Name, Delivery address, Customer account and warehouse.
+-	Click **Assign** to attach the consignment note number to the packing slip. Where the **ASN strategy** has been configured to:
+    - **Single packing slip**, the _Send to EDI_ flag will be set to _Yes_.  Once the packing slip is posted, an Customer advanced shipping notice record will be created in the staging table.
+    - **Consolidate packing slip**, the ASN must be sent to EDI from the Consignment notes table, see below.
 
+Where the ASN strategy (EDI > SETUP > DOCUMENT TYPES > EDI DOCUMENTS > CUSTOMER > OUTBOUND > ASN > SETTINGS. Linked to Customer via Trading partner setup for the applicable document type via: EDI > SETUP > TRADING PARTNERS) 
 
-Data entity: Warehouses, staging field SAB_EDICUSTASNLINECONFIGURATIONNAME
+### Consignment notes
 
+#### Create a consignment note
+
+#### Create ASN from consignment notes
+
+#### Auto generate a consignment note number
+
+## View staging table records
+To view the Customer purchase order acknowledgement staging records, go to **EDI > Documents > Customer documents > Customer purchase order acknowledgement**. 
+Use this page to review staging and process EDI Customer purchase order acknowledgements documents to an Outbound file.
+
+### List page
+The following EDI fields are available on the list page.
+
+**Field**               | **Description**
+
+### Buttons
+The following buttons are available on the **Customer purchase order acknowledgement** Action Pane, tab **Purchase order acknowledgement**.
+
+**Button**	                    | **Description**
+
+### Header fields
+The following EDI Header staging fields are available on the header page.
+
+**Field**	              | **Description**	                                      | **Source D365 field**
+:---                    |:---                                                   |:---
+
+### Line fields
+The following EDI Line staging fields are available on the lines page.
+
+**Field**	              | **Description**	                                      | **Source D365 field**
+:---                    |:---                                                   |:---
