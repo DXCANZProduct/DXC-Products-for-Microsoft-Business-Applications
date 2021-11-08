@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI Customer]
-description: [EDI Customer setup - Order purpose group]
+title: [EDI Vendor]
+description: [EDI Vendor setup - Order purpose group]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 30/09/2021
+ms.date: 9/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,22 +27,22 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Customer setup
+# Vendor setup
 ## Setup order purpose groups
 
-Users can access the form by navigating to **EDI > Setup > Customer setup > Order purpose group**
+Users can access the form by navigating to **EDI > Setup > Vendor setup > Order purpose group**
 
-EDI purchase orders can be received from trading partners with many order purposes.  The type identifier received can change the way the order is processed within D365.
+EDI purchase orders can be sent to trading partners with many order purposes.  The type identifier sent can change the way the order is processed within the trading partner's system.
 -	Click **New** to create a new record. 
 -	In the **Name** field, enter the name of the order purpose group
 -	In the **Description** field, enter a description of the order purpose group
 -	In the **Mappings** FastTab, select **Add** to create a new record
 -	Select the **Order purpose code**. Options are:
-    -	**Original** - Indicates this the first/original order or agreement. Applies to document type **Customer purchase order**. 
-    -	**Change** - Specifies the sales order change indicator. Applies to document type **Customer purchase order change**.
-    -	**Cancellation** - Specifies the sales order cancellation indicator. Applies to document type **Customer purchase order** and **Customer purchase order change**.
-    -	**Confirmation** - When receiving a Purchase Order Confirmation (POC) from a customer used to identify a "confirmation". Applies to document type **Customer purchase order**.
--	Specify the **indicator**/customer's value used to identify the **EDI order purpose**
+    -	**Original** - Indicates this the first/original order or agreement. Applies to document type **Vendor purchase order**. 
+    -	**Change** - Specifies the order change indicator. Applies to document type **Vendor purchase order change**.
+    -	**Cancellation** - Specifies the order cancellation indicator. Applies to document type **Vendor purchase order change**.
+    -	**Confirmation** - When receiving a purchase order acknowledgement (POA) from a vendor used to identify a "confirmation" returned to the vendor. Applies to document type **Vendor purchase order change**.
+-	Specify the **indicator**/vendor's value used to identify the **EDI order purpose**
 
 Examples: <br>
 **Order purpose** 	              | **X12 examples**                      | **EDIFACT examples**
@@ -53,8 +53,8 @@ Examples: <br>
 **Confirmation**                  |	06	                                  | 6
 
 ## Where used
-Order purpose group is assigned on the [Customer Trading partner's](../Trading%20partner.md) Options field called **Order purpose**.
+Order purpose group is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Order purpose**.
 
 ## Data entities:
--	Customer EDI order purpose group
--	Customer EDI order purpose lines
+-	Vendor EDI order purpose group
+-	Vendor EDI order purpose lines
