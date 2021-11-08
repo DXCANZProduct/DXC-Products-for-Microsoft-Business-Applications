@@ -5,7 +5,7 @@ title: [EDI Vendor]
 description: [EDI Vendor setup - Order type group]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 23/09/2021
+ms.date: 9/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,25 +27,22 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Customer setup
+# Vendor setup
 ## Setup purchase order types
 
-Users can access the form by navigating to **EDI > Setup > Customer setup > Customer EDI order type group**
+Users can access the form by navigating to **EDI > Setup > Vendor setup > Order type group**
 
-EDI purchase orders can be received from trading partners with many order types.  The type identifier received can change the way the order is processed within D365. <br>
-> Note: Fields flagged with \* has been deprecated from **Customer EDI order type group**. Backwards compatibility option (EDI parameters > Allow historic PO types) allows companies to show these deprecated options in Customer EDI order type group. These \* options have been moved to **Order purpose group**
+EDI purchase orders can be sent to trading partners with many order types.  The type identifier sent can change the way the order is processed within the trading partner's system. <br>
 
 - Click **New** to create a new record. 
 -	In the **Name** field, enter the name of the order type group
 -	In the **Description** field, enter a description of the order type group
 -	In the **Mappings** FastTab, select **Add** to create a new record
 -	Select the **Order Type**. Options are: <br>
-    -	**Order** - When receiving a Purchase Order from a customer used to identify a "normal" order using these characters. Creates a standalone D365 sales order.
-    -	\* **Confirmation** - When receiving a Purchase Order Confirmation (POC) from a customer used to identify a "confirmation". Confirms an existing D365 sales order. Usually receive in response to a Purchase Order Acknowledgement (POA) sent to the customer.
-    -	**Agreement** - When receiving a Purchase Order from a customer used to identify a "blanket" order. Creates a D365 sales agreement.
-    -	**Release order** - When receiving a Purchase Order from a customer used to identify a "release" order. Creates a D365 release order against a D365 sales agreement. Customer purchase order document setting 'Create release order without a blanket order' provides options No, Yes, Warning in cases where a release order is recieved without a matching D365 sales agreement.
-    -	\* **Cancellation** - Specifies the sales order cancellation indicator. Cancels the D365 sales order or agreement.
--	Specify the **indicator**/Customer's value used to identify the EDI order type.
+    -	**Order** - When creating a purchase order to the vendor; used to identify a "normal" order using these characters. 
+    -	**Agreement** - When sending a purchase agreement to a vendor; used to identify a "blanket" order. 
+    -	**Release order** - When the purchase order was created by releasing from a purchase agreement.
+-	Specify the **indicator**/vendor's value used to identify the EDI order type.
 
 Examples: <br>
 **Order type** 	                  | **X12 examples**                      | **EDIFACT examples**
@@ -55,8 +52,8 @@ Examples: <br>
 **Release order**                 |	**RL** - Release or Delivery Order	  | **226** - Call off order
 
 ## Where used
-Customer EDI order type group is assigned on the [Customer Trading partner's](../Trading%20partner.md) Options field called **Customer EDI order types**.
+Order type group is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Order type**.
 
 ## Data entities:
-- Customer EDI order type group
-- Customer EDI order type lines
+- Vendor EDI order type group
+- Vendor EDI order type lines
