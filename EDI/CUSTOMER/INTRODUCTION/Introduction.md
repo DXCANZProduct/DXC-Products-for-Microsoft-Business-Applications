@@ -30,18 +30,32 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Introduction
 This section will provide a quick overview of the Customer EDI module.
 
-Customer module includes the following documents:
-1. Customer purchase order (inbound): Creates a D365 sales order, sales agreement or release order.
-2. Customer purchase order change (inbound): Updates an existing D365 sales order by changing any of the following: delivery address, store code, dates, delivery time, quantities, prices and/or adding additional lines.
-3. Customer purchase acknowledgement (outbound): Send an acknowledgement comparing the D365 sales order to customers EDI purchase order.
-4. Customer advanced shipping notice (outbound): Send packing slip information with packing details.
-5. Sales invoice (outbound): Send the sales order tax invoice.
+## Documents
+### Core EDI documents (All trading partners)
 
-## Core setup
+EDI contains the following documents pertaining to all Trading partners.
+- Inbound
+	- Functional Acknowledgement – Receive functional acknowledgement that outbound document has been received by Trading partner.
+- Outbound
+	- Functional Acknowledgement – Send functional acknowledgement that inbound document has been received.
+
+### Customer EDI documents (Customer license only)
+
+EDI contains the following documents pertaining to Customer Trading partners.
+- Inbound
+	- Customer purchase order - Allows a customer to send a Purchase Order, which in turn creates a sales order, sales agreement or release order in D365.
+	- Customer purchase order change - Allows a customer to send a change for an existing EDI purchase order, which in turn updates the applicable sales order in D365. Ability to update delivery address, store code, dates, delivery time, quantities, prices and/or adding additional lines
+- Outbound
+	- Customer purchase order acknowledgement (POA) - Allows D365 to send an Acknowledgement once a customer purchase order has been received and verified.
+	- Customer advanced shipping notice (ASN) - Allows D365 to send delivery information to the customer with the packaging details.
+	- Sales invoice - Allows D365 to send a tax invoice document to the customer.
+
+## Setup
+### Core setup
 Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 
-## Customer setup
-### Assigned on Customer Trading partner
+### Customer setup
+#### Assigned on Customer Trading partner
 Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner: <br>
 
 - Customer setup: **EDI > Setup > Customer setup** <br>
@@ -53,19 +67,19 @@ Used to map D365/EDI value to Customer's value and assigned on Customer Trading 
 - Core Setup: **EDI > Setup** <br>
 	- [Unit of measure mapping](../../CORE/Setup/UOM%20mapping.md)
 
-### Assigned on EDI parameters:
+#### Assigned on EDI parameters:
 - Sales and marketing setup: **Sales and marketing > Setup > Sales orders > Order hold codes**<br>
 	- [Hold codes](../SETUP/CUSTOMER%20SETUP/Hold%20codes.md)
 
-### Assigned on items:
+#### Assigned on items:
 - Required where the confirmed pack sizes within the Customer purchase order acknowledgement is set to use System pack and/or System inner. Setup at **Product information management > Products > Released products and selecting FastTab Manage inventory**
 	- [Item pack sizes](../../CORE/Setup/Item%20pack%20sizes.md)
 
-### Assigned on warehouses:
+#### Assigned on warehouses:
 - Required where advanced shipping notice (ASN) will be sent to EDI customers and determines what information will be used when creating the ASN: 
 	- [ASN line configurations](../SETUP/Warehouses.md#asn-line-configurations) 
 
-## Customer Document type setup
+### Customer Document type setup
 Setup Document types and assign on Customer Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Document types**
 
@@ -82,7 +96,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**
 - [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
 - [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
 
-## Trading partner setup
+### Trading partner setup
 Assign setup and incoming/outgoing documents on the Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Trading partners**
 - [Trading partner](../SETUP/Trading%20partner.md)
