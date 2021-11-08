@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [EDI Customer]
-description: [EDI Customer setup - Purchase order types]
+title: [EDI Vendor]
+description: [EDI Vendor setup - Order type group]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 23/09/2021
