@@ -80,7 +80,7 @@ Used to map D365/EDI value to Customer's value and assigned on Customer Trading 
 - Core Setup: **EDI > Setup** <br>
 	- [Unit of measure mapping](../../CORE/Setup/UOM%20mapping.md)
 
-### Customer Document type setup
+#### Customer Document type setup
 Setup Document types which will be assigned on Customer Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Document types**
 
@@ -97,7 +97,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**
 - [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
 - [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
 
-### Trading partner setup
+#### Trading partner setup
 Create new trading partners and assign setup and incoming/outgoing documents. <br>
 Users can access the form by navigating to **EDI > Setup > Trading partners**
 - [Trading partner](../SETUP/Trading%20partner.md)
