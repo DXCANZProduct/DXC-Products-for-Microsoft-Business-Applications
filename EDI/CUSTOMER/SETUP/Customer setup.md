@@ -84,3 +84,6 @@ Where the **System pack** and **System inner** is used to confirm pack sizes on 
 3. Outer unit
 
 See [Setup item pack sizes](../../CORE/Setup/Item%20pack%20sizes.md) for more details.
+
+## ASN line configuration:
+- Where advanced shipping notice (ASN) will be sent to EDI customers it is required to assign [ASN line configuration](../SETUP/Warehouses.md#asn-line-configurations)  on the 'Ship from' warehouses. Determines what information will be used when creating the ASN: 
