@@ -40,18 +40,8 @@ Error	          | How to fix
 :--             |:--
 Could not find address for store code '%'	  | Navigate to **EDI > Setup > Trading partner**, filter to applicable customer and add/update address with store code
 Field 'Agreement classification' must be filled in    | Navigate to **EDI > Setup > Document types**. Select document **Customer purchase order** and the applicable Settings profile used for the staging record (assigned to Trading partner). Select the applicable _Agreement classification_.
-Inventory dimension Site is mandatory and must consequently be specified    |	ACCOUNTS RECEIVABLE > CUSTOMERS > ALL CUSTOMERS
-Setup default site or warehouse on the customer or if no default, original EDI file needs to include these details.
-The entered receipt date ‘%’ is not valid because it is before today.	EDI > DOCUMENTS > CUSTOMER DOCUMENTS > CUSTOMER PURCHASE ORDER
-Edit requested receipt date in staging form
-Item not found	EDI > DOCUMENTS > CUSTOMER DOCUMENTS > CUSTOMER PURCHASE ORDER
-EDI > DOCUMENTS > CUSTOMER DOCUMENTS > CUSTOMER PURCHASE ORDER CHANGE
-PRODUCT INFORMATION MANAGEMENT > PRODUCTS > RELEASED PRODUCTS
-Dependent on Item Id source assigned to Trading partner’s Document, EDI couldn’t find the PO or PO change’s item. Either fix staging or setup on the Item.
-Sales Agreement for customer '%', purchase number ‘%’ not found	Received a Release order referring to Sales agreement that could not be found for the Customer. 
-1. EDI > SETUP > DOCUMENT TYPES
-If sales agreement is not required, update document setting ‘Create release order without blanket order’ to Yes. 
-2. Create/import sales agreement or fix ‘Customer requisition’ on existing sales agreement (if D365 incorrect)
-Missing ASN line configuration on warehouse: ‘%’	INVENTORY MANAGEMENT > SETUP > INVENTORY BREAKDOWN > WAREHOUSES
-Delivery note has posted, but no ASN created.
-Assign applicable ASN line configuration on the warehouse.
+Inventory dimension Site is mandatory and must consequently be specified    |	Setup default site or warehouse on the customer or if no default, original EDI file needs to include these details.
+The entered receipt date ‘%’ is not valid because it is before today  | Edit 'Requested receipt date' to an appropriate date for the staging record at **EDI > Documents > Customer documents > Customer purchase order**
+Item not found	| Dependent on **Item Id source** in the Setting profile and assigned to Trading partner’s Incoming document, EDI couldn’t find the applicable D365 item number. Either fix staging or setup on the Item.
+Sales Agreement for customer '%', purchase number ‘%’ not found	  | Received a Release order referring to Sales agreement that could not be found for the Customer. <br> 1. If sales agreement is not required, update document setting **Create release order without blanket order** to _Yes_. <br> 2. Create/import D365 sales agreement or <br> 3. Fix **Customer requisition** on existing sales agreement (if D365 incorrect)
+Missing ASN line configuration on warehouse: ‘%’	| Delivery note has posted, but no ASN created. Assign applicable **ASN line configuration** on the 3PL warehouse at **Inventory management > Setup > Inventory breakdown > Warehouses**
