@@ -50,9 +50,6 @@ EDI > Setup > Document types (Setting profiles for EDI customer documents)
 
 **Order**         | **Entity**						| **Description**                             | **Dependency**
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
-1		  | EDI settings - Functional <br>acknowledgement inbound	| Create new document type **Settings profile** for Functional <br>acknowledgement inbound
-2		  | EDI settings - Functional <br>acknowledgement outbound | Create new document type **Settings profile** for Functional <br>acknowledgement outbound
-
 1	    | EDI Settings - PO                               | Create new document type **Settings profile** for Customer purchase order |
 2	    | EDI Settings - Customer purchase order change   | Create new document type **Settings profile** for Customer purchase order change |
 3	    | EDI Settings - POA                              | Create new document type **Settings profile** for Customer purchase order acknowledgement |
@@ -69,5 +66,5 @@ EDI > Setup > Trading partner
 
 **Order**         | **Entity**						| **Description**                             | **Dependency**
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
-1                 | EDI Customers                           | Create new Customer trading partner   | [Customer setup]()
-2                 | EDI Documents - Customers               | Add incoming and outgoing documents to Customer trading partner | EDI Customers, [Customer setting profiles]  and [Document types]()
+1                 | EDI Customers                           | Create new Customer trading partner   | [Customer setup](#customer-setup)
+2                 | EDI Documents - Customers               | Add incoming and outgoing documents to Customer trading partner | EDI Customers, [Customer setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data%20entities.md#document-types)
