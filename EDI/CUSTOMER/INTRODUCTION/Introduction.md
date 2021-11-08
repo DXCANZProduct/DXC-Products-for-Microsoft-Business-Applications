@@ -55,17 +55,6 @@ EDI contains the following documents pertaining to Customer Trading partners.
 Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 
 ### Customer setup
-#### Assigned on Customer Trading partner
-Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner: <br>
-
-- Customer setup: **EDI > Setup > Customer setup** <br>
-	- [Purchase order types](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md)
-	- [Order purpose group](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md)
-	- [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md)
-	- [Order line change type group](..SETUP/CUSTOMER%20SETUP/Order%20line%20change%20type%20group.md)
-
-- Core Setup: **EDI > Setup** <br>
-	- [Unit of measure mapping](../../CORE/Setup/UOM%20mapping.md)
 
 #### Assigned on EDI parameters:
 - Sales and marketing setup: **Sales and marketing > Setup > Sales orders > Order hold codes**<br>
@@ -79,8 +68,20 @@ Used to map D365/EDI value to Customer's value and assigned on Customer Trading 
 - Required where advanced shipping notice (ASN) will be sent to EDI customers and determines what information will be used when creating the ASN: 
 	- [ASN line configurations](../SETUP/Warehouses.md#asn-line-configurations) 
 
+#### Mappings assigned on Customer Trading partner
+Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner: <br>
+
+- Customer setup: **EDI > Setup > Customer setup** <br>
+	- [Purchase order types](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md)
+	- [Order purpose group](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md)
+	- [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md)
+	- [Order line change type group](..SETUP/CUSTOMER%20SETUP/Order%20line%20change%20type%20group.md)
+
+- Core Setup: **EDI > Setup** <br>
+	- [Unit of measure mapping](../../CORE/Setup/UOM%20mapping.md)
+
 ### Customer Document type setup
-Setup Document types and assign on Customer Trading partner. <br>
+Setup Document types which will be assigned on Customer Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Document types**
 
 - [File templates](../../CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
@@ -97,11 +98,21 @@ Users can access the form by navigating to **EDI > Setup > Document types**
 - [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
 
 ### Trading partner setup
-Assign setup and incoming/outgoing documents on the Trading partner. <br>
+Create new trading partners and assign setup and incoming/outgoing documents. <br>
 Users can access the form by navigating to **EDI > Setup > Trading partners**
 - [Trading partner](../SETUP/Trading%20partner.md)
 
-## Customer documents
+## Processing
+
+### Import files
+Ability to manually import or review inbound files
+- [Inbound files](../../CORE/Managing%20files/Inbound%20files.md)
+
+### Export files
+Ability to manually export or review outbound files
+- [Outbound files](../../CORE/Managing%20files/Outbound%20files.md)
+
+### Customer documents
 Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents > Customer documents**
 - [Customer purchase order](../DOCUMENTS/Customer%20purchase%20order.md)
@@ -110,11 +121,11 @@ Users can access the forms by navigating to **EDI > Documents > Customer documen
 - [Customer advanced shipping notice](../DOCUMENTS/Customer%20advanced%20shipping%20notice.md)
 - [Sales invoice](../DOCUMENTS/Sales%20invoice.md)
 
-## Review sales order
+### Review sales order
 The following section describes the additional EDI functionality on Sales orders.
 - [Review sales order](../DOCUMENTS/Review%20sales%20order.md)
 
-## Workspaces
+### Workspaces
 The following workspaces are available:
 - [EDI Document maintenance](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md)
 - [EDI Sales order processing](../WORKSPACES/EDI%20Sales%20order%20processing.md)
