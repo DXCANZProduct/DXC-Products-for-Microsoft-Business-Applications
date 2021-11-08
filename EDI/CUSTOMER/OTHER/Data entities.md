@@ -31,7 +31,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 The following is a summary of data entities available for the Customer EDI module:
 
-## Connections
+## Customer setup
 EDI > Setup > Customer setup
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
@@ -45,4 +45,29 @@ EDI > Setup > Customer setup
 7	                | Customer EDI order line change type group       | Create new **Customer EDI order line change type group**. EDI > Setup > Customer setup > Customer EDI order line change type group
 8	                | Customer EDI order line change type group line  | Create new **Customer EDI order line change type lines**. EDI > Setup > Customer setup > Customer EDI order line change type group  | Customer EDI order line change type group
 
+## Document setting profiles
+EDI > Setup > Document types (Setting profiles for EDI customer documents)
 
+**Order**         | **Entity**						| **Description**                             | **Dependency**
+:-----------------|:------------------------------------		|:------------------------- |:-------------------------
+1		  | EDI settings - Functional <br>acknowledgement inbound	| Create new document type **Settings profile** for Functional <br>acknowledgement inbound
+2		  | EDI settings - Functional <br>acknowledgement outbound | Create new document type **Settings profile** for Functional <br>acknowledgement outbound
+
+1	    | EDI Settings - PO                               | Create new document type **Settings profile** for Customer purchase order |
+2	    | EDI Settings - Customer purchase order change   | Create new document type **Settings profile** for Customer purchase order change |
+3	    | EDI Settings - POA                              | Create new document type **Settings profile** for Customer purchase order acknowledgement |
+4	    | EDI Settings - ASN                              | Create new document type **Settings profile** for Customer advanced shipping notice |
+5	    | EDI Settings - Sales Invoice                    | Create new document type **Settings profile** for Sales invoice |
+
+## Document types
+EDI > Setup > Document types (Template, Validation, Outbound file names and EDI Field metadata)
+
+See [Core data entities](../../CORE/OTHER/Data%20entities.md#document-types)
+
+## Trading partner
+EDI > Setup > Trading partner
+
+**Order**         | **Entity**						| **Description**                             | **Dependency**
+:-----------------|:------------------------------------		|:------------------------- |:-------------------------
+1                 | EDI Customers                           | Create new Customer trading partner   | [Customer setup]()
+2                 | EDI Documents - Customers               | Add incoming and outgoing documents to Customer trading partner | EDI Customers, [Customer setting profiles]  and [Document types]()
