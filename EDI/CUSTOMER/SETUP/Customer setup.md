@@ -37,7 +37,7 @@ Users can access the form by navigating to **EDI > Setup > Trading partners** <b
 Customer Trading Partner Setup - Quick Summary:
 **Setup** 	                      | **Short description**                 | **Setup path**
 :-------------------------------- |:------------------------------------- |:-------------------------------------
-<ins>**Option**s</ins>		
+<ins>**Options**</ins>		
 **Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> • Outgoing documents: Connection profile setup on [EDI > Setup > EDI parameters](../../CORE/Setup/EDI%20parameters.md) <br> • Incoming documents: All active connection incoming paths as setup in [Connections](../../CORE/Setup/Connection%20setup.md). | [EDI > Setup > Connection setup](../../CORE/Setup/Connection%20setup.md)
 **Cleanup profile**	              | Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level. If blank, default Cleanup profile will be used as setup on [EDI > Setup > EDI shared parameters](../../CORE/Setup/EDI%20shared%20parameters.md) | [EDI > Setup > Cleanup profile](../../CORE/Setup/Cleanup%20profile.md)
 **Customer EDI order types**      |	Order type identifiers. Determines if the Customer purchase order record will create a Sales order, Agreement, or Release order  |	[EDI > Customer setup > Customer EDI order type group](CUSTOMER%20SETUP/Purchase%20order%20types.md)
