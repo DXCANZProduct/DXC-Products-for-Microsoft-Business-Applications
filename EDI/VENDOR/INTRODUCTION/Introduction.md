@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI Customer]
-description: [Introduction to EDI Customer]
+title: [EDI Vendor]
+description: [Introduction to EDI Vendor]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 29/09/2021
+ms.date: 8/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Introduction
-This section will provide a quick overview of the Customer EDI module.
+This section will provide a quick overview of the Vendor EDI module.
 
 ## Documents
 ### Core EDI documents (All trading partners)
@@ -39,43 +39,41 @@ EDI contains the following documents pertaining to all Trading partners.
 - Outbound
 	- Functional Acknowledgement – Send functional acknowledgement that inbound document has been received.
 
-### Customer EDI documents (Customer license only)
+### Customer EDI documents (Vendor license only)
 
-EDI contains the following documents pertaining to Customer Trading partners.
-- Inbound
-	- Customer purchase order - Allows a customer to send a Purchase Order, which in turn creates a sales order, sales agreement or release order in D365.
-	- Customer purchase order change - Allows a customer to send a change for an existing EDI purchase order, which in turn updates the applicable sales order in D365. Ability to update delivery address, store code, dates, delivery time, quantities, prices and/or adding additional lines
+EDI contains the following documents pertaining to Vendor Trading partners.
 - Outbound
-	- Customer purchase order acknowledgement (POA) - Allows D365 to send an Acknowledgement once a customer purchase order has been received and verified.
-	- Customer advanced shipping notice (ASN) - Allows D365 to send delivery information to the customer with the packaging details.
-	- Sales invoice - Allows D365 to send a tax invoice document to the customer.
+	- Vendor purchase order - Allows D365 to send a purchase order to a Vendor.
+	- Vendor purchase order change - Allows D365 to send changes to a purchase order to a Vendor. Also used to send purchase order confirmation where required.
+
+- Inbound
+	- Vendor purchase order acknowledgement (POA) - Allows Vendor to send an Acknowledgement once a purchase order has been received and verified, which in turn updates the D365 purchased based on EDI settings.
+	- Vendor advanced shipping notice (ASN) - Allows Vendor to send delivery information to D365 with the delivery details, creating an arrival journal against the purchase order or a Load for Advanced Warehousing warehouses.
+	- Purchase invoice - Allows Vendor to send a Tax Invoice document to D365, creating a pending or posting the Tax invoice for the Purchase order/s based on settings and validation.
 
 ## Setup
 ### Core setup
 Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 
-### Customer setup
-
-#### Assigned on EDI parameters:
-- Sales and marketing setup: **Sales and marketing > Setup > Sales orders > Order hold codes**<br>
-	- [Hold codes](../SETUP/CUSTOMER%20SETUP/Hold%20codes.md)
+### Vendor setup
 
 #### Assigned on items:
-- Required where the confirmed pack sizes within the Customer purchase order acknowledgement is set to use System pack and/or System inner. Setup at **Product information management > Products > Released products and selecting FastTab Manage inventory**
+- Required where the confirmed pack sizes within the Vendor purchase order acknowledgement is set to use System pack and/or System inner. Setup at **Product information management > Products > Released products and selecting FastTab Manage inventory**
 	- [Item pack sizes](../../CORE/Setup/Item%20pack%20sizes.md)
 
-#### Assigned on warehouses:
-- Required where advanced shipping notice (ASN) will be sent to EDI customers and determines what information will be used when creating the ASN: 
-	- [ASN line configurations](../SETUP/Warehouses.md#asn-line-configurations) 
+#### Mappings assigned on Vendor Trading partner
+Used to map D365/EDI value to Vendor's value and assigned on Vendor Trading partner: <br>
 
-#### Mappings assigned on Customer Trading partner
-Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner: <br>
-
-- Customer setup: **EDI > Setup > Customer setup** <br>
-	- [Purchase order types](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md)
-	- [Order purpose group](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md)
-	- [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md)
-	- [Order line change type group](..SETUP/CUSTOMER%20SETUP/Order%20line%20change%20type%20group.md)
+- Vendor setup: **EDI > Setup > Vendor setup** <br>
+	- [Order type group](../SETUP/VENDOR%20SETUP/Order%20type%20group.md)
+	- [Order purpose group](../SETUP/VENDOR%20SETUP/Order%20purpose%20group.md)
+	- [Order line change type group](..SETUP/VENDOR%20SETUP/Order%20line%20change%20type%20group.md)
+	- [Carrier mode]()
+	- [Charges code]()
+	- [POA response code group](../SETUP/VENDOR%20SETUP/POA%20response%20code%20group.md)
+	- [Payment terms type group]()
+	- [Misc charge/allowance indicator]()
+	- [Misc method of handling]()
 
 - Core Setup: **EDI > Setup** <br>
 	- [Unit of measure mapping](../../CORE/Setup/UOM%20mapping.md)
