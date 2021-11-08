@@ -39,15 +39,15 @@ EDI contains the following documents pertaining to all Trading partners.
 - Outbound
 	- Functional Acknowledgement – Send functional acknowledgement that inbound document has been received.
 
-### Customer EDI documents (Vendor license only)
+### Vendor EDI documents (Vendor license only)
 
 EDI contains the following documents pertaining to Vendor Trading partners.
 - Outbound
 	- Vendor purchase order - Allows D365 to send a purchase order to a Vendor.
-	- Vendor purchase order change - Allows D365 to send changes to a purchase order to a Vendor. Also used to send purchase order confirmation where required.
+	- Vendor purchase order change - Allows D365 to send changes to a purchase order to a Vendor. Also used to send purchase order confirmation where required for a purchase order acknowledgement.
 
 - Inbound
-	- Vendor purchase order acknowledgement (POA) - Allows Vendor to send an Acknowledgement once a purchase order has been received and verified, which in turn updates the D365 purchased based on EDI settings.
+	- Vendor purchase order acknowledgement (POA) - Allows Vendor to send an Acknowledgement once a purchase order has been received and verified, which in turn updates the D365 purchase order based on EDI settings.
 	- Vendor advanced shipping notice (ASN) - Allows Vendor to send delivery information to D365 with the delivery details, creating an arrival journal against the purchase order or a Load for Advanced Warehousing warehouses.
 	- Purchase invoice - Allows Vendor to send a Tax Invoice document to D365, creating a pending or posting the Tax invoice for the Purchase order/s based on settings and validation.
 
@@ -78,20 +78,21 @@ Used to map D365/EDI value to Vendor's value and assigned on Vendor Trading part
 - Core Setup: **EDI > Setup** <br>
 	- [Unit of measure mapping](../../CORE/Setup/UOM%20mapping.md)
 
-#### Customer Document type setup
-Setup Document types which will be assigned on Customer Trading partner. <br>
+#### Vendor Document type setup
+Setup Document types which will be assigned on Vendor Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Document types**
 
 - [File templates](../../CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
 - Setting profiles: applicable to the following document types
-    - [Customer purchase order](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md)
-    - [Customer purchase order change](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20change.md)
-    - [Customer purchase order acknowledgement](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md)
-    - [Customer advanced shipping notice](../SETUP/SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)
-    - [Sales invoice](../SETUP/SETTING%20PROFILES/Sales%20invoice.md)
+    - [Vendor purchase order](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order.md)
+    - [Vendor purchase order change](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20change.md)
+    - [Vendor purchase order acknowledgement](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md)
+    - [Vendor advanced shipping notice](../SETUP/SETTING%20PROFILES/Vendor%20advanced%20shipping%20notice.md)
+    - [Purchase invoice](../SETUP/SETTING%20PROFILES/Purchase%20invoice.md)
 - Validation profiles: applicable to the following inbound document types
-    - [Customer purchase order](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order.md)
-    - [Customer purchase order change](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order%20change.md)
+    - [Vendor purchase order acknowledgement](../SETUP/VALIDATION%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md)
+    - [Vendor advanced shipping notice](../SETUP/VALIDATION%20PROFILES/Vendor%20advanced%20shipping%20notice.md)
+    - [Purchase invoice](../SETUP/VALIDATION%20PROFILES/Purchase%20invoice.md)
 - [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
 - [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
 
@@ -110,23 +111,19 @@ Ability to manually import or review inbound files
 Ability to manually export or review outbound files
 - [Outbound files](../../CORE/Managing%20files/Outbound%20files.md)
 
-### Customer documents
+### Vendor documents
 Review staging records. <br>
-Users can access the forms by navigating to **EDI > Documents > Customer documents**
-- [Customer purchase order](../DOCUMENTS/Customer%20purchase%20order.md)
-- [Customer purchase order change](../DOCUMENTS/Customer%20purchase%20order%20change.md)
-- [Customer purchase order acknowledgement](../DOCUMENTS/Customer%20purchase%20order%20acknowledgement.md)
-- [Customer advanced shipping notice](../DOCUMENTS/Customer%20advanced%20shipping%20notice.md)
-- [Sales invoice](../DOCUMENTS/Sales%20invoice.md)
-
-### Review sales order
-The following section describes the additional EDI functionality on Sales orders.
-- [Review sales order](../DOCUMENTS/Review%20sales%20order.md)
+Users can access the forms by navigating to **EDI > Documents > Vendor documents**
+- [Vendor purchase order](../DOCUMENTS/Vendor%20purchase%20order.md)
+- [Vendor purchase order change](../DOCUMENTS/Vendor%20purchase%20order%20change.md)
+- [Vendor purchase order acknowledgement](../DOCUMENTS/Vendor%20purchase%20order%20acknowledgement.md)
+- [Vendor advanced shipping notice](../DOCUMENTS/Vendor%20advanced%20shipping%20notice.md)
+- [Purchase invoice](../DOCUMENTS/Purchase%20invoice.md)
 
 ### Workspaces
 The following workspaces are available:
 - [EDI Document maintenance](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md)
-- [EDI Sales order processing](../WORKSPACES/EDI%20Sales%20order%20processing.md)
+- [EDI Purchase order processing](../WORKSPACES/EDI%20Purchase%20order%20processing.md)
 
 ## Other
 - [Data entities](../OTHER/Data%20entities.md)
