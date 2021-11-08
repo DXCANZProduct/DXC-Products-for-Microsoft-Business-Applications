@@ -27,15 +27,31 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Introduction
+# Frequently asked questions
 
-## Expand your business efficiency with DXC Electronic Data Interchange for Microsoft Dynamics 365
+## Generic EDI queries
 
-EDI is a well-proven business tool for lowering costs, improving business efficiency, speed and accuracy. DXC EDI enables companies to easily setup, send/receive and manage messages with their EDI trading partners, all within Microsoft Dynamics 365 for Operations.
+See [EDI Core FAQ](../../CORE/OTHER/FAQ.md) for generic queries
 
-Powerful functionality extends Microsoft Dynamics 365:
-- Receive EDI communications from Customer, 3PL warehouse, Vendor and/or Landed cost Freight Forwarder trading partners and create/update D365 transactions
-- Process D365 transaction and send EDI documents to Customer, Vendor and/or 3PL warehouse Trading partners
-- Trading partners are created and managed within D365 and linked to valid customers, warehouses or vendors easily within D365
-- Effortlessly navigate from EDI incoming and outgoing files to applicable D365 transaction
+## Fixing Customer EDI errors
+The following table describes a few staging errors that could be experienced with customer inbound documents at the staging to target step. Short description of possible fixes are discussed. After fix, reset status on the staging record and either manually process again or leave for batch to process.
 
+Error	          | How to fix
+:--             |:--
+Could not find address for store code '%'	  | Navigate to **EDI > Setup > Trading partner**, filter to applicable customer and add/update address with store code
+Field 'Agreement classification' must be filled in    | Navigate to **EDI > Setup > Document types**. Select document **Customer purchase order** and the applicable Settings profile used for the staging record (assigned to Trading partner). Select the applicable _Agreement classification_.
+Inventory dimension Site is mandatory and must consequently be specified    |	ACCOUNTS RECEIVABLE > CUSTOMERS > ALL CUSTOMERS
+Setup default site or warehouse on the customer or if no default, original EDI file needs to include these details.
+The entered receipt date ‘%’ is not valid because it is before today.	EDI > DOCUMENTS > CUSTOMER DOCUMENTS > CUSTOMER PURCHASE ORDER
+Edit requested receipt date in staging form
+Item not found	EDI > DOCUMENTS > CUSTOMER DOCUMENTS > CUSTOMER PURCHASE ORDER
+EDI > DOCUMENTS > CUSTOMER DOCUMENTS > CUSTOMER PURCHASE ORDER CHANGE
+PRODUCT INFORMATION MANAGEMENT > PRODUCTS > RELEASED PRODUCTS
+Dependent on Item Id source assigned to Trading partner’s Document, EDI couldn’t find the PO or PO change’s item. Either fix staging or setup on the Item.
+Sales Agreement for customer '%', purchase number ‘%’ not found	Received a Release order referring to Sales agreement that could not be found for the Customer. 
+1. EDI > SETUP > DOCUMENT TYPES
+If sales agreement is not required, update document setting ‘Create release order without blanket order’ to Yes. 
+2. Create/import sales agreement or fix ‘Customer requisition’ on existing sales agreement (if D365 incorrect)
+Missing ASN line configuration on warehouse: ‘%’	INVENTORY MANAGEMENT > SETUP > INVENTORY BREAKDOWN > WAREHOUSES
+Delivery note has posted, but no ASN created.
+Assign applicable ASN line configuration on the warehouse.
