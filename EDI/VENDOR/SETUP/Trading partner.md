@@ -61,8 +61,7 @@ The following table describes the customer module fields that are available on t
 - Data entity: EDI Vendors
 
 #### Adresses
-The following table describes the vendor module fields that are available on the **Addresses** FastTab of the **Trading partners** page.
-Allows users with appropriate security permissions to edit and create address records within the **Trading partner** page.
+**Addresses** FastTab of the **Trading partners** page allows users with appropriate security permissions to edit and create address records within the **Trading partner** page.
 
 #### Outgoing documents
 The Outgoing documents FastTab defines the outgoing EDI document types that have been configured and enabled for the trading partner. It brings the document template and mappings together with the settings profile to enable the document for the trading partner.
