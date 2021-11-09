@@ -47,7 +47,7 @@ The following table describes the customer module fields that are available on t
 **Field**                          | **Description**               
 :---------                         |:--------
 <ins>**Order**</ins>	
-**Order type**                     | EDI purchase orders can send to trading partners with many order types.  The type identifier is determined by the method the order is processed within D365. <br> Note: For further information see [Setup order type groups](VENDOR%20SETUP/Order%20type%20group.md)
+**Order type**                     | EDI purchase orders can be sent to trading partners with many order types.  The type identifier is determined by the method the order is processed within D365. <br> Note: For further information see [Setup order type groups](VENDOR%20SETUP/Order%20type%20group.md)
 **Order purpose**                  | Code identifying the purpose of the document. <br> Note: For further information see [Setup order purpose](VENDOR%20SETUP/Order%20purpose%20group.md)
 **Order line change type**        |	Code specifying the type of change to the line item. <br> Note: For further information see [Setup order line change type](VENDOR%20SETUP/Order%20line%20change%20type%20group.md)
 **Carrier mode**                  |	Code specifying the method or type of transportation for the shipment. <br> Note: For further information see [Setup carrier mode](VENDOR%20SETUP/Carrier%20mode.md)
