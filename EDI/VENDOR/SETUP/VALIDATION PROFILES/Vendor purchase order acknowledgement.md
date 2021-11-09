@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI Customer]
-description: [EDI Customer Setup - Document type Validation profiles - Customer purchase order change]
+title: [EDI Vendor]
+description: [EDI Vendor Setup - Document type Validation profiles - Vendor purchase order acknowledgement]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 4/10/2021
+ms.date: 9/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,8 +27,8 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Customer setup
-## Customer document type validation profiles - Purchase order change
+# Vendor setup
+## Vendor document type validation profiles - Vendor purchase order acknowledgement
 
 Users can access the form by navigating to **EDI > Setup > Document types**.
 
@@ -45,12 +45,37 @@ Once setup for each document type, the validation profile can be assigned to eac
 - Select the **Error tolerance** to specify the validation level.  If a validation rule fails, this will be used to determine how it reacts. The logs can be viewed on the staging record's **Show log** or **Version log**. Options:
   - **Info** - An Infolog is displayed with information only. If the validation rule fails a message will be written to the staging records log but the record will continue to process.
   - **Warning** - An Infolog is displayed with a warning. If the validation rule fails a message will be written to the staging records log but the record will continue to process. 
-  - **Error** - An Infolog is displayed with an error. If the validation rule fails, the staging records will be set to error state and the target document note created/updated. Except for Customer module where an order hold will be applied to the sales order. The **Validation error hold code** that was assigned in EDI parameters will be applied to the Sales order.
+  - **Error** - An Infolog is displayed with an error. If the validation rule fails, the staging records will be set to error state and the target document note created/updated. 
 
-**Validation instance**       | **Validation rule**           | **Description**
-:-------                      |:-------                       |:----------
-**Sales Order**               |	**Delivery Date**             |	The delivery date should not be a historical date. <br> Note: Delivery date control must be enabled
-**Sales Order Line**          |	**Delivery Date**             |	The delivery date should not be a historical date. <br> Note: Delivery date control must be enabled
-**Sales Order Line**          |	**Minimum/Maximum quantity**	| The sales line quantity should be devisable by the multiple specified on the Default/Site order settings table.
-**Sales Order Line**	        | **Sales Price**	              | The unit price should be checked using the standard D365 pricing rules.  It must first convert the price to the standard method of input for that customer (CustTable.InclTax) , if the prices are slightly different it should check the tolerance before giving an error/warning.  It should also check the field on the customer table **Use customer price** before updating the sales line. <br> Example: <br> Item X trade agreement price 10.25 <br> Item Y trade agreement price 8.88 <br> Customer has a **Maximum negative price variance** and **Maximum positive price variance** of 0.05 assigned on the **Customer purchase order** setting profile. <br> Customer does not have their trade agreements entered including tax. <br> Customer sends their EDI orders including tax. <br> The setting use customer pricing is given <br> Item X EDI file price (before converting) 11.26 (after conversion) 10.24 <br> Item Y EDI file price (before converting) 9.70 (after conversion) 8.82 <br> Document's **Error tolerance** validation is set to _Warning_ <br> A warning is only given for Item Y because it is outside of the tolerance.  The warning message should show the price before and after conversion plus the price AX finds. 
-**Sales Order Line**	        | **Sales Unit**	              | It should first check that this unit of measurement actually exists, a second check should be the measurement on the inventory table module for sales
+**Validation instance**       | **Validation rule**           | **Description**       | **Info/Warning tolerance updates**
+:-------                      |:-------                       |:----------            |:----------
+
+Purchase order 	Reject	POA Header indicates the Vendor is rejecting the order. 	Cancel PO
+Purchase order	Version	Vendor’s POA version doesn’t match current PO version	Disregards difference in version
+Purchase order	Delivery date	Vendor’s POA delivery date doesn’t match PO delivery date	Update PO confirmed delivery date
+Purchase order	Vendor reference	Vendor’s POA Vendor reference doesn’t match PO Vendor reference	Update PO Vendor reference
+Purchase order Line	Delivery date	Vendor’s POA delivery date doesn’t match PO delivery date	Update PO line confirmed delivery date
+Purchase order Line	Minimum/maximum quantity	The POA quantity should be devisable by the multiple specified on the Default/Site order settings table. Since this validation can increase the allowed delivery, it is also used to check if vendor’s quantity is within the allowed purchase order line over-delivery %. Set to error if not allowed to increase over this over-delivery %	Update PO line deliver remainder. Use unit conversion if POA uom differs.
+Purchase order Line	Purchase price	The unit price should be checked against the purchase order being acknowledged.
+Example:
+Item X PO price 10.25
+Item Y PO price 8.88
+Vendor has a min and max tolerance setting of 0.05
+Vendor does not have their trade agreements entered including tax
+Vendor sends their EDI orders including tax
+The setting ‘Use vendor pricing’ is given
+Item X EDI file price (before converting) 11.26 (after conversion) 10.24
+Item Y EDI file price (before converting) 9.70 (after conversion) 8.82
+Template setting against this field is warning
+A warning is only given for Item Y because it is outside of the tolerance.  The warning message should show the price before and after conversion plus the price AX finds. It also used unit of conversion in price comparison if vendors unit doesn’t match purchase order.	Update PO line's unit price (if within allowed variance): else error
+Purchase order line	Short pick	Acknowledgement qty is less than purchase order line qty.
+After unit conversion, and also checks purchase order line’s under-delivery %	Update PO line's deliver remainder qty (use unit conversion if POA different unit). If outside under-delivery %: error
+Purchase order line	Batch Id update	Where the batch id received is different to the batch id on the purchase order.	If batch doesn’t exist for item, the batch is created and assigned to purchase order line
+Purchase order line	Reject	POA line indicates the Vendor is rejecting the order line. 	Cancel applicable purchase order line’s deliver remainder
+
+## Where used
+The **Validation profile** can be assigned on the Incoming documents FastTab to document type **Vendor purchase order acknowledgement** for the Vendor Trading partner at **EDI > Setup > Trading partners**.
+
+## Data entity
+- EDI Validation profile
+- EDI Validation profile line
