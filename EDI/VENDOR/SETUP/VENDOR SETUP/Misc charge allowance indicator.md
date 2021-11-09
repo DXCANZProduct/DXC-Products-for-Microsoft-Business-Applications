@@ -28,22 +28,25 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Vendor setup
-## Setup carrier mode
+## Setup misc. charge/allowance indicator
 
-Users can access the form by navigating to **EDI > Setup > Vendor setup > Carrier mode**
+Users can access the form by navigating to **EDI > Setup > Vendor setup > Misc charge/allowance indicator**
 
-Code specifying the method or type of transportation for the shipment. <br>
+Code which indicates an allowance or charge for the service specified. <br>
 
 - Click **New** to create a new record
--	In the **Name** field, enter the name of the carrier mode
--	In the **Description** field, enter a description of the carrier mode
+-	In the **Name** field, enter the name of the misc. charge/allowance indicator
+-	In the **Description** field, enter a description of the misc. charge/allowance indicator
 -	In the **Mappings** FastTab, select **Add** to create a new record
--	Select the **Mode**. Options are obtained from **Modes** setup at **Transportation > Setup > Carriers > Mode**, examples are air and rail.
--	Specify the **indicator**/vendor's value used to identify the EDI carrier mode.
+-	Select the **Indicator**. Options are: <br>
+    - **Allowance** - When charge value maintained on purchase order is less than zero
+    - **Charge** - When charge value maintained on purchase order is more than zero
+    - **No allowance or charge** - When charge value maintained on purchase order equal zero
+-	Specify the vendor's value used to identify the **EDI indicator**.
 
 ## Where used
-Carrier mode is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Carrier mode**.
+Carrier mode is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Misc charge/allowance indicator**.
 
 ## Data entities:
-- Vendor EDI carrier mode group
-- Vendor EDI carrier mode lines
+- Vendor EDI misc. charge/allowance indicator group
+- Vendor EDI misc. charge/allowance indicator lines
