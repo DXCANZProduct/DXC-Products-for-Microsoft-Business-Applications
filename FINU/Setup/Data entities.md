@@ -42,7 +42,14 @@ Finance utilities have extended the following standard data entities:
 
 | **Entity**                          | **Additional fields**                     | **Manual setup path**   |
 |-                                    |-                                          |-
-| **Bank statement format**           |    | Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format 
 | **Bank accounts**                   | • BPAY batch ID <br> •	Extra balance line on EFT <br> • Include balance line in record count <br> • Total line order <br> • Use vendor bank name <br> • User identification  | Cash and bank management > Bank accounts > Bank accounts
 | **Vendor bank accounts**            | • Biller code <br> • Lodgement reference <br> • Bank code <br> • Bank particulars <br> • Bank reference | Accounts payable > Vendors > All vendors - Bank accounts on Vendor FastTab
 | **Reconciliation matching rules**   | • Include in <br> •	Group by document number <br> •	Offset company <br> •	Offset account type <br> •	Offset account <br> •	GST group <br> •	Item GST group | Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules
+
+### Bank statament format data entities
+| **Entity**                          | **Additional fields**                     | **Manual setup path**   |
+|-                                    |-                                          |-
+| **Bank statement format**           |    | Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format 
+| **Custom line codes**               | 
+| **Bank statement format lines**     |
+| **Line codes format**               |
