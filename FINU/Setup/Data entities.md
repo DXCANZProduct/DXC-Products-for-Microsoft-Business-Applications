@@ -47,9 +47,11 @@ Finance utilities have extended the following standard data entities:
 | **Reconciliation matching rules**   | • Include in <br> •	Group by document number <br> •	Offset company <br> •	Offset account type <br> •	Offset account <br> •	GST group <br> •	Item GST group | Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules
 
 ### Bank statament format data entities
-| **Entity**                          | **Additional fields**                     | **Manual setup path**   |
-|-                                    |-                                          |-
-| **Bank statement format**           |  • Custom format (SAB_FINCUSTOMFORMAT) <br> • ABSR file type (SAB_FINFILETYPE) <br> • Field delimiter (SAB_FINFIELDDELIMITER) <br> •  Record code field position (SAB_FINFIELDPOSITION) <br> • Record code field length (DFUIMPORTLENGTHRECORDCODE) | Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format 
+Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format
+
+| **Entity**                          | **Additional fields**                     |
+|-                                    |-                                          |
+| **Bank statement format**           |  • Custom format (SAB_FINCUSTOMFORMAT) <br> • ABSR file type (SAB_FINFILETYPE) <br> • Field delimiter (SAB_FINFIELDDELIMITER) <br> •  Record code field position (SAB_FINFIELDPOSITION) <br> • Record code field length (DFUIMPORTLENGTHRECORDCODE) |
 | **Custom line codes**               | 
 | **Bank statement format lines**     |
 | **Line codes format**               |
