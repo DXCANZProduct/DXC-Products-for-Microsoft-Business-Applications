@@ -41,7 +41,7 @@ Code specifying the method or type of transportation for the shipment. <br>
 -	Select the **Mode**. Options are obtained from **Modes** setup at **Transportation > Setup > Carriers > Mode**, examples: <br>
     - Air
     - Rail
--	Specify the **indicator**/vendor's value used to identify the EDI carrier mode.
+-	Specify the vendor's value used to identify the **EDI carrier mode**.
 
 ## Where used
 Carrier mode is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Carrier mode**.
