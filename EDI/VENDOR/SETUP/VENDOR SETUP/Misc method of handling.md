@@ -28,22 +28,31 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Vendor setup
-## Setup carrier mode
+## Setup misc. method of handling
 
-Users can access the form by navigating to **EDI > Setup > Vendor setup > Carrier mode**
+Users can access the form by navigating to **EDI > Setup > Vendor setup > Misc method of handling**
 
-Code specifying the method or type of transportation for the shipment. <br>
+Used to indicate if the charge / allowance on the vendor invoice should be paid by the customer. <br>
 
 - Click **New** to create a new record
--	In the **Name** field, enter the name of the carrier mode
--	In the **Description** field, enter a description of the carrier mode
+-	In the **Name** field, enter the name of the misc. method of handling
+-	In the **Description** field, enter a description of the misc. method of handling
 -	In the **Mappings** FastTab, select **Add** to create a new record
--	Select the **Mode**. Options are obtained from **Modes** setup at **Transportation > Setup > Carriers > Mode**, examples are air and rail.
--	Specify the **indicator**/vendor's value used to identify the EDI carrier mode.
+-	Select the **Method of handling**. Options are: <br>
+    - Off Invoice
+    - Charge to be paid by customer
+    - Charge to be paid by vendor
+    - Optional
+    - Allowance to be issued by vendor
+    - Allowance to be issued by reseller
+    - Charge denied by vendor
+    - Information only
+-	Specify the vendor's value used to identify the **EDI method of handling**
+-	**Add to Invoice** - Indicates if charge/allowance should be added to D365 Purchase invoice
 
 ## Where used
-Carrier mode is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Carrier mode**.
+Misc method of handling is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Misc method of handling**.
 
 ## Data entities:
-- Vendor EDI carrier mode group
-- Vendor EDI carrier mode lines
+- Vendor EDI misc method of handling group
+- Vendor EDI misc method of handling lines
