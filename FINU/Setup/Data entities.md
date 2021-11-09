@@ -46,7 +46,7 @@ Finance utilities have extended the following standard data entities:
 | **Vendor bank accounts**            | • Biller code <br> • Lodgement reference <br> • Bank code <br> • Bank particulars <br> • Bank reference | Accounts payable > Vendors > All vendors - Bank accounts on Vendor FastTab
 | **Reconciliation matching rules**   | • Include in <br> •	Group by document number <br> •	Offset company <br> •	Offset account type <br> •	Offset account <br> •	GST group <br> •	Item GST group | Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules
 
-### Bank statament format data entities
+### Bank statement format data entities
 Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format
 
 | **Order** | **Entity**                          | **Standard / Finance <br> utilities entity**   | **Additional fields for standard entity**                     |
