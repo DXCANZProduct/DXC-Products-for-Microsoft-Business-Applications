@@ -45,8 +45,8 @@ The Order line change types are:
 **Order line change type** 	        | **Description of D365 purchase order line change**            | **X12 examples**
 :-----------------------------------|:-------------------------------------                         |:----------------:
 **Add additional item**             | New purchase order line was added to existing purchase order	| AI
-**Delete items**                    | Existing purchase order line’s Deliver remainder is cancelled | DI
-**Changes to line items**           | Existing purchase order line’s price, quantity and/or dates are changed | CA
+**Delete items**                    | Existing purchase order line’s Deliver remainder has been cancelled, or removed | DI
+**Changes to line items**           | All other purchase order lines are sent with this code which indicates the vendor must replace with current info | CA
 
 
 ## Where used
