@@ -39,10 +39,10 @@ EDI purchase orders can be sent to trading partners with many order types.  The 
 -	In the **Description** field, enter a description of the order type group
 -	In the **Mappings** FastTab, select **Add** to create a new record
 -	Select the **Order Type**. Options are: <br>
-    -	**Order** - When creating a purchase order to the vendor; used to identify a "normal" order using these characters. 
-    -	**Agreement** - When sending a purchase agreement to a vendor; used to identify a "blanket" order. 
-    -	**Release order** - When the purchase order was created by releasing from a purchase agreement.
--	Specify the **indicator**/vendor's value used to identify the EDI order type.
+    -	**Order** - When creating a purchase order to the vendor; used to identify a "normal" order using these characters 
+    -	**Agreement** - When sending a purchase agreement to a vendor; used to identify a "blanket" order
+    -	**Release order** - When the purchase order was created by releasing from a purchase agreement
+-	Specify the vendor's value used to identify the **EDI order type**
 
 Examples: <br>
 **Order type** 	                  | **X12 examples**                      | **EDIFACT examples**
