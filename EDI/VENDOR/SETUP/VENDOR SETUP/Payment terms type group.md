@@ -28,22 +28,25 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Vendor setup
-## Setup carrier mode
+## Setup payment terms type group
 
-Users can access the form by navigating to **EDI > Setup > Vendor setup > Carrier mode**
+Users can access the form by navigating to **EDI > Setup > Vendor setup > Payment terms type group**
 
-Code specifying the method or type of transportation for the shipment. <br>
+Code identifying the type of payment terms. <br>
 
 - Click **New** to create a new record
--	In the **Name** field, enter the name of the carrier mode
--	In the **Description** field, enter a description of the carrier mode
+-	In the **Name** field, enter the name of the payment terms type group
+-	In the **Description** field, enter a description of the payment terms type group
 -	In the **Mappings** FastTab, select **Add** to create a new record
--	Select the **Mode**. Options are obtained from **Modes** setup at **Transportation > Setup > Carriers > Mode**, examples are air and rail.
--	Specify the **indicator**/vendor's value used to identify the EDI carrier mode.
+-	Select the **Terms of payment**. Options are obtained from Terms of payment setup at **Accounts payable > Setup > Payment setup > Terms of payment**, examples: <br>
+    - COD
+    - Month+15
+    - Net30
+-	Specify the vendor's value used to identify the **EDI payment terms**.
 
 ## Where used
-Carrier mode is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Carrier mode**.
+Carrier mode is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Payment terms type**.
 
 ## Data entities:
-- Vendor EDI carrier mode group
-- Vendor EDI carrier mode lines
+- Vendor EDI payment terms type group
+- Vendor EDI payment terms type lines
