@@ -28,7 +28,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Vendor setup
-## Vendor document type validation profiles - Vendor purchase order acknowledgement
+## Vendor document type validation profiles - Vendor purchase order acknowledgement (POA)
 
 Users can access the form by navigating to **EDI > Setup > Document types**.
 
