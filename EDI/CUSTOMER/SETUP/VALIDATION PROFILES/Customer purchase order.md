@@ -54,3 +54,10 @@ Once setup for each document type, the validation profile can be assigned to eac
 **Sales Order Line**          |	**Minimum/Maximum quantity**	| The sales line quantity should be devisable by the multiple specified on the Default/Site order settings table.
 **Sales Order Line**	        | **Sales Price**	              | The unit price should be checked using the standard D365 pricing rules.  It must first convert the price to the standard method of input for that customer (CustTable.InclTax) , if the prices are slightly different it should check the tolerance before giving an error/warning.  It should also check the field on the customer table **Use customer price** before updating the sales line. <br> Example: <br> Item X trade agreement price 10.25 <br> Item Y trade agreement price 8.88 <br> Customer has a **Maximum negative price variance** and **Maximum positive price variance** of 0.05 assigned on the **Customer purchase order** setting profile. <br> Customer does not have their trade agreements entered including tax. <br> Customer sends their EDI orders including tax. <br> The setting use customer pricing is given <br> Item X EDI file price (before converting) 11.26 (after conversion) 10.24 <br> Item Y EDI file price (before converting) 9.70 (after conversion) 8.82 <br> Document's **Error tolerance** validation is set to _Warning_ <br> A warning is only given for Item Y because it is outside of the tolerance.  The warning message should show the price before and after conversion plus the price AX finds. 
 **Sales Order Line**	        | **Sales Unit**	              | It should first check that this unit of measurement actually exists, a second check should be the measurement on the inventory table module for sales
+
+## Where used
+The **Validation profile** can be assigned on the Incoming documents FastTab to document type **Customer purchase order** for the Customer Trading partner at **EDI > Setup > Trading partners**.
+
+## Data entity
+- EDI Validation profile
+- EDI Validation profile line
