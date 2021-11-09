@@ -38,8 +38,8 @@ Order line change type codes are used to identify the type of line change sent t
 -	In the **Name** field, enter the name of the order line change type group
 -	In the **Description** field, enter a description of the order line change type group
 -	In the **Mappings** FastTab, select **Add** to create a new record
--	Specify the **Order line change type**
--	Specify the **indicator**/Vendor's value for the line change type in EDI order change type
+-	Select the **Order line change type**
+-	Specify the vendor's value for the line change type in **EDI order change type**
 
 The Order line change types are:
 **Order line change type** 	        | **Description of D365 purchase order line change**            | **X12 examples**
