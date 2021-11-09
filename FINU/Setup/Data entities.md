@@ -49,7 +49,7 @@ Finance utilities have extended the following standard data entities:
 ### Bank statament format data entities
 | **Entity**                          | **Additional fields**                     | **Manual setup path**   |
 |-                                    |-                                          |-
-| **Bank statement format**           |    | Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format 
+| **Bank statement format**           |  • Custom format (SAB_FINCUSTOMFORMAT) <br> • ABSR file type (SAB_FINFILETYPE) <br> • Field delimiter (SAB_FINFIELDDELIMITER) <br> •  Record code field position (SAB_FINFIELDPOSITION) <br> • Record code field length (DFUIMPORTLENGTHRECORDCODE) | Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format 
 | **Custom line codes**               | 
 | **Bank statement format lines**     |
 | **Line codes format**               |
