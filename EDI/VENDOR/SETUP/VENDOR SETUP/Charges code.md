@@ -28,22 +28,27 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Vendor setup
-## Setup carrier mode
+## Setup charges code
 
-Users can access the form by navigating to **EDI > Setup > Vendor setup > Carrier mode**
+Users can access the form by navigating to **EDI > Setup > Vendor setup > Charges code**
 
-Code specifying the method or type of transportation for the shipment. <br>
+Code identifying the service, promotion, allowance, or charge. <br>
 
 - Click **New** to create a new record
--	In the **Name** field, enter the name of the carrier mode
--	In the **Description** field, enter a description of the carrier mode
+-	In the **Name** field, enter the name of the charges code
+-	In the **Description** field, enter a description of the charges code
 -	In the **Mappings** FastTab, select **Add** to create a new record
--	Select the **Mode**. Options are obtained from **Modes** setup at **Transportation > Setup > Carriers > Mode**, examples are air and rail.
--	Specify the **indicator**/vendor's value used to identify the EDI carrier mode.
+-	Select the **Mode**. Options are obtained from **Charges code** setup at **Procurement and sourcing > Setup > Charges > Charges code**, examples: <br>
+    -	Fee
+    -	Freight
+    -	Handling
+    -	Install
+    -	Insurance
+-	Specify the **indicator**/vendor's value used to identify the EDI charges code.
 
 ## Where used
-Carrier mode is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Carrier mode**.
+Charges is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Charges code**.
 
 ## Data entities:
-- Vendor EDI carrier mode group
-- Vendor EDI carrier mode lines
+- Vendor EDI charges code group
+- Vendor EDI charges code lines
