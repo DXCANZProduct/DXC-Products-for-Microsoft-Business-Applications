@@ -48,8 +48,28 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Confirmed pack**                  |	Option will be used to automatically set the confirmed pack	  | •	System pack <br> •	Vendor pack
 **Confirmed inner**                 |	Option will be used to automatically set the confirmed inner	| •	System inner <br> •	Vendor inner
 <ins>**Confirmation**</ins>
-**Purchase order confirmation required**  |	Specify whether a POC is required for the POA	  | •	**Yes** – if within validation the purchase order is changed to purchase order acknowledgement’s values and posts a standard Purchase order confirmation (new purchase journal version). <br> o	Yes (PO is auto-confirmed): automatically sends confirmation to the vendor. <br> o	Yes (PO is manual confirmed): The manual Confirmation form on Purchase order > EDI header > Confirmation can be used to manage values sent on Confirmation. Send to EDI creates the outbound document. <br> When purchase order values match vendor’s purchase order acknowledgement values, a purchase order change with order purpose Confirmation is sent to the vendor and PO status is updated to Confirmed. If values don’t match order purpose Change is sent and PO status remains in ‘In external review’. <br> Values compared: <br> o	Ordered quantity <br> o	Net unit price <br> o	Discounts <br> o	Batch <br> •	**No** - Confirmation isn’t required, but still have the option to send manually via Purchase order > EDI header > Confirmation
+**Purchase order confirmation required**  |	Specify whether a POC is required for the POA	  | •	**Yes** – if within validation the purchase order is changed to purchase order acknowledgement’s values and posts a standard Purchase order confirmation (new purchase journal version). The **Acknowledgement status** on the purchase order header will change to _Confirmation pending_ once the POA has been received from the vendor for the order. Once the confirmation has been sent, the **Acknowledgement status** will change to _Confirmation sent_. <br> o	**Yes (PO is auto-confirmed)**: automatically sends confirmation to the vendor. <br> o	**Yes (PO is manual confirmed)**: The manual Confirmation form on Purchase order > EDI header > Confirmation can be used to manage values sent on Confirmation. Send to EDI creates the outbound document. <br> When purchase order values match vendor’s purchase order acknowledgement values, a purchase order change with order purpose Confirmation is sent to the vendor and PO status is updated to Confirmed. If values don’t match order purpose Change is sent and purchase order's status remains in _In external review_. <br> Values compared: <br> o	Ordered quantity <br> o	Net unit price <br> o	Discounts <br> o	Batch <br> •	**No** - Confirmation isn’t required, but still have the option to send manually via Purchase order > EDI header > Confirmation
 **Purchase order confirmation not required for accept** |	When the Vendor sends a POA with **Header – accept**, this option provides the ability to not send a Purchase order confirmation to the Vendor. 	| •	**Yes** – Purchase order confirmation is not created for POA with Header - accept <br> •	**No** – Purchase order confirmation is created (if required as per previous setting) for the POA with Header - accept
+
+## Acknowledgement and Purchase order confirmation required	
+Summary of how the following affects Purchase order's **Status** and **Acknowledgement status**:
+- **Vendor purchase order** and **Vendor purchase order change** setting profile's **Acknowledgement required**
+- **Vendor purchase order acknowledgement** setting profile's **Purchase order confirmation required**
+
+### Purchase order's Status
+When setting profile **Acknowledgement required** is set to:
+- **Yes** - Purchase order **Status** is updated to _In external review_ (similar to Vendor collaboration) when sending the purchase order to the Vendor (via clicking Confirm/Confirmation on PO), until an Accept POA is received back from the Vendor OR updated Purchase order values match to vendor’s Purchase order acknowledgement.
+- **No** - Purchase order **Status** is updated to _Confirmed_.
+
+### Purchase order's Acknowledgement status
+On the EDI FastTab on the purchase order header, the field **Acknowledgement status** is updated as per below after each step.
+
+Acknowledgement required  | Confirmation required | 1. Confirm purchase order               | 2. POA processed        | 3. Confirmation sent
+:--                       |:--                    |:--                                      |:--                      |:--
+Yes	                      | Yes	                  | Acknowledgement pending	                | Confirmation pending	  | Confirmation sent
+Yes	                      | No	                  | Acknowledgement pending	                | Acknowledgement received| Confirmation sent
+No	                      | Yes	                  | Blank	                                  | Confirmation pending	  | Confirmation sent
+No	                      | No	                  | Blank	                                  | Acknowledgement received|	Confirmation sent
 
 
 ## Where used
