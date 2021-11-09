@@ -38,7 +38,7 @@ Code specifying the method or type of transportation for the shipment. <br>
 -	In the **Name** field, enter the name of the carrier mode
 -	In the **Description** field, enter a description of the carrier mode
 -	In the **Mappings** FastTab, select **Add** to create a new record
--	Select the **Mode**. Options are obtained from **Modes** setup at **Transportation > Setup > Carriers > Mode**, examples are <br>
+-	Select the **Mode**. Options are obtained from **Modes** setup at **Transportation > Setup > Carriers > Mode**, examples: <br>
     - Air
     - Rail
 -	Specify the **indicator**/vendor's value used to identify the EDI carrier mode.
