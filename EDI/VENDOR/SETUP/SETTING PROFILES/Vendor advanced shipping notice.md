@@ -45,12 +45,12 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Part shipment**   |	Specify the part shipment identifiers for ASN	    | PS
 **Final shipment**  |	Specify the final shipment identifiers for ASN	  | FS
 **Update Final shipment deliver remainder**     | Ability to update the purchase order line's deliver remainder with final shipment | •	**Yes** - If delivery is marked as Final shipment for the order line, the deliver remainder is updated. This can be used for example where no backorders are allowed and to keep open purchase order quantities accurate. <br> •	**No** - No updates to purchase order line's deliver remainder with final shipment.
-<ins>**Arrival journal**</ins> (only applicable to non-WAX enabled warehouses)
+<ins>**Arrival journal**</ins> | Only applicable to non-WAX enabled warehouses
 **Journal name**    |	Specify the arrival journal name to be used	      | Warehouse management journal names
 **Quarantine management** |	Ability to select if arrival journal should be quarantine managed	  | Yes/No
 **Auto post journal**     |	When the arrival journal is created, the journal should also be automatically posted	| •	**Yes** – Arrival journal is created, posted and stock registered. If posting errors, staging record will error <br> •	**No** – Arrival journal is created, but not posed
 **Auto post receipt**     |	Enabled if **Auto post journal** is set to _Yes_. Option to post purchase order's product receipt for applicable registered stock	| •	**Yes** – Product receipt is posted based on registered stock <br> •	**No** – No additional action
-<ins>**Load**</ins> (only applicable to WAX enabled warehouses)
+<ins>**Load**</ins>       | Only applicable to WAX enabled warehouses
 **Duplicate tolerance**   |	Options how to handle load duplicates created via non-EDI processes (example: Warehouse management parameter > Loads > Automatically create at purchase order entry)	| •	**Error** – Staging will error with not enough deliver remainder available for record <br> •	**Replace** – Deletes the non-EDI load line for the purchase order line <br> •	**Update existing** – The non-EDI load is reduced by EDI ASN. If 0 remaining on non-EDI load, the line is deleted. <br> Example: non-EDI load for quantity 200, and EDI ASN only for quantity 150. Non-EDI load is updated to quantity 50 and new EDI load created for quantity 150
 
 ## Where used
