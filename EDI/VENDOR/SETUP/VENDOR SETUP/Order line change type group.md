@@ -5,7 +5,7 @@ title: [EDI Vendor]
 description: [EDI Vendor setup - Order line change type group]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 30/09/2021
+ms.date: 9/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
