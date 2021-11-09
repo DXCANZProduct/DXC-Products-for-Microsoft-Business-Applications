@@ -42,7 +42,7 @@ EDI purchase orders can be sent to trading partners with many order purposes.  T
     -	**Change** - Specifies the order change indicator. Applies to document type **Vendor purchase order change**.
     -	**Cancellation** - Specifies the order cancellation indicator. Applies to document type **Vendor purchase order change**.
     -	**Confirmation** - When receiving a purchase order acknowledgement (POA) from a vendor used to identify a "confirmation" returned to the vendor. Applies to document type **Vendor purchase order change**.
--	Specify the **indicator**/vendor's value used to identify the **EDI order purpose**
+-	Specify the vendor's value used to identify the **EDI order purpose**
 
 Examples: <br>
 **Order purpose** 	              | **X12 examples**                      | **EDIFACT examples**
