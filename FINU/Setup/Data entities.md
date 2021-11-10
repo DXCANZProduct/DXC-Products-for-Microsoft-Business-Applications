@@ -40,14 +40,30 @@ Finance utilities includes the following data entities :
 ## Standard data entities
 Finance utilities have extended the following standard data entities:
 
-| **Entity**                          | **Additional fields**                     | **Manual setup path**   |
-|-                                    |-                                          |-
-| **Bank accounts**                   | • BPAY batch ID <br> •	Extra balance line on EFT <br> • Include balance line in record count <br> • Total line order <br> • Use vendor bank name <br> • User identification  | Cash and bank management > Bank accounts > Bank accounts
-| **Vendor bank accounts**            | • Biller code <br> • Lodgement reference <br> • Bank code <br> • Bank particulars <br> • Bank reference | Accounts payable > Vendors > All vendors - Bank accounts on Vendor FastTab
-| **Reconciliation matching rules**   | • Include in <br> •	Group by document number <br> •	Offset company <br> •	Offset account type <br> •	Offset account <br> •	GST group <br> •	Item GST group | Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules
+### Bank accounts
+Cash and bank management > Bank accounts > Bank accounts
 
-### Bank statement format data entities
-Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format
+| **Entity**                          | **Additional fields for standard entity**                
+|-                                    |-                        
+| **Bank accounts**                   | • BPAY batch ID (DFUBPAYBATCHID) <br> •	Extra balance line on EFT (DFUEXTRABALANCELINE) <br> • Include balance line in record count (DFUBALANCELINECOUNT) <br> • Total line order (DFUTOTALLINEORDER) <br> • Use vendor bank name (DFUUSEVENDBANKNAME) <br> • User identification (DFUEFTUSERID)
+
+### Vendor bank accounts
+Accounts payable > Vendors > All vendors - Bank accounts on Vendor FastTab
+
+| **Entity**                          | **Additional fields**                     
+|-                                    |-                                          
+| **Vendor bank accounts**            | • Biller code (DFUBILLERCODE) <br> • Lodgement reference (DFULODGEMENTREF) <br> • Bank code (ECL_BANKCODE) <br> • Bank particulars (ECL_BANKPARTICULARS) <br> • Bank reference (ECL_BANKREFERENCE)  
+
+### Reconciliation matching rules
+Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules
+
+| **Entity**                          | **Additional fields**                     
+|-                                    |-  
+| **Reconciliation matching rules**   | • Include in (DFUBANKRULEACTIVATEINCLUDEIN) <br> •	Group by document number (SYSTEMGENERATEDTYPE = ECL_GroupByDocumentNum) <br> • Company (DFUCOMPANY) <br> •	Offset company (DFUOFFSETCOMPANY) <br> •	Offset account type (DFUOffsetAccountType) <br> •	Offset account (DFUOFFSETLEDGERDIMENSIONDISPLAYVALUE) <br> •	Offset account dimension values (DFUOFFSETDEFAULTDIMENSIONDISPLAYVALUE) <br> •	GST group (DFUTAXGROUP) <br> •	Item GST group (DFUTAXITEMGROUP) | 
+
+### Bank statement format
+Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format <br> 
+Bank statement format entities are a combination of Finance utilities entities and additional fields added to standard entity. 
 
 | **Order** | **Entity**                          | **Standard / Finance <br> utilities entity**   | **Additional fields for standard entity**                     |
 |-          |-                                    |-                                          |-
