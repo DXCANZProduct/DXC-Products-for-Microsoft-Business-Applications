@@ -71,3 +71,6 @@ Bank statement format entities are a combination of Finance utilities entities a
 | 2         | **Custom line codes**               | Finance utilities                         | - 
 | 3         | **Bank statement format lines**     | Finance utilities                         | - 
 | 4         | **Line codes format**               | Finance utilities                         | - 
+
+> Note: If comma is used in **Field delimiter** on the **Bank statement format**, set SAB_FINFIELDDELIMITER **Text qualifier** to _Yes_ in Mapping details.
+> 
