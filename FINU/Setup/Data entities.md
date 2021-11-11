@@ -61,7 +61,7 @@ Cash and bank management > Setup > Advanced bank reconciliation setup > Reconcil
 |-                                    |-  
 | **Reconciliation matching rules**   | • Include in (DFUBANKRULEACTIVATEINCLUDEIN) <br> •	Group by document number (SYSTEMGENERATEDTYPE = ECL_GroupByDocumentNum) <br> • Company (DFUCOMPANY) <br> •	Offset company (DFUOFFSETCOMPANY) <br> •	Offset account type (DFUOffsetAccountType) <br> •	Offset account (DFUOFFSETLEDGERDIMENSIONDISPLAYVALUE) <br> •	Offset account dimension values (DFUOFFSETDEFAULTDIMENSIONDISPLAYVALUE) <br> •	GST group (DFUTAXGROUP) <br> •	Item GST group (DFUTAXITEMGROUP) | 
 
-> Note:Ensure the **Financial dimension configuration for integrating applications** dimension format aligns with dimensions on the bank reconciliation matching rule before import the entity. General ledger > Chart of accounts > Dimensions > Financial dimension configuration for integrating applications. <br> Define data entity format for **Default dimensions integration** and **Ledger dimensions integration**. <br>
+> Note: Ensure the **Financial dimension configuration for integrating applications** dimension format aligns with dimensions on the bank reconciliation matching rule before import the entity. General ledger > Chart of accounts > Dimensions > Financial dimension configuration for integrating applications. <br> Define data entity format for **Default dimensions integration** and **Ledger dimensions integration**. <br>
 > See [link](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration) for more detail.
 
 ### Bank statement format
