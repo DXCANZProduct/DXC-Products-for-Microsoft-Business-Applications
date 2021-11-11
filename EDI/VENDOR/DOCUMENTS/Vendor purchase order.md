@@ -34,12 +34,12 @@ The following setup is prerequisites for the vendor purchase order
 
 ### Vendor setup
 EDI > Setup > Vendor setup
-1. Create [Order type group](../SETUP/VENDOR%20SETUP/Order%20type%20group.md) - field OrderType
-1. Create [Order purpose groups](../SETUP/VENDOR%20SETUP/Order%20purpose%20group.md) - field OrderPurpose
-2. Create [Carrier mode](../SETUP/VENDOR%20SETUP/Carrier%20mode.md) - field CarrierMode
-1. Create [Charges code](../SETUP/VENDOR%20SETUP/Charges%20code.md) - field MiscCode
-1. Create [Payment terms type group](../SETUP/VENDOR%20SETUP/Payment%20terms%20type%20group.md) - field TermsTypeCode
-1. Create [Misc charge/allowance indicator](../SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md) - field MiscIndicator
+1. Create [Order type group](../SETUP/VENDOR%20SETUP/Order%20type%20group.md) - mapped to OrderType
+1. Create [Order purpose groups](../SETUP/VENDOR%20SETUP/Order%20purpose%20group.md) - mapped to OrderPurpose
+2. Create [Carrier mode](../SETUP/VENDOR%20SETUP/Carrier%20mode.md) - mapped to CarrierMode
+1. Create [Charges code](../SETUP/VENDOR%20SETUP/Charges%20code.md) - mapped to MiscCode
+1. Create [Payment terms type group](../SETUP/VENDOR%20SETUP/Payment%20terms%20type%20group.md) - mapped to TermsTypeCode
+1. Create [Misc charge/allowance indicator](../SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md) - mapped to MiscIndicator
 
 ### Document type setup
 EDI > Setup > Document types: Vendor purchase order
