@@ -97,7 +97,7 @@ Description	            | Order type    | Order purpose | EDI Staging / Doc type
 **Confirm 1st time**    | Order	        | Original	    | Vendor purchase order
 **Change and confirm**  | Order	        | Change	    | Vendor purchase order change
 **Cancel**              | Order	        | Cancellation	| Vendor prchase order change
-**Confirm POA and details match**  | Order	        | Confirmation	| Purchase order change
+**Confirm POA and details match**  | Order	        | Confirmation	| Vendor purchase order change
 
 #### Purchase agreement
 
@@ -113,7 +113,7 @@ Description	            | Order type    | Order purpose | EDI Staging / Doc type
 **Confirm 1st time**    | Release order	| Original	    | Vendor purchase order
 **Change and confirm**  | Release order	| Change	    | Vendor purchase order change
 **Cancel**              | Release order	| Cancellation	| Vendor prchase order change
-**Confirm POA and details match**  | Release order	| Confirmation	| Purchase order change
+**Confirm POA and details match**  | Release order	| Confirmation	| Vendor purchase order change
 
 ## View staging table records
 To view the Vendor purchase order staging records, go to **EDI > Documents > Vendor documents > Vendor purchase order**. 
