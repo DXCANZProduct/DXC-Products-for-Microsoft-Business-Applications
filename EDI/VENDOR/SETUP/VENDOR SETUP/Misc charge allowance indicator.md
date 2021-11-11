@@ -45,7 +45,11 @@ Code which indicates an allowance or charge for the service specified. <br>
 -	Specify the vendor's value used to identify the **EDI indicator**.
 
 ## Where used
-Misc. charge/allowance indicator is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Misc charge/allowance indicator**.
+Misc. charge/allowance indicator is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Misc charge/allowance indicator**. <br>
+Used on field **MiscIndicator** on EDI documents:
+- Vendor purchase order
+- Vendor purchase order change
+- Purchase invoice
 
 ## Data entities:
 - Vendor EDI misc. charge/allowance indicator group
