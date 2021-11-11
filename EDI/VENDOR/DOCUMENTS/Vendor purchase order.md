@@ -54,7 +54,7 @@ EDI > Setup > Document types: Vendor purchase order
     - Setting profile
     - File name setup
 
-> Note: If the vendor setup mappings are not assigned to the vendor trading partner, the D365/EDI value will be sent, example Order instead of a mapped value.
+> Note: If the vendor setup mappings are not assigned to the vendor trading partner, the D365/EDI value will be sent, example Order instead of a mapped value. <br>
 > If certain fields are not sent on a purchase order, these are not mandatory setup to create and assign to the vendor trading partner; examples carrier mode, charges code etc.
 
 ## Target D365 transactions
