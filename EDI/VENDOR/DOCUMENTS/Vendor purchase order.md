@@ -32,14 +32,14 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ## Prerequisites
 The following setup is prerequisites for the vendor purchase order
 
-2. Create [Purchase order types](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md)
-3. Create [Order purpose groups](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md)
-4. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-5. Create [Setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md) for the document.
-6. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order.md) for the document.
-7. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
-8. Assign the Purchase order type and Order purpose group to the customer trading partner.
-9. Add and enable the customer purchase order document to the [Customer trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+1. Create [Purchase order types](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md)
+1. Create [Order purpose groups](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md)
+1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
+1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md) for the document.
+1. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order.md) for the document.
+1. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
+1. Assign the Purchase order type and Order purpose group to the customer trading partner.
+1. Add and enable the customer purchase order document to the [Customer trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
     - Validation profile
