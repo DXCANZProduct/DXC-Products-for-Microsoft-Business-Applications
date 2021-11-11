@@ -52,7 +52,10 @@ Examples: <br>
 **Release order**                 |	**RL** - Release or Delivery Order	  | **226** - Call off order
 
 ## Where used
-Order type group is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Order type**.
+Order type group is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Order type**. <br>
+Used on field **OrderType** on EDI documents:
+- Vendor purchase order
+- Vndor purchase order change
 
 ## Data entities:
 - Vendor EDI order type group
