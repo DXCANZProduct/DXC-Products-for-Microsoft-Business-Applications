@@ -82,15 +82,15 @@ Used to map D365/EDI value to Vendor's value and assigned on Vendor Trading part
 		- Purchase invoice (MiscCode)
 	- [POA response code group](../SETUP/VENDOR%20SETUP/POA%20response%20code%20group.md)
 		- Vendor purchase order acknowledgement (POAVendCode, POAVendCodeItem and POAVendCodeShipment)
-	- [Payment terms type group](SETUP/VENDOR%20SETUP/Payment%20terms%20type%20group.md)
+	- [Payment terms type group](../SETUP/VENDOR%20SETUP/Payment%20terms%20type%20group.md)
 		- Vendor purchase order (TermsTypeCode) 
 		- Vendor purchase order change (TermsTypeCode)
 		- Purchase invoice (TermsTypeCode)
-	- [Misc charge/allowance indicator](SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md)
+	- [Misc charge/allowance indicator](../SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md)
 		- Vendor purchase order (MiscIndicator) 
 		- Vendor purchase order change (MiscIndicator)
 		- Purchase invoice (MiscIndicator)
-	- [Misc method of handling](SETUP/VENDOR%20SETUP/Misc%20method%20of%20handling.md)
+	- [Misc method of handling](../SETUP/VENDOR%20SETUP/Misc%20method%20of%20handling.md)
 		- Purchase invoice (MiscMethodHandling)
 
 - Core Setup: **EDI > Setup** <br>
