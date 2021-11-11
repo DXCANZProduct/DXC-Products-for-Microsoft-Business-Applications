@@ -44,7 +44,10 @@ Code specifying the method or type of transportation for the shipment. <br>
 -	Specify the vendor's value used to identify the **EDI carrier mode**.
 
 ## Where used
-Carrier mode is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Carrier mode**.
+Carrier mode is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Carrier mode**. <br>
+Used on field **CarrierMode** on EDI documents:
+- Vendor purchase order
+- Vendor purchase order change
 
 ## Data entities:
 - Vendor EDI carrier mode group
