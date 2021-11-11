@@ -50,7 +50,9 @@ The Order line change types are:
 
 
 ## Where used
-Vendor EDI order line change type group is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Order line change type**.
+Vendor EDI order line change type group is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Order line change type**. <br>
+Used on field **LineChangeType** on EDI documents:
+- Vendor purchase order change
 
 ## Data entities:
 - Vendor EDI order line change type group
