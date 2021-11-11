@@ -55,7 +55,7 @@ Examples: <br>
 Order type group is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Order type**. <br>
 Used on field **OrderType** on EDI documents:
 - Vendor purchase order
-- Vndor purchase order change
+- Vendor purchase order change
 
 ## Data entities:
 - Vendor EDI order type group
