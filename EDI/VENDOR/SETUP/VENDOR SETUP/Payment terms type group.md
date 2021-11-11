@@ -45,7 +45,11 @@ Code identifying the type of payment terms. <br>
 -	Specify the vendor's value used to identify the **EDI payment terms**.
 
 ## Where used
-Payment terms type group is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Payment terms type**.
+Payment terms type group is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Payment terms type**. <br>
+Used on field **TermsTypeCode** on EDI documents:
+- Vendor purchase order
+- Vendor purchase order change
+- Purchase invoice
 
 ## Data entities:
 - Vendor EDI payment terms type group
