@@ -32,18 +32,25 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ## Prerequisites
 The following setup is prerequisites for the vendor purchase order
 
-1. Create [Purchase order types](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md)
-1. Create [Order purpose groups](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md)
-1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md) for the document.
-1. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order.md) for the document.
-1. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
-1. Assign the Purchase order type and Order purpose group to the customer trading partner.
-1. Add and enable the customer purchase order document to the [Customer trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+1. Create [Order type group](../SETUP/VENDOR%20SETUP/Order%20type%20group.md)
+1. Create [Order purpose groups](../SETUP/VENDOR%20SETUP/Order%20purpose%20group.md)
+2. Create [Carrier mode]
+3. Create [Charges code]
+4. Create [Payment terms type group]
+5. Create [Misc charge/allowance indicator]
+7. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
+8. Create [Setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md) for the document.
+9. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order.md) for the document.
+10. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
+11. Assign the Purchase order type and Order purpose group to the customer trading partner.
+12. Add and enable the customer purchase order document to the [Customer trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
     - Validation profile
     - Search mask
+
+> Note: If the vendor setup mappings are not assigned to the vendor trading partner, the D365/EDI value will be sent, example Order instead of a mapped value.
+> If certain fields are not sent on a purchase order, these are not mandatory setup to create and assign to the vendor trading partner; examples carrier mode, charges code etc.
 
 ## Target D365 transactions
 The following [**Customer EDI order types**](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) and [**Order purposes**](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md) are supported by each Customer inbound document:
