@@ -64,12 +64,21 @@ Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 #### Mappings assigned on Vendor Trading partner
 Used to map D365/EDI value to Vendor's value and assigned on Vendor Trading partner: <br>
 
-- Vendor setup: **EDI > Setup > Vendor setup** <br>
+- Vendor setup and which field it is mapped to / from on the EDI document(s) it applies to: **EDI > Setup > Vendor setup** <br>
 	- [Order type group](../SETUP/VENDOR%20SETUP/Order%20type%20group.md)
+		- Vendor purchase order (OrderType)
+		- Vendor purchase order change (OrderType)
 	- [Order purpose group](../SETUP/VENDOR%20SETUP/Order%20purpose%20group.md)
+		- Vendor purchase order (OrderPurpose)
+		- Vendor purchase order change (OrderPurpose)
 	- [Order line change type group](..SETUP/VENDOR%20SETUP/Order%20line%20change%20type%20group.md)
+		- Vendor purchase order change (LineChangeType)
 	- [Carrier mode]()
+		- Vendor purchase order
+		- Vendor purchase order change
 	- [Charges code]()
+		- Vendor purchase order
+		- Vendor purchase order change
 	- [POA response code group](../SETUP/VENDOR%20SETUP/POA%20response%20code%20group.md)
 	- [Payment terms type group]()
 	- [Misc charge/allowance indicator]()
