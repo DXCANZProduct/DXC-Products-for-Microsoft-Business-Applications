@@ -51,7 +51,9 @@ Used to indicate if the charge / allowance on the vendor invoice should be paid 
 -	**Add to Invoice** - Indicates if charge/allowance should be added to D365 Purchase invoice
 
 ## Where used
-Misc method of handling is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Misc method of handling**.
+Misc method of handling is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Misc method of handling**. <br>
+Used on field **MiscMethodHandling** on EDI documents:
+- Purchase invoice
 
 ## Data entities:
 - Vendor EDI misc method of handling group
