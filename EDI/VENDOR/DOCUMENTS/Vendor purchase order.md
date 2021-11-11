@@ -46,7 +46,8 @@ EDI > Setup > Document types: Vendor purchase order
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
 2. Create [Setting profile](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order.md) for the document.
 
-### Trading partner
+### Trading partners
+EDI > Setup > Trading partners
 1. If the vendor [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the **Vendor setup** to the vendor trading partner's options.
 1. Add and enable the **vendor purchase order** document to the [Vendor trading partner](../SETUP/Trading%20partner.md) and select the applicable:
