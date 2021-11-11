@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI Customer]
-description: [EDI Customer Documents - Customer purchase order]
+title: [EDI Vendor]
+description: [EDI Vendor Documents - Vendor purchase order]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 5/10/2021
+ms.date: 11/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,12 +27,11 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Customer purchase order
+# Vendor purchase order
 
 ## Prerequisites
-The following setup is prerequisites for the customer purchase order
+The following setup is prerequisites for the vendor purchase order
 
-1. If required to put sales orders on hold till the purchase order confirmation has been received, assign the applicable hold code to [POC pending hold code](../SETUP/CUSTOMER%20SETUP/Hold%20codes.md) in EDI parameters.
 2. Create [Purchase order types](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md)
 3. Create [Order purpose groups](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md)
 4. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
