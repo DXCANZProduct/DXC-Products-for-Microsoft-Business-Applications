@@ -56,7 +56,7 @@ EDI > Setup > Trading partners
     - Setting profile
     - File name setup
 
-> Note: If the vendor setup mappings are not assigned to the vendor trading partner, the D365/EDI value will be sent, example Order instead of a mapped value. <br>
+> Note: If the vendor setup mappings are not assigned to the vendor trading partner for an outbound document, the D365/EDI value will be sent, example Order instead of a mapped value. <br>
 > If certain fields are not sent on a purchase order, these are not mandatory setup to create and assign to the vendor trading partner; examples carrier mode, charges code etc.
 
 ## Processing
@@ -74,8 +74,7 @@ Subsequent changes, cancellations or confirmations for purchase order acknowledg
 A vendor purchase order change can be triggered via the following methods:
 -	**Change**: Edit a purchase order header and/or lines and triggering the EDI document via **Confirm** or **Confirmation** on the Purchase tab on the Action Pane.
 -	**Cancel**: Accounts payable > Purchase orders > All purchase orders - Select **Cancel** on the Purchase order tab on the Action Pane.
--	**Confirmation**: When confirming a POA
-
+-	**Confirmation**: When confirming a purchase order acknowledgement (POA), automatically or manually via **Confirmation** on the EDI tab on the Action Pane. Purchase order confirmation needs to match to purchase order acknowledgement details, else it will create a change instead of a confirmation order purpose.
 
 ### Order type
 There are various order types that is determined by the method the purchase order document was created. The mapped value that needs to be sent to each trading partner for each order type can be specified in **Order type group** and assigned to the Trading partner. Options:
@@ -90,13 +89,35 @@ Each purchase order document will also have an order purpose which is specified 
 - Cancellation
 - Confirmation
 
+### Summary
+#### Purchase order
 
+Description	            | Order type    | Order purpose | EDI Staging / Doc type
+|-                      |-              |-              |-     
+**Confirm 1st time**    | Order	        | Original	    | Vendor purchase order
+**Change**              | Order	        | Change	    | Vendor purchase order change
+**Cancel**              | Order	        | Cancellation	| Vendor prchase order change
+**Confirm POA and details match**  | Order	        | Confirmation	| Purchase order change
 
+#### Purchase agreement
 
+Description	            | Order type    | Order purpose | EDI Staging / Doc type
+|-                      |-              |-              |-     
+**Confirm 1st time**    | Agreement     | Original	    | Vendor purchase order
+**Change**              | Agreement     | Change	    | Vendor purchase order change
+
+#### Release order
+
+Description	            | Order type    | Order purpose | EDI Staging / Doc type
+|-                      |-              |-              |-     
+**Confirm 1st time**    | Release order	| Original	    | Vendor purchase order
+**Change**              | Release order	| Change	    | Vendor purchase order change
+**Cancel**              | Release order	| Cancellation	| Vendor prchase order change
+**Confirm POA and details match**  | Release order	| Confirmation	| Purchase order change
 
 ## View staging table records
-To view the Customer advanced shipping notice staging records, go to **EDI > Documents > Customer documents > Customer advanced shipping notice**. 
-Use this page to review staging and process EDI Customer advanced shipping notice documents to an Outbound file.
+To view the Vendor purchase order staging records, go to **EDI > Documents > Vendor documents > Vendor purchase order**. 
+Use this page to review staging and process EDI Vendor purchase order documents to an Outbound file.
 
 ### List page
 The following EDI fields are available on the list page.
@@ -106,29 +127,35 @@ The following EDI fields are available on the list page.
 **EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
 **Company**             | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
-**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.
-**Trading partner account**     | Customer account assigned to the staging record.
-**Trading partner GLN**         | The Customer’s global location number is shown here.
-**ASN Number**                  | ASN number record id. The number sequence is determined by [ASN number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
-**Consignment note number**     | Consignment note identification for the delivery
-**Delivery note**               | Packing slip number
-**Created Date and Time**       | The date and time the selected record was created in the staging table.
-**Received**                    | Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
+**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**Trading partner account**     | Vendor account assigned to the staging record.
+**Trading partner GLN**         | The Vendor’s global location number is shown here.
+**Purchase order**              | The D365 purchase order number
+**PO version number**           | The version of the D365 purchase order number
+**Purchase agreement**          | The D365 purchase agreement number for the release order (where applicable)
+**Purchase order date**         | The original purchase order date from the purchase order is shown here
+**EDI order type**              | The EDI order type is shown here
+**EDI order purpose**           | The EDI order purpose is shown here
+**Created Date and Time**       | The date and time the selected record was created in the staging table
+**Received**                    | Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record
 
 ### Buttons
-The following buttons are available on the **Customer advanced shipping notice** Action Pane, tab **Advanced shipping notice**.
+The following buttons are available on the **Vendor purchase order** Action Pane, tab **Purchase order export**.
 
 **Button**	                    | **Description**
 :---                            |:----
-**Create selected files**       | Creates the outbound file for selected records where **Staging to target status** is set to _Not started_.
-**Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_.
-**Outbound files**              | View the outbound file record created by the selected staging record.
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
-**Consignment notes**           | View the consignment note relating to the packing slip record.
+**Create selected files**       | Creates the outbound file for selected records where **Staging to target status** is set to _Not started_
+**Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_
+**Outbound files**              | View the outbound file record created by the selected staging record
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page
+**Purchase order**              | View the originating purchase order; enabled where the record was created from a purchase order
+**Purchase agreement**          | View the originating purchase agreement; enabled where the record was created from a purchase agreement
+**Vendor**                      | View the vendor account
 **Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
 **Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
 **Reset template**	            | Reset the template used to create the outbound file. <br> Only enabled where the **Staging to target status** is set to _Not started_.
+**Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
 
 The following buttons are available on the **Customer advanced shipping notice**'s Action Pane, tab **Acknowledgement**.
 The **Acknowledgement** tab is available on all outgoing documents staging pages and enables the user to view the **Functional acknowledgement inbound** that has been received and processed for the outbound document.
