@@ -2,10 +2,10 @@
 # required metadata
 
 title: [EDI Vendor]
-description: [Overview of the Vendor order acknowledgement and confirmation process]
+description: [Overview of the Vendor purchase order, acknowledgement and confirmation process]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 21/07/2021
+ms.date: 10/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Process Overview
 
-## Import process overview
+## Purchase order, acknowledgement and confirmation process overview
 The Trading partner or VAN will place data into a ‘cloud accessible’ location (i.e. FTP, SFTP or Azure blob) and D365 will periodically import these files into an inbound document staging area for processing.
 
 D365 will use templates to read the data from the inbound documents and create staging data. The staging data is then processed into target documents within D365 and standard application processing rules are applied.
 
-![alt text](../Image/Vendor_PO_POA_POC_process.png "Vendor EDI process for order, acknowledgement and confirmation")
+![alt text](../IMAGE/Vendor_PO_POA_POC_process.png "Vendor EDI process for order, acknowledgement and confirmation")
 
 
