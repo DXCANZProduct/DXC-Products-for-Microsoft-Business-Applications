@@ -184,8 +184,8 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Overview**</ins>		
 **Purchase order**          | The D365 purchase order number	
 **Purchase order date**     | The original purchase order date from the purchase order is shown here	| Original order date
-**EDI order type**          | The EDI order type is shown here. Mapped value from [Order type group](../SETUP/VENDOR%20SETUP/Order%20type%20group.md)  | Order type
-**EDI order purpose**       | The EDI order purpose is shown here. Mapped value from [Order purpose group](../SETUP/VENDOR%20SETUP/Order%20purpose%20group.md)  | Order purpose code
+**EDI order type**          | The EDI order type is shown here. <br> Mapped value from [Order type group](../SETUP/VENDOR%20SETUP/Order%20type%20group.md)  | Order type
+**EDI order purpose**       | The EDI order purpose is shown here. <br> Mapped value from [Order purpose group](../SETUP/VENDOR%20SETUP/Order%20purpose%20group.md)  | Order purpose code
 <ins>**Status**</ins>	
 **Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
 **Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
@@ -257,10 +257,10 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Transportation**</ins>		
 **Shipping carrier**                | Shipping carrier	
 **Carrier qualifier**               | Code designating the system/method of code structure used for shipping carrier	
-**EDI carrier mode**                | Code specifying the method or type of transportation for the shipment. Mapped value from [Carrier mode](../SETUP/VENDOR%20SETUP/Carrier%20mode.md)
+**EDI carrier mode**                | Code specifying the method or type of transportation for the shipment. <br> Mapped value from [Carrier mode](../SETUP/VENDOR%20SETUP/Carrier%20mode.md)
 <ins>**Miscellaneous**</ins>		
-**Misc. indicator**                 | Code which indicates an allowance or charge for the service specified. Mapped value from [Misc. charge/allowance indicator](../Misc%20charge%20allowance%20indicator.md)	
-**EDI charges code**                | Code identifying the service, promotion, allowance, or charge. Mapped value from [Charges code](../SETUP/VENDOR%20SETUP/Charges%20code.md)
+**Misc. indicator**                 | Code which indicates an allowance or charge for the service specified. <br> Mapped value from [Misc. charge/allowance indicator](../SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md)	
+**EDI charges code**                | Code identifying the service, promotion, allowance, or charge. <br> Mapped value from [Charges code](../SETUP/VENDOR%20SETUP/Charges%20code.md)
 <ins>**Totals**</ins>	
 **Subtotal amount**                 | Subtotal of all purchase order lines	
 **Line discount**                   | Discount for all purchase order lines	
@@ -270,7 +270,7 @@ The following EDI Header staging fields are available on the header page.
 **Total amount**                    | Total amount	
 <ins>**Payment**</ins>		
 **Currency**	                    | Currency	
-**Terms code**                      | Payment terms. Mapped value from [Payment terms type group](../SETUP/VENDOR%20SETUP/Payment%20terms%20type%20group.md)
+**Terms code**                      | Payment terms. <br> Mapped value from [Payment terms type group](../SETUP/VENDOR%20SETUP/Payment%20terms%20type%20group.md)
 **Terms net days**                  | Payment terms net due days calculated from delivery date. <br> Example with delivery date 16/04/2019 <br> •	Current month + 30 days = 44 •	Current month + 2 months + 20 days and payment day = 15th = 90 <br> •	Current quarter + 15 days = 90 <br> •	Current year + 1 month = 290 <br> •	Current week + 7 days = 11 <br> •	Net + 1 month + 15 days = 45 <br> •	COD = 0
 **Cash discount**                   | Settlement discount percentage	
 **Days**                            | Settlement days	
@@ -299,7 +299,7 @@ The following EDI Line staging fields are available on the lines page.
 **Net unit price**          | Unit price net of all discounts	
 **Charges on purchases**    | The purchase charge that is calculated as a charge that is independent of the quantity on the purchase order line	
 **Misc charges**            | Miscellaneous charge/allowance allocated to purchase order line (Maintain charges)	
-**Misc indicator**          | Code which indicates an allowance or charge for the service specified. Mapped value from [Misc charge/allowance indicator](../SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md)
+**Misc indicator**          | Code which indicates an allowance or charge for the service specified. <br> Mapped value from [Misc charge/allowance indicator](../SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md)
 **Line amount excluding tax**   | Net line amount excluding tax	                        | Original line amount
 **Line amount tax**         | Line tax amount	
 **Line amount including tax**   | Net line amount including tax	
