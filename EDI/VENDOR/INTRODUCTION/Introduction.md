@@ -64,7 +64,7 @@ Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 #### Mappings assigned on Vendor Trading partner
 Used to map D365/EDI value to Vendor's value and assigned on Vendor Trading partner: <br>
 
-- Vendor setup and which field it is mapped to / from on the EDI document(s) it applies to: **EDI > Setup > Vendor setup** <br>
+- Vendor setup and which EDI document (and field) it is mapped to/from: **EDI > Setup > Vendor setup** <br>
 	- [Order type group](../SETUP/VENDOR%20SETUP/Order%20type%20group.md)
 		- Vendor purchase order (OrderType)
 		- Vendor purchase order change (OrderType)
