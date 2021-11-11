@@ -30,9 +30,28 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Process Overview
 
 ## Purchase order, acknowledgement and confirmation process overview
-The Trading partner or VAN will place data into a ‘cloud accessible’ location (i.e. FTP, SFTP or Azure blob) and D365 will periodically import these files into an inbound document staging area for processing.
+The following image displays the process of sending the purchase order (PO) to the EDI vendor, and if required, receiving a purchase order acknowledgement (POA) and sending a purchase order confirmation. <br>
 
-D365 will use templates to read the data from the inbound documents and create staging data. The staging data is then processed into target documents within D365 and standard application processing rules are applied.
+### Purchase order (PO)
+When an Vendor EDI Trading partner has **Vendor purchase order** or **Vendor purchase order change** document(s) enabled, confirming the purchase order will create an original or change (after original) outbound staging records to the vendor.
+
+### Purchase order acknowledgement (POA)
+PO setting **Acknowledgement required** determines if a POA is required which affects the Purchase order's **Status** and **Acknowledgement required**.
+If a purchase order acknowledgement (POA) is received, the validation's error tolerance determines if the D365 purchase order is updated.
+If any of the validations error, the staging record will error.
+For info and warning validations, the staging record will process to target and update the D365 purchase order where applicable.
+Where the POA contains a **Header - Accept** response, the rest of the POA details are ignored as all has been accepted.
+
+### Purchase order confirmation (POC)
+POA document setting **Purchase order confirmation required** determines if a purchase order confirmation (POC) is required after receiving a POA, and if it will be sent automatically or manually by user.
+
+If the confirmation details doesn't match the POA, for example didn't accept the price change, a purchase order change with purpose **Change** will be created to the vendor.
+
+If the confirmation details does match the POA, a purchase order change with purpose **Confirmation** will be created to the vendor.
+When the purpose is **Confirmation**, the following purchase order header fields are updated:
+- **Status** will change to _Confirmed_ (if previously set to _In external review)_ and 
+- **Acknowledgement required** will change to _Confirmation sent_
+
 
 ![alt text](../IMAGE/Vendor_PO_POA_POC_process.png "Vendor EDI process for order, acknowledgement and confirmation")
 
