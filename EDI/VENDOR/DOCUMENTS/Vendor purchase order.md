@@ -157,7 +157,7 @@ The following buttons are available on the **Vendor purchase order** Action Pane
 **Reset template**	            | Reset the template used to create the outbound file. <br> Only enabled where the **Staging to target status** is set to _Not started_.
 **Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
 
-The following buttons are available on the **Customer advanced shipping notice**'s Action Pane, tab **Acknowledgement**.
+The following buttons are available on the **Vendor purchase order**'s Action Pane, tab **Acknowledgement**.
 The **Acknowledgement** tab is available on all outgoing documents staging pages and enables the user to view the **Functional acknowledgement inbound** that has been received and processed for the outbound document.
 
 **Button**	                    | **Description**
@@ -167,27 +167,171 @@ The **Acknowledgement** tab is available on all outgoing documents staging pages
 ### Header fields
 The following EDI Header staging fields are available on the header page.
 
-**Field**	            | **Description**	                                      | **Source D365 field**
+**Field**	            | **Description**	                                      | **PO > EDI tab**
 :---                    |:---                                                     |:---
 <ins>**Identification FastTab**</ins>		
 <ins>**Identification**</ins>		
-**EDI number**          | ASN number                                              | EDI parameters > Number sequences > ASN number
+**EDI number**          | EDI Staging table record id                             | Original EDI number
 **Company**             | Legal entity of the document
-**Company GLN**         | The company’s global location number is shown here      | 
+**Company GLN**         | The company’s global location number is shown here      | Company GLN
 **Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	            
-**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.	
+**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.	• **Canceled** – The record has been manually canceled and will be excluded from processing.
 <ins>**Reset status**</ins>		
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**Overview**</ins>	
-
+<ins>**Overview**</ins>		
+**Purchase order**          | The D365 purchase order number	
+**Purchase order date**     | The original purchase order date from the purchase order is shown here	| Original order date
+**EDI order type**          | The EDI order type is shown here. Mapped value from [Order type group](../SETUP/VENDOR%20SETUP/Order%20type%20group.md)  | Order type
+**EDI order purpose**       | The EDI order purpose is shown here. Mapped value from [Order purpose group](../SETUP/VENDOR%20SETUP/Order%20purpose%20group.md)  | Order purpose code
+<ins>**Status**</ins>	
+**Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
+**Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
+<ins>**General FastTab**</ins>
+<ins>**Details**</ins>
+**Vendor reference**        | Vendor’s order reference	
+**Vendor account**          | Vendor assigned to the purchase order	
+**Vendor name**             | Vendor name	
+**Trading partner GLN**     | The vendor’s global location number is shown here.	                    | Trading partner GLN
+**Company GLN**             | The company’s global location number is shown here.	
+**Buyer group**             | The Purchase Order’s Buyer group is shown here.	                        | Buyer group
+**Buyer name**              | Buyer name	
+**Buyer email**             | Buyer email	
+**Buyer phone**             | Buyer phone	
+**Company phone**           | Company phone	
+**Company name**            | Company name	
+**Tax registration number** | Company tax registration number	
+<ins>**Vendor invoicing**</ins>		
+**Vendor name**             | Vendor name	
+**Vendor primary street number**    | Vendor primary address - street number	
+**Vendor primary street**           | Vendor primary address - street	
+**Vendor primary city**             | Vendor primary address - city	
+**Vendor primary county**           | Vendor primary address - county	
+**Vendor primary state**            | Vendor primary address - state	
+**Vendor primary ZIP/postal code**  | Vendor primary address - ZIP/postal code	
+**Vendor primary country/region**   | Vendor primary address – country/region	
+**Tax exempt number**               | Vendor tax exempt number	
+<ins>**Customer invoicing**</ins>	
+**Our account number**              | Bill to - Our account number in the vendor’s system. As per ‘Our account number’ loaded on Vendor’s Invoice account	| Bill to
+**Name**                            | Bill to - Name	
+**Name or description**             | Bill to - Invoice address name	
+**Street number**                   | Bill to - Street number	
+**Street**                          | Bill to - Street	
+**City**                            | Bill to - City	
+**County**                          | Bill to - County	
+**State**                           | Bill to - State	
+**ZIP/postal code**                 | Bill to - ZIP/postal code	
+**Country/region**                  | Bill to - Country/region	
+<ins>**Version**</ins>		
+**PO version number**               | The version of the D365 purchase order number	                    | Original version number
+**Created date and time**           | The date and time the selected record was created in the staging table	
+**Acknowledgement requested**       | Indicates if functional acknowledgement has been requested from the trading partner for the outbound document.	
+<ins>**Agreement**</ins>		    
+**Purchase agreement**              | The D365 purchase agreement number (applicable for release orders)	
+**Effective date**                  | Purchase agreement effective date	
+**Expiration date**                 | Purchase agreement expiration date	
+<ins>**Delivery**</ins>		
+**Delivery name**                   | Ship to - Name	
+**Our account number**              | Ship to - Our account number in the vendor’s system. As per ‘Our account number’ loaded on Vendor’s Order account	Ship to
+**Store code**                      | Ship to - Store code	
+**Street number**                   | Ship to - Street number	
+**Street**                          | Ship to - Street	
+**City**                            | Ship to - City	
+**County**                          | Ship to - County	
+**State**                           | Ship to - State	
+**ZIP/postal code**                 | Ship to - ZIP/postal code	
+**Country/region**                  | Ship to - Country/region	
+**ISO**                             | Ship to - Country/region ISO	
+**Latitude**                        | Ship to - Latitude	
+**Longitude**                       | Ship to - Longitude	
+**Delivery date**                   | Required delivery date	                                        | Delivery date
+**Site**                            | Storage dimension - Site	                                        | Site
+**Warehouse**                       | Storage dimension - Warehouse	                                    | Warehouse
+**Delivery terms**                  | Delivery terms	
+**Delivery mode**                   | Delivery mode	
+**Text**                            | Header note to be sent with purchase order	
+**Requester**                       | Requester	                                                        | Requester
+**Attention information**           | Attention information	
+<ins>**Transportation**</ins>		
+**Shipping carrier**                | Shipping carrier	
+**Carrier qualifier**               | Code designating the system/method of code structure used for shipping carrier	
+**EDI carrier mode**                | Code specifying the method or type of transportation for the shipment. Mapped value from [Carrier mode](../SETUP/VENDOR%20SETUP/Carrier%20mode.md)
+<ins>**Miscellaneous**</ins>		
+**Misc. indicator**                 | Code which indicates an allowance or charge for the service specified. Mapped value from [Misc. charge/allowance indicator](../Misc%20charge%20allowance%20indicator.md)	
+**EDI charges code**                | Code identifying the service, promotion, allowance, or charge. Mapped value from [Charges code](../SETUP/VENDOR%20SETUP/Charges%20code.md)
+<ins>**Totals**</ins>	
+**Subtotal amount**                 | Subtotal of all purchase order lines	
+**Line discount**                   | Discount for all purchase order lines	
+**Misc. amount**                    | Purchase order header Misc. charge/allowance amount	
+**Tax amount**                      | Tax amount	
+**Round-off**                       | Round-off	
+**Total amount**                    | Total amount	
+<ins>**Payment**</ins>		
+**Currency**	                    | Currency	
+**Terms code**                      | Payment terms. Mapped value from [Payment terms type group](../SETUP/VENDOR%20SETUP/Payment%20terms%20type%20group.md)
+**Terms net days**                  | Payment terms net due days calculated from delivery date. <br> Example with delivery date 16/04/2019 <br> •	Current month + 30 days = 44 •	Current month + 2 months + 20 days and payment day = 15th = 90 <br> •	Current quarter + 15 days = 90 <br> •	Current year + 1 month = 290 <br> •	Current week + 7 days = 11 <br> •	Net + 1 month + 15 days = 45 <br> •	COD = 0
+**Cash discount**                   | Settlement discount percentage	
+**Days**                            | Settlement days	
+**Discount amount**                 | Settlement discount amount if paid within settlement days	
 
 
 ### Line fields
 The following EDI Line staging fields are available on the lines page.
 
-**Field**	               | **Description**	                                        | **Source D365 field**
-:---                       |:---                                                        |:---
-
+**Field**	                | **Description**	                                        | **PO line > EDI tab**
+:---                        |:---                                                       |:---
+**Line number**             | The line within the EDI table/file	                    | Line number
+**Our item number**         | The D365 item number
+**External item number**    | Vendor’s item number	
+**Bar code**                | Item’s barcode	
+**GTIN**                    | Item’s GTIN	
+**Description**             | Purchase order line text	
+**Purchase quantity**       | Original purchase quantity	                            | Original ordered quantity
+**Unit**                    | Unit of measure of purchase quantity	
+**Price unit**              | The quantity of the product that is covered by the purchase price. Usually 1	
+**Price multiplier**        | Value to be used to obtain a new value. NetUnitPrice/UnitPrice. Example price before discount $100 and after discount $90 has a price multiplier of 0.9	
+**Includes GST**            | Unit prices and unit discounts includes GST	
+**Unit Price**              | Unit price for the item	
+**Unit discount**           | The amount of the line discount per price unit	
+**Unit discount percentage**    | Discount percentage	
+**Net unit price**          | Unit price net of all discounts	
+**Charges on purchases**    | The purchase charge that is calculated as a charge that is independent of the quantity on the purchase order line	
+**Misc charges**            | Miscellaneous charge/allowance allocated to purchase order line (Maintain charges)	
+**Misc indicator**          | Code which indicates an allowance or charge for the service specified. Mapped value from [Misc charge/allowance indicator](../SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md)
+**Line amount excluding tax**   | Net line amount excluding tax	                        | Original line amount
+**Line amount tax**         | Line tax amount	
+**Line amount including tax**   | Net line amount including tax	
+**Minimum release amount**  | Purchase agreement line’s minimum release amount	
+**Maximum release amount**  | Purchase agreement line’s maximum release amount	
+**Effective date**          | Purchase agreement line effective date	                | Original effective date
+**Expiration date**         | Purchase agreement line expiration date	                | Original expiration date
+**Currency**                | Currency	
+**Inners quantity**         | Unit conversion quantity of inners to outers <br> Example qty 12 ea (inner) per box (outer)	
+**Inners unit**             | Inners unit of measure as setup on item’s [pack size](../../CORE/Setup/Item%20pack%20sizes.md)
+**Pack quantity**           | Package quantity. Package (inner or outer) determined by purchase order / purchase order change’s setting profile **Package size – inner/outer**	
+**Pack unit**               | Unit determined by purchase order / purchase order change’s setting profile **Package size – inner/outer** <br> Inner and Outer unit setup on Item
+**Batch number**            | Batch number for the purchase line	
+**Configuration**           | Inventory dimension - Configuration	
+**Color**                   | Inventory dimension - Colour	
+**Size**                    | Inventory dimension - Size	
+**Style**                   | Inventory dimension - Style	
+**Inventory status**        | Inventory dimension - Inventory status	
+**Site**                    | Storage dimension - Site	
+**Warehouse**               | Storage dimension - Warehouse	
+**Requested receipt date**  | The requested receipt date
+**Requester**               | Requester	
+**Attention information**   | Attention information	
+**Delivery name**           | Address for Delivery – Delivery name	
+**Name or description**     | Ship to – Name or description	
+**Street number**           | Ship to - Street number	
+**Street**                  | Ship to - Street	
+**City**                    | Ship to - City	
+**County**                  | Ship to - County	
+**State**                   | Ship to - State	
+**ZIP/postal code**         | Ship to - ZIP/postal code	
+**Country/region**          | Ship to - Country/region	
+**Store code**              | Ship to - Store code	
+**Latitude**                | Ship to - Latitude	
+**Longitude**               | Ship to - Longitude	
