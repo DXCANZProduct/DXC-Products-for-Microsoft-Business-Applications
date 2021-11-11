@@ -95,7 +95,7 @@ Each purchase order document will also have an order purpose which is specified 
 Description	            | Order type    | Order purpose | EDI Staging / Doc type
 |-                      |-              |-              |-     
 **Confirm 1st time**    | Order	        | Original	    | Vendor purchase order
-**Change**              | Order	        | Change	    | Vendor purchase order change
+**Change and confirm**  | Order	        | Change	    | Vendor purchase order change
 **Cancel**              | Order	        | Cancellation	| Vendor prchase order change
 **Confirm POA and details match**  | Order	        | Confirmation	| Purchase order change
 
@@ -104,14 +104,14 @@ Description	            | Order type    | Order purpose | EDI Staging / Doc type
 Description	            | Order type    | Order purpose | EDI Staging / Doc type
 |-                      |-              |-              |-     
 **Confirm 1st time**    | Agreement     | Original	    | Vendor purchase order
-**Change**              | Agreement     | Change	    | Vendor purchase order change
+**Change and confirm**  | Agreement     | Change	    | Vendor purchase order change
 
 #### Release order
 
 Description	            | Order type    | Order purpose | EDI Staging / Doc type
 |-                      |-              |-              |-     
 **Confirm 1st time**    | Release order	| Original	    | Vendor purchase order
-**Change**              | Release order	| Change	    | Vendor purchase order change
+**Change and confirm**  | Release order	| Change	    | Vendor purchase order change
 **Cancel**              | Release order	| Cancellation	| Vendor prchase order change
 **Confirm POA and details match**  | Release order	| Confirmation	| Purchase order change
 
