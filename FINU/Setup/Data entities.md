@@ -5,7 +5,7 @@ title: [Finance Utilities ]
 description: [Finance Utilities setup - Data Entities ]
 author: [helenho]
 manager: Kym Parker
-ms.date: 02/03/2021
+ms.date: 11/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
