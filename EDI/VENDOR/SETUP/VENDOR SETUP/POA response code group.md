@@ -60,7 +60,9 @@ POA Response codes are used to identify the status of information used in a Purc
 **Line item – inner difference**  |	Advise of inner difference	          | POAVendCodeItem / POA code item      | ID
 
 ## Where used
-POA response code group is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **POA responde code group**.
+POA response code group is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **POA responde code group**. <br>
+Used on fields **POAVendCode**, **POAVendCodeItem** and **POAVendCodeShipment** on EDI documents:
+- Vendor purchase order acknowledgement
 
 ## Data entities:
 - Vendor EDI POA response code group
