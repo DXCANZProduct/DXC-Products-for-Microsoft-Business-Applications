@@ -271,7 +271,7 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Payment**</ins>		
 **Currency**	                    | Currency	
 **Terms code**                      | Payment terms. <br> Mapped value from [Payment terms type group](../SETUP/VENDOR%20SETUP/Payment%20terms%20type%20group.md)
-**Terms net days**                  | Payment terms net due days calculated from delivery date. <br> Example with delivery date 16/04/2019 <br> •	Current month + 30 days = 44 •	Current month + 2 months + 20 days and payment day = 15th = 90 <br> •	Current quarter + 15 days = 90 <br> •	Current year + 1 month = 290 <br> •	Current week + 7 days = 11 <br> •	Net + 1 month + 15 days = 45 <br> •	COD = 0
+**Terms net days**                  | Payment terms net due days calculated from delivery date. <br> Example with delivery date 16/04/2019 <br> •	Current month + 30 days = 44 <br> •	Current month + 2 months + 20 days and payment day = 15th = 90 <br> •	Current quarter + 15 days = 90 <br> •	Current year + 1 month = 290 <br> •	Current week + 7 days = 11 <br> •	Net + 1 month + 15 days = 45 <br> •	COD = 0
 **Cash discount**                   | Settlement discount percentage	
 **Days**                            | Settlement days	
 **Discount amount**                 | Settlement discount amount if paid within settlement days	
