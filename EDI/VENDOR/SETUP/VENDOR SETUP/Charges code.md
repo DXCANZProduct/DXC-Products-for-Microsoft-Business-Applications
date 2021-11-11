@@ -47,7 +47,11 @@ Code identifying the service, promotion, allowance, or charge. <br>
 -	Specify the vendor's value used to identify the **EDI charges code**.
 
 ## Where used
-Charges code is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Charges code**.
+Charges code is assigned on the [Vendor Trading partner's](../Trading%20partner.md) Options field called **Charges code**. <br>
+Used on field **MiscCode** on EDI documents:
+- Vendor purchase order
+- Vendor purchase order change
+- Purchase invoice
 
 ## Data entities:
 - Vendor EDI charges code group
