@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI Vendor]
-description: [EDI Vendor Documents - Vendor purchase order]
+description: [EDI Vendor Documents - Vendor purchase order change]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 11/11/2021
@@ -27,22 +27,23 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Vendor purchase order
+# Vendor purchase order change
 
 ## Prerequisites
-The following setup is prerequisites for the vendor purchase order
+The following setup is prerequisites for the vendor purchase order change
 
 ### Vendor setup
 EDI > Setup > Vendor setup
 1. Create [Order type group](../SETUP/VENDOR%20SETUP/Order%20type%20group.md) - mapped to OrderType on the document.
 1. Create [Order purpose groups](../SETUP/VENDOR%20SETUP/Order%20purpose%20group.md) - mapped to OrderPurpose on the document.
-2. Create [Carrier mode](../SETUP/VENDOR%20SETUP/Carrier%20mode.md) - mapped to CarrierMode on the document.
-1. Create [Charges code](../SETUP/VENDOR%20SETUP/Charges%20code.md) - mapped to MiscCode on the document.
-1. Create [Payment terms type group](../SETUP/VENDOR%20SETUP/Payment%20terms%20type%20group.md) - mapped to TermsTypeCode on the document.
-1. Create [Misc charge/allowance indicator](../SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md) - mapped to MiscIndicator on the document.
+2. Create [Order line change type group](../SETUP/VENDOR%20SETUP/Order%20line%20change%20type%20group.md) - mapped to LineChangeType on the document.
+3. Create [Carrier mode](../SETUP/VENDOR%20SETUP/Carrier%20mode.md) - mapped to CarrierMode on the document.
+4. Create [Charges code](../SETUP/VENDOR%20SETUP/Charges%20code.md) - mapped to MiscCode on the document.
+5. Create [Payment terms type group](../SETUP/VENDOR%20SETUP/Payment%20terms%20type%20group.md) - mapped to TermsTypeCode on the document.
+6. Create [Misc charge/allowance indicator](../SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md) - mapped to MiscIndicator on the document.
 
 ### Document type setup
-EDI > Setup > Document types: Vendor purchase order
+EDI > Setup > Document types: Vendor purchase order change
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
 2. Create [Setting profile](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order.md) for the document.
 3. Create [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md) for the document.
@@ -51,7 +52,7 @@ EDI > Setup > Document types: Vendor purchase order
 EDI > Setup > Trading partners
 1. If the vendor [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the **Vendor setup** to the vendor trading partner's options.
-1. Add and enable the **vendor purchase order** document to the [Vendor trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+1. Add and enable the **Vendor purchase order change** document to the [Vendor trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
     - File name setup
@@ -116,8 +117,8 @@ Description	            | Order type    | Order purpose | EDI Staging / Doc type
 **Confirm POA and details match**  | Release order	| Confirmation	| Vendor purchase order change
 
 ## View staging table records
-To view the Vendor purchase order staging records, go to **EDI > Documents > Vendor documents > Vendor purchase order**. 
-Use this page to review staging and process EDI Vendor purchase order documents to an Outbound file.
+To view the Vendor purchase order change staging records, go to **EDI > Documents > Vendor documents > Vendor purchase order change**. 
+Use this page to review staging and process EDI Vendor purchase order change documents to an Outbound file.
 
 ### List page
 The following EDI fields are available on the list page.
@@ -134,6 +135,7 @@ The following EDI fields are available on the list page.
 **PO version number**           | The version of the D365 purchase order number
 **Purchase agreement**          | The D365 purchase agreement number for the release order (where applicable)
 **Purchase order date**         | The original purchase order date from the purchase order is shown here
+**Purchase change date**        | The change purchase order date from the purchase order is shown here
 **EDI order type**              | The EDI order type is shown here
 **EDI order purpose**           | The EDI order purpose is shown here
 **Created Date and Time**       | The date and time the selected record was created in the staging table
@@ -171,7 +173,7 @@ The following EDI Header staging fields are available on the header page.
 :---                    |:---                                                     |:---
 <ins>**Identification FastTab**</ins>		
 <ins>**Identification**</ins>		
-**EDI number**          | EDI Staging table record id                             | Original EDI number
+**EDI number**          | EDI Staging table record id                             | Change EDI number
 **Company**             | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here      | Company GLN
 **Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	            
@@ -184,6 +186,7 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Overview**</ins>		
 **Purchase order**          | The D365 purchase order number	
 **Purchase order date**     | The original purchase order date from the purchase order is shown here	| Original order date
+**Purchase change date**    | The change purchase order date from the PO is shown here                  | Change order date
 **EDI order type**          | The EDI order type is shown here. <br> Mapped value from [Order type group](../SETUP/VENDOR%20SETUP/Order%20type%20group.md)  | Order type
 **EDI order purpose**       | The EDI order purpose is shown here. <br> Mapped value from [Order purpose group](../SETUP/VENDOR%20SETUP/Order%20purpose%20group.md)  | Order purpose code
 <ins>**Status**</ins>	
@@ -225,7 +228,7 @@ The following EDI Header staging fields are available on the header page.
 **ZIP/postal code**                 | Bill to - ZIP/postal code	
 **Country/region**                  | Bill to - Country/region	
 <ins>**Version**</ins>		
-**PO version number**               | The version of the D365 purchase order number	                    | Original version number
+**PO version number**               | The version of the D365 purchase order number	                    | Change version number
 **Created date and time**           | The date and time the selected record was created in the staging table	
 **Acknowledgement requested**       | Indicates if functional acknowledgement has been requested from the trading partner for the outbound document.	
 <ins>**Agreement**</ins>		    
@@ -287,8 +290,10 @@ The following EDI Line staging fields are available on the lines page.
 **External item number**    | Vendor’s item number	
 **Bar code**                | Item’s barcode	
 **GTIN**                    | Item’s GTIN	
+**Line change type**        | Code specifying the type of change to the line item <br> • **Add additional item** - Purchase order line has been added. <br> • **Delete items** – Purchase order line has been removed or ‘deliver remainder’ cancelled. <br> • **Change line items** - All other purchase order lines are sent with this code which indicates the vendor must replace with current info.	| Line change type
 **Description**             | Purchase order line text	
 **Purchase quantity**       | Original purchase quantity	                            | Original ordered quantity
+**Deliver remainder**       | Deliver remainder quantity with latest change purchase order | Change ordered quantity
 **Unit**                    | Unit of measure of purchase quantity	
 **Price unit**              | The quantity of the product that is covered by the purchase price. Usually 1	
 **Price multiplier**        | Value to be used to obtain a new value. NetUnitPrice/UnitPrice. Example price before discount $100 and after discount $90 has a price multiplier of 0.9	
@@ -300,13 +305,13 @@ The following EDI Line staging fields are available on the lines page.
 **Charges on purchases**    | The purchase charge that is calculated as a charge that is independent of the quantity on the purchase order line	
 **Misc charges**            | Miscellaneous charge/allowance allocated to purchase order line (Maintain charges)	
 **Misc indicator**          | Code which indicates an allowance or charge for the service specified. <br> Mapped value from [Misc charge/allowance indicator](../SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md)
-**Line amount excluding tax**   | Net line amount excluding tax	                        | Original line amount
+**Line amount excluding tax**   | Net line amount excluding tax	                        | Change line amount
 **Line amount tax**         | Line tax amount	
 **Line amount including tax**   | Net line amount including tax	
 **Minimum release amount**  | Purchase agreement line’s minimum release amount	
 **Maximum release amount**  | Purchase agreement line’s maximum release amount	
-**Effective date**          | Purchase agreement line effective date	                | Original effective date
-**Expiration date**         | Purchase agreement line expiration date	                | Original expiration date
+**Effective date**          | Purchase agreement line effective date	                | Change effective date
+**Expiration date**         | Purchase agreement line expiration date	                | Change expiration date
 **Currency**                | Currency	
 **Inners quantity**         | Unit conversion quantity of inners to outers <br> Example qty 12 ea (inner) per box (outer)	
 **Inners unit**             | Inners unit of measure as setup on item’s [pack size](../../CORE/Setup/Item%20pack%20sizes.md)
