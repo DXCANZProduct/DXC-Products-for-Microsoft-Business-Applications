@@ -61,6 +61,8 @@ Cash and bank management > Setup > Advanced bank reconciliation setup > Reconcil
 |-                                    |-  
 | **Reconciliation matching rules**   | • Include in (DFUBANKRULEACTIVATEINCLUDEIN) <br> •	Group by document number (SYSTEMGENERATEDTYPE = ECL_GroupByDocumentNum) <br> • Company (DFUCOMPANY) <br> •	Offset company (DFUOFFSETCOMPANY) <br> •	Offset account type (DFUOffsetAccountType) <br> •	Offset account (DFUOFFSETLEDGERDIMENSIONDISPLAYVALUE) <br> •	Offset account dimension values (DFUOFFSETDEFAULTDIMENSIONDISPLAYVALUE) <br> •	GST group (DFUTAXGROUP) <br> •	Item GST group (DFUTAXITEMGROUP) | 
 
+> Note:Ensure the **Financial dimension configuration for integrating applications** dimension format aligns with dimensions on the bank reconciliation matching rule before import the entity. General ledger > Chart of accounts > Dimensions > Financial dimension configuration for integrating applications. Define data entity format for **Default dimensions integration** and **Ledger dimensions integration**.
+
 ### Bank statement format
 Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format <br> 
 Bank statement format entities are a combination of Finance utilities entities and additional fields added to standard entity. 
