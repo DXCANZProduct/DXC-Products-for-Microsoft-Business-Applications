@@ -34,7 +34,7 @@ The Vendor EDI module includes modifications to Purchase orders. Users can acces
 ## Purchase order status
 
 EDI purchase orders will be placed in **External review** if the Trading partner has the following setup:
--	Vendor purchase order document setting profile **Acknowledgement required**’ is set to _Yes_
+-	Vendor purchase order document setting profile **Acknowledgement required** is set to _Yes_
 
 ## EDI tab
 ### EDI tab - Buttons
