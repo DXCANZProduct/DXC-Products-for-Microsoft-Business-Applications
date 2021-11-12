@@ -43,7 +43,7 @@ The created POA record can be viewed for a sales order, by selecting the **Histo
 The following setup is prerequisites for the customer purchase order acknowledgement
 
 1. If required to put sales orders on hold till the POA has been sent, assign the applicable hold code to [POA pending hold code](../SETUP/CUSTOMER%20SETUP/Hold%20codes.md) in EDI parameters.
-2. Create [POA response groups](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md)
+2. Create [POA response groups](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) to map the customer's values to EDI POA response groups.
 3. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
 4. Create [Setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md) for the document.
 5. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md) for the document.
