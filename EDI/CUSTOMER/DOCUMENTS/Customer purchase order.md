@@ -114,7 +114,7 @@ There are various **Order types** that can be processed via the purchase order d
 
 #### Possible issues and fixes
 **Staging to target** errors for Customer purchase order can be viewed in:
-- **EDI > Documents > Customer purchase order** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Documents > Customer documents > Customer purchase order** filtered to **Staging to target tatus** set to _Error_
 - **EDI > Document maintenance**, tab **Customer documents**, tile **Purchase order errors**
 - **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO**
 

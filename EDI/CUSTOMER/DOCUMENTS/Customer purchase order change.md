@@ -119,7 +119,7 @@ There are various **Order purposes** that can be processed via the purchase orde
 
 #### Possible issues and fixes
 **Staging to target** errors for Customer purchase order change can be viewed in:
-- **EDI > Documents > Customer purchase order change** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Documents > Customer documents > Customer purchase order change** filtered to **Staging to target tatus** set to _Error_
 - **EDI > Document maintenance**, tab **Customer documents**, tile **PO change errors**
 - **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO change**
 
