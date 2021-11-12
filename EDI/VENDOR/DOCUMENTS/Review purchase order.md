@@ -62,7 +62,7 @@ All the EDI staging records applicable to the Purchase order can be viewed via t
 
 ## Purchase order EDI header fields
 
-The following EDI fields have been added to the Purchase order's Header and is available on the EDI fast tab. <br>
+The following EDI fields have been added to the Purchase order and Purchase agreement Header and is available on the EDI fast tab. <br>
 **Populated by** will indicate if the field is populated by:
 - Original - Purchase order staging record
 - Change - Change purchase order staging record
@@ -99,74 +99,57 @@ The following EDI fields have been added to the Purchase order's Header and is a
 **Acknowledgement status**  | Current status for purchase order acknowledgement and confirmation. <br> Available options: <br> • **Blank** – No purchase order acknowledgement required <br> •	**Acknowledgement pending** – Purchase order acknowledgement required and still pending <br> •	**Acknowledgement received** – Purchase acknowledgement received, and purchase order confirmation not required. Acknowledgement/confirmation process is complete <br> •	**Confirmation pending** – Purchase acknowledgement received, and purchase order confirmation required and still pending <br> •	**Confirmation sent** – Purchase order confirmation has been sent. Acknowledgement/confirmation process is complete | EDI calc
 **Acknowledgement status date** | Date of current Acknowledgement status        | EDI calc
 
-
-**Advertisement date**		| The advertisement date applicable for the order			| Original
-**Package characteristic code**	| The code used to for the package contents				| Original
-**Package label code**		| The code used for the label						| Original
-**Store zone**			| The store zone from the EDI order is shown here			| Original
-**Department**			| The customer’s department from the EDI order is shown here		| Original
-**Purpose code**		| The customer’s purpose code from the EDI order is shown here		| Original
-**Buyer code**			| The customer’s buyer code from the EDI order is shown here		| Original
-**Retail buyer location**	| The customer’s retail buyer location from the EDI order is shown here	| Original
-**EDI order type**		| The EDI order type is shown here					| Original
-**Order purpose code**		| Latest purpose code: Original, Change, Cancellation or Confirmation	| Original
-<ins>**Delivery**</ins>	
-**Store code**			| The store code from the EDI order is shown here. <br> Can be updated by order change.	| Original / Change
-**Requested receipt date**	| The requested receipt date (delivery window) from the EDI order is shown here. <br> Can be updated by order change.	| Original / Change
-**Requested ship date**		| The requested ship date (delivery window) from the EDI order is shown here. <br> Can be updated by order change.	| Original / Change
-**Delivery time**		| The delivery time from the EDI order is shown here. <br> Can be updated by order change.	| Original / Change
-<ins>**Version**</ins>		
-**Original version number**	| The original version number from the EDI order.			| Original
-**Change version number**	| The latest PO version number from the EDI order change		| Change
-<ins>**Settings**</ins>		
-**Bypass duplicate check**	| Used to validate the customer purchase order number. <br> Note: For further information see **Duplicate tolerance** in [Customer purchase order settings profiles](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md)			  | Doc setting
-**No backorders**		| Identify if the trading partner accepts backorders. <br> Note: Copied from the trading partner setup **No backorders** and used on the **Customer purchase order acknowledgement** to identify full or partial shipments. 			 | Trading partner
-<ins>**Status**</ins>		
-**POA status**			| Current purchase order acknowledgement status. This field is populated by the EDI module and not editable. Options are: <br> • **Pending** - The POA document setting **Lock order** is set to _Yes_ which makes the POA required but in this scenario haven’t been sent yet. <br> • **Sent** - The POA has been sent and a Confirmation is not required as POA document setting **PO confirmation required** is set to _No_. <br> •	**Confirm pending** - The POA has been sent and a Confirmation is required. POA document setting **PO confirmation required** is set to _Yes_. <br> • **POC received** - The Confirmation has been received from the Customer. | Doc setting, <br> POA and POC
-
-## Sales order EDI line fields
+## Purchase order EDI line fields
 ### EDI tab
-The following EDI fields have been added to the Sales order's Lines and is available on the **EDI** tab for the applicable sales order.
+The following EDI fields have been added to the Purchase order and Purchase agreement * Lines and is available on the **EDI** tab.
 
 **Field**			| **Description**                                       | **Populated by** 
 :--				    |:--                                                    |:--
-**Line number**			| EDI line number                                   | Original / Change
-**Store code**			| Store code for the individual line                | Original / Change
-**EDI item number**		| Item number as provided on EDI inbound document   | Original / Change
-**Order line change type**  | If the order line was added or updated by a customer purchase order change, the [Order line change type](../SETUP/CUSTOMER%20SETUP/Order%20line%20change%20type%20group.md#setup-order-line-change-type-group) will be displayed. Some examples: <br> • **Add additional item** - The line has been added by a change <br> • **Price change** - The sales line's unit price has been updated by a change <br> • **Delete items** - The sales line's deliver remainder has been cancelled by a change  | Change
+**Line number**     | EDI line number
+**Original ordered quantity**   | Purchase quantity sent on original EDI purchase order                     | Original purchase order
+**Change ordered quantity**     | Purchase quantity sent on latest change EDI purchase order. <br> Note: Any receipts are deducted on the purchase quantity sent, it only contains the ‘deliver remainder’ at the moment of generating the order change.                              | Change purchase order
+**Original line amount**        | Net line amount excluding tax sent on original EDI purchase order         | Original purchase order
+**Change line amount**          | Net line amount excluding tax sent on latest change EDI purchase order    | Change purchase order
+**Original effective date**     | Effective date sent on original EDI purchase order                        | Original purchase agreement
+**Change effective date**	    | Effective date sent on latest change EDI purchase order                   | Change purchase agreement
+**Original expiration date**	| Expiration date sent on original EDI purchase order                       | Original purchase order
+**Change expiration date**	    | Expiration date sent on latest change EDI purchase order                  | Change purchase agreement
 
-### POA resonse tab
-The following EDI fields have been added to the Sales order's Lines and is available on the **POA resonse** tab. <br>
-After selecting the applicable sales order, the following details available are: 
-- Customer - Customer purchase order values
-Once the Customer purchase order acknowledgement (POA) has been sent, these following values are populated:
-- Acknowledged - Acknowledged value sent on the customer purchase order acknowledgement
-- Customer code - The customer's mapped value for the response as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md)
-- Auto triggered - Indicates if the acknowledgement was auto triggered else it was manually set by a user.
+
+### EDI acknowledgement tab
+The following EDI fields have been added to the Purchase order's Lines and is available on the **EDI acknowledgement** tab. <br>
+After selecting the applicable purchase order, the following details available are: 
+- EDI order - D365 purchase order values
+Once the Vendor purchase order acknowledgement (POA) have been processed, the following values are populated:
+- Acknowledged - Acknowledged value received on the vendor purchase order acknowledgement
+- Acknowledgement response - The vendor's POA response for the purchase order line
+- Confirmation - The confirmation response sent to vendor in response to the purchase order akcnowledgement
+- Auto triggered - Indicates if the confirmation was auto triggered else it was manually set by a user on the Confirmation button on the EDI Action Pane
 
 Example:
-<br>		| **Customer**	| **Acknowledged**	| **Customer code**			| **Auto triggered**
-:--		|:--		|:--			|:--					|:--		
-**Net Price**	| 40		| 41			| PA (Line price – advise)		| Yes
-**Quantity**	| 100		| 100			| IA (Line item – accept)		| Yes
-**Shipment**	|		|			| SF (Line shipment – full)		| Yes
-**Pack**	|		| 8			| PD (Line item – pack difference)	| Yes
-**Inner**	| 6		| 6			| LIA (Line item – inner accept)	| Yes
+<br>		| EDI order	        | Acknowledged	    | Acknowledgement response	        | Confirmation	    | Auto triggered
+|-          |-                  |-                  |-                                  |-                  |-
+**Date**    | 4/12/2019	        | 5/12/2019	        | Header- accepted with reserved    |		            | 
+**Price**	| 40	            | 41	            | Line price – advise	            | 41	            | Yes
+**Quantity**| 100	            | 100	            | Line item – accept	            | 100	            | Yes
+**Shipment**|                   |                   | Line shipment – full		        |                   | Yes
+**Pack**	| 10	            | 8	                | Line item – pack difference	    | 10	            | Yes
+**Inner**	| 6	                | 6	                | Line item – inner accept	        | 6	                | Yes
+
 
 #### Auto triggered
-POA response's auto triggered values are calculated by:
-- **Net price**: Customer purchase order document setting profile **Use customer price**:
-    - **Yes** - EDI order line's unit price 
-    - **No** - System calculated unit price for the customer and item combination
-- **Quantity**: Customer purchase order acknowledgement document setting profile **Quantity type**:
-    - **Customer quantity** - EDI order line's quantity
-    - **Reserved quantity** - Sales order line's reserved quantity
-- **Shipment**: Will there be more shipments for the order line. **POA code** for [POA responde code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md):
-    - **Line shipment - full** - Full EDI order line quantity is reserved on the sales order line or Trading partner setting **No backorders** is set to _Yes_. 
-    - **Line shipment - partial** -  Partial EDI order line quantity is reserved for the sales order line, or the **Customer purchase order acknowledgement** document setting profile **Quantity type** is set to use _Customer quantity_.
-- **Pack**: Customer purchase order acknowledgement document setting profile **Pack type**
-    - **Customer pack** - EDI order line's **Customer pack**
+Confirmation response's auto triggered values are calculated by:
+- **Date**: Not auto trigger option, uses Purchase order header's **Confirmed delivery date**
+- **Price**: Vendor purchase order acknowledgement document setting profile **Use vendor price**:
+     - **Yes** - acknowledged line's unit price
+     - **No** - System calculated unit price for the vendor and item combination
+- **Quantity**: Purchase order line's quantity
+- **Shipment**: Will the original order quantity be shipped in full:
+    - **Line shipment - full** - Full D365 purchase order line quantity has been acknowledged 
+    - **Line shipment - partial** -  Partial D365 purchase order line quantity has been acknowledged
+- **Pack**: Vendor purchase order acknowledgement document setting profile **Confirmed pack**
+    - **Vendor pack** - EDI purchase order acknowledgement line's **Pack quantity**
     - **System pack** - Purchase order acknowledgement document setting profile **Package size - inner/outer** determines if the inner or outer unit determines the system pack. Example: Product has an outer unit of box and inner unit of ea with an unit conversion of 10 between the two units. For an order of 200 ea, the results for system pack would be the following if **Package size - inner/outer** is set to: <br> • Inner: 200 <br> • Outer: 200/10 = 20
-- **Inner**: Customer purchase order acknowledgement document setting profile **Inner type**:
-    - **Customer inner** - EDI order line's **Customer inners**
-    - **System inner** - Products's unit conversion between **Outer unit** and **Inner unit**  as setup on EDI FasTab on Product
+- **Inner**: Vendor purchase order acknowledgement document setting profile **Confirmed inner**:
+    - **Vendor inner** - EDI purchase order acknowledgement line's **Inners quantity**
+    - **System inner** - Products's unit conversion between **Outer unit** and **Inner unit** as setup on EDI FasTab on Product
