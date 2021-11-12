@@ -69,7 +69,6 @@ The following EDI fields have been added to the Purchase order and Purchase agre
 - Original / Change - Vendor purchase order staging record, but can be updated by change purchase order staging record 
 - POA - Vendor purchase order acknowledgement staging record
 - Trading partner - Vendor trading partner
-- Doc setting - Vendor purchase order document setting profile
 - EDI calc - Calculated by EDI
 
 **Field**			| **Description**		| **Populated by** 
@@ -104,16 +103,16 @@ The following EDI fields have been added to the Purchase order and Purchase agre
 The following EDI fields have been added to the Purchase order and Purchase agreement * Lines and is available on the **EDI** tab.
 
 **Field**			| **Description**                                       | **Populated by** 
-:--				    |:--                                                    |:--
+:--			     |:--                                                    |:--
 **Line number**     | EDI line number
 **Original ordered quantity**   | Purchase quantity sent on original EDI purchase order                     | Original purchase order
 **Change ordered quantity**     | Purchase quantity sent on latest change EDI purchase order. <br> Note: Any receipts are deducted on the purchase quantity sent, it only contains the ‘deliver remainder’ at the moment of generating the order change.                              | Change purchase order
 **Original line amount**        | Net line amount excluding tax sent on original EDI purchase order         | Original purchase order
 **Change line amount**          | Net line amount excluding tax sent on latest change EDI purchase order    | Change purchase order
 **Original effective date**     | Effective date sent on original EDI purchase order                        | Original purchase agreement
-**Change effective date**	    | Effective date sent on latest change EDI purchase order                   | Change purchase agreement
-**Original expiration date**	| Expiration date sent on original EDI purchase order                       | Original purchase order
-**Change expiration date**	    | Expiration date sent on latest change EDI purchase order                  | Change purchase agreement
+**Change effective date**	  | Effective date sent on latest change EDI purchase order                   | Change purchase agreement
+**Original expiration date**	  | Expiration date sent on original EDI purchase order                       | Original purchase order
+**Change expiration date**	  | Expiration date sent on latest change EDI purchase order                  | Change purchase agreement
 
 
 ### EDI acknowledgement tab
