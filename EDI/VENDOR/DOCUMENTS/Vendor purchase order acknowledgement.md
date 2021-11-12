@@ -96,7 +96,7 @@ At this step the issues are usually around the file not matching the template.
 Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
 
 ## Step 3 - Staging to target
-If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and D365 target (D365 purchase order) won't be updated
+If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the acknowledgement won't be created on the target D365 purchase order.
 
 #### Possible issues and fixes
 **Staging to target** errors for Vendor purchase order acknowledgements can be viewed in:
@@ -113,21 +113,16 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example header errors:
 **Error message**       | **Error type**         | **Method to fix**
 :---------------------- |:----                   |:----
-Could not find address for store code '%'	| Store code not found    | Add/update existing Customer address with store code in: <br> • [**Trading partners**](../SETUP/Trading%20partner.md) page at **EDI > Setup > Trading partners**, or <br> • Customers page at **Accounts receivable > Customers > All customers**
-Field 'Agreement classification' must be filled in | Processing error       | **EDI > Setup > Document types**. Select applicable **Agreement classification** on Customer purchase order document **Setting profile** in [**Document types**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md)
-Inventory dimension Site is mandatory and must consequently be specified.   | Processing error    | **Accounts receivable > Customers > All customers**. Setup default site or warehouse on the customer or if no default, the original EDI file needs to include these details.  
-The entered receipt date ‘%’ is not valid because it is before today.       |  Processing error   | **EDI > Documents > Customer documents > Customer purchase order**. Edit requested receipt date in the staging page.
-Sales Agreement for customer '%', purchase number ‘%’ not found     |  Order not found 	| Received a Release order referring to Sales agreement that could not be found for the Customer. <br> 1. **EDI > Setup > Docuemnt types** or **EDI > Setup > Trading partners**. If sales agreement is not required, either update document setting **Create release order without blanket order**’ to _Yes_ or assign the correct Setting on the Trading partner. <br> 2. If blanket order is required, create/import the sales agreement or fix the **Customer requisition** on existing sales agreement (if D365 incorrect) or on the staging record (if staging incorrect).
-Invalid order type  | Order type not found          | Review the staging record's **EDI order type** is mapped in the [**Customer EDI order types**](SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) assigned to the Trading partner.
-Purchase order '%' already exists on sales order '%'  | Order duplicate    | The document setting **Duplicate tolerance** doesn't allow duplicate orders. If duplicates are allowed for flagged orders, update the **Bypass duplicate check** on the Sales order hearder under the **EDI** FastTab.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-### Staging line validation - Sales order
+### Staging line validation - Purchase order acknowledgement
 
-![alt text](../IMAGE/LineChecks_CustomerPO.png "Line checks for Customer purchase order")
+![alt text](../IMAGE/ItemChecks_VendorPOA.png "Item checks for Vendor purchase order acknowledgement")
 
-**Rule Id**                 | **Details**               
-:---                        |:---                 
-**No Valid Item**           | No valid item based on the different options available
+**Rule Id**                 | **Details**                                               | Error    
+:---                        |:---                                                       |:---              
+**PO line number**          | Find the D365 purchase order line number to which the POA line belongs    | Error at Staging table. <br> No target POA created
+**No Valid Item**           | No valid item based on the different options available    | Error at Staging table. <br> No target POA created
 
 #### Possible issues and fixes
 **Staging to target** errors for Customer purchase order can be viewed in:
