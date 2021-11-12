@@ -84,9 +84,9 @@ If the processing of **Import to staging** errors, the Inbound file's **Status**
 **Check Template**  |	Identify a template for the Vendor/Document type. This will be used to identify the whereabouts of data within the file
 
 #### Possible issues and fixes
-**Import to staging** errors for Customer purchase orders can be viewed in:
+**Import to staging** errors for Vendor purchase order acknowledgements can be viewed in:
 - **EDI > Files > Inbound files** filtered to **Status** set to _Error_
-- **EDI > Document maintenance**, tab **Customer documents**, tile **File import errors**
+- **EDI > Document maintenance**, tab **Vendor documents**, tile **File import errors**
 
 At this step the issues are usually around the file not matching the template.
 - Does the file have the correct template assigned (General tab, field **Template**):
@@ -96,23 +96,13 @@ At this step the issues are usually around the file not matching the template.
 Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
 
 ## Step 3 - Staging to target
-If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and no D365 target created i.e. sales order, sales agreement or release order is created.
-
-### Staging header validation - Sales order
-There are various **Order types** that can be processed via the purchase order document. These order types can be specified in **Trading partners** Options and will change the way the record is processed. <br>
-
-> Note: Expectation is the customer sends price _inclusive of discounts_. 
-
-**Rule Id**                 | **Details**               
-:---                        |:---                       
-**Check Order type**	    | Check the **EDI order type** field on the staging record, which indicates whether the record should create a sales order, sales agreement (blanket order) or release order.
-**Duplicate PO number**     | Check the customer purchase order rules to validate the purchase order is valid. If document setting **Duplicate tolerance** doesn’t allow duplicates. If duplicates are allowed, a new D365 Sales order will be created with the same Customer requisition.
+If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and D365 target (D365 purchase order) won't be updated
 
 #### Possible issues and fixes
-**Staging to target** errors for Customer purchase order can be viewed in:
-- **EDI > Documents > Customer purchase order** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **Customer documents**, tile **Purchase order errors**
-- **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO**
+**Staging to target** errors for Vendor purchase order acknowledgements can be viewed in:
+- **EDI > Documents > Vendor documents > Vendor purchase order acknowledgement** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **Vendor documents**, tile **Purchase order acknowledgement errors**
+- **EDI > Document maintenance**, tab **Vendor documents**, **Documents** page, tab **POA**
 
 At this step the issues are usually around mapping/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
