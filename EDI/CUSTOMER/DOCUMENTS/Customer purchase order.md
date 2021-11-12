@@ -33,8 +33,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 The following setup is prerequisites for the customer purchase order
 
 1. If required to put sales orders on hold till the purchase order confirmation has been received, assign the applicable hold code to [POC pending hold code](../SETUP/CUSTOMER%20SETUP/Hold%20codes.md) in EDI parameters.
-2. Create [Purchase order types](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md)
-3. Create [Order purpose groups](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md)
+2. Create [Purchase order types](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) to map the customer's values to EDI purchase order types.
+3. Create [Order purpose groups](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md) to map the customer's values to EDI order purpose groups.
 4. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
 5. Create [Setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md) for the document.
 6. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order.md) for the document.
