@@ -83,8 +83,8 @@ The following EDI fields have been added to the Purchase order and Purchase agre
 **Change order date**		| The date the latest change purchase order version was created is shown here	| Change
 **Requester**               | Requester sent on outbound EDI purchase order                                 | Original
 **Buyer group**             | Buyer group sent on outbound EDI purchase order                               | Original
-**Order type**              | The EDI order type is shown here                                              | Original
-**Order purpose code**      | Latest order purpose code is shown here: <br> • **Original** - Only the original/one EDI purchase order has been sent <br> •	**Change** - Last EDI message sent was a Purchase order change <br> •	**Confirmation** - Last EDI message sent was a Confirmation for a Purchase order acknowledgement <br> •	**Cancellation** - Last EDI message sent was a Cancellation for the PO  | Change
+**Order type**              | The EDI order type is shown here                                              | Original 
+**Order purpose code**      | Latest order purpose code is shown here: <br> • **Original** - Only the original/one EDI purchase order has been sent <br> •	**Change** - Last EDI message sent was a Purchase order change <br> •	**Confirmation** - Last EDI message sent was a Confirmation for a Purchase order acknowledgement <br> •	**Cancellation** - Last EDI message sent was a Cancellation for the PO  | Original / Change 
 **Bill to**                 | Our account number (as loaded on Vendor’s Invoice account)                    | Original
 **Ship to**                 | Our account number (as loaded on Vendor’s Order account)                      | Original
 <ins>**Delivery**</ins>	
