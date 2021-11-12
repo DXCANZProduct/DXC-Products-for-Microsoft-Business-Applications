@@ -57,30 +57,49 @@ All the EDI staging records applicable to the Purchase order can be viewed via t
 :--				|:--
 **EDI Document type**		| EDI document type of the staging record
 **EDI number**			| EDI number and link to the staging record
-**Reference**			| Additional information for the staging record, examples: <br> <ins>Inbound</ins> <br> • **Original** – First vendor purchase order sent. Only available via Vendor purchase order document <br> • **Change** – Subsequent change/s to the order. Only available via Vendor purchase order change document. <br> • **Cancel** – Cancellation received. Can be received via Customer purchase order (if **EDI parameters > Allow historic PO types** is enabled) or Customer purchase order change document <br> • **Confirmation** – Confirmation received. Can be received via Customer purchase order (if **EDI parameters > Allow historic PO types** is enabled) or Customer purchase order change document. <br> <ins>Outbound</ins> <br> • **C** - Purchase order acknowledgement response <br> • **ASN345435** – D365 Packing slip for the EDI ASN <br> • **IN4734743** – D365 Sales Invoice number for the EDI record.
+**Reference**			| Additional information for the staging record, examples: <br> <ins>Outbound</ins> <br> • **Original** – First vendor purchase order sent <br> • **Change** – Subsequent change/s to the purchase order <br> • **Cancel** – Cancellation sent • **Confirmation** – Confirmation sent for vendor's purchase order acknowledgement <br> <ins>Inbound</ins> <br> • **Header - accept** - Vendor's purchase order acknowledgement response <br> • **ASN345435** – Packing slip as per vendor’s advanced shipping notice <br> • **IN4734743** – Invoice number as per vendor’s purchase invoice
 **Created date and time**	| Created date and time of the EDI staging record
 
 ## Purchase order EDI header fields
 
 The following EDI fields have been added to the Purchase order's Header and is available on the EDI fast tab. <br>
 **Populated by** will indicate if the field is populated by:
-- Original - Customer purchase order staging record
+- Original - Purchase order staging record
 - Change - Change purchase order staging record
-- Original / Change - Customer purchase order staging record, but can be updated by change purchase order staging record 
-- Trading partner - Customer trading partner
-- Original / Trading partner - Customer purchase order staging record, but if blank populated by Trading partner
-- Doc setting - Customer purchase order document setting profile
+- Original / Change - Vendor purchase order staging record, but can be updated by change purchase order staging record 
+- POA - Vendor purchase order acknowledgement staging record
+- Trading partner - Vendor trading partner
+- Doc setting - Vendor purchase order document setting profile
+- EDI calc - Calculated by EDI
 
 **Field**			| **Description**		| **Populated by** 
 :--				|:--				|:--							  	
 <ins>**Identification**</ins>		
-**Original EDI number**		| EDI Customer purchase order staging table record id			| Original	
-**Change EDI number**		| Latest EDI Customer purchase order change staging table record id	| Change
+**Original EDI number**		| EDI Vendor purchase order staging table record id			| Original	
+**Change EDI number**		| Latest EDI Vendor purchase order change staging table record id	| Change
 **Company GLN**			| The company’s global location number is shown here.			| Original
-**Customer GLN**		| The customer’s global location number is shown here. <br> Populated by staging's Customer GLN, if staging blank populated by Trading partner | Original / Trading partner
+**Trading partner GLN**		| The vendor’s global location number is shown here         | Trading partner
 <ins>**General**</ins>		
-**Original order date**		| The purchase order date from the EDI order is shown here		| Original
-**Change order date**		| The purchase order date from the EDI order change is shown here	| Change
+**Original order date**		| The date the original purchase order version was created is shown here		| Original
+**Change order date**		| The date the latest change purchase order version was created is shown here	| Change
+**Requester**               | Requester sent on outbound EDI purchase order                                 | Original
+**Buyer group**             | Buyer group sent on outbound EDI purchase order                               | Original
+**Order type**              | The EDI order type is shown here                                              | Original
+**Order purpose code**      | Latest order purpose code is shown here: <br> • **Original** - Only the original/one EDI purchase order has been sent <br> •	**Change** - Last EDI message sent was a Purchase order change <br> •	**Confirmation** - Last EDI message sent was a Confirmation for a Purchase order acknowledgement <br> •	**Cancellation** - Last EDI message sent was a Cancellation for the PO  | Change
+**Bill to**                 | Our account number (as loaded on Vendor’s Invoice account)                    | Original
+**Ship to**                 | Our account number (as loaded on Vendor’s Order account)                      | Original
+<ins>**Delivery**</ins>	
+**Site**                    | The Site from the latest EDI purchase order is shown here                     | Original / Change
+**Warehouse**               | The Warehouse from the latest EDI purchase order is shown here                | Original / Change
+**Delivery date**           | The requested receipt date of the latest EDI purchase order is shown here     | Original / Change
+<ins>**Version**</ins>	
+**Original version number** | The D365 purchase order version number that generated the original EDI order record | Original
+**Change version number**   | The D365 purchase order version number that generated the latest change EDI order record    | Change
+**Acknowledged version number** | The version number acknowledged as per Vendor’s last Purchase order acknowledgement     | POA
+**Acknowledgement status**  | Current status for purchase order acknowledgement and confirmation. <br> Available options: <br> • **Blank** – No purchase order acknowledgement required <br> •	**Acknowledgement pending** – Purchase order acknowledgement required and still pending <br> •	**Acknowledgement received** – Purchase acknowledgement received, and purchase order confirmation not required. Acknowledgement/confirmation process is complete <br> •	**Confirmation pending** – Purchase acknowledgement received, and purchase order confirmation required and still pending <br> •	**Confirmation sent** – Purchase order confirmation has been sent. Acknowledgement/confirmation process is complete | EDI calc
+**Acknowledgement status date** | Date of current Acknowledgement status        | EDI calc
+
+
 **Advertisement date**		| The advertisement date applicable for the order			| Original
 **Package characteristic code**	| The code used to for the package contents				| Original
 **Package label code**		| The code used for the label						| Original
