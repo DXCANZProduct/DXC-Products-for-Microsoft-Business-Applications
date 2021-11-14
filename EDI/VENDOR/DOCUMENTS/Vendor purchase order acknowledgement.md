@@ -117,7 +117,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ### Staging line validation - Purchase order acknowledgement
 
-![alt text](../IMAGE/ItemChecks_VendorPOA.png "Item checks for Vendor purchase order acknowledgement")
+![alt text](../IMAGE/LineChecks_VendorPOA.png "Item checks for Vendor purchase order acknowledgement")
 
 **Rule Id**                 | **Details**                                               | Error    
 :---                        |:---                                                       |:---              
