@@ -379,7 +379,7 @@ The **Acknowledgement** tab is available on all incoming documents staging pages
 ### Header fields
 The following EDI Header staging fields are available on the header page.
 
-**Field**	            | **Description**	                                    | **D365 PO updates**
+**Field**	            | **Description**	                                    | **D365 PO update**
 :---                    |:---                                                   |:---
 <ins>**Identification FastTab**</ins>
 <ins>**Identification**</ins>		
@@ -463,57 +463,77 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Transportation**</ins>		
 **Shipping carrier**        | Shipping carrier	
 **Carrier qualifier**       | Code designating the system/method of code structure used for shipping carrier	
-**EDI carrier mode**        | Code specifying the method or type of transportation for the shipment. Mapped value setup in [Carrier mode](../SETUP/VENDOR%20SETUP/Carrier%20mode.md)
+**EDI carrier mode**        | Code specifying the method or type of transportation for the shipment. Mapped value setup in [Carrier mode](../SETUP/VENDOR%20SETUP/Carrier%20mode.md).
 <ins>**Miscellaneous**</ins>		
-**Misc. indicator**         | Code which indicates an allowance or charge for the service specified. Mapped value setup in [Misc charge/allowance indicator](../SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md)
-EDI charges code	Code identifying the service, promotion, allowance, or charge. Mapped value setup in [Charges code](../SETUP/VENDOR%20SETUP/Charges%20code.md)	
+**Misc. indicator**         | Code which indicates an allowance or charge for the service specified. Mapped value setup in [Misc charge/allowance indicator](../SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md).
+EDI charges code	Code identifying the service, promotion, allowance, or charge. Mapped value setup in [Charges code](../SETUP/VENDOR%20SETUP/Charges%20code.md).
 <ins>**Totals**</ins>
-Subtotal amount	Subtotal of all purchase order lines	
-Line discount	Discount for all purchase order lines	
-Misc. amount	Purchase order header Misc. charge/allowance amount	
-Tax amount	Tax amount	
-Round-off	Round-off	
-Total amount	Total amount	
-Payment		
-Currency	Currency	
-Terms code	Payment terms (Setup payment terms type group)	
-Terms net days	Payment terms net due days calculated from delivery date
-Example with delivery date 16/04/2019
-•	Current month + 30 days = 44
-•	Current month + 2 months + 20 days and payment day = 15th = 90
-•	Current quarter + 15 days = 90
-•	Current year + 1 month = 290
-•	Current week + 7 days = 11
-•	Net + 1 month + 15 days = 45
-•	COD = 0	
-Cash discount	Settlement discount percentage	
-Days	Settlement days	
-Discount amount	Settlement discount amount if paid within settlement days	
+**Subtotal amount**         | Subtotal of all purchase order lines	
+**Line discount**           | Discount for all purchase order lines	
+**Misc amount**             | Purchase order header misc. charge/allowance amount	
+**Tax amount**              | Tax amount	
+**Round-off**               | Round-off	
+**Total amount**            | Total amount	
+<ins>**Payment**</ins>                 
+**Currency**                | Currency	
+**Terms code**              | Payment terms. Mapped value setup in [Payment terms type group](../SETUP/VENDOR%20SETUP/Payment%20terms%20type%20group.md).
+**Terms net days**          | Payment terms net due days
+**Cash discount**           | Settlement discount percentage	
+**Days**                    | Settlement days	
+**Discount amount**         | Settlement discount amount if paid within settlement days	
 
 
 ### Line fields
-The following EDI Line fields are available on the lines page.
+The following EDI Line fields are available on the lines page. <br> 
+If update to purchase order line is allowed, column **D365 PO line update** indicates what field could be updated by the POA.
 
-**Field**                   | **Description**                                                           | **Target D365 field**
+**Field**                   | **Description**                                                           | **D365 PO line update**
 :---                        |:---                                                                       |:---
-**Line number**             | The line within the EDI table/file	                                    | Sales Line > EDI > General > Line number
-**Item number**             | The item identifier as sent by the trading partner. 	| Sales line > EDI > General > EDI Item number <br> When document type setting **Item Id source** is: <br> • **Our item number** or <br> • **External item number** <br> used to determine: Sales line > Item number
-**Bar code**                | The item identifier as sent by the trading partner. 	| When document type setting **Item Id source** is: <br> • **GTIN** or <br> • **Barcode** <br> used to determine: Sales line > Item number
-**SKU**                     | SKU for item	
-**Unit Price**              | Customer unit price inclusive of discounts (net price)	                | Sales line > Unit price <br> If document setting **Use customer price** is set to _Yes_
-**Customer sales quantity** | The customer order quantity for this line.	                            | Sales line > EDI > POA response > Customer > Quantity
-**Unit**                    | The customer unit of measure for this line.
-**Line amount excluding tax**   | The total line amount excluding tax.	                                | Sales line > Unit price <br> If document setting's **Use customer price** is set to _Yes_ AND <br> Staging **Unit price** is blank AND <br> document setting's **Prices include GST** is set to _No_: <br> Sales line **Unit price** is calculated by **Line amount excluding tax** / **Customer sales quantity**
-**Line amount including tax**   | The total line amount including tax (if provided else 0)	            | Sales line > Unit price <br> If document setting's **Use customer price** is set to _Yes_ AND <br> Staging **Unit price** is blank AND <br> Document setting's **Prices include GST** is set to _Yes_: <br> Sales line unit price is calculated by **Line amount including tax** / **Customer sales quantity**
-**Customer inners**         | The customer’s inners per outer quantity	                                | Sales line > EDI > POA response > Customer > Inner
-**Customer pack**           | The customer’s pack quantity	                                            | Sales line > EDI > POA response > Customer > Pack
-**Configuration** <br> **Colour**  <br> **Size** <br> **Style**  | Inventory dimension - Configuration <br> Inventory dimension - Colour <br> Inventory dimension - Size <br> Inventory dimension - Style   | Sales line > Inventory dimension <br> If Item id Source <> Our item number and the External item number/ GTIN/Barcode is unique per variant, the customer doesn’t have to provide Variant details and EDI will find and populate the inventory dimensions on the sales line.
-**Site**                    | Storage dimension - Site	                                                | Sales line > Site <br> If staging blank will be populated by Sales order Header. If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
-**Warehouse**               | Storage dimension - Warehouse	                                            | Sales line > Warehouse <br> If staging blank will be populated by Sales order Header. If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
-**Store code**              | The store code from the EDI saging line is shown here.	                | Sales line > EDI > General > Store code <br> EDI supports different store codes on line level
+**Line number**             | The line within the EDI table/file. Refers to original purchase order EDI line number and used in matching	
+**Item number**             | The item identifier as sent by the trading partner	
+**POA code item**           | Purchase order acknowledgement code for the item, for example line price - advise.
+**POA code shipment**       | Purchase order acknowledgement code for shipment of the item, for example partial/full shipment.
+**Description**             | Purchase order line text	
+**Purchase quantity**       | Acknowledged purchase quantity	                                        | Deliver remainder quantity. Will be converted if POA unit doesn't match PO unit. <br> EDI acknowledgement tab > Acknowledged quantity
+**Unit**                    | Unit of measure of purchase quantity                                      | Used in unit conversion (if applicable) for quantity and unit price
+**Price unit**              | The quantity of the product that is covered by the purchase price. Usually 1. | Used in unit price calculation
+**Price multiplier**        | Value to be used to obtain a new value. NetUnitPrice/UnitPrice. Example price before discount $100 and after discount $90 has a price multiplier of 0.9	
+**Includes GST**            | Unit prices and unit discounts includes GST	
+**Unit price**              | Unit price for the item	                                                | POA unit price/POA price unit = D365 PO line unit price. Will be converted if POA unit doesn't match PO unit. <br> EDI acknowledgement tab > Acknowledged price 
+**Unit discount**           | The amount of the line discount per price unit	
+**Unit discount percentage**    | Discount percentage	
+**Net unit price**          | Unit price net of all discounts	
+**Charges on purchases**    | The purchase charge that is calculated as a charge that is independent of the quantity on the purchase order line	
+**Misc charges**	        | Miscellaneous charge/allowance allocated to purchase order line	
+**Line amount excluding tax**   | Net line amount excluding tax	
+**Line amount tax**         | Line amount tax	
+**Line amount including tax**   | Net line amount including tax	
+**Currency**                | Currency	
+**Inners quantity**         | Unit conversion quantity of inners to outers. <br> Example qty 12 ea (inner) per box (outer)	    | EDI acknowledgement tab > Acknowledged inner
+**Inners unit**             | Inners unit of measure as setup on item’s [pack size](../../CORE/Setup/Item%20pack%20sizes.md)    | 
+**Pack quantity**           | Package quantity	                                                                                | EDI acknowledgement tab > Acknowledged pack
+**Pack unit**	            | Package unit of measure	
+**Configuration**           | Inventory dimension - Configuration	
+**Color**                   | Inventory dimension - Colour	
+**Size**                    | Inventory dimension - Size	
+**Style**                   | Inventory dimension - Style	
+**Site**                    | Storage dimension - Site	
+**Warehouse**               | Storage dimension - Warehouse	
+**Requested receipt date**  | The requested receipt date	
+**Accepted delivery date**  | Vendors accepted delivery date	                                                                | EDI acknowledgement tab > Acknowledged date
+**Requester**               | Requester	
+**Attention information**   | Attention information	
 **Delivery name**           | Address for Delivery – Delivery name	
-**Requested ship date**     | The requested ship date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested ship date <br> If staging blank will be populated by Sales order Header
-**Requested receipt date**  | The requested receipt date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested receipt date <br> If staging blank will be populated by Sales order Header
-
-
+**Name or description**     | Ship to – Name or description	
+**Street number**           | Ship to - Street number	
+**Street**                  | Ship to - Street	
+**City**                    | Ship to - City	
+**County**                  | Ship to - County	
+**State**                   | Ship to - State	
+**ZIP/postal code**         | Ship to - ZIP/postal code	
+**Country/region**          | Ship to - Country/region	
+**Store code**              | Ship to - Store code	
+**Batch number**            | Batch number for the item	
+**Manufacturing date**      | Vendor’s manufacturing date for the batch	
+**Expiration date**         | Vendor’s expiration date for the batch	
 
