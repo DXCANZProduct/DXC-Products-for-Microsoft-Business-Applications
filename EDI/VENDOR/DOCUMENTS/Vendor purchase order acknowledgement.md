@@ -35,7 +35,7 @@ The following subsections will describe how to view, process the acknowledgement
 The Acknowledgement can be viewed from the [Purchase order](#purchase-order) and confirmation values will be populated with default values per Trading partner.<br>
 The Confirmation can be either [manually](#manually-processing-purchase-order-acknowledgement) processed or [automatically](#automatically-processing-purchase-order-acknowledgement). <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
-The received purchase order acknowledgement and sent confirmation record(s) can be viewed for a purchase order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Purchase order page.<br>
+The processed purchase order acknowledgement and sent confirmation record(s) can be viewed for a purchase order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Purchase order page.<br>
 
 ## Prerequisites
 The following setup is prerequisites for the vendor purchase order acknowledgement
