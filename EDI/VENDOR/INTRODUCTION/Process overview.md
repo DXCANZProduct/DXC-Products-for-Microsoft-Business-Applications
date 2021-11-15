@@ -58,7 +58,7 @@ When the purpose is **Confirmation**, the following purchase order header fields
 ## Advanced shipping notice (ASN) and Purchase invoice process overview
 
 ### Advanced shipping notice (ASN)
-Based on [document settings](../SETUP/SETTING%20PROFILES/Vendor%20advanced%20shipping%20notice.md), the EDI ASN can either:
+Based on document settings, the EDI ASN can either:
 - Basic warehousing (Ship to warehouse is setup for basic warehousing):
     - Create arrival journal, but leave unposted
     - Create and post arrival journal
