@@ -125,10 +125,10 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 **No Valid Item**           | No valid item based on the different options available    | Error at Staging table. <br> No target POA created
 
 #### Possible issues and fixes
-**Staging to target** errors for Customer purchase order can be viewed in:
-- **EDI > Documents > Customer purchase order** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **Customer documents**, tile **Purchase order errors**
-- **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO**
+**Staging to target** errors for Vendor purchase order acknowledgement can be viewed in:
+- **EDI > Documents > Vendor purchase order acknowledgement** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **Vendor documents**, tile **Purchase order acknowledgement errors**
+- **EDI > Document maintenance**, tab **Vendor documents**, **Documents** page, tab **POA**
 
 At this step the issues are usually around setup/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
@@ -136,346 +136,196 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example line errors:
 **Error message**                     | **Error type**         | **Method to fix**
 :------------------------------------ |:----                   |:----
-Item not found: %	                  | Item not found         | **EDI > Documents > Customer documents > Customer purchase order** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's <br> [**Setting profile**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
+Item not found: %	                  | Item not found         | **EDI > Documents > Vendor documents > Vendor purchase order acknowledgement** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's <br> [**Setting profile**](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
 
-### Sales order header checks
+### Validation
 
-![alt text](../IMAGE/SalesOrderHeaderChecks_CustomerPO.png "Sales order header checks")
+[Validation profiles](../SETUP/VALIDATION%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
+-	**Info** - An infolog is displayed with information only, it is not identified as a warning
+-	**Warning** - An infolog is displayed with a warning. It is possible to carry on processing
+-	**Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error
 
-**Rule Id**             | **Details**
-:---                    |:---
-**Deadline date**       | A check of this date against the standard rules is required. (i.e. Dates are not historical)
+The following table describes each validation option for the Vendor purchase order akcnowledgement document. It also describes if the validation rule is not met, but only has an info or warning error tolerance, how the target D365 purchase order will be updated.
 
-### Staging line validation - Release order
-An EDI sales order and release order will usually be separated per Distribution Centre (DC) with a breakdown per store.  If it is received per DC, one sales order will be created with each sales order line having a ‘store code’ which is used to identify the final delivery destination. 
-
-![alt text](../IMAGE/LineChecks_CustomerReleaseOrder.png "Line checks for Customer release order")
-
-#### Settings
-Settings profiles can be specified and linked to the template which is used to determine how D365 will react.  Options are:
-
-**Setting**                                 | **Details**
-:---                                        |:---
-Create release order without blanket order	| The action taken when a release order is received without a D365 blanket order
-
-### Sales order line checks
-
-![alt text](../IMAGE/SalesOrderLineChecks_CustomerPO.png "Sales order line checks")
-
-**Rule Id**                                 | **Details**
-:---                                        |:---
-**Unit of measurement**                     | It should first check that this unit of measurement actually exists, a second check should be the measurement on the inventory table module for sales. If the Customer has a **UOM** mapping assigned, this will also be used to map their value to D365 value.
-**Unit price**                              | The unit price should be checked using the standard D365 pricing rules.  If the prices are slightly different it should check both the **Maximum positive and negative tolerance** and **Use customer price** flag on document's setting before giving an error/warning. Example: <br> Item X trade agreement price 10.25 <br> Item Y trade agreement price 8.88 <br> Customer has a min and max tolerance setting of 0.05 <br> Customer does not have their trade agreements entered including tax <br> Customer sends their EDI orders including tax <br> The setting use customer pricing is given <br> Item X EDI file price (before converting) 11.26 (after conversion) 10.24 <br> Item Y EDI file price (before converting) 9.70 (after conversion) 8.82 <br> Template setting against this field is warning. <br> A warning is only given for Item Y because it is outside of the tolerance. 
-**Check multiple**                          | The quantity should be devisable by the multiple specified on the customer multiple table, if there isn’t one then it check the sales multiple on the item table.  
-
-## View staging table records
-To view the Customer purchase order's staging records, go to **EDI > Documents > Customer documents > Customer purchase order**. 
-Use this page to review staging and process EDI Customer purchase order documents and convert into D365 Sales order, Sales agreement or Release order.
-
-### List page
-The following EDI fields are available on the list page.
-
-**Field**               | **Description**
-:---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
-**Company account**     | Legal entity of the document.
-**Company GLN**         | The company’s global location number is shown here.
-**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created a D365 Sales order, Sales agreement or Release order. • **Canceled** – The record has been manually canceled and will be excluded from processing.
-**Trading partner account**     | Customer account assigned to the staging record.
-**Trading partner GLN**         | The Customer’s global location number is shown here.
-**Customer Requisition**        | Customer's purchase order number to be populated in the Customer requisition field of the D365 Sales order header.
-**Purchase order date**         | The purchase order date from the EDI record is shown here.
-**EDI order type**              | The EDI order type is shown here.
-**EDI order purpose**           | The EDI order purpose is shown here. Receiving an Order purpose **Change** will error the staging record, since these should be sent as **Customer purchase order change** document. Only **Original**, **Confirmation** and **Cancellation** order purposes are allowed for **Customer purchase order** document.
-**Store code**                  | The store code from the EDI record is shown here.
-**Store zone**                  | The store zone from the EDI record is shown here.
-**Created Date and Time**       | The date and time the selected record was created in the staging table.
-**Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
-
-### Buttons
-The following buttons are available on the **Customer purchase order** Action Pane, tab **Purchase order import**.
-
-**Button**	                    | **Description**
-:---                            |:----
-**Process selected purchase orders** | Create D365 Sales order, Sales agreement or Release order for the selected record in the staging table.
-**Process all purchase order**	| Create all D365 Sales order, Sales agreement or Release order for the staging records that have a **Staging to target status** set to _Not started_. 
-**Inbound files**               | View the inbound file record the selected staging record.
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
-**Sales Order**	                | If the staging record has been completed it is possible to inquire on the **Sales order** or **Release order** it created from this button.
-**Sales agreement**             | If the EDI blanket order staging record has been completed it is possible to inquire on the **Sales agreement** it created from this button.
-**Customers**                   | Inquire on the Customer for the selected record.
-**Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
-**Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
-**Reset Status**                | You can reset the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
-**Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
-**Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
-
-The following buttons are available on the **Customer purchase order**'s Action Pane, tab **Acknowledgement**.
-The **Acknowledgement** tab is available on all incoming documents staging pages and enables the user to process or view the **Functional acknowledgement outbound** that has been created for the inbound document.
-
-**Button**	                    | **Description**
-:---                            |:----
-**Send to EDI**                 | If the **Sent** field for the staging record is set to _No_, use this button to create the **Functional acknowledgement outbound** record and also update the **Sent** field to _Yes._
-**Reset flag**                  | If the **Sent** field for the staging record has been set to _Yes_, use this button to reset **Sent** to _No_.
-**Functional acknowledgement**  | Use this button to view the **Functional acknowledgement outbound** record created for the inbound document.
-
-### Header fields
-The following EDI Header staging fields are available on the header page.
-
-**Field**	            | **Description**	                                    | **Target D365 field**
-:---                    |:---                                                   |:---
-<ins>**Identification**</ins>		
-**EDI number**          | EDI Staging table record id                           | Sales Order > EDI > Original EDI number
-**Company account**     | Legal entity of the document
-**Company GLN**         | The company’s global location number is shown here.   | Sales order > EDI > Company GLN <br> If the **Company GLN** staging field is blank, the Company GLN on the Trading partner will be used to populate the **Company GLN** on the Sales order header.
-**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created a D365 Sales order, Sales agreement or Release order. • **Canceled** – The record has been manually canceled and will be excluded from processing.
-<ins>**Reset status**</ins>		
-**Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
-**Reset status date/time**  | Next date/time automatic reset status will run	
-**Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
-**Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**Overview**</ins>	
-**Customer Requisition**    | Customers purchase order number to be populated in the Customer requisition field of the sales order header.	| Sales order > General > Customer requisition
-**Purchase order date**     | The purchase order date from the EDI record is shown here.    | Sales Order > EDI > Original order date
-**EDI order type**          | The EDI order type is shown here.	                            | Sales Order > EDI > EDI order type
-**EDI order purpose**       | The EDI order purpose is shown here. Receiving an Order purpose **Change** will error the staging record, since these should be sent as **Customer purchase order change** document. Only **Original**, **Confirmation** and **Cancellation** order purposes are allowed for **Customer purchase order** document.	
-**Store code**              | The store code from the EDI record is shown here.	            | Sales Order > EDI > Store code. <br> And used to populate Sales order delivery address
-**Store zone**              | The store zone from the EDI PO is shown here.	                | Sales Order > EDI > Store zone
-<ins>**General**</ins>	
-**Customer Requisition**    | Customers purchase order number to be populated in the Customer requisition field of the sales order header.	| Sales order > General > Customer requisition
-**Customer Reference**      | Customers purchase order reference to be populated in the Customer Reference field of the sales order header.	| Sales Order > General > Customer reference
-**Purchase order date**     | The purchase order date from the EDI record is shown here.    | Sales Order > EDI > Original order date
-**Currency**                | The currency of the order	                                    | Sales Order > Price and discount > Currency
-**Company GLN**             | The company’s global location number is shown here. 	        | Sales order > EDI > Company GLN <br> If the **Company GLN** staging field is blank, the Company GLN on the Trading partner will be used to populate the **Company GLN** on the Sales order header.
-**Customer GLN**            | The Customer’s global location number is shown here.  | Sales order > EDI > Customer GLN <br> If the **Trading partner GLN** staging field is blank, the Trading partner GLN on the Trading partner will be used to populate the **Customer GLN** on the Sales order header.
-**Buyer code**              | The customer’s buyer code from the EDI record is shown here.	| Sales Order > EDI > Buyer code
-**Retail buyer location**   | The customer’s retail buyer location from the EDI record is shown here.	| Sales Order > EDI > Retail buyer location code
-**Purpose code**            | The customer’s purpose code from the EDI record is shown here.	        | Sales Order > EDI > Purpose code
-**Department**              | The customer’s department from the EDI PO is shown here.	                | Sales Order > EDI > Department
-**Package characteristic code** | The code used to for the package contents.	                        | Sales Order > EDI > Package characteristic code
-**Package label code**      | The code used for the label.	                                            | Sales Order > EDI > Package label code
-**Advertisement date**	    | The advertisement date applicable for the order	                        | Sales Order > EDI > Advertisement date
-**Template Id**             | The EDI templates used to create the staging table record	                
-**PO version number**       | The PO version number from the EDI record.	                                | Sales Order > EDI > Original version number
-<ins>**Delivery**</ins>	
-**Delivery Name**           | Address for Delivery	                                                    | Sales Order > Delivery Address. If the store code wasn't used to populate sales order address.
-**Store zone**              | The store zone from the EDI record is shown here.	                        | Sales Order > EDI > Store zone
-**Store code**              | The store code from the EDI record is shown here.	                        | Sales Order > EDI > Store code
-**Name or description** <br> **Street number** <br> **Street** <br> **City** <br> **Suburb** <br> **State** <br> **Postcode** <br> **Country/region** |Address for delivery	 | Sales Order > Delivery Address <br> Store code populate in staging record: <br> •	**Y** – Determines Delivery address <br> •	**N** – EDI delivery address
-**Requested ship date**     | The requested ship date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested ship date and <br> Sales order > Requested ship date: If staging blank will be populated by Transport days
-**Requested receipt date**  | The requested receipt date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested receipt date <br> Sales order > Requested receipt date
-**Delivery time**           | The delivery time from the EDI record is shown here.                      | Sales Order > EDI > Delivery time
-
-### Line fields
-The following EDI Line fields are available on the lines page.
-
-**Field**                   | **Description**                                                           | **Target D365 field**
-:---                        |:---                                                                       |:---
-**Line number**             | The line within the EDI table/file	                                    | Sales Line > EDI > General > Line number
-**Item number**             | The item identifier as sent by the trading partner. 	| Sales line > EDI > General > EDI Item number <br> When document type setting **Item Id source** is: <br> • **Our item number** or <br> • **External item number** <br> used to determine: Sales line > Item number
-**Bar code**                | The item identifier as sent by the trading partner. 	| When document type setting **Item Id source** is: <br> • **GTIN** or <br> • **Barcode** <br> used to determine: Sales line > Item number
-**SKU**                     | SKU for item	
-**Unit Price**              | Customer unit price inclusive of discounts (net price)	                | Sales line > Unit price <br> If document setting **Use customer price** is set to _Yes_
-**Customer sales quantity** | The customer order quantity for this line.	                            | Sales line > EDI > POA response > Customer > Quantity
-**Unit**                    | The customer unit of measure for this line.
-**Line amount excluding tax**   | The total line amount excluding tax.	                                | Sales line > Unit price <br> If document setting's **Use customer price** is set to _Yes_ AND <br> Staging **Unit price** is blank AND <br> document setting's **Prices include GST** is set to _No_: <br> Sales line **Unit price** is calculated by **Line amount excluding tax** / **Customer sales quantity**
-**Line amount including tax**   | The total line amount including tax (if provided else 0)	            | Sales line > Unit price <br> If document setting's **Use customer price** is set to _Yes_ AND <br> Staging **Unit price** is blank AND <br> Document setting's **Prices include GST** is set to _Yes_: <br> Sales line unit price is calculated by **Line amount including tax** / **Customer sales quantity**
-**Customer inners**         | The customer’s inners per outer quantity	                                | Sales line > EDI > POA response > Customer > Inner
-**Customer pack**           | The customer’s pack quantity	                                            | Sales line > EDI > POA response > Customer > Pack
-**Configuration** <br> **Colour**  <br> **Size** <br> **Style**  | Inventory dimension - Configuration <br> Inventory dimension - Colour <br> Inventory dimension - Size <br> Inventory dimension - Style   | Sales line > Inventory dimension <br> If Item id Source <> Our item number and the External item number/ GTIN/Barcode is unique per variant, the customer doesn’t have to provide Variant details and EDI will find and populate the inventory dimensions on the sales line.
-**Site**                    | Storage dimension - Site	                                                | Sales line > Site <br> If staging blank will be populated by Sales order Header. If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
-**Warehouse**               | Storage dimension - Warehouse	                                            | Sales line > Warehouse <br> If staging blank will be populated by Sales order Header. If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
-**Store code**              | The store code from the EDI saging line is shown here.	                | Sales line > EDI > General > Store code <br> EDI supports different store codes on line level
-**Delivery name**           | Address for Delivery – Delivery name	
-**Requested ship date**     | The requested ship date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested ship date <br> If staging blank will be populated by Sales order Header
-**Requested receipt date**  | The requested receipt date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested receipt date <br> If staging blank will be populated by Sales order Header
-
-
-
-
-
+Rule Id	                | Details	                            | Info/Warning tolerance updates
+:--                     |:--                                    |:--
+<ins>**Purchase order header**</ins>
+**Reject**              | Vendor POA response: **Header – not accepted**. Vendor rejects the complete purchase order. <br> This validation can be used to manually manage Vendor rejections by adding this validation with an error tolerance.	| Cancel purchase order
+**Version**             | Validates that the vendor is responding to the current purchase order version	          | No update to D365 PO, only used for comparison
+**Delivery date**       | Vendor POA response: **Header – change**. <br> The Vendor’s POA delivery date doesn’t match the D365 PO's delivery date	| Update PO header's **Confirmed delivery date**
+**Vendor reference**    | Vendor POA’s Vendor reference doesn’t match the PO’s Vendor reference	                  | Update PO header's **Vendor reference**
+<ins>**Purchase order line**</ins>
+**Short pick**          | Vendor POA response: **Line shipment - partial**. <br> Acknowledgement qty is less than purchase order line qty. If the vendor’s unit differs, unit conversion is used to convert. | Update PO line's deliver remainder qty (use unit conversion if POA different unit).
+**Batch Id update**     | Where the batch id received is different to the batch id on the purchase order.	| If batch doesn’t exist for item, the batch is created and assigned to the purchase order line
+**Purchase price**      | Vendor POA response: **Line price advise**. <br> The vendor’s POA unit price should be checked using the purchase order unit price. <br> If the prices are slightly different it should check both the tolerance and ‘Use Vendor Price’ flag before giving an error/warning. Example: <br> Item X purchase order unit price 10.25 <br> Item Y purchase order unit price 8.88 <br> Vendor has a min and max tolerance setting of 0.05 <br> Purchase order prices are not including tax <br> Vendor sends their EDI POA including tax <br> The setting use vendor pricing is given <br> Item X EDI file price (before converting) 11.26 (after conversion) 10.24 <br> Item Y EDI file price (before converting) 9.70 (after conversion) 8.82. <br> Template setting against this field is warning. <br> A warning is only given for Item Y because it is outside of the tolerance. 	| Update PO line's purchase price (if within allowed variance): else error
+**Delivery date**       | The Vendor’s POA line delivery date doesn’t match the PO delivery date	    | Update PO line confirmed delivery date
+**Reject**              | Vendor POA response: **Line item – out of stock** <br> Vendor POA response: **Line item – withdrawn** <br> Vendor rejects the purchase order line	| Cancel purchase order line’s deliver remainder
+**Minimum/maximum quantity**    | The POA quantity should be devisable by the multiple specified on the Default/Site order settings table. <br> Use unit conversion if POA unit of measurement differs. Need to set to Error if not allowed to increase deliver remainder over purchase order line over-delivery%	| Update PO line deliver remainder. 
 
 
 ## Purchase order
-Users can access **All purchase orders** page by navigating to **Sales and marketing > Orders > All sales orders** and manage the EDI order's Acknowledgement's details by using the below buttons that have been added to the **EDI** tab on the Action Pane.
+Users can access **All purchase orders** page by navigating to **Accounts payable > Purchase orders > All purchase orders** and manage the EDI POA's Confirmation details by using the below buttons that have been added to the **EDI** tab on the Action Pane.
 
 Field	                  | Description
-:--                     |:--
-**Acknowledgement**     |	Select the **Acknowledgement** button to review order details for the POA. The details of this page will be discussed in below.
-**Send to EDI**         |	Select the **Send to EDI** button to create the **Customer purchase order acknowledgement** staging table record.
-**Reset flag**          |	Select the **Reset flag** button to reset the **EDI status** to allow for re-sending of the POA to the staging table. Note: The POA record on the staging table should be deleted manually before the sales order flag is reset.
+:--                       |:--
+**Confirmation**          |	Select the **Confirmation** button to review vendor's POA for the D365 PO. The details of this page will be discussed in below.
+**Send to EDI**           |	Select the **Send to EDI** button to create Purchase Order Confirmation (POC) staging table record. The button will only be available if a POA has been received from the Vendor.
+**Reset flag**            |	Select the **Reset flag** button to reset the **EDI status** to allow for re-sending of the POC to the staging table. Note: The POC record on the staging table should be deleted manually before the sales order flag is reset.
 
 ## Processing
-The POA can be sent [manually](#manually-processing-purchase-order-acknowledgement) or [automatically](#automatically-processing-purchase-order-acknowledgement) to the customer.
+The POC can be sent [manually](#manually-processing-purchase-order-confirmation) or [automatically](#automatically-processing-purchase-order-acknowledgement) to the customer.
 Both of these options will be discussed in the following subsections.
 
-### Manually processing Purchase order acknowledgement
-The **Acknowledgement** page is accessed by navigating to **Sales and marketing > Orders > All sales orders**, and selecting **Acknowledgement** on the **EDI** tab on the Action Pane.
+### Manually processing Purchase order confirmation
+The **Confirmation** page is accessed by navigating to **Accounts payable > Purchase orders > All purchase orders**, and selecting **Confirmation** on the **EDI** tab on the Action Pane.
+A list of outstanding confirmations can also be accessed by navigating to **EDI > Vendor workspaces > EDI purchase order processing** and either selecting the tile or tab called **Pending POA confirm**.
 
-The Acknowledgement page is split into five tabs:
-1. [Header](#header) - Manage the POA header's response for ship and receipt dates. 
-3. [Line price](#line-price) - Manage the POA line' price response, example Customer's sales price vs. Net system price. 
-4. [Line quantity](#line-quantity) - Manage the POA line' quantity response, example Customer sales quantity vs. Reserved sales quantity.
-5. [Line pack](#line-pack) - Manage the POA line' pack response, example Customer pack vs. System pack
-6. [Line inner](#line-inner) - Manage the POA line' inner response, example Customer inner vs. System inner
+The Confirmation page is split into five tabs:
+1. [Header](#header) - Manage the POC header's response for ship and receipt dates. 
+3. [Line price](#line-price) - Manage the POC line' price response, example vendor's POA purchase price vs. D365 PO line system price. 
+4. [Line quantity](#line-quantity) - Manage the POC line quantity response, example vendor's POA purchase quantity vs. D365 PO line quantity.
+5. [Line pack](#line-pack) - Manage the POC line pack response, example Vendor pack vs. System pack
+6. [Line inner](#line-inner) - Manage the POC line inner response, example Vendor inner vs. System inner
 
-Customer mapped values for POA response codes are setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) and assigned to the Customer trading partner's **POA response code group**.
+Vendor mapped values for POA response codes are setup in [POA response code group](../SETUP/VENDOR%20SETUP/POA%20response%20code%20group.md) and assigned to the Vendor trading partner's **POA response code group**.
 
 #### Header
-The following tables describe the fields and buttons that are available on the **Header** tab of the Acknowledgement page. <br>
-The **Header** POA response codes are managed on this tab.
-
-##### Fields
-Field	              | Description
-:--                 |:--
-<ins>**Delivery Date**</ins>
-**Customer**        |	Customer requested ship date (start of delivery window)
-**Acknowledged**    |	Acknowledged receipt date. Updates Sales order header's **Confirmed ship date**.
-<ins>**Deadline**</ins>
-**Customer**        |	Customer requested receipt date (end of delivery window)
-**Acknowledged**    |	Acknowledged delivery date to be sent to the customer. Updates Sales order header's **Confirmed receipt date**.
-<ins>**POA**</ins>
-**POA code**        |	POA header code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following header responses: <br> •	**Header – accept** – Where all response codes are _Accept_ <br> •	**Header - change** - Where the customer and acknowledged dates are different <br> •	**Header - accepted with reserved** - Where the customer and acknowledged dates are the same, however one or more lines have an _Advise_ POA difference code.
-**Auto triggered**  |	Indicates if the **POA code** is an auto triggered value.
-
-##### Buttons
-It is possible to update the POA response codes by using the available buttons:
-Button              | Description
-:--                 |:--
-**Order POA**       |	Automatically set the response codes. <br> Note: When selected the response codes for all the tabs will be set.  Where auto generated codes are overwritten, the header code should be manually set.
-**POA response**    |	Manually set the **POA code** response to mapped values of  <br> • **Change** <br> • **Accepted** <br> • **Not accepted** - only available for manual selection <br> • **Accepted with reserve** <br> If the auto triggered POA code has been manually overridden using this button, the field **Auto triggered** will be set to _No_.
-
-#### Line price
-The following tables describe the fields and buttons that are available on the **Line price** tab of the Acknowledgement page. <br>
-The **Line price** POA response codes are managed on this tab.
+The following tables describe the fields and buttons that are available on the **Header** tab of the Confirmation page. <br>
+The **Header** POC response codes are managed on this tab.
 
 ##### Fields
 Field	                    | Description
-:--                       |:--
-**Log**                   |	This will show a warning if the Customer pack does not match the System pack
-**Store code**            |	Sales line's store code
-**Item number**           |	Item number from the sales order
-**Barcode**               |	Barcode for the item number from the sales order
-**Product name**          |	Item name for the item number from the sales order
-**Unit**                  |	Unit from the sales line
-**Customer sales price**  |	Unit price received in the EDI purchase order
-**Net system price**      |	Valid trade agreement unit price for the customer, net off discounts
-**Acknowledged price**    |	Acknowledged price to be sent to the customer. Note: The acknowledged price will be automatically set as either the customer or system values dependant on the **Use customer price** setting on the [Customer purchase order](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md) document type setting profile.
-**Price code**            | POA line price code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line price responses: <br> •	**Line price - accept** - Where the customer and acknowledged price are the same <br> • **Line price - advise** - Where the customer and acknowledged price are different
-**Auto triggered item**   |	Indicates if the **Price code** is an auto triggered value
-**PO change**             | Indicates if the price was updated by a **Customer purchase order change** record
+:--                         |:--
+**Response code**           | Vendor’s purchase order acknowledgement header response
+**Vendor delivery date**    | Vendor’s acknowledged delivery date (updates D365 PO header confirmed delivery date)
+**System delivery date**    | D365 purchase order requested receipt date
+**Confirmed delivery date** | Confirmed delivery date (to be sent on Purchase order confirmation)
+**Confirmation auto triggered** | Indicates if the **Confirmed delivery date** is an auto triggered value
+
 
 ##### Buttons
-It is possible to update the Acknowledged values and POA response codes by using the available buttons for a particular or multiple lines:
-
-Button              | Description
-:--                 |:--
-**Inventory**       |	Update the dimensions displayed on the POA acknowledgement form
-**Item POA**        |	• **Use system price** - Update the acknowledged price field to the system price <br> • **Use customer price**	Update the acknowledged price field to the customer sales price <br> • **Clear response codes** - Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response codes
-**POA response**	  | Manually set the **Price code** response to mapped value for **Accept price** or **Advise price**
-
-#### Line quantity
-The following tables describe the fields and buttons that are available on the **Line quantity** tab of the Acknowledgement page. <br>
-The **Line item** and **Line shipment** POA response codes are managed on this tab.
-
-##### Fields
-Field	                    | Description
-:--                       |:--
-**Store code**            |	Sales line's store code
-**Item number**           |	Item number from the sales order
-**Barcode**               |	Barcode for the item number from the sales order
-**Product name**	        | Item name for the item number from the sales order
-**Unit**                  |	Unit from the sales line
-**Customer sales quantity** |	Quantity received in the purchase order
-**Reserved sales quantity** |	Reserved quantity for each sales line. If reservation is set to manual, users have to reserve stock first if “Reserved qty” is to be used for POA since it updates the Sales order line as per POA's **Acknowledged quantity**. 
-**Acknowledged quantity**   |	Acknowledged quantity to be sent to the customer. Note: The acknowledged quantity will be set as either the customer or reserved values dependant on the **Quantity type** set on the [Customer purchase order acknowledgement](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md) document type setting profile.
-**Qty code**                |	POA line quantity code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line quantity responses: <br> •	**Line item accept** - Where the customer and acknowledged quantities are the same <br> • **Line item - out of stock** - Where the customer and acknowledged quantities are different <br> • **Line item - withdrawn** - Only available for manual selection.
-**Shipment code**           |	POA line shipment code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line shipment responses: <br> • **Line shipment - full** - Where line item POA response is accept or where line item is out of inventory and the Trading partner setting **No backorder** is set to _Yes._ <br> • **Line shipment - partial** - Where line item POA response is out of inventory and the and the Trading partner setting **No backorder** is set to _No_.
-**Auto triggered item**     |	Indicates if the **Qty code** is an auto triggered value
-**Auto triggered shipment** |	Indicates if the **Shipment code** is an auto triggered value
-
-##### Buttons
-It is possible to update the Acknowledged values and POA response codes by using the available buttons for a particular or multiple lines:
-
-Button              | Description
-:--                 |:--
-**Inventory**       |	Update the dimensions displayed on the POA acknowledgement form
-**Item POA**        | • **Use customer quantity** -	Update the acknowledged quantity field to the customer quantity <br> • **Use reserved quantity** - Update the acknowledged quantity field to the reserved quantity <br> • **Clear quantity** -	Clear previously set acknowledged quantity <br> • **Clear response codes** -	Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response codes
-**POA response**   |	Manually set the mapped value for: <br> • **Qty code** response to: **Accept item**, **Article withdrawn** (only manual) or **Out of inventory** <br> • **Shipment code** response to: **Complete shipment** or **Part shipment**
-
-#### Line pack
-The following tables describe the fields and buttons that are available on the **Line pack** tab of the Acknowledgement page. <br>
-The **Line item - pack** POA response codes are managed on this tab.
-
-##### Fields
-Field	                    | Description
-:--                       |:--
-**Log**                   |	This will show a warning if the Customer pack does not match the System pack
-**Store code**            |	Sales line's store code
-**Item number**           |	Item number from the sales order
-**Barcode**               |	Barcode for the item number from the sales order
-**Product name**          |	Item name for the item number from the sales order
-**Unit**                  |	Unit from the sales line
-**Customer pack**         |	Pack quantity received in the purchase order
-**System pack**           |	Valid system pack for the inner or outer as specified on **Package size - inner/outer** on the settings profile for the Customer purchase order acknowledgement
-**Acknowledged pack**     |	Acknowledged pack quantity to be sent to the customer. Note: The automatically acknowledged pack (Customer or System) is set on **Pack type** on the settings profile for the Customer purchase order acknowledgement.
-**Pack code**             |	POA line pack code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line pack responses: <br> • **Line item - pack accept** - Where the customer and acknowledged packs are the same <br> • **Line item - pack difference** - Where the customer and acknowledged packs are different
-**Auto triggered item**   |	Indicates if the **Pack code** is an auto triggered value
-
-##### Buttons
-It is possible to update the Acknowledged values and POA response codes by using the available buttons for a particular or multiple lines:
+It is possible to update the POC's confirmed values by using the available buttons:
 
 Button                      | Description
 :--                         |:--
-**Inventory**               |	Update the dimensions displayed on the POA acknowledgement form
-**Item POA**                | • **Use system pack** - Update the acknowledged pack field to the system pack. Calculated by using unit conversion and rounding setup on the item. <br> • **Use customer pack** -	Update the acknowledged pack field to the customer pack <br> • **Clear response codes** - Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response code
-**POA Response**           |	Manually set the mapped value for **Pack code** response to **Pack accept** or **Pack difference**
+**Confirmation response**   | Manually select Purchase order confirmation response: <br> •	**Accept acknowledgement** – Update PO Header and Lines with POA's Header and Lines data <br> •	**Accept delivery date** – Updates only delivery date <br> • **Auto set confirmation** – Auto trigger all confirmed values for all tabs
 
 
-#### Line inner
-The following tables describe the fields and buttons that are available on the **Line inner** tab of the Acknowledgement page. <br>
-The **Line item - inner** POA response codes are managed on this tab.
+#### Line price
+The following tables describe the fields and buttons that are available on the **Line price** tab of the Confirmation page. <br>
 
 ##### Fields
 Field	                    | Description
-:--                       |:--
-**Log**                   |	This will show a warning if the Customer inner does not match the System inner
-**Store code**            |	Sales line store code
-**Item number**           |	Item number from the sales order
-**Barcode**               |	Barcode for the item number from the sales order
-**Product name**	        | Item name for the item number from the sales order
-**Unit**                  |	Unit from the sales line
-**Customer inners**       | Number of inners received in the purchase order
-**System inners**         |	Valid system number of inners. Note: The number of inners is calculated based on the quantity within an outer and inner.
-**Acknowledged inners**   |	Acknowledged number of inners. Note: The automatically acknowledged inner (Customer or System) is set on **Inner type** on the settings profile for the Customer purchase order acknowledgement.
-**Inner code**            |	POA line inner code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md) for the following line inner responses: <br> • **Line item - inner accept** - Where the customer and acknowledged inners are the same <br> • **Line item - inner difference** - Where the customer and acknowledged inners are different
-**Auto triggered item**   |	Indicates if the **Inner code** is an auto triggered value
+:--                         |:--
+**Log**                     | This will show a warning if Validation failed with error tolerance set to warning
+**Item number**             | Item number from the purchase order
+**Barcode**                 | Barcode for the item number from the purchase order
+**Product Name**            | Item name for the item number from the purchase order
+**Unit**                    | Unit from the purchase line
+**Vendor price**            | Price received in the purchase order acknowledgement, converted to purchase unit where POA unit different to PO unit
+**System price**            | Unit price from D365 purchase order
+**Confirmed price**         | Confirmed price to be sent on the purchase order confirmation (POC) to the vendor. <br> Note: The confirmed price will be set as either the vendor or system values dependant on the parameter set on the [POA setting profile](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md): <br> •	Use vendor price (Y/N), and if Y falls within variance range: <br> •	Maximum negative price variance <br> •	Maximum positive price variance
+**Confirmation auto triggered** | Indicates if the **Confirmed price** is an auto triggered value
+
 
 ##### Buttons
-It is possible to update the Acknowledged values and POA response codes by using the available buttons for a particular or multiple lines:
+It is possible to update the Purchase order and Confirmed values by using the available buttons for a particular or multiple lines:
 
 Button              | Description
 :--                 |:--
-**Inventory**               |	Update the dimensions displayed on the POA acknowledgement form
-**Item POA**                | • **Use system inner** - Update the acknowledged inner field to the system inner <br> • **Use customer inner** -	Update the acknowledged inner field to the customer inner <br> • **Clear response codes** - Clear previously set response codes <br> • **Auto set response codes** - Automatically set the response code
-**POA Response**           |	Manually set the mapped value for **Inner code** response to **Inner accept** or **Inner difference**
+**Display dimensions**  | Update the dimensions displayed on the Confirmation page
+**Use system price**    | No update to Purchase order. Updates the **Confirmed price** field to the system price
+**Use vendor price**    | Update the **Purchase order** line’s unit price and **Confirmed price** field to the vendor price
 
-### Automatically processing Purchase order acknowledgement
 
-Ability to automatically send customer purchase acknowledgements.
-Users can access the periodic job by navigating to **EDI > Periodic tasks > Send customer purchase order acknowledgement**.
+#### Line quantity
+The following tables describe the fields and buttons that are available on the **Line quantity** tab of the Confirmation page. <br>
 
-By default only sales orders that fall under the following criteria is included in POA being sent automatically:
-- Sales orders that doesn’t contain any POA response codes where **Allow auto send** is set to _No_ on [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md#setup-poa-responde-codes)
-- Sales orders that are not on hold (excluding POA and POC pending hold codes)
-- POA is pending (still required to be sent), which is determined by **POA status** is _Pending_ or _In progress_. A sales order's POA status is set to _Pending_ when the Purchase order acknowledgement setting **Lock order** is set to _Yes_. And changes to **In progress** when clicking on **Acknowledgement** page on the sales order header's EDI tab on the Action Pane and selecting _OK_. 
+##### Fields
+Field	                    | Description
+:--                         |:--
+**Log**                     | This will show a warning if Validation failed with error tolerance set to warning
+**Item number**             | Item number from the purchase order
+**Barcode**                 | Barcode for the item number from the purchase order
+**Product Name**            | Item name for the item number from the purchase order
+**Unit**                    | Unit from the purchase line
+**Vendor quantity**         | Quantity received in the purchase order acknowledgement, converted to purchase unit where POA unit different to PO unit
+**System quantity**         | Purchase quantity for each purchase line (deliver remainder). 
+**Confirmed quantity**      | Confirmed quantity to be sent on the purchase order confirmation (POC) to the vendor. <br> Note: The confirmed quantity will be set as the vendor quantity if min/max validation allows update of deliver remainder, else system quantity
+**Confirmation auto triggered** | 	Indicates if the **Confirmed quantity** is an auto triggered value
 
-Additional sales order filter options are:
-- Include blank confirmed receipt date – Y/N
-- Include blank confirmed ship date – Y/N
-- Customer account
-- Invoice account
-- Users can also add additional filters like site and warehouse 
+##### Buttons
+It is possible to update the Purchase order and Confirmed values by using the available buttons for a particular or multiple lines:
+
+Button                  | Description
+:--                     |:--
+**Display dimensions**  | Update the dimensions displayed on the Confirmation page
+**Use system quantity** | No update to purchase order. Update the **Confirmed quantity** field to the system’s deliver remainder quantity
+**Use vendor quantity** | Update the **Purchase order** line’s deliver remainder quantity and **Confirmed quantity** field to the vendor quantity
+**Clear confirmed quantity**    | No update to purchase order. Clears **Confirmed quantity** on the Confirmation page.
+
+
+#### Line pack
+The following tables describe the fields and buttons that are available on the **Line pack** tab of the Confirmation page. <br>
+
+##### Fields
+Field	                    | Description
+:--                         |:--
+**Log**                     | This will show a warning if Validation failed with error tolerance set to warning
+**Item number**             | Item number from the purchase order
+**Barcode**                 | Barcode for the item number from the purchase order
+**Product Name**            | Item name for the item number from the purchase order
+**Unit**                    | Unit from the purchase line
+**Vendor pack**             | Pack quantity received from the Vendor in the POA
+**System pack**             | Valid system pack for the inner or outer as specified on **Package size - inner/outer** on the settings profile for the Vendor purchase order acknowledgement
+**Confirmed pack**          | Confirmed pack quantity to be sent on the purchase order confirmation (POC) to the vendor. <br> Note: The automatically acknowledged pack (Vendor or System) is set on **Confirmed pack** on the settings profile for the Vendor purchase order acknowledgement.
+**Confirmation auto triggered** | 	Indicates if the **Confirmed pack** is an auto triggered value
+
+##### Buttons
+It is possible to update the Purchase order and Confirmed values by using the available buttons for a particular or multiple lines:
+
+Button                      | Description
+:--                         |:--
+**Display dimensions**      | Update the dimensions displayed on the Confirmation page
+**Use vendor pack**         | No updates to purchase order. Update the **Confirmed pack** field to the **Vendor pack**
+**Use system pack**         | Update the **Confirmed pac**k field to the **System pack**. Calculated by using unit conversion and rounding setup on the item.
+**Clear confirmed pack**    | No update to purchase order. Clears **Confirmed pack** on the Confirmation page.
+
+
+#### Line inner
+The following tables describe the fields and buttons that are available on the **Line inner** tab of the Confirmation page. <br>
+
+##### Fields
+Field	                    | Description
+:--                         |:--
+**Log**                     | This will show a warning if Validation failed with error tolerance set to warning
+**Item number**             | Item number from the purchase order
+**Barcode**                 | Barcode for the item number from the purchase order
+**Product Name**            | Item name for the item number from the purchase order
+**Unit**                    | Unit from the purchase line
+**Vendor inners**           | Vendor # of inners received in the purchase order acknowledgement
+**System inners**           | Valid system # of inners. Note: The number of inners is calculated based on the quantity within an outer and inner. Unit conversion, example 12 ea (inner) in a box (outer).
+**Confirmed inners**        | Confirmed # of inners to be sent on the purchase order confirmation (POC) to the vendor. <br> Note: The automatically acknowledged inner (Vendor or System) is set on **Confirmed inner** on the settings profile for the Vendor purchase order acknowledgement.
+**Confirmation auto triggered** | 	Indicates if the **Confirmed inner** is an auto triggered value
+
+##### Buttons
+It is possible to update the Purchase order and Confirmed values by using the available buttons for a particular or multiple lines:
+
+Button                      | Description
+:--                         |:--
+**Display dimensions**      | Update the dimensions displayed on the Confirmation page
+**Use system inner**	    | No updates to purchase order. Update the **Confirmed inners** field to the **System inner**.
+**Use vendor inner**	    | No updates to purchase order. Update the **Confirmed inners** field to the **Vendor inner**.
+**Clear confirmed inners**	| No update to purchase order. Clears **Confirmed inners** on the Confirmation page.
+
+
+### Automatically processing Purchase order confirmation
+
+Vendor EDI module includes the ability to automatically send vendor purchase confirmations by setting **Purchase order confirmation required** to _Yes (PO is auto-confirmed)_ on the [Vendor purchase order acknowledgement](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md) document setting and assigning it to the Vendor trading partner on the incoming document **Vendor purchase order acknowledgement**(POA). Once a POA is received from the Vendor, EDI will use document settings and validation to automatically send a confirmation to the vendor. <br>
+The confirmations can be viewed in:
+- **History** tab on the D365 Purchase order Action Pane, EDI tab. If **Reference** is set to _Confirmation_, the Confirmation matched the Vendor's POA. If set to _Change_, the Confirmation didn't match and sent a change to the vendor.
+- **EDI > Documents > Vendor purchase order change**. If **EDI order purpose** is set to mapped value for _Confirmation_, the Confirmation matched the Vendor's POA. If set to mapped value for _Change_, the Confirmation didn't match and sent a change to the vendor.
+
 
 ## View staging table records
 To view the Customer purchase order acknowledgement staging records, go to **EDI > Documents > Customer documents > Customer purchase order acknowledgement**. 
@@ -604,3 +454,126 @@ The following EDI Line staging fields are available on the lines page.
 **Sales quantity**        |	The acknowledged quantity for this line             | Sales line > Quantity
 **Acknowledgement inners**  |	Acknowledged quantity of inners per outer	        | Sales line > EDI > POA > Acknowledgement inners
 **Acknowledgement pack**    |	Pack quantity acknowledged	                      | Sales line > EDI > POA > Acknowledgement pack
+
+
+## View staging table records
+To view the Customer purchase order's staging records, go to **EDI > Documents > Customer documents > Customer purchase order**. 
+Use this page to review staging and process EDI Customer purchase order documents and convert into D365 Sales order, Sales agreement or Release order.
+
+### List page
+The following EDI fields are available on the list page.
+
+**Field**               | **Description**
+:---                    |:---
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
+**Company account**     | Legal entity of the document.
+**Company GLN**         | The company’s global location number is shown here.
+**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created a D365 Sales order, Sales agreement or Release order. • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**Trading partner account**     | Customer account assigned to the staging record.
+**Trading partner GLN**         | The Customer’s global location number is shown here.
+**Customer Requisition**        | Customer's purchase order number to be populated in the Customer requisition field of the D365 Sales order header.
+**Purchase order date**         | The purchase order date from the EDI record is shown here.
+**EDI order type**              | The EDI order type is shown here.
+**EDI order purpose**           | The EDI order purpose is shown here. Receiving an Order purpose **Change** will error the staging record, since these should be sent as **Customer purchase order change** document. Only **Original**, **Confirmation** and **Cancellation** order purposes are allowed for **Customer purchase order** document.
+**Store code**                  | The store code from the EDI record is shown here.
+**Store zone**                  | The store zone from the EDI record is shown here.
+**Created Date and Time**       | The date and time the selected record was created in the staging table.
+**Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
+
+### Buttons
+The following buttons are available on the **Customer purchase order** Action Pane, tab **Purchase order import**.
+
+**Button**	                    | **Description**
+:---                            |:----
+**Process selected purchase orders** | Create D365 Sales order, Sales agreement or Release order for the selected record in the staging table.
+**Process all purchase order**	| Create all D365 Sales order, Sales agreement or Release order for the staging records that have a **Staging to target status** set to _Not started_. 
+**Inbound files**               | View the inbound file record the selected staging record.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
+**Sales Order**	                | If the staging record has been completed it is possible to inquire on the **Sales order** or **Release order** it created from this button.
+**Sales agreement**             | If the EDI blanket order staging record has been completed it is possible to inquire on the **Sales agreement** it created from this button.
+**Customers**                   | Inquire on the Customer for the selected record.
+**Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
+**Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
+**Reset Status**                | You can reset the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
+**Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
+**Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
+
+The following buttons are available on the **Customer purchase order**'s Action Pane, tab **Acknowledgement**.
+The **Acknowledgement** tab is available on all incoming documents staging pages and enables the user to process or view the **Functional acknowledgement outbound** that has been created for the inbound document.
+
+**Button**	                    | **Description**
+:---                            |:----
+**Send to EDI**                 | If the **Sent** field for the staging record is set to _No_, use this button to create the **Functional acknowledgement outbound** record and also update the **Sent** field to _Yes._
+**Reset flag**                  | If the **Sent** field for the staging record has been set to _Yes_, use this button to reset **Sent** to _No_.
+**Functional acknowledgement**  | Use this button to view the **Functional acknowledgement outbound** record created for the inbound document.
+
+### Header fields
+The following EDI Header staging fields are available on the header page.
+
+**Field**	            | **Description**	                                    | **Target D365 field**
+:---                    |:---                                                   |:---
+<ins>**Identification**</ins>		
+**EDI number**          | EDI Staging table record id                           | Sales Order > EDI > Original EDI number
+**Company account**     | Legal entity of the document
+**Company GLN**         | The company’s global location number is shown here.   | Sales order > EDI > Company GLN <br> If the **Company GLN** staging field is blank, the Company GLN on the Trading partner will be used to populate the **Company GLN** on the Sales order header.
+**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created a D365 Sales order, Sales agreement or Release order. • **Canceled** – The record has been manually canceled and will be excluded from processing.
+<ins>**Reset status**</ins>		
+**Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
+**Reset status date/time**  | Next date/time automatic reset status will run	
+**Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
+**Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
+<ins>**Overview**</ins>	
+**Customer Requisition**    | Customers purchase order number to be populated in the Customer requisition field of the sales order header.	| Sales order > General > Customer requisition
+**Purchase order date**     | The purchase order date from the EDI record is shown here.    | Sales Order > EDI > Original order date
+**EDI order type**          | The EDI order type is shown here.	                            | Sales Order > EDI > EDI order type
+**EDI order purpose**       | The EDI order purpose is shown here. Receiving an Order purpose **Change** will error the staging record, since these should be sent as **Customer purchase order change** document. Only **Original**, **Confirmation** and **Cancellation** order purposes are allowed for **Customer purchase order** document.	
+**Store code**              | The store code from the EDI record is shown here.	            | Sales Order > EDI > Store code. <br> And used to populate Sales order delivery address
+**Store zone**              | The store zone from the EDI PO is shown here.	                | Sales Order > EDI > Store zone
+<ins>**General**</ins>	
+**Customer Requisition**    | Customers purchase order number to be populated in the Customer requisition field of the sales order header.	| Sales order > General > Customer requisition
+**Customer Reference**      | Customers purchase order reference to be populated in the Customer Reference field of the sales order header.	| Sales Order > General > Customer reference
+**Purchase order date**     | The purchase order date from the EDI record is shown here.    | Sales Order > EDI > Original order date
+**Currency**                | The currency of the order	                                    | Sales Order > Price and discount > Currency
+**Company GLN**             | The company’s global location number is shown here. 	        | Sales order > EDI > Company GLN <br> If the **Company GLN** staging field is blank, the Company GLN on the Trading partner will be used to populate the **Company GLN** on the Sales order header.
+**Customer GLN**            | The Customer’s global location number is shown here.  | Sales order > EDI > Customer GLN <br> If the **Trading partner GLN** staging field is blank, the Trading partner GLN on the Trading partner will be used to populate the **Customer GLN** on the Sales order header.
+**Buyer code**              | The customer’s buyer code from the EDI record is shown here.	| Sales Order > EDI > Buyer code
+**Retail buyer location**   | The customer’s retail buyer location from the EDI record is shown here.	| Sales Order > EDI > Retail buyer location code
+**Purpose code**            | The customer’s purpose code from the EDI record is shown here.	        | Sales Order > EDI > Purpose code
+**Department**              | The customer’s department from the EDI PO is shown here.	                | Sales Order > EDI > Department
+**Package characteristic code** | The code used to for the package contents.	                        | Sales Order > EDI > Package characteristic code
+**Package label code**      | The code used for the label.	                                            | Sales Order > EDI > Package label code
+**Advertisement date**	    | The advertisement date applicable for the order	                        | Sales Order > EDI > Advertisement date
+**Template Id**             | The EDI templates used to create the staging table record	                
+**PO version number**       | The PO version number from the EDI record.	                                | Sales Order > EDI > Original version number
+<ins>**Delivery**</ins>	
+**Delivery Name**           | Address for Delivery	                                                    | Sales Order > Delivery Address. If the store code wasn't used to populate sales order address.
+**Store zone**              | The store zone from the EDI record is shown here.	                        | Sales Order > EDI > Store zone
+**Store code**              | The store code from the EDI record is shown here.	                        | Sales Order > EDI > Store code
+**Name or description** <br> **Street number** <br> **Street** <br> **City** <br> **Suburb** <br> **State** <br> **Postcode** <br> **Country/region** |Address for delivery	 | Sales Order > Delivery Address <br> Store code populate in staging record: <br> •	**Y** – Determines Delivery address <br> •	**N** – EDI delivery address
+**Requested ship date**     | The requested ship date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested ship date and <br> Sales order > Requested ship date: If staging blank will be populated by Transport days
+**Requested receipt date**  | The requested receipt date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested receipt date <br> Sales order > Requested receipt date
+**Delivery time**           | The delivery time from the EDI record is shown here.                      | Sales Order > EDI > Delivery time
+
+### Line fields
+The following EDI Line fields are available on the lines page.
+
+**Field**                   | **Description**                                                           | **Target D365 field**
+:---                        |:---                                                                       |:---
+**Line number**             | The line within the EDI table/file	                                    | Sales Line > EDI > General > Line number
+**Item number**             | The item identifier as sent by the trading partner. 	| Sales line > EDI > General > EDI Item number <br> When document type setting **Item Id source** is: <br> • **Our item number** or <br> • **External item number** <br> used to determine: Sales line > Item number
+**Bar code**                | The item identifier as sent by the trading partner. 	| When document type setting **Item Id source** is: <br> • **GTIN** or <br> • **Barcode** <br> used to determine: Sales line > Item number
+**SKU**                     | SKU for item	
+**Unit Price**              | Customer unit price inclusive of discounts (net price)	                | Sales line > Unit price <br> If document setting **Use customer price** is set to _Yes_
+**Customer sales quantity** | The customer order quantity for this line.	                            | Sales line > EDI > POA response > Customer > Quantity
+**Unit**                    | The customer unit of measure for this line.
+**Line amount excluding tax**   | The total line amount excluding tax.	                                | Sales line > Unit price <br> If document setting's **Use customer price** is set to _Yes_ AND <br> Staging **Unit price** is blank AND <br> document setting's **Prices include GST** is set to _No_: <br> Sales line **Unit price** is calculated by **Line amount excluding tax** / **Customer sales quantity**
+**Line amount including tax**   | The total line amount including tax (if provided else 0)	            | Sales line > Unit price <br> If document setting's **Use customer price** is set to _Yes_ AND <br> Staging **Unit price** is blank AND <br> Document setting's **Prices include GST** is set to _Yes_: <br> Sales line unit price is calculated by **Line amount including tax** / **Customer sales quantity**
+**Customer inners**         | The customer’s inners per outer quantity	                                | Sales line > EDI > POA response > Customer > Inner
+**Customer pack**           | The customer’s pack quantity	                                            | Sales line > EDI > POA response > Customer > Pack
+**Configuration** <br> **Colour**  <br> **Size** <br> **Style**  | Inventory dimension - Configuration <br> Inventory dimension - Colour <br> Inventory dimension - Size <br> Inventory dimension - Style   | Sales line > Inventory dimension <br> If Item id Source <> Our item number and the External item number/ GTIN/Barcode is unique per variant, the customer doesn’t have to provide Variant details and EDI will find and populate the inventory dimensions on the sales line.
+**Site**                    | Storage dimension - Site	                                                | Sales line > Site <br> If staging blank will be populated by Sales order Header. If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
+**Warehouse**               | Storage dimension - Warehouse	                                            | Sales line > Warehouse <br> If staging blank will be populated by Sales order Header. If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
+**Store code**              | The store code from the EDI saging line is shown here.	                | Sales line > EDI > General > Store code <br> EDI supports different store codes on line level
+**Delivery name**           | Address for Delivery – Delivery name	
+**Requested ship date**     | The requested ship date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested ship date <br> If staging blank will be populated by Sales order Header
+**Requested receipt date**  | The requested receipt date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested receipt date <br> If staging blank will be populated by Sales order Header
