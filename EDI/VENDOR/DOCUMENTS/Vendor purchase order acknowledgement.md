@@ -113,7 +113,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example header errors:
 **Error message**       | **Error type**         | **Method to fix**
 :---------------------- |:----                   |:----
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 
 ### Staging line validation - Purchase order acknowledgement
 
@@ -173,7 +173,7 @@ Field	                  | Description
 **Reset flag**            |	Select the **Reset flag** button to reset the **EDI status** to allow for re-sending of the POC to the staging table. Note: The POC record on the staging table should be deleted manually before the sales order flag is reset.
 
 ## Processing
-The POC can be sent [manually](#manually-processing-purchase-order-confirmation) or [automatically](#automatically-processing-purchase-order-acknowledgement) to the customer.
+The POC can be sent [manually](#manually-processing-purchase-order-confirmation) or [automatically](#automatically-processing-purchase-order-confirmation) to the vendor.
 Both of these options will be discussed in the following subsections.
 
 ### Manually processing Purchase order confirmation
