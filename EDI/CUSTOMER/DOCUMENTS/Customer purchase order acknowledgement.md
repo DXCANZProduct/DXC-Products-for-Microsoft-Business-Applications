@@ -110,7 +110,7 @@ The **Line price** POA response codes are managed on this tab.
 ##### Fields
 Field	                    | Description
 :--                       |:--
-**Log**                   |	This will show a warning if the Customer pack does not match the System pack
+**Log**                   |	This will show a warning if the Customer price does not match the System price
 **Store code**            |	Sales line's store code
 **Item number**           |	Item number from the sales order
 **Barcode**               |	Barcode for the item number from the sales order
