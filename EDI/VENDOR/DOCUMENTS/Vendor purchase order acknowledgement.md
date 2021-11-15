@@ -533,7 +533,7 @@ If update to purchase order line is allowed, column **D365 PO line update** indi
 **ZIP/postal code**         | Ship to - ZIP/postal code	
 **Country/region**          | Ship to - Country/region	
 **Store code**              | Ship to - Store code	
-**Batch number**            | Batch number for the item	
-**Manufacturing date**      | Vendor’s manufacturing date for the batch	
-**Expiration date**         | Vendor’s expiration date for the batch	
-
+**Batch number**            | Batch number for the item	                                                                        | Batch
+**Manufacturing date**      | Vendor’s manufacturing date for the batch	                                                        | If Batch doesn't exist, used to create batch
+**Expiration date**         | Vendor’s expiration date for the batch	                                                        | If Batch doesn't exist, used to create batch
+        
