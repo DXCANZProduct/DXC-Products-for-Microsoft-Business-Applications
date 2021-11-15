@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI Vendor]
-description: [Overview of the Vendor purchase order, acknowledgement and confirmation process]
+description: [Overview of the Vendor EDI module process]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 10/11/2021
@@ -55,4 +55,15 @@ When the purpose is **Confirmation**, the following purchase order header fields
 
 ![alt text](../IMAGE/Vendor_PO_POA_POC_process.png "Vendor EDI process for order, acknowledgement and confirmation")
 
+## Advanced shipping notice (ASN) and Purchase invoice process overview
 
+### Advanced shipping notice (ASN)
+Based on [document settings](../SETUP/SETTING%20PROFILES/Vendor%20advanced%20shipping%20notice.md), the EDI ASN can either:
+- Basic warehousing (Ship to warehouse is setup for basic warehousing):
+    - Create arrival journal, but leave unposted
+    - Create and post arrival journal
+    - Create and post arrival journal, and post the product receipt for the registered stock
+- Advanced warehousing (Ship to warehouse is setup for advanced warehousing):
+    - Create an open load
+
+### Purchase invoice
