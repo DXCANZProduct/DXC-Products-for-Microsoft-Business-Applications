@@ -67,3 +67,9 @@ Based on [document settings](../SETUP/SETTING%20PROFILES/Vendor%20advanced%20shi
     - Create an open load
 
 ### Purchase invoice
+
+## Purchase order
+The processed EDI record(s) can be viewed for a purchase order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Purchase order page.<br>
+The EDI module have also enhanced the purchase order page by adding EDI fields to:
+- Purchase order header; available on the **EDI** FastTab
+- Purchase order lines; available on **EDI** and **EDI acknowledgement** tabs
