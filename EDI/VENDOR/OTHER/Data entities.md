@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI Customer]
-description: [EDI Customer - Data entities]
+title: [EDI Vendor]
+description: [EDI Vendor - Data entities]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 20/07/2021
+ms.date: 16/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,32 +29,43 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Data entities
 
-The following is a summary of data entities available for the Customer EDI module:
+The following is a summary of data entities available for the Vendor EDI module:
 
-## Customer setup
-EDI > Setup > Customer setup
+## Vendor setup
+EDI > Setup > Vendor setup
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | Customer EDI order type group   | Create new **Customer EDI order type group**. EDI > Setup > Customer setup > Customer EDI order type group
-2	                | Customer EDI order type lines   | Create new **Customer EDI order type lines**. EDI > Setup > Customer setup > Customer EDI order type group  | Customer EDI order type group
-3	                | Customer EDI order purpose group  | Create new **Customer EDI order purpose group**. EDI > Setup > Customer setup > Customer EDI order purpose group
-4	                | Customer EDI order purpose lines  | Create new **Customer EDI order purpose lines**. EDI > Setup > Customer setup > Customer EDI order purpose group | Customer EDI order purpose group
-5	                | POA response code group           | Create new **POA response code group**. EDI > Setup > Customer setup > POA response code group
-6	                | POA response code group lines     | Create new **POA response code lines**. EDI > Setup > Customer setup > POA response code group  | POA response code group
-7	                | Customer EDI order line change type group       | Create new **Customer EDI order line change type group**. EDI > Setup > Customer setup > Customer EDI order line change type group
-8	                | Customer EDI order line change type group line  | Create new **Customer EDI order line change type lines**. EDI > Setup > Customer setup > Customer EDI order line change type group  | Customer EDI order line change type group
+1	                | Vendor EDI order type group     | Create new **Vendor EDI order type group**. EDI > Setup > Vendor setup > Order type group |
+2	                | Vendor EDI order type lines     | Create new **Vendor EDI order type lines**. EDI > Setup > Vendor setup > Order type group | Vendor EDI order type group
+3	                | Vendor EDI order purpose group  | Create new **Vendor EDI order purpose group**. EDI > Setup > Vendor setup > Order purpose group |
+4	                | Vendor EDI order purpose lines  | Create new **Vendor EDI order purpose lines**. EDI > Setup > Vendor setup > Order purpose group | Vendor EDI order purpose group
+5	                | Vendor EDI order line change type group | Create new **Vendor EDI order line change type group**. EDI > Setup > Vendor setup > Order line change type group  |
+6	                | Vendor EDI order line change type lines | Create new **Vendor EDI order line change type lines**. EDI > Setup > Vendor setup > Order line change type group  | Vendor EDI order line change type group
+7	                | Vendor EDI carrier mode group   | Create new **Vendor EDI carrier mode group**. EDI > Setup > Vendor setup > Carrier mode |
+8	                | Vendor EDI carrier mode lines   | Create new **Vendor EDI carrier mode lines**. EDI > Setup > Vendor setup > Carrier mode | Vendor EDI carrier mode group
+9	                | Vendor EDI charges code group   | Create new **Vendor EDI charges code group**. EDI > Setup > Vendor setup > Charges code |
+10	              | Vendor EDI charges code lines   | Create new **Vendor EDI charges code lines**. EDI > Setup > Vendor setup > Charges code | Vendor EDI charges code group
+11	              | Vendor EDI POA response code group  | Create new **Vendor EDI POA response code group**. EDI > Setup > Vendor setup > POA response code group |
+12	              | Vendor EDI POA response code lines  | Create new **Vendor EDI POA response code lines**. EDI > Setup > Vendor setup > POA response code group | Vendor EDI POA response code group
+13	              | Vendor EDI payment terms type group | Create new **Vendor EDI payment terms type group**. EDI > Setup > Vendor setup > Payment terms type group |
+14	              | Vendor EDI payment terms type lines | Create new **Vendor EDI payment terms type lines**. EDI > Setup > Vendor setup > Payment terms type group | Vendor EDI payment terms type group
+15	              | Vendor EDI misc. charge/allowance indicator group | Create new **Vendor EDI misc. charge/allowance indicator group**. EDI > Setup > Vendor setup > Misc charge/allowance indicator |
+16	              | Vendor EDI misc. charge/allowance indicator lines | Create new **Vendor EDI misc. charge/allowance indicator lines**. EDI > Setup > Vendor setup > Misc charge/allowance indicator | Vendor EDI misc. charge/allowance indicator group
+17	              | Vendor EDI misc method of handling group  | Create new **Vendor EDI misc method of handling group**. EDI > Setup > Vendor setup > Misc method of handling |
+18	              | Vendor EDI misc method of handling lines  | Create new **Vendor EDI misc method of handling lines**. EDI > Setup > Vendor setup > Misc method of handling | Vendor EDI misc method of handling group
 
 ## Document setting profiles
-EDI > Setup > Document types (Setting profiles for EDI customer documents)
+EDI > Setup > Document types (Setting profiles for EDI vendor documents)
 
 **Order**         | **Entity**						| **Description**                             | **Dependency**
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
-1	    | EDI Settings - PO                               | Create new document type **Settings profile** for Customer purchase order |
-2	    | EDI Settings - Customer purchase order change   | Create new document type **Settings profile** for Customer purchase order change |
-3	    | EDI Settings - POA                              | Create new document type **Settings profile** for Customer purchase order acknowledgement |
-4	    | EDI Settings - ASN                              | Create new document type **Settings profile** for Customer advanced shipping notice |
-5	    | EDI Settings - Sales Invoice                    | Create new document type **Settings profile** for Sales invoice |
+1	    | EDI settings - Vendor documents purchase order                | Create new document type **Settings profile** for Vendor documents purchase order
+2	    | EDI settings - Vendor documents purchase order changes        | Create new document type **Settings profile** for Vendor documents purchase order changes
+3	    | EDI settings - Vendor documents purchase order acknowledgment | Create new document type **Settings profile** for Vendor documents purchase order acknowledgment
+4	    | EDI settings - Vendor documents advanced shipping notice      | Create new document type **Settings profile** for Vendor documents advanced shipping notice
+5	    | EDI settings - Vendor documents purchase invoice              | Create new document type **Settings profile** for Vendor documents purchase invoice
+
 
 ## Document types
 EDI > Setup > Document types (Template, Validation, Outbound file names and EDI Field metadata)
@@ -66,5 +77,5 @@ EDI > Setup > Trading partner
 
 **Order**         | **Entity**						| **Description**                             | **Dependency**
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
-1                 | EDI Customers                           | Create new Customer trading partner   | [Customer setup](#customer-setup)
-2                 | EDI Documents - Customers               | Add incoming and outgoing documents to Customer trading partner | EDI Customers, [Customer setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data%20entities.md#document-types)
+1                 | EDI Vendors                             | Create new Vendor trading partner   | [Vendor setup](#vendor-setup)
+2                 | EDI Documents - Vendors                 | Add incoming and outgoing documents to Vendor trading partner | EDI Vendors, [Vendor setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data%20entities.md#document-types)
