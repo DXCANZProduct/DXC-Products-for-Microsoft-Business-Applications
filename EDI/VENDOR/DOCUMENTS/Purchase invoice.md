@@ -174,7 +174,7 @@ The following buttons are available on the **Purchase invoice**'s Action Pane, t
 **Process purchase invoice**    | Create Purchase invoice Target for the selected record in the staging table.
 **Process all purchase invoices**   | Create Purchase invoice Target for the staging records that have a **Staging to target status** set to _Not started_.
 **Inbound files**               | View the inbound file record the selected staging record.
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
+**Trading partner**             | View the trading partner details in the [Trading partners](../SETUP/Trading%20partner.md) page.
 **All purchase order**          | If the EDI Purchase invoice has been completed it is possible to inquire on all the linked Purchase order/s the Purchase invoice was created for.
 **Vendor**                      | Inquire on the Vendor for the selected record.
 **Invoice**                     | If the staging record has been successfully processed and Purchase invoice **posted** it is possible to inquire on the purchase invoice.
@@ -310,40 +310,64 @@ xCBL standard has the option of sending miscellaneous charges/ allowance as eith
 
 ### Line fields
 The following EDI Line fields are available on the lines page. <br> 
+*** Price dependent on document setting **Prices include sales tax**.
 
 **Field**                   | **Description**                                                           | **D365 target**
 :---                        |:---                                                                       |:---
-**Line number**             | The line within the EDI table/file. Refers to original purchase order EDI line number and used in matching.	| • Item arrival > Line number (used to determine Lot id)
-**Item number**             | The item identifier as sent by the trading partner	                    | D365 item number per doc setting mapped to: <br> • Item arrival > Item number <br> • Load > Item number <br> • Load > Packing structure > Item number
-**Text**                    | EDI item name	
-**Purchase order**          | Purchase order number for the ASN record	                                | • Item arrival > Number <br> • Load > Order number
-**PO version number**       | The version of the D365 purchase order number	
-**Purchase order date**     | The purchase order date from the PO that is being received is shown here  | •	Item arrival > Number
-**Purchase quantity**       | Original purchase quantity	
-**Receive now**             | Quantity to be received	                                                | • Item arrival > Quantity (converted to inventory quantity) <br> • Load > Quantity <br> • Load > Packing structure > Quantity
-**Unit**                    | Unit of measure	                                                        | • Load > Unit <br> • Load > Packing structure > Unit
-**Unit price**              | Purchase line unit price	
-**Amount**                  | Line amount	
-**Weight**                  | Line weight	
-**Serial number**           | Serial number for the item	                                            | • Item arrival > Serial number <br> • Load > Serial number <br> • Load > Packing structure > Serial number
-**Batch number**            | Batch number for the item	                                                | • Item arrival > Batch number <br> • Load > Batch number <br> • Load > Packing structure > Batch number
-**Manufacturing date**      | Vendor’s manufacturing date for the batch	                                | If D365 batch doesn't exist, used to create new batch
-**Expiration date**         | Vendor’s expiration date for the batch	                                | If D365 batch doesn't exist, used to create new batch
-**Inners quantity**         | The vendor’s inners per outer quantity	
-**Inners unit**             | The vendor’s inners unit of measure	
-**Configuration**           | Inventory dimension - Configuration	                                    | • Item arrival > Configuration <br> • Load > Configuration <br> • Load > Packing structure > Configuration
-**Color**                   | Inventory dimension - Colour	                                            | • Item arrival > Color <br> • Load > Color <br> • Load > Packing structure > Color
-**Size**                    | Inventory dimension - Size	                                            | • Item arrival > Size <br> • Load > Size <br> • Load > Packing structure > Size
-**Style**                   | Inventory dimension - Style	                                            | • Item arrival > Style <br> • Load > Style <br> • Load > Packing structure > Style
-**Inventory status**        | Inventory status as sent in purchase order line	                        | • Item arrival > Inventory status (if not provided: use PO line)
-**Department**              | The vendor’s department for the EDI ASN line is shown here	
-**Package characteristic code** | The code used to for the package contents	
-**Personnel number**        | Vendor’s Personnel number for picking/delivery	
-**End date/time**           | Date the order was picked	
+**Line number**             | The line within the EDI table/file. Refers to original purchase order EDI line number and used in matching.   | Used to find matching PO line
+**Purchase order**          | Purchase order number for the staging record	                            | Used to find matching PO line
+**PO version number**       | The version of the purchase order number	
+**Purchase order date**     | The purchase order date from the PO that is being invoiced is shown here	
 **Vendor reference**        | Vendor’s order reference	
-**Delivery name**	        | Delivery name and Address information	
-**Delivery note**           | Packing slip/Delivery note number	
-**Shipment type**           | Status of the shipment (Full/Partial)	
-**SSCC**                    | Vendor’s SSCC for delivery line <br> ASN lines with same SSCC are consolidated with Packing structure License plate.	| • Load > Packing structure > License plate
-**Store code**	            | Store code for the delivery line	
-
+**Item number**             | The item identifier as sent by the trading partner	| Used to find matching PO line in conjunction with document setting ‘Item id source’
+**Description**             | Purchase order line text	
+**Purchase quantity**       | Ordered quantity	
+**Shipped quantity**        | Shipped quantity	
+**Invoice quantity**        | Invoice quantity for this invoice	                                        | Invoice line > Invoice quantity <br> Converted to PO’s unit
+**Unit**                    | Unit of measure for purchase, shipped and invoice quantity	            | Converted to PO’s unit
+**Price unit**              | The quantity of the product that is covered by the purchase price. Usually 1	| Converted to PO’s price unit for matching
+**Price multiplier**        | Value to be used to obtain a new value. NetUnitPrice/UnitPrice. Example price before discount $100 and after discount $90 has a price multiplier of 0.9	
+**Includes GST**            | Unit prices and unit discounts includes GST	
+**Unit Price** ***	        | Unit price for the item	                                                | Invoice line > Unit price <br> Converted based on PO unit and price unit
+**Unit discount** ***	    | The amount of the line discount per price unit	                        | Invoice line > Discount
+**Unit discount percentage**    | Discount percentage	                                                | Invoice line > Discount percentage
+**Net unit price** ***	    | Unit price net of all discounts	
+**Misc charges**            | Miscellaneous charge/allowance allocated to purchase order line	
+**Line discount**           | Total discount amount for the purchase order line	
+**Line amount excluding tax**   | Net line amount excluding tax	                                        | Invoice line > Amount
+**Line amount tax**         | Line amount tax	
+**Line amount including tax**   | Net line amount including tax	
+**Tax type**                | Identification of the type tax. Example GST, VAT	
+**Tax rate**                | Rate of tax	
+**Currency**                | Currency	
+**Inners quantity**         | Unit conversion quantity of inners to outers. <br> Example qty 12 ea (inner) per box (outer)	
+**Inners unit**             | Inners unit of measure as setup on item’s pack size
+**Pack quantity**           | Package quantity	
+**Pack unit**               | Package unit of measure	
+**Configuration**           | Inventory dimension - Configuration	
+**Color**                   | Inventory dimension - Colour	
+**Size**                    | Inventory dimension - Size	
+**Style**                   | Inventory dimension - Style	
+**Site**                    | Storage dimension - Site	
+**Requested receipt date**  | The requested receipt date	
+**Ship date**               | Date the goods were shipped	
+**Consignment note number** | Consignment note identification for the delivery	
+**Packing slip / Delivery note**    | 	Packing slip/Delivery note number	| Used for Total product receipt matching. If three-way matching is on Pending invoice will be created if packing slip doesn’t match
+**Bill of lading ID**       | Bill of lading number	
+**Shipping carrier**        | Shipping carrier	
+**EDI carrier mode**        | Code specifying the method or type of transportation for the shipment	
+**Carrier qualifier**       | Code designating the system/method of code structure used for shipping carrier	
+**Requester**               | Requester	
+**Attention information**   | Attention information	
+**Delivery name**           | Address for Delivery – Delivery name	
+**Street number**           | Ship to - Street number	
+**Street**                  | Ship to - Street	
+**City**                    | Ship to - City	
+**County**                  | Ship to - County	
+**State**                   | Ship to - State	
+**ZIP/postal code**         | Ship to - ZIP/postal code	
+**Country/region**          | Ship to - Country/region	
+**Store code**              | Ship to - Store code	
+**Delivery terms**          | Delivery terms	
+**Delivery mode**           | Delivery mode	
+**Item note**               | Contains any free form text pertinent to the invoice line	
