@@ -239,7 +239,7 @@ The following EDI Header staging fields are available on the header page.
 **Shipping carrier**        | Shipping carrier for the consignment	                | • Load > Shipping carrier
 **Carrier qualifier**       | Code designating the system/method of code structure used for shipping carrier	
 **EDI carrier mode**        | Code specifying the method or type of transportation for the shipment. Mapped value setup in [Carrier mode](../SETUP/VENDOR%20SETUP/Carrier%20mode.md).
-<ins>*Delivery**</ins>		
+<ins>**Delivery**</ins>		
 **Delivery name**           | Ship to - Name
 **Our account number**      | Ship to - Our account number in the vendor’s system. As per ‘Our account number’ loaded on Vendor’s Invoice account	
 **Store code**              | Ship to - Store code	
