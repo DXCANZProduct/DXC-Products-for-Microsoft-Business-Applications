@@ -60,7 +60,7 @@ The following setup is prerequisites for the vendor advanced shipping notice
 ## Processing
 Inbound files have the following three steps:
 1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**
-2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > Vendor documents > Vendor purchase order acknowledgement**
+2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > Vendor documents > Vendor advanced shipping notice**
 3. **Staging to target** - The staging record/s is processed to target. If the ASN is succefully processed a target D365 arrival journal, product receipt or load will be created for the purchase order(s).
 
 ### Create document
@@ -88,7 +88,7 @@ If the processing of **Import to staging** errors, the Inbound file's **Status**
 **Check Template**  |	Identify a template for the Vendor/Document type. This will be used to identify the whereabouts of data within the file
 
 #### Possible issues and fixes
-**Import to staging** errors for Vendor purchase order acknowledgements can be viewed in:
+**Import to staging** errors for Vendor advanced shipping notice can be viewed in:
 - **EDI > Files > Inbound files** filtered to **Status** set to _Error_
 - **EDI > Document maintenance**, tab **Vendor documents**, tile **File import errors**
 
