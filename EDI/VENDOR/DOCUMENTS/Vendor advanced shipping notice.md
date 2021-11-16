@@ -31,8 +31,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 EDI vendors can send an advanced shipping notice (ASN) for one or multiple purchase orders. <br>
 An EDI ASN can be received and processed for D365 purchase orders not sent to the vendor via EDI.
-
 The following subsections will describe how to view and process the ASN. <br>
+
 Based on [document settings](../SETUP/SETTING%20PROFILES/Vendor%20advanced%20shipping%20notice.md), the EDI ASN can either:
 - Basic warehousing (Ship to warehouse is setup for basic warehousing):
     - Create arrival journal, but leave unposted
