@@ -87,7 +87,12 @@ Used to map D365/EDI value to 3PL's value and assigned on 3PL Trading partner: <
 
 #### Journal names assigned on 3PL Trading partner
 
-	- Item arrival journal name to be used to register stock for incoming stock
+- Inventory management setup and which EDI document used for: <br>
+	- Journal name with **Journal type** set to _Item arrival_. To be used to register stock for incoming stock receipts: **Inventory management > Setup > Journal names > Warehouse management** <br> 
+		-  Shipment receipt - Purchase order
+		-  Shipment receipt - Transfer order
+		-  Shipment receipt - Return order
+		-  Shipment receipt - Voyage
 
 #### 3PL Document type setup
 Setup Document types which will be assigned on 3PL Trading partner. <br>
