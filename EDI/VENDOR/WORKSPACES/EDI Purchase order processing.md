@@ -62,7 +62,8 @@ Filters to D365 purchase orders where **Acknowledgement status** is set to _Conf
 
 The **Acknowledgement status** will update once the purchase order confirmation has been sent to the Vendor. See [link](../DOCUMENTS/Vendor%20purchase%20order%20acknowledgement.md#processing-purchase-order-confirmation-poc) for more details on how to send a confirmation to the vendor.
 
-In addition, from within the workspace it is possible to view and even process information relating to the selected records. The following buttons are available from the Workspace, similar to the buttons found to manually process the confirmation on the purchase order.
+In addition, from within the workspace it is possible to view and even process information relating to the selected records. <br>
+The following buttons are available in the Workspace and is similar to the buttons found to manually process the confirmation on the purchase order.
 
 Field	              | Description
 |:--                |:--
