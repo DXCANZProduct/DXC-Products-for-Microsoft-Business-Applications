@@ -43,9 +43,16 @@ Code mapping the 3PL's value to a D365 Inventory journal name. <br>
 -	Select **Default** to identify the default journal name to be used when not supplied by the 3PL's incoming document
 
 ## Where used
-Inventory journal name is assigned on the [3PL Trading partner's](../Trading%20partner.md) Options field called **Inventory journal name mapping**. <br>
-Used on field **InventJournalNameIdExternal** on EDI documents:
+Inventory status Id mapping is assigned on the [3PL Trading partner's](../Trading%20partner.md) Options field called **Inventory status Id mapping**. <br>
+Used on field **InventStatusId** on EDI documents:
+- Picking list registration
+- Shipment receipt - Purchase order
+- Shipment receipt - Transfer order
+- Shipment receipt - Return order
+- Shipment receipt - Voyage
+- Inventory adjustment - Transfer (InventStatusIdFrom and InventStatusIdTo)
 - Inventory adjustment - Counting
+- Inventory adjustment - Reconciliation
 - Inventory adjustment - Movement
 
 ## Data entities:
