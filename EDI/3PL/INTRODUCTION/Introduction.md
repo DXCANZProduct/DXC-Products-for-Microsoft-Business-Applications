@@ -59,16 +59,24 @@ Used to map D365/EDI value to 3PL's value and assigned on 3PL Trading partner: <
 
 - 3PL setup and which EDI document (and field) it is mapped to/from: **EDI > Setup > 3PL setup** <br>
 	- [Inventory journal name mapping](../)
-		- Vendor purchase order (OrderType)
-		- 
+		- Inventory adjustment - Counting (InventJournalNameIdExternal)
+		- Inventory adjustment - Movement (InventJournalNameIdExternal)
 	- [Disposition code mapping](../)
-		- 
+		- Shipment receipt - Return order (DispositionCodeExternal)
 	- [Inventory status Id mapping](../)
-		- 
+		- Picking list registration (InventStatusId)
+		- Shipment receipt - Purchase order (InventStatusId)
+		- Shipment receipt - Transfer order (InventStatusId)
+		- Shipment receipt - Return order (InventStatusId)
+		- Shipment receipt - Voyage (InventStatusId)
+		- Inventory adjustment - Transfer (InventStatusIdFrom and InventStatusIdTo)
+		- Inventory adjustment - Counting (InventStatusId)
+		- Inventory adjustment - Reconciliation (InventStatusId)
+		- Inventory adjustment - Movement (InventStatusId)
 	- [Transaction direction mapping](../)
-		- 
+		- Inventory adjustment - Movement (TransactionDirection)
 	- [Order purpose code](../)
-
+		- Picking list registration (OrderPurpose)
 
 #### 3PL Document type setup
 Setup Document types which will be assigned on 3PL Trading partner. <br>
@@ -113,19 +121,19 @@ Ability to manually export or review outbound files
 Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents > 3PL documents**
 - [Picking list]()
-- Picking list registration
-- Shipment advice - Purchase order
-- Shipment advice - Transfer order
-- Shipment advice - Return order
-- Shipment advice - Voyage
-- Shipment receipt - Purchase order
-- Shipment receipt - Transfer order
-- Shipment receipt - Return order
-- Shipment receipt - Voyage
-- Inventory adjustment advice - Transfer
-- Inventory adjustment advice - Counting
-- Inventory adjustment advice - Reconciliation
-- Inventory adjustment advice - Movement
+- [Picking list registration]()
+- [Shipment advice - Purchase order]()
+- [Shipment advice - Transfer order]()
+- [Shipment advice - Return order]()
+- [Shipment advice - Voyage]()
+- [Shipment receipt - Purchase order]()
+- [Shipment receipt - Transfer order]()
+- [Shipment receipt - Return order]()
+- [Shipment receipt - Voyage]()
+- [Inventory adjustment advice - Transfer]()
+- [Inventory adjustment advice - Counting]()
+- [Inventory adjustment advice - Reconciliation]()
+- [Inventory adjustment advice - Movement]()
 
 [Process overview](Process%20overview.md) for 3PL EDI documents.
 
