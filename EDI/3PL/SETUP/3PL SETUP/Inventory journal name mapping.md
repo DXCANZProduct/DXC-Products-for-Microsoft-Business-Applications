@@ -35,8 +35,8 @@ Users can access the form by navigating to **EDI > Setup > 3PL setup > Inventory
 Code mapping the 3PL's value to a D365 Inventory journal name. <br>
 
 - Click **New** to create a new record
--	In the **Name** field, enter the name of the inventory journal name
--	In the **Description** field, enter a description of the inventory journal name
+-	In the **Name** field, enter the name of the inventory journal name group
+-	In the **Description** field, enter a description of the inventory journal name group
 -	In the **Mappings** FastTab, select **Add** to create a new record
 -	Select the **Movement** journal name. Options are obtained from **Name** setup at **Inventory management > Setup > Journal names > Inventory**
 -	Specify the 3PL's value used to identify the **External type Id**
