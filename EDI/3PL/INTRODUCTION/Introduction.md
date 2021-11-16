@@ -85,6 +85,10 @@ Used to map D365/EDI value to 3PL's value and assigned on 3PL Trading partner: <
 	- [Order purpose code](../)
 		- Picking list registration (OrderPurpose)
 
+#### Journal names assigned on 3PL Trading partner
+
+	- Item arrival journal name to be used to register stock for incoming stock
+
 #### 3PL Document type setup
 Setup Document types which will be assigned on 3PL Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Document types**
