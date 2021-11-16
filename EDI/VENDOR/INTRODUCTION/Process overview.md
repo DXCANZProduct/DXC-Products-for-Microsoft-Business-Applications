@@ -67,6 +67,10 @@ Based on document settings, the EDI ASN can either:
     - Create an open load
 
 ### Purchase invoice
+Based on document settings, the EDI purchase invoice can either:
+- Create a pending purchase order invoice where the match status fails
+- Post the purchase order invoice if match status passes, or
+- Submit pending purchase order invoice to workflow
 
 ## Purchase order
 The processed EDI record(s) can be viewed for a purchase order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Purchase order page.<br>
