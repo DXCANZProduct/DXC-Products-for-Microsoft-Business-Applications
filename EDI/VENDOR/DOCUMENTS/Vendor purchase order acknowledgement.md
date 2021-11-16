@@ -172,7 +172,7 @@ Field	                  | Description
 **Send to EDI**           |	Select the **Send to EDI** button to create Purchase Order Confirmation (POC) staging table record. The button will only be available if a POA has been received from the Vendor.
 **Reset flag**            |	Select the **Reset flag** button to reset the **EDI status** to allow for re-sending of the POC to the staging table. Note: The POC record on the staging table should be deleted manually before the sales order flag is reset.
 
-## Processing
+## Processing Purchase order confirmation (POC)
 The POC can be sent [manually](#manually-processing-purchase-order-confirmation) or [automatically](#automatically-processing-purchase-order-confirmation) to the vendor.
 Both of these options will be discussed in the following subsections.
 
