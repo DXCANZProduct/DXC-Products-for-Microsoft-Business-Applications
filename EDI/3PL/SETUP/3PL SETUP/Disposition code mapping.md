@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI 3PL]
-description: [EDI 3PL setup - Inventory journal name mapping]
+description: [EDI 3PL setup - Disposition code mapping]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 17/11/2021
@@ -28,26 +28,32 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # 3PL setup
-## Setup Inventory journal name mapping
+## Setup Disposition code mapping
 
-Users can access the form by navigating to **EDI > Setup > 3PL setup > Inventory journal name mapping**
+Users can access the form by navigating to **EDI > Setup > 3PL setup > Disposition code mapping**
 
-Code mapping the 3PL's value to a D365 Inventory journal name. <br>
+Code mapping the 3PL's value to a D365 Disposition code. <br>
 
 - Click **New** to create a new record
--	In the **Name** field, enter the name of the inventory journal name
--	In the **Description** field, enter a description of the inventory journal name
+-	In the **Name** field, enter the name of the disposition code mapping group
+-	In the **Description** field, enter a description of the disposition code mapping group
 -	In the **Mappings** FastTab, select **Add** to create a new record
--	Select the **Movement** journal name. Options are obtained from **Name** setup at **Inventory management > Setup > Journal names > Inventory**
--	Specify the 3PL's value used to identify the **External type Id**
--	Select **Default** to identify the default journal name to be used when not supplied by the 3PL's incoming document
+-	Select the **Disposition code** from the available list. Options are obtained from **Disposition code** setup at **Sales and marketing > Setup > Returns > Disposition codes**
+-	Specify the 3PL's value used to identify the **Value**
 
 ## Where used
-Inventory journal name is assigned on the [3PL Trading partner's](../Trading%20partner.md) Options field called **Inventory journal name mapping**. <br>
-Used on field **InventJournalNameIdExternal** on EDI documents:
+Inventory journal name is assigned on the [3PL Trading partner's](../Trading%20partner.md) Options field called **Inventory status Id mapping**. <br>
+Used on field **InventStatusId** on EDI documents:
+- Picking list registration
+- Shipment receipt - Purchase order
+- Shipment receipt - Transfer order
+- Shipment receipt - Return order
+- Shipment receipt - Voyage
+- Inventory adjustment - Transfer (InventStatusIdFrom and InventStatusIdTo)
 - Inventory adjustment - Counting
+- Inventory adjustment - Reconciliation
 - Inventory adjustment - Movement
 
 ## Data entities:
-- Inventory journal name mapping
-- Inventory journal name mapping lines
+- Disposition code mapping
+- Disposition code mapping lines
