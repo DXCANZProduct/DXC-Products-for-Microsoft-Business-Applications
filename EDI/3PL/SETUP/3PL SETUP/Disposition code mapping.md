@@ -42,17 +42,9 @@ Code mapping the 3PL's value to a D365 Disposition code. <br>
 -	Specify the 3PL's value used to identify the **Value**
 
 ## Where used
-Inventory journal name is assigned on the [3PL Trading partner's](../Trading%20partner.md) Options field called **Inventory status Id mapping**. <br>
-Used on field **InventStatusId** on EDI documents:
-- Picking list registration
-- Shipment receipt - Purchase order
-- Shipment receipt - Transfer order
+Disposition code mapping is assigned on the [3PL Trading partner's](../Trading%20partner.md) Options field called **Disposition code mapping**. <br>
+Used on field **DispositionCodeExternal** on EDI documents:
 - Shipment receipt - Return order
-- Shipment receipt - Voyage
-- Inventory adjustment - Transfer (InventStatusIdFrom and InventStatusIdTo)
-- Inventory adjustment - Counting
-- Inventory adjustment - Reconciliation
-- Inventory adjustment - Movement
 
 ## Data entities:
 - Disposition code mapping
