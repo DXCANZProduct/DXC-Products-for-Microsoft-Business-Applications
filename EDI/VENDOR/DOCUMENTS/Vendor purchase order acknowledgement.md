@@ -534,6 +534,6 @@ If update to purchase order line is allowed, column **D365 PO line update** indi
 **Country/region**          | Ship to - Country/region	
 **Store code**              | Ship to - Store code	
 **Batch number**            | Batch number for the item	                                                                        | Batch
-**Manufacturing date**      | Vendor’s manufacturing date for the batch	                                                        | If Batch doesn't exist, used to create batch
-**Expiration date**         | Vendor’s expiration date for the batch	                                                        | If Batch doesn't exist, used to create batch
+**Manufacturing date**      | Vendor’s manufacturing date for the batch	                                                        | If D365 batch doesn't exist, used to create new batch
+**Expiration date**         | Vendor’s expiration date for the batch	                                                        | If D365 batch doesn't exist, used to create new batch
         
