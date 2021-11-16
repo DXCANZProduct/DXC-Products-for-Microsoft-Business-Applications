@@ -31,7 +31,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ## EDI Purchase order processing
 
-The EDI purchase order processing workspace provides a quick and easy way to view the pending actions for EDI purchase orders. <br>
+The EDI purchase order processing workspace provides a quick and easy way to view the pending actions for EDI purchase orders, as well as validation warning and errors for EDI incoming documents. <br>
 Users can access the **EDI Purchase order processing workspace** by navigating to **EDI > Vendor workspaces > EDI Purchase order processing**. <br> 
 
 The workspace is split into two tabs:
@@ -44,6 +44,7 @@ The workspace is split into two tabs:
 The following subsections will discuss the various tabs available on the workspace.
 
 ### Pending
+The following is available on the **Pending** tab as tiles and tabs.
 
 #### Pending POA
 Filters to D365 purchase orders where **Acknowledgement status** is set to _Acknowledgement pending_. <br>
