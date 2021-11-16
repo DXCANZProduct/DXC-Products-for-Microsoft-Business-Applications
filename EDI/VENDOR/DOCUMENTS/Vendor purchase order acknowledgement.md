@@ -136,7 +136,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example line errors:
 **Error message**                     | **Error type**         | **Method to fix**
 :------------------------------------ |:----                   |:----
-Item not found: %	                  | Item not found         | **EDI > Documents > Vendor documents > Vendor purchase order acknowledgement** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's <br> [**Setting profile**](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
+Item not found: %	                  | Item not found         | **EDI > Documents > Vendor documents > Vendor purchase order acknowledgement** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's [Setting profile](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
 
 ### Validation
 
@@ -172,7 +172,7 @@ Field	                  | Description
 **Send to EDI**           |	Select the **Send to EDI** button to create Purchase Order Confirmation (POC) staging table record. The button will only be available if a POA has been received from the Vendor.
 **Reset flag**            |	Select the **Reset flag** button to reset the **EDI status** to allow for re-sending of the POC to the staging table. Note: The POC record on the staging table should be deleted manually before the sales order flag is reset.
 
-## Processing
+## Processing Purchase order confirmation (POC)
 The POC can be sent [manually](#manually-processing-purchase-order-confirmation) or [automatically](#automatically-processing-purchase-order-confirmation) to the vendor.
 Both of these options will be discussed in the following subsections.
 
@@ -534,6 +534,6 @@ If update to purchase order line is allowed, column **D365 PO line update** indi
 **Country/region**          | Ship to - Country/region	
 **Store code**              | Ship to - Store code	
 **Batch number**            | Batch number for the item	                                                                        | Batch
-**Manufacturing date**      | Vendor’s manufacturing date for the batch	                                                        | If Batch doesn't exist, used to create batch
-**Expiration date**         | Vendor’s expiration date for the batch	                                                        | If Batch doesn't exist, used to create batch
+**Manufacturing date**      | Vendor’s manufacturing date for the batch	                                                        | If D365 batch doesn't exist, used to create new batch
+**Expiration date**         | Vendor’s expiration date for the batch	                                                        | If D365 batch doesn't exist, used to create new batch
         
