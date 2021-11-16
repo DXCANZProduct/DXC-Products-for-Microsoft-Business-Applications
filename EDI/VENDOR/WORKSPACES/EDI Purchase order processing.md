@@ -71,15 +71,15 @@ Field	              | Description
 **Send to EDI**	    | Select the **Send to EDI** button to create Purchase Order Confirmation staging table record. This will also create another version in D365 Purchase order confirmation journal for the purchase order. If the updated order values don’t match to the Vendor’s POA, a purchase order change is created. An order purpose of Confirmation is sent when the order matches the Vendor’s POA.
 
 ### Validation
-Warnings and errors are identified based on the validation profiles setup for the incoming vendor documents at **EDI > Setup > Document types** and assigned to the incoming document when setting up the customer trading partner.
+Warnings and errors are identified based on the validation profiles setup for the incoming vendor documents at **EDI > Setup > Document types** and assigned to the incoming document when setting up the vendor trading partner.
+
 > Note: For further information relating to validation refer to the [validation setup](../SETUP/Validation%20profiles.md)
 
 > Note: If a document has both Errors and warnings, it will be displayed in the Error list only.
 
 Documents in **Error** status will be managed in the [Document maintenance Workspace](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md). <br> 
-This workspace provides users a summarized view of validation errors/warnings for incoming documents.
 
-Field	              | Description
+Field	            | Description
 |:--                |:--
 **Version log**     | View all log versions for the document. When a document’s status is reset and reprocessed a new log version is created.
 
