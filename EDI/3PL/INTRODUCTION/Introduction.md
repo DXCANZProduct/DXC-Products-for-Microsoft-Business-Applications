@@ -117,7 +117,7 @@ Ability to manually import or review inbound files
 Ability to manually export or review outbound files
 - [Outbound files](../../CORE/Managing%20files/Outbound%20files.md)
 
-### 3PLr documents
+### 3PL documents
 Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents > 3PL documents**
 - [Picking list]()
