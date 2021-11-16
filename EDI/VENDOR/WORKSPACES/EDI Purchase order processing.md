@@ -74,8 +74,7 @@ Field	              | Description
 Warnings and errors are identified based on the validation profiles setup for the incoming vendor documents at **EDI > Setup > Document types** and assigned to the incoming document when setting up the vendor trading partner.
 
 > Note: For further information relating to validation refer to the [validation setup](../SETUP/Validation%20profiles.md)
-
-> Note: If a document has both Errors and warnings, it will be displayed in the Error list only.
+> If a document has both Errors and warnings, it will be displayed in the Error list only.
 
 Documents in **Error** status will be managed in the [Document maintenance Workspace](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md). <br> 
 
