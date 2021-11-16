@@ -119,7 +119,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 :---------------------- |:----                   |:----
 Purchase order 'x' is no longer confirmed   | Processing error  | Confirm the D365 purchase order
 Insufficient open deliver remainder in purchase order lines for item 'x'    | Processing line error | If increased quantity is acceptable, increase deliver remainder or the over delivery %
-Item not found: %	                  | Item not found         | **EDI > Documents > Vendor documents > Vendor advanced shipping notice** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's <br> [**Setting profile**](../SETUP/SETTING%20PROFILES/Vendor%20advanced%20shipping%20notice.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
+Item not found: %	                  | Item not found         | **EDI > Documents > Vendor documents > Vendor advanced shipping notice** and/or <br> **Product information management > Products > Released products**. <br> Dependening on **Item Id source** assigned to Trading partner’s Document's [**Setting profile**](../SETUP/SETTING%20PROFILES/Vendor%20advanced%20shipping%20notice.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
 
 ### Staging line validation - Advanced shipping notice
 
