@@ -138,7 +138,7 @@ Users can access the forms by navigating to **EDI > Documents > Vendor documents
 - [Vendor advanced shipping notice](../DOCUMENTS/Vendor%20advanced%20shipping%20notice.md)
 - [Purchase invoice](../DOCUMENTS/Purchase%20invoice.md)
 
-[Process overview](Process%20overview.md) for purchase order, purchase order acknowledgement and purchase order confirmation documents.
+[Process overview](Process%20overview.md) for Vendor EDI documents.
 
 ### Workspaces
 The following workspaces are available:
