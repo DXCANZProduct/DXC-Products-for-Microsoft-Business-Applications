@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI Customer]
-description: [EDI Customer Documents - Customer advanced shipping notice]
+title: [EDI Vendor]
+description: [EDI Vendor Documents - Vendor advanced shipping notice]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 5/11/2021
+ms.date: 16/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,90 +27,286 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Customer advanced shipping notice (ASN)
+# Vendor advanced shipping notice (ASN)
 
-EDI customers may require an advanced shipping notice (ASN) for a sales order.
+EDI vendors could be able to send an advanced shipping notice (ASN) for one or multiple purchase orders. 
+An ASN can be received and processed for D365 purchase orders not sent to the vendor via EDI.
 
-> Note: Customer advanced shipping notice can also be sent for a sales order not created via EDI.
+The following subsections will describe how to view and process the ASN. <br>
+Based on [document settings](../SETUP/SETTING%20PROFILES/Vendor%20advanced%20shipping%20notice.md), the EDI ASN can either:
+- Basic warehousing (Ship to warehouse is setup for basic warehousing):
+    - Create arrival journal, but leave unposted
+    - Create and post arrival journal
+    - Create and post arrival journal, and post the product receipt for the registered stock
+- Advanced warehousing (Ship to warehouse is setup for advanced warehousing):
+    - Create an open load
 
-The following subsections will describe how to view, process and send Customer advanced shipping notice to applicable Customer Trading partners. <br>
-Viewing the [Staging table records](#view-staging-table-records) will also be discussed. <br>
-The created ASN record(s) can be viewed for a sales order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Sales order page.<br>
+Viewing the [Staging table records](#view-staging-table-records) will also be discussed. <br> 
+The processed EDI ASN record(s) can be viewed for a purchase order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Purchase order page.<br>
 
 ## Prerequisites
-The following setup is prerequisites for the customer advanced shipping notice
+The following setup is prerequisites for the vendor advanced shipping notice
 
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-2. Create [Setting profile](../SETUP/SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md) for the document.
-3. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md) for the document.
-4. If the customer [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
-5. Add and enable the customer advanced shipping notice to the [Customer trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Vendor%20advanced%20shipping%20notice.md) for the document.
+1. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Vendor%20advanced%20shipping%20notice.md) for the document.
+1. If the vendor [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
+1. Add and enable the vendor advanced shipping notice document to the [Vendor trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
-    - File name setup
-6. Assign [ASN line configuration](../SETUP/Warehouses.md) to all the 'ship from' warehouses.
+    - Validation profile
+    - Search mask
 
 ## Processing
+Inbound files have the following three steps:
+1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**
+2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > Vendor documents > Vendor purchase order acknowledgement**
+3. **Staging to target** - The staging record/s is processed to target. If the ASN is succefully processed a target D365 arrival journal, product receipt or load will be created for the purchase order(s).
 
-### Post packing slip
-When posting a packing slip for a sales order, it is possible to add consignment information.
--	From the packing slip posting form, select the **Assign consignment note** button
--	To create a new consignment note record, select **New**
-    - Update the **Consignment note number**
-    - Select the **Shipping carrier** and **Carrier service**
--	To select a previously created consignment note, select the record
-> Note: Consignment notes will be matched to the delivery based on the Delivery Name, Delivery address, Customer account and warehouse.
--	Click **Assign** to attach the consignment note number to the packing slip
--	**Send to EDI**: Where the **ASN strategy** has been configured to:
-    - **Single packing slip**, the Send to EDI flag will be set to _Yes_.  Once the packing slip is posted, a Customer advanced shipping notice record will be created in the staging table.
-    - **Consolidated packing slip**, the Send to EDI flag will be set to _No_. Users still need to assign the Consignment note, but the ASN must be sent to EDI from the [Consignment notes](#consignment-notes) page before a Customer advanced shipping notice staging record will be created.
+### Create document
+![alt text](../../CORE/Image/Create_Document.png "Create document")
 
-> Note: **ASN strategy** is setup on the [Customer advanced shipping notice setting profile](../SETUP/SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)
-and assigned to the Trading partner when setting up the document on their outgoing documents. 
+### Header checks for Vendor advanced shipping notice
+Header checks are performed when:
+1. Importing Vendor advanced shipping notice file
+2. Processing from import to staging
+3. Processing from staging to target
 
-> Note: If the packing slip was posted without assigning a consignment note, it is possible to [add the packing slip](#add-packing-slips-to-a-consignment-note) to a consignment note afterwards.
-> The Customer advanced shipping notice setting profile, has the option to **Warn when consignment note not assigned**.
+![alt text](../IMAGE/HeaderChecks_VendorASN.png "Header checks for Vendor advanced shipping notice")
 
-### Consignment notes
-EDI requires the delivery to be assigned to a consignment note. The consignment note can contain one or multiple deliveries.
-The consignment note can be created when posting the packing slip, or by following the steps as per following subsection.
+## Step 1 - Import
+When an advanced shipping notice file is imported, the file name is key to identifying the vendor and therefore the document template. See [Trading partners](../../CORE/Setup/Trading%20partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
 
-#### Create a consignment note
-To open the **Consignment notes** page, go to **EDI > Inquiries and reports > Consignment notes**.
--	To create a new consignment note, select **New**
--	Select the **Customer account** for the consignment
--	Enter the **Consignment note number**
--	Select the **Shipping carrier** and **Carrier service**
--	Select the **Delivery address information**
+> Note: The file mask is used to identify the trading partner and therefore template
 
-#### Add packing slips to a consignment note
-To open the **Consignment notes** page, go to **EDI > Inquiries and reports > Consignment notes**. 
--	Select the applicable consignment note
--	To add packing slips, select **Add** from the consignment lines
--	A list of unassigned packing slips for the customer and delivery address will be displayed
--	Select valid record(s) to be assigned to the consignment note
--	Select **Add lines**
+## Step 2 - Import to staging - Inbound file validation
+When the advanced shipping notice file is retrieved and imported, there are various validations that are completed before the staging record is created in the EDI staging table.
+If the processing of **Import to staging** errors, the Inbound file's **Status** will be set to _Error_ and no staging record created.
 
-#### Create ASN staging record from consignment notes
-To open the **Consignment notes** page, go to **EDI > Inquiries and reports > Consignment notes**. 
--	Select the applicable consignment note
--	Select **Send to EDI** to send all consignment information to the Customer advanced shipping notice staging (ASN) table
--	If required, select **Reset flag** to update the consignment and resend the ASN. The ASN record should be deleted in the staging page and outbound files before the flag is reset.
+**Rule Id**         |	**Details**         
+:--                 |:--                  
+**Check Template**  |	Identify a template for the Vendor/Document type. This will be used to identify the whereabouts of data within the file
+
+#### Possible issues and fixes
+**Import to staging** errors for Vendor purchase order acknowledgements can be viewed in:
+- **EDI > Files > Inbound files** filtered to **Status** set to _Error_
+- **EDI > Document maintenance**, tab **Vendor documents**, tile **File import errors**
+
+At this step the issues are usually around the file not matching the template.
+- Does the file have the correct template assigned (General tab, field **Template**):
+  - **No**: Use **Reset template** to assign a different template. If this should apply to future documents for the Trading partner, also update in **Trading partners**.
+  - **Yes**: Review **Log** and fix the applicable template in **EDI > Setup > Document types**. Examples issues are date format, new field.
+
+Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
+
+## Step 3 - Staging to target
+If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 arrival journal, product receipt or load won't be created.
+
+#### Possible issues and fixes
+**Staging to target** errors for Vendor advanced shippping notice can be viewed in:
+- **EDI > Documents > Vendor documents > Vendor advanced shipping notice** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **Vendor documents**, tile **Advanced shipping notice errors**
+- **EDI > Document maintenance**, tab **Vendor documents**, **Documents** page, tab **ASN**
+
+At this step the issues are usually around mapping/business logic issues.
+Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
+
+> Note: When the Version log displays an **Error type** of _Processing error_, the processing has stopped because of a standard D365 error and the **Message** will display the standard D365 error. <br>
+> Note: Similar to manually processing a D365 transaction, EDI will stop at the first processing error and only this error is displayed. Fixing the error and reprocessing might result in subsequent standard processing errors which need to be dealt with.
+
+#### Example errors:
+**Error message**       | **Error type**         | **Method to fix**
+:---------------------- |:----                   |:----
+Purchase order 'x' is no longer confirmed   | Processing error  | Confirm the D365 purchase order
+Insufficient open deliver remainder in purchase order lines for item 'x'    | Processing line error | If increased quantity is acceptable, increase deliver remainder or the over delivery %
+Item not found: %	                  | Item not found         | **EDI > Documents > Vendor documents > Vendor advanced shipping notice** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's <br> [**Setting profile**](../SETUP/SETTING%20PROFILES/Vendor%20advanced%20shipping%20notice.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
+
+### Staging line validation - Advanced shipping notice
+
+![alt text](../IMAGE/LineChecks_VendorASN.png "Item checks for Vendor advanced shipping notice")
+
+**Rule Id**                 | **Details**                                               | Error    
+:---                        |:---                                                       |:---              
+**PO number**               | Find the D365 PO number to which the ASN belongs          | Error at Staging table.  <br> No arrival/load created
+**PO line number**          | Find the D365 purchase order line number to which the ASN line belongs    | Error at Staging table. <br> No arrival/load created
+**No Valid Item**           | No valid item based on the different options available    | Error at Staging table. <br> No arrival/load created
 
 
-#### Auto generate a consignment note number
-The shipping carriers page has an additional option located on the EDI FastTab to enable users to **Auto generate consignment note Id**.  Where this parameter is set to Yes, the **Pro number sequence** must also be set.
+### Validation
 
-To enable the consignment note to be auto generated, the following criteria must be met:
--	**Carrier** must be specified on the sales order
--	**Carrier** must be specified on the Picklist or WHS shipment
--	**ASN strategy** must be _Single packing slip_
--	The packing slip must be posted from the **Pick list registration** or the **WHS Shipment**
+[Validation profiles](../SETUP/VALIDATION%20PROFILES/Vendor%20advanced%20shipping%20notice.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
+-	**Info** - An infolog is displayed with information only, it is not identified as a warning
+-	**Warning** - An infolog is displayed with a warning. It is possible to carry on processing
+-	**Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error
 
+The following table describes each validation option for the Vendor advanced shipping notice document. It also describes if the validation rule is not met, but only has an info or warning error tolerance, how D365 will react.
+
+Rule Id	                | Details	                            | Info/Warning tolerance updates
+:--                     |:--                                    |:--
+**Warehouse update**    | Where the warehouse received is different to the warehouse on the purchase order	| Update warehouse on target line
+**Batch Id update**     | Where the batch id received is different to the batch id on the purchase order.	| If batch doesn’t exist for item, the batch is created and assigned to target line
+**Serial number update**    | Where the serial number received is different to the serial number on the purchase order	| Add/update serial number on target line
+
+**Site** updates are not allowed and will error at Staging-to-Target step. <br> 
+Additional setup is required to allow warehouse updates for advanced warehouses: **Allow users on mobile devices to receive at another warehouse** for the selected site(s) needs to be set to _Yes_ at **Inventory management > Setup > Inventory breakdown > Sites**
+
+## Processing
+The POC can be sent [manually](#manually-processing-purchase-order-confirmation) or [automatically](#automatically-processing-purchase-order-confirmation) to the vendor.
+Both of these options will be discussed in the following subsections.
+
+### Manually processing Purchase order confirmation
+The **Confirmation** page is accessed by navigating to **Accounts payable > Purchase orders > All purchase orders**, and selecting **Confirmation** on the **EDI** tab on the Action Pane.
+A list of outstanding confirmations can also be accessed by navigating to **EDI > Vendor workspaces > EDI purchase order processing** and either selecting the tile or tab called **Pending POA confirm**.
+
+The Confirmation page is split into five tabs:
+1. [Header](#header) - Manage the POC header's response for ship and receipt dates. 
+3. [Line price](#line-price) - Manage the POC line' price response, example vendor's POA purchase price vs. D365 PO line system price. 
+4. [Line quantity](#line-quantity) - Manage the POC line quantity response, example vendor's POA purchase quantity vs. D365 PO line quantity.
+5. [Line pack](#line-pack) - Manage the POC line pack response, example Vendor pack vs. System pack
+6. [Line inner](#line-inner) - Manage the POC line inner response, example Vendor inner vs. System inner
+
+Vendor mapped values for POA response codes are setup in [POA response code group](../SETUP/VENDOR%20SETUP/POA%20response%20code%20group.md) and assigned to the Vendor trading partner's **POA response code group**.
+
+#### Header
+The following tables describe the fields and buttons that are available on the **Header** tab of the Confirmation page. <br>
+The **Header** POC response codes are managed on this tab.
+
+##### Fields
+Field	                    | Description
+:--                         |:--
+**Response code**           | Vendor’s purchase order acknowledgement header response
+**Vendor delivery date**    | Vendor’s acknowledged delivery date (updates D365 PO header confirmed delivery date)
+**System delivery date**    | D365 purchase order requested receipt date
+**Confirmed delivery date** | Confirmed delivery date (to be sent on Purchase order confirmation)
+**Confirmation auto triggered** | Indicates if the **Confirmed delivery date** is an auto triggered value
+
+
+##### Buttons
+It is possible to update the POC's confirmed values by using the available buttons:
+
+Button                      | Description
+:--                         |:--
+**Confirmation response**   | Manually select Purchase order confirmation response: <br> •	**Accept acknowledgement** – Update PO Header and Lines with POA's Header and Lines data <br> •	**Accept delivery date** – Updates only delivery date <br> • **Auto set confirmation** – Auto trigger all confirmed values for all tabs
+
+
+#### Line price
+The following tables describe the fields and buttons that are available on the **Line price** tab of the Confirmation page. <br>
+
+##### Fields
+Field	                    | Description
+:--                         |:--
+**Log**                     | This will show a warning if Validation failed with error tolerance set to warning
+**Item number**             | Item number from the purchase order
+**Barcode**                 | Barcode for the item number from the purchase order
+**Product Name**            | Item name for the item number from the purchase order
+**Unit**                    | Unit from the purchase line
+**Vendor price**            | Price received in the purchase order acknowledgement, converted to purchase unit where POA unit different to PO unit
+**System price**            | Unit price from D365 purchase order
+**Confirmed price**         | Confirmed price to be sent on the purchase order confirmation (POC) to the vendor. <br> Note: The confirmed price will be set as either the vendor or system values dependant on the parameter set on the [POA setting profile](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md): <br> •	Use vendor price (Y/N), and if Y falls within variance range: <br> •	Maximum negative price variance <br> •	Maximum positive price variance
+**Confirmation auto triggered** | Indicates if the **Confirmed price** is an auto triggered value
+
+
+##### Buttons
+It is possible to update the Purchase order and Confirmed values by using the available buttons for a particular or multiple lines:
+
+Button              | Description
+:--                 |:--
+**Display dimensions**  | Update the dimensions displayed on the Confirmation page
+**Use system price**    | No update to Purchase order. Updates the **Confirmed price** field to the system price
+**Use vendor price**    | Update the **Purchase order** line’s unit price and **Confirmed price** field to the vendor price
+
+
+#### Line quantity
+The following tables describe the fields and buttons that are available on the **Line quantity** tab of the Confirmation page. <br>
+
+##### Fields
+Field	                    | Description
+:--                         |:--
+**Log**                     | This will show a warning if Validation failed with error tolerance set to warning
+**Item number**             | Item number from the purchase order
+**Barcode**                 | Barcode for the item number from the purchase order
+**Product Name**            | Item name for the item number from the purchase order
+**Unit**                    | Unit from the purchase line
+**Vendor quantity**         | Quantity received in the purchase order acknowledgement, converted to purchase unit where POA unit different to PO unit
+**System quantity**         | Purchase quantity for each purchase line (deliver remainder). 
+**Confirmed quantity**      | Confirmed quantity to be sent on the purchase order confirmation (POC) to the vendor. <br> Note: The confirmed quantity will be set as the vendor quantity if min/max validation allows update of deliver remainder, else system quantity
+**Confirmation auto triggered** | 	Indicates if the **Confirmed quantity** is an auto triggered value
+
+##### Buttons
+It is possible to update the Purchase order and Confirmed values by using the available buttons for a particular or multiple lines:
+
+Button                  | Description
+:--                     |:--
+**Display dimensions**  | Update the dimensions displayed on the Confirmation page
+**Use system quantity** | No update to purchase order. Update the **Confirmed quantity** field to the system’s deliver remainder quantity
+**Use vendor quantity** | Update the **Purchase order** line’s deliver remainder quantity and **Confirmed quantity** field to the vendor quantity
+**Clear confirmed quantity**    | No update to purchase order. Clears **Confirmed quantity** on the Confirmation page.
+
+
+#### Line pack
+The following tables describe the fields and buttons that are available on the **Line pack** tab of the Confirmation page. <br>
+
+##### Fields
+Field	                    | Description
+:--                         |:--
+**Log**                     | This will show a warning if Validation failed with error tolerance set to warning
+**Item number**             | Item number from the purchase order
+**Barcode**                 | Barcode for the item number from the purchase order
+**Product Name**            | Item name for the item number from the purchase order
+**Unit**                    | Unit from the purchase line
+**Vendor pack**             | Pack quantity received from the Vendor in the POA
+**System pack**             | Valid system pack for the inner or outer as specified on **Package size - inner/outer** on the settings profile for the Vendor purchase order acknowledgement
+**Confirmed pack**          | Confirmed pack quantity to be sent on the purchase order confirmation (POC) to the vendor. <br> Note: The automatically acknowledged pack (Vendor or System) is set on **Confirmed pack** on the settings profile for the Vendor purchase order acknowledgement.
+**Confirmation auto triggered** | 	Indicates if the **Confirmed pack** is an auto triggered value
+
+##### Buttons
+It is possible to update the Purchase order and Confirmed values by using the available buttons for a particular or multiple lines:
+
+Button                      | Description
+:--                         |:--
+**Display dimensions**      | Update the dimensions displayed on the Confirmation page
+**Use vendor pack**         | No updates to purchase order. Update the **Confirmed pack** field to the **Vendor pack**
+**Use system pack**         | Update the **Confirmed pac**k field to the **System pack**. Calculated by using unit conversion and rounding setup on the item.
+**Clear confirmed pack**    | No update to purchase order. Clears **Confirmed pack** on the Confirmation page.
+
+
+#### Line inner
+The following tables describe the fields and buttons that are available on the **Line inner** tab of the Confirmation page. <br>
+
+##### Fields
+Field	                    | Description
+:--                         |:--
+**Log**                     | This will show a warning if Validation failed with error tolerance set to warning
+**Item number**             | Item number from the purchase order
+**Barcode**                 | Barcode for the item number from the purchase order
+**Product Name**            | Item name for the item number from the purchase order
+**Unit**                    | Unit from the purchase line
+**Vendor inners**           | Vendor # of inners received in the purchase order acknowledgement
+**System inners**           | Valid system # of inners. Note: The number of inners is calculated based on the quantity within an outer and inner. Unit conversion, example 12 ea (inner) in a box (outer).
+**Confirmed inners**        | Confirmed # of inners to be sent on the purchase order confirmation (POC) to the vendor. <br> Note: The automatically acknowledged inner (Vendor or System) is set on **Confirmed inner** on the settings profile for the Vendor purchase order acknowledgement.
+**Confirmation auto triggered** | 	Indicates if the **Confirmed inner** is an auto triggered value
+
+##### Buttons
+It is possible to update the Purchase order and Confirmed values by using the available buttons for a particular or multiple lines:
+
+Button                      | Description
+:--                         |:--
+**Display dimensions**      | Update the dimensions displayed on the Confirmation page
+**Use system inner**	    | No updates to purchase order. Update the **Confirmed inners** field to the **System inner**.
+**Use vendor inner**	    | No updates to purchase order. Update the **Confirmed inners** field to the **Vendor inner**.
+**Clear confirmed inners**	| No update to purchase order. Clears **Confirmed inners** on the Confirmation page.
+
+
+### Automatically processing Purchase order confirmation
+
+Vendor EDI module includes the ability to automatically send vendor purchase confirmations by setting **Purchase order confirmation required** to _Yes (PO is auto-confirmed)_ on the [Vendor purchase order acknowledgement](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md) document setting and assigning it to the Vendor trading partner on the incoming document **Vendor purchase order acknowledgement** (POA). Once a POA is received from the Vendor, EDI will use document settings and validation to automatically send a confirmation to the vendor. <br>
+The confirmations can be viewed in:
+- **History** tab on the D365 Purchase order Action Pane, EDI tab. If **Reference** is set to _Confirmation_, the Confirmation matched the Vendor's POA. If set to _Change_, the Confirmation didn't match and sent a change to the vendor.
+- **EDI > Documents > Vendor purchase order change**. If **EDI order purpose** is set to mapped value for _Confirmation_, the Confirmation matched the Vendor's POA. If set to mapped value for _Change_, the Confirmation didn't match and sent a change to the vendor.
 
 ## View staging table records
-To view the Customer advanced shipping notice staging records, go to **EDI > Documents > Customer documents > Customer advanced shipping notice**. 
-Use this page to review staging and process EDI Customer advanced shipping notice documents to an Outbound file.
+To view the Vendor purchase order acknowledgement staging records, go to **EDI > Documents > Vendor documents > Vendor purchase order acknowledgement**. 
+Use this page to review staging and process EDI Vendor purchase order acknowledgement documents, update the D366 purchase order and send the purchase order confirmation (where set to automatic).
 
 ### List page
 The following EDI fields are available on the list page.
@@ -118,110 +314,205 @@ The following EDI fields are available on the list page.
 **Field**               | **Description**
 :---                    |:---
 **EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
-**Company**             | Legal entity of the document.
+**Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
-**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.
-**Trading partner account**     | Customer account assigned to the staging record.
-**Trading partner GLN**         | The Customer’s global location number is shown here.
-**ASN Number**                  | ASN number record id. The number sequence is determined by [ASN number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
-**Consignment note number**     | Consignment note identification for the delivery
-**Delivery note**               | Packing slip number
-**Created Date and Time**       | The date and time the selected record was created in the staging table.
-**Received**                    | Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
+**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and updated the D365 purchase order and sent a purchase order confirmation (where set to automatic). <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**Trading partner account**     | Vendor account assigned to the staging record.
+**Trading partner GLN**         | The Vendor’s global location number is shown here.
+**Purchase order**              | Purchase order number for the POA record.
+**PO version number**           | The version of the purchase order number being acknowledged.
+**Purchase order date**         | The purchase order date from the PO that is being acknowledged is shown here.
+**Acknowledged status date**    | The purchase order acknowledgement date from the EDI POA is shown here.
+**POA code**                    | POA Header code group as mapped in [POA response code group](../SETUP/VENDOR%20SETUP/POA%20response%20code%20group.md).
+**EDI order purpose**           | The EDI order purpose is shown here.
+**Created date and time**       | The date and time the selected record was created in the staging table.
+**Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
 ### Buttons
-The following buttons are available on the **Customer advanced shipping notice** Action Pane, tab **Advanced shipping notice**.
+The following buttons are available on the **Vendor purchase order acknowledgement**'s Action Pane, tab **Purchase order acknowledgement**.
 
 **Button**	                    | **Description**
 :---                            |:----
-**Create selected files**       | Creates the outbound file for selected records where **Staging to target status** is set to _Not started_.
-**Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_.
-**Outbound files**              | View the outbound file record created by the selected staging record.
+**Process purchase order acknowledgment**   | Process purchase order acknowledgement for the selected record in the staging table.
+**Process all purchase order acknowledgment**   | Process purchase order acknowledgement for the staging records that have a **Staging to target status** set to _Not started_. 
+**Inbound files**               | View the inbound file record the selected staging record.
 **Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
-**Consignment notes**           | View the consignment note relating to the packing slip record.
-**Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
-**Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
+**Purchase order**              | If the EDI POA has been completed it is possible to inquire on the linked Purchase order the POA was created for.
+**Vendor**                      | Inquire on the Vendor for the selected record.
+**Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
+**Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
+**Reset Status**                | You can reset the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
-**Reset template**	            | Reset the template used to create the outbound file. <br> Only enabled where the **Staging to target status** is set to _Not started_.
+**Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
 
-The following buttons are available on the **Customer advanced shipping notice**'s Action Pane, tab **Acknowledgement**.
-The **Acknowledgement** tab is available on all outgoing documents staging pages and enables the user to view the **Functional acknowledgement inbound** that has been received and processed for the outbound document.
+The following buttons are available on the **Vendor purchase order acknowledgement**'s Action Pane, tab **Acknowledgement**.
+The **Acknowledgement** tab is available on all incoming documents staging pages and enables the user to process or view the **Functional acknowledgement outbound** that has been created for the inbound document.
 
 **Button**	                    | **Description**
 :---                            |:----
-**Acknowledgement**             | Use this button to view the **Functional acknowledgement inbound** record received and processed for the outbound document.
+**Send to EDI**                 | If the **Sent** field for the staging record is set to _No_, use this button to create the **Functional acknowledgement outbound** record and also update the **Sent** field to _Yes._
+**Reset flag**                  | If the **Sent** field for the staging record has been set to _Yes_, use this button to reset **Sent** to _No_.
+**Functional acknowledgement**  | Use this button to view the **Functional acknowledgement outbound** record created for the inbound document.
 
 ### Header fields
 The following EDI Header staging fields are available on the header page.
 
-**Field**	            | **Description**	                                      | **Source D365 field**
-:---                    |:---                                                     |:---
-<ins>**Identification FastTab**</ins>		
+**Field**	            | **Description**	                                    | **D365 PO update**
+:---                    |:---                                                   |:---
+<ins>**Identification FastTab**</ins>
 <ins>**Identification**</ins>		
-**EDI number**          | ASN number                                              | EDI parameters > Number sequences > ASN number
-**Company**             | Legal entity of the document
-**Company GLN**         | The company’s global location number is shown here      | 
-**Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	            
-**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.	
+**EDI number**          | EDI Staging table record id                           | History page on D365 PO
+**Company account**     | Legal entity of the document
+**Company GLN**         | The company’s global location number is shown here.   | 
+**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and updated the D365 purchase order and sent a purchase order confirmation (where set to automatic). <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 <ins>**Reset status**</ins>		
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
 <ins>**Overview**</ins>	
-**Packing slip**            | Where **ASN strategy** is set to: <br> • **Single** -  the delivery note number will be populated <br> • **Consolidated** - field will be blank. | Consignments > Packing slip
-<ins>**Details**</ins>	
-**Customer GLN**            | The Customer’s global location number is shown here.	| Sales Order > EDI > Customer GLN
-**Carrier**                 | Shipping carrier for the consignment	                | Consignment > Carrier
-**Carrier service**         | Carrier service for the consignment	                | Consignment > Carrier service
-**Our account number**	    | Our account number in the customers system	        | Customers > Account number
-**Customer account**	    | Customer account for the ASN record	
-**Document date**		    | Document date for the record
-**Name**                    | Customer name	                                        | Consignment > Customer account (Name)
-**Ship date**               | Date the goods were shipped	                        | Consignment > Ship date
-**Scheduled delivery date** | Scheduled date for delivery	                        | Consignment > Scheduled delivery date
-**Sales quantity**          | Total quantity within the consignment	
-**Weight**                  | Total weight within the consignment	
-**Volume**                  | Total volume within the consignment	
-**Shipment count**	        | Total number of packing slips within the consignment	
-**Shipment pallet count**	| Total number of lines within the consignment	
-**Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
-**Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
-<ins>**General FastTab**</ins>	
-**Delivery address information**    | Delivery address details
-**Warehouse address information**   | Warehouse (ship from) address details
+**Purchase order**          | Purchase order number for the POA record	
+**Purchase order date**     | The purchase order date from the PO that is being acknowledged is shown here	
+**Acknowledged status date**    | The purchase order acknowledgement date from the EDI POA is shown here	| Acknowledgement status date
+**POA code**                | POA Header response code	                                                    | Acknowledgement status
+**EDI order purpose**       | The EDI order purpose is shown here	
+<ins>**Status**</ins>		
+**Group control number**    | Group control number for outbound document. To be used to match inbound functional acknowledgement, where applicable.	
+**Sent**                    | Indicates if functional acknowledgement outbound has been sent to the trading partner for the inbound document.	
+<ins>**General FastTab**</ins>
+<ins>**Purchase order acknowledgement**</ins>
+**POA code**                | POA Header response code	                                                    | Acknowledgement status
+<ins>**Details**</ins>
+**Vendor reference**        | Vendor’s order reference	                                                    | Vendor reference
+**Vendor account**          | Vendor account for the POA record	
+**Vendor name**             | Vendor name	
+**Trading partner GLN**     | The vendor’s global location number is shown here	
+**Company GLN**             | The company’s global location number is shown here
+**Buyer group**             | The Purchase Order’s Buyer group is shown here	
+**Buyer name**              | Buyer name	
+**Buyer email**             | Buyer email	
+**Buyer phone**             | Buyer phone	
+**Company phone**           | Company phone	
+**Company name**            | Company name	
+**Tax registration number** | Company tax registration number	
+<ins>**Vendor invoicing**</ins>	
+**Vendor name**             | Vendor name	
+**Vendor primary street number**    | Vendor primary address - street number	
+**Vendor primary street**   | Vendor primary address - street	
+**Vendor primary city**     | Vendor primary address - city	
+**Vendor primary county**   | Vendor primary address - county	
+**Vendor primary state**    | Vendor primary address - state	
+**Vendor primary ZIP/postal code**  | Vendor primary address - ZIP/postal code	
+**Vendor primary country/region**   | Vendor primary address – country/region	
+<ins>**Customer invoicing**</ins>		
+**Bill to**                 | Our account number as loaded on Vendor’s Invoice account	
+**Name**                    | Bill to - Name	
+**Name or description**     | Bill to - Invoice address name	
+**Street number**           | Bill to - Street number	
+**Street**                  | Bill to - Street	
+**City**                    | Bill to - City	
+**County**                  | Bill to - County	
+**State**                   | Bill to - State	
+**ZIP/postal code**         | Bill to - ZIP/postal code	
+**Country/region**          | Bill to - Country/region	
+<ins>**Version**</ins>
+**PO version number**       | The version of the D365 purchase order number	
+**Created date and time**   | The date and time the selected record was created in the staging table.
+<ins>**Delivery**</ins>		
+**Delivery name**           | Ship to - Name	
+**Ship to**                 | Our account number as loaded on Vendor’s Order account	
+**Store code**              | Ship to - Store code	
+**Street number**           | Ship to - Street number	
+**Street**                  | Ship to - Street	
+**City**                    | Ship to - City	
+**County**                  | Ship to - County	
+**State**                   | Ship to - State	
+**ZIP/postal code**         | Ship to - ZIP/postal code	
+**Country/region**          | Ship to - Country/region	
+**Delivery date**           | Required delivery date	
+**Acknowledged delivery date**  | Acknowledged delivery date                            | Confirmed delivery date
+**Site**                    | Storage dimension - Site	
+**Warehouse**               | Storage dimension - Warehouse	
+**Delivery terms**          | Delivery terms	
+**Delivery mode**           | Delivery mode	
+**Form note**               | Header note to be sent with purchase order	
+**Requester**               | Requester	
+**Attention information**   | Attention information	
+<ins>**Transportation**</ins>		
+**Shipping carrier**        | Shipping carrier	
+**Carrier qualifier**       | Code designating the system/method of code structure used for shipping carrier	
+**EDI carrier mode**        | Code specifying the method or type of transportation for the shipment. Mapped value setup in [Carrier mode](../SETUP/VENDOR%20SETUP/Carrier%20mode.md).
+<ins>**Miscellaneous**</ins>		
+**Misc. indicator**         | Code which indicates an allowance or charge for the service specified. Mapped value setup in [Misc charge/allowance indicator](../SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md).
+EDI charges code	Code identifying the service, promotion, allowance, or charge. Mapped value setup in [Charges code](../SETUP/VENDOR%20SETUP/Charges%20code.md).
+<ins>**Totals**</ins>
+**Subtotal amount**         | Subtotal of all purchase order lines	
+**Line discount**           | Discount for all purchase order lines	
+**Misc amount**             | Purchase order header misc. charge/allowance amount	
+**Tax amount**              | Tax amount	
+**Round-off**               | Round-off	
+**Total amount**            | Total amount	
+<ins>**Payment**</ins>                 
+**Currency**                | Currency	
+**Terms code**              | Payment terms. Mapped value setup in [Payment terms type group](../SETUP/VENDOR%20SETUP/Payment%20terms%20type%20group.md).
+**Terms net days**          | Payment terms net due days
+**Cash discount**           | Settlement discount percentage	
+**Days**                    | Settlement days	
+**Discount amount**         | Settlement discount amount if paid within settlement days	
 
 
 ### Line fields
-The following EDI Line staging fields are available on the lines page.
+The following EDI Line fields are available on the lines page. <br> 
+If update to purchase order line is allowed, column **D365 PO line update** indicates what field could be updated by the POA.
 
-**Field**	               | **Description**	                                        | **Source D365 field**
-:---                       |:---                                                        |:---
-**Line number**            | The line within the EDI table/file.	
-**Item number**            | The D365 item number                                       | Packing Slip > Item id
-**Text**                   | The D365 item name	                                        | Packing Slip > Item Name
-**External item number**   | Customer external item number	                            | Sales Line > General > External
-**Bar code**               | The GTIN or barcode                                        | Sales Line > EDI item number
-**Store code**	           | Store code for the delivery line	                        | Sales Line > Store Code
-**Delivery name**          | Delivery name and address information	                    | Consignment/Sales order > Delivery address information
-**Quantity**               | Quantity to be delivered	                                | Packing Slip > Quantity
-**Unit**                   | Unit of measure	                                        | Sales Line > Unit
-**Sales price**            | Sales line unit price	                                    | Sales Line > Unit Price
-**Amount**                 | Line amount	
-**Weight**                 | Line weight	
-**Serial number**		
-**Batch number**		
-**Item Configuration**		
-**Colour**		
-**Size**		
-**Style**		
-**Expiration date**        | Batch expiration date	
-**Manufacturing date**     | Batch manufacturing date	
-**Purchase order date**    | The purchase order date from the EDI order is shown here	   | Header > EDI > Purchase order date
-**Department**             | The customer’s department from the EDI order is shown here    | Sales Order > EDI > Department
-**Package characteristic code** | The code used to for the package contents	               | Sales Order > EDI > Package characteristic code
-**End date/time**          | Date the order was picked	
-**Customer requisition**   | Customers purchase order number to be populated in the Customer requisition field of the sales order header | Header > General > Customer requisition
-**Customer reference**     | Customers purchase order reference to be populated in the Customer reference field of the sales order header |	Header > General > Customer reference
-**Shipment type**          | Status of the shipment (Full/Partial)	
-**SSCC**                   | SSCC #. Dependent on the [ASN line configuration](../SETUP/Warehouses.md#asn-line-configurations) set assigned to the sales order’s warehouse | **Picking List** – Pick List Registration SSCC on the pick lines <br> **WHSContainerization** – Container# <br> **WHSDeliveredLP** – License Plate# 
+**Field**                   | **Description**                                                           | **D365 PO line update**
+:---                        |:---                                                                       |:---
+**Line number**             | The line within the EDI table/file. Refers to original purchase order EDI line number and used in matching	
+**Item number**             | The item identifier as sent by the trading partner	
+**POA code item**           | Purchase order acknowledgement code for the item, for example line price - advise.
+**POA code shipment**       | Purchase order acknowledgement code for shipment of the item, for example partial/full shipment.
+**Description**             | Purchase order line text	
+**Purchase quantity**       | Acknowledged purchase quantity	                                        | Deliver remainder quantity. Will be converted if POA unit doesn't match PO unit. <br> EDI acknowledgement tab > Acknowledged quantity
+**Unit**                    | Unit of measure of purchase quantity                                      | Used in unit conversion (if applicable) for quantity and unit price
+**Price unit**              | The quantity of the product that is covered by the purchase price. Usually 1. | Used in unit price calculation
+**Price multiplier**        | Value to be used to obtain a new value. NetUnitPrice/UnitPrice. Example price before discount $100 and after discount $90 has a price multiplier of 0.9	
+**Includes GST**            | Unit prices and unit discounts includes GST	
+**Unit price**              | Unit price for the item	                                                | POA unit price/POA price unit = D365 PO line unit price. Will be converted if POA unit doesn't match PO unit. <br> EDI acknowledgement tab > Acknowledged price 
+**Unit discount**           | The amount of the line discount per price unit	
+**Unit discount percentage**    | Discount percentage	
+**Net unit price**          | Unit price net of all discounts	
+**Charges on purchases**    | The purchase charge that is calculated as a charge that is independent of the quantity on the purchase order line	
+**Misc charges**	        | Miscellaneous charge/allowance allocated to purchase order line	
+**Line amount excluding tax**   | Net line amount excluding tax	
+**Line amount tax**         | Line amount tax	
+**Line amount including tax**   | Net line amount including tax	
+**Currency**                | Currency	
+**Inners quantity**         | Unit conversion quantity of inners to outers. <br> Example qty 12 ea (inner) per box (outer)	    | EDI acknowledgement tab > Acknowledged inner
+**Inners unit**             | Inners unit of measure as setup on item’s [pack size](../../CORE/Setup/Item%20pack%20sizes.md)    | 
+**Pack quantity**           | Package quantity	                                                                                | EDI acknowledgement tab > Acknowledged pack
+**Pack unit**	            | Package unit of measure	
+**Configuration**           | Inventory dimension - Configuration	
+**Color**                   | Inventory dimension - Colour	
+**Size**                    | Inventory dimension - Size	
+**Style**                   | Inventory dimension - Style	
+**Site**                    | Storage dimension - Site	
+**Warehouse**               | Storage dimension - Warehouse	
+**Requested receipt date**  | The requested receipt date	
+**Accepted delivery date**  | Vendors accepted delivery date	                                                                | EDI acknowledgement tab > Acknowledged date
+**Requester**               | Requester	
+**Attention information**   | Attention information	
+**Delivery name**           | Address for Delivery – Delivery name	
+**Name or description**     | Ship to – Name or description	
+**Street number**           | Ship to - Street number	
+**Street**                  | Ship to - Street	
+**City**                    | Ship to - City	
+**County**                  | Ship to - County	
+**State**                   | Ship to - State	
+**ZIP/postal code**         | Ship to - ZIP/postal code	
+**Country/region**          | Ship to - Country/region	
+**Store code**              | Ship to - Store code	
+**Batch number**            | Batch number for the item	                                                                        | Batch
+**Manufacturing date**      | Vendor’s manufacturing date for the batch	                                                        | If Batch doesn't exist, used to create batch
+**Expiration date**         | Vendor’s expiration date for the batch	                                                        | If Batch doesn't exist, used to create batch
+        
+
