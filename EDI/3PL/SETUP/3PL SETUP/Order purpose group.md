@@ -2,10 +2,10 @@
 # required metadata
 
 title: [EDI 3PL]
-description: [EDI 3PL setup - Inventory journal name mapping]
+description: [EDI 3PL setup - Order purpose group]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 17/11/2021
+ms.date: 18/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,26 +28,24 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # 3PL setup
-## Setup Inventory journal name mapping
+## Setup Order purpose group
 
-Users can access the form by navigating to **EDI > Setup > 3PL setup > Inventory journal name mapping**
+Users can access the form by navigating to **EDI > Setup > 3PL setup > Order purpose group**
 
-Code mapping the 3PL's value to a D365 Inventory journal name. <br>
+Code mapping the 3PL's value to a EDI order purposes. <br>
 
 - Click **New** to create a new record
--	In the **Name** field, enter the name of the inventory journal name
--	In the **Description** field, enter a description of the inventory journal name
+-	In the **Name** field, enter the name of the order purpose group
+-	In the **Description** field, enter a description of the order purpose group
 -	In the **Mappings** FastTab, select **Add** to create a new record
--	Select the **Movement** journal name. Options are obtained from **Name** setup at **Inventory management > Setup > Journal names > Inventory**
--	Specify the 3PL's value used to identify the **External type Id**
--	Select **Default** to identify the default journal name to be used when not supplied by the 3PL's incoming document
+-	Select the **Order purpose code** from the available list. Options are Original, Change and Cancellation
+-	Specify the 3PL's value used to identify the **EDI order purpose**
 
 ## Where used
-Inventory journal name is assigned on the [3PL Trading partner's](../Trading%20partner.md) Options field called **Inventory journal name mapping**. <br>
-Used on field **InventJournalNameIdExternal** on EDI documents:
-- Inventory adjustment - Counting
-- Inventory adjustment - Movement
+Order purpose group is assigned on the [3PL Trading partner's](../Trading%20partner.md) Options field called **Order purpose**. <br>
+Used on field **OrderPurpose** on EDI documents:
+- Picking list
 
 ## Data entities:
-- Inventory journal name mapping
-- Inventory journal name mapping lines
+- 3PL EDI order purpose group
+- 3PL EDI order purpose lines
