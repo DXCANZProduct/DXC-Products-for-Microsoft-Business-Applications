@@ -44,10 +44,10 @@ A list of installed models will be displayed on the **Version** tab.  Scroll to 
 ## 	Troubleshooting
 ### 	Bank statement doesn’t import
 
-*Issue:*
+#### Issue
 Bank statement doesn't import.
  
-*Resolution:*
+#### Resolution
 To check bank account mapping, navigate to Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format
 Things to check:
 1.	**Field delimiter** and **Record code field position** (if applicable). Else the fields can't be extracted and matched.
@@ -56,7 +56,7 @@ Things to check:
 - Company bank accounts: Bank account number field only (not bsb): Does it match to import file's bank account number? If import file contains bsb+account and your bank setup is split into bsb and bank account number fields, set up appropriate start position on **Custom format > Lines**.
 
 ### 	Generating AP payment - AuthenticationFailed
-*Error:*
+#### Error
 AP > Payments > Vendor receipt journal
 When Generating AP payment:
 <br>
@@ -71,16 +71,16 @@ Signature did not match. String to sign used was <br>
 \</AuthenticationErrorDetail> <br>
 \</Error> <br>
 
-*Resolution:*
+#### Resolution
 AP > Payment setup > Methods of payment
 If **Enable file parameters** is set to _Yes_ on your Method of Payment, the **File format** requires a value.
 
 
 ### 	Payment advice report – Vendor bank details missing
-*Issue:*
+#### Issue
 AP Payment advice doesn't show Vendor bank details:
 
-*Resolution:*
+#### Resolution
 Select the Finance utilities report on [Payment advice](Setup/ACCOUNTS%20PAYABLE/Vendor%20payments.md#payment-advice-report) report's Print management.
 
 ### 	Saving to secure location
@@ -94,10 +94,10 @@ To load all new number sequence references click the button **Reset** on: <br>
 Organization administration > Number sequences. Select **Manual cleanup > Reset** on the Action Pane.
 
 ### Bank statement import - Posting date
-*Issue:*
+#### Issue
 When importing a Bank statement with Posting **Date** set to _Statement transaction date_ the **Posting date** on the created Bank statement is set to _Today's date_
 
-*Resolution:*
+#### Resolution
 Prior to Finance utilities 10.0.9.202006101 selecting _Statement transaction date_ in **Posting date** only worked for Bank statement format's **Custom format** is set to _Yes_. <br> 
 _Today's date_ is the default value, and thus defaulted for non custom bank statements.
 If you have a version higher or equal above, verify that **Bank statement entity** child entity **Bank statements_BankStatementEntity** contains field **SAB_FINUTILPOSTINGDATETYPE**.
