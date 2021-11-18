@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI Vendor]
-description: [EDI Vendor Setup - Document type Validation profiles - Purchase invoice]
+title: [EDI 3PL]
+description: [EDI 3PL Setup - Document type Validation profiles - Picking list registration]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 9/11/2021
+ms.date: 19/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,8 +27,8 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Vendor setup
-## Vendor document type validation profiles - Purchase invoice
+# 3PL setup
+## 3PL document type validation profiles - Picking list registration
 
 Users can access the form by navigating to **EDI > Setup > Document types**.
 
@@ -50,10 +50,10 @@ Once setup for each document type, the validation profile can be assigned to eac
 
 **Validation instance**       | **Validation rule**           | **Description**       | **Info/Warning tolerance updates**
 :-------                      |:-------                       |:----------            |:----------
-**Purchase order header**     |	**Invoice account**           |	Where the vendor account for the EDI trading partner differs to the Invoice account on the Purchase order	| Create invoice against Trading partner’s vendor account and not the PO's invoice account
+**Picking list registration** | **Short pick**                |	Where the pick list registration is less than the original pick list quantity, select the validation type | Post picking list registration even when short picked.
 
 ## Where used
-The **Validation profile** can be assigned on the Incoming documents FastTab to document type **Vendor advanced shipping notice** for the Vendor Trading partner at **EDI > Setup > Trading partners**.
+The **Validation profile** can be assigned on the Incoming documents FastTab to document type **Picking list registration** for the 3PL Trading partner at **EDI > Setup > Trading partners**.
 
 ## Data entity
 - EDI Validation profile
