@@ -32,11 +32,18 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ## Setting up Document types
 - [File templates](../../CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
 - Setting profiles: applicable to the following document types
-    - [Vendor purchase order](SETTING%20PROFILES/Vendor%20purchase%20order.md)
-    - [Vendor purchase order change](SETTING%20PROFILES/Vendor%20purchase%20order%20change.md)
-    - [Vendor purchase order acknowledgement](SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md)
-    - [Vendor advanced shipping notice](SETTING%20PROFILES/Vendor%20advanced%20shipping%20notice.md)
-    - [Purchase invoice](SETTING%20PROFILES/Purchase%20invoice.md)
+    - [Picking list](SETTING%20PROFILES/Picking%20list.md)
+    - [Picking list registration](SETTING%20PROFILES/Picking%20list%20registration.md)
+    - [Shipment advice - Purchase order](SETTING%20PROFILES/Shipment%20advice%20-%20Purchase%20order.md)
+    - [Shipment advice - Return order](SETTING%20PROFILES/Shipment%20advice%20-%20Return%20order.md)
+    - [Shipment receipt - Purchase order](SETTING%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md)
+    - [Shipment receipt - Transfer order](SETTING%20PROFILES/Shipment%20receipt%20-%20Transfer%20order.md)
+    - [Shipment receipt - Return order](SETTING%20PROFILES/Shipment%20receipt%20-%20Return%20order.md)
+    - [Shipment receipt - Voyage](SETTING%20PROFILES/Shipment%20receipt%20-%20Voyage.md)
+    - [Inventory adjustment advice - Transfer](SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Transfer.md)
+    - [Inventory adjustment advice - Counting](SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Counting.md)
+    - [Inventory adjustment advice - Reconciliation](SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Reconciliation.md)
+    - [Inventory adjustment advice - Movement](SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Movement.md)
 - Validation profiles: applicable to the following inbound document types
     - [Vendor purchase order acknowledgement](VALIDATION%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md)
     - [Vendor advanced shipping notice](VALIDATION%20PROFILES/Vendor%20advanced%20shipping%20notice.md)
