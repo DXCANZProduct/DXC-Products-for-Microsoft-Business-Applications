@@ -40,18 +40,18 @@ Setting profiles can be created to specify the handling of specific scenarios. O
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details. 
 
 The following 3PL documents have setting profiles:
-- [Picking list]()
-- [Picking list registration]()
-- [Shipment advice - Purchase order]()
-- [Shipment advice - Return order]()
-- [Shipment receipt - Purchase order]()
-- [Shipment receipt - Transfer order]()
-- [Shipment receipt - Return order]()
-- [Shipment receipt - Voyage]()
-- [Inventory adjustment advice - Transfer]()
-- [Inventory adjustment advice - Counting]()
-- [Inventory adjustment advice - Reconciliation]()
-- [Inventory adjustment advice - Movement]()
+- [Picking list](SETTING%20PROFILES/Picking%20list.md)
+- [Picking list registration](SETTING%20PROFILES/Picking%20list%20registration.md)
+- [Shipment advice - Purchase order](SETTING%20PROFILES/Shipment%20advice%20-%20Purchase%20order.md)
+- [Shipment advice - Return order](SETTING%20PROFILES/Shipment%20advice%20-%20Return%20order.md)
+- [Shipment receipt - Purchase order](SETTING%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md)
+- [Shipment receipt - Transfer order](SETTING%20PROFILES/Shipment%20receipt%20-%20Transfer%20order.md)
+- [Shipment receipt - Return order](SETTING%20PROFILES/Shipment%20receipt%20-%20Return%20order.md)
+- [Shipment receipt - Voyage](SETTING%20PROFILES/Shipment%20receipt%20-%20Voyage.md)
+- [Inventory adjustment advice - Transfer](SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Transfer.md)
+- [Inventory adjustment advice - Counting](SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Counting.md)
+- [Inventory adjustment advice - Reconciliation](SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Reconciliation.md)
+- [Inventory adjustment advice - Movement](SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Movement.md)
 
 ## Document errors
 When an incoming staging record/document errors, it has not created/updated the target D365 transaction. <br>
