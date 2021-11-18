@@ -40,8 +40,18 @@ Setting profiles can be created to specify the handling of specific scenarios. O
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details. 
 
 The following 3PL documents have setting profiles:
-- [Vendor purchase order](SETTING%20PROFILES/Vendor%20purchase%20order.md)
-
+- [Picking list]()
+- [Picking list registration]()
+- [Shipment advice - Purchase order]()
+- [Shipment advice - Return order]()
+- [Shipment receipt - Purchase order]()
+- [Shipment receipt - Transfer order]()
+- [Shipment receipt - Return order]()
+- [Shipment receipt - Voyage]()
+- [Inventory adjustment advice - Transfer]()
+- [Inventory adjustment advice - Counting]()
+- [Inventory adjustment advice - Reconciliation]()
+- [Inventory adjustment advice - Movement]()
 
 ## Document errors
 When an incoming staging record/document errors, it has not created/updated the target D365 transaction. <br>
