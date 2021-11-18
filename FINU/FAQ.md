@@ -92,3 +92,18 @@ Check setup on the applicable [Electronic reporting export connections](Setup/AC
 
 To load all new number sequence references click the button **Reset** on: <br>
 Organization administration > Number sequences. Select **Manual cleanup > Reset** on the Action Pane.
+
+### Bank statement import - Posting date
+*Issue:*
+When importing a Bank statement with Posting **Date** set to _Statement transaction date_ the **Posting date** on the created Bank statement is set to _Today's date_
+
+*Resolution:*
+Prior to Finance utilities 10.0.9.202006101 selecting _Statement transaction date_ in **Posting date** only worked for Bank statement format's **Custom format** is set to _Yes_. <br> 
+_Today's date_ is the default value, and thus defaulted for non custom bank statements.
+If you have a version higher or equal above, verify that **Bank statement entity** child entity **Bank statements_BankStatementEntity** contains field **SAB_FINUTILPOSTINGDATETYPE**.
+
+If it doesn't contain above field:
+- Select **Modify target mapping** on Bank statements_BankStatementEntity
+- Delete all the lines
+- **Refresh entity list** in **Framework parameters**
+- After refresh has been completed, check **Bank statements_BankStatementEntity** again and retest import with **Date** set to _Statement transaction date_
