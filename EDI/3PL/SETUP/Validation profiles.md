@@ -48,6 +48,7 @@ Once setup for each document type, the validation profile can be assigned to eac
   - **Error** - An Infolog is displayed with an error. If the validation rule fails, the staging records will be set to error state and the target document note created/updated. 
 
 The following incoming 3PL documents have validation profiles:
-- [Picking list registration]()
-- [Shipment receipt]()
-
+- [Picking list registration](VALIDATION%20PROFILES/Picking%20list%20registration.md)
+- [Shipment receipt - Purchase order](VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md)
+- [Shipment receipt - Transfer order](VALIDATION%20PROFILES/Shipment%20receipt%20-%20Transfer%20order.md)
+- [Shipment receipt - Return order](VALIDATION%20PROFILES/Shipment%20receipt%20-%20Return%20order.md)

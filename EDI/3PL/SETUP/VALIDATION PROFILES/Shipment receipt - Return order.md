@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI 3PL]
-description: [EDI 3PL Setup - Document type Validation profiles - Shipment receipt - Purchase order]
+description: [EDI 3PL Setup - Document type Validation profiles - Shipment receipt - Return order]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 19/11/2021
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # 3PL setup
-## 3PL document type validation profiles - Shipment receipt - Purchase order
+## 3PL document type validation profiles - Shipment receipt - Return order
 
 Users can access the form by navigating to **EDI > Setup > Document types**.
 
@@ -53,7 +53,7 @@ Once setup for each document type, the validation profile can be assigned to eac
 **Item arrival journal line** | **Batch Id update**           | Where the batch id received is different to batch id (example ABC123 vs. 123ABC) in the shipment advice, select the validation type. Document setting **Create batch** will determine if the 3PL's batch will be created if it doesn't exist in D365 | Options: <br> •	**Info** - 3PL is allowed to update the receipt to a different batch id. <br> •	**Warning** - 3PL is allowed to update the receipt to a different batch id, but warning infolog will be displayed. <br> • **Error** - 3PL is not allowed to update the receipt to a different batch id, and the staging record will error.
 
 ## Where used
-The **Validation profile** can be assigned on the Incoming documents FastTab to document type **Shipment receipt - Purchase order** for the 3PL Trading partner at **EDI > Setup > Trading partners**.
+The **Validation profile** can be assigned on the Incoming documents FastTab to document type **Shipment receipt - Return order** for the 3PL Trading partner at **EDI > Setup > Trading partners**.
 
 ## Data entity
 - EDI Validation profile

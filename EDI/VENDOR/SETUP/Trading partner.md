@@ -43,7 +43,7 @@ The [Core trading partner setup](../../CORE/Setup/Trading%20partners.md) describ
 This section describes the setup applicable to **Vendor** trading partners.
 
 #### Options
-The following table describes the customer module fields that are available on the **Options** FastTab of the **Trading partners** page.
+The following table describes the vendor module fields that are available on the **Options** FastTab of the **Trading partners** page.
 **Field**                          | **Description**               
 :---------                         |:--------
 <ins>**Order**</ins>	
