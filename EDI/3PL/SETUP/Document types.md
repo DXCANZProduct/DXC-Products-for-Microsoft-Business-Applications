@@ -29,5 +29,26 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # 3PL - Document types
 
-## Prerequisites:
-- [Document type setup](../../CORE/Setup/Document%20types.md)
+## Setting up Document types
+- [File templates](../../CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
+- Setting profiles: applicable to the following document types
+    - [Vendor purchase order](SETTING%20PROFILES/Vendor%20purchase%20order.md)
+    - [Vendor purchase order change](SETTING%20PROFILES/Vendor%20purchase%20order%20change.md)
+    - [Vendor purchase order acknowledgement](SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md)
+    - [Vendor advanced shipping notice](SETTING%20PROFILES/Vendor%20advanced%20shipping%20notice.md)
+    - [Purchase invoice](SETTING%20PROFILES/Purchase%20invoice.md)
+- Validation profiles: applicable to the following inbound document types
+    - [Vendor purchase order acknowledgement](VALIDATION%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md)
+    - [Vendor advanced shipping notice](VALIDATION%20PROFILES/Vendor%20advanced%20shipping%20notice.md)
+    - [Purchase invoice](VALIDATION%20PROFILES/Purchase%20invoice.md)
+- [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
+- [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
+
+## Documents
+Staging data can be viewed and manually processed:
+- [Vendor purchase order](../DOCUMENTS/endor%20purchase%20order.md)
+- [Vendor purchase order change](../DOCUMENTS/endor%20purchase%20order%20change.md)
+- [Vendor purchase order acknowledgement](../DOCUMENTS/endor%20purchase%20order%20acknowledgement.md)
+- [Vendor advanced shipping notice](../DOCUMENTS/endor%20advanced%20shipping%20notice.md)
+- [Purchase invoice](../DOCUMENTS/Purchase%20invoice.md)
+
