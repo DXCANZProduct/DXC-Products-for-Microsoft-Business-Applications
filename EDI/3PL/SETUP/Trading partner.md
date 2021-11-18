@@ -51,7 +51,7 @@ The following table describes the 3PL module fields that are available on the **
 **Disposition code mapping**        |	Specify how to process an item that is returned by a customer. <br> Note: For further information see [Setup disposition code mapping](3PL%20SETUP/Disposition%20code%20mapping.md)
 **Item arrival**                    |	Select item arrival journal to use for processing inventory receipts. Options from **Inventory management > Setup > Journal names > Warehouse management**
 **Transaction direction mapping**   |	Select transaction direction to use for processing inventory adjustment movement document. <br> Note: For further information see [Setup transaction direction mapping](3PL%20SETUP/Transaction%20direction%20mapping.md)
-**Order purpose**                   |	Select order purpose to use when sending picking list. If left blank/unmapped: the values Original, Change or Cancellation will be sent to the 3PL Trading partner. <br> Note: For further information see [Setup Order purpose group](3PL%20SETUP/Order%20purpose%20group.md)
+**Order purpose**                   |	Select order purpose to use when sending picking list. If left blank/unmapped: the values Original, Change or Cancellation will be sent to the 3PL Trading partner. <br> Note: For further information see [Setup order purpose group](3PL%20SETUP/Order%20purpose%20group.md)
 
 - Data entity: EDI Warehouses
 
