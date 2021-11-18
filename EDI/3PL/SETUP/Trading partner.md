@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI Vendor]
-description: [EDI Vendor Setup - Trading partners]
+title: [EDI 3PL]
+description: [EDI 3PL Setup - Trading partners]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 9/11/2021
+ms.date: 19/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,7 +27,7 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Vendor setup
+# 3PL setup
 ## Trading partners
 
 EDI works on the basis that an external entity (trading partner) wants to send or receive information from us. To this end, the module is built to link the documents and their associated settings to those entities (trading partners).
@@ -39,29 +39,21 @@ To open the **Trading partners** page, go to **EDI > Setup > Trading partners**.
 ### All trading partners
 The [Core trading partner setup](../../CORE/Setup/Trading%20partners.md) describes the setup applicable to **All** types of trading partners.
 
-### Vendor trading partners details
-This section describes the setup applicable to **Vendor** trading partners.
+### 3PL trading partners details
+This section describes the setup applicable to **3PL** trading partners.
 
 #### Options
-The following table describes the customer module fields that are available on the **Options** FastTab of the **Trading partners** page.
-**Field**                          | **Description**               
-:---------                         |:--------
-<ins>**Order**</ins>	
-**Order type**                     | EDI purchase orders can be sent to trading partners with many order types.  The type identifier is determined by the method the order is processed within D365. <br> Note: For further information see [Setup order type groups](VENDOR%20SETUP/Order%20type%20group.md)
-**Order purpose**                  | Code identifying the purpose of the document. <br> Note: For further information see [Setup order purpose](VENDOR%20SETUP/Order%20purpose%20group.md)
-**Order line change type**        |	Code specifying the type of change to the line item. <br> Note: For further information see [Setup order line change type](VENDOR%20SETUP/Order%20line%20change%20type%20group.md)
-**Carrier mode**                  |	Code specifying the method or type of transportation for the shipment. <br> Note: For further information see [Setup carrier mode](VENDOR%20SETUP/Carrier%20mode.md)
-**Charges code**                  |	Code identifying the service, promotion, allowance, or charge. <br> Note: For further information see [Setup charges code](VENDOR%20SETUP/Charges%20code.md)
-**Payment terms type**            |	Code identifying the type of payment terms. <br> Note: For further information see [Setup payment terms type group](VENDOR%20SETUP/Payment%20terms%20type%20group.md)
-**Misc charge/allowance indicator** |	Code which indicates an allowance or charge for the service specified. <br> Note: For further information see [Setup misc. charge/allowance indicator](VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md)
-**Misc method of handling**       |	Code specifying if the misc. charge or allowance is required to be added to the D365 purchase invoice <br> Note: For further information see [Setup misc. method of handling](VENDOR%20SETUP/Misc%20method%20of%20handling.md)
-<ins>**Acknowledgement**</ins>	
-**POA response code group**       |	POA Response codes are used to identify the status of information used in a purchase order acknowledgement for each vendor. <br> Note: For further information see [Setup POA response codes](VENDOR%20SETUP/POA%20response%20code%20group.md)
+The following table describes the 3PL module fields that are available on the **Options** FastTab of the **Trading partners** page.
+**Field**                            | **Description**               
+:---------                          |:--------
+**Inventory journal name mapping**  |	Select inventory journal to use for inventory adjustments. <br> Note: For further information see [Setup inventory journal name mapping](3PL%20SETUP/Inventory%20journal%20name%20mapping.md)
+**Inventory status Id mapping**     |	Inventory statuses are used within D365 to categorize inventory. <br> Note: For further information see [Setup inventory status id mapping](3PL%20SETUP/Inventory%20status%20Id%20mapping.md)
+**Disposition code mapping**        |	Specify how to process an item that is returned by a customer. <br> Note: For further information see [Setup disposition code mapping](3PL%20SETUP/Disposition%20code%20mapping.md)
+**Item arrival**                    |	Select item arrival journal to use for processing inventory receipts. Options from **Inventory management > Setup > Journal names > Warehouse management**
+**Transaction direction mapping**   |	Select transaction direction to use for processing inventory adjustment movement document. <br> Note: For further information see [Setup transaction direction mapping](3PL%20SETUP/Transaction%20direction%20mapping.md)
+**Order purpose**                   |	Select order purpose to use when sending picking list. If left blank/unmapped: the values Original, Change or Cancellation will be sent to the 3PL Trading partner. <br> Note: For further information see [Setup Order purpose group](3PL%20SETUP/Order%20purpose%20group.md)
 
-- Data entity: EDI Vendors
-
-#### Adresses
-**Addresses** FastTab of the **Trading partners** page allows users with appropriate security permissions to edit and create address records within the **Trading partner** page.
+- Data entity: EDI Warehouses
 
 #### Outgoing documents
 The Outgoing documents FastTab defines the outgoing EDI document types that have been configured and enabled for the trading partner. It brings the document template and mappings together with the settings profile to enable the document for the trading partner.
@@ -69,7 +61,7 @@ Also specifies if an Inbound Functional Acknowledgement is required for each out
 
 The **Outgoing documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Outgoing documents](../../CORE/Setup/Trading%20partners.md#outgoing-documents)
 
-- Data entity: EDI Documents - Vendors
+- Data entity: EDI Documents - Warehouse
 
 #### Incoming documents
 The Incoming documents FastTab defines the incoming EDI document types that have been configured and enabled for the trading partner. It brings the document template, mappings, validation profile and setting profiles together along with a file mask for importing to enable the document for the trading partner.
@@ -77,13 +69,13 @@ Also specifies if the Trading partner requires an Outbound Functional Acknowledg
 
 The **Incoming documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Incoming documents](../../CORE/Setup/Trading%20partners.md#incoming-documents)
 
-- Data entity: EDI Documents - Vendors
+- Data entity: EDI Documents - Warehouse
 
-### Vendors
-EDI trading partner information and Vendor documents can be viewed via FactBoxes available on the **All vendors** form.
-These can be accessed by navigating to **Accounts payable > Vendors > All vendors**.
+### Warehouse
+EDI trading partner information and 3PL documents can be viewed via FactBoxes available on the **Warehouses** form.
+These can be accessed by navigating to **Inventory management > Setup > Inventory breakdown > Warehouses**.
 
 ### Data entities
 
-- EDI Vendors
-- EDI Documents - Vendors
+- EDI Warehouses
+- EDI Documents - Warehouse
