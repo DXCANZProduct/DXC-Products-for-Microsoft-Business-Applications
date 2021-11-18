@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI Vendor]
-description: [EDI Vendor Setup - Document type Setting profiles]
+title: [EDI 3PL]
+description: [EDI 3PL Setup - Document type Setting profiles]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 9/11/2021
+ms.date: 18/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,7 +27,7 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Vendor setup
+# 3PL setup
 ## Document types - Setting profiles
 
 Users can access the form by navigating to **EDI > Setup > Document types**.
@@ -39,12 +39,9 @@ Setting profiles can be created to specify the handling of specific scenarios. O
 - Specify the **Settings profile id** and **Description** of the profile.
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details. 
 
-The following vendor documents have setting profiles:
+The following 3PL documents have setting profiles:
 - [Vendor purchase order](SETTING%20PROFILES/Vendor%20purchase%20order.md)
-- [Vendor purchase order change](SETTING%20PROFILES/Vendor%20purchase%20order%20change.md)
-- [Vendor purchase order acknowledgement](SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md)
-- [Vendor advanced shipping notice](SETTING%20PROFILES/Vendor%20advanced%20shipping%20notice.md)
-- [Purchase invoice](SETTING%20PROFILES/Purchase%20invoice.md)
+
 
 ## Document errors
 When an incoming staging record/document errors, it has not created/updated the target D365 transaction. <br>
