@@ -83,7 +83,7 @@ Used to map D365/EDI value to 3PL's value and assigned on 3PL Trading partner: <
 	- [Transaction direction mapping](../)
 		- Inventory adjustment - Movement (TransactionDirection)
 	- [Order purpose code](../)
-		- Picking list registration (OrderPurpose)
+		- Picking list (OrderPurpose)
 
 #### Journal names assigned on 3PL Trading partner
 
