@@ -51,7 +51,7 @@ EDI > Setup > Trading partners
     - Setting profile
     - File name setup
 
-> Note: If the vendor setup mappings are not assigned to the warehouse trading partner for an outbound document, the D365/EDI value will be sent, example Original instead of a mapped value. <br>
+> Note: If the 3PL setup mappings are not assigned to the warehouse trading partner for an outbound document, the D365/EDI value will be sent, example Original instead of a mapped value. <br>
 
 ## Processing
 
@@ -82,8 +82,8 @@ The following EDI fields are available on the list page.
 **Company**             | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
-**Trading partner account**     | Vendor account assigned to the staging record
-**Trading partner GLN**         | The Vendor’s global location number is shown here
+**Trading partner account**     | 3PL account assigned to the staging record
+**Trading partner GLN**         | The 3PL’s global location number is shown here
 **Picking route**               | Picking route Id
 **Reference**                   | Identification if pick route is related to a sales order or transfer order
 **Order Id**                    | Sales or transfer order's identification
