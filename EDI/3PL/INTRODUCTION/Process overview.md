@@ -53,14 +53,12 @@ Various inbound documents are available for a 3PL to adjust inventory.
 
 Outbound document				| D365 trigger to create outbound	| Inbound document
 :--						          |:--			                        |:--
-Picking list (From WH) <br> • Sales order <br> • Transfer order	| Generate Picking list	| Picking list registration
-Shipment advice – Purchase order (To WH)	| Generate Receipts list		| Shipment receipt – Purchase order
-Shipment advice – Transfer order (To WH)	| Ship Transfer order			  | Shipment receipt – Transfer order
-Shipment advice – Return order (To WH)		| Send Return order			    | Shipment receipt – Return order
-Shipment advice – Voyage (To WH)		      | Send to EDI			        	| Shipment receipt – Voyage
+Picking list  <br> • Sales order <br> • Transfer order	| Generate Picking list	(From WH) | Picking list registration
+Shipment advice – Purchase order 	| Generate Receipts list (To WH)		| Shipment receipt – Purchase order
+Shipment advice – Transfer order 	| Ship Transfer order	(To WH)		    | Shipment receipt – Transfer order
+Shipment advice – Return order 		| Send Return order	(To WH)		      | Shipment receipt – Return order
+Shipment advice – Voyage 		      | Send to EDI	(To WH)		          	| Shipment receipt – Voyage
 <br>						        				          | <br>                      | Inventory adjustment - Transfer
 <br> 						        			            | <br>                      | Inventory adjustment - Counting
 <br> 						        				          | <br>                      | Inventory adjustment - Reconciliation
 <br> 						        				          | <br>                      | Inventory adjustment - Movement
-
-
