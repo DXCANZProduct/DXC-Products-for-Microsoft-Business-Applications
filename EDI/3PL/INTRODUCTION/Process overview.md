@@ -40,7 +40,11 @@ When a Warehouse (WH) has been loaded as a 3PL Trading partner and has the **Shi
 - **Return order** - Send **Return order**, by navigating to **Accounts receivable > Orders > All return orders** and **Return order** tab on the Action Pane.
 - **Voyage** - **Send to EDI**, by navigating to **Landed cost > Voyages > All voyages** and **Manage** tab on the Action Pane.
 
-The 3PL then returns the **Shipment receipt** document (s), confirming what has been received.
+The 3PL then returns the **Shipment receipt** document (s), confirming what has been received:
+- **Purchase order** - Post D365 arrival journal and optionally post purchase order's product receipt for registered stock.
+- **Transfer order** - Post D365 arrival journal and optionally receive transfer order.
+- **Return order** - Create D365 arrival journal and optionally post arrival journal or delivery note.
+- **Voyage** - Create D365 arrival journal and optionally post arrival journal.
 
 ## Inventory adjustments
 Various inbound documents are available for a 3PL to adjust inventory.
@@ -51,9 +55,11 @@ Various inbound documents are available for a 3PL to adjust inventory.
 
 ## Summary
 
+The following table provides a summary of how the various documents relate and the minimum D365 transaction created for the inbound document.
+
 Outbound document				| D365 trigger to create outbound	| Inbound document                                          | Inbound D365 transaction
 :--						          |:--			                        |:--                                                        |:--
-Picking list  <br> • Sales order (SO) <br> • Transfer order (TO)	| Generate Picking list	(From WH) | Picking list registration | Stock registered or <br> SO packing slip journal <br> TO shipped 
+Picking list  <br> • Sales order (SO) <br> • Transfer order (TO)	| Generate Picking list	(From WH) | Picking list registration | Stock picked
 Shipment advice – Purchase order 	| Generate Receipts list (To WH)		| Shipment receipt – Purchase order             | Arrival journal
 Shipment advice – Transfer order 	| Ship Transfer order	(To WH)		    | Shipment receipt – Transfer order             | Arrival journal
 Shipment advice – Return order 		| Send Return order	(To WH)		      | Shipment receipt – Return order               | Arrival journal
