@@ -30,11 +30,11 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Process overview
 
 ## Picking list and Picking list registration (From warehouse)
-When a Warehouse (WH) has been loaded as a 3PL Trading partner and has the **Picking list** document setup and enabled, posting a sales or transfer order's picking list will create an outbound staging record to send to the 3PL instructing them to ship the stock. <br>
+When a D365 warehouse has been loaded as a 3PL Trading partner and has the **Picking list** document setup and enabled, posting a sales or transfer order's picking list will create an outbound staging record to send to the 3PL instructing them to ship the stock. <br>
 The 3PL then returns the **Picking list registration** document, confirming what has/will be shipped.
 
 ## Shipment advice and Shipment receipts (To warehouse)
-When a Warehouse (WH) has been loaded as a 3PL Trading partner and has the **Shipment advice** document(s) setup and enabled, the following trigger points will create an outbound staging record to inform the 3PL of inbound stock to their warehouse:
+When a D365 warehouse has been loaded as a 3PL Trading partner and has the **Shipment advice** document(s) setup and enabled, the following trigger points will create an outbound staging record to inform the 3PL of inbound stock to their warehouse:
 - **Purchase order** - Generate **Receipts list**, by navigating to **Accounts payable > Purchase order > All purchase orders** and **Receive** tab on the Action Pane.
 - **Transfer order** - **Ship transfer order**, by navigating to **Inventory management > Inbound orders > Transfer order** and **Ship** tab on the Action Pane.
 - **Return order** - Send **Return order**, by navigating to **Accounts receivable > Orders > All return orders** and **Return order** tab on the Action Pane.
@@ -55,7 +55,7 @@ Various inbound documents are available for a 3PL to adjust inventory.
 
 ## Summary
 
-The following table provides a summary of how the various documents relate and the minimum D365 transaction created for the inbound document.
+The following table provides a summary of how the various documents relate for the warehouse (WH) and the minimum D365 transaction created for the inbound document.
 
 Outbound document				| D365 trigger to create outbound	| Inbound document                                          | Inbound D365 transaction
 :--						          |:--			                        |:--                                                        |:--
