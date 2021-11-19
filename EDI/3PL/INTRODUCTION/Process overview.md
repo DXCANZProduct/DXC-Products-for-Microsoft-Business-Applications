@@ -53,7 +53,7 @@ Various inbound documents are available for a 3PL to adjust inventory.
 
 Outbound document				| D365 trigger to create outbound	| Inbound document                                          | Inbound D365 transaction
 :--						          |:--			                        |:--                                                        |:--
-Picking list  <br> • Sales order (SO) <br> • Transfer order (TO)	| Generate Picking list	(From WH) | Picking list registration | Stock registered or <br> SO delivery note <br> TO shipped 
+Picking list  <br> • Sales order (SO) <br> • Transfer order (TO)	| Generate Picking list	(From WH) | Picking list registration | Stock registered or <br> SO packing slip journal <br> TO shipped 
 Shipment advice – Purchase order 	| Generate Receipts list (To WH)		| Shipment receipt – Purchase order             | Arrival journal
 Shipment advice – Transfer order 	| Ship Transfer order	(To WH)		    | Shipment receipt – Transfer order             | Arrival journal
 Shipment advice – Return order 		| Send Return order	(To WH)		      | Shipment receipt – Return order               | Arrival journal
