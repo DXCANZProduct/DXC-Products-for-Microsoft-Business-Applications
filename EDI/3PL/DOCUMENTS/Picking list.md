@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI Vendor]
-description: [EDI Vendor Documents - Vendor purchase order]
+title: [EDI 3PL]
+description: [EDI 3PL Documents - Picking list]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 11/11/2021
+ms.date: 19/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -134,37 +134,32 @@ The following EDI Header staging fields are available on the header page.
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
 <ins>**Overview**</ins>		
-
-**EDI order purpose**       | The EDI order purpose is shown here. <br> Mapped value from [Order purpose group](../SETUP/VENDOR%20SETUP/Order%20purpose%20group.md)  | Order purpose code
+**Picking Route**           | Picking route Id	                    | Picking Route > Id
+**Warehouse**               | Warehouse for the picking list record	| Picking Route > Warehouse
+**Reference**               | Identification if pick route is related to a sales order or transfer order	| Picking route > Reference
+**Order Id**                | Sales or transfer order's identification	                                    | Picking route > Number
+**Customer requisition**    | Customers purchase order number	    | Sales Order > Customer requisition
+**Your ref.**               | Customers reference	                | Sales Order > Customer reference
+**EDI order purpose**       | The EDI order purpose is shown here. <br> Mapped value from [Order purpose group](../SETUP/3PL%20SETUP/Order%20purpose%20group.md)  | Order purpose code
 <ins>**Status**</ins>	
 **Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
 **Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
 <ins>**General FastTab**</ins>
-<ins>**Details**</ins>
-Identification		
-Picking Route	Picking route Id	Picking Route > Id
-Warehouse	Warehouse for the picking list record	Picking Route > Warehouse
-Overview		
-Reference	Identification of sales order or transfer order pick route	Picking route > Reference
-Order Id	Order identification	Picking Route > Number
-Customer requisition	Customers purchase order number	Sales Order > Requisition
-Your ref.	Customers reference	Sales Order > Requisition
-General		
-Delivery Name	Address for Delivery	Order > Delivery Address
-Delivery address	Address for Delivery	Order > Delivery Address
-Post box	Address for Delivery	Order > Delivery Address
-Building complement	Address for Delivery	Order > Delivery Address
-Street number	Address for Delivery	Order > Delivery Address
-Street	Address for Delivery	Order > Delivery Address
-City	Address for Delivery	Order > Delivery Address
-Suburb	Address for Delivery	Order > Delivery Address
-State	Address for Delivery	Order > Delivery Address
-City		Order > Delivery Address
-Postcode	Address for Delivery	Order > Delivery Address
-Country/region	Address for Delivery	Order > Delivery Address
-Note		
-Delivery note		
-
+<ins>**Delivery**</ins>	
+**Name**                    | Address for Delivery	                    | Order > Delivery Address
+**Delivery address**        | Address for Delivery	                    | Order > Delivery Address
+**Post box**                | Address for Delivery	                    | Order > Delivery Address
+**Building complement**     | Address for Delivery	                    | Order > Delivery Address
+**Street number**           | Address for Delivery	                    | Order > Delivery Address
+**Street**                  | Address for Delivery	                    | Order > Delivery Address
+**City**                    | Address for Delivery	                    | Order > Delivery Address
+**Suburb**	                | Address for Delivery	                    | Order > Delivery Address
+**State**                   | Address for Delivery	                    | Order > Delivery Address
+**City**		            | Address for Delivery	                    | Order > Delivery Address
+**Postcode**	            | Address for Delivery	                    | Order > Delivery Address
+**Country/region**          | Address for Delivery	                    | Order > Delivery Address	
+<ins>**Note**</ins>			
+**Delivery note**		
 
 
 ### Line fields
@@ -172,9 +167,19 @@ The following EDI Line staging fields are available on the lines page.
 
 **Field**	                | **Description**	                                        | **D365 source**
 :---                        |:---                                                       |:---
-**Line number**             | The line within the EDI table/file	                    | Line number
-**Our item number**         | The D365 item number
-**External item number**    | Vendor’s item number	
-**Bar code**                | Item’s barcode	
-**GTIN**                    | Item’s GTIN	
+**Line number**             | The line within the EDI table/file	                    | Created by EDI. Incremented per each picking list line
+**Our item number**         | The D365 item number                                      | Pick route line > Item Number
+**Bar code**                | D365 item id’s Bar code (based on unit)	                | Released products > Bar codes	                    
+**GTIN**                    | D365 item id’s GTIN (based on unit)	                    | Released products > GTIN codes	
+**Description**             | D365 item id’s Description	                            | Released products > Product name
+**Lot Id**                  | Lot id for the transfer order line	                    | Order > Lot id
+**Quantity**                | Picking list quantity	                                    | Pick route line > Quantity
+**Unit**                    | Picking list quantity’s unit	                            | Released products > Inventory unit
+**Colour**                  | Product dimensions – colour	                            | Pick route line > Colour
+**Size**                    | Product dimensions – Size	                                | Pick route line > Size
+**Style**                   | Product dimensions – Style	                            | Pick route line > Style
+**Configuration**           | Product dimensions – Configuration	                    | Pick route line > Configuration
+**Batch number**            | Tracking dimensions – Batch number	                    | Pick route line > Batch number
+**Serial number**           | Tracking dimensions – Serial number	                    | Pick route line > Serial number
+**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Pick Route > Inventory status
 
