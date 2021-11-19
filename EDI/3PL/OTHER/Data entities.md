@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI Customer]
-description: [EDI Customer - Data entities]
+title: [EDI 3PL]
+description: [EDI 3PL - Data entities]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 20/07/2021
+ms.date: 19/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,32 +29,44 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Data entities
 
-The following is a summary of data entities available for the Customer EDI module:
+The following is a summary of data entities available for the 3PL EDI module:
 
-## Customer setup
-EDI > Setup > Customer setup
+## 3PL setup
+EDI > Setup > 3PL setup
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | Customer EDI order type group   | Create new **Customer EDI order type group**. EDI > Setup > Customer setup > Customer EDI order type group
-2	                | Customer EDI order type lines   | Create new **Customer EDI order type lines**. EDI > Setup > Customer setup > Customer EDI order type group  | Customer EDI order type group
-3	                | Customer EDI order purpose group  | Create new **Customer EDI order purpose group**. EDI > Setup > Customer setup > Customer EDI order purpose group
-4	                | Customer EDI order purpose lines  | Create new **Customer EDI order purpose lines**. EDI > Setup > Customer setup > Customer EDI order purpose group | Customer EDI order purpose group
-5	                | POA response code group           | Create new **POA response code group**. EDI > Setup > Customer setup > POA response code group
-6	                | POA response code group lines     | Create new **POA response code lines**. EDI > Setup > Customer setup > POA response code group  | POA response code group
-7	                | Customer EDI order line change type group       | Create new **Customer EDI order line change type group**. EDI > Setup > Customer setup > Customer EDI order line change type group
-8	                | Customer EDI order line change type group line  | Create new **Customer EDI order line change type lines**. EDI > Setup > Customer setup > Customer EDI order line change type group  | Customer EDI order line change type group
+1	                | Inventory journal name mapping      | Create new **Inventory journal name mapping group**. EDI > Setup > 3PL setup > Inventory journal name mapping |
+2	                | Inventory journal name mapping line | Create new **Inventory journal name mapping lines**. EDI > Setup > 3PL setup > Inventory journal name mapping | Inventory journal name mapping
+3	                | Disposition code mapping            | Create new **Disposition code mapping group**. EDI > Setup > 3PL setup > Disposition code mapping | 
+4	                | Disposition code mapping lines      | Create new **Disposition code mapping lines**. EDI > Setup > 3PL setup > Disposition code mapping | Disposition code mapping
+5	                | Inventory status Id mapping         | Create new **Inventory status Id mapping group**. EDI > Setup > 3PL setup > Inventory status Id mapping |
+6	                | Inventory status Id mapping lines   | Create new **Inventory status Id mapping lines**. EDI > Setup > 3PL setup > Inventory status Id mapping | Inventory status Id mapping
+7	                | Transaction direction mapping       | Create new **Transaction direction mapping group**. EDI > Setup > 3PL setup > Transaction direction mapping |
+8	                | Transaction direction mapping lines | Create new **Transaction direction mapping lines**. EDI > Setup > 3PL setup > Transaction direction mapping | Transaction direction mapping
+9	                | 3PL EDI order purpose group         | Create new **3PL order purpose group**. EDI > Setup > 3PL setup > Order purpose group |
+10	              | 3PL EDI order purpose lines         | Create new **3PL order purpose lines**. EDI > Setup > 3PL setup > Order purpose group | 3PL EDI order purpose group
 
 ## Document setting profiles
-EDI > Setup > Document types (Setting profiles for EDI customer documents)
+EDI > Setup > Document types (Setting profiles for EDI 3PL documents)
 
 **Order**         | **Entity**						| **Description**                             | **Dependency**
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
-1	    | EDI Settings - PO                               | Create new document type **Settings profile** for Customer purchase order |
-2	    | EDI Settings - Customer purchase order change   | Create new document type **Settings profile** for Customer purchase order change |
-3	    | EDI Settings - POA                              | Create new document type **Settings profile** for Customer purchase order acknowledgement |
-4	    | EDI Settings - ASN                              | Create new document type **Settings profile** for Customer advanced shipping notice |
-5	    | EDI Settings - Sales Invoice                    | Create new document type **Settings profile** for Sales invoice |
+1	                | EDI Settings - Picking list	      | Create new document type **Settings profile** for Picking list
+2	                | EDI Settings - Picking list registration	| Create new document type **Settings profile** for Picking list registration
+3	                | EDI Settings Shipment Advice - Purchase order	| Create new document type **Settings profile** for Shipment Advice - Purchase order
+4	                | EDI Settings Shipment Advice - Transfer order	| Create new document type **Settings profile** for Shipment Advice - Transfer order
+5	                | EDI Settings Shipment Advice - Return order	  | Create new document type **Settings profile** for Shipment Advice - Return order
+6	                | EDI Settings Shipment Advice - Voyage	        | Create new document type **Settings profile** for Shipment Advice - Voyage
+7	                | EDI Settings Shipment Receipt - Purchase order	| Create new document type **Settings profile** for Shipment Receipt - Purchase order
+8	                | EDI Shipment Receipt settings - Transfer order	| Create new document type **Settings profile** for Shipment Receipt - Transfer order
+9	                | EDI Settings Shipment Receipt - Return order	| Create new document type **Settings profile** for Shipment Receipt - Return order
+10	              | EDI Settings Shipment Receipt - Voyage	      | Create new document type **Settings profile** for Shipment Receipt - Voyage
+11	              | EDI Settings Inventory adjustment - Transfer	| Create new document type **Settings profile** for Inventory adjustment - Transfer
+12	              | EDI Settings Inventory adjustment - Count	    | Create new document type **Settings profile** for Inventory adjustment - Count
+13	              | EDI Settings Inventory adjustment - Reconciliation	| Create new document type **Settings profile** for Inventory adjustment - Reconciliation
+14	              | EDI settings inventory adjustment - Movement	| Create new document type **Settings profile** for inventory adjustment - Movement
+
 
 ## Document types
 EDI > Setup > Document types (Template, Validation, Outbound file names and EDI Field metadata)
@@ -66,5 +78,5 @@ EDI > Setup > Trading partner
 
 **Order**         | **Entity**						| **Description**                             | **Dependency**
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
-1                 | EDI Customers                           | Create new Customer trading partner   | [Customer setup](#customer-setup)
-2                 | EDI Documents - Customers               | Add incoming and outgoing documents to Customer trading partner | EDI Customers, [Customer setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data%20entities.md#document-types)
+1                 | EDI Warehouses                          | Create new Warehouse trading partner   | [3PL setup](#3pl-setup)
+2                 | EDI Documents - Warehouse               | Add incoming and outgoing documents to Warehouse trading partner | EDI Warehouses, [3PL setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data%20entities.md#document-types)
