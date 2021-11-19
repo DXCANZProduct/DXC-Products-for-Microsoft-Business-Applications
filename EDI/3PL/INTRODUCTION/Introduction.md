@@ -105,7 +105,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**
     - [Shipment advice - Purchase order](../SETUP/SETTING%20PROFILES/Shipment%20advice%20-%20Purchase%20order.md)
     - [Shipment advice - Return order](../SETUP/SETTING%20PROFILES/Shipment%20advice%20-%20Return%20order.md)
     - [Shipment receipt - Purchase order](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md)
-    - [Shipment receipt - Transfer order](..SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Transfer%20order.md)
+    - [Shipment receipt - Transfer order](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Transfer%20order.md)
     - [Shipment receipt - Return order](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Return%20order.md)
     - [Shipment receipt - Voyage](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Voyage.md)
     - [Inventory adjustment advice - Transfer](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Transfer.md)
