@@ -65,12 +65,12 @@ Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 Used to map D365/EDI value to 3PL's value and assigned on 3PL Trading partner: <br>
 
 - 3PL setup and which EDI document (and field) it is mapped to/from: **EDI > Setup > 3PL setup** <br>
-	- [Inventory journal name mapping](../)
+	- [Inventory journal name mapping](../SETUP/3PL%20SETUP/Inventory%20journal%20name%20mapping.md)
 		- Inventory adjustment - Counting (InventJournalNameIdExternal)
 		- Inventory adjustment - Movement (InventJournalNameIdExternal)
-	- [Disposition code mapping](../)
+	- [Disposition code mapping](../SETUP/3PL%20SETUP/Disposition%20code%20mapping.md)
 		- Shipment receipt - Return order (DispositionCodeExternal)
-	- [Inventory status Id mapping](../)
+	- [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)
 		- Picking list registration (InventStatusId)
 		- Shipment receipt - Purchase order (InventStatusId)
 		- Shipment receipt - Transfer order (InventStatusId)
@@ -80,9 +80,9 @@ Used to map D365/EDI value to 3PL's value and assigned on 3PL Trading partner: <
 		- Inventory adjustment - Counting (InventStatusId)
 		- Inventory adjustment - Reconciliation (InventStatusId)
 		- Inventory adjustment - Movement (InventStatusId)
-	- [Transaction direction mapping](../)
+	- [Transaction direction mapping](../SETUP/3PL%20SETUP/Transaction%20direction%20mapping.md)
 		- Inventory adjustment - Movement (TransactionDirection)
-	- [Order purpose code](../)
+	- [Order purpose group](../SETUP/3PL%20SETUP/Order%20purpose%20group.md)
 		- Picking list (OrderPurpose)
 
 #### Journal names assigned on 3PL Trading partner
@@ -100,21 +100,23 @@ Users can access the form by navigating to **EDI > Setup > Document types**
 
 - [File templates](../../CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
 - Setting profiles: applicable to the following document types
-    - [Picking list]()
-    - [Picking list registration]()
-    - [Shipment advice - Purchase order]()
-    - [Shipment advice - Return order]()
-    - [Shipment receipt - Purchase order]()
-    - [Shipment receipt - Transfer order]()
-    - [Shipment receipt - Return order]()
-    - [Shipment receipt - Voyage]()
-    - [Inventory adjustment advice - Transfer]()
-    - [Inventory adjustment advice - Counting]()
-    - [Inventory adjustment advice - Reconciliation]()
-    - [Inventory adjustment advice - Movement]()
+    - [Picking list](../SETUP/SETTING%20PROFILES/Picking%20list.md)
+    - [Picking list registration](../SETUP/SETTING%20PROFILES/Picking%20list%20registration.md)
+    - [Shipment advice - Purchase order](../SETUP/SETTING%20PROFILES/Shipment%20advice%20-%20Purchase%20order.md)
+    - [Shipment advice - Return order](../SETUP/SETTING%20PROFILES/Shipment%20advice%20-%20Return%20order.md)
+    - [Shipment receipt - Purchase order](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md)
+    - [Shipment receipt - Transfer order](..SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Transfer%20order.md)
+    - [Shipment receipt - Return order](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Return%20order.md)
+    - [Shipment receipt - Voyage](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Voyage.md)
+    - [Inventory adjustment advice - Transfer](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Transfer.md)
+    - [Inventory adjustment advice - Counting](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Counting.md)
+    - [Inventory adjustment advice - Reconciliation](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Reconciliation.md)
+    - [Inventory adjustment advice - Movement](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Movement.md)
 - Validation profiles: applicable to the following inbound document types
-    - [Picking list registration]()
-    - [Shipment receipt]()
+    - [Picking list registration](../SETUP/VALIDATION%20PROFILES/Picking%20list%20registration.md)
+    - [Shipment receipt - Purchase order](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md)
+    - [Shipment receipt - Transfer order](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Transfer%20order.md)
+    - [Shipment receipt - Return order](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Return%20order.md)
 - [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
 - [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
 
