@@ -50,8 +50,8 @@ EDI > Setup > 3PL setup
 ## Document setting profiles
 EDI > Setup > Document types (Setting profiles for EDI 3PL documents)
 
-**Order**         | **Entity**						| **Description**                             | **Dependency**
-:-----------------|:------------------------------------		|:------------------------- |:-------------------------
+**Order**         | **Entity**						| **Description**                             
+:-----------------|:------------------------------------		|:------------------------- 
 1	                | EDI Settings - Picking list	      | Create new document type **Settings profile** for Picking list
 2	                | EDI Settings - Picking list registration	| Create new document type **Settings profile** for Picking list registration
 3	                | EDI Settings Shipment Advice - Purchase order	| Create new document type **Settings profile** for Shipment Advice - Purchase order
