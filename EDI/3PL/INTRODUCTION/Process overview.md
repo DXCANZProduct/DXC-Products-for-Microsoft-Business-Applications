@@ -58,9 +58,9 @@ Shipment advice – Purchase order (To WH)	| Generate Receipts list		| Shipment 
 Shipment advice – Transfer order (To WH)	| Ship Transfer order			  | Shipment receipt – Transfer order
 Shipment advice – Return order (To WH)		| Send Return order			    | Shipment receipt – Return order
 Shipment advice – Voyage (To WH)		      | Send to EDI			        	| Shipment receipt – Voyage
-<br>						        |	<br>				    | <br>                      | Inventory adjustment - Transfer
-<br> 						        |	<br>			      | <br>                      | Inventory adjustment - Counting
-<br> 						        |	<br>				    | <br>                      | Inventory adjustment - Reconciliation
-<br> 						        |	<br>				    | <br>                      | Inventory adjustment - Movement
+<br>						        				          | <br>                      | Inventory adjustment - Transfer
+<br> 						        			            | <br>                      | Inventory adjustment - Counting
+<br> 						        				          | <br>                      | Inventory adjustment - Reconciliation
+<br> 						        				          | <br>                      | Inventory adjustment - Movement
 
 
