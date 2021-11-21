@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI Vendor]
-description: [EDI Vendor Documents - Vendor purchase order acknowledgement]
+title: [EDI 3PL]
+description: [EDI 3PL Documents - Picking list registration]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 12/11/2021
+ms.date: 22/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,26 +27,21 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Vendor purchase order acknowledgement
+# Picking list registration
 
-Companies may require a vendor to send a purchase order acknowledgement (POA) for an order and can be one of the reasons a purchase order status is 'In external review'. <br> Where the [Vendor purchase order document setting profile](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order.md) **Acknowledgement required** is set to _Yes_, the purchase order status will be set to **In external review** upon confirmation.
-
-The following subsections will describe how to view, process the acknowledgement and send a Vendor purchase order confirmation (if required). <br>
-The Acknowledgement can be viewed from the [Purchase order](#purchase-order) and confirmation values will be populated with default values per Trading partner.<br>
-The Confirmation can be either [manually](#manually-processing-purchase-order-acknowledgement) processed or [automatically](#automatically-processing-purchase-order-acknowledgement). <br>
+The following subsections will describe how to view and process the picking list registration from the 3PL warehouse. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
-The processed purchase order acknowledgement and sent confirmation record(s) can be viewed for a purchase order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Purchase order page.<br>
 
 ## Prerequisites
-The following setup is prerequisites for the vendor purchase order acknowledgement
+The following setup is prerequisites for the picking list registration
 
-1. Create [POA response code groups](../SETUP/VENDOR%20SETUP/POA%20response%20code%20group.md) to map the vendor's values to EDI POA responses code groups.
+1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md) for the document.
-1. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md) for the document.
+1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Picking%20list%20registration.md) for the document.
+1. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Picking%20list%20registration.md) for the document.
 1. If the vendor [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
-1. Assign the applicable POA response code group to the vendor trading partner.
-1. Add and enable the vendor purchase order acknowledgement document to the [Vendor trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+1. Assign the 3PL setup to the warehouse trading partner's options.
+1. Add and enable the **picking list** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
     - Validation profile
@@ -54,39 +49,36 @@ The following setup is prerequisites for the vendor purchase order acknowledgeme
 
 ## Processing
 Inbound files have the following three steps:
-1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**
-2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > Vendor documents > Vendor purchase order acknowledgement**
-3. **Staging to target** - The staging record/s is processed to target. If the acknowledgement is succefully processed the corresponding D365 purchase can be updated as per the received vendor values
+1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**.
+2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > 3PL documents > Picking list registration**.
+3. **Staging to target** - The staging record/s is processed to target. If the EDI picking list registration is succefully processed the D365 stock will be picked. 
 
 ### Create document
 ![alt text](../../CORE/Image/Create_Document.png "Create document")
 
-### Header checks for Vendor purchase order acknowledgement
+### Header checks for Picking list registration
 Header checks are performed when:
-1. Importing Vendor purchase order acknowledgement file
+1. Importing Picking list registration file
 2. Processing from import to staging
 3. Processing from staging to target
 
-
-![alt text](../IMAGE/HeaderChecks_VendorPOA.png "Header checks for Vendor purchase order acknowledgement")
-
-## Step 1 - Import
-When a purchase order acknowledgement file is imported, the file name is key to identifying the vendor and therefore the document template. See [Trading partners](../../CORE/Setup/Trading%20partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
+### Step 1 - Import
+When an EDI file is imported, the file name is key to identifying the trading partner and therefore the document template. See [Trading partners](../../CORE/Setup/Trading%20partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
 
 > Note: The file mask is used to identify the trading partner and therefore template
 
-## Step 2 - Import to staging - Inbound file validation
-When the purchase order acknowledgement file is retrieved and imported, there are various validations that are completed before the staging record is created in the EDI staging table.
+### Step 2 - Import to staging - Inbound file validation
+When the EDI file is retrieved and imported, there are various validations that are completed before the staging record is created in the EDI staging table.
 If the processing of **Import to staging** errors, the Inbound file's **Status** will be set to _Error_ and no staging record created.
 
 **Rule Id**         |	**Details**         
 :--                 |:--                  
-**Check Template**  |	Identify a template for the Vendor/Document type. This will be used to identify the whereabouts of data within the file
+**Check Template**  |	Identify a template for the Trading partner/Document type. This will be used to identify the whereabouts of data within the file
 
 #### Possible issues and fixes
-**Import to staging** errors for Vendor purchase order acknowledgements can be viewed in:
+**Import to staging** errors for EDI file can be viewed in:
 - **EDI > Files > Inbound files** filtered to **Status** set to _Error_
-- **EDI > Document maintenance**, tab **Vendor documents**, tile **File import errors**
+- **EDI > Document maintenance**, tab **3PL documents**, tile **File import errors**
 
 At this step the issues are usually around the file not matching the template.
 - Does the file have the correct template assigned (General tab, field **Template**):
@@ -95,14 +87,14 @@ At this step the issues are usually around the file not matching the template.
 
 Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
 
-## Step 3 - Staging to target
-If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the acknowledgement won't be created on the target D365 purchase order.
+### Step 3 - Staging to target
+If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 stock won't be be picked for the picking list registration.
 
 #### Possible issues and fixes
-**Staging to target** errors for Vendor purchase order acknowledgements can be viewed in:
-- **EDI > Documents > Vendor documents > Vendor purchase order acknowledgement** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **Vendor documents**, tile **Purchase order acknowledgement errors**
-- **EDI > Document maintenance**, tab **Vendor documents**, **Documents** page, tab **POA**
+**Staging to target** errors for Picking list registrations can be viewed in:
+- **EDI > Documents > 3PL documents > Picking list registration** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **3PL documents**, tile **Picking list registration errors**
+- **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Picking list registration**
 
 At this step the issues are usually around mapping/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
@@ -113,22 +105,23 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example header errors:
 **Error message**       | **Error type**         | **Method to fix**
 :---------------------- |:----                   |:----
+Item %, dimensions: % Physical on-hand %=Available % cannot be picked because only % is/are available from the inventory    | Processing error  | Adjust D365 on-hand if staging record correct
+Picking list % is in status Completed   | Wrong status  | The D365 picking list registration has already been completed | Verify if duplication and either fix picking route if not duplication. If duplication cancel staging record.
 
+> Note: % contains staging data for the record
 
 ### Staging line validation - Purchase order acknowledgement
 
-![alt text](../IMAGE/LineChecks_VendorPOA.png "Item checks for Vendor purchase order acknowledgement")
-
 **Rule Id**                 | **Details**                                               | Error    
 :---                        |:---                                                       |:---              
-**PO line number**          | Find the D365 purchase order line number to which the POA line belongs    | Error at Staging table. <br> No target POA created
-**No Valid Item**           | No valid item based on the different options available    | Error at Staging table. <br> No target POA created
+**Line number/Lot Id**      | Find the EDI picking list line number/ Lot Id to which the staging line belongs    | Error at Staging table. <br> D365 stock not picked
+**No Valid Item**           | No valid item found in D365    | Error at Staging table. <br> D365 stock not picked
 
 #### Possible issues and fixes
-**Staging to target** errors for Vendor purchase order acknowledgement can be viewed in:
-- **EDI > Documents > Vendor purchase order acknowledgement** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **Vendor documents**, tile **Purchase order acknowledgement errors**
-- **EDI > Document maintenance**, tab **Vendor documents**, **Documents** page, tab **POA**
+**Staging to target** errors for Picking list registration can be viewed in:
+- **EDI > Documents > 3PL documents > Picking list registration** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **3PL documents**, tile **Picking list registration errors**
+- **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Picking list registration**
 
 At this step the issues are usually around setup/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
@@ -136,7 +129,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example line errors:
 **Error message**                     | **Error type**         | **Method to fix**
 :------------------------------------ |:----                   |:----
-Item not found: %	                  | Item not found         | **EDI > Documents > Vendor documents > Vendor purchase order acknowledgement** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's [Setting profile](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
+Item not found: %	                  | Item not found         | **EDI > Documents > 3PL documents > Picking list registration** and/or <br> **Product information management > Products > Released products**
 
 ### Validation
 
