@@ -67,7 +67,7 @@ Each picking list document will also have an order purpose which is specified in
 - Cancellation
 
 ## Inbound document
-Once the order has been picked, this information is sent back via the inbound **Picking list registration** document 
+Once the order has been picked by the 3PL, the pick information is sent back via the inbound **Picking list registration** document.
 
 ## View staging table records
 To view the picking list staging records, go to **EDI > Documents > 3PL documents > Picking list**. 
