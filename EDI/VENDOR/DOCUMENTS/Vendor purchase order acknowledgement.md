@@ -70,12 +70,12 @@ Header checks are performed when:
 
 ![alt text](../IMAGE/HeaderChecks_VendorPOA.png "Header checks for Vendor purchase order acknowledgement")
 
-## Step 1 - Import
+### Step 1 - Import
 When a purchase order acknowledgement file is imported, the file name is key to identifying the vendor and therefore the document template. See [Trading partners](../../CORE/Setup/Trading%20partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
 
 > Note: The file mask is used to identify the trading partner and therefore template
 
-## Step 2 - Import to staging - Inbound file validation
+### Step 2 - Import to staging - Inbound file validation
 When the purchase order acknowledgement file is retrieved and imported, there are various validations that are completed before the staging record is created in the EDI staging table.
 If the processing of **Import to staging** errors, the Inbound file's **Status** will be set to _Error_ and no staging record created.
 
@@ -95,7 +95,7 @@ At this step the issues are usually around the file not matching the template.
 
 Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
 
-## Step 3 - Staging to target
+### Step 3 - Staging to target
 If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the acknowledgement won't be created on the target D365 purchase order.
 
 #### Possible issues and fixes
