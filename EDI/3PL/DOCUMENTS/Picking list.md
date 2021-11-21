@@ -34,7 +34,8 @@ The following setup is prerequisites for the picking list
 
 ### 3PL setup
 EDI > Setup > 3PL setup
-1. Create [Order purpose group](../SETUP/3PL%20SETUP/Order%20purpose%20group.md) - mapped to OrderPurpose on the document.
+1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
+2. Create [Order purpose group](../SETUP/3PL%20SETUP/Order%20purpose%20group.md) to map the 3PL's values to EDI order purpose groups.
 
 ### Document type setup
 EDI > Setup > Document types: Picking list
