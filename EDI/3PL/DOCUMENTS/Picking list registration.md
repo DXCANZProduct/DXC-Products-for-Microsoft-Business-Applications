@@ -106,7 +106,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 **Error message**       | **Error type**         | **Method to fix**
 :---------------------- |:----                   |:----
 Item %, dimensions: % Physical on-hand %=Available % cannot be picked because only % is/are available from the inventory    | Processing error  | Adjust D365 on-hand if staging record correct
-Picking list % is in status Completed   | Wrong status  | The D365 picking list registration has already been completed | Verify if duplication and either fix picking route if not duplication. If duplication cancel staging record.
+Picking list % is in status Completed   | Wrong status  | The D365 picking list registration has already been completed. Verify if duplication and either fix record's picking route id or cancel staging record if duplication.
 
 > Note: % contains staging data for the record
 
