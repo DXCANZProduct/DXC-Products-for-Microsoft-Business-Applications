@@ -36,6 +36,8 @@ If the 3PL doesn't pick all the original picking list lines/short pick:
 - The lines not included in the inbound picking list registration's **Handling status** will be marked as **Canceled**
 - The company will need to generate a new D365 picking list if the remaining lines and short picked quantities still requires picking
 
+Optional document settings also allow posting the sales order's delivery note and/or shipping the transfer order.
+
 ## Prerequisites
 The following setup is prerequisites for the picking list registration
 
@@ -132,7 +134,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example line errors:
 **Error message**                     | **Error type**         | **Method to fix**
 :------------------------------------ |:----                   |:----
-Unable to find an activated picking list line: %	                  | No line found         | EDI couldn't find the line based on line number/ lot id and item number. **EDI > Documents > 3PL documents > Picking list registration** and/or <br> **Product information management > Products > Released products**
+Unable to find an activated picking list line: %	                  | No line found         | EDI couldn't find the line based on line number/ lot id and item number/item dimensions. **EDI > Documents > 3PL documents > Picking list registration** and/or <br> **Product information management > Products > Released products**
 
 ### Validation
 
@@ -149,8 +151,8 @@ Rule Id	                | Details	                            | Info/Warning tol
 
 
 ## View staging table records
-To view the Vendor purchase order acknowledgement staging records, go to **EDI > Documents > Vendor documents > Vendor purchase order acknowledgement**. 
-Use this page to review staging and process EDI Vendor purchase order acknowledgement documents, update the D366 purchase order and send the purchase order confirmation (where set to automatic).
+To view the Picking list registration staging records, go to **EDI > Documents > 3PL documents > Picking list registration**. <br>
+Use this page to review staging and process EDI Picking list registration documents, pick the D365 stock and/or cancel picking list line(s).
 
 ### List page
 The following EDI fields are available on the list page.
@@ -161,35 +163,29 @@ The following EDI fields are available on the list page.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and updated the D365 purchase order and sent a purchase order confirmation (where set to automatic). <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
-**Trading partner account**     | Vendor account assigned to the staging record.
-**Trading partner GLN**         | The Vendor’s global location number is shown here.
-**Purchase order**              | Purchase order number for the POA record.
-**PO version number**           | The version of the purchase order number being acknowledged.
-**Purchase order date**         | The purchase order date from the PO that is being acknowledged is shown here.
-**Acknowledged status date**    | The purchase order acknowledgement date from the EDI POA is shown here.
-**POA code**                    | POA Header code group as mapped in [POA response code group](../SETUP/VENDOR%20SETUP/POA%20response%20code%20group.md).
-**EDI order purpose**           | The EDI order purpose is shown here.
+**Trading partner account**     | Warehouse account assigned to the staging record.
+**Trading partner GLN**         | The 3PL’s global location number is shown here.
+**Picking route**               | Picking route number.
 **Created date and time**       | The date and time the selected record was created in the staging table.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
 ### Buttons
-The following buttons are available on the **Vendor purchase order acknowledgement**'s Action Pane, tab **Purchase order acknowledgement**.
+The following buttons are available on the **Picking list registration**'s Action Pane, tab **Picking list registration import**.
 
 **Button**	                    | **Description**
 :---                            |:----
-**Process purchase order acknowledgment**   | Process purchase order acknowledgement for the selected record in the staging table.
-**Process all purchase order acknowledgment**   | Process purchase order acknowledgement for the staging records that have a **Staging to target status** set to _Not started_. 
+**Process pick list registration**   | Process picking list registration for the selected record in the staging table.
+**Process all pick list registrations**   | Process picking list registration for the staging records that have a **Staging to target status** set to _Not started_. 
 **Inbound files**               | View the inbound file record the selected staging record.
 **Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
-**Purchase order**              | If the EDI POA has been completed it is possible to inquire on the linked Purchase order the POA was created for.
-**Vendor**                      | Inquire on the Vendor for the selected record.
+**Pick list registration**      | If the staging record has been completed it is possible to inquire on the pick list registration it updated from this button.
 **Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
 **Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
 **Reset Status**                | You can reset the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
 **Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
 
-The following buttons are available on the **Vendor purchase order acknowledgement**'s Action Pane, tab **Acknowledgement**.
+The following buttons are available on the **Picking list registration**'s Action Pane, tab **Acknowledgement**.
 The **Acknowledgement** tab is available on all incoming documents staging pages and enables the user to process or view the **Functional acknowledgement outbound** that has been created for the inbound document.
 
 **Button**	                    | **Description**
@@ -201,11 +197,11 @@ The **Acknowledgement** tab is available on all incoming documents staging pages
 ### Header fields
 The following EDI Header staging fields are available on the header page.
 
-**Field**	            | **Description**	                                    | **D365 PO update**
+**Field**	            | **Description**	                                    | **D365 header update**
 :---                    |:---                                                   |:---
 <ins>**Identification FastTab**</ins>
 <ins>**Identification**</ins>		
-**EDI number**          | EDI Staging table record id                           | History page on D365 PO
+**EDI number**          | EDI Staging table record id                           | History page on D365 sales order
 **Company account**     | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here.   | 
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and updated the D365 purchase order and sent a purchase order confirmation (where set to automatic). <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -215,101 +211,15 @@ The following EDI Header staging fields are available on the header page.
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
 <ins>**Overview**</ins>	
-**Purchase order**          | Purchase order number for the POA record	
-**Purchase order date**     | The purchase order date from the PO that is being acknowledged is shown here	
-**Acknowledged status date**    | The purchase order acknowledgement date from the EDI POA is shown here	| Acknowledgement status date
-**POA code**                | POA Header response code	                                                    | Acknowledgement status
-**EDI order purpose**       | The EDI order purpose is shown here	
-<ins>**Status**</ins>		
-**Group control number**    | Group control number for outbound document. To be used to match inbound functional acknowledgement, where applicable.	
-**Sent**                    | Indicates if functional acknowledgement outbound has been sent to the trading partner for the inbound document.	
-<ins>**General FastTab**</ins>
-<ins>**Purchase order acknowledgement**</ins>
-**POA code**                | POA Header response code	                                                    | Acknowledgement status
-<ins>**Details**</ins>
-**Vendor reference**        | Vendor’s order reference	                                                    | Vendor reference
-**Vendor account**          | Vendor account for the POA record	
-**Vendor name**             | Vendor name	
-**Trading partner GLN**     | The vendor’s global location number is shown here	
-**Company GLN**             | The company’s global location number is shown here
-**Buyer group**             | The Purchase Order’s Buyer group is shown here	
-**Buyer name**              | Buyer name	
-**Buyer email**             | Buyer email	
-**Buyer phone**             | Buyer phone	
-**Company phone**           | Company phone	
-**Company name**            | Company name	
-**Tax registration number** | Company tax registration number	
-<ins>**Vendor invoicing**</ins>	
-**Vendor name**             | Vendor name	
-**Vendor primary street number**    | Vendor primary address - street number	
-**Vendor primary street**   | Vendor primary address - street	
-**Vendor primary city**     | Vendor primary address - city	
-**Vendor primary county**   | Vendor primary address - county	
-**Vendor primary state**    | Vendor primary address - state	
-**Vendor primary ZIP/postal code**  | Vendor primary address - ZIP/postal code	
-**Vendor primary country/region**   | Vendor primary address – country/region	
-<ins>**Customer invoicing**</ins>		
-**Bill to**                 | Our account number as loaded on Vendor’s Invoice account	
-**Name**                    | Bill to - Name	
-**Name or description**     | Bill to - Invoice address name	
-**Street number**           | Bill to - Street number	
-**Street**                  | Bill to - Street	
-**City**                    | Bill to - City	
-**County**                  | Bill to - County	
-**State**                   | Bill to - State	
-**ZIP/postal code**         | Bill to - ZIP/postal code	
-**Country/region**          | Bill to - Country/region	
-<ins>**Version**</ins>
-**PO version number**       | The version of the D365 purchase order number	
-**Created date and time**   | The date and time the selected record was created in the staging table.
-<ins>**Delivery**</ins>		
-**Delivery name**           | Ship to - Name	
-**Ship to**                 | Our account number as loaded on Vendor’s Order account	
-**Store code**              | Ship to - Store code	
-**Street number**           | Ship to - Street number	
-**Street**                  | Ship to - Street	
-**City**                    | Ship to - City	
-**County**                  | Ship to - County	
-**State**                   | Ship to - State	
-**ZIP/postal code**         | Ship to - ZIP/postal code	
-**Country/region**          | Ship to - Country/region	
-**Delivery date**           | Required delivery date	
-**Acknowledged delivery date**  | Acknowledged delivery date                            | Confirmed delivery date
-**Site**                    | Storage dimension - Site	
-**Warehouse**               | Storage dimension - Warehouse	
-**Delivery terms**          | Delivery terms	
-**Delivery mode**           | Delivery mode	
-**Form note**               | Header note to be sent with purchase order	
-**Requester**               | Requester	
-**Attention information**   | Attention information	
-<ins>**Transportation**</ins>		
-**Shipping carrier**        | Shipping carrier	
-**Carrier qualifier**       | Code designating the system/method of code structure used for shipping carrier	
-**EDI carrier mode**        | Code specifying the method or type of transportation for the shipment. Mapped value setup in [Carrier mode](../SETUP/VENDOR%20SETUP/Carrier%20mode.md).
-<ins>**Miscellaneous**</ins>		
-**Misc. indicator**         | Code which indicates an allowance or charge for the service specified. Mapped value setup in [Misc charge/allowance indicator](../SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md).
-EDI charges code	Code identifying the service, promotion, allowance, or charge. Mapped value setup in [Charges code](../SETUP/VENDOR%20SETUP/Charges%20code.md).
-<ins>**Totals**</ins>
-**Subtotal amount**         | Subtotal of all purchase order lines	
-**Line discount**           | Discount for all purchase order lines	
-**Misc amount**             | Purchase order header misc. charge/allowance amount	
-**Tax amount**              | Tax amount	
-**Round-off**               | Round-off	
-**Total amount**            | Total amount	
-<ins>**Payment**</ins>                 
-**Currency**                | Currency	
-**Terms code**              | Payment terms. Mapped value setup in [Payment terms type group](../SETUP/VENDOR%20SETUP/Payment%20terms%20type%20group.md).
-**Terms net days**          | Payment terms net due days
-**Cash discount**           | Settlement discount percentage	
-**Days**                    | Settlement days	
-**Discount amount**         | Settlement discount amount if paid within settlement days	
+
+
+
 
 
 ### Line fields
 The following EDI Line fields are available on the lines page. <br> 
-If update to purchase order line is allowed, column **D365 PO line update** indicates what field could be updated by the POA.
 
-**Field**                   | **Description**                                                           | **D365 PO line update**
+**Field**                   | **Description**                                                           | **D365 line update**
 :---                        |:---                                                                       |:---
 **Line number**             | The line within the EDI table/file. Refers to original purchase order EDI line number and used in matching	
 **Item number**             | The item identifier as sent by the trading partner	
