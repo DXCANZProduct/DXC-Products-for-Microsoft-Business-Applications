@@ -120,7 +120,7 @@ Picking list % is in status Completed   | Wrong status  | The D365 picking list 
 
 **Rule Id**                 | **Details**                                               | Error    
 :---                        |:---                                                       |:---              
-**Line number/ Lot Id/ Item number**   | Find the EDI picking list line number/ Lot Id to which the staging line belongs    | Error at Staging table. <br> D365 stock not picked
+**Line number / Lot Id / Item number / Inventory dimensions**   | Find the EDI picking list line number/ Lot Id to which the staging line belongs    | Error at Staging table. <br> D365 stock not picked
 
 #### Possible issues and fixes
 **Staging to target** errors for Picking list registration can be viewed in:
@@ -210,62 +210,28 @@ The following EDI Header staging fields are available on the header page.
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**Overview**</ins>	
-
-
-
-
+<ins>**General FastTab**</ins>	
+<ins>**General**</ins>	
+**Consignment note number** | Consignment note number received from the 3PL provider	| Pick route > Consignment note number
+**Start date/time**         | Date/time the pick route was started	                    | Pick route > Start date/time
+**End date/time**           | Date/time the pick route was completed	                | Pick route > End date/time
+**Dispatch date**           | Shipping date/time	                                    | Sales order > Packing slip > Ship date
+**Trading partner GLN**     | The 3PL’s global location number is shown here.	
 
 ### Line fields
 The following EDI Line fields are available on the lines page. <br> 
 
 **Field**                   | **Description**                                                           | **D365 line update**
 :---                        |:---                                                                       |:---
-**Line number**             | The line within the EDI table/file. Refers to original purchase order EDI line number and used in matching	
-**Item number**             | The item identifier as sent by the trading partner	
-**POA code item**           | Purchase order acknowledgement code for the item, for example line price - advise.
-**POA code shipment**       | Purchase order acknowledgement code for shipment of the item, for example partial/full shipment.
-**Description**             | Purchase order line text	
-**Purchase quantity**       | Acknowledged purchase quantity	                                        | Deliver remainder quantity. Will be converted if POA unit doesn't match PO unit. <br> EDI acknowledgement tab > Acknowledged quantity
-**Unit**                    | Unit of measure of purchase quantity                                      | Used in unit conversion (if applicable) for quantity and unit price
-**Price unit**              | The quantity of the product that is covered by the purchase price. Usually 1. | Used in unit price calculation
-**Price multiplier**        | Value to be used to obtain a new value. NetUnitPrice/UnitPrice. Example price before discount $100 and after discount $90 has a price multiplier of 0.9	
-**Includes GST**            | Unit prices and unit discounts includes GST	
-**Unit price**              | Unit price for the item	                                                | POA unit price/POA price unit = D365 PO line unit price. Will be converted if POA unit doesn't match PO unit. <br> EDI acknowledgement tab > Acknowledged price 
-**Unit discount**           | The amount of the line discount per price unit	
-**Unit discount percentage**    | Discount percentage	
-**Net unit price**          | Unit price net of all discounts	
-**Charges on purchases**    | The purchase charge that is calculated as a charge that is independent of the quantity on the purchase order line	
-**Misc charges**	        | Miscellaneous charge/allowance allocated to purchase order line	
-**Line amount excluding tax**   | Net line amount excluding tax	
-**Line amount tax**         | Line amount tax	
-**Line amount including tax**   | Net line amount including tax	
-**Currency**                | Currency	
-**Inners quantity**         | Unit conversion quantity of inners to outers. <br> Example qty 12 ea (inner) per box (outer)	    | EDI acknowledgement tab > Acknowledged inner
-**Inners unit**             | Inners unit of measure as setup on item’s [pack size](../../CORE/Setup/Item%20pack%20sizes.md)    | 
-**Pack quantity**           | Package quantity	                                                                                | EDI acknowledgement tab > Acknowledged pack
-**Pack unit**	            | Package unit of measure	
-**Configuration**           | Inventory dimension - Configuration	
-**Color**                   | Inventory dimension - Colour	
-**Size**                    | Inventory dimension - Size	
-**Style**                   | Inventory dimension - Style	
-**Site**                    | Storage dimension - Site	
-**Warehouse**               | Storage dimension - Warehouse	
-**Requested receipt date**  | The requested receipt date	
-**Accepted delivery date**  | Vendors accepted delivery date	                                                                | EDI acknowledgement tab > Acknowledged date
-**Requester**               | Requester	
-**Attention information**   | Attention information	
-**Delivery name**           | Address for Delivery – Delivery name	
-**Name or description**     | Ship to – Name or description	
-**Street number**           | Ship to - Street number	
-**Street**                  | Ship to - Street	
-**City**                    | Ship to - City	
-**County**                  | Ship to - County	
-**State**                   | Ship to - State	
-**ZIP/postal code**         | Ship to - ZIP/postal code	
-**Country/region**          | Ship to - Country/region	
-**Store code**              | Ship to - Store code	
-**Batch number**            | Batch number for the item	                                                                        | Batch
-**Manufacturing date**      | Vendor’s manufacturing date for the batch	                                                        | If D365 batch doesn't exist, used to create new batch
-**Expiration date**         | Vendor’s expiration date for the batch	                                                        | If D365 batch doesn't exist, used to create new batch
-        
+**Line number**             | Picking list line number. If ‘_Line number_ is used in **Line matching strategy** this needs to match to Line number from the related Picking list staging record.	| Used to find matching line when **Line matching strategy** is _Line number_
+**Item number**             | The D365 item iumber                                                      | Used for validation
+**Lot Id**                  | Lot id for the sales/transfer order line	                                | Used to find matching line when **Line matching strategy** is _Lot ID_
+**Picked**                  | Picked Quantity	                                                        | Pick route line > Pick quantity
+**SSCC**                    | SSCC received from the 3PL provider	                                    | Pick route line > SSCC
+**Colour**                  | Product dimensions – Colour	                                            | Used for validation
+**Size**                    | Product dimensions – Size	                                                | Used for validation
+**Style**                   | Product dimensions – Style	                                            | Used for validation
+**Configuration**           | Product dimensions – Configuration	                                    | Used for validation
+**Batch number**            | Tracking dimensions – Batch number	                                    | Used for validation. If **Batch id** allows update, can also update Pick route line > Batch number
+**Serial number**           | Tracking dimensions – Serial number	                                    | Pick route line > Serial number
+**Inventory status**        | Storage dimensions – Inventory status. Mapped value for Inventory status  | Used for validation
