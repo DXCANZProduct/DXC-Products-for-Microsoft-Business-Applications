@@ -45,7 +45,7 @@ The following setup is prerequisites for the picking list registration
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
 1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Picking%20list%20registration.md) for the document.
 1. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Picking%20list%20registration.md) for the document.
-1. If the vendor [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
+1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the 3PL setup to the warehouse trading partner's options.
 1. Add and enable the **picking list** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
