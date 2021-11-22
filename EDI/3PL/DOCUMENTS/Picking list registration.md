@@ -34,7 +34,7 @@ Viewing the [Staging table records](#view-staging-table-records) will also be di
 
 If the 3PL doesn't pick all the original picking list lines/short pick:
 - The lines not included in the inbound picking list registration's **Handling status** will be marked as **Canceled**
-- The company will need to generate a new picking list if the remaining lines and short picked quantities still requires picking
+- The company will need to generate a new D365 picking list if the remaining lines and short picked quantities still requires picking
 
 ## Prerequisites
 The following setup is prerequisites for the picking list registration
