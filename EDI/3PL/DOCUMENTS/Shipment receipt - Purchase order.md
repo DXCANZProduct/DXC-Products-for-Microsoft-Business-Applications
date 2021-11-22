@@ -43,7 +43,9 @@ The following setup is prerequisites for the picking list registration
 1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md) for the document.
 1. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md) for the document.
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
-1. Assign the 3PL setup to the warehouse trading partner's options.
+1. Assign the 3PL setup to the warehouse trading partner's options:
+    -  [Inventory journal name mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)
+    -  Item arrival: Select item arrival journal to use for processing inventory receipts. Options from **Inventory management > Setup > Journal names > Warehouse management**
 1. Add and enable the **Shipment receipt - Purchase order** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
@@ -124,11 +126,11 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example line errors:
 **Error message**                     | **Error type**         | **Method to fix**
 :------------------------------------ |:----                   |:----
-Unable to find an activated picking list line: %	                  | No line found         | EDI couldn't find the line based on line number/ lot id and item number/item dimensions. **EDI > Documents > 3PL documents > Picking list registration** and/or <br> **Product information management > Products > Released products**
+
 
 ### Validation
 
-[Validation profiles](../SETUP/VALIDATION%20PROFILES/Picking%20list%20registration.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
+[Validation profiles](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
 -	**Info** - An infolog is displayed with information only, it is not identified as a warning
 -	**Warning** - An infolog is displayed with a warning. It is possible to carry on processing
 -	**Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error
@@ -137,12 +139,11 @@ The following table describes each validation option for the EDI document. It al
 
 Rule Id	                | Details	                            | Info/Warning tolerance updates
 :--                     |:--                                    |:--
-**Short pick**          | Where the pick list registration is less than the original pick list quantity | Post picking list registration even when short picked
-
+**Batch Id update**     | Where the batch id received is different to batch id (example ABC123 vs. 123ABC) in the shipment advice. | Arrival journal posted with 3PL's batch
 
 ## View staging table records
-To view the Picking list registration staging records, go to **EDI > Documents > 3PL documents > Picking list registration**. <br>
-Use this page to review staging and process EDI Picking list registration documents, pick the D365 stock and/or cancel picking list line(s).
+To view the Shipment receipt - Purchase order staging records, go to **EDI > Documents > 3PL documents > Stock transfer receipt > Purchase order**. <br>
+Use this page to review staging and process EDI Shipment receipt - Purchase order documents, post the Arrival journal and optionally post the Product receipt.
 
 ### List page
 The following EDI fields are available on the list page.
@@ -155,7 +156,7 @@ The following EDI fields are available on the list page.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and updated the D365 purchase order and sent a purchase order confirmation (where set to automatic). <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 **Trading partner account**     | Warehouse account assigned to the staging record.
 **Trading partner GLN**         | The 3PL’s global location number is shown here.
-**Picking route**               | Picking route number.
+
 **Created date and time**       | The date and time the selected record was created in the staging table.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
