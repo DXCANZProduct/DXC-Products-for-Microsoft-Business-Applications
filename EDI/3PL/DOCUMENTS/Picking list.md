@@ -47,7 +47,7 @@ EDI > Setup > Document types: Picking list
 EDI > Setup > Trading partners
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the **3PL setup** to the warehouse trading partner's options.
-1. Add and enable the **picking list** document to the [3PL trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+1. Add and enable the **picking list** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
     - File name setup
