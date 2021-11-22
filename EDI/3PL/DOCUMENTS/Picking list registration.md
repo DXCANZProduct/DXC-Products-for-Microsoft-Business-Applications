@@ -128,11 +128,11 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example line errors:
 **Error message**                     | **Error type**         | **Method to fix**
 :------------------------------------ |:----                   |:----
-
+Unable to find an activated picking list line: %	                  | No line found         | EDI couldn't find the line based on line number/ lot id and item number/item dimensions. **EDI > Documents > 3PL documents > Picking list registration** and/or <br> **Product information management > Products > Released products**
 
 ### Validation
 
-[Validation profiles](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
+[Validation profiles](../SETUP/VALIDATION%20PROFILES/Picking%20list%20registration.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
 -	**Info** - An infolog is displayed with information only, it is not identified as a warning
 -	**Warning** - An infolog is displayed with a warning. It is possible to carry on processing
 -	**Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error
