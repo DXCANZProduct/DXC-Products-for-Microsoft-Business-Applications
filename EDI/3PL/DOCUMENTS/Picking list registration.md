@@ -225,7 +225,7 @@ The following EDI Line fields are available on the lines page. <br>
 :---                        |:---                                                                       |:---
 **Line number**             | Picking list line number. If ‘_Line number_ is used in **Line matching strategy** this needs to match to Line number from the related Picking list staging record.	| Used to find matching line when **Line matching strategy** is _Line number_
 **Item number**             | The D365 item number                                                      | Used for validation
-**Lot Id**                  | Lot id for the sales/transfer order line	                                | Used to find matching line when **Line matching strategy** is _Lot ID_
+**Lot Id**                  | Lot id for the sales/transfer order line. If ‘_Lot ID_ is used in **Line matching strategy** this needs to match to Lot ID from the related Picking list staging record.	             | Used to find matching line when **Line matching strategy** is _Lot ID_
 **Picked**                  | Picked Quantity	                                                        | Pick route line > Pick quantity
 **SSCC**                    | SSCC received from the 3PL provider	                                    | Pick route line > SSCC
 **Colour**                  | Product dimensions – Colour	                                            | Used for validation
