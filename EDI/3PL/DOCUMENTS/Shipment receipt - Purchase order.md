@@ -44,7 +44,7 @@ The following setup is prerequisites for the picking list registration
 1. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md) for the document.
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the 3PL setup to the warehouse trading partner's options:
-    -  [Inventory journal name mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)
+    -  [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)
     -  Item arrival: Select item arrival journal to use for processing inventory receipts. Options from **Inventory management > Setup > Journal names > Warehouse management**
 1. Add and enable the **Shipment receipt - Purchase order** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
