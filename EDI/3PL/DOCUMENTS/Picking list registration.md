@@ -32,6 +32,10 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 The following subsections will describe how to view and process the picking list registration from the 3PL warehouse. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
 
+If the 3PL doesn't pick all the original picking list lines/short pick:
+- The lines not included in the inbound picking list registration's **Handling status** will be marked as **Canceled**
+- The company will need to generate a new picking list if the remaining lines and short picked quantities still requires picking
+
 ## Prerequisites
 The following setup is prerequisites for the picking list registration
 
@@ -110,12 +114,11 @@ Picking list % is in status Completed   | Wrong status  | The D365 picking list 
 
 > Note: % contains staging data for the record
 
-### Staging line validation - Purchase order acknowledgement
+### Staging line validation - Picking list registration
 
 **Rule Id**                 | **Details**                                               | Error    
 :---                        |:---                                                       |:---              
-**Line number/Lot Id**      | Find the EDI picking list line number/ Lot Id to which the staging line belongs    | Error at Staging table. <br> D365 stock not picked
-**No Valid Item**           | No valid item found in D365    | Error at Staging table. <br> D365 stock not picked
+**Line number/ Lot Id/ Item number**   | Find the EDI picking list line number/ Lot Id to which the staging line belongs    | Error at Staging table. <br> D365 stock not picked
 
 #### Possible issues and fixes
 **Staging to target** errors for Picking list registration can be viewed in:
@@ -129,195 +132,21 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example line errors:
 **Error message**                     | **Error type**         | **Method to fix**
 :------------------------------------ |:----                   |:----
-Item not found: %	                  | Item not found         | **EDI > Documents > 3PL documents > Picking list registration** and/or <br> **Product information management > Products > Released products**
+Unable to find an activated picking list line: %	                  | No line found         | EDI couldn't find the line based on line number/ lot id and item number. **EDI > Documents > 3PL documents > Picking list registration** and/or <br> **Product information management > Products > Released products**
 
 ### Validation
 
-[Validation profiles](../SETUP/VALIDATION%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
+[Validation profiles](../SETUP/VALIDATION%20PROFILES/Picking%20list%20registration.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
 -	**Info** - An infolog is displayed with information only, it is not identified as a warning
 -	**Warning** - An infolog is displayed with a warning. It is possible to carry on processing
 -	**Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error
 
-The following table describes each validation option for the Vendor purchase order akcnowledgement document. It also describes if the validation rule is not met, but only has an info or warning error tolerance, how the target D365 purchase order will be updated.
+The following table describes each validation option for the EDI document. It also describes if the validation rule is not met, but only has an info or warning error tolerance, how the D365 target will be created/updated.
 
 Rule Id	                | Details	                            | Info/Warning tolerance updates
 :--                     |:--                                    |:--
-<ins>**Purchase order header**</ins>
-**Reject**              | Vendor POA response: **Header – not accepted**. Vendor rejects the complete purchase order. <br> This validation can be used to manually manage Vendor rejections by adding this validation with an error tolerance.	| Cancel purchase order
-**Version**             | Validates that the vendor is responding to the current purchase order version	          | No update to D365 PO, only used for comparison
-**Delivery date**       | Vendor POA response: **Header – change**. <br> The Vendor’s POA delivery date doesn’t match the D365 PO's delivery date	| Update PO header's **Confirmed delivery date**
-**Vendor reference**    | Vendor POA’s Vendor reference doesn’t match the PO’s Vendor reference	                  | Update PO header's **Vendor reference**
-<ins>**Purchase order line**</ins>
-**Short pick**          | Vendor POA response: **Line shipment - partial**. <br> Acknowledgement qty is less than purchase order line qty. If the vendor’s unit differs, unit conversion is used to convert. | Update PO line's deliver remainder qty (use unit conversion if POA different unit).
-**Batch Id update**     | Where the batch id received is different to the batch id on the purchase order.	| If batch doesn’t exist for item, the batch is created and assigned to the purchase order line
-**Purchase price**      | Vendor POA response: **Line price advise**. <br> The vendor’s POA unit price should be checked using the purchase order unit price. <br> If the prices are slightly different it should check both the tolerance and ‘Use Vendor Price’ flag before giving an error/warning. Example: <br> Item X purchase order unit price 10.25 <br> Item Y purchase order unit price 8.88 <br> Vendor has a min and max tolerance setting of 0.05 <br> Purchase order prices are not including tax <br> Vendor sends their EDI POA including tax <br> The setting use vendor pricing is given <br> Item X EDI file price (before converting) 11.26 (after conversion) 10.24 <br> Item Y EDI file price (before converting) 9.70 (after conversion) 8.82. <br> Template setting against this field is warning. <br> A warning is only given for Item Y because it is outside of the tolerance. 	| Update PO line's purchase price (if within allowed variance): else error
-**Delivery date**       | The Vendor’s POA line delivery date doesn’t match the PO delivery date	    | Update PO line confirmed delivery date
-**Reject**              | Vendor POA response: **Line item – out of stock** <br> Vendor POA response: **Line item – withdrawn** <br> Vendor rejects the purchase order line	| Cancel purchase order line’s deliver remainder
-**Minimum/maximum quantity**    | The POA quantity should be devisable by the multiple specified on the Default/Site order settings table. <br> Use unit conversion if POA unit of measurement differs. Need to set to Error if not allowed to increase deliver remainder over purchase order line over-delivery%	| Update PO line deliver remainder. 
+**Short pick**          | Where the pick list registration is less than the original pick list quantity | Post picking list registration even when short picked
 
-
-## Purchase order
-Users can access **All purchase orders** page by navigating to **Accounts payable > Purchase orders > All purchase orders** and manage the EDI POA's Confirmation details by using the below buttons that have been added to the **EDI** tab on the Action Pane.
-
-Field	                  | Description
-:--                       |:--
-**Confirmation**          |	Select the **Confirmation** button to review vendor's POA for the D365 PO. The details of this page will be discussed in below.
-**Send to EDI**           |	Select the **Send to EDI** button to create Purchase Order Confirmation (POC) staging table record. The button will only be available if a POA has been received from the Vendor.
-**Reset flag**            |	Select the **Reset flag** button to reset the **EDI status** to allow for re-sending of the POC to the staging table. Note: The POC record on the staging table should be deleted manually before the sales order flag is reset.
-
-## Processing Purchase order confirmation (POC)
-The POC can be sent [manually](#manually-processing-purchase-order-confirmation) or [automatically](#automatically-processing-purchase-order-confirmation) to the vendor.
-Both of these options will be discussed in the following subsections.
-
-### Manually processing Purchase order confirmation
-The **Confirmation** page is accessed by navigating to **Accounts payable > Purchase orders > All purchase orders**, and selecting **Confirmation** on the **EDI** tab on the Action Pane.
-A list of outstanding confirmations can also be accessed by navigating to **EDI > Vendor workspaces > EDI purchase order processing** and either selecting the tile or tab called **Pending POA confirm**.
-
-The Confirmation page is split into five tabs:
-1. [Header](#header) - Manage the POC header's response for ship and receipt dates. 
-3. [Line price](#line-price) - Manage the POC line' price response, example vendor's POA purchase price vs. D365 PO line system price. 
-4. [Line quantity](#line-quantity) - Manage the POC line quantity response, example vendor's POA purchase quantity vs. D365 PO line quantity.
-5. [Line pack](#line-pack) - Manage the POC line pack response, example Vendor pack vs. System pack
-6. [Line inner](#line-inner) - Manage the POC line inner response, example Vendor inner vs. System inner
-
-Vendor mapped values for POA response codes are setup in [POA response code group](../SETUP/VENDOR%20SETUP/POA%20response%20code%20group.md) and assigned to the Vendor trading partner's **POA response code group**.
-
-#### Header
-The following tables describe the fields and buttons that are available on the **Header** tab of the Confirmation page. <br>
-The **Header** POC response codes are managed on this tab.
-
-##### Fields
-Field	                    | Description
-:--                         |:--
-**Response code**           | Vendor’s purchase order acknowledgement header response
-**Vendor delivery date**    | Vendor’s acknowledged delivery date (updates D365 PO header confirmed delivery date)
-**System delivery date**    | D365 purchase order requested receipt date
-**Confirmed delivery date** | Confirmed delivery date (to be sent on Purchase order confirmation)
-**Confirmation auto triggered** | Indicates if the **Confirmed delivery date** is an auto triggered value
-
-
-##### Buttons
-It is possible to update the POC's confirmed values by using the available buttons:
-
-Button                      | Description
-:--                         |:--
-**Confirmation response**   | Manually select Purchase order confirmation response: <br> •	**Accept acknowledgement** – Update PO Header and Lines with POA's Header and Lines data <br> •	**Accept delivery date** – Updates only delivery date <br> • **Auto set confirmation** – Auto trigger all confirmed values for all tabs
-
-
-#### Line price
-The following tables describe the fields and buttons that are available on the **Line price** tab of the Confirmation page. <br>
-
-##### Fields
-Field	                    | Description
-:--                         |:--
-**Log**                     | This will show a warning if Validation failed with error tolerance set to warning
-**Item number**             | Item number from the purchase order
-**Barcode**                 | Barcode for the item number from the purchase order
-**Product Name**            | Item name for the item number from the purchase order
-**Unit**                    | Unit from the purchase line
-**Vendor price**            | Price received in the purchase order acknowledgement, converted to purchase unit where POA unit different to PO unit
-**System price**            | Unit price from D365 purchase order
-**Confirmed price**         | Confirmed price to be sent on the purchase order confirmation (POC) to the vendor. <br> Note: The confirmed price will be set as either the vendor or system values dependant on the parameter set on the [POA setting profile](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md): <br> •	Use vendor price (Y/N), and if Y falls within variance range: <br> •	Maximum negative price variance <br> •	Maximum positive price variance
-**Confirmation auto triggered** | Indicates if the **Confirmed price** is an auto triggered value
-
-
-##### Buttons
-It is possible to update the Purchase order and Confirmed values by using the available buttons for a particular or multiple lines:
-
-Button              | Description
-:--                 |:--
-**Display dimensions**  | Update the dimensions displayed on the Confirmation page
-**Use system price**    | No update to Purchase order. Updates the **Confirmed price** field to the system price
-**Use vendor price**    | Update the **Purchase order** line’s unit price and **Confirmed price** field to the vendor price
-
-
-#### Line quantity
-The following tables describe the fields and buttons that are available on the **Line quantity** tab of the Confirmation page. <br>
-
-##### Fields
-Field	                    | Description
-:--                         |:--
-**Log**                     | This will show a warning if Validation failed with error tolerance set to warning
-**Item number**             | Item number from the purchase order
-**Barcode**                 | Barcode for the item number from the purchase order
-**Product Name**            | Item name for the item number from the purchase order
-**Unit**                    | Unit from the purchase line
-**Vendor quantity**         | Quantity received in the purchase order acknowledgement, converted to purchase unit where POA unit different to PO unit
-**System quantity**         | Purchase quantity for each purchase line (deliver remainder). 
-**Confirmed quantity**      | Confirmed quantity to be sent on the purchase order confirmation (POC) to the vendor. <br> Note: The confirmed quantity will be set as the vendor quantity if min/max validation allows update of deliver remainder, else system quantity
-**Confirmation auto triggered** | 	Indicates if the **Confirmed quantity** is an auto triggered value
-
-##### Buttons
-It is possible to update the Purchase order and Confirmed values by using the available buttons for a particular or multiple lines:
-
-Button                  | Description
-:--                     |:--
-**Display dimensions**  | Update the dimensions displayed on the Confirmation page
-**Use system quantity** | No update to purchase order. Update the **Confirmed quantity** field to the system’s deliver remainder quantity
-**Use vendor quantity** | Update the **Purchase order** line’s deliver remainder quantity and **Confirmed quantity** field to the vendor quantity
-**Clear confirmed quantity**    | No update to purchase order. Clears **Confirmed quantity** on the Confirmation page.
-
-
-#### Line pack
-The following tables describe the fields and buttons that are available on the **Line pack** tab of the Confirmation page. <br>
-
-##### Fields
-Field	                    | Description
-:--                         |:--
-**Log**                     | This will show a warning if Validation failed with error tolerance set to warning
-**Item number**             | Item number from the purchase order
-**Barcode**                 | Barcode for the item number from the purchase order
-**Product Name**            | Item name for the item number from the purchase order
-**Unit**                    | Unit from the purchase line
-**Vendor pack**             | Pack quantity received from the Vendor in the POA
-**System pack**             | Valid system pack for the inner or outer as specified on **Package size - inner/outer** on the settings profile for the Vendor purchase order acknowledgement
-**Confirmed pack**          | Confirmed pack quantity to be sent on the purchase order confirmation (POC) to the vendor. <br> Note: The automatically acknowledged pack (Vendor or System) is set on **Confirmed pack** on the settings profile for the Vendor purchase order acknowledgement.
-**Confirmation auto triggered** | 	Indicates if the **Confirmed pack** is an auto triggered value
-
-##### Buttons
-It is possible to update the Purchase order and Confirmed values by using the available buttons for a particular or multiple lines:
-
-Button                      | Description
-:--                         |:--
-**Display dimensions**      | Update the dimensions displayed on the Confirmation page
-**Use vendor pack**         | No updates to purchase order. Update the **Confirmed pack** field to the **Vendor pack**
-**Use system pack**         | Update the **Confirmed pac**k field to the **System pack**. Calculated by using unit conversion and rounding setup on the item.
-**Clear confirmed pack**    | No update to purchase order. Clears **Confirmed pack** on the Confirmation page.
-
-
-#### Line inner
-The following tables describe the fields and buttons that are available on the **Line inner** tab of the Confirmation page. <br>
-
-##### Fields
-Field	                    | Description
-:--                         |:--
-**Log**                     | This will show a warning if Validation failed with error tolerance set to warning
-**Item number**             | Item number from the purchase order
-**Barcode**                 | Barcode for the item number from the purchase order
-**Product Name**            | Item name for the item number from the purchase order
-**Unit**                    | Unit from the purchase line
-**Vendor inners**           | Vendor # of inners received in the purchase order acknowledgement
-**System inners**           | Valid system # of inners. Note: The number of inners is calculated based on the quantity within an outer and inner. Unit conversion, example 12 ea (inner) in a box (outer).
-**Confirmed inners**        | Confirmed # of inners to be sent on the purchase order confirmation (POC) to the vendor. <br> Note: The automatically acknowledged inner (Vendor or System) is set on **Confirmed inner** on the settings profile for the Vendor purchase order acknowledgement.
-**Confirmation auto triggered** | 	Indicates if the **Confirmed inner** is an auto triggered value
-
-##### Buttons
-It is possible to update the Purchase order and Confirmed values by using the available buttons for a particular or multiple lines:
-
-Button                      | Description
-:--                         |:--
-**Display dimensions**      | Update the dimensions displayed on the Confirmation page
-**Use system inner**	    | No updates to purchase order. Update the **Confirmed inners** field to the **System inner**.
-**Use vendor inner**	    | No updates to purchase order. Update the **Confirmed inners** field to the **Vendor inner**.
-**Clear confirmed inners**	| No update to purchase order. Clears **Confirmed inners** on the Confirmation page.
-
-
-### Automatically processing Purchase order confirmation
-
-Vendor EDI module includes the ability to automatically send vendor purchase confirmations by setting **Purchase order confirmation required** to _Yes (PO is auto-confirmed)_ on the [Vendor purchase order acknowledgement](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md) document setting and assigning it to the Vendor trading partner on the incoming document **Vendor purchase order acknowledgement** (POA). Once a POA is received from the Vendor, EDI will use document settings and validation to automatically send a confirmation to the vendor. <br>
-The confirmations can be viewed in:
-- **History** tab on the D365 Purchase order Action Pane, EDI tab. If **Reference** is set to _Confirmation_, the Confirmation matched the Vendor's POA. If set to _Change_, the Confirmation didn't match and sent a change to the vendor.
-- **EDI > Documents > Vendor purchase order change**. If **EDI order purpose** is set to mapped value for _Confirmation_, the Confirmation matched the Vendor's POA. If set to mapped value for _Change_, the Confirmation didn't match and sent a change to the vendor.
 
 ## View staging table records
 To view the Vendor purchase order acknowledgement staging records, go to **EDI > Documents > Vendor documents > Vendor purchase order acknowledgement**. 
