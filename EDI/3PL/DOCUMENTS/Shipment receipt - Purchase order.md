@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI 3PL]
-description: [EDI 3PL Documents - Picking list registration]
+description: [EDI 3PL Documents - Shipment receipt - Purchase order]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 22/11/2021
@@ -27,27 +27,24 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Picking list registration
+# Shipment receipt - Purchase order
 
-The following subsections will describe how to view and process the picking list registration from the 3PL warehouse. <br>
+The following subsections will describe how to view and process the Shipment receipt - Purchase order from the 3PL warehouse. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
 
-If the 3PL doesn't pick all the original picking list lines/short pick:
-- The lines not included in the inbound picking list registration's **Handling status** will be marked as **Canceled**
-- The company will need to generate a new D365 picking list if the remaining lines and short picked quantities still requires picking
-
-Optional document settings also allow posting the sales order's delivery note and/or shipping the transfer order.
+Processing this document posts an arrival journal against the purchase order. <br>
+Optional document settings also allows for posting the purchase order's product receipt for the registered stock.
 
 ## Prerequisites
 The following setup is prerequisites for the picking list registration
 
 1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Picking%20list%20registration.md) for the document.
-1. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Picking%20list%20registration.md) for the document.
+1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md) for the document.
+1. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md) for the document.
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the 3PL setup to the warehouse trading partner's options.
-1. Add and enable the **picking list** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+1. Add and enable the **Shipment receipt - Purchase order** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
     - Validation profile
@@ -56,15 +53,15 @@ The following setup is prerequisites for the picking list registration
 ## Processing
 Inbound files have the following three steps:
 1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**.
-2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > 3PL documents > Picking list registration**.
-3. **Staging to target** - The staging record/s is processed to target. If the EDI picking list registration is succefully processed the D365 stock will be picked. 
+2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > 3PL documents > Stock transfer receipt > Purchase order**.
+3. **Staging to target** - The staging record/s is processed to target. If the EDI shipment receipt is succefully processed the D365 arrival journal will be posted for the purchase order. And if the document setting **Auto post receipt** is set to _Yes_, the purchase order's product receipt will also be posted.
 
 ### Create document
 ![alt text](../../CORE/Image/Create_Document.png "Create document")
 
-### Header checks for Picking list registration
+### Header checks for Shipment advice
 Header checks are performed when:
-1. Importing Picking list registration file
+1. Importing Shipment advice file
 2. Processing from import to staging
 3. Processing from staging to target
 
@@ -98,9 +95,9 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 #### Possible issues and fixes
 **Staging to target** errors for Picking list registrations can be viewed in:
-- **EDI > Documents > 3PL documents > Picking list registration** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **3PL documents**, tile **Picking list registration errors**
-- **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Picking list registration**
+- **EDI > Documents > 3PL documents > Stock transfer receipt > Purchase order** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **3PL documents**, tile **Shipment receipt - Purchase order errors**
+- **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Shipment receipt - Purchase order**
 
 At this step the issues are usually around mapping/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
@@ -111,22 +108,15 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example header errors:
 **Error message**       | **Error type**         | **Method to fix**
 :---------------------- |:----                   |:----
-Item %, dimensions: % Physical on-hand %=Available % cannot be picked because only % is/are available from the inventory    | Processing error  | Adjust D365 on-hand if staging record correct
-Picking list % is in status Completed   | Wrong status  | The D365 picking list registration has already been completed. Verify if duplication and either fix record's picking route id or cancel staging record if duplication.
+
 
 > Note: % contains staging data for the record
 
-### Staging line validation - Picking list registration
+### Staging line validation - Shipment advice
 
 **Rule Id**                 | **Details**                                               | Error    
 :---                        |:---                                                       |:---              
-**Line number / Lot Id / Item number / Inventory dimensions**   | Find the EDI picking list line number/ Lot Id to which the staging line belongs    | Error at Staging table. <br> D365 stock not picked
 
-#### Possible issues and fixes
-**Staging to target** errors for Picking list registration can be viewed in:
-- **EDI > Documents > 3PL documents > Picking list registration** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **3PL documents**, tile **Picking list registration errors**
-- **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Picking list registration**
 
 At this step the issues are usually around setup/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
