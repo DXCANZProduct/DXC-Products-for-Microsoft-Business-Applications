@@ -116,17 +116,11 @@ Picking list % is in status Completed   | Wrong status  | The D365 picking list 
 
 > Note: % contains staging data for the record
 
-### Staging line validation - Picking list registration
+#### Staging line validation - Picking list registration
 
 **Rule Id**                 | **Details**                                               | Error    
 :---                        |:---                                                       |:---              
 **Line number / Lot Id / Item number / Inventory dimensions**   | Find the EDI picking list line number/ Lot Id to which the staging line belongs    | Error at Staging table. <br> D365 stock not picked
-
-#### Possible issues and fixes
-**Staging to target** errors for Picking list registration can be viewed in:
-- **EDI > Documents > 3PL documents > Picking list registration** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **3PL documents**, tile **Picking list registration errors**
-- **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Picking list registration**
 
 At this step the issues are usually around setup/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
@@ -134,11 +128,11 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example line errors:
 **Error message**                     | **Error type**         | **Method to fix**
 :------------------------------------ |:----                   |:----
-Unable to find an activated picking list line: %	                  | No line found         | EDI couldn't find the line based on line number/ lot id and item number/item dimensions. **EDI > Documents > 3PL documents > Picking list registration** and/or <br> **Product information management > Products > Released products**
+
 
 ### Validation
 
-[Validation profiles](../SETUP/VALIDATION%20PROFILES/Picking%20list%20registration.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
+[Validation profiles](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
 -	**Info** - An infolog is displayed with information only, it is not identified as a warning
 -	**Warning** - An infolog is displayed with a warning. It is possible to carry on processing
 -	**Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error
