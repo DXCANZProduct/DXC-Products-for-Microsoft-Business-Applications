@@ -222,7 +222,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Size**                    | Product dimensions – Size	                                                | Used for validation
 **Style**                   | Product dimensions – Style	                                            | Used for validation
 **Configuration**           | Product dimensions – Configuration	                                    | Used for validation
-**Inventory status**        | Storage dimensions – Inventory status. Mapped value for Inventory status  | Used for validation
+**Inventory status**        | Storage dimensions – Inventory status. Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)  | Used for validation
 **Batch number**            | Tracking dimensions – Batch number                                        | • Arrival journal line > Batch number
 **Serial number**           | Tracking dimensions – Serial number	                                    | • Arrival journal line > Serial number
 
