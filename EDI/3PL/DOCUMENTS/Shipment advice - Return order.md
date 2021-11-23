@@ -64,7 +64,7 @@ An outbound shipment advice for purchase orders can be triggered via the followi
 Once the shipment has been received by the 3PL, the shipment receipt information is sent back via the inbound **Shipment receipt - Purchase order** document.
 
 ## View staging table records
-To view the picking list staging records, go to **EDI > Documents > 3PL documents > Stock transfer advice > Purchase order**. 
+To view the shipment advice staging records, go to **EDI > Documents > 3PL documents > Stock transfer advice > Purchase order**. 
 Use this page to review staging and process EDI Shipment advice - Purchase order documents to an Outbound file.
 
 ### List page
