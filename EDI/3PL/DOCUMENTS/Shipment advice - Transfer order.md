@@ -45,7 +45,8 @@ EDI > Setup > Document types: Shipment advice - Transfer order
 ### Trading partners
 EDI > Setup > Trading partners
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
-1. Assign the **3PL setup** to the warehouse trading partner's options.
+1. Assign the **3PL setup** to the warehouse trading partner's options:
+    - Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
 1. Add and enable the **Shipment advice - Transfer order** document to the [3PL trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
@@ -56,8 +57,8 @@ EDI > Setup > Trading partners
 ## Processing
 
 ### Create shipment advice staging
-An outbound shipment advice for purchase orders can be triggered via the following method: 
--	**Purchase order**: Accounts payable > Purchase orders > All purchase order - Select **Receipts list** under the **Generate** heading on the **Receive** tab on the Action Pane. 
+An outbound shipment advice for transfer orders can be triggered via the following method: 
+-	**Transfer order**: Inventory management > Inbound orders > Transfer order - Select **Ship transfer order** under the **Operations** heading on the **Ship** tab on the Action Pane. 
 
 ## Inbound document
 Once the shipment has been received by the 3PL, the shipment receipt information is sent back via the inbound **Shipment receipt - Transfer order** document.
@@ -77,11 +78,9 @@ The following EDI fields are available on the list page.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 **Trading partner account**     | 3PL account assigned to the staging record
 **Trading partner GLN**         | The 3PL’s global location number is shown here
-**Purchase order**              | Purchase order number
-**Receipts list**               | Receipts list journal number
-**Delivery terms**              | Delivery terms for the purchase order
-**Due date**                    | Expected receipt date from the purchase order
-**Status**                      | The status of the purchase as specified in the setting profile. Mapped value for new or cancel indicator.
+**Transfer number**             | Transfer order number
+**Delivery terms**              | Delivery terms for the transfer order
+**Expected delivery date**      | Expected receipt date from the transfer order
 **Created date and time**       | The date and time the selected record was created in the staging table
 **Received**                    | Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record
 
@@ -94,7 +93,7 @@ The following buttons are available on the **Stock transfer advice > Transfer or
 **Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_
 **Outbound files**              | View the outbound file record created by the selected staging record
 **Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page
-**Purchase order**              | View the purchase order
+**Transfer order**              | View the transfer order
 **Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
 **Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
@@ -126,9 +125,9 @@ The following EDI Header staging fields are available on the header page.
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
 <ins>**Overview**</ins>		
-**Delivery terms**          | Delivery terms for the purchase order     | Purchase order > Delivery terms
-**Expected delivery date**  | Expected receipt date from the purchase order	    | Purchase order > Delivery date
-**Status**                  | The status of the purchase as specified in the setting profile. Mapped value for new or cancel indicator.	
+**Transfer number**         | Transfer order number	                                    | Transfer order > Transfer number
+**Delivery terms**          | Delivery terms for the transfer order	                    | Transfer order > Delivery terms
+**Expected delivery date**  | Expected receipt date from the transfer order	            | Transfer order > Receipt date
 <ins>*Status**</ins>		
 **Group control number**    | Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.	
 **Received**                | Indicates if the Functional acknowledgement inbound has been received from the trading partner for the outbound document record.	
@@ -139,20 +138,17 @@ The following EDI Line staging fields are available on the lines page.
 
 **Field**	                | **Description**	                                        | **D365 source**
 :---                        |:---                                                       |:---
-**Item number**             | The D365 item number                                      | Purchase order lines > Item Number
+**Item number**             | The D365 item number                                      | Transfer order lines > Item Number
 **Bar code**                | D365 item number’s Bar code (based on unit)	            | Released products > Bar codes
 **GTIN**                    | D365 item number’s GTIN (based on unit)	                | Released products > GTIN codes
 **Description**             | D365 item number’s Description	                        | Released products > Product name
-**External**                | External item for the selected item and vendor	        | Purchase order lines > external
-**Lot Id**                  | Lot id for the transfer order line	                    | Purchase order lines > Lot id
-**Quantity**                | Purchase order quantity	                                | Purchase order lines > Quantity
-**Unit**                    | Purchase order quantity’s unit	                        | Released products > Inventory unit
-**Delivery date**	        | Expected delivery date	                                | Purchase order lines > Delivery date
-**Colour**                  | Product dimensions – colour	                            | Purchase order lines > Colour
-**Size**                    | Product dimensions – Size	                                | Purchase order lines > Size
-**Style**                   | Product dimensions – Style	                            | Purchase order lines > Style
-**Configuration**           | Product dimensions – Configuration	                    | Purchase order lines > Configuration
-**Batch number**            | Tracking dimensions – Batch number	                    | Purchase order lines > Batch number
-**Serial number**           | Tracking dimensions – Serial number	                    | Purchase order lines > Serial number
-**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Pick route line > Inventory status
-
+**Lot Id**                  | Lot id for the transfer order line	                    | Transfer order lines > Lot id
+**Quantity**                | Transfer order quantity	                                | Transfer order lines > Quantity
+**Unit**                    | Transfer order quantity’s unit	                        | Released products > Inventory unit
+**Colour**                  | Product dimensions – colour	                            | Transfer order lines > Colour
+**Size**                    | Product dimensions – Size	                                | Transfer order lines > Size
+**Style**                   | Product dimensions – Style	                            | Transfer order lines > Style
+**Configuration**           | Product dimensions – Configuration	                    | Transfer order lines > Configuration
+**Batch number**            | Tracking dimensions – Batch number	                    | Transfer order lines > Batch number
+**Serial number**           | Tracking dimensions – Serial number	                    | Transfer order lines > Serial number
+**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)    |	Transfer order lines > Inventory status
