@@ -29,6 +29,9 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Shipment advice - Purchase order
 
+The **Shipment advice - Purchase order** document enables companies to send inbound purchase order details to their 3PL warehouse. <br>
+In return the 3PL will confirm receipt of the stock with document **Shipment receipt - Purchase order** which will post an arrival journal with optional document setting to automatically post the purchase order's product receipt.
+
 ## Prerequisites
 The following setup is prerequisites for the Shipment advice - Purchase order
 
