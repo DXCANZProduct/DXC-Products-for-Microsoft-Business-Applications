@@ -144,7 +144,7 @@ The following table describes each validation option for the EDI document. It al
 
 Rule Id	                | Details	                            | Info/Warning tolerance updates
 :--                     |:--                                    |:--
-**Batch Id update**     | Where the batch id received is different to batch id (example ABC123 vs. 123ABC) in the shipment advice. | Arrival journal posted with 3PL's batch
+**Batch Id update**     | Where the batch id received is different to batch id (example ABC123 vs. 123ABC) in the shipment receipt. | Arrival journal posted with 3PL's batch
 
 ## View staging table records
 To view the Shipment receipt - Return order staging records, go to **EDI > Documents > 3PL documents > Stock transfer receipt > Return order**. <br>
