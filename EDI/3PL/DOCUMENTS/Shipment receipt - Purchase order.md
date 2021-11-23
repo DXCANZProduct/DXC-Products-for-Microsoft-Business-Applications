@@ -173,6 +173,7 @@ The following buttons are available on the **Shipment receipt - Purchase order**
 **Inbound files**               | View the inbound file record the selected staging record.
 **Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
 **Purchase order**              | If the staging record has been completed it is possible to inquire on the related D365 purchase order.
+**Item arrival**                | If the EDI document has been completed it is possible to inquire on the item arrival journal from this button.
 **Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
 **Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
 **Reset Status**                | You can reset the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
