@@ -230,7 +230,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Size**                    | Product dimensions – Size	                                                | Used for validation
 **Style**                   | Product dimensions – Style	                                            | Used for validation
 **Configuration**           | Product dimensions – Configuration	                                    | Used for validation
-**Inventory status**        | Storage dimensions – Inventory status. Mapped value for Inventory status  | Used for validation
+**Inventory status**        | Storage dimensions – Inventory status. Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)  | Used for validation
 **Batch number**            | Tracking dimensions – Batch number <br> If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch.                                       | • Arrival journal line > Batch number <br> • Product receipt line > Batch number
 **Serial number**           | Tracking dimensions – Serial number	                                    | • Arrival journal line > Serial number <br> • Product receipt line > Serial number
 **Manufacturing date**      | If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch. Doesn't update an existing D365 batch.	| • Batches > Manufacturing date
