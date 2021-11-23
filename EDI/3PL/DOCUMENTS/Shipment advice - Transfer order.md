@@ -151,4 +151,4 @@ The following EDI Line staging fields are available on the lines page.
 **Configuration**           | Product dimensions – Configuration	                    | Transfer order lines > Configuration
 **Batch number**            | Tracking dimensions – Batch number	                    | Transfer order lines > Batch number
 **Serial number**           | Tracking dimensions – Serial number	                    | Transfer order lines > Serial number
-**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)    |	Transfer order lines > Inventory status
+**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)    |	Transfer order lines > Inventory status
