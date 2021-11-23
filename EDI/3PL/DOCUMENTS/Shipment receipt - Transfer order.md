@@ -33,10 +33,10 @@ The following subsections will describe how to view and process the Shipment rec
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
 
 Processing this document posts an arrival journal against the transfer order. <br>
-Optional document settings also allows for posting the transfer order's product receipt for the registered stock.
+Optional document settings also allows for posting Receive for the transfer order.
 
 ## Prerequisites
-The following setup is prerequisites for the picking list registration
+The following setup is prerequisites for the Shipment advice - Transfer order
 
 1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
@@ -56,7 +56,7 @@ The following setup is prerequisites for the picking list registration
 Inbound files have the following three steps:
 1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**.
 2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > 3PL documents > Stock transfer receipt > Transfer order**.
-3. **Staging to target** - The staging record/s is processed to target. If the EDI shipment receipt is succefully processed the D365 arrival journal will be posted for the transfer order. And if the document setting **Auto post receipt** is set to _Yes_, the transfer order's product receipt will also be posted.
+3. **Staging to target** - The staging record/s is processed to target. If the EDI shipment receipt is succefully processed the D365 arrival journal will be posted for the transfer order. And if the document setting **Auto receive** is set to _Yes_, the transfer order's **Receive** will also be posted.
 
 ### Create document
 ![alt text](../../CORE/Image/Create_Document.png "Create document")
@@ -93,10 +93,10 @@ At this step the issues are usually around the file not matching the template.
 Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
 
 ### Step 3 - Staging to target
-If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 stock won't be be picked for the picking list registration.
+If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 D365 arrival journal won't be posted for the staging record.
 
 #### Possible issues and fixes
-**Staging to target** errors for Picking list registrations can be viewed in:
+**Staging to target** errors for Shipment advice can be viewed in:
 - **EDI > Documents > 3PL documents > Stock transfer receipt > Transfer order** filtered to **Staging to target tatus** set to _Error_
 - **EDI > Document maintenance**, tab **3PL documents**, tile **Shipment receipt - Transfer order errors**
 - **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Shipment receipt - Transfer order**
@@ -143,7 +143,7 @@ Rule Id	                | Details	                            | Info/Warning tol
 
 ## View staging table records
 To view the Shipment receipt - Transfer order staging records, go to **EDI > Documents > 3PL documents > Stock transfer receipt > Transfer order**. <br>
-Use this page to review staging and process the EDI documents, post the Arrival journal and optionally post the Product receipt.
+Use this page to review staging and process the EDI documents, post the Arrival journal and optionally Receive the transfer order.
 
 ### List page
 The following EDI fields are available on the list page.
@@ -156,8 +156,7 @@ The following EDI fields are available on the list page.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and posted the arrival journal and optional product receipt. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 **Trading partner account**     | Warehouse account assigned to the staging record.
 **Trading partner GLN**         | The 3PL’s global location number is shown here.
-**Purchase order**              | Purchase order number being received.
-**Receipts list**               | Receipts list document used to receive.
+**Transfer number**             | Transfer order number being received.
 **Receipt date**                | Date the stock was received.
 **Journal**                     | Arrival journal used to receive the stock.
 **Created date and time**       | The date and time the selected record was created in the staging table.
