@@ -218,15 +218,18 @@ The following EDI Line fields are available on the lines page. <br>
 
 **Field**                   | **Description**                                                           | **D365 line target**
 :---                        |:---                                                                       |:---
-**Line number**             | Picking list line number. If ‘_Line number_ is used in **Line matching strategy** this needs to match to Line number from the related Picking list staging record.	| Used to find matching line when **Line matching strategy** is _Line number_
 **Item number**             | The D365 item number                                                      | Used for validation
-**Lot Id**                  | Lot id for the sales/transfer order line. If ‘_Lot ID_ is used in **Line matching strategy** this needs to match to Lot ID from the related Picking list staging record.	             | Used to find matching line when **Line matching strategy** is _Lot ID_
-**Picked**                  | Picked Quantity	                                                        | Pick route line > Pick quantity
-**SSCC**                    | SSCC received from the 3PL provider	                                    | Pick route line > SSCC
+**Lot Id**                  | Lot id for the sales/transfer order line                                  | Used to find D365 source transaction
+**Document date**           | Document date of 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note if header Document date is blank.        	| • Product receipt > Document date
+**Delivery note**           | 	3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note if header Delivery note is blank. Grouped by Delivery note, i.e. multiple delivery notes can be posted for the Arrival journal.	    | • Product receipt > Delivery note/Packing slip
+**Quantity**                | Received quantity	                                                        | • Arrival journal line > Quantity <br> • Product receipt line > Received
 **Colour**                  | Product dimensions – Colour	                                            | Used for validation
 **Size**                    | Product dimensions – Size	                                                | Used for validation
 **Style**                   | Product dimensions – Style	                                            | Used for validation
 **Configuration**           | Product dimensions – Configuration	                                    | Used for validation
-**Batch number**            | Tracking dimensions – Batch number	                                    | Used for validation. If **Batch id** allows update, can also update Pick route line > Batch number
-**Serial number**           | Tracking dimensions – Serial number	                                    | Pick route line > Serial number
 **Inventory status**        | Storage dimensions – Inventory status. Mapped value for Inventory status  | Used for validation
+**Batch number**            | Tracking dimensions – Batch number <br> If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch.                                       | • Arrival journal line > Batch number <br> • Product receipt line > Batch number
+**Serial number**           | Tracking dimensions – Serial number	                                    | • Arrival journal line > Serial number <br> • Product receipt line > Serial number
+**Manufacturing date**      | If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch.	| • D365 batch creation
+**Expiration date**         | If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch.	| • D365 batch creation
+
