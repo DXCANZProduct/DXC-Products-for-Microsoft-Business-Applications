@@ -93,10 +93,10 @@ At this step the issues are usually around the file not matching the template.
 Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
 
 ### Step 3 - Staging to target
-If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 stock won't be be picked for the picking list registration.
+If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 arrival journal won't be posted for the staging record.
 
 #### Possible issues and fixes
-**Staging to target** errors for Picking list registrations can be viewed in:
+**Staging to target** errors for Shipment receipt can be viewed in:
 - **EDI > Documents > 3PL documents > Stock transfer receipt > Purchase order** filtered to **Staging to target tatus** set to _Error_
 - **EDI > Document maintenance**, tab **3PL documents**, tile **Shipment receipt - Purchase order errors**
 - **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Shipment receipt - Purchase order**
