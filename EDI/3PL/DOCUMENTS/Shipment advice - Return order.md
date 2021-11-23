@@ -130,7 +130,7 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Overview**</ins>		
 **Delivery terms**          | Delivery terms for the return order	                    | Sales order > Delivery terms
 **Expected delivery date**  | Expected receipt date from the return order	            | Return order > Deadline
-<ins>*Status**</ins>		
+<ins>**Status**</ins>		
 **Group control number**    | Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.	
 **Received**                | Indicates if the Functional acknowledgement inbound has been received from the trading partner for the outbound document record.	
 <ins>**General FastTab**</ins>  
