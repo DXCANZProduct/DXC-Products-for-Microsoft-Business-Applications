@@ -172,7 +172,7 @@ The following buttons are available on the **Shipment receipt - Purchase order**
 **Process all stock receipts**   | Process stock receipt for the staging records that have a **Staging to target status** set to _Not started_. 
 **Inbound files**               | View the inbound file record the selected staging record.
 **Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
-**Pick list registration**      | If the staging record has been completed it is possible to inquire on the pick list registration it updated from this button.
+**Purchase order**              | If the staging record has been completed it is possible to inquire on the purchase order from this button.
 **Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
 **Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
 **Reset Status**                | You can reset the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
