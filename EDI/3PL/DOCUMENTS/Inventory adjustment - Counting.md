@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI 3PL]
-description: [EDI 3PL Documents - Inventory adjustment - Transfer]
+description: [EDI 3PL Documents - Inventory adjustment - Counting]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 24/11/2021
@@ -27,29 +27,27 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Inventory adjustment - Transfer
+# Inventory adjustment - Counting
 
 A 3PL warehouse, setup as an EDI trading partner, can send inventory adjustments in order to adjust the company's D365 on-hand for their warehouse.
 
-Processing the **Inventory adjustment - Transfer** document creates a transfer journal for the stock in the D365 warehouse transferring the stock between:
-- Batches
-- Inventory statuses
+Processing the **Inventory adjustment - Counting** document creates a movement journal for the stock in the D365 warehouse.
 
-Optional document settings also allows for automatically posting the transfer journal and creating the batch if it doesn't exist in D365.
+Optional document settings also allows for automatically posting the movement journal and creating the batch if it doesn't exist in D365.
 
-The following subsections will describe how to view and process the **Inventory adjustment - Transfer** from the 3PL warehouse. <br>
+The following subsections will describe how to view and process the **Inventory adjustment - Counting** from the 3PL warehouse. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
 
 ## Prerequisites
-The following setup is prerequisites for the Inventory adjustment - Transfer
+The following setup is prerequisites for the Inventory adjustment - Counting
 
 1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Transfer.md) for the document.
+1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Counting.md) for the document.
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the 3PL setup to the warehouse trading partner's options:
     -  Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
-1. Add and enable the **Inventory adjustment - Transfer** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+1. Add and enable the **Inventory adjustment - Counting** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
     - Search mask
@@ -57,8 +55,8 @@ The following setup is prerequisites for the Inventory adjustment - Transfer
 ## Processing
 Inbound files have the following three steps:
 1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**.
-2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Transfer**.
-3. **Staging to target** - The staging record/s is processed to target. If the EDI document is succefully processed the D365 transfer journal will be created. And if the document setting **Auto post journal** is set to _Yes_, the transfer journal will also be automatically posted.
+2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Counting**.
+3. **Staging to target** - The staging record/s is processed to target. If the EDI document is succefully processed the D365 movement journal will be created. And if the document setting **Auto post journal** is set to _Yes_, the movement journal will also be automatically posted.
 
 ### Create document
 ![alt text](../../CORE/Image/Create_Document.png "Create document")
@@ -95,13 +93,13 @@ At this step the issues are usually around the file not matching the template.
 Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
 
 ### Step 3 - Staging to target
-If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 transfer journal won't be created for the staging record.
+If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 movement journal won't be created for the staging record.
 
 #### Possible issues and fixes
 **Staging to target** errors for Inventory adjustment can be viewed in:
-- **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Transfer** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **3PL documents**, tile **Inventory adjustment - Transfer errors**
-- **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Inventory adjustment - Transfer**
+- **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Counting** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **3PL documents**, tile **Inventory adjustment - Counting errors**
+- **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Inventory adjustment - Counting**
 
 At this step the issues are usually around mapping/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
@@ -131,8 +129,8 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 
 
 ## View staging table records
-To view the Inventory adjustment - Transfer staging records, go to **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Transfer**. <br>
-Use this page to review staging and process the EDI documents, create the Transfer journal and optionally post the Transfer journal.
+To view the Inventory adjustment - Counting staging records, go to **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Counting**. <br>
+Use this page to review staging and process the EDI documents, create the Movement journal and optionally post the Movement journal.
 
 ### List page
 The following EDI fields are available on the list page.
@@ -142,15 +140,15 @@ The following EDI fields are available on the list page.
 **EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
-**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created the transfer journal and optional posted the transfer journal. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created the movement journal and optional posted the movement journal. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 **Trading partner account**     | Warehouse account assigned to the staging record.
 **Trading partner GLN**         | The 3PL’s global location number is shown here.
-**Journal**                     | Transfer journal used to process the stock adjustment.
+**Journal**                     | Movement journal used to process the stock adjustment.
 **Created date and time**       | The date and time the selected record was created in the staging table.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
 ### Buttons
-The following buttons are available on the **Inventory adjustment - Transfer**'s Action Pane, tab **Inventory adjustment - Transfer**.
+The following buttons are available on the **Inventory adjustment - Counting**'s Action Pane, tab **Inventory adjustment - Counting**.
 
 **Button**	                    | **Description**
 :---                            |:----
@@ -165,7 +163,7 @@ The following buttons are available on the **Inventory adjustment - Transfer**'s
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
 **Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
 
-The following buttons are available on the **Inventory adjustment - Transfer**'s Action Pane, tab **Acknowledgement**.
+The following buttons are available on the **Inventory adjustment - Counting**'s Action Pane, tab **Acknowledgement**.
 The **Acknowledgement** tab is available on all incoming documents staging pages and enables the user to process or view the **Functional acknowledgement outbound** that has been created for the inbound document.
 
 **Button**	                    | **Description**
@@ -184,7 +182,7 @@ The following EDI Header staging fields are available on the header page.
 **EDI number**          | EDI Staging table record id                           | 
 **Company account**     | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here.   | 
-**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created the transfer journal and optional posted the transfer journal. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created the movement journal and optional posted the movement journal. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 <ins>**Reset status**</ins>		
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
@@ -196,14 +194,14 @@ The following EDI Line fields are available on the lines page. <br>
 
 **Field**                   | **Description**                                                           | **D365 line target**
 :---                        |:---                                                                       |:---
-**Item number**             | The D365 item id                                                          | Transfer journal line > Item number
-**Quantity**                | Inventory adjustment quantity	                                            | Transfer journal line > Quantity
-**Colour**                  | Product dimensions – Colour	                                            | Transfer journal line > Colour
-**Size**                    | Product dimensions – Size	                                                | Transfer journal line > Size
-**Style**                   | Product dimensions – Style	                                            | Transfer journal line > Style
-**Configuration**           | Product dimensions – Configuration	                                    | Transfer journal line > Configuration
-**Serial number**           | Tracking dimensions – Serial number	                                    | Transfer journal line > Serial number
-**From batch number**       | Tracking dimensions – Batch number	                                    | Transfer journal line > From batch number
+**Item number**             | The D365 item id                                                          | Movement journal line > Item number
+**Quantity**                | Inventory adjustment quantity	                                            | Movement journal line > Quantity
+**Colour**                  | Product dimensions – Colour	                                            | Movement journal line > Colour
+**Size**                    | Product dimensions – Size	                                                | Movement journal line > Size
+**Style**                   | Product dimensions – Style	                                            | Movement journal line > Style
+**Configuration**           | Product dimensions – Configuration	                                    | Movement journal line > Configuration
+**Serial number**           | Tracking dimensions – Serial number	                                    | Movement journal line > Serial number
+**From batch number**       | Tracking dimensions – Batch number	                                    | Movement journal line > From batch number
 **To batch number**         | Tracking dimensions – Batch number. <br> If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch.	| Transfer journal line > To batch number
 **Manufacturing date**      | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an existing D365 batch.	| • Batches > Manufacturing date
 **Expiration date**         | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an already D365 batch.	| • Batches > Expiration date
