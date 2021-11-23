@@ -131,7 +131,7 @@ The following EDI Header staging fields are available on the header page.
 **Transfer number**         | Transfer order number	                                    | Transfer order > Transfer number
 **Delivery terms**          | Delivery terms for the transfer order	                    | Transfer order > Delivery terms
 **Expected delivery date**  | Expected receipt date from the transfer order	            | Transfer order > Receipt date
-<ins>*Status**</ins>		
+<ins>**Status**</ins>		
 **Group control number**    | Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.	
 **Received**                | Indicates if the Functional acknowledgement inbound has been received from the trading partner for the outbound document record.	
 
