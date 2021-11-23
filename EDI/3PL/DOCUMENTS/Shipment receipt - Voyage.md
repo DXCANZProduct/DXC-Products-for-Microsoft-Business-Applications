@@ -126,19 +126,6 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 :------------------------------------ |:----                   |:----
 
 
-### Validation
-
-[Validation profiles](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Voyage.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
--	**Info** - An infolog is displayed with information only, it is not identified as a warning
--	**Warning** - An infolog is displayed with a warning. It is possible to carry on processing
--	**Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error
-
-The following table describes each validation option for the EDI document. It also describes if the validation rule is not met, but only has an info or warning error tolerance, how the D365 target will be created/updated.
-
-Rule Id	                | Details	                            | Info/Warning tolerance updates
-:--                     |:--                                    |:--
-**Batch Id update**     | Where the batch id received is different to batch id (example ABC123 vs. 123ABC) in the shipment advice. | Arrival journal posted with 3PL's batch
-
 ## View staging table records
 To view the Shipment receipt - Voyage staging records, go to **EDI > Documents > 3PL documents > Stock transfer receipt > Voyage**. <br>
 Use this page to review staging and process the EDI documents, create the Arrival journal and optionally post the Arrival journal.
