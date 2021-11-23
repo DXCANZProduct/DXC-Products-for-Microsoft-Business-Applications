@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI 3PL]
-description: [EDI 3PL Documents - Shipment advice - Purchase order]
+description: [EDI 3PL Documents - Shipment advice - Voyage]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 23/11/2021
@@ -27,10 +27,13 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Shipment advice - Purchase order
+# Shipment advice - Voyage
+
+The **Shipment advice - Voyage** document enables companies to send Landed cost Voyage details to their 3PL warehouse. <br>
+In return the 3PL will confirm receipt of the stock with document **Shipment receipt - Voyage** which will create an arrival journal with optional document setting to automatically post the created journal.
 
 ## Prerequisites
-The following setup is prerequisites for the Shipment advice - Purchase order
+The following setup is prerequisites for the Shipment advice - Voyage
 
 ### 3PL setup
 EDI > Setup > 3PL setup
@@ -39,7 +42,7 @@ EDI > Setup > 3PL setup
 ### Document type setup
 EDI > Setup > Document types: Shipment advice - Voyage
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-2. Create [Setting profile](../SETUP/SETTING%20PROFILES/Shipment%20advice%20-%20Purchase%20order.md) for the document.
+2. Create [Setting profile](../SETUP/SETTING%20PROFILES/Shipment%20advice%20-%20Voyage.md) for the document.
 3. Create [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md) for the document.
 
 ### Trading partners
@@ -47,7 +50,7 @@ EDI > Setup > Trading partners
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the **3PL setup** to the warehouse trading partner's options:
     - Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
-1. Add and enable the **Shipment advice - Purchase order** document to the [3PL trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+1. Add and enable the **Shipment advice - Voyage** document to the [3PL trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
     - File name setup
@@ -57,15 +60,17 @@ EDI > Setup > Trading partners
 ## Processing
 
 ### Create shipment advice staging
-An outbound shipment advice for purchase orders can be triggered via the following method: 
--	**Purchase order**: Accounts payable > Purchase orders > All purchase order - Select **Receipts list** under the **Generate** heading on the **Receive** tab on the Action Pane. 
+An outbound shipment advice for voyage can be triggered via the following method: 
+-	**Voyage**: Landed cost > Voyages > All voyages - Select **Send to EDI** under the **EDI** heading on the **Manage** tab on the Action Pane. 
+
+> Note: Where a purchase order has been attached to an Landed cost voyage, any receipts list that is printed from the purchase order will not be **Send to EDI**. Goods in Transit (GIT) Purchase orders needs to be invoiced first.
 
 ## Inbound document
-Once the shipment has been received by the 3PL, the shipment receipt information is sent back via the inbound **Shipment receipt - Purchase order** document.
+Once the shipment has been received by the 3PL, the shipment receipt information is sent back via the inbound **Shipment receipt - Voyage** document.
 
 ## View staging table records
-To view the shipment advice staging records, go to **EDI > Documents > 3PL documents > Stock transfer advice > Purchase order**. 
-Use this page to review staging and process EDI Shipment advice - Purchase order documents to an Outbound file.
+To view the shipment advice staging records, go to **EDI > Documents > 3PL documents > Stock transfer advice > Voyage**. 
+Use this page to review staging and process EDI Shipment advice - Voyage documents to an Outbound file.
 
 ### List page
 The following EDI fields are available on the list page.
@@ -78,16 +83,12 @@ The following EDI fields are available on the list page.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 **Trading partner account**     | 3PL account assigned to the staging record
 **Trading partner GLN**         | The 3PL’s global location number is shown here
-**Purchase order**              | Purchase order number
-**Receipts list**               | Receipts list journal number
-**Delivery terms**              | Delivery terms for the purchase order
-**Due date**                    | Expected receipt date from the purchase order
-**Status**                      | The status of the purchase as specified in the setting profile. Mapped value for new or cancel indicator.
+**Voyage**                      | Landed cost Voyage number
 **Created date and time**       | The date and time the selected record was created in the staging table
 **Received**                    | Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record
 
 ### Buttons
-The following buttons are available on the **Stock transfer advice > Purchase order**'s Action Pane, tab **Stock shipment advice**.
+The following buttons are available on the **Stock transfer advice > Voyage**'s Action Pane, tab **Stock shipment advice**.
 
 **Button**	                    | **Description**
 :---                            |:----
@@ -95,14 +96,14 @@ The following buttons are available on the **Stock transfer advice > Purchase or
 **Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_
 **Outbound files**              | View the outbound file record created by the selected staging record
 **Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page
-**Purchase order**              | View the purchase order
+**All voyages**                 | View the Landed cost Voyage
 **Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
 **Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
 **Reset template**	            | Reset the template used to create the outbound file. <br> Only enabled where the **Staging to target status** is set to _Not started_.
 **Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
 
-The following buttons are available on the **Stock transfer advice > Purchase order**'s Action Pane, tab **Acknowledgement**.
+The following buttons are available on the **Stock transfer advice > Voyage**'s Action Pane, tab **Acknowledgement**.
 The **Acknowledgement** tab is available on all outgoing documents staging pages and enables the user to view the **Functional acknowledgement inbound** that has been received and processed for the outbound document.
 
 **Button**	                    | **Description**
@@ -126,10 +127,8 @@ The following EDI Header staging fields are available on the header page.
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**Overview**</ins>		
-**Delivery terms**          | Delivery terms for the purchase order     | Purchase order > Delivery terms
-**Expected delivery date**  | Expected receipt date from the purchase order	    | Purchase order > Delivery date
-**Status**                  | The status of the purchase as specified in the setting profile. Mapped value for new or cancel indicator.	
+<ins>**Voyage**</ins>		
+**Voyage**                  | Landed cost Voyage number
 <ins>*Status**</ins>		
 **Group control number**    | Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.	
 **Received**                | Indicates if the Functional acknowledgement inbound has been received from the trading partner for the outbound document record.	
@@ -140,20 +139,20 @@ The following EDI Line staging fields are available on the lines page.
 
 **Field**	                | **Description**	                                        | **D365 source**
 :---                        |:---                                                       |:---
-**Item number**             | The D365 item number                                      | Purchase order lines > Item Number
+**Item number**             | The D365 item number                                      | Voyage lines > Item Number
 **Bar code**                | D365 item number’s Bar code (based on unit)	            | Released products > Bar codes
 **GTIN**                    | D365 item number’s GTIN (based on unit)	                | Released products > GTIN codes
 **Description**             | D365 item number’s Description	                        | Released products > Product name
-**External**                | External item for the selected item and vendor	        | Purchase order lines > external
-**Lot Id**                  | Lot id for the transfer order line	                    | Purchase order lines > Lot id
-**Quantity**                | Purchase order quantity	                                | Purchase order lines > Quantity
-**Unit**                    | Purchase order quantity’s unit	                        | Released products > Inventory unit
-**Delivery date**	        | Expected delivery date	                                | Purchase order lines > Delivery date
-**Colour**                  | Product dimensions – colour	                            | Purchase order lines > Colour
-**Size**                    | Product dimensions – Size	                                | Purchase order lines > Size
-**Style**                   | Product dimensions – Style	                            | Purchase order lines > Style
-**Configuration**           | Product dimensions – Configuration	                    | Purchase order lines > Configuration
-**Batch number**            | Tracking dimensions – Batch number	                    | Purchase order lines > Batch number
-**Serial number**           | Tracking dimensions – Serial number	                    | Purchase order lines > Serial number
-**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Pick route line > Inventory status
-
+**Lot Id**                  | Lot id for the voyage line	                            | Voyage lines > Lot id
+**Quantity**                | Voyage line’s quantity	                                | Voyage lines > Quantity
+**Unit**                    | Voyage line quantity’s unit	                            | Released products > Inventory unit
+**Shipping container type** | Container type for the receipt advice	                    | Shipping container type
+**Shipping container**      | Container number for the receipt advice	                | Voyage line > Container
+**Expected delivery date**	| Expected delivery date	                                | Container activities
+**Colour**                  | Product dimensions – colour	                            | Voyage line > Colour
+**Size**                    | Product dimensions – Size	                                | Voyage line > Size
+**Style**                   | Product dimensions – Style	                            | Voyage line > Style
+**Configuration**           | Product dimensions – Configuration	                    | Voyage line > Configuration
+**Batch number**            | Tracking dimensions – Batch number	                    | Voyage line > Batch number
+**Serial number**           | Tracking dimensions – Serial number	                    | Voyage line > Serial number
+**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Voyage line > Inventory status
