@@ -205,11 +205,8 @@ The following EDI Header staging fields are available on the header page.
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
 <ins>**Overview**</ins>		
-**Purchase order**          | Purchase order number being received	            | Used to find D365 source transaction
-**Receipts list**	        | Receipts list journal number	                    | Used to find D365 source transaction
-**Delivery note**           | 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note. If blank, the line’s delivery note/s will apply	                                                    | • Product receipt > Delivery note/Packing slip
-**Document date**           | Document date of 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note. If blank, the line’s delivery note/s will apply     | • Product receipt > Document date
-**Receipt date**            | Date the stock was received. If setting Auto post receipt is enabled, this will also be used in posting the delivery note.	| • Arrival journal > Posted on <br> • Product receipt > Product receipt date
+**Transfer number**         | Transfer order number being received	            | Used to find D365 source transaction
+**Receipt date**            | Date the stock was received. If setting Auto receive is enabled, this will also be used in posting the transfer order's receipt date.	| • Arrival journal > Posted on <br> • Trasnfer order > Receipt date
 **Journal**                 | Arrival journal created once processing is completed	| • Arrival journal > Journal
 
 
@@ -219,17 +216,13 @@ The following EDI Line fields are available on the lines page. <br>
 **Field**                   | **Description**                                                           | **D365 line target**
 :---                        |:---                                                                       |:---
 **Item number**             | The D365 item number                                                      | Used for validation
-**Lot Id**                  | Lot id for the sales/transfer order line                                  | Used to find D365 source transaction line
-**Document date**           | Document date of 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note if header Document date is blank.        	| • Product receipt > Document date
-**Delivery note**           | 	3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note if header Delivery note is blank. Grouped by Delivery note, i.e. multiple delivery notes can be posted for the Arrival journal.	    | • Product receipt > Delivery note/Packing slip
-**Quantity**                | Received quantity	                                                        | • Arrival journal line > Quantity <br> • Product receipt line > Received
+**Lot Id**                  | Lot id for the transfer order line                                        | Used to find D365 source transaction line
+**Quantity**                | Received quantity	                                                        | • Arrival journal line > Quantity
 **Colour**                  | Product dimensions – Colour	                                            | Used for validation
 **Size**                    | Product dimensions – Size	                                                | Used for validation
 **Style**                   | Product dimensions – Style	                                            | Used for validation
 **Configuration**           | Product dimensions – Configuration	                                    | Used for validation
 **Inventory status**        | Storage dimensions – Inventory status. Mapped value for Inventory status  | Used for validation
-**Batch number**            | Tracking dimensions – Batch number <br> If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch.                                       | • Arrival journal line > Batch number <br> • Product receipt line > Batch number
-**Serial number**           | Tracking dimensions – Serial number	                                    | • Arrival journal line > Serial number <br> • Product receipt line > Serial number
-**Manufacturing date**      | If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch. Doesn't update an existing D365 batch.	| • Batches > Manufacturing date
-**Expiration date**         | If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch. Doesn't update an already D365 batch.	| • Batches > Expiration date
+**Batch number**            | Tracking dimensions – Batch number                                        | • Arrival journal line > Batch number
+**Serial number**           | Tracking dimensions – Serial number	                                    | • Arrival journal line > Serial number
 
