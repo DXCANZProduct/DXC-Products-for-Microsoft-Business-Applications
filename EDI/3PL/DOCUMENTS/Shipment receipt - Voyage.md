@@ -36,7 +36,7 @@ Processing this document posts an arrival journal against the purchase order. <b
 Optional document settings also allows for posting the purchase order's product receipt for the registered stock.
 
 ## Prerequisites
-The following setup is prerequisites for the picking list registration
+The following setup is prerequisites for the Shipment receipt - Purchase order
 
 1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
