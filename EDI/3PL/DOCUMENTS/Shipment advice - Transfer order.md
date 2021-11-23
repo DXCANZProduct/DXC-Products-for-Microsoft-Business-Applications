@@ -64,7 +64,7 @@ An outbound shipment advice for transfer orders can be triggered via the followi
 Once the shipment has been received by the 3PL, the shipment receipt information is sent back via the inbound **Shipment receipt - Transfer order** document.
 
 ## View staging table records
-To view the picking list staging records, go to **EDI > Documents > 3PL documents > Stock transfer advice > Transfer order**. 
+To view the shipment advice staging records, go to **EDI > Documents > 3PL documents > Stock transfer advice > Transfer order**. 
 Use this page to review staging and process EDI Shipment advice - Transfer order documents to an Outbound file.
 
 ### List page
