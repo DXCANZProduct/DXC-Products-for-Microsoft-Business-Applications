@@ -195,7 +195,7 @@ The following EDI Line fields are available on the lines page. <br>
 
 **Field**                   | **Description**                                                           | **D365 line target**
 :---                        |:---                                                                       |:---
-**Item number**             | The D365 item number                                                      | Used for validation
+**Item number**             | The D365 item number                                                      | Used for validation <br> Arrival journal line > Item number
 **Lot Id**                  | Lot id for the purchase/transfer order line                               | Used to find D365 source transaction line
 **Quantity**                | Received quantity	                                                        | Arrival journal line > Quantity
 **Colour**                  | Product dimensions – Colour	                                            | Used for validation
