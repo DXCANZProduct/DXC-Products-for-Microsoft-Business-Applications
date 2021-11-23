@@ -61,9 +61,9 @@ Inbound files have the following three steps:
 ### Create document
 ![alt text](../../CORE/Image/Create_Document.png "Create document")
 
-### Header checks for Shipment advice
+### Header checks for Shipment receipt
 Header checks are performed when:
-1. Importing Shipment advice file
+1. Importing Shipment receipt file
 2. Processing from import to staging
 3. Processing from staging to target
 
@@ -114,7 +114,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 
 > Note: % contains staging data for the record
 
-### Staging line validation - Shipment advice
+### Staging line validation - Shipment receipt
 
 **Rule Id**                 | **Details**                                               | Error    
 :---                        |:---                                                       |:---              
@@ -139,7 +139,7 @@ The following table describes each validation option for the EDI document. It al
 
 Rule Id	                | Details	                            | Info/Warning tolerance updates
 :--                     |:--                                    |:--
-**Batch Id update**     | Where the batch id received is different to batch id (example ABC123 vs. 123ABC) in the shipment advice. | Arrival journal posted with 3PL's batch
+**Batch Id update**     | Where the batch id received is different to batch id (example ABC123 vs. 123ABC) in the shipment receipt. | Arrival journal posted with 3PL's batch
 
 ## View staging table records
 To view the Shipment receipt - Purchase order staging records, go to **EDI > Documents > 3PL documents > Stock transfer receipt > Purchase order**. <br>
