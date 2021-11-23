@@ -94,7 +94,7 @@ At this step the issues are usually around the file not matching the template.
 Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
 
 ### Step 3 - Staging to target
-If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 arrival journal won't be posted for the staging record.
+If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 transfer journal won't be created for the staging record.
 
 #### Possible issues and fixes
 **Staging to target** errors for Shipment receipt can be viewed in:
@@ -131,7 +131,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 
 ## View staging table records
 To view the Inventory adjustment - Transfer staging records, go to **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Transfer**. <br>
-Use this page to review staging and process the EDI documents, create the Arrival journal and optionally post the Arrival journal.
+Use this page to review staging and process the EDI documents, create the Transfer journal and optionally post the Transfer journal.
 
 ### List page
 The following EDI fields are available on the list page.
@@ -183,7 +183,7 @@ The following EDI Header staging fields are available on the header page.
 **EDI number**          | EDI Staging table record id                           | 
 **Company account**     | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here.   | 
-**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and posted the arrival journal and optional product receipt. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created the transfer journal and optional posted the transfer journal. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 <ins>**Reset status**</ins>		
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
