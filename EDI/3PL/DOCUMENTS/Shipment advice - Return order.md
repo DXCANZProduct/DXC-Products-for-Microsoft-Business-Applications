@@ -57,8 +57,8 @@ EDI > Setup > Trading partners
 ## Processing
 
 ### Create shipment advice staging
-An outbound shipment advice for purchase orders can be triggered via the following method: 
--	**Purchase order**: Accounts payable > Purchase orders > All purchase order - Select **Receipts list** under the **Generate** heading on the **Receive** tab on the Action Pane. 
+An outbound shipment advice for return orders can be triggered via the following method: 
+-	**Purchase order**: Accounts receivable > Orders > All return orders - Select **Return order** under the **Send** heading on the **Return order** tab on the Action Pane. 
 
 ## Inbound document
 Once the shipment has been received by the 3PL, the shipment receipt information is sent back via the inbound **Shipment receipt - Return order** document.
@@ -78,11 +78,9 @@ The following EDI fields are available on the list page.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 **Trading partner account**     | 3PL account assigned to the staging record
 **Trading partner GLN**         | The 3PL’s global location number is shown here
-**Purchase order**              | Purchase order number
-**Receipts list**               | Receipts list journal number
-**Delivery terms**              | Delivery terms for the purchase order
-**Due date**                    | Expected receipt date from the purchase order
-**Status**                      | The status of the purchase as specified in the setting profile. Mapped value for new or cancel indicator.
+**RMA number**                  | Return Order number
+**Delivery terms**              | Delivery terms for the sales order
+**Expected delivery date**      | Expected receipt date from the sales order
 **Created date and time**       | The date and time the selected record was created in the staging table
 **Received**                    | Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record
 
@@ -95,7 +93,7 @@ The following buttons are available on the **Stock transfer advice > Return orde
 **Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_
 **Outbound files**              | View the outbound file record created by the selected staging record
 **Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page
-**Purchase order**              | View the purchase order
+**All return orders**           | View the return order
 **Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
 **Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
@@ -127,12 +125,47 @@ The following EDI Header staging fields are available on the header page.
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
 <ins>**Overview**</ins>		
-**Delivery terms**          | Delivery terms for the purchase order     | Purchase order > Delivery terms
-**Expected delivery date**  | Expected receipt date from the purchase order	    | Purchase order > Delivery date
-**Status**                  | The status of the purchase as specified in the setting profile. Mapped value for new or cancel indicator.	
+**Delivery terms**          | Delivery terms for the return order	                    | Sales order > Delivery terms
+**Expected delivery date**  | Expected receipt date from the return order	            | Return order > Deadline
 <ins>*Status**</ins>		
 **Group control number**    | Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.	
 **Received**                | Indicates if the Functional acknowledgement inbound has been received from the trading partner for the outbound document record.	
+<ins>**General FastTab**</ins>  
+<ins>**Details**</ins>          
+**Customer reference**      | Customers reference	                                    | Return order > Customer reference
+**Customer requisition**    | Customers purchase order number	                        | Return order > Customer requisition
+**Expected delivery date**  | Expected receipt date from the return order	            | Return order > Deadline
+**Delivery terms**          | Delivery terms for the transfer order	                    | Sales Order > Delivery Terms
+<ins>**Delivery**</ins>     | Return order > Warehouse’s address                        | Return order > Delivery Address
+**Name**                    | Delivery name	                                            | Return order > Delivery Address
+**Delivery address**        | Delivery/Warehouse address details	                    | Return order > Delivery Address
+**Post box**                | Delivery address - Post box	                            | Return order > Delivery Address
+**Building complement**     | Delivery address - Building complement	                | Return order > Delivery Address
+**Street number**           | Delivery address - Street number	                        | Return order > Delivery Address
+**Street**                  | Delivery address - Street	                                | Return order > Delivery Address
+**State**                   | Delivery address - State	                                | Return order > Delivery Address
+**ZIP/postal code**         | Delivery address - ZIP/postal code	                    | Return order > Delivery Address
+**District**                | Delivery address - District	                            | Return order > Delivery Address
+**City**                    | Delivery address - City	                                | Return order > Delivery Address
+**County**                  | Delivery address - County	                                | Return order > Delivery Address
+**Country/region**          | Delivery address - Country/region	                        | Return order > Delivery Address
+**ISO**                     | Delivery address - ISO	                                | Return order > Delivery Address
+<ins>**Sender address**</ins>   | Sender/Customer’s primary address details	            | Return order > Customer account’s Primary address details
+**Post box**                | Sender address - Post box	                                | Return order > Customer account’s Primary address details
+**Building complement**     | Sender address - Building complement	                    | Return order > Customer account’s Primary address details
+**Street number**           | Sender address - Street number	                        | Return order > Customer account’s Primary address details
+**Street**                  | Sender address - Street	                                | Return order > Customer account’s Primary address details
+**State**                   | Sender address - State	                                | Return order > Customer account’s Primary address details
+**ZIP/postal code**         | Sender address - ZIP/postal code	                        | Return order > Customer account’s Primary address details
+**District**                | Sender address - District	                                | Return order > Customer account’s Primary address details
+**City**                    | Sender address - City	                                    | Return order > Customer account’s Primary address details
+**County**                  | Sender address - County	                                | Return order > Customer account’s Primary address details
+**Country/region**          | Sender address - Country/region	                        | Return order > Customer account’s Primary address details
+**ISO**                     | Sender address - ISO	                                    | Return order > Customer account’s Primary address details
+**Store code**              | Sender address - Store code	                            | Return order > Customer account’s Primary address details
+**Contact**                 | Contact	                                                | Return order > Contact
+**Telephone**               | Customer’s telephone	                                    | Return order > Customer account’s Primary Phone
+**Email**                   | Customer's primary email                                  | Return order > Customer account’s Primary email
 
 
 ### Line fields
