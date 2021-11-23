@@ -143,7 +143,7 @@ Rule Id	                | Details	                            | Info/Warning tol
 
 ## View staging table records
 To view the Shipment receipt - Purchase order staging records, go to **EDI > Documents > 3PL documents > Stock transfer receipt > Purchase order**. <br>
-Use this page to review staging and process EDI Shipment receipt - Purchase order documents, post the Arrival journal and optionally post the Product receipt.
+Use this page to review staging and process the EDI documents, post the Arrival journal and optionally post the Product receipt.
 
 ### List page
 The following EDI fields are available on the list page.
@@ -153,20 +153,23 @@ The following EDI fields are available on the list page.
 **EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
-**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and updated the D365 purchase order and sent a purchase order confirmation (where set to automatic). <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and posted the arrival journal and optional product receipt. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 **Trading partner account**     | Warehouse account assigned to the staging record.
 **Trading partner GLN**         | The 3PL’s global location number is shown here.
-
+**Purchase order**              | Purchase order number being received.
+**Receipts list**               | Receipts list document used to receive.
+**Receipt date**                | Date the stock was received.
+**Journal**                     | Arrival journal used to receive the stock.
 **Created date and time**       | The date and time the selected record was created in the staging table.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
 ### Buttons
-The following buttons are available on the **Picking list registration**'s Action Pane, tab **Picking list registration import**.
+The following buttons are available on the **Shipment receipt - Purchase order**'s Action Pane, tab **Stock shipment receipt**.
 
 **Button**	                    | **Description**
 :---                            |:----
-**Process pick list registration**   | Process picking list registration for the selected record in the staging table.
-**Process all pick list registrations**   | Process picking list registration for the staging records that have a **Staging to target status** set to _Not started_. 
+**Process stock receipt**   | Process stock receipt for the selected record in the staging table.
+**Process all stock receipts**   | Process stock receipt for the staging records that have a **Staging to target status** set to _Not started_. 
 **Inbound files**               | View the inbound file record the selected staging record.
 **Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
 **Pick list registration**      | If the staging record has been completed it is possible to inquire on the pick list registration it updated from this button.
@@ -176,7 +179,7 @@ The following buttons are available on the **Picking list registration**'s Actio
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
 **Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
 
-The following buttons are available on the **Picking list registration**'s Action Pane, tab **Acknowledgement**.
+The following buttons are available on the **Shipment receipt - Purchase order**'s Action Pane, tab **Acknowledgement**.
 The **Acknowledgement** tab is available on all incoming documents staging pages and enables the user to process or view the **Functional acknowledgement outbound** that has been created for the inbound document.
 
 **Button**	                    | **Description**
@@ -188,31 +191,32 @@ The **Acknowledgement** tab is available on all incoming documents staging pages
 ### Header fields
 The following EDI Header staging fields are available on the header page.
 
-**Field**	            | **Description**	                                    | **D365 header update**
+**Field**	            | **Description**	                                    | **D365 header target**
 :---                    |:---                                                   |:---
 <ins>**Identification FastTab**</ins>
 <ins>**Identification**</ins>		
-**EDI number**          | EDI Staging table record id                           | History page on D365 sales order
+**EDI number**          | EDI Staging table record id                           | 
 **Company account**     | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here.   | 
-**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and updated the D365 purchase order and sent a purchase order confirmation (where set to automatic). <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and posted the arrival journal and optional product receipt. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 <ins>**Reset status**</ins>		
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**General FastTab**</ins>	
-<ins>**General**</ins>	
-**Consignment note number** | Consignment note number received from the 3PL provider	| Pick route > Consignment note number
-**Start date/time**         | Date/time the pick route was started	                    | Pick route > Start date/time
-**End date/time**           | Date/time the pick route was completed	                | Pick route > End date/time
-**Dispatch date**           | Shipping date/time	                                    | Sales order > Packing slip > Ship date
-**Trading partner GLN**     | The 3PL’s global location number is shown here.	
+<ins>**Overview**</ins>		
+**Purchase order**          | Purchase order number being received	            | Used to find D365 source transaction
+**Receipts list**	        | Receipts list journal number	                    | Used to find D365 source transaction
+**Delivery note**           | 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note. If blank, the line’s delivery note/s will apply	                                                    | Product receipt > Delivery note/Packing slip
+**Document date**           | Document date of 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note. If blank, the line’s delivery note/s will apply     | Product receipt > Document date
+**Receipt date**            | Date the stock was received. If setting Auto post receipt is enabled, this will also be used in posting the delivery note.	| Arrival journal > Posted on <br> Product receipt > Product receipt date
+**Journal**                 | Arrival journal created once processing is completed	| Arrival journal > Journal
+
 
 ### Line fields
 The following EDI Line fields are available on the lines page. <br> 
 
-**Field**                   | **Description**                                                           | **D365 line update**
+**Field**                   | **Description**                                                           | **D365 line target**
 :---                        |:---                                                                       |:---
 **Line number**             | Picking list line number. If ‘_Line number_ is used in **Line matching strategy** this needs to match to Line number from the related Picking list staging record.	| Used to find matching line when **Line matching strategy** is _Line number_
 **Item number**             | The D365 item number                                                      | Used for validation
