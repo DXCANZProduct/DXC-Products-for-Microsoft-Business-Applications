@@ -219,7 +219,7 @@ The following EDI Line fields are available on the lines page. <br>
 
 **Field**                   | **Description**                                                           | **D365 line target**
 :---                        |:---                                                                       |:---
-**Item number**             | The D365 item number                                                      | Used for validation
+**Item number**             | The D365 item number                                                      | Used for validation <br> Arrival journal line > Item number
 **Lot Id**                  | Lot id for the return order line                                          | Used to find D365 source transaction line
 **Quantity**                | Received quantity. This must be a positive quantity.                      | • Arrival journal line > Quantity <br> • Packing slip journal line > Received
 **Disposition code**        | Specify how to process an item that is returned by a customer. Mapped value for [Disposition code mapping](../SETUP/3PL%20SETUP/Disposition%20code%20mapping.md)	| Arrival journal line > Disposition code
