@@ -37,7 +37,7 @@ EDI > Setup > 3PL setup
 1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
 
 ### Document type setup
-EDI > Setup > Document types: Picking list
+EDI > Setup > Document types: Shiment advice - Return order
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
 2. Create [Setting profile](../SETUP/SETTING%20PROFILES/Shipment%20advice%20-%20Return%20order.md) for the document.
 3. Create [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md) for the document.
@@ -58,7 +58,7 @@ EDI > Setup > Trading partners
 
 ### Create shipment advice staging
 An outbound shipment advice for return orders can be triggered via the following method: 
--	**Purchase order**: Accounts receivable > Orders > All return orders - Select **Return order** under the **Send** heading on the **Return order** tab on the Action Pane. 
+-	**Return order**: Accounts receivable > Orders > All return orders - Select **Return order** under the **Send** heading on the **Return order** tab on the Action Pane. 
 
 ## Inbound document
 Once the shipment has been received by the 3PL, the shipment receipt information is sent back via the inbound **Shipment receipt - Return order** document.
