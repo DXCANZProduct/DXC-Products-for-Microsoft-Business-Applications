@@ -37,7 +37,7 @@ EDI > Setup > 3PL setup
 1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
 
 ### Document type setup
-EDI > Setup > Document types: Picking list
+EDI > Setup > Document types: Shipment advice - Purchase order
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
 2. Create [Setting profile](../SETUP/SETTING%20PROFILES/Shipment%20advice%20-%20Purchase%20order.md) for the document.
 3. Create [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md) for the document.
