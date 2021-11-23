@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI 3PL]
-description: [EDI 3PL Documents - Shipment advice - Purchase order]
+description: [EDI 3PL Documents - Shipment advice - Transfer order]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 23/11/2021
@@ -27,10 +27,10 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Shipment advice - Purchase order
+# Shipment advice - Transfer order
 
 ## Prerequisites
-The following setup is prerequisites for the Shipment advice - Purchase order
+The following setup is prerequisites for the Shipment advice - Transfer order
 
 ### 3PL setup
 EDI > Setup > 3PL setup
@@ -39,14 +39,14 @@ EDI > Setup > 3PL setup
 ### Document type setup
 EDI > Setup > Document types: Shipment advice - Transfer order
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-2. Create [Setting profile](../SETUP/SETTING%20PROFILES/Shipment%20advice%20-%20Purchase%20order.md) for the document.
+2. Create [Setting profile](../SETUP/SETTING%20PROFILES/Shipment%20advice%20-%20Transfer%20order.md) for the document.
 3. Create [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md) for the document.
 
 ### Trading partners
 EDI > Setup > Trading partners
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the **3PL setup** to the warehouse trading partner's options.
-1. Add and enable the **Shipment advice - Purchase order** document to the [3PL trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+1. Add and enable the **Shipment advice - Transfer order** document to the [3PL trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
     - File name setup
@@ -60,11 +60,11 @@ An outbound shipment advice for purchase orders can be triggered via the followi
 -	**Purchase order**: Accounts payable > Purchase orders > All purchase order - Select **Receipts list** under the **Generate** heading on the **Receive** tab on the Action Pane. 
 
 ## Inbound document
-Once the shipment has been received by the 3PL, the shipment receipt information is sent back via the inbound **Shipment receipt - Purchase order** document.
+Once the shipment has been received by the 3PL, the shipment receipt information is sent back via the inbound **Shipment receipt - Transfer order** document.
 
 ## View staging table records
-To view the picking list staging records, go to **EDI > Documents > 3PL documents > Stock transfer advice > Purchase order**. 
-Use this page to review staging and process EDI Shipment advice - Purchase order documents to an Outbound file.
+To view the picking list staging records, go to **EDI > Documents > 3PL documents > Stock transfer advice > Transfer order**. 
+Use this page to review staging and process EDI Shipment advice - Transfer order documents to an Outbound file.
 
 ### List page
 The following EDI fields are available on the list page.
@@ -86,7 +86,7 @@ The following EDI fields are available on the list page.
 **Received**                    | Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record
 
 ### Buttons
-The following buttons are available on the **Stock transfer advice > Purchase order**'s Action Pane, tab **Stock shipment advice**.
+The following buttons are available on the **Stock transfer advice > Transfer order**'s Action Pane, tab **Stock shipment advice**.
 
 **Button**	                    | **Description**
 :---                            |:----
@@ -101,7 +101,7 @@ The following buttons are available on the **Stock transfer advice > Purchase or
 **Reset template**	            | Reset the template used to create the outbound file. <br> Only enabled where the **Staging to target status** is set to _Not started_.
 **Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
 
-The following buttons are available on the **Stock transfer advice > Purchase order**'s Action Pane, tab **Acknowledgement**.
+The following buttons are available on the **Stock transfer advice > Transfer order**'s Action Pane, tab **Acknowledgement**.
 The **Acknowledgement** tab is available on all outgoing documents staging pages and enables the user to view the **Functional acknowledgement inbound** that has been received and processed for the outbound document.
 
 **Button**	                    | **Description**
