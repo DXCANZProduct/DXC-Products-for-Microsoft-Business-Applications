@@ -29,6 +29,9 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Shipment advice - Transfer order
 
+The **Shipment advice - Transfer order** document enables companies to send inbound transfer order details to their 3PL warehouse. <br>
+In return the 3PL will confirm receipt of the stock with document **Shipment receipt - Transfer order** which will post an arrival journal with optional document setting to receive the transfer order.
+
 ## Prerequisites
 The following setup is prerequisites for the Shipment advice - Transfer order
 
