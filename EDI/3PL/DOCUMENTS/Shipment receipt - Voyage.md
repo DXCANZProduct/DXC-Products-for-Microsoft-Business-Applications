@@ -2,10 +2,10 @@
 # required metadata
 
 title: [EDI 3PL]
-description: [EDI 3PL Documents - Shipment receipt - Purchase order]
+description: [EDI 3PL Documents - Shipment receipt - Voyage]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 23/11/2021
+ms.date: 24/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,36 +27,34 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Shipment receipt - Purchase order
+# Shipment receipt - Voyage
 
-The following subsections will describe how to view and process the Shipment receipt - Purchase order from the 3PL warehouse. <br>
+The following subsections will describe how to view and process the Shipment receipt - Voyage from the 3PL warehouse. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
 
-Processing this document posts an arrival journal against the purchase order. <br>
-Optional document settings also allows for posting the purchase order's product receipt for the registered stock.
+Processing this document creates an arrival journal against the voyage's purchase or transfer order. <br>
+Optional document settings also allows for automatically posting the arrival journal.
 
 ## Prerequisites
-The following setup is prerequisites for the Shipment receipt - Purchase order
+The following setup is prerequisites for the Shipment receipt - Voyage
 
 1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md) for the document.
-1. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md) for the document.
+1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Voyage.md) for the document.
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the 3PL setup to the warehouse trading partner's options:
     -  Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
     -  Item arrival: Select item arrival journal to use for processing inventory receipts. Options from **Inventory management > Setup > Journal names > Warehouse management**
-1. Add and enable the **Shipment receipt - Purchase order** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+1. Add and enable the **Shipment receipt - Voyage** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
-    - Validation profile
     - Search mask
 
 ## Processing
 Inbound files have the following three steps:
 1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**.
-2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > 3PL documents > Stock transfer receipt > Purchase order**.
-3. **Staging to target** - The staging record/s is processed to target. If the EDI shipment receipt is succefully processed the D365 arrival journal will be posted for the purchase order. And if the document setting **Auto post receipt** is set to _Yes_, the purchase order's product receipt will also be posted.
+2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > 3PL documents > Stock transfer receipt > Voyage**.
+3. **Staging to target** - The staging record/s is processed to target. If the EDI shipment receipt is succefully processed the D365 arrival journal will be created for the voyage's purchase or transfer order. And if the document setting **Auto post journal** is set to _Yes_, the arrival journal will also be posted.
 
 ### Create document
 ![alt text](../../CORE/Image/Create_Document.png "Create document")
@@ -97,9 +95,9 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 #### Possible issues and fixes
 **Staging to target** errors for Picking list registrations can be viewed in:
-- **EDI > Documents > 3PL documents > Stock transfer receipt > Purchase order** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **3PL documents**, tile **Shipment receipt - Purchase order errors**
-- **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Shipment receipt - Purchase order**
+- **EDI > Documents > 3PL documents > Stock transfer receipt > Voyage** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **3PL documents**, tile **Shipment receipt - Voyage errors**
+- **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Shipment receipt - Voyage**
 
 At this step the issues are usually around mapping/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
@@ -130,7 +128,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 
 ### Validation
 
-[Validation profiles](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
+[Validation profiles](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Voyage.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
 -	**Info** - An infolog is displayed with information only, it is not identified as a warning
 -	**Warning** - An infolog is displayed with a warning. It is possible to carry on processing
 -	**Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error
@@ -142,8 +140,8 @@ Rule Id	                | Details	                            | Info/Warning tol
 **Batch Id update**     | Where the batch id received is different to batch id (example ABC123 vs. 123ABC) in the shipment advice. | Arrival journal posted with 3PL's batch
 
 ## View staging table records
-To view the Shipment receipt - Purchase order staging records, go to **EDI > Documents > 3PL documents > Stock transfer receipt > Purchase order**. <br>
-Use this page to review staging and process the EDI documents, post the Arrival journal and optionally post the Product receipt.
+To view the Shipment receipt - Voyage staging records, go to **EDI > Documents > 3PL documents > Stock transfer receipt > Voyage**. <br>
+Use this page to review staging and process the EDI documents, create the Arrival journal and optionally post the Arrival journal.
 
 ### List page
 The following EDI fields are available on the list page.
@@ -164,7 +162,7 @@ The following EDI fields are available on the list page.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
 ### Buttons
-The following buttons are available on the **Shipment receipt - Purchase order**'s Action Pane, tab **Stock shipment receipt**.
+The following buttons are available on the **Shipment receipt - Voyage**'s Action Pane, tab **Stock shipment receipt**.
 
 **Button**	                    | **Description**
 :---                            |:----
@@ -180,7 +178,7 @@ The following buttons are available on the **Shipment receipt - Purchase order**
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
 **Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
 
-The following buttons are available on the **Shipment receipt - Purchase order**'s Action Pane, tab **Acknowledgement**.
+The following buttons are available on the **Shipment receipt - Voyage**'s Action Pane, tab **Acknowledgement**.
 The **Acknowledgement** tab is available on all incoming documents staging pages and enables the user to process or view the **Functional acknowledgement outbound** that has been created for the inbound document.
 
 **Button**	                    | **Description**
