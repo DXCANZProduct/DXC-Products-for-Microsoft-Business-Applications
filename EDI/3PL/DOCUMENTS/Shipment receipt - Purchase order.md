@@ -219,7 +219,7 @@ The following EDI Line fields are available on the lines page. <br>
 
 **Field**                   | **Description**                                                           | **D365 line target**
 :---                        |:---                                                                       |:---
-**Item number**             | The D365 item number                                                      | Used for validation
+**Item number**             | The D365 item number                                                      | Used for validation <br> Arrival journal line > Item number
 **Lot Id**                  | Lot id for the purchase order line                                        | Used to find D365 source transaction line
 **Document date**           | Document date of 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note if header Document date is blank.        	| • Product receipt > Document date
 **Delivery note**           | 	3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note if header Delivery note is blank. Grouped by Delivery note, i.e. multiple delivery notes can be posted for the Arrival journal.	    | • Product receipt > Delivery note/Packing slip
