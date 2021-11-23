@@ -144,7 +144,7 @@ The following EDI Line staging fields are available on the lines page.
 **GTIN**                    | D365 item number’s GTIN (based on unit)	                | Released products > GTIN codes
 **Description**             | D365 item number’s Description	                        | Released products > Product name
 **External**                | External item for the selected item and vendor	        | Purchase order lines > external
-**Lot Id**                  | Lot id for the transfer order line	                    | Purchase order lines > Lot id
+**Lot Id**                  | Lot id for the purchase order line	                    | Purchase order lines > Lot id
 **Quantity**                | Purchase order quantity	                                | Purchase order lines > Quantity
 **Unit**                    | Purchase order quantity’s unit	                        | Released products > Inventory unit
 **Delivery date**	        | Expected delivery date	                                | Purchase order lines > Delivery date
