@@ -45,7 +45,8 @@ EDI > Setup > Document types: Shipment advice - Voyage
 ### Trading partners
 EDI > Setup > Trading partners
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
-1. Assign the **3PL setup** to the warehouse trading partner's options.
+1. Assign the **3PL setup** to the warehouse trading partner's options:
+    - Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
 1. Add and enable the **Shipment advice - Purchase order** document to the [3PL trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
