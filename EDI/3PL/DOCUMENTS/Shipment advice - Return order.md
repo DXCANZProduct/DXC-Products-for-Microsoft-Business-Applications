@@ -173,20 +173,17 @@ The following EDI Line staging fields are available on the lines page.
 
 **Field**	                | **Description**	                                        | **D365 source**
 :---                        |:---                                                       |:---
-**Item number**             | The D365 item number                                      | Purchase order lines > Item Number
+**Item number**             | The D365 item number                                      | Return order lines > Item Number
 **Bar code**                | D365 item number’s Bar code (based on unit)	            | Released products > Bar codes
 **GTIN**                    | D365 item number’s GTIN (based on unit)	                | Released products > GTIN codes
 **Description**             | D365 item number’s Description	                        | Released products > Product name
-**External**                | External item for the selected item and vendor	        | Purchase order lines > external
-**Lot Id**                  | Lot id for the transfer order line	                    | Purchase order lines > Lot id
-**Quantity**                | Purchase order quantity	                                | Purchase order lines > Quantity
-**Unit**                    | Purchase order quantity’s unit	                        | Released products > Inventory unit
-**Delivery date**	        | Expected delivery date	                                | Purchase order lines > Delivery date
-**Colour**                  | Product dimensions – colour	                            | Purchase order lines > Colour
-**Size**                    | Product dimensions – Size	                                | Purchase order lines > Size
-**Style**                   | Product dimensions – Style	                            | Purchase order lines > Style
-**Configuration**           | Product dimensions – Configuration	                    | Purchase order lines > Configuration
-**Batch number**            | Tracking dimensions – Batch number	                    | Purchase order lines > Batch number
-**Serial number**           | Tracking dimensions – Serial number	                    | Purchase order lines > Serial number
-**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Pick route line > Inventory status
-
+**Lot Id**                  | Lot id for the return order line	                        | Return order lines > Return lot id
+**Quantity**                | Return order line quantity. By default this will be negative, but can be set to positive by utilizing the document setting **Positive return quantity**   | Return order lines > Quantity
+**Unit**                    | Return order quantity’s unit	                            | Return order lines > Unit
+**Colour**                  | Product dimensions – colour	                            | Return order lines > Colour
+**Size**                    | Product dimensions – Size	                                | Return order lines > Size
+**Style**                   | Product dimensions – Style	                            | Return order lines > Style
+**Configuration**           | Product dimensions – Configuration	                    | Return order lines > Configuration
+**Batch number**            | Tracking dimensions – Batch number	                    | Return order lines > Batch number
+**Serial number**           | Tracking dimensions – Serial number	                    | Return order lines > Serial number
+**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)    | 	Return order lines > Inventory status
