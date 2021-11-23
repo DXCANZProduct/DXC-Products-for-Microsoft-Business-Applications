@@ -34,6 +34,7 @@ A 3PL warehouse, setup as an EDI trading partner, can send inventory adjustments
 Processing the **Inventory adjustment - Transfer** document creates a transfer journal for the stock in the D365 warehouse transferring the stock between:
 - Batches
 - Inventory statuses
+
 Optional document settings also allows for automatically posting the transfer journal and creating the batch if it doesn't exist in D365.
 
 The following subsections will describe how to view and process the **Inventory adjustment - Transfer** from the 3PL warehouse. <br>
