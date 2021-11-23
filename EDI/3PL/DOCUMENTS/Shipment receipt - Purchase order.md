@@ -207,10 +207,10 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Overview**</ins>		
 **Purchase order**          | Purchase order number being received	            | Used to find D365 source transaction
 **Receipts list**	        | Receipts list journal number	                    | Used to find D365 source transaction
-**Delivery note**           | 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note. If blank, the line’s delivery note/s will apply	                                                    | Product receipt > Delivery note/Packing slip
-**Document date**           | Document date of 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note. If blank, the line’s delivery note/s will apply     | Product receipt > Document date
-**Receipt date**            | Date the stock was received. If setting Auto post receipt is enabled, this will also be used in posting the delivery note.	| Arrival journal > Posted on <br> Product receipt > Product receipt date
-**Journal**                 | Arrival journal created once processing is completed	| Arrival journal > Journal
+**Delivery note**           | 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note. If blank, the line’s delivery note/s will apply	                                                    | • Product receipt > Delivery note/Packing slip
+**Document date**           | Document date of 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note. If blank, the line’s delivery note/s will apply     | • Product receipt > Document date
+**Receipt date**            | Date the stock was received. If setting Auto post receipt is enabled, this will also be used in posting the delivery note.	| • Arrival journal > Posted on <br> • Product receipt > Product receipt date
+**Journal**                 | Arrival journal created once processing is completed	| • Arrival journal > Journal
 
 
 ### Line fields
