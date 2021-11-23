@@ -182,5 +182,5 @@ The following EDI Line staging fields are available on the lines page.
 **Configuration**           | Product dimensions – Configuration	                    | Pick route line > Configuration
 **Batch number**            | Tracking dimensions – Batch number	                    | Pick route line > Batch number
 **Serial number**           | Tracking dimensions – Serial number	                    | Pick route line > Serial number
-**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Pick route line > Inventory status
+**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](..SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Pick route line > Inventory status
 
