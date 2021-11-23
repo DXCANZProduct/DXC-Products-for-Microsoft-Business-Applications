@@ -36,7 +36,7 @@ Processing this document posts an arrival journal against the transfer order. <b
 Optional document settings also allows for posting Receive for the transfer order.
 
 ## Prerequisites
-The following setup is prerequisites for the Shipment advice - Transfer order
+The following setup is prerequisites for the Shipment receipt - Transfer order
 
 1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
@@ -63,7 +63,7 @@ Inbound files have the following three steps:
 
 ### Header checks for Shipment receipt
 Header checks are performed when:
-1. Importing Shipment advice file
+1. Importing Shipment receipt file
 2. Processing from import to staging
 3. Processing from staging to target
 
@@ -139,7 +139,7 @@ The following table describes each validation option for the EDI document. It al
 
 Rule Id	                | Details	                            | Info/Warning tolerance updates
 :--                     |:--                                    |:--
-**Batch Id update**     | Where the batch id received is different to batch id (example ABC123 vs. 123ABC) in the shipment advice. | Arrival journal posted with 3PL's batch
+**Batch Id update**     | Where the batch id received is different to batch id (example ABC123 vs. 123ABC) in the shipment receipt. | Arrival journal posted with 3PL's batch
 
 ## View staging table records
 To view the Shipment receipt - Transfer order staging records, go to **EDI > Documents > 3PL documents > Stock transfer receipt > Transfer order**. <br>
