@@ -29,6 +29,9 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Shipment advice - Return order
 
+The **Shipment advice - Return order** document enables companies to send inbound customer return order details to their 3PL warehouse. <br>
+In return the 3PL will confirm receipt of the stock with document **Shipment receipt - Return order** which will create an arrival journal with optional document settings to automatically post the arrival journal, post the delivery note and/or cancel remaining return quantity.
+
 ## Prerequisites
 The following setup is prerequisites for the Shipment advice - Return order
 
