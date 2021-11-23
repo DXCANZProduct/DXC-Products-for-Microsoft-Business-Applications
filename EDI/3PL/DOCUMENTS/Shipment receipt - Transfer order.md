@@ -61,7 +61,7 @@ Inbound files have the following three steps:
 ### Create document
 ![alt text](../../CORE/Image/Create_Document.png "Create document")
 
-### Header checks for Shipment advice
+### Header checks for Shipment receipt
 Header checks are performed when:
 1. Importing Shipment advice file
 2. Processing from import to staging
@@ -96,7 +96,7 @@ Example error for file not matching template: 'Segment '<xml' not found in EDI t
 If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 D365 arrival journal won't be posted for the staging record.
 
 #### Possible issues and fixes
-**Staging to target** errors for Shipment advice can be viewed in:
+**Staging to target** errors for Shipment receipt can be viewed in:
 - **EDI > Documents > 3PL documents > Stock transfer receipt > Transfer order** filtered to **Staging to target tatus** set to _Error_
 - **EDI > Document maintenance**, tab **3PL documents**, tile **Shipment receipt - Transfer order errors**
 - **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Shipment receipt - Transfer order**
@@ -114,7 +114,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 
 > Note: % contains staging data for the record
 
-### Staging line validation - Shipment advice
+### Staging line validation - Shipment receipt
 
 **Rule Id**                 | **Details**                                               | Error    
 :---                        |:---                                                       |:---              
