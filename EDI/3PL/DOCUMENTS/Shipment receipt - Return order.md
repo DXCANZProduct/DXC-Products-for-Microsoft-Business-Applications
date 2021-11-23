@@ -32,8 +32,11 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 The following subsections will describe how to view and process the Shipment receipt - Return order from the 3PL warehouse. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
 
-Processing this document posts an arrival journal against the return order. <br>
-Optional document settings also allows for posting the purchase order's product receipt for the registered stock.
+Processing this document creates an arrival journal against the return order. <br>
+Optional document settings also allows for:
+- Posting the return order's arrival journal
+- Posting the return order's delivery note for the registered stock.
+- Cancelling the remaining return quantity.
 
 ## Prerequisites
 The following setup is prerequisites for the Shipment receipt - Return order
@@ -58,7 +61,7 @@ The following setup is prerequisites for the Shipment receipt - Return order
 Inbound files have the following three steps:
 1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**.
 2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > 3PL documents > Stock transfer receipt > Return order**.
-3. **Staging to target** - The staging record/s is processed to target. If the EDI shipment receipt is succefully processed the D365 arrival journal will be posted for the return order. And if the document setting **Auto post receipt** is set to _Yes_, the purchase order's product receipt will also be posted.
+3. **Staging to target** - The staging record/s is processed to target. If the EDI shipment receipt is succefully processed the D365 arrival journal will be created for the return order. And if the document setting **Post delivery note** is set to _Yes_, the return order's delivery note will also be posted.
 
 ### Create document
 ![alt text](../../CORE/Image/Create_Document.png "Create document")
@@ -158,9 +161,8 @@ The following EDI fields are available on the list page.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and posted the arrival journal and optional product receipt. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 **Trading partner account**     | Warehouse account assigned to the staging record.
 **Trading partner GLN**         | The 3PL’s global location number is shown here.
-**Purchase order**              | Purchase order number being received.
-**Receipts list**               | Receipts list document used to receive.
-**Receipt date**                | Date the stock was received.
+**RMA number**          | Return order number being received.
+**Receipt date**        | Date the stock was received.
 **Journal**                     | Arrival journal used to receive the stock.
 **Created date and time**       | The date and time the selected record was created in the staging table.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
@@ -174,7 +176,7 @@ The following buttons are available on the **Shipment receipt - Return order**'s
 **Process all stock receipts**   | Process stock receipt for the staging records that have a **Staging to target status** set to _Not started_. 
 **Inbound files**               | View the inbound file record the selected staging record.
 **Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
-**Pick list registration**      | If the staging record has been completed it is possible to inquire on the pick list registration it updated from this button.
+**Return orders**               | If the EDI document has been completed it is possible to inquire on the return orders from this button.
 **Item arrival**                | If the EDI document has been completed it is possible to inquire on the item arrival journal from this button.
 **Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
 **Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
@@ -207,14 +209,10 @@ The following EDI Header staging fields are available on the header page.
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**Overview**</ins>		
-**Purchase order**          | Purchase order number being received	            | Used to find D365 source transaction
-**Receipts list**	        | Receipts list journal number	                    | Used to find D365 source transaction
-**Delivery note**           | 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note. If blank, the line’s delivery note/s will apply	                                                    | • Product receipt > Delivery note/Packing slip
-**Document date**           | Document date of 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note. If blank, the line’s delivery note/s will apply     | • Product receipt > Document date
-**Receipt date**            | Date the stock was received. If setting Auto post receipt is enabled, this will also be used in posting the delivery note.	| • Arrival journal > Posted on <br> • Product receipt > Product receipt date
+<ins>**Overview**</ins>	
+**RMA number**              | Return order number being received.               | Used to find D365 source transaction
+**Receipt date**            | Date the stock was received. If setting **Post delivery note** is enabled, this will also be used in posting the delivery note.	| • Arrival journal > Posted on <br> • Packing slip > Ship date
 **Journal**                 | Arrival journal created once processing is completed	| • Arrival journal > Journal
-
 
 ### Line fields
 The following EDI Line fields are available on the lines page. <br> 
@@ -222,17 +220,14 @@ The following EDI Line fields are available on the lines page. <br>
 **Field**                   | **Description**                                                           | **D365 line target**
 :---                        |:---                                                                       |:---
 **Item number**             | The D365 item number                                                      | Used for validation
-**Lot Id**                  | Lot id for the sales/transfer order line                                  | Used to find D365 source transaction line
-**Document date**           | Document date of 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note if header Document date is blank.        	| • Product receipt > Document date
-**Delivery note**           | 	3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note if header Delivery note is blank. Grouped by Delivery note, i.e. multiple delivery notes can be posted for the Arrival journal.	    | • Product receipt > Delivery note/Packing slip
-**Quantity**                | Received quantity	                                                        | • Arrival journal line > Quantity <br> • Product receipt line > Received
+**Lot Id**                  | Lot id for the return order line                                          | Used to find D365 source transaction line
+**Quantity**                | Received quantity. This must be a positive quantity.                      | • Arrival journal line > Quantity <br> • Packing slip journal line > Received
+**Disposition code**        | Specify how to process an item that is returned by a customer. Mapped value for [Disposition code mapping](../SETUP/3PL%20SETUP/Disposition%20code%20mapping.md)	| Arrival journal line > Disposition code
 **Colour**                  | Product dimensions – Colour	                                            | Used for validation
 **Size**                    | Product dimensions – Size	                                                | Used for validation
 **Style**                   | Product dimensions – Style	                                            | Used for validation
 **Configuration**           | Product dimensions – Configuration	                                    | Used for validation
-**Inventory status**        | Storage dimensions – Inventory status. Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)  | Used for validation
 **Batch number**            | Tracking dimensions – Batch number <br> If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch.                                       | • Arrival journal line > Batch number <br> • Product receipt line > Batch number
 **Serial number**           | Tracking dimensions – Serial number	                                    | • Arrival journal line > Serial number <br> • Product receipt line > Serial number
-**Manufacturing date**      | If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch. Doesn't update an existing D365 batch.	| • Batches > Manufacturing date
-**Expiration date**         | If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch. Doesn't update an already D365 batch.	| • Batches > Expiration date
+**Inventory status**        | Storage dimensions – Inventory status. Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)  | Used for validation
 
