@@ -128,8 +128,8 @@ The following EDI Header staging fields are available on the header page.
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
 <ins>**Voyage**</ins>		
-**Voyage**                  | Landed cost Voyage number
-<ins>*Status**</ins>		
+**Voyage**                  | Landed cost Voyage number     | Voyage > Voyage
+<ins>**Status**</ins>		
 **Group control number**    | Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.	
 **Received**                | Indicates if the Functional acknowledgement inbound has been received from the trading partner for the outbound document record.	
 
