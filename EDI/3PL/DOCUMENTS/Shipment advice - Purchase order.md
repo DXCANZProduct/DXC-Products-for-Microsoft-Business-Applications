@@ -132,7 +132,7 @@ The following EDI Header staging fields are available on the header page.
 **Delivery terms**          | Delivery terms for the purchase order     | Purchase order > Delivery terms
 **Expected delivery date**  | Expected receipt date from the purchase order	    | Purchase order > Delivery date
 **Status**                  | The status of the purchase as specified in the setting profile. Mapped value for new or cancel indicator.	
-<ins>*Status**</ins>		
+<ins>**Status**</ins>		
 **Group control number**    | Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.	
 **Received**                | Indicates if the Functional acknowledgement inbound has been received from the trading partner for the outbound document record.	
 
