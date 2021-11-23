@@ -29,13 +29,15 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Inventory adjustment - Transfer
 
-The following subsections will describe how to view and process the Inventory adjustment - Transfer from the 3PL warehouse. <br>
-Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
+A 3PL warehouse, setup as an EDI trading partner, can send inventory adjustments in order to adjust the company's D365 on-hand for their warehouse.
 
-Processing this document creates a transfer journal for the stock in the D365 warehouse transferring the stock between:
+Processing the **Inventory adjustment - Transfer** document creates a transfer journal for the stock in the D365 warehouse transferring the stock between:
 - Batches
 - Inventory statuses
 Optional document settings also allows for automatically posting the transfer journal and creating the batch if it doesn't exist in D365.
+
+The following subsections will describe how to view and process the **Inventory adjustment - Transfer** from the 3PL warehouse. <br>
+Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
 
 ## Prerequisites
 The following setup is prerequisites for the Inventory adjustment - Transfer
@@ -139,34 +141,30 @@ The following EDI fields are available on the list page.
 **EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
-**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and posted the arrival journal and optional product receipt. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created the transfer journal and optional posted the transfer journal. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 **Trading partner account**     | Warehouse account assigned to the staging record.
 **Trading partner GLN**         | The 3PL’s global location number is shown here.
-**Purchase order**              | Purchase order number being received.
-**Receipts list**               | Receipts list document used to receive.
-**Receipt date**                | Date the stock was received.
-**Journal**                     | Arrival journal used to receive the stock.
+**Journal**                     | Transfer journal used to process the stock adjustment.
 **Created date and time**       | The date and time the selected record was created in the staging table.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
 ### Buttons
-The following buttons are available on the **Shipment receipt - Purchase order**'s Action Pane, tab **Stock shipment receipt**.
+The following buttons are available on the **Inventory adjustment - Transfer**'s Action Pane, tab **Inventory adjustment - Transfer**.
 
 **Button**	                    | **Description**
 :---                            |:----
-**Process stock receipt**   | Process stock receipt for the selected record in the staging table.
-**Process all stock receipts**   | Process stock receipt for the staging records that have a **Staging to target status** set to _Not started_. 
+**Process inventory adjustment**| Process inventory adjustment for the selected record in the staging table.
+**Process all inventory adjustments**	| Process inventory adjustments for the staging records that have a **Staging to target status** set to _Not started_.
 **Inbound files**               | View the inbound file record the selected staging record.
 **Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
-**Purchase order**              | If the staging record has been completed it is possible to inquire on the related D365 purchase order.
-**Item arrival**                | If the EDI document has been completed it is possible to inquire on the item arrival journal from this button.
+**Transfer**                    | If the EDI document has been completed it is possible to inquire on the transfer journal from this button.
 **Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
 **Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
 **Reset Status**                | You can reset the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
 **Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
 
-The following buttons are available on the **Shipment receipt - Purchase order**'s Action Pane, tab **Acknowledgement**.
+The following buttons are available on the **Inventory adjustment - Transfer**'s Action Pane, tab **Acknowledgement**.
 The **Acknowledgement** tab is available on all incoming documents staging pages and enables the user to process or view the **Functional acknowledgement outbound** that has been created for the inbound document.
 
 **Button**	                    | **Description**
@@ -191,32 +189,22 @@ The following EDI Header staging fields are available on the header page.
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**Overview**</ins>		
-**Purchase order**          | Purchase order number being received	            | Used to find D365 source transaction
-**Receipts list**	        | Receipts list journal number	                    | Used to find D365 source transaction
-**Delivery note**           | 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note. If blank, the line’s delivery note/s will apply	                                                    | • Product receipt > Delivery note/Packing slip
-**Document date**           | Document date of 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note. If blank, the line’s delivery note/s will apply     | • Product receipt > Document date
-**Receipt date**            | Date the stock was received. If setting Auto post receipt is enabled, this will also be used in posting the delivery note.	| • Arrival journal > Posted on <br> • Product receipt > Product receipt date
-**Journal**                 | Arrival journal created once processing is completed	| • Arrival journal > Journal
-
 
 ### Line fields
 The following EDI Line fields are available on the lines page. <br> 
 
 **Field**                   | **Description**                                                           | **D365 line target**
 :---                        |:---                                                                       |:---
-**Item number**             | The D365 item number                                                      | Used for validation <br> Arrival journal line > Item number
-**Lot Id**                  | Lot id for the purchase order line                                        | Used to find D365 source transaction line
-**Document date**           | Document date of 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note if header Document date is blank.        	| • Product receipt > Document date
-**Delivery note**           | 	3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note if header Delivery note is blank. Grouped by Delivery note, i.e. multiple delivery notes can be posted for the Arrival journal.	    | • Product receipt > Delivery note/Packing slip
-**Quantity**                | Received quantity	                                                        | • Arrival journal line > Quantity <br> • Product receipt line > Received
-**Colour**                  | Product dimensions – Colour	                                            | Used for validation
-**Size**                    | Product dimensions – Size	                                                | Used for validation
-**Style**                   | Product dimensions – Style	                                            | Used for validation
-**Configuration**           | Product dimensions – Configuration	                                    | Used for validation
-**Inventory status**        | Storage dimensions – Inventory status. Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)  | Used for validation
-**Batch number**            | Tracking dimensions – Batch number <br> If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch.                                       | • Arrival journal line > Batch number <br> • Product receipt line > Batch number
-**Serial number**           | Tracking dimensions – Serial number	                                    | • Arrival journal line > Serial number <br> • Product receipt line > Serial number
-**Manufacturing date**      | If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch. Doesn't update an existing D365 batch.	| • Batches > Manufacturing date
-**Expiration date**         | If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch. Doesn't update an already D365 batch.	| • Batches > Expiration date
-
+**Item number**             | The D365 item id                                                          | Transfer journal line > Item number
+**Quantity**                | Inventory adjustment quantity	                                            | Transfer journal line > Quantity
+**Colour**                  | Product dimensions – Colour	                                            | Transfer journal line > Colour
+**Size**                    | Product dimensions – Size	                                                | Transfer journal line > Size
+**Style**                   | Product dimensions – Style	                                            | Transfer journal line > Style
+**Configuration**           | Product dimensions – Configuration	                                    | Transfer journal line > Configuration
+**Serial number**           | Tracking dimensions – Serial number	                                    | Transfer journal line > Serial number
+**From batch number**       | Tracking dimensions – Batch number	                                    | Transfer journal line > From batch number
+**To batch number**         | Tracking dimensions – Batch number. <br> If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch.	| Transfer journal line > To batch number
+**Manufacturing date**      | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an existing D365 batch.	| • Batches > Manufacturing date
+**Expiration date**         | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an already D365 batch.	| • Batches > Expiration date
+**Inventory status from**   | Storage dimensions – Inventory status. <br> Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Transfer journal line > From Inventory status
+**Inventory status to**     | Storage dimensions – Inventory status. <br> Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Transfer journal line > To Inventory status
