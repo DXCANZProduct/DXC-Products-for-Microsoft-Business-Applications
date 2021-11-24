@@ -215,3 +215,96 @@ The following EDI Line fields are available on the lines page. <br>
 **Manufacturing date**      | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an existing D365 batch.	| Batches > Manufacturing date
 **Expiration date**         | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an already D365 batch.	| Batches > Expiration date
 **Inventory status**   | Storage dimensions – Inventory status. <br> Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Movement journal line > Inventory status
+
+## EDI Inventory reconciliation
+Users can navigate to either of the following two optoins to review and process EDI Inventory Reconciliations.
+- EDI > Inquiries and reports > Inventory reconciliation
+- Via staging record - EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Reconciliation, filtering to applicable record and selecting button **Inventory reconciliation**
+
+This page is used to manually review variances and either accepting or rejecting. Once review is complete, the user will create the movement journal for the variances and mark the reconciliation as closed which will prevent any further changes and posting the movement journal.
+
+### Review variance lines
+1.	Review each of the lines and investigate the variances.
+2.	For each line, use the **Accept** or **Reject** button to manually manage which variance 
+3.	Additional notes can be added to validate the reason for the decision on the Line details FastTab.
+
+### Create journal
+The movement journal can either be created individually per line, or all accepted lines.
+
+#### Create journal individually
+1.	As each line is accepted, the user can select **Create journal**.
+2.	To create a new journal per line, select OK.
+3.	Else to add the variance to a single journal, select add to existing journal and select the journal to use.
+4.	If required, **Auto post journal** can be selected, else the movement journal will be created only.
+5.	Select OK
+
+#### Create journal for all lines
+1.	Once all lines have been updated to **Accepted** or **Rejected**, select all lines
+2.	Select **Create journal**
+3.	If required, **Auto post journal** can be selected, else the movement journal will be created only.
+4.	Select OK
+
+### Mark as closed
+A reconciliation journal must be closed to identify no further action is required.
+- Select **Mark as closed**. A dialog will appear allowing the user to decide what actions to take.
+- For **Pending lines** where variance hasn't been accepted/rejected: Accept or Reject all pending	lines
+- For **Accepted lines** that haven't been allocated to a journal:
+    - **Add unallocated lines to a journal** - If not selected, a D365 movement journal will not be created/posted for the line.
+    - **Add to existing journal** - Where **Add unallocated lines to a journal** is set to _Yes_, select _Yes_ to add accepted variances to an existing journal or _No_ to create a new journal
+    - If **Add to existing journal** was set to _Yes_, select the journal the accepted variances should be added to.
+- **Post all open journals** - Select _Yes_ to post all created but unposted movement journals.
+
+### View Inventory reconciliation records
+
+Users can navigate to either of the following two optoins to review and process EDI Inventory Reconciliations.
+- EDI > Inquiries and reports > Inventory reconciliation
+- Via staging record - EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Reconciliation, filtering to applicable record and selecting button **Inventory reconciliation**
+
+#### List page
+The following EDI fields are available on the list page.
+
+Field	                | Description
+:--                     |:--
+**Reconciliation Id**   | EDI Reconciliation table record id
+**Site**                | Site for the reconciliation
+**Warehouse**           | Warehouse for the reconciliation
+**Date**                | Date of the reconciliation
+**Lines**               | Number of lines included in the reconciliation
+**Variance lines**      | Number of lines with a variance between on-hand and counted in the reconciliation
+**Pending lines**       | Number of lines still pending in the reconciliation
+**Rejected lines**      | Number of lines rejected in the reconciliation
+**Closed**              | Identification of reconciliation status
+**Closed on**           | The date and time the selected record was closed
+**Closed by**           | The user who closed the reconciliation
+
+#### Header fields
+The following EDI Header staging fields are available on the header page.
+
+Field	                | Description                           | D365 header target
+:--                     |:--                                    |:--
+**Reconciliation Id**   | EDI Reconciliation table record id
+**Warehouse**           | Warehouse for the reconciliation      | Movement journal > Warehouse
+**Date**                | Date of the reconciliation            | Movement journal line > Date
+
+#### Line fields
+The following EDI Line fields are available on the lines page. <br> 
+
+**Field**                   | **Description**                                                           | **D365 line target**
+:---                        |:---                                                                       |:---
+**Item number**             | The D365 item id                                                          | Movement journal line > Item number
+**Colour**                  | Product dimensions – Colour	                                            | Movement journal line > Colour
+**Size**                    | Product dimensions – Size	                                                | Movement journal line > Size
+**Style**                   | Product dimensions – Style	                                            | Movement journal line > Style
+**Configuration**           | Product dimensions – Configuration	                                    | Movement journal line > Configuration
+**Inventory status**        | Storage dimensions – Inventory statu. <br> Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Movement journal line > Inventory status
+**Batch number**            | Tracking dimensions – Batch number	                                    | Movement journal line > Batch number
+**On-hand**                 | Physical D365 Inventory on-hand at end of specified date	
+**Quantity counted**        | 3PL Counted quantity from the file	
+**Quantity variance**       | Variance between D365 on-hand and 3PL counted quantity	                | Movement journal line > Quantity
+**Status**                  | The current status of the line. <br> Options include: <br> • **Pending** – The line should be investigated and accepted or rejected. <br> • **Accepted** – The line variance has been accepted and arrival journal should be created and posted. Lines with no variances are automatically marked as accepted. <br> • **Rejected** – The line variance has been rejected. Please add notes to document the reason the line was rejected.	
+**Journal**                 | The journal created for accepted lines	                                | Populated by Movement journal > Journal
+**Posted**                  | Identify that the journal has been posted	                                | Populated by Movement journal > Posted
+
+> Note: 
+> 1.	If the Inventory journal has been created but not posted, and reconciliation line is changed to rejected: The applicable line must be manually deleted from the already created inventory journal.
+> 2.	Movement journals are utilised to update the stock on-hand with the variance calculated. This means the open movement journal doesn’t lock the applicable stock for creating additional count journals.
