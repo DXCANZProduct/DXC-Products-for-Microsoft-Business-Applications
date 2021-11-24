@@ -66,42 +66,38 @@ Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 ### 3PL setup
 
 #### Mappings assigned on 3PL Trading partner
-Used to map D365/EDI value to 3PL's value and assigned on 3PL Trading partner: <br>
-
-- 3PL setup and which EDI document (and field) it is mapped to/from: **EDI > Setup > 3PL setup** <br>
-	- [Inventory journal name mapping](../SETUP/3PL%20SETUP/Inventory%20journal%20name%20mapping.md)
-		- Inventory adjustment - Counting (InventJournalNameIdExternal)
-		- Inventory adjustment - Movement (InventJournalNameIdExternal)
-	- [Disposition code mapping](../SETUP/3PL%20SETUP/Disposition%20code%20mapping.md)
-		- Shipment receipt - Return order (DispositionCodeExternal)
-	- [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)
-		- Picking list (InventStatusId)
-		- Picking list registration (InventStatusId)
-		- Shipment advice - Purchase order (InventStatusId)
-		- Shipment advice - Transfer order (InventStatusId)
-		- Shipment advice - Return order (InventStatusId)
-		- Shipment advice - Voyage (InventStatusId)
-		- Shipment receipt - Purchase order (InventStatusId)
-		- Shipment receipt - Transfer order (InventStatusId)
-		- Shipment receipt - Return order (InventStatusId)
-		- Shipment receipt - Voyage (InventStatusId)
-		- Inventory adjustment - Transfer (InventStatusIdFrom and InventStatusIdTo)
-		- Inventory adjustment - Counting (InventStatusId)
-		- Inventory adjustment - Reconciliation (InventStatusId)
-		- Inventory adjustment - Movement (InventStatusId)
-	- [Transaction direction mapping](../SETUP/3PL%20SETUP/Transaction%20direction%20mapping.md)
-		- Inventory adjustment - Movement (TransactionDirection)
-	- [Order purpose group](../SETUP/3PL%20SETUP/Order%20purpose%20group.md)
-		- Picking list (OrderPurpose)
+3PL setup and which EDI document (and field) it is mapped to/from: **EDI > Setup > 3PL setup** <br>
+- [Inventory journal name mapping](../SETUP/3PL%20SETUP/Inventory%20journal%20name%20mapping.md)
+	- Inventory adjustment - Counting (InventJournalNameIdExternal)
+	- Inventory adjustment - Movement (InventJournalNameIdExternal)
+- [Disposition code mapping](../SETUP/3PL%20SETUP/Disposition%20code%20mapping.md)
+	- Shipment receipt - Return order (DispositionCodeExternal)
+- [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)
+	- Picking list (InventStatusId)
+	- Picking list registration (InventStatusId)
+	- Shipment advice - Purchase order (InventStatusId)
+	- Shipment advice - Transfer order (InventStatusId)
+	- Shipment advice - Return order (InventStatusId)
+	- Shipment advice - Voyage (InventStatusId)
+	- Shipment receipt - Purchase order (InventStatusId)
+	- Shipment receipt - Transfer order (InventStatusId)
+	- Shipment receipt - Return order (InventStatusId)
+	- Shipment receipt - Voyage (InventStatusId)
+	- Inventory adjustment - Transfer (InventStatusIdFrom and InventStatusIdTo)
+	- Inventory adjustment - Counting (InventStatusId)
+	- Inventory adjustment - Reconciliation (InventStatusId)
+	- Inventory adjustment - Movement (InventStatusId)
+- [Transaction direction mapping](../SETUP/3PL%20SETUP/Transaction%20direction%20mapping.md)
+	- Inventory adjustment - Movement (TransactionDirection)
+- [Order purpose group](../SETUP/3PL%20SETUP/Order%20purpose%20group.md)
+	- Picking list (OrderPurpose)
 
 #### Journal names assigned on 3PL Trading partner
-
-- Inventory management setup and which EDI document used for: <br>
-	- Journal name with **Journal type** set to _Item arrival_. To be used to register stock for incoming stock receipts: **Inventory management > Setup > Journal names > Warehouse management** <br> 
-		-  Shipment receipt - Purchase order
-		-  Shipment receipt - Transfer order
-		-  Shipment receipt - Return order
-		-  Shipment receipt - Voyage
+Journal name with **Journal type** set to _Item arrival_. To be used to register stock for incoming stock receipts: **Inventory management > Setup > Journal names > Warehouse management** <br> 
+	-  Shipment receipt - Purchase order
+	-  Shipment receipt - Transfer order
+	-  Shipment receipt - Return order
+	-  Shipment receipt - Voyage
 
 #### 3PL Document type setup
 Setup Document types which will be assigned on 3PL Trading partner. <br>
