@@ -306,5 +306,5 @@ The following EDI Line fields are available on the lines page. <br>
 **Posted**                  | Identify that the journal has been posted	                                | Populated by Movement journal > Posted
 
 > Note: 
-> 1.	If the Inventory journal has been created but not posted, and reconciliation line is changed to rejected: The applicable line must be manually deleted from the already created inventory journal.
+> 1.	If the Inventory journal has been created but not posted, and reconciliation line is changed to rejected: The applicable movement journal line must be manually deleted from the already created inventory journal.
 > 2.	Movement journals are utilised to update the stock on-hand with the variance calculated. This means the open movement journal doesn’t lock the applicable stock for creating additional count journals.
