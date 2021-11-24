@@ -159,6 +159,7 @@ The following EDI fields are available on the list page.
 **Trading partner GLN**         | The 3PL’s global location number is shown here.
 **Journal**                     | Movement journal used to process the stock adjustment.
 **External type Id**            | Used to identify the journal name to be used. Mapped value for [Inventory journal name mapping](../SETUP/3PL%20SETUP/Inventory%20journal%20name%20mapping.md). If field is blank the Movement journal set as _Default_ in Inventory journal mapping, will be used.
+**Transaction date**            | 3PL’s transaction date for the stock movement.
 **Created date and time**       | The date and time the selected record was created in the staging table.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
@@ -205,7 +206,7 @@ The following EDI Header staging fields are available on the header page.
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
 <ins>**Overview**</ins>		
 **External type Id**        | Used to identify the journal name to be used. Mapped value for [Inventory journal name mapping](../SETUP/3PL%20SETUP/Inventory%20journal%20name%20mapping.md). If field is blank the Movement journal set as _Default_ in Inventory journal mapping, will be used.    |	Movement journal > Name
-
+**Transaction date**        | Transaction date for the stock inventory adjustment movement  | If document setting **Posting date** is set to _EDI Transaction date_: Movement journal > Posting date 
 
 ### Line fields
 The following EDI Line fields are available on the lines page. <br> 
@@ -213,7 +214,8 @@ The following EDI Line fields are available on the lines page. <br>
 **Field**                   | **Description**                                                           | **D365 line target**
 :---                        |:---                                                                       |:---
 **Item number**             | The D365 item id                                                          | Movement journal line > Item number
-**Quantity counted**        | 3PL's on hand quantity. <br> Note: Quantity in the staging table is the counted quantity.  The quantity in the movement journal is the variance between counted and D365 current on-hand.	| 3PL Quantity minus D365 Quantity = Movement journal line > Quantity
+**Quantity counted**        | Variance quantity	| [Transaction direction](../SETUP/3PL%20SETUP/Transaction%20direction%20mapping.md) mapped to: <br> • In: Quantity <br> • Out: -Quantity <br> Movement journal line > Quantity
+**Transaction direction**   | Indicates direction of variance quantity. Mapped to an In / Out direction in [Transaction direction mapping](../SETUP/3PL%20SETUP/Transaction%20direction%20mapping.md). <br> Blank is an acceptable value if mapped and assigned to the trading partner.
 **Colour**                  | Product dimensions – Colour	                                            | Movement journal line > Colour
 **Size**                    | Product dimensions – Size	                                                | Movement journal line > Size
 **Style**                   | Product dimensions – Style	                                            | Movement journal line > Style
