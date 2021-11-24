@@ -29,8 +29,12 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Inventory adjustment - Movement
 
-A 3PL warehouse, setup as an EDI trading partner, can send an **Inventory adjustment - Movement** document which will compare the 3PL's stock to D365 stock for the warehouse.
-If any variance, the inventory adjustment(s) will be in the form of a D365 movement journal.
+A 3PL warehouse, setup as an EDI trading partner, can send an **Inventory adjustment - Movement** document which will inform the company of the required movement quantity for D365 stock for the warehouse. There is no comparison to D365 on-hand, the document's movement quantity will be used in the D365 movement journal. <br>
+Document settings will also specify which posting date to use for the movement journal:
+- EDI transaction date, or
+- Today's date
+
+Document settings can also be used to automatically post the movement journal and/or allow the 3PL to create a new D365 batch.
 
 The following subsections will describe how to view and process the **Inventory adjustment - Movement** from the 3PL warehouse. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
@@ -38,14 +42,24 @@ Viewing the [Staging table records](#view-staging-table-records) will also be di
 ## Prerequisites
 The following setup is prerequisites for the Inventory adjustment - Movement
 
+### 3PL setup
+EDI > Setup > 3PL setup
 1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
 1. Create [Inventory journal name mapping](../SETUP/3PL%20SETUP/Inventory%20journal%20name%20mapping.md) to map the 3PL's values to D365 inventory journals.
+1. Create [Transaction direction mapping](../SETUP/3PL%20SETUP/Transaction%20direction%20mapping.md) to map the 3PL's values to EDI transaction directions.
+
+### Document type setup
+EDI > Setup > Document types: Inventory adjustment - Movement
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
 1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Movement.md) for the document.
+
+### Trading partners
+EDI > Setup > Trading partners
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the 3PL setup to the warehouse trading partner's options:
     -  Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
     -  Inventory journal name mapping: Options from **EDI > Setup > 3PL setup > Inventory journal name mapping**
+    -  Transaction direction mapping: Options from **EDI > Setup > 3PL setup > Transaction direction mapping**
 1. Add and enable the **Inventory adjustment - Movement** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
