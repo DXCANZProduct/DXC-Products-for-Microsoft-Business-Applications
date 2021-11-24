@@ -43,9 +43,17 @@ Viewing the [Staging table records](#view-staging-table-records) will also be di
 ## Prerequisites
 The following setup is prerequisites for the Inventory adjustment - Transfer
 
+### 3PL setup
+EDI > Setup > 3PL setup
 1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
+
+### Document type setup
+EDI > Setup > Document types: Inventory adjustment - Transfer
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
 1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Transfer.md) for the document.
+
+### Trading partners
+EDI > Setup > Trading partners
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the 3PL setup to the warehouse trading partner's options:
     -  Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
