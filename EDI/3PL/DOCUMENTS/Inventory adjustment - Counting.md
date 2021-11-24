@@ -139,10 +139,11 @@ The following EDI fields are available on the list page.
 **EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
-**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created the movement journal and optional posted the movement journal. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created the movement journal and optionally posted the movement journal. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 **Trading partner account**     | Warehouse account assigned to the staging record.
 **Trading partner GLN**         | The 3PL’s global location number is shown here.
 **Journal**                     | Movement journal used to process the stock adjustment.
+**External type Id**            | Used to identify the journal name to be used. Mapped value for [Inventory journal name mapping](../SETUP/3PL%20SETUP/Inventory%20journal%20name%20mapping.md). If field is blank the Movement journal set as _Default_ in Inventory journal mapping, will be used.
 **Created date and time**       | The date and time the selected record was created in the staging table.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
@@ -155,7 +156,7 @@ The following buttons are available on the **Inventory adjustment - Counting**'s
 **Process all inventory adjustments**	| Process inventory adjustments for the staging records that have a **Staging to target status** set to _Not started_.
 **Inbound files**               | View the inbound file record the selected staging record.
 **Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading%20partner.md) page.
-**Transfer**                    | If the EDI document has been completed it is possible to inquire on the transfer journal from this button.
+**Movement**                    | If the EDI document has been completed it is possible to inquire on the movement journal from this button.
 **Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
 **Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
 **Reset Status**                | You can reset the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
@@ -181,12 +182,15 @@ The following EDI Header staging fields are available on the header page.
 **EDI number**          | EDI Staging table record id                           | 
 **Company account**     | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here.   | 
-**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created the movement journal and optional posted the movement journal. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created the movement journal and optionally posted the movement journal. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 <ins>**Reset status**</ins>		
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
+<ins>**Overview**</ins>		
+**External type Id**        | Used to identify the journal name to be used. Mapped value for [Inventory journal name mapping](../SETUP/3PL%20SETUP/Inventory%20journal%20name%20mapping.md). If field is blank the Movement journal set as _Default_ in Inventory journal mapping, will be used.    |	Movement journal > Name
+
 
 ### Line fields
 The following EDI Line fields are available on the lines page. <br> 
@@ -194,15 +198,14 @@ The following EDI Line fields are available on the lines page. <br>
 **Field**                   | **Description**                                                           | **D365 line target**
 :---                        |:---                                                                       |:---
 **Item number**             | The D365 item id                                                          | Movement journal line > Item number
-**Quantity**                | Inventory adjustment quantity	                                            | Movement journal line > Quantity
+**Quantity counted**        | 3PL's on hand quantity. <br> Note: Quantity in the staging table is the counted quantity.  The quantity in the movement journal is the variance between counted and D365 current on-hand.	| 3PL Quantity minus D365 Quantity = Movement journal line > Quantity
 **Colour**                  | Product dimensions – Colour	                                            | Movement journal line > Colour
 **Size**                    | Product dimensions – Size	                                                | Movement journal line > Size
 **Style**                   | Product dimensions – Style	                                            | Movement journal line > Style
 **Configuration**           | Product dimensions – Configuration	                                    | Movement journal line > Configuration
 **Serial number**           | Tracking dimensions – Serial number	                                    | Movement journal line > Serial number
-**From batch number**       | Tracking dimensions – Batch number	                                    | Movement journal line > From batch number
-**To batch number**         | Tracking dimensions – Batch number. <br> If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch.	| Transfer journal line > To batch number
+**Batch number**            | Tracking dimensions – Batch number. <br> If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch.	                 | Movement journal line > Batch number
 **Manufacturing date**      | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an existing D365 batch.	| • Batches > Manufacturing date
 **Expiration date**         | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an already D365 batch.	| • Batches > Expiration date
-**Inventory status from**   | Storage dimensions – Inventory status. <br> Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Transfer journal line > From Inventory status
-**Inventory status to**     | Storage dimensions – Inventory status. <br> Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Transfer journal line > To Inventory status
+**Inventory status**   | Storage dimensions – Inventory status. <br> Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Movement journal line > Inventory status
+**Location**                | Location of counted stock	                                                | Movement journal line > Location
