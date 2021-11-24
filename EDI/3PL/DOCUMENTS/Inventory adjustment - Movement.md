@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI 3PL]
-description: [EDI 3PL Documents - Inventory adjustment - Counting]
+description: [EDI 3PL Documents - Inventory adjustment - Movement]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 24/11/2021
@@ -27,26 +27,26 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Inventory adjustment - Counting
+# Inventory adjustment - Movement
 
-A 3PL warehouse, setup as an EDI trading partner, can send an **Inventory adjustment - Counting** document which will compare the 3PL's stock to D365 stock for the warehouse.
+A 3PL warehouse, setup as an EDI trading partner, can send an **Inventory adjustment - Movement** document which will compare the 3PL's stock to D365 stock for the warehouse.
 If any variance, the inventory adjustment(s) will be in the form of a D365 movement journal.
 
-The following subsections will describe how to view and process the **Inventory adjustment - Counting** from the 3PL warehouse. <br>
+The following subsections will describe how to view and process the **Inventory adjustment - Movement** from the 3PL warehouse. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
 
 ## Prerequisites
-The following setup is prerequisites for the Inventory adjustment - Counting
+The following setup is prerequisites for the Inventory adjustment - Movement
 
 1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
 1. Create [Inventory journal name mapping](../SETUP/3PL%20SETUP/Inventory%20journal%20name%20mapping.md) to map the 3PL's values to D365 inventory journals.
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Counting.md) for the document.
+1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Movement.md) for the document.
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the 3PL setup to the warehouse trading partner's options:
     -  Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
     -  Inventory journal name mapping: Options from **EDI > Setup > 3PL setup > Inventory journal name mapping**
-1. Add and enable the **Inventory adjustment - Counting** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+1. Add and enable the **Inventory adjustment - Movement** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
     - Search mask
@@ -54,7 +54,7 @@ The following setup is prerequisites for the Inventory adjustment - Counting
 ## Processing
 Inbound files have the following three steps:
 1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**.
-2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Counting**.
+2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Movement**.
 3. **Staging to target** - The staging record/s is processed to target. If the EDI document is succefully processed the D365 movement journal will be created. And if the document setting **Auto post journal** is set to _Yes_, the movement journal will also be automatically posted.
 
 ### Create document
@@ -96,9 +96,9 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 #### Possible issues and fixes
 **Staging to target** errors for Inventory adjustment can be viewed in:
-- **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Counting** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **3PL documents**, tile **Inventory adjustment - Counting errors**
-- **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Inventory adjustment - Counting**
+- **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Movement** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **3PL documents**, tile **Inventory adjustment - Movement errors**
+- **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Inventory adjustment - Movement**
 
 At this step the issues are usually around mapping/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
@@ -128,7 +128,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 
 
 ## View staging table records
-To view the Inventory adjustment - Counting staging records, go to **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Counting**. <br>
+To view the Inventory adjustment - Movement staging records, go to **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Movement**. <br>
 Use this page to review staging and process the EDI documents, create the Movement journal and optionally post the Movement journal.
 
 ### List page
@@ -148,7 +148,7 @@ The following EDI fields are available on the list page.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 
 ### Buttons
-The following buttons are available on the **Inventory adjustment - Counting**'s Action Pane, tab **Inventory adjustment - Counting**.
+The following buttons are available on the **Inventory adjustment - Movement**'s Action Pane, tab **Inventory adjustment - Movement**.
 
 **Button**	                    | **Description**
 :---                            |:----
@@ -163,7 +163,7 @@ The following buttons are available on the **Inventory adjustment - Counting**'s
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
 **Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
 
-The following buttons are available on the **Inventory adjustment - Counting**'s Action Pane, tab **Acknowledgement**.
+The following buttons are available on the **Inventory adjustment - Movement**'s Action Pane, tab **Acknowledgement**.
 The **Acknowledgement** tab is available on all incoming documents staging pages and enables the user to process or view the **Functional acknowledgement outbound** that has been created for the inbound document.
 
 **Button**	                    | **Description**
