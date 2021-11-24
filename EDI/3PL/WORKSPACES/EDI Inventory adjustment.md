@@ -31,14 +31,16 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ## EDI Inventory adjustment
 
-The EDI Inventory adjustment workspace provides a quick and easy way to view and mange open 3PL inventory adjustments.. <br>
+The EDI Inventory adjustment workspace provides a quick and easy way to view and mange open 3PL inventory adjustments. <br>
+It is useful where companies have decided not to automatically post the D365 target journal and manually review before posting. <br>
 Users can access the workspace by navigating to **EDI > 3PL workspaces > EDI Inventory adjustment**. <br> 
 
 The following subsections will discuss the various tiles and tabs available on the workspace.
 
 ### Open reconciliations
-From within the workspace it is possible to view and even process information relating to the selected records. <br>
-Includes the ability to **Open reconciliation** or **Mark as closed** from Workspace.
+Access by selecting **Open reconciliations** tile or **Reconciliation** tab. <br>
+From within the workspace it is possible to view and even process open EDI Inventory reconciliations created by **Inventory adjustment - Reconciliation** records. <br>
+Includes the ability to **Open reconciliation** or **Mark as closed** directly within the Workspace.
 
 Field	                | Description
 :--                   |:--
@@ -53,33 +55,43 @@ Field	                | Description
 **Variance lines**    |	Number of variance lines
 
 
-3.4.3.2.2	Transfer
-From within the workspace it is possible to view and even process information relating to the selected records. Ability to open the inventory journal from the Workspace.
-Field	Description
-Company	Company account for the reconciliation record
-Journal	Inventory journal id
-Site	Site
-Warehouse	Warehouse
-Lines	Total number of lines
+### Transfer
+Access by selecting **Open transfer journals** tile or **Transfer** tab. <br>
+From within the workspace it is possible to view and even process unposted transfer journals relating to **Inventory adjustment - Transfer** records. <br>
+Includes the ability to open the transfer **Journal** from the Workspace.
+
+Field	                | Description
+:--                   |:--
+**Company**           | Company account for the transfer adjustment record
+**Journal**           |	Transfer journal id
+**Site**              |	Site
+**Warehouse**         |	Warehouse
+**Lines**             |	Total number of lines
 
  
-3.4.3.2.3	Counting
-From within the workspace it is possible to view and even process information relating to the selected records. Ability to open the inventory movement journal from the Workspace.
-Field	Description
-Company	Company account for the reconciliation record
-Journal	Inventory journal id
-Site	Site
-Warehouse	Warehouse
-Lines	Total number of lines
+### Counting
+Access by selecting **Open count journals** tile or **Counting** tab. <br>
+From within the workspace it is possible to view and even process unposted movement journals relating to **Inventory adjustment - Counting** records. <br>
+Includes the ability to open the movement **Journal** from the Workspace.
 
-3.4.3.2.4	Movement
-From within the workspace it is possible to view and even process information relating to the selected records. Ability to open the inventory movement journal from the Workspace.
-Field	Description
-Company	Company account for the reconciliation record
-Journal	Inventory journal id
-Site	Site
-Warehouse	Warehouse
-Date	Stock adjustment date
-Lines	Total number of lines
+Field	                | Description
+:--                   |:--
+**Company**           | Company account for the counting adjustment record
+**Journal**           |	Movement journal id
+**Site**              |	Site
+**Warehouse**         |	Warehouse
+**Lines**             |	Total number of lines
 
+### Movement
+Access by selecting **Open movement journals** tile or **Movement** tab. <br>
+From within the workspace it is possible to view and even process unposted movement journals relating to **Inventory adjustment - Movement** records. <br>
+Includes the ability to open the movement **Journal** from the Workspace.
 
+Field	                | Description
+:--                   |:--
+**Company**           | Company account for the movement adjustment record
+**Journal**           |	Movement journal id
+**Site**              |	Site
+**Warehouse**         |	Warehouse
+**Date**              | Movement date (from EDI document)
+**Lines**             |	Total number of lines
