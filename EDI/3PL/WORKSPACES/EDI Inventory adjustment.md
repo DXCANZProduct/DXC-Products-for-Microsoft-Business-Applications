@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI Customer]
-description: [EDI Customer workspaces - EDI Sales order processing]
+title: [EDI 3PL]
+description: [EDI 3PL workspaces - EDI Inventory adjustment]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 5/11/2021
+ms.date: 24/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,53 +29,57 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Workspaces
 
-## EDI Sales order processing
+## EDI Inventory adjustment
 
-The EDI sales order processing workspace provides a quick and easy way to view the status of all EDI sales orders. <br>
-Users can access the **EDI Sales order processing workspace** by navigating to **EDI > Customer workspaces > EDI Sales order processing**. <br> 
-The workspace is also used for manually approving Customer purchase order changes where the **Processing method** is set to _Manual_.
+The EDI Inventory adjustment workspace provides a quick and easy way to view and mange open 3PL inventory adjustments.. <br>
+Users can access the workspace by navigating to **EDI > 3PL workspaces > EDI Inventory adjustment**. <br> 
 
-The following subsections will discuss the various tabs available on the workspace.
+The following subsections will discuss the various tiles and tabs available on the workspace.
 
-### Warning/Error
-Sales order warnings and errors are identified based on the validation profiles setup for the Customer purchase order document at **EDI > Setup > Document types** and assigned to the incoming document when setting up the customer trading partner.
-> Note: For further information relating to validation refer to the [validation setup](../SETUP/Validation%20profiles.md) and [validation processing](../DOCUMENTS/Customer%20purchase%20order.md#step-3---staging-to-target) sections.
-
-> Note: If a sales order has both errors and warning validations, it will be displayed in the error list only.
-
-In addition, from within the workspace it is possible to view and even process information relating to the selected records
-Field	            | Description
-:--               |:--
-**Log**           | Select the **Log** button to view the validation errors that have occurred for the order. 
-**Validate**      | Select the **Validate** button to check validation rules for a sales order. 
-
-### Pending PO changes
-Customer purchase order changes that are set to be processed manually (**Processing method** on [Document setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20change.md) is set to _Manual_), will be available here for manual approval. Whether a POA is required can be set via the Customer purchase order change’s Document setting **Don’t send POA for changes**.
-
-Field	            | Description
-:--               |:--
-**Approve**       | Approve the Customer purchase order change EDI record. The applicable sales order will be updated with all the changes. If a Purchase order acknowledgement is required, an **Accept** POA staging record will be created as well.
-**Reject**        | Reject the Customer purchase order change EDI record. The applicable sales order will not be updated with any of the changes. If a Purchase order acknowledgement is required, a **Reject** staging record will be created as well. The Reject POA will contain the Sales order as-is, with a POA header response of Reject.
-
-### Pending POA
-EDI orders will be placed on hold when a purchase order acknowledgement (POA) is required for the customer. 
-> Note: Where a POA is required for a Customer, the Customer purchase order acknowledgment document must be setup on the Trading partner record and the **Lock order** field in the [POA document settings profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md) must be active. This hold will be released once the POA has been sent to the Customer.
-
-From within the workspace it is possible to view and even process information relating to the selected records
+### Open reconciliations
+From within the workspace it is possible to view and even process information relating to the selected records. <br>
+Includes the ability to **Open reconciliation** or **Mark as closed** from Workspace.
 
 Field	                | Description
 :--                   |:--
-**Acknowledgement**   |	Select the **Acknowledgement** button to review order details for the POA.
-**Send to EDI**       | Select the **Send to EDI** button to create Customer purchase order acknowledgment staging table record.
+**Company**           | Company account for the reconciliation record
+**Date**              | Reconciliation date
+**Reconciliation id** |	EDI Inventory reconciliation id
+**Site**              |	Site
+**Warehouse**         |	Warehouse
+**Lines**             | Total number of lines
+**Pending lines**     |	Number of pending lines
+**Rejected lines**    |	Number of rejected lines
+**Variance lines**    |	Number of variance lines
 
-### Pending POA confirm
-EDI orders will be placed on hold when a Purchase order confirmation must be received from the customer following receipt of a POA. 
-Note: Purchase order confirmation requirements are setup via **PO confirmation required** field on the Customer [POA document settings profiles](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md).
 
-### Open consignment notes
-Open consignments will be available where the [Customer advanced shipping notice document setting profile](../SETUP/SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)'s **ASN strategy** is set to _consolidated_ packing slips. Where this is the case, a consolidated consignment should be sent at the end of each day to coincide with the dispatch of the goods.
+3.4.3.2.2	Transfer
+From within the workspace it is possible to view and even process information relating to the selected records. Ability to open the inventory journal from the Workspace.
+Field	Description
+Company	Company account for the reconciliation record
+Journal	Inventory journal id
+Site	Site
+Warehouse	Warehouse
+Lines	Total number of lines
 
-Field	            | Description
-:--               |:--
-**Send to EDI**   | Select the **Send to EDI** button to create a Customer advanced shipping notice staging table record for the consignment.
+ 
+3.4.3.2.3	Counting
+From within the workspace it is possible to view and even process information relating to the selected records. Ability to open the inventory movement journal from the Workspace.
+Field	Description
+Company	Company account for the reconciliation record
+Journal	Inventory journal id
+Site	Site
+Warehouse	Warehouse
+Lines	Total number of lines
+
+3.4.3.2.4	Movement
+From within the workspace it is possible to view and even process information relating to the selected records. Ability to open the inventory movement journal from the Workspace.
+Field	Description
+Company	Company account for the reconciliation record
+Journal	Inventory journal id
+Site	Site
+Warehouse	Warehouse
+Date	Stock adjustment date
+Lines	Total number of lines
+
 
