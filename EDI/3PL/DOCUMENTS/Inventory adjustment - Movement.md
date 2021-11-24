@@ -215,7 +215,7 @@ The following EDI Line fields are available on the lines page. <br>
 :---                        |:---                                                                       |:---
 **Item number**             | The D365 item id                                                          | Movement journal line > Item number
 **Quantity counted**        | Variance quantity	| [Transaction direction](../SETUP/3PL%20SETUP/Transaction%20direction%20mapping.md) mapped to: <br> • In: Quantity (used as-is) <br> • Out: **-** Quantity <br> Movement journal line > Quantity
-**Transaction direction**   | Indicates direction of variance quantity. Mapped to an In / Out direction in [Transaction direction mapping](../SETUP/3PL%20SETUP/Transaction%20direction%20mapping.md). <br> Blank is an acceptable value if mapped and assigned to the trading partner.
+**Transaction direction**   | Indicates direction of variance quantity. <br> Mapped to an In / Out direction in [Transaction direction mapping](../SETUP/3PL%20SETUP/Transaction%20direction%20mapping.md). <br> Blank is an acceptable value if mapped and assigned to the trading partner.
 **Colour**                  | Product dimensions – Colour	                                            | Movement journal line > Colour
 **Size**                    | Product dimensions – Size	                                                | Movement journal line > Size
 **Style**                   | Product dimensions – Style	                                            | Movement journal line > Style
