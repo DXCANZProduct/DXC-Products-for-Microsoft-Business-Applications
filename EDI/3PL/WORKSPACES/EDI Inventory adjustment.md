@@ -54,7 +54,6 @@ Field	                | Description
 **Rejected lines**    |	Number of rejected lines
 **Variance lines**    |	Number of variance lines
 
-
 ### Transfer
 Access by selecting **Open transfer journals** tile or **Transfer** tab. <br>
 From within the workspace it is possible to view and even process unposted transfer journals relating to **Inventory adjustment - Transfer** records. <br>
@@ -67,7 +66,6 @@ Field	                | Description
 **Site**              |	Site
 **Warehouse**         |	Warehouse
 **Lines**             |	Total number of lines
-
  
 ### Counting
 Access by selecting **Open count journals** tile or **Counting** tab. <br>
