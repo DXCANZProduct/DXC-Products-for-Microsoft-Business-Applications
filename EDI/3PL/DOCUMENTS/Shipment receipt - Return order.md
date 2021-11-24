@@ -41,17 +41,25 @@ Optional document settings also allows for:
 ## Prerequisites
 The following setup is prerequisites for the Shipment receipt - Return order
 
+### 3PL setup
+EDI > Setup > 3PL setup
 1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
-2. Create [Disposition code mapping](../SETUP/3PL%20SETUP/Disposition%20code%20mapping.md) to map the 3PL's values to D365 disposition codes.
-3. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-4. Create [Setting profile](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Return%20order.md) for the document.
-5. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Return%20order.md) for the document.
-6. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
-7. Assign the 3PL setup to the warehouse trading partner's options:
+1. Create [Disposition code mapping](../SETUP/3PL%20SETUP/Disposition%20code%20mapping.md) to map the 3PL's values to D365 disposition codes.
+
+### Document type setup
+EDI > Setup > Document types: Shipment receipt - Return order
+1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
+1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Return%20order.md) for the document.
+1. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Return%20order.md) for the document.
+
+### Trading partners
+EDI > Setup > Trading partners
+1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
+1. Assign the 3PL setup to the warehouse trading partner's options:
     -  Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
     -  Item arrival: Select item arrival journal to use for processing inventory receipts. Options from **Inventory management > Setup > Journal names > Warehouse management**
     -  Disposition code mapping: Options from **EDI > Setup > 3PL setup > Disposition code mapping**
-8. Add and enable the **Shipment receipt - Return order** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+1. Add and enable the **Shipment receipt - Return order** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
     - Validation profile
