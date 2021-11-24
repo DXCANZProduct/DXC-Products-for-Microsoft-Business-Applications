@@ -205,7 +205,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Configuration**           | Product dimensions – Configuration	                                    | Movement journal line > Configuration
 **Serial number**           | Tracking dimensions – Serial number	                                    | Movement journal line > Serial number
 **Batch number**            | Tracking dimensions – Batch number. <br> If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch.	                 | Movement journal line > Batch number
-**Manufacturing date**      | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an existing D365 batch.	| • Batches > Manufacturing date
-**Expiration date**         | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an already D365 batch.	| • Batches > Expiration date
+**Manufacturing date**      | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an existing D365 batch.	| Batches > Manufacturing date
+**Expiration date**         | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an already D365 batch.	| Batches > Expiration date
 **Inventory status**   | Storage dimensions – Inventory status. <br> Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Movement journal line > Inventory status
 **Location**                | Location of counted stock	                                                | Movement journal line > Location
