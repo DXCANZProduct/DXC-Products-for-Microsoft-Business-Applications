@@ -41,10 +41,18 @@ Optional document settings also allow posting the sales order's delivery note an
 ## Prerequisites
 The following setup is prerequisites for the picking list registration
 
+### 3PL setup
+EDI > Setup > 3PL setup
 1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
+
+### Document type setup
+EDI > Setup > Document types: Picking list registration
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
 1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Picking%20list%20registration.md) for the document.
 1. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Picking%20list%20registration.md) for the document.
+
+### Trading partners
+EDI > Setup > Trading partners
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the 3PL setup to the warehouse trading partner's options:
     - Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
