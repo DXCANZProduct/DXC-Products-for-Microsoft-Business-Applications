@@ -29,11 +29,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Inventory adjustment - Counting
 
-A 3PL warehouse, setup as an EDI trading partner, can send inventory adjustments in order to adjust the company's D365 on-hand for their warehouse.
-
-Processing the **Inventory adjustment - Counting** document creates a movement journal for the stock in the D365 warehouse.
-
-Optional document settings also allows for automatically posting the movement journal and creating the batch if it doesn't exist in D365.
+A 3PL warehouse, setup as an EDI trading partner, can send an **Inventory adjustment - Counting** document which will compare the 3PL's stock to D365 stock for the warehouse.
+If any variance, the inventory adjustment(s) will be in the form of a D365 movement journal.
 
 The following subsections will describe how to view and process the **Inventory adjustment - Counting** from the 3PL warehouse. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
@@ -42,11 +39,13 @@ Viewing the [Staging table records](#view-staging-table-records) will also be di
 The following setup is prerequisites for the Inventory adjustment - Counting
 
 1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
+1. Create [Inventory journal name mapping](../SETUP/3PL%20SETUP/Inventory%20journal%20name%20mapping.md) to map the 3PL's values to D365 inventory journals.
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
 1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Counting.md) for the document.
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the 3PL setup to the warehouse trading partner's options:
     -  Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
+    -  Inventory journal name mapping: Options from **EDI > Setup > 3PL setup > Inventory journal name mapping**
 1. Add and enable the **Inventory adjustment - Counting** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
