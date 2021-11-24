@@ -29,7 +29,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Inventory adjustment - Movement
 
-A 3PL warehouse, setup as an EDI trading partner, can send an **Inventory adjustment - Movement** document which will inform the company of the required movement quantity for D365 stock for the warehouse. There is no comparison to D365 on-hand, the document's movement quantity will be used in the D365 movement journal.
+A 3PL warehouse, setup as an EDI trading partner, can send an **Inventory adjustment - Movement** document which will inform the company of the required adjustment quantity for D365 stock for the warehouse. There is no comparison to D365 on-hand, the document's movement quantity will be used in the D365 movement journal.
 
 Document settings will also specify which posting date to use for the movement journal:
 - EDI transaction date, or
