@@ -43,21 +43,21 @@ EDI contains the following documents pertaining to all Trading partners.
 
 EDI contains the following documents pertaining to 3PL Trading partners.
 - Outbound
-	- Picking list - Send picking list registration information for sales and transfer orders (Ship from warehouse)
-	- Shipment advice - Purchase order - Advise 3PL of incoming purchase orders (Ship to warehouse)
-	- Shipment advice - Transfer order - Advise 3PL of incoming transfer orders (Ship to warehouse)
-	- Shipment advice - Return order - Advise 3PL of customer orders being returned (Ship to warehouse)
-	- Shipment advice - Voyage - Advise 3PL of incoming Landed cost voyage (Ship to warehouse)
+	- Picking list: Send picking list registration information for sales and transfer orders (Ship from warehouse)
+	- Shipment advice - Purchase order: Advise 3PL of incoming purchase orders (Ship to warehouse)
+	- Shipment advice - Transfer order: Advise 3PL of incoming transfer orders (Ship to warehouse)
+	- Shipment advice - Return order: Advise 3PL of customer orders being returned (Ship to warehouse)
+	- Shipment advice - Voyage: Advise 3PL of incoming Landed cost voyage (Ship to warehouse)
 - Inbound 
-	- Picking list registration - 3PL informs company what has been shipped for a picking list (Ship from warehouse)
-	- Shipment receipt - Purchase order - 3PL acknowledge receipt of incoming purchase orders (Ship to warehouse)
-	- Shipment receipt - Transfer order - 3PL acknowledge receipt of incoming transfer orders (Ship to warehouse)
-	- Shipment receipt - Return order - 3PL acknowledge receipt of customer orders being returned (Ship to warehouse)
-	- Shipment receipt - Voyage - 3PL acknowledge receipt of incoming Landed cost voyage (Ship to warehouse)
-	- Inventory adjustment - Transfer - Transfers stock between batches or inventory statues with a transfer journal
-	- Inventory adjustment - Counting - Compares 3PL stock count to D365 current on hand and posts variances with a movement journal
-	- Inventory adjustment - Reconciliation - Compares 3PL stock count to D365 on hand at end of a particular date with option to manually accept/reject variances and posts variances with a movement journal
-	- Inventory adjustment - Movement - Adjust stock with a movement journal
+	- Picking list registration: 3PL informs company what has been shipped for a picking list (Ship from warehouse)
+	- Shipment receipt - Purchase order: 3PL acknowledge receipt of incoming purchase orders (Ship to warehouse)
+	- Shipment receipt - Transfer order: 3PL acknowledge receipt of incoming transfer orders (Ship to warehouse)
+	- Shipment receipt - Return order: 3PL acknowledge receipt of customer orders being returned (Ship to warehouse)
+	- Shipment receipt - Voyage: 3PL acknowledge receipt of incoming Landed cost voyage (Ship to warehouse)
+	- Inventory adjustment - Transfer: Transfers stock between batches or inventory statues with a transfer journal
+	- Inventory adjustment - Counting: Compares 3PL stock count to D365 current on hand and posts variances with a movement journal
+	- Inventory adjustment - Reconciliation: Compares 3PL stock count to D365 on hand at end of a particular date with option to manually accept/reject variances and posts variances with a movement journal
+	- Inventory adjustment - Movement: Adjust stock with a movement journal
 
 ## Setup
 ### Core setup
