@@ -143,20 +143,20 @@ Ability to manually export or review outbound files
 ### 3PL documents
 Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents > 3PL documents**
-- [Picking list]()
-- [Picking list registration]()
-- [Shipment advice - Purchase order]()
-- [Shipment advice - Transfer order]()
-- [Shipment advice - Return order]()
-- [Shipment advice - Voyage]()
-- [Shipment receipt - Purchase order]()
-- [Shipment receipt - Transfer order]()
-- [Shipment receipt - Return order]()
-- [Shipment receipt - Voyage]()
-- [Inventory adjustment advice - Transfer]()
-- [Inventory adjustment advice - Counting]()
-- [Inventory adjustment advice - Reconciliation]()
-- [Inventory adjustment advice - Movement]()
+- [Picking list](../DOCUMENTS/Picking%20list.md)
+- [Picking list registration](../DOCUMENTS/Picking%20list%20registration.md)
+- [Shipment advice - Purchase order](../DOCUMENTS/Shipment%20advice%20-%20Purchase%20order.md)
+- [Shipment advice - Transfer order](../DOCUMENTS/Shipment%20advice%20-%20Transfer%20order.md)
+- [Shipment advice - Return order](../DOCUMENTS/Shipment%20advice%20-%20Return%20order.md)
+- [Shipment advice - Voyage](../DOCUMENTS/Shipment%20advice%20-%20Voyage.md)
+- [Shipment receipt - Purchase order](../DOCUMENTS/Shipment%20receipt%20-%20Purchase%20order.md)
+- [Shipment receipt - Transfer order](../DOCUMENTS/Shipment%20receipt%20-%20Transfer%20order.md)
+- [Shipment receipt - Return order](../DOCUMENTS/Shipment%20receipt%20-%20Return%20order.md)
+- [Shipment receipt - Voyage](../DOCUMENTS/Shipment%20receipt%20-%20Voyage.md)
+- [Inventory adjustment advice - Transfer](../DOCUMENTS/Inventory%20adjustment%20-%20Transfer.md)
+- [Inventory adjustment advice - Counting](../DOCUMENTS/Inventory%20adjustment%20-%20Counting.md)
+- [Inventory adjustment advice - Reconciliation](../DOCUMENTS/Inventory%20adjustment%20-%20Reconciliation.md)
+- [Inventory adjustment advice - Movement](../DOCUMENTS/Inventory%20adjustment%20-%20Movement.md)
 
 [Process overview](Process%20overview.md) for 3PL EDI documents.
 
