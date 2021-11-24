@@ -29,13 +29,13 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Inventory adjustment - Reconciliation
 
-A 3PL warehouse, setup as an EDI trading partner, can send an **Inventory adjustment - Reconciliation** document which will inform the company of the required adjustment quantity for D365 stock for the warehouse. There is no comparison to D365 on-hand, the document's movement quantity will be used in the D365 movement journal.
+A 3PL warehouse, setup as an EDI trading partner, can send an **Inventory adjustment - Reconciliation** document which will compare the 3PL's stock to D365 stock for the warehouse in the EDI reconciliation page as at the end of the specified date. Accepted variances will be posted as a D365 movement journal.
 
-Document settings will also specify which posting date to use for the movement journal:
-- EDI transaction date, or
-- Today's date
-
-Document settings can also be used to automatically post the movement journal and/or allow the 3PL to create a new D365 batch.
+Document settings will also specify:
+- Which movement journal name to use for the adjustment.
+- Ability to reconcile all on-hand for the warehouse. This will count zero for all the items not sent by the 3PL.
+- Auto close option allows automatically accepting all variances and posting the movement journal. No manual accept/reject required if set to Yes.
+- Create batch allows new D365 batches to be created based on the 3PL's batch details.
 
 The following subsections will describe how to view and process the **Inventory adjustment - Reconciliation** from the 3PL warehouse. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
@@ -46,8 +46,6 @@ The following setup is prerequisites for the Inventory adjustment - Reconciliati
 ### 3PL setup
 EDI > Setup > 3PL setup
 1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
-1. Create [Inventory journal name mapping](../SETUP/3PL%20SETUP/Inventory%20journal%20name%20mapping.md) to map the 3PL's values to D365 inventory journals.
-1. Create [Transaction direction mapping](../SETUP/3PL%20SETUP/Transaction%20direction%20mapping.md) to map the 3PL's values to EDI transaction directions.
 
 ### Document type setup
 EDI > Setup > Document types: Inventory adjustment - Reconciliation
@@ -59,8 +57,6 @@ EDI > Setup > Trading partners
 1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
 1. Assign the 3PL setup to the warehouse trading partner's options:
     -  Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
-    -  Inventory journal name mapping: Options from **EDI > Setup > 3PL setup > Inventory journal name mapping**
-    -  Transaction direction mapping: Options from **EDI > Setup > 3PL setup > Transaction direction mapping**
 1. Add and enable the **Inventory adjustment - Reconciliation** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
@@ -70,7 +66,7 @@ EDI > Setup > Trading partners
 Inbound files have the following three steps:
 1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**.
 2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Reconciliation**.
-3. **Staging to target** - The staging record/s is processed to target. If the EDI document is succefully processed the D365 movement journal will be created. And if the document setting **Auto post journal** is set to _Yes_, the movement journal will also be automatically posted.
+3. **Staging to target** - The staging record/s is processed to target. If the EDI document is succefully processed the target EDI reconcilion will be created where users can either manually accept/reject variances, or automatically posted if document setting allows.
 
 ### Create document
 ![alt text](../../CORE/Image/Create_Document.png "Create document")
@@ -107,7 +103,7 @@ At this step the issues are usually around the file not matching the template.
 Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
 
 ### Step 3 - Staging to target
-If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 movement journal won't be created for the staging record.
+If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the EDI Reconciliation won't be created for the staging record.
 
 #### Possible issues and fixes
 **Staging to target** errors for Inventory adjustment can be viewed in:
@@ -144,7 +140,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 
 ## View staging table records
 To view the Inventory adjustment - Reconciliation staging records, go to **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Reconciliation**. <br>
-Use this page to review staging and process the EDI documents, create the Movement journal and optionally post the Movement journal.
+Use this page to review staging and process the EDI documents, create the target EDI reconcilion where users can either manually accept/reject variances, or automatically posted if document setting allows.
 
 ### List page
 The following EDI fields are available on the list page.
