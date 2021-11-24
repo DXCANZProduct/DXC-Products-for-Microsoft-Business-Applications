@@ -56,7 +56,7 @@ EDI contains the following documents pertaining to 3PL Trading partners.
 	- Shipment receipt - Voyage - 3PL acknowledge receipt of incoming Landed cost voyage (Ship to warehouse)
 	- Inventory adjustment - Transfer - Transfers stock between batches or inventory statues with a transfer journal
 	- Inventory adjustment - Counting - Compares 3PL stock count to D365 current on hand and posts variances with a movement journal
-	- Inventory adjustment - Reconciliation - Compares 3PL stock count to D365 on hand at a particular date with option to manually accept/reject variances and posts variances with a movement journal
+	- Inventory adjustment - Reconciliation - Compares 3PL stock count to D365 on hand at end of a particular date with option to manually accept/reject variances and posts variances with a movement journal
 	- Inventory adjustment - Movement - Adjust stock with a movement journal
 
 ## Setup
