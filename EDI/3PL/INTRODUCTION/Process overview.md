@@ -50,7 +50,7 @@ The 3PL then returns the **Shipment receipt** document (s), confirming what has 
 Various inbound documents are available for a 3PL to adjust inventory.
 - **Transfer** - Used for transfers between batches or between inventory statuses.
 - **Counting** - Compares 3PL's on-hand to D365's on hand and creates movement journals for the variances.
-- **Reconciliation** - Compares 3PL's on-hand to D365's on hand and creates movement journals for the variances. Has an additional EDI reconciliation page that users can manage which variances are accepted/rejected. Also has the option on including all inventory for the warehouse.
+- **Reconciliation** - Compares 3PL's on-hand to D365's on hand at the end of specified date and creates movement journals for the accepted variances. Has an additional EDI reconciliation page that users can manage which variances are accepted/rejected. Also has the option on including all inventory for the warehouse.
 - **Movement** - 3PL informs company of up or down quantity adjustments in inventory.
 
 ## Summary
