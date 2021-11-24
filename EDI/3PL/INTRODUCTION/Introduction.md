@@ -162,7 +162,7 @@ Users can access the forms by navigating to **EDI > Documents > 3PL documents**
 
 ### Workspaces
 The following workspaces are available:
-- [EDI Document maintenance](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md) - Manage file import and staging record errors. These records have not been successfully processed to target D365 document
+- [EDI Document maintenance](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md) - Manage file import and staging record errors. These records have not been successfully processed to a target D365 document
 - [EDI Inventory adjustment](../WORKSPACES/EDI%20Inventory%20adjustment.md) - Manage open inventory reconciliations and unposted inventory journal targets created by succesfully processing Inventory adjustment documents
 
 ## Other
