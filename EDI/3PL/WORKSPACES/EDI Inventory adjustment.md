@@ -56,7 +56,7 @@ Field	                | Description
 
 ### Transfer
 Access by selecting **Open transfer journals** tile or **Transfer** tab. <br>
-From within the workspace it is possible to view and even process unposted transfer journals relating to **Inventory adjustment - Transfer** records. <br>
+From within the workspace it is possible to view and even process unposted transfer journals created by **Inventory adjustment - Transfer** records. <br>
 Includes the ability to open the transfer **Journal** from the Workspace.
 
 Field	                | Description
@@ -69,7 +69,7 @@ Field	                | Description
  
 ### Counting
 Access by selecting **Open count journals** tile or **Counting** tab. <br>
-From within the workspace it is possible to view and even process unposted movement journals relating to **Inventory adjustment - Counting** records. <br>
+From within the workspace it is possible to view and even process unposted movement journals created by **Inventory adjustment - Counting** records. <br>
 Includes the ability to open the movement **Journal** from the Workspace.
 
 Field	                | Description
@@ -82,7 +82,7 @@ Field	                | Description
 
 ### Movement
 Access by selecting **Open movement journals** tile or **Movement** tab. <br>
-From within the workspace it is possible to view and even process unposted movement journals relating to **Inventory adjustment - Movement** records. <br>
+From within the workspace it is possible to view and even process unposted movement journals created by **Inventory adjustment - Movement** records. <br>
 Includes the ability to open the movement **Journal** from the Workspace.
 
 Field	                | Description
