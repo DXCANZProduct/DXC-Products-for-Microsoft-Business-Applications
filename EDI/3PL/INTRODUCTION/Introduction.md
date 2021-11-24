@@ -93,7 +93,7 @@ Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 	- Picking list (OrderPurpose)
 
 #### Journal names assigned on 3PL Trading partner
-Journal name with **Journal type** set to _Item arrival_. To be used to register stock for incoming stock receipts: **Inventory management > Setup > Journal names > Warehouse management** <br>:
+Journal name with **Journal type** set to _Item arrival_. To be used to register stock for incoming stock receipts: **Inventory management > Setup > Journal names > Warehouse management**:
 - Inventory management journal:
 	-  Shipment receipt - Purchase order
 	-  Shipment receipt - Transfer order
