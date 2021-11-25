@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI Customer]
-description: [EDI Customer - FAQ]
+title: [EDI 3PL]
+description: [EDI 3PL - FAQ]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 20/07/2021
+ms.date: 25/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,15 +33,10 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 See [EDI Core FAQ](../../CORE/OTHER/FAQ.md) for generic queries
 
-## Fixing Customer EDI errors
-The following table describes a few staging errors that could be experienced with customer inbound documents at the staging to target step. Short description of possible fixes are discussed. After fix, reset status on the staging record and either manually process again or leave for batch to process.
+## Fixing 3PL EDI errors
+The following table describes a few staging errors that could be experienced with 3PL inbound documents at the staging to target step. Short description of possible fixes are discussed. After fix, reset status on the staging record and either manually process again or leave for batch to process.
 
-Error	          | How to fix
-:--             |:--
-Could not find address for store code '%'	  | Navigate to **EDI > Setup > Trading partner**, filter to applicable customer and add/update address with store code
-Field 'Agreement classification' must be filled in    | Navigate to **EDI > Setup > Document types**. Select document **Customer purchase order** and the applicable Settings profile used for the staging record (assigned to Trading partner). Select the applicable **Agreement classification**.
-Inventory dimension Site is mandatory and must consequently be specified    |	Setup default site or warehouse on the customer or if no default, original EDI file needs to include these details.
-The entered receipt date ‘%’ is not valid because it is before today  | Edit 'Requested receipt date' to an appropriate date for the staging record at **EDI > Documents > Customer documents > Customer purchase order**
-Item not found	| Dependent on **Item Id source** in the Setting profile and assigned to Trading partner’s Incoming document, EDI couldn’t find the applicable D365 item number. Either fix staging or setup on the Item.
-Sales Agreement for customer '%', purchase number ‘%’ not found	  | Received a Release order referring to Sales agreement that could not be found for the Customer. <br> 1. If sales agreement is not required, update document setting **Create release order without blanket order** to _Yes_. <br> 2. Create/import D365 sales agreement or <br> 3. Fix **Customer requisition** on existing sales agreement (if D365 incorrect)
-Missing ASN line configuration on warehouse: ‘%’	| Delivery note has posted, but no ASN created. Assign applicable **ASN line configuration** on the 3PL warehouse at **Inventory management > Setup > Inventory breakdown > Warehouses**
+Document                          | Error	                                              | How to fix
+:--                               | :--                                                 |:--
+Shipment receipt - Purchase order | Receipt list % does not exist for purchase order %  | The EDI record's purchase order and receipt combination doesn't match to D365. Verify and fix staging record.
+
