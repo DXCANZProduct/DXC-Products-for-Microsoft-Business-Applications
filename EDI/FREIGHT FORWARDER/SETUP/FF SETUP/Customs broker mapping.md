@@ -42,7 +42,7 @@ Code mapping the Freight forwarders's value to a D365 Vendor of Shipping type se
 -	Specify the Freight forwarder's **Value**. Blank is allowed.
 
 ## Where used
-Shipping port mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading%20partner.md) Options field called **Customs broker**.
+Customs broker mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading%20partner.md) Options field called **Customs broker**.
 
 Used on the following EDI documents (field):
 - Voyage creator (ShipCustomsBroker)
