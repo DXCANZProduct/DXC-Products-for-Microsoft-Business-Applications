@@ -34,17 +34,17 @@ This section will provide a quick overview of the 3PL EDI module.
 ### Core EDI documents (All trading partners)
 
 EDI contains the following documents pertaining to all Trading partners.
-- Inbound
-	- Functional Acknowledgement – Receive functional acknowledgement that outbound document has been received by Trading partner.
-- Outbound
-	- Functional Acknowledgement – Send functional acknowledgement that inbound document has been received.
+- **Inbound**
+	- **Functional Acknowledgement** – Receive functional acknowledgement that outbound document has been received by Trading partner.
+- **Outbound**
+	- **Functional Acknowledgement** – Send functional acknowledgement that inbound document has been received.
 
 ### 3PL EDI documents (3PL license only)
 
 EDI contains the following documents pertaining to 3PL Trading partners.
-- Outbound
-	- Picking list: Send picking list registration information for sales and transfer orders (Ship from warehouse)
-	- Shipment advice - Purchase order: Advise 3PL of incoming purchase orders (Ship to warehouse)
+- **Outbound**
+	- **Picking list**: Send picking list registration information for sales and transfer orders (Ship from warehouse)
+	- **Shipment advice - Purchase order**: Advise 3PL of incoming purchase orders (Ship to warehouse)
 	- Shipment advice - Transfer order: Advise 3PL of incoming transfer orders (Ship to warehouse)
 	- Shipment advice - Return order: Advise 3PL of customer orders being returned (Ship to warehouse)
 	- Shipment advice - Voyage: Advise 3PL of incoming Landed cost voyage (Ship to warehouse)
