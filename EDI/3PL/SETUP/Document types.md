@@ -53,9 +53,18 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ## Documents
 Staging data can be viewed and manually processed:
-- [Vendor purchase order](../DOCUMENTS/endor%20purchase%20order.md)
-- [Vendor purchase order change](../DOCUMENTS/endor%20purchase%20order%20change.md)
-- [Vendor purchase order acknowledgement](../DOCUMENTS/endor%20purchase%20order%20acknowledgement.md)
-- [Vendor advanced shipping notice](../DOCUMENTS/endor%20advanced%20shipping%20notice.md)
-- [Purchase invoice](../DOCUMENTS/Purchase%20invoice.md)
+- [Picking list](../DOCUMENTS/Picking%20list.md)
+- [Picking list registration](../DOCUMENTS/Picking%20list%20registration.md)
+- [Shipment advice - Purchase order](../DOCUMENTS/Shipment%20advice%20-%20Purchase%20order.md)
+- [Shipment advice - Transfer order](../DOCUMENTS/Shipment%20advice%20-%20Transfer%20order.md)
+- [Shipment advice - Return order](../DOCUMENTS/Shipment%20advice%20-%20Return%20order.md)
+- [Shipment advice - Voyage](../DOCUMENTS/Shipment%20advice%20-%20Voyage.md)
+- [Shipment receipt - Purchase order](../DOCUMENTS/Shipment%20receipt%20-%20Purchase%20order.md)
+- [Shipment receipt - Transfer order](../DOCUMENTS/Shipment%20receipt%20-%20Transfer%20order.md)
+- [Shipment receipt - Return order](../DOCUMENTS/Shipment%20receipt%20-%20Return%20order.md)
+- [Shipment receipt - Voyage](../DOCUMENTS/Shipment%20receipt%20-%20Voyage.md)
+- [Inventory adjustment advice - Transfer](../DOCUMENTS/Inventory%20adjustment%20-%20Transfer.md)
+- [Inventory adjustment advice - Counting](../DOCUMENTS/Inventory%20adjustment%20-%20Counting.md)
+- [Inventory adjustment advice - Reconciliation](../DOCUMENTS/Inventory%20adjustment%20-%20Reconciliation.md)
+- [Inventory adjustment advice - Movement](../DOCUMENTS/Inventory%20adjustment%20-%20Movement.md)
 
