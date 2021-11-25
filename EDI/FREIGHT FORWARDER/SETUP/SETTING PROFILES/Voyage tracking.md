@@ -40,17 +40,26 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Field**           |	**Description**	                          | **Options/Example**
 :-------            |:-------                                   |:----------
 **Voyage Id source**  |	Determine the method of voyage identification used	| •	**Internal Id** – Landed cost Voyage <br> •	**External Id** – Freight forwarder’s booking reference = Landed cost Booking reference
-
-#### **Date qualifiers**
-**Field**           |	**Description**	                          | Activity mapping's Date selection   | Updates | **Options/Example**
-:-------            |:-------                                   |:----------                          |:----    |:----
-**Actual**          |	Date in file is an actual date            | Start date                          | Start date    | X12 example = 140
-<br>                |                                           | End date                            | Actual end date
-**Estimated**       |	Date in file is an estimated date         | Start date                          | N/A     | X12 example = 139
-<br>                |                                           | End date                            | Estimated end date
+<ins>**Date qualifiers**</ins>
+**Actual**          | Date in file is an actual date	          | X12 example = 140
+**Estimated**       |	Date in file is an estimated date	        | X12 example = 139
+    
 
 ## Where used
 The **Setting profile** can be assigned on the Incoming documents FastTab to document type **Voyage tracking** for the Freight forwarder landed cost Trading partner at **EDI > Setup > Trading partners**.
+
+**Actual** and **Estimated** date qaulifier mappings are used on the following EDI documents (field):
+- Voyage tracking (DateQualifierValue)
+
+#### Date qualifiers and Activity example
+When the voyage's tracking leg(s) are updated, **Actual** and **Estimated** date qualifier values and [Activity mappings](../FF%20SETUP/Activity%20mapping.md)'s **Date selection** are used to update the correct date field for the Voyage's tracking leg.
+
+Date qualifier      | Activity mapping's Date selection   | Tracking leg field updated 
+:-------            |:----------                          |:----    
+Actual              | Start date                          | Start date    
+Actual              | End date                            | Actual end date 
+Estimated           |	Start date                          | N/A                    
+Estimated           |	End date                            | Estimated end date 
 
 ## Data entity
 - EDI setting voyage tracking
