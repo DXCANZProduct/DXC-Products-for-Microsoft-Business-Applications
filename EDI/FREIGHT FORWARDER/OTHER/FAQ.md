@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI 3PL]
-description: [EDI 3PL - FAQ]
+title: [EDI Freight forwarder]
+description: [EDI Freight forwarder - FAQ]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 25/11/2021
+ms.date: 26/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 See [EDI Core FAQ](../../CORE/OTHER/FAQ.md) for generic queries
 
-## Fixing 3PL EDI errors
+## Fixing Freight forwarder EDI errors
 The following table describes a few staging errors that could be experienced with 3PL inbound documents at the staging to target step. Short description of possible fixes are discussed. After fix, reset status on the staging record and either manually process again or leave for batch to process.
 
 Error	                                              | How to fix        | Document
