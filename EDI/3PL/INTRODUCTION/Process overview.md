@@ -54,12 +54,31 @@ The 3PL then returns the **Shipment receipt** document (s), confirming what has 
 - **Voyage** - Create D365 arrival journal and optionally post arrival journal.
 
 The inbound **Shipment receipt** documents needs to refer back to original **Shipment advice**:
-- Purchase order (PurchId), Transfer number (InventTransferId), RMA number (ReturnItemNum) or Voyage (ShipId)
-- Receipts list (ReceiptsListId)
-- Lot ID (InventTransId)
-- Inventory's:
-  - Product dimensions
-  - Storage dimensions like Inventory status
+- Purchase order
+    - Purchase order (PurchId)
+    - Receipts list (ReceiptsListId)
+    - Lot ID (InventTransId)
+    - Inventory's:
+        - Product dimensions
+        - Storage dimensions like Inventory status
+- Transfer order
+    - Transfer number (InventTransferId)
+    - Lot ID (InventTransId)
+    - Inventory's:
+        - Product dimensions
+        - Storage dimensions like Inventory status
+- Return order
+    - RMA number (ReturnItemNum)
+    - Lot ID (InventTransId)
+    - Inventory's:
+        - Product dimensions
+        - Storage dimensions like Inventory status
+- Voyage
+    - Voyage (ShipId)
+    - Lot ID (InventTransId)
+    - Inventory's:
+        - Product dimensions
+        - Storage dimensions like Inventory status
 
 ## Inventory adjustments
 Various inbound documents are available for a 3PL to adjust inventory.
