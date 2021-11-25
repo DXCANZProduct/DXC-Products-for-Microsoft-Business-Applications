@@ -5,7 +5,7 @@ title: [EDI Freight forwarder]
 description: [EDI Freight forwarder Setup - Document type Setting profiles - Voyage creator]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 18/11/2021
+ms.date: 25/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
