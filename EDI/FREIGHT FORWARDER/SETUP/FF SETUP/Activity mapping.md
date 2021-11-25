@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI Freight forwarder]
-description: [EDI Freight forwarder setup - Shipping port mapping]
+description: [EDI Freight forwarder setup - Activity mapping]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 25/11/2021
@@ -28,27 +28,42 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Freight forwarder setup
-## Setup Shipping port mapping
+## Setup Activity mapping
 
-Users can access the form by navigating to **EDI > Setup > Freight forwarder landed cost setup > Shipping port mapping**
+Users can access the form by navigating to **EDI > Setup > Freight forwarder landed cost setup > Activity mapping**
 
-Code mapping the Freight forwarders's value to a D365 Landed cost shipping port. <br>
+Code mapping the Freight forwarders's value to a D365 Landed cost Activity and if the mapped activity should update the Start or End date. <br>
 
 - Click **New** to create a new record
--	In the **Name** field, enter the name of the shipping port mapping group
--	In the **Description** field, enter a description of the shipping port mapping group
+-	In the **Name** field, enter the name of the Activity mapping group
+-	In the **Description** field, enter a description of the Activity mapping group
 -	In the **Mappings** FastTab, select **Add** to create a new record
--	Select the **Shipping port** from the available list. Options are obtained from **Shipping port** setup at **Landed cost > Delivery information setup > Shipping ports**
--	Specify the Freight forwarder's **Value**. Blank is allowed.
+-	Select the **Activity** from the available list. Options are obtained from **Activity** setup at **Landed cost > Mulit-leg journeys setup > Activities**
+-	In the **Date** selection, select the applicable option:
+    - Start date
+    - End date
+-	Specify the Freight forwarder's **Value**. Blank is not allowed.
 
 ## Where used
-Shipping port mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading%20partner.md) Options field called **Port**.
+Activity mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading%20partner.md) Options field called **Activity**.
 
 Used on the following EDI documents (field):
-- Voyage creator (ShipFromPort)
-- Voyage creator (ShipToPort)
-- Voyage tracking (Port)
+- Voyage tracking (Activity) - Used to find the applicable Voyage inbound tracking’s leg to update and determines whether the start or end date is updated. 
+
+## Examples
+X12 example values are used in below table for **Trading partner values**.
+
+Activity	| Date selection	    | Description	                          | Trading partner values
+:--       |:--                  |:--                                    |:--
+**Load**  | **Start date**	    |	Loading	                              | L
+**Load**  | **End date**	      |	Loaded on Board at First Port of Load | AE
+**Sail**	| **Start date**      | Vessel Departure                      |	VD
+**Sail**  | **End date**	      |	Discharged from Vessel at Last Port of Discharge | UV
+**Sail**  | **End date**        |	Vessel Arrival		                    | VA
+**Customs** | **End date**      |	Customs Released		                  | CT
+**Local** |	**Start date**      | Loaded on Truck		                    | AM
+**Local** | **End date**	      | Actual Door Delivery		              | D
 
 ## Data entities:
-- Shipping port mapping
-- Shipping port mapping lines
+- Activity mapping
+- Activity mapping lines
