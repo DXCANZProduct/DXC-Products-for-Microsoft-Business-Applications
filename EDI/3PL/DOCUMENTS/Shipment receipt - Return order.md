@@ -123,7 +123,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example header errors:
 **Error message**       | **Error type**         | **Method to fix**
 :---------------------- |:----                   |:----
-
+Return order % does not exist	| Record not found  | Verify if RMA number (ReturnItemNum) is correct in staging
 
 > Note: % contains staging data for the record
 
@@ -137,9 +137,9 @@ At this step the issues are usually around setup/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
 
 #### Example line errors:
-**Error message**                     | **Error type**         | **Method to fix**
-:------------------------------------ |:----                   |:----
-
+**Error message**                     | **Error type**          | **Method to fix**
+:------------------------------------ |:----                    |:----
+Line does not exist                   | Record not found        | Verify if Lot ID (InventTransId) is correct in staging
 
 ### Validation
 
