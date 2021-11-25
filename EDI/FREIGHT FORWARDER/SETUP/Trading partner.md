@@ -49,12 +49,12 @@ The following table describes the Freight forwarder module fields that are avail
 <ins>**Container mapping**</ins>
 **Container type**                    |	Container type identifiers <br> Note: For further information see [Setup shipping container types mapping](FF%20SETUP/Shipping%20container%20types%20mapping.md)
 **Measurement unit**                  |	Shipping measurement unit mapping <br> Note: For further information see [Setup shipping measurement unit mapping](FF%20SETUP/Shipping%20measurement%20unit%20mapping.md)
-<ins>**Journey mapping</ins>	
+<ins>**Journey mapping**</ins>	
 **Port**                              |	Shipping port mapping <br> Note: For further information see [Setup shipping port mapping](FF%20SETUP/Shipping%20port%20mapping.md)
 **Port qualifier**                    |	Shipping port qualifier mapping <br> Note: For further information see [Setup shipping port qualifier mapping](FF%20SETUP/Shipping%20port%20qualifier%20mapping.md)
 **Mode of delivery**                  |	Mode of delivery mapping <br> Note: For further information see [Setup modes of delivery mapping](FF%20SETUP/Modes%20of%20delivery%20mapping.md)
 **Activity**                          |	Activity mapping <br> Note: For further information see [Setup activity mapping](FF%20SETUP/Activity%20mapping.md)
-<ins>**Other mappings</ins>	
+<ins>**Other mappings**</ins>	
 **Customs broker**                    |	Customs broker mapping <br> Note: For further information see [Setup customs broker mapping](FF%20SETUP/Customs%20broker%20mapping.md)
 **UOM**                               |	Unit of measure mappings. Ability to map a trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM%20mapping.md)
 
