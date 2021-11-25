@@ -36,16 +36,12 @@ See [EDI Core FAQ](../../CORE/OTHER/FAQ.md) for generic queries
 ## Fixing 3PL EDI errors
 The following table describes a few staging errors that could be experienced with 3PL inbound documents at the staging to target step. Short description of possible fixes are discussed. After fix, reset status on the staging record and either manually process again or leave for batch to process.
 
-Document                          | Error	                                              | How to fix
-:--                               | :--                                                 |:--
-Picking list registration         | Item %, dimensions: % Physical on-hand %=Available % cannot be picked because only % is/are available from the inventory  | Adjust D365 on-hand if staging record correct
-Picking list registration         | Picking list % is in status Completed               | The D365 picking list registration has already been completed. Verify if duplication and either fix record's picking route id or cancel staging record if duplication.
-Shipment receipt - Purchase order | Receipt list % does not exist for purchase order %  | The EDI record's purchase order and receipt combination doesn't match to D365. Verify and fix staging record.
-Shipment receipt - Transfer order | Transfer order % does not exist | Verify if Transfer number (InventTransferId) is correct in staging
-Shipment receipt - Transfer order | Line does not exist             | Verify if Lot ID (InventTransId) is correct in staging
-Shipment receipt - Return order   | Return order % does not exist   | Verify if RMA number (ReturnItemNum) is correct in staging
-Shipment receipt - Return order   | Line does not exist             | Verify if Lot ID (InventTransId) is correct in staging
-Shipment receipt - Voyage         | Shipment % does not exist       | Verify if Voyage (ShipId) is correct in staging
-Shipment receipt - Voyage         | Line does not exist             | Verify if Lot ID (InventTransId) is correct in staging
-
-
+Error	                                              | How to fix        | Document
+:--                                                 |:--                |:--
+Item %, dimensions: % Physical on-hand %=Available % cannot be picked because only % is/are available from the inventory  | Adjust D365 on-hand if staging record correct  | • Picking list registration
+Picking list % is in status Completed               | The D365 picking list registration has already been completed. Verify if duplication and either fix record's picking route id or cancel staging record if duplication.  | • Picking list registration
+Receipt list % does not exist for purchase order %  | The EDI record's purchase order and receipt combination doesn't match to D365. Verify and fix staging record. | • Shipment receipt - Purchase order
+Transfer order % does not exist | Verify if Transfer number (InventTransferId) is correct in staging  | • Shipment receipt - Transfer order
+Return order % does not exist   | Verify if RMA number (ReturnItemNum) is correct in staging          | • Shipment receipt - Return order
+Shipment % does not exist       | Verify if Voyage (ShipId) is correct in staging                     | • Shipment receipt - Voyage
+Line does not exist             | Verify if Lot ID (InventTransId) is correct in staging              | • Shipment receipt - Transfer order <br> • Shipment receipt - Return order <br> • Shipment receipt - Voyage
