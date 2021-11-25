@@ -35,7 +35,7 @@ The 3PL then returns the **Picking list registration** document, confirming what
 
 The inbound **Picking list registration** documents needs to refer back to original **Picking list**:
 - Picking route (PickingRouteID)
-- Lot ID (InventTransId) or Line number (LineNum)
+- Lot ID (InventTransId) or Line number (LineNum) - depending on document setting 'Line matching strategy'
 - Inventory's:
   - Product dimensions
   - Storage dimensions like Inventory status
