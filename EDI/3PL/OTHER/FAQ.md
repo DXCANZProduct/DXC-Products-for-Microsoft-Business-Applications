@@ -38,5 +38,9 @@ The following table describes a few staging errors that could be experienced wit
 
 Document                          | Error	                                              | How to fix
 :--                               | :--                                                 |:--
+Picking list registration         | Item %, dimensions: % Physical on-hand %=Available % cannot be picked because only % is/are available from the inventory  | Adjust D365 on-hand if staging record correct
+Picking list registration         | Picking list % is in status Completed               | The D365 picking list registration has already been completed. Verify if duplication and either fix record's picking route id or cancel staging record if duplication.
 Shipment receipt - Purchase order | Receipt list % does not exist for purchase order %  | The EDI record's purchase order and receipt combination doesn't match to D365. Verify and fix staging record.
+Shipment receipt - Transfer order | Transfer order % does not exist | Verify if Transfer number (InventTransferId) is correct in staging
+Shipment receipt - Transfer order | Line does not exist             | Verify if Lot ID (InventTransId) is correct in staging
 
