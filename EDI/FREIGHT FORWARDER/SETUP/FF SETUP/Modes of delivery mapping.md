@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI Freight forwarder]
-description: [EDI Freight forwarder setup - Shipping port mapping]
+description: [EDI Freight forwarder setup - Modes of delivery mapping]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 25/11/2021
@@ -28,27 +28,26 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Freight forwarder setup
-## Setup Shipping port mapping
+## Setup Modes of delivery mapping
 
-Users can access the form by navigating to **EDI > Setup > Freight forwarder landed cost setup > Shipping port mapping**
+Users can access the form by navigating to **EDI > Setup > Freight forwarder landed cost setup > Modes of delivery mapping**
 
-Code mapping the Freight forwarders's value to a D365 Landed cost shipping port. <br>
+Code mapping the Freight forwarders's value to a D365 Modes of delivery. <br>
 
 - Click **New** to create a new record
--	In the **Name** field, enter the name of the shipping port mapping group
--	In the **Description** field, enter a description of the shipping port mapping group
+-	In the **Name** field, enter the name of the Modes of delivery mapping group
+-	In the **Description** field, enter a description of the Modes of delivery mapping group
 -	In the **Mappings** FastTab, select **Add** to create a new record
--	Select the **Shipping port** from the available list. Options are obtained from **Shipping port** setup at **Landed cost > Delivery information setup > Shipping ports**
+-	Select the **Mode of delivery** from the available list. Options are obtained from **Mode of delivery** setup at **Procurement and sourcing > Setup > Distribution > Modes of delivery**
 -	Specify the Freight forwarder's **Value**. Blank is allowed.
 
 ## Where used
-Shipping port mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading%20partner.md) Options field called **Port**.
+Modes of delivery mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading%20partner.md) Options field called **Mode of delivery**.
 
 Used on the following EDI documents (field):
-- Voyage creator (ShipFromPort)
-- Voyage creator (ShipToPort)
-- Voyage tracking (Port)
+- Voyage creator (DlvModeId)
+- Voyage tracking (DlvModeId)
 
 ## Data entities:
-- Shipping port mapping
-- Shipping port mapping lines
+- Modes of delivery mapping
+- Modes of delivery mapping lines
