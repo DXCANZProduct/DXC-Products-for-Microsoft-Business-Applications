@@ -53,7 +53,7 @@ When a purchase or transfer order contains multiple open order lines for the sam
 If there are multiple matches for date or qty, strategy defaults to top down.
 
 #### Example
-Source transactions with all same item and dimensions.
+Source transactions with all same item and dimensions:
 
 Order line no	  | Qty	  | Delivery date
 :--             |:--    |:--
@@ -61,7 +61,7 @@ Order line no	  | Qty	  | Delivery date
 2	              | 110	  | 15 March 2022
 3	              | 120	  | 29 March 2022
 
-Voyage: Qty 100 and ship date 28 March 2022
+Voyage: Qty 100 and ship date 28 March 2022. <br>
 Each strategy will use the following source line number(s):
 Top down	            | Expected date	  | Quantity
 :--                   |:--              |:--
