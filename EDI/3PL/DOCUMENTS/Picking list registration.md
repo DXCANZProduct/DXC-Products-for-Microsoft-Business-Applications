@@ -137,7 +137,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example line errors:
 **Error message**                     | **Error type**         | **Method to fix**
 :------------------------------------ |:----                   |:----
-Unable to find an activated picking list line: %	                  | No line found         | EDI couldn't find the line based on line number/ lot id and item number/item dimensions. **EDI > Documents > 3PL documents > Picking list registration** and/or <br> **Product information management > Products > Released products**
+Unable to locate an activated picking list line (Route Id - %, Lot - %, Item - %, Quantity - %, Size - %, Colour - %', Style - %, Configuration - %, Inventory status - %)	                  | No line found         | Inbound document's line details don't match to picking list, compare staging details mentioned in the error.
 
 ### Validation
 
