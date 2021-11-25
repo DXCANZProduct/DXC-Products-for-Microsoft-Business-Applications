@@ -33,6 +33,13 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 When a D365 warehouse has been loaded as a 3PL Trading partner and has the **Picking list** document setup and enabled, posting a sales or transfer order's picking list will create an outbound staging record to send to the 3PL instructing them to ship the stock. <br>
 The 3PL then returns the **Picking list registration** document, confirming what has/will be shipped.
 
+The inbound **Picking list registration** documents needs to refer back to original **Picking list**:
+- Picking route (PickingRouteID)
+- Lot ID (InventTransId) or Line number (LineNum)
+- Inventory's:
+  - Product dimensions
+  - Storage dimensions like Inventory status
+
 ## Shipment advice and Shipment receipts (To warehouse)
 When a D365 warehouse has been loaded as a 3PL Trading partner and has the **Shipment advice** document(s) setup and enabled, the following trigger points will create an outbound staging record to inform the 3PL of inbound stock to their warehouse:
 - **Purchase order** - Generate **Receipts list**, by navigating to **Accounts payable > Purchase order > All purchase orders** and **Receive** tab on the Action Pane.
@@ -45,6 +52,13 @@ The 3PL then returns the **Shipment receipt** document (s), confirming what has 
 - **Transfer order** - Post D365 arrival journal and optionally receive transfer order.
 - **Return order** - Create D365 arrival journal and optionally post arrival journal or delivery note.
 - **Voyage** - Create D365 arrival journal and optionally post arrival journal.
+
+The inbound **Shipment receipt** documents needs to refer back to original **Shipment advice**:
+- Receipts list (ReceiptsListId)
+- Lot ID (InventTransId)
+- Inventory's:
+  - Product dimensions
+  - Storage dimensions like Inventory status
 
 ## Inventory adjustments
 Various inbound documents are available for a 3PL to adjust inventory.
