@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI Freight forwarder]
-description: [EDI Freight forwarder setup - Shipping port mapping]
+description: [EDI Freight forwarder setup - Shipping port qualifier mapping]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 25/11/2021
@@ -28,27 +28,28 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Freight forwarder setup
-## Setup Shipping port mapping
+## Setup Shipping port qualifier mapping
 
-Users can access the form by navigating to **EDI > Setup > Freight forwarder landed cost setup > Shipping port mapping**
+Users can access the form by navigating to **EDI > Setup > Freight forwarder landed cost setup > Shipping port qualifier mapping**
 
-Code mapping the Freight forwarders's value to a D365 Landed cost shipping port. <br>
+Used to map the Freight forwarder’s shipping port qualifier value to indicate if the port referred to in the message is the **From port** or **To port**.
+If the voyage tracking leg, whose tracking is being updated, includes a From and To port (Example: Air or Sea legs), the shipping port mapping and shipping port qualifier will be used to find the applicable leg to update. This is especially useful for journeys with multiple sea and/or air legs.
 
 - Click **New** to create a new record
--	In the **Name** field, enter the name of the shipping port mapping group
--	In the **Description** field, enter a description of the shipping port mapping group
+-	In the **Name** field, enter the name of the Shipping port qualifier mapping group
+-	In the **Description** field, enter a description of the Shipping port qualifier mapping group
 -	In the **Mappings** FastTab, select **Add** to create a new record
--	Select the **Shipping port** from the available list. Options are obtained from **Shipping port** setup at **Landed cost > Delivery information setup > Shipping ports**
+-	Select the **Shipping port qualifier** from the available list. Options include: 
+    - From port
+    - To port	
 -	Specify the Freight forwarder's **Value**. Blank is allowed.
 
 ## Where used
-Shipping port mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading%20partner.md) Options field called **Port**.
+Shipping port qualifier mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading%20partner.md) Options field called **Port qualifier**.
 
 Used on the following EDI documents (field):
-- Voyage creator (ShipFromPort)
-- Voyage creator (ShipToPort)
-- Voyage tracking (Port)
+- Voyage tracking (PortQualifier)
 
 ## Data entities:
-- Shipping port mapping
-- Shipping port mapping lines
+- Shipping port qualifier mapping
+- Shipping port qualifier mapping lines
