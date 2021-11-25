@@ -44,9 +44,9 @@ Code mapping the Freight forwarders's value to a D365 Landed cost shipping port.
 ## Where used
 Shipping port mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading%20partner.md) Options field called **Port**. <br>
 Used on the following EDI documents (field):
-	- Voyage creator (ShipFromPort)
-	- Voyage creator (ShipToPort)
-	- Voyage tracking (Port)
+- Voyage creator (ShipFromPort)
+- Voyage creator (ShipToPort)
+- Voyage tracking (Port)
 
 ## Data entities:
 - Shipping port mapping
