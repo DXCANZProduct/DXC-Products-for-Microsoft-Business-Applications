@@ -51,12 +51,12 @@ Used on the following EDI documents (field):
 - Voyage tracking (PortQualifier)
 
 ## Examples
-EDI port qualifier	| Trading partner values
-:--                 |:--
-**From port**       | L (Port of Loading)
-**From port**	    | R (Place of Receipt)
-**To port**	        | D (Port of Discharge)
-**To port**	        | E (Place of Delivery)
+EDI port qualifier	| Trading partner values    | Description
+:--                 |:--                        |:--
+**From port**       | L                         | Port of Loading
+**From port**	    | R                         | Place of Receipt
+**To port**	        | D                         | Port of Discharge
+**To port**	        | E                         | Place of Delivery
 
 ## Data entities:
 - Shipping port qualifier mapping
