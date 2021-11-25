@@ -32,7 +32,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 Users can access the form by navigating to **EDI > Setup > Freight forwarder landed cost setup > Shipping container types mapping**
 
-Code mapping the Freight forwarders's value to a D365 Landed cost shipping port. <br>
+Code mapping the Freight forwarders's value to a D365 Landed cost shipping containers. <br>
 
 - Click **New** to create a new record
 -	In the **Name** field, enter the name of the Shipping container types mapping group
