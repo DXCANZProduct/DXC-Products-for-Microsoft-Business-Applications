@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [EDI 3PL]
-description: [Introduction to EDI 3PL]
+title: [EDI Freight forwarder]
+description: [Introduction to EDI Freight forwarder for Landed cost]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 17/11/2021
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Introduction
-This section will provide a quick overview of the 3PL EDI module.
+This section will provide a quick overview of the Freight forwarder for Landed cost EDI module.
 
 ## Documents
 ### Core EDI documents (All trading partners)
@@ -39,31 +39,18 @@ EDI contains the following documents pertaining to all Trading partners.
 - **Outbound**
 	- **Functional Acknowledgement** – Send functional acknowledgement that inbound document has been received.
 
-### 3PL EDI documents (3PL license only)
+### Freight forwarder EDI documents (Freight forwarder license only)
 
-EDI contains the following documents pertaining to 3PL Trading partners.
-- **Outbound**
-	- **Picking list**: Send picking list registration information for sales and transfer orders (Ship from warehouse)
-	- **Shipment advice - Purchase order**: Advise 3PL of incoming purchase orders (Ship to warehouse)
-	- **Shipment advice - Transfer order**: Advise 3PL of incoming transfer orders (Ship to warehouse)
-	- **Shipment advice - Return order**: Advise 3PL of customer orders being returned (Ship to warehouse)
-	- **Shipment advice - Voyage**: Advise 3PL of incoming Landed cost voyage (Ship to warehouse)
+EDI contains the following documents pertaining to Freight forwarder Trading partners.
 - **Inbound** 
-	- **Picking list registration**: 3PL informs company what has been shipped for a picking list (Ship from warehouse)
-	- **Shipment receipt - Purchase order**: 3PL acknowledge receipt of incoming purchase orders (Ship to warehouse)
-	- **Shipment receipt - Transfer order**: 3PL acknowledge receipt of incoming transfer orders (Ship to warehouse)
-	- **Shipment receipt - Return order**: 3PL acknowledge receipt of customer orders being returned (Ship to warehouse)
-	- **Shipment receipt - Voyage**: 3PL acknowledge receipt of incoming Landed cost voyage (Ship to warehouse)
-	- **Inventory adjustment - Transfer**: Transfers stock between batches or inventory statues with a transfer journal
-	- **Inventory adjustment - Counting**: Compares 3PL stock count to D365 current on hand and posts variances with a movement journal
-	- **Inventory adjustment - Reconciliation**: Compares 3PL stock count to D365 on hand at end of a particular date with option to manually accept/reject variances and posts variances with a movement journal
-	- **Inventory adjustment - Movement**: Adjust stock with a movement journal
+	- **Voyage creator**: Allows Freight forwarder to send voyage details in order to create a Landed cost Voyage
+	- **Voyage tracking**: Allows Freight forwarder to send tracking updates for an existing Landed cost Voyage
 
 ## Setup
 ### Core setup
 Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 
-### 3PL setup
+### Freight forwarder setup
 
 #### Mappings assigned on 3PL Trading partner
 3PL setup and which EDI document (and field) it is mapped to/from: **EDI > Setup > 3PL setup** <br>
