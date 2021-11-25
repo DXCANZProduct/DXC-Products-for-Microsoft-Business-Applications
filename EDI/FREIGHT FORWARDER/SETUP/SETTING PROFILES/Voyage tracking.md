@@ -52,7 +52,7 @@ The **Setting profile** can be assigned on the Incoming documents FastTab to doc
 - Voyage tracking (DateQualifierValue)
 
 #### Date qualifiers and Activity example
-The following voyage's tracking fields determine with date field is updated on the Voyage tracking leg:
+When a Voyage tracking document is imported, the following fields determine with date field is updated on the Voyage's tracking leg:
 - **Date qualifier** - Actual or Estimated
 - [Activity mappings](../FF%20SETUP/Activity%20mapping.md)'s **Date selection** - Start date or End date
 
