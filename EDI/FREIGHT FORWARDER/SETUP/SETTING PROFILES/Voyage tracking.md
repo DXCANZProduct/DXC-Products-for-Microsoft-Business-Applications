@@ -39,9 +39,14 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Field**           |	**Description**	                          | **Options/Example**
 :-------            |:-------                                   |:----------
 **Voyage Id source**  |	Determine the method of voyage identification used	| •	**Internal Id** – Landed cost Voyage <br> •	**External Id** – Freight forwarder’s booking reference = Landed cost Booking reference
-<ins>**Date qualifiers**</ins>
-**Actual**          |	Date in file is an actual date, and will update the tracking leg's **Start date** or **Actual end date**. Dependent on Activity mappings's **Date selection**   | X12 example = 140
-**Estimated**       |	Date in file is an estimated date, and will update the tracking leg's **Estimated end date** if the Activity mappings's **Date selection** is related to _End date_   | X12 example = 139
+
+### **Date qualifiers**
+**Field**           |	**Description**	                          | Activity mapping's Date selection   | Updates | **Options/Example**
+:-------            |:-------                                   |:----------                          |:----    |:----
+**Actual**          |	Date in file is an actual date            | Start date                          | Start date    | X12 example = 140
+<br>                |                                           | End date                            | Actual end date
+**Estimated**       |	Date in file is an estimated date         | Start date                          | N/A     | X12 example = 139
+<br>                |                                           | End date                            | Estimated end date
 
 ## Where used
 The **Setting profile** can be assigned on the Incoming documents FastTab to document type **Voyage tracking** for the Freight forwarder landed cost Trading partner at **EDI > Setup > Trading partners**.
