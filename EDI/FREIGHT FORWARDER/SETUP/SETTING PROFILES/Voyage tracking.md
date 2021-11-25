@@ -36,11 +36,12 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 - Specify the **Settings profile id** and **Description** of the profile.
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details.
 
+#### Settings
 **Field**           |	**Description**	                          | **Options/Example**
 :-------            |:-------                                   |:----------
 **Voyage Id source**  |	Determine the method of voyage identification used	| •	**Internal Id** – Landed cost Voyage <br> •	**External Id** – Freight forwarder’s booking reference = Landed cost Booking reference
 
-### **Date qualifiers**
+#### **Date qualifiers**
 **Field**           |	**Description**	                          | Activity mapping's Date selection   | Updates | **Options/Example**
 :-------            |:-------                                   |:----------                          |:----    |:----
 **Actual**          |	Date in file is an actual date            | Start date                          | Start date    | X12 example = 140
