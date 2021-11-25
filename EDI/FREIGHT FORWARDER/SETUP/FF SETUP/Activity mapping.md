@@ -48,7 +48,9 @@ Code mapping the Freight forwarders's value to a D365 Landed cost Activity and i
 Activity mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading%20partner.md) Options field called **Activity**.
 
 Used on the following EDI documents (field):
-- Voyage tracking (Activity) - Used to find the applicable Voyage inbound tracking’s leg to update and determines whether the start or end date is updated. 
+- Voyage tracking (Activity)
+
+When the voyage's tracking leg(s) are updated, used to find the applicable Voyage inbound tracking’s leg and determines whether the start or end date is updated. 
 
 ## Examples
 X12 example values are used in below table for **Trading partner values**.
