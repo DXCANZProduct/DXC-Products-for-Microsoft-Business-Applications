@@ -82,7 +82,7 @@ The **Incoming documents** FastTab of the **Trading partners** page is discussed
 - Data entity: EDI Documents - Vendors
 
 ### Vendors
-EDI trading partner information and Vendor documents can be viewed via FactBoxes available on the **All vendors** page.
+EDI trading partner information and Vendor documents can be viewed via FactBoxes available on the **All vendors** page. <br>
 These can be accessed by navigating to **Accounts payable > Vendors > All vendors** and selecting the vendor.
 
 ### Data entities
