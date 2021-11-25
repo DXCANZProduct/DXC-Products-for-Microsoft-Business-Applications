@@ -52,65 +52,39 @@ Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 
 ### Freight forwarder setup
 
-#### Mappings assigned on 3PL Trading partner
-3PL setup and which EDI document (and field) it is mapped to/from: **EDI > Setup > 3PL setup** <br>
-- [Inventory journal name mapping](../SETUP/3PL%20SETUP/Inventory%20journal%20name%20mapping.md)
-	- Inventory adjustment - Counting (InventJournalNameIdExternal)
-	- Inventory adjustment - Movement (InventJournalNameIdExternal)
-- [Disposition code mapping](../SETUP/3PL%20SETUP/Disposition%20code%20mapping.md)
-	- Shipment receipt - Return order (DispositionCodeExternal)
-- [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)
-	- Picking list (InventStatusId)
-	- Picking list registration (InventStatusId)
-	- Shipment advice - Purchase order (InventStatusId)
-	- Shipment advice - Transfer order (InventStatusId)
-	- Shipment advice - Return order (InventStatusId)
-	- Shipment advice - Voyage (InventStatusId)
-	- Shipment receipt - Purchase order (InventStatusId)
-	- Shipment receipt - Transfer order (InventStatusId)
-	- Shipment receipt - Return order (InventStatusId)
-	- Shipment receipt - Voyage (InventStatusId)
-	- Inventory adjustment - Transfer (InventStatusIdFrom and InventStatusIdTo)
-	- Inventory adjustment - Counting (InventStatusId)
-	- Inventory adjustment - Reconciliation (InventStatusId)
-	- Inventory adjustment - Movement (InventStatusId)
-- [Transaction direction mapping](../SETUP/3PL%20SETUP/Transaction%20direction%20mapping.md)
-	- Inventory adjustment - Movement (TransactionDirection)
-- [Order purpose group](../SETUP/3PL%20SETUP/Order%20purpose%20group.md)
-	- Picking list (OrderPurpose)
+#### Mappings assigned on Freight forwarder landed cost Trading partner
+Freight forwarder setup and which EDI document (and field) it is mapped to/from: **EDI > Setup > Freight forwarder landed cost setup** <br>
+- [Shipping port mapping]()
+	- Voyage creator (ShipFromPort)
+	- Voyage creator (ShipToPort)
+	- Voyage tracking (Port)
+- [Modes of delivery mapping]()
+	- Voyage creator (DlvModeId)
+	- Voyage tracking (DlvModeId)
+- [Customs broker mapping]()
+	- Voyage creator (ShipCustomsBroker)
+- [Shipping container types mapping]()
+	- Voyage creator (ShipContainerTypeId) 
+- [Activity mapping]()
+	- Voyage tracking (Activity) 
+- [Shipping port qualifier mapping]()
+	- Voyage tracking (PortQualifier)
+- [Shipping measurement unit mapping]()
+	- Voyage creator (ShipMeasurementUnitExternal) 
+	- Voyage creator (ShipLineMeasurementUnitExternal)
 
-#### Journal names assigned on 3PL Trading partner
-Journal name with **Journal type** set to _Item arrival_. To be used to register stock for incoming stock receipts: **Inventory management > Setup > Journal names > Warehouse management**:
-- Inventory management journal:
-	-  Shipment receipt - Purchase order
-	-  Shipment receipt - Transfer order
-	-  Shipment receipt - Return order
-	-  Shipment receipt - Voyage
+Core Setup: **EDI > Setup** <br>
+- [Unit of measure mapping](../../CORE/Setup/UOM%20mapping.md)
+	- Voyage creator (UnitId)
 
-#### 3PL Document type setup
-Setup Document types which will be assigned on 3PL Trading partner. <br>
+#### Freight forwarder Document type setup
+Setup Document types which will be assigned on Freight forwarder landed cost Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Document types**
 
 - [File templates](../../CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
 - Setting profiles: applicable to the following document types
-    - [Picking list](../SETUP/SETTING%20PROFILES/Picking%20list.md)
-    - [Picking list registration](../SETUP/SETTING%20PROFILES/Picking%20list%20registration.md)
-    - [Shipment advice - Purchase order](../SETUP/SETTING%20PROFILES/Shipment%20advice%20-%20Purchase%20order.md)
-    - [Shipment advice - Return order](../SETUP/SETTING%20PROFILES/Shipment%20advice%20-%20Return%20order.md)
-    - [Shipment receipt - Purchase order](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md)
-    - [Shipment receipt - Transfer order](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Transfer%20order.md)
-    - [Shipment receipt - Return order](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Return%20order.md)
-    - [Shipment receipt - Voyage](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Voyage.md)
-    - [Inventory adjustment advice - Transfer](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Transfer.md)
-    - [Inventory adjustment advice - Counting](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Counting.md)
-    - [Inventory adjustment advice - Reconciliation](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Reconciliation.md)
-    - [Inventory adjustment advice - Movement](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Movement.md)
-- Validation profiles: applicable to the following inbound document types
-    - [Picking list registration](../SETUP/VALIDATION%20PROFILES/Picking%20list%20registration.md)
-    - [Shipment receipt - Purchase order](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md)
-    - [Shipment receipt - Transfer order](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Transfer%20order.md)
-    - [Shipment receipt - Return order](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Return%20order.md)
-- [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
+    - [Voyage creator]()
+    - [Voyage tracking]()
 - [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
 
 #### Trading partner setup
@@ -124,34 +98,17 @@ Users can access the form by navigating to **EDI > Setup > Trading partners**
 Ability to manually import or review inbound files
 - [Inbound files](../../CORE/Managing%20files/Inbound%20files.md)
 
-### Export files
-Ability to manually export or review outbound files
-- [Outbound files](../../CORE/Managing%20files/Outbound%20files.md)
-
-### 3PL documents
+### Freight forwarder documents
 Review staging records. <br>
-Users can access the forms by navigating to **EDI > Documents > 3PL documents**
-- [Picking list](../DOCUMENTS/Picking%20list.md)
-- [Picking list registration](../DOCUMENTS/Picking%20list%20registration.md)
-- [Shipment advice - Purchase order](../DOCUMENTS/Shipment%20advice%20-%20Purchase%20order.md)
-- [Shipment advice - Transfer order](../DOCUMENTS/Shipment%20advice%20-%20Transfer%20order.md)
-- [Shipment advice - Return order](../DOCUMENTS/Shipment%20advice%20-%20Return%20order.md)
-- [Shipment advice - Voyage](../DOCUMENTS/Shipment%20advice%20-%20Voyage.md)
-- [Shipment receipt - Purchase order](../DOCUMENTS/Shipment%20receipt%20-%20Purchase%20order.md)
-- [Shipment receipt - Transfer order](../DOCUMENTS/Shipment%20receipt%20-%20Transfer%20order.md)
-- [Shipment receipt - Return order](../DOCUMENTS/Shipment%20receipt%20-%20Return%20order.md)
-- [Shipment receipt - Voyage](../DOCUMENTS/Shipment%20receipt%20-%20Voyage.md)
-- [Inventory adjustment advice - Transfer](../DOCUMENTS/Inventory%20adjustment%20-%20Transfer.md)
-- [Inventory adjustment advice - Counting](../DOCUMENTS/Inventory%20adjustment%20-%20Counting.md)
-- [Inventory adjustment advice - Reconciliation](../DOCUMENTS/Inventory%20adjustment%20-%20Reconciliation.md)
-- [Inventory adjustment advice - Movement](../DOCUMENTS/Inventory%20adjustment%20-%20Movement.md)
+Users can access the forms by navigating to **EDI > Documents > Freight forwarder landed cost documents**
+- [Voyage creator]()
+- [Voyage tracking]()
 
-[Process overview](Process%20overview.md) for 3PL EDI documents.
+[Process overview](Process%20overview.md) for Freight forwarder EDI documents.
 
 ### Workspaces
 The following workspaces are available:
 - [EDI Document maintenance](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md) - Manage file import and staging record errors. These records have not been successfully processed to a target D365 document
-- [EDI Inventory adjustment](../WORKSPACES/EDI%20Inventory%20adjustment.md) - Manage open inventory reconciliations and unposted inventory journal targets created by succesfully processing Inventory adjustment documents
 
 ## Other
 - [Data entities](../OTHER/Data%20entities.md)
