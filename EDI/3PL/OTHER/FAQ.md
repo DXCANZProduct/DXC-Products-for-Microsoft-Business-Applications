@@ -43,4 +43,6 @@ Picking list registration         | Picking list % is in status Completed       
 Shipment receipt - Purchase order | Receipt list % does not exist for purchase order %  | The EDI record's purchase order and receipt combination doesn't match to D365. Verify and fix staging record.
 Shipment receipt - Transfer order | Transfer order % does not exist | Verify if Transfer number (InventTransferId) is correct in staging
 Shipment receipt - Transfer order | Line does not exist             | Verify if Lot ID (InventTransId) is correct in staging
+Shipment receipt - Return order   | Line does not exist             | Verify if Lot ID (InventTransId) is correct in staging
+
 
