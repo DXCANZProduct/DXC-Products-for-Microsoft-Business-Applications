@@ -43,7 +43,7 @@ Used where the Freight forwarder’s shipping measurement units value differs to
 -	Specify the Freight forwarder's **Value**. Blank is allowed.
 
 ## Where used
-Shipping port mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading%20partner.md) Options field called **Port**.
+Shipping measurement unit mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading%20partner.md) Options field called **Measurement unit**.
 
 Used on the following EDI documents (field):
 - Voyage creator (ShipMeasurementUnitExternal) 
