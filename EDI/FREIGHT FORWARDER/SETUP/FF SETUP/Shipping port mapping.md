@@ -36,24 +36,18 @@ Code mapping the Freight forwarders's value to a D365 Landed cost shipping port.
 
 - Click **New** to create a new record
 -	In the **Name** field, enter the name of the shipping port mapping group
--	In the **Description** field, enter a description of the inventory status Id mapping group
+-	In the **Description** field, enter a description of the shipping port mapping group
 -	In the **Mappings** FastTab, select **Add** to create a new record
--	Select the **Inventory status** from the available list. Options are obtained from **Inventory status** setup at **Warehouse management > Setup > Inventory > Inventory statuses**
--	Specify the 3PL's value used to identify the **Value**
+-	Select the **Shipping port** from the available list. Options are obtained from **Shipping port** setup at **Landed cost > Delivery information setup > Shipping ports**
+-	Specify the Freight forwarder's **Value**. Blank is allowed.
 
 ## Where used
-Inventory status Id mapping is assigned on the [3PL Trading partner's](../Trading%20partner.md) Options field called **Inventory status Id mapping**. <br>
-Used on field **InventStatusId** on EDI documents:
-- Picking list registration
-- Shipment receipt - Purchase order
-- Shipment receipt - Transfer order
-- Shipment receipt - Return order
-- Shipment receipt - Voyage
-- Inventory adjustment - Transfer (InventStatusIdFrom and InventStatusIdTo)
-- Inventory adjustment - Counting
-- Inventory adjustment - Reconciliation
-- Inventory adjustment - Movement
+Shipping port mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading%20partner.md) Options field called **Port**. <br>
+Used on the following EDI documents (field):
+	- Voyage creator (ShipFromPort)
+	- Voyage creator (ShipToPort)
+	- Voyage tracking (Port)
 
 ## Data entities:
-- Inventory status Id mapping
-- Inventory status Id mapping lines
+- Shipping port mapping
+- Shipping port mapping lines
