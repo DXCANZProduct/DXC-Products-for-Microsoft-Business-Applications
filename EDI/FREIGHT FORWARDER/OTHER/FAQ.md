@@ -33,8 +33,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 See [EDI Core FAQ](../../CORE/OTHER/FAQ.md) for generic queries
 
-## Fixing Freight forwarder EDI errors
-The following table describes a few staging errors that could be experienced with 3PL inbound documents at the staging to target step. Short description of possible fixes are discussed. After fix, reset status on the staging record and either manually process again or leave for batch to process.
+## Fixing Staging-to-Target EDI errors
+The following table describes a few staging errors that could be experienced with Freight forwarder inbound documents at the staging to target step. Short description of possible fixes are discussed. After fix, reset status on the staging record and either manually process again or leave for batch to process.
 
 Error	                                              | How to fix        | Document
 :--                                                 |:--                |:--
