@@ -114,9 +114,9 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 > Note: Similar to manually processing a D365 transaction, EDI will stop at the first processing error and only this error is displayed. Fixing the error and reprocessing might result in subsequent standard processing errors which need to be dealt with.
 
 #### Example header errors:
-**Error message**       | **Error type**         | **Method to fix**
-:---------------------- |:----                   |:----
-
+**Error message**       | **Error type**            | **Method to fix**
+:---------------------- |:----                      |:----
+Shipment % does not exist   | Processing error      | Verify if Voyage (ShipId) is correct in staging
 
 > Note: % contains staging data for the record
 
@@ -130,9 +130,9 @@ At this step the issues are usually around setup/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
 
 #### Example line errors:
-**Error message**                     | **Error type**         | **Method to fix**
-:------------------------------------ |:----                   |:----
-
+**Error message**                     | **Error type**           | **Method to fix**
+:------------------------------------ |:----                     |:----
+Line does not exist                   | Record not found         | Verify if Lot ID (InventTransId) is correct in staging
 
 ## View staging table records
 To view the Shipment receipt - Voyage staging records, go to **EDI > Documents > 3PL documents > Stock transfer receipt > Voyage**. <br>
