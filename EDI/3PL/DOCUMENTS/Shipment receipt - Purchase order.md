@@ -118,7 +118,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 #### Example header errors:
 **Error message**       | **Error type**         | **Method to fix**
 :---------------------- |:----                   |:----
-Receipt list % does not exist for purchase order %  | Receipt list not found    | The EDI record's purchase order and receipt combination doesn't match to D365. Verify and fix staging.
+Receipt list % does not exist for purchase order %  | Receipt list not found    | The EDI record's purchase order and receipt combination doesn't match to D365. Verify and fix staging record.
 
 > Note: % contains staging data for the record
 
