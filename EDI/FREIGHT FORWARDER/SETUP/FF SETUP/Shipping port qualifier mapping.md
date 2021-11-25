@@ -33,7 +33,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 Users can access the form by navigating to **EDI > Setup > Freight forwarder landed cost setup > Shipping port qualifier mapping**
 
 Used to map the Freight forwarder’s shipping port qualifier value to indicate if the port referred to in the message is the **From port** or **To port**.
-If the voyage tracking leg, whose tracking is being updated, includes a From and To port (Example: Air or Sea legs), the shipping port mapping and shipping port qualifier will be used to find the applicable leg to update. This is especially useful for journeys with multiple sea and/or air legs.
+If the voyage tracking leg, whose tracking is being updated, includes a From and To port (Example: Air or Sea legs), the **Shipping port mapping** and **Shipping port qualifier** will be used to find the applicable leg to update. This is especially useful for journeys with multiple sea and/or air legs.
 
 - Click **New** to create a new record
 -	In the **Name** field, enter the name of the Shipping port qualifier mapping group
