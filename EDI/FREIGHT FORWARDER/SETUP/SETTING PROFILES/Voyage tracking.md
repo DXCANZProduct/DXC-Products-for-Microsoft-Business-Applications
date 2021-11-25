@@ -42,7 +42,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Voyage Id source**  |	Determine the method of voyage identification used	| •	**Internal Id** – Landed cost Voyage <br> •	**External Id** – Freight forwarder’s booking reference = Landed cost Booking reference
 <ins>**Date qualifiers**</ins>
 **Actual**          | Date in file is an actual date	          | X12 example = 140
-**Estimated**       |	Date in file is an estimated date	        | X12 example = 139
+**Estimated**       | Date in file is an estimated date	          | X12 example = 139
     
 
 ## Where used
@@ -52,14 +52,16 @@ The **Setting profile** can be assigned on the Incoming documents FastTab to doc
 - Voyage tracking (DateQualifierValue)
 
 #### Date qualifiers and Activity example
-When the voyage's tracking leg(s) are updated, **Actual** and **Estimated** date qualifier values and [Activity mappings](../FF%20SETUP/Activity%20mapping.md)'s **Date selection** are used to update the correct date field for the Voyage's tracking leg.
+The following voyage's tracking fields determine with date field is updated on the Voyage tracking leg:
+- **Date qualifier** - Actual or Estimated
+- [Activity mappings](../FF%20SETUP/Activity%20mapping.md)'s **Date selection** - Start date or End date
 
 Date qualifier      | Activity mapping's Date selection   | Tracking leg field updated 
 :-------            |:----------                          |:----    
 Actual              | Start date                          | Start date    
 Actual              | End date                            | Actual end date 
-Estimated           |	Start date                          | N/A                    
-Estimated           |	End date                            | Estimated end date 
+Estimated           | Start date                          | N/A                    
+Estimated           | End date                            | Estimated end date 
 
 ## Data entity
 - EDI setting voyage tracking
