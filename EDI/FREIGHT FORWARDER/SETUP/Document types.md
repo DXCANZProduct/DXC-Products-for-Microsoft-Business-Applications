@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI 3PL]
-description: [EDI 3PL - Document types]
+title: [EDI Freight forwarder]
+description: [EDI Freight forwarder - Document types]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 23/09/2021
+ms.date: 25/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,7 +27,17 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# 3PL - Document types
+# Freight forwarder - Document types
 
-## Prerequisites:
-- [Document type setup](../../CORE/Setup/Document%20types.md)
+## Setting up Document types
+- [File templates](../../CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
+- Setting profiles: applicable to the following document types
+    - [Voyage creator]()
+    - [Voyage tracking]()
+- [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
+
+## Documents
+Staging data can be viewed and manually processed:
+- [Voyage creator]()
+- [Voyage tracking]()
+
