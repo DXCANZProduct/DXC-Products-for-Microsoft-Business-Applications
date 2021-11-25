@@ -85,7 +85,7 @@ The **Incoming documents** FastTab of the **Trading partners** page is discussed
 - Data entity: EDI Documents - Customers
 
 ### Customers
-EDI trading partner information and Customer documents can be viewed via FactBoxes available on the **All customers** page.
+EDI trading partner information and Customer documents can be viewed via FactBoxes available on the **All customers** page. <br>
 These can be accessed by navigating to **Accounts receivable > Customers > All customers** and selecting the customer.
 
 ### Data entities
