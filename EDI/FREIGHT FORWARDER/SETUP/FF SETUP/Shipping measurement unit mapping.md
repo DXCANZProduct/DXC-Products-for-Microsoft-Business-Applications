@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI Freight forwarder]
-description: [EDI Freight forwarder setup - Shipping port mapping]
+description: [EDI Freight forwarder setup - Shipping measurement unit mapping]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 25/11/2021
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Freight forwarder setup
-## Setup Shipping port mapping
+## Setup Shipping measurement unit mapping
 
-Users can access the form by navigating to **EDI > Setup > Freight forwarder landed cost setup > Shipping port mapping**
+Users can access the form by navigating to **EDI > Setup > Freight forwarder landed cost setup > Shipping measurement unit mapping**
 
 Code mapping the Freight forwarders's value to a D365 Landed cost shipping port. <br>
 
@@ -50,5 +50,5 @@ Used on the following EDI documents (field):
 - Voyage tracking (Port)
 
 ## Data entities:
-- Shipping port mapping
-- Shipping port mapping lines
+- Shipping measurement unit mapping
+- Shipping measurement unit mapping lines
