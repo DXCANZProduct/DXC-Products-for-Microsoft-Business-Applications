@@ -126,7 +126,7 @@ Transfer order % does not exist | Unable to cancel line | Verify if Transfer num
 
 **Rule Id**                 | **Details**                                               | Error    
 :---                        |:---                                                       |:---              
-Transfer order '000300' does not exist
+
 
 At this step the issues are usually around setup/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
