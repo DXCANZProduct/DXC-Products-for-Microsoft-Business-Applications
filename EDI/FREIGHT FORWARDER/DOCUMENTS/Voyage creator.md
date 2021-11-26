@@ -121,7 +121,7 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 
 Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#fixing-staging-to-target-edi-errors).
 
-### Staging line validation - Shipment receipt
+### Staging line validation
 
 ![alt text](../IMAGE/LineChecks_FFVoyageCreator.png "Item checks for Voyage creator")
 
