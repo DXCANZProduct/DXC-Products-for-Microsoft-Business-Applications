@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI 3PL]
-description: [EDI 3PL Documents - Shipment receipt - Purchase order]
+title: [EDI Freight forwarder]
+description: [EDI Freight forwarder Documents - Voyage creator]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 22/11/2021
+ms.date: 26/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,20 +27,24 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Shipment receipt - Purchase order
+# Voyage creator
 
-The following subsections will describe how to view and process the Shipment receipt - Purchase order from the 3PL warehouse. <br>
+The following subsections will describe how to view and process the **Voyage creator** from the Freight forwarder. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
 
-Processing this document posts an arrival journal against the purchase order. <br>
-Optional document settings also allows for posting the purchase order's product receipt for the registered stock.
+Processing this document adds the relevant purchase and/or transfer orders to an existing open Voyage (if document setting allows) or creates a new Voyage. <br>
 
 ## Prerequisites
-The following setup is prerequisites for the Shipment receipt - Purchase order
+The following setup is prerequisites for the **Voyage creator**
 
-### 3PL setup
-EDI > Setup > 3PL setup
-1. Create [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) to map the 3PL's values to D365 inventory statuses.
+### Freight forwarder landed cost setup
+EDI > Setup > Freight forwarder landed cost setup <br>
+Where the Freight forwarder's values differ to D365 or EDI values, use the following mappings for the Voyage creator:
+1. Create [Shipping port mapping](../SETUP/FF%20SETUP/Shipping%20port%20mapping.md) to map the Trading partner's values to D365 Landed cost shipping port.
+2. Create [Modes of delivery mapping](../SETUP/FF%20SETUP/Modes%20of%20delivery%20mapping.md) to map the Trading partner's values to D365 Modes of delivery.
+3. Create [Customs broker mapping](../SETUP/FF%20SETUP/Customs%20broker%20mapping.md) to map the Trading partner's values to D365 Vendor of Shipping type set to _Customs broker_.
+4. Create [Shipping container types mapping](../SETUP/FF%20SETUP/Shipping%20container%20types%20mapping.md) to map the Trading partner's values to D365 Landed cost shipping conntainer types.
+5. Create [Shipping measurement unit mapping](../SETUP/FF%20SETUP/Shipping%20measurement%20unit%20mapping.md) to map the Trading partner's values to D365 Landed cost shipping measurement units.
 
 ### Document type setup
 EDI > Setup > Document types: Shipment receipt - Purchase order
