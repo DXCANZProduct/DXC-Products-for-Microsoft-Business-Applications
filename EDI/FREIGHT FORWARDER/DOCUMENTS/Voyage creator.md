@@ -80,6 +80,8 @@ Header checks are performed when:
 2. Processing from import to staging
 3. Processing from staging to target
 
+![alt text](../IMAGE/HeaderChecks_FFVoyageCreator.png "Header checks for Voyage creator")
+
 ### Step 1 - Import
 When an EDI file is imported, the file name is key to identifying the trading partner and therefore the document template. See [Trading partners](../../CORE/Setup/Trading%20partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
 
@@ -121,30 +123,11 @@ Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#fixing-
 
 ### Staging line validation - Shipment receipt
 
+![alt text](../IMAGE/LineChecks_FFVoyageCreator.png "Item checks for Voyage creator")
+
 **Rule Id**                 | **Details**                                               | Error    
 :---                        |:---                                                       |:---              
-
-
-At this step the issues are usually around setup/business logic issues.
-Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
-
-#### Example line errors:
-**Error message**                     | **Error type**         | **Method to fix**
-:------------------------------------ |:----                   |:----
-
-
-### Validation
-
-[Validation profiles](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
--	**Info** - An infolog is displayed with information only, it is not identified as a warning
--	**Warning** - An infolog is displayed with a warning. It is possible to carry on processing
--	**Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error
-
-The following table describes each validation option for the EDI document. It also describes if the validation rule is not met, but only has an info or warning error tolerance, how the D365 target will be created/updated.
-
-Rule Id	                | Details	                            | Info/Warning tolerance updates
-:--                     |:--                                    |:--
-**Batch Id update**     | Where the batch id received is different to batch id (example ABC123 vs. 123ABC) in the shipment receipt. | Arrival journal posted with 3PL's batch
+Purchase/Trasnfer order number	| Find the D365 purchase or transfer order number to which the voyage creator belongs	| Error at Staging table.  No voyage created
 
 ## View staging table records
 To view the Shipment receipt - Purchase order staging records, go to **EDI > Documents > 3PL documents > Stock transfer receipt > Purchase order**. <br>
