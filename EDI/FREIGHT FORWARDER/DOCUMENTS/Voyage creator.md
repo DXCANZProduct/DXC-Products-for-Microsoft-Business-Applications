@@ -39,7 +39,7 @@ The following setup is prerequisites for the **Voyage creator**
 
 ### Freight forwarder landed cost setup
 EDI > Setup > Freight forwarder landed cost setup <br>
-Where the Freight forwarder's values differ to D365 or EDI values, use the following mappings for the Voyage creator:
+Where the Freight forwarder's values differ to D365/EDI values - use the following mappings for the Voyage creator:
 1. Create [Shipping port mapping](../SETUP/FF%20SETUP/Shipping%20port%20mapping.md) to map the Trading partner's values to D365 Landed cost shipping port.
 2. Create [Modes of delivery mapping](../SETUP/FF%20SETUP/Modes%20of%20delivery%20mapping.md) to map the Trading partner's values to D365 Modes of delivery.
 3. Create [Customs broker mapping](../SETUP/FF%20SETUP/Customs%20broker%20mapping.md) to map the Trading partner's values to D365 Vendor of Shipping type set to _Customs broker_.
