@@ -47,35 +47,36 @@ Where the Freight forwarder's values differ to D365/EDI values - use the followi
 5. Create [Shipping measurement unit mapping](../SETUP/FF%20SETUP/Shipping%20measurement%20unit%20mapping.md) to map the Trading partner's values to D365 Landed cost shipping measurement units.
 
 ### Document type setup
-EDI > Setup > Document types: Shipment receipt - Purchase order
+EDI > Setup > Document types: Voyage creator
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md) for the document.
-1. Create [Validation profile](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md) for the document.
+1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Voyage%20creator.md) for the document.
 
 ### Trading partners
 EDI > Setup > Trading partners
-1. If the warehouse [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
-1. Assign the 3PL setup to the warehouse trading partner's options:
-    -  Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
-    -  Item arrival: Select item arrival journal to use for processing inventory receipts. Options from **Inventory management > Setup > Journal names > Warehouse management**
-1. Add and enable the **Shipment receipt - Purchase order** document to the [Warehouse trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+1. If the Freight forwarder landed cost [trading partner](../SETUP/Trading%20partner.md) doesn't exist, create the new trading partner.
+1. Assign the Freight forwarder landed cost setup to the trading partner's options:
+    -  Shipping port mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Shipping port mapping**
+    -  Modes of delivery mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Modes of delivery mapping**
+    -  Customs broker mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Customs broker mapping**
+    -  Shipping container types mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Shipping container types mapping**
+    -  Shipping measurement unit mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Shipping measurement unit mapping**
+1. Add and enable the **Voyage creator** document to the [Freight forwarder landed cost trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
-    - Validation profile
     - Search mask
 
 ## Processing
 Inbound files have the following three steps:
 1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**.
-2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > 3PL documents > Stock transfer receipt > Purchase order**.
-3. **Staging to target** - The staging record/s is processed to target. If the EDI shipment receipt is succefully processed the D365 arrival journal will be posted for the purchase order. And if the document setting **Auto post receipt** is set to _Yes_, the purchase order's product receipt will also be posted.
+2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > Freight forwarder landed cost documents > Voyage creator**.
+3. **Staging to target** - The staging record/s is processed to target. If the Voyage creator is succefully processed the relevent D365 purchase and/or transfer orders will be added to an existing open Voyage (if document setting allows) or create a new Voyage.
 
 ### Create document
 ![alt text](../../CORE/Image/Create_Document.png "Create document")
 
-### Header checks for Shipment receipt
+### Header checks for Voyage creator
 Header checks are performed when:
-1. Importing Shipment receipt file
+1. Importing Voyage creator file
 2. Processing from import to staging
 3. Processing from staging to target
 
@@ -105,26 +106,18 @@ At this step the issues are usually around the file not matching the template.
 Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
 
 ### Step 3 - Staging to target
-If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 arrival journal won't be posted for the staging record.
+If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 Landed cost voyage won't be created/added to for the staging record.
 
 #### Possible issues and fixes
 **Staging to target** errors for Shipment receipt can be viewed in:
-- **EDI > Documents > 3PL documents > Stock transfer receipt > Purchase order** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **3PL documents**, tile **Shipment receipt - Purchase order errors**
-- **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Shipment receipt - Purchase order**
+- **EDI > Documents > Freight forwarder landed cost documents > Voyage creator** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **Freight forwarder landed cost documents**, tile **Voyage creator errors**
+- **EDI > Document maintenance**, tab **Freight forwarder landed cost documents**, **Documents** page, tab **Voyage creator**
 
 At this step the issues are usually around mapping/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
 
-> Note: When the Version log displays an **Error type** of _Processing error_, the processing has stopped because of a standard D365 error and the **Message** will display the standard D365 error. <br>
-> Note: Similar to manually processing a D365 transaction, EDI will stop at the first processing error and only this error is displayed. Fixing the error and reprocessing might result in subsequent standard processing errors which need to be dealt with.
-
-#### Example header errors:
-**Error message**       | **Error type**         | **Method to fix**
-:---------------------- |:----                   |:----
-Receipt list % does not exist for purchase order %  | Receipt list not found    | The EDI record's purchase order and receipt combination doesn't match to D365. Verify and fix staging record.
-
-> Note: % contains staging data for the record
+Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#fixing-staging-to-target-edi-errors).
 
 ### Staging line validation - Shipment receipt
 
