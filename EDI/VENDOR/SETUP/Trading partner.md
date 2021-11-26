@@ -57,6 +57,8 @@ The following table describes the vendor module fields that are available on the
 **Misc method of handling**       |	Code specifying if the misc. charge or allowance is required to be added to the D365 purchase invoice <br> Note: For further information see [Setup misc. method of handling](VENDOR%20SETUP/Misc%20method%20of%20handling.md)
 <ins>**Acknowledgement**</ins>	
 **POA response code group**       |	POA Response codes are used to identify the status of information used in a purchase order acknowledgement for each vendor. <br> Note: For further information see [Setup POA response codes](VENDOR%20SETUP/POA%20response%20code%20group.md)
+<ins>**Other**</ins>	
+**UOM**                           |	Unit of measure mappings. Ability to map a trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM%20mapping.md)
 
 - Data entity: EDI Vendors
 
@@ -80,8 +82,8 @@ The **Incoming documents** FastTab of the **Trading partners** page is discussed
 - Data entity: EDI Documents - Vendors
 
 ### Vendors
-EDI trading partner information and Vendor documents can be viewed via FactBoxes available on the **All vendors** form.
-These can be accessed by navigating to **Accounts payable > Vendors > All vendors**.
+EDI trading partner information and Vendor documents can be viewed via FactBoxes available on the **All vendors** page. <br>
+These can be accessed by navigating to **Accounts payable > Vendors > All vendors** and selecting the vendor.
 
 ### Data entities
 
