@@ -255,5 +255,5 @@ The following EDI Line fields are available on the lines page. <br>
 **Port qualifier**          | If port is provided, indicates if it is the **From** or **To port** for the leg	| Used to find Voyage tracking leg
 **Mode of delivery**        | Mode of delivery for the leg	
 **Date**                    | Date the activity will or has occurred	| Voyage > Tracking > Start date OR <br> Estimated end date OR <br> Actual end date
-**Date qualifier**          | Specifies the type of Date. Options are: <br> • Estimated <br> • Actual <br> Used to determine which Tracking date will be updated where the Activity is for an End date. <br> Start date doesn’t have an estimated vs. actual, therefor no effect on where date is populated for a Start date.	
+**Date qualifier**          | Specifies the type of Date and mapped in [document settings](../SETUP/SETTING%20PROFILES/Voyage%20tracking.md). Options are: <br> • Estimated <br> • Actual <br> Used to determine which Tracking date will be updated where the Activity is for an End date. <br> Start date doesn’t have an estimated vs. actual, therefor no effect on where date is populated for a Start date.	
 **Note**                    | Notes for the tracking update. Will override any current notes for the tracking leg.  | Voyage > Tracking > Notes
