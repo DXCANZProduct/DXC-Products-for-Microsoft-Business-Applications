@@ -41,7 +41,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Item ID source**  |	Determine the method of item identification used by this freight forwarder	| •	**Our Item number** - this is the item ID on the items form <br> •	**External item number** - this is the purchase order’s external item ID <br> •	**GTIN** - this is the GTIN assigned to an item <br> •	**Barcode** - This is the Barcode assigned to an item.
 **Allow purchase order over delivery**  |	Increase deliver remainder on purchase order (PO) |	If Voyage qty > PO remainder <br> •	**Yes** – Voyage is created, and PO deliver remainder increased <br> •	**No** – Staging record errors, and Voyage isn’t created
 **Allow transfer order over delivery**  |	Increase ship and receive remain on transfer order (TO) |	If Voyage qty > TO remainder <br> •	**Yes** – Voyage is created, and TO deliver remainder increased <br> •	**No** – Staging record errors, and Voyage isn’t created
-**Duplicate tolerance** |	If external voyager id/booking reference already exists	          | •	**Accept** – Add to existing Open Voyage <br> •	**Warning** – Creates new Voyage and staging record has Warning log <br> •	**Error** – Staging record errors, and Voyage isn’t created
+**Duplicate tolerance** |	If external voyage id/booking reference already exists	          | •	**Accept** – Add to existing Open Voyage <br> •	**Warning** – Creates new Voyage and staging record has Warning log <br> •	**Error** – Staging record errors, and Voyage isn’t created
 **Source line search strategy** |	Determines which source line to use when PO/TO contains multiple lines for same item + dims. See following subsection for additional details	| •	Top down <br> •	Expected date <br> •	Quantity
 
 ### Source line strategy
