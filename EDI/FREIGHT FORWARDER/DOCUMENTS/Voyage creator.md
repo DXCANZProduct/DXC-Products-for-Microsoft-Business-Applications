@@ -157,7 +157,7 @@ Document setting [Duplicate tolerance](../SETUP/SETTING%20PROFILES/Voyage%20crea
 - **Warning** – Creates new Voyage and staging record has Warning log
 - **Error** – Staging record errors, and Voyage isn’t created
 
-> Note: When the **Voyage status** assigned to the existing D365 Landed cost allows modification, the existing D365 Voyage is _Open_. 
+> Note: When the **Voyage status** assigned to the existing D365 Landed cost allows modification, the existing D365 Voyage is considered _Open_. 
 
 ## View staging table records
 To view the Voyage creator staging records, go to **EDI > Documents > Freight forwarder landed cost documents > Voyage creator**. <br>
