@@ -41,5 +41,5 @@ Error message	                                      | Error type	            | M
 :--                                                 |:--                      |:--            
 
 ### Voyage tracking
-Error	                                              | How to fix              | Method to fix
+Error	message                                       | How to fix              | Method to fix
 :--                                                 |:--                      |:--
