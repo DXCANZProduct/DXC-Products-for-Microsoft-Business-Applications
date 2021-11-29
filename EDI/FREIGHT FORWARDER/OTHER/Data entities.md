@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI 3PL]
-description: [EDI 3PL - Data entities]
+title: [EDI Freight forwarder]
+description: [EDI Freight forwarder - Data entities]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 19/11/2021
+ms.date: 30/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,23 +29,27 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Data entities
 
-The following is a summary of data entities available for the 3PL EDI module:
+The following is a summary of data entities available for the Freight forwarder landed cost EDI module:
 
-## 3PL setup
-EDI > Setup > 3PL setup
+## Freight forwarder landed cost setup
+EDI > Setup > Freight forwarder landed cost setup
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | Inventory journal name mapping      | Create new **Inventory journal name mapping group**. EDI > Setup > 3PL setup > Inventory journal name mapping |
-2	                | Inventory journal name mapping line | Create new **Inventory journal name mapping lines**. EDI > Setup > 3PL setup > Inventory journal name mapping | Inventory journal name mapping
-3	                | Disposition code mapping            | Create new **Disposition code mapping group**. EDI > Setup > 3PL setup > Disposition code mapping | 
-4	                | Disposition code mapping lines      | Create new **Disposition code mapping lines**. EDI > Setup > 3PL setup > Disposition code mapping | Disposition code mapping
-5	                | Inventory status Id mapping         | Create new **Inventory status Id mapping group**. EDI > Setup > 3PL setup > Inventory status Id mapping |
-6	                | Inventory status Id mapping lines   | Create new **Inventory status Id mapping lines**. EDI > Setup > 3PL setup > Inventory status Id mapping | Inventory status Id mapping
-7	                | Transaction direction mapping       | Create new **Transaction direction mapping group**. EDI > Setup > 3PL setup > Transaction direction mapping |
-8	                | Transaction direction mapping lines | Create new **Transaction direction mapping lines**. EDI > Setup > 3PL setup > Transaction direction mapping | Transaction direction mapping
-9	                | 3PL EDI order purpose group         | Create new **3PL order purpose group**. EDI > Setup > 3PL setup > Order purpose group |
-10	              | 3PL EDI order purpose lines         | Create new **3PL order purpose lines**. EDI > Setup > 3PL setup > Order purpose group | 3PL EDI order purpose group
+1	                | Shipping port mapping           | Create new **Shipping port mapping**. EDI > Setup > Freight forwarder landed cost setup > Shipping port mapping |
+2	                | Shipping port mapping lines     | Create new **Shipping port mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Shipping port mapping | Shipping port mapping
+3	                | Modes of delivery mapping       | Create new **Modes of delivery mapping**. EDI > Setup > Freight forwarder landed cost setup > Modes of delivery mapping | 
+4	                | Modes of delivery mapping lines | Create new **Modes of delivery mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Modes of delivery mapping | Modes of delivery mapping
+5	                | Customs broker mapping          | Create new **Customs broker mapping**. EDI > Setup > Freight forwarder landed cost setup > Customs broker mapping |
+6	                | Customs broker mapping lines    | Create new **Customs broker mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Customs broker mapping | Customs broker mapping
+7	                | Shipping container type mapping | Create new **Shipping container type mapping**. EDI > Setup > Freight forwarder landed cost setup > Shipping container type mapping |
+8	                | Shipping container type mapping lines | Create new **Shipping container type mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Shipping container type mapping | Shipping container type mapping
+9	                | Activity mapping                | Create new **Activity mapping**. EDI > Setup > Freight forwarder landed cost setup > Activity mapping |
+10	              | Activity mapping lines          | Create new **Activity mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Activity mapping | Activity mapping
+11	              | Shipping port qualifier mapping | Create new **Shipping port qualifier mapping**. EDI > Setup > Freight forwarder landed cost setup > Shipping port qualifier mapping |
+12	              | Shipping port qualifier mapping lines | Create new **Shipping port qualifier mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Shipping port qualifier mapping | Shipping port qualifier mapping
+13	              | Shipping measurement unit mapping | Create new **Shipping measurement unit mapping**. EDI > Setup > Freight forwarder landed cost setup > Shipping measurement unit mapping |
+14	              | Shipping measurement unit mapping lines | Create new **Shipping measurement unit mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Shipping measurement unit mapping | Shipping measurement unit mapping
 
 ## Document setting profiles
 EDI > Setup > Document types (Setting profiles for EDI 3PL documents)
