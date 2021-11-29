@@ -42,6 +42,8 @@ The following fields are automatically updated as well when the tracking leg dat
 - Estimated days
 - Actual days
 
+The tracking leg for the complete voyage can be updated, or per container.
+
 ## Prerequisites
 The following setup is prerequisites for the **Voyage tracking**
 
@@ -114,7 +116,7 @@ At this step the issues are usually around the file not matching the template.
 Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
 
 ### Step 3 - Staging to target
-If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 Landed cost voyage won't be created/added to for the staging record.
+If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 Landed cost voyage's tracking leg won't be updated based on information from the staging record.
 
 #### Possible issues and fixes
 **Staging to target** errors for Shipment receipt can be viewed in:
@@ -125,43 +127,72 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 At this step the issues are usually around mapping/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
 
-Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#fixing-staging-to-target-edi-errors).
+Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#voyage-tracking).
 
 ### Staging line validation
 
-**Rule Id**                 | **Details**                                               | Error    
+**Rule Id**                 | **Details**                                               | **Error**    
 :---                        |:---                                                       |:---              
-Purchase/Transfer order number	| Find the D365 purchase or transfer order number to which the voyage tracking belongs	| Error at Staging table. <br>  No voyage created
-No Valid Item	            | No valid item based on the different options available    | Error at Staging table. <br>  No voyage created
+Voyage	                    | Find the D365 Voyage to which the voyage tracking belongs | Error at Staging table.  No voyage tracking updated
 
-### Journey template calculation
-The following fields from the EDI Voyage tracking document is used when calculating the target Landed cost's Voyage field **Journey template**:
-- From port
-- To port
-- Mode of delivery
+### Activity
+Activity is mapped on Trading partner form’s Options. This is used to find the applicable leg on the Voyage’s tracking and if the start or end date should be updated. 
 
-> Note: If **multiple** journey templates are found, the staging-to-target step will error, and user will be able to select the correct **Journey template** in the staging page and process.
+Example X12 Shipment status codes mapped to D365 Activity in EDI's [Activity mapping](../SETUP/FF%20SETUP/Activity%20mapping.md):
 
-#### Example
-Inbound file fields example:
-- From port (ShipFromPort): CNSHA
-- To port (ShipToPort): USLGB
-- Mode of delivery (DlvModeId): SEA 
+X12 Shipment status code    | X12 Description	                                | Landed cost Activity	    | Date selection
+:--                         |:--                                                |:--                        |:--
+**L**                       | Loading	                                        | Load	                    | Start date
+**AE**                      | Loaded on Board at First Port of Load             | Load	                    | End date
+**VD**                      | Vessel Departure	                                | Sail	                    | Start date
+**UV**                      | Discharged from Vessel at Last Port of Discharge	| Sail	                    | End date
+**VA**                      | Vessel Arrival	                                | Sail	                    | End date
+**CT**                      | Customs Released	                                | Customs	                | End date
+**AM**                      | Loaded on Truck	                                | Local	                    | Start date
+**D**                       | Actual Door Delivery	                            | Local	                    | End date
 
-Our example mapped to delivery mode 40 on Trading partner, will find the following Journey template:
-Journey template	| From port	    | To port	    | Mode of delivery	| Journey from port	    | Journey to port
-:--                 |:--            |:--            |:--                |:--                    |:--
-CNSHA-USLGB(S)	    | CNSHA	        | USLGB	        | 40	            | √	                    | √
+####	Estimated/Actual days
+The Voyage tracking’s document setup specifies what indicator the Trading partner will use for estimated vs. actual days.
+Since Landed cost only has an estimate for end dates, the date qualifier doesn’t affect start dates. 
+Example X12 date qualifiers:
+139 = Estimated
+140 = Actual
+3.4.2.2.5.2	Port qualifier
+Port qualifier is mapped on Trading partner form’s Options.
+Example X12 qualifiers:
+L = Port of Loading (From port)
+R = Place of Receipt (From port)
+D = Port of Discharge (To port)
+E = Place of Delivery (To port)
 
-**Journey template** (ShipJourneyId) field in the Voyage tracking, also allows for inbound file to specify the Journey template which will then disregard the port and delivery mode fields. This field isn’t mandatory but provides flexibility.
+This is used to find the applicable leg on the Voyage tracking to update, for example a port could appear multiple times on a multi-leg journey. 
+3.4.2.2.5.3	Examples
+Inputs	Result
+Activity
+Date qualifier	L
+140	Update Load leg’s start date
+Activity
+Date qualifier
+Port
+Port qualifier	OA
+139
+CNNGB
+L	Update Sail’s From port leg start date
+Activity
+Date qualifier
+Port
+Port qualifier	VA
+139
+AUMEL
+D	Update Sail’s To port leg estimated end date
+Activity
+Date qualifier
+Port
+Port qualifier	VA
+140
+AUMEL
+D	Update Sail’s To port leg actual end date
 
-### Duplicate tolerance
-Document setting [Duplicate tolerance](../SETUP/SETTING%20PROFILES/Voyage%20tracking.md) manages the outcome when an EDI Voyage tracking document is received and the **Booking reference** is already used on an existing D365 Landed cost Voyage. The options are:
-- **Accept** – Add to existing Open Voyage
-- **Warning** – Creates new Voyage and staging record has Warning log
-- **Error** – Staging record errors, and Voyage isn’t created
-
-> Note: When the **Voyage status** assigned to the existing D365 Landed cost allows modification, the existing D365 Voyage is considered _Open_. 
 
 ## View staging table records
 To view the Voyage tracking staging records, go to **EDI > Documents > Freight forwarder landed cost documents > Voyage tracking**. <br>
@@ -175,7 +206,7 @@ The following EDI fields are available on the list page.
 **EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI%20parameters.md#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
-**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created/added to Landed cost voyage(s). <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and updated Landed cost Voyage's tracking leg. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 **Trading partner account**     | Vendor account of **Shipping type** set to _Shipping company_ assigned to the staging record.
 **Trading partner GLN**         | The Freight forwarder’s global location number is shown here.
 **Created date and time**       | The date and time the selected record was created in the staging table.
@@ -191,7 +222,7 @@ The following buttons are available on the **Voyage tracking**'s Action Pane, ta
 **Process all voyages**         | Process voyage tracking for the staging records that have a **Staging to target status** set to _Not started_. 
 **Inbound files**               | View the inbound file record the selected staging record.
 **Trading partner**             | View the trading partner details in the [Trading partners](../SETUP/Trading%20partner.md) page.
-**Voyages**                     | If the EDI staging record has been completed it is possible to inquire on the Landed cost voyages created or added to.
+**Voyages**                     | If the EDI staging record has been completed it is possible to inquire on the applicable Landed cost voyages.
 **Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
 **Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
 **Reset Status**                | You can reset the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
@@ -217,7 +248,7 @@ The following EDI Header staging fields are available on the header page.
 **EDI number**          | EDI Staging table record id                           | 
 **Company account**     | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here.   | 
-**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created/added to Landed cost voyage(s). <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and updated Landed cost Voyage's tracking leg. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 <ins>**Reset status**</ins>		
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
@@ -230,42 +261,12 @@ The following EDI Line fields are available on the lines page. <br>
 
 **Field**                   | **Description**                                                           | **D365 target**
 :---                        |:---                                                                       |:---
-**Line number**             | The line within the EDI table/file. Does not refer to Purchase or Transfer order line number.	
-**Booking reference**       | Freight forwarder’s reference for the voyage. Can also be used as reference for Voyage tracking document   | Voyage > Booking reference
-**Description**             | Voyage description	                                                    | Voyage > Description
-**Voyage**                  | Populated with target Voyage, once staging record has been completed and created a voyage/s	| Voyage > Voyage
-**Shipping container**      | Shipping container identification. Used to create a new Landed cost shipping container or add to existing container for the voyage  | Voyage lines > Shipping container
-**Shipping container type** | Used to populate to Shipping container type for the target Shipping container. Mapped values can be used by assigning [Shipping container types mapping](../SETUP/FF%20SETUP/Shipping%20container%20types%20mapping.md) to the Trading partner.	| Shipping container > Shipping container type
-**Ship date**               | Voyage and Shipping container’s ship date	                                | Voyage > Ship date <br> Shipping container > Ship date
-**From port**               | The originating **From port**. If Journey template is not provided, this field is used to determine Journey template	| Used in [calculation](#journey-template-calculation) for Voyage > Journey template
-**To port**                 | The final destination’s **To port**. If Journey template not provided, this field is used to determine Journey template	| Used in [calculation](#journey-template-calculation) for Voyage > Journey template
-**Mode of delivery**        | The mode of delivery between **From** and **To port**. If Journey template not provided, this field is used to determine Journey template	| Used in calculation for Voyage > Journey template
-**Number**                  | The D365 **Purchase** or **Transfer order number** for the voyage line	| Voyage lines > Number
-**Reference**               | Indicates the reference for Number. Options are: <br> • Purchase order <br> • Transfer	| Voyage lines > Reference
-**Bar code**                | The item identifier as sent by the trading partner. Used when Item Id source is: <br> • GTIN <br> • Barcode <br> Converted to internal item number by using **Item id source** on document settings.	| Voyage lines > Item number
-**Item number**             | The item identifier as sent by the trading partner. Used when Item Id source is: <br> • Our item number <br> • External item number <br> Converted to internal item number by using **Item id source** on document settings.	| Voyage lines > Item number
-**Size**                    | Inventory dimension - Size	                                            | Voyage lines > Size
-**Style**                   | Inventory dimension - Style	                                            | Voyage lines > Style
-**Configuration**           | Inventory dimension - Configuration	                                    | Voyage lines > Configuration
-**Color**                   | Inventory dimension - Colour	                                            | Voyage lines > Color
-**Quantity**                | Voyage line’s quantity	                                                | Voyage lines > Quantity
-**Unit**                    | Unit of measure of Voyage line quantity. <br> Mapped values can be used by assigning [UOM mapping](../../CORE/Setup/UOM%20mapping.md) to the Trading partner.	    | Voyage line details > Reference > Unit
-**House air waybill/Bill of lading**    | HAWB for voyage line	                                        | Voyage > House air waybill/Bill of lading
-**Master air waybill/Bill of lading**   | MAWB for voyage line	                                        | Voyage > Master air waybill/Bill of lading
-**Folio**                   | Folio for voyage line. <br> If blank, the Landed cost Folio number sequence will be used to create a new folio | Voyage lines > Folio
-**Vendor account**          | Folio’s vendor account	                                                | Folios > Vendor account
-**Customs broker**          | Folio’s customer broker. <br> Mapped values can be used by assigning [Customs broker mapping](../SETUP/FF%20SETUP/Customs%20broker%20mapping.md) to the Trading partner.	| Folios > Customs broker
-**Number of cartons**       | Voyage line and folio’s number of cartons	                                | Voyage lines > Number of cartons <br> Folios > Number of cartons
-**Measurement**             | Voyage measurement	                                                    | oyage > Measurement
-**Measurement unit**        | Voyage measurement unit. <br> Mapped values can be used by assigning [Shipping measurement unit mapping](../SETUP/FF%20SETUP/Shipping%20measurement%20unit%20mapping.md) to the Trading partner.	| Voyage > Measurement unit
-**Line measurement**        | Voyage line measurement	                                                | Voyage lines > Measurement
-**Line measurement unit**   | Voyage line measurement unit. <br> Mapped values can be used by assigning [Shipping measurement unit mapping](../SETUP/FF%20SETUP/Shipping%20measurement%20unit%20mapping.md) to the Trading partner.	 | Voyage lines > Measurement unit
-**Vessel**                  | Voyage vessel	                                                            | Voyage > Vessel
-**External Voyage Id**      | External voyage identification	                                        | Voyage > External voyage ID
-**Journey template**        | Journey template to be used for Landed cost Tracking. <br> If blank, the following will be used to determine the applicable Journey template: <br> • From port <br> •	To port <br> •	Mode of delivery    | Voyage > Journey template
-**Departure date**          | Departure date for the voyage	                                            | Voyage > Departure date
-**ETA at shipping port**    | Estimated arrival at shipping port	                                    | Voyage > ETA at shipping port
-**Shipment estimated delivery date**    | Estimated delivery date	                                    | Voyage > Estimated delivery date <br> Container > Estimated delivery date - if **Container estimated delivery date** blank
-**Container estimated delivery date**	| Estimated delivery date for container. <br> If blank, **Shipment estimated delivery date** will be used	| Container > Estimated delivery date
-**Shipping company seal number**    | Container’s shipping company seal number	                        | Container > Shipping company seal number
-
+**Voyage**                  | Internal or external id for the Voyage. <br> Document setting **Voyage Id source** (External Id or Internal Id) used to find the applicable D365 Voyage <br> • External Id = Voyage’s Booking reference <br> • Internal Id = Voyage	                   | Used to find Voyage target
+**Shipping container**      | Shipping container identification.  <br> If left blank, the complete voyage’s tracking will be updated. If populated, only the applicable container on the voyage’s tracking will be updated.	        | Used to find Voyage’s Shipping container
+**Activity**                | Activity/ Shipment status code of the voyage. <br> Used to find the applicable Tracking leg and determines if start/end date is updated. <br> Mapped values must be used by assigning Activity mapping to the Trading partner. <br> Voyage tracking document setting profile’s date qualifiers for Estimated and Actual is also required when end date is updated.	| Used to find Voyage tracking leg and which end date to populate
+**Port**                    | Activity location	    | Used to find Voyage tracking leg
+**Port qualifier**          | If port is provided, indicates if it is the **From** or **To port** for the leg	| Used to find Voyage tracking leg
+**Mode of delivery**        | Mode of delivery for the leg	
+**Date**                    | Date the activity will or has occurred	| Voyage > Tracking > Start date OR <br> Estimated end date OR <br> Actual end date
+**Date qualifier**          | Specifies the type of Date. Options are: <br> • Estimated <br> • Actual <br> Used to determine which Tracking date will be updated where the Activity is for an End date. <br> Start date doesn’t have an estimated vs. actual, therefor no effect on where date is populated for a Start date.	
+**Note**                    | Notes for the tracking update. Will override any current notes for the tracking leg.  | Voyage > Tracking > Notes
