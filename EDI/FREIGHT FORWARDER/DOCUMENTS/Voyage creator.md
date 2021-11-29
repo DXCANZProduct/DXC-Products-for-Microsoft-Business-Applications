@@ -119,7 +119,7 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 At this step the issues are usually around mapping/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
 
-Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#fixing-staging-to-target-edi-errors).
+Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md##voyage-tracking).
 
 ### Staging line validation
 
