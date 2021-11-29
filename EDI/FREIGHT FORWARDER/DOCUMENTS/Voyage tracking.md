@@ -2,7 +2,7 @@
 # required metadata
 
 title: [EDI Freight forwarder]
-description: [EDI Freight forwarder Documents - Voyage creator]
+description: [EDI Freight forwarder Documents - Voyage tracking]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 26/11/2021
@@ -27,19 +27,19 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Voyage creator
+# Voyage tracking
 
-The following subsections will describe how to view and process the **Voyage creator** from the Freight forwarder. <br>
+The following subsections will describe how to view and process the **Voyage trackingr** from the Freight forwarder. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
 
 Processing this document adds the relevant purchase and/or transfer orders to an existing open Voyage (if document setting allows) or create new Voyage(s). <br>
 
 ## Prerequisites
-The following setup is prerequisites for the **Voyage creator**
+The following setup is prerequisites for the **Voyage tracking**
 
 ### Freight forwarder landed cost setup
 EDI > Setup > Freight forwarder landed cost setup <br>
-Where the Freight forwarder's values differ to D365/EDI values - use the following mappings for the Voyage creator:
+Where the Freight forwarder's values differ to D365/EDI values - use the following mappings for the Voyage tracking:
 1. Create [Shipping port mapping](../SETUP/FF%20SETUP/Shipping%20port%20mapping.md) to map the Trading partner's values to D365 Landed cost shipping port.
 2. Create [Modes of delivery mapping](../SETUP/FF%20SETUP/Modes%20of%20delivery%20mapping.md) to map the Trading partner's values to D365 Modes of delivery.
 3. Create [Customs broker mapping](../SETUP/FF%20SETUP/Customs%20broker%20mapping.md) to map the Trading partner's values to D365 Vendor of Shipping type set to _Customs broker_.
@@ -47,9 +47,9 @@ Where the Freight forwarder's values differ to D365/EDI values - use the followi
 5. Create [Shipping measurement unit mapping](../SETUP/FF%20SETUP/Shipping%20measurement%20unit%20mapping.md) to map the Trading partner's values to D365 Landed cost shipping measurement units.
 
 ### Document type setup
-EDI > Setup > Document types: Voyage creator
+EDI > Setup > Document types: Voyage tracking
 1. Create [Template](../../CORE/Setup/DocumentTypes/File%20templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Voyage%20creator.md) for the document.
+1. Create [Setting profile](../SETUP/SETTING%20PROFILES/Voyage%20tracking.md) for the document.
 
 ### Trading partners
 EDI > Setup > Trading partners
@@ -60,7 +60,7 @@ EDI > Setup > Trading partners
     -  Customs broker mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Customs broker mapping**
     -  Shipping container types mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Shipping container types mapping**
     -  Shipping measurement unit mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Shipping measurement unit mapping**
-1. Add and enable the **Voyage creator** document to the [Freight forwarder landed cost trading partner](../SETUP/Trading%20partner.md) and select the applicable:
+1. Add and enable the **Voyage tracking** document to the [Freight forwarder landed cost trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
     - Search mask
@@ -68,19 +68,19 @@ EDI > Setup > Trading partners
 ## Processing
 Inbound files have the following three steps:
 1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**.
-2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > Freight forwarder landed cost documents > Voyage creator**.
-3. **Staging to target** - The staging record/s is processed to target. If the Voyage creator is succefully processed the relevent D365 purchase and/or transfer orders will be added to an existing open Voyage (if document setting allows) or create a new Voyage.
+2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > Freight forwarder landed cost documents > Voyage tracking**.
+3. **Staging to target** - The staging record/s is processed to target. If the Voyage tracking is succefully processed the relevent D365 purchase and/or transfer orders will be added to an existing open Voyage (if document setting allows) or create a new Voyage.
 
 ### Create document
 ![alt text](../../CORE/Image/Create_Document.png "Create document")
 
-### Header checks for Voyage creator
+### Header checks for Voyage tracking
 Header checks are performed when:
-1. Importing Voyage creator file
+1. Importing Voyage tracking file
 2. Processing from import to staging
 3. Processing from staging to target
 
-![alt text](../IMAGE/HeaderChecks_FFVoyageCreator.png "Header checks for Voyage creator")
+![alt text](../IMAGE/HeaderChecks_FFVoyagetracking.png "Header checks for Voyage tracking")
 
 ### Step 1 - Import
 When an EDI file is imported, the file name is key to identifying the trading partner and therefore the document template. See [Trading partners](../../CORE/Setup/Trading%20partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
@@ -112,9 +112,9 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 #### Possible issues and fixes
 **Staging to target** errors for Shipment receipt can be viewed in:
-- **EDI > Documents > Freight forwarder landed cost documents > Voyage creator** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **Freight forwarder landed cost documents**, tile **Voyage creator errors**
-- **EDI > Document maintenance**, tab **Freight forwarder landed cost documents**, **Documents** page, tab **Voyage creator**
+- **EDI > Documents > Freight forwarder landed cost documents > Voyage tracking** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **Freight forwarder landed cost documents**, tile **Voyage tracking errors**
+- **EDI > Document maintenance**, tab **Freight forwarder landed cost documents**, **Documents** page, tab **Voyage tracking**
 
 At this step the issues are usually around mapping/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
@@ -123,15 +123,15 @@ Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#fixing-
 
 ### Staging line validation
 
-![alt text](../IMAGE/LineChecks_FFVoyageCreator.png "Item checks for Voyage creator")
+![alt text](../IMAGE/LineChecks_FFVoyagetracking.png "Item checks for Voyage tracking")
 
 **Rule Id**                 | **Details**                                               | Error    
 :---                        |:---                                                       |:---              
-Purchase/Transfer order number	| Find the D365 purchase or transfer order number to which the voyage creator belongs	| Error at Staging table. <br>  No voyage created
+Purchase/Transfer order number	| Find the D365 purchase or transfer order number to which the voyage tracking belongs	| Error at Staging table. <br>  No voyage created
 No Valid Item	            | No valid item based on the different options available    | Error at Staging table. <br>  No voyage created
 
 ### Journey template calculation
-The following fields from the EDI Voyage creator document is used when calculating the target Landed cost's Voyage field **Journey template**:
+The following fields from the EDI Voyage tracking document is used when calculating the target Landed cost's Voyage field **Journey template**:
 - From port
 - To port
 - Mode of delivery
@@ -149,10 +149,10 @@ Journey template	| From port	    | To port	    | Mode of delivery	| Journey from
 :--                 |:--            |:--            |:--                |:--                    |:--
 CNSHA-USLGB(S)	    | CNSHA	        | USLGB	        | 40	            | √	                    | √
 
-**Journey template** (ShipJourneyId) field in the Voyage creator, also allows for inbound file to specify the Journey template which will then disregard the port and delivery mode fields. This field isn’t mandatory but provides flexibility.
+**Journey template** (ShipJourneyId) field in the Voyage tracking, also allows for inbound file to specify the Journey template which will then disregard the port and delivery mode fields. This field isn’t mandatory but provides flexibility.
 
 ### Duplicate tolerance
-Document setting [Duplicate tolerance](../SETUP/SETTING%20PROFILES/Voyage%20creator.md) manages the outcome when an EDI Voyage creator document is received and the **Booking reference** is already used on an existing D365 Landed cost Voyage. The options are:
+Document setting [Duplicate tolerance](../SETUP/SETTING%20PROFILES/Voyage%20tracking.md) manages the outcome when an EDI Voyage tracking document is received and the **Booking reference** is already used on an existing D365 Landed cost Voyage. The options are:
 - **Accept** – Add to existing Open Voyage
 - **Warning** – Creates new Voyage and staging record has Warning log
 - **Error** – Staging record errors, and Voyage isn’t created
@@ -160,7 +160,7 @@ Document setting [Duplicate tolerance](../SETUP/SETTING%20PROFILES/Voyage%20crea
 > Note: When the **Voyage status** assigned to the existing D365 Landed cost allows modification, the existing D365 Voyage is considered _Open_. 
 
 ## View staging table records
-To view the Voyage creator staging records, go to **EDI > Documents > Freight forwarder landed cost documents > Voyage creator**. <br>
+To view the Voyage tracking staging records, go to **EDI > Documents > Freight forwarder landed cost documents > Voyage tracking**. <br>
 Use this page to review staging and process the EDI documents. Succesully processing to target adds the relevant purchase and/or transfer orders to an existing open Voyage (if document setting allows) or create new Voyage(s).
 
 ### List page
@@ -179,12 +179,12 @@ The following EDI fields are available on the list page.
 **Message**                     | Displays the first error's message from **Version log**.
 
 ### Buttons
-The following buttons are available on the **Voyage creator**'s Action Pane, tab **Voyage creator**.
+The following buttons are available on the **Voyage tracking**'s Action Pane, tab **Voyage tracking**.
 
 **Button**	                    | **Description**
 :---                            |:----
-**Process selected voyages**    | Process voyage creator for the selected record in the staging table.
-**Process all voyages**         | Process voyage creator for the staging records that have a **Staging to target status** set to _Not started_. 
+**Process selected voyages**    | Process voyage tracking for the selected record in the staging table.
+**Process all voyages**         | Process voyage tracking for the staging records that have a **Staging to target status** set to _Not started_. 
 **Inbound files**               | View the inbound file record the selected staging record.
 **Trading partner**             | View the trading partner details in the [Trading partners](../SETUP/Trading%20partner.md) page.
 **Voyages**                     | If the EDI staging record has been completed it is possible to inquire on the Landed cost voyages created or added to.
@@ -194,7 +194,7 @@ The following buttons are available on the **Voyage creator**'s Action Pane, tab
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
 **Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
 
-The following buttons are available on the **Voyage creator**'s Action Pane, tab **Acknowledgement**.
+The following buttons are available on the **Voyage tracking**'s Action Pane, tab **Acknowledgement**.
 The **Acknowledgement** tab is available on all incoming documents staging pages and enables the user to process or view the **Functional acknowledgement outbound** that has been created for the inbound document.
 
 **Button**	                    | **Description**
