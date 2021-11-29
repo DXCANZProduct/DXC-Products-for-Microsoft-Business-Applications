@@ -172,12 +172,12 @@ Example X12 qualifiers:
 This is used to find the applicable leg on the Voyage tracking to update, for example a port could appear multiple times on a multi-leg journey. 
 
 #### Examples
-Field       | Example	            | Tracking leg update result
-:--         |:--                    |:--    
-Activity <br> Date qualifier	| L <br> 140	| Update Load leg’s start date
-Activity <br> Date qualifier <br> Port <br> Port qualifier	| OA <br> 139 <br> CNNGB <br> L	| Update Sail’s From port leg start date
-Activity <br> Date qualifier <br> Port <br> Port qualifier	| VA <br> 139 <br> AUMEL <br> D	| Update Sail’s To port leg estimated end date
-Activity <br> Date qualifier <br> Port <br> Port qualifier	| VA <br> 140 <br> AUMEL <br> D	| Update Sail’s To port leg actual end date
+Field & Example	            | Tracking leg update result
+:--                         |:--    
+Activity = L <br> Date qualifier = 140 | Update Load leg’s start date
+Activity = OA <br> Date qualifier = 139 <br> Port = CNNGB <br> Port qualifier = L | Update Sail’s From port leg's Start date
+Activity = VA <br> Date qualifier = 139 <br> Port = AUMEL <br> Port qualifier = D | Update Sail’s To port leg's Estimated end date
+Activity = VA <br> Date qualifier = 140 <br> Port = AUMEL <br> Port qualifier = D | Update Sail’s To port leg's Actual end date
 
 ## View staging table records
 To view the Voyage tracking staging records, go to **EDI > Documents > Freight forwarder landed cost documents > Voyage tracking**. <br>
