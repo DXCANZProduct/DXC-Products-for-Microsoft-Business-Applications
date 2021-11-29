@@ -29,7 +29,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Voyage tracking
 
-The following subsections will describe how to view and process the **Voyage trackingr** from the Freight forwarder. <br>
+The following subsections will describe how to view and process the **Voyage tracking** from the Freight forwarder. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
 
 Processing this document provides the ability to update the following tracking leg fields on D365 voyage(s) / container(s):
@@ -50,9 +50,8 @@ EDI > Setup > Freight forwarder landed cost setup <br>
 Where the Freight forwarder's values differ to D365/EDI values - use the following mappings for the Voyage tracking:
 1. Create [Shipping port mapping](../SETUP/FF%20SETUP/Shipping%20port%20mapping.md) to map the Trading partner's values to D365 Landed cost shipping port.
 2. Create [Modes of delivery mapping](../SETUP/FF%20SETUP/Modes%20of%20delivery%20mapping.md) to map the Trading partner's values to D365 Modes of delivery.
-3. Create [Customs broker mapping](../SETUP/FF%20SETUP/Customs%20broker%20mapping.md) to map the Trading partner's values to D365 Vendor of Shipping type set to _Customs broker_.
-4. Create [Shipping container types mapping](../SETUP/FF%20SETUP/Shipping%20container%20types%20mapping.md) to map the Trading partner's values to D365 Landed cost shipping conntainer types.
-5. Create [Shipping measurement unit mapping](../SETUP/FF%20SETUP/Shipping%20measurement%20unit%20mapping.md) to map the Trading partner's values to D365 Landed cost shipping measurement units.
+3. Create [Activity mapping](../SETUP/FF%20SETUP/Activity%20mapping.md) to map the Trading partner's values to EDI Activities.
+4. Create [Shipping port qualifier mapping](../SETUP/FF%20SETUP/Shipping%20port%20qualifier%20mapping.md) to map the Trading partner's values to EDI Shipping port qualifier.
 
 ### Document type setup
 EDI > Setup > Document types: Voyage tracking
@@ -65,9 +64,8 @@ EDI > Setup > Trading partners
 1. Assign the Freight forwarder landed cost setup to the trading partner's options:
     -  Shipping port mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Shipping port mapping**
     -  Modes of delivery mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Modes of delivery mapping**
-    -  Customs broker mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Customs broker mapping**
-    -  Shipping container types mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Shipping container types mapping**
-    -  Shipping measurement unit mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Shipping measurement unit mapping**
+    -  Activity mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Activity mapping**
+    -  Shipping port qualifier mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Shipping port qualifier mapping**
 1. Add and enable the **Voyage tracking** document to the [Freight forwarder landed cost trading partner](../SETUP/Trading%20partner.md) and select the applicable:
     - Template
     - Setting profile
@@ -77,7 +75,7 @@ EDI > Setup > Trading partners
 Inbound files have the following three steps:
 1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**.
 2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > Freight forwarder landed cost documents > Voyage tracking**.
-3. **Staging to target** - The staging record/s is processed to target. If the Voyage tracking is succefully processed the relevent D365 purchase and/or transfer orders will be added to an existing open Voyage (if document setting allows) or create a new Voyage.
+3. **Staging to target** - The staging record/s is processed to target. If the Voyage tracking is succefully processed the relevent D365 Landed cost Voyage or Container's tracking leg will be updated.
 
 ### Create document
 ![alt text](../../CORE/Image/Create_Document.png "Create document")
@@ -88,7 +86,7 @@ Header checks are performed when:
 2. Processing from import to staging
 3. Processing from staging to target
 
-![alt text](../IMAGE/HeaderChecks_FFVoyagetracking.png "Header checks for Voyage tracking")
+![alt text](../IMAGE/HeaderLineChecks_FFVoyagetracking.png "Header and line checks for Voyage tracking")
 
 ### Step 1 - Import
 When an EDI file is imported, the file name is key to identifying the trading partner and therefore the document template. See [Trading partners](../../CORE/Setup/Trading%20partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
@@ -130,8 +128,6 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#fixing-staging-to-target-edi-errors).
 
 ### Staging line validation
-
-![alt text](../IMAGE/LineChecks_FFVoyagetracking.png "Item checks for Voyage tracking")
 
 **Rule Id**                 | **Details**                                               | Error    
 :---                        |:---                                                       |:---              
