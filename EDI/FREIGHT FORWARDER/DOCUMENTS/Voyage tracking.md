@@ -135,6 +135,7 @@ Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#voyage-
 :---                        |:---                                                       |:---              
 Voyage	                    | Find the D365 Voyage to which the voyage tracking belongs | Error at Staging table.  No voyage tracking updated
 
+
 ### Activity
 Activity is mapped on Trading partner form’s Options. This is used to find the applicable leg on the Voyage’s tracking and if the start or end date should be updated. 
 
@@ -151,48 +152,32 @@ X12 Shipment status code    | X12 Description	                                | 
 **AM**                      | Loaded on Truck	                                | Local	                    | Start date
 **D**                       | Actual Door Delivery	                            | Local	                    | End date
 
-####	Estimated/Actual days
-The Voyage tracking’s document setup specifies what indicator the Trading partner will use for estimated vs. actual days.
-Since Landed cost only has an estimate for end dates, the date qualifier doesn’t affect start dates. 
+#### Estimated/Actual days
+The [Voyage tracking’s](../SETUP/SETTING%20PROFILES/Voyage%20tracking.md) document setup specifies what indicator the Trading partner will use for estimated vs. actual days. <br>
+Since Landed cost only has an estimate for end dates, the date qualifier doesn’t affect start dates. <br>
+
 Example X12 date qualifiers:
-139 = Estimated
-140 = Actual
-3.4.2.2.5.2	Port qualifier
+- 139 = Estimated
+- 140 = Actual
+
+#### Port qualifier
 Port qualifier is mapped on Trading partner form’s Options.
+
 Example X12 qualifiers:
-L = Port of Loading (From port)
-R = Place of Receipt (From port)
-D = Port of Discharge (To port)
-E = Place of Delivery (To port)
+- L = Port of Loading (From port)
+- R = Place of Receipt (From port)
+- D = Port of Discharge (To port)
+- E = Place of Delivery (To port)
 
-This is used to find the applicable leg on the Voyage tracking to update, for example a port could appear multiple times on a multi-leg journey. 
-3.4.2.2.5.3	Examples
-Inputs	Result
-Activity
-Date qualifier	L
-140	Update Load leg’s start date
-Activity
-Date qualifier
-Port
-Port qualifier	OA
-139
-CNNGB
-L	Update Sail’s From port leg start date
-Activity
-Date qualifier
-Port
-Port qualifier	VA
-139
-AUMEL
-D	Update Sail’s To port leg estimated end date
-Activity
-Date qualifier
-Port
-Port qualifier	VA
-140
-AUMEL
-D	Update Sail’s To port leg actual end date
+This is used to find the applicable leg on the Voyage tracking to update, for example a port could appear multiple times on a multi-leg journey. 
 
+#### Examples
+Field       | Example	            | Tracking leg update result
+:--         |:--                    |:--    
+Activity <br> Date qualifier	| L <br> 140	| Update Load leg’s start date
+Activity <br> Date qualifier <br> Port <br> Port qualifier	| OA <br> 139 <br> CNNGB <br> L	| Update Sail’s From port leg start date
+Activity <br> Date qualifier <br> Port <br> Port qualifier	| VA <br> 139 <br> AUMEL <br> D	| Update Sail’s To port leg estimated end date
+Activity <br> Date qualifier <br> Port <br> Port qualifier	| VA <br> 140 <br> AUMEL <br> D	| Update Sail’s To port leg actual end date
 
 ## View staging table records
 To view the Voyage tracking staging records, go to **EDI > Documents > Freight forwarder landed cost documents > Voyage tracking**. <br>
