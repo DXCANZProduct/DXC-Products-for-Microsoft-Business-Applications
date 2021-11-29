@@ -172,7 +172,7 @@ Example X12 qualifiers:
 This is used to find the applicable leg on the Voyage tracking to update, for example a port could appear multiple times on a multi-leg journey. 
 
 #### Examples
-Examples below using above X12 shipment status codes and date qualifiers of 139 for estimated and 140 for actual.
+Examples below using above X12 shipment status codes, port qualifiers and date qualifiers of 139 for estimated and 140 for actual.
 
 Field & Example	            | Tracking leg update result
 :--                         |:--    
