@@ -130,7 +130,7 @@ Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#fixing-
 Purchase/Transfer order number	| Find the D365 purchase or transfer order number to which the voyage creator belongs	| Error at Staging table. <br>  No voyage created
 No Valid Item	            | No valid item based on the different options available    | Error at Staging table. <br>  No voyage created
 
-## Journey template calculation
+### Journey template calculation
 The following fields from the EDI Voyage creator document is used when calculating the target Landed cost's Voyage field **Journey template**:
 - From port
 - To port
@@ -138,7 +138,7 @@ The following fields from the EDI Voyage creator document is used when calculati
 
 > Note: If **multiple** journey templates are found, the staging-to-target step will error, and user will be able to select the correct **Journey template** in the staging page and process.
 
-### Example
+#### Example
 Inbound file fields example:
 - From port (ShipFromPort): CNSHA
 - To port (ShipToPort): USLGB
@@ -146,9 +146,18 @@ Inbound file fields example:
 
 Our example mapped to delivery mode 40 on Trading partner, will find the following Journey template:
 Journey template	| From port	    | To port	    | Mode of delivery	| Journey from port	    | Journey to port
+:--                 |:--            |:--            |:--                |:--                    |:--
 CNSHA-USLGB(S)	    | CNSHA	        | USLGB	        | 40	            | √	                    | √
 
 **Journey template** (ShipJourneyId) field in the Voyage creator, also allows for inbound file to specify the Journey template which will then disregard the port and delivery mode fields. This field isn’t mandatory but provides flexibility.
+
+### Duplicate tolerance
+Document setting [Duplicate tolerance](../SETUP/SETTING%20PROFILES/Voyage%20creator.md) manages the outcome when an EDI Voyage creator document is received and the **Booking reference** is already used on an existing D365 Landed cost Voyage. The options are:
+- **Accept** – Add to existing Open Voyage
+- **Warning** – Creates new Voyage and staging record has Warning log
+- **Error** – Staging record errors, and Voyage isn’t created
+
+> Note: When the **Voyage status** assigned to the existing D365 Landed cost allows modification, the existing D365 Voyage is _Open_. 
 
 ## View staging table records
 To view the Voyage creator staging records, go to **EDI > Documents > Freight forwarder landed cost documents > Voyage creator**. <br>
