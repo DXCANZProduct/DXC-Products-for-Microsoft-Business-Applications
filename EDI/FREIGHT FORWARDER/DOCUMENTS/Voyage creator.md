@@ -262,6 +262,6 @@ The following EDI Line fields are available on the lines page. <br>
 **Departure date**          | Departure date for the voyage	                                            | Voyage > Departure date
 **ETA at shipping port**    | Estimated arrival at shipping port	                                    | Voyage > ETA at shipping port
 **Shipment estimated delivery date**    | Estimated delivery date	                                    | Voyage > Estimated delivery date <br> Container > Estimated delivery date - if **Container estimated delivery date** blank
-**Container estimated delivery date**	Estimated delivery date for container. <br> If blank, **Shipment estimated delivery date** will be used	| Container > Estimated delivery date
+**Container estimated delivery date**	| Estimated delivery date for container. <br> If blank, **Shipment estimated delivery date** will be used	| Container > Estimated delivery date
 **Shipping company seal number**    | Container’s shipping company seal number	                        | Container > Shipping company seal number
 
