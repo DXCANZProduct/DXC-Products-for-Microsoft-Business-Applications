@@ -172,12 +172,14 @@ Example X12 qualifiers:
 This is used to find the applicable leg on the Voyage tracking to update, for example a port could appear multiple times on a multi-leg journey. 
 
 #### Examples
+Examples below using above X12 shipment status codes and date qualifiers of 139 for estimated and 140 for actual.
+
 Field & Example	            | Tracking leg update result
 :--                         |:--    
-Activity = L <br> Date qualifier = 140 | Update Load leg’s start date
-Activity = OA <br> Date qualifier = 139 <br> Port = CNNGB <br> Port qualifier = L | Update Sail’s From port leg's Start date
-Activity = VA <br> Date qualifier = 139 <br> Port = AUMEL <br> Port qualifier = D | Update Sail’s To port leg's Estimated end date
-Activity = VA <br> Date qualifier = 140 <br> Port = AUMEL <br> Port qualifier = D | Update Sail’s To port leg's Actual end date
+Activity = L <br> Date qualifier = 140 | Update tracking leg with **Activity** set to _Load_'s **Start date**
+Activity = OA <br> Date qualifier = 139 <br> Port = CNNGB <br> Port qualifier = L | Update tracking leg with **Activity** set to _Sail_ where CNNGB is the _From port_'s **Start date**
+Activity = VA <br> Date qualifier = 139 <br> Port = AUMEL <br> Port qualifier = D | Update tracking leg with **Activity** set to _Sail_ where AUMEL is the _To port_'s **Estimated end date**
+Activity = VA <br> Date qualifier = 140 <br> Port = AUMEL <br> Port qualifier = D | Update tracking leg with **Activity** set to _Sail_ where AUMEL is the _To port_'s **Actual end date**
 
 ## View staging table records
 To view the Voyage tracking staging records, go to **EDI > Documents > Freight forwarder landed cost documents > Voyage tracking**. <br>
