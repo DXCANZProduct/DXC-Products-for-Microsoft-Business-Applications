@@ -130,6 +130,26 @@ Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#fixing-
 Purchase/Transfer order number	| Find the D365 purchase or transfer order number to which the voyage creator belongs	| Error at Staging table. <br>  No voyage created
 No Valid Item	            | No valid item based on the different options available    | Error at Staging table. <br>  No voyage created
 
+## Journey template calculation
+The following fields from the EDI Voyage creator document is used when calculating the target Landed cost's Voyage field **Journey template**:
+- From port
+- To port
+- Mode of delivery
+
+> Note: If multiple journey templates are found, the staging-to-target step will error, and user will be able to select the correct Journey template and process.
+
+### Example
+Inbound file fields example:
+- From port (ShipFromPort): CNSHA
+- To port (ShipToPort): USLGB
+- Mode of delivery (DlvModeId): SEA 
+
+Our example mapped to delivery mode 40 on Trading partner, will find the following Journey template:
+Journey template	| From port	    | To port	    | Mode of delivery	| Journey from port	    | Journey to port
+CNSHA-USLGB(S)	    | CNSHA	        | USLGB	        | 40	            | √	                    | √
+
+**Journey template** (ShipJourneyId) field in the Voyage creator, also allows for inbound file to specify the Journey template which will then disregard the port and delivery mode fields. This field isn’t mandatory but provides flexibility.
+
 ## View staging table records
 To view the Voyage creator staging records, go to **EDI > Documents > Freight forwarder landed cost documents > Voyage creator**. <br>
 Use this page to review staging and process the EDI documents. Succesully processing to target adds the relevant purchase and/or transfer orders to an existing open Voyage (if document setting allows) or create new Voyage(s).
@@ -235,3 +255,4 @@ The following EDI Line fields are available on the lines page. <br>
 **Shipment estimated delivery date**    | Estimated delivery date	                                    | Voyage > Estimated delivery date <br> Container > Estimated delivery date - if **Container estimated delivery date** blank
 **Container estimated delivery date**	Estimated delivery date for container. <br> If blank, **Shipment estimated delivery date** will be used	| Container > Estimated delivery date
 **Shipping company seal number**    | Container’s shipping company seal number	                        | Container > Shipping company seal number
+
