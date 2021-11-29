@@ -5,7 +5,7 @@ title: [EDI Freight forwarder]
 description: [EDI Freight forwarder Documents - Voyage tracking]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 26/11/2021
+ms.date: 29/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,15 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 The following subsections will describe how to view and process the **Voyage trackingr** from the Freight forwarder. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed.
 
-Processing this document adds the relevant purchase and/or transfer orders to an existing open Voyage (if document setting allows) or create new Voyage(s). <br>
+Processing this document provides the ability to update the following tracking leg fields on D365 voyage(s) / container(s):
+- Start date
+- Estimated end date
+- Actual end date
+- Note
+
+The following fields are automatically updated as well when the tracking leg dates are updated:
+- Estimated days
+- Actual days
 
 ## Prerequisites
 The following setup is prerequisites for the **Voyage tracking**
