@@ -136,7 +136,7 @@ The following fields from the EDI Voyage creator document is used when calculati
 - To port
 - Mode of delivery
 
-> Note: If multiple journey templates are found, the staging-to-target step will error, and user will be able to select the correct **Journey template** in the staging page and process.
+> Note: If **multiple** journey templates are found, the staging-to-target step will error, and user will be able to select the correct **Journey template** in the staging page and process.
 
 ### Example
 Inbound file fields example:
