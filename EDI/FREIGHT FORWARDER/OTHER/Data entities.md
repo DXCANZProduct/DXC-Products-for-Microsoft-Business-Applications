@@ -52,24 +52,12 @@ EDI > Setup > Freight forwarder landed cost setup
 14	              | Shipping measurement unit mapping lines | Create new **Shipping measurement unit mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Shipping measurement unit mapping | Shipping measurement unit mapping
 
 ## Document setting profiles
-EDI > Setup > Document types (Setting profiles for EDI 3PL documents)
+EDI > Setup > Document types (Setting profiles for EDI Freight forwarder landed cost documents)
 
-**Order**         | **Entity**						| **Description**                             
+**Order**         | **Entity**						                  | **Description**                             
 :-----------------|:------------------------------------		|:------------------------- 
-1	                | EDI Settings - Picking list	      | Create new document type **Settings profile** for Picking list
-2	                | EDI Settings - Picking list registration	| Create new document type **Settings profile** for Picking list registration
-3	                | EDI Settings Shipment Advice - Purchase order	| Create new document type **Settings profile** for Shipment Advice - Purchase order
-4	                | EDI Settings Shipment Advice - Transfer order	| Create new document type **Settings profile** for Shipment Advice - Transfer order
-5	                | EDI Settings Shipment Advice - Return order	  | Create new document type **Settings profile** for Shipment Advice - Return order
-6	                | EDI Settings Shipment Advice - Voyage	        | Create new document type **Settings profile** for Shipment Advice - Voyage
-7	                | EDI Settings Shipment Receipt - Purchase order	| Create new document type **Settings profile** for Shipment Receipt - Purchase order
-8	                | EDI Shipment Receipt settings - Transfer order	| Create new document type **Settings profile** for Shipment Receipt - Transfer order
-9	                | EDI Settings Shipment Receipt - Return order	| Create new document type **Settings profile** for Shipment Receipt - Return order
-10	              | EDI Settings Shipment Receipt - Voyage	      | Create new document type **Settings profile** for Shipment Receipt - Voyage
-11	              | EDI Settings Inventory adjustment - Transfer	| Create new document type **Settings profile** for Inventory adjustment - Transfer
-12	              | EDI Settings Inventory adjustment - Count	    | Create new document type **Settings profile** for Inventory adjustment - Count
-13	              | EDI Settings Inventory adjustment - Reconciliation	| Create new document type **Settings profile** for Inventory adjustment - Reconciliation
-14	              | EDI settings inventory adjustment - Movement	| Create new document type **Settings profile** for inventory adjustment - Movement
+1	                | EDI setting voyage creator              | Create new document type setting profile for **Voyage creator**
+2	                | EDI Setting voyage tracking             | Create new document type setting profile for **Voyage tracking**
 
 
 ## Document types
@@ -82,5 +70,5 @@ EDI > Setup > Trading partner
 
 **Order**         | **Entity**						| **Description**                             | **Dependency**
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
-1                 | EDI Warehouses                          | Create new Warehouse trading partner   | [3PL setup](#3pl-setup)
-2                 | EDI Documents - Warehouse               | Add incoming and outgoing documents to Warehouse trading partner | EDI Warehouses, [3PL setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data%20entities.md#document-types)
+1                 | EDI Freight forwarders                          | Create new Freight forwarder landed cost trading partner   | [Freight forwarder landed cost setup](#3pl-setup)
+2                 | EDI Documents - Freight forwarder               | Add incoming and outgoing documents to Freight forwarder landed cost trading partner | EDI Freight forwarders, [3PL setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data%20entities.md#document-types)
