@@ -86,7 +86,7 @@ Header checks are performed when:
 2. Processing from import to staging
 3. Processing from staging to target
 
-![alt text](../IMAGE/HeaderLineChecks_FFVoyagetracking.png "Header and line checks for Voyage tracking")
+![alt text](../IMAGE/HeaderLineChecks_FFVoyageTracking.png "Header and line checks for Voyage tracking")
 
 ### Step 1 - Import
 When an EDI file is imported, the file name is key to identifying the trading partner and therefore the document template. See [Trading partners](../../CORE/Setup/Trading%20partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
