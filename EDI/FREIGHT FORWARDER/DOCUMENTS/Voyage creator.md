@@ -143,13 +143,8 @@ The following EDI fields are available on the list page.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created/added to Landed cost voyage(s). <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
-**Trading partner account**     | Warehouse account assigned to the staging record.
-**Trading partner GLN**         | The 3PL’s global location number is shown here.
-**Voyages**                     	View related Voyage(s)
-**Purchase order**              | Purchase order number being received.
-**Receipts list**               | Receipts list document used to receive.
-**Receipt date**                | Date the stock was received.
-**Journal**                     | Arrival journal used to receive the stock.
+**Trading partner account**     | Vendor account of **Shipping type** set to _Shipping company_ assigned to the staging record.
+**Trading partner GLN**         | The Freight forwarder’s global location number is shown here.
 **Created date and time**       | The date and time the selected record was created in the staging table.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
 **Message**                     | Displays the first error's message from **Version log**.
