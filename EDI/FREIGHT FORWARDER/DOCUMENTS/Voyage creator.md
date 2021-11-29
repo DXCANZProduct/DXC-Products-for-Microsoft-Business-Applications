@@ -224,8 +224,8 @@ The following EDI Line fields are available on the lines page. <br>
 **Shipping container**      | Shipping container identification. Used to create a new Landed cost shipping container or add to existing container for the voyage  | Voyage lines > Shipping container
 **Shipping container type** | Used to populate to Shipping container type for the target Shipping container. Mapped values can be used by assigning [Shipping container types mapping](../SETUP/FF%20SETUP/Shipping%20container%20types%20mapping.md) to the Trading partner.	| Shipping container > Shipping container type
 **Ship date**               | Voyage and Shipping container’s ship date	                                | Voyage > Ship date <br> Shipping container > Ship date
-**From port**               | The originating **From port**. If Journey template is not provided, this field is used to determine Journey template	| Used in calculation for Voyage > Journey template
-**To port**                 | The final destination’s **To port**. If Journey template not provided, this field is used to determine Journey template	| Used in calculation for Voyage > Journey template
+**From port**               | The originating **From port**. If Journey template is not provided, this field is used to determine Journey template	| Used in [calculation](#journey-template-calculation) for Voyage > Journey template
+**To port**                 | The final destination’s **To port**. If Journey template not provided, this field is used to determine Journey template	| Used in [calculation](#journey-template-calculation) for Voyage > Journey template
 **Mode of delivery**        | The mode of delivery between **From** and **To port**. If Journey template not provided, this field is used to determine Journey template	| Used in calculation for Voyage > Journey template
 **Number**                  | The D365 **Purchase** or **Transfer order number** for the voyage line	| Voyage lines > Number
 **Reference**               | Indicates the reference for Number. Options are: <br> • Purchase order <br> • Transfer	| Voyage lines > Reference
