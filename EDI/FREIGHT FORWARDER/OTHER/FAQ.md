@@ -41,7 +41,7 @@ The following table describes a few staging errors that could be experienced wit
 ### Voyage creator
 Error message	                                      | Error type	            | Error level       | Method to fix    
 :--                                                 |:--                      |:--                |:--  
-Duplicate shipment reference found on shipment: %	  | Duplicate	              | Warning or Error  | Can be _Warning_ or _Error_ level based on [document setting](../SETUP/SETTING%20PROFILES/Voyage%20creator.md) **Duplicate tolerance**. <br> _Warning_ will create a new Voyage with same booking reference. <br> _Error_ level will not create a voyage, review field **Booking reference** in staging record. 
+Duplicate shipment reference found on shipment: %	  | Duplicate	              | Warning or Error  | Can be _Warning_ or _Error_ level based on [document setting](../SETUP/SETTING%20PROFILES/Voyage%20creator.md) **Duplicate tolerance**. <br> • _Warning_ will create a new Voyage with same booking reference. <br> • _Error_ level will not create a voyage, review field **Booking reference** in staging record. 
 Item not found: %	Error	Error
 No mapping found for Customs broker %	Missing mapping	Error
 Over delivery not allowed on EDI line %	Error	Error
