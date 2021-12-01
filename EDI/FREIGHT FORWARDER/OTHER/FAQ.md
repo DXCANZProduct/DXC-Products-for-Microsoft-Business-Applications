@@ -42,15 +42,13 @@ The following table describes a few staging errors that could be experienced wit
 Error message	                                      | Error type	            | Error level       | Method to fix    
 :--                                                 |:--                      |:--                |:--  
 Duplicate shipment reference found on shipment: %	  | Duplicate	              | Warning or Error  | Can be _Warning_ or _Error_ level based on [document setting](../SETUP/SETTING%20PROFILES/Voyage%20creator.md) **Duplicate tolerance**. <br> • _Warning_ will create a new Voyage with same booking reference. <br> • _Error_ level will not create a voyage, review field **Booking reference** in staging record. 
-Item not found: %	Error	Error
-No mapping found for Customs broker %	Missing mapping	Error
-Over delivery not allowed on EDI line %	Error	Error
-Shipment status % indicates shipment cannot be modified	Error	Error
+Item not found: %	                                  | Error	                  | Error             | Based on [document setting](../SETUP/SETTING%20PROFILES/Voyage%20creator.md) Item id source, review field: <br> • **Bar code** where Item id source is set to _GTIN_ or _Barcode_. <br> • **Item number** where Item id source is set to _Our item number_ or _External item number_
+No mapping found for Customs broker %	              | Missing mapping	        | Error             | Staging record field **Customs broker** contains a vendor not setup in the [Customs broker mapping](../SETUP/FF%20SETUP/Customs%20broker%20mapping.md) assigned to the Trading partner.
+Over delivery not allowed on EDI line %	            | Error	                  | Error             | Staging record's quantity in the staging record's unit is more than remaining on the purchase or transfer order line and [document setting](../SETUP/SETTING%20PROFILES/Voyage%20creator.md) **Allow purchase order over delivery** or **Allow transfer order over delivery** doesn't allow overdelivery. Review quantity and unit and either increase purchase or transfer order line's open quantity that can still be added to a voyage or if overdeliveries are allowed, update the document setting to allow.
+Shipment status % indicates shipment cannot be modified	| Error	              | Error             | 
 Unable to find journal template for line: %	Record not found	Error
 Unable to locate source document lines	Error	Error
-"Voyage creator	A voyage hasn't been created, as no lines could be found."	Processing error	Error
-![image](https://user-images.githubusercontent.com/59988997/144153774-fbd0c064-80bd-45fc-b49d-3d98d4a5349d.png)
-
+A voyage hasn't been created, as no lines could be found. |	Processing error	| Error
 
 ### Voyage tracking
 Error	message                                       | How to fix              | Method to fix
