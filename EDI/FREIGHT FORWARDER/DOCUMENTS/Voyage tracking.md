@@ -119,14 +119,13 @@ Example error for file not matching template: 'Segment '<xml' not found in EDI t
 If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the D365 Landed cost voyage's tracking leg won't be updated based on information from the staging record.
 
 #### Possible issues and fixes
-**Staging to target** errors for Shipment receipt can be viewed in:
+**Staging to target** errors for Voyage tracking can be viewed in:
 - **EDI > Documents > Freight forwarder landed cost documents > Voyage tracking** filtered to **Staging to target tatus** set to _Error_
 - **EDI > Document maintenance**, tab **Freight forwarder landed cost documents**, tile **Voyage tracking errors**
 - **EDI > Document maintenance**, tab **Freight forwarder landed cost documents**, **Documents** page, tab **Voyage tracking**
 
-At this step the issues are usually around mapping/business logic issues.
-Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
-
+At this step the issues are usually around mapping/business logic issues. <br>
+Review the **Log** or **Version log** for the applicable record to find the issue. <br>
 Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#voyage-tracking).
 
 ### Staging line validation
