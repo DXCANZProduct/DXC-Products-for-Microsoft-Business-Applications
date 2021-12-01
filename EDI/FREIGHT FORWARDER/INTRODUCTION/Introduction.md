@@ -83,8 +83,8 @@ Users can access the form by navigating to **EDI > Setup > Document types**
 
 - [File templates](../../CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
 - Setting profiles: applicable to the following document types
-    - [Voyage creator]()
-    - [Voyage tracking]()
+    - [Voyage creator](../SETUP/SETTING%20PROFILES/Voyage%20creator.md)
+    - [Voyage tracking](../SETUP/SETTING%20PROFILES/Voyage%20tracking.md)
 - [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
 
 #### Trading partner setup
@@ -101,8 +101,8 @@ Ability to manually import or review inbound files
 ### Freight forwarder documents
 Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents > Freight forwarder landed cost documents**
-- [Voyage creator]()
-- [Voyage tracking]()
+- [Voyage creator](../DOCUMENTS/Voyage%20creator.md)
+- [Voyage tracking](../DOCUMENTS/Voyage%20tracking.md)
 
 [Process overview](Process%20overview.md) for Freight forwarder EDI documents.
 
