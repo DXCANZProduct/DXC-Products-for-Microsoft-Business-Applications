@@ -36,9 +36,21 @@ See [EDI Core FAQ](../../CORE/OTHER/FAQ.md) for generic queries
 ## Fixing Staging-to-Target EDI errors
 The following table describes a few staging errors that could be experienced with Freight forwarder inbound documents at the staging to target step. Short description of possible fixes are discussed. After fix, reset status on the staging record and either manually process again or leave for batch to process.
 
+> Note: % contains staging data for the record
+
 ### Voyage creator
-Error message	                                      | Error type	            | Method to fix    
-:--                                                 |:--                      |:--            
+Error message	                                      | Error type	            | Error level       | Method to fix    
+:--                                                 |:--                      |:--                |:--  
+Duplicate shipment reference found on shipment: %	  | Duplicate	              | Warning or Error  | Can be _Warning_ or _Error_ level based on [document setting](../SETUP/SETTING%20PROFILES/Voyage%20creator.md) **Duplicate tolerance**. <br> _Warning_ will create a new Voyage with same booking reference. <br> _Error_ level will not create a voyage, review field **Booking reference** in staging record. 
+Item not found: %	Error	Error
+No mapping found for Customs broker %	Missing mapping	Error
+Over delivery not allowed on EDI line %	Error	Error
+Shipment status % indicates shipment cannot be modified	Error	Error
+Unable to find journal template for line: %	Record not found	Error
+Unable to locate source document lines	Error	Error
+"Voyage creator	A voyage hasn't been created, as no lines could be found."	Processing error	Error
+![image](https://user-images.githubusercontent.com/59988997/144153774-fbd0c064-80bd-45fc-b49d-3d98d4a5349d.png)
+
 
 ### Voyage tracking
 Error	message                                       | How to fix              | Method to fix
