@@ -41,7 +41,17 @@ EDI contains the following documents pertaining to all Trading partners.
 
 ## Setup
 ### Core setup
-Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
+The following coret setup is available under **EDI > Setup**:
+- Connections
+- Cleanup profile
+- Reset status
+- EDI parameters
+- EDI shared parameters
+- UOM mapping
+- Document type mapping
+- Document types
+- Trading partners
+- Batch control
 
 ### 3PL setup
 
