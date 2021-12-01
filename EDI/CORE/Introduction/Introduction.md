@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI 3PL]
-description: [Introduction to EDI 3PL]
+title: [EDI Core]
+description: [Introduction to EDI Core]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 17/11/2021
+ms.date: 1/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Introduction
-This section will provide a quick overview of the 3PL EDI module.
+This section will provide a quick overview of the Core EDI module.
 
 ## Documents
 ### Core EDI documents (All trading partners)
@@ -38,26 +38,6 @@ EDI contains the following documents pertaining to all Trading partners.
 	- **Functional Acknowledgement** – Receive functional acknowledgement that outbound document has been received by Trading partner.
 - **Outbound**
 	- **Functional Acknowledgement** – Send functional acknowledgement that inbound document has been received.
-
-### 3PL EDI documents (3PL license only)
-
-EDI contains the following documents pertaining to 3PL Trading partners.
-- **Outbound**
-	- **Picking list**: Send picking list registration information for sales and transfer orders (Ship from warehouse)
-	- **Shipment advice - Purchase order**: Advise 3PL of incoming purchase orders (Ship to warehouse)
-	- **Shipment advice - Transfer order**: Advise 3PL of incoming transfer orders (Ship to warehouse)
-	- **Shipment advice - Return order**: Advise 3PL of customer orders being returned (Ship to warehouse)
-	- **Shipment advice - Voyage**: Advise 3PL of incoming Landed cost voyage (Ship to warehouse)
-- **Inbound** 
-	- **Picking list registration**: 3PL informs company what has been shipped for a picking list (Ship from warehouse)
-	- **Shipment receipt - Purchase order**: 3PL acknowledge receipt of incoming purchase orders (Ship to warehouse)
-	- **Shipment receipt - Transfer order**: 3PL acknowledge receipt of incoming transfer orders (Ship to warehouse)
-	- **Shipment receipt - Return order**: 3PL acknowledge receipt of customer orders being returned (Ship to warehouse)
-	- **Shipment receipt - Voyage**: 3PL acknowledge receipt of incoming Landed cost voyage (Ship to warehouse)
-	- **Inventory adjustment - Transfer**: Transfers stock between batches or inventory statues with a transfer journal
-	- **Inventory adjustment - Counting**: Compares 3PL stock count to D365 current on hand and posts variances with a movement journal
-	- **Inventory adjustment - Reconciliation**: Compares 3PL stock count to D365 on hand at end of a particular date with option to manually accept/reject variances and posts variances with a movement journal
-	- **Inventory adjustment - Movement**: Adjust stock with a movement journal
 
 ## Setup
 ### Core setup
@@ -92,13 +72,6 @@ Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
 - [Order purpose group](../SETUP/3PL%20SETUP/Order%20purpose%20group.md)
 	- Picking list (OrderPurpose)
 
-#### Journal names assigned on 3PL Trading partner
-Journal name with **Journal type** set to _Item arrival_. To be used to register stock for incoming stock receipts: **Inventory management > Setup > Journal names > Warehouse management**:
-- Inventory management journal:
-	-  Shipment receipt - Purchase order
-	-  Shipment receipt - Transfer order
-	-  Shipment receipt - Return order
-	-  Shipment receipt - Voyage
 
 #### 3PL Document type setup
 Setup Document types which will be assigned on 3PL Trading partner. <br>
