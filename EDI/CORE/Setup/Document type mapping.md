@@ -28,3 +28,26 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Document type mapping
+
+## Setup Document type mapping
+Users can access the form by navigating to **EDI > Setup > Document type mapping**. <br>
+The mapping can be used in functional acknowledgement's [setting profiles](SETTING%20PROFILES/Functional%20acknowledgement.md).
+
+Create a new Document type mapping by:
+- Click **New** to create a new record. 
+- In the **Name** field, enter the name of the Document type mapping group
+- In the **Description** field, enter a description of the Document type mapping group
+- In the **Mappings** fast tab, select **Add** to create a new record
+- Select the **EDI Document type**
+- Specify the trading partner's value in **Document type**
+
+## Where used
+Used on the following EDI documents (field):
+- Functional acknowledgement inbound (AcknowledgedDocumentTypeExternalId)
+- Functional acknowledgement outbound (SourceDocumentTypeExternalId)
+
+## Data entities
+- Functional acknowledgement document type mapping
+- Functional acknowledgement document type mapping lines
+
+
