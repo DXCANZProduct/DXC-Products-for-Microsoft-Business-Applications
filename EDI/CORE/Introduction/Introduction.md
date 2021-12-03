@@ -42,16 +42,16 @@ EDI contains the following documents pertaining to all Trading partners.
 ## Setup
 ### Core setup
 The following core setup is available under **EDI > Setup**:
-- [Connections](../Setup/Connection%20setup.md)
-- [Cleanup profile](../Setup/Cleanup%20profile.md)
-- [Reset status](../Setup/Reset%20status.md)
-- [EDI parameters](../Setup/EDI%20parameters.md)
-- [EDI shared parameters](../Setup/EDI%20shared%20parameters.md)
-- [UOM mapping](../Setup/UOM%20mapping.md)
-- [Document type mapping](../Document%20type%20mapping.md)
-- [Document types](../Setup/Document%20types.md)
-- [Trading partners](../Setup/Trading%20partners.md)
-- [Batch control](../Setup/Batch%20control.md)
+- [Connections](../Setup/Connection%20setup.md) - Setup the applicable ftp/ftps/sftp/azure blob connection(s)
+- [Cleanup profile](../Setup/Cleanup%20profile.md) - Can be used to automatically delete staging records based on status and age days
+- [Reset status](../Setup/Reset%20status.md) - Optional automatic retry by resetting Error records to Not started based on a recurrence pattern
+- [EDI parameters](../Setup/EDI%20parameters.md) - Refresh module after deployment, and other parameter setup
+- [EDI shared parameters](../Setup/EDI%20shared%20parameters.md) - Setup shared parameters
+- [UOM mapping](../Setup/UOM%20mapping.md) - Create unit of measure mappings that can be assigned on applicable trading partners, for example kgs to kg
+- [Document type mapping](../Setup/Document%20type%20mapping.md) - Document type mapping for functional acknowledgement documents
+- [Document types](../Setup/Document%20types.md) - Setup document templates, setting profiles, validation profiles, outbound filenames and field metadata for all applicable documents
+- [Trading partners](../Setup/Trading%20partners.md) - Setup trading partners and assign the applicable mappings and documents
+- [Batch control](../Setup/Batch%20control.md) - Enable batch control for all the EDI steps
 
 ## Processing
 
