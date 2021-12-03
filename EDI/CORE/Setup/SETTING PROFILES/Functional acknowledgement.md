@@ -43,7 +43,8 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 ## Where used
 The **Setting profile** can be assigned on the:
 - Incoming documents FastTab to document type **Functional acknowledgement inbound** and 
-- Outgoing documents FastTab to document type **Functional acknowledgement outbound**  <br>
+- Outgoing documents FastTab to document type **Functional acknowledgement outbound**  
+
 for all Trading partners at **EDI > Setup > Trading partners**.
 
 ## Data entity
