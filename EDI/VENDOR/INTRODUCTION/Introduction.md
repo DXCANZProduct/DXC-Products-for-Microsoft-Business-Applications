@@ -53,7 +53,7 @@ EDI contains the following documents pertaining to Vendor Trading partners.
 
 ## Setup
 ### Core setup
-Core setup is discussed in detail [here](../../CORE/Setup/Setup%20overview.md)
+Core setup is discussed in detail [here](../../CORE/Introduction/Introduction.md#setup)
 
 ### Vendor setup
 
