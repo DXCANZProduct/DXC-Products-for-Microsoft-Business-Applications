@@ -39,7 +39,7 @@ Create a new Document type mapping by:
 - In the **Description** field, enter a description of the Document type mapping group
 - In the **Mappings** fast tab, select **Add** to create a new record
 - Select the **EDI Document type**
-- Specify the trading partner's value in **Document type**
+- Specify the trading partner's value in **Document type**, for example 'IN' for Sales invoice
 
 ## Where used
 Used on the following EDI documents (field):
