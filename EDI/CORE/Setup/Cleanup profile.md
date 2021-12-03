@@ -30,7 +30,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Cleanup profile
 
 ## Setup Cleanup profile
-Users can access the form by navigating to **EDI > Setup > Cleanup profile**.
+Users can access the form by navigating to **EDI > Setup > Cleanup profile**. <br>
 The cleanup profile is used to automatically delete staging record/s.
 
 Create a new Cleanup profile by:
