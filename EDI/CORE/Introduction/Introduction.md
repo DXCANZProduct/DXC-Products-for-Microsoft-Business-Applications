@@ -41,114 +41,45 @@ EDI contains the following documents pertaining to all Trading partners.
 
 ## Setup
 ### Core setup
-The following coret setup is available under **EDI > Setup**:
-- Connections
-- Cleanup profile
-- Reset status
-- EDI parameters
-- EDI shared parameters
-- UOM mapping
-- Document type mapping
-- Document types
-- Trading partners
-- Batch control
-
-### 3PL setup
-
-#### Mappings assigned on 3PL Trading partner
-3PL setup and which EDI document (and field) it is mapped to/from: **EDI > Setup > 3PL setup** <br>
-- [Inventory journal name mapping](../SETUP/3PL%20SETUP/Inventory%20journal%20name%20mapping.md)
-	- Inventory adjustment - Counting (InventJournalNameIdExternal)
-	- Inventory adjustment - Movement (InventJournalNameIdExternal)
-- [Disposition code mapping](../SETUP/3PL%20SETUP/Disposition%20code%20mapping.md)
-	- Shipment receipt - Return order (DispositionCodeExternal)
-- [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md)
-	- Picking list (InventStatusId)
-	- Picking list registration (InventStatusId)
-	- Shipment advice - Purchase order (InventStatusId)
-	- Shipment advice - Transfer order (InventStatusId)
-	- Shipment advice - Return order (InventStatusId)
-	- Shipment advice - Voyage (InventStatusId)
-	- Shipment receipt - Purchase order (InventStatusId)
-	- Shipment receipt - Transfer order (InventStatusId)
-	- Shipment receipt - Return order (InventStatusId)
-	- Shipment receipt - Voyage (InventStatusId)
-	- Inventory adjustment - Transfer (InventStatusIdFrom and InventStatusIdTo)
-	- Inventory adjustment - Counting (InventStatusId)
-	- Inventory adjustment - Reconciliation (InventStatusId)
-	- Inventory adjustment - Movement (InventStatusId)
-- [Transaction direction mapping](../SETUP/3PL%20SETUP/Transaction%20direction%20mapping.md)
-	- Inventory adjustment - Movement (TransactionDirection)
-- [Order purpose group](../SETUP/3PL%20SETUP/Order%20purpose%20group.md)
-	- Picking list (OrderPurpose)
-
-
-#### 3PL Document type setup
-Setup Document types which will be assigned on 3PL Trading partner. <br>
-Users can access the form by navigating to **EDI > Setup > Document types**
-
-- [File templates](../../CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
-- Setting profiles: applicable to the following document types
-    - [Picking list](../SETUP/SETTING%20PROFILES/Picking%20list.md)
-    - [Picking list registration](../SETUP/SETTING%20PROFILES/Picking%20list%20registration.md)
-    - [Shipment advice - Purchase order](../SETUP/SETTING%20PROFILES/Shipment%20advice%20-%20Purchase%20order.md)
-    - [Shipment advice - Return order](../SETUP/SETTING%20PROFILES/Shipment%20advice%20-%20Return%20order.md)
-    - [Shipment receipt - Purchase order](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md)
-    - [Shipment receipt - Transfer order](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Transfer%20order.md)
-    - [Shipment receipt - Return order](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Return%20order.md)
-    - [Shipment receipt - Voyage](../SETUP/SETTING%20PROFILES/Shipment%20receipt%20-%20Voyage.md)
-    - [Inventory adjustment advice - Transfer](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Transfer.md)
-    - [Inventory adjustment advice - Counting](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Counting.md)
-    - [Inventory adjustment advice - Reconciliation](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Reconciliation.md)
-    - [Inventory adjustment advice - Movement](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Movement.md)
-- Validation profiles: applicable to the following inbound document types
-    - [Picking list registration](../SETUP/VALIDATION%20PROFILES/Picking%20list%20registration.md)
-    - [Shipment receipt - Purchase order](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md)
-    - [Shipment receipt - Transfer order](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Transfer%20order.md)
-    - [Shipment receipt - Return order](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Return%20order.md)
-- [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
-- [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
-
-#### Trading partner setup
-Create new trading partners and assign setup and incoming/outgoing documents. <br>
-Users can access the form by navigating to **EDI > Setup > Trading partners**
-- [Trading partner](../SETUP/Trading%20partner.md)
+The following core setup is available under **EDI > Setup**:
+- [Connections](../Setup/Connection%20setup.md)
+- [Cleanup profile](../Setup/Cleanup%20profile.md)
+- [Reset status](../Setup/Reset%20status.md)
+- [EDI parameters](../Setup/EDI%20parameters.md)
+- [EDI shared parameters](../Setup/EDI%20shared%20parameters.md)
+- [UOM mapping](../Setup/UOM%20mapping.md)
+- [Document type mapping](../Document%20type%20mapping.md)
+- [Document types](../Setup/Document%20types.md)
+- [Trading partners](../Setup/Trading%20partners.md)
+- [Batch control](../Setup/Batch%20control.md)
 
 ## Processing
 
 ### Import files
 Ability to manually import or review inbound files
-- [Inbound files](../../CORE/Managing%20files/Inbound%20files.md)
+- [Inbound files](../Managing%20files/Inbound%20files.md)
 
 ### Export files
 Ability to manually export or review outbound files
-- [Outbound files](../../CORE/Managing%20files/Outbound%20files.md)
+- [Outbound files](../Managing%20files/Outbound%20files.md)
 
-### 3PL documents
-Review staging records. <br>
-Users can access the forms by navigating to **EDI > Documents > 3PL documents**
-- [Picking list](../DOCUMENTS/Picking%20list.md)
-- [Picking list registration](../DOCUMENTS/Picking%20list%20registration.md)
-- [Shipment advice - Purchase order](../DOCUMENTS/Shipment%20advice%20-%20Purchase%20order.md)
-- [Shipment advice - Transfer order](../DOCUMENTS/Shipment%20advice%20-%20Transfer%20order.md)
-- [Shipment advice - Return order](../DOCUMENTS/Shipment%20advice%20-%20Return%20order.md)
-- [Shipment advice - Voyage](../DOCUMENTS/Shipment%20advice%20-%20Voyage.md)
-- [Shipment receipt - Purchase order](../DOCUMENTS/Shipment%20receipt%20-%20Purchase%20order.md)
-- [Shipment receipt - Transfer order](../DOCUMENTS/Shipment%20receipt%20-%20Transfer%20order.md)
-- [Shipment receipt - Return order](../DOCUMENTS/Shipment%20receipt%20-%20Return%20order.md)
-- [Shipment receipt - Voyage](../DOCUMENTS/Shipment%20receipt%20-%20Voyage.md)
-- [Inventory adjustment advice - Transfer](../DOCUMENTS/Inventory%20adjustment%20-%20Transfer.md)
-- [Inventory adjustment advice - Counting](../DOCUMENTS/Inventory%20adjustment%20-%20Counting.md)
-- [Inventory adjustment advice - Reconciliation](../DOCUMENTS/Inventory%20adjustment%20-%20Reconciliation.md)
-- [Inventory adjustment advice - Movement](../DOCUMENTS/Inventory%20adjustment%20-%20Movement.md)
+### Archive files
+- [Archive file queue](../Managing%20files/Archiving%20files.md) - Ability to periodically archive document handling attachments for inbound and outbound files
 
-[Process overview](Process%20overview.md) for 3PL EDI documents.
+### Automatically reset error records
+- [Reset status](../Setup/Reset%20status.md#retryreset-process)
+
+[Process overview](Process%20overview.md) for EDI documents.
 
 ### Workspaces
-The following workspaces are available:
+The following workspaces are available in core EDI and will contain a tab per licensed module:
 - [EDI Document maintenance](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md) - Manage file import and staging record errors. These records have not been successfully processed to a target D365 document
-- [EDI Inventory adjustment](../WORKSPACES/EDI%20Inventory%20adjustment.md) - Manage open inventory reconciliations and unposted inventory journal targets created by succesfully processing Inventory adjustment documents
+
+## Inquiries
+The following is available for Core EDI:
+- [Functional acknowledgement received](../Inquiries/Functional%20acknowledgement%20received.md) - Provides a view of outgoing documents where the Inbound functional acknowledgement is outstanding
+- [Trading partner documents](../Inquiries/Trading%20partner%20documents.md) - List of all EDI Trading partners and their enabled document types
 
 ## Other
-- [Data entities](../OTHER/Data%20entities.md)
+- [Data entities](../OTHER/Data%20entities.md) - Core data entities 
 - [Frequently asked questions](../OTHER/FAQ.md) - Includes example errors and recommended fixes
