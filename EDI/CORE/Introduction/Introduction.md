@@ -63,8 +63,9 @@ Ability to manually import or review inbound files
 Ability to manually export or review outbound files
 - [Outbound files](../Managing%20files/Outbound%20files.md)
 
-### Archive files
+### Archive file attachments and Delete records
 - [Archive file queue](../Managing%20files/Archiving%20files.md) - Ability to periodically archive document handling attachments for inbound and outbound files
+- [Cleanup profile](../Setup/Cleanup%20profile.md) - Can be used to automatically delete staging records based on status and age days
 
 ### Automatically reset error records
 - [Reset status](../Setup/Reset%20status.md#retryreset-process)
