@@ -70,6 +70,12 @@ Ability to manually export or review outbound files
 ### Automatically reset error records
 - [Reset status](../Setup/Reset%20status.md#retryreset-process) - Optional automatic retry by resetting Error records to Not started based on a recurrence pattern
 
+### EDI Core documents
+Review staging records. <br>
+Users can access the forms by navigating to **EDI > Documents**
+- [Functional acknowledgement inbound](../DOCUMENTS/Functional%20acknowledgement%20inbound.md)
+- [Functional acknowledgement outbound](../DOCUMENTS/Functional%20acknowledgement%20outbound.md)
+
 [Process overview](Process%20overview.md) for EDI documents.
 
 ### Workspaces
