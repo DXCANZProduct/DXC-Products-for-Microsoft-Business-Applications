@@ -67,7 +67,7 @@ The following Document types are available and depends on licensing and enabled 
   - [Shipment advice - Purchase order](../../3PL/DOCUMENTS/Shipment%20advice%20-%20Purchase%20order.md) (outbound)
   - [Shipment receipt - Purchase order](../../3PL/DOCUMENTS/Shipment%20receipt%20-%20Purchase%20order.md) (inbound)
   - [Shipment advice - Transfer order](../../3PL/DOCUMENTS/Shipment%20advice%20-%20Transfer%20order.md) (outbound)
-  - [Shipment receipt - Transfer order)](../../3PL/DOCUMENTS/Shipment%20receipt%20-%20Transfer%20order.md) (inbound
+  - [Shipment receipt - Transfer order](../../3PL/DOCUMENTS/Shipment%20receipt%20-%20Transfer%20order.md) (inbound)
   - [Shipment advice - Return order](../../3PL/DOCUMENTS/Shipment%20advice%20-%20Return%20order.md) (outbound)
   - [Shipment receipt - Return order](../../3PL/DOCUMENTS/Shipment%20receipt%20-%20Return%20order.md) (inbound)
   - [Shipment advice - Voyage](../../3PL/DOCUMENTS/Shipment%20advice%20-%20Voyage.md) (outbound)
