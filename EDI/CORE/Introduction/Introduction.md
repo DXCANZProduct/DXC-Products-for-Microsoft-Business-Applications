@@ -39,6 +39,8 @@ EDI contains the following documents pertaining to all Trading partners.
 - **Outbound**
 	- **Functional Acknowledgement** – Send functional acknowledgement that inbound document has been received.
 
+Depending on licensing additional documents are available per module, view all trading partner documents [here](Trading%20partners%20and%20documents.md).
+
 ## Setup
 ### Core setup
 The following core setup is available under **EDI > Setup**:
