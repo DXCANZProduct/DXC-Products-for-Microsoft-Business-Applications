@@ -63,7 +63,7 @@ Ability to manually import or review inbound files
 Ability to manually export or review outbound files
 - [Outbound files](../Managing%20files/Outbound%20files.md) - View and/or manually process exporting of files.
 
-[Process overview for import and export](Process%20overview.md) for EDI documents.
+[Process overview for import and export](Process%20overview.md) of EDI documents.
 
 ### Archive file attachments and Delete records
 - [Archive file queue](../Managing%20files/Archiving%20files.md) - Ability to periodically archive document handling attachments for inbound and outbound files
