@@ -57,18 +57,18 @@ The following core setup is available under **EDI > Setup**:
 
 ### Import files
 Ability to manually import or review inbound files
-- [Inbound files](../Managing%20files/Inbound%20files.md)
+- [Inbound files](../Managing%20files/Inbound%20files.md) - View and/or manually process importing of files and processing to staging.
 
 ### Export files
 Ability to manually export or review outbound files
-- [Outbound files](../Managing%20files/Outbound%20files.md)
+- [Outbound files](../Managing%20files/Outbound%20files.md) - View and/or manually process exporting of files.
 
 ### Archive file attachments and Delete records
 - [Archive file queue](../Managing%20files/Archiving%20files.md) - Ability to periodically archive document handling attachments for inbound and outbound files
 - [Cleanup profile](../Setup/Cleanup%20profile.md) - Can be used to automatically delete staging records based on status and age days
 
 ### Automatically reset error records
-- [Reset status](../Setup/Reset%20status.md#retryreset-process)
+- [Reset status](../Setup/Reset%20status.md#retryreset-process) - Optional automatic retry by resetting Error records to Not started based on a recurrence pattern
 
 [Process overview](Process%20overview.md) for EDI documents.
 
