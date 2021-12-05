@@ -40,10 +40,10 @@ Below modules are determined by licensing and enabled features.
   - [3PL setup](../../3PL/SETUP/3PL%20setup.md)
   - [Freight forwarder landed cost setup](../../FREIGHT%20FORWARDER/SETUP/Freight%20forwarder%20setup.md)
 - **Document types**: Template, setting profile, outbound filenames for each applicable document type will be assigned to the Trading partner.
-  - [Customer document types](../../CUSTOMER/SETUP/Document%20types.md)
-  - [Vendor document types](../../VENDOR/SETUP/Document%20types.md)
-  - [3PL document types](../../3PL/SETUP/Document%20types.md)
-  - [Freight forwarder landed document types](../../FREIGHT%20FORWARDER/SETUP/Document%20types.md)
+  - [Customer document types](../../CUSTOMER/INTRODUCTION/Introduction.md#customer-document-type-setup)
+  - [Vendor document types](../../VENDOR/INTRODUCTION/Introduction.md#vendor-document-type-setup)
+  - [3PL document types](../../3PL/INTRODUCTION/Introduction.md#3pl-document-type-setup)
+  - [Freight forwarder landed document types](../../FREIGHT%20FORWARDER/INTRODUCTION/Introduction.md#freight-forwarder-document-type-setup)
 
 ## Setup Trading partners
 Users can access the form by navigating to **EDI > Setup > Trading partners**.
