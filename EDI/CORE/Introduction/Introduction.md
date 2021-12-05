@@ -63,6 +63,8 @@ Ability to manually import or review inbound files
 Ability to manually export or review outbound files
 - [Outbound files](../Managing%20files/Outbound%20files.md) - View and/or manually process exporting of files.
 
+[Process overview for import and export](Process%20overview.md) for EDI documents.
+
 ### Archive file attachments and Delete records
 - [Archive file queue](../Managing%20files/Archiving%20files.md) - Ability to periodically archive document handling attachments for inbound and outbound files
 - [Cleanup profile](../Setup/Cleanup%20profile.md) - Can be used to automatically delete staging records based on status and age days
@@ -75,8 +77,6 @@ Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents**
 - [Functional acknowledgement inbound](../DOCUMENTS/Functional%20acknowledgement%20inbound.md)
 - [Functional acknowledgement outbound](../DOCUMENTS/Functional%20acknowledgement%20outbound.md)
-
-[Process overview](Process%20overview.md) for EDI documents.
 
 ### Workspaces
 The following workspaces are available in core EDI and will contain a tab per licensed module:
