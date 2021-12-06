@@ -85,7 +85,7 @@ The following workspaces are available in core EDI and will contain a tab per li
 - [EDI Document maintenance](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md) - Manage file import and staging record errors. These records have not been successfully processed to a target D365 document
 
 ## Inquiries
-The following is available for Core EDI:
+The following is available for Core EDI by navigating to **EDI > Inquiries and reports**:
 - [Functional acknowledgement received](../Inquiries/Functional%20acknowledgement%20received.md) - Provides a view of outgoing documents where the Inbound functional acknowledgement is outstanding
 - [Trading partner documents](../Inquiries/Trading%20partner%20documents.md) - List of all EDI Trading partners and their enabled document types
 
