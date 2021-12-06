@@ -98,24 +98,7 @@ Example error for file not matching template: 'Segment '<xml' not found in EDI t
 ### Step 3 - Staging to target
 If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and the acknowledgement won't be created on the target D365 purchase order.
 
-#### Possible issues and fixes
-**Staging to target** errors for Vendor purchase order acknowledgements can be viewed in:
-- **EDI > Documents > Vendor documents > Vendor purchase order acknowledgement** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **Vendor documents**, tile **Purchase order acknowledgement errors**
-- **EDI > Document maintenance**, tab **Vendor documents**, **Documents** page, tab **POA**
-
-At this step the issues are usually around mapping/business logic issues.
-Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
-
-> Note: When the Version log displays an **Error type** of _Processing error_, the processing has stopped because of a standard D365 error and the **Message** will display the standard D365 error. <br>
-> Note: Similar to manually processing a D365 transaction, EDI will stop at the first processing error and only this error is displayed. Fixing the error and reprocessing might result in subsequent standard processing errors which need to be dealt with.
-
-#### Example header errors:
-**Error message**       | **Error type**         | **Method to fix**
-:---------------------- |:----                   |:----
-
-
-### Staging line validation - Purchase order acknowledgement
+#### Staging line validation - Purchase order acknowledgement
 
 ![alt text](../IMAGE/LineChecks_VendorPOA.png "Item checks for Vendor purchase order acknowledgement")
 
@@ -125,18 +108,14 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 **No Valid Item**           | No valid item based on the different options available    | Error at Staging table. <br> No target POA created
 
 #### Possible issues and fixes
-**Staging to target** errors for Vendor purchase order acknowledgement can be viewed in:
-- **EDI > Documents > Vendor purchase order acknowledgement** filtered to **Staging to target tatus** set to _Error_
+**Staging to target** errors for Vendor purchase order acknowledgements can be viewed in:
+- **EDI > Documents > Vendor documents > Vendor purchase order acknowledgement** filtered to **Staging to target tatus** set to _Error_
 - **EDI > Document maintenance**, tab **Vendor documents**, tile **Purchase order acknowledgement errors**
 - **EDI > Document maintenance**, tab **Vendor documents**, **Documents** page, tab **POA**
 
-At this step the issues are usually around setup/business logic issues.
-Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
-
-#### Example line errors:
-**Error message**                     | **Error type**         | **Method to fix**
-:------------------------------------ |:----                   |:----
-Item not found: %	                  | Item not found         | **EDI > Documents > Vendor documents > Vendor purchase order acknowledgement** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's [Setting profile](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
+At this step the issues are usually around mapping/business logic issues. <br> 
+Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table. <br>
+Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#vendor-purchase-order-acknowledgement)
 
 ### Validation
 
