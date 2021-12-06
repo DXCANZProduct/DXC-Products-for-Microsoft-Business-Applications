@@ -41,15 +41,15 @@ Trading Partner Setup - Quick Summary:
 **Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> • Outgoing documents: Connection profile setup on [EDI > Setup > EDI parameters](../../CORE/Setup/EDI%20parameters.md) <br> • Incoming documents: All active connection incoming paths as setup in [Connections](../../CORE/Setup/Connection%20setup.md). | [EDI > Setup > Connection setup](../../CORE/Setup/Connection%20setup.md)
 **Cleanup profile**	              | Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level. If blank, default Cleanup profile will be used as setup on [EDI > Setup > EDI shared parameters](../../CORE/Setup/EDI%20shared%20parameters.md) | [EDI > Setup > Cleanup profile](../../CORE/Setup/Cleanup%20profile.md)
 <ins>**Container mapping**</ins>			
-**Container type**                |	Container type identifiers  | [EDI > Freight forwarder landed cost setup > Shipping container type mappings]()
-**Measurement unit**              |	Shipping measurement unit mapping	| [EDI > Freight forwarder landed cost setup > Shipping measurement unit mapping]()
+**Container type**                |	Container type identifiers  | [EDI > Freight forwarder landed cost setup > Shipping container type mappings](FF%20SETUP/Shipping%20container%20types%20mapping.md)
+**Measurement unit**              |	Shipping measurement unit mapping	| [EDI > Freight forwarder landed cost setup > Shipping measurement unit mapping](FF%20SETUP/Shipping%20measurement%20unit%20mapping.md)
 <ins>**Journey mapping**</ins>			
-**Port**                          |	Shipping port mapping	      | [EDI > Freight forwarder landed cost setup > Shipping port mapping]()
-**Port qualifier**                | Shipping port qualifier mapping	| [EDI > Freight forwarder landed cost setup > Shipping port qualifier mapping]()
-**Mode of delivery**              |	Mode of delivery mapping	  | [EDI > Freight forwarder landed cost setup > Modes of delivery mapping]() 
-**Activity**                      | Activity mapping	          | [EDI > Freight forwarder landed cost setup > Activity mapping]()
+**Port**                          |	Shipping port mapping	      | [EDI > Freight forwarder landed cost setup > Shipping port mapping](FF%20SETUP/Shipping%20port%20mapping.md)
+**Port qualifier**                | Shipping port qualifier mapping	| [EDI > Freight forwarder landed cost setup > Shipping port qualifier mapping](FF%20SETUP/Shipping%20port%20qualifier%20mapping.md)
+**Mode of delivery**              |	Mode of delivery mapping	  | [EDI > Freight forwarder landed cost setup > Modes of delivery mapping](FF%20SETUP/Modes%20of%20delivery%20mapping.md) 
+**Activity**                      | Activity mapping	          | [EDI > Freight forwarder landed cost setup > Activity mapping](FF%20SETUP/Activity%20mapping.md)
 <ins>**Other mappings**</ins>		
-**Customs broker**                |	Customs broker mapping	    | [EDI > Freight forwarder landed cost setup > Customs broker mapping]()
+**Customs broker**                |	Customs broker mapping	    | [EDI > Freight forwarder landed cost setup > Customs broker mapping](FF%20SETUP/Customs%20broker%20mapping.md)
 **UOM**                           |	Unit of measure mappings for in- and outbound documents	    | [EDI > Setup > UOM mapping](../../CORE/Setup/UOM%20mapping.md)
 <ins>**Outgoing documents**</ins> |	It brings the document template, mappings, settings profile together to enable the document for the trading partner <br>
 **EDI Document type**             |	Each applicable outbound document type	                                                                 | [EDI > Setup > Document types](../../CORE/Setup/Document%20types.md)
@@ -64,7 +64,7 @@ Trading Partner Setup - Quick Summary:
 **EDI Document type**             |	Each applicable inbound document type	                                                                   | [EDI > Setup > Document types](../../CORE/Setup/Document%20types.md)
 **Template**                      |	Document type templates defined for the document type                                                    | [Templates on EDI > Setup > Document types](../../CORE/Setup/DocumentTypes/File%20templates.md)
 **Setting profile**               |	Settings profiles defined for the document type                                                          | [Setting profiles on EDI > Setup > Document types](Setting%20profiles.md)
-**Validation profile**            | Validation profiles defined for the document type		                                                     | [EDI > Setup > Document types](../../CORE/Setup/Document%20types.md)
+**Validation profile**            | Validation profiles defined for the document type		                                                     | [EDI > Setup > Document types](Validation%20profiles.md)
 **Search mask**                   |	A file mask is used to match files in the document type’s defined directories	
 **Connection profile**            |	Ability to override the default [EDI connection profile](../../CORE/Setup/Connection%20setup.md) on document level. If blank, the trading partner’s Connection profile will be used.   | [EDI > Setup > Document types](../../CORE/Setup/Connection%20setup.md)
 **Cleanup profile**               |	Ability to override the default [Cleanup profile](../../CORE/Setup/Cleanup%20profile.md) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](../../CORE/Setup/EDI%20shared%20parameters.md) will be used. |	[EDI > Setup > Cleanup profile](../../CORE/Setup/Cleanup%20profile.md)
