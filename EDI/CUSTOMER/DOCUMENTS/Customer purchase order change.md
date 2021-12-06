@@ -117,21 +117,6 @@ There are various **Order purposes** that can be processed via the purchase orde
 **Document status**         | Check if the existing D365 sales order’s **Document status** <= Customer purchase order change’s Document status setting. For example if the sales order has been picked, but the Document setting only allows changes up to Document status set to _Confirmation_, the staging record will error.
 **Line status**             | If existing D365 sales order line’s status is Completed then sales line can’t be updated, and staging record will error.
 
-#### Possible issues and fixes
-**Staging to target** errors for Customer purchase order change can be viewed in:
-- **EDI > Documents > Customer documents > Customer purchase order change** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **Customer documents**, tile **PO change errors**
-- **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO change**
-
-At this step the issues are usually around mapping/business logic issues.
-Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
-
-> Note: When the Version log displays an **Error type** of _Processing error_, the processing has stopped because of a standard D365 error and the **Message** will display the standard D365 error. <br>
-> Note: Similar to manually processing a D365 transaction, EDI will stop at the first processing error and only this error is displayed. Fixing the error and reprocessing might result in subsequent standard processing errors which need to be dealt with.
-
-#### Example header errors:
-**Error message**       | **Error type**         | **Method to fix**
-:---------------------- |:----                   |:----
 
 ### Staging line validation - Sales order
 
@@ -142,14 +127,15 @@ Review the **Log** or **Version log** for the applicable record to find the issu
 **No Valid Item**           | No valid item based on the different options available
 **No Valid Item and line number combination**   | Item and line number combination used to find applicable Sales line to update. Except where adding new lines.
 
-#### Possible issues and fixes
+### Possible issues and fixes
 **Staging to target** errors for Customer purchase order can be viewed in:
 - **EDI > Documents > Customer purchase order change** filtered to **Staging to target tatus** set to _Error_
 - **EDI > Document maintenance**, tab **Customer documents**, tile **PO change errors**
 - **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO change**
 
-At this step the issues are usually around setup/business logic issues.
-Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
+At this step the issues are usually around setup/business logic issues. <br>
+Review the **Log** or **Version log** for the applicable record to find the issue. <br>
+Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#customer-purchase-order-change)
 
 #### Example line errors:
 **Error message**                     | **Error type**         | **Method to fix**
