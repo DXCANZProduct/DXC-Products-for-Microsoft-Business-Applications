@@ -53,11 +53,11 @@ There are two order purposes (**Change** and **Cancellation**) that can be proce
 Expectation is the customer sends price inclusive of discounts. 
 
 The following [**Customer EDI order types**](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) and [**Order purposes**](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md) are supported by each Customer inbound document:
-**Document type**		                  | **Order type**	| **Order purpose**
-:----                                 |:----            |:----
+**Document type**		              | **Order type**	| **Order purpose**
+:----                                 |:----                |:----
 **Customer purchase order**	          | Order		        | Original <br> Confirmation <br> Cancellation
 **Customer purchase order**	          | Agreement		    | Original
-**Customer purchase order**	          | Release order	  | Original
+**Customer purchase order**	          | Release order	    | Original
 **Customer purchase order change**	  | Order		        | Change <br> Cancellation
 
 Inbound files have the following three steps:
@@ -127,21 +127,6 @@ There are various **Order purposes** that can be processed via the purchase orde
 **No Valid Item**           | No valid item based on the different options available
 **No Valid Item and line number combination**   | Item and line number combination used to find applicable Sales line to update. Except where adding new lines.
 
-### Possible issues and fixes
-**Staging to target** errors for Customer purchase order can be viewed in:
-- **EDI > Documents > Customer purchase order change** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **Customer documents**, tile **PO change errors**
-- **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO change**
-
-At this step the issues are usually around setup/business logic issues. <br>
-Review the **Log** or **Version log** for the applicable record to find the issue. <br>
-Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#customer-purchase-order-change)
-
-#### Example line errors:
-**Error message**                     | **Error type**         | **Method to fix**
-:------------------------------------ |:----                   |:----
-Item not found: %	                  | Item not found         | **EDI > Documents > Customer documents > Customer purchase order change** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's <br> [**Setting profile**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
-
 ### Sales order header checks
 The following sales order checks are done when the document is being:
 - Automatically processed and document setting **Allow header update** is set to _Yes_ or 
@@ -152,6 +137,16 @@ The following sales order checks are done when the document is being:
 **Rule Id**             | **Details**
 :---                    |:---
 **Deadline date**       | A check of this date against the standard rules is required. (i.e. Dates are not historical)
+
+### Possible issues and fixes
+**Staging to target** errors for Customer purchase order can be viewed in:
+- **EDI > Documents > Customer purchase order change** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **Customer documents**, tile **PO change errors**
+- **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO change**
+
+At this step the issues are usually around setup/business logic issues. <br>
+Review the **Log** or **Version log** for the applicable record to find the issue. <br>
+Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#customer-purchase-order-change)
 
 #### Settings
 Settings profiles can be specified and linked to the template which is used to determine how D365 will react.  Options are:
