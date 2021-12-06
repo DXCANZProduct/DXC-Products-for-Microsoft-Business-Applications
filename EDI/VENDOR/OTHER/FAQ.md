@@ -40,15 +40,15 @@ The following table describes a few of the staging errors that could be experien
 
 ### Vendor purchase order acknowledgement
 
-Error	            | Method to fix
-:--               |:--
+Error	message             | Method to fix
+:--                       |:--
 Cannot find purchase order line for item: % | Staging's **Item number**, based on document setting profile's **Item id source**, doesn't match purchase order line. Check if **Item id source** is correct. Either assign a different document setting profile to trading partner or fix staging's item number.
 EDI purchase % does not exist               | Staging's **Purchase order** doesn't exist in D365. Fix staging's **Purchase order**
 
 ### Vendor advanced shipping notice
 
-Error	            | Method to fix
-:--               |:--
+Error	message             | Method to fix
+:--                       |:--
 Purchase order % is no longer confirmed | Confirm the D365 purchase order
 Insufficient open deliver remainder in purchase order lines for item %  | If quantity is acceptable: increase the purchase order line's deliver remainder or over delivery %
 Cannot find purchase order line for item: % | Review staging's **Line number** and **Purchase order** to D365
@@ -57,8 +57,8 @@ Receipt list Serial number %. Expected Serial number %. | Staging's serial numbe
 
 ### Purchase invoice
 
-Error	            | Method to fix
-:--               |:--
+Error	message            | Method to fix
+:--                      |:--
 Cannot find purchase order %  | Staging record's **Purchase order** doesn't match D365. Fix staging
 Cannot find purchase order line for item: % | Staging record's **Line number** and **Item number** doesn't match D365. Fix staging, or assign a different document setting if **Item id source** incorrect.
 EDI trading partner's vendor account % does not match to purchase order's invoice account % | Depending on validation, is a different Vendor account in staging record allowed to Purchase order's invoice account.
