@@ -112,29 +112,6 @@ There are various **Order types** that can be processed via the purchase order d
 **Check Order type**	    | Check the **EDI order type** field on the staging record, which indicates whether the record should create a sales order, sales agreement (blanket order) or release order.
 **Duplicate PO number**     | Check the customer purchase order rules to validate the purchase order is valid. If document setting **Duplicate tolerance** doesn’t allow duplicates. If duplicates are allowed, a new D365 Sales order will be created with the same Customer requisition.
 
-#### Possible issues and fixes
-**Staging to target** errors for Customer purchase order can be viewed in:
-- **EDI > Documents > Customer documents > Customer purchase order** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **Customer documents**, tile **Purchase order errors**
-- **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO**
-
-At this step the issues are usually around mapping/business logic issues.
-Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
-
-> Note: When the Version log displays an **Error type** of _Processing error_, the processing has stopped because of a standard D365 error and the **Message** will display the standard D365 error. <br>
-> Note: Similar to manually processing a D365 transaction, EDI will stop at the first processing error and only this error is displayed. Fixing the error and reprocessing might result in subsequent standard processing errors which need to be dealt with.
-
-#### Example header errors:
-**Error message**       | **Error type**         | **Method to fix**
-:---------------------- |:----                   |:----
-Could not find address for store code '%'	| Store code not found    | Add/update existing Customer address with store code in: <br> • [**Trading partners**](../SETUP/Trading%20partner.md) page at **EDI > Setup > Trading partners**, or <br> • Customers page at **Accounts receivable > Customers > All customers**
-Field 'Agreement classification' must be filled in | Processing error       | **EDI > Setup > Document types**. Select applicable **Agreement classification** on Customer purchase order document **Setting profile** in [**Document types**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md)
-Inventory dimension Site is mandatory and must consequently be specified.   | Processing error    | **Accounts receivable > Customers > All customers**. Setup default site or warehouse on the customer or if no default, the original EDI file needs to include these details.  
-The entered receipt date ‘%’ is not valid because it is before today.       |  Processing error   | **EDI > Documents > Customer documents > Customer purchase order**. Edit requested receipt date in the staging page.
-Sales Agreement for customer '%', purchase number ‘%’ not found     |  Order not found 	| Received a Release order referring to Sales agreement that could not be found for the Customer. <br> 1. **EDI > Setup > Docuemnt types** or **EDI > Setup > Trading partners**. If sales agreement is not required, either update document setting **Create release order without blanket order**’ to _Yes_ or assign the correct Setting on the Trading partner. <br> 2. If blanket order is required, create/import the sales agreement or fix the **Customer requisition** on existing sales agreement (if D365 incorrect) or on the staging record (if staging incorrect).
-Invalid order type  | Order type not found          | Review the staging record's **EDI order type** is mapped in the [**Customer EDI order types**](SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md) assigned to the Trading partner.
-Purchase order '%' already exists on sales order '%'  | Order duplicate    | The document setting **Duplicate tolerance** doesn't allow duplicate orders. If duplicates are allowed for flagged orders, update the **Bypass duplicate check** on the Sales order hearder under the **EDI** FastTab.
-
 ### Staging line validation - Sales order
 
 ![alt text](../IMAGE/LineChecks_CustomerPO.png "Line checks for Customer purchase order")
@@ -143,19 +120,6 @@ Purchase order '%' already exists on sales order '%'  | Order duplicate    | The
 :---                        |:---                 
 **No Valid Item**           | No valid item based on the different options available
 
-#### Possible issues and fixes
-**Staging to target** errors for Customer purchase order can be viewed in:
-- **EDI > Documents > Customer purchase order** filtered to **Staging to target tatus** set to _Error_
-- **EDI > Document maintenance**, tab **Customer documents**, tile **Purchase order errors**
-- **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO**
-
-At this step the issues are usually around setup/business logic issues.
-Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
-
-#### Example line errors:
-**Error message**                     | **Error type**         | **Method to fix**
-:------------------------------------ |:----                   |:----
-Item not found: %	                  | Item not found         | **EDI > Documents > Customer documents > Customer purchase order** and/or <br> **Product information management > Products > Released products** <br> Dependening on **Item Id source** assigned to Trading partner’s Document's <br> [**Setting profile**](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md), EDI couldn’t find the staging record's Item Id / Barcode. <br> Either fix staging or setup on the Item.
 
 ### Sales order header checks
 
@@ -186,6 +150,16 @@ Create release order without blanket order	| The action taken when a release ord
 **Unit of measurement**                     | It should first check that this unit of measurement actually exists, a second check should be the measurement on the inventory table module for sales. If the Customer has a **UOM** mapping assigned, this will also be used to map their value to D365 value.
 **Unit price**                              | The unit price should be checked using the standard D365 pricing rules.  If the prices are slightly different it should check both the **Maximum positive and negative tolerance** and **Use customer price** flag on document's setting before giving an error/warning. Example: <br> Item X trade agreement price 10.25 <br> Item Y trade agreement price 8.88 <br> Customer has a min and max tolerance setting of 0.05 <br> Customer does not have their trade agreements entered including tax <br> Customer sends their EDI orders including tax <br> The setting use customer pricing is given <br> Item X EDI file price (before converting) 11.26 (after conversion) 10.24 <br> Item Y EDI file price (before converting) 9.70 (after conversion) 8.82 <br> Template setting against this field is warning. <br> A warning is only given for Item Y because it is outside of the tolerance. 
 **Check multiple**                          | The quantity should be devisable by the multiple specified on the customer multiple table, if there isn’t one then it check the sales multiple on the item table.  
+
+### Possible issues and fixes
+**Staging to target** errors for Customer purchase order can be viewed in:
+- **EDI > Documents > Customer documents > Customer purchase order** filtered to **Staging to target tatus** set to _Error_
+- **EDI > Document maintenance**, tab **Customer documents**, tile **Purchase order errors**
+- **EDI > Document maintenance**, tab **Customer documents**, **Documents** page, tab **PO**
+
+At this step the issues are usually around mapping/business logic issues. <br>
+Review the **Log** or **Version log** for the applicable record to find the issue. <br>
+Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#customer-purchase-order).
 
 ## View staging table records
 To view the Customer purchase order's staging records, go to **EDI > Documents > Customer documents > Customer purchase order**. 
