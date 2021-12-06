@@ -85,7 +85,7 @@ Location % does not exist in warehouse %.           | Verify staging's **Locatio
 Blocking status cannot be set for Transfer transactions.  | Staging's **Inventory status to** is flagged as a blocking status, and transfer journal is thus not allowed.
 No inventory journal setup in document settings profile   | Assign a transfer journal in **Journal name** on the [document setting profile](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Transfer.md)
 Posting - Journal	Journal: %	Line number: %	Item number: %	From inventory dimensions and To inventory dimensions must be different.  | Issue with staging as the **From batch number** and **To batch number** doesn't differ. Verify and fix staging.
-Posting - Journal	Journal: %	Line number: %	Item number: %	Physical on-hand	Site=%,Warehouse=%,Batch number=%	% cannot be picked because only % is/are available from the inventory for item: %.  | | Not enough on hand stock for required movement journal line, either fix staging or D365.
+Posting - Journal	Journal: %	Line number: %	Item number: %	Physical on-hand	Site=%,Warehouse=%,Batch number=%	% cannot be picked because only % is/are available from the inventory for item: %.  | Not enough on hand stock for required movement journal line, either fix staging or D365.
 
 ### Inventory adjustment - Counting
 
