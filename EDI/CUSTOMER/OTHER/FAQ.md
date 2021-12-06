@@ -57,9 +57,8 @@ Purchase order % already exists on sales order %  | Customer requisition duplica
 
 Error	message           | Method to fix
 :--                     |:--
-Change line not found for % | Staging field **ChangeTypeValue** value can't be found in [Order line change type group](../SETUP/CUSTOMER%20SETUP/Order%20line%20change%20type%20group.md) assigned to the trading partner. Add to the mapping if correct, or fix staging.
-Document settings do not allow customer price updates | 
-Order purpose % not valid for change document | 
-Price is outside of tolerance (Price = %, agreed price = %) | 
-Sales order for PO % and customer % doesn't exist.  | 
+Change line not found for % | Staging field **EDI order change type**'s value can't be found in [Order line change type group](../SETUP/CUSTOMER%20SETUP/Order%20line%20change%20type%20group.md) assigned to the trading partner. Add to the mapping if correct, or fix staging.
+Order purpose 'Original' not valid for change document | Order purpose 'Original' can only be imported using document **Customer purchase order**. Not allowed for **Customer purchase order change**. Fix settings in order for document to be imported under correct document (example filename mask on Trading partner, or the connection setup filepath).
+Price is outside of tolerance (Price = %, agreed price = %) | The unit price change is outside the allowed variance as set in the [document setting profile](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20change.md).
+Sales order for PO % and customer % doesn't exist.  | EDI can't find the D365 based on staging field **Customer requisition**. Either the sales order hasn't been created or the values don't match to D365. Fix staging or D365 sales order.
 
