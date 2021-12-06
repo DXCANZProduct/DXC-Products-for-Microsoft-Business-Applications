@@ -50,7 +50,7 @@ EDI customers can also cancel the order by using the **Cancellation** order purp
 EDI customers can use **Customer purchase order** document with an order purpose of **Confirmation** to confirm the **Customer purchase order acknowledgement** they received.
 
 ### Purchase order acknowledgement
-The **Customer purchase order acknowledgement** can be used to accept or change the details within the for a sales order created via EDI. <br>
+The **Customer purchase order acknowledgement** can be used to accept or change the details for a sales order created via EDI. <br>
 It can be manually processed or setup as a periodic job for allowed scenarios.
 
 ### Advanced shipping notice (ASN)
