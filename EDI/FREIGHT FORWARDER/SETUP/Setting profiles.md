@@ -40,5 +40,5 @@ Setting profiles can be created to specify the handling of specific scenarios. O
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details. 
 
 The following Freight forwarder documents have setting profiles:
-- [Voyage creator]()
-- [Voyage tracking]()
+- [Voyage creator](SETTING%20PROFILES/Voyage%20creator.md)
+- [Voyage tracking](SETTING%20PROFILES/Voyage%20tracking.md)
