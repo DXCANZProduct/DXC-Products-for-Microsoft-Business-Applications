@@ -45,6 +45,9 @@ Error	message                                       | Method to fix
 Item %, dimensions: % Physical on-hand %=Available % cannot be picked because only % is/are available from the inventory  | Adjust D365 on-hand if staging record correct
 Picking list % is in status Completed               | The D365 picking list registration has already been completed. Verify if duplication and either fix record's picking route id or cancel staging record if duplication.
 Unable to locate an activated picking list line (Route Id - %, Lot - %, Item - %, Quantity - %, Size - %, Colour - %', Style - %, Configuration - %, Inventory status - %)  | Inbound document's line details don't match to picking list, compare staging details mentioned in the error. 
+Picking list route % is in status Completed         | Staging's **Picking route** has already been completed. Verify if duplication. If 3PL is shipping the remainder of a previous pick list, a new D365 picking list needs to be posted and used in staging record. When a picking list registration is received all the quantities not shipped are cancelled and thus a D365 picking route can't be used for multiple shipments.
+Posting	Sending document	Advanced shipping notice	Export to staging completed.  | Info message that the sales order's customer is setup to receive Advanced shipping notices (ASN) via EDI, and processing the 3PL's picking list registration has created the ASN staging record.
+Shortpicked line - Item % Lot %     | Dependent on [validation](../SETUP/VALIDATION%20PROFILES/Picking%20list%20registration.md)'s Error tolerance for **Short pick**
 
 ### Shipment receipt - Purchase order
 
