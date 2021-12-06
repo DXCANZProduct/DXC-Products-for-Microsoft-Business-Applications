@@ -70,7 +70,7 @@ Line does not exist             | Verify if Lot ID (InventTransId) is correct in
 
 Error	message                                       | Method to fix        
 :--                                                 |:--       
-Shipment % does not exist       | Verify if Voyage (ShipId) is correct in staging                     | • Shipment receipt - Voyage
+Shipment % does not exist       | Verify if Voyage (ShipId) is correct in staging                     
 Line does not exist             | Verify if Lot ID (InventTransId) is correct in staging
 
 ### Inventory adjustment - Transfer
@@ -83,7 +83,10 @@ Error	message                                       | Method to fix
 
 Error	message                                       | Method to fix        
 :--                                                 |:--     
-
+Batch Id % not found for item %                     | Verify if batch correct. If 3PL can create new batches, assign document setting to trading partner that allows creating new D365 batches. If staging incorrect, edit staging's **Batch number**.
+Invalid inventory dimensions                        | Inventory dimension(s) specified in staging record is invalid. Verify and either fix staging record, or update D365.
+Inventory Status % does not exist.                  | Verify and add staging's **Inventory status** to [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) assigned to the trading partner.
+Location % does not exist in warehouse %.           | Verify staging's **Location** and either fix staging or add to D365
 
 ### Inventory adjustment - Reconciliation
 
