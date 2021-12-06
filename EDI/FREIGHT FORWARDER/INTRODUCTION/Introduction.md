@@ -112,4 +112,5 @@ The following workspaces are available:
 
 ## Other
 - [Data entities](../OTHER/Data%20entities.md)
+- [Security configuration](../../CORE/OTHER/Security%20configuration.md)
 - [Frequently asked questions](../OTHER/FAQ.md) - Includes example errors and recommended fixes
