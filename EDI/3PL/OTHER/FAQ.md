@@ -40,36 +40,59 @@ The following table describes a few staging errors that could be experienced wit
 
 ### Picking list registration
 
-Error	message                                              | Method to fix        
-:--                                                 |:--                |:--
-Item %, dimensions: % Physical on-hand %=Available % cannot be picked because only % is/are available from the inventory  | Adjust D365 on-hand if staging record correct  | • Picking list registration
-Picking list % is in status Completed               | The D365 picking list registration has already been completed. Verify if duplication and either fix record's picking route id or cancel staging record if duplication.  | • Picking list registration
-Unable to locate an activated picking list line (Route Id - %, Lot - %, Item - %, Quantity - %, Size - %, Colour - %', Style - %, Configuration - %, Inventory status - %)  | Inbound document's line details don't match to picking list, compare staging details mentioned in the error. | • Picking list registration
-Receipt list % does not exist for purchase order %  | The EDI record's purchase order and receipt combination doesn't match to D365. Verify and fix staging record. | • Shipment receipt - Purchase order
-Transfer order % does not exist | Verify if Transfer number (InventTransferId) is correct in staging  | • Shipment receipt - Transfer order
-Return order % does not exist   | Verify if RMA number (ReturnItemNum) is correct in staging          | • Shipment receipt - Return order
-Shipment % does not exist       | Verify if Voyage (ShipId) is correct in staging                     | • Shipment receipt - Voyage
-Line does not exist             | Verify if Lot ID (InventTransId) is correct in staging              | • Shipment receipt - Transfer order <br> • Shipment receipt - Return order <br> • Shipment receipt - Voyage
+Error	message                                       | Method to fix        
+:--                                                 |:--                
+Item %, dimensions: % Physical on-hand %=Available % cannot be picked because only % is/are available from the inventory  | Adjust D365 on-hand if staging record correct
+Picking list % is in status Completed               | The D365 picking list registration has already been completed. Verify if duplication and either fix record's picking route id or cancel staging record if duplication.
+Unable to locate an activated picking list line (Route Id - %, Lot - %, Item - %, Quantity - %, Size - %, Colour - %', Style - %, Configuration - %, Inventory status - %)  | Inbound document's line details don't match to picking list, compare staging details mentioned in the error. 
 
 ### Shipment receipt - Purchase order
 
+Error	message                                       | Method to fix        
+:--                                                 |:--                
+Receipt list % does not exist for purchase order %  | The EDI record's purchase order and receipt combination doesn't match to D365. Verify and fix staging record.
 
 ### Shipment receipt - Transfer order
 
+Error	message                                       | Method to fix        
+:--                                                 |:--          
+Transfer order % does not exist | Verify if Transfer number (InventTransferId) is correct in staging 
+Line does not exist             | Verify if Lot ID (InventTransId) is correct in staging
 
 ### Shipment receipt - Return order
 
+Error	message                                       | Method to fix        
+:--                                                 |:--                
+Return order % does not exist   | Verify if RMA number (ReturnItemNum) is correct in staging    
+Line does not exist             | Verify if Lot ID (InventTransId) is correct in staging
 
 ### Shipment receipt - Voyage
 
+Error	message                                       | Method to fix        
+:--                                                 |:--       
+Shipment % does not exist       | Verify if Voyage (ShipId) is correct in staging                     | • Shipment receipt - Voyage
+Line does not exist             | Verify if Lot ID (InventTransId) is correct in staging
 
 ### Inventory adjustment - Transfer
+
+Error	message                                       | Method to fix        
+:--                                                 |:--                
 
 
 ### Inventory adjustment - Counting
 
+Error	message                                       | Method to fix        
+:--                                                 |:--     
+
 
 ### Inventory adjustment - Reconciliation
 
+Error	message                                       | Method to fix        
+:--                                                 |:--     
+
 
 ### Inventory adjustment - Movement
+
+Error	message                                       | Method to fix        
+:--                                                 |:--     
+
