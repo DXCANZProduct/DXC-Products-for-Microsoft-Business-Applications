@@ -91,4 +91,5 @@ The following is available for Core EDI by navigating to **EDI > Inquiries and r
 
 ## Other
 - [Data entities](../OTHER/Data%20entities.md) - Core data entities 
+- [Security configuration](../../CORE/OTHER/Security%20configuration.md) - EDI security roles
 - [Frequently asked questions](../OTHER/FAQ.md) - Includes example errors and recommended fixes
