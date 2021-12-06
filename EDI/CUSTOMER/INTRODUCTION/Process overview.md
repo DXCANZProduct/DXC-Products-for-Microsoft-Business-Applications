@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [EDI Vendor]
-description: [Overview of the Vendor EDI module process]
+title: [EDI Customer]
+description: [Overview of the Customer EDI module process]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 10/11/2021
+ms.date: 6/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,54 +29,43 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Process Overview
 
-## Purchase order, acknowledgement and confirmation process overview
-The following image displays the process of sending the purchase order (PO) to the EDI vendor, and if required, receiving a purchase order acknowledgement (POA) and sending a purchase order confirmation. <br>
+## Documents
+### Purchase order and Purchase order change
+#### Original (new) orders
+EDI customers setup for inbound **Customer purchase order** can send purchase order files creating either of the following in D365:
+- Sales order
+- Sales agreement
+- Release order
 
-### Purchase order (PO)
-When an Vendor EDI Trading partner has **Vendor purchase order** or **Vendor purchase order change** document(s) enabled, confirming the purchase order will create an original or change (after original) outbound staging records to the vendor.
+The created sales order can be put on hold if certain validation (like unit price) is outside allowed variances. <br>
+The sales order can also be put on hold if a Purchase order acknowledgement or Purchase order confirmation is required.
 
-### Purchase order acknowledgement (POA)
-PO setting **Acknowledgement required** determines if a POA is required which affects the Purchase order's **Status** and **Acknowledgement required**.
-If a purchase order acknowledgement (POA) is received, the validation's error tolerance determines if the D365 purchase order is updated.
-If any of the validations error, the staging record will error.
-For info and warning validations, the staging record will process to target and update the D365 purchase order where applicable.
-Where the POA contains a **Header - Accept** response, the rest of the POA details are ignored as all has been accepted.
+#### Change
+EDI customers setup for inbound **Customer purchase order change** can make changes to existing D365 sales orders created via EDI, if within the allowed parameters. 
 
-### Purchase order confirmation (POC)
-POA document setting **Purchase order confirmation required** determines if a purchase order confirmation (POC) is required after receiving a POA, and if it will be sent automatically or manually by user.
+#### Cancellation
+EDI customers can also cancel the order by using the **Cancellation** order purpose and using either document **Customer purchase order** or **Customer purchase order change**
 
-If the confirmation details doesn't match the POA, for example didn't accept the price change, a purchase order change with purpose **Change** will be created to the vendor.
+#### Confirmation
+EDI customers can use **Customer purchase order** document with an order purpose of **Confirmation** to confirm the **Customer purchase order acknowledgement** they received.
 
-If the confirmation details does match the POA, a purchase order change with purpose **Confirmation** will be created to the vendor.
-When the purpose is **Confirmation**, the following purchase order header fields are updated:
-- **Status** will change to _Confirmed_ (if previously set to _In external review)_ and 
-- **Acknowledgement required** will change to _Confirmation sent_
-
-
-![alt text](../IMAGE/Vendor_PO_POA_POC_process.png "Vendor EDI process for order, acknowledgement and confirmation")
-
-## Advanced shipping notice (ASN) and Purchase invoice process overview
+### Purchase order acknowledgement
+The **Customer purchase order acknowledgement** can be used to accept or change the details within the for a sales order created via EDI. <br>
+It can be manually processed or setup as a periodic job for allowed scenarios.
 
 ### Advanced shipping notice (ASN)
-Based on document settings, the incoming EDI ASN can either:
-- Basic warehousing (Ship to warehouse is setup for basic warehousing):
-    - Create arrival journal, but leave unposted
-    - Create and post arrival journal
-    - Create and post arrival journal, and post the product receipt for the registered stock
-- Advanced warehousing (Ship to warehouse is setup for advanced warehousing):
-    - Create an open load
+Packing slip details for a sales order can be sent to EDI customers setup with **Customer advanced shipping notice**.
+If the packing slip is automatically posted via EDI 3PL picking list registration, the document will also be generated.
 
-### Purchase invoice
-Based on document settings, the incoming EDI purchase invoice can either:
-- Create a pending purchase order invoice where the match status fails
-- Post the purchase order invoice if match status passes, or
-- Submit pending purchase order invoice to workflow
+### Sales invoice
+Sales invoice details can be sent to EDI customers setup with **Sales invoice**. <br>
+Where a customer can't process credit notes received via EDI, these can be disabled via document settings.
 
-## Purchase order
-The processed EDI record(s) can be viewed for a purchase order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Purchase order page.<br>
-The EDI module have also enhanced the purchase order page by adding EDI fields to:
-- Purchase order header; available on the **EDI** FastTab
-- Purchase order lines; available on **EDI** and **EDI acknowledgement** tabs
+## Sales order
+The processed EDI record(s) can be viewed for a sales order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Sales order page.<br>
+The EDI module have also enhanced the sales order page by adding EDI fields to:
+- Sales order header; available on the **EDI** FastTab
+- Sales order lines; available on **EDI** and **POA response** tabs
 
 ## Document errors
 When an incoming staging record/document errors, it has not created/updated the target D365 transaction. <br>
