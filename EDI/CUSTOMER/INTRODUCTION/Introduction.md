@@ -133,3 +133,4 @@ The following workspaces are available:
 ## Other
 - [Data entities](../OTHER/Data%20entities.md)
 - [Frequently asked questions](../OTHER/FAQ.md)
+- [Security configuration](../../CORE/OTHER/Security%20configuration.md)
