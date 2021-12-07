@@ -54,6 +54,10 @@ Shortpicked line - Item % Lot %     | Dependent on [validation](../SETUP/VALIDAT
 Error	message                                       | Method to fix        
 :--                                                 |:--                
 Receipt list % does not exist for purchase order %  | The EDI record's purchase order and receipt combination doesn't match to D365. Verify and fix staging record.
+Delivered batch Id %. Expected batch Id %           | Dependent on [validation](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md)'s Error tolerance for **Batch id update**
+Line % Lot %	Product dimensions do not match source  | Staging record line's product dimensions don't match the original receipt list. Verify and fix staging if required.
+Posting - Journal	Journal: %	Line number: %	Item %	Cannot find location for item % at warehouse %. | Either fix staging's **Location** or add location in D365 for the 3PL's warehouse.
+Posting - Journal	Journal: %	Line number: %	Item %	Inventory dimension Inventory status must be specified. | Inventory status is required for the transaction and hasn't been specified in the staging record. Edit staging record's **Inventory status** for the applicable line.
 
 ### Shipment receipt - Transfer order
 
