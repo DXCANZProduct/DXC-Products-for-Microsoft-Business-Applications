@@ -49,6 +49,7 @@ Picking list route % is in status Completed         | Staging's **Picking route*
 Posting	Sending document	Advanced shipping notice	Export to staging completed.  | Info message that the sales order's customer is setup to receive Advanced shipping notices (ASN) via EDI, and processing the 3PL's picking list registration has created the ASN staging record.
 Shortpicked line - Item % Lot %     | Dependent on [validation](../SETUP/VALIDATION%20PROFILES/Picking%20list%20registration.md)'s Error tolerance for **Short pick**
 
+
 ### Shipment receipt - Purchase order
 
 Error	message                                       | Method to fix        
@@ -59,12 +60,14 @@ Line % Lot %	Product dimensions do not match source  | Staging record line's pro
 Posting - Journal	Journal: %	Line number: %	Item %	Cannot find location for item % at warehouse %. | Either fix staging's **Location** or add location in D365 for the 3PL's warehouse.
 Posting - Journal	Journal: %	Line number: %	Item %	Inventory dimension Inventory status must be specified. | Inventory status is required for the transaction and hasn't been specified in the staging record. Edit staging record's **Inventory status** for the applicable line.
 
+
 ### Shipment receipt - Transfer order
 
 Error	message                                       | Method to fix        
 :--                                                 |:--          
 Transfer order % does not exist                     | Staging record's **Transfer number** can't be found in D365. Fix staging record.
 Line does not exist     | Staging record's **Transfer number** and **Lot Id** doesn't exist in D365 transfer orders. Verify and fix staging record.
+
 
 ### Shipment receipt - Return order
 
@@ -78,6 +81,7 @@ Posting - Journal	Journal: %	Line number: %	Item %	Cannot find location for item
 Posting - Journal	Journal: %	Line number: %	Item %	Inventory dimension Inventory status must be specified. | Inventory status is required for the transaction and hasn't been specified in the staging record. Edit staging record's **Inventory status** for the applicable line.
 Posting - Journal	Journal: %	Line number: %	Item %	The quantity that you have entered exceeds the quantity that it is possible to return.
 
+
 ### Shipment receipt - Voyage
 
 Error	message                                       | Method to fix        
@@ -86,6 +90,7 @@ Line does not exist             | Verify if **Lot ID** is correct in staging
 Line % Lot %	Product dimensions do not match source | Staging record line's product dimensions don't match the original source D365 transaction that created the shipment advice. Verify and fix staging if required.
 Line item number does not match | Staging record's **Item number** doesn't match to source transaction. Verify and fix staging record if required.
 Shipment % does not exist       | Verify if **Voyage** is correct in staging       
+
 
 ### Inventory adjustment - Transfer
 
@@ -103,6 +108,7 @@ Posting - Journal	Journal: %	Line number: %	Item number: %	From inventory dimens
 Posting - Journal	Journal: %	Line number: %	Item number: %	Physical on-hand	Site=%,Warehouse=%,Batch number=%	% cannot be picked because only % is/are available from the inventory for item: %.  | Not enough on hand stock for required movement journal line, either fix staging or D365.
 Posting - Journal	Journal: %	Line number: %	Item %	Inventory dimension Inventory status must be specified. | Inventory status is required for the transaction and hasn't been specified in the staging record. Edit staging record's **Inventory status** for the applicable line.
 
+
 ### Inventory adjustment - Counting
 
 Error	message                                       | Method to fix        
@@ -113,6 +119,7 @@ Inventory Status % does not exist.                  | Verify and map staging's *
 Item not found: %                                   | Can't find staging's **Item number**. Verify which is correct, and either fix staging or D365
 Location % does not exist in warehouse %.           | Verify staging's **Location** and either fix staging or add to D365
 
+
 ### Inventory adjustment - Reconciliation
 
 Error	message                                       | Method to fix        
@@ -122,6 +129,7 @@ Invalid inventory dimensions                        | Inventory dimension(s) spe
 Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping] (../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) assigned to the trading partner.
 Item not found: %                                   | Can't find staging's **Item number**. Verify which is correct, and either fix staging or D365
 Location % does not exist in warehouse %.           | Verify staging's **Location** and either fix staging or add to D365
+
 
 ### Inventory adjustment - Movement
 
