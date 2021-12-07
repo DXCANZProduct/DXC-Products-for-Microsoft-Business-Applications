@@ -111,19 +111,9 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 - **EDI > Document maintenance**, tab **3PL documents**, tile **Picking list registration errors**
 - **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Picking list registration**
 
-At this step the issues are usually around mapping/business logic issues.
-Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
-
-> Note: When the Version log displays an **Error type** of _Processing error_, the processing has stopped because of a standard D365 error and the **Message** will display the standard D365 error. <br>
-> Note: Similar to manually processing a D365 transaction, EDI will stop at the first processing error and only this error is displayed. Fixing the error and reprocessing might result in subsequent standard processing errors which need to be dealt with.
-
-#### Example header errors:
-**Error message**       | **Error type**         | **Method to fix**
-:---------------------- |:----                   |:----
-Item %, dimensions: % Physical on-hand %=Available % cannot be picked because only % is/are available from the inventory    | Processing error  | Adjust D365 on-hand if staging record correct
-Picking list % is in status Completed   | Wrong status  | The D365 picking list registration has already been completed. Verify if duplication and either fix record's picking route id or cancel staging record if duplication.
-
-> Note: % contains staging data for the record
+At this step the issues are usually around mapping/business logic issues. <br>
+Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table. <br> 
+Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#picking-list-registration).
 
 #### Staging line validation - Picking list registration
 
@@ -133,11 +123,6 @@ Picking list % is in status Completed   | Wrong status  | The D365 picking list 
 
 At this step the issues are usually around setup/business logic issues.
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
-
-#### Example line errors:
-**Error message**                     | **Error type**         | **Method to fix**
-:------------------------------------ |:----                   |:----
-Unable to locate an activated picking list line (Route Id - %, Lot - %, Item - %, Quantity - %, Size - %, Colour - %', Style - %, Configuration - %, Inventory status - %)	                  | No line found         | Inbound document's line details don't match to picking list, compare staging details mentioned in the error.
 
 ### Validation
 
