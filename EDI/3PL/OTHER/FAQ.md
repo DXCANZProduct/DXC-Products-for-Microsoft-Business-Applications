@@ -115,7 +115,7 @@ Error	message                                       | Method to fix
 :--                                                 |:--     
 Batch Id % not found for item %                     | Verify if batch correct. If 3PL can create new batches, assign document setting to trading partner that allows creating new D365 batches. If staging incorrect, edit staging's **Batch number**.
 Invalid inventory dimensions                        | Inventory dimension(s) specified in staging record is invalid. Verify and either fix staging record, or update D365.
-Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping] (../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) assigned to the trading partner.
+Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) assigned to the trading partner.
 Item not found: %                                   | Can't find staging's **Item number**. Verify which is correct, and either fix staging or D365
 Location % does not exist in warehouse %.           | Verify staging's **Location** and either fix staging or add to D365
 
@@ -126,7 +126,7 @@ Error	message                                       | Method to fix
 :--                                                 |:--     
 Batch Id % not found for item %                     | Verify if batch correct. If 3PL can create new batches, assign document setting to trading partner that allows creating new D365 batches. If staging incorrect, edit staging's **Batch number**.
 Invalid inventory dimensions                        | Inventory dimension(s) specified in staging record is invalid. Verify and either fix staging record, or update D365
-Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping] (../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) assigned to the trading partner.
+Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) assigned to the trading partner.
 Item not found: %                                   | Can't find staging's **Item number**. Verify which is correct, and either fix staging or D365
 Location % does not exist in warehouse %.           | Verify staging's **Location** and either fix staging or add to D365
 
@@ -137,7 +137,7 @@ Error	message                                       | Method to fix
 :--                                                 |:--     
 Batch Id % not found for item %                     | Verify if batch correct. If 3PL can create new batches, assign document setting to trading partner that allows creating new D365 batches. If staging incorrect, edit staging's **Batch number**.
 Invalid inventory dimensions                        | Inventory dimension(s) specified in staging record is invalid. Verify and either fix staging record, or update D365
-Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping] (../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) assigned to the trading partner.
+Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) assigned to the trading partner.
 Item not found: %                                   | Can't find staging's **Item number**. Verify which is correct, and either fix staging or D365
 Location % does not exist in warehouse %.           | Verify staging's **Location** and either fix staging or add to D365
 Posting - Journal	Journal: %	Line number: %	Item number: %	Physical on-hand	Site=%,Warehouse=%,Location=%,Inventory status=%	% cannot be picked because only % is/are available from the inventory for item: %.  | Not enough on hand stock for required movement journal line, either fix staging or D365.
