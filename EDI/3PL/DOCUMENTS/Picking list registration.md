@@ -121,9 +121,6 @@ Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#picking
 :---                        |:---                                                       |:---              
 **Line number / Lot Id / Item number / Inventory dimensions**   | Find the EDI picking list line number/ Lot Id to which the staging line belongs    | Error at Staging table. <br> D365 stock not picked
 
-At this step the issues are usually around setup/business logic issues.
-Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
-
 ### Validation
 
 [Validation profiles](../SETUP/VALIDATION%20PROFILES/Picking%20list%20registration.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
