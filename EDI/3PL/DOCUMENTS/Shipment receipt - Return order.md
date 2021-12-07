@@ -114,32 +114,9 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 - **EDI > Document maintenance**, tab **3PL documents**, tile **Shipment receipt - Return order errors**
 - **EDI > Document maintenance**, tab **3PL documents**, **Documents** page, tab **Shipment receipt - Return order**
 
-At this step the issues are usually around mapping/business logic issues.
-Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
-
-> Note: When the Version log displays an **Error type** of _Processing error_, the processing has stopped because of a standard D365 error and the **Message** will display the standard D365 error. <br>
-> Note: Similar to manually processing a D365 transaction, EDI will stop at the first processing error and only this error is displayed. Fixing the error and reprocessing might result in subsequent standard processing errors which need to be dealt with.
-
-#### Example header errors:
-**Error message**       | **Error type**         | **Method to fix**
-:---------------------- |:----                   |:----
-Return order % does not exist	| Record not found  | Verify if RMA number (ReturnItemNum) is correct in staging
-
-> Note: % contains staging data for the record
-
-### Staging line validation - Shipment receipt
-
-**Rule Id**                 | **Details**                                               | Error    
-:---                        |:---                                                       |:---              
-
-
-At this step the issues are usually around setup/business logic issues.
-Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table.
-
-#### Example line errors:
-**Error message**                     | **Error type**          | **Method to fix**
-:------------------------------------ |:----                    |:----
-Line does not exist                   | Record not found        | Verify if Lot ID (InventTransId) is correct in staging
+At this step the issues are usually around mapping/business logic issues. <br>
+Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table. <br>
+Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#shipment-receipt---return-order).
 
 ### Validation
 
