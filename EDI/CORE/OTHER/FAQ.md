@@ -29,15 +29,15 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Frequently asked questions
 
-## Version and Support Information
+### Version and Support Information
 -	Where can I find contact information for support?
     - Support contact details can be located on the EDI parameters form on the About tab.
 - Where can I identify the installed version of the EDI module
    - Navigate to Settings > About.  A list of installed models will be displayed on the Version tab.  Search for Sable 37 EDI. The version information will be displayed on the right (i.e. Sable37 EDI 10.0.14.202009181 (isv))
   
-## XML Errors
+### XML Errors
 - XML file errors when processed into the staging table
   - Check the data provided for each element is valid. (i.e. A null value for a ‘date’ element, will fail the XSD validation)
 
-## Number sequences are not available to setup
+### Number sequences are not available to setup
 To load all new number sequence references, select **Reset** on **Organization administration > Number sequences > Number sequences > Manual cleanup**
