@@ -55,7 +55,7 @@ Error	message                                       | Method to fix
 :--                                                 |:--                
 Receipt list % does not exist for purchase order %  | The EDI record's purchase order and receipt combination doesn't match to D365. Verify and fix staging record.
 Delivered batch Id %. Expected batch Id %           | Dependent on [validation](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md)'s Error tolerance for **Batch id update**
-Line % Lot %	Product dimensions do not match source  | Staging record line's product dimensions don't match the original receipt list. Verify and fix staging if required.
+Line % Lot %	Product dimensions do not match source  | Staging record line's product dimensions don't match the original source D365 transaction that created the shipment advice. Verify and fix staging if required.
 Posting - Journal	Journal: %	Line number: %	Item %	Cannot find location for item % at warehouse %. | Either fix staging's **Location** or add location in D365 for the 3PL's warehouse.
 Posting - Journal	Journal: %	Line number: %	Item %	Inventory dimension Inventory status must be specified. | Inventory status is required for the transaction and hasn't been specified in the staging record. Edit staging record's **Inventory status** for the applicable line.
 
@@ -63,8 +63,8 @@ Posting - Journal	Journal: %	Line number: %	Item %	Inventory dimension Inventory
 
 Error	message                                       | Method to fix        
 :--                                                 |:--          
-Transfer order % does not exist | Verify if Transfer number (InventTransferId) is correct in staging 
-Line does not exist             | Verify if Lot ID (InventTransId) is correct in staging
+Transfer order % does not exist                     | Staging record's **Transfer number** can't be found in D365. Fix staging record.
+Line does not exist     | Staging record's **Transfer number** and **Lot Id** doesn't exist in D365 transfer orders. Verify and fix staging record.
 
 ### Shipment receipt - Return order
 
@@ -72,13 +72,20 @@ Error	message                                       | Method to fix
 :--                                                 |:--                
 Return order % does not exist   | Verify if RMA number (ReturnItemNum) is correct in staging    
 Line does not exist             | Verify if Lot ID (InventTransId) is correct in staging
+Line % Lot %	Product dimensions do not match source  | Staging record line's product dimensions don't match the original source D365 transaction that created the shipment advice. Verify and fix staging if required.
+Line quantity exceeds return amount | Either increase staging record line's **Quantity** or increase the D365 return order's **Return quantity**
+Posting - Journal	Journal: %	Line number: %	Item %	Cannot find location for item % at warehouse %. | Either fix staging's **Location** or add location in D365 for the 3PL's warehouse.
+Posting - Journal	Journal: %	Line number: %	Item %	Inventory dimension Inventory status must be specified. | Inventory status is required for the transaction and hasn't been specified in the staging record. Edit staging record's **Inventory status** for the applicable line.
+Posting - Journal	Journal: %	Line number: %	Item %	The quantity that you have entered exceeds the quantity that it is possible to return.
 
 ### Shipment receipt - Voyage
 
 Error	message                                       | Method to fix        
-:--                                                 |:--       
-Shipment % does not exist       | Verify if Voyage (ShipId) is correct in staging                     
-Line does not exist             | Verify if Lot ID (InventTransId) is correct in staging
+:--                                                 |:--                 
+Line does not exist             | Verify if **Lot ID** is correct in staging
+Line % Lot %	Product dimensions do not match source | Staging record line's product dimensions don't match the original source D365 transaction that created the shipment advice. Verify and fix staging if required.
+Line item number does not match | Staging record's **Item number** doesn't match to source transaction. Verify and fix staging record if required.
+Shipment % does not exist       | Verify if **Voyage** is correct in staging       
 
 ### Inventory adjustment - Transfer
 
@@ -88,11 +95,13 @@ Batch Id % not found for item %                     | Verify if batch correct. I
 Invalid inventory dimensions                        | Inventory dimension(s) specified in staging record is invalid. Verify and either fix staging record, or update D365.
 Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping] (../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) assigned to the trading partner.
 Item not found: %                                   | Can't find staging's **Item number**. Verify which is correct, and either fix staging or D365
+Line % Lot %	Product dimensions do not match source  | Staging record line's product dimensions don't match the original source D365 transaction that created the shipment advice. Verify and fix staging if required.
 Location % does not exist in warehouse %.           | Verify staging's **Location** and either fix staging or add to D365
 Blocking status cannot be set for Transfer transactions.  | Staging's **Inventory status to** is flagged as a blocking status, and transfer journal is thus not allowed.
 No inventory journal setup in document settings profile   | Assign a transfer journal in **Journal name** on the [document setting profile](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Transfer.md)
 Posting - Journal	Journal: %	Line number: %	Item number: %	From inventory dimensions and To inventory dimensions must be different.  | Issue with staging as the **From batch number** and **To batch number** doesn't differ. Verify and fix staging.
 Posting - Journal	Journal: %	Line number: %	Item number: %	Physical on-hand	Site=%,Warehouse=%,Batch number=%	% cannot be picked because only % is/are available from the inventory for item: %.  | Not enough on hand stock for required movement journal line, either fix staging or D365.
+Posting - Journal	Journal: %	Line number: %	Item %	Inventory dimension Inventory status must be specified. | Inventory status is required for the transaction and hasn't been specified in the staging record. Edit staging record's **Inventory status** for the applicable line.
 
 ### Inventory adjustment - Counting
 
