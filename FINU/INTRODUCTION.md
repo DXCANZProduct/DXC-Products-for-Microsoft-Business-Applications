@@ -75,6 +75,7 @@ Finance utilities minimises the manual actions required for reconciling bank acc
 - [Bank statement format](Setup/CASH%20AND%20BANK%20MANAGEMENT/Bank%20statement%20format.md)
 - [Populate accounts payable document number](Setup/CASH%20AND%20BANK%20MANAGEMENT/Populate%20account%20payable%20payment%20document%20number.md)
 - [Bank reconciliation matching rules](Setup/CASH%20AND%20BANK%20MANAGEMENT/Bank%20reconciliation%20matching%20rules.md)
+- [Customer payment and settle of one invoice via bank reconciliation](Setup/CASH%20AND%20BANK%20MANAGEMENT/Bank%20reconciliation%20matching%20rules.md#customer-payment-and-settle-of-invoice-11)
 
 <ins> **Processing** </ins>
 - [Bank statement import](Processing/Bank%20Statement%20Reconciliation/Bank%20statement%20import.md)
