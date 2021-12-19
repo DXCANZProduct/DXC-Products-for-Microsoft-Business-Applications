@@ -82,6 +82,8 @@ If the **Financial utilities parameter**'s **Extended financial details for new 
 -	GST
 -	Sub-Ledger offset account
 
+More detail for /** fields are discussed [here](#customer-payment-and-settle-of-invoice-11).
+
 |    Field / Button   |    Description   |
 |-|-|
 | **Financial Dimensions > Offset account**  |  Financial dimensions that have to be used to post the _new_ transactions. <br> If the dimensions are filled in, it will override the financial dimensions set by default on the selected main account. <br> Else, financial dimensions set by default on the selected main account will apply with the new transaction. |
