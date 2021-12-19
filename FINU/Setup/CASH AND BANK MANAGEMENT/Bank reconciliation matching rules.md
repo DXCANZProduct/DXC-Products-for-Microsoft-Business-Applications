@@ -98,34 +98,38 @@ More detail for ** fields are discussed [here](#customer-payment-and-settle-of-i
 | **Item GST Group**    |  Populates the field Item GST group in the Bank Statement Line Details form when a **Mark as new** line is created   |
 
 #### Customer payment and settle of invoice (1:1)
-More detail for ** fields above.
+##### Reconciliation matching rules
+This section will provide more details for ** fields from above section.
 Finance utilities allows for creating and optional settling of one invoice and optional posting of customer payment journal. One customer payment journal is created for all the bank statement lines matched with the mark as new rule. For improved traceability the Reconcile ID is populated in the Customer receipt’s journal Document on the journal’s setup tab.
 
-The following subsection will discuss scenarios when running a Mark as new rule with Offset account type set to Customer
-•	Offset account is set to a specific customer account, or Offset account bank statement field is set to use a field from the bank statement field (example Trading partner). 
-•	Target: Account in Customer payment journal
-•	Settle transaction determines if the created/posted customer receipt journal should attempt to settle an invoice
-•	Yes: Uses Settle transaction bank statement field’s mapping to find the D365 invoice number in the bank statement line and populate the Invoice field. If the invoice can’t be settled in the journal line, the infolog will provide a warning which invoices couldn’t be settled.
-•	No: The customer payment journal will not attempt to settle an invoice. 
-•	Settle transaction bank statement field: Set which field from the bank statement will contain the D365 invoice (example Document number or Reference No.)
-•	Auto-post customer payment journal: 
-•	Yes: the customer receipt journal will be posted and automatically matched with the bank statement lines. A Match Id will be assigned for all the transactions and moved to matched on the Bank reconciliation worksheet when running the rule.
-•	No: the customer receipt journal will only be created. Once the user has reviewed and posted the customer payment journal, refresh the bank reconciliation’s worksheet to bring in the new bank transactions. User has to either use a match with bank statement rule or manually match the applicable bank statement lines with these new bank transactions.
-Additional setup is also required on Financial utilities parameters to assign the following:
-•	Reconciliation customer payment journal name
-•	Method of payment
+The following subsection will discuss scenarios when running a Mark as new rule with **Offset account type** set to _Customer_
+-	**Offset account** is set to a specific customer account, or **Offset account bank statement field** is set to use a field from the bank statement field (example Trading partner):
+    - Target: **Account** in Customer payment journal line
+-	**Settle transaction** determines if the created/posted customer receipt journal should attempt to settle an invoice:
+    - **Yes** - Uses **Settle transaction bank statement field**’s mapping to find the D365 invoice number in the bank statement line and populate the **Invoice** field in the Customer payment journal line. If the invoice can’t be settled in the journal line, the infolog will provide a warning which invoices couldn’t be settled.
+    - **No** - The customer payment journal line will not attempt to settle an invoice; **Invoice** field will be blank in the Customer payment journal line. 
+-	**Settle transaction bank statement field** - Set which field from the bank statement will contain the D365 invoice (example Document number or Reference No.)
+    - Target: **Invoice** in Customer payment journal line, if **Settle transaction** is set to _Yes_.	
+- **Auto-post customer payment journal**: 
+    - **Yes** - The customer receipt journal will be posted and automatically matched with the bank statement lines. A Match Id will be assigned for all the transactions and moved to matched on the Bank reconciliation worksheet when running the rule.
+    - **No**: The customer receipt journal will only be created. Once the user has reviewed and posted the customer payment journal, refresh the bank reconciliation’s worksheet to bring in the new bank transactions. User has to either use a match with bank statement rule or manually match the applicable bank statement lines with these new bank transactions.
 
-Configure General ledger parameters
+##### Financial utilities parameters
+Additional setup is also required on [Financial utilities parameters](Finance%20utilities%20parameters.md) to assign the following:
+- Reconciliation customer payment journal name
+-	Method of payment
+
+##### General ledger parameters
+Also required to configure General ledger parameters.
 When the system creates a customer payment journal for the bank statement transaction, the one voucher could contain lines for multiple customers. Therefore, you must set up your system so that a single voucher can have multiple customer lines.
 
 To enable a single voucher to have multiple customer lines, follow these steps.
-1.	Go to General ledger > Ledger setup > General ledger parameters.
+1.	Go to **General ledger > Ledger setup > General ledger parameters**.
 2.	On the Ledger tab, on the General FastTab, set the Allow multiple transactions within one voucher option to Yes.
 3.	If you receive a warning message, select Close to accept the change.
 
-
-Possible processing issues:
-•	Warning log: ‘Account % does not exist’
+##### Possible processing issues:
+-	Warning log: ‘Account % does not exist’
 If the customer account can’t be found in D365, the bank statement line will be excluded from the customer receipt journal and the transactions won’t automatically match in the bank recon since the total values don’t match. 
-•	Warning log: ‘Invoice % doesn’t exist’
+-	Warning log: ‘Invoice % doesn’t exist’
 If the recon matching rule is set to settle the invoice and the invoice can’t be found in D365, the customer receipt journal line will still be created without field Invoice being populated.
