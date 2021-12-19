@@ -82,7 +82,7 @@ If the **Financial utilities parameter**'s **Extended financial details for new 
 -	GST
 -	Sub-Ledger offset account
 
-More detail for /** fields are discussed [here](#customer-payment-and-settle-of-invoice-11).
+More detail for ** fields are discussed [here](#customer-payment-and-settle-of-invoice-11).
 
 |    Field / Button   |    Description   |
 |-|-|
