@@ -117,7 +117,7 @@ The following subsection will discuss scenarios when running a Mark as new rule 
 ##### Financial utilities parameters
 Additional setup is also required on [Financial utilities parameters](Finance%20utilities%20parameters.md) to assign the following:
 - Reconciliation customer payment journal name
--	Method of payment
+- Method of payment
 
 ##### General ledger parameters
 Also required to configure General ledger parameters.
