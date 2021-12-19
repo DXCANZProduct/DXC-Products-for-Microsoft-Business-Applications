@@ -60,8 +60,8 @@ Then set the fields as desribed in the following subsections.
 **Setup for customer payment journal**
 | **Field** | **Description**|
 |--|--|
-| **Reconciliation customer payment journal name**  | 
-| **Method of payment**     | 
+| **Reconciliation customer payment journal name**  | Used for creating a customer payment journal when using bank reconciliation matching rules with **Offset account type** set to _Customer_
+| **Method of payment**     | Used for creating a customer payment journal when using bank reconciliation matching rules with **Offset account type** set to _Customer_
 
 #### **Number sequences**
 The following number sequences are available for advanced bank reconciliation.
