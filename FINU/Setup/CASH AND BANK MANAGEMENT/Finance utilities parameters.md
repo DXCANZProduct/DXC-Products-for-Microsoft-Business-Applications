@@ -58,10 +58,12 @@ Then set the fields as desribed in the following subsections.
 | **Auto-post bank statement** | When Auto-post bank statement is to _Yes_, the bank statement will automatically be posted upon selecting **Mark as reconciled** from the **Bank Reconciliation Worksheet** page.|
 
 **Setup for customer payment journal**
+Required when using Bank reconciliation matching rules to create customer payment journals - see [here](Bank%20reconciliation%20matching%20rules.md#customer-payment-and-settle-of-invoice-11) for more information.
+
 | **Field** | **Description**|
 |--|--|
-| **Reconciliation customer payment journal name**  | Used for creating a customer payment journal when using bank reconciliation matching rules with **Offset account type** set to _Customer_
-| **Method of payment**     | Used for creating a customer payment journal when using bank reconciliation matching rules with **Offset account type** set to _Customer_
+| **Reconciliation customer payment journal name**  | Used to populate **Name** in the customer payment journal created when using bank reconciliation matching rules with **Offset account type** set to _Customer_.
+| **Method of payment**     | Used to populate **Method of payment** in the customer payment journal created when using bank reconciliation matching rules with **Offset account type** set to _Customer_.
 
 #### **Number sequences**
 The following number sequences are available for advanced bank reconciliation.
