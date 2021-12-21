@@ -222,3 +222,8 @@ The following EDI Line staging fields are available on the lines page.
 **Document date**           | Document date for the Delivery note	
 **Consignment note number** | Delivery note’s Consignment note number	
 **Sales order**             | Sales order number for the invoice	
+**Configuration**       |	Product dimension - Configuration	                      | Sales line > Product dimension
+**Colour**	            |   Product dimension - Colour	                              | Sales line > Product dimension
+**Size**                |	Product dimension - Size	                              | Sales line > Product dimension
+**Style**               |	Product dimension - Style	                              | Sales line > Product dimension
+**Version**             |   Product dimension - Version                               | Sales line > Product dimension
