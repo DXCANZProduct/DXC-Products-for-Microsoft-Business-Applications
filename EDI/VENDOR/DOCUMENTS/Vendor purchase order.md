@@ -313,10 +313,11 @@ The following EDI Line staging fields are available on the lines page.
 **Pack quantity**           | Package quantity. Package (inner or outer) determined by purchase order / purchase order change’s setting profile **Package size – inner/outer**	
 **Pack unit**               | Unit determined by purchase order / purchase order change’s setting profile **Package size – inner/outer** <br> Inner and Outer unit setup on Item
 **Batch number**            | Batch number for the purchase line	
-**Configuration**           | Inventory dimension - Configuration	
-**Color**                   | Inventory dimension - Colour	
-**Size**                    | Inventory dimension - Size	
-**Style**                   | Inventory dimension - Style	
+**Configuration**           | Product dimension - Configuration	
+**Color**                   | Product dimension - Colour	
+**Size**                    | Product dimension - Size	
+**Style**                   | Product dimension - Style	
+**Version**                 | Product dimension - Version
 **Inventory status**        | Inventory dimension - Inventory status	
 **Site**                    | Storage dimension - Site	
 **Warehouse**               | Storage dimension - Warehouse	
