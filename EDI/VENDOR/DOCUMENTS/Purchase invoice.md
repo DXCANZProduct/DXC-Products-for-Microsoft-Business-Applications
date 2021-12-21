@@ -337,10 +337,11 @@ The following EDI Line fields are available on the lines page. <br>
 **Inners unit**             | Inners unit of measure as setup on item’s pack size
 **Pack quantity**           | Package quantity	
 **Pack unit**               | Package unit of measure	
-**Configuration**           | Inventory dimension - Configuration	
-**Color**                   | Inventory dimension - Colour	
-**Size**                    | Inventory dimension - Size	
-**Style**                   | Inventory dimension - Style	
+**Configuration**           | Product dimension - Configuration	
+**Color**                   | Product dimension - Colour	
+**Size**                    | Product dimension - Size	
+**Style**                   | Product dimension - Style	
+**Version**                 | Product dimension - Version
 **Site**                    | Storage dimension - Site	
 **Requested receipt date**  | The requested receipt date	
 **Ship date**               | Date the goods were shipped	
