@@ -212,10 +212,11 @@ The following EDI Line staging fields are available on the lines page.
 **Weight**                 | Line weight	
 **Serial number**		
 **Batch number**		
-**Item Configuration**		
-**Colour**		
-**Size**		
-**Style**		
+**Configuration**       |	Product dimension - Configuration	                      | Sales line > Product dimension
+**Colour**	            |   Product dimension - Colour	                              | Sales line > Product dimension
+**Size**                |	Product dimension - Size	                              | Sales line > Product dimension
+**Style**               |	Product dimension - Style	                              | Sales line > Product dimension
+**Version**             |   Product dimension - Version                               | Sales line > Product dimension
 **Expiration date**        | Batch expiration date	
 **Manufacturing date**     | Batch manufacturing date	
 **Purchase order date**    | The purchase order date from the EDI order is shown here	   | Header > EDI > Purchase order date
