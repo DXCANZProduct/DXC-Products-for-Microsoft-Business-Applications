@@ -273,6 +273,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Size**                    | Product dimensions – Size	                                                | Movement journal line > Size
 **Style**                   | Product dimensions – Style	                                            | Movement journal line > Style
 **Configuration**           | Product dimensions – Configuration	                                    | Movement journal line > Configuration
+**Version**                 | Product dimensions – Version                                              | Movement journal line > Version
 **Inventory status**        | Storage dimensions – Inventory statu. <br> Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Movement journal line > Inventory status
 **Batch number**            | Tracking dimensions – Batch number	                                    | Movement journal line > Batch number
 **On-hand**                 | Physical D365 Inventory on-hand at end of specified date	
