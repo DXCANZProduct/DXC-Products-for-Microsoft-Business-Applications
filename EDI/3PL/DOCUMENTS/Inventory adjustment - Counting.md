@@ -188,6 +188,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Size**                    | Product dimensions – Size	                                                | Movement journal line > Size
 **Style**                   | Product dimensions – Style	                                            | Movement journal line > Style
 **Configuration**           | Product dimensions – Configuration	                                    | Movement journal line > Configuration
+**Version**                 | Product dimensions – Version                                              | Movement journal line > Version
 **Serial number**           | Tracking dimensions – Serial number	                                    | Movement journal line > Serial number
 **Batch number**            | Tracking dimensions – Batch number. <br> If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch.	                 | Movement journal line > Batch number
 **Manufacturing date**      | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an existing D365 batch.	| Batches > Manufacturing date
