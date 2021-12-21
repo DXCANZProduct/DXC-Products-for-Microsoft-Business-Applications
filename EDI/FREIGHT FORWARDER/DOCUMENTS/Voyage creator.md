@@ -239,10 +239,11 @@ The following EDI Line fields are available on the lines page. <br>
 **Reference**               | Indicates the reference for Number. Options are: <br> • Purchase order <br> • Transfer	| Voyage lines > Reference
 **Bar code**                | The item identifier as sent by the trading partner. Used when Item Id source is: <br> • GTIN <br> • Barcode <br> Converted to internal item number by using **Item id source** on document settings.	| Voyage lines > Item number
 **Item number**             | The item identifier as sent by the trading partner. Used when Item Id source is: <br> • Our item number <br> • External item number <br> Converted to internal item number by using **Item id source** on document settings.	| Voyage lines > Item number
-**Size**                    | Inventory dimension - Size	                                            | Voyage lines > Size
-**Style**                   | Inventory dimension - Style	                                            | Voyage lines > Style
-**Configuration**           | Inventory dimension - Configuration	                                    | Voyage lines > Configuration
-**Color**                   | Inventory dimension - Colour	                                            | Voyage lines > Color
+**Size**                    | Product dimension - Size	                                            | Voyage lines > Size
+**Style**                   | Product dimension - Style	                                            | Voyage lines > Style
+**Version**                 | Product dimension - Version                                           | Voyage lines > Version
+**Configuration**           | Product dimension - Configuration	                                    | Voyage lines > Configuration
+**Color**                   | Product dimension - Colour	                                        | Voyage lines > Color
 **Quantity**                | Voyage line’s quantity	                                                | Voyage lines > Quantity
 **Unit**                    | Unit of measure of Voyage line quantity. <br> Mapped values can be used by assigning [UOM mapping](../../CORE/Setup/UOM%20mapping.md) to the Trading partner.	    | Voyage line details > Reference > Unit
 **House air waybill/Bill of lading**    | HAWB for voyage line	                                        | Voyage > House air waybill/Bill of lading
