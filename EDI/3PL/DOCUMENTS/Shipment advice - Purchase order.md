@@ -155,6 +155,7 @@ The following EDI Line staging fields are available on the lines page.
 **Size**                    | Product dimensions – Size	                                | Purchase order lines > Size
 **Style**                   | Product dimensions – Style	                            | Purchase order lines > Style
 **Configuration**           | Product dimensions – Configuration	                    | Purchase order lines > Configuration
+**Version**                 | Product dimensions – Version                              | Purchase order lines > Version
 **Batch number**            | Tracking dimensions – Batch number	                    | Purchase order lines > Batch number
 **Serial number**           | Tracking dimensions – Serial number	                    | Purchase order lines > Serial number
 **Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Purchase order lines > Inventory status
