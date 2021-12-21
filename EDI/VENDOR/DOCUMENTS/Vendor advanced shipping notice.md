@@ -272,10 +272,11 @@ The following EDI Line fields are available on the lines page. <br>
 **Expiration date**         | Vendor’s expiration date for the batch	                                | If D365 batch doesn't exist, used to create new batch
 **Inners quantity**         | The vendor’s inners per outer quantity	
 **Inners unit**             | The vendor’s inners unit of measure	
-**Configuration**           | Inventory dimension - Configuration	                                    | • Item arrival > Configuration <br> • Load > Configuration <br> • Load > Packing structure > Configuration
-**Color**                   | Inventory dimension - Colour	                                            | • Item arrival > Color <br> • Load > Color <br> • Load > Packing structure > Color
-**Size**                    | Inventory dimension - Size	                                            | • Item arrival > Size <br> • Load > Size <br> • Load > Packing structure > Size
-**Style**                   | Inventory dimension - Style	                                            | • Item arrival > Style <br> • Load > Style <br> • Load > Packing structure > Style
+**Configuration**           | Product dimension - Configuration	                                    | • Item arrival > Configuration <br> • Load > Configuration <br> • Load > Packing structure > Configuration
+**Color**                   | Product dimension - Colour	                                            | • Item arrival > Color <br> • Load > Color <br> • Load > Packing structure > Color
+**Size**                    | Product dimension - Size	                                            | • Item arrival > Size <br> • Load > Size <br> • Load > Packing structure > Size
+**Style**                   | Product dimension - Style	                                            | • Item arrival > Style <br> • Load > Style <br> • Load > Packing structure > Style
+**Version**                 | Product dimension - Version                                           | • Item arrival > Version <br> • Load > Version <br> • Load > Packing structure > Version
 **Inventory status**        | Inventory status as sent in purchase order line	                        | • Item arrival > Inventory status (if not provided: use PO line)
 **Department**              | The vendor’s department for the EDI ASN line is shown here	
 **Package characteristic code** | The code used to for the package contents	
