@@ -306,10 +306,11 @@ The following EDI Line staging fields are available on the line page.
 **Line amount including tax** |	The total line amount including tax (if provided else 0)	| Sales line > Unit price <br> If document setting **Use customer price** set to _Yes_ AND Staging's **Unit price** is blank AND document setting **Prices include GST** set to _Yes_: Sales line **Unit price** is calculated by **Line amount including tax** / **Customer sales quantity**
 **Customer inners**     |	The customer’s inners per outer quantity	              | Sales line > EDI > POA response > Customer > Inner
 **Customer pack**       |	The customer’s pack quantity	                          | Sales line > EDI > POA response > Customer > Pack
-**Configuration**       |	Inventory dimension - Configuration	                    | Sales line > Inventory dimension
-**Colour**	            | Inventory dimension - Colour	                          | Sales line > Inventory dimension
-**Size**                |	Inventory dimension - Size	                            | Sales line > Inventory dimension
-**Style**               |	Inventory dimension - Style	                            | Sales line > Inventory dimension
+**Configuration**       |	Product dimension - Configuration	                      | Sales line > Product dimension
+**Colour**	            |   Product dimension - Colour	                              | Sales line > Product dimension
+**Size**                |	Product dimension - Size	                              | Sales line > Product dimension
+**Style**               |	Product dimension - Style	                              | Sales line > Product dimension
+**Version**             |   Product dimension - Version                               | Sales line > Product dimension
 **Site**                |	Storage dimension - Site	                              | Sales line > Site. If staging blank will be populated by Sales order Header
 **Warehouse**           |	Storage dimension - Warehouse	                          | Sales line > Warehouse. If staging blank will be populated by Sales order Header
 **Store code**          |	The store code from the EDI record line is shown here.	| Sales line> EDI > General > Store code. EDI supports different store codes on line level
