@@ -348,10 +348,11 @@ The following EDI Line staging fields are available on the lines page.
 **Item number**         |	Item number from the sales order	                    | Sales line > Item number
 **Barcode**             |	Barcode for the item number from the sales order	    | Sales line > Barcode
 **External item number**  |	The external item id specified for this customer/item combination. This is the part number for this item in the Customer’s system.	| Sales line> General > External references > External
-**Style**               |	Inventory dimension - Style	                          | Sales line > Style
-**Size**                |	Inventory dimension - Size	                          | Sales line > Size
-**Colour**              |	Inventory dimension - Colour	                        | Sales line > Colour
-**Configuration**       |	Inventory dimension - Configuration	                  | Sales line > Configuration
+**Configuration**       |	Product dimension - Configuration	                      | Sales line > Product dimension
+**Colour**	            |   Product dimension - Colour	                              | Sales line > Product dimension
+**Size**                |	Product dimension - Size	                              | Sales line > Product dimension
+**Style**               |	Product dimension - Style	                              | Sales line > Product dimension
+**Version**             |   Product dimension - Version                               | Sales line > Product dimension
 **POA code shipment**   |	Purchase order acknowledgement code for shipment of the item	| Sales line > EDI > POA response > Customer code > Shipment
 **POA code item**       |	Purchase order acknowledgement code for the item <br> Combination of all line item POA codes. <br> Example: PO-IA-PD-LIA <br> PO: Line price - accept <br> IA: Line item - accept <br> PD: Line item - pack difference <br> LIA: Line item - inner accept	<br> Field delimiter: - <br> Note: Line item status is a combination of the following: <br> Price code + Qty code + Pack code + Inner Code. The Customer purchase order acknowledgement document setting **Field delimiter** (can also be blank) is used inbetween the POA codes.              | Sales line > EDI > POA response > Customer code > Price and Quantity
 **Currency**            |	The currency of the order	                            | Sales order > Currency
