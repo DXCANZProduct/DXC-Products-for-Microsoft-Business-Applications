@@ -187,6 +187,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Size**                    | Product dimensions – Size	                                                | Transfer journal line > Size
 **Style**                   | Product dimensions – Style	                                            | Transfer journal line > Style
 **Configuration**           | Product dimensions – Configuration	                                    | Transfer journal line > Configuration
+**Version**                 | Product dimensions – Version                                              | Transfer journal line > Version
 **Serial number**           | Tracking dimensions – Serial number	                                    | Transfer journal line > Serial number
 **From batch number**       | Tracking dimensions – Batch number	                                    | Transfer journal line > From batch number
 **To batch number**         | Tracking dimensions – Batch number. <br> If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch.	| Transfer journal line > To batch number
