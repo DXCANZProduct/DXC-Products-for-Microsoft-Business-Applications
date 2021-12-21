@@ -492,10 +492,11 @@ If update to purchase order line is allowed, column **D365 PO line update** indi
 **Inners unit**             | Inners unit of measure as setup on item’s [pack size](../../CORE/Setup/Item%20pack%20sizes.md)    | 
 **Pack quantity**           | Package quantity	                                                                                | EDI acknowledgement tab > Acknowledged pack
 **Pack unit**	            | Package unit of measure	
-**Configuration**           | Inventory dimension - Configuration	
-**Color**                   | Inventory dimension - Colour	
-**Size**                    | Inventory dimension - Size	
-**Style**                   | Inventory dimension - Style	
+**Configuration**           | Product dimension - Configuration	
+**Color**                   | Product dimension - Colour	
+**Size**                    | Product dimension - Size	
+**Style**                   | Product dimension - Style	
+**Version**                 | Product dimension - Version
 **Site**                    | Storage dimension - Site	
 **Warehouse**               | Storage dimension - Warehouse	
 **Requested receipt date**  | The requested receipt date	
