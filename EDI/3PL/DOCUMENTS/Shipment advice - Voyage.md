@@ -153,6 +153,7 @@ The following EDI Line staging fields are available on the lines page.
 **Size**                    | Product dimensions – Size	                                | Voyage line > Size
 **Style**                   | Product dimensions – Style	                            | Voyage line > Style
 **Configuration**           | Product dimensions – Configuration	                    | Voyage line > Configuration
+**Version**                 | Product dimensions – Version                              | Voyage line > Version
 **Batch number**            | Tracking dimensions – Batch number	                    | Voyage line > Batch number
 **Serial number**           | Tracking dimensions – Serial number	                    | Voyage line > Serial number
 **Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) | Voyage line > Inventory status
