@@ -5,7 +5,7 @@ title: [EDI Customer]
 description: [EDI Customer Documents - Sales invoice]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 5/11/2021
+ms.date: 11/01/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
