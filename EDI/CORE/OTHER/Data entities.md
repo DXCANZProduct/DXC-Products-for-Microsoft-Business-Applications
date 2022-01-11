@@ -75,7 +75,7 @@ EDI > Setup > Document types (Template, Validation, Outbound file names and EDI 
 1		  | EDI template JSON			| Create new **JSON** template and setup
 1		  | EDI template JSON collection	| Create new **JSON Collection** template and setup
 1		  | EDI template code transformation	| Create new **Code transformation** template and setup
-1     | EDI template section  | Create new **section** for existing XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | EDI Template XSLT, EDI template XSLT collection,  EDI template JSON, EDI template JSON collection, EDI template code transformation
+1     | EDI template section  | Create new **section** for existing XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | EDI Template XSLT, EDI template XSLT collection,  EDI template JSON, EDI template JSON collection or EDI template code transformation
 1     | EDI template fields   | Create new **fields** for existing sections for XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | EDI template section
 1		  | EDI Validation profile		| Create new **Validation profiles** for all applicable document types	
 1	  	| EDI Validation profile line		| Create new **Validation profile lines** for all applicable document types | EDI Validation profile
