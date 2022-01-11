@@ -5,7 +5,7 @@ title: [EDI Core]
 description: [EDI Core - Setup document types - File templates]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 12/01/2020
+ms.date: 12/01/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -170,22 +170,24 @@ There are two ways to add a field mapping:
 
 > Note: To delete a line, select the record then select **Remove**. 
 
-##### Field chooser
+##### Fields picker
 
-Alternatively, a bulk field chooser can be used to add multiple mappings at once. 
-- Select **Field chooser**
+Alternatively, a bulk field picker can be used to add multiple mappings at once. 
+- Select **Fields picker**
 - A new form is displayed allowing Header and Line selection of multiple available records
 
 **Field** 	                      | **Description**                      
 :-------------------------------- |:-------------------------------------
-**Add**                           |	Mark whether to add the field
+**Selected**                      |	Mark whether to add the field. <br> Also indicates if the field is already selected for the template.
 **Field label**                   |	The label of the field
-**Help**                          |	The help text of the field
-**Qty**                           |	The number of times to add the field
+**Field name**                    | The name of the field
 
-- Select **Create** to add the selected lines
+- Select **Update** to update the mapping
+
+Buttons **Select all** and **Clear all** are also available to easily select or clear all fields for the mapping.
 
 > Note: To delete a line, select the record then select **Remove**. Lines can also be moved using the **Move up** or **Move down** buttons.
+> If a field needs to be added more than once, use manual **Add** button on the Mappings FastTab.
 
 ##### Field functions
 
@@ -217,9 +219,15 @@ Field mappings can have functions applied to them to transform the data or perfo
 
 ### XML files
 
-XML file format is available using a standard format based on the fields currently available for each document.  Where a new format is required, this can be managed using style sheets. <br> XML Collection should be used for XML files with multiple headers.
+When a new XML file template is created, the currently available fields will be defaulted in the mapping. Users can remove/add fields or move position of field/s.
+They can also enter a static value or apply functions for outbound files.
 
-> Note: The elements in the XML format use the D365 table field names.  To identify the correct label for each of the elements, please see the **Field label** available within the [**Field metadata**](Field%20metadata.md)
+The elements in the XML template, uses the D365 table field names but it can be overridden in the **Name** column in Mappings.
+
+Mappings also include an **Example** FastTab, which allows the user to view an example document and **Set data** for the example if the document type has available staging records.
+
+Style sheets can also be applied, which will override the mappings.
+XML Collection should be used for XML files with multiple headers.
 
 #### XML files templates setup
 If required, update the general settings by seleting the **Setup** button.
@@ -229,6 +237,7 @@ If required, update the general settings by seleting the **Setup** button.
 **Remove blank elements**         |	Select to remove elements from the outbound file that do not have data.  This is required for XSD validation.
 **XLST output is XML**            |	Select if the XLST output is XML
 **Suppress BOM characters**       |	**No** – Include byte order mark (BOM) characters in generated outbound XML files. <br> **Yes** – Suppress byte order mark (BOM) characters in outbound files
+**Format outbound document**      |	**Outbound files**: <br> •	**No** – XML outbound file is created without carriage returns <br> •	**Yes** - XML outbound file is created with carriage returns <br> **Inbound files**: not affected by setting, file with/without carriage returns can be imported.
 
 If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).
 
@@ -237,10 +246,10 @@ If required to update regional, decimals or date settings, see [Standard setup](
 When creating **XLST Transformation** or **XLST Collection** templates:
 - Select **Mappings**, the following options are available:
     - **XSD** – (XML Schema Definition) describes the elements within the XML document
-    - **XML** – Shows the XML document that will be produced for each document
+    - **XML** – Ability to override the default mappings
     - **XSLT** – Ability to apply an XSLT transformation (if required)
 
-> Note: If the document type has staging record/s, users can use the following to create an example XML populated with information. Select **Mappings > XML > Set data**, select a staging table record, then select Choose.
+> Note: If the document type has staging record/s, users can use the following to create an example XML populated with information. Select **Mappings > XML**. Select **Set data** button on the **Example** FastTab, select a staging table record and select **Choose**.
 
 #### XML Transformation
 
