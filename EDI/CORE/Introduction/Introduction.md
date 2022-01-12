@@ -45,8 +45,8 @@ Depending on licensing additional documents are available per module, view all t
 ### Core setup
 The following core setup is available under **EDI > Setup**:
 - [Connections](../Setup/Connection%20setup.md) - Setup the applicable ftp/ftps/sftp/azure blob connection(s)
-- [Cleanup profile](../Setup/Cleanup%20profile.md) - Can be used to automatically delete staging records based on status and age days
-- [Reset status](../Setup/Reset%20status.md) - Optional automatic retry by resetting Error records to Not started based on a recurrence pattern
+- [Cleanup profile](../Setup/Cleanup%20profile.md) - (Optional) Can be used to automatically delete staging records based on status and age days
+- [Reset status](../Setup/Reset%20status.md) - (Optional) Automatic retry by resetting Error records to Not started based on a recurrence pattern
 - [EDI parameters](../Setup/EDI%20parameters.md) - Refresh module after deployment, and other parameter setup
 - [EDI shared parameters](../Setup/EDI%20shared%20parameters.md) - Setup shared parameters
 - [UOM mapping](../Setup/UOM%20mapping.md) - Create unit of measure mappings that can be assigned on applicable trading partners, for example kgs to kg
