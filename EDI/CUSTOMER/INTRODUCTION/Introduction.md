@@ -73,9 +73,16 @@ Used to map D365/EDI value to Customer's value and assigned on Customer Trading 
 
 - Customer setup: **EDI > Setup > Customer setup** <br>
 	- [Purchase order types](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md)
+		- Customer purchase order (OrderType)
 	- [Order purpose group](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md)
+		- Customer purchase order (OrderPurpose)
+		- Customer purchase order change (OrderPurpose)
 	- [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md)
+		- Customer purchase order acknowledgement (POACustCode) 
+		- Customer purchase order acknowledgement (POACustCodeItem)
+		- Customer purchase order acknowledgement (POACustCodeShipment)
 	- [Order line change type group](..SETUP/CUSTOMER%20SETUP/Order%20line%20change%20type%20group.md)
+		- Customer purchase order change (ChangeTypeValue)
 
 - Core Setup: **EDI > Setup** <br>
 	- [Unit of measure mapping](../../CORE/Setup/UOM%20mapping.md)
