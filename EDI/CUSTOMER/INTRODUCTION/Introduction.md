@@ -71,7 +71,7 @@ Core setup is discussed in detail [here](../../CORE/Introduction/Introduction.md
 #### Mappings assigned on Customer Trading partner
 Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner: <br>
 
-- Customer setup: **EDI > Setup > Customer setup** <br>
+- Customer setup and which EDI document (and field) it is mapped to/from: **EDI > Setup > Customer setup** <br>
 	- [Purchase order types](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md)
 		- Customer purchase order (OrderType)
 	- [Order purpose group](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md)
