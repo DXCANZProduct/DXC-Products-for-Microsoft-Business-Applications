@@ -51,7 +51,7 @@ EDI > Setup
 3	 | Cleanup profile			                | Create new **Cleanup profile**. EDI > Setup > Cleanup profile |
 4	 | Cleanup profile line		            | Create new **Cleanup profile lines**. EDI > Setup > Cleanup profile | • Cleanup profile
 5	 | Functional acknowledgement document type mapping | Create new **Document type mapping** used for Functional acknowledgement. EDI > Setup > Document type mapping  | 
-6	 | Functional acknowledgement document type mapping lines | Create new **Document type mapping lines** used for Functional acknowledgement. EDI > Setup > Document type mapping	| Functional acknowledgement <br>document type mapping
+6	 | Functional acknowledgement document type mapping lines | Create new **Document type mapping lines** used for Functional acknowledgement. EDI > Setup > Document type mapping	| • Functional acknowledgement <br>document type mapping
 7	 | Reset status profile            		| Create new **Reset status profile** recurrence <br> EDI > Setup > Reset status profile
 8  | EDI parameters                      | Create new **EDI parameters** per legal entity                    |
 9  | EDI Shared Parameters               | Create new **EDI shared parameters**                              |
@@ -77,7 +77,7 @@ EDI > Setup > Document types (Template, Validation, Outbound file names and EDI 
 6		  | EDI template JSON			| Create new **JSON** template and setup
 7		  | EDI template JSON collection	| Create new **JSON Collection** template and setup
 8		  | EDI template code transformation	| Create new **Code transformation** template and setup
-9     | EDI template section  | Create new **section** for existing XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI Template XSLT <br/> • EDI template XSLT collection <br/> • EDI template JSON <br/> • EDI template JSON collection or <br/> • EDI template code transformation
+9     | EDI template section  | Create new **section** for existing XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI Template XSLT <br/> • EDI template XSLT collection <br/> • EDI template JSON <br/> • EDI template JSON collection <br/> • EDI template code transformation
 10    | EDI template fields   | Create new **fields** for existing sections for XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI template section
 11	  | EDI Validation profile		| Create new **Validation profiles** for all applicable document types	
 12	  | EDI Validation profile line		| Create new **Validation profile lines** for all applicable document types | • EDI Validation profile
