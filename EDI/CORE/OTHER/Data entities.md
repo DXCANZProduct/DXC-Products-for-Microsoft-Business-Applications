@@ -82,6 +82,17 @@ EDI > Setup > Document types (Template, Validation, Outbound file names and EDI 
 13	  | EDI Outbound file names		| Create new **Outbound file names**
 14		| EDI Field metadata			| Update document type's **Field metadata**
 
+## EDI Batch control group
+EDI > Setup > Batch control group
+
+**Order**         | **Entity**				| **Description**							| **Dependency**
+:-----------------|:------------------------------------|:-------------------------						|:-------------------------
+1   | EDI batch control group               | Create new **Batch control group**
+2   | EDI batch control group company       | Add **Companies** to the Batch control group  | EDI batch control group
+3   | EDI batch control group job           | Add **Job** / Control type to the Batch control group | EDI batch control group
+4   | EDI batch control group document      | Add and enable **Documents** to the Batch control group per Job / Control type | EDI batch control group <br/> EDI batch control group job 
+5   | EDI batch control group transfer type | Add and enabled **Transfer type** to the Batch control group per Document for Import and Export jobs  | EDI batch control group <br/> EDI batch control group job <br/> EDI batch control group document
+
 The following entities are applicable to all **EDI - Standard formats** module:
 EDI > Setup > Document types (Template)
 
