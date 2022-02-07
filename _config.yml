@@ -1,1 +1,3 @@
-remote_theme: amitmerchant1990/reverie
+# Build settings
+markdown: kramdown
+remote_theme: benbalter/retlab
