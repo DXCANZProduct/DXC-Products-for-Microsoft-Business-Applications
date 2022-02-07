@@ -39,3 +39,9 @@ Powerful functionality extends Microsoft Dynamics 365:
 - Trading partners are created and managed within D365 and linked to valid customers, warehouses or vendors easily within D365
 - Effortlessly navigate from EDI incoming and outgoing files to applicable D365 transaction
 
+Topics:
+- [EDI Core](../CORE/Introduction/Introduction.md)
+- [EDI Customer module](../CUSTOMER/INTRODUCTION/Introduction.md)
+- [EDI Vendor module](../VENDOR/INTRODUCTION/Introduction.md)
+- [EDI 3PL module](../3PL/INTRODUCTION/Introduction.md)
+- [EDI Freight forwarder for Landed cost](../FREIGHT%20FORWARDER/INTRODUCTION/Introduction.md)
