@@ -41,7 +41,7 @@ Powerful functionality extends Microsoft Dynamics 365:
 
 Topics:
 - [EDI Core](../CORE/Introduction/Introduction.md)
-- [EDI Customer module](../CUSTOMER/INTRODUCTION/Introduction.md)
+- [EDI Customer module](../EDI/CUSTOMER/INTRODUCTION/Introduction.md)
 - [EDI Vendor module](../VENDOR/INTRODUCTION/Introduction.md)
 - [EDI 3PL module](../3PL/INTRODUCTION/Introduction.md)
 - [EDI Freight forwarder for Landed cost](../FREIGHT%20FORWARDER/INTRODUCTION/Introduction.md)
