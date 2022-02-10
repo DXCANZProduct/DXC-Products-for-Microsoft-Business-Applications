@@ -53,7 +53,7 @@ The following core setup is available under **EDI > Setup**:
 - [Document type mapping](../Setup/Document%20type%20mapping.md) - (Optional) Document type mapping for functional acknowledgement documents
 - [Document types](../Setup/Document%20types.md) - Setup document templates, setting profiles, validation profiles, outbound filenames and field metadata for all applicable documents
 - [Trading partners](../Setup/Trading%20partners.md) - Setup trading partners and assign the applicable mappings and documents
-- [Batch control](../Setup/Batch%20control.md) - Enable batch control for all the EDI steps
+- [EDI Batches](../Setup/EDI%20Batches.md) - Enable batches for all the EDI steps
 
 ## Processing
 
