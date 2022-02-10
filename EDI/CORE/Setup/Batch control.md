@@ -27,7 +27,7 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Batch control
+# EDI Batches
 
 D365 batches provide the ability to schedule the various processes involved with the EDI module. To reduce the number of batches and simplify the configuration and maintenance a batch control form and workspace has been provided in which the EDI batches can be controlled from.
 
@@ -85,5 +85,21 @@ Shows all batch jobs that are currently active for each company and control type
 ### Missing batches
 Shows all the batch jobs that haven’t been setup. Option to filter by Company and/or EDI batch control type
 
+## Export batch jobs
+Outbound staging records can be created either by:
+1.	**Send to EDI** is set to _Yes_ when posting the D365 source transaction, or
+2.	**Change tracking** is utilised to determine if there are new records for the EDI document type. These documents require the **Export batch jobs** to create the outbound staging record based on the required recurrence.
 
+The following section will describe the setup required for scenario 2.
+
+### Create outbound records manually 
+Users can access the form by navigating to **EDI > Periodic tasks > Export batch jobs**.
+
+Create a new Export batch job by:
+-	Select **New batch job**
+-	Select the **Company**
+-	Select the **EDI document type**
+- Select the **Trading partner**, where relevant
+- Set the **Recurrence**
+- Select **OK**
 
