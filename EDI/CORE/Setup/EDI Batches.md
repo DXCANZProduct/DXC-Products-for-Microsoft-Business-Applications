@@ -2,10 +2,10 @@
 # required metadata
 
 title: [EDI Core]
-description: [Setup Batch control]
+description: [Setup EDI Batches]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 21/07/2021
+ms.date: 10/02/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
