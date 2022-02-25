@@ -71,7 +71,7 @@ EDI > Setup > Document types (Template, Validation, Outbound file names and EDI 
 :-----------------|:------------------------------------|:-------------------------						|:-------------------------
 1		  | EDI Template file			| Create new **Text** template and setup
 2		  | EDI Template file section		| Section details for the **Text** template				| • EDI Template file
-3		  | EDI Template file line section	| Line details for each section for the **EDIFACT** template		| • EDI Template file section
+3		  | EDI Template file line section	| Line details for each section for the **Text** template		| • EDI Template file section
 4		  | EDI Template XSLT			| Create new **XSLT Transformation** template and setup
 5		  | EDI template XSLT collection	| Create new **XSLT Collection** template and setup
 6		  | EDI template JSON			| Create new **JSON** template and setup
