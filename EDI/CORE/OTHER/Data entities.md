@@ -103,3 +103,8 @@ EDI > Setup > Document types (Template)
 1	          | EDI Template EDIFACT            | Create new **EDIFACT** template and setup					|
 2	          | EDI Template EDIFACT section    | Section details for the **EDIFACT** template				| • EDI Template EDIFACT
 3	          | EDI Template EDIFACT element    | Element details for each section for the **EDIFACT** template		| • EDI Template EDIFACT section
+
+> Note: If the EDIFACT template has been created manually (not via data entity), first delete the default UNA elements before importing Section and Element entities for the template.
+
+> Re-import data package if elements are not populated.
+
