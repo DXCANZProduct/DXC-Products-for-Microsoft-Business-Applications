@@ -52,8 +52,8 @@ Go to **Accounts receivable > Customers > All customers** and select the applica
 When ABN validation has been enabled for the legal entity, the **ABN status/validation** functionality is available through below options for Vendor and Customer as discussed in the following subsections
 The following **ABN Status** information will be displayed for the selected customer or vendor:
 - ABN
-- Status: Examples are Active, Cancelled
-- Type: Examples are Australian Private Company
+- Status - Examples are Active, Cancelled
+- Type - Examples are Australian Private Company
 - Trading name
 - State
 - Post code
