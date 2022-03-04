@@ -76,8 +76,8 @@ ORGANIZATION ADMINISTRATION > INQUIRIES AND REPORTS > ABN VALIDATION
 
 Select the applicable parameters and press OK.
 
-Field	  | Description
--       |-
+Field	              | Description
+|--                 |--               |
 **Filter by type**  |	Set to Yes if report should be filtered by type
 **Filter type**     |	If Filter by type was set to Yes, select: <br> •	Customer, or <br> •	Vendor 
 **Status**          |	Select the applicable status: <br> •	All <br> •	Valid <br> •	Invalid <br> •	Cancelled
