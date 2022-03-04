@@ -29,24 +29,23 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # ABN lookup
 
-When ABN validation has been enabled for the legal entity, the ABN lookup feature is available through below options for Vendor and Customer as discussed in the following subsections.
-Advanced filters are also available to limit the search results:
-•	Select the applicable state/s.
-•	ZIP/postal code
-•	Search width (Typical or Narrow)
-•	Active (No / Yes)
+When ABN validation has been enabled for the legal entity, the **ABN lookup** functionality is available through below options for Vendor and Customer as discussed in the following subsections.
+
+Advanced filters are also available to limit the search results: <br>
+- Select the applicable state(s)
+- ZIP/postal code
+- Search width - Typical or Narrow
+- Active - No / Yes
 
 ## Vendors
-ACCOUNTS PAYABLE > VENDORS > ALL VENDORS
-Select the applicable Vendor and choose either of the following:
-•	On the Action Pane, on the Vendor tab, in the Registration group, select ABN lookup. The vendor’s Name will be populated in the Search box. Add any advanced filters and select the Search button. In the Search results, select the applicable line and press OK, this will create (if required) and populate the Tax exempt number on the currently selected Vendor.
-•	On the Invoice and delivery FastTab, select or view details on the Tax exempt number field. Select the ABN lookup button. Enter the company’s name in the Search box. Add any advanced filters and select the Search button. In the Search results, select the applicable line and press OK, this will create the Tax exempt number, but user still needs to assign it to the vendor in the Invoice and delivery FastTab.
+Go to **Accounts payable > Vendors > All vendors** and select the applicable Vendor. Choose either of the following: <br>
+- On the Action Pane, on the **Vendor** tab, in the **Registration** group, select **ABN lookup**. The vendor’s Name will be populated in the Search box. Add any advanced filters and select the **Search** button. In the Search results, select the applicable line and press OK, this will create (if required) and populate the **Tax exempt number** on the currently selected Vendor.
+- On the **Invoice and delivery** FastTab, select or view details on the **Tax exempt number** field. Select the **ABN lookup** button. Enter the company’s name in the Search box. Add any advanced filters and select the **Search** button. In the Search results, select the applicable line and press OK, this will create the Tax exempt number, but user still needs to assign it to the vendor in the **Invoice and delivery** FastTab.
 
 ## Customers
-ACCOUNTS RECEIVABLE > CUSTOMERS > ALL CUSTOMERS
-Select the applicable Customer and choose either of the following:
-•	On the Action Pane, on the Customer tab, in the Registration group, select ABN lookup. The customer’s Name will be populated in the Search box. Add any advanced filters and select the Search button. In the Search results, select the applicable line and press OK, this will create (if required) and populate the Tax exempt number on the currently selected Customer.
-•	On the Invoice and delivery FastTab, select or view details on the Tax exempt number field. Select the ABN lookup button. Enter the company’s name in the Search box. Add any advanced filters and select the Search button. In the Search results, select the applicable line and press OK, this will create the Tax exempt number, but user still needs to assign it to the customer in the Invoice and delivery FastTab.
+Go to **Accounts receivable > Customers > All customers** and select the applicable Customer. Choose either of the following: <br>
+- On the Action Pane, on the **Customer** tab, in the **Registration** group, select **ABN lookup**. The customer’s Name will be populated in the Search box. Add any advanced filters and select the **Search** button. In the Search results, select the applicable line and press OK, this will create (if required) and populate the **Tax exempt number** on the currently selected Customer.
+- On the **Invoice and delivery** FastTab, select or view details on the **Tax exempt number** field. Select the **ABN lookup** button. Enter the company’s name in the Search box. Add any advanced filters and select the **Search** button. In the Search results, select the applicable line and press OK, this will create the Tax exempt number, but user still needs to assign it to the customer in the **Invoice and delivery** FastTab.
 
 
 # ABN status / validation
