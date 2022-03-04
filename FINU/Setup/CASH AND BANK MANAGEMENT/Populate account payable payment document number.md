@@ -3,9 +3,9 @@
 
 title: [Finance Utilities ]
 description: [Cash and bank management setup - Accounts payable payment document number]
-author: [helenho]
+author: [jdutoit2]
 manager: Kym Parker
-ms.date: 02/03/2021
+ms.date: 04/03/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,5 +35,5 @@ The fields as described in the following subsections are available to control th
 
 The enhancement to support the Finance utilities Reconciliation matching rule's **Group by document number** feature is to display the Journal id or Cheque number under **Document number** field on the bank reconciliation screen. Document field on the payment journal line is not updated. Reconciliation matching rules can then be used to automatically match the _sum_ of the D365 transactions having the _same document number_ as that on the Bank statement.
 To activate the Document number:
-- Go to **Cash and bank management > Setup > Cash and bank management parameters**, select the **Bank reconciliation** tab and set **Turn off reconciliation worksheet performance enhancements** to _Yes_.**
+- Go to **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters**, set **Populate bank transaction document number** to _Yes_.**
 - Go to **Accounts Payable > Setup > Accounts payable parameters**, select the **Number sequences** tab and set the **Payment reference** number sequence.
