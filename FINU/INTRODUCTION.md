@@ -113,6 +113,7 @@ Modification allows users to automatically save the electronic reporting file to
 
 ## ABN lookup and validation
 > Note: Only applicable to Australia. 
+
 Where the company has registered to use ABN lookup Web API and the legal entity setup in D365, it is possible to lookup and validate customer and vendor’s ABN in D365.
 
 
