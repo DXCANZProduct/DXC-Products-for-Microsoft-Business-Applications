@@ -37,16 +37,16 @@ After successful registration, the company will be provided with a security toke
 
 ## Setup ABN validation providers
 1. Go to **Organization administration > Setup > Validation providers**.
-2. On the Actiona Pane, select **New** and enter the following details.
-- **Name** - Enter name for ABN validation provider	
-- **Description** - Enter a description for the ABN validation provider
-- **Provider** - Select _Australian Business Number (ABN)_	
-- **Token GUID** - Enter the security token received from the provider	
-- **Max search results** - Enter the applicable result, example 0
-- **Active only** - ABN validation can create Tax exempt numbers. Setting this option to only allow active, will limit the ability to create only Tax exempt numbers that are active
+2. On the Action Pane, select **New** and enter the following details.
+  - **Name** - Enter name for ABN validation provider	
+  - **Description** - Enter a description for the ABN validation provider
+  - **Provider** - Select _Australian Business Number (ABN)_	
+  - **Token GUID** - Enter the security token received from the provider	
+  - **Max search results** - Enter the applicable result, example 0
+  - **Active only** - ABN validation can create Tax exempt numbers. Setting this option to only allow active, will limit the ability to create only Tax exempt numbers that are active
 
 ## Setup legal entity
 1. Go to **Organization administration > Organizations > Legal entities** and select the applicable legal entity.
 2. Use the setup available under **ABN Validation** FastTab to enable and add the security token received from Australian Government to each D365 legal entity.
-- Set **Enabled** to _Yes_.
-- Select the applicable **Provider** from the drop-down as setup in the previous section **ABN validation providers**.
+  - Set **Enabled** to _Yes_.
+  - Select the applicable **Provider** from the drop-down as setup in the previous section **ABN validation providers**.
