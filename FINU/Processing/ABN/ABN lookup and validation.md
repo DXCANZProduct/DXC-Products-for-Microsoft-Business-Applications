@@ -49,26 +49,24 @@ Go to **Accounts receivable > Customers > All customers** and select the applica
 
 
 # ABN status / validation
-When ABN validation has been enabled for the legal entity, the ABN status/validation feature is available through below options for Vendor and Customer as discussed in the following subsections
-The following ABN Status information will be displayed for the selected customer or vendor:
-•	ABN
-•	Status: Examples are Active, Cancelled
-•	Type: Examples are Australian Private Company
-•	Trading name
-•	State
-•	Post code
+When ABN validation has been enabled for the legal entity, the **ABN status/validation** functionality is available through below options for Vendor and Customer as discussed in the following subsections
+The following **ABN Status** information will be displayed for the selected customer or vendor:
+- ABN
+- Status: Examples are Active, Cancelled
+- Type: Examples are Australian Private Company
+- Trading name
+- State
+- Post code
 
 ## Vendors
-ACCOUNTS PAYABLE > VENDORS > ALL VENDORS
-Select the applicable Vendor and choose either of the following:
-•	On the Action Pane, on the Vendor tab, in the Registration group, select ABN status.
-•	Manually enter the Tax exempt number on the Invoice and delivery FastTab.
+Go to **Accounts payable > Vendors > All vendors** and select the applicable Vendor and choose either of the following:
+- On the Action Pane, on the Vendor tab, in the Registration group, select ABN status.
+- Manually enter the Tax exempt number on the Invoice and delivery FastTab.
 
 ## Customers
-ACCOUNTS RECEIVABLE > CUSTOMERS > ALL CUSTOMERS
-Select the applicable Customer and choose either of the following:
-•	On the Action Pane, on the Customer tab, in the Registration group, select ABN status.
-•	Manually enter the Tax exempt number on the Invoice and delivery FastTab.
+Go to **Accounts receivable > Customers > All customers** and select the applicable Customer and choose either of the following:
+- On the Action Pane, on the Customer tab, in the Registration group, select ABN status.
+- Manually enter the Tax exempt number on the Invoice and delivery FastTab.
 
 # ABN validation report
 To run the **ABN validation** report, go to **Organization administration > Inquiries and reports > ABN validation**. <br>
