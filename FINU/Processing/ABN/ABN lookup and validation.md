@@ -72,12 +72,11 @@ Select the applicable Customer and choose either of the following:
 •	Manually enter the Tax exempt number on the Invoice and delivery FastTab.
 
 # ABN validation report
-ORGANIZATION ADMINISTRATION > INQUIRIES AND REPORTS > ABN VALIDATION
-
-Select the applicable parameters and press OK.
+To run the **ABN validation** report, go to **Organization administration > Inquiries and reports > ABN validation**. <br>
+Select the applicable parameters and press **OK**.
 
 Field	              | Description
 |--                 |--               |
-**Filter by type**  |	Set to Yes if report should be filtered by type
-**Filter type**     |	If Filter by type was set to Yes, select: <br> •	Customer, or <br> •	Vendor 
+**Filter by type**  |	Set to _Yes_ if report should be filtered by type
+**Filter type**     |	If Filter by type was set to _Yes_, select: <br> •	Customer, or <br> •	Vendor 
 **Status**          |	Select the applicable status: <br> •	All <br> •	Valid <br> •	Invalid <br> •	Cancelled
