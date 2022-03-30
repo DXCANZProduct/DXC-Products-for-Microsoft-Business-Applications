@@ -96,7 +96,7 @@ Select the **Setup** button to set the following for text templates:
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
 **Flat or structured**            | **Flat** – A single line per record. Each line of text in the file has all the header information on it as well as the line information. <br> **Structured** – Multiple lines per record. Each line in the file is either a header type or a line type
-**Delimited or fixed**            | **Delimited** – Columns using a defined separator. <br> **Fixed** – Fixed width (to be implemented in future version of the module)
+**Delimited or fixed**            | **Delimited** – Columns using a defined separator. <br> **Fixed** – Fixed width
 **First row is header**           | Specify if the First row is header record. This row will then be ignored on the inbound file.
 **Row delimiter**                 |	Select the Row delimiter used within the file, options: <br> **{CR}{LF}** – Carriage return/line feed for windows <br> **{CR}** – Carriage return for MAC. <br> **{LF}** – Line feed for UNIX <br> **{;}** – Semicolon <br> **{:}** – Colon <br> **{,}** – Comma <br> **{t}** – Tab <br> **{\|}** Vertical bar
 **Column delimiter**              |	Select the Column delimiter used within the file, same selection as Row delimiter
@@ -143,14 +143,20 @@ A Structured file can have many different file sections, all with an associated 
 
 Field mappings define how the data is positioned in the file on the section line. Fields can also be statically set to values and certain functions are available to transform the fields data if required.
 
-**Field** 	                      | **Description**                      
-:-------------------------------- |:-------------------------------------
-**Value type**                    |	Whether the field value is a static value or a mapped field value	
-**Static value**	              | If the field type is a static type, then this is the static value	
-**Staging field**	              | The mapped field	                                                
-**Staging table**	              | The table the mapped field represents
-**Field position**	              | The position in the file the mapping represents
-**Function**	                  | Apply an optional function to the data of this field
+**Field** 	                      | **Description**                         | **Applicable to          
+:-------------------------------- |:-------------------------------------   |:----------------
+**Value type**                    |	Whether the field value is a static value or a mapped field value	| Inbound & Outbound
+**Static value**	              | If the field type is a static type, then this is the static value	| Inbound & Outbound
+**Staging field**	              | The mapped field	                                                | Inbound & Outbound
+**Staging table**	              | The table the mapped field represents                               | Inbound & Outbound
+**Field position**	              | The position in the file the mapping represents                     | Inbound & Outbound
+** **Field length**               |	Number of characters for field	                                    | Inbound & Outbound
+** **Alignment**	              | Select Left or Right alignment for the field	                    | Outbound
+** **Padding character**	      | Enter a padding character for the field	                            | Outbound
+**Function**	                  | Apply an optional function to the data of this field                | Inbound & Outbound
+
+> Note: ** Available for Fixed type text templates.
+
 
 There are two ways to add a field mapping:
 
