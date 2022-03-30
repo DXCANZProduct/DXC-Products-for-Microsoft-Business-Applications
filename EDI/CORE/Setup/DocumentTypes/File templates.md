@@ -232,6 +232,11 @@ The elements in the XML template, uses the D365 table field names but it can be 
 
 Mappings also include an **Example** FastTab, which allows the user to view an example document and **Set data** for the example if the document type has available staging records.
 
+Users can also enter a static value or apply functions for inbound and outbound files.
+- **Static value**: Users can use a static value on an inbound file where the field is not within the file. Or send a static value on an outbound file.
+- **Custom format**: Where the field is within the inbound file but needs to be formatted, use formula like substring to replace. On outbound files, custom format can also be used to format differently to document template’s setup, or other examples as per [Custom format](#custom-format) section.
+
+
 Style sheets can also be applied, which will override the mappings.
 XML Collection should be used for XML files with multiple headers.
 
@@ -333,7 +338,7 @@ The following Options under General, are defaulted for EDIFACT and are used to p
 If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).
 
 > Note: The **Decimal separator** is linked to the **Decimal mark**. <br>
-> Date formats can also be overridden for a specific field within Mappings by using Custom format. For example, the document’s date format is set to yyyyMMdd, but can use yyyyMMddHHmm for specific field CreatedDateTime.
+> Date formats can also be overridden for a specific field within Mappings by using [Custom format](#custom-format). For example, the document’s date format is set to yyyyMMdd, but can use yyyyMMddHHmm for specific field CreatedDateTime.
 
 #### EDIFACT files template mappings
 
@@ -370,7 +375,7 @@ It also includes **EDIFACT message**, which includes options like:
     - Segment count, and
     - Service string fields
 - **Name** is defaulted from the Static value / Staging field but can be overridden.
-- Where applicable, enter a [Custom format] for the field.
+- Where applicable, enter a [Custom format](#custom-format) for the field.
 
 > Note: To **Delete** a Segment, select the record then select **Delete**. <br>
 > Segments can be moved up or down within its Section by using the **Up** and **Down** buttons.
@@ -395,7 +400,7 @@ It also includes **EDIFACT message**, which includes options like:
     - Segment count, and
     - Service string fields
 - **Name** is defaulted from the Static value / Staging field but can be overridden.
-- Where applicable, enter a [Custom format] for the field.
+- Where applicable, enter a [Custom format](#custom-format) for the field.
 
 > Note: To **Delete** a composite, select the record then select **Delete**. <br>
 > Composites can be moved up or down within its Segment by using the **Up** and **Down** buttons. <br>
@@ -420,7 +425,7 @@ It also includes **EDIFACT message**, which includes options like:
     - Segment count, and
     - Service string fields
 - **Name** is defaulted from the Static value / Staging field but can be overridden.
-- Where applicable, enter a [Custom format] for the field.
+- Where applicable, enter a [Custom format](#custom-format) for the field.
 
 > Note: To **Delete** an Element, select the record then select **Delete**. <br>
 > Elements can be moved up or down within its Composite by using the **Up** and **Down** buttons. <br> 
