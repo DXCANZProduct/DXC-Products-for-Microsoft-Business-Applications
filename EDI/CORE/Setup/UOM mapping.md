@@ -35,11 +35,15 @@ Users can access the form by navigating to **EDI > Setup > UOM mapping**
 - Click **New** to create a new record. 
 -	In the **Name** field, enter the name of the unit of measure mapping
 -	In the **Description** field, enter a description of the unit of measure mapping
+-	In the **Company accounts ID** field, select a company if the mapping applies only to a specific company. Also a requirement if **Item code** _Group_ or _Table_ is used. Blank Company is allowed where all the mapping lines’ **Item code** is set to _All_.
 -	In the **Mappings** FastTab, select **Add** to create a new record
 -	Select the D365 **Unit**. Options are obtained from Units setup at Organization administration > Setup > Units, examples:
     - box
     - pcs
-- Specify the **indicator**/trading partner's value used to identify the **EDI Unit**
+- Specify the **indicator**/trading partner's value used to identify the Trading partner's **Value**
+- Select **Item code** - All, Group or Table
+- Where applicable, select the **Item relation**
+- **Inventory dimensions** are also available to limit the unit of mapping to a specific inventory dimension combination
 
 ## Customer EDI module
 For **Customer** Trading partners, the Unit of measure mapping is utilized on **Sales unit**:
