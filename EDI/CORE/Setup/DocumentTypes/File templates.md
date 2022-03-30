@@ -251,9 +251,9 @@ If required to update regional, decimals or date settings, see [Standard setup](
 
 When creating **XLST Transformation** or **XLST Collection** templates:
 - Select **Mappings**, the following options are available:
-    - **XSD** – (XML Schema Definition) describes the elements within the XML document
-    - **XML** – Ability to override the default mappings
-    - **XSLT** – Ability to apply an XSLT transformation (if required)
+       - **XML** – Ability to override the default mappings
+       - **XSD** – (XML Schema Definition) describes the elements within the XML document
+       - **XSLT** – Ability to apply an XSLT transformation (if required)
 
 > Note: If the document type has staging record/s, users can use the following to create an example XML populated with information. Select **Mappings > XML**. Select **Set data** button on the **Example** FastTab, select a staging table record and select **Choose**.
 
