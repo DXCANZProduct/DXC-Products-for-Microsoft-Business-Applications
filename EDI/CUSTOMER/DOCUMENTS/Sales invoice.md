@@ -157,6 +157,8 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Invoice**</ins>      | Invoice details		
 **Invoice**                 | D365 Invoice number	                | Invoice > Invoice Number
 **Name**                    | Tax invoice account name	            | Invoice > Invoice Account Name
+**Invoice contact name**	| Invoice account’s primary contact name	| Customer > Contact information
+**Invoice phone number**	| Invoice account’s primary contact phone	| Customer > Contact information
 **Tax exempt number**       | Invoice account’s tax exempt number	| Invoice > Invoice Account’s VATNum
 **Our account number**      | Our account number in the customers system	
 **Date**                    | Invoice date	                        | Invoice journal > Date
