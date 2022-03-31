@@ -98,6 +98,6 @@ Filters           | Description
 
 Buttons	          | Description
 :--               |:--
-**Send to EDI**   |	Select the **Send to EDI** button to create an ASN staging table record and update the record as Sent to EDI = Yes
+**Send to EDI**   |	Select the **Send to EDI** button to create a Sales invoice staging table record and update the record as Sent to EDI = Yes
 **Reset flag**    |	Select the **Reset flag** to update **Sent to EDI** to _No_
 **Exclude / Include** |	Ability to exclude/include records from open list
