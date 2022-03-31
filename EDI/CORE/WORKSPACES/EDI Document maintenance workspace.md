@@ -5,7 +5,7 @@ title: [EDI Core]
 description: [EDI Core - EDI Document workspaces]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 21/07/2021
+ms.date: 31/03/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,6 +34,7 @@ Users can access the form by navigating to **EDI > EDI Document maintenance**.
 The EDI document maintenance workspace provides a quick and easy way to view all errors relating to the processing of: <br>
 - Inbound file imports – Inbound Files that could not create a staging table record.
 - Document errors – Staging table records that could not create/update the target D365 transaction.
+- Outbound file exports – Issue on exporting outbound records.
 
 In addition, from within the workspace it is possible to view and even process information relating to the selected records.
 
