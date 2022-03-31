@@ -87,4 +87,17 @@ Buttons	          | Description
 **Reset flag**    |	Select the **Reset flag** to update **Sent to EDI** to _No_
 **Exclude / Include** |	Ability to exclude/include records from open list
 
+### Open invoice
+**Open invoice** can be used in scenarios where an EDI customer has sales invoices posted but not yet sent to EDI (staging record created) and has the **Sales invoice** document enabled on the trading partner.
 
+Filters           | Description
+:--               |:--
+**Sent to EDI**   |	•	No (default)- Display records that haven’t been sent to EDI <br> •	Yes – Display records that have been sent to EDI
+**Excluded**      |	•	No (default) – Display record that hasn’t been marked as excluded from open list <br> •	Yes – Display records that has been marked as excluded from open list
+
+
+Buttons	          | Description
+:--               |:--
+**Send to EDI**   |	Select the **Send to EDI** button to create an ASN staging table record and update the record as Sent to EDI = Yes
+**Reset flag**    |	Select the **Reset flag** to update **Sent to EDI** to _No_
+**Exclude / Include** |	Ability to exclude/include records from open list
