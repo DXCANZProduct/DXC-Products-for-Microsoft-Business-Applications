@@ -6,4 +6,4 @@ Repository for DXC Products on D365 Financials and Operations
 - [Electronic Data Interchange (EDI)](EDI/Introduction.md)
 - [Finance utilities](FINU/INTRODUCTION.md) (specific to ANZ region)
 - [Item creation wizard](DXC-ITEM-CREATION-WIZARD/INTRODUCTION.md)
-- [Smart Send](SMART%20SEND/Overview.md)
+- [Smart Send](SMART-SEND/Overview.md)
