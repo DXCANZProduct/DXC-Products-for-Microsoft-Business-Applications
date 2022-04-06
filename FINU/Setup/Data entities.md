@@ -59,7 +59,7 @@ Cash and bank management > Setup > Advanced bank reconciliation setup > Reconcil
 
 | **Entity**                          | **Additional Finance utilities fields for standard entity**                     
 |-                                    |-  
-| **Reconciliation matching rules**   | • Include in (DFUBANKRULEACTIVATEINCLUDEIN) <br> •	Group by document number (SYSTEMGENERATEDTYPE = ECL_GroupByDocumentNum) <br> • Company (DFUCOMPANY) <br> •	Offset company (DFUOFFSETCOMPANY) <br> •	Offset account type (DFUOffsetAccountType) <br> •	Offset account (DFUOFFSETLEDGERDIMENSIONDISPLAYVALUE) <br> •	Offset account dimension values (DFUOFFSETDEFAULTDIMENSIONDISPLAYVALUE) <br> •	GST group (DFUTAXGROUP) <br> •	Item GST group (DFUTAXITEMGROUP) | 
+| **Reconciliation matching rules**   | • Include in (DFUBANKRULEACTIVATEINCLUDEIN) <br> •	Group by document number (SYSTEMGENERATEDTYPE = ECL_GroupByDocumentNum) <br> • Company (DFUCOMPANY) <br> •	Offset company (DFUOFFSETCOMPANY) <br> •	Offset account type (DFUOffsetAccountType) <br> •	Offset account (DFUOFFSETLEDGERDIMENSIONDISPLAYVALUE) <br> •	Offset account dimension values (DFUOFFSETDEFAULTDIMENSIONDISPLAYVALUE) <br> •	Offset account bank statement field (DFUOFFSETACCOUNTFIELDNAME) <br> • Settle transaction (DFUSETTLETRANS) <br> •	Settle transaction bank statement field (DFUSETTLETRANSFIELDNAME) <br> •	Auto-post customer payment journal (DFUCUSTPAYMAUTOPOST) <br> •	GST group (DFUTAXGROUP) <br> •	Item GST group (DFUTAXITEMGROUP) | 
 
 > Note: Ensure the **Financial dimension configuration for integrating applications** dimension format aligns with dimensions on the bank reconciliation matching rule before importing the **Reconciliation matching rules** entity. General ledger > Chart of accounts > Dimensions > Financial dimension configuration for integrating applications. <br> Define data entity format for **Default dimensions integration** and **Ledger dimensions integration**. <br>
 > See [link](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration) for more detail.
@@ -76,4 +76,4 @@ Bank statement format entities are a combination of Finance utilities entities a
 | 4         | **Line codes format**               | Finance utilities                         | - 
 
 > Note: If comma is used in **Field delimiter** on the **Bank statement format**, set SAB_FINFIELDDELIMITER **Text qualifier** to _Yes_ in Mapping details.
-> 
+

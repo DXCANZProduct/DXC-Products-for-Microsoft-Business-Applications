@@ -5,7 +5,7 @@ title: [EDI Customer]
 description: [EDI Customer workspaces - EDI Sales order processing]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 5/11/2021
+ms.date: 31/03/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -75,7 +75,29 @@ Note: Purchase order confirmation requirements are setup via **PO confirmation r
 ### Open consignment notes
 Open consignments will be available where the [Customer advanced shipping notice document setting profile](../SETUP/SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)'s **ASN strategy** is set to _consolidated_ packing slips. Where this is the case, a consolidated consignment should be sent at the end of each day to coincide with the dispatch of the goods.
 
-Field	            | Description
+Filters           | Description
 :--               |:--
-**Send to EDI**   | Select the **Send to EDI** button to create a Customer advanced shipping notice staging table record for the consignment.
+**Sent to EDI**   |	•	No (default)- Display records that haven’t been sent to EDI <br> •	Yes – Display records that have been sent to EDI
+**Excluded**      |	•	No (default) – Display record that hasn’t been marked as excluded from open list <br> •	Yes – Display records that has been marked as excluded from open list
 
+
+Buttons	          | Description
+:--               |:--
+**Send to EDI**   |	Select the **Send to EDI** button to create an ASN staging table record and update the record as Sent to EDI = Yes
+**Reset flag**    |	Select the **Reset flag** to update **Sent to EDI** to _No_
+**Exclude / Include** |	Ability to exclude/include records from open list
+
+### Open invoice
+**Open invoice** can be used in scenarios where an EDI customer has sales invoices posted but not yet sent to EDI (staging record created) and has the **Sales invoice** document enabled on the trading partner.
+
+Filters           | Description
+:--               |:--
+**Sent to EDI**   |	•	No (default)- Display records that haven’t been sent to EDI <br> •	Yes – Display records that have been sent to EDI
+**Excluded**      |	•	No (default) – Display record that hasn’t been marked as excluded from open list <br> •	Yes – Display records that has been marked as excluded from open list
+
+
+Buttons	          | Description
+:--               |:--
+**Send to EDI**   |	Select the **Send to EDI** button to create a Sales invoice staging table record and update the record as Sent to EDI = Yes
+**Reset flag**    |	Select the **Reset flag** to update **Sent to EDI** to _No_
+**Exclude / Include** |	Ability to exclude/include records from open list

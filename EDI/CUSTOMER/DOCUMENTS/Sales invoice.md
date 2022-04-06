@@ -157,6 +157,8 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Invoice**</ins>      | Invoice details		
 **Invoice**                 | D365 Invoice number	                | Invoice > Invoice Number
 **Name**                    | Tax invoice account name	            | Invoice > Invoice Account Name
+**Invoice contact name**	| Invoice account’s primary contact name	| Customer > Contact information
+**Invoice phone number**	| Invoice account’s primary contact phone	| Customer > Contact information
 **Tax exempt number**       | Invoice account’s tax exempt number	| Invoice > Invoice Account’s VATNum
 **Our account number**      | Our account number in the customers system	
 **Date**                    | Invoice date	                        | Invoice journal > Date
@@ -204,13 +206,18 @@ The following EDI Line staging fields are available on the lines page.
 **Lot ID**                  | Lot Id / InventTransId for the invoice line	            | Inventory transaction > InventTransId
 **Bar code**                | The GTIN or barcode	                                    | Sales line > EDI > EDI item number
 **External item number**	| The external item number	                                | Sales line > General > External
-**Unit price**	            | Unit price for the item	                                | Sales line > Unit price
+**Unit price**	            | Discouned unit price for the item	                                | Sales line > Unit price (discounted)
+**Sales unit price**        | Unit price before discounts for the item	                | Sales line > Unit Price
+**Unit discount**           | Unit discount for the item	                            | Sales line > Unit discount
+**Unit discount percent**   | Unit discount percentage for the item	                    | Sales line > Unit discount percent
 **Unit tax rate**	        | Tax unit rate included for the order line	                | Tax unit rate for the Tax & Item tax groups
 **Sales tax amount**	    | Tax line amount included for the order line	            | Tax amount for the Tax & Item tax groups
-**Unit Price incl. tax**    | Unit price including tax	                                | Sales line > Unit price incl. tax
+**Unit Price incl. tax**    | Discounted unit price including tax	                    | Sales line > Unit price incl. tax (discounted)
+Sales unit price include tax	Unit price before discounts including tax	Sales Line > Unit Price incl. tax
 **Unit**                    | Unit of measure	                                        | Sales line > Unit
 **Quantity**                | Invoice quantity	                                        | Invoice journal line > Quantity
 **Ordered quantity**        | Sales order line’s quantity	                            | Sales line > Quantity
+**Backorder quantity**      | Ordered quantity minus Invoiced quantity
 **Line amount excluding tax**   | Line amount excluding tax	                            | Sales line amount > Line amount excl. tax
 **Line amount including tax**   | Line amount including tax	                            | Invoice journal line > Line amount incl. tax
 **Delivery name**		                                                                | Sales line > Delivery Address Information
@@ -227,3 +234,18 @@ The following EDI Line staging fields are available on the lines page.
 **Size**                |	Product dimension - Size	                              | Sales line > Product dimension
 **Style**               |	Product dimension - Style	                              | Sales line > Product dimension
 **Version**             |   Product dimension - Version                               | Sales line > Product dimension
+**Customer account**    |	Sales order’s customer account	                          | Sales header > Customer account
+**Customer contact name**   | Sales order’s customer contact	                      | Sales header > Contact
+**Customer phone number**   | Sales order’s telephone	                              | Sales header > Telephone
+**Building complement**     | Delivery address from sales line	                      | Sales line > Delivery address
+**Street number**		    | Delivery address from sales line	                      | Sales line > Delivery address
+**Street**		            | Delivery address from sales line	                      | Sales line > Delivery address
+**County**		            | Delivery address from sales line	                      | Sales line > Delivery address
+**District**		        | Delivery address from sales line	                      | Sales line > Delivery address
+**City**		            | Delivery address from sales line	                      | Sales line > Delivery address
+**State**		            | Delivery address from sales line	                      | Sales line > Delivery address
+**Post box**		        | Delivery address from sales line	                      | Sales line > Delivery address
+**ZIP/postal code**	        | Delivery address from sales line	                      | Sales line > Delivery address
+**Store code**		        | Delivery address from sales line	                      | Sales line > Delivery address
+**Country/region**		    | Delivery address from sales line	                      | Sales line > Delivery address
+**ISO**		                | Delivery address from sales line	                      | Sales line > Delivery address

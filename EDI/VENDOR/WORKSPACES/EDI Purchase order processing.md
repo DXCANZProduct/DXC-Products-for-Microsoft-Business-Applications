@@ -5,7 +5,7 @@ title: [EDI Vendor]
 description: [EDI Vendor workspaces - EDI Purchase order processing]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 16/11/2021
+ms.date: 31/03/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -82,3 +82,17 @@ Field	            | Description
 |:--                |:--
 **Version log**     | View all log versions for the document. When a document’s status is reset and reprocessed a new log version is created.
 
+### Open confirmation
+**Open confirmation** can be used in scenarios where an EDI vendor has Purchase order confirmation posted but not yet sent to EDI (staging record created) and has the Vendor purchase order document enabled on the trading partner.
+
+Filters           | Description
+:--               |:--
+**Sent to EDI**   |	•	No (default)- Display records that haven’t been sent to EDI <br> •	Yes – Display records that have been sent to EDI
+**Excluded**      |	•	No (default) – Display record that hasn’t been marked as excluded from open list <br> •	Yes – Display records that has been marked as excluded from open list
+
+
+Buttons	          | Description
+:--               |:--
+**Send to EDI**   |	Select the **Send to EDI** button to create a Vendor purchase order staging table record and update the record as Sent to EDI = Yes
+**Reset flag**    |	Select the **Reset flag** to update **Sent to EDI** to _No_
+**Exclude / Include** |	Ability to exclude/include records from open list

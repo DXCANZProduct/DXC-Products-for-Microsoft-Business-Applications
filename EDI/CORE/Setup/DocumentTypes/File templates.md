@@ -96,7 +96,7 @@ Select the **Setup** button to set the following for text templates:
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
 **Flat or structured**            | **Flat** – A single line per record. Each line of text in the file has all the header information on it as well as the line information. <br> **Structured** – Multiple lines per record. Each line in the file is either a header type or a line type
-**Delimited or fixed**            | **Delimited** – Columns using a defined separator. <br> **Fixed** – Fixed width (to be implemented in future version of the module)
+**Delimited or fixed**            | **Delimited** – Columns using a defined separator. <br> **Fixed** – Fixed width
 **First row is header**           | Specify if the First row is header record. This row will then be ignored on the inbound file.
 **Row delimiter**                 |	Select the Row delimiter used within the file, options: <br> **{CR}{LF}** – Carriage return/line feed for windows <br> **{CR}** – Carriage return for MAC. <br> **{LF}** – Line feed for UNIX <br> **{;}** – Semicolon <br> **{:}** – Colon <br> **{,}** – Comma <br> **{t}** – Tab <br> **{\|}** Vertical bar
 **Column delimiter**              |	Select the Column delimiter used within the file, same selection as Row delimiter
@@ -143,14 +143,20 @@ A Structured file can have many different file sections, all with an associated 
 
 Field mappings define how the data is positioned in the file on the section line. Fields can also be statically set to values and certain functions are available to transform the fields data if required.
 
-**Field** 	                      | **Description**                      
-:-------------------------------- |:-------------------------------------
-**Value type**                    |	Whether the field value is a static value or a mapped field value	
-**Static value**	              | If the field type is a static type, then this is the static value	
-**Staging field**	              | The mapped field	                                                
-**Staging table**	              | The table the mapped field represents
-**Field position**	              | The position in the file the mapping represents
-**Function**	                  | Apply an optional function to the data of this field
+**Field** 	                      | **Description**                         | **Applicable to          
+:-------------------------------- |:-------------------------------------   |:----------------
+**Value type**                    |	Whether the field value is a static value or a mapped field value	| Inbound & Outbound
+**Static value**	              | If the field type is a static type, then this is the static value	| Inbound & Outbound
+**Staging field**	              | The mapped field	                                                | Inbound & Outbound
+**Staging table**	              | The table the mapped field represents                               | Inbound & Outbound
+**Field position**	              | The position in the file the mapping represents                     | Inbound & Outbound
+** **Field length**               |	Number of characters for field	                                    | Inbound & Outbound
+** **Alignment**	              | Select Left or Right alignment for the field	                    | Outbound
+** **Padding character**	      | Enter a padding character for the field	                            | Outbound
+**Function**	                  | Apply an optional function to the data of this field                | Inbound & Outbound
+
+> Note: ** Available for Fixed type text templates.
+
 
 There are two ways to add a field mapping:
 
@@ -226,6 +232,11 @@ The elements in the XML template, uses the D365 table field names but it can be 
 
 Mappings also include an **Example** FastTab, which allows the user to view an example document and **Set data** for the example if the document type has available staging records.
 
+Users can also enter a static value or apply functions for inbound and outbound files.
+- **Static value**: Users can use a static value on an inbound file where the field is not within the file. Or send a static value on an outbound file.
+- **Custom format**: Where the field is within the inbound file but needs to be formatted, use formula like substring to replace. On outbound files, custom format can also be used to format differently to document template’s setup, or other examples as per [Custom format](#custom-format) section.
+
+
 Style sheets can also be applied, which will override the mappings.
 XML Collection should be used for XML files with multiple headers.
 
@@ -245,9 +256,9 @@ If required to update regional, decimals or date settings, see [Standard setup](
 
 When creating **XLST Transformation** or **XLST Collection** templates:
 - Select **Mappings**, the following options are available:
-    - **XSD** – (XML Schema Definition) describes the elements within the XML document
-    - **XML** – Ability to override the default mappings
-    - **XSLT** – Ability to apply an XSLT transformation (if required)
+       - **XML** – Ability to override the default mappings
+       - **XSD** – (XML Schema Definition) describes the elements within the XML document
+       - **XSLT** – Ability to apply an XSLT transformation (if required)
 
 > Note: If the document type has staging record/s, users can use the following to create an example XML populated with information. Select **Mappings > XML**. Select **Set data** button on the **Example** FastTab, select a staging table record and select **Choose**.
 
@@ -327,7 +338,7 @@ The following Options under General, are defaulted for EDIFACT and are used to p
 If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).
 
 > Note: The **Decimal separator** is linked to the **Decimal mark**. <br>
-> Date formats can also be overridden for a specific field within Mappings by using Custom format. For example, the document’s date format is set to yyyyMMdd, but can use yyyyMMddHHmm for specific field CreatedDateTime.
+> Date formats can also be overridden for a specific field within Mappings by using [Custom format](#custom-format). For example, the document’s date format is set to yyyyMMdd, but can use yyyyMMddHHmm for specific field CreatedDateTime.
 
 #### EDIFACT files template mappings
 
@@ -364,7 +375,7 @@ It also includes **EDIFACT message**, which includes options like:
     - Segment count, and
     - Service string fields
 - **Name** is defaulted from the Static value / Staging field but can be overridden.
-- Where applicable, enter a [Custom format] for the field.
+- Where applicable, enter a [Custom format](#custom-format) for the field.
 
 > Note: To **Delete** a Segment, select the record then select **Delete**. <br>
 > Segments can be moved up or down within its Section by using the **Up** and **Down** buttons.
@@ -389,7 +400,7 @@ It also includes **EDIFACT message**, which includes options like:
     - Segment count, and
     - Service string fields
 - **Name** is defaulted from the Static value / Staging field but can be overridden.
-- Where applicable, enter a [Custom format] for the field.
+- Where applicable, enter a [Custom format](#custom-format) for the field.
 
 > Note: To **Delete** a composite, select the record then select **Delete**. <br>
 > Composites can be moved up or down within its Segment by using the **Up** and **Down** buttons. <br>
@@ -414,7 +425,7 @@ It also includes **EDIFACT message**, which includes options like:
     - Segment count, and
     - Service string fields
 - **Name** is defaulted from the Static value / Staging field but can be overridden.
-- Where applicable, enter a [Custom format] for the field.
+- Where applicable, enter a [Custom format](#custom-format) for the field.
 
 > Note: To **Delete** an Element, select the record then select **Delete**. <br>
 > Elements can be moved up or down within its Composite by using the **Up** and **Down** buttons. <br> 
