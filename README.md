@@ -5,7 +5,7 @@ A Microsoft Gold Partner, DXC Practice for Microsoft helps enterprise and mid-ma
 DXC Practice for Microsoft offers a variety of products for D365 Financials and Operations. <br>
 Please select the applicable product from below:
 
-- [Core extensions](/CORE%20EXTENSIONS/Solution%20overview.md)
+- [Core extensions](/CORE EXTENSIONS/Solution overview.md)
 - [DocuSign](DOCUSIGN/INTRODUCTION.md)
 - [Electronic Data Interchange (EDI)](EDI/Introduction.md)
 - [Finance utilities](FINU/INTRODUCTION.md) (specific to ANZ region)
