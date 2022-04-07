@@ -9,7 +9,7 @@ Please select the applicable product from below:
 - [DocuSign](DOCUSIGN/INTRODUCTION.md)
 - [Electronic Data Interchange (EDI)](EDI/Introduction.md)
 - [Finance utilities](FINU/INTRODUCTION.md) (specific to ANZ region)
-- [Item creation wizard](/DXC%20ITEM%20CREATION%20WIZARD/INTRODUCTION.md)
+- [Item creation wizard](DXC-ITEM-CREATION-WIZARD/INTRODUCTION.md)
 - [Smart Send](./SMART%20SEND/Overview.md)
 
 Interested in learning more about DXC for Microsoft Dynamics 365? [Talk to us](https://dxc.com/us/en/contact-us)
