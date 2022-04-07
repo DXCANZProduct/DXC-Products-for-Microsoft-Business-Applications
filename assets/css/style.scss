@@ -2,14 +2,14 @@
 ---
 
 @import 'jekyll-theme-leap-day';
+
 header {
-  img {
-    border-radius: 50%;
+  background: #5F249F;
+  h1 {
+      color: #F9F048;
   }
-  p {
-    text-align: center;
-  }
-  p.view {
-    text-align: left;
-  }
+}
+  
+#banner {
+  background: #000000;      
 }
