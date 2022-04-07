@@ -3,13 +3,18 @@
 
 @import 'jekyll-theme-leap-day';
 
-header {
-  background: #5F249F;
-  h1 {
-      color: #F9F048;
-  }
+body {
+    font: unset;
+    color: #000000;
 }
-  
-#banner {
-  background: #000000;      
+
+header {   
+    background: #5F249F; 
+    h1 {
+        color: #F9F048;
+    }
+}
+
+#banner { 
+    background: #000000;
 }
