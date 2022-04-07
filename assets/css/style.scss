@@ -11,7 +11,8 @@ header {
 }
 
 #banner { 
-    image: unset;
     background: #63666A;
     border: #000000;
 }
+
+#page-header #banner-area-wrapper #banner-area {display:none;}
