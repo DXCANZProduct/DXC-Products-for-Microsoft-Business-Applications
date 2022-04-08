@@ -81,5 +81,5 @@ A new template can be created by copying all configuration for the selected temp
 |:---|:---|     
 |  **Template  name**  | Identifier for the template, used to determine its purpose. | 
 |  **Template type**  | The action that will be taken when the template is used. | 
-|  **Status**  | The item status that will be applied to items on use of the template. Update of the item status is also controlled by [workflow](Item_creation_workflows) configuration. | 
+|  **Status**  | The item status that will be applied to items on use of the template. Update of the item status is also controlled by [workflow](Item-creation-workflows) configuration. | 
 |  **Only current version**  | Determines if all versions from the selected template are copied into the new template, or only the current version. | 
