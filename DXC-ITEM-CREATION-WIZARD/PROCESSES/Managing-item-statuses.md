@@ -31,9 +31,9 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ## Updating using a creation template
 
-A status value can be assigned to an [item creation template](Item_Creation_Templates). Use of this template to create, release or update an item will apply the template status to the released product where the Change item status element has been included in the approval [workflow](Item_creation_workflows).
+A status value can be assigned to an [item creation template](Item-Creation-Templates). Use of this template to create, release or update an item will apply the template status to the released product where the Change item status element has been included in the approval [workflow](Item-creation-workflows).
 
-Where no item status exists on a released product and the template does not have a value defined, the default value set in the [parameters](Item_creation_workflows) form will be used.
+Where no item status exists on a released product and the template does not have a value defined, the default value set in the [parameters](Item-creation-workflows) form will be used.
 
 ## Updating a single item
 
@@ -66,7 +66,7 @@ A periodic job is available that can update the item status with a specified eff
 
 ## Updating based on stock on hand rules
 
-[Automatic status change rules](Automatic_status_change_rules) can be setup to update the item status based on certain events. For example, a status that indicates a low level of inventory can be updated to a discontinued status once the stock on hand becomes zero. The periodic job can be accessed from **Item creation > Periodic tasks > Item status > Automatic status update**.
+[Automatic status change rules](Automatic-status-change-rules) can be setup to update the item status based on certain events. For example, a status that indicates a low level of inventory can be updated to a discontinued status once the stock on hand becomes zero. The periodic job can be accessed from **Item creation > Periodic tasks > Item status > Automatic status update**.
 
 #### Automatic status update
 1.	Using the filter, select the *status* being updated from and the *event* being used
