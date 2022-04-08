@@ -37,9 +37,9 @@ Release templates can be initiated from the All creation items form by selecting
 2.	Select *Template name* with a template type of *release to a new company*.
 3.	Select the *Item number* the update will be applied to.
 3.	Click *OK* to open the *Designer* form.
-4.	Complete the fields as per your [templates](Item_creation_templates) requirements.
+4.	Complete the fields as per your [templates](Item-creation-templates) requirements.
 5.	Click *Validate* to confirm fields and display the workflow menu.
-6.	Under workflow, click *Submit* to commence the [Item creation workflow](Item_creation_workflows).       
+6.	Under workflow, click *Submit* to commence the [Item creation workflow](Item-creation-workflows).       
 7.	If this is the **last Step**  it will either update the released product or request an Approval. This will be determined by the workflow configuration.
 
 If there are **more Steps**  to complete then the next user(s) will need to complete their Steps.  Normally your workflow will be configured to email them or send them an alert to advise that there is a workflow action for them to attend to.  To complete their step, they must: 
