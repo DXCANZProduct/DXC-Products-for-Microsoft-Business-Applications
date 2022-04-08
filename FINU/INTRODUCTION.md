@@ -17,14 +17,14 @@ ms.technology:
 audience: [Application User]
 # ms.devlang: 
 ms.reviewer: [jdutoit2]
-ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core-Dynamics-AX-CP-requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions-list-for-docs-topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global]
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: [helenho]
 ms.search.validFrom: [September 2017]
-ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core-Dynamics-AX-CP-requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions-list-for-docs-topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
 # Introduction to DXC Finance Utilities
@@ -65,7 +65,7 @@ Matching rules can be executed either during or after the import, to automatical
 Finance utilities minimises the manual actions required for reconciling bank account statement(s) with bank transactions processed in Dynamics 365FO. 
 
 <ins> **Setup** </ins>
-- [Financial utilities parameters](Setup/CASH-AND-BANK%20MANAGEMENT/Finance-utilities-parameters.md)
+- [Financial utilities parameters](Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters.md)
 - [Bank statement format](Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-format.md)
 - [Populate accounts payable document number](Setup/CASH-AND-BANK-MANAGEMENT/Populate-account-payable-payment-document-number.md)
 - [Bank reconciliation matching rules](Setup/CASH-AND%-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md)
@@ -80,8 +80,8 @@ Finance utilities minimises the manual actions required for reconciling bank acc
 
 The Sundry Payment modification gives the user the ability to enter a supplier name and address on an individual invoice allowing these details to be used on a cheque payments, as well as one-off BSB and Account Number for EFT Payments. Therefore, many one- time vendor invoices can be stored on one sundry vendor record but allowing for separate payments without a change to the vendor record information.  This also makes it possible to pay all sundry invoices in one payment proposal.
 
-- [Sundry setup](Setup/ACCOUNTS%20PAYABLE/Sundry%20payment.md)
-- [Sundry processing](Processing/Accounts%20Payable/Sundry%20payment.md)
+- [Sundry setup](Setup/ACCOUNTS-PAYABLE/Sundry-payment.md)
+- [Sundry processing](Processing/Accounts-Payable/Sundry-payment.md)
 
 ## Accounts Payable - BPAY
 
@@ -91,48 +91,48 @@ When invoice transactions are created for vendors with a BPAY method of payment,
 
 Within the Vendor payment proposal, grouping also occurs for the new BPAY field.
 
-- [BPAY setup](Setup/ACCOUNTS%20PAYABLE/BPAY%20payment.md)
-- [BPAY processing](Processing/Accounts%20Payable/BPAY%20payment.md)
+- [BPAY setup](Setup/ACCOUNTS-PAYABLE/BPAY-payment.md)
+- [BPAY processing](Processing/Accounts-Payable/BPAY-payment.md)
 
 ## Accounts Payable - Payment advice report
 
 A custom-built report has been developed to provide a Payment advice to vendors upon processing an EFT payment run. The report will show the vendor bank account details where the payment is deposited as well as the invoice numbers paid, what amount and what discount applied. This remittance advice report works in conjunction with the Smart Send function.
 
-- [Vendor payments setup](Setup/ACCOUNTS%20PAYABLE/Vendor%20payments.md)
+- [Vendor payments setup](Setup/ACCOUNTS-PAYABLE/Vendor-payments.md)
 
 ## Accounts Payable - Vendor bank account changes workflow
 
 Finance utilities have added additional fields to Vendor approval on the **Accounts payable parameters**. This provides companies the option to submit changes to these fields to the standard vendor approval workflow.
-- [Vendor bank account changes worklow setup](Setup/ACCOUNTS%20PAYABLE/Vendor%20bank%20account%20changes%20workflow.md)
+- [Vendor bank account changes worklow setup](Setup/ACCOUNTS-PAYABLE/Vendor-bank-account-changes-workflow.md)
 
 ## Accounts Payable - Save electronic reporting file to secure location
 
 Modification allows users to automatically save the electronic reporting file to a secure location like ftp, ftps, sftp or azure blob.
-- [Save electronic reporting file to secure location setup](Setup/ACCOUNTS%20PAYABLE/Save%20electronic%20reporting%20file%20to%20secure%20location.md)
-- [Save electronic reporting file to secure location processing](Processing/Accounts%20Payable/Save%20electronic%20reporting%20file%20to%20secure%20location.md)
+- [Save electronic reporting file to secure location setup](Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md)
+- [Save electronic reporting file to secure location processing](Processing/Accounts-Payable/Save-electronic-reporting-file-to-secure-location.md)
 
 ## ABN lookup and validation
 > Note: Only applicable to Australia. 
 
 Where the company has registered to use ABN lookup Web API and the legal entity setup in D365, it is possible to lookup and validate customer and vendor’s ABN in D365.
-- [ABN lookup and validation setup](Setup/ABN/ABN%20lookup%20and%20validation.md)
-- [ABN lookup and validation processing](Processing/ABN/ABN%20lookup%20and%20validation.md)
+- [ABN lookup and validation setup](Setup/ABN/ABN-lookup-and-validation.md)
+- [ABN lookup and validation processing](Processing/ABN/ABN-lookup-and-validation.md)
 
 ## Budget import
 
 Ability to import budget file with monthly columns.
 The modification gives the user the ability to set the budget import file's format and financial dimensions included in the file.
 
-- [Budget import setup](Setup/BUDGETING/Budget%20import.md)
-- [Budget import processing](Processing/Budgeting/Budget%20import.md)
-- [Example file format](Processing/Budgeting/Example%20file%20format.md)
+- [Budget import setup](Setup/BUDGETING/Budget-import.md)
+- [Budget import processing](Processing/Budgeting/Budget-import.md)
+- [Example file format](Processing/Budgeting/Example-file-format.md)
 
 ## Other
 
 Finance utilities include data entities to support its enhancements to D365.
 The data entities include Finance utilities tables and also enhances existing standard entities.
 
-- [Data entities](Setup/Data%20entities.md)
+- [Data entities](Setup/Data-entities.md)
 
 See our FAQ for general information and troubleshooting.
 
