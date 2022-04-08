@@ -65,16 +65,16 @@ Matching rules can be executed either during or after the import, to automatical
 Finance utilities minimises the manual actions required for reconciling bank account statement(s) with bank transactions processed in Dynamics 365FO. 
 
 <ins> **Setup** </ins>
-- [Financial utilities parameters](Setup/CASH%20AND%20BANK%20MANAGEMENT/Finance%20utilities%20parameters.md)
-- [Bank statement format](Setup/CASH%20AND%20BANK%20MANAGEMENT/Bank%20statement%20format.md)
-- [Populate accounts payable document number](Setup/CASH%20AND%20BANK%20MANAGEMENT/Populate%20account%20payable%20payment%20document%20number.md)
-- [Bank reconciliation matching rules](Setup/CASH%20AND%20BANK%20MANAGEMENT/Bank%20reconciliation%20matching%20rules.md)
-- [Customer payment and settle of one invoice via bank reconciliation](Setup/CASH%20AND%20BANK%20MANAGEMENT/Bank%20reconciliation%20matching%20rules.md#customer-payment-and-settle-of-invoice-11)
+- [Financial utilities parameters](Setup/CASH-AND-BANK%20MANAGEMENT/Finance-utilities-parameters.md)
+- [Bank statement format](Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-format.md)
+- [Populate accounts payable document number](Setup/CASH-AND-BANK-MANAGEMENT/Populate-account-payable-payment-document-number.md)
+- [Bank reconciliation matching rules](Setup/CASH-AND%-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md)
+- [Customer payment and settle of one invoice via bank reconciliation](Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md#customer-payment-and-settle-of-invoice-11)
 
 <ins> **Processing** </ins>
-- [Bank statement import](Processing/Bank%20Statement%20Reconciliation/Bank%20statement%20import.md)
-- [Bank reconciliation worksheet](Processing/Bank%20Statement%20Reconciliation/Bank%20reconciliation%20worksheet.md)
-- [Reports](Processing/Bank%20Statement%20Reconciliation/Cash%20and%20bank%20management%20reports.md)
+- [Bank statement import](Processing/Bank-Statement%-Reconciliation/Bank-statement-import.md)
+- [Bank reconciliation worksheet](Processing/Bank-Statement-Reconciliation/Bank-reconciliation-worksheet.md)
+- [Reports](Processing/Bank-Statement-Reconciliation/Cash-and-bank-management-reports.md)
 
 ## Accounts Payable - Sundry
 
