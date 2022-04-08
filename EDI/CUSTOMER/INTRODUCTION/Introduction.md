@@ -61,7 +61,7 @@ Core setup is discussed in detail [here](../../CORE/Introduction/Introduction.md
 	- [Hold codes](../SETUP/CUSTOMER-SETUP/Hold-codes.md)
 
 #### Assigned on items:
-- Required where the confirmed pack sizes within the Customer purchase order acknowledgement is set to use System pack and/or System inner. Setup at **Product information management > Products > Released products and selecting FastTab Manage inventory**
+- Required where the confirmed pack sizes within the Customer purchase order acknowledgement is set to use System pack and/or System inner. Setup at **Product information management > Products > Released products** and selecting FastTab Manage inventory.
 	- [Item pack sizes](../../CORE/Setup/Item-pack-sizes.md)
 
 #### Assigned on warehouses:
