@@ -5,7 +5,7 @@ title: [Forex contract]
 description: [Introduction to Forex contract]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 2/02/2022
+ms.date: 08/04/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,22 +20,38 @@ ms.reviewer: [jdutoit2]
 ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: [Global]
+ms.search.region: [Global for most topics. Set Country/Region name for localizations]
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: [jdutoit2]
-ms.search.validFrom: [September 2017]
+ms.author: [author's Microsoft alias]
+ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Introduction
+# Introduction to DXC Forex contract
 
-## Expand your business efficiency with DXC Electronic Data Interchange for Microsoft Dynamics 365
+The Forex contract module is designed to allocate Forex contracts to purchase orders and invoice journals. <br>
+The amounts in inventory/vendor accounts will be calculated based on the attached Forex contract forward rate.
 
-EDI is a well-proven business tool for lowering costs, improving business efficiency, speed and accuracy. DXC EDI enables companies to easily setup, send/receive and manage messages with their EDI trading partners, all within Microsoft Dynamics 365 for Operations.
+#  Scenarios
+Goods are imported from another country by the company. Payment in foreign currency is going to be made in a certain period. <br>
+To hedge the exchange rate risk, the company enters into a contract with bank to purchase the foreign currency at a certain exchange rate on the payment due date. <br>
+The contract between the company and the bank is called a Forex contract.
 
-Powerful functionality extends Microsoft Dynamics 365:
-- Receive EDI communications from Customer, 3PL warehouse, Vendor and/or Landed cost Freight Forwarder trading partners and create/update D365 transactions
-- Process D365 transaction and send EDI documents to Customer, Vendor and/or 3PL warehouse Trading partners
-- Trading partners are created and managed within D365 and linked to valid customers, warehouses or vendors easily within D365
-- Effortlessly navigate from EDI incoming and outgoing files to applicable D365 transaction
+<ins> **Setup** </ins>
+- [Financial utilities parameters](Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters.md)
+
+
+<ins> **Processing** </ins>
+- [Bank statement import](Processing/Bank-Statement%-Reconciliation/Bank-statement-import.md)
+
+
+## Other
+
+Forex contract include data entities to support its enhancements to D365.
+
+- [Data entities](Setup/Data-entities.md)
+
+See our FAQ for general information and troubleshooting.
+
+- [FAQ](FAQ.md)
 
