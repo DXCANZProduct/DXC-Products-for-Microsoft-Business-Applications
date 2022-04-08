@@ -40,8 +40,8 @@ Powerful functionality extends Microsoft Dynamics 365:
 - Effortlessly navigate from EDI incoming and outgoing files to applicable D365 transaction
 
 Topics: <br>
-##[EDI Core](../EDI/CORE/Introduction/Introduction.md) <br>
-##[EDI Customer module](../EDI/CUSTOMER/INTRODUCTION/Introduction.md) <br>
-##[EDI Vendor module](../EDI/VENDOR/INTRODUCTION/Introduction.md) <br>
-##[EDI 3PL module](../EDI/3PL/INTRODUCTION/Introduction.md) <br>
-##[EDI Freight forwarder for Landed cost](../EDI/FREIGHT-FORWARDER/INTRODUCTION/Introduction.md) <br>
+## [EDI Core](../EDI/CORE/Introduction/Introduction.md) <br>
+## [EDI Customer module](../EDI/CUSTOMER/INTRODUCTION/Introduction.md) <br>
+## [EDI Vendor module](../EDI/VENDOR/INTRODUCTION/Introduction.md) <br>
+## [EDI 3PL module](../EDI/3PL/INTRODUCTION/Introduction.md) <br>
+## [EDI Freight forwarder for Landed cost](../EDI/FREIGHT-FORWARDER/INTRODUCTION/Introduction.md) <br>
