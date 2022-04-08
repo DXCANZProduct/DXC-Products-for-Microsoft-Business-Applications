@@ -37,4 +37,4 @@ Automatic status change rules can be configured to trigger the update of a statu
 |  **Event**  | Inventory event required to trigger status change. | 
 |  **New status**  | Status the item will be updated to. | 
 
-For details on updating an item status using the Automatic status change rule see [managing item statuses](Managing_item_statuses).
+For details on updating an item status using the Automatic status change rule see [managing item statuses](Managing-item-statuses).
