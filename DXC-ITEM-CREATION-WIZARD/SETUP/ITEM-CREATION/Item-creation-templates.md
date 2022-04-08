@@ -160,7 +160,7 @@ Each field included in the template represents a field All tables and fields ava
 
 |  **Field**  | **Description** | 
 |:---|:---|     
-|  **Tab**  | The fast tab the field will be included in when using the designer. See [Item creation template tabs](Item_creation_template_tabs). |  
+|  **Tab**  | The fast tab the field will be included in when using the designer. See [Item creation template tabs](Item-creation-template-tabs). |  
 |  **Position**  | The order fields will appear within the tab. |  
 |  **Table name**  | The table name where the field being populated or updated resides. |  
 |  **Field label**  | The field being populated or updated. |  
