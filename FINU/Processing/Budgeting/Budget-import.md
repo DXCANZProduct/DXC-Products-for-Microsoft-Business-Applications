@@ -34,7 +34,7 @@ The following subsections describe the processing requirement for the additional
 Finance utilities includes the ability to import a csv budget file with monthly columns.
 
 ## Example file format
-See [Example file format](Example%20file%20format.md) for example file.
+See [Example file format](Example-file-format.md) for example file.
 
 ### Setup budget import
 Setup requirements are discussed in detail at [Budget import setup](../../Setup/BUDGETING/Budget-import.md). <br>
