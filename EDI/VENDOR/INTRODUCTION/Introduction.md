@@ -59,93 +59,93 @@ Core setup is discussed in detail [here](../../CORE/Introduction/Introduction.md
 
 #### Assigned on items:
 - Required where the confirmed pack sizes within the Vendor purchase order acknowledgement is set to use System pack and/or System inner. Setup at **Product information management > Products > Released products and selecting FastTab Manage inventory**
-	- [Item pack sizes](../../CORE/Setup/Item%20pack%20sizes.md)
+	- [Item pack sizes](../../CORE/Setup/Item-pack-sizes.md)
 
 #### Mappings assigned on Vendor Trading partner
 Used to map D365/EDI value to Vendor's value and assigned on Vendor Trading partner: <br>
 
 - Vendor setup and which EDI document (and field) it is mapped to/from: **EDI > Setup > Vendor setup** <br>
-	- [Order type group](../SETUP/VENDOR%20SETUP/Order%20type%20group.md)
+	- [Order type group](../SETUP/VENDOR-SETUP/Order-type-group.md)
 		- Vendor purchase order (OrderType)
 		- Vendor purchase order change (OrderType)
-	- [Order purpose group](../SETUP/VENDOR%20SETUP/Order%20purpose%20group.md)
+	- [Order purpose group](../SETUP/VENDOR-SETUP/Order-purpose-group.md)
 		- Vendor purchase order (OrderPurpose)
 		- Vendor purchase order change (OrderPurpose)
-	- [Order line change type group](../SETUP/VENDOR%20SETUP/Order%20line%20change%20type%20group.md)
+	- [Order line change type group](../SETUP/VENDOR-SETUP/Order-line-change-type-group.md)
 		- Vendor purchase order change (LineChangeType)
-	- [Carrier mode](../SETUP/VENDOR%20SETUP/Carrier%20mode.md)
+	- [Carrier mode](../SETUP/VENDOR-SETUP/Carrier-mode.md)
 		- Vendor purchase order (CarrierMode)
 		- Vendor purchase order change (CarrierMode)
-	- [Charges code](../SETUP/VENDOR%20SETUP/Charges%20code.md)
+	- [Charges code](../SETUP/VENDOR-SETUP/Charges-code.md)
 		- Vendor purchase order (MiscCode)
 		- Vendor purchase order change (MiscCode)
 		- Purchase invoice (MiscCode)
-	- [POA response code group](../SETUP/VENDOR%20SETUP/POA%20response%20code%20group.md)
+	- [POA response code group](../SETUP/VENDOR-SETUP/POA-response-code-group.md)
 		- Vendor purchase order acknowledgement (POAVendCode, POAVendCodeItem and POAVendCodeShipment)
-	- [Payment terms type group](../SETUP/VENDOR%20SETUP/Payment%20terms%20type%20group.md)
+	- [Payment terms type group](../SETUP/VENDOR-SETUP/Payment-terms-type-group.md)
 		- Vendor purchase order (TermsTypeCode) 
 		- Vendor purchase order change (TermsTypeCode)
 		- Purchase invoice (TermsTypeCode)
-	- [Misc charge/allowance indicator](../SETUP/VENDOR%20SETUP/Misc%20charge%20allowance%20indicator.md)
+	- [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator.md)
 		- Vendor purchase order (MiscIndicator) 
 		- Vendor purchase order change (MiscIndicator)
 		- Purchase invoice (MiscIndicator)
-	- [Misc method of handling](../SETUP/VENDOR%20SETUP/Misc%20method%20of%20handling.md)
+	- [Misc method of handling](../SETUP/VENDOR-SETUP/Misc-method-of-handling.md)
 		- Purchase invoice (MiscMethodHandling)
 
 - Core Setup: **EDI > Setup** <br>
-	- [Unit of measure mapping](../../CORE/Setup/UOM%20mapping.md)
+	- [Unit of measure mapping](../../CORE/Setup/UOM-mapping.md)
 
 #### Vendor Document type setup
 Setup Document types which will be assigned on Vendor Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Document types**
 
-- [File templates](../../CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
+- [File templates](../../CORE/Setup/DocumentTypes/File-templates.md): applicable to all document types
 - Setting profiles: applicable to the following document types
-    - [Vendor purchase order](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order.md)
-    - [Vendor purchase order change](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20change.md)
-    - [Vendor purchase order acknowledgement](../SETUP/SETTING%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md)
-    - [Vendor advanced shipping notice](../SETUP/SETTING%20PROFILES/Vendor%20advanced%20shipping%20notice.md)
-    - [Purchase invoice](../SETUP/SETTING%20PROFILES/Purchase%20invoice.md)
+    - [Vendor purchase order](../SETUP/SETTING-PROFILES/Vendor-purchase-order.md)
+    - [Vendor purchase order change](../SETUP/SETTING-PROFILES/Vendor-purchase-order-change.md)
+    - [Vendor purchase order acknowledgement](../SETUP/SETTING-PROFILES/Vendor-purchase-order-acknowledgement.md)
+    - [Vendor advanced shipping notice](../SETUP/SETTING-PROFILES/Vendor-advanced-shipping-notice.md)
+    - [Purchase invoice](../SETUP/SETTING-PROFILES/Purchase-invoice.md)
 - Validation profiles: applicable to the following inbound document types
-    - [Vendor purchase order acknowledgement](../SETUP/VALIDATION%20PROFILES/Vendor%20purchase%20order%20acknowledgement.md)
-    - [Vendor advanced shipping notice](../SETUP/VALIDATION%20PROFILES/Vendor%20advanced%20shipping%20notice.md)
-    - [Purchase invoice](../SETUP/VALIDATION%20PROFILES/Purchase%20invoice.md)
-- [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
-- [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
+    - [Vendor purchase order acknowledgement](../SETUP/VALIDATION-PROFILES/Vendor-purchase-order-acknowledgement.md)
+    - [Vendor advanced shipping notice](../SETUP/VALIDATION-PROFILES/Vendor-advanced-shipping-notice.md)
+    - [Purchase invoice](../SETUP/VALIDATION-PROFILES/Purchase-invoice.md)
+- [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames.md): applicable to all outbound document types
+- [Field metadata](../../CORE/Setup/DocumentTypes/Field-metadata.md): optionally update staging form's display name and help text per field
 
 #### Trading partner setup
 Create new trading partners and assign setup and incoming/outgoing documents. <br>
 Users can access the form by navigating to **EDI > Setup > Trading partners**
-- [Trading partner](../SETUP/Trading%20partner.md)
+- [Trading partner](../SETUP/Trading-partner.md)
 
 ## Processing
 
 ### Import files
 Ability to manually import or review inbound files
-- [Inbound files](../../CORE/Managing%20files/Inbound%20files.md)
+- [Inbound files](../../CORE/Managing-files/Inbound-files.md)
 
 ### Export files
 Ability to manually export or review outbound files
-- [Outbound files](../../CORE/Managing%20files/Outbound%20files.md)
+- [Outbound files](../../CORE/Managing-files/Outbound-files.md)
 
 ### Vendor documents
 Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents > Vendor documents**
-- [Vendor purchase order](../DOCUMENTS/Vendor%20purchase%20order.md)
-- [Vendor purchase order change](../DOCUMENTS/Vendor%20purchase%20order%20change.md)
-- [Vendor purchase order acknowledgement](../DOCUMENTS/Vendor%20purchase%20order%20acknowledgement.md)
-- [Vendor advanced shipping notice](../DOCUMENTS/Vendor%20advanced%20shipping%20notice.md)
-- [Purchase invoice](../DOCUMENTS/Purchase%20invoice.md)
+- [Vendor purchase order](../DOCUMENTS/Vendor-purchase-order.md)
+- [Vendor purchase order change](../DOCUMENTS/Vendor-purchase-order-change.md)
+- [Vendor purchase order acknowledgement](../DOCUMENTS/Vendor-purchase-order-acknowledgement.md)
+- [Vendor advanced shipping notice](../DOCUMENTS/Vendor-advanced-shipping-notice.md)
+- [Purchase invoice](../DOCUMENTS/Purchase-invoice.md)
 
-[Process overview](Process%20overview.md) for Vendor EDI documents.
+[Process overview](Process-overview.md) for Vendor EDI documents.
 
 ### Workspaces
 The following workspaces are available:
-- [EDI Document maintenance](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md)
-- [EDI Purchase order processing](../WORKSPACES/EDI%20Purchase%20order%20processing.md)
+- [EDI Document maintenance](../../CORE/WORKSPACES/EDI-Document-maintenance-workspace.md)
+- [EDI Purchase order processing](../WORKSPACES/EDI-Purchase-order-processing.md)
 
 ## Other
-- [Data entities](../OTHER/Data%20entities.md)
-- [Security configuration](../../CORE/OTHER/Security%20configuration.md)
+- [Data entities](../OTHER/Data-entities.md)
+- [Security configuration](../../CORE/OTHER/Security-configuration.md)
 - [Frequently asked questions](../OTHER/FAQ.md)

@@ -54,63 +54,63 @@ Core setup is discussed in detail [here](../../CORE/Introduction/Introduction.md
 
 #### Mappings assigned on Freight forwarder landed cost Trading partner
 Freight forwarder setup and which EDI document (and field) it is mapped to/from: **EDI > Setup > Freight forwarder landed cost setup** <br>
-- [Shipping port mapping](../SETUP/FF%20SETUP/Shipping%20port%20mapping.md)
+- [Shipping port mapping](../SETUP/FF-SETUP/Shipping-port-mapping.md)
 	- Voyage creator (ShipFromPort)
 	- Voyage creator (ShipToPort)
 	- Voyage tracking (Port)
-- [Modes of delivery mapping](../SETUP/FF%20SETUP/Modes%20of%20delivery%20mapping.md)
+- [Modes of delivery mapping](../SETUP/FF-SETUP/Modes-of-delivery-mapping.md)
 	- Voyage creator (DlvModeId)
 	- Voyage tracking (DlvModeId)
-- [Customs broker mapping](../SETUP/FF%20SETUP/Customs%20broker%20mapping.md)
+- [Customs broker mapping](../SETUP/FF-SETUP/Customs-broker-mapping.md)
 	- Voyage creator (ShipCustomsBroker)
-- [Shipping container types mapping](../SETUP/FF%20SETUP/Shipping%20container%20types%20mapping.md)
+- [Shipping container types mapping](../SETUP/FF-SETUP/Shipping-container-types-mapping.md)
 	- Voyage creator (ShipContainerTypeId) 
-- [Activity mapping](../SETUP/FF%20SETUP/Activity%20mapping.md)
+- [Activity mapping](../SETUP/FF-SETUP/Activity-mapping.md)
 	- Voyage tracking (Activity) 
-- [Shipping port qualifier mapping](../SETUP/FF%20SETUP/Shipping%20port%20qualifier%20mapping.md)
+- [Shipping port qualifier mapping](../SETUP/FF-SETUP/Shipping-port-qualifier-mapping.md)
 	- Voyage tracking (PortQualifier)
-- [Shipping measurement unit mapping](../SETUP/FF%20SETUP/Shipping%20measurement%20unit%20mapping.md)
+- [Shipping measurement unit mapping](../SETUP/FF-SETUP/Shipping-measurement-unit-mapping.md)
 	- Voyage creator (ShipMeasurementUnitExternal) 
 	- Voyage creator (ShipLineMeasurementUnitExternal)
 
 Core Setup: **EDI > Setup** <br>
-- [Unit of measure mapping](../../CORE/Setup/UOM%20mapping.md)
+- [Unit of measure mapping](../../CORE/Setup/UOM-mapping.md)
 	- Voyage creator (UnitId)
 
 #### Freight forwarder Document type setup
 Setup Document types which will be assigned on Freight forwarder landed cost Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Document types**
 
-- [File templates](../../CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
+- [File templates](../../CORE/Setup/DocumentTypes/File-templates.md): applicable to all document types
 - Setting profiles: applicable to the following document types
-    - [Voyage creator](../SETUP/SETTING%20PROFILES/Voyage%20creator.md)
-    - [Voyage tracking](../SETUP/SETTING%20PROFILES/Voyage%20tracking.md)
-- [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
+    - [Voyage creator](../SETUP/SETTING-PROFILES/Voyage-creator.md)
+    - [Voyage tracking](../SETUP/SETTING-PROFILES/Voyage-tracking.md)
+- [Field metadata](../../CORE/Setup/DocumentTypes/Field-metadata.md): optionally update staging form's display name and help text per field
 
 #### Trading partner setup
 Create new trading partners and assign setup and incoming/outgoing documents. <br>
 Users can access the form by navigating to **EDI > Setup > Trading partners**
-- [Trading partner](../SETUP/Trading%20partner.md)
+- [Trading partner](../SETUP/Trading-partner.md)
 
 ## Processing
 
 ### Import files
 Ability to manually import or review inbound files
-- [Inbound files](../../CORE/Managing%20files/Inbound%20files.md)
+- [Inbound files](../../CORE/Managing-files/Inbound-files.md)
 
 ### Freight forwarder documents
 Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents > Freight forwarder landed cost documents**
-- [Voyage creator](../DOCUMENTS/Voyage%20creator.md)
-- [Voyage tracking](../DOCUMENTS/Voyage%20tracking.md)
+- [Voyage creator](../DOCUMENTS/Voyage-creator.md)
+- [Voyage tracking](../DOCUMENTS/Voyage-tracking.md)
 
-[Process overview](Process%20overview.md) for Freight forwarder EDI documents.
+[Process overview](Process-overview.md) for Freight forwarder EDI documents.
 
 ### Workspaces
 The following workspaces are available:
-- [EDI Document maintenance](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md) - Manage file import and staging record errors. These records have not been successfully processed to a target D365 document
+- [EDI Document maintenance](../../CORE/WORKSPACES/EDI-Document-maintenance-workspace.md) - Manage file import and staging record errors. These records have not been successfully processed to a target D365 document
 
 ## Other
-- [Data entities](../OTHER/Data%20entities.md)
-- [Security configuration](../../CORE/OTHER/Security%20configuration.md)
+- [Data entities](../OTHER/Data-entities.md)
+- [Security configuration](../../CORE/OTHER/Security-configuration.md)
 - [Frequently asked questions](../OTHER/FAQ.md) - Includes example errors and recommended fixes

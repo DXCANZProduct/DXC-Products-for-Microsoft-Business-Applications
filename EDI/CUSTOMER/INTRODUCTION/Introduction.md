@@ -58,11 +58,11 @@ Core setup is discussed in detail [here](../../CORE/Introduction/Introduction.md
 
 #### Assigned on EDI parameters:
 - Sales and marketing setup: **Sales and marketing > Setup > Sales orders > Order hold codes**<br>
-	- [Hold codes](../SETUP/CUSTOMER%20SETUP/Hold%20codes.md)
+	- [Hold codes](../SETUP/CUSTOMER-SETUP/Hold-codes.md)
 
 #### Assigned on items:
 - Required where the confirmed pack sizes within the Customer purchase order acknowledgement is set to use System pack and/or System inner. Setup at **Product information management > Products > Released products and selecting FastTab Manage inventory**
-	- [Item pack sizes](../../CORE/Setup/Item%20pack%20sizes.md)
+	- [Item pack sizes](../../CORE/Setup/Item-pack-sizes.md)
 
 #### Assigned on warehouses:
 - Required where advanced shipping notice (ASN) will be sent to EDI customers and determines what information will be used when creating the ASN: 
@@ -72,72 +72,72 @@ Core setup is discussed in detail [here](../../CORE/Introduction/Introduction.md
 Used to map D365/EDI value to Customer's value and assigned on Customer Trading partner: <br>
 
 - Customer setup and which EDI document (and field) it is mapped to/from: **EDI > Setup > Customer setup** <br>
-	- [Purchase order types](../SETUP/CUSTOMER%20SETUP/Purchase%20order%20types.md)
+	- [Purchase order types](../SETUP/CUSTOMER-SETUP/Purchase-order-types.md)
 		- Customer purchase order (OrderType)
-	- [Order purpose group](../SETUP/CUSTOMER%20SETUP/Order%20purpose%20group.md)
+	- [Order purpose group](../SETUP/CUSTOMER-SETUP/Order-purpose-group.md)
 		- Customer purchase order (OrderPurpose)
 		- Customer purchase order change (OrderPurpose)
-	- [POA response code group](../SETUP/CUSTOMER%20SETUP/POA%20response%20code%20group.md)
+	- [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md)
 		- Customer purchase order acknowledgement (POACustCode) 
 		- Customer purchase order acknowledgement (POACustCodeItem)
 		- Customer purchase order acknowledgement (POACustCodeShipment)
-	- [Order line change type group](..SETUP/CUSTOMER%20SETUP/Order%20line%20change%20type%20group.md)
+	- [Order line change type group](..SETUP/CUSTOMER-SETUP/Order-line-change-type-group.md)
 		- Customer purchase order change (ChangeTypeValue)
 
 - Core Setup: **EDI > Setup** <br>
-	- [Unit of measure mapping](../../CORE/Setup/UOM%20mapping.md)
+	- [Unit of measure mapping](../../CORE/Setup/UOM-mapping.md)
 
 #### Customer Document type setup
 Setup Document types which will be assigned on Customer Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Document types**
 
-- [File templates](../../CORE/Setup/DocumentTypes/File%20templates.md): applicable to all document types
+- [File templates](../../CORE/Setup/DocumentTypes/File-templates.md): applicable to all document types
 - Setting profiles: applicable to the following document types
-    - [Customer purchase order](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order.md)
-    - [Customer purchase order change](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20change.md)
-    - [Customer purchase order acknowledgement](../SETUP/SETTING%20PROFILES/Customer%20purchase%20order%20acknowledgement.md)
-    - [Customer advanced shipping notice](../SETUP/SETTING%20PROFILES/Customer%20advanced%20shipping%20notice.md)
-    - [Sales invoice](../SETUP/SETTING%20PROFILES/Sales%20invoice.md)
+    - [Customer purchase order](../SETUP/SETTING-PROFILES/Customer-purchase-order.md)
+    - [Customer purchase order change](../SETUP/SETTING-PROFILES/Customer-purchase-order-change.md)
+    - [Customer purchase order acknowledgement](../SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement.md)
+    - [Customer advanced shipping notice](../SETUP/SETTING-PROFILES/Customer-advanced-shipping-notice.md)
+    - [Sales invoice](../SETUP/SETTING-PROFILES/Sales-invoice.md)
 - Validation profiles: applicable to the following inbound document types
-    - [Customer purchase order](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order.md)
-    - [Customer purchase order change](../SETUP/VALIDATION%20PROFILES/Customer%20purchase%20order%20change.md)
-- [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound%20filenames.md): applicable to all outbound document types
-- [Field metadata](../../CORE/Setup/DocumentTypes/Field%20metadata.md): optionally update staging form's display name and help text per field
+    - [Customer purchase order](../SETUP/VALIDATION-PROFILES/Customer-purchase-order.md)
+    - [Customer purchase order change](../SETUP/VALIDATION-PROFILES/Customer-purchase-order-change.md)
+- [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames.md): applicable to all outbound document types
+- [Field metadata](../../CORE/Setup/DocumentTypes/Field-metadata.md): optionally update staging form's display name and help text per field
 
 #### Trading partner setup
 Create new trading partners and assign setup and incoming/outgoing documents. <br>
 Users can access the form by navigating to **EDI > Setup > Trading partners**
-- [Trading partner](../SETUP/Trading%20partner.md)
+- [Trading partner](../SETUP/Trading-partner.md)
 
 ## Processing
 
 ### Import files
 Ability to manually import or review inbound files
-- [Inbound files](../../CORE/Managing%20files/Inbound%20files.md)
+- [Inbound files](../../CORE/Managing-files/Inbound-files.md)
 
 ### Export files
 Ability to manually export or review outbound files
-- [Outbound files](../../CORE/Managing%20files/Outbound%20files.md)
+- [Outbound files](../../CORE/Managing-files/Outbound-files.md)
 
 ### Customer documents
 Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents > Customer documents**
-- [Customer purchase order](../DOCUMENTS/Customer%20purchase%20order.md)
-- [Customer purchase order change](../DOCUMENTS/Customer%20purchase%20order%20change.md)
-- [Customer purchase order acknowledgement](../DOCUMENTS/Customer%20purchase%20order%20acknowledgement.md)
-- [Customer advanced shipping notice](../DOCUMENTS/Customer%20advanced%20shipping%20notice.md)
-- [Sales invoice](../DOCUMENTS/Sales%20invoice.md)
+- [Customer purchase order](../DOCUMENTS/Customer-purchase-order.md)
+- [Customer purchase order change](../DOCUMENTS/Customer-purchase-order-change.md)
+- [Customer purchase order acknowledgement](../DOCUMENTS/Customer-purchase-order-acknowledgement.md)
+- [Customer advanced shipping notice](../DOCUMENTS/Customer-advanced-shipping-notice.md)
+- [Sales invoice](../DOCUMENTS/Sales-invoice.md)
 
 ### Review sales order
 The following section describes the additional EDI functionality on Sales orders.
-- [Review sales order](../DOCUMENTS/Review%20sales%20order.md)
+- [Review sales order](../DOCUMENTS/Review-sales-order.md)
 
 ### Workspaces
 The following workspaces are available:
-- [EDI Document maintenance](../../CORE/WORKSPACES/EDI%20Document%20maintenance%20workspace.md)
-- [EDI Sales order processing](../WORKSPACES/EDI%20Sales%20order%20processing.md)
+- [EDI Document maintenance](../../CORE/WORKSPACES/EDI-Document-maintenance-workspace.md)
+- [EDI Sales order processing](../WORKSPACES/EDI-Sales-order-processing.md)
 
 ## Other
-- [Data entities](../OTHER/Data%20entities.md)
-- [Security configuration](../../CORE/OTHER/Security%20configuration.md)
+- [Data entities](../OTHER/Data-entities.md)
+- [Security configuration](../../CORE/OTHER/Security-configuration.md)
 - [Frequently asked questions](../OTHER/FAQ.md)
