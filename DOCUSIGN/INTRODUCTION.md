@@ -46,7 +46,7 @@ The Docusign solution for D365 allows for seamless document signature capture de
 
 The following setup is available under **Organization administration > Setup > Docusign**:
 - [DocuSign parameters](SETUP/Parameters.md) - Configure connection setting for DocuSign and update frequency.
-- [Document types](SETUP/Document-types.md) - Set which document formats will use DocuSign
+- [Document types](SETUP/Document-type.md) - Set which document formats will use DocuSign
 - [Templates](SETUP/Template.md) - Set the signatory types, the sequence of the signatories, the tag types and their position on the document 
 - [Users](SETUP/Users.md) - Set the user accounts who are able to send using DocuSign
 
