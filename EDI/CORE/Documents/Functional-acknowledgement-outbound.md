@@ -30,19 +30,19 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Functional acknowledgement outbound
 
 When a Trading partner requires a Functional Acknowledgement for sent EDI files, the following is required:
-1.	Create document [Template](../Setup/DocumentTypes/File%20templates.md) for Functional acknowledgement outbound.
-2.	If required, create [Setting profile](../Setup/DocumentTypes/Setting%20profiles.md) for the Functional acknowledgement outbound. See below.
-3.	Add the Functional acknowledgement outbound document type to [Trading Partner’s](../Setup/Trading%20partners.md) Outgoing documents and Enable.
-4.	On each applicable incoming documents for the [Trading partner](../Setup/Trading%20partners.md), set **Acknowledgement** to _Yes_.
+1.	Create document [Template](../Setup/DocumentTypes/File-templates.md) for Functional acknowledgement outbound.
+2.	If required, create [Setting profile](../Setup/DocumentTypes/Setting-profiles.md) for the Functional acknowledgement outbound. See below.
+3.	Add the Functional acknowledgement outbound document type to [Trading Partner’s](../Setup/Trading-partners.md) Outgoing documents and Enable.
+4.	On each applicable incoming documents for the [Trading partner](../Setup/Trading-partners.md), set **Acknowledgement** to _Yes_.
 
 ## Setting profiles
 
 Users can access the form by navigating to **EDI > Setup > Document types** and filtering/selecting the **Functional acknowledgement outbound** document. <br>
-See [Setting profiles](../Setup/DocumentTypes/Setting%20profiles.md) for more details on how to create a Setting profile.
+See [Setting profiles](../Setup/DocumentTypes/Setting-profiles.md) for more details on how to create a Setting profile.
 
 **Field** 	                                | **Description**                     | **Options/example**
 :--------------------------------           |:------------------------------------|:------------------------------------
-**Document type mapping**                   | Assign applicable document type mapping to setting	| Mappings setup at [**EDI > Setup > Document type mapping**](../Setup/Document%20type%20mapping.md)
+**Document type mapping**                   | Assign applicable document type mapping to setting	| Mappings setup at [**EDI > Setup > Document type mapping**](../Setup/Document-type-mapping.md)
 
 ## View Staging table records
 
@@ -68,7 +68,7 @@ Use this form to review staging records and optionally manually process the stag
 **Trading partner GLN**           |	The trading partners’ global location number is shown here.
 **Company GLN**                   |	The company’s global location number is shown here.
 **Group control number**          |	Trading partner’s original document that is being acknowledged's group control number.
-**Document type**                 |	Trading partner’s original document type being acknowledged. [Document type mapping](../Setup/Document%20type%20mapping.md)
+**Document type**                 |	Trading partner’s original document type being acknowledged. [Document type mapping](../Setup/Document-type-mapping.md)
 **Created date and time**         |	The date and time the staging record was created.
 
 #### Buttons

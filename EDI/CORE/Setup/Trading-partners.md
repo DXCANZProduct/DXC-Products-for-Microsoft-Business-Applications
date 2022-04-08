@@ -35,15 +35,15 @@ A trading partner can be created based on an existing D365 entity like a warehou
 ## Prerequisites ##
 Below modules are determined by licensing and enabled features.
 - **Module setup/Mappings**: This can be assigned to the Trading partner to map Trading partner value to D365 value. 
-  - [Customer setup](../../CUSTOMER/SETUP/Customer%20setup.md)
-  - [Vendor setup](../../VENDOR/SETUP/Vendor%20setup.md)
-  - [3PL setup](../../3PL/SETUP/3PL%20setup.md)
-  - [Freight forwarder landed cost setup](../../FREIGHT%20FORWARDER/SETUP/Freight%20forwarder%20setup.md)
+  - [Customer setup](../../CUSTOMER/SETUP/Customer-setup.md)
+  - [Vendor setup](../../VENDOR/SETUP/Vendor-setup.md)
+  - [3PL setup](../../3PL/SETUP/3PL-setup.md)
+  - [Freight forwarder landed cost setup](../../FREIGHT-FORWARDER/SETUP/Freight-forwarder-setup.md)
 - **Document types**: Template, setting profile, outbound filenames for each applicable document type will be assigned to the Trading partner.
   - [Customer document types](../../CUSTOMER/INTRODUCTION/Introduction.md#customer-document-type-setup)
   - [Vendor document types](../../VENDOR/INTRODUCTION/Introduction.md#vendor-document-type-setup)
   - [3PL document types](../../3PL/INTRODUCTION/Introduction.md#3pl-document-type-setup)
-  - [Freight forwarder landed document types](../../FREIGHT%20FORWARDER/INTRODUCTION/Introduction.md#freight-forwarder-document-type-setup)
+  - [Freight forwarder landed document types](../../FREIGHT-FORWARDER/INTRODUCTION/Introduction.md#freight-forwarder-document-type-setup)
 
 ## Setup Trading partners
 Users can access the form by navigating to **EDI > Setup > Trading partners**.
@@ -84,14 +84,14 @@ The following setup applies to all types of Trading partners and will be discuss
 **Trading partner account**       |	The primary identifier of the trading partner (i.e. Customer account, Warehouse number or Vendor account). This field is not editable after creation.
 **Name**                          |	The trading partner account's name. Not editable in this form. Links to customer, warehouse or vendor account's name.
 **Trading partner GLN**           |	The GLN we know the trading partner as. Note: This field denotes the trading partner GLN. The module will use this field as a match to the customer, warehouse or vendor. 
-**Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> • Outgoing documents: Connection profile setup on [EDI > Setup > EDI parameters](EDI%20parameters.md) <br> • Incoming documents: All active connection incoming paths as setup in [Connections](Connection%20setup.md).
-**Cleanup profile**               |	Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level. If blank, default Cleanup profile will be used as setup on [EDI > Setup > EDI shared parameters](EDI%20shared%20parameters.md)
+**Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> • Outgoing documents: Connection profile setup on [EDI > Setup > EDI parameters](EDI-parameters.md) <br> • Incoming documents: All active connection incoming paths as setup in [Connections](Connection-setup.md).
+**Cleanup profile**               |	Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level. If blank, default Cleanup profile will be used as setup on [EDI > Setup > EDI shared parameters](EDI-shared-parameters.md)
 
 Module specific setup are discussed in their sections:
-- [Customer trading partners](../../CUSTOMER/SETUP/Trading%20partner.md)
-- [Vendor trading partners](../../VENDOR/SETUP/Trading%20partner.md)
-- [3PL trading partners](../../3PL/SETUP/Trading%20partner.md)
-- [Freight forwarder landed cost trading partners](../../FREIGHT%20FORWARDERS/SETUP/Trading%20partner.md)
+- [Customer trading partners](../../CUSTOMER/SETUP/Trading%-partner.md)
+- [Vendor trading partners](../../VENDOR/SETUP/Trading-partner.md)
+- [3PL trading partners](../../3PL/SETUP/Trading-partner.md)
+- [Freight forwarder landed cost trading partners](../../FREIGHT-FORWARDERS/SETUP/Trading-partner.md)
 
 ### Outgoing documents
 
@@ -102,13 +102,13 @@ The Outgoing documents FastTab defines the outgoing EDI document types that have
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
-**EDI Document type**             |	[EDI document type](Document%20types.md). Users can add outgoing document types as available for the trading partner type. 
-**Template**                      |	[Document type template](DocumentTypes/File%20templates.md) that has been previously defined.
-**Setting profile**               |	[Settings profile](DocumentTypes/Setting%20profiles.md) that has been previously defined. Note: View details displays the settings profiles in read only.
-**File name setup**               |	Select the [Outbound file name mask](DocumentTypes/Outbound%20filenames.md) to use for the document. Note: Options displayed depends if the selected template supports multiple headers. If assigned template only supports single headers, only Outbound files with **Single file per document** set to _Yes_ will be available.
-**Connection profile**            |	Ability to override the default [EDI connection profile](Connection%20setup.md) on document level. If blank, the trading partner’s Connection profile will be used.
-**Cleanup profile**               |	Ability to override the default [Cleanup profile](Cleanup%20profile.md) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](EDI%20shared%20parameters.md) will be used.
-**Reset status profile**          |	Ability to override the default [Reset status](Reset%20status.md) on document level. If blank, [EDI shared parameters](EDI%20shared%20parameters.md) will be used.
+**EDI Document type**             |	[EDI document type](Document-types.md). Users can add outgoing document types as available for the trading partner type. 
+**Template**                      |	[Document type template](DocumentTypes/File-templates.md) that has been previously defined.
+**Setting profile**               |	[Settings profile](DocumentTypes/Setting-profiles.md) that has been previously defined. Note: View details displays the settings profiles in read only.
+**File name setup**               |	Select the [Outbound file name mask](DocumentTypes/Outbound-filenames.md) to use for the document. Note: Options displayed depends if the selected template supports multiple headers. If assigned template only supports single headers, only Outbound files with **Single file per document** set to _Yes_ will be available.
+**Connection profile**            |	Ability to override the default [EDI connection profile](Connection-setup.md) on document level. If blank, the trading partner’s Connection profile will be used.
+**Cleanup profile**               |	Ability to override the default [Cleanup profile](Cleanup-profile.md) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](EDI-shared-parameters.md) will be used.
+**Reset status profile**          |	Ability to override the default [Reset status](Reset-status.md) on document level. If blank, [EDI shared parameters](EDI-shared-parameters.md) will be used.
 **Acknowledgement**               |	An Inbound Functional Acknowledgement is required from the trading partner for the outgoing document. Note: Also required to setup the Functional acknowledgement inbound document under Incoming documents.
 **Enabled**                       |	Enable the document for the Trading partner – Yes/No
 
@@ -123,14 +123,14 @@ The Incoming documents FastTab defines the incoming EDI document types that have
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
-**EDI Document type**             |	[EDI document type](Document%20types.md). Users can add incoming document types as available for the trading partner type. 
-**Template**                      |	[Document type template](DocumentTypes/File%20templates.md) that has been previously defined.
-**Setting profile**               |	[Settings profile](DocumentTypes/Setting%20profiles.md) that has been previously defined. Note: View details displays the settings profiles in read only.
-**Validation profile**            |	[Validation profile](DocumentTypes/Validation%20profiles.md) that has been previously defined.
-**Search mask**                   |	A file mask is used to match files in the document type’s defined directories. <br> The setup of the directory (i.e. FTP site) configures whether the file mask is matched at the start of the file name or at the end (For further information, see Site Paths in [Connection setup](Connection%20setup.md)). See [examples for Search mask](#examples-for-search-mask) below.
-**Connection profile**	          | Ability to override the default [EDI connection profile](Connection%20setup.md) on document level. If blank, the trading partner’s Connection profile will be used.
-**Cleanup profile**               |	Ability to override the default [Cleanup profile](Cleanup%20profile.md) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](EDI%20shared%20parameters.md) will be used.
-**Reset status profile**          |	Ability to override the default [Reset status](Reset%20status.md) on document level. If blank, [EDI shared parameters](EDI%20shared%20parameters.md) will be used.
+**EDI Document type**             |	[EDI document type](Document-types.md). Users can add incoming document types as available for the trading partner type. 
+**Template**                      |	[Document type template](DocumentTypes/File-templates.md) that has been previously defined.
+**Setting profile**               |	[Settings profile](DocumentTypes/Setting-profiles.md) that has been previously defined. Note: View details displays the settings profiles in read only.
+**Validation profile**            |	[Validation profile](DocumentTypes/Validation-profiles.md) that has been previously defined.
+**Search mask**                   |	A file mask is used to match files in the document type’s defined directories. <br> The setup of the directory (i.e. FTP site) configures whether the file mask is matched at the start of the file name or at the end (For further information, see Site Paths in [Connection setup](Connection-setup.md)). See [examples for Search mask](#examples-for-search-mask) below.
+**Connection profile**	          | Ability to override the default [EDI connection profile](Connection-setup.md) on document level. If blank, the trading partner’s Connection profile will be used.
+**Cleanup profile**               |	Ability to override the default [Cleanup profile](Cleanup-profile.md) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](EDI-shared-parameters.md) will be used.
+**Reset status profile**          |	Ability to override the default [Reset status](Reset-status.md) on document level. If blank, [EDI shared parameters](EDI-shared-parameters.md) will be used.
 **Acknowledgement**               |	Trading partner requires an Outbound Functional Acknowledgement for the incoming document. Note: Also required to setup the Functional acknowledgement outbound document under Outgoing documents.
 **Enabled**                       |	Enable the document for the Trading partner – Yes/No
 

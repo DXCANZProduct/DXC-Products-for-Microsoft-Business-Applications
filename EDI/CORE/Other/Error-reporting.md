@@ -47,7 +47,7 @@ Staging processing errors are now defined and saved to a table for reporting pur
 ## Version log
 
 Version log applies to **Inbound documents**, and users can access the staging forms by navigating to **EDI > Documents**. 
-These errors can be viewed on the **Version log** form on each Staging form or [EDI Document maintenance workspace](../WORKSPACES/EDI%20Document%20maintenance%20workspace.md). <br>
+These errors can be viewed on the **Version log** form on each Staging form or [EDI Document maintenance workspace](../WORKSPACES/EDI-Document-maintenance-workspace.md). <br>
 If a record’s status was reset and reprocessed the **Version log** will show all the version’s status and if there were any errors, split these into Header and Lines. If there were no errors, a version is still created with blank error details. If an error is not defined the Staging to target status will be Error and the standard D365 error will be provided. <br>
 **Show log** shows only the latest log. <br>
 **Version log** form displays the following fields for each processing version: <br>

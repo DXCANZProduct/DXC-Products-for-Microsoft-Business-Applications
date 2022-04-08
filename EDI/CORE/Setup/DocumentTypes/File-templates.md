@@ -269,7 +269,7 @@ Paste XLST code on XLST tab. Can use **Run transformation** to check for compile
 When opening the form, it will also display any compile errors.
 **Validate XSD** is used to validate transformed XML, not the XSLT.
 Click **Save XSLT**.
-If scripting is allowed, ensure [EDI Shared parameter](../EDI%20shared%20parameters.md) **Enable XLST scripting** is enabled.
+If scripting is allowed, ensure [EDI Shared parameter](../EDI-shared-parameters.md) **Enable XLST scripting** is enabled.
 
 #### XML template data entities
 
@@ -283,7 +283,7 @@ N/A	                               | EDI Template XLST collection | Create new *
 JSON file format is available using a standard format based on the fields currently available for each document. 
 JSON Collection should be used for JSON files with multiple headers.
 
-> Note: The elements in the JSON format use the D365 table field names.  To identify the correct label for each of the elements, please see the **Field Label** available within the [**Field metadata**](Field%20metadata.md)
+> Note: The elements in the JSON format use the D365 table field names.  To identify the correct label for each of the elements, please see the **Field Label** available within the [**Field metadata**](Field-metadata.md)
 
 #### JSON files templates setup
 If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).

@@ -41,7 +41,7 @@ The setup is split into the following:
 a.	**End after** sets the number of reset attempts. <br>
 b.	**Recurrence pattern** sets the interval of resetting. <br>
 Example: **End after** of 5 with **Recurrence pattern** of 2 minutes will reset error records every 2 minutes for 5 times. The reset will stop once the **End after** number of resets have occurred. <br> Optional: A user can manually override the recurrence by assigning a **Retry profile** on the record or using **Edit status recurrence** to start the process again by setting retry attempts to 0 and the retry date/time will start again based on the assigned retry profile’s recurrence interval. When using **Edit status recurrence** values needs to be updated in order to reset the **Reset status attempts** to zero.
-2.	Assign default **Reset profile** on [**EDI shared parameters**](EDI%20shared%20parameters.md) or set up on only the applicable Trading partner’s documents (step 3)
+2.	Assign default **Reset profile** on [**EDI shared parameters**](EDI-shared-parameters.md) or set up on only the applicable Trading partner’s documents (step 3)
 3.	Optional: Ability to override default reset profiles from shared parameters on the Trading partner’s documents.
 4.	Setup the [**Reset documents status**](#setup-reset-document-status-periodic-task) periodic task; similar to a workflow processor job.
 
@@ -70,7 +70,7 @@ Various reset status profiles can be created to specify different recurrences. <
   - Recurrence pattern: Retry interval.
 
 The configured Reset status profiles can be used either in:
-- [EDI shared parameters](EDI%20shared%20parameters.md):
+- [EDI shared parameters](EDI-shared-parameters.md):
   - **Documents reset status**: Assign default Reset status profile for all staging documents. <br>
   - **Files reset status**: Assign default Reset status profile for all inbound and outbound file. <br>
 - Trading partner’s Incoming and Outgoing documents (overrides the default from EDI shared parameters)

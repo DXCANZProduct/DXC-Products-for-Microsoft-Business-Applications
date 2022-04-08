@@ -30,18 +30,18 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Functional acknowledgement inbound
 
 When the Company requires the Trading partner to send a Functional Acknowledgement for outbound EDI files, the following is required:
-1.	Create document [Template](../Setup/DocumentTypes/File%20templates.md) Functional acknowledgement inbound.
-1.	Add the Functional acknowledgement inbound document type to [Trading Partner’s](../Setup/Trading%20partners.md) Incoming documents and Enable.
-1.	For each [Trading partner's](../Setup/Trading%20partners.md) outgoing documents that requires to receive a Functional acknowledgement, set **Acknowledgement** to _Yes_.
+1.	Create document [Template](../Setup/DocumentTypes/File-templates.md) Functional acknowledgement inbound.
+1.	Add the Functional acknowledgement inbound document type to [Trading Partner’s](../Setup/Trading-partners.md) Incoming documents and Enable.
+1.	For each [Trading partner's](../Setup/Trading-partners.md) outgoing documents that requires to receive a Functional acknowledgement, set **Acknowledgement** to _Yes_.
 
 ## Setting profiles
 
 Users can access the form by navigating to **EDI > Setup > Document types** and filtering/selecting the **Functional acknowledgement inbound** document. <br>
-See [Setting profiles](../Setup/DocumentTypes/Setting%20profiles.md) for more details on how to create a Setting profile.
+See [Setting profiles](../Setup/DocumentTypes/Setting-profiles.md) for more details on how to create a Setting profile.
 
 **Field** 	                                | **Description**                     | **Options/example**
 :--------------------------------           |:------------------------------------|:------------------------------------
-**Document type mapping**                   | Assign applicable document type mapping to setting	| Mappings setup at [**EDI > Setup > Document type mapping**](../Setup/Document%20type%20mapping.md)
+**Document type mapping**                   | Assign applicable document type mapping to setting	| Mappings setup at [**EDI > Setup > Document type mapping**](../Setup/Document-type-mapping.md)
 
 ## View Staging table records
 
