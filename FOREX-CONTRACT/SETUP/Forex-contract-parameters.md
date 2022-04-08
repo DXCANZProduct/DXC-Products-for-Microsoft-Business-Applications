@@ -39,32 +39,15 @@ The following table describes the fields that are available on the **General** t
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
 <ins>**Warnings**</ins>
-**Increase to a PO warning** 	  |	Pertains to value increase of Purchase orders which have Forex contracts attached. Set here if D365 must give a **Warning** or **Error** message when the increased Purchase order value exceeds the attached Forex contract amount.
-Expiry date warning	Pertains to verification on whether due date on documents match with the expiry date of Forex contract. Set here if D365 must ‘Warn’ or give an ‘Error’ message when the due date and expiry date do not match.
-Cash in
-Cash in journal	The journal used to post cash in transactions.
-Default bank account	Default bank account for cash in journals.
-
+**Increase to a PO warning** 	    |	Pertains to value increase of Purchase orders which have Forex contracts attached. Set here if D365 must give a **Warning** or **Error** message when the increased Purchase order value exceeds the attached Forex contract amount.
+**Expiry date warning**           |	Pertains to verification on whether due date on documents match with the expiry date of Forex contract. Set here if D365 must **Warn** or give an **Error** message when the due date and expiry date do not match.
+<ins>**Cash in**</ins>
+**Cash in journal**               |	The journal used to create cash in transactions.
+**Default bank account**          |	Default bank account for cash in journals.
 
 ## Number sequence
-Use the **Number sequences** tab on the **EDI parameters** page to assign number sequence codes to the different number sequences that the EDI module uses. The following table describes the purpose of each of those number sequences. For more information about number sequences, see [Number sequences overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview) and its related topics.
-
-> Note: Number sequences displayed is dependent on enabled licensed modules.
+Use the **Number sequences** tab on the **Forex contract parameters** page to assign number sequence codes to the Forex contracts module. The following table describes the purpose of each of those number sequences. For more information about number sequences, see [Number sequences overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview) and its related topics.
 
 **Reference** 	                  | **Description**
 :-------------------------------- |:-------------------------------------
-**EDI number**                    |	Unique identifier for EDI staging. This stores the data in D365 in an intermediary/staging tables before creating the target record.
-**ASN number**                    |	Unique identifier when creating a Customer Advanced Shipping Notice (ASN) record. Customer license only
-**Reconciliation Id**             |	Unique identifier when creating a 3PL Reconciliation Id. 3PL license only
-**Group control number**          |	Unique identifier when creating outbound records. The Inbound functional acknowledgement needs to refer to the outbound document's Group control number in order to reconcile against the correct outbound record and update the Received status to Yes.
-
-
-
-
-
-Number sequences tab
-The Forex contact parameter contains the following fields on the Number sequences tab
-Field	Description
-Forex number	Specify the number sequence used to allocate Forex Contract ID.
-
-
+**Forex number**                  |	Specify the number sequence used to allocate Forex Contract ID.
