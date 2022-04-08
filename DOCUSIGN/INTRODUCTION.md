@@ -33,7 +33,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 DXC Solutions for Docusign and Dynamics 365 empowers users to send, sign, and approve documents quickly via electronic signature capture and approvals. This module allows users to be able efficiently send documents to both external and internal receipiants for review, acceptance or rejection. This creates a seamless process that can be used by internal teams, customers, vendors and partners to do business.
 
-Any Dynamics 365 documents that use SSRS processing capabilities can be sent for signature via DocuSign. Additionally, selected completed documents (including signatures) will be downloaded and attached via Document handling to the corresponding record. This feature is avaialable  for the following documents: 
+Any Dynamics 365 documents that use SSRS processing capabilities can be sent for signature via DocuSign. Additionally, selected completed documents (including signatures) will be downloaded and attached via Document handling to the corresponding record. This feature is available for the following documents: 
 
 - Sales Quotation – attached to the Quotation journal
 - Purchase Order Confirmation – attached to the Purchase Order confirmation journal
@@ -41,3 +41,22 @@ Any Dynamics 365 documents that use SSRS processing capabilities can be sent for
 - Purchase Agreement Confirmation – attached to the Purchase Agreement confirmation
 
 The Docusign solution for D365 allows for seamless document signature capture design, review, processing, and approval. It allows decision makers to review and approve documents within minutes while providing legally binding signed agreements.  
+
+## Configuration
+
+The following setup is available under **Organization administration > Setup > Docusign**:
+- [DocuSign parameters](SETUP/Parameters.md) - Configure connection setting for DocuSign and update frequency.
+- [Document types](SETUP/Document-types.md) - Set which document formats will use DocuSign
+- [Templates](SETUP/Template.md) - Set the signatory types, the sequence of the signatories, the tag types and their position on the document 
+- [Users](SETUP/Users.md) - Set the user accounts who are able to send using DocuSign
+
+### Print Management
+
+Print management configuration forms now allow for DocuSign as a destination
+- [Print Management](SETUP/Print-management.md) - Set DocuSign as the print management destination for the selected report format
+
+## Inquiries
+
+The following forms are available under **Organization administration > Inquiries and reports > Docusign**:
+- [Documents](INQUIRIES/Documents.md) - Review the status of selected documents communicated to DocuSign.
+- [Exceptions](INQUIRIES/Exception.md) - Review the reason for a failed communication with either DocuSign or the signatory.
