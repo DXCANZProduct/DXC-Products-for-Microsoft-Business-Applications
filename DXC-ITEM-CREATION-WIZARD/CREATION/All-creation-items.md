@@ -34,7 +34,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 |  **Field**  | **Description** | 
 |:---|:---|     
 |  **Creation number**  | Unique identification for the creation record. |   
-|  **Import session**  | Reference to the [import session](Creation_import_sessions). Only populated for imported products. |  
+|  **Import session**  | Reference to the [import session](Creation-import-sessions). Only populated for imported products. |  
 |  **Template version**  | The template name and version number used for this record |
 |  **Product**  | Product identifier for created/updated item. |   
 |  **Step**  | Step that next requires an action to be taken, either to enter information or action workflow approval. |   
@@ -45,9 +45,9 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ### Designer
 
-The designer will be presented to the user as the [item creation process](Creating_an_item) is initiated. This form can subsequently be accessed from the All creation items form for users needing to update the record prior to submission to workflow, or resulting from feedback received on rejection of the workflow submission.
+The designer will be presented to the user as the [item creation process](Creating-an-item) is initiated. This form can subsequently be accessed from the All creation items form for users needing to update the record prior to submission to workflow, or resulting from feedback received on rejection of the workflow submission.
 
-When opening the designer, only those [tabs](Item_creation_template_tabs) and fields for the step referenced can be updated. Previously approved steps are locked for editing.
+When opening the designer, only those [tabs](Item-creation-template-tabs) and fields for the step referenced can be updated. Previously approved steps are locked for editing.
 
 ## Open creation items
 
@@ -59,4 +59,4 @@ Presents a filtered list of records found in the All creation items list page. R
 
 ## Creation import sessions assigned to me
 
-Presents a filtered list of records found in the [Import sessions](Creation_import_sessions) list page. Records that require a workflow action be undertaken by the user will be visible.
+Presents a filtered list of records found in the [Import sessions](Creation-import-sessions) list page. Records that require a workflow action be undertaken by the user will be visible.
