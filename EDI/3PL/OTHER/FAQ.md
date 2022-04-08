@@ -17,14 +17,14 @@ ms.technology:
 audience: [Application User]
 # ms.devlang: 
 ms.reviewer: [jdutoit2]
-ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core-Dynamics-AX-CP-requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions-list-for-docs-topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global]
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: [jdutoit2]
 ms.search.validFrom: [September 2017]
-ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core-Dynamics-AX-CP-requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions-list-for-docs-topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
 # Frequently asked questions
@@ -47,7 +47,7 @@ Picking list % is in status Completed               | The D365 picking list regi
 Unable to locate an activated picking list line (Route Id - %, Lot - %, Item - %, Quantity - %, Size - %, Colour - %', Style - %, Configuration - %, Inventory status - %)  | Inbound document's line details don't match to picking list, compare staging details mentioned in the error. 
 Picking list route % is in status Completed         | Staging's **Picking route** has already been completed. Verify if duplication. If 3PL is shipping the remainder of a previous pick list, a new D365 picking list needs to be posted and used in staging record. When a picking list registration is received all the quantities not shipped are cancelled and thus a D365 picking route can't be used for multiple shipments.
 Posting	Sending document	Advanced shipping notice	Export to staging completed.  | Info message that the sales order's customer is setup to receive Advanced shipping notices (ASN) via EDI, and processing the 3PL's picking list registration has created the ASN staging record.
-Shortpicked line - Item % Lot %     | Dependent on [validation](../SETUP/VALIDATION%20PROFILES/Picking%20list%20registration.md)'s Error tolerance for **Short pick**
+Shortpicked line - Item % Lot %     | Dependent on [validation](../SETUP/VALIDATION-PROFILES/Picking-list-registration.md)'s Error tolerance for **Short pick**
 
 
 ### Shipment receipt - Purchase order
@@ -55,7 +55,7 @@ Shortpicked line - Item % Lot %     | Dependent on [validation](../SETUP/VALIDAT
 Error	message                                       | Method to fix        
 :--                                                 |:--                
 Receipt list % does not exist for purchase order %  | The EDI record's purchase order and receipt combination doesn't match to D365. Verify and fix staging record.
-Delivered batch Id %. Expected batch Id %           | Dependent on [validation](../SETUP/VALIDATION%20PROFILES/Shipment%20receipt%20-%20Purchase%20order.md)'s Error tolerance for **Batch id update**
+Delivered batch Id %. Expected batch Id %           | Dependent on [validation](../SETUP/VALIDATION-PROFILES/Shipment-receipt---Purchase-order.md)'s Error tolerance for **Batch id update**
 Line % Lot %	Product dimensions do not match source  | Staging record line's product dimensions don't match the original source D365 transaction that created the shipment advice. Verify and fix staging if required.
 Posting - Journal	Journal: %	Line number: %	Item %	Cannot find location for item % at warehouse %. | Either fix staging's **Location** or add location in D365 for the 3PL's warehouse.
 Posting - Journal	Journal: %	Line number: %	Item %	Inventory dimension Inventory status must be specified. | Inventory status is required for the transaction and hasn't been specified in the staging record. Edit staging record's **Inventory status** for the applicable line.
@@ -98,12 +98,12 @@ Error	message                                       | Method to fix
 :--                                                 |:--                
 Batch Id % not found for item %                     | Verify if batch correct. If 3PL can create new batches, assign document setting to trading partner that allows creating new D365 batches. If staging incorrect, edit staging's **Batch number**.
 Invalid inventory dimensions                        | Inventory dimension(s) specified in staging record is invalid. Verify and either fix staging record, or update D365.
-Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) assigned to the trading partner.
+Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) assigned to the trading partner.
 Item not found: %                                   | Can't find staging's **Item number**. Verify which is correct, and either fix staging or D365
 Line % Lot %	Product dimensions do not match source  | Staging record line's product dimensions don't match the original source D365 transaction that created the shipment advice. Verify and fix staging if required.
 Location % does not exist in warehouse %.           | Verify staging's **Location** and either fix staging or add to D365
 Blocking status cannot be set for Transfer transactions.  | Staging's **Inventory status to** is flagged as a blocking status, and transfer journal is thus not allowed.
-No inventory journal setup in document settings profile   | Assign a transfer journal in **Journal name** on the [document setting profile](../SETUP/SETTING%20PROFILES/Inventory%20adjustment%20advice%20-%20Transfer.md)
+No inventory journal setup in document settings profile   | Assign a transfer journal in **Journal name** on the [document setting profile](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice---Transfer.md)
 Posting - Journal	Journal: %	Line number: %	Item number: %	From inventory dimensions and To inventory dimensions must be different.  | Issue with staging as the **From batch number** and **To batch number** doesn't differ. Verify and fix staging.
 Posting - Journal	Journal: %	Line number: %	Item number: %	Physical on-hand	Site=%,Warehouse=%,Batch number=%	% cannot be picked because only % is/are available from the inventory for item: %.  | Not enough on hand stock for required movement journal line, either fix staging or D365.
 Posting - Journal	Journal: %	Line number: %	Item %	Inventory dimension Inventory status must be specified. | Inventory status is required for the transaction and hasn't been specified in the staging record. Edit staging record's **Inventory status** for the applicable line.
@@ -115,7 +115,7 @@ Error	message                                       | Method to fix
 :--                                                 |:--     
 Batch Id % not found for item %                     | Verify if batch correct. If 3PL can create new batches, assign document setting to trading partner that allows creating new D365 batches. If staging incorrect, edit staging's **Batch number**.
 Invalid inventory dimensions                        | Inventory dimension(s) specified in staging record is invalid. Verify and either fix staging record, or update D365.
-Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) assigned to the trading partner.
+Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) assigned to the trading partner.
 Item not found: %                                   | Can't find staging's **Item number**. Verify which is correct, and either fix staging or D365
 Location % does not exist in warehouse %.           | Verify staging's **Location** and either fix staging or add to D365
 
@@ -126,7 +126,7 @@ Error	message                                       | Method to fix
 :--                                                 |:--     
 Batch Id % not found for item %                     | Verify if batch correct. If 3PL can create new batches, assign document setting to trading partner that allows creating new D365 batches. If staging incorrect, edit staging's **Batch number**.
 Invalid inventory dimensions                        | Inventory dimension(s) specified in staging record is invalid. Verify and either fix staging record, or update D365
-Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) assigned to the trading partner.
+Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) assigned to the trading partner.
 Item not found: %                                   | Can't find staging's **Item number**. Verify which is correct, and either fix staging or D365
 Location % does not exist in warehouse %.           | Verify staging's **Location** and either fix staging or add to D365
 
@@ -137,7 +137,7 @@ Error	message                                       | Method to fix
 :--                                                 |:--     
 Batch Id % not found for item %                     | Verify if batch correct. If 3PL can create new batches, assign document setting to trading partner that allows creating new D365 batches. If staging incorrect, edit staging's **Batch number**.
 Invalid inventory dimensions                        | Inventory dimension(s) specified in staging record is invalid. Verify and either fix staging record, or update D365
-Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping](../SETUP/3PL%20SETUP/Inventory%20status%20Id%20mapping.md) assigned to the trading partner.
+Inventory Status % does not exist.                  | Verify and map staging's **Inventory status** to a D365 value in the [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) assigned to the trading partner.
 Item not found: %                                   | Can't find staging's **Item number**. Verify which is correct, and either fix staging or D365
 Location % does not exist in warehouse %.           | Verify staging's **Location** and either fix staging or add to D365
 Posting - Journal	Journal: %	Line number: %	Item number: %	Physical on-hand	Site=%,Warehouse=%,Location=%,Inventory status=%	% cannot be picked because only % is/are available from the inventory for item: %.  | Not enough on hand stock for required movement journal line, either fix staging or D365.
