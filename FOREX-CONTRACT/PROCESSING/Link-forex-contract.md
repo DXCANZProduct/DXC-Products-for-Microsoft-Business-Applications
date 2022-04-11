@@ -74,7 +74,7 @@ Go to **Accounts payable > Purchase orders > All purchase orders**
 
 ## Invoice journal
 
-Go to **Accounts payable > Invoices > Invoice journal
+Go to **Accounts payable > Invoices > Invoice journal**
 
 -	Select the applicable invoice journal line
 -	On the Action Pane, in the **Functions** group, select **Link to forex contract**.
