@@ -38,11 +38,15 @@ To hedge the exchange rate risk, the company enters into a contract with bank to
 The contract between the company and the bank is called a Forex contract.
 
 ## Setup
+The following setup is required per legal entity.
+
 - [Forex contract parameters](SETUP/Forex-contract-parameters.md)
 - [Forex over allocation](SETUP/Forex-over-allocation.md)
 
 
 ## Processing
+The following describes using the Forex contract functionality.
+
 - [Create forex contract](PROCESSING/Create-forex-contract.md)
 
 
