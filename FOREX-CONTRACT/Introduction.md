@@ -42,7 +42,7 @@ The contract between the company and the bank is called a Forex contract.
 - [Forex over allocation](SETUP/Forex-over-allocation.md)
 
 
-## Processing**
+## Processing
 - [Create forex contract](PROCESSING/Create-forex-contract.md)
 
 
