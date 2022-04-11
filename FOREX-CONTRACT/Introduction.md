@@ -37,7 +37,7 @@ Goods are imported from another country by the company. Payment in foreign curre
 To hedge the exchange rate risk, the company enters into a contract with bank to purchase the foreign currency at a certain exchange rate on the payment due date. <br>
 The contract between the company and the bank is called a Forex contract.
 
-## Setup**
+## Setup
 - [Forex contract parameters](SETUP/Forex-contract-parameters.md)
 - [Forex over allocation](SETUP/Forex-over-allocation.md)
 
