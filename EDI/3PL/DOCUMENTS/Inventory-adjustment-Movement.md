@@ -52,7 +52,7 @@ EDI > Setup > 3PL setup
 ### Document type setup
 EDI > Setup > Document types: Inventory adjustment - Movement
 1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice---Movement.md) for the document.
+1. Create [Setting profile](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Movement.md) for the document.
 
 ### Trading partners
 EDI > Setup > Trading partners
