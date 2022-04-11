@@ -39,7 +39,7 @@ Forex contracts can be allocated via: <br>
 
 Forex numbers displayed are filtered by:
 
-	              | Purchase order	  | Forex contract
+<br>	              | Purchase order	  | Forex contract
 :--             |:--                |:--
 **Currency**    |	Currency	        | Terms currency
 **Date**        |                   | Expiration date
