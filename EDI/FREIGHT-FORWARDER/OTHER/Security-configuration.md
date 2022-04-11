@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [EDI Customer]
-description: [EDI Customer - Security configuration]
+title: [EDI Freight forwarder]
+description: [EDI Freight forwarder - Security configuration]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 11/04/2022
@@ -35,10 +35,10 @@ Core EDI has the following EDI roles included:
 
 - **EDI administrator** - Documents all EDI events. Maintains all EDI setup
 
-## Customer EDI module
+## Freight forwarder EDI module
 
-Customer EDI has the following EDI roles included:
+Freight forwarder EDI has the following EDI roles included:
 
-- **EDI customer administrator** - Maintains EDI customer setup
-- **EDI customer manager** - Documents customer EDI events with read access to EDI setup. Ability to setup new Trading partner
-- **EDI customer clerk** - Documents customer EDI events with read access to setup
+- **EDI freight forwarder landed cost administrator** - Maintains EDI freight forwarder landed cost setup
+- **EDI freight forwarder landed cost manager** - Documents freight forwarder landed cost EDI events with read access to EDI setup. Ability to setup new Trading partner
+- **EDI freight forwarder landed cost clerk** - Documents freight forwarder landed cost EDI events with read access to setup
