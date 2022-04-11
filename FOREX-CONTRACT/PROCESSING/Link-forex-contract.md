@@ -39,10 +39,10 @@ Forex contracts can be allocated via: <br>
 
 Forex numbers displayed are filtered by:
 
-<br>	              | Purchase order	  | Forex contract
-:--             |:--                |:--
-**Currency**    |	Currency	        | Terms currency
-**Date**        |                   | Expiration date
+<br>	             | Purchase order	| Forex contract
+:--                  |:--               |:--
+**Currency**         | Currency	        | Terms currency
+**Date**             | Created date     | Expiration date
 
 
 > Note: When allocations are being made, whether the currency, amount and due date between the Forex contracts and documents match with each other will be verified by D365. Corresponding actions will be taken according to parameter configurations.
