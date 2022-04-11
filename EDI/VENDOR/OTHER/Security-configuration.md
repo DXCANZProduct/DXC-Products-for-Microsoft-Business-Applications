@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [EDI Customer]
-description: [EDI Customer - Security configuration]
+title: [EDI Vendor]
+description: [EDI Vendor - Security configuration]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 11/04/2022
@@ -35,10 +35,10 @@ Core EDI has the following EDI roles included:
 
 - **EDI administrator** - Documents all EDI events. Maintains all EDI setup
 
-## Customer EDI module
+## Vendor EDI module
 
-Customer EDI has the following EDI roles included:
+Vendor EDI has the following EDI roles included:
 
-- **EDI customer administrator** - Maintains EDI customer setup
-- **EDI customer manager** - Documents customer EDI events with read access to EDI setup. Ability to setup new Trading partner
-- **EDI customer clerk** - Documents customer EDI events with read access to setup
+- **EDI vendor administrator** - Maintains EDI vendor setup
+- **EDI vendor manager** - Documents vendor EDI events with read access to EDI setup. Ability to setup new Trading partner
+- **EDI vendor clerk** - Documents vendor EDI events with read access to setup
