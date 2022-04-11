@@ -5,7 +5,7 @@ title: [EDI 3PL]
 description: [Introduction to EDI 3PL]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 17/11/2021
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -168,5 +168,5 @@ The following workspaces are available:
 
 ## Other
 - [Data entities](../OTHER/Data-entities.md)
-- [Security configuration](../../CORE/OTHER/Security-configuration.md)
+- [Security configuration](../OTHER/Security-configuration.md)
 - [Frequently asked questions](../OTHER/FAQ.md) - Includes example errors and recommended fixes
