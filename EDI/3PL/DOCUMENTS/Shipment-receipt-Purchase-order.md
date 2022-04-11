@@ -45,8 +45,8 @@ EDI > Setup > 3PL setup
 ### Document type setup
 EDI > Setup > Document types: Shipment receipt - Purchase order
 1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING-PROFILES/Shipment-receipt---Purchase-order.md) for the document.
-1. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Shipment-receipt---Purchase-order.md) for the document.
+1. Create [Setting profile](../SETUP/SETTING-PROFILES/Shipment-receipt-Purchase-order.md) for the document.
+1. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Shipment-receipt-Purchase-order.md) for the document.
 
 ### Trading partners
 EDI > Setup > Trading partners
@@ -111,11 +111,11 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 At this step the issues are usually around mapping/business logic issues. <br>
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table. <br>
-Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#shipment-receipt---purchase-order).
+Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#shipment-receipt-purchase-order).
 
 ### Validation
 
-[Validation profiles](../SETUP/VALIDATION-PROFILES/Shipment-receipt---Purchase-order.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
+[Validation profiles](../SETUP/VALIDATION-PROFILES/Shipment-receipt-Purchase-order.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
 -	**Info** - An infolog is displayed with information only, it is not identified as a warning
 -	**Warning** - An infolog is displayed with a warning. It is possible to carry on processing
 -	**Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error
