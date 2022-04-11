@@ -142,7 +142,7 @@ Users can access the forms by navigating to **EDI > Documents > Vendor documents
 
 ### Workspaces
 The following workspaces are available:
-- [EDI Document maintenance](../../CORE/WORKSPACES/EDI-Document-maintenance-workspace.md)
+- [EDI Document maintenance](../../CORE/Workspaces/EDI-Document-maintenance-workspace.md)
 - [EDI Purchase order processing](../WORKSPACES/EDI-Purchase-order-processing.md)
 
 ## Other
