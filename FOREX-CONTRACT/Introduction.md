@@ -50,6 +50,6 @@ The contract between the company and the bank is called a Forex contract.
 
 Forex contract include data entities to support its enhancements to D365.
 
-- [Data entities](Setup/Data-entities.md)
+- [Data entities](SETUP/Data-entities.md)
 
 
