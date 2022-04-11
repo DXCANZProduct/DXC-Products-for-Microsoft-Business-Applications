@@ -72,7 +72,7 @@ Finance utilities minimises the manual actions required for reconciling bank acc
 - [Customer payment and settle of one invoice via bank reconciliation](Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md#customer-payment-and-settle-of-invoice-11)
 
 <ins> **Processing** </ins>
-- [Bank statement import](Processing/Bank-Statement%-Reconciliation/Bank-statement-import.md)
+- [Bank statement import](Processing/Bank-Statement-Reconciliation/Bank-statement-import.md)
 - [Bank reconciliation worksheet](Processing/Bank-Statement-Reconciliation/Bank-reconciliation-worksheet.md)
 - [Reports](Processing/Bank-Statement-Reconciliation/Cash-and-bank-management-reports.md)
 
