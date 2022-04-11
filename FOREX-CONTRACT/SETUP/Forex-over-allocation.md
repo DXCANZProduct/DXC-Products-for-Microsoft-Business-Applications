@@ -32,6 +32,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 **Forex over allocation** controls the over allocation amount per **Terms currency**. <br>
 > Note: Over allocation will not be permitted unless **Allow over allocation** field is ticked in the Forex Contract form.
 
+<br>
+
 Go to **Forex contracts > Setup > Forex contract parameters**
 
 -	To create a new record, select the **New** button in the navigation bar
