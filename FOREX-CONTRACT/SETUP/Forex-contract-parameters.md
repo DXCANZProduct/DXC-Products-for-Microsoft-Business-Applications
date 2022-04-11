@@ -2,7 +2,7 @@
 # required metadata
 
 title: [Forex contract]
-description: [Introduction to Forex contract]
+description: [Forex contract setup]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 08/04/2022
