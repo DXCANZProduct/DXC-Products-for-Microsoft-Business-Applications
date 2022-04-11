@@ -49,6 +49,6 @@ Once setup for each document type, the validation profile can be assigned to eac
 
 The following incoming 3PL documents have validation profiles:
 - [Picking list registration](VALIDATION-PROFILES/Picking-list-registration.md)
-- [Shipment receipt - Purchase order](VALIDATION-PROFILES/Shipment-receipt---Purchase-order.md)
-- [Shipment receipt - Transfer order](VALIDATION-PROFILES/Shipment-receipt---Transfer-order.md)
-- [Shipment receipt - Return order](VALIDATION-PROFILES/Shipment-receipt---Return-order.md)
+- [Shipment receipt - Purchase order](VALIDATION-PROFILES/Shipment-receipt-Purchase-order.md)
+- [Shipment receipt - Transfer order](VALIDATION-PROFILES/Shipment-receipt-Transfer-order.md)
+- [Shipment receipt - Return order](VALIDATION-PROFILES/Shipment-receipt-Return-order.md)
