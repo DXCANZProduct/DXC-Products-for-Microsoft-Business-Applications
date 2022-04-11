@@ -90,6 +90,6 @@ The following is available for Core EDI by navigating to **EDI > Inquiries and r
 - [Trading partner documents](../Inquiries/Trading-partner%-documents.md) - List of all EDI Trading partners and their enabled document types
 
 ## Other
-- [Data entities](../OTHER/Data-entities.md) - Core data entities 
-- [Security configuration](../OTHER/Security-configuration.md) - EDI security roles
+- [Data entities](../Other/Data-entities.md) - Core data entities 
+- [Security configuration](../Other/Security-configuration.md) - EDI security roles
 - [Frequently asked questions](../OTHER/FAQ.md) - Includes example errors and recommended fixes
