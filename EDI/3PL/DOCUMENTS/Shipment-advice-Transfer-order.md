@@ -42,7 +42,7 @@ EDI > Setup > 3PL setup
 ### Document type setup
 EDI > Setup > Document types: Shipment advice - Transfer order
 1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-2. Create [Setting profile](../SETUP/SETTING-PROFILES/Shipment-advice---Transfer-order.md) for the document.
+2. Create [Setting profile](../SETUP/SETTING-PROFILES/Shipment-advice-Transfer-order.md) for the document.
 3. Create [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
 
 ### Trading partners
