@@ -30,19 +30,19 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Introduction to DXC Forex contract
 
 The Forex contract module is designed to allocate Forex contracts to purchase orders and invoice journals. <br>
-The amounts in inventory/vendor accounts will be calculated based on the attached Forex contract forward rate.
+The amounts in inventory/vendor accounts will be calculated based on the attached Forex contract forward rate. <br>
+<br>
 
-#  Scenarios
 Goods are imported from another country by the company. Payment in foreign currency is going to be made in a certain period. <br>
 To hedge the exchange rate risk, the company enters into a contract with bank to purchase the foreign currency at a certain exchange rate on the payment due date. <br>
 The contract between the company and the bank is called a Forex contract.
 
-<ins> **Setup** </ins>
+## Setup**
 - [Forex contract parameters](SETUP/Forex-contract-parameters.md)
 - [Forex over allocation](SETUP/Forex-over-allocation.md)
 
 
-<ins> **Processing** </ins>
+## Processing**
 - [Create forex contract](PROCESSING/Create-forex-contract.md)
 
 
