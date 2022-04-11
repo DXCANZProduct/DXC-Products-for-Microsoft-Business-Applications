@@ -2,10 +2,10 @@
 # required metadata
 
 title: [Forex contract]
-description: [Forex contract setup]
+description: [Create Forex contract]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 08/04/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,27 +27,47 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Forex contract parameters
-The **Forex contract parameters** page is used to define settings that apply across the Forex contract module. These settings affect number sequences, and other behaviour. The setup on this page is set per legal entity and can be modified by users who have the appropriate security permissions.
+# Create a Forex contract
 
-To open the **Forex contract parameters** page, go to **Forex contracts > Setup > Forex contract parameters**. Then set the fields as described in the following subsections.
+Go to **Forex contracts > Forex contracts > All forex contracts**. <br>
+To create a new record, select the **New** button in the navigation bar and enter the following details. <br>
 
-## General
-The parameters control the operation for the module per legal entity.
-The following table describes the fields that are available on the **General** tab of the **EDI parameters** page.
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
-<ins>**Warnings**</ins>
-**Increase to a PO warning** 	    |	Pertains to value increase of Purchase orders which have Forex contracts attached. Set here if D365 must give a **Warning** or **Error** message when the increased Purchase order value exceeds the attached Forex contract amount.
-**Expiry date warning**           |	Pertains to verification on whether due date on documents match with the expiry date of Forex contract. Set here if D365 must **Warn** or give an **Error** message when the due date and expiry date do not match.
-<ins>**Cash in**</ins>
-**Cash in journal**               |	The journal used to create cash in transactions.
-**Default bank account**          |	Default bank account for cash in journals.
+<ins>**Contract**</ins>           |
+**Forex number**	If you’ve set up a number sequence for forex number, this field is automatically set to a unique, system generated ID. Otherwise, enter a unique ID
+Contract number	
+Description	Short description of the Forex Contract
+Status	•	Open - Default when creating new contract. Contract is available to be linked to orders if expiration date is still in the future
+•	Cashed in – Once the expiration date has been reached, users can cash in the contract and the status will be updated accordingly
+Exchange rate	Forex Contract forward rate
+Fee	The amount of fee that is related to the Forex contract
+Currencies	
+Base currency	The currency used to purchase the foreign currency. The base currency is normally the local currency within D365 and thus the default.
+Terms currency	The terms currency is the currency which is being purchased
+Amounts	
+Amount	The amount in terms currency that is going to be purchased
+Base currency amount	The amount in base currency amount used to purchase the terms currency. This field is calculated by AD365 based on Amount and Exchange rate fields.
+Unallocated amount	The remaining amount in terms currency of Forex contracts. This is the amount which has not yet been allocated to any documents.
+Settled amount	The settled amount in terms currency of Forex, this is the amount of Forex which has been allocated to invoices or vendor transactions.
+Remaining amount	The remaining amount in terms currency of Forex, this is the amount which hasn’t yet been used (Amount – Settled amount)
+Contract period	
+Date	The Forex Contract date
+Fixed term period	The Forex contract might cover a fixed period, i.e. 90 days or 6 months.  Options include: Day, Week, Month, and Year. 
+Fixed term value	Numeric value of the units defined in Fixed term period field
+Expiration date	The Forex contract’s expiry date. It could either be calculated using Date, Fixed term period and Fixed term value fields or be manually input.
+Other	
+Bank account	Bank account with which the Forex Contract was made
+Allow overallocation	Indicate whether the allocated amount of Forex contracts can exceed the contract value
+Vendor account	If the Contract was purchased from a vendor this can be specified here
+Dealer reference	Dealer information field
+Cash in bank account 	Defaults from parameters
+Remarks	A text field which allows extra bank / vendor information to be specified
+Spot	
+Exchange rate	Spot exchange rate on the contract day
+Spot rate amount	Calculated based on previous Exchange rate field, else the current rate as setup in General ledger.
+Premium	The difference between Spot rate amount and Base currency amount
+Cash in	
+Cash in journal number	Once the Forex contract has been cashed in, this field will be populated with the created journal number.
 
-## Number sequence
-Use the **Number sequences** tab on the **Forex contract parameters** page to assign number sequence codes to the Forex contracts module. The following table describes the purpose of each of those number sequences. For more information about number sequences, see [Number sequences overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview) and its related topics.
-
-**Reference** 	                  | **Description**
-:-------------------------------- |:-------------------------------------
-**Forex number**                  |	Specify the number sequence used to allocate Forex Contract ID.
