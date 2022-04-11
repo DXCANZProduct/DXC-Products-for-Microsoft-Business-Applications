@@ -48,6 +48,11 @@ The following setup is required per legal entity.
 The following describes using the Forex contract functionality.
 
 - [Create forex contract](PROCESSING/Create-forex-contract.md)
+- [Link forex contract to documents](PROCESSING/Link-forex-contract.md)
+- [Changes to forex contract or document](PROCESSING/Changes.md)
+- [Invoice posting](PROCESSING/Invoice-posting.md)
+- [Cash in forex contracts](PROCESSING/Cash-in.md)
+- [Inquiries](PROCESSING/Inquiries.md)
 
 
 ## Other
