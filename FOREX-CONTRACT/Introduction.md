@@ -38,11 +38,12 @@ To hedge the exchange rate risk, the company enters into a contract with bank to
 The contract between the company and the bank is called a Forex contract.
 
 <ins> **Setup** </ins>
-- [Financial utilities parameters](Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters.md)
+- [Forex contract parameters](SETUP/Forex-contract-parameters.md)
+- [Forex over allocation](SETUP/Forex-over-allocation.md)
 
 
 <ins> **Processing** </ins>
-- [Bank statement import](Processing/Bank-Statement%-Reconciliation/Bank-statement-import.md)
+- [Create forex contract](PROCESSING/Create-forex-contract.md)
 
 
 ## Other
@@ -51,7 +52,4 @@ Forex contract include data entities to support its enhancements to D365.
 
 - [Data entities](Setup/Data-entities.md)
 
-See our FAQ for general information and troubleshooting.
-
-- [FAQ](FAQ.md)
 
