@@ -9,6 +9,7 @@ Please select the applicable product from below:
 - [DocuSign](DOCUSIGN/INTRODUCTION.md)
 - [Electronic Data Interchange (EDI)](EDI/Introduction.md)
 - [Finance utilities](FINU/INTRODUCTION.md) (specific to ANZ region)
+- [Forex contracts](FOREX-CONTRACT/Introduction.md)
 - [Item creation wizard](DXC-ITEM-CREATION-WIZARD/INTRODUCTION.md)
 - [Smart Send](SMART-SEND/Overview.md)
 
