@@ -48,8 +48,13 @@ The contract between the company and the bank is called a Forex contract.
 
 ## Other
 
+### Data entities
 Forex contract include data entities to support its enhancements to D365.
 
 - [Data entities](SETUP/Data-entities.md)
 
+### Security configuration
 
+The following roles are included in the Forex contract module: 
+-	**Forex manager** – manages forex contract setup
+- **Forex contracts clerk** – creates and maintains forex contracts
