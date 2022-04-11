@@ -82,7 +82,7 @@ Users can access the forms by navigating to **EDI > Documents**
 
 ### Workspaces
 The following workspaces are available in core EDI and will contain a tab per licensed module:
-- [EDI Document maintenance](../../CORE/WORKSPACES/EDI-Document-maintenance-workspace.md) - Manage file import and staging record errors. These records have not been successfully processed to a target D365 document
+- [EDI Document maintenance](../Workspaces/EDI-Document-maintenance-workspace.md) - Manage file import and staging record errors. These records have not been successfully processed to a target D365 document
 
 ## Inquiries
 The following is available for Core EDI by navigating to **EDI > Inquiries and reports**:
