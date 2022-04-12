@@ -88,10 +88,10 @@ The following setup applies to all types of Trading partners and will be discuss
 **Cleanup profile**               |	Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level. If blank, default Cleanup profile will be used as setup on [EDI > Setup > EDI shared parameters](EDI-shared-parameters.md)
 
 Module specific setup are discussed in their sections:
-- [Customer trading partners](../../CUSTOMER/SETUP/Trading%-partner.md)
+- [Customer trading partners](../../CUSTOMER/SETUP/Trading-partner.md)
 - [Vendor trading partners](../../VENDOR/SETUP/Trading-partner.md)
 - [3PL trading partners](../../3PL/SETUP/Trading-partner.md)
-- [Freight forwarder landed cost trading partners](../../FREIGHT-FORWARDERS/SETUP/Trading-partner.md)
+- [Freight forwarder landed cost trading partners](../../FREIGHT-FORWARDER/SETUP/Trading-partner.md)
 
 ### Outgoing documents
 
