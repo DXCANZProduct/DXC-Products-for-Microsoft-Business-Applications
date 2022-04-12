@@ -110,7 +110,7 @@ Azure Blob storage can be utilized to save copies of the printed business forms 
  
 Every file that is saved has metadata based on the fixed list place holder tags. Refer to 3.6.1 Fixed List Placeholder Tokens section in this document for further detail. These can be useful for identifying further detail or using other Azure tools such as Azure Logic Apps to trigger conditions.
 
-A common error you may receive, while printing a business form or report *Error occurred while saving to Azure blob storage. See event viewer in LCS for more detail*. This usually happens if the container does not exist. This can be resolved by going the [Smart Send Parameters](Parameters) and clicking on Test azure blob storage connection button. This will create the container or at least give you further error detail. 
+A common error you may receive, while printing a business form or report *Error occurred while saving to Azure blob storage. See event viewer in LCS for more detail*. This usually happens if the container does not exist. This can be resolved by going the [Smart Send Parameters](../CONFIGURATION/Parameters.md#azure-blob-storage-setup) and clicking on Test azure blob storage connection button. This will create the container or at least give you further error detail. 
  
 ## Email processing and management
 This Smart send feature uses the standard Dynamics 365 for operations email engine. As such when a business form or report is sent via Smart Send it is inserted into the Email queue. The email queue can be accessed from **System administration > Periodic tasks > Email processing > Email sending status**.
