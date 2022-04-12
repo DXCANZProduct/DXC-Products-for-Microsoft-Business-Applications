@@ -31,7 +31,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 The item status form is used to create statuses that can be applied to released products. For each status the allowed transaction types can be set. If a status is not enabled for a transaction type, a released product with the status will not be able to be added to the transaction. This can be used to prevent the creation of inventory transactions through purchase or sales orders if a product is completely configured, or to prevent more inventory being ordered after the product has been retired. You can reach the form by navigating to **Item creation > Setup > Item Setup > Item Status**
 
-The restriction of transactions can be enabled/disabled from the [parameters](Item-creation-parameters.md) form. 
+The restriction of transactions can be enabled/disabled from the [parameters](../Item-creation-parameters.md) form. 
 
 ## Item status creation
 
