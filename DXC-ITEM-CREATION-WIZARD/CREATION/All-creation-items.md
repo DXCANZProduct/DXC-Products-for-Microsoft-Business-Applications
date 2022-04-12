@@ -59,4 +59,4 @@ Presents a filtered list of records found in the All creation items list page. R
 
 ## Creation import sessions assigned to me
 
-Presents a filtered list of records found in the [Import sessions](Creation-import-sessions) list page. Records that require a workflow action be undertaken by the user will be visible.
+Presents a filtered list of records found in the [Import sessions](../INQUIRIES/Creation-import-sessions.md) list page. Records that require a workflow action be undertaken by the user will be visible.
