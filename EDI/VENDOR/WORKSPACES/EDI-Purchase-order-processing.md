@@ -76,7 +76,7 @@ Warnings and errors are identified based on the validation profiles setup for th
 > Note: For further information relating to validation refer to the [validation setup](../SETUP/Validation-profiles.md). <br>
 > If a document has both Errors and warnings, it will be displayed in the Error list only.
 
-Documents in **Error** status will be managed in the [Document maintenance Workspace](../../CORE/Workspaces/EDI-Document-maintenance-workspace.md. <br> 
+Documents in **Error** status will be managed in the [Document maintenance Workspace](../../CORE/Workspaces/EDI-Document-maintenance-workspace.md). <br> 
 
 Field	            | Description
 |:--                |:--
