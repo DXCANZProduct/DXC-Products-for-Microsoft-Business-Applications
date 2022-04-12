@@ -53,7 +53,7 @@ The following setup is available under **Organization administration > Setup > D
 ### Print Management
 
 Print management configuration forms now allow for DocuSign as a destination
-- [Print Management](SETUP/Print-management.md) - Set DocuSign as the print management destination for the selected report format
+- [Print Management](SETUP/Print-Management.md) - Set DocuSign as the print management destination for the selected report format
 
 ## Inquiries
 
