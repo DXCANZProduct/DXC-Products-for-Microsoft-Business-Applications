@@ -45,7 +45,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ### Designer
 
-The designer will be presented to the user as the [item creation process](Creating-an-item) is initiated. This form can subsequently be accessed from the All creation items form for users needing to update the record prior to submission to workflow, or resulting from feedback received on rejection of the workflow submission.
+The designer will be presented to the user as the [item creation process](../PROCESSES/Creating-a-new-item.md) is initiated. This form can subsequently be accessed from the All creation items form for users needing to update the record prior to submission to workflow, or resulting from feedback received on rejection of the workflow submission.
 
 When opening the designer, only those [tabs](Item-creation-template-tabs) and fields for the step referenced can be updated. Previously approved steps are locked for editing.
 
