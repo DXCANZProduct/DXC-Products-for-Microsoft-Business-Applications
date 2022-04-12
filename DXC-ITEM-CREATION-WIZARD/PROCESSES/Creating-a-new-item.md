@@ -37,7 +37,7 @@ You can reach the All creation items form by navigating to **Item creation > Ite
 2.	Select *Template name* with a template type of *create*.
     * If a number sequence is not defined on the template, or is set to manual a *Product number* must be entered.  
 3.	Click *OK* to open the *Designer* form.
-4.	Complete the fields as per your [templates](Item-creation-templates) requirements.
+4.	Complete the fields as per your [templates](ITEM-CREATION/Item-creation-templates) requirements.
 5.	Click *Validate* to confirm fields and display the workflow menu.
 6.	Under workflow, click *Submit* to commence the [Item creation workflow](Item-creation-workflows).       
 7.	If this is the **last Step**  it will either generate the Product or request an Approval. This will be determined by the workflow configuration.
