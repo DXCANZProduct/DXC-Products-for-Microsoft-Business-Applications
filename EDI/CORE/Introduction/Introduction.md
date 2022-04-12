@@ -87,7 +87,7 @@ The following workspaces are available in core EDI and will contain a tab per li
 ## Inquiries
 The following is available for Core EDI by navigating to **EDI > Inquiries and reports**:
 - [Functional acknowledgement received](../Inquiries/Functional-acknowledgement-received.md) - Provides a view of outgoing documents where the Inbound functional acknowledgement is outstanding
-- [Trading partner documents](../Inquiries/Trading-partner%-documents.md) - List of all EDI Trading partners and their enabled document types
+- [Trading partner documents](../Inquiries/Trading-partner-documents.md) - List of all EDI Trading partners and their enabled document types
 
 ## Other
 - [Data entities](../Other/Data-entities.md) - Core data entities 
