@@ -34,7 +34,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 |  **Field**  | **Description** | 
 |:---|:---|     
 |  **Creation number**  | Unique identification for the creation record. |   
-|  **Import session**  | Reference to the [import session](Creation-import-sessions). Only populated for imported products. |  
+|  **Import session**  | Reference to the [import session](../INQUIRIES/Creation-import-sessions.md). Only populated for imported products. |  
 |  **Template version**  | The template name and version number used for this record |
 |  **Product**  | Product identifier for created/updated item. |   
 |  **Step**  | Step that next requires an action to be taken, either to enter information or action workflow approval. |   
