@@ -52,7 +52,7 @@ The items status controls whether a product can be purchased, sales order (creat
 
 Allowed status transitions prevent a change in status from the selected status to any value not listed in this form, allowing the organisation to control how the user changes the lifecycle of a product. This can be accessed from within the item status form by selecting **Allowed status transitions** from the action pane.
 
-For information on transitioning between items statuses see [Managing item statuses](Managing-item-statuses).
+For information on transitioning between items statuses see [Managing item statuses](../../PROCESSES/Managing-item-statuses.md).
 
 |  **Field**  | **Description** | 
 |:---|:---|     
