@@ -77,8 +77,8 @@ Ability to manually export or review outbound files
 ### EDI Core documents
 Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents**
-- [Functional acknowledgement inbound](../DOCUMENTS/Functional-acknowledgement-inbound.md)
-- [Functional acknowledgement outbound](../DOCUMENTS/Functional-acknowledgement-outbound.md)
+- [Functional acknowledgement inbound](../Documents/Functional-acknowledgement-inbound.md)
+- [Functional acknowledgement outbound](../Documents/Functional-acknowledgement-outbound.md)
 
 ### Workspaces
 The following workspaces are available in core EDI and will contain a tab per licensed module:
