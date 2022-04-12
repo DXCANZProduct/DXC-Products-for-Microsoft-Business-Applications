@@ -86,7 +86,7 @@ The following setup is required to configure Smart Send:
 - [Smart send parameters](CONFIGURATION/Parameters.md) - Configure the business form or report type to be sent using Smart Send.
 - [Email templates](CONFIGURATION/Email-template.md) - Create an email template to add a body to the email being generated. Placeholder tokens allow for the values in the report to be dynamically created.
 - [Email placeholders](CONFIGURATION/Email-placeholder.md) - Identify the fixed and dynamic tokens supported for each report type.
-- [Contact information purposes](CONFIGURATION/Address-and-contact-information-purposes.md) - Create or identify an existing contact information purpose as the intended destination of the business form or report.
+- [Contact information purposes](CONFIGURATION/Address-and-contact-information-purpose.md) - Create or identify an existing contact information purpose as the intended destination of the business form or report.
 - [Contact information](CONFIGURATION/Contact-information.md) - Contact information with the appropriate purpose must be stored against the account or account contact.
 - [Security](CONFIGURATION/Security.md) - Lists the privileges associated with Smart Send and the security roles with access to the privilege
 
