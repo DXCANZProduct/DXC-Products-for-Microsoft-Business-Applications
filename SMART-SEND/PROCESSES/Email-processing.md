@@ -103,10 +103,10 @@ For audit reasons, these posted tables are sometimes non-editable. Causing the d
 You may wish to attach a document to the email template which enables you to send the same attachment to all emails (e.g. Terms and Conditions, or promotional material).
 
 ### Custom attachments
-Smart Send also includes an extension hook to enable a customer to create an extension class to attach a document handling attached file from another source, for example Purchase/Sales order lines. Refer to the Smart Send [technical guide](Technical_guide).
+Smart Send also includes an extension hook to enable a customer to create an extension class to attach a document handling attached file from another source, for example Purchase/Sales order lines. Refer to the Smart Send [technical guide](../TECHNICAL-GUIDE/Technical-guide.md).
  
 ## Azure blob storage
-Azure Blob storage can be utilized to save copies of the printed business forms or reports. The set up allows for routing all printed business forms or reports or for those without an email address. Refer to [Azure Blob Storage Setup](Parameters) for further detail on the set up.
+Azure Blob storage can be utilized to save copies of the printed business forms or reports. The set up allows for routing all printed business forms or reports or for those without an email address. Refer to [Azure Blob Storage Setup](../CONFIGURATION/Parameters.md) for further detail on the set up.
  
 Every file that is saved has metadata based on the fixed list place holder tags. Refer to 3.6.1 Fixed List Placeholder Tokens section in this document for further detail. These can be useful for identifying further detail or using other Azure tools such as Azure Logic Apps to trigger conditions.
 
