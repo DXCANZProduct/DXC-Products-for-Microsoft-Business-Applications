@@ -43,7 +43,7 @@ When one or more files are imported against a template an import session is crea
 
 Import sessions can only be deleted if the record has a status of either *Not submitted* or *Canceled*.
 
-Deleting an import session will also remove all import session line and any reference to the line accessable from the [All creation items](All-creation-items) form.
+Deleting an import session will also remove all import session line and any reference to the line accessable from the [All creation items](../CREATION/All-creation-items.md) form.
 
 #### Submitting an import session to workflow
 
