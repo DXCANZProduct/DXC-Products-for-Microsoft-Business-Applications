@@ -48,7 +48,7 @@ DXC Item Creation Wizard for Microsoft Dynamics 365 removes the risk of human er
 * [Creating a new item](PROCESSES/Creating-a-new-item.md)
 * [Updating an existing item](PROCESSES/Updating-an-existing-item.md)
 * [Releasing an existing item to another company](PROCESSES/Releasing-an-existing-item-to-another-company.md)
-* [Bulk import product creation](PROCESSES/Bulk-import-product-creation.md)
+* [Bulk import product creation](Bulk-import-product-creation.md)
 * [Managing item creation templates](SETUP/ITEM-CREATION/Managing-Item-creation-templates.md)
 * [Managing item statuses](PROCESSES/Managing-item-statuses.md)
 
