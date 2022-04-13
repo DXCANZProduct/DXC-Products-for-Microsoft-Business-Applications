@@ -79,4 +79,4 @@ EDI > Setup > Trading partner
 **Order**         | **Entity**						| **Description**                             | **Dependency**
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
 1                 | EDI Warehouses                          | Create new Warehouse trading partner   | [3PL setup](#3pl-setup)
-2                 | EDI Documents - Warehouse               | Add incoming and outgoing documents to Warehouse trading partner | EDI Warehouses, [3PL setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data-entities.md#document-types)
+2                 | EDI Documents - Warehouse               | Add incoming and outgoing documents to Warehouse trading partner | EDI Warehouses, [3PL setting profiles](#document-setting-profiles)  and [Document types](../../CORE/Other/Data-entities.md#document-types)
