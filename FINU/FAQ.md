@@ -69,7 +69,7 @@ Server failed to authenticate the request. Make sure the value of Authorization 
 ```<AuthenticationErrorDetail> <br>
 Signature did not match. String to sign used was <br>
 ```</AuthenticationErrorDetail> <br>
-```</Error> <br>
+```</Error> <br>```
 
 #### Resolution
 AP > Payment setup > Methods of payment
