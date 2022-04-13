@@ -29,7 +29,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Item Import
 
-Item import is a job that collects staged files imported into the *File management* workspace and creates an [import session](Creation-import-sessions) that will be automatically submitted to the active import [workflow](../SETUP/Item-creation-workflows). A *template name* should be selected when run to refine the files included in the import session. You can reach the Item import job by navigating to **Item creation > Periodic Tasks > Creation > Item import**.
+Item import is a job that collects staged files imported into the *File management* workspace and creates an [import session](Creation-import-sessions) that will be automatically submitted to the active import [workflow](../SETUP/Item-creation-workflows.md). A *template name* should be selected when run to refine the files included in the import session. You can reach the Item import job by navigating to **Item creation > Periodic Tasks > Creation > Item import**.
 
 An infolog will be displayed that will notify the user of an error in processing of the import session. Additional details relating to the error can be accessed from the log on the import session line.
 
