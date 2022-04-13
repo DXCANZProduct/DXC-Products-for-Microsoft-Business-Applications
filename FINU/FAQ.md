@@ -60,7 +60,7 @@ Things to check:
 AP > Payments > Vendor receipt journal
 When Generating AP payment:
 <br>
-'<Error>
+`<Error>
 
 <Code>AuthenticationFailed\</Code> <br>
 <Message> <br>
