@@ -29,7 +29,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Adding Custom Reports
 ## Overview
-While out of the box functionality is for the business forms listed [here](Overview), the solution can be extended on further business forms or reports. This technical guide describes how the DXC Smart Business Form Email Manager solution can be extended by adding custom report.
+While out of the box functionality is for the business forms listed [here](../Overview.md), the solution can be extended on further business forms or reports. This technical guide describes how the DXC Smart Business Form Email Manager solution can be extended by adding custom report.
 
 Refer to the [sample model file](https://github.com/DXCANZProduct/ICOND365/blob/b6404a4f9acd53ba41d34b99e0462eac9fd29fbe/SMART%20SEND/TECHNICAL%20GUIDE/SmartSendExtensionSample.zip) that demonstrates how to extend SmartSend to support Request for Quote report (note the Request for Quote is now supported by DXC Smart Business Form Email Manager).
 
