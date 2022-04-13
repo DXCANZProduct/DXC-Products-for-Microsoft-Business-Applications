@@ -39,7 +39,7 @@ You can reach the All creation items form by navigating to **Item creation > Ite
 3.	Click *OK* to open the *Designer* form.
 4.	Complete the fields as per your [templates](../SETUP/ITEM-CREATION/Item-creation-templates.md) requirements.
 5.	Click *Validate* to confirm fields and display the workflow menu.
-6.	Under workflow, click *Submit* to commence the [Item creation workflow](Item-creation-workflows).       
+6.	Under workflow, click *Submit* to commence the [Item creation workflow](../SETUP/Item-creation-workflows.md).       
 7.	If this is the **last Step**  it will either generate the Product or request an Approval. This will be determined by the workflow configuration.
 
 If there are **more Steps**  to complete then the next user(s) will need to complete their Steps.  Normally your workflow will be configured to email them or send them an alert to advise that there is a Workflow Product Creation for them to attend to.  To complete their step, they must: 
