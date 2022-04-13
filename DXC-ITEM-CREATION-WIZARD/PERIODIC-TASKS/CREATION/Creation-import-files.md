@@ -29,7 +29,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Creation import files
 
-The creation import files form allows for the manual upload of one or more local files into D365. Imported files are staged in this form, visible as a tile with the *template name* and *import file mask* as a reference. On running the final stage of the process, *Creation item import*, a [creation import session](../../INQUIRIES/Creation-import-sessions.md) is created.
+The creation import files form allows for the manual upload of one or more local files into D365. Imported files are staged in this form, visible as a tile with the *template name* and *import file mask* as a reference. On running the final stage of the process, *Creation item import*, a [creation import session](../../INQUIRIES/Creation-import-sessions) is created.
 
 ## Importing a file
 
