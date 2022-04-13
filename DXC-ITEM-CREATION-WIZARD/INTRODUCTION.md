@@ -56,7 +56,7 @@ DXC Item Creation Wizard for Microsoft Dynamics 365 removes the risk of human er
 * [Update item status](PERIODIC-TASKS/Update-item-status.md)
 * [Creation import files](PERIODIC-TASKS/CREATION/Creation-import-files.md)
 * [Item import](PERIODIC-TASKS/CREATION/Item-Import.md)
-* [Automatic status update](PERIODIC-TASKS/ITEM-STATUS/Automatic-status-updated.md)
+* [Automatic status update](PERIODIC-TASKS/ITEM-STATUS/Automatic-status-update.md)
 
 # Inquiries
 * [Creation import sessions](INQUIRIES/Creation-import-sessions.md)
