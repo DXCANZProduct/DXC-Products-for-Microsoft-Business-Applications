@@ -33,7 +33,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 A status value can be assigned to an [item creation template](../SETUP/ITEM-CREATION/Item-creation-templates.md). Use of this template to create, release or update an item will apply the template status to the released product where the Change item status element has been included in the approval [workflow](../SETUP/Item-creation-workflows.md).
 
-Where no item status exists on a released product and the template does not have a value defined, the default value set in the [parameters](Item-creation-workflows) form will be used.
+Where no item status exists on a released product and the template does not have a value defined, the default value set in the [parameters](../SETUP/Item-creation-parameters.md) form will be used.
 
 ## Updating a single item
 
