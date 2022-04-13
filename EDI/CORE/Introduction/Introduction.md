@@ -68,8 +68,8 @@ Ability to manually export or review outbound files
 [Process overview for import and export](Process-overview.md) of EDI documents.
 
 ### Archive file attachments and Delete records
-- [Archive file queue](../Managing-files/Archiving%-files.md) - Ability to periodically archive document handling attachments for inbound and outbound files
-- [Cleanup profile](../Setup/Cleanup%-profile.md) - Can be used to automatically delete staging records based on status and age days
+- [Archive file queue](../Managing-files/Archiving-files.md) - Ability to periodically archive document handling attachments for inbound and outbound files
+- [Cleanup profile](../Setup/Cleanup-profile.md) - Can be used to automatically delete staging records based on status and age days
 
 ### Automatically reset error records
 - [Reset status](../Setup/Reset-status.md#retryreset-process) - Optional automatic retry by resetting Error records to Not started based on a recurrence pattern
