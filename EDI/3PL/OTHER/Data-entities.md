@@ -71,7 +71,7 @@ EDI > Setup > Document types (Setting profiles for EDI 3PL documents)
 ## Document types
 EDI > Setup > Document types (Template, Validation, Outbound file names and EDI Field metadata)
 
-See [Core data entities](../../CORE/OTHER/Data-entities.md#document-types)
+See [Core data entities](../../CORE/Other/Data-entities.md#document-types)
 
 ## Trading partner
 EDI > Setup > Trading partner
