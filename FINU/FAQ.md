@@ -62,7 +62,7 @@ When Generating AP payment:
 <br>
 <Error>
 
-<Code>AuthenticationFailed\</Code> <br>
+//<Code>AuthenticationFailed\</Code> <br>
 <Message> <br>
 Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature. <br>
 </Message> <br>
