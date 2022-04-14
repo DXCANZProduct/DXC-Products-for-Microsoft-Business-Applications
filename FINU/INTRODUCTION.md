@@ -129,12 +129,20 @@ The modification gives the user the ability to set the budget import file's form
 
 ## Other
 
+### Data entities
 Finance utilities include data entities to support its enhancements to D365.
 The data entities include Finance utilities tables and also enhances existing standard entities.
 
 - [Data entities](Setup/Data-entities.md)
 
+### Security configuration
+
+The following roles are included in the Finance utilities module: 
+- **Finance utilities manager**
+- **Finance utilities clerk**
+
+### FAQ
+
 See our FAQ for general information and troubleshooting.
 
 - [FAQ](FAQ.md)
-
