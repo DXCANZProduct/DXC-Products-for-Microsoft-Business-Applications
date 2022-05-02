@@ -11,6 +11,6 @@ Please select the applicable product from below:
 - [DXC Finance utilities](FINU/INTRODUCTION.md) (specific to ANZ region)
 - [DXC Forex contracts](FOREX-CONTRACT/Introduction.md)
 - [DXC Item creation wizard](DXC-ITEM-CREATION-WIZARD/INTRODUCTION.md)
-- [DXC Smart Send](SMART-SEND/Overview.md)
+- [DXC Smart Business Form Email Manager (Smart Send)](SMART-SEND/Overview.md)
 
-Interested in learning more about DXC for Microsoft Dynamics 365? [Talk to us](https://dxc.com/us/en/contact-us)
+Interested in learning more about DXC for Microsoft Dynamics 365? [Talk to us](https://dxc.com/au/en/contact-us)
