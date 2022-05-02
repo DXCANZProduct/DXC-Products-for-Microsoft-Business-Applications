@@ -5,12 +5,12 @@ A Microsoft Gold Partner, DXC Practice for Microsoft helps enterprise and mid-ma
 DXC Practice for Microsoft offers a variety of products for D365 Financials and Operations. <br>
 Please select the applicable product from below:
 
-- [Core extensions](CORE-EXTENSIONS/Solution-overview.md)
-- [DocuSign](DOCUSIGN/INTRODUCTION.md)
-- [Electronic Data Interchange (EDI)](EDI/Introduction.md)
-- [Finance utilities](FINU/INTRODUCTION.md) (specific to ANZ region)
-- [Forex contracts](FOREX-CONTRACT/Introduction.md)
-- [Item creation wizard](DXC-ITEM-CREATION-WIZARD/INTRODUCTION.md)
-- [Smart Send](SMART-SEND/Overview.md)
+- [DXC Core extensions](CORE-EXTENSIONS/Solution-overview.md)
+- [DXC Solutions for DocuSign and Dynamics 365](DOCUSIGN/INTRODUCTION.md)
+- [DXC Electronic Data Interchange (EDI)](EDI/Introduction.md)
+- [DXC Finance utilities](FINU/INTRODUCTION.md) (specific to ANZ region)
+- [DXC Forex contracts](FOREX-CONTRACT/Introduction.md)
+- [DXC Item creation wizard](DXC-ITEM-CREATION-WIZARD/INTRODUCTION.md)
+- [DXC Smart Send](SMART-SEND/Overview.md)
 
 Interested in learning more about DXC for Microsoft Dynamics 365? [Talk to us](https://dxc.com/us/en/contact-us)
