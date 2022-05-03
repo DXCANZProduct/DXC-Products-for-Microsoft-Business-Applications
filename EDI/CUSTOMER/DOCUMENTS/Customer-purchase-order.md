@@ -217,24 +217,24 @@ The following EDI Header staging fields are available on the header page.
 
 **Field**	            | **Description**	                                    | **Target D365 field**
 :---                    |:---                                                   |:---
-<ins>**Identification**</ins>		
+<ins>**Identification**</ins>		|   |
 **EDI number**          | EDI Staging table record id                           | Sales Order > EDI > Original EDI number
 **Company account**     | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here.   | Sales order > EDI > Company GLN <br> If the **Company GLN** staging field is blank, the Company GLN on the Trading partner will be used to populate the **Company GLN** on the Sales order header.
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created a D365 Sales order, Sales agreement or Release order. • **Canceled** – The record has been manually canceled and will be excluded from processing.
-<ins>**Reset status**</ins>		
+<ins>**Reset status**</ins>		|   |
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**Overview**</ins>	
+<ins>**Overview**</ins>	    |   |
 **Customer Requisition**    | Customers purchase order number to be populated in the Customer requisition field of the sales order header.	| Sales order > General > Customer requisition
 **Purchase order date**     | The purchase order date from the EDI record is shown here.    | Sales Order > EDI > Original order date
 **EDI order type**          | The EDI order type is shown here.	                            | Sales Order > EDI > EDI order type
 **EDI order purpose**       | The EDI order purpose is shown here. Receiving an Order purpose **Change** will error the staging record, since these should be sent as **Customer purchase order change** document. Only **Original**, **Confirmation** and **Cancellation** order purposes are allowed for **Customer purchase order** document.	
 **Store code**              | The store code from the EDI record is shown here.	            | Sales Order > EDI > Store code. <br> And used to populate Sales order delivery address
 **Store zone**              | The store zone from the EDI PO is shown here.	                | Sales Order > EDI > Store zone
-<ins>**General**</ins>	
+<ins>**General**</ins>	    |   |
 **Customer Requisition**    | Customers purchase order number to be populated in the Customer requisition field of the sales order header.	| Sales order > General > Customer requisition
 **Customer Reference**      | Customers purchase order reference to be populated in the Customer Reference field of the sales order header.	| Sales Order > General > Customer reference
 **Purchase order date**     | The purchase order date from the EDI record is shown here.    | Sales Order > EDI > Original order date
