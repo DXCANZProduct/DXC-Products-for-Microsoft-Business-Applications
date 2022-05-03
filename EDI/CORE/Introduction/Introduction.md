@@ -68,8 +68,8 @@ Ability to manually export or review outbound files
 [Process overview for import and export](Process-overview.md) of EDI documents.
 
 ### Archive file attachments and Delete records
-- [Archive file queue](../Managing-files/Archiving%-files.md) - Ability to periodically archive document handling attachments for inbound and outbound files
-- [Cleanup profile](../Setup/Cleanup%-profile.md) - Can be used to automatically delete staging records based on status and age days
+- [Archive file queue](../Managing-files/Archiving-files.md) - Ability to periodically archive document handling attachments for inbound and outbound files
+- [Cleanup profile](../Setup/Cleanup-profile.md) - Can be used to automatically delete staging records based on status and age days
 
 ### Automatically reset error records
 - [Reset status](../Setup/Reset-status.md#retryreset-process) - Optional automatic retry by resetting Error records to Not started based on a recurrence pattern
@@ -77,8 +77,8 @@ Ability to manually export or review outbound files
 ### EDI Core documents
 Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents**
-- [Functional acknowledgement inbound](../DOCUMENTS/Functional-acknowledgement-inbound.md)
-- [Functional acknowledgement outbound](../DOCUMENTS/Functional-acknowledgement-outbound.md)
+- [Functional acknowledgement inbound](../Documents/Functional-acknowledgement-inbound.md)
+- [Functional acknowledgement outbound](../Documents/Functional-acknowledgement-outbound.md)
 
 ### Workspaces
 The following workspaces are available in core EDI and will contain a tab per licensed module:
@@ -87,7 +87,7 @@ The following workspaces are available in core EDI and will contain a tab per li
 ## Inquiries
 The following is available for Core EDI by navigating to **EDI > Inquiries and reports**:
 - [Functional acknowledgement received](../Inquiries/Functional-acknowledgement-received.md) - Provides a view of outgoing documents where the Inbound functional acknowledgement is outstanding
-- [Trading partner documents](../Inquiries/Trading-partner%-documents.md) - List of all EDI Trading partners and their enabled document types
+- [Trading partner documents](../Inquiries/Trading-partner-documents.md) - List of all EDI Trading partners and their enabled document types
 
 ## Other
 - [Data entities](../Other/Data-entities.md) - Core data entities 

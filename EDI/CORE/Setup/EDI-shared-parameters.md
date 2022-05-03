@@ -33,8 +33,8 @@ The **EDI shared parameters** page is used to define settings that apply across 
 To open the **EDI shared parameters** page, go to **EDI > Setup > EDI shared parameters**. Then set the fields as described in the following subsections.
 
 ## Prerequisites ##
-* Setup [Cleanup profile](CleanupProfile.md)
-* Setup [Reset status profile](ResetStatusProcess.md#setup-reset-status-profile)
+* Setup [Cleanup profile](Cleanup-profile.md)
+* Setup [Reset status profile](Reset-status.md#setup-reset-status-profile)
 
 ## Setup EDI shared parameters
 The following table describes the fields that are available on the **General** tab on the **EDI shared parameters** page.

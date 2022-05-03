@@ -31,7 +31,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 The features as described in the following subsections are available to control the additional functionality for accounts payable.
 
 ## Save electronic reporting file to secure location
-Setup requirements are discussed in detail at [Save electronic reporting file to secure location setup](../../Setup/ACCOUNTS%20PAYABLE/Save%20electronic%20reporting%20file%20to%20secure%20location.md). <br>
+Setup requirements are discussed in detail at [Save electronic reporting file to secure location setup](../../Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md). <br>
 Generating the payments are discussed in the following subsections.
 
 ## Generate payment

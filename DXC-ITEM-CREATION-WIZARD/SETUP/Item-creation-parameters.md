@@ -42,7 +42,7 @@ You can reach the parameters form by navigating to **Item creation > Setup > Ite
 
 |  **Field**  | **Description** | 
 |:---|:---|     
-|  **Status control enabled**  | Controls the allowed transaction types as configured on the [item status](Item-Status.md). When enabled, only allowed transactions for items with the item status can occur. If this is disabled all transaction will be available regardless of item status configuration  | 
+|  **Status control enabled**  | Controls the allowed transaction types as configured on the [item status](ITEM-SETUP/Item-Status.md). When enabled, only allowed transactions for items with the item status can occur. If this is disabled all transaction will be available regardless of item status configuration  | 
 |  **Default item status**  | Item status value applied to new items created without using an item creation template |  
 
 Note: The *Default item status* will be setup at the item level.

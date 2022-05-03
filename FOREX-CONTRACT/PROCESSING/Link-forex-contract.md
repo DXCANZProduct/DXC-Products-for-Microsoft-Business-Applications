@@ -2,7 +2,7 @@
 # required metadata
 
 title: [Forex contract]
-description: [Create Forex contract]
+description: [Link Forex contract]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 11/04/2022
@@ -27,46 +27,60 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Create a Forex contract
+# Link Forex contract
 
-Go to **Forex contracts > Forex contracts > All forex contracts**. <br>
-To create a new record, select the **New** button in the navigation bar and enter the following details. <br>
+A Forex contract could be linked to a purchase order header, purchase order line or invoice journal. <br>
+When the Invoice is created from a purchase order it will automatically store the exchange rate.  And when the Invoice is settled/paid it will use the Forex contract exchange rate. <br> 
+Forex contract cannot be allocated to a purchase agreement. <br>
+Forex contracts can be allocated via: <br>
+-	Purchase order header
+-	Purchase order line
+-	Invoice journal line
+
+Forex numbers displayed are filtered by:
+
+<br>	             | Purchase order	| Forex contract
+:--                  |:--               |:--
+**Currency**         | Currency	        | Terms currency
+**Date**             | Created date     | Expiration date
 
 
-**Field** 	                      | **Description**
-:-------------------------------- |:-------------------------------------
-<ins>**Contract**</ins>           |
-**Forex number**	                | If you’ve set up a number sequence for forex number, this field is automatically set to a unique, system generated ID. Otherwise, enter a unique ID
-**Contract number**               | Bank’s contract number
-**Description**                   |	Short description of the Forex Contract
-**Status**                        |	•	**Open** - Default when creating new contract. Contract is available to be linked to orders if expiration date is still in the future <br> •	**Cashed in** – Once the expiration date has been reached, users can cash in the contract and the status will be updated accordingly
-**Exchange rate**                 |	Forex Contract forward rate
-**Fee**                           |	The amount of fee that is related to the Forex contract
-<ins>**Currencies**</ins>
-**Base currency**                 |	The currency used to purchase the foreign currency. The base currency is normally the local currency within D365 and thus the default.
-**Terms currency**                |	The terms currency is the currency which is being purchased
-<ins>**Amounts**</ins>
-**Amount**                        |	The amount in terms currency that is going to be purchased
-**Base currency amount**          |	The amount in base currency amount used to purchase the terms currency. This field is calculated by D365 based on **Amount** and **Exchange rate** fields.
-**Unallocated amount**            |	The remaining amount in terms currency of Forex contracts. This is the amount which has not yet been allocated to any documents.
-**Settled amount**                |	The settled amount in terms currency of Forex, this is the amount of Forex which has been allocated to invoices or vendor transactions.
-**Remaining amount**              |	The remaining amount in terms currency of Forex, this is the amount which hasn’t yet been used. The difference between **Amount** and **Settled amount**
-<ins>**Contract period**</ins>	
-**Date**                          |	The Forex Contract date
-**Fixed term period**             |	The Forex contract might cover a fixed period, i.e. 90 days or 6 months.  Options include: Day, Week, Month, and Year. 
-**Fixed term value**              |	Numeric value of the units defined in Fixed term period field
-**Expiration date**               |	The Forex contract’s expiry date. It could either be calculated using Date, Fixed term period and Fixed term value fields or be manually input.
-<ins>**Other**</ins>
-**Bank account**                  |	Bank account with which the Forex Contract was made
-**Allow overallocation**          |	Indicate whether the allocated amount of Forex contracts can exceed the contract value
-**Vendor account**                |	If the Contract was purchased from a vendor this can be specified here
-**Dealer reference**              |	Dealer information field
-**Cash in bank account**          | Defaults from Forex parameters
-**Remarks**                       |	A text field which allows extra bank / vendor information to be specified
-<ins>**Spot**</ins>
-**Exchange rate**                 |	Spot exchange rate on the contract day
-**Spot rate amount**              |	Calculated based on previous Exchange rate field, else the current rate as setup in General ledger.
-**Premium**                       |	The difference between **Spot rate amount** and **Base currency amount**
-<ins>**Cash in**</ins>	
-**Cash in journal number**        |	Once the Forex contract has been cashed in, this field will be populated with the created journal number.
+> Note: When allocations are being made, whether the currency, amount and due date between the Forex contracts and documents match with each other will be verified by D365. Corresponding actions will be taken according to parameter configurations.
+Over allocation will not be permitted unless **Allow over allocation** field is ticked in the **Forex contract** form.
+
+## Purchase order header
+
+Go to **Accounts payable > Purchase orders > All purchase orders**
+
+-	Select the applicable purchase order.
+-	On the Action Pane, on the **Invoice** tab, in the **Forex contract** group, select **Link to forex contract**.
+-	Select the applicable **Forex number(s)**. If the selected Forex number’s unallocated amount is less than the purchase order’s amount, the user will be able to select multiple forex contracts until the purchase order amount has been fully allocated.
+-	Each selected Forex number’s **Allocate** field will automatically update to the amount it is able to allocate. The field can also be edited to a different amount, but needs to be:
+    -	Less or equal to the purchase order’s unallocated amount.
+    - Less or equal to the forex contract’s unallocated amount.
+-	Select **OK**.
+
+## Purchase order lines
+
+Go to **Accounts payable > Purchase orders > All purchase orders**
+
+-	Select the applicable purchase order line.
+-	On the **Financials** FastTab, select **Link to forex contract**.
+-	Select the applicable **Forex number(s)**. If the selected Forex number’s unallocated amount is less than the purchase order line’s amount, the user will be able to select multiple forex contracts until the purchase order line amount has been fully allocated.
+-	Each selected Forex number’s **Allocate** field will automatically update to the amount it is able to allocate. The field can also be edited to a different amount, but needs to be:
+    - Less or equal to the purchase order line’s unallocated amount.
+    - Less or equal to the forex contract’s unallocated amount.
+-	Select **OK**.
+
+## Invoice journal
+
+Go to **Accounts payable > Invoices > Invoice journal**
+
+-	Select the applicable invoice journal line
+-	On the Action Pane, in the **Functions** group, select **Link to forex contract**.
+-	Select the applicable **Forex number(s)**. If the selected Forex number’s unallocated amount is less than the invoice journal line amount, the user will be able to select multiple forex contracts until the journal line amount has been fully allocated.
+-	Each selected Forex number’s **Allocate** field will automatically update to the amount it is able to allocate. The field can also be edited to a different amount, but needs to be:
+    - Less or equal to the invoice journal line’s unallocated amount.
+    - Less or equal to the forex contract’s unallocated amount.
+-	Select **OK**.
 

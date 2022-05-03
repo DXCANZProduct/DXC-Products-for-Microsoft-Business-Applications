@@ -20,8 +20,14 @@
       <header>
         <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
         <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+        <a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications"><img src="IMAGES/DXC%20Logo_Purple+Black%20RGB.png" alt="Return to main page" style="width:68.8
+px;height:103.6px;"></a>
+        <!--
+            <div class="header-img"></div>
+        -->
       </header>
 
+    <!--
       <div id="banner">
         <span id="logo"></span>
 
@@ -36,7 +42,8 @@
           </div>
         {% endif %}
       </div><!-- end banner -->
-
+    -->
+    
     <div class="wrapper">
       <nav>
         <ul></ul>
@@ -45,6 +52,7 @@
         {{ content }}
 
       </section>
+      
       <footer>
         {% if site.github.is_project_page %}
           <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>

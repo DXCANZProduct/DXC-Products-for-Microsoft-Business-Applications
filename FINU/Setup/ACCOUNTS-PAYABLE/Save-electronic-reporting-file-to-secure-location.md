@@ -66,6 +66,7 @@ Select **Save** and the applicable **Setup** will be displayed as per the **Conn
 | **Key vault certificate** |	Enabled when Credential type is set to _Key vault_. | Select the applicable Key vault certificate.	|
 
 **Azure blob:**		
+
 |   Field    |   Description   |   Example or Options   |
 |-|-|-|
 | **Container name** |	Specify the blob storage container	||
@@ -75,6 +76,7 @@ Select **Save** and the applicable **Setup** will be displayed as per the **Conn
 | **Connection string** |	Enabled when Credential type is set to _Key vault_||
 
 **SFTP:**
+
 |   Field    |   Description   |   Example or Options   |
 |-|-|-|
 | **Host** |	Specify the Host for the SFTP site <br> Note: SFTP:// is not required	||

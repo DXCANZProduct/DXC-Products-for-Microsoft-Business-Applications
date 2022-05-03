@@ -72,7 +72,7 @@ Finance utilities minimises the manual actions required for reconciling bank acc
 - [Customer payment and settle of one invoice via bank reconciliation](Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md#customer-payment-and-settle-of-invoice-11)
 
 <ins> **Processing** </ins>
-- [Bank statement import](Processing/Bank-Statement%-Reconciliation/Bank-statement-import.md)
+- [Bank statement import](Processing/Bank-Statement-Reconciliation/Bank-statement-import.md)
 - [Bank reconciliation worksheet](Processing/Bank-Statement-Reconciliation/Bank-reconciliation-worksheet.md)
 - [Reports](Processing/Bank-Statement-Reconciliation/Cash-and-bank-management-reports.md)
 
@@ -129,12 +129,20 @@ The modification gives the user the ability to set the budget import file's form
 
 ## Other
 
+### Data entities
 Finance utilities include data entities to support its enhancements to D365.
 The data entities include Finance utilities tables and also enhances existing standard entities.
 
 - [Data entities](Setup/Data-entities.md)
 
+### Security configuration
+
+The following roles are included in the Finance utilities module: 
+- **Finance utilities manager**
+- **Finance utilities clerk**
+
+### FAQ
+
 See our FAQ for general information and troubleshooting.
 
 - [FAQ](FAQ.md)
-

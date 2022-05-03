@@ -38,31 +38,32 @@ In the report parameters, select the following:
 - Checking date: Compared to the bank statement ending date
 - Reconciliation summary - Yes/No **
 - Uncleared transaction details - Yes/No ** <br>
-** The report prints a **Reconciliation summary** report and an **Unreconciled bank transactions** report if both are set to _Yes_. <br>
+The report prints a **Reconciliation summary** report and an **Unreconciled bank transactions** report if both are set to _Yes_. <br>
 
 > Note: Ensure that all statements are reconciled and the statement posted before printing this report.
 
 #### Reconciliation summary 
-|   Content                     |   Heading                       |   Description   |
-|- |-|-|
-| **Header**                    |  Checking date                  |  Bank statement end date |  |
-||  Bank account                |  From the selection             |  |
-||  Bank account currency       |  Currency from the bank account |  |
-||  Description                 |  Bank account description       |  |
-||  Bank account statement date |  From the selection             |  |
-||  Reconciled date             |  Reconciled date from the bank reconciliation      |  |
-| **Balances** |  Closing balance per bank statement |  Closing balance as per last posted bank statement up to _Checking date_ |  |
-||  Unreconciled bank transactions  |  Bank transactions not yet reconciled up to _Checking date_. If **Uncleared transaction details** was set to _Yes_, the transaction details can be viewed on **Unreconciled bank transactions** |  |
-||  Expected closing bank account balance |  Closing balance per bank statement _PLUS_ Unreconciled bank transactions |  |
-||  Actual closing bank account balance |  Actual D365 bank account balance at _Checking date_ |  |
-||  Difference |  Difference between Expected and Actual bank account balances |  |
+
+Content                     |   Heading                       |   Description
+:--                         |:--                              |:--
+**Header**                  | Checking date                   | Bank statement end date
+||  Bank account                |  From the selection             
+||  Bank account currency       |  Currency from the bank account 
+||  Description                 |  Bank account description       
+||  Bank account statement date |  From the selection             
+||  Reconciled date             |  Reconciled date from the bank reconciliation      
+| **Balances** |  Closing balance per bank statement |  Closing balance as per last posted bank statement up to _Checking date_ 
+||  Unreconciled bank transactions  |  Bank transactions not yet reconciled up to _Checking date_. If **Uncleared transaction details** was set to _Yes_, the transaction details can be viewed on **Unreconciled bank transactions** 
+||  Expected closing bank account balance |  Closing balance per bank statement _PLUS_ Unreconciled bank transactions 
+||  Actual closing bank account balance |  Actual D365 bank account balance at _Checking date_ 
+||  Difference |  Difference between Expected and Actual bank account balances 
 
 #### Unreconciled bank transactions 
 If parameter **Uncleared transaction details** was set to _Yes_, the following will be printed for all unreconciled bank transactions to the _Checking date_.
 The **Grand total** of this section should equal to the **Unreconciled bank transactions** on **Reconciliation summary**.
 
 |   Content           |   Heading                 |   Description   |
-|-|-|-|
+|:--|:--|:--|
 |   **Header**        |  Bank account             |  As selected  |
 |                     |  Name                     |  Bank account name |
 |                     |  Routing number           |  Bank's routing number |
@@ -90,7 +91,7 @@ In the report parameters, select the following:
 - Bank account
 
 |   Content                   |   Heading                       |   Description   |
-|-|-|-|
+|:--|:--|:--|
 |   **Header**                |  Bank account                   |  As selected  |
 |                             |  Bank statement                 |  Bank statement identifier(s) (from the Reconciliation) |
 |                             |  Bank account statement to date |  Shows the most recent bank statement's date, if not selected in **To date**|

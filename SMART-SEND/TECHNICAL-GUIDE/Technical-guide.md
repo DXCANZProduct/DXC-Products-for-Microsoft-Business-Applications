@@ -28,7 +28,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Contents
-- [Installation](TECHNICAL-GUIDE/Installation-guide.md)
-- [Adding custom reports](TECHNICAL-GUIDE/Adding-custom-reports.md) 
-- [Adding custom attachments](TECHNICAL-GUIDE/Adding-custom-attachments.md)
-- [Extension example](TECHNICAL-GUIDE/SmartSendExtensionSample.zip) 
+- [Installation](Installation-guide.md)
+- [Adding custom reports](Adding-custom-reports.md) 
+- [Adding custom attachments](Adding-custom-attachments.md)
+- [Extension example](SmartSendExtensionSample.zip) 

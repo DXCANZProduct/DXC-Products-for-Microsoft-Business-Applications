@@ -38,10 +38,10 @@ The following table describes the fields that are available on the **General** t
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
-<ins>**Warnings**</ins>
+<ins>**Warnings**</ins>           |
 **Increase to a PO warning** 	    |	Pertains to value increase of Purchase orders which have Forex contracts attached. Set here if D365 must give a **Warning** or **Error** message when the increased Purchase order value exceeds the attached Forex contract amount.
 **Expiry date warning**           |	Pertains to verification on whether due date on documents match with the expiry date of Forex contract. Set here if D365 must **Warn** or give an **Error** message when the due date and expiry date do not match.
-<ins>**Cash in**</ins>
+<ins>**Cash in**</ins>            |
 **Cash in journal**               |	The journal used to create cash in transactions.
 **Default bank account**          |	Default bank account for cash in journals.
 

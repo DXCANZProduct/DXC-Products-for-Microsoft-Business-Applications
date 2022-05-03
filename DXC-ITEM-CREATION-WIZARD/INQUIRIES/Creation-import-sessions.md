@@ -43,11 +43,11 @@ When one or more files are imported against a template an import session is crea
 
 Import sessions can only be deleted if the record has a status of either *Not submitted* or *Canceled*.
 
-Deleting an import session will also remove all import session line and any reference to the line accessable from the [All creation items](All-creation-items) form.
+Deleting an import session will also remove all import session line and any reference to the line accessable from the [All creation items](../CREATION/All-creation-items.md) form.
 
 #### Submitting an import session to workflow
 
-All imported sessions will be automatically submitted to the [Item creation import workflow](Item-creation-workflows), the exception to this is where the imported file contains incomplete or incorrect data. 
+All imported sessions will be automatically submitted to the [Item creation import workflow](../SETUP/Item-creation-workflows.md), the exception to this is where the imported file contains incomplete or incorrect data. 
 
 Fields that result in a validation error can be amended within the designer accessable from the lines form. Once all records have been sucessfully validated the workflow button will become visible on the action pane of the import session form, allowing the session and all lines to be submitted for approval.
 
@@ -59,7 +59,7 @@ Import session lines represent each item contained within the imported file. The
 
 |  **Field**  | **Description** | 
 |:---|:---|     
-|  **Item creation**  | Record referenced in [All creation items](All-creation-items). |   
+|  **Item creation**  | Record referenced in [All creation items](../CREATION/All-creation-items.md). |   
 |  **Status**  | Validation status. |   
 |  **Creation number**  | Record referenced in All creation items. |   
 |  **Template version**  | The template name and version number, shared by all records included in the import session. |   

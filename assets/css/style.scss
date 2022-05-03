@@ -3,12 +3,28 @@
 
 @import 'jekyll-theme-leap-day';
 
-header {   
+header {
     background: #5F249F; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 115px;
     h1 {
         color: #FFFFFF;
         border: #000000;
     }
+}
+
+.header-img {
+  width: 103.6px;
+  height: 68.8px;
+  background: url('https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/IMAGES/DXC%20Logo_Purple+Black%20RGB.png') #FFFFFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
 }
 
 #banner { 
@@ -19,7 +35,7 @@ header {
 
 body {
    background: #D9D9D6;  
-   margin-top: -50px;
+   margin-top: -50px; 
     content {
         color: #FFFFFF;
     }
