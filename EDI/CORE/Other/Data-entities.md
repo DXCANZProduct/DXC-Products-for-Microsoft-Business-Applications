@@ -37,8 +37,7 @@ EDI > Setup > Connection setup
 **Order**         | **Entity**              | **Description**	                                         | **Dependency**
 :-----|:------------------------------------|:-------------------                                      |:------------------------
 1		  | EDI FTP sites                       | FTP and SFTP **Connection details**, excluding passwords |
-2     | EDI FTP Folder setup                | FTP and SFTP **Incoming and Outgoing paths**             | • EDI FTP sites
-•	Socks4
+2     | EDI FTP Folder setup                | FTP and SFTP **Incoming and Outgoing paths**             | • EDI FTP sites <br> •	Socks4
 
 
 ## Core setup
