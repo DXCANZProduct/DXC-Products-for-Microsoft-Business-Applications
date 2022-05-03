@@ -122,7 +122,7 @@ The following EDI Header staging fields are available on the header page.
 **Terms of payment**	    | Terms of payment	                    | Sales Order > Price and discount > Payment
 **Description**             | Terms of payment (Description)	    | Sales Order > Price and discount > Payment (Description)
 **Carrier**                 | Carrier assigned to the packing slip	| Consignments > Carrier
-**Bill of lading ID**		
+**Bill of lading ID**		|   |
 **Customer GLN**            | The Global location number for this customer      | Sales Order > EDI > Customer GLN
 <ins>**Status**</ins>       |   |
 **Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
