@@ -38,10 +38,10 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 
 **Field**           |	**Description**	                          | **Options/Example**
 :-------            |:-------                                   |:----------
-<ins>**Advanced shipping notice**</ins>
+<ins>**Advanced shipping notice**</ins> |
 **Item ID source**  |	Determine the method of item identification used by this vendor when selling products	  | •	**Our item number** - this is the item ID on the items form <br> •	**External item number** - this is the item Id on the vendor external item form <br> •	**GTIN** - this is the GTIN assigned to an item <br> •	**Barcode** - This is the Barcode assigned to an item.
 **Blank unit**      |	Ability to select which unit to use when ASN staging line’s **Unit** is blank	  | •	**Purchase line unit** - this is the unit id on the purchase order line form <br> •	**Inventory unit** - this is the item’s inventory unit <br> •	**Error** –An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error 
-<ins>**Shipment type**</ins>
+<ins>**Shipment type**</ins>  |
 **Part shipment**   |	Specify the part shipment identifiers for ASN	    | PS
 **Final shipment**  |	Specify the final shipment identifiers for ASN	  | FS
 **Update Final shipment deliver remainder**     | Ability to update the purchase order line's deliver remainder with final shipment | •	**Yes** - If delivery is marked as Final shipment for the order line, the deliver remainder is updated. This can be used for example where no backorders are allowed and to keep open purchase order quantities accurate. <br> •	**No** - No updates to purchase order line's deliver remainder with final shipment.
