@@ -45,6 +45,7 @@ EDI purchase orders can be sent to trading partners with many order purposes.  T
 -	Specify the vendor's value used to identify the **EDI order purpose**
 
 Examples: <br>
+
 **Order purpose** 	              | **X12 examples**                      | **EDIFACT examples**
 :-------------------------------- |:------------------------------------- |:-------------------------------------
 **Original**                      |	00	                                  | 9
