@@ -48,11 +48,11 @@ The following table describes the fields that are available on the **General** t
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
-<ins>**Document Types**</ins>
+<ins>**Document Types**</ins>     |
 **File Attachment Document Type** |	Specify the **Document management type** used to store EDI files that are sent and received for review. <br> Ensure file types/extensions that will be received from Trading partners, are included in **File types** at **Organization administration > Document management > Document management parameters**.
 <ins>**Connection**</ins>         |
 **Connection profile**	          | Specify the default **Connection profile** to be used when sending Outbound documents. This default can be overridden on Trading partner or Trading partner’s document level.
-<ins>**Date**</ins>
+<ins>**Date**</ins>               |
 **Date and time format**          |	**Standard** – Enables standard date/time formats. Enables the following fields: <br> -	Standard date and time format <br> -	Standard time format <br> -	Culture <br> **Custom** – Provides ability to specify a custom date/time format. Enables the following fields <br> -	Custom date and time format <br> - Custom time format
 **Standard date and time format** |	Enabled when **Date and time format** is set to _Standard_. [Options](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings)
 **Standard time format**          |	Select between *Short time* or *Long time*
@@ -72,7 +72,7 @@ The following table describes the fields that are available on the **General** t
 **Formatted date and time example** |	Displays example date and time for Custom date and time format (in UTC timezone)
 **Custom time format**            |	Enter custom time format
 **Formatted time example**        |	Displays example time for **Custom time format** (in UTC timezone)
-<ins>**Sales orders**</ins>
+<ins>**Sales orders**</ins>       |
 **Allow historic PO types**       |	Customer order types: Confirmation, Cancel and Change have been moved to Order purpose. This field provides Backwards compatibility to still show these deprecated options under order types
 
 ## Number sequence
