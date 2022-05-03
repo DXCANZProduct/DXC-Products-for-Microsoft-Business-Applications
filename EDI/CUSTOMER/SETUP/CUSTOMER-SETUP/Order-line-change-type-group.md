@@ -47,6 +47,7 @@ Manual Processing method overrides below update tolerances. It is still required
     - **Reject with warning log**: If any of the line changes received are Reject, the sales order will not be updated. The Staging record will error, but change can still be viewed via Changes on the Sales order header – EDI ribbon.
 
 The Order line change types are:
+
 **Order line change type** 	        | **If update is allowed**                                      | **X12 examples**
 :-----------------------------------|:-------------------------------------                         |:----------------:
 **No change**                       | Line is ignored	                                            | NC
@@ -60,6 +61,7 @@ The Order line change types are:
 **Changes to line items**           | Existing sales order line’s price, quantity and/or dates are changed. Document setting (use customer price and allowed variance) and Validation (Sales price) applies on what price update values are allowed	| CA
 
 D365 sales order line allowed changes by Order line change type:
+
 **Order line change type**  | **Requested dates** | **Add new items** | **Cancel deliver remainder** | **Sales qty increase** | **Sales qty decrease** | **Sales unit price**
 :---------------------------|:--:                 | :--:              | :--:                         | :--:                   | :--:                   | :--:
 **No change**	            | N                   |	N	              | N                            |	N                     | N                      | N
