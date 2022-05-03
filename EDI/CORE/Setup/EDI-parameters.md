@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [SAB_EDIParameters]
 audience: [Application User]
 # ms.devlang: 
 ms.reviewer: [jdutoit2]
