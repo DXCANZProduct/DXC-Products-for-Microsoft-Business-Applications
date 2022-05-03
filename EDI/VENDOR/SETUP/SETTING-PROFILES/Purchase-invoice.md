@@ -38,7 +38,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 
 **Field**           |	**Description**	                          | **Options/Example**
 :-------            |:-------                                   |:----------
-<ins>**Purchase Invoice**</ins>
+<ins>**Purchase Invoice**</ins> |
 **Item ID source**  |	Determine the method of item identification used by this vendor when selling products	  | •	**Our Item number** - this is the item ID on the items form <br> •	**External item number** - this is the item Id on the vendor external item form <br> •	**GTIN** - this is the GTIN assigned to an item <br> •	**Barcode** - This is the Barcode assigned to an item.
 **Purchase order line matching strategy**   |	Specify the method of matching the EDI invoice line to D365 purchase order line |	•	**Item and line number** – if the Vendor sends the D365 purchase order line number, select this option. EDI will match by line number but error if Item numbers doesn’t match. <br> •	**Item number descending** – if the Vendor doesn’t send the D365 purchase order line number, select this option. EDI will match by Item number descending.
 **Price includes sales tax**  |	Specify if the Misc. Amount and Unit price received from the Vendor includes tax. Converted to match purchase order	  | •	**As per purchase order** – The vendor is setup in D365 to match vendor’s method of including/excluding tax in pricing <br> •	**Excluding tax** – Vendor sends pricing excluding tax <br> •	**Including tax** – Vendor sends pricing including tax
@@ -52,7 +52,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Vendor exchange rate**  |	Option to use Vendor’s exchange rate as per EDI document	If EDI invoice currency doesn’t equal purchase order's currency, the following rate is used to convert EDI invoice values to PO currency  | •	**Yes** – Vendor exchange rate is used  <br> •	**No** – System exchange rate is used
 **Attach file**     |	Option to attach original EDI file to Purchase invoice’s Attachments	        | • **Yes** - Attaches the file from Inbound file's document handling to the D365 purchase invoice <br> • **No** - No file attached to D365 purchase invoice
 **Submit pending tax invoice with discrepancies** |	When workflow is enabled for vendor invoices, specify if the pending invoice should be submitted to workflow if a discrepancy has been found	Only applicable where Workflow is enabled for vendor invoices | •	**Yes** – Invoice with discrepancy is submitted to workflow <br> •	**No** – Invoice with discrepancy is not submitted to workflow
-<ins>**Invoice type**</ins>
+<ins>**Invoice type**</ins> | 
 **Invoice**         |	Specify vendor's mapping for Invoice	    | EDIFACT example is 380
 **On hold**         |	Specify if **Invoice** should be created as on hold	  | Yes/No
 **Credit adjustment note**  |	Specify vendor's mapping for **Credit adjustment note**     |	EDIFACT example is 381
