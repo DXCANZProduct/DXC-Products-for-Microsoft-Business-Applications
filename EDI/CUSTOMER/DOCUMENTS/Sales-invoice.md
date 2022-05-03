@@ -213,7 +213,7 @@ The following EDI Line staging fields are available on the lines page.
 **Unit tax rate**	        | Tax unit rate included for the order line	                | Tax unit rate for the Tax & Item tax groups
 **Sales tax amount**	    | Tax line amount included for the order line	            | Tax amount for the Tax & Item tax groups
 **Unit Price incl. tax**    | Discounted unit price including tax	                    | Sales line > Unit price incl. tax (discounted)
-Sales unit price include tax	Unit price before discounts including tax	Sales Line > Unit Price incl. tax
+**Sales unit price include tax**    |	Unit price before discounts including tax	    | Sales Line > Unit Price incl. tax
 **Unit**                    | Unit of measure	                                        | Sales line > Unit
 **Quantity**                | Invoice quantity	                                        | Invoice journal line > Quantity
 **Ordered quantity**        | Sales order line’s quantity	                            | Sales line > Quantity
