@@ -41,12 +41,12 @@ POA Response codes are used to identify the status of information used in a Purc
 
 **Response code** 	              | **Description**                       | **Applicable to**       | **Example**
 :-------------------------------- |:------------------------------------- |:----------------------- |:------------------------
-<ins>**Header response codes**</ins>
+<ins>**Header response codes**</ins>  | 
 **Header – accept**               |	Order accepted	                      | POAVendCode / POA code  | A
 **Header – accepted with reserve**|	Order accepted with reserve	          | POAVendCode / POA code  | AR
 **Header – change**               |	Header: any change to Delivery Window <br> Line: any change to Quantity, Price or Pack Size    | POAVendCode / POA code  | C	
 **Header – not accepted**         |	Order not accepted	                  | POAVendCode / POA code  | NA
-<ins>**Line response codes**</ins>
+<ins>**Line response codes**</ins>  |
 **Line price – accept**           |	Item price accepted                   |	POAVendCodeItem / POA code item      | PO
 **Line price – advise**           |	Advise of a price difference	      | POAVendCodeItem / POA code item      | PA
 **Line item – accept**            |	Item quantity accepted	              | POAVendCodeItem / POA code item      | IA
