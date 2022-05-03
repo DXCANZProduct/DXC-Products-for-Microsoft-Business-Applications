@@ -81,7 +81,7 @@ Used to map D365/EDI value to Customer's value and assigned on Customer Trading 
 		- Customer purchase order acknowledgement (POACustCode) 
 		- Customer purchase order acknowledgement (POACustCodeItem)
 		- Customer purchase order acknowledgement (POACustCodeShipment)
-	- [Order line change type group](..SETUP/CUSTOMER-SETUP/Order-line-change-type-group.md)
+	- [Order line change type group](../SETUP/CUSTOMER-SETUP/Order-line-change-type-group.md)
 		- Customer purchase order change (ChangeTypeValue)
 
 - Core Setup: **EDI > Setup** <br>
