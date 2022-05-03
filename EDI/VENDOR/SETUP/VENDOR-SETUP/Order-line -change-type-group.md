@@ -42,6 +42,7 @@ Order line change type codes are used to identify the type of line change sent t
 -	Specify the vendor's value for the line change type in **EDI order change type**
 
 The Order line change types are:
+
 **Order line change type** 	        | **Description of D365 purchase order line change**            | **X12 examples**
 :-----------------------------------|:-------------------------------------                         |:----------------:
 **Add additional item**             | New purchase order line was added to existing purchase order	| AI
