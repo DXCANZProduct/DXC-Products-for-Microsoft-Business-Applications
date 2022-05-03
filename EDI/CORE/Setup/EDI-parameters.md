@@ -96,6 +96,7 @@ If required, create new Hold codes via **Sales and marketing > Setup > Sales ord
 - Remove inventory reservations
 
 The following table describes the fields that are available on the **Hold codes** tab of the **EDI parameters** page.
+
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
 **POC pending hold code**         |	Specify the hold code to be used for sales orders that require a Purchase order confirmation (POC). <br> When Customer purchase order acknowledgement document setting **PO confirmation required** is set to Yes, the Sales order will be created with this Hold code.
