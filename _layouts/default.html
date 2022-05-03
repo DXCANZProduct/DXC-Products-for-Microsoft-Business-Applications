@@ -19,13 +19,9 @@
 
       <header>
         <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>   
         <div class="header-img">
-            <div class="header-img-body">
-            <h5 class="header-img-title">Home</h5>
-            <p class="header-img-text">Home text.</p>
-            <a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/" class="btn btn-primary stretched-link">Return to main screen</a>
-            </div>
+            <div onclick="location.href='https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications';" style="cursor:pointer;"></div>
         </div>
         
       </header>
