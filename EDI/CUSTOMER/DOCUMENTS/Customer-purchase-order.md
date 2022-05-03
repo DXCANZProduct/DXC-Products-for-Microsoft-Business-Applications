@@ -221,7 +221,7 @@ The following EDI Header staging fields are available on the header page.
 **EDI number**          | EDI Staging table record id                           | Sales Order > EDI > Original EDI number
 **Company account**     | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here.   | Sales order > EDI > Company GLN <br> If the **Company GLN** staging field is blank, the Company GLN on the Trading partner will be used to populate the **Company GLN** on the Sales order header.
-**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created a D365 Sales order, Sales agreement or Release order. • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created a D365 Sales order, Sales agreement or Release order. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 <ins>**Reset status**</ins>		|   |
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
@@ -250,7 +250,7 @@ The following EDI Header staging fields are available on the header page.
 **Advertisement date**	    | The advertisement date applicable for the order	                        | Sales Order > EDI > Advertisement date
 **Template Id**             | The EDI templates used to create the staging table record	                
 **PO version number**       | The PO version number from the EDI record.	                                | Sales Order > EDI > Original version number
-<ins>**Delivery**</ins>	
+<ins>**Delivery**</ins>	    |   |
 **Delivery Name**           | Address for Delivery	                                                    | Sales Order > Delivery Address. If the store code wasn't used to populate sales order address.
 **Store zone**              | The store zone from the EDI record is shown here.	                        | Sales Order > EDI > Store zone
 **Store code**              | The store code from the EDI record is shown here.	                        | Sales Order > EDI > Store code
