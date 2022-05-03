@@ -45,6 +45,7 @@ Leave XML and JSON as Standard date format to utilities the standard formats.
 If they are setup as Custom, the custom date and time format must be specified.
 
 The following table describes the fields that are available on the **General** tab of the **EDI parameters** page.
+
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
 <ins>**Document Types**</ins>
