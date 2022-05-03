@@ -49,10 +49,10 @@ Example issues that could result in an Error status:
 
 **Step** 	                        | **Path**                              | **Example issue and fix**
 :-------------------------------- |:------------------------------------- |:-------------------------------------
-<ins>**Files**</ins>
+<ins>**Files**</ins>              |                                       |
 **Inbound to staging**            |	EDI > Files > Inbound files           |	Document template issues, for example assigned template doesn’t match file’s format. <br> Fix: Reset template to correct template or fix assigned template
 **Export**                        |	EDI > Files > Outbound files          |	Connection issue. <br> Fix: If setup issue, fix on Connection setup else fix network issue.
-<ins>**Documents**</ins>	
+<ins>**Documents**</ins>	        |                                       |
 **Staging to target**             |	EDI > Documents                       | Business logic issues, for example unmapped order type for the Customer purchase order record. <br> Fix: Add mapping to Order type group
 **Process to outbound**           |	EDI > Documents                       |	Document template issues, for example text document type doesn’t have any mappings which results in Empty file. <br> Fix: Assign field mappings to template.
 
