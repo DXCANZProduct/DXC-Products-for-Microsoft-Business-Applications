@@ -102,12 +102,12 @@ The following EDI Header staging fields are available on the header page.
 
 **Field**	            | **Description**	                                      | **Source D365 field**
 :---                    |:---                                                     |:---
-<ins>**Identification FastTab**</ins>		
-<ins>**Identification**</ins>		
+<ins>**Identification FastTab**</ins>		|   |
+<ins>**Identification**</ins>		|   |
 **EDI number**          | EDI Staging table record id                             | EDI parameters > Number sequences > EDI number
 **Company**             | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here      | 
-**Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	            
+**Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	           
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.	• **Canceled** – The record has been manually canceled and will be excluded from processing.
 <ins>**Reset status**</ins>		
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
@@ -117,7 +117,7 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Overview**</ins>	
 **Customer requisition**	| Customers purchase order number to be populated in the Customer requisition field of the sales order header | Sales Order > General > Customer requisition
 **Customer reference**	    | Customers purchase order number to be populated in the Customer reference field of the sales order header   |	Sales Order > General > Customer reference
-<ins>**Details**</ins>		
+<ins>**Details**</ins>		|   |
 **Delivery terms**          | Customer delivery terms	            | Sales Order > Delivery > Delivery terms
 **Terms of payment**	    | Terms of payment	                    | Sales Order > Price and discount > Payment
 **Description**             | Terms of payment (Description)	    | Sales Order > Price and discount > Payment (Description)
@@ -127,8 +127,8 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Status**</ins>
 **Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
 **Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
-<ins>**General FastTab**</ins>
-<ins>**Delivery address**</ins>
+<ins>**General FastTab**</ins>  |   |
+<ins>**Delivery address**</ins> |   |
 **Delivery name**           | Address for delivery	                | Sales Order > Delivery Address Information	
 **City**                    | Delivery address - City	
 **Country/region**          | Delivery address - Country/region	
@@ -154,7 +154,7 @@ The following EDI Header staging fields are available on the header page.
 **County**                  | Warehouse address - County	
 **District**                | Warehouse address - District	
 **Post box**                | Warehouse address - Post box	
-<ins>**Invoice**</ins>      | Invoice details		
+<ins>**Invoice**</ins>      | Invoice details		|
 **Invoice**                 | D365 Invoice number	                | Invoice > Invoice Number
 **Name**                    | Tax invoice account name	            | Invoice > Invoice Account Name
 **Invoice contact name**	| Invoice account’s primary contact name	| Customer > Contact information
@@ -180,7 +180,7 @@ The following EDI Header staging fields are available on the header page.
 **Street**                  | Invoice address - Street	
 **Street number**           | Invoice address - Street number	
 **ZIP/postal code**         | Invoice address - ZIP/postal code	
-<ins>**Company**</ins>      | 		
+<ins>**Company**</ins>      | 		|
 **Company name**            | Company name	
 **Company address**         | Address for company                    | Invoice journal > Company > Address information
 **Street number**           | Company address - Street number
@@ -220,7 +220,7 @@ Sales unit price include tax	Unit price before discounts including tax	Sales Lin
 **Backorder quantity**      | Ordered quantity minus Invoiced quantity
 **Line amount excluding tax**   | Line amount excluding tax	                            | Sales line amount > Line amount excl. tax
 **Line amount including tax**   | Line amount including tax	                            | Invoice journal line > Line amount incl. tax
-**Delivery name**		                                                                | Sales line > Delivery Address Information
+**Delivery name**		        |                                                       | Sales line > Delivery Address Information
 **Store code**	            | Store code for the sales line	                            | Sales line > Store code
 **Customer reference**	    | Customers purchase order number as per Customer reference field in the sales order line	
 **Customer requisition**	| Customers purchase order number as per Customer requisition field of the sales order line	
