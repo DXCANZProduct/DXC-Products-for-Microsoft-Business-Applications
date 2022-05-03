@@ -44,9 +44,10 @@ This section describes the setup applicable to **Customer** trading partners.
 
 #### Options
 The following table describes the customer module fields that are available on the **Options** FastTab of the **Trading partners** page.
+
 **Field**                          | **Description**               
 :---------                         |:--------
-<ins>**Order**</ins>	
+<ins>**Order**</ins>	             |
 **Customer EDI order types**       |	EDI purchase orders can be received from trading partners with many order types.  The type identifier received can change the way the order is processed within D365. <br> Note: For further information see [Setup purchase order types](CUSTOMER-SETUP/Purchase-order-types.md)
 **Order purpose**                  |	Code identifying the purpose of the document. <br> Note: For further information see [Setup order purpose](CUSTOMER-SETUP/Order-purpose-group.md)
 **Order line change type group**   |	Code specifying the type of change to the line item. <br> Note: For further information see [Setup order line change type](CUSTOMER-SETUP/Order-line-change-type-group.md)
