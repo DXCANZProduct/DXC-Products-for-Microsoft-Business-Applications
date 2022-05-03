@@ -114,7 +114,7 @@ The following EDI Header staging fields are available on the header page.
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**Overview**</ins>	
+<ins>**Overview**</ins>	    |   |
 **Customer requisition**	| Customers purchase order number to be populated in the Customer requisition field of the sales order header | Sales Order > General > Customer requisition
 **Customer reference**	    | Customers purchase order number to be populated in the Customer reference field of the sales order header   |	Sales Order > General > Customer reference
 <ins>**Details**</ins>		|   |
