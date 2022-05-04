@@ -38,12 +38,12 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 
 **Field**           |	**Description**	                          | **Options/Example**
 :-------            |:-------                                   |:----------
-<ins>**Picking list**</ins>
+<ins>**Picking list**</ins> |
 **Batch Id update** | Where the batch id received is different to batch id in the original pick, select the validation type	| Pick list batch id = ABC123 <br> Pick list registration batch id – 123ABC <br> Options: <br> • **Allow** – Update allowed <br> • **Warning** - An infolog is displayed with a warning. It is possible to carry on processing <br> • **Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected.
 **Line matching strategy**  | Determine strategy on finding matching picking list line	| • **Lot id** – Use Lot id to find matching line <br> • **Line number** – Use Picking list line number to find matching line. Lot id is not required in the file, but if provided it will use Lot id and Line number to find the matching line.
-<ins>**Sales order**</ins>
+<ins>**Sales order**</ins>  |
 **Post packing slip** |	When the pick list registration is received and processed, the packing slip can be automatically posted | • **No** – Only the picking list registration is posted. User will need to manually post the Sales order’s packing slip <br> • **Yes** – The picking list registration and Sales order’s packing slip will be posted. The Packing slip’s _Ship date_ will be set to Today’s date (as per user’s time zone). If you are licensed for Customer EDI and the Sales order’s Customer is setup to receive ASN, the **Customer advanced shipping notice** staging record will also automatically be created.
-<ins>**Transfer order**</ins>
+<ins>**Transfer order**</ins> |
 **Ship transfer order** |	When the pick list registration is received and processed, the transfer order can be automatically shipped.	| • **No** – Only the picking list registration is posted. User will need to manually Ship transfer order <br> • **Yes** – The picking list registration is posted, and the Transfer order is automatically shipped. The posting date will be set to Today’s date (as per user’s time zone)
 
 ## Where used
