@@ -171,29 +171,29 @@ The following EDI Header staging fields are available on the header page.
 
 **Field**	            | **Description**	                                      | **PO > EDI tab**
 :---                    |:---                                                     |:---
-<ins>**Identification FastTab**</ins>		
-<ins>**Identification**</ins>		
+<ins>**Identification FastTab**</ins>		|
+<ins>**Identification**</ins>		|
 **EDI number**          | EDI Staging table record id                             | Change EDI number
 **Company**             | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here      | Company GLN
-**Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	            
+**Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	           
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.	<br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
-<ins>**Reset status**</ins>		
+<ins>**Reset status**</ins>		|
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**Overview**</ins>		
+<ins>**Overview**</ins>		|
 **Purchase order**          | The D365 purchase order number	
 **Purchase order date**     | The original purchase order date from the purchase order is shown here	| Original order date
 **Purchase change date**    | The change purchase order date from the PO is shown here                  | Change order date
 **EDI order type**          | The EDI order type is shown here. <br> Mapped value from [Order type group](../SETUP/VENDOR-SETUP/Order-type-group.md)  | Order type
 **EDI order purpose**       | The EDI order purpose is shown here. <br> Mapped value from [Order purpose group](../SETUP/VENDOR-SETUP/Order-purpose-group.md)  | Order purpose code
-<ins>**Status**</ins>	
+<ins>**Status**</ins>	    |
 **Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
 **Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
-<ins>**General FastTab**</ins>
-<ins>**Details**</ins>
+<ins>**General FastTab**</ins>  |
+<ins>**Details**</ins>      |
 **Vendor reference**        | Vendor’s order reference	
 **Vendor account**          | Vendor assigned to the purchase order	
 **Vendor name**             | Vendor name	
@@ -206,7 +206,7 @@ The following EDI Header staging fields are available on the header page.
 **Company phone**           | Company phone	
 **Company name**            | Company name	
 **Tax registration number** | Company tax registration number	
-<ins>**Vendor invoicing**</ins>		
+<ins>**Vendor invoicing**</ins>		|
 **Vendor name**             | Vendor name	
 **Vendor primary street number**    | Vendor primary address - street number	
 **Vendor primary street**           | Vendor primary address - street	
@@ -216,7 +216,7 @@ The following EDI Header staging fields are available on the header page.
 **Vendor primary ZIP/postal code**  | Vendor primary address - ZIP/postal code	
 **Vendor primary country/region**   | Vendor primary address – country/region	
 **Tax exempt number**               | Vendor tax exempt number	
-<ins>**Customer invoicing**</ins>	
+<ins>**Customer invoicing**</ins>	|
 **Our account number**              | Bill to - Our account number in the vendor’s system. As per ‘Our account number’ loaded on Vendor’s Invoice account	| Bill to
 **Name**                            | Bill to - Name	
 **Name or description**             | Bill to - Invoice address name	
@@ -227,15 +227,15 @@ The following EDI Header staging fields are available on the header page.
 **State**                           | Bill to - State	
 **ZIP/postal code**                 | Bill to - ZIP/postal code	
 **Country/region**                  | Bill to - Country/region	
-<ins>**Version**</ins>		
+<ins>**Version**</ins>		        |
 **PO version number**               | The version of the D365 purchase order number	                    | Change version number
 **Created date and time**           | The date and time the selected record was created in the staging table	
 **Acknowledgement requested**       | Indicates if functional acknowledgement has been requested from the trading partner for the outbound document.	
-<ins>**Agreement**</ins>		    
+<ins>**Agreement**</ins>		    |
 **Purchase agreement**              | The D365 purchase agreement number (applicable for release orders)	
 **Effective date**                  | Purchase agreement effective date	
 **Expiration date**                 | Purchase agreement expiration date	
-<ins>**Delivery**</ins>		
+<ins>**Delivery**</ins>		        |
 **Delivery name**                   | Ship to - Name	
 **Our account number**              | Ship to - Our account number in the vendor’s system. As per ‘Our account number’ loaded on Vendor’s Order account	Ship to
 **Store code**                      | Ship to - Store code	
@@ -257,21 +257,21 @@ The following EDI Header staging fields are available on the header page.
 **Text**                            | Header note to be sent with purchase order	
 **Requester**                       | Requester	                                                        | Requester
 **Attention information**           | Attention information	
-<ins>**Transportation**</ins>		
+<ins>**Transportation**</ins>		|
 **Shipping carrier**                | Shipping carrier	
 **Carrier qualifier**               | Code designating the system/method of code structure used for shipping carrier	
 **EDI carrier mode**                | Code specifying the method or type of transportation for the shipment. <br> Mapped value from [Carrier mode](../SETUP/VENDOR-SETUP/Carrier-mode.md)
-<ins>**Miscellaneous**</ins>		
+<ins>**Miscellaneous**</ins>		|
 **Misc. indicator**                 | Code which indicates an allowance or charge for the service specified. <br> Mapped value from [Misc. charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator.md)	
 **EDI charges code**                | Code identifying the service, promotion, allowance, or charge. <br> Mapped value from [Charges code](../SETUP/VENDOR-SETUP/Charges-code.md)
-<ins>**Totals**</ins>	
+<ins>**Totals**</ins>	            |
 **Subtotal amount**                 | Subtotal of all purchase order lines	
 **Line discount**                   | Discount for all purchase order lines	
 **Misc. amount**                    | Purchase order header Misc. charge/allowance amount	
 **Tax amount**                      | Tax amount	
 **Round-off**                       | Round-off	
 **Total amount**                    | Total amount	
-<ins>**Payment**</ins>		
+<ins>**Payment**</ins>		        |
 **Currency**	                    | Currency	
 **Terms code**                      | Payment terms. <br> Mapped value from [Payment terms type group](../SETUP/VENDOR-SETUP/Payment-terms-type-group.md)
 **Terms net days**                  | Payment terms net due days calculated from delivery date. <br> Example with delivery date 16/04/2019 <br> •	Current month + 30 days = 44 <br> •	Current month + 2 months + 20 days and payment day = 15th = 90 <br> •	Current quarter + 15 days = 90 <br> •	Current year + 1 month = 290 <br> •	Current week + 7 days = 11 <br> •	Net + 1 month + 15 days = 45 <br> •	COD = 0
