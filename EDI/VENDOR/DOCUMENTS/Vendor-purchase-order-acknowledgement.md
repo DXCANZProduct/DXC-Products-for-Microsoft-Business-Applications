@@ -173,6 +173,7 @@ The following tables describe the fields and buttons that are available on the *
 The **Header** POC response codes are managed on this tab.
 
 ##### Fields
+
 Field	                    | Description
 :--                         |:--
 **Response code**           | Vendor’s purchase order acknowledgement header response
@@ -194,6 +195,7 @@ Button                      | Description
 The following tables describe the fields and buttons that are available on the **Line price** tab of the Confirmation page. <br>
 
 ##### Fields
+
 Field	                    | Description
 :--                         |:--
 **Log**                     | This will show a warning if Validation failed with error tolerance set to warning
@@ -221,6 +223,7 @@ Button              | Description
 The following tables describe the fields and buttons that are available on the **Line quantity** tab of the Confirmation page. <br>
 
 ##### Fields
+
 Field	                    | Description
 :--                         |:--
 **Log**                     | This will show a warning if Validation failed with error tolerance set to warning
@@ -248,6 +251,7 @@ Button                  | Description
 The following tables describe the fields and buttons that are available on the **Line pack** tab of the Confirmation page. <br>
 
 ##### Fields
+
 Field	                    | Description
 :--                         |:--
 **Log**                     | This will show a warning if Validation failed with error tolerance set to warning
@@ -275,6 +279,7 @@ Button                      | Description
 The following tables describe the fields and buttons that are available on the **Line inner** tab of the Confirmation page. <br>
 
 ##### Fields
+
 Field	                    | Description
 :--                         |:--
 **Log**                     | This will show a warning if Validation failed with error tolerance set to warning
