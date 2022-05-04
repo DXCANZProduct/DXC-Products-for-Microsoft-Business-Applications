@@ -65,6 +65,7 @@ Data entity templates must be established to enable the importing of files into 
 9.	Select each entity and select Download file from the menu bar
 10.	This downloads a CSV template file which will be used in the Import project setup
  
+ 
 ### Create Data Entity Import Project
 An Import Project (processing group) must be established to enable the importing of files. To create an Import project; 
 1. Navigate to **Workspaces > Data management > Import**
@@ -84,7 +85,7 @@ An Import Project (processing group) must be established to enable the importing
 6. Select Close
 7. Repeat the setup for
     * Inventory adjustment journal (Inventory adjustment journal headers and lines V2)
-    * Inventory movement journal (Inventory adjustment journal headers and lines V3)
+    * Inventory movement journal (Inventory movement journal headers and lines V3)
  
 ### Security Roles
 The Import project needs to have security roles applied to it in order for non-Administrator users to have permissions to import files into the journals. It is recommended that the following roles are set to use the import features:
