@@ -63,6 +63,7 @@ Order line no	  | Qty	  | Delivery date
 
 Voyage: Qty 100 and ship date 28 March 2022. <br>
 Each strategy will use the following source line number(s):
+
 Top down	            | Expected date	  | Quantity
 :--                   |:--              |:--
 Line 1 (qty 90) <br> Line 2 (qty 10)  | Line 3 (qty 100) | Line 2 (qty 100)
