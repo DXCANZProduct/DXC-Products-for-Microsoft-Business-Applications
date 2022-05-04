@@ -35,6 +35,7 @@ The Trading partner fields are used to describe how the prequisites setups are a
 Users can access the form by navigating to **EDI > Setup > Trading partners** <br>
 
 Customer Trading Partner Setup - Quick Summary:
+
 **Setup** 	                      | **Short description**                 | **Setup path**
 :-------------------------------- |:------------------------------------- |:-------------------------------------
 <ins>**Options**</ins>		        |   |
