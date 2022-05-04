@@ -44,6 +44,7 @@ This section describes the setup applicable to **3PL** trading partners.
 
 #### Options
 The following table describes the 3PL module fields that are available on the **Options** FastTab of the **Trading partners** page.
+
 **Field**                            | **Description**               
 :---------                          |:--------
 **Inventory journal name mapping**  |	Select inventory journal to use for inventory adjustments. <br> Note: For further information see [Setup inventory journal name mapping](3PL-SETUP/Inventory-journal-name-mapping.md)
