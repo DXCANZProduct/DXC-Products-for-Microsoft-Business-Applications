@@ -198,32 +198,32 @@ xCBL standard has the option of sending miscellaneous charges/ allowance as eith
 
 **Field**	            | **Description**	                                    | **D365 Target**
 :---                    |:---                                                   |:---
-<ins>**Identification FastTab**</ins>
-<ins>**Identification**</ins>		
+<ins>**Identification FastTab**</ins>   |
+<ins>**Identification**</ins>		|
 **EDI number**          | EDI Staging table record id                           | History page on D365 PO
 **Company account**     | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here.   | 
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created a D365 purchase order invoice. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
-<ins>**Reset status**</ins>		
+<ins>**Reset status**</ins>		|
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**Overview**</ins>	
+<ins>**Overview**</ins>	    |
 **Invoice**                 | Vendor’s invoice id for the Purchase invoice record.	    | Invoice> Invoice number
 **Document date**           | Purchase invoice’s document date	                        | Invoice > Document date
 **Invoice type**            | Determines if the EDI document is an invoice or credit adjustment note. EDI amounts for credit adjustment note will be positive in EDI and will be converted to negative amounts in target credit adjustment note	
 **EDI document purpose**    | The EDI document purpose is shown here. Currently only original invoice supported. This field is just for information.	
-<ins>**Status**</ins>		
+<ins>**Status**</ins>		|
 **Group control number**    | Group control number for outbound document. To be used to match inbound functional acknowledgement, where applicable.	
 **Sent**                    | Indicates if outbound functional acknowledgement has been sent to the trading partner for the inbound document.	
-<ins>**General FastTab**</ins>	
-<ins>**Purchase invoice**</ins>		
+<ins>**General FastTab**</ins>	|
+<ins>**Purchase invoice**</ins>	    |	
 **Invoice**                 | Vendor’s purchase invoice id	                            | Invoice > Invoice number
 **Invoice reference**       | Contains external references to the Invoice that are important to the processing and use of the Invoice.	| Invoice > Document number
 **Header note**             | Contains any free form text pertinent to the entire invoice or to the Invoice document itself	
 **Tax point date**          | In xCBL standard. In most cases, if a business is invoice accounting for VAT, the tax point is the same date as the VAT invoice, and if a business is cash accounting for VAT, the tax point is the date when the money is received. There are exceptions though, for example if a business supplies goods more than 14 days before it issues a VAT invoice for those goods, the tax point is the day the goods were supplied.	
-<ins>**Details**</ins>	
+<ins>**Details**</ins>	    |
 **Vendor account**          | Vendor account for the staging record	
 **Vendor name**             | Vendor name	
 **Trading partner GLN**     | The vendor’s global location number is shown here.	
@@ -235,7 +235,7 @@ xCBL standard has the option of sending miscellaneous charges/ allowance as eith
 **Company phone**           | Company phone	
 **Company name**            | Company name	
 **Tax registration number** | Company tax registration number	
-<ins>**Vendor invoicing**</ins>		
+<ins>**Vendor invoicing**</ins>		|
 **Vendor name**             | Vendor name	
 **Vendor primary street number**    | Vendor primary address - street number	
 **Vendor primary street**   | Vendor primary address - street	
@@ -244,7 +244,7 @@ xCBL standard has the option of sending miscellaneous charges/ allowance as eith
 **Vendor primary state**    | Vendor primary address - state	
 **Vendor primary ZIP/postal code**  | Vendor primary address - ZIP/postal code	
 **Vendor primary country/region**   | Vendor primary address – country/region	
-<ins>**Customer invoicing**</ins>		
+<ins>**Customer invoicing**</ins>		|
 **Bill to**                 | Our account number as loaded on Vendor’s Invoice account	
 **Name**                    | Bill to - Name	
 **Name or description**     | Bill to - Invoice address name	
@@ -255,9 +255,9 @@ xCBL standard has the option of sending miscellaneous charges/ allowance as eith
 **State**                   | Bill to - State	
 **ZIP/postal code**         | Bill to - ZIP/postal code	
 **Country/region**          | Bill to - Country/region	
-<ins>**Version**</ins>		
+<ins>**Version**</ins>		|
 **Created date and time**   | The date and time the selected record was created in the staging table.	
-<ins>**Delivery**</ins>	
+<ins>**Delivery**</ins>	    |
 **Delivery name**           | Ship to - Name	
 **Our account number (Ship to)**    | Our account number as loaded on Vendor’s Order account	
 **Store code**              | Ship to - Store code	
@@ -269,7 +269,7 @@ xCBL standard has the option of sending miscellaneous charges/ allowance as eith
 **ZIP/postal code**         | Ship to - ZIP/postal code	
 **Country/region**          | Ship to - Country/region	
 **Attention information**   | Attention information	
-<ins>**Miscellaneous**</ins>		
+<ins>**Miscellaneous**</ins>		|
 **Misc indicator**	        | Code which indicates an allowance or charge for the service specified. Mapped value setup in [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator.md). <br> Mandatory if Misc amount, Misc quantity or Misc percent populated. <br> If the indicator indicates it is an Allowance the EDI values provided will be made negative since all EDI values would be positive.	    | Invoice > Affects sign of Invoice charges value
 **EDI charges code**        | Code identifying the service, promotion, allowance, or charge. Mapped value setup in [Charges code](../SETUP/VENDOR-SETUP/Charges-code.md). | Charges code, if Charges document setting **As per EDI document** is set to _Yes_
 **Misc quantity**           | Specifies the allowance or charge where the calculation is based on quantity	| Charges Value = sum (Invoice quantity for all invoice lines) * Misc quantity
@@ -284,7 +284,7 @@ xCBL standard has the option of sending miscellaneous charges/ allowance as eith
 **Tax amount**              | Total Tax amount	                                        | Invoice > Sales tax
 **Round-off**               | Round-off	
 **Total amount**            | Total amount	                                            | Invoice > Invoice amount
-<ins>**Payment**</ins>		
+<ins>**Payment**</ins>		|
 **Currency**                | Purchase invoice currency	                                | Converted to PO currency
 **Target currency**         | Target currency of the rate of exchange. This is the currency from which the monetary value is to be converted to.	
 **Reference currency**      | Holds the reference currency of the rate of exchange. This is the currency from which the monetary value is to be converted from.	
