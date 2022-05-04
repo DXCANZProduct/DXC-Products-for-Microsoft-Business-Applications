@@ -450,7 +450,7 @@ The following EDI Header staging fields are available on the header page.
 **EDI carrier mode**        | Code specifying the method or type of transportation for the shipment. Mapped value setup in [Carrier mode](../SETUP/VENDOR-SETUP/Carrier-mode.md).
 <ins>**Miscellaneous**</ins>		|
 **Misc. indicator**         | Code which indicates an allowance or charge for the service specified. Mapped value setup in [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator.md).
-EDI charges code	Code identifying the service, promotion, allowance, or charge. Mapped value setup in [Charges code](../SETUP/VENDOR-SETUP/Charges-code.md).
+**EDI charges code**	    | Code identifying the service, promotion, allowance, or charge. Mapped value setup in [Charges code](../SETUP/VENDOR-SETUP/Charges-code.md).
 <ins>**Totals**</ins>       |
 **Subtotal amount**         | Subtotal of all purchase order lines	
 **Line discount**           | Discount for all purchase order lines	
