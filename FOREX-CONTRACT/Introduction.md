@@ -60,7 +60,7 @@ The following describes using the Forex contract functionality.
 ### Data entities
 Forex contract include data entities to support its enhancements to D365.
 
-- [Data entities](SETUP/Data-entities.md)
+- [Data entities](OTHER/Data-entities.md)
 
 ### Security configuration
 
