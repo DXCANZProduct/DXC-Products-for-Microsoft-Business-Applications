@@ -35,20 +35,21 @@ The Trading partner fields are used to describe how the prequisites setups are a
 Users can access the form by navigating to **EDI > Setup > Trading partners** <br>
 
 Trading Partner Setup - Quick Summary:
+
 **Setup** 	                      | **Short description**                 | **Setup path**
 :-------------------------------- |:------------------------------------- |:-------------------------------------
-<ins>**Options**</ins>		
+<ins>**Options**</ins>		        |
 **Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> • Outgoing documents: Connection profile setup on [EDI > Setup > EDI parameters](../../CORE/Setup/EDI-parameters.md) <br> • Incoming documents: All active connection incoming paths as setup in [Connections](../../CORE/Setup/Connection-setup.md). | [EDI > Setup > Connection setup](../../CORE/Setup/Connection-setup.md)
 **Cleanup profile**	              | Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level. If blank, default Cleanup profile will be used as setup on [EDI > Setup > EDI shared parameters](../../CORE/Setup/EDI-shared-parameters.md) | [EDI > Setup > Cleanup profile](../../CORE/Setup/Cleanup-profile.md)
-<ins>**Container mapping**</ins>			
+<ins>**Container mapping**</ins>  |			
 **Container type**                |	Container type identifiers  | [EDI > Freight forwarder landed cost setup > Shipping container type mappings](FF-SETUP/Shipping-container-types-mapping.md)
 **Measurement unit**              |	Shipping measurement unit mapping	| [EDI > Freight forwarder landed cost setup > Shipping measurement unit mapping](FF-SETUP/Shipping-measurement-unit-mapping.md)
-<ins>**Journey mapping**</ins>			
+<ins>**Journey mapping**</ins>		|
 **Port**                          |	Shipping port mapping	      | [EDI > Freight forwarder landed cost setup > Shipping port mapping](FF-SETUP/Shipping-port-mapping.md)
 **Port qualifier**                | Shipping port qualifier mapping	| [EDI > Freight forwarder landed cost setup > Shipping port qualifier mapping](FF-SETUP/Shipping-port-qualifier-mapping.md)
 **Mode of delivery**              |	Mode of delivery mapping	  | [EDI > Freight forwarder landed cost setup > Modes of delivery mapping](FF-SETUP/Modes-of-delivery-mapping.md) 
 **Activity**                      | Activity mapping	          | [EDI > Freight forwarder landed cost setup > Activity mapping](FF-SETUP/Activity-mapping.md)
-<ins>**Other mappings**</ins>		
+<ins>**Other mappings**</ins>		  |
 **Customs broker**                |	Customs broker mapping	    | [EDI > Freight forwarder landed cost setup > Customs broker mapping](FF-SETUP/Customs-broker-mapping.md)
 **UOM**                           |	Unit of measure mappings for in- and outbound documents	    | [EDI > Setup > UOM mapping](../../CORE/Setup/UOM-mapping.md)
 <ins>**Outgoing documents**</ins> |	It brings the document template, mappings, settings profile together to enable the document for the trading partner <br>
