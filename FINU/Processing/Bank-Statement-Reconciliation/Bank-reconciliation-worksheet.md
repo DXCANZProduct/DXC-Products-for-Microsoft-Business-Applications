@@ -109,5 +109,5 @@ When creating the journal for **Mark as new** transactions, if the **Extended fi
 If the Financial Utilities parameter **Auto-post bank statement** is set to _Yes_, the bank statement and Mark as new transactions will automatically be posted when the **Mark as reconciled** button is selected. 
 
 #### Reconciliation correction balance	
-If the field **Ability to enter reconciliation balancing entry** on the **Financial utilities parameter** is set to_ Yes_ and the new column **Correction Amount** has been used, the correct amount will be posted to the **Main account** associated with the correction line's **Bank transaction type** as found on **Cash and bank management > Setup > Bank transaction types**.
+If the field **Ability to enter reconciliation balancing entry** on the **Financial utilities parameter** is set to _Yes_ and the new column **Correction Amount** has been used, the correct amount will be posted to the **Main account** associated with the correction line's **Bank transaction type** as found on **Cash and bank management > Setup > Bank transaction types**.
 

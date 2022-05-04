@@ -44,17 +44,18 @@ This section describes the setup applicable to **Freight forwarder landed cost**
 
 #### Options
 The following table describes the Freight forwarder module fields that are available on the **Options** FastTab of the **Trading partners** page.
+
 **Field**                             | **Description**               
 :---------                            |:--------
-<ins>**Container mapping**</ins>
+<ins>**Container mapping**</ins>      |
 **Container type**                    |	Container type identifiers <br> Note: For further information see [Setup shipping container types mapping](FF-SETUP/Shipping-container-types-mapping.md)
 **Measurement unit**                  |	Shipping measurement unit mapping <br> Note: For further information see [Setup shipping measurement unit mapping](FF-SETUP/Shipping-measurement-unit-mapping.md)
-<ins>**Journey mapping**</ins>	
+<ins>**Journey mapping**</ins>	      |
 **Port**                              |	Shipping port mapping <br> Note: For further information see [Setup shipping port mapping](FF-SETUP/Shipping-port-mapping.md)
 **Port qualifier**                    |	Shipping port qualifier mapping <br> Note: For further information see [Setup shipping port qualifier mapping](FF-SETUP/Shipping-port-qualifier-mapping.md)
 **Mode of delivery**                  |	Mode of delivery mapping <br> Note: For further information see [Setup modes of delivery mapping](FF-SETUP/Modes-of-delivery-mapping.md)
 **Activity**                          |	Activity mapping <br> Note: For further information see [Setup activity mapping](FF-SETUP/Activity-mapping.md)
-<ins>**Other mappings**</ins>	
+<ins>**Other mappings**</ins>	        |
 **Customs broker**                    |	Customs broker mapping <br> Note: For further information see [Setup customs broker mapping](FF-SETUP/Customs-broker-mapping.md)
 **UOM**                               |	Unit of measure mappings. Ability to map a trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM-mapping.md)
 

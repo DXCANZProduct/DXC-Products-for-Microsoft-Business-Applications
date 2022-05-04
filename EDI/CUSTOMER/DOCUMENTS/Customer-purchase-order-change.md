@@ -236,23 +236,23 @@ The following EDI Header staging fields are available on the header page.
 
 **Field**	              | **Description**	                                      | **Target D365 field**
 :---                    |:---                                                   |:---
-<ins>**Identification**</ins>
+<ins>**Identification**</ins>   |   |
 **EDI number**          |	EDI Staging table record id	                          | Sales Order > EDI > Change EDI number
 **Company account**     |	Legal entity of the document	
 **Company GLN**         |	The company’s global location number is shown here. 	
 **Staging to target status**  |	The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The order change has been processed and either automatically processed and D365 Sales order updated or ready for Manual approval. • **Canceled** – The record has been manually canceled and will be excluded from processing.
-<ins>**Reset status**</ins>
+<ins>**Reset status**</ins> |   |
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start
-<ins>**Overview**</ins>
+<ins>**Overview**</ins>     |   |
 **Customer Requisition**    |	Customer's purchase order number which will be used to find the existing D365 sales order which requires changes.
 **Purchase order date**     |	The purchase order date from the EDI record is shown here.	| Sales Order > EDI > Change order date
 **EDI order purpose**       |	The EDI order purpose is shown here. Receiving an Order purpose **Original** and **Confirmation** will error the staging record, since these should be sent as **Customer purchase order** document. Only **Change** and **Cancellation** order purposes are allowed for **Customer purchase order change** document.	
 **Store code**              |	The store code from the EDI record is shown here.	          | Sales Order > EDI > Store code <br> And used to populate Sales order delivery address if header updates are allowed.
 **Store zone**              |	The store zone from the EDI PO is shown here.	
-<ins>**General**</ins>
+<ins>**General**</ins>      |   |
 **Customer Requisition**    | Customer's purchase order number which will be used to find the existing D365 sales order which requires changes.	
 **Customer Reference**      |	Customer's purchase order reference.
 **Purchase order date**     |	The purchase order date from the EDI record is shown here.	| Sales Order > EDI > Change order date
@@ -268,7 +268,7 @@ The following EDI Header staging fields are available on the header page.
 **Advertisement date**	    | The advertisement date applicable for the order	
 **Template Id**             |	The EDI templates used to create the staging table record	
 **PO version number**       |	The PO version number from the EDI record.	                | Sales Order > EDI > Change version number
-<ins>**Delivery**</ins>
+<ins>**Delivery**</ins>     |   |
 **Delivery Name**           |	Address for Delivery	                                      | Sales Order > Delivery Address. If header updates are allowed.
 **Store code**              |	The store code from the EDI record is shown here.	          | Sales Order > EDI > Store code. If header updates are allowed.
 **Store zone**	            | The store zone from the EDI record is shown here.	
@@ -293,6 +293,7 @@ Fields:
     - Order line change type
 
 The following EDI Line staging fields are available on the line page.
+
 **Field**	              | **Description**	                                      | **Target D365 field**
 :---                    |:---                                                   |:---
 **Line number**         |	The line within the EDI table/file. <br> Used to find applicable sales line to update. Except where adding new lines.	| New lines: Sales Line > EDI > General > Line number

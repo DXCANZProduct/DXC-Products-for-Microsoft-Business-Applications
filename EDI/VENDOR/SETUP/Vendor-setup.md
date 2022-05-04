@@ -35,12 +35,13 @@ The Trading partner fields are used to describe how the prequisites setups are a
 Users can access the form by navigating to **EDI > Setup > Trading partners** <br>
 
 Vendor Trading Partner Setup - Quick Summary:
+
 **Setup** 	                      | **Short description**                 | **Setup path**
 :-------------------------------- |:------------------------------------- |:-------------------------------------
-<ins>**Options**</ins>		
+<ins>**Options**</ins>		|
 **Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> • Outgoing documents: Connection profile setup on [EDI > Setup > EDI parameters](../../CORE/Setup/EDI-parameters.md) <br> • Incoming documents: All active connection incoming paths as setup in [Connections](../../CORE/Setup/Connection-setup.md). | [EDI > Setup > Connection setup](../../CORE/Setup/Connection-setup.md)
 **Cleanup profile**	              | Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level. If blank, default Cleanup profile will be used as setup on [EDI > Setup > EDI shared parameters](../../CORE/Setup/EDI-shared-parameters.md) | [EDI > Setup > Cleanup profile](../../CORE/Setup/Cleanup-profile.md)
-<ins>**Order**</ins>	
+<ins>**Order**</ins>	|
 **Order type**                    |	Order type identifiers. Indicates if the order is a purchase order, agreement or release order.  | [EDI > Vendor setup > Order type group](VENDOR-SETUP/Order-type-group.md)
 **Order purpose**                 |	Order purpose identifiers. Indicates if the order is original, confirmation, change or cancellation.	  | [EDI > Vendor setup > Order purpose group](VENDOR-SETUP/Order-purpose-group.md)
 **Order line change type**        |	Order line change type identifiers. Indicates type of change to the order line, example 'Add additional item', 'Delete items' or 'Changes to line items'.	  | [EDI > Vendor setup > Order line change type group](VENDOR-SETUP/Order-line-change-type-group.md)
@@ -49,7 +50,7 @@ Vendor Trading Partner Setup - Quick Summary:
 **Payment terms type**            |	Payment terms mappings. Ability to send the trading partner's mapped value	per D365 Terms of payment.	              | [EDI > Vendor setup > Payment terms type group](VENDOR-SETUP/Payment-terms-type-group.md)
 **Misc. charge/allowance indicator**  |	Misc. charge/allowance mappings. Indicates if the header charge is an allowance (charge < 0), charge (charge > 0) or no allowance or charge (charge = 0).	  | [EDI > Vendor setup > Misc charge/allowance indicator](VENDOR-SETUP/Misc-charge-allowance-indicator.md)
 **Misc. method of handling**      |	Misc. method of handling mappings. Indicates if the header charge received on the purchase invoice needs to be added to the D365 invoice.	    | [EDI > Vendor setup > Misc method of handling](VENDOR-SETUP/Misc-method-of-handling.md)
-<ins>**Acknowledgement**</ins>	
+<ins>**Acknowledgement**</ins>	|
 **POA response code group**       |	Status of information used in Purchase order acknowledgement	| [EDI > Setup > Vendor setup > POA response code group](VENDOR-SETUP/POA-response-code-group.md)
 **UOM**                           |	Unit of measure mappings for in- and outbound documents	                                                 | [EDI > Setup > UOM mapping](../../CORE/Setup/UOM-mapping.md)
 <ins>**Outgoing documents**</ins> |	It brings the document template, mappings, settings profile together to enable the document for the trading partner <br>

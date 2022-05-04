@@ -38,7 +38,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 
 **Field**           |	**Description**	                          | **Options/Example**
 :-------            |:-------                                   |:----------
-<ins>Purchase order</ins>
+<ins>Purchase order</ins> |   |
 **Item ID Source**  |	Determine the method of item identification used by this customer when ordering products. Where the External item number, GTIN or Barcode is unique per Variant, EDI will create the sales order against the correct variant, i.e. the customer doesn’t have to supply variant details in inbound document.	| •	**Our Item number** - this is the item ID on the items form <br> •	**External item number** - this is the item Id on the customer external item form <br> •	**GTIN** - this is the GTIN assigned to an item <br> •	**Barcode** - This is the Barcode assigned to an item.
 **Price includes tax**  |	Specify if the price (line amount &/or unit price) received from the Customer includes tax 	  | Yes/No
 **Use Customer Price**  |	Select this flag to use the customer's price on the sales order	                              | • **Yes**: If there is a variance between the trade agreement /list price stored in D365 and the Customers price received in the purchase order, the purchase order will be used if within the variance range. <br> • **No**: System price will be used when creating the sales order.
@@ -47,14 +47,14 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Create release order without blanket order** | The action taken when a release order is received without a blanket order	| •	**No** - do not allow the release order <br> •	**Yes** - allow the release order <br> •	**Warning** - allow the release order with a warning message
 **Duplicate tolerance** |	If a Customer purchase order (Customer requisition) is received more than once, D365 needs to determine what to do with the duplicate/s | •	**Error** - Duplicate purchase orders not allowed and the staging record will error and not create an additional D365 sales order. <br> •	**Accept** - Duplicate purchase orders are allowed. Duplicate purchase orders will create a new D365 sales order. <br> •	**Accept on flagged orders** - Duplicate purchase orders are only allowed if existing sales order is flagged to allow duplicates. On the original sales order header set on the **EDI** FastTab set **Bypass duplicate check** to _Yes_. Staging records with a duplicate Customer requisition where the sales order's Bypass duplicate check is set to _No_ will error.
 **Update confirmed ship date**  |	Similar to **Simulate delivery dates**, updates the **Confirmed ship date** and **Confirmed receipt date** on the sales order header, which are also used in the Customer purchase order acknowledgement | Yes/No
-<ins>**Purchase agreement**</ins>
+<ins>**Purchase agreement**</ins>   |   |
 **Agreement classification**	  | Select the agreement classification used when blanket orders are created	
 **Strip field delimiter**       |	Specify the delimiter used to identify a release order	Some of the trading partners use a slightly different PO number on the Blanket order compared with the Release order. An example of a Blanket order PO number is 0005055365-0000, they will then send four releases with the number 0005055365-0010, 0005055365-0020, 0005055365-0030 and 0005055365-0040. In the template the strip field delimiter would be set to “-“, it should then find the applicable sales agreement by using the number before the delimiter. 
-<ins>**Supplementary items**</ins>
+<ins>**Supplementary items**</ins>    |   |
 **Add mandatory supplementary items** |	Option to automatically add mandatory supplementary items upon sales order creation	| Yes/No
 **Add optional free of charge supplementary items** |	Enabled when **Add mandatory supplementary items** is set to _Yes_. Option to automatically add optional free of charge supplementary items	| Yes/No
 **Add optional charged supplementary items**  |	Enabled when **Add mandatory supplementary items** is set to _Yes_. Option to automatically add optional charged supplementary items	| Yes/No
-<ins>**Retail**</ins>
+<ins>**Retail**</ins>   |   |
 **Channel**                     |	Option to set the channel when creating retail sales order.	  | Drop-down options from Name as setup in **Retail and commerce > Channels > Stores > All stores**
 BankReconciliationMatchingRuleEntity  |	Option to automatically Complete the Sales order and process payment for retail orders where the customer’s **Allow on account** is set to _Yes_. Utilizes Payment method as set below. If payment can’t be completed the sales order is put on hold.	| Yes/No
 **Payment method**              |	Option to set the **Retail payment method** for processing Payment. If Payment method is blank, the first Payment method for the Channel where **Default function** is Customer is utilized.	| Drop-down options from **Retail and commerce > Channel setup > Payment methods**. Filtered to **Default function = Customer** (only Customer supported)

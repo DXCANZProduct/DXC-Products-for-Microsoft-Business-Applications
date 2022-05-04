@@ -50,7 +50,7 @@ The Field metadata fast tab displays all the available fields for the Document t
 **Field label**                   |	The field label provided standard. Unless overridden via the display name field this will be the label displayed throughout the implementation (not editable)
 **Display name**                  |	An override to the standard field label. If set, this will be seen throughout the environment in place of the standard field label.
 **Help**                          |	The help text provided standard. Unless overridden via the display description field this will be the label displayed throughout the implementation (not editable)
-Display description	An override to the standard help text. If set, this will be seen throughout the environment in place of the standard help text.
+**Display description**           |	An override to the standard help text. If set, this will be seen throughout the environment in place of the standard help text.
 **Notes**                         |	User defined notes if required
 
 ### Update via upload

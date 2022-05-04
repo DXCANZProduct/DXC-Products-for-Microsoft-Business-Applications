@@ -122,19 +122,19 @@ The following EDI Header staging fields are available on the header page.
 
 **Field**	            | **Description**	                                      | **D365 source**
 :---                    |:---                                                     |:---
-<ins>**Identification FastTab**</ins>		
-<ins>**Identification**</ins>		
+<ins>**Identification FastTab**</ins>	|	
+<ins>**Identification**</ins>		|
 **EDI number**          | EDI Staging table record id                             | Original EDI number
 **Company**             | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here      | Company GLN
-**Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	            
+**Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	           
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.	<br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
-<ins>**Reset status**</ins>		
+<ins>**Reset status**</ins>		|
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**Overview**</ins>		
+<ins>**Overview**</ins>		|
 **Picking Route**           | Picking route Id	                    | Picking Route > Id
 **Warehouse**               | Warehouse for the picking list record	| Picking Route > Warehouse
 **Reference**               | Identification if pick route is related to a sales order or transfer order	| Picking route > Reference
@@ -142,11 +142,11 @@ The following EDI Header staging fields are available on the header page.
 **Customer requisition**    | Customers purchase order number	    | Sales Order > Customer requisition
 **Your ref.**               | Customers reference	                | Sales Order > Customer reference
 **EDI order purpose**       | The EDI order purpose is shown here. <br> Mapped value from [Order purpose group](../SETUP/3PL-SETUP/Order-purpose-group.md)  | Order purpose code
-<ins>**Status**</ins>	
+<ins>**Status**</ins>	    |
 **Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
 **Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
-<ins>**General FastTab**</ins>
-<ins>**Delivery**</ins>	
+<ins>**General FastTab**</ins>  |
+<ins>**Delivery**</ins>	    |
 **Name**                    | Address for Delivery	                    | Order > Delivery Address
 **Delivery address**        | Address for Delivery	                    | Order > Delivery Address
 **Post box**                | Address for Delivery	                    | Order > Delivery Address
@@ -159,8 +159,8 @@ The following EDI Header staging fields are available on the header page.
 **City**		            | Address for Delivery	                    | Order > Delivery Address
 **Postcode**	            | Address for Delivery	                    | Order > Delivery Address
 **Country/region**          | Address for Delivery	                    | Order > Delivery Address	
-<ins>**Note**</ins>			
-**Delivery note**		
+<ins>**Note**</ins>			|
+**Delivery note**		    |
 
 
 ### Line fields

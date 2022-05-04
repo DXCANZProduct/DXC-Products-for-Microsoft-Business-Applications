@@ -128,12 +128,12 @@ The following table describes each validation option for the Vendor purchase ord
 
 Rule Id	                | Details	                            | Info/Warning tolerance updates
 :--                     |:--                                    |:--
-<ins>**Purchase order header**</ins>
+<ins>**Purchase order header**</ins>    |
 **Reject**              | Vendor POA response: **Header – not accepted**. Vendor rejects the complete purchase order. <br> This validation can be used to manually manage Vendor rejections by adding this validation with an error tolerance.	| Cancel purchase order
 **Version**             | Validates that the vendor is responding to the current purchase order version	          | No update to D365 PO, only used for comparison
 **Delivery date**       | Vendor POA response: **Header – change**. <br> The Vendor’s POA delivery date doesn’t match the D365 PO's delivery date	| Update PO header's **Confirmed delivery date**
 **Vendor reference**    | Vendor POA’s Vendor reference doesn’t match the PO’s Vendor reference	                  | Update PO header's **Vendor reference**
-<ins>**Purchase order line**</ins>
+<ins>**Purchase order line**</ins>  |
 **Short pick**          | Vendor POA response: **Line shipment - partial**. <br> Acknowledgement qty is less than purchase order line qty. If the vendor’s unit differs, unit conversion is used to convert. | Update PO line's deliver remainder qty (use unit conversion if POA different unit).
 **Batch Id update**     | Where the batch id received is different to the batch id on the purchase order.	| If batch doesn’t exist for item, the batch is created and assigned to the purchase order line
 **Purchase price**      | Vendor POA response: **Line price advise**. <br> The vendor’s POA unit price should be checked using the purchase order unit price. <br> If the prices are slightly different it should check both the tolerance and ‘Use Vendor Price’ flag before giving an error/warning. Example: <br> Item X purchase order unit price 10.25 <br> Item Y purchase order unit price 8.88 <br> Vendor has a min and max tolerance setting of 0.05 <br> Purchase order prices are not including tax <br> Vendor sends their EDI POA including tax <br> The setting use vendor pricing is given <br> Item X EDI file price (before converting) 11.26 (after conversion) 10.24 <br> Item Y EDI file price (before converting) 9.70 (after conversion) 8.82. <br> Template setting against this field is warning. <br> A warning is only given for Item Y because it is outside of the tolerance. 	| Update PO line's purchase price (if within allowed variance): else error
@@ -173,6 +173,7 @@ The following tables describe the fields and buttons that are available on the *
 The **Header** POC response codes are managed on this tab.
 
 ##### Fields
+
 Field	                    | Description
 :--                         |:--
 **Response code**           | Vendor’s purchase order acknowledgement header response
@@ -194,6 +195,7 @@ Button                      | Description
 The following tables describe the fields and buttons that are available on the **Line price** tab of the Confirmation page. <br>
 
 ##### Fields
+
 Field	                    | Description
 :--                         |:--
 **Log**                     | This will show a warning if Validation failed with error tolerance set to warning
@@ -221,6 +223,7 @@ Button              | Description
 The following tables describe the fields and buttons that are available on the **Line quantity** tab of the Confirmation page. <br>
 
 ##### Fields
+
 Field	                    | Description
 :--                         |:--
 **Log**                     | This will show a warning if Validation failed with error tolerance set to warning
@@ -248,6 +251,7 @@ Button                  | Description
 The following tables describe the fields and buttons that are available on the **Line pack** tab of the Confirmation page. <br>
 
 ##### Fields
+
 Field	                    | Description
 :--                         |:--
 **Log**                     | This will show a warning if Validation failed with error tolerance set to warning
@@ -275,6 +279,7 @@ Button                      | Description
 The following tables describe the fields and buttons that are available on the **Line inner** tab of the Confirmation page. <br>
 
 ##### Fields
+
 Field	                    | Description
 :--                         |:--
 **Log**                     | This will show a warning if Validation failed with error tolerance set to warning
@@ -360,30 +365,30 @@ The following EDI Header staging fields are available on the header page.
 
 **Field**	            | **Description**	                                    | **D365 PO update**
 :---                    |:---                                                   |:---
-<ins>**Identification FastTab**</ins>
-<ins>**Identification**</ins>		
+<ins>**Identification FastTab**</ins>   |
+<ins>**Identification**</ins>		|
 **EDI number**          | EDI Staging table record id                           | History page on D365 PO
 **Company account**     | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here.   | 
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and updated the D365 purchase order and sent a purchase order confirmation (where set to automatic). <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
-<ins>**Reset status**</ins>		
+<ins>**Reset status**</ins>		|
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**Overview**</ins>	
+<ins>**Overview**</ins>	    |
 **Purchase order**          | Purchase order number for the POA record	
 **Purchase order date**     | The purchase order date from the PO that is being acknowledged is shown here	
 **Acknowledged status date**    | The purchase order acknowledgement date from the EDI POA is shown here	| Acknowledgement status date
 **POA code**                | POA Header response code	                                                    | Acknowledgement status
 **EDI order purpose**       | The EDI order purpose is shown here	
-<ins>**Status**</ins>		
+<ins>**Status**</ins>		|
 **Group control number**    | Group control number for outbound document. To be used to match inbound functional acknowledgement, where applicable.	
 **Sent**                    | Indicates if functional acknowledgement outbound has been sent to the trading partner for the inbound document.	
-<ins>**General FastTab**</ins>
-<ins>**Purchase order acknowledgement**</ins>
+<ins>**General FastTab**</ins>  |
+<ins>**Purchase order acknowledgement**</ins>   |
 **POA code**                | POA Header response code	                                                    | Acknowledgement status
-<ins>**Details**</ins>
+<ins>**Details**</ins>      |
 **Vendor reference**        | Vendor’s order reference	                                                    | Vendor reference
 **Vendor account**          | Vendor account for the POA record	
 **Vendor name**             | Vendor name	
@@ -396,7 +401,7 @@ The following EDI Header staging fields are available on the header page.
 **Company phone**           | Company phone	
 **Company name**            | Company name	
 **Tax registration number** | Company tax registration number	
-<ins>**Vendor invoicing**</ins>	
+<ins>**Vendor invoicing**</ins>	    |
 **Vendor name**             | Vendor name	
 **Vendor primary street number**    | Vendor primary address - street number	
 **Vendor primary street**   | Vendor primary address - street	
@@ -405,7 +410,7 @@ The following EDI Header staging fields are available on the header page.
 **Vendor primary state**    | Vendor primary address - state	
 **Vendor primary ZIP/postal code**  | Vendor primary address - ZIP/postal code	
 **Vendor primary country/region**   | Vendor primary address – country/region	
-<ins>**Customer invoicing**</ins>		
+<ins>**Customer invoicing**</ins>		|
 **Bill to**                 | Our account number as loaded on Vendor’s Invoice account	
 **Name**                    | Bill to - Name	
 **Name or description**     | Bill to - Invoice address name	
@@ -416,10 +421,10 @@ The following EDI Header staging fields are available on the header page.
 **State**                   | Bill to - State	
 **ZIP/postal code**         | Bill to - ZIP/postal code	
 **Country/region**          | Bill to - Country/region	
-<ins>**Version**</ins>
+<ins>**Version**</ins>      |
 **PO version number**       | The version of the D365 purchase order number	
 **Created date and time**   | The date and time the selected record was created in the staging table.
-<ins>**Delivery**</ins>		
+<ins>**Delivery**</ins>		|
 **Delivery name**           | Ship to - Name	
 **Ship to**                 | Our account number as loaded on Vendor’s Order account	
 **Store code**              | Ship to - Store code	
@@ -439,21 +444,21 @@ The following EDI Header staging fields are available on the header page.
 **Form note**               | Header note to be sent with purchase order	
 **Requester**               | Requester	
 **Attention information**   | Attention information	
-<ins>**Transportation**</ins>		
+<ins>**Transportation**</ins>		|
 **Shipping carrier**        | Shipping carrier	
 **Carrier qualifier**       | Code designating the system/method of code structure used for shipping carrier	
 **EDI carrier mode**        | Code specifying the method or type of transportation for the shipment. Mapped value setup in [Carrier mode](../SETUP/VENDOR-SETUP/Carrier-mode.md).
-<ins>**Miscellaneous**</ins>		
+<ins>**Miscellaneous**</ins>		|
 **Misc. indicator**         | Code which indicates an allowance or charge for the service specified. Mapped value setup in [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator.md).
-EDI charges code	Code identifying the service, promotion, allowance, or charge. Mapped value setup in [Charges code](../SETUP/VENDOR-SETUP/Charges-code.md).
-<ins>**Totals**</ins>
+**EDI charges code**	    | Code identifying the service, promotion, allowance, or charge. Mapped value setup in [Charges code](../SETUP/VENDOR-SETUP/Charges-code.md).
+<ins>**Totals**</ins>       |
 **Subtotal amount**         | Subtotal of all purchase order lines	
 **Line discount**           | Discount for all purchase order lines	
 **Misc amount**             | Purchase order header misc. charge/allowance amount	
 **Tax amount**              | Tax amount	
 **Round-off**               | Round-off	
 **Total amount**            | Total amount	
-<ins>**Payment**</ins>                 
+<ins>**Payment**</ins>      |           
 **Currency**                | Currency	
 **Terms code**              | Payment terms. Mapped value setup in [Payment terms type group](../SETUP/VENDOR-SETUP/Payment-terms-type-group.md).
 **Terms net days**          | Payment terms net due days

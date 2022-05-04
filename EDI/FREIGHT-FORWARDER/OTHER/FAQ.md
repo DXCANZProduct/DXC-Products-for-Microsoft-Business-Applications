@@ -39,6 +39,7 @@ The following table describes a few staging errors that could be experienced wit
 > Note: % contains staging data for the record
 
 ### Voyage creator
+
 Error message	                                      | Method to fix    
 :--                                                 |:--  
 Duplicate shipment reference found on shipment: %	  | Can be _Warning_ or _Error_ level based on [document setting](../SETUP/SETTING-PROFILES/Voyage-creator.md) **Duplicate tolerance**. <br> • _Warning_ will create a new Voyage with same booking reference. <br> • _Error_ level will not create a voyage, review field **Booking reference** in staging record. 
@@ -50,6 +51,7 @@ Unable to find journal template for line: %	        | EDI couldn't find a Landed
 Unable to locate source document lines	            | EDI couldn't find the source D365 document based on staging record's **Number** and **Reference** (Purchase order or Transfer).
 
 ### Voyage tracking
+
 Error	message                                       | Method to fix
 :--                                                 |:--
 Shipment not found: %                               | Based on [document setting](../SETUP/SETTING-PROFILES/Voyage-tracking.md) **Voyage Id source**, the staging record's **Voyage** is either internal voyage id or the voyage's booking reference and EDI couldn't find the voyage in D365 Landed cost. Review staging field **Voyage** and either edit if incorrect or ensure voyage is created if field is correct. Document setting could also be the issue, verify if trading partner refers to internal id or their booking reference and update document setting allocated to trading partner if incorrect.

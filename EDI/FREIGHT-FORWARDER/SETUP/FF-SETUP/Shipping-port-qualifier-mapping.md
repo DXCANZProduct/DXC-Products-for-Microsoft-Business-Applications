@@ -52,6 +52,7 @@ Used on the following EDI documents (field):
 If the voyage tracking leg, whose tracking is being updated, includes a From and To port (Example: Air or Sea legs), the **Shipping port mapping** and **Shipping port qualifier** will be used to find the applicable leg to update. This is especially useful for journeys with multiple sea and/or air legs.
 
 ## Examples
+
 EDI port qualifier	| Trading partner values    | Description
 :--                 |:--                        |:--
 **From port**       | L                         | Port of Loading

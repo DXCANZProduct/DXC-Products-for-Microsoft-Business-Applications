@@ -39,7 +39,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Field**           |	**Description**	                          | **Options/Example**
 :-------            |:-------                                   |:----------
 **Voyage Id source**  |	Determine the method of voyage identification used	| •	**Internal Id** – Landed cost Voyage <br> •	**External Id** – Freight forwarder’s booking reference = Landed cost Booking reference
-<ins>**Date qualifiers**</ins>
+<ins>**Date qualifiers**</ins>  |
 **Actual**          | Date in file is an actual date	          | X12 example = 140
 **Estimated**       | Date in file is an estimated date	          | X12 example = 139
     

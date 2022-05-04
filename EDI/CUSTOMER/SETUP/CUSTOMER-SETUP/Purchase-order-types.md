@@ -48,6 +48,7 @@ EDI purchase orders can be received from trading partners with many order types.
 -	Specify the **indicator**/Customer's value used to identify the EDI order type.
 
 Examples: <br>
+
 **Order type** 	                  | **X12 examples**                      | **EDIFACT examples**
 :-------------------------------- |:------------------------------------- |:-------------------------------------
 **Order**                         |	**SA** - Stand Alone Order <br> **KN** - Purchase Order	| **220** - Order 

@@ -196,18 +196,18 @@ The following EDI Header staging fields are available on the header page.
 
 **Field**	            | **Description**	                                    | **D365 target**
 :---                    |:---                                                   |:---
-<ins>**Identification FastTab**</ins>
-<ins>**Identification**</ins>		
+<ins>**Identification FastTab**</ins>   |
+<ins>**Identification**</ins>		|
 **EDI number**          | EDI Staging table record id                           | History page on D365 PO
 **Company account**     | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here.   | 
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created an arrival journal, product receipt or load. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
-<ins>**Reset status**</ins>		
+<ins>**Reset status**</ins>		|
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**Overview**</ins>	
+<ins>**Overview**</ins>	    |
 **Consignment note number** | Consignment note identification for the delivery	    | • Load > Load Id
 **Delivery note**           | Packing slip/Delivery note number	                    | • Item Arrival > Delivery note
 **Document date**           | Delivery note’s document date	                        | • Product receipt > Document date
@@ -219,18 +219,18 @@ The following EDI Header staging fields are available on the header page.
 **Volume**                  | Total volume within the consignment	
 **Shipment count**	        | Total number of packing slips within the consignment	
 **Shipment pallet count**   | Total number of lines within the consignment	
-<ins>**General FastTab**</ins>	
-<ins>**Details**</ins>
+<ins>**General FastTab**</ins>	|
+<ins>**Details**</ins>      |
 **Vendor account**          | Vendor account for the ASN record	                    | • Load > Account number
 **Vendor name**             | Vendor Name	
 **Trading partner GLN**     | The Vendor’s global location number is shown here	
 **Company GLN**             | The company’s global location number is shown here	
 **Tax registration number** | Vendor’s tax registration number	
-<ins>**Transportation**</ins>		
+<ins>**Transportation**</ins>		|
 **Shipping carrier**        | Shipping carrier for the consignment	                | • Load > Shipping carrier
 **Carrier qualifier**       | Code designating the system/method of code structure used for shipping carrier	
 **EDI carrier mode**        | Code specifying the method or type of transportation for the shipment. Mapped value setup in [Carrier mode](../SETUP/VENDOR-SETUP/Carrier-mode.md).
-<ins>**Delivery**</ins>		
+<ins>**Delivery**</ins>		|
 **Delivery name**           | Ship to - Name
 **Our account number**      | Ship to - Our account number in the vendor’s system. As per ‘Our account number’ loaded on Vendor’s Invoice account	
 **Store code**              | Ship to - Store code	

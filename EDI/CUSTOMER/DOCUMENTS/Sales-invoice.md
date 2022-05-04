@@ -102,33 +102,33 @@ The following EDI Header staging fields are available on the header page.
 
 **Field**	            | **Description**	                                      | **Source D365 field**
 :---                    |:---                                                     |:---
-<ins>**Identification FastTab**</ins>		
-<ins>**Identification**</ins>		
+<ins>**Identification FastTab**</ins>		|   |
+<ins>**Identification**</ins>		|   |
 **EDI number**          | EDI Staging table record id                             | EDI parameters > Number sequences > EDI number
 **Company**             | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here      | 
-**Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	            
-**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.	• **Canceled** – The record has been manually canceled and will be excluded from processing.
-<ins>**Reset status**</ins>		
+**Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	           
+**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
+<ins>**Reset status**</ins>		|   |
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-<ins>**Overview**</ins>	
+<ins>**Overview**</ins>	    |   |
 **Customer requisition**	| Customers purchase order number to be populated in the Customer requisition field of the sales order header | Sales Order > General > Customer requisition
 **Customer reference**	    | Customers purchase order number to be populated in the Customer reference field of the sales order header   |	Sales Order > General > Customer reference
-<ins>**Details**</ins>		
+<ins>**Details**</ins>		|   |
 **Delivery terms**          | Customer delivery terms	            | Sales Order > Delivery > Delivery terms
 **Terms of payment**	    | Terms of payment	                    | Sales Order > Price and discount > Payment
 **Description**             | Terms of payment (Description)	    | Sales Order > Price and discount > Payment (Description)
 **Carrier**                 | Carrier assigned to the packing slip	| Consignments > Carrier
-**Bill of lading ID**		
+**Bill of lading ID**		|   |
 **Customer GLN**            | The Global location number for this customer      | Sales Order > EDI > Customer GLN
-<ins>**Status**</ins>
+<ins>**Status**</ins>       |   |
 **Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
 **Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
-<ins>**General FastTab**</ins>
-<ins>**Delivery address**</ins>
+<ins>**General FastTab**</ins>  |   |
+<ins>**Delivery address**</ins> |   |
 **Delivery name**           | Address for delivery	                | Sales Order > Delivery Address Information	
 **City**                    | Delivery address - City	
 **Country/region**          | Delivery address - Country/region	
@@ -154,7 +154,7 @@ The following EDI Header staging fields are available on the header page.
 **County**                  | Warehouse address - County	
 **District**                | Warehouse address - District	
 **Post box**                | Warehouse address - Post box	
-<ins>**Invoice**</ins>      | Invoice details		
+<ins>**Invoice**</ins>      | Invoice details		|
 **Invoice**                 | D365 Invoice number	                | Invoice > Invoice Number
 **Name**                    | Tax invoice account name	            | Invoice > Invoice Account Name
 **Invoice contact name**	| Invoice account’s primary contact name	| Customer > Contact information
@@ -180,7 +180,7 @@ The following EDI Header staging fields are available on the header page.
 **Street**                  | Invoice address - Street	
 **Street number**           | Invoice address - Street number	
 **ZIP/postal code**         | Invoice address - ZIP/postal code	
-<ins>**Company**</ins>      | 		
+<ins>**Company**</ins>      | 		|
 **Company name**            | Company name	
 **Company address**         | Address for company                    | Invoice journal > Company > Address information
 **Street number**           | Company address - Street number
@@ -213,14 +213,14 @@ The following EDI Line staging fields are available on the lines page.
 **Unit tax rate**	        | Tax unit rate included for the order line	                | Tax unit rate for the Tax & Item tax groups
 **Sales tax amount**	    | Tax line amount included for the order line	            | Tax amount for the Tax & Item tax groups
 **Unit Price incl. tax**    | Discounted unit price including tax	                    | Sales line > Unit price incl. tax (discounted)
-Sales unit price include tax	Unit price before discounts including tax	Sales Line > Unit Price incl. tax
+**Sales unit price include tax**    |	Unit price before discounts including tax	    | Sales Line > Unit Price incl. tax
 **Unit**                    | Unit of measure	                                        | Sales line > Unit
 **Quantity**                | Invoice quantity	                                        | Invoice journal line > Quantity
 **Ordered quantity**        | Sales order line’s quantity	                            | Sales line > Quantity
 **Backorder quantity**      | Ordered quantity minus Invoiced quantity
 **Line amount excluding tax**   | Line amount excluding tax	                            | Sales line amount > Line amount excl. tax
 **Line amount including tax**   | Line amount including tax	                            | Invoice journal line > Line amount incl. tax
-**Delivery name**		                                                                | Sales line > Delivery Address Information
+**Delivery name**		        |                                                       | Sales line > Delivery Address Information
 **Store code**	            | Store code for the sales line	                            | Sales line > Store code
 **Customer reference**	    | Customers purchase order number as per Customer reference field in the sales order line	
 **Customer requisition**	| Customers purchase order number as per Customer requisition field of the sales order line	

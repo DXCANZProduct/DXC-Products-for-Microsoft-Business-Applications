@@ -79,7 +79,7 @@ Line % Lot %	Product dimensions do not match source  | Staging record line's pro
 Line quantity exceeds return amount | Either increase staging record line's **Quantity** or increase the D365 return order's **Return quantity**
 Posting - Journal	Journal: %	Line number: %	Item %	Cannot find location for item % at warehouse %. | Either fix staging's **Location** or add location in D365 for the 3PL's warehouse.
 Posting - Journal	Journal: %	Line number: %	Item %	Inventory dimension Inventory status must be specified. | Inventory status is required for the transaction and hasn't been specified in the staging record. Edit staging record's **Inventory status** for the applicable line.
-Posting - Journal	Journal: %	Line number: %	Item %	The quantity that you have entered exceeds the quantity that it is possible to return.
+Posting - Journal	Journal: %	Line number: %	Item %	The quantity that you have entered exceeds the quantity that it is possible to return.  | Verify if D365 Return order or Staging quantity is correct.
 
 
 ### Shipment receipt - Voyage

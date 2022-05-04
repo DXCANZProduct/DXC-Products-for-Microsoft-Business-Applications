@@ -38,11 +38,11 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 
 **Field**           |	**Description**	                          | **Options/Example**
 :-------            |:-------                                   |:----------
-<ins>**Purchase Order**</ins>
+<ins>**Purchase Order**</ins> |   |
 **Lock Order**      |	Specify if the order should be locked once a Purchase order acknowledgement (POA) has been sent. Also affects the POA status and if record will be included in **Send customer purchase order acknowledgement** periodic task	| •	**Yes** – Order is locked with **POA pending hold code** and **POA status = Pending** (included in **Send customer purchase order acknowledgement** periodic task) <br> •	**No** – Order isn’t locked with POA pending hold code and **POA status = Blank** (not included in Send customer purchase order acknowledgement periodic task)
 **Safety level if POA sent**  |	Specify the level to which the sales order should be locked once the POA has been sent	| •	**None** – Sales order can be edited when a POA has been sent <br> •	**Warning** – a warning will be received if a sales order is edited after the POA has been sent <br> •	**Locked** – Sales order cannot be edited once the POA has been sent
 **PO confirmation required**  |	If POA has been sent and a POC is required in return	| •	**Yes** – Sales order cannot be actioned until POC has been received. The sales order locked with **POC pending hold code**. **POA status = Confirm pending** until confirmation is received <br> •	**No** – Sales order can be actioned without receiving a POC
-<ins>**Acknowledgement**</ins>
+<ins>**Acknowledgement**</ins>  |   |
 **Quantity type**	  | Specify if the customer or system reserved quantity is used	    | •	**Customer quantity** – Acknowledge customer qty <br> •	**Reserved quantity** – Acknowledge D365 reserved qty. If reserving is set to manual, the stock needs to be reserved first, or auto reserving setup depending on Business rules.
 **Packaging size – inner/outer**  |	Specify if the inner or outer pack quantity is sent by the customer	| Inner / Outer
 **Pack type**       |	Specify if the customer or system pack should be used as the default	| This option will be used to automatically set the **acknowledged pack quantity**.

@@ -45,6 +45,7 @@ EDI purchase orders can be received from trading partners with many order purpos
 -	Specify the **indicator**/customer's value used to identify the **EDI order purpose**
 
 Examples: <br>
+
 **Order purpose** 	              | **X12 examples**                      | **EDIFACT examples**
 :-------------------------------- |:------------------------------------- |:-------------------------------------
 **Original**                      |	00	                                  | 9

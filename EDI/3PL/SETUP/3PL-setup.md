@@ -35,12 +35,13 @@ The Trading partner fields are used to describe how the prequisites setups are a
 Users can access the form by navigating to **EDI > Setup > Trading partners** <br>
 
 3PL Trading Partner Setup - Quick Summary:
+
 **Setup** 	                      | **Short description**                 | **Setup path**
 :-------------------------------- |:------------------------------------- |:-------------------------------------
-<ins>**Options**</ins>		
+<ins>**Options**</ins>		        |
 **Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> • Outgoing documents: Connection profile setup on [EDI > Setup > EDI parameters](../../CORE/Setup/EDI-parameters.md) <br> • Incoming documents: All active connection incoming paths as setup in [Connections](../../CORE/Setup/Connection-setup.md). | [EDI > Setup > Connection setup](../../CORE/Setup/Connection-setup.md)
 **Cleanup profile**	              | Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level. If blank, default Cleanup profile will be used as setup on [EDI > Setup > EDI shared parameters](../../CORE/Setup/EDI-shared-parameters.md) | [EDI > Setup > Cleanup profile](../../CORE/Setup/Cleanup-profile.md)
-<ins>**Order**</ins>	
+<ins>**Order**</ins>	            |
 **Inventory journal name mapping**  |	Ability to specify 3PL’s mapped value for Movement journals. If not sent by 3PL, the default movement will be used	| [EDI > 3PL setup > Inventory journal name mapping](3PL-SETUP/Inventory-journal-name-mapping.md)
 **Inventory status Id mapping**   | Categorize inventory	  | [EDI > 3PL setup > Inventory status Id mapping](3PL-SETUP/Inventory-status-Id-mapping.md)
 **Disposition code mapping**      | Specify how to process an item that is returned by a customer	  | [EDI > 3PL setup > Disposition code mapping](3PL-SETUP/Disposition-code-mapping.md)

@@ -229,13 +229,13 @@ The following EDI Header staging fields are available on the header page.
 
 **Field**	            | **Description**	                                    | **D365 header target**
 :---                    |:---                                                   |:---
-<ins>**Identification FastTab**</ins>
-<ins>**Identification**</ins>		
+<ins>**Identification FastTab**</ins>   |
+<ins>**Identification**</ins>		|
 **EDI number**          | EDI Staging table record id                           | 
 **Company account**     | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here.   | 
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and updated Landed cost Voyage's tracking leg. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
-<ins>**Reset status**</ins>		
+<ins>**Reset status**</ins>		|
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	

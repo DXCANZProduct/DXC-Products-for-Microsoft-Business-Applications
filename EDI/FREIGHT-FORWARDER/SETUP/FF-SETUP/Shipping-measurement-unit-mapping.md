@@ -52,6 +52,7 @@ Used on the following EDI documents (field):
 When the Voyage is created, the measurement and measurement unit are optional header and line fields.
 
 ## Examples
+
 D365 Landed cost Measurement unit	  | Trading partner values
 :--                                 |:--
 **kgs**                             |	KG
