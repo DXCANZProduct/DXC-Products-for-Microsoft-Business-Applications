@@ -27,7 +27,7 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core-Dynamics-AX-CP-requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions-list-for-docs-topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Financial utilities connection
+## Financial utilities connection
 When the bank statements are to be imported via the periodic task [Import bank statements via financial utilities connection](Bank-statement-import.md), the applicable connection type must be setup using the **Financial utilities connections** page.
 
 **Financial utilities connections** are used in the following:
