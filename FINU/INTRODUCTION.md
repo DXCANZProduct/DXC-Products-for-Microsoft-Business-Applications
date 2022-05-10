@@ -39,6 +39,7 @@ payment processing:
     -   Additional capability when using ‘Mark as new’ facility
     -   Ability to reconcile a small balance correction adjustment
     -   Ability to prevent reconciliation of unmatched statements
+-   Periodic task to automatically import bank statements
 -   Sundry vendor payment management
 -   BPAY vendor payment
 -   Formatted Vendor Payment Advice
@@ -76,7 +77,7 @@ Finance utilities minimises the manual actions required for reconciling bank acc
 - [Bank reconciliation worksheet](Processing/Bank-Statement-Reconciliation/Bank-reconciliation-worksheet.md)
 - [Reports](Processing/Bank-Statement-Reconciliation/Cash-and-bank-management-reports.md)
 
-<ins> **Setup required for automatic import of bank statement** </ins>
+<ins> **Setup for automatic import of bank statement** </ins>
 - [Financial utilities connections](Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md)
 - [Bank accounts](Setup/CASH-AND-BANK-MANAGEMENT/Bank-accounts.md)
 - Periodic task [Import bank statements via financial utilities connection](Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md)
