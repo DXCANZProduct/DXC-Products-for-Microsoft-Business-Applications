@@ -35,7 +35,7 @@ The fields as described in the following subsections are available to control th
 
 The **Financial utilities parameter** page within **Cash and bank management** is used to define settings that apply to Advanced bank statement functionality. These settings offer extended options on reconciliation matching rules, additional functionality on the bank reconciliation worksheet and other behavior. The settings also includes number sequence.
 To open the **Financial utilities parameters** page, go to **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters**. <br>
-Then set the fields as desribed in the following subsections.
+Then set the fields as described in the following subsections.
 
 #### General
 **Reconciliation matching rule**
