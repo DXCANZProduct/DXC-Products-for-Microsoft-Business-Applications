@@ -57,4 +57,4 @@ In addition, where Import statement for multiple bank accounts in all legal enti
 
 ### Periodic import
 
-The bank statement can also be set to import by periodic task [Import bank statements via financial utilities connection](../Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md)
+The bank statement can also automatically be imported by using periodic task [Import bank statements via financial utilities connection](../Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md)
