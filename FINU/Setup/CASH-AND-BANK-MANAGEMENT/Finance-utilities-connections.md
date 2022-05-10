@@ -2,10 +2,10 @@
 # required metadata
 
 title: [Finance Utilities ]
-description: [Cash and bank management setup - Finance utilities parameters]
-author: [helenho]
+description: [Cash and bank management setup - Finance utilities connections]
+author: [jdutoit2]
 manager: Kym Parker
-ms.date: 02/03/2021
+ms.date: 10/05/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Finance Utilities ]
+# ms.search.form:  [DFUConnection]
 audience: [Application User]
 # ms.devlang: 
 ms.reviewer: [jdutoit2]
@@ -27,8 +27,13 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core-Dynamics-AX-CP-requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions-list-for-docs-topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Advanced bank reconciliation functionality
-The fields as described in the following subsections are available to control the additional functionality for advanced bank reconciliation.
+# Financial utilities connection
+When the bank statements are to be imported via the periodic task **Import bank statements via financial utilities connection**, the applicable connection type must be setup using the **Financial utilities connections** form.
+
+The **Financial utilities connection** are used in the following:
+1.	Assigned to the applicable [**Bank accounts**](Bank-accounts.md).
+2.	Mandatory parameter in the periodic task **Import bank statements via financial utilities connection**
+
 
 ## Setup
 ### Finance utilities parameters
