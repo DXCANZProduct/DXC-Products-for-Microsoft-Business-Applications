@@ -71,15 +71,15 @@ Finance utilities minimises the manual actions required for reconciling bank acc
 - [Bank reconciliation matching rules](Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md)
 - [Customer payment and settle of one invoice via bank reconciliation](Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md#customer-payment-and-settle-of-invoice-11)
 
-<ins> **Setup required for automatic import of bank statement** </ins>
-- [Financial utilities connections](Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md)
-- [Bank accounts](Setup/CASH-AND-BANK-MANAGEMENT/Bank-accounts.md)
-- Periodic task [Import bank statements via financial utilities connection](Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md)
-
 <ins> **Processing** </ins>
 - [Bank statement import](Processing/Bank-Statement-Reconciliation/Bank-statement-import.md)
 - [Bank reconciliation worksheet](Processing/Bank-Statement-Reconciliation/Bank-reconciliation-worksheet.md)
 - [Reports](Processing/Bank-Statement-Reconciliation/Cash-and-bank-management-reports.md)
+
+<ins> **Setup required for automatic import of bank statement** </ins>
+- [Financial utilities connections](Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md)
+- [Bank accounts](Setup/CASH-AND-BANK-MANAGEMENT/Bank-accounts.md)
+- Periodic task [Import bank statements via financial utilities connection](Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md)
 
 ## Accounts Payable - Sundry
 
