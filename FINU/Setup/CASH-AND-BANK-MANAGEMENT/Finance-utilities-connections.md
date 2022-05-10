@@ -47,7 +47,7 @@ Field         | Description                         | Example or Options
 
 Click **Save** and the applicable Setup will be displayed as per Connection type selected
 
-## FTP
+### FTP
 
 Field         | Description                         | Example or Options
 :--           |:--                                  |:--
@@ -61,7 +61,7 @@ Field         | Description                         | Example or Options
 **Search mask**     |	A file mask is used to match files in the Import path	    | Bank123*
 **Import error path** |	Enter the path where the files that matches the Search mask, but haven’t successfully been imported, are copied to	| /Integration/Error
 
-## Azure blob storage
+### Azure blob storage
 
 Field         | Description                         | Example or Options
 :--           |:--                                  |:--
@@ -83,7 +83,7 @@ Field         | Description                         | Example or Options
 **Search mask**     |	A file mask is used to match files in the Import path	    | Bank123*
 **Import error path** |	Enter the path where the files that matches the Search mask, but haven’t successfully been imported, are copied to	  | /Integration/Error
 
-## SharePoint
+### SharePoint
 > Note: Setup SharePoint at **Organisation administration > Document management > Document management parameters**, tab **SharePoint**
 
 Field         | Description                         | Example or Options
