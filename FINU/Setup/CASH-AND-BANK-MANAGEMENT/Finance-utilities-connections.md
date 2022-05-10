@@ -28,7 +28,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 ## Financial utilities connection
-When the bank statements are to be imported via the periodic task [Import bank statements via financial utilities connection](Bank-statement-import.md), the applicable connection type must be setup using the **Financial utilities connections** page.
+When the bank statements are to be imported via the periodic task **Import bank statements via financial utilities connection**, the applicable connection type must be setup using the **Financial utilities connections** page.
 
 **Financial utilities connections** are used in the following:
 1.	Assigned to the applicable [Bank accounts](Bank-accounts.md).
