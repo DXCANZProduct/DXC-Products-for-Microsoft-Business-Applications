@@ -73,7 +73,11 @@ Field         | Description                         | Example or Options
 **Archive container name**  |	Enter the path where the imported files are to be copied to	| integration-archive
 **Search mask**           |	A file mask is used to match files in the Import path	        | Bank123*
 **Error container name**  |	Enter the path where the files that matches the Search mask, but haven’t successfully been imported, are copied to	| integration-error
-<ins>**SFTP**</ins>	|		
+
+### SFTP		
+
+Field         | Description                         | Example or Options
+:--           |:--                                  |:--
 **Host**                  |	Specify the Host for the SFTP site. <br> > Note: SFTP:// is not required	
 **Port**            |	Specify the Port for the SFTP site	  | 21
 **User**            |	Specify the Username used for authentication to the SFTP site	
