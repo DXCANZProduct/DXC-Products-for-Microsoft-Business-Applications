@@ -34,7 +34,7 @@ When the bank statements are to be imported via the periodic task [Import bank s
 1.	Assigned to the applicable [Bank accounts](Bank-accounts.md).
 2.	Mandatory parameter in the periodic task [Import bank statements via financial utilities connection](Bank-statement-import.md)
 
-To open the **Financial utilities connections** page, go to **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections**. Then set the fields as desribed in the following subsections.
+To open the **Financial utilities connections** page, go to **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections**. Then set the fields as described in the following subsections.
 
 
 Field         | Description                         | Example or Options
