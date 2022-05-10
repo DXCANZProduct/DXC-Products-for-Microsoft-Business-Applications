@@ -30,8 +30,6 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # Bank accounts
 When the bank statements are to be imported via the periodic task [Import bank statements via financial utilities connection](Bank-statement-import.md), the following setup is required on each bank account.
 
-In the Reconciliation FastTab, complete the following:
-
 To open the **Bank accounts** page, go to **Cash and bank management > Bank accounts > Bank accounts**, expand the **Reconciliation** FastTab. Then set the fields as desribed in the following subsections.
 
 Field         | Description                         
