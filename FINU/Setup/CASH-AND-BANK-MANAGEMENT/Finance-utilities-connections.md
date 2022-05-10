@@ -28,54 +28,56 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Financial utilities connection
-When the bank statements are to be imported via the periodic task **Import bank statements via financial utilities connection**, the applicable connection type must be setup using the **Financial utilities connections** form.
+When the bank statements are to be imported via the periodic task **Import bank statements via financial utilities connection**, the applicable connection type must be setup using the **Financial utilities connections** page.
 
-The **Financial utilities connection** are used in the following:
-1.	Assigned to the applicable [**Bank accounts**](Bank-accounts.md).
-2.	Mandatory parameter in the periodic task **Import bank statements via financial utilities connection**
+**Financial utilities connections** are used in the following:
+1.	Assigned to the applicable [Bank accounts](Bank-accounts.md).
+2.	Mandatory parameter in the periodic task [Import bank statements via financial utilities connection](Bank-statement-import.md)
+
+To open the **Financial utilities connections** page, go to **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections**. Then set the fields as desribed in the following subsections.
 
 
-## Setup
-### Finance utilities parameters
+Field         | Description                         | Example or Options
+:--           |:--                                  |:--
+**Name**      |	Enter a name for your connection	  | ANZ_FTP
+**Description**   |	Enter a description for your connection	  |FTP for bank 123
+**Connection type** |	Select the applicable connection type	  | •	FTP <br> •	Azure blob <br> •	SFTP <br> •	SharePoint
+**Error action**    |	The action to take when there is an error with the connection | •	Error <br> •	Warning
+**Enabled**         |	Once all the mandatory fields have been completed the connection can be enabled	  | •	Yes <br> •	No
+Click Save the applicable Setup will be displayed as per Connection type selected |
+<ins>**FTP**</ins>	|
+**Host**            |	Specify the Host for the FTP site <br> > Note: FTP:// is not required	
+**Port**            |	Specify the Port for the FTP site	      | 21
+**Enable TLS**      |	Select to enable FTPS using TLS	        | •	Yes: FTPS <br> •	No: FTP
+**User**            |	Specify the Username used for authentication to the FTP site	
+**Password**        |	Specify the Password used for authentication to the FTP site. <br> > Note: this is encrypted and displayed as •••••••••• within the form.	
+**Import path**     |	Enter the path where the files are to be imported from	  | /Integration
+**Import archive path** |	Enter the path where the imported files are to be copied to	  | /Integration/Archive
+**Search mask**     |	A file mask is used to match files in the Import path	    | Bank123*
+**Import error path** |	Enter the path where the files that matches the Search mask, but haven’t successfully been imported, are copied to	| /Integration/Error
+<ins>**Azure blob**</ins>	|	
+**Container name**  |	Specify the blob storage container	  | integration-import
+**Credential type** |	Select applicable Credential type for Azure blob	| •	Key vault <br> •	Database
+**Storage account name**  |	Enabled when Credential type = Database	
+**Storage account key**   |	Enabled when Credential type = Database	
+**Connection string**     |	Enabled when Credential type = Key vault	
+**Archive container name**  |	Enter the path where the imported files are to be copied to	| integration-archive
+**Search mask**           |	A file mask is used to match files in the Import path	        | Bank123*
+**Error container name**  |	Enter the path where the files that matches the Search mask, but haven’t successfully been imported, are copied to	| integration-error
+<ins>**SFTP**</ins>	|		
+**Host**                  |	Specify the Host for the SFTP site. <br> > Note: SFTP:// is not required	
+**Port**            |	Specify the Port for the SFTP site	  | 21
+**User**            |	Specify the Username used for authentication to the SFTP site	
+**Password**        |	Specify the Password used for authentication to the SFTP site. <br> > Note: this is encrypted and displayed as •••••••••• within the form.	
+**Import path**     |	Enter the path where the files are to be imported from	  | /Integration
+**Import archive path** |	Enter the path where the imported files are to be copied to	  | /Integration/Archive
+**Search mask**     |	A file mask is used to match files in the Import path	    | Bank123*
+**Import error path** |	Enter the path where the files that matches the Search mask, but haven’t successfully been imported, are copied to	  | /Integration/Error
+<ins>**SharePoint**</ins>	| > see Note	
+**Import SharePoint address**	| Enter the SharePoint address where the files are to be imported from |	https://.../Shared Documents/Integration
+**Archive SharePoint address**  |	Enter the SharePoint address where the imported files are to be copied to	| https://.../Shared Documents/Integration-archive
+**Import error SharePoint address** |	Enter the SharePoint address where the files that matches the Search mask, but haven’t successfully been imported, are copied to	| https://.../Shared Documents/Integration-error
+**Search mask**     |	A file mask is used to match files in the Import path	    | Bank123*
 
-The **Financial utilities parameter** page within **Cash and bank management** is used to define settings that apply to Advanced bank statement functionality. These settings offer extended options on reconciliation matching rules, additional functionality on the bank reconciliation worksheet and other behavior. The settings also includes number sequence.
-To open the **Financial utilities parameters** page, go to **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters**. <br>
-Then set the fields as desribed in the following subsections.
+> Note: Setup SharePoint at Organisation administration > Document management > Document management parameters, tab SharePoint
 
-#### General
-**Reconciliation matching rule**
-
-**Field** | **Description**
-:--       |:--
-**Extended matching rule operator** | This parameter activates a new operator **Included in** in the Reconciliation matching rules form. It supplements the **Contains** capability, and means that the field selected is a part of the nominated Bank statement field.
-**Extended financial details for new transaction** | This parameter enables the capture of the following details automatically if the bank statement line is marked as 'New' <br> • Financial dimensions <br> • GST  <br> • Sub-Ledger offset account
-
-**Bank reconciliation**
-
-**Field** | **Description**
-:--       |:--
-**Ability to reconcile unmatched statements** | If this parameter is not marked, the button **Mark as reconciled** is disabled in the Bank Reconciliation Worksheet when **Unmatched amount** is _NOT zero_.
-**Ability to enter reconciliation balances** | This parameter allows the user to enter any amount to balance the difference between the statement line and bank transaction line, in a separate **Correction** column. <br> The correction balance is posted to the ledger account associated with the bank transaction type as setup in **Cash and bank management > Setup > Bank transaction type**
-**Auto assign Match id** | Streamline **Match Id** and **Match Bank** reconciliation Worksheet functionality. When marked bank statement and bank transactions balances, the user can select the **Match** button and **Match id** will be auto assigned. The user is then not required to select **Match Id** before **Match**.
-
-**Bank statement**
-
-**Field** | **Description**
-:--       |:--
-**Enable custom bank statement formats** | This parameter enables a Customized format field in bank statement format in **Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format**. <br> If the bank statement format is marked as a customised format, additional fields become active to configure the BAI2/NAI/Flat/BRS file statement upload
-**Auto-post bank statement** | When Auto-post bank statement is to _Yes_, the bank statement will automatically be posted upon selecting **Mark as reconciled** from the **Bank Reconciliation Worksheet** page.
-
-**Setup for customer payment journal**
-Required when using Bank reconciliation matching rules to create customer payment journals - see [here](Bank-reconciliation-matching-rules.md#customer-payment-and-settle-of-invoice-11) for more information.
-
-**Field** | **Description**
-:--       |:--
-**Reconciliation customer payment journal name**  | Used to populate **Name** in the customer payment journal created when using bank reconciliation matching rules with **Offset account type** set to _Customer_.
-**Method of payment**     | Used to populate **Method of payment** in the customer payment journal created when using bank reconciliation matching rules with **Offset account type** set to _Customer_.
-
-#### **Number sequences**
-The following number sequences are available for advanced bank reconciliation.
-
-**Field**     | **Description**
-:--           |:--
-**Match Id**  | The number sequence that defines the Match IDs on the bank reconciliation Worksheet
