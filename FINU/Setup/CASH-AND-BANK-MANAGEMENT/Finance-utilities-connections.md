@@ -44,8 +44,13 @@ Field         | Description                         | Example or Options
 **Connection type** |	Select the applicable connection type	  | •	FTP <br> •	Azure blob <br> •	SFTP <br> •	SharePoint
 **Error action**    |	The action to take when there is an error with the connection | •	Error <br> •	Warning
 **Enabled**         |	Once all the mandatory fields have been completed the connection can be enabled	  | •	Yes <br> •	No
-Click Save the applicable Setup will be displayed as per Connection type selected |
-<ins>**FTP**</ins>	|
+
+Click **Save** and the applicable Setup will be displayed as per Connection type selected
+
+## FTP
+
+Field         | Description                         | Example or Options
+:--           |:--                                  |:--
 **Host**            |	Specify the Host for the FTP site <br> > Note: FTP:// is not required	
 **Port**            |	Specify the Port for the FTP site	      | 21
 **Enable TLS**      |	Select to enable FTPS using TLS	        | •	Yes: FTPS <br> •	No: FTP
@@ -55,7 +60,11 @@ Click Save the applicable Setup will be displayed as per Connection type selecte
 **Import archive path** |	Enter the path where the imported files are to be copied to	  | /Integration/Archive
 **Search mask**     |	A file mask is used to match files in the Import path	    | Bank123*
 **Import error path** |	Enter the path where the files that matches the Search mask, but haven’t successfully been imported, are copied to	| /Integration/Error
-<ins>**Azure blob**</ins>	|	
+
+## Azure blob storage
+
+Field         | Description                         | Example or Options
+:--           |:--                                  |:--
 **Container name**  |	Specify the blob storage container	  | integration-import
 **Credential type** |	Select applicable Credential type for Azure blob	| •	Key vault <br> •	Database
 **Storage account name**  |	Enabled when Credential type = Database	
@@ -73,11 +82,16 @@ Click Save the applicable Setup will be displayed as per Connection type selecte
 **Import archive path** |	Enter the path where the imported files are to be copied to	  | /Integration/Archive
 **Search mask**     |	A file mask is used to match files in the Import path	    | Bank123*
 **Import error path** |	Enter the path where the files that matches the Search mask, but haven’t successfully been imported, are copied to	  | /Integration/Error
-<ins>**SharePoint**</ins>	| > see Note	
+
+## SharePoint
+> Note: Setup SharePoint at **Organisation administration > Document management > Document management parameters**, tab **SharePoint**
+
+Field         | Description                         | Example or Options
+:--           |:--                                  |:--
 **Import SharePoint address**	| Enter the SharePoint address where the files are to be imported from |	https://.../Shared Documents/Integration
 **Archive SharePoint address**  |	Enter the SharePoint address where the imported files are to be copied to	| https://.../Shared Documents/Integration-archive
 **Import error SharePoint address** |	Enter the SharePoint address where the files that matches the Search mask, but haven’t successfully been imported, are copied to	| https://.../Shared Documents/Integration-error
 **Search mask**     |	A file mask is used to match files in the Import path	    | Bank123*
 
-> Note: Setup SharePoint at Organisation administration > Document management > Document management parameters, tab SharePoint
+
 
