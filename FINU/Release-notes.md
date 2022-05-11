@@ -55,8 +55,6 @@ Number	  | Functionality	  | Reason
 
 <ins>Bug fixes</ins>
 
-Number	  | Name	          | Description
-:--       |:--              |:--
 
 ## Previous version(s)
 
