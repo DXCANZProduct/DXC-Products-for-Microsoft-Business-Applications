@@ -30,8 +30,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # DXC Finance Utilities
 
 ## Release notes
-The [release notes](Release-notes.md) describes the features that are either new or changed. <br>
-Bug fixes are also listed.
+The [release notes](Release-notes.md) describes the features that are either new or changed. 
 
 ## Introduction
 The DXC Finance Utilities module provides enhanced functionalities to
