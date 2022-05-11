@@ -45,3 +45,6 @@ Field         | Description                         | Mandatory
 **Statement format**  |	Select the applicable bank statement format	  | Y
 **Bank account**  |	If applicable, select a bank account	  | N
 
+### Bank statement
+**Cash and bank management > Bank statement reconciliation > Bank statements**. <br>
+Filter **Imported via financial utilities connection** on the **Bank statement** form, provides users with the ability to filter to bank statements imported via the batch job.
