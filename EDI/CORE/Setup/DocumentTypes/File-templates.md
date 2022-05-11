@@ -344,7 +344,7 @@ If required to update regional, decimals or date settings, see [Standard setup](
 
 Each document type has its own fields that can be either mapped to for incoming files or mapped from for outgoing files. When creating an EDIFACT template, it automatically creates the EDI message and populates UNA segment under Mappings. EDIFACT mappings uses a tree structure, and normally includes a:
 - **Header section** – Header provides information related to the message, recipient, sender, reference, name and address, etc.
-- **Detail section** - Related to line-item information. For example: line number, item numbers, quantities, and pricing.
+- **Detail section** - Related to line-item information. For example: line number, item numbers, quantities, and pricing. Since this section needs to repeat per staging line: Select the line staging table in field **Staging table**.
 - **Summary section** – Document’s total monetary amounts. Also includes Section control, Control total and Message trailer.
 
 Select **Mappings** to access the template’s mappings.
