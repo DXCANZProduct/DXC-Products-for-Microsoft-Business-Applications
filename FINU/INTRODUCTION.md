@@ -27,8 +27,13 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Introduction to DXC Finance Utilities
+# DXC Finance Utilities
 
+## Release notes
+The [release notes](Release-notes.md) describes the features that are either new or changed. <br>
+Bug fixes are also listed.
+
+## Introduction
 The DXC Finance Utilities module provides enhanced functionalities to
 Microsoft Dynamics 365 Cash and bank management, and Accounts payable
 payment processing:
@@ -65,19 +70,19 @@ Matching rules can be executed either during or after the import, to automatical
  
 Finance utilities minimises the manual actions required for reconciling bank account statement(s) with bank transactions processed in Dynamics 365FO. 
 
-<ins> **Setup** </ins>
+### Setup
 - [Financial utilities parameters](Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters.md)
 - [Bank statement format](Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-format.md)
 - [Populate accounts payable document number](Setup/CASH-AND-BANK-MANAGEMENT/Populate-account-payable-payment-document-number.md)
 - [Bank reconciliation matching rules](Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md)
 - [Customer payment and settle of one invoice via bank reconciliation](Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md#customer-payment-and-settle-of-invoice-11)
 
-<ins> **Processing** </ins>
+### Processing
 - [Bank statement import](Processing/Bank-Statement-Reconciliation/Bank-statement-import.md)
 - [Bank reconciliation worksheet](Processing/Bank-Statement-Reconciliation/Bank-reconciliation-worksheet.md)
 - [Reports](Processing/Bank-Statement-Reconciliation/Cash-and-bank-management-reports.md)
 
-<ins> **Setup for automatic import of bank statement** </ins>
+### Setup for automatic import of bank statement
 - [Financial utilities connections](Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md)
 - [Bank accounts](Setup/CASH-AND-BANK-MANAGEMENT/Bank-accounts.md)
 - Periodic task [Import bank statements via financial utilities connection](Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md)
