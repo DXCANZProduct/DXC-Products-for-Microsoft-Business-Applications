@@ -30,9 +30,10 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-## 	Current version
+## Current version
 
-### 10.0.22
+### Release 10.0.22.202205xx
+
 DXC Finance Utilities 10.0.22 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
@@ -43,9 +44,7 @@ Microsoft Dynamics 365 application	| 10.0.24	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
 Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
 
-#### Release 202205xx
-
-##### Build 202205xxx
+#### Build 10.0.22.202205xxx
 
 Number	  | Functionality	  | Reason
 :--       |:--              |:--
@@ -57,7 +56,7 @@ Number	  | Functionality	  | Reason
 
 ## Previous version(s)
 
-### 10.0.22
+### Release 10.0.22.20220316
 DXC Finance Utilities 10.0.22 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
@@ -68,9 +67,7 @@ Microsoft Dynamics 365 application	| 10.0.24	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
 Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
 
-#### Release 20220316
-
-##### Build 202203161
+#### Build 10.0.22.202203161
 
 Number	  | Functionality	  | Reason
 :--       |:--              |:--
@@ -86,4 +83,3 @@ Number	  | Name	          | Description
 9665	    | Print payment advice	| Error when feature 'Enable batch processing for bank payment advice reports’ is enabled and printing the payment advice V2 for an ECL EFT format via Generate payments in the Vendor payment journal.
 9986	    | Compile errors	| PEAP 10.0.26 Compile errors <br> Error The Class 'ERUserParameterDataContract' is internal and is not accessible from the current module 'DXC Finance Utilities'. K:\AosService\PackagesLocalDirectory\bin\XppSource\DXC Finance Utilities\AxClass_DFUVendOutPaymHandler.xpp 78
 	
-
