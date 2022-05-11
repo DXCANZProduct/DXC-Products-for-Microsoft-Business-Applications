@@ -30,7 +30,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-## Current version
+# Current version
 
 ### Release 10.0.22.202205xx
 
@@ -56,7 +56,7 @@ Number	  | Functionality	  | Reason
 <ins>Bug fixes</ins>
 
 
-## Previous version(s)
+# Previous version(s)
 
 ### Release 10.0.22.20220316
 DXC Finance Utilities 10.0.22 runs on the following Microsoft releases
