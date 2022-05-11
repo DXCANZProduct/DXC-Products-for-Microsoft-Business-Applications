@@ -11,4 +11,4 @@ Please select the applicable product from below:
 - [DXC Item creation wizard](DXC-ITEM-CREATION-WIZARD/INTRODUCTION.md)
 - [DXC Smart Business Form Email Manager (Smart Send)](SMART-SEND/Overview.md)
 
-Interested in learning more about DXC for Microsoft Dynamics 365? [Talk to us](https://dxc.com/au/en/contact-us)
+Interested in learning more about DXC Practice for Microsoft? [Talk to us](https://dxc.com/au/en/contact-us)
