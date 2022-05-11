@@ -3,9 +3,9 @@
 
 title: [Finance Utilities ]
 description: [Bank statement reconciliation processing - Bank statement import ]
-author: [helenho]
+author: [jdutoit2]
 manager: Kym Parker
-ms.date: 02/03/2021
+ms.date: 10/05/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Finance Utilities ]
+# ms.search.form:  [BankStatementTable]
 audience: [Application User]
 # ms.devlang: 
 ms.reviewer: [jdutoit2]
@@ -29,7 +29,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ## Bank statement import 
 
-The **Bank statement** page  is used to import the bank statement into your D365 environment. 
+### Manual import
+The **Bank statement** page  is used to manually import the bank statement into your D365 environment. 
 Users can navigate to the page by going to **Cash and bank management > Bank statement reconciliation > Bank statements**
 
 Select **Import statement**.
@@ -54,3 +55,6 @@ In addition, where Import statement for multiple bank accounts in all legal enti
 1.	Bank accounts with the same Bank account number in the same D365 entity in which user is importing the bank statement, system imports the bank statement to the first identified bank account record. 
 2.	If the bank account exists within multiple D365 entities, the bank statement is imported into the bank account in the D365 entity from which user is importing the bank statement. If this bank account is not in the entity in which user is importing the bank statement, system imports the bank statement to the first identified bank account record 
 
+### Periodic import
+
+The bank statement can also automatically be imported by using periodic task [Import bank statements via financial utilities connection](../Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md)
