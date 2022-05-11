@@ -48,4 +48,4 @@ Field         | Description                         | Mandatory
 ### Bank statement
 **Cash and bank management > Bank statement reconciliation > Bank statements**. <br>
 Filter **Imported via financial utilities connection** on the **Bank statement** form, provides users with the ability to filter to bank statements imported via the batch job. <br>
-If the file contains any bank accounts that can't be found in D365, no bank statements will be created and the file will be moved from the Import to **Error path** as setup on the Financial connection.
+If the file contains any bank accounts that can't be found in D365, no bank statements will be created, and the file will be moved from the Import to **Error path** as setup on the Financial connection.
