@@ -34,7 +34,7 @@ When the bank statements are to be imported via the periodic task **Import bank 
 1.	Setup [Financial utilities connection](Finance-utilities-connections.md)
 1.	Setup [Bank accounts](Bank-accounts.md):
    - Select applicable **Posting date**
-   - Select applicable **Financial utilities connection** (Optional for info)
+   - Select applicable **Financial utilities connection** - Optional (for info)
 
 ### Batch job
 After the prerequisites have been completed, setup required batch job(s) by using **Cash and bank management > Periodic tasks > Import bank statements via financial utilities connection**
