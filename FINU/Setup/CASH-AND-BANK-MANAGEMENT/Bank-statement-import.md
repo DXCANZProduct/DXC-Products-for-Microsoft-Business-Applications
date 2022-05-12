@@ -51,6 +51,6 @@ Filter **Imported via financial utilities connection** on the **Bank statement**
 If the file contains any bank accounts that can't be found in D365, no bank statements will be created, and the file will be moved from the Import to **Error path** as setup on the Financial connection.
 
 Where the Statement format selected in the Batch job, is a **Custom format**, the created bank statement’s:
-- **From date** - will be set to earliest date found in the file for the bank account
-- **To date** - will be set to latest date found in the file for the bank account
+- **From date** - will be set to earliest date found in the file
+- **To date** - will be set to latest date found in the file
 
