@@ -43,7 +43,6 @@ Field         | Description                         | Mandatory
 :--           |:--                                  |:--:
 **Financial utilities connection**  |	Select the applicable Financial utilities connection  |	Y
 **Statement format**  |	Select the applicable bank statement format	  | Y
-**Bank account**  |	If applicable, select a bank account	  | N
 
 ### Bank statement
 **Cash and bank management > Bank statement reconciliation > Bank statements**. <br>
