@@ -209,7 +209,7 @@ Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dyn
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-	  | DXC license manager	 | Upgrade to version 10.8.32.10112
+<br>	  | DXC license manager	 | Upgrade to version 10.8.32.10112
 9162	  | Bank reconciliation	 | Bank reconciliation > Worksheet: Bank transactions’ hidden column **Voucher** now populated.
 
 
