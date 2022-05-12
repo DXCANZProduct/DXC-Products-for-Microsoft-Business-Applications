@@ -188,3 +188,31 @@ Number	  | Name	          | Description
 9440	  | BPAY Lodgement reference for Purchase invoice	| The BPAY Lodgement reference for Purchase invoices were not populated in the Payment proposal.
 8118	  | Vendor bank account changes - Feature managed	| When Finance Utilities is installed but doesn't have an active license/enabled, the extra fields shows up as blank on AP parameters.
 
+### Release 10.0.16.20210701
+DXC Finance Utilities 10.0.16 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.16	  | [What’s new or changed in Dynamics 365 application version 10.0.16](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-16)
+Microsoft Dynamics 365 application	| 10.0.17	  | [What’s new or changed in Dynamics 365 application version 10.0.17](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-17)
+Microsoft Dynamics 365 application	| 10.0.18	  | [What’s new or changed in Dynamics 365 application version 10.0.18](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-18)
+Microsoft Dynamics 365 application	| 10.0.19	  | [What’s new or changed in Dynamics 365 application version 10.0.19](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-19)
+Microsoft Dynamics 365 application	| 10.0.20	  | [What’s new or changed in Dynamics 365 application version 10.0.20](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-20)
+Microsoft Dynamics 365 application	| 10.0.21	  | [What’s new or changed in Dynamics 365 application version 10.0.21](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-21)
+Microsoft Dynamics 365 application	| 10.0.22	  | [What’s new or changed in Dynamics 365 application version 10.0.22](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-22)
+Microsoft Dynamics 365 application	| 10.0.23	  | [What’s new or changed in Dynamics 365 application version 10.0.23](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-23)
+Microsoft Dynamics 365 application	| 10.0.24	  | [What’s new or changed in Dynamics 365 application version 10.0.24](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-24)
+Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
+Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
+
+#### Build 10.0.16.202107012
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+	  | DXC license manager	 | Upgrade to version 10.8.32.10112
+9162	  | Bank reconciliation	 | Bank reconciliation > Worksheet: Bank transactions’ hidden column **Voucher** now populated.
+
+
+<ins>Bug fixes</ins>
+
+
