@@ -35,5 +35,5 @@ To open the **Bank accounts** page, go to **Cash and bank management > Bank acco
 Field         | Description                         
 :--           |:--                        
 **Posting date**    | 	Select the applicable posting date to be used for mark as new transactions, options include:  <br> •	Statement transaction date <br> •	Today’s date
-**Financial utilities connection**  |	Select the applicable [Financial utilities connection](Finance-utilities-connections.md)
+**Financial utilities connection**  |	Select the applicable [Financial utilities connection](Finance-utilities-connections.md) <br> Optional, for info
 
