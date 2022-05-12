@@ -114,4 +114,27 @@ Number	  | Functionality	  | Reason
 Number	  | Name	          | Description
 :--       |:--              |:--
 9517	  | Mark as new - Description	| Description in Bank reconciliation’s mark as new (for customer and vendor offset transactions) not populating the customer and vendor’ subledger transaction’s description.
-	
+
+### Release 10.0.18.20210929
+DXC Finance Utilities 10.0.18 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.18	  | [What’s new or changed in Dynamics 365 application version 10.0.18](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-18)
+Microsoft Dynamics 365 application	| 10.0.19	  | [What’s new or changed in Dynamics 365 application version 10.0.19](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-19)
+Microsoft Dynamics 365 application	| 10.0.20	  | [What’s new or changed in Dynamics 365 application version 10.0.20](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-20)
+Microsoft Dynamics 365 application	| 10.0.21	  | [What’s new or changed in Dynamics 365 application version 10.0.21](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-21)
+Microsoft Dynamics 365 application	| 10.0.22	  | [What’s new or changed in Dynamics 365 application version 10.0.22](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-22)
+Microsoft Dynamics 365 application	| 10.0.23	  | [What’s new or changed in Dynamics 365 application version 10.0.23](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-23)
+Microsoft Dynamics 365 application	| 10.0.24	  | [What’s new or changed in Dynamics 365 application version 10.0.24](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-24)
+Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
+Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
+
+#### Build 10.0.18.202109292
+
+<ins>Bug fixes</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+9506	|	Payment history – Payment advice report		| Another fix for batch ‘Enable batch processing for bank payment advice reports’. When attempting to print the ECL Payment advice V2 report from Vendor’s Payment history, errors with: ‘An attempt was made to set a report parameter 'BankPaymAdviceVendDS_DynamicParameter' that is not defined in this report.’	
+
