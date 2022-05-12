@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.22.202205xx
+### Release 10.0.22.20220512
 
 DXC Finance Utilities 10.0.22 runs on the following Microsoft releases
 
@@ -44,7 +44,7 @@ Microsoft Dynamics 365 application	| 10.0.24	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
 Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
 
-#### Build 10.0.22.202205xxx
+#### Build 10.0.22.202205121
 
 Number	  | Functionality	  | Reason
 :--       |:--              |:--
