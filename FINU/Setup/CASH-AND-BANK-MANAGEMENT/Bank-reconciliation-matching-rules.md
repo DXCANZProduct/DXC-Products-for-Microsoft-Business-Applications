@@ -3,9 +3,9 @@
 
 title: [Finance Utilities]
 description: [Cash and bank management setup - Bank reconciliation matching rules]
-author: [helenho]
+author: [jdutoit2]
 manager: Kym Parker
-ms.date: 02/03/2021
+ms.date: 12/05/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -120,7 +120,7 @@ Additional setup is also required on [Financial utilities parameters](Finance-ut
 - Method of payment
 
 ##### General ledger parameters
-Also required to configure General ledger parameters.
+If Financial utilities parameter **Populate unique voucher for each journal line** is set to _No_, it is also required to configure General ledger parameters.
 When the system creates a customer payment journal for the bank statement transaction, the one voucher could contain lines for multiple customers. Therefore, you must set up your system so that a single voucher can have multiple customer lines.
 
 To enable a single voucher to have multiple customer lines, follow these steps.
