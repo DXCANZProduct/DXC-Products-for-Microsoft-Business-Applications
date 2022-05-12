@@ -5,7 +5,7 @@ title: [EDI]
 description: [Introduction to EDI]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 20/07/2021
+ms.date: 12/05/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Introduction to EDI
+
+## Release notes
+The [release notes](Release-notes.md) describes the features that are either new or changed. 
 
 ## Expand your business efficiency with DXC Electronic Data Interchange for Microsoft Dynamics 365
 
