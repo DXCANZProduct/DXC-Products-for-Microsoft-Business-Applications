@@ -34,7 +34,7 @@ When the bank statements are to be imported via the periodic task **Import bank 
 1.	Setup [Financial utilities connection](Finance-utilities-connections.md)
 1.	Setup [Bank accounts](Bank-accounts.md):
    - Select applicable **Posting date**
-   - Select applicable **Financial utilities connection**
+   - Select applicable **Financial utilities connection** (Optional for info)
 
 ### Batch job
 After the prerequisites have been completed, setup required batch job(s) by using **Cash and bank management > Periodic tasks > Import bank statements via financial utilities connection**
@@ -49,3 +49,8 @@ Field         | Description                         | Mandatory
 **Cash and bank management > Bank statement reconciliation > Bank statements**. <br>
 Filter **Imported via financial utilities connection** on the **Bank statement** form, provides users with the ability to filter to bank statements imported via the batch job. <br>
 If the file contains any bank accounts that can't be found in D365, no bank statements will be created, and the file will be moved from the Import to **Error path** as setup on the Financial connection.
+
+Where the Statement format selected in the Batch job, is a **Custom format**, the created bank statement’s:
+- **From date** - will be set to earliest date found in the file for the bank account
+- **To date** - will be set to latest date found in the file for the bank account
+
