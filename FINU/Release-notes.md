@@ -276,5 +276,6 @@ If you’re using our model source code for extension or debugging and would lik
 If you don’t follow these instructions and continue building your installation deployable package using the license model source code, the installation will continue using the same license model as before applying the release. 
 
 ## Feature management
-Enable **Finance utilities** via D365 Feature management.
+Enable **Finance utilities** via D365 Feature management. <br>
+If you above feature is not visible, press **Check for updates** to refresh the feature management list.
 
