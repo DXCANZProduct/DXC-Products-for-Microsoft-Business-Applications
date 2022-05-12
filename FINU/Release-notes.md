@@ -53,8 +53,6 @@ Number	  | Functionality	  | Reason
 10274	    | Reconciliation matching rule – Invoice has been marked by another customer payment journal	| If **Reconciliation matching rule** for mark as new transaction are set to settle the customer invoice, and the invoice has already been marked in another open journal, D365 doesn’t allow the invoice to be selected. In this scenario the customer payment journal line will now still be created (previously didn’t) but with no invoice selected for settlement.
 10152	    | GER bank statement format	| Support importing Bank statement formats using GER (Electronic reporting), and supports setting posting date (for mark as new transactions) to: <br> •	Statement transaction date, or <br> •	Today’s date
 
-<ins>Bug fixes</ins>
-
 
 # Previous version(s)
 
@@ -213,8 +211,6 @@ Number	  | Name	          | Description
 9162	  | Bank reconciliation	 | Bank reconciliation > Worksheet: Bank transactions’ hidden column **Voucher** now populated.
 
 
-<ins>Bug fixes</ins>
-
 ### Release 10.0.16.20210504
 DXC Finance Utilities 10.0.16 runs on the following Microsoft releases
 
@@ -239,8 +235,6 @@ Number	  | Name	          | Description
 8977	  | Payment advice	| Vendor bank details missing on Eclipse Payment advice. <br> Was no longer populated into BankPaymAdviceVendTmp table which is generated during report run.
 8316	  | Electronic reporting destination	| SFTP password encrypted
 
-
-<ins>Bug fixes</ins>
 
 #### Build 10.0.16.202105042
 
