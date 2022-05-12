@@ -215,4 +215,39 @@ Number	  | Name	          | Description
 
 <ins>Bug fixes</ins>
 
+### Release 10.0.16.20210504
+DXC Finance Utilities 10.0.16 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.16	  | [What’s new or changed in Dynamics 365 application version 10.0.16](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-16)
+Microsoft Dynamics 365 application	| 10.0.17	  | [What’s new or changed in Dynamics 365 application version 10.0.17](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-17)
+Microsoft Dynamics 365 application	| 10.0.18	  | [What’s new or changed in Dynamics 365 application version 10.0.18](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-18)
+Microsoft Dynamics 365 application	| 10.0.19	  | [What’s new or changed in Dynamics 365 application version 10.0.19](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-19)
+Microsoft Dynamics 365 application	| 10.0.20	  | [What’s new or changed in Dynamics 365 application version 10.0.20](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-20)
+Microsoft Dynamics 365 application	| 10.0.21	  | [What’s new or changed in Dynamics 365 application version 10.0.21](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-21)
+Microsoft Dynamics 365 application	| 10.0.22	  | [What’s new or changed in Dynamics 365 application version 10.0.22](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-22)
+Microsoft Dynamics 365 application	| 10.0.23	  | [What’s new or changed in Dynamics 365 application version 10.0.23](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-23)
+Microsoft Dynamics 365 application	| 10.0.24	  | [What’s new or changed in Dynamics 365 application version 10.0.24](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-24)
+Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
+Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
+
+#### Build 10.0.16.202105041
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+8977	  | Payment advice	| Vendor bank details missing on Eclipse Payment advice. <br> Was no longer populated into BankPaymAdviceVendTmp table which is generated during report run.
+8316	  | Electronic reporting destination	| SFTP password encrypted
+
+
+<ins>Bug fixes</ins>
+
+#### Build 10.0.16.202105042
+
+<ins>Bug fixes</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+8989	  | Reports	    | Fix Payment advice report overwrites all other reports; only applicable to 10.0.16.202105041
+
 
