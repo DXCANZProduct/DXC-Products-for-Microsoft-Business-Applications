@@ -3,9 +3,9 @@
 
 title: [Finance Utilities ]
 description: [Cash and bank management setup - Finance utilities parameters]
-author: [helenho]
+author: [jdutoit2]
 manager: Kym Parker
-ms.date: 02/03/2021
+ms.date: 12/05/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Finance Utilities ]
+# ms.search.form:  [Finance Utilities]
 audience: [Application User]
 # ms.devlang: 
 ms.reviewer: [jdutoit2]
@@ -67,6 +67,7 @@ Required when using Bank reconciliation matching rules to create customer paymen
 :--       |:--
 **Reconciliation customer payment journal name**  | Used to populate **Name** in the customer payment journal created when using bank reconciliation matching rules with **Offset account type** set to _Customer_.
 **Method of payment**     | Used to populate **Method of payment** in the customer payment journal created when using bank reconciliation matching rules with **Offset account type** set to _Customer_.
+**Populate unique voucher for each journal line** |	When customer payment journal is created using the additional Finance utilities fields on **Reconciliation  matching rules** (for mark as new transactions), this field provides options if the journal will be created with unique vouchers for each line. If new field is enabled, General ledger parameters’ **Allow multiple transactions within one voucher** doesn’t need to be enabled.
 
 #### **Number sequences**
 The following number sequences are available for advanced bank reconciliation.
