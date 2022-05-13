@@ -63,17 +63,7 @@ div.scroll {
                 right:50%;
                 text-align: left;
                 margin-right:-680px;
-            }
-
-footer {
-  display: none !important;
-}
-
-.btn {
-  display: none !important;
-}
-
-/* Remove default bullets */
+     /* Remove default bullets */
 ul, #myUL {
   list-style-type: none;
 }
@@ -112,5 +102,16 @@ ul, #myUL {
 .active {
   display: block;
 }
+            }
+
+footer {
+  display: none !important;
+}
+
+.btn {
+  display: none !important;
+}
+
+
 
 #page-header #banner-area-wrapper #banner-area {display:none;}
