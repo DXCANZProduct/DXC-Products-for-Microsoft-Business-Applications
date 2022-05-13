@@ -32,7 +32,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ## Release notes
 The [release notes](Release-notes.md) describes the features that are either new or changed. 
 
-## Expand your business efficiency with DXC Electronic Data Interchange for Microsoft Dynamics 365
+**Expand your business efficiency with DXC Electronic Data Interchange for Microsoft Dynamics 365**
 
 EDI is a well-proven business tool for lowering costs, improving business efficiency, speed and accuracy. DXC EDI enables companies to easily setup, send/receive and manage messages with their EDI trading partners, all within Microsoft Dynamics 365 for Operations.
 
