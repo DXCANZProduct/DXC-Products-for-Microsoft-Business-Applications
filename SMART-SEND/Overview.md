@@ -27,7 +27,12 @@ ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Overview
+# DXC Smart Business Form Email Manager
+
+## Release notes
+The [release notes](Release-notes.md) describes the features that are either new or changed. 
+
+## Introduction
 DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Operations (or Smart Send) is a simple and smart solution for sending business forms and other reports to your customers and vendors. The solution automates distribution of business forms and reports based on contact preferences using rich format email templates. The following are example business forms processes that can be streamlined using the DXC Smart Business Form Email Manager solution:
 
 #### Customer
