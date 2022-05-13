@@ -55,10 +55,15 @@ div.scroll {
             }
 
  #rightbox {
-                float:right;
                 background:blue;
-                width:900px;
-                height:980px;
+                width:230px;
+                height:500px;
+                position: fixed;
+                top: 200px;
+                right:50%;
+                margin-right:-560px;
+                text-align: left;
+     
             }
 
 footer {
