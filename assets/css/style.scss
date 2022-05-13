@@ -35,6 +35,8 @@ header {
 
 body {
    background: #D9D9D6;  
+   border: #FFFFFF;
+   margin: auto;
    margin-top: -50px; 
     content {
         color: #FFFFFF;
@@ -45,12 +47,61 @@ div.scroll {
                 margin:0px, 0px, 0px; 
                 padding:0px; 
                 background-color: #D9D9D6; 
-                width: 500px; 
                 width: fit-content;
                 height: 500px; 
                 overflow-x: hidden; 
                 overflow-x: auto; 
                 text-align:left; 
+            }
+
+ #rightbox {
+                background: #D9D9D6;
+                width:230px;
+                height:500px;
+                position: fixed;
+                top: 200px;
+                right:50%;
+                text-align: left;
+                margin-right:-680px;
+     /* Remove default bullets */
+ul, #myUL {
+  list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+}
             }
 
 footer {
@@ -60,5 +111,7 @@ footer {
 .btn {
   display: none !important;
 }
+
+
 
 #page-header #banner-area-wrapper #banner-area {display:none;}
