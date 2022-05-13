@@ -29,7 +29,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # Introduction
 
-## The DocuSign for Dynamics 365 for Operations module couples Microsoft D365 Finance and Operations with the DocuSign® solution.
+**The DocuSign for Dynamics 365 for Operations module couples Microsoft D365 Finance and Operations with the DocuSign® solution.**
 
 DXC Solutions for Docusign and Dynamics 365 empowers users to send, sign, and approve documents quickly via electronic signature capture and approvals. This module allows users to be able efficiently send documents to both external and internal receipiants for review, acceptance or rejection. This creates a seamless process that can be used by internal teams, customers, vendors and partners to do business.
 
