@@ -32,9 +32,9 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.22.20220512
+### Release 10.0.22.202204101
 
-DXC Finance Utilities 10.0.22 runs on the following Microsoft releases
+DXC EDI 10.0.22 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
@@ -44,7 +44,14 @@ Microsoft Dynamics 365 application	| 10.0.24	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
 Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
 
-#### Build 10.0.22.202205121
+#### Build 10.0.22.2022041012
+
+<ins>Deprecated</ins>
+
+Functionality		| Reason
+:--			|:--
+EDI > Setup > Batch control <br> EDI > Batch control (workspace)	| Replaced with **EDI > Setup > EDI batch control groups**, which allows companies to setup a batch for one or multiple legal entities. <br> > Note: Running **Refresh module** will transfer the “tick’s” (green in screenshot) from deprecated Batch control to new Batch control groups. <br> Next step is to delete the company specific EDI Batch jobs (via System administration > Inquiries > Batch jobs) and then create new batch jobs for each process via red in below screenshot. These will automatically be created on Company account dat, which enables the batch to run for multiple company accounts. <br> ![alt text](RELEASE-NOTES-IMAGES/202204101.png "EDI batch control groups")
+
 
 Number	  | Functionality	  | Reason
 :--       |:--              |:--
@@ -57,15 +64,7 @@ Number	  | Functionality	  | Reason
 # Previous version(s)
 
 ### Release 10.0.22.20220316
-DXC Finance Utilities 10.0.22 runs on the following Microsoft releases
 
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.22	  | [What’s new or changed in Dynamics 365 application version 10.0.22](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-22)
-Microsoft Dynamics 365 application	| 10.0.23	  | [What’s new or changed in Dynamics 365 application version 10.0.23](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-23)
-Microsoft Dynamics 365 application	| 10.0.24	  | [What’s new or changed in Dynamics 365 application version 10.0.24](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-24)
-Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
-Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
 
 #### Build 10.0.22.202203161
 
