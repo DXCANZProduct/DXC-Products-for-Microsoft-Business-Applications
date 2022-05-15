@@ -129,7 +129,59 @@ Number	| Name		 | Description
 
 Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
+### Release 10.0.18.20211029
 
+#### Build 10.0.18.202110291
+	
+Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+<ins>New features</ins>
+Number	| Functionality	  | Reason
+:--	|:--		  |:--
+9521	| Purchase invoice	| Purchase invoice unit price rounding on conversion. Where document setting ‘Prices include sales tax’ is set to ‘Including tax’.
+<br> 	| Compile error	  | Compile error for SAB_EDIClerk.SAB_EDIFreightForwarderLandedCost.xml. Caught in 10.0.21
+
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+
+
+#### Build 10.0.18.202110292
+
+Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+### Release 10.0.18.20211021
+
+#### Build 10.0.18.202110211
+	
+Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+<ins>New features</ins>
+Number	| Functionality	  | Reason
+:--	|:--		  |:--
+52	| Customer credit note	| •	Setting profile added to Customer document type ‘Sales invoice’. <br> o	 Mappings for ‘Invoice’ and ‘Credit adjustment note’ <br> o	Don’t send credit note – Y/N <br> •	New field InvoiceType added to Customer document type ‘Sales invoice’. <br>  **Backwards compatibility**: Not mandatory to setup profile on Trading partner. If mapping not setup, ‘Invoice’ or ‘Credit note’ will be written to new field InvoiceType.
+9310	| Display first error	| Display first error on inbound staging record (uses Version log) in new field on list page called ‘Message’. Also available on Inbound documents in Document maintenance workspace
+9311	| Canceled	| Ability to change inbound file and staging record’s status to Canceled. Available on all inbound files, staging forms and Document maintenance workspace.
+9479	| Sent timestamp | EDI > Inquiries and reports > Functional acknowledgement received: ‘Sent timestamp’ changed from Date to Date and time
+
+
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+9263	| Picking list cancellation	| When 3PL sends a picking list registration with all the line quantities set to zero, which effectively cancels the complete picking list: EDI automatically creates a Picking list staging back to the 3PL with Order purpose = Cancellation. <br> Fix: Don’t send cancellation back to 3PL
+8775	| Integration – Customer group	| Field length on SAB_EDICustGroupStaging.GroupControlNumber changed to use EDT
+
+
+#### Build 10.0.18.202110292
+
+Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+
+	
 # Installation process
 To align with MS best practice and to protect our IP the following changes have been made to the release process.
 - The license models DXCLicense and Sable37License will only be released as binaries as part of a deployable package. 
