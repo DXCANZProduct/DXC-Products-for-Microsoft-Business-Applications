@@ -89,6 +89,17 @@ Number	| Name		 | Description
 8341	| 3PL UI fixes	 | Various small user interface fixes on staging forms (removing duplicates etc.) Also updated entity ‘EDI Shipment Receipt settings – Transfer order’ to ‘EDI Settings Shipment Receipt - Transfer order’ for consistency
 4432	| Customer UI fixes | Various small user interface fixes to staging forms, POA document setting profile and adding Store code to Trading partner’s Address
 
+#### Build 10.0.22.2022041013
+Includes Inbound Transportation management (ITM) & ITM version Freight forwarder of 2022041012
+
+#### Build 10.0.22.2022041014 
+	
+Number	| Name	 | Description
+10236	| Text document type template	| **Field position** index reverted to not unique 
+
+#### Build 10.0.22.2022041015
+Includes Inbound Transportation management (ITM) & ITM version Freight forwarder of 2022041014
+
 # Previous version(s)
 
 
