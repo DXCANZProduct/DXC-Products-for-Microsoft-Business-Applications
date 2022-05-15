@@ -73,7 +73,21 @@ Number	  | Functionality	  | Reason
 10147	| Consignment notes	| Removed error message **No document setting specified** where a customer doesn’t have a setting profile assigned to Customer advanced shipping notice document. **Add** button will be disabled if no setting profile assigned. **Add** button is only enabled where document setting **ASN strategy** is set to _Consolidated packing slip_ and **Sent to EDI** is _No_.
 9827 <br> 9829	| **Sent to EDI** on EDI processing workspaces	| <ins>EDI Sales order processing workspace</ins> <br> New tile and tab for **Open invoice**. Filtered to sales invoices for customer trading partners with ‘Sales invoice’ document enabled. Below new buttons and filters also added to **Open consignment notes** <br> <ins>EDI Purchase order processing workspace</ins> <br> New tile and tab for **Open confirmation**. Filtered to purchase confirmations for vendor trading partners with **Vendor purchase order** document enabled. <br> <ins>All above processing workspaces</ins> <br> Additional functionality on Processing for all the Open tabs: <br> •	Filtered to Sent to EDI is No <br> •	Filtered to Excluded set to No <br> •	Buttons: <br> o	**Send to EDI** - can create staging record from workspace and update **Sent to EDI** to _Ye_s <br> o	**Reset flag** – Enabled when **Sent to EDI** is _Yes_. Reset ‘Sent to EDI’ to No which enables ‘Send to EDI’ button <br> o	**Exclude / Include** (New functionality) – Ability to exclude the record from the “outstanding” list. Use filter Excluded to view records that has been excluded and can use button Include to include record again. Doesn’t create the staging record, but assist users in managing their “outstanding” list. <br> ![EDI Sales order processing](RELEASE-NOTES-IMAGES/202204101_6.png "EDI Sales order processing")
 
+<ins>Bug fixes</ins>
 
+Number	| Name		 | Description
+:--	|:--		 |:--
+9990	| 10.0.26 PEAP	 | Compile error fixes for 10.0.26 PEAP
+10023	| Customer advanced shipping notice	| SSCC blank for 'ASN line configuration' PickingList
+9707	| 3PL Document maintenance	| Tile vs. Document list (all legal entities)
+9644	| Batch jobs	 | ‘Process to outbound’ ran for all legal entities
+9795	| Purchase invoice	| Using OrderedQty instead of InvoiceQuantity
+9694	| Saved views	 | Saved views not applied to all EDI forms	
+10080	| Staging forms	 | Staging forms wasn’t opening correct record after inserting a column on lines
+9820	| XSLT format	 | ‘Format outbound document’ not applied to XSLT
+5402	| Display method | Ability to add display method field (example numberOf Lines) to text template mapping and ability to import via entity
+8341	| 3PL UI fixes	 | Various small user interface fixes on staging forms (removing duplicates etc.) Also updated entity ‘EDI Shipment Receipt settings – Transfer order’ to ‘EDI Settings Shipment Receipt - Transfer order’ for consistency
+4432	| Customer UI fixes | Various small user interface fixes to staging forms, POA document setting profile and adding Store code to Trading partner’s Address
 
 # Previous version(s)
 
