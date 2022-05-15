@@ -95,6 +95,7 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 #### Build 10.0.22.2022041014 
 	
 Number	| Name	 | Description
+:--	|:--	 |:--
 10236	| Text document type template	| **Field position** index reverted to not unique 
 
 #### Build 10.0.22.2022041015
