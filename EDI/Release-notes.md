@@ -46,6 +46,8 @@ Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dyn
 
 #### Build 10.0.22.2022041012
 
+Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
 <ins>Deprecated</ins>
 
 Functionality		| Reason
@@ -103,7 +105,29 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
 # Previous version(s)
 
+### Release 10.0.18.20220110
 
+#### Build 10.0.18.202201101
+	
+Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+<ins>New features</ins>
+Number	| Functionality	  | Reason
+:--	|:--		  |:--
+8337	| XML and JSON document template mapping	| Additional mapping functionality for document templates XML and JSON
+9642	| Product dimension – Version	| Added **Version** to all document types when **Product dimension – Version** is enabled – see [MS](https://docs.microsoft.com/en-us/dynamics365/supply-chain/pim/product-dimensions) for enabling steps
+9690	| Sales invoice – Product dimensions	| Product dimensions added to Sales invoice document type
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+9597	| Sales order header, EDI FastTab	| Fix to **Original EDI number** on Sales order. <br> Also added link on ‘Change EDI number’.
+9601	| currentSessionTimeHMS()	| Fix to Outbound filename placeholder currentSessionTimeHMS(). Minutes showing as 90 instead of 09 for example.
+
+#### Build 10.0.18.202201102
+
+Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
 
 # Installation process
