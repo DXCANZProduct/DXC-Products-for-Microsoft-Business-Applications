@@ -286,6 +286,49 @@ Number	| Name		 | Description
 
 Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
+### Release 10.0.16.20210709
+
+#### Build 10.0.16.202107092
+	
+Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+<ins>New features</ins>
+	
+Number	| Functionality	  | Reason
+:--	|:--		  |:--
+<br>    | DXC license manager	| Upgrade to version 10.8.32.10112
+9196	| Time zone	  | Support of converting file with date+time+timezone to date only field as per user’s time zone
+9196	| Import performance	| Performance improvement for populateStagingField / str2FieldDataType
+
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+9196	| Time zone	 | Converting file with date+time+timezone to date/time field as per document template’s regional settings
+
+#### Build 10.0.16.202107093
+
+Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+### Release 10.0.16.20210601
+
+#### Build 10.0.16.202106011
+	
+Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+<ins>New features</ins>
+	
+Number	| Functionality	  | Reason
+:--	|:--		  |:--
+9170	| Purchase invoice	| New document setting Posting date for Inbound Purchase invoice. Options include Invoice date and Today’s date. Invoice date is the default for existing and new document setting profiles for this document.
+9172	| Inventory adjustment	| Replaceable extensibility changes on: <br>  •	SAB_EDIProcessor_InventAdj.processLines() <br> • SAB_EDIProcessor_InventAdjReconciliation.processLines()
+
+
+
+#### Build 10.0.16.202106012
+
+Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 	
 # Installation process
 To align with MS best practice and to protect our IP the following changes have been made to the release process.
