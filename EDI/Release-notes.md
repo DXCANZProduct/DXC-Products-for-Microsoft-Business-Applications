@@ -112,6 +112,7 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
 <ins>New features</ins>
+	
 Number	| Functionality	  | Reason
 :--	|:--		  |:--
 8337	| XML and JSON document template mapping	| Additional mapping functionality for document templates XML and JSON
@@ -136,6 +137,7 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
 <ins>New features</ins>
+	
 Number	| Functionality	  | Reason
 :--	|:--		  |:--
 9521	| Purchase invoice	| Purchase invoice unit price rounding on conversion. Where document setting ‘Prices include sales tax’ is set to ‘Including tax’.
@@ -159,6 +161,7 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
 <ins>New features</ins>
+	
 Number	| Functionality	  | Reason
 :--	|:--		  |:--
 52	| Customer credit note	| •	Setting profile added to Customer document type ‘Sales invoice’. <br> o	 Mappings for ‘Invoice’ and ‘Credit adjustment note’ <br> o	Don’t send credit note – Y/N <br> •	New field InvoiceType added to Customer document type ‘Sales invoice’. <br>  **Backwards compatibility**: Not mandatory to setup profile on Trading partner. If mapping not setup, ‘Invoice’ or ‘Credit note’ will be written to new field InvoiceType.
@@ -176,10 +179,32 @@ Number	| Name		 | Description
 8775	| Integration – Customer group	| Field length on SAB_EDICustGroupStaging.GroupControlNumber changed to use EDT
 
 
-#### Build 10.0.18.202110292
+#### Build 10.0.18.202110212
 
 Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
+### Release 10.0.18.20210928
+
+#### Build 10.0.18.202109283
+	
+Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+<ins>New features</ins>
+	
+Number	| Functionality	  | Reason
+:--	|:--		  |:--
+8343	| EDIFACT	  | New module & licensing for ‘EDI – Standard formats’. <br> Includes ability to map **EDIFACT** document template type.
+
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+
+
+#### Build 10.0.18.202109284
+
+Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
 	
 # Installation process
