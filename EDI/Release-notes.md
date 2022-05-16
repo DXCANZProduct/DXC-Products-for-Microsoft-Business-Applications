@@ -206,6 +206,82 @@ Number	| Name		 | Description
 
 Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
+### Release 10.0.16.20210817
+
+#### Build 10.0.16.202108171
+	
+Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+<ins>New features</ins>
+	
+Number	| Functionality	  | Reason
+:--	|:--		  |:--
+
+
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+9312	| Reset status	 | Staging form displaying duplicate records when using Reset status and multiple batches setup for ‘Process to target’ step. <br> Table SAB_EDIResetStatusTrans has been duplicated to new table SAB_EDIResetStatusSharedTrans. ‘Refresh module’ button now includes code to transfer records from old table to the new table with "Refresh module" button.
+
+
+#### Build 10.0.16.202108172
+
+Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+### Release 10.0.16.20210810
+
+#### Build 10.0.16.202108101
+	
+Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+<ins>New features</ins>
+	
+Number	| Functionality	  | Reason
+:--	|:--		  |:--
+9184	| Vendor POA	  | New document setting: Purchase order confirmation not required for accept Purchase order acknowledgement
+
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+9193	| Vendor ASN	 | Item requirements for Project Purchase order. Where Project parameter’s Item consumption setting is set to: <br> •	Yes: Item requirement’s Line status set to Invoiced <br> •	No: Item requirement’s Line status remains Open order
+9218	| Vendor ASN	 | Fix to subsequent ASN’s for same purchase order line; where  ‘Insufficient open deliver remainder’ caused the staging record to error even though enough open.
+9235	| 3PL Inventory adjustments	| Fix to Inventory status validation for Inventory adjustment documents. Where the Inventory status does not exist, error staging record.
+
+### Release 10.0.16.20210729
+
+#### Build 10.0.16.202107291
+	
+Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+<ins>New features</ins>
+	
+Number	| Functionality	  | Reason
+:--	|:--		  |:--
+8966	| 3PL outbound docs: new fields	New line fields added to all 3PL outbound documents: <br> •	BarCode <br> •	GTIN <br> •	Item description <br> •	Unit
+9165	| Created date/time on outbound docs	| New field createdDateTime added to all outbound documents.
+9166	| Number of lines on outbound docs	| New field numberOfLines added to all outbound documents.
+9167	| Sales invoice: new fields and label fixes	| New header fields added: <br> •	TaxRate. Calculate based on sales invoice staging: <br> InvoiceTaxAmount/InvoiceAmountExTax*100 <br> New line fields added: <br> •	Ordered quantity. Source = SalesLine.SalesQty (same unit) <br> Labels fixed on header: <br> •	InvoiceAmountExTax = Invoice amount excluding tax <br> •	InvoiceAmountIncTax = Invoice amount including tax <br> Labels fixed on lines: <br> •	LineAmountExTax = Line amount excluding tax <br> •	LineAmountIncTax = Line amount including tax
+9168	| Customer POA: new fields	| New header fields added: <br> •	DeliveryAddressCountryIsoCode <br> •	DeliveryBuildingCompliment <br> •	DeliveryCity <br> •	DeliveryCountryRegionId <br> •	DeliveryCounty <br> •	DeliveryDistrictName <br> •	DeliveryName <br> •	DeliveryPostBox <br> •	DeliveryState <br> •	DeliveryStoreCode <br> •	DeliveryStreet <br> •	DeliveryStreetNumber <br> •	DeliveryZipCode
+9180	| Suppress BOM character parameter	| New option **Suppress BOM character** on XML document templates
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+9189	| Inbound files: Populate company from Trading partner	| When using Retrieve files, the Company filter was previously used to determine the company. If left blank, the Trading partner Account number and Name was blank on Inbound files. Processing to staging was still fine
+9198	| 3PL inventory adjustment – Reconciliation | **Reconcile all on-hand** checked previous reconciliations as well. And thus, didn’t include all on-hand if the on-hand was included in previous recons.
+9214	| Tile count	| Document maintenance workspace: 3PL’s Shipment receipt – Transfer order’s tile count incorrectly used count of Shipment advice – Transfer order.
+9220	| Outbound document Regional settings	| Converting date+time+timezone as per outbound document template’s regional settings. Time-only fields are not converted.
+
+
+#### Build 10.0.16.202107292
+
+Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
 	
 # Installation process
 To align with MS best practice and to protect our IP the following changes have been made to the release process.
