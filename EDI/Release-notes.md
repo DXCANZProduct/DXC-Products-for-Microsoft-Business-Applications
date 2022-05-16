@@ -144,12 +144,6 @@ Number	| Functionality	  | Reason
 <br> 	| Compile error	  | Compile error for SAB_EDIClerk.SAB_EDIFreightForwarderLandedCost.xml. Caught in 10.0.21
 
 
-<ins>Bug fixes</ins>
-
-Number	| Name		 | Description
-:--	|:--		 |:--
-
-
 #### Build 10.0.18.202110292
 
 Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
@@ -168,7 +162,6 @@ Number	| Functionality	  | Reason
 9310	| Display first error	| Display first error on inbound staging record (uses Version log) in new field on list page called ‘Message’. Also available on Inbound documents in Document maintenance workspace
 9311	| Canceled	| Ability to change inbound file and staging record’s status to Canceled. Available on all inbound files, staging forms and Document maintenance workspace.
 9479	| Sent timestamp | EDI > Inquiries and reports > Functional acknowledgement received: ‘Sent timestamp’ changed from Date to Date and time
-
 
 
 <ins>Bug fixes</ins>
@@ -196,12 +189,6 @@ Number	| Functionality	  | Reason
 8343	| EDIFACT	  | New module & licensing for ‘EDI – Standard formats’. <br> Includes ability to map **EDIFACT** document template type.
 
 
-<ins>Bug fixes</ins>
-
-Number	| Name		 | Description
-:--	|:--		 |:--
-
-
 #### Build 10.0.18.202109284
 
 Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
@@ -211,12 +198,6 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 #### Build 10.0.16.202108171
 	
 Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
-
-<ins>New features</ins>
-	
-Number	| Functionality	  | Reason
-:--	|:--		  |:--
-
 
 
 <ins>Bug fixes</ins>
@@ -323,7 +304,6 @@ Number	| Functionality	  | Reason
 :--	|:--		  |:--
 9170	| Purchase invoice	| New document setting Posting date for Inbound Purchase invoice. Options include Invoice date and Today’s date. Invoice date is the default for existing and new document setting profiles for this document.
 9172	| Inventory adjustment	| Replaceable extensibility changes on: <br>  •	SAB_EDIProcessor_InventAdj.processLines() <br> • SAB_EDIProcessor_InventAdjReconciliation.processLines()
-
 
 
 #### Build 10.0.16.202106012
