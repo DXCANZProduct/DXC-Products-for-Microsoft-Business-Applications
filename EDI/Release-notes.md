@@ -250,6 +250,10 @@ Number	| Name		 | Description
 9193	| Vendor ASN	 | Item requirements for Project Purchase order. Where Project parameter’s Item consumption setting is set to: <br> •	Yes: Item requirement’s Line status set to Invoiced <br> •	No: Item requirement’s Line status remains Open order
 9218	| Vendor ASN	 | Fix to subsequent ASN’s for same purchase order line; where  ‘Insufficient open deliver remainder’ caused the staging record to error even though enough open.
 9235	| 3PL Inventory adjustments	| Fix to Inventory status validation for Inventory adjustment documents. Where the Inventory status does not exist, error staging record.
+	
+#### Build 10.0.16.202108102
+
+Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
 ### Release 10.0.16.20210729
 
