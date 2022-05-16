@@ -26,10 +26,14 @@ ms.author: [ndavidson2]
 ms.search.validFrom: [September 2017]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
+# DXC DocuSign for Dynamics 365 for Operations
 
-# Introduction
+## Release notes
+The [release notes](Release-notes.md) describes the features that are either new or changed. 
 
-**The DocuSign for Dynamics 365 for Operations module couples Microsoft D365 Finance and Operations with the DocuSign® solution.**
+## Introduction
+
+**DXC DocuSign for Dynamics 365 for Operations module couples Microsoft D365 Finance and Operations with the DocuSign® solution.**
 
 DXC Solutions for Docusign and Dynamics 365 empowers users to send, sign, and approve documents quickly via electronic signature capture and approvals. This module allows users to be able efficiently send documents to both external and internal receipiants for review, acceptance or rejection. This creates a seamless process that can be used by internal teams, customers, vendors and partners to do business.
 
