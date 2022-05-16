@@ -58,18 +58,18 @@ Number	  | Functionality	  | Reason
 
 #### Build 10.0.12.202107011
 
-Number	  | Functionality	  | Reason
-:--       |:--              |:--
-	    | Update to 10.0.12 | Update release version to 10.0.12 in line with platform support.
-	    | License manager	| Update to license manager 10.8.32.10112.
+Functionality	  | Reason
+:--              |:--
+Update to 10.0.12 | Update release version to 10.0.12 in line with platform support.
+License manager	| Update to license manager 10.8.32.10112.
 
 ### Release 10.0.9.20200820
 
 #### Build 10.0.9.202008201
 
-Number	  | Functionality	  | Reason
-:--       |:--              |:--
-	    | License manager	| Update to license manager 10.8.32.10092.
+Functionality	  | Reason
+:--              |:--
+License manager	| Update to license manager 10.8.32.10092.
 
   
 # Installation process
