@@ -261,7 +261,7 @@ Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
 	
 Number	| Functionality	  | Reason
 :--	|:--		  |:--
-8966	| 3PL outbound docs: new fields	New line fields added to all 3PL outbound documents: <br> •	BarCode <br> •	GTIN <br> •	Item description <br> •	Unit
+8966	| 3PL outbound docs: new fields	| New line fields added to all 3PL outbound documents: <br> •	BarCode <br> •	GTIN <br> •	Item description <br> •	Unit
 9165	| Created date/time on outbound docs	| New field createdDateTime added to all outbound documents.
 9166	| Number of lines on outbound docs	| New field numberOfLines added to all outbound documents.
 9167	| Sales invoice: new fields and label fixes	| New header fields added: <br> •	TaxRate. Calculate based on sales invoice staging: <br> InvoiceTaxAmount/InvoiceAmountExTax*100 <br> New line fields added: <br> •	Ordered quantity. Source = SalesLine.SalesQty (same unit) <br> Labels fixed on header: <br> •	InvoiceAmountExTax = Invoice amount excluding tax <br> •	InvoiceAmountIncTax = Invoice amount including tax <br> Labels fixed on lines: <br> •	LineAmountExTax = Line amount excluding tax <br> •	LineAmountIncTax = Line amount including tax
