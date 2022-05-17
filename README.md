@@ -4,11 +4,11 @@ DXC Practice for Microsoft offers a variety of products for D365 Financials and 
 Please select the applicable product from below:
 
 - [DXC Core extensions](CORE-EXTENSIONS/Solution-overview.md)
-- [DXC Solutions for DocuSign and Dynamics 365](DOCUSIGN/INTRODUCTION.md)
 - [DXC Electronic Data Interchange (EDI)](EDI/Introduction.md)
 - [DXC Finance utilities](FINU/INTRODUCTION.md) (specific to ANZ region)
 - [DXC Forex contracts](FOREX-CONTRACT/Introduction.md)
 - [DXC Item creation wizard](DXC-ITEM-CREATION-WIZARD/INTRODUCTION.md)
 - [DXC Smart Business Form Email Manager (Smart Send)](SMART-SEND/Overview.md)
+- [DXC Solutions for DocuSign and Dynamics 365](DOCUSIGN/INTRODUCTION.md)
 
 Interested in learning more about DXC Practice for Microsoft? [Talk to us](https://dxc.com/au/en/contact-us)
