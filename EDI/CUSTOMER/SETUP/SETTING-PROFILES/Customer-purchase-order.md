@@ -56,7 +56,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Add optional charged supplementary items**  |	Enabled when **Add mandatory supplementary items** is set to _Yes_. Option to automatically add optional charged supplementary items	| Yes/No
 <ins>**Retail**</ins>   |   |
 **Channel**                     |	Option to set the channel when creating retail sales order.	  | Drop-down options from Name as setup in **Retail and commerce > Channels > Stores > All stores**
-BankReconciliationMatchingRuleEntity  |	Option to automatically Complete the Sales order and process payment for retail orders where the customer’s **Allow on account** is set to _Yes_. Utilizes Payment method as set below. If payment can’t be completed the sales order is put on hold.	| Yes/No
+**Automatic complete retail order** |	Option to automatically Complete the Sales order and process payment for retail orders where the customer’s **Allow on account** is set to _Yes_. Utilizes Payment method as set below. If payment can’t be completed the sales order is put on hold.	| Yes/No
 **Payment method**              |	Option to set the **Retail payment method** for processing Payment. If Payment method is blank, the first Payment method for the Channel where **Default function** is Customer is utilized.	| Drop-down options from **Retail and commerce > Channel setup > Payment methods**. Filtered to **Default function = Customer** (only Customer supported)
 
 ## Where used
