@@ -65,14 +65,14 @@ Field         | Description                         | Example or Options
 
 Field         | Description                         | Example or Options
 :--           |:--                                  |:--
-**Container name**  |	Specify the blob storage container	  | integration-import
+**Container name**  |	Specify the blob storage container. Folders are not supported	  | integration-import
 **Credential type** |	Select applicable Credential type for Azure blob	| •	Key vault <br> •	Database
 **Storage account name**  |	Enabled when Credential type = Database	
 **Storage account key**   |	Enabled when Credential type = Database	
 **Connection string**     |	Enabled when Credential type = Key vault	
-**Archive container name**  |	Enter the path where the imported files are to be copied to	| integration-archive
+**Archive container name**  |	Enter the path where the imported files are to be copied to. Folders are not supported	| integration-archive
 **Search mask**           |	A file mask is used to match files in the Import path	        | Bank123*
-**Error container name**  |	Enter the path where the files that matches the Search mask, but haven’t successfully been imported, are copied to	| integration-error
+**Error container name**  |	Enter the path where the files that matches the Search mask, but haven’t successfully been imported, are copied to. Folders are not supported	| integration-error
 
 ### SFTP		
 
