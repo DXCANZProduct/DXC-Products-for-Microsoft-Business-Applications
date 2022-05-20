@@ -63,10 +63,12 @@ div.scroll {
                 right:50%;
                 text-align: left;
                 margin-right:-680px;
-     /* Remove default bullets */
+            }
+
+/* Remove default bullets */
 ul, #myUL {
   list-style-type: none;
-}
+
 
 /* Remove margins and padding from the parent ul */
 #myUL {
@@ -102,7 +104,7 @@ ul, #myUL {
 .active {
   display: block;
 }
-            }
+
 
 footer {
   display: none !important;
