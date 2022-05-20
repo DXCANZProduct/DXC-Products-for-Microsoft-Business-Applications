@@ -20,5 +20,5 @@
       </li>
     </ul>
   </li>
-  <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/Support.html">Support</a></li>
+  <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/Support.html">L3</a></li>
 </ul>
