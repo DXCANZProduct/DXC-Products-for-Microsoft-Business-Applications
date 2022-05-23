@@ -34,7 +34,7 @@ This document describes the features that are either new or changed in the relea
 
 ### Release 10.0.22.20220407
 
-DXC Finance Utilities 10.0.22 runs on the following Microsoft releases
+DXC Forex contract 10.0.22 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
