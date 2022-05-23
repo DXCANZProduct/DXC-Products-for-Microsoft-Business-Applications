@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [Finance Utilities]
-description: [Finance Utilities - Release notes]
+title: [Forex contract]
+description: [Forex contract - Release notes]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 11/05/2022
+ms.date: 23/05/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.22.20220512
+### Release 10.0.22.20220407
 
 DXC Finance Utilities 10.0.22 runs on the following Microsoft releases
 
@@ -44,112 +44,20 @@ Microsoft Dynamics 365 application	| 10.0.24	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
 Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
 
-#### Build 10.0.22.202205121
+#### Build 10.0.22.202204071
 
-Number	  | Functionality	  | Reason
-:--       |:--              |:--
-8461	    | Bank statement import	  | Ability to automatically import bank statements from ftp, ftps, sftp, Azure blob storage, or SharePoint
-10094	    | Reconciliation matching rule – unique voucher	| New **Financial utilities parameters** field called **Populate unique voucher for each journal line**. When customer payment journal is created using the additional Finance utilities fields on **Reconciliation  matching rules** (for mark as new transactions), this new field provides options if the journal will be created with unique vouchers for each line. If new field is enabled, General ledger parameters’ **Allow multiple transactions within one voucher** doesn’t need to be enabled.
-10274	    | Reconciliation matching rule – Invoice has been marked by another customer payment journal	| If **Reconciliation matching rule** for mark as new transaction are set to settle the customer invoice, and the invoice has already been marked in another open journal, D365 doesn’t allow the invoice to be selected. In this scenario the customer payment journal line will now still be created (previously didn’t) but with no invoice selected for settlement.
-10152	    | GER bank statement format	| Support importing Bank statement formats using GER (Electronic reporting), and supports setting posting date (for mark as new transactions) to: <br> •	Statement transaction date, or <br> •	Today’s date
+Functionality	  		| Reason
+:--               		|:--
+Forex contract			| Ability to create Forex contracts
+Link to Purchase order		| Ability to link Forex contract(s) to a Purchase order header
+Link to Purchase order line 	| Ability to link Forex contract(s) to a Purchase order line
+Link to Invoice journal line 	| Ability to link Forex contract(s) to a Invoice journal line
+Cash in				| Ability to cash in Forex contract(s)
 
 
 # Previous version(s)
 
-### Release 10.0.22.20220316
 
-#### Build 10.0.22.202203161
-
-Number	  | Functionality	  | Reason
-:--       |:--              |:--
-9490	    | ABN search and validation	| Ability for Australian companies to search and validate ABN for customers and vendors.
-9925	    | Auto-post bank statement	| Only automatically posts bank statement when status is reconciled.
-9505	    | Populate bank transaction document number	| Populating the document number in bank reconciliation’s bank transactions. <br> From 10.0.22 MS has removed ‘Turn off reconciliation worksheet performance enhancement’ parameter. <br> Not required anymore: RemoveLoadReconciliationWorksheetExtensibleFlight_KillSwitch
-9688	    | Reconciliation matching rule (1:1 customer and invoice)	| Write Bank statement’s Description to Customer receipt journal. Also added the new Finance utilities fields to entities 'Reconciliation matching rules' and ‘Financial utilities parameters’
-
-<ins>Bug fixes</ins>
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-9665	    | Print payment advice	| Error when feature 'Enable batch processing for bank payment advice reports’ is enabled and printing the payment advice V2 for an ECL EFT format via Generate payments in the Vendor payment journal.
-9986	    | Compile errors	| PEAP 10.0.26 Compile errors <br> Error The Class 'ERUserParameterDataContract' is internal and is not accessible from the current module 'DXC Finance Utilities'. K:\AosService\PackagesLocalDirectory\bin\XppSource\DXC Finance Utilities\AxClass_DFUVendOutPaymHandler.xpp 78
-	
-### Release 10.0.18.20211210
-
-#### Build 10.0.18.202112102
-
-Number	  | Functionality	  | Reason
-:--       |:--              |:--
-1386	| Data entities		| Following entities have been added/updated: <br> •	Bank statement format / BankStatementFormatEntity <br> •	Financial utilities parameters / SAB_FinUtilParametersEntity <br> •	Budget utilities parameters / SAB_FinBudgetParametersEntity <br> •	Bank accounts / BankAccountEntity <br> •	Vendor bank accounts / VendVendorBankAccountEntity <br> •	Reconciliation matching rules / BankReconciliationMatchingRuleEntity 
-8324	| Reconciliation matching rule	| Ability to create customer payment journal and settle one invoice per payment (1:1)
-9629	| SAB_FinBankStatementImportBatch	| Update to class to allow **Multiple statements in the file** setup as a parameter for a client mod to import via web service.
-
-
-<ins>Bug fixes</ins>
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-9517	  | Mark as new - Description	| Description in Bank reconciliation’s mark as new (for customer and vendor offset transactions) not populating the customer and vendor’ subledger transaction’s description.
-
-### Release 10.0.18.20210929
-
-#### Build 10.0.18.202109292
-
-<ins>Bug fixes</ins>
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-9506	|	Payment history – Payment advice report		| Another fix for batch ‘Enable batch processing for bank payment advice reports’. When attempting to print the ECL Payment advice V2 report from Vendor’s Payment history, errors with: ‘An attempt was made to set a report parameter 'BankPaymAdviceVendDS_DynamicParameter' that is not defined in this report.’	
-
-### Release 10.0.18.20210909
-
-#### Build 10.0.18.202109091
-
-<ins>Bug fixes</ins>
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-9316	  |Print payment advice	| When feature **Enable batch processing for bank payment advice reports** is enabled, and user attempts to print Payment advice report ECL_BankPaymAdviceVend.Report; errors with: <br> ‘Stack trace: Calling wait or detach before calling run. An attempt was made to set a report parameter 'AX_RdpPreProcessedId' that is not defined in this report.’ <br> MS has rebuilt the report so that the parameters no longer matched which was what caused the problem. <br> The solution was to mimic MS solution and introduce a V2 of our payment advice report. The new V2 is only available once the feature has been enabled. <br> As the feature has been enable/disabled the customer needs to open the print management form and reselect the report they want to use. <br> The list or reports available is refreshed after the feature is turned on or off when: <br> •	Standard report, refreshed when a user tries to run the report. <br> •	FinUtils report, refreshed when a user tried to run the report or open the print management form. <br> Feature ‘Enable batch processing for bank payment advice reports’ is enabled has a Feature state set to ‘On by default’ from 10.0.21. and thus is automatically enabled from 10.0.21. But the feature can still be disabled (if not required).
-
-### Release 10.0.16.20210824
-
-#### Build 10.0.16.202108241
-
-
-<ins>Bug fixes</ins>
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-9440	  | BPAY Lodgement reference for Purchase invoice	| The BPAY Lodgement reference for Purchase invoices were not populated in the Payment proposal.
-8118	  | Vendor bank account changes - Feature managed	| When Finance Utilities is installed but doesn't have an active license/enabled, the extra fields shows up as blank on AP parameters.
-
-### Release 10.0.16.20210701
-
-#### Build 10.0.16.202107012
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-<br>	  | DXC license manager	 | Upgrade to version 10.8.32.10112
-9162	  | Bank reconciliation	 | Bank reconciliation > Worksheet: Bank transactions’ hidden column **Voucher** now populated.
-
-
-### Release 10.0.16.20210504
-
-#### Build 10.0.16.202105041
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-8977	  | Payment advice	| Vendor bank details missing on Eclipse Payment advice. <br> Was no longer populated into BankPaymAdviceVendTmp table which is generated during report run.
-8316	  | Electronic reporting destination	| SFTP password encrypted
-
-
-#### Build 10.0.16.202105042
-
-<ins>Bug fixes</ins>
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-8989	  | Reports	    | Fix Payment advice report overwrites all other reports; only applicable to 10.0.16.202105041
 
 # Installation process
 To align with MS best practice and to protect our IP the following changes have been made to the release process.
@@ -183,6 +91,6 @@ If you’re using our model source code for extension or debugging and would lik
 If you don’t follow these instructions and continue building your installation deployable package using the license model source code, the installation will continue using the same license model as before applying the release. 
 
 ## Feature management
-Enable **Finance utilities** via D365 Feature management. <br>
+Enable **DXC Forex contract** via D365 Feature management. <br>
 If you above feature is not visible, press **Check for updates** to refresh the feature management list.
 
