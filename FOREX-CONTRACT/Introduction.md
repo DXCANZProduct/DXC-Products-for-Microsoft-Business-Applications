@@ -35,7 +35,6 @@ The [release notes](Release-notes.md) describes the features that are either new
 ## Introduction
 The Forex contract module is designed to allocate Forex contracts to purchase orders and invoice journals. <br>
 The amounts in inventory/vendor accounts will be calculated based on the attached Forex contract forward rate. <br>
-<br>
 
 Goods are imported from another country by the company. Payment in foreign currency is going to be made in a certain period. <br>
 To hedge the exchange rate risk, the company enters into a contract with bank to purchase the foreign currency at a certain exchange rate on the payment due date. <br>
