@@ -146,8 +146,8 @@ The data entities include Finance utilities tables and also enhances existing st
 ### Security configuration
 
 The following roles are included in the Finance utilities module: 
-- **Finance utilities manager**
-- **Finance utilities clerk**
+- Finance utilities manager
+- Finance utilities clerk
 
 ### FAQ
 
