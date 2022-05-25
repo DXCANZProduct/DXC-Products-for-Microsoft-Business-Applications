@@ -1,0 +1,31 @@
+.v-search-box-wrapper {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+}
+
+.autocomplete-textfield {
+    width: 100%;
+}
+
+.v-search-box-wrapper.button-joined .v-button {
+    background: white;
+    box-shadow: none;
+}
+
+.v-search-box-wrapper.button-joined .v-button:hover {
+    color: #197de1;
+    background-color: white;
+}
+
+.v-search-box-wrapper.button-joined .v-button:hover:after {
+    background-color: transparent;
+}
+
+.v-search-box-wrapper.button-left.button-joined .v-button {
+    border-right: none;
+}
+
+.v-search-box-wrapper.button-right.button-joined .v-button {
+    border-left: none;
+}
