@@ -27,11 +27,14 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Introduction to DXC Forex contract
+# DXC Forex contract
 
+## Release notes
+The [release notes](Release-notes.md) describes the features that are either new or changed. 
+
+## Introduction
 The Forex contract module is designed to allocate Forex contracts to purchase orders and invoice journals. <br>
 The amounts in inventory/vendor accounts will be calculated based on the attached Forex contract forward rate. <br>
-<br>
 
 Goods are imported from another country by the company. Payment in foreign currency is going to be made in a certain period. <br>
 To hedge the exchange rate risk, the company enters into a contract with bank to purchase the foreign currency at a certain exchange rate on the payment due date. <br>
