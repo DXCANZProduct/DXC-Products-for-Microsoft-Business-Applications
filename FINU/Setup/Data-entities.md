@@ -36,6 +36,7 @@ Finance utilities includes the following data entities :
 |-|-|
 |  **Financial utilities parameters**   | Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters |
 |  **Budget utilities parameters**      | Budgeting > Setup > Basic budgeting > Budget utilities parameters  |
+| **Financial utilities connections**   | Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections |
 
 ## Standard data entities
 Finance utilities have extended the following standard data entities:
