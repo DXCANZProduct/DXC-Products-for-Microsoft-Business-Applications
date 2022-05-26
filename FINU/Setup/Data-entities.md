@@ -55,6 +55,14 @@ Accounts payable > Vendors > All vendors - Bank accounts on Vendor FastTab
 |-                                    |-                                          
 | **Vendor bank accounts**            | • Biller code (DFUBILLERCODE) <br> • Lodgement reference (DFULODGEMENTREF) <br> • Bank code (ECL_BANKCODE) <br> • Bank particulars (ECL_BANKPARTICULARS) <br> • Bank reference (ECL_BANKREFERENCE) 
 
+### Vendor methods of payment
+Accounts payable > Payment setup > Methods of payments
+
+| **Entity**                          | **Additional Finance utilities fields for standard entity**                 
+|-                                    |-                                          
+| **Vendor payment method**           | • Sundry method of payment <br> • Auto payment reference number <br> • BPAY method of payment <br> • Payment control > Lodgement reference is mandatory (DFUVALIDATELODGEMENTREFISMANDATORY) <br> • Payment attributes > Lodgement reference (DFUATTRIBUTELODGEMENTREFENABLED)
+
+
 ### Reconciliation matching rules
 Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules
 
