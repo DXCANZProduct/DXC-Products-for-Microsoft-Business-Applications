@@ -67,4 +67,4 @@ Misc charge/allowance indicator must be 'Allowance' or 'Charge' | Staging record
 No mapping found for misc method of handling %  | Staging record's **Misc method of handling** isn't found in [Misc method of handling](../SETUP/VENDOR-SETUP/Misc-method-of-handling.md). Add to mapping if correct, else fix staging record.
 The inventory quantity to match for product receipt % item % cannot be reserved.  | The staging record's invoice quantity doesn't match to the product receipt quantity
 Unit conversion from % to % does not exist. | The staging record's unit doesn't match to purchase order's unit and therefor requires the item's unit conversion to be applied. EDI can't find the applicable unit conversion.
-Vendor % does not exist.  | Staging record's **Vendor account** doesn't exist in D365. Fix staging record.
+Vendor % does not exist.  | Staging record's **Vendor account** doesn't exist in D365. Fix staging record or add vendor to D365.
