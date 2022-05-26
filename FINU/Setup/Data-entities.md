@@ -46,14 +46,14 @@ Cash and bank management > Bank accounts > Bank accounts
 
 | **Entity**                          | **Additional Finance utilities fields for standard entity**                
 |-                                    |-                        
-| **Bank accounts**                   | • BPAY batch ID (DFUBPAYBATCHID) <br> •	Extra balance line on EFT (DFUEXTRABALANCELINE) <br> • Include balance line in record count (DFUBALANCELINECOUNT) <br> • Total line order (DFUTOTALLINEORDER) <br> • Use vendor bank name (DFUUSEVENDBANKNAME) <br> • User identification (DFUEFTUSERID)
+| **Bank accounts**                   | **EFT parameters:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> •	Extra balance line on EFT (DFUEXTRABALANCELINE) <br> • Include balance line in record count (DFUBALANCELINECOUNT) <br> • Total line order (DFUTOTALLINEORDER) <br> • Use vendor bank name (DFUUSEVENDBANKNAME) <br> • User identification (DFUEFTUSERID) **BPAY:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> <br> **Import financial utilities connection:** <br> • Posting date (DFUBANKSTATEMENTPOSTINGDATETYPE)
 
 ### Vendor bank accounts
 Accounts payable > Vendors > All vendors - Bank accounts on Vendor FastTab
 
 | **Entity**                          | **Additional Finance utilities fields for standard entity**                 
 |-                                    |-                                          
-| **Vendor bank accounts**            | • Biller code (DFUBILLERCODE) <br> • Lodgement reference (DFULODGEMENTREF) <br> • Bank code (ECL_BANKCODE) <br> • Bank particulars (ECL_BANKPARTICULARS) <br> • Bank reference (ECL_BANKREFERENCE)  
+| **Vendor bank accounts**            | • Biller code (DFUBILLERCODE) <br> • Lodgement reference (DFULODGEMENTREF) <br> • Bank code (ECL_BANKCODE) <br> • Bank particulars (ECL_BANKPARTICULARS) <br> • Bank reference (ECL_BANKREFERENCE) 
 
 ### Reconciliation matching rules
 Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules
