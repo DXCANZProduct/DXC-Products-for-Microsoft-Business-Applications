@@ -46,7 +46,7 @@ Cash and bank management > Bank accounts > Bank accounts
 
 | **Entity**                          | **Additional Finance utilities fields for standard entity**                
 |-                                    |-                        
-| **Bank accounts**                   | **EFT parameters:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> •	Extra balance line on EFT (DFUEXTRABALANCELINE) <br> • Include balance line in record count (DFUBALANCELINECOUNT) <br> • Total line order (DFUTOTALLINEORDER) <br> • Use vendor bank name (DFUUSEVENDBANKNAME) <br> • User identification (DFUEFTUSERID) **BPAY:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> <br> **Import financial utilities connection:** <br> • Posting date (DFUBANKSTATEMENTPOSTINGDATETYPE)
+| **Bank accounts**                   | **EFT parameters:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> •	Extra balance line on EFT (DFUEXTRABALANCELINE) <br> • Include balance line in record count (DFUBALANCELINECOUNT) <br> • Total line order (DFUTOTALLINEORDER) <br> • Use vendor bank name (DFUUSEVENDBANKNAME) <br> • User identification (DFUEFTUSERID) <br> **BPAY:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> **Import financial utilities connection:** <br> • Posting date (DFUBANKSTATEMENTPOSTINGDATETYPE)
 
 ### Vendor bank accounts
 Accounts payable > Vendors > All vendors - Bank accounts on Vendor FastTab
