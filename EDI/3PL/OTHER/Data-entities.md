@@ -59,7 +59,7 @@ EDI > Setup > Document types (Setting profiles for EDI 3PL documents)
 5	                | EDI Settings Shipment Advice - Return order	  | Create new document type **Settings profile** for Shipment Advice - Return order
 6	                | EDI Settings Shipment Advice - Voyage	        | Create new document type **Settings profile** for Shipment Advice - Voyage
 7	                | EDI Settings Shipment Receipt - Purchase order	| Create new document type **Settings profile** for Shipment Receipt - Purchase order
-8	                | EDI Shipment Receipt settings - Transfer order	| Create new document type **Settings profile** for Shipment Receipt - Transfer order
+8	                | EDI Settings Shipment Receipt - Transfer order	| Create new document type **Settings profile** for Shipment Receipt - Transfer order
 9	                | EDI Settings Shipment Receipt - Return order	| Create new document type **Settings profile** for Shipment Receipt - Return order
 10	              | EDI Settings Shipment Receipt - Voyage	      | Create new document type **Settings profile** for Shipment Receipt - Voyage
 11	              | EDI Settings Inventory adjustment - Transfer	| Create new document type **Settings profile** for Inventory adjustment - Transfer
