@@ -45,6 +45,12 @@ EDI > Setup > Customer setup
 7	                | Customer EDI order line change type group       | Create new **Customer EDI order line change type group**. EDI > Setup > Customer setup > Customer EDI order line change type group
 8	                | Customer EDI order line change type group line  | Create new **Customer EDI order line change type lines**. EDI > Setup > Customer setup > Customer EDI order line change type group  | Customer EDI order line change type group
 
+## Core setup
+EDI > Setup > EDI parameters
+**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
+:-----            |:------------------------        |:-------------------                                      |:------------------------
+1                 | Sales order hold codes          | Create new **Order hold codes** to use in **EDI parameters**: <br> • POC pending hold code <br> • POA pending hold code <br> • Validation error hold code |
+
 ## Document setting profiles
 EDI > Setup > Document types (Setting profiles for EDI customer documents)
 
@@ -68,3 +74,4 @@ EDI > Setup > Trading partner
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
 1                 | EDI Customers                           | Create new Customer trading partner   | [Customer setup](#customer-setup)
 2                 | EDI Documents - Customers               | Add incoming and outgoing documents to Customer trading partner | EDI Customers, [Customer setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data-entities.md#document-types)
+3                 | Customer postal addresses                 | Standard data entity with addition of EDI field SAB_EDIStoreCode | 
