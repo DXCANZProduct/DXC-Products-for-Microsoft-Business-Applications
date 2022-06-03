@@ -1,5 +1,5 @@
 <html>
- Test 03
+ Test 4
 <style>
 /* Remove default bullets */
 ul, #myUL {
@@ -43,6 +43,7 @@ ul, #myUL {
  
 ul {
   list-style-type: none;
+  list-style-image:none;
 }
 
 </style>
@@ -59,9 +60,9 @@ ul {
           <li><span class="caret">Green Tea</span>
             <ul class="nested">
               <li>Sencha</li>
-              <li style="list-style-type: none;">Gyokuro</li>
-              <li style="list-style-type: none;">Matcha</li>
-              <li style="list-style-type: none;">Pi Lo Chun</li>
+              <li>Gyokuro</li>
+              <li>Matcha</li>
+              <li>Pi Lo Chun</li>
             </ul>
           </li>
         </ul>
