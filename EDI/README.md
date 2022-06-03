@@ -23,7 +23,7 @@ ul, #myUL {
   content: "\25B6";
   color: black;
   display: inline-block;
-  margin-right: 6px;
+  margin-right: 4px;
 }
 
 /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
