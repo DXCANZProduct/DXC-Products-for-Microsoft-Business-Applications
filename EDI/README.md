@@ -41,11 +41,16 @@ ul, #myUL {
 .active {
   display: block;
 }
+  ul,li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
 </style>
 
 <ul id="myUL">
-  <li style="none"><span class="caret">Beverages</span>
+  <li><span class="caret">Beverages</span>
     <ul class="nested">
       <li>Water</li>
       <li>Coffee</li>
