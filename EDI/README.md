@@ -1,6 +1,5 @@
 <html>
-  blah
-  
+ Test 1
 <style>
 /* Remove default bullets */
 ul, #myUL {
