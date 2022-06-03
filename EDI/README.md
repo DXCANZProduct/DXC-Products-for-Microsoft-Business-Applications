@@ -1,5 +1,5 @@
 <html>
- Test 3
+ Test 03
 <style>
 /* Remove default bullets */
 ul, #myUL {
@@ -40,9 +40,9 @@ ul, #myUL {
 .active {
   display: block;
 }
- li::marker
-{
-  display: none;      
+ 
+ul {
+  list-style-type: none;
 }
 
 </style>
@@ -59,9 +59,9 @@ ul, #myUL {
           <li><span class="caret">Green Tea</span>
             <ul class="nested">
               <li>Sencha</li>
-              <li>Gyokuro</li>
-              <li>Matcha</li>
-              <li>Pi Lo Chun</li>
+              <li style="list-style-type: none;">Gyokuro</li>
+              <li style="list-style-type: none;">Matcha</li>
+              <li style="list-style-type: none;">Pi Lo Chun</li>
             </ul>
           </li>
         </ul>
