@@ -43,7 +43,7 @@ ul, #myUL {
 </style>
 
 <ul id="myUL">
-  <li><span class="caret">Beverages</span>
+  <li style="none"><span class="caret">Beverages</span>
     <ul class="nested">
       <li>Water</li>
       <li>Coffee</li>
