@@ -1,5 +1,5 @@
 <html>
- Test 1
+ Test 2
 <style>
 /* Remove default bullets */
 ul, #myUL {
@@ -40,11 +40,6 @@ ul, #myUL {
 .active {
   display: block;
 }
-  ul,li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
 </style>
 
@@ -70,6 +65,30 @@ ul, #myUL {
     </ul>
   </li>
 </ul>
+ 
+ <ul id="myUL">
+  <li><p class="caret">Beverages</p>
+    <ul class="nested">
+      <li>Water</li>
+      <li>Coffee</li>
+      <li><p class="caret">Tea</p>
+        <ul class="nested">
+          <li>Black Tea</li>
+          <li>White Tea</li>
+          <li><p class="caret">Green Tea</p>
+            <ul class="nested">
+              <li>Sencha</li>
+              <li>Gyokuro</li>
+              <li>Matcha</li>
+              <li>Pi Lo Chun</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+  
 
 <script>
 var toggler = document.getElementsByClassName("caret");
