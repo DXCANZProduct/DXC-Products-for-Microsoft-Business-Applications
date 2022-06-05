@@ -242,7 +242,7 @@ px;height:72px; margin-top: 3px;"></a>
      
      recurse(0, startURLInspection);
           
-     function recurse(var toggleCount, var startURLInspection) {        
+     function recurse(toggleCount, startURLInspection) {        
         if (parts[startURLInspection] == toggler[toggleCount].id) {          
           toggler[toggleCount].parentElement.querySelector(".nested").classList.toggle("active");
           toggler[toggleCount].classList.toggle("caret-down");
