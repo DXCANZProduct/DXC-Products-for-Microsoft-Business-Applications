@@ -235,6 +235,22 @@ px;height:72px; margin-top: 3px;"></a>
         this.classList.toggle("caret-down");
       });
     }
+      
+    for (i = 0; i < toggler.length; i++) { 
+      if (window.location.toString().includes(toggler[i].id)) {  
+        toggler[i].parentElement.querySelector(".nested").classList.toggle("active");
+        toggler[i].classList.toggle("caret-down");
+
+        while (i>0){
+          i--;
+          if (window.location.toString().includes(toggler[i].id)) {  
+            toggler[i].parentElement.querySelector(".nested").classList.toggle("active");
+            toggler[i].classList.toggle("caret-down");
+          }
+        }
+        break;
+    }
+}
     </script>
 </div>
 
