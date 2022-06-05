@@ -225,38 +225,38 @@ px;height:72px; margin-top: 3px;"></a>
       </li>            
      </ul>
    </div>
-    <script>
-    var toggler = document.getElementsByClassName("caret");
-    var i;
+   <script>
+      var toggler = document.getElementsByClassName("caret");
+      var i;
 
-    for (i = 0; i < toggler.length; i++) {
-      toggler[i].addEventListener("click", function() {
-        this.parentElement.querySelector(".nested").classList.toggle("active");
-        this.classList.toggle("caret-down");
-      });
-    }
+      for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function() {
+          this.parentElement.querySelector(".nested").classList.toggle("active");
+          this.classList.toggle("caret-down");
+        });
+      }
     
-    var url = window.location.toString();
-    var parts = url.split("/");
-    var n = 2;  
-    for (i = 0; i < toggler.length; i++) { 
-      if (parts[parts.length - n] == toggler[i].id) {  
-        toggler[i].parentElement.querySelector(".nested").classList.toggle("active");
-        toggler[i].classList.toggle("caret-down");
+      var url = window.location.toString();
+      var parts = url.split("/");
+      var startURLInspection = 4;
+     
+     recurse(0, startURLInspection);
+          
+     function recurse(var toggleCount, var startURLInspection) {        
+        if (parts[startURLInspection] == toggler[toggleCount].id) {          
+          toggler[toggleCount].parentElement.querySelector(".nested").classList.toggle("active");
+          toggler[toggleCount].classList.toggle("caret-down");
+          startURLInspection++
 
-        while (i>0){
-          i--;
-          if (window.location.toString().includes(toggler[i].id)) {  
-            toggler[i].parentElement.querySelector(".nested").classList.toggle("active");
-            toggler[i].classList.toggle("caret-down");
+          if (toggleCount <= toggler.length) {
+            recurse(toggleCount++, startURLInspection);
           }
         }
-        break;
+       else {
+         if (toggleCount <= toggler.length) {
+            recurse(toggleCount++, startURLInspection);
+         } 
       }
-      if (n < parts.length) {
-        n++;
-      }
-    }
     </script>
 </div>
 
