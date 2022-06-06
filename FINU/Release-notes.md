@@ -184,5 +184,5 @@ If you don’t follow these instructions and continue building your installation
 
 ## Feature management
 Enable **Finance utilities** via D365 Feature management. <br>
-If you above feature is not visible, press **Check for updates** to refresh the feature management list.
+If above feature is not visible, press **Check for updates** to refresh the feature management list.
 
