@@ -351,7 +351,7 @@ Enable all licensed modules via Feature management. Features are called:
 - EDI – Freight forwarder landed cost documents (for Landed cost)
 - EDI – Standard formats
 
-If you above features are not visible, press **Check for updates** to refresh the feature management list.
+If above features are not visible, press **Check for updates** to refresh the feature management list.
 
 ## Refresh EDI module
 **EDI > Setup > EDI parameters** <br>
