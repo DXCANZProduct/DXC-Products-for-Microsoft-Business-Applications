@@ -249,12 +249,14 @@ px;height:72px; margin-top: 3px;"></a>
           startURLInspection++
 
           if (toggleCount <= toggler.length) {
-            recurse(toggleCount++, startURLInspection);
+            toggleCount++;
+            recurse(toggleCount, startURLInspection);
           }
         }
         else {
           if (toggleCount <= toggler.length) {
-            recurse(toggleCount++, startURLInspection);
+            toggleCount++;
+            recurse(toggleCount, startURLInspection);
           } 
         }
       }
