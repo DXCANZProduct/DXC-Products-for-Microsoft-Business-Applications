@@ -113,7 +113,7 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 At this step the issues are usually around mapping/business logic issues. <br>
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table. <br>
-Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#inventory-adjustment-reconciliation).
+Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#inventory-adjustment-reconciliation).
 
 ## View staging table records
 To view the Inventory adjustment - Reconciliation staging records, go to **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Reconciliation**. <br>
