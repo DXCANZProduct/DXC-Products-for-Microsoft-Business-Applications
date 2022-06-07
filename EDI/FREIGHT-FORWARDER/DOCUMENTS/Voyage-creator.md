@@ -118,7 +118,7 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 At this step the issues are usually around mapping/business logic issues. <br>
 Review the **Log** or **Version log** for the applicable record to find the issue. <br>
-Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#voyage-creator).
+Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#voyage-creator).
 
 ### Staging line validation
 
