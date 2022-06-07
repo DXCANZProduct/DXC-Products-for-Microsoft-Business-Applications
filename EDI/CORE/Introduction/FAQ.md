@@ -41,3 +41,10 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ### Number sequences are not available to setup
 To load all new number sequence references, select **Reset** on **Organization administration > Number sequences > Number sequences > Manual cleanup**
+
+### Module FAQ
+The module specific FAQ can be found here:
+- [Customer](../../CUSTOMER/INTRODUCTION/FAQ.md)
+- [Vendor]
+- [3PL]
+- [Freight forwarder for Landed cost]
