@@ -159,7 +159,7 @@ Create release order without blanket order	| The action taken when a release ord
 
 At this step the issues are usually around mapping/business logic issues. <br>
 Review the **Log** or **Version log** for the applicable record to find the issue. <br>
-Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#customer-purchase-order).
+Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#customer-purchase-order).
 
 ## View staging table records
 To view the Customer purchase order's staging records, go to **EDI > Documents > Customer documents > Customer purchase order**. 
