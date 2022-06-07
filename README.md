@@ -11,4 +11,6 @@ Please select the applicable product from below:
 - [DXC Smart Business Form Email Manager (Smart Send)](SMART-SEND/Overview.md)
 - [DXC Solutions for DocuSign and Dynamics 365](DOCUSIGN/INTRODUCTION.md)
 
-Interested in learning more about DXC Practice for Microsoft? [Talk to us](https://dxc.com/au/en/contact-us)
+## Contact details
+- Interested in learning more about DXC Practice for Microsoft? [Talk to us](https://dxc.com/au/en/contact-us) <br>
+- Existing customer's [Support](eclipse.supportapac@dxc.com)
