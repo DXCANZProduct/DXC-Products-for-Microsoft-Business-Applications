@@ -41,3 +41,4 @@ The following setup is included for the Core module:
 - [UOM mapping](UOM-mapping.md)
 - [Cleanup profile](Cleanup-profile.md)
 - [Reset status profile](Reset-status.md)
+- [Connection setup](Connection-setup.md)
