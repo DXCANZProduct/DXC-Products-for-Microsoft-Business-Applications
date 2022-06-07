@@ -66,7 +66,8 @@ DXC Item Creation Wizard for Microsoft Dynamics 365 removes the risk of human er
 ## Inquiries
 * [Creation import sessions](INQUIRIES/Creation-import-sessions.md)
 
-## [File management](SETUP/File-management.md)
-* [Installer](SETUP/File-uploader-for-file-management.zip)
-* [Data package](SETUP/File-management-data-package.zip)
+## File management
+* [File management](SETUP/FILE-MANAGEMENT/File-management.md)
+* [Installer](SETUP/FILE-MANAGEMENT/File-uploader-for-file-management.zip)
+* [Data package](SETUP/FILE-MANAGEMENT/File-management-data-package.zip)
 
