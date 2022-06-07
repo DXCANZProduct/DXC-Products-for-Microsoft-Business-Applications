@@ -3,6 +3,7 @@ A Microsoft Gold Partner, DXC Practice for Microsoft helps enterprise and mid-ma
 DXC Practice for Microsoft offers a variety of products for D365 Financials and Operations. <br>
 Please select the applicable product from below:
 
+### Product list
 - [DXC Core extensions](CORE-EXTENSIONS/Solution-overview.md)
 - [DXC Electronic Data Interchange (EDI)](EDI/Introduction.md)
 - [DXC Finance utilities](FINU/INTRODUCTION.md) (specific to ANZ region)
@@ -11,6 +12,6 @@ Please select the applicable product from below:
 - [DXC Smart Business Form Email Manager (Smart Send)](SMART-SEND/Overview.md)
 - [DXC Solutions for DocuSign and Dynamics 365](DOCUSIGN/INTRODUCTION.md)
 
-## Contact details
+### Contact details
 - Interested in learning more about DXC Practice for Microsoft? [Talk to us](https://dxc.com/au/en/contact-us) <br>
 - Existing customers' support: <eclipse.supportapac@dxc.com>
