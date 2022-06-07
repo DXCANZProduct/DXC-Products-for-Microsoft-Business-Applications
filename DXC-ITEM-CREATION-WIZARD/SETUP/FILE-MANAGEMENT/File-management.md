@@ -41,7 +41,7 @@ Setup of the application involves the following steps:
 6.	Editing configuration file for the file uploader using the information collected during the previous steps
 
 ###	Installation
-1.	A .zip file can be accessed [here](https://github.com/DXCANZProduct/ICOND365/blob/8092ee7c165f2f6fe7fb4e0d1753ec57be15c5f4/DXC%20ITEM%20CREATION%20WIZARD/SETUP/FILE-MANAGEMENT/File%20uploader%20for%20file%20management.zip). 
+1.	A .zip file can be accessed [here](File-uploader-for-file-management.zip). 
 2.	The zip file contains a setup file that must be run.
 3.	The will be installed on your fileserver. By default this will installed at C:\Program Files (x86)\Sable 37 Inc\Dynamics AX File Uploader.
 
@@ -138,7 +138,7 @@ A recurring job needs to be configured within D365 FinOps via data management. T
 4.	Select *Refresh entity list* (if required)
 5.	Select *File import data* as the *Entity name*
 6.	Select *Package* as the *source data format*
-7.	Select Upload and upload this [package](https://github.com/DXCANZProduct/ICOND365/blob/4fd5ce7c63278340be4ff63521c66e96e4851730/DXC%20ITEM%20CREATION%20WIZARD/SETUP/FILE-MANAGEMENT/File%20management%20data%20package.zip).
+7.	Select Upload and upload this [package](File-management-data-package.zip).
 8.	Select *Save*
 9.	Click on *Create recurring data job*
 10.	Enter the *Name* of the recurring job
