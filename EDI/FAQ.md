@@ -44,7 +44,7 @@ To load all new number sequence references, select **Reset** on **Organization a
 
 ### Module FAQ
 The module specific FAQ can be found here:
-- [Customer](../../CUSTOMER/INTRODUCTION/FAQ.md)
-- [Vendor](../../VENDOR/INTRODUCTION/FAQ.md)
-- [3PL](../../3PL/INTRODUCTION/FAQ.md)
-- [Freight forwarder for Landed cost](../../FREIGHT-FORWARDER/INTRODUCTION/FAQ.md)
+- [Customer](CUSTOMER/INTRODUCTION/FAQ.md)
+- [Vendor](VENDOR/INTRODUCTION/FAQ.md)
+- [3PL](3PL/INTRODUCTION/FAQ.md)
+- [Freight forwarder for Landed cost](FREIGHT-FORWARDER/INTRODUCTION/FAQ.md)
