@@ -31,7 +31,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 ## Generic EDI queries
 
-See [EDI Core FAQ](../../CORE/Introduction/FAQ.md) for generic queries
+See [EDI Core FAQ](../../FAQ.md) for generic queries
 
 ## Fixing Staging-to-Target EDI errors
 The following table describes a few staging errors that could be experienced with Freight forwarder inbound documents at the staging to target step. Short description of possible fixes are discussed. After fix, reset status on the staging record and either manually process again or leave for batch to process.
