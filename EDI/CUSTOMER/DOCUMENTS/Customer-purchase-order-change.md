@@ -146,7 +146,7 @@ The following sales order checks are done when the document is being:
 
 At this step the issues are usually around setup/business logic issues. <br>
 Review the **Log** or **Version log** for the applicable record to find the issue. <br>
-Example errors and possible fixes are discussed in [FAQ](../OTHER/FAQ.md#customer-purchase-order-change)
+Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#customer-purchase-order-change)
 
 #### Settings
 Settings profiles can be specified and linked to the template which is used to determine how D365 will react.  Options are:
