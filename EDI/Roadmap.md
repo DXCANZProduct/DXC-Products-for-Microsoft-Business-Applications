@@ -64,12 +64,12 @@ The planned features are grouped by module. Core is included for all modules.
 - **Outbound files** - File transfer type and path file has been exported to
 
 ### Customer
-- New document setting **Blank sales unit** for **Customer purchase order** and **Customer purchase order change** (add new item) - . If customer doesn't send a sales unit in the file, the document setting can be used to use either of the following when processing to target:
+- **Customer purchase order** and **Customer purchase order change** (add new item) - New document setting **Blank sales unit**. If customer doesn't send a sales unit in the file, the document setting can be used to use either of the following when processing to target:
 	-  Sales unit
 	-  Sales trade agreement unit
 	-  Inventory unit
 	-  Error
-- New field **Comments** on header and lines for **Customer purchase order**
+- **Customer purchase order** - New field **Comments** on header and lines
 
 ### Vendor
 - **Vendor purchase order change** - Add **Line change type** to D365 Purchase order line (EDI tab)
