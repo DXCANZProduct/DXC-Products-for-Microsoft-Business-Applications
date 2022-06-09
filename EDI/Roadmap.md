@@ -50,18 +50,18 @@ ETA: 30 June 2022
 The planned features are grouped by module. Core is included for all modules.
 
 ### Core
-- Allow empty date value
-- Copy functionality on:
+- Allow **empty date** value
+- **Copy** functionality on:
 	- Document type:
 		- Template setup
 		- Template mapping
 		- Setting profiles
 		- Validation
 	- Trading partner
-- Outbound filename Editor improvement 
-- XML document template mapping - Attributes
-- Functional acknowledgement received - Add company to record (for filter)
-- Outbound files - File transfer type and path file has been exported to
+- **Outbound filename Editor** improvement 
+- XML document template mapping - **Attributes**
+- **Functional acknowledgement received** - Add company to record (for filter)
+- **Outbound files** - File transfer type and path file has been exported to
 
 ### Customer
 - New document setting **Blank sales unit** for **Customer purchase order** and **Customer purchase order change** (add new item) - . If customer doesn't send a sales unit in the file, the document setting can be used to use either of the following when processing to target:
@@ -69,8 +69,8 @@ The planned features are grouped by module. Core is included for all modules.
 	-  Sales trade agreement unit
 	-  Inventory unit
 	-  Error
-- New field Comments on header and lines for **Customer purchase order**
+- New field **Comments** on header and lines for **Customer purchase order**
 
 ### Vendor
-- Add 'Line change type' to Purchase order line section
-- Support partial invoice (doesn't match to 100% of product receipt). If Invoice quantity < Shipped quantity then set 'Product receipt quantity to match' = Invoice quantity
+- Add **Line change type** to D365 Purchase order line (EDI tab)
+- Support partial invoice (doesn't match to 100% of product receipt) for **Purchase invoice**. If Invoice quantity < Shipped quantity then set 'Product receipt quantity to match' = Invoice quantity
