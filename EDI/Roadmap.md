@@ -72,3 +72,15 @@ The planned features are grouped by module. Core is included for all modules.
 #### Vendor
 - **Vendor purchase order change** - Add **Line change type** to D365 Purchase order line (EDI tab)
 - **Purchase invoice** - Support partial invoice (doesn't match to 100% of product receipt) for. If Invoice quantity < Shipped quantity then set 'Product receipt quantity to match' = Invoice quantity
+
+## Future releases
+The following features are planned for a future release
+
+- **Electronic reporting** document type template
+- **EDI history** on D365 source/target. Currently only a few documents included on Sales order and Purchase order
+
+## Deprecate
+The following is planned to be deprecated
+
+### September release
+- MS has depcrecated scripting. We will therefor remove setting **Enable scripting** from **EDI shared parameters** in the September release.
