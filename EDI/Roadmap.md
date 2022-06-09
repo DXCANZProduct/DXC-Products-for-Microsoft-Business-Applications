@@ -64,12 +64,12 @@ The planned features are grouped by module. Core is included for all modules.
 - Outbound files - File transfer type and path file has been exported to
 
 ### Customer
-- Customer purchase order and Customer purchase order change (add new item) - new document setting 'Blank sales unit'. If customer doesn't send a sales unit in the file, the document setting can be used to use either of the following when processing to target:
+- New document setting **Blank sales unit** for **Customer purchase order** and **Customer purchase order change** (add new item) - . If customer doesn't send a sales unit in the file, the document setting can be used to use either of the following when processing to target:
 	-  Sales unit
 	-  Sales trade agreement unit
 	-  Inventory unit
 	-  Error
-- New field Comments on header and lines
+- New field Comments on header and lines for **Customer purchase order**
 
 ### Vendor
 - Add 'Line change type' to Purchase order line section
