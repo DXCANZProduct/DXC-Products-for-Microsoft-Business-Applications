@@ -59,7 +59,7 @@ The planned features are grouped by module. Core is included for all modules.
 - **Outbound filename Editor** improvement 
 - XML document template mapping - **Attributes**
 - **Functional acknowledgement received** - Add company to record (for filter)
-- **Outbound files** - File transfer type and path file has been exported to
+- **Outbound files** - **File transfer type** and **path**, file has been exported to
 
 #### Customer
 - **Customer purchase order** and **Customer purchase order change** (add new item) - New document setting **Blank sales unit**. If customer doesn't send a sales unit in the file, the document setting can be used to use either of the following when processing to target:
