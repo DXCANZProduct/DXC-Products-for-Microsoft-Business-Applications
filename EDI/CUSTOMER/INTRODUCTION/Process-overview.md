@@ -78,4 +78,4 @@ Staging/document errors can be viewed at: <br>
 Users can use **Show log** and **Version log** to review the issues. And after the issue has been fixed, reset the status of the record. The next processing batch will pick up the _Not started_ status record.
 
 ### Fixing Staging-to-Target EDI errors 
-See [FAQ](../OTHER/FAQ.md#fixing-staging-to-target-edi-errors) for example errors and possible method(s) of fixing.
+See [FAQ](../Introduction/FAQ.md#fixing-staging-to-target-edi-errors) for example errors and possible method(s) of fixing.
