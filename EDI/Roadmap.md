@@ -72,5 +72,5 @@ The planned features are grouped by module. Core is included for all modules.
 - New field **Comments** on header and lines for **Customer purchase order**
 
 ### Vendor
-- Add **Line change type** to D365 Purchase order line (EDI tab)
-- Support partial invoice (doesn't match to 100% of product receipt) for **Purchase invoice**. If Invoice quantity < Shipped quantity then set 'Product receipt quantity to match' = Invoice quantity
+- **Vendor purchase order change** - Add **Line change type** to D365 Purchase order line (EDI tab)
+- **Purchase invoice** - Support partial invoice (doesn't match to 100% of product receipt) for. If Invoice quantity < Shipped quantity then set 'Product receipt quantity to match' = Invoice quantity
