@@ -77,7 +77,7 @@ The planned features are grouped by module. Core is included for all modules.
 The following features are planned for a future release
 
 - **Electronic reporting** document type template
-- **EDI history** on D365 source/target. Currently only a few documents included on Sales order and Purchase order
+- **EDI history** on D365 source/target. Currently only a few EDI documents included on Sales order and Purchase order
 
 ## Deprecate
 The following is planned to be deprecated
