@@ -29,8 +29,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # 	Roadmap / Release schedule
 
-This page describes the features planned for future releases.
-The planned release dates are also provided.
+This page describes the features planned for future releases. <br>
+The planned release dates are also provided.<br>
 Have an idea, please submit [here](https://forms.office.com/Pages/ResponsePage.aspx?id=cTXzkw9Vz0Own80zEzjQhvI-PbI_ye1ConVI4gBUFadUQTlTSlZGM1dXQklCWjUwSTZVM0JVUDZRWC4u)
 
 > Note: Dates and features are subject to change.
