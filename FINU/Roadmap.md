@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [EDI]
-description: [EDI - Roadmap]
+title: [FINU]
+description: [FINU - Roadmap]
 author: [jdutoit2]
 manager: Kym Parker
 ms.date: 9/06/2022
@@ -38,49 +38,24 @@ This page describes the features planned for future releases and planned release
 
 Release			| ETA
 :--			|:--
-June release		| 30 June 2022
-September release	| 30 September 2022
-December release 	| 13 January 2023
+July release		| 29 July 2022
 
 ## Next release
-ETA: 30 June 2022
+ETA: 29 July 2022
 
-The planned features are grouped by module. Core is included for all modules.
+The planned features are grouped by category.
 
-#### Core
-- Allow **empty date** value
-- **Copy** functionality on:
-	- Document type:
-		- Template setup
-		- Template mapping
-		- Setting profiles
-		- Validation
-	- Trading partner
-- **Outbound filename Editor** improvement 
-- XML document template mapping - **Attributes**
-- **Functional acknowledgement received** - Add company to record (for filter)
-- **Outbound files** - File transfer type and path file has been exported to
-
-#### Customer
-- **Customer purchase order** and **Customer purchase order change** (add new item) - New document setting **Blank sales unit**. If customer doesn't send a sales unit in the file, the document setting can be used to use either of the following when processing to target:
-	-  Sales unit
-	-  Sales trade agreement unit
-	-  Inventory unit
-	-  Error
-- **Customer purchase order** - New field **Comments** on header and lines
-
-#### Vendor
-- **Vendor purchase order change** - Add **Line change type** to D365 Purchase order line (EDI tab)
-- **Purchase invoice** - Support partial invoice (doesn't match to 100% of product receipt) for. If Invoice quantity < Shipped quantity then set 'Product receipt quantity to match' = Invoice quantity
+#### Cash and bank management
+- **Bank statement import** - **Document handling** option to attach file to **Bank statement** for manual and import via periodic job.
+- **Financial connections** - New button **Validate connection**. Validates connection details and import, archive and error path.
+- New **Financial utilities parameter** option **Only match posted statement lines**. For example mark as new bank reconciliation rule finds three records, but only two of the customers exist and thus won't balance since only two lines were posted as customer receipt lines.
+- **Reconciliation matching rules** - More options on Financial dimensions for mark as new transactions.
 
 ## Future releases
 The following features are planned for a future release
 
-- **Electronic reporting** document type template
-- **EDI history** on D365 source/target. Currently only a few documents included on Sales order and Purchase order
 
 ## Deprecate
 The following is planned to be deprecated
 
-#### September release
-- MS has deprecated scripting. We will therefor remove setting **Enable scripting** from **EDI shared parameters** in the September release.
+- Nothing scheduled to be deprecated
