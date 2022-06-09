@@ -33,8 +33,6 @@ This page describes the features planned for future releases and planned release
 
 > Note: Dates and features are subject to change.
 
-Have an idea, please submit [here](https://forms.office.com/Pages/ResponsePage.aspx?id=cTXzkw9Vz0Own80zEzjQhvI-PbI_ye1ConVI4gBUFadUQTlTSlZGM1dXQklCWjUwSTZVM0JVUDZRWC4u)
-
 
 ## Release schedule
 
