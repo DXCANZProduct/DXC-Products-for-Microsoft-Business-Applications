@@ -83,4 +83,4 @@ The following features are planned for a future release
 The following is planned to be deprecated
 
 ### September release
-- MS has depcrecated scripting. We will therefor remove setting **Enable scripting** from **EDI shared parameters** in the September release.
+- MS has deprecated scripting. We will therefor remove setting **Enable scripting** from **EDI shared parameters** in the September release.
