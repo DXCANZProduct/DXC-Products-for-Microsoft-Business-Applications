@@ -68,7 +68,7 @@ application/json, text/json <br>
 
  
 ### AddFileToQueue
-GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFileToQueue
+**GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFileToQueue**
 
 Parameters to add a single file into the inbound file queue
 
@@ -118,7 +118,7 @@ application/json, text/json <br>
 }
  
 ### GetStatus
-GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/GetStatus
+**GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/GetStatus**
 
 A function to retrieve the status of a queued inbound file. It also has the ability to provide information on the processed document’s status if the inbound file has been processed.
 
@@ -223,7 +223,7 @@ application/json, text/json <br>
 
 
 ### AddFileToQueue_package
-GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFileToQueue_package
+**GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFileToQueue_package**
 
 A function to push a data package which will be extracted and its contents put into the inbound file queue.
 
