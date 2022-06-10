@@ -102,11 +102,11 @@ application/json, text/json
 #### Response
 
 Name 	          | Type	        | Description
-:--             |:--            |:--
-Reference	      | Long	        | Unique identifier of the added file
-ErrorMsg	      | String	      | Any error message generated
-Success	        | Boolean	      | Whether the add was successful
-FileName	      | String	      | Filename
+:--               |:--                  |:--
+Reference	  | Long	        | Unique identifier of the added file
+ErrorMsg	  | String	        | Any error message generated
+Success	          | Boolean	        | Whether the add was successful
+FileName	  | String	        | Filename
 
 Sample:
 application/json, text/json
@@ -138,12 +138,12 @@ application/json, text/json
 
 #### Response
 
-Name 	          | Type	        | Description
+Name 	        | Type	        | Description
 :--             |:--            |:--
-Status	String	The status of the file
-ProcessedDateTime	UTC Date time	The date time the file was processed
-ProcessedDocumentId	String	The processed file’s EDI Id
-processedDocumentStatus	String	The processed files status
+Status		| String	| The status of the file
+ProcessedDateTime	| UTC Date time		| The date time the file was processed
+ProcessedDocumentId	| String		| The processed file’s EDI Id
+processedDocumentStatus	| String		| The processed files status
 
 Sample:
 application/json, text/json
@@ -155,21 +155,22 @@ application/json, text/json
 }
 
  
-1.4.	AddFilesToQueue
+### AddFilesToQueue
 GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFilesToQueue
 
 A collection of AddFileToQueueContract parameters
-1.4.1.	Request
+
+#### Request
 
 Name 	          | Type	        | Description
 :--             |:--            |:--
-AddFileToQueueContracts		
-AzureWriteUrl	String	Required The azure blob storage URL of the file
-DocumentType	String	Required The EDI Document type the file relates to
-TradingPartnerCompanyId	String	Required The legal entity the file relates to
-TradingPartnerId	String	Required The trading partner GLN the file relates to
-TradingPartnerType	String	Required The Trading partner type the file relates to
-FileName	String	Required The name of the file
+AddFileToQueueContracts		|	|
+AzureWriteUrl			| String	| **Required** The azure blob storage URL of the file
+DocumentType			| String	| **Required** The EDI Document type the file relates to
+TradingPartnerCompanyId		| String	| **Required** The legal entity the file relates to
+TradingPartnerId		| String	| **Required** The trading partner GLN the file relates to
+TradingPartnerType		| String	| **Required** The Trading partner type the file relates to
+FileName			| String	| **Required** The name of the file
 
 Sample:
 application/json, text/json
@@ -193,14 +194,14 @@ application/json, text/json
 	]
 }
 
-1.4.2.	Response
+#### Response
 
 Name 	          | Type	        | Description
 :--             |:--            |:--
-Reference	Long	Unique identifier of the added file
-ErrorMsg	String	Any error message generated
-Success	Boolean	Whether the add was successful
-FileName	String	Filename
+Reference	| Long		| Unique identifier of the added file
+ErrorMsg	| String	| Any error message generated
+Success		| Boolean	| Whether the add was successful
+FileName	| String	| Filename
 
 
 Sample:
@@ -221,11 +222,12 @@ application/json, text/json
 ]
 
 
-1.5.	AddFileToQueue_package
+### AddFileToQueue_package
 GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFileToQueue_package
 
 A function to push a data package which will be extracted and its contents put into the inbound file queue.
-1.5.1.	Data package
+
+#### Data package
 The data package is a zip file that includes a ‘manifest.xml’ xml file. The manifest file defines the files within the data package in the following XML structure
 
 <Documents>
@@ -238,15 +240,13 @@ The data package is a zip file that includes a ‘manifest.xml’ xml file. The 
 	</Document>
 </Documents>	
 
-Name 	          | Type	        | Description
-:--             |:--            |:--
-DocumentType	String	Required The EDI Document type the file relates to
-TradingPartnerCompanyId	String	Required The legal entity the file relates to
-TradingPartnerId	String	Required The trading partner GLN the file relates to
-TradingPartnerType	String	Required The Trading partner type the file relates to
-FileName	String	Required The name of the file
-
-
+Name 	           | Type	        | Description
+:--                |:--                  |:--
+DocumentType	   | String		| **Required** The EDI Document type the file relates to
+TradingPartnerCompanyId	| String	| **Required** The legal entity the file relates to
+TradingPartnerId   | String		| **Required** The trading partner GLN the file relates to
+TradingPartnerType | String		| **Required** The Trading partner type the file relates to
+FileName	   | String		| **Required** The name of the file
 
 
 Sample:
@@ -268,11 +268,11 @@ Sample:
 	</Document>
 </Documents>
 
-1.5.2.	Request
+#### Request
 
-Name 	          | Type	        | Description
+Name 	        | Type	        | Description
 :--             |:--            |:--
-azureWriteUrl	String	Required The azure blob storage URL of the data package
+azureWriteUrl	| String	| **Required** The azure blob storage URL of the data package
 
 Sample:
 application/json, text/json
@@ -280,15 +280,15 @@ application/json, text/json
     " azureWriteUrl ": " https://XXXX.blob.core.windows.net/dmf/exampleDataPackage"
 }
 
-1.5.3.	Response
+#### Response
 A collection of results
 
 Name 	          | Type	        | Description
 :--             |:--            |:--
-Reference	Long	Unique identifier of the added file
-ErrorMsg	String	Any error message generated
-Success	Boolean	Whether the add was successful
-FileName	String	Filename
+Reference	| Long		| Unique identifier of the added file
+ErrorMsg	| String	| Any error message generated
+Success		| Boolean	| Whether the add was successful
+FileName	| String	| Filename
 
 Sample:
 application/json, text/json
@@ -307,27 +307,31 @@ application/json, text/json
     }
 ]
 
-2.	Outbound services
+## Outbound services
 The EDI module exposes various functions to pull files from the outbound staging area for download.
 
 An oData feed of the outbound file queue (/data/SAB_EDIFileExport) is available for discovering the outbound queued file references.
-2.1.	GetFileDetailFromQueue
-2.1.1.	Request
-Name 	Type	Description
-reference	Long	Required The reference of the queued file
+
+### GetFileDetailFromQueue
+##### Request
+
+Name 	          | Type	        | Description
+:--               |:--                  |:--
+reference	  | Long		| **Required** The reference of the queued file
 
 Sample:
 application/json, text/json
 {
 	"reference": 61684163581
 }
-2.1.2.	Response
+
+#### Response
 
 Name 	          | Type	        | Description
-:--             |:--            |:--
-FileName	String	The filename
-Reference	Long	The reference of the file
-AzureUrl	String	The URL of the file for download
+:--               |:--                  |:--
+FileName	  | String		| The filename
+Reference	  | Long		| The reference of the file
+AzureUrl	  | String		| The URL of the file for download
 
 Sample:
 application/json, text/json
@@ -338,13 +342,13 @@ application/json, text/json
 }
 
  
-2.2.	GetFileDetailFromQueue_Package
-2.2.1.	Request
+### GetFileDetailFromQueue_Package
+#### Request
 
-Name 	          | Type	        | Description
-:--             |:--            |:--
-packageFileName	String	Required The name of the package to be created
-References	Collection of longs	Required The reference of the queued file
+Name 	         | Type	        | Description
+:--              |:--           |:--
+packageFileName	 | String	| **Required** The name of the package to be created
+References	 | Collection of longs	| **Required** The reference of the queued file
 
 Sample:
 application/json, text/json
@@ -352,12 +356,13 @@ application/json, text/json
 	"packageFileName" : "packageDownload.zip",
 	"references": [5637149076, 5637149076]
 } 
-2.2.2.	Response
 
-Name 	          | Type	        | Description
+#### Response
+
+Name 	        | Type	        | Description
 :--             |:--            |:--
-FileName	String	The filename
-AzureUrl	String	The URL of the file for download
+FileName	| String	| The filename
+AzureUrl	| String	| The URL of the file for download
 
 Sample:
 application/json, text/json
@@ -366,7 +371,7 @@ application/json, text/json
     "AzureUrl": "https://icondev803825a2135bfabe1.blob.core.windows.net/edi/exampleFile001.zip"
 }
 
-2.2.3.	Data package
+#### Data package
 The data package is a zip file that includes a ‘manifest.xml’ xml file. The manifest file defines the files within the data package in the following XML structure
 
 <Documents>
@@ -380,12 +385,12 @@ The data package is a zip file that includes a ‘manifest.xml’ xml file. The 
 </Documents>	
 
 Name 	          | Type	        | Description
-:--             |:--            |:--
-DocumentType	String	Required The EDI Document type the file relates to
-TradingPartnerCompanyId	String	Required The legal entity the file relates to
-TradingPartnerId	String	Required The trading partner GLN the file relates to
-TradingPartnerType	String	Required The Trading partner type the file relates to
-FileName	String	Required The name of the file
+:--             |:--            	|:--
+DocumentType	| String		| **Required** The EDI Document type the file relates to
+TradingPartnerCompanyId	| String	| **Required** The legal entity the file relates to
+TradingPartnerId	| String	| **Required** The trading partner GLN the file relates to
+TradingPartnerType	| String	| **Required** The Trading partner type the file relates to
+FileName		| String	| **Required** The name of the file
 
 Sample:
 <?xml version="1.0" encoding="utf-8"?>
