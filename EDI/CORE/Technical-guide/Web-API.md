@@ -114,7 +114,7 @@ application/json, text/json <br>
   "Reference": "65468431638", <br>
   "ErrorMsg": "", <br>
   "Success": true, <br>
-  " FileName": “ExampleFile001.xml”  <br>
+  "FileName": “ExampleFile001.xml”  <br>
 }
  
 ### GetStatus
@@ -133,7 +133,7 @@ Sample: <br>
 application/json, text/json <br>
 { <br>
   "reference": "65468431638", <br>
-  " includeStagingStatus": true <br>
+  "includeStagingStatus": true <br>
 }
 
 #### Response
@@ -183,7 +183,8 @@ application/json, text/json <br>
     "TradingPartnerCompanyId": "USMF", <br>
     "TradingPartnerId": "GLN00001", <br>
     "TradingPartnerType": "Customer" <br>
-  }, { <br>
+  },  <br>
+  { <br>
     "AzureWriteUrl": "<span>https://</span>XXXX.blob.core.windows.net/dmf/exampleFile02", <br>
     "DocumentType": "Customer purchase order", <br>
     "FileName": "ExampleFile002.xml", <br>
