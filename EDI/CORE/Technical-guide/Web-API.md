@@ -230,7 +230,7 @@ A function to push a data package which will be extracted and its contents put i
 #### Data package
 The data package is a zip file that includes a ‘manifest.xml’ xml file. The manifest file defines the files within the data package in the following XML structure
 
-/<Documents> <br>
+`<Documents> <br>
   <Document>		 <br>
     <DocumentType/> <br>
     <FileName/> <br>
