@@ -184,7 +184,7 @@ application/json, text/json <br>
     "TradingPartnerId": "GLN00001", <br>
     "TradingPartnerType": "Customer" <br>
   },  <br>
-  { <br>
+  { <br>
     "AzureWriteUrl": "<span>https://</span>XXXX.blob.core.windows.net/dmf/exampleFile02", <br>
     "DocumentType": "Customer purchase order", <br>
     "FileName": "ExampleFile002.xml", <br>
