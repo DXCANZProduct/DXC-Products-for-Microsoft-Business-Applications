@@ -36,7 +36,7 @@ The EDI module exposes various functions to send files into the inbound staging 
 
 ### GetAzureWriteUrl
 
-GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/GetAzureWriteUrl
+**GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/GetAzureWriteUrl**
 
 Retrieves a writable Azure URL to upload a file for reading into D365
 
