@@ -254,18 +254,18 @@ Sample: <br>
 \<?xml version="1.0" encoding="utf-8"?> <br>
 \<Documents> <br>
   \<Document>		 <br>
-    \<DocumentType>PO</DocumentType> <br>
-    \<FileName>FileUpload_01.xml</FileName> <br>
-    \<TradingPartnerCompanyId>USMF</TradingPartnerCompanyId> <br>
-    \<TradingPartnerId>GLN00001</TradingPartnerId> <br>
-    \<TradingPartnerType>Customer</TradingPartnerType> <br>
+    \<DocumentType>PO\</DocumentType> <br>
+    \<FileName>FileUpload_01.xml\</FileName> <br>
+    \<TradingPartnerCompanyId>USMF\</TradingPartnerCompanyId> <br>
+    \<TradingPartnerId>GLN00001\</TradingPartnerId> <br>
+    \<TradingPartnerType>Customer\</TradingPartnerType> <br>
   \</Document> <br>
   \<Document>		 <br>
-    \<DocumentType>PO</DocumentType> <br>
-    \<FileName>FileUpload_02.xml</FileName> <br>
-    \<TradingPartnerCompanyId> USMF </TradingPartnerCompanyId> <br>
-    \<TradingPartnerId>GLN00001</TradingPartnerId> <br>
-    \<TradingPartnerType>Customer</TradingPartnerType> <br>
+    \<DocumentType>PO\</DocumentType> <br>
+    \<FileName>FileUpload_02.xml\</FileName> <br>
+    \<TradingPartnerCompanyId>USMF\</TradingPartnerCompanyId> <br>
+    \<TradingPartnerId>GLN00001\</TradingPartnerId> <br>
+    \<TradingPartnerType>Customer\</TradingPartnerType> <br>
   \</Document> <br>
 \</Documents> <br>
 
@@ -397,17 +397,17 @@ Sample: <br>
 \<?xml version="1.0" encoding="utf-8"?> <br>
 \<Documents> <br>
   \<Document>		 <br>
-    \<DocumentType>PO</DocumentType> <br>
-    \<FileName>FileUpload_01.xml</FileName> <br>
-    \<TradingPartnerCompanyId>USMF</TradingPartnerCompanyId> <br>
-    \<TradingPartnerId>GLN00001</TradingPartnerId> <br>
-    \<TradingPartnerType>Customer</TradingPartnerType> <br>
+    \<DocumentType>PO\</DocumentType> <br>
+    \<FileName>FileUpload_01.xml\</FileName> <br>
+    \<TradingPartnerCompanyId>USMF\</TradingPartnerCompanyId> <br>
+    \<TradingPartnerId>GLN00001\</TradingPartnerId> <br>
+    \<TradingPartnerType>Customer\</TradingPartnerType> <br>
   \</Document> <br>
   \<Document>		 <br>
-    \<DocumentType>PO</DocumentType> <br>
-    \<FileName>FileUpload_02.xml</FileName> <br>
-    \<TradingPartnerCompanyId> USMF </TradingPartnerCompanyId> <br>
-    \<TradingPartnerId>GLN00001</TradingPartnerId> <br>
-    \<TradingPartnerType>Customer</TradingPartnerType> <br>
+    \<DocumentType>PO\</DocumentType> <br>
+    \<FileName>FileUpload_02.xml\</FileName> <br>
+    \<TradingPartnerCompanyId>USMF\</TradingPartnerCompanyId> <br>
+    \<TradingPartnerId>GLN00001\</TradingPartnerId> <br>
+    \<TradingPartnerType>Customer\</TradingPartnerType> <br>
   \</Document> <br>
 \</Documents> <br>
