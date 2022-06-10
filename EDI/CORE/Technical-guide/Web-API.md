@@ -84,18 +84,18 @@ TradingPartnerId | String	      | **Required** The trading partner GLN the file 
 TradingPartnerType	| String	  | **Required** The Trading partner type the file relates to
 FileName	       | String	      | **Required** The name of the file
 
-Sample: <br
-application/json, text/json <br
+Sample: <br>
+application/json, text/json <br>
 
-{ <br
+{ <br>
   "AddFileToQueueContract":{  <br>
-    "AzureWriteUrl": "https://XXXX.blob.core.windows.net/dmf/exampleFile", <br>
+    "AzureWriteUrl": "<span>https://</span>XXXX.blob.core.windows.net/dmf/exampleFile", <br>
     "DocumentType": "Customer purchase order", <br>
     "FileName": "ExampleFile001.xml", <br>
     "TradingPartnerCompanyId": "USMF", <br>
     "TradingPartnerId": "GLN00001", <br>
     "TradingPartnerType": "Customer" <br>
-  } <br
+  } <br>
 }
 
 
@@ -110,7 +110,7 @@ FileName	  | String	        | Filename
 
 Sample: <br>
 application/json, text/json <br>
-{ <br
+{ <br>
   "Reference": "65468431638", <br>
   "ErrorMsg": "", <br>
   "Success": true, <br>
@@ -156,7 +156,7 @@ application/json, text/json <br>
 
  
 ### AddFilesToQueue
-GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFilesToQueue
+**GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFilesToQueue**
 
 A collection of AddFileToQueueContract parameters
 
@@ -177,14 +177,14 @@ application/json, text/json <br>
 
 { <br>
   "AddFileToQueueContracts": [{ <br>
-    "AzureWriteUrl": "https://XXXX.blob.core.windows.net/dmf/exampleFile", <br>
+    "AzureWriteUrl": "<span>https://</span>XXXX.blob.core.windows.net/dmf/exampleFile", <br>
     "DocumentType": "Customer purchase order", <br>
     "FileName": "ExampleFile001.xml", <br>
     "TradingPartnerCompanyId": "USMF", <br>
     "TradingPartnerId": "GLN00001", <br>
     "TradingPartnerType": "Customer" <br>
   }, { <br>
-    "AzureWriteUrl": "https://XXXX.blob.core.windows.net/dmf/exampleFile02", <br>
+    "AzureWriteUrl": "<span>https://</span>XXXX.blob.core.windows.net/dmf/exampleFile02", <br>
     "DocumentType": "Customer purchase order", <br>
     "FileName": "ExampleFile002.xml", <br>
     "TradingPartnerCompanyId": "USMF", <br>
@@ -277,7 +277,7 @@ azureWriteUrl	| String	| **Required** The azure blob storage URL of the data pac
 Sample: <br>
 application/json, text/json <br>
 { <br>
-  " azureWriteUrl ": " https://XXXX.blob.core.windows.net/dmf/exampleDataPackage" <br>
+  " azureWriteUrl ": "<span>https://</span>XXXX.blob.core.windows.net/dmf/exampleDataPackage" <br>
 }
 
 #### Response
@@ -338,7 +338,7 @@ application/json, text/json <br>
 { <br>
   "FileName": "packageDownload.zip", <br>
   "Reference": 61684163581, <br>
-  "AzureUrl": "https://icondev803825a2135bfabe1.blob.core.windows.net/edi/exampleFile001.zip" <br>
+  "AzureUrl": "<span>https://</span>icondev803825a2135bfabe1.blob.core.windows.net/edi/exampleFile001.zip" <br>
 }
 
  
@@ -368,7 +368,7 @@ Sample: <br>
 application/json, text/json <br>
 { <br>
   "FileName": "packageDownload.zip", <br>
-  "AzureUrl": "https://icondev803825a2135bfabe1.blob.core.windows.net/edi/exampleFile001.zip" <br>
+  "AzureUrl": "<span>https://</span>icondev803825a2135bfabe1.blob.core.windows.net/edi/exampleFile001.zip" <br>
 }
 
 #### Data package
