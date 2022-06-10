@@ -34,13 +34,13 @@ The EDI module exposes various functions to send files into the inbound staging 
 
 ![Inbound services](../Image/Web-API-inbound-services.png "Inbound services")
 
-### GetAzureWriteUrl
+#### GetAzureWriteUrl
 
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/GetAzureWriteUrl**
 
 Retrieves a writable Azure URL to upload a file for reading into D365
 
-#### Request
+##### Request
 
 Name 	          | Type	        | Description
 :--             |:--            |:--
@@ -52,7 +52,7 @@ application/json, text/json <br>
   "uniqueFileName": "exampleFile.xml" <br>
 }
 
-#### Response
+##### Response
 
 Name 	          | Type	        | Description
 :--             |:--            |:--
@@ -67,12 +67,12 @@ application/json, text/json <br>
 }
 
  
-### AddFileToQueue
+#### AddFileToQueue
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFileToQueue**
 
 Parameters to add a single file into the inbound file queue
 
-#### Request
+##### Request
 
 Name 	          | Type	        | Description
 :--             |:--            |:--
@@ -99,7 +99,7 @@ application/json, text/json <br>
 }
 
 
-#### Response
+##### Response
 
 Name 	          | Type	        | Description
 :--               |:--                  |:--
@@ -117,12 +117,12 @@ application/json, text/json <br>
   "FileName": “ExampleFile001.xml”  <br>
 }
  
-### GetStatus
+#### GetStatus
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/GetStatus**
 
 A function to retrieve the status of a queued inbound file. It also has the ability to provide information on the processed document’s status if the inbound file has been processed.
 
-#### Request
+##### Request
 
 Name 	          | Type	        | Description
 :--             |:--            |:--
@@ -136,7 +136,7 @@ application/json, text/json <br>
   "includeStagingStatus": true <br>
 }
 
-#### Response
+##### Response
 
 Name 	        | Type	        | Description
 :--             |:--            |:--
@@ -155,12 +155,12 @@ application/json, text/json <br>
 }
 
  
-### AddFilesToQueue
+#### AddFilesToQueue
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFilesToQueue**
 
 A collection of AddFileToQueueContract parameters
 
-#### Request
+##### Request
 
 Name 	          | Type	        | Description
 :--             |:--            |:--
@@ -195,7 +195,7 @@ application/json, text/json <br>
   ] <br>
 }
 
-#### Response
+##### Response
 
 Name 	          | Type	        | Description
 :--             |:--            |:--
@@ -223,12 +223,12 @@ application/json, text/json <br>
 ]
 
 
-### AddFileToQueue_package
+#### AddFileToQueue_package
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFileToQueue_package**
 
 A function to push a data package which will be extracted and its contents put into the inbound file queue.
 
-#### Data package
+##### Data package
 The data package is a zip file that includes a ‘manifest.xml’ xml file. The manifest file defines the files within the data package in the following XML structure
 
 \<Documents> <br>
@@ -269,7 +269,7 @@ Sample: <br>
   \</Document> <br>
 \</Documents> <br>
 
-#### Request
+##### Request
 
 Name 	        | Type	        | Description
 :--             |:--            |:--
@@ -281,7 +281,7 @@ application/json, text/json <br>
   " azureWriteUrl ": "<span>https://</span>XXXX.blob.core.windows.net/dmf/exampleDataPackage" <br>
 }
 
-#### Response
+##### Response
 A collection of results
 
 Name 	          | Type	        | Description
@@ -313,8 +313,8 @@ The EDI module exposes various functions to pull files from the outbound staging
 
 An oData feed of the outbound file queue (/data/SAB_EDIFileExport) is available for discovering the outbound queued file references.
 
-### GetFileDetailFromQueue
-##### Request
+#### GetFileDetailFromQueue
+###### Request
 
 Name 	          | Type	        | Description
 :--               |:--                  |:--
@@ -326,7 +326,7 @@ application/json, text/json <br>
   "reference": 61684163581 <br>
 } <br>
 
-#### Response
+##### Response
 
 Name 	          | Type	        | Description
 :--               |:--                  |:--
@@ -343,8 +343,8 @@ application/json, text/json <br>
 }
 
  
-### GetFileDetailFromQueue_Package
-#### Request
+#### GetFileDetailFromQueue_Package
+##### Request
 
 Name 	         | Type	        | Description
 :--              |:--           |:--
@@ -358,7 +358,7 @@ application/json, text/json <br>
   "references": [5637149076, 5637149076] <br>
 } 
 
-#### Response
+##### Response
 
 Name 	        | Type	        | Description
 :--             |:--            |:--
@@ -372,7 +372,7 @@ application/json, text/json <br>
   "AzureUrl": "<span>https://</span>icondev803825a2135bfabe1.blob.core.windows.net/edi/exampleFile001.zip" <br>
 }
 
-#### Data package
+##### Data package
 The data package is a zip file that includes a ‘manifest.xml’ xml file. The manifest file defines the files within the data package in the following XML structure
 
 \<Documents> <br>
