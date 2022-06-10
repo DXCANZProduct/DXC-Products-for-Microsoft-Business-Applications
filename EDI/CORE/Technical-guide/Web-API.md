@@ -206,7 +206,7 @@ FileName	| String	| Filename
 
 Sample: <br>
 application/json, text/json <br>
-[ <br>
+\[ <br>
   { <br>
     "Reference": 6546813513, <br>
     "ErrorMsg": "", <br>
@@ -231,14 +231,14 @@ A function to push a data package which will be extracted and its contents put i
 The data package is a zip file that includes a ‘manifest.xml’ xml file. The manifest file defines the files within the data package in the following XML structure
 
 \<Documents> <br>
-  <Document>		 <br>
-    <DocumentType/> <br>
-    <FileName/> <br>
-    <TradingPartnerCompanyId/> <br>
-    <TradingPartnerId/> <br>
-    <TradingPartnerType/> <br>
-  </Document> <br>
-</Documents>	 <br>
+  \<Document>		 <br>
+    \<DocumentType/> <br>
+    \<FileName/> <br>
+    \<TradingPartnerCompanyId/> <br>
+    \<TradingPartnerId/> <br>
+    \<TradingPartnerType/> <br>
+  \</Document> <br>
+\</Documents>	 <br>
 
 Name 	           | Type	        | Description
 :--                |:--                  |:--
@@ -250,23 +250,23 @@ FileName	   | String		| **Required** The name of the file
 
 
 Sample: <br>
-<?xml version="1.0" encoding="utf-8"?> <br>
-<Documents> <br>
-  <Document>		 <br>
-    <DocumentType>PO</DocumentType> <br>
-    <FileName>FileUpload_01.xml</FileName> <br>
-    <TradingPartnerCompanyId>USMF</TradingPartnerCompanyId> <br>
-    <TradingPartnerId>GLN00001</TradingPartnerId> <br>
-    <TradingPartnerType>Customer</TradingPartnerType> <br>
-  </Document> <br>
-  <Document>		 <br>
-    <DocumentType>PO</DocumentType> <br>
-    <FileName>FileUpload_02.xml</FileName> <br>
-    <TradingPartnerCompanyId> USMF </TradingPartnerCompanyId> <br>
-    <TradingPartnerId>GLN00001</TradingPartnerId> <br>
-    <TradingPartnerType>Customer</TradingPartnerType> <br>
-  </Document> <br>
-</Documents> <br>
+\<?xml version="1.0" encoding="utf-8"?> <br>
+\<Documents> <br>
+  \<Document>		 <br>
+    \<DocumentType>PO</DocumentType> <br>
+    \<FileName>FileUpload_01.xml</FileName> <br>
+    \<TradingPartnerCompanyId>USMF</TradingPartnerCompanyId> <br>
+    \<TradingPartnerId>GLN00001</TradingPartnerId> <br>
+    \<TradingPartnerType>Customer</TradingPartnerType> <br>
+  \</Document> <br>
+  \<Document>		 <br>
+    \<DocumentType>PO</DocumentType> <br>
+    \<FileName>FileUpload_02.xml</FileName> <br>
+    \<TradingPartnerCompanyId> USMF </TradingPartnerCompanyId> <br>
+    \<TradingPartnerId>GLN00001</TradingPartnerId> <br>
+    \<TradingPartnerType>Customer</TradingPartnerType> <br>
+  \</Document> <br>
+\</Documents> <br>
 
 #### Request
 
@@ -292,7 +292,7 @@ FileName	| String	| Filename
 
 Sample: <br>
 application/json, text/json <br>
-[ <br>
+\[ <br>
   { <br>
     "Reference": 6546813513, <br>
     "ErrorMsg": "", <br>
@@ -374,15 +374,15 @@ application/json, text/json <br>
 #### Data package
 The data package is a zip file that includes a ‘manifest.xml’ xml file. The manifest file defines the files within the data package in the following XML structure
 
-<Documents> <br>
-  <Document>		 <br>
-    <DocumentType/> <br>
-    <FileName/> <br>
-    <TradingPartnerCompanyId/> <br>
-    <TradingPartnerId/> <br>
-    <TradingPartnerType/> <br>
-  </Document> <br>
-</Documents>	 <br>
+\<Documents> <br>
+  \<Document>		 <br>
+    \<DocumentType/> <br>
+    \<FileName/> <br>
+    \<TradingPartnerCompanyId/> <br>
+    \<TradingPartnerId/> <br>
+    \<TradingPartnerType/> <br>
+  \</Document> <br>
+\</Documents>	 <br>
 
 Name 	          | Type	        | Description
 :--             |:--            	|:--
@@ -393,22 +393,20 @@ TradingPartnerType	| String	| **Required** The Trading partner type the file rel
 FileName		| String	| **Required** The name of the file
 
 Sample: <br>
-<?xml version="1.0" encoding="utf-8"?> <br>
-<Documents> <br>
-  <Document>		 <br>
-    <DocumentType>PO</DocumentType> <br>
-    <FileName>FileUpload_01.xml</FileName> <br>
-    <TradingPartnerCompanyId>USMF</TradingPartnerCompanyId> <br>
-    <TradingPartnerId>GLN00001</TradingPartnerId> <br>
-    <TradingPartnerType>Customer</TradingPartnerType> <br>
-  </Document> <br>
-  <Document>		 <br>
-    <DocumentType>PO</DocumentType> <br>
-    <FileName>FileUpload_02.xml</FileName> <br>
-    <TradingPartnerCompanyId> USMF </TradingPartnerCompanyId> <br>
-    <TradingPartnerId>GLN00001</TradingPartnerId> <br>
-    <TradingPartnerType>Customer</TradingPartnerType> <br>
-  </Document> <br>
-</Documents> <br>
-
-
+\<?xml version="1.0" encoding="utf-8"?> <br>
+\<Documents> <br>
+  \<Document>		 <br>
+    \<DocumentType>PO</DocumentType> <br>
+    \<FileName>FileUpload_01.xml</FileName> <br>
+    \<TradingPartnerCompanyId>USMF</TradingPartnerCompanyId> <br>
+    \<TradingPartnerId>GLN00001</TradingPartnerId> <br>
+    \<TradingPartnerType>Customer</TradingPartnerType> <br>
+  \</Document> <br>
+  \<Document>		 <br>
+    \<DocumentType>PO</DocumentType> <br>
+    \<FileName>FileUpload_02.xml</FileName> <br>
+    \<TradingPartnerCompanyId> USMF </TradingPartnerCompanyId> <br>
+    \<TradingPartnerId>GLN00001</TradingPartnerId> <br>
+    \<TradingPartnerType>Customer</TradingPartnerType> <br>
+  \</Document> <br>
+\</Documents> <br>
