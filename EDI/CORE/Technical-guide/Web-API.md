@@ -59,11 +59,11 @@ Name 	          | Type	        | Description
 AzureWriteId	  | GUID	        | A unique identifier
 AzureWriteUrl	  | String	      | An Azure writable URL
 
-Sample:
-application/json, text/json
+Sample: <br>
+application/json, text/json <br>
 { <br>
   "AzureWriteId": "8e59a2ba-ca6f-4d14-bafa-28e49c6528c9", <br>
-  "AzureWriteUrl": " https://XXXX.blob.core.windows.net/dmf/exampleFile" <br>
+  "AzureWriteUrl": "<span>https://</span>XXXX.blob.core.windows.net/dmf/exampleFile" <br>
 }
 
  
