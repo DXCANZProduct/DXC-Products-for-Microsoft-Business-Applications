@@ -61,9 +61,9 @@ AzureWriteUrl	  | String	      | An Azure writable URL
 
 Sample:
 application/json, text/json
-{
-    "AzureWriteId": "8e59a2ba-ca6f-4d14-bafa-28e49c6528c9",
-    "AzureWriteUrl": " https://XXXX.blob.core.windows.net/dmf/exampleFile"
+{ <br>
+  "AzureWriteId": "8e59a2ba-ca6f-4d14-bafa-28e49c6528c9", <br>
+  "AzureWriteUrl": " https://XXXX.blob.core.windows.net/dmf/exampleFile" <br>
 }
 
  
@@ -88,14 +88,14 @@ Sample:
 application/json, text/json
 
 {
-	"AddFileToQueueContract":{
-		"AzureWriteUrl": "https://XXXX.blob.core.windows.net/dmf/exampleFile",
-		"DocumentType": "Customer purchase order",
-		"FileName": "ExampleFile001.xml",
-		"TradingPartnerCompanyId": "USMF",
-		"TradingPartnerId": "GLN00001",
-		"TradingPartnerType": "Customer"
-	}
+  "AddFileToQueueContract":{
+    "AzureWriteUrl": "https://XXXX.blob.core.windows.net/dmf/exampleFile",
+    "DocumentType": "Customer purchase order",
+    "FileName": "ExampleFile001.xml",
+    "TradingPartnerCompanyId": "USMF",
+    "TradingPartnerId": "GLN00001",
+    "TradingPartnerType": "Customer"
+  }
 }
 
 
@@ -111,10 +111,10 @@ FileName	  | String	        | Filename
 Sample:
 application/json, text/json
 {
-    "Reference": "65468431638",
-    "ErrorMsg": "",
-    "Success": true,
-    " FileName": “ExampleFile001.xml”
+  "Reference": "65468431638",
+  "ErrorMsg": "",
+  "Success": true,
+  " FileName": “ExampleFile001.xml”
 }
  
 ### GetStatus
@@ -132,8 +132,8 @@ includeStagingStatus	| Boolean	| **Required** also return the status of the stag
 Sample:
 application/json, text/json
 {
-    "reference": "65468431638",
-    " includeStagingStatus": true
+  "reference": "65468431638",
+  " includeStagingStatus": true
 }
 
 #### Response
@@ -148,10 +148,10 @@ processedDocumentStatus	| String		| The processed files status
 Sample:
 application/json, text/json
 {
-    "Status": "Processed",
-    "ProcessedDateTime": "1900-01-01T00:00:00Z",
-    "ProcessedDocumentId": "",
-    "processedDocumentStatus": "Not started" 
+  "Status": "Processed",
+  "ProcessedDateTime": "1900-01-01T00:00:00Z",
+  "ProcessedDocumentId": "",
+  "processedDocumentStatus": "Not started" 
 }
 
  
@@ -176,22 +176,22 @@ Sample:
 application/json, text/json
 
 {
-	"AddFileToQueueContracts": [{
-			"AzureWriteUrl": "https://XXXX.blob.core.windows.net/dmf/exampleFile",
-			"DocumentType": "Customer purchase order",
-			"FileName": "ExampleFile001.xml",
-			"TradingPartnerCompanyId": "USMF",
-			"TradingPartnerId": "GLN00001",
-			"TradingPartnerType": "Customer"
-		}, {
-			"AzureWriteUrl": "https://XXXX.blob.core.windows.net/dmf/exampleFile02",
-			"DocumentType": "Customer purchase order",
-			"FileName": "ExampleFile002.xml",
-			"TradingPartnerCompanyId": "USMF",
-			"TradingPartnerId": "GLN00001",
-			"TradingPartnerType": "Customer"
-		}
-	]
+  "AddFileToQueueContracts": [{
+    "AzureWriteUrl": "https://XXXX.blob.core.windows.net/dmf/exampleFile",
+    "DocumentType": "Customer purchase order",
+    "FileName": "ExampleFile001.xml",
+    "TradingPartnerCompanyId": "USMF",
+    "TradingPartnerId": "GLN00001",
+    "TradingPartnerType": "Customer"
+  }, {
+    "AzureWriteUrl": "https://XXXX.blob.core.windows.net/dmf/exampleFile02",
+    "DocumentType": "Customer purchase order",
+    "FileName": "ExampleFile002.xml",
+    "TradingPartnerCompanyId": "USMF",
+    "TradingPartnerId": "GLN00001",
+    "TradingPartnerType": "Customer"
+    }
+  ]
 }
 
 #### Response
@@ -207,18 +207,18 @@ FileName	| String	| Filename
 Sample:
 application/json, text/json
 [
-    {
-        "Reference": 6546813513,
-        "ErrorMsg": "",
-        "Success": true,
-        " FileName": “ExampleFile001.xml”
-    },
-    {
-        "Reference": 6413813168,
-        "ErrorMsg": "",
-        "Success": true,
-        " FileName": “ExampleFile002.xml”
-    }
+  {
+    "Reference": 6546813513,
+    "ErrorMsg": "",
+    "Success": true,
+    " FileName": “ExampleFile001.xml”
+  },
+  {
+    "Reference": 6413813168,
+    "ErrorMsg": "",
+    "Success": true,
+    " FileName": “ExampleFile002.xml”
+  }
 ]
 
 
@@ -231,13 +231,13 @@ A function to push a data package which will be extracted and its contents put i
 The data package is a zip file that includes a ‘manifest.xml’ xml file. The manifest file defines the files within the data package in the following XML structure
 
 <Documents>
-	<Document>		
-		<DocumentType/>
-		<FileName/>
-		<TradingPartnerCompanyId/>
-		<TradingPartnerId/>
-		<TradingPartnerType/>
-	</Document>
+  <Document>		
+    <DocumentType/>
+    <FileName/>
+    <TradingPartnerCompanyId/>
+    <TradingPartnerId/>
+    <TradingPartnerType/>
+  </Document>
 </Documents>	
 
 Name 	           | Type	        | Description
@@ -252,20 +252,20 @@ FileName	   | String		| **Required** The name of the file
 Sample:
 <?xml version="1.0" encoding="utf-8"?>
 <Documents>
-	<Document>		
-		<DocumentType>PO</DocumentType>
-		<FileName>FileUpload_01.xml</FileName>
-		<TradingPartnerCompanyId>USMF</TradingPartnerCompanyId>
-		<TradingPartnerId>GLN00001</TradingPartnerId>
-		<TradingPartnerType>Customer</TradingPartnerType>
-	</Document>
-	<Document>		
-		<DocumentType>PO</DocumentType>
-		<FileName>FileUpload_02.xml</FileName>
-		<TradingPartnerCompanyId> USMF </TradingPartnerCompanyId>
-		<TradingPartnerId>GLN00001</TradingPartnerId>
-		<TradingPartnerType>Customer</TradingPartnerType>
-	</Document>
+  <Document>		
+    <DocumentType>PO</DocumentType>
+    <FileName>FileUpload_01.xml</FileName>
+    <TradingPartnerCompanyId>USMF</TradingPartnerCompanyId>
+    <TradingPartnerId>GLN00001</TradingPartnerId>
+    <TradingPartnerType>Customer</TradingPartnerType>
+  </Document>
+  <Document>		
+    <DocumentType>PO</DocumentType>
+    <FileName>FileUpload_02.xml</FileName>
+    <TradingPartnerCompanyId> USMF </TradingPartnerCompanyId>
+    <TradingPartnerId>GLN00001</TradingPartnerId>
+    <TradingPartnerType>Customer</TradingPartnerType>
+  </Document>
 </Documents>
 
 #### Request
@@ -277,7 +277,7 @@ azureWriteUrl	| String	| **Required** The azure blob storage URL of the data pac
 Sample:
 application/json, text/json
 {
-    " azureWriteUrl ": " https://XXXX.blob.core.windows.net/dmf/exampleDataPackage"
+  " azureWriteUrl ": " https://XXXX.blob.core.windows.net/dmf/exampleDataPackage"
 }
 
 #### Response
@@ -293,18 +293,18 @@ FileName	| String	| Filename
 Sample:
 application/json, text/json
 [
-    {
-        "Reference": 6546813513,
-        "ErrorMsg": "",
-        "Success": true,
-        " FileName": “ExampleFile001.xml”
-    },
-    {
-        "Reference": 6413813168,
-        "ErrorMsg": "",
-        "Success": true,
-        " FileName": “ExampleFile002.xml”
-    }
+  {
+    "Reference": 6546813513,
+    "ErrorMsg": "",
+    "Success": true,
+    " FileName": “ExampleFile001.xml”
+  },
+  {
+    "Reference": 6413813168,
+    "ErrorMsg": "",
+    "Success": true,
+    " FileName": “ExampleFile002.xml”
+  }
 ]
 
 ## Outbound services
@@ -322,7 +322,7 @@ reference	  | Long		| **Required** The reference of the queued file
 Sample:
 application/json, text/json
 {
-	"reference": 61684163581
+  "reference": 61684163581
 }
 
 #### Response
@@ -336,9 +336,9 @@ AzureUrl	  | String		| The URL of the file for download
 Sample:
 application/json, text/json
 {
-    "FileName": "packageDownload.zip",
-    "Reference": 61684163581,
-    "AzureUrl": "https://icondev803825a2135bfabe1.blob.core.windows.net/edi/exampleFile001.zip"
+  "FileName": "packageDownload.zip",
+  "Reference": 61684163581,
+  "AzureUrl": "https://icondev803825a2135bfabe1.blob.core.windows.net/edi/exampleFile001.zip"
 }
 
  
@@ -353,8 +353,8 @@ References	 | Collection of longs	| **Required** The reference of the queued fil
 Sample:
 application/json, text/json
 {
-	"packageFileName" : "packageDownload.zip",
-	"references": [5637149076, 5637149076]
+  "packageFileName" : "packageDownload.zip",
+  "references": [5637149076, 5637149076]
 } 
 
 #### Response
@@ -367,21 +367,21 @@ AzureUrl	| String	| The URL of the file for download
 Sample:
 application/json, text/json
 {
-    "FileName": "packageDownload.zip",
-    "AzureUrl": "https://icondev803825a2135bfabe1.blob.core.windows.net/edi/exampleFile001.zip"
+  "FileName": "packageDownload.zip",
+  "AzureUrl": "https://icondev803825a2135bfabe1.blob.core.windows.net/edi/exampleFile001.zip"
 }
 
 #### Data package
 The data package is a zip file that includes a ‘manifest.xml’ xml file. The manifest file defines the files within the data package in the following XML structure
 
 <Documents>
-	<Document>		
-		<DocumentType/>
-		<FileName/>
-		<TradingPartnerCompanyId/>
-		<TradingPartnerId/>
-		<TradingPartnerType/>
-	</Document>
+  <Document>		
+    <DocumentType/>
+    <FileName/>
+    <TradingPartnerCompanyId/>
+    <TradingPartnerId/>
+    <TradingPartnerType/>
+  </Document>
 </Documents>	
 
 Name 	          | Type	        | Description
@@ -395,20 +395,20 @@ FileName		| String	| **Required** The name of the file
 Sample:
 <?xml version="1.0" encoding="utf-8"?>
 <Documents>
-	<Document>		
-		<DocumentType>PO</DocumentType>
-		<FileName>FileUpload_01.xml</FileName>
-		<TradingPartnerCompanyId>USMF</TradingPartnerCompanyId>
-		<TradingPartnerId>GLN00001</TradingPartnerId>
-		<TradingPartnerType>Customer</TradingPartnerType>
-	</Document>
-	<Document>		
-		<DocumentType>PO</DocumentType>
-		<FileName>FileUpload_02.xml</FileName>
-		<TradingPartnerCompanyId> USMF </TradingPartnerCompanyId>
-		<TradingPartnerId>GLN00001</TradingPartnerId>
-		<TradingPartnerType>Customer</TradingPartnerType>
-	</Document>
+  <Document>		
+    <DocumentType>PO</DocumentType>
+    <FileName>FileUpload_01.xml</FileName>
+    <TradingPartnerCompanyId>USMF</TradingPartnerCompanyId>
+    <TradingPartnerId>GLN00001</TradingPartnerId>
+    <TradingPartnerType>Customer</TradingPartnerType>
+  </Document>
+  <Document>		
+    <DocumentType>PO</DocumentType>
+    <FileName>FileUpload_02.xml</FileName>
+    <TradingPartnerCompanyId> USMF </TradingPartnerCompanyId>
+    <TradingPartnerId>GLN00001</TradingPartnerId>
+    <TradingPartnerType>Customer</TradingPartnerType>
+  </Document>
 </Documents>
 
 
