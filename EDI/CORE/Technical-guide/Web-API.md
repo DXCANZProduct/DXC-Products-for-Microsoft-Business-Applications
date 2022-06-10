@@ -76,7 +76,7 @@ Parameters to add a single file into the inbound file queue
 
 Name 	          | Type	        | Description
 :--             |:--            |:--
-AddFileToQueueContract		  |   |  
+**AddFileToQueueContract**		  |   |  
 AzureWriteUrl	  | String	      | **Required** The azure blob storage URL of the file
 DocumentType	  | String	      | **Required** The EDI Document type the file relates to
 TradingPartnerCompanyId	| String	| **Required** The legal entity the file relates to
@@ -164,7 +164,7 @@ A collection of AddFileToQueueContract parameters
 
 Name 	          | Type	        | Description
 :--             |:--            |:--
-AddFileToQueueContracts		|	|
+**AddFileToQueueContracts**		|	|
 AzureWriteUrl			| String	| **Required** The azure blob storage URL of the file
 DocumentType			| String	| **Required** The EDI Document type the file relates to
 TradingPartnerCompanyId		| String	| **Required** The legal entity the file relates to
@@ -212,13 +212,13 @@ application/json, text/json <br>
     "Reference": 6546813513, <br>
     "ErrorMsg": "", <br>
     "Success": true, <br>
-    " FileName": “ExampleFile001.xml” <br>
+    "FileName": “ExampleFile001.xml” <br>
   }, <br>
   { <br>
     "Reference": 6413813168, <br>
     "ErrorMsg": "", <br>
     "Success": true, <br>
-    " FileName": “ExampleFile002.xml” <br>
+    "FileName": “ExampleFile002.xml” <br>
   } <br>
 ]
 
@@ -298,13 +298,13 @@ application/json, text/json <br>
     "Reference": 6546813513, <br>
     "ErrorMsg": "", <br>
     "Success": true, <br>
-    " FileName": “ExampleFile001.xml” <br>
+    "FileName": “ExampleFile001.xml” <br>
   }, <br>
   { <br>
     "Reference": 6413813168, <br>
     "ErrorMsg": "", <br>
     "Success": true, <br>
-    " FileName": “ExampleFile002.xml” <br>
+    "FileName": “ExampleFile002.xml” <br>
   } <br>
 ] <br>
 
