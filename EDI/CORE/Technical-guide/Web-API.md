@@ -46,10 +46,10 @@ Name 	          | Type	        | Description
 :--             |:--            |:--
 uniqueFileName	| String	      | **Required** The name of the file
 
-Sample:
-application/json, text/json
-{
-	"uniqueFileName": "exampleFile.xml"
+Sample: <br>
+application/json, text/json <br>
+{ <br>
+	"uniqueFileName": "exampleFile.xml" <br>
 }
 
 #### Response
