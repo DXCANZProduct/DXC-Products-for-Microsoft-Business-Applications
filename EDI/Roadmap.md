@@ -71,7 +71,7 @@ The planned features are grouped by module. Core is included for all modules.
 
 #### Vendor
 - **Vendor purchase order change** - Add **Line change type** to D365 Purchase order line (EDI tab)
-- **Purchase invoice** - Support partial invoice (doesn't match to 100% of product receipt) for. If Invoice quantity < Shipped quantity then set 'Product receipt quantity to match' = Invoice quantity
+- **Purchase invoice** - Support partial invoice (doesn't match to 100% of product receipt). If Invoice quantity < Shipped quantity then set 'Product receipt quantity to match' = Invoice quantity
 
 ## Future releases
 The following features are planned for a future release
