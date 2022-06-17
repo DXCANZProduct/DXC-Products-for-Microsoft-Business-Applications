@@ -5,7 +5,7 @@ title: [FINU]
 description: [FINU - Roadmap]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 9/06/2022
+ms.date: 17/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,8 +36,8 @@ This page describes the features planned for future releases and planned release
 
 ## Release schedule
 
-Release			| ETA
-:--			|:--
+Release			    | ETA
+:--			        |:--
 July release		| 29 July 2022
 
 ## Next release
@@ -46,9 +46,6 @@ ETA: 29 July 2022
 The planned features are grouped by category.
 
 #### Cash and bank management
-- **Bank statement import** - **Document handling** option to attach file to **Bank statement** for manual and import via periodic job.
-- **Financial connections** - New button **Validate connection**. Validates connection details and import, archive and error path.
-- New **Financial utilities parameter** option **Only match posted statement lines**. For example mark as new bank reconciliation rule finds three records, but only two of the customers exist and thus won't balance since only two lines were posted as customer receipt lines.
 - **Reconciliation matching rules** - More options on Financial dimensions for mark as new transactions.
 
 ## Future releases
