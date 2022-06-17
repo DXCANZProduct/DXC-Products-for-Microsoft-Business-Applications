@@ -42,7 +42,7 @@ Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
 Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
 
-#### Build 10.0.25.20220617X
+#### Build 10.0.25.202206171
 
 Number	  	| Functionality	  | Reason
 :--       	|:--              |:--
