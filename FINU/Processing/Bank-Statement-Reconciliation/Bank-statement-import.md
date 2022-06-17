@@ -5,7 +5,7 @@ title: [Finance Utilities ]
 description: [Bank statement reconciliation processing - Bank statement import ]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 10/05/2022
+ms.date: 17/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
