@@ -36,6 +36,8 @@ When the bank statements are to be imported via the periodic task **Import bank 
 
 To open the **Financial utilities connections** page, go to **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections**. Then set the fields as described in the following subsections.
 
+> Note: If **Import error path** is not setup/incorrect, the file will be deleted from the import path and not archived. The import file can be attached to the created D365 bank statement(s), by setting a type on **Financial utilities parameter**'s **File attachment document type**.
+
 
 Field         | Description                         | Example or Options
 :--           |:--                                  |:--
@@ -47,7 +49,7 @@ Field         | Description                         | Example or Options
 
 Click **Save** and the applicable Setup will be displayed as per Connection type selected
 
-> Note: If **Import error path** is not setup/incorrect, the file will be deleted from the import path and not archived. The import file can be attached to the created D365 bank statement(s), by setting a type on **Financial utilities parameter**'s **File attachment document type**.
+
 
 ### FTP
 
