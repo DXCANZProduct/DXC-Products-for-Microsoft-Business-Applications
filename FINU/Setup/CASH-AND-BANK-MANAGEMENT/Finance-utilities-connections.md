@@ -47,6 +47,8 @@ Field         | Description                         | Example or Options
 
 Click **Save** and the applicable Setup will be displayed as per Connection type selected
 
+> Note: If **Import error path** is not setup/incorrect, the file will be deleted from the import path and not archived. The import file can be attached to the created D365 bank statement(s), by setting a type on **Financial utilities parameter**'s **File attachment document type**.
+
 ### FTP
 
 Field         | Description                         | Example or Options
@@ -57,7 +59,7 @@ Field         | Description                         | Example or Options
 **User**            |	Specify the Username used for authentication to the FTP site	
 **Password**        |	Specify the Password used for authentication to the FTP site. <br> > Note: this is encrypted and displayed as •••••••••• within the form.	
 **Import path**     |	Enter the path where the files are to be imported from	  | /Integration
-**Import archive path** |	Enter the path where the imported files are to be copied to	 <br> > Note: If this path is not setup/incorrect the file will be deleted from the import path and not archived. The import file can also be attached to the created D365 bank statement(s), by setting a type on **Financial utilities parameter**'s **File attachment document type** | /Integration/Archive
+**Import archive path** |	Enter the path where the imported files are to be copied to	 | /Integration/Archive
 **Search mask**     |	A file mask is used to match files in the Import path	    | Bank123*
 **Import error path** |	Enter the path where the files that matches the Search mask, but haven’t successfully been imported, are copied to	| /Integration/Error
 
