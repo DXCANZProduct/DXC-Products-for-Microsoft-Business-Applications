@@ -148,24 +148,6 @@ Number	  | Name	          | Description
 9162	  | Bank reconciliation	 | Bank reconciliation > Worksheet: Bank transactions’ hidden column **Voucher** now populated.
 
 
-### Release 10.0.16.20210504
-
-#### Build 10.0.16.202105041
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-8977	  | Payment advice	| Vendor bank details missing on Eclipse Payment advice. <br> Was no longer populated into BankPaymAdviceVendTmp table which is generated during report run.
-8316	  | Electronic reporting destination	| SFTP password encrypted
-
-
-#### Build 10.0.16.202105042
-
-<ins>Bug fixes</ins>
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-8989	  | Reports	    | Fix Payment advice report overwrites all other reports; only applicable to 10.0.16.202105041
-
 # Installation process
 To align with MS best practice and to protect our IP the following changes have been made to the release process.
 - The license models DXCLicense and Sable37License will only be released as binaries as part of a deployable package. 
