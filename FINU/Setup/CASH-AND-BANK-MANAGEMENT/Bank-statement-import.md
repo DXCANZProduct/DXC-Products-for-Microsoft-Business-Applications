@@ -36,6 +36,9 @@ When the bank statements are to be imported via the periodic task **Import bank 
    - Select applicable **Posting date**
    - Select applicable **Financial utilities connection** - Optional (for info)
 
+### Optional
+1. Setup **File attachment document type** on [Financial utilities parameters](Finance-utilities-parameters.md) to attach the import file to created D365 Bank statement(s).
+
 ### Batch job
 After the prerequisites have been completed, setup required batch job(s) by using **Cash and bank management > Periodic tasks > Import bank statements via financial utilities connection**
 
