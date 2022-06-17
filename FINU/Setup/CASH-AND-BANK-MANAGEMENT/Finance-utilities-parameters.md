@@ -59,6 +59,7 @@ Then set the fields as described in the following subsections.
 :--       |:--
 **Enable custom bank statement formats** | This parameter enables a Customized format field in bank statement format in **Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format**. <br> If the bank statement format is marked as a customised format, additional fields become active to configure the BAI2/NAI/Flat/BRS file statement upload
 **Auto-post bank statement** | When Auto-post bank statement is to _Yes_, the bank statement will automatically be posted upon selecting **Mark as reconciled** from the **Bank Reconciliation Worksheet** page.
+**File attachment document type** | Select applicable document type. When populated, the import file will be attached to the created bank statement(s). This applies to bank statements created with manual or periodic job import.
 
 **Setup for customer payment journal**
 Required when using Bank reconciliation matching rules to create customer payment journals - see [here](Bank-reconciliation-matching-rules.md#customer-payment-and-settle-of-invoice-11) for more information.
