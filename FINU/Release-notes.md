@@ -46,7 +46,7 @@ Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dyn
 
 Number	  	| Functionality	  | Reason
 :--       	|:--              |:--
-10241		| Bank statement import periodic job - Document handling | New field **File attachment document type** added to **Financial utilities parameters**. When Type has been selected, the import file will be attached to the created bank statement(s). This applies to bank statements created with manual or periodic job.
+10241		| Bank statement import periodic job - Document handling | New field **File attachment document type** added to **Financial utilities parameters**. When Type has been selected, the import file will be attached to the created bank statement(s). This applies to bank statements created with manual or periodic job import.
 10293		| Financial utilities connections - Validate connection	| New button **Validate connection** added to **Financial utilities connections**. Validates: <br> • Connection details <br> • Import path <br> • Import archive path <br> • Import error path
 10363		| Only match posted statement lines | New field **Only match posted statement lines** added to **Financial utilities parameter**. For example mark as new bank reconciliation rule finds three records in the bank statement, but only two of the customers exist and thus won't balance since only two lines were posted as customer payment journal lines. This option only applies to where the mark as new bank reconciliation creates and posts new customer payment journals.
 <br>	  	| DXC License manager 10.8.32.10131	| Improvements to DXC License manager model
