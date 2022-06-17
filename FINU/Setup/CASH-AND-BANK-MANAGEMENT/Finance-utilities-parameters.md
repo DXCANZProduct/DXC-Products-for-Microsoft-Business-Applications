@@ -5,7 +5,7 @@ title: [Finance Utilities ]
 description: [Cash and bank management setup - Finance utilities parameters]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 17/06/2021
+ms.date: 17/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
