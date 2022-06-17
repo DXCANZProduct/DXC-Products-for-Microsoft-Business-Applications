@@ -33,6 +33,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 The **Bank statement** page  is used to manually import the bank statement into your D365 environment. 
 Users can navigate to the page by going to **Cash and bank management > Bank statement reconciliation > Bank statements**
 
+> Note: Setup **File attachment document type** on [Financial utilities parameters](../../Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters.md) to attach the import file to created D365 Bank statement(s).
+
 Select **Import statement**.
 Where the selected statement format is marked as **Customised format** the following additional fields are available on the import:
 
@@ -43,7 +45,7 @@ Where the selected statement format is marked as **Customised format** the follo
 | **Date**         | Select which date to use when **Mark as new** <br> transactions are posted | •	Today’s date <br> •	Statement Transaction Date <br> (_To date_ of the Bank statement header)
 
 > Note: Where the bank statement file contains transactions related to multiple dates and multiple bank accounts (i.e. the file is imported using the option **Import statement for multiple bank accounts in all legal entities**, separate bank statement records get created in D365 for each bank account. 
- 
+
 The **Statement ID** number sequence in Cash and bank management parameters is used to generate the Statement identifier. 
 
 When a bank statement (BAI2/NAI/BRS/Flat file) is imported, statement lines will only be imported where the following matching rules are validated:  
