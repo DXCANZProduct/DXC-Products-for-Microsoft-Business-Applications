@@ -102,4 +102,9 @@ Field         | Description                         | Example or Options
 **Search mask**     |	A file mask is used to match files in the Import path	    | Bank123*
 
 
-
+### Validate connection
+Use button **Validate connection** to validate the following:
+- Connection details
+- Import path
+- Import archive path
+- Import error path
