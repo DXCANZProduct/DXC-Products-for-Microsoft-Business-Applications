@@ -5,7 +5,7 @@ title: [EDI]
 description: [Technical guide - FAQ]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 10/06/2022
+ms.date: 20/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
