@@ -51,11 +51,11 @@ https://our.umbraco.com/forum/templating/templates-and-document-types/10621-How-
 
 \<xsl:template match="/">
 
-\<xsl:text disable-output-escaping="yes">&lt;?xml version="1.0" encoding="utf-8"?&gt;</xsl:text>
+\**<xsl:text disable-output-escaping="yes">&lt;?xml version="1.0" encoding="utf-8"?&gt;</xsl:text>**
 
         \<Purord>
 
 …
 
-Line breaks improves output: <xsl:text disable-output-escaping="yes">&lt;?xml version="1.0" encoding="utf-8"?&gt;&#xD;&#xA;</xsl:text>
+Line breaks improves output: <xsl:text disable-output-escaping="yes">&lt;?xml version="1.0" encoding="utf-8"?&gt;&**#xD;&#xA**;</xsl:text>
 
