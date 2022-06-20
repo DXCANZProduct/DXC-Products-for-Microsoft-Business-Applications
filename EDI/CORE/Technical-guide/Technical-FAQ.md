@@ -68,7 +68,7 @@ Run full DB sync
 Standard actions you can try:
 
 1. Try to repeat the deploy one more time and/or restart UAT VM in case if something went wrong and the file mentioned  is really locked by some system process
-1. If still doesn’t work, follow the recommended implementation steps as per release notes (like remove source code of previous EDI version)
+1. If still doesn’t work, follow the recommended implementation steps as per [release notes](../../Release-notes.md#installation-process) (example remove source code of previous EDI version)
 
 ## Deployment issues with model source code
 
