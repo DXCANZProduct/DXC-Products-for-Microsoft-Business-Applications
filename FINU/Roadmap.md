@@ -46,7 +46,7 @@ ETA: 29 July 2022
 The planned features are grouped by category.
 
 #### Cash and bank management
-- **Reconciliation matching rules** - More options on Financial dimensions for mark as new transactions.
+- **Reconciliation matching rules** - Additional options on **Financial dimensions** for mark as new transactions.
 
 ## Future releases
 The following features are planned for a future release
