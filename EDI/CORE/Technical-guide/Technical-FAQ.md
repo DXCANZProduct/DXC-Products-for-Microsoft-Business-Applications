@@ -59,3 +59,19 @@ https://our.umbraco.com/forum/templating/templates-and-document-types/10621-How-
 
 Line breaks improves output: <xsl:text disable-output-escaping="yes">&lt;?xml version="1.0" encoding="utf-8"?&gt;&**#xD;&#xA**;</xsl:text>
 
+## 'Insert into' SQL errors on views
+
+Run full DB sync
+
+## Deployment issues
+
+Standard actions you can try:
+
+1. Try to repeat the deploy one more time and/or restart UAT VM in case if something went wrong and the file mentioned  is really locked by some system process
+1. If still doesn’t work, follow the recommended implementation steps as per release notes (like remove source code of previous EDI version)
+
+## Deployment issues with model source code
+
+Redeploy binaries from the package, add SFTP folder to check-in and check-in code without local build if you wish to have source code remain on the DEV system. <br>
+Or remove source code from the DEV system first and then redeploy binaries.
+
