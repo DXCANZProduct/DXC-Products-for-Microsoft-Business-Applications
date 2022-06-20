@@ -45,17 +45,17 @@ Check-in changes and build deployable package and deploy to UAT and after sign-o
 
 https://our.umbraco.com/forum/templating/templates-and-document-types/10621-How-to-have-a-template-have-an-xml-header#comment-38842
 
-<?xml version="1.0" encoding="utf-8"?>
+\<?xml version="1.0" encoding="utf-8"?>
 
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+\<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-<xsl:template match="/">
+\<xsl:template match="/">
 
-<xsl:text disable-output-escaping="yes">&lt;?xml version="1.0" encoding="utf-8"?&gt;</xsl:text>
+\<xsl:text disable-output-escaping="yes">&lt;?xml version="1.0" encoding="utf-8"?&gt;</xsl:text>
 
-                <Purord>
+\                <Purord>
 
-…
+\…
 
-Line breaks makes output better: <xsl:text disable-output-escaping="yes">&lt;?xml version="1.0" encoding="utf-8"?&gt;&#xD;&#xA;</xsl:text>
+Line breaks improves output: <xsl:text disable-output-escaping="yes">&lt;?xml version="1.0" encoding="utf-8"?&gt;&#xD;&#xA;</xsl:text>
 
