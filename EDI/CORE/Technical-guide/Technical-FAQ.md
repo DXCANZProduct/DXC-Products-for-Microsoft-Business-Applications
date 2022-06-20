@@ -73,7 +73,7 @@ Standard actions you can try:
 ## Deployment issues with model source code
 
 1. Redeploy binaries from the package
-2. Add SFTP folder to check-in and 
-3.1. Check-in code without local build if you wish to have source code remain on the DEV system OR
+2. Add SFTP folder to check-in and <br>
+3.1. Check-in code without local build if you wish to have source code remain on the DEV system OR <br>
 3.2. Remove source code from the DEV system first and then redeploy binaries
 
