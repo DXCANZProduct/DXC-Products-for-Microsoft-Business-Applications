@@ -40,4 +40,22 @@ The SAB_EDIStagingTableFieldMetaData table will be updated by the **Refresh EDI 
 Build model with changes, with DB sync option checked. <br> 
 Check-in changes and build deployable package and deploy to UAT and after sign-off to Prod systems.
 
+## Adding an XML declaration to an XSLT output
+
+
+https://our.umbraco.com/forum/templating/templates-and-document-types/10621-How-to-have-a-template-have-an-xml-header#comment-38842
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<xsl:template match="/">
+
+<xsl:text disable-output-escaping="yes">&lt;?xml version="1.0" encoding="utf-8"?&gt;</xsl:text>
+
+                <Purord>
+
+…
+
+Line breaks makes output better: <xsl:text disable-output-escaping="yes">&lt;?xml version="1.0" encoding="utf-8"?&gt;&#xD;&#xA;</xsl:text>
 
