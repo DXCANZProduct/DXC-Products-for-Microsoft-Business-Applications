@@ -74,6 +74,6 @@ Standard actions you can try:
 
 - Redeploy binaries from the package
 - Add SFTP folder to check-in and 
-- Check-in code without local build if you wish to have source code remain on the DEV system
-- Or remove source code from the DEV system first and then redeploy binaries.
+- Check-in code without local build if you wish to have source code remain on the DEV system OR
+- Remove source code from the DEV system first and then redeploy binaries
 
