@@ -32,21 +32,39 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.18.20211103
+### Release 10.0.22.20220531
 
 DXC Smart Business Form Email Manager 10.0.18 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.18	  | [What’s new or changed in Dynamics 365 application version 10.0.18](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-18)
-Microsoft Dynamics 365 application	| 10.0.19	  | [What’s new or changed in Dynamics 365 application version 10.0.19](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-19)
-Microsoft Dynamics 365 application	| 10.0.20	  | [What’s new or changed in Dynamics 365 application version 10.0.20](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-20)
-Microsoft Dynamics 365 application	| 10.0.21	  | [What’s new or changed in Dynamics 365 application version 10.0.21](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-21)
 Microsoft Dynamics 365 application	| 10.0.22	  | [What’s new or changed in Dynamics 365 application version 10.0.22](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-22)
 Microsoft Dynamics 365 application	| 10.0.23	  | [What’s new or changed in Dynamics 365 application version 10.0.23](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-23)
 Microsoft Dynamics 365 application	| 10.0.24	  | [What’s new or changed in Dynamics 365 application version 10.0.24](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-24)
 Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
 Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
+Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
+
+#### Build 10.0.22.202205311
+
+Number	  | Functionality	  | Reason
+:--       |:--              |:--
+8335	|	Status Data Entities	| Data entities for the following tables have been included <BR> * DXCICStatusTable <BR> * DXCICStatusTransitionRule <BR> * DXCICStatusAutoRuleTable
+9192	|	Item creation import sessions	| The import sessions form will no longer display by default records with a status of Completed, Rejected or Cancelled. Visibility of these records can be toggled using the Show closed control. <BR> <BR> When the import session form is opened the latest record will be selected.
+9746	|	Item Creation list page| The item creation list page form will no longer display by default records with a status of Completed, Rejected or Cancelled. Visibility of these records can be toggled using the Show closed control.
+9748	|	Item status, released product variants	| The current item status for a product variant is now displayed within the release product variant form.
+9786	|	Create DXCICStatusItemTable record on variant creation	| When a product variant is created from a creation template, the variant will inherit the items status defined on the template.
+9926	|	Item status - block inventory transactions	| A new transaction type is available for blocking by using item statuses. The new option Inventory will enable the prevention of product or variants with the item status from being included in; <BR> * Inventory movement <BR> * Inventory adjustment <BR> * Inventory transfer <BR> * Inventory count
+
+<ins>Bug fixes</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+9510    | Import workflow, Auto reject creates loop  | If the workflow element Approve item creation import is set to reject the import session, the rejected import session would be resubmitted. The import session status is now correctly updated to rejected. 
+
+# Previous version(s)
+
+### Release 10.0.18.20211103
 
 #### Build 10.0.18.20211103
 
@@ -55,8 +73,6 @@ Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dyn
 Number	  | Name	          | Description
 :--       |:--              |:--
 9569    | Field does not exist in table  | Where an attribute field is included within the same file mask as values from the product translation table the field was included in the updated validation for 9504.
-
-# Previous version(s)
 
 ### Release 10.0.18.20211012
 
