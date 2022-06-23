@@ -115,11 +115,13 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 	
 Number	| Functionality	  | Reason
 :--	|:--		  |:--	
+xx	|			|
 
 <ins>Bug fixes</ins>
 
 Number	| Name		 | Description
 :--	|:--		 |:--
+xx	|			|
 	
 # Previous version(s)
 
