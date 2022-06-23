@@ -115,20 +115,27 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 	
 Number	| Functionality	  | Reason
 :--	|:--		  |:--	
+<ins>All modules</ins>		|	|
 9767	| Import - batch group with multiple companies			| After moving Batch control to groups, the import batch can fail when another legal entity isn't setup for EDI. This change will ensure the remaining legal entities are still processed.
 9659 	| Document template - Custom format	| Ability to set a custom date format on inbound file	
 9691	| Document template - Dates		| Allow empty dates
-9261	| Customer purchase order - Blank sales unit	| New document setting called **Blank unit** for **Customer purchase order** and **Customer purchase order change** (add additional item) . Options are: <br> •	Sales unit <br> • Sales trade agreement unit <br> • Inventory unit <br> • Error (Error staging record)
 8321	| Copy		| **Copy** button on Document type's Template, Setting profiles, Validation profiles and Trading partner	
+<ins>Customer module</ins>	|	|
+9261	| Customer purchase order - Blank sales unit	| New document setting called **Blank unit** for **Customer purchase order** and **Customer purchase order change** (add additional item) . Options are: <br> •	Sales unit <br> • Sales trade agreement unit <br> • Inventory unit <br> • Error (Error staging record)
+<ins>Vendor module</ins>	|	|
+2129	| Purchase order line	| Add **Line change type** to Purchase order line EDI tab. 	
 
 <ins>Bug fixes</ins>
 
 Number	| Name		 | Description
 :--	|:--		 |:--
-6642	| Can't delete Vendor outbound files			| Previously errored with: "File exports cannot be deleted while dependent EDI Vendor purchase order exist. Delete dependent EDI Vendor purchase order and try again." Will now allow deletion of outbound file.
-9691	| Shipment receipt - Purchase order	| Same PackingSlipId on multiple lines
+<ins>All modules</ins>		|	|
 9261	| Show log on outbound staging		| Showed Empty for previously processed outbound staging records
-8312	| Trading partner			| Connection profile wasn't saved if adding a connection to newly created trading partner or adding to newly created document on the trading partner	
+8312	| Trading partner			| Connection profile wasn't saved if adding a connection to newly created trading partner or adding to newly created document on the trading partner		
+<ins>Vendor module</ins>	|	|	
+6642	| Can't delete Vendor outbound files			| Previously errored with: "File exports cannot be deleted while dependent EDI Vendor purchase order exist. Delete dependent EDI Vendor purchase order and try again." Will now allow deletion of outbound file.
+<ins>3PL module</ins>	|	|	
+9691	| Shipment receipt - Purchase order	| Same PackingSlipId on multiple lines
 	
 # Previous version(s)
 
