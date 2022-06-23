@@ -5,7 +5,7 @@ title: [EDI]
 description: [EDI - Release notes]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 16/05/2022
+ms.date: 23/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,18 +32,35 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.22.202204101
+### Release 10.0.25.20220630
 
-DXC EDI 10.0.22 runs on the following Microsoft releases
+DXC EDI 10.0.25 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.22	  | [What’s new or changed in Dynamics 365 application version 10.0.22](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-22)
-Microsoft Dynamics 365 application	| 10.0.23	  | [What’s new or changed in Dynamics 365 application version 10.0.23](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-23)
-Microsoft Dynamics 365 application	| 10.0.24	  | [What’s new or changed in Dynamics 365 application version 10.0.24](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-24)
 Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
 Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
 Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
+
+#### Build 10.0.22.2022041012
+
+Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+<ins>New features</ins>
+
+Number	  | Functionality	  	| Reason
+:--       |:--              		|:--
+
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+
+
+# Previous version(s)
+
+### Release 10.0.22.202204101
 
 #### Build 10.0.22.2022041012
 
@@ -104,7 +121,6 @@ Number	| Name	 | Description
 #### Build 10.0.22.2022041015
 Includes Inbound Transportation management (ITM) & ITM version Freight forwarder of 2022041014
 
-# Previous version(s)
 
 ### Release 10.0.18.20220110
 
