@@ -5,7 +5,7 @@ title: [EDI]
 description: [EDI - Release notes]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 16/05/2022
+ms.date: 23/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -104,6 +104,20 @@ Number	| Name	 | Description
 #### Build 10.0.22.2022041015
 Includes Inbound Transportation management (ITM) & ITM version Freight forwarder of 2022041014
 
+# In process version
+
+### Release 10.0.25.20220630
+
+<ins>New features</ins>
+	
+Number	| Functionality	  | Reason
+:--	|:--		  |:--	
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+	
 # Previous version(s)
 
 ### Release 10.0.18.20220110
