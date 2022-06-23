@@ -115,13 +115,13 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 	
 Number	| Functionality	  | Reason
 :--	|:--		  |:--	
-xx	|			|
+9767	| Import - batch group with multiple companies			| After moving Batch control to groups, the import batch can fail when another legal entity isn't setup for EDI. This change will ensure the remaining legal entities are still processed.
 
 <ins>Bug fixes</ins>
 
 Number	| Name		 | Description
 :--	|:--		 |:--
-xx	|			|
+6642	| Can't delete Vendor outbound files			| Previously errored with: "File exports cannot be deleted while dependent EDI Vendor purchase order exist. Delete dependent EDI Vendor purchase order and try again." Will now allow deletion of outbound file.
 	
 # Previous version(s)
 
