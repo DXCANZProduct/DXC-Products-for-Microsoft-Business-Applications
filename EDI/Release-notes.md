@@ -108,6 +108,9 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
 ### Release 10.0.25.20220630
 
+<ins>Manual actions required</ins>
+ - Recreate Import batch
+
 <ins>New features</ins>
 	
 Number	| Functionality	  | Reason
