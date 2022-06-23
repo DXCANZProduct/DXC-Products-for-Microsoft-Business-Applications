@@ -104,7 +104,7 @@ Number	| Name	 | Description
 #### Build 10.0.22.2022041015
 Includes Inbound Transportation management (ITM) & ITM version Freight forwarder of 2022041014
 
-# In process version
+# Next version
 
 ### Release 10.0.25.20220630
 
