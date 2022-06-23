@@ -116,12 +116,17 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 Number	| Functionality	  | Reason
 :--	|:--		  |:--	
 9767	| Import - batch group with multiple companies			| After moving Batch control to groups, the import batch can fail when another legal entity isn't setup for EDI. This change will ensure the remaining legal entities are still processed.
+9659 	| Document template - Custom format	| Ability to set a custom date format on inbound file	
+9691	| Document template - Dates		| Allow empty dates
+9261	| Customer purchase order - Blank sales unit	| New document setting for **Customer purchase order**	and **Customer purchase order change** (add additional item) called **Blank unit**. Options are: <br> •	Sales unit <br> • Sales trade agreement unit <br> • Inventory unit <br> • Error - Error staging record
 
 <ins>Bug fixes</ins>
 
 Number	| Name		 | Description
 :--	|:--		 |:--
 6642	| Can't delete Vendor outbound files			| Previously errored with: "File exports cannot be deleted while dependent EDI Vendor purchase order exist. Delete dependent EDI Vendor purchase order and try again." Will now allow deletion of outbound file.
+9691	| Shipment receipt - Purchase order	| Same PackingSlipId on multiple lines
+9261	| Show log on outbound staging		| Showed Empty for previously processed outbound staging records	
 	
 # Previous version(s)
 
