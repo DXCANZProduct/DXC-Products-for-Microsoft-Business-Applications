@@ -126,7 +126,6 @@ Number	| Functionality	  | Reason
 9763	| XML document template mapping	| Ability to send and extract **Attributes** for XML document templates. **Refresh module** will update **Attribute** column on existing templates. 	
 9819	| Functional acknowledgement received | Company field has been added to **EDI > Inquiries and reports > Functional acknowledgement received**. Previously using Trading partner's company, which prevented Company filter to filter appropriately.
 10229	| Outbound files	| Additional fields on where file will be/have been sent: <br> • File transfer type <br> • Original folder
-10433	| Connection type - FTP	| Port fix
 10422	| Connection type	| New Incoming document type **Error**. Where file already exists in D365 for trading partner and document type, the file will be moved from Import path to Error path. If the Error path isn't setup, the duplicate file will remain in Import path.
 10446	| EDI parameters	| Removed About	
 **Customer module**	|	|
@@ -145,10 +144,12 @@ Number	| Name		 | Description
 **Core module**		| Applies to all modules	|
 9261	| Show log on outbound staging		| Showed Empty for previously processed outbound staging records
 8312	| Trading partner			| Connection profile wasn't saved if adding a connection to newly created trading partner or adding to newly created document on the trading partner
-10149	| Trading partner			| When a template for Vendors and/or Customers exist and user opens the EDI Trading partner's form, the options to 'Select a template for Vendors' and 'Select a template for Customers' pop ups.	
+10149	| Trading partner			| When a template for Vendors and/or Customers exist and user opens the EDI Trading partner's form, the options to 'Select a template for Vendors' and 'Select a template for Customers' pop ups.
+10485	| Text template type	| Fixed text type template with missing closing double quote in source file caused **Process to staging** batch to remain in Executing status
+10433	| Connection type - FTP	| Port fix
 **Customer module**	|	|	
 10305	| Entity **EDI Settings - PO**	| Fix error "Results. Field 'Relation type field' must be filled in. Results. validateWrite failed on data source 'AgreementClassification (AgreementClassification)'"
-10406	| Customer purchase order	| When store code is not provided in staging, the staging's address fields are used to find the applicable address on the customer to set on the sales order. When the address doesn't exist on the D365 customer, the address is added to the customer. 
+10406	| Customer purchase order	| When store code is not provided in staging, the staging header's address fields are used to find the applicable address on the customer to set on the sales order header. When the address doesn't exist on the D365 customer, the address is added to the customer.
 10514	| EDI Sales order processing workspace	| Fix to filter when opening tile **Pending PO changes**
 **Vendor module**	|	|	
 6642	| Can't delete Vendor outbound files			| Previously errored with: "File exports cannot be deleted while dependent EDI Vendor purchase order exist. Delete dependent EDI Vendor purchase order and try again." Will now allow deletion of outbound file.
