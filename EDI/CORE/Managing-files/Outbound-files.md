@@ -65,7 +65,10 @@ Automatic archiving of the document handling attachment can be setup with **Arch
   - **Reset status profile** - Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
   - **Reset status date/time**  - Next date/time automatic reset status will run	
   - **Reset status attempts**   - Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
-  - **Recurrence**              - Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
+  - **Recurrence**              - Recurrence text. Contains standard details of Recurrence, for example:
+      - Interval (recurrence pattern)
+      - How many times the period will run (End after)
+      - From date/time the recurrence will start	
 
 ###	Send files manually
 From the outbound files form, files can be sent in an ad-hoc manner separately to the batch control process.
