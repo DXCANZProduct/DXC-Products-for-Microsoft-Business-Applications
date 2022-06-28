@@ -42,6 +42,7 @@ Create new setting profile:
 Copy existing setting profile:
 - To create a new record by copying an existing record, select the applicable document type, select the existing record to copy and select the **Copy** button in the settings profiles FastTab.
 - Specify the **Settings profile id** and **Description** of the profile.
+- Select **Copy**.
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details. 
 
 Each document's Setting profile will be discussed in more detail with each document's details.
