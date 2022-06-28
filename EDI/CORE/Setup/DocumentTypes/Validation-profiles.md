@@ -5,7 +5,7 @@ title: [EDI Core]
 description: [EDI Core - Setup document types - Validation profiles]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 12/01/2020
+ms.date: 28/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,9 +38,18 @@ Once a validation profile is created it can be configured by adding validation r
 
 > Note:  The validation profiles FastTab is only displayed from Document types that have valid validation options
 
+Create new validation profile:
 - To create a new record, select the **New** button in the validation profiles FastTab.
 - Specify the **Name** and **Description** of the profile.
 - Select the **Name** hyperlink or the **Setup** button to update profile details.
+
+Copy existing validation profile: 
+- To create a new record by copying an existing record, select the applicable document type, select the existing record to copy and select the **Copy** button in the Validation profiles FastTab.
+- Specify the **Name** and **Description** of the profile.
+- Select **Copy**.
+- Select the **Name** hyperlink or the **Setup** button to update profile details.
+
+Add validation rules to profile:
 - Select **Add** to add the validation rule.
 - Select the **Validation rule**.
 - Select the **Error tolerance** to specify the validation level.  If a validation rule fails, this will be used to determine how it reacts. Options:
