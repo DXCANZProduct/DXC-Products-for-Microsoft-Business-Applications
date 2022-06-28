@@ -66,8 +66,8 @@ Number	  | Functionality	  | Reason
 10073	| UOM mapping	| UOM mapping enhanced to include: <br> •	Company (Blank Company is allowed where Item code is set to All) <br> •	Item code (Table, Group, All) <br> •	Item relation <br> •	Inventory dimensions <br> **Note**: All existing UOM mappings will have Company set to Blank and Item code set to All. Should be no issues with backwards compatibility.
 9660	| EDI batches	| Enable automated retries - if D365 experience a brief loss of connection to MS SQL Server. isRetryable set to True
 9792	| Process to outbound	| Added **Records to include** filter on **Process to outbound**
-9742	| Sales invoice	 | Additional sales invoice fields: <br> •	Header: <br> o	Invoice contact name <br> o	Invoice phone number <br> •	Lines: <br> o	Customer account <br> o	Customer contact name <br> o	Customer phone number <br> o	Delivery address details from sales order line <Br> o	Backorder quantity <br> o	Sales unit price (unit price before discounts excluding tax) <br> o	Sales unit price include tax (unit price before discounts including tax) <br> o	Unit discount <br> o	Unit discount percent
-9612	| EDI Document maintenance workspace	| New Tile‘**File export errors** added to **EDI Document maintenance workspace** (per module). <br> Displays Outbound files with **Status** is set to _Error_ per module
+9742	| Sales invoice	 | Additional sales invoice fields: <br> • Header: <br> o	Invoice contact name <br> o	Invoice phone number <br> •	Lines: <br> o	Customer account <br> o	Customer contact name <br> o	Customer phone number <br> o	Delivery address details from sales order line <Br> o	Backorder quantity <br> o	Sales unit price (unit price before discounts excluding tax) <br> o	Sales unit price include tax (unit price before discounts including tax) <br> o	Unit discount <br> o	Unit discount percent
+9612	| EDI Document maintenance workspace	| New Tile **File export errors** added to **EDI Document maintenance workspace** (per module). <br> Displays Outbound files with **Status** is set to _Error_ per module
 9714	| Outbound filename	| Enhancements to form layout. <br> And additional currentSessionDate placeholders.
 9692	| Purchase order confirmations	| Procurement and sourcing > Purchase orders > Purchase order confirmation > Purchase order confirmations <br> Added **Sent to EDI** to list page, and buttons **Send to EDI** and **Reset flag**. <br> ![Purchase order confirmations](RELEASE-NOTES-IMAGES/202204101_4.png "Purchase order confirmations")
 10084	| Version log’s Message	| Changed **Message** to unlimited type string <br> ![Message](RELEASE-NOTES-IMAGES/202204101_5.png "Message")
@@ -115,7 +115,7 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 	
 Number	| Functionality	  | Reason
 :--	|:--		  |:--	
-<ins>All modules</ins>		|	|
+**All modules**		|	|
 9767	| Import - batch group with multiple companies			| After moving Batch control to groups, the import batch can fail when another legal entity isn't setup for EDI. This change will ensure the remaining legal entities are still processed.
 9659 	| Document template - Custom format	| Ability to set a custom date format on inbound file	
 9691	| Document template - Dates		| Allow empty dates
@@ -123,23 +123,30 @@ Number	| Functionality	  | Reason
 8268	| Outbound file name	| Improvements to outbound file name **Editor**. Can also set date format, example currentSessionDate(ddMMyyyy)	
 9763	| XML document template mapping	| Ability to send and extract **Attributes** for XML document templates. **Refresh module** will update **Attribute** column on existing templates. 	
 9819	| Functional acknowledgement received | Company field has been added to **EDI > Inquiries and reports > Functional acknowledgement received**. Previously using Trading partner's company, which prevented Company filter to filter appropriately.
+10229	| Outbound files	| Additional fields on where file will be/have been sent: <br> • File transfer type <br> • Original folder
+10433	| Connection type - FTP	| Port fix	
 <ins>Customer module</ins>	|	|
 9261	| Customer purchase order - Blank sales unit	| New document setting called **Blank unit** for **Customer purchase order** and **Customer purchase order change** (add additional item) . Options are: <br> •	Sales unit <br> • Sales trade agreement unit <br> • Inventory unit <br> • Error (Error staging record)
-<ins>Vendor module</ins>	|	|
+10436	| Customer purchase order	| New field **Comment** added to Header and line staging. Written to new EDI fields on D365 Sales order	header and lines.
+**Vendor module**	|	|
 2129	| Purchase order line	| Add **Line change type** to Purchase order line EDI tab. 	
-<ins>Vendor module</ins>	|	|
+10372	| Purchase invoice	| Product receipt quantity to match. A Purchase invoice could be partial, i.e. not match the complete qty of the product receipt processed on D365. Previously when PackingSlipID is blank (not provided in file), EDI fully matches to the product receipt(s) processed for the order, even if Invoice qty < Product received qty. Now EDI will check staging line field ShippedQuantity, if InvoiceQuantity is less than ShippedQuantity, then 'Product receipt quantity to match' will be set to InvoiceQuantity.
+**3PL module**	|	|
 9830	| **Sent to EDI** on EDI processing workspaces	| <ins>EDI Inventory adjustment workspace</ins> <br> New tile and tab for following 3PL documents, where the document is enabled for the 3PL trading partner, but record's **Sent to EDI** is set to _No_: <br> • Open Picking list <br> • Open shipment advice - Purchase order <br>  • Open shipment advice - Return order <br> • Open shipment advice - Voyage <br> <br> Additional functionality on Processing for all the Open tabs: <br> •	Filtered to Sent to EDI is No <br> •	Filtered to Excluded set to No <br> •	Buttons: <br> o	**Send to EDI** - can create staging record from workspace and update **Sent to EDI** to _Yes_ <br> o	**Reset flag** – Enabled when **Sent to EDI** is _Yes_. Reset ‘Sent to EDI’ to No which enables ‘Send to EDI’ button <br> o	**Exclude / Include** (New functionality) – Ability to exclude the record from the “outstanding” list. Use filter Excluded to view records that has been excluded and can use button Include to include record again. Doesn’t create the staging record, but assist users in managing their “outstanding” list. <br> ![EDI Inventory adjustment](RELEASE-NOTES-IMAGES/20220630_1.png "EDI Inventory adjustment")	
 
 <ins>Bug fixes</ins>
 
 Number	| Name		 | Description
 :--	|:--		 |:--
-<ins>All modules</ins>		|	|
+**All modules**		|	|
 9261	| Show log on outbound staging		| Showed Empty for previously processed outbound staging records
-8312	| Trading partner			| Connection profile wasn't saved if adding a connection to newly created trading partner or adding to newly created document on the trading partner		
-<ins>Vendor module</ins>	|	|	
+8312	| Trading partner			| Connection profile wasn't saved if adding a connection to newly created trading partner or adding to newly created document on the trading partner
+10149	| Trading partner			| When a template for Vendors and/or Customers exist and user opens the EDI Trading partner's form, the options to 'Select a template for Vendors' and 'Select a template for Customers' pop ups.	
+**Customer module**	|	|	
+10305	| Entity **EDI Settings - PO**	| Fix error "Results. Field 'Relation type field' must be filled in. Results. validateWrite failed on data source 'AgreementClassification (AgreementClassification)'"
+**Vendor module**	|	|	
 6642	| Can't delete Vendor outbound files			| Previously errored with: "File exports cannot be deleted while dependent EDI Vendor purchase order exist. Delete dependent EDI Vendor purchase order and try again." Will now allow deletion of outbound file.
-<ins>3PL module</ins>	|	|	
+**3PL module**	|	|	
 9691	| Shipment receipt - Purchase order	| Same PackingSlipId on multiple lines
 	
 # Previous version(s)
