@@ -5,7 +5,7 @@ title: [EDI Core]
 description: [EDI Core - Setup document types - File templates]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 12/01/2022
+ms.date: 28/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
