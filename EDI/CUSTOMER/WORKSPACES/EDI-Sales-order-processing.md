@@ -5,7 +5,7 @@ title: [EDI Customer]
 description: [EDI Customer workspaces - EDI Sales order processing]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 31/03/2022
+ms.date: 28/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,6 +32,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ## EDI Sales order processing
 
 The EDI sales order processing workspace provides a quick and easy way to view the status of all EDI sales orders. <br>
+Users can also obtain outbound customer transactions that are setup for the trading partner, but **Sent to EDI** is set to _No_. <br>
 Users can access the **EDI Sales order processing workspace** by navigating to **EDI > Customer workspaces > EDI Sales order processing**. <br> 
 The workspace is also used for manually approving Customer purchase order changes where the **Processing method** is set to _Manual_.
 
