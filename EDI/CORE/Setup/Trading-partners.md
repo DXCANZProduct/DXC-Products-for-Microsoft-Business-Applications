@@ -5,7 +5,7 @@ title: [EDI Core]
 description: [EDI Core - Setup Trading partners]
 author: [jdutoi2]
 manager: Kym Parker
-ms.date: 22/09/2021
+ms.date: 28/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
