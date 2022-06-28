@@ -49,12 +49,20 @@ Below modules are determined by licensing and enabled features.
 Users can access the form by navigating to **EDI > Setup > Trading partners**.
 
 The Trading partner provides a centralized location to manage all trading partners.
+Create new Trading partner:
 - To create a new record, select **New**
 - Select the trading partner **Type**. Available options depends on licensing and enabled features.
 - Select the Trading partner's **Company**
 -	Select the **Account number**. Only account numbers for the selected company that are not assigned for the specified trading partner type are available.
 -	Enter the **Trading partner GLN**. This value will be used in the Import-to-staging step to create the incoming staging against the correct Trading partner GLN and should thus be provided in the Inbound file. The Trading partner GLN is required to be unique by Type.
 -	Select **Create**, then complete the remaining setup for the trading partner.
+
+Copy Trading partner:
+- To create a new record by copying an existing trading partner, select **Copy**
+- Select the Trading partner's **Company**
+-	Select the **Account number**. Only account numbers for the selected company that are not assigned for the specified trading partner type are available.
+-	Enter the **Trading partner GLN**. This value will be used in the Import-to-staging step to create the incoming staging against the correct Trading partner GLN and should thus be provided in the Inbound file. The Trading partner GLN is required to be unique by Type.
+-	Select **Create**, then complete/update the remaining setup for the trading partner.
 
 ### Trading partner list
 
