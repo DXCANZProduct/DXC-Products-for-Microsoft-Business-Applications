@@ -116,7 +116,7 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 Number	| Functionality	  | Reason
 :--	|:--		  |:--	
 **License manager**	| Applies to all products	|
-10341	| DXC Support	| New workspace **Organization administration > Workspaces > DXC support**. Links for licensed products to: <br> • User guide <br> • Release notes <br> • Contact - email address for support	
+10341	| DXC Support	| New workspace **Organization administration > Workspaces > DXC support**. <br> Links for licensed products to: <br> • User guide <br> • Release notes <br> • Contact - email address for support	
 **Core module**		| Applies to all modules	|
 9767	| Import - batch group with multiple companies			| After moving Batch control to groups, the import batch can fail when another legal entity isn't setup for EDI. This change will ensure the remaining legal entities are still processed.
 9659 	| Document template - Custom format	| Ability to set a custom date format on inbound file	
@@ -148,10 +148,15 @@ Number	| Name		 | Description
 10149	| Trading partner			| When a template for Vendors and/or Customers exist and user opens the EDI Trading partner's form, the options to 'Select a template for Vendors' and 'Select a template for Customers' pop ups.	
 **Customer module**	|	|	
 10305	| Entity **EDI Settings - PO**	| Fix error "Results. Field 'Relation type field' must be filled in. Results. validateWrite failed on data source 'AgreementClassification (AgreementClassification)'"
+10406	| Customer purchase order	| When store code is not provided in staging, the staging's address fields are used to find the applicable address on the customer to set on the sales order. When the address doesn't exist on the D365 customer, the address is added to the customer. 
+10514	| EDI Sales order processing workspace	| Fix to filter when opening tile **Pending PO changes**
 **Vendor module**	|	|	
 6642	| Can't delete Vendor outbound files			| Previously errored with: "File exports cannot be deleted while dependent EDI Vendor purchase order exist. Delete dependent EDI Vendor purchase order and try again." Will now allow deletion of outbound file.
+10374	| Purchase invoice	| Error 'Item % Update has been cancelled' when processing a Purchase invoice with blank 'Product receipt' and the purchase order includes a cancelled product receipt.
+10514	| EDI Purchase order processing workspace	| Fix to filter when opening tile **Pending POA** and **Pending POA  confirm**
 **3PL module**	|	|	
 9691	| Shipment receipt - Purchase order	| Same PackingSlipId on multiple lines
+10514	| EDI Inventory adjustment workspace	| Fix to filter when opening tile **Open count journals** and **Open movement journals**
 	
 # Previous version(s)
 
