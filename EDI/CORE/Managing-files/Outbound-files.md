@@ -5,7 +5,7 @@ title: [EDI Core]
 description: [Managing files in the EDI module]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 21/07/2021
+ms.date: 29/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,14 +49,19 @@ Automatic archiving of the document handling attachment can be setup with **Arch
 - Select **Reset Status** to update the status back to pending and reprocess the file.
 - See Retry/Reset process for more details on **Edit reset status recurrence**.
 - Select **Download attachment** to download the selected file/s attachment. When multiple files are selected a zip is created.
-- The following fields are available for review on the Overview:
+- The following fields are available on the **Overview** tab:
   - **EDI Document** – The inbound document type
   - **File Name** – Name of the file imported
   - **Company** – Company file is processing in
   - **Account Number** – Depending on the Document Type, this could be a Customer, Vendor account or Warehouse
   - **Name** – The Name of the Customer, Vendor or Warehouse
   - **Status** – The status of the file
-  - **Created Date and Time** – Date/Time file was received
+  - **Created Date and Time** – Date/Time the outbound file was created
+- The following additional fields are available on the **General** tab:
+  - **Template** - The template used when creating the outbound file. 
+  - **File transfer type** - File transfer type the file will be sent to/has been sent to
+  - **Original folder** - Outgoing path the file will be sent to/has been sent to
+  - **Processed** - Date/Time the outbound file was processed and sent to outgoing connection
 
 ###	Send files manually
 From the outbound files form, files can be sent in an ad-hoc manner separately to the batch control process.
