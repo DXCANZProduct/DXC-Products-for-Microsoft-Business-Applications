@@ -5,7 +5,7 @@ title: [EDI Core]
 description: [EDI Core - Setup document types - Outbound filenames]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 12/01/2020
+ms.date: 28/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,9 +42,7 @@ A file name mask can have information from fields within the document embedded s
 - Select **Single file per document** to create one or multiple files per Trading partner for each document
   - **No** – Create one file for all outgoing records for the specified Trading partner document combination. For example user/batch can select multiple staging records and create one outbound file per Trading partner for the document type.
   - **Yes** – Create one file per outgoing record in the staging table for each document. For example user/batch can select multiple staging records, but a file will be created per record.
-- Specify the **file name mask** to be used for each file, then select the **Editor** button. <br>
-Various fields from the staging table are available as a placeholder. Add the file name mask text and insert placeholders from the documents available fields into the mask by selecting the placeholder and pressing the **Insert at end** button. Move the placeholder text that was just inserted (all the text between the $ and including the $ signs) to where it’s required in the file name mask. <br>
-End the filename mask with the applicable file extension for outbound file's **Attachment** preview to work. If a file extenstion is not included in the filename, the outbound file will still be created, but the Attachment preview tab requires a file extension in order to read the file.
+- Select the **Editor** button. <br>
 
   **Placeholders** fields available for selection as file name mask depends on setting **Single file per document**:
 
@@ -53,6 +51,11 @@ End the filename mask with the applicable file extension for outbound file's **A
   **Yes**                           |	Yes                     | Yes
   **No**                            | Yes                     | No
 
+- Add the file name mask text either by entering **Text** or via **File name mask**.
+- Insert placeholders from the documents available fields into the mask by selecting from the **Name** dropdown, or using **Placeholders picker**.
+- Use the **Up** or **Down** buttons to move fields.
+- **Set data** can be used to view an example using an existing outbound record.
+- End the filename mask with the applicable file extension for outbound file's **Attachment** preview to work. If a file extenstion is not included in the filename, the outbound file will still be created, but the Attachment preview tab requires a file extension in order to read the file.
 - Once the filename mask is complete save and close the editor.
 
 > Note: When assigning an Outbound filename to a Trading parner's document type. The Template assigned will also determine which filenames are available for selection.
