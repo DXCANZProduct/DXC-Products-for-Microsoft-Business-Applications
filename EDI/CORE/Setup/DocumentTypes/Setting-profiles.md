@@ -34,7 +34,13 @@ Setting profiles can be created to specify the handling of specific scenarios. O
 
 > Note:  The settings profiles FastTab is only displayed from Document types that have valid setting profile options
 
+Create new setting profile:
 - To create a new record, select the applicable document type and select the **New** button in the settings profiles FastTab.
+- Specify the **Settings profile id** and **Description** of the profile.
+- Select the Settings profile id hyperlink or the **Setup** button to update profile details. 
+
+Copy existing setting profile
+- To create a new record by copying an existing record, select the applicable document type, select the existing record to copy and select the **Copy** button in the settings profiles FastTab.
 - Specify the **Settings profile id** and **Description** of the profile.
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details. 
 
