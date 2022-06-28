@@ -66,25 +66,53 @@ EDI > Setup > Document types (Setting profiles for EDI core documents)
 ## Document types
 EDI > Setup > Document types (Template, Validation, Outbound file names and EDI Field metadata)
 
+### Templates
+
 **Order**         | **Entity**				| **Description**							| **Dependency**
 :-----------------|:------------------------------------|:-------------------------						|:-------------------------
+**Text file** | | |
 1		  | EDI Template file			| Create new **Text** template and setup
-2		  | EDI Template file section		| Section details for the **Text** template				| • EDI Template file
-3		  | EDI Template file line section	| Line details for each section for the **Text** template		| • EDI Template file section
-4		  | EDI Template XSLT			| Create new **XSLT Transformation** template and setup
-5		  | EDI template XSLT collection	| Create new **XSLT Collection** template and setup
-6		  | EDI template JSON			| Create new **JSON** template and setup
-7		  | EDI template JSON collection	| Create new **JSON Collection** template and setup
-8		  | EDI template code transformation	| Create new **Code transformation** template and setup
-9     | EDI template section  | Create new **section** for existing XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI Template XSLT <br/> • EDI template XSLT collection <br/> • EDI template JSON <br/> • EDI template JSON collection <br/> • EDI template code transformation
-10    | EDI template fields   | Create new **fields** for existing sections for XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI template section
-11	  | EDI Validation profile		| Create new **Validation profiles** for all applicable document types	
-12	  | EDI Validation profile line		| Create new **Validation profile lines** for all applicable document types | • EDI Validation profile
-13	  | EDI Outbound file names		| Create new **Outbound file names**
-14		| EDI Field metadata			| Update document type's **Field metadata**
+1		  | EDI Template file section		| Section details for the **Text** template				| • EDI Template file
+1		  | EDI Template file line section	| Line details for each section for the **Text** template		| • EDI Template file section
+<ins>XSLT Transformation & XSLT Collection</ins> | | |
+1		  | EDI Template XSLT			| Create new **XSLT Transformation** template and setup
+1		  | EDI template XSLT collection	| Create new **XSLT Collection** template and setup
+1     | EDI template section  | Create new **section** for existing XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI Template XSLT <br/> • EDI template XSLT collection <br/> • EDI template JSON <br/> • EDI template JSON collection <br/> • EDI template code transformation
+1    | EDI template fields   | Create new **fields** for existing sections for XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI template section
+<ins>**JSON & JSON Collection**</ins> | | |
+1		  | EDI template JSON			| Create new **JSON** template and setup
+1		  | EDI template JSON collection	| Create new **JSON Collection** template and setup
+1     | EDI template section  | Create new **section** for existing XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI Template XSLT <br/> • EDI template XSLT collection <br/> • EDI template JSON <br/> • EDI template JSON collection <br/> • EDI template code transformation
+1    | EDI template fields   | Create new **fields** for existing sections for XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI template section
+<ins>**Code Transformation**</ins> | | |
+1		  | EDI template code transformation	| Create new **Code transformation** template and setup
+1     | EDI template section  | Create new **section** for existing XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI Template XSLT <br/> • EDI template XSLT collection <br/> • EDI template JSON <br/> • EDI template JSON collection <br/> • EDI template code transformation
+1    | EDI template fields   | Create new **fields** for existing sections for XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI template section
+
+### Setting profiles
+Setting profiles are module specific and discussed within each module.
+
+### Validation profiles
+
+**Order**         | **Entity**				| **Description**							| **Dependency**
+:-----------------|:------------------------------------|:-------------------------						|:-------------------------
+1	  | EDI Validation profile		| Create new **Validation profiles** for all applicable document types	
+1	  | EDI Validation profile line		| Create new **Validation profile lines** for all applicable document types | • EDI Validation profile
+
+### Outbound file names
+
+**Order**         | **Entity**				| **Description**							| **Dependency**
+:-----------------|:------------------------------------|:-------------------------						|:-------------------------
+1	  | EDI Outbound file names		| Create new **Outbound file names**
+
+### Staging metadata
+
+**Order**         | **Entity**				| **Description**							| **Dependency**
+:-----------------|:------------------------------------|:-------------------------						|:-------------------------
+1		| EDI Field metadata			| Update document type's **Field metadata**
 
 The following entities are applicable to all **EDI - Standard formats** module:
-EDI > Setup > Document types (Template)
+EDI > Setup > Document types (Templates)
 
  **Order**        | **Entity**		 	    | **Description**								| **Dependency**
 :-----------------|:--------------------------------|:-------------------------							|:-------------------------
