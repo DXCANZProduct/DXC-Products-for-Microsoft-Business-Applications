@@ -42,7 +42,6 @@ A file name mask can have information from fields within the document embedded s
 - Select **Single file per document** to create one or multiple files per Trading partner for each document
   - **No** – Create one file for all outgoing records for the specified Trading partner document combination. For example user/batch can select multiple staging records and create one outbound file per Trading partner for the document type.
   - **Yes** – Create one file per outgoing record in the staging table for each document. For example user/batch can select multiple staging records, but a file will be created per record.
-- Select the **Editor** button. <br>
 
   **Placeholders** fields available for selection as file name mask depends on setting **Single file per document**:
 
@@ -51,6 +50,7 @@ A file name mask can have information from fields within the document embedded s
   **Yes**                           |	Yes                     | Yes
   **No**                            | Yes                     | No
 
+- Select the **Editor** button.
 - Add the file name mask text either by entering **Text** or via **File name mask**.
 - Insert placeholders from the documents available fields into the mask by selecting from the **Name** dropdown, or using **Placeholders picker**.
 - Use the **Up** or **Down** buttons to move fields.
