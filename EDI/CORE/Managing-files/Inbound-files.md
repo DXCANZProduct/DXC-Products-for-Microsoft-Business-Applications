@@ -5,7 +5,7 @@ title: [EDI Core]
 description: [Managing files in the EDI module]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 21/07/2021
+ms.date: 29/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,7 +58,19 @@ Filename uniqueness is validated by *Document type* and *Trading partner*. It th
   - **Account Number** – Depending on the Document Type, this could be a Customer account, Warehouse or Vendor account
   - **Name** – The Name of the Customer, Warehouse or Vendor
   - **Status** – The status of the file
-  - **Created Date and Time** – Date/Time file was received
+  - **Created Date and Time** – Date/Time file was received (Import step)
+- The following additional fields are available on the **General** tab:
+  - **Template** - The template that will be/were used when processing the inbound file to staging. This template can be changed to a different template by using the **Reset template** button. 
+  - **File transfer type** - File transfer type the file was received from. If the file was manually imported via **Upload file**, this field will be set to _Manual_.
+  - **Original folder** - Incoming path the file was received from
+  - **Processed** - Date/Time the inbound file was processed to staging (Process to staging step)
+  - **Reset status profile** - Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
+  - **Reset status date/time**  - Next date/time automatic reset status will run	
+  - **Reset status attempts**   - Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
+  - **Recurrence**              - Recurrence text. Contains standard details of Recurrence, for example:
+      - Interval (recurrence pattern)
+      - How many times the period will run (End after)
+      - From date/time the recurrence will start	
 
 ###	Upload files manually
 The inbound files form has the option to manually upload files in an ad-hoc fashion.  It is intended that this option is only used during testing of the EDI module.
