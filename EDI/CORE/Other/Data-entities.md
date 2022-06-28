@@ -79,7 +79,7 @@ EDI > Setup > Document types (Template, Validation, Outbound file names and EDI 
 2		  | EDI template XSLT collection	| Create new **XSLT Collection** template and setup
 3     | EDI template section  | Create new **section** for existing XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI Template XSLT <br/> • EDI template XSLT collection
 4     | EDI template fields   | Create new **fields** for existing sections for XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI template section
-5     | EDI template fields XSLT | Create new 
+5     | EDI template fields XSLT | Update **Attribute** flag on template fields  | • EDI template fields
 **JSON & JSON Collection** | | |
 1		  | EDI template JSON			| Create new **JSON** template and setup
 2		  | EDI template JSON collection	| Create new **JSON Collection** template and setup
