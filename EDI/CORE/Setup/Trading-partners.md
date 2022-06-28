@@ -58,11 +58,11 @@ Create new Trading partner:
 -	Select **Create**, then complete the remaining setup for the trading partner.
 
 Copy existing Trading partner:
-- To create a new record by copying an existing trading partner, select **Copy**
-- Select the Trading partner's **Company**
+- To create a new record by copying an existing trading partner, select the applicable trading partner to copy and select **Copy**
+- Select the new Trading partner's **Company**
 -	Select the **Account number**. Only account numbers for the selected company that are not assigned for the specified trading partner type are available.
 -	Enter the **Trading partner GLN**. This value will be used in the Import-to-staging step to create the incoming staging against the correct Trading partner GLN and should thus be provided in the Inbound file. The Trading partner GLN is required to be unique by Type.
--	Select **Create**, then complete/update the remaining setup for the trading partner.
+-	Select **Copy**, then complete/update the remaining setup for the trading partner.
 
 ### Trading partner list
 
