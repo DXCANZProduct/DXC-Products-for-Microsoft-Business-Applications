@@ -215,13 +215,6 @@ Field mappings can have functions applied to them to transform the data or perfo
 
 > Note: The list of available functions can also be located via **EDI > Setup > Configurations > Template field functions**
 
-#### Text template data entities
-
-**Order**	                       | **Entity**	                    | **Description**
-:----------------------------------|:-------------------------------|:-----------------------------
-1	                               | EDI Template file              | Create new **Text file** template and setup
-2	                               | EDI Template file section      | Section details for the **Text file** template
-3	                               | EDI Template file line element | Mapping details for each section for the **Text file** template
 
 ### XML files
 
@@ -271,13 +264,6 @@ When opening the form, it will also display any compile errors.
 Click **Save XSLT**.
 If scripting is allowed, ensure [EDI Shared parameter](../EDI-shared-parameters.md) **Enable XLST scripting** is enabled.
 
-#### XML template data entities
-
-**Order**	                       | **Entity**	                  | **Description**
-:----------------------------------|:-----------------------------|:-----------------------------
-N/A	                               | EDI Template XLST            | Create new **XLST Transformation** template and setup
-N/A	                               | EDI Template XLST collection | Create new **XLST Collection** template and setup
-
 ### JSON files
 
 JSON file format is available using a standard format based on the fields currently available for each document. 
@@ -289,12 +275,6 @@ JSON Collection should be used for JSON files with multiple headers.
 If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).
 Date settings allow for ability to override default JSON ISO standard date format yyyy-MM-dd'T'HH:mm:ss.ff
 
-#### JSON template data entities
-
-**Order**	                       | **Entity**	                  | **Description**
-:----------------------------------|:-----------------------------|:-----------------------------
-N/A	                               | EDI Template JSON            | Create new **JSON** template and setup
-N/A	                               | EDI Template JSON collection | Create new **JSON Collection** template and setup
 
 ### Code transformation files
 
@@ -310,11 +290,6 @@ If required, update the general settings by seleting the **Setup** button.
 
 If required to update decimals or date settings, see [Standard setup](#standard-setup).
 
-#### Code transformation template data entities
-
-**Order**	                       | **Entity**	                       | **Description**
-:----------------------------------|:----------------------------------|:-----------------------------
-N/A	                               | EDI template code transformation  | Create new **Code transformation** template and setup
 
 ### EDIFACT files
 
@@ -478,15 +453,5 @@ An example of the document’s format can be viewed under the **Example** FastTa
 **Set data** can be used to select an existing staging record to populate the Message example. <br>
 Where **Set data** is blank, the Example message staging fields will not be populated, but will display the mapped {Table.Field} value. <br>
 
-#### EDIFACT template data entities
-
-Data entities can be used to import standard formats, and then adjusted to match to company’s format. <br>
-The following is a summary of data entities available for the EDIFACT document template: <br>
-
-**Order**	                       | **Entity**	                  | **Description**
-:----------------------------------|:-----------------------------|:-----------------------------
-1	                               | EDI Template EDIFACT         | Create new **EDIFACT** template and setup
-2	                               | EDI Template EDIFACT section | Section details for the **EDIFACT** template
-3	                               | EDI Template EDIFACT element | Element details for each section for the **EDIFACT** template
-
-> Note: If the EDIFACT template has been created manually (not via data entity), first delete the default UNA elements before importing Section and Element entities for the template.
+### Data entities
+See [Data entities](../../Other/Data-entities.md) for importing document type templates
