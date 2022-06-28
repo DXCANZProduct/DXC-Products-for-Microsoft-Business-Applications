@@ -5,7 +5,7 @@ title: [EDI Vendor]
 description: [EDI Vendor workspaces - EDI Purchase order processing]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 31/03/2022
+ms.date: 28/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,6 +32,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ## EDI Purchase order processing
 
 The EDI purchase order processing workspace provides a quick and easy way to view the pending actions for EDI purchase orders, as well as validation warning and errors for EDI incoming documents. <br>
+Users can also obtain outbound vendor transactions that are setup for the trading partner, but **Sent to EDI** is set to _No_. <br>
 Users can access the **EDI Purchase order processing workspace** by navigating to **EDI > Vendor workspaces > EDI Purchase order processing**. <br> 
 
 The workspace is split into two tabs:
