@@ -5,7 +5,7 @@ title: [EDI Customer]
 description: [EDI Customer Setup - Document type Setting profiles - Customer purchase order change]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 1/10/2021
+ms.date: 28/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,6 +45,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**. <br
 **Processing method** |	Specify method of processing purchase order changes	| •	**Automatic** – Document settings and validation will be used to automatically process the change and update the D365 sales order, if within the allowed parameters. <br> •	**Manual** – Document settings and validation doesn’t apply and the change is manually approved via the **Sales order processing workspace > Pending PO changes** or **Sales order EDI header > Changes**
 <ins>Purchase order</ins> |   |
 **Item ID Source**  |	Determine the method of item identification used by this customer when ordering products. Where the External item number, GTIN or Barcode is unique per Variant, EDI will create the sales order against the correct variant, i.e. the customer doesn’t have to supply variant details in inbound document.	| •	**Our Item number** - this is the item ID on the items form <br> •	**External item number** - this is the item Id on the customer external item form <br> •	**GTIN** - this is the GTIN assigned to an item <br> •	**Barcode** - This is the Barcode assigned to an item.
+**Blank unit**    | Where staging line's **Unit** is blank, this document setting provides options to use for these lines when creating the D365 sales order line's **Unit** |  • **Sales unit** - Populate with item's sales unit <br> • **Sales trade agreement unit** - Populate with applicable sales trade agreement unit <br> • **Inventory unit** - Populate with item's inventory unit <br> • **Error** - Errors the complete staging record
 \** **Document status** |	Allow sales orders up to and including this status to be changed	| •	None <br> •	Confirmation <br> •	Picking list / Released to warehouse <br> •	Delivery note <br> •	Tax invoice
 \** **Allow header update** |	If allowed, applicable D365 Sales order fields are updated	  | Yes/No
 **Don’t send POA for changes**  |	If the customer has Customer purchase order acknowledgement (POA) setup, should it be sent for the PO Change. Not all customers want/can process a POA for a PO Change.	  | Yes/No
