@@ -5,7 +5,7 @@ title: [EDI]
 description: [EDI - Release notes]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 23/06/2022
+ms.date: 28/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -119,11 +119,16 @@ Number	| Functionality	  | Reason
 9767	| Import - batch group with multiple companies			| After moving Batch control to groups, the import batch can fail when another legal entity isn't setup for EDI. This change will ensure the remaining legal entities are still processed.
 9659 	| Document template - Custom format	| Ability to set a custom date format on inbound file	
 9691	| Document template - Dates		| Allow empty dates
-8321	| Copy		| **Copy** button on Document type's Template, Setting profiles, Validation profiles and Trading partner	
+8321	| Copy		| **Copy** button on Document type's Template, Setting profiles, Validation profiles and Trading partner
+8268	| Outbound file name	| Improvements to outbound file name **Editor**. Can also set date format, example currentSessionDate(ddMMyyyy)	
+9763	| XML document template mapping	| Ability to send and extract **Attributes** for XML document templates. **Refresh module** will update **Attribute** column on existing templates. 	
+9819	| Functional acknowledgement received | Company field has been added to **EDI > Inquiries and reports > Functional acknowledgement received**. Previously using Trading partner's company, which prevented Company filter to filter appropriately.
 <ins>Customer module</ins>	|	|
 9261	| Customer purchase order - Blank sales unit	| New document setting called **Blank unit** for **Customer purchase order** and **Customer purchase order change** (add additional item) . Options are: <br> •	Sales unit <br> • Sales trade agreement unit <br> • Inventory unit <br> • Error (Error staging record)
 <ins>Vendor module</ins>	|	|
 2129	| Purchase order line	| Add **Line change type** to Purchase order line EDI tab. 	
+<ins>Vendor module</ins>	|	|
+9830	| **Sent to EDI** on EDI processing workspaces	| <ins>EDI Inventory adjustment workspace</ins> <br> New tile and tab for following 3PL documents, where the document is enabled for the 3PL trading partner, but record's **Sent to EDI** is set to _No_: <br> • Open Picking list <br> • Open shipment advice - Purchase order <br>  • Open shipment advice - Return order <br> • Open shipment advice - Voyage <br> Additional functionality on Processing for all the Open tabs: <br> •	Filtered to Sent to EDI is No <br> •	Filtered to Excluded set to No <br> •	Buttons: <br> o	**Send to EDI** - can create staging record from workspace and update **Sent to EDI** to _Yes_ <br> o	**Reset flag** – Enabled when **Sent to EDI** is _Yes_. Reset ‘Sent to EDI’ to No which enables ‘Send to EDI’ button <br> o	**Exclude / Include** (New functionality) – Ability to exclude the record from the “outstanding” list. Use filter Excluded to view records that has been excluded and can use button Include to include record again. Doesn’t create the staging record, but assist users in managing their “outstanding” list. <br> ![EDI Inventory adjustment](RELEASE-NOTES-IMAGES/20220630_1.png "EDI Inventory adjustment")	
 
 <ins>Bug fixes</ins>
 
