@@ -225,17 +225,15 @@ Field mappings can have functions applied to them to transform the data or perfo
 
 ### XML files
 
-When a new XML file template is created, the currently available fields will be defaulted in the mapping. Users can remove/add fields or move position of field/s.
-They can also enter a static value or apply functions for outbound files.
+When a new XML file template is created, the currently available fields will be defaulted in the mapping. <br>
+By selecting **Mappings**, users can remove/add fields or move position of field/s. <br>
+They can also enter a static value, apply custom formats and set the field as an attribute.
 
 The elements in the XML template, uses the D365 table field names but it can be overridden in the **Name** column in Mappings.
-
-Mappings also include an **Example** FastTab, which allows the user to view an example document and **Set data** for the example if the document type has available staging records.
 
 Users can also enter a static value or apply functions for inbound and outbound files.
 - **Static value**: Users can use a static value on an inbound file where the field is not within the file. Or send a static value on an outbound file.
 - **Custom format**: Where the field is within the inbound file but needs to be formatted, use formula like substring to replace. On outbound files, custom format can also be used to format differently to document template’s setup, or other examples as per [Custom format](#custom-format) section.
-
 
 Style sheets can also be applied, which will override the mappings.
 XML Collection should be used for XML files with multiple headers.
@@ -273,10 +271,19 @@ If scripting is allowed, ensure [EDI Shared parameter](../EDI-shared-parameters.
 
 ### JSON files
 
-JSON file format is available using a standard format based on the fields currently available for each document. 
+When a new JSON file template is created, the currently available fields will be defaulted in the mapping. <br>
+By selecting **Mappings**, users can remove/add fields or move position of field/s. <br>
+They can also enter a static value and apply custom formats.
+
+The elements in the JSON template, uses the D365 table field names but it can be overridden in the **Name** column in Mappings.
+
+Users can also enter a static value or apply functions for inbound and outbound files.
+- **Static value**: Users can use a static value on an inbound file where the field is not within the file. Or send a static value on an outbound file.
+- **Custom format**: Where the field is within the inbound file but needs to be formatted, use formula like substring to replace. On outbound files, custom format can also be used to format differently to document template’s setup, or other examples as per [Custom format](#custom-format) section.
+
 JSON Collection should be used for JSON files with multiple headers.
 
-> Note: The elements in the JSON format use the D365 table field names.  To identify the correct label for each of the elements, please see the **Field Label** available within the [**Field metadata**](Field-metadata.md)
+> Note: If the document type has staging record/s, users can use the following to create an example XML populated with information. Select **Mappings > XML**. Select **Set data** button on the **Example** FastTab, select a staging table record and select **Choose**.
 
 #### JSON files templates setup
 If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).
