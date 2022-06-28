@@ -33,7 +33,9 @@ Users can access the form by navigating to **EDI > Setup > Document types**. <br
 Select or filter the applicable Document in the List and select FastTab **Templates**.
 
 Templates hold the settings required to translate the EDI document into or out of the document type’s staging tables. Trading partners will often supply information in different formats and use different fields to specify information.  Having templates allows us to configure these differences in a simple reusable fashion.
-- Select **Create**, a new dialog box called **Create a new template** will be displayed.
+
+Create new template:
+- Select **Create**, a new dialog box called **Create a new template** will be displayed
 - Specify the **Template ID** and **Description**
 - Select the **Type** of file for which the template is being created, options:
     - [Text file](#text-files) - multiple headers supported
@@ -43,7 +45,12 @@ Templates hold the settings required to translate the EDI document into or out o
     - [JSON Collection](#json-files) - multiple headers supported
     - [Code Transformation](#code-transformation-files) - single header supported
     - [EDIFACT](#edifact-files) - EDI - Standard formats license only
--	Select **Create**
+- Select **Create**
+
+Copy existing template:
+- Select **Copy**, a new dialog box called **Copy template** will be displayed
+- Specify the **Template ID** and **Description**
+- Select **Copy**
 
 ## Setup
 Next step is to update **Setup** for the created template.
