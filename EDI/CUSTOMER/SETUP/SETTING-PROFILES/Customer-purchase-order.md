@@ -5,7 +5,7 @@ title: [EDI Customer]
 description: [EDI Customer Setup - Document type Setting profiles - Customer purchase order]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 1/10/2021
+ms.date: 28/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,6 +40,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 :-------            |:-------                                   |:----------
 <ins>Purchase order</ins> |   |
 **Item ID Source**  |	Determine the method of item identification used by this customer when ordering products. Where the External item number, GTIN or Barcode is unique per Variant, EDI will create the sales order against the correct variant, i.e. the customer doesn’t have to supply variant details in inbound document.	| •	**Our Item number** - this is the item ID on the items form <br> •	**External item number** - this is the item Id on the customer external item form <br> •	**GTIN** - this is the GTIN assigned to an item <br> •	**Barcode** - This is the Barcode assigned to an item.
+**Blank unit**    | Where the staging record will create a new sales line and the **Unit** is not provided in the file, this document setting provides options to use one of the following for the blank unit line(s): <br> • Sales unit <br> • Sales trade agreement unit <br> • Inventory unit <br> • Error (errors the complete staging record)
 **Price includes tax**  |	Specify if the price (line amount &/or unit price) received from the Customer includes tax 	  | Yes/No
 **Use Customer Price**  |	Select this flag to use the customer's price on the sales order	                              | • **Yes**: If there is a variance between the trade agreement /list price stored in D365 and the Customers price received in the purchase order, the purchase order will be used if within the variance range. <br> • **No**: System price will be used when creating the sales order.
 **Maximum negative price variance** |	Where **Use Customer Price** is set to _Yes_: <br> Specify the maximum negative price variance that can occur without warning. 	| It is recommended that these settings are set to at least 0.01 if the '**Price include tax** is ticked' to avoid any rounding differences between the two solutions being flagged.
