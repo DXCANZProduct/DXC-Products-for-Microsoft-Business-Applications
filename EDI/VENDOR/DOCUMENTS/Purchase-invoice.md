@@ -5,7 +5,7 @@ title: [EDI Vendor]
 description: [EDI Vendor Documents - Purchase invoice]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 16/11/2021
+ms.date: 29/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -315,7 +315,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Item number**             | The item identifier as sent by the trading partner	| Used to find matching PO line in conjunction with document setting ‘Item id source’
 **Description**             | Purchase order line text	
 **Purchase quantity**       | Ordered quantity	
-**Shipped quantity**        | Shipped quantity	
+**Shipped quantity**        | Shipped quantity. If the Shipped quantity is higher than Invoice quantity, the 'Product receipt quantity to match' will be set to _Invoice quantity_	
 **Invoice quantity**        | Invoice quantity for this invoice	                                        | Invoice line > Invoice quantity <br> Converted to PO’s unit
 **Unit**                    | Unit of measure for purchase, shipped and invoice quantity	            | Converted to PO’s unit
 **Price unit**              | The quantity of the product that is covered by the purchase price. Usually 1	| Converted to PO’s price unit for matching
