@@ -115,7 +115,9 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 	
 Number	| Functionality	  | Reason
 :--	|:--		  |:--	
-**All modules**		|	|
+**License manager**	| Applies to all products	|
+10341	| DXC Support	| New workspace **Organization administration > Workspaces > DXC support**. Links for licensed products to: <br> • User guide <br> • Release notes <br> • Contact - email address for support	
+**Core module**		| Applies to all modules	|
 9767	| Import - batch group with multiple companies			| After moving Batch control to groups, the import batch can fail when another legal entity isn't setup for EDI. This change will ensure the remaining legal entities are still processed.
 9659 	| Document template - Custom format	| Ability to set a custom date format on inbound file	
 9691	| Document template - Dates		| Allow empty dates
@@ -124,8 +126,10 @@ Number	| Functionality	  | Reason
 9763	| XML document template mapping	| Ability to send and extract **Attributes** for XML document templates. **Refresh module** will update **Attribute** column on existing templates. 	
 9819	| Functional acknowledgement received | Company field has been added to **EDI > Inquiries and reports > Functional acknowledgement received**. Previously using Trading partner's company, which prevented Company filter to filter appropriately.
 10229	| Outbound files	| Additional fields on where file will be/have been sent: <br> • File transfer type <br> • Original folder
-10433	| Connection type - FTP	| Port fix	
-<ins>Customer module</ins>	|	|
+10433	| Connection type - FTP	| Port fix
+10422	| Connection type	| New Incoming document type **Error**. Where file already exists in D365 for trading partner and document type, the file will be moved from Import path to Error path. If the Error path isn't setup, the duplicate file will remain in Import path.
+10446	| EDI parameters	| Removed About	
+**Customer module**	|	|
 9261	| Customer purchase order - Blank sales unit	| New document setting called **Blank unit** for **Customer purchase order** and **Customer purchase order change** (add additional item) . Options are: <br> •	Sales unit <br> • Sales trade agreement unit <br> • Inventory unit <br> • Error (Error staging record)
 10436	| Customer purchase order	| New field **Comment** added to Header and line staging. Written to new EDI fields on D365 Sales order	header and lines.
 **Vendor module**	|	|
@@ -138,7 +142,7 @@ Number	| Functionality	  | Reason
 
 Number	| Name		 | Description
 :--	|:--		 |:--
-**All modules**		|	|
+**Core module**		| Applies to all modules	|
 9261	| Show log on outbound staging		| Showed Empty for previously processed outbound staging records
 8312	| Trading partner			| Connection profile wasn't saved if adding a connection to newly created trading partner or adding to newly created document on the trading partner
 10149	| Trading partner			| When a template for Vendors and/or Customers exist and user opens the EDI Trading partner's form, the options to 'Select a template for Vendors' and 'Select a template for Customers' pop ups.	
