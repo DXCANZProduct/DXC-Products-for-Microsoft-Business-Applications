@@ -89,7 +89,7 @@ EDI > Setup > Document types (Template, Validation, Outbound file names and Stag
 1		  | EDI template code transformation	| Create new **Code transformation** template and setup
 2     | EDI template section  | Create new **section** for existing XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI template code transformation
 3    | EDI template fields   | Create new **fields** for existing sections for XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI template section
-**EDIFACT**       | Applicable to **EDI - Standard formats** module | |
+**EDIFACT**       |  | Applicable to **EDI - Standard formats** module |
 1	   | EDI Template EDIFACT            | Create new **EDIFACT** template and setup					|
 2	   | EDI Template EDIFACT section    | Section details for the **EDIFACT** template				| • EDI Template EDIFACT
 3	   | EDI Template EDIFACT element    | Element details for each section for the **EDIFACT** template		| • EDI Template EDIFACT section
