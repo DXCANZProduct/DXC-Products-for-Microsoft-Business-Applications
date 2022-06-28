@@ -56,12 +56,12 @@ Automatic archiving of the document handling attachment can be setup with **Arch
   - **Account Number** – Depending on the Document Type, this could be a Customer, Vendor account or Warehouse
   - **Name** – The Name of the Customer, Vendor or Warehouse
   - **Status** – The status of the file
-  - **Created Date and Time** – Date/Time the outbound file was created
+  - **Created Date and Time** – Date/Time the outbound file was created (Process to outbound step)
 - The following additional fields are available on the **General** tab:
   - **Template** - The template used when creating the outbound file. 
   - **File transfer type** - File transfer type the file will be sent to/has been sent to
   - **Original folder** - Outgoing path the file will be sent to/has been sent to
-  - **Processed** - Date/Time the outbound file was processed and sent to outgoing connection
+  - **Processed** - Date/Time the outbound file was processed and sent to outgoing connection (Export step)
   - **Reset status profile** - Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
   - **Reset status date/time**  - Next date/time automatic reset status will run	
   - **Reset status attempts**   - Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
@@ -90,6 +90,4 @@ Once outbound files have been created, they must be sent to the applicable party
 - Select the **File Transfer Type**.
 - If required, set **Batch Processing** to *Yes* and set the recurrence
 - Select **OK**
-
-
 
