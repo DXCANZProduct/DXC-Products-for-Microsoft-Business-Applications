@@ -5,7 +5,7 @@ title: [EDI 3PL]
 description: [EDI 3PL workspaces - EDI Inventory adjustment]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 24/11/2021
+ms.date: 28/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,11 +33,12 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 The EDI Inventory adjustment workspace provides a quick and easy way to view and mange open 3PL inventory adjustments. <br>
 It is useful where companies have decided not to automatically post the D365 target journal and manually review before posting. <br>
+Users can also obtain outbound 3PL transactions that are setup for the trading partner, but **Sent to EDI** is set to _No_. <br>
 Users can access the workspace by navigating to **EDI > 3PL workspaces > EDI Inventory adjustment**. <br> 
 
 The following subsections will discuss the various tiles and tabs available on the workspace.
 
-### Open reconciliations
+### Reconciliations
 Access by selecting **Open reconciliations** tile or **Reconciliation** tab. <br>
 From within the workspace it is possible to view and even process open EDI Inventory reconciliations created by **Inventory adjustment - Reconciliation** records. <br>
 Includes the ability to **Open reconciliation** or **Mark as closed** directly within the Workspace.
@@ -93,3 +94,27 @@ Field	                | Description
 **Warehouse**         |	Warehouse
 **Date**              | Movement date (from EDI document)
 **Lines**             |	Total number of lines
+
+### Open picking list
+**Open picking list** can be used in scenarios where a 3PL warehouse has a Picking list posted but not yet sent to EDI and has the Picking list enabled on the trading partner.
+
+Filters           | Description
+:--               |:--
+**Sent to EDI**   |	•	No (default)- Display records that haven’t been sent to EDI <br> •	Yes – Display records that have been sent to EDI
+**Excluded**      |	•	No (default) – Display record that hasn’t been marked as excluded from open list <br> •	Yes – Display records that has been marked as excluded from open list
+
+
+Buttons	          | Description
+:--               |:--
+**Send to EDI**   |	Select the **Send to EDI** button to create a Vendor purchase order staging table record and update the record as Sent to EDI = Yes
+**Reset flag**    |	Select the **Reset flag** to update **Sent to EDI** to _No_
+**Exclude / Include** |	Ability to exclude/include records from open list
+
+Field	                | Description
+:--                   |:--
+**Warehouse**         |	Warehouse
+**Customer**          | Customer for Sales order picking lists. Blank for Transfer order picking lists
+**Picking route**     | Picking route
+**Reference**         | Sales order or Transfer order shipment
+**Number**            | Reference's number
+**Consignment note number** | EDI Consignment note number for the picking list
