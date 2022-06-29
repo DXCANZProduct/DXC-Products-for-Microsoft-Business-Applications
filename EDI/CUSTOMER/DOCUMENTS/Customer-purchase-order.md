@@ -5,7 +5,7 @@ title: [EDI Customer]
 description: [EDI Customer Documents - Customer purchase order]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 5/10/2021
+ms.date: 29/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -218,7 +218,7 @@ The following EDI Header staging fields are available on the header page.
 **Field**	            | **Description**	                                    | **Target D365 field**
 :---                    |:---                                                   |:---
 <ins>**Identification**</ins>		|   |
-**EDI number**          | EDI Staging table record id                           | Sales Order > EDI > Original EDI number
+**EDI number**          | EDI Staging table record id                           | Sales order > EDI > Original EDI number
 **Company account**     | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here.   | Sales order > EDI > Company GLN <br> If the **Company GLN** staging field is blank, the Company GLN on the Trading partner will be used to populate the **Company GLN** on the Sales order header.
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created a D365 Sales order, Sales agreement or Release order. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -229,42 +229,43 @@ The following EDI Header staging fields are available on the header page.
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
 <ins>**Overview**</ins>	    |   |
 **Customer Requisition**    | Customers purchase order number to be populated in the Customer requisition field of the sales order header.	| Sales order > General > Customer requisition
-**Purchase order date**     | The purchase order date from the EDI record is shown here.    | Sales Order > EDI > Original order date
-**EDI order type**          | The EDI order type is shown here.	                            | Sales Order > EDI > EDI order type
+**Purchase order date**     | The purchase order date from the EDI record is shown here.    | Sales order > EDI > Original order date
+**EDI order type**          | The EDI order type is shown here.	                            | Sales order > EDI > EDI order type
 **EDI order purpose**       | The EDI order purpose is shown here. Receiving an Order purpose **Change** will error the staging record, since these should be sent as **Customer purchase order change** document. Only **Original**, **Confirmation** and **Cancellation** order purposes are allowed for **Customer purchase order** document.	
-**Store code**              | The store code from the EDI record is shown here.	            | Sales Order > EDI > Store code. <br> And used to populate Sales order delivery address
-**Store zone**              | The store zone from the EDI PO is shown here.	                | Sales Order > EDI > Store zone
+**Store code**              | The store code from the EDI record is shown here.	            | Sales order > EDI > Store code. <br> And used to populate Sales order delivery address
+**Store zone**              | The store zone from the EDI PO is shown here.	                | Sales order > EDI > Store zone
 <ins>**General**</ins>	    |   |
 **Customer Requisition**    | Customers purchase order number to be populated in the Customer requisition field of the sales order header.	| Sales order > General > Customer requisition
-**Customer Reference**      | Customers purchase order reference to be populated in the Customer Reference field of the sales order header.	| Sales Order > General > Customer reference
-**Purchase order date**     | The purchase order date from the EDI record is shown here.    | Sales Order > EDI > Original order date
-**Currency**                | The currency of the order	                                    | Sales Order > Price and discount > Currency
+**Customer Reference**      | Customers purchase order reference to be populated in the Customer Reference field of the sales order header.	| Sales order > General > Customer reference
+**Purchase order date**     | The purchase order date from the EDI record is shown here.    | Sales order > EDI > Original order date
+**Currency**                | The currency of the order	                                    | Sales order > Price and discount > Currency
 **Company GLN**             | The company’s global location number is shown here. 	        | Sales order > EDI > Company GLN <br> If the **Company GLN** staging field is blank, the Company GLN on the Trading partner will be used to populate the **Company GLN** on the Sales order header.
 **Customer GLN**            | The Customer’s global location number is shown here.  | Sales order > EDI > Customer GLN <br> If the **Trading partner GLN** staging field is blank, the Trading partner GLN on the Trading partner will be used to populate the **Customer GLN** on the Sales order header.
-**Buyer code**              | The customer’s buyer code from the EDI record is shown here.	| Sales Order > EDI > Buyer code
-**Retail buyer location**   | The customer’s retail buyer location from the EDI record is shown here.	| Sales Order > EDI > Retail buyer location code
-**Purpose code**            | The customer’s purpose code from the EDI record is shown here.	        | Sales Order > EDI > Purpose code
-**Department**              | The customer’s department from the EDI PO is shown here.	                | Sales Order > EDI > Department
-**Package characteristic code** | The code used to for the package contents.	                        | Sales Order > EDI > Package characteristic code
-**Package label code**      | The code used for the label.	                                            | Sales Order > EDI > Package label code
-**Advertisement date**	    | The advertisement date applicable for the order	                        | Sales Order > EDI > Advertisement date
+**Buyer code**              | The customer’s buyer code from the EDI record is shown here.	| Sales order > EDI > Buyer code
+**Retail buyer location**   | The customer’s retail buyer location from the EDI record is shown here.	| Sales order > EDI > Retail buyer location code
+**Purpose code**            | The customer’s purpose code from the EDI record is shown here.	        | Sales order > EDI > Purpose code
+**Department**              | The customer’s department from the EDI PO is shown here.	                | Sales order > EDI > Department
+**Package characteristic code** | The code used to for the package contents.	                        | Sales order > EDI > Package characteristic code
+**Package label code**      | The code used for the label.	                                            | Sales order > EDI > Package label code
+**Advertisement date**	    | The advertisement date applicable for the order.	                        | Sales order > EDI > Advertisement date
+**Comments**                | Header comments for the order.                                            | Sales order > EDI > Comments
 **Template Id**             | The EDI templates used to create the staging table record	                
-**PO version number**       | The PO version number from the EDI record.	                                | Sales Order > EDI > Original version number
+**PO version number**       | The PO version number from the EDI record.	                                | Sales order > EDI > Original version number
 <ins>**Delivery**</ins>	    |   |
-**Delivery Name**           | Address for Delivery	                                                    | Sales Order > Delivery Address. If the store code wasn't used to populate sales order address.
-**Store zone**              | The store zone from the EDI record is shown here.	                        | Sales Order > EDI > Store zone
-**Store code**              | The store code from the EDI record is shown here.	                        | Sales Order > EDI > Store code
+**Delivery Name**           | Address for Delivery	                                                    | Sales order > Delivery Address. If the store code wasn't used to populate sales order address.
+**Store zone**              | The store zone from the EDI record is shown here.	                        | Sales order > EDI > Store zone
+**Store code**              | The store code from the EDI record is shown here.	                        | Sales order > EDI > Store code
 **Name or description** <br> **Street number** <br> **Street** <br> **City** <br> **Suburb** <br> **State** <br> **Postcode** <br> **Country/region** |Address for delivery	 | Sales Order > Delivery Address <br> Store code populate in staging record: <br> •	**Y** – Determines Delivery address <br> •	**N** – EDI delivery address
-**Requested ship date**     | The requested ship date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested ship date and <br> Sales order > Requested ship date: If staging blank will be populated by Transport days
-**Requested receipt date**  | The requested receipt date (delivery window) from the EDI record is shown here.	| Sales Order > EDI > Requested receipt date <br> Sales order > Requested receipt date
-**Delivery time**           | The delivery time from the EDI record is shown here.                      | Sales Order > EDI > Delivery time
+**Requested ship date**     | The requested ship date (delivery window) from the EDI record is shown here.	| Sales order > EDI > Requested ship date and <br> Sales order > Requested ship date: If staging blank will be populated by Transport days
+**Requested receipt date**  | The requested receipt date (delivery window) from the EDI record is shown here.	| Sales order > EDI > Requested receipt date <br> Sales order > Requested receipt date
+**Delivery time**           | The delivery time from the EDI record is shown here.                      | Sales order > EDI > Delivery time
 
 ### Line fields
 The following EDI Line fields are available on the lines page.
 
 **Field**                   | **Description**                                                           | **Target D365 field**
 :---                        |:---                                                                       |:---
-**Line number**             | The line within the EDI table/file	                                    | Sales Line > EDI > General > Line number
+**Line number**             | The line within the EDI table/file	                                    | Sales line > EDI > General > Line number
 **Item number**             | The item identifier as sent by the trading partner. 	| Sales line > EDI > General > EDI Item number <br> When document type setting **Item Id source** is: <br> • **Our item number** or <br> • **External item number** <br> used to determine: Sales line > Item number
 **Bar code**                | The item identifier as sent by the trading partner. 	| When document type setting **Item Id source** is: <br> • **GTIN** or <br> • **Barcode** <br> used to determine: Sales line > Item number
 **SKU**                     | SKU for item	
@@ -278,8 +279,9 @@ The following EDI Line fields are available on the lines page.
 **Configuration** <br> **Colour**  <br> **Size** <br> **Style** <br> **Version**  | Product dimension - Configuration <br> Product dimension - Colour <br> Product dimension - Size <br> Product dimension - Style  <br> Product dimension - Version | Sales line > Product dimension <br> If Item id Source <> Our item number and the External item number/ GTIN/Barcode is unique per variant, the customer doesn’t have to provide Variant details and EDI will find and populate the inventory dimensions on the sales line.
 **Site**                    | Storage dimension - Site	                                                | Sales line > Site <br> If staging blank will be populated by Sales order Header. If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
 **Warehouse**               | Storage dimension - Warehouse	                                            | Sales line > Warehouse <br> If staging blank will be populated by Sales order Header. If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
-**Store code**              | The store code from the EDI saging line is shown here.	                | Sales line > EDI > General > Store code <br> EDI supports different store codes on line level
+**Store code**              | The store code from the EDI saging line is shown here.	                | Sales line > EDI > Store code <br> EDI supports different store codes on line level
 **Delivery name**           | Address for Delivery – Delivery name	
 **Requested ship date**     | The requested ship date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested ship date <br> If staging blank will be populated by Sales order Header
 **Requested receipt date**  | The requested receipt date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested receipt date <br> If staging blank will be populated by Sales order Header
+**Comments**                | Line comments for the order line.                                            | Sales line > EDI > Comments
 
