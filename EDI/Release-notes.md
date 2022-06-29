@@ -132,7 +132,7 @@ Number	| Functionality	  | Reason
 9763	| XML document template mapping	| Ability to send and extract **Attributes** for XML document templates. **Refresh module** will update **Attribute** column on existing templates. 	
 9819	| Functional acknowledgement received | Company field has been added to **EDI > Inquiries and reports > Functional acknowledgement received**. Previously using Trading partner's company, which prevented Company filter to filter appropriately.
 10229	| Outbound files	| Additional fields on where file will be/have been sent to: <br> • File transfer type <br> • Original folder <br> Only applies to new records
-10442	| Connection type	| New Incoming path type **Error**. Where file already exists in D365 for trading partner and document type, the file will be moved from Import path to Error path. If the Error path isn't setup, the duplicate file will remain in Import path.
+10442	| Connection type	| New Incoming path type **Error**. Where file already exists in D365 EDI's Inbound files for the trading partner and document type, the file will be moved from Import path to Error path. If the Error path isn't setup, the duplicate file will remain in Import path.
 10446	| EDI parameters	| Removed **About** tab on EDI parameters	
 
 **Customer module**
