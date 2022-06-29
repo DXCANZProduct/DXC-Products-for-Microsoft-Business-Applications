@@ -50,16 +50,43 @@ ETA: 30 September 2022
 The planned features are grouped by module. Core is included for all modules.
 
 #### Core
+- **Electronic reporting** document type template
 
 #### Customer
+- **EDI history** on D365 source/target. 
+    - Sales agreement:
+        - Customer purchase order
 
 #### Vendor
+
+#### 3PL
+- **EDI history** on D365 source/target.
+    - Sales order:
+        - Picking list registration
+    - Purchase order:
+        - Shipment advice - Purchase order
+        - Shipment receipt - Purchase order
+    - Transfer order:
+        - Picking list
+        - Picking list registration
+        - Shipment advice - Transfer order
+        - Shipment receipt - Transfer order
+    - Return order:
+        - Shipment advice - Return order
+        - Shipment receipt - Return order
+    - Voyage:
+        - Shipment advice - Voyage
+        - Shipment receipt - Voyage
+
+#### Freight forwarder Landed cost
+- **EDI history** on D365 source/target.
+    - Voyage:
+        - Voyage creator
+        - Voyage tracking
 
 ## Future releases
 The following features are planned for a future release
 
-- **Electronic reporting** document type template
-- **EDI history** on D365 source/target. Currently only a few EDI documents included on Sales order and Purchase order
 
 ## Deprecate
 The following is planned to be deprecated
