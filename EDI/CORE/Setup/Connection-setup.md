@@ -126,19 +126,24 @@ To begin, create a new SFTP site record and fill out the connection parameters
 #### Site paths
 It is possible to configure a different SFTP site path per EDI document type.
 A common way to configure this is to setup a SFTP site for the UAT environment versus the PROD environment so the PROD database can easily be rolled over into the UAT environment by simply changing the active site. 
+
+<ins>**Incoming documents**</ins> <br>
 Incoming documents have 2 paths that are required to be defined:
-- Inbound
-- Archive
+- Inbound - The path the EDI document files will be retrieved from
+- Archive - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path
+Incoming documents also have 1 optional path:
+- Error - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path. If the Error path is not setup, the file will remain in Inbound path
 
 Select **Populate paths** on the Action pane, to create the incoming and outgoing paths for all the licensed documents.
 
 | **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
 | **EDI document type**                 | Specify the **Document type** the path relates to |
-| **Type**                				| The type of path: <br> **Inbound** - The path the EDI document files will be retrieved from <br> **Archive** - Once the file has been pulled from the inbound path it will be moved to this path |
+| **Type**                				| The type of path: <br> • **Inbound** - The path the EDI document files will be retrieved from <br> • **Archive** - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path <br> • **Error** - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path |
 | **Search mode**		                | Specify to use either the Trading partner’s **Search mask** as prefix or suffix to identify ‘who’ the file is from. <br> Options: <br> **File name must start with** – Filename must start with Trading partner’s Search mask <br> **File name must end with** – Filename must end with Trading partner’s Search mask |
 | **Path**			                    | Specify the SFTP path |
 
+<ins>**Outgoing documents**</ins> <br>
 Outgoing documents have a single path that is required to be defined
 
 | **Field**                         | **Description**                      | 
@@ -173,15 +178,19 @@ To begin, create a new Azure site record and fill out the connection parameters.
 #### Site paths
 It is possible to configure a different Azure site path per EDI document type. 
 A common way to configure this is to setup an Azure site for the UAT environment versus the PROD environment so the PROD database can easily be rolled over into the UAT environment by simply changing the active site. 
+
+<ins>**Incoming documents**</ins> <br>
 Incoming documents have 2 paths that are required to be defined:
-- Inbound
-- Archive
+- Inbound - The path the EDI document files will be retrieved from
+- Archive - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path
+Incoming documents also have 1 optional path:
+- Error - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path. If the Error path is not setup, the file will remain in Inbound path
 
 Select **Populate paths** on the Action pane to create the incoming and outgoing paths for all the licensed documents.
 | **Field**                         	| **Description**                      | 
 | :-------------------------------- 	|:-------------------------------------| 
 | **EDI document type**             	| Specify the **Document type** the path relates to |
-| **Type**                				| The type of path: <br> **Inbound** - The path the EDI document files will be retrieved from <br> **Archive** - Once the file has been pulled from the inbound path it will be moved to this path |
+| **Type**                				| The type of path: <br> • **Inbound** - The path the EDI document files will be retrieved from <br> • **Archive** - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path <br> • **Error** - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path |
 | **Search mode**		     		    | Specify to use either the Trading partner’s **Search mask** as prefix or suffix to identify ‘who’ the file is from. <br> Options: <br> **File name must start with** – Filename must start with Trading partner’s Search mask <br> **File name must end with** – Filename must end with Trading partner’s Search mask |
 | **Azure blob storage container name**	| Specify the blob storage container |
 
@@ -196,7 +205,7 @@ Outgoing documents have a single path that is required to be defined
 
 ### Setting up for web services
 This is a base framework that will allow developers to build custom connections to consume external APIs and integrate them with the module. Out of the box the module does not include any functional connections and only provides development examples as a guide. 
-For further information, please request the ‘Technical Guide - Web services for EDI 8.1.200’ document.
+For further information, please see [Technical guide - Web API](../Technical-guide/Web-API.md)
 
 Users can access the form by navigating to **EDI > Setup > Connection setup > Web API settings**
 
