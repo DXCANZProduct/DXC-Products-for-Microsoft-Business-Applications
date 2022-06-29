@@ -32,22 +32,13 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-DXC Finance Utilities 10.0.27 runs on the following Microsoft releases
+DXC Finance Utilities 10.0.25 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
+Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
 Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
-
-### Release 10.0.27.20220617
-
-#### Build 10.0.27.202206172
-
-Number	| Functionality	  | Reason
-:--	|:--		  |:--	
-10341	| DXC License manager <br> 10.8.32.10141	| New workspace **Organization administration > Workspaces > DXC support**. <br> Links for licensed products to: <br> • User guide <br> • Release notes <br> • Contact - email address for support
-10284	| Eclipse Payment advice V2	| Resolves the breaking change with Microsoft introduced new 10.0.27 features when ‘Enable batch processing for bank payment advice reports’ is enabled. 
-
-# Previous version(s)
 
 ### Release 10.0.25.20220617
 
@@ -66,6 +57,21 @@ Number	  	| Name	          | Description
 :--       	|:--              	  |:--
 10449		| Eclipse Payment advice V2 - Generate payments for BNZ file	| Fix **Print payment advice** via **Generate payments** for Eclipse Payment advice V2 report when using **BNZ Direct Credit Service (NZ)** export format on the method of payment.
 10292		| Customer Bank recon matching rule - Transaction type	| When reconciliation matching rule creates and posts the customer payment journal, the transaction type was **Customer**. Transaction type has been fixed and will now be posted as **Payment**.
+
+#### Build 10.0.27.202206172
+
+DXC Finance Utilities 10.0.27 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
+
+Number	| Functionality	  | Reason
+:--	|:--		  |:--	
+10341	| DXC License manager <br> 10.8.32.10141	| New workspace **Organization administration > Workspaces > DXC support**. <br> Links for licensed products to: <br> • User guide <br> • Release notes <br> • Contact - email address for support
+10284	| Eclipse Payment advice V2	| Resolves the breaking change with Microsoft introduced new 10.0.27 features when ‘Enable batch processing for bank payment advice reports’ is enabled. 
+
+# Previous version(s)
 
 ### Release 10.0.22.20220512
 
