@@ -62,10 +62,14 @@ Number	  	| Name	          | Description
 
 ### Release 10.0.27.20220630
 
-<ins>New features</ins>
+DXC Finance Utilities 10.0.27 runs on the following Microsoft releases
 
-**License manager** - Applies to all products
-	
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
+
+#### Build 10.0.27.202206301
+
 Number	| Functionality	  | Reason
 :--	|:--		  |:--	
 10341	| DXC License manager <br> 10.8.32.10141	| New workspace **Organization administration > Workspaces > DXC support**. <br> Links for licensed products to: <br> • User guide <br> • Release notes <br> • Contact - email address for support
