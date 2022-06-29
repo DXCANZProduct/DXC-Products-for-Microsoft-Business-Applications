@@ -38,42 +38,22 @@ This page describes the features planned for future releases and planned release
 
 Release			| ETA
 :--			|:--
-2022-06			| 30 June 2022
 2022-09			| 30 September 2022
 2023-01		 	| 31 January 2023
 2023-03			| 31 March 2023
+2023-06			| 30 June 2023
 
 
 ## Next release
-ETA: 30 June 2022
+ETA: 30 September 2022
 
 The planned features are grouped by module. Core is included for all modules.
 
 #### Core
-- Allow **empty date** value
-- **Copy** functionality on:
-	- Document type:
-		- Template setup
-		- Template mapping
-		- Setting profiles
-		- Validation
-	- Trading partner
-- **Outbound filename Editor** improvement 
-- XML document template mapping - **Attributes**
-- **Functional acknowledgement received** - Add company to record (for filter)
-- **Outbound files** - **File transfer type** and **path**, file has been exported to
 
 #### Customer
-- **Customer purchase order** and **Customer purchase order change** (add new item) - New document setting **Blank sales unit**. If customer doesn't send a sales unit in the file, the document setting can be used to use either of the following when processing to target:
-	-  Sales unit
-	-  Sales trade agreement unit
-	-  Inventory unit
-	-  Error
-- **Customer purchase order** - New field **Comments** on header and lines
 
 #### Vendor
-- **Vendor purchase order change** - Add **Line change type** to D365 Purchase order line (EDI tab)
-- **Purchase invoice** - Support partial invoice (doesn't match to 100% of product receipt). If Invoice quantity < Shipped quantity then set 'Product receipt quantity to match' = Invoice quantity
 
 ## Future releases
 The following features are planned for a future release
