@@ -140,7 +140,7 @@ Number	| Functionality	  | Reason
 Number	| Functionality	  | Reason
 :--	|:--		  |:--	
 4302	| Customer purchase order & Customer purchase order change	| New document setting **Blank unit** for documents **Customer purchase order** and **Customer purchase order change** (Add additional item). Where the staging record will create a new sales line and the **Unit** is not provided in the file, the document setting provides options to use one of the following for the blank units: <br> • Sales unit <br> • Sales trade agreement unit <br> • Inventory unit <br> • Error (errors the complete staging record)
-10436	| Customer purchase order	| New field **Comment** added to Header and line staging. Written to new EDI fields on D365 Sales order	header and lines.
+10436	| Customer purchase order	| New field **Comments** added to Header and line staging. Written to new EDI fields on D365 Sales order	header and lines.
 
 **Vendor module**
 	
