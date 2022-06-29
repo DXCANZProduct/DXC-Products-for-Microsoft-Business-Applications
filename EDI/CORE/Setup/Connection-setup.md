@@ -187,6 +187,7 @@ Incoming documents also have 1 optional path:
 - **Error** - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path. If the Error path is not setup, the file will remain in Inbound path
 
 Select **Populate paths** on the Action pane to create the incoming and outgoing paths for all the licensed documents.
+
 | **Field**                         	| **Description**                      | 
 | :-------------------------------- 	|:-------------------------------------| 
 | **EDI document type**             	| Specify the **Document type** the path relates to |
