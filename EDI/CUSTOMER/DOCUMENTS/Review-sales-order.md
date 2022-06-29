@@ -168,6 +168,7 @@ The following EDI fields have been added to the Sales order's Header and is avai
 **EDI order type**		| The EDI order type is shown here					| Original
 **Order purpose code**		| Latest purpose code: Original, Change, Cancellation or Confirmation	| Original
 <ins>**Delivery**</ins>	    |   |
+**Comments**                | The comments from the EDI order is shown here | Original
 **Store code**			| The store code from the EDI order is shown here. <br> Can be updated by order change.	| Original / Change
 **Requested receipt date**	| The requested receipt date (delivery window) from the EDI order is shown here. <br> Can be updated by order change.	| Original / Change
 **Requested ship date**		| The requested ship date (delivery window) from the EDI order is shown here. <br> Can be updated by order change.	| Original / Change
@@ -191,6 +192,7 @@ The following EDI fields have been added to the Sales order's Lines and is avail
 **Store code**			| Store code for the individual line                | Original / Change
 **EDI item number**		| Item number as provided on EDI inbound document   | Original / Change
 **Order line change type**  | If the order line was added or updated by a customer purchase order change, the [Order line change type](../SETUP/CUSTOMER-SETUP/Order-line-change-type-group.md#setup-order-line-change-type-group) will be displayed. Some examples: <br> • **Add additional item** - The line has been added by a change <br> • **Price change** - The sales line's unit price has been updated by a change <br> • **Delete items** - The sales line's deliver remainder has been cancelled by a change  | Change
+**Comments**                | The comments from the EDI order line is shown here | Original
 
 ### POA resonse tab
 The following EDI fields have been added to the Sales order's Lines and is available on the **POA resonse** tab. <br>
