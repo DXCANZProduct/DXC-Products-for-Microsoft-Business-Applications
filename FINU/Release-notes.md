@@ -5,7 +5,7 @@ title: [Finance Utilities]
 description: [Finance Utilities - Release notes]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 17/06/2022
+ms.date: 29/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,7 +27,7 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# 	Release notes
+# Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
 # Current version
@@ -57,6 +57,24 @@ Number	  	| Name	          | Description
 :--       	|:--              	  |:--
 10449		| Eclipse Payment advice V2 - Generate payments for BNZ file	| Fix **Print payment advice** via **Generate payments** for Eclipse Payment advice V2 report when using **BNZ Direct Credit Service (NZ)** export format on the method of payment.
 10292		| Customer Bank recon matching rule - Transaction type	| When reconciliation matching rule creates and posts the customer payment journal, the transaction type was **Customer**. Transaction type has been fixed and will now be posted as **Payment**.
+
+# Next version
+
+### Release 10.0.27.20220630
+
+<ins>New features</ins>
+
+**License manager** - Applies to all products
+	
+Number	| Functionality	  | Reason
+:--	|:--		  |:--	
+10341	| DXC License manager <br> 10.8.32.10141	| New workspace **Organization administration > Workspaces > DXC support**. <br> Links for licensed products to: <br> • User guide <br> • Release notes <br> • Contact - email address for support
+
+<ins>Bug fixes</ins>
+
+Number	| Functionality	  | Reason
+:--	|:--		  |:--	
+10284	| Eclipse Payment advice V2	| This fix resolves the breaking change with Microsoft introduced new 10.0.27 features when ‘Enable batch processing for bank payment advice reports’ is enabled. 
 
 # Previous version(s)
 
@@ -114,7 +132,7 @@ Number	  | Name	          | Description
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-9506	|	Payment history – Payment advice report		| Another fix for batch ‘Enable batch processing for bank payment advice reports’. When attempting to print the ECL Payment advice V2 report from Vendor’s Payment history, errors with: ‘An attempt was made to set a report parameter 'BankPaymAdviceVendDS_DynamicParameter' that is not defined in this report.’	
+9506	|	Payment history – Payment advice report		| Another fix for feature ‘Enable batch processing for bank payment advice reports’. When attempting to print the ECL Payment advice V2 report from Vendor’s Payment history, errors with: ‘An attempt was made to set a report parameter 'BankPaymAdviceVendDS_DynamicParameter' that is not defined in this report.’	
 
 ### Release 10.0.18.20210909
 
