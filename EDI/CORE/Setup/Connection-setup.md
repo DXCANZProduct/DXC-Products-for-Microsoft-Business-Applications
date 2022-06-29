@@ -69,10 +69,10 @@ A common way to configure this is to setup a FTP site for the UAT environment ve
 
 <ins>**Incoming documents**</ins> <br>
 Incoming documents have 2 paths that are required to be defined:
-- Inbound - The path the EDI document files will be retrieved from
-- Archive - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path
+- **Inbound** - The path the EDI document files will be retrieved from
+- **Archive** - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path
 Incoming documents also have 1 optional path:
-- Error - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path. If the Error path is not setup, the file will remain in Inbound path
+- **Error** - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path. If the Error path is not setup, the file will remain in Inbound path
 
 Select **Populate paths** on the Action pane, to create the incoming and outgoing paths for all the licensed documents.
 
@@ -129,10 +129,10 @@ A common way to configure this is to setup a SFTP site for the UAT environment v
 
 <ins>**Incoming documents**</ins> <br>
 Incoming documents have 2 paths that are required to be defined:
-- Inbound - The path the EDI document files will be retrieved from
-- Archive - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path
+- **Inbound** - The path the EDI document files will be retrieved from
+- **Archive** - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path
 Incoming documents also have 1 optional path:
-- Error - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path. If the Error path is not setup, the file will remain in Inbound path
+- **Error** - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path. If the Error path is not setup, the file will remain in Inbound path
 
 Select **Populate paths** on the Action pane, to create the incoming and outgoing paths for all the licensed documents.
 
@@ -181,10 +181,10 @@ A common way to configure this is to setup an Azure site for the UAT environment
 
 <ins>**Incoming documents**</ins> <br>
 Incoming documents have 2 paths that are required to be defined:
-- Inbound - The path the EDI document files will be retrieved from
-- Archive - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path
+- **Inbound** - The path the EDI document files will be retrieved from
+- **Archive** - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path
 Incoming documents also have 1 optional path:
-- Error - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path. If the Error path is not setup, the file will remain in Inbound path
+- **Error** - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path. If the Error path is not setup, the file will remain in Inbound path
 
 Select **Populate paths** on the Action pane to create the incoming and outgoing paths for all the licensed documents.
 | **Field**                         	| **Description**                      | 
