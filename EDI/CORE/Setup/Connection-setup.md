@@ -35,7 +35,7 @@ Various communication methods (FTP, FTPS, SFTP, Azure cloud blob storage and web
 - Export EDI documents generated within D365 to the VAN or Trading partner.
 
 Default EDI connection is determined by: <br>
-- Outgoing documents: Connection profile setup on [**EDI > Setup > EDI parameters**](EDI-parameters.md) <br> 
+- Outgoing documents: Connection profile setup on [EDI > Setup > EDI parameters](EDI-parameters.md) <br> 
 - Incoming documents: All active connection incoming paths as setup below. <br>
 
 The default EDI connection can be overridden on Trading partner or Trading partner document level for outgoing and incoming documents.
