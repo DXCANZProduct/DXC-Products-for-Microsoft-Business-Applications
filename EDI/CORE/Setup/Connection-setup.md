@@ -5,7 +5,7 @@ title: [EDI Connection setup]
 description: [Overview of the EDI connection methods]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 21/07/2021
+ms.date: 29/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -66,19 +66,24 @@ To begin, create a new FTP site record and fill out the connection parameters
 #### Site paths
 It is possible to configure a different FTP site path per EDI document type.
 A common way to configure this is to setup a FTP site for the UAT environment versus the PROD environment so the PROD database can easily be rolled over into the UAT environment by simply changing the active site.
+
+<ins>**Incoming documents**</ins>
 Incoming documents have 2 paths that are required to be defined:
-- Inbound
-- Archive
+- Inbound - The path the EDI document files will be retrieved from
+- Archive - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path
+Incoming documents also have 1 optional path:
+- Error - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path. If the Error path is not setup, the file will remain in Inbound path
 
 Select **Populate paths** on the Action pane, to create the incoming and outgoing paths for all the licensed documents.
 
 | **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
 | **EDI document type**                 | Specify the **Document type** the path relates to |
-| **Type**                				| The type of path: <br> **Inbound** - The path the EDI document files will be retrieved from <br> **Archive** - Once the file has been pulled from the inbound path it will be moved to this path |
+| **Type**                				| The type of path: <br> • **Inbound** - The path the EDI document files will be retrieved from <br> • **Archive** - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path  • **Error** - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path
 | **Search mode**		                | Specify to use either the Trading partner’s **Search mask** as prefix or suffix to identify ‘who’ the file is from. <br> Options: <br> **File name must start with** – Filename must start with Trading partner’s Search mask <br> **File name must end with** – Filename must end with Trading partner’s Search mask |
 | **Path**			                    | Specify the FTP path |
 
+<ins>**Outgoing documents**</ins>
 Outgoing documents have a single path that is required to be defined
 
 | **Field**                         | **Description**                      | 
