@@ -67,7 +67,7 @@ To begin, create a new FTP site record and fill out the connection parameters
 It is possible to configure a different FTP site path per EDI document type.
 A common way to configure this is to setup a FTP site for the UAT environment versus the PROD environment so the PROD database can easily be rolled over into the UAT environment by simply changing the active site.
 
-<ins>**Incoming documents**</ins>
+<ins>**Incoming documents**</ins> <br>
 Incoming documents have 2 paths that are required to be defined:
 - Inbound - The path the EDI document files will be retrieved from
 - Archive - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path
@@ -78,17 +78,17 @@ Select **Populate paths** on the Action pane, to create the incoming and outgoin
 
 | **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
-| **EDI document type**                 | Specify the **Document type** the path relates to |
-| **Type**                				| The type of path: <br> • **Inbound** - The path the EDI document files will be retrieved from <br> • **Archive** - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path  • **Error** - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path
+| **EDI document type**             | Specify the **Document type** the path relates to |
+| **Type**                				  | The type of path: <br> • **Inbound** - The path the EDI document files will be retrieved from <br> • **Archive** - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path <br> • **Error** - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path
 | **Search mode**		                | Specify to use either the Trading partner’s **Search mask** as prefix or suffix to identify ‘who’ the file is from. <br> Options: <br> **File name must start with** – Filename must start with Trading partner’s Search mask <br> **File name must end with** – Filename must end with Trading partner’s Search mask |
 | **Path**			                    | Specify the FTP path |
 
-<ins>**Outgoing documents**</ins>
+<ins>**Outgoing documents**</ins> <br>
 Outgoing documents have a single path that is required to be defined
 
 | **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
-| **EDI document type**                 | Specify the **Document type** the path relates to |
+| **EDI document type**             | Specify the **Document type** the path relates to |
 | **Path**			                    | Specify the FTP path where the outbound file will be saved |
 
 > Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br>The results will be shown on the far right of the grid.
