@@ -69,7 +69,7 @@ Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dyn
 Number	| Functionality	  | Reason
 :--	|:--		  |:--	
 10341	| DXC License manager <br> 10.8.32.10141	| New workspace **Organization administration > Workspaces > DXC support**. <br> Links for licensed products to: <br> • User guide <br> • Release notes <br> • Contact - email address for support
-10284	| Eclipse Payment advice V2	| Resolves the breaking change with Microsoft introduced new 10.0.27 features when ‘Enable batch processing for bank payment advice reports’ is enabled. 
+10284	| Eclipse Payment advice V2	| Resolves the **breaking change** with Microsoft introduced new 10.0.27 features when **Enable batch processing for bank payment advice reports** is enabled. 
 
 # Previous version(s)
 
