@@ -157,23 +157,36 @@ Number	| Functionality	  | Reason
 
 <ins>Bug fixes</ins>
 
+**Core module**	- Applies to all modules	
+
 Number	| Name		 | Description
 :--	|:--		 |:--
-**Core module**		| Applies to all modules	|
 9261	| Show log on outbound staging		| Showed Empty for previously processed outbound staging records
 8312	| Trading partner			| Connection profile wasn't saved if adding a connection to newly created trading partner or adding to newly created document on the trading partner
 10149	| Trading partner			| When a template for Vendors and/or Customers exist and user opens the EDI Trading partner's form, the options to 'Select a template for Vendors' and 'Select a template for Customers' pop ups.
 10485	| Text template type	| Fixed text type template with missing closing double quote in source file caused **Process to staging** batch to remain in Executing status
 10433	| Connection type - FTP	| Port fix
-**Customer module**	|	|	
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
 10305	| Entity **EDI Settings - PO**	| Fix error "Results. Field 'Relation type field' must be filled in. Results. validateWrite failed on data source 'AgreementClassification (AgreementClassification)'"
 10406	| Customer purchase order	| When store code is not provided in staging, the staging header's address fields are used to find the applicable address on the customer to set on the sales order header. When the address doesn't exist on the D365 customer, the address is added to the customer.
 10514	| EDI Sales order processing workspace	| Fix to filter when opening tile **Pending PO changes**
-**Vendor module**	|	|	
+
+**Vendor module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
 6642	| Can't delete Vendor outbound files			| Previously errored with: "File exports cannot be deleted while dependent EDI Vendor purchase order exist. Delete dependent EDI Vendor purchase order and try again." Will now allow deletion of outbound file.
 10374	| Purchase invoice	| Error 'Item % Update has been cancelled' when processing a Purchase invoice with blank 'Product receipt' and the purchase order includes a cancelled product receipt.
 10514	| EDI Purchase order processing workspace	| Fix to filter when opening tile **Pending POA** and **Pending POA  confirm**
-**3PL module**	|	|	
+
+**3PL module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
 9691	| Shipment receipt - Purchase order	| Same PackingSlipId on multiple lines
 10514	| EDI Inventory adjustment workspace	| Fix to filter when opening tile **Open count journals** and **Open movement journals**
 	
