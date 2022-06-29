@@ -5,7 +5,7 @@ title: [EDI]
 description: [EDI - Release notes]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 28/06/2022
+ms.date: 29/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -112,12 +112,18 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
  - Recreate Import batch
 
 <ins>New features</ins>
+
+**License manager** - Applies to all products
 	
 Number	| Functionality	  | Reason
 :--	|:--		  |:--	
-**License manager**	| Applies to all products	|
 10341	| DXC Support	| New workspace **Organization administration > Workspaces > DXC support**. <br> Links for licensed products to: <br> • User guide <br> • Release notes <br> • Contact - email address for support	
-**Core module**		| Applies to all modules	|
+
+
+**Core module**	- Applies to all modules
+	
+Number	| Functionality	  | Reason
+:--	|:--		  |:--			
 9767	| Import - batch group with multiple companies			| After moving Batch control to groups, the import batch can fail when another legal entity isn't setup for EDI. This change will ensure the remaining legal entities are still processed.
 9659 	| Document template - Custom format	| Ability to set a custom date format on inbound file	
 9608	| Document template - Dates		| Allow empty dates
@@ -128,13 +134,25 @@ Number	| Functionality	  | Reason
 10229	| Outbound files	| Additional fields on where file will be/have been sent: <br> • File transfer type <br> • Original folder. Only applies to new records.
 10442	| Connection type	| New Incoming path type **Error**. Where file already exists in D365 for trading partner and document type, the file will be moved from Import path to Error path. If the Error path isn't setup, the duplicate file will remain in Import path.
 10446	| EDI parameters	| Removed **About** tab on EDI parameters	
-**Customer module**	|	|
+
+**Customer module**
+	
+Number	| Functionality	  | Reason
+:--	|:--		  |:--	
 4302	| Customer purchase order & Customer purchase order change	| New document setting **Blank unit** for documents **Customer purchase order** and **Customer purchase order change** (Add additional item). Where the staging record will create a new sales line and the **Unit** is not provided in the file, the document setting provides options to use one of the following for the blank units: <br> • Sales unit <br> • Sales trade agreement unit <br> • Inventory unit <br> • Error (errors the complete staging record)
 10436	| Customer purchase order	| New field **Comment** added to Header and line staging. Written to new EDI fields on D365 Sales order	header and lines.
-**Vendor module**	|	|
+
+**Vendor module**
+	
+Number	| Functionality	  | Reason
+:--	|:--		  |:--	
 2129	| Purchase order line	| Add **Line change type** to Purchase order line EDI tab. 	
 10372	| Purchase invoice	| Product receipt quantity to match. A Purchase invoice could be partial, i.e. not match the complete qty of the product receipt processed on D365. Previously when PackingSlipID is blank (not provided in file), EDI fully matches to the product receipt(s) processed for the order, even if Invoice qty < Product received qty. Now EDI will check staging line field ShippedQuantity, if InvoiceQuantity is less than ShippedQuantity, then 'Product receipt quantity to match' will be set to InvoiceQuantity.
-**3PL module**	|	|
+
+**3PL module**	
+
+Number	| Functionality	  | Reason
+:--	|:--		  |:--	
 9830	| **Sent to EDI** on EDI processing workspaces	| <ins>EDI Inventory adjustment workspace</ins> <br> New tile and tab for following 3PL documents, where the document is enabled for the 3PL trading partner, but record's **Sent to EDI** is set to _No_: <br> • Open Picking list <br> • Open shipment advice - Purchase order <br>  • Open shipment advice - Return order <br> • Open shipment advice - Voyage <br> <br> Additional functionality on Processing for all the Open tabs: <br> •	Filtered to Sent to EDI is No <br> •	Filtered to Excluded set to No <br> •	Buttons: <br> o	**Send to EDI** - can create staging record from workspace and update **Sent to EDI** to _Yes_ <br> o	**Reset flag** – Enabled when **Sent to EDI** is _Yes_. Reset ‘Sent to EDI’ to No which enables ‘Send to EDI’ button <br> o	**Exclude / Include** (New functionality) – Ability to exclude the record from the “outstanding” list. Use filter Excluded to view records that has been excluded and can use button Include to include record again. Doesn’t create the staging record, but assist users in managing their “outstanding” list. <br> ![EDI Inventory adjustment](RELEASE-NOTES-IMAGES/20220630_1.png "EDI Inventory adjustment")	
 
 <ins>Bug fixes</ins>
