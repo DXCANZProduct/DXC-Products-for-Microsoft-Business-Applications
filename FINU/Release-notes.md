@@ -36,7 +36,7 @@ This document describes the features that are either new or changed in the relea
 
 #### Build 10.0.25.202206171
 
-Release date: 17/06/2022
+Release date: 17/06/2022 <br>
 DXC Finance Utilities 10.0.25 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
@@ -60,7 +60,7 @@ Number	  	| Name	          | Description
 
 #### Build 10.0.27.202206172
 
-Release date: 29/06/2022
+Release date: 29/06/2022 <br>
 DXC Finance Utilities 10.0.27 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
