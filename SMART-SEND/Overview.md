@@ -52,6 +52,7 @@ DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Ope
 *	Request for quotation
 *	Purchase order confirmation
 *	Vendor payment advice
+*	Vendor invoice
 
 #### Projects
 *	Project quotation
