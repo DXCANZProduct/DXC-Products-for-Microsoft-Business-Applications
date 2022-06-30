@@ -59,6 +59,7 @@ Each of the Smart Send supported documents have a fixed list of tags. These are 
 |  **Container Contents**  | ContainerID: %ContainerID% <br/> Shipment Id: %ShipmentId% <br/> Load Id: %LoadId% <br/> Account number: %AccountNum% <br/> Delivery name: %DeliveryName% <br/> Attribute code 1: %ContainerAttributeCode1% <br/> Attribute code 2: %ContainerAttributeCode2% <br/> Attribute code 3: %ContainerAttributeCode3% <br/> Attribute code 4: %ContainerAttributeCode4%  |
 |  **Commercial Invoice**  | Invoice account: %InvoiceAccount% <br/> Total value: %TotalValue% <br/> Account number: %AccountNum% <br/> Customer name: %CustName% <br/> Invoice address: %InvoiceAddress% <br/> Order number: %OrderNum% <br/> Shipment Id: %ShipmentId% <br/> Shipment date: %ShipmentDateTime% <br/> Delivery name: %DeliveryName% <br/> Delivery address: %DeliveryAddress% |
 |  **Packing List**  | Shipment Id: %ShipmentId% <br/> Number of containers: %NumberOfContainers% <br/> Account number: %AccountNum% <br/> Customer name: %CustName% <br/> Order number: %OrderNum% <br/> Shipment date: %ShipmentDateTime% <br/> Delivery name: %DeliveryName% <br/> Delivery address: %DeliveryAddress% |
+|  **Vendor Invoice**  | Invoice Id: %InvoiceId% <br/> Created Date: %CreatedDate% <br/> Invoice Due Date: %DueDate% <br/> Invoice Date: %InvoiceDate% <br/> Invoice Account Name: %InvoiceAccountName% <br/> Invoice Account: %InvoiceAccount% |
  	
 
 ## Dynamic Placeholder Tokens
@@ -88,6 +89,7 @@ Below are some common documents with their primary table.
 |  **Transfer Overview**  | InventTransferTable | 
 |  **Bill of Lading**  | WHSBillOfLading |
 |  **Container Contents**  | WHSContainerTable | 
+|  **Vendor invoice**  | VendInvoiceJournal | 
 
 To get the full list of possible dynamic placeholder tokens, click on the “Show token placeholders” button.
  
