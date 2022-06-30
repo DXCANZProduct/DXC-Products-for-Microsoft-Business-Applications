@@ -5,7 +5,7 @@ title: [FINU]
 description: [FINU - Roadmap]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 17/06/2022
+ms.date: 30/06/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
