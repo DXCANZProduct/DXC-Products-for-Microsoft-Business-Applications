@@ -381,23 +381,6 @@ Number	| Name		 | Description
 
 Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
-### Release 10.0.16.20210601
-
-#### Build 10.0.16.202106011
-	
-Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
-
-<ins>New features</ins>
-	
-Number	| Functionality	  | Reason
-:--	|:--		  |:--
-9170	| Purchase invoice	| New document setting Posting date for Inbound Purchase invoice. Options include Invoice date and Today’s date. Invoice date is the default for existing and new document setting profiles for this document.
-9172	| Inventory adjustment	| Replaceable extensibility changes on: <br>  •	SAB_EDIProcessor_InventAdj.processLines() <br> • SAB_EDIProcessor_InventAdjReconciliation.processLines()
-
-
-#### Build 10.0.16.202106012
-
-Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 	
 # Installation process
 To align with MS best practice and to protect our IP the following changes have been made to the release process.
