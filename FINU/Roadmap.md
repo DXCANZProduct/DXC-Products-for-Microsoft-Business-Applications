@@ -38,7 +38,7 @@ This page describes the features planned for future releases and planned release
 
 Release			    | ETA
 :--			        |:--
-July release		| 29 July 2022
+2022-07     		| 29 July 2022
 
 ## Next release
 ETA: 29 July 2022
