@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-Next release is planned for 30/09/2022.
+Next release is planned for 30 September 2022.
 
 ### Release 10.0.25.20220630
 
