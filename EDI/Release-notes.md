@@ -57,7 +57,7 @@ Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
 Number	| Functionality	  | Reason
 :--	|:--		  |:--	
-10341	| DXC Support	| New workspace **Organization administration > Workspaces > DXC support**. <br> Links for licensed products to: <br> • User guide <br> • Release notes <br> • Contact - email address for support	
+10341	| DXC Support	| DXC License manager 10.8.32.10141 <br> New workspace **Organization administration > Workspaces > DXC support**. <br> Links for licensed products to: <br> • User guide <br> • Release notes <br> • Contact - email address for support	
 
 
 **Core module**	- Applies to all modules
