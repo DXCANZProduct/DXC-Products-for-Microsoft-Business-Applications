@@ -5,7 +5,7 @@ title: [FINU]
 description: [FINU - Roadmap]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 30/06/2022
+ms.date: 14/07/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,15 +38,14 @@ This page describes the features planned for future releases and planned release
 
 Release			    | ETA
 :--			        |:--
-2022-07     		| 29 July 2022
 
 ## Next release
-ETA: 29 July 2022
+ETA: 
 
 The planned features are grouped by category.
 
 #### Cash and bank management
-- **Reconciliation matching rules** - Additional options on **Financial dimensions** for mark as new transactions.
+
 
 ## Future releases
 The following features are planned for a future release
