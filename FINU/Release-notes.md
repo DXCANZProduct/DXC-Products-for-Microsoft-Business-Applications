@@ -46,7 +46,7 @@ Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dyn
 
 Number	  	| Functionality	  | Reason
 :--       	|:--              |:--
-10367		| Reconciliation matching rule	| Ability to set **Account**'s **Financial dimensions** on **Reconciliation matching rules** with Action **Mark new transactions**. <br> ![Reconciliation matching rules](RELEASE-NOTES-IMAGES/ReleaseNotes_20220714_2.png "Reconciliation matching rules")<br> Posting logic: ![Posting logic](RELEASE-NOTES-IMAGES/ReleaseNotes_20220714_1.png "Posting logic")
+10367		| Reconciliation matching rule	| Ability to set **Account**'s **Financial dimensions** on **Reconciliation matching rules** with Action **Mark new transactions**. <br> ![Reconciliation matching rules](Images/ReleaseNotes_20220714_2.png "Reconciliation matching rules")<br> Posting logic: ![Posting logic](Images/ReleaseNotes_20220714_1.png "Posting logic")
 
 <ins>Bug fixes</ins>
 
