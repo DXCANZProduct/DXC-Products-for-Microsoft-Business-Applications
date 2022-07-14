@@ -66,7 +66,11 @@ Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
 
-Same as 10.0.25.202207142, and includes the fix for Payment advice V2 required from 10.0.27
+Same as 10.0.25.202207142, and includes the fix for Payment advice V2 required from 10.0.27:
+
+Number	| Functionality	  | Reason
+:--	|:--		  |:--	
+10284	| Eclipse Payment advice V2	| Resolves the **breaking change** with Microsoft introduced new 10.0.27 features when **Enable batch processing for bank payment advice reports** is enabled.
 
 # Previous version(s)
 
