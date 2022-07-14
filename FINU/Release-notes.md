@@ -46,7 +46,7 @@ Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dyn
 
 Number	  	| Functionality	  | Reason
 :--       	|:--              |:--
-10367		| Reconciliation matching rule	| Ability to set **Account**'s **Financial dimensions** on **Reconciliation matching rules** with Action **Mark new transactions**. <br> • Account = Bank <br> •  Offset account can be Ledger, Customer, Vendor or Bank. <br> ![Reconciliation matching rules](Images/ReleaseNotes_20220714_2.png "Reconciliation matching rules") <br> Updated posting logic: ![Posting logic](Images/ReleaseNotes_20220714_1.png "Posting logic")
+10367		| Reconciliation matching rule	| Ability to set **Account**'s **Financial dimensions** on **Reconciliation matching rules** with Action **Mark new transactions**. <br> ![Reconciliation matching rules](Images/ReleaseNotes_20220714_2.png "Reconciliation matching rules") <br> • Account is Bank <br> •  Offset account is Ledger, Customer, Vendor or Bank. <br> Updated posting logic: ![Posting logic](Images/ReleaseNotes_20220714_1.png "Posting logic")
 
 <ins>Bug fixes</ins>
 
