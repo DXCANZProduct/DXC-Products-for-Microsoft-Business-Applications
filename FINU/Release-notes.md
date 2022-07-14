@@ -5,7 +5,7 @@ title: [Finance Utilities]
 description: [Finance Utilities - Release notes]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 30/06/2022
+ms.date: 14/07/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,17 +32,46 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.25 & 10.0.27.20220617
+### Release 10.0.25 & 10.0.27.202207142
 
-#### Build 10.0.25.202206171
+#### Build 10.0.25.202207142
 
-Release date: 17/06/2022 <br>
+Release date: 14/07/2022 <br>
 DXC Finance Utilities 10.0.25 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
 Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
+
+Number	  	| Functionality	  | Reason
+:--       	|:--              |:--
+10367		| Reconciliation matching rule	| Ability to set **Account**'s **Financial dimensions** on **Reconciliation matching rules** with Action **Mark new transactions**. <br> ![Reconciliation matching rules](Images/ReleaseNotes_20220714_2.png "Reconciliation matching rules")<br> Posting logic: ![Posting logic](Images/ReleaseNotes_20220714_1.png "Posting logic")
+
+<ins>Bug fixes</ins>
+
+Number	  	| Name	          | Description
+:--       	|:--              	  |:--
+
+
+#### Build 10.0.27.202207142
+
+Release date: 14/07/2022 <br>
+DXC Finance Utilities 10.0.27 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
+
+Same as 10.0.25.202207142, and includes the fix for Payment advice V2 required from 10.0.27
+
+# Previous version(s)
+
+### Release 10.0.25 & 10.0.27.20220617
+
+#### Build 10.0.25.202206171
+
+Release date: 17/06/2022 <br>
 
 Number	  	| Functionality	  | Reason
 :--       	|:--              |:--
@@ -61,18 +90,11 @@ Number	  	| Name	          | Description
 #### Build 10.0.27.202206172
 
 Release date: 29/06/2022 <br>
-DXC Finance Utilities 10.0.27 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
 
 Number	| Functionality	  | Reason
 :--	|:--		  |:--	
 10341	| DXC License manager <br> 10.8.32.10141	| New workspace **Organization administration > Workspaces > DXC support**. <br> Links for licensed products to: <br> • User guide <br> • Release notes <br> • Contact - email address for support
-10284	| Eclipse Payment advice V2	| Resolves the **breaking change** with Microsoft introduced new 10.0.27 features when **Enable batch processing for bank payment advice reports** is enabled. 
-
-# Previous version(s)
+10284	| Eclipse Payment advice V2	| Resolves the **breaking change** with Microsoft introduced new 10.0.27 features when **Enable batch processing for bank payment advice reports** is enabled.
 
 ### Release 10.0.22.20220512
 
@@ -151,15 +173,6 @@ Number	  | Name	          | Description
 :--       |:--              |:--
 9440	  | BPAY Lodgement reference for Purchase invoice	| The BPAY Lodgement reference for Purchase invoices were not populated in the Payment proposal.
 8118	  | Vendor bank account changes - Feature managed	| When Finance Utilities is installed but doesn't have an active license/enabled, the extra fields shows up as blank on AP parameters.
-
-### Release 10.0.16.20210701
-
-#### Build 10.0.16.202107012
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-<br>	  | DXC license manager	 | Upgrade to version 10.8.32.10112
-9162	  | Bank reconciliation	 | Bank reconciliation > Worksheet: Bank transactions’ hidden column **Voucher** now populated.
 
 
 # Installation process
