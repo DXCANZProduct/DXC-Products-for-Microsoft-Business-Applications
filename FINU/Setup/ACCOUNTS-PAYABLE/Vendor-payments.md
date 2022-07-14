@@ -5,7 +5,7 @@ title: [Finance Utilities ]
 description: [Accounts payable setup - Vendor Payments ]
 author: [helenho]
 manager: Kym Parker
-ms.date: 02/03/2021
+ms.date: 14/07/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -78,7 +78,7 @@ This can be set per company bank account. To open the the **Bank accounts** page
 
 ## EFT file name generation
 
-> Note: Only applicable to custom Finance Utilities EFT formats **
+> Note: Applicable to custom Finance Utilities EFT formats and Electronic reporting formats
 
 This modification is to automatically populate EFT file name based on the number sequence pattern.
 File information fields will be automatically filled with the file name that has following pattern:
