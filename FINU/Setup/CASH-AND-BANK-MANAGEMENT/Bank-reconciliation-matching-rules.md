@@ -5,7 +5,7 @@ title: [Finance Utilities]
 description: [Cash and bank management setup - Bank reconciliation matching rules]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 12/05/2021
+ms.date: 14/07/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -78,15 +78,17 @@ In this example, when the above Reconciliation Matching rule is run, D365 Bank T
 #### Mark as New - Additional defaults
 
 If the **Financial utilities parameter**'s **Extended financial details for new transaction** parameter is set to _Yes_, the option to capture the following details automatically for **Mark as new** bank statement lines can be selected.
--	Financial dimensions 
+-	Offset account type (Ledger, Customer, Vendor or Bank) and details
+-	Financial dimensions - For Account (Bank) and/or Offset account 
 -	GST
--	Sub-Ledger offset account
+
 
 More detail for ** fields are discussed [here](#customer-payment-and-settle-of-invoice-11).
 
 |    Field / Button   |    Description   |
 |-|-|
-| **Financial Dimensions > Offset account**  |  Financial dimensions that have to be used to post the _new_ transactions. <br> If the dimensions are filled in, it will override the financial dimensions set by default on the selected main account. <br> Else, financial dimensions set by default on the selected main account will apply with the new transaction. |
+| **Financial Dimensions > Offset account**  |  Financial dimensions that have to be used to post the _new_ transactions. <br> If the dimensions are filled in, it will override the financial dimensions set by default on the selected Offset account (Ledger, Customer, Vendor or Bank). <br> Else, financial dimensions set by default on the selected main account will apply with the new transaction. |
+| **Financial Dimensions > Account**  |  Financial dimensions that have to be used to post the _new_ transactions. <br> If the dimensions are filled in, it will override the financial dimensions set by default on the selected Account (Bank). <br> Else, financial dimensions set by default on the selected main account will apply with the new transaction. <br> ![Posting logic](../../Images/ReleaseNotes_20220714_1.png "Posting logic")|
 | **Offset Company Account**  | Defaults to the current legal entity. <br> Populates the new field Offset Company Account in the Bank Statement Line Details form when a **Mark as new** line is created.           |
 | **Offset Account type**   | Populates the new field Offset Account Type in the Bank Statement Line Details form when a **Mark as new** line is created. <br> Note: This field defaults to Ledger; Extended financial details only support offset account type _Ledger_, _Customer_ and _Vendor_.          |
 | **Offset Account**   |  Populates the new field Offset Account in the Bank Statement Line Details form when a **Mark as new** line is created.   |
