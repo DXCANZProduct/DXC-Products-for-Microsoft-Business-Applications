@@ -38,13 +38,12 @@ This page describes the features planned for future releases and planned release
 
 Release			    | ETA
 :--			        |:--
+2022-09         | 30 September 2022
 
 ## Next release
-ETA: 
+ETA: 30 September 2022
 
 The planned features are grouped by category.
-
-#### Cash and bank management
 
 
 ## Future releases
