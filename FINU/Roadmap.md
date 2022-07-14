@@ -48,9 +48,6 @@ The planned features are grouped by category.
 ### Cash and bank management
 - **Copy** functionality on Reconciliation matching rules
 
-## Future releases
-The following features are planned for a future release
-
 
 ## Deprecate
 The following is planned to be deprecated
