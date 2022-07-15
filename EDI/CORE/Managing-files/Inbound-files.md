@@ -5,7 +5,7 @@ title: [EDI Core]
 description: [Managing files in the EDI module]
 author: [jdutoit2]
 manager: Kym Parker
-ms.date: 29/06/2022
+ms.date: 15/07/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,12 +45,15 @@ Filename uniqueness is validated by *Document type* and *Trading partner*. It th
   - **Error** – An error was identified during file processing.  The file has not been processed
   - **Processing** – File is currently processing
   - **Archived** – The file has been archived
+  - **Canceled** - The file has been cancelled by using the **Cancel** button
 - Once a file is processed, it is possible to view the staging document by selecting **Staging document** from the ribbon.
 - To view errors, select the **Log** button from the ribbon.
 - Select **Reset Status** to update the status back to pending and reprocess the file.
 - See Retry/Reset process for more details on **Edit reset status recurrence**
 - Select **Reset template** to update the document template used for processing from import to staging.
+- Select **Duplicate** to create a duplicate inbound file record. This will create a new EDI Id when processing to staging. This is useful for testing.
 - Select **Download attachment** to download the selected file/s attachment. When multiple files are selected a zip is created.
+- Select **Cancel** to change to inbound file's **Status** to _Cancelled_. This button is enabled when the inbound file's status is _Pending_ or _Error_.
 - The following fields are available for review on the Overview:
   - **EDI Document** – The inbound document type
   - **File Name** – Name of the file imported
