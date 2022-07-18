@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Import bank statements via financial utilities connection]
+ms.search.form:  BankStatementTable
 audience: [Application User]
 # ms.devlang: 
 ms.reviewer: [jdutoit2]
