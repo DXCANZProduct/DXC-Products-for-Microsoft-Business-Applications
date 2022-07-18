@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Finance Utilities ]
+ms.search.form:  VendPaymMode
 audience: [Application User]
 # ms.devlang: 
 ms.reviewer: [helenho]
