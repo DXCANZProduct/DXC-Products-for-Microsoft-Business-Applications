@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  BankReconciliationMatchRule
+ms.search.form:  BankReconciliationMatchRule
 audience: [Application User]
 # ms.devlang: 
 ms.reviewer: [jdutoit2]
