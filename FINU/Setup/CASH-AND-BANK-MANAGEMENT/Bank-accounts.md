@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [BankAccountTableListPage]
+# ms.search.form:  BankAccountTableListPage
 audience: [Application User]
 # ms.devlang: 
 ms.reviewer: [jdutoit2]
