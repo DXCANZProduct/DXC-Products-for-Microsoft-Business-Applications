@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Finance Utilities
-description: Cash and bank management setup - Finance utilities parameters
+title: DXC Finance Utilities
+description: Cash and bank management setup - Financial utilities parameters
 author: jdutoit2
 manager: Kym Parker
 ms.date: 17/06/2022
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 The fields as described in the following subsections are available to control the additional functionality for advanced bank reconciliation.
 
 ## Setup
-### Finance utilities parameters
+### Financial utilities parameters
 
 The **Financial utilities parameter** page within **Cash and bank management** is used to define settings that apply to Advanced bank statement functionality. These settings offer extended options on reconciliation matching rules, additional functionality on the bank reconciliation worksheet and other behavior. The settings also includes number sequence.
 To open the **Financial utilities parameters** page, go to **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters**. <br>
