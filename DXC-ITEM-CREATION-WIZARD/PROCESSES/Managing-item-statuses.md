@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: EcoResProductDetailsExtendedGrid 
+title: DXC Item Creation Wizard - Managing item statuses
 description: DXC Item Creation Wizard - Managing item statuses  
 author: Liam Coll
 manager: Kym Parker
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  DXC Item Creation Wizard 
+# ms.search.form:  EcoResProductDetailsExtendedGrid
 audience: Application User
 # ms.devlang: 
 ms.reviewer: liamcoll
