@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  DXCICCreationTableListPageOpen,DXCICCreationTableListPageOpen
+ms.search.form:  DXCICCreationTableListPageOpen, DXCICCreationTableListPageOpen
 audience: Application User
 # ms.devlang: 
 ms.reviewer: Liam Coll
