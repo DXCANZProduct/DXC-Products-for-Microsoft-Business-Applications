@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: DXCICWorkflowConfiguration 
+ms.search.form: DXCICWorkflowConfiguration 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: helenho
