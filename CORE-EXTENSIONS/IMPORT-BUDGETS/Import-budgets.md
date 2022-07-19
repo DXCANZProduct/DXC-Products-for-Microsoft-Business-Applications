@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  Core Extensions
+# ms.search.form: OMLegalEntities
 audience: Application User
 # ms.devlang: 
 ms.reviewer: Liam Coll
