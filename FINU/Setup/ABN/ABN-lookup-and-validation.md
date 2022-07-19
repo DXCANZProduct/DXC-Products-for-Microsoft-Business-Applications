@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title:[Finance Utilities 
+title: Finance Utilities 
 description: Setup - ABN lookup and validation 
 author: jdutoit2
 manager: Kym Parker
