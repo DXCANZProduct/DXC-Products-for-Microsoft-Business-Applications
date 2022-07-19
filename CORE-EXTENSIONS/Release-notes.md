@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  Release notes
+# ms.search.form: Release notes
 audience: Application User
 # ms.devlang: 
 ms.reviewer: lcoll
