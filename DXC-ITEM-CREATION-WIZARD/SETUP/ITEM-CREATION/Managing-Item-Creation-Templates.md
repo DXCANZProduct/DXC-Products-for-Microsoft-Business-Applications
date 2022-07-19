@@ -2,8 +2,8 @@
 # required metadata
 
 title: DXC Item Creation Wizard
-description: DXC Item Creation Wizard  - Template versions
-author: Liam Coll
+description: DXC Item Creation Wizard  - Template versions  
+author: helenho
 manager: Kym Parker
 ms.date: 2021-07-27
 ms.topic: article
@@ -12,17 +12,16 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-# ms.search.form: Release notes
+ms.search.form:  DXCICCreationTemplateTableListPage
 audience: Application User
 # ms.devlang: 
-ms.reviewer: lcoll
+ms.reviewer: helenho
 # ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
+# ms.custom: ["21901", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: lcoll
-ms.search.validFrom:2016-05-31
+ms.author: helenho
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
