@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  EcoResProductDetailsExtendedGrid
+ms.search.form:  EcoResProductDetailsExtendedGrid
 audience: Application User
 # ms.devlang: 
 ms.reviewer: liamcoll
