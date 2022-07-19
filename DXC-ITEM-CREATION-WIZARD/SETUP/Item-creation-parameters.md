@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  DXCICParameters 
+ms.search.form:  DXCICParameters 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: helenho
