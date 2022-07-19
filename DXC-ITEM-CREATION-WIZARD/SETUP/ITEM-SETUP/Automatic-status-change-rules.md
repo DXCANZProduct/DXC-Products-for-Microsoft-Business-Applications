@@ -13,8 +13,8 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [DXC Item Creation Wizard ]
-audience: [Application User]
+# ms.search.form:  DXCICStatusAutoRuleTable
+audience: Application User
 # ms.devlang: 
 ms.reviewer: liamcoll
 # ms.tgt_pltfrm: 
