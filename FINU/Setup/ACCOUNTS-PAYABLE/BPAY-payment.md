@@ -13,11 +13,10 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  VendPaymMode
+ms.search.form: VendPaymMode
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
-
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: Global
