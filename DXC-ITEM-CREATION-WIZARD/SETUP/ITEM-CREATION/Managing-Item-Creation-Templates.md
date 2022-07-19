@@ -13,16 +13,15 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  DXCICCreationTemplateTableListPage 
+# ms.search.form: Release notes
 audience: Application User
 # ms.devlang: 
-ms.reviewer: helenho
-
+ms.reviewer: lcoll
 # ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]]
+ms.custom: ["21901", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: lcoll
 ms.search.validFrom:2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
