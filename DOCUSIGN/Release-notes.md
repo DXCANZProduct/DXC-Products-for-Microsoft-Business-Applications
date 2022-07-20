@@ -25,6 +25,7 @@ ms.search.region: Global
 ms.author: lcoll
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+------
 
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
