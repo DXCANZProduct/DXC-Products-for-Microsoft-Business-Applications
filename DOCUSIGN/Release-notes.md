@@ -1,17 +1,20 @@
 ---
 # required metadata
-title: DXC Solutions for DocuSign and Dynamics 365
-description: DXC Solutions for DocuSign and Dynamics 365 - Release notes
-author: lcoll
-manager: Kym Parker
-ms.date: 2022-05-16
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
+
 
 # optional metadata
+ms.search.form:  SAB_DSDocument
+audience: Application User
+# ms.devlang: 
+ms.reviewer: ndavidson2
 
+# ms.tgt_pltfrm: 
+# ms.custom: ["21901", "intro-internal"]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: ndavidson2
+ms.search.validFrom: 2016-05-31
+ms.dyn365.ops.version: AX 7.0.1
 
 ------
 
