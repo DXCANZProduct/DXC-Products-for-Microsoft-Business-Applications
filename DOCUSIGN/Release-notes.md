@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: DXC Solutions for DocuSign and Dynamics 365
+title: DXC Solutions 
 description: DXC Solutions for DocuSign and Dynamics 365 - Release notes
 author: lcoll
 manager: Kym Parker
@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: lcoll
-
 ms.search.form:  
 audience: Application User
 # ms.devlang:
@@ -29,7 +28,6 @@ ms.search.region: Global
 ms.author: lcoll
 ms.search.validFrom:  2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
 ------
 
 # 	Release notes
