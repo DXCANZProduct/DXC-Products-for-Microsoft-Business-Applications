@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  DXCICStatusAutoRuleTable
+ms.search.form:  DXCICStatusAutoRuleTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: liamcoll
