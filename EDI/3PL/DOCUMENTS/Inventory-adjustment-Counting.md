@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDI3PLWHSInventStatusMapping
+ms.search.form:  SAB_EDI3PLWHSInventStatusMapping, SAB_EDI3PLInventJournalNameMapping
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
