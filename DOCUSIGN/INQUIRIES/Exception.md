@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_DSDocument
+ms.search.form: SAB_DSExceptions
 audience: Application User
 # ms.devlang: 
 ms.reviewer: lcoll
