@@ -7,9 +7,9 @@ author: lcoll
 manager: Kym Parker
 ms.date: 2022-05-16
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:  
 
 # optional metadata
 
