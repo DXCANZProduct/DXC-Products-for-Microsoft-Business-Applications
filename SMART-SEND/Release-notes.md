@@ -19,7 +19,7 @@ audience: Application User
 ms.reviewer: lcoll
 
 # ms.tgt_pltfrm: 
-ms.custom: : "21901", "intro-internal"
+ms.custom: : ["21901", "intro-internal"]
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: lcoll
