@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:BudgetModel
+ms.search.form: BudgetModel, BudgetTransactionCode
 audience: Application User
 # ms.devlang: 
 ms.reviewer: Liam Coll
