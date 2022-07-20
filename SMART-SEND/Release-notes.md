@@ -19,8 +19,8 @@ audience: Application User
 ms.reviewer: lcoll
 
 # ms.tgt_pltfrm: 
-ms.custom: : ["21901", "intro-internal"]
-ms.search.region: [Global for most topics. Set Country/Region name for localizations]
+ms.custom: : "21901", "intro-internal"
+ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: lcoll
 ms.search.validFrom: 2016-05-31
