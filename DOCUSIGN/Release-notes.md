@@ -1,8 +1,18 @@
 ---
 # required metadata
 
+title: Docusign
+description: Introduction to Docusign
+author: ndavidson
+manager: Kym Parker
+ms.date: 2020-01-12
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
 # optional metadata
+
 ms.search.form:  SAB_DSDocument
 audience: Application User
 # ms.devlang: 
@@ -15,8 +25,7 @@ ms.search.region: Global
 ms.author: ndavidson2
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
-------
+---
 
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
