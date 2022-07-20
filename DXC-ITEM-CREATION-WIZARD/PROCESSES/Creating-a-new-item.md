@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  DXCICCreationTableListPage
+ms.search.form:  DXCICCreationTableListPage, DXCICCreationTableListPageOpen
 audience: Application User
 # ms.devlang: 
 ms.reviewer: helenho
