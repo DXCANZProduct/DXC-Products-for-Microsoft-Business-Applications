@@ -2,10 +2,10 @@
 # required metadata
 
 title: DXC Solutions for DocuSign and Dynamics 365
-description: Introduction to Docusign
-author: ndavidson
+description: DXC Solutions for DocuSign and Dynamics 365 - Release notes
+author: lcoll
 manager: Kym Parker
-ms.date: 2020-01-12
+ms.date: 2022-05-16
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
