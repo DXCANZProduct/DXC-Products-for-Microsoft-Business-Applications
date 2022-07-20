@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Docusign
+title: DXC Solutions for DocuSign and Dynamics 365
 description: Introduction to Docusign
 author: ndavidson
 manager: Kym Parker
