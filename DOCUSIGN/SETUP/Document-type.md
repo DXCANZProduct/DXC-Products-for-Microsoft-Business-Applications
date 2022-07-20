@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form:  SAB_DSDocumentTypes
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ndavidson2
