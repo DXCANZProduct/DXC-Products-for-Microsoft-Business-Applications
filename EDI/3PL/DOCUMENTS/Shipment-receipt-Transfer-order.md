@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form:  SAB_EDIStagingFormRun_StockTransferReceipt_TO, SAB_EDIDocumentTypeTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
