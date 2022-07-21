@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form: SalesTableListPage, SAB_EDIParameters 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
