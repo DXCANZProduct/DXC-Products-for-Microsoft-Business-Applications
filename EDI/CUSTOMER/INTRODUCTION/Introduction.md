@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form:  MCRHoldCodeTable, SAB_EDITradingPartner, SAB_EDIDocumentTypeTable, EcoResProductDetailsExtendedGrid
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
