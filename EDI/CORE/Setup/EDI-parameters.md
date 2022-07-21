@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIParameters
+ms.search.form:  SAB_EDIParameters, DocuParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
