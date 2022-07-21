@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form:  SAB_EDITradingPartner, SAB_EDIFileImport,SAB_EDIFFShipPortTableMapping, SAB_EDIFFVendDlvModeMapping, SAB_EDIFFCustomsBrokerMapping, SAB_EDIFFShipContainerTypeMapping, SAB_EDIFFShipMeasurementUnitMapping 
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
