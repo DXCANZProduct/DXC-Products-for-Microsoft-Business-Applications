@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form:  SAB_EDIParameters, SAB_EDIFTPSite, SAB_EDISFTPSite, SAB_EDIAzureSite, SAB_EDIExternalWebServiceSetting
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
