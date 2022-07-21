@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Data entities
 author: jdutoit2
 manager: Kym Parker
-ms.date:2022-01-11
+ms.date: 2022-01-11
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
