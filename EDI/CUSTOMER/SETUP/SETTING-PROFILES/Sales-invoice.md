@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
-SAB_EDIDocumentTypeTable, SAB_EDITradingPartner 
+ms.search.form: SAB_EDIDocumentTypeTable, SAB_EDITradingPartner 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
