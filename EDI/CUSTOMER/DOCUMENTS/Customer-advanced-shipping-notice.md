@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer advanced shipping notice
 author: jdutoit2
 manager: Kym Parker
-ms.date:2021-11-05
+ms.date: 2021-11-05
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
