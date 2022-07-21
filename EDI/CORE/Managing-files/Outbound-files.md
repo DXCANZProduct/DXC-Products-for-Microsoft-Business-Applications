@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIFileExport
+ms.search.form:  SAB_EDIFileExport, SAB_EDIExportBatchJobs
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
