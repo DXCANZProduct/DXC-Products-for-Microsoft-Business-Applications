@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIFFLCCustomsBrokerMapping
+ms.search.form:  SAB_EDIFFLCCustomsBrokerMapping, VendTableListPage
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
