@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIFTPSite, SAB_EDIUOMMapping
+ms.search.form:  SAB_EDIFTPSite, SAB_EDIUOMMapping, SAB_EDICleanupProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
