@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor Setting profiles - Vendor advanced shipping notice
 author: jdutoit2
 manager: Kym Parker
-ms.date:2021-11-09
+ms.date: 2021-11-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
