@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIParameters, DocuParameters
+ms.search.form:  SAB_EDIParameters, DocuParameters, MCRHoldCodeTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
