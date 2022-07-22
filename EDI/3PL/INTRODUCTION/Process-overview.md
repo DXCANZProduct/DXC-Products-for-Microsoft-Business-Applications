@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: PurchTableListPage, InventTransferOrder, ReturnTableListPage
+ms.search.form: PurchTableListPage, InventTransferOrder, ReturnTableListPage, SAB_EDIDocumentWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
