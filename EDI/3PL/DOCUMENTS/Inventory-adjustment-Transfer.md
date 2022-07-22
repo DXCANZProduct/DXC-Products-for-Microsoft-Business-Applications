@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDI3PLWHSInventStatusMapping, SAB_EDIStagingFormRun_InventAdjAdvice, SAB_EDIDocumentTypeTable
+ms.search.form:  SAB_EDI3PLWHSInventStatusMapping, SAB_EDIStagingFormRun_InventAdjAdvice, SAB_EDIDocumentTypeTable, SAB_EDIFileImport
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
