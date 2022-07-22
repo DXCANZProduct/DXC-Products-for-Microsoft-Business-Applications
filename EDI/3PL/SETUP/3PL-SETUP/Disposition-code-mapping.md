@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDI3PLDispositionCodeMapping
+ms.search.form:  SAB_EDI3PLDispositionCodeMapping, ReturnDispositionCode
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
