@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIFFLCShipPortTableMapping
+ms.search.form:  SAB_EDIFFLCShipPortTableMapping, ITMPortTable
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
