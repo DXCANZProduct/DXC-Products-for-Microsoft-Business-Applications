@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Review purchase order
 
-The Vendor EDI module includes modifications to Purchase orders. Users can access **All purchase orders** page by navigating to **Accounts payable > Purchase orders > All sales orders**.
+The Vendor EDI module includes modifications to Purchase orders. Users can access **All purchase orders** page by navigating to **Accounts payable > Purchase orders > All purchase orders**.
 
 ## Purchase order status
 
