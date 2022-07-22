@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form: SAB_EDITradingPartner, SAB_EDIVendOrderTypeMapping, SAB_EDIVendOrderPurposeMapping, SAB_EDIVendOrderLineChangeMapping, SAB_EDIVendCarrierModeMapping, SAB_EDIVendChargesCodeMapping, SAB_EDIVendPOACodesMapping, SAB_EDIVendPaymentTermsMapping, SAB_EDIVendMiscChargeIndicatorMapping, SAB_EDIVendMiscMethodHandlingMapping 
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
