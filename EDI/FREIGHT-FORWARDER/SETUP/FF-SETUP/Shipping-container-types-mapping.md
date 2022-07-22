@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIFFLCShipContainerTypeMapping
+ms.search.form:  SAB_EDIFFLCShipContainerTypeMapping, ITMContainerTypeTable
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
