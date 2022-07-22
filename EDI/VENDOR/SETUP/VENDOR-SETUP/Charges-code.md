@@ -12,7 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-ms.search.form:  
+ms.search.form: SAB_EDIVendChargesCodeMapping, MarkupTable_Vend 
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
