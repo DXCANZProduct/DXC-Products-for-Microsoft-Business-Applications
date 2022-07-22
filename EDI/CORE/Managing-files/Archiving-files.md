@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form: DocuType  
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
