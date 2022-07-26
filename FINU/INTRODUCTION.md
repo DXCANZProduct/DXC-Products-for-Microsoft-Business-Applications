@@ -46,8 +46,6 @@ The DXC Finance Utilities module provides enhanced functionalities to Microsoft 
 -   Formatted Vendor Payment Advice
 -   ABN lookup and validation
 
-## New ideas
-Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
 
 #  Scenarios
 ## Cash and bank management
@@ -137,7 +135,7 @@ The modification gives the user the ability to set the budget import file's form
 - [Budget import processing](Processing/Budgeting/Budget-import.md)
 - [Example file format](Processing/Budgeting/Example-file-format.md)
 
-## Other
+# Other
 
 ### Data entities
 Finance utilities include data entities to support its enhancements to D365.
@@ -145,16 +143,17 @@ The data entities include Finance utilities tables and also enhances existing st
 
 - [Data entities](Other/Data-entities.md)
 
-### Security configuration
+## Security configuration
 
 The following roles are included in the Finance utilities module: 
 - Finance utilities manager
 - Finance utilities clerk
 
-### FAQ
+## FAQ
 
 See our FAQ for general information and troubleshooting.
 
 - [FAQ](FAQ.md)
 
-
+## New ideas
+Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
