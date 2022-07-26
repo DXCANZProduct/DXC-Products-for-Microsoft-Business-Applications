@@ -64,3 +64,6 @@ Print management configuration forms now allow for DocuSign as a destination
 The following forms are available under **Organization administration > Inquiries and reports > Docusign**:
 - [Documents](INQUIRIES/Documents.md) - Review the status of selected documents communicated to DocuSign.
 - [Exceptions](INQUIRIES/Exception.md) - Review the reason for a failed communication with either DocuSign or the signatory.
+
+## New ideas
+- Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
