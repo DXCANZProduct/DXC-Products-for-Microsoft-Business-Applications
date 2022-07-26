@@ -99,4 +99,4 @@ The following setup is required to configure Smart Send:
 ## [Email processing](PROCESSES/Email-processing.md)
 
 ## New ideas
-- Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
+Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
