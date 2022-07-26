@@ -70,3 +70,6 @@ Forex contract include data entities to support its enhancements to D365.
 The following roles are included in the Forex contract module: 
 -	**Forex manager** – manages forex contract setup
 - **Forex contracts clerk** – creates and maintains forex contracts
+
+## New ideas
+- Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
