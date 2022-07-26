@@ -51,3 +51,6 @@ The business process links feature allows you to setup associated links to forms
 
 ### [Import Budgets](IMPORT-BUDGETS/Import-budgets.md)
 The Import Budgets extension allows importing budget from Microsoft Excel templates where period budgets are presented in a traditional columnar format including dynamically adding financial dimensions and financial period across columns.
+
+## New ideas
+- Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
