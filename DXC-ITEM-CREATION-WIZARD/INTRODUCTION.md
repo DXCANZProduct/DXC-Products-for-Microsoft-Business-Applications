@@ -70,3 +70,5 @@ DXC Item Creation Wizard for Microsoft Dynamics 365 removes the risk of human er
 * [Installer](SETUP/FILE-MANAGEMENT/File-uploader-for-file-management.zip)
 * [Data package](SETUP/FILE-MANAGEMENT/File-management-data-package.zip)
 
+## New ideas
+- Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
