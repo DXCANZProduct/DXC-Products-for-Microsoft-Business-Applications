@@ -32,6 +32,8 @@ This page describes the features planned for future releases and planned release
 
 > Note: Dates and features are subject to change.
 
+## Suggest a New idea
+- Suggest a [New idea](https://forms.office.com/r/U9twpSt3in)
 
 ## Release schedule
 
