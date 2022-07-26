@@ -72,4 +72,4 @@ The following roles are included in the Forex contract module:
 - **Forex contracts clerk** – creates and maintains forex contracts
 
 ## New ideas
-- Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
+Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
