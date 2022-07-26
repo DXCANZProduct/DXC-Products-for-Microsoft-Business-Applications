@@ -66,4 +66,4 @@ The following forms are available under **Organization administration > Inquirie
 - [Exceptions](INQUIRIES/Exception.md) - Review the reason for a failed communication with either DocuSign or the signatory.
 
 ## New ideas
-- Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
+Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
