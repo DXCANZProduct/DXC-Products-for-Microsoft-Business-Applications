@@ -26,12 +26,12 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# Introduction to EDI
+# Electronic Data Interchange (EDI)
 
 ## Release notes
 The [release notes](Release-notes.md) describes the features that are either new or changed. 
 
-## Overview
+## Introduction
 
 **Expand your business efficiency with DXC Electronic Data Interchange for Microsoft Dynamics 365**
 
