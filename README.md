@@ -17,4 +17,4 @@ Please select the applicable product from below:
 - Existing customers' support: <eclipse.supportapac@dxc.com>
 
 ### New ideas
-- Have a suggestion for new product or new feature for existing product, please [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
+- Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
