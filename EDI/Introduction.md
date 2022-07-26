@@ -47,3 +47,6 @@ Topics: <br>
 - [EDI Vendor module](../EDI/VENDOR/INTRODUCTION/Introduction.md)
 - [EDI 3PL module](../EDI/3PL/INTRODUCTION/Introduction.md)
 - [EDI Freight forwarder for Landed cost](../EDI/FREIGHT-FORWARDER/INTRODUCTION/Introduction.md)
+
+### New ideas
+- Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
