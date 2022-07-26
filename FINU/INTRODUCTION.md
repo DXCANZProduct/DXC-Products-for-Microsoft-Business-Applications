@@ -46,6 +46,8 @@ The DXC Finance Utilities module provides enhanced functionalities to Microsoft 
 -   Formatted Vendor Payment Advice
 -   ABN lookup and validation
 
+## New ideas
+Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
 
 #  Scenarios
 ## Cash and bank management
@@ -155,5 +157,4 @@ See our FAQ for general information and troubleshooting.
 
 - [FAQ](FAQ.md)
 
-## New ideas
-Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
+
