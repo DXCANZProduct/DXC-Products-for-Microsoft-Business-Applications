@@ -15,4 +15,6 @@ Please select the applicable product from below:
 ### Contact details
 - Interested in learning more about DXC Practice for Microsoft? [Talk to us](https://dxc.com/au/en/contact-us) <br>
 - Existing customers' support: <eclipse.supportapac@dxc.com>
-- Suggest a [New idea](https://forms.office.com/r/U9twpSt3in)
+
+### New ideas
+- Have suggestion for a new product or new feature for existing product, please suggest a [New idea](https://forms.office.com/r/U9twpSt3in)
