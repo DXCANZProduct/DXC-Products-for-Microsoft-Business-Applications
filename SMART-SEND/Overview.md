@@ -97,3 +97,6 @@ The following setup is required to configure Smart Send:
 - [Security](CONFIGURATION/Security.md) - Lists the privileges associated with Smart Send and the security roles with access to the privilege
 
 ## [Email processing](PROCESSES/Email-processing.md)
+
+## New ideas
+- Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
