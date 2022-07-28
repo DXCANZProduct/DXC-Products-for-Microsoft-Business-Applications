@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Frequently asked questions
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-09-29
+ms.date: 2022-07-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
