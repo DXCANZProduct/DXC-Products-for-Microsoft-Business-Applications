@@ -47,6 +47,8 @@ The planned features are grouped by category.
 ### Cash and bank management
 - **Copy** functionality on Reconciliation matching rules
 
+### Accounts receivable
+- Additional fields on Customer approval
 
 ## Deprecate
 The following is planned to be deprecated
