@@ -43,7 +43,9 @@ To load all new number sequence references, select **Reset** on **Organization a
 Yes, an outbound staging record can be created again. Use the **Reset flag** and **Send to EDI** buttons on the source transaction.
 
 ### Module FAQ
-The module specific FAQ can be found here:
+The module specific FAQ can be found below. <br>
+FAQ include example errors and methods to fix.
+
 - [Customer](CUSTOMER/INTRODUCTION/FAQ.md)
 - [Vendor](VENDOR/INTRODUCTION/FAQ.md)
 - [3PL](3PL/INTRODUCTION/FAQ.md)
