@@ -35,7 +35,7 @@ Support contact details can be located on the **Contact** tab at **Organization 
   
 ### Where can I identify the installed version of the Finance utilities module
 
-On the Navigation bar, select **Help & support > About**
+On the Navigation bar, select **Help & support > About**. <br>
 A list of installed models will be displayed on the **Version** tab.  Scroll to **DXC Finance Utilities**. The version information will be displayed on the right (i.e. DXC Finance Utilities **10.0.240.2019443** (isv))
 
 
