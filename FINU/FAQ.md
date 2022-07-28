@@ -28,16 +28,14 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # 	Frequently Asked Questions
-## 	Version and Support Information
 
-
-**Where can I find contact information for support?**
+### Where can I find contact information for support?
    
-Support contact details can be located on the **Financial utilities parameters** page on the **About** tab. Users can navigate to **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters**.
+Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > DXC support**
   
- **Where can I identify the installed version of the Finance utilities module**
+### Where can I identify the installed version of the Finance utilities module
 
-On the Navigation bar, select **Settings > About**
+On the Navigation bar, select **Help & support > About**
 A list of installed models will be displayed on the **Version** tab.  Scroll to **DXC Finance Utilities**. The version information will be displayed on the right (i.e. DXC Finance Utilities **10.0.240.2019443** (isv))
 
 
