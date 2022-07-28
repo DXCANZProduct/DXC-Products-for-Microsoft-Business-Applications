@@ -42,6 +42,9 @@ ms.dyn365.ops.version: AX 7.0.1
 ### Number sequences are not available to setup
 To load all new number sequence references, select **Reset** on **Organization administration > Number sequences > Number sequences > Manual cleanup**
 
+### Can I resend a document
+Yes, an outbound staging record can be created again. Use the **Reset flag** and **Send to EDI** buttons on the source transaction.
+
 ### Module FAQ
 The module specific FAQ can be found here:
 - [Customer](CUSTOMER/INTRODUCTION/FAQ.md)
