@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Frequently asked questions
 
-### Where can I find contact information for support?**
+### Where can I find contact information for support?
 Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > DXC support**
 
 ### Where can I identify the installed version of the EDI module?
