@@ -29,11 +29,11 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Frequently asked questions
 
-### Version and Support Information
--	Where can I find contact information for support?
-    - Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > DXC support**
-- Where can I identify the installed version of the EDI module?
-   - Navigate to **Help & support > About**.  A list of installed models will be displayed on the **Version** tab.  Search for Sable 37 EDI. The version information will be displayed on the right (i.e. Sable37 EDI **10.0.14.202009181** (isv))
+### Where can I find contact information for support?**
+Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > DXC support**
+
+### Where can I identify the installed version of the EDI module?
+Navigate to **Help & support > About**.  A list of installed models will be displayed on the **Version** tab.  Search for Sable 37 EDI. The version information will be displayed on the right (i.e. Sable37 EDI **10.0.14.202009181** (isv))
   
 ### Number sequences are not available to setup
 To load all new number sequence references, select **Reset** on **Organization administration > Number sequences > Number sequences > Manual cleanup**
