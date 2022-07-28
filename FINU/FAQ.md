@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Finance Utilities - FAQ 
-author: helenho
+author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-03-02
+ms.date: 2022-07-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
