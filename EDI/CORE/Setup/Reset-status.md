@@ -32,8 +32,8 @@ ms.dyn365.ops.version:  AX 7.0.1
 ## Retry/reset process
 
 The Reset status functionality provides companies the option to set an automatic _retry_ process for error records. <br>
-Files and/or documents with error status can be reset based on the reset profile’s recurrence and the number of reset attempts (End after in Recurrence).
-The files and/or documents will then be picked up in the next normal processing batch. If the underlying issue has been fixed, the file can be successfully processed. If the underlying issue still exist and all the reset attempts have completed the automatic resets will end. There is also an option to **Edit status recurrence** whereby the number reset attempts will be started again. Users can also select a different ‘Reset status profile’ on the document or file’s header.
+Files and/or documents with error status can be reset based on the reset profile’s recurrence and the number of reset attempts (End after in Recurrence). <br>
+The files and/or documents will then be picked up in the next normal processing batch. If the underlying issue has been fixed, the file can be successfully processed. <br> If the underlying issue still exist and all the reset attempts have completed the automatic resets will end. There is also an option to **Edit status recurrence** whereby the number reset attempts will be started again. Users can also select a different ‘Reset status profile’ on the document or file’s header.
 
 ## Setup retry/reset process
 The setup is split into the following:
@@ -76,6 +76,6 @@ The configured Reset status profiles can be used either in:
 - Trading partner’s Incoming and Outgoing documents (overrides the default from EDI shared parameters)
 
 ### Setup Reset document status periodic task
-Users can access the form by navigating to **EDI > Periodic tasks > Reset document status**
+Users can access the form by navigating to **EDI > Periodic tasks > Reset document status**. <br>
 Similar to a workflow processing job, set the periodic task to run infinite according to its schedule. An error document is like a workflow task which needs to be processed to it’s assigned reset profile recurrence.
 
