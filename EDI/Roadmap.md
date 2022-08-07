@@ -49,7 +49,6 @@ ETA: 30 September 2022
 The planned features are grouped by module. Core is included for all modules.
 
 #### Core
-- **Electronic reporting** document type template
 
 #### Customer
 - **EDI history** on D365 source/target. 
@@ -85,6 +84,9 @@ The planned features are grouped by module. Core is included for all modules.
 
 ## Future releases
 The following features are planned for a future release
+
+#### Core
+- **Electronic reporting** document type template
 
 
 ## Deprecate
