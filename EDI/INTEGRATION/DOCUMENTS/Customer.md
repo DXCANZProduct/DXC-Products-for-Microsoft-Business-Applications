@@ -40,7 +40,7 @@ The following setup is prerequisites for the Customer document:
 1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
 2. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
 3. If the Integration systems [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
-4. Add and enable the **Customer** document to the [Customer trading partner](../SETUP/Trading-partner.md) and select the applicable:
+4. Add and enable the **Customer** document to the [Integration system trading partner](../SETUP/Trading-partner.md) and select the applicable:
     - Template
     - File name setup
     - Change tracking
