@@ -2,7 +2,7 @@
 # required metadata
 
 title: EDI Integration
-description: EDI Integration Documents - Customer
+description: EDI Integration Documents - Customer group
 author: jdutoit2
 manager: Kym Parker
 ms.date: 20212-08-12
@@ -27,20 +27,20 @@ ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
 
-# Customer
+# Customer group
 
-Integration systems Trading partner (example online sales site) may require customer data.
+Integration systems Trading partner (example online sales site) may require customer group data.
 
-The following subsections will describe how to view, process and send Customer to applicable Integration system Trading partners. <br>
+The following subsections will describe how to view, process and send Customer group to applicable Integration system Trading partners. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed. <br>
 
 ## Prerequisites
-The following setup is prerequisites for the Customer document:
+The following setup is prerequisites for the Customer group document:
 
 1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
 2. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
 3. If the Integration systems [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
-4. Add and enable the **Customer** document to the [Customer trading partner](../SETUP/Trading-partner.md) and select the applicable:
+4. Add and enable the **Customer group** document to the [Customer trading partner](../SETUP/Trading-partner.md) and select the applicable:
     - Template
     - File name setup
     - Change tracking
@@ -57,14 +57,12 @@ Document change tracking's **Update version** is also updated each time a stagin
 
 If required to send full set of data again, the trading partner's document change tracking's **Full** can be set to _Yes_ again.
 
-The following tables are tracked for the **Customer** document:
-- CustTable
-- DirPartyTable
-- LogisticsElectronicAddress
+The following tables are tracked for the **Customer group** document:
+- CustGroup
 
 ## View staging table records
-To view the Customer staging records, go to **EDI > Documents > Integration systems documents > Master data > Out > Customer**. 
-Use this page to review staging and process EDI Customer documents to an Outbound file.
+To view the Customer group staging records, go to **EDI > Documents > Integration systems documents > Master data > Out > Customer group**. 
+Use this page to review staging and process EDI Customer group documents to an Outbound file.
 
 ### List page
 The following EDI fields are available on the list page.
@@ -82,7 +80,7 @@ The following EDI fields are available on the list page.
 **Received**                    | Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
 
 ### Buttons
-The following buttons are available on the **Customer** Action Pane, tab **Master data - Customer**.
+The following buttons are available on the **Customer group** Action Pane, tab **Master data - Customer group**.
 
 **Button**	                    | **Description**
 :---                            |:----
@@ -96,7 +94,7 @@ The following buttons are available on the **Customer** Action Pane, tab **Maste
 **Reset template**	            | Reset the template used to create the outbound file. <br> Only enabled where the **Staging to target status** is set to _Not started_.
 **Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
 
-The following buttons are available on the **Customer**'s Action Pane, tab **Acknowledgement**.
+The following buttons are available on the **Customer group**'s Action Pane, tab **Acknowledgement**.
 The **Acknowledgement** tab is available on all outgoing documents staging pages and enables the user to view the **Functional acknowledgement inbound** that has been received and processed for the outbound document.
 
 **Button**	                    | **Description**
@@ -132,14 +130,5 @@ The following EDI Line staging fields are available on the lines page.
 
 **Field**	                | **Description**	                                        | **Source D365 table and field**
 :---                        |:---                                                       |:---
-**Customer account**        | Customer's account number                                 | Customer - Customer account
-**Name**                    | Customer's name                                           | Customer - Name
-**Invoicing and delivery on hold**  | Indicates if the customer is on hold for invoicing and delivery   | Customer - Invoicing and delivery on hold
-**Currency**                | Customer's currency                                       | Customer - Currency
-**Mode of delivery**        | Customer's mode of delivery                               | Customer - Mode of delivery
-**Terms of payment**        | Customer's terms of payment                               | Customer - Terms of payment
-**Method of payment**       | Customer's method of payment                              | Customer - Method of payment
-**Sales group**             | Customer's sales group                                    | Customer - Sales group
-**GST group**               | Customer's tax group                                      | Customer - Tax group
-**Site**                    | Customer's default site                                   | Customer - Site
-**Warehouse**               | Customer's default warehouse                              | Customer - Warehouse
+**Customer group**          | Customer group id                                         | Customer groups - Customer group
+**Description**             | Customer group description                                | Customer groups - Description
