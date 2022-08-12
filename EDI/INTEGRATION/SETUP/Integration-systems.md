@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: EDI Customer
-description: EDI Customer Setup - Warehouses
+title: EDI Integration
+description: EDI Integration Setup - Integration systems
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-05
+ms.date: 2022-08-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SAB_EDIASNLineConfigurationTable, InventLocations 
+ms.search.form: SAB_EDIIntegrationSysTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -27,25 +27,18 @@ ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
 
-# Customer setup
+# Integration systems setup
 
-## ASN line configurations
-Required where advanced shipping notice (ASN) will be sent to EDI customers and determines what information will be used when creating the ASN.
-There are currently three **ASN line configurations** available and can be viewed at **EDI > Setup > Configurations > ASN line configurations**.
+## Integration systems
+Integration trading partner isn't linked to a D365 customer, vendor or warehouse. <br>
+The record created in Integration systems will be used when creating a new Integrations EDI Trading partner.
 
-Config option       |	Description	            | Warehouse management	    | Containerization	    | Note
-:--                 |:--                      |:--                        |:--                    |:--
-**Picking list**    |	The ASN will be generated based on information in the pick list registration and consignments table	| Not enabled	 | N/A	| The SSCC should be populated for each line of the picking list registration
-**WHSContainerization** |	The ASN will be generated based on the information in the WHS container and consignments table | WHS enabled <br> Not 3PL	| Used	| The container number will be used as the SSCC Id and therefore should be configured based on SSCC number requirements
-**WHSDeliveredLP**      |	The ASN will be generated based on the information in the WHS license plate and consignments table.	| WHS enabled <br> Not 3PL	| Not used	| The target license plate number will be used as the SSCC Id and therefore should be configured based on SSCC number requirements
+Users can access the form by navigating to **EDI > Setup > Integration system**
 
+- Click **New** to create a new record. 
+-	In the **Integration System Id** field, enter an unique id for the Integration systems.
+-	In the **Name** field, enter a name for the Integration systems
 
-> Note: Additional options can be created as a customer specific requirement and added to this list for selection on the warehouse form.
-
-To assign the **ASN line configuration** to a warehouse, the user can navigate to **Inventory management > Setup > Inventory breakdown > Warehouses**
--	Select the applicable warehouse to be used for ASN generation (Ship from warehouse)
--	Select the ASN line configuration in the **ASN line configuration** field in the EDI FastTab
-
-
-Data entity: Warehouses, staging field SAB_EDICUSTASNLINECONFIGURATIONNAME
+## Trading partner
+Use the created record to create a new Integrations [Trading partner](Trading-partner.md).
 
