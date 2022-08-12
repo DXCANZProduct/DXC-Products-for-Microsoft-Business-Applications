@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: EDI Customer
-description: EDI Customer Documents - Customer advanced shipping notice
+title: EDI Integration
+description: EDI Integration Documents - Customer
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-05
+ms.date: 20212-08-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIConsignmentNoteTable
+# ms.search.form:  
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -27,86 +27,34 @@ ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
 
-# Customer advanced shipping notice (ASN)
+# Customer
 
-EDI customers may require an advanced shipping notice (ASN) for a sales order.
+Integration systems may require customer data.
 
-> Note: Customer advanced shipping notice can also be sent for a sales order not created via EDI.
-
-The following subsections will describe how to view, process and send Customer advanced shipping notice to applicable Customer Trading partners. <br>
+The following subsections will describe how to view, process and send Customer to applicable Integration system Trading partners. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed. <br>
-The created ASN record(s) can be viewed for a sales order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Sales order page.<br>
 
 ## Prerequisites
-The following setup is prerequisites for the customer advanced shipping notice
+The following setup is prerequisites for the customer document:
 
 1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-2. Create [Setting profile](../SETUP/SETTING-PROFILES/Customer-advanced-shipping-notice.md) for the document.
-3. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
-4. If the customer [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
-5. Add and enable the customer advanced shipping notice to the [Customer trading partner](../SETUP/Trading-partner.md) and select the applicable:
+2. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
+3. If the Integration systems [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+4. Add and enable the **Customer** document to the [Customer trading partner](../SETUP/Trading-partner.md) and select the applicable:
     - Template
-    - Setting profile
     - File name setup
-6. Assign [ASN line configuration](../SETUP/Warehouses.md) to all the 'ship from' warehouses.
+    - Change tracking
+5. Create a new batch job for the trading partner and document in [Export batch jobs](../../CORE/Setup/EDI-Batches.md#export-batch-jobs)
 
 ## Processing
 
-### Post packing slip
-When posting a packing slip for a sales order, it is possible to add consignment information.
--	From the packing slip posting form, select the **Assign consignment note** button
--	To create a new consignment note record, select **New**
-    - Update the **Consignment note number**
-    - Select the **Shipping carrier** and **Carrier service**
--	To select a previously created consignment note, select the record
-> Note: Consignment notes will be matched to the delivery based on the Delivery Name, Delivery address, Customer account and warehouse.
--	Click **Assign** to attach the consignment note number to the packing slip
--	**Send to EDI**: Where the **ASN strategy** has been configured to:
-    - **Single packing slip**, the Send to EDI flag will be set to _Yes_.  Once the packing slip is posted, a Customer advanced shipping notice record will be created in the staging table.
-    - **Consolidated packing slip**, the Send to EDI flag will be set to _No_. Users still need to assign the Consignment note, but the ASN must be sent to EDI from the [Consignment notes](#consignment-notes) page before a Customer advanced shipping notice staging record will be created.
+### Change tracking
 
-> Note: **ASN strategy** is setup on the [Customer advanced shipping notice setting profile](../SETUP/SETTING-PROFILES/Customer-advanced-shipping-notice.md)
-and assigned to the Trading partner when setting up the document on their outgoing documents. 
+Integration documents are created by enabling change tracking on the trading partner's outgoing document(s).
+The document change tracking's **Full** can be set to _Yes_, in order to send all the records for the tracked table.
+Once the staging record has been created for the full version, the Document change tracking's **Full** field will automatically update to _No_ in order to send changes with the next batch run.
 
-> Note: If the packing slip was posted without assigning a consignment note, it is possible to [add the packing slip](#add-packing-slips-to-a-consignment-note) to a consignment note afterwards.
-> The Customer advanced shipping notice setting profile, has the option to **Warn when consignment note not assigned**.
-
-### Consignment notes
-EDI requires the delivery to be assigned to a consignment note. The consignment note can contain one or multiple deliveries.
-The consignment note can be created when posting the packing slip, or by following the steps as per following subsection.
-
-#### Create a consignment note
-To open the **Consignment notes** page, go to **EDI > Inquiries and reports > Consignment notes**.
--	To create a new consignment note, select **New**
--	Select the **Customer account** for the consignment
--	Enter the **Consignment note number**
--	Select the **Shipping carrier** and **Carrier service**
--	Select the **Delivery address information**
-
-#### Add packing slips to a consignment note
-To open the **Consignment notes** page, go to **EDI > Inquiries and reports > Consignment notes**. 
--	Select the applicable consignment note
--	To add packing slips, select **Add** from the consignment lines
--	A list of unassigned packing slips for the customer and delivery address will be displayed
--	Select valid record(s) to be assigned to the consignment note
--	Select **Add lines**
-
-#### Create ASN staging record from consignment notes
-To open the **Consignment notes** page, go to **EDI > Inquiries and reports > Consignment notes**. 
--	Select the applicable consignment note
--	Select **Send to EDI** to send all consignment information to the Customer advanced shipping notice staging (ASN) table
--	If required, select **Reset flag** to update the consignment and resend the ASN. The ASN record should be deleted in the staging page and outbound files before the flag is reset.
-
-
-#### Auto generate a consignment note number
-The shipping carriers page has an additional option located on the EDI FastTab to enable users to **Auto generate consignment note Id**.  Where this parameter is set to Yes, the **Pro number sequence** must also be set.
-
-To enable the consignment note to be auto generated, the following criteria must be met:
--	**Carrier** must be specified on the sales order
--	**Carrier** must be specified on the Picklist or WHS shipment
--	**ASN strategy** must be _Single packing slip_
--	The packing slip must be posted from the **Pick list registration** or the **WHS Shipment**
-
+If required to send full set of data again, the trading partner's document change tracking's **Full** can be set to _Yes_ again.
 
 ## View staging table records
 To view the Customer advanced shipping notice staging records, go to **EDI > Documents > Customer documents > Customer advanced shipping notice**. 
