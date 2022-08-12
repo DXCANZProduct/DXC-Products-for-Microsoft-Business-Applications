@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: EDI Integration
-description: Introduction to EDI Integration
+title: EDI Integration systems
+description: Introduction to EDI Integration systems
 author: jdutoit2
 manager: Kym Parker
 ms.date: 2022-08-12
@@ -27,10 +27,10 @@ ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
 
-# Introduction to Integrations EDI
-This section will provide a quick overview of the Integrations EDI module. <br>
+# Introduction to EDI Integrations systems
+This section will provide a quick overview of the Integration systems EDI module. <br>
 Integrations module is beneficial for EDI documents that are not specific to a customer, vendor or warehouse. <br>
-Change tracking is used to send data based on full or changes to the tracked table. <br>
+Change tracking is used to send data based on full or changes to the tracked table(s). <br>
 Examples are integrating with an online store.
 
 ## Documents
@@ -44,7 +44,7 @@ EDI contains the following documents pertaining to all Trading partners.
 
 ### Integrations EDI documents (Integrations license only)
 
-EDI contains the following documents pertaining to Integrations Trading partners.
+EDI contains the following documents pertaining to Integration system Trading partners.
 - **Outbound**
 	- **Customer** - Allows D365 to send customer information using change tracking on tracked tables
 	- **Customer group** - Allows D365 to send customer group information using change tracking on tracked tables
@@ -55,7 +55,7 @@ Core setup is discussed in detail [here](../../CORE/Introduction/Introduction.md
 
 ### Integration setup
 
-#### Integration Document type setup
+#### Integration systems Document type setup
 Setup Document types which will be assigned on Integrations Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Document types**
 
