@@ -29,7 +29,7 @@ ms.dyn365.ops.version:  AX 7.0.1
 
 # Customer
 
-Integration systems may require customer data.
+Integration systems Trading partner (example online sales) may require customer data.
 
 The following subsections will describe how to view, process and send Customer to applicable Integration system Trading partners. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed. <br>
@@ -69,16 +69,14 @@ The following EDI fields are available on the list page.
 **Company**             | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. • **Canceled** – The record has been manually canceled and will be excluded from processing.
-**Trading partner account**     | Customer account assigned to the staging record.
-**Trading partner GLN**         | The Customer’s global location number is shown here.
-**ASN Number**                  | ASN number record id. The number sequence is determined by [ASN number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
-**Consignment note number**     | Consignment note identification for the delivery
-**Delivery note**               | Packing slip number
+**Trading partner account**     | Integration systems account assigned to the staging record.
+**Trading partner GLN**         | The Integration system’s global location number is shown here.
+**Update version**              | Change tracking's Update version.
 **Created Date and Time**       | The date and time the selected record was created in the staging table.
 **Received**                    | Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
 
 ### Buttons
-The following buttons are available on the **Customer advanced shipping notice** Action Pane, tab **Advanced shipping notice**.
+The following buttons are available on the **Customer** Action Pane, tab **Master data - Customer**.
 
 **Button**	                    | **Description**
 :---                            |:----
