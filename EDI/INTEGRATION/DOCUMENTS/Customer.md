@@ -110,8 +110,8 @@ The following EDI Header staging fields are available on the header page.
 :---                    |:---                                                     |:---
 <ins>**Identification FastTab**</ins>		|   |
 <ins>**Identification**</ins>		|   |
-**EDI number**          | ASN number                                              | EDI parameters > Number sequences > ASN number
-**Company**             | Legal entity of the document
+**EDI number**          | EDI Staging table record id.                            |
+**Company**             | Legal entity of the document                            |
 **Company GLN**         | The company’s global location number is shown here      | 
 **Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	           
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.	• **Canceled** – The record has been manually canceled and will be excluded from processing.
