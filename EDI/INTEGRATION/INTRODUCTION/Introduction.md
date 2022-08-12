@@ -82,6 +82,10 @@ Ability to manually import or review inbound files
 Ability to manually export or review outbound files
 - [Outbound files](../../CORE/Managing-files/Outbound-files.md)
 
+### Export batch jobs
+Integration systems module utilizes the **Export batch jobs** to schedule outgoing documents.
+- [Export batch jobs](../../CORE/Setup/EDI-Batches.md#export-batch-jobs)
+
 ### Integrations documents
 Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents > Integration systems documents**
