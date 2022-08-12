@@ -30,6 +30,7 @@ ms.dyn365.ops.version:  AX 7.0.1
 # Introduction to Integrations EDI
 This section will provide a quick overview of the Integrations EDI module. <br>
 Integrations module is beneficial for EDI documents that are not specific to a customer, vendor or warehouse. <br>
+Change tracking is used to send data based on full or changes to the tracked table. <br>
 Examples are integrating with an online store.
 
 ## Documents
