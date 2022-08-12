@@ -89,7 +89,7 @@ The following buttons are available on the **Customer** Action Pane, tab **Maste
 **Create selected files**       | Creates the outbound file for selected records where **Staging to target status** is set to _Not started_.
 **Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_.
 **Outbound files**              | View the outbound file record created by the selected staging record.
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page.
+**Trading partner**             | View the trading partner details in the [Trading partners](../SETUP/Trading-partner.md) page.
 **Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
 **Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
