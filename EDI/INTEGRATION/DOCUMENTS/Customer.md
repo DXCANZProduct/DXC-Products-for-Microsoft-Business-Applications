@@ -57,8 +57,8 @@ Once the staging record has been created for the full version, the Document chan
 If required to send full set of data again, the trading partner's document change tracking's **Full** can be set to _Yes_ again.
 
 ## View staging table records
-To view the Customer advanced shipping notice staging records, go to **EDI > Documents > Customer documents > Customer advanced shipping notice**. 
-Use this page to review staging and process EDI Customer advanced shipping notice documents to an Outbound file.
+To view the Customer staging records, go to **EDI > Documents > Integration systems documents > Master data > Out > Customer**. 
+Use this page to review staging and process EDI Customer documents to an Outbound file.
 
 ### List page
 The following EDI fields are available on the list page.
