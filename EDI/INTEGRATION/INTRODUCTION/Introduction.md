@@ -92,6 +92,3 @@ Users can access the forms by navigating to **EDI > Documents > Integration syst
 - [Customer](../DOCUMENTS/Customer.md)
 - [Customer group](../DOCUMENTS/Customer-group.md)
 
-## Other
-- [Data entities](../OTHER/Data-entities.md)
-- [Security configuration](../OTHER/Security-configuration.md)
