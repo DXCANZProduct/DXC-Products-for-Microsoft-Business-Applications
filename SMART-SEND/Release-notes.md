@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.25.20220630
+### Release 10.0.25.202208151
 
 DXC Smart Business Form Email Manager 10.0.25 runs on the following Microsoft releases
 
@@ -41,6 +41,17 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
 Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
 Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
+Microsoft Dynamics 365 application	| 10.0.28	  | [What’s new or changed in Dynamics 365 application version 10.0.28](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-28)
+
+#### Build 10.0.25.202208151
+
+Number	  | Functionality	  | Reason
+:--       |:--              |:--
+11122	    | Vendor payment advice report blank when run with Smart Send button | Report data is not included when the vendor payment advice report is run using the Smart Send payment advice button present on the vendor payment journal.
+
+# Previous version(s)
+
+### Release 10.0.25.20220630
 
 #### Build 10.0.25.202206302
 
@@ -48,8 +59,6 @@ Number	  | Functionality	  | Reason
 :--       |:--              |:--
 10231	    | Support Vendor Tax Invoice report formats | The report type *Vendor Invoice* and the standard report formats *VendInvoiceDocument.Report* and *VendInvoiceDocumentModern.Report* are now available in the Smart Send configuration form ECL_AutoPrintReportMgmt
 10288	    | Legal entity name placeholder token | The token placeholder %CompanyName% can now be used to return the name of the legal entity from which the report was generated.
-
-# Previous version(s)
 
 ### Release 10.0.22.20220413
 
