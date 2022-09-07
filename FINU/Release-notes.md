@@ -190,18 +190,6 @@ Number	  | Name	          | Description
 :--       |:--              |:--
 9316	  |Print payment advice	| When feature **Enable batch processing for bank payment advice reports** is enabled, and user attempts to print Payment advice report ECL_BankPaymAdviceVend.Report; errors with: <br> ‘Stack trace: Calling wait or detach before calling run. An attempt was made to set a report parameter 'AX_RdpPreProcessedId' that is not defined in this report.’ <br> MS has rebuilt the report so that the parameters no longer matched which was what caused the problem. <br> The solution was to mimic MS solution and introduce a V2 of our payment advice report. The new V2 is only available once the feature has been enabled. <br> As the feature has been enable/disabled the customer needs to open the print management form and reselect the report they want to use. <br> The list or reports available is refreshed after the feature is turned on or off when: <br> •	Standard report, refreshed when a user tries to run the report. <br> •	FinUtils report, refreshed when a user tried to run the report or open the print management form. <br> Feature ‘Enable batch processing for bank payment advice reports’ is enabled has a Feature state set to ‘On by default’ from 10.0.21. and thus is automatically enabled from 10.0.21. But the feature can still be disabled (if not required).
 
-### Release 10.0.16.20210824
-
-#### Build 10.0.16.202108241
-
-
-<ins>Bug fixes</ins>
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-9440	  | BPAY Lodgement reference for Purchase invoice	| The BPAY Lodgement reference for Purchase invoices were not populated in the Payment proposal.
-8118	  | Vendor bank account changes - Feature managed	| When Finance Utilities is installed but doesn't have an active license/enabled, the extra fields shows up as blank on AP parameters.
-
 
 # Installation process
 To align with MS best practice and to protect our IP the following changes have been made to the release process.
