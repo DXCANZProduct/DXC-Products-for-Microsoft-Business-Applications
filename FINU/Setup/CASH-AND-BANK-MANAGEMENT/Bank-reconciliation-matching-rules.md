@@ -31,8 +31,13 @@ ms.dyn365.ops.version: AX 7.0.1
 The fields as described in the following subsections are available to control the additional functionality for advanced bank reconciliation.
 
 ## Setup
-### Bank Reconciliation Matching Rules
-#### Group by document number
+## Bank Reconciliation Matching Rules
+
+### Copy matching rule
+User can select an existing rule, select **Copy matching rule** on the Action Pane to create a copy of the existing rule.
+User can then edit the new rule and activate.
+
+### Group by document number
 
 D365 standard does not have the capability to match one transaction in the bank statement to multiple transactions in the D365 Bank Transactions that have the same **Journal id** or **Cheque number**. This Finance utilities functionality extends the automatic reconciliation matching rules by adding **Group by document number** to Reconciliation matching rules with Action **Match with bank statement** in 'Step 1: Define the matching rule'.
 
@@ -42,7 +47,7 @@ The feature can be activated from **Cash and bank management > Setup > Advanced 
 |-|-|
 | **Group by document number** | This feature combines the D365 bank transactions amount that have the **same Document number** (populated with the Journal id or check number) during the Bank reconciliation process, from **Run matching rules.** |
 
-#### Matching Parameter - Included In
+### Matching Parameter - Included In
 If the **Financial utilities parameter**'s **Extended matching rule operator** is set to _Yes_, the option **Included in** is available for selection in 'Step 1: Define the matching rule'. 
 
 When the Operator **Included in** is selected, D365 checks whether the value of **Field** is included in the value of the **Statement fields**.
@@ -75,7 +80,7 @@ When the Operator **Included in** is selected, D365 checks whether the value of 
 
 In this example, when the above Reconciliation Matching rule is run, D365 Bank Transactions Line 1 will be matched with Bank Statement Transactions Line 1 because the **Document number** value “AAU1367611” is included in the value of the field Reference No “CBA pmt AAU1367611”.
 
-#### Mark as New - Additional defaults
+### Mark as New - Additional defaults
 
 If the **Financial utilities parameter**'s **Extended financial details for new transaction** parameter is set to _Yes_, the option to capture the following details automatically for **Mark as new** bank statement lines can be selected.
 -	Offset account type (Ledger, Customer, Vendor or Bank) and details
@@ -99,8 +104,8 @@ More detail for ** fields are discussed [here](#customer-payment-and-settle-of-i
 | **GST Group**   |  Populates the field GST group in the Bank Statement Line Details form when a **Mark as new** line is created.   |
 | **Item GST Group**    |  Populates the field Item GST group in the Bank Statement Line Details form when a **Mark as new** line is created   |
 
-#### Customer payment and settle of invoice (1:1)
-##### Reconciliation matching rules
+### Customer payment and settle of invoice (1:1)
+#### Reconciliation matching rules
 This section will provide more details for ** fields from above section.
 Finance utilities allows for creating and optional settling of one invoice and optional posting of customer payment journal. One customer payment journal is created for all the bank statement lines matched with the mark as new rule. For improved traceability the Reconcile ID is populated in the Customer receipt’s journal Document on the journal’s setup tab.
 
@@ -116,12 +121,12 @@ The following subsection will discuss scenarios when running a Mark as new rule 
     - **Yes** - The customer receipt journal will be posted and automatically matched with the bank statement lines. A Match Id will be assigned for all the transactions and moved to matched on the Bank reconciliation worksheet when running the rule.
     - **No**: The customer receipt journal will only be created. Once the user has reviewed and posted the customer payment journal, refresh the bank reconciliation’s worksheet to bring in the new bank transactions. User has to either use a match with bank statement rule or manually match the applicable bank statement lines with these new bank transactions.
 
-##### Financial utilities parameters
+#### Financial utilities parameters
 Additional setup is also required on [Financial utilities parameters](Finance-utilities-parameters.md) to assign the following:
 - Reconciliation customer payment journal name
 - Method of payment
 
-##### General ledger parameters
+#### General ledger parameters
 If Financial utilities parameter **Populate unique voucher for each journal line** is set to _No_, it is also required to configure General ledger parameters.
 When the system creates a customer payment journal for the bank statement transaction, the one voucher could contain lines for multiple customers. Therefore, you must set up your system so that a single voucher can have multiple customer lines.
 
@@ -130,7 +135,7 @@ To enable a single voucher to have multiple customer lines, follow these steps.
 2.	On the Ledger tab, on the General FastTab, set the Allow multiple transactions within one voucher option to Yes.
 3.	If you receive a warning message, select Close to accept the change.
 
-##### Possible processing issues:
+#### Possible processing issues:
 -	Warning log: ‘Account % does not exist’
 If the customer account can’t be found in D365, the bank statement line will be excluded from the customer receipt journal and the transactions won’t automatically match in the bank recon since the total values don’t match. 
 -	Warning log: ‘Invoice % doesn’t exist’
