@@ -34,7 +34,7 @@ The fields as described in the following subsections are available to control th
 When changes are made to specific vendor fields, standard D365 vendor workflow can be used for approval before the changes are applied to the vendor. 
 Finance utilities has added additional vendor fields that can be managed by the same workflow.
 
-### Setup vendor approval
+### Setup Vendor approval
 Users can access the **Accounts payable parameters** page by navigating to **Accounts payable > Setup > Accounts payable parameters**. <br>
 The below fields have been added to the existing Vendor approval fields. When enabled they will be submitted using the existing **Proposed vendor changes workflow.**
 
