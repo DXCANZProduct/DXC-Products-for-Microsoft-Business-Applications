@@ -2,10 +2,10 @@
 # required metadata
 
 title: Finance Utilities 
-description: Accounts payable setup - Vendor bank account changes workflow 
-author: helenho
+description: Accounts receivable setup - Customer approval workflow 
+author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-03-02
+ms.date: 2022-09-08
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  VendParameters
+ms.search.form:  CustParameters
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
@@ -26,28 +26,31 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# Accounts payable functionality
-The fields as described in the following subsections are available to control the additional functionality for accounts payable.
+# Accounts receivable functionality
+The fields as described in the following subsections are available to control the additional functionality for accounts receivable.
 
-## Vendor bank account changes workflow
+## Customer bank account changes workflow
 
-When changes are made to specific vendor fields, standard D365 vendor workflow can be used for approval before the changes are applied to the vendor. 
-Finance utilities has added additional vendor fields that can be managed by the same workflow.
+When changes are made to specific customer fields, standard D365 customer workflow can be used for approval before the changes are applied to the customer. 
+Finance utilities has added additional customer fields that can be managed by the same workflow.
 
-### Setup vendor approval
-Users can access the **Accounts payable parameters** page by navigating to **Accounts payable > Setup > Accounts payable parameters**. <br>
-The below fields have been added to the existing Vendor approval fields. When enabled they will be submitted using the existing **Proposed vendor changes workflow.**
+### Setup Customer approval
+Users can access the **Accounts receivable parameters** page by navigating to **Accounts receivable > Setup > Accounts receivable parameters**. <br>
+The below fields have been added to the existing Customer approval fields. When enabled they will be submitted using the existing **Proposed customer changes workflow.**
 
-**Vendor bank account:**
+**Customer bank account:**
 -	Bank groups
 -	BSB number
 -	Bank account number
 -	SWIFT code
--	Biller code (Finance utilities BPAY field)
--	Lodgement reference (Finance utilities BPAY field)
 -	IBAN
--	Active date
--	Expiration date
 
-**Vendor:**
--	Payment id (existing field used for Finance utilities BPAY)
+**Customer:**
+-	Allow on account
+-	Unlimited credit limit
+-	Exclude from credit management
+-	Invoicing and delivery on hold
+-	Charges group
+-	Customer rebate group
+-	Commission group
+-	Payment schedule
