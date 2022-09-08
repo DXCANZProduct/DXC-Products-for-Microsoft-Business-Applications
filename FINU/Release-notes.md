@@ -89,8 +89,8 @@ Number	  	| Name	          | Description
 :--       	|:--              	  |:--
 11305		| Generic electronic Import format	| Fix issue with importing GER bank statement formats. Supports **Advanced bank reconciliation statement model (ABR)** and **Bank statement model** GER formats. 
 10927		| Bank statement import	| Fix to incorrect log when importing bank statements for banks across multiple legal entities. Error: 'No matching bank account found' for bank accounts in the different legal entity.
-11262		| 
-11307		| 
+11262		| Bank reconciliation	| When manually marking a bank statement transaction as new in Bank reconciliation Worksheet. Can't select **Offset company** in Matched transactions.
+11307		| Bank reconciliation	| Fix to financial dimensions posted for manually marked as new bank statement transactions. Bank account's transaction incorrectly posting without financial dimensions.
 
 
 # Previous version(s)
