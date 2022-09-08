@@ -29,23 +29,22 @@ ms.dyn365.ops.version: AX 7.0.1
 # Accounts receivable functionality
 The fields as described in the following subsections are available to control the additional functionality for accounts receivable.
 
-## Customer bank account changes workflow
+## Customer approval workflow
 
 When changes are made to specific customer fields, standard D365 customer workflow can be used for approval before the changes are applied to the customer. 
-Finance utilities has added additional customer fields that can be managed by the same workflow.
+Finance utilities has added additional **Customer bank account** and **Customer** fields that can be managed by the same workflow.
 
-### Setup Customer approval
 Users can access the **Accounts receivable parameters** page by navigating to **Accounts receivable > Setup > Accounts receivable parameters**. <br>
 The below fields have been added to the existing Customer approval fields. When enabled they will be submitted using the existing **Proposed customer changes workflow.**
 
-**Customer bank account:**
+### Customer bank account
 -	Bank groups
 -	BSB number
 -	Bank account number
 -	SWIFT code
 -	IBAN
 
-**Customer:**
+### Customer
 -	Allow on account
 -	Unlimited credit limit
 -	Exclude from credit management
