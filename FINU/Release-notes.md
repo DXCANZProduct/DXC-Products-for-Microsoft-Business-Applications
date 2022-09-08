@@ -87,8 +87,8 @@ Number	  	| Functionality	  | Description
 
 Number	  	| Name	          | Description
 :--       	|:--              	  |:--
-11305		| 
-10927		| 
+11305		| Generic electronic Import format	| Fix issue with importing GER bank statement formats. Supports **Advanced bank reconciliation statement model (ABR)** and **Bank statement model** GER formats. 
+10927		| Fix to incorrect log when importing bank statements for banks across multiple legal entities. Error: 'No matching bank account found' for bank accounts in the different legal entity.
 11262		| 
 11307		| 
 
