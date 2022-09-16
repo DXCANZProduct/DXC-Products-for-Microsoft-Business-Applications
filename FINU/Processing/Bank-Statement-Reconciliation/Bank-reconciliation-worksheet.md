@@ -99,7 +99,10 @@ If the field **Extended financial details for new transactions** has been set on
 
 #### Financial dimensions tab
 Account and Offset accounts (excluding ledger offet account type)'s financial dimensions. <br>
-When user selects **Mark as new** and the records are moved to Matched transactions:  <br> • Account (Bank)'s financial dimensions will be populated from the Bank account. <br> • When user enters **Offset account number**, the offset account's financial dimension will be populated from their master accounts (for example customer's financial dimension), except ledger since it is populated in **Offset account number**. If this would result in a blank value it will be populated with Account (Bank)'s financial dimensions. <br> • If Account (Bank)'s financial dimensions are blank, Offset account's financial dimensions will be used to populate Account (Bank)'s financial dimensions. 
+When the user selects **Mark as new** and the records are moved to Matched transactions:
+- **Account** (Bank)'s financial dimensions will be populated from the Bank account.
+- When user enters **Offset account number**, the offset account's financial dimension will be populated from their master accounts (for example customer's financial dimension), except ledger since it is populated in **Offset account number**. If this would result in a blank value it will be populated with Account (Bank)'s financial dimensions.
+- If **Account** (Bank)'s financial dimensions are blank, **Offset account**'s financial dimensions will be used to populate **Account** (Bank)'s financial dimensions. 
 
 ### Mark as reconciled
 #### Ability to reconcile unmatched statements
