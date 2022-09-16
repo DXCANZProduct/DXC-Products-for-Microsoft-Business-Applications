@@ -46,7 +46,7 @@ The planned features are grouped by category.
 
 ### General
 GitHub Help in D365 <br>
-![GitHub Help in D365](Images/Roadmap_20220916_1.png "GitHub Help in D365")
+![GitHub Help in D365](Images/Roadmap_20220916.png "GitHub Help in D365")
 
 ### Cash and bank management
 
