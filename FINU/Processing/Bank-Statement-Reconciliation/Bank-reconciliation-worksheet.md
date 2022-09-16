@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Bank statement reconciliation processing - Bank reconciliation worksheet 
-author: helenho
+author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-03-02
+ms.date: 2022-09-16
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -83,8 +83,10 @@ These totals assist with balancing the in-progress Matching.
 ### Mark as new extended financial details
 
 If the field **Extended financial details for new transactions** has been set on **Financial utilities parameter**, these Financial details are available from the Bank reconciliation, on new FastTabs (General and Financial dimensions), for the user to review or change
--	The additional detail can also be populated when a transaction is selected from the Mark as new button
+-	The additional detail can be populated when a transaction is selected from the **Mark as new** button
 -	When a line is set as Mark as new’ the GL journal creation includes the additional default settings from the **Extended financial details** from the applicable **Reconciliation matching rules**
+
+#### General tab
 
 |   **Heading**    |   **Field**   |   **Description**   |
 |-|-|-|
@@ -95,6 +97,14 @@ If the field **Extended financial details for new transactions** has been set on
 |   **Bank**  |  Bank transaction type  |  Select bank transaction type (optional)  |
 |   **Tax**   |  GST sales tax group  |  Sales tax group (optional)  |
 |  |  Item sales tax group  |  Select Item tax group (optional)  |
+
+#### Financial dimensions tab
+
+Contains Account and Offset accounts (excluding ledger offet account type)'s financial dimensions. <br>
+When the user selects **Mark as new** and the records are moved to Matched transactions:
+- **Account** (Bank)'s financial dimensions will be populated from the Bank account.
+- When user enters **Offset account number**, the offset account's financial dimension will be populated from their master accounts (for example customer's financial dimension), except ledger since it is populated in **Offset account number**. If this would result in a blank value it will be populated with **Account** (Bank)'s financial dimensions.
+- If **Account** (Bank)'s financial dimensions are blank, **Offset account**'s financial dimensions will be used to populate **Account** (Bank)'s financial dimensions. 
 
 ### Mark as reconciled
 #### Ability to reconcile unmatched statements
