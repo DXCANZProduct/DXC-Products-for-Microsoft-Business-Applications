@@ -87,6 +87,7 @@ If the field **Extended financial details for new transactions** has been set on
 -	When a line is set as Mark as new’ the GL journal creation includes the additional default settings from the **Extended financial details** from the applicable **Reconciliation matching rules**
 
 #### General tab
+
 |   **Heading**    |   **Field**   |   **Description**   |
 |-|-|-|
 |   **Offset account**  |   Offset company   |  Required company selection  |
@@ -98,6 +99,7 @@ If the field **Extended financial details for new transactions** has been set on
 |  |  Item sales tax group  |  Select Item tax group (optional)  |
 
 #### Financial dimensions tab
+
 Contains Account and Offset accounts (excluding ledger offet account type)'s financial dimensions. <br>
 When the user selects **Mark as new** and the records are moved to Matched transactions:
 - **Account** (Bank)'s financial dimensions will be populated from the Bank account.
