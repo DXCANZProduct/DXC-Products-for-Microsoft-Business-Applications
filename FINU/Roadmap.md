@@ -5,7 +5,7 @@ title: FINU
 description: FINU - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-07-14
+ms.date: 2022-09-16
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,18 +37,22 @@ This page describes the features planned for future releases and planned release
 
 Release			    | ETA
 :--			        |:--
-2022-09         | 30 September 2022
+2023-1          | 31 January 2023
 
 ## Next release
-ETA: 30 September 2022
+ETA: 31 January 2023
 
 The planned features are grouped by category.
 
+### General
+GitHub Help in D365 <br>
+![GitHub Help in D365](Images/Roadmap_20220916_1.png "GitHub Help in D365")
+
 ### Cash and bank management
-- **Copy** functionality on Reconciliation matching rules
+
 
 ### Accounts receivable
-- Additional fields on **Customer approval**
+
 
 ## Deprecate
 The following is planned to be deprecated
