@@ -31,50 +31,20 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.25 & 10.0.27.202207142
+### Release 10.0.27.20220916
 
-#### Build 10.0.25.202207142
+#### Build 10.0.27.202209161
 
-Release date: 14/07/2022 <br>
-DXC Finance Utilities 10.0.25 runs on the following Microsoft releases
+Release date: 16/09/2022 <br>
 
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
-Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
-
-Number	  	| Functionality	  | Reason
-:--       	|:--              |:--
-10367		| Reconciliation matching rule	| Ability to set **Account**'s **Financial dimensions** on **Reconciliation matching rules** with Action **Mark new transactions**. <br> ![Reconciliation matching rules](Images/ReleaseNotes_20220714_2.png "Reconciliation matching rules") <br> New posting logic for financial dimensions: <br> • Account is Bank <br> •  Offset account is Ledger, Customer, Vendor or Bank. ![Posting logic](Images/ReleaseNotes_20220714_1.png "Posting logic") <br> When new bank statement transactions with Offset account type _Ledger_, _Vendor_ or _Bank_'s are matched by using Reconciliation matching rules, the calculated financial dimensions for Account and Offset account are populated on the **Matched transaction**'s **Financial dimensions** tab and can be overriden prior 'Mark as reconciled'. <br> Offset account type _Customer_ creates customer receipt journal(s) with the calculated financial dimensions for Account and Offset account.
-10511		| Vendor payments - Generate payments | Current vendor payment journal line's **Method of payment** and **Bank account** used to populate fields on **Generate payments** dialog.
-
-
-<ins>Bug fixes</ins>
-
-Number	  	| Name	          | Description
-:--       	|:--              	  |:--
-10511		| Vendor payments - Generate payments | Electronic reporting format: **User id** and **File name** updated if Bank account is changed on **Generate payments** dialog. <br> ![Generate payments](Images/ReleaseNotes_20220714_3.png "Generate payments")
-10603		| Bank reconciliation	| Where a bank deposit slip has been cancelled the MS calculated totals are incorrect and resulted in an unmatched amount. Financial utilities unmatched amount calculation has been updated to avoid this issue. <br> ![Unmatched amount](Images/ReleaseNotes_20220714_4.png "Unmatched amount")
-
-#### Build 10.0.27.202207142
-
-Release date: 14/07/2022 <br>
 DXC Finance Utilities 10.0.27 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
 Microsoft Dynamics 365 application	| 10.0.28	  | [What’s new or changed in Dynamics 365 application version 10.0.28](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-28)
+Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
 
-Same as 10.0.25.202207142, and includes the fix for Payment advice V2 required from 10.0.27:
-
-Number	| Functionality	  | Reason
-:--	|:--		  |:--	
-10284	| Eclipse Payment advice V2	| Resolves the **breaking change** with Microsoft introduced new 10.0.27 features when **Enable batch processing for bank payment advice reports** is enabled.
-
-# Next version
-
-### Release 10.0.27.202209
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
@@ -94,6 +64,35 @@ Number	  	| Name	          | Description
 
 
 # Previous version(s)
+
+### Release 10.0.25 & 10.0.27.202207142
+
+#### Build 10.0.25.202207142
+
+Release date: 14/07/2022 <br>
+
+Number	  	| Functionality	  | Reason
+:--       	|:--              |:--
+10367		| Reconciliation matching rule	| Ability to set **Account**'s **Financial dimensions** on **Reconciliation matching rules** with Action **Mark new transactions**. <br> ![Reconciliation matching rules](Images/ReleaseNotes_20220714_2.png "Reconciliation matching rules") <br> New posting logic for financial dimensions: <br> • Account is Bank <br> •  Offset account is Ledger, Customer, Vendor or Bank. ![Posting logic](Images/ReleaseNotes_20220714_1.png "Posting logic") <br> When new bank statement transactions with Offset account type _Ledger_, _Vendor_ or _Bank_'s are matched by using Reconciliation matching rules, the calculated financial dimensions for Account and Offset account are populated on the **Matched transaction**'s **Financial dimensions** tab and can be overriden prior 'Mark as reconciled'. <br> Offset account type _Customer_ creates customer receipt journal(s) with the calculated financial dimensions for Account and Offset account.
+10511		| Vendor payments - Generate payments | Current vendor payment journal line's **Method of payment** and **Bank account** used to populate fields on **Generate payments** dialog.
+
+
+<ins>Bug fixes</ins>
+
+Number	  	| Name	          | Description
+:--       	|:--              	  |:--
+10511		| Vendor payments - Generate payments | Electronic reporting format: **User id** and **File name** updated if Bank account is changed on **Generate payments** dialog. <br> ![Generate payments](Images/ReleaseNotes_20220714_3.png "Generate payments")
+10603		| Bank reconciliation	| Where a bank deposit slip has been cancelled the MS calculated totals are incorrect and resulted in an unmatched amount. Financial utilities unmatched amount calculation has been updated to avoid this issue. <br> ![Unmatched amount](Images/ReleaseNotes_20220714_4.png "Unmatched amount")
+
+#### Build 10.0.27.202207142
+
+Release date: 14/07/2022 <br>
+
+Same as 10.0.25.202207142, and includes the fix for Payment advice V2 required from 10.0.27:
+
+Number	| Functionality	  | Reason
+:--	|:--		  |:--	
+10284	| Eclipse Payment advice V2	| Resolves the **breaking change** with Microsoft introduced new 10.0.27 features when **Enable batch processing for bank payment advice reports** is enabled.
 
 ### Release 10.0.25 & 10.0.27.20220617
 
