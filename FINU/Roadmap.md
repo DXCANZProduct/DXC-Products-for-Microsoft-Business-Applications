@@ -48,11 +48,6 @@ The planned features are grouped by category.
 GitHub Help in D365 <br>
 ![GitHub Help in D365](Images/Roadmap_20220916.png "GitHub Help in D365")
 
-### Cash and bank management
-
-
-### Accounts receivable
-
 
 ## Deprecate
 The following is planned to be deprecated
