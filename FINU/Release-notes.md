@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-09-08
+ms.date: 2022-09-16
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,17 +31,45 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
+### Release 10.0.27.20220916
+
+#### Build 10.0.27.202209161
+
+Release date: 16/09/2022 <br>
+
+DXC Finance Utilities 10.0.27 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
+Microsoft Dynamics 365 application	| 10.0.28	  | [What’s new or changed in Dynamics 365 application version 10.0.28](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-28)
+Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
+
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+10814		| Customer approval	| Accounts receivable > Setup > Accounts receivable parameters <br> Ability to select the following **Customer bank account** fields in Customer Approval: <br> • Bank groups <br> • BSB number <br> • Bank account number <br> • SWIFT code <br> • IBAN <br>  Ability to select the following **Customer account** fields in Customer Approval: <br> • Allow on account <br> • Unlimited credit limit <br> • Exclude from credit management <br> • Invoicing and delivery on hold (blocked) <br> • Charges group <br> • Customer rebate group <br> • Commission group <br> • Payment schedule <br> **Proposed changes** will contain all fields that requires approval, split into a tab for customer and a tab for each bank account with changes. <br> _Note_: Using **Discard all changes** on Proposed changes will discard changes on all tabs.
+10607		| Reconciliation matching rules	| New **Copy matching rule** button provides the ability to copy an existing rule, edit and activate. <br> ![Copy matching rule](Images/ReleaseNotes_20220916_1.png "Copy matching rule")
+10859		| Bank statement format	| When setting up a custom format, and creating the Date field statement line, field **Date format** is now mandatory.
+10468		| Financial utilities parameters	| **About** tab removed. Support info now availabe in workspace **Organization administration > Workspaces > DXC support**.
+
+<ins>Bug fixes</ins>
+
+Number	  	| Name	          | Description
+:--       	|:--              	  |:--
+11305		| Generic electronic Import format	| Fix issue with importing GER bank statement formats. Supports **Advanced bank reconciliation statement model (ABR)** and **Bank statement model** GER formats. 
+10927		| Bank statement import	| Fix to incorrect log when importing bank statements for banks across multiple legal entities. Error: 'No matching bank account found' for bank accounts in the different legal entity.
+11262		| Bank reconciliation	| Can't select **Offset company** in Matched transactions when manually marking a bank statement transaction as new in Bank reconciliation Worksheet. 
+11307		| Bank reconciliation	| Fix to financial dimensions posted for manually marked as new bank statement transactions. Bank account's transaction incorrectly posting without financial dimensions. <br> When user selects **Mark as new** and the records are moved to Matched transactions:  <br> • Account (Bank)'s financial dimensions will be populated from the Bank account. <br> • When user enters **Offset account number**, the offset account's financial dimension will be populated from their master accounts (for example customer's financial dimension), except ledger since it is populated in **Offset account number**. If this would result in a blank value it will be populated with Account (Bank)'s financial dimensions. <br> • If Account (Bank)'s financial dimensions are blank, Offset account's financial dimensions will be used to populate Account (Bank)'s financial dimensions. 
+
+
+# Previous version(s)
+
 ### Release 10.0.25 & 10.0.27.202207142
 
 #### Build 10.0.25.202207142
 
 Release date: 14/07/2022 <br>
-DXC Finance Utilities 10.0.25 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
-Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
 
 Number	  	| Functionality	  | Reason
 :--       	|:--              |:--
@@ -59,41 +87,12 @@ Number	  	| Name	          | Description
 #### Build 10.0.27.202207142
 
 Release date: 14/07/2022 <br>
-DXC Finance Utilities 10.0.27 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
-Microsoft Dynamics 365 application	| 10.0.28	  | [What’s new or changed in Dynamics 365 application version 10.0.28](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-28)
 
 Same as 10.0.25.202207142, and includes the fix for Payment advice V2 required from 10.0.27:
 
 Number	| Functionality	  | Reason
 :--	|:--		  |:--	
 10284	| Eclipse Payment advice V2	| Resolves the **breaking change** with Microsoft introduced new 10.0.27 features when **Enable batch processing for bank payment advice reports** is enabled.
-
-# Next version
-
-### Release 10.0.27.202209
-
-Number	  	| Functionality	  | Description
-:--       	|:--              |:--
-10814		| Customer approval	| Accounts receivable > Setup > Accounts receivable parameters <br> Ability to select the following **Customer bank account** fields in Customer Approval: <br> • Bank groups <br> • BSB number <br> • Bank account number <br> • SWIFT code <br> • IBAN <br>  Ability to select the following **Customer account** fields in Customer Approval: <br> • Allow on account <br> • Unlimited credit limit <br> • Exclude from credit management <br> • Invoicing and delivery on hold (blocked) <br> • Charges group <br> • Customer rebate group <br> • Commission group <br> • Payment schedule
-10607		| Reconciliation matching rules	| New **Copy matching rule** button provides the ability to copy an existing rule, edit and activate. 
-10859		| Bank statement format	| When setting up a custom format, and creating the Date field statement line, field **Date format** is now mandatory.
-10468		| Financial utilities parameters	| **About** tab removed. Support info now availabe in workspace **Organization administration > Workspaces > DXC support**.
-
-<ins>Bug fixes</ins>
-
-Number	  	| Name	          | Description
-:--       	|:--              	  |:--
-11305		| Generic electronic Import format	| Fix issue with importing GER bank statement formats. Supports **Advanced bank reconciliation statement model (ABR)** and **Bank statement model** GER formats. 
-10927		| Bank statement import	| Fix to incorrect log when importing bank statements for banks across multiple legal entities. Error: 'No matching bank account found' for bank accounts in the different legal entity.
-11262		| Bank reconciliation	| When manually marking a bank statement transaction as new in Bank reconciliation Worksheet. Can't select **Offset company** in Matched transactions.
-11307		| Bank reconciliation	| Fix to financial dimensions posted for manually marked as new bank statement transactions. Bank account's transaction incorrectly posting without financial dimensions.
-
-
-# Previous version(s)
 
 ### Release 10.0.25 & 10.0.27.20220617
 
