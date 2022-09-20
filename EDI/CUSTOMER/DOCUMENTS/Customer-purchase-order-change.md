@@ -53,6 +53,7 @@ There are two order purposes (**Change** and **Cancellation**) that can be proce
 Expectation is the customer sends price inclusive of discounts. 
 
 The following [**Customer EDI order types**](../SETUP/CUSTOMER-SETUP/Purchase-order-types.md) and [**Order purposes**](../SETUP/CUSTOMER-SETUP/Order-purpose-group.md) are supported by each Customer inbound document:
+
 **Document type**		              | **Order type**	| **Order purpose**
 :----                                 |:----                |:----
 **Customer purchase order**	          | Order		        | Original <br> Confirmation <br> Cancellation
