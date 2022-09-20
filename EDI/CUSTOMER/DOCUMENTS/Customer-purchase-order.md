@@ -48,6 +48,7 @@ The following setup is prerequisites for the customer purchase order
 
 ## Target D365 transactions
 The following [**Customer EDI order types**](../SETUP/CUSTOMER-SETUP/Purchase-order-types.md) and [**Order purposes**](../SETUP/CUSTOMER-SETUP/Order-purpose-group.md) are supported by each Customer inbound document:
+
 **Document type**		                  | **Order type**	| **Order purpose**
 :----                                 |:----            |:----
 **Customer purchase order**	          | Order		        | Original <br> Confirmation <br> Cancellation
