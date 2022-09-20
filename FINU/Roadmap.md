@@ -37,7 +37,7 @@ This page describes the features planned for future releases and planned release
 
 Release			    | ETA
 :--			        |:--
-2023-1          | 31 January 2023
+2023-01         | 31 January 2023
 
 ## Next release
 ETA: 31 January 2023
