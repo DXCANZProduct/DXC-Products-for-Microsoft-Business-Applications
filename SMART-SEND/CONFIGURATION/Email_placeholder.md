@@ -79,11 +79,11 @@ Below are some common documents with their primary table.
 |  **Sales Order Packing Slip**  | CustPackingSlipJour |  
 |  **Sales Invoice**  | CustInvoiceJour |  
 |  **Customer Account Statement**  | CustTable | 
-|  **Customer Payment Advice**  | BankPaymAdviceCustTmp | 
+|  **Customer Payment Advice**  | LedgerJournalTrans | 
 |  **Collection Letter**  | CustCollectionLetterJour | 
 |  **Request for Quotation**  | VendRFQJour | 
 |  **Purchase Order Confirmation**  | VendPurchOrderJour | 
-|  **Vendor Payment Advice**  | BankPaymAdviceVendTmp | 
+|  **Vendor Payment Advice**  | LedgerJournalTrans | 
 |  **Project Quotation**  | CustQuotationJour | 
 |  **Project Invoice**  | ProjInvoiceJour | 
 |  **Transfer Overview**  | InventTransferTable | 
