@@ -285,4 +285,5 @@ The following EDI Line fields are available on the lines page.
 **Requested ship date**     | The requested ship date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested ship date <br> If staging blank will be populated by Sales order Header
 **Requested receipt date**  | The requested receipt date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested receipt date <br> If staging blank will be populated by Sales order Header
 **Comments**                | Line comments for the order line.                                            | Sales line > EDI > Comments
+**Item description**        | Item description for the order line.                                         | Sales line > EDI > Item description
 
