@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-07-15
+ms.date: 2022-09-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SAB_EDIParameters
+# ms.search.form: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -32,18 +32,83 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-Next release is planned for 30 September 2022.
+Next release is planned for 31 January 2023.
 
-### Release 10.0.25.20220630
+### Release 10.0.27.20220930
 
-DXC EDI 10.0.25 runs on the following Microsoft releases
+DXC EDI 10.0.27 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
-Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
 Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
 Microsoft Dynamics 365 application	| 10.0.28	  | [What’s new or changed in Dynamics 365 application version 10.0.28](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-28)
+Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
+
+
+#### Build 10.0.25.20220930TBD
+Release date: 30 September 2022 <br> 
+Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+<ins>New features</ins>
+
+**Core module**	- Applies to all modules
+
+Number	| Functionality	  	| Reason
+:--	|:--		  	|:--	
+10549	| CAR report		| CAR resolution
+10549	| Workspace		| Workspace patter version changed from 1.1 to 1.2
+10549	| XSLT scripting	| Due to MS deprecating XSLT scripting, the **Enable XSLT scripting** option has been removed from **EDI shared parameters**
+
+**Customer module**	
+
+Number	| Functionality	  	| Reason
+:--	|:--		  	|:--	
+11255	| Customer purchase order	| Applicable to where store code isn't used and the order refers to a new customer address. Previously if the new address couldn't be created, the sales order was created without a delivery address. Now it will rather error the staging record, so the address details can be fixed and the sales order created with a delivery address. Example: EDI order's delivery address refers to a state that can't be found in D365, i.e. Victoria instead of VIC.
+
+**Vendor module**	
+
+Number	| Functionality	  | Reason
+:--	|:--		  |:--	
+11185	| Purchase invoice	| Related to 10372, but calculation has been updated to include equal. <br> 10372: Product receipt quantity to match. A Purchase invoice could be partial, i.e. not match the complete qty of the product receipt processed on D365. Previously when PackingSlipID is blank (not provided in file), EDI fully matches to the product receipt(s) processed for the order, even if Invoice qty < Product received qty. Now EDI will check staging line field ShippedQuantity, if InvoiceQuantity is less than ShippedQuantity, then ‘Product receipt quantity to match’ will be set to InvoiceQuantity.
+
+**3PL module**	
+
+Number	| Functionality	  | Reason
+:--	|:--		  |:--	
+
+<ins>Bug fixes</ins>
+
+**Core module**	- Applies to all modules	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+11309	| Validate on Sales order	| **Validate** button is now disabled on Sales order when the Document status is set to _Tax invoice_. 
+
+**Vendor module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+
+
+**3PL module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+
+
+#### Build 10.0.27.20220930TBD
+Release date: 30 September 2022 <br>
+Includes Inbound Transportation management (ITM) & ITM version Freight forwarder of 10.0.27.20220930
+	
+# Previous version(s)
+
+### Release 10.0.22.20220630
 
 #### Build 10.0.25.202206301
 
@@ -133,8 +198,6 @@ Number	| Name		 | Description
 
 #### Build 10.0.25.202206302
 Includes Inbound Transportation management (ITM) & ITM version Freight forwarder of 10.0.25.20220630
-	
-# Previous version(s)
 
 ### Release 10.0.22.202204101
 
