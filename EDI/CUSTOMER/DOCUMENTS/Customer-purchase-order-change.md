@@ -319,5 +319,5 @@ The following EDI Line staging fields are available on the line page.
 **Requested ship date** |	The requested ship date (delivery window) from the EDI record is shown here.	| Sales line > Delivery > Requested ship date. If staging blank will be populated by Sales order Header
 **Requested receipt date**  |	The requested receipt date (delivery window) from the EDI record is shown here.	| Sales line > Delivery > Requested receipt date. If staging blank will be populated by Sales order Header
 **Delivery name**       |	Address for Delivery – Delivery name	
-**Item description**        | Item description for the order line.                                         | Sales line > EDI > Item description
 **Store code**          |	The store code from the EDI record line is shown here.	| Sales line> EDI > General > Store code. EDI supports different store codes on line level
+**Item description**        | Item description for the order line.                                         | Sales line > EDI > Item description
