@@ -73,15 +73,10 @@ Number	| Functionality	  | Reason
 
 **3PL module**	
 
-Number	| Functionality	  | Reason
-:--	|:--		  |:--	
 
 <ins>Bug fixes</ins>
 
 **Core module**	- Applies to all modules	
-
-Number	| Name		 | Description
-:--	|:--		 |:--
 
 
 **Customer module**	
@@ -92,14 +87,10 @@ Number	| Name		 | Description
 
 **Vendor module**	
 
-Number	| Name		 | Description
-:--	|:--		 |:--
 
 
 **3PL module**	
 
-Number	| Name		 | Description
-:--	|:--		 |:--
 
 
 #### Build 10.0.27.20220930TBD
