@@ -64,6 +64,7 @@ Number	| Functionality	  	| Reason
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--	
 11255	| Customer purchase order	| Applicable to where store code isn't used and the order refers to a new customer address. Previously if the new address couldn't be created, the sales order was created without a delivery address. Now it will rather error the staging record, so the address details can be fixed and the sales order created with a delivery address. Example: EDI order's delivery address refers to a state that can't be found in D365, i.e. Victoria instead of VIC.
+4470	| Customer purchase order	| New field **Item description** added to 'Customer purchase order' and 'Customer purchase order change'. When these documents create a new sales order line, new field **Item description** (available on EDI tab on sales order lines) will be populated.
 
 **Vendor module**	
 
