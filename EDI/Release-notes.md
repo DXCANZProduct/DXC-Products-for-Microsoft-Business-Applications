@@ -69,7 +69,7 @@ Number	| Functionality	  	| Reason
 
 Number	| Functionality	  | Reason
 :--	|:--		  |:--	
-11185	| Purchase invoice	| Related to 10372, but calculation has been updated to include equal. <br> 10372: Product receipt quantity to match. A Purchase invoice could be partial, i.e. not match the complete qty of the product receipt processed on D365. Previously when PackingSlipID is blank (not provided in file), EDI fully matches to the product receipt(s) processed for the order, even if Invoice qty < Product received qty. Now EDI will check staging line field ShippedQuantity, if InvoiceQuantity is less than ShippedQuantity, then ‘Product receipt quantity to match’ will be set to InvoiceQuantity.
+11185	| Purchase invoice	| Related to 10372, but calculation has been updated to include equal. <br> If the Shipped quantity is higher **or equal** to the Invoice quantity, the 'Product receipt quantity to match' will be set to _Invoice quantity_
 
 **3PL module**	
 
