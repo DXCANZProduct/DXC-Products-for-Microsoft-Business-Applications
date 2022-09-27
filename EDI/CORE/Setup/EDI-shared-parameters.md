@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Setup EDI shared parameters
 author: jdutoi2
 manager: Kym Parker
-ms.date: 2020-01-12
+ms.date: 2022-09-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,5 +46,4 @@ The following table describes the fields that are available on the **General** t
 <ins>**Reset status**</ins>       | 
 **Documents reset status**        |	Assign default Reset status profile for all staging documents. <br> Can be overridden on Trading partner’s document level. <br> This field can also be left blank here and selected on only the specific Trading partner’s document level. <br> _Note: Setup the periodic job to run the reset status of staging records via **EDI > Periodic tasks > Reset document status**_
 **Files reset status**            |	Assign default Reset status profile for all inbound and outbound files. This field can't be specified/overridden on a Trading partner's document level. <br> _Note: Setup the periodic job to run the reset status of inbound and outbound files via **EDI > Periodic tasks > Reset document status**_
-<ins>**Options**</ins>            |
-**Enable XLST scripting**         |	Option to enable scripting for XLST. If not enabled and scripting is used on XLST document, it will error with _Execution of scripts was prohibited_
+
