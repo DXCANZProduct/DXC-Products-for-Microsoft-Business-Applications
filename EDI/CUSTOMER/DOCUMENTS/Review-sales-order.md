@@ -71,7 +71,7 @@ The Customer EDI module includes modifications to Sales orders. Users can access
 **Field**		| **Description**
 :--			|:--
 <ins>**Validation**</ins>	|   |
-**Validate**		| Select the **Validate** button to run validation rules for the sales order. Validation rules are determined by **Validation profile** setup on the Trading partner's **Customer purchase order** document.
+**Validate**		| Select the **Validate** button to run validation rules for the sales order. Validation rules are determined by **Validation profile** setup on the Trading partner's **Customer purchase order** document. The **Validate** button is disabled where the **Document status** is set to _Tax invoice_.
 **Log**			| Select the **Log** button to view the validation errors that have occurred for the order. 
 <ins>**POA**</ins>	|   |
 **Acknowledgement**	| Option to manually review and/or process the Purchase order acknowledgement to the Customer. The **Send to EDI** option is also included within this form
