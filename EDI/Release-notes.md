@@ -58,6 +58,7 @@ Number	| Functionality	  	| Reason
 10549	| CAR report		| CAR resolution
 10549	| Workspace		| Workspace pattern version changed from 1.1 to 1.2
 10549	| XSLT scripting	| Due to MS deprecating XSLT scripting, the **Enable XSLT scripting** option has been removed from **EDI shared parameters**
+8408	| Data entities		| EDI fields added to standard entity 'Released products V2': <br> • Inner unit <br> • Outer unit <br> <br> EDI entities added: <br> • EDI Azure sites <br> • EDI Web API settings
 
 **Customer module**	
 
