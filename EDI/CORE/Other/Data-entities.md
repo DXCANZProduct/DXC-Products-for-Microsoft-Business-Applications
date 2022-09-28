@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Data entities
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-01-11
+ms.date: 2022-09-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,6 +38,9 @@ EDI > Setup > Connection setup
 :-----|:------------------------------------|:-------------------                                      |:------------------------
 1		  | EDI FTP sites                       | FTP and SFTP **Connection details**, excluding passwords |
 2     | EDI FTP Folder setup                | FTP and SFTP **Incoming and Outgoing paths**             | • EDI FTP sites <br> •	Socks4
+3     | EDI Azure sites                     | Azure **Connection details**, excluding passwords        |
+4     | EDI Azure container setup           | Azure container names for **Incoming and Outgoing paths** | • EDI Azure sites
+5     | EDI Web API settings                | Web API **Connection details**
 
 
 ## Core setup
