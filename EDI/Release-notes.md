@@ -92,7 +92,9 @@ Number	| Name		 | Description
 
 
 **3PL module**	
-
+Number	| Name		 	| Description
+:--	|:--		 	|:--
+10527	| Picking list		| When generating the Picking list and unticking **Send to EDI**, the picking list staging record was still created.
 
 
 #### Build 10.0.27.20220930TBD
