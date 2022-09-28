@@ -56,7 +56,7 @@ Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--	
 10549	| CAR report		| CAR resolution
-10549	| Workspace		| Workspace patter version changed from 1.1 to 1.2
+10549	| Workspace		| Workspace pattern version changed from 1.1 to 1.2
 10549	| XSLT scripting	| Due to MS deprecating XSLT scripting, the **Enable XSLT scripting** option has been removed from **EDI shared parameters**
 
 **Customer module**	
