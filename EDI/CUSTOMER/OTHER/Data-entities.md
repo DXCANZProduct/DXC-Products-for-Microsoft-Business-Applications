@@ -74,12 +74,12 @@ EDI > Setup > Trading partner
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
 1                 | EDI Customers                           | Create new Customer trading partner   | [Customer setup](#customer-setup)
 2                 | EDI Documents - Customers               | Add incoming and outgoing documents to Customer trading partner | EDI Customers, [Customer setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data-entities.md#document-types)
-3                 | Customer postal addresses                 | Standard data entity with addition of EDI field SAB_EDIStoreCode | 
+3                 | Customer postal addresses                 | Standard data entity with addition of EDI field <br> •  EDI Store Code | 
 
 ## Released products
 Product information management > Products > Released products
 
 **Order**         | **Entity**						                  | **Description**                             | **Dependency**
 :-----------------|:------------------------------------		|:-------------------------                   |:-------------------------
-1                 | Released products V2                    | EDI fields added to standard entitity: <br> • Inner unit <br> • Outer unit
+1                 | Released products V2                    | Standard data entity with addition of EDI fields: <br> • Inner unit <br> • Outer unit
 
