@@ -46,7 +46,7 @@ Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dyn
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-11568		| Bank statement periodic import	| Due to a change in MS code in 10.0.29. Periodic import created the bank statement, but file was moved to Error folder (instead of Archive folder) and document not attached to Bank statement(s).
+11568		| Bank statement periodic import	| Due to a change in MS code in 10.0.29. Periodic import created the Bank statement(s), but file was moved to Error folder (instead of Archive folder) and document not attached to Bank statement(s).
 
 
 # Previous version(s)
