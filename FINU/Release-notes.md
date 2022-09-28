@@ -31,6 +31,26 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
+### Release 10.0.29.20220927
+
+#### Build 10.0.29.202209271
+
+Release date: 29/09/2022 <br>
+
+DXC Finance Utilities 10.0.29 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
+
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+11568		| Bank statement periodic import	| Due to a change in MS code in 10.0.29. Periodic import created the bank statement, but file was moved to Error folder (instead of Archive folder) and document not attached to Bank statement(s).
+
+
+# Previous version(s)
+
 ### Release 10.0.27.20220916
 
 #### Build 10.0.27.202209162
@@ -43,7 +63,7 @@ Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
 Microsoft Dynamics 365 application	| 10.0.28	  | [What’s new or changed in Dynamics 365 application version 10.0.28](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-28)
-Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
+
 
 
 Number	  	| Functionality	  | Description
@@ -63,8 +83,6 @@ Number	  	| Name	          | Description
 11307		| Bank reconciliation	| Fix to financial dimensions posted for manually marked as new bank statement transactions. Bank account's transaction incorrectly posting without financial dimensions (10.0.25 & 10.0.27.202207142). <br> <br> Updated logic when user selects **Mark as new** and the records are moved to Matched transactions:  <br> • Account (Bank)'s financial dimensions will be populated from the Bank account. <br> • When user enters **Offset account number**, the offset account's financial dimension will be populated from their master accounts (for example customer's financial dimension), except ledger since it is populated in **Offset account number**. If this would result in a blank value it will be populated with Account (Bank)'s financial dimensions. <br> • If Account (Bank)'s financial dimensions are blank, Offset account's financial dimensions will be used to populate Account (Bank)'s financial dimensions. 
 10422		| Vendor method of payment | **Lodgement reference** Payment attribute displaying as blank. Std's D365 last record in Attributes (Belgian structured payment ID) is region based and resulted in any records after it displaying blank. <br> ![Payment attributes](Images/ReleaseNotes_20220916_5.png "Payment attributes")
 
-
-# Previous version(s)
 
 ### Release 10.0.25 & 10.0.27.202207142
 
