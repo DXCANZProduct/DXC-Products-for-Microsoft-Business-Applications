@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer - Data entities
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-07-20
+ms.date: 2022-09-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -75,3 +75,11 @@ EDI > Setup > Trading partner
 1                 | EDI Customers                           | Create new Customer trading partner   | [Customer setup](#customer-setup)
 2                 | EDI Documents - Customers               | Add incoming and outgoing documents to Customer trading partner | EDI Customers, [Customer setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data-entities.md#document-types)
 3                 | Customer postal addresses                 | Standard data entity with addition of EDI field SAB_EDIStoreCode | 
+
+## Released products
+Product information management > Products > Released products
+
+**Order**         | **Entity**						                  | **Description**                             | **Dependency**
+:-----------------|:------------------------------------		|:-------------------------                   |:-------------------------
+1                 | Released products V2                    | EDI fields added to standard entitity: <br> • Inner unit <br> • Outer unit
+
