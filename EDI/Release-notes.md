@@ -87,6 +87,7 @@ Number	| Functionality	  | Reason
 Number	| Name		 | Description
 :--	|:--		 |:--
 11309	| Validate on Sales order	| **Validate** button is now disabled on Sales order when the Document status is set to _Tax invoice_. 
+10648	| POA		| When a sales line is out of stock, still send unit price on Customer purchase order acknowledgement.
 
 **Vendor module**	
 
