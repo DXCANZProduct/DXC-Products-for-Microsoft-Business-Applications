@@ -45,7 +45,7 @@ Microsoft Dynamics 365 application	| 10.0.28	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
 
 
-#### Build 10.0.27.20220930TBD
+#### Build 10.0.27.202209301
 Release date: 30 September 2022 <br> 
 Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
@@ -99,7 +99,7 @@ Number	| Name		 	| Description
 10527	| Picking list		| When generating the Picking list and unticking **Send to EDI**, the picking list staging record was still created.
 
 
-#### Build 10.0.27.20220930TBD
+#### Build 10.0.27.202209302
 Release date: 30 September 2022 <br>
 Includes Inbound Transportation management (ITM) & ITM version Freight forwarder of 10.0.27.20220930
 	
