@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-09-29
+ms.date: 2022-09-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,7 +58,7 @@ Number	| Functionality	  	| Reason
 10549	| CAR report		| CAR resolution
 10549	| Workspace		| Workspace pattern version changed from 1.1 to 1.2
 10297	| XSLT scripting	| Due to MS deprecating XSLT scripting, the **Enable XSLT scripting** option has been removed from **EDI shared parameters**
-8408	| Data entities		| EDI fields 'Inner unit' and 'Outer unit' added to standard entity **Released products V2** <br> EDI entities added: **EDI Azure sites** and **EDI Web API settings**
+8408 <br> 11577	| Data entities		| EDI fields 'Inner unit' and 'Outer unit' added to standard entity **Released products V2** <br> EDI entities added: **EDI Azure sites**, **EDI Azure container setup** and **EDI Web API settings**
 
 **Customer module**	
 
