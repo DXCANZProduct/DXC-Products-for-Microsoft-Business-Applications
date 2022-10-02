@@ -75,12 +75,9 @@ Number	| Functionality	  | Reason
 11185	| Purchase invoice	| Related to 10372, but calculation has been updated to include equal. <br> If the Shipped quantity is higher **or equal** to the Invoice quantity, the 'Product receipt quantity to match' will be set to _Invoice quantity_
 11272	| Vendor purchase order	| New header fields **Requester email** and **Requester phone** added to 'Vendor purchase order' and 'Vendor purchase order change' documents
 
-**3PL module**	
 
 
 <ins>Bug fixes</ins>
-
-**Core module**	- Applies to all modules	
 
 
 **Customer module**	
@@ -90,11 +87,10 @@ Number	| Name		 | Description
 11309	| Validate on Sales order	| **Validate** button is now disabled on Sales order when the Document status is set to _Tax invoice_. 
 10648	| POA		| When a sales line is out of stock, still send unit price on Customer purchase order acknowledgement.
 
-**Vendor module**	
-
 
 
 **3PL module**	
+
 Number	| Name		 	| Description
 :--	|:--		 	|:--
 10527	| Picking list		| When generating the Picking list and unticking **Send to EDI**, the picking list staging record was still created.
