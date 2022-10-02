@@ -37,14 +37,13 @@ This page describes the features planned for future releases and planned release
 
 Release			| ETA
 :--			|:--
-2022-09			| 30 September 2022
 2023-01		 	| 31 January 2023
 2023-03			| 31 March 2023
 2023-06			| 30 June 2023
 
 
 ## Next release
-ETA: 30 September 2022
+ETA: 31 January 2023
 
 The planned features are grouped by module. Core is included for all modules.
 
@@ -90,7 +89,7 @@ The following features are planned for a future release
 
 
 ## Deprecate
-The following is planned to be deprecated
+The following has been deprecated
 
-#### September release
-- MS has deprecated scripting. We will therefor remove setting **Enable scripting** from **EDI shared parameters** in the September release.
+#### September 2022 release
+- MS has deprecated scripting. We have therefor removed setting **Enable scripting** from **EDI shared parameters** in the September release.
