@@ -47,6 +47,7 @@ EDI > Setup > Customer setup
 
 ## Core setup
 EDI > Setup > EDI parameters
+
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
 1                 | Sales order hold codes          | Create new **Order hold codes** to use in **EDI parameters**: <br> • POC pending hold code <br> • POA pending hold code <br> • Validation error hold code |
