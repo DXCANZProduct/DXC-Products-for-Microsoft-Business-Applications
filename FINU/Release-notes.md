@@ -50,6 +50,13 @@ Number	  	| Functionality	  | Description
 :--       	|:--              |:--
 11598		| Reconciliation matching rules	| Ability to set **Field format** for **Offset account bank statement field** and **Settle transaction bank statement field**. This assists in obtaining the D365 customer account and Invoice number from bank statement fields. See [Setup guide](Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md) for further information. <br> ![Reconcilation matching rules](Images/ReleaseNotes_20221019_1.png "Reconcilation matching rules") <br> ![Reconcilation matching rules example](Images/ReleaseNotes_20221019_2.png "Reconcilation matching rules example")
 
+<ins>Bug fixes</ins>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+11623		| Customer bank account entity	| Related to version 10.0.27.202209162. <br> Error when importing data entity **Customer bank account**: Field 'Reference' must be filled in'
+11632		| Security	| Related to version 10.0.27.202209162. <br> Fixed security on **Proposed changes** for Customer approval. New privilege added to following duties: <br> • Approve customer change proposals <br> • Maintain customer master
+
 
 #### Build 10.0.27.202210191
 
