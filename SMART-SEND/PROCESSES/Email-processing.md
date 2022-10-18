@@ -31,9 +31,10 @@ There are a few ways of sending business forms or reports to Smart Send.
 * Configure print management setup to route to Smart Send as the default print destination.
 * Some business forms or reports open printing dialog, select the Smart Send as the print destination.
 * A number of forms have Smart Send button, when clicked it will email the business form or report using Smart Send set up.
+* Set print management to use an electronic report format and include Smart Send within the electronic reporting destinations.
 
 ## Print management setup
-Defaulting to Smart send can be achieved using the standard Dynamics 365 for finance and operations form setup, print management configuration.  Open the relevant module form setup menu and select the print management option. Select the relevant business form or report and specify Smart Send in the destination field.
+Defaulting to Smart send can be achieved using the standard Dynamics 365 for finance and operations form setup, print management configuration.  Open the relevant module form setup menu and select the print management option. Select the relevant business form or report and specify Smart Send in the destination field. For further details on the configuration for use with electronic reports, see [Electronic Reporting](../PROCESSES/Electronic_Reporting.md)
  
 ## Printer destination Smart Send
 To use the Smart send functionality, select it under the Print *destination* settings when printing the given business form or report. If no recipient is found the selected printer setting will be used instead. 
@@ -64,20 +65,25 @@ A number of forms have Smart Send button added. This is a quick way of email a p
 *	Free text invoice
 *	Collection letter journal
 *	Customer payments (Customer payment journal lines)
+
 #### Vendor
 *	Request for quotation journals
 *	Purchase order journal
 *	Vendor payment history
 *	Vendor payments (Vendor payment journal lines)
+
 #### Project
 *	Project quotation journal
 *	Project invoice journal
 *	Project invoice list
+
 #### Inventory management
 *	Transfer (order) overview
+
 #### Warehouse management
 *	Bill of lading
 *	Container contents
+
 #### Transportation Management
 * Commercial invoice
 *	Packing list

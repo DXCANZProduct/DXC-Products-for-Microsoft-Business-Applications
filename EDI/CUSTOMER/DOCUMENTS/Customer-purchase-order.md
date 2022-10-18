@@ -48,6 +48,7 @@ The following setup is prerequisites for the customer purchase order
 
 ## Target D365 transactions
 The following [**Customer EDI order types**](../SETUP/CUSTOMER-SETUP/Purchase-order-types.md) and [**Order purposes**](../SETUP/CUSTOMER-SETUP/Order-purpose-group.md) are supported by each Customer inbound document:
+
 **Document type**		                  | **Order type**	| **Order purpose**
 :----                                 |:----            |:----
 **Customer purchase order**	          | Order		        | Original <br> Confirmation <br> Cancellation
@@ -284,4 +285,5 @@ The following EDI Line fields are available on the lines page.
 **Requested ship date**     | The requested ship date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested ship date <br> If staging blank will be populated by Sales order Header
 **Requested receipt date**  | The requested receipt date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested receipt date <br> If staging blank will be populated by Sales order Header
 **Comments**                | Line comments for the order line.                                            | Sales line > EDI > Comments
+**Item description**        | Item description for the order line.                                         | Sales line > EDI > Item description
 

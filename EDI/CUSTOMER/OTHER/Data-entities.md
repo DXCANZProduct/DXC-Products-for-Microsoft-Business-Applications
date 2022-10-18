@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer - Data entities
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-07-20
+ms.date: 2022-09-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,6 +47,7 @@ EDI > Setup > Customer setup
 
 ## Core setup
 EDI > Setup > EDI parameters
+
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
 1                 | Sales order hold codes          | Create new **Order hold codes** to use in **EDI parameters**: <br> • POC pending hold code <br> • POA pending hold code <br> • Validation error hold code |
@@ -74,4 +75,12 @@ EDI > Setup > Trading partner
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
 1                 | EDI Customers                           | Create new Customer trading partner   | [Customer setup](#customer-setup)
 2                 | EDI Documents - Customers               | Add incoming and outgoing documents to Customer trading partner | EDI Customers, [Customer setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data-entities.md#document-types)
-3                 | Customer postal addresses                 | Standard data entity with addition of EDI field SAB_EDIStoreCode | 
+3                 | Customer postal addresses                 | Standard data entity with addition of EDI field <br> •  Store Code | 
+
+## Released products
+Product information management > Products > Released products
+
+**Order**         | **Entity**						                  | **Description**                             | **Dependency**
+:-----------------|:------------------------------------		|:-------------------------                   |:-------------------------
+1                 | Released products V2                    | Standard data entity with addition of EDI fields: <br> • Inner unit <br> • Outer unit
+

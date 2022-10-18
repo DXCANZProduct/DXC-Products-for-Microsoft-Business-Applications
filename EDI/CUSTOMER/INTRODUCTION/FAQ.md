@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer - FAQ
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-07-20
+ms.date: 2022-09-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,6 +52,7 @@ Missing ASN line configuration on warehouse: %	| Delivery note has posted, but n
 Duplicate line number % | The staging record contains duplicate data in field **Line number**. Fix numbering.
 Invalid order type      | The order type can't be found in the **Customer EDI order types** mapping assigned to the customer trading partner. If order type is correct, add to the applicable [Customer EDI order type group](../SETUP/CUSTOMER-SETUP/Purchase-order-types.md) or fix the staging record to the correct order type.
 Purchase order % already exists on sales order %  | Customer requisition duplication. Review **Duplicate tolerance** on document setting profile assigned to the trading partner. If accept on flagged orders, set the **Bypass duplicate check** to _Yes_ on the existing D365 sales order.
+Invalid delivery postal address | The order doesn't use store code to find the delivery address, and thus uses the delivery address fields to create the sales order. Where the address doesn't exist on the Customer, the address will be created against the customer and then used on the Sales order. This error will occur if EDI can't create the address, for example can't find the state in D365. Fix the delivery address field(s) on the staging record.
 
 ### Customer purchase order change
 

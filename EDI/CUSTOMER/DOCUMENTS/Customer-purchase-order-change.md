@@ -53,6 +53,7 @@ There are two order purposes (**Change** and **Cancellation**) that can be proce
 Expectation is the customer sends price inclusive of discounts. 
 
 The following [**Customer EDI order types**](../SETUP/CUSTOMER-SETUP/Purchase-order-types.md) and [**Order purposes**](../SETUP/CUSTOMER-SETUP/Order-purpose-group.md) are supported by each Customer inbound document:
+
 **Document type**		              | **Order type**	| **Order purpose**
 :----                                 |:----                |:----
 **Customer purchase order**	          | Order		        | Original <br> Confirmation <br> Cancellation
@@ -299,22 +300,24 @@ The following EDI Line staging fields are available on the line page.
 **Line number**         |	The line within the EDI table/file. <br> Used to find applicable sales line to update. Except where adding new lines.	| New lines: Sales Line > EDI > General > Line number
 **EDI order change type** |	The Change or Response type code. Code specifying the type of change to the line item. Used where document setting **Processing method** is set to _Automatic_ to find a match in **Order line change type group** assigned to the Trading partner. | Sales line > EDI General > Order line change type
 **Item number**         |	The item identifier as sent by the trading partner. Used when **Item Id source** is: <br> •	**Our item number** <br> •	**External item number**	| New lines: Sales line> EDI > General > EDI Item number <br> **Barcode**	The item identifier as sent by the trading partner. Used when **Item Id source** is: <br> •	**GTIN** <br> •	Barcode
+**Bar code**                | The item identifier as sent by the trading partner. 	| When document type setting **Item Id source** is: <br> • **GTIN** or <br> • **Barcode** <br> used to determine: Sales line > Item number
 **SKU**                 |	SKU for item	
-**Unit Price**          |	Customer unit price inclusive of discounts (net price)	| Sales line > Unit price <br> If document setting **Use customer price** set to _Yes_
-**Customer sales quantity** |	The customer order quantity for this line.	        | Sales line > EDI > POA response > Customer > Quantity
-**Unit**                |	The customer unit of measure for this line	
-**Line amount excluding tax** |	The total line amount excluding tax.	            | Sales line > Unit price <br> If document setting **Use customer price** set to _Yes_ AND Staging's **Unit price** is blank AND document setting **Prices include GST** set to _No_: Sales line's **Unit price** is calculated by **Line amount excluding tax** / **Customer sales quantity**
-**Line amount including tax** |	The total line amount including tax (if provided else 0)	| Sales line > Unit price <br> If document setting **Use customer price** set to _Yes_ AND Staging's **Unit price** is blank AND document setting **Prices include GST** set to _Yes_: Sales line **Unit price** is calculated by **Line amount including tax** / **Customer sales quantity**
-**Customer inners**     |	The customer’s inners per outer quantity	              | Sales line > EDI > POA response > Customer > Inner
-**Customer pack**       |	The customer’s pack quantity	                          | Sales line > EDI > POA response > Customer > Pack
+**Site**                |	Storage dimension - Site	                              | Sales line > Site. If staging blank will be populated by Sales order Header
+**Warehouse**           |	Storage dimension - Warehouse	                          | Sales line > Warehouse. If staging blank will be populated by Sales order Header
 **Configuration**       |	Product dimension - Configuration	                      | Sales line > Product dimension
 **Colour**	            |   Product dimension - Colour	                              | Sales line > Product dimension
 **Size**                |	Product dimension - Size	                              | Sales line > Product dimension
 **Style**               |	Product dimension - Style	                              | Sales line > Product dimension
 **Version**             |   Product dimension - Version                               | Sales line > Product dimension
-**Site**                |	Storage dimension - Site	                              | Sales line > Site. If staging blank will be populated by Sales order Header
-**Warehouse**           |	Storage dimension - Warehouse	                          | Sales line > Warehouse. If staging blank will be populated by Sales order Header
-**Store code**          |	The store code from the EDI record line is shown here.	| Sales line> EDI > General > Store code. EDI supports different store codes on line level
-**Delivery name**       |	Address for Delivery – Delivery name	
+**Customer sales quantity** |	The customer order quantity for this line.	        | Sales line > EDI > POA response > Customer > Quantity
+**Customer inners**     |	The customer’s inners per outer quantity	              | Sales line > EDI > POA response > Customer > Inner
+**Customer pack**       |	The customer’s pack quantity	                          | Sales line > EDI > POA response > Customer > Pack
+**Unit**                |	The customer unit of measure for this line	
+**Unit Price**          |	Customer unit price inclusive of discounts (net price)	| Sales line > Unit price <br> If document setting **Use customer price** set to _Yes_
+**Line amount excluding tax** |	The total line amount excluding tax.	            | Sales line > Unit price <br> If document setting **Use customer price** set to _Yes_ AND Staging's **Unit price** is blank AND document setting **Prices include GST** set to _No_: Sales line's **Unit price** is calculated by **Line amount excluding tax** / **Customer sales quantity**
+**Line amount including tax** |	The total line amount including tax (if provided else 0)	| Sales line > Unit price <br> If document setting **Use customer price** set to _Yes_ AND Staging's **Unit price** is blank AND document setting **Prices include GST** set to _Yes_: Sales line **Unit price** is calculated by **Line amount including tax** / **Customer sales quantity**
 **Requested ship date** |	The requested ship date (delivery window) from the EDI record is shown here.	| Sales line > Delivery > Requested ship date. If staging blank will be populated by Sales order Header
 **Requested receipt date**  |	The requested receipt date (delivery window) from the EDI record is shown here.	| Sales line > Delivery > Requested receipt date. If staging blank will be populated by Sales order Header
+**Delivery name**       |	Address for Delivery – Delivery name	
+**Store code**          |	The store code from the EDI record line is shown here.	| Sales line> EDI > General > Store code. EDI supports different store codes on line level
+**Item description**        | Item description for the order line.                                         | Sales line > EDI > Item description

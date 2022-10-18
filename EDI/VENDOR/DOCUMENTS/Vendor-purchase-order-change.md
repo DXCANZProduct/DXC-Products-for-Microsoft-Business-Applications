@@ -256,6 +256,8 @@ The following EDI Header staging fields are available on the header page.
 **Delivery mode**                   | Delivery mode	
 **Text**                            | Header note to be sent with purchase order	
 **Requester**                       | Requester	                                                        | Requester
+**Requester email**                 | Requester's primary email	                  
+**Requester phone**                 | Requester's primary phone
 **Attention information**           | Attention information	
 <ins>**Transportation**</ins>		|
 **Shipping carrier**                | Shipping carrier	

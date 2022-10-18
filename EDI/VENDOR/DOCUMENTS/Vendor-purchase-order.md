@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor Documents - Vendor purchase order
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-11
+ms.date: 2022-09-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -253,6 +253,8 @@ The following EDI Header staging fields are available on the header page.
 **Delivery mode**                   | Delivery mode	
 **Text**                            | Header note to be sent with purchase order	
 **Requester**                       | Requester	                                                        | Requester
+**Requester email**                 | Requester's primary email	                  
+**Requester phone**                 | Requester's primary phone
 **Attention information**           | Attention information	
 <ins>**Transportation**</ins>		|
 **Shipping carrier**                | Shipping carrier	
