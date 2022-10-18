@@ -55,7 +55,7 @@ Number	  	| Functionality	  | Description
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
 11623		| Customer bank account entity	| Related to version 10.0.27.202209162. <br> Error when importing data entity **Customer bank accounts**: Field 'Reference' must be filled in'
-11632		| Security	| Related to version 10.0.27.202209162. <br> Fixed security on **Proposed changes** for Customer approval. New privilege added to following duties: <br> • Approve customer change proposals <br> • Maintain customer master
+11632		| Security	| Related to version 10.0.27.202209162. <br> Fixed security on **Proposed changes** for Customer approval. <br> New privilege added to following duties: <br> • Approve customer change proposals <br> • Maintain customer master
 
 
 #### Build 10.0.27.202210191
