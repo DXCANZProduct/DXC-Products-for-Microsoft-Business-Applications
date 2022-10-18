@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-09-29
+ms.date: 2022-10-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,31 +31,29 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.29.20220927
+### Release 10.0.29.20221019 & 10.0.27.20221019
 
-#### Build 10.0.29.202209271
+#### Build 10.0.29.202210191 
 
-Release date: 29/09/2022 <br>
+Release date: 19/10/2022 <br>
 
 DXC Finance Utilities 10.0.29 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
+Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
 
+<ins>New features</ins>
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-11568		| Bank statement periodic import	| Due to a change in MS code in 10.0.29. <br> Periodic import created the Bank statement(s), but: <br> • File was moved to Error folder (instead of Archive folder) <br> • Document not attached to Bank statement(s) <br> • 'Imported via financial connection' not set to Yes.
+11598		| Reconciliation matching rules	| Ability to set **Field format** for **Offset account bank statement field** and **Settle transaction bank statement field**. This assists in obtaining the D365 customer account and Invoice number from bank statement fields. See [Setup guide](Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md) for further information. <br> ![Reconcilation matching rules](RELEASE-NOTES-IMAGES/20221019_1.png "Reconcilation matching rules") <br> ![Reconcilation matching rules example](RELEASE-NOTES-IMAGES/20221019_2.png "Reconcilation matching rules example")
 
 
-# Previous version(s)
+#### Build 10.0.27.202210191
 
-### Release 10.0.27.20220916
-
-#### Build 10.0.27.202209162
-
-Release date: 16/09/2022 <br>
+Release date: 19/10/2022 <br>
 
 DXC Finance Utilities 10.0.27 runs on the following Microsoft releases
 
@@ -64,7 +62,32 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
 Microsoft Dynamics 365 application	| 10.0.28	  | [What’s new or changed in Dynamics 365 application version 10.0.28](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-28)
 
+Same as 10.0.29.202210191 version, but excludes change that isn't backwards compatible for D365 versions earlier than 10.0.29:
 
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+11568		| Bank statement periodic import	| Due to a change in MS code in 10.0.29. <br> Periodic import created the Bank statement(s), but: <br> • File was moved to Error folder (instead of Archive folder) <br> • Document not attached to Bank statement(s) <br> • 'Imported via financial connection' not set to Yes.
+
+
+# Previous version(s)
+
+### Release 10.0.29.20220927
+
+#### Build 10.0.29.202209271
+
+Release date: 29/09/2022 <br>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+11568		| Bank statement periodic import	| Due to a change in MS code in 10.0.29. <br> Periodic import created the Bank statement(s), but: <br> • File was moved to Error folder (instead of Archive folder) <br> • Document not attached to Bank statement(s) <br> • 'Imported via financial connection' not set to Yes.
+
+### Release 10.0.27.20220916
+
+#### Build 10.0.27.202209162
+
+Release date: 16/09/2022 <br>
+
+DXC Finance Utilities 10.0.27 runs on the following Microsoft releases
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
