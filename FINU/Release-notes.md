@@ -48,7 +48,7 @@ Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dyn
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-11598		| Reconciliation matching rules	| Ability to set **Field format** for **Offset account bank statement field** and **Settle transaction bank statement field**. This assists in obtaining the D365 customer account and Invoice number from bank statement fields. For setup information and examples click [here](Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md#field-format) <br> ![Reconcilation matching rules](Images/ReleaseNotes_20221019_1.png "Reconcilation matching rules") <br> ![Reconcilation matching rules example](Images/ReleaseNotes_20221019_2.png "Reconcilation matching rules example")
+11598		| Reconciliation matching rules	| Ability to set **Field format** for **Offset account bank statement field** and **Settle transaction bank statement field**. This assists in obtaining the D365 customer account and Invoice number from bank statement fields for creating the customer payment journal. <br> For setup information and examples click [here](Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md#field-format) <br> ![Reconcilation matching rules](Images/ReleaseNotes_20221019_1.png "Reconcilation matching rules") <br> ![Reconcilation matching rules example](Images/ReleaseNotes_20221019_2.png "Reconcilation matching rules example")
 
 <ins>Bug fixes</ins>
 
