@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Bank reconciliation matching rules
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-07-14
+ms.date: 2022-10-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -120,6 +120,21 @@ The following subsection will discuss scenarios when running a Mark as new rule 
 - **Auto-post customer payment journal**: 
     - **Yes** - The customer receipt journal will be posted and automatically matched with the bank statement lines. A Match Id will be assigned for all the transactions and moved to matched on the Bank reconciliation worksheet when running the rule.
     - **No**: The customer receipt journal will only be created. Once the user has reviewed and posted the customer payment journal, refresh the bank reconciliation’s worksheet to bring in the new bank transactions. User has to either use a match with bank statement rule or manually match the applicable bank statement lines with these new bank transactions.
+
+##### Field format
+The ability to set field format is available for the following two fields:
+- Offset account bank statement field
+- Settle transaction bank
+
+Select the **Field format** for the applicable field and set one of the following options:
+- **No format** - The field will be used as-is.
+- **Fixed field position** - Set **Start position** and **Length**.
+- **Delimited field position** - Set **Delimiter** (default is space) and **Field position**.
+- **Custom format** - Ability to use a [regex](https://regex101.com/) format
+
+The **Example** and **Value** field is automatically updated based on above selection.
+The user can also paste/type their own example into Example to view the resulted Value from their setup.
+
 
 #### Financial utilities parameters
 Additional setup is also required on [Financial utilities parameters](Finance-utilities-parameters.md) to assign the following:
