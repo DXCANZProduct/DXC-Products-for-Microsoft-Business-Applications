@@ -137,12 +137,12 @@ The user can also paste/type their own example into Example to view the resulted
 
 Example result for each option:
 
-Option	  	| Setup             | Example (bank statement field's original data)	  | Value
+Option	  	| Setup             | Example <br> Bank statement field's original data	  | Value
 :--       	|:--                |:--                                                  |:--
 **No format**  |                 | xxUS-001xx                      | xxUS-001xx
 **Fixed field position**        | Start position: 2 <br> Length: 6  | xxUS-001xx        | US-001
 **Delimited field position**    | Delimiter:  <br> Field position   | US-001 extra description  | US-001
-**Custom format**               | \*(.+)\*                          | /*US-001*         | US-001
+**Custom format**               | \*(.+)\*                          | \**US-001*         | US-001
 
 #### Financial utilities parameters
 Additional setup is also required on [Financial utilities parameters](Finance-utilities-parameters.md) to assign the following:
