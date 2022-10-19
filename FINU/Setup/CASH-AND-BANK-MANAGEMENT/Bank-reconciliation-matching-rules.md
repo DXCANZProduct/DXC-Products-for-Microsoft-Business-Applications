@@ -124,7 +124,7 @@ The following subsection will discuss scenarios when running a Mark as new rule 
 ##### Field format
 The ability to set field format is available for the following two fields:
 - Offset account bank statement field
-- Settle transaction bank
+- Settle transaction bank statement field
 
 Select the **Field format** for the applicable field and set one of the following options:
 - **No format** - The bank statement field will be used as-is.
