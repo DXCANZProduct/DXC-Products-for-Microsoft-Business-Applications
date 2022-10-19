@@ -127,7 +127,7 @@ The ability to set field format is available for the following two fields:
 - Settle transaction bank
 
 Select the **Field format** for the applicable field and set one of the following options:
-- **No format** - The field will be used as-is.
+- **No format** - The bank statement field will be used as-is.
 - **Fixed field position** - Set **Start position** and **Length**.
 - **Delimited field position** - Set **Delimiter** (default is space) and **Field position**.
 - **Custom format** - Ability to use a [regex](https://regex101.com/) format
