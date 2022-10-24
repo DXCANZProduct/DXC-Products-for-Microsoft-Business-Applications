@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-10-19
+ms.date: 2022-10-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,7 @@ This document describes the features that are either new or changed in the relea
 
 ### Release 10.0.29.20221019 & 10.0.27.20221019
 
-#### Build 10.0.29.202210191 
+#### Build 10.0.29.202210192 
 
 Release date: 19/10/2022 <br>
 
