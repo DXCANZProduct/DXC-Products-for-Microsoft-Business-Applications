@@ -35,7 +35,7 @@ This document describes the features that are either new or changed in the relea
 
 #### Build 10.0.29.202210192 
 
-Release date: 19/10/2022 <br>
+Release date: 24/10/2022 <br>
 
 DXC Finance Utilities 10.0.29 runs on the following Microsoft releases
 
