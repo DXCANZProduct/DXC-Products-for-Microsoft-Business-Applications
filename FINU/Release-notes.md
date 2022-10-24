@@ -78,6 +78,8 @@ Number	  	| Functionality	  | Description
 
 # Previous version(s)
 
+One year of previous versions are included below.
+
 ### Release 10.0.29.20220927
 
 #### Build 10.0.29.202209271
