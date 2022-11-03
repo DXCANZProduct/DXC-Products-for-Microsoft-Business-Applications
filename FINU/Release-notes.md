@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-10-24
+ms.date: 2022-11-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -73,7 +73,7 @@ Same as 10.0.29.202210191 version, but excludes change that isn't backwards comp
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-11568		| Bank statement periodic import	| Due to a change in MS code in 10.0.29. <br> Periodic import created the Bank statement(s), but: <br> • File was moved to Error folder (instead of Archive folder) <br> • Document not attached to Bank statement(s) <br> • 'Imported via financial connection' not set to Yes.
+11568		| Bank statement periodic import	| Due to a change in MS code in 10.0.29. <br> Periodic import created the Bank statement(s), but: <br> • File was moved to Error folder (instead of Archive folder) <br> • Document not attached to Bank statement(s) <br> • 'Imported via financial connection' not set to Yes. <br> Also fixes issue for 'Reconcile after import'
 
 
 # Previous version(s)
