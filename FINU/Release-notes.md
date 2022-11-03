@@ -73,7 +73,7 @@ Same as 10.0.29.202210191 version, but excludes change that isn't backwards comp
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-11568		| Bank statement periodic import	| Due to a change in MS code in 10.0.29. <br> Periodic import created the Bank statement(s), but: <br> • File was moved to Error folder (instead of Archive folder) <br> • Document not attached to Bank statement(s) <br> • 'Imported via financial connection' not set to Yes. <br> Also fixes issue for 'Reconcile after import'
+11568		| Bank statement periodic import	| Due to a change in MS code in 10.0.29. <br> Periodic import created the Bank statement(s), but: <br> • File was moved to Error folder (instead of Archive folder) <br> • Document not attached to Bank statement(s) <br> • 'Imported via financial connection' not set to Yes. <br> Also fixes issue for 'Reconcile after import' (manual import and via periodic import)
 
 
 # Previous version(s)
@@ -88,7 +88,7 @@ Release date: 29/09/2022 <br>
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-11568		| Bank statement periodic import	| Due to a change in MS code in 10.0.29. <br> Periodic import created the Bank statement(s), but: <br> • File was moved to Error folder (instead of Archive folder) <br> • Document not attached to Bank statement(s) <br> • 'Imported via financial connection' not set to Yes.
+11568		| Bank statement periodic import	| Due to a change in MS code in 10.0.29. <br> Periodic import created the Bank statement(s), but: <br> • File was moved to Error folder (instead of Archive folder) <br> • Document not attached to Bank statement(s) <br> • 'Imported via financial connection' not set to Yes. <br> Also fixes issue for 'Reconcile after import' (manual import and via periodic import)
 
 ### Release 10.0.27.20220916
 
