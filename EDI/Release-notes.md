@@ -59,8 +59,8 @@ Number	| Functionality	  	| Reason
 
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--	
-8057	| EDI history		| Added the following on Sales order's EDI history: <br> • Customer purchase order where Order type = Release order
-11552	| EDI history		| Added the following on Sales agreement's EDI history: <br> • Customer purchase order where Order type = Agreement
+8057	| EDI history		| Added the following on **Sales order**'s EDI history: <br> • Customer purchase order where Order type = Release order
+11552	| EDI history		| Added the following on **Sales agreement**'s EDI history: <br> • Customer purchase order where Order type = Agreement
 
 **Vendor module**	
 
@@ -72,17 +72,17 @@ Number	| Functionality	  	| Reason
 
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--	
-8057	| EDI history		| Added the following on Sales order's EDI history: <br> • Picking list registration
-8057	| EDI history		| Added the following on Purchase order's EDI history: <br> • Shipment advice - Purchase order  <br> • Shipment receipt - Purchase order
-11552	| EDI history		| Added the following on Transfer order's EDI history: <br> • Picking list <br> • Picking list registration <br> • Shipment advice - Transfer order <br> • Shipment receipt - Transfer order
-11552	| EDI history		| Added the following on Return order's EDI history: <br> • Shipment advice - Return order <br> • Shipment receipt - Return order
-11552	| EDI history		| Added the following on Landed cost Voyage's EDI history: <br> • Shipment advice - Voyage <br> • Shipment receipt - Voyage
+8057	| EDI history		| Added the following on **Sales order**'s EDI history: <br> • Picking list registration
+8057	| EDI history		| Added the following on **Purchase order**'s EDI history: <br> • Shipment advice - Purchase order  <br> • Shipment receipt - Purchase order
+11552	| EDI history		| Added the following on **Transfer order**'s EDI history: <br> • Picking list <br> • Picking list registration <br> • Shipment advice - Transfer order <br> • Shipment receipt - Transfer order
+11552	| EDI history		| Added the following on **Return order**'s EDI history: <br> • Shipment advice - Return order <br> • Shipment receipt - Return order
+11552	| EDI history		| Added the following on **Landed cost Voyage**'s EDI history: <br> • Shipment advice - Voyage <br> • Shipment receipt - Voyage
 
 **Freight forwarder for Landed cost module**	
 
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--	
-11552	| EDI history		| Added the following on Landed cost Voyage's EDI history: <br> • Voyage creator <br> • Voyage tracking
+11552	| EDI history		| Added the following on **Landed cost Voyage**'s EDI history: <br> • Voyage creator <br> • Voyage tracking
 
 <ins>Bug fixes</ins>
 
