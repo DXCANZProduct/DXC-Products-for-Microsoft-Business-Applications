@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Frequently asked questions
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-07-29
+ms.date: 2022-11-08
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,6 +41,10 @@ To load all new number sequence references, select **Reset** on **Organization a
 
 ### Can I resend a document
 Yes, an outbound staging record can be created again. Use the **Reset flag** and **Send to EDI** buttons on the source transaction.
+
+### Refresh module
+After each deployment, refresh module via **EDI parameters**.
+If you receive an XSD validation error 'The 'minOccurs' attribute cannot be present.': use 'Reset structure' on your XML templates to fix XSD validation error.
 
 ### Module FAQ
 The module specific FAQ can be found below. <br>
