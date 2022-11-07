@@ -51,7 +51,7 @@ If you receive:
 - SQL errors: Run a db sync
 
 ### Download document type's header and lines fields
-A quick method to download the header and line fields for a document type is by using the following method: <br>
+Quick method to download the header and line fields for a document type: <br>
 - Navigate to **EDI > Setup > Document types**. 
 - Select the applicable document type.
 - In FastTab **Staging metadata** select **Field upload**.
