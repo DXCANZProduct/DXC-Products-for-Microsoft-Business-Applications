@@ -45,7 +45,7 @@ Yes, an outbound staging record can be created again. Use the **Reset flag** and
 ### Refresh module
 After each deployment, refresh module via **EDI parameters**. <br>
 If you receive:
-- XSD validation error 'The 'minOccurs' attribute cannot be present.': use 'Reset structure' on your XML templates to fix XSD validation error.
+- XSD validation error 'The 'minOccurs' attribute cannot be present.': use **Reset structure** on your XML templates to fix XSD validation error.
 - SQL errors: Run a db sync
 
 ### Module FAQ
