@@ -77,6 +77,7 @@ Number	| Functionality	  	| Reason
 11552	| EDI history		| Added the following on **Transfer order**'s EDI history: <br> • Picking list <br> • Picking list registration <br> • Shipment advice - Transfer order <br> • Shipment receipt - Transfer order
 11552	| EDI history		| Added the following on **Return order**'s EDI history: <br> • Shipment advice - Return order <br> • Shipment receipt - Return order
 11552	| EDI history		| Added the following on **Landed cost Voyage**'s EDI history: <br> • Shipment advice - Voyage <br> • Shipment receipt - Voyage
+10519	| Transfer order Picking list	| Added the ability to send a Transfer order picking list to EDI and reset flag in order to resend. <br> This was achieved by adding the following to **Transfer order history**: <br> • Button **Send to EDI** <br> • Button **Reset flag** <br> • Field **Sent to EDI** 
 
 **Freight forwarder for Landed cost module**	
 
