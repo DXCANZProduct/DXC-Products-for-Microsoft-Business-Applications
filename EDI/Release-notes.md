@@ -54,6 +54,8 @@ Release date: 8 November 2022 <br>
 
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--	
+10535	| Refresh module	| In the unlikely scenario of a field being removed from a document, the **Refresh module** now includes removing these deleted fields when updating EDI.
+11635	| Trading partners	| The following system fields have been activated for **Trading partners**, **Trading partner's incoming and outgoing documents** and **Trading partner's Connection profile**: <br> • Created by <br> • Created date and time <br> • Modified by <br> • Modified date and time <br> Note: For existing records the created and modified dates will be updated with **Refresh module** and the created by and modified by will be a ?.
 
 **Customer module**	
 
@@ -87,6 +89,12 @@ Number	| Functionality	  	| Reason
 
 <ins>Bug fixes</ins>
 
+**Core module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+10563	| Test path connection for Azure	| Previously if an Azure container didn't include a file, the **Test path connection** would return a failed result.
+11597	| EDI history		| Updated the link on EDI history's **EDI Document type** to filter to the applicable document type.
 
 # Previous version(s)
 
