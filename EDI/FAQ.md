@@ -50,6 +50,13 @@ If you receive:
 - XSD validation error 'The 'minOccurs' attribute cannot be present.': use **Reset structure** on your XML templates to fix XSD validation error.
 - SQL errors: Run a db sync
 
+### Download document type's header and lines fields
+A quick method to download the header and line fields for a document type is by using the following method: <br>
+- Navigate to **EDI > Setup > Document types**. 
+- Select the applicable document type.
+- In FastTab **Staging metadata** select **Field upload**.
+- Select the **Template** button and then **Download**.
+
 ### Module FAQ
 The module specific FAQ can be found below. <br>
 FAQ include example errors and methods to fix.
