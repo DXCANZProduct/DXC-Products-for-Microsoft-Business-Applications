@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-09-30
+ms.date: 2022-11-08
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ This document describes the features that are either new or changed in the relea
 
 Next release is planned for 31 January 2023.
 
-### Release 10.0.27.20220930
+### Release 10.0.27.20221108
 
 DXC EDI 10.0.27 runs on the following Microsoft releases
 
@@ -45,6 +45,22 @@ Microsoft Dynamics 365 application	| 10.0.28	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
 Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
 
+#### Build 10.0.27.202211081
+Release date: 8 November 2022 <br> 
+
+<ins>New features</ins>
+
+**Core module**	- Applies to all modules
+
+Number	| Functionality	  	| Reason
+:--	|:--		  	|:--	
+
+
+# Previous version(s)
+
+One year of previous versions are included below.
+
+### Release 10.0.27.20220930
 
 #### Build 10.0.27.202209301
 Release date: 30 September 2022 <br> 
@@ -100,9 +116,6 @@ Number	| Name		 	| Description
 Release date: 30 September 2022 <br>
 Includes Inbound Transportation management (ITM) & ITM version Freight forwarder of 10.0.27.20220930
 	
-# Previous version(s)
-
-One year of previous versions are included below.
 
 ### Release 10.0.22.20220630
 
