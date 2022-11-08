@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Shipment advice - Transfer order
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-23
+ms.date: 2022-11-08
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
