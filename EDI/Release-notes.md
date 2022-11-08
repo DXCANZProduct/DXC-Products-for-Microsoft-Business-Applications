@@ -89,7 +89,7 @@ Number	| Functionality	  	| Reason
 
 Number	| Name		 | Description
 :--	|:--		 |:--
-10563	| Test path connection for Azure	| Previously if an Azure container didn't include a file, the **Test path connection** would return a failed result.
+10563	| Test path connection for Azure	| Previously if an Azure container didn't contain a file, the **Test path connection** would return a failed result.
 11597	| EDI history		| Updated the link on EDI history's **EDI Document type** to filter to the applicable document type.
 
 **3PL module**	
