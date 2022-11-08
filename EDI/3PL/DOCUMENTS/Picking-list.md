@@ -67,12 +67,6 @@ Each picking list document will also have an order purpose which is specified in
 - Change
 - Cancellation
 
-### Resend document
-Users have the ability to resend the Picking list document from **Transfer order history** on the Transfer order:
-- Field **Sent to EDI** indicates if the transfer order picking list has been sent to the 3PL
-- **Reset flag** changes **Sent to EDI** from Yes to No
-- **Send to EDI** creates a new staging record and updates **Sent to EDI** from No to Yes
-
 ## Inbound document
 Once the order has been picked by the 3PL, the pick information is sent back via the inbound **Picking list registration** document.
 
