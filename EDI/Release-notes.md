@@ -45,7 +45,7 @@ Microsoft Dynamics 365 application	| 10.0.28	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
 Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
 
-#### Build 10.0.27.202211081
+#### Build 10.0.27.202211082
 Release date: 8 November 2022 <br> 
 
 <ins>New features</ins>
