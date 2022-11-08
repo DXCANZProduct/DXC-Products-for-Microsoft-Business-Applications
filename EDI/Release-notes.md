@@ -63,11 +63,7 @@ Number	| Functionality	  	| Reason
 :--	|:--		  	|:--	
 8057	| EDI history		| Added the following on **Sales order**'s EDI history: <br> • Customer purchase order where Order type = Release order
 11552	| EDI history		| Added the following on **Sales agreement**'s EDI history: <br> • Customer purchase order where Order type = Agreement
-
-**Vendor module**	
-
-Number	| Functionality	  	| Reason
-:--	|:--		  	|:--	
+11637	| Sales order processing workspace - Open invoice | Where the Customer trading partner's **Sales invoice** document setting **Don't send credit note** is set to Yes, these credits will be excluded on **Sales order processing workspace's** **Open invoice**
 
 
 **3PL module**	
@@ -95,6 +91,12 @@ Number	| Name		 | Description
 :--	|:--		 |:--
 10563	| Test path connection for Azure	| Previously if an Azure container didn't include a file, the **Test path connection** would return a failed result.
 11597	| EDI history		| Updated the link on EDI history's **EDI Document type** to filter to the applicable document type.
+
+**3PL module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+11649	| Transfer order	| EDI was automatically setting **Explode lines** on outbound documents: <br> • **Picking list** <br> • **Shipment advice - Transfer order**. <br> Since this can be set by the user, EDI doesn't need to automatically set this to Yes. <br> <br> New feature: New document setting **Don't explode lines** have been added for the following inbound documents to set if **Explode lines** should automatically be Yes: <br> • **Picking list registration** - Applicable when **Ship transfer order** set to Yes <br> • **Shipment receipt - Transfer order** - Applicable when **Auto receive** set to Yes
 
 # Previous version(s)
 
