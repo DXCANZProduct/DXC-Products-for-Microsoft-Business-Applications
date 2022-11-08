@@ -63,6 +63,12 @@ EDI > Setup > Trading partners
 An outbound shipment advice for transfer orders can be triggered via the following method: 
 -	**Transfer order**: Inventory management > Inbound orders > Transfer order - Select **Ship transfer order** under the **Operations** heading on the **Ship** tab on the Action Pane. 
 
+### Resend document
+Users have the ability to resend the outbound shipment advice from **Transfer order history** on the Transfer order:
+- Field **Sent to EDI** indicates if the shipment advice has been sent to the 3PL
+- **Reset flag** changes **Sent to EDI** from Yes to No
+- **Send to EDI** creates a new staging record and updates **Sent to EDI** from No to Yes
+
 ## Inbound document
 Once the shipment has been received by the 3PL, the shipment receipt information is sent back via the inbound **Shipment receipt - Transfer order** document.
 
