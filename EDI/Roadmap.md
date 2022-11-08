@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-06-09
+ms.date: 2022-11-08
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,39 +47,10 @@ ETA: 31 January 2023
 
 The planned features are grouped by module. Core is included for all modules.
 
-#### Core
 
 #### Customer
-- **EDI history** on D365 source/target. 
-    - Sales agreement:
-        - Customer purchase order
+- Option to send ASN and Sales invoice only for EDI orders
 
-#### Vendor
-
-#### 3PL
-- **EDI history** on D365 source/target.
-    - Sales order:
-        - Picking list registration
-    - Purchase order:
-        - Shipment advice - Purchase order
-        - Shipment receipt - Purchase order
-    - Transfer order:
-        - Picking list
-        - Picking list registration
-        - Shipment advice - Transfer order
-        - Shipment receipt - Transfer order
-    - Return order:
-        - Shipment advice - Return order
-        - Shipment receipt - Return order
-    - Voyage:
-        - Shipment advice - Voyage
-        - Shipment receipt - Voyage
-
-#### Freight forwarder Landed cost
-- **EDI history** on D365 source/target.
-    - Voyage:
-        - Voyage creator
-        - Voyage tracking
 
 ## Future releases
 The following features are planned for a future release
