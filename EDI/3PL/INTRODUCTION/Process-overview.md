@@ -88,7 +88,7 @@ Various inbound documents are available for a 3PL to adjust inventory.
 - **Movement** - 3PL informs company of up or down quantity adjustments in inventory.
 
 ## EDI history
-The following D365 pages includes **History** button, which provides users the ability to easily access EDI staging records related to the record:
+The following D365 pages includes a **History** button, which provides users the ability to easily access EDI staging records related to the record:
 - **Sales order** - Available on the **EDI** tab on the Action Pane:
     - Picking list
     - Picking list registration 
