@@ -87,6 +87,27 @@ Various inbound documents are available for a 3PL to adjust inventory.
 - **Reconciliation** - Compares 3PL's on-hand to D365's on hand at the end of specified date and creates movement journals for the accepted variances. Has an additional EDI reconciliation page that users can manage which variances are accepted/rejected. Also has the option on including all inventory for the warehouse.
 - **Movement** - 3PL informs company of up or down quantity adjustments in inventory.
 
+## EDI history
+The following D365 pages includes **History** button, which provides users the ability to easily access EDI staging records related to the record:
+- **Sales order** - Available on the **EDI** tab on the Action Pane:
+    - Picking list
+    - Picking list registration 
+- **Purchase order** - Available on the **EDI** tab on the Action Pane: 
+    - Shipment advice - Purchase order
+    - Shipment receipt - Purchase order
+- **Transfer order** - Available on the **Transfer order** tab on the Action Pane:
+    - Picking list
+    - Picking list registration 
+    - Shipment advice - Transfer order
+    - Shipment receipt - Transfer order
+- **Return order** - Available on the **Return order** tab on the Action Pane: 
+    - Shipment advice - Return order
+    - Shipment receipt - Return order
+- **Voyage** - Available on the **Manage** tab on the Action Pane:  
+    - Shipment advice - Voyage
+    - Shipment receipt - Voyage
+
+
 ## Summary
 
 The following table provides a summary of how the various documents relate for the warehouse (WH) and the minimum D365 transaction created for the inbound document.
