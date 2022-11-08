@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Setup Trading partners
 author: jdutoi2
 manager: Kym Parker
-ms.date: 2022-06-28
+ms.date: 2022-11-08
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -91,6 +91,10 @@ The following setup applies to all types of Trading partners and will be discuss
 **Company GLN**                   |	The GLN the trading partner knows ‘us’ as. Note: This field denotes the trading ID - GLN (Global Location Number) - of your company to be sent on documents to this trading partner.
 **Trading partner account**       |	The primary identifier of the trading partner (i.e. Customer account, Warehouse number or Vendor account). This field is not editable after creation.
 **Name**                          |	The trading partner account's name. Not editable in this form. Links to customer, warehouse or vendor account's name.
+**Created by**                    | User id that created the record.
+**Created date and time**         | Date and time the record was created.
+**Modified by**                   | User id that last modified the record.
+**Modified date and time**        | Date and time the record was last modified.
 **Trading partner GLN**           |	The GLN we know the trading partner as. Note: This field denotes the trading partner GLN. The module will use this field as a match to the customer, warehouse or vendor. 
 **Connection profile**            |	Ability to override the default EDI connection profile on Trading partner level. If blank, default EDI connection will be used. Default EDI connection is determined by: <br> • Outgoing documents: Connection profile setup on [EDI > Setup > EDI parameters](EDI-parameters.md) <br> • Incoming documents: All active connection incoming paths as setup in [Connections](Connection-setup.md).
 **Cleanup profile**               |	Ability to override the default Cleanup profile (setup on Shared EDI parameters) on Trading partner level. If blank, default Cleanup profile will be used as setup on [EDI > Setup > EDI shared parameters](EDI-shared-parameters.md)
