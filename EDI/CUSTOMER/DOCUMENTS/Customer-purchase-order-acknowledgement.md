@@ -84,6 +84,7 @@ The following tables describe the fields and buttons that are available on the *
 The **Header** POA response codes are managed on this tab.
 
 ##### Fields
+
 Field	              | Description
 :--                 |:--
 <ins>**Delivery Date**</ins>
@@ -98,6 +99,7 @@ Field	              | Description
 
 ##### Buttons
 It is possible to update the POA response codes by using the available buttons:
+
 Button              | Description
 :--                 |:--
 **Order POA**       |	Automatically set the response codes. <br> Note: When selected the response codes for all the tabs will be set.  Where auto generated codes are overwritten, the header code should be manually set.
