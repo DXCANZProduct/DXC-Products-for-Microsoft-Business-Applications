@@ -85,7 +85,7 @@ The **Header** POA response codes are managed on this tab.
 
 ##### Fields
 
-Field	              | Description
+Field	            | Description
 :--                 |:--
 <ins>**Delivery Date**</ins>
 **Customer**        |	Customer requested ship date (start of delivery window)
