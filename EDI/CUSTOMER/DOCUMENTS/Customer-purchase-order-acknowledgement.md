@@ -85,15 +85,15 @@ The **Header** POA response codes are managed on this tab.
 
 ##### Fields
 
-Field	            | Description
-:--                 |:--
-<ins>**Delivery Date**</ins>
+Field	                  | Description
+:--                     |:--
+<ins>**Delivery Date**</ins>    |
 **Customer**        |	Customer requested ship date (start of delivery window)
 **Acknowledged**    |	Acknowledged receipt date. Updates Sales order header's **Confirmed ship date**.
-<ins>**Deadline**</ins>
+<ins>**Deadline**</ins>         |
 **Customer**        |	Customer requested receipt date (end of delivery window)
 **Acknowledged**    |	Acknowledged delivery date to be sent to the customer. Updates Sales order header's **Confirmed receipt date**.
-<ins>**POA**</ins>
+<ins>**POA**</ins>              |
 **POA code**        |	POA header code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md) for the following header responses: <br> •	**Header – accept** – Where all response codes are _Accept_ <br> •	**Header - change** - Where the customer and acknowledged dates are different <br> •	**Header - accepted with reserved** - Where the customer and acknowledged dates are the same, however one or more lines have an _Advise_ POA difference code.
 **Auto triggered**  |	Indicates if the **POA code** is an auto triggered value.
 
