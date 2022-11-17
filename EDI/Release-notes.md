@@ -105,7 +105,7 @@ One year of previous versions are included below.
 ### Release 10.0.27.20220930
 
 #### Build 10.0.27.202211173
-Release date: 17/11/2022
+Release date: 17 November 2022
 
 <ins>Bug fixes</ins>
 
