@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-11-08
+ms.date: 2022-11-17
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -103,6 +103,18 @@ Number	| Name		 | Description
 One year of previous versions are included below.
 
 ### Release 10.0.27.20220930
+
+#### Build 10.0.27.202211173
+Release date: 17/11/2022
+
+<ins>Bug fixes</ins>
+
+**Core module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+11984	| Text templates	| Fix CAR resolution change in 10.0.27.20220930 release for text template's line number calculation. <br> Issue for processing import-to-staging where the staging's line number is the unique index.
+
 
 #### Build 10.0.27.202209301
 Release date: 30 September 2022 <br> 
