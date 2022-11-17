@@ -113,7 +113,7 @@ Release date: 17 November 2022
 
 Number	| Name		 | Description
 :--	|:--		 |:--
-11984	| Text templates	| Fix CAR resolution change in 10.0.27.20220930 release for text template's line number calculation. <br> Issue for processing import-to-staging where the staging's line number is the unique index.
+11984	| Inbound text templates	| Fix CAR resolution change in 10.0.27.20220930 release for text template's line number calculation on import-to-staging step. <br> Issue for processing import-to-staging where the staging table's line number is the unique index.
 
 
 #### Build 10.0.27.202209301
