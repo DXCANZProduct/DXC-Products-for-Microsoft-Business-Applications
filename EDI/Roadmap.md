@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-11-08
+ms.date: 2022-11-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,9 +47,12 @@ ETA: 31 January 2023
 
 The planned features are grouped by module. Core is included for all modules.
 
+#### Core
+- Connection log, including parameter what level to log. Will provide companies the ability to set alerts.
 
 #### Customer
-- Option to send ASN and Sales invoice only for EDI orders
+- Option to send ASN and Sales invoice only for EDI orders.
+- Sales origin for EDI orders.
 
 
 ## Future releases
