@@ -54,6 +54,9 @@ GitHub Help in D365 <br>
 ### Accounts payable
 - Encryption / decryption on 'Electronic reporting connections' for vendor payment files created with ER.
 
+### Accounts receivable
+- Option to exclude invoices from automatic settlement based on their Collection status, for example disputed.
+
 ## Deprecate
 The following is planned to be deprecated
 
