@@ -5,7 +5,7 @@ title: FINU
 description: FINU - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-09-16
+ms.date: 2022-11-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -48,6 +48,11 @@ The planned features are grouped by category.
 GitHub Help in D365 <br>
 ![GitHub Help in D365](Images/Roadmap_20220916.png "GitHub Help in D365")
 
+### Cash and bank management
+- Encryption / decryption on 'Financial utilities connection' for bank statement files.
+
+### Accounts payable
+- Encryption / decryption on 'Electronic reporting connections' for vendor payment files created with ER.
 
 ## Deprecate
 The following is planned to be deprecated
