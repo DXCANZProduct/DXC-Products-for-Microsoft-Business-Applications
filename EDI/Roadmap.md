@@ -48,7 +48,7 @@ ETA: 31 January 2023
 The planned features are grouped by module. Core is included for all modules.
 
 #### Core
-- Connection log, including parameter what level to log. Will provide companies the ability to set alerts.
+- Connection log. Includes parameter what level to log and how long to retain the log. Will provide companies the ability to set custom alerts, for example Logging level set to Error. Scenarios for error log: error opening the connection to the site; the container / path couldn't be accessed.
 
 #### Customer
 - Option to send ASN and Sales invoice only for EDI orders.
