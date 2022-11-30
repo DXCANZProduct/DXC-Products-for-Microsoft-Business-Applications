@@ -48,13 +48,13 @@ Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dyn
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-
+11749		| Data entity 'Reconciliation matching rules'	| Removed unused fields: <br> • DFUACCOUNTTYPE <br> • DFULEDGERDIMENSIONDISPLAYVALUE from data entity 'Reconciliation matching rules'
 
 <ins>Bug fixes</ins>
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-
+12204		| Bank statement import	| Error importing GER bank statement with bank accounts with same Bank account id and same Statement Id across multiple companies. <br> Error: "Cannot edit a record in Bank statement account statement (BankStmtISOAccountStatement). Update operations are not allowed across companies. Please use the changecompany keyword to change the current company before updating the record."
 
 # Previous version(s)
 
