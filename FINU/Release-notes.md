@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-11-03
+ms.date: 2022-11-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,11 +31,11 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.29.20221019 & 10.0.27.20221019
+### Release 10.0.29.20221130
 
-#### Build 10.0.29.202210192 
+#### Build 10.0.29.2022111301 
 
-Release date: 24/10/2022 <br>
+Release date: 30 Nov 2022 <br>
 
 DXC Finance Utilities 10.0.29 runs on the following Microsoft releases
 
@@ -43,6 +43,29 @@ Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
 Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
+
+<ins>New features</ins>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+
+
+<ins>Bug fixes</ins>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+
+
+# Previous version(s)
+
+One year of previous versions are included below.
+
+### Release 10.0.29.20221019 & 10.0.27.20221019
+
+#### Build 10.0.29.202210192 
+
+Release date: 24/10/2022 <br>
+
 
 <ins>New features</ins>
 
@@ -75,10 +98,6 @@ Number	  	| Functionality	  | Description
 :--       	|:--              |:--
 11568		| Bank statement periodic import	| Due to a change in MS code in 10.0.29. <br> Periodic import created the Bank statement(s), but: <br> • File was moved to Error folder (instead of Archive folder) <br> • Document not attached to Bank statement(s) <br> • 'Imported via financial connection' not set to Yes. <br> <br> Also fixes issue for 'Reconcile after import' (manual import and via periodic import)
 
-
-# Previous version(s)
-
-One year of previous versions are included below.
 
 ### Release 10.0.29.20220927
 
@@ -219,26 +238,6 @@ Number	  | Functionality	  | Reason
 Number	  | Name	          | Description
 :--       |:--              |:--
 9517	  | Mark as new - Description	| Description in Bank reconciliation’s mark as new (for customer and vendor offset transactions) not populating the customer and vendor’ subledger transaction’s description.
-
-### Release 10.0.18.20210929
-
-#### Build 10.0.18.202109292
-
-<ins>Bug fixes</ins>
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-9506	|	Payment history – Payment advice report		| Another fix for feature ‘Enable batch processing for bank payment advice reports’. When attempting to print the ECL Payment advice V2 report from Vendor’s Payment history, errors with: ‘An attempt was made to set a report parameter 'BankPaymAdviceVendDS_DynamicParameter' that is not defined in this report.’	
-
-### Release 10.0.18.20210909
-
-#### Build 10.0.18.202109091
-
-<ins>Bug fixes</ins>
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-9316	  |Print payment advice	| When feature **Enable batch processing for bank payment advice reports** is enabled, and user attempts to print Payment advice report ECL_BankPaymAdviceVend.Report; errors with: <br> ‘Stack trace: Calling wait or detach before calling run. An attempt was made to set a report parameter 'AX_RdpPreProcessedId' that is not defined in this report.’ <br> MS has rebuilt the report so that the parameters no longer matched which was what caused the problem. <br> The solution was to mimic MS solution and introduce a V2 of our payment advice report. The new V2 is only available once the feature has been enabled. <br> As the feature has been enable/disabled the customer needs to open the print management form and reselect the report they want to use. <br> The list or reports available is refreshed after the feature is turned on or off when: <br> •	Standard report, refreshed when a user tries to run the report. <br> •	FinUtils report, refreshed when a user tried to run the report or open the print management form. <br> Feature ‘Enable batch processing for bank payment advice reports’ is enabled has a Feature state set to ‘On by default’ from 10.0.21. and thus is automatically enabled from 10.0.21. But the feature can still be disabled (if not required).
 
 
 # Installation process
