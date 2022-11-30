@@ -48,7 +48,7 @@ Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dyn
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-11749		| Data entity 'Reconciliation matching rules'	| Removed unused fields: <br> • DFUACCOUNTTYPE <br> • DFULEDGERDIMENSIONDISPLAYVALUE from data entity 'Reconciliation matching rules'
+11749		| Data entity 'Reconciliation matching rules'	| Removed unused fields from data entity 'Reconciliation matching rules': <br> • DFUACCOUNTTYPE <br> • DFULEDGERDIMENSIONDISPLAYVALUE 
 
 <ins>Bug fixes</ins>
 
