@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor Documents - Vendor purchase order acknowledgement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-12
+ms.date: 2022-11-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -505,7 +505,7 @@ If update to purchase order line is allowed, column **D365 PO line update** indi
 **Site**                    | Storage dimension - Site	
 **Warehouse**               | Storage dimension - Warehouse	
 **Requested receipt date**  | The requested receipt date	
-**Accepted delivery date**  | Vendors accepted delivery date	                                                                | EDI acknowledgement tab > Acknowledged date
+**Acknowledged delivery date**  | Vendors accepted delivery date	                                                                | EDI acknowledgement tab > Acknowledged date
 **Requester**               | Requester	
 **Attention information**   | Attention information	
 **Delivery name**           | Address for Delivery – Delivery name	
