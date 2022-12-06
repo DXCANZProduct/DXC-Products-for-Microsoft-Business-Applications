@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-11-28
+ms.date: 2022-12-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,6 +49,10 @@ The planned features are grouped by module. Core is included for all modules.
 
 #### Core
 - Connection log. Includes parameter what level to log and how long to retain the log. Will provide companies the ability to set custom alerts, for example Logging level set to Error. Scenarios for error log: error opening the connection to the site; the container / path couldn't be accessed.
+- EDI Field / Staging metadata - Add additional fields:
+    - Field type
+    - Field length
+    - Mandatory
 
 #### Customer
 - Option to send ASN and Sales invoice only for EDI orders.
