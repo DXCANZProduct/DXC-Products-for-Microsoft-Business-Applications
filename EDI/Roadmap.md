@@ -49,7 +49,7 @@ The planned features are grouped by module. Core is included for all modules.
 
 #### Core
 - Connection log. Includes parameter what level to log and how long to retain the log. Will provide companies the ability to set custom alerts, for example Logging level set to Error. Scenarios for error log: error opening the connection to the site; the container / path couldn't be accessed.
-- EDI Field / Staging metadata - Add additional fields:
+- EDI Field / Staging metadata - Additional fields:
     - Field type
     - Field length
     - Mandatory
