@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_FinBudgetParameters, BudgetTransactions
+ms.search.form: SAB_FinBudgetParameters, BudgetTransactions
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -25,6 +25,7 @@ ms.search.region: Global
 ms.author: helenho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+
 ---
 
 # Budgeting functionality
