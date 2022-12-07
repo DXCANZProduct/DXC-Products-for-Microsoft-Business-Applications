@@ -2,7 +2,7 @@
 # required metadata
 
 title: Finance Utilities 
-description:  Accounts payable - BPAY payment processing
+description:  Accounts payable processing - BPAY payment
 author: helenho
 manager: Kym Parker
 ms.date: 2021-03-02
