@@ -2,7 +2,7 @@
 # required metadata
 
 title: Finance Utilities 
-description: Accounts Payable Processing - Sundry payment processing
+description: Accounts payable processing - Sundry payment
 author: helenho
 manager: Kym Parker
 ms.date: 2021-03-02
