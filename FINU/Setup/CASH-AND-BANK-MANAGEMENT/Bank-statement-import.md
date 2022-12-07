@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  BankStatementTable
+ms.search.form:  BankStatementTable, DFUConnection
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
