@@ -57,6 +57,12 @@ Quick method to download header and line fields for a document type: <br>
 - In FastTab **Staging metadata** select **Field upload**.
 - Select the **Template** button and then **Download**.
 
+### No document setting specified
+Posting some transactions require an EDI document setting specified.
+If you receive error 'Update has been cancelled. No document setting specified.' please check if you have a 'Setting profile' assigned for the trading partner's document. <br>
+Example: <br>
+![EDI Trading partners](CORE/Image/NoDocSettingSpecified.png "EDI Trading partners")
+
 ### Module FAQ
 The module specific FAQ can be found below. <br>
 FAQ include example errors and methods to fix.
