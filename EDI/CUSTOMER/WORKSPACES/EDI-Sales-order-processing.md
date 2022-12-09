@@ -61,6 +61,7 @@ Field	            | Description
 ### Pending POA
 EDI orders will be placed on hold when a purchase order acknowledgement (POA) is required for the customer. 
 > Note: Where a POA is required for a Customer, the Customer purchase order acknowledgment document must be setup on the Trading partner record and the **Lock order** field in the [POA document settings profile](../SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement.md) must be active. This hold will be released once the POA has been sent to the Customer. <br>
+
 Displays Sales orders with **POA status** set to _Pending_ or _In progress_.
 
 From within the workspace it is possible to view and even process information relating to the selected records
