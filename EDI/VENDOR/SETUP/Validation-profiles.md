@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor Setup - Document type Validation profiles
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-09
+ms.date: 2022-12-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,3 +50,4 @@ Once setup for each document type, the validation profile can be assigned to eac
 The following incoming vendor documents have validation profiles:
 - [Vendor purchase order acknowledgement](VALIDATION-PROFILES/Vendor-purchase-order-acknowledgement.md)
 - [Vendor advanced shipping notice](VALIDATION-PROFILES/Vendor-advanced-shipping-notice.md)
+- [Purchase invoice](VALIDATION-PROFILES/Purchase-invoice.md)
