@@ -210,7 +210,7 @@ For further information, please see [Technical guide - Web API](../Technical-gui
 
 Users can access the form by navigating to **EDI > Setup > Connection setup > Web API settings**
 
-The Web API setup form holds the information required to connect to, retrieve and create files via web services. It is designed with some based fields as a framework and can be extended within the implementation as required.
+The Web API setup form holds the information required to connect to, retrieve and create files via web services. It is designed with some base fields as a framework and can be extended within the implementation as required.
 
 #### Create a web API connection
 
