@@ -35,7 +35,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 Validation profiles are groups of business validation rules that can be applied to a trading partner. They provide the ability to set variable tolerances on various different aspects of the documents business process. Once a validation profile is created it can be configured by adding validation rules to it and defining the error tolerance of the rule. <br>
 Once setup for each document type, the validation profile can be assigned to each incoming document on the Trading partner setup in **EDI > Setup > Trading partners**.
 
-> Note:  The validation profiles FastTab is only displayed from Document types that have valid validation options
+> Note:  The validation profiles FastTab is only displayed for Document types that have valid validation options
 
 - To create a new record, select the **New** button in the validation profiles FastTab.
 - Specify the **Name** and **Description** of the profile.
