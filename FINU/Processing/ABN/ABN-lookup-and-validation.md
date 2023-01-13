@@ -20,7 +20,7 @@ ms.reviewer: jdutoit2
 
 # ms.tgt_pltfrm: 
 # ms.custom: : ["21901", "intro-internal"]
-ms.search.region: Global 
+ms.search.region: FinanceUtilFeature 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: helenho
 ms.search.validFrom:: 2016-05-31
