@@ -30,13 +30,13 @@ ms.dyn365.ops.version: AX 7.0.1
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-# Current version
+# Next version
 
 Next release is planned for 31 January 2023.
 
-### Release 10.0.27.20221108
+### Release 10.0.29.TBD
 
-DXC EDI 10.0.27 runs on the following Microsoft releases
+DXC EDI 10.0.29 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
@@ -44,6 +44,31 @@ Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.28	  | [What’s new or changed in Dynamics 365 application version 10.0.28](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-28)
 Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
 Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
+Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
+
+#### Build 10.0.29.TBD
+Planned release date: 31 January 2023 <br> 
+
+<ins>New features</ins>
+
+**Core module**	- Applies to all modules
+
+Number	| Functionality	  	| Reason
+:--	|:--		  	|:--	
+11625	| EDI history		| Move EDI history extensions to shared EDI module and Replace SAB_EDISalesOrderHistory
+5664	| Staging metadata	| The following non-editable SQL fields have been added to Document types' **Staging metadata**: <br> • Field type <br> • Field length <br> • Mandatory
+
+**Customer module**	
+
+Number	| Functionality	  	| Reason
+:--	|:--		  	|:--
+4467	| Customer purchase order - Sales origin	| New field **Sales origin** added to Customer purchase order's Setting profile (default is Blank). Field has also been added to the Staging header. If new header staging field or document setting is not blank, the value will be written to the created Sales order's Sales origin field.
+
+# Current version
+
+Next release is planned for 31 January 2023.
+
+### Release 10.0.27.20221108
 
 #### Build 10.0.27.202211082
 Release date: 8 November 2022 <br> 
