@@ -114,4 +114,4 @@ Use button **Validate connection** to validate the following:
 - Import error path
 
 ### Enable connection
-Once everything has been setup, update **Enabled** to _Yes_.
+Once all setup has been completed, update **Enabled** to _Yes_.
