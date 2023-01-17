@@ -64,6 +64,15 @@ Number	| Functionality	  	| Reason
 :--	|:--		  	|:--
 4467	| Customer purchase order - Sales origin	| New field **Sales origin** added to Customer purchase order's Setting profile (default is Blank). Field has also been added to the Staging header. If new header staging field or document setting is not blank, the value will be written to the created Sales order's Sales origin field.
 
+<ins>Bug fixes</ins>
+
+**Core module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+11984	| Inbound text templates	| Fix CAR resolution change in 10.0.27.20220930 release for text template's line number calculation on import-to-staging step. <br> Issue for processing import-to-staging where the staging table's line number is the unique index.
+
+
 # Current version
 
 Next release is planned for 31 January 2023.
