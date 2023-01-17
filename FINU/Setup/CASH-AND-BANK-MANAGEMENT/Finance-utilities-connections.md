@@ -32,7 +32,7 @@ When the bank statements are to be imported via the periodic task **Import bank 
 
 **Financial utilities connections** are used in the following:
 1.	Assigned to the applicable [Bank accounts](Bank-accounts.md) - Optional (for info).
-2.	Mandatory parameter in the periodic task [Import bank statements via financial utilities connection](Bank-statement-import.md)
+2.	Mandatory parameter in the periodic task [Import bank statements via financial utilities connection](Bank-statement-import.md). Only enabled connections can be selected in the periodic task.
 
 The import file can be attached to the created D365 bank statement(s), by setting **File attachment document type** on **Financial utilities parameters**.
 
@@ -53,9 +53,7 @@ Field         | Description                         | Example or Options
 **Error action**    |	The action to take when there is an error with the connection | •	Error <br> •	Warning
 **Enabled**         |	Once all the mandatory fields have been completed the connection can be enabled	  | •	Yes <br> •	No
 
-Click **Save** and the applicable Setup will be displayed as per Connection type selected
-
-
+Click **Save** and the applicable Setup will be displayed as per Connection type selected. <br>
 
 ### FTP
 
@@ -114,3 +112,6 @@ Use button **Validate connection** to validate the following:
 - Import path
 - Import archive path
 - Import error path
+
+### Enable connection
+Once everything has been setup, update **Enabled** to _Yes_.
