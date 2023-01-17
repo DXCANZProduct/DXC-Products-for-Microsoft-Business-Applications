@@ -57,12 +57,17 @@ Number	| Functionality	  	| Reason
 :--	|:--		  	|:--	
 11625	| EDI history		| Move EDI history extensions to shared EDI module and Replace SAB_EDISalesOrderHistory
 5664	| Staging metadata	| The following non-editable SQL fields have been added to Document types' **Staging metadata**: <br> • Field type <br> • Field length <br> • Mandatory
+10646	| Outbound files	| **File transfer type** filter added to Outbound files.
+11978	| EDI Document maintenance workspace	| Ability to select multiple records and use **Reset status** or **Cancel**.
+12007	| Connections	| **Log** ability added to all connection types. Ability to set **Logging level** and **Retention period**. This provides users the ability to set Custom alerts. For example if a connection can't connect a Log with level Error can be created.
 
 **Customer module**	
 
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--
 4467	| Customer purchase order - Sales origin	| New field **Sales origin** added to Customer purchase order's Setting profile (default is Blank). Field has also been added to the Staging header. If new header staging field or document setting is not blank, the value will be written to the created Sales order's Sales origin field.
+11747	| Customer advanced shipping notice| New document setting **Send only for EDI orders**. When set to _Yes_, and the sales order wasn't created via EDI, an outbound ASN staging record will not be created.
+11747	| Sales invoice	| New document setting **Send only for EDI orders**. When set to _Yes_, and the sales order wasn't created via EDI, an outbound Sales invoice staging record will not be created.
 
 <ins>Bug fixes</ins>
 
@@ -71,7 +76,21 @@ Number	| Functionality	  	| Reason
 Number	| Name		 | Description
 :--	|:--		 |:--
 11984	| Inbound text templates	| Fix CAR resolution change in 10.0.27.20220930 release for text template's line number calculation on import-to-staging step. <br> Issue for processing import-to-staging where the staging table's line number is the unique index.
+11999	| Export template for text types	| Fix Error 'Buffer for call of SAB_EDITemplateFile is not specified.' when clicking 'Export template' for Text templates via Mappings.
+5898	| Inbound files <br> Outbound files	| **Attachment** tab not always visible. 
 
+**Customer module**
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+1603	| Customer advanced shipping notice	| Only applicable to Warehouse ASN line config **WHSContainerization**. Customer advanced shipping notice lines duplicated when lines are split (for example multiple batches).
+11723	| Sales invoice	| Unticking **Send to EDI** when posting the Sales invoice still created a staging record.
+
+**Vendor module**
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+1989	| Purchase agreement	| Fix **External item number** for Vendor purchase order document where created from a Purchase agreements.
 
 # Current version
 
