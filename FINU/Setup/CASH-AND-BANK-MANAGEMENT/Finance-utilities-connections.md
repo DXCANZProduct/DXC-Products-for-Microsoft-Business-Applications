@@ -38,7 +38,7 @@ To open the **Financial utilities connections** page, go to **Cash and bank mana
 
 > Note: If **Import error path** is not setup/incorrect, the file will be deleted from the import path and not archived. The import file can be attached to the created D365 bank statement(s), by setting **File attachment document type** on **Financial utilities parameters**.
 
-Examples where a file would we move to **Import error path**:
+Examples where a file would we moved to **Import error path**:
 - File contains one or multiple bank accounts and not all bank accounts could be found. No bank statements are imported and file is moved to error.
 
 
