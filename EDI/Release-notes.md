@@ -68,6 +68,8 @@ Number	| Functionality	  	| Reason
 11747	| Sales invoice	| New document setting **Send only for EDI orders**. When set to _Yes_, and the sales order wasn't created via EDI, an outbound Sales invoice staging record will not be created.
 12254	| Customer advanced shipping notice	| **Line number document** added to staging lines. Existing **Line number** uses Packing slip's Line numbers, but the ASN could contain multiple packing slips, thus we added the additional field **Line number document** for unique staging line numbers.
 12286	| Customer purchase order	| New line field **Customer reference** added to lines. If the staging line fields **Customer requisition** and **Customer reference** is populated, these will be used when creating the sales order lines. If staging fields not populated it will use the header fields to populate new sales orders lines (previous process).
+12369	| Customer purchase order acknowledgement	| New header fields added to staging: <br> • Terms of payment <br> • Terms of payment description <br> • Sales responsible <br> • Sales taker <br> • Email <br> • Telephone <br> • Delivery terms <br> • Delivery terms description <br> • Mode of delivery <br> • Mode of delivery description
+12385	| Customer advanced shipping notice	| New line fields added to staging: <br> • Email <br> • Telephone <br> • Country of origin (as setup on product) <br> • Mode of delivery <br> • Mode of delivery description <br> • Way bill number - if ASN created from Shipments <br> New line fields added to Consignment note <br> • Email <br> • Telephone <br> • Mode of delivery <br> • Mode of delivery description
 
 
 **Vendor module**	
@@ -75,6 +77,7 @@ Number	| Functionality	  	| Reason
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--
 12224	| Vendor purchase order acknowledgement	| If populated, the POA staging line's 'Acknowledged delivery date' can update the applicable purchase order line's **Confirmed delivery date**. Previously it was updated only by the POA header's 'Acknowledged delivery date'.
+12294	| Vendor purchase order acknowledgement	| Ability for the POA to add a new line to the D365 purchase order. <br> Map vendor's value to POA response code **Line item - added**. Set a validation option of Info, Warning or Error if allowed to add this new line to the purchase order. Warning and Error records will be displayed in the **EDI Purchase order processing** workspace.
 
 <ins>Bug fixes</ins>
 
