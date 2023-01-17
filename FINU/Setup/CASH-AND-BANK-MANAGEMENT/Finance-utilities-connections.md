@@ -36,12 +36,12 @@ When the bank statements are to be imported via the periodic task **Import bank 
 
 To open the **Financial utilities connections** page, go to **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections**. Then set the fields as described in the following subsections.
 
-> Note: If **Import error path** is not setup/incorrect, the file will be deleted from the import path and not archived. 
-
 The import file can be attached to the created D365 bank statement(s), by setting **File attachment document type** on **Financial utilities parameters**.
 
 Examples where a file would we moved to **Import error path**:
 - File contains one or multiple bank accounts and not all bank accounts could be found. No bank statements are imported and file is moved to error.
+
+> Note: If **Import error path** is not setup/incorrect, the file will be deleted from the import path and not archived. 
 
 
 Field         | Description                         | Example or Options
