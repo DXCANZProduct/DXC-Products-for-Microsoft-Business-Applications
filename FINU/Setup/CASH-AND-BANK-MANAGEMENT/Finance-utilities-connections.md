@@ -38,6 +38,9 @@ To open the **Financial utilities connections** page, go to **Cash and bank mana
 
 > Note: If **Import error path** is not setup/incorrect, the file will be deleted from the import path and not archived. The import file can be attached to the created D365 bank statement(s), by setting **File attachment document type** on **Financial utilities parameters**.
 
+Examples where a file would we move to **Import error path**:
+- File contains one or multiple bank accounts and not all bank accounts could be found. No bank statements are imported and file is moved to error.
+
 
 Field         | Description                         | Example or Options
 :--           |:--                                  |:--
@@ -69,14 +72,14 @@ Field         | Description                         | Example or Options
 
 Field         | Description                         | Example or Options
 :--           |:--                                  |:--
-**Container name**  |	Specify the blob storage container. Folders are not supported	  | integration-import
-**Credential type** |	Select applicable Credential type for Azure blob	| •	Key vault <br> •	Database
-**Storage account name**  |	Enabled when Credential type = Database	
-**Storage account key**   |	Enabled when Credential type = Database	
-**Connection string**     |	Enabled when Credential type = Key vault	
-**Archive container name**  |	Enter the path where the imported files are to be copied to. Folders are not supported	| integration-archive
+**Container name**  |	Specify the **import** blob storage container. Folders are not supported	  | integration-import
+**Credential type** |	Select applicable **Credential type** for Azure blob	| •	Key vault <br> •	Database
+**Storage account name**  |	Enter the **Storage account name** where Credential type = **Database**
+**Storage account key**   |	Enter the **Storage account key** where Credential type = **Database**	
+**Connection string**     |	Enabled when Credential type = **Key vault**. <br> Select the applicable **Secret** as setup in **Key vault paramaters**. 
+**Archive container name**  |	Enter the **archive** path where the imported files are to be copied to. Folders are not supported	| integration-archive
 **Search mask**           |	A file mask is used to match files in the Import path	        | Bank123*
-**Error container name**  |	Enter the path where the files that matches the Search mask, but haven’t successfully been imported, are copied to. Folders are not supported	| integration-error
+**Error container name**  |	Enter the **error** path where the files that matches the Search mask, but haven’t successfully been imported, are copied to. Folders are not supported. | integration-error
 
 ### SFTP		
 
