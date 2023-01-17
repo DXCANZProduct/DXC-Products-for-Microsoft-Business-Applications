@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Finance utilities connections
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-06-17
+ms.date: 2023-01-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 When the bank statements are to be imported via the periodic task **Import bank statements via financial utilities connection**, the applicable connection type must be setup using the **Financial utilities connections** page.
 
 **Financial utilities connections** are used in the following:
-1.	Assigned to the applicable [Bank accounts](Bank-accounts.md).
+1.	Assigned to the applicable [Bank accounts](Bank-accounts.md) - Optional (for info).
 2.	Mandatory parameter in the periodic task [Import bank statements via financial utilities connection](Bank-statement-import.md)
 
 To open the **Financial utilities connections** page, go to **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections**. Then set the fields as described in the following subsections.
