@@ -70,6 +70,8 @@ Number	| Functionality	  	| Reason
 12286	| Customer purchase order	| New line field **Customer reference** added to lines. If the staging line fields **Customer requisition** and **Customer reference** is populated, these will be used when creating the sales order lines. If staging fields not populated it will use the header fields to populate new sales orders lines (previous process).
 12369	| Customer purchase order acknowledgement	| New header fields added to staging: <br> • Terms of payment <br> • Terms of payment description <br> • Sales responsible <br> • Sales taker <br> • Email <br> • Telephone <br> • Delivery terms <br> • Delivery terms description <br> • Mode of delivery <br> • Mode of delivery description
 12385	| Customer advanced shipping notice	| New line fields added to staging: <br> • Email <br> • Telephone <br> • Country of origin (as setup on product) <br> • Mode of delivery <br> • Mode of delivery description <br> • Way bill number - if ASN created from Shipments <br> <br> New line fields added to Consignment note <br> • Email <br> • Telephone <br> • Mode of delivery <br> • Mode of delivery description
+12412	| EDI Sales order processing	| Open consignment notes - Exclude for non ASN customers.
+
 
 
 **Vendor module**	
@@ -88,6 +90,8 @@ Number	| Name		 | Description
 11984	| Inbound text templates	| Fix CAR resolution change in 10.0.27.20220930 release for text template's line number calculation on import-to-staging step. <br> Issue for processing import-to-staging where the staging table's line number is the unique index.
 11999	| Export template for text types	| Fix Error 'Buffer for call of SAB_EDITemplateFile is not specified.' when clicking 'Export template' for Text templates via Mappings.
 5898	| Inbound files <br> Outbound files	| **Attachment** tab not always visible. 
+12199	| Trading partners	| Could only filter to one company in column.
+12424	| Batch recurrence	| Added batch recurrence options **Months** and **Years** to: <br> • Batch control group <br> • Inbound file's Retrieve files <br> • Export batch jobs's New batch job
 
 **Customer module**
 
@@ -95,12 +99,25 @@ Number	| Name		 | Description
 :--	|:--		 |:--
 1603	| Customer advanced shipping notice	| Only applicable to Warehouse ASN line config **WHSContainerization**. Customer advanced shipping notice lines duplicated when lines are split (for example multiple batches).
 11723	| Sales invoice	| Unticking **Send to EDI** when posting the Sales invoice still created a staging record.
+12299	| Customer advanced shipping notice	| Populate **PackingSlipId** on lines.
+12390	| Customer purchase order change	| Quantity change not updating the Pick / Invent quantity on the sales order line.
+12391	| Customer purchase order acknowledgment	| Only applicable for POA created after Customer purchase order change. POA's SalesQty still showed original quantity, not updated quantity.
 
 **Vendor module**
 
 Number	| Name		 | Description
 :--	|:--		 |:--
 1989	| Purchase agreement	| Fix **External item number** for Vendor purchase order document where created from a Purchase agreements.
+12291	| Vendor purchase order acknowledgement	| **Vendor price** rounded on **EDI purchase order confirmation**.
+
+**3PL module**
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+11913	| Transactional locking type	| When there’s insufficient physical inventory available to post write-off transactions with 'Picking list registration', ‘Inventory adjustment - Transfer’ and ‘Inventory adjustment - Movement’ documents, the ‘Process to target’ batch job crashes with this update conflict error: <br> 
+Batch task failed: Cannot edit a record in Inventory order transaction (WMSOrderTrans). An update conflict occurred due to another user process deleting the record or changing one or more fields in the record. <br> Resulted in staging records after issue record not being processed. <br> Changed: Change transactional locking type to allow multiple updates.
+12425	| Picking list	| **Sent to EDI** incorrectly displayed _No_ where the sent Picking list has received a Picking list registration and the lines have been split (for example multiple batches).
+12550	| Inventory adjustment workspace	| Updated security on the **Reset flag**, **Exclude**, **Inculde**, **Send to EDI** buttons for: <br> •  Open picking list <br> •  Open shipment advice - Purchase order <br> •  Open shipment advice - Return order <br> •  Open shipment advice - Voyage
 
 # Current version
 
