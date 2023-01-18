@@ -41,7 +41,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 <ins>**Options**</ins>  | |
 **ASN strategy**    |	Select to send ASN based on delivery note or consignment note number	| •	**Single packing slip** – Send one ASN per packing slip <br> •	**Consolidated packing slip** – Send one ASN per consignment note (combination of one or more ASN)
 **Warn when consignment note not assigned** |	Option to warn user when Posting packing slip and Send to EDI is enabled but Consignment note is blank	| •	**Yes** – Receive warning ‘You are about to post the document without a Consignment note number assigned. The EDI advanced shipping notice will not be sent. Select OK to continue.' <br> •	**No** – No warning will be provided.
-**Send only for EDI orders**  | Option to only create an ASN staging record where the sales order was created via EDI. <br> Only applies to customers that have this document type enabled.  |  •	**Yes** – ASN staging record will only be created when sales order was created via EDI <br> •	**No** – ASN staging record will be created for all sales orders for the customer.
+**Send only for EDI orders**  | Option to only create an ASN staging record where the sales order was created via EDI. <br> Only applies to customers that have this document type enabled.  |  •	**Yes** – ASN staging record will only be created when sales order was created via EDI <br> •	**No** – ASN staging record will be created for all sales orders.
 <ins>**Shipment Type**</ins>	  | |
 **Part Shipment**   |	Specify the part shipment identifiers for ASN. Populates ShipmentStatus.	  | Example: PS
 **Final Shipment**  |	Specify the final shipment identifiers for ASN.	Populates ShipmentStatus.   | Example: FS
