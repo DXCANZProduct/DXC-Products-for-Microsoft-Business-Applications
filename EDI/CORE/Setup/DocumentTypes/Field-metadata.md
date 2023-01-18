@@ -2,10 +2,10 @@
 # required metadata
 
 title: EDI Core
-description: EDI Core - Setup document types - Field metadata
+description: EDI Core - Setup document types - Staging metadata
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2020-01-12
+ms.date: 2023-01-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,15 +27,15 @@ ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
 
-# Document types - Field metadata
+# Document types - Staging metadata
 
-## Setup field metadata
+## Setup staging metadata
 
 Users can access the form by navigating to **EDI > Setup > Document types**. <br>
 
-The field labels that are available as standard in D365 often need to be updated or extended in order to display meaningful information.  Using the field metadata fast tab, it is possible to update both the **display name** and the **help** text available for a specific field within the document templates form.
+The field labels that are available as standard in D365 often need to be updated or extended in order to display meaningful information.  Using the staging metadata fast tab, it is possible to update both the **display name** and the **help** text available for a specific field within the document templates form.
 
-The Field metadata fast tab displays all the available fields for the Document type and their current details. 
+The Staging metadata fast tab displays all the available fields for the Document type and their current details. 
 
 ### Update manually
 
@@ -46,8 +46,11 @@ The Field metadata fast tab displays all the available fields for the Document t
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
-**Field name**                    |	The system field name (not editable)
+**Field name**                    |	System field name (not editable)
 **Field label**                   |	The field label provided standard. Unless overridden via the display name field this will be the label displayed throughout the implementation (not editable)
+**Field type**                    | System field type (not editable)
+**Field length**                  | System field length (not editable)
+**Mandatory**                     | System mandatory indicator (not editable)
 **Display name**                  |	An override to the standard field label. If set, this will be seen throughout the environment in place of the standard field label.
 **Help**                          |	The help text provided standard. Unless overridden via the display description field this will be the label displayed throughout the implementation (not editable)
 **Display description**           |	An override to the standard help text. If set, this will be seen throughout the environment in place of the standard help text.
