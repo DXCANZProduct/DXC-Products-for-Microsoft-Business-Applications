@@ -43,7 +43,7 @@ Document type setup are split into:
 2. [Setting profiles](DocumentTypes/Setting-profiles.md): where applicable for the document type
 3. [Validation profiles](DocumentTypes/Validation-profiles.md): where applicable for the document type
 4. [Outbound file names](DocumentTypes/Outbound-filenames.md): applicable to all outbound document types
-5. [Field metadata](DocumentTypes/Field-metadata.md): optionally update staging form's display name and help text per field
+5. [Staging metadata](DocumentTypes/Field-metadata.md): optionally update staging form's display name and help text per field
 
 The following Document types are available and depends on licensing and enabled features:
 - **Core**
