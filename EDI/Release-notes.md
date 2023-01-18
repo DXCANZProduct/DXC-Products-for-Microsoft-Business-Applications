@@ -47,6 +47,11 @@ Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dyn
 #### Build 10.0.29.TBD
 Planned release date: 31 January 2023 <br> 
 
+<ins>**Manual actions required**</ins>
+ - Due to new setting **Send only for EDI orders**. Ensure **Customer** Trading partners have setting profiles assigned to the below documents. Else users will receive error 'Update has been cancelled. No document setting specified' when trying to post these the Sales order's Packing slip and Invoice:
+ 	- Customer advanced shipping notice
+ 	- Sales invoice 
+
 <ins>New features</ins>
 
 **Core module**	- Applies to all modules
