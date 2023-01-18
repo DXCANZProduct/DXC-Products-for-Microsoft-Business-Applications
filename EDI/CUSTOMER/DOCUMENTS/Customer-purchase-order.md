@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer purchase order
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-06-29
+ms.date: 2023-01-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -250,6 +250,7 @@ The following EDI Header staging fields are available on the header page.
 **Package label code**      | The code used for the label.	                                            | Sales order > EDI > Package label code
 **Advertisement date**	    | The advertisement date applicable for the order.	                        | Sales order > EDI > Advertisement date
 **Comments**                | Header comments for the order.                                            | Sales order > EDI > Comments
+**Sales origin**            | The customer's sales origin from the EDI PO is shown here.                | Sales order > Sales origin
 **Template Id**             | The EDI templates used to create the staging table record	                
 **PO version number**       | The PO version number from the EDI record.	                                | Sales order > EDI > Original version number
 <ins>**Delivery**</ins>	    |   |
