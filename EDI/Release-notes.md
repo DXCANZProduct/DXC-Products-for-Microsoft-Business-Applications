@@ -48,9 +48,11 @@ Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dyn
 Planned release date: 31 January 2023 <br> 
 
 <ins>**Manual actions required**</ins>
- - Due to new setting **Send only for EDI orders**. Ensure **Customer** Trading partners have setting profiles assigned to below documents. Else users will receive error 'Update has been cancelled. No document setting specified' when trying to post the Sales order's Packing slip and Invoice:
+Due to new setting **Send only for EDI orders**. Ensure **Customer** Trading partners have setting profiles assigned to below documents. Else users will receive error 'Update has been cancelled. No document setting specified' when trying to post the Sales order's Packing slip and Invoice:
  	- Customer advanced shipping notice
  	- Sales invoice 
+	
+Can be manually updated in **EDI > Setup > Trading partners** or by using data entity **EDI Documents - Customers**
 
 ![Trading partner Setting profile](RELEASE-NOTES-IMAGES/20230131_1.png "Trading partner Setting profile")
 
