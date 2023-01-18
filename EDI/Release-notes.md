@@ -52,6 +52,8 @@ Planned release date: 31 January 2023 <br>
  	- Customer advanced shipping notice
  	- Sales invoice 
 
+![Trading partner Setting profile](RELEASE-NOTES-IMAGES/20230131_1.png "Trading partner Setting profile")
+
 <ins>New features</ins>
 
 **Core module**	- Applies to all modules
