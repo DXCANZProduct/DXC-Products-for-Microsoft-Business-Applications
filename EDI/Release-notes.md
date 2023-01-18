@@ -114,8 +114,7 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		 |:--
-11913	| Transactional locking type	| When there’s insufficient physical inventory available to post write-off transactions with 'Picking list registration', ‘Inventory adjustment - Transfer’ and ‘Inventory adjustment - Movement’ documents, the ‘Process to target’ batch job crashes with this update conflict error: <br> 
-Batch task failed: Cannot edit a record in Inventory order transaction (WMSOrderTrans). An update conflict occurred due to another user process deleting the record or changing one or more fields in the record. <br> Resulted in staging records after issue record not being processed. <br> Changed: Change transactional locking type to allow multiple updates.
+11913	| Transactional locking type	| When there’s insufficient physical inventory available to post write-off transactions with 'Picking list registration', ‘Inventory adjustment - Transfer’ and ‘Inventory adjustment - Movement’ documents, the ‘Process to target’ batch job crashes with this update conflict error: <br> Batch task failed: Cannot edit a record in Inventory order transaction (WMSOrderTrans). An update conflict occurred due to another user process deleting the record or changing one or more fields in the record. <br> Resulted in staging records after issue record not being processed. <br> Changed: Change transactional locking type to allow multiple updates.
 12425	| Picking list	| **Sent to EDI** incorrectly displayed _No_ where the sent Picking list has received a Picking list registration and the lines have been split (for example multiple batches).
 12550	| Inventory adjustment workspace	| Updated security on the **Reset flag**, **Exclude**, **Inculde**, **Send to EDI** buttons for: <br> •  Open picking list <br> •  Open shipment advice - Purchase order <br> •  Open shipment advice - Return order <br> •  Open shipment advice - Voyage
 
