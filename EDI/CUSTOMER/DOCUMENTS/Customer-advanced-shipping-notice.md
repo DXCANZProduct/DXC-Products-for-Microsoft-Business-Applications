@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer advanced shipping notice
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-05
+ms.date: 2023-01-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ ms.dyn365.ops.version:  AX 7.0.1
 
 EDI customers may require an advanced shipping notice (ASN) for a sales order.
 
-> Note: Customer advanced shipping notice can also be sent for a sales order not created via EDI.
+> Note: Customer advanced shipping notice can also be sent for a sales order not created via EDI, where document setting 'Send only for EDI orders' allows it.
 
 The following subsections will describe how to view, process and send Customer advanced shipping notice to applicable Customer Trading partners. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed. <br>
@@ -198,7 +198,8 @@ The following EDI Line staging fields are available on the lines page.
 
 **Field**	               | **Description**	                                        | **Source D365 field**
 :---                       |:---                                                        |:---
-**Line number**            | The line within the EDI table/file.	
+**Line number**            | The line withing the D365 packing slip                     | Packing Slip > Line number
+**Line number document**   | The line within the EDI table/file 
 **Item number**            | The D365 item number                                       | Packing Slip > Item id
 **Text**                   | The D365 item name	                                        | Packing Slip > Item Name
 **External item number**   | Customer external item number	                            | Sales Line > General > External
