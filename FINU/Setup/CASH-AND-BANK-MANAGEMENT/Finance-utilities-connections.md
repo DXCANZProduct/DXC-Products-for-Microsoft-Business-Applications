@@ -55,6 +55,30 @@ Field         | Description                         | Example or Options
 
 Click **Save** and the applicable Setup will be displayed as per Connection type selected. <br>
 
+### Log
+All connection methods have the option to set **Log level** and **Retention periods**. <br>
+These logs can then be used to set **Custom alerts**, for example using error log to be notified when a connection can't connect.
+
+- Fields for setting log:
+
+| **Field**                         | **Description**                      | 
+| :-------------------------------- |:-------------------------------------| 
+**Logging level**                   | Select required logging level: <br> • None (default) <br> • Info <br> • Warning <br> • Error
+<ins>**Log retention**</ins>        |
+**Duration**                        | Enter quantity for required duration
+**Period**                          | Select log retention period: <br> • Unlimited <br> • Days <br> • Weeks <br> • Months <br> • Quarters <br> • Years
+
+
+- **Log** button available on Connection setup:
+
+| **Field**                         | **Description**                      | 
+| :-------------------------------- |:-------------------------------------| 
+**Created date and time**           | Date and time log was created.
+**Created by**                      | By whom the log was created.
+**Level**                           | Log level: Information, warning or error.
+**Log code**                        | Code that initiated the log.
+**Message**                         | Message for the log.
+
 ### FTP
 
 Field         | Description                         | Example or Options
