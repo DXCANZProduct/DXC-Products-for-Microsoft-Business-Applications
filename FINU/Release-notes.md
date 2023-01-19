@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-11-30
+ms.date: 2023-01-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,13 +29,11 @@ ms.dyn365.ops.version: AX 7.0.1
 # Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-# Current version
+# Next version
 
-### Release 10.0.29.20221130
+Next release is planned for 31 January 2023.
 
-#### Build 10.0.29.202211301 
-
-Release date: 30 Nov 2022 <br>
+### Release 10.0.29.TBD
 
 DXC Finance Utilities 10.0.29 runs on the following Microsoft releases
 
@@ -43,6 +41,32 @@ Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
 Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
+Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
+
+#### Build 10.0.29.TBD
+Planned release date: 31 January 2023 <br> 
+
+<ins>New features</ins>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+12119		| Financial utilities connection	| **Log** ability added to all connection types. Ability to set **Logging level** and **Retention period**. This provides users the ability to set Custom alerts. For example if a connection can't connect a log with level _Error_ can be created.
+12353		| Reconciliation matching rules	| Ability to use invoice to find the D365 customer account. <br> Applicable to **Offset account type** set to _Customer_ and where **Offset account** and **Offset account bank statement field** are both blank. <br> When running the Reconciliation matching rule, the field mapped to **Settle transaction bank statement field** (D365 invoice number) will be used to find the **D365 customer account**, to create the **Customer payment journal line**.
+
+<ins>Bug fixes</ins>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+12324		| Bank statement import	| When a custom bank statement format was used and the file contained a bank account that isn't setup for advanced bank reconciliation, the bank statement headers were created for the bank accounts setup with advanced bank reconciliation, but no bank statement lines were created. <br> The fix now creates the bank statement lines for bank account setup as advanced. <br> Note: Std GER doesn't import any bank statements where the file contains a bank account not setup as advanced bank reconciliation.
+
+
+# Current version
+
+### Release 10.0.29.20221130
+
+#### Build 10.0.29.202211301 
+
+Release date: 30 Nov 2022 <br>
 
 <ins>New features</ins>
 
