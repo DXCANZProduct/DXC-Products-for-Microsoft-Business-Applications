@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor setup - POA responde code group
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-09
+ms.date: 2023-01-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 # Vendor setup
 ## Setup POA responde codes
 
-Users can access the form by navigating to **EDI > Setup > Vendorr setup > POA response code group**
+Users can access the form by navigating to **EDI > Setup > Vendor setup > POA response code group**
 
 POA Response codes are used to identify the status of information used in a Purchase Order Acknowledgement (POA) for each vendor.
 - Click **New** to create a new record. 
@@ -58,6 +58,7 @@ POA Response codes are used to identify the status of information used in a Purc
 **Line item – pack difference**   |	Advise of pack difference	          | POAVendCodeItem / POA code item      | PD
 **Line item – inner accept**      |	Item inner accepted	                  | POAVendCodeItem / POA code item      | LIA
 **Line item – inner difference**  |	Advise of inner difference	          | POAVendCodeItem / POA code item      | ID
+**Line item - added**             | Add new line to purchase order        | POAVendCodeItem / POA code item      | ITA
 
 ## Where used
 POA response code group is assigned on the [Vendor Trading partner's](../Trading-partner.md) Options field called **POA responde code group**. <br>
