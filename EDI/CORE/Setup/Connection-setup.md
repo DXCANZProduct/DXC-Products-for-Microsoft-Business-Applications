@@ -41,7 +41,8 @@ Default EDI connection is determined by: <br>
 The default EDI connection can be overridden on Trading partner or Trading partner document level for outgoing and incoming documents.
 
 ## Log
-All connection methods have the option to set **Log level** and **Retention periods**.
+All connection methods have the option to set **Log level** and **Retention periods**. <br>
+These logs can then be used to set **Custom alerts**, for example using error log to be notified when a connection can't connect.
 
 - Fields for setting log:
 
