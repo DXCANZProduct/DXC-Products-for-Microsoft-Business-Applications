@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer purchase order acknowledgement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-11-15
+ms.date: 2022-11-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -293,7 +293,7 @@ The following EDI Header staging fields are available on the header page.
 :---                    |:---                                                   |:---
 <ins>**Identification FastTab**</ins>		|   |
 <ins>**Identification**</ins>		        |   |
-**EDI number**          | EDI Staging table record id                           | Sales Order > EDI > Original EDI number
+**EDI number**          | EDI Staging table record id                           | Sales order > EDI > Original EDI number
 **Company**             | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here    | Sales order > EDI > Company GLN
 **Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	           
@@ -304,10 +304,10 @@ The following EDI Header staging fields are available on the header page.
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
 <ins>**General**</ins>	|   |
-**Customer account**        |	Customer account for the staging record	           | Sales Order > Customer account
+**Customer account**        |	Customer account for the staging record	           | Sales order > Customer account
 **Sales order**             |	Sales order number for the staging record          | Sales order > Sales order
 **Customer requisition**    | Customers purchase order number to be populated in the Customer requisition field of the sales order header.	| Sales order > General > Customer requisition
-**EDI order type**          | The EDI order type is shown here.	                            | Sales Order > EDI > EDI order type
+**EDI order type**          | The EDI order type is shown here.	                            | Sales order > EDI > EDI order type
 <ins>**Status**</ins>	|   |
 **Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
 **Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
@@ -318,18 +318,24 @@ The following EDI Header staging fields are available on the header page.
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – Th staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.
 **Created Date and Time**       | The date and time the selected record was created in the staging table.
 <ins>**Other**</ins>	|   |
-**Purchase order date**     | The purchase order date from the EDI record is shown here.    | Sales Order > EDI > Original order date
-**Package characteristic code** | The code used to for the package contents.	              | Sales Order > EDI > Package characteristic code
-**Package label code**      | The code used for the label.	                                | Sales Order > EDI > Package label code
-**Advertisement date**	    | The advertisement date applicable for the order	              | Sales Order > EDI > Advertisement date
-**Department**              | The customer’s department from the EDI PO is shown here.	    | Sales Order > EDI > Department
-**Store zone**              | The store zone from the EDI record is shown here.	            | Sales Order > EDI > Store zone
-**Buyer code**              | The customer’s buyer code from the EDI record is shown here.	| Sales Order > EDI > Buyer code
-**Retail buyer location**   | The customer’s retail buyer location from the EDI record is shown here.	| Sales Order > EDI > Retail buyer location code
-**Purpose code**            | The customer’s purpose code from the EDI record is shown here.	        | Sales Order > EDI > Purpose code
-**Our account number**      |	Our account number in the customers system                    | Customer > Account number
+**Purchase order date**     | The purchase order date from the EDI record is shown here.    | Sales order > EDI > Original order date
+**Package characteristic code** | The code used to for the package contents.	              | Sales order > EDI > Package characteristic code
+**Package label code**      | The code used for the label.	                                | Sales order > EDI > Package label code
+**Advertisement date**	    | The advertisement date applicable for the order	              | Sales order > EDI > Advertisement date
+**Department**              | The customer’s department from the EDI PO is shown here.	    | Sales order > EDI > Department
+**Store zone**              | The store zone from the EDI record is shown here.	            | Sales order > EDI > Store zone
+**Buyer code**              | The customer’s buyer code from the EDI record is shown here.	| Sales order > EDI > Buyer code
+**Retail buyer location**   | The customer’s retail buyer location from the EDI record is shown here.	| Sales order > EDI > Retail buyer location code
+**Purpose code**            | The customer’s purpose code from the EDI record is shown here.	        | Sales order > EDI > Purpose code
+**Our account number**      |	Our account number in the customers system.                    | Customer > Account number
+**Terms of payment**        | Terms of payment from the sales order.                         | Sales order > Terms of payment
+**Terms of payment description**    | Description for the Terms of payment.                  | Terms of payment > Description
+**Sales responsible**       | Sales responsible from the sales order.                        | Sales order > Sales responsible
+**Sales taker**             | Sales taker from the sales order.                              | Sales order > Sales taker
+**Email**                   | Email from the sales order.                                    | Sales order > Email
+**Telephone**               | Telephone from the sales order.                                | Sales order > Telephone
 <ins>**Delivery address**</ins> |   |
-**Delivery name**           |	Address for Delivery	                                        | Sales Order > Delivery Address Information
+**Delivery name**           |	Address for Delivery	                                        | Sales order > Delivery Address Information
 **City**                    |	Delivery address - City	
 **Country/region**          |	Delivery address - Country/region	
 **ISO**                     |	Delivery address - Country/region ISO	
@@ -342,8 +348,12 @@ The following EDI Header staging fields are available on the header page.
 **ZIP/postal code**         |	Delivery address - Zip/postal code	
 **Building complement**     |	Delivery address - Building complement	
 **Store code**              |	Delivery address - Store code	
+**Delivery terms**          |   Delivery terms from the sales order                              | Sales order > Delivery terms
+**Delivery terms description**  | Description for the Delivery terms                             | Delivery terms > Description
+**Mode of delivery**        |   Mode of delivery from the sales order                            | Sales order > Mode of delivery
+**Mode of delivery description**    | Description for the Mode of delivery                       | Mode of delivery > Description
 <ins>**Version**</ins>  |   |
-**PO version number**       | The PO version number from the EDI record.	                                | Sales Order > EDI > Original version number
+**PO version number**       | The PO version number from the EDI record.	                                | Sales order > EDI > Original version number
 
 ### Line fields
 The following EDI Line staging fields are available on the lines page.
