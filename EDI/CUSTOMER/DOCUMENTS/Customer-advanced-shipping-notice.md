@@ -228,3 +228,10 @@ The following EDI Line staging fields are available on the lines page.
 **Customer reference**     | Customers purchase order reference to be populated in the Customer reference field of the sales order header |	Header > General > Customer reference
 **Shipment type**          | Status of the shipment (Full/Partial)	
 **SSCC**                   | SSCC #. Dependent on the [ASN line configuration](../SETUP/Warehouses.md#asn-line-configurations) set assigned to the sales order’s warehouse | **Picking List** – Pick List Registration SSCC on the pick lines <br> **WHSContainerization** – Container# <br> **WHSDeliveredLP** – License Plate# 
+**Packing slip**            | Packing slip ID                                           | Packing slip > Packing slip ID
+**Email**                   | Email from the sales order.                                    | Sales order > Email
+**Telephone**               | Telephone from the sales order.                                | Sales order > Telephone
+**Mode of delivery**        |   Mode of delivery from the sales order                        | Sales order > Mode of delivery
+**Mode of delivery description**    | Description for the Mode of delivery                   | Mode of delivery > Description
+**Country/region**          | Country of origina for the product                             | Product > Origin > Country/region
+**Way bill number**         | Way bill number from the Shipment                               | Shipment > Way bill number              
