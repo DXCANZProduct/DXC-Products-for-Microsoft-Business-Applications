@@ -198,17 +198,17 @@ The following EDI Line staging fields are available on the lines page.
 
 **Field**	               | **Description**	                                        | **Source D365 field**
 :---                       |:---                                                        |:---
-**Line number**            | The line withing the D365 packing slip                     | Packing Slip > Line number
+**Line number**            | The line withing the D365 packing slip                     | Packing slip > Line number
 **Line number document**   | The line within the EDI table/file 
-**Item number**            | The D365 item number                                       | Packing Slip > Item id
-**Text**                   | The D365 item name	                                        | Packing Slip > Item Name
-**External item number**   | Customer external item number	                            | Sales Line > General > External
-**Bar code**               | The GTIN or barcode                                        | Sales Line > EDI item number
-**Store code**	           | Store code for the delivery line	                        | Sales Line > Store Code
+**Item number**            | The D365 item number                                       | Packing slip > Item id
+**Text**                   | The D365 item name	                                        | Packing slip > Item Name
+**External item number**   | Customer external item number	                            | Sales line > General > External
+**Bar code**               | The GTIN or barcode                                        | Sales line > EDI item number
+**Store code**	           | Store code for the delivery line	                        | Sales line > Store Code
 **Delivery name**          | Delivery name and address information	                    | Consignment/Sales order > Delivery address information
-**Quantity**               | Quantity to be delivered	                                | Packing Slip > Quantity
-**Unit**                   | Unit of measure	                                        | Sales Line > Unit
-**Sales price**            | Sales line unit price	                                    | Sales Line > Unit Price
+**Quantity**               | Quantity to be delivered	                                | Packing slip > Quantity
+**Unit**                   | Unit of measure	                                        | Sales line > Unit
+**Sales price**            | Sales line unit price	                                    | Sales line > Unit Price
 **Amount**                 | Line amount	
 **Weight**                 | Line weight	
 **Serial number**		|   |
@@ -221,8 +221,8 @@ The following EDI Line staging fields are available on the lines page.
 **Expiration date**        | Batch expiration date	
 **Manufacturing date**     | Batch manufacturing date	
 **Purchase order date**    | The purchase order date from the EDI order is shown here	   | Header > EDI > Purchase order date
-**Department**             | The customer’s department from the EDI order is shown here    | Sales Order > EDI > Department
-**Package characteristic code** | The code used to for the package contents	               | Sales Order > EDI > Package characteristic code
+**Department**             | The customer’s department from the EDI order is shown here    | Sales order > EDI > Department
+**Package characteristic code** | The code used to for the package contents	               | Sales order > EDI > Package characteristic code
 **End date/time**          | Date the order was picked	
 **Customer requisition**   | Customers purchase order number to be populated in the Customer requisition field of the sales order header | Header > General > Customer requisition
 **Customer reference**     | Customers purchase order reference to be populated in the Customer reference field of the sales order header |	Header > General > Customer reference
