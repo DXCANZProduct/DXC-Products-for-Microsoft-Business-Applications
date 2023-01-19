@@ -69,7 +69,7 @@ Number	| Functionality	  	| Reason
 10646	| Outbound files	| **File transfer type** filter added to Outbound files.
 11978	| EDI Document maintenance workspace	| Ability to select multiple records and use **Reset status** or **Cancel**.
 12007	| Connections	| **Log** ability added to all connection types. Ability to set **Logging level** and **Retention period**. This provides users the ability to set Custom alerts. For example if a connection can't connect a log with level _Error_ can be created.
-12609	| SFTP			| Keyboard Interactive Authentication added to SFTP. Upgraded Renci.SSHNet library to 2020.0.2
+12609	| SFTP			| Keyboard Interactive Authentication added to SFTP. <br> Upgraded Renci.SSHNet library to 2020.0.2
 
 **Customer module**	
 
