@@ -47,7 +47,7 @@ All connection methods have the option to set **Log level** and **Retention peri
 
 | **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
-**Logging level**                   | Select required logging level: <br> • None (default <br> • Info <br> • Warning <br> • Error
+**Logging level**                   | Select required logging level: <br> • None (default) <br> • Info <br> • Warning <br> • Error
 <ins>**Log retention**</ins>        |
 **Duration**                        | Enter quantity for required duration
 **Period**                          | Select log retention period: <br> • Unlimited <br> • Days <br> • Weeks <br> • Months <br> • Quarters <br> • Years
