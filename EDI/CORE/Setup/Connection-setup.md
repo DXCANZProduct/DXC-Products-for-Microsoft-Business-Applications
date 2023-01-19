@@ -43,7 +43,17 @@ The default EDI connection can be overridden on Trading partner or Trading partn
 ## Log
 All connection methods have the option to set **Log level** and **Retention periods**.
 
-**Log** button available on Connection setup:
+- Fields for setting log:
+
+| **Field**                         | **Description**                      | 
+| :-------------------------------- |:-------------------------------------| 
+**Logging level**                   | Select required logging level: <br> • None (default <br> • Info <br> • Warning <br> • Error
+<ins>**Log retention**</ins>        |
+**Duration**                        | Enter quantity for required duration
+**Period**                          | Select log retention period: <br> • Unlimited <br> • Days <br> • Weeks <br> • Months <br> • Quarters <br> • Years
+
+
+- **Log** button available on Connection setup:
 
 | **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
@@ -53,14 +63,7 @@ All connection methods have the option to set **Log level** and **Retention peri
 **Log code**                        | Code that initiated the log.
 **Message**                         | Message for the log.
 
-Fields for setting log:
 
-| **Field**                         | **Description**                      | 
-| :-------------------------------- |:-------------------------------------| 
-**Logging level**                   | Select required logging level: <br> • None (default <br> • Info <br> • Warning <br> • Error
-<ins>**Log retention**</ins>        |
-**Duration**                        | Enter quantity for required duration
-**Period**                          | Select log retention period: <br> • Unlimited <br> • Days <br> • Weeks <br> • Months <br> • Quarters <br> • Years
 
 ### FTP sites
 Users can access the form by navigating to **EDI > Setup > Connection setup > FTP sites**
