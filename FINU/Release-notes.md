@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-01-19
+ms.date: 2023-01-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -246,22 +246,6 @@ Number	  | Name	          | Description
 9665	    | Print payment advice	| Error when feature 'Enable batch processing for bank payment advice reports’ is enabled and printing the payment advice V2 for an ECL EFT format via Generate payments in the Vendor payment journal.
 9986	    | Compile errors	| PEAP 10.0.26 Compile errors <br> Error The Class 'ERUserParameterDataContract' is internal and is not accessible from the current module 'DXC Finance Utilities'. K:\AosService\PackagesLocalDirectory\bin\XppSource\DXC Finance Utilities\AxClass_DFUVendOutPaymHandler.xpp 78
 	
-### Release 10.0.18.20211210
-
-#### Build 10.0.18.202112102
-
-Number	  | Functionality	  | Reason
-:--       |:--              |:--
-1386	| Data entities		| Following entities have been added/updated: <br> •	Bank statement format / BankStatementFormatEntity <br> •	Financial utilities parameters / SAB_FinUtilParametersEntity <br> •	Budget utilities parameters / SAB_FinBudgetParametersEntity <br> •	Bank accounts / BankAccountEntity <br> •	Vendor bank accounts / VendVendorBankAccountEntity <br> •	Reconciliation matching rules / BankReconciliationMatchingRuleEntity 
-8324	| Reconciliation matching rule	| Ability to create customer payment journal and settle one invoice per payment (1:1)
-9629	| SAB_FinBankStatementImportBatch	| Update to class to allow **Multiple statements in the file** setup as a parameter for a client mod to import via web service.
-
-
-<ins>Bug fixes</ins>
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-9517	  | Mark as new - Description	| Description in Bank reconciliation’s mark as new (for customer and vendor offset transactions) not populating the customer and vendor’ subledger transaction’s description.
 
 
 # Installation process
