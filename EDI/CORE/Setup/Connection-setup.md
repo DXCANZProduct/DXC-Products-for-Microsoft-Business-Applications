@@ -5,7 +5,7 @@ title: EDI Connection setup
 description: Overview of the EDI connection methods
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-06-29
+ms.date: 2023-01-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,6 +39,32 @@ Default EDI connection is determined by: <br>
 - Incoming documents: All active connection incoming paths as setup below. <br>
 
 The default EDI connection can be overridden on Trading partner or Trading partner document level for outgoing and incoming documents.
+
+## Log
+All connection methods have the option to set **Log level** and **Retention periods**. <br>
+These logs can then be used to set **Custom alerts**, for example using error log to be notified when a connection can't connect.
+
+- Fields for setting log:
+
+| **Field**                         | **Description**                      | 
+| :-------------------------------- |:-------------------------------------| 
+**Logging level**                   | Select required logging level: <br> • None (default) <br> • Info <br> • Warning <br> • Error
+<ins>**Log retention**</ins>        |
+**Duration**                        | Enter quantity for required duration
+**Period**                          | Select log retention period: <br> • Unlimited <br> • Days <br> • Weeks <br> • Months <br> • Quarters <br> • Years
+
+
+- **Log** button available on Connection setup:
+
+| **Field**                         | **Description**                      | 
+| :-------------------------------- |:-------------------------------------| 
+**Created date and time**           | Date and time log was created.
+**Created by**                      | By whom the log was created.
+**Level**                           | Log level: Information, warning or error.
+**Log code**                        | Code that initiated the log.
+**Message**                         | Message for the log.
+
+
 
 ### FTP sites
 Users can access the form by navigating to **EDI > Setup > Connection setup > FTP sites**

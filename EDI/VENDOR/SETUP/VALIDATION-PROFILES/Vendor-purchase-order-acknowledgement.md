@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor Setup - Document type Validation profiles - Vendor purchase order acknowledgement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-09
+ms.date: 2023-01-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -59,6 +59,7 @@ Once setup for each document type, the validation profile can be assigned to eac
 **Purchase order line**       |	**Short pick**                |	Acknowledgement quantity is less than purchase order line quantity. <br> After unit conversion, and also checks purchase order line’s under-delivery %	| Update D365 PO line's deliver remainder qty (use unit conversion if POA different unit). If outside under-delivery %: error
 **Purchase order line**       |	**Batch Id update**           | Where the POA's batch id received is different to the batch id on the purchase order.	| If batch doesn’t exist in D365 for the item, the D365 batch is created and assigned to purchase order line
 **Purchase order line**       |	**Reject**                    |	POA line indicates the Vendor is rejecting the order line 	| Cancel only the applicable purchase order line’s deliver remainder
+**Purchase order line**       | **Line item added**           | Vendor wants to add a new line to the purchase order  | Add new line to D365 Purchase order
 
 ## Where used
 The **Validation profile** can be assigned on the Incoming documents FastTab to document type **Vendor purchase order acknowledgement** for the Vendor Trading partner at **EDI > Setup > Trading partners**.

@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-01-18
+ms.date: 2023-01-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -48,9 +48,15 @@ Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dyn
 Planned release date: 31 January 2023 <br> 
 
 <ins>**Manual actions required**</ins>
- - Due to new setting **Send only for EDI orders**. Ensure **Customer** Trading partners have setting profiles assigned to below documents. Else users will receive error 'Update has been cancelled. No document setting specified' when trying to post the Sales order's Packing slip and Invoice:
- 	- Customer advanced shipping notice
- 	- Sales invoice 
+
+Due to new setting **Send only for EDI orders**. Ensure **Customer** Trading partners have setting profiles assigned to below documents:
+- Customer advanced shipping notice
+- Sales invoice 
+
+Else users will receive error 'Update has been cancelled. No document setting specified' when trying to post the Sales order's Packing slip and Invoice. <br>
+Can be manually updated in **EDI > Setup > Trading partners** or by using data entity **EDI Documents - Customers**
+
+![Trading partner Setting profile](RELEASE-NOTES-IMAGES/20230131_1.png "Trading partner Setting profile")
 
 <ins>New features</ins>
 
@@ -63,6 +69,7 @@ Number	| Functionality	  	| Reason
 10646	| Outbound files	| **File transfer type** filter added to Outbound files.
 11978	| EDI Document maintenance workspace	| Ability to select multiple records and use **Reset status** or **Cancel**.
 12007	| Connections	| **Log** ability added to all connection types. Ability to set **Logging level** and **Retention period**. This provides users the ability to set Custom alerts. For example if a connection can't connect a log with level _Error_ can be created.
+12609	| SFTP			| Keyboard Interactive Authentication added to SFTP. <br> Upgraded Renci.SSHNet library to 2020.0.2
 
 **Customer module**	
 

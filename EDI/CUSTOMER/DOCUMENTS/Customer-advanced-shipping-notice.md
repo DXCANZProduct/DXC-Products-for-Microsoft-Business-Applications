@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer advanced shipping notice
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-05
+ms.date: 2023-01-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ ms.dyn365.ops.version:  AX 7.0.1
 
 EDI customers may require an advanced shipping notice (ASN) for a sales order.
 
-> Note: Customer advanced shipping notice can also be sent for a sales order not created via EDI.
+> Note: Customer advanced shipping notice can also be sent for a sales order not created via EDI, where document setting 'Send only for EDI orders' allows it.
 
 The following subsections will describe how to view, process and send Customer advanced shipping notice to applicable Customer Trading partners. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed. <br>
@@ -198,16 +198,17 @@ The following EDI Line staging fields are available on the lines page.
 
 **Field**	               | **Description**	                                        | **Source D365 field**
 :---                       |:---                                                        |:---
-**Line number**            | The line within the EDI table/file.	
-**Item number**            | The D365 item number                                       | Packing Slip > Item id
-**Text**                   | The D365 item name	                                        | Packing Slip > Item Name
-**External item number**   | Customer external item number	                            | Sales Line > General > External
-**Bar code**               | The GTIN or barcode                                        | Sales Line > EDI item number
-**Store code**	           | Store code for the delivery line	                        | Sales Line > Store Code
+**Line number**            | The line withing the D365 packing slip                     | Packing slip > Line number
+**Line number document**   | The line within the EDI table/file 
+**Item number**            | The D365 item number                                       | Packing slip > Item id
+**Text**                   | The D365 item name	                                        | Packing slip > Item Name
+**External item number**   | Customer external item number	                            | Sales line > General > External
+**Bar code**               | The GTIN or barcode                                        | Sales line > EDI item number
+**Store code**	           | Store code for the delivery line	                        | Sales line > Store Code
 **Delivery name**          | Delivery name and address information	                    | Consignment/Sales order > Delivery address information
-**Quantity**               | Quantity to be delivered	                                | Packing Slip > Quantity
-**Unit**                   | Unit of measure	                                        | Sales Line > Unit
-**Sales price**            | Sales line unit price	                                    | Sales Line > Unit Price
+**Quantity**               | Quantity to be delivered	                                | Packing slip > Quantity
+**Unit**                   | Unit of measure	                                        | Sales line > Unit
+**Sales price**            | Sales line unit price	                                    | Sales line > Unit Price
 **Amount**                 | Line amount	
 **Weight**                 | Line weight	
 **Serial number**		|   |
@@ -220,10 +221,17 @@ The following EDI Line staging fields are available on the lines page.
 **Expiration date**        | Batch expiration date	
 **Manufacturing date**     | Batch manufacturing date	
 **Purchase order date**    | The purchase order date from the EDI order is shown here	   | Header > EDI > Purchase order date
-**Department**             | The customer’s department from the EDI order is shown here    | Sales Order > EDI > Department
-**Package characteristic code** | The code used to for the package contents	               | Sales Order > EDI > Package characteristic code
+**Department**             | The customer’s department from the EDI order is shown here    | Sales order > EDI > Department
+**Package characteristic code** | The code used to for the package contents	               | Sales order > EDI > Package characteristic code
 **End date/time**          | Date the order was picked	
 **Customer requisition**   | Customers purchase order number to be populated in the Customer requisition field of the sales order header | Header > General > Customer requisition
 **Customer reference**     | Customers purchase order reference to be populated in the Customer reference field of the sales order header |	Header > General > Customer reference
 **Shipment type**          | Status of the shipment (Full/Partial)	
 **SSCC**                   | SSCC #. Dependent on the [ASN line configuration](../SETUP/Warehouses.md#asn-line-configurations) set assigned to the sales order’s warehouse | **Picking List** – Pick List Registration SSCC on the pick lines <br> **WHSContainerization** – Container# <br> **WHSDeliveredLP** – License Plate# 
+**Packing slip**            | Packing slip ID                                           | Packing slip > Packing slip ID
+**Email**                   | Email from the sales order                                     | Sales order > Email
+**Telephone**               | Telephone from the sales order                                 | Sales order > Telephone
+**Mode of delivery**        |   Mode of delivery from the sales order                        | Sales order > Mode of delivery
+**Mode of delivery description**    | Description for the Mode of delivery                   | Mode of delivery > Description
+**Country/region**          | Country of origina for the product                             | Product > Origin > Country/region
+**Way bill number**         | Way bill number from the Shipment                               | Shipment > Way bill number              

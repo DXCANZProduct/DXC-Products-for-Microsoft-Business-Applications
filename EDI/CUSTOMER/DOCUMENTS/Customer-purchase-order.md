@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer purchase order
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-01-18
+ms.date: 2023-01-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -287,4 +287,7 @@ The following EDI Line fields are available on the lines page.
 **Requested receipt date**  | The requested receipt date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested receipt date <br> If staging blank will be populated by Sales order Header
 **Comments**                | Line comments for the order line.                                            | Sales line > EDI > Comments
 **Item description**        | Item description for the order line.                                         | Sales line > EDI > Item description
+**Customer requisition**    | Customer requisition for the order line.                                     | Sales line > Customer requisition
+**Customer reference**      | Customer reference for the order line.                                       | Sales line > Customer reference
+
 
