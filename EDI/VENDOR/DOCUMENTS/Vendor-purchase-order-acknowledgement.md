@@ -140,7 +140,7 @@ Rule Id	                | Details	                            | Info/Warning tol
 **Delivery date**       | The Vendor’s POA line delivery date doesn’t match the PO delivery date	    | Update PO line confirmed delivery date
 **Reject**              | Vendor POA response: **Line item – out of stock** <br> Vendor POA response: **Line item – withdrawn** <br> Vendor rejects the purchase order line	| Cancel purchase order line’s deliver remainder
 **Minimum/maximum quantity**    | The POA quantity should be devisable by the multiple specified on the Default/Site order settings table. <br> Use unit conversion if POA unit of measurement differs. Need to set to Error if not allowed to increase deliver remainder over purchase order line over-delivery%	| Update PO line deliver remainder. 
-**Line item added**     | The POA contains a new line for the purchase order. <br> Example another line is cancelled and replaced with this new line. | Add new line to D365 PO
+**Line item added**     | The POA contains a new line for the purchase order. <br> Example: another line is cancelled and replaced with this new line. | Add new line to D365 PO
 
 
 ## Purchase order
@@ -164,8 +164,9 @@ The Confirmation page is split into five tabs:
 1. [Header](#header) - Manage the POC header's response for ship and receipt dates. 
 3. [Line price](#line-price) - Manage the POC line' price response, example vendor's POA purchase price vs. D365 PO line system price. 
 4. [Line quantity](#line-quantity) - Manage the POC line quantity response, example vendor's POA purchase quantity vs. D365 PO line quantity.
-5. [Line pack](#line-pack) - Manage the POC line pack response, example Vendor pack vs. System pack
-6. [Line inner](#line-inner) - Manage the POC line inner response, example Vendor inner vs. System inner
+5. [Line date](#line-date) - Manage the POC line date response, example vendor's POA acknowledged delivery date vs. D365 PO line's requested delivery date. Used to update PO line's confirmed delivery date.
+6. [Line pack](#line-pack) - Manage the POC line pack response, example Vendor pack vs. System pack
+7. [Line inner](#line-inner) - Manage the POC line inner response, example Vendor inner vs. System inner
 
 Vendor mapped values for POA response codes are setup in [POA response code group](../SETUP/VENDOR-SETUP/POA-response-code-group.md) and assigned to the Vendor trading partner's **POA response code group**.
 
@@ -246,6 +247,32 @@ Button                  | Description
 **Use system quantity** | No update to purchase order. Update the **Confirmed quantity** field to the system’s deliver remainder quantity
 **Use vendor quantity** | Update the **Purchase order** line’s deliver remainder quantity and **Confirmed quantity** field to the vendor quantity
 **Clear confirmed quantity**    | No update to purchase order. Clears **Confirmed quantity** on the Confirmation page.
+
+#### Line date
+The following tables describe the fields and buttons that are available on the **Line tab** tab of the Confirmation page. <br>
+
+##### Fields
+
+Field	                    | Description
+:--                         |:--
+**Log**                     | This will show a warning if Validation failed with error tolerance set to warning
+**Item number**             | Item number from the purchase order
+**Barcode**                 | Barcode for the item number from the purchase order
+**Product Name**            | Item name for the item number from the purchase order
+**Unit**                    | Unit from the purchase line
+**Vendor delivery date**         | Acknowledged delivery date received in the purchase order acknowledgement
+**System delivery date**         | Delivery date for each purchase line (requested delivery date). 
+**Confirmed delivery date**      | Requested delivery date to be sent on the purchase order confirmation (POC) to the vendor.
+**Confirmation auto triggered** | 	Indicates if the **Confirmed delivery date** is an auto triggered value
+
+##### Buttons
+It is possible to update the Purchase order and Confirmed values by using the available buttons for a particular or multiple lines:
+
+Button                  | Description
+:--                     |:--
+**Display dimensions**  | Update the dimensions displayed on the Confirmation page
+**Use system date**     | Update the PO line's **Confirmed delivery date** field to the system’s delivery date
+**Use vendor date**     | No update to purchase order. If update was automatically allowed, the PO line's **Confirmed delivery date** has already been updated with the vendor's date.
 
 
 #### Line pack
