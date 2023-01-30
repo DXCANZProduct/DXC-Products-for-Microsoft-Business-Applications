@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor Documents - Vendor purchase order acknowledgement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-11-30
+ms.date: 2023-01-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -140,6 +140,7 @@ Rule Id	                | Details	                            | Info/Warning tol
 **Delivery date**       | The Vendor’s POA line delivery date doesn’t match the PO delivery date	    | Update PO line confirmed delivery date
 **Reject**              | Vendor POA response: **Line item – out of stock** <br> Vendor POA response: **Line item – withdrawn** <br> Vendor rejects the purchase order line	| Cancel purchase order line’s deliver remainder
 **Minimum/maximum quantity**    | The POA quantity should be devisable by the multiple specified on the Default/Site order settings table. <br> Use unit conversion if POA unit of measurement differs. Need to set to Error if not allowed to increase deliver remainder over purchase order line over-delivery%	| Update PO line deliver remainder. 
+**Line item added**     | The POA contains a new line for the purchase order. <br> Example another line is cancelled and replaced with this new line. | Add new line to D365 PO
 
 
 ## Purchase order
