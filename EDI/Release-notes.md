@@ -131,6 +131,9 @@ Number	| Name		 | Description
 12425	| Picking list	| **Sent to EDI** incorrectly displayed _No_ where the sent Picking list has received a Picking list registration and the lines have been split (for example multiple batches).
 12550	| Inventory adjustment workspace	| Updated security on the **Reset flag**, **Exclude**, **Inculde**, **Send to EDI** buttons for: <br> •  Open picking list <br> •  Open shipment advice - Purchase order <br> •  Open shipment advice - Return order <br> •  Open shipment advice - Voyage
 
+# Previous version(s)
+
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.27.20221108
 
@@ -187,9 +190,6 @@ Number	| Name		 | Description
 :--	|:--		 |:--
 11649	| Transfer order	| EDI was automatically setting **Explode lines** on outbound documents: <br> • **Picking list** <br> • **Shipment advice - Transfer order**. <br> Since this can be set by the user, EDI doesn't need to automatically set this to Yes. <br> <br> New feature: New document setting **Don't explode lines** have been added for the following inbound documents to set if **Explode lines** should automatically be Yes: <br> • **Picking list registration** - Applicable when **Ship transfer order** set to Yes <br> • **Shipment receipt - Transfer order** - Applicable when **Auto receive** set to Yes
 
-# Previous version(s)
-
-One year of previous versions are included below.
 
 ### Release 10.0.27.20220930
 
