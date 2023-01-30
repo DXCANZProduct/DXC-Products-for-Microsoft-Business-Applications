@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-01-19
+ms.date: 2023-01-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -70,6 +70,7 @@ Number	| Functionality	  	| Reason
 11978	| EDI Document maintenance workspace	| Ability to select multiple records and use **Reset status** or **Cancel**.
 12007	| Connections	| **Log** ability added to all connection types. Ability to set **Logging level** and **Retention period**. This provides users the ability to set Custom alerts. For example if a connection can't connect a log with level _Error_ can be created.
 12609	| SFTP			| Keyboard Interactive Authentication added to SFTP. <br> Upgraded Renci.SSHNet library to 2020.0.2
+N/A	| License manager	| License manager version 10.8.32.10156
 
 **Customer module**	
 
