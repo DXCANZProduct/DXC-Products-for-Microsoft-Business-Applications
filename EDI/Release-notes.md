@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.1
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-# Next version
+# Current version
 
-Next release is planned for 31 January 2023.
+Next release is planned for 31 March 2023.
 
-### Release 10.0.29.TBD
+### Release 10.0.29.20230130
 
 DXC EDI 10.0.29 runs on the following Microsoft releases
 
@@ -44,8 +44,8 @@ Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 
-#### Build 10.0.29.TBD
-Planned release date: 31 January 2023 <br> 
+#### Build 10.0.29.202301301
+Release date: 31 January 2023 <br> 
 
 <ins>**Manual actions required**</ins>
 
@@ -131,9 +131,6 @@ Number	| Name		 | Description
 12425	| Picking list	| **Sent to EDI** incorrectly displayed _No_ where the sent Picking list has received a Picking list registration and the lines have been split (for example multiple batches).
 12550	| Inventory adjustment workspace	| Updated security on the **Reset flag**, **Exclude**, **Inculde**, **Send to EDI** buttons for: <br> •  Open picking list <br> •  Open shipment advice - Purchase order <br> •  Open shipment advice - Return order <br> •  Open shipment advice - Voyage
 
-# Current version
-
-Next release is planned for 31 January 2023.
 
 ### Release 10.0.27.20221108
 
