@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-01-25
+ms.date: 2023-01-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,8 +50,12 @@ Planned release date: 31 January 2023 <br>
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
+11653		| Encryption / Decryption	| • Encrypt option on 'Electronic reporting export connections' to send encrypted GER Vendor EFT files <br> • Decrypt option on 'Financial utilities connection' to decrypt a bank statement file.
 12119		| Financial utilities connection	| **Log** ability added to all connection types. Ability to set **Logging level** and **Retention period**. This provides users the ability to set Custom alerts. For example if a connection can't connect a log with level _Error_ can be created. <br> ![Log](Images/ReleaseNotes_20230131_1.png "Log")
 12353		| Reconciliation matching rules	| Ability to use invoice to find the D365 customer account. <br> Applicable to **Offset account type** set to _Customer_ and where **Offset account** and **Offset account bank statement field** are both blank. <br> When running the Reconciliation matching rule, the field mapped to **Settle transaction bank statement field** (D365 invoice number) will be used to find the **D365 customer account**, to create the **Customer payment journal line**. <br> ![Reconciliation matching rules](Images/ReleaseNotes_20230131_2.png "Reconciliation matching rules")
+10419		| Data entity - Bank accounts	| Added following field to entity 'Bank accounts': <br> • Financial utilities connections
+10425		| Data entity - Vendor payment method	| Added following field to entity 'Vendor payment method':  <br> • Sundry method of payment <br> • Auto payment reference number <br> • BPAY method of payment
+
 
 <ins>Bug fixes</ins>
 
