@@ -80,6 +80,7 @@ Finance utilities minimises the manual actions required for reconciling bank acc
 - [Reports](Processing/Bank-Statement-Reconciliation/Cash-and-bank-management-reports.md)
 
 ### Setup for automatic import of bank statement
+- [Encryption/decryption](Setup/ENCRYPTION/Encryption-decryption.md) - where the import file should be decrypted
 - [Financial utilities connections](Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md)
 - [Bank accounts](Setup/CASH-AND-BANK-MANAGEMENT/Bank-accounts.md)
 - Periodic task [Import bank statements via financial utilities connection](Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md)
@@ -116,6 +117,7 @@ Finance utilities have added additional fields to Vendor approval on the **Accou
 ## Accounts payable - Save electronic reporting file to secure location
 
 Modification allows users to automatically save the electronic reporting file to a secure location like ftp, ftps, sftp or azure blob.
+- [Encryption/decryption](Setup/ENCRYPTION/Encryption-decryption.md) - where the export file should be encrypted
 - [Save electronic reporting file to secure location setup](Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md)
 - [Save electronic reporting file to secure location processing](Processing/Accounts-Payable/Save-electronic-reporting-file-to-secure-location.md)
 
