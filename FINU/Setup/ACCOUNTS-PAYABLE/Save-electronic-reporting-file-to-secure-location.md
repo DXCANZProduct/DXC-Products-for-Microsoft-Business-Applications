@@ -3,7 +3,7 @@
 
 title: Finance Utilities 
 description: Accounts payable setup - Save electronic reporting file to secure location 
-author: helenho
+author: jdutoit2
 manager: Kym Parker
 ms.date: 2023-01-31
 ms.topic: article
