@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Encryption / Decryption
-Encryption / Decryption is available utilising the 'DXC Encryption' model.
+Encryption / Decryption is available utilising the **DXC Encryption** model.
 
 Once below has been setup, the functionality can be used on the following Finance utilities functionality:
 - Encrypt option on [Electronic reporting export connections](../ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md) to send encrypted GER Vendor EFT files
