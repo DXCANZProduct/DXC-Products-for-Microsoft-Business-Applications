@@ -34,14 +34,14 @@ Once below has been setup, the functionality can be used on the following Financ
 - Encrypt option on [Electronic reporting export connections](../ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md) to send encrypted GER Vendor EFT files
 - Decrypt option on [Financial utilities connection](../CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md) to decrypt a bank statement file imported using periodic task **Import bank statements via financial utilities connection**
 
-## Step 1
+## Step 1 - Setup Secrets in Key vault parameters
 Setup the following as **Secrets** in **Key vault parameters** for the encryption/decryption:
 - Phassprase
 - Private key
 - Public key
 - Signer's public key
 
-## Step 2
+## Step 2 - Assign Secrets in DXC encryption parameters
 Assign above **Secrets** to the encryption/decryption. <br>
 To open the **DXC encryption parameters** page, go to **Organization administration > Setup > DXC encryption > DXC encryption parameters**. <br>
 
@@ -55,7 +55,7 @@ Field                       | Description
 **Public key**              |	Select the applicable **Secret** from **Key vault parameters**
 **Signer's public key**     |	Select the applicable **Secret** from **Key vault parameters**
 
-## Step 3
+## Step 3 - Use Encryption in Finance utilities
 
 Assign to Finance utilites functionality:
 - Encrypt option on [Electronic reporting export connections](../ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md) to send encrypted GER Vendor EFT files
