@@ -45,7 +45,7 @@ Setup the following as **Secrets** in **Key vault parameters** for the encryptio
 Assign above **Secrets** to the encryption/decryption. <br>
 To open the **DXC encryption parameters** page, go to **Organization administration > Setup > DXC encryption > DXC encryption parameters**. <br>
 
-Select **New** and set the fields as desribed in the following subsection.
+Select **New** and set the fields as described in the following subsection.
 
 Field                       | Description                         
 :--                         |:--                        
