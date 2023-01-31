@@ -44,10 +44,6 @@ ETA: 28 April 2023
 
 The planned features are grouped by category.
 
-### General
-GitHub Help in D365 <br>
-![GitHub Help in D365](Images/Roadmap_20220916.png "GitHub Help in D365")
-
 ### Cash and bank management
 - Reconciliation matching rules - additional customer reference use to find D365 customer account to create customer receipt journal
 
