@@ -55,3 +55,15 @@ Field                       | Description
 **Public key**              |	Select the applicable **Secret** from **Key vault parameters**
 **Signer's public key**     |	Select the applicable **Secret** from **Key vault parameters**
 
+## Step 3
+
+Assign to Finance utilites functionality:
+- Encrypt option on [Electronic reporting export connections](../ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md) to send encrypted GER Vendor EFT files
+- Decrypt option on [Financial utilities connection](../CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md) to decrypt a bank statement file.
+
+Setup: 
+
+Field                       | Description                         
+:--                         |:--                        
+**Enable file encryption/decryption**     | Set to _Yes_
+**Encryption key name**                   | Select applicable **Encryption key name** setup in Step 2
