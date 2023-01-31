@@ -49,6 +49,9 @@ Select **New** to create the location where GER file is to be saved. Connection 
 | **Name**            |	Enter a name for your connection                              | ANZ_FTP |
 | **Connection type**	| Select the applicable connection type	                        | •	FTP <br>	• Azure blob <br> • SFTP |
 | **Error action**    |	The action to take when there is an error with the connection | • Error <br> • Warning |
+| **Enable file encryption/decryption** | Set to _Yes_ if the export file should be encrypted | •	No <br>	• Yes  |
+| **Encryption key name** |	Select applicable **Encryption key name** setup in [DXC encryption parameters](../ENCRYPTION/Encryption-decryption.md)
+
 
 Select **Save** and the applicable **Setup** will be displayed as per the **Connection type** selected
 
