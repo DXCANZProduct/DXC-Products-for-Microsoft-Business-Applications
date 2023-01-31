@@ -33,7 +33,7 @@ This document describes the features that are either new or changed in the relea
 
 Next release is planned for 28 April 2023.
 
-### Release 10.0.29.20230131
+### Release 10.0.29.20230201
 
 DXC Finance Utilities 10.0.29 runs on the following Microsoft releases
 
@@ -43,8 +43,8 @@ Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 
-#### Build 10.0.29.202301312
-Release date: 31 January 2023 <br> 
+#### Build 10.0.29.20230201
+Release date: 01 February 2023 <br> 
 
 <ins>New features</ins>
 
