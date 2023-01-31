@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Accounts payable setup - Save electronic reporting file to secure location 
 author: helenho
 manager: Kym Parker
-ms.date: 2021-03-02
+ms.date: 2023-01-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  ERFormatDestination
+ms.search.form:  ERFormatDestination, DXCEncryptionParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
