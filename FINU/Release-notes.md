@@ -29,11 +29,11 @@ ms.dyn365.ops.version: AX 7.0.1
 # Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-# Next version
+# Current version
 
-Next release is planned for 31 January 2023.
+Next release is planned for 28 April 2023.
 
-### Release 10.0.29.TBD
+### Release 10.0.29.20230131
 
 DXC Finance Utilities 10.0.29 runs on the following Microsoft releases
 
@@ -43,8 +43,8 @@ Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 
-#### Build 10.0.29.TBD
-Planned release date: 31 January 2023 <br> 
+#### Build 10.0.29.202301312
+Release date: 31 January 2023 <br> 
 
 <ins>New features</ins>
 
@@ -65,7 +65,9 @@ Number	  	| Functionality	  | Description
 12324		| Bank statement import	| When a custom bank statement format was used and the file contained a bank account that isn't setup for advanced bank reconciliation, the bank statement headers were created for the bank accounts setup with advanced bank reconciliation, but no bank statement lines were created. <br> The fix now creates the bank statement lines for the bank accounts setup as advanced. <br> Note: Std GER doesn't import any bank statements where the file contains a bank account not setup as advanced bank reconciliation.
 
 
-# Current version
+# Previous version(s)
+
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.29.20221130
 
@@ -85,9 +87,6 @@ Number	  	| Functionality	  | Description
 :--       	|:--              |:--
 12204		| Bank statement import	| Error importing GER bank statement with bank accounts with same Bank account id and same Statement Id across multiple companies. <br> Error: "Cannot edit a record in Bank statement account statement (BankStmtISOAccountStatement). Update operations are not allowed across companies. Please use the changecompany keyword to change the current company before updating the record."
 
-# Previous version(s)
-
-One year of previous versions are included below.
 
 ### Release 10.0.29.20221019 & 10.0.27.20221019
 
