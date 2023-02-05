@@ -5,7 +5,7 @@ title: Smart-Send
 description: DXC Smart Business Form Email Manager - Release notes
 author: lcoll
 manager: Kym Parker
-ms.date: 13/05/2022
+ms.date: 2023-02-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -54,7 +54,7 @@ Number	  | Functionality	  | Reason
 
 Number	  | Functionality	  | Reason
 :--       |:--              |:--
-11641	    | Smart Send button sends the !default report format | When using the Smart Send button, the email parameter configuration that is used should be the Default record. The email parameter configuration does not use the default, it uses the report format defined in print management
+11641	    | Smart Send button sends the !default report format | When using the Smart Send button, the email parameter configuration that is used should be the Default record. <BR> <BR> The email parameter configuration does not use the default, it uses the report format defined in print management
 
 # Previous version(s)
 
