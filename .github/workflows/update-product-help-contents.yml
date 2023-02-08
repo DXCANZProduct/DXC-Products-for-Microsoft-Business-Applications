@@ -21,7 +21,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Copy files to articles folder
       shell: pwsh
-      run: Copy-Item 'FINU\' 'build\dxcproducthelp\DXCDocFX\DXCDocFX\articles\' -Recurse
+      run: Copy-Item '${{ inputs.products }}\' 'build\dxcproducthelp\DXCDocFX\DXCDocFX\articles\' -Recurse
     - uses: nuget/setup-nuget@v1
     - name: Restore nuget packages
       run: nuget restore build\dxcproducthelp\DXCDocFX\DXCDocFX.sln
@@ -67,7 +67,7 @@ jobs:
       - uses: bacongobbler/azure-blob-storage-upload@main
         with:
           source_dir: 'build\dxcproducthelp\DXCDocFX\DXCDocFX\_site\articles\json'
-          container_name: 'addevgithubprivate'
-          connection_string: 'DefaultEndpointsProtocol=https;AccountName=addevstorageaccount;AccountKey=XiGGLw1OZiBEtM06c2SKUYcrEaUpphrnc6HdN0hP4/9T9QieSKIdL6LO9SiRZ1MCIZm0mPcV32CO25J3BhrKFA==;EndpointSuffix=core.windows.net'
+          container_name: ${{ secrets.DXCPRODUCTHELPBLOBSTORAGECONTAINERNAME }}
+          connection_string: ${{ secrets.DXCPRODUCTHELPBLOBSTORAGECONNECTIONSTRING }}
           name: Upload to blob storage
           overwrite: true
