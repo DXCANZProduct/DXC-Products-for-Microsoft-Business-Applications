@@ -1,0 +1,73 @@
+name: Update Product Help Content
+
+on:
+  workflow_dispatch:
+    inputs:
+      products:
+        description: 'Product'
+        required: true
+        default: 'FINU' 
+        type: choice
+        options:
+        - 'FINU'
+
+jobs:
+  generate-html-files:
+
+    runs-on: windows-latest
+
+    if: ${{ inputs.products }}
+    steps:
+    - uses: actions/checkout@master
+    - name: Copy files to articles folder
+      shell: pwsh
+      run: Copy-Item 'FINU\' 'build\dxcproducthelp\DXCDocFX\DXCDocFX\articles\' -Recurse
+    - uses: nuget/setup-nuget@v1
+    - name: Restore nuget packages
+      run: nuget restore build\dxcproducthelp\DXCDocFX\DXCDocFX.sln
+    - uses: microsoft/setup-msbuild@v1.1.3
+    - name: Convert Mardown to Html
+      run: msbuild build\dxcproducthelp\DXCDocFX\DXCDocFX\DXCDocFX.csproj -t:rebuild -verbosity:diag -property:Configuration=Debug
+    - uses: actions/upload-artifact@master
+      with:
+        path: build\dxcproducthelp\DXCDocFX\DXCDocFX
+        name: DXCProductHelpHTMLContent
+
+  generate-json-files:
+    needs: [generate-html-files]
+    runs-on: windows-2019
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/download-artifact@master
+        with:
+          name: DXCProductHelpHTMLContent
+          path: build\dxcproducthelp\DXCDocFX\DXCDocFX
+      - uses: nuget/setup-nuget@v1
+      - name: Restore nuget packages
+        run: nuget restore build\dxcproducthelp\ConvertHtmlToJson\ConvertHtmlToJson.sln
+      - uses: microsoft/setup-msbuild@v1.1.3
+      - name: Compile ConvertHtmlToJson.csproj
+        run: msbuild build\dxcproducthelp\ConvertHtmlToJson\ConvertHtmlToJson\ConvertHtmlToJson.csproj -t:rebuild -verbosity:diag -property:Configuration=Debug
+      - name: Convert Html to Json
+        shell: pwsh
+        run: build\dxcproducthelp\ConvertHtmlToJson\ConvertHtmlToJson\bin\Debug\ConvertHtmlToJson.exe --h build\dxcproducthelp\DXCDocFX\DXCDocFX\_site\articles -j build\dxcproducthelp\DXCDocFX\DXCDocFX\_site\articles\json
+      - uses: actions/upload-artifact@master
+        with:
+          path: build\dxcproducthelp\DXCDocFX\DXCDocFX\_site\articles\json
+          name: DXCProductHelpJSONContent
+
+  publish-to-storage-account:
+    needs: [generate-html-files, generate-json-files]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@master
+        with:
+          name: DXCProductHelpJSONContent
+          path: build\dxcproducthelp\DXCDocFX\DXCDocFX\_site\articles\json
+      - uses: bacongobbler/azure-blob-storage-upload@main
+        with:
+          source_dir: 'build\dxcproducthelp\DXCDocFX\DXCDocFX\_site\articles\json'
+          container_name: 'addevgithubprivate'
+          connection_string: 'DefaultEndpointsProtocol=https;AccountName=addevstorageaccount;AccountKey=XiGGLw1OZiBEtM06c2SKUYcrEaUpphrnc6HdN0hP4/9T9QieSKIdL6LO9SiRZ1MCIZm0mPcV32CO25J3BhrKFA==;EndpointSuffix=core.windows.net'
+          name: Upload to blob storage
+          overwrite: true
