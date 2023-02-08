@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Introduction to Finance Utilities 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-06-17
+ms.date: 2023-02-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,17 +34,19 @@ The [release notes](Release-notes.md) describes the features that are either new
 ## Introduction
 The DXC Finance Utilities module provides enhanced functionalities to Microsoft Dynamics 365 Cash and bank management, and Accounts payable payment processing:
 
--   Bank statement import formatting
--   Advanced bank reconciliation, including:
-    -   Extended matching functionality, including improved handling of Marked and Matched transactions
-    -   Additional capability when using ‘Mark as new’ facility
-    -   Ability to reconcile a small balance correction adjustment
-    -   Ability to prevent reconciliation of unmatched statements
--   Periodic task to automatically import bank statements
--   Sundry vendor payment management
--   BPAY vendor payment
--   Formatted Vendor Payment Advice
--   ABN lookup and validation
+-   Cash and bank management
+    -   Bank statement import formatting
+    -   Advanced bank reconciliation, including:
+        -   Extended matching functionality, including improved handling of Marked and Matched transactions
+        -   Additional capability when using ‘Mark as new’ facility
+        -   Ability to reconcile a small balance correction adjustment
+        -   Ability to prevent reconciliation of unmatched statements
+    -   Periodic task to automatically import bank statements
+-   Accounts payable
+        -   Sundry vendor payment management
+        -   BPAY vendor payment
+        -   Formatted Vendor Payment Advice
+        -   ABN lookup and validation
 
 
 #  Scenarios
