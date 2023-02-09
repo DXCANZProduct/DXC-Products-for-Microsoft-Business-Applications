@@ -43,10 +43,10 @@ The DXC Finance Utilities module provides enhanced functionalities to Microsoft 
         -   Ability to prevent reconciliation of unmatched statements
     -   Periodic task to automatically import bank statements
 -   Accounts payable
-        -   Sundry vendor payment management
-        -   BPAY vendor payment
-        -   Formatted Vendor Payment Advice
-        -   ABN lookup and validation
+    -   Sundry vendor payment management
+    -   BPAY vendor payment
+    -   Formatted Vendor Payment Advice
+    -   ABN lookup and validation
 
 
 #  Scenarios
