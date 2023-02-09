@@ -29,10 +29,6 @@ ms.dyn365.ops.version: AX 7.0.1
 # Accounts payable functionality
 The fields as described in the following subsections are available to control the additional functionality for accounts payable.
 
-> Note: From 10.0.32 MS has added a preview feature called 'Vendor bank account change proposal workflow'. If this feature is enabled it will use std's functionality for approving changes to Vendor bank accounts and the following needs to be manually configured: <br> 
->   -  Vendor bank account approval in Accounts payable parameters - Enable the fields that requires approval
->   -  Workflow approval for proposed vendor change. Workflow to approve the proposed vendor bank account changes
-
 ## Vendor approval workflow
 
 When changes are made to specific vendor fields, standard D365 vendor workflow can be used for approval before the changes are applied to the vendor. 
@@ -54,3 +50,7 @@ The below fields have been added to the existing Vendor approval fields. When en
 
 ### Vendor
 -	Payment id (existing field used for Finance utilities BPAY)
+
+> Note: From 10.0.32 MS has added a preview feature called 'Vendor bank account change proposal workflow'. If this feature is enabled it will use std's functionality for approving changes to Vendor bank accounts and the following needs to be manually configured: <br> 
+>   -  Vendor bank account approval in Accounts payable parameters - Enable the fields that requires approval
+>   -  Workflow approval for proposed vendor change. Workflow to approve the proposed vendor bank account changes
