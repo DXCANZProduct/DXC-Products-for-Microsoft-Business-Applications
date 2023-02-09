@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 The [release notes](Release-notes.md) describes the features that are either new or changed. 
 
 ## Introduction
-The DXC Finance Utilities module provides enhanced functionalities to Microsoft Dynamics 365 Cash and bank management, and Accounts payable payment processing:
+The DXC Finance Utilities module provides enhanced functionalities to Microsoft Dynamics 365 for the following:
 
 -   Cash and bank management
     -   Bank statement import formatting
@@ -41,12 +41,19 @@ The DXC Finance Utilities module provides enhanced functionalities to Microsoft 
         -   Additional capability when using ‘Mark as new’ facility
         -   Ability to reconcile a small balance correction adjustment
         -   Ability to prevent reconciliation of unmatched statements
-    -   Periodic task to automatically import bank statements
+    -   Periodic task to automatically import bank statements from FTP/FTPS, SFTP or Azure blob. Decryption option included.
 -   Accounts payable
     -   Sundry vendor payment management
     -   BPAY vendor payment
     -   Formatted Vendor Payment Advice
-    -   ABN lookup and validation
+    -   ABN lookup and validation (Australia only)
+    -   Save GER to secure location, for example FTP/FTPS, SFTP or Azure blob. Encryption option included.
+    -   Vendor bank account changes workflow
+- Accounts receivable
+    -   Customer bank account changes workflow
+    -   ABN lookup and validation (Australia only)
+- Budgeting
+    -   Budget import with separate column for each period
 
 
 #  Scenarios
