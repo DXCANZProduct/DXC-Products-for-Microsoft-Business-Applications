@@ -37,19 +37,19 @@ EDI > Setup > Freight forwarder landed cost setup
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
 1	                | Shipping port mapping           | Create new **Shipping port mapping**. EDI > Setup > Freight forwarder landed cost setup > Shipping port mapping |
-2	                | Shipping port mapping lines     | Create new **Shipping port mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Shipping port mapping | Shipping port mapping
+2	                | Shipping port mapping lines     | Create new **Shipping port mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Shipping port mapping | • Shipping port mapping
 3	                | Modes of delivery mapping       | Create new **Modes of delivery mapping**. EDI > Setup > Freight forwarder landed cost setup > Modes of delivery mapping | 
-4	                | Modes of delivery mapping lines | Create new **Modes of delivery mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Modes of delivery mapping | Modes of delivery mapping
+4	                | Modes of delivery mapping lines | Create new **Modes of delivery mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Modes of delivery mapping | • Modes of delivery mapping
 5	                | Customs broker mapping          | Create new **Customs broker mapping**. EDI > Setup > Freight forwarder landed cost setup > Customs broker mapping |
-6	                | Customs broker mapping lines    | Create new **Customs broker mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Customs broker mapping | Customs broker mapping <br> Landed cost vendor shipping details (VendorType = CustomsBroker) | 
+6	                | Customs broker mapping lines    | Create new **Customs broker mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Customs broker mapping | • Customs broker mapping <br> • Landed cost vendor shipping details (VendorType = CustomsBroker) | 
 7	                | Shipping container type mapping | Create new **Shipping container type mapping**. EDI > Setup > Freight forwarder landed cost setup > Shipping container type mapping |
-8	                | Shipping container type mapping lines | Create new **Shipping container type mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Shipping container type mapping | Shipping container type mapping
+8	                | Shipping container type mapping lines | Create new **Shipping container type mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Shipping container type mapping | • Shipping container type mapping
 9	                | Activity mapping                | Create new **Activity mapping**. EDI > Setup > Freight forwarder landed cost setup > Activity mapping |
-10	              | Activity mapping lines          | Create new **Activity mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Activity mapping | Activity mapping
+10	              | Activity mapping lines          | Create new **Activity mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Activity mapping | • Activity mapping
 11	              | Shipping port qualifier mapping | Create new **Shipping port qualifier mapping**. EDI > Setup > Freight forwarder landed cost setup > Shipping port qualifier mapping |
-12	              | Shipping port qualifier mapping lines | Create new **Shipping port qualifier mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Shipping port qualifier mapping | Shipping port qualifier mapping
+12	              | Shipping port qualifier mapping lines | Create new **Shipping port qualifier mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Shipping port qualifier mapping | • Shipping port qualifier mapping
 13	              | Shipping measurement unit mapping | Create new **Shipping measurement unit mapping**. EDI > Setup > Freight forwarder landed cost setup > Shipping measurement unit mapping |
-14	              | Shipping measurement unit mapping lines | Create new **Shipping measurement unit mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Shipping measurement unit mapping | Shipping measurement unit mapping
+14	              | Shipping measurement unit mapping lines | Create new **Shipping measurement unit mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Shipping measurement unit mapping | • Shipping measurement unit mapping
 
 ## Document setting profiles
 EDI > Setup > Document types (Setting profiles for EDI Freight forwarder landed cost documents)
@@ -68,15 +68,15 @@ See [Core data entities](../../CORE/OTHER/Data-entities.md#document-types)
 ## Vendors
 Accounts payable > Vendors > All vendors
 
-**Order**         | **Entity**						                  | **Description**                             
-:-----------------|:------------------------------------		|:------------------------- 
+**Order**         | **Entity**						                  | **Description**                | **Dependency**             
+:-----------------|:------------------------------------		|:-------------------------      |:-------------------------
 1                 | Vendors V3                              | Create new vendors
-2                 | Landed cost vendor shipping details     | Update VendorType to ShipVend in order for Vendor to be available as Freight forwarder trading partner <br> Update VendorType to CustomsBroker in order for Vendor to be available as Customs broker when setting up 'Customs broker mapping lines'
+2                 | Landed cost vendor shipping details     | Update VendorType to ShipVend in order for Vendor to be available as Freight forwarder trading partner <br> Update VendorType to CustomsBroker in order for Vendor to be available as Customs broker when setting up 'Customs broker mapping lines' | Vendors V3
 
 ## Trading partner
 EDI > Setup > Trading partner
 
 **Order**         | **Entity**						| **Description**                             | **Dependency**
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
-1                 | EDI Freight forwarders                          | Create new Freight forwarder landed cost trading partner   | [Freight forwarder landed cost setup](#freight-forwarder-landed-cost-setup)
-2                 | EDI Documents - Freight forwarder               | Add incoming and outgoing documents to Freight forwarder landed cost trading partner | EDI Freight forwarders, [Setting profiles](#document-setting-profiles) and [Document types](../../CORE/OTHER/Data-entities.md#document-types)
+1                 | EDI Freight forwarders                          | Create new Freight forwarder landed cost trading partner   | • [Freight forwarder landed cost setup](#freight-forwarder-landed-cost-setup)
+2                 | EDI Documents - Freight forwarder               | Add incoming and outgoing documents to Freight forwarder landed cost trading partner | • EDI Freight forwarders, [Setting profiles](#document-setting-profiles) and [Document types](../../CORE/OTHER/Data-entities.md#document-types)
