@@ -71,7 +71,7 @@ Accounts payable > Vendors > All vendors
 **Order**         | **Entity**						                  | **Description**                | **Dependency**             
 :-----------------|:------------------------------------		|:-------------------------      |:-------------------------
 1                 | Vendors V3                              | Create new vendors
-2                 | Landed cost vendor shipping details     | Update VendorType to ShipVend in order for Vendor to be available as Freight forwarder trading partner <br> Update VendorType to CustomsBroker in order for Vendor to be available as Customs broker when setting up 'Customs broker mapping lines' | Vendors V3
+2                 | Landed cost vendor shipping details     | Update VendorType to ShipVend in order for Vendor to be available as Freight forwarder trading partner <br> Update VendorType to CustomsBroker in order for Vendor to be available as Customs broker when setting up 'Customs broker mapping lines' | • Vendors V3
 
 ## Trading partner
 EDI > Setup > Trading partner
