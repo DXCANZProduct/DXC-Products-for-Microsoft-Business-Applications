@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-02-09
+ms.date: 2023-02-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,6 +47,13 @@ Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dyn
 > Note: From 10.0.32 MS has added a preview feature called 'Vendor bank account change proposal workflow'. If this feature is enabled it will use std's functionality for approving changes to Vendor bank accounts and the following needs to be manually configured: <br> 
 >   -  Vendor bank account approval in Accounts payable parameters - Enable the fields that requires approval
 >   -  Workflow approval for proposed vendor change. Workflow to approve the proposed vendor bank account changes
+
+#### Build 10.0.29.202301312
+Release date: 14 February 2023 <br> 
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+12825		| DXC Encryption	| Remove unwanted model references
 
 
 #### Build 10.0.29.202301311
