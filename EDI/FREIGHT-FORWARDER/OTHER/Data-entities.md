@@ -79,4 +79,4 @@ EDI > Setup > Trading partner
 **Order**         | **Entity**						| **Description**                             | **Dependency**
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
 1                 | EDI Freight forwarders                          | Create new Freight forwarder landed cost trading partner   | • [Freight forwarder landed cost setup](#freight-forwarder-landed-cost-setup)
-2                 | EDI Documents - Freight forwarder               | Add incoming and outgoing documents to Freight forwarder landed cost trading partner | • EDI Freight forwarders, [Setting profiles](#document-setting-profiles) and [Document types](../../CORE/OTHER/Data-entities.md#document-types)
+2                 | EDI Documents - Freight forwarder               | Add incoming and outgoing documents to Freight forwarder landed cost trading partner | • EDI Freight forwarders <br> • [Setting profiles](#document-setting-profiles) <br> •  [Document types](../../CORE/OTHER/Data-entities.md#document-types)
