@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SAB_EDIFFLCShipPortTableMapping, SAB_EDIFFLCVendDlvModeMapping, SAB_EDIFFLCCustomsBrokerMapping, SAB_EDIFFLCShipContainerTypeMapping, SAB_EDIFFLCShipActivityTableMapping, SAB_EDIFFLCShipPortQualifierMapping, SAB_EDIFFLCShipMeasurementUnitMapping, SAB_EDITradingPartner,SAB_EDIDocumentTypeTable
+ms.search.form: SAB_EDIFFLCShipPortTableMapping, SAB_EDIFFLCVendDlvModeMapping, SAB_EDIFFLCCustomsBrokerMapping, SAB_EDIFFLCShipContainerTypeMapping, SAB_EDIFFLCShipActivityTableMapping, SAB_EDIFFLCShipPortQualifierMapping, SAB_EDIFFLCShipMeasurementUnitMapping, SAB_EDITradingPartner,SAB_EDIDocumentTypeTable, VendTableListPage
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
@@ -41,7 +41,7 @@ EDI > Setup > Freight forwarder landed cost setup
 3	                | Modes of delivery mapping       | Create new **Modes of delivery mapping**. EDI > Setup > Freight forwarder landed cost setup > Modes of delivery mapping | 
 4	                | Modes of delivery mapping lines | Create new **Modes of delivery mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Modes of delivery mapping | Modes of delivery mapping
 5	                | Customs broker mapping          | Create new **Customs broker mapping**. EDI > Setup > Freight forwarder landed cost setup > Customs broker mapping |
-6	                | Customs broker mapping lines    | Create new **Customs broker mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Customs broker mapping | Customs broker mapping
+6	                | Customs broker mapping lines    | Create new **Customs broker mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Customs broker mapping | Customs broker mapping <br> Landed cost vendor shipping details (VendorType = CustomsBroker) | 
 7	                | Shipping container type mapping | Create new **Shipping container type mapping**. EDI > Setup > Freight forwarder landed cost setup > Shipping container type mapping |
 8	                | Shipping container type mapping lines | Create new **Shipping container type mapping lines**. EDI > Setup > Freight forwarder landed cost setup > Shipping container type mapping | Shipping container type mapping
 9	                | Activity mapping                | Create new **Activity mapping**. EDI > Setup > Freight forwarder landed cost setup > Activity mapping |
@@ -64,6 +64,14 @@ EDI > Setup > Document types (Setting profiles for EDI Freight forwarder landed 
 EDI > Setup > Document types (Template, Validation, Outbound file names and EDI Field metadata)
 
 See [Core data entities](../../CORE/OTHER/Data-entities.md#document-types)
+
+## Vendors
+Accounts payable > Vendors > All vendors
+
+**Order**         | **Entity**						                  | **Description**                             
+:-----------------|:------------------------------------		|:------------------------- 
+1                 | Vendors V3                              | Create new vendors
+2                 | Landed cost vendor shipping details     | Update VendorType to ShipVend in order for Vendor to be available as Freight forwarder trading partner <br> Update VendorType to CustomsBroker in order for Vendor to be available as Customs broker when setting up 'Customs broker mapping lines'
 
 ## Trading partner
 EDI > Setup > Trading partner
