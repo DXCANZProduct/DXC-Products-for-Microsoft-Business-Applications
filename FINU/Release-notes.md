@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-02-14
+ms.date: 2023-02-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,9 +44,14 @@ Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 
-> Note: From 10.0.32 MS has added a preview feature called 'Vendor bank account change proposal workflow'. If this feature is enabled it will use std's functionality for approving changes to Vendor bank accounts and the following needs to be manually configured: <br> 
+> Note: From **10.0.32** MS has added a preview feature called **Vendor bank account change proposal workflow**. If this feature is enabled it will use std's functionality for approving changes to Vendor bank accounts and the following needs to be manually configured: <br> 
 >   -  Vendor bank account approval in Accounts payable parameters - Enable the fields that requires approval
 >   -  Workflow approval for proposed vendor change. Workflow to approve the proposed vendor bank account changes
+
+> Note: From **10.0.32** MS has added a feature called **Ability to post detailed vendor and customer payments, but summarize amounts to bank account**. <br>
+> If this feature is enabled and setup to summarise, journals that contain multiple lines that matches the criteria will be grouped into one bank transaction line. 
+> The new 'Bank transaction summarization id' is written to the Bank reconciliation's **Document number** for the Bank transaction.
+> This will affect companies that use Financial utilities parameter **Populate bank transaction document number** and **Group by document number** functionality on Reconciliation matching rules as the Payment journal's 'Journal batch number' isn't written to the Bank reconciliation's Document number (if the journal contains multiple lines that matches the criteria).
 
 #### Build 10.0.29.202301312
 Release date: 14 February 2023 <br> 
