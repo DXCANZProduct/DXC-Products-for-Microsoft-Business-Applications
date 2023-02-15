@@ -37,3 +37,8 @@ The enhancement to support the Finance utilities Reconciliation matching rule's 
 To activate the Document number:
 - Go to **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters**, set **Populate bank transaction document number** to _Yes_.
 - Go to **Accounts Payable > Setup > Accounts payable parameters**, select the **Number sequences** tab and set the **Payment reference** number sequence.
+
+> Note: From **10.0.32** MS has added a feature called **Ability to post detailed vendor and customer payments, but summarize amounts to bank account**. <br>
+> If this feature is enabled and setup to summarise, journals that contain multiple lines that matches the criteria will be grouped into one bank transaction line. 
+>   -  The new 'Bank transaction summarization id' is written to the Bank reconciliation's **Document number** for the Bank transaction.
+>   -  This will affect companies that use Financial utilities parameter **Populate bank transaction document number** and **Group by document number** functionality on Reconciliation matching rules as the Payment journal's 'Journal batch number' isn't written to the Bank reconciliation's Document number (if the journal contains multiple lines that matches the criteria).
