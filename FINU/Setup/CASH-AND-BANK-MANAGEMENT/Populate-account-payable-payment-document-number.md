@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Accounts payable payment document number
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-03-04
+ms.date: 2023-02-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
