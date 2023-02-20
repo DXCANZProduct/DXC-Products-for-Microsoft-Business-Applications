@@ -5,7 +5,7 @@ title: DXC Solutions for DocuSign and Dynamics 365
 description: DXC Solutions for DocuSign and Dynamics 365 - Release notes
 author: lcoll
 manager: Kym Parker
-ms.date: 2023-02-06
+ms.date: 2023-02-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ndavidson2
+ms.reviewer: jdutoit2
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
@@ -45,6 +45,7 @@ Microsoft Dynamics 365 application	| 10.0.28	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
 Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
+Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 
 #### Build 10.0.25.202206302
 
