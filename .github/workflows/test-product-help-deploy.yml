@@ -11,7 +11,7 @@ on:
         options:
         - 'FINU'
         - 'DOCUSIGN'
-        - 'SMART-SEND'
+        - 'CORE-EXTENSIONS'
 
 jobs:
   generate-html-files:
