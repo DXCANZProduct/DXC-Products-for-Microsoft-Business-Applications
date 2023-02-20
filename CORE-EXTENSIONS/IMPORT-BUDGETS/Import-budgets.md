@@ -5,7 +5,7 @@ title: Core Extensions
 description: Core Extensions - Import budgets
 author: Liam Coll
 manager: Kym Parker
-ms.date: 2021-08-02
+ms.date: 2023-02-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: BudgetModel, BudgetTransactionCode
+ms.search.form: BudgetModel, BudgetTransactionCode, BudgetTransactions
 audience: Application User
 # ms.devlang: 
 ms.reviewer: Liam Coll
@@ -89,5 +89,5 @@ To import the Microsoft Excel file
 5. Upon successful import, a message will display import complete and created budget register entry number.
 6. The imported budgets will be in the All Budget Register entries list with a status of Draft
 
-7. Navigate to **Budgeting > Common > Budget register entries > All budget register entries**
+7. Navigate to **Budgeting > Budget register entries**
 8. Highlight and click edit to view the budget. The budget can be altered manually if required. If no changes are required, complete the budget by clicking on Updated budget balances to move the budget from Draft to Approved. 
