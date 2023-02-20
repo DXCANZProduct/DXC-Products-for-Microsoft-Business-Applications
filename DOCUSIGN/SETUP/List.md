@@ -41,7 +41,7 @@ To create a new list:
 
 | **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
-| **Default**          | Select the applicable value that should be the set as default.   |
+| **Default**          | Select the applicable value that should be set as default.   |
 | **Value**                | Enter the dropdown list value.     |
  
 
