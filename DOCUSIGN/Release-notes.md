@@ -3,7 +3,7 @@
 
 title: DXC Solutions for DocuSign and Dynamics 365
 description: DXC Solutions for DocuSign and Dynamics 365 - Release notes
-author: lcoll
+author: jdutoit2
 manager: Kym Parker
 ms.date: 2023-02-20
 ms.topic: article
@@ -32,20 +32,29 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.25.20220630
+### Release 10.0.29.TBD
 
-DXC Smart Business Form Email Manager 10.0.25 runs on the following Microsoft releases
+DXC Smart Business Form Email Manager 10.0.29 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
-Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
-Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dynamics 365 application version 10.0.27](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-27)
-Microsoft Dynamics 365 application	| 10.0.28	  | [What’s new or changed in Dynamics 365 application version 10.0.28](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-28)
 Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
 Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
+
+#### Build 10.0.259.TBD
+
+Number	| Functionality	  | Reason
+:--     |:--              |:--
+9734	| Dropdown list Tag type	| Ability to create dropdown lists and use these as tags in the Template.
+10036	| Remove deprecated tabls	| Removed tables SAB_DSUser and SAB_DSUserMapping which related to previous methods of establishing authentication. These are no longer required following the release of OAuth2 authentication.
+N/A	| License manager	| License manager version 10.8.32.10156. <br> Includes links to applicable GitHub user guide page/s <br> ![Help](Images/ReleaseNotes_20230131_3.png "Help")
+
+
+# Previous version(s)
+
+### Release 10.0.25.20220630
 
 #### Build 10.0.25.202206302
 
@@ -54,7 +63,6 @@ Number	  | Functionality	  | Reason
 9888	    | Support for OAuth 2.0 | API with DocuSign now uses the OAuth 2.0 authentication type. The following fields have been added to the DocuSign Parameters form for establishing authentication <BR/> <BR/> **OAuth server URL** = account-d.docusign.com <BR/> **Integrator key** = select from configured [Key vault values](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/setting-up-azure-key-vault-client) <BR/> **User Id** = DocuSign user ID  <BR/> **RSA private key** = select from configured Key vault values <BR/><BR/> Initial authetication will require the granting of consent. This can be achieved from the same for by selecting *Grant consent* and logging in.
 10403	    | Send worker name for internal placeholder emails	| Support for the sending of distinct values for SignerEmail and SignerName when using purpose controlled placeholders for workers within document management. The value for the SignerName will be the account name for the worker. This feature must be enabled on each document type by selecting the field Use document type.
 
-# Previous version(s)
 
 ### Release 10.0.22.20220321
 
