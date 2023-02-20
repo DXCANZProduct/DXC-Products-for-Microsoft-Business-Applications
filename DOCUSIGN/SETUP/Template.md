@@ -3,9 +3,9 @@
 
 title: Docusign
 description: Setup Parameters
-author: ndavidson2
+author: jdutoit2
 manager: Kym Parker
-ms.date: 2020-01-12
+ms.date: 2023-02-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,10 +13,10 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: SAB_DSTemplate
 audience:  Application User
 # ms.devlang: 
-ms.reviewer: ndavidson2
+ms.reviewer: jdutoit2
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: Global 
@@ -68,7 +68,7 @@ It is important to consider if a document will flow onto multiple pages when set
 
 | **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
-| **Tag**                      | Select the specific type of information that will be entered on the doucment by the signing party.  The options available are: <br> <br>  -Signature <br> - Email <br> - Optional signature <br> - Full name <br> - Company <br> - Initial <br> - First Name <br> - Title <br> - Optional Iniital <br> - Last Name <br> - Date signed <br> - Check box <br> - Radio  |
+| **Tag**                      | Select the specific type of information that will be entered on the doucment by the signing party.  The options available are: <br> <br>  - Signature <br> - Email <br> - Optional signature <br> - Full name <br> - Company <br> - Initial <br> - First Name <br> - Title <br> - Optional Initial <br> - Last Name <br> - Date signed <br> - Check box <br> - Radio <br> - Text <br> - List |
 | **Position**                   | Select how the **Tag** is positioned on the page.  Two options are available: <br> <br> *Fixed* - the location for entering information will be set based on its location within the document itself.  For example, the signature will be set in a *fixed* position of 200/300 pixels on the first page of a document.  <br> *anchor* - the location for entering the information will be set based on its location relative to other text within the document.     |
 | **Anchor String**              | If the **Position** field is set to *anchor*, this field identifies the text value that will be utilized for positioning on the page.  | 
 | **X**                          |  Enter the X-axis position of the information. | 
