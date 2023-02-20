@@ -47,9 +47,9 @@ Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dyn
 
 Number	| Functionality	  | Reason
 :--     |:--              |:--
-9734	| Dropdown list Tag type	| Ability to create dropdown lists and use these as tags in the Template.
+9734	| Dropdown list Tag type	| Ability to create dropdown [lists](SETUP/List.md) and use these as tags in the [Template](SETUP/Template.md).
 10036	| Remove deprecated tabls	| Removed tables SAB_DSUser and SAB_DSUserMapping which related to previous methods of establishing authentication. These are no longer required following the release of OAuth2 authentication.
-N/A	| License manager	| License manager version 10.8.32.10156. <br> Includes links to applicable GitHub user guide page/s <br> ![Help](Images/ReleaseNotes_20230131_3.png "Help")
+N/A	| License manager	| License manager version 10.8.32.10156. <br> Includes links to applicable GitHub user guide page/s.
 
 
 # Previous version(s)
