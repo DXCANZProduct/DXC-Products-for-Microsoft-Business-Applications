@@ -28,7 +28,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # List
 
-The DocuSign List page is used to set up all dropdown lists. The applicable dropdown list can then be selected when the Template's Signatory details **Tag** is set to _List_ .  The form can be reached by navigating to **Organization administration** > **Setup** > **Docusign** > **List**
+The DocuSign List page is used to set up all dropdown lists. The applicable dropdown list can then be selected when the Template's Signatory details **Tag** is set to _List_ .  
+<br>
+The List form can be reached by navigating to **Organization administration** > **Setup** > **Docusign** > **List**
 
 
 To create a new list:
