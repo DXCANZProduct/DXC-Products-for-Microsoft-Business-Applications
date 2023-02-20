@@ -77,6 +77,8 @@ It is important to consider if a document will flow onto multiple pages when set
 | **Page**                       |  Enter the page to determine how the placement of the information will be determined.  Two options are available:  <br> <br> *specific* - The information will be captured on a specific page of the document.  It is mandatory to enter a value in the **Page number** field if this field is set to specific. <br> *All* - The information is to be captured on all pages of the document.     |
 | **Page Number**                 |  When the **Page** field is set to *specific*, the enter the page number that the signatory details will be captured on.     |
 | **Radio Groud ID**             | When the **Tag** field is set to *Radio*, users will group the raiod buttons together into groups.  For each radio button that will be in a single group, they will have the same radio group ID.     |
+| **Text character limit**      | Set character limit for text. |
+| **Dropdown**                  | Enabled where **Tag** is set to _List_. Select the applicable dropdown for the list. Dropdown lists are setup in **Organization administration > Setup > Docusign > List**.
 
 
 After entering the **Template** details, users will be able to select which template will be used on a document and set in the **Document type** page.
