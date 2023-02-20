@@ -5,7 +5,7 @@ title: Smart-Send
 description: DXC Smart Business Form Email Manager - Release notes
 author: lcoll
 manager: Kym Parker
-ms.date: 13/05/2022
+ms.date: 2023-02-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.27.202209301
+### Release 10.0.27.20220930
 
 DXC Smart Business Form Email Manager 10.0.27 runs on the following Microsoft releases
 
@@ -42,12 +42,19 @@ Microsoft Dynamics 365 application	| 10.0.27	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.28	  | [What’s new or changed in Dynamics 365 application version 10.0.28](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-28)
 Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
 Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
+Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 
 #### Build 10.0.27.202209301
 
 Number	  | Functionality	  | Reason
 :--       |:--              |:--
 9929	    | Support for Electronic Report formats | Visibility of Display electronic reports within the Smart Send email parameters form <BR> <BR> New print destination Smart Send for use with electronic reporting destinations and electronic reporting named destinations. <BR> <BR> Support for electronic reports generated through print management or using the Smart Send button. <BR> <BR> Supports saving of the business document to Azure blob storage. <BR> <BR> Full functionality of placeholder tokens in line with SSRS formated reports.
+	
+#### Build 10.0.27.202209302
+
+Number	  | Functionality	  | Reason
+:--       |:--              |:--
+11641	    | Smart Send button sends the !default report format | When using the Smart Send button, the email parameter configuration that is used should be the Default record. <BR> <BR> The email parameter configuration does not use the default, it uses the report format defined in print management
 
 # Previous version(s)
 

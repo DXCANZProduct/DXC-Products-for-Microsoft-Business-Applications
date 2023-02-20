@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Accounts payable setup - Vendor bank account changes workflow 
 author: helenho
 manager: Kym Parker
-ms.date: 2021-03-02
+ms.date: 2023-02-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -48,5 +48,10 @@ The below fields have been added to the existing Vendor approval fields. When en
 -	Active date
 -	Expiration date
 
+> Note: From 10.0.32 MS has added a preview feature called 'Vendor bank account change proposal workflow'. If this feature is enabled it will use std's functionality for approving changes to Vendor bank accounts and the following needs to be manually configured: <br> 
+>   -  Vendor bank account approval in Accounts payable parameters - Enable the fields that requires approval
+>   -  Workflow approval for proposed vendor change. Workflow to approve the proposed vendor bank account changes
+
 ### Vendor
 -	Payment id (existing field used for Finance utilities BPAY)
+

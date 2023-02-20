@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-01-31
+ms.date: 2023-02-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: AX 7.0.1
 # Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-# Next version
+# Current version
 
-Next release is planned for 31 January 2023.
+Next release is planned for 28 April 2023.
 
-### Release 10.0.29.TBD
+### Release 10.0.29.20230131
 
 DXC Finance Utilities 10.0.29 runs on the following Microsoft releases
 
@@ -42,17 +42,38 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
 Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
+Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 
-#### Build 10.0.29.TBD
-Planned release date: 31 January 2023 <br> 
+> Note: From **10.0.32** MS has added a preview feature called **Vendor bank account change proposal workflow**. If this feature is enabled it will use std's functionality for approving changes to Vendor bank accounts and the following needs to be manually configured: <br> 
+>   -  Vendor bank account approval in Accounts payable parameters - Enable the fields that requires approval
+>   -  Workflow approval for proposed vendor change. Workflow to approve the proposed vendor bank account changes
+
+> Note: From **10.0.32** MS has added a feature called **Ability to post detailed vendor and customer payments, but summarize amounts to bank account**. <br>
+>   -  If this feature is enabled and setup to summarise, journals that contain multiple lines that matches the criteria will be grouped into one bank transaction line. 
+>   -  The new 'Bank transaction summarization id' is written to the Bank reconciliation's **Document number** for the Bank transaction.
+>   -  This will affect companies that use Financial utilities parameter **Populate bank transaction document number** and **Group by document number** functionality on Reconciliation matching rules as the Payment journal's 'Journal batch number' isn't written to the Bank reconciliation's Document number (if the journal contains multiple lines that matches the criteria).
+
+> Note: From **10.0.32** MS has added a feature (on by default) called **Time zone for importing bank statements using Electronic reporting**. <br>
+> Finance utilities doesn't currently support converting date/time fields within the bank statement file.
+
+#### Build 10.0.29.202301312
+Release date: 14 February 2023 <br> 
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+12825		| DXC Encryption	| Remove unwanted model references
+
+
+#### Build 10.0.29.202301311
+Release date: 31 January 2023 <br> 
 
 <ins>New features</ins>
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-11653		| Encryption / Decryption	| New model **DXC Encryption**. <br> Encryption/decryption options added to following Finance utilities functionality: <br> • Encrypt option on 'Electronic reporting export connections' to send encrypted GER Vendor EFT files <br> • Decrypt option on 'Financial utilities connection' to decrypt a bank statement file.
+11653		| Encryption / Decryption	| New model **DXC Encryption**. <br> Encryption/decryption options added to following Finance utilities functionality: <br> • Encrypt option on **Electronic reporting export connections** to send encrypted GER Vendor EFT files <br> • Decrypt option on **Financial utilities connection** to decrypt a bank statement file imported using periodic task **Import bank statements via financial utilities connection**. <br> [User guide](Setup/ENCRYPTION/Encryption-decryption.md)
 12119		| Financial utilities connection	| **Log** ability added to all connection types. Ability to set **Logging level** and **Retention period**. This provides users the ability to set Custom alerts. For example if a connection can't connect a log with level _Error_ can be created. <br> ![Log](Images/ReleaseNotes_20230131_1.png "Log")
-12353		| Reconciliation matching rules	| Ability to use invoice to find the D365 customer account. <br> Applicable to **Offset account type** set to _Customer_ and where **Offset account** and **Offset account bank statement field** are both blank. <br> When running the Reconciliation matching rule, the field mapped to **Settle transaction bank statement field** (D365 invoice number) will be used to find the **D365 customer account**, to create the **Customer payment journal line**. <br> ![Reconciliation matching rules](Images/ReleaseNotes_20230131_2.png "Reconciliation matching rules")
+12353		| Reconciliation matching rules	| Ability to use invoice to find the D365 customer account. <br> Applicable to **Offset account type** set to _Customer_ and where **Offset account** and **Offset account bank statement field** are both blank. <br> When running the Reconciliation matching rule, the field mapped to **Settle transaction bank statement field** (D365 invoice number) will be used to find the **D365 customer account**, to create the **Customer payment journal line**. <br> [User guide](Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md#mark-as-new---additional-defaults)<br> ![Reconciliation matching rules](Images/ReleaseNotes_20230131_2.png "Reconciliation matching rules")
 10419		| Data entity - Bank accounts	| Added following field to entity 'Bank accounts': <br> • Financial utilities connections
 10425		| Data entity - Vendor payment method	| Added following field to entity 'Vendor payment method':  <br> • Sundry method of payment <br> • Auto payment reference number <br> • BPAY method of payment
 N/A		| License manager	| License manager version 10.8.32.10156. <br> Includes links to applicable GitHub user guide page/s <br> ![Help](Images/ReleaseNotes_20230131_3.png "Help")
@@ -65,7 +86,9 @@ Number	  	| Functionality	  | Description
 12324		| Bank statement import	| When a custom bank statement format was used and the file contained a bank account that isn't setup for advanced bank reconciliation, the bank statement headers were created for the bank accounts setup with advanced bank reconciliation, but no bank statement lines were created. <br> The fix now creates the bank statement lines for the bank accounts setup as advanced. <br> Note: Std GER doesn't import any bank statements where the file contains a bank account not setup as advanced bank reconciliation.
 
 
-# Current version
+# Previous version(s)
+
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.29.20221130
 
@@ -85,9 +108,6 @@ Number	  	| Functionality	  | Description
 :--       	|:--              |:--
 12204		| Bank statement import	| Error importing GER bank statement with bank accounts with same Bank account id and same Statement Id across multiple companies. <br> Error: "Cannot edit a record in Bank statement account statement (BankStmtISOAccountStatement). Update operations are not allowed across companies. Please use the changecompany keyword to change the current company before updating the record."
 
-# Previous version(s)
-
-One year of previous versions are included below.
 
 ### Release 10.0.29.20221019 & 10.0.27.20221019
 

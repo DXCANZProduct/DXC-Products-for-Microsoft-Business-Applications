@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Introduction to Finance Utilities 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-06-17
+ms.date: 2023-02-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,19 +32,28 @@ ms.dyn365.ops.version: AX 7.0.1
 The [release notes](Release-notes.md) describes the features that are either new or changed. 
 
 ## Introduction
-The DXC Finance Utilities module provides enhanced functionalities to Microsoft Dynamics 365 Cash and bank management, and Accounts payable payment processing:
+The DXC Finance Utilities module provides enhanced functionalities to Microsoft Dynamics 365 for the following:
 
--   Bank statement import formatting
--   Advanced bank reconciliation, including:
-    -   Extended matching functionality, including improved handling of Marked and Matched transactions
-    -   Additional capability when using ‘Mark as new’ facility
-    -   Ability to reconcile a small balance correction adjustment
-    -   Ability to prevent reconciliation of unmatched statements
--   Periodic task to automatically import bank statements
--   Sundry vendor payment management
--   BPAY vendor payment
--   Formatted Vendor Payment Advice
--   ABN lookup and validation
+-   **Cash and bank management**
+    -   Bank statement import formatting
+    -   Advanced bank reconciliation, including:
+        -   Extended matching functionality, including improved handling of Marked and Matched transactions
+        -   Additional capability when using ‘Mark as new’ facility
+        -   Ability to reconcile a small balance correction adjustment
+        -   Ability to prevent reconciliation of unmatched statements
+    -   Periodic task to automatically import bank statements from FTP/FTPS, SFTP or Azure blob. Decryption option included.
+-   **Accounts payable**
+    -   Sundry vendor payment management
+    -   BPAY vendor payment
+    -   Formatted Vendor Payment Advice
+    -   ABN lookup and validation (Australia only)
+    -   Save GER to secure location, for example FTP/FTPS, SFTP or Azure blob. Encryption option included.
+    -   Vendor bank account changes workflow
+- **Accounts receivable**
+    -   Customer bank account changes workflow
+    -   ABN lookup and validation (Australia only)
+- **Budgeting**
+    -   Budget import with separate column for each period
 
 
 #  Scenarios
@@ -80,6 +89,7 @@ Finance utilities minimises the manual actions required for reconciling bank acc
 - [Reports](Processing/Bank-Statement-Reconciliation/Cash-and-bank-management-reports.md)
 
 ### Setup for automatic import of bank statement
+- [Encryption/decryption](Setup/ENCRYPTION/Encryption-decryption.md) - where the import file should be decrypted
 - [Financial utilities connections](Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md)
 - [Bank accounts](Setup/CASH-AND-BANK-MANAGEMENT/Bank-accounts.md)
 - Periodic task [Import bank statements via financial utilities connection](Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md)
@@ -113,9 +123,14 @@ A custom-built report has been developed to provide a Payment advice to vendors 
 Finance utilities have added additional fields to Vendor approval on the **Accounts payable parameters**. This provides companies the option to submit changes to these fields to the standard vendor approval workflow.
 - [Vendor bank account changes worklow setup](Setup/ACCOUNTS-PAYABLE/Vendor-bank-account-changes-workflow.md)
 
+> Note: From 10.0.32 MS has added a preview feature called 'Vendor bank account change proposal workflow'. If this feature is enabled it will use std's functionality for approving changes to Vendor bank accounts and the following needs to be manually configured: <br> 
+>   -  Vendor bank account approval in Accounts payable parameters - Enable the fields that requires approval
+>   -  Workflow approval for proposed vendor change. Workflow to approve the proposed vendor bank account changes
+
 ## Accounts payable - Save electronic reporting file to secure location
 
 Modification allows users to automatically save the electronic reporting file to a secure location like ftp, ftps, sftp or azure blob.
+- [Encryption/decryption](Setup/ENCRYPTION/Encryption-decryption.md) - where the export file should be encrypted
 - [Save electronic reporting file to secure location setup](Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md)
 - [Save electronic reporting file to secure location processing](Processing/Accounts-Payable/Save-electronic-reporting-file-to-secure-location.md)
 

@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - FAQ 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-07-29
+ms.date: 2023-02-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -107,3 +107,10 @@ If it doesn't contain above field:
 - Delete all the lines
 - **Refresh entity list** in **Framework parameters**
 - After refresh has been completed, check **Bank statements_BankStatementEntity** again and retest import with **Date** set to _Statement transaction date_
+
+### Vendor bank account changes
+From 10.0.32 MS has added a preview feature called 'Vendor bank account change proposal workflow'. If this feature is enabled it will use std's functionality for approving changes to Vendor bank accounts and the following needs to be manually configured: <br> 
+-  Vendor bank account approval in Accounts payable parameters - Enable the fields that requires approval
+-  Workflow approval for proposed vendor change. Workflow to approve the proposed vendor bank account changes
+
+If Finance utilities vendor bank account approval have stopped working, check if above feature has been enabled and ensure the std. configuration has been completed.

@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Accounts payable setup - Save electronic reporting file to secure location 
-author: helenho
+author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-03-02
+ms.date: 2023-01-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  ERFormatDestination
+ms.search.form:  ERFormatDestination, DXCEncryptionParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -49,6 +49,9 @@ Select **New** to create the location where GER file is to be saved. Connection 
 | **Name**            |	Enter a name for your connection                              | ANZ_FTP |
 | **Connection type**	| Select the applicable connection type	                        | •	FTP <br>	• Azure blob <br> • SFTP |
 | **Error action**    |	The action to take when there is an error with the connection | • Error <br> • Warning |
+| **Enable file encryption/decryption** | Set to _Yes_ if the export file should be encrypted | •	No <br>	• Yes  |
+| **Encryption key name** |	Select applicable **Encryption key name**. <br> See [DXC encryption parameters](../ENCRYPTION/Encryption-decryption.md) for additional details. 
+
 
 Select **Save** and the applicable **Setup** will be displayed as per the **Connection type** selected
 

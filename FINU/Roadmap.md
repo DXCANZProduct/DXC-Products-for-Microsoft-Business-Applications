@@ -37,22 +37,16 @@ This page describes the features planned for future releases and planned release
 
 Release			    | ETA
 :--			        |:--
-2023-01         | 31 January 2023
+2023-04         | 28 April 2023
 
 ## Next release
-ETA: 31 January 2023
+ETA: 28 April 2023
 
 The planned features are grouped by category.
 
-### General
-GitHub Help in D365 <br>
-![GitHub Help in D365](Images/Roadmap_20220916.png "GitHub Help in D365")
-
 ### Cash and bank management
-- Encryption / decryption on 'Financial utilities connection' for bank statement files.
+- Reconciliation matching rules - additional customer reference use to find D365 customer account to create customer receipt journal
 
-### Accounts payable
-- Encryption / decryption on 'Electronic reporting connections' for vendor payment files created with ER.
 
 ### Accounts receivable
 - Option to exclude invoices from automatic settlement based on their Collection status, for example disputed.
