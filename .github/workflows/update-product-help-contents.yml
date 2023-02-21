@@ -12,6 +12,7 @@ on:
         - 'FINU'
         - 'DOCUSIGN'
         - 'CORE-EXTENSIONS'
+        - 'SMART-SEND'
 
 jobs:
   generate-html-files:
