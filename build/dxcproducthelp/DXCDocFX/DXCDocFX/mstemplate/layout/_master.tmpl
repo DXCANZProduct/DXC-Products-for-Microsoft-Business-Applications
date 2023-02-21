@@ -1,0 +1,53 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
+{{!include(/^styles/.*/)}}
+{{!include(/^fonts/.*/)}}
+{{!include(favicon.ico)}}
+{{!include(logo.svg)}}
+{{!include(search-stopwords.json)}}
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  {{>partials/head}}
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header{{#_rtl}} dir="rtl"{{/_rtl}}>
+        {{^_disableNavbar}}
+        {{>partials/navbar}}
+        {{/_disableNavbar}}
+        {{^_disableBreadcrumb}}
+        {{>partials/breadcrumb}}
+        {{/_disableBreadcrumb}}
+      </header>
+      {{#_enableSearch}}
+      <div class="container body-content">
+        {{>partials/searchResults}}
+      </div>
+      {{/_enableSearch}}
+      <div role="main" class="container body-content hide-when-search">
+        <div class="row"{{#_rtl}} dir="rtl"{{/_rtl}}>
+          <div class="col-sm-12">
+            {{^_disableToc}}{{>partials/toc}}{{/_disableToc}}
+            <div class="row{{^_disableToc}} toc-offset{{/_disableToc}}{{#_rtl}} right-to-left{{/_rtl}}">
+              {{#_disableAffix}}
+              <div class="col-sm-12">
+              {{/_disableAffix}}
+              {{^_disableAffix}}
+              {{#_rtl}}{{>partials/affix}}{{/_rtl}}
+              <div class="col-sm-12 col-md-9">
+              {{/_disableAffix}}
+                <article {{#_rtl}}dir="rtl"{{/_rtl}} class="article" id="_content" data-uid="{{uid}}">
+                  {{!body}}
+                </article>
+              </div>
+              {{^_rtl}}{{^_disableAffix}}{{>partials/affix}}{{/_disableAffix}}{{/_rtl}}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{^_disableFooter}}
+      {{>partials/footer}}
+      {{/_disableFooter}}
+    </div>
+    {{>partials/scripts}}
+  </body>
+</html>
