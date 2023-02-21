@@ -36,7 +36,13 @@ Finance utilities includes the following data entities :
 |-|-|-|
 | | **Financial utilities parameters**   | Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters |
 | | **Budget utilities parameters**      | Budgeting > Setup > Basic budgeting > Budget utilities parameters  |
-| 1 | **Financial utilities connections**  | Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections |
+
+### Financial utilities connection
+Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections
+
+| **Order** | **Entity**                            
+|-|-|-|
+| 1 | **Financial utilities connections**  
 | 2 | **Connection - FTP** 
 | 2 | **Connection - SFTP**
 | 2 | **Connection - Azure blob**
