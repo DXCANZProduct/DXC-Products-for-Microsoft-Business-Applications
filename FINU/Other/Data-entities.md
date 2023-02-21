@@ -41,7 +41,7 @@ Finance utilities includes the following data entities :
 Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections
 
 | **Order** | **Entity**                            
-|-|-|-|
+|-|-|
 | 1 | **Financial utilities connections**  
 | 2 | **Connection - FTP** 
 | 2 | **Connection - SFTP**
