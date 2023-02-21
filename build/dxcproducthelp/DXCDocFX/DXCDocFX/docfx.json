@@ -86,7 +86,7 @@
     "template": [
       "mstemplate"
     ],
-    "dest": "d365F-O",
+    "dest": "_site",
     "markdownEngineName": "markdig"
   }
 }
