@@ -19,7 +19,7 @@ audience: Application User
 ms.reviewer: Liam Coll
 
 # ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
+# ms.custom: ["21901", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: Liam Coll
@@ -40,4 +40,4 @@ The following new optional fields have been added:
 
 In addition to the email addresses the Subject and Body of the email support token place holders. These placeholders will be dynamically replaced based on the context of the business form or report they it is running for. Refer to [Email Placeholder](Email_placeholder) for further detail on supported placeholder tags. It is recommended you create a template for each business form or report as they all have unique place holder tags.
 
-Navigate to **Organization administration > Setup > Email templates**
+Navigate to **Organization administration > Setup > Organisation email templates**
