@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SysEmailTable
+ms.search.form: SysEmailTable, SysEmailParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: Liam Coll
