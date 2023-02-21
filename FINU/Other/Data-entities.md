@@ -32,11 +32,11 @@ ms.dyn365.ops.version: AX 7.0.1
 ## Finance utilities data entities:
 Finance utilities includes the following data entities :
 
-| **Entity**                            | **Manual setup path**   |
-|-|-|
-|  **Financial utilities parameters**   | Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters |
-|  **Budget utilities parameters**      | Budgeting > Setup > Basic budgeting > Budget utilities parameters  |
-| **Financial utilities connections** <br> Connection - FTP <br> Connection - SFTP <br>  Connection - Azure blob <br>  Connection - Sharepoint | Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections |
+| **Order** | **Entity**                            | **Manual setup path**   |
+|-|-|-|
+| | • **Financial utilities parameters**   | Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters |
+| | • **Budget utilities parameters**      | Budgeting > Setup > Basic budgeting > Budget utilities parameters  |
+| 1 <br> 2 <br> 2 <br> 2 <br> 2| • **Financial utilities connections** <br> • **Connection - FTP** <br> • **Connection - SFTP** <br> • **Connection - Azure blob** <br> • **Connection - Sharepoint** | Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections |
 
 ## Standard data entities
 Finance utilities have extended the following standard data entities:
@@ -46,21 +46,21 @@ Cash and bank management > Bank accounts > Bank accounts
 
 | **Entity**                          | **Additional Finance utilities fields for standard entity**                
 |-                                    |-                        
-| **Bank accounts**                   | **EFT parameters:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> •	Extra balance line on EFT (DFUEXTRABALANCELINE) <br> • Include balance line in record count (DFUBALANCELINECOUNT) <br> • Total line order (DFUTOTALLINEORDER) <br> • Use vendor bank name (DFUUSEVENDBANKNAME) <br> • User identification (DFUEFTUSERID) <br> **BPAY:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> **Import financial utilities connection:** <br> • Posting date (DFUBANKSTATEMENTPOSTINGDATETYPE) <br> • Financial utilities connection (DFUCONNECTIONNAME)
+| • **Bank accounts**                   | **EFT parameters:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> •	Extra balance line on EFT (DFUEXTRABALANCELINE) <br> • Include balance line in record count (DFUBALANCELINECOUNT) <br> • Total line order (DFUTOTALLINEORDER) <br> • Use vendor bank name (DFUUSEVENDBANKNAME) <br> • User identification (DFUEFTUSERID) <br> **BPAY:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> **Import financial utilities connection:** <br> • Posting date (DFUBANKSTATEMENTPOSTINGDATETYPE) <br> • Financial utilities connection (DFUCONNECTIONNAME)
 
 ### Vendor bank accounts
 Accounts payable > Vendors > All vendors - Bank accounts on Vendor FastTab
 
 | **Entity**                          | **Additional Finance utilities fields for standard entity**                 
 |-                                    |-                                          
-| **Vendor bank accounts**            | • Biller code (DFUBILLERCODE) <br> • Lodgement reference (DFULODGEMENTREF) <br> • Bank code (ECL_BANKCODE) <br> • Bank particulars (ECL_BANKPARTICULARS) <br> • Bank reference (ECL_BANKREFERENCE) 
+| • **Vendor bank accounts**            | • Biller code (DFUBILLERCODE) <br> • Lodgement reference (DFULODGEMENTREF) <br> • Bank code (ECL_BANKCODE) <br> • Bank particulars (ECL_BANKPARTICULARS) <br> • Bank reference (ECL_BANKREFERENCE) 
 
 ### Vendor methods of payment
 Accounts payable > Payment setup > Methods of payments
 
 | **Entity**                          | **Additional Finance utilities fields for standard entity**                 
 |-                                    |-                                          
-| **Vendor payment method**           | • Sundry method of payment (DFUSUNDRYPAYM) <br> • Auto payment reference number (DFUAUTOPAYMENTREFNUMBER) <br> • BPAY method of payment (DFUBPAYPAYM) <br> • Payment control > Lodgement reference is mandatory (DFUVALIDATELODGEMENTREFISMANDATORY) <br> • Payment attributes > Lodgement reference (DFUATTRIBUTELODGEMENTREFENABLED)
+| • **Vendor payment method**           | • Sundry method of payment (DFUSUNDRYPAYM) <br> • Auto payment reference number (DFUAUTOPAYMENTREFNUMBER) <br> • BPAY method of payment (DFUBPAYPAYM) <br> • Payment control > Lodgement reference is mandatory (DFUVALIDATELODGEMENTREFISMANDATORY) <br> • Payment attributes > Lodgement reference (DFUATTRIBUTELODGEMENTREFENABLED)
 
 
 ### Reconciliation matching rules
@@ -68,7 +68,7 @@ Cash and bank management > Setup > Advanced bank reconciliation setup > Reconcil
 
 | **Entity**                          | **Additional Finance utilities fields for standard entity**                     
 |-                                    |-  
-| **Reconciliation matching rules**   | **Step 2: Do not mark when there are matching bank transactions:** <br>  •	Group by document number (SYSTEMGENERATEDTYPE = ECL_GroupByDocumentNum) <br> • Include in (DFUBANKRULEACTIVATEINCLUDEIN) <br> **Step 3: Extended financial details:** <br> • Company (DFUCOMPANY) <br> •	Offset company (DFUOFFSETCOMPANY) <br> •	Offset account type (DFUOffsetAccountType) <br> •	Offset account (DFUOFFSETLEDGERDIMENSIONDISPLAYVALUE) <br> • Account's financial dimension values (DFUDEFAULTDIMENSIONDISPLAYVALUE) ** <br> •	Offset account's financial dimension values (DFUOFFSETDEFAULTDIMENSIONDISPLAYVALUE) ** <br> •	Offset account bank statement field (DFUOFFSETACCOUNTFIELDNAME) <br> • Settle transaction (DFUSETTLETRANS) <br> •	Settle transaction bank statement field (DFUSETTLETRANSFIELDNAME) <br> •	Auto-post customer payment journal (DFUCUSTPAYMAUTOPOST) <br> •	GST group (DFUTAXGROUP) <br> •	Item GST group (DFUTAXITEMGROUP) | 
+| • **Reconciliation matching rules**   | **Step 2: Do not mark when there are matching bank transactions:** <br>  •	Group by document number (SYSTEMGENERATEDTYPE = ECL_GroupByDocumentNum) <br> • Include in (DFUBANKRULEACTIVATEINCLUDEIN) <br> **Step 3: Extended financial details:** <br> • Company (DFUCOMPANY) <br> •	Offset company (DFUOFFSETCOMPANY) <br> •	Offset account type (DFUOffsetAccountType) <br> •	Offset account (DFUOFFSETLEDGERDIMENSIONDISPLAYVALUE) <br> • Account's financial dimension values (DFUDEFAULTDIMENSIONDISPLAYVALUE) ** <br> •	Offset account's financial dimension values (DFUOFFSETDEFAULTDIMENSIONDISPLAYVALUE) ** <br> •	Offset account bank statement field (DFUOFFSETACCOUNTFIELDNAME) <br> • Settle transaction (DFUSETTLETRANS) <br> •	Settle transaction bank statement field (DFUSETTLETRANSFIELDNAME) <br> •	Auto-post customer payment journal (DFUCUSTPAYMAUTOPOST) <br> •	GST group (DFUTAXGROUP) <br> •	Item GST group (DFUTAXITEMGROUP) | 
 
 > ** Note: Ensure the **Financial dimension configuration for integrating applications** dimension format aligns with dimensions on the bank reconciliation matching rule before importing the **Reconciliation matching rules** entity. General ledger > Chart of accounts > Dimensions > Financial dimension configuration for integrating applications. <br> Define data entity format for **Default dimensions integration** and **Ledger dimensions integration**. <br>
 > See [link](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration) for more detail.
