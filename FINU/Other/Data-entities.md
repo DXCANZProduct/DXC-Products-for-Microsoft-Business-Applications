@@ -32,10 +32,10 @@ ms.dyn365.ops.version: AX 7.0.1
 ## Finance utilities data entities:
 Finance utilities includes the following data entities :
 
-| **Order** | **Entity**                            | **Manual setup path**   |
-|-|-|-|
-| | **Financial utilities parameters**   | Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters |
-| | **Budget utilities parameters**      | Budgeting > Setup > Basic budgeting > Budget utilities parameters  |
+| **Entity**                            | **Manual setup path**   |
+|-|-|
+| **Financial utilities parameters**   | Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters |
+| **Budget utilities parameters**      | Budgeting > Setup > Basic budgeting > Budget utilities parameters  |
 
 ### Financial utilities connection
 Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections
