@@ -2,10 +2,10 @@
 # required metadata
 
 title: Docusign
-description: Setup Parameters
+description: Setup Users
 author: ndavidson2
 manager: Kym Parker
-ms.date: 2020-01-12
+ms.date: 2023-02-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
