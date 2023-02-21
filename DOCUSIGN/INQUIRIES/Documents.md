@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Docusign
+title: DXC Solutions for DocuSign and Dynamics 365
 description: Inquiries - Documents
 author: ndavidson2
 manager: Kym Parker
