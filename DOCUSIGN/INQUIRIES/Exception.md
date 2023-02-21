@@ -2,7 +2,7 @@
 # required metadata
 
 title: DXC Solutions for DocuSign and Dynamics 365
-description: DXC Solutions for DocuSign and Dynamics 365 - Exceptions
+description: Inquiries - Exceptions
 author: lcoll
 manager: Kym Parker
 ms.date: 2022-05-16
