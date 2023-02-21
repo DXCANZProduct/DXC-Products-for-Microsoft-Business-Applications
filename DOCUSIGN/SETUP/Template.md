@@ -2,10 +2,10 @@
 # required metadata
 
 title: Docusign
-description: Setup Parameters
+description: Setup Templates
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-02-20
+ms.date: 2023-02-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
