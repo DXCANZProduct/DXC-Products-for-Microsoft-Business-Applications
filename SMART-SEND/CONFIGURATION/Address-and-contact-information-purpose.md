@@ -5,7 +5,7 @@ title: Smart Send
 description: Smart Send - Address and contact information purpose
 author: Liam Coll
 manager: Kym Parker
-ms.date: 29/07/2021
+ms.date: 2021-07-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
