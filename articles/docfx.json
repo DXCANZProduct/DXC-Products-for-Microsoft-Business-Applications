@@ -1,92 +1,68 @@
 {
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "*.csproj"
+          ],
+          "cwd": ".",
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**",
+            "_site/**"
+          ]
+        }
+      ],
+      "dest": "obj/api"
+    }
+  ],
   "build": {
     "content": [
       {
         "files": [
-          "**/*.md",
-          "**/**.yml"
+          "api/**.yml"
+        ],
+        "cwd": "obj"
+      },
+      {
+        "files": [
+          "api/*.md",
+          "articles/**.md",
+          "toc.yml",
+          "*.md"
         ],
         "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices",
-          "PULL_REQUEST_TEMPLATE.md",
-          "ISSUE_TEMPLATE.md",
-          "**/_themes/**",
-          "**/_themes.pdf/**"
+          "obj/**",
+          "_site/**"
         ]
       }
     ],
     "resource": [
       {
         "files": [
-          "**/**.png",
-          "**/**.jpg",
-          "**/**.jpeg",
-          "**/**.gif",
-          "**/**.svg"
+          "images/**"
         ],
         "exclude": [
-          "**/obj/**",
-          "**/includes/**"
+          "obj/**",
+          "_site/**"
         ]
       }
     ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications",
-      "feedback_product_url": "https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications",
-      "layout": "Conceptual",
-      "searchScope": [
-        "dynamics365-finops",
-        "Dynamics 365",
-        "Unified Operations"
-      ],
-      "uhfHeaderId": "MSDocsHeader-Dynamics365",
-      "brand": "dyn-ops",
-      "_op_documentIdPathDepotMapping": {
-        "FINU/": {
-          "folder_relative_path_in_docset": ".",
-          "depot_name": "MSDN.d365OpsFINU"
-        }
-      },
-      "recommendations": "true",
-      "_noindex": true,
-      "_norobots": true
-    },
-    "fileMetadata": {
-      "search.app": {
-        "FINU/**/*.md": [
-          "FinanceAndOperations"
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
         ]
-      },
-      "feedback_product_url": {
-        "retail/**/*.md": "https://ideas.dynamics.com"
-      },
-      "searchScope": {
-        "FINU/**.md": [
-          "dynamics365-talent",
-          "Dynamics 365",
-          "Unified Operations",
-          "Talent"
-        ]
-      },
-      "ms.service": {
-        "FINU/**/**.*": "Finance Utilities"
-      },
-      "ms.search.scope": {
-        "FINU/**/**.md": "Core, Operations, Retail"
       }
-    },
+    ],
+    "dest": "_site",
     "template": [
       "mstemplate"
-    ],
-    "dest": "d365F-O",
-    "markdownEngineName": "markdig"
+    ]
   }
 }
