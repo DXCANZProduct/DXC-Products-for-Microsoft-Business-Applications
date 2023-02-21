@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities setup - Data Entities 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-01-31
+ms.date: 2023-02-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,7 +36,7 @@ Finance utilities includes the following data entities :
 |-|-|
 |  **Financial utilities parameters**   | Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters |
 |  **Budget utilities parameters**      | Budgeting > Setup > Basic budgeting > Budget utilities parameters  |
-| **Financial utilities connections**   | Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections |
+| **Financial utilities connections** <br> Connection - FTP <br> Connection - SFTP <br>  Connection - Azure blob <br>  Connection - Sharepoint | Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections |
 
 ## Standard data entities
 Finance utilities have extended the following standard data entities:
