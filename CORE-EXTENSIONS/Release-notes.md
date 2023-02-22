@@ -5,7 +5,7 @@ title: Core Extensions
 description: DXC Core extensions - Release notes
 author: lcoll
 manager: Kym Parker
-ms.date: 2023-02-22
+ms.date: 2023-02-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.29.TBD
+### Release 10.0.29.20230223
 
 DXC Core extensions 10.0.29 runs on the following Microsoft releases
 
@@ -43,7 +43,9 @@ Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 
-#### Build 10.0.29.TBD
+#### Build 10.0.29.202302231
+
+Release date: 23 February 2023
 
 <ins>New features</ins>
 
