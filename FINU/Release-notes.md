@@ -61,7 +61,7 @@ Release date: 22 February 2023 <br>
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-		| DXC Encryption	| Update to DXC encryption. Resolve error: Module 'DXCEncryption' is missing the following dependencies: 'ApplicationFoundationFormAdaptor'
+N/A		| DXC Encryption	| Update to DXC encryption. Resolve error: Module 'DXCEncryption' is missing the following dependencies: 'ApplicationFoundationFormAdaptor'
 
 
 #### Build 10.0.29.202301312
