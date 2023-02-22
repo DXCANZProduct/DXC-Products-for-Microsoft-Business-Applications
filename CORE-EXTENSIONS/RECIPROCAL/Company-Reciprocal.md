@@ -38,7 +38,7 @@ This applies to all users and all exchange rates for the selected company.
 From the Legal Entity form you can set this option for the current selected company.
 
 1. Navigate to **Organization administration > Organizations > Legal Entity**. 
-2. Click on Edit button and expand the *General* fast tab and set *Display reciprocal exchange rate* to ‘Yes’. 
+2. Click on Edit button and expand the **General** fast tab and set **Display reciprocal exchange rate** to _Yes_. 
 
 ### Display
 The following forms will display the reciprocal exchange rate:
