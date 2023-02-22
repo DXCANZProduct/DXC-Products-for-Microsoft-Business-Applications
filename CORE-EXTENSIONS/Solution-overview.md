@@ -2,10 +2,10 @@
 # required metadata
 
 title: Core Extensions
-description: Core Extensions - Overview
+description: Overview
 author: Liam Coll
 manager: Kym Parker
-ms.date: 2021-08-08
+ms.date: 2023-02-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,6 +39,11 @@ Company colors allow a user to select a preferred color theme for a company. Sta
 
 ### [Exchange Rate Import](EXCHANGE-RATE-IMPORT/Exchange-rate-import.md)
 Microsoft Dynamics 365 offers functionality to import exchange rates based on limited sources. The Exchange Rate Import leverages the same standard framework of Microsoft Dynamics 365 but extends functionality to support the following additional sources; Reserve Bank of Australia, Bank of Canada, Open Exchange Rates.
+
+### [Display reciprocal exchange rate](RECIPROCAL/Company-Reciprocal.md)
+Display reciprocal exchange rate allows companies to view the exchanges rates in reciprocal format.
+For example instead of 0.69, displays result of 1/0.69.
+This applies to all users and all exchange rates for the selected company
 
 ### [User Security Audit Detail Report](USER-SECURITY-AUDIT-DETAIL-REPORT/User-Security-audit-detail-report.md)
 The report “User security audit details report” included in the Core Extensions product gives an overview of the security setup for a user. The information shown on the report is down to the privilege level details.
