@@ -49,7 +49,7 @@ Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dyn
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-10206		| Display reciprocal exchange rates	| New setting **Display reciprocal exchange rate** added to **Legal entities**. <br> When set to _Yes_, displays the reciprocal rate on: <br> - General journal lines <br> - Vendor invoice journal lines <br> - Vendor payment journal lines <br> - Purchase order totals <br> - Customer payment journal lines <br> - Free text invoice totals <br> - Sales order totals
+10206		| Display reciprocal exchange rates	| New setting **Display reciprocal exchange rate** added to **Legal entities**. <br> When set to _Yes_, displays the reciprocal rate on: <br> - General journal lines <br> - Vendor invoice journal lines <br> - Vendor payment journal lines <br> - Purchase order totals <br> - Customer payment journal lines <br> - Free text invoice totals <br> - Sales order totals <br> [User guide](RECIPROCAL/Company-Reciprocal.md)
 N/A		| License manager	| License manager version 10.8.32.10156. <br> **Help** includes links to applicable GitHub user guide page/s <br> ![Help](IMAGES/ReleaseNotes_20230222_1.png "Help")
 
 <ins>Bug fixes</ins>
