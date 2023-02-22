@@ -30,7 +30,8 @@ ms.dyn365.ops.version: AX 7.0.1
 # Display reciprocal exchange rate
 
 ### Overview
-**Display reciprocal exchange rate** allows companies to view the exchanges rates in reciprocal format. For example instead of 0.69, displays result of 1/0.69.
+**Display reciprocal exchange rate** allows companies to view the exchanges rates in reciprocal format. <br>
+For example instead of 0.69, displays result of 1/0.69. <br>
 This applies to all users and all exchange rates for the selected company.
  
 ### Setup and Process
@@ -38,4 +39,14 @@ From the Legal Entity form you can set this option for the current selected comp
 
 1. Navigate to **Organization administration > Organizations > Legal Entity**. 
 2. Click on Edit button and expand the *General* fast tab and set *Display reciprocal exchange rate* to ‘Yes’. 
+
+### Display
+The following forms will display the reciprocal exchange rate:
+- General journal lines
+- Vendor invoice journal lines
+- Vendor payment journal lines
+- Purchase order totals
+- Customer payment journal lines
+- Free text invoice totals
+- Sales order totals
 
