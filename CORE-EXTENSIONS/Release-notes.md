@@ -58,6 +58,8 @@ Number	| Name	          | Description
 :--     |:--              |:--
 9513	| User security audit details report	| Display **Privilege** information per Role and Duty.
 
+# Previous version(s)
+
 ### Release 10.0.22.20220331
 
 #### Build 10.0.22.202203312
@@ -68,8 +70,6 @@ Number	  | Name	          | Description
 :--       |:--              |:--
 10016	    | Import ledger journal no longer displays export templates  | The import ledger journal class displayed both import and export data entities. This has been amended to only display import data entities.
 10017	    | Support inventory movement journal data entity V4  | Support inventory movement journal data entity V3 has been replaced with the updated V4. Support for this new data entity has been added to the inventory journal import feature.
-
-# Previous version(s)
 
 ### Release 10.0.16.20210413
 
