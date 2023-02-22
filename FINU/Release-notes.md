@@ -56,6 +56,14 @@ Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dyn
 > Note: From **10.0.32** MS has added a feature (on by default) called **Time zone for importing bank statements using Electronic reporting**. <br>
 > Finance utilities doesn't currently support converting date/time fields within the bank statement file.
 
+#### Build 10.0.29.202301313
+Release date: 22 February 2023 <br> 
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+		| DXC Encryption	| Update to DXC encryption. Resolve error: Module 'DXCEncryption' is missing the following dependencies: 'ApplicationFoundationFormAdaptor'
+
+
 #### Build 10.0.29.202301312
 Release date: 14 February 2023 <br> 
 
