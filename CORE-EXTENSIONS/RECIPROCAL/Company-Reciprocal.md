@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.1
 For example instead of 0.69, displays result of 1/0.69. <br>
 This applies to all users and all exchange rates for the selected company.
  
-### Setup and Process
+### Setup
 From the Legal Entity form you can set this option for the current selected company.
 
 1. Navigate to **Organization administration > Organizations > Legal Entity**. 
