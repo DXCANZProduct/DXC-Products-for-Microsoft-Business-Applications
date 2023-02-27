@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-02-23
+ms.date: 2023-02-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,6 +55,14 @@ Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dyn
 
 > Note: From **10.0.32** MS has added a feature (on by default) called **Time zone for importing bank statements using Electronic reporting**. <br>
 > Finance utilities doesn't currently support converting date/time fields within the bank statement file.
+
+#### Build 10.0.29.202301314
+Release date: 22 February 2023 <br> 
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+12934		| Bank statement import	|  Support DXC X++ replacement for XSLT depreciation
+
 
 #### Build 10.0.29.202301313
 Release date: 22 February 2023 <br> 
