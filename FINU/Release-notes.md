@@ -57,7 +57,7 @@ Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dyn
 > Finance utilities doesn't currently support converting date/time fields within the bank statement file.
 
 #### Build 10.0.29.202301314
-Release date: 22 February 2023 <br> 
+Release date: 27 February 2023 <br> 
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
