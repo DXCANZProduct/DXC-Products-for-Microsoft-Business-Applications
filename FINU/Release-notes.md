@@ -63,8 +63,8 @@ Release date: 3 March 2023 <br>
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-11505		| Reconciliation matching rules	| Bank reconciliation: When running multiple Reconciliation matching rules with **Action** set to _Mark new transactions'_ and **Offset account type** set to _Customer_, errored with 'No statement lines have been marked. The match has an imbalance of %amount%'. 
-12801		| Reconciliation matching rules	| Bank reconciliation: When running Reconciliation matching rules with **Action** 'Mark new transactions' and **Offset account type** set to _Customer_ and **Auto-post customer payment journal** set to _Yes_, and there was an issue with posting the customer payment journal (for example customer is stopped) the bank statement transactions were still matched.
+11505		| Reconciliation matching rules	| Bank reconciliation: When running multiple Reconciliation matching rules with **Action** set to _Mark new transactions_ and **Offset account type** set to _Customer_, errored with 'No statement lines have been marked. The match has an imbalance of %amount%'. 
+12801		| Reconciliation matching rules	| Bank reconciliation: When running Reconciliation matching rules with **Action** set to _Mark new transactions_ and **Offset account type** set to _Customer_ and **Auto-post customer payment journal** set to _Yes_, and there was an issue with posting the customer payment journal (for example customer is stopped) the bank statement transactions were still matched.
 
 
 #### Build 10.0.29.202301314
