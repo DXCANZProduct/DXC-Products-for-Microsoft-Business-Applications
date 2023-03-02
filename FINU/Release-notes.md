@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-02-27
+ms.date: 2023-03-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -21,7 +21,7 @@ ms.reviewer: jdutoit2
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: jdutoit2
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -56,8 +56,21 @@ Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dyn
 > Note: From **10.0.32** MS has added a feature (on by default) called **Time zone for importing bank statements using Electronic reporting**. <br>
 > Finance utilities doesn't currently support converting date/time fields within the bank statement file.
 
+#### Build 10.0.29.TBD
+Release date: 3 March 2023 <br> 
+
+<ins>Bug fixes</ins>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+11505		| Reconciliation matching rules	| Bank reconciliation: When running multiple Reconciliation matching rules with **Action** 'Mark new transactions' and **Offset account type** set to _Customer_, errored with 'No statement lines have been marked. The match has an imbalance of %amount%'. 
+12801		| Reconciliation matching rules	| Bank reconciliation: When running Reconciliation matching rules with **Action** 'Mark new transactions' and **Offset account type** set to _Customer_ and **Auto-post customer payment journal** set to _Yes_, and there was an issue with posting the customer payment journal (for example customer is stopped) the bank statement transactions were still matched.
+
+
 #### Build 10.0.29.202301314
 Release date: 27 February 2023 <br> 
+
+<ins>New features</ins>
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
@@ -66,6 +79,8 @@ Number	  	| Functionality	  | Description
 
 #### Build 10.0.29.202301313
 Release date: 22 February 2023 <br> 
+
+<ins>Bug fixes</ins>
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
