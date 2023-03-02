@@ -5,7 +5,7 @@ title: EDI Core
 description: Managing files in the EDI module
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-06-29
+ms.date: 2023-03-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,7 +41,7 @@ Automatic archiving of the document handling attachment can be setup with **Arch
 - Select the **Status** of the document you wish to review. The options are:
   - **Pending** – File has not been processed
   - **Processed** – File processing is complete
-  - **Error** – An error was identified during file processing.  The file has not been processed
+  - **Error** – An error was identified during file processing.  The file has not been processed. Example issue: the outbound file path hasn't been setup on the connection.
   - **Processing** – File is currently processing
   - **Archived** – The file has been archived
 - View the staging document by selecting **Staging document** from the ribbon.
