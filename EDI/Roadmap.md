@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-01-31
+ms.date: 2023-03-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
