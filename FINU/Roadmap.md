@@ -45,15 +45,15 @@ ETA: 28 April 2023
 
 The planned features are grouped by category.
 
-### Accounts receivable
+#### Accounts receivable
 - Additional licensed feature for importing and reconciling customer remittances.
 
 
 ## Roadmap
-### Cash and bank management
+#### Cash and bank management
 - Reconciliation matching rules - additional customer reference use to find D365 customer account to create customer receipt journal
 
-### Accounts receivable
+#### Accounts receivable
 - Option to exclude invoices from automatic settlement based on their Collection status, for example disputed.
 
 
