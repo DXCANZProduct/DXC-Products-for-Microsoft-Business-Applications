@@ -56,6 +56,10 @@ Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dyn
 > Note: From **10.0.32** MS has added a feature (on by default) called **Time zone for importing bank statements using Electronic reporting**. <br>
 > Finance utilities doesn't currently support converting date/time fields within the bank statement file.
 
+> Note: From **10.0.32** MS has added a feature called **New voucher and date for new transactions in the advanced bank reconciliation bank statement**. <br>
+> This adds new std. setting **Set the booking date as default accounting date for new transactions** to Cash and bank management parameters.
+> If this is set to _Yes_ it will override Finance utilities posting date **Today's date** for mark as new transactions and post the new transactions at the booking date. Thus if you want to use **Today's date** for new transactions, ensure the new setting is set to _No_
+
 #### Build 10.0.29.202301315
 Release date: 3 March 2023 <br> 
 
