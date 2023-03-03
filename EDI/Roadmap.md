@@ -42,16 +42,16 @@ Release			| ETA
 
 
 ## Next release
-ETA: 31 March 2023
+ETA: 28 April 2023
 
 The planned features are grouped by module. Core is included for all modules.
 
-
-## Future releases
-The following features are planned for a future release
-
 #### Core
-- **Electronic reporting** document type template
+- **Azure folders** - Currently Azure connection supports containers. Add ability to use folders.
+
+#### 3PL
+- **Product master** - Provide product information to a 3PL partner. Can be used to provide information about new products or changes to existing products.
+
 
 
 ## Deprecate
