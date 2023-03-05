@@ -359,7 +359,7 @@ Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
 Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
 
-<ins>**Manual actions required**</ins>
+<ins>**Manual actions required**</ins> <br>
 **EDI > Setup > Batch control** has been replaced with **EDI > Setup > Batch control group**. <br>
 Running **Refresh module** will transfer the “tick’s” (green in screenshot) from deprecated Batch control to new Batch control groups. <br> Next step is to delete the company specific EDI Batch jobs (via System administration > Inquiries > Batch jobs) and then create new batch jobs for each process via red in below screenshot. These will automatically be created on Company account dat, which enables the batch to run for multiple company accounts. <br> ![EDI batch control groups](RELEASE-NOTES-IMAGES/202204101_1.png "EDI batch control groups")
 
