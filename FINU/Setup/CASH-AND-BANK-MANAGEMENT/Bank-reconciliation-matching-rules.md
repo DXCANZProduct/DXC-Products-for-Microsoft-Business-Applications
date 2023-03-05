@@ -107,7 +107,7 @@ More detail for ** fields are discussed [here](#customer-payment-and-settle-of-i
 ### Customer payment and settle of invoice (1:1)
 #### Reconciliation matching rules
 This section will provide more details for ** fields from above section.
-Finance utilities allows for creating and optional settling of one invoice and optional posting of customer payment journal. One customer payment journal is created for all the bank statement lines matched with the mark as new rule. For improved traceability the Reconcile ID is populated in the Customer receipt’s journal Document on the journal’s setup tab.
+Finance utilities allows for creating and optional settling of one invoice and optional posting of customer payment journal. One customer payment journal is created for all the bank statement lines matched with the mark as new rule. For improved traceability the Reconcile ID is populated in the Customer receipt’s journal Document on the journal’s setup tab. The customer payment journal's **Date** is set by the bank statement's **Booking date**.
 
 The following subsection will discuss scenarios when running a Mark as new rule with **Offset account type** set to _Customer_
 -	**Offset account** is set to a specific customer account, or **Offset account bank statement field** is set to use a field from the bank statement field (example Trading partner), or if both of the fields are blank **Settle transaction bank statement field** (D365 invoice) will be used to find the D365 customer account:
