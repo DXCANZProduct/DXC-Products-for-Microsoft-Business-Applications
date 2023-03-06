@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core Setup - Document type mapping
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-09-27
+ms.date: 2023-03-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form: SAB_EDIFunctionalAckDocumentTypeMapping
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
