@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer - Data entities
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-09-29
+ms.date: 2023-03-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIDocumentTypeTable, SAB_EDIParameters, SAB_EDICustOrderTypeMapping, SAB_EDICustOrderPurposeMapping, SAB_EDICustPOACodesMapping,SAB_EDICustOrderLineChangeMapping
+ms.search.form:  SAB_EDIDocumentTypeTable, SAB_EDIParameters, SAB_EDICustOrderTypeMapping, SAB_EDICustOrderPurposeMapping, SAB_EDICustPOACodesMapping, SAB_EDICustOrderLineChangeMapping, SAB_EDITradingPartner
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
