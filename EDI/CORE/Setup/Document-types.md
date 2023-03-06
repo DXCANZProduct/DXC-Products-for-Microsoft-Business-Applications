@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Setup document types
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2020-01-12
+ms.date: 2023-03-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
