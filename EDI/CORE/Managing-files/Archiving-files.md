@@ -5,7 +5,7 @@ title: EDI Core
 description: Managing files in the EDI module
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-07-21
+ms.date: 2023-03-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,13 +13,13 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: DocuType  
+ms.search.form: DocuType, DocuParameters, SAB_EDIParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
 
 # ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
+# ms.custom: ["21901", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jdutoit2
