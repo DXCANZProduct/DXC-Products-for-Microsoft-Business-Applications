@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Setup EDI parameters
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-09-29
+ms.date: 2023-03-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIParameters, DocuParameters, MCRHoldCodeTable
+ms.search.form:  SAB_EDIParameters, DocuParameters, MCRHoldCodeTable, DocuType
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
