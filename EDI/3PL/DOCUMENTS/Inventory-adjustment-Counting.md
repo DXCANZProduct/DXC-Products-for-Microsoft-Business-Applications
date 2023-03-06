@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Inventory adjustment - Counting
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-24
+ms.date: 2023-03-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDITradingPartner, SAB_EDI3PLWHSInventStatusMapping, SAB_EDI3PLInventJournalNameMapping, SAB_EDIFileImport, Action%3ASAB_EDIStagingFormRun_InventAdjAdviceCount
+ms.search.form:  SAB_EDITradingPartner, SAB_EDI3PLWHSInventStatusMapping, SAB_EDI3PLInventJournalNameMapping, SAB_EDIFileImport, SAB_EDIDocumentTypeTable,  Action%3ASAB_EDIStagingFormRun_InventAdjAdviceCount
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
