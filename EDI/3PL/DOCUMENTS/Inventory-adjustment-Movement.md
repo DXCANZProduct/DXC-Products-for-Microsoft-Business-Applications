@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Inventory adjustment - Movement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-24
+ms.date: 2023-03-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDI3PLWHSInventStatusMapping, SAB_EDI3PLInventJournalNameMapping, SAB_EDI3PLTransactionDirectionMapping, SAB_EDIFileImport, SAB_EDIStagingFormRun_InventAdjMovement
+ms.search.form:  SAB_EDI3PLWHSInventStatusMapping, SAB_EDI3PLInventJournalNameMapping, SAB_EDI3PLTransactionDirectionMapping, SAB_EDIFileImport, SAB_EDIDocumentTypeTable, SAB_EDIStagingFormRun_InventAdjMovement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
