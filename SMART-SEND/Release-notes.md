@@ -55,7 +55,7 @@ Number	  | Functionality	  | Reason
 
 Number	  | Functionality	  | Reason
 :--       |:--              |:--
-11641	    | Smart Send button sends the !default report format | When using the Smart Send button, the email parameter configuration that is used should be the Default record. <BR> <BR> The email parameter configuration does not use the default, it uses the report format defined in print management
+11641	    | Smart Send button sends the default report format | When using the Smart Send button, the email parameter configuration that is used should be the Default record. <BR> <BR> The email parameter configuration does not use the default, it uses the report format defined in print management
 
 # Previous version(s)
 
