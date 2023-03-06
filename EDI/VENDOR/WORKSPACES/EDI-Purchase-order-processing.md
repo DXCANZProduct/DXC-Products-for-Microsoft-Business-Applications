@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIPurchTableProcessingWorkspace, SAB_EDIDocumentTypeTable
+ms.search.form:  SAB_EDIPurchTableProcessingWorkspace
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
