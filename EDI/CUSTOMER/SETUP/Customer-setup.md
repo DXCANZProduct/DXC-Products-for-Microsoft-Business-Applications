@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDITradingPartner,SAB_EDIDocumentTypeTable,  SAB_EDICleanupProfile,SAB_EDICustOrderTypeMapping, SAB_EDICustOrderPurposeMapping, SAB_EDICustPOACodesMapping,SAB_EDICustOrderLineChangeMapping, SAB_EDIUOMMapping
+ms.search.form:  SAB_EDITradingPartner, SAB_EDIDocumentTypeTable, SAB_EDICleanupProfile, SAB_EDICustOrderTypeMapping, SAB_EDICustOrderPurposeMapping, SAB_EDICustPOACodesMapping, SAB_EDICustOrderLineChangeMapping, SAB_EDIUOMMapping
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
