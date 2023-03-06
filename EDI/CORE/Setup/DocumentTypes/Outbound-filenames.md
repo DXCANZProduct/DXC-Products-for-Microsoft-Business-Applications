@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Setup document types - Outbound filenames
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-06-28
+ms.date: 2023-03-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIDocumentTypeTable
+ms.search.form:  SAB_EDIDocumentTypeTable, SAB_EDITradingPartner
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
