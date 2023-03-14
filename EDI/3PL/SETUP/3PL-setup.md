@@ -2,7 +2,7 @@
 # required metadata
 
 title: EDI 3PL
-description: EDI 3PL Setup
+description: EDI 3PL Setup on Trading partners
 author: jdutoit2
 manager: Kym Parker
 ms.date: 2021-11-17
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIParameters, SAB_EDIDocumentTypeTable, SAB_EDITradingPartner, SAB_EDI3PLInventJournalNameMapping, SAB_EDI3PLDispositionCodeMapping, SAB_EDI3PLWHSInventStatusMapping, SAB_EDI3PLTransactionDirectionMapping, SAB_EDI3PLOrderPurposeMapping 
+ms.search.form:  SAB_EDITradingPartner 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
