@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer purchase order change
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-10-07
+ms.date: 2023-03-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDITradingPartner, SAB_EDIFileImport, SAB_EDIDocumentTypeTable
+ms.search.form:  SalesTableListPage, SAB_EDIStagingFormRun_Cust_POC, SAB_EDICustOrderTypeMapping, SAB_EDICustOrderPurposeMapping, SAB_EDICustOrderLineChangeMapping
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
