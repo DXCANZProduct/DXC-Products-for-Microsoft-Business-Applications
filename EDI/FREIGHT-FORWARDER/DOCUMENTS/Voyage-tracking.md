@@ -5,7 +5,7 @@ title: EDI Freight forwarder
 description: EDI Freight forwarder Documents - Voyage tracking
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-29
+ms.date: 2023-03-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDITradingPartner, SAB_EDIFileImport,SAB_EDIFFShipPortTableMapping, SAB_EDIFFVendDlvModeMapping, SAB_EDIFFCustomsBrokerMapping, SAB_EDIFFShipContainerTypeMapping, SAB_EDIFFShipMeasurementUnitMapping 
+ms.search.form: SAB_EDIStagingFormRun_FFLCVoyageTracking, SAB_EDIFFLCShipPortTableMapping, SAB_EDIFFLCVendDlvModeMapping, SAB_EDIFFLCCustomsBrokerMapping, SAB_EDIFFLCShipContainerTypeMapping, SAB_EDIFFLCShipMeasurementUnitMapping
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
 # ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
+ms.custom: 
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jdutoit2
