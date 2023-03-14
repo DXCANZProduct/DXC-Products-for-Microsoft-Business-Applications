@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor Documents - Purchase invoice
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-09-27
+ms.date: 2023-03-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SAB_EDIFileImport  
+ms.search.form: PurchTableListPage, SAB_EDIStagingFormRun_VendInvoice, SAB_EDIVendChargesCodeMapping, SAB_EDIVendPaymentTermsMapping, SAB_EDIVendMiscChargeIndicatorMapping, SAB_EDIVendMiscMethodHandlingMapping
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
 # ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
+ms.custom: 
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jdutoit2
