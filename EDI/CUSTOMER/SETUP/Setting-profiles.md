@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Setup - Document type Setting profiles
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-10-01
+ms.date: 2023-03-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,12 +46,3 @@ The following customer documents have setting profiles:
 - [Customer advanced shipping notice](SETTING-PROFILES/Customer-advanced-shipping-notice.md)
 - [Sales invoice](SETTING-PROFILES/Sales-invoice.md)
 
-## Document errors
-When an incoming staging record/document errors, it has not created/updated the target D365 transaction. <br>
-When an outgoing staging record/document errors, it has not created the Outbound file. <br>
-
-Staging/document errors can be viewed at: <br>
-- **EDI > Documents** - On each document type, user can set filter **Staging to target status** to _Error_
-- [**EDI > EDI Document maintenance**](../../CORE/WORKSPACES/EDI-Document-maintenance-workspace.md) - The workspace contains a tile and tab for each document type.
-
-Users can use **Show log** and **Version log** to review the issues. And after the issue has been fixed, reset the status of the record. The next processing batch will pick up the _Not started_ status record.
