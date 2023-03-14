@@ -2,10 +2,10 @@
 # required metadata
 
 title: EDI Customer
-description: EDI Customer Setup
+description: EDI Customer Setup on Trading partners
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-09-23
+ms.date: 2023-03-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,13 +13,13 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDITradingPartner, SAB_EDIDocumentTypeTable, SAB_EDICleanupProfile, SAB_EDICustOrderTypeMapping, SAB_EDICustOrderPurposeMapping, SAB_EDICustPOACodesMapping, SAB_EDICustOrderLineChangeMapping, SAB_EDIUOMMapping
+ms.search.form:  SAB_EDITradingPartner
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
 
 # ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
+ms.custom: 
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jdutoit2
