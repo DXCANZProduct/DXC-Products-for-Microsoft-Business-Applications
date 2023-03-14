@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Inventory adjustment - Counting
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-14
+ms.date: 2023-03-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,7 +19,7 @@ audience: Application User
 ms.reviewer: jdutoit2
 
 # ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
+# ms.custom: 
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jdutoit2
