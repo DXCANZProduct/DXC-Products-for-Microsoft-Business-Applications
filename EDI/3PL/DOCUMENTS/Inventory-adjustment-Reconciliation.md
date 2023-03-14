@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Inventory adjustment - Reconciliation
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-14
+ms.date: 2023-03-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIStagingFormRun_InventAdjReconciliation, SAB_EDIInventAdjReconciliation
+ms.search.form:  SAB_EDIStagingFormRun_InventAdjReconciliation, SAB_EDIInventAdjReconciliation, SAB_EDI3PLWHSInventStatusMapping
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
