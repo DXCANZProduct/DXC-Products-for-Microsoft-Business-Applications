@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIParameters, SAB_EDIFTPSite, SAB_EDISFTPSite, SAB_EDIAzureSite, SAB_EDIExternalWebServiceSetting
+ms.search.form:  SAB_EDIParameters, SAB_EDIFTPSite, SAB_EDISFTPSite, SAB_EDIAzureSite, SAB_EDIExternalWebServiceSetting, SAB_EDIExternalWebServiceSetting
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -246,7 +246,7 @@ The Web API setup form holds the information required to connect to, retrieve an
 | **Description**                 	| Enter the **Description** of web API |
 | **Active**                   	    | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
 | <ins>**General**</ins>                		
-| **Web API type**                 	| A list of available connections that have been developed for the implementation |
+| **Web API type**                 	| A list of available connections that have been developed for the implementation. Can also be viewed at **EDI > Setup > Configurations > Web API types** |
 | **Internet address**             	| The base URL of the API |
 | **Service endpoint**             	| The specific services endpoint |
 | <ins>**Connection details**</ins>       		
