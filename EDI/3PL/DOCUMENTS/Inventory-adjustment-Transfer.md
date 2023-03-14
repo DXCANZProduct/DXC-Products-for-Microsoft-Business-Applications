@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Inventory adjustment - Transfer
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-24
+ms.date: 2023-03-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,13 +13,13 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDI3PLWHSInventStatusMapping, SAB_EDIStagingFormRun_InventAdjAdvice, SAB_EDIDocumentTypeTable, SAB_EDIFileImport
+ms.search.form:  SAB_EDI3PLWHSInventStatusMapping, SAB_EDIStagingFormRun_InventAdjAdvice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
 
 # ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
+ms.custom: 
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jdutoit2
