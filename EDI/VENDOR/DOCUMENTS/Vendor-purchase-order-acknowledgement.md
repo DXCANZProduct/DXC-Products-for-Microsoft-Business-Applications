@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor Documents - Vendor purchase order acknowledgement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-01-30
+ms.date: 2023-03-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIFileImport, SAB_EDIDocumentTypeTable, PurchTableListPage
+ms.search.form:  PurchTableListPage, SAB_EDIStagingFormRun_VendPOA, SAB_EDIVendPOACodesMapping
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
