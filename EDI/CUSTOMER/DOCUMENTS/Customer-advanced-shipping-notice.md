@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIConsignmentNoteTable, SAB_EDIStagingFormRun_ASN
+ms.search.form:  SAB_EDIConsignmentNoteTable, SAB_EDIStagingFormRun_ASN, SAB_EDIASNLineConfigurationTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
