@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer - FAQ
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-09-27
+ms.date: 2023-03-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
