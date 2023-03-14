@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SAB_EDIStagingFormRun_FFLCVoyageCreator, SAB_EDIFFShipPortTableMapping, SAB_EDIFFVendDlvModeMapping, SAB_EDIFFCustomsBrokerMapping, SAB_EDIFFShipContainerTypeMapping, SAB_EDIFFShipMeasurementUnitMapping 
+ms.search.form: SAB_EDIStagingFormRun_FFLCVoyageCreator, SAB_EDIFFLCShipPortTableMapping, SAB_EDIFFLCVendDlvModeMapping, SAB_EDIFFLCCustomsBrokerMapping, SAB_EDIFFLCShipContainerTypeMapping, SAB_EDIFFLCShipMeasurementUnitMapping 
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
