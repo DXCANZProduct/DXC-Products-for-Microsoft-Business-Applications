@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor - FAQ
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-16
+ms.date: 2023-03-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
