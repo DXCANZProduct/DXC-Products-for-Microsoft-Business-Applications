@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Setup document types - Setting profiles
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-06-28
+ms.date: 2023-03-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,13 +13,13 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIDocumentTypeTable, SAB_EDITradingPartner
+ms.search.form:  SAB_EDIDocumentTypeTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
 
 # ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
+ms.custom: 
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jdutoit2
@@ -46,3 +46,9 @@ Copy existing setting profile:
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details. 
 
 Each document's Setting profile will be discussed in more detail with each document's details.
+
+Document setting profiles available per module:
+- [3PL](../../../3PL/SETUP/Setting-profiles.md)
+- Customer
+- Vendor
+- Freight forwarder for Landed cost
