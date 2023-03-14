@@ -5,7 +5,7 @@ title: EDI Freight forwarder
 description: EDI Freight forwarder setup - Modes of delivery mapping
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-25
+ms.date: 2023-03-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIFFLCVendDlvModeMapping
+ms.search.form:  SAB_EDIFFLCVendDlvModeMapping, DeliveryMode
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
