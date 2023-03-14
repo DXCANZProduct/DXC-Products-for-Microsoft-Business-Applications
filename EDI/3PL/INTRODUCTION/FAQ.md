@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL - FAQ
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-25
+ms.date: 2023-03-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form: SAB_EDIDocumentWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
