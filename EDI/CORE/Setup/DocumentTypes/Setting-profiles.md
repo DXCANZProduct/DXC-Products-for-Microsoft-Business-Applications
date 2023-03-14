@@ -49,6 +49,6 @@ Each document's Setting profile will be discussed in more detail with each docum
 
 Document setting profiles available per module:
 - [3PL](../../../3PL/SETUP/Setting-profiles.md)
-- Customer
-- Vendor
-- Freight forwarder for Landed cost
+- [Customer](../../../CUSTOMER/SETUP/Setting-profiles.md)
+- [Vendor](../../../VENDOR/SETUP/Setting-profiles.md)
+- [Freight forwarder for Landed cost](../../../FREIGHT-FORWARDER/SETUP/Setting-profiles.md)
