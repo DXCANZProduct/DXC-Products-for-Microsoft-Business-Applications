@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SalesTableListPage, SAB_EDIStagingFormRun_Cust_POC, SAB_EDICustOrderTypeMapping, SAB_EDICustOrderPurposeMapping, SAB_EDICustOrderLineChangeMapping
+ms.search.form:  SalesTableListPage, SAB_EDIStagingFormRun_Cust_POC, SAB_EDICustOrderPurposeMapping, SAB_EDICustOrderLineChangeMapping
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
