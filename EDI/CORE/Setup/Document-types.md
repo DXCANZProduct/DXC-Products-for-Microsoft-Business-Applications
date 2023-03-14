@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Setup document types
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-06
+ms.date: 2023-03-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SAB_EDIParameters, SAB_EDIDocumentTypeTable
+ms.search.form: SAB_EDIDocumentTypeTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
