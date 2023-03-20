@@ -5,7 +5,7 @@ title: EDI 3PL
 description: Introduction to EDI 3PL
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-04-11
+ms.date: 2023-03-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,7 +19,7 @@ audience: Application User
 ms.reviewer: jdutoit2
 
 # ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
+# ms.custom: 
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jdutoit2
@@ -29,6 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Introduction to 3PL EDI
 This section will provide a quick overview of the 3PL EDI module.
+3PL EDI module is not for advanced warehouse enabled (WAX) warehouses.
 
 ## Documents
 ### Core EDI documents (All trading partners)
