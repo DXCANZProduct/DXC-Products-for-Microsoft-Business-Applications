@@ -29,6 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Introduction to 3PL EDI
 This section will provide a quick overview of the 3PL EDI module. <br>
+
 3PL EDI module is not for advanced warehouse enabled (WAX) warehouses.
 
 ## Documents
