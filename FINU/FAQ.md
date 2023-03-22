@@ -72,7 +72,7 @@ Signature did not match. String to sign used was <br>
 ```
 
 #### Resolution
-AP > Payment setup > Methods of payment
+AP > Payment setup > Methods of payment <br>
 If **Enable file parameters** is set to _Yes_ on your Method of Payment, the **File format** requires a value.
 
 ### 	Generating AP payment - Total line order
@@ -80,7 +80,7 @@ If **Enable file parameters** is set to _Yes_ on your Method of Payment, the **F
 Bank sends an error for the Vendor EFT payment for issues with the total debit or credit amounts.
 
 #### Resolution
-Cash and bank management > Bank statement reconciliation > Bank accounts
+Cash and bank management > Bank statement reconciliation > Bank accounts <br>
 Select the applicable bank account and select the applicable order in field **Total line order**.
 
 ### 	Payment advice report – Vendor bank details missing
