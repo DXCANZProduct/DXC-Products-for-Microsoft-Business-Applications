@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-08
+ms.date: 2023-03-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,6 +39,7 @@ Release			| ETA
 :--			|:--
 2023-04			| 28 April 2023
 2023-07			| 31 July 2023
+2023-10     | 31 October 2023
 
 
 ## Next release
