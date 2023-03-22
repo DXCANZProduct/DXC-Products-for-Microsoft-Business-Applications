@@ -81,7 +81,14 @@ Bank sends an error for the Vendor EFT payment for issues with the total debit o
 
 #### Resolution
 Cash and bank management > Bank statement reconciliation > Bank accounts <br>
-Select the applicable bank account and select the applicable order in field **Total line order**.
+Select the applicable bank account and select the applicable order in field **Total line order**. <br> 
+Options are:
+- Total net, total credit, total debit
+- Total net, total debit, total credit
+- Total credit, total debit, total net
+- Total debit, total credit, total net
+
+[User guide](Setup/ACCOUNTS-PAYABLE/Vendor-payments.md)
 
 ### 	Payment advice report – Vendor bank details missing
 #### Issue
