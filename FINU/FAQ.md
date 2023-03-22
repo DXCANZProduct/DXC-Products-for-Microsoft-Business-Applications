@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - FAQ 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-02-09
+ms.date: 2023-03-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
