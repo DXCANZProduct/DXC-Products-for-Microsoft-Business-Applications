@@ -5,7 +5,7 @@ title: DXC Item Creation Wizard
 description: DXC Item Creation Wizard -Setting up for Item Status  
 author: helenho
 manager: Kym Parker
-ms.date: 2021-03-02
+ms.date: 2023-03-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,4 +58,4 @@ For information on transitioning between items statuses see [Managing item statu
 |:---|:---|     
 |  **To status**  | Status value a released product can be updated to, based on the current status value. |
 
-*Note: Attempting to update a status to a value that has not been defined as an allowe status transition will return an error preventing the action from being completed.*
+*Note: Attempting to update a status to a value that has not been defined as an allowed status transition will return an error preventing the action from being completed.*
