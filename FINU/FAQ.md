@@ -43,7 +43,8 @@ A list of installed models will be displayed on the **Version** tab.  Scroll to 
 
 ###   Product is installed but functionality not visible
 If the product is available in About > Version, check if it has been enabled in **Feature management**. <br>
-If you don't see **Finance utilities**, click **Check for updates**.
+If you don't see **Finance utilities**, click **Check for updates**. <br>
+**Enable** the feature. <br>
 
 ![Feature management](Images/FAQ_1.png "Feature management")
 
