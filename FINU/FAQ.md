@@ -41,7 +41,7 @@ A list of installed models will be displayed on the **Version** tab.  Scroll to 
 
 ## 	Troubleshooting
 
-###   Product in installed but forms not visible
+###   Product is installed but functionality not visible
 If the product is available in About > Version, check if it has been enabled in **Feature management**. <br>
 If you don't see **Finance utilities**, click **Check for updates**.
 
