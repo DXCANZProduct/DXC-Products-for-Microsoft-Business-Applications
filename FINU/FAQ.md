@@ -40,6 +40,13 @@ A list of installed models will be displayed on the **Version** tab.  Scroll to 
 
 
 ## 	Troubleshooting
+
+###   Product in installed but forms not visible
+If the product is available in About > Version, check if it has been enabled in **Feature management**. <br>
+If you don't see 'Finance utilities', click 'Check for updates'.
+
+![Feature management](Images/FAQ_1.png "Feature management")
+
 ### 	Bank statement doesn’t import
 
 #### Issue
