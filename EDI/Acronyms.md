@@ -27,7 +27,7 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# Definitions and Acronyms
+## Definitions and Acronyms
 
 The following Definitions and Acronyms are used in the EDI module user guides.
 
