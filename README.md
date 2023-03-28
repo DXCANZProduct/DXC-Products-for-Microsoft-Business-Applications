@@ -21,7 +21,9 @@ Please select the applicable product from below:
 
 ### Copyright Notice
 Copyright © Microsoft Business Applications, DXC Technology Company 2018 All rights reserved. <br>
+<br>
 This publication may not be copied, in whole or in part, without DXC consent. <br>
 DXC, the DXC logo, and all DXC brand names and product names in this document are either trademarks or registered trademarks of DXC. <br>
 All other trademarks belong to their respective owners. <br>
+<br>
 Microsoft Dynamics is a trademark of Microsoft Corporation in the United States of America and/or other countries. 
