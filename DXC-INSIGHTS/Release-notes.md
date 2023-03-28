@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: EDI
-description: EDI - Release notes
-author: jdutoit2
+title: DXC Insights
+description: DXC Insights - Release notes
+author: Peter Musumeci
 manager: Kym Parker
-ms.date: 2023-03-09
+ms.date: 2023-03-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,10 +13,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-audience: Application User
+ms.search.form: 
+audience: Application User/ Azure Administrators
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Peter Musumeci
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
