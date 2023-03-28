@@ -174,5 +174,5 @@ See our FAQ for general information and troubleshooting.
 Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
 
 ## Brochure
-Brochure - (Automate and leverage your solution with DXC Finance Utilities for Dynamics 365)[https://dynamics.dxc.technology/microsoft-dynamics-365/dxc-finance-utilities-for-dynamics-365-brochure]
+Brochure - [Automate and leverage your solution with DXC Finance Utilities for Dynamics 365](https://dynamics.dxc.technology/microsoft-dynamics-365/dxc-finance-utilities-for-dynamics-365-brochure)
 
