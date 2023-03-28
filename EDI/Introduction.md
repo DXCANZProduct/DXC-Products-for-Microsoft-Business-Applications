@@ -51,5 +51,8 @@ Topics: <br>
 - [EDI Freight forwarder for Landed cost](../EDI/FREIGHT-FORWARDER/INTRODUCTION/Introduction.md)
 - [EDI Integration systems module](../EDI/INTEGRATION/INTRODUCTION/Introduction.md)
 
+## Definitions and Acronyms
+Definitions and Acronyms can be found [here](Acronyms.md).
+
 ## New ideas
 Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
