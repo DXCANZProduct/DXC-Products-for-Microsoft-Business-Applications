@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [Forex contract]
-description: [Forex contract setup]
-author: [jdutoit2]
+title: Forex contract
+description: Forex contract setup - Forex contract parameters
+author: jdutoit2
 manager: Kym Parker
-ms.date: 08/04/2022
+ms.date: 2023-03-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Forex contract]
+ms.search.form: SAB_ForexContractParameters
 audience: [Application User]
 # ms.devlang: 
 ms.reviewer: [jdutoit2]
@@ -50,4 +50,4 @@ Use the **Number sequences** tab on the **Forex contract parameters** page to as
 
 **Reference** 	                  | **Description**
 :-------------------------------- |:-------------------------------------
-**Forex number**                  |	Specify the number sequence used to allocate Forex Contract ID.
+**Forex number**                  |	Specify the number sequence used to allocate Forex Contract ID. <br> Limit of 10 characters.
