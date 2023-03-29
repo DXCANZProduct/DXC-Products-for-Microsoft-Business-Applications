@@ -34,9 +34,9 @@ This document describes the features that are either new or changed in the relea
 
 Next release is planned for 28 April 2023.
 
-### Release ??
+### Release insert build number 
 
-DXC Insights ????? runs on the following Microsoft releases
+DXC Insights insert build number  runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
@@ -45,6 +45,6 @@ Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
 
-#### Build ????
+#### Build insert numeric of build
 Release date: date <br> 
 
