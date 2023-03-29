@@ -5,7 +5,7 @@ title: DXC Insights
 description: DXC Insights - Frequently asked questions
 author: Peter Musumeci
 manager: Kym Parker
-ms.date________: 2023-03-27
+ms.date      : 2023-03-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
