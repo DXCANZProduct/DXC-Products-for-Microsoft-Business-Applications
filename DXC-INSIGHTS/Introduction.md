@@ -50,7 +50,7 @@ Application Insights provides other features including, but not limited to: <br>
     -[Smart Detection](https://learn.microsoft.com/en-us/azure/azure-monitor/app/proactive-diagnostics) – automatic failure and anomaly detection through proactive telemetry analysis.
 Topics: <br>
 - [Set up Insights](../DXC-INSIGHTS/setup.md)
-- [Reoccurring monitoring](..../DXC-INSIGHTS/Reoccurring monitoring.md)
+- [Reoccurring monitoring](.../DXC-INSIGHTS/Reoccurring monitoring.md)
 - [EDI Vendor module](../EDI/VENDOR/INTRODUCTION/Introduction.md)
 - [EDI 3PL module](../EDI/3PL/INTRODUCTION/Introduction.md)
 - [EDI Freight forwarder for Landed cost](../EDI/FREIGHT-FORWARDER/INTRODUCTION/Introduction.md)
