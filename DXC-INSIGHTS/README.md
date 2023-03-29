@@ -1,1 +1,1 @@
-Repository for DXC EDI
+Repository for DXC Insights
