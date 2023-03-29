@@ -51,7 +51,7 @@ Application Insights provides other features including, but not limited to: <br>
 Topics: <br>
 - [Set up Insights](../DXC-INSIGHTS/setup.md)
 - [Reoccurring monitoring](.../DXC-INSIGHTS/Reoccurring monitoring.md)
-- [EDI Vendor module](../EDI/VENDOR/INTRODUCTION/Introduction.md)
+- [Reoccurring monitoring](../DXC-INSIGHTS/Reoccurring monitoring.md)
 - [EDI 3PL module](../EDI/3PL/INTRODUCTION/Introduction.md)
 - [EDI Freight forwarder for Landed cost](../EDI/FREIGHT-FORWARDER/INTRODUCTION/Introduction.md)
 - [EDI Integration systems module](../EDI/INTEGRATION/INTRODUCTION/Introduction.md)
