@@ -33,7 +33,7 @@ The [release notes](Release-notes.md) describes the features that are either new
 
 ## Introduction
 
-**1Potential of DXC Insights for Microsoft Dynamics 365**
+**Potential of DXC Insights for Microsoft Dynamics 365**
 
 DXC Insights will send telemetry recording which user, time to load, and what menu item was used to an Azure Application Insights instance. It will record any errors that occur, saving error messages and call stacks along with reoccurring monitoring data. DXC Insights is also able to record exceptions caught during Dual-write sync.
 Application Insights collects the telemetry and helps analyze operation and performance of the application. You can use this information to identify problems that might be occurring or to identify improvements to the application that would most affect users.
