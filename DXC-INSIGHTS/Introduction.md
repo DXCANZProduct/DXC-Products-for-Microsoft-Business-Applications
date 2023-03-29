@@ -48,7 +48,7 @@ Application Insights provides other features including, but not limited to: <br>
     -[GitHub or Azure DevOps integration](https://learn.microsoft.com/en-us/azure/azure-monitor/app/work-item-integration) – create [GitHub](https://learn.microsoft.com/en-us/training/paths/github-administration-products/) or [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/) work items in context of Application Insights data.<br>
     -[Usage](https://learn.microsoft.com/en-us/azure/azure-monitor/app/usage-overview) – understand which features are popular with users and how users interact and use your application.<br>
     -[Smart Detection](https://learn.microsoft.com/en-us/azure/azure-monitor/app/proactive-diagnostics) – automatic failure and anomaly detection through proactive telemetry analysis.<br>
-### Topics: ### <br>
+### Topics:<br>
 - [Set up Insights](../DXC-INSIGHTS/setup.md)
 - [Reoccurring monitoring](.../DXC-INSIGHTS/Reoccurring_monitoring.md)
 - [EDI 3PL module](../EDI/3PL/INTRODUCTION/Introduction.md)
