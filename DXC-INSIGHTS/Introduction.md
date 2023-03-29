@@ -43,6 +43,7 @@ With the data sent from DXC Insights, you can use Azure Application Insights to:
   - Proactively understand how an application is performing.
   - Reactively review application execution data to determine the cause of an incident
 Application Insights provides other features including, but not limited to: <br>
+
 	  -[Live Metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/app/live-stream) – observe activity from your deployed application in real time.<br>
     -[Availability](https://learn.microsoft.com/en-us/azure/azure-monitor/app/availability-overview) - also known as “Synthetic Transaction Monitoring”, probe your applications external endpoint(s) to test the overall availability and responsiveness over time.<br>
     -[GitHub or Azure DevOps integration](https://learn.microsoft.com/en-us/azure/azure-monitor/app/work-item-integration) – create [GitHub](https://learn.microsoft.com/en-us/training/paths/github-administration-products/) or [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/) work items in context of Application Insights data.<br>
