@@ -15,7 +15,7 @@ The overview page makes use of the data from DXC Insights to give a quick overvi
 You get an overview of the most exhaustive menu items/forms to open and run, and jump into analytics with [Performance view](https://learn.microsoft.com/en-us/azure/azure-monitor/app/tutorial-performance) 
 – get deep insights into how your Application or API and downstream dependencies are performing and find for a representative sample to [explore end to end](https://learn.microsoft.com/en-us/azure/azure-monitor/app/transaction-diagnostics). 
 
-![Performance](/DXC-INSIGHTS/IMAGES/Performance.png))
+![Performance](/DXC-INSIGHTS/IMAGES/Performance.png)
 
 ### 3.	Failures
 Get an overview of the exceptions that are thrown due to errors on the [Failure view](https://learn.microsoft.com/en-us/azure/azure-monitor/app/tutorial-runtime-exceptions) – understand which components or actions are generating failures and triage errors and exceptions. 
