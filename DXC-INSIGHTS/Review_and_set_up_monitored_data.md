@@ -23,7 +23,7 @@ The built-in views are helpful to track application health proactively and for r
 
 ![failures](/DXC-INSIGHTS/IMAGES/Failures.png)
 
-#### 3.1. Dual-write exceptions
+#### Dual-write exceptions
 With the “Dual-write” telemetry logging enabled [Section 2.4](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/PM_edits/DXC-INSIGHTS/setup.md#4azure-application-insights-telemetry-configuration), you can add an additional filter on the ‘Failures’ view to search for exceptions that get triggered during dual-write sync. 
 On the ‘Failures’ view add a new filter pill, select ‘Exception Type’ as the property, and select ‘Dual-write’ as the value. Click ‘Refresh’ and a list of dual-write exceptions will get listed.
 
