@@ -51,5 +51,16 @@ Topics: <br>
 - [EDI Freight forwarder for Landed cost](../EDI/FREIGHT-FORWARDER/INTRODUCTION/Introduction.md)
 - [EDI Integration systems module](../EDI/INTEGRATION/INTRODUCTION/Introduction.md)
 
+## Definitions and Acronyms
+Definitions and Acronyms can be found [here](Acronyms.md).
+
 ## New ideas
 Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
+
+## Brochures
+The following brochures are available:
+- [EDI Overview](https://dynamics.dxc.technology/microsoft-dynamics-365/overview-dxc-electronic-data-interchange-edi-for-microsoft-dynamics-brochure)
+- [EDI for Customer](https://dynamics.dxc.technology/microsoft-dynamics-365/customer-dxc-electronic-data-interchange-edi-for-microsoft-dynamics-brochure)
+- [EDI for Vendor](https://dynamics.dxc.technology/microsoft-dynamics-365/vendor-dxc-electronic-data-interchange-edi-brochure)
+- [EDI for 3PL warehouse](https://dynamics.dxc.technology/microsoft-dynamics-365/3pl-dxc-electronic-data-interchange-edi-for-microsoft-dynamics-brochure)
+- [EDI for Freight forwarder - Landed cost](https://dynamics.dxc.technology/microsoft-dynamics-365/freight-forwarder-for-landed-cost-dxc-electronic-data-interchange-edi-for-dynamics)

@@ -18,3 +18,15 @@ Please select the applicable product from below:
 
 ### New ideas
 - Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
+
+### Copyright Notice
+©2013-2023. Copyright DXC Eclipse Pty Limited ACN 051 758 199.  All rights reserved.
+
+This document may not be distributed or copied, in whole or in part, without prior consent of DXC Eclipse Pty Limited or DXC Technology.
+
+Logos, brand names and product names used in this document are the trademarks or registered trademarks of DXC Technology or DXC Eclipse Pty Limited or their respective third-party owners.
+
+Microsoft Dynamics is a trademark of Microsoft Corporation in the United States of America and/or other countries.
+
+### EULA
+The End User License Agreement (EULA) can be found [here](https://dxc.com/au/en/practices/microsoft/end-user-license-agreement).

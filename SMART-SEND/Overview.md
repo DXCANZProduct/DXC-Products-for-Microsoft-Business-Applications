@@ -5,7 +5,7 @@ title: Smart Send
 description: Smart Send - Overview
 author: Liam Coll
 manager: Kym Parker
-ms.date: 2021-07-29
+ms.date: 2023-03-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -100,3 +100,8 @@ The following setup is required to configure Smart Send:
 
 ## New ideas
 Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
+
+## Brochures
+The following brochures are available:
+- [DXC Smart Business Form Email Manager for Microsoft Dynamics 365](https://dynamics.dxc.technology/microsoft-dynamics-365/dxc-smart-business-form-email-manager-for-microsoft-dynamics-365-for-finance-and-operations)
+

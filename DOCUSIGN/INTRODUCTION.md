@@ -5,7 +5,7 @@ title: Docusign
 description: Introduction to Docusign
 author: ndavidson
 manager: Kym Parker
-ms.date: 2020-01-12
+ms.date: 2023-03-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -67,3 +67,8 @@ The following forms are available under **Organization administration > Inquirie
 
 ## New ideas
 Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
+
+## Brochures
+The following brochures are available:
+- [DXC Solutions for DocuSign and Dynamics 365](https://dynamics.dxc.technology/microsoft-dynamics-365/dxc-solutions-for-docusign-and-dynamics-365-brochure)
+
