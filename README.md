@@ -8,6 +8,7 @@ Please select the applicable product from below:
 - [DXC Electronic Data Interchange (EDI)](EDI/Introduction.md)
 - [DXC Finance utilities](FINU/INTRODUCTION.md) (specific to ANZ region)
 - [DXC Forex contracts](FOREX-CONTRACT/Introduction.md)
+- [DXC Insights](DXC-INSIGHTS/Introduction.md)
 - [DXC Item creation wizard](DXC-ITEM-CREATION-WIZARD/INTRODUCTION.md)
 - [DXC Smart Business Form Email Manager (Smart Send)](SMART-SEND/Overview.md)
 - [DXC Solutions for DocuSign and Dynamics 365](DOCUSIGN/INTRODUCTION.md)
