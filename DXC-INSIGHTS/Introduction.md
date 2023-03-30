@@ -52,9 +52,9 @@ Application Insights provides other features including, but not limited to: <br>
 ### Topics:<br>
 - [How to Set up DXC Insights](../DXC-INSIGHTS/setup.md)
 - [Reoccurring monitoring](../DXC-INSIGHTS/Reoccurring_monitoring.md)
-- [Review and set up data monitoring](../DXC-INSIGHTS/monitoring.md)
-- [EDI Freight forwarder for Landed cost](../EDI/FREIGHT-FORWARDER/INTRODUCTION/Introduction.md)
-- [EDI Integration systems module](../EDI/INTEGRATION/INTRODUCTION/Introduction.md)
+- [Review and set up data monitoring](../DXC-INSIGHTS/Review_and_set_up_monitored_data.md)
+- [FAQ](../DXC-INSIGHTS/FAQ.md)
+
 
 ## New ideas
 Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
