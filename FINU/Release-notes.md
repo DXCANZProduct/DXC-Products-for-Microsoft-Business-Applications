@@ -60,7 +60,7 @@ Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dyn
 > Note: From **10.0.31** MS has added a feature called **New voucher and date for new transactions in the advanced bank reconciliation bank statement**. <br>
 > This adds new std. setting **Set the booking date as default accounting date for new transactions** to Cash and bank management parameters. <br>
 > If this is set to _Yes_ it will override Finance utilities posting date **Today's date** for mark as new transactions and post the new transactions at the booking date. Thus if you want to use **Today's date** for new transactions, ensure the new setting is set to _No_ <br>
-> This feature is not supported for creating new Vendor transactions in the Bank reconciliation. If the feature is enabled, no vendor subledger is created when the bank statement is posted. Therefor don't enable this feature if you require this functionality <br>
+> This feature is not supported for creating **new Vendor transactions** in the Bank reconciliation. If the feature is enabled, _no vendor subledger_ is created when the bank statement is posted. Therefor don't enable this feature if you require this functionality <br>
 ![Bank reconciliation worksheet](Images/ReleaseNotes_20230131_4.png "Bank reconciliation worksheet - Mark as new Vendor")
 
 #### Build 10.0.29.202301315
