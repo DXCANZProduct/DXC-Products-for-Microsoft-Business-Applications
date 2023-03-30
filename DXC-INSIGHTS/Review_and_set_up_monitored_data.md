@@ -24,7 +24,7 @@ The built-in views are helpful to track application health proactively and for r
 ![failures](/DXC-INSIGHTS/IMAGES/Failures.png)
 
 #### 3.1. Dual-write exceptions
-With the “Dual-write” telemetry logging enabled [Section 2.4] (https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/PM_edits/DXC-INSIGHTS/setup.md#4azure-application-insights-telemetry-configuration), you can add an additional filter on the ‘Failures’ view to search for exceptions that get triggered during dual-write sync. 
+With the “Dual-write” telemetry logging enabled [Section 2.4](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/PM_edits/DXC-INSIGHTS/setup.md#4azure-application-insights-telemetry-configuration), you can add an additional filter on the ‘Failures’ view to search for exceptions that get triggered during dual-write sync. 
 On the ‘Failures’ view add a new filter pill, select ‘Exception Type’ as the property, and select ‘Dual-write’ as the value. Click ‘Refresh’ and a list of dual-write exceptions will get listed.
 
 ![Dual_Write](/DXC-INSIGHTS/IMAGES/Dual_Write.png)
@@ -36,6 +36,6 @@ You can make a transaction search on the events in system based on data received
 
 ### 5.	Metrics
 You can monitor performance and health metrics of SQL Database
-Read more on what it can do here. https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?tabs=net
+  Read more about [Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?tabs=net) and what it can do
 
 ![Metrics.png](/DXC-INSIGHTS/IMAGES/Metrics.png)
