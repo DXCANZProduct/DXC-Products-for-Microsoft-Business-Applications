@@ -74,6 +74,7 @@ Number	| Name		 | Description
 :--	|:--		 |:--
 10532	| Inbound files <br> Outbound files	| When file was processed by batch **Log** didn't show the log message.
 12628	| Trading partner documents	| **EDI > Inquiries and reports > Trading partner documents**. Form couldn't open if environment contains a large number of trading partners (example 3000 EDI trading partners).
+12715	| Document type - XML and JSON templates | Removed automatic upper case applied to mapping name. For example renaming Currency**C**ode to Currency**c**ode, used to automatically revert to Currency**C**ode and processing would fail if the incoming document field was called Currency**c**ode.
 
 # Current version
 
