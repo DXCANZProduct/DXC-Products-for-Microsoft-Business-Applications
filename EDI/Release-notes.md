@@ -51,6 +51,7 @@ Number	| Functionality	  	| Reason
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--
 12615	| Sales invoice		| Additional Sales order header fields added to Sales invoice line fields: <br> • Sales responsible <br> • Sales taker
+12647	| New entity 'EDI sales order entity' | New entity **EDI sales order entity** (SAB_EDISalesTable) provides users the ability to populate this table for sales order orders not created via EDI. This is useful for cutover sales orders where a customer is not set to receive EDI ASN or Sales invoice for non-EDI Sales orders.
 
 **Vendor module**	
 
@@ -71,7 +72,8 @@ Number	| Functionality	  	| Reason
 
 Number	| Name		 | Description
 :--	|:--		 |:--
-
+10532	| Inbound files <br> Outbound files	| When file was processed by batch **Log** didn't show the log message.
+12628	| Trading partner documents	| **EDI > Inquiries and reports > Trading partner documents**. Form couldn't open if environment contains a large number of trading partners (example 3000 EDI trading partners).
 
 # Current version
 
