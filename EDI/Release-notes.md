@@ -76,6 +76,12 @@ Number	| Name		 | Description
 12628	| Trading partner documents	| **EDI > Inquiries and reports > Trading partner documents**. Form couldn't open if environment contains a large number of trading partners (example 3000 EDI trading partners).
 12715	| Document type - XML and JSON templates | Removed automatic upper case applied to mapping name. For example renaming Currency**C**ode to Currency**c**ode, used to automatically revert to Currency**C**ode and processing would fail if the incoming document field was called Currency**c**ode.
 
+**Vendor module**
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+12747	| Vendor purchase order acknowledgement (POA) | When the Vendor purchase order acknowledgement is processed from import to staging, and there are two vendors with the same GLN (two different legal entities), it would pick up the first Vendor GLN's Company to create the staging record. <br> And then tries to find the purchase order in the incorrect company when processing to target.
+
 # Current version
 
 Next release is planned for 28 April 2023.
