@@ -44,6 +44,7 @@ Release date: TBD <br>
 
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--	
+12869	| Azure connection	| New field **Folder name** for Azure connections adds the ability to set an azure folder for incoming and outgoing paths. <br> **Test path connection** excludes folder names.
 
 **Customer module**	
 
@@ -55,12 +56,13 @@ Number	| Functionality	  	| Reason
 
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--
+12897	| Vendor purchase order acknowledgement (POA) | When **Line item - added** is used to create a new line on the D365 Purchase order (PO), the PO line's **Site** and **Warehouse** will be set by POA staging line if these fields are provided, else set by the Site and Warehouse on the PO header.
 
 **3PL module**	
 
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--
-12403	| Product master	| New document **Product master** in 3PL module. <br> Can be used to provide information about new products and changes to existing products that apply to the warehouse. Products can be manually flagged and/or use periodic job to flag as applicable to the warehouse. <br> [Setup] and [Processing].
+12403	| Product master	| New document **Product master** in 3PL module. <br> Can be used to provide information about new products and changes to existing products that apply to the warehouse. Products can be manually flagged and/or use periodic job to flag as applicable to the warehouse. <br> [Setup]() and [Processing]().
 
 # Current version
 
