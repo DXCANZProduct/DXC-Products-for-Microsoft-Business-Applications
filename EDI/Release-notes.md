@@ -57,12 +57,21 @@ Number	| Functionality	  	| Reason
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--
 12897	| Vendor purchase order acknowledgement (POA) | When **Line item - added** is used to create a new line on the D365 Purchase order (PO), the PO line's **Site** and **Warehouse** will be set by POA staging line if these fields are provided, else set by the Site and Warehouse on the PO header.
+12898	| Vendor advanced shipping notice (ASN) | Use the purchase order line's **location** when creating the Arrival journal. Previously used the default location.
 
 **3PL module**	
 
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--
 12403	| Product master	| New document **Product master** in 3PL module. <br> Can be used to provide information about new products and changes to existing products that apply to the warehouse. Products can be manually flagged and/or use periodic job to flag as applicable to the warehouse. <br> [Setup]() and [Processing]().
+
+<ins>Bug fixes</ins>
+
+**Core module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+
 
 # Current version
 
