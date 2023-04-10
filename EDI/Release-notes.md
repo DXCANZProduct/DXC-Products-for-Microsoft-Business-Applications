@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-09
+ms.date: 2023-04-11
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,6 +29,38 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
+
+# Next version
+
+### Release 10.0.29.202304TBD
+
+#### Build 10.0.29.202304TBD
+
+Release date: TBD <br> 
+
+<ins>New features</ins>
+
+**Core module**	- Applies to all modules
+
+Number	| Functionality	  	| Reason
+:--	|:--		  	|:--	
+
+**Customer module**	
+
+Number	| Functionality	  	| Reason
+:--	|:--		  	|:--
+12615	| Sales invoice		| Additional Sales order header fields added to Sales invoice line fields: <br> • Sales responsible <br> • Sales taker
+
+**Vendor module**	
+
+Number	| Functionality	  	| Reason
+:--	|:--		  	|:--
+
+**3PL module**	
+
+Number	| Functionality	  	| Reason
+:--	|:--		  	|:--
+12403	| Product master	| New document **Product master** in 3PL module. <br> Can be used to provide information about new products and changes to existing products that apply to the warehouse. Products can be manually flagged and/or use periodic job to flag as applicable to the warehouse. <br> [Setup] and [Processing].
 
 # Current version
 
