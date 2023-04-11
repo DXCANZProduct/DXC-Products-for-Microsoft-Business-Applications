@@ -2,10 +2,10 @@
 # required metadata
 
 title: EDI 3PL
-description: EDI 3PL Setup - Document type Setting profiles - Shipment advice - Purchase order
+description: EDI 3PL Setup - Document type Setting profiles - Product master
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-18
+ms.date: 2023-04-11
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,22 +27,22 @@ ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
 
-# 3PL document type setting profiles - Shipment advice - Purchase order
+# 3PL document type setting profiles - Product master
 
 Users can access the form by navigating to **EDI > Setup > Document types**.
 
-- To create a new record, select document type **Shipment advice - Purchase order**.
+- To create a new record, select document type **Product master**.
 - Select the **New** button in the **Settings profiles** FastTab.
 - Specify the **Settings profile id** and **Description** of the profile.
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details.
 
 **Field**             |	**Description**	                          | **Options/Example**
 :-------              |:-------                                   |:----------
-**New indicator**     |	When sending a purchase order advice, specify the indicator to notify the 3PL warehouse that the order is a new record.	| NPO
-**Cancel Indicator**  |	Specify the indicator to notify the 3PL warehouse that the purchase order advice has been cancelled. <br> Note: To cancel a purchase order advice, navigate to the receipts list journal, select the record, then select cancel.	| XPO
+**New indicator**     |	Specify the indicator to notify the 3PL warehouse that the product is a new record.	| N
+**Change Indicator**  |	Specify the indicator to notify the 3PL warehouse of changes to the product.	| C
 
 ## Where used
-The **Setting profile** can be assigned on the Outgoing documents FastTab to document type **Shipment advice - Purchase order** for the 3PL Trading partner at **EDI > Setup > Trading partners**.
+The **Setting profile** can be assigned on the Outgoing documents FastTab to document type **Product master** for the 3PL Trading partner at **EDI > Setup > Trading partners**.
 
 ## Data entity
-- EDI Settings Shipment Advice - Purchase order
+- EDI settings - Product master
