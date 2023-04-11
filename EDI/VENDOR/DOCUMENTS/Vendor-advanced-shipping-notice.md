@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor Documents - Vendor advanced shipping notice
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-16
+ms.date: 2023-04-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -61,7 +61,7 @@ The following setup is prerequisites for the vendor advanced shipping notice
 Inbound files have the following three steps:
 1. **Import** - Imported file can be viewed in **EDI > Files > Inbound files**
 2. **Import to staging** - Imported file is processed to staging record/s. The staging record/s can be viewed at **EDI > Documents > Vendor documents > Vendor advanced shipping notice**
-3. **Staging to target** - The staging record/s is processed to target. If the ASN is succefully processed a target D365 arrival journal, product receipt or load will be created for the purchase order(s).
+3. **Staging to target** - The staging record/s is processed to target. If the ASN is succefully processed a target D365 arrival journal, product receipt or load will be created for the purchase order(s). The arrival journal's location use the purchase order line's location.
 
 ### Create document
 ![alt text](../../CORE/Image/Create_Document.png "Create document")
