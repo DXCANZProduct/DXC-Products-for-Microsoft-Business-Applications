@@ -5,7 +5,7 @@ title: EDI Connection setup
 description: Overview of the EDI connection methods
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-02-03
+ms.date: 2023-04-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -220,6 +220,7 @@ Select **Populate paths** on the Action pane to create the incoming and outgoing
 | **Type**                				| The type of path: <br> • **Inbound** - The path the EDI document files will be retrieved from <br> • **Archive** - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path <br> • **Error** - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path |
 | **Search mode**		     		    | Specify to use either the Trading partner’s **Search mask** as prefix or suffix to identify ‘who’ the file is from. <br> Options: <br> **File name must start with** – Filename must start with Trading partner’s Search mask <br> **File name must end with** – Filename must end with Trading partner’s Search mask |
 | **Azure blob storage container name**	| Specify the blob storage container |
+| **Folder name**                     | Where applicable, specify the folder name |
 
 Outgoing documents have a single path that is required to be defined
 
@@ -227,8 +228,10 @@ Outgoing documents have a single path that is required to be defined
 | :-------------------------------- 	|:-------------------------------------| 
 | **EDI document type**             	| Specify the **Document type** the path relates to |
 | **Azure blob storage container name**	| Specify the blob storage container |
+| **Folder name**                     | Where applicable, specify the folder name |
 
 > Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br>The results will be shown on the far right of the grid.*
+> **Folder name** is excluded in **Test path connection**.
 
 ### Web services
 This is a base framework that will allow developers to build custom connections to consume external APIs and integrate them with the module. Out of the box the module does not include any functional connections and only provides development examples as a guide. 
