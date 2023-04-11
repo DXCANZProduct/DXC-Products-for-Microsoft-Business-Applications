@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: EDI Integration
-description: EDI Integration Documents - Customer
+title: EDI 3PL
+description: EDI 3PL Documents - Product master
 author: jdutoit2
 manager: Kym Parker
-ms.date: 20212-08-12
+ms.date: 2023-04-11
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form: SAB_EDI3PLProductConfiguration, EcoResProductDetailsExtendedGrid, SAB_EDIStagingFormRun_ProductMaster
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -27,44 +27,50 @@ ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
 
-# Customer
+# Product master
 
-Integration systems Trading partner (example online sales site) may require customer data.
+3PL warehouses may require product data.
 
-The following subsections will describe how to view, process and send Customer to applicable Integration system Trading partners. <br>
+The following subsections will describe how to view, process and send Product data to applicable 3PL Trading partners. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed. <br>
 
 ## Prerequisites
-The following setup is prerequisites for the Customer document:
+The following setup is prerequisites for the 3PL document:
 
+### Document type setup
+EDI > Setup > Document types: Product master
 1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-2. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
-3. If the Integration systems [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
-4. Add and enable the **Customer** document to the [Integration system trading partner](../SETUP/Trading-partner.md) and select the applicable:
+1. Create [Setting profile](../SETUP/SETTING-PROFILES/Product-master.md) for the document.
+1. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
+
+### Trading partners
+EDI > Setup > Trading partners
+1. If the warehouse [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+1. Add and enable the **Product master** document to the [Warehouse trading partner](../SETUP/Trading-partner.md) and select the applicable:
     - Template
+    - Setting profile
     - File name setup
     - Change tracking
-5. Create a new batch job for the trading partner and document in [Export batch jobs](../../CORE/Setup/EDI-Batches.md#export-batch-jobs)
+1. Create a new batch job for the trading partner and document in [Export batch jobs](../../CORE/Setup/EDI-Batches.md#export-batch-jobs)
 
 ## Processing
 
 ### Change tracking
 
-Integration documents are created by enabling change tracking on the trading partner's outgoing document(s).
+Master data documents are created by enabling change tracking on the trading partner's outgoing document(s).
 The document change tracking's **Full** can be set to _Yes_, in order to send all the records for the tracked table.
 Once the staging record has been created for the full version, the Document change tracking's **Full** field will automatically update to _No_ in order to send changes with the next batch run. <br> 
 Document change tracking's **Update version** is also updated each time a staging record is created. Only changes after the **Update version** are added in the staging record.
 
 If required to send full set of data again, the trading partner's document change tracking's **Full** can be set to _Yes_ again.
 
-The following tables are tracked for the **Customer** document:
-- CustTable
-- DirPartyTable
-- LogisticsElectronicAddress
+The following tables are tracked for the **Product master** document:
+- InventTable
+- InventDim
 
 ## View staging table records
-To view the Customer staging records, go to **EDI > Documents > Integration systems documents > Master data > Out > Customer**. 
-Use this page to review staging and process EDI Customer documents to an Outbound file.
+To view the staging records, go to **EDI > Documents > 3PL documents > Master data > Product master**. 
+Use this page to review staging and process EDI Product master documents to an Outbound file.
 
 ### List page
 The following EDI fields are available on the list page.
