@@ -5,7 +5,7 @@ title: EDI Integration
 description: EDI Integration Documents - Customer
 author: jdutoit2
 manager: Kym Parker
-ms.date: 20212-08-12
+ms.date: 2022-08-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
