@@ -5,7 +5,7 @@ title: EDI Trading partners
 description: Introduction to EDI trading partners
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-07-20
+ms.date: 2023-04-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -72,6 +72,8 @@ EDI contains the following documents pertaining to 3PL Trading partners.
 		- Transfer Order – Ship transfer order
 		- Return Order – Send return order
 		- Voyage (Landed cost) – Send to EDI
+	- Master data - Allows D365 to send master data information to the 3PL, triggered by export batch jobs and change tracking on the document for the Trading partner:
+		- Product master - EDI 3PL product setup indicates if the product applies to the warehouse 
 - Inbound
 	- Picking list Registration – Allows a 3PL to send picking list registration which in turns posts the picking list registration in D365
 		- Sales Order
