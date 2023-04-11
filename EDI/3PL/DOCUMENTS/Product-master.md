@@ -80,15 +80,16 @@ The following EDI fields are available on the list page.
 **EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
 **Company**             | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
+**Template Id**                 | The EDI template that will be used to create the outbound file
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
-**Trading partner account**     | Integration systems account assigned to the staging record.
-**Trading partner GLN**         | The Integration system’s global location number is shown here.
+**Trading partner account**     | 3PL account assigned to the staging record.
+**Trading partner GLN**         | The 3PL’s global location number is shown here.
 **Update version**              | Change tracking's Update version for the staging record.
 **Created Date and Time**       | The date and time the selected record was created in the staging table.
 **Received**                    | Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
 
 ### Buttons
-The following buttons are available on the **Customer** Action Pane, tab **Master data - Customer**.
+The following buttons are available on the **Product master**'s Action Pane, tab **Product master to 3PL**.
 
 **Button**	                    | **Description**
 :---                            |:----
@@ -102,7 +103,7 @@ The following buttons are available on the **Customer** Action Pane, tab **Maste
 **Reset template**	            | Reset the template used to create the outbound file. <br> Only enabled where the **Staging to target status** is set to _Not started_.
 **Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
 
-The following buttons are available on the **Customer**'s Action Pane, tab **Acknowledgement**.
+The following buttons are available on the **Product master**'s Action Pane, tab **Acknowledgement**.
 The **Acknowledgement** tab is available on all outgoing documents staging pages and enables the user to view the **Functional acknowledgement inbound** that has been received and processed for the outbound document.
 
 **Button**	                    | **Description**
@@ -138,14 +139,24 @@ The following EDI Line staging fields are available on the lines page.
 
 **Field**	                | **Description**	                                        | **Source D365 table and field**
 :---                        |:---                                                       |:---
-**Customer account**        | Customer's account number                                 | Customer - Customer account
-**Name**                    | Customer's name                                           | Customer - Name
-**Invoicing and delivery on hold**  | Indicates if the customer is on hold for invoicing and delivery   | Customer - Invoicing and delivery on hold
-**Currency**                | Customer's currency                                       | Customer - Currency
-**Mode of delivery**        | Customer's mode of delivery                               | Customer - Mode of delivery
-**Terms of payment**        | Customer's terms of payment                               | Customer - Terms of payment
-**Method of payment**       | Customer's method of payment                              | Customer - Method of payment
-**Sales group**             | Customer's sales group                                    | Customer - Sales group
-**GST group**               | Customer's tax group                                      | Customer - Tax group
-**Site**                    | Customer's default site                                   | Customer - Site
-**Warehouse**               | Customer's default warehouse                              | Customer - Warehouse
+Status                      | Product status indicator. <br> New product: Mapped value for **New indicator**. <br> Change to product: Mapped value for **Change indicator**                    | Product master setting profile
+Item number                 | D365 item number                                          | Released products > Item number
+Product name                | D365 item number's Product name                           | Released products > Product name
+Description                 | D365 item number's Description                            | Released products > Description
+Dimension number            | Inventory dimension number                                | Inventory dimension > Dimension number
+Configuration               | Product dimenion's Configuration                          | Inventory dimension > Configuration
+Color                       | Product dimenion's Color                                  | Inventory dimension > Color
+Size                        | Product dimenion's Size                                   | Inventory dimension > Size
+Style                       | Product dimenion's Style                                  | Inventory dimension > Style
+Bar code                    | D365 item number's Bar code                               | Inventory item bar code
+Unit                        | D365 item number's Inventory unit                         | Released products > Inventory unit
+Gross depth                 | D365 item number's Gross depth                            | Released products > Gross depth
+Gross height                | D365 item number's Gross height                           | Released products > Gross height
+Gross width                 | D365 item number's Gross width                            | Released products > Gross width
+GTIN                        | D365 item number's GTIN                                   | Inventory item GTIN
+Net weight                  | D365 item number's Net weight                             | Released products > Net weight
+Tare weight                 | D365 item number's Tare weight                            | Released products > Tare weight
+Volume                      | D365 item number's Volume                                 | Released products > Volume
+Country/region              | D365 item number's Foreign trade origin Country/region    | Released products > Country/region
+Inventory stopped           | Indicates if the item has been flagged as stopped for inventory on Default order settings | Inventory item setup > Stopped
+Commodity                   | D365 item number's Commodity                              | Released products > Intrastat commodity
