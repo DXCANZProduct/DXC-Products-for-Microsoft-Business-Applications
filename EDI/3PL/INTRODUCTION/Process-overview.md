@@ -5,7 +5,7 @@ title: EDI 3PL
 description: Overview of the 3PL EDI module process
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-11-08
+ms.date: 2023-04-11
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -86,6 +86,12 @@ Various inbound documents are available for a 3PL to adjust inventory.
 - **Counting** - Compares 3PL's on-hand to D365's on hand and creates movement journals for the variances.
 - **Reconciliation** - Compares 3PL's on-hand to D365's on hand at the end of specified date and creates movement journals for the accepted variances. Has an additional EDI reconciliation page that users can manage which variances are accepted/rejected. Also has the option on including all inventory for the warehouse.
 - **Movement** - 3PL informs company of up or down quantity adjustments in inventory.
+
+## Master data
+The following outbound document existing for 3PL master data.
+- **Product master** - Advise 3PL of new products or changes to products that applies to the 3PL warehouses. The product is flagged as applicable to the 3PL warehouse by: <br> 
+    - **Manual**: Product information management > Products > Released products. On the Action Pane select Product tab and use the **EDI 3PL product setup** to assign the product to the 3PL warehouse. 
+    - **Periodic**: EDI > Periodic Tasks > 3PL products > Product configuration update. Based on inventory transactions, the periodic task can create the **EDI 3PL product setup** records.
 
 ## EDI history
 The following D365 pages includes a **History** button, which provides users the ability to easily access EDI staging records related to the record:
