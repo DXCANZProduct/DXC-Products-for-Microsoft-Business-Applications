@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor Documents - Vendor purchase order acknowledgement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-14
+ms.date: 2023-04-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -530,8 +530,8 @@ If update to purchase order line is allowed, column **D365 PO line update** indi
 **Size**                    | Product dimension - Size	
 **Style**                   | Product dimension - Style	
 **Version**                 | Product dimension - Version
-**Site**                    | Storage dimension - Site	
-**Warehouse**               | Storage dimension - Warehouse	
+**Site**                    | Storage dimension - Site. <br> 'Line item added' - if this staging field is blank, the purchase order header's Site will be used when creating the new purchase order line.	| Line item added: Purchase order line's Site
+**Warehouse**               | Storage dimension - Warehouse. <br> 'Line item added' - if this staging field is blank, the purchase order header's Warehouse will be used when creating the new purchase order line.	| Line item added: Purchase order line's Warehouse
 **Requested receipt date**  | The requested receipt date	
 **Acknowledged delivery date**  | Vendors accepted delivery date	                                                                | EDI acknowledgement tab > Acknowledged date
 **Requester**               | Requester	
