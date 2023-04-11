@@ -5,7 +5,7 @@ title: EDI 3PL
 description: Introduction to EDI 3PL
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-21
+ms.date: 2023-04-11
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,6 +50,7 @@ EDI contains the following documents pertaining to 3PL Trading partners.
 	- **Shipment advice - Transfer order**: Advise 3PL of incoming transfer orders (Ship to warehouse)
 	- **Shipment advice - Return order**: Advise 3PL of customer orders being returned (Ship to warehouse)
 	- **Shipment advice - Voyage**: Advise 3PL of incoming Landed cost voyage (Ship to warehouse)
+	- **Product master**: Advise 3PL of new products or changes to products that applies to the 3PL warehouses.
 - **Inbound** 
 	- **Picking list registration**: 3PL informs company what has been shipped for a picking list (Ship from warehouse)
 	- **Shipment receipt - Purchase order**: 3PL acknowledge receipt of incoming purchase orders (Ship to warehouse)
@@ -120,6 +121,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**
     - [Inventory adjustment advice - Counting](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Counting.md)
     - [Inventory adjustment advice - Reconciliation](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Reconciliation.md)
     - [Inventory adjustment advice - Movement](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Movement.md)
+    - [Product master](../SETUP/SETTING-PROFILES/Product-master.md)
 - Validation profiles: applicable to the following inbound document types
     - [Picking list registration](../SETUP/VALIDATION-PROFILES/Picking-list-registration.md)
     - [Shipment receipt - Purchase order](../SETUP/VALIDATION-PROFILES/Shipment-receipt-Purchase-order.md)
@@ -160,6 +162,7 @@ Users can access the forms by navigating to **EDI > Documents > 3PL documents**
 - [Inventory adjustment advice - Counting](../DOCUMENTS/Inventory-adjustment-Counting.md)
 - [Inventory adjustment advice - Reconciliation](../DOCUMENTS/Inventory-adjustment-Reconciliation.md)
 - [Inventory adjustment advice - Movement](../DOCUMENTS/Inventory-adjustment-Movement.md)
+- [Product master](../DOCUMENTS/Product-master.md)
 
 [Process overview](Process-overview.md) for 3PL EDI documents.
 
