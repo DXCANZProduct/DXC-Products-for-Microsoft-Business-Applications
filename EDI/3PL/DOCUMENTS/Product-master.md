@@ -51,7 +51,7 @@ EDI > Setup > Trading partners
     - Setting profile
     - File name setup
     - Change tracking
-1. Create a new batch job for the trading partner and document in [Export batch jobs](../../CORE/Setup/EDI-Batches.md#export-batch-jobs)
+1. Trigger for creating staging record(s): Create a new batch job for the trading partner and document in [Export batch jobs](../../CORE/Setup/EDI-Batches.md#export-batch-jobs)
 
 ## Processing
 
