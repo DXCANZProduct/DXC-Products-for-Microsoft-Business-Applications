@@ -64,7 +64,7 @@ Number	| Functionality	  	| Reason
 
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--
-12403	| Product master	| New document **Product master** in 3PL module. <br> Can be used to provide information about new products and changes to existing products that apply to the warehouse. Products can be manually flagged and/or use periodic job to flag as applicable to the warehouse. <br> [Setup]() and [Processing]().
+12403	| Product master	| New document **Product master** in 3PL module. <br> Can be used to provide information about new products and changes to existing products that apply to the warehouse. Products can be manually flagged and/or use periodic job to flag as applicable to the warehouse. <br> [Setup](3PL/SETUP/SETTING-PROFILES/Product-master.md) and [Processing](3PL/DOCUMENTS/Product-master.md).
 
 <ins>Bug fixes</ins>
 
