@@ -29,7 +29,7 @@ ms.dyn365.ops.version:  AX 7.0.1
 
 # Product master
 
-The following subsections will describe how to view, process and send Product data to applicable 3PL Trading partners. <br>
+The following subsections will describe how to view, process and send applicable Product data to 3PL Trading partner(s). <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed. <br>
 
 ## Prerequisites
