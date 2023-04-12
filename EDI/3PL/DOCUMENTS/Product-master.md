@@ -78,7 +78,7 @@ Active                  | By default this will be set to _Yes_. <br> If changed 
 
 
 #### Periodic task
-The following periodic task can also be used to automatically add the product setup.
+The following periodic task can also be used to automatically add the product setup. <br>
 If inventory transactions exist for the product/warehouse combination and the product setup doesn't exist, this task will create the product setup.
 
 - Navigate to **EDI > Periodic Tasks > 3PL products > Product configuration update**
