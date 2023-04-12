@@ -29,8 +29,6 @@ ms.dyn365.ops.version:  AX 7.0.1
 
 # Product master
 
-3PL warehouses may require product data.
-
 The following subsections will describe how to view, process and send Product data to applicable 3PL Trading partners. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed. <br>
 
