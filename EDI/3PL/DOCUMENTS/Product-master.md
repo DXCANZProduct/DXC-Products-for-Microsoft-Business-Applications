@@ -55,7 +55,7 @@ EDI > Setup > Trading partners
 
 ### Product setup
 
-Since not all the products in the legal entity might apply to the 3PL warehouse, the following setup is required to indicate each product (and each variant where applicable) that applies to the warehouse.
+Since not all the products in the legal entity might apply to the 3PL warehouse, the following setup is required to indicate each product (and each variant where applicable) that applies to the warehouse. <br>
 Only products that are flagged as active for the warehouse will be included in the change tracking.
 
 The setup can be added via:
