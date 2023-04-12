@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Setup - Document type Setting profiles - Shipment receipt - Transfer order
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-18
+ms.date: 2023-04-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,7 +41,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Auto receive**    | Option to automatically receive the registered stock  | • **No** - Only arrival journal posted <br> • **Yes** - Arrival journal posted and transfer order received
 
 ## Where used
-The **Setting profile** can be assigned on the Incoming documents FastTab to document type **Shipment receipt - Transfer order** for the 3PL Trading partner at **EDI > Setup > Trading partners**.
+The **Setting profile** can be assigned on the Incoming documents FastTab to document type [Shipment receipt - Transfer order](../../DOCUMENTS/Shipment-receipt-Transfer-order.md) for the 3PL Trading partner at **EDI > Setup > Trading partners**.
 
 ## Data entity
 - EDI Shipment Receipt settings - Transfer order
