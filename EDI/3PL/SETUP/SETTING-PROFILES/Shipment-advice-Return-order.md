@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Setup - Document type Setting profiles - Shipment advice - Return order
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-18
+ms.date: 2023-04-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,7 +41,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Positive return quantity**  |	Specify whether the negative return quantity should be sent as positive quantity	| • **No** - Return order line quantity is sent as negative quantity <br> • **Yes** – Return order line quantity is converted to positive quantity
 
 ## Where used
-The **Setting profile** can be assigned on the Outgoing documents FastTab to document type **Shipment advice - Return order** for the 3PL Trading partner at **EDI > Setup > Trading partners**.
+The **Setting profile** can be assigned on the Outgoing documents FastTab to document type [Shipment advice - Return order](../../DOCUMENTS/Shipment-advice-Return-order.md) for the 3PL Trading partner at **EDI > Setup > Trading partners**.
 
 ## Data entity
 - EDI Settings Shipment Advice - Return order
