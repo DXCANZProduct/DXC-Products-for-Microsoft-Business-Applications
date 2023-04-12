@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Setup - Document type Setting profiles - Picking list
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-18
+ms.date: 2023-04-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,7 +41,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Prevent cancel picking route**  |	When the warehouse is a 3PL EDI trading partner and has the **Picking list** document enabled, should the option of cancelling a picking route be prevented. 	| •	**Yes** - When a user attempts to cancel a picking route for the EDI trading partner, they will receive a warning ‘Cancel picking route is prevented for the EDI warehouse based on Picking list document settings.’ They won’t be able to cancel the picking route. This is used where the EDI trading partner doesn’t have the capabilities to process cancels via EDI. <br> •	**No** - The EDI trading partner has the capability to process cancelled picking lists via EDI. The picking list will be sent with an **Order purpose** of _Cancellation_
 
 ## Where used
-The **Setting profile** can be assigned on the Outgoing documents FastTab to document type **Picking list** for the 3PL Trading partner at **EDI > Setup > Trading partners**.
+The **Setting profile** can be assigned on the Outgoing documents FastTab to document type [Picking list](../../DOCUMENTS/Picking-list.md) for the 3PL Trading partner at **EDI > Setup > Trading partners**.
 
 ## Data entity
 - EDI Settings - Picking list
