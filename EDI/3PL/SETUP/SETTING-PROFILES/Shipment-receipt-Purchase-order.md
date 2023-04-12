@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Setup - Document type Setting profiles - Shipment receipt - Purchase order
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-18
+ms.date: 2023-04-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,7 +42,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Auto post receipt** |	Option to automatically post product receipt for registered stock	| • **No** - Only arrival journal posted <br> • **Yes** - Arrival journal posted and purchase order product receipt posted
 
 ## Where used
-The **Setting profile** can be assigned on the Incoming documents FastTab to document type **Shipment receipt - Purchase order** for the 3PL Trading partner at **EDI > Setup > Trading partners**.
+The **Setting profile** can be assigned on the Incoming documents FastTab to document type [Shipment receipt - Purchase order](../../DOCUMENTS/Shipment-receipt-Purchase-order.md) for the 3PL Trading partner at **EDI > Setup > Trading partners**.
 
 ## Data entity
 - EDI Settings Shipment Receipt - Purchase order
