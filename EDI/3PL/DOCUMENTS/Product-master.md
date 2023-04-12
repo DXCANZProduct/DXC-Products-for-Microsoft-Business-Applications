@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Product master
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-11
+ms.date: 2023-04-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,6 +52,41 @@ EDI > Setup > Trading partners
     - File name setup
     - Change tracking
 1. Trigger for creating staging record(s): Create a new batch job for the trading partner and document in [Export batch jobs](../../CORE/Setup/EDI-Batches.md#export-batch-jobs)
+
+### Product setup
+
+Since not all the products in the legal entity might apply to the 3PL warehouse, the following setup is required to indicate each product (and each variant where applicable) that applies to the warehouse.
+Only products that are flagged as active for the warehouse will be included in the change tracking.
+
+The setup can be added via:
+#### Manual
+- Navigate to **Product information management > Products > Released products**
+- Select the applicable Item number and on the ActionPane **Product** tab, select **EDI 3PL product setup**
+- Select New and enter the following details
+
+**Field**               | **Description**
+:---                    |:---
+Item nunber             | Automatically populated with selected item number
+Variant number          | Where applicable select the variant number
+Configuration           | Automatically populated when selecting variant number
+Size                    | Automatically populated when selecting variant number
+Color                   | Automatically populated when selecting variant number
+Style                   | Automatically populated when selecting variant number
+Site                    | Select the applicable site
+Warehouse               | Select the applicable warehouse. This needs to match to the 3PL warehouse trading partner
+Active                  | By default this will be set to _Yes_. <br> If changed to _No_, this line will be ignored in change tracking.
+
+
+#### Periodic task
+The following periodic task can also be used to automatically add the product setup.
+If inventory transactions exist for the product/warehouse combination and the product setup doesn't exist, this task will create the product setup.
+
+- Navigate to **EDI > Periodic Tasks > 3PL products > Product configuration update**
+- Select **Warehouse** if it shouldn't run for all warehouses.
+- Setup the required Batch recurrence
+
+#### Inquiries
+Product setup for all item numbers and all warehouses can be viewed at **EDI > Inquiries and reports > EDI 3PL product setup**
 
 ## Processing
 
