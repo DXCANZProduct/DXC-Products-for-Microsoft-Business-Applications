@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Setup - Document type Setting profiles - Shipment receipt - Voyage
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-18
+ms.date: 2023-04-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,7 +41,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Auto post journal** |	When the Landed cost Voyage receipt is received and arrival journal created, the journal should also be automatically posted	| • **No** – Arrival journal is created but not posted <br> • **Yes** – Arrival journal is automatically posted
 
 ## Where used
-The **Setting profile** can be assigned on the Incoming documents FastTab to document type **Shipment receipt - Voyage** for the 3PL Trading partner at **EDI > Setup > Trading partners**.
+The **Setting profile** can be assigned on the Incoming documents FastTab to document type [Shipment receipt - Voyage](../../DOCUMENTS/Shipment-receipt-Voyage.md) for the 3PL Trading partner at **EDI > Setup > Trading partners**.
 
 ## Data entity
 - EDI Settings Shipment Receipt – Voyage
