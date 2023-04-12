@@ -251,3 +251,5 @@ The following EDI Line staging fields are available on the lines page.
 **Store code**		        | Delivery address from sales line	                      | Sales line > Delivery address
 **Country/region**		    | Delivery address from sales line	                      | Sales line > Delivery address
 **ISO**		                | Delivery address from sales line	                      | Sales line > Delivery address
+**Sales responsible**       | Sales responsible for the sales order                   | Sales header > Sales responsible
+**Sales taker**             | Sales taker for the sales order                         | Sales header > Sales taker
