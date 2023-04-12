@@ -66,7 +66,7 @@ The setup can be added via:
 
 **Field**               | **Description**
 :---                    |:---
-Item nunber             | Automatically populated with selected item number
+Item number             | Automatically populated with selected item number
 Variant number          | Where applicable select the variant number
 Configuration           | Automatically populated when selecting variant number
 Size                    | Automatically populated when selecting variant number
