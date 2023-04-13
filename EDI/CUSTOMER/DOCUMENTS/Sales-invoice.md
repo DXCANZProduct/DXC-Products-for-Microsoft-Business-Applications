@@ -201,7 +201,7 @@ The following EDI Line staging fields are available on the lines page.
 **Field**	                | **Description**	                                        | **Source D365 field**
 :---                        |:---                                                       |:---
 **Line number**             | The line within the D365 Invoice                          | Invoice journal line > Line number
-**Line number document**    | The sequential line D365 Invoice line number <br> Ensure **Assign sequential line number when posting customer invoice lines** in **Accounts receivable parameters** is set to _Yes_.                        |  Invoice journal line > Line creation sequence number                    
+**Line number document**    | The sequential D365 Invoice line number <br> Ensure **Assign sequential line number when posting customer invoice lines** in **Accounts receivable parameters** is set to _Yes_.                        |  Invoice journal line > Line creation sequence number                    
 **Item number**             | The D365 item id                                          | Invoice journal line > Item Number
 **Name**                    | The D365 item name	                                    | Invoice journal line > Item Name
 **Lot ID**                  | Lot Id / InventTransId for the invoice line	            | Inventory transaction > InventTransId
