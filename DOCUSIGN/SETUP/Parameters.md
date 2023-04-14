@@ -47,14 +47,21 @@ For authentication with OAuth2.0 the following configuration is required on Docu
 
 ### 1. Web service address
 DocuSign will provide the web address utilized to initiate the connection to your DocuSign account. Two variants of this field value will be used; one for a development or non-production instance and the second for production. <br>
+
 Navigate to **Apps and Keys** from the DocuSign admin portal and copy the **Account Base URI**. <br>
 Example: https://demo.docusign.net
 
 <br> ![Web service address](../IMAGES/Parameters-6.png "Web service address")
 
-### Create a Key Vault
+### 2. OAuth server URL
+Enter the DocuSign OAuth server URL.
+Example: account-d.docusign.com
 
-#### Docusign
+### 3. Integrator key
+
+Navigate to **Apps and Keys** from the **DocuSign admin portal** and copy the **Integration key** for the live app.
+<br> ![Integration key](../IMAGES/Parameters-7.png "Integration key")
+
 1. Create a new **Key vault resource** and specify the required values.
 2. Create a new **App registrations** to grant permission to the key vault. Select the Single tenant option.
 3. Navigate to **Access policies** from the key vault and select Create. <br> ![Access policies](../IMAGES/Parameters-1.png "Access policies")
