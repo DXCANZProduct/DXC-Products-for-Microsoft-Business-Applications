@@ -47,6 +47,7 @@ For authentication with OAuth2.0 the following configuration is required on Docu
 
 ### 1. Web service address
 DocuSign will provide the web address utilized to initiate the connection to your DocuSign account. Two variants of this field value will be used; one for a development or non-production instance and the second for production. <br>
+
 Navigate to **Apps and Keys** from the DocuSign admin portal and copy the **Account Base URI**. <br>
 Example: https://demo.docusign.net
 
