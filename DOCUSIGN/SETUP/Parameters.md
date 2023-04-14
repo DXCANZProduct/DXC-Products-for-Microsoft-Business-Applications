@@ -35,6 +35,14 @@ ms.dyn365.ops.version: AX 7.0.1
 Sign-in to the DocuSign admin portal. <br>
 Ensure that the user has been configured with admininstrator access. <br>
 
+### Create a Key vault
+
+1. Create a new **Key vault resource** and specify the required values.
+2. Create a new **App registrations** to grant permission to the key vault. Select the Single tenant option.
+3. Navigate to **Access policies** from the key vault and select Create. <br> ![Access policies](../IMAGES/Parameters-1.png "Access policies")
+4. On Permissions **Configure from a template**, select the appropriate permission. Example: Key, Secret and Certificate management and click Next. <br> ![Create an access policy - Permissions](../IMAGES/Parameters-2.png "Create an access policy - Permissions")
+5. Select the App registration that had been configured and assign. <br> ![Create an access policy - Principal](../IMAGES/Parameters-3.png "Create an access policy - Principle")
+
 ## DocuSign parameters
 For authentication with OAuth2.0 the following configuration is required on DocuSign parameters:
 1.	Web service address
@@ -59,15 +67,17 @@ Example: account-d.docusign.com
 
 ### 3. Integrator key
 
-Navigate to **Apps and Keys** from the **DocuSign admin portal** and copy the **Integration key** for the live app.
-<br> ![Integration key](../IMAGES/Parameters-7.png "Integration key")
+1. Navigate to **Apps and Keys** from the **DocuSign admin portal** and copy the **Integration key** for the live app. <br> ![Integration key](../IMAGES/Parameters-7.png "Integration key")
+2. Navigate the the key vault created in prequisites steps and add a secret
 
-1. Create a new **Key vault resource** and specify the required values.
-2. Create a new **App registrations** to grant permission to the key vault. Select the Single tenant option.
-3. Navigate to **Access policies** from the key vault and select Create. <br> ![Access policies](../IMAGES/Parameters-1.png "Access policies")
-4. On Permissions **Configure from a template**, select the appropriate permission. Example: Key, Secret and Certificate management and click Next. <br> ![Create an access policy - Permissions](../IMAGES/Parameters-2.png "Create an access policy - Permissions")
-5. Select the App registration that had been configured and assign. <br> ![Create an access policy - Principal](../IMAGES/Parameters-3.png "Create an access policy - Principle")
-6. Navigate to **Apps and Keys** in the DocuSign admin portal. Copy the integration key for the live app
+An integrator key is a unique identifier for each DocuSign account that is used for integration into another third-party system. It is used for all API calls to DocuSign.  This field value is provided by DocuSign in their Administration area. <br> <br>  The integrator key value must be configured as a manual secret within a key vault, with the [key vault parameters defined in FinOps](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/setting-up-azure-key-vault-client). The integrator key can then be selected from the list of available key vault secrets
+
+### 4. User Id
+
+Navigate to **Apps and Keys** from the DocuSign admin portal and copy the **User ID**. <br>
+This user will need to have administration rights on the connected DocuSign account.
+
+![User id](../IMAGES/Parameters-8.png "User id")
 
 
 #### D365
@@ -83,9 +93,7 @@ The DocuSign parameters form is used to set up the connection between your Dynam
 
 | **Field**                         | **Description**                      | **Example**     |
 | :-------------------------------- |:-------------------------------------| :-------------- |
-| **Web services address**          | DocuSign will provide the web address utilized to initiate the connection to your DocuSign account. Two variants of this field value will be used; one for a development or non-production instance and the second for production. <br> Navigate to **Apps and Keys** from the DocuSign admin portal and copy the **Account Base URI**, | https://demo.docusign.net  |
-| **OAuth server URL**                | Enter the DocuSign OAuth server URL      | account-d.docusign.com
-| **Integrator key**                | An integrator key is a unique identifier for each DocuSign account that is used for integration into another third-party system. It is used for all API calls to DocuSign.  This field value is provided by DocuSign in their Administration area. <br> <br>  The integrator key value must be configured as a manual secret within a key vault, with the [key vault parameters defined in FinOps](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/setting-up-azure-key-vault-client). The integrator key can then be selected from the list of available key vault secrets  |
+
 | **User ID**                     | Enter the DocuSign Administrator User ID. This can be accessed from the DocuSign user profile. <br> This user will need to have administration rights on the connected DocuSign account.     | 
 | **RSA private key**               | The RSA private key is generated within DocuSign from the *Apps and Keys* administation page. Select the integration app, then  actions > edit. Under authentication, select *Generate RSA*. This will provide you with a once off private key value which should be recorded.  <br> <br>  The RSA private key value must be configured as a manual secret within key vault.  Due to the length of the key this cannot be stored directly in the key vault, instead the RSA private key can be stored as a private text file within blob storage. A SAS URL is then created for the file. This URL is stored as a manual secret in the key vault. <br> <br> The key vault parameters are then defined in FinOps, after which the integrator key can then be selected from the list of available key vault secrets   | 
 | **Log exception**                 | Select *Yes* to capture the DocuSign error messages when they occur.  The messages will appear on the **Exeptions** page within the DocuSign integration. <br> <br> The errors will allow for investiation and resolution by an administrator.      | 
