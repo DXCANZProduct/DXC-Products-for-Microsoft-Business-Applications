@@ -52,9 +52,15 @@ Example: https://demo.docusign.net
 
 <br> ![Web service address](../IMAGES/Parameters-6.png "Web service address")
 
-### Create a Key Vault
+### 2. OAuth server URL
+Enter the DocuSign OAuth server URL.
+Example: account-d.docusign.com
 
-#### Docusign
+### 3. Integrator key
+
+Navigate to **Apps and Keys** from the **DocuSign admin portal** and copy the **Integration key** for the live app.
+<br> ![Integration key](../IMAGES/Parameters-7.png "Integration key")
+
 1. Create a new **Key vault resource** and specify the required values.
 2. Create a new **App registrations** to grant permission to the key vault. Select the Single tenant option.
 3. Navigate to **Access policies** from the key vault and select Create. <br> ![Access policies](../IMAGES/Parameters-1.png "Access policies")
