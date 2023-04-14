@@ -5,7 +5,7 @@ title: Forex contract
 description: Link Forex contract
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-13
+ms.date: 2023-04-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -92,8 +92,14 @@ Purchase order headers can be allocated to forex contracts via:
 
 -	Select the applicable forex contract.
 -	On the Action Pane, on the **Forex contracts** tab, select **Link to document**.
+
+<ins>Option 1 - Manually allocate amounts</ins>
 -	Select the applicable **Purchase order(s)**. If the selected document’s unallocated amount is less than the forex contract’s amount, the user will be able to select multiple documents until the forex contract amount has been fully allocated.
 -	Each selected document’s **Allocate** field will automatically update to the amount it is able to allocate. The field can also be edited to a different amount, but needs to be:
     - Less or equal to the document’s unallocated amount.
     - Less or equal to the forex contract’s unallocated amount.
 -	Select **OK**.
+
+<ins>Option 2 - Auto allocate amounts</ins> 
+- Select the **Auto allocate** button to automatically allocate the forex contract's unallocated amount top-down to the documents.
+- Select all the records that should be alloced and select **OK**.
