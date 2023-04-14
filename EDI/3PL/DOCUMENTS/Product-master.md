@@ -84,7 +84,8 @@ If inventory transactions exist for the product/warehouse combination and the pr
 - Setup the required Batch recurrence
 
 #### Inquiries
-Product setup for all item numbers and all warehouses can be viewed at **EDI > Inquiries and reports > EDI 3PL product setup**
+Product setup for all item numbers and all warehouses can be viewed at **EDI > Inquiries and reports > EDI 3PL product setup**. <br>
+The inquiries form can also be used to add records.
 
 ## Processing
 
@@ -97,9 +98,8 @@ Document change tracking's **Update version** is also updated each time a stagin
 
 If required to send full set of data again, the trading partner's document change tracking's **Full** can be set to _Yes_ again.
 
-The following tables are tracked for the **Product master** document:
-- InventTable
-- InventDim
+Various tables are tracked for the **Product master** document. <br>
+If additional fields are added as client extension ensure that change tracking is enabled for the entity if the field isn't included in the currently tracked tables.
 
 ## View staging table records
 To view the staging records, go to **EDI > Documents > 3PL documents > Master data > Product master**. 
