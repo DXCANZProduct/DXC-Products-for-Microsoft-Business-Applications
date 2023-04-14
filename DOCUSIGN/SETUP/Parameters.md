@@ -29,6 +29,10 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Parameters
 
+The DocuSign parameters form is used to set up the connection between your Dynamics 365 environment and your DocuSign account.  Within this form, you will set up the details regarding the administrator of the DocuSign account, along with a connection key that will be utilized when sending data through to DocuSign.
+
+You can reach the parameters form by navigating to **Organization administration** > **Setup** > **DocuSign** > **DocuSign parameters**
+
 ## Prerequisites
 
 ### DocuSign administrator user
@@ -80,27 +84,37 @@ This user will need to have administration rights on the connected DocuSign acco
 ![User id](../IMAGES/Parameters-8.png "User id")
 
 
-#### D365
-**System administrator > Setup > Key Vault parameters** <br>
-[MS user guide](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/setting-up-azure-key-vault-client)
+### 5. RSA private key
 
+The RSA private key is generated within DocuSign from the **Apps and Keys** administation page. 
+Select the live app, then **Actions > Edit**. 
 
+![Edit app](../IMAGES/Parameters-9.png "Edit app")
 
-## DocuSign parameters
-The DocuSign parameters form is used to set up the connection between your Dynamics 365 environment and your DocuSign account.  Within this form, you will set up the details regarding the administrator of the DocuSign account, along with a connection key that will be utilized when sending data through to DocuSign.
- You can reach the parameters form by navigating to **Organization administration** > **Setup** > **DocuSign** > **DocuSign parameters**
+Under authentication, select **Generate RSA**. 
+This will provide you with a once off private key value which should be recorded.  
 
+![Generate RSA](../IMAGES/Parameters-10.png "Generate RSA")
 
-| **Field**                         | **Description**                      | **Example**     |
-| :-------------------------------- |:-------------------------------------| :-------------- |
+The RSA private key value must be configured as a manual secret within key vault.  Due to the length of the key this cannot be stored directly in the key vault, instead the RSA private key can be stored as a private text file within blob storage. A SAS URL is then created for the file. This URL is stored as a manual secret in the key vault. 
 
-| **User ID**                     | Enter the DocuSign Administrator User ID. This can be accessed from the DocuSign user profile. <br> This user will need to have administration rights on the connected DocuSign account.     | 
-| **RSA private key**               | The RSA private key is generated within DocuSign from the *Apps and Keys* administation page. Select the integration app, then  actions > edit. Under authentication, select *Generate RSA*. This will provide you with a once off private key value which should be recorded.  <br> <br>  The RSA private key value must be configured as a manual secret within key vault.  Due to the length of the key this cannot be stored directly in the key vault, instead the RSA private key can be stored as a private text file within blob storage. A SAS URL is then created for the file. This URL is stored as a manual secret in the key vault. <br> <br> The key vault parameters are then defined in FinOps, after which the integrator key can then be selected from the list of available key vault secrets   | 
-| **Log exception**                 | Select *Yes* to capture the DocuSign error messages when they occur.  The messages will appear on the **Exeptions** page within the DocuSign integration. <br> <br> The errors will allow for investiation and resolution by an administrator.      | 
+The [key vault parameters](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/setting-up-azure-key-vault-client) are then defined in FinOps, after which the integrator key can be selected from the list of available key vault secrets in DocuSign parameters 
 
-After the parameter values have been defined it is neccesary to grant consent for the authentication. This can be achieved by selecting *Grant consent* at the top of the page.
+### Grant consent
 
-When working within the parameters form, the web services UI will be varied both across environments and across regions.  The test environments will have a working services connection by connecting to the following:  https://demo.docusign.net/restapi .  This is regardless of the region of the business.  
+After the OAuth2.0 values have been defined it is neccesary to grant consent for the authentication.
+This can be achieved by selecting **Grant consent** at the top of the page.
+
+### Log exception
+
+Select *Yes* to capture the DocuSign error messages when they occur. 
+The messages will appear on the **Exeptions** page within the DocuSign integration. 
+
+The errors will allow for investiation and resolution by an administrator.      
+
+### Environments
+
+When working within the parameters form, the web services UI will be varied both across environments and across regions.  The test environments will have a working services connection by connecting to the following:  https://demo.docusign.net .  This is regardless of the region of the business.  
 
 When moving to a production environment, you must update your integration to use the right base URL for API calls instead of https://demo.docusign.net/restapi . The base URL will vary, depending on the DocuSign account being used.  Each registered DocuSign user for your application can access one or more accounts. Each account has an associated base URL. Currently, the production base URLs include: www.docusign.net, na2.docusign.net, eu.docusign.net, etc. Additional base URLs are added regularly.  
 
