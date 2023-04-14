@@ -35,6 +35,16 @@ ms.dyn365.ops.version: AX 7.0.1
 Sign-in to the DocuSign admin portal. <br>
 Ensure that the user has been configured with admininstrator access. <br>
 
+## DocuSign parameters
+For authentication with OAuth2.0 the following configuration is required
+1.	Web service address
+2.	OAuth server URL
+3.	Integrator key
+4.	User Id
+5.	RSA private key
+
+<br> ![DocuSign parameters](../IMAGES/Parameters-4.png "DocuSign parameters")
+
 ### Create a Key Vault
 
 #### Docusign
@@ -47,7 +57,7 @@ Ensure that the user has been configured with admininstrator access. <br>
 
 
 #### D365
-**System administrator > Setup > Key Vault parameters**
+**System administrator > Setup > Key Vault parameters** <br>
 [MS user guide](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/setting-up-azure-key-vault-client)
 
 
