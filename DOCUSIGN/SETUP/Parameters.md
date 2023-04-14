@@ -36,7 +36,7 @@ Sign-in to the DocuSign admin portal. <br>
 Ensure that the user has been configured with admininstrator access. <br>
 
 ## DocuSign parameters
-For authentication with OAuth2.0 the following configuration is required
+For authentication with OAuth2.0 the following configuration is required on DocuSign parameters:
 1.	Web service address
 2.	OAuth server URL
 3.	Integrator key
