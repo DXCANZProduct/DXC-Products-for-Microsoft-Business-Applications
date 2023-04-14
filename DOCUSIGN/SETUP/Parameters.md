@@ -40,7 +40,7 @@ Ensure that the user has been configured with admininstrator access. <br>
 #### Docusign
 1. Create a new **Key vault resource** and specify the required values.
 2. Create a new **App registrations** to grant permission to the key vault. Select the Single tenant option.
-3. Navigate to **Access policies** from the key vault and select Create. <br> ![Access policies](IMAGES/Parameters-1.png "Access policies")
+3. Navigate to **Access policies** from the key vault and select Create. <br> ![Access policies](../IMAGES/Parameters-1.png "Access policies")
 4. On Permissions' **Configure from a template**, select the appropriate permission. Example: Key, Secret and Certificate management and click Next.
 5. Select the App registration that had been configured and assign.
 6. Navigate to **Apps and Keys** in the DocuSign admin portal. Copy the integration key for the live app
