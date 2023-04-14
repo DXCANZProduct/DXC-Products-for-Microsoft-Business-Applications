@@ -35,14 +35,14 @@ ms.dyn365.ops.version: AX 7.0.1
 Sign-in to the DocuSign admin portal. <br>
 Ensure that the user has been configured with admininstrator access. <br>
 
-### Key Vault
+### Create a Key Vault
 
 #### Docusign
 1. Create a new **Key vault resource** and specify the required values.
 2. Create a new **App registrations** to grant permission to the key vault. Select the Single tenant option.
 3. Navigate to **Access policies** from the key vault and select Create. <br> ![Access policies](../IMAGES/Parameters-1.png "Access policies")
 4. On Permissions **Configure from a template**, select the appropriate permission. Example: Key, Secret and Certificate management and click Next. <br> ![Create an access policy - Permissions](../IMAGES/Parameters-2.png "Create an access policy - Permissions")
-5. Select the App registration that had been configured and assign.
+5. Select the App registration that had been configured and assign. <br> ![Create an access policy - Principal](../IMAGES/Parameters-3.png "Create an access policy - Principle")
 6. Navigate to **Apps and Keys** in the DocuSign admin portal. Copy the integration key for the live app
 
 
