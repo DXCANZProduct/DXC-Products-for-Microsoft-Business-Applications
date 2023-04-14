@@ -95,7 +95,7 @@ Purchase order headers can be allocated to forex contracts via:
 
 <ins>Option 1 - Manually allocate amounts</ins>
 -	Select the applicable **Purchase order(s)**. If the selected document’s unallocated amount is less than the forex contract’s amount, the user will be able to select multiple documents until the forex contract amount has been fully allocated.
--	Each selected document’s **Allocate** field will automatically update to the amount it is able to allocate. The field can also be edited to a different amount, but needs to be:
+-	Enter amount in **Allocate** field, amounts needs to be:
     - Less or equal to the document’s unallocated amount.
     - Less or equal to the forex contract’s unallocated amount.
 -	Select **OK**.
