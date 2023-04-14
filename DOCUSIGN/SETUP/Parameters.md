@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.1
 Sign-in to the DocuSign admin portal. <br>
 Ensure that the user has been configured with admininstrator access. <br>
 
-### Key Vault
+### Create a Key Vault
 
 #### Docusign
 1. Create a new **Key vault resource** and specify the required values.
