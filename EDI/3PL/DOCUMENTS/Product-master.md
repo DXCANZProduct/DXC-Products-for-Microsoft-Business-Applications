@@ -83,6 +83,8 @@ If inventory transactions exist for the product/warehouse combination and the pr
 - Select **Warehouse** if it shouldn't run for all warehouses.
 - Setup the required Batch recurrence
 
+> Note: If a product was incorrectly transacted on the 3PL warehouse, the inventory transaction will still result in a record for the product/warehouse combination in 3PL product setup. Instead of deleting the line, set **Active** to _No_ and it will be excluded in future staging records to the warehouse.
+
 #### Inquiries
 Product setup for all item numbers and all warehouses can be viewed at **EDI > Inquiries and reports > EDI 3PL product setup**. <br>
 The inquiries form can also be used to add records.
