@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-30
+ms.date: 2023-04-17
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -62,6 +62,16 @@ Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dyn
 > If this is set to _Yes_ it will override Finance utilities posting date **Today's date** for mark as new transactions and post the new transactions at the booking date. Thus if you want to use **Today's date** for new transactions, ensure the new setting is set to _No_ <br>
 > This feature is not supported for creating **new Vendor transactions** in the Bank reconciliation. If the feature is enabled, _no vendor subledger_ is created when the bank statement is posted. Therefor don't enable this feature if you require this functionality <br> <br>
 ![Bank reconciliation worksheet](Images/ReleaseNotes_20230131_4.png "Bank reconciliation worksheet - Mark as new Vendor")
+
+#### Build 10.0.29.202301317 - Current
+Release date: 17 April 2023 <br> 
+
+<ins>Bug fixes</ins>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+13788		| Bank reconciliation	| Modified fix for 13592 to use **Accounting currency** instead of Reporting currency.
+
 
 #### Build 10.0.29.202301316
 Release date: 30 March 2023 <br> 
