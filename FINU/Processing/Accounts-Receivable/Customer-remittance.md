@@ -37,7 +37,7 @@ The functionality as described in the following subsections relates to customer 
 Customer remittance import includes the following functionality:
 - Periodic import from ftp, sftp or Azure blob storage.
 - Decryption of import files supported.
-- Remittance custom format mapping, set on Method of payment
+- Remittance custom format mapping.
 - One import file creates one customer payment journal.
 - Options per legal entity:
     - Automatically post created customer payment journal
@@ -47,6 +47,7 @@ Customer remittance import includes the following functionality:
     - If D365 customer account can't be found, option to use an Error customer account.
     - Settle transaction
     - Customer payment journal line date can use Remittance transaction date or Today's date
+    - Remittance format
 - Ability to use the following methods to obtain D365 customer account:
     - Customer reference number
     - Invoice number
