@@ -27,48 +27,37 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Customer reference setup
-The fields as described in the following subsections are available to control the functionality for customer remittance import available in additional licensed feature **AR Utilities**.
+The fields as described in the following subsections are available to control the functionality for customer remittance import available in additional licensed feature **Finance utilities - AR utilities**.
 
-## Accounts receivable parameters
+## Reference number type
 
-The **Accounts receivable parameters** page contains additional fields used to define settings that apply to Customer remittance functionality.
+Customers could have various types of references. This page allows users to set **Reference number types** that will be used when assigning **Customer references** to the **Customer**.
 
-To open the page, navigate to **Accounts receivable > Setup > Accounts receivable parameters** and select the **Settlement** tab.<br>
-Then set the fields as described in the following subsections.
-
-**Field** | **Description**   
-:--       |:--
-**Create prepayment**                   | When set to _Yes_ customer payment journal line(s) that aren't settled against a D365 invoice, will be created as a prepayment. 
-**Auto post customer payment journal**  | When set to _Yes_ the created cusomer payment journal will be automatically posted.
-**File attachment document type**       | Select applicable document type. When populated, the import file will be attached to the created customer payment journal. <br> Ensure the file extension is setup in all applicable legal entities File types in Document management parameters.
-
-## Remittance format
-
-The **Remittance format** page will be used to set the format of the import file. <br>
-The format is used for **Customer remittance import** and **Direct debit returns**.
-
-To open the page, navigate to **Accounts receivable > Payments setup > Remittance format**.<br>
-See the following [page]() for setup information.
-
-
-## Methods of payment
-The **Methods of payment** page contains additional fields used to define settings that apply to Customer remittance functionality.
-
-To open the page, navigate to **Accounts receivable > Payment setup > Methods of payment** and select the **General** FastTab.<br>
-Then set the fields under **Import payments processing** as described in the following subsections.
+To open the page, navigate to **Accounts receivable > Setup > Reference number type**.<br>
+On the Action Pane, select **New** and enter the following details.
 
 **Field** | **Description**   
 :--       |:--
-**Error account customer**  | Where the D365 customer account can't be found, use this customer account to create the customer payment journal line
-**Settle transaction**      | When set to _Yes_ and the invoice can be found in D365, the invoice number will be populated on the customer payment journal line.
-**Posting date**            | Select the applicable posting date to be used for customer payment journal lines, options include:  <br> •	Remittance transaction date <br> •	Today’s date
-**Reference number type**   | Where [Customer references]() are used to find the applicable D365 customer account, select the applicable Reference number type to use in the lookup. 
-**Remittance format**       | Select the applicable [Remittance format]() that will be used when importing the file.
+**Reference number type** | Set an unique reference number for each customer reference type.
 
-## Financial utilities connection
+Data entity: 
 
-The Accounts receivable **Financial utilities** page will be used to set the connection where the import file will be found. <br>
-The connections are used for **Customer remittance import** and **Direct debit returns**.
+## Customer references
 
-To open the page, navigate to **Accounts receivable > Payments setup > Financial utilties connection**.<br>
-See the following [page]() for setup information.
+The following section describes creating customer references against a customer.
+
+To open the page, navigate to **Accounts receivable > Customers > All customers**. <br>
+Select the applicable customer and select **Customer references** on **Customer** tab on the ActionPane.
+
+On the Action Pane, select **New** and enter the following details.
+
+**Field** | **Description**   
+:--       |:--
+**Customer account**      | Customer account is automatically assigned based on the selected customer.
+**Reference number type** | Select the applicable **Reference number type** as set in the previous section.
+**Reference number**      | Enter the value for the customer reference.
+**Active**                | Set the customer reference as active. <br> Only one active record per **Reference number type** is allowed per customer. <br> If the customer has existing references for the reference number type, their Active would first need to be changed to _No_ before activating a new record for the type.
+
+
+Data entity: 
+
