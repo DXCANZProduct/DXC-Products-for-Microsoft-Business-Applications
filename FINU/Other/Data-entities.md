@@ -34,7 +34,7 @@ Finance utilities includes the following data entities :
 # Cash and bank management
 
 ### Financial utilities parameters
-Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters
+Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters <br>
 Data entity: Financial utilities parameters
 
 ### Financial utilities connection
@@ -98,17 +98,17 @@ Accounts payable > Payment setup > Methods of payments
 # Accounts receivable
 
 ### Reference number type
-Accounts receivable > Setup > Reference number type
+Accounts receivable > Setup > Reference number type <br>
 Data entity: Reference number type
 
 ### Customer references
-Accounts receivable > Customers > All customers: Customer references
+Accounts receivable > Customers > All customers: Customer references <br>
 Data entity: Customer references
 
 # Budgeting
 
 ### Budget utilities parameters
-Budgeting > Setup > Basic budgeting > Budget utilities parameters
+Budgeting > Setup > Basic budgeting > Budget utilities parameters <br>
 Data entity: Budget utilities parameters
 
 # Finance utilities - AR utilities
