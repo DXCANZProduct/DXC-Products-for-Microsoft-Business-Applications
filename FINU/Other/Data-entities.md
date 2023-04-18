@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 Finance utilities includes the following data entities :
 
-## Cash and bank management
+# Cash and bank management
 
 ### Financial utilities parameters
 Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters
@@ -79,7 +79,7 @@ Bank statement format entities are a combination of Finance utilities entities a
 > Note: If comma is used in **Field delimiter** on the **Bank statement format**, set SAB_FINFIELDDELIMITER **Text qualifier** to _Yes_ in Mapping details.
 
 
-## Accounts payable
+# Accounts payable
 
 ### Vendor bank accounts
 Accounts payable > Vendors > All vendors - Bank accounts on Vendor FastTab
@@ -95,7 +95,7 @@ Accounts payable > Payment setup > Methods of payments
 :--       |:--                                       
 **Vendor payment method**           | • Sundry method of payment (DFUSUNDRYPAYM) <br> • Auto payment reference number (DFUAUTOPAYMENTREFNUMBER) <br> • BPAY method of payment (DFUBPAYPAYM) <br> • Payment control > Lodgement reference is mandatory (DFUVALIDATELODGEMENTREFISMANDATORY) <br> • Payment attributes > Lodgement reference (DFUATTRIBUTELODGEMENTREFENABLED)
 
-## Accounts receivable
+# Accounts receivable
 
 ### Reference number type
 Accounts receivable > Setup > Reference number type
@@ -105,7 +105,7 @@ Data entity: Reference number type
 Accounts receivable > Customers > All customers: Customer references
 Data entity: Customer references
 
-## Budgeting
+# Budgeting
 
 ### Budget utilities parameters
 Budgeting > Setup > Basic budgeting > Budget utilities parameters
@@ -115,7 +115,7 @@ Data entity: Budget utilities parameters
 
 > Note: The forms and additional fields are only available where additional licensed feature **Finance utilities - AR utilities** is enabled
 
-## Accounts receivable
+# Accounts receivable
 
 ### Remittance format
 Accounts receivable > Payments setup > Remittance format
@@ -145,5 +145,4 @@ Accounts receivable > Payment setup > Methods of payment
 
 **Entity**                          | **Additional Finance utilities fields for standard entity**                 
 :--       |:-- 
-
-
+**Customer payment method**   | 
