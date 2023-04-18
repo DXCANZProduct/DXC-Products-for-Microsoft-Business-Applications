@@ -33,7 +33,7 @@ The fields as described in the following subsections are available to control th
 
 The **Accounts receivable parameters** page contains additional fields used to define settings that apply to Customer remittance functionality.
 
-To open the **Accounts receivable parameters** page, navigate to **Accounts receivable > Setup > Accounts receivable parameters** and select the **Settlement** tab.<br>
+To open the page, navigate to **Accounts receivable > Setup > Accounts receivable parameters** and select the **Settlement** tab.<br>
 Then set the fields as described in the following subsections.
 
 **Field** | **Description**   
@@ -42,4 +42,17 @@ Then set the fields as described in the following subsections.
 **Auto post customer payment journal**  | When set to _Yes_ the created cusomer payment journal will be automatically posted.
 **File attachment document type**       | Select applicable document type. When populated, the import file will be attached to the created customer payment journal. <br> Ensure the file extension is setup in all applicable legal entities File types in Document management parameters.
 
+## Methods of payment
+The **Methods of payment** page contains additional fields used to define settings that apply to Customer remittance functionality.
+
+To open the page, navigate to **Accounts receivable > Payment setup > Methods of payment** and select the **General** FastTab.<br>
+Then set the fields under **Import payments processing** as described in the following subsections.
+
+**Field** | **Description**   
+:--       |:--
+**Error account customer**  | 
+**Settle transaction**      | 
+**Posting date**            | 
+**Reference number type**   | 
+**Remittance format**       | 
 
