@@ -38,7 +38,7 @@ Customer remittance import includes the following functionality:
 - Periodic import from ftp, sftp or Azure blob storage.
 - Decryption of import files supported.
 - Remittance custom format mapping.
-- Creates a customer payment journal with option to automatically post. One file = One customer payment journal.
+- Creates a customer payment journal with option to automatically post. One import file creates one customer payment journal.
 - Option to attach the original file to created customer payment journal.
 - Filter on customer payment journal to view journals created via the periodic task.
 - Ability to use the following methods to obtain D365 customer account:
