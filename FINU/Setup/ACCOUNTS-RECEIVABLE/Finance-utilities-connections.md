@@ -30,18 +30,20 @@ ms.dyn365.ops.version: AX 7.0.1
 ## Financial utilities connection
 When the Customer remittances are to be imported via the periodic task **Payment journal import**, the applicable connection type must be setup using the **Financial utilities connections** page.
 
-**Financial utilities connections** are used in the following:
-1.	Mandatory parameter in the periodic task [Payment journal import](). Only enabled AR Financial connections can be selected in the periodic task.
+> Note: The menu is only available where additional licensed feature **Finance utilities - AR utilities** is enabled.
 
-The import file can be attached to the created D365 bank statement(s), by setting **File attachment document type** on **Financial utilities parameters**.
+Accounts receivable **Financial utilities connections** are used in the following:
+1.	Mandatory parameter in the periodic task [Payment journal import](). Only enabled Financial connections can be selected in the periodic task.
+
+The import file can be attached to the created D365 customer payment journal, by setting **File attachment document type** on the **Settlement** tab on **Accounts receivable parameters**.
 
 Examples where a file would we moved to **Import error path**:
-- File contains one or multiple bank accounts and not all bank accounts could be found. No bank statements are imported and file is moved to error.
+- 
 
 > Note: If **Import error path** is not setup/incorrect, the file will be deleted from the import path and not archived. 
 
 
-To open the **Financial utilities connections** page, go to **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections**. Then set the fields as described in the following subsections.
+To open the **Financial utilities connections** page, go to **Accounts receivable > Payments setup > Financial utilities connections**. Then set the fields as described in the following subsections.
 
 
 Field         | Description                         | Example or Options
