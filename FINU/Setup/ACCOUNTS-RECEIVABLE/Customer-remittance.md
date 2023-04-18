@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: DXC Finance Utilities
-description: Cash and bank management setup - Financial utilities parameters
+title: DXC Finance Utilities - AR utilities
+description: Accounts receivable setup
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-11-29
+ms.date: 2023-04-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_FinUtilParameters
+ms.search.form:  CustParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -21,18 +21,18 @@ ms.reviewer: jdutoit2
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: jdutoit2
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# Advanced bank reconciliation functionality
-The fields as described in the following subsections are available to control the additional functionality for advanced bank reconciliation.
+# Customer remittance functionality
+The fields as described in the following subsections are available to control the functionality for customer remittance import available in additional licensed feature **AR Utilities**.
 
 ## Setup
-### Financial utilities parameters
+### Accounts receivable parameters
 
-The **Financial utilities parameter** page within **Cash and bank management** is used to define settings that apply to Advanced bank statement functionality. These settings offer extended options on reconciliation matching rules, additional functionality on the bank reconciliation worksheet and other behavior. The settings also includes number sequence.
+The **Accounts receivable parameters** page contains additional fields used to define settings that apply to Customer remittance functionality.
 To open the **Financial utilities parameters** page, go to **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters**. <br>
 Then set the fields as described in the following subsections.
 
