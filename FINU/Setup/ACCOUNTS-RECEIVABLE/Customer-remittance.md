@@ -42,6 +42,14 @@ Then set the fields as described in the following subsections.
 **Auto post customer payment journal**  | When set to _Yes_ the created cusomer payment journal will be automatically posted.
 **File attachment document type**       | Select applicable document type. When populated, the import file will be attached to the created customer payment journal. <br> Ensure the file extension is setup in all applicable legal entities File types in Document management parameters.
 
+## Remittance format
+
+The **Remittance format** page will be used to set the format of the import file. <br>
+The format is used for **Customer remittance import** and **Direct debit returns**.
+
+See the following [page]() for setup information.
+
+
 ## Methods of payment
 The **Methods of payment** page contains additional fields used to define settings that apply to Customer remittance functionality.
 
@@ -56,3 +64,9 @@ Then set the fields under **Import payments processing** as described in the fol
 **Reference number type**   | Where [Customer references]() are used to find the applicable D365 customer account, select the applicable Reference number type to use in the lookup. 
 **Remittance format**       | Select the applicable [Remittance format]() that will be used when importing the file.
 
+## Financial utilities connection
+
+The Accounts receivable **Financial utilities** page will be used to set the connection where the import file will be found. <br>
+The connections are used for **Customer remittance import** and **Direct debit returns**.
+
+See the following [page]() for setup information.
