@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: DXC Finance Utilities - AR utilities
-description: Customer remittance setup
+title: DXC Finance Utilities
+description: Customer reference setup
 author: jdutoit2
 manager: Kym Parker
 ms.date: 2023-04-18
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  CustParameters, DXCARRemittanceFormat, CustPaymMode, DXCARConnection
+ms.search.form:  SAB_FinReferenceNumberType, CustTableListPage, SAB_FinCustomerReference
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -26,7 +26,7 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# Customer remittance setup
+# Customer reference setup
 The fields as described in the following subsections are available to control the functionality for customer remittance import available in additional licensed feature **AR Utilities**.
 
 ## Accounts receivable parameters
