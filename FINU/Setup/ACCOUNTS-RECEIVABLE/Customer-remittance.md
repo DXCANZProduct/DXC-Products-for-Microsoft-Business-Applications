@@ -47,6 +47,7 @@ Then set the fields as described in the following subsections.
 The **Remittance format** page will be used to set the format of the import file. <br>
 The format is used for **Customer remittance import** and **Direct debit returns**.
 
+To open the page, navigate to **Accounts receivable > Payments setup > Remittance format**.<br>
 See the following [page]() for setup information.
 
 
@@ -69,4 +70,5 @@ Then set the fields under **Import payments processing** as described in the fol
 The Accounts receivable **Financial utilities** page will be used to set the connection where the import file will be found. <br>
 The connections are used for **Customer remittance import** and **Direct debit returns**.
 
+To open the page, navigate to **Accounts receivable > Payments setup > Financial utilties connection**.<br>
 See the following [page]() for setup information.
