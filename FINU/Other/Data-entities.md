@@ -27,11 +27,8 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# Finance utilities data entities
-
-Finance utilities includes the following data entities :
-
 # Cash and bank management
+Finance utilities includes the following data entities in Cash and bank management:
 
 ### Financial utilities parameters
 Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters <br>
@@ -80,6 +77,7 @@ Bank statement format entities are a combination of Finance utilities entities a
 
 
 # Accounts payable
+Finance utilities includes the following data entities in Accounts payable:
 
 ### Vendor bank accounts
 Accounts payable > Vendors > All vendors - Bank accounts on Vendor FastTab
@@ -96,6 +94,7 @@ Accounts payable > Payment setup > Methods of payments
 **Vendor payment method**           | • Sundry method of payment (DFUSUNDRYPAYM) <br> • Auto payment reference number (DFUAUTOPAYMENTREFNUMBER) <br> • BPAY method of payment (DFUBPAYPAYM) <br> • Payment control > Lodgement reference is mandatory (DFUVALIDATELODGEMENTREFISMANDATORY) <br> • Payment attributes > Lodgement reference (DFUATTRIBUTELODGEMENTREFENABLED)
 
 # Accounts receivable
+Finance utilities includes the following data entities in Accounts receivable:
 
 ### Reference number type
 Accounts receivable > Setup > Reference number type <br>
@@ -106,16 +105,16 @@ Accounts receivable > Customers > All customers: Customer references <br>
 Data entity: Customer references
 
 # Budgeting
+Finance utilities includes the following data entities in Budgeting:
 
 ### Budget utilities parameters
 Budgeting > Setup > Basic budgeting > Budget utilities parameters <br>
 Data entity: Budget utilities parameters
 
-# Finance utilities - AR utilities
+# Accounts receivable - AR utilities
+**Finance utilities - AR utilities** includes the following data entities in Cash and bank management:
 
 > Note: The forms and additional fields are only available where additional licensed feature **Finance utilities - AR utilities** is enabled
-
-# Accounts receivable
 
 ### Remittance format
 Accounts receivable > Payments setup > Remittance format <br>
@@ -140,7 +139,7 @@ Accounts receivable > Setup > Accounts receivable parameters
 **Customer parameters** | • Create prepayment (DXCARCREATEPREPAYMENT) <br> • Auto post customer payment journal (DXCARAUTOPOSTCUSTPAYMJOUR) <br> • File attachment document type (DXCARDOCUTYPEID)
 
 
-## Methods of payment
+### Methods of payment
 Accounts receivable > Payment setup > Methods of payment
 
 **Entity**                          | **Additional Finance utilities fields for standard entity**                 
