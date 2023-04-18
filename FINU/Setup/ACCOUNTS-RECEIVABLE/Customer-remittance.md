@@ -72,3 +72,9 @@ The connections are used for **Customer remittance import** and **Direct debit r
 
 To open the page, navigate to **Accounts receivable > Payments setup > Financial utilties connection**.<br>
 See the following [page](Finance-utilities-connections.md) for setup information.
+
+## Processing
+
+Processing the Customer remittance is discussed [here](../../Processing/Accounts-Receivable/Customer-remittance.md)
+
+
