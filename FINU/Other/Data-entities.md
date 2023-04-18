@@ -137,7 +137,7 @@ Accounts receivable > Setup > Accounts receivable parameters
 
 **Entity**                          | **Additional Finance utilities fields for standard entity**                 
 :--       |:-- 
-**Customer parameters** | 
+**Customer parameters** | • Create prepayment (DXCARCREATEPREPAYMENT) <br> • Auto post customer payment journal (DXCARAUTOPOSTCUSTPAYMJOUR) <br> • File attachment document type (DXCARDOCUTYPEID)
 
 
 ## Methods of payment
@@ -145,4 +145,4 @@ Accounts receivable > Payment setup > Methods of payment
 
 **Entity**                          | **Additional Finance utilities fields for standard entity**                 
 :--       |:-- 
-**Customer payment method**   | 
+**Customer payment method**   | • Error account customer (DXCARCUSTACCOUNTERROR) <br> • Settle transactions (DXCARSETTLETRANSACTIONS) <br> • Posting date (DXCARPOSTINGDATETYPE) <br> • Reference number type (DXCARREFERENCENUMBERTYPE) <br> • Remittance format
