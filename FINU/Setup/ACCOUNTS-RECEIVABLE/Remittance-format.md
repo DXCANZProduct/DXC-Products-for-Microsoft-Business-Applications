@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Finance Utilities 
-description: Cash and bank management setup - Bank statement format 
-author: helenho
+title: DXC Finance Utilities - AR Utilities
+description: Customer remittance format setup
+author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-03-02
+ms.date: 2023-04-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  BankStatementFormat
+ms.search.form:  DXCARRemittanceFormat
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -26,8 +26,9 @@ ms.author: helenho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
-# Advanced bank reconciliation functionality
-The fields as described in the following subsections are available to control the additional functionality for advanced bank reconciliation.
+
+# Remittance format
+The fields as described in the following subsections are available to control the file format for periodic import tasks available in additional licensed feature **Finance utilities - AR utilities**.
 
 ## Setup
 ### Bank Statement format
