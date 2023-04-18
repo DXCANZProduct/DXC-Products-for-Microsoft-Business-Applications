@@ -48,7 +48,7 @@ The **Remittance format** page will be used to set the format of the import file
 The format is used for **Customer remittance import** and **Direct debit returns**.
 
 To open the page, navigate to **Accounts receivable > Payments setup > Remittance format**.<br>
-See the following [page]() for setup information.
+See the following [page](Remittance-format.md) for setup information.
 
 
 ## Methods of payment
@@ -62,8 +62,8 @@ Then set the fields under **Import payments processing** as described in the fol
 **Error account customer**  | Where the D365 customer account can't be found, use this customer account to create the customer payment journal line
 **Settle transaction**      | When set to _Yes_ and the invoice can be found in D365, the invoice number will be populated on the customer payment journal line.
 **Posting date**            | Select the applicable posting date to be used for customer payment journal lines, options include:  <br> •	Remittance transaction date <br> •	Today’s date
-**Reference number type**   | Where [Customer references]() are used to find the applicable D365 customer account, select the applicable Reference number type to use in the lookup. 
-**Remittance format**       | Select the applicable [Remittance format]() that will be used when importing the file.
+**Reference number type**   | Where [Customer references](Customer-reference.md) are used to find the applicable D365 customer account, select the applicable Reference number type to use in the lookup. 
+**Remittance format**       | Select the applicable [Remittance format](Remittance-format.md) that will be used when importing the file.
 
 ## Financial utilities connection
 
@@ -71,4 +71,4 @@ The Accounts receivable **Financial utilities** page will be used to set the con
 The connections are used for **Customer remittance import** and **Direct debit returns**.
 
 To open the page, navigate to **Accounts receivable > Payments setup > Financial utilties connection**.<br>
-See the following [page]() for setup information.
+See the following [page](Finance-utilities-connections.md) for setup information.
