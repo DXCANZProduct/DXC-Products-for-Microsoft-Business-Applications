@@ -35,7 +35,7 @@ The functionality as described in the following subsections relates to customer 
 ## Prerequisites
 The following setup are prerequisites for the Customer remittance import
 
-1. [Accounts receivable parameters](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.html#accounts-receivable-parameters)
+1. [Accounts receivable parameters](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md#accounts-receivable-parameters)
 2. [Remittance format](../../Setup/ACCOUNTS-RECEIVABLE/Remittance-format.md)
 3. [Methods of payment](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.html#methods-of-payment)
 4. [Financial utilities connection](../../Setup/ACCOUNTS-RECEIVABLE/Finance-utilities-connections.md)
