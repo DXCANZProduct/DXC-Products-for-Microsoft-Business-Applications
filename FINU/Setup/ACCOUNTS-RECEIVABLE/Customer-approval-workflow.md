@@ -53,3 +53,8 @@ The below fields have been added to the existing Customer approval fields. When 
 -	Customer rebate group
 -	Commission group
 -	Payment schedule
+
+### Customer references
+- Reference number type
+- Reference number
+- Customer reference active
