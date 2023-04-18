@@ -62,7 +62,7 @@ On the Action Pane, select **New** and enter the following details.
 **Data entity**: Customer references
 
 ### Customer approval
-Customer reference fields are also available on **Customer approval** in **Accounts receivable parameters**
+Customer reference fields are also available on **Customer approval** in **Accounts receivable parameters**:
 
 - Reference number type
 - Reference number
