@@ -41,3 +41,8 @@ The following setup are prerequisites for the Customer remittance import
 4. [Financial utilities connection](../../Setup/ACCOUNTS-RECEIVABLE/Finance-utilities-connections.md)
 5. [Periodic task](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md#periodic-task)
 
+## Processing
+
+## Customer payment journal
+
+Filter **Imported via financial utilities connection** on the **Customer payment journal**, provides users with the ability to filter to journals imported via the batch job.
