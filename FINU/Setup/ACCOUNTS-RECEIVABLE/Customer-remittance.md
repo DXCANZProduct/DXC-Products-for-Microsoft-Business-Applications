@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  CustParameters
+ms.search.form:  CustParameters, DXCARRemittanceFormat, CustPaymMode, DXCARConnection
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
