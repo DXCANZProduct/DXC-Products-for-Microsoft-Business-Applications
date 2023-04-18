@@ -43,7 +43,7 @@ Customer remittance import includes the following functionality:
     - Automatically post created customer payment journal
     - If invoice can't be settled, option to create customer payment journal line as prepayment
     - Ability to attach original import file to created customer payment journal
-- Options per method of payments: 
+- Options per methods of payment: 
     - If D365 customer account can't be found, option to use an Error customer account.
     - Settle transaction
     - Customer payment journal line date can use Remittance transaction date or Today's date
