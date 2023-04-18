@@ -137,3 +137,7 @@ Buttons **Select all** and **Clear all** are also available to easily select or 
 
 > Note: To delete a line, select the record then select **Remove**. Lines can also be moved using the **Move up** or **Move down** buttons.
 > If a field needs to be added more than once, use manual **Add** button on the Mappings FastTab.
+
+### Where used
+
+The **Remittance format** is assigned on **Methods of payment**.
