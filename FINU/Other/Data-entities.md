@@ -113,6 +113,8 @@ Data entity: Budget utilities parameters
 
 # Finance utilities - AR utilities
 
+> Note: The forms and additional fields are only available where additional licensed feature **Finance utilities - AR utilities** is enabled
+
 ## Accounts receivable
 
 ### Remittance format
