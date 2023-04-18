@@ -40,7 +40,7 @@ On the Action Pane, select **New** and enter the following details.
 :--       |:--
 **Reference number type** | Set an unique reference number for each customer reference type.
 
-Data entity: Reference number type
+**Data entity**: Reference number type
 
 ## Customer references
 
@@ -59,5 +59,5 @@ On the Action Pane, select **New** and enter the following details.
 **Active**                | Set the customer reference as active. <br> Only one active record per **Reference number type** is allowed per customer. <br> If the customer has existing references for the reference number type, their Active would first need to be changed to _No_ before activating a new record for the type.
 
 
-Data entity: Customer references
+**Data entity**: Customer references
 
