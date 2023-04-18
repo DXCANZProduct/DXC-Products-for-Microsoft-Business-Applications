@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Finance Utilities 
-description: Bank statement reconciliation processing - Bank statement import 
+title: DXC Finance Utilities - AR Utilities
+description: Customer remittance processing
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-06-17
+ms.date: 2023-04-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  BankStatementTable
+ms.search.form: LedgerJournalTable_CustPaym
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -26,13 +26,20 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-## Bank statement import 
+# Customer remittance import 
 
-### Manual import
-The **Bank statement** page  is used to manually import the bank statement into your D365 environment. 
-Users can navigate to the page by going to **Cash and bank management > Bank statement reconciliation > Bank statements**
+The functionality as described in the following subsections relates to customer remittance import available in additional licensed feature **Finance utilities - AR utilities**.
 
-> Note: Setup **File attachment document type** on [Financial utilities parameters](../../Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters.md) to attach the import file to the created D365 Bank statement(s).
+> Note: The menu items and additional fields on existing menu items are only available where additional licensed feature **Finance utilities - AR utilities** is enabled.
+
+## Prerequisites
+The following setup are prerequisites for the Customer remittance import
+
+1. [Accounts receivable parameters](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.html#accounts-receivable-parameters)
+2. [Remittance format](../../Setup/ACCOUNTS-RECEIVABLE/Remittance-format.md)
+3. [Methods of payment](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.html#methods-of-payment)
+4. [Financial utilities connection](../../Setup/ACCOUNTS-RECEIVABLE/Finance-utilities-connections.md)
+5. [Periodic task](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.html#periodic-task)
 
 Select **Import statement**.
 Where the selected statement format is marked as **Customised format** the following additional fields are available on the import:
