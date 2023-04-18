@@ -45,4 +45,4 @@ The following setup are prerequisites for the Customer remittance import
 
 ## Customer payment journal
 
-Filter **Imported via financial utilities connection** on the **Customer payment journal**, provides users with the ability to filter to journals imported via the batch job.
+Filter **Imported via financial utilities connection** on the **Customer payment journal**, provides users with the ability to filter to journals imported via the periodic task.
