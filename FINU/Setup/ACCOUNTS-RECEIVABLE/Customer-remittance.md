@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: DXC Finance Utilities - AR utilities
+title: DXC Finance Utilities - AR Utilities
 description: Customer remittance setup
 author: jdutoit2
 manager: Kym Parker
