@@ -29,6 +29,8 @@ ms.dyn365.ops.version: AX 7.0.1
 # Customer remittance setup
 The fields as described in the following subsections are available to control the functionality for customer remittance import available in additional licensed feature **AR Utilities**.
 
+> Note: The fields are only available where additional licensed feature **Finance utilities - AR utilities** is enabled.
+
 ## Accounts receivable parameters
 
 The **Accounts receivable parameters** page contains additional fields used to define settings that apply to Customer remittance functionality.
