@@ -50,9 +50,9 @@ Then set the fields under **Import payments processing** as described in the fol
 
 **Field** | **Description**   
 :--       |:--
-**Error account customer**  | 
-**Settle transaction**      | 
-**Posting date**            | 
-**Reference number type**   | 
-**Remittance format**       | 
+**Error account customer**  | Where the D365 customer account can't be found, use this customer account to create the customer payment journal line
+**Settle transaction**      | When set to _Yes_ and the invoice can be found in D365, the invoice number will be populated on the customer payment journal line.
+**Posting date**            | Select the applicable posting date to be used for customer payment journal lines, options include:  <br> •	Remittance transaction date <br> •	Today’s date
+**Reference number type**   | Where [Customer references]() are used to find the applicable D365 customer account, select the applicable Reference number type to use in the lookup. 
+**Remittance format**       | Select the applicable [Remittance format]() that will be used when importing the file.
 
