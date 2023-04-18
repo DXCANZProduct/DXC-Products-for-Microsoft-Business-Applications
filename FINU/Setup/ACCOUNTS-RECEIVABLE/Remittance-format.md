@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.1
 # Remittance format
 The fields as described in the following subsections are available to control the file format for periodic import tasks available in additional licensed feature **Finance utilities - AR utilities**.
 
+> Note: The page is only available where additional licensed feature **Finance utilities - AR utilities** is enabled.
+
 To open the **Remittance format** page, go to **Accounts receivable > Payment setup > Remittance format**. <br>
 On the Action Pane, select **New** and enter the following details.
 
