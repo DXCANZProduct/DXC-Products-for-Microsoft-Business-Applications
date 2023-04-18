@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Finance Utilities 
-description: Cash and bank management setup - Finance utilities connections
+title: DXC Finance Utilities - AR Utilities
+description: Financial utilities connections setup
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-01-31
+ms.date: 2023-04-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  DFUConnection, DXCEncryptionParameters
+ms.search.form:  DXCARConnection, DXCEncryptionParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -28,11 +28,10 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 ## Financial utilities connection
-When the bank statements are to be imported via the periodic task **Import bank statements via financial utilities connection**, the applicable connection type must be setup using the **Financial utilities connections** page.
+When the Customer remittances are to be imported via the periodic task **Payment journal import**, the applicable connection type must be setup using the **Financial utilities connections** page.
 
 **Financial utilities connections** are used in the following:
-1.	Assigned to the applicable [Bank accounts](Bank-accounts.md) - Optional (for info).
-2.	Mandatory parameter in the periodic task [Import bank statements via financial utilities connection](Bank-statement-import.md). Only enabled connections can be selected in the periodic task.
+1.	Mandatory parameter in the periodic task [Payment journal import](). Only enabled AR Financial connections can be selected in the periodic task.
 
 The import file can be attached to the created D365 bank statement(s), by setting **File attachment document type** on **Financial utilities parameters**.
 
