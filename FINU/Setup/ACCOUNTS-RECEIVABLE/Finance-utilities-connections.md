@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 ## Financial utilities connection
-When the Customer remittances are to be imported via the periodic task **Payment journal import**, the applicable connection type must be setup using the **Financial utilities connections** page.
+When the **Customer remittances** or **Direct debit returns** are to be imported via their periodic tasks, the applicable connection type must be setup using the **Financial utilities connections** page.
 
 > Note: The menu is only available where additional licensed feature **Finance utilities - AR utilities** is enabled.
 
