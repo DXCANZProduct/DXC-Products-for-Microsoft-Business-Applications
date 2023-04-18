@@ -47,7 +47,7 @@ Customer remittance import includes the following functionality:
     - If D365 customer account can't be found, option to use an Error customer account.
     - Settle transaction
     - Customer payment journal line date can use Remittance transaction date or Today's date
-- - Ability to use the following methods to obtain D365 customer account:
+- Ability to use the following methods to obtain D365 customer account:
     - Customer reference number
     - Invoice number
 - Filter on customer payment journal to view journals created via the periodic task.
