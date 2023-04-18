@@ -37,9 +37,9 @@ The following setup are prerequisites for the Customer remittance import
 
 1. [Accounts receivable parameters](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md#accounts-receivable-parameters)
 2. [Remittance format](../../Setup/ACCOUNTS-RECEIVABLE/Remittance-format.md)
-3. [Methods of payment](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.html#methods-of-payment)
+3. [Methods of payment](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md#methods-of-payment)
 4. [Financial utilities connection](../../Setup/ACCOUNTS-RECEIVABLE/Finance-utilities-connections.md)
-5. [Periodic task](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.html#periodic-task)
+5. [Periodic task](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md#periodic-task)
 
 Select **Import statement**.
 Where the selected statement format is marked as **Customised format** the following additional fields are available on the import:
