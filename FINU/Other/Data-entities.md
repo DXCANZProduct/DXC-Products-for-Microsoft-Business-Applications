@@ -118,7 +118,7 @@ Data entity: Budget utilities parameters
 # Accounts receivable
 
 ### Remittance format
-Accounts receivable > Payments setup > Remittance format
+Accounts receivable > Payments setup > Remittance format <br>
 Data entity: 
 
 ### Financial utilities connections
