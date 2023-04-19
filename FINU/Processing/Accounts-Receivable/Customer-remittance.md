@@ -53,6 +53,7 @@ Customer remittance import includes the following functionality:
 - Ability to use the following methods to obtain D365 customer account:
     - Customer reference number
     - Invoice number
+    - If D365 customer account can't be found, the functionality will create the line against the Error customer account setup on the method of payment
 - Filter on customer payment journal to view journals created via the periodic task.
 
 ## Assumptions
