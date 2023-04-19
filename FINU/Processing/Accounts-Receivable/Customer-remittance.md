@@ -57,7 +57,8 @@ Customer remittance import includes the following functionality:
 - Filter on customer payment journal to view journals created via the periodic task.
 
 ## Assumptions
-
+The following assumptions apply to the functionality:
+- An invoice will only be referenced once in the import file
 
 ## Prerequisites
 The following setup are prerequisites for the Customer remittance import
