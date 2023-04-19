@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-11
+ms.date: 2023-04-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,6 +45,7 @@ Release date: TBD <br>
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--	
 12869	| Azure connection	| New field **Folder name** for Azure connections adds the ability to set an azure folder for incoming and outgoing paths. <br> **Test path connection** excludes folder names.
+13014	| Text template		| Additional **Row delimiter** option Tilde {~} 
 
 **Customer module**	
 
