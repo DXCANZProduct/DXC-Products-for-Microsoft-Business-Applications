@@ -63,7 +63,7 @@ The mapping is made up of two sections: <br>
 **Amount**              | Customer payment journal line entity > Credit
 **Reference number**    | Used to find D365 customer account and populate: Customer payment journal line entity > Ledger account <br> Account type is set to Customer.
 **Description**         | Customer payment journal line entity > Description
-**Invoice**             | Customer payment journal line entity > Invoice
+**Invoice**             | Customer payment journal line entity > Invoice <br> If Reference number not used to find Customer, the invoice can also be used to populate: <br> Customer payment journal line entity > Ledger account
 **Payment reference**   | Customer payment journal line entity > Payment reference
 **Date**                | Customer payment journal line entity > Date - If Methods of payment's **Posting date** is set to use _Remittance transaction date_
 
