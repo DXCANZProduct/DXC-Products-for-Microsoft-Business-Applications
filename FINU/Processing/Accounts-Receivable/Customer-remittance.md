@@ -116,3 +116,12 @@ Below section describes where each value on the Customer payment journal is sour
 **Sales tax group**         | Customer's **Sales tax group**
 **Exchange rate**           | Applicable exchange rate for currency
 **Prepayment journal voucher**  | Set to _Yes_ where invoice is not populated and Accounts receivable's **Create prepayment** is set to _Yes_
+
+## Error handling
+
+[Standard DMF Error handling](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dm-error-descriptions) applies when the file is imported using composite entiy **Customer payment journal**.
+
+The Financial utilities connection includes an error file location. <br>
+A file will be moved to error location in the following scenarios:
+- Journal was set to automatically post, but posting process ended in error.
+
