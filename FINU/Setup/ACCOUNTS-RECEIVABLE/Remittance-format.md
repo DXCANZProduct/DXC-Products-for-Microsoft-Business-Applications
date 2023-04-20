@@ -58,6 +58,15 @@ The mapping is made up of two sections: <br>
 - File sections (structured only) and
 - Field mappings (structured and flat)
 
+| **Remittance format field**  | **Data management target** |
+:--                     |:--
+**Amount**              | Customer payment journal line entity > Credit
+**Reference number**    | Used to find D365 customer account and populate: Customer payment journal line entity > Ledger account <br> Account type is set to Customer.
+**Description**         | Customer payment journal line entity > Description
+**Invoice**             | Customer payment journal line entity > Invoice
+**Payment reference**   | Customer payment journal line entity > Payment reference
+**Date**                | Customer payment journal line entity > Date - If Methods of payment's **Posting date** is set to use _Remittance transaction date_
+
 #### File sections
 
 ##### Flat
