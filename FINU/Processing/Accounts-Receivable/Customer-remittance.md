@@ -72,6 +72,24 @@ The following setup are prerequisites for the Customer remittance import
 
 ## Processing
 
+When the file is imported, AR Utilities converts the data as per setup and creates an import using Data management composite entity **Customer payment journal**.
+
+### Data entity mapping
+
+The fields from the [Remittance format] are mapped to the following DMF fields:
+
+**Data entity**     | **Data entity field**     | **Source**
+:--                 |:--                        |:--
+
+| **Remittance format field**  | **Data management target** |
+:--                     |:--
+**Amount**              | Customer payment journal line entity > Credit
+**Reference number**    | Used to find D365 customer account and populate: Customer payment journal line entity > Ledger account <br> Account type is set to Customer.
+**Description**         | Customer payment journal line entity > Description
+**Invoice**             | Customer payment journal line entity > Invoice
+**Payment reference**   | 
+**Date**                |
+
 ## Customer payment journal
 
 Filter **Imported via financial utilities connection** on the **Customer payment journal**, provides users with the ability to filter to journals imported via the periodic task.
