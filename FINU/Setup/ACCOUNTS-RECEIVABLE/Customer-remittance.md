@@ -91,6 +91,8 @@ After all the setup has been completed the periodic task can be set using **Acco
 **Name**              | Select the applicable **Financial utilities connection**. <br> Setup in Accounts receivable > Payments setup > Financial utilties connection
 **Method of payment** | Select the applicable **Method of payment**. <br> This will be used to find the Remittance format used to map the file and other setup utilitised in creating the customer payment journal.
 
+Duty: Maintain customer payments
+
 ## Processing
 
 Processing the Customer remittance is discussed [here](../../Processing/Accounts-Receivable/Customer-remittance.md)
