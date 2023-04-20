@@ -41,7 +41,7 @@ On the Action Pane, select **New** and enter the following details.
 :--             |:--
 **Custom format**               | When set to _Yes_, a custom format can be set via button **Mappings**.
 **Import format configuration** | When **Custom format** is set to _No_, an electronic reporting configuration can be selected.
-**Processing group**            | Select the progressing group that will be used when importing the file and processing to customer payment journal.
+**Processing group**            | Create an import Data management project using entity **Customer payment journal**. Select this in **Progressing group** to be used when importing the file and processing to customer payment journal.
 When **Custom format** is set to _Yes_: | 
 **Flat or structured**          | Select if the import file format is flat or structured. <br> **Flat** – A single line per record. Each line of text in the file has all the header information on it as well as the line information. <br> **Structured** – Multiple lines per record. Each line in the file is either a header type or a line type.
 **Delimited or fixed**          | Select if the import file format is delimited or fixed. <br> **Delimited** – Columns using a defined separator. <br> **Fixed** – Fixed width.
