@@ -48,7 +48,9 @@ Customer remittance import includes the following functionality:
 - Options per methods of payment: 
     - If D365 customer account can't be found, option to use an Error customer account.
     - Settle transaction. When set to _Yes_, the functionality will attempt to settle the payment line against an open invoice for the customer. Also see prepayment options per legal entity **
-    - Customer payment journal line date can use Remittance transaction date or Today's date
+    - Customer payment journal line date can use one of the following:
+        - Remittance transaction date
+        - Today's date
     - Remittance file format
 - Ability to use the following methods to obtain D365 customer account:
     - Customer reference number
