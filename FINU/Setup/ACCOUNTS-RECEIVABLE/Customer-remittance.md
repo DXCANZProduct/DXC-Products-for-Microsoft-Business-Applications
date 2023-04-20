@@ -67,6 +67,13 @@ Then set the fields under **Import payments processing** as described in the fol
 **Reference number type**   | Where [Customer references](Customer-reference.md) are used to find the applicable D365 customer account, select the applicable Reference number type to use in the lookup. 
 **Remittance format**       | Select the applicable [Remittance format](Remittance-format.md) that will be used when importing the file.
 
+Also ensure the following standard fields are completed as they are used to create the customer payment journal
+
+**Field** | **Description**   
+:--       |:--
+**Account type & Payment account** | Used to populate **Offset account type** and **Offset account** in the customer payment journal
+**Name**  | Customer payment journal is created with **Name** as set in Method of payment
+
 ## Financial utilities connection
 
 The Accounts receivable **Financial utilities** page will be used to set the connection where the import file will be found. <br>
