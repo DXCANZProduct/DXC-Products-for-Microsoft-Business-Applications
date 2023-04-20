@@ -103,7 +103,7 @@ Below section describes where each value on the Customer payment journal is sour
 :--                 |:--   
 **Date**            | Where Method of payment's **Posting date** is set to: <br> • **Today's date** <br> • **Remittance transaction date** - Import file's mapped field **Date**
 **Company**         | Company file is imported
-**Account**         | Calculated by either of the following methods: <br> • Import file's mapped field **Reference number**'s Customer account <br> • Import file's mapped field **Invoice**'s Invoice account <br> • Method of payment's **Error account customer**
+**Account**         | Calculated by either of the following methods: <br> • Import file's mapped field **Reference number**'s Customer account <br> • Import file's mapped field **Invoice**'s Invoice account <br> • Method of payment's **Error account customer** if above didn't find a customer account
 **Account name**    | Customer's **Name**
 **Invoice**         | Import file's mapped field **Invoice**
 **Description**     | Import file's mapped field **Description**
