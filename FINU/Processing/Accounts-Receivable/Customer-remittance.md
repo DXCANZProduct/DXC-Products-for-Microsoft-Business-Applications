@@ -35,7 +35,7 @@ The functionality as described in the following subsections relates to customer 
 ## Functionality
 
 Customer remittance import includes the following functionality:
-- Periodic import from ftp, sftp or Azure blob storage.
+- Periodic import of customer remittance file from ftp, sftp or Azure blob storage.
 - Decryption of import files supported.
 - Remittance custom format mapping.
 - One import file creates one customer payment journal.
