@@ -72,24 +72,47 @@ The following setup are prerequisites for the Customer remittance import
 
 ## Processing
 
-When the file is imported, AR Utilities converts the data as per setup and creates an import using Data management composite entity **Customer payment journal**.
+When the file is imported using the [periodic task](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md#periodic-task), AR Utilities converts the data as per setup and creates an import using Data management composite entity **Customer payment journal**.
 
-### Data entity mapping
+If the journal hasn't been created, review **Execution details** in Data management Job history.
 
-The fields from the [Remittance format] are mapped to the following DMF fields:
-
-**Data entity**     | **Data entity field**     | **Source**
-:--                 |:--                        |:--
-
-| **Remittance format field**  | **Data management target** |
-:--                     |:--
-**Amount**              | Customer payment journal line entity > Credit
-**Reference number**    | Used to find D365 customer account and populate: Customer payment journal line entity > Ledger account <br> Account type is set to Customer.
-**Description**         | Customer payment journal line entity > Description
-**Invoice**             | Customer payment journal line entity > Invoice
-**Payment reference**   | 
-**Date**                |
-
-## Customer payment journal
+### Customer payment journal filter
 
 Filter **Imported via financial utilities connection** on the **Customer payment journal**, provides users with the ability to filter to journals imported via the periodic task.
+
+### Customer payment journal document handling
+Import file is attached where Accounts receivable's **File attachment document type** is populated.
+
+### Customer payment journal values
+Below section describes where each value on the Customer payment journal is sourced from.
+
+
+#### Heading
+
+**Journal field**   | **Source**
+:--                 |:--                 
+**Name**            | Method of payment's Name
+**Description**     | Journal name's Description
+**Posted**          | Accounts receivable parameters's Auto post customer payment journal (Settlement tab)
+**Modified by**     | Batch job's Created by
+**Amounts include sales tax**   | Set to _Yes_ when prepayment voucher is created.
+
+#### Lines
+
+**Journal field**   | **Source**
+:--                 |:--   
+**Date**
+**Voucher**         | Journal names's Voucher series
+**Company**         | Company file is imported
+**Account**         | Calculated by either of the following methods: <br> Reference number <br> Invoice <br> Method of payment's Error account customer
+**Account name**
+**Invoice**
+**Description**
+**Debit**
+**Credit**
+**Currency**
+**Offset account type**
+**Offset account**
+**Method of payment**
+**Payment reference**
+**Exchange rate**
