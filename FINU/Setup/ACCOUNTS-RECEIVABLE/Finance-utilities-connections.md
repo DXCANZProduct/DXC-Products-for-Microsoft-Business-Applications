@@ -37,8 +37,7 @@ Accounts receivable **Financial utilities connections** are used in the followin
 
 The import file can be attached to the created D365 customer payment journal, by setting **File attachment document type** on the **Settlement** tab on **Accounts receivable parameters**.
 
-Examples where a file would we moved to **Import error path**:
-- 
+Examples where a file would we moved to **Import error path** are discussed in [Error handling](../../Processing/Accounts-Receivable/Customer-remittance.md#error-handling)
 
 > Note: If **Import error path** is not setup/incorrect, the file will be deleted from the import path and not archived. 
 
