@@ -93,7 +93,7 @@ Below section describes where each value on the Customer payment journal is sour
 :--                 |:--                 
 **Name**            | Method of payment's Name
 **Description**     | Journal name's Description
-**Posted**          | Accounts receivable parameters's Auto post customer payment journal (Settlement tab)
+**Posted**          | Journal is automatically posted where Accounts receivable parameters's **Auto post customer payment journal** (Settlement tab) is set to _Yes_
 **Modified by**     | Batch job's Created by
 **Amounts include sales tax**   | Set to _Yes_ when prepayment voucher is created.
 
@@ -101,13 +101,13 @@ Below section describes where each value on the Customer payment journal is sour
 
 **Journal field**   | **Source**
 :--                 |:--   
-**Date**
+**Date**            | Where Method of payment's **Posting date** is set to: <br> • **Today's date** <br> • **Remittance transaction date** - Import file's mapped field **Date**
 **Voucher**         | Journal names's Voucher series
 **Company**         | Company file is imported
-**Account**         | Calculated by either of the following methods: <br> Reference number <br> Invoice <br> Method of payment's Error account customer
-**Account name**
-**Invoice**
-**Description**
+**Account**         | Calculated by either of the following methods: <br> • **Reference number** <br> • **Invoice** <br> • Method of payment's **Error account customer**
+**Account name**    | Customer's Name
+**Invoice**         | Import file's mapped field **Invoice**
+**Description**     | Import file's mapped field **Description**
 **Debit**
 **Credit**
 **Currency**
