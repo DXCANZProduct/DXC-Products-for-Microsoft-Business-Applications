@@ -102,17 +102,17 @@ Below section describes where each value on the Customer payment journal is sour
 **Journal field**   | **Source**
 :--                 |:--   
 **Date**            | Where Method of payment's **Posting date** is set to: <br> • **Today's date** <br> • **Remittance transaction date** - Import file's mapped field **Date**
-**Voucher**         | Journal names's Voucher series
 **Company**         | Company file is imported
 **Account**         | Calculated by either of the following methods: <br> • **Reference number** <br> • **Invoice** <br> • Method of payment's **Error account customer**
-**Account name**    | Customer's Name
+**Account name**    | Customer's **Name**
 **Invoice**         | Import file's mapped field **Invoice**
 **Description**     | Import file's mapped field **Description**
-**Debit**
-**Credit**
-**Currency**
-**Offset account type**
-**Offset account**
-**Method of payment**
-**Payment reference**
-**Exchange rate**
+**Credit**          | Import file's mapped field **Amount**
+**Currency**                | Customer's Currency
+**Offset account type**     | Method of payment's **Account type**
+**Offset account**          | Method of payment's **Payment account**
+**Method of payment**       | Periodic task's **Method of payment**
+**Payment reference**       | Import file's mapped field **Payment reference**
+**Sales tax group**         | Customer's **Sales tax group**
+**Exchange rate**           | Applicable exchange rate for currency
+**Prepayment journal voucher**  | Set to _Yes_ where invoice is not populated and Accounts receivable's **Create prepayment** is set to _Yes_
