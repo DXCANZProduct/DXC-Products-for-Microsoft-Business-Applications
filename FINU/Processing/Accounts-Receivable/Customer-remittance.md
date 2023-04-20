@@ -108,7 +108,7 @@ Below section describes where each value on the Customer payment journal is sour
 **Invoice**         | Import file's mapped field **Invoice**
 **Description**     | Import file's mapped field **Description**
 **Credit**          | Import file's mapped field **Amount**
-**Currency**                | Customer's Currency
+**Currency**                | Customer's **Currency**
 **Offset account type**     | Method of payment's **Account type**
 **Offset account**          | Method of payment's **Payment account**
 **Method of payment**       | Periodic task's **Method of payment**
