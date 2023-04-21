@@ -38,6 +38,7 @@ Customer remittance import includes the following functionality:
 - Periodic import of customer remittance file from ftp, sftp or Azure blob storage.
 - Decryption of import files supported.
 - Remittance custom format mapping.
+- Composite entity Customer payment journal is used, and standard DMF validation and error handling applies.
 - One import file creates one customer payment journal. Each line in the import file creates one line in the customer payment journal.
 - Options per legal entity:
     - Automatically post created customer payment journal
