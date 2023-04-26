@@ -142,6 +142,14 @@ Where the company has registered to use ABN lookup Web API and the legal entity 
 - [ABN lookup and validation setup](Setup/ABN/ABN-lookup-and-validation.md)
 - [ABN lookup and validation processing](Processing/ABN/ABN-lookup-and-validation.md)
 
+## Accounts receivable - Customer references
+
+Ability to set multiple references against customers. These references can be used in the following scenarios:
+- Customer remittance file refers to a reference unique to the customer, but not an invoice number. This reference can be used to find the applicable customer account when creating the customer payment journal while importing customer remittances using the additional licensed feature AR Utilities.
+- Roadmap: Reconciliation matching rules additional ability to use the customer reference to find the applicable customer account when creating the customer payment journal.
+
+- [Customer reference setup](Setup/ACCOUNTS-RECEIVABLE/Customer-reference.md)
+
 ## Accounts receivable - Import customer remittance
 > Note: Additional licensed feature included in AR Utilities
 
