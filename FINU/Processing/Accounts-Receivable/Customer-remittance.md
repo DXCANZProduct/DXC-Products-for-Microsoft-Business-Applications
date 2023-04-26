@@ -5,7 +5,7 @@ title: DXC Finance Utilities - AR Utilities
 description: Customer remittance processing
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-21
+ms.date: 2023-04-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,9 +42,11 @@ Customer remittance import includes the following functionality:
 - One import file creates one customer payment journal. Each line in the import file creates one line in the customer payment journal.
 - Options per legal entity:
     - Automatically post created customer payment journal
-    - Create prepayment. ** If the Method of payment's Settle transaction is set to _Yes_:
-        - If an invoice can't be settled and automatic settlement is set to _Yes_, standard automatic settlement is used to settle open invoice(s) for the customer
-        - If an invoice can't be settled and automatic settlement is set to _No_ - option to create customer payment journal line as prepayment
+    - Create prepayment. 
+        - When set to _Yes_ and an invoice isn't settled, the payment journal line will be created as a prepayment.
+        - When set to _No_ and an invoice isn't settled, check if automatic settlement is allowed.
+            - Automatic settlement allowed: Feature will apply automatic settlement
+            - Automatic settlement not allowed: Payment journal line will be created without settling an invoice, and not created as prepayment. 
     - Ability to attach original import file to created customer payment journal
 - Options per methods of payment: 
     - If D365 customer account can't be found, option to use an Error customer account.
