@@ -49,7 +49,7 @@ Customer remittance import includes the following functionality:
             - Automatic settlement not allowed: Payment journal line will be created without settling an invoice, and not created as prepayment. 
     - Ability to attach original import file to created customer payment journal
 - Options per methods of payment: 
-    - If D365 customer account can't be found, option to use an Error customer account.
+    - If D365 customer account can't be found (by using customer reference number or invoice), option to create the payment journal line using the Error customer account.
     - Settle transaction. When set to _Yes_, the functionality will attempt to settle the payment line against an open invoice for the customer. Also see prepayment options per legal entity **
     - Customer payment journal line date can use one of the following:
         - Remittance transaction date
