@@ -52,6 +52,7 @@ The DXC Finance Utilities module provides enhanced functionalities to Microsoft 
 - **Accounts receivable**
     -   Customer bank account changes workflow
     -   ABN lookup and validation (Australia only)
+    -   Customer references
     -   Import customer remittance files (additional licensed feature included in AR Utilities)
 - **Budgeting**
     -   Budget import with separate column for each period
