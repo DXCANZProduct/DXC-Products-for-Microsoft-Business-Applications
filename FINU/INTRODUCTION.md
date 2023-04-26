@@ -149,7 +149,7 @@ Ability to set multiple references against customers. These references can be us
 - Customer remittance file refers to a reference unique to the customer, but not an invoice number. This reference can be used to find the applicable customer account when creating the customer payment journal while importing customer remittances using the additional licensed feature AR Utilities.
 - Roadmap: Reconciliation matching rules additional ability to use the customer reference to find the applicable customer account when creating the customer payment journal.
 
-
+Detail:
 - [Customer reference setup](Setup/ACCOUNTS-RECEIVABLE/Customer-reference.md)
 
 ## Accounts receivable - Import customer remittance
