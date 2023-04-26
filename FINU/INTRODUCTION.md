@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Introduction to Finance Utilities 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-29
+ms.date: 2023-04-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  Finance Utilities 
+ms.search.form:  
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -52,6 +52,7 @@ The DXC Finance Utilities module provides enhanced functionalities to Microsoft 
 - **Accounts receivable**
     -   Customer bank account changes workflow
     -   ABN lookup and validation (Australia only)
+    -   Import customer remittance files (additional licensed feature included in AR Utilities)
 - **Budgeting**
     -   Budget import with separate column for each period
 
@@ -140,6 +141,13 @@ Modification allows users to automatically save the electronic reporting file to
 Where the company has registered to use ABN lookup Web API and the legal entity setup in D365, it is possible to lookup and validate customer and vendor’s ABN in D365.
 - [ABN lookup and validation setup](Setup/ABN/ABN-lookup-and-validation.md)
 - [ABN lookup and validation processing](Processing/ABN/ABN-lookup-and-validation.md)
+
+## Accounts receivable - Import customer remittance
+> Note: Additional licensed feature included in AR Utilities
+
+Enhancement to import customer remittance files using data entity Customer payment journal.
+- [Import customer remittance setup](Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md)
+- [Import customer remittance processing](Processing/Accounts-Receivable/Customer-remittance.md)
 
 ## Budget import
 
