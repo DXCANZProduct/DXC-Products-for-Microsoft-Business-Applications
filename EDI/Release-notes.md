@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-21
+ms.date: 2023-04-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,6 +55,7 @@ Number	| Functionality	  	| Reason
 12615	| Sales invoice		| Additional Sales order header fields added to Sales invoice line fields: <br> • Sales responsible <br> • Sales taker
 12647	| New entity 'EDI sales order entity' | New entity **EDI sales order entity** (SAB_EDISalesTable) provides users the ability to populate this table for sales order orders not created via EDI. This is useful for cutover sales orders where a customer is not set to receive EDI ASN or Sales invoice for non-EDI Sales orders.
 13782	| SAB_EDISalesUseCustomerPrice	| Changed SAB_EDISalesUseCustomerPrice from Private to Public
+13698	| EDI Sales order processing - Pending POA	| Ability to select multiple **Pending POA** records and click **Send to EDI** on the EDI Sales order processing workspace
 
 **Vendor module**	
 
