@@ -70,8 +70,8 @@ The **Validation profile** can be assigned on the Incoming documents FastTab to 
 Where a Vendor purchase order acknowledgement staging record has errored because of Error tolerance validation, button **Override error validation** can be used to override and process to target. <br>
 
 The button is available on:
-- EDI > Vendor workspaces > EDI purchase order processing. Select the Validation tab and select POA **Errors** under Processing or the tile under Summary.
-- EDI > Documents > Vendor documents > Vendor purchase order acknowledgement. Enabled when status is not completed or canceled.
+- EDI > Vendor workspaces > EDI purchase order processing. Select the Validation tab and select **POA Errors** under Processing or the tile under Summary.
+- EDI > Documents > Vendor documents > Vendor purchase order acknowledgement. Button is enabled when status is not completed or canceled.
 
 ## Data entity
 - EDI Validation profile
