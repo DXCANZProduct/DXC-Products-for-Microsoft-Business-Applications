@@ -46,7 +46,7 @@ Number	  	| Functionality	  | Description
 :--       	|:--              |:--
 12857		| Data entity - Reconciliation matching rules	| Reverse changes for 11749. Removed fields added back.
 12888		| Data entity - Financial utilities connections	| Fixed entities required to import Financial utilties connections
-10429		| Data entity - Reconciliation matching rule - Chart of account delimiter	| When importing entity, the Offset account was imported with Chart of account delimiter after the ledger account.
+10429		| Data entity - Reconciliation matching rule 	| When importing entity, the Offset account was imported with Chart of account delimiter after the ledger account.
 
 
 # Current version
