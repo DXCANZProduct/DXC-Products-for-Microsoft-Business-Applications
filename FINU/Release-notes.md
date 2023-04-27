@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-17
+ms.date: 2023-04-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,6 +28,26 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Release notes
 This document describes the features that are either new or changed in the release version mentioned.
+
+# Next version
+
+### Release 10.0.29.20230TBD
+
+<ins>New features</ins>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+12644		| Customer references	| Ability to set multiple references against customers. These references can be used in the following scenarios: <br> • Customer remittance file refers to a reference unique to the customer, but not an invoice number. This reference can be used to find the applicable customer account when creating the customer payment journal while importing customer remittances using the additional licensed feature AR Utilities. <br> • Roadmap: Reconciliation matching rules additional ability to use the customer reference to find the applicable customer account when creating the customer payment journal.
+11357		| Import customer remittance file	| New licensed feature included in AR Utilities. <br> Enhancement to import customer remittance files using data entity Customer payment journal. <br> • [Import customer remittance setup](Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md) <br> • [Import customer remittance processing](Processing/Accounts-Receivable/Customer-remittance.md)
+
+<ins>Bug fixes</ins>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+12857		| Data entity - Reconciliation matching rules	| Reverse changes for 11749. Removed fields added back.
+12888		| Data entity - Financial utilities connections	| Fixed entities required to import Financial utilties connections
+10429		| Data entity - Reconciliation matching rule - Chart of account delimiter	| When importing entity, the Offset account was imported with Chart of account delimiter after the ledger account.
+
 
 # Current version
 
