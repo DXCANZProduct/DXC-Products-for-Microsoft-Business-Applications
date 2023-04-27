@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor Setup - Document type Validation profiles - Vendor purchase order acknowledgement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-01-19
+ms.date: 2023-04-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 7.0.1
 Users can access the form by navigating to **EDI > Setup > Document types**.
 
 Validation profiles are groups of business validation rules that can be applied to a trading partner. They provide the ability to set variable tolerances on various different aspects of the documents business process. Once a validation profile is created it can be configured by adding validation rules to it and defining the error tolerance of the rule. <br>
+
 Once setup for each document type, the validation profile can be assigned to each incoming document on the Trading partner setup in **EDI > Setup > Trading partners**.
 
 > Note:  The validation profiles FastTab is only displayed for Document types that have valid validation options
@@ -63,6 +64,14 @@ Once setup for each document type, the validation profile can be assigned to eac
 
 ## Where used
 The **Validation profile** can be assigned on the Incoming documents FastTab to document type **Vendor purchase order acknowledgement** for the Vendor Trading partner at **EDI > Setup > Trading partners**.
+
+## Override error validation
+
+Where a Vendor purchase order acknowledgement staging record has errored because of Error tolerance validation, button **Override error validation** can be used to override. <br>
+
+The button is available on:
+- EDI > Vendor workspaces > EDI purchase order processing. Select the Validation tab and select POA **Errors** under Processing or the tile under Summary.
+- EDI > Documents > Vendor documents > Vendor purchase order acknowledgement
 
 ## Data entity
 - EDI Validation profile
