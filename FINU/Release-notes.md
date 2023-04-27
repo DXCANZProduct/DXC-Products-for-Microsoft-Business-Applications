@@ -33,6 +33,8 @@ This document describes the features that are either new or changed in the relea
 
 ### Release 10.0.29.20230TBD
 
+Release date: TBD
+
 <ins>New features</ins>
 
 Number	  	| Functionality	  | Description
