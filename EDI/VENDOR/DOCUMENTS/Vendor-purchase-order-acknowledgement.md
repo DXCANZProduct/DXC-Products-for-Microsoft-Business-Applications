@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor Documents - Vendor purchase order acknowledgement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-12
+ms.date: 2023-04-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -142,6 +142,13 @@ Rule Id	                | Details	                            | Info/Warning tol
 **Minimum/maximum quantity**    | The POA quantity should be devisable by the multiple specified on the Default/Site order settings table. <br> Use unit conversion if POA unit of measurement differs. Need to set to Error if not allowed to increase deliver remainder over purchase order line over-delivery%	| Update PO line deliver remainder. 
 **Line item added**     | The POA contains a new line for the purchase order. <br> Example: another line is cancelled and replaced with this new line. | Add new line to D365 PO
 
+#### Override error validation
+
+Where a Vendor purchase order acknowledgement staging record has errored because of Error tolerance validation, button **Override error validation** can be used to override and process to target. <br>
+
+The button is available on:
+- EDI > Vendor workspaces > EDI purchase order processing. Select the Validation tab and select **POA Errors** under Processing or the tile under Summary.
+- EDI > Documents > Vendor documents > Vendor purchase order acknowledgement. Button is enabled when status is not completed or canceled.
 
 ## Purchase order
 Users can access **All purchase orders** page by navigating to **Accounts payable > Purchase orders > All purchase orders** and manage the EDI POA's Confirmation details by using the below buttons that have been added to the **EDI** tab on the Action Pane.
@@ -378,6 +385,7 @@ The following buttons are available on the **Vendor purchase order acknowledgeme
 **Reset Status**                | You can reset the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
 **Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
+**Override error validation**   | Enabled when **Staging to target status** is set to _Error_ or _Not started_. Ability to override error validation and process to target.
 
 The following buttons are available on the **Vendor purchase order acknowledgement**'s Action Pane, tab **Acknowledgement**.
 The **Acknowledgement** tab is available on all incoming documents staging pages and enables the user to process or view the **Functional acknowledgement outbound** that has been created for the inbound document.
