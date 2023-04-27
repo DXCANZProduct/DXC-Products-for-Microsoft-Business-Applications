@@ -64,8 +64,9 @@ Number	| Functionality	  	| Reason
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--
 12897	| Vendor purchase order acknowledgement (POA) | When **Line item - added** is used to create a new line on the D365 Purchase order (PO), the PO line's **Site** and **Warehouse** will be set by POA staging line if these fields are provided, else set by the Site and Warehouse on the PO header.
-12898	| Vendor advanced shipping notice (ASN) | Use the purchase order line's **location** when creating the Arrival journal. Previously used the default location.
 13075	| Vendor purchase order acknowledgement (POA) | Where a Vendor purchase order acknowledgement staging record has errored because of Error tolerance validation, button **Override error validation** can be used to override and process to target. <br> The button is available on: <br> • EDI > Vendor workspaces > EDI purchase order processing. Select the Validation tab and select **POA Errors** under Processing or the tile under Summary. <br> • EDI > Documents > Vendor documents > Vendor purchase order acknowledgement. Button is enabled when status is not completed or canceled.
+12898	| Vendor advanced shipping notice (ASN) | Use the purchase order line's **location** when creating the Arrival journal. Previously used the default location.
+
 
 **3PL module**	
 
