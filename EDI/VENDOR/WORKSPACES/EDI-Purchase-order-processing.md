@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor workspaces - EDI Purchase order processing
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-06-28
+ms.date: 2023-04-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -77,7 +77,8 @@ Warnings and errors are identified based on the validation profiles setup for th
 > Note: For further information relating to validation refer to the [validation setup](../SETUP/Validation-profiles.md). <br>
 > If a document has both Errors and warnings, it will be displayed in the Error list only.
 
-Documents in **Error** status will be managed in the [Document maintenance Workspace](../../CORE/Workspaces/EDI-Document-maintenance-workspace.md). <br> 
+**POA errors** allows users to manually override error validation by using button **Override error validation**.
+
 
 Field	            | Description
 |:--                |:--
