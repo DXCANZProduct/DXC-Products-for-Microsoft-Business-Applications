@@ -47,7 +47,8 @@ Number	| Functionality	  	| Reason
 12869	| Azure connection	| New field **Folder name** for Azure connections adds the ability to set an azure folder for incoming and outgoing paths. <br> **Test path connection** excludes folder names.
 13014	| Text template		| Additional **Row delimiter** option Tilde {~} 
 12403	| Export batch job	| Where there is no data to export, change export batch's log from error to info log
-N/A	| License manager	| License manager version 10.8.32.10171
+N/A	| License manager	| License manager version 10.8.32.10171 <br> Required changes to transition License Manager to a SaaS offering <br> Introducing allowing multiple ISV vendors to manage products through the License manager, see publisher in the product license overview table
+
 
 **Customer module**	
 
