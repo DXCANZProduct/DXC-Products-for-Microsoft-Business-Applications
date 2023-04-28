@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-27
+ms.date: 2023-04-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,6 +41,7 @@ Number	  	| Functionality	  | Description
 :--       	|:--              |:--
 12644		| Customer references	| Ability to set multiple references against customers - [Setup](Setup/ACCOUNTS-RECEIVABLE/Customer-reference.md). <br> These references can be used in the following scenarios: <br> • Customer remittance file refers to a reference unique to the customer, but not an invoice number. This reference can be used to find the applicable customer account when creating the customer payment journal while importing customer remittances using the additional licensed feature AR Utilities. <br> • Roadmap: Reconciliation matching rules additional ability to use the customer reference to find the applicable customer account when creating the customer payment journal.
 11357		| Import customer remittance file	| New licensed feature included in **AR Utilities**. <br> Enhancement to import customer remittance files from ftp, sftp or Azure blob storage using data entity Customer payment journal. <br> A wide variety of setup options allows flexibility on method to find the customer account, settlement, posting date, custom file mapping etc. <br> • [Import customer remittance setup](Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md) <br> • [Import customer remittance processing](Processing/Accounts-Receivable/Customer-remittance.md)
+13907		| Financial utilities connection	| Where file is moved to **error** path/container, the Financial utilites connection's Log Level will be set to _Error_. <br> Thus if connection's **Logging level** is set to _Error_, users can use custom alerts to be alerted when a file was moved to error path.
 N/A		| License manager	| License manager version 10.8.32.10171 <br> Required changes to transition License Manager to a SaaS offering <br> Introducing allowing multiple ISV vendors to manage products through the License manager, see publisher in the product license overview table
 
 <ins>Bug fixes</ins>
