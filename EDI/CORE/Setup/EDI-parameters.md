@@ -73,6 +73,7 @@ The following table describes the fields that are available on the **General** t
 **Custom time format**            |	Enter custom time format
 **Formatted time example**        |	Displays example time for **Custom time format** (in UTC timezone)
 <ins>**Sales orders**</ins>       |
+**Restrict EDI picking route generation to allowed document types** | • **No** (default) - Record created in table SAB_EDIWMSPICKINGROUTEEXT everytime a picking list is posted. <br> • Yes - Record will only be created in table SAB_EDIWMSPICKINGROUTEEXT for customers with Customer advanced shipping notice and Warehouses with Picking list documents enabled.
 **Allow historic PO types**       |	Customer order types: Confirmation, Cancel and Change have been moved to Order purpose. This field provides Backwards compatibility to still show these deprecated options under order types
 
 ## Number sequence
