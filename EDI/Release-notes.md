@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-27
+ms.date: 2023-04-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -83,6 +83,12 @@ Number	| Name		 | Description
 10532	| Inbound files <br> Outbound files	| When file was processed by batch **Log** didn't show the log message.
 12628	| Trading partner documents	| **EDI > Inquiries and reports > Trading partner documents**. Form couldn't open if environment contains a large number of trading partners (example 3000 EDI trading partners).
 12715	| Document type - XML and JSON templates | Removed automatic upper case applied to mapping name. For example renaming Currency**C**ode to Currency**c**ode, used to automatically revert to Currency**C**ode and processing would fail if the incoming document field was called Currency**c**ode.
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+14057	| Sales order	 | Fix to query on Trading partners link on Sales order (EDI tab on ActionPane).
 
 **Vendor module**
 
