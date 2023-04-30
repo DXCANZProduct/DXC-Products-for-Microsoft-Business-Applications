@@ -47,6 +47,7 @@ Number	| Functionality	  	| Reason
 12869	| Azure connection	| New field **Folder name** for Azure connections adds the ability to set an azure folder for incoming and outgoing paths. <br> **Test path connection** excludes folder names.
 13014	| Text template		| Additional **Row delimiter** option Tilde {~} 
 12403	| Export batch job	| Where there is no data to export, change export batch's log from error to info log
+13519	| Picking list		| New option **Restrict EDI picking route generation to allowed document types** on EDI parameters <br> • **No** (default) - Record created in table SAB_EDIWMSPICKINGROUTEEXT each time a picking list is posted. <br> • **Yes** - Record will only be created in table SAB_EDIWMSPICKINGROUTEEXT for customers with Customer advanced shipping notice and Warehouses with Picking list documents enabled.**
 N/A	| License manager	| License manager version 10.8.32.10171 <br> Required changes to transition License Manager to a SaaS offering <br> Introducing allowing multiple ISV vendors to manage products through the License manager, see publisher in the product license overview table
 
 
