@@ -81,14 +81,14 @@ When the file is imported using the [periodic task](../../Setup/ACCOUNTS-RECEIVA
 
 If the journal hasn't been created, review **Execution details** in Data management Job history.
 
-#### Customer payment journal filter
+<ins>**Customer payment journal filter**</ins>
 
 Filter **Imported via financial utilities connection** on the **Customer payment journal**, provides users with the ability to filter to journals imported via the periodic task.
 
-#### Customer payment journal document handling
+<ins>**Customer payment journal document handling**</ins>
 Import file is attached where Accounts receivable's **File attachment document type** is populated.
 
-#### Customer payment journal values
+<ins>**Customer payment journal values**</ins>
 Below section describes where each value on the Customer payment journal is sourced from.
 
 
