@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-27
+ms.date: 2023-04-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,6 +47,7 @@ Number	| Functionality	  	| Reason
 12869	| Azure connection	| New field **Folder name** for Azure connections adds the ability to set an azure folder for incoming and outgoing paths. <br> **Test path connection** excludes folder names.
 13014	| Text template		| Additional **Row delimiter** option Tilde {~} 
 12403	| Export batch job	| Where there is no data to export, change export batch's log from error to info log
+13519	| Picking list		| New option **Restrict EDI picking route generation to allowed document types** on EDI parameters <br> • **No** (default) - Record created in table SAB_EDIWMSPICKINGROUTEEXT each time a picking list is posted. <br> • **Yes** - Record will only be created in table SAB_EDIWMSPICKINGROUTEEXT for customers with Customer advanced shipping notice and Warehouses with Picking list documents enabled.**
 N/A	| License manager	| License manager version 10.8.32.10171 <br> Required changes to transition License Manager to a SaaS offering <br> Introducing allowing multiple ISV vendors to manage products through the License manager, see publisher in the product license overview table
 
 
@@ -83,6 +84,13 @@ Number	| Name		 | Description
 10532	| Inbound files <br> Outbound files	| When file was processed by batch **Log** didn't show the log message.
 12628	| Trading partner documents	| **EDI > Inquiries and reports > Trading partner documents**. Form couldn't open if environment contains a large number of trading partners (example 3000 EDI trading partners).
 12715	| Document type - XML and JSON templates | Removed automatic upper case applied to mapping name. For example renaming Currency**C**ode to Currency**c**ode, used to automatically revert to Currency**C**ode and processing would fail if the incoming document field was called Currency**c**ode.
+13854	| FTP and SFTP Connection types	| When new was selected on Incoming paths, the first Outgoing path document's Type was changed from Outbound to Inbound
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+14057	| Sales order	 | Fix to query on Trading partners link on Sales order (EDI tab on ActionPane).
 
 **Vendor module**
 
