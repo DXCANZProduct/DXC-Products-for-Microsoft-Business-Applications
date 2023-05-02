@@ -86,9 +86,11 @@ If the journal hasn't been created, review **Execution details** in Data managem
 Filter **Imported via financial utilities connection** on the **Customer payment journal**, provides users with the ability to filter to journals imported via the periodic task.
 
 <ins>**Customer payment journal document handling**</ins>
+
 Import file is attached where Accounts receivable's **File attachment document type** is populated.
 
 <ins>**Customer payment journal values**</ins>
+
 Below section describes where each value on the Customer payment journal is sourced from.
 
 
@@ -125,6 +127,9 @@ Below section describes where each value on the Customer payment journal is sour
 ## Error handling
 
 [Standard DMF Error handling](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dm-error-descriptions) applies when the file is imported using composite entiy **Customer payment journal**.
+
+Scenarios for error in Data management:
+- Customer is stopped for all and thus the customer payment journal line can't be created
 
 The Financial utilities connection includes an error file location. <br>
 A file will be moved to error location in the following scenarios:
