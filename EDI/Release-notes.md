@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-28
+ms.date: 2023-05-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -91,6 +91,7 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		 |:--
 14057	| Sales order	 | Fix to query on Trading partners link on Sales order (EDI tab on ActionPane).
+13654	| Sales invoice	 | Revert changes from 11723. Caused Batch invoicing not creating Sales invoice EDI staging records.
 
 **Vendor module**
 
