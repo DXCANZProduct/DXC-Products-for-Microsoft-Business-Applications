@@ -118,7 +118,13 @@ Data entity: Budget utilities parameters
 
 ### Remittance format
 Accounts receivable > Payments setup > Remittance format <br>
-Data entity: 
+
+**Order** | **Entity**                            
+:--       |:--
+1         | Finance utilities template file
+2         | Remittance format
+3         | Finance utilities template file section
+4         | Finance utilities template file line section
 
 ### Financial utilities connections
 Accounts receivable > Payments setup > Financial utilties connection
