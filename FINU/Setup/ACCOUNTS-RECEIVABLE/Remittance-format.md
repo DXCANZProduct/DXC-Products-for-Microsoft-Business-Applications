@@ -150,3 +150,12 @@ Buttons **Select all** and **Clear all** are also available to easily select or 
 ### Where used
 
 The **Remittance format** is assigned on **Methods of payment**.
+
+### Data entities
+
+**Order** | **Entity**                            
+:--       |:--
+1         | Finance utilities template file
+2         | Remittance format
+3         | Finance utilities template file section
+4         | Finance utilities template file line section
