@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-05-23
+ms.date: 2023-05-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  Release notes
+ms.search.form: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -26,22 +26,34 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# 	Release notes
+# Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
 # Current version
 
-### Release 10.0.22.20220407
+### Release 10.0.29.20230503
 
-DXC Forex contract 10.0.22 runs on the following Microsoft releases
+DXC Forex contract 10.0.29 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.22	  | [What’s new or changed in Dynamics 365 application version 10.0.22](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-22)
-Microsoft Dynamics 365 application	| 10.0.23	  | [What’s new or changed in Dynamics 365 application version 10.0.23](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-23)
-Microsoft Dynamics 365 application	| 10.0.24	  | [What’s new or changed in Dynamics 365 application version 10.0.24](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-24)
-Microsoft Dynamics 365 application	| 10.0.25	  | [What’s new or changed in Dynamics 365 application version 10.0.25](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-25)
-Microsoft Dynamics 365 application	| 10.0.26	  | [What’s new or changed in Dynamics 365 application version 10.0.26](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-26)
+Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
+Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
+Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
+Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
+Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
+
+#### Build 10.0.29.20230503TBD
+
+<ins>New features</ins>
+
+Number	| Functionality	  	| Reason
+:--	|:--		  	|:--	
+10456	| Allocate from Forex contract	| Ability to allocate purchase order(s) from Forex contract form. <br> Includes button **Auto allocate** which will allocate the open forex contract top-down to purchase orders with contract's currency that haven't been fully allocated to a contract. <br> ![Auto allocate](Images/ReleaseNotes_20230503_1.png "Auto allocate")
+
+# Previous version(s)
+
+### Release 10.0.22.20220407
 
 #### Build 10.0.22.202204071
 
@@ -52,9 +64,6 @@ Link to Purchase order		| Ability to link Forex contract(s) to a Purchase order 
 Link to Purchase order line 	| Ability to link Forex contract(s) to a Purchase order line
 Link to Invoice journal line 	| Ability to link Forex contract(s) to a Invoice journal line
 Cash in				| Ability to cash in Forex contract(s)
-
-
-# Previous version(s)
 
 
 
