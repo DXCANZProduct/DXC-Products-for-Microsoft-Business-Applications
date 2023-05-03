@@ -51,6 +51,7 @@ Release date: 3 May 2023
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--	
 10456	| Allocate from Forex contract	| Ability to allocate purchase order(s) from Forex contract form. <br> Includes button **Auto allocate** which will allocate the open forex contract top-down to purchase orders with contract's currency that haven't been fully allocated to a contract. <br> [User guide](PROCESSING/Link-forex-contract.html#forex-contracts) <br> <br> ![Auto allocate](IMAGES/ReleaseNotes_20230503_1.png "Auto allocate")
+N/A	| License manager	| License manager version 10.8.32.10162
 
 # Previous version(s)
 
