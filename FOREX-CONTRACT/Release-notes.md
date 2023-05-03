@@ -49,7 +49,7 @@ Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dyn
 
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--	
-10456	| Allocate from Forex contract	| Ability to allocate purchase order(s) from Forex contract form. <br> Includes button **Auto allocate** which will allocate the open forex contract top-down to purchase orders with contract's currency that haven't been fully allocated to a contract. <br> ![Auto allocate](Images/ReleaseNotes_20230503_1.png "Auto allocate")
+10456	| Allocate from Forex contract	| Ability to allocate purchase order(s) from Forex contract form. <br> Includes button **Auto allocate** which will allocate the open forex contract top-down to purchase orders with contract's currency that haven't been fully allocated to a contract. <br> ![Auto allocate](IMAGES/ReleaseNotes_20230503_1.png "Auto allocate")
 
 # Previous version(s)
 
