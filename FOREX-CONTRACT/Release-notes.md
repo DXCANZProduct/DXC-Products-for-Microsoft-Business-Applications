@@ -43,7 +43,7 @@ Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
 
-#### Build 10.0.29.20230503TBD
+#### Build 10.0.29.202305032
 Release date: 3 May 2023
 
 <ins>New features</ins>
