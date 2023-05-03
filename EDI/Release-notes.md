@@ -100,6 +100,12 @@ Number	| Name		 | Description
 :--	|:--		 |:--
 12747	| Vendor purchase order acknowledgement (POA) | When the Vendor purchase order acknowledgement is processed from import to staging, and there are two vendors with the same GLN (two different legal entities), it would pick up the first Vendor GLN's Company to create the staging record. <br> And then tries to find the purchase order in the incorrect company when processing to target.
 
+**3PL module**
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+14108	| Transfer order - History	| EDI History was limited to Transfer orders where the To (receiving) warehouse was setup for EDI. Now includes From (shipping) warehouse that are setup for EDI.
+
 # Current version
 
 Next release is planned for 28 April 2023.
