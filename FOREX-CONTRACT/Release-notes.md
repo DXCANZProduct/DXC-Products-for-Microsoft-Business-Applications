@@ -57,6 +57,7 @@ Number	| Functionality	  	| Reason
 ### Release 10.0.22.20220407
 
 #### Build 10.0.22.202204071
+Release date: 7 April 2022
 
 Functionality	  		| Reason
 :--               		|:--
