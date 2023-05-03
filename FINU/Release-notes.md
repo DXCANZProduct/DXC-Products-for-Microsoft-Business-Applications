@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-05-01
+ms.date: 2023-05-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ This document describes the features that are either new or changed in the relea
 
 # Next version
 
-### Release 10.0.29.20230TBD
+### Release 10.0.29.202305TBD
 
 Release date: TBD
 
@@ -51,6 +51,7 @@ Number	  	| Functionality	  | Description
 12857		| Data entity - Reconciliation matching rules	| Reverse changes for 11749. Removed fields added back.
 12888		| Data entity - Financial utilities connections	| Fixed entities required to import Financial utilties connections
 10429		| Data entity - Reconciliation matching rule 	| When importing entity, the Offset account was imported with Chart of account delimiter after the ledger account.
+14093		| Reconciliation matching rules | Security: Maintain privilege added for **Copy matching rule**. Added to Duty 'Enable bank management process'.
 
 
 # Current version
