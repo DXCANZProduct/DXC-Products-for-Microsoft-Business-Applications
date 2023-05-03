@@ -122,6 +122,8 @@ Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
 
+> Note: 10.0.34 Feature **Apply GST group for product variants in sales and procurement** isn't currently supported. <br> When importing a **Customer purchase order** document for a product, the Item GST group from the product is used (not variant's Item GST group). We will look into supporting this in a future release.
+
 #### Build 10.0.29.202301301 - Current
 Release date: 30 January 2023 <br> 
 
