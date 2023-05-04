@@ -5,7 +5,7 @@ title: DXC Solutions for DocuSign and Dynamics 365
 description: DXC Solutions for DocuSign and Dynamics 365 - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-02-21
+ms.date: 2023-05-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,9 +32,9 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.29.20230221
+### Release 10.0.29.20230421
 
-DXC Smart Business Form Email Manager 10.0.29 runs on the following Microsoft releases
+DXC DocuSign 10.0.29 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
@@ -42,6 +42,18 @@ Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
+Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
+
+#### Build 10.0.29.202304211
+
+Number	| Functionality	  | Reason
+:--     |:--              |:--
+N/A		| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> ![System parameters](../FINU/Images/ReleaseNotes_202304_2.png "System parameters")
+
+
+# Previous version(s)
+
+### Release 10.0.29.20230221
 
 #### Build 10.0.29.202302211
 
@@ -50,9 +62,6 @@ Number	| Functionality	  | Reason
 9734	| Dropdown list Tag type	| Ability to create dropdown [lists](SETUP/List.md) and use these as tags in the [Template](SETUP/Template.md).
 10036	| Remove deprecated tables	| Removed tables SAB_DSUser and SAB_DSUserMapping which related to previous methods of establishing authentication. These are no longer required following the release of OAuth2 authentication.
 N/A	| License manager	| License manager version 10.8.32.10156. <br> **Help** includes links to applicable GitHub user guide page/s. <br> ![Help](IMAGES/ReleaseNotes_20230221_1.png "Help")
-
-
-# Previous version(s)
 
 ### Release 10.0.25.20220630
 
