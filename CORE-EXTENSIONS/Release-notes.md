@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.29.202304142
+### Release 10.0.29.20230414
 
 DXC Core extensions 10.0.29 runs on the following Microsoft releases
 
