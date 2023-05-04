@@ -32,7 +32,6 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-Next release is planned for 28 April 2023.
 
 ### Release insert build number 
 
