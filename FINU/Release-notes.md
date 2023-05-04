@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-05-03
+ms.date: 2023-05-05
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,36 +29,11 @@ ms.dyn365.ops.version: AX 7.0.1
 # Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-# Next version
-
-### Release 10.0.29.202305TBD
-
-Release date: TBD
-
-<ins>New features</ins>
-
-Number	  	| Functionality	  | Description
-:--       	|:--              |:--
-12644		| Customer references	| Ability to set multiple references against customers - [Setup](Setup/ACCOUNTS-RECEIVABLE/Customer-reference.md). <br> These references can be used in the following scenarios: <br> • Customer remittance file refers to a reference unique to the customer, but not an invoice number. This reference can be used to find the applicable customer account when creating the customer payment journal while importing customer remittances using the additional licensed feature AR Utilities. <br> • Roadmap: Reconciliation matching rules additional ability to use the customer reference to find the applicable customer account when creating the customer payment journal.
-11357		| Import customer remittance file	| New licensed feature included in **AR Utilities**. <br> Enhancement to import customer remittance files from ftp, sftp or Azure blob storage using data entity Customer payment journal. <br> A wide variety of setup options allows flexibility on method to find the customer account, settlement, posting date, custom file mapping etc. <br> • [Import customer remittance setup](Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md) <br> • [Import customer remittance processing](Processing/Accounts-Receivable/Customer-remittance.md)
-13907		| Financial utilities connection	| Where file is moved to **error** path/container, the Financial utilites connection's Log Level will be set to _Error_. <br> Set connection's **Logging level** to _Error_ and use custom alerts to be alerted when a file has been moved to error path. <br> ![Connection log](Images/ReleaseNotes_202304_1.png "Connection log")
-N/A		| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> ![System parameters](Images/ReleaseNotes_202304_2.png "System parameters")
-
-<ins>Bug fixes</ins>
-
-Number	  	| Functionality	  | Description
-:--       	|:--              |:--
-12857		| Data entity - Reconciliation matching rules	| Reverse changes for 11749. Removed fields added back.
-12888		| Data entity - Financial utilities connections	| Fixed entities required to import Financial utilties connections
-10429		| Data entity - Reconciliation matching rule 	| When importing entity, the Offset account was imported with Chart of account delimiter after the ledger account.
-14093		| Reconciliation matching rules | Security: Maintain privilege added for **Copy matching rule**. Added to Duty 'Enable bank management process'.
-
-
 # Current version
 
-Next release is planned for 28 April 2023.
+Next release is planned for 30 June 2023.
 
-### Release 10.0.29.20230131
+### Release 10.0.29.20230505
 
 DXC Finance Utilities 10.0.29 runs on the following Microsoft releases
 
@@ -88,7 +63,37 @@ Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dyn
 > This feature is not supported for creating **new Vendor transactions** in the Bank reconciliation. If the feature is enabled, _no vendor subledger_ is created when the bank statement is posted. Therefor don't enable this feature if you require this functionality <br> <br>
 ![Bank reconciliation worksheet](Images/ReleaseNotes_20230131_4.png "Bank reconciliation worksheet - Mark as new Vendor")
 
-#### Build 10.0.29.202301317 - Current
+
+#### Build 10.0.29.202305051
+Release date: 5 May 2023 <br> 
+
+<ins>New features</ins>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+12644		| Customer references	| Ability to set multiple references against customers - [Setup](Setup/ACCOUNTS-RECEIVABLE/Customer-reference.md). <br> These references can be used in the following scenarios: <br> • Customer remittance file refers to a reference unique to the customer, but not an invoice number. This reference can be used to find the applicable customer account when creating the customer payment journal while importing customer remittances using the additional licensed feature AR Utilities. <br> • Roadmap: Reconciliation matching rules additional ability to use the customer reference to find the applicable customer account when creating the customer payment journal.
+11357		| Import customer remittance file	| New licensed feature included in **AR Utilities**. <br> Enhancement to import customer remittance files from ftp, sftp or Azure blob storage using data entity Customer payment journal. <br> A wide variety of setup options allows flexibility on method to find the customer account, settlement, posting date, custom file mapping etc. <br> • [Import customer remittance setup](Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md) <br> • [Import customer remittance processing](Processing/Accounts-Receivable/Customer-remittance.md)
+13907		| Financial utilities connection	| Where file is moved to **error** path/container, the Financial utilites connection's Log Level will be set to _Error_. <br> Set connection's **Logging level** to _Error_ and use custom alerts to be alerted when a file has been moved to error path. <br> ![Connection log](Images/ReleaseNotes_202304_1.png "Connection log")
+N/A		| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> ![System parameters](Images/ReleaseNotes_202304_2.png "System parameters")
+
+<ins>Bug fixes</ins>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+12857		| Data entity - Reconciliation matching rules	| Reverse changes for 11749. Removed fields added back.
+12888		| Data entity - Financial utilities connections	| Fixed entities required to import Financial utilties connections
+10429		| Data entity - Reconciliation matching rule 	| When importing entity, the Offset account was imported with Chart of account delimiter after the ledger account.
+14093		| Reconciliation matching rules | Security: Maintain privilege added for **Copy matching rule**. Added to Duty 'Enable bank management process'.
+
+
+
+# Previous version(s)
+
+Approximately one year of previous versions are included below.
+
+### Release 10.0.29.20230131
+
+#### Build 10.0.29.202301317
 Release date: 17 April 2023 <br> 
 
 <ins>Bug fixes</ins>
@@ -169,10 +174,6 @@ Number	  	| Functionality	  | Description
 :--       	|:--              |:--
 12324		| Bank statement import	| When a custom bank statement format was used and the file contained a bank account that isn't setup for advanced bank reconciliation, the bank statement headers were created for the bank accounts setup with advanced bank reconciliation, but no bank statement lines were created. <br> The fix now creates the bank statement lines for the bank accounts setup as advanced. <br> Note: Std GER doesn't import any bank statements where the file contains a bank account not setup as advanced bank reconciliation.
 
-
-# Previous version(s)
-
-Approximately one year of previous versions are included below.
 
 ### Release 10.0.29.20221130
 
