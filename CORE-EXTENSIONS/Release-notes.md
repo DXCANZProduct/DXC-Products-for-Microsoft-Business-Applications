@@ -5,7 +5,7 @@ title: Core Extensions
 description: DXC Core extensions - Release notes
 author: lcoll
 manager: Kym Parker
-ms.date: 2023-02-23
+ms.date: 2023-05-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.29.20230223
+### Release 10.0.29.202304142
 
 DXC Core extensions 10.0.29 runs on the following Microsoft releases
 
@@ -42,6 +42,22 @@ Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
+Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
+
+#### Build 10.0.29.202304142
+
+Release date: 14 April 2023
+
+<ins>New features</ins>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+N/A		| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> ![System parameters](../FINU/Images/ReleaseNotes_202304_2.png "System parameters")
+
+
+# Previous version(s)
+
+### Release 10.0.29.20230223
 
 #### Build 10.0.29.202302231
 
@@ -59,8 +75,6 @@ N/A		| License manager	| License manager version 10.8.32.10156. <br> **Help** in
 Number	| Name	          | Description
 :--     |:--              |:--
 9513	| User security audit details report	| Display **Privilege** information per Role and Duty.
-
-# Previous version(s)
 
 ### Release 10.0.22.20220331
 
