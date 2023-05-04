@@ -119,9 +119,9 @@ Number	| Name		 | Description
 :--	|:--		 |:--
 14108	| Transfer order - History	| EDI History was limited to Transfer orders where the To (receiving) warehouse was setup for EDI. Now includes From (shipping) warehouse that are setup for EDI.
 
-# Current version
+# Previous version(s)
 
-Next release is planned for 28 April 2023.
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.29.20230130
 
@@ -214,9 +214,7 @@ Number	| Name		 | Description
 12425	| Picking list	| **Sent to EDI** incorrectly displayed _No_ where the sent Picking list has received a Picking list registration and the lines have been split (for example multiple batches).
 12550	| Inventory adjustment workspace	| Updated security on the **Reset flag**, **Exclude**, **Include**, **Send to EDI** buttons for: <br> •  Open picking list <br> •  Open shipment advice - Purchase order <br> •  Open shipment advice - Return order <br> •  Open shipment advice - Voyage
 
-# Previous version(s)
 
-Approximately one year of previous versions are included below.
 
 ### Release 10.0.27.20221108
 
