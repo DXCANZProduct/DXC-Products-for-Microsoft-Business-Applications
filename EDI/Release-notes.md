@@ -30,13 +30,26 @@ ms.dyn365.ops.version: AX 7.0.1
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-# Next version
+# Current version
 
-### Release 10.0.29.202304TBD
+Next release is planned for 31 July 2023.
 
-#### Build 10.0.29.202304TBD
+### Release 10.0.29.20230505
 
-Release date: TBD <br> 
+DXC EDI 10.0.29 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
+Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
+Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
+Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
+Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
+
+> Note: 10.0.34 Feature **Apply GST group for product variants in sales and procurement** isn't currently supported. <br> When importing a **Customer purchase order** document for a product, the Item GST group from the product is used (not variant's Item GST group). We will look into supporting this in a future release.
+
+#### Build 10.0.29.202305051
+Release date: 5 May 2023 <br> 
 
 <ins>New features</ins>
 
@@ -112,19 +125,8 @@ Next release is planned for 28 April 2023.
 
 ### Release 10.0.29.20230130
 
-DXC EDI 10.0.29 runs on the following Microsoft releases
 
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
-Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
-Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
-Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
-Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
-
-> Note: 10.0.34 Feature **Apply GST group for product variants in sales and procurement** isn't currently supported. <br> When importing a **Customer purchase order** document for a product, the Item GST group from the product is used (not variant's Item GST group). We will look into supporting this in a future release.
-
-#### Build 10.0.29.202301301 - Current
+#### Build 10.0.29.202301301
 Release date: 30 January 2023 <br> 
 
 <ins>**Manual actions required**</ins>
