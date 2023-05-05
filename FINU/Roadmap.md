@@ -5,7 +5,7 @@ title: FINU
 description: FINU - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-03
+ms.date: 2023-05-05
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,16 +37,7 @@ This page describes the features planned for future releases and planned release
 
 Release			    | ETA
 :--			        |:--
-2023-04         | 28 April 2023
 2023-06         | 30 June 2023
-
-## Next release
-ETA: 28 April 2023
-
-The planned features are grouped by category.
-
-#### Accounts receivable
-- Additional licensed feature for importing and reconciling customer remittances.
 
 
 ## Roadmap
