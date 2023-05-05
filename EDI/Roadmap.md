@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-22
+ms.date: 2023-05-05
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,22 +36,14 @@ This page describes the features planned for future releases and planned release
 ## Release schedule
 
 Release			| ETA
-:--			|:--
-2023-04			| 28 April 2023
+:--			    |:--
 2023-07			| 31 July 2023
 2023-10     | 31 October 2023
+2024-01     | 31 January 2024
 
 
 ## Next release
-ETA: 28 April 2023
-
-The planned features are grouped by module. Core is included for all modules.
-
-#### Core
-- **Azure folders** - Currently Azure connection supports containers. Add ability to use folders.
-
-#### 3PL
-- **Product master** - Provide product information to a 3PL partner. Can be used to provide information about new products or changes to existing products.
+ETA: 31 July 2023
 
 
 
