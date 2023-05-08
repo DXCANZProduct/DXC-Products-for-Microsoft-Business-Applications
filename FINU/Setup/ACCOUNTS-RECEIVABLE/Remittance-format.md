@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 The fields as described in the following subsections are available to control the file format for periodic import tasks available in additional licensed feature **Finance utilities - AR utilities**.
 
 ## Number sequence
-The following number sequences are required for setting up AR Utilitie's Remittance format.
+The following number sequences are required for setting up AR Utilities Remittance format.
 
 **Field**     | **Description**
 :--           |:--
