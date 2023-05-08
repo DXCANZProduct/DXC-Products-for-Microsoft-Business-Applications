@@ -76,3 +76,5 @@ The following number sequences are available for advanced bank reconciliation.
 **Field**     | **Description**
 :--           |:--
 **Match Id**  | The number sequence that defines the Match IDs on the bank reconciliation Worksheet
+**Staging Id**  | The number sequence that defines AR Utilities Remittance format's Staging Id
+**Template ID**  | The number sequence that defines AR Utilities Remittance format's Template Id
