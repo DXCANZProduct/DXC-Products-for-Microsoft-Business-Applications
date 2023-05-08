@@ -31,6 +31,11 @@ The fields as described in the following subsections are available to control th
 
 > Note: The fields are only available where additional licensed feature **Finance utilities - AR utilities** is enabled.
 
+## Feature management
+Enable feature called **Finance utilities - AR utilities**. <br>
+If above feature is not visible, press **Check for updates** to refresh the feature management list.
+
+
 ## Accounts receivable parameters
 
 The **Accounts receivable parameters** page contains additional fields used to define settings that apply to Customer remittance functionality.
