@@ -5,7 +5,7 @@ title: DXC Finance Utilities - AR Utilities
 description: Customer remittance format setup
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-18
+ms.date: 2023-05-08
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,6 +29,16 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Remittance format
 The fields as described in the following subsections are available to control the file format for periodic import tasks available in additional licensed feature **Finance utilities - AR utilities**.
+
+## Number sequence
+The following number sequences are required for setting up AR Utilitie's Remittance format.
+
+**Field**     | **Description**
+:--           |:--
+**Staging Id**  | The number sequence that defines the Remittance format's Staging Id
+**Template ID**  | The number sequence that defines the Remittance format's Template Id
+
+## Remittance format
 
 > Note: The page is only available where additional licensed feature **Finance utilities - AR utilities** is enabled.
 
