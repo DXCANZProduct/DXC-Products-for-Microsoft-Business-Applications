@@ -38,6 +38,11 @@ The following number sequences are required for setting up AR Utilities Remittan
 **Staging Id**  | The number sequence that defines the Remittance format's Staging Id
 **Template ID**  | The number sequence that defines the Remittance format's Template Id
 
+## Data management
+
+Ensure entity **Customer payment journal header** contains field **DXCARIMPORTVIAFINU**. <br>
+Create a new import Data management project using composite entity **Customer payment journal**.
+
 ## Remittance format
 
 > Note: The page is only available where additional licensed feature **Finance utilities - AR utilities** is enabled.
@@ -51,7 +56,7 @@ On the Action Pane, select **New** and enter the following details.
 :--             |:--
 **Custom format**               | When set to _Yes_, a custom format can be set via button **Mappings**.
 **Import format configuration** | When **Custom format** is set to _No_, an electronic reporting configuration can be selected.
-**Processing group**            | Create an import Data management project using entity **Customer payment journal**. Select this in **Progressing group** to be used when importing the file and processing to customer payment journal.
+**Processing group**            | Select the Import Data project previously created in **Progressing group**. This data project will be used when importing the file and processing to customer payment journal.
 When **Custom format** is set to _Yes_: | 
 **Flat or structured**          | Select if the import file format is flat or structured. <br> **Flat** – A single line per record. Each line of text in the file has all the header information on it as well as the line information. <br> **Structured** – Multiple lines per record. Each line in the file is either a header type or a line type.
 **Delimited or fixed**          | Select if the import file format is delimited or fixed. <br> **Delimited** – Columns using a defined separator. <br> **Fixed** – Fixed width.
