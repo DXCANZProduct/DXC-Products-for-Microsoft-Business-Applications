@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-05-03
+ms.date: 2023-05-10
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.29.20230503
+### Release 10.0.29.20230510
 
 DXC Forex contract 10.0.29 runs on the following Microsoft releases
 
@@ -42,6 +42,20 @@ Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
+Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
+
+#### Build 10.0.29.202305101
+Release date: 10 May 2023
+
+<ins>New features</ins>
+
+Number	| Functionality	  	| Reason
+:--	|:--		  	|:--	
+N/A		| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> ![System parameters](../FINU/Images/ReleaseNotes_202304_2.png "System parameters")
+
+# Previous version(s)
+
+### Release 10.0.29.20230503
 
 #### Build 10.0.29.202305032
 Release date: 3 May 2023
@@ -52,8 +66,6 @@ Number	| Functionality	  	| Reason
 :--	|:--		  	|:--	
 10456	| Allocate from Forex contract	| Ability to allocate purchase order(s) from Forex contract form. <br> Includes button **Auto allocate** which will allocate the open forex contract top-down to purchase orders with contract's currency that haven't been fully allocated to a contract. <br> [User guide](PROCESSING/Link-forex-contract.html#forex-contracts) <br> <br> ![Auto allocate](IMAGES/ReleaseNotes_20230503_1.png "Auto allocate")
 N/A	| License manager	| License manager version 10.8.32.10162
-
-# Previous version(s)
 
 ### Release 10.0.22.20220407
 
