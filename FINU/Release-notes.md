@@ -359,11 +359,11 @@ Number	  | Name	          | Description
 
 
 # Installation process
-To align with MS best practice and to protect our IP the following changes have been made to the release process.
+To align with MS best practice and to protect our IP the following applies to the release process.
 - The license models DXCLicense and Sable37License will only be released as binaries as part of a deployable package. 
-- We will no longer be providing test models for the products, neither as binary or source code. 
+- We will not provide test models for the products, neither as binary or source code. 
 - We will only publish the release as a deployable package. 
-- Model source code can be provided on request if needed for extensions or debugging.
+- Model source code can be provided at our discretion. It can be requested for debugging upgrade errors, or if required for extensions.
 	- If you have been given the source code to our model for extension or debugging purpose, never make modifications directly to our models! 
 	- If you need an extension point, please send an email to ECLANZProductSupport@dxc.com and request it to be implemented. 
 
