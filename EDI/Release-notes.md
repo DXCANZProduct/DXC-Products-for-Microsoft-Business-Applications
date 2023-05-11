@@ -593,7 +593,7 @@ To align with MS best practice and to protect our IP the following applies to th
 - We will only publish the release as a deployable package. 
 - Model source code can be provided at our discretion. It can be requested for debugging upgrade errors, or if required for extensions.
 	- If you have been given the source code to our model for extension or debugging purpose, never make modifications directly to our models! 
-	- If you need an extension point, please send an email to [ECLANZProductSupport@dxc.com](ECLANZProductSupport@dxc.com) and request it to be implemented. 
+	- If you need an extension point, please send an email to ECLANZProductSupport@dxc.com and request it to be implemented. 
 
 
 Depending on the installation history follow one of these guides to install the new release. 
