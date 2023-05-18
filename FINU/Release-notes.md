@@ -29,40 +29,16 @@ ms.dyn365.ops.version: AX 7.0.1
 # Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-# Next version
-
-### Release 10.0.31.TBD
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-12631		| Cash and bank management	| UI updates		| • Update header on Bank accounts 'EFT parameters' to 'AP EFT parameters' <br> • Bank reconciliation warning log updated where the customer payment journal isn't automatically posted: "Customer payment journal % has been created successfully. Please post the payment journal manually, refresh the worksheet and manually match with the new bank transactions."
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-14277		| Cash and bank management	| Bank statement	| Importing bank statement file that contains multiple bank accounts in different legal entity's errored with: "The bank account % must enable the parameter Advanced bank reconciliation" for bank accounts in different legal entity.
-13554		| Cash and bank management	| Bank reconciliation	| From 10.0.31 running a mark as new reconciliation rule that offsets to Vendor, didn't create the record in the vendor subledger.
-14096		| Cash and bank management	| Reconciliation report	| Timeout on report when bank account has a large number of transactions.
-14230		| Accounts receivable		| AR Utilities		| Update Error customer account logic to work with blank invoice.
-14239		| Accounts receivable		| Data management	| Importing entity 'Customers V3' errored when ABN lookup is enabled.
-12902		| Accounts payable		| Data management	| Importing entity 'Vendors V2' errored when ABN lookup is enabled.
-14333		| Accounts payable		| Generate payments	| Only issue where the GER file is automatically saved to Azure blob storage with keyvault. Added security privilege to duty 'Maintain vendor payments'. Error: "Access denied to field Key Vault secret key (SecretKey) in table Key Vault parameters (KeyVaultParameters)."
-
 # Current version
 
 Next release is planned for 30 June 2023.
 
-### Release 10.0.29.20230505
+### Release 10.0.31.20230518
 
-DXC Finance Utilities 10.0.29 runs on the following Microsoft releases
+DXC Finance Utilities 10.0.31 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
-Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
@@ -85,6 +61,33 @@ Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dyn
 > This feature is not supported for creating **new Vendor transactions** in the Bank reconciliation. If the feature is enabled, _no vendor subledger_ is created when the bank statement is posted. Therefor don't enable this feature if you require this functionality <br> <br>
 ![Bank reconciliation worksheet](Images/ReleaseNotes_20230131_4.png "Bank reconciliation worksheet - Mark as new Vendor")
 
+#### Build 10.0.31.202305181
+Release date: 18 May 2023 <br> 
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+12631		| Cash and bank management	| UI updates		| • Update header on Bank accounts 'EFT parameters' to 'AP EFT parameters' <br> • Bank reconciliation warning log updated where the customer payment journal isn't automatically posted: "Customer payment journal % has been created successfully. Please post the payment journal manually, refresh the worksheet and manually match with the new bank transactions."
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+14277		| Cash and bank management	| Bank statement	| Importing bank statement file that contains multiple bank accounts in different legal entity's errored with: "The bank account % must enable the parameter Advanced bank reconciliation" for bank accounts in different legal entity.
+13554		| Cash and bank management	| Bank reconciliation	| From 10.0.31 running a mark as new reconciliation rule that offsets to Vendor, didn't create the record in the vendor subledger.
+14096		| Cash and bank management	| Reconciliation report	| Timeout on report when bank account has a large number of transactions.
+14230		| Accounts receivable		| AR Utilities		| Update Error customer account logic to work with blank invoice.
+14239		| Accounts receivable		| Data management	| Importing entity 'Customers V3' errored when ABN lookup is enabled.
+12902		| Accounts payable		| Data management	| Importing entity 'Vendors V2' errored when ABN lookup is enabled.
+14333		| Accounts payable		| Generate payments	| Only issue where the GER file is automatically saved to Azure blob storage with keyvault. Added security privilege to duty 'Maintain vendor payments'. Error: "Access denied to field Key Vault secret key (SecretKey) in table Key Vault parameters (KeyVaultParameters)."
+
+
+# Previous version(s)
+
+Approximately one year of previous versions are included below.
+
+### Release 10.0.29.20230505
 
 #### Build 10.0.29.202305051
 Release date: 5 May 2023 <br> 
@@ -107,11 +110,6 @@ Number	  	| Functionality	  | Description
 10429		| Data entity - Reconciliation matching rule 	| When importing entity, the Offset account was imported with Chart of account delimiter after the ledger account.
 14093		| Reconciliation matching rules | Security: Maintain privilege added for **Copy matching rule**. Added to Duty 'Enable bank management process'.
 
-
-
-# Previous version(s)
-
-Approximately one year of previous versions are included below.
 
 ### Release 10.0.29.20230131
 
