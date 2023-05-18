@@ -58,8 +58,6 @@ Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dyn
 > Note: From **10.0.31** MS has added a feature called **New voucher and date for new transactions in the advanced bank reconciliation bank statement**. <br>
 > This adds new std. setting **Set the booking date as default accounting date for new transactions** to Cash and bank management parameters. <br>
 > If this is set to _Yes_ it will override Finance utilities posting date **Today's date** for mark as new transactions and post the new transactions at the booking date. Thus if you want to use **Today's date** for new transactions, ensure the new setting is set to _No_ <br>
-> This feature is not supported for creating **new Vendor transactions** in the Bank reconciliation. If the feature is enabled, _no vendor subledger_ is created when the bank statement is posted. Therefor don't enable this feature if you require this functionality <br> <br>
-![Bank reconciliation worksheet](Images/ReleaseNotes_20230131_4.png "Bank reconciliation worksheet - Mark as new Vendor")
 
 #### Build 10.0.31.202305181
 Release date: 18 May 2023 <br> 
@@ -75,7 +73,7 @@ Number	  	| Module	| Functionality	  	| Description
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
 14277		| Cash and bank management	| Bank statement	| Importing bank statement file that contains multiple bank accounts in different legal entity's errored with: "The bank account % must enable the parameter Advanced bank reconciliation" for bank accounts in different legal entity.
-13554		| Cash and bank management	| Bank reconciliation	| From 10.0.31 running a mark as new reconciliation rule that offsets to Vendor, didn't create the record in the vendor subledger.
+13554		| Cash and bank management	| Bank reconciliation	| From 10.0.31 when feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' was enabled and running a mark as new reconciliation rule that offsets to Vendor, it didn't create the record in the vendor subledger.
 14096		| Cash and bank management	| Reconciliation report	| Timeout on report when bank account has a large number of transactions.
 14230		| Accounts receivable		| AR Utilities		| Update Error customer account logic to work with blank invoice.
 14239		| Accounts receivable		| Data management	| Importing entity 'Customers V3' errored when ABN lookup is enabled.
