@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-05-05
+ms.date: 2023-05-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,6 +28,28 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Release notes
 This document describes the features that are either new or changed in the release version mentioned.
+
+# Next version
+
+### Release 10.0.31.TBD
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+12631		| Cash and bank management	| UI updates		| • Update header on Bank accounts 'EFT parameters' to 'AP EFT parameters' <br> • Bank reconciliation warning log updated where the customer payment journal isn't automatically posted: "Customer payment journal % has been created successfully. Please post the payment journal manually, refresh the worksheet and manually match with the new bank transactions.
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+14277		| Cash and bank management	| Bank statement	| Importing bank statement file that contains multiple bank accounts in different legal entity's errored with: "The bank account % must enable the parameter Advanced bank reconciliation" for bank accounts in different legal entity.
+13554		| Cash and bank management	| Bank reconciliation	| From 10.0.31 running a mark as new reconciliation rule that offsets to Vendor, didn't create the record in the vendor subledger.
+14096		| Cash and bank management	| Reconciliation report	| Timeout on report when bank account has a large number of transactions.
+14230		| Accounts receivable		| AR Utilities		| Update Error customer account logic to work with blank invoice.
+14239		| Accounts receivable		| Data management	| Importing entity 'Customers V3' errored when ABN lookup is enabled.
+12902		| Accounts payable		| Data management	| Importing entity 'Vendors V2' errored when ABN lookup is enabled.
+14333		| Accounts payable		| Generate payments	| Only issue where the GER file is automatically saved to Azure blob storage with keyvault. Added security privilege to duty 'Maintain vendor payments'. Error: "Access denied to field Key Vault secret key (SecretKey) in table Key Vault parameters (KeyVaultParameters)."
 
 # Current version
 
