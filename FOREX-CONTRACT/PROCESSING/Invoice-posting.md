@@ -19,7 +19,7 @@ audience: Application User
 ms.reviewer: jdutoit2
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: [Global for most topics. Set Country/Region name for localizations]
+ms.search.region: ICONForex
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jdutoit2
 ms.search.validFrom: 2016-05-31

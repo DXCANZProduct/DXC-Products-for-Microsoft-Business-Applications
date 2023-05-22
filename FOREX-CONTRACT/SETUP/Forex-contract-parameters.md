@@ -19,6 +19,7 @@ audience: Application User
 ms.reviewer: jdutoit2
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: ICONForex
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jdutoit2
 ms.search.validFrom: 2016-05-31
