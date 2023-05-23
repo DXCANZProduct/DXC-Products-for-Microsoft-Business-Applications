@@ -35,11 +35,13 @@ The [release notes](Release-notes.md) describes the features that are either new
 
 **Potential of DXC Insights for Microsoft Dynamics 365**
 
-DXC Insights will send telemetry recording which user, time to load, and what menu item was used to an Azure Application Insights instance. It will record any errors that occur, saving error messages and call stacks along with reoccurring monitoring data. DXC Insights is also able to record exceptions caught during Dual-write sync.
-Application Insights collects the telemetry and helps analyze operation and performance of the application. You can use this information to identify problems that might be occurring or to identify improvements to the application that would most affect users.
+DXC Insights will transmit telemtry, recording information such as which user, time to load, and what menu item was used through to a telemetry logging app. It will record any errors that occur, saving error messages and call stacks along with reoccurring monitoring data. DXC Insights is also able to record exceptions caught during Dual-write sync.
+Out of the box Azure application insights has been incorporated as the default logging tool for the DXC Insights package, however DXC Insights offers extensibility and seamless integration with additional logging applications. Utilising this fuctionality DXC Insights can accommodate a variety of logging sources ranging from popular solutions such as Splunk, Dynatrace and Site24x7 through to custom logging tools developed in-house.
+Azure application Insights collects the telemetry and helps analyze the operation and performance of the application. Organizations can use this information to identify problems that might be occurring or to identify improvements to the application that would most affect users.
 
 
-With the data sent from DXC Insights, you can use Azure Application Insights to:
+
+With Azure Application Insights, organizations can use the data sent from DXC Insights to:
 - Proactively understand how an application is performing.  
   
 - Reactively review application execution data to determine the cause of an incident
