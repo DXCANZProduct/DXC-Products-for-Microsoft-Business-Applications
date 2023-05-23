@@ -35,12 +35,10 @@ This document describes the features that are either new or changed in the relea
 
 ### Release 10.0.31.20230522
 
-DXC Insights 10.0.29 runs on the following Microsoft releases
+DXC Insights 10.0.31 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
-Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
