@@ -18,7 +18,7 @@ audience: Application User
 ms.reviewer: jdutoit2
 # ms.tgt_pltfrm:
 ms.custom: ["21901", "intro-internal"]
-ms.search.region: Global
+ms.search.region: IconEDIVendorDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jdutoit2
 ms.search.validFrom:  2016-05-31
