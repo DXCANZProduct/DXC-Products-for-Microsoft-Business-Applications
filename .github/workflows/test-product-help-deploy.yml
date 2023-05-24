@@ -1,7 +1,9 @@
 name: Test Product Help Content deploy
 
-on: 
-  workflow_dispatch
+on:
+  push:
+    branches:
+      - user/adutt2/test-auto-update-all-product-help-content
 
 jobs:
   generate-html-files:
