@@ -1,32 +1,16 @@
 name: Test Product Help Content deploy
 
 on:
-  workflow_dispatch:
-    inputs:
-      products:
-        description: 'Product'
-        required: true
-        default: 'FINU' 
-        type: choice
-        options:
-        - 'FINU'
-        - 'DOCUSIGN'
-        - 'CORE-EXTENSIONS'
-        - 'SMART-SEND'
-        - 'FOREX-CONTRACT'
-        - 'EDI'
+  workflow_dispatch
 
 jobs:
   generate-html-files:
-
     runs-on: windows-latest
-
-    if: ${{ inputs.products }}
     steps:
     - uses: actions/checkout@master
     - name: Copy files to articles folder
       shell: pwsh
-      run: Copy-Item '${{ inputs.products }}\' 'build\dxcproducthelp\DXCDocFX\DXCDocFX\articles\' -Recurse
+      run: Copy-Item 'FINU/', 'DOCUSIGN/', 'CORE-EXTENSIONS/', 'SMART-SEND/', 'FOREX-CONTRACT/', 'EDI/' 'build\dxcproducthelp\DXCDocFX\DXCDocFX\articles\' -Recurse
     - uses: nuget/setup-nuget@v1
     - name: Restore nuget packages
       run: nuget restore build\dxcproducthelp\DXCDocFX\DXCDocFX.sln
