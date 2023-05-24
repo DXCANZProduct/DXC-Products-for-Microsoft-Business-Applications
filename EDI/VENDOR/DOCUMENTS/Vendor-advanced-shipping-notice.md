@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: PurchTableListPage, SAB_EDIStagingFormRun_VendASN
+ms.search.form: PurchTableListPage, Action%3ASAB_EDIStagingFormRun_VendASN
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
