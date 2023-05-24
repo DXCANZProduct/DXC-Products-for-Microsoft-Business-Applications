@@ -3,14 +3,6 @@ name: Test Product Help Content deploy
 on: 
   workflow_dispatch
 
-env:
-  PRODUCT_FINU: FINU/,
-  PRODUCT_DOCUSIGN: 'DOCUSIGN/',
-  PRODUCT_CORE_EXTENSIONS: 'CORE-EXTENSIONS/',
-  PRODUCT_SMART_SEND: 'SMART-SEND/',
-  PRODUCT_FOREX-CONTRACT: 'FOREX-CONTRACT/',
-  PRODUCT_EDI: 'EDI/'
-
 jobs:
   generate-html-files:
 
@@ -21,7 +13,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Copy files to articles folder
       shell: pwsh
-      run: Copy-Item $PRODUCT_FINU, $PRODUCT_DOCUSIGN, $PRODUCT_CORE_EXTENSIONS, $PRODUCT_SMART_SEND, $PRODUCT_FOREX-CONTRACT, $PRODUCT_EDI 'build\dxcproducthelp\DXCDocFX\DXCDocFX\articles\' -Recurse
+      run: Copy-Item 'FINU/', 'DOCUSIGN/', 'CORE-EXTENSIONS/', 'SMART-SEND/', 'FOREX-CONTRACT/', 'EDI/' 'build\dxcproducthelp\DXCDocFX\DXCDocFX\articles\' -Recurse
     - uses: nuget/setup-nuget@v1
     - name: Restore nuget packages
       run: nuget restore build\dxcproducthelp\DXCDocFX\DXCDocFX.sln
