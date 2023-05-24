@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDI3PLWHSInventStatusMapping, Action%3ASAB_EDIStagingFormRun_StockTransferShip_TO
+ms.search.form:  SAB_EDI3PLWHSInventStatusMapping, Action:SAB_EDIStagingFormRun_StockTransferShip_TO
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  PurchTableListPage, SAB_EDIStagingFormRun_VendPOA, SAB_EDIVendPOACodesMapping
+ms.search.form:  PurchTableListPage, Action:SAB_EDIStagingFormRun_VendPOA, SAB_EDIVendPOACodesMapping
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
