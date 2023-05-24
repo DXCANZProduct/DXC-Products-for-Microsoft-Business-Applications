@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-05-05
+ms.date: 2023-05-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,19 +34,28 @@ This document describes the features that are either new or changed in the relea
 
 Next release is planned for 31 July 2023.
 
-### Release 10.0.29.20230505
+### Release 10.0.31.20230505
 
-DXC EDI 10.0.29 runs on the following Microsoft releases
+DXC EDI 10.0.31 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
-Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
 
 > Note: 10.0.34 Feature **Apply GST group for product variants in sales and procurement** isn't currently supported. <br> When importing a **Customer purchase order** document for a product, the Item GST group from the product is used (not variant's Item GST group). We will look into supporting this in a future release.
+
+#### Build 10.0.31.202305054
+Release date: 25 May 2023 <br> 
+
+<ins>Bug fixes</ins>
+
+**Vendor module**	
+
+Number	| Name		 | Description
+14407	| Purchase invoice	| Where the purchase invoice contained a zero unit price, the purchase order line's unit price was used in calculation the invoice's line amount. This has now been fixed to use the staging line's unit price.
+
 
 #### Build 10.0.29.202305053
 Release date: 5 May 2023 <br> 
