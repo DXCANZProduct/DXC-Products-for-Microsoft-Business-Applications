@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: PurchTableListPage, SAB_EDIStagingFormRun_VendPO, SAB_EDIVendOrderTypeMapping, SAB_EDIVendOrderPurposeMapping, SAB_EDIVendCarrierModeMapping, SAB_EDIVendChargesCodeMapping, SAB_EDIVendPaymentTermsMapping, SAB_EDIVendMiscChargeIndicatorMapping
+ms.search.form: PurchTableListPage, Action%3ASAB_EDIStagingFormRun_VendPO, SAB_EDIVendOrderTypeMapping, SAB_EDIVendOrderPurposeMapping, SAB_EDIVendCarrierModeMapping, SAB_EDIVendChargesCodeMapping, SAB_EDIVendPaymentTermsMapping, SAB_EDIVendMiscChargeIndicatorMapping
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2

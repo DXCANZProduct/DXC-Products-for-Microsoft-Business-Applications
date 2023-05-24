@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SAB_EDI3PLProductConfiguration, EcoResProductDetailsExtendedGrid, SAB_EDIStagingFormRun_ProductMaster
+ms.search.form: SAB_EDI3PLProductConfiguration, EcoResProductDetailsExtendedGrid, Action%3ASAB_EDIStagingFormRun_ProductMaster
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2

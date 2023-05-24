@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  SAB_EDIStagingFormRun_InventAdjReconciliation, SAB_EDIInventAdjReconciliation, SAB_EDI3PLWHSInventStatusMapping
+ms.search.form:  Action%3ASAB_EDIStagingFormRun_InventAdjReconciliation, SAB_EDIInventAdjReconciliation, SAB_EDI3PLWHSInventStatusMapping
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
