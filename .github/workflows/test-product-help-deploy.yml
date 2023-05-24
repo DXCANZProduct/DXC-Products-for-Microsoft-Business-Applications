@@ -1,14 +1,15 @@
 name: Test Product Help Content deploy
 
 on: 
-  workflow_dispatch:
-    env:
-      PRODUCT_FINU: 'FINU/',
-      PRODUCT_DOCUSIGN: 'DOCUSIGN/',
-      PRODUCT_CORE_EXTENSIONS: 'CORE-EXTENSIONS/',
-      PRODUCT_SMART_SEND: 'SMART-SEND/',
-      PRODUCT_FOREX-CONTRACT: 'FOREX-CONTRACT/',
-      PRODUCT_EDI: 'EDI/'
+  workflow_dispatch
+
+env:
+  PRODUCT_FINU: FINU/,
+  PRODUCT_DOCUSIGN: 'DOCUSIGN/',
+  PRODUCT_CORE_EXTENSIONS: 'CORE-EXTENSIONS/',
+  PRODUCT_SMART_SEND: 'SMART-SEND/',
+  PRODUCT_FOREX-CONTRACT: 'FOREX-CONTRACT/',
+  PRODUCT_EDI: 'EDI/'
 
 jobs:
   generate-html-files:
