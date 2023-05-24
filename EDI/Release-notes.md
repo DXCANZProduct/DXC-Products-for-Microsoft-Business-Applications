@@ -54,6 +54,7 @@ Release date: 25 May 2023 <br>
 **Vendor module**	
 
 Number	| Name		 | Description
+:--	|:--		  	|:--	
 14407	| Purchase invoice	| Where the purchase invoice contained a zero unit price, the purchase order line's unit price was used in calculation the invoice's line amount. This has now been fixed to use the staging line's unit price.
 
 
