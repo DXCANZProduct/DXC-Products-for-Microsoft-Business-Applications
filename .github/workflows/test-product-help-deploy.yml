@@ -1,16 +1,11 @@
 name: Test Product Help Content deploy
 
 on:
-  push:
-    branches:
-      - user/adutt2/test-auto-update-all-product-help-content
+  workflow_dispatch
 
 jobs:
   generate-html-files:
-
     runs-on: windows-latest
-
-    if: ${{ inputs.products }}
     steps:
     - uses: actions/checkout@master
     - name: Copy files to articles folder
