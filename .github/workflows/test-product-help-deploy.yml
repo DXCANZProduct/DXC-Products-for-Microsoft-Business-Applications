@@ -1,6 +1,7 @@
 name: Test Product Help Content deploy
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
 
 env:
   PRODUCT_FINU: 'FINU/',
