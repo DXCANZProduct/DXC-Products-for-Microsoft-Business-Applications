@@ -24,7 +24,8 @@ The built-in views are helpful to track application health proactively and for r
 ![failures](IMAGES/Failures.png)
 
 #### Dual-write exceptions
-With the “Dual-write” telemetry logging enabled, see [Azure Application Insights telemetry configuration](setup.md#4azure-application-insights-telemetry-configuration), you can add an additional filter on the ‘Failures’ view to search for exceptions that get triggered during dual-write sync. 
+With the “Dual-write” telemetry logging enabled, see [Reoccurring monitoring](Reoccurring_monitoring.md#1-Configure-Periodic-monitoring), you can add an additional filter on the ‘Failures’ view to search for exceptions that get triggered during dual-write sync. 
+
 On the ‘Failures’ view add a new filter pill, select ‘Exception Type’ as the property, and select ‘Dual-write’ as the value. Click ‘Refresh’ and a list of dual-write exceptions will get listed.
 
 ![Dual_Write](IMAGES/Dual_Write.png)
