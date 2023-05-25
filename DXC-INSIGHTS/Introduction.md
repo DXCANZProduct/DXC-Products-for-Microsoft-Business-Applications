@@ -57,6 +57,7 @@ Application Insights provides other features including, but not limited to: <br>
 - [How to Set up DXC Insights](../DXC-INSIGHTS/setup.md)
 - [Reoccurring monitoring](../DXC-INSIGHTS/Reoccurring_monitoring.md)
 - [Review and set up data monitoring](../DXC-INSIGHTS/Review_and_set_up_monitored_data.md)
+- [Dashboard for Application Insights](../DXC-INSIGHTS/Dashboards.md)
 - [FAQ](../DXC-INSIGHTS/FAQ.md)
 
 
