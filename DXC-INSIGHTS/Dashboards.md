@@ -43,8 +43,8 @@ Select the Resource group to which your new dashboard will belong to. Enter the 
 
 The portal validates your template and the values you provided. After validation succeeds, select *‘Create’* to start the deployment.
 
-![Custom_deployment_validation](IMAGES/Custom_deployment_validation)
+![Custom_deployment_validation](IMAGES/Custom_deployment_validation.png)
 
 Once your validation has passed, you will see the status of the deployment. When it completes successfully, select *‘Go to resource’* to see the dashboard.
 
-![Go_to_resource](IMAGES/Go_to_resource)
+![Go_to_resource](IMAGES/Go_to_resource.png)
