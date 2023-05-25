@@ -2,37 +2,49 @@
 
 Application Insights has always provided a summary overview pane to allow quick, at-a-glance assessment of your application's health and performance. 
 
-### 1. DXC Insights Dashboard Overview. 
+###  DXC Insights Dashboard Overview. 
 The DXC Insights dashboard gives a summarized overview of Exceptions and Failures, System health telemetry and Usage data for your application.
 
 ![Dashboard_overview](IMAGES/Dashboard_overview.png)
 
-### 2. Performance
-You get an overview of the most exhaustive menu items/forms to open and run, and jump into analytics with [Performance view](https://learn.microsoft.com/en-us/azure/azure-monitor/app/tutorial-performance) 
-– get deep insights into how your Application or API and downstream dependencies are performing and find for a representative sample to [explore end to end](https://learn.microsoft.com/en-us/azure/azure-monitor/app/transaction-diagnostics). 
+### 1. Exceptions and failures
+The exceptions and failures provide a summary of exceptions caught during Dual-write sync, top 10 errors encountered in batch processing, server exceptions and dependency failures and failed requests.
 
-![Performance](IMAGES/Performance.png)
+### 2. System health
+The system health section provides telemetry on SQL health metrics including average CPU utilization, average memory usage, average input/output and average session utilization over the last 12 hours. These metrics are time locked for the last 12 hours and are not controlled by the dashboard time filter. The time range will need to be manually changed on these tiles to get custom time range metrics. The system health also provides a summary of the server response time based on the dashboard’s time range filter.
 
-### 3.	Failures
-Get an overview of the exceptions that are thrown due to errors on the [Failure view](https://learn.microsoft.com/en-us/azure/azure-monitor/app/tutorial-runtime-exceptions) – understand which components or actions are generating failures and triage errors and exceptions. 
-The built-in views are helpful to track application health proactively and for reactive root-cause-analysis.
+### 3. Usage
+The usage section gives an overview of user sessions over the last 24 hours, as well as the number of users that have been active on the application over the dashboard’s time range. Requests display a count of requests received by the server. You can also see the application’s most viewed pages, slowest loading pages and top 10 most time-consuming requests on the server in this section.
 
-![failures](IMAGES/Failures.png)
+### 4. DXC Insights dashboard templates
+DXC Insights dashboard templates can be accessed from the DXC Insights dashboard templates fast tab.  Navigate to  **System Administration > Setup >DXC Insights > DXC Insights parameters** then select the 'Azure application insights parameters' section to display the DXC Insights dashboard templates fast tab. Click on ‘Check for updates’ to download the latest templates that we have released. Select a template version and Click *‘Download file’* to download the template.
 
-#### Dual-write exceptions
-With the “Dual-write” telemetry logging enabled, see [Reoccurring monitoring](Reoccurring_monitoring.md#1-Configure-Periodic-monitoring), you can add an additional filter on the ‘Failures’ view to search for exceptions that get triggered during dual-write sync. 
+![Insights_dashboard_templates](IMAGES/Insights_dashboard_templates.png)
 
-On the ‘Failures’ view add a new filter pill, select ‘Exception Type’ as the property, and select ‘Dual-write’ as the value. Click ‘Refresh’ and a list of dual-write exceptions will get listed.
 
-![Dual_Write](IMAGES/Dual_Write.png)
+### 5. DXC Insights dashboard deployment
+ARM templates are JSON or Bicep files that define the resources you need to deploy for your solution. To understand the concepts associated with deploying and managing your Azure solutions, see [how to create an Azure Resource Manager template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/quickstart-create-templates-use-the-portal) and [template deployment overview](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview).
 
-### 4.	Transaction Search
-You can make a transaction search on the events in system based on data received from DXC Insights.
+In summary, to deploy the DXC Insights dashboard for your Azure Application Insights instance, download and keep a local copy of the DXCInsightsDashboardTemplate json file. In the web browser, go to the [Azure portal](https://portal.azure.com/) and sign in. From the Azure portal search bar, search for deploy a custom template and then select it from the available options.
 
-![Tranasaction.png](IMAGES/Tranasaction.png)
+![dashboard_deployment](IMAGES/dashboard_deployment.png)
 
-### 5.	Metrics
-You can monitor performance and health metrics of SQL Database
-  Read more about [Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?tabs=net) and what it can do
+Select *‘Build your own template in the editor’* template
 
-![Metrics.png](IMAGES/Metrics.png)
+![Custom_deployment](IMAGES/Custom_deployment.png)
+
+Select *‘Load file’* and upload the ‘DXCInsightsDashboardTemplate.json’ file. Click *‘Save’*.
+
+![Edit_template](IMAGES/Edit_template.png)
+
+Select the Resource group to which your new dashboard will belong to. Enter the appropriate Instance details for region and the name of the dashboard. By default, the dashboard name is ‘DXCInsightsDashboard’. Enter the ‘Application Insights Instance’ name for which the dashboard will be created, and finally enter the ‘Resource group’ name to which the previously entered Application Insights instance belongs to. Select *‘Review + create’*.
+
+![Custom_deployment_review](IMAGES/Custom_deployment_review.png)
+
+The portal validates your template and the values you provided. After validation succeeds, select *‘Create’* to start the deployment.
+
+![Custom_deployment_validation](IMAGES/Custom_deployment_validation)
+
+Once your validation has passed, you will see the status of the deployment. When it completes successfully, select *‘Go to resource’* to see the dashboard.
+
+![Go_to_resource](IMAGES/Go_to_resource)
