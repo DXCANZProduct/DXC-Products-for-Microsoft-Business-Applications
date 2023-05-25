@@ -1,4 +1,4 @@
-# Setting up DXC Insights (with Azure Application Insights)
+# DXC Insights Set up (with Azure Application Insights)
 
 ###	1. Azure Application Insights instance
 Start by creating a new Application Insights instance in Azure. See [MS doc](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-new-resource)
