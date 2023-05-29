@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: DXC Insights
+title: DXC Insights for Dynamics 365 Finance and Operations
 description: DXC Insights - Release notes
 author: Peter Musumeci
 manager: Kym Parker
