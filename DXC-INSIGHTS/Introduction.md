@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: DXC Insights for Dynamics 365 Finance and Operations
+title: DXC Insights for D365 Finance and Operations
 description: Introduction to DXC Insights
 author: Peter Musumeci
 manager: Kym Parker
@@ -26,7 +26,7 @@ ms.search.validFrom: 2023-03-28
 ms.dyn365.ops.version: 10.0.32
 ---
 
-# DXC Insights for Dynamics 365 Finance and Operations
+# DXC Insights for D365 Finance and Operations
 
 ## Release notes
 The [release notes](Release-notes.md) describes the features that are either new or changed. 
