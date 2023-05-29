@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: DXC Insights
+title: DXC Insights for Dynamics 365 Finance and Operations
 description: Introduction to DXC Insights
 author: Peter Musumeci
 manager: Kym Parker
@@ -26,14 +26,14 @@ ms.search.validFrom: 2023-03-28
 ms.dyn365.ops.version: 10.0.32
 ---
 
-# DXC Insights
+# DXC Insights for Dynamics 365 Finance and Operations
 
 ## Release notes
 The [release notes](Release-notes.md) describes the features that are either new or changed. 
 
 ## Introduction
 
-**Potential of DXC Insights for Microsoft Dynamics 365**
+**Potential of DXC Insights for Dynamics 365 Finance and Operations**
 
 DXC Insights will capture data such as user information, time to load, and menu item used. Telemetry is subsequently transmitted through to a logging application. It will record errors, saving error messages and call stacks.  DXC Insights can monitor recurring events and exceptions, even those occuring during Dual-write sync.
 
