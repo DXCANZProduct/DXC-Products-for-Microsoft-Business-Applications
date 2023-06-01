@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Setup - Document type Setting profiles - Customer purchase order
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-01-18
+ms.date: 2023-06-01
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,7 +47,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Maximum positive price variance** | Where **Use Customer Price** is set to _Yes_: <br> Specify the maximum positive price variance that can occur without warning	| It is recommended that these settings are set to at least 0.01 if the 'include tax flag is ticked' to avoid any rounding differences between the two solutions being flagged.
 **Create release order without blanket order** | The action taken when a release order is received without a blanket order	| •	**No** - do not allow the release order <br> •	**Yes** - allow the release order <br> •	**Warning** - allow the release order with a warning message
 **Duplicate tolerance** |	If a Customer purchase order (Customer requisition) is received more than once, D365 needs to determine what to do with the duplicate/s | •	**Error** - Duplicate purchase orders not allowed and the staging record will error and not create an additional D365 sales order. <br> •	**Accept** - Duplicate purchase orders are allowed. Duplicate purchase orders will create a new D365 sales order. <br> •	**Accept on flagged orders** - Duplicate purchase orders are only allowed if existing sales order is flagged to allow duplicates. On the original sales order header set on the **EDI** FastTab set **Bypass duplicate check** to _Yes_. Staging records with a duplicate Customer requisition where the sales order's Bypass duplicate check is set to _No_ will error.
-**Update confirmed ship date**  |	Similar to **Simulate delivery dates**, updates the **Confirmed ship date** and **Confirmed receipt date** on the sales order header, which are also used in the Customer purchase order acknowledgement | Yes/No
+**Update confirmed ship date**  |	Similar to **Simulate delivery dates**, updates the **Confirmed ship date** and **Confirmed receipt date** on the sales order header, which are also used in the Customer purchase order acknowledgement. Confirmed dates are only updated when **Delivery date control** is not set to _None_. | Yes/No
 **Sales origin**  | If the target Sales order's **Sales origin** should be set to a specific value, select here. If field **Sales origin** is received in the import file, the staging value will be used to set the target Sales order's **Sales origin**. | EDI
 <ins>**Purchase agreement**</ins>   |   |
 **Agreement classification**	  | Select the agreement classification used when blanket orders are created	
