@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: DXCInsightsParameters
 audience: Application User/ Azure Administrators
 # ms.devlang: 
 ms.reviewer: Peter Musumeci
@@ -40,7 +40,7 @@ Find and activate the feature ‘DXC Insights’
 ![Feature_Management](IMAGES/Feature_Management.png)
  
 ### 3.	Insights for D365 FO Parameters
-Navigate to  **System administrators > DXC Insights > DXC Insights parameters.** 
+Navigate to  **System administrators > Setup > DXC Insights > DXC Insights parameters.** 
 ![Parameters](IMAGES/Parameters.png)
 
 On the ‘Settings’ tab, update and save the types of telemetry that Insights for D365 FO will send to Azure Application Insights or your specified telemetry logger. 
