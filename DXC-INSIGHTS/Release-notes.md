@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: DXC Insights for Dynamics 365 Finance and Operations
-description: DXC Insights - Release notes
+title: Insights for Dynamics 365 Finance and Operations
+description: Insights for D365 FO - Release notes
 author: Peter Musumeci
 manager: Kym Parker
 ms.date: 2023-05-23
@@ -35,7 +35,7 @@ This document describes the features that are either new or changed in the relea
 
 ### Release 10.0.31.20230522
 
-DXC Insights 10.0.31 runs on the following Microsoft releases
+Insights for D365 FO 10.0.31 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
