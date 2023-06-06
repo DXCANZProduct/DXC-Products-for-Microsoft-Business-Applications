@@ -53,7 +53,7 @@ On the 'Azure application insights parameters’ tab, create a new record and pa
 ![Azure_Application_insights_screen](IMAGES/Azure_Application_insights_screen.png)
 
 ### 5.	Enable the Periodic monitoring  
-Navigate to **System administrators > DXC Insights > DXC Insights parameters > Periodic monitoring** and enable the monitoring batch service.
+Navigate to **System administrators > Setup > DXC Insights > DXC Insights parameters > Periodic monitoring** and enable the monitoring batch service.
 
 The Refresh frequency values refer to the range (min & max) in milliseconds between which the monitoring batch service will be run. The recommended values for these are 30,000ms and 300,000ms
 
