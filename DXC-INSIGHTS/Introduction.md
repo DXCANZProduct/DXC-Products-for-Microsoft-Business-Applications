@@ -26,7 +26,7 @@ ms.search.validFrom: 2023-03-28
 ms.dyn365.ops.version: 10.0.32
 ---
 
-# DXC Insights for D365 Finance and Operations
+# Insights for D365 FO
 
 ## Release notes
 The [release notes](Release-notes.md) describes the features that are either new or changed. 
