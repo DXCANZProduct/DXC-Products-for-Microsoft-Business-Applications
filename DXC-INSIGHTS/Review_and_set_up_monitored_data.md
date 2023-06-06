@@ -1,13 +1,41 @@
+---
+# required metadata
+
+title: Insights for D365 FO
+description: Insights for D365 FO - Monitoring Captured data
+author: Peter Musumeci
+manager: Kym Parker
+ms.date: 2023-06-07
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+audience: Application User/ Azure Administrators
+# ms.devlang: 
+ms.reviewer: Peter Musumeci
+# ms.tgt_pltfrm: 
+# ms.custom: ["21901", "intro-internal"]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: Peter Musumeci
+ms.search.validFrom: 2023-03-28
+ms.dyn365.ops.version: 10.0.32
+---
+
 # Monitoring Captured Data 
 
-The data sent by DXC Insights can be viewed, queried and have monitoring rules applied to it in Azure application insights. The easiest way to get started consuming 
+The data sent by Insights for D365 FO can be viewed, queried and have monitoring rules applied to it in Azure application insights. The easiest way to get started consuming 
 [Application insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?tabs=net#how-do-i-use-application-insights) is through the 
 Azure portal and the built-in visual experiences. Advanced users can [query the underlying data](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-query-overview)
 directly to [build custom visualizations](https://learn.microsoft.com/en-us/azure/azure-monitor/app/tutorial-app-dashboards) through Azure Monitor Dashboards and 
 Workbooks.
 
 ### 1. Overview
-The overview page makes use of the data from DXC Insights to give a quick overview of the load on the environment.
+The overview page makes use of the data from Insights for D365 FO to give a quick overview of the load on the environment.
 
 ![Overview](IMAGES/Overview.png)
 
@@ -31,7 +59,7 @@ On the ‘Failures’ view add a new filter pill, select ‘Exception Type’ as
 ![Dual_Write](IMAGES/Dual_Write.png)
 
 ### 4.	Transaction Search
-You can make a transaction search on the events in system based on data received from DXC Insights.
+You can make a transaction search on the events in system based on data received from Insights for D365 FO.
 
 ![Tranasaction.png](IMAGES/Tranasaction.png)
 

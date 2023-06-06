@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: FINU
-description: FINU - Roadmap
+title: Forex contract
+description: Forex contract - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-03
+ms.date: 2023-05-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,38 +26,20 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# 	Roadmap / Release schedule
+# 	Roadmap
 
-This page describes the features planned for future releases and planned release dates.
+This page describes the features planned for future releases and planned release dates (where applicable).
 
 > Note: Dates and features are subject to change.
 
-
-## Release schedule
-
-Release			    | ETA
-:--			        |:--
-2023-04         | 28 April 2023
-2023-06         | 30 June 2023
-
 ## Next release
-ETA: 28 April 2023
+ETA: TBD
 
-The planned features are grouped by category.
-
-#### Accounts receivable
-- Additional licensed feature for importing and reconciling customer remittances.
-
-
-## Roadmap
-#### Cash and bank management
-- Reconciliation matching rules - additional customer reference use to find D365 customer account to create customer receipt journal
-
-#### Accounts receivable
-- Option to exclude invoices from automatic settlement based on their Collection status, for example disputed.
-
+- Reciprocal parameter
+- Ability for prepayment invoice to use Forex contract
+- Increase to PO warning - add new 'Remove allocation' option. Current options are Error and Warning
 
 ## Deprecate
 The following is planned to be deprecated
 
-- Nothing scheduled to be deprecated
+- Nothing is scheduled to be deprecated
