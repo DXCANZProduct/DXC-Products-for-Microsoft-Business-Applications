@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: DXC Insights for D365 Finance and Operations
-description: Introduction to DXC Insights
+title: Insights for D365 Finance and Operations
+description: Introduction to Insights for D365 FO
 author: Peter Musumeci
 manager: Kym Parker
 ms.date: 2023-03-28
