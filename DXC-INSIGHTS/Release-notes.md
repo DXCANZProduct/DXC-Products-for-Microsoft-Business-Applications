@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Insights for Dynamics 365 Finance and Operations
+title: Insights for D365 FO
 description: Insights for D365 FO - Release notes
 author: Peter Musumeci
 manager: Kym Parker
