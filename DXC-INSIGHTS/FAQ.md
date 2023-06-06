@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: DXC Insights
-description: DXC Insights - Frequently asked questions
+title: Insights for D365 FO
+description: Insights for D365 FO - Frequently asked questions
 author: Peter Musumeci
 manager: Kym Parker
 ms.date: 2023-03-27
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.30
 ### Where can I find contact information for support?
 Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > DXC support**
 
-### Where can I identify the installed version of DXC Insights?
+### Where can I identify the installed version of Insights for D365 FO?
 
   
 
