@@ -2,7 +2,7 @@
 # required metadata
 
 title: Insights for D365 FO
-description: Dashboards for Insights for D365 FO
+description: Insights for D365 FO - Dashboards
 author: Peter Musumeci
 manager: Kym Parker
 ms.date: 2023-06-07
