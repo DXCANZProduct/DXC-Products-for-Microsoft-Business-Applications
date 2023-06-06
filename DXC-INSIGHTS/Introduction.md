@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Insights for D365 Finance and Operations
+title: Insights for D365 FO
 description: Introduction to Insights for D365 FO
 author: Peter Musumeci
 manager: Kym Parker
-ms.date: 2023-03-28
+ms.date: 2023-06-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
