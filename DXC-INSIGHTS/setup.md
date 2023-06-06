@@ -1,9 +1,9 @@
-# DXC Insights Set up (with Azure Application Insights)
+# Insights for D365 FO Set up (with Azure Application Insights)
 
 ###	1. Azure Application Insights instance
 Start by creating a new Application Insights instance in Azure. See [MS doc](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-new-resource)
 
-Copy the Instrumentation Key. This will be used to link the DXC Insights logger to your Azure Application Insights instance.
+Copy the Instrumentation Key. This will be used to link the Insights for D365 FO logger to your Azure Application Insights instance.
 ![Instrument Key](IMAGES/Instrument_key.png)
 
 ### 2.	Feature Activation <br>
@@ -11,11 +11,11 @@ Find and activate the feature ‘DXC Insights’
 
 ![Feature_Management](IMAGES/Feature_Management.png)
  
-### 3.	DXC Insights Parameters
+### 3.	Insights for D365 FO Parameters
 Navigate to  **System administrators > DXC Insights > DXC Insights parameters.** 
 ![Parameters](IMAGES/Parameters.png)
 
-On the ‘Settings’ tab, update and save the types of telemetry that DXC Insights will send to Azure Application Insights or your specified telemetry logger. 
+On the ‘Settings’ tab, update and save the types of telemetry that Insights for D365 FO will send to Azure Application Insights or your specified telemetry logger. 
 
 ![Telemetry_settings](IMAGES/Telemetry_settings.png)
 
