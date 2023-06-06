@@ -1,3 +1,31 @@
+---
+# required metadata
+
+title: Insights for D365 FO
+description: Dashboards for Insights for D365 FO
+author: Peter Musumeci
+manager: Kym Parker
+ms.date: 2023-06-07
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+audience: Application User/ Azure Administrators
+# ms.devlang: 
+ms.reviewer: Peter Musumeci
+# ms.tgt_pltfrm: 
+# ms.custom: ["21901", "intro-internal"]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: Peter Musumeci
+ms.search.validFrom: 2023-03-28
+ms.dyn365.ops.version: 10.0.32
+---
+
 # Insights for D365 FO Dashboards for Application Insights
 
 Application Insights has always provided a summary overview pane to allow quick, at-a-glance assessment of your application's health and performance. 
