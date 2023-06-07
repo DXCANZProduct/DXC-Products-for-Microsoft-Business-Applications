@@ -63,5 +63,33 @@ The other options available on this form include: <br>
              -	Subscription - Licensed based on subscription model <br>
              -	Temp - A temp license has been provided to enable customer to evaluate the product <br>
 
+-	Enabled
+-	Subscription Start Date - The original date of purchase. This can show how long a customer has been using the product
+- Subscription End Date (Expiry Date) - Based on invoicing. This must be checked annually to ensure customer is being invoiced and making payments.
+-	Feature Disable Date - If all efforts have not resulted in payment from the customer, the feature will be disabled and can no longer be used.
+Note: License Manager must be linked to a Feature Key for this option 
+-	Agreement Start Date - Date of current pricing agreement/SOW. This date can be used to identify customer to be included/excluded from price increases
+-	Site (Module) License:
+-	WBS – Identifier that can be used to identify invoiced line item
+-	Invoice as - Used to help identify how the product is displayed in an invoice. This is due to sales calling products many different things within a SOW. 
+-	Notes - Additional information
+- ![License Manager PowerApp ](IMAGES/Environment.png "Environment") - Add Tenant and Serial number for all the customer's environments.
+- ![License Manager PowerApp ](IMAGES/Delete.png "Delete") Delete - Delete the Product record for the selected customer. The product can only be deleted if all the environments for the Product has been deleted.
 
+# Product Details
+Product Information shows all information relating to the Products that need to be license controlled
+-	**Product Name** – Name of the product, this should be same as the name of the enum added under DXCLicenseProductIdentifier as explained above. 
+-	**Product Description** – Description for the product
+-	**Product Region** - Used to identify the region of the product head office
+-	**Disable License Control** – When set to yes, a perpetual license is automatically created for customers when requested.
+-	**Terms Conditions URL** – Terms and conditions URI for the organization
+-	**User Guide URL** – URL redirecting to the user guide for the product
+-	**Support Email ID** – Email contact for product help support
 
+# Installation of PowerApp
+Enquire _ECLANZProductSupport@dxc.com_ for the latest version of the PowerApp. 
+The app comes bundled in a solution with a custom connector. 
+
+![License Manager PowerApp ](IMAGES/CustomConnector.png "CustomConnector")
+
+Once the solution has been imported, edit the custom connector security tab to allow authentication with the license manager API. Choose OAuth 2.0 and Generic Oauth 2. Update the connector and create a connection from it. Open the DXC License Manager Nordic app. You will get prompted to sign in. For that to work the user needs to be registered with us, please send an email to our support _ECLANZProductSupport@dxc.com_ if you would like a user to get access. 
