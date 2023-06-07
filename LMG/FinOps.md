@@ -48,7 +48,7 @@ Tenant ID: **446d5d80-d20d-43c6-a96c-370628f5bd9f**
 # Configuration key
 This section is for enabling license validation for products using configuration key. <br>
   
-- **DXCLicenseProduct enum extension**
+- **DXCLicenseProduct enum extension** <br>
 Ensure that you have an extension added to the DXCLicenseProduct enum. The name of the element represents the name of the product.
 
 ![LicenseProduct](IMAGES/LicenseProduct-enum-extension.png "LicenseProduct")  
