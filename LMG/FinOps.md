@@ -73,12 +73,12 @@ The publisher name can be overridden by implementing the method public str getPu
 # Feature management
 
 This section is for enabling license validation for products using feature management. <br>
-•	DXCLicenseProductIdentifier enum extension
+•	**DXCLicenseProductIdentifier enum extension** <br>
 Ensure that you have an extension added to the DXCLicenseProductIdentifier enum. The name of the element represents the name of the product.
 
 ![Feature management](IMAGES/LicenseProductIdentifier.png "LicenseProductIdentifier") 
 
-•	Feature class implementation <br>
+•	**Feature class implementation** <br>
 Create your feature class as follows, ensure you have reference to your product identifier enum and the tenant id for your organization.
   
 ![Feature management](IMAGES/Featureclass.png " Feature Class") 
@@ -87,12 +87,12 @@ Update the isEnabled and canEnable methods of the feature class
 
 ![Feature management](IMAGES/FeatureClassEnable.png   " Feature Class Enable") 
 
-•	Feature control class implementation <br>
+•	**Feature control class implementation** <br>
 Ensure that the tenant guid and product enum element is referenced.
 
 ![Feature management](IMAGES/FeatureControlClass.png " Feature Control Class") 
   
-•	Feature installation class implementation
+•	**Feature installation class implementation** <br>
 Ensure that the tenant guid and product enum element is referenced.
 
 ![Feature management](IMAGES/FeatureInstallationClass.png "Feature Installation Class")
