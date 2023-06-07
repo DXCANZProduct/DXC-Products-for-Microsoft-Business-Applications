@@ -43,7 +43,7 @@ The same validation will be done automatically once a day when a user loads the 
 
 To get started you would require a tenant GUID, this is something that is uniquely recognized for your organization. <br>
 For this example, the following tenant ID will be used. <br>
-Tenant ID: 446d5d80-d20d-43c6-a96c-370628f5bd9f
+Tenant ID: **446d5d80-d20d-43c6-a96c-370628f5bd9f**
 
 # Configuration key
 This section is for enabling license validation for products using configuration key.
