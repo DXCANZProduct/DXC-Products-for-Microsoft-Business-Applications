@@ -35,3 +35,5 @@ The license manager licensed products can be found under the system parameters t
 The validate button can be used to manually trigger validation against the license server.  
 
 The same validation will be done automatically once a day when a user loads the default start page for a finance and operations environment, https://<environment base url>/?cmp=<any company>&mi=DefaultDashboard 
+
+![License manager](Images/System-parameters.png "License manager")
