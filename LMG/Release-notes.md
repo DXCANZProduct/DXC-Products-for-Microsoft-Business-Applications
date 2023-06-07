@@ -49,7 +49,7 @@ Microsoft Dynamics 365 platform | 10.0.31 | What’s new or changed in Dynamics 
 Microsoft Dynamics 365 platform | 10.0.32 | What’s new or changed in Dynamics 365 application version 10.0.32 
 Microsoft Dynamics 365 platform | 10.0.33 |What’s new or changed in Dynamics 365 application version 10.0.33 
 
-**New Features** <br>
+### New Features <br>
 Features that are either new or changed in the release version mentioned. 
 
 
