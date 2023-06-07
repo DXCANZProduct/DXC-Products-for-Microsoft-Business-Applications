@@ -136,7 +136,7 @@ Number | Functionality | Reason
 # What’s new or changed  
 
 ## Release 202304281 
-DXC version – 1.0.0.4 
+DXC version – 1.0.0.4 <br>
 Cepheo version – 1.0.0.3 
 
 ### Bug fixes 
