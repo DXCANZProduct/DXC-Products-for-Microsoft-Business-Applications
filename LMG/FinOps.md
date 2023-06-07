@@ -46,9 +46,9 @@ For this example, the following tenant ID will be used. <br>
 Tenant ID: **446d5d80-d20d-43c6-a96c-370628f5bd9f**
 
 # Configuration key
-- This section is for enabling license validation for products using configuration key. <br>
+This section is for enabling license validation for products using configuration key. <br>
   
-- DXCLicenseProduct enum extension
+- **DXCLicenseProduct enum extension**
 Ensure that you have an extension added to the DXCLicenseProduct enum. The name of the element represents the name of the product.
 
 ![LicenseProduct](IMAGES/LicenseProduct-enum-extension.png "LicenseProduct")  
@@ -56,12 +56,12 @@ Ensure that you have an extension added to the DXCLicenseProduct enum. The name 
 Ensure that you have specified the config key for the enum element
 ![Config Key](IMAGES/ConfigKey.png "Config Key")  
   
-- DXCLicenseAttribute implementation <br>
+- **DXCLicenseAttribute implementation** <br>
 Implement the license class for each product as follows. Ensure to specify the tenant GUID and return the value in the getLicenseTenantIdentifier method implementation.
 
 ![getLicenseTenantIdentifier](IMAGES/getLicenseTenantIdentifier.png "getLicenseTenantIdentifier")    
   
-- Publisher name implementation <br>
+- **Publisher name implementation** <br>
 In the overview of products that are license controlled in System parameters display a publisher name. The publisher name is by default set to the publisher specified in the model descriptor file in which the license class reside. 
  
 ![System-parameterLic](IMAGES/System-parameterLic.png "System-parameterLic")  
