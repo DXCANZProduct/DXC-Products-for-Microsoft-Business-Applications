@@ -86,4 +86,14 @@ Create your feature class as follows, ensure you have reference to your product 
 Update the isEnabled and canEnable methods of the feature class  
 
 ![Feature management](IMAGES/FeatureClassEnable.png   " Feature Class Enable") 
+
+•	Feature control class implementation <br>
+Ensure that the tenant guid and product enum element is referenced.
+
+![Feature management](IMAGES/FeatureControlClass.png " Feature Control Class") 
+  
+•	Feature installation class implementation
+Ensure that the tenant guid and product enum element is referenced.
+
+![Feature management](IMAGES/FeatureInstallationClass.png "Feature Installation Class")
   
