@@ -26,7 +26,9 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# Release notes
+# Dynamics 365 Finance and Operations 
+
+## Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
 ## What’s new or changed  
@@ -133,7 +135,7 @@ Number | Functionality | Reason
 
 # Microsoft Power Apps 
 
-# What’s new or changed  
+## What’s new or changed  
 
 ## Release 202304281 
 DXC version – 1.0.0.4 <br>
