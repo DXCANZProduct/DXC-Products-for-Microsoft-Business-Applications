@@ -58,6 +58,9 @@ Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dyn
 > Note: From **10.0.31** MS has added a feature called **New voucher and date for new transactions in the advanced bank reconciliation bank statement**. <br>
 > This adds new std. setting **Set the booking date as default accounting date for new transactions** to Cash and bank management parameters. <br>
 > If this is set to _Yes_ it will override Finance utilities posting date **Today's date** for mark as new transactions and post the new transactions at the booking date. Thus if you want to use **Today's date** for new transactions, ensure the new setting is set to _No_ <br>
+> From **10.0.35** leaving the new field **Set the booking date as default accounting date for new transactions** set to _No_, doesn't use Finance utilities Posting date anymore. 
+	> When set to No: Accounting date = Bank statement import date
+	> When set to Yes: Accounting date = Booking date
 
 > Note: From **10.0.34** MS has added a feature called **Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions**. This moves the new transactions to a separate grid. If you use Finance utilities fields in Worksheet to enter offset details for the new transactions, don't enable this feature as it is _not yet supported_. If you use Reconciliation matching rules to populate offset details and don't need to edit in the Worksheet, you can enable this feature.
 > In **10.0.35** MS has added a feature called **Enable posting of new transactions in bank reconciliation** which adds additional offset fields to the **New transactions** in the Worksheet. Roadmap: We will thus utilise these new fields that is available when enabling this 10.0.35 feature and add additional Finance utilities fields which will support entering offset details within the worksheet. 
