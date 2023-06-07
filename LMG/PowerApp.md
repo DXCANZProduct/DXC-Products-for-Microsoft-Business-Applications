@@ -51,15 +51,17 @@ The following will either display a green tick (active) or red cross (inactive/e
 **•	Site License** – Customer product’s Site (Module) License is set to YES. Where this is inactive, No. of Users MUST be completed <br>
 The other options available on this form include: <br>
 
-**• Edit** 
+- Edit
 ![License Manager PowerApp ](IMAGES/Edit.png "Edit")
 
-  o	**Product** - Select Product from the list of available Products <br>
-  o	**License Type** - Options Include: <br>
-     	Perpetual - Product purchased with perpetual license, but maintenance should still be invoiced in order to receive ‘latest’ code  <br>
-      	Month - Subscription License billed monthly <br>
-     	Quarter - Subscription License billed quarterly <br>
-     	Annual - Subscription License billed annually <br>
-     	Subscription - Licensed based on subscription model <br>
-      	Temp - A temp license has been provided to enable customer to evaluate the product <br>
+  -	**Product** - Select Product from the list of available Products <br>
+  -	**License Type** - Options Include: <br>
+             -	Perpetual - Product purchased with perpetual license, but maintenance should still be invoiced in order to receive ‘latest’ code  <br>
+             -	Month - Subscription License billed monthly <br>
+             -	Quarter - Subscription License billed quarterly <br>
+             -	Annual - Subscription License billed annually <br>
+             -	Subscription - Licensed based on subscription model <br>
+             -	Temp - A temp license has been provided to enable customer to evaluate the product <br>
+
+
 
