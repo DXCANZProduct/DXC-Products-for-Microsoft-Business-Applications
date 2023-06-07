@@ -36,4 +36,39 @@ The validate button can be used to manually trigger validation against the licen
 
 The same validation will be done automatically once a day when a user loads the default start page for a finance and operations environment, https://<environment base url>/?cmp=<any company>&mi=DefaultDashboard 
 
-![License manager](Images/System-parameters.png "License manager")
+![License manager](IMAGES/System-parameters.png "License manager")
+
+# Enabling license control of model against tenant in FinOps – Technical Guide
+## Getting Started
+
+To get started you would require a tenant GUID, this is something that is uniquely recognized for your organization. <br>
+For this example, the following tenant ID will be used. <br>
+Tenant ID: 446d5d80-d20d-43c6-a96c-370628f5bd9f
+
+# Configuration key
+This section is for enabling license validation for products using configuration key.
+  
+•	DXCLicenseProduct enum extension
+Ensure that you have an extension added to the DXCLicenseProduct enum. The name of the element represents the name of the product.
+
+![LicenseProduct](IMAGES/LicenseProduct-enum-extension.png "LicenseProduct")  
+
+Ensure that you have specified the config key for the enum element
+![Config Key](IMAGES/ConfigKey.png "Config Key")  
+  
+•	DXCLicenseAttribute implementation <br>
+Implement the license class for each product as follows. Ensure to specify the tenant GUID and return the value in the getLicenseTenantIdentifier method implementation.
+
+![getLicenseTenantIdentifier](IMAGES/getLicenseTenantIdentifier.png "getLicenseTenantIdentifier")    
+  
+•	Publisher name implementation <br>
+In the overview of products that are license controlled in System parameters display a publisher name. The publisher name is by default set to the publisher specified in the model descriptor file in which the license class reside. 
+ 
+![System-parameterLic](IMAGES/System-parameterLic.png "System-parameterLic")  
+
+The publisher name can be overridden by implementing the method public str getPublisherName() and returning a string with the name instead of taking it from the model descriptor file.
+
+![getPublisherName](IMAGES/getPublisherName.png "getPublisherName")  
+
+  
+  
