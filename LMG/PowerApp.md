@@ -87,9 +87,9 @@ Product Information shows all information relating to the Products that need to 
 -	**Support Email ID** – Email contact for product help support
 
 # Installation of PowerApp
-Enquire _ECLANZProductSupport@dxc.com_ for the latest version of the PowerApp. 
+Enquire ECLANZProductSupport@dxc.com for the latest version of the PowerApp. 
 The app comes bundled in a solution with a custom connector. 
 
 ![License Manager PowerApp ](IMAGES/CustomConnector.png "CustomConnector")
 
-Once the solution has been imported, edit the custom connector security tab to allow authentication with the license manager API. Choose OAuth 2.0 and Generic Oauth 2. Update the connector and create a connection from it. Open the DXC License Manager Nordic app. You will get prompted to sign in. For that to work the user needs to be registered with us, please send an email to our support _ECLANZProductSupport@dxc.com_ if you would like a user to get access. 
+Once the solution has been imported, edit the custom connector security tab to allow authentication with the license manager API. Choose OAuth 2.0 and Generic Oauth 2. Update the connector and create a connection from it. Open the DXC License Manager Nordic app. You will get prompted to sign in. For that to work the user needs to be registered with us, please send an email to our support ECLANZProductSupport@dxc.com if you would like a user to get access. 
