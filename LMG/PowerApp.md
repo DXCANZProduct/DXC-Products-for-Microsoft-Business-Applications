@@ -97,10 +97,24 @@ Once the solution has been imported, edit the custom connector security tab to a
 
 **Client ID** | \<provided separate\>
 :--       |:--
-**Client Secret** | <provided separate>  
+**Client Secret** | \<provided separate\>  
 Authorization URL | https://login.microsoftonline.com/a7b0e3b2-3be2-41a6-953b-957d7220165d/oauth2/v2.0/authorize 
 Token URL | https://login.microsoftonline.com/a7b0e3b2-3be2-41a6-953b-957d7220165d/oauth2/v2.0/token
 Refresh URL | https://login.microsoftonline.com/a7b0e3b2-3be2-41a6-953b-957d7220165d/oauth2/v2.0/token
 Scope | 2082352d-b0c8-467e-a008-435bcad52439/.default
    
 ![License Manager PowerApp ](IMAGES/AuthenticationType.png  "AuthenticationType")  
+
+# Reports
+**Expiry(s)** report displays the customer product licenses that are due to expire.
+Filter options include: <br>
+-	This week
+-	This month
+-	Next three months
+-	Next six months
+- Within this year <br>
+
+An additional filter option **Include over due expiry(s)** will display licenses that have already expired. <br>
+
+Azure Application Insights can be used to run analytics to show various error calls or run SQL statements for reporting purposes.
+
