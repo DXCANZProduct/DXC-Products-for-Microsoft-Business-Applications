@@ -7,11 +7,12 @@ Please select the applicable product from below:
 - [DXC Core extensions](CORE-EXTENSIONS/Solution-overview.md)
 - [DXC Electronic Data Interchange (EDI)](EDI/Introduction.md)
 - [DXC Finance utilities](FINU/INTRODUCTION.md) (specific to ANZ region)
-- [Forex contracts](FOREX-CONTRACT/Introduction.md)
-- [Insights for D365 FO](DXC-INSIGHTS/Introduction.md)
 - [DXC Item creation wizard](DXC-ITEM-CREATION-WIZARD/INTRODUCTION.md)
 - [DXC Smart Business Form Email Manager (Smart Send)](SMART-SEND/Overview.md)
 - [DXC Solutions for DocuSign and Dynamics 365](DOCUSIGN/INTRODUCTION.md)
+- [Forex contracts](FOREX-CONTRACT/Introduction.md)
+- [Insights for D365 FO](DXC-INSIGHTS/Introduction.md)
+- [License manager](LMG/Introduction.md)
 
 ### Contact details
 - Interested in learning more about DXC Practice for Microsoft? [Talk to us](https://dxc.com/au/en/contact-us) <br>
