@@ -44,11 +44,11 @@ Customer Information shows all information relating to the Customer who has lice
 •	Customer Number – Used to identify the customer in sales/finance systems <br>
 
 ## Customer Products
-Customer Products shows a list of all Products that have been licensed for the selected customer.
+Customer Products shows a list of all Products that have been licensed for the selected customer. <br>
 The following will either display a green tick (active) or red cross (inactive/expired): <br>
-**•	Active** – Where the customer product Subscription End Date (Expiry Date) has not been reached <br>
-**•	Enabled** – Customer products Enabled is set to YES <br>
-**•	Site License** – Customer product’s Site (Module) License is set to YES. Where this is inactive, No. of Users MUST be completed <br>
+**•	Active** – Where the customer product <U> Subscription End Date (Expiry Date) </U> has not been reached <br>
+**•	Enabled** – Customer products <U> Enabled </U> is set to YES <br>
+**•	Site License** – Customer product’s <U> Site (Module) License </U> is set to YES. Where this is inactive, <U> No. of Users </U> _MUST be completed_ <br>
 The other options available on this form include: <br>
 
 - Edit
