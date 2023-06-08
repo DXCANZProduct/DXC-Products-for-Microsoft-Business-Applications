@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form: SystemParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -28,24 +28,24 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # FinOps – User guide 
-# DXC License manager in FinOps 
+## DXC License manager in FinOps 
 
-The license manager licensed products can be found under the system parameters tab called Product licenses.  
+The license manager licensed products can be found under the **System parameters** tab called **Product licenses**.  
 
-The validate button can be used to manually trigger validation against the license server.  
+The **Validate licenses** button can be used to manually trigger validation against the license server.  
 
 The same validation will be done automatically once a day when a user loads the default start page for a finance and operations environment, https://<environment base url>/?cmp=<any company>&mi=DefaultDashboard 
 
 ![License manager](IMAGES/System-parameters.png "License manager")
 
-# Enabling license control of model against tenant in FinOps – Technical Guide
+## Enabling license control of model against tenant in FinOps – Technical Guide
 ## Getting Started
 
 To get started you would require a tenant GUID, this is something that is uniquely recognized for your organization. <br>
 For this example, the following tenant ID will be used. <br>
 Tenant ID: **446d5d80-d20d-43c6-a96c-370628f5bd9f**
 
-# Configuration key
+## Configuration key
 This section is for enabling license validation for products using configuration key. <br>
   
 - **DXCLicenseProduct enum extension** <br>
