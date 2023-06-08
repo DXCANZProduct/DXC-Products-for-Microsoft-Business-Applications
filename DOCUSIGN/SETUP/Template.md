@@ -3,9 +3,9 @@
 
 title: DXC Solutions for DocuSign and Dynamics 365
 description: Setup Templates
-author: jdutoit2
+author: pmusumeci
 manager: Kym Parker
-ms.date: 2023-02-22
+ms.date: 2023-06-08
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Templates
 
-Docusign templates provide the configuration of various documents inside of D365.  Templated determine whether the document should be authorised by external users, internal users, or both.  Templates also identify the order of authorization and the details of the information and placement of *signatory* information.  At least one template must be created in order to use this module; however multiple templates can be created depending upon business requirements.  Templates are created by going to the **Organization Administration > Setup > Docusign > Templates** page.
+Docusign templates provide the configuration of various documents inside of D365.  Templates determine whether the document should be authorised by external users, internal users, or both.  Templates also identify the order of authorization and the details of the information and placement of *signatory* information.  At least one template must be created in order to use this module; however multiple templates can be created depending upon business requirements.  Templates are created by going to the **Organization Administration > Setup > Docusign > Templates** page.
 
 ## Overview ##
 
