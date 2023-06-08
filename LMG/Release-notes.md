@@ -33,7 +33,7 @@ This document describes the features that are either new or changed in the relea
 
 ### Release 10.8.32.10171 
 
-DXC License Manager 10.8.32.10171 runs on the following Microsoft releases 
+License Manager 10.8.32.10171 runs on the following Microsoft releases 
 
 Base | Version | Release 
 :--       |:--  |:--
@@ -62,7 +62,7 @@ Number | Functionality | Description
 
 Number | Functionality | Description
 :--    |:--   |:--
-10625 | DXC product help in D365 | Users can access applicable product’s GitHub user guides from within D365 help pane. 
+10625 | Product help in D365 | Users can access applicable product’s GitHub user guides from within D365 help pane. 
 
 ### Release 10.8.32.10141 
 
@@ -72,7 +72,7 @@ Number | Functionality | Description
 
 Number | Functionality | Description 
 :--  |:-- |:--
-10341 | D365 - Product documentation | Added ability to view user guides, release notes and contact information for each product within D365 <br>   - New workspace under organization administration called DXC support <br>   - These fields can be updated as part of the license manager Power App front end and are synced within D365 when the license check is executed. 
+10341 | D365 - Product documentation | Added ability to view user guides, release notes and contact information for each product within D365 <br>   - New workspace under organization administration called Product support <br>   - These fields can be updated as part of the license manager Power App front end and are synced within D365 when the license check is executed. 
 
 ###  Release 10.8.32.10131 
 #### Build 7.0.5493.35497 
