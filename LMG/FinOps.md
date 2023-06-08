@@ -27,8 +27,7 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# FinOps – User guide 
-## DXC License manager in FinOps 
+# License manager in FinOps 
 
 The license manager licensed products can be found under the **System parameters** tab called **Product licenses**.  
 
@@ -38,8 +37,7 @@ The same validation will be done automatically once a day when a user loads the 
 
 ![License manager](IMAGES/System-parameters.png "License manager")
 
-## Enabling license control of model against tenant in FinOps – Technical Guide
-## Getting Started
+# Technical Guide - Enabling license control 
 
 To get started you would require a tenant GUID, this is something that is uniquely recognized for your organization. <br>
 For this example, the following tenant ID will be used. <br>
@@ -70,7 +68,7 @@ The publisher name can be overridden by implementing the method public str getPu
 
 ![getPublisherName](IMAGES/getPublisherName.png "getPublisherName")  
 
-# Feature management
+## Feature management
 
 This section is for enabling license validation for products using feature management. <br>
 •	**DXCLicenseProductIdentifier enum extension** <br>
