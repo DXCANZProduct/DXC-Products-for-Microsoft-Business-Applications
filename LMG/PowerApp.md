@@ -46,9 +46,9 @@ Customer Information shows all information relating to the Customer who has lice
 ## Customer Products
 Customer Products shows a list of all Products that have been licensed for the selected customer. <br>
 The following will either display a green tick (active) or red cross (inactive/expired): <br>
-**•	Active** – Where the customer product  <ins> Subscription End Date (Expiry Date) </ins> has not been reached <br>
-**•	Enabled** – Customer products  Enabled  is set to YES <br>
-**•	Site License** – Customer product’s  Site (Module) License  is set to YES. Where this is inactive, _No. of Users MUST be completed_ <br>
+**•	Active** – Where the customer product  _Subscription End Date (Expiry Date)_ has not been reached <br>
+**•	Enabled** – Customer products  _Enabled_  is set to YES <br>
+**•	Site License** – Customer product’s  _Site (Module) License_ is set to YES. Where this is inactive, _No. of Users MUST be completed_ <br>
 The other options available on this form include: <br>
 
 - Edit
