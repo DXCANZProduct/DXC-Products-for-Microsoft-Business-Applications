@@ -5,7 +5,7 @@ title: DXC Solutions for DocuSign and Dynamics 365
 description: Setup Parameters
 author: lcoll
 manager: Kym Parker
-ms.date: 2023-04-14
+ms.date: 2023-06-08
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,9 +58,9 @@ For authentication with OAuth2.0 the following configuration is required on Docu
 <br> ![DocuSign parameters](../IMAGES/Parameters-4.png "DocuSign parameters")
 
 ### 1. Web service address
-DocuSign will provide the web address utilized to initiate the connection to your DocuSign account. Two variants of this field value will be used; one for a development or non-production instance and the second for production. <br>
+DocuSign will provide the web address utilized to initiate the connection to your DocuSign account. Two variants of this field value will be used; one for a development or non-production instance and the second for your production instance. <br>
 
-Navigate to **Apps and Keys** from the DocuSign admin portal and copy the **Account Base URI**. <br>
+Navigate to **Apps and Keys** from the DocuSign admin portal and copy the **Account Base URL** to place in this field. <br>
 Example: https://demo.docusign.net
 
 <br> ![Web service address](../IMAGES/Parameters-6.png "Web service address")
@@ -71,8 +71,8 @@ Example: account-d.docusign.com
 
 ### 3. Integrator key
 
-1. Navigate to **Apps and Keys** from the **DocuSign admin portal** and copy the **Integration key** for the live app. <br> ![Integration key](../IMAGES/Parameters-7.png "Integration key")
-2. Navigate the the key vault created in prequisites steps and add a secret
+1. Navigate to **Apps and Keys** from the **DocuSign admin portal** and copy the **Integration key** for your live application. <br> ![Integration key](../IMAGES/Parameters-7.png "Integration key")
+2. Navigate to the key vault created in the prequisites steps listed above and add a secret
 
 An integrator key is a unique identifier for each DocuSign account that is used for integration into another third-party system. It is used for all API calls to DocuSign.  This field value is provided by DocuSign in their Administration area. <br> <br>  The integrator key value must be configured as a manual secret within a key vault, with the [key vault parameters defined in FinOps](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/setting-up-azure-key-vault-client). The integrator key can then be selected from the list of available key vault secrets
 
