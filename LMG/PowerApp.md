@@ -38,10 +38,10 @@ Box in circle (hidden at the bottom left) | **Products -** View, edit or add new
 
 ## Customer Details
 Customer Information shows all information relating to the Customer who has licensed Products by the organization <br>
-•	Customer Name – Official Name of the customer <br>
-•	Customer Description – Description or a.k.a name for the customer <br>
-•	Customer Region - Used to identify the region of the customer head office <br>
-•	Customer Number – Used to identify the customer in sales/finance systems <br>
+•	**Customer Name** – Official Name of the customer <br>
+•	**Customer** Description – Description or a.k.a name for the customer <br>
+•	**Customer Region** - Used to identify the region of the customer head office <br>
+•	**Customer Number** – Used to identify the customer in sales/finance systems <br>
 
 ## Customer Products
 Customer Products shows a list of all Products that have been licensed for the selected customer. <br>
