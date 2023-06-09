@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Cash and bank management setup - Bank statement format 
-author: helenho
+author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-05-23
+ms.date: 2023-06-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -78,7 +78,7 @@ The **Custom Format - Lines** page defines the column definitions to use whilst 
 |-|-|
 | **Field number**| The field number corresponds to the **column number** on the bank statement.|
 | **Line code** or **Custom line code**| The **Line code** option appears when the **ABSR file type** is either _BAI2 File_ or _NAI File_. <br> Line type of the file where the Bank Statement fields map to Dynamics 365 Bank Transactions: <br> **02**	– Group Header  <br> **03**	– Account Identifier <br> **16** – Transaction detail <br> **88** – Continuation Record <br>  The **Custom line code** option appears when the **ABSR file type** is either _BRS_ or _Custom_ and utilizes the **Line code** as setup on **Custom format - Line codes**
-| **Field** | The corresponding bank account transaction field in Dynamics 365 that this bank statement field maps to - options include: <br> •	Date <br> • Bank statement transaction code <br> • Description <br> • Amount <br> • Reference no. <br> • Entry reference  <br> • Bank account number <br> • Currency <br> • Trading party <br> • Document number <br> • Related bank account |
+| **Field** | The corresponding bank account transaction field in Dynamics 365 that this bank statement field maps to - options include: <br> •	Date <br> • Bank statement transaction code <br> • Description <br> • Amount <br> • Reference no. <br> • Entry reference  <br> • Bank account number <br> • Currency <br> • Trading party <br> • Document number <br> • Related bank account <br> • Ending balance |
 | **Start position** | If no delimiter is selected on the header, the start position of the field will need to be entered. This field can also be used for files with delimiter where only a set number of characters need to be mapped, for example only map account number starting from 7 for a bank statement field containing bsb (6 characters) + account number (9 characters) |
 | **Length** | If no delimiter is selected on the header, the length of the field will need to be entered. This field can also be used for files with delimiter where only a set number of characters need to be mapped, for example only map account number containing 9 characters for a bank statement field containing bsb (6 characters) + account number (9 characters)|
 | **Strip leading zeroes** | Specifies whether any leading zeroes in this field should be removed. |
