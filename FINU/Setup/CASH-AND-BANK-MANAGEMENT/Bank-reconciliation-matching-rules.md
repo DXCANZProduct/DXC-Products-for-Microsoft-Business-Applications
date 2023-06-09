@@ -114,7 +114,7 @@ The following subsection will discuss scenarios when running a Mark as new rule 
 -	D365 customer account can be found by either of the following options. Target is **Account** in Customer payment journal line:
     -	**Offset account** is set to a specific customer account, or 
     -	**Offset account bank statement field** is set to use a field from the bank statement field (example Trading partner), or 
-    -	**Offset account reference bank statement field** is set to use a field from the bank statement field. The bank statement value is used to find the applicable D365 customer account in [Customer references](../ACCOUNTS-RECEIVABLE/Customer-reference.md) or 
+    -	**Offset account reference bank statement field** is set to use a field from the bank statement field. The bank statement value is used to find the applicable D365 customer account in [Customer references](../ACCOUNTS-RECEIVABLE/Customer-reference.md), or 
     -	If all of these fields are blank **Settle transaction bank statement field** (D365 invoice) will be used to find the D365 customer account
 -	**Settle transaction** determines if the created/posted customer receipt journal should attempt to settle an invoice:
     - **Yes** - Uses **Settle transaction bank statement field**’s mapping to find the D365 invoice number in the bank statement line and populate the **Invoice** field in the Customer payment journal line. If the invoice can’t be settled in the journal line, the infolog will provide a warning which invoices couldn’t be settled.
