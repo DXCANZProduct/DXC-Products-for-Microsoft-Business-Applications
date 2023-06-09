@@ -5,7 +5,7 @@ title: DXC Finance Utilities
 description: Cash and bank management setup - Financial utilities parameters
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-11-29
+ms.date: 2023-06-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,6 +43,7 @@ Then set the fields as described in the following subsections.
 :--       |:--
 **Extended matching rule operator** | This parameter activates a new operator **Included in** in the Reconciliation matching rules form. It supplements the **Contains** capability, and means that the field selected is a part of the nominated Bank statement field.
 **Extended financial details for new transaction** | This parameter enables the capture of the following details automatically if the bank statement line is marked as 'New' <br> • Financial dimensions <br> • GST  <br> • Sub-Ledger offset account
+**Reference type**  | Populate [Reference type](../ACCOUNTS-RECEIVABLE/Customer-reference.md#reference-number-type) where Customer references are used to find D365 customer account for mark as new Reconciliation matching rules using field **Offset account reference bank statement field**.
 
 **Bank reconciliation**
 
