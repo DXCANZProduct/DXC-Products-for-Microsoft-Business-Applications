@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer purchase order acknowledgement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-14
+ms.date: 2023-06-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -378,5 +378,7 @@ The following EDI Line staging fields are available on the lines page.
 **Line amount incl. tax** |	Line amount incl. tax	                              | Sales line amount > Price incl. tax
 **Unit**                  |	This is the Unit of measure that the stock has been ordered in    | Sales line > Unit
 **Sales quantity**        |	The acknowledged quantity for this line             | Sales line > Quantity
+**Ordered quantity**       | The customer purchase ordered quantity for this line   | Sales line > Customer quantity on the POA response tab
+**Backorder quantity**      | Where the Trading partner's **No backorder** is set to _No_, the difference between **Ordered quantity** and **Sales quantity**. <br> Where the Trading partner's **No backorder** is set to _Yes_, this will be set to 0. | Ordered quantity minus Sales quantity
 **Acknowledgement inners**  |	Acknowledged quantity of inners per outer	        | Sales line > EDI > POA > Acknowledgement inners
 **Acknowledgement pack**    |	Pack quantity acknowledged	                      | Sales line > EDI > POA > Acknowledgement pack
