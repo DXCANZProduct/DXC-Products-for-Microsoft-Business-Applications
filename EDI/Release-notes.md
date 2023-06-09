@@ -30,6 +30,55 @@ ms.dyn365.ops.version: AX 7.0.1
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
+# Next version
+
+### Release 10.0.34.202306TBD
+
+DXC EDI 10.0.34 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
+
+#### Build 10.0.34.202306TBD
+Release date: TBD <br> 
+
+<ins>New features</ins>
+
+**Core module**	- Applies to all modules
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+14561	| Remove old names and licensing	| Updated About > Version Display name to DXC. Also moved to the DXC License model.
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+14131 <br> 14584 | • Customer purchase order <br> • Customer purchase order change	| Support for 10.0.34 feature **Apply sales tax group for product variants in sales and procurement**. Ability to use "override" item sales tax group for a variant when creating the sales order line.
+14157	| • Customer purchase order acknowledgement <br> • Customer advanced shipping notice	| Add fields: <br> • Ordered quantity <br> • Backorder quantity
+
+**Vendor module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+14581 | Vendor purchase order acknowledgement	| Support for 10.0.34 feature **Apply sales tax group for product variants in sales and procurement**. Ability to use "override" item sales tax group for a variant when creating the purchase order line.
+
+<ins>Bug fixes</ins>
+
+**Core module**	- Applies to all modules
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+14205	| Connection type - Azure Blob Storage | Fix Azure Blob Storage related method depreciation. Replaced StartCopy with BeginStartCopy <br> Update method for moving File in Azure Blob Storage
+14434	| Trading partners	| Couldn't delete an EDI Trading partner, even when no EDI transactions existed for the Trading partner. <br> Fixed transactions validation to allow empty trading partners deletion
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+14112	| • Customer purchase order <br> • Customer purchase order change	| Where the staging line's **Unit** is _empty_ and Document setting's **Blank sales unit** is set to use _Sales trade agreement unit_ and the **Itemd id source** is _Barcode_ or _GTIN_, the unit from the Barcode or GTIN will be used when creating the sales order line.  
+
 # Current version
 
 Next release is planned for 31 July 2023.
