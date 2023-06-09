@@ -50,6 +50,7 @@ Release date: TBD <br>
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 14561	| Update model display names and licensing	| About > Version: Update to models' display name to DXC. <br> Also moved to the DXC License model.
+14205	| Connection type - Azure Blob Storage | Update to support Azure Blob Storage related method depreciation in 10.0.34. <br> Replaced StartCopy with BeginStartCopy <br> Update method for moving File in Azure Blob Storage <br> https://learn.microsoft.com/en-us/previous-versions/azure/jj732079(v=azure.100)
 
 **Customer module**	
 
@@ -70,7 +71,6 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-14205	| Connection type - Azure Blob Storage | Fix Azure Blob Storage related method depreciation in 10.0.34. <br> Replaced StartCopy with BeginStartCopy <br> Update method for moving File in Azure Blob Storage <br> https://learn.microsoft.com/en-us/previous-versions/azure/jj732079(v=azure.100)
 14434	| Trading partners	| Couldn't delete an EDI Trading partner when no EDI transactions existed for the Trading partner. <br> Fixed transactions validation to allow empty trading partners deletion
 
 **Customer module**	
