@@ -49,7 +49,7 @@ Release date: TBD <br>
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-14561	| Remove old names and licensing	| Updated About > Version Display name to DXC. Also moved to the DXC License model.
+14561	| Remove old names and licensing	| Updated About > Version model display name to DXC. <br> Also moved to the DXC License model.
 
 **Customer module**	
 
