@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-05-25
+ms.date: 2023-06-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -70,7 +70,7 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-14205	| Connection type - Azure Blob Storage | Fix Azure Blob Storage related method depreciation in 10.0.34. <br> Replaced StartCopy with BeginStartCopy <br> Update method for moving File in Azure Blob Storage
+14205	| Connection type - Azure Blob Storage | Fix Azure Blob Storage related method depreciation in 10.0.34. <br> Replaced StartCopy with BeginStartCopy <br> Update method for moving File in Azure Blob Storage <br> https://learn.microsoft.com/en-us/previous-versions/azure/jj732079(v=azure.100)
 14434	| Trading partners	| Couldn't delete an EDI Trading partner when no EDI transactions existed for the Trading partner. <br> Fixed transactions validation to allow empty trading partners deletion
 
 **Customer module**	
