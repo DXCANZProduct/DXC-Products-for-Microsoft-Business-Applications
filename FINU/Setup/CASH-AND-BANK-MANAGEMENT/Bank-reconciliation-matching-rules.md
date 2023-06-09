@@ -111,8 +111,11 @@ This section will provide more details for ** fields from above section.
 Finance utilities allows for creating and optional settling of one invoice and optional posting of customer payment journal. One customer payment journal is created for all the bank statement lines matched with the mark as new rule. For improved traceability the Reconcile ID is populated in the Customer receipt’s journal Document on the journal’s setup tab. The customer payment journal's **Date** is set by the bank statement's **Booking date**.
 
 The following subsection will discuss scenarios when running a Mark as new rule with **Offset account type** set to _Customer_
--	**Offset account** is set to a specific customer account, or **Offset account bank statement field** is set to use a field from the bank statement field (example Trading partner), or **Offset account reference bank statement field** is set to use a field from the bank statement field or if all of these fields are blank **Settle transaction bank statement field** (D365 invoice) will be used to find the D365 customer account:
-    - Target: **Account** in Customer payment journal line
+-	D365 customer account can be found by either of the following options. Target is **Account** in Customer payment journal line:
+    -	**Offset account** is set to a specific customer account, or 
+    -	**Offset account bank statement field** is set to use a field from the bank statement field (example Trading partner), or 
+    -	**Offset account reference bank statement field** is set to use a field from the bank statement field. The bank statement value is used to find the applicable D365 customer account in [Customer references](../ACCOUNTS-RECEIVABLE/Customer-reference.md) or 
+    -	If all of these fields are blank **Settle transaction bank statement field** (D365 invoice) will be used to find the D365 customer account
 -	**Settle transaction** determines if the created/posted customer receipt journal should attempt to settle an invoice:
     - **Yes** - Uses **Settle transaction bank statement field**’s mapping to find the D365 invoice number in the bank statement line and populate the **Invoice** field in the Customer payment journal line. If the invoice can’t be settled in the journal line, the infolog will provide a warning which invoices couldn’t be settled.
     - **No** - The customer payment journal line will not attempt to settle an invoice; **Invoice** field will be blank in the Customer payment journal line. 
@@ -123,8 +126,9 @@ The following subsection will discuss scenarios when running a Mark as new rule 
     - **No**: The customer receipt journal will only be created. Once the user has reviewed and posted the customer payment journal, refresh the bank reconciliation’s worksheet to bring in the new bank transactions. User has to either use a match with bank statement rule or manually match the applicable bank statement lines with these new bank transactions.
 
 ##### Field format
-The ability to set field format is available for the following two fields:
+The ability to set field format is available for the following fields:
 - Offset account bank statement field
+- Offset account reference bank statement field
 - Settle transaction bank statement field
 
 Select the **Field format** for the applicable field and set one of the following options:
@@ -149,6 +153,7 @@ Option	  	| Setup             | Example <br> Bank statement field's original dat
 Additional setup is also required on [Financial utilities parameters](Finance-utilities-parameters.md) to assign the following:
 - Reconciliation customer payment journal name
 - Method of payment
+- Reference type - if using Customer references to find the D365 customer account
 
 #### General ledger parameters
 If Financial utilities parameter **Populate unique voucher for each journal line** is set to _No_, it is also required to configure General ledger parameters.
