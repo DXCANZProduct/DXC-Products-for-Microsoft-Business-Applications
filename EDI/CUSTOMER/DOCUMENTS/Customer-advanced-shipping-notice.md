@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer advanced shipping notice
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-14
+ms.date: 2023-06-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -206,8 +206,10 @@ The following EDI Line staging fields are available on the lines page.
 **Bar code**               | The GTIN or barcode                                        | Sales line > EDI item number
 **Store code**	           | Store code for the delivery line	                        | Sales line > Store Code
 **Delivery name**          | Delivery name and address information	                    | Consignment/Sales order > Delivery address information
-**Quantity**               | Quantity to be delivered	                                | Packing slip > Quantity
 **Unit**                   | Unit of measure	                                        | Sales line > Unit
+**Quantity**               | Quantity to be delivered	                                | Packing slip > Quantity
+**Ordered quantity**       | The ordered quantity for this line                         | Packing slip > Ordered
+**Backorder quantity**      | The backorder quantity for this line                      | Packing slip > Remain
 **Sales price**            | Sales line unit price	                                    | Sales line > Unit Price
 **Amount**                 | Line amount	
 **Weight**                 | Line weight	
