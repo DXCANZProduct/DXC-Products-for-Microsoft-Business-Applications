@@ -70,7 +70,7 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-14205	| Connection type - Azure Blob Storage | Fix Azure Blob Storage related method depreciation. Replaced StartCopy with BeginStartCopy <br> Update method for moving File in Azure Blob Storage
+14205	| Connection type - Azure Blob Storage | Fix Azure Blob Storage related method depreciation in 10.0.34. <br> Replaced StartCopy with BeginStartCopy <br> Update method for moving File in Azure Blob Storage
 14434	| Trading partners	| Couldn't delete an EDI Trading partner, even when no EDI transactions existed for the Trading partner. <br> Fixed transactions validation to allow empty trading partners deletion
 
 **Customer module**	
