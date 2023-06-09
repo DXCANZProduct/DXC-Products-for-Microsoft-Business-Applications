@@ -76,7 +76,7 @@ Note: License Manager must be linked to a Feature Key for this option
 - ![License Manager PowerApp ](IMAGES/Environment.png "Environment") - **Environment** - Add Tenant and Serial number for all the customer's environments.
 - ![License Manager PowerApp ](IMAGES/Delete.png "Delete") **Delete** - Delete the Product record for the selected customer. The product can only be deleted if all the environments for the Product has been deleted.
 
-# Product Details
+## Product Details
 Product Information shows all information relating to the Products that need to be license controlled
 -	**Product Name** – Name of the product, this should be same as the name of the enum added under DXCLicenseProductIdentifier as explained above. 
 -	**Product Description** – Description for the product
@@ -85,6 +85,19 @@ Product Information shows all information relating to the Products that need to 
 -	**Terms Conditions URL** – Terms and conditions URI for the organization
 -	**User Guide URL** – URL redirecting to the user guide for the product
 -	**Support Email ID** – Email contact for product help support
+
+## Reports
+**Expiry(s)** report displays the customer product licenses that are due to expire.
+Filter options include: <br>
+-	This week
+-	This month
+-	Next three months
+-	Next six months
+- Within this year <br>
+
+An additional filter option **Include over due expiry(s)** will display licenses that have already expired. <br>
+
+Azure Application Insights can be used to run analytics to show various error calls or run SQL statements for reporting purposes.
 
 # Installation of PowerApp
 Enquire ECLANZProductSupport@dxc.com for the latest version of the PowerApp. 
@@ -104,17 +117,4 @@ Refresh URL | https://login.microsoftonline.com/a7b0e3b2-3be2-41a6-953b-957d7220
 Scope | 2082352d-b0c8-467e-a008-435bcad52439/.default
    
 ![License Manager PowerApp ](IMAGES/AuthenticationType.png  "AuthenticationType")  
-
-# Reports
-**Expiry(s)** report displays the customer product licenses that are due to expire.
-Filter options include: <br>
--	This week
--	This month
--	Next three months
--	Next six months
-- Within this year <br>
-
-An additional filter option **Include over due expiry(s)** will display licenses that have already expired. <br>
-
-Azure Application Insights can be used to run analytics to show various error calls or run SQL statements for reporting purposes.
 
