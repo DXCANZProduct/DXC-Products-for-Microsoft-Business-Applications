@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Accounts payable setup - Vendor Payments 
-author: helenho
+author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-07-14
+ms.date: 2023-06-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -125,6 +125,7 @@ The Payment advice report can be used in conjunction with sending via Email to t
 ## Payments report
 When creating a **Vendor payment journal**, it can be useful to print the **Payments** report to reconcile vendor bank details, before generating the EFT file.
 Finance utilities has added the following fields on the right for each Vendor payment line:
+- Vendor bank name
 - Vendor BSB
 - Vendor account
 
