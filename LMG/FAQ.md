@@ -30,9 +30,8 @@ ms.dyn365.ops.version: AX 7.0.1
 # 	Frequently Asked Questions
 
 ## Version and Support Information
-  
--	Where can I find contact information for support?
-      -	Email ECLANZProductSupport@dxc.com
+Where can I find contact information for support?
+Email: ECLANZProductSupport@dxc.com
 
 ## 	Troubleshooting
 1.	I can’t save ‘Customer Products’.
