@@ -37,15 +37,15 @@ The [release notes](Release-notes.md) describes the features that are either new
 
 Insights will capture data such as user information, time to load, and menu item used. Telemetry is subsequently transmitted through to a logging application. It will record errors, saving error messages and call stacks.  Insights can monitor recurring events and exceptions, even those occuring during Dual-write sync.
 
-Out of the box Azure Application Insights has been incorporated as the default logging tool for the Insights package. Azure Application Insights collects the telemetry and helps analyze the operation and performance of the application. Organizations can use this information to identify problems that might be occurring or to identify improvements to the application that would most affect users.
+Azure Application Insights has been incorporated as the default logging tool for the out of the box Insights for D365 FO package. Azure Application Insights collects the telemetry and helps analyze the operation and performance of the application. Organizations can use this information to identify problems that might be occurring or to identify improvements to the application that would most affect users.
 
-DXC Insights offers extensibility and seamless integration with additional telemetry logging applications. Utilising this fuctionality,  Insights can accommodate a range of logging sources including popular solutions such as Splunk, Dynatrace and Site24x7 through to custom logging tools developed in-house.
+Insights for D365 FO offers extensibility and seamless integration with additional telemetry logging applications. Utilising this fuctionality,  Insights for D365 FO can accommodate a range of logging sources including popular solutions such as Splunk, Dynatrace and Site24x7 through to custom logging tools developed in-house.
 
 With Azure Application Insights, organizations can use the data sent from Insights to:
 - Proactively understand how an application is performing.  
   
 - Reactively review application execution data to determine the cause of an incident
-Application Insights provides other features including, but not limited to: <br>
+Azure Application Insights provides other features including, but not limited to: <br>
     -  [Live Metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/app/live-stream) – observe activity from your deployed application in real time.<br>
     - [Availability](https://learn.microsoft.com/en-us/azure/azure-monitor/app/availability-overview) - also known as “Synthetic Transaction Monitoring”, probe your applications external endpoint(s) to test the overall availability and responsiveness over time.<br>
     - [GitHub or Azure DevOps integration](https://learn.microsoft.com/en-us/azure/azure-monitor/app/work-item-integration) – create [GitHub](https://learn.microsoft.com/en-us/training/paths/github-administration-products/) or [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/) work items in context of Application Insights data.<br>
