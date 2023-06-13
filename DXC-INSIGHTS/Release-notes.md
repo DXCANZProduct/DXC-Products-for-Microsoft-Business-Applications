@@ -3,9 +3,9 @@
 
 title: Insights for D365 FO
 description: Insights for D365 FO - Release notes
-author: Peter Musumeci
+author: Patrick Sharma
 manager: Kym Parker
-ms.date: 2023-05-23
+ms.date: 2023-06-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.technology:
 ms.search.form: 
 audience: Application User/ Azure Administrators
 # ms.devlang: 
-ms.reviewer: Peter Musumeci
+ms.reviewer: Patrick Sharma
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Peter Musumeci
-ms.search.validFrom:  2023/03/28
+ms.author: Patrick Sharma
+ms.search.validFrom:  2023-03-28
 ms.dyn365.ops.version: 10.0.30
 ---
 
@@ -33,7 +33,7 @@ This document describes the features that are either new or changed in the relea
 # Current version
 
 
-### Release 10.0.31.20230522
+### Release 10.0.31.20230609
 
 Insights for D365 FO 10.0.31 runs on the following Microsoft releases
 
@@ -42,6 +42,25 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
+
+#### Build 10.0.31.202306091
+Release date: 9 June 2023
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+
+
+# Previous Version(s)
+
+### Release 10.0.31.20230522
 
 #### Build 10.0.31.202305222
 Release date: 22 May 2023
