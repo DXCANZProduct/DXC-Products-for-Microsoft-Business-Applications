@@ -50,13 +50,7 @@ Release date: 9 June 2023
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-
-
-<ins>Bug fixes</ins>
-
-Number	| Name		 | Description
-:--	|:--		  	|:--
-
+14607	| New Feature - Insights for D365 FO Dual Write	| Insights for D365 FO Dual Write provides additional event monitoring during Dual write sync
 
 # Previous Version(s)
 
