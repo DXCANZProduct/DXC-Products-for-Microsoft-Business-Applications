@@ -35,12 +35,12 @@ Copy the Instrumentation Key. This will be used to link the Insights for D365 FO
 ![Instrument Key](IMAGES/Instrument_key.png)
 
 ### 2.	Feature Activation <br>
-Find and activate the feature ‘DXC Insights’
+Find and activate the feature ‘Insights for D365 FO’ to enable telemetry logging.
 
 ![Feature_Management](IMAGES/Feature_Management.png)
  
 ### 3.	Insights for D365 FO Parameters
-Navigate to  **System administrators > Setup > DXC Insights > DXC Insights parameters.** 
+Navigate to  **System administrators > Setup > Insights for D365 FO > Insights for D365 FO parameters.** 
 ![Parameters](IMAGES/Parameters.png)
 
 On the ‘Settings’ tab, update and save the types of telemetry that Insights for D365 FO will send to Azure Application Insights or your specified telemetry logger. 
@@ -53,7 +53,7 @@ On the 'Azure application insights parameters’ tab, create a new record and pa
 ![Azure_Application_insights_screen](IMAGES/Azure_Application_insights_screen.png)
 
 ### 5.	Enable the Periodic monitoring  
-Navigate to **System administrators > Setup > DXC Insights > DXC Insights parameters > Periodic monitoring** and enable the monitoring batch service.
+Navigate to **System administrators > Setup > Insights for D365 FO > Insights for D365 FO parameters > Periodic monitoring** and enable the monitoring batch service.
 
 The Refresh frequency values refer to the range (min & max) in milliseconds between which the monitoring batch service will be run. The recommended values for these are 30,000ms and 300,000ms
 
