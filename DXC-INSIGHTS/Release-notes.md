@@ -82,5 +82,6 @@ Enable **Insights for D365 FO** via D365 Feature management to ena. <br>
 Enable the following features in D365 Feature management:
 - **Insights for D365 FO**
 - **Insights for D365 FO Dual Write** (additional license option)
+
 If above feature is not visible, press **Check for updates** to refresh the feature management list.
 
