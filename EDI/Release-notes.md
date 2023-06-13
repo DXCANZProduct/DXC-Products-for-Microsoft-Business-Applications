@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-06-09
+ms.date: 2023-06-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,7 +49,7 @@ Release date: TBD <br>
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-14561	| Update model display names and licensing	| About > Version: Update to models' display name to DXC. <br> Also moved to the DXC License model.
+14561	| Update model display names and licensing	| About > Version: Update to models' display name to include DXC. <br> Also moved to the DXC License model.
 14205	| Connection type - Azure Blob Storage | Update to support Azure Blob Storage related method depreciation in 10.0.34. <br> Replaced StartCopy with BeginStartCopy <br> Update method for moving File in Azure Blob Storage <br> https://learn.microsoft.com/en-us/previous-versions/azure/jj732079(v=azure.100)
 
 **Customer module**	
@@ -71,13 +71,19 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-14434	| Trading partners	| Couldn't delete an EDI Trading partner when no EDI transactions existed for the Trading partner. <br> Fixed transactions validation to allow empty trading partners deletion
+14434	| Trading partners	| Couldn't delete an EDI Trading partner when no EDI transactions existed for the Trading partner. <br> Fixed transactions validation to allow empty trading partner's deletion
 
 **Customer module**	
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 14112	| • Customer purchase order <br> • Customer purchase order change	| Where the staging line's **Unit** is _empty_ and Document setting's **Blank sales unit** is set to use _Sales trade agreement unit_ and the **Itemd id source** is _Barcode_ or _GTIN_, the unit from the Barcode or GTIN will be used when creating the sales order line.  
+
+**Vendor module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+9231	| Purchase order	| When the Vendor Trading partner had Vendor purchase order acknowledgement (POA) enabled, and the Purchase order has been confirmed but the POA hasn't been received yet: When clicking on Purchase order line details' 'EDI acknowledgement' tab, errored with 'Function SAB_EDIDocumentTypeClass::constructBasedOnDocumentType has been incorrectly called.' Update to document settings function.
 
 # Current version
 
