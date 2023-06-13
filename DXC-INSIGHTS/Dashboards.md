@@ -45,7 +45,7 @@ The system health section provides telemetry on SQL health metrics including ave
 The usage section gives an overview of user sessions over the last 24 hours, as well as the number of users that have been active on the application over the dashboard’s time range. Requests display a count of requests received by the server. You can also see the application’s most viewed pages, slowest loading pages and top 10 most time-consuming requests on the server in this section.
 
 ### 4. Insights for D365 FO dashboard templates
-Insights for D365 FO dashboard templates can be accessed from the Insights for D365 FO dashboard templates fast tab.  Navigate to  **System Administration > Setup > DXC Insights > DXC Insights parameters** then select the 'Azure application insights parameters' section to display the Insights for D365 FO dashboard templates fast tab. Click on ‘Check for updates’ to download the latest templates that we have released. Select a template version and Click *‘Download file’* to download the template.
+Insights for D365 FO dashboard templates can be accessed from the Insights for D365 FO dashboard templates fast tab.  Navigate to  **System Administration > Setup > Insights for D365 FO > Insights for D365 FO parameters** then select the 'Azure application insights parameters' section to display the Insights for D365 FO dashboard templates fast tab. Click on ‘Check for updates’ to download the latest templates that we have released. Select a template version and Click *‘Download file’* to download the template.
 
 ![Insights_dashboard_templates](IMAGES/Insights_dashboard_templates.png)
 
