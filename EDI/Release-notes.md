@@ -43,6 +43,12 @@ Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dyn
 #### Build 10.0.34.202306TBD
 Release date: TBD <br> 
 
+<ins>**Manual actions required**</ins>
+
+Due to moving to the DXC License model in 14561, it is required to create an uninstall package to remove the Sable37 License model. <br>
+Otherwise you will receive duplicate object errors. <br>
+See [MS instructions](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package).
+
 <ins>New features</ins>
 
 **Core module**	- Applies to all modules
