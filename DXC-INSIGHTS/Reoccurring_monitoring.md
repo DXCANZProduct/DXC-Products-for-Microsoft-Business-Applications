@@ -43,4 +43,4 @@ Only one instance is required, and it does not need a recurrence. The batch job 
 
 ![Monitoring_batch](IMAGES/Monitoring_batch.png)
 
-Once running, the monitoring batch job will re-scan for changes in settings and business rules. You can disable the batch job from **System administrators > Setup > DXC Insights > DXC Insights parameters > Periodic monitoring** tab if needed. Refer to section [Enable the Periodic monitoring](Reoccurring_monitoring.md#1-enable-the-periodic-monitoring)
+Once running, the monitoring batch job will re-scan for changes in settings and business rules. You can disable the batch job from **System administrators > Setup > Insights for D365 FO > Insights for D365 FO parameters > Periodic monitoring** tab if needed. Refer to section [Enable the Periodic monitoring](Reoccurring_monitoring.md#1-enable-the-periodic-monitoring)
