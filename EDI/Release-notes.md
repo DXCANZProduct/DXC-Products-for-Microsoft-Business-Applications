@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-06-14
+ms.date: 2023-06-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,8 +55,9 @@ See [MS instructions](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-14561	| Update model display names and licensing	| About > Version: Update to models' display name to include DXC. <br> Also moved to the DXC License model.
+14561	| Update model display names and licensing	| About > Version: Update to models' display name to include DXC. <br> Moved to the DXC License model, see 'Manual actions required'.
 14205	| Connection type - Azure Blob Storage | Update to support Azure Blob Storage related method depreciation in 10.0.34. <br> Replaced StartCopy with BeginStartCopy <br> Update method for moving File in Azure Blob Storage <br> https://learn.microsoft.com/en-us/previous-versions/azure/jj732079(v=azure.100)
+14178	| Process to staging	| With the change to allow multiple incoming documents for the same document type for a Trading partner (8420), the setting and validation profile assigned to the document for the trading partner was assigned to the inbound file. <br> To support scenarios where the filename isn't unique per trading partner, and the staging record created against a different trading partner (using GLN inside file), this change assigns the setting and validation profile when processing the inbound file to staging and thus applying the staging trading partner's setting and validation profiles.
 
 **Customer module**	
 
