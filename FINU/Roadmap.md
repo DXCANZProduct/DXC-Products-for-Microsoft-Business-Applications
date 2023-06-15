@@ -37,12 +37,14 @@ This page describes the features planned for future releases and planned release
 
 Release			    | ETA
 :--			        |:--
-2023-06         | 30 June 2023
+2023-07         | 14 July 2023
 
 
 ## Roadmap
 #### Cash and bank management
-- Reconciliation matching rules - additional customer reference use to find D365 customer account to create customer receipt journal
+- Support for following two features:
+    - 10.0.34 Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions
+    - 10.0.35 Enable posting of new transactions in bank reconciliation
 
 #### Accounts receivable
 - Option to exclude invoices from automatic settlement based on their Collection status, for example disputed.
