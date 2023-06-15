@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-05-05
+ms.date: 2023-06-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,7 +45,8 @@ Release			| ETA
 ## Next release
 ETA: 31 July 2023
 
-
+- Intercompany Customer advanced shipping notice
+- 3PL Product master - add Product lifecycle states to 'Product configuration update' periodic task in order to limit automatic 3PL/Product records created. 
 
 ## Deprecate
 The following has been deprecated
