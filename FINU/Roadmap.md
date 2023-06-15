@@ -5,7 +5,7 @@ title: FINU
 description: FINU - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-05-05
+ms.date: 2023-06-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
