@@ -32,9 +32,9 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.29.20230421
+### Release 10.0.34.20230615
 
-DXC DocuSign 10.0.29 runs on the following Microsoft releases
+DXC DocuSign 10.0.34 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
@@ -45,14 +45,23 @@ Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
 Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-34)
 
+#### Build 10.0.34.202306151
+Release date: 15 June 2023
+
+<ins>New features</ins>
+
+Number	| Functionality	  	| Reason
+:--	|:--		  	|:--	
+N/A	| DXC License		| DXC License version 10.0.34.202306151
+
+
+# Previous version(s)
+
 #### Build 10.0.29.202304211
 
 Number	| Functionality	  | Reason
 :--     |:--              |:--
 N/A		| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> ![System parameters](../FINU/Images/ReleaseNotes_202304_2.png "System parameters")
-
-
-# Previous version(s)
 
 ### Release 10.0.29.20230221
 
