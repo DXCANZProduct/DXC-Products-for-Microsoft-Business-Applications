@@ -71,7 +71,7 @@ Release date: 15 June 2023 <br>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-14332	| Cash and bank management <br> Accounts receivable | Financials utilities connection |  Update to support Azure Blob Storage related method depreciation in 10.0.34. <br> Replaced StartCopyFromBlob with BeginStartCopy <br> https://learn.microsoft.com/en-us/previous-versions/azure/jj732079(v=azure.100)
+14332	| Cash and bank management <br> Accounts receivable | Financials utilities connection |  Update to support Azure Blob Storage related method depreciation in 10.0.34. <br> Replaced StartCopyFromBlob with BeginStartCopy <br> [Obsolete API](https://learn.microsoft.com/en-us/previous-versions/azure/jj732079(v=azure.100))
 12430		| Cash and bank management | Reconciliation matching rules | New field **Offset account reference bank statement field** provides the ability to use [Customer reference](Setup/ACCOUNTS-RECEIVABLE/Customer-reference.md) to find the applicable D365 customer account when running a Mark new transactions Reconciliation matching rule offsetting to customer. 
 14536	| Cash and bank management	| Bank statements	| Ability to map **Ending balance** on custom bank statement formats. Where this is mapped, the imported bank statement's ending balance will be used to populate the Bank statement's ending balance field. This is useful to validate that bank statements are imported in the correct sequence.
 14332	| Accounts payable	| Model reference	| Added FinTag model reference to Finance utilities
