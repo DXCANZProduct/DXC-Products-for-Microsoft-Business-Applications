@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Copy files to articles folder
       shell: pwsh
-      run: Copy-Item 'FINU/', 'DOCUSIGN/', 'CORE-EXTENSIONS/', 'SMART-SEND/', 'FOREX-CONTRACT/', 'EDI/' 'build\dxcproducthelp\DXCDocFX\DXCDocFX\articles\' -Recurse
+      run: Copy-Item 'FINU/', 'DOCUSIGN/', 'DXC-INSIGHTS', 'CORE-EXTENSIONS/', 'SMART-SEND/', 'FOREX-CONTRACT/', 'EDI/' 'build\dxcproducthelp\DXCDocFX\DXCDocFX\articles\' -Recurse
     - uses: nuget/setup-nuget@v1
     - name: Restore nuget packages
       run: nuget restore build\dxcproducthelp\DXCDocFX\DXCDocFX.sln
