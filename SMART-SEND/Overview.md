@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Smart Send
+title: DXC Smart Business Form Email Manager (Smart Send)
 description: Smart Send - Overview
 author: Liam Coll
 manager: Kym Parker
