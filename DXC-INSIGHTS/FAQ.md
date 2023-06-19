@@ -20,7 +20,7 @@ ms.reviewer: Peter Musumeci
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
-ms.search.region: Global
+ms.search.region: InsightsForD365FO
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: Peter Musumeci
 ms.search.validFrom: 2023-03-27
