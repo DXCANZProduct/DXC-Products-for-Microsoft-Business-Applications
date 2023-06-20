@@ -31,7 +31,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.8.32.10171 
+## Release 10.8.32.10171 
 
 License Manager 10.8.32.10171 runs on the following Microsoft releases 
 
@@ -44,7 +44,7 @@ Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
 Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
 
-#### Build 7.0.5493.35497 
+<b>Build 7.0.5493.35497 </b>
 
 <ins>New features</ins>
 
@@ -54,9 +54,9 @@ Number | Functionality | Description
 
 # Previous version(s)
 
-### Release 10.8.32.10156 
+## Release 10.8.32.10156 
 
-#### Build 7.0.5493.35497 
+<b> Build 7.0.5493.35497 </b>
 
 <ins>New features</ins>
 
@@ -64,9 +64,9 @@ Number | Functionality | Description
 :--    |:--   |:--
 10625 | Product help in D365 | Users can access applicable product’s GitHub user guides from within D365 help pane. 
 
-### Release 10.8.32.10141 
+## Release 10.8.32.10141 
 
-#### Build 7.0.5493.35497 
+<b> Build 7.0.5493.35497 </b>
 
 <ins>New features</ins> 
 
@@ -74,8 +74,8 @@ Number | Functionality | Description
 :--  |:-- |:--
 10341 | D365 - Product documentation | Added ability to view user guides, release notes and contact information for each product within D365 <br>   - New workspace under organization administration called Product support <br>   - These fields can be updated as part of the license manager Power App front end and are synced within D365 when the license check is executed. 
 
-###  Release 10.8.32.10131 
-#### Build 7.0.5493.35497 
+##  Release 10.8.32.10131 
+<b> Build 7.0.5493.35497 </b>
 
 <ins>Bug fixes</ins>
 
@@ -83,8 +83,8 @@ Number | Functionality | Description
 :--    |:--   |:--
 68 | Fix load time delay due to license check | A fix has been implemented to address the load time delay on the default page. The license check used to lock the process and users would experience a delay of approximately a minute. 
 
-### Release 10.8.32.10123 
-#### Build 7.0.5493.35497 
+## Release 10.8.32.10123 
+<b> Build 7.0.5493.35497 </b>
 
 <ins>New features</ins>
 
@@ -98,9 +98,9 @@ Number | Functionality | Description
 :--    |:--   |:--
 63 | Set find and exist method accessibility to public in license manager table | Users were unable to access these methods in extends due to its accessibility set to private 
 
-### Release 10.8.32.10101 
+## Release 10.8.32.10101 
 
-#### Build 7.0.5493.35497 
+<b> Build 7.0.5493.35497 </b>
 
 <ins>Bug fixes</ins>
 
@@ -112,7 +112,24 @@ Number | Functionality | Description
 
 # Current version
 
-### Release 202304281 
+## Release 202306051 
+DXC version – 1.0.0.5 <br>
+Cepheo version – 1.0.0.4 
+
+<ins>Bug fixes</ins>
+
+Number | Functionality | Description 
+:--    |:--   |:--
+14138 | Edit product - JSON error | Fix has been applied for an issue with json error promp when a product is modified.
+
+<ins>Deprecation</ins>
+
+Number | Functionality | Description 
+:--    |:--   |:--
+13682 | Deprecate DAXEAM Mobile | Daxeam mobile is no longer supported. As part of this change, the environments API endpoint and the product type Daxeam Mobile has been deprecated. 
+
+# Previous version(s)  
+## Release 202304281 
 DXC version – 1.0.0.4 <br>
 Cepheo version – 1.0.0.3 
 
@@ -128,8 +145,6 @@ Number | Functionality | Description
 Number | Name | Description | Rectified Release 
 :--    |:--   |:-- |:--
 14138 | Edit product – JSON error | When modifying products, a json error is prompted |
-
-# Previous version(s)
 
 ## Release 202303311 
 
