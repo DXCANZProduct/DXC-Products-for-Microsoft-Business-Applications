@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.32
 
 # Reoccurring monitoring
 ### 1. Configure Periodic monitoring  
-Navigate to **System Administration > Setup > Periodic monitoring > Configure monitoring**. If this is the first time you have opened the form, it will be empty. 
+Navigate to **System Administration > Setup > Insights for D365 FO > Periodic monitoring > Configure monitoring**. If this is the first time you have opened the form, it will be empty. 
 Click the menu button labeled ‘Refresh list’. This will scan the AOT and build a list of monitoring rules and their parameters. 
 When you build a new monitoring rule, make sure to refresh so that it appears in the list.
 ![Configure_Periodic_monitoring](IMAGES/Configure_Periodic_monitoring.png)
@@ -44,3 +44,6 @@ Only one instance is required, and it does not need a recurrence. The batch job 
 ![Monitoring_batch](IMAGES/Monitoring_batch.png)
 
 Once running, the monitoring batch job will re-scan for changes in settings and business rules. You can disable the batch job from **System administrators > Setup > Insights for D365 FO > Insights for D365 FO parameters > Periodic monitoring** tab if needed. Refer to section [Enable the Periodic monitoring](Reoccurring_monitoring.md#1-enable-the-periodic-monitoring)
+
+### 3.Create Performance View
+The periodic monitoring for SQL performance may  result in default values being generated initially. This issue can be resolved by executing the 'Create performance view' job. This job is specifically designed to create the System SQL resource statistics view, which ensures accurate and meaningful performance data is captured. Navigate to **System administrators > Setup > Insights for D365 FO > Periodic monitoring > Create performance view**. 
