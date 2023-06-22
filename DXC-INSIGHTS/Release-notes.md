@@ -24,7 +24,7 @@ ms.search.region: InsightsForD365FO
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: Patrick Sharma
 ms.search.validFrom:  2023-03-28
-ms.dyn365.ops.version: 10.0.30
+ms.dyn365.ops.version: 10.0.31
 ---
 
 # 	Release notes
@@ -32,8 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-
-### Release 10.0.31.20230609
+### Release 10.0.31.TBD
 
 Insights for D365 FO 10.0.31 runs on the following Microsoft releases
 
@@ -42,6 +41,27 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
+Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
+
+#### Build 10.0.31.TBD
+Release date: TBD
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+13938	| Associate failing batch jobs and its exceptions	| Exceptions arising out of System run batch jobs will now have additional information "Batch Job Id" and "Batch Name" listed under custom dimensions of Azure Application Insights exceptions table. This will help link failing batch jobs to its related exceptions. 
+14897	| New menu item to create performance view	| The periodic monitoring for SQL performance sometimes resulted in default values being generated initially. This issue can be resolved by executing the ‘Create performance view’ job. 
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+14556	| SQL Performance telemetry logging issues with multiple loggers	| Where there were more than one instances of AppInsights (loggers) setup, customMetricsfor SQL Performance telemetry was not getting logged via Insights For D365FO to the telemetry logger. This has now been fixed.
+
+# Previous Version(s)
+
+### Release 10.0.31.20230609
 
 #### Build 10.0.31.202306091
 Release date: 9 June 2023
@@ -51,8 +71,6 @@ Release date: 9 June 2023
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 14607	| New Feature - Insights for D365 FO Dual Write	| Insights for D365 FO Dual Write provides additional event monitoring during Dual write sync
-
-# Previous Version(s)
 
 ### Release 10.0.31.20230522
 
