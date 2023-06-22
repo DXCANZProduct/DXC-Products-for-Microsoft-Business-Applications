@@ -57,7 +57,7 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-14556	| SQL Performance telemetry logging issues with multiple loggers	| Where there were more than one instances of AppInsights (loggers) setup, customMetricsfor SQL Performance telemetry was not getting logged via Insights For D365FO to the telemetry logger. This has now been fixed.
+14556	| SQL Performance telemetry logging issues with multiple loggers	| Where there were more than one instances of AppInsights (loggers) setup, customMetrics for SQL Performance telemetry was not getting logged via Insights For D365FO to the telemetry logger. This has now been fixed.
 
 # Previous Version(s)
 
