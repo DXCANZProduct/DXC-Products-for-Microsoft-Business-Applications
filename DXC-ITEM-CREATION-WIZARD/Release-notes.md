@@ -5,7 +5,7 @@ title: DXC Item Creation Wizard
 description: DXC Item Creation Wizard - Release notes
 author: PeterM
 manager: Kym Parker
-ms.date: 2023-06-15
+ms.date: 2023-06-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  Release notes
 audience: Application User
 # ms.devlang: 
-ms.reviewer: lcoll
+ms.reviewer: PeterM
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
@@ -32,18 +32,33 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.34.20230615
+### Release 10.0.34.20230622
 
 DXC Item creation wizard 10.0.34 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.29	  | [What’s new or changed in Dynamics 365 application version 10.0.29](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-29)
-Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dynamics 365 application version 10.0.30](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-30)
-Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
 Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-34)
+
+
+### Release 10.0.34.20230622
+
+#### Build 10.0.34.202306221
+Release date: 23 June 2023
+
+<ins>Bug fixes</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+14020    | Product attribute values default back when 2 templates are submitted | Previously when 2 or more templates are submitted into workflow at the same time the product attributes will automatically default back to the state prior to any changes being submitted, even if the 2nd template does not contain attributes. Attributes now only change if the template contains attributes.
+14639    | All attributes display system default status when running a manual update session| If attributes are included as part of a manual update session, the value of the attributes displayed are those as at the start of the session.   The exception is where attributes have default values as part of the template, then the  for template "default" value is now displayed in the update session.
+10869    | ProductionType does not update to value 'Formula'  | ProductionType can be updated to 'Formula' simulatneously as other fields on the item
+
+# Previous version(s)
+
+### Release 10.0.34.20230615
 
 #### Build 10.0.34.202306151
 Release date: 15 June 2023
@@ -52,9 +67,7 @@ Release date: 15 June 2023
 
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--	
-N/A	| DXC License		| DXC License version 10.0.34.202306151
-
-# Previous version(s)
+14020	| DXC License		| DXC License version 10.0.34.202306151
 
 ### Release 10.0.29.20230421
 
@@ -76,6 +89,7 @@ Number	  | Functionality	  | Reason
 9748	|	Item status, released product variants	| The current item status for a product variant is now displayed within the release product variant form.
 9786	|	Create DXCICStatusItemTable record on variant creation	| When a product variant is created from a creation template, the variant will inherit the items status defined on the template.
 9926	|	Item status - block inventory transactions	| A new transaction type is available for blocking by using item statuses. The new option Inventory will enable the prevention of product or variants with the item status from being included in; <BR> * Inventory movement <BR> * Inventory adjustment <BR> * Inventory transfer <BR> * Inventory count
+
 
 <ins>Bug fixes</ins>
 
