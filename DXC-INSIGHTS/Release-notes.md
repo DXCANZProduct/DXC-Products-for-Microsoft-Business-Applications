@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.31.TBD
+### Release 10.0.31.202306231
 
 Insights for D365 FO 10.0.31 runs on the following Microsoft releases
 
@@ -43,8 +43,8 @@ Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
 Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
 
-#### Build 10.0.31.TBD
-Release date: TBD
+#### Build 10.0.31.202306231
+Release date: 23 June 2023
 
 <ins>New features</ins>
 
