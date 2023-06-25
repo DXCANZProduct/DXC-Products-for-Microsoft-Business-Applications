@@ -65,7 +65,7 @@ Example: <br>
 
 ### Module FAQ
 The module specific FAQ can be found below. <br>
-FAQ include example errors and methods to fix.
+FAQ includes example errors and methods to fix.
 
 - [Customer](CUSTOMER/INTRODUCTION/FAQ.md)
 - [Vendor](VENDOR/INTRODUCTION/FAQ.md)
