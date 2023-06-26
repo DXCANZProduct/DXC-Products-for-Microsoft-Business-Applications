@@ -109,7 +109,7 @@ If you’re using our model source code for extension or debugging and would lik
 If you don’t follow these instructions and continue building your installation deployable package using the license model source code, the installation will continue using the same license model as before applying the release. 
 
 ## Feature management
-Enable **Insights for D365 FO** via D365 Feature management to ena. <br>
+
 Enable the following features in D365 Feature management:
 - **Insights for D365 FO**
 - **Insights for D365 FO Dual Write** (additional license option)
