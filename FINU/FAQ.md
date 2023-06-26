@@ -1,11 +1,11 @@
----
+![image](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/assets/59988997/6b5ee926-f06d-446a-8792-3eaec6ee47ce)---
 # required metadata
 
 title: Finance Utilities 
 description: Finance Utilities - FAQ 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-22
+ms.date: 2023-06-26
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ### Where can I find contact information for support?
    
-Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > DXC support**
+Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > Product support**
   
 ### Where can I identify the installed version of the Finance utilities module
 
