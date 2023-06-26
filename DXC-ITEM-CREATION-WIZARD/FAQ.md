@@ -35,3 +35,12 @@ Support contact details can be located on the **Contact** tab at **Organization 
 ### Where can I identify the installed version of Insights for D365 FO?
 Navigate to Help & support > About.
 A list of installed models will be displayed on the Version tab. Search for DXC Item Creation. The version information will be displayed on the right (eg DXC Item Creation 10.0.34.202306151)
+
+### Can I have product attributes on multiple update templates?
+When an Item creation session is generated the update template will record the values assigned to the respective product attributes at that time. If another user has submitted changes, whether in progress, approved or still in workflow these will be overridden by the most recent submission. It is for this reason we recommend that the number of templates used to update product attributes are minimal.
+
+### Will the default value for my Product attributes display during an update session?
+Yes, when you run an update session that includes Product Attributes, the session will display the default attribute value that was assigned when you configured the template and the current system value for all other attributes against the relevant item. 
+
+### Can I create a template that only updates 1 or 2 specific product attributes?
+Currently when you run an update session that includes product attributes, all attributes assigned against the released product are displayed in the template.
