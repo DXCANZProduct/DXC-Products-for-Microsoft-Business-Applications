@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Frequently asked questions
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-06-29
+ms.date: 2023-06-26
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 # Frequently asked questions
 
 ### Where can I find contact information for support?
-Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > DXC support**
+Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > Product support**
 
 ### Where can I identify the installed version of the EDI module?
 Navigate to **Help & support > About**.  <br>
