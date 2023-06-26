@@ -40,6 +40,7 @@ DXC Finance Utilities 10.0.34 runs on the following Microsoft releases
 Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
+Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
 
 > Note: From **10.0.32** MS has added a preview feature called **Vendor bank account change proposal workflow**. If this feature is enabled it will use std's functionality for approving changes to Vendor bank accounts and the following needs to be manually configured: <br> 
 >   -  Vendor bank account approval in Accounts payable parameters - Enable the fields that requires approval
