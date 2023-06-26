@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.30
 # Frequently asked questions
 
 ### Where can I find contact information for support?
-Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > DXC support**
+Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > Product support**
 
 ### Where can I identify the installed version of Insights for D365 FO?
 
