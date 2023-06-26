@@ -103,18 +103,17 @@ Azure Application Insights can be used to run analytics to show various error ca
 Enquire ECLANZProductSupport@dxc.com for the latest version of the PowerApp. 
 The app comes bundled in a solution with a custom connector. 
 
-![License Manager PowerApp ](IMAGES/CustomConnector.png "CustomConnector")
+![License Manager PowerApp ](IMAGES/PowerAppsSolution.png "CustomConnector")
 
 Once the solution has been imported, edit the custom connector security tab to allow authentication with the license manager API. Choose OAuth 2.0 and Generic Oauth 2. Update the connector and create a connection from it. Open the License Manager Nordic app. You will get prompted to sign in. For that to work the user needs to be registered with us, please send an email to our support ECLANZProductSupport@dxc.com if you would like a user to get access. 
 
-
-**Client ID** | \<provided separate\>
+|||
 :--       |:--
-**Client Secret** | \<provided separate\>  
-Authorization URL | https://login.microsoftonline.com/a7b0e3b2-3be2-41a6-953b-957d7220165d/oauth2/v2.0/authorize 
-Token URL | https://login.microsoftonline.com/a7b0e3b2-3be2-41a6-953b-957d7220165d/oauth2/v2.0/token
-Refresh URL | https://login.microsoftonline.com/a7b0e3b2-3be2-41a6-953b-957d7220165d/oauth2/v2.0/token
-Scope | 2082352d-b0c8-467e-a008-435bcad52439/.default
+**Client ID** | <b>provided separate <b/>
+**Client Secret** | <b>provided separate <b/>
+**Authorization URL** | The authorization URL <b>provided during initial setup<b/> 
+**Token URL** | The token URL <b>provided during initial setup<b/>
+**Scope** | The scope <b>provided during initial setup<b/>
    
-![License Manager PowerApp ](IMAGES/AuthenticationType.png  "AuthenticationType")  
+![License Manager PowerApp ](IMAGES/PowerAppOAuthSetup.png  "OAuth 2.0 Setup")  
 

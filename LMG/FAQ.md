@@ -34,6 +34,9 @@ Where can I find contact information for support?
 Email: ECLANZProductSupport@dxc.com
 
 ## 	Troubleshooting
+1. Connection error when accessing Power App after a new release is applied
+![License Manager PowerApp Connection Failure](IMAGES/PowerAppConnectionFailure.png "PowerAppConnectionFailure")
+Please refer to the instalaltion instructions located at the end of this documentation [here](./PowerApp.md)
 1.	I can’t save ‘Customer Products’.
 Reason: Field ‘Site (Module) License’ is set to Off OR ‘No. of users’ field is blank
 
