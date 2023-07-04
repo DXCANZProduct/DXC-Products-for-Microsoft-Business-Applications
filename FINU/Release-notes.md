@@ -63,7 +63,7 @@ Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dyn
 
 > Note: From **10.0.34** MS has added a feature called **Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions**. This moves the new transactions to a separate grid. 
 > > If you use Finance utilities fields in Worksheet to enter offset details for the new transactions, **don't enable** this feature as it is _not yet supported_. If you use Reconciliation matching rules to populate offset details and don't need to edit in the Worksheet, you can enable this feature. <br>
-> In **10.0.35** MS has added a feature called **Enable posting of new transactions in bank reconciliation** which adds additional offset fields to the **New transactions** in the Worksheet. Roadmap: We will utilise these new fields that is available when enabling this 10.0.35 feature and add additional Finance utilities fields which will support entering offset details within the worksheet. 
+> In **10.0.35** MS has added button **Line details** to **New transactions** in the Bank reconciliation's Worksheet, which provides additional offset fields. Roadmap: We will utilise these new fields in **Line details** add additional Finance utilities fields which will support entering offset details within the worksheet. 
 
 #### Build 10.0.34.202306151
 Release date: 15 June 2023 <br> 
