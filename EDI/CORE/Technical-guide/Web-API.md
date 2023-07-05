@@ -5,7 +5,7 @@ title: EDI
 description: Technical guide - Web API
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-06-10
+ms.date: 2023-07-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,16 +29,49 @@ ms.dyn365.ops.version:  AX 7.0.1
 
 # Technical guide - Web API
 
-## Inbound services
-The EDI module exposes various functions to send files into the inbound staging area for processing. 
+Two service endpoints are exposed as part of the EDI solution. <br>
+Service group name: SAB_EDIServices
+
+- SAB_EDIInboundService
+  - Allows import of files accessible via a temporary blog storage URL
+  - Allows single file import
+  - Allows multiple file import
+  - Allows package import (zipped file)
+  - Any third-party service that can process Http based client requests can be utilized
+    
+
+- SAB_EDIOutboundService
+  - Allows access to export file via a temporary blog storage URL
+  - Allows access to export package via a temporary blog storage URL
+  - Any third-party web-based service that can be authenticated using an application Id and secret can be used to configure the Web API settings for access to export files.
+    
+For more details see, custom services Microsoft documentation: <br> 
+https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/services-home-page <br>
+https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/custom-services <br>
+
+# Connection setup
+The connection setup for web services need to be specified here: **EDI > Setup > Connection setup > Web API settings**
+See [guide](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/Connection-setup.html#web-services) for more details.
+
+# Inbound services
+The EDI module exposes various functions to send files into the inbound staging area for processing. <br>
+For each integration, the **SAB_EDIExternalWebServiceIncoming** class needs to be implemented to specify the logic for where the file can be downloaded from or for any specific requirements and mappings needed for the document type processing. <br>
+
+This requires the web api settings for connection details.
+
 
 ![Inbound services](../Image/Web-API-inbound-services.png "Inbound services")
 
-#### GetAzureWriteUrl
+### GetAzureWriteUrl
 
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/GetAzureWriteUrl**
 
-Retrieves a writable Azure URL to upload a file for reading into D365
+Retrieves a writable Azure URL to upload a file for reading into D365. <br>
+This requires an input parameter for the name of the file. This can be any file type that is supported and configured for EDI document types. <br>
+This request will return a single URL end point. <br>
+This endpoint utilizes the same underlying framework as data management to generate a temporary blob storage URL. <br>
+
+Example: https://xx.blob.core.windows.net/dmf/text.xml?sv=2014-02-14&sr=b&sig=OoMCuQnQqOVgM5gpw8HNqeuGlApBSta3IPCU99uOnYI%3D&st=2023-07-04T06%3A26%3A04Z&se=2023-07-04T07%3A01%3A04Z&sp=rw
 
 ##### Request
 
@@ -67,9 +100,10 @@ application/json, text/json <br>
 }
 
  
-#### AddFileToQueue
+### AddFileToQueue (Single files)
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFileToQueue**
 
+A request to this endpoint allows import of single files. This uses the same functionality to process the import as the Inbound files in EDI.
 Parameters to add a single file into the inbound file queue
 
 ##### Request
@@ -77,12 +111,12 @@ Parameters to add a single file into the inbound file queue
 Name 	          | Type	        | Description
 :--             |:--            |:--
 **AddFileToQueueContract**		  |   |  
-AzureWriteUrl	  | String	      | **Required** The azure blob storage URL of the file
-DocumentType	  | String	      | **Required** The EDI Document type the file relates to
-TradingPartnerCompanyId	| String	| **Required** The legal entity the file relates to
-TradingPartnerId | String	      | **Required** The trading partner GLN the file relates to
-TradingPartnerType	| String	  | **Required** The Trading partner type the file relates to
-FileName	       | String	      | **Required** The name of the file
+AzureWriteUrl	  | String	      | **Required** The azure blob storage URL of the file. File for the import. <br> A request to the GetAzureWriteUrl can be made to get access to the temporary blob storage URL. <br> This can be populated with the data required using any third-party web API that supports URL based file reading and writing and processing URL based request. 
+DocumentType	  | String	      | **Required** The EDI Document type the file relates to. <br> This determines the document type for import within EDI. The name should correspond against the document type name configured in EDI. <br> For example, Customer purchase order
+TradingPartnerCompanyId	| String	| **Required** The legal entity the file relates to. The company in which file must be imported. This should be based on the configuration in EDI trading partners. 
+TradingPartnerId | String	      | **Required** Trading partner Id as configured in EDI trading partners
+TradingPartnerType	| String	  | **Required** The trading partner type as configured in EDI trading partners, for example, Customer
+FileName	       | String	      | **Required** The name of the file for import
 
 Sample: <br>
 application/json, text/json <br>
@@ -98,6 +132,7 @@ application/json, text/json <br>
   } <br>
 }
 
+This endpoint returns the status of import, error message (if any), name of file and the reference number for the import. 
 
 ##### Response
 
@@ -155,7 +190,7 @@ application/json, text/json <br>
 }
 
  
-#### AddFilesToQueue
+### AddFilesToQueue (list of files)
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFilesToQueue**
 
 A collection of AddFileToQueueContract parameters
@@ -223,7 +258,7 @@ application/json, text/json <br>
 ]
 
 
-#### AddFileToQueue_package
+### AddFileToQueue_package
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFileToQueue_package**
 
 A function to push a data package which will be extracted and its contents put into the inbound file queue.
@@ -308,12 +343,12 @@ application/json, text/json <br>
   } <br>
 ] <br>
 
-## Outbound services
+# Outbound services
 The EDI module exposes various functions to pull files from the outbound staging area for download.
 
 An oData feed of the outbound file queue (/data/SAB_EDIFileExport) is available for discovering the outbound queued file references.
 
-#### GetFileDetailFromQueue
+### GetFileDetailFromQueue
 ###### Request
 
 Name 	          | Type	        | Description
@@ -343,7 +378,7 @@ application/json, text/json <br>
 }
 
  
-#### GetFileDetailFromQueue_Package
+### GetFileDetailFromQueue_Package
 ##### Request
 
 Name 	         | Type	        | Description
