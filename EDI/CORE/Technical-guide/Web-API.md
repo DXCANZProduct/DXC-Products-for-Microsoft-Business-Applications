@@ -155,6 +155,7 @@ application/json, text/json <br>
 #### GetStatus
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/GetStatus**
 
+A request to endpoint requires the reference number received from the import endpoint to get the status of the inbound file. <br> 
 A function to retrieve the status of a queued inbound file. It also has the ability to provide information on the processed document’s status if the inbound file has been processed.
 
 ##### Request
@@ -193,19 +194,24 @@ application/json, text/json <br>
 ### AddFilesToQueue (list of files)
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFilesToQueue**
 
-A collection of AddFileToQueueContract parameters
+A request to this endpoint allows import of a list of files. <br>
+This uses the same functionality to process the import file as the Inbound files in EDI. <br>
+
+The following parameters are required to be passed within a List by this endpoint. <br>
 
 ##### Request
 
 Name 	          | Type	        | Description
 :--             |:--            |:--
 **AddFileToQueueContracts**		|	|
-AzureWriteUrl			| String	| **Required** The azure blob storage URL of the file
-DocumentType			| String	| **Required** The EDI Document type the file relates to
-TradingPartnerCompanyId		| String	| **Required** The legal entity the file relates to
-TradingPartnerId		| String	| **Required** The trading partner GLN the file relates to
-TradingPartnerType		| String	| **Required** The Trading partner type the file relates to
-FileName			| String	| **Required** The name of the file
+AzureWriteUrl			| String	| **Required** The azure blob storage URL of the file. This is the file for import. <br>
+A request to the GetAzureWriteUrl can be made to get access to the temporary blob storage URL.<br>
+This can be populated with the data required using any third-party web API that supports URL based file reading and writing and processing URL based request. 
+DocumentType			| String	| **Required** The EDI Document type the file relates to. <br> This determines the document type for import within EDI. The name should correspond against the document type name configured in EDI. For example, Customer purchase order
+TradingPartnerCompanyId		| String	| **Required** The legal entity the file relates to. The company in which file must be imported. This should be based on the configuration in EDI trading partners.
+TradingPartnerId		| String	| **Required** Trading partner Id as configured in EDI trading partners
+TradingPartnerType		| String	| **Required** The trading partner type as configured in EDI trading partners, for example, Customer
+FileName			| String	| **Required** The name of the file for import
 
 Sample: <br>
 application/json, text/json <br>
@@ -258,10 +264,13 @@ application/json, text/json <br>
 ]
 
 
-### AddFileToQueue_package
+### AddFileToQueue_package (package)
+
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFileToQueue_package**
 
-A function to push a data package which will be extracted and its contents put into the inbound file queue.
+A function to push a data package which will be extracted and its contents put into the inbound file queue. <br>
+This endpoint allows import of files as a data package (zip file). This needs to have a XML manifest file (manifest.xml). <br>
+Supports multiple documents in single manifest file. <br>
 
 ##### Data package
 The data package is a zip file that includes a ‘manifest.xml’ xml file. The manifest file defines the files within the data package in the following XML structure
@@ -276,13 +285,15 @@ The data package is a zip file that includes a ‘manifest.xml’ xml file. The 
   \</Document> <br>
 \</Documents>	 <br>
 
+The following parameters are required to be passed for this endpoint. 
+
 Name 	           | Type	        | Description
 :--                |:--                  |:--
-DocumentType	   | String		| **Required** The EDI Document type the file relates to
-TradingPartnerCompanyId	| String	| **Required** The legal entity the file relates to
-TradingPartnerId   | String		| **Required** The trading partner GLN the file relates to
-TradingPartnerType | String		| **Required** The Trading partner type the file relates to
-FileName	   | String		| **Required** The name of the file
+DocumentType	   | String		| **Required** The EDI Document type the file relates to. <br> This determines the document type for import within EDI. The name should correspond against the document type name configured in EDI. <br> For example, Customer purchase order
+TradingPartnerCompanyId	| String	| **Required** The legal entity the file relates to. The company in which file must be imported. This should be based on the configuration in EDI trading partners.
+TradingPartnerId   | String		| **Required** Trading partner Id as configured in EDI trading partners
+TradingPartnerType | String		| **Required** The trading partner type as configured in EDI trading partners, for example, Customer
+FileName	   | String		| **Required** The name of the file for import
 
 
 Sample: <br>
@@ -316,6 +327,27 @@ application/json, text/json <br>
   " azureWriteUrl ": "<span>https://</span>XXXX.blob.core.windows.net/dmf/exampleDataPackage" <br>
 }
 
+#### GetStatus
+
+**GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/GetStatus**
+
+A request to endpoint requires the reference number received from the import endpoint to get the status of the inbound file. <br> 
+A function to retrieve the status of a queued inbound file. It also has the ability to provide information on the processed document’s status if the inbound file has been processed.
+
+##### Request
+
+Name 	          | Type	        | Description
+:--             |:--            |:--
+reference	      | Long	        | **Required** Unique identifier of the file
+includeStagingStatus	| Boolean	| **Required** also return the status of the staging record if processed
+
+Sample: <br>
+application/json, text/json <br>
+{ <br>
+  "reference": "65468431638", <br>
+  "includeStagingStatus": true <br>
+}
+
 ##### Response
 A collection of results
 
@@ -342,6 +374,8 @@ application/json, text/json <br>
     "FileName": “ExampleFile002.xml” <br>
   } <br>
 ] <br>
+
+
 
 # Outbound services
 The EDI module exposes various functions to pull files from the outbound staging area for download.
