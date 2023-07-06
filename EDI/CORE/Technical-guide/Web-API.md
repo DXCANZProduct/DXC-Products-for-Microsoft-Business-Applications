@@ -100,7 +100,7 @@ application/json, text/json <br>
 }
 
  
-### AddFileToQueue (Single files)
+### AddFileToQueue (single file)
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFileToQueue**
 
 A request to this endpoint allows import of single files. This uses the same functionality to process the import as the Inbound files in EDI.
@@ -378,11 +378,21 @@ application/json, text/json <br>
 
 
 # Outbound services
-The EDI module exposes various functions to pull files from the outbound staging area for download.
+The EDI module exposes various functions to pull files from the outbound staging area for download. <br>
 
 An oData feed of the outbound file queue (/data/SAB_EDIFileExport) is available for discovering the outbound queued file references.
 
-### GetFileDetailFromQueue
+The outbound file can be configured using web API settings for an external storage. <br>
+Similar to Inbound, the SAB_ExternalWebServiceOutgoing class needs to be implemented to process the export file for each integration. <br>
+
+This requires the web api settings for connection details.
+
+
+### GetFileDetailFromQueue (single file)
+
+This endpoint provides a URL endpoint with which the export file can be accessed using a reference number for the export. <br>
+Response – URL endpoint for export file, example file.xml
+
 ###### Request
 
 Name 	          | Type	        | Description
@@ -412,7 +422,12 @@ application/json, text/json <br>
 }
 
  
-### GetFileDetailFromQueue_Package
+### GetFileDetailFromQueue_Package (package)
+
+This endpoint provides a URL endpoint with which the data package can be accessed using a reference number for the export. <br>
+Response – URL endpoint for zipped file, example, file.zip
+
+
 ##### Request
 
 Name 	         | Type	        | Description
