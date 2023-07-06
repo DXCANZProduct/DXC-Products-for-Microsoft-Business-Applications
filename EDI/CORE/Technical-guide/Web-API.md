@@ -46,11 +46,11 @@ Service group name: SAB_EDIServices
   - Any third-party web-based service that can be authenticated using an application Id and secret can be used to configure the Web API settings for access to export files.
     
 For more details see, custom services Microsoft documentation: <br> 
-https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/services-home-page <br>
-https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/custom-services <br>
+[https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/services-home-page] <br>
+[https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/custom-services] <br>
 
 # Connection setup
-The connection setup for web services need to be specified here: **EDI > Setup > Connection setup > Web API settings**
+The connection setup for web services need to be specified here: **EDI > Setup > Connection setup > Web API settings** <br>
 See [guide](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/Connection-setup.html#web-services) for more details.
 
 # Inbound services
