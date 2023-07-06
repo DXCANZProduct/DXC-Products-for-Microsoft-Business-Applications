@@ -100,10 +100,11 @@ application/json, text/json <br>
 }
 
  
-### AddFileToQueue (single file)
+### AddFileToQueue
+
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFileToQueue**
 
-A request to this endpoint allows import of single files. This uses the same functionality to process the import as the Inbound files in EDI.
+A request to this endpoint allows import of **single files**. This uses the same functionality to process the import as the Inbound files in EDI.
 Parameters to add a single file into the inbound file queue
 
 ##### Request
@@ -191,10 +192,11 @@ application/json, text/json <br>
 }
 
  
-### AddFilesToQueue (list of files)
+### AddFilesToQueue 
+
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFilesToQueue**
 
-A request to this endpoint allows import of a list of files. <br>
+A request to this endpoint allows import of a **list of files**. <br>
 This uses the same functionality to process the import file as the Inbound files in EDI. <br>
 
 The following parameters are required to be passed within a List by this endpoint. <br>
@@ -264,13 +266,15 @@ application/json, text/json <br>
 ]
 
 
-### AddFileToQueue_package (package)
+### AddFileToQueue_package 
 
 **GET /api/Services/SAB_EDIServices/SAB_EDIInboundService/AddFileToQueue_package**
 
-A function to push a data package which will be extracted and its contents put into the inbound file queue. <br>
+A function to push a **data packag**e which will be extracted and its contents put into the inbound file queue. <br>
 This endpoint allows import of files as a data package (zip file). This needs to have a XML manifest file (manifest.xml). <br>
 Supports multiple documents in single manifest file. <br>
+
+[Example package](EDI-package-sample-US-001.zip)
 
 ##### Data package
 The data package is a zip file that includes a ‘manifest.xml’ xml file. The manifest file defines the files within the data package in the following XML structure
@@ -388,9 +392,9 @@ Similar to Inbound, the SAB_ExternalWebServiceOutgoing class needs to be impleme
 This requires the web api settings for connection details.
 
 
-### GetFileDetailFromQueue (single file)
+### GetFileDetailFromQueue
 
-This endpoint provides a URL endpoint with which the export file can be accessed using a reference number for the export. <br>
+This endpoint provides a URL endpoint with which the export **file** can be accessed using a reference number for the export. <br>
 Response – URL endpoint for export file, example file.xml
 
 ###### Request
@@ -422,9 +426,9 @@ application/json, text/json <br>
 }
 
  
-### GetFileDetailFromQueue_Package (package)
+### GetFileDetailFromQueue_Package
 
-This endpoint provides a URL endpoint with which the data package can be accessed using a reference number for the export. <br>
+This endpoint provides a URL endpoint with which the **data package** can be accessed using a reference number for the export. <br>
 Response – URL endpoint for zipped file, example, file.zip
 
 
