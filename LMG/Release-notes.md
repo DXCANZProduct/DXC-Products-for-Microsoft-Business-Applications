@@ -5,7 +5,7 @@ title: License manager
 description: License manager - Release notes
 author: hho34
 manager: Kym Parker
-ms.date: 2023-06-07
+ms.date: 2023-07-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,6 +43,7 @@ Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
 Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
+Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
 
 <b>Build 7.0.5493.35497 </b>
 
