@@ -206,9 +206,7 @@ The following parameters are required to be passed within a List by this endpoin
 Name 	          | Type	        | Description
 :--             |:--            |:--
 **AddFileToQueueContracts**		|	|
-AzureWriteUrl			| String	| **Required** The azure blob storage URL of the file. This is the file for import. <br>
-A request to the GetAzureWriteUrl can be made to get access to the temporary blob storage URL.<br>
-This can be populated with the data required using any third-party web API that supports URL based file reading and writing and processing URL based request. 
+AzureWriteUrl			| String	| **Required** The azure blob storage URL of the file. This is the file for import. <br> A request to the GetAzureWriteUrl can be made to get access to the temporary blob storage URL.<br> This can be populated with the data required using any third-party web API that supports URL based file reading and writing and processing URL based request. 
 DocumentType			| String	| **Required** The EDI Document type the file relates to. <br> This determines the document type for import within EDI. The name should correspond against the document type name configured in EDI. For example, Customer purchase order
 TradingPartnerCompanyId		| String	| **Required** The legal entity the file relates to. The company in which file must be imported. This should be based on the configuration in EDI trading partners.
 TradingPartnerId		| String	| **Required** Trading partner Id as configured in EDI trading partners
