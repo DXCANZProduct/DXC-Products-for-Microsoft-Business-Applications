@@ -47,6 +47,7 @@ Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-35)
 
 #### Build 10.0.29.202304143
+
 Number	  | Name	          | Description
 :--       |:--              |:--
 12650	    | Payment Advice not issued when multiple payments for  same vendor  | When there are multiple payments for a single vendor within the one journal previously only the first record would issue the payment advice document when using the Smart Send button, this has now been corrected.
