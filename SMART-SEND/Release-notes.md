@@ -3,9 +3,9 @@
 
 title: Smart-Send
 description: DXC Smart Business Form Email Manager - Release notes
-author: lcoll
+author: PeterM
 manager: Kym Parker
-ms.date: 2023-05-04
+ms.date: 2023-07-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,16 +43,26 @@ Microsoft Dynamics 365 application	| 10.0.30	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
 Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
 Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
+Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-34)
+Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-35)
+
+#### Build 10.0.29.202304143
+Number	  | Name	          | Description
+:--       |:--              |:--
+12650	    | Payment Advice not issued when multiple payments for  same vendor  | When there are multiple payments for a single vendor within the one journal previously only the first record would issue the payment advice document when using the Smart Send button, this has now been corrected.
+
+
+	
+
+# Previous version(s)
+### Release 10.0.29.20230414
 
 #### Build 10.0.29.202304142
 
 Number	  | Functionality	  | Reason
 :--       |:--              |:--
 N/A		| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> ![System parameters](../FINU/Images/ReleaseNotes_202304_2.png "System parameters")
-	
-
-# Previous version(s)
-	
+ 
 ### Release 10.0.27.20220930
 	
 #### Build 10.0.27.202209301
@@ -84,12 +94,19 @@ Number	  | Functionality	  | Reason
 10231	    | Support Vendor Tax Invoice report formats | The report type *Vendor Invoice* and the standard report formats *VendInvoiceDocument.Report* and *VendInvoiceDocumentModern.Report* are now available in the Smart Send configuration form ECL_AutoPrintReportMgmt
 10288	    | Legal entity name placeholder token | The token placeholder %CompanyName% can now be used to return the name of the legal entity from which the report was generated.
 
-### Release 10.0.22.20220413
 
-#### Build 10.0.22.202204131
+### Release 10.0.29.20230414
+
+#### Build 10.0.29.202304142
 
 <ins>Bug fixes</ins>
 
+Number	  | Name	          | Description
+:--       |:--              |:--
+12650	    | Payment Advice not issued when multiple payments for  same vendor  | When there are multiple payments for a single vendor within the one journal previously only the first record would issue the payment advice document when using the Smart Send button, this has now been corrected.
+### Release 10.0.22.20220413
+
+#### Build 10.0.22.202204131
 Number	  | Name	          | Description
 :--       |:--              |:--
 10230	    | Sales	invoice not dispatched using the Smart Send button  | Resolution for error message received when selecting the Smart Send button on a customer tax invoice.
