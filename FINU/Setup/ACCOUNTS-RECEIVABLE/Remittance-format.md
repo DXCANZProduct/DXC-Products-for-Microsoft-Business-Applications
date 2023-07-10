@@ -5,7 +5,7 @@ title: DXC Finance Utilities - AR Utilities
 description: Customer remittance format setup
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-05-08
+ms.date: 2023-07-10
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.1
 The fields as described in the following subsections are available to control the file format for periodic import tasks available in additional licensed feature **Finance utilities - AR utilities**.
 
 ## Number sequence
+
+**Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters**
+
 The following number sequences are required for setting up AR Utilities Remittance format.
 
 **Field**     | **Description**
