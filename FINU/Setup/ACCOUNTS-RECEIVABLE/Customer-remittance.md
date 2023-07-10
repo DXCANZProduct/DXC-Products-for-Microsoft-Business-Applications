@@ -5,7 +5,7 @@ title: DXC Finance Utilities - AR Utilities
 description: Customer remittance setup
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-18
+ms.date: 2023-07-10
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,8 +45,8 @@ Then set the fields as described in the following subsections.
 
 **Field** | **Description**   
 :--       |:--
-**Create prepayment**                   | When set to _Yes_ customer payment journal line(s) that aren't settled against a D365 invoice, will be created as a prepayment. 
-**Auto post customer payment journal**  | When set to _Yes_ the created cusomer payment journal will be automatically posted.
+**Create prepayment**                   | When set to _Yes_, customer payment journal line(s) that aren't settled against a D365 invoice, will be created as a prepayment. 
+**Auto post customer payment journal**  | When set to _Yes_, the created customer payment journal will be automatically posted.
 **File attachment document type**       | Select applicable document type. When populated, the import file will be attached to the created customer payment journal. <br> Ensure the file extension is setup in all applicable legal entities File types in Document management parameters.
 
 ## Remittance format
