@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  DXCARRemittanceFormat
+ms.search.form:  DXCARRemittanceFormat, SAB_FinUtilParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
