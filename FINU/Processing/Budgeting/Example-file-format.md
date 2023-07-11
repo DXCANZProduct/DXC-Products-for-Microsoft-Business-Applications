@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Budgeting processing  -Example file format
-author: helenho
+author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-03-02
+ms.date: 2023-07-11
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  Finance Utilities 
+ms.search.form: SAB_FinBudgetParameters, BudgetTransactions
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -32,7 +32,8 @@ The following subsections describe the processing requirement for the additional
 
 ## Example file format
 
-The example below is an example of a budget file to be imported.  The file must be .csv format.
+The example below is an example of a budget file to be imported.  <br>
+The file must be .csv format and column order needs to match below sequence. <br>
 From column (A), the column details are:
 
 -	Main Account 
@@ -45,3 +46,6 @@ From column (A), the column details are:
 -	GST group
 -	Start Date - for the 1st period of the register entry (i.e. 01/01/2017)
 -	Monthly values for each budget register entry
+
+[Example file](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/ExampleFiles/BudgetImportExample.csv)
+
