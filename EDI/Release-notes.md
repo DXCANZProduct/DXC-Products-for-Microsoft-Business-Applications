@@ -41,12 +41,20 @@ ETA: End July
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
+14455	| Connection types (Azure, FTP and SFTP)	| New option **Disable delete**. When set to _Yes_, the file will not be deleted from the import path. This is useful where company doesn't edit rights on the connection.
+
 
 **Customer module**
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
 14184	| Customer advanced shipping notice	| Support Intercompany Customer ASN. Creates the ASN against the original EDI order's Trading partner and applies their ASN document setting, for example only create for EDI order. <br> 
+
+**3PL module**	
+
+Number	| Functionality	  	| Reason
+:--	|:--		  	|:--
+14343	| Product master	| Ability to filter to multiple **Lifecycle states** on the **Product configuration update** periodic task. <br> This periodic task's purpose is to flag the product as applicable to the 3PL warehouse if inventory transactions exist. 
 
 <ins>Bug fixes</ins>
 
