@@ -41,7 +41,7 @@ ETA: End July
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
-14455	| Connection types (Azure, FTP and SFTP)	| New option **Disable delete**. When set to _Yes_, the file will not be deleted from the import path. This is useful where company doesn't edit rights on the connection.
+14455	| Connection types (Azure, FTP and SFTP)	| New option **Disable delete**. When set to _Yes_, the file will not be deleted from the import path. This is useful where company doesn't have edit rights on the connection and don't want to see an error in the connection log. <br> FTP: Enabling this option may cause a performance impact. Each file will be downloaded and uploaded to its specific directory to retain file in source directory.
 
 
 **Customer module**
@@ -49,6 +49,8 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--
 14184	| Customer advanced shipping notice	| Support Intercompany Customer ASN. Creates the ASN against the original EDI order's Trading partner and applies their ASN document setting, for example only create for EDI order. <br> 
+14569	| Customer advanced shipping notice	| New document setting **Auto assign consignment note number** and EDI parameter's Number sequence **Consignment note number**. Ability to auto generate consignment numbers for Single and Consolidated packing slips. Where Shipping carrier is set to auto generate consignment numbers, the pro number sequence will still be used. This new document setting option applies to sales orders where no shipping carrier is assigned, or the shipping carrier doesn't auto generate consignment notes.  <br> Where the document setting's **ASN strategy**is set to _Consolidated packing slips_ and **Auto assign consignment note number** is set to _Yes_, the packing slip will automatically be assigned to latest open (not sent to EDI) consignment that matches the packing slip (for example shipping carrier, customer, address). <br> Users can still manually create and assign consignment note numbers as well.
+14964	| Customer advanced shipping notice	| New periodic task called **Send customer advanced shipping notice**
 
 **3PL module**	
 
@@ -63,12 +65,14 @@ Number	| Functionality	  	| Reason
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 11657	| Saved views		| Applicable when feature 'Saved views performance enhancement' is enabled, and user navigates from a staging form to Inbound files using the **Inbound files** button. <br> Inbound file's Default view is applied and could result in applicable inbound file not displaying. <br> When setting new EDI parameters field **Apply standard view** to: <br> • **Yes**: the standard view will be applied <br> • **No**: the default view will be applied <br> ![Staging form](RELEASE-NOTES-IMAGES/20230731_1.png "Staging form")  
+14821	| Connection types - FTP and Azure	| File delete was attempted after file has been moved to error folder. Functionally worked, but log indicated an error for attempted delete. FTP filename will get a date/time stamp suffix when moved to archive and error paths.
 
 **Customer module**
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
 13069	| Data entity	| Entity **POA response code group lines** didn't allow importing values where **Allow auto trigger** is set to _No_.
+14648	| Customer advanced shipping notice	| The Shipped quantity (field Quantity / OrderQty) was in Inventory unit, now changed to match the Sales unit for the ASN line. Field InventQty is still in the Inventory unit.
 
 # Current version
 
