@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-06-15
+ms.date: 2023-07-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,7 +50,7 @@ Number	| Name		 | Description
 :--	|:--		  	|:--
 14184	| Customer advanced shipping notice	| Support Intercompany Customer ASN. Creates the ASN against the original EDI order's Trading partner and applies their ASN document setting, for example only create for EDI order. <br> 
 14569	| Customer advanced shipping notice	| New document setting **Auto assign consignment note number** and EDI parameter's Number sequence **Consignment note number**. Ability to auto generate consignment numbers for Single and Consolidated packing slips. Where Shipping carrier is set to auto generate consignment numbers, the pro number sequence will still be used. This new document setting option applies to sales orders where no shipping carrier is assigned, or the shipping carrier doesn't auto generate consignment notes.  <br> Where the document setting's **ASN strategy**is set to _Consolidated packing slips_ and **Auto assign consignment note number** is set to _Yes_, the packing slip will automatically be assigned to latest open (not sent to EDI) consignment that matches the packing slip (for example shipping carrier, customer, address). <br> Users can still manually create and assign consignment note numbers as well.
-14964	| Customer advanced shipping notice	| New periodic task called **Send customer advanced shipping notice**
+14964	| Customer advanced shipping notice	| New periodic task called **Send customer advanced shipping notice**. <br> Ability to set a recurrence for automatically sending open consignment note numbers to EDI which sets the Consignment note's **Sent to EDI** to _Yes_ and creates the ASN record. <br> This is useful for consolidated packing slips that can be automatically "closed" and ASN created after a certain time in the day.
 
 **3PL module**	
 
