@@ -41,7 +41,7 @@ ETA: End July
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
-14455	| Connection types (Azure, FTP and SFTP)	| New option **Disable delete**. When set to _Yes_, the file will not be deleted from the import path. This is useful where company doesn't have edit rights on the connection and don't want to see an error in the connection log. <br> FTP: Enabling this option may cause a performance impact. Each file will be downloaded and uploaded to its specific directory to retain file in source directory.
+14455	| Connection types - Azure, FTP and SFTP	| New option **Disable delete**. When set to _Yes_, the file will not be deleted from the import path. This is useful where company doesn't have edit rights on the connection and don't want to see an error in the connection log. <br> FTP: Enabling this option may cause a performance impact. Each file will be downloaded and uploaded to its specific directory to retain file in source directory.
 
 
 **Customer module**
@@ -65,8 +65,8 @@ Number	| Functionality	  	| Reason
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 11657	| Saved views		| Applicable when feature 'Saved views performance enhancement' is enabled, and user navigates from a staging form to Inbound files using the **Inbound files** button. <br> Inbound file's Default view is applied and could result in applicable inbound file not displaying. <br> When setting new EDI parameters field **Apply standard view** to: <br> • **Yes**: the standard view will be applied <br> • **No**: the default view will be applied <br> ![Staging form](RELEASE-NOTES-IMAGES/20230731_1.png "Staging form")  
-14821	| Connection types - FTP and Azure	| File delete was attempted after file has been moved to error folder. Functionally worked, but log indicated an error for attempted delete. FTP filename will get a date/time stamp suffix when moved to archive and error paths.
-14437	| Connection types (Azure, FTP and SFTP) | When Archive path / container is not setup the intention is not to archive the import file, example where company doesn't have edit rights on the connection. <br> The connection log should not give a warning that it failed to archive in this case.
+14821	| Connection types - Azure and FTP	| File delete was attempted after file has been moved to error folder. Functionally worked, but log indicated an error for attempted delete. FTP filename will get a date/time stamp suffix when moved to archive and error paths.
+14437	| Connection types - Azure, FTP and SFTP | When Archive path / container is not setup the intention is not to archive the import file, example where company doesn't have edit rights on the connection. <br> The connection log should not give a warning that it failed to archive in this case.
 
 **Customer module**
 
