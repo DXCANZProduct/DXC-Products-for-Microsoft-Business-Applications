@@ -30,6 +30,38 @@ ms.dyn365.ops.version: AX 7.0.1
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
+# Next version
+
+### Release 10.0.34.202307TBD
+ETA: End July
+
+<ins>New features</ins>
+
+**Core module**	- Applies to all modules
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+
+**Customer module**
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+14184	| Customer advanced shipping notice	| Support Intercompany Customer ASN. Creates the ASN against the original EDI order's Trading partner and applies their ASN document setting, for example only create for EDI order. <br> 
+
+<ins>Bug fixes</ins>
+
+**Core module**	- Applies to all modules
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+11657	| Saved views		| Applicable when feature 'Saved views performance enhancement' is enabled, and user navigates from a staging form to Inbound files using the **Inbound files** button. <br> Inbound file's Default view is applied and could result in applicable inbound file not displaying. <br> When setting new EDI parameters field **Apply standard view** to: <br> • **Yes**: the standard view will be applied <br> • **No**: the default view will be applied <br> ![Staging form](RELEASE-NOTES-IMAGES/20230731_1.png "Staging form")  
+
+**Customer module**
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+13069	| Data entity	| Entity **POA response code group lines** didn't allow importing values where **Allow auto trigger** is set to _No_.
+
 # Current version
 
 Next release is planned for 31 July 2023.
