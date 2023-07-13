@@ -72,7 +72,7 @@ and assigned to the Trading partner when setting up the document on their outgoi
 > The Customer advanced shipping notice setting profile, has the option to **Warn when consignment note not assigned**.
 
 ### Intercompany ASN
-Where the originating intercompany EDI order's Trading partner is setup to received ASN, the ASN record will be created against this Trading partner using their ASN document setting, for example only create for EDI order.
+Where the originating intercompany EDI order's Trading partner is setup to receive ASN, the ASN record will be created against this Trading partner using their ASN document setting, for example only create for EDI order.
 The intercompany ASN's **External item number** will be obtained from the originating sales order line - only applies to EDI orders.
 
 ### Consignment notes
@@ -205,7 +205,7 @@ The following EDI Line staging fields are available on the lines page.
 **Line number document**   | The line within the EDI table/file 
 **Item number**            | The D365 item number                                       | Packing slip > Item id
 **Text**                   | The D365 item name	                                        | Packing slip > Item Name
-**External item number**   | Customer external item number	                            | Sales line > General > External
+**External item number**   | Customer external item number	<br> The intercompany ASN's External item number will be obtained from the originating sales order line - only applies to EDI orders.                      | Sales line > General > External
 **Bar code**               | The GTIN or barcode                                        | Sales line > EDI item number
 **Store code**	           | Store code for the delivery line	                        | Sales line > Store Code
 **Delivery name**          | Delivery name and address information	                    | Consignment/Sales order > Delivery address information
