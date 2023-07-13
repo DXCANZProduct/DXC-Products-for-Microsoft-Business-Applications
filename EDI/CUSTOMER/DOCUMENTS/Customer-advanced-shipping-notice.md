@@ -220,9 +220,10 @@ The following EDI Line staging fields are available on the lines page.
 **Store code**	           | Store code for the delivery line	                        | Sales line > Store Code
 **Delivery name**          | Delivery name and address information	                    | Consignment/Sales order > Delivery address information
 **Unit**                   | Unit of measure	                                        | Sales line > Unit
-**Quantity**               | Quantity to be delivered	                                | Packing slip > Quantity
-**Ordered quantity**       | The ordered quantity for this line                         | Packing slip > Ordered
-**Backorder quantity**      | The backorder quantity for this line                      | Packing slip > Remain
+**Quantity**               | Quantity to be delivered, in sales line unit               | Packing slip > Quantity (Sales unit)
+**Inventory quantity**     | Quantity to be delivered, in inventory unit                | Packing slip > Quantity (Inventory unit)
+**Ordered quantity**       | The ordered quantity for this line, in sales line unit     | Packing slip > Ordered (Sales unit)
+**Backorder quantity**      | The backorder quantity for this line, in sales line unit  | Packing slip > Remain (Sales unit)
 **Sales price**            | Sales line unit price	                                    | Sales line > Unit Price
 **Amount**                 | Line amount	
 **Weight**                 | Line weight	
