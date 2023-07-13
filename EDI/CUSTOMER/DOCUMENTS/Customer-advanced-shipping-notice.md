@@ -50,7 +50,7 @@ The following setup is prerequisites for the customer advanced shipping notice
     - File name setup
 6. Assign [ASN line configuration](../SETUP/Warehouses.md) to all the 'ship from' warehouses.
 7. Setup [Auto generate consignment note number](#auto-generate-a-consignment-note-number) where applicable.
-8. Periodic task Send customer advanced shipping notice
+8. Setup Periodic task [Send customer advanced shipping notice](#periodic-task) if applicable for consolidated packing slips.
 
 ## Processing
 
