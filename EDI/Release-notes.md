@@ -74,7 +74,7 @@ Number	| Name		 | Description
 :--	|:--		  	|:--
 13069	| Data entity	| Entity **POA response code group lines** didn't allow importing values where **Allow auto trigger** is set to _No_.
 14648	| Customer advanced shipping notice	| The Shipped quantity (field Quantity / OrderQty) was in Inventory unit, now changed to match the Sales unit for the ASN line. Field InventQty is still in the Inventory unit.
-12619	| Customer advanced shipping notice	| Update label for InventQuantity to **Inventory quantity**
+12619	| Customer advanced shipping notice	| Update label for InventQuantity to **Inventory quantity** and added to the staging form.
 
 # Current version
 
