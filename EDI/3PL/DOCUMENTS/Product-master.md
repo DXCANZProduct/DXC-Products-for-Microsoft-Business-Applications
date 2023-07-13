@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Product master
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-12
+ms.date: 2023-07-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -81,6 +81,7 @@ If inventory transactions exist for the product/warehouse combination and the pr
 
 - Navigate to **EDI > Periodic Tasks > 3PL products > Product configuration update**
 - Select **Warehouse** if it shouldn't run for all warehouses.
+- Select **State**(s) if only certain **Product lifecycle state**(s) apply.
 - Setup the required Batch recurrence
 
 > Note: If a product was incorrectly transacted on the 3PL warehouse, the inventory transaction will still result in a record for the product/warehouse combination in 3PL product setup. Instead of deleting the line, set **Active** to _No_ and it will be excluded in future staging records to the warehouse.
