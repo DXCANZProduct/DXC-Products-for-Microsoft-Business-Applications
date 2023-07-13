@@ -49,6 +49,9 @@ The following setup is prerequisites for the customer advanced shipping notice
     - Setting profile
     - File name setup
 6. Assign [ASN line configuration](../SETUP/Warehouses.md) to all the 'ship from' warehouses.
+7. If consignment note numbers will automatically be created:
+    - Shipping carrier's Pro number sequence
+    - EDI parameters Number sequence [Consignment note number](../../CORE/Setup/EDI-parameters.md#number-sequence)
 
 ## Processing
 
