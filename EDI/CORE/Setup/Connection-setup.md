@@ -5,7 +5,7 @@ title: EDI Connection setup
 description: Overview of the EDI connection methods
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-12
+ms.date: 2023-07-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -83,6 +83,7 @@ To begin, create a new FTP site record and fill out the connection parameters
 | **Host**                 		| Specify the **Host** for the FTP site <br> *Note: FTP:// is not required* |
 | **Port**                 		| Specify the **Port** for the FTP site|
 | **Enable TLS**          		| Select to enable FTPS using TLS |
+| **Disable delete**          | When set to _Yes_, the file will not be deleted from the import path. This is useful where you don't have edit rights on the connection and don't want to see an error in the connection log. <br> *Note: Enabling this option for FTP may cause a performance impact. Each file will be downloaded and uploaded to its specific directory to retain file in source directory.*
 <ins>**Credentials**</ins>     		| 
 | **User**                 		| Specify the **Username** used for authentication to the FTP site |
 | **Password**                  | Specify the Password used for authentication to the FTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
@@ -134,6 +135,7 @@ To begin, create a new SFTP site record and fill out the connection parameters
 | <ins>**Connection**</ins>            	|  |
 | **Host**                 			| Specify the **Host** for the SFTP site <br> *Note: SFTP:// is not required* |
 | **Port**                			| Specify the **Port** for the SFTP site|
+| **Disable delete**          | When set to _Yes_, the file will not be deleted from the import path. This is useful where you don't have edit rights on the connection and don't want to see an error in the connection log.
 | <ins>**Credentials**</ins>      			|  |
 | **User**                 			| Specify the **Username** used for authentication to the SFTP site |
 | **Password**                  	| Specify the **Password** used for authentication to the SFTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
@@ -192,11 +194,12 @@ To begin, create a new Azure site record and fill out the connection parameters.
 | :-------------------------------- |:-------------------------------------| 
 | **Site name**                		| Specify a **Name** for the Azure site |
 | **Active**                   	    | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
-<ins>**Credential type**</ins> 		|
 **Credential type**					| Select between *Key vault* or *Database*
-<ins>**Credentials**</ins> 			|	
+| **Disable delete**          | When set to _Yes_, the file will not be deleted from the import path. This is useful where you don't have edit rights on the connection and don't want to see an error in the connection log.
+<ins>**Manual credentials**</ins> 			|	
 **Storage account name**			| If Credential type is set to **Database**: Specify the **storage account name** used for authentication to the Azure site
 **Storage account key**				| If Credential type is set to **Database**: Specify the **storage account key** used for authentication to the Azure site. 
+<ins>**Key vault**</ins> 			|	
 **Key Vault certificate**			| If Credential type is set to **Key vault**: Assign Key vault **Secret** setup in **Key vault parameters**
              		
 > Note: Select **Test Connection** to confirm that a connection can be made with the Azure site specified.
