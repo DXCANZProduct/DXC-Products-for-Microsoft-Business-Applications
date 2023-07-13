@@ -5,7 +5,7 @@ title: FINU
 description: FINU - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-06-15
+ms.date: 2023-07-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,14 +37,12 @@ This page describes the features planned for future releases and planned release
 
 Release			    | ETA
 :--			        |:--
-2023-07         | 14 July 2023
+2023-07         | 31 July 2023
 
 
 ## Roadmap
 #### Cash and bank management
-- Support for following two features:
-    - 10.0.34 Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions
-    - 10.0.35 Enable posting of new transactions in bank reconciliation
+- Support in 10.0.35 for manually setting offset details when using 10.0.34 feature 'Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions'. Utilising 'Line details' added to 'New transactions' in 10.0.35.
 
 #### Accounts receivable
 - Option to exclude invoices from automatic settlement based on their Collection status, for example disputed.
