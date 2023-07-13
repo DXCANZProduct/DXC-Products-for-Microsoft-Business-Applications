@@ -85,10 +85,12 @@ Use the **Number sequences** tab on the **EDI parameters** page to assign number
 
 **Reference** 	                  | **Description**
 :-------------------------------- |:-------------------------------------
-**EDI number**                    |	Unique identifier for EDI staging. This stores the data in D365 in an intermediary/staging tables before creating the target record.
-**ASN number**                    |	Unique identifier when creating a Customer Advanced Shipping Notice (ASN) record. Customer license only
-**Reconciliation Id**             |	Unique identifier when creating a 3PL Reconciliation Id. 3PL license only
-**Group control number**          |	Unique identifier when creating outbound records. The Inbound functional acknowledgement needs to refer to the outbound document's Group control number in order to reconcile against the correct outbound record and update the Received status to Yes.
+**EDI number**                    |	Unique identifier for **EDI staging record**. This stores the data in D365 in an intermediary/staging tables before creating the target record.
+**Group control number**          |	Unique identifier assigned to field **Group control number** on outbound staging records. The Inbound functional acknowledgement needs to refer to the outbound document's Group control number in order to reconcile against the correct outbound record and update the Received status to Yes.
+**ASN number**                    |	Unique identifier assigned to **ASN number** on Consignment notes when creating a Customer Advanced Shipping Notice (ASN) record. Customer license only
+**Reconciliation Id**             |	Unique identifier assigned to Inventory reconciliation's **Reconciliation Id** when creating a 3PL Reconciliation. 3PL license only
+**Consignment note number**       | Unique identifier assigned to **Consignment note number** when using Customer advanced shipping notice Document setting **Auto assign consignment note number** set to _Yes_ and the Sales order's Shipping carrier isn't set to automatically create Consignment notes. Customer license only
+
 
 ## Hold codes
 The **Hold codes** tab is only available for Customer license. Assign the Hold codes to be used when creating the Sales order when processing Customer purchase order records. <br>
