@@ -38,7 +38,7 @@ ETA: End July
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-14578		| Cash and bank management	| Bank reconciliation	| Support for manually setting offset details when enabling feature **Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions**. This feature adds section **New transactions** in the Bank reconciliation and in 10.0.35 MS added additional button **Line details**. <br> Finance utilities now utilises **Line details** for the ability to manually set offset details for mark as new transactions.
+14578		| Cash and bank management	| Bank reconciliation	| Support for manually setting offset details when enabling feature **Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions**. This feature adds section **New transactions** in the Bank reconciliation and in 10.0.35 MS added additional button **Line details**. <br> Finance utilities now utilises **Line details** for the ability to manually set offset details for mark as new transactions. <br> ![Line details](Images/ReleaseNotes_20230731_1.png "Line details")
 14929		| Cash and bank management	| Bank statement import	| **Decimal adjustment** was limited to 5 decimals. <br> Have been changed to dynamic and now supports higher than 5 decimals.
 
 <ins>Bug fixes</ins>
