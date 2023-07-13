@@ -50,6 +50,7 @@ The following setup is prerequisites for the customer advanced shipping notice
     - File name setup
 6. Assign [ASN line configuration](../SETUP/Warehouses.md) to all the 'ship from' warehouses.
 7. Setup [Auto generate consignment note number](#auto-generate-a-consignment-note-number) where applicable.
+8. Periodic task Send customer advanced shipping notice
 
 ## Processing
 
@@ -120,7 +121,14 @@ This option applies to sales orders where no shipping carrier is assigned, or th
     - Number sequence: Assign EDI parameters Number sequence for [Consignment note number](../../CORE/Setup/EDI-parameters.md#number-sequence) 
 
     - Document setting: Set Customer advanced shipping notice **Auto assign consignment note number** to _Yes_. Where the document setting's ASN strategy is set to _Consolidated packing slips_ and **Auto assign consignment note number** is set to _Yes_, the packing slip will automatically be assigned to latest open (not sent to EDI) consignment that matches the packing slip (for example shipping carrier, customer, address). If an open consignment note is not found, a new consignment note will be created and the packing slip assigned. _Single packing slips_ will always create a new Consignment note.
-   
+
+## Periodic task
+Ability to set a recurrence for automatically sending Open, **Sent to EDI** is set to _No_, Consignment notes to EDI which sets the:
+- Consignment note's **Sent to EDI** to _Yes_ and
+- Creates the ASN record.
+
+This is useful for **Consolidated packing slips** that can be automatically "closed" and the ASN created after a certain time in the day.
+
 ## View staging table records
 To view the Customer advanced shipping notice staging records, go to **EDI > Documents > Customer documents > Customer advanced shipping notice**. 
 Use this page to review staging and process EDI Customer advanced shipping notice documents to an Outbound file.
