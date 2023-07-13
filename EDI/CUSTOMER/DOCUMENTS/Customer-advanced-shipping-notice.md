@@ -49,9 +49,7 @@ The following setup is prerequisites for the customer advanced shipping notice
     - Setting profile
     - File name setup
 6. Assign [ASN line configuration](../SETUP/Warehouses.md) to all the 'ship from' warehouses.
-7. If consignment note numbers will automatically be created:
-    - Shipping carrier's Pro number sequence
-    - EDI parameters Number sequence [Consignment note number](../../CORE/Setup/EDI-parameters.md#number-sequence)
+7. Setup [Auto generate consignment note number](#auto-generate-a-consignment-note-number) where applicable.
 
 ## Processing
 
@@ -106,14 +104,23 @@ To open the **Consignment notes** page, go to **EDI > Inquiries and reports > Co
 
 
 #### Auto generate a consignment note number
-The shipping carriers page has an additional option located on the EDI FastTab to enable users to **Auto generate consignment note Id**.  Where this parameter is set to Yes, the **Pro number sequence** must also be set.
+Consignment note numbers can automatically be created by either:
 
+- **Shipping carrier's Pro number sequence**
+The shipping carriers page has an additional option located on the EDI FastTab to enable users to **Auto generate consignment note Id**.  Where this parameter is set to Yes, the **Pro number sequence** must also be set. <br> 
 To enable the consignment note to be auto generated, the following criteria must be met:
--	**Carrier** must be specified on the sales order
--	**Carrier** must be specified on the Picklist or WHS shipment
--	**ASN strategy** must be _Single packing slip_
--	The packing slip must be posted from the **Pick list registration** or the **WHS Shipment**
+    -	**Carrier** must be specified on the sales order
+    -	**Carrier** must be specified on the Picklist or WHS shipment
+    -	**ASN strategy** can be _Single packing slip_ or _Consolidated packing slips_
+    -	The packing slip must be posted from the **Pick list registration** or the **WHS Shipment**
 
+- **Number sequence and Document setting**
+This option applies to sales orders where no shipping carrier is assigned, or the shipping carrier doesn't auto generate consignment notes.
+
+    - Number sequence: Assign EDI parameters Number sequence for [Consignment note number](../../CORE/Setup/EDI-parameters.md#number-sequence) 
+
+    - Document setting: Set Customer advanced shipping notice **Auto assign consignment note number** to _Yes_. Where the document setting's ASN strategy is set to _Consolidated packing slips_ and **Auto assign consignment note number** is set to _Yes_, the packing slip will automatically be assigned to latest open (not sent to EDI) consignment that matches the packing slip (for example shipping carrier, customer, address). If an open consignment note is not found, a new consignment note will be created and the packing slip assigned. _Single packing slips_ will always create a new Consignment note.
+   
 ## View staging table records
 To view the Customer advanced shipping notice staging records, go to **EDI > Documents > Customer documents > Customer advanced shipping notice**. 
 Use this page to review staging and process EDI Customer advanced shipping notice documents to an Outbound file.
