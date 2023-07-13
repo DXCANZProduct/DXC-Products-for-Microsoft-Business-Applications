@@ -49,7 +49,7 @@ Number	  	| Module	| Functionality	  	| Description
 
 # Current version
 
-Next release is planned for 14 July 2023.
+Next release is planned for end July 2023.
 
 ### Release 10.0.34.20230615
 
