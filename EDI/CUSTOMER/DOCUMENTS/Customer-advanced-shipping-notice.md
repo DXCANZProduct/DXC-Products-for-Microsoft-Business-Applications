@@ -129,6 +129,13 @@ Ability to set a recurrence for automatically sending Open, **Sent to EDI** is s
 
 This is useful for **Consolidated packing slips** that can be automatically "closed" and the ASN created after a certain time in the day.
 
+Filter options (multiple selection allowed):
+- Customer account
+- Consignment note number
+- Shipping carrier
+- Carrier service
+- Warehouse
+
 ## View staging table records
 To view the Customer advanced shipping notice staging records, go to **EDI > Documents > Customer documents > Customer advanced shipping notice**. 
 Use this page to review staging and process EDI Customer advanced shipping notice documents to an Outbound file.
