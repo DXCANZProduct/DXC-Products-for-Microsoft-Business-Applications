@@ -53,6 +53,7 @@ The following setup is prerequisites for the customer purchase order acknowledge
     - Template
     - Setting profile
     - File name setup
+9. Setup Periodic task [Send customer purchase order acknowledgement](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/DOCUMENTS/Customer-purchase-order-acknowledgement.html#automatically-processing-purchase-order-acknowledgement) if applicable.
 
 ## Sales order
 Users can access **All sales orders** page by navigating to **Sales and marketing > Orders > All sales orders** and manage the EDI order's Acknowledgement's details by using the below buttons that have been added to the **EDI** tab on the Action Pane.
