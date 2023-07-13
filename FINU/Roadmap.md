@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: FINU
-description: FINU - Roadmap
+title: Finance Utilities
+description: Finance Utilities - Roadmap
 author: jdutoit2
 manager: Kym Parker
 ms.date: 2023-07-13
