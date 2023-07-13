@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Setup EDI parameters
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-06
+ms.date: 2023-07-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -75,6 +75,8 @@ The following table describes the fields that are available on the **General** t
 <ins>**Sales orders**</ins>       |
 **Restrict EDI picking route generation to allowed document types** | • **No** (default) - Record created in table SAB_EDIWMSPICKINGROUTEEXT each time a picking list is posted. <br> • **Yes** - Record will only be created in table SAB_EDIWMSPICKINGROUTEEXT for customers with Customer advanced shipping notice and Warehouses with Picking list documents enabled.
 **Allow historic PO types**       |	Customer order types: Confirmation, Cancel and Change have been moved to Order purpose. This field provides Backwards compatibility to still show these deprecated options under order types
+<ins>**Saved views**</ins>        |
+**Apply standard view**           | Applicable when feature **Saved views performance enhancement** is enabled, and user navigates from a Staging form to Inbound files using the **Inbound files** button. <br> Inbound file's Default view is applied and could result in applicable inbound file not displaying. When setting new EDI parameters field **Apply standard view** to: <br> • **Yes**: the standard view will be applied <br> • **No**: the default view will be applied
 
 ## Number sequence
 Use the **Number sequences** tab on the **EDI parameters** page to assign number sequence codes to the different number sequences that the EDI module uses. The following table describes the purpose of each of those number sequences. For more information about number sequences, see [Number sequences overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview) and its related topics.
