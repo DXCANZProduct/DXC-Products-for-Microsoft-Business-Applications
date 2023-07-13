@@ -125,7 +125,7 @@ This option applies to sales orders where no shipping carrier is assigned, or th
 ## Periodic task
 Ability to set a recurrence for automatically sending Open, **Sent to EDI** is set to _No_, Consignment notes to EDI which sets the:
 - Consignment note's **Sent to EDI** to _Yes_ and
-- Creates the ASN record.
+- Creates the Customer advanced shipping notice (ASN) staging record.
 
 This is useful for **Consolidated packing slips** that can be automatically "closed" and the ASN created after a certain time in the day.
 
