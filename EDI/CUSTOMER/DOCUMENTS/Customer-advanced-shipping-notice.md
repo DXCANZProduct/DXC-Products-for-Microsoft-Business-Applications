@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer advanced shipping notice
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-06-09
+ms.date: 2023-07-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -57,7 +57,7 @@ When posting a packing slip for a sales order, it is possible to add consignment
 -	From the packing slip posting form, select the **Assign consignment note** button
 -	To create a new consignment note record, select **New**
     - Update the **Consignment note number**
-    - Select the **Shipping carrier** and **Carrier service**
+    - Select the **Shipping carrier** and **Carrier service** (if applicable)
 -	To select a previously created consignment note, select the record
 > Note: Consignment notes will be matched to the delivery based on the Delivery Name, Delivery address, Customer account and warehouse.
 -	Click **Assign** to attach the consignment note number to the packing slip
@@ -70,6 +70,10 @@ and assigned to the Trading partner when setting up the document on their outgoi
 
 > Note: If the packing slip was posted without assigning a consignment note, it is possible to [add the packing slip](#add-packing-slips-to-a-consignment-note) to a consignment note afterwards.
 > The Customer advanced shipping notice setting profile, has the option to **Warn when consignment note not assigned**.
+
+### Intercompany ASN
+Where the originating intercompany EDI order's Trading partner is setup to received ASN, the ASN record will be created against this Trading partner using their ASN document setting, for example only create for EDI order.
+The intercompany ASN's **External item number** will be obtained from the originating sales order line - only applies to EDI orders.
 
 ### Consignment notes
 EDI requires the delivery to be assigned to a consignment note. The consignment note can contain one or multiple deliveries.
@@ -106,7 +110,6 @@ To enable the consignment note to be auto generated, the following criteria must
 -	**Carrier** must be specified on the Picklist or WHS shipment
 -	**ASN strategy** must be _Single packing slip_
 -	The packing slip must be posted from the **Pick list registration** or the **WHS Shipment**
-
 
 ## View staging table records
 To view the Customer advanced shipping notice staging records, go to **EDI > Documents > Customer documents > Customer advanced shipping notice**. 
