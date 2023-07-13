@@ -82,6 +82,8 @@ Next release is planned for 31 July 2023.
 
 ### Release 10.0.34.20230615
 
+[Installation process](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/Release-notes.html#installation-process) 
+
 DXC EDI 10.0.34 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
