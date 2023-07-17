@@ -114,8 +114,11 @@ Number | Functionality | Description
 # Current version
 
 ## Release 2023060511 
+
 DXC version – 1.0.0.6 <br>
 Cepheo version – 1.0.0.5 
+
+Release date: 17 July 2023
 
 <ins>Bug fixes</ins>
 
@@ -131,9 +134,14 @@ Cepheo version – 1.0.0.5
 |14600|Blank product name is accepted|Product name is set to mandatory. The app will prompt for missing product name during creation and deletion |
 |14601|New product not visible under product list in the customer products view|A fix has been made to refresh the product list after a product record is created.| 
 
+# Previous version(s)
+
 ## Release 202306051 
+
 DXC version – 1.0.0.5 <br>
 Cepheo version – 1.0.0.4 
+
+Release date: 5 June 2023
 
 <ins>Bug fixes</ins>
 
@@ -147,10 +155,12 @@ Number | Functionality | Description
 :--    |:--   |:--
 13682 | Deprecate DAXEAM Mobile | Daxeam mobile is no longer supported. As part of this change, the environments API endpoint and the product type Daxeam Mobile has been deprecated. 
 
-# Previous version(s)  
 ## Release 202304281 
+
 DXC version – 1.0.0.4 <br>
 Cepheo version – 1.0.0.3 
+
+Release date: 28 April 2023
 
 <ins>Bug fixes</ins>
 
@@ -169,6 +179,8 @@ Number | Name | Description | Rectified Release
 
 DXC version – 1.0.0.1 <br>
 Cepheo version – 1.0.0.2 
+
+Release date: 31 March 2023
 
 <ins>New features</ins>
 
