@@ -119,7 +119,7 @@ Cepheo version – 1.0.0.5
 
 <ins>Bug fixes</ins>
 
-Number | Functionality | Description |
+|Number | Functionality | Description |
 |--    |--   |-- |
 14592 | Disable add button when customer edit view is enabled | A fix has been applied to disable users from trying to create a new button while in edit mode.|
 |14593|Customer list is not refreshed after adding/updating a customer record| A fix has been made to resolve the refresh issue for customer record not appearing in the customer details list pane after add or update |
