@@ -34,9 +34,12 @@ Where can I find contact information for support?
 Email: ECLANZProductSupport@dxc.com
 
 ## 	Troubleshooting
+1. Prompt with fix connection when accessing the Power App.   
+![License Manager PowerApp Connection Failure](IMAGES/PowerAppConnectionFailure.png "PowerAppConnectionFailure")
+The Power App platform requires consent to authenticate and provide access to the license manager service. This prompt appears everytime a new session is started to an existing session expires due to no user input. The standard expiration time for the access token is 60 minutes. While the app is in use, it will be able to auto-refresh the access token.  
 1. Connection error when accessing Power App after a new release is applied
 ![License Manager PowerApp Connection Failure](IMAGES/PowerAppConnectionFailure.png "PowerAppConnectionFailure")
-Please refer to the instalaltion instructions located at the end of this documentation [here](./PowerApp.md)
+Please refer to the instalaltion instructions located at the end of this documentation [here](./PowerApp.md). For detailed technical documentation, please email the support team, ECLANZProductSupport@dxc.com
 1.	I can’t save ‘Customer Products’.
 Reason: Field ‘Site (Module) License’ is set to Off OR ‘No. of users’ field is blank
 
