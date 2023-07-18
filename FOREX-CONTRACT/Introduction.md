@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # DXC Forex contract
 
-## Release notes
+## Release note
 The [release notes](Release-notes.md) describes the features that are either new or changed. 
 
 ## Introduction
