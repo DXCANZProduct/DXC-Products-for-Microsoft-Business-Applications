@@ -5,7 +5,7 @@ title: Insights for D365 FO
 description: Introduction to Insights for D365 FO
 author: Peter Musumeci
 manager: Kym Parker
-ms.date: 2023-06-07
+ms.date: 2023-07-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -53,13 +53,17 @@ Azure Application Insights provides other features including, but not limited to
   - [Smart Detection](https://learn.microsoft.com/en-us/azure/azure-monitor/app/proactive-diagnostics) – automatic failure and anomaly detection through proactive telemetry analysis.<br>
 
 
-### Topics:<br>
+### Topics
+
 - [How to Set up Insights](../DXC-INSIGHTS/setup.md)
 - [Reoccurring monitoring](../DXC-INSIGHTS/Reoccurring_monitoring.md)
 - [Review and set up data monitoring](../DXC-INSIGHTS/Review_and_set_up_monitored_data.md)
 - [Dashboard for Application Insights](../DXC-INSIGHTS/Dashboards.md)
 - [FAQ](../DXC-INSIGHTS/FAQ.md)
 
+### Demonstration
+
+Watch DXC Technology’s short demonstration on Insights for D365 FO solution [here](https://dynamics.dxc.technology/webinars/analysis-tool-for-performance-of-microsoft-dynamics-365-finance-and-operations-by-dxc-technology-2)
 
 ## New ideas
 Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
