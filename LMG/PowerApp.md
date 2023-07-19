@@ -66,7 +66,7 @@ The other options available on this form include: <br>
 -	**Enabled**
 -	**Subscription Start Date** - The original date of purchase. This can show how long a customer has been using the product
 - **Subscription End Date (Expiry Date)** - Based on invoicing. This must be checked annually to ensure customer is being invoiced and making payments.
--	**Feature Disable Date** - If all efforts have not resulted in payment from the customer, the feature will be disabled and can no longer be used.
+-	**Feature Disable Date** - If all efforts have not resulted in payment from the customer, the feature will be disabled and can no longer be used. See ** <br>
 Note: License Manager must be linked to a Feature Key for this option
 -	**Agreement Start Date** - Date of current pricing agreement/SOW. This date can be used to identify customer to be included/excluded from price increases
 -	**Site (Module) License**:
@@ -77,7 +77,7 @@ Note: License Manager must be linked to a Feature Key for this option
 - ![License Manager PowerApp ](IMAGES/Delete.png "Delete") **Delete** - Delete the Product record for the selected customer. The product can only be deleted if all the environments for the Product has been deleted.
 
 ### Feature disable
-In order to disable a feature in the applicable environment, the following is required:
+** In order to disable a feature in the applicable environment, the following is required:
 - Product must be feature managed
 - Enabled - Set to Yes
 - Expiry date - Set to date in the past
