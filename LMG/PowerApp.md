@@ -5,7 +5,7 @@ title: License manager
 description: License manager - PowerApp 
 author: hho34
 manager: Kym Parker
-ms.date: 2023-06-07
+ms.date: 2023-07-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -67,7 +67,7 @@ The other options available on this form include: <br>
 -	**Subscription Start Date** - The original date of purchase. This can show how long a customer has been using the product
 - **Subscription End Date (Expiry Date)** - Based on invoicing. This must be checked annually to ensure customer is being invoiced and making payments.
 -	**Feature Disable Date** - If all efforts have not resulted in payment from the customer, the feature will be disabled and can no longer be used.
-Note: License Manager must be linked to a Feature Key for this option 
+Note: License Manager must be linked to a Feature Key for this option
 -	**Agreement Start Date** - Date of current pricing agreement/SOW. This date can be used to identify customer to be included/excluded from price increases
 -	**Site (Module) License**:
 -	**WBS** – Identifier that can be used to identify invoiced line item
@@ -75,6 +75,14 @@ Note: License Manager must be linked to a Feature Key for this option
 -	**Notes** - Additional information
 - ![License Manager PowerApp ](IMAGES/Environment.png "Environment") - **Environment** - Add Tenant and Serial number for all the customer's environments.
 - ![License Manager PowerApp ](IMAGES/Delete.png "Delete") **Delete** - Delete the Product record for the selected customer. The product can only be deleted if all the environments for the Product has been deleted.
+
+### Feature disable
+In order to disable a feature in the applicable environment, the following is required:
+- Product must be feature managed
+- Enabled - Set to Yes
+- Expiry date - Set to date in the past
+- Feature disable date - Set to date in the past
+
 
 ## Product Details
 Product Information shows all information relating to the Products that need to be license controlled
