@@ -104,7 +104,7 @@ Number	  	| Module	| Functionality	  	| Description
 14532		| Cash and bank management	| Bank reconciliation report	| Fixed Report's Txt field's ExtendedDataType to match Bank account transaction's Txt field.
 14696		| Cash and bank management	| Bank statement import	- Custom formats | Issue with 88 continuation line's string size. 
 
-# Features removed or deprecated
+# Deprecated features
 
 This section describes the features that have been removed, or planned to be removed from a Finance utilities version.
 
