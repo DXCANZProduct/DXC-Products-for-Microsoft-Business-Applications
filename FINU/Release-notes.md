@@ -104,6 +104,26 @@ Number	  	| Module	| Functionality	  	| Description
 14532		| Cash and bank management	| Bank reconciliation report	| Fixed Report's Txt field's ExtendedDataType to match Bank account transaction's Txt field.
 14696		| Cash and bank management	| Bank statement import	- Custom formats | Issue with 88 continuation line's string size. 
 
+# Features removed or deprecated
+
+This section describes the features that have been removed, or planned to be removed from a Finance utilities version.
+
+#### Vendor bank account change workflow
+- Reason for deprecation/removal - Replaced by feature in standard D365
+- Replaced by another feature - 10.0.32 feature 'Vendor bank account change proposal workflow' / 'Supplier bank account change proposal workflow'. [Learn more](https://learn.microsoft.com/en-gb/dynamics365/finance/accounts-payable/vendor-bank-account-workflow)
+- Impact - Removal of the following fields in Accounts payable parameters:
+	- Bank account number
+	- Bank account BSB
+ 	- Bank account biller code **
+ 	- Bank account lodgement reference **
+  	- Bank account bank group
+  	- Bank account SWIFT code
+  	- Bank account IBAN
+  	- Bank account active date
+  	- Bank account expiration date
+- Status - Planned for Oct 2023 Finance utilities release.
+> Note: The ** Finance utilities fields will be added to standard Vendor bank account approval in Accounts payable parameters.
+
 
 # Previous version(s)
 
