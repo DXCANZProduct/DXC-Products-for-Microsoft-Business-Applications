@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-07-17
+ms.date: 2023-07-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
