@@ -114,15 +114,15 @@ This section describes the features that have been removed, or planned to be rem
 - Impact - Removal of the following fields in Accounts payable parameters:
 	- Bank account number
 	- Bank account BSB
- 	- Bank account biller code ** <br>
- 	- Bank account lodgement reference ** <br>
+ 	- Bank account biller code (Finance utilities field)
+ 	- Bank account lodgement reference (Finance utilities field)
   	- Bank account bank group
   	- Bank account SWIFT code
   	- Bank account IBAN
   	- Bank account active date
   	- Bank account expiration date
 - Status - Planned for Oct 2023 Finance utilities release.
-> Note: The ** Finance utilities fields will be added to standard Vendor bank account approval in Accounts payable parameters.
+> Note: The Finance utilities fields will be added to standard Vendor bank account approval in Accounts payable parameters.
 
 
 # Previous version(s)
