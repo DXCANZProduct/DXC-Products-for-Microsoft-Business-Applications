@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-07-13
+ms.date: 2023-07-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,8 +47,3 @@ Release			    | ETA
 #### Accounts receivable
 - Option to exclude invoices from automatic settlement based on their Collection status, for example disputed.
 
-
-## Deprecate
-The following is planned to be deprecated
-
-- Nothing scheduled to be deprecated
