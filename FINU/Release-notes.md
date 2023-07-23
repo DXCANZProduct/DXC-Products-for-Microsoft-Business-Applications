@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-07-20
+ms.date: 2023-07-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -110,9 +110,8 @@ Number	  	| Module	| Functionality	  	| Description
 This section describes the features that have been removed, or planned to be removed from a Finance utilities version.
 
 #### Vendor bank account change workflow
-- Reason for deprecation/removal - Replaced by feature in standard D365
-- Replaced by another feature - 10.0.32 feature 'Vendor bank account change proposal workflow' / 'Supplier bank account change proposal workflow'. [Learn more](https://learn.microsoft.com/en-gb/dynamics365/finance/accounts-payable/vendor-bank-account-workflow)
-- Impact - Removal of the following fields in Accounts payable parameters:
+- Reason for deprecation/removal - Replaced by D365 feature from 10.0.32 called 'Vendor bank account change proposal workflow' / 'Supplier bank account change proposal workflow'. [Learn more](https://learn.microsoft.com/en-gb/dynamics365/finance/accounts-payable/vendor-bank-account-workflow)
+- Impact - Removal of the following fields in Accounts payable parameters FastTab 'Vendor approval':
 	- Bank account number
 	- Bank account BSB
 	- Bank account biller code (Finance utilities field)
@@ -123,7 +122,7 @@ This section describes the features that have been removed, or planned to be rem
 	- Bank account active date
 	- Bank account expiration date
 - Status - Planned for Oct 2023 Finance utilities release.
-> Note: The Finance utilities fields will be added to standard Vendor bank account approval in Accounts payable parameters.
+> Note: The Finance utilities fields (Biller code and Lodgement reference) will be added to standard 'Vendor bank account approval' FastTab in Accounts payable parameters.
 
 
 # Previous version(s)
