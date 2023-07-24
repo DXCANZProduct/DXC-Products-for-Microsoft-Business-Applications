@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer purchase order acknowledgement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-06-09
+ms.date: 2023-07-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -63,6 +63,15 @@ Field	                  | Description
 **Acknowledgement**     |	Select the **Acknowledgement** button to review order details for the POA. The details of this page will be discussed in below.
 **Send to EDI**         |	Select the **Send to EDI** button to create the **Customer purchase order acknowledgement** staging table record.
 **Reset flag**          |	Select the **Reset flag** button to reset the **EDI status** to allow for re-sending of the POA to the staging table. Note: The POA record on the staging table should be deleted manually before the sales order flag is reset.
+
+Sales order header field **POA status**:
+- **Blank**: Where the Trading partner doesn’t have the POA document setup in outdoing documents
+- **Pending**: If the POA document setting 'Lock order’ is set to _Yes_ and the user (or periodic job) hasn’t pressed 'OK' or 'Send to EDI'
+- **In progress**: User has selected 'OK' on Acknowledgement (not Send to EDI)
+- **Sent**: POA document setting ‘PO confirmation required’ is set to _No_ and POA has been manually sent via 'Send to EDI' or periodic job
+- **Confirm pending**: POA document setting ‘PO confirmation required’ is set to _Yes_ and the POA has been sent manually via 'Send to EDI' or periodic job
+- **POC Received**: Confirmation for the POA has been received.
+
 
 ## Processing
 The POA can be sent [manually](#manually-processing-purchase-order-acknowledgement) or [automatically](#automatically-processing-purchase-order-acknowledgement) to the customer.
