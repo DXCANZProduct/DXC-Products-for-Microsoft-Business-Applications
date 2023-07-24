@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-07-24
+ms.date: 2023-07-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,6 +41,7 @@ Number	  	| Module	| Functionality	  	| Description
 14578		| Cash and bank management	| Bank reconciliation	| Support for manually setting offset details when enabling feature **Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions**. This feature adds section **New transactions** in the Bank reconciliation and in 10.0.35 MS added additional button **Line details**. <br> Finance utilities now utilises **Line details** for the ability to manually set offset details for mark as new transactions. <br> ![Line details](Images/ReleaseNotes_20230731_1.png "Line details")
 14929		| Cash and bank management	| Bank statement import	| **Decimal adjustment** was limited to 5 decimals. <br> Have been changed to dynamic and now supports higher than 5 decimals.
 14088		| Cash and bank management	| Bank statement import	- Periodic task | Currently when the periodic task **Import bank statements via financial utilities connection**'s Bank statement format's **Custom format** is: <br> • **Yes**: By design if there are issues with creating bank statement for any of the accounts in the file (example bank account doesn't exist in D365) , no bank statements are created and the file is moved to error path (instead of archive). <br> • **No**: Std creates bank statements for all valid bank accounts using the Electronic reporting configration - we have no control over this. <br> **This change**: will move the file to **Error path / container** (instead of archive path) if not all bank statements could be created when using the periodic task and the bank statement format's **Custom format** is set to _No_.
+15410		| Accounts payable	| Vendor bank account approval	| Support for 10.0.32 feature 'Vendor bank account change proposal workflow’ / ‘Supplier bank account change proposal workflow' which is on by default from 10.0.35. <br> Added the following Finance utilities fields to Accounts payable parameters **Vendor bank account approval**: <br> • Biller code <br> • Lodgement reference <br> Note: Finance utilities includes vendor bank accounts fields in **Vendor approval**, this has been replaced by this MS feature, and will be deprecated in the next Finance utilities release. Please migrate your vendor bank account approval setup from **Vendor approval** to **Vendor bank account approval** before the next release. Deprecate notice
 
 <ins>Bug fixes</ins>
 
@@ -109,7 +110,7 @@ Number	  	| Module	| Functionality	  	| Description
 
 This section describes the features that have been removed, or planned to be removed from a Finance utilities version.
 
-#### Vendor bank account change workflow
+### Vendor bank account change workflow
 - Reason for deprecation/removal - Replaced by D365 feature from 10.0.32 called 'Vendor bank account change proposal workflow' / 'Supplier bank account change proposal workflow'. [Learn more](https://learn.microsoft.com/en-gb/dynamics365/finance/accounts-payable/vendor-bank-account-workflow)
 - Impact - Removal of the following fields in Accounts payable parameters FastTab 'Vendor approval':
 	- Bank account number
