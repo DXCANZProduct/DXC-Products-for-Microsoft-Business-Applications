@@ -58,14 +58,14 @@ The following setup is prerequisites for the customer purchase order acknowledge
 ## Sales order
 Users can access **All sales orders** page by navigating to **Sales and marketing > Orders > All sales orders** and manage the EDI order's Acknowledgement's details by using the below buttons that have been added to the **EDI** tab on the Action Pane.
 
-#### Buttons
+#### Sales order buttons
 Field	                  | Description
 :--                     |:--
 **Acknowledgement**     |	Select the **Acknowledgement** button to review order details for the POA. The details of this page will be discussed in below.
 **Send to EDI**         |	Select the **Send to EDI** button to create the **Customer purchase order acknowledgement** staging table record.
 **Reset flag**          |	Select the **Reset flag** button to reset the **EDI status** to allow for re-sending of the POA to the staging table. Note: The POA record on the staging table should be deleted manually before the sales order flag is reset.
 
-#### Fields
+#### Sales order fields
 Sales order header field **POA status**:
 - **Blank**: Where the Trading partner doesn’t have the POA document setup in outdoing documents
 - **Pending**: If the POA document setting 'Lock order’ is set to _Yes_ and the user (or periodic job) hasn’t pressed 'OK' or 'Send to EDI'
