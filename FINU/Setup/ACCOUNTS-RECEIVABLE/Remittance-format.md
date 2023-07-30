@@ -5,7 +5,7 @@ title: DXC Finance Utilities - AR Utilities
 description: Customer remittance format setup
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-07-10
+ms.date: 2023-07-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -66,6 +66,7 @@ When **Custom format** is set to _Yes_: |
 **Column delimiter**            | Select the Row delimiter used within the file, options: <br> **{;}** – Semicolon <br> **{:}** – Colon <br> **{,}** – Comma <br> **{t}** – Tab <br> **{\|}** Vertical bar
 **Record identifier position**  | Where the file is **Structured**, specify the Record identifier position.
 **Date format**                 | Select the applicable date format.
+**Decimal adjustment**          | This specifies the Decimal adjustment required for the Remittance’s **Amount**. For example remittance amount is 20055, but last two charactes are decimal, thus amount to be mapped to D365 Bank statement is 200.55 <br> For this example enter 2 in Decimal adjustment field.
 
 
 ### Mapping
