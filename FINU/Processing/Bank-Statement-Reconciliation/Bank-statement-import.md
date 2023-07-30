@@ -58,4 +58,13 @@ In addition, where Import statement for multiple bank accounts in all legal enti
 
 ### Periodic import
 
-The bank statement can also automatically be imported by using periodic task [Import bank statements via financial utilities connection](../Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md)
+The bank statement can also automatically be imported by using periodic task [Import bank statements via financial utilities connection](../Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md).
+
+Filter **Imported via financial utilities connection** on the Bank statement import, can be used to filter to bank statements imported using above periodic task.
+
+If there are errors with creating the bank statement using the periodic task, the import file will be moved to the Financial utilities connection's **Error path**. <br>
+If the Bank statement format is:
+- Custom format - No bank statements will be created
+- Generic electronic import format - Std. will create the bank statements that can be created.
+
+Example error: An unique bank account was not found for Bank account number
