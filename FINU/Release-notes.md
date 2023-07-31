@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-07-31
+ms.date: 2023-08-01
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,42 +29,14 @@ ms.dyn365.ops.version: AX 7.0.1
 # Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-# Next version
-
-### Release 10.0.35.202307TBD
-ETA: End July
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-14578		| Cash and bank management	| Bank reconciliation	| Support for manually setting offset details when enabling feature **Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions**. This feature adds section **New transactions** in the Bank reconciliation and in 10.0.35 MS added additional button **Line details**. <br> Finance utilities now utilises **Line details** for the ability to manually set offset details for mark as new transactions. <br> ![Line details](Images/ReleaseNotes_20230731_1.png "Line details") <br><br> _Note: Using button Cancel on Line details currently still saves any changes. Bug has been reported to Microsoft and fix will be included in 10.0.37_
-14929		| Cash and bank management	| Bank statement import	| **Decimal adjustment** was limited to 5 decimals. <br> Have been changed to dynamic and now supports higher than 5 decimals.
-14088		| Cash and bank management	| Bank statement import	- Periodic task | Currently when the periodic task **Import bank statements via financial utilities connection**'s Bank statement format's **Custom format** is: <br> • **Yes**: By design if there are issues with creating bank statement for any of the accounts in the file (example bank account doesn't exist in D365) , no bank statements are created and the file is moved to error path (instead of archive). <br> • **No**: Std creates bank statements for all valid bank accounts using the Electronic reporting configration - we have no control over this. <br> **This change**: will move the file to **Error path / container** (instead of archive path) if not all bank statements could be created when using the periodic task and the bank statement format's **Custom format** is set to _No_.
-15410		| Accounts payable	| Vendor bank account approval	| Support for 10.0.32 feature 'Vendor bank account change proposal workflow’ / ‘Supplier bank account change proposal workflow' which is on by default from 10.0.35. <br> Added the following Finance utilities fields to **Vendor bank account approval**: <br> • Biller code <br> • Lodgement reference <br> Note: Finance utilities includes vendor bank accounts fields in **Vendor approval**, which has now been replaced by this MS feature, and will be deprecated in the next Finance utilities release. Please migrate your vendor bank account approval setup from **Vendor approval** to **Vendor bank account approval** before the next release. <br> [Deprecation notice](#vendor-bank-account-change-workflow) <br> ![Vendor bank account approval](Images/ReleaseNotes_20230731_2.png "Vendor bank account approval")
-14099		| Accounts receivabnle | AR Utilities	| Added Amount **Decimal adjustment** option to Remittance format <br> ![Remittance format](Images/ReleaseNotes_20230731_3.png "Remittance format")
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-14619		| Cash and bank management	| Bank statement import	- Custom formats | Ability to map non transaction record custom line codes. Previously if Opening or Closing balance custom line codes where set in **Custom line codes**, these were imported as transaction records. 
-15482		| Cash and bank management	| Bank statement import	- Custom formats | When using mapped **Ending balance** field, the opening balance was added to the imported bank statement's ending balance
-15199		| Cash and bank management	| Reconciliation matching rules	set | Extension to **processMatchRuleSet** to support reprocessing unmatched bank statement lines. <br> The issue came in where the filter criteria for each rule in the set found the same bank statement lines, but the rules used different bank statement fields to find the D365 customer account to post the customer payment journal. <br> <br> Example - Reconciliation matching rule set where all the rules filters to same criteria that matches to 15 bank statement lines: <br> Rule 1: Uses Bank statement field **Description** to find the D365 customer account, but only 3 lines could find a D365 customer account in this field to succefully post. <br> Rule 2: Uses Bank statement field **Entry refrence** to find the D365 customer account. The expectation would be that Rule 2 would find the remaining 12 bank statement lines and post the applicable ones, but it found 0. <br> Before this change, only rule 1 in the set found bank statement lines, and subsequent rules found 0.
-15390		| Cash and bank management	| Bank reconciliation	| When running a **Mark new transactions** Reconciliation matching rule that: <br> • Posts customer payment journals and <br> • Financial utilities parameters **Only match posted statement lines** was set to _Yes_ and <br> • **No** journals were succfully posted (for example couldn't find any matching D365 customer account for all the lines) <br> All unmatched bank statement transactions, that matched the criteria, where moved to matched.
-
-
 # Current version
 
-Next release is planned for end July 2023.
+### Release 10.0.35.20230731
 
-### Release 10.0.34.20230615
-
-DXC Finance Utilities 10.0.34 runs on the following Microsoft releases
+DXC Finance Utilities 10.0.35 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
 Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
 
 > Note: From **10.0.32** MS has added a preview feature called **Vendor bank account change proposal workflow**. If this feature is enabled it will use std's functionality for approving changes to Vendor bank accounts and the following needs to be manually configured: <br> 
@@ -86,29 +58,28 @@ Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dyn
 > > - When set to No: Accounting date = Bank statement import date
 > > - When set to Yes: Accounting date = Booking date
 
-> Note: From **10.0.34** MS has added a feature called **Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions**. This moves the new transactions to a separate grid. 
-> > If you use Finance utilities fields in Worksheet to enter offset details for the new transactions, **don't enable** this feature as it is _not yet supported_. If you use Reconciliation matching rules to populate offset details and don't need to edit in the Worksheet, you can enable this feature. <br>
-> In **10.0.35** MS has added button **Line details** to **New transactions** in the Bank reconciliation's Worksheet, which provides additional offset fields. Roadmap: We will utilise these new fields in **Line details** add additional Finance utilities fields which will support entering offset details within the worksheet. 
-
-#### Build 10.0.34.202306151
-Release date: 15 June 2023 <br> 
+#### Build 10.0.35.202307311
+Release date: 31 July 2023 <br> 
 
 <ins>New features</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-14332	| Cash and bank management <br> Accounts receivable | Financials utilities connection |  Update to support Azure Blob Storage related method depreciation in 10.0.34. <br> Replaced StartCopyFromBlob with BeginStartCopy <br> [Obsolete API](https://learn.microsoft.com/en-us/previous-versions/azure/jj732079(v=azure.100))
-12430		| Cash and bank management | Reconciliation matching rules | New field **Offset account reference bank statement field** provides the ability to use [Customer reference](Setup/ACCOUNTS-RECEIVABLE/Customer-reference.md) to find the applicable D365 customer account when running a Mark new transactions Reconciliation matching rule offsetting to customer. 
-14536	| Cash and bank management	| Bank statements	| Ability to map **Ending balance** on custom bank statement formats. Where this is mapped, the imported bank statement's ending balance will be used to populate the Bank statement's ending balance field. This is useful to validate that bank statements are imported in the correct sequence.
-14332	| Accounts payable	| Model reference	| Added FinTag model reference to Finance utilities
-14524	| Accounts payable	| Payments report	| Added new field for Vendor's bank name
+14578		| Cash and bank management	| Bank reconciliation	| Support for manually setting offset details when enabling feature **Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions**. This feature adds section **New transactions** in the Bank reconciliation and in 10.0.35 MS added additional button **Line details**. <br> Finance utilities now utilises **Line details** for the ability to manually set offset details for mark as new transactions. <br> ![Line details](Images/ReleaseNotes_20230731_1.png "Line details") <br><br> _Note: Using button Cancel on Line details currently still saves any changes. Bug has been reported to Microsoft and fix will be included in 10.0.37_
+14929		| Cash and bank management	| Bank statement import	| **Decimal adjustment** was limited to 5 decimals. <br> Have been changed to dynamic and now supports higher than 5 decimals.
+14088		| Cash and bank management	| Bank statement import	- Periodic task | Currently when the periodic task **Import bank statements via financial utilities connection**'s Bank statement format's **Custom format** is: <br> • **Yes**: By design if there are issues with creating bank statement for any of the accounts in the file (example bank account doesn't exist in D365) , no bank statements are created and the file is moved to error path (instead of archive). <br> • **No**: Std creates bank statements for all valid bank accounts using the Electronic reporting configration - we have no control over this. <br> **This change**: will move the file to **Error path / container** (instead of archive path) if not all bank statements could be created when using the periodic task and the bank statement format's **Custom format** is set to _No_.
+15410		| Accounts payable	| Vendor bank account approval	| Support for 10.0.32 feature 'Vendor bank account change proposal workflow’ / ‘Supplier bank account change proposal workflow' which is on by default from 10.0.35. <br> Added the following Finance utilities fields to **Vendor bank account approval**: <br> • Biller code <br> • Lodgement reference <br> Note: Finance utilities includes vendor bank accounts fields in **Vendor approval**, which has now been replaced by this MS feature, and will be deprecated in the next Finance utilities release. Please migrate your vendor bank account approval setup from **Vendor approval** to **Vendor bank account approval** before the next release. <br> [Deprecation notice](#vendor-bank-account-change-workflow) <br> ![Vendor bank account approval](Images/ReleaseNotes_20230731_2.png "Vendor bank account approval")
+14099		| Accounts receivable | AR Utilities	| Added Amount **Decimal adjustment** option to Remittance format <br> ![Remittance format](Images/ReleaseNotes_20230731_3.png "Remittance format")
 
 <ins>Bug fixes</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-14532		| Cash and bank management	| Bank reconciliation report	| Fixed Report's Txt field's ExtendedDataType to match Bank account transaction's Txt field.
-14696		| Cash and bank management	| Bank statement import	- Custom formats | Issue with 88 continuation line's string size. 
+14619		| Cash and bank management	| Bank statement import	- Custom formats | Ability to map non transaction record custom line codes. Previously if Opening or Closing balance custom line codes where set in **Custom line codes**, these were imported as transaction records. 
+15482		| Cash and bank management	| Bank statement import	- Custom formats | When using mapped **Ending balance** field, the opening balance was added to the imported bank statement's ending balance
+15199		| Cash and bank management	| Reconciliation matching rules	set | Extension to **processMatchRuleSet** to support reprocessing unmatched bank statement lines. <br> The issue came in where the filter criteria for each rule in the set found the same bank statement lines, but the rules used different bank statement fields to find the D365 customer account to post the customer payment journal. <br> <br> Example - Reconciliation matching rule set where all the rules filters to same criteria that matches to 15 bank statement lines: <br> Rule 1: Uses Bank statement field **Description** to find the D365 customer account, but only 3 lines could find a D365 customer account in this field to succefully post. <br> Rule 2: Uses Bank statement field **Entry refrence** to find the D365 customer account. The expectation would be that Rule 2 would find the remaining 12 bank statement lines and post the applicable ones, but it found 0. <br> Before this change, only rule 1 in the set found bank statement lines, and subsequent rules found 0.
+15390		| Cash and bank management	| Bank reconciliation	| When running a **Mark new transactions** Reconciliation matching rule that: <br> • Posts customer payment journals and <br> • Financial utilities parameters **Only match posted statement lines** was set to _Yes_ and <br> • **No** journals were succfully posted (for example couldn't find any matching D365 customer account for all the lines) <br> All unmatched bank statement transactions, that matched the criteria, where moved to matched.
+
 
 # Deprecated features
 
@@ -133,6 +104,29 @@ This section describes the features that have been removed, or planned to be rem
 # Previous version(s)
 
 Approximately one year of previous versions are included below.
+
+### Release 10.0.34.20230615
+
+#### Build 10.0.34.202306151
+Release date: 15 June 2023 <br> 
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+14332	| Cash and bank management <br> Accounts receivable | Financials utilities connection |  Update to support Azure Blob Storage related method depreciation in 10.0.34. <br> Replaced StartCopyFromBlob with BeginStartCopy <br> [Obsolete API](https://learn.microsoft.com/en-us/previous-versions/azure/jj732079(v=azure.100))
+12430		| Cash and bank management | Reconciliation matching rules | New field **Offset account reference bank statement field** provides the ability to use [Customer reference](Setup/ACCOUNTS-RECEIVABLE/Customer-reference.md) to find the applicable D365 customer account when running a Mark new transactions Reconciliation matching rule offsetting to customer. 
+14536	| Cash and bank management	| Bank statements	| Ability to map **Ending balance** on custom bank statement formats. Where this is mapped, the imported bank statement's ending balance will be used to populate the Bank statement's ending balance field. This is useful to validate that bank statements are imported in the correct sequence.
+14332	| Accounts payable	| Model reference	| Added FinTag model reference to Finance utilities
+14524	| Accounts payable	| Payments report	| Added new field for Vendor's bank name
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+14532		| Cash and bank management	| Bank reconciliation report	| Fixed Report's Txt field's ExtendedDataType to match Bank account transaction's Txt field.
+14696		| Cash and bank management	| Bank statement import	- Custom formats | Issue with 88 continuation line's string size. 
+
 
 ### Release 10.0.31.20230518
 
