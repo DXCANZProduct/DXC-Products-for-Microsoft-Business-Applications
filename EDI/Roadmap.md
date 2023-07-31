@@ -39,6 +39,7 @@ Release			| ETA
 :--			    |:--
 2023-10     | 31 October 2023
 2024-01     | 31 January 2024
+2024-04     | 30 April 2024
 
 
 ## Next release
