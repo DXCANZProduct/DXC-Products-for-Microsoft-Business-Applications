@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-07-28
+ms.date: 2023-07-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,10 +30,24 @@ ms.dyn365.ops.version: AX 7.0.1
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-# Next version
+# Current version
 
-### Release 10.0.34.202307TBD
-ETA: End July
+Next release is planned for 31 October 2023.
+
+### Release 10.0.34.20230731
+
+[Installation process](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/Release-notes.html#installation-process) 
+
+DXC EDI 10.0.34 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
+Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
+
+
+### Release 10.0.34.202307311
+Release date: 31 July 2023 <br>
 
 <ins>New features</ins>
 
@@ -78,20 +92,11 @@ Number	| Name		 | Description
 12619	| Customer advanced shipping notice	| Update label for InventQuantity to **Inventory quantity** and added to the staging form.
 15192	| Customer purchase order acknowledgement	| Fix to mapped values for staging line field **POA code item**. Extra character added to lines after line 1.
 
-# Current version
+# Previous version(s)
 
-Next release is planned for 31 July 2023.
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.34.20230615
-
-[Installation process](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/Release-notes.html#installation-process) 
-
-DXC EDI 10.0.34 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
-Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
 
 #### Build 10.0.34.202306151
 Release date: 15 June 2023 <br> 
@@ -144,10 +149,6 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 9231	| Purchase order	| When the Vendor Trading partner had Vendor purchase order acknowledgement (POA) enabled, and the Purchase order has been confirmed but the POA hasn't been received yet: When clicking on Purchase order line details' 'EDI acknowledgement' tab, errored with 'Function SAB_EDIDocumentTypeClass::constructBasedOnDocumentType has been incorrectly called.' Update to document settings function.
-
-# Previous version(s)
-
-Approximately one year of previous versions are included below.
 
 
 ### Release 10.0.31.20230505
