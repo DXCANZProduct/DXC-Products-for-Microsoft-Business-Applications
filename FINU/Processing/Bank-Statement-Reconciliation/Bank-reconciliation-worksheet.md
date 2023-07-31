@@ -82,7 +82,7 @@ These totals assist with balancing the in-progress Matching.
 
 ### Mark as new extended financial details
 
-If the field **Extended financial details for new transactions** has been set on **Financial utilities parameter**, these Financial details are available from the Bank reconciliation, on new FastTabs (General and Financial dimensions), for the user to review or change.
+If the field **Extended financial details for new transactions** has been set on **Financial utilities parameter**, these Financial details are available from the Bank reconciliation on **Matched transactions** tabs General and Financial dimensions, for the user to review or change.
 
 If feature **Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions** has been enabled, the fields are available in **Line details** on FastTab **New transactions**.
 
