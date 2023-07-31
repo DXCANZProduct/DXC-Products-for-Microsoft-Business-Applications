@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-06-15
+ms.date: 2023-07-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,16 +37,16 @@ This page describes the features planned for future releases and planned release
 
 Release			| ETA
 :--			    |:--
-2023-07			| 31 July 2023
 2023-10     | 31 October 2023
 2024-01     | 31 January 2024
 
 
 ## Next release
-ETA: 31 July 2023
+ETA: 31 October 2023
 
-- Intercompany Customer advanced shipping notice
-- 3PL Product master - add Product lifecycle states to 'Product configuration update' periodic task in order to limit automatic 3PL/Product records created. 
+- Vendor purchase order change:
+  - Limit which changes creates a staging record
+  - Additional Order line change types
 
 ## Deprecate
 The following has been deprecated
