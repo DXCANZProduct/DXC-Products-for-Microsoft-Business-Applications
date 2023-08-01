@@ -105,9 +105,12 @@ Number	  | Functionality	  | Reason
 Number	  | Name	          | Description
 :--       |:--              |:--
 12650	    | Payment Advice not issued when multiple payments for  same vendor  | When there are multiple payments for a single vendor within the one journal previously only the first record would issue the payment advice document when using the Smart Send button, this has now been corrected.
+
+
 ### Release 10.0.22.20220413
 
 #### Build 10.0.22.202204131
+
 Number	  | Name	          | Description
 :--       |:--              |:--
 10230	    | Sales	invoice not dispatched using the Smart Send button  | Resolution for error message received when selecting the Smart Send button on a customer tax invoice.
