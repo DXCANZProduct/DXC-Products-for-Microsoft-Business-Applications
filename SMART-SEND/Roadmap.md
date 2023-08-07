@@ -32,7 +32,7 @@ This page describes the features planned for future releases.
 
 ## Roadmap
 #### Print Destination override for Smart Send
--When utilising print on demand functionality allow users to trigger an override destination for Smart Send when a recipient is not found.
+When utilising print on demand functionality allow users to trigger an override destination for Smart Send when a recipient is not found.
 
 #### Multiple purposes to Smart Send Report
 Allow multiple contact purposes to be assigned to a Smart Send report. This functionality would allow for multiple dynamic recipients per report. 
