@@ -43,9 +43,10 @@ The BPAY Finance utilities modification to capture BPAY details for your EFT pay
 - **General ledger > Journal entries > General journals**
 - **Project management and accounting > Journals > Expense**
 
-Payment id is currently on the vendor invoicing forms and will be utilized for BPAY. New BPAY field **Lodgement reference** has also been added.
+**Payment id** is currently on the vendor invoicing forms and will be utilized for BPAY **Customer Reference Number (CRN)**. <br>
+New BPAY field **Lodgement reference** has also been added.
 
-- **Payment id** is populated by MS from the Vendor’s Payment id. The field can be manually edited on the vendor invoice entry prior to posting the invoice
+- **Payment id** is populated by MS from the Vendor’s Payment id. The field can be manually edited on the vendor invoice entry prior to posting the invoice.
 - **Lodgement reference** is populated by Finance Utilities by the vendor/third party bank account on the invoice. When changing to a different vendor bank account, the Lodgement reference will automatically update. The field can also be manually edited on the vendor invoice entry prior to posting the invoice.
 
 The BPAY modification uses the method of payment control settings to validate for mandatory fields Payment id and Lodgement reference (if also flagged as mandatory).
