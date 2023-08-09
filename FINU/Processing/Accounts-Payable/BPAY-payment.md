@@ -5,7 +5,7 @@ title: Finance Utilities
 description:  Accounts payable processing - BPAY payment
 author: helenho
 manager: Kym Parker
-ms.date: 2021-03-02
+ms.date: 2023-08-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
