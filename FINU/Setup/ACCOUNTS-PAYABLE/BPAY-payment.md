@@ -5,7 +5,7 @@ title: Finance Utilities
 description:  Accounts payable setup - BPAY payment
 author: helenho
 manager: Kym Parker
-ms.date: 2021-03-02
+ms.date: 2023-08-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -48,7 +48,9 @@ Enabling field **BPAY method of payment** updates the following:
 
 The following fields have been added as part of the BPAY modification, but are _optional_ since not mandatory for all ANZ banks:
 -	**Payment control > Lodgement reference is mandatory**
--	**Payment attributes > Lodgement reference** 
+-	**Payment attributes > Lodgement reference**
+
+> Note: Payment ID can be used for **Customer reference number (CRN)**
 
 #### Company bank
 Users can access the Company's **Bank accounts** page by navigating to **Cash and bank management > Bank accounts > Bank accounts**.
