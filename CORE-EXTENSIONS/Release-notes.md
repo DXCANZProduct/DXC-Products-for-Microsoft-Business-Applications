@@ -5,7 +5,7 @@ title: Core Extensions
 description: DXC Core extensions - Release notes
 author: lcoll
 manager: Kym Parker
-ms.date: 2023-07-06
+ms.date: 2023-08-11
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -62,7 +62,7 @@ Release date: 14 April 2023
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-N/A		| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> ![System parameters](../FINU/Images/ReleaseNotes_202304_2.png "System parameters")
+N/A		| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> **Note:** Required to upgrade all installed DXC products to at least the following versions: <br> • EDI 10.0.29.202305053 <br> • Finance utilities 10.0.29.202305051 <br> • SmartSend 10.0.29.202304142 <br> • Core extensions 10.0.29.202304142 <br> • DocuSign 10.0.29.202304211 <br> • Item creation 10.0.29.202304211 <br> •  PLM 10.0.29.202304211 <br> • Forex 10.0.29.202305101 <br> ![System parameters](../FINU/Images/ReleaseNotes_202304_2.png "System parameters")
 
 ### Release 10.0.29.20230223
 
