@@ -56,6 +56,7 @@ Release date: 31 July 2023 <br>
 Number	| Name		 | Description
 :--	|:--		  	|:--
 14455	| Connection types - Azure, FTP and SFTP	| New option **Disable delete**. When set to _Yes_, the file will not be deleted from the import path. This is useful where company doesn't have edit rights on the connection and don't want to see an error in the connection log. <br> FTP: Enabling this option may cause a performance impact. Each file will be downloaded and uploaded to its specific directory to retain file in source directory.
+N/A	| Licensing	| New versions included: <br> • DXC License 10.0.34.202307311 <br> • DXC License Manager 10.0.32.202307312
 
 
 **Customer module**
@@ -178,7 +179,7 @@ Number	| Functionality	  	| Reason
 13014	| Text template		| Additional **Row delimiter** option Tilde {~} 
 12403	| Export batch job	| Where there is no data to export, change export batch's log from error to info log
 13519	| Picking list		| New option **Restrict EDI picking route generation to allowed document types** on EDI parameters <br> • **No** (default) - Record created in table SAB_EDIWMSPICKINGROUTEEXT each time a picking list is posted. <br> • **Yes** - Record will only be created in table SAB_EDIWMSPICKINGROUTEEXT for customers with Customer advanced shipping notice and Warehouses with Picking list documents enabled.
-N/A	| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> ![System parameters](RELEASE-NOTES-IMAGES/20230328_1.png "System parameters") 
+N/A	| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> **Note:** Required to upgrade all installed DXC products to at least the following versions: <br> • EDI 10.0.29.202305053 <br> • Finance utilities 10.0.29.202305051 <br> • SmartSend 10.0.29.202304142 <br> • Core extensions 10.0.29.202304142 <br> • DocuSign 10.0.29.202304211 <br> • Item creation 10.0.29.202304211 <br> •  PLM 10.0.29.202304211 <br> • Forex 10.0.29.202305101 <br> ![System parameters](RELEASE-NOTES-IMAGES/20230328_1.png "System parameters") 
 
 
 **Customer module**	
