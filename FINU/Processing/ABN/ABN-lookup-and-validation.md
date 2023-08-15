@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Processing - ABN lookup and validation
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-03-04
+ms.date: 2023-08-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,6 +36,12 @@ Advanced filters are also available to limit the search results: <br>
 - ZIP/postal code
 - Search width - Typical or Narrow
 - Active - No / Yes
+
+## Prerequisites
+The following setup are [prerequisites](../../Setup/ABN/ABN-lookup-and-validation.md) for ABN lookup and validation:
+- Register for Web API
+- Setup ABN validation providers
+- Setup legal entity to use the ABN validation provider
 
 ## Vendors
 Go to **Accounts payable > Vendors > All vendors** and select the applicable Vendor. Choose either of the following: <br>
