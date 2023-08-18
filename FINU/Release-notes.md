@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-08-01
+ms.date: 2023-08-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,6 +38,13 @@ DXC Finance Utilities 10.0.35 runs on the following Microsoft releases
 Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
+Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
+
+> Note: If your Bank reconciliation creates **New transactions** offsetting to **Vendor**, **Bank** or **Customer** do not enable the following features:
+> - Enable bank reconciliation reversal even new transactions exist in posted bank statement
+> - Reverse posted bank statement with new transactions <br>
+>
+> Reversal of these offset types are not yet supported in Finance utilities. Only reversing New transactions offsetting to **Ledger** is currently supported.
 
 > Note: From **10.0.32** MS has added a preview feature called **Vendor bank account change proposal workflow**. If this feature is enabled it will use std's functionality for approving changes to Vendor bank accounts and the following needs to be manually configured: <br> 
 >   -  Vendor bank account approval in Accounts payable parameters - Enable the fields that requires approval
