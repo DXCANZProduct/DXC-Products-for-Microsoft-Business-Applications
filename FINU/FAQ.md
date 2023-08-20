@@ -1,4 +1,4 @@
-![image](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/assets/59988997/6b5ee926-f06d-446a-8792-3eaec6ee47ce)---
+---
 # required metadata
 
 title: Finance Utilities 
