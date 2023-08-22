@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-08-18
+ms.date: 2023-08-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -739,8 +739,7 @@ Enable all licensed modules via Feature management. Features are called:
 - EDI – 3PL Documents
 - EDI – Customer documents
 - EDI – Vendor documents
-- EDI – Freight forwarder documents (for ITM)
-- EDI – Freight forwarder landed cost documents (for Landed cost)
+- EDI – Freight forwarder landed cost documents
 - EDI – Standard formats
 
 If above features are not visible, press **Check for updates** to refresh the feature management list.
