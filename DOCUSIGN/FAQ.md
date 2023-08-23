@@ -29,7 +29,9 @@ ms.dyn365.ops.version: 10.0.34 and above
 
 ## 	Troubleshooting
 
-###   I get an error when I perform Grant Consent in Dynamics 
+###   Grant Consent Fucntion
+
+When selecting Grant consent you are taken to ap age with the below error.
 
 ![went_wrong](/IMAGES/Went_wrong.png)
 
