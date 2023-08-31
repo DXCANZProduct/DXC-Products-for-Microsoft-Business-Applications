@@ -37,13 +37,18 @@ This page describes the features planned for future releases and planned release
 
 Release			    | ETA
 :--			        |:--
-2023-07         | 31 July 2023
 
 
 ## Roadmap
-#### Cash and bank management
-- Support in 10.0.35 for manually setting offset details when using 10.0.34 feature 'Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions'. Utilising 'Line details' added to 'New transactions' in 10.0.35.
+#### Accounts payable
+- EFT Payment file name placeholders
 
 #### Accounts receivable
 - Option to exclude invoices from automatic settlement based on their Collection status, for example disputed.
+- Interest notes - Due date
+
+#### AR Utilities
+- Cleanup AR Utilities staging
+
+
 

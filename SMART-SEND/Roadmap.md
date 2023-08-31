@@ -30,9 +30,14 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This page describes the features planned for future releases.
 
-## Roadmap
-#### Print Destination overide for Smart Send
--When utisling print on demand fucntionality allow users to trigger an overide for Smart Send when a recipient is not found.
+> Note: Dates and features are subject to change.
 
-#### Multiple email addresess to a purpose
--As part of the Smart Send set  set up, allow multiple purposes to be assigned to an individual report formats. 
+## Roadmap
+#### Print Destination override for Smart Send
+- When utilising print on demand functionality allow users to trigger an override destination for Smart Send when a recipient is not found.
+
+#### Multiple purposes to Smart Send Report
+- Allow multiple contact purposes to be assigned to a Smart Send report. This functionality would allow for multiple dynamic recipients per report. 
+
+#### Allow legal entity specific Smart Send set up when using centralised payments.
+- When utilising centralised payments in Customer or Vendor Payment Journal you can now have a legal entity specific set up that allows the use of that entities contact detail and email templates 

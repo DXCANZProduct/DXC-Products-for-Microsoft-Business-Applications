@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Bank statement reconciliation processing - Bank reconciliation worksheet 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-09-16
+ms.date: 2023-07-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -82,7 +82,10 @@ These totals assist with balancing the in-progress Matching.
 
 ### Mark as new extended financial details
 
-If the field **Extended financial details for new transactions** has been set on **Financial utilities parameter**, these Financial details are available from the Bank reconciliation, on new FastTabs (General and Financial dimensions), for the user to review or change
+If the field **Extended financial details for new transactions** has been set on **Financial utilities parameter**, these Financial details are available from the Bank reconciliation on **Matched transactions** tabs General and Financial dimensions, for the user to review or change.
+
+If feature **Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions** has been enabled, the fields are available in **Line details** on FastTab **New transactions**.
+
 -	The additional detail can be populated when a transaction is selected from the **Mark as new** button
 -	When a line is set as Mark as new’ the GL journal creation includes the additional default settings from the **Extended financial details** from the applicable **Reconciliation matching rules**
 

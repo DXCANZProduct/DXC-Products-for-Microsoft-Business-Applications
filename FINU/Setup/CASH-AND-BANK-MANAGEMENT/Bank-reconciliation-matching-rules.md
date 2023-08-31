@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Bank reconciliation matching rules
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-06-09
+ms.date: 2023-08-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -124,6 +124,7 @@ The following subsection will discuss scenarios when running a Mark as new rule 
 - **Auto-post customer payment journal**: 
     - **Yes** - The customer receipt journal will be posted and automatically matched with the bank statement lines. A Match Id will be assigned for all the transactions and moved to matched on the Bank reconciliation worksheet when running the rule.
     - **No**: The customer receipt journal will only be created. Once the user has reviewed and posted the customer payment journal, refresh the bank reconciliation’s worksheet to bring in the new bank transactions. User has to either use a match with bank statement rule or manually match the applicable bank statement lines with these new bank transactions.
+ 
 
 ##### Field format
 The ability to set field format is available for the following fields:
@@ -163,6 +164,23 @@ To enable a single voucher to have multiple customer lines, follow these steps.
 1.	Go to **General ledger > Ledger setup > General ledger parameters**.
 2.	On the Ledger tab, on the General FastTab, set the Allow multiple transactions within one voucher option to Yes.
 3.	If you receive a warning message, select Close to accept the change.
+
+#### Customer payment journal
+<ins>Bank reconciliation</ins> <br>
+When the rule is run, a customer payment journal is created and the **Journal id** will be provided in the **Message details**
+
+<ins>Customer payment journal</ins> <br>
+The following fields are populated in the created customer payment journal:
+- Header fields
+     -  **Document** - Populated from **Reconciliation ID**
+     -  **Posted** - Determined by rule's **Auto-post customer payment journal**
+ - Line fields
+     - **Account** - Determined by offset details in rule
+     - **Invoice** - If rule is set to settle and invoice is provided in bank statement
+     - **Description** - Populated from Bank statement's Description
+     - **Credit** - Bank statement's amount
+     - **Offset account** - Bank statement's Bank account
+     - **Method of payment** - Set in Financial utilities parameters
 
 #### Possible processing issues:
 -	Warning log: ‘Account % does not exist’

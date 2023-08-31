@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Setup - ABN lookup and validation 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-03-04
+ms.date: 2023-08-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,3 +50,6 @@ After successful registration, the company will be provided with a security toke
 2. Use the setup available under **ABN Validation** FastTab to enable and add the security token received from Australian Government to each D365 legal entity.
     - Set **Enabled** to _Yes_.
     - Select the applicable **Provider** from the drop-down as setup in the previous section **ABN validation providers**.
+  
+## Processing
+See [link](../../Processing/ABN/ABN-lookup-and-validation.md) for details on processing.

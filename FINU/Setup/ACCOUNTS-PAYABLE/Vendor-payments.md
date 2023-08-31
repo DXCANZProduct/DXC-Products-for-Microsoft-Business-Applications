@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Accounts payable setup - Vendor Payments 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-06-09
+ms.date: 2023-08-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,12 +42,12 @@ Some improvements to the Accounts Payable EFT payment processing have been creat
 - The following only applies to vendor payments with a method of payment using the Finance utilities EFT formats **
   - **Balance line** on the EFT file.
   -	**Vendor bank account name** used on EFT file instead of Vendor name.
-  -	**EFT file name** generation 
 
 - The following applies to all method of payment format:
   -	Auto generating a **Payment reference** for each EFT payment which can be traced in Vendor’s Bank Statement, AX Bank Transactions/Reconciliation and Payment Advice.
   -	**Payment advice** report, a specific EFT Remittance Advice report with additional details.
   -	**Payments** report, additional fields.
+  -	**EFT file name** generation 
 
 ## Balance line
 
@@ -82,15 +82,22 @@ This can be set per company bank account. To open the the **Bank accounts** page
 
 This modification is to automatically populate EFT file name based on the number sequence pattern.
 File information fields will be automatically filled with the file name that has following pattern:
-_BankAccountId_**NumberSequence**.FileFormat
+File name when **Enable file parameters** is set to:
+- **Yes**: 'File name mask' & **NumberSequence**.FileFormat
+- **No**
+    - Finance Utilities EFT formats: 'Method of payment' & 'Bank account' & 'Date/time'
+    - Electronic reporting formats: Blank
 
 1. Set the **Number sequence** in the **Accounts payable parameters**
-- On the Number sequence FasTab, set a sequence for **EFT file name**
+    - On the Number sequence FastTab, set a sequence for **EFT file name**
 
 2. Set whether the method of payment should automatically generate a filename for the EFT file. To open the the **Methods of payment** page, go to **Accounts payable > Setup > Payment setup > Methods of payment**.
--	Highlight applicable method of payment
--	Expand **EFT** FastTab and select **Enable file parameters**.
--	Enter **File format**, example txt
+    -	Highlight applicable method of payment
+    -	Expand **EFT** FastTab and select **Enable file parameters**
+    -	File name mask. Default when **Enable file parameters** is enabled: BankAccountId. Use **Editor** to edit the default.
+    -	Enter **File format**, example txt
+
+**Editor** can be used to edit the file name mask. A combination of static values and placeholders can be assigned.
 
 ## Automatic generation of payment reference
 This functionality populates the **Payment reference** field in the Accounts payable Payment journal line automatically with a unique number when generating the EFT payment file. Each payment line is unique regardless of the number of vendors during generation via EFT method of payment.

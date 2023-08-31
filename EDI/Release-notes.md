@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-07-28
+ms.date: 2023-08-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,10 +30,25 @@ ms.dyn365.ops.version: AX 7.0.1
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-# Next version
+# Current version
 
-### Release 10.0.34.202307TBD
-ETA: End July
+Next release is planned for 31 October 2023.
+
+### Release 10.0.34.20230731
+
+[Installation process](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/Release-notes.html#installation-process) 
+
+DXC EDI 10.0.34 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
+Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
+Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
+
+
+#### Build  10.0.34.202307311
+Release date: 31 July 2023 <br>
 
 <ins>New features</ins>
 
@@ -42,6 +57,7 @@ ETA: End July
 Number	| Name		 | Description
 :--	|:--		  	|:--
 14455	| Connection types - Azure, FTP and SFTP	| New option **Disable delete**. When set to _Yes_, the file will not be deleted from the import path. This is useful where company doesn't have edit rights on the connection and don't want to see an error in the connection log. <br> FTP: Enabling this option may cause a performance impact. Each file will be downloaded and uploaded to its specific directory to retain file in source directory.
+N/A	| Licensing	| New versions included: <br> • DXC License 10.0.34.202307311 <br> • DXC License Manager 10.0.32.202307312
 
 
 **Customer module**
@@ -78,20 +94,11 @@ Number	| Name		 | Description
 12619	| Customer advanced shipping notice	| Update label for InventQuantity to **Inventory quantity** and added to the staging form.
 15192	| Customer purchase order acknowledgement	| Fix to mapped values for staging line field **POA code item**. Extra character added to lines after line 1.
 
-# Current version
+# Previous version(s)
 
-Next release is planned for 31 July 2023.
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.34.20230615
-
-[Installation process](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/Release-notes.html#installation-process) 
-
-DXC EDI 10.0.34 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
-Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
 
 #### Build 10.0.34.202306151
 Release date: 15 June 2023 <br> 
@@ -145,10 +152,6 @@ Number	| Name		 | Description
 :--	|:--		  	|:--	
 9231	| Purchase order	| When the Vendor Trading partner had Vendor purchase order acknowledgement (POA) enabled, and the Purchase order has been confirmed but the POA hasn't been received yet: When clicking on Purchase order line details' 'EDI acknowledgement' tab, errored with 'Function SAB_EDIDocumentTypeClass::constructBasedOnDocumentType has been incorrectly called.' Update to document settings function.
 
-# Previous version(s)
-
-Approximately one year of previous versions are included below.
-
 
 ### Release 10.0.31.20230505
 
@@ -177,7 +180,7 @@ Number	| Functionality	  	| Reason
 13014	| Text template		| Additional **Row delimiter** option Tilde {~} 
 12403	| Export batch job	| Where there is no data to export, change export batch's log from error to info log
 13519	| Picking list		| New option **Restrict EDI picking route generation to allowed document types** on EDI parameters <br> • **No** (default) - Record created in table SAB_EDIWMSPICKINGROUTEEXT each time a picking list is posted. <br> • **Yes** - Record will only be created in table SAB_EDIWMSPICKINGROUTEEXT for customers with Customer advanced shipping notice and Warehouses with Picking list documents enabled.
-N/A	| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> ![System parameters](RELEASE-NOTES-IMAGES/20230328_1.png "System parameters") 
+N/A	| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> **Note:** Required to upgrade all installed DXC products to at least the following versions: <br> • EDI 10.0.29.202305053 <br> • Finance utilities 10.0.29.202305051 <br> • SmartSend 10.0.29.202304142 <br> • Core extensions 10.0.29.202304142 <br> • DocuSign 10.0.29.202304211 <br> • Item creation 10.0.29.202304211 <br> •  PLM 10.0.29.202304211 <br> • Forex 10.0.29.202305101 <br> ![System parameters](RELEASE-NOTES-IMAGES/20230328_1.png "System parameters") 
 
 
 **Customer module**	
@@ -736,8 +739,7 @@ Enable all licensed modules via Feature management. Features are called:
 - EDI – 3PL Documents
 - EDI – Customer documents
 - EDI – Vendor documents
-- EDI – Freight forwarder documents (for ITM)
-- EDI – Freight forwarder landed cost documents (for Landed cost)
+- EDI – Freight forwarder landed cost documents
 - EDI – Standard formats
 
 If above features are not visible, press **Check for updates** to refresh the feature management list.

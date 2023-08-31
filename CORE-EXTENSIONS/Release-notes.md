@@ -5,7 +5,7 @@ title: Core Extensions
 description: DXC Core extensions - Release notes
 author: lcoll
 manager: Kym Parker
-ms.date: 2023-07-06
+ms.date: 2023-08-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,6 +40,7 @@ Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
 Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
+Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
 
 #### Build 10.0.34.202306082
 
@@ -62,7 +63,7 @@ Release date: 14 April 2023
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-N/A		| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> ![System parameters](../FINU/Images/ReleaseNotes_202304_2.png "System parameters")
+N/A		| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> **Note:** Required to upgrade all installed DXC products to at least the following versions: <br> • EDI 10.0.29.202305053 <br> • Finance utilities 10.0.29.202305051 <br> • SmartSend 10.0.29.202304142 <br> • Core extensions 10.0.29.202304142 <br> • DocuSign 10.0.29.202304211 <br> • Item creation 10.0.29.202304211 <br> •  PLM 10.0.29.202304211 <br> • Forex 10.0.29.202305101 <br> ![System parameters](../FINU/Images/ReleaseNotes_202304_2.png "System parameters")
 
 ### Release 10.0.29.20230223
 
