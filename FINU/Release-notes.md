@@ -73,12 +73,14 @@ Release date: TBD <br>
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
 15017		| Accounts payable	| EFT file name generation	| Ability to set static values and select placeholders for EFT file name in Vendor's Method of payment <br> [User guide](Setup/ACCOUNTS-PAYABLE/Vendor-payments.md#eft-file-name-generation) <br> ![Method of payment](Images/ReleaseNotes_20230731_4.png "Method of payment") <br> ![Editor](Images/ReleaseNotes_20230731_5.png "Editor") 
-15578		| Cash and bank management	| Bank reconciliation	| When bank statement line is marked as new and offset to an intercompany bank account, the postings will now be created as intercompany. Example: <br>  • **Current company**: Debit I/C Receivable and Credit Bank account <br> • **Intercompany**: Debit Bank account and Credit I/C Payable
+15578		| Cash and bank management	| Bank reconciliation	| When bank statement line is marked as new and offset to an **intercompany bank account**, the postings will now be created as intercompany. Example: <br>  • **Current company**: Debit I/C Receivable and Credit Bank account <br> • **Intercompany**: Debit Bank account and Credit I/C Payable
 
 <ins>Bug fixes</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
+15891		| Cash and bank management	| Bank reconciliation | Only issue in **10.0.35.202307311**. <br> When running matching rules, the lines are not moved to matched/new transactions
+15899		| Accounts payable	| Payments report	| Only issue in 10.0.35. When printing the **Payments** report in Vendor payments, every 2nd page is blank.
 
 
 
