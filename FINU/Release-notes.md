@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-08-18
+ms.date: 2023-08-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -64,6 +64,23 @@ Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dyn
 > > From **10.0.35** leaving the new field **Set the booking date as default accounting date for new transactions** set to _No_, doesn't use Finance utilities Posting date anymore. 
 > > - When set to No: Accounting date = Bank statement import date
 > > - When set to Yes: Accounting date = Booking date
+
+#### Build 10.0.35.202307312
+Release date: TBD <br> 
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+15017		| Accounts payable	| EFT file name generation	| Ability to set static values and select placeholders for EFT file name in Vendor's Method of payment <br> ![Method of payment](Images/ReleaseNotes_20230731_4.png "Method of payment") <br> ![Editor](Images/ReleaseNotes_20230731_5.png "Editor") <br> [User guide](Setup/ACCOUNTS-PAYABLE/Vendor-payments.md#eft-file-name-generation)
+15578		| Cash and bank management	| Bank reconciliation	| When bank statement line is marked as new and offset to an intercompany bank account, the postings will now be created as intercompany. Example: <br>  • **Current company**: Debit I/C Receivable and Credit Bank account <br> • **Intercompany**: Debit Bank account and Credit I/C Payable
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+
+
 
 #### Build 10.0.35.202307311
 Release date: 31 July 2023 <br> 
