@@ -56,7 +56,7 @@ To add a signatory to the template, select the **Add** action in the signatory s
 | **Sorting**                      | The sorting number determines the order the document will be signed.  This will allow users to define if the order will be signed internally or externally first.  The **Sorting** field works in conjunction with **Dependency** field to identify the order documents are sent through *Docusign*.   |
 | **Description**                   | A description of the signatory. This will be a description of the person who will be signing the document, such as a Purchasing agent or Sales Manager.     |
 | **Depedency**              | If there is a dependency required, enter the **sorting** value of the signatory.  This number will determine who signs a document first, and every subsequent signatory. | 
-| **Type**                          |  Enter the **Type** of the party that will sign the document.  <br> <br> *External* will be a party external to the business. <br> <br> *Internal* will be a party within the business. | 
+| **Type**                          |  Enter the **Type** of the party that will sign the document.  <br> <br> *External* will be a party external to the business. <br> <br> *Internal* will be a party within the business (linked to the worker title). | 
 
 
 ## Signatory details
