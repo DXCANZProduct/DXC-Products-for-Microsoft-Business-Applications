@@ -131,9 +131,9 @@ This section describes the features that have been removed, or planned to be rem
 - Finance Utilities functionality - Option to post **new** bank statement transaction at either **Today's date** or **Statement transaction date** (Statement's To date)
 - Reason for deprecation/removal - Replaced by D365 feature called 'New voucher and date for new transactions in the advanced bank reconciliation bank statement'
 - Impact - Removal of the following fields & functionality:
-	- Posting date default on bank account
-	- Posting date option on importing bank statement
- 	- Posting date on bank reconciliation
+	- Posting date default on bank account <br>
+	- Posting date option on importing bank statement <br>
+ 	- Posting date on bank reconciliation <br>
 - Status - Planned for Oct 2023 Finance utilities release.
 
 ![Bank statement](Images/Deprecate_PostingDate_1.png "Bank statement") <br>
