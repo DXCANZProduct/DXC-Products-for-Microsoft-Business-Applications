@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-08-31
+ms.date: 2023-09-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -125,8 +125,20 @@ This section describes the features that have been removed, or planned to be rem
 	- Bank account active date
 	- Bank account expiration date
 - Status - Planned for Oct 2023 Finance utilities release.
-> Note: The Finance utilities fields (Biller code and Lodgement reference) will be added to standard 'Vendor bank account approval' FastTab in Accounts payable parameters.
+> Note: The Finance utilities fields (Biller code and Lodgement reference) have been added to standard 'Vendor bank account approval' FastTab in Accounts payable parameters in Finance Utilities version 10.0.35.202307311.
 
+### Posting date
+- Finance Utilities functionality - Option to post **new** bank statement transaction at either **Today's date** or **Statement transaction date** (Statement's To date)
+- Reason for deprecation/removal - Replaced by D365 feature called 'New voucher and date for new transactions in the advanced bank reconciliation bank statement'
+- Impact - Removal of the following fields & functionality:
+	- Posting date default on bank account
+	- Posting date option on importing bank statement
+ 	- Posting date on bank reconciliation
+- Status - Planned for Oct 2023 Finance utilities release.
+
+![Bank statement](Images/Deprecate_PostingDate_1.png "Bank statement") <br>
+
+![Bank reconciliation](Images/Deprecate_PostingDate_2.png "Bank reconciliation")
 
 # Previous version(s)
 
