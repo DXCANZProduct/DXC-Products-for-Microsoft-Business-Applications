@@ -127,7 +127,7 @@ This section describes the features that have been removed, or planned to be rem
 - Status - Planned for Oct 2023 Finance utilities release.
 > Note: The Finance utilities fields (Biller code and Lodgement reference) have been added to standard 'Vendor bank account approval' FastTab in Accounts payable parameters in Finance Utilities version 10.0.35.202307311.
 
-### Posting date
+### New bank statement transaction - Posting date
 - Finance Utilities functionality - Option to post **new** bank statement transaction at either **Today's date** or **Statement transaction date** (Statement's To date)
 - Reason for deprecation/removal - Replaced by D365 feature called 'New voucher and date for new transactions in the advanced bank reconciliation bank statement'
 - Impact - Removal of the following fields & functionality:
