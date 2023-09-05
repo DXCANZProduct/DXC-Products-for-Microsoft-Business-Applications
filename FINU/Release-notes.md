@@ -129,7 +129,10 @@ This section describes the features that have been removed, or planned to be rem
 
 ### New bank statement transaction - Posting date
 - Finance Utilities functionality - Option to post **new** bank statement transaction at either **Today's date** or **Statement transaction date** (Statement's To date)
-- Reason for deprecation/removal - Replaced by D365 feature called 'New voucher and date for new transactions in the advanced bank reconciliation bank statement'
+- Recommended process: Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' is automatically enabled from 10.0.36. The feature automatically sets new 'Cash and bank management parameters' field 'Set the booking date as default accounting date for new transactions' to _Yes_. Select applicable option in this new field to set the default accounting date for new transactions:
+	- Yes: Bank statement line booking date
+ 	- No: Bank statement import date 
+- Reason for deprecation/removal - Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' was introduced in 10.0.31. In 10.0.35 MS has updated the feature which has resulted in a breaking change for Finance Utilities Posting date functionality. From 10.0.36 this feature is enabled by default.
 - Impact - Removal of the following fields & functionality:
 	- Posting date default on bank account <br>
 	- Posting date option on importing bank statement <br>
