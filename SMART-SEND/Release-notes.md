@@ -46,7 +46,7 @@ Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
 Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
 Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
-
+Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
 
 #### Build 10.0.29.202304143
 
