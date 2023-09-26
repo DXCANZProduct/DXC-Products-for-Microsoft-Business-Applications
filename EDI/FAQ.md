@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Frequently asked questions
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-06-26
+ms.date: 2023-09-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -56,6 +56,10 @@ Quick method to download header and line fields for a document type: <br>
 - Select the applicable document type.
 - In FastTab **Staging metadata** select **Field upload**.
 - Select the **Template** button and then **Download**.
+
+### Data refresh - Connections
+By design, data refresh doesn't copy passwords for connections. When opening the connection, user will receive a 'Encryption error occured with exception'. <br>
+If the connection is to be used in this environment, update the details (for example different paths for UAT) and update the password.
 
 ### No document setting specified
 Posting some transactions require an EDI document setting specified. <br>
