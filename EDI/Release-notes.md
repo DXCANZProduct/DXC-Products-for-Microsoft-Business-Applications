@@ -56,13 +56,13 @@ Release date: 28 September 2023 <br>
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-15887	| Connection types - SFTP	| The underlying connection was closed: The server committed a protocol violation. <br> Issue only for release 10.0.34.202307311 that prevented file moved to arhive/error folders.
+15887	| Connection types - SFTP	| The underlying connection was closed: The server committed a protocol violation. <br> Issue only for release 10.0.34.202307311 that prevented file moved to archive/error folders.
 
 **Customer module**
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
-16094	| Customer advanced shippinng notice	| Intercompany order not identified as EDI order for sending ASN. Use 'Send only for EDI orders' from originating company for intercompany orders.
+16094	| Customer advanced shipping notice	| Intercompany order not identified as EDI order for sending ASN. Use 'Send only for EDI orders' from originating company for intercompany orders.
 
 
 #### Build  10.0.34.202307311
