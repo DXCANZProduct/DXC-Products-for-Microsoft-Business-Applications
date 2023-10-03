@@ -65,9 +65,11 @@ Number	  | Name	          | Description
 ![Override_print_destination](IMAGES/Override_print_destination.png)
 
 
-Feature management
+## Feature management
 From The New Release Smart Send can be enabled via Feature management
 Enable the following feature in D365 Feature management:
-DXC Smart Send
-If above feature is not visible, press Check for updates to refresh the feature management list.
+
+- DXC Smart Send
+
+If above feature is not visible, press **Check for updates** to refresh the feature management list.
 
