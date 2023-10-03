@@ -3,7 +3,7 @@
 
 title: Smart Send
 description: Smart Send - Email placeholder
-author: Liam Coll
+author: Peter Musumeci
 manager: Kym Parker
 ms.date: 2021-07-29
 ms.topic: article
