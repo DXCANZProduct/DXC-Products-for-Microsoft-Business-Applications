@@ -5,7 +5,7 @@ title: Insights for D365 FO
 description: Insights for D365 FO - Periodic monitoring
 author: Patrick Sharma
 manager: Kym Parker
-ms.date: 2023-06-07
+ms.date: 2023-10-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,8 +27,10 @@ ms.dyn365.ops.version: 10.0.32
 ---
 
 # Periodic Monitoring
-### 1. Periodic Monitoring Configuration 
+
 Periodic monitoring helps organizations maintain a proactive approach to managing their operations. Specific business rules can be setup to continuously evaluate and track specific aspects of the organization's operations, or critical business areas. It will help provide timely insights, allowing them to make informed decisions, address issues promptly, and ensure that they are in alignment with their strategic goals and compliance requirements.
+
+### 1. Periodic Monitoring Configuration 
 
 To configure peridoic monitoring, navigate to **System Administration > Setup > Insights for D365 FO > Periodic monitoring > Periodic monitoring configuration**. If this is the first time you have opened the form, it will be empty. 
 Click the menu button labeled ‘Refresh list’. This will scan the AOT and build a list of monitoring rules and their parameters. 

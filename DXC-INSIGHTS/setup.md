@@ -5,7 +5,7 @@ title: Insights for D365 FO
 description: Insights for D365 FO - Setup
 author: Patrick Sharma
 manager: Kym Parker
-ms.date: 2023-06-07
+ms.date: 2023-10-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

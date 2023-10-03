@@ -5,7 +5,7 @@ title: Insights for D365 FO
 description: Introduction to Insights for D365 FO
 author: Peter Musumeci
 manager: Kym Parker
-ms.date: 2023-07-18
+ms.date: 2023-10-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
