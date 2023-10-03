@@ -51,10 +51,10 @@ Number	  | Name	          | Description
 
 <ins>New features</ins>
 
+Number	  | Name	          | Description
+:--       |:--              |:--
 9233	    | Additional fields in organizational email template data entity| Additional fields have now been added to the Organization email template Data Entity to incorporate the To, CC and BCC fields from the Smart Send email templates.
 9483	    | Company logo placeholder for email template| You can now incorporate your company logo into your Smart Send email template.  Note you must use Tag "<img src="data:image/bmp;base64,%CompanyLogo%" alt="logo"/>" to render image correctly.
 9735	    | rich html editor | New ability to use HTML editor when building content for Smart Send email templates.
-12731	    | Additional placeholders | 2 additional placeholders have been added.
-For Purchase order confirmation (PurchTable.PurchName) %VendorName%
-For Sales order Confirmation (SalesTable.SalesNAme) %CustomerName%
+12731	    | Additional placeholders | 2 additional placeholders have been added. For Purchase order confirmation (PurchTable.PurchName) %VendorName% For Sales order Confirmation (SalesTable.SalesNAme) %CustomerName%
 14174	    | key vault is now in drop down menu | key vault has now been updated to a drop-down menu.  Azure Blob storage will be deprecated in the future. Date to be announced. 
