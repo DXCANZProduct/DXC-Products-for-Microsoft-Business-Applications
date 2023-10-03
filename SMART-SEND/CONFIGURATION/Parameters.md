@@ -47,7 +47,7 @@ On the Smart Send tab of the Email parameters form you can configure the type of
 |  **Include account contacts**  | When this parameter is enabled, in addition to the defined Recipients, Smart Send will also search for and email the business form to any Contact person attached to the Customer or Vendor account that hold the same Account and Contact information purpose as defined for this business form. |  
 |  **Hold email in the queue**  | By selecting to hold emails, the emails will be marked with status of “Suspended”. These will need to be released manually from the “Email sending status” form. | 
 |  **Convert to PDF**  | This feature is only for documents created when using the smart send button. This will convert an electronic report from its base format to PDF.  <br/> <br/> When using print management, the electronic reporting destination is used to determine if the document is converted to PDF. | 
-|  **Purpose**  | A purpose must be selected. The purpose is used to find an email address from the customer or vendor contact information. |  
+|  **Purpose**  | A purpose must be selected. The purpose is used to find an email address from the customer or vendor contact information.  You can assign multiple purposes to a contact allowing one or multiple contact/s to be used for multiple SmartSend forms |  
 
 ## General
 
