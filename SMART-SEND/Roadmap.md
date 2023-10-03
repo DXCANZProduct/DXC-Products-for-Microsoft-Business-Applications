@@ -56,9 +56,9 @@ Number	  | Name	          | Description
 Number	  | Name	          | Description
 :--       |:--              |:--
 9233	    | Additional fields in organizational email template data entity| Additional fields have now been added to the Organization email template Data Entity to incorporate the To, CC and BCC fields from the Smart Send email templates.
-9483	    | Company logo placeholder for email template| You can now incorporate your company logo into your Smart Send email template.  Note you must use Tag "<img src="data:image/bmp;base64,%CompanyLogo%" alt="logo"/>" to render image correctly.
+9483	    | Company logo placeholder for email template| You can now incorporate your company logo into your Smart Send email template.  Note you must use Tag `<img src="data:image/bmp;base64,%CompanyLogo%" alt="logo"/>` to render image correctly.
 9735	    | rich html editor | New ability to use HTML editor when building content for Smart Send email templates.
-12731	    | Additional placeholders | 2 additional placeholders have been added. For Purchase order confirmation (PurchTable.PurchName) %VendorName% For Sales order Confirmation (SalesTable.SalesNAme) %CustomerName%
+12731	    | Additional placeholders | 2 additional placeholders have been added. For Purchase order confirmation (PurchTable.PurchName) %VendorName% For Sales order Confirmation (SalesTable.SalesName) %CustomerName%
 14174	    | key vault is now in drop down menu | key vault has now been updated to a drop-down menu.  Azure Blob storage will be deprecated in the future. Date to be announced. 
 14961	    | change to option "PRINTER DESTINATION IF NO SMART SEND RECIPIENT FOUND" | When no Smart send recipient has been selected you now have the option to set documents to not print via the renamed menu option "PRINTER DESTINATION IF NO SMART SEND RECIPIENT FOUND".  This setting works in conjunction with the Save to Azure Storage options and Alternate Email in email parameters. When “do not print” is enabled documents are not routed if no recipient is found.  By Default, this field is set with no option (Blank) which follows standard Smart Send logic and allows for both Azure storage or Alternate Email delivery.  “Do not print” if enabled will override alternate email and azure storage options and document will not be routed.  Only occurs if no smart send recipient found.
 
