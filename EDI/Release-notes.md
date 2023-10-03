@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-09-15
+ms.date: 2023-10-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,6 +29,11 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
+[Installation process](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/Release-notes.html#installation-process) 
+
+# Next version
+
+### Release 10.0.34.202310TBD
 
 # Current version
 
@@ -36,7 +41,35 @@ Next release is planned for 31 October 2023.
 
 ### Release 10.0.34.20230731
 
-[Installation process](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/Release-notes.html#installation-process) 
+<ins>New features</ins>
+
+**Core module**	- Applies to all modules
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+12020	| Outbound files	| Trading partner button on Outbound files
+
+
+<ins>Bug fixes</ins>
+
+**Core module**	- Applies to all modules
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+14981	| Document types	| 
+
+**3PL module**
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+10528	| Shipment advice - Voyage <br> Shipment receipt - Voyage	| Missing security to access staging forms
+
+**Freight forwarder landed cost module**
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+10637	| Voyage creator <br> Voyage tracking	| Voyages button enabled prior to processing of record
+12598	| Document types	| Description in Document types updated for new records for: <br> • Voyage creator <br> • Voyage tracking
 
 DXC EDI 10.0.34 runs on the following Microsoft releases
 
