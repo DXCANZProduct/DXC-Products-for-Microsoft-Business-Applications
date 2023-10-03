@@ -43,6 +43,6 @@ If the product is available in About > Version, check if it has been enabled in 
 If you don't see **Insights for D365 FO** or **Insights for D365 FO Dual Write**, click **Check for updates**. <br>
 **Enable** the feature. <br>
 
-![FeatureManagement](Images/CheckForUpdates.png "Feature management")
+![CheckForUpdates](Images/CheckForUpdates.png "CheckForUpdates")
   
 
