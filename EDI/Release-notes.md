@@ -47,6 +47,23 @@ Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
 Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
 
+#### Build  10.0.34.202307312
+Release date: 28 September 2023 <br>
+
+<ins>Bug fixes</ins>
+
+**Core module**	- Applies to all modules
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+15887	| Connection types - SFTP	| The underlying connection was closed: The server committed a protocol violation. <br> Issue only for release 10.0.34.202307311 that prevented file moved to archive/error folders.
+
+**Customer module**
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+16094	| Customer advanced shipping notice	| Intercompany order not identified as EDI order for sending ASN. Use 'Send only for EDI orders' from originating company for intercompany orders.
+
 
 #### Build  10.0.34.202307311
 Release date: 31 July 2023 <br>
