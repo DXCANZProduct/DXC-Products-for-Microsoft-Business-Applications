@@ -32,16 +32,42 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.31.202306231
+### Release 10.0.34.202310031
 
-Insights for D365 FO 10.0.31 runs on the following Microsoft releases
+Insights for D365 FO 10.0.34 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.31	  | [What’s new or changed in Dynamics 365 application version 10.0.31](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-31)
-Microsoft Dynamics 365 application	| 10.0.32	  | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)
-Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33)
-Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
+Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
+Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
+Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
+Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
+
+#### Build 10.0.34.202310031
+Release date: 03 October 2023
+
+<ins>**Manual actions required**</ins>
+
+Due to the model source code restructuring in 15921, the Commerce Essentials - Telemetry [CET] and Commerce Essentials - Telemetry DXC Extra [DXCCETExtra] models have been removed. It is required to create an uninstall package to remove the Commerce Essentials - Telemetry [CET] and Commerce Essentials - Telemetry DXC Extra [DXCCETExtra] models. <br>
+Otherwise you will receive duplicate object errors. <br>
+See [MS instructions](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package).
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+15921	| Model source code restructure	| The model source code has undergone restructuring to enhance our ability to effectively manage the codebase. The code logic from the Commerce Essentials - Telemetry [CET] and Commerce Essentials - Telemetry DXC Extra [DXCCETExtra] models have now been moved to a single DXC Insights model. See 'Manual actions required'.
+12176	| Periodic monitoring configuration	| - Automate periodic telemetry monitoring batch job recurrence setup to ensure monitoring batch job restarts automatically on batch server crash or restart. <br> - Support extensibility for additional continuous/periodic monitoring events. <br> - Enable users to set custom refresh intervals on the periodic monitoring configuration form for monitoring events. <br> - Periodic monitoring parameters setup on Insights for D365 FO parameters is now more flexible, with no limit on maximum refresh frequency. <br> - Updated refresh interval unit from milliseconds to minutes for better readability and comprehension.
+15789	| Periodic monitoring configuration	| - Add number sequence monitoring with continuous periodic monitoring. Users can enable monitoring and setup threshold values on the Number sequence code that will trigger an event to be logged with Insights for D365 FO when the utilization aligns with the threshold value of remaining days or remaining percentage of number sequence codes. <br> - Supports extensibility for developers to add more sophisticated custom logic for number sequence monitoring. <br> - Default threshold values for number sequence monitoring can be modified on the Periodic monitoring configuration form.
+15932	| Telemetry logging with Insights for D365 FO	| Support basic batch job monitoring. Users can enable monitoring and set values for minimum/maximum number of minutes that a batch job is expected to take to complete. Telemetry will be logged with Insights for D365 FO at the start and end of each batch job execution. A summary of batch jobs that finish behind schedule or too early is available on Azure Application Insights with the Insights for D365 FO Dashboard provided by DXC.
+15788	| Telemetry logging with Insights for D365 FO	| Support telemetry logging on unexpected session shutdown / termination causing an interrupt in the system. Session shutdown telemetry logging can be switched on from the Insights for D365 FO parameters form.
+12178	| Telemetry logging with Insights for D365 FO	| - Support telemetry logging when users are added or removed from the system. User management telemetry logging can be switched on from the Insights for D365 FO parameters form. <br> - Support telemetry logging when changes are made to user access levels and roles.
+15790	| Insights for D365 FO parameters	| Added help text on the Insights for D365 FO parameters form to improve the user experience.
+
+
+# Previous Version(s)
+
+### Release 10.0.31.202306231
 
 #### Build 10.0.31.202306231
 Release date: 23 June 2023
@@ -58,8 +84,6 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 14556	| SQL Performance telemetry logging issues with multiple loggers	| Where there were more than one instances of AppInsights (loggers) setup, customMetrics for SQL Performance telemetry was not getting logged via Insights For D365FO to the telemetry logger. This has now been fixed.
-
-# Previous Version(s)
 
 ### Release 10.0.31.20230609
 

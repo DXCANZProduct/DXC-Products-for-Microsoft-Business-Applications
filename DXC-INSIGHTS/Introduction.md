@@ -46,7 +46,8 @@ With Azure Application Insights, organizations can use the data sent from Insigh
   
 - Reactively review application execution data to determine the cause of an incident
 Azure Application Insights provides other features including, but not limited to: <br>
-    -  [Live Metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/app/live-stream) – observe activity from your deployed application in real time.<br>
+    - [Alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview) – help you detect and address issues before users notice them by proactively notifying you when Azure Monitor data indicates there might be a problem with your infrastructure or application.<br>
+    - [Live Metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/app/live-stream) – observe activity from your deployed application in real time.<br>
     - [Availability](https://learn.microsoft.com/en-us/azure/azure-monitor/app/availability-overview) - also known as “Synthetic Transaction Monitoring”, probe your applications external endpoint(s) to test the overall availability and responsiveness over time.<br>
     - [GitHub or Azure DevOps integration](https://learn.microsoft.com/en-us/azure/azure-monitor/app/work-item-integration) – create [GitHub](https://learn.microsoft.com/en-us/training/paths/github-administration-products/) or [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/) work items in context of Application Insights data.<br>
     - [Usage](https://learn.microsoft.com/en-us/azure/azure-monitor/app/usage-overview) – understand which features are popular with users and how users interact and use your application.<br>
@@ -56,7 +57,7 @@ Azure Application Insights provides other features including, but not limited to
 ### Topics
 
 - [How to Set up Insights](../DXC-INSIGHTS/setup.md)
-- [Reoccurring monitoring](../DXC-INSIGHTS/Reoccurring_monitoring.md)
+- [Periodic monitoring](../DXC-INSIGHTS/Periodic-monitoring-configuration/Periodic_monitoring_configuration.md)
 - [Review and set up data monitoring](../DXC-INSIGHTS/Review_and_set_up_monitored_data.md)
 - [Dashboard for Application Insights](../DXC-INSIGHTS/Dashboards.md)
 - [FAQ](../DXC-INSIGHTS/FAQ.md)

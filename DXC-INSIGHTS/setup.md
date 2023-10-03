@@ -3,7 +3,7 @@
 
 title: Insights for D365 FO
 description: Insights for D365 FO - Setup
-author: Peter Musumeci
+author: Patrick Sharma
 manager: Kym Parker
 ms.date: 2023-06-07
 ms.topic: article
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form: DXCInsightsParameters
 audience: Application User/ Azure Administrators
 # ms.devlang: 
-ms.reviewer: Peter Musumeci
+ms.reviewer: Patrick Sharma
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: InsightsForD365FO
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Peter Musumeci
+ms.author: Patrick Sharma
 ms.search.validFrom: 2023-03-28
 ms.dyn365.ops.version: 10.0.32
 ---
@@ -53,8 +53,8 @@ On the 'Azure application insights parameters’ tab, create a new record and pa
 ![Azure_Application_insights_screen](IMAGES/Azure_Application_insights_screen.png)
 
 ### 5.	Enable the Periodic monitoring  
-Navigate to **System administrators > Setup > Insights for D365 FO > Insights for D365 FO parameters > Periodic monitoring** and enable the monitoring batch service.
+Navigate to **System administrators > Setup > Insights for D365 FO > Insights for D365 FO parameters > Periodic monitoring** and enable the periodic monitoring batch service.
 
-The Refresh frequency values refer to the range (min & max) in milliseconds between which the monitoring batch service will be run. The recommended values for these are 30,000ms and 300,000ms
+The 'Minimum refresh frequency' refer to the minimum recurrence time (in minutes) of the periodic monitoring batch job. The recommended minimum refresh frequency is atleast 5 minutes to reduce impact on performance.
 
 ![Periodic_monitoring](IMAGES/Periodic_monitoring.png)

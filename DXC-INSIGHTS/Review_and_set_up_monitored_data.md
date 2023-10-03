@@ -3,7 +3,7 @@
 
 title: Insights for D365 FO
 description: Insights for D365 FO - Monitoring Captured data
-author: Peter Musumeci
+author: Patrick Sharma
 manager: Kym Parker
 ms.date: 2023-06-07
 ms.topic: article
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form: 
 audience: Application User/ Azure Administrators
 # ms.devlang: 
-ms.reviewer: Peter Musumeci
+ms.reviewer: Patrick Sharma
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: InsightsForD365FO
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Peter Musumeci
+ms.author: Patrick Sharma
 ms.search.validFrom: 2023-03-28
 ms.dyn365.ops.version: 10.0.32
 ---

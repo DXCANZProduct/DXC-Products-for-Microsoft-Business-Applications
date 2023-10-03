@@ -1,1 +1,1 @@
-Repository for DXC Insights
+Repository for Insights for D365 FO
