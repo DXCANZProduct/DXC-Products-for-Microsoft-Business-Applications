@@ -43,25 +43,27 @@ Microsoft Dynamics 365 application	| 10.0.33	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
 Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
 Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
-Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
+Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
 
-### Release 
+### Release 10.0.34.20231004
 
-#### Build 
-Release date: October 2023
+#### Build 10.0.34.202310041 
+Release date: 4th October 2023
 
 <ins>Bug fixes</ins>
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-15941   | Attributes are set back to "default" during the manual update session  | When updating attributes against a released product Item creation would reset all attribute values back to the deafult value as set from the Item Creation Template.
-Combined with the introduction of a new field within the user iterface aimed at asistning users to view thier default settings.
+15941   | Attributes are set back to "default" during the manual update session | When updating attributes against a released product Item creation would reset all attribute values back to the default value that has been set as part of the Item Creation Template.
+This bug has been corrected and combined with the introduction of a new field within the user interface aimed at assisting users to view their active attribute values. See New Feature 16016
 
+<ins>New features</ins>
+Number	  | Name	          | Description
+:--       |:--              |:--
 
+16016    | Display Active product attribute| As well as the ability to update the attribute value from within the designer users now have visibility of what the active product attribute is.
 
-
-14639    | All attributes display system default status when running a manual update session| If attributes are included as part of a manual update session, the value of the attributes displayed are those as at the start of the session.   The exception is where attributes have default values as part of the template, then the  for template "default" value is now displayed in the update session.
-10869    | ProductionType does not update to value 'Formula'  | ProductionType can be updated to 'Formula' simulatneously as other fields on the item
+![New_attribute_Screen](IMAGES/New_attribute_Screen.png)
 
 # Previous version(s)
 
