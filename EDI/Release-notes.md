@@ -50,7 +50,7 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
-14981	| Document types	| 
+14981	| Document types	| When using the **Copy** button on **Setting profiles** and **Validation profiles**, limit the string size for **Name**. 
 
 **3PL module**
 
@@ -82,6 +82,14 @@ Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dyn
 
 #### Build  10.0.34.202307312
 Release date: 28 September 2023 <br>
+
+<ins>New features</ins>
+
+**Vendor module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+15272	| Vendor purchase order change	| Ability to limit when a staging record is created. <br> Staging record will only be created where all line's **Order line change type**'s **Don't send change** is set to _No_. <br> ![Order line change type group](RELEASE-NOTES-IMAGES/20231031_1.png "Order line change type group")  
 
 <ins>Bug fixes</ins>
 
