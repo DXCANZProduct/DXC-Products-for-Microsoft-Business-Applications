@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Setup - Document type Setting profiles - Shipment receipt - Voyage
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-13
+ms.date: 2023-10-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,6 +38,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 
 **Field**           |	**Description**	                          | **Options/Example**
 :-------            |:-------                                   |:----------
+**Create batch**    | If the 3PL’s batch doesn’t exist in D365, allow the batch to be created. Batch details from message will be used to create the D365 batch	| • **No** - Staging record will error if batch doesn't exist in D365 <br> • **Yes** - D365 batch created and used in Arrival journal
 **Auto post journal** |	When the Landed cost Voyage receipt is received and arrival journal created, the journal should also be automatically posted	| • **No** – Arrival journal is created but not posted <br> • **Yes** – Arrival journal is automatically posted
 
 ## Where used
