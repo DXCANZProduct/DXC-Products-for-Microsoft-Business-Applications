@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Shipment receipt - Voyage
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-15
+ms.date: 2023-10-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -191,3 +191,6 @@ The following EDI Line fields are available on the lines page. <br>
 **Batch number**            | Tracking dimensions – Batch number                                        | Arrival journal line > Batch number
 **Serial number**           | Tracking dimensions – Serial number	                                    | Arrival journal line > Serial number
 **Inventory status**        | Storage dimensions – Inventory status. Mapped value for [Inventory status](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md)  | Used for validation
+**Manufacturing date**      | If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch. Doesn't update an existing D365 batch.	| • Batches > Manufacturing date
+**Expiration date**         | If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch. Doesn't update an already D365 batch.	| • Batches > Expiration date
+
