@@ -51,6 +51,12 @@ Number	| Name		 | Description
 15272	| Vendor purchase order change - Order line change type group	| Ability to limit when a staging record is created. <br> Staging record will not be created where all line's **Order line change type**'s **Don't send change** is set to _Yes_. <br> ![Order line change type group](RELEASE-NOTES-IMAGES/20231031_1.png "Order line change type group")  
 15356	| Vendor purchase order change - Order line change type group	| **Order line change types** - Additional options added: <br> • **Price change** - Price change only to existing purchase order line. X12 example: PC <br> • **Quantity decrease** - Only quantity decrease to existing purchase order line. X12 example: QD <br> • **Quantity increase** - Only quantity increase to existing purchase order line. X12 example: QI <br> • **Reschedule** - Only requested delivery date change to existing purchase order line. X12 example: RS <br> • **No change** - No changes to existing purchase order line. X12 example: NC <br> <br> **Order line change types** - Existing option modified: <br> • **Changes to line items**  - Multiple changes to existing purchase order line, for example quantity and price. X12 example: CA
 
+**3PL module**
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+16009	| Shipment receipt - Voyage	| Ability for inbound document to create a D365 batch if it doesn't exist in D365. <br> • Setting profile: New option **Create batch** <br> • Staging lines: New fields **Manufacturing date** and **Expiration date** - to be used when creating the new batch in D365.
+
 <ins>Bug fixes</ins>
 
 **Core module**	- Applies to all modules
