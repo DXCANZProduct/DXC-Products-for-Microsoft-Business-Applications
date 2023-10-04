@@ -32,9 +32,9 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.34.20230622
+### Release 10.0.34.20231004
 
-DXC Item creation wizard 10.0.34 runs on the following Microsoft releases
+DXC Item creation wizard 10.0.34.20231004 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
@@ -54,10 +54,11 @@ Release date: 4th October 2023
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-15941   | Attributes are set back to "default" during the manual update session | When updating attributes against a released product Item creation would reset all attribute values back to the default value that has been set as part of the Item Creation Template.  This bug has been corrected and combined with the introduction of a new field within the user interface aimed at assisting users to view their active attribute values. See New Feature 16016
+15941   | Attributes are set back to "default" during the manual update session | When updating attributes against a released product Item creation would reset all attribute values back to the default value that has been set as part of the Item Creation Template.  Product attributes when loaded in the creation designer will only change if a value has been eneterd into the field.  See New Feature 16016 beloow for changes to the appearence of the attribye fields withgin teh creration designer when processing an update
 
 
 <ins>New features</ins>
+
 Number	  | Name	          | Description
 :--       |:--              |:--
 16016    | Display Active product attribute| As well as the ability to update the attribute value from within the designer users now have visibility of what the active product attribute value is.
