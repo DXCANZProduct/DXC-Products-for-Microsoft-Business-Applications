@@ -57,6 +57,12 @@ Number	| Name		 | Description
 :--	|:--		  	|:--	
 16009	| Shipment receipt - Voyage	| Ability for inbound document to create a D365 batch if it doesn't exist in D365. <br> • Setting profile: New option **Create batch** <br> • Staging lines: New fields **Manufacturing date** and **Expiration date** - to be used when creating the new batch in D365.
 
+**Freight forwarder landed cost module**
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+16030	| Voyage advice		| New outbound document that provides the ability to send **Purchase order details** to the Landed cost freight forwarder. <br> <br> **Setup**: Add Templates and Outbound files on **Document types** and assign to applicable **Freight forwarder landed cost Trading partner** <br> <br> **Processing**: <br> • Assign applicable **Shipping company** on the Purchase order header Landed cost FastTab. <br> Use **Send to EDI** on the Purchase order's Action Pane, Purchase tab, Landed cost heading <br> ![Purchase order](RELEASE-NOTES-IMAGES/20231031_2.png "Purchase order")
+
 <ins>Bug fixes</ins>
 
 **Core module**	- Applies to all modules
