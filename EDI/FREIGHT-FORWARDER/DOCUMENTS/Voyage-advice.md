@@ -5,7 +5,7 @@ title: EDI Freight forwarder
 description: EDI Freight forwarder Documents - Voyage creator
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-15
+ms.date: 2023-10-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: Action:SAB_EDIStagingFormRun_FFLCVoyageCreator, SAB_EDIFFLCShipPortTableMapping, SAB_EDIFFLCVendDlvModeMapping, SAB_EDIFFLCCustomsBrokerMapping, SAB_EDIFFLCShipContainerTypeMapping, SAB_EDIFFLCShipMeasurementUnitMapping 
+ms.search.form: Action:SAB_EDIStagingFormRun_FFLCVoyageAdvice
 audience: Application User
 # ms.devlang:
 ms.reviewer: jdutoit2
