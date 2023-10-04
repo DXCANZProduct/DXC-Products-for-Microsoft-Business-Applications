@@ -66,7 +66,7 @@ Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dyn
 > > - When set to No: Accounting date = Bank statement import date
 > > - When set to Yes: Accounting date = Booking date
 
-#### Build 10.0.35.202307313
+#### Build 10.0.35.2023073131
 Release date: 4 October 2023 <br> 
 
 <ins>Bug fixes</ins>
