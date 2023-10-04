@@ -54,16 +54,17 @@ Release date: 4th October 2023
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-15941   | Attributes are set back to "default" during the manual update session | When updating attributes against a released product Item creation would reset all attribute values back to the default value that has been set as part of the Item Creation Template.
-This bug has been corrected and combined with the introduction of a new field within the user interface aimed at assisting users to view their active attribute values. See New Feature 16016
+15941   | Attributes are set back to "default" during the manual update session | When updating attributes against a released product Item creation would reset all attribute values back to the default value that has been set as part of the Item Creation Template.  This bug has been corrected and combined with the introduction of a new field within the user interface aimed at assisting users to view their active attribute values. See New Feature 16016
+
 
 <ins>New features</ins>
 Number	  | Name	          | Description
 :--       |:--              |:--
-
-16016    | Display Active product attribute| As well as the ability to update the attribute value from within the designer users now have visibility of what the active product attribute is.
+16016    | Display Active product attribute| As well as the ability to update the attribute value from within the designer users now have visibility of what the active product attribute value is.
 
 ![New_attribute_Screen](IMAGES/New_attribute_Screen.png)
+
+There is no impact to the existing process to update product attributes or Template Creation.  The Change simply increases visibility from within the User Interface.
 
 # Previous version(s)
 
