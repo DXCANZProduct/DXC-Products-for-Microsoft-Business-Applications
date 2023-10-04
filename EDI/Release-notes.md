@@ -61,7 +61,7 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-16030	| Voyage advice		| New outbound document that provides the ability to send **Purchase order details** to the Landed cost freight forwarder. <br> <br> **Setup**: <br> Add Templates and Outbound files on **Document types** and assign to applicable **Freight forwarder landed cost Trading partner** <br> <br> **Processing**: <br> • Assign applicable **Shipping company** on the Purchase order header Landed cost FastTab. <br> Use **Send to EDI** on the Purchase order's Action Pane, Purchase tab, Landed cost heading <br> ![Purchase order](RELEASE-NOTES-IMAGES/20231031_2.png "Purchase order")
+16030	| Voyage advice		| New outbound document that provides the ability to send **Purchase order details** to the Landed cost freight forwarder. <br> <br> **Setup**: <br> Add Templates and Outbound files on **Document types** and assign to applicable **Freight forwarder landed cost Trading partner** <br> <br> **Processing**: <br> • Assign applicable **Shipping company** on the Purchase order header Landed cost FastTab. <br> • Use **Send to EDI** on the Purchase order's Action Pane, Purchase tab, Landed cost heading <br> ![Purchase order](RELEASE-NOTES-IMAGES/20231031_2.png "Purchase order")
 
 <ins>Bug fixes</ins>
 
