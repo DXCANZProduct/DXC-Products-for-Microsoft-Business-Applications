@@ -35,12 +35,6 @@ This document describes the features that are either new or changed in the relea
 
 ### Release 10.0.34.202310TBD
 
-# Current version
-
-Next release is planned for 31 October 2023.
-
-### Release 10.0.34.20230731
-
 <ins>New features</ins>
 
 **Core module**	- Applies to all modules
@@ -70,6 +64,12 @@ Number	| Name		 | Description
 :--	|:--		  	|:--	
 10637	| Voyage creator <br> Voyage tracking	| Voyages button enabled prior to processing of record
 12598	| Document types	| Description in Document types updated for new records for: <br> • Voyage creator <br> • Voyage tracking
+
+# Current version
+
+Next release is planned for 31 October 2023.
+
+### Release 10.0.34.20230731
 
 DXC EDI 10.0.34 runs on the following Microsoft releases
 
