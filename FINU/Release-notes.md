@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-09-15
+ms.date: 2023-10-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -65,6 +65,16 @@ Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dyn
 > > From **10.0.35** leaving the new field **Set the booking date as default accounting date for new transactions** set to _No_, doesn't use Finance utilities Posting date anymore. 
 > > - When set to No: Accounting date = Bank statement import date
 > > - When set to Yes: Accounting date = Booking date
+
+#### Build 10.0.35.202307313
+Release date: 4 October 2023 <br> 
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+16114		| ABN Validation	| Customer and Vendor ABN validation	| Decouple DXCABNValidation from DXCFinanceUtilities enabling companies to remove model DXCABNValidation.
+
 
 #### Build 10.0.35.2023073122
 Release date: 31 August 2023 <br> 
