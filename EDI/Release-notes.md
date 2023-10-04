@@ -48,7 +48,7 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-15272	| Vendor purchase order change	| Ability to limit when a staging record is created. <br> Staging record will only be created where all line's **Order line change type**'s **Don't send change** is set to _No_. <br> ![Order line change type group](RELEASE-NOTES-IMAGES/20231031_1.png "Order line change type group")  
+15272	| Vendor purchase order change	| Ability to limit when a staging record is created. <br> Staging record will not be created where all line's **Order line change type**'s **Don't send change** is set to _Yes_. <br> ![Order line change type group](RELEASE-NOTES-IMAGES/20231031_1.png "Order line change type group")  
 
 <ins>Bug fixes</ins>
 
