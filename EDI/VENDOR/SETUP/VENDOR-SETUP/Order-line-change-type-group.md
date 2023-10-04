@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor setup - Order line change type group
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-09
+ms.date: 2023-10-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,14 +40,20 @@ Order line change type codes are used to identify the type of line change sent t
 -	In the **Mappings** FastTab, select **Add** to create a new record
 -	Select the **Order line change type**
 -	Specify the vendor's value for the line change type in **EDI order change type**
+-	Set **Don't send change** - Ability to limit when a staging record is created. Vendor purchase order change staging record will not be created where all line's **Order line change type**'s **Don't send change** is set to _Yes_.
 
 The Order line change types are:
 
 **Order line change type** 	        | **Description of D365 purchase order line change**            | **X12 examples**
 :-----------------------------------|:-------------------------------------                         |:----------------:
 **Add additional item**             | New purchase order line was added to existing purchase order	| AI
-**Delete items**                    | Existing purchase order line’s Deliver remainder has been cancelled, or removed | DI
-**Changes to line items**           | All other purchase order lines are sent with this code which indicates the vendor must replace with current info | CA
+**Delete items**                    | Existing purchase order line’s Deliver remainder has been cancelled, or removed       | DI
+**Changes to line items**           | Multiple changes to existing purchase order line, for example quantity and price      | CA
+**Price change**                    | Price change only to existing purchase order line                                     | PC
+**Quantity decrease**               | Only quantity decrease to existing purchase order line                                | QD
+**Quantity increase**               | Only quantity increase to existing purchase order line                                | QI
+**Reschedule**                      | Only requested delivery date change to existing purchase order line                   | RS
+**No change**                       | No changes to existing purchase order line                                            | NC
 
 
 ## Where used
