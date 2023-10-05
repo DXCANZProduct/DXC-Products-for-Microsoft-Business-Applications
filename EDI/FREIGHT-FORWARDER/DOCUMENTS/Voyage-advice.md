@@ -102,63 +102,57 @@ The **Acknowledgement** tab is available on all outgoing documents staging pages
 ### Header fields
 The following EDI Header staging fields are available on the header page.
 
-**Field**	            | **Description**	                                    | **D365 header target**
-:---                    |:---                                                   |:---
-<ins>**Identification FastTab**</ins>   |
+**Field**	            | **Description**	                                    
+:---                    |:---                                                   
+<ins>**Identification FastTab**</ins>		|
 <ins>**Identification**</ins>		|
-**EDI number**          | EDI Staging table record id                           | 
-**Company account**     | Legal entity of the document
-**Company GLN**         | The company’s global location number is shown here.   | 
-**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created/added to Landed cost voyage(s). <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**EDI number**          | EDI Staging table record id                             
+**Company**             | Legal entity of the document
+**Company GLN**         | The company’s global location number is shown here      
+**Template Id**                 | The EDI template that will be used to create the outbound file               
+**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 <ins>**Reset status**</ins>		|
 **Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
 **Reset status date/time**  | Next date/time automatic reset status will run	
 **Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
 **Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
-
+<ins>**Overview**</ins>		|
+**Customer GLN**           | The Trading partner's GLN
+**Purchase order**         | The D365 purchase order number	
+**Purchase type**          | Reference type, for example Purchase order
+**Vendor account**         | Vendor assigned to the purchase order	
+**Vendor name**            | Vendor name	
+**Customer reference**     | Vendor’s order reference
+<ins>**Status**</ins>	|
+**Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
+**Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
+<ins>**General FastTab**</ins>  |
+<ins>**Details**</ins>  |
+**Vendor reference**        | Vendor’s order reference	
 
 ### Line fields
 The following EDI Line fields are available on the lines page. <br> 
 
-**Field**                   | **Description**                                                           | **D365 target**
-:---                        |:---                                                                       |:---
-**Line number**             | The line within the EDI table/file. Does not refer to Purchase or Transfer order line number.	
-**Booking reference**       | Freight forwarder’s reference for the voyage. Can also be used as reference for Voyage tracking document   | Voyage > Booking reference
-**Description**             | Voyage description	                                                    | Voyage > Description
-**Voyage**                  | Populated with target Voyage, once staging record has been completed and created a voyage/s	| Voyage > Voyage
-**Shipping container**      | Shipping container identification. Used to create a new Landed cost shipping container or add to existing container for the voyage  | Voyage lines > Shipping container
-**Shipping container type** | Used to populate to Shipping container type for the target Shipping container. Mapped values can be used by assigning [Shipping container types mapping](../SETUP/FF-SETUP/Shipping-container-types-mapping.md) to the Trading partner.	| Shipping container > Shipping container type
-**Ship date**               | Voyage and Shipping container’s ship date	                                | Voyage > Ship date <br> Shipping container > Ship date
-**From port**               | The originating **From port**. If Journey template is not provided, this field is used to determine Journey template	| Used in [calculation](#journey-template-calculation) for Voyage > Journey template
-**To port**                 | The final destination’s **To port**. If Journey template not provided, this field is used to determine Journey template	| Used in [calculation](#journey-template-calculation) for Voyage > Journey template
-**Mode of delivery**        | The mode of delivery between **From** and **To port**. If Journey template not provided, this field is used to determine Journey template	| Used in calculation for Voyage > Journey template
-**Number**                  | The D365 **Purchase** or **Transfer order number** for the voyage line	| Voyage lines > Number
-**Reference**               | Indicates the reference for Number. Options are: <br> • Purchase order <br> • Transfer	| Voyage lines > Reference
-**Bar code**                | The item identifier as sent by the trading partner. Used when Item Id source is: <br> • GTIN <br> • Barcode <br> Converted to internal item number by using **Item id source** on document settings.	| Voyage lines > Item number
-**Item number**             | The item identifier as sent by the trading partner. Used when Item Id source is: <br> • Our item number <br> • External item number <br> Converted to internal item number by using **Item id source** on document settings.	| Voyage lines > Item number
-**Size**                    | Product dimension - Size	                                            | Voyage lines > Size
-**Style**                   | Product dimension - Style	                                            | Voyage lines > Style
-**Version**                 | Product dimension - Version                                           | Voyage lines > Version
-**Configuration**           | Product dimension - Configuration	                                    | Voyage lines > Configuration
-**Color**                   | Product dimension - Colour	                                        | Voyage lines > Color
-**Quantity**                | Voyage line’s quantity	                                                | Voyage lines > Quantity
-**Unit**                    | Unit of measure of Voyage line quantity. <br> Mapped values can be used by assigning [UOM mapping](../../CORE/Setup/UOM-mapping.md) to the Trading partner.	    | Voyage line details > Reference > Unit
-**House air waybill/Bill of lading**    | HAWB for voyage line	                                        | Voyage > House air waybill/Bill of lading
-**Master air waybill/Bill of lading**   | MAWB for voyage line	                                        | Voyage > Master air waybill/Bill of lading
-**Folio**                   | Folio for voyage line. <br> If blank, the Landed cost Folio number sequence will be used to create a new folio | Voyage lines > Folio
-**Vendor account**          | Folio’s vendor account	                                                | Folios > Vendor account
-**Customs broker**          | Folio’s customer broker. <br> Mapped values can be used by assigning [Customs broker mapping](../SETUP/FF-SETUP/Customs-broker-mapping.md) to the Trading partner.	| Folios > Customs broker
-**Number of cartons**       | Voyage line and folio’s number of cartons	                                | Voyage lines > Number of cartons <br> Folios > Number of cartons
-**Measurement**             | Voyage measurement	                                                    | oyage > Measurement
-**Measurement unit**        | Voyage measurement unit. <br> Mapped values can be used by assigning [Shipping measurement unit mapping](../SETUP/FF-SETUP/Shipping-measurement-unit-mapping.md) to the Trading partner.	| Voyage > Measurement unit
-**Line measurement**        | Voyage line measurement	                                                | Voyage lines > Measurement
-**Line measurement unit**   | Voyage line measurement unit. <br> Mapped values can be used by assigning [Shipping measurement unit mapping](../SETUP/FF-SETUP/Shipping-measurement-unit-mapping.md) to the Trading partner.	 | Voyage lines > Measurement unit
-**Vessel**                  | Voyage vessel	                                                            | Voyage > Vessel
-**External Voyage Id**      | External voyage identification	                                        | Voyage > External voyage ID
-**Journey template**        | Journey template to be used for Landed cost Tracking. <br> If blank, the following will be used to determine the applicable Journey template: <br> • From port <br> •	To port <br> •	Mode of delivery    | Voyage > Journey template
-**Departure date**          | Departure date for the voyage	                                            | Voyage > Departure date
-**ETA at shipping port**    | Estimated arrival at shipping port	                                    | Voyage > ETA at shipping port
-**Shipment estimated delivery date**    | Estimated delivery date	                                    | Voyage > Estimated delivery date <br> Container > Estimated delivery date - if **Container estimated delivery date** blank
-**Container estimated delivery date**	| Estimated delivery date for container. <br> If blank, **Shipment estimated delivery date** will be used	| Container > Estimated delivery date
-**Shipping company seal number**    | Container’s shipping company seal number	                        | Container > Shipping company seal number
+**Field**                   | **Description**                                                           
+:---                        |:---                                                                       
+**Line number**             | The line within the EDI table/file	                    
+**Item number**             | The D365 item number
+**Bar code**                | Item’s barcode	
+**GTIN**                    | Item’s GTIN	
+**External item number**    | Purchase order's external item number	
+**Name**                    | Purchase order line text	
+**Configuration**           | Product dimension - Configuration	
+**Color**                   | Product dimension - Colour	
+**Size**                    | Product dimension - Size	
+**Style**                   | Product dimension - Style	
+**Version**                 | Product dimension - Version
+**Deliver remainder**       | Purchase line's Deliver remainder quantity                            
+**Value**                   | Unit of measure of Deliver remainder
+**Delivery date**           | Requested delivery date for the purchase order line
+**Confirmed delivery date** | Confirmed delivery date for the purchase order line
+**Delivery type**           | Delivery type for the purchase order line, example: Stock
+**Country/region of origin**    | Item's Country/region of origin
+**State of origin**         | Item's State of origin
+**Overdelivery**            | Allowed over delivery % on the purchase order line
+**Unit price**              | Unit price for the item on the purchase order line
 
