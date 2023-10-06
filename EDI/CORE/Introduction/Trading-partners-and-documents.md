@@ -5,7 +5,7 @@ title: EDI Trading partners
 description: Introduction to EDI trading partners
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-12
+ms.date: 2023-10-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -92,6 +92,8 @@ EDI contains the following documents pertaining to 3PL Trading partners.
 ## Freight forwarder Landed cost EDI documents (Freight forwarder license only)
 
 EDI contains the following documents pertaining to Freight forwarder Landed cost Trading partners.
+- Outbound
+	- Voyage advice - Allows D365 to send a Purchase order document to the Freight forwarder.
 - Inbound
 	- Voyage creator – Creates Landed cost voyage/s with relevant auto costs and tracking legs and update Purchase orders and/or Transfers orders with shipment details.
 	- Voyage tracking – Updates tracking on Landed cost voyage
