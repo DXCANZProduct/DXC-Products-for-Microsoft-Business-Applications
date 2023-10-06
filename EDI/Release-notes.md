@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-10-03
+ms.date: 2023-10-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,6 +43,11 @@ Number	| Name		 | Description
 :--	|:--		  	|:--
 12020	| Outbound files	| Trading partner button on Outbound files
 
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+16125	| Customer purchase order	| New Setting profile option **Suppress add new address**. Not applicable to staging records that have **Store code** populated, only applicable where the staging header's address fields are used to create the new sales order. When the staging header's address can't be found against the customer and **Suppress add new address** is set to _Yes_, a new address will not automatically be added to the customer and used on the sales order - the staging record will error instead.
 
 **Vendor module**	
 
