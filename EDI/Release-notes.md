@@ -83,6 +83,7 @@ Number	| Name		 | Description
 :--	|:--		  	|:--	
 10637	| Voyage creator <br> Voyage tracking	| Voyages button enabled prior to processing of record
 12598	| Document types	| Description in Document types updated for new records for: <br> • Voyage creator <br> • Voyage tracking
+16055	| Voyage tracking	| 'SAB_EDIStagingHistory::logHistory has been incorrectly called' error when processing staging record when 'Voyage id source' set to 'External id'
 
 # Current version
 
