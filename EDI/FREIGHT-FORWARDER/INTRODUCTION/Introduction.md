@@ -5,7 +5,7 @@ title: EDI Freight forwarder
 description: Introduction to EDI Freight forwarder for Landed cost
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-17
+ms.date: 2023-10-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
