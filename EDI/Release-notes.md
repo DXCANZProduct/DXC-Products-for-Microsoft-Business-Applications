@@ -61,6 +61,7 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 16009	| Shipment receipt - Voyage	| Ability for inbound document to create a D365 batch if it doesn't exist in D365. <br> • Setting profile: New option **Create batch** <br> • Staging lines: New fields **Manufacturing date** and **Expiration date** - to be used when creating the new batch in D365.
+16128	| Shipment advice - Voyage	| Additional fields add to staging and template lines: <br> • **Line number** - Staging line number <br> • **Line number document** - Source document's line number <br> • **Order** - Source Purchase order or Transfer order number
 
 **Freight forwarder landed cost module**
 
