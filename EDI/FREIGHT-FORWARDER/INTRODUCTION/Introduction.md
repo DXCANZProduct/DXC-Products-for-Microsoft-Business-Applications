@@ -36,13 +36,14 @@ This section will provide a quick overview of the Freight forwarder for Landed c
 EDI contains the following documents pertaining to all Trading partners.
 - **Inbound**
 	- **Functional Acknowledgement** – Receive functional acknowledgement that outbound document has been received by Trading partner.
-	- **Voyage advice** - Allows D365 to send a Purchase order document to the Freight forwarder.
 - **Outbound**
 	- **Functional Acknowledgement** – Send functional acknowledgement that inbound document has been received.
 
 ### Freight forwarder EDI documents (Freight forwarder license only)
 
 EDI contains the following documents pertaining to Freight forwarder Trading partners.
+- **Outbound**
+	- **Voyage advice** - Allows D365 to send a Purchase order document to the Freight forwarder.
 - **Inbound** 
 	- **Voyage creator**: Allows Freight forwarder to send voyage details in order to create a Landed cost Voyage
 	- **Voyage tracking**: Allows Freight forwarder to send tracking updates for an existing Landed cost Voyage
