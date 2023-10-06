@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Shipment advice - Voyage
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-23
+ms.date: 2023-10-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -139,10 +139,14 @@ The following EDI Line staging fields are available on the lines page.
 
 **Field**	                | **Description**	                                        | **D365 source**
 :---                        |:---                                                       |:---
+**Line number document**    | The line within the D365 Purchase order or Transfer order    | Purchase order lines > Line number <br> Transfer order lines > Line number
+**Line number**             | The line within the EDI table/file                        | 
+**Order**                   | The D365 Purchase or Transfer order number for the voyage line    | Voyage line > Purchase order or Transfer order number
 **Item number**             | The D365 item number                                      | Voyage lines > Item Number
 **Bar code**                | D365 item number’s Bar code (based on unit)	            | Released products > Bar codes
 **GTIN**                    | D365 item number’s GTIN (based on unit)	                | Released products > GTIN codes
 **Description**             | D365 item number’s Description	                        | Released products > Product name
+**Order**                   | Purchase order
 **Lot Id**                  | Lot id for the voyage line	                            | Voyage lines > Lot id
 **Quantity**                | Voyage line’s quantity	                                | Voyage lines > Quantity
 **Unit**                    | Voyage line quantity’s unit	                            | Released products > Inventory unit
