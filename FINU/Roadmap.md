@@ -37,11 +37,9 @@ This page describes the features planned for future releases and planned release
 
 Release			    | ETA
 :--			        |:--
-
+2023-11          | 30 November 2023
 
 ## Roadmap
-#### Accounts payable
-- EFT Payment file name placeholders
 
 #### Accounts receivable
 - Option to exclude invoices from automatic settlement based on their Collection status, for example disputed.
