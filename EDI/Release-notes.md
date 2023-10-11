@@ -49,7 +49,7 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 16125	| Customer purchase order	| New Setting profile option **Suppress add new address**. Not applicable to staging records that have **Store code** populated, only applicable where the staging header's address fields are used to create the new sales order. When the staging header's address can't be found against the customer and **Suppress add new address** is set to _Yes_, a new address will not automatically be added to the customer and used on the sales order - the staging record will error instead.
-16292	| Customer purchase order	| Increased Buyer code EDT length from 20 to 60 characters.
+16292	| Customer purchase order	| Increased **Buyer code** EDT length from 20 to 60 characters.
 
 
 **Vendor module**	
