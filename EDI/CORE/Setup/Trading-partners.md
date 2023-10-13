@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Setup Trading partners
 author: jdutoi2
 manager: Kym Parker
-ms.date: 2022-11-08
+ms.date: 2023-10-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -139,7 +139,7 @@ The Incoming documents FastTab defines the incoming EDI document types that have
 **Template**                      |	[Document type template](DocumentTypes/File-templates.md) that has been previously defined.
 **Setting profile**               |	[Settings profile](DocumentTypes/Setting-profiles.md) that has been previously defined. Note: View details displays the settings profiles in read only.
 **Validation profile**            |	[Validation profile](DocumentTypes/Validation-profiles.md) that has been previously defined.
-**Search mask**                   |	A file mask is used to match files in the document type’s defined directories. <br> The setup of the directory (i.e. FTP site) configures whether the file mask is matched at the start of the file name or at the end (For further information, see Site Paths in [Connection setup](Connection-setup.md)). See [examples for Search mask](#examples-for-search-mask) below.
+**Search mask**                   |	A file mask is used to match files in the document type’s defined directories. <br> The setup of the directory (i.e. FTP site) configures whether the file mask is matched at the start of the file name or at the end (For further information, see Site Paths in [Connection setup](Connection-setup.md)). See [examples for Search mask](#examples-for-search-mask) below. 
 **Connection profile**	          | Ability to override the default [EDI connection profile](Connection-setup.md) on document level. If blank, the trading partner’s Connection profile will be used.
 **Cleanup profile**               |	Ability to override the default [Cleanup profile](Cleanup-profile.md) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](EDI-shared-parameters.md) will be used.
 **Reset status profile**          |	Ability to override the default [Reset status](Reset-status.md) on document level. If blank, [EDI shared parameters](EDI-shared-parameters.md) will be used.
@@ -159,7 +159,8 @@ The Incoming documents FastTab defines the incoming EDI document types that have
   - Will match file: 20170623_**SalesInvoice.xml** <br>
   - Won’t match file: 20170623_SalesInvoice.txt <br>
 
-Additionally, regular expressions can be used for the file mask <br>
+Additionally, [regular expressions](https://regex101.com/) can be used for the file mask <br>
+
 - Example 3: <br>
   - File mask: *US-001 <br>
   - The following file names will be matched:
@@ -174,3 +175,5 @@ Additionally, regular expressions can be used for the file mask <br>
     - **PO**6796**CustUs-001.xml** <br>
 
   Note: ^ - String Anchor ‘Starts with’ and & - String Anchor ‘Ends with’
+
+
