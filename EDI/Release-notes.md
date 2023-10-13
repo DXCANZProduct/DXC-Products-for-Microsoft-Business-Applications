@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-10-11
+ms.date: 2023-10-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,6 +42,7 @@ This document describes the features that are either new or changed in the relea
 Number	| Name		 | Description
 :--	|:--		  	|:--
 12020	| Outbound files	| Trading partner button on Outbound files
+16326	| Trading partners	| Increased Trading partner's **Search mask** length from 30 to 60 characters
 
 
 **Customer module**	
