@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-10-13
+ms.date: 2023-10-17
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -81,11 +81,6 @@ Number	| Name		 | Description
 :--	|:--		  	|:--
 14981	| Document types	| When using the **Copy** button on **Setting profiles** and **Validation profiles**, limit the string size for **Name**. 
 
-
-**Customer module**	
-
-Number	| Name		 | Description
-:--	|:--		  	|:--	
 
 
 **3PL module**
