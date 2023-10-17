@@ -81,7 +81,12 @@ Number	| Name		 | Description
 :--	|:--		  	|:--
 14981	| Document types	| When using the **Copy** button on **Setting profiles** and **Validation profiles**, limit the string size for **Name**. 
 
+**Customer module**	
 
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+16289	| Customer advanced shipping notice	| Updates to Intercompany ASN as there were still settings used from intercompany trading partner (shipping company) instead of customer the ASN will be sent to (originating EDI customer). The intercompany ASN now doesn't require the shipping company setup as customer trading partner.
+16134	| Customer advanced shipping notice	| Only applies to 'Auto assign consignment note number' document type set to _Yes_: <br> • Use sales order header's delivery address when creating/assigning consolidated packing slip <br> <br> Only applies to 'Auto assign consignment note number' document type set to _Yes_ and 'ASN strategy set to _Consolidated packing slips_: <br> • If a packing slip should be sent to EDI, for example 'Send only for EDI orders' is _Yes_ and the order is EDI, but an existing open Consolidated packing slip exists for a packing slip(s) that shouldn't be sent to EDI (for example order isn't EDI), the packing slip will not be added to the consignment that can't be sent to EDI.
 
 **3PL module**
 
