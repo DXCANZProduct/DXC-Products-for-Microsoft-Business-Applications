@@ -39,7 +39,7 @@ Planned release date: 30 November 2023
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-15488		| Accounts receivable	| Interest notes - Due date	| New field called **Use customer payment terms** added to **Accounts receivable parameters**  and **Credit and collections parameters** (Collections tab). <br> If set to _Yes_, the customer's payment terms will be used to determine Due date for new Interest notes.
+15488		| Accounts receivable	| Interest notes - Due date	| New field called **Use customer payment terms** added to **Accounts receivable parameters**  and **Credit and collections parameters** (Collections tab). <br> If set to _Yes_, the customer's payment terms will be used to determine Due date when posting Interest notes. <br> [guide](Setup/ACCOUNTS-RECEIVABLE/Customer-parameters.md)
 
 
 # Current version
