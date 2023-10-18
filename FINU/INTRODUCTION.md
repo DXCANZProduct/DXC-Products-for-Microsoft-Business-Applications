@@ -48,7 +48,6 @@ The DXC Finance Utilities module provides enhanced functionalities to Microsoft 
     -   Formatted Vendor Payment Advice
     -   ABN lookup and validation (Australia only)
     -   Save GER to secure location, for example FTP/FTPS, SFTP or Azure blob. Encryption option included.
-    -   Vendor bank account changes workflow
 - **Accounts receivable**
     -   Customer bank account changes workflow
     -   ABN lookup and validation (Australia only)
