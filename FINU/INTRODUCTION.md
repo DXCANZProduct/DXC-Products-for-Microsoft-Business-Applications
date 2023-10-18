@@ -53,6 +53,7 @@ The DXC Finance Utilities module provides enhanced functionalities to Microsoft 
     -   Customer bank account changes workflow
     -   ABN lookup and validation (Australia only)
     -   Customer references
+    -   Option to use Customer's payment terms for Due date on Interest notes
     -   Import customer remittance files (additional licensed feature included in AR Utilities)
 - **Budgeting**
     -   Budget import with separate column for each period
@@ -151,6 +152,9 @@ Ability to set multiple references against customers. These references can be us
 
 Detail:
 - [Customer reference setup](Setup/ACCOUNTS-RECEIVABLE/Customer-reference.md)
+
+## Accounts receivable - Interest notes Due date
+Ability to use Customer's payment terms on new Interest notes. 
 
 ## Accounts receivable - Import customer remittance
 > Note: Additional licensed feature included in AR Utilities
