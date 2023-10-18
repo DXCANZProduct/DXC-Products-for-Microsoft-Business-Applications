@@ -36,9 +36,7 @@ To open the page, navigate to **Collections** tab on:
 - Credit and collections > Setup Credit and collections parameters
 
 Set **Use customer payment terms** to _Yes_, to use the Customer's Payment terms when posting Interest notes.
-
-<br> <br> 
-
+<br>
 **Data entity**: Customer parameters
 
 ### Where used
