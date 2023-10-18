@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Customer parameters setup
-The fields as described in the following subsections are available to control the functionality for using the Customer's payment terms for new Interest note's Due date.
+The fields as described in the following subsections are available to control additional functionality provided by Finance utilities.
 
 ## Use customer payment terms
 
@@ -36,6 +36,8 @@ To open the page, navigate to **Collections** tab on:
 - Credit and collections > Setup Credit and collections parameters
 
 Set **Use customer payment terms** to _Yes_, to use the Customer's Payment terms when posting Interest notes.
+
+<br> <br> 
 
 **Data entity**: Customer parameters
 
