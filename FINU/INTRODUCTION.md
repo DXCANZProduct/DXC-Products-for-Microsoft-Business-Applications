@@ -153,7 +153,9 @@ Detail:
 - [Customer reference setup](Setup/ACCOUNTS-RECEIVABLE/Customer-reference.md)
 
 ## Accounts receivable - Interest notes Due date
-Ability to use Customer's payment terms on new Interest notes. 
+Ability to use Customer's payment terms when posting Interest notes. 
+
+- [Customer parameters setup](Setup/ACCOUNTS-RECEIVABLE/Customer-parameters.md)
 
 ## Accounts receivable - Import customer remittance
 > Note: Additional licensed feature included in AR Utilities
