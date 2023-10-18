@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-10-04
+ms.date: 2023-10-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,6 +28,19 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Release notes
 This document describes the features that are either new or changed in the release version mentioned.
+
+# Next version
+
+### Release 10.0.36.202311TBD
+
+Planned release date: 30 November 2023
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+15488		| Accounts receivable	| Interest notes - Due date	| New field called **Use customer payment terms** added to **Accounts receivable parameters**  and **Credit and collections parameters** (Collections tab). <br> If set to _Yes_, the customer's payment terms will be used to determine Due date for new Interest notes.
+
 
 # Current version
 
