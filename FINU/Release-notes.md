@@ -43,6 +43,13 @@ Number	  	| Module	| Functionality	  	| Description
 16039		| Cash and bank management	| Bank statement import	| **Run in the background** functionality added to **Import bank statements** <br> ![Import bank statements](Images/ReleaseNotes_20231130_1.png "Import bank statements") 
 
 
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+16069		| Unit tests	| 	| Fix 10.0.37 build issues for Finance utilities Unit tests
+16338		| Cash and bank management	| Bank Mark as new transactions | Additions to 15578. Applicable to when a bank statement line is marked as new and offset to an **intercompany bank account**. <br> Previously only supported when bank statement is posted via 'Mark as reconciled' (Auto-post bank statement is set to _Yes_), and feature 'Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions' disabled. <br> Now supports the feature enabled and posting the bank statement from the Bank statement page (Auto-post bank statement is set to _No_) as well.
+
 # Current version
 
 ### Release 10.0.35.20230731
