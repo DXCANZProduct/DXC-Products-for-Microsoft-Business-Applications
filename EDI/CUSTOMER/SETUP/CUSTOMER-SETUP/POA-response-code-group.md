@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer setup - POA responde code group
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-09-30
+ms.date: 2023-10-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,25 +39,30 @@ POA Response codes are used to identify the status of information used in a Purc
 - In the **Mappings** FastTab, select **Add** to create a new record
 - Specify the **POA code** to be used for each response code. The POA response codes are:
 
-**Response code** 	              | **Description**                       | **Example**
-:-------------------------------- |:------------------------------------- |:-------------------------------------
+**Response code** 	              | **Description**                       | **Example**          | **Target POA field**
+:-------------------------------- |:------------------------------------- |:---------------------|:------------------
 <ins>**Header response codes**</ins>    |   |
-**Header – accept**               |	Order accepted	                      | A
-**Header – accepted with reserve**|	Order accepted with reserve	          | AR
-**Header – change**               |	Change to the Order header's dates    | C	
-**Header – not accepted**         |	Order not accepted	                  | NA
+**Header – accept**               |	Order accepted	                      | A                    | POA header - POA code
+**Header – accepted with reserve**|	Order accepted with reserve	          | AR                   | POA header - POA code
+**Header – change**               |	Change to the Order header's dates    | C	                 | POA header - POA code
+**Header – not accepted**         |	Order not accepted	                  | NA                   | POA header - POA code
 <ins>**Line response codes**</ins>      |   |
-**Line price – accept**           |	Item price accepted                   |	PO
-**Line price – advise**           |	Advise of a price difference	        | PA
-**Line item – accept**            |	Item quantity accepted	              | IA
-**Line item – out of stock**      |	Advise of stock shortage	            | IS
-**Line item – withdrawn**         |	Advise item is no longer available	  | LW
-**Line shipment – partial**       |	Advise of partial shipment	          | SP
-**Line shipment – full**          |	Advise of full shipment               |	SF
-**Line item – pack accept**       |	Item pack accepted	                  | LPA
-**Line item – pack difference**   |	Advise of pack difference	            | PD
-**Line item – inner accept**      |	Item inner accepted	                  | LIA
-**Line item – inner difference**  |	Advise of inner difference	          | ID
+**Line price – accept**           |	Item price accepted                   |	PO                   | POA lines - POA code item
+**Line price – advise**           |	Advise of a price difference	        | PA                 | POA lines - POA code item
+**Line item – accept**            |	Item quantity accepted	              | IQA                  | POA lines - POA code item
+**Line item – out of stock**      |	Advise of stock shortage	            | IS                 | POA lines - POA code item
+**Line item – withdrawn**         |	Advise item is no longer available	  | LW                   | POA lines - POA code item
+**Line item – pack accept**       |	Item pack accepted	                  | LPA                  | POA lines - POA code item
+**Line item – pack difference**   |	Advise of pack difference	            | PD                 | POA lines - POA code item
+**Line item – inner accept**      |	Item inner accepted	                  | LIA                  | POA lines - POA code item
+**Line item – inner difference**  |	Advise of inner difference	          | ID                   | POA lines - POA code item
+**Line shipment – partial**       |	Advise of partial shipment	          | SP                   | POA lines - POA code shipment
+**Line shipment – full**          |	Advise of full shipment               |	SF                   | POA lines - POA code shipment
+**Line item - accept**            | Item accepted                         | IA                   | POA lines - POA code line
+**Line item - advise**            | Advise of line                        | IC                   | POA lines - POA code line
+**Line item - reject**            | Item rejected                         | IR                   | POA lines - POA code line
+
+
 
 - In the **Allow auto trigger** field, select if the POA response can be triggered by **Auto set response codes**. <br> The following response codes can only be manually triggered and thus their **Allow auto trigger** is set to _No_ and disabled:
     - Header – not accepted
@@ -90,12 +95,33 @@ This is applicable to Response codes where **Allow auto trigger** is set to Yes.
 - **Line item - inner accept**: Acknowledged **Inner** = Customer's EDI purchase order line's **Inner**.
 - **Line item - inner difference**: Acknowledged **Inner** <> Customer's EDI purchase order line's **Inner**. Customer purchase order acknowledgement document setting **Inner type** is set to use **System inner**, and sales order line's pack isn't the same as the Customer's EDI purchase order line's pack.
 
+#### Line
+- **Line - accept**: If all the applicable line codes are accept
+- **Line - advise**: If all the applicable line codes are combination of advise and reject
+- **Line - reject**: If all the applicable line codes are reject
+
+Response code is only applicable if mapped.
+
+The following responses are deemed Accept:
+- Line price - accept
+- Line item - accept
+- Line item - pack accept
+- Line item - inner accept
+- Response code not mapped
+
+The following responses are deemed Reject:
+- Line price - advise
+- Line item - out of stock
+- Line item - withdrawn
+- Line item - pack difference
+- Line item - inner difference
+
 ### Header POA response codes
 - **Header - accept**: When all of below applies <br>
     - Header acknowledged dates = Customer's dates
     - Line price - accept
     - Line item - accept
-     - Line item - pack accept
+    - Line item - pack accept
     - Line item - inner accept
 - **Header - accepted with reserve**: <br>
     -  Header acknowledged dates = Customer's dates, and any of below are not accept:
