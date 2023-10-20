@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer purchase order acknowledgement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-07-24
+ms.date: 2023-10-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -385,6 +385,7 @@ The following EDI Line staging fields are available on the lines page.
 **Version**             |   Product dimension - Version                               | Sales line > Product dimension
 **POA code shipment**   |	Purchase order acknowledgement code for shipment of the item	| Sales line > EDI > POA response > Customer code > Shipment
 **POA code item**       |	Purchase order acknowledgement code for the item <br> Combination of all line item POA codes. <br> Example: PO-IA-PD-LIA <br> PO: Line price - accept <br> IA: Line item - accept <br> PD: Line item - pack difference <br> LIA: Line item - inner accept	<br> Field delimiter: - <br> Note: Line item status is a combination of the following: <br> Price code + Qty code + Pack code + Inner Code. The Customer purchase order acknowledgement document setting **Field delimiter** (can also be blank) is used inbetween the POA codes.              | Sales line > EDI > POA response > Customer code > Price and Quantity
+**POA code line**        | "Summarised" field with either of the following results (if response codes are mapped): <br> • Line - accept: If all the applicable line codes are accept <br> • Line - reject: If all the applicable line codes are reject <br> • Line - advise: If all the applicable line codes are combination of advise and reject    | Sales line > EDI > POA response > Customer code > Line
 **Currency**            |	The currency of the order	                            | Sales order > Currency
 **Unit price excl. tax**  |	The net price per unit excl. tax	                  | Sales line > Price excl. tax
 **Unit price incl. tax**  |	The net price per unit incl. tax	                  | Sales line > Price incl. tax
