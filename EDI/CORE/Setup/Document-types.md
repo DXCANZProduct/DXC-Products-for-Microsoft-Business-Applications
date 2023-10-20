@@ -45,23 +45,23 @@ Document type setup are split into:
 4. [Outbound file names](DocumentTypes/Outbound-filenames.md): applicable to all outbound document types
 5. [Staging metadata](DocumentTypes/Field-metadata.md): optionally update staging form's display name and help text per field
 
-The following Document types are available and depends on licensing and enabled features:
+The following Document types are available per module and depends on licensing and enabled features:
 - **Core**
   - [Functional acknowledgement inbound](../Documents/Functional-acknowledgement-inbound.md)
   - [Functional acknowledgement outbound](../Documents/Functional-acknowledgement-outbound.md)
-- **Customer**
+- **Customer module**
   - [Customer purchase order](../../CUSTOMER/DOCUMENTS/Customer-purchase-order.md) (inbound)
   - [Customer purchase order change](../../CUSTOMER/DOCUMENTS/Customer-purchase-order-change.md) (inbound)
   - [Customer purchase order acknowledgement](../../CUSTOMER/DOCUMENTS/Customer-purchase-order-acknowledgement.md) (outbound)
   - [Customer advanced shipping notice](../../CUSTOMER/DOCUMENTS/Customer-advanced-shipping-notice.md) (outbound)
   - [Sales invoice](../../CUSTOMER/DOCUMENTS/Sales-invoice.md) (outbound)
-- **Vendor**
+- **Vendor module**
   - [Vendor purchase order](../../VENDOR/DOCUMENTS/Vendor-purchase-order.md) (outbound)
   - [Vendor purchase order change](../../VENDOR/DOCUMENTS/Vendor-purchase-order-change.md) (outbound)
   - [Vendor purchase order acknowledgement](../../VENDOR/DOCUMENTS/Vendor-purchase-order-acknowledgement.md) (inbound)
   - [Vendor advanced shipping noticed](../../VENDOR/DOCUMENTS/Vendor-advanced-shipping-notice.md) (inbound)
   - [Purchase inoice](../../VENDOR/DOCUMENTS/Purchase-invoice.md) (inbound)
-- **3PL**
+- **3PL module**
   - [Picking list](../../3PL/DOCUMENTS/Picking-list.md) (outbound)
   - [Picking list registration](../../3PL/DOCUMENTS/Picking-list-registration.md) (inbound)
   - [Shipment advice - Purchase order](../../3PL/DOCUMENTS/Shipment-advice-Purchase-order.md) (outbound)
@@ -76,6 +76,8 @@ The following Document types are available and depends on licensing and enabled 
   - [Inventory adjustment - Counting](../../3PL/DOCUMENTS/Inventory-adjustment-Counting.md) (inbound)
   - [Inventory adjustment - Reconciliation](../../3PL/DOCUMENTS/Inventory-adjustment-Reconciliation.md) (inbound)
   - [Inventory adjustment - Movement](../../3PL/DOCUMENTS/Inventory-adjustment-Movement.md) (inbound)
-- **Freight forwarder landed cost**
+  - [Product master](../../3PL/DOCUMENTS/Product-master.md) (outbound)
+- **Freight forwarder landed cost module**
+  - [Voyage advice](../../FREIGHT-FORWARDER/DOCUMENTS/Voyage-advice.md) (outbound)
   - [Voyage creator](../../FREIGHT-FORWARDER/DOCUMENTS/Voyage-creator.md) (inbound)
   - [Voyage tracking](../../FREIGHT-FORWARDER/DOCUMENTS/Voyage-tracking.md) (inbound)
