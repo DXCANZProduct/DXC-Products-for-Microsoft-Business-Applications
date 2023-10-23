@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer purchase order
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-14
+ms.date: 2023-10-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -101,7 +101,8 @@ At this step the issues are usually around the file not matching the template.
 Example error for file not matching template: 'Segment '<xml' not found in EDI template mapping'
 
 ## Step 3 - Staging to target
-If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and no D365 target created i.e. sales order, sales agreement or release order is created.
+If the processing of **Staging to target** errors, the staging record's **Staging to target status** will be set to _Error_ and no D365 target created i.e. sales order, sales agreement or release order is created. <br>
+If setting profile **Skip error lines** are set to _Yes_, the lines that can't be created as sales lines (example item is stopped for sales, or item can't be found) will be skipped and only sales lines created for the non error lines.
 
 ### Staging header validation - Sales order
 There are various **Order types** that can be processed via the purchase order document. These order types can be specified in **Trading partners** Options and will change the way the record is processed. <br>
@@ -287,7 +288,5 @@ The following EDI Line fields are available on the lines page.
 **Requested receipt date**  | The requested receipt date (delivery window) from the EDI line record is shown here.	| Sales line > Delivery > Requested receipt date <br> If staging blank will be populated by Sales order Header
 **Comments**                | Line comments for the order line.                                            | Sales line > EDI > Comments
 **Item description**        | Item description for the order line.                                         | Sales line > EDI > Item description
-**Customer requisition**    | Customer requisition for the order line.                                     | Sales line > Customer requisition
-**Customer reference**      | Customer reference for the order line.                                       | Sales line > Customer reference
-
+**Created**                 | Added to staging lines to view which lines were not created as sales order lines with **Skip order lines** functionality |
 
