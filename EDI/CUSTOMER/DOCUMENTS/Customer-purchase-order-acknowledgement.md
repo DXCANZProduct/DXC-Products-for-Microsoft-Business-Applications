@@ -370,30 +370,32 @@ The following EDI Header staging fields are available on the header page.
 **PO version number**       | The PO version number from the EDI record.	                                | Sales order > EDI > Original version number
 
 ### Line fields
-The following EDI Line staging fields are available on the lines page.
+The following EDI Line staging fields are available on the lines page. <br>
+The ** fields will be populated where **Customer purchase order** setting profile option **Skip error lines** is set to _Yes_ and the staging line couldn't create a sales line.
 
 **Field**	              | **Description**	                                      | **Source D365 field**
 :---                    |:---                                                   |:---
-**Store code**          |	The store code from the EDI order is shown here.	    | Sales line > EDI > Store code
-**Item number**         |	Item number from the sales order	                    | Sales line > Item number
+**Store code**         |	The store code from the EDI order is shown here.	    | Sales line > EDI > Store code
+**Item number**        |	Item number from the sales order	                    | Sales line > Item number
 **Barcode**             |	Barcode for the item number from the sales order	    | Sales line > Barcode
 **External item number**  |	The external item id specified for this customer/item combination. This is the part number for this item in the Customer’s system.	| Sales line> General > External references > External
+**EDI item number**  **    | Item number from the Customer purchase order staging line    | Customer purchase order lines > Item number / Bar code
 **Configuration**       |	Product dimension - Configuration	                      | Sales line > Product dimension
 **Colour**	            |   Product dimension - Colour	                              | Sales line > Product dimension
 **Size**                |	Product dimension - Size	                              | Sales line > Product dimension
 **Style**               |	Product dimension - Style	                              | Sales line > Product dimension
 **Version**             |   Product dimension - Version                               | Sales line > Product dimension
 **POA code shipment**   |	Purchase order acknowledgement code for shipment of the item	| Sales line > EDI > POA response > Customer code > Shipment
-**POA code item**       |	Purchase order acknowledgement code for the item. <br> If the line was succesfully created as sales line, this field is the combination of all line item POA codes. <br> Example: PO-IA-PD-LIA <br> PO: Line price - accept <br> IA: Line item - accept <br> PD: Line item - pack difference <br> LIA: Line item - inner accept	<br> Field delimiter: - <br> Note: Line item status is a combination of the following: <br> Price code + Qty code + Pack code + Inner Code. The Customer purchase order acknowledgement document setting **Field delimiter** (can also be blank) is used inbetween the POA codes.  <br> <br>  If **Customer purchase order** setting profile option **Skip error lines** is set to _Yes_ and the staging line couldn't create a sales line, this field will be set to mapped value of POA response code **Line item - error**          | Sales line > EDI > POA response > Customer code > Price and Quantity
+**POA code item**   **    |	Purchase order acknowledgement code for the item. <br> If the line was succesfully created as sales line, this field is the combination of all line item POA codes. <br> Example: PO-IA-PD-LIA <br> PO: Line price - accept <br> IA: Line item - accept <br> PD: Line item - pack difference <br> LIA: Line item - inner accept	<br> Field delimiter: - <br> Note: Line item status is a combination of the following: <br> Price code + Qty code + Pack code + Inner Code. The Customer purchase order acknowledgement document setting **Field delimiter** (can also be blank) is used inbetween the POA codes.  <br> <br>  If **Customer purchase order** setting profile option **Skip error lines** is set to _Yes_ and the staging line couldn't create a sales line, this field will be set to mapped value of POA response code **Line item - error**          | Sales line > EDI > POA response > Customer code > Price and Quantity
 **POA code line**        | "Summarised" Purchase order acknowledgement code for the line. <br> Either of the following results (if response codes are mapped): <br> • Line - accept: If all the applicable line codes are accept <br> • Line - reject: If all the applicable line codes are reject <br> • Line - advise: If all the applicable line codes are combination of advise and reject    | Sales line > EDI > POA response > Customer code > Line
-**Currency**            |	The currency of the order	                            | Sales order > Currency
-**Unit price excl. tax**  |	The net price per unit excl. tax	                  | Sales line > Price excl. tax
-**Unit price incl. tax**  |	The net price per unit incl. tax	                  | Sales line > Price incl. tax
-**Line amount excl. tax** |	Line amount excl. tax	                              | Sales line amount > Price excl. tax
-**Line amount incl. tax** |	Line amount incl. tax	                              | Sales line amount > Price incl. tax
-**Unit**                  |	This is the Unit of measure that the stock has been ordered in    | Sales line > Unit
-**Sales quantity**        |	The acknowledged quantity for this line             | Sales line > Quantity
-**Ordered quantity**       | The customer purchase ordered quantity for this line   | Sales line > Customer quantity on the POA response tab
+**Currency**   **         |	The currency of the order	                            | Sales order > Currency
+**Unit price excl. tax**  ** |	The net price per unit excl. tax	                  | Sales line > Price excl. tax
+**Unit price incl. tax**  ** |	The net price per unit incl. tax	                  | Sales line > Price incl. tax
+**Line amount excl. tax**  ** |	Line amount excl. tax	                              | Sales line amount > Price excl. tax
+**Line amount incl. tax**  ** |	Line amount incl. tax	                              | Sales line amount > Price incl. tax
+**Unit** **                 |	This is the Unit of measure that the stock has been ordered in    | Sales line > Unit
+**Sales quantity**  **      |	The acknowledged quantity for this line             | Sales line > Quantity
+**Ordered quantity**  **     | The customer purchase ordered quantity for this line   | Sales line > Customer quantity on the POA response tab
 **Backorder quantity**      | Where the Trading partner's **No backorder** is set to _No_, the difference between **Ordered quantity** and **Sales quantity**. <br> Where the Trading partner's **No backorder** is set to _Yes_, this will be set to 0. | Ordered quantity minus Sales quantity
 **Acknowledgement inners**  |	Acknowledged quantity of inners per outer	        | Sales line > EDI > POA > Acknowledgement inners
 **Acknowledgement pack**    |	Pack quantity acknowledged	                      | Sales line > EDI > POA > Acknowledgement pack
