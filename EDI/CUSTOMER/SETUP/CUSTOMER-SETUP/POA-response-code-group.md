@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer setup - POA responde code group
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-10-20
+ms.date: 2023-10-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,6 +47,8 @@ POA Response codes are used to identify the status of information used in a Purc
 **Header – change**               |	Change to the Order header's dates    | C	                 | POA header - POA code
 **Header – not accepted**         |	Order not accepted	                  | NA                   | POA header - POA code
 <ins>**Line response codes**</ins>      |   |
+**Line shipment – partial**       |	Advise of partial shipment	          | SP                   | POA lines - POA code shipment
+**Line shipment – full**          |	Advise of full shipment               |	SF                   | POA lines - POA code shipment
 **Line price – accept**           |	Item price accepted                   |	PO                   | POA lines - POA code item
 **Line price – advise**           |	Advise of a price difference	        | PA                 | POA lines - POA code item
 **Line item – accept**            |	Item quantity accepted	              | IQA                  | POA lines - POA code item
@@ -56,13 +58,10 @@ POA Response codes are used to identify the status of information used in a Purc
 **Line item – pack difference**   |	Advise of pack difference	            | PD                 | POA lines - POA code item
 **Line item – inner accept**      |	Item inner accepted	                  | LIA                  | POA lines - POA code item
 **Line item – inner difference**  |	Advise of inner difference	          | ID                   | POA lines - POA code item
-**Line shipment – partial**       |	Advise of partial shipment	          | SP                   | POA lines - POA code shipment
-**Line shipment – full**          |	Advise of full shipment               |	SF                   | POA lines - POA code shipment
+**Line item - error**             | **Customer purchase order** setting profile option **Skip error lines** is set to _Yes_ and the staging line couldn't create a sales line    | POA lines - POA code item
 **Line item - accept**            | Item accepted                         | IA                   | POA lines - POA code line
 **Line item - advise**            | Advise of line                        | IC                   | POA lines - POA code line
 **Line item - reject**            | Item rejected                         | IR                   | POA lines - POA code line
-
-
 
 - In the **Allow auto trigger** field, select if the POA response can be triggered by **Auto set response codes**. <br> The following response codes can only be manually triggered and thus their **Allow auto trigger** is set to _No_ and disabled:
     - Header – not accepted
@@ -73,7 +72,13 @@ POA Response codes are used to identify the status of information used in a Purc
 The following section decribes how the EDI module sets the POA auto response code. <br>
 This is applicable to Response codes where **Allow auto trigger** is set to Yes.
 
-### Line POA response codes
+### POA code shipment response codes
+#### Line shipment
+- **Line shipment – partial**: Customer Trading partner's **No backorder** is set to _Yes_ and Acknowledged **quantity** <> Customer's EDI purchase order line's **quantity**
+- **Line shipment – full**: Customer Trading partner's **No backorder** is set to _No_. Acknowledged quantity vs. Customer's EDI purchase order line's quantity doesn't impact when **No backorder** is set to No.
+
+
+### POA code item response codes
 #### Line price
 - **Line price - accept**: Acknowledged **unit price** = Customer's EDI purchase order line's **unit price**.
 - **Line price - advise**: Acknowledged **unit price** <> Customer's EDI purchase order line's **unit price**. Customer purchase order document setting **Use customer price** is set to _Yes_, and sales order line's unit price doesn't equal the Customer's EDI purchase order line's unit price.
@@ -83,10 +88,6 @@ This is applicable to Response codes where **Allow auto trigger** is set to Yes.
 - **Line item - out of stock**: Acknowledged **quantity** <> Customer's EDI purchase order line's **quantity**. Customer purchase order acknowledgement document setting **Quantity type** is set to use Reserved quantity, and sales order line's reserved quantity is less than the Customer's EDI purchase order line quantity.
 - **Line item - withdrawn**: Can't be auto triggered.
 
-#### Line shipment
-- **Line shipment – partial**: Customer Trading partner's **No backorder** is set to _Yes_ and Acknowledged **quantity** <> Customer's EDI purchase order line's **quantity**
-- **Line shipment – full**: Customer Trading partner's **No backorder** is set to _No_. Acknowledged quantity vs. Customer's EDI purchase order line's quantity doesn't impact when **No backorder** is set to No.
-
 #### Line item pack
 - **Line item - pack accept**: Acknowledged **Pack** = Customer's EDI purchase order line's **Pack**.
 - **Line item - pack difference**: Acknowledged **Pack** <> Customer's EDI purchase order line's **Pack**. Customer purchase order acknowledgement document setting **Pack type** is set to use **System pack**, and sales order line's pack isn't the same as the Customer's EDI purchase order line's pack.
@@ -95,7 +96,11 @@ This is applicable to Response codes where **Allow auto trigger** is set to Yes.
 - **Line item - inner accept**: Acknowledged **Inner** = Customer's EDI purchase order line's **Inner**.
 - **Line item - inner difference**: Acknowledged **Inner** <> Customer's EDI purchase order line's **Inner**. Customer purchase order acknowledgement document setting **Inner type** is set to use **System inner**, and sales order line's pack isn't the same as the Customer's EDI purchase order line's pack.
 
-#### Line
+#### Line error
+- **Line item - error**: **Customer purchase order** setting profile option **Skip error lines** is set to _Yes_ and the staging line couldn't create a sales line. Example issues: item is stopped for sales or item number couldn't be found. 
+
+### POA code line response codes
+### Line
 - **Line - accept**: If all the applicable line codes are accept
 - **Line - advise**: If all the applicable line codes are combination of advise and reject
 - **Line - reject**: If all the applicable line codes are reject
