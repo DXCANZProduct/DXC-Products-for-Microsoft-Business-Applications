@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Encryption / decryption
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-01-31
+ms.date: 2023-10-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,12 +34,18 @@ Once below has been setup, the functionality can be used on the following Financ
 - Encrypt option on [Electronic reporting export connections](../ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md) to send encrypted GER Vendor EFT files
 - Decrypt option on [Financial utilities connection](../CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md) to decrypt a bank statement file imported using periodic task **Import bank statements via financial utilities connection**
 
+
 ## Step 1 - Setup Secrets in Key vault parameters
 Setup the following as **Secrets** in **Key vault parameters** for the encryption/decryption:
-- Phassprase
-- Private key
-- Public key
-- Signer's public key
+- Phassprase - Longer version of a password used to encrypt the sender's private key using a hash of the passphrase as the secret key
+- Private key - Sender's private key
+- Public key - Sender's public key
+- Signer's public key - Recipient's public key
+
+Files are encrypted with the sender's private key, recipient’s public key and the pass phrase. <br>
+Files are decrypted with the recipient's private key, sender's public key and pass phrase.
+
+PGP uses a passphrase to encrypt your private key on your machine. Your private key is encrypted on your disk using a hash of your passphrase as the secret key. You use the passphrase to decrypt and use your private key. A passphrase should be hard for you to forget and difficult for others to guess.
 
 ## Step 2 - Assign Secrets in DXC encryption parameters
 Assign above **Secrets** to the encryption/decryption. <br>
