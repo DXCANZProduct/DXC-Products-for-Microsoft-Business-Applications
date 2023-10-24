@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Sales invoice
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-14
+ms.date: 2023-10-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,7 +42,7 @@ The following setup is prerequisites for the sales invoice
 1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
 2. Create [Setting profile](../SETUP/SETTING-PROFILES/Sales-invoice.md) for the document.
 3. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
-4. If the customer [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+4. If the customer [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner. <br> If the invoice account differs to the customer account, setup the **Invoice account** as EDI trading partner for the Sales invoice document.
 5. Add and enable the sales invoice to the [Customer trading partner](../SETUP/Trading-partner.md) and select the applicable:
     - Template
     - Setting profile
