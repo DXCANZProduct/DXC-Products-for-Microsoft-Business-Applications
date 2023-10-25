@@ -57,6 +57,7 @@ Number	| Name		 | Description
 16299	| Customer purchase order acknowledgement	| Staging line field 'POA code item' is a concat of 'Price code + Qty code + Pack code + Inner Code'. Field 'POA code item' stays as-is. <br> We've added a new "summarised" field called 'POA code line' with either of the following results (if new response codes are mapped): <br> • **Line - accept**: If all the applicable line codes are accept <br> • **Line - reject**: If all the applicable line codes are reject <br> • **Line - advise**: If all the applicable line codes are combination of advise and reject <br> <br> New response codes have been added to 'Customer setup > POA response code group' for these three "summarised" response codes. <br> Response code is only applicable if mapped. <br> <br> The following responses are deemed Accept: <br> • Line price - accept <br> • Line item - accept <br> • Line item - pack accept <br> • Line item - inner accept <br> • Response code not mapped <br> <br> The following responses are deemed Reject: <br> • Line price - advise <br> • Line item - out of stock <br> • Line item - withdrawn <br> • Line item - pack difference <br> • Line item - inner difference
 
 
+
 **Vendor module**	
 
 Number	| Name		 | Description
@@ -85,6 +86,12 @@ Number	| Name		 | Description
 :--	|:--		  	|:--
 14981	| Document types	| When using the **Copy** button on **Setting profiles** and **Validation profiles**, limit the string size for **Name**. 
 
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+16356	| Customer purchase order acknowledgement	| If the user clicked 'Send to EDI' on the Sales order's Action pane (EDI tab) without opening Acknowledgement first, the POA codes haven't been initialised yet and blank values would be populated for the POA codes in the staging record. The POA codes are now also initialised when clicking 'Send to EDI' on the Sales order's Action Pane (if POA codes are blank). <br> ![Sales order](RELEASE-NOTES-IMAGES/20231031_3.png "Sales order")
 
 **3PL module**
 
