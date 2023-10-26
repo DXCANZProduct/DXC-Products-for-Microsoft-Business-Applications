@@ -5,7 +5,7 @@ title: EDI Freight forwarder
 description: EDI Freight forwarder Setup - Document type Setting profiles - Voyage creator
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-25
+ms.date: 2023-10-26
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,6 +46,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 
 ### Source line strategy
 When a purchase or transfer order contains multiple open order lines for the same item and dimensions (size, color, configuration or style), the source line strategy is utilized to determine which line/s to allocate to the voyage.
+- **Line number document** - Order lines are allocated according to Voyage creator staging line's 'Line number document' value. Recommended option, especially where the purchase order line's unit isn't the product's inventory unit.
 -	**Top down** - Order lines are allocated according to line number, from top down.
 -	**Expected date** - Order line with delivery date closest to voyage’s ship date.
 -	**Quantity** - Order line with closest match to voyage quantity (order line qty >= voyage qty)
@@ -61,12 +62,16 @@ Order line no	  | Qty	  | Delivery date
 2	              | 110	  | 15 March 2022
 3	              | 120	  | 29 March 2022
 
-Voyage: Qty 100 and ship date 28 March 2022. <br>
+Voyage creator staging line example values: 
+- Line number document - 2
+- Qty - 100
+- Ship date - 28 March 2022. 
+
 Each strategy will use the following source line number(s):
 
-Top down	            | Expected date	  | Quantity
-:--                   |:--              |:--
-Line 1 (qty 90) <br> Line 2 (qty 10)  | Line 3 (qty 100) | Line 2 (qty 100)
+Line number document  | Top down	            | Expected date	  | Quantity
+:--                     |:--                      |:--              |:--
+Line 2 (qty 100)        | Line 1 (qty 90) <br> Line 2 (qty 10)  | Line 3 (qty 100) | Line 2 (qty 100)
 
 ## Where used
 The **Setting profile** can be assigned on the Incoming documents FastTab to document type **Voyage creator** for the Freight forwarder landed cost Trading partner at **EDI > Setup > Trading partners**.
