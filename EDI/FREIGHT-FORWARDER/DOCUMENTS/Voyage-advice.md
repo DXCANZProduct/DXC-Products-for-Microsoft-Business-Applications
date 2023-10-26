@@ -5,7 +5,7 @@ title: EDI Freight forwarder
 description: EDI Freight forwarder Documents - Voyage advice
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-10-05
+ms.date: 2023-10-26
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -135,7 +135,8 @@ The following EDI Line fields are available on the lines page. <br>
 
 **Field**                   | **Description**                                                           
 :---                        |:---                                                                       
-**Line number**             | The line within the EDI table/file	                    
+**Line number**             | The line within the EDI table/file	
+**Line number document**    | The sequential D365 purchase order line number
 **Item number**             | The D365 item number
 **Bar code**                | Item’s barcode	
 **GTIN**                    | Item’s GTIN	
