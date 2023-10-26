@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-10-23
+ms.date: 2023-10-26
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -77,6 +77,7 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 16030	| Voyage advice		| New outbound document that provides the ability to send **Purchase order details** to the Landed cost freight forwarder. <br> [User guide](FREIGHT-FORWARDER/DOCUMENTS/Voyage-advice.md) <br> <br> **Setup**: <br> Add Templates and Outbound files on **Document types** and assign to applicable **Freight forwarder landed cost Trading partner** <br> <br> **Processing**: <br> • Assign applicable **Shipping company** on the Purchase order header Landed cost FastTab. <br> • Use **Send to EDI** on the Purchase order's Action Pane, Purchase tab, Landed cost heading, to create the outbound staging record <br> ![Purchase order](RELEASE-NOTES-IMAGES/20231031_2.png "Purchase order")
+16343	| Voyage creator	| New option on Setting profile's **Source line search strategy** and new **Staging lines** field called **Line number document**. <br> Provides the ability for Voyage creator to match to the source document's (Purchase or Transfer order) **Line number** when creating the Voyage lines. 
 
 <ins>Bug fixes</ins>
 
@@ -103,9 +104,12 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
+16149	| Voyage creator	| When the purchase order line contained a different unit to the product's inventory unit and the voyage creator line used the same unit as the purchase order line, the voyage quantity was incorrectly multiplied by the unit conversion. <br> To support this fix, we implemented 16343 **Source line search strategy** called **Line number document** for voyage creator to find the applicable source line's unit for correct unit conversion. <br> Thus if your purchase order line's unit differ to inventory unit, you need to use this new source line search strategy option.
 10637	| Voyage creator <br> Voyage tracking	| Voyages button enabled prior to processing of record
 12598	| Document types	| Description in Document types updated for new records for: <br> • Voyage creator <br> • Voyage tracking
 16055	| Voyage tracking	| 'SAB_EDIStagingHistory::logHistory has been incorrectly called' error when processing staging record when 'Voyage id source' set to 'External id'
+
+
 
 # Current version
 
