@@ -64,7 +64,7 @@ Number	  | Name	          | Description
 
 ![BankPaymAdviceVendV2Report](IMAGES/BankPaymAdviceVendV2Report.png)
 
-16329	    | GER payment advice - Duplicated lines and wrong recipient | When payment journal contains two lines (two different vendors), when  both are lines selected the 'Smart send payment advice' fucntionality created an  email to only the one vendor and it sent the other vendor's payment advice to the wrong vendor. The settled invoices lines were also duplicated. This previoulsy applied to customer and vendor payments and has been corrected.
+16329	    | GER payment advice - Duplicated lines and wrong recipient | When payment journal contains two lines (two different vendors), when both are lines selected the ‘Smart send payment advice’ functionality created an email to only the one vendor and it sent the other vendor’s payment advice to the wrong vendor. The settled invoices lines were also duplicated. This previously applied to customer and vendor payments and has been corrected.
 
 <ins>New features</ins>
 
