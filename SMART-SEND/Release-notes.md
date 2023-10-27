@@ -64,6 +64,7 @@ Number	  | Name	          | Description
 
 ![BankPaymAdviceVendV2Report](IMAGES/BankPaymAdviceVendV2Report.png)
 
+16329	    | GER payment advice - Duplicated lines and wrong recipient | When payment journal contains two lines (two different vendors), when  both are lines selected the 'Smart send payment advice' fucntionality created an  email to only the one vendor and it sent the other vendor's payment advice to the wrong vendor. The settled invoices lines were also duplicated. This previoulsy applied to customer and vendor payments and has been corrected.
 
 <ins>New features</ins>
 
@@ -78,9 +79,15 @@ Number	  | Name	          | Description
 
 ![Override_print_destination](IMAGES/Override_print_destination.png)
 
+6735	    | Support the use of Rich HTML editor| HTML editor is included for editing the body of the organisational email template. To start editing select Email Message from the top menu to open the template then switch the “use HTML editor” toggle button to yes to allows editing fucntionality.
+
+![Email_message_menu](IMAGES/Email_message_menu.png)
+
+![HTML_Editor](IMAGES/HTML_Editor.png)
+
 
 ## Feature management
-From The New Release Smart Send can be enabled via Feature management
+From 10.0.34.20231026 Smart Send can be enabled via Feature management
 Enable the following feature in D365 Feature management:
 
 - DXC Smart Send
