@@ -93,6 +93,9 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 16356	| Customer purchase order acknowledgement	| If the user clicked 'Send to EDI' on the Sales order's Action pane (EDI tab) without opening Acknowledgement first, the POA codes haven't been initialised yet and blank values would be populated for the POA codes in the staging record. The POA codes are now also initialised when clicking 'Send to EDI' on the Sales order's Action Pane (if POA codes are blank). <br> ![Sales order](RELEASE-NOTES-IMAGES/20231031_3.png "Sales order")
+16121	| Customer advanced shipping notice	| The ASN staging record wasn't displayed in Sales order's EDI **History**.
+16394	| Customer advanced shipping notice	| Blank **Ship date** and **Scheduled delivery date** for Intercompany ASN.
+
 
 **3PL module**
 
