@@ -43,9 +43,9 @@ Planned release date: 31 October 2023 <br>
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
+16412	| DXC License		| DXC License manager version 10.0.32.202307312. <br> DXC License updated to include feature managed SmartSend and Core extensions.
 12020	| Outbound files	| Trading partner button on Outbound files
 16326	| Trading partners	| Increased Trading partner's **Search mask** length from 30 to 60 characters
-16412	| DXC License		| DXC License manager version 10.0.32.202307312. <br> DXC License updated to include feature managed SmartSend and Core extensions.
 
 
 **Customer module**	
