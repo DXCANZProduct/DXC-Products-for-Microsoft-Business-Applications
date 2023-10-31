@@ -57,5 +57,12 @@ The business process links feature allows you to setup associated links to forms
 ### [Import Budgets](IMPORT-BUDGETS/Import-budgets.md)
 The Import Budgets extension allows importing budget from Microsoft Excel templates where period budgets are presented in a traditional columnar format including dynamically adding financial dimensions and financial period across columns.
 
+### [DMF Toolbox](DMF-TOOLBOX.md)
+The DMF toolbox provides users with the visibility of 2 additional fields within Data Management Entities.
+
+Enum values - a special data type that enables for a variable to be a set of predefined constants. The variable must be equal to one of the values that have been predefined for it. For example, in the Customers data entity the field Time Zone has a pre-defined list of values that can be selected. 
+
+Unique indexes -   A unique index guarantees that the index key contains no duplicate values and therefore every row in the table is in some way unique. For Example, the customer account number must be unique in the Customers entity.
+
 ## New ideas
 Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
