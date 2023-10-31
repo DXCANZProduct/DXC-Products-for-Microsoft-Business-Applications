@@ -26,11 +26,11 @@ ms.search.validFrom: 2023-10-31
 ms.dyn365.ops.version: 10.0.34
 ---
 
-# DMF toolbox
+# DMF Toolbox
 
-### DMF toolbox Overview
+### DMF Toolbox Overview
 
-The DMF toolbox provides users with the visibility of 2 additional fields within Data Management Entities.
+The Data Management Framework (DMF) toolbox provides users with the visibility of 2 additional fields within Data Management Entities.
 
 Enum values - a special data type that enables for a variable to be a set of predefined constants. The variable must be equal to one of the values that have been predefined for it. For example, in the Customers data entity the field Time Zone has a pre-defined list of values that can be selected. 
 Unique indexes -   A unique index guarantees that the index key contains no duplicate values and therefore every row in the table is in some way unique. For Example, the customer account number must be unique in the Customers entity.
