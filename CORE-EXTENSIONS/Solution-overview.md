@@ -64,5 +64,11 @@ Enum values - a special data type that enables for a variable to be a set of pre
 
 Unique indexes -   A unique index guarantees that the index key contains no duplicate values and therefore every row in the table is in some way unique. For Example, the customer account number must be unique in the Customers entity.
 
+### [Data Anonymization](Data-Anonymization/Anonymization.md)
+Data Anonymization is a process that allows for information to be scrambled post a database copy or restore from a production into a sandbox environment.  The process can assist in protecting sensitive or personal information like names, bank accounts, addresses and more from people that should or do not require visibility of sensitive data. The process can be used to protect data and confidentiality but still allow necessary third parties access to your environment. 
+
+### [Import/Export Print management settings ](Import/Export Print management settings.md)
+
+
 ## New ideas
 Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
