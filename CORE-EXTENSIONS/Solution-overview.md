@@ -67,7 +67,7 @@ Unique indexes -   A unique index guarantees that the index key contains no dupl
 ### [Data Anonymization](Data-Anonymization/Anonymization.md)
 Data Anonymization is a process that allows for information to be scrambled post a database copy or restore from a production into a sandbox environment.  The process can assist in protecting sensitive or personal information like names, bank accounts, addresses and more from people that should or do not require visibility of sensitive data. The process can be used to protect data and confidentiality but still allow necessary third parties access to your environment. 
 
-### [Import/Export Print management settings ](Import/Export Print management settings.md)
+### [Import/Export Print management settings ](Print-management.md)
 
 
 ## New ideas
