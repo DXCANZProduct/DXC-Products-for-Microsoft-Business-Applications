@@ -72,25 +72,30 @@ To initiate data anonymization, you firstly need to create the profile.
 
 5. To add the fields and values to be scrambled Select **Add Fields** to display the field selector for your highlighted Table.
  ![Field_Selector](/CORE-EXTENSIONS/IMAGES/Field_Selector.png)
-6. Select the fields you want to data scrambled in and select **Add** to populate your list or **Remove** to remove from selection.  Once you have selected all fields for this table click **OK** to add them to the main form.
-7. Populate the Scrambled data value and select prefix if desired, select Save to confirm changes 
+7. Select the fields you want data scrambled in and select **Add** to populate your list or **Remove** to remove from selection.  Once you have selected all fields for this table click **OK** to add them to the main form.
+8. Populate the Scrambled data value and select prefix if desired, select Save to confirm changes 
 *Repeat this process for all Tables and fields where data is to be scrambled 
 populate fields  ![populate fields](/CORE-EXTENSIONS/IMAGES/populate fields.png)
 
-###Load default tables
-When selected this function will bring up a list of common System tables and their “friendly/common name” that can be easily added to the anonymisation list. Select the required tables and once completed select Add tables to update them into your form. 
+### Load default tables
+
+When selected this function will bring up a list of common System tables and their “friendly/common name” that can be easily added to the anonymisation list. Select the required tables and once completed select **Add tables** to update them into your form. 
 ![Load_Deault_Tables](/CORE-EXTENSIONS/IMAGES/Load_Deault_Tables.png)
 
-Data anonymization fields 
-Once Tables have been added to your profile you can subsequently add the fields and values to be scrambled
+8. Highlight the required Table and Select **Add Fields** to display the field selector for your highlighted Table.
+9. Locate and select the fields you want to scramble data for and select **Add** to add them to your list or Remove to remove from selection.  Once all fields for this table have been added click **OK** to add them to the main form 
+10. Populate the Scrambled data value and select prefix if you want to populate the scramble data with a prefix.  Select **Save** to move onto the next table 
+*Repeat this process for all Tables and fields where data is to be scrambled
 
-Select Add Fields to display the field selector for your highlighted Table.  Here you can locate and select the fields you want to scramble data for.  Select Add to add them to your list or Remove to remove from selection.  Once you have selected all fields for this table click OK to add them to the main form 
-Populate the Scrambled data value and select prefix if desired and select Save to move onto the next table 
+Once all Tables and fields have been populated select the **Initiate data anonymisation** button from the ribbon bar and add the scramble job to the batch job processing queue.
 
-Once all Tables and fields have been populated select the Initiate data anonymisation button from the ribbon bar and add the scramble job to the batch job processing queue.
-A separate batch job is created for each table that is to be updated. 
 If the batch job completes successfully the below is displayed
 
+![Ended](/CORE-EXTENSIONS/IMAGES/Ended.png)
 
-However, if the batch job fails and the anonymisation process does not complete a error batch job is crated for the table. To identify the error that has caused the job to fail review the log from the batch tasks form as per standard batch job troubleshooting. 
+However, if the batch job fails and the anonymisation process does not complete a error batch job is crated for the table. 
+
+![Error](/CORE-EXTENSIONS/IMAGES/Error.png)
+
+To identify the error that has caused the job to fail review the log from the batch tasks form as per standard batch job troubleshooting. 
 
