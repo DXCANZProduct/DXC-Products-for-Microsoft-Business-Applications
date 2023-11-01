@@ -38,7 +38,8 @@ The **Data anonymization parameters** page is used to ensure production values a
 
 1. Navigate to **Organization administration > Setup > Data anonymization > Data anonymization parameters**
 2. Insert your production URL into the PROD URL field.
-Once completed select Save and close the form. 
+Once completed select Save and close the form.
+
 ![Anonymization_parameters](/CORE-EXTENSIONS/IMAGES/Anonymization_parameters.png)
 
 ### Data anonymization profiles
@@ -71,7 +72,9 @@ To initiate data anonymization, you firstly need to create the profile.
    *You can subsequently edit and/or delete tables from the list as required.
 
 5. To add the fields and values to be scrambled Select **Add Fields** to display the field selector for your highlighted Table.
+   
  ![Field_Selector](/CORE-EXTENSIONS/IMAGES/Field_Selector.png)
+
 7. Select the fields you want data scrambled in and select **Add** to populate your list or **Remove** to remove from selection.  Once you have selected all fields for this table click **OK** to add them to the main form.
 8. Populate the Scrambled data value and select prefix if desired, select Save to confirm changes 
 *Repeat this process for all Tables and fields where data is to be scrambled 
@@ -80,6 +83,7 @@ populate fields  ![populate fields](/CORE-EXTENSIONS/IMAGES/populate fields.png)
 ### Load default tables
 
 When selected this function will bring up a list of common System tables and their “friendly/common name” that can be easily added to the anonymisation list. Select the required tables and once completed select **Add tables** to update them into your form. 
+
 ![Load_Deault_Tables](/CORE-EXTENSIONS/IMAGES/Load_Deault_Tables.png)
 
 8. Highlight the required Table and Select **Add Fields** to display the field selector for your highlighted Table.
