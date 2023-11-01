@@ -42,6 +42,23 @@ Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
 Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
 Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
+Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
+
+
+
+
+#### Build 10.0.34.2023TBA
+
+Release date: 2023
+
+<ins>New features</ins>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+14330		| Build fixes	| 10.0.34 build error fix for: <br> - Add missing reference to model FinTag <br> - Update register symbolic link script
+
+
+# Previous version(s)
 
 #### Build 10.0.34.202306082
 
@@ -53,8 +70,6 @@ Number	  	| Functionality	  | Description
 :--       	|:--              |:--
 14330		| Build fixes	| 10.0.34 build error fix for: <br> - Add missing reference to model FinTag <br> - Update register symbolic link script
 
-
-# Previous version(s)
 
 #### Build 10.0.29.202304142
 
