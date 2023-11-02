@@ -96,7 +96,7 @@ Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dyn
 > > > From **10.0.36** this feature is not compatible with Finance utilities' Posting date, as it posts at a different date to accounting date. We recommend not enabling the feature from 10.0.36.
 > > > We will be deprecating Finance utilities **Posting date** in the November 2023 release. See [deprecation notice](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Release-notes.html#new-bank-statement-transaction---posting-date)
 
-#### Build 10.0.35.202307314
+#### Build 10.0.35.2023073143
 Release date: 2 November 2023 <br> 
 
 <ins>New features</ins>
