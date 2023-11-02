@@ -77,8 +77,9 @@ To initiate data anonymization, you firstly need to create the profile.
 
 7. Select the fields you want data scrambled in and select **Add** to populate your list or **Remove** to remove from selection.  Once you have selected all fields for this table click **OK** to add them to the main form.
 8. Populate the Scrambled data value and select prefix if desired, select Save to confirm changes 
-*Repeat this process for all Tables and fields where data is to be scrambled 
-populate fields  ![populate fields](/CORE-EXTENSIONS/IMAGES/populate fields.png)
+*Repeat this process for all Tables and fields where data is to be scrambled
+
+![populate fields](/CORE-EXTENSIONS/IMAGES/populate_fields.png)
 
 ### Load default tables
 
