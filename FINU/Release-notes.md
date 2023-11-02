@@ -48,7 +48,7 @@ Number	  	| Module	| Functionality	  	| Description
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
 16069		| Unit tests	| 	| Fix 10.0.37 build issues for Finance utilities Unit tests
-16338		| Cash and bank management	| Bank Mark as new transactions | Additions to 15578. Applicable to when a bank statement line is marked as new and offset to an **intercompany bank account**. <br> Previously only supported when bank statement is posted via 'Mark as reconciled' (Auto-post bank statement is set to _Yes_), and feature 'Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions' disabled. <br> Now supports the feature enabled and posting the bank statement from the Bank statement page (Auto-post bank statement is set to _No_) as well.
+
 
 # Current version
 
@@ -103,8 +103,8 @@ Number	  	| Module	| Functionality	  	| Description
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-16338		| Cash and bank management	| Bank statement / reconciliation	| Update to 15578 mark as new Intercompany bank transactions - support posting from Bank statement, and with feature 'Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions' enabled. 
-16250		| Cash and bank management	| Bank statement	| Incorrect warning message when importing bank statement and the file contains multiple bank accounts and the import parameters is filtered to one bank account that exists in the file: 'Failed to match with bank account'. <br> It also warned about No matching bank account found for bank accounts that doesn't exist in D365, but the import was only filtered to one specific bank account.
+16338		| Cash and bank management	| Bank Mark as new transactions | Additions to 15578. Applicable to when a bank statement line is marked as new and offset to an **intercompany bank account**. <br> Previously only supported when bank statement is posted via 'Mark as reconciled' (Auto-post bank statement is set to _Yes_), and feature 'Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions' disabled. <br> Now supports the feature enabled and posting the bank statement from the Bank statement page (Auto-post bank statement is set to _No_) as well.
+16250		| Cash and bank management	| Import bank statement	| Incorrect warning message when importing bank statement and the file contains multiple bank accounts and the import parameters is filtered to one bank account that exists in the file: 'Failed to match with bank account'. <br> It also warned about No matching bank account found for bank accounts that doesn't exist in D365, but the import was only filtered to one specific bank account.
 
 
 #### Build 10.0.35.2023073131
