@@ -35,6 +35,13 @@ This document describes the features that are either new or changed in the relea
 
 Planned release date: 30 November 2023
 
+<ins>Deprecated</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+15394		| Accounts payable	| Vendor bank account change workflow	| Deprecate Vendor bank account fields in Vendor approval. Replaced by functionality in standard. <br> See [Deprecated features notice - Vendor bank account change workflow](#vendor-bank-account-change-workflow) for more details.
+16002		| Cash and bank management	| Mark as new transaction's Posting date	| Deprecate **Posting date** functionality for Mark as new transactions. <br> Replaced by functionality in standard. <br> See [Deprecated features notice - Posting date](#new-bank-statement-transaction---posting-date) for more details.
+
 <ins>New features</ins>
 
 Number	  	| Module	| Functionality	  	| Description
@@ -42,12 +49,6 @@ Number	  	| Module	| Functionality	  	| Description
 15488		| Accounts receivable	| Interest notes - Due date	| New field called **Use customer payment terms** added to **Accounts receivable parameters**  and **Credit and collections parameters** (Collections tab). <br> If set to _Yes_, the customer's payment terms will be used to determine Due date when posting Interest notes. <br> [Guide](Setup/ACCOUNTS-RECEIVABLE/Customer-parameters.md)
 16039		| Cash and bank management	| Bank statement import	| **Run in the background** functionality added to **Import bank statements** <br> ![Import bank statements](Images/ReleaseNotes_20231130_1.png "Import bank statements") 
 
-<ins>Deprecated</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-15394		| Accounts payable	| Vendor bank account change workflow	| Deprecate Vendor bank account fields in Vendor approval. Replaced by functionality in standard. <br> See [Deprecated features notice - Vendor bank account change workflow](#vendor-bank-account-change-workflow) for more details.
-16002		| Cash and bank management	| Mark as new transaction's Posting date	| Deprecate **Posting date** functionality for Mark as new transactions. <br> Replaced by functionality in standard. <br> See [Deprecated features notice - Posting date](#new-bank-statement-transaction---posting-date) for more details.
 
 <ins>Bug fixes</ins>
 
