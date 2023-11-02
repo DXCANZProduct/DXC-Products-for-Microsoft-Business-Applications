@@ -40,7 +40,7 @@ The **Data anonymization parameters** page is used to ensure production values a
 2. Insert your production URL into the PROD URL field.
 Once completed select Save and close the form.
 
-![Anonymization_parameters](CORE-EXTENSIONS/IMAGES/Anonymization_parameters.png)
+![Anonymization](/CORE-EXTENSIONS/IMAGES/Anonymization_parameters.png)
 
 ### Data anonymization profiles
 
