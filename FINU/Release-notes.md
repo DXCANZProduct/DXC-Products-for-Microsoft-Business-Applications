@@ -103,7 +103,7 @@ Number	  	| Module	| Functionality	  	| Description
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-16338		| Cash and bank management	| Bank statement / reconciliation	| Update to 15578 - support posting from Bank statement, and with feature 'Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions' enabled. 
+16338		| Cash and bank management	| Bank statement / reconciliation	| Update to 15578 mark as new Intercompany bank transactions - support posting from Bank statement, and with feature 'Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions' enabled. 
 16250		| Cash and bank management	| Bank statement	| Incorrect warning message when importing bank statement and the file contains multiple bank accounts and the import parameters is filtered to one bank account that exists in the file: 'Failed to match with bank account'. <br> It also warned about No matching bank account found for bank accounts that doesn't exist in D365, but the import was only filtered to one specific bank account.
 
 
