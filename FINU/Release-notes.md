@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-10-26
+ms.date: 2023-11-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -89,6 +89,23 @@ Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dyn
 > >   <br>
 > > > From **10.0.36** this feature is not compatible with Finance utilities' Posting date, as it posts at a different date to accounting date. We recommend not enabling the feature from 10.0.36.
 > > > We will be deprecating Finance utilities **Posting date** in the November 2023 release. See [deprecation notice](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Release-notes.html#new-bank-statement-transaction---posting-date)
+
+#### Build 10.0.35.202307314
+Release date: 2 November 2023 <br> 
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+16429		| Cash and bank management	| Bank statement / reconciliation	| Update ledgers used for mark as new **Intercompany bank** transactions. Previously used  LedgerInterCompany fields CustLedgerDimension and DebitLedgerDimension, but these aren't available in the Intercompany accounting form. Now using: OriginatingDebitLedgerDimension or OriginatingCreditLedgerDimension and DestinationCreditLedgerDimension or DestinationDebitLedgerDimension.
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+16338		| Cash and bank management	| Bank statement / reconciliation	| Update to 15578 - support posting from Bank statement, and with feature 'Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions' enabled. 
+16250		| Cash and bank management	| Bank statement	| Incorrect warning message when importing bank statement and the file contains multiple bank accounts and the import parameters is filtered to one bank account that exists in the file: 'Failed to match with bank account'. <br> It also warned about No matching bank account found for bank accounts that doesn't exist in D365, but the import was only filtered to one specific bank account.
+
 
 #### Build 10.0.35.2023073131
 Release date: 4 October 2023 <br> 
