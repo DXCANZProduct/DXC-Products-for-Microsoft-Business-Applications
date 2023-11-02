@@ -73,7 +73,7 @@ To initiate data anonymization, you firstly need to create the profile.
 
 5. To add the fields and values to be scrambled Select **Add Fields** to display the field selector for your highlighted Table.
    
- ![Field_Selector](/CORE-EXTENSIONS/IMAGES/Field_Selector.png)
+ ![Field_Selector](../IMAGES/Field_Selector.png)
 
 7. Select the fields you want data scrambled in and select **Add** to populate your list or **Remove** to remove from selection.  Once you have selected all fields for this table click **OK** to add them to the main form.
 8. Populate the Scrambled data value and select prefix if desired, select Save to confirm changes 
@@ -84,7 +84,7 @@ populate fields  ![populate fields](/CORE-EXTENSIONS/IMAGES/populate fields.png)
 
 When selected this function will bring up a list of common System tables and their “friendly/common name” that can be easily added to the anonymisation list. Select the required tables and once completed select **Add tables** to update them into your form. 
 
-![Load_Deault_Tables](/CORE-EXTENSIONS/IMAGES/Load_Deault_Tables.png)
+![Load_Deault_Tables](../IMAGES/Load_Deault_Tables.png)
 
 8. Highlight the required Table and Select **Add Fields** to display the field selector for your highlighted Table.
 9. Locate and select the fields you want to scramble data for and select **Add** to add them to your list or Remove to remove from selection.  Once all fields for this table have been added click **OK** to add them to the main form 
@@ -95,11 +95,11 @@ Once all Tables and fields have been populated select the **Initiate data anonym
 
 If the batch job completes successfully the below is displayed
 
-![Ended](/CORE-EXTENSIONS/IMAGES/Ended.png)
+![Ended](../IMAGES/Ended.png)
 
 However, if the batch job fails and the anonymisation process does not complete a error batch job is crated for the table. 
 
-![Error](/CORE-EXTENSIONS/IMAGES/Error.png)
+![Error](../IMAGES/Error.png)
 
 To identify the error that has caused the job to fail review the log from the batch tasks form as per standard batch job troubleshooting. 
 
