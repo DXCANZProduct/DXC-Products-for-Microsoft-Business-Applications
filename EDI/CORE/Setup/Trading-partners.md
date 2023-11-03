@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Setup Trading partners
 author: jdutoi2
 manager: Kym Parker
-ms.date: 2023-10-13
+ms.date: 2023-11-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -139,7 +139,7 @@ The Incoming documents FastTab defines the incoming EDI document types that have
 **Template**                      |	[Document type template](DocumentTypes/File-templates.md) that has been previously defined.
 **Setting profile**               |	[Settings profile](DocumentTypes/Setting-profiles.md) that has been previously defined. Note: View details displays the settings profiles in read only.
 **Validation profile**            |	[Validation profile](DocumentTypes/Validation-profiles.md) that has been previously defined.
-**Search mask**                   |	A file mask is used to match files in the document type’s defined directories. <br> The setup of the directory (i.e. FTP site) configures whether the file mask is matched at the start of the file name or at the end (For further information, see Site Paths in [Connection setup](Connection-setup.md)). See [examples for Search mask](#examples-for-search-mask) below. 
+**Search mask**                   |	A file mask is used to match files in the document type’s defined directories. <br> The setup of the directory (i.e. FTP site) configures whether the file mask is matched at the start of the file name or at the end (For further information, see Site Paths in [Connection setup](Connection-setup.md)). <br> See [examples for Search mask](#examples-for-search-mask) below. <br> Please note: Ensure this field is populated when using the Import batch job to import files.  
 **Connection profile**	          | Ability to override the default [EDI connection profile](Connection-setup.md) on document level. If blank, the trading partner’s Connection profile will be used.
 **Cleanup profile**               |	Ability to override the default [Cleanup profile](Cleanup-profile.md) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](EDI-shared-parameters.md) will be used.
 **Reset status profile**          |	Ability to override the default [Reset status](Reset-status.md) on document level. If blank, [EDI shared parameters](EDI-shared-parameters.md) will be used.
