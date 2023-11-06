@@ -37,13 +37,12 @@ This page describes the features planned for future releases and planned release
 
 Release			| ETA
 :--			    |:--
-2024-01     | 31 January 2024
 2024-04     | 30 April 2024
 2024-07     | 31 July 2024
 
 
 ## Next release
-ETA: 31 January 2024
+ETA: 30 April 2024
 
 
 ## Deprecate
