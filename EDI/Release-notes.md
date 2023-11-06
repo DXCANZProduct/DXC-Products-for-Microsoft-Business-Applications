@@ -33,7 +33,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-Next release is planned for 31 January 2024.
+Next release is planned for 30 April 2024.
 
 ### Release 10.0.34.20231031
 
