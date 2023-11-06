@@ -39,8 +39,8 @@ Once below has been setup, the functionality can be used on the following Financ
 Setup the following as **Secrets** in **Key vault parameters** for the encryption/decryption:
 - Phassprase - Longer version of a password used to encrypt the sender's private key using a hash of the passphrase as the secret key
 - Private key - Sender's private key
-- Public key - Sender's public key
-- Signer's public key - Recipient's public key
+- Public key -  Recipient's public key
+- Signer's public key - Sender's public key (used for decryption)
 
 Files are encrypted with the sender's private key, recipient’s public key and the pass phrase. <br>
 Files are decrypted with the recipient's private key, sender's public key and pass phrase.
