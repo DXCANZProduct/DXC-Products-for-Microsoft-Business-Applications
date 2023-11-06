@@ -38,6 +38,7 @@ This page describes the features planned for future releases and planned release
 Release			    | ETA
 :--			        |:--
 2023-11          | 30 November 2023
+2024-06          | 28 June 2024
 
 ## Roadmap
 
