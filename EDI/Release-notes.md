@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-10-31
+ms.date: 2023-11-08
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,7 +55,7 @@ Release date: 31 October 2023 <br>
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
-16412	| DXC License		| DXC License manager version 10.0.32.202307312. <br> DXC License updated to include feature managed SmartSend and Core extensions.
+16412	| DXC License		| DXC License 10.0.34.202310311. <br> DXC License updated to include feature managed SmartSend and Core extensions. If your environment includes these products, they would also require upgrade to feature managed releases.
 12020	| Outbound files	| Trading partner button on Outbound files
 16326	| Trading partners	| Increased Trading partner's **Search mask** length from 30 to 60 characters
 
