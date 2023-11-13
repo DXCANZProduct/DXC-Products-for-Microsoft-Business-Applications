@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Encryption / decryption
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-10-24
+ms.date: 2023-11-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,10 +40,10 @@ Setup the following as **Secrets** in **Key vault parameters** for the encryptio
 - Phassprase - Longer version of a password used to encrypt the sender's private key using a hash of the passphrase as the secret key
 - Private key - Sender's private key
 - Public key -  Recipient's public key
-- Signer's public key - Sender's public key (used for decryption)
+- Receiver's public key - Receiver's public key (used for decryption)
 
 Files are encrypted with the sender's private key, sender's public key and the pass phrase. <br>
-Files are decrypted with the recipient's private key, sender's public key and pass phrase.
+Files are decrypted with the recipient's private key, receiver's public key and pass phrase.
 
 PGP uses a passphrase to encrypt your private key on your machine. Your private key is encrypted on your disk using a hash of your passphrase as the secret key. You use the passphrase to decrypt and use your private key. A passphrase should be hard for you to forget and difficult for others to guess.
 
@@ -59,7 +59,7 @@ Field                       | Description
 **Passphrase**              |	Select the applicable **Secret** from **Key vault parameters**
 **Private key**             |	Select the applicable **Secret** from **Key vault parameters**
 **Public key**              |	Select the applicable **Secret** from **Key vault parameters**
-**Signer's public key**     |	Select the applicable **Secret** from **Key vault parameters**
+**Receiver's public key**     |	Select the applicable **Secret** from **Key vault parameters**
 
 ## Step 3 - Use Encryption in Finance utilities
 
