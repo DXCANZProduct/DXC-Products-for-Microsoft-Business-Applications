@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-11-08
+ms.date: 2023-11-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -101,6 +101,16 @@ Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dyn
 > > > From **10.0.36** this feature is not compatible with Finance utilities' Posting date, as it posts at a different date to accounting date. We recommend not enabling the feature from 10.0.36.
 > > > We will be deprecating Finance utilities **Posting date** in the November 2023 release. See [deprecation notice](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Release-notes.html#new-bank-statement-transaction---posting-date)
 
+#### Build 10.0.35.202307315
+Release date: 14 November 2023 <br> 
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+16460		| Cash and bank management	| Intercompany bank Mark as new transactions | 16338's change to intercompany bank mark as new, created a bank statement in the destination company to create intercompany reconciled bank transactions. This has now been changed to not create a bank statement in the destination legal entity. It now creates an unreconciled bank transaction in the destination company using the following from originating company: Debit/Credit Amount, OffsetLedgerDimension, BankTransType, OffsetTxt, OffsetCompany, OffsetAccountType, ExchRateSecond, ExchRate, CurrencyCode, Voucher, TransDate, LedgerDimension, AccountType, JournalNum
+
+
 #### Build 10.0.35.2023073143
 Release date: 2 November 2023 <br> 
 
@@ -114,7 +124,7 @@ Number	  	| Module	| Functionality	  	| Description
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-16338		| Cash and bank management	| Bank Mark as new transactions | Additions to 15578. Applicable to when a bank statement line is marked as new and offset to an **intercompany bank account**. <br> Previously only supported when bank statement is posted via 'Mark as reconciled' (Auto-post bank statement is set to _Yes_), and feature 'Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions' disabled. <br> Now supports the feature enabled and posting the bank statement from the Bank statement page (Auto-post bank statement is set to _No_) as well.
+16338		| Cash and bank management	| Intercompany bank Mark as new transactions | Additions to 15578. Applicable to when a bank statement line is marked as new and offset to an **intercompany bank account**. <br> Previously only supported when bank statement is posted via 'Mark as reconciled' (Auto-post bank statement is set to _Yes_), and feature 'Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions' disabled. <br> Now supports the feature enabled and posting the bank statement from the Bank statement page (Auto-post bank statement is set to _No_) as well.
 16250		| Cash and bank management	| Import statement	| Incorrect warning message when importing bank statement and the file contains multiple bank accounts and the import parameters is filtered to one bank account that exists in the file: 'Failed to match with bank account'. <br> It also warned about No matching bank account found for bank accounts that doesn't exist in D365, but the import was only filtered to one specific bank account.
 
 
