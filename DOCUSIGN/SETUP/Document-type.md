@@ -62,6 +62,8 @@ The **General** FastTab will identify the SSRS report version that will be used 
 | **Report format**                 | When the **Document type** is selected, the default report format of this report is displayed here.  If there is more than one available report format for a report, you will be able to select the report format used.    |
 | **Report name**                   | If *no* has been selected in the **Print management** field, enter the SSRS report name here.  |
 | **Auto send**                     | Select the value in the **Auto send** field.  Two options are available:  <br>  <br>  *yes* - If selected, then at the confirmation of the document, the document will be automatically sent to the relevant signatories for review and approval. <br> *no* - If selected, then upon the confirmation of the document, the user will be able to review the document before it is sent via Docusign.  The user will be able to add/edit/remove signatories, add additional informaiton that signatories must provide, or discard the document.  Once ready, the user will select to send the document to Docusign.           |
+| **Use Account Name**                     | When utilising an email placeholder eg @DocuSign@ enabling this button will prompt the recipient to sign as their company/Account name instead of utilising a name or email address.  New users first confirm their signing name and initials, and then select a signature style. When they adopt their signature, it is applied to the signing field as the company name as set up in Finanance and Opertaions. <br> ![Print_Destination_Dus](../IMAGES/Print_Destination_Dus.png)  <br> ![Account_Name](../IMAGES/Account_Name.png)
+|
 
 
 ## Advance setting
