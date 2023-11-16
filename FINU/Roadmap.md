@@ -43,7 +43,6 @@ Release			    | ETA
 
 #### Accounts receivable
 - Option to exclude invoices from automatic settlement based on their Collection status, for example disputed.
-- Interest notes - Due date
 
 #### AR Utilities
 - Cleanup AR Utilities staging
