@@ -29,11 +29,36 @@ ms.dyn365.ops.version: AX 7.0.1
 # Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-# Next version
+# Current version
 
-### Release 10.0.36.202311TBD
+### Release 10.0.36.20231116
 
-Planned release date: 30 November 2023
+DXC Finance Utilities 10.0.36 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
+Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
+Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
+
+> Note: If your Bank reconciliation creates **New transactions** offsetting to **Vendor**, **Bank** or **Customer** do not enable the following features:
+> - Enable bank reconciliation reversal even new transactions exist in posted bank statement
+> - Reverse posted bank statement with new transactions <br>
+>
+> Reversal of these offset types are not yet supported in Finance utilities. Only reversing New transactions offsetting to **Ledger** is currently supported.
+
+
+> Note: From **10.0.32** MS has added a feature called **Ability to post detailed vendor and customer payments, but summarize amounts to bank account**. <br>
+>   -  If this feature is enabled and setup to summarise, journals that contain multiple lines that matches the criteria will be grouped into one bank transaction line. 
+>   -  The new 'Bank transaction summarization id' is written to the Bank reconciliation's **Document number** for the Bank transaction.
+>   -  This will affect companies that use Financial utilities parameter **Populate bank transaction document number** and **Group by document number** functionality on Reconciliation matching rules as the Payment journal's 'Journal batch number' isn't written to the Bank reconciliation's Document number (if the journal contains multiple lines that matches the criteria).
+
+> Note: From **10.0.32** MS has added a feature (on by default) called **Time zone for importing bank statements using Electronic reporting**. <br>
+> Finance utilities doesn't currently support converting date/time fields within the bank statement file.
+
+
+#### Build 10.0.36.202311161
+Release date: 16 November 2023 <br> 
 
 <ins>Deprecated</ins>
 
@@ -61,46 +86,48 @@ Number	  	| Module	| Functionality	  	| Description
 16036		| Data management	| Import data entity **Document types**	| Couldn't import the entity with Finance utilities field DFUGEREXPORTCONNECTION. <br> Error: 'The column ErrorCode in entity Document types has incorrect data. Please correct the data and try the import again.'
 
 
-# Current version
+# Deprecated features
+
+This section describes the features that have been removed, or planned to be removed from a Finance utilities version.
+
+### Vendor bank account change workflow
+- Reason for deprecation/removal - Replaced by D365 feature from 10.0.32 called 'Vendor bank account change proposal workflow' / 'Supplier bank account change proposal workflow'. [Learn more](https://learn.microsoft.com/en-gb/dynamics365/finance/accounts-payable/vendor-bank-account-workflow)
+- Impact - Removal of the following fields in Accounts payable parameters FastTab 'Vendor approval':
+	- Bank account number
+	- Bank account BSB
+	- Bank account biller code (Finance utilities field)
+	- Bank account lodgement reference (Finance utilities field)
+	- Bank account bank group
+	- Bank account SWIFT code
+	- Bank account IBAN
+	- Bank account active date
+	- Bank account expiration date
+- Notice date - 24 July 2023
+- Status - Planned for November 2023 Finance utilities release.
+> Note: The Finance utilities fields (Biller code and Lodgement reference) have been added to standard 'Vendor bank account approval' FastTab in Accounts payable parameters in Finance Utilities version 10.0.35.202307311.
+
+### New bank statement transaction - Posting date
+- Finance Utilities functionality - Option to post **new** bank statement transaction at either **Today's date** or **Statement transaction date** (Statement's To date)
+- Recommended process: Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' is automatically enabled from 10.0.36. The feature automatically sets new 'Cash and bank management parameters' field 'Set the booking date as default accounting date for new transactions' to _Yes_. Select applicable option in this new field to set the default accounting date for new transactions:
+	- Yes: Bank statement line booking date
+ 	- No: Bank statement import date 
+- Reason for deprecation/removal - Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' was introduced in 10.0.31. In 10.0.35 MS has updated the feature which has resulted in a breaking change for Finance Utilities Posting date functionality. From 10.0.36 this feature is enabled by default.
+- Impact - Removal of the following fields & functionality:
+	- Posting date default on bank account <br>
+	- Posting date option on importing bank statement <br>
+ 	- Posting date on bank reconciliation <br>
+- Notice date - 4 September 2023
+- Status - Planned for November 2023 Finance utilities release.
+
+![Bank statement](Images/Deprecate_PostingDate_1.png "Bank statement") <br>
+
+![Bank reconciliation](Images/Deprecate_PostingDate_2.png "Bank reconciliation")
+
+# Previous version(s)
+
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.35.20230731
-
-DXC Finance Utilities 10.0.35 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
-Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
-Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
-Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
-
-> Note: If your Bank reconciliation creates **New transactions** offsetting to **Vendor**, **Bank** or **Customer** do not enable the following features:
-> - Enable bank reconciliation reversal even new transactions exist in posted bank statement
-> - Reverse posted bank statement with new transactions <br>
->
-> Reversal of these offset types are not yet supported in Finance utilities. Only reversing New transactions offsetting to **Ledger** is currently supported.
-
-> Note: From **10.0.32** MS has added a preview feature called **Vendor bank account change proposal workflow**. If this feature is enabled it will use std's functionality for approving changes to Vendor bank accounts and the following needs to be manually configured: <br> 
->   -  Vendor bank account approval in Accounts payable parameters - Enable the fields that requires approval
->   -  Workflow approval for proposed vendor change. Workflow to approve the proposed vendor bank account changes
-
-> Note: From **10.0.32** MS has added a feature called **Ability to post detailed vendor and customer payments, but summarize amounts to bank account**. <br>
->   -  If this feature is enabled and setup to summarise, journals that contain multiple lines that matches the criteria will be grouped into one bank transaction line. 
->   -  The new 'Bank transaction summarization id' is written to the Bank reconciliation's **Document number** for the Bank transaction.
->   -  This will affect companies that use Financial utilities parameter **Populate bank transaction document number** and **Group by document number** functionality on Reconciliation matching rules as the Payment journal's 'Journal batch number' isn't written to the Bank reconciliation's Document number (if the journal contains multiple lines that matches the criteria).
-
-> Note: From **10.0.32** MS has added a feature (on by default) called **Time zone for importing bank statements using Electronic reporting**. <br>
-> Finance utilities doesn't currently support converting date/time fields within the bank statement file.
-
-> Note: From **10.0.31** MS has added a feature called **New voucher and date for new transactions in the advanced bank reconciliation bank statement**. <br>
-> This adds new std. setting **Set the booking date as default accounting date for new transactions** to Cash and bank management parameters. <br>
-> If this is set to _Yes_ it will override Finance utilities posting date **Today's date** for mark as new transactions and post the new transactions at the booking date. Thus if you want to use **Today's date** for new transactions, ensure the new setting is set to _No_ <br>
-> > From **10.0.35** leaving the new field **Set the booking date as default accounting date for new transactions** set to _No_, doesn't use Finance utilities Posting date anymore. 
-> > - When set to No: Accounting date = Bank statement import date
-> > - When set to Yes: Accounting date = Booking date
-> >   <br>
-> > > From **10.0.36** this feature is not compatible with Finance utilities' Posting date, as it posts at a different date to accounting date. We recommend not enabling the feature from 10.0.36.
-> > > We will be deprecating Finance utilities **Posting date** in the November 2023 release. See [deprecation notice](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Release-notes.html#new-bank-statement-transaction---posting-date)
 
 #### Build 10.0.35.2023073156
 Release date: 14 November 2023 <br> 
@@ -180,48 +207,6 @@ Number	  	| Module	| Functionality	  	| Description
 15482		| Cash and bank management	| Bank statement import	- Custom formats | When using mapped **Ending balance** field, the opening balance was added to the imported bank statement's ending balance
 15199		| Cash and bank management	| Reconciliation matching rules	set | Extension to **processMatchRuleSet** to support reprocessing unmatched bank statement lines. <br> The issue came in where the filter criteria for each rule in the set found the same bank statement lines, but the rules used different bank statement fields to find the D365 customer account to post the customer payment journal. <br> <br> Example - Reconciliation matching rule set where all the rules filters to same criteria that matches to 15 bank statement lines: <br> Rule 1: Uses Bank statement field **Description** to find the D365 customer account, but only 3 lines could find a D365 customer account in this field to successfully post. <br> Rule 2: Uses Bank statement field **Entry reference** to find the D365 customer account. The expectation would be that Rule 2 would find the remaining 12 bank statement lines and post the applicable ones, but it found 0. <br> Before this change, only rule 1 in the set found bank statement lines, and subsequent rules found 0.
 15390		| Cash and bank management	| Bank reconciliation	| When running a **Mark new transactions** Reconciliation matching rule that: <br> • Posts customer payment journals and <br> • Financial utilities parameters **Only match posted statement lines** was set to _Yes_ and <br> • **No** journals were successfully posted (for example couldn't find any matching D365 customer account for all the lines) <br> All unmatched bank statement transactions, that matched the criteria, where moved to matched.
-
-
-# Deprecated features
-
-This section describes the features that have been removed, or planned to be removed from a Finance utilities version.
-
-### Vendor bank account change workflow
-- Reason for deprecation/removal - Replaced by D365 feature from 10.0.32 called 'Vendor bank account change proposal workflow' / 'Supplier bank account change proposal workflow'. [Learn more](https://learn.microsoft.com/en-gb/dynamics365/finance/accounts-payable/vendor-bank-account-workflow)
-- Impact - Removal of the following fields in Accounts payable parameters FastTab 'Vendor approval':
-	- Bank account number
-	- Bank account BSB
-	- Bank account biller code (Finance utilities field)
-	- Bank account lodgement reference (Finance utilities field)
-	- Bank account bank group
-	- Bank account SWIFT code
-	- Bank account IBAN
-	- Bank account active date
-	- Bank account expiration date
-- Notice date - 24 July 2023
-- Status - Planned for November 2023 Finance utilities release.
-> Note: The Finance utilities fields (Biller code and Lodgement reference) have been added to standard 'Vendor bank account approval' FastTab in Accounts payable parameters in Finance Utilities version 10.0.35.202307311.
-
-### New bank statement transaction - Posting date
-- Finance Utilities functionality - Option to post **new** bank statement transaction at either **Today's date** or **Statement transaction date** (Statement's To date)
-- Recommended process: Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' is automatically enabled from 10.0.36. The feature automatically sets new 'Cash and bank management parameters' field 'Set the booking date as default accounting date for new transactions' to _Yes_. Select applicable option in this new field to set the default accounting date for new transactions:
-	- Yes: Bank statement line booking date
- 	- No: Bank statement import date 
-- Reason for deprecation/removal - Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' was introduced in 10.0.31. In 10.0.35 MS has updated the feature which has resulted in a breaking change for Finance Utilities Posting date functionality. From 10.0.36 this feature is enabled by default.
-- Impact - Removal of the following fields & functionality:
-	- Posting date default on bank account <br>
-	- Posting date option on importing bank statement <br>
- 	- Posting date on bank reconciliation <br>
-- Notice date - 4 September 2023
-- Status - Planned for November 2023 Finance utilities release.
-
-![Bank statement](Images/Deprecate_PostingDate_1.png "Bank statement") <br>
-
-![Bank reconciliation](Images/Deprecate_PostingDate_2.png "Bank reconciliation")
-
-# Previous version(s)
-
-Approximately one year of previous versions are included below.
 
 ### Release 10.0.34.20230615
 
