@@ -3,7 +3,7 @@
 
 title: DXC Solutions for DocuSign and Dynamics 365
 description: Setup Dropdown lists
-author: jdutoit2
+author: pmusumeci
 manager: Kym Parker
 ms.date: 2023-02-20
 ms.topic: article
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  SAB_DSTemplateList
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: pmusumeci
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconDocuSign 
@@ -36,13 +36,15 @@ The List form can be reached by navigating to **Organization administration** > 
 To create a new list:
 
 1.	Click on **New** to create a new List.
-2.	Enter the **List name** field.
-3.	In the Values fast tab, select Add
+2.	Enter the **List name** field (Maximum 10 characters).
+3.	In the Values fast tab, select _Add_ to begin adding your list values
 
 | **Field**                         | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
 | **Default**          | Select the applicable value that should be set as default.   |
-| **Value**                | Enter the dropdown list value.     |
+| **Value**                | Enter the dropdown list value. (Maximum 10 characters)    |
+
+<br> ![List](../IMAGES/List.png)
  
 
 
