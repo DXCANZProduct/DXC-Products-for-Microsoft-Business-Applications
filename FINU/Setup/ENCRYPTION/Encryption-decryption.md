@@ -39,11 +39,11 @@ Once below has been setup, the functionality can be used on the following Financ
 Setup the following as **Secrets** in **Key vault parameters** for the encryption/decryption:
 - Phassprase - Longer version of a password used to encrypt the sender's private key using a hash of the passphrase as the secret key
 - Private key - Sender's private key
-- Public key -  Recipient's public key
+- Public key -  Sender's public key
 - Receiver's public key - Receiver's public key (used for decryption)
 
-Files are encrypted with the sender's private key, sender's public key and the pass phrase. <br>
-Files are decrypted with the recipient's private key, receiver's public key and pass phrase.
+Files are encrypted and signed with the sender's private key, receiver's public key, and the pass phrase. <br>
+Files are verified and decrypted with the recipient's private key, sender's public key and the pass phrase.
 
 PGP uses a passphrase to encrypt your private key on your machine. Your private key is encrypted on your disk using a hash of your passphrase as the secret key. You use the passphrase to decrypt and use your private key. A passphrase should be hard for you to forget and difficult for others to guess.
 
