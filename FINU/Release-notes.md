@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-11-14
+ms.date: 2023-11-16
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,6 +49,7 @@ Number	  	| Module	| Functionality	  	| Description
 15488		| Accounts receivable	| Interest notes - Due date	| New field called **Use customer payment terms** added to **Accounts receivable parameters**  and **Credit and collections parameters** (Collections tab). <br> If set to _Yes_, the customer's payment terms will be used to determine Due date when posting Interest notes. <br> [Guide](Setup/ACCOUNTS-RECEIVABLE/Customer-parameters.md)
 16039		| Cash and bank management	| Bank statement import	| **Run in the background** functionality added to **Import bank statements** <br> ![Import bank statements](Images/ReleaseNotes_20231130_1.png "Import bank statements") 
 16471		| Encryption	| | DXC encryption parameters: Rename field KeyVaultSignerPublicKey (Signer's public key) to KeyVaultReceiverPublicKey (Receiver's public key)
+16401		| Accounts payable	| Vendor bank account - Lodgement reference	| Increased Lodgement reference EDT from 18 to 20
 
 
 <ins>Bug fixes</ins>
