@@ -103,7 +103,7 @@ This section describes the features that have been removed, or planned to be rem
 	- Bank account active date
 	- Bank account expiration date
 - Notice date - 24 July 2023
-- Status - Planned for November 2023 Finance utilities release.
+- Status - Completed in 10.0.36.202311161
 > Note: The Finance utilities fields (Biller code and Lodgement reference) have been added to standard 'Vendor bank account approval' FastTab in Accounts payable parameters in Finance Utilities version 10.0.35.202307311.
 
 ### New bank statement transaction - Posting date
@@ -117,7 +117,7 @@ This section describes the features that have been removed, or planned to be rem
 	- Posting date option on importing bank statement <br>
  	- Posting date on bank reconciliation <br>
 - Notice date - 4 September 2023
-- Status - Planned for November 2023 Finance utilities release.
+- Status - Completed in 10.0.36.202311161
 
 ![Bank statement](Images/Deprecate_PostingDate_1.png "Bank statement") <br>
 
