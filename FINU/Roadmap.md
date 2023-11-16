@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-07-20
+ms.date: 2023-11-16
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,7 +37,6 @@ This page describes the features planned for future releases and planned release
 
 Release			    | ETA
 :--			        |:--
-2023-11          | 30 November 2023
 2024-06          | 28 June 2024
 
 ## Roadmap
