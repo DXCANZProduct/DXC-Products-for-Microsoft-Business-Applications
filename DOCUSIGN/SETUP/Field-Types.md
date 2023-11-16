@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 # Types of fields
 
 ## Signature. 
-New users first confirm their signing name and initials, and then select a signature style. When they adopt their signature, it is applied to the signing field. Otherwise, the signature is applied with a single click. Easy! The signing name is the name as you entered it when you added the recipient to your document. Default: Required
+New users first confirm their signing name and initials, and then select a signature style. When they adopt their signature, it is applied to the signing field. Otherwise, the signature is applied with a single click. Easy! The signing name is the name as you entered it when you added the recipient to your document. If a signature is to be optional select **optional signature** from the drop-down list of Tags
 Initial. Just like signing, new users first adopt a signature, and then their initials are applied to the document.
 
 ## Date Signed. 
@@ -51,17 +51,14 @@ This will prompt the user to complete thier title information in a displayed tex
 ## Email. 
 This field automatically populates with the recipient's email address.
 
-Checkbox. This is a standard, square box for recipients to select one or more options. You can add a single box or a group of multiple boxes. A checkbox group can include a validation rule to enforce how many checkboxes in the group your signer must select. Checkboxes can be required or optional, but if you apply validation that requires the signer to select a certain number of boxes, then the field becomes required. Learn more...
-Tip: If you have a scenario where your recipient must mark to indicate explicit agreement, use a single checkbox and select the Required Field option.
-Radio Buttons. Radio buttons provide options from which recipients can select only one response. Radio buttons are placed as a group, and you can add, remove, or position the individual buttons.
-When you add a radio button field, the group contains two options. Click the "+" icon to add an option to the radio group.
+## Checkbox. 
+This is a standard, square box for recipients to select one or more options. You can add a single box or a group of multiple boxes. 
 
+Tip: If you have a scenario where your recipient must mark to indicate explicit agreement, use a single checkbox and place it next to the item to be agreed. For exmaple an amount or currency to be used as part of the agreeemnt.
+
+## Radio Buttons ##
+Radio buttons provide options from which recipients can select only one response. Radio buttons are placed as a group, and you can add, remove, or position the individual buttons.
+When you add a radio button field, the group contains two options. 
 
 Radio buttons have the following unique properties:
-
-Group Label. This label identifies the radio button group. It is not shown to recipients but is included with the envelope form data.
-Radio Button Values. Values for each radio button. These values are shown to recipients and the selected value is included when you download form data for the document. In order to collect meaningful data from radio button selections by the recipient, enter unique and representative values for each radio button. On the completed PDF, only the selected option remains, appearing as an "x". Default values: "Radio1" "Radio2"
-Group Tooltip. Add an optional tooltip text to show to recipients when they hover over or select a radio button.
-Radio buttons, as a group, can be required or optional. If you set the Required Field property, your recipient must select one of the options in order to finish signing. Default: Required
-
-If you have a scenario where your recipient must mark to indicate explicit agreement, use a single checkbox with validation.
+** Radio Group ID ** This label identifies the radio button group. It is not shown to recipients but is included with the envelope form data.
