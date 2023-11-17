@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Introduction to Finance Utilities 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-27
+ms.date: 2023-11-17
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -122,12 +122,10 @@ A custom-built report has been developed to provide a Payment advice to vendors 
 
 ## Accounts payable - Vendor bank account changes workflow
 
-Finance utilities have added additional fields to Vendor approval on the **Accounts payable parameters**. This provides companies the option to submit changes to these fields to the standard vendor approval workflow.
+Finance utilities have added additional fields to **Vendor approval** and **Vendor bank account approval** on the **Accounts payable parameters**. <br>
+This provides companies the option to submit changes to these fields to the standard vendor approval workflows.
 - [Vendor bank account changes worklow setup](Setup/ACCOUNTS-PAYABLE/Vendor-bank-account-changes-workflow.md)
 
-> Note: From 10.0.32 MS has added a preview feature called 'Vendor bank account change proposal workflow'. If this feature is enabled it will use std's functionality for approving changes to Vendor bank accounts and the following needs to be manually configured: <br> 
->   -  Vendor bank account approval in Accounts payable parameters - Enable the fields that requires approval
->   -  Workflow approval for proposed vendor change. Workflow to approve the proposed vendor bank account changes
 
 ## Accounts payable - Save electronic reporting file to secure location
 
