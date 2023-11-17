@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Accounts payable setup - Vendor bank account changes workflow 
 author: helenho
 manager: Kym Parker
-ms.date: 2023-02-09
+ms.date: 2023-11-17
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,27 +31,19 @@ The fields as described in the following subsections are available to control th
 
 ## Vendor approval workflow
 
-When changes are made to specific vendor fields, standard D365 vendor workflow can be used for approval before the changes are applied to the vendor. 
-Finance utilities has added additional **Vendor bank account** and **Vendor** fields that can be managed by the same workflow.
+When changes are made to specific vendor or vendor bank account fields, standard D365 vendor workflow can be used for approval before the changes are applied to the vendor. 
+Finance utilities has added additional **Vendor bank account** and **Vendor** fields that can be managed by the workflows provided by standard D365.
 
 Users can access the **Accounts payable parameters** page by navigating to **Accounts payable > Setup > Accounts payable parameters**. <br>
-The below fields have been added to the existing Vendor approval fields. When enabled they will be submitted using the existing **Proposed vendor changes workflow.**
-
-### Vendor bank account
--	Bank groups
--	BSB number
--	Bank account number
--	SWIFT code
--	Biller code (Finance utilities BPAY field)
--	Lodgement reference (Finance utilities BPAY field)
--	IBAN
--	Active date
--	Expiration date
-
-> Note: From 10.0.32 MS has added a preview feature called 'Vendor bank account change proposal workflow'. If this feature is enabled it will use std's functionality for approving changes to Vendor bank accounts and the following needs to be manually configured: <br> 
->   -  Vendor bank account approval in Accounts payable parameters - Enable the fields that requires approval
->   -  Workflow approval for proposed vendor change. Workflow to approve the proposed vendor bank account changes
 
 ### Vendor
+The below fields have been added to the existing **Vendor approval** fields. <br> 
+When enabled they will be submitted using the existing **Proposed vendor changes workflow** (VendTableChangeProposalWorkflow). <br> 
 -	Payment id (existing field used for Finance utilities BPAY)
+
+### Vendor bank account
+The below fields have been added to the existing **Vendor bank account approval** fields. <br> 
+When enabled they will be submitted using the existing **Workflow approval for proposed vendor change** (VendBankAccountChangeProposalTemplate). <br>
+-	Biller code (Finance utilities BPAY field)
+-	Lodgement reference (Finance utilities BPAY field)
 
