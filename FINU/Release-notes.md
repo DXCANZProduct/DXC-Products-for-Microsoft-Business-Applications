@@ -75,6 +75,7 @@ Number	  	| Module	| Functionality	  	| Description
 16039		| Cash and bank management	| Bank statement import	| **Run in the background** functionality added to **Import bank statements** <br> ![Import bank statements](Images/ReleaseNotes_20231130_1.png "Import bank statements") 
 16471		| Encryption	| | DXC encryption parameters: Rename field KeyVaultSignerPublicKey (Signer's public key) to KeyVaultReceiverPublicKey (Receiver's public key)
 16401		| Accounts payable	| Vendor bank account - Lodgement reference	| Increased Lodgement reference EDT from 18 to 20
+N/A		| DXC License 	| DXC License 10.0.34.202310311 - Includes feature managed SmartSend and Core extensions
 
 
 <ins>Bug fixes</ins>
