@@ -31,11 +31,12 @@ ms.dyn365.ops.version: 10.0.34 and above
 
 ###   Grant Consent Fucntion
 
-When selecting Grant consent you are taken to ap age with the below error.
+When selecting Grant consent you are taken to a page with the below error.
 
 ![went_wrong](/IMAGES/Went_wrong.png)
 
-Log into your DocuSign Account and Vanigate to the Settings Tab at the top.  
-On theleft hand side select "Apps and Keys"
-on thepage under the Menu "Apps and Integration Keys" select Actions> View details on your App 
-under App details edit the redirect URLs to include your Dynmics365 instance 
+Log into your DocuSign Account and Navigate to the Settings Tab at the top.  
+On the left-hand side select "Apps and Keys"
+on the page under the Menu "Apps and Integration Keys" select Actions> View details on your App 
+under App details edit the redirect URLs to include your Dynmics365 instance
+
