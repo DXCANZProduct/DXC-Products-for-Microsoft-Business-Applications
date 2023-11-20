@@ -32,31 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-Latest versions: 
-- DXC License Manager - 10.0.32.202307312
-- DXC License - 10.0.34.202310311
-
-## DXC License 10.0.34.20231031
-
-DXC License 10.0.34.20231031 runs on the following Microsoft releases
-
-| Base                               | Version | Release                                                                                                                                                                 |
-| :--------------------------------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft Dynamics 365 application | 10.0.34 | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)         |
-| Microsoft Dynamics 365 application | 10.0.35 | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)         |
-| Microsoft Dynamics 365 application | 10.0.36 | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)         |
-| Microsoft Dynamics 365 application | 10.0.37 | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)         |
-| Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)         |
-
-<b>DXC License build 10.0.34.202310311</b>
-
-<ins>New features</ins>
-
-Number | Functionality                                                   | Description                                                                                    
-:----- | :-------------------------------------------------------------- | :--------------
-16411  | DXC License  | Include feature managed SmartSend and Core extensions
-
-## DXC License manager 10.0.32.20230731
+## Release 10.0.32.20230731
 
 DXC License Manager 10.0.32.20230731  runs on the following Microsoft releases
 
@@ -71,7 +47,7 @@ DXC License Manager 10.0.32.20230731  runs on the following Microsoft releases
 | Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)         |
 
 
-<b>DXC License manager build 7.0.6801.37 </b>
+<b>Build 7.0.6801.37 </b>
 
 <ins>New features</ins>
 
