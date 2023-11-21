@@ -66,7 +66,11 @@ _License server_
 _Customer telemetry retrieved by the license manager_  
 The following telemetry is collected by the license manager and logged within application insights upon license validation.
 
-- Serial number - this is being used to uniquely identify the customer environment. Serial number returned in response from license server for license validation calls initiated by FinOps is secured with RSA encryption key. License Manager module for FinOps verifies the response before extracting results from the payload response. This information is collected by Microsoft Azure Application Insights.
+- Serial number
+  - This is being used to uniquely identify the customer environment.
+  - RSA encrption key is used for securing the license validation response to protect the serial number.
+  - FinOps License Manager module verifies the response before extracting results from the payload response.
+  - This telemetry is collected within Microsoft Azure Application Insights.
 
 _Other telemetry retrieved relating to the ISV product installed_
 
