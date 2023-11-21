@@ -22,7 +22,22 @@ ms.search.validFrom: 2023-11-20
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# License Manager Web App
+# License Manager Web App (**Upcoming Release - 2024**)
+
+<!-- TOC -->
+
+- [License Manager Web App](#license-manager-web-app)
+  - [Overview](#overview)
+  - [How to gain access for your organization](#how-to-gain-access-for-your-organization)
+  - [Granting access to organization users](#granting-access-to-organization-users)
+  - [Signing up or signing in](#signing-up-or-signing-in)
+    - [Sign up process](#sign-up-process)
+  - [Data table properties](#data-table-properties)
+  - [Products](#products)
+  - [Customers](#customers)
+  - [License Expiry](#license-expiry)
+
+<!-- /TOC -->
 
 ## Overview
 
@@ -42,7 +57,7 @@ The web app service access details will be provided upon initial configuration. 
 
 An identity provider will be configured and granted access to the web app to enable users to sign up and sign in to the app using their organization email accounts. Currently only single domain (organization email) per ISV partner is supported.
 
-Sign up and sign in process will fail for non-registered oranisation admin, user or domain.
+Sign up and sign in process will fail for non-registered organisation admin, user or domain.
 
 For queries regarding access, please send an email to ECLANZProductSupport@dxc.
 
@@ -129,66 +144,162 @@ Throughout the application all data is displayed within data tables. This sectio
 1. Density allows users to toggle the data display view of the grid
    ![Image 8](./IMAGES/WebApp/Img_8.png)
 
-## Managing Products
+## Products
 
-Product Information shows all information relating to the Products that need to be license controlled
+This section describes the product information management capabilities available within the Power App.
+
+App Bar Menu Item Name - **_Products_**
+
+On load displays the list of all products.
+
+For details on how to the data table functions see [Data table properties](#data-table-properties)
+
+![Products](./IMAGES/WebApp/Img_9.png)
+**Details:**
 
 - **Name** – Name of the product, this should be same as the name of the enum added under DXCLicenseProductIdentifier registered within the extension for DXC License Manager in FinOps.
 - **Description** – Description for the product
-- **Region** - Used to identify the region of the product head office
-- **Disable License** – When set to yes, a perpetual license is automatically created for customers when requested.
+- **Region** - Used to identify the region of the product head office. Available options (None, ANZ, Global, Nordic)
+- **Disable License** – When set to yes, a perpetual license is automatically created for customers when requested. Available options (Yes, No)
 - **TOC** – Terms and conditions URI for the organization
 - **User Guide** – URL redirecting to the user guide for the product
 - **Support Email** – Email contact for product help support
+- **Active** - Determine if the product is enabled. Available options (Yes, No)
+
+**Functions available:**
 
 - **Add** - Displays a popup view to allow new product to be added.
+  ![AddProducts](./IMAGES/WebApp/Img_10.png)
 - **Update** - Double click on the grid row to enabled edit mode. Once all necessary data is modified, click outside the grid and then click update to complete the update process.
+  ![UpdateProducts](./IMAGES/WebApp/Img_20.png)
 - **Delete** - Delete the product record. Note: A customer record cannot be deleted that has customer associated to it
+  ![DeleteProducts](./IMAGES/WebApp/Img_22.png)
+- **View Customers** - Displays the list of all customers for the selected product.
+  ![ProductCustomers](./IMAGES/WebApp/Img_19.png)
 
-## Managing Customers
+## Customers
 
-Customer Information shows all information relating to the Customer who has licensed Products by the organization <br>
+This section describes the customer information management capabilities available within the Power App.
 
+App Bar Menu Item Name - **_Customers_**
+
+On load displays the list of all customers.
+
+For details on how to the data table functions see [Data table properties](#data-table-properties)
+
+![Customers](./IMAGES/WebApp/Img_12.png)
+
+**Details:**
 • **Customer Name** – Official Name of the customer <br>
 • **Customer Description** – Description or a.k.a name for the customer <br>
 • **Customer Region** - Used to identify the region of the customer head office <br>
 • **Customer Number** – Used to identify the customer in sales/finance systems <br>
 
+**Functions available:**
+
 - **Add** - Displays a popup view to allow new customer to be added.
+  ![AddCustomer](./IMAGES/WebApp/Img_13.png)
 - **Update** - Double click on the grid row to enabled edit mode. Once all necessary data is modified, click outside the grid and then click update to complete the update process.
+  ![UpdateCustomer](./IMAGES/WebApp/Img_23.png)
 - **Delete** - Delete the customer record. Note: A customer record cannot be deleted that has products or environments associated to it
+  ![DeleteCustomer](./IMAGES/WebApp/Img_21.png)
+- **View Products** - Navigates to a view that allows products to be licensed to the selected customer
+- **View Environments** - Navigates to new view that allows environments to be licensed to the selected customer.
 
-## **Managing Customer Product Licenses**
+### Customer Products
 
-Customer Products shows a list of all Products that have been licensed for the selected customer. <br>
-The following will either display a green tick (active) or red cross (inactive/expired): <br>
+This section describes the customer product information management capabilities available within the Power App.
 
-- **Active** – Where the customer product _Subscription End Date (Expiry Date)_ has not been reached <br>
-- **Enabled** – Customer products _Enabled_ is set to YES <br>
-- **Site License** – Customer product’s _Site (Module) License_ is set to YES. Where this is inactive, _No. of Users MUST be completed_
-- **Product** - Select Product from the list of available Products <br>
-- **License Type** - Options Include: <br> - Perpetual - Product purchased with perpetual license, but maintenance should still be invoiced in order to receive ‘latest’ code <br> - Month - Subscription License billed monthly <br> - Quarter - Subscription License billed quarterly <br> - Annual - Subscription License billed annually <br> - Subscription - Licensed based on subscription model <br> - Temp - A temp license has been provided to enable customer to evaluate the product <br>
-- **Enabled**
-- **Subscription Start Date** - The original date of purchase. This can show how long a customer has been using the product
-- **Subscription End Date (Expiry Date)** - Based on invoicing. This must be checked annually to ensure customer is being invoiced and making payments.
-- **Feature Disable Date** - If all efforts have not resulted in payment from the customer, the feature will be disabled and can no longer be used. See \*\* <br>
+Navigate from Customers View
+
+On load displays the list of all products licensed to the customer.
+
+For details on how to the data table functions see [Data table properties](#data-table-properties)
+
+![CustomerProducts](./IMAGES/WebApp/Img_14.png)
+
+**Details:**
+
+- **Name** - Name of the product
+- **Subscription End(Expiry) Date** - Based on invoicing. This must be checked annually to ensure customer is being invoiced and making payments.
+- **Feature Disable Date** - If all efforts have not resulted in payment from the customer, the feature will be disabled and can no longer be used.  
   Note: License Manager must be linked to a Feature Key for this option
+- **License Type** - Options Include:
+  - Perpetual - Product purchased with perpetual license, but maintenance should still be invoiced in order to receive ‘latest’ code
+  - Month - Subscription License billed monthly
+  - Quarter - Subscription License billed quarterly
+  - Annual - Subscription License billed annually
+  - Subscription - Licensed based on subscription model
+  - Temp - A temp license has been provided to enable customer to evaluate the product
+- **Enabled** – Determines if the license is enabled for the product or not.
+- **Active** – Where the customer product _Subscription End Date (Expiry Date)_ has not been reached.
+- **Site License** – Customer product’s _Site (Module) License_ is set to YES. Where this is inactive, _No. of Users MUST be completed_
+- **No. of Users** - The number of users licensed to. Not required if site license is enabled.
+- **Subscription Start Date** - The original date of purchase. This can show how long a customer has been using the product
 - **Agreement Start Date** - Date of current pricing agreement/SOW. This date can be used to identify customer to be included/excluded from price increases
-- **Site (Module) License**:
 - **WBS** – Identifier that can be used to identify invoiced line item
-- **Invoice as** - Used to help identify how the product is displayed in an invoice. This is due to sales calling products many different things within a SOW.
+- **Invoiced as** - Used to help identify how the product is displayed in an invoice. This is due to sales calling products many different things within a SOW.
 - **Notes** - Additional information
 
-The other options available on this form include: <br>
+**Functions available:**
 
 - **Add** - Displays a popup view to allow new product to be licensed/added to the customer.
-- **View/Update** - Displays a popup view to allow customer product association data to be updated.
+  ![AddCustomerProduct](./IMAGES/WebApp/Img_15.png)
+- **View/Update** - Displays a popup view to allow customer product association data to be updated or to view all details of the record.
+  ![ViewUpdateCustomerProduct](./IMAGES/WebApp/Img_16.png)
 - **Delete** - Delete the product record for the selected customer. The product can only be deleted if all the environments for the Customer has been deleted.
+  ![DeleteCustomerProduct](./IMAGES/WebApp/Img_24.png)
 
-## **Managing Customer Environments**
+### Customer Environments
 
-Add Tenant and Serial number for all the customer's environments.
+This section describes the customer environment information management capabilities available within the Power App.
+
+Navigate from Customers View
+
+On load displays the list of all environments licensed to the customer.
+
+For details on how to the data table functions see [Data table properties](#data-table-properties)
+
+![CustomerEnvironments](./IMAGES/WebApp/Img_17.png)
+
+**Details:**
+
+- **Tenant** - Domain of the environment, for example, dxc.com
+- **Serial Number** - Serial of the FinOps environment that the license needs to be applied to. This can be found under About in FinOps front end environment.
+- **Active** - Determines if the environment record is enabled.
+
+**Functions available:**
 
 - **Add** - Displays a popup view to allow new environment to be licensed/added to the customer.
+  ![AddCustomerEnvironment](./IMAGES/WebApp/Img_18.png)
 - **Update** - Double click on the grid row to enabled edit mode. Once all necessary data is modified, click outside the grid and then click update to complete the update process.
+  ![ViewUpdateCustomerEnvironments](./IMAGES/WebApp/Img_25.png)
 - **Delete** - Delete the environment record for the selected customer.
+  ![DeleteCustomerEnvironment](./IMAGES/WebApp/Img_26.png)
+
+## License Expiry
+
+This section describes the license expiry view.
+
+Navigate from License Expiry View
+
+On load displays the list of all product license expiring or expected to expire.
+
+For details on how to the data table functions see [Data table properties](#data-table-properties)
+
+![](./IMAGES/WebApp/Img_19.png)
+
+**Filter options:**
+
+- This Week
+- This Month
+- Next three months
+- Next six months
+- Within this year
+
+**Details:**
+
+- **Customer** - Customer name
+- **Product** - Product name
+- **Date** - Expiry Date
+- **Flag** - Flag to determine if the license has already expired

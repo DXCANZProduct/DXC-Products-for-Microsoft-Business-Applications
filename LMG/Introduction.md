@@ -51,4 +51,4 @@ The objectives are:
 
 - [Describe enabling license control for product given a specific ISV partner in FinOps](./FinOps.md)
 - [Describe the License Manager Power App](./PowerApp.md)
-- [Describe the License Manager Web App](./PowerApp.md)
+- [Describe the License Manager Web App (**Upcoming Release - 2024**)](./ReactWebApp.md)

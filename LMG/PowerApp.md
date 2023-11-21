@@ -29,6 +29,17 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # License Manager PowerApp
 
+<!-- TOC -->
+
+- [License Manager Views](#license-manager-views)
+  - [Customer Details](#customer-details)
+  - [Customer Products](#customer-products)
+    - [Feature disable](#feature-disable)
+  - [Product Details](#product-details)
+  - [Reports](#reports)
+- [Installation of PowerApp](#installation-of-powerapp)
+<!-- /TOC -->
+
 ## License Manager Views
 
 | **Logo**                                                         | **View**                                                                                                   |
