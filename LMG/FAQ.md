@@ -55,6 +55,7 @@ Email: ECLANZProductSupport@dxc.com
 - All http web request to the license server is authorized by a bearer token generated using Microsoft Entra ID service pricipal credentials.
 - All credentials are privately accessed and can only be used internally.
 - The bearer token is not exposed externally and cannot be accessed via code extensions.
+- All license data is stored within Microsoft Azure SQL Server Databases using their standard [security measures](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql).
 
 _License server_
 
@@ -65,7 +66,7 @@ _License server_
 _Customer telemetry retrieved by the license manager_  
 The following telemetry is collected by the license manager and logged within application insights upon license validation.
 
-- Serial number - this is being used to uniquely identify the customer environment. Serial number returned in response from license server for license validation calls initiated by FinOps is secured with RSA encryption key. License Manager module for FinOps verifies the response before extracting results from the payload response.
+- Serial number - this is being used to uniquely identify the customer environment. Serial number returned in response from license server for license validation calls initiated by FinOps is secured with RSA encryption key. License Manager module for FinOps verifies the response before extracting results from the payload response. This information is collected by Microsoft Azure Application Insights.
 
 _Other telemetry retrieved relating to the ISV product installed_
 
