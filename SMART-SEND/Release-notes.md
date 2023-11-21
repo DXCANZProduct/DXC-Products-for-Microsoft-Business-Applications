@@ -34,7 +34,7 @@ This document describes the features that are either new or changed in the relea
 
 ### Release 10.0.34.20231026
 
-DXC Smart Business Form Email Manager 10.0.29 runs on the following Microsoft releases
+DXC Smart Business Form Email Manager 10.0.34 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
