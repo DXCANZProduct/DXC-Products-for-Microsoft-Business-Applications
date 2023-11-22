@@ -46,43 +46,31 @@ Email: ECLANZProductSupport@dxc.com
 
 ## Dependency and Security Information
 
-- The License Manager customization for ISV product license validation is implemented within the existing Dynamics 365 Finance and Operations framework.
-- Does not include reference to any other third party assembly files.
-- All classes for license control has been written in x++ and is bundled using the standard Dynamics 365 Finance and Operations packaging procedures.
-- All classes within the module are marked as internal and cannot be invoked by third party applications or D365 customizations.
-- License validation process for ISV installed products trigger a backend call to a Microsoft Azure hosted license service managed by DXC ANZ Product Team.
-- License validation requests made to license server are done using HTTP Web Request framework.
-- All http web request to the license server is authorized by a bearer token generated using Microsoft Entra ID service pricipal credentials.
-- All credentials are privately accessed and can only be used internally.
-- The bearer token is not exposed externally and cannot be accessed via code extensions.
-- All license data is stored within Microsoft Azure SQL Server Databases using their standard [security measures](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql).
+License Manager includes
 
-_License server_
+- Use of Microsoft Azure Application Insights library
+- Makes secure HTTPS connections for license validation in accordance to the Microsoft security standards
 
-- Hosted within Microsoft Azure
-- Protected and secured with Microsoft [security guidelines](https://learn.microsoft.com/en-us/azure/app-service/overview-security#client-authentication-and-authorization) for Microsoft Azure Web App
-- Blocked for unauthorized access with [App Service authentication and authorization suppport](https://learn.microsoft.com/en-us/azure/app-service/overview-security#client-authentication-and-authorization) using Microsoft Entra ID and service principal.
-
-_Customer telemetry retrieved by the license manager_  
-The following telemetry is collected by the license manager and logged within application insights upon license validation.
+_Customer telemetry retrieved by the license manager_
 
 - Serial number
-  - This is being used to uniquely identify the customer environment.
-  - RSA encrption key is used for securing the license validation response to protect the serial number.
-  - FinOps License Manager module verifies the response before extracting results from the payload response.
-  - This telemetry is collected within Microsoft Azure Application Insights.
+  - Used to uniquely identify a customer environment for license validation.
+  - RSA encrption key is used for securing the serial number in the license server validation responses.
+  - FinOps License Manager module verifies the response before extracting results from the payload.
 
 _Other telemetry retrieved relating to the ISV product installed_
 
-- Product name - this is the name of ISV product instlled
-- Model name - this is the name of the model for the ISV product installed
-- Model version - this is the version of the model for the ISV product installed
-- Host url - this is the URL of the host environment on which the model has been installed.
-- Is enabled - this is the current status of the license validation result for the installed ISV product
-- Is installed - this is a flag indicating if the ISV product is installed
-- Is production environment - this is a flag indiciating if the current environment is a production environment
+- Product name - Name of installed ISV product.
+- Model name - Name of the installed ISV product's FinOps model
+- Model version - Installed ISV product's FinOps model version
+- Host url - URL of the host environment where the ISV product is installed.
+- Is enabled - Current license status for the installed ISV product.
+- Is installed - Indicates if ISV product is installed.
+- Is production environment - Indicates if environment is a production environment.
 
-Note: License Manager does not collect any other information other than the those specified above. It does not reference or collect any telemetry against any other installed ISV modules.
+All telemetry is collected and logged within Microsoft Azure Application Insights.
+
+Note: License Manager does not collect any other information other than those specified above. It does not reference or collect any telemetry against any other installed system or ISV modules.
 
 ## Troubleshooting
 
