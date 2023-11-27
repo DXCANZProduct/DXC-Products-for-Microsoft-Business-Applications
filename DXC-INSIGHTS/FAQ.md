@@ -36,6 +36,17 @@ Support contact details can be located on the **Contact** tab at **Organization 
 On the Navigation bar, select **Help & support > About**. <br>
 A list of installed models will be displayed on the **Version** tab.  Scroll to **DXC Insights**. The version information will be displayed on the right (i.e. DXC Insights  **10.0.31.202306231** (isv))
 
+## Dependency and Security Information
+
+Insights for D365 FO includes
+
+- Use of Microsoft Azure Application Insights library
+- Use of DXC.FnOInsights library, an extension of the Microsoft Azure Application Insights library to add additional telemetry metrics for enhanced logging capabilities. It still uses the same API that the Microsoft Azure Application Insights data collectors use.
+
+All telemetry is logged within the Microsoft Azure Application Insights only.
+
+Note: DXC does not collect any usage information, or telemetry against any other installed system or ISV module from Insights for D365 FO. 
+
 ## 	Troubleshooting
 
 ###   Product is installed but functionality not visible
