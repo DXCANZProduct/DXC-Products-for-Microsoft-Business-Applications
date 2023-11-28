@@ -64,7 +64,7 @@ To Export Print management settings
 9.	Once completed  select Download file from the menu bar
 10.	This downloads a CSV file which can  be used in the Import process or stored as a backup in case of user error
 
-Below is a brief outline of the available fields 
+Below is a brief outline of the fields in the entity.
 
 |  **Field**  | **Description** | 
 |:---|:---|     
