@@ -5,7 +5,7 @@ title: Insights for D365 FO
 description: Insights for D365 FO - Release notes
 author: Patrick Sharma
 manager: Kym Parker
-ms.date: 2023-10-03
+ms.date: 2023-11-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.36.2023111291
+### Release 10.0.36.202311291
 
 Insights for D365 FO 10.0.36 runs on the following Microsoft releases
 
@@ -43,7 +43,7 @@ Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
 Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
 
-#### Build 10.0.36.2023111291
+#### Build 10.0.36.202311291
 Release date: 29 November 2023
 
 <ins>Bug fixes</ins>
