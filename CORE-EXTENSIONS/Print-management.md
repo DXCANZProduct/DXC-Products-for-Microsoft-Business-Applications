@@ -33,12 +33,12 @@ ms.dyn365.ops.version: 10.0.34
 A new data entity titled “Print management document settings” has been developed to allow for the export and subsequent import of document settings within the printer management forms including conditional settings to a CSV Format file where they can be subsequently imported into another environment or legal entity.  This new data entity is capable of exporting settings related to other DXC products including Smart Send and DocuSign.   The entity only exports Printer settings that have been set up and will not export settings in “default” status.
 
 Print Management settings are available in the following Modules-<br>
-* Accounts receivable<br>
-* Inventory management<br>
-* Procurement and sourcing<br>
-* Project management and accounting<br>
-* Transportation management<br>
-* Warehouse management<br>
+* Accounts receivable
+* Inventory management
+* Procurement and sourcing
+* Project management and accounting
+* Transportation management
+* Warehouse management
 
 
 ### Print management document settings Data Entity Overview
