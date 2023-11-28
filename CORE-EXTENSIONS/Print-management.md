@@ -51,7 +51,7 @@ To Export Print management settings
 3.	Select Add entity
 4.	Complete the dialog, 
     * **Entity name**	- Print management document settings
-    * **Target data format** - CSV (due to complex string data format Excel is not recommended if import is required at a later date
+    * **Target data format** - CSV (due to complex string data format Excel is not recommended if import is required at a later date)
     * **Use sample file**	- No
     * **Skip staging** - No (the entity will override the default value of Yes once added)
     * **Default refresh type** - All fields
@@ -65,9 +65,15 @@ Below is a brief outline of the availabel fields
 
 |  **Field**  | **Description** | 
 |:---|:---|     
-|  **NODETYPEt**  | Finance and Operation area that the print settings relate to.  For Example, Sales, Purchase, Project etc. <br> The node does not represent the Module, for example Accounts receivable module holds settings for Sales and some Inventory related tasks such as picking list |   
+|  **NODETYPE**  | Finance and Operation area that the print settings relate to.  For Example, Sales, Purchase, Project etc. <br> The node does not represent the Module, for example Accounts receivable module holds settings for Sales and some Inventory related tasks such as picking list |   
 |  **PRIORITYID**  | Name of the form within Print management setup.  Eg. SalesOrderConfirmation. |  
 |  **DESCRIPTION**  | Select the report name available in the system. |  
-|  **DESTINATIONEMAILCC**  | Basic description of the business form. |  
-|  **Email ID**  | Email templates to use when emailing the business form. |  
-|  **File name**  | File name that will be generated for the business form or report. Placeholder tags are supported. This helps with giving meaningful name to the files. Refer to [Email placeholder](Email-placeholder.md) for further detail on supported placeholder tags. |  
+|  **DESTINATIONEMAILCC** <br>  **DESTINATIONEMAILFILEFORMAT** <br> **DESTINATIONEMAILSUBJECT** <br> **DESTINATIONEMAILTO** <br> | Fields outlining parameters used when Print destination settings are selected for Email. |  
+|  **DESTINATIONFILEFORMAT** <br>  **DESTINATIONFILENAME**  | Fields outlining parameters used when Print destination settings are selected for File. |  
+|  **DESTINATIONPRINTERCOLLATED** <br>  **DESTINATIONPRINTERFROMPAGE** <br> **DESTINATIONPRINTERNAME** <br> **DESTINATIONPRINTERNUMBEROFCOPIES** <br> **DESTINATIONPRINTERNUMBEROFCOPIES** <br>**DESTINATIONPRINTERORIENTATION** <br> **DESTINATIONPRINTERPRINTALLPAGES** <br>**DESTINATIONPRINTERPRINTBOTHSIDES** <br>**DESTINATIONPRINTERTOPAGE** <br> **SAVETOARCHIVE** <br>| Fields outlining parameters used when Print destination settings are selected for printer output | 
+|  **ESSEMAILTEMPLATEID** <br>  **ESSFILENAME** <br> **ESSLOGISTICSLOCATIONROLENAME** <br>  | Fields outlining parameters For Smart Send. |  
+|  **ISPRINTJOBSETTINGSCONFIGURED**  | Yes/no Field if form has Print destination settings. |  
+|  **PRINTMEDIUMTYPE**  | Number of copies to be printed  |  
+|  **QUERYPACKED**  | Contains string data related to specific conditional settings that have been created.  The Query from within the user interface that outlines the conditions for conditional outputs are stored as data String   |  
+|  **REPORTFORMATNAME**  | Name of the stationary report being utilised   |  
+|  **SUPPRESS**  | Is Printing for this document suspended   |  
