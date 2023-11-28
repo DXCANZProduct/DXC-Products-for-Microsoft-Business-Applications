@@ -34,7 +34,7 @@ This document describes the features that are either new or changed in the relea
 
 ### Release 10.0.36.2023111291
 
-Insights for D365 FO 10.0.34 runs on the following Microsoft releases
+Insights for D365 FO 10.0.36 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
