@@ -60,6 +60,14 @@ Number	  	| Functionality	  | Description
 16567		| Exchange Rate update	| When importing General Journals with no exchange rate the Journal is populated with the Default Exchange rate for that currency
 13552		| Feature management	| Core extensions now available via Feature management
 
+## Feature management
+From 10.0.36.202311 Core Extensions can be enabled via Feature management
+Enable the following feature in D365 Feature management:
+
+- Core extensions
+
+If above feature is not visible, press **Check for updates** to refresh the feature management list.
+
 <ins>Bug fixes</ins>
 
 Number	  	| Functionality	  | Description
