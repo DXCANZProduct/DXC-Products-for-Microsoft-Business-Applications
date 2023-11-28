@@ -32,14 +32,12 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.34.20230608
+### Release 10.0.36.2023TBA
 
-DXC Core extensions 10.0.34 runs on the following Microsoft releases
+DXC Core extensions 10.0.36 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
-Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
 Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
 Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
@@ -47,7 +45,7 @@ Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dyn
 
 
 
-#### Build 10.0.34.2023TBA
+#### Build 10.0.36.2023TBA1
 
 Release date: 2023
 
@@ -55,8 +53,18 @@ Release date: 2023
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-14330		| Build fixes	| 10.0.34 build error fix for: <br> - Add missing reference to model FinTag <br> - Update register symbolic link script
+14998		| DMF Toolbox	| Exposes 2 new fields in DMF data entities
+16043		| Scramble data in FinOps env to protect sensitive data	| Allows for information to be scrambled post a database copy or restore from a production into a sandbox environment.
+16013		| Export/import of Print management settings	| When importing General Journals with no exchange rate the Journal is populated with the Default Exchange rate for that currency
+16514		| Reset Print Management | Resets Print management setting for the related module to Default, can be used in case of errors or query corruption. Available in the following Modules, Accounts receivable, Inventory management, Procurement and sourcing, Project management and accounting, Transportation management, Warehouse management
+16567		| Exchange Rate update	| When importing General Journals with no exchange rate the Journal is populated with the Default Exchange rate for that currency
+13552		| Feature management	| Core extensions now available via Feature management
 
+<ins>Bug fixes</ins>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+15670		| User security details report not generating	| corrected error when User security details report is run with privileges set to Yes
 
 # Previous version(s)
 
