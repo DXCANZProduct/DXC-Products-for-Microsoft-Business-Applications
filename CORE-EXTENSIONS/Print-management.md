@@ -40,13 +40,34 @@ Print Management settings are available in the following Modules-<br>
 •	Warehouse management<br>
 
 
+### Print management document settings Data Entity Overview
 
+To Export Print management settings 
+1. Navigate to **Workspaces > Data management > Export**
+2. Create a new Group
+    * **Group name** - Enter a name for the processing group e.g. Printer setup
+    * **Description**	- Enter a description for the processing group e.g. Print management Settings Date 
+    * **Data project operation type**	- Export
+3.	Select Add entity
+4.	Complete the dialog, 
+    * **Entity name**	- Print management document settings
+    * **Target data format** - CSV (due to complex string data format Excel is not recommended if import is required at a later date
+    * **Use sample file**	- No
+    * **Skip staging** - No (the entity will override the default value of Yes once added)
+    * **Default refresh type** - All fields
+5.	Select Add
+7.	Select Close
+8.	Select Export options > Export now from the action pane
+9.	Once completed  select Download file from the menu bar
+10.	This downloads a CSV file which can  be used in the Import process or stored as a backup in case of user error
+
+Below is a brief outline of the availabel fields 
 
 |  **Field**  | **Description** | 
 |:---|:---|     
-|  **Default**  | Select a default business form or report per document type. When the Smart Send button is clicked on each of the document forms, the default business form or report is used. If none are selected, then the system default will be used. |   
-|  **Report**  | Select from a list of business form or report types that are supported for Smart Send. <br/> * Customer account statement <br/> * Payment advice (Vendor payment advice) <br/> * Purchase order <br/> * Sales invoice <br/> * Free text invoice <br/> * Sales quotation <br/> * Project invoice <br/> * Sales order confirmation <br/> * Packing slip <br/> * Sales agreement confirmation <br/> * Project quotation <br/> * Collection letter <br/> * Customer payment advice <br/> * Request for quotation <br/> * Container contents <br/> * Bill of lading <br/> * Sales return <br/> * Transfer overview. |  
-|  **Report format**  | Select the report name available in the system. |  
-|  **Description**  | Basic description of the business form. |  
+|  **NODETYPEt**  | Finance and Operation area that the print settings relate to.  For Example, Sales, Purchase, Project etc. <br> The node does not represent the Module, for example Accounts receivable module holds settings for Sales and some Inventory related tasks such as picking list |   
+|  **PRIORITYID**  | Name of the form within Print management setup.  Eg. SalesOrderConfirmation. |  
+|  **DESCRIPTION**  | Select the report name available in the system. |  
+|  **DESTINATIONEMAILCC**  | Basic description of the business form. |  
 |  **Email ID**  | Email templates to use when emailing the business form. |  
 |  **File name**  | File name that will be generated for the business form or report. Placeholder tags are supported. This helps with giving meaningful name to the files. Refer to [Email placeholder](Email-placeholder.md) for further detail on supported placeholder tags. |  
