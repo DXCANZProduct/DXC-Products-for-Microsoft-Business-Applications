@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.34.202310031
+### Release 10.0.36.2023111291
 
 Insights for D365 FO 10.0.34 runs on the following Microsoft releases
 
@@ -42,6 +42,18 @@ Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
 Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
 Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
+
+#### Build 10.0.36.2023111291
+Release date: 29 November 2023
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+16609	| Telemetry logging with Insights for D365 FO	| Fix issues withn telemetry logging when when users are removed from the system.
+
+
+# Previous Version(s)
 
 #### Build 10.0.34.202310031
 Release date: 03 October 2023
@@ -64,8 +76,6 @@ Number	| Name		 | Description
 12178	| Telemetry logging with Insights for D365 FO	| - Support telemetry logging when users are added or removed from the system. User management telemetry logging can be switched on from the Insights for D365 FO parameters form. <br> - Support telemetry logging when changes are made to user access levels and roles.
 15790	| Insights for D365 FO parameters	| Added help text on the Insights for D365 FO parameters form to improve the user experience.
 
-
-# Previous Version(s)
 
 ### Release 10.0.31.202306231
 
