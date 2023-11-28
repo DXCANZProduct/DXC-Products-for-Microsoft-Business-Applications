@@ -45,6 +45,9 @@ Print Management settings are available in the following Modules-<br>
 
 ### Data Entity Overview
 
+The Print management document settings entity allows for existing Print management settings to be exported into a CSV file.  Complex conditional settings can be exported and copied to sandbox environments for testing or training as well as copying between legal entities, keeping in mind that number sequences and conditions are not always the same between legal entities.  
+Conditional settings can be set up with specific parameters related to customer/vendor accounts, transaction conditions and more.  These conditions are built as a query and stored in the database as a complex string of data.  Due to excel field limitations conditional format settings should only be exported using CSV format, not .xlxs
+
 To Export Print management settings 
 1. Navigate to **Workspaces > Data management > Export**
 2. Create a new Group
