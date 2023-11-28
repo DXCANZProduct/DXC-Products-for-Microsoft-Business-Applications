@@ -83,3 +83,9 @@ Below is a brief outline of the fields in the entity.
 |  **QUERYPACKED**  | Contains string data related to specific conditional settings that have been created.  The Query from within the user interface that outlines the conditions for conditional outputs are stored as data String   |  
 |  **REPORTFORMATNAME**  | Name of the stationary report being utilised   |  
 |  **SUPPRESS**  | Is Printing for this document suspended   |  
+
+### Reset print management.
+
+With the ability to import Print management settings there may be the requirement to Reset print management settings back to default.  A Reset print management function has been provided positioned next to the print management button in all available modules.  To enable access to the reset function users, need to be given access to the **Maintain and reset settings for print management privilege** as part of thier security role.
+
+
