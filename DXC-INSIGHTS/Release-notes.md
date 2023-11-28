@@ -50,7 +50,7 @@ Release date: 29 November 2023
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-16609	| Telemetry logging with Insights for D365 FO	| Fix issues with telemetry logging when when users are removed from the system.
+16609	| Telemetry logging with Insights for D365 FO	| Fix issues with telemetry logging when users are removed from the system.
 
 
 # Previous Version(s)
