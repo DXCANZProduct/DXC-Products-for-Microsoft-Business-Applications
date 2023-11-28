@@ -41,9 +41,9 @@ Print Management settings are available in the following Modules-<br>
 * Warehouse management
 
 
-### Print management document settings
+## Print management document settings
 
-## Data Entity Overview
+### Data Entity Overview
 
 To Export Print management settings 
 1. Navigate to **Workspaces > Data management > Export**
