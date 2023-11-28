@@ -41,7 +41,9 @@ Print Management settings are available in the following Modules-<br>
 * Warehouse management
 
 
-### Print management document settings Data Entity Overview
+### Print management document settings
+
+## Data Entity Overview
 
 To Export Print management settings 
 1. Navigate to **Workspaces > Data management > Export**
@@ -62,7 +64,7 @@ To Export Print management settings
 9.	Once completed  select Download file from the menu bar
 10.	This downloads a CSV file which can  be used in the Import process or stored as a backup in case of user error
 
-Below is a brief outline of the availabel fields 
+Below is a brief outline of the available fields 
 
 |  **Field**  | **Description** | 
 |:---|:---|     
