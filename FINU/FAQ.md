@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - FAQ 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-06-26
+ms.date: 2023-11-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,6 +37,21 @@ Support contact details can be located on the **Contact** tab at **Organization 
 
 On the Navigation bar, select **Help & support > About**. <br>
 A list of installed models will be displayed on the **Version** tab.  Scroll to **DXC Finance Utilities**. The version information will be displayed on the right (i.e. DXC Finance Utilities **10.0.240.2019443** (isv))
+
+### Dependency and Security Information
+
+Finance Utilities includes:
+- Use of Microsoft .NET Azure Storage library <br>
+      - Allows interaction with Azure Blob Storage securely. <br>
+- Use of PGP encryption library <br>
+      - To encrypt and decrypt data imported and exported using Finance utilities connection if enabled <br>
+- Use of SSH.NET library <br>
+      - Renci libraries to upload and download files to an SFTP server <br>
+- Implement ABN Lookup through the Australian government web API for AU registered companies. <br>
+      - More information can be found at the Australian Business Register (ABR) [website](https://abr.business.gov.au/Tools/WebServices) <br>
+      - Ensures secure HTTPS connections for validation lookup requests in accordance to the Microsoft security standards <br>
+
+For Microsoft Azure blob storage, File transfer protocols, secure file transfer protocols, SharePoint and ABN Lookup web API - all configurations are updated within Finance operations and hosted by the customer.
 
 
 ## 	Troubleshooting
