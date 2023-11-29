@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-11-20
+ms.date: 2023-11-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,12 +41,6 @@ Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 
-> Note: If your Bank reconciliation creates **New transactions** offsetting to **Vendor**, **Bank** or **Customer** do not enable the following features:
-> - Enable bank reconciliation reversal even new transactions exist in posted bank statement
-> - Reverse posted bank statement with new transactions <br>
->
-> Reversal of these offset types are not yet supported in Finance utilities. Only reversing New transactions offsetting to **Ledger** is currently supported.
-
 
 > Note: From **10.0.32** MS has added a feature called **Ability to post detailed vendor and customer payments, but summarize amounts to bank account**. <br>
 >   -  If this feature is enabled and setup to summarise, journals that contain multiple lines that matches the criteria will be grouped into one bank transaction line. 
@@ -55,6 +49,22 @@ Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dyn
 
 > Note: From **10.0.32** MS has added a feature (on by default) called **Time zone for importing bank statements using Electronic reporting**. <br>
 > Finance utilities doesn't currently support converting date/time fields within the bank statement file.
+
+#### Build 10.0.36.20231116TBD
+Release date: 30 November 2023 <br> 
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+15693		| Cash and bank management	| Reverse mark as new transaction	| Support added for reversing **mark as new** transactions offsetting to **vendor, bank or customer** within the same legal entity. <br> Supports features: <br> • Enable bank reconciliation reversal even new transactions exist in posted bank statement <br> • Reverse posted bank statement with new transactions <br>
+
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+16584		| Accounts payable	| Vendor bank account approval	| Proposed changes disregarded for changes to standard vendor bank account fields.
 
 
 #### Build 10.0.36.202311161
