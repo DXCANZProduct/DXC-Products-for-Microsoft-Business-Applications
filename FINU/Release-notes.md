@@ -50,7 +50,8 @@ Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dyn
 > Note: From **10.0.32** MS has added a feature (on by default) called **Time zone for importing bank statements using Electronic reporting**. <br>
 > Finance utilities doesn't currently support converting date/time fields within the bank statement file.
 
-#### Build 10.0.36.20231116TBD
+#### Build 10.0.36.2023111621
+#### Build 10.0.35.2023111622
 Release date: 30 November 2023 <br> 
 
 <ins>New features</ins>
@@ -68,6 +69,7 @@ Number	  	| Module	| Functionality	  	| Description
 
 
 #### Build 10.0.36.202311161
+#### Build 10.0.35.202311161
 Release date: 16 November 2023 <br> 
 
 <ins>Deprecated</ins>
