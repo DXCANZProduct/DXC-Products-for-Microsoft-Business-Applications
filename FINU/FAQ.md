@@ -40,18 +40,16 @@ A list of installed models will be displayed on the **Version** tab.  Scroll to 
 
 ### Dependency and Security Information
 
-Finance Utilities includes:
-- Use of Microsoft .NET Azure Storage library <br>
-      - Allows interaction with Azure Blob Storage securely. <br>
-- Use of PGP encryption library <br>
-      - To encrypt and decrypt data imported and exported using Finance utilities connection if enabled <br>
-- Use of SSH.NET library <br>
-      - Renci libraries to upload and download files to an SFTP server <br>
-- Implement ABN Lookup through the Australian government web API for AU registered companies. <br>
-      - More information can be found at the Australian Business Register (ABR) [website](https://abr.business.gov.au/Tools/WebServices) <br>
-      - Ensures secure HTTPS connections for validation lookup requests in accordance to the Microsoft security standards <br>
+Finance utilities and GER connections uses the following:
+- Microsoft .NET Azure Storage library
+- File transfer protocal library (FTP)
+- SSH.NET library for SFTP support
+- Encryption algorithms for secure file transfer
+- Connection details for all connection types are managed by the customer
 
-For Microsoft Azure blob storage, File transfer protocols, secure file transfer protocols, SharePoint and ABN Lookup web API - all configurations are updated within Finance operations and hosted by the customer.
+ABN lookup for AU registered companies
+- Makes secure HTTPS connections for ABN lookup requests against the [Australia government web API](https://abr.business.gov.au/Tools/WebServices).
+- Connection details are managed by the customer
 
 
 ## 	Troubleshooting
