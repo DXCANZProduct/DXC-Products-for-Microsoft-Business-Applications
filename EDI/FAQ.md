@@ -44,8 +44,6 @@ EDI uses the following for import and export of files within FinOps:
     - SSH.NET library
     - SFTP Client library 
 
-For web API integration, EDI only provides extension point for using the existing import export framework for processing of files. All logic for communication with the Web API needs to be implemented by customer. 
-
 ### Number sequences are not available to setup
 To load all new number sequence references, select **Reset** on **Organization administration > Number sequences > Number sequences > Manual cleanup**
 
