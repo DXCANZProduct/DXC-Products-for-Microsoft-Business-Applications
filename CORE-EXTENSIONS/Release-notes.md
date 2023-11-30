@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.36.2023TBA
+### Release 10.0.36.20231130
 
 DXC Core extensions 10.0.36 runs on the following Microsoft releases
 
@@ -45,9 +45,9 @@ Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dyn
 
 
 
-#### Build 10.0.36.2023TBA1
+#### Build 10.0.36.202311301
 
-Release date: 2023
+Release date: 30 NOvember 2023
 
 <ins>New features</ins>
 
@@ -61,7 +61,7 @@ Number	  	| Functionality	  | Description
 13552		| Feature management	| Core extensions now available via Feature management
 
 ## Feature management
-From 10.0.36.202311 Core Extensions can be enabled via Feature management
+From 10.0.36.20231130 Core Extensions can be enabled via Feature management
 Enable the following feature in D365 Feature management:
 
 - Core extensions
