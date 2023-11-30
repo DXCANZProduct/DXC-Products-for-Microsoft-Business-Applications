@@ -36,6 +36,16 @@ Support contact details can be located on the **Contact** tab at **Organization 
 Navigate to **Help & support > About**.  <br>
 A list of installed models will be displayed on the **Version** tab.  Search for Sable 37 EDI. The version information will be displayed on the right (i.e. DXC EDI **10.0.34.202306151** (isv))
   
+### Dependency and Security Information
+EDI uses the following for import and export of files within FinOps:
+- File transfer protocol library (FTP)
+- Microsoft Azure Blob Storage libaries
+- SAB_EDISFTPClient custom library - This library uses the following to support SFTP file transfer capabilities in EDI
+    - SSH.NET library
+    - SFTP Client library 
+
+For web API integration, EDI only provides extension point for using the existing import export framework for processing of files. All logic for communication with the Web API needs to be implemented by customer. 
+
 ### Number sequences are not available to setup
 To load all new number sequence references, select **Reset** on **Organization administration > Number sequences > Number sequences > Manual cleanup**
 
