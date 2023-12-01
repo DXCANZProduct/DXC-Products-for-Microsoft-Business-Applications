@@ -65,6 +65,7 @@ If you don't see **Finance utilities**, click **Check for updates**. <br>
 
 #### Issue
 Bank statement doesn't import.
+Error: An error occured when importing the bank statement file
  
 #### Resolution
 To check bank account mapping, navigate to Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format
@@ -73,6 +74,8 @@ Things to check:
 2.	**Custom format > Lines: Bank account number**. Compare:
 - Import file's bank account: Does it contain bsb+account or just account?
 - Company bank accounts: Bank account number field only (not bsb): Does it match to import file's bank account number? If import file contains bsb+account and your bank setup is split into bsb and bank account number fields, set up appropriate start position on **Custom format > Lines**.
+
+If mapping is correct, check if DXCEncryption has been installed.
 
 ### 	Generating AP payment - AuthenticationFailed
 #### Error
