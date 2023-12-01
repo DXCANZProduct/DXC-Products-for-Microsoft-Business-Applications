@@ -64,8 +64,8 @@ If you don't see **Finance utilities**, click **Check for updates**. <br>
 ### 	Bank statement doesn’t import
 
 #### Issue
-Bank statement doesn't import.
-Error: An error occured when importing the bank statement file
+Bank statement doesn't import. <br>
+**Error:** An error occured when importing the bank statement file
  
 #### Resolution
 To check bank account mapping, navigate to Cash and bank management > Setup > Advanced bank reconciliation setup > Bank statement format
