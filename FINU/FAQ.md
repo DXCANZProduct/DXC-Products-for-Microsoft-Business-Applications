@@ -52,7 +52,7 @@ ABN lookup for AU registered companies
 - Connection details are managed by the customer
 
 
-## 	Troubleshooting
+# 	Troubleshooting
 
 ###   Product is installed but functionality not visible
 If the product is available in About > Version, check if it has been enabled in **Feature management**. <br>
