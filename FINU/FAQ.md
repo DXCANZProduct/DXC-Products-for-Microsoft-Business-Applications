@@ -2,7 +2,7 @@
 # required metadata
 
 title: Finance Utilities 
-description: Finance Utilities - FAQ 
+description: Finance Utilities - Frequently asked questions 
 author: jdutoit2
 manager: Kym Parker
 ms.date: 2023-11-30
