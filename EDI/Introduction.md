@@ -5,7 +5,7 @@ title: EDI
 description: Introduction to EDI
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-05-12
+ms.date: 2023-12-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,8 +38,8 @@ The [release notes](Release-notes.md) describes the features that are either new
 EDI is a well-proven business tool for lowering costs, improving business efficiency, speed and accuracy. DXC EDI enables companies to easily setup, send/receive and manage messages with their EDI trading partners, all within Microsoft Dynamics 365 for Operations.
 
 Powerful functionality extends Microsoft Dynamics 365:
-- Receive EDI communications from Customer, 3PL warehouse, Vendor and/or Landed cost Freight Forwarder trading partners and create/update D365 transactions
-- Process D365 transaction and send EDI documents to Customer, Vendor and/or 3PL warehouse Trading partners
+- Receive EDI communications from Customer, Vendor, 3PL warehouse and/or Landed cost Freight Forwarder trading partners and create/update D365 transactions
+- Process D365 transaction and send EDI documents to Customer, Vendor, 3PL warehouse and/or Landed cost Freight Forwarder Trading partners
 - Trading partners are created and managed within D365 and linked to valid customers, warehouses or vendors easily within D365
 - Effortlessly navigate from EDI incoming and outgoing files to applicable D365 transaction
 
@@ -57,10 +57,3 @@ Definitions and Acronyms can be found [here](Acronyms.md).
 ## New ideas
 Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
 
-## Brochures
-The following brochures are available:
-- [EDI Overview](https://dynamics.dxc.technology/microsoft-dynamics-365/overview-dxc-electronic-data-interchange-edi-for-microsoft-dynamics-brochure)
-- [EDI for Customer](https://dynamics.dxc.technology/microsoft-dynamics-365/customer-dxc-electronic-data-interchange-edi-for-microsoft-dynamics-brochure)
-- [EDI for Vendor](https://dynamics.dxc.technology/microsoft-dynamics-365/vendor-dxc-electronic-data-interchange-edi-brochure)
-- [EDI for 3PL warehouse](https://dynamics.dxc.technology/microsoft-dynamics-365/3pl-dxc-electronic-data-interchange-edi-for-microsoft-dynamics-brochure)
-- [EDI for Freight forwarder - Landed cost](https://dynamics.dxc.technology/microsoft-dynamics-365/freight-forwarder-for-landed-cost-dxc-electronic-data-interchange-edi-for-dynamics)
