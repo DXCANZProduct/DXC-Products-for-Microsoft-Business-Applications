@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Finance Utilities 
+title: Core Extensions 
 description: Finance Utilities - Frequently asked questions 
-author: jdutoit2
+author: Peter Musumeci
 manager: Kym Parker
 ms.date: 2023-11-30
 ms.topic: article
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:  Finance Utilities 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: pmusumeci
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: pmusumeci
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -36,4 +36,4 @@ Support contact details can be located on the **Contact** tab at **Organization 
 ### Where can I identify the installed version of the Finance utilities module
 
 On the Navigation bar, select **Help & support > About**. <br>
-A list of installed models will be displayed on the **Version** tab.  Scroll to **DXC Finance Utilities**. The version information will be displayed on the right (i.e. DXC Finance Utilities **10.0.240.2019443** (isv))
+A list of installed models will be displayed on the **Version** tab.  Scroll to **DXC Core Extensions**. The version information will be displayed on the right (i.e. DXC DXC Core Extensions **10.0.34.202306082** (isv))
