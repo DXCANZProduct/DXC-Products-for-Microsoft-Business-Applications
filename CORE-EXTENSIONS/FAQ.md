@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  Finance Utilities 
+# ms.search.form:  Core Extensions
 audience: Application User
 # ms.devlang: 
 ms.reviewer: pmusumeci
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.1
    
 Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > Product support**
   
-### Where can I identify the installed version of the Finance utilities module
+### Where can I identify the installed version of the Core Extensions module
 
 On the Navigation bar, select **Help & support > About**. <br>
-A list of installed models will be displayed on the **Version** tab.  Scroll to **DXC Core Extensions**. The version information will be displayed on the right (i.e. DXC DXC Core Extensions **10.0.34.202306082** (isv))
+A list of installed models will be displayed on the **Version** tab.  Scroll to **DXC Core Extensions**. The version information will be displayed on the right (i.e. DXC Core Extensions **10.0.34.202306082** (isv))
