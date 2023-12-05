@@ -56,6 +56,7 @@ It is a matter of assessing the benefits of using the ER framework for report de
 ### Dependency and Security Information
 
 Data stored securely inside Finance and operations
+
 DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Operations (Smart Send) makes use of the existing email configuration influenced by a combination of administrator configuration, user configuration, and user choices.
 
 The article ⁠[Configure and send email](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/organization-administration/configure-email) by Microsoft is divided into sections for administrators and users to make it easy to find relevant information, including setup for SMTP. The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices.
