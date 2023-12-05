@@ -79,7 +79,7 @@ To initiate data anonymization, you firstly need to create the profile.
 8. Populate the Scrambled data value and select prefix if desired, select Save to confirm changes 
 *Repeat this process for all Tables and fields where data is to be scrambled
 
-![populate fields](/CORE-EXTENSIONS/IMAGES/populate_fields.png)
+![populate fields](/../IMAGES/populate_fields.png)
 
 ### Load default tables
 
