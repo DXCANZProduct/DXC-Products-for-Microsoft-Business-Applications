@@ -40,3 +40,12 @@ On the left-hand side select "Apps and Keys"
 on the page under the Menu "Apps and Integration Keys" select Actions> View details on your App 
 under App details edit the redirect URLs to include your Dynmics365 instance
 
+### Dependency and Security Information
+
+Data stored securely inside Finance and operations
+- Docusign Authentication details
+- Web service address, OAuth server URL
+- Integrator key, RSA private key
+- User Id, User name
+- Logging of exceptions
+- Document templates
