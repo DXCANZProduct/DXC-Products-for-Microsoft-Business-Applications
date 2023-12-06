@@ -60,7 +60,7 @@ Each of the Smart Send supported documents have a fixed list of tags. These are 
 |  **Commercial Invoice**  | Invoice account: %InvoiceAccount% <br/> Total value: %TotalValue% <br/> Account number: %AccountNum% <br/> Customer name: %CustName% <br/> Invoice address: %InvoiceAddress% <br/> Order number: %OrderNum% <br/> Shipment Id: %ShipmentId% <br/> Shipment date: %ShipmentDateTime% <br/> Delivery name: %DeliveryName% <br/> Delivery address: %DeliveryAddress% |
 |  **Packing List**  | Shipment Id: %ShipmentId% <br/> Number of containers: %NumberOfContainers% <br/> Account number: %AccountNum% <br/> Customer name: %CustName% <br/> Order number: %OrderNum% <br/> Shipment date: %ShipmentDateTime% <br/> Delivery name: %DeliveryName% <br/> Delivery address: %DeliveryAddress% |
 |  **Vendor Invoice**  | Invoice Id: %InvoiceId% <br/> Created Date: %CreatedDate% <br/> Invoice Due Date: %DueDate% <br/> Invoice Date: %InvoiceDate% <br/> Invoice Account Name: %InvoiceAccountName% <br/> Invoice Account: %InvoiceAccount% |
-|  **Company Logo**  | The compnay logo as set in Organisation Administration can be included in the body of the email however you must use Tag `<img src="data:image/bmp;base64,%CompanyLogo%" alt="logo"/>` to render image correctly.
+|  **Company Logo**  | The compnay logo as set in Organisation Administration can be included in the body of the email however you must use Tag `<img src="data:image/bmp;base64,%CompanyLogo%" alt="logo"/>` to render image correctly.<br> Note: the Image itself will not be visible inside D365 only in external Email Program eg Outlook
   
 
 ## Dynamic Placeholder Tokens
