@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Periodic import Bank statement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-06-17
+ms.date: 2023-12-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,6 @@ When the bank statements are to be imported via the periodic task **Import bank 
 ### Prerequisites
 1.	Setup [Financial utilities connection](Finance-utilities-connections.md)
 1.	Setup [Bank accounts](Bank-accounts.md):
-   - Select applicable **Posting date**
    - Select applicable **Financial utilities connection** - Optional (for info)
 
 ### Optional
