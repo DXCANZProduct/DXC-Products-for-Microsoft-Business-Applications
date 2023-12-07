@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Bank accounts
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-05-10
+ms.date: 2023-12-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,6 +34,5 @@ To open the **Bank accounts** page, go to **Cash and bank management > Bank acco
 
 Field         | Description                         
 :--           |:--                        
-**Posting date**    | 	Select the applicable posting date to be used for mark as new transactions, options include:  <br> •	Statement transaction date <br> •	Today’s date
 **Financial utilities connection**  |	Select the applicable [Financial utilities connection](Finance-utilities-connections.md) <br> Optional (for info)
 
