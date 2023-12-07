@@ -33,7 +33,7 @@ When the bank statements are to be imported via the periodic task **Import bank 
 ### Prerequisites
 1.	Setup [Financial utilities connection](Finance-utilities-connections.md)
 1.	Setup [Bank accounts](Bank-accounts.md):
-   - Select applicable **Financial utilities connection** - Optional (for info)
+      - Select applicable **Financial utilities connection** - Optional (for info)
 
 ### Optional
 1. Setup **File attachment document type** on [Financial utilities parameters](Finance-utilities-parameters.md) to attach the import file to the created D365 Bank statement(s).
