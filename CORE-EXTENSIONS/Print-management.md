@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.34
 
 ## Overview
 
-A new data entity titled “Print management document settings” has been developed to allow for the export and subsequent import of document settings within the printer management forms including conditional settings to a CSV Format file where they can be subsequently imported into another environment or legal entity.  This new data entity is capable of exporting settings related to other DXC products including Smart Send and DocuSign.   The entity only exports Printer settings that have been set up and will not export settings in “default” status.
+A new data entity titled “Print management document settings” has been developed to allow for the export and subsequent import of document settings within the printer management forms, including conditional settings.  The entity facilitates export to a CSV Format or Excel (limited functionality) file where they can be subsequently imported into another environment or legal entity.  This new data entity is capable of exporting settings related to other DXC products that utilise the Print Management forms, including Smart Send and DocuSign.   The entity only exports printer settings that have been set and will not export settings in “default” status (eg where the report output has not been configured).
 
 Print Management settings are available in the following Modules-<br>
 * Accounts receivable
@@ -45,7 +45,7 @@ Print Management settings are available in the following Modules-<br>
 
 ### Data Entity Overview
 
-The Print management document settings entity allows for existing Print management settings to be exported into a CSV file.  Complex conditional settings can be exported and copied to sandbox environments for testing or training as well as copying between legal entities, keeping in mind that number sequences and conditions are not always the same between legal entities.  
+The *Print management document settings* entity allows for existing Print management settings to be exported into..  Complex conditional settings can be exported and copied to sandbox environments for testing or training as well as copying between legal entities, keeping in mind that number sequences and conditions are not always the same between legal entities.  
 Conditional settings can be set up with specific parameters related to customer/vendor accounts, transaction conditions and more.  These conditions are built as a query and stored in the database as a complex string of data.  Due to excel field limitations conditional format settings should only be exported using CSV format, not .xlxs
 
 To Export Print management settings 
@@ -86,6 +86,6 @@ Below is a brief outline of the fields in the entity.
 
 ### Reset print management.
 
-With the ability to import Print management settings there may be the requirement to Reset print management settings back to default.  A Reset print management function has been provided positioned next to the print management button in all available modules.  To enable access to the reset function users, need to be given access to the **Maintain and reset settings for print management privilege** as part of thier security role.
+With the ability to import Print management settings there may be the requirement to Reset print management settings back to default.  A Reset print management function has been provided positioned next to the print management button in all available modules.  To enable access to the reset function, users need to be given access to the **Maintain and reset settings for print management privilege** as part of their security role.
 
 
