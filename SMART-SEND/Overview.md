@@ -101,7 +101,4 @@ The following setup is required to configure Smart Send:
 ## New ideas
 Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
 
-## Brochures
-The following brochures are available:
-- [DXC Smart Business Form Email Manager for Microsoft Dynamics 365](https://dynamics.dxc.technology/microsoft-dynamics-365/dxc-smart-business-form-email-manager-for-microsoft-dynamics-365-for-finance-and-operations)
 
