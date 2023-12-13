@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Introduction to Finance Utilities 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-11-17
+ms.date: 2023-12-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -194,7 +194,4 @@ See our FAQ for general information and troubleshooting.
 ## New ideas
 Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
 
-## Brochure
-The following brochures are available:
-- [Automate and leverage your solution with DXC Finance Utilities for Dynamics 365](https://dynamics.dxc.technology/microsoft-dynamics-365/dxc-finance-utilities-for-dynamics-365-brochure)
 
