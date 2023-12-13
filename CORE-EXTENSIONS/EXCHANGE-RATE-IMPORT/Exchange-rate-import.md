@@ -45,8 +45,9 @@ Microsoft Dynamics 365 offers functionality to import exchange rates based on li
 
 ## Process
 1. Navigate to **General ledger > Currencies > Import currency exchange rates**.
-2. Set the Exchange rate type and Exchange rate provider set up.
+2. Set the relevant Exchange rate type and your desired Exchange rate provider.
    * The Import as of parameter is set to Today’s date by default.
+3. If required adjust your parameters based on the supported conditions in the table below.
    * Setup the Batch recurrences for scheduled updates. It is recommended for a daily update.
 
 The following table shows the supported parameters.
