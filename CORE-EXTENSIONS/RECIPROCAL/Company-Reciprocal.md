@@ -31,8 +31,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ### Overview
 **Display reciprocal exchange rate** allows companies to view the exchanges rates in reciprocal format. <br>
-For example instead of 0.69, displays result of 1/0.69. <br>
+For example instead of showing a rate of 0.69, it displays a result of 1/0.69 relevnat to the home currency (1.44) <br>
 This applies to all users and all exchange rates for the selected company.
+
  
 ### Setup
 From the Legal Entity form you can set this option for the current selected company.
