@@ -5,7 +5,7 @@ title: EDI Freight forwarder
 description: Overview of the Freight forwarder EDI module process
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-19
+ms.date: 2023-12-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Process overview
+
+## Voyage advice
+Purchase order details can be sent to the Freight forwarder, when the D365 Purchase order has a _Shipping company_ allocated that is setup as Freight forwarder landed cost Trading partner and has the outbound **Voyage advice** document setup and enabled.
 
 ## Voyage creator
 When a D365 Vendor of **Shipping type** set to _Shipping company_ has been loaded as a Freight forwarder landed cost Trading partner and has the incoming **Voyage creator** document setup and enabled, the freight forwarder can send the shipment details in order to create a Landed cost Voyage. 
