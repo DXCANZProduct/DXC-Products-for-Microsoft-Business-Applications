@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-11-30
+ms.date: 2023-12-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,9 +50,20 @@ Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dyn
 > Note: From **10.0.32** MS has added a feature (on by default) called **Time zone for importing bank statements using Electronic reporting**. <br>
 > Finance utilities doesn't currently support converting date/time fields within the bank statement file.
 
-** Indicates current release per D365 version
 
-#### Build 10.0.36.2023111631 **
+#### Build 10.0.36.2023111642
+#### Build 10.0.35.2023111641
+Release date: 14 December 2023 <br>
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+16758		| Accounts payable	| Vendor approval	| Proposed changes disregarded for changes to standard vendor fields. 
+16765		| Accounts payable	| Method of payment <br> EFT file name Editor	| Label fix and saving of changes to file name mask.
+
+
+#### Build 10.0.36.2023111631
 Release date: 8 December 2023
 
 <ins>Bug fixes</ins>
@@ -62,7 +73,7 @@ Number	  	| Module	| Functionality	  	| Description
 16747		| N/A		| Deployment		| Bug fix only applicable to 10.0.36.2023111621, which included unit tests. <br> To remove unit tests, use the following [instructions](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package) to remove the package/uninstall unit tests.
 
 #### Build 10.0.36.2023111621
-#### Build 10.0.35.2023111622 **
+#### Build 10.0.35.2023111622
 Release date: 30 November 2023 <br> 
 
 <ins>New features</ins>
