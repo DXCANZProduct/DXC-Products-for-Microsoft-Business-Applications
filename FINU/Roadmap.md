@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-11-16
+ms.date: 2023-12-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,7 +37,12 @@ This page describes the features planned for future releases and planned release
 
 Release			    | ETA
 :--			        |:--
-2024-06          | 28 June 2024
+2024-05          | 31 May 2024
+
+### Next release
+
+- Electronic reporting export connections - Business event (save to Azure Blob only)
+- Electronic reporting export connections - Validate connection
 
 ## Roadmap
 
