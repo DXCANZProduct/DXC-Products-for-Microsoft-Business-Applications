@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-10-31
+ms.date: 2023-12-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,6 +44,7 @@ Release			| ETA
 ## Next release
 ETA: 30 April 2024
 
+- Freight forwarder Voyage advice - Trigger outbound staging record using Purchase order Confirmation or Confirm
 
 ## Deprecate
 The following has been deprecated
