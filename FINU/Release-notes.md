@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-12-14
+ms.date: 2023-12-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,6 +49,15 @@ Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dyn
 
 > Note: From **10.0.32** MS has added a feature (on by default) called **Time zone for importing bank statements using Electronic reporting**. <br>
 > Finance utilities doesn't currently support converting date/time fields within the bank statement file.
+
+#### Build 10.0.36.2023111651
+Release date: 21 December 2023 <br>
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+16794		| Accounts payable	| Vendor approval	| Related only to earlier versions of 10.0.36.20231116 - deprecating Vendor bank account approval. <br> Resulted in values not being retained for client extended fields in Vendor approval.
 
 
 #### Build 10.0.36.2023111642
