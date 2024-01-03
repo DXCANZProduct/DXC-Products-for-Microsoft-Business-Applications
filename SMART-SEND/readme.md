@@ -12,7 +12,7 @@ Then using Print Management conditions set a query with a set criteria to use th
 
 **How can I use a different email template for different customers/vendors?**
 
-The Override email ID and Override file name allows the user to specify in print management an email template and file name different to that specified in Smart Send parameters. Refer to [Override Email Template and Filename](Email_processing).
+The Override email ID and Override file name allows the user to specify in print management an email template and file name different to that specified in Smart Send parameters. Refer to [Override Email Template and Filename](PROCESSES/Email-processing.md).
 
 **How can I use a different filename for different customers/vendors?**
 
@@ -24,7 +24,7 @@ Smart Send uses the primary table and the email template to look for additional 
 
 **How can I use include attachments that are not attached to the primary table or email template?**
 
-Smart Send also includes an extension hook to enable a customer to create an extension class to attach a document handling attached file from another source, for example Purchase/Sales order lines. Refer to the Smart Send [technical guide](Technical_guide).
+Smart Send also includes an extension hook to enable a customer to create an extension class to attach a document handling attached file from another source, for example Purchase/Sales order lines. Refer to the Smart Send [technical guide](TECHNICAL-GUIDE/Technical-guide.md).
 
 **How can I use a token placeholder which is not on the primary table?**
 
