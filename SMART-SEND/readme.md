@@ -29,12 +29,12 @@ Smart Send also includes an extension hook to enable a customer to create an ext
 **How can I use a token placeholder which is not on the primary table?**
 
 Smart Send supports dynamic place holder tags using the table and field names. Similarly, display method can also be used with the format %TableName.MethodName#%. 
-If the field you wish to use is not on the primary table, you can add a display method to the table to return the data from another source. Refer to [Dynamic Placeholder Tokens](Email_placeholder).
+If the field you wish to use is not on the primary table, you can add a display method to the table to return the data from another source. Refer to [Dynamic Placeholder Tokens](CONFIGURATION/Email_placeholder.md).
 
 **Why are the token placeholders showing as the token as opposed to the value e.g. %PurchId%?**
 
 The main reasons this would occur:
-* The token placeholder is invalid. The syntax used on the token placeholder is not per the fixed token list for the report or dynamic token is in the incorrect notation e.g. %TableName.FieldName% or %TableName.MethodName#%. Refer to [Dynamic Placeholder Tokens](Email_placeholder).
+* The token placeholder is invalid. The syntax used on the token placeholder is not per the fixed token list for the report or dynamic token is in the incorrect notation e.g. %TableName.FieldName% or %TableName.MethodName#%. Refer to [Dynamic Placeholder Tokens](CONFIGURATION/Email_placeholder.md).
 * HTML is not created using HTML editor. Customers who have not used a html editor, for example creating the html using MS Word experience problems with the token placeholders.
 
 **Can I use images in email body?**
