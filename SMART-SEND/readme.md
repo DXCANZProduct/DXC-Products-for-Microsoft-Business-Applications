@@ -20,7 +20,7 @@ The Override email ID and Override file name allows the user to specify in print
 
 **How can I include attachments for all emails, like a terms and conditions?**
 
-Smart Send uses the primary table and the email template to look for additional attachments. If you want to send the attachment on all emails or to a selected group, attach the file to the email template. You can use Print Management Conditions to use Override Email Id (templates) to send different Emails and Attachments to different groups of recipients. Refer to [Override Email Template and Filename](PROCESSES/Email-processing.md),	Print management conditions and Additional attachments](PROCESSES/Email-processing.md).
+Smart Send uses the primary table and the email template to look for additional attachments. If you want to send the attachment on all emails or to a selected group, attach the file to the email template. You can use Print Management Conditions to use Override Email Id (templates) to send different Emails and Attachments to different groups of recipients. Refer to [Override Email Template and Filename](PROCESSES/Email-processing.md),	[Print management conditions and Additional attachments](PROCESSES/Email-processing.md).
 
 **How can I use include attachments that are not attached to the primary table or email template?**
 
