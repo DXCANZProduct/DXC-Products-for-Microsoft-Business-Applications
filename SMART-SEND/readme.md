@@ -6,7 +6,7 @@ While out of the box functionality is for the business forms listed [here](Overv
 
 **How can I use a different report format for different customers/vendors?**
 
-Firstly you need to set up each version of report design in Smart Send Email parameters. For example you may have two report design for the Sales Invoice *SalesInvoice.Report* and *SalesInvoiceModern.Report*. Refer to Smart Send [Parameters](Parameters).
+Firstly you need to set up each version of report design in Smart Send Email parameters. For example you may have two report design for the Sales Invoice *SalesInvoice.Report* and *SalesInvoiceModern.Report*. Refer to [Smart send parameters](CONFIGURATION/Parameters.md).
 
 Then using Print Management conditions set a query with a set criteria to use the different report design. When the report is run using Print management or the Smart Send button will choose the report design used per the Print Management setup. Refer to [Print management conditions](Email_processing).
 
