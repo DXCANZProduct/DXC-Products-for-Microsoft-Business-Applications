@@ -46,4 +46,4 @@ Coming Soon
 Number	  | Name	          | Description
 :--       |:--              |:--
 
-
+16791	    | The field with ID '0' does not exist in table 'CustInvoiceTable'| When attempting to perform the View >copy function on a Free Text Invoice the error was displayed.
