@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-12-21
+ms.date: 2024-01-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,6 +49,17 @@ Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dyn
 
 > Note: From **10.0.32** MS has added a feature (on by default) called **Time zone for importing bank statements using Electronic reporting**. <br>
 > Finance utilities doesn't currently support converting date/time fields within the bank statement file.
+
+#### Build 10.0.36.2023111661
+Release date: 12 January 2024 <br>
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+16822 <br> 16754 | Data management | ABN validation - Import entities TaxVATNumTable & VendVendorV2	| ABN validation GUI popup wrapped around a condition for data import scenarios. Also removed the previous 'Skip validation' method when importing Vendors entity. <br> When ABN validation is enabled for the legal entity and the entities imported, ABN validation will occur without the GUI popup. Records with valid ABNs will be imported and only invalid ABN staging records will error.
+
+
 
 #### Build 10.0.36.2023111651
 Release date: 21 December 2023 <br>
