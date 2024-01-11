@@ -37,3 +37,13 @@ This page describes the features planned for future releases.
 Coming Soon
 
 
+
+
+#### Build 10.0.38.2024xxxxx
+
+<ins>Bug fixes</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+
+
