@@ -98,7 +98,7 @@ If the batch job completes successfully the below is displayed
 
 ![Ended](../IMAGES/Ended.png)
 
-However, if the batch job fails and the anonymisation process does not complete a error batch job is crated for the table. 
+However, if the batch job fails and the anonymisation process does not complete a error batch job is created for the table. 
 
 ![Error](../IMAGES/Error.png)
 
