@@ -1,12 +1,11 @@
-
 ---
 # required metadata
 
-title: Core-Extensions
-description: Core Extension- Acronyms
-author: Helen Ho
+title: Core Extensions
+description: Core Extensions - Acronyms
+author: HelenHo
 manager: Kym Parker
-ms.date: 2024-01-18
+ms.date: 2024-01-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,13 +16,13 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: Helen Ho
+ms.reviewer: HelenHo
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDI
+ms.search.region: CoreExtensions
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Helen Ho
+ms.author: HelenHo
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
