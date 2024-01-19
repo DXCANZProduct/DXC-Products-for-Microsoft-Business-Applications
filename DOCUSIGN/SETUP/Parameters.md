@@ -131,3 +131,7 @@ The updates FastTab provides the details regarding the frequency of updates betw
 *Note on Updates:*  As an example of the batch process for DocuSign, assume the batch process runs at 9:00 a.m. and sent a time of 8:45 a.m.  All document status updates between 8:45 and 9:00 would be requested.  Dynamics will store a value of 9:00 a.m., so that the next time the batch process runs it would request all document status updates from 9:00 a.m. 
 
 There will be instances where the process my take longer to finalize.  When this occurs, the finalization time will be recorded and will be used as the initialization time at the next batch process run.  This is why the field has been provided.  
+
+
+### Data Entities
+- SAB_DSParametersEntity
