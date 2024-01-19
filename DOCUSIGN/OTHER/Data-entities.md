@@ -70,3 +70,11 @@ Organisation administration > Setup > DocuSign > DocuSign parameters
 7	                | SAB_DSParametersEntity       | Create new **STATUSUPDOVERLAPMINUTES**. Organisation administration > Setup > DocuSign > DocuSign parameters
 8	                | SAB_DSParametersEntity | Create new **USERID**. Organisation administration > Setup > DocuSign > DocuSign parameters
 9	                | SAB_DSParametersEntity  | Create new **WEBSERVICEURL**. Organisation administration > Setup > DocuSign > DocuSign parameters
+
+Organisation administration > Setup > DocuSign > Templates
+
+**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
+:-----            |:------------------------        |:-------------------                                      |:------------------------
+1	                | SAB_DSTemplateEntity  | Create new **SIGNINGSEQUENCE**. Organisation administration > Setup > DocuSign > Templates
+2	                | SAB_DSTemplateEntity   | Create new **TEMPLATEID**. Organisation administration > Setup > DocuSign > Templates
+3	                | SAB_DSTemplateEntity  | Create new **TEMPLATENAME**. Organisation administration > Setup > DocuSign > Templates
