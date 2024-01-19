@@ -81,4 +81,5 @@ The **Advance setting** FastTab will identify any advanced settings how to handl
 | **Reminder resend days**             |   Set the number of days when the additional reminders are sent, based on the initial receipt date.              |
 | **Expiry days**                     |  Set the number of days until the document will no longer be valid and will expire.                   |
 | **Warn for expiry days**              |  Set the number of days when the warning that the document will expire will be sent.  If not set, the document signing requests will have a warning 6 days from expiration.                     |
-
+### Data Entities
+- SAB_DSDocumentTypesEntity
