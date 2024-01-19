@@ -62,3 +62,6 @@ When you add a radio button field, the group contains two options.
 
 Radio buttons have the following unique properties:
 ** Radio Group ID ** This label identifies the radio button group. It is not shown to recipients but is included with the envelope form data.
+
+### Data Entities
+- SAB_DSDocumentTypesEntity
