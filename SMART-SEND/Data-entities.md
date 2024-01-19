@@ -36,11 +36,10 @@ System administration > Setup > Email > Email parameters
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | EmailTemplateOrganizationEntity  | Create new **Organization email template**. System administration > Setup > Email > Email parameters
-2	                | EmailTemplateOrganizationEntity  | Create new **BATCHGROUP**. System administration > Setup > Email > Email parameters  
-3	                | EmailTemplateOrganizationEntity  | Create new **DEFAULTLANGUAGE**. System administration > Setup > Email > Email parameters
-4	                | EmailTemplateOrganizationEntity  | Create new **DESCRIPTION**. System administration > Setup > Email > Email parameters
-5	                | EmailTemplateOrganizationEntity  | Create new **EMAILID**. System administration > Setup > Email > Email parameters
-6	                | EmailTemplateOrganizationEntity  | Create new **PRIORITY**. System administration > Setup > Email > Email parameters
-7	                | EmailTemplateOrganizationEntity  | Create new **SENDERADDRESS**. System administration > Setup > Email > Email parameters
-8	                | EmailTemplateOrganizationEntity  | Create new **SENDERNAME**. System administration > Setup > Email > Email parameters
+1	                | EmailTemplateOrganizationEntity  | Create new **BATCHGROUP**. System administration > Setup > Email > Email parameters  
+2	                | EmailTemplateOrganizationEntity  | Create new **DEFAULTLANGUAGE**. System administration > Setup > Email > Email parameters
+3	                | EmailTemplateOrganizationEntity  | Create new **DESCRIPTION**. System administration > Setup > Email > Email parameters
+4	                | EmailTemplateOrganizationEntity  | Create new **EMAILID**. System administration > Setup > Email > Email parameters
+5                 | EmailTemplateOrganizationEntity  | Create new **PRIORITY**. System administration > Setup > Email > Email parameters
+6                 | EmailTemplateOrganizationEntity  | Create new **SENDERADDRESS**. System administration > Setup > Email > Email parameters
+7	                | EmailTemplateOrganizationEntity  | Create new **SENDERNAME**. System administration > Setup > Email > Email parameters
