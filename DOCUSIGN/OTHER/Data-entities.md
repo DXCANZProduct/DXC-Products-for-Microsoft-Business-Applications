@@ -39,7 +39,7 @@ Organisation administration > Setup > DocuSign > Document types
 1	                | SAB_DSDocumentTypesEntity  | Create new **ALLOWCHANGERESP**. Organisation administration > Setup > DocuSign > Document types
 2	                | SAB_DSDocumentTypesEntity   | Create new **ALLOWPAPERSIGN**. Organisation administration > Setup > DocuSign > Document types
 3	                | SAB_DSDocumentTypesEntity  | Create new **AUTOSEND**. Organisation administration > Setup > DocuSign > Document types
-4	                | SAB_DSDocumentTypesEntity  | Create new **DOCUMENTNAMEs**. Organisation administration > Setup > DocuSign > Document types
+4	                | SAB_DSDocumentTypesEntity  | Create new **DOCUMENTNAME**. Organisation administration > Setup > DocuSign > Document types
 5	                | SAB_DSDocumentTypesEntity           | Create new **ENABLEADVANCEDSETUP**. Organisation administration > Setup > DocuSign > Document types
 6	                | SAB_DSDocumentTypesEntity    | Create new **EXPIRYDAYS**. Organisation administration > Setup > DocuSign > Document types
 7	                | SAB_DSDocumentTypesEntity       | Create new **EXPIRYWARNDAYS**. Organisation administration > Setup > DocuSign > Document types
