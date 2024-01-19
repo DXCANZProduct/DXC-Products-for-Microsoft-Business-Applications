@@ -32,7 +32,7 @@ ms.dyn365.ops.version:  AX 7.0.1
 The following is a summary of data entities available for the DocuSign module:
 
 ## DocuSign setup
-EDI > Setup > Customer setup
+Organisation administration > Setup > DocuSign > Document types
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
