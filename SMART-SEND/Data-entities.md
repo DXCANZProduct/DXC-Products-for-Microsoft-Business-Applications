@@ -30,32 +30,6 @@ ms.dyn365.ops.version:  AX 7.0.1
 # Data entities
 
 The following is a summary of data entities available for the Smart Send module:
-
-System administration > Setup > Email > Email parameters
-
-**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
-:-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | EmailTemplateMessageOrganizationEntity  | Create new **EMAIL**. System administration > Setup > Email > Email parameters  
-2	                | EmailTemplateMessageOrganizationEntity  | Create new **EMAILID**. System administration > Setup > Email > Email parameters
-3	                | EmailTemplateMessageOrganizationEntity  | Create new **EMAILTEMPLATESTRING**. System administration > Setup > Email > Email parameters
-4	                | EmailTemplateMessageOrganizationEntity  | Create new **LANGUAGE**. System administration > Setup > Email > Email parameters
-5                 | EmailTemplateMessageOrganizationEntity  | Create new **LAYOUT**. System administration > Setup > Email > Email parameters
-6	                | EmailTemplateMessageOrganizationEntity  | Create new **SUBJECT**. System administration > Setup > Email > Email parameters
-7                 | EmailTemplateMessageOrganizationEntity  | Create new **XSLTTRANSFORM**. System administration > Setup > Email > Email parameters
-
-
-Organization administration > Global address book > Global address book
-**Order**        | **Entity**                      | **Description**	                                         | **Dependency**
-:-----           |:------------------------        |:-------------------                                      |:------------------------
-1	               | LogisticsLocationRoleEntity  | Create new **CONTACTINFO**. Organization administration > Global address book > Global address book
-2	               | LogisticsLocationRoleEntity  | Create new **DESCRIPTION**. Organization administration > Global address book > Global address book
-3	               | LogisticsLocationRoleEntity  | Create new **DISABLEADDOREDITINEMPLOYEESELFSERVICE**. Organization administration > Global address book > Global address book
-4	               | LogisticsLocationRoleEntity  | Create new **LANGUAGE**. Organization administration > Global address book > Global address book
-5	               | LogisticsLocationRoleEntity  | Create new **POSTALADDRESS**. Organization administration > Global address book > Global address book
-6                | LogisticsLocationRoleEntity  | Create new **PURPOSE**. Organization administration > Global address book > Global address book
-7                | LogisticsLocationRoleEntity  | Create new **TYPE**. Organization administration > Global address book > Global address book
-
-
 ## Email setup
 System administration > Setup > Email > Email parameters
 
@@ -68,6 +42,29 @@ System administration > Setup > Email > Email parameters
 5                 | EmailTemplateOrganizationEntity  | Create new **PRIORITY**. System administration > Setup > Email > Email parameters
 6                 | EmailTemplateOrganizationEntity  | Create new **SENDERADDRESS**. System administration > Setup > Email > Email parameters
 7	                | EmailTemplateOrganizationEntity  | Create new **SENDERNAME**. System administration > Setup > Email > Email parameters
+
+Organization administration > Global address book > Global address book
+**Order**        | **Entity**                      | **Description**	                                         | **Dependency**
+:-----           |:------------------------        |:-------------------                                      |:------------------------
+1	               | LogisticsLocationRoleEntity  | Create new **CONTACTINFO**. Organization administration > Global address book > Global address book
+2	               | LogisticsLocationRoleEntity  | Create new **DESCRIPTION**. Organization administration > Global address book > Global address book
+3	               | LogisticsLocationRoleEntity  | Create new **DISABLEADDOREDITINEMPLOYEESELFSERVICE**. Organization administration > Global address book > Global address book
+4	               | LogisticsLocationRoleEntity  | Create new **LANGUAGE**. Organization administration > Global address book > Global address book
+5	               | LogisticsLocationRoleEntity  | Create new **POSTALADDRESS**. Organization administration > Global address book > Global address book
+6                | LogisticsLocationRoleEntity  | Create new **PURPOSE**. Organization administration > Global address book > Global address book
+7                | LogisticsLocationRoleEntity  | Create new **TYPE**. Organization administration > Global address book > Global address book
+
+System administration > Setup > Email > Email parameters
+
+**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
+:-----            |:------------------------        |:-------------------                                      |:------------------------
+1	                | EmailTemplateMessageOrganizationEntity  | Create new **EMAIL**. System administration > Setup > Email > Email parameters  
+2	                | EmailTemplateMessageOrganizationEntity  | Create new **EMAILID**. System administration > Setup > Email > Email parameters
+3	                | EmailTemplateMessageOrganizationEntity  | Create new **EMAILTEMPLATESTRING**. System administration > Setup > Email > Email parameters
+4	                | EmailTemplateMessageOrganizationEntity  | Create new **LANGUAGE**. System administration > Setup > Email > Email parameters
+5                 | EmailTemplateMessageOrganizationEntity  | Create new **LAYOUT**. System administration > Setup > Email > Email parameters
+6	                | EmailTemplateMessageOrganizationEntity  | Create new **SUBJECT**. System administration > Setup > Email > Email parameters
+7                 | EmailTemplateMessageOrganizationEntity  | Create new **XSLTTRANSFORM**. System administration > Setup > Email > Email parameters
 
 System administration > Setup > Email > Email parameters >Smart Send
 
