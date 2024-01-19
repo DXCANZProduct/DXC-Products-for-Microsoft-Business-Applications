@@ -45,13 +45,26 @@ System administration > Setup > Email > Email parameters
 7	                | EmailTemplateOrganizationEntity  | Create new **SENDERNAME**. System administration > Setup > Email > Email parameters
 
 
-System administration > Setup > Email > System email templates
+Organization administration > Global address book > Global address book
+**Order**        | **Entity**                      | **Description**	                                         | **Dependency**
+:-----           |:------------------------        |:-------------------                                      |:------------------------
+1	               | LogisticsLocationRoleEntity  | Create new **CONTACTINFO**. Organization administration > Global address book > Global address book
+2	               | LogisticsLocationRoleEntity  | Create new **DESCRIPTION**. Organization administration > Global address book > Global address book
+3	               | LogisticsLocationRoleEntity  | Create new **DISABLEADDOREDITINEMPLOYEESELFSERVICE**. Organization administration > Global address book > Global address book
+4	               | LogisticsLocationRoleEntity  | Create new **LANGUAGE**. Organization administration > Global address book > Global address book
+5	               | LogisticsLocationRoleEntity  | Create new **POSTALADDRESS**. Organization administration > Global address book > Global address book
+6                | LogisticsLocationRoleEntity  | Create new **PURPOSE**. Organization administration > Global address book > Global address book
+7                | LogisticsLocationRoleEntity  | Create new **TYPE**. Organization administration > Global address book > Global address book
+
+
+System administration > Setup > Email > Email parameters
+
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | LogisticsLocationRoleEntity  | Create new **CONTACTINFO**. System administration > Setup > Email > System email templates  
-2	                | LogisticsLocationRoleEntity  | Create new **DESCRIPTION**. System administration > Setup > Email > System email templates
-3	                | LogisticsLocationRoleEntity  | Create new **DISABLEADDOREDITINEMPLOYEESELFSERVICE**. System administration > Setup > Email > System email templates
-4	                | LogisticsLocationRoleEntity  | Create new **LANGUAGE**. System administration > Setup > Email > System email templates
-5	                | LogisticsLocationRoleEntity  | Create new **POSTALADDRESS**. System administration > Setup > Email > System email templates
-6                | LogisticsLocationRoleEntity  | Create new **PURPOSE**. System administration > Setup > Email > System email templates
-7                | LogisticsLocationRoleEntity  | Create new **TYPE**. System administration > Setup > Email > System email templates
+1	                | EmailTemplateMessageOrganizationEntity  | Create new **EMAIL**. System administration > Setup > Email > Email parameters  
+2	                | EmailTemplateMessageOrganizationEntity  | Create new **EMAILID**. System administration > Setup > Email > Email parameters
+3	                | EmailTemplateMessageOrganizationEntity  | Create new **EMAILTEMPLATESTRING**. System administration > Setup > Email > Email parameters
+4	                | EmailTemplateMessageOrganizationEntity  | Create new **LANGUAGE**. System administration > Setup > Email > Email parameters
+5                 | EmailTemplateMessageOrganizationEntity  | Create new **LAYOUT**. System administration > Setup > Email > Email parameters
+6	                | EmailTemplateMessageOrganizationEntity  | Create new **SUBJECT**. System administration > Setup > Email > Email parameters
+7                 | EmailTemplateMessageOrganizationEntity  | Create new **XSLTTRANSFORM**. System administration > Setup > Email > Email parameters
