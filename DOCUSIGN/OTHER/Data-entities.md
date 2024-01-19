@@ -78,3 +78,32 @@ Organisation administration > Setup > DocuSign > Templates
 1	                | SAB_DSTemplateEntity  | Create new **SIGNINGSEQUENCE**. Organisation administration > Setup > DocuSign > Templates
 2	                | SAB_DSTemplateEntity   | Create new **TEMPLATEID**. Organisation administration > Setup > DocuSign > Templates
 3	                | SAB_DSTemplateEntity  | Create new **TEMPLATENAME**. Organisation administration > Setup > DocuSign > Templates
+
+
+Organisation administration > Setup > DocuSign > Templates
+
+**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
+:-----            |:------------------------        |:-------------------                                      |:------------------------
+1	                | SAB_DSTemplateSignerEntity  | Create new **DEPENDENTSORTING**. Organisation administration > Setup > DocuSign > Templates
+2	                | SAB_DSTemplateSignerEntity   | Create new **DESCRIPTION**. Organisation administration > Setup > DocuSign > Templates
+3	                | SAB_DSTemplateSignerEntity  | Create new **SAB_DSTEMPLATE_TEMPLATEID**. Organisation administration > Setup > DocuSign > Templates
+4	                | SAB_DSTemplateSignerEntity   | Create new **SORTING**. Organisation administration > Setup > DocuSign > Templates
+5	                | SAB_DSTemplateSignerEntity  | Create new **TYPE**. Organisation administration > Setup > DocuSign > Templates
+
+Organisation administration > Setup > DocuSign > Templates
+
+**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
+:-----            |:------------------------        |:-------------------                                      |:------------------------
+1	                | SAB_DSTemplateTabEntity  | Create new **ANCHORPOSITIONUOM**. Organisation administration > Setup > DocuSign > Templates
+2	                | SAB_DSTemplateTabEntity   | Create new **ANCHORSTRING**. Organisation administration > Setup > DocuSign > Templates
+3	                | SAB_DSTemplateTabEntity  | Create new **PAGENUMBER**. Organisation administration > Setup > DocuSign > Templates
+4	                | SAB_DSTemplateTabEntity   | Create new **POSITIONX**. Organisation administration > Setup > DocuSign > Templates
+5	                | SAB_DSTemplateTabEntity  | Create new **RADIOGROUPID**. Organisation administration > Setup > DocuSign > Templates
+6	                | SAB_DSTemplateTabEntity  | Create new **SAB_DSTEMPLATE_TEMPLATEID**. Organisation administration > Setup > DocuSign > Templates
+7	                | SAB_DSTemplateTabEntity   | Create new **SAB_DSTEMPLATESIGNER_SORTING**. Organisation administration > Setup > DocuSign > Templates
+8	                | SAB_DSTemplateTabEntity  | Create new **SAB_DSTEMPLATESIGNER_TEMPLATE**. Organisation administration > Setup > DocuSign > Templates
+9                 | SAB_DSTemplateTabEntity  | Create new **SIGNER**. Organisation administration > Setup > DocuSign > Templates
+10	              | SAB_DSTemplateTabEntity  | Create new **TAB**. Organisation administration > Setup > DocuSign > Templates
+11                | SAB_DSTemplateTabEntity   | Create new **TABPAGE**. Organisation administration > Setup > DocuSign > Templates
+12	              | SAB_DSTemplateTabEntity  | Create new **TABPOSITION**. Organisation administration > Setup > DocuSign > Templates
+13                | SAB_DSTemplateTabEntity  | Create new **TEXTCHARACTERLIMIT**. Organisation administration > Setup > DocuSign > Templates
