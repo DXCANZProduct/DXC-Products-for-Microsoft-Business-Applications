@@ -43,3 +43,15 @@ System administration > Setup > Email > Email parameters
 5                 | EmailTemplateOrganizationEntity  | Create new **PRIORITY**. System administration > Setup > Email > Email parameters
 6                 | EmailTemplateOrganizationEntity  | Create new **SENDERADDRESS**. System administration > Setup > Email > Email parameters
 7	                | EmailTemplateOrganizationEntity  | Create new **SENDERNAME**. System administration > Setup > Email > Email parameters
+
+
+System administration > Setup > Email > System email templates
+**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
+:-----            |:------------------------        |:-------------------                                      |:------------------------
+1	                | LogisticsLocationRoleEntity  | Create new **CONTACTINFO**. System administration > Setup > Email > System email templates  
+2	                | LogisticsLocationRoleEntity  | Create new **DESCRIPTION**. System administration > Setup > Email > System email templates
+3	                | LogisticsLocationRoleEntity  | Create new **DISABLEADDOREDITINEMPLOYEESELFSERVICE**. System administration > Setup > Email > System email templates
+4	                | LogisticsLocationRoleEntity  | Create new **LANGUAGE**. System administration > Setup > Email > System email templates
+5	                | LogisticsLocationRoleEntity  | Create new **POSTALADDRESS**. System administration > Setup > Email > System email templates
+6                | LogisticsLocationRoleEntity  | Create new **PURPOSE**. System administration > Setup > Email > System email templates
+7                | LogisticsLocationRoleEntity  | Create new **TYPE**. System administration > Setup > Email > System email templates
