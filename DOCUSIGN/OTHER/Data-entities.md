@@ -56,3 +56,17 @@ Organisation administration > Setup > DocuSign > Document types
 18                | SAB_DSDocumentTypesEntity    | Create new **SAB_DSTEMPLATE_TEMPLATEID**. Organisation administration > Setup > DocuSign > Document types
 19                | SAB_DSDocumentTypesEntity       | Create new **SENDAUTOREMINDER**. Organisation administration > Setup > DocuSign > Document types
 20                | SAB_DSDocumentTypesEntity | Create new **TEMPLATE**. Organisation administration > Setup > DocuSign > Document types
+
+Organisation administration > Setup > DocuSign > DocuSign parameters
+
+**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
+:-----            |:------------------------        |:-------------------                                      |:------------------------
+1	                | SAB_DSParametersEntity  | Create new **ENABLEEXCEPTIONLOG**. Organisation administration > Setup > DocuSign > DocuSign parameters
+2	                | SAB_DSParametersEntity   | Create new **INTEGRATORKEYSECRETNAME**. Organisation administration > Setup > DocuSign > DocuSign parameters
+3	                | SAB_DSParametersEntity  | Create new **KEY**. Organisation administration > Setup > DocuSign > DocuSign parameters
+4	                | SAB_DSParametersEntity  | Create new **OAUTHSERVERURL**. Organisation administration > Setup > DocuSign > DocuSign parameters
+5	                | SAB_DSParametersEntity           | Create new **PLACEHOLDEREMAIL**. Organisation administration > Setup > DocuSign > DocuSign parameters
+6	                | SAB_DSParametersEntity    | Create new **RSAPRIVATEKEYSECRETNAME**. Organisation administration > Setup > DocuSign > DocuSign parameters
+7	                | SAB_DSParametersEntity       | Create new **STATUSUPDOVERLAPMINUTES**. Organisation administration > Setup > DocuSign > DocuSign parameters
+8	                | SAB_DSParametersEntity | Create new **USERID**. Organisation administration > Setup > DocuSign > DocuSign parameters
+9	                | SAB_DSParametersEntity  | Create new **WEBSERVICEURL**. Organisation administration > Setup > DocuSign > DocuSign parameters
