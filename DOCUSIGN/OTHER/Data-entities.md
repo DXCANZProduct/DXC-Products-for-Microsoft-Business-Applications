@@ -36,10 +36,10 @@ Organisation administration > Setup > DocuSign > Document types
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | DocuSign document types  | Create new **ALLOWCHANGERESP**. Organisation administration > Setup > DocuSign > Document types
-2	                | DocuSign document types   | Create new **ALLOWPAPERSIGN**. Organisation administration > Setup > DocuSign > Document types
-3	                | DocuSign document types  | Create new **AUTOSEND**. Organisation administration > Setup > DocuSign > Document types
-4	                | DocuSign document types  | Create new **DOCUMENTNAME**. Organisation administration > Setup > DocuSign > Document types
+1	                | DocuSign document types  | Create new **DOCUMENTNAME**. Organisation administration > Setup > DocuSign > Document types
+2	                | DocuSign document types  | Create new **ALLOWCHANGERESP**. Organisation administration > Setup > DocuSign > Document types
+3	                | DocuSign document types   | Create new **ALLOWPAPERSIGN**. Organisation administration > Setup > DocuSign > Document types
+4	                | DocuSign document types  | Create new **AUTOSEND**. Organisation administration > Setup > DocuSign > Document types
 5	                | DocuSign document types           | Create new **ENABLEADVANCEDSETUP**. Organisation administration > Setup > DocuSign > Document types
 6	                | DocuSign document types    | Create new **EXPIRYDAYS**. Organisation administration > Setup > DocuSign > Document types
 7	                | DocuSign document types       | Create new **EXPIRYWARNDAYS**. Organisation administration > Setup > DocuSign > Document types
@@ -55,7 +55,7 @@ Organisation administration > Setup > DocuSign > Document types
 17	              | DocuSign document types           | Create new **REPORTNAME**. Organisation administration > Setup > DocuSign > Document types
 18                | DocuSign document types    | Create new **SAB_DSTEMPLATE_TEMPLATEID**. Organisation administration > Setup > DocuSign > Document types
 19                | DocuSign document types       | Create new **SENDAUTOREMINDER**. Organisation administration > Setup > DocuSign > Document types
-20                | DocuSign document types | Create new **TEMPLATE**. Organisation administration > Setup > DocuSign > Document types
+
 
 Organisation administration > Setup > DocuSign > DocuSign parameters
 
