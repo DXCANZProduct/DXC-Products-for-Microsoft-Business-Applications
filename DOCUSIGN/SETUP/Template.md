@@ -84,6 +84,6 @@ It is important to consider if a document will flow onto multiple pages when set
 After entering the **Template** details, users will be able to select which template will be used on a document and set in the **Document type** page.
 
 ### Data Entities
-- SAB_DSTemplateEntity
-- SAB_DSTemplateSignerEntity
-- SAB_DSTemplateTabEntity
+- Template
+- Signatories
+- Tags
