@@ -112,3 +112,7 @@ To import the journals;
 When you click OK, the system will run the process in asynchronous mode (background). You will be redirected to the execution history. Click on the refresh button at the top to see latest status. 
 
 *Note: The inventory movement journal import uses the Inventory movement journal headers and lines V3 data entity which as standard loads the data based on the scenario where if an existing Inventory Movement Journal with less than 1,000 lines is “Not posted”, the imported lines will be appended to the existing journal, otherwise a new journal will be created.*
+
+## Data entities
+- Inventory adjustment journal headers and lines V2 entity
+- Inventory movement journal headers and lines V4 entity
