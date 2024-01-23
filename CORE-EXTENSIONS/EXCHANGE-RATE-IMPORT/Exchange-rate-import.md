@@ -59,7 +59,7 @@ The following table shows the supported parameters.
 |  **Open exchange rate**  | Yes | Yes | Yes | No |
 
 ## Data entities
-General journal entity
+- General journal entity
 
 ## References
 
