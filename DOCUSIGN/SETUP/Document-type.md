@@ -84,4 +84,4 @@ The **Advance setting** FastTab will identify any advanced settings how to handl
 
 
 ### Data Entities
-- SAB_DSDocumentTypesEntity
+- DocuSign document types
