@@ -51,4 +51,6 @@ The following is a summary of data entities available for the Core extension  mo
 2	                | Print management document settings  | Setup  **Print management** Accounts receiable > Setup > Forms > Form setup.
 3	                | Print management document settings  | Setup  **Print management** Procurement and sourcing > Setup > Forms > Form setup
 4	                | Print management document settings  | Setup  **Print management** Project management and accounting > Setup > Forms > Form setup
-
+5	                | Print management document settings  | Setup  **Print management** Warehouse management>Setup>Warehouse management parameters > print management
+6	                | Print management document settings  | Setup  **Print management** Transportation management>Setup> Transportation management parameters > print management 
+6	                | Print management document settings  | Setup  **Print management** Inventory management>Setup>Inventory and warehouse management parameters > printt 
