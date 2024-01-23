@@ -34,6 +34,7 @@ A new data entity titled “Print management document settings” has been devel
 
 Print Management settings are available in the following Modules-<br>
 * Accounts receivable
+* Accounts payable
 * Inventory management
 * Procurement and sourcing
 * Project management and accounting
