@@ -61,9 +61,9 @@ Organisation administration > Setup > DocuSign > DocuSign parameters
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | DocuSign parameters  | Create new **ENABLEEXCEPTIONLOG**. Organisation administration > Setup > DocuSign > DocuSign parameters
-2	                | DocuSign parameters   | Create new **INTEGRATORKEYSECRETNAME**. Organisation administration > Setup > DocuSign > DocuSign parameters
-3	                | DocuSign parameters  | Create new **KEY**. Organisation administration > Setup > DocuSign > DocuSign parameters
+1	                | DocuSign parameters  | Create new **KEY**. Organisation administration > Setup > DocuSign > DocuSign parameters
+2	                | DocuSign parameters  | Create new **ENABLEEXCEPTIONLOG**. Organisation administration > Setup > DocuSign > DocuSign parameters
+3	                | DocuSign parameters   | Create new **INTEGRATORKEYSECRETNAME**. Organisation administration > Setup > DocuSign > DocuSign parameters
 4	                | DocuSign parameters  | Create new **OAUTHSERVERURL**. Organisation administration > Setup > DocuSign > DocuSign parameters
 5	                | DocuSign parameters           | Create new **PLACEHOLDEREMAIL**. Organisation administration > Setup > DocuSign > DocuSign parameters
 6	                | DocuSign parameters    | Create new **RSAPRIVATEKEYSECRETNAME**. Organisation administration > Setup > DocuSign > DocuSign parameters
@@ -75,8 +75,8 @@ Organisation administration > Setup > DocuSign > Templates
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | Template  | Create new **SIGNINGSEQUENCE**. Organisation administration > Setup > DocuSign > Templates
-2	                | Template   | Create new **TEMPLATEID**. Organisation administration > Setup > DocuSign > Templates
+1	                | Template   | Create new **TEMPLATEID**. Organisation administration > Setup > DocuSign > Templates
+2	                | Template  | Create new **SIGNINGSEQUENCE**. Organisation administration > Setup > DocuSign > Templates
 3	                | Template  | Create new **TEMPLATENAME**. Organisation administration > Setup > DocuSign > Templates
 
 
@@ -84,10 +84,10 @@ Organisation administration > Setup > DocuSign > Templates
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | Signatories  | Create new **DEPENDENTSORTING**. Organisation administration > Setup > DocuSign > Templates
-2	                | Signatories   | Create new **DESCRIPTION**. Organisation administration > Setup > DocuSign > Templates
-3	                | Signatories  | Create new **SAB_DSTEMPLATE_TEMPLATEID**. Organisation administration > Setup > DocuSign > Templates
-4	                | Signatories   | Create new **SORTING**. Organisation administration > Setup > DocuSign > Templates
+1	                | Signatories  | Create new **SAB_DSTEMPLATE_TEMPLATEID**. Organisation administration > Setup > DocuSign > Templates
+2	                | Signatories   | Create new **SORTING**. Organisation administration > Setup > DocuSign > Templates
+3	                | Signatories  | Create new **DEPENDENTSORTING**. Organisation administration > Setup > DocuSign > Templates
+4	                | Signatories   | Create new **DESCRIPTION**. Organisation administration > Setup > DocuSign > Templates
 5	                | Signatories  | Create new **TYPE**. Organisation administration > Setup > DocuSign > Templates
 
 Organisation administration > Setup > DocuSign > Templates
@@ -103,7 +103,7 @@ Organisation administration > Setup > DocuSign > Templates
 7	                | Tags  | Create new **PAGENUMBER**. Organisation administration > Setup > DocuSign > Templates
 8	                | Tags   | Create new **POSITIONX**. Organisation administration > Setup > DocuSign > Templates
 9	                | Tags   | Create new **POSITIONY**. Organisation administration > Setup > DocuSign > Templates
-10	                | Tags  | Create new **RADIOGROUPID**. Organisation administration > Setup > DocuSign > Templates
-111                | Tags   | Create new **TABPAGE**. Organisation administration > Setup > DocuSign > Templates
+10	              | Tags  | Create new **RADIOGROUPID**. Organisation administration > Setup > DocuSign > Templates
+111               | Tags   | Create new **TABPAGE**. Organisation administration > Setup > DocuSign > Templates
 12                | Tags  | Create new **TEXTCHARACTERLIMIT**. Organisation administration > Setup > DocuSign > Templates
 
