@@ -33,5 +33,18 @@ The following is a summary of data entities available for the Core extension  mo
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | DXCPrintManagementDestinationSettingsEntity  | Setup  ** **. Organisation administration > Organisations > Legal entities  
+1	                | General journal entity  | Setup  **Currency exchange rate**. General ledger > Currencies > Configure exchange rate providers 
+2	                | General journal entity  | Import  **Currency exchange rate**. General ledger > Currencies > Import Currency exchange rate 
 
+**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
+:-----            |:------------------------        |:-------------------                                      |:------------------------
+1	                | General journal entity  | create new  **General journal**. General ledger > Periodic task > Import generak journal
+
+**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
+:-----            |:------------------------        |:-------------------                                      |:------------------------
+1	                | Inventory adjustment journal headers and lines V2 entity | Create new ** Inventory adjustment journal**. Inventory management > Periodic tasks > Import inventory adjustment journal
+2	                | Inventory movement journal headers and lines V4 entity  | Create new **Inventory movement journal  **.Inventory management > Periodic tasks > Import inventory movement journal
+
+**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
+:-----            |:------------------------        |:-------------------                                      |:------------------------
+1	                | Print management document settings  | Setup  **Print management**. 
