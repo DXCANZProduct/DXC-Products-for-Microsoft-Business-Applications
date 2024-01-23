@@ -30,3 +30,8 @@ ms.dyn365.ops.version:  AX 7.0.1
 # Data entities
 
 The following is a summary of data entities available for the Core extension  module:
+
+**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
+:-----            |:------------------------        |:-------------------                                      |:------------------------
+1	                | DXCPrintManagementDestinationSettingsEntity  | Setup  ** **. Organisation administration > Organisations > Legal entities  
+
