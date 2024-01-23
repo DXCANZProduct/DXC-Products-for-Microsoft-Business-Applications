@@ -58,6 +58,8 @@ The following table shows the supported parameters.
 |  **Bank of Canada**  | No | Yes | Yes | No |
 |  **Open exchange rate**  | Yes | Yes | Yes | No |
 
+## Data entities
+General journal entity
 
 ## References
 
