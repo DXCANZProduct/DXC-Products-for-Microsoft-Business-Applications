@@ -47,4 +47,4 @@ The following is a summary of data entities available for the Core extension  mo
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | Print management document settings  | Setup  **Print management**. 
+1	                | Print management document settings  | Setup  **Print management** Accounts payable > Setup > Forms > Form setup. 
