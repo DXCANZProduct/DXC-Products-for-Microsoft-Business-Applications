@@ -99,7 +99,7 @@ Under the Smart Send tab, you can turn on Azure Blob Storage for each document t
 
 ### Data Entities
 
-- EmailTemplateOrganizationEntity
-- ECL_AutoPrintReportMgmtEntity
-- LogisticsLocationRoleEntity
-- EmailTemplateMessageOrganizationEntity
+- Organization email template
+- Address and contact information purpose
+- Organization email template message
+- SmartSend setup
