@@ -32,7 +32,7 @@ ms.dyn365.ops.version:  AX 7.0.1
 The following is a summary of data entities available for the Item creation module:
 
 ## Item creation setup
-Item creation> Setup > Item creation 
+Item creation> Setup > Item creation > Item Creation Template
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
@@ -50,3 +50,9 @@ Item creation> Setup > Item creation
 12	              | Item creation template attribute defaults  | Create new **Template attributes**. Item creation > Setup > Item creation > Item creation templates
 13                | Item creation template dimension import setup |  Create new **Template dimension**. Item creation > Setup > Item creation > Item creation template
 14                | tem creation template fields - linked fields |  Create new **Template fields**. Item creation > Setup > Item creation > Item creation template
+
+Item creation> Periodic tasks > Creation > Item import
+**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
+:-----            |:------------------------        |:-------------------                                      |:------------------------
+1	                | File import data| Create new **import file**. Item creation> Periodic tasks > Creation > Item import
+
