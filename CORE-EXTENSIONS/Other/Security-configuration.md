@@ -43,3 +43,10 @@ Materials Manager                 |   Import Inventory Movement Journal
 
 
 To run the User security audit details report, you must be assigned the “Security administrator” role.
+
+For Core Extensions 
+ 
+the Data Anonymization feature can only be accessed by the System administrator security role
+ 
+To  Import or Export Printer management settings you need access to the Data management Framework.  To View the results you require access to the relevant module.
+
