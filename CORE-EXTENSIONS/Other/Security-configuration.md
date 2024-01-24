@@ -35,4 +35,11 @@ For Core extensions/Core Utilities there are no New Security roles as part of th
 The Import projects need to have security roles applied to them in order for non-Administrator users to have permissions to import files into the journals. 
 It is recommended that the following roles are set to use the import features:
 
+**Roles**         | **Import Feature**                    
+:-----            |:------------------------        
+Accounting Manager                | 	Import General Journal 
+Materials Manager                 |   Import Inventory Adjustment Journal
+Materials Manager                 |   Import Inventory Movement Journal
 
+
+To run the User security audit details report, you must be assigned the “Security administrator” role.
