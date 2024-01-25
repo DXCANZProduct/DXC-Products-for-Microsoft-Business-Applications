@@ -36,7 +36,7 @@ Organisation administration > Setup > DocuSign > Document types
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | DocuSign document types  | Create new **DOCUMENTNAME**. Organisation administration > Setup > DocuSign > Document types
+1	                | DocuSign document types  | Create new **DOCUMENT NAME**. Organisation administration > Setup > DocuSign > Document types
 2	                | DocuSign document types  | Create new **ALLOWCHANGERESP**. Organisation administration > Setup > DocuSign > Document types
 3	                | DocuSign document types   | Create new **ALLOWPAPERSIGN**. Organisation administration > Setup > DocuSign > Document types
 4	                | DocuSign document types  | Create new **AUTOSEND**. Organisation administration > Setup > DocuSign > Document types
