@@ -36,10 +36,10 @@ Organisation administration > Setup > DocuSign
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | DocuSign document types  | Create new **Document Type**. 
-2                 | DocuSign parameters  | Create new **Document Type**. 
-3                 | Template  | Create new **DocuSign Templates**. 
-4                 | Signatories  | Create new **DocuSign Templates**. 
-5                 | Tags  | Create new **DocuSign Templates**. 
+1	                | DocuSign document types  | Create new **Document Type**.  |
+2                 | DocuSign parameters  | Create new **Document Type**.  |
+3                 | Template  | Create new **DocuSign Templates**.   |
+4                 | Signatories  | Create new **DocuSign Templates**.   |
+5                 | Tags  | Create new **DocuSign Templates**.   | Templates, 
 
 
