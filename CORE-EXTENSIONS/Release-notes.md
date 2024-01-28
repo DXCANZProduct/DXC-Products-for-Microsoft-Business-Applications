@@ -55,7 +55,7 @@ Number	  	| Functionality	  | Description
 :--       	|:--              |:--
 14998		| DMF Toolbox	| Exposes 2 new fields in DMF data entities
 16043		| Scramble data in FinOps env to protect sensitive data	| Allows for information to be scrambled post a database copy or restore from a production into a sandbox environment.
-16013		| Export/import of Print management settings	| When importing General Journals with no exchange rate the Journal is populated with the Default Exchange rate for that currency
+16013		| Export/import of Print management settings	| New feature that allows the import/Export of Printer management settings
 16514		| Reset Print Management | Resets Print management setting for the related module to Default, can be used in case of errors or query corruption. Available in the following Modules, Accounts receivable, Inventory management, Procurement and sourcing, Project management and accounting, Transportation management, Warehouse management
 16567		| Exchange Rate update	| When importing General Journals with no exchange rate the Journal is populated with the Default Exchange rate for that currency
 13552		| Feature management	| Core extensions now available via Feature management
