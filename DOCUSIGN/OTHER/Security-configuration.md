@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: HelenHo
+ms.reviewer: PeterMusumeci
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
@@ -28,9 +28,4 @@ ms.dyn365.ops.version:  AX 7.0.1
 ---
 
 # Security configuration
-For DocuSign there are no Data Entities involved as it allows documents to be sent for signature via DocuSign and no security roles worth mentioning on GitHub.   
-However to help your knowledge  In terms of security for eSignature for DocuSign there are no special security privileges' or roles in F&O to use DocuSign however users require access to
-Organization administration > Setup
-
-Menu item to set DocuSign up and they require access to the DocuSign Application which is managed directly with DocuSign via a subscription.  
-From there it just depends on what module they access for the form to be sent for eSignature.
+DocuSign for Dynamics 365 leverages existing Finance and operation security roles and allows documents to be sent for e Signature via the DocuSign platform.  Users, require access to the specified module in Finance and Operations sending the document via Print management to DocuSign.  Any DocuSign log in or security access related to the platform is not part of this article.
