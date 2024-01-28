@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: Helen Ho
+ms.reviewer: Peter Musumeci
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
@@ -33,24 +33,19 @@ The following is a summary of data entities available for the Core extension  mo
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | General journal entity  | Setup  **Currency exchange rate**. General ledger > Currencies > Configure exchange rate providers 
-2	                | General journal entity  | Import  **Currency exchange rate**. General ledger > Currencies > Import Currency exchange rate 
-
-**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
-:-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | General journal entity  | create new  **General journal**. General ledger > Periodic task > Import generak journal
+1	                | General journal entity  | create new  **General journal**. General ledger > Periodic task > Import general journal
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
 1	                | Inventory adjustment journal headers and lines V2 entity | Create new ** Inventory adjustment journal**. Inventory management > Periodic tasks > Import inventory adjustment journal
-2	                | Inventory movement journal headers and lines V4 entity  | Create new **Inventory movement journal  **.Inventory management > Periodic tasks > Import inventory movement journal
+1	                | Inventory movement journal headers and lines V4 entity  | Create new **Inventory movement journal  **. Inventory management > Periodic tasks > Import inventory movement journal
 
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
-1	                | Print management document settings  | Setup  **Print management** Accounts payable > Setup > Forms > Form setup.  
-2	                | Print management document settings  | Setup  **Print management** Accounts receiable > Setup > Forms > Form setup.
-3	                | Print management document settings  | Setup  **Print management** Procurement and sourcing > Setup > Forms > Form setup
-4	                | Print management document settings  | Setup  **Print management** Project management and accounting > Setup > Forms > Form setup
-5	                | Print management document settings  | Setup  **Print management** Warehouse management>Setup>Warehouse management parameters > print management
-6	                | Print management document settings  | Setup  **Print management** Transportation management>Setup> Transportation management parameters > print management 
-6	                | Print management document settings  | Setup  **Print management** Inventory management>Setup>Inventory and warehouse management parameters > print 
+1	                | Print management document settings  | Import/Export **Print management** settings.  Accounts payable > Setup > Forms > Form setup.  
+1	                | Print management document settings  | Import/Export **Print management** settings.  Accounts receiable > Setup > Forms > Form setup.
+1	                | Print management document settings  | Import/Export **Print management** settings.  Procurement and sourcing > Setup > Forms > Form setup
+1	                | Print management document settings  | Import/Export **Print management** settings.  Project management and accounting > Setup > Forms > Form setup
+1	                | Print management document settings  | Import/Export **Print management** settings.  Warehouse management > Setup>Warehouse management parameters > print management
+1	                | Print management document settings  | Import/Export **Print management** settings.  Transportation management>Setup > Transportation management parameters > print management 
+1	                | Print management document settings  | Import/Export **Print management** settings.  Inventory management > Setup > Inventory and warehouse management parameters > print 
