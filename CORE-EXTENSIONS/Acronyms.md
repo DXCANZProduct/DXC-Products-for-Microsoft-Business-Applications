@@ -37,5 +37,9 @@ Acronym	    | Definition
 **RBA**	    | Reserve Bank of Australia 
 **BOC**	    | Bank of Canada 
 **OPR**	    | Open Exchange Rates 
-**DMF**	    | Data Management Framework provides users with the visibility of 2 additional fields within Data Management Entities.
-**Data Anonymization**	    | A Process that allows for information to be scrambled post a database copy or restore from a production into a sandbox environment 
+**DMF**	    | Data Management Framework
+**Data Anonymization**	    | A Process that allows for information to be scrambled or masked with predefined or random values.
+**DMF Toolbox**	    | The Data Management Framework (DMF) toolbox provides users with the visibility of 2 additional fields within Data Management Entities.
+**Enum**	    | Enumeration 
+
+
