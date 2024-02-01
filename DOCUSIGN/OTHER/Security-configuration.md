@@ -28,4 +28,8 @@ ms.dyn365.ops.version:  AX 7.0.1
 ---
 
 # Security configuration
-DocuSign for Dynamics 365 leverages existing Finance and operation security roles and allows documents to be sent for e Signature via the DocuSign platform.  Users, require access to the specified module in Finance and Operations sending the document via Print management to DocuSign.  Any queries related to DocuSign log in or security access related to the platform is not part of this article and should be directed to your DocuSign administrator.
+DDocuSign for Dynamics 365 as an end user does not require special permissions as it is a printer destination and allows documents to be sent for e Signature via the DocuSign platform. 
+However, Users, require access to the specified module/s in Finance and Operations to set up contacts as well as the document via Print management to DocuSign. 
+The DocuSign Menu options are housed within Organisation ad ministration and users require access to this module to perform any set up.
+The DocuSign platform has its own security protocols and permissions for users to complete set up.
+Any queries related to DocuSign log in or security access related to the platform is not part of this article and should be directed to your DocuSign administrator.
