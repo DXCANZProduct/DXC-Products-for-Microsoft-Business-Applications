@@ -92,6 +92,10 @@ Select **Save** and the applicable **Setup** will be displayed as per the **Conn
 | **Password**	| Enabled when Credential type is set to _Database_. Specify the Password used for authentication to the SFTP site. *Note: this is encrypted and displayed as •••••••••• within the form.* ||
 | **Key vault certificate** |	Enabled when Credential type is set to _Key vault_. | Select applicable Key vault certificate.	|
 
+### Validate connection
+Use button **Validate connection** to validate the following:
+- Connection details
+- Export path or container
 
 ### Step 2 - Setup Document types
 
