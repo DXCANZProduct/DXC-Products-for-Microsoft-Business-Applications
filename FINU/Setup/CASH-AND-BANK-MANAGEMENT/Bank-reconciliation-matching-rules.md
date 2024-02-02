@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Bank reconciliation matching rules
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-08-30
+ms.date: 2024-02-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,9 +39,14 @@ User can then edit the new rule and activate.
 
 ### Group by document number
 
-D365 standard does not have the capability to match one transaction in the bank statement to multiple transactions in the D365 Bank Transactions that have the same **Journal id** or **Cheque number**. This Finance utilities functionality extends the automatic reconciliation matching rules by adding **Group by document number** to Reconciliation matching rules with Action **Match with bank statement** in 'Step 1: Define the matching rule'.
+Finance utilities functionality extends the automatic reconciliation matching rules by adding **Group by document number** to Reconciliation matching rules with Action **Match with bank statement** in 'Step 1: Define the matching rule'.
 
-The feature can be activated from **Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules**
+> Note: From **10.0.32** MS has added a feature called **Ability to post detailed vendor and customer payments, but summarize amounts to bank account**. <br>
+>   -  If this feature is enabled and setup to summarise, journals that contain multiple lines that matches the criteria will be grouped into one bank transaction line. 
+>   -  The new 'Bank transaction summarization id' is written to the Bank reconciliation's **Document number** for the Bank transaction.
+>   -  This will affect companies that use Financial utilities parameter **Populate bank transaction document number** and **Group by document number** functionality on Reconciliation matching rules as the Payment journal's 'Journal batch number' isn't written to the Bank reconciliation's Document number (if the journal contains multiple lines that matches the criteria).
+
+The Finance utilities feature can be activated from **Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules**
 
 | Field | Description |
 |-|-|
