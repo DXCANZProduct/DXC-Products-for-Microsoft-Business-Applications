@@ -42,11 +42,6 @@ Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 
 
-> Note: From **10.0.32** MS has added a feature called **Ability to post detailed vendor and customer payments, but summarize amounts to bank account**. <br>
->   -  If this feature is enabled and setup to summarise, journals that contain multiple lines that matches the criteria will be grouped into one bank transaction line. 
->   -  The new 'Bank transaction summarization id' is written to the Bank reconciliation's **Document number** for the Bank transaction.
->   -  This will affect companies that use Financial utilities parameter **Populate bank transaction document number** and **Group by document number** functionality on Reconciliation matching rules as the Payment journal's 'Journal batch number' isn't written to the Bank reconciliation's Document number (if the journal contains multiple lines that matches the criteria).
-
 > Note: From **10.0.32** MS has added a feature (on by default) called **Time zone for importing bank statements using Electronic reporting**. <br>
 > Finance utilities doesn't currently support converting date/time fields within the bank statement file.
 
