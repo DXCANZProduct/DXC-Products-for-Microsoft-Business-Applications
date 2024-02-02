@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Accounts payable setup - Save electronic reporting file to secure location 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-01-31
+ms.date: 2024-02-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,6 +51,7 @@ Select **New** to create the location where GER file is to be saved. Connection 
 | **Error action**    |	The action to take when there is an error with the connection | • Error <br> • Warning |
 | **Enable file encryption/decryption** | Set to _Yes_ if the export file should be encrypted | •	No <br>	• Yes  |
 | **Encryption key name** |	Select applicable **Encryption key name**. <br> See [DXC encryption parameters](../ENCRYPTION/Encryption-decryption.md) for additional details. 
+| **Enable business event**  | Option to create an event when file is saved to Azure blob. <br> Setup required: <br> • Set this option to Yes <br> • Active Business event 'Electronic reporting file exported to azure blob' •	No <br>	• Yes  |
 
 
 Select **Save** and the applicable **Setup** will be displayed as per the **Connection type** selected
