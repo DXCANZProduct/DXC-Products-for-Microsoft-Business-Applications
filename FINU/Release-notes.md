@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-01-12
+ms.date: 2024-02-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,6 +49,26 @@ Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dyn
 
 > Note: From **10.0.32** MS has added a feature (on by default) called **Time zone for importing bank statements using Electronic reporting**. <br>
 > Finance utilities doesn't currently support converting date/time fields within the bank statement file.
+
+#### Build 10.0.36.2023111671
+Release date: 2 February 2024 <br>
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+16332		| System administration 	| Business event for electronic reporting export | New Business event **Electronic reporting file exported to azure blob**. Option to create an event when exporting ER file to Azure Blob via 'Electronic reporting export connections'.
+16596		| Organization adminstration	| Electronic reporting export connection | 'Validate connection' functionality added
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+16873		| Accounts payable	| Payment advice print	| Finance utilities was referencing 'ECL_BankPaymAdviceVendV2' report when printing Payment advice. When the report wasn't deployed to environment, it would error with 'Parameter _reportName cannot be null or empty'. Reference to report has been removed.
+16897		| Accounts payable <br> Accounts receivable	| ABN validation	| Only applicable to 10.0.36.2023111661. When ABN validation was actived for the legal entity, any changes in vendor/customer resulted in ABN validation dialog popping up.
+16959		| Various	| - Financial utilities connections <br> - Electronic reporting export connections	| Increase EDT for usernames, passwords (sftp, ftp) and storage account name and storage account key (Azure blob)
+16976		| Accounts reveivable	| Interest note - Due date	| Waive, reinstate and reverse of interest notes also utilize 'Use customer payment terms'
+
 
 #### Build 10.0.36.2023111661
 Release date: 12 January 2024 <br>
