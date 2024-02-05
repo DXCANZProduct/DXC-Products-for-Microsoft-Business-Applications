@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: DocuSign
+title: Item Creation Wizard
 description: Item Creation Wizard - Security configuration
 author: Peter Musumeci
 manager: Kym Parker
