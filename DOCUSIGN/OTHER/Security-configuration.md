@@ -35,7 +35,7 @@ The following roles are included in DocuSign for Dynamics 365 Finance and Operat
 ) 
 
 
-DocuSign allows documents to be sent for e Signature via the DocuSign platform. Users, do require access to the specified module/s in Finance and Operations to set up contacts as well as issue the document via Print management to DocuSign. 
+DocuSign allows documents to be sent for e Signature via the DocuSign platform. Users, do require the necessary standard roles/privileges that facilitate maintenance of contacts and/or purposes and  issue the relevant document via Print management to DocuSign for an end to end solution. 
 
 The DocuSign platform has its own security protocols and permissions for users to complete set up.
 Any queries related to DocuSign log in or security access related to the platform is not part of this article and should be directed to your DocuSign administrator.
