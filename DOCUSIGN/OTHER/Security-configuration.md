@@ -30,7 +30,7 @@ ms.dyn365.ops.version:  AX 7.0.1
 # Security configuration
 
 The following roles are included in DocuSign for Dynamics 365 Finance and Operations
-  - DocuSign Administrator: Maintains all DocuSign setup within Dynamics 365 (exclusing that required to add the solution via Feature management)
+  - DocuSign Administrator: Maintains DocuSign parameters, Document types, DocuSign Templates, Dropdown lists and DocuSign Enquiries within Dynamics 365
   - DocuSign user: Allows Read access to DocuSign parameters, Document types, DocuSign Templates, Dropdown lists and DocuSign Enquiries within Dynamics 365
 ) 
 
