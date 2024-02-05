@@ -29,11 +29,11 @@ ms.dyn365.ops.version:  AX 7.0.1
 
 # Security configuration
 
-The following roles are included in DXC DocuSign for Dynamics 365 for Finance and Operations:
+The following roles are included in DXC DocuSign for Dynamics 365 Finance and Operations:
  
-  -DocuSign Administrator: Maintain the DocuSign solution (within Dynamics D365)
- 
-  -DocuSign user: Provides read access to DocuSign parameters, Document Types, DocuSign Templates
+  - DocuSign Administrator: Maintain the DocuSign solution (within Dynamics D365) including create/update DocuSign parameters, Document Types, DocuSign Templates, DocuSign Drop down lists and visibility of DocuSign Enquiries reports.
+    
+  - DocuSign user: Provides read access to DocuSign parameters, Document Types, DocuSign Templates and associated tabs
 
 DocuSign allows documents to be sent for e Signature via the DocuSign platform. Users, do require the necessary standard roles/privileges that facilitate maintenance of contacts and/or purposes and issue the relevant document via Print management to DocuSign for an end to end result
 
