@@ -53,7 +53,7 @@ Item creation> Setup > Item creation > Item Creation Template
 13                | Item creation template dimension import setup |  Create new **Template dimensions**. Item creation > Setup > Item creation > Item creation template | Template Name, Template Version, Step, Tab Name, Default Attribute Value
 
 Item creation> Periodic tasks > Creation > Item import
+
 **Order**         | **Entity**                      | **Description**	                                         | **Dependency**
 :-----            |:------------------------        |:-------------------                                      |:------------------------
 1	                | File import data| Create new **item import**. Item creation> Inquiries > Creation import sessions
-
