@@ -27,17 +27,17 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# Accounts payable functionality
+**Accounts payable functionality**
 The fields as described in the following subsections are available to control the additional functionality for accounts payable.
 
-## Bank accounts
+# Bank accounts
 
 Some improvements to the Accounts Payable EFT payment processing have been created, these include the following setup on the Company's bank account.
 
 This can be set per company bank account. To open the the **Bank accounts** page, go to **Cash and bank management > Bank accounts > Bank accounts**. <br>
 Expand the **Payment management** FastTab and set the applicable fields under header **AP EFT parameters**:
 
-#### Balance line
+### Balance line
 
 > Note: Only applicable to custom Finance Utilities EFT formats **
 
@@ -51,7 +51,7 @@ Finance utilities has parameterised the format of the last two balancing lines o
  <br> o	Total credit, total debit, total net
  <br> o	Total debit, total credit, total net
 
-#### Vendor bank name
+### Vendor bank name
 
 > Note: Only applicable to custom Finance Utilities EFT formats **
 
@@ -59,10 +59,10 @@ This setup will use the **Vendor bank account name** instead of the **Vendor nam
 
 -	Expand the Payment Management FastTab and select whether the EFT file should **Use vendor bank name**.
 
-#### User identification
+### User identification
 Option to set the User identification to be used when generating the vendor payment.
 
-## Methods of payment
+# Methods of payment
 The Method of payment form is used to set up and generate the EFT file from your Dynamics 365 environment. 
 
 ### File formats
@@ -123,7 +123,7 @@ File name when **Enable file parameters** is set to:
 - [Sundry method of payment](Sundry-payment.md)
 - [BPAY method of payment](BPAY-payment.md)
 
-## Payment advice report
+# Payment advice report
 A custom-built report has been developed to provide a remittance advice to vendors upon processing a payment run. The report will show the vendor bank account details where the payment is deposited, as well as the invoices numbers paid, what amount and what discount applied. This remittance advice report works in conjunction with the **Smart Send** Emailing functionality. The report is available when Payment status is Sent.
 
 Users can select to use the custom-build report by navigating to **Accounts payable > Setup > Forms setup**. <br>
@@ -139,7 +139,7 @@ The Payment advice report can be used in conjunction with sending via Email to t
 -	Vendor's transactions
 -	Payment history on the vendor
 
-## Payments report
+# Payments report
 When creating a **Vendor payment journal**, it can be useful to print the **Payments** report to reconcile vendor bank details, before generating the EFT file.
 Finance utilities has added the following fields on the right for each Vendor payment line:
 - Vendor bank name
