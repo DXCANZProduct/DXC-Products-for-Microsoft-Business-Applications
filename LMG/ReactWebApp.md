@@ -3,7 +3,7 @@
 
 title: License Manager Web App
 description: License Manager Web App
-author: hho34
+author: adutt2
 manager: Kym Parker
 ms.date: 2023-11-20
 ms.topic: article
@@ -23,21 +23,6 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # License Manager Web App (**Upcoming Release - 2024**)
-
-<!-- TOC -->
-
-- [License Manager Web App](#license-manager-web-app)
-  - [Overview](#overview)
-  - [How to gain access for your organization](#how-to-gain-access-for-your-organization)
-  - [Granting access to organization users](#granting-access-to-organization-users)
-  - [Signing up or signing in](#signing-up-or-signing-in)
-    - [Sign up process](#sign-up-process)
-  - [Data table properties](#data-table-properties)
-  - [Products](#products)
-  - [Customers](#customers)
-  - [License Expiry](#license-expiry)
-
-<!-- /TOC -->
 
 ## Overview
 
@@ -277,9 +262,13 @@ For details on how to the data table functions see [Data table properties](#data
 - **Delete** - Delete the environment record for the selected customer.
   ![DeleteCustomerEnvironment](./IMAGES/WebApp/Img_26.png)
 
-## License Expiry
+## Reports
+
+### License Expiry
 
 This section describes the license expiry view.
+
+App Bar Menu Item Name - **_License Expiry_**
 
 Navigate from License Expiry View
 
@@ -303,3 +292,21 @@ For details on how to the data table functions see [Data table properties](#data
 - **Product** - Product name
 - **Date** - Expiry Date
 - **Flag** - Flag to determine if the license has already expired
+
+## Power BI
+
+This section describes the reports accessible within the app
+
+App Bar Menu Item Name - **_Power BI_**
+
+On load, displays the list of reports accessible to the user.
+
+![](./IMAGES/WebApp/Img_28.png)
+
+Select each report in the list to view the Power BI report in embedded view.
+
+![](./IMAGES/WebApp/Img_27.png)
+
+These reports are embedded using service principal and requires Power BI Pro license. User license is not required.
+
+Please reach out to our support team at ECLANZProductSupport@dxc.com for more details.
