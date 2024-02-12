@@ -30,24 +30,6 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This document describes the features that are either new or changed in the release version mentioned.
 
-<!-- TOC -->
-
-- [Current Version](#current-version)
-  - [FinOps](#d365-finance-and-operations)
-    - [DXC License Manager](#dxc-license-manager)
-    - [DXC License](#dxc-license)
-  - [PowerApps](#microsoft-power-apps)
-    - [DXC License Manager Canvas App](#dxc-license-manager-canvas-app)
-  - [WebApp - (**Upcoming Release 2024)**](#react-web-app)
-    - [DXC License Manager Web App](#dxc-license-manager-web-app)
-- [Previous Versions](#previous-versions)
-  - [FinOps](#d365-finance-and-operations-1)
-    - [DXC License Manager](#dxc-license-manager-1r)
-  - [PowerApps](#microsoft-power-apps)
-    - [DXC License Manager Canvas App](#dxc-license-manager-canvas-app-1)
-
-<!-- /TOC -->
-
 # Current version
 
 ## D365 Finance and Operations
