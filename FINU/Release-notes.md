@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-02-02
+ms.date: 2024-02-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,10 +40,14 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
 Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
+Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 
+**Features not yet supported:**
 
-> Note: From **10.0.32** MS has added a feature (on by default) called **Time zone for importing bank statements using Electronic reporting**. <br>
-> Finance utilities doesn't currently support converting date/time fields within the bank statement file.
+Version	| Feature	| Feature state
+:--       	|:--		|:--
+**10.0.32** 	| **Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the bank statement file | Mandatory
+**10.0.39** 	| **Modern bank reconciliation** | Preview
 
 #### Build 10.0.36.2023111671
 Release date: 2 February 2024 <br>
