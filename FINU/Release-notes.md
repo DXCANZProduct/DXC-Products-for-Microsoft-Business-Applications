@@ -44,10 +44,11 @@ Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dyn
 
 #### Features not yet supported
 
-Version	| Feature	| Feature state
-:--       	|:--		|:--
-**10.0.32** 	| **Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the bank statement file | Mandatory
-**10.0.39** 	| **Modern bank reconciliation** | Preview
+Feature	| Feature state
+:--       	|:--		
+**Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the bank statement file | Mandatory
+**Reverse posted bank statement with new transactions** for offset types customer, vendor and bank	| On by default
+**Modern bank reconciliation** | Preview in 10.0.39
 
 #### Build 10.0.36.2023111671
 Release date: 2 February 2024 <br>
