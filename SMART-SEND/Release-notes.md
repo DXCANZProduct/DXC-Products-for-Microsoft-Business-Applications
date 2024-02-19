@@ -32,18 +32,40 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.34.20231026
+### Release 10.0.36.20231026
 
-DXC Smart Business Form Email Manager 10.0.34 runs on the following Microsoft releases
+DXC Smart Business Form Email Manager 10.0.36 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
-Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
 Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
 Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 
+
+#### Build 10.0.36.202310262
+
+<ins>Bug fixes</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+17069	    | Error: Report DXC_BankPaymAdviceVendV2.Report is not setup for Smart Send| Previously when issuing a Customer or Vendor Payment advice with a custom report an error is displayed advising that the report is not set up for Smart Send. The issue would only be encountered with non-System admin accounts. 
+
+
+
+## Feature management
+From 10.0.34.20231026 Smart Send can be enabled via Feature management
+Enable the following feature in D365 Feature management:
+
+- DXC Smart Send
+
+If above feature is not visible, press **Check for updates** to refresh the feature management list.
+
+
+	
+
+# Previous version(s)
+### Release 10.0.34.20231026
 #### Build 10.0.34.202310261
 
 <ins>Bug fixes</ins>
@@ -96,9 +118,7 @@ Enable the following feature in D365 Feature management:
 If above feature is not visible, press **Check for updates** to refresh the feature management list.
 
 
-	
 
-# Previous version(s)
 ### Release 10.0.29.20230414
 
 #### Build 10.0.29.202304143
