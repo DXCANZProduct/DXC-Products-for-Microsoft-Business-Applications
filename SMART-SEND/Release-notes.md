@@ -49,7 +49,7 @@ Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dyn
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-17069	    | Error: Report DXC_BankPaymAdviceVendV2.Report is not setup for Smart Send| Previously when issuing a Customer or Vendor Payment advice with a custom report an error is displayed advising that the report is not set up for Smart Send. The issue would only be encountered with non-System admin accounts. 
+17069	    | Error: Report DXC_BankPaymAdviceVendV2.Report is not setup for Smart Send| Previously when issuing a Customer or Vendor Payment advice with a custom report an error is displayed advising that the report is not set up for Smart Send.
 
 
 
