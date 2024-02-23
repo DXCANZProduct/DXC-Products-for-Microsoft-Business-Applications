@@ -44,3 +44,7 @@ Yes, when you run an update session that includes Product Attributes, the sessio
 
 ### Can I create a template that only updates 1 or 2 specific product attributes?
 Currently when you run an update session that includes product attributes, all attributes assigned against the released product are displayed in the template.
+
+### Can I update previously released variants to use the Item Status indicator?
+
+Yes, if you have a variant for your Product Master that has been released without an Item Status, you can update this variant to display the status indicator using the Item Status Link.  See [Updating a single item](DXC-ITEM-CREATION-WIZARD/PROCESSES/Managing-item-statuses.md)
