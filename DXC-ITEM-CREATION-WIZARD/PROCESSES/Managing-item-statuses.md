@@ -39,6 +39,8 @@ Where no item status exists on a released product and the template does not have
 
 The item status can be held at the item or item dimension level. The item status can be manually updated via the *item status link* menu in the action pane of the released products form. **Item creation > Products > Released products > Item creation > Item status link**.
 
+![Item Status link](IMAGES/Override_print_destination.png)
+
 The form will display the current record on opening, historical records can be viewed by selecting *As of date* from the action pane.  
 
 #### To create a new item status;
