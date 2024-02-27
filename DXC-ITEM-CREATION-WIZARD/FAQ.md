@@ -4,7 +4,7 @@
 title: DXC-ITEM-CREATION-WIZARD
 description: DXC-ITEM-CREATION-WIZARD - Frequently asked questions
 author: Peter Musumeci
-manager: Kym Parker
+Manager: Kym Parker
 ms.date: 2023-06-26
 ms.topic: article
 ms.prod: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.34
 # Frequently asked questions
 
 ### Where can I find contact information for support?
-Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > Product support**
+Support contact details can be located on the **Contact** tab at **Organization administration> Workspaces > Product support**
 
 ### Where can I identify the installed version of Insights for D365 FO?
 Navigate to Help & support > About.
@@ -43,7 +43,7 @@ When an Item creation session is generated the update template will record the v
 Yes, when you run an update session that includes Product Attributes, the session will display the default attribute value that was assigned when you configured the template and the current system value for all other attributes against the relevant item. 
 
 ### Can I create a template that only updates 1 or 2 specific product attributes?
-Currently when you run an update session that includes product attributes, all attributes assigned against the released product are displayed in the template.
+Currently, when you run an update session that includes product attributes, all attributes assigned against the released product are displayed in the template.
 
 ### Can I update previously released variants to use the Item Status indicator?
 
