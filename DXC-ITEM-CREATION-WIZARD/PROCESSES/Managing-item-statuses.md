@@ -39,7 +39,7 @@ Where no item status exists on a released product and the template does not have
 
 The item status can be held at the item or item dimension level. The item status can be manually updated via the *item status link* menu in the action pane of the released products form. **Item creation > Products > Released products > Item creation > Item status link**.
 
-![Item Status link](../IMAGES/Override_print_destination.png)
+![Item Status link](../IMAGES/Item-Status-Link-Tab.png)
 
 The form will display the current record on opening, historical records can be viewed by selecting *As of date* from the action pane.  
 
@@ -59,14 +59,14 @@ A periodic job is available that can update the item status with a specified eff
 1.	Select the *From Status*, only the selected items matching this status will be updated.
 2.	Select the *To Status*.
 3.	Enter an *Effective date* if required.  
-    * To make effective immediately, leave blank.
+    * To make it effective immediately, leave it blank.
 4.	Select a *Category hierarchy* if required to filter down to a group of products.
 5.	Select the items to be updated. 
 6.	Select OK.
 
 *Note: Optionally select the Run in the background tab to run in batch processing. Please see [Microsoft User Guides](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) for further information*
 
-## Updating based on stock on hand rules
+## Updating based on stock-on-hand rules
 
 [Automatic status change rules](../SETUP/ITEM-SETUP/Automatic-status-change-rules.md) can be setup to update the item status based on certain events. For example, a status that indicates a low level of inventory can be updated to a discontinued status once the stock on hand becomes zero. The periodic job can be accessed from **Item creation > Periodic tasks > Item status > Automatic status update**.
 
