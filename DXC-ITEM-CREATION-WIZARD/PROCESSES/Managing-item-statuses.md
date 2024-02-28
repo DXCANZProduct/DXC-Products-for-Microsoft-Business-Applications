@@ -41,7 +41,17 @@ The item status can be held at the item or item dimension level. The item status
 
 ![Item Status link](../IMAGES/Item-Status-Link-Tab.png)
 
-The form will display the current record on opening, historical records can be viewed by selecting *As of date* from the action pane.  
+By default the form will display the current record on opening, historical records can be viewed by selecting *As at date* from the action pane or toggling "Display all records" to Yes  
+
+|  **Field**  | **Description** | 
+|:---|:---|     
+|  **Default**  | Select a default business form or report per document type. When the Smart Send button is clicked on each of the document forms, the default business form or report is used. If none are selected, then the system default will be used.
+
+
+
+
+
+
 
 #### To create a new item status;
 1. Select *New* from the action pane.
