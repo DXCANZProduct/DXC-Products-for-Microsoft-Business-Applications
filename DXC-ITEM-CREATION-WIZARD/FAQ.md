@@ -47,4 +47,4 @@ Currently, when you run an update session that includes product attributes, all 
 
 ### Can I update previously released variants to use the Item Status indicator?
 
-Yes, if you have a variant for your Product Master that has been released without an Item Status, you can update this variant to display the status indicator using the Item Status Link.  See [Updating a single item](DXC-ITEM-CREATION-WIZARD/PROCESSES/Managing-item-statuses.md)
+Yes, if you have a variant for your Product Master that has been released without an Item Status, you can update this variant to display the status indicator using the Item Status Link.  See [Updating a single item](PROCESSES/Managing-item-statuses.md)
