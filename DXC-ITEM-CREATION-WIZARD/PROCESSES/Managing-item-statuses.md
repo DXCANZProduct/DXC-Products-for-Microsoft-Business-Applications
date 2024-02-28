@@ -45,25 +45,20 @@ By default, the form will display the current record on opening. Historical reco
 
 ![Display-records-at](../IMAGES/Display-records-at.png)
 
-
-
-|  **Field**  | **Description** | 
-|:---|:---|     
-|  **Display Dimensions**  | Select a default business form or report per document type. When the Smart Send button is clicked on each of the document forms, the default business form or report is used. If none are selected, then the system default will be used.
-
-
-
-
-
+Selecting **Display Dimensions** from the menu bar Enables the Dimensions display pane.  This allows you to toggle onto the page the required product dimensions for your corresponding item and save the set-up for future use. YOu can choose to display all product dimensions or just the ones relevant to your organisation. <br/>**Product Dimensions**<br/> -Configuration <br/> -Size <br/> -colour <br/> -Style<br/>
 
 
 #### To create a new item status;
-1. Select *New* from the action pane.
-2. Select the new *Status* value.
-3. Enter the effective date of the new status
-    * The previous record will have the expiration date set to the day prior.
+1. Select *New* from the action pane. 
+2. Select the new *Status* value and any required product dimensions.
+3. Enter the *effective date* of the new status.
+4. Enter an Expiration date if required.  If an expiration date is not required you can select *never* from the drop-down calendar.
+5. Once all required fields have been populated Save your changes 
+    * Where a previous record that matches the same dimensions exists the expiration date is set to the day prior.
 
 *Note: The Item Status displayed at the top of the released products form is the item status at the item level, not the item dimension level.*
+
+![Item-Status-Level](../IMAGES/Item-Status-Level.png)
 
 ## Updating a group of items
 
@@ -82,7 +77,7 @@ A periodic job is available that can update the item status with a specified eff
 
 ## Updating based on stock-on-hand rules
 
-[Automatic status change rules](../SETUP/ITEM-SETUP/Automatic-status-change-rules.md) can be setup to update the item status based on certain events. For example, a status that indicates a low level of inventory can be updated to a discontinued status once the stock on hand becomes zero. The periodic job can be accessed from **Item creation > Periodic tasks > Item status > Automatic status update**.
+[Automatic status change rules](../SETUP/ITEM-SETUP/Automatic-status-change-rules.md) can be set up to update the item status based on certain events. For example, a status that indicates a low level of inventory can be updated to a discontinued status once the stock on hand becomes zero. The periodic job can be accessed from **Item creation > Periodic tasks > Item status > Automatic status update**.
 
 #### Automatic status update
 1.	Using the filter, select the *status* being updated from and the *event* being used
@@ -95,6 +90,7 @@ A periodic job is available that can update the item status with a specified eff
 
 ## Released products
 When viewing the Released Product details, the inventory status symbol will be displayed directly below the Item number and description.
+![Inventory-statusl](../IMAGES/Inventory-status.png)
 
 ## Inventory transactions
 When creating a sales/purchase order, the inventory status symbol will be displayed on the sales/purchase line. This will enable the user to identify the current status at a glance.
