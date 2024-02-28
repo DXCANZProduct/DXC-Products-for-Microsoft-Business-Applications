@@ -22,7 +22,26 @@ ms.search.validFrom: 2023-11-20
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# License Manager Web App (**Upcoming Release - 2024**)
+# License Manager Web App
+
+<!--TOC-->
+
+- [License Manager Web App](#license-manager-web-app)
+  - [Overview](#overview)
+  - [How to gain access for your organization?](#how-to-gain-access-for-your-organization)
+  - [Granting access to organization users](#granting-access-to-organization-users)
+  - [Signing up or signing in](#signing-up-or-signing-in)
+    - [Sign up process](#sign-up-process)
+  - [Data table properties](#data-table-properties)
+  - [Products](#products)
+  - [Customers](#customers)
+    - [Customer Products](#customer-products)
+    - [Customer Environments](#customer-environments)
+  - [Reports](#reports)
+    - [License Expiry](#license-expiry)
+  - [Power BI](#power-bi)
+
+<!--/TOC-->
 
 ## Overview
 
@@ -59,7 +78,7 @@ This includes the following features
 
 A guide detailing instructions for managing users and their access will be provided to the organization admins by the DXC ANZ licensing team
 
-For queries regarding user management, please send an email to ECLANZProductSupport@dxc.
+For queries regarding user management, please send an email to ECLANZProductSupport@dxc.com
 
 ## Signing up or signing in
 
@@ -113,7 +132,7 @@ Throughout the application all data is displayed within data tables. This sectio
 1. The search bar on the top right hand corner of the grid can be used as a wild card search across all records.
 1. On click of all header column cells, the data within the column can be toggled to sort ascending or descending
 1. For all header column cells, clicking on the ellipsis will display more functionality that can be applied to the selected column.
-1. All data is displayed within this grid. For views that support line edit, double click on any row will enable all cells for edit (except for the one's configured to not allow edit)
+1. All data is displayed within this grid.
 1. The number of rows displayed within the page can be toggled within this option
 1. The arrow keys can be used to traverse between all data within the grid list.
 
@@ -155,12 +174,12 @@ For details on how to the data table functions see [Data table properties](#data
 
 - **Add** - Displays a popup view to allow new product to be added.
   ![AddProducts](./IMAGES/WebApp/Img_10.png)
-- **Update** - Double click on the grid row to enabled edit mode. Once all necessary data is modified, click outside the grid and then click update to complete the update process.
+- **View/Update** - Displays the selected record's details in edit mode. Once all necessary data is modified, click submit to complete the update process.
   ![UpdateProducts](./IMAGES/WebApp/Img_20.png)
 - **Delete** - Delete the product record. Note: A customer record cannot be deleted that has customer associated to it
   ![DeleteProducts](./IMAGES/WebApp/Img_22.png)
 - **View Customers** - Displays the list of all customers for the selected product.
-  ![ProductCustomers](./IMAGES/WebApp/Img_19.png)
+  ![ProductCustomers](./IMAGES/WebApp/Img_11.png)
 
 ## Customers
 
@@ -184,7 +203,7 @@ For details on how to the data table functions see [Data table properties](#data
 
 - **Add** - Displays a popup view to allow new customer to be added.
   ![AddCustomer](./IMAGES/WebApp/Img_13.png)
-- **Update** - Double click on the grid row to enabled edit mode. Once all necessary data is modified, click outside the grid and then click update to complete the update process.
+- **View/Update** - Displays the selected record's details in edit mode. Once all necessary data is modified, click submit to complete the update process.
   ![UpdateCustomer](./IMAGES/WebApp/Img_23.png)
 - **Delete** - Delete the customer record. Note: A customer record cannot be deleted that has products or environments associated to it
   ![DeleteCustomer](./IMAGES/WebApp/Img_21.png)
@@ -233,7 +252,6 @@ For details on how to the data table functions see [Data table properties](#data
 - **View/Update** - Displays a popup view to allow customer product association data to be updated or to view all details of the record.
   ![ViewUpdateCustomerProduct](./IMAGES/WebApp/Img_16.png)
 - **Delete** - Delete the product record for the selected customer. The product can only be deleted if all the environments for the Customer has been deleted.
-  ![DeleteCustomerProduct](./IMAGES/WebApp/Img_24.png)
 
 ### Customer Environments
 
@@ -257,7 +275,7 @@ For details on how to the data table functions see [Data table properties](#data
 
 - **Add** - Displays a popup view to allow new environment to be licensed/added to the customer.
   ![AddCustomerEnvironment](./IMAGES/WebApp/Img_18.png)
-- **Update** - Double click on the grid row to enabled edit mode. Once all necessary data is modified, click outside the grid and then click update to complete the update process.
+- **View/Update** - Displays the selected record's details in edit mode. Once all necessary data is modified, click submit to complete the update process.
   ![ViewUpdateCustomerEnvironments](./IMAGES/WebApp/Img_25.png)
 - **Delete** - Delete the environment record for the selected customer.
   ![DeleteCustomerEnvironment](./IMAGES/WebApp/Img_26.png)
