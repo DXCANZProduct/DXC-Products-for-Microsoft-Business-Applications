@@ -26,9 +26,26 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# D365 Finance and Operations - Release notes
+# Release notes
 
 This document describes the features that are either new or changed in the release version mentioned.
+
+<!--TOC-->
+
+- [Current Version](#current-version)
+  - [D365 Finance and Operations](#d365-finance-and-operations)
+    - [DXC License Manager](#dxc-license-manager)
+    - [DXC License](#dxc-license)
+  - [Microsoft Power Apps](#microsoft-power-apps)
+    - [DXC License Manager Canvas App](#dxc-license-manager-canvas-app)
+  - [React Web App](#react-web-app)
+    - [DXC License Manager Web App](#dxc-license-manager-web-app)
+- [Previous Version(s)](#previous-versions)
+  - [D365 Finance and Operations](#d365-finance-and-operations-1)
+    - [DXC License Manager](#dxc-license-manager-1)
+  - [Microsoft Power Apps](#microsoft-power-apps-1)
+    - [DXC License Manager Canvas App](#dxc-license-manager-canvas-app-1)
+    <!--/TOC-->
 
 # Current version
 
@@ -110,9 +127,9 @@ Release date: 17 July 2023
 
 ### DXC License Manager Web App
 
-#### **Release TBD**
+#### **Release 20240227.1**
 
-Release date: TBD
+Release date: 27 February 2024
 
 <ins>New features</ins>
 
@@ -127,6 +144,8 @@ Release date: TBD
 | 15630  | License Expiry view                                                               | View upcoming license expiry information                                                                                                                                                                                                                                                                                                          |
 | 15633  | Single-sign on using organization email account                                   | Ability to sign up and sign in using the organization email account                                                                                                                                                                                                                                                                               |
 | 15636  | Manage user access                                                                | Added new capability for role based accessibility of all views within the app and define access privileges (Create, Read, Update, Delete permissions) for each role and view. Organisation administrators will have full access, can manage user access control and will be able to register or unregistered users within the app to grant access |
+| 16027  | Web App Theme and Styling access                                                  | Added new capability for organization admins to configure the color scheme of the app which is applicable to all users within the organization. Additionally, added ability to update the icon and default landing page upon sign in for the app.                                                                                                 |
+| 16559  | BI Reports                                                                        | New capability that allows organizations to setup and configure their own Power BI reports and configure workspace settings within the web app for viewing Power BI embedded reports. This feature includes report and page level access control within the web app.                                                                              |
 
 # Previous version(s)
 
