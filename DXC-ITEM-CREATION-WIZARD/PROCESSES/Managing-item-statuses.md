@@ -48,7 +48,7 @@ By default, the form will display the current record on opening. Historical reco
 Selecting **Display Dimensions** from the menu bar Enables the Dimensions display pane.  This allows you to toggle onto the page the required product dimensions for your corresponding item and save the set-up for future use. You can choose to display all product dimensions or just the ones relevant to your organisation. <br/>**Product Dimensions**<br/> -Configuration <br/> -Size <br/> -colour <br/> -Style<br/>
 
 
-#### To create a new item status;
+#### **To create a new item status;**
 1. Select *New* from the action pane. 
 2. Select the new *Status* value and any required product dimensions.
 3. Enter the *effective date* of the new status.
