@@ -46,5 +46,7 @@ Yes, when you run an update session that includes Product Attributes, the sessio
 Currently, when you run an update session that includes product attributes, all attributes assigned against the released product are displayed in the template.
 
 ### Can I update previously released variants to use the Item Status indicator?
-
 Yes, if you have a variant for your Product Master that has been released without an Item Status, you can update this variant to display the status indicator using the Item Status Link.  See [Updating a single item](PROCESSES/Managing-item-statuses.md)
+
+### Can I import multiple files for changes to product attributes at the same time?
+Since every product attribute for *released products* is contained in a single table, all we are doing when we submit updates through the UI or an upload is creating a unique record that is converted into the values we see.  Because of this, only the final file that we upload at a time has the final record id. It is therefore advised that product attributes be updated by the released product rather than by attribute value against the released product in order to prevent user misunderstanding.
