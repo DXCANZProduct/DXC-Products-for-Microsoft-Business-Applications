@@ -62,9 +62,11 @@ The bank statement can also automatically be imported by using periodic task [Im
 
 Filter **Imported via financial utilities connection** on the Bank statement import, can be used to filter to bank statements imported using above periodic task.
 
-If there are errors with creating the bank statement using the periodic task, the import file will be moved to the Financial utilities connection's **Error path**. <br>
-If the Bank statement format is:
-- Custom format - No bank statements will be created
-- Generic electronic import format - Std. will create the bank statements that can be created.
+#### Periodic import - errors
+Error process if there are issues with creating all the bank statement(s) for the file using the periodic task: 
 
-Example error: An unique bank account was not found for Bank account number
+If the Bank statement format is:
+- **Custom format** - No bank statements will be created and the file will be moved to the Financial utilities connection's **Error path**.
+- **Generic electronic import format** - Std. will create the bank statements that can be created, and the file will be moved to the Financial utilities connection's **Archive path**.
+
+Example error that will result in not all bank statement(s) being created: An unique bank account was not found for a Bank account number within the file
