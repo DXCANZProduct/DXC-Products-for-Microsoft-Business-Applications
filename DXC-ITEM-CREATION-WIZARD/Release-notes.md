@@ -52,7 +52,7 @@ Release date: 4th October 2023
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-15941   | Attributes are set back to "default" during the manual update session | When updating attributes against a released product,  Item creation would reset all attribute values back to the default value that has been set as part of the Item Creation Template.  Product attributes when loaded in the creation designer will only change if a value has been entered into the field.  See New Feature 16016 below for changes to the appearance of the attribute fields within the creation designer when processing an update.
+15941   | During the manual update session, attributes are reset to "default" | When changing attributes against a "released product," all attribute values would previously be reset to the default value listed in the item creation template.  The creation designer's provided product attributes won't change unless a value is entered into the relevant field.  See New Feature 16016 below for specifics on how the attribute fields in the creation designer look after processing an update.
 16021    | Production fields do not update when Production Type is updated to Formula.  | When processing an update template to set the "Production Type" field to value of Formula, while also incorporating changes to values in Production Group, Production Pool (all located under the Engineer tab) and Coverage Group (located under planning Tab), the Production Type field would update to the value of Formula however the other fields would not update. Field values would display correctly in the Item Creation Designer (as per below if processing via UI) however would not process through to target.
 
 ![ICW_Formula_update](IMAGES/ICW_Formula_update.png)
