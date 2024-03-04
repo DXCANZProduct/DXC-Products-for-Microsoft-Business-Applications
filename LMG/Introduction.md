@@ -34,7 +34,7 @@ The [release notes](Release-notes.md) describes the features that are either new
 
 ## Introduction
 
-The license manager solution allows management of licenses for Dyanmics 365 Finance and Operations ISV products. This module allows ISV partners to manage customer license information, control expired licenses and environments enabled, extend and incoporate license control for each ISV product and collect license based telemetry.
+The license manager solution allows management of licenses for Dynamics 365 Finance and Operations ISV products. This module allows ISV partners to manage customer license information, control expired licenses and environments enabled, extend and incorporate license control for each ISV product and collect license based telemetry.
 
 This module enables ISV partners to be able to implement license control on their products. Upon installation of the license controlled ISV products a validation request is made to the licensing service to verify the product license. If not licensed, expired or disabled, customers will receive prompt to contact the ISV partner for license issues.
 
