@@ -35,19 +35,20 @@ If the field you wish to use is not on the primary table, you can add a display 
 
 The main reasons this would occur:
 * The token placeholder is invalid. The syntax used on the token placeholder is not per the fixed token list for the report or dynamic token is in the incorrect notation e.g. %TableName.FieldName% or %TableName.MethodName#%. Refer to [Dynamic Placeholder Tokens](CONFIGURATION/Email_placeholder.md).
-* HTML is not created using HTML editor. Customers who have not used a html editor, for example creating the html using MS Word experience problems with the token placeholders.
+* HTML is not created using HTML editor. Customers who have not used an HTML editor, for example creating the HTML using MS Word experience problems with the token placeholders.
 
-**Can I use images in email body?**
+**Can I use images in the email body?**
 
 Yes. Although this feature is standard Dynamics 365 email functionality not Smart Send specific. However to achieve this the image must be converted using a base64 encoder to convert the image into html.
 
-**Why are the token placeholders used in the filename are not the same as Dynamics 365 field?**
+**Why are the token placeholders used in the filename not the same as Dynamics 365 field?**
 
 Placeholder tokens can contain invalid characters being inserted in a filename and therefore Smart Send is unable to create the file. A standard function "GetInvalidFileNameChars" is used to find and replace invalid characters with spaces.
 
-**Can I use Smart Send with Electronic Reporting?**
+**Can I use Smart Send with the Email Body in Print management?**
 
-No. Smart Send uses the standard Dynamics 365 SSRS and Print Management framework and supports both standard SSRS forms and Modern Forms. 
+The *Document Report email body* feature that was enabled by default from 10.0.39 allows for a simple email body to be added when sending a document via email.  This is a separate function from Smart Send that uses the 
+Organization email templates to compose dynamic transaction-based email templates.. 
 
 Smart Send does not support Business Documents as it uses the Electronic Reporting Framework which is separate from standard Dynamics 365 report generation using SSRS and Print Management.
 
