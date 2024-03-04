@@ -2,11 +2,11 @@
 
 **My report is not supported, can I still use Smart Send?**
 
-While out of the box functionality is for the business forms listed [here](Overview), the solution can be extended on further business forms or reports. The [technical guide](TECHNICAL-GUIDE/Technical-guide.md) describes how the DXC Smart Business Form Email Manager solution can be extended by adding custom report.
+While out-of-the-box functionality is for the business forms listed [here](Overview), the solution can be extended to further business forms or reports. The [technical guide](TECHNICAL-GUIDE/Technical-guide.md) describes how the DXC Smart Business Form Email Manager solution can be extended by adding a custom report.
 
 **How can I use a different report format for different customers/vendors?**
 
-Firstly you need to set up each version of report design in Smart Send Email parameters. For example you may have two report design for the Sales Invoice *SalesInvoice.Report* and *SalesInvoiceModern.Report*. Refer to [Smart send parameters](CONFIGURATION/Parameters.md).
+Firstly you need to set up each version of the report design in Smart Send Email parameters. For example, you may have two report designs for the Sales Invoice *SalesInvoice.Report* and *SalesInvoiceModern.Report*. Refer to [Smart send parameters](CONFIGURATION/Parameters.md).
 
 Then using Print Management conditions set a query with a set criteria to use the different report design. When the report is run using Print management or the Smart Send button will choose the report design used per the Print Management setup. Refer to [Print management conditions](PROCESSES/Email-processing.md).
 
@@ -28,7 +28,7 @@ Smart Send also includes an extension hook to enable a customer to create an ext
 
 **How can I use a token placeholder which is not on the primary table?**
 
-Smart Send supports dynamic place holder tags using the table and field names. Similarly, display method can also be used with the format %TableName.MethodName#%. 
+Smart Send supports dynamic placeholder tags using the table and field names. Similarly, the display method can also be used with the format %TableName.MethodName#%. 
 If the field you wish to use is not on the primary table, you can add a display method to the table to return the data from another source. Refer to [Dynamic Placeholder Tokens](CONFIGURATION/Email_placeholder.md).
 
 **Why are the token placeholders showing as the token as opposed to the value e.g. %PurchId%?**
@@ -45,14 +45,10 @@ Yes. Although this feature is standard Dynamics 365 email functionality not Smar
 
 Placeholder tokens can contain invalid characters being inserted in a filename and therefore Smart Send is unable to create the file. A standard function "GetInvalidFileNameChars" is used to find and replace invalid characters with spaces.
 
-**Can I use Smart Send with the Email Body in Print management?**
+**Can I use Smart Send with the Email Body feature in Print management?**
 
-The *Document Report email body* feature that was enabled by default from 10.0.39 allows for a simple email body to be added when sending a document via email.  This is a separate function from Smart Send that uses the 
-Organization email templates to compose dynamic transaction-based email templates.. 
+When sending a document via email, a basic email body can be included thanks to the *Document Report email body* functionality, which was enabled by default starting with version 10.0.39.  This is a different feature from Smart Send that creates dynamic, transaction-based email templates using the Organization email templates. 
 
-Smart Send does not support Business Documents as it uses the Electronic Reporting Framework which is separate from standard Dynamics 365 report generation using SSRS and Print Management.
-
-It is a matter of assessing the benefits of using the ER framework for report design (which in many scenarios is a one off), against the robust and proven standard Dynamics 365 Reporting together with Smart Send for report distribution.
 
 ### Dependency and Security Information
 
@@ -60,6 +56,6 @@ Data stored securely inside Finance and operations
 
 DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Operations (Smart Send) makes use of the existing email configuration influenced by a combination of administrator configuration, user configuration, and user choices.
 
-The article ⁠[Configure and send email](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/organization-administration/configure-email) by Microsoft is divided into sections for administrators and users to make it easy to find relevant information, including setup for SMTP. The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices.
+The article ⁠[Configure and send email](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/organization-administration/configure-email) by Microsoft is divided into sections for administrators and users to make it easy to find relevant information, including setup for SMTP. The behaviour of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices.
 
 Note: DXC does not collect or store any usage information, or telemetry against any other installed system or ISV module from DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Operations (Smart Send)
