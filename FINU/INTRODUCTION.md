@@ -97,14 +97,14 @@ Finance utilities minimises the manual actions required for reconciling bank acc
 - Periodic task [Import bank statements via financial utilities connection](Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md)
 
 # Accounts payable
-## Accounts payable - Sundry
+## Sundry vendors
 
 The Sundry Payment modification gives the user the ability to enter a supplier name and address on an individual invoice allowing these details to be used on a cheque payments, as well as one-off BSB and Account Number for EFT Payments. Therefore, many one- time vendor invoices can be stored on one sundry vendor record but allowing for separate payments without a change to the vendor record information.  This also makes it possible to pay all sundry invoices in one payment proposal.
 
 - [Sundry setup](Setup/ACCOUNTS-PAYABLE/Sundry-payment.md)
 - [Sundry processing](Processing/Accounts-Payable/Sundry-payment.md)
 
-## Accounts payable - BPAY
+## BPAY
 
 The BPAY method of payment modification provides the ability to set BPAY required fields on the Vendor and Company bank account. Flagging the method of payment as BPAY, sets the BPAY fields as mandatory for invoice transactions. 
 
@@ -115,20 +115,20 @@ Within the Vendor payment proposal, grouping also occurs for the new BPAY field.
 - [BPAY setup](Setup/ACCOUNTS-PAYABLE/BPAY-payment.md)
 - [BPAY processing](Processing/Accounts-Payable/BPAY-payment.md)
 
-## Accounts payable - Payment advice report
+## Payment advice report
 
 A custom-built report has been developed to provide a Payment advice to vendors upon processing an EFT payment run. The report will show the vendor bank account details where the payment is deposited as well as the invoice numbers paid, what amount and what discount applied. This remittance advice report works in conjunction with the Smart Send function.
 
 - [Vendor payments setup](Setup/ACCOUNTS-PAYABLE/Vendor-payments.md)
 
-## Accounts payable - Vendor bank account changes workflow
+## Vendor bank account changes workflow
 
 Finance utilities have added additional fields to **Vendor approval** and **Vendor bank account approval** on the **Accounts payable parameters**. <br>
 This provides companies the option to submit changes to these fields to the standard vendor approval workflows.
 - [Vendor bank account changes worklow setup](Setup/ACCOUNTS-PAYABLE/Vendor-bank-account-changes-workflow.md)
 
 
-## Accounts payable - Save electronic reporting file to secure location
+## Save electronic reporting file to secure location
 
 Modification allows users to automatically save the electronic reporting file to a secure location like ftp, ftps, sftp or azure blob.
 - [Encryption/decryption](Setup/ENCRYPTION/Encryption-decryption.md) - where the export file should be encrypted
@@ -143,7 +143,7 @@ Where the company has registered to use ABN lookup Web API and the legal entity 
 - [ABN lookup and validation processing](Processing/ABN/ABN-lookup-and-validation.md)
 
 # Accounts receivable
-## Accounts receivable - Customer references
+## Customer references
 
 Ability to set multiple references against customers. These references can be used in the following scenarios:
 - Customer remittance file refers to a reference unique to the customer, but not an invoice number. This reference can be used to find the applicable customer account when creating the customer payment journal while importing customer remittances using the additional licensed feature AR Utilities.
@@ -152,12 +152,12 @@ Ability to set multiple references against customers. These references can be us
 Detail:
 - [Customer reference setup](Setup/ACCOUNTS-RECEIVABLE/Customer-reference.md)
 
-## Accounts receivable - Interest notes Due date
+## Interest notes Due date
 Ability to use Customer's payment terms when posting Interest notes. 
 
 - [Customer parameters setup](Setup/ACCOUNTS-RECEIVABLE/Customer-parameters.md)
 
-## Accounts receivable - Import customer remittance
+## Import customer remittance
 > Note: Additional licensed feature included in AR Utilities
 
 Enhancement to import customer remittance files using data entity Customer payment journal.
