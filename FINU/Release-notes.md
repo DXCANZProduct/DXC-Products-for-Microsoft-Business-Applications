@@ -40,7 +40,8 @@ Estimated release date: 29 March 2024 <br>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-17092		| Accounts payable <br> Accounts receivable	| ABN and GST validation	| _Only applicable to Australia_ <br> • New fields added to TaxVatNumTable: <br> ![ABN validation](Images/ReleaseNotes_20240329_1.png "ABN validation") <br> Updated when running 'ABN validation report' or when adding new records via 'ABN lookup'
+17092		| Accounts payable <br> Accounts receivable	| ABN and GST validation	| _Only applicable to Australia_ <br> • New fields added to TaxVatNumTable: <br> ![ABN validation](Images/ReleaseNotes_20240329_1.png "ABN validation") <br> Updated when running 'ABN validation report' or when adding new records via 'ABN lookup' <br> [User guide](Setup/ABN/ABN-lookup-and-validation.md)
+16827		| Accounts receivable	| EFT file name on Method of payment	| Ability to set EFT file name for Customer payment files (direct debits) on the Method of payment. <br> (User guide](Setup/ACCOUNTS-RECEIVABLE/Customer-payments.md)
 
 
 <ins>Bug fixes</ins>
