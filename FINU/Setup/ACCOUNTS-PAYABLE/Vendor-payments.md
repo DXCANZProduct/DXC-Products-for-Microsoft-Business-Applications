@@ -28,6 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 **Accounts payable functionality**
+
 The fields as described in the following subsections are available to control the additional functionality for accounts payable.
 
 # Bank accounts
