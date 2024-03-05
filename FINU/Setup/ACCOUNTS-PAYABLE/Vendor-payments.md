@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  LedgerJournalTable5 
+ms.search.form:  LedgerJournalTable5, VendPaymMode, BankAccountTableListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
