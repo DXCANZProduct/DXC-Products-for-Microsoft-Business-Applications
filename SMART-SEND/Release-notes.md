@@ -69,7 +69,9 @@ If the above feature is not visible, press **Check for updates** to refresh the 
 
 ### Release 10.0.36.20231026
 #### Build 10.0.36.202310262
+
 <ins>Bug fixes</ins>
+
 Number	  | Name	          | Description
 :--       |:--              |:--
 17069	    | Error: Report DXC_BankPaymAdviceVendV2.Report is not set up for Smart Send| Previously when issuing a Customer or Vendor Payment advice with a custom report an error is displayed advising that the report is not set up for Smart Send.
