@@ -57,15 +57,15 @@ Go to **Accounts receivable > Customers > All customers** and select the applica
 # ABN status / validation
 When ABN validation has been enabled for the legal entity, the **ABN status/validation** functionality is available through below options for Vendor and Customer as discussed in the following subsections
 The following **ABN Status** information will be displayed for the selected customer or vendor:
-- ABN
-- Status - Examples are Active, Cancelled
-- Type - Examples are Australian Private Company
-- Trading name
-- State
-- Post code
-- GST from - Populated where the ABN is registered for GST
-- GST to - Populated where the ABN is registered for GST
-- GST registered - Set to Yes where GST to date is in the future
+- **ABN**
+- **Status** - Examples are Active, Cancelled or Invalid (not found in ABN lookup)
+- **Type** - Examples are Australian Private Company, Discretionary Trading Trust
+- **Trading name**
+- **State**
+- **Post code**
+- **GST from** - Populated where the ABN is registered for GST
+- **GST to** - Populated where the ABN is registered for GST
+- **GST registered** - Set to Yes where GST to date is in the future
 
 ## Vendors
 Go to **Accounts payable > Vendors > All vendors** and select the applicable Vendor and choose either of the following:
@@ -88,9 +88,14 @@ Field	              | Description
 **Status**          |	Select the applicable status: <br> •	All <br> •	Valid <br> •	Invalid <br> •	Cancelled
 
 # Run update
-To update below fields based on current government date, the following can be used:
- - **ABN validation** report will update records that are allocated to a customer or vendor
+To update below fields based on current government online information:
 
-#### Fields:
 - **Company name** - where the Company name is blank
-- Status
+- **Status** - Examples are Active, Cancelled or Invalid (not found in ABN lookup)
+- **Entity type** - Examples are Australian Private Company, Discretionary Trading Trust
+- **GST from** - Populated where the ABN is registered for GST
+- **GST to** - Populated where the ABN is registered for GST
+- **GST registered** - Set to Yes where GST to date is in the future
+
+The following can be used:
+ - **ABN validation** report will update records that are allocated to a customer or vendor
