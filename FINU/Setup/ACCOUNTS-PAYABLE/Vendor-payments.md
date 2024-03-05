@@ -115,11 +115,11 @@ File name when **Enable file parameters** is set to:
 
 2. Set whether the method of payment should automatically generate a filename for the EFT file. To open the the **Methods of payment** page, go to **Accounts payable > Setup > Payment setup > Methods of payment**.
     -	Highlight applicable method of payment
-    -	Expand **EFT** FastTab and select **Enable file parameters**
+    -	Expand **EFT** FastTab and set **Enable file parameters** to _Yes_.
     -	File name mask. Default when **Enable file parameters** is enabled: BankAccountId. Use **Editor** to edit the default.
     -	Enter **File format**, example txt
 
-**Editor** can be used to edit the file name mask. A combination of static values and placeholders can be assigned.
+**Editor** button can be used to edit the file name mask. A combination of static values and placeholders can be assigned.
 
 - [Sundry method of payment](Sundry-payment.md)
 - [BPAY method of payment](BPAY-payment.md)
