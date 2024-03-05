@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Processing - ABN lookup and validation
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-08-15
+ms.date: 2024-03-05
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -63,6 +63,9 @@ The following **ABN Status** information will be displayed for the selected cust
 - Trading name
 - State
 - Post code
+- GST from - Populated where the ABN is registered for GST
+- GST to - Populated where the ABN is registered for GST
+- GST registered - Set to Yes where GST to date is in the future
 
 ## Vendors
 Go to **Accounts payable > Vendors > All vendors** and select the applicable Vendor and choose either of the following:
@@ -83,3 +86,11 @@ Field	              | Description
 **Filter by type**  |	Set to _Yes_ if report should be filtered by type
 **Filter type**     |	If Filter by type was set to _Yes_, select: <br> •	Customer, or <br> •	Vendor 
 **Status**          |	Select the applicable status: <br> •	All <br> •	Valid <br> •	Invalid <br> •	Cancelled
+
+# Run update
+To update below fields based on current government date, the following can be used:
+ - **ABN validation** report will update records that are allocated to a customer or vendor
+
+#### Fields:
+- **Company name** - where the Company name is blank
+- Status
