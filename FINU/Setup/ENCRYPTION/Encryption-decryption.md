@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Encryption / decryption
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-11-13
+ms.date: 2024-03-05
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,6 +46,8 @@ Files are encrypted and signed with the sender's private key, receiver's public 
 Files are verified and decrypted with the recipient's private key, sender's public key and the pass phrase.
 
 PGP uses a passphrase to encrypt your private key on your machine. Your private key is encrypted on your disk using a hash of your passphrase as the secret key. You use the passphrase to decrypt and use your private key. A passphrase should be hard for you to forget and difficult for others to guess.
+
+> Note: It's recommended to for the Private key, Public key, Receiver’s public key use Azure Storage SAS URL with read only access stored in the keyvault secrets. The SAS url points to the file and includes the token to access it.
 
 ## Step 2 - Assign Secrets in DXC encryption parameters
 Assign above **Secrets** to the encryption/decryption. <br>
