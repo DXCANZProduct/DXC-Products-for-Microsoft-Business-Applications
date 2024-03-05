@@ -81,11 +81,16 @@ Go to **Accounts receivable > Customers > All customers** and select the applica
 To run the **ABN validation** report, go to **Organization administration > Inquiries and reports > ABN validation**. <br>
 Select the applicable parameters and press **OK**.
 
-Field	              | Description
-|--                 |--               |
-**Filter by type**  |	Set to _Yes_ if report should be filtered by type
-**Filter type**     |	If Filter by type was set to _Yes_, select: <br> •	Customer, or <br> •	Vendor 
-**Status**          |	Select the applicable status: <br> •	All <br> •	Valid <br> •	Invalid <br> •	Cancelled
+### Fields
+- **Filter by type** -	Set to _Yes_ if report should be filtered by type
+- **Filter type** -	If Filter by type was set to _Yes_, select either of the following:
+   - Customer
+   - Vendor 
+- **Status**  -	Select the applicable status:
+   - All - not filtered to any specific status
+   - Valid
+   - Invalid
+   - Cancelled
 
 # Run update
 To update below fields based on current government online information:
