@@ -40,7 +40,7 @@ Estimated release date: 29 March 2024 <br>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-17092		| Accounts payable <br> Accounts receivable	| ABN and GST validation	| _Only applicable to Australia_ <br> • New fields added to TaxVatNumTable: <br> ![ABN validation](Images/ReleaseNotes_20240305_1.png "ABN validation") <br> Updated when running 'ABN validation report' or when adding new records via 'ABN lookup'
+17092		| Accounts payable <br> Accounts receivable	| ABN and GST validation	| _Only applicable to Australia_ <br> • New fields added to TaxVatNumTable: <br> ![ABN validation](Images/ReleaseNotes_20240329_1.png "ABN validation") <br> Updated when running 'ABN validation report' or when adding new records via 'ABN lookup'
 
 
 <ins>Bug fixes</ins>
