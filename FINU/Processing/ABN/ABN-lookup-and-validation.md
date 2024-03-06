@@ -65,7 +65,7 @@ The following **ABN Status** information will be displayed for the selected cust
 - **Post code**
 - **GST from** - Populated where the ABN is registered for GST
 - **GST to** - Populated where the ABN is registered for GST
-- **GST registered** - Set to Yes where GST to date is in the future
+- **GST registered** - Set to _Yes_ where 'GST to' date is in the future
 
 ## Vendors
 Go to **Accounts payable > Vendors > All vendors** and select the applicable Vendor and choose either of the following:
@@ -100,7 +100,7 @@ To update below fields based on current government online information:
 - **Entity type** - Examples are Australian Private Company, Discretionary Trading Trust
 - **GST from** - Populated where the ABN is registered for GST
 - **GST to** - Populated where the ABN is registered for GST
-- **GST registered** - Set to Yes where GST to date is in the future
+- **GST registered** - Set to _Yes_ where 'GST to' date is in the future
 
 The following can be used:
  - **ABN validation** report will update records that are allocated to a customer or vendor
