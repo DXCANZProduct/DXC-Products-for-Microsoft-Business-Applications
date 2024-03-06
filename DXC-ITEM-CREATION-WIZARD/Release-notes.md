@@ -53,7 +53,7 @@ Release date: 4th October 2023
 Number	  | Name	          | Description
 :--       |:--              |:--
 15941   | During the manual update session, attributes are reset to "default" | When changing attributes against a *released product* all attribute values would previously be reset to the default value listed in the item creation template.  The creation designer's provided product attributes won't change unless a value is entered into the relevant field.  See New Feature 16016 below for specifics on how the attribute fields in the creation designer look after processing an update.
-16021    | Production fields do not update when Production Type is updated to Formula.  | When processing an update template to set the "Production Type" field to value of Formula, while also incorporating changes to values in Production Group, Production Pool (all located under the Engineer tab) and Coverage Group (located under planning Tab), the Production Type field would update to the value of Formula however the other fields would not update. Field values would display correctly in the Item Creation Designer (as per below if processing via UI) however would not process through to target.
+16021    | Production fields do not update when the Production Type is updated to Formula.  | When processing an update template to set the "Production Type" field to the value of Formula, while also incorporating changes to values in Production Group, Production Pool (all located under the Engineer tab) and Coverage Group (located under the planning Tab), the Production Type field would update to the value of Formula however the other fields would not update. Field values would display correctly in the Item Creation Designer (as per below if processing via UI) however would not process through to target.
 
 ![ICW_Formula_update](IMAGES/ICW_Formula_update.png)
 This would occur during upload and via the user interface without warning or error being issued.
@@ -63,11 +63,11 @@ This would occur during upload and via the user interface without warning or err
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-16016    | Display Active product attribute| As well as the ability to update the attribute value from within the designer users now have visibility of what the active product attribute value is.
+16016    | Display Active product attribute| Users now have visibility of what the active product attribute value is via the new field, *active product attribute value*. Users continue to have the ability to update the attribute value from within the designer.
 
 ![New_attribute_Screen](IMAGES/New_attribute_Screen.png)
 
-There is no impact to the existing process to update product attributes or Template Creation.  The Change simply increases visibility from within the User Interface.
+There is no impact on the existing process to update product attributes or Template Creation.  The Change simply increases visibility from within the User Interface.
 
 # Previous version(s)
 
@@ -80,9 +80,9 @@ Release date: 23 June 2023
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-14020    | Product attribute values default back when 2 templates are submitted | Previously when 2 or more templates are submitted into workflow at the same time the product attributes will automatically default back to the state prior to any changes being submitted, even if the 2nd template does not contain attributes. Attributes now only change if the template contains attributes.
-14639    | All attributes display system default status when running a manual update session| If attributes are included as part of a manual update session, the value of the attributes displayed are those as at the start of the session.   The exception is where attributes have default values as part of the template, then the  for template "default" value is now displayed in the update session.
-10869    | ProductionType does not update to value 'Formula'  | ProductionType can be updated to 'Formula' simulatneously as other fields on the item
+14020    | Product attribute values default back when 2 templates are submitted | Previously when 2 or more templates are submitted into workflow at the same time the product attributes will automatically default back to the state before any changes were submitted, even if the 2nd template does not contain attributes. Attributes now only change if the template contains attributes.
+14639    | All attributes display system default status when running a manual update session| If attributes are included as part of a manual update session, the values of the attributes displayed are those  at the start of the session.   The exception is where attributes have default values as part of the template, then the  template "default" value is now displayed in the update session.
+10869    | ProductionType does not update to value 'Formula'  | ProductionType can be updated to 'Formula' simultaneously as other fields on the item
 
 
 
