@@ -43,13 +43,25 @@ From the Legal Entity form, you can set this option for the current selected com
 
 ### Display
 The following forms will display the reciprocal exchange rate:
-- General journal lines <br>
-Visible per line under *Exchange Rate* and under *General* Tab
-- Vendor invoice journal lines - Visible under *General* Tab
-- Vendor payment journal lines- Visible under *General* Tab
-- Purchase order totals
-  1. Navigate to **Accounts Payable > Purchase orders > All purchase orders**
-  2. HIghlight the required purchase order.
+- <ins>General journal lines<ins>
+
+1. Navigate to **General ledger > Journal entries > General journals**
+2. Select the required Journal from the list.
+3. View the exchange rate fields per line under the *General* tab
+- <ins>Vendor invoice journal lines<ins>
+1. Navigate to **Accounts payable > Invoices > Tax invoice journal**
+2. Select the required Journal from the list.
+3. View the exchange rate fields per line under the *General* tab
+
+- <ins>Vendor payment journal lines<ins>
+
+1.Navigate to **Accounts payable > Payments > Vendor payment journal**
+2. Select the required Journal from the list.
+3. View the exchange rate fields per line under the *General* tab
+- <ins>Purchase order totals<ins>
+
+  1. Navigate to **Accounts payable > Payments > Vendor payment journal**
+  2. Select the required Journal from the list.
   3. Click **Purchase** Order from the navigation bar  and select *Totals* under the **View** tab on the Action Pane
 - Customer payment journal lines
 - Free text invoice totals
