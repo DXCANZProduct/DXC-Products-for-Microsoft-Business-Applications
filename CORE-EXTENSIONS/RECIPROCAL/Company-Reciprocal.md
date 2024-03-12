@@ -23,7 +23,7 @@ ms.reviewer: jdutoit2
 ms.search.region: CoreUtil
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jdutoit2
-ms.search.validFrom: 2016-05-31
+ms.search.valid from: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
@@ -43,10 +43,14 @@ From the Legal Entity form, you can set this option for the current selected com
 
 ### Display
 The following forms will display the reciprocal exchange rate:
-- General journal lines
-- Vendor invoice journal lines
-- Vendor payment journal lines
+- General journal lines <br>
+Visible per line under *Exchange Rate* and under *General* Tab
+- Vendor invoice journal lines - Visible under *General* Tab
+- Vendor payment journal lines- Visible under *General* Tab
 - Purchase order totals
+  1. Navigate to **Accounts Payable > Purchase orders > All purchase orders**
+  2. HIghlight the required purchase order.
+  3. Click **Purchase** Order from the navigation bar  and select *Totals* under the **View** tab on the Action Pane
 - Customer payment journal lines
 - Free text invoice totals
 - Sales order totals
