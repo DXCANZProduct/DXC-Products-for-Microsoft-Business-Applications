@@ -47,7 +47,7 @@ The following forms will display the reciprocal exchange rate:<br>
 - <ins>General journal lines<ins>
 1. Navigate to **General ledger > Journal entries > General journals**
 2. Select the required Journal from the list.
-3. View the exchange rate fields per line under the *General* tab
+3. The exchange rate is displayed per line as part of the Journal and also under the *General* tab
 - <ins>Vendor invoice journal lines<ins>
 1. Navigate to **Accounts payable > Invoices > Tax invoice journal**
 2. Select the required Journal from the list.
