@@ -53,15 +53,24 @@ The following forms will display the reciprocal exchange rate:<br>
 2. Select the required Journal from the list.
 3. View the exchange rate fields per line under the *General* tab
 - <ins>Vendor payment journal lines<ins>
-1. Navigate to **Accounts payable > Purchase orders > All purchase orders**
+1. Navigate to **Accounts payable > Payments > Vendor payment journal**
 2. Select the required Journal from the list.
 3. View the exchange rate fields per line under the *General* tab
 - <ins>Purchase order totals<ins>
-1. Navigate to **Accounts payable > Payments > Vendor payment journal**
-2. Click **Purchase** Order from the navigation bar  and select *Totals* under the **View** tab on the Action Pane
-  3. Select the required Journal from the list.
-  4. Click **Purchase** Order from the navigation bar  and select *Totals* under the **View** tab on the Action Pane
-- Customer payment journal lines
-- Free text invoice totals
-- Sales order totals
+1. Navigate to **Accounts payable > Purchase orders > All purchase orders**
+2. Click **Purchase**  from the Action Pane  and select *Totals* under the **View** tab (on the Action Pane)
+3. The *Exchange rate*  field is located under the *Purchase order totals* fast tab located in Pane on the right of the screen
+- <ins>Customer payment journal lines<ins>
+1. Navigate to **Accounts receivable > Payments > Customer payment journal**
+2. Select the required Journal from the list.
+3. View the exchange rate fields per line under the *General* tab
+- <ins>Free text invoice totals<ins>
+1. Navigate to **Accounts receivable > Invoices > All free text invoices**
+2. Select *Totals* from the Action pane to display the Totals Pane. The exchange rate is located at the bottom including the respective currency code
+- <ins>Sales order totals<ins>
+1. Navigate to **Accounts receivable > orders > All sales orders**
+2. Click **Sales order**  from the Action Pane  and select *Totals* under the **View** tab (on the Action Pane)
+3. The *Exchange rate*  field is located under the *Sales order totals* fast tab located in Pane on the right of the screen
+
+
 
