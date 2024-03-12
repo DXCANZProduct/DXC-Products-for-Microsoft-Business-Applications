@@ -74,6 +74,15 @@ If the above feature is not visible, press **Check for updates** to refresh the 
 
 Number	  | Name	          | Description
 :--       |:--              |:--
+17069	    | Error: Report DXC_BankPaymAdviceVendV2.The report is not set up for Smart Send| Previously when issuing a Customer or Vendor Payment advice with a custom report an error is displayed advising that the report is not set up for Smart Send|
+17017| Remove reference to ERDestinationNamedFeatur| In version 10.0.39 Electronic reporting via print management is enabled by default resulting in the removal of reference to ERDestinationNamedFeature by Micorosft resulting in build errors.   Removal of reference to this in Smart send has resolved this issue.|
+17123|Report  is not setup for Smart Send| Previously, when a user attempted to utilize the Smart Send functionality and their user security role was limited to a single legal organization, an error message would appear alerting them that Smart Send was not configured.
+
+
+
+
+Number	  | Name	          | Description
+:--       |:--              |:--
 17069	    | Error: Report DXC_BankPaymAdviceVendV2.Report is not set up for Smart Send| Previously when issuing a Customer or Vendor Payment advice with a custom report an error is displayed advising that the report is not set up for Smart Send.|
 17017	|Remove reference to ERDestinationNamedFeature|Remove reference to ERDestinationNamedFeature as this turned on by default
 ### Release 10.0.34.20231026
