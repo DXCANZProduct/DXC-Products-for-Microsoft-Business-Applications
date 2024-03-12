@@ -42,9 +42,9 @@ From the Legal Entity form, you can set this option for the current selected com
 2. Click on Edit button and expand the **General** fast tab and set **Display reciprocal exchange rate** to _Yes_. 
 
 ## Display
-The following forms will display the reciprocal exchange rate:
-- <ins>General journal lines<ins>
+The following forms will display the reciprocal exchange rate:<br>
 
+- <ins>General journal lines<ins>
 1. Navigate to **General ledger > Journal entries > General journals**
 2. Select the required Journal from the list.
 3. View the exchange rate fields per line under the *General* tab
@@ -52,17 +52,15 @@ The following forms will display the reciprocal exchange rate:
 1. Navigate to **Accounts payable > Invoices > Tax invoice journal**
 2. Select the required Journal from the list.
 3. View the exchange rate fields per line under the *General* tab
-
 - <ins>Vendor payment journal lines<ins>
-
-1.Navigate to **Accounts payable > Payments > Vendor payment journal**
+1. Navigate to **Accounts payable > Purchase orders > All purchase orders**
 2. Select the required Journal from the list.
 3. View the exchange rate fields per line under the *General* tab
 - <ins>Purchase order totals<ins>
-
-  1. Navigate to **Accounts payable > Payments > Vendor payment journal**
-  2. Select the required Journal from the list.
-  3. Click **Purchase** Order from the navigation bar  and select *Totals* under the **View** tab on the Action Pane
+1. Navigate to **Accounts payable > Payments > Vendor payment journal**
+2. Click **Purchase** Order from the navigation bar  and select *Totals* under the **View** tab on the Action Pane
+  3. Select the required Journal from the list.
+  4. Click **Purchase** Order from the navigation bar  and select *Totals* under the **View** tab on the Action Pane
 - Customer payment journal lines
 - Free text invoice totals
 - Sales order totals
