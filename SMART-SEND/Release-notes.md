@@ -80,14 +80,6 @@ Number	  | Name	          | Description
 
 
 
-
-Number	  | Name	          | Description
-:--       |:--              |:--
-17069	    | Error: Report DXC_BankPaymAdviceVendV2.Report is not set up for Smart Send| Previously when issuing a Customer or Vendor Payment advice with a custom report an error is displayed advising that the report is not set up for Smart Send.|
-17017	|Remove reference to ERDestinationNamedFeature|Remove reference to ERDestinationNamedFeature as this turned on by default
-### Release 10.0.34.20231026
-#### Build 10.0.34.202310261
-
 <ins>Bug fixes</ins>
 
 Number	  | Name	          | Description
