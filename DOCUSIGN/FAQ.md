@@ -2,9 +2,9 @@
 # required metadata
 
 title: Solutions for DocuSign and Dynamics 365 
-description: olutions for DocuSign and Dynamics 365 - FAQ 
+description: solutions for DocuSign and Dynamics 365 - FAQ 
 author: pmusumeci
-manager: Kym Parker
+Manager: Kym Parker
 ms.date: 2023-08-22
 ms.topic: article
 ms.prod: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.34 and above
 
 ## 	Troubleshooting
 
-###   Grant Consent Fucntion
+###   Grant Consent Function
 
 When selecting Grant consent you are taken to a page with the below error.
 
@@ -46,6 +46,6 @@ Data stored securely inside Finance and operations
 - Docusign Authentication details
 - Web service address, OAuth server URL
 - Integrator key, RSA private key
-- User Id, User name
+- User ID, User name
 - Logging of exceptions
 - Document templates
