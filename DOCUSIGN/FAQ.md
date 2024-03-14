@@ -27,7 +27,15 @@ ms.search.validFrom: 2016-08-22
 ms.dyn365.ops.version: 10.0.34 and above
 ---
 
-## 	Troubleshooting
+# Frequently Asked Questions
+
+**If more than one contact has the same purpose as my intended ESignature contact, what will happen?**
+
+If more than one contact is assigned the same purpose then DocuSign will send the document to all email addresses that have the specified purpose.  Each recipient will be treated as an optional sign with no signature dependency or order. 
+
+**What will happen if I send my document without including any Tags in the template's signatory details section?**
+Users will be prompted to choose a tag from the available options and can set their placement 
+
 
 ###   Grant Consent Function
 
