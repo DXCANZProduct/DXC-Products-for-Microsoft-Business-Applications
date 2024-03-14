@@ -39,7 +39,8 @@ If more than one contact is assigned the same purpose then DocuSign will send th
 If no Tag is specified, Users will be prompted to choose a tag from the available options and can set their placement 
 
 **Can I just put the email address of my intended recipient in the "to" field and still use my template?**
-Yes, you can place the email addresses in the "to" field of the Print destination settings, the recipients will be sent the document based on the order in this box, with the last email in the panel being the last user to receive this document. The order of the email addresses  should be considered if you have dependent signatures 
+
+Yes, you can place the email addresses in the "to" field of the Print destination settings, the recipients will be sent the document based on the order in this field, with the last email in the panel being the last user to receive this document. The order of the email addresses should be considered if you have dependent signatures or require the document to be delievered in sequnce.
 
 ###   Grant Consent Function
 
