@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Bank reconciliation matching rules
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-02-02
+ms.date: 2024-03-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -109,6 +109,7 @@ More detail for ** fields are discussed [here](#customer-payment-and-settle-of-i
 **Auto-post customer payment journal** **	| Enabled when **Offset account type** is set to _Customer_. Indicates if the created (and settled if applicable) customer receipt journal should automatically be posted. If automatically posted, the newly created bank transaction(s) will also automatically be matched to the applicable bank statement lines. 
 | **GST Group**   |  Populates the field GST group in the Bank Statement Line Details form when a **Mark as new** line is created.   |
 | **Item GST Group**    |  Populates the field Item GST group in the Bank Statement Line Details form when a **Mark as new** line is created   |
+| **Description mask**    | Ability to set a Description mask for Mark new transactions. <br> **Editor** provides the ability to set a combination of static fields and placeholders: <br> • Currency <br> • Description <br> • Amount <br> • Document number <br> • Entry reference <br> • Bank statement transaction code <br> • Reference No. <br> • Related bank account <br> • Name (Trading party) <br> • Bank account <br> • Bank account number <br> • Bank groups <br> Note: If File name mask is not populated, the Bank statement line's Description will be written to new transaction's Description.
 
 ### Customer payment and settle of invoice (1:1)
 #### Reconciliation matching rules
