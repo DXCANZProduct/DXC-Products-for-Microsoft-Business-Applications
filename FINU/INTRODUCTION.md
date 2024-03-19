@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Introduction to Finance Utilities 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-03-06
+ms.date: 2024-03-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -135,7 +135,7 @@ Modification allows users to automatically save the electronic reporting file to
 - [Save electronic reporting file to secure location setup](Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md)
 - [Save electronic reporting file to secure location processing](Processing/Accounts-Payable/Save-electronic-reporting-file-to-secure-location.md)
 
-## ABN lookup and validation
+# ABN lookup and validation
 > Note: Only applicable to Australia. 
 
 Where the company has registered to use ABN lookup Web API and the legal entity setup in D365, it is possible to lookup and validate customer and vendor’s ABN in D365.
