@@ -2,10 +2,10 @@
 # required metadata
 
 title: License manager
-description: Introduction to License manager
-author: hho34
+description: Support and Maintenance
+author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-06-07
+ms.date: 2024-03-20
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -26,29 +26,13 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# License manager
+# Support and Maintenance
 
-## Release notes
+## Feature
 
-The [release notes](Release-notes.md) describes the features that are either new or changed.
+This feature enables functionality that is required for DXC to provide the best possible support. <br>
+By enabling this feature, you are agreeing to DXC's [Terms and Conditions](https://dxc.com/au/en/practices/microsoft/end-user-license-agreement) for the support and maintenance of DXC Products. We may update this agreement at any time. 
+Please visit the page periodically to check for updates.
 
-## Introduction
 
-The license manager solution allows management of licenses for Dynamics 365 Finance and Operations ISV products. This module allows ISV partners to manage customer license information, control expired licenses and environments enabled, extend and incorporate license control for each ISV product and collect license based telemetry.
 
-This module enables ISV partners to be able to implement license control on their products. Upon installation of the license controlled ISV products a validation request is made to the licensing service to verify the product license. If not licensed, expired or disabled, customers will receive prompt to contact the ISV partner for license issues.
-
-License Manager can be implemented either using configuration keys or feature management. As an optional addition, when a customer is not licensed to use a product, License Manager can deactivate the feature in a customer environment, therefore removing use of the product from the customer.
-<br>
-
-### Disclaimers
-
-- As a customer of License Manager, it’s agreed and understood that DXC will be hosting the customer license information.
-
-### Objectives
-
-The objectives are:
-
-- [Describe enabling license control for product given a specific ISV partner in FinOps](./FinOps.md)
-- [Describe the License Manager Power App](./PowerApp.md)
-- [Describe the License Manager Web App](./ReactWebApp.md)
