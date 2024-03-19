@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Processing - ABN lookup and validation
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-03-05
+ms.date: 2024-03-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -76,6 +76,17 @@ Go to **Accounts payable > Vendors > All vendors** and select the applicable Ven
 Go to **Accounts receivable > Customers > All customers** and select the applicable Customer and choose either of the following:
 - On the Action Pane, on the **Customer** tab, in the **Registration group**, select **ABN status**.
 - Manually enter the **Tax exempt number** on the **Invoice and delivery** FastTab.
+
+## Vendor invoices
+Ability for users to check the current ABN and GST status for a vendor while entering an invoice. <br>
+**ABN status** button is enabled when the 'Tax exempt number'/'ABN' is populated for the vendor invoice line. <br> 
+
+Available on the ActionPane in the following forms:
+- Accounts payable > Invoices > Invoice journal
+- Accounts payable > Invoices > Pending vendor invoices
+- Accounts payable > Invoices > Tax invoice register
+- General ledger > Journal entries > General journals
+- Project management and accounting > Journals > Expense
 
 # ABN validation report
 To run the **ABN validation** report, go to **Organization administration > Inquiries and reports > ABN validation**. <br>
