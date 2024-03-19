@@ -115,3 +115,14 @@ To update below fields based on current government online information:
 
 The following can be used:
  - **ABN validation** report will update records that are allocated to a customer or vendor
+
+# Review updates
+
+Users can review new/updated ABN records, for example an ABN is not registered for GST anymore.
+
+- Navigate to **Organization administration > Inquiries and reports > ABN validation review**.
+- **Related information** can be used to view the customer(s) and/or vendor(s) that have the ABN allocated.
+- Select applicable record(s) and select **Mark as reviewed** to update their reviewed status.
+- **Run update** can be used to run the web service to update ABNs with current data from the Australian Business Register.
+
+  
