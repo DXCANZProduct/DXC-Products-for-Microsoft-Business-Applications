@@ -5,7 +5,7 @@ title: License manager
 description: Introduction to License manager
 author: hho34
 manager: Kym Parker
-ms.date: 2023-06-07
+ms.date: 2024-03-20
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -52,3 +52,4 @@ The objectives are:
 - [Describe enabling license control for product given a specific ISV partner in FinOps](./FinOps.md)
 - [Describe the License Manager Power App](./PowerApp.md)
 - [Describe the License Manager Web App](./ReactWebApp.md)
+- [Support and Maintenance](./SupportMaintenance.md)
