@@ -35,8 +35,8 @@ Setup requirements are discussed in detail at [Vendor payments setup](../../Setu
 
 ## Payment proposal
 The following Vendor payment journal fields can be populated by Finance Utilities Accounts Payable functionality when the journal lines are created via payment proposal: 
-- **Lodgement reference** - [BPAY method of payment](BPAY-payment.md)
-- **Sundry invoice details** - [Sundry method of payment](Sundry-payment.md)
+- **Lodgement reference** - [BPAY payment](BPAY-payment.md)
+- **Sundry invoice details** - [Sundry payment](Sundry-payment.md)
   - Sundry vendor name
   - Sundry address
   - Sundry BSB\routing number
