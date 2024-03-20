@@ -5,7 +5,7 @@ title: EDI Connection setup
 description: Overview of the EDI connection methods
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-07-13
+ms.date: 2024-03-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -146,7 +146,7 @@ To begin, create a new SFTP site record and fill out the connection parameters
 | **Proxy user name**              	| Specify the **Proxy username** used for authentication to the SFTP site |
 | **Proxy password**               	| Specify the **Proxy password** used for authentication to the SFTP site. <br> *Note: this is encrypted and displayed as ……. within the form.* |
 | <ins>**Private key**</ins> (where applicable) 	|  |
-| **Private key**                 	| Specify the **Private key** used for authentication to the SFTP site |
+| **Private key**                 	| Specify the **Private key** used for authentication to the SFTP site - [supported methods](https://github.com/sshnet/SSH.NET#encryption-method)|
 | **Pass phrase**                 	| Specify the **Pass phrase** used for authentication to the SFTP site |
 
 > Note: Select Test Connection to confirm that a connection can be made with the SFTP site specified.
