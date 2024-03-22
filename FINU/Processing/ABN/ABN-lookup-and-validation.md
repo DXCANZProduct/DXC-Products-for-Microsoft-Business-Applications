@@ -114,7 +114,9 @@ To update below fields based on current government online information:
 - **GST registered** - Set to _Yes_ where 'GST to' date is in the future
 
 The following can be used:
- - **ABN validation** report will update records that are allocated to a customer or vendor
+- **Update ABN validation** periodic task
+- **Run update** on **ABN validation review** form
+- When adding new records via **ABN lookup**
 
 # Review updates
 
