@@ -137,7 +137,7 @@ Field         | Description                         | Example or Options
 
 Field         | Description                         | Example or Options
 :--           |:--                                  |:--
-Web API types  | Select applicable outgoing web service  | Options as per **Web API types**
+Web API types  | Select applicable import web service  | Options as per **Web API types**
 **Connection details** | | 
 Internet address  | Enter the internet address for the API Endpoint  | https://XX.azurewebsites.net/
 Service endpoint  | Enter the service point for the API Endpoint     | api/DFUWebAPIImportExport/importFile
