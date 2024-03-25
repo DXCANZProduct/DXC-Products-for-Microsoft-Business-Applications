@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  ERFormatDestination, DXCEncryptionParameters
+ms.search.form:  ERFormatDestination, DXCEncryptionParameters, DocuType, DFUGERExportConnection
 audience: Application User
 # ms.devlang: 
 ms.reviewer: jdutoit2
@@ -120,6 +120,8 @@ These logs can then be used to set **Custom alerts**, for example using error lo
 **API Endpoint:**
 
 > Note: Available **Web API types** can be viewed on ActionPane.
+
+> Note: Parameter in which the file is passed, should be named file
 
 Field         | Description                         | Example or Options
 :--           |:--                                  |:--
