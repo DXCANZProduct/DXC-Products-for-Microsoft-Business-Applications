@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-03-06
+ms.date: 2024-03-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
