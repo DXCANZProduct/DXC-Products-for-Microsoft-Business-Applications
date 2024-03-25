@@ -116,6 +116,24 @@ These logs can then be used to set **Custom alerts**, for example using error lo
 | **Password**	| Enabled when Credential type is set to _Database_. Specify the Password used for authentication to the SFTP site. *Note: this is encrypted and displayed as •••••••••• within the form.* ||
 | **Key vault certificate** |	Enabled when Credential type is set to _Key vault_. | Select applicable Key vault certificate.	|
 
+
+### API Endpoint	
+
+> Note: Available **Web API types** can be viewed on ActionPane.
+
+Field         | Description                         | Example or Options
+:--           |:--                                  |:--
+Web API types  | Select applicable export web service  | Options as per **Web API types**
+**Connection details** | | 
+Internet address  | Enter the internet address for the API Endpoint  | https://XX.azurewebsites.net/
+Service endpoint  | Enter the service point for the API Endpoint     | api/DFUWebAPIImportExport/importFile
+Validate connection endpoint | Service endpoint for **Validate connection** | api/HealthCheck/testConnection
+**OAUTH connection details** | | 
+Application ID  | Azure active directory application identifier
+Key vault secret name  | Azure active directory application secret key | Select the applicable **Secret** as setup in **Key vault parameters**
+Tenant ID        | Azure active directory tenant identifier          | XX.onmicrosoft.com
+Authority URI    | Azure active directory authority URI              | https://login.microsoftonline.com/
+
 ### Validate connection
 Use button **Validate connection** to validate the following:
 - Connection details
