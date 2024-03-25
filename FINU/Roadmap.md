@@ -37,13 +37,11 @@ This page describes the features planned for future releases and planned release
 
 Release			    | ETA
 :--			        |:--
-2024-03          | 29 March 2024
+
 
 ### Next release
 
-- Electronic reporting export connections - Log
-- GST details included in ABN validation
-- File name on vendor payment journal lines
+
 
 ## Roadmap
 
