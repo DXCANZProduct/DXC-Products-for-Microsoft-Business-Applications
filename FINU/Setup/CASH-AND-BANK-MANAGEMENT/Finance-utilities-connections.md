@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Finance utilities connections
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-01-31
+ms.date: 2024-03-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -48,8 +48,8 @@ To open the **Financial utilities connections** page, go to **Cash and bank mana
 Field         | Description                         | Example or Options
 :--           |:--                                  |:--
 **Name**      |	Enter a name for your connection	  | ANZ_FTP
-**Description**   |	Enter a description for your connection	  |FTP for bank 123
-**Connection type** |	Select the applicable connection type	  | •	FTP <br> •	Azure blob <br> •	SFTP <br> •	SharePoint
+**Description**   |	Enter a description for your connection	  | FTP for bank 123
+**Connection type** |	Select the applicable connection type	  | •	FTP <br> •	Azure blob <br> •	SFTP <br> •	SharePoint <br> •	API Endpoint
 **Error action**    |	The action to take when there is an error with the connection | •	Error <br> •	Warning
 **Enabled**         |	Once all the mandatory fields have been completed the connection can be enabled	  | •	Yes <br> •	No
 | **Enable file encryption/decryption** | Set to _Yes_ if the import file should be decrypted | •	No <br>	• Yes  |
@@ -103,7 +103,7 @@ Field         | Description                         | Example or Options
 **Credential type** |	Select applicable **Credential type** for Azure blob	| •	Key vault <br> •	Database
 **Storage account name**  |	Enter the **Storage account name** where Credential type = **Database**
 **Storage account key**   |	Enter the **Storage account key** where Credential type = **Database**	
-**Connection string**     |	Enabled when Credential type = **Key vault**. <br> Select the applicable **Secret** as setup in **Key vault paramaters**. 
+**Connection string**     |	Enabled when Credential type = **Key vault**. <br> Select the applicable **Secret** as setup in **Key vault parameters**. 
 **Archive container name**  |	Enter the **archive** path where the imported files are to be copied to. Folders are not supported	| integration-archive
 **Search mask**           |	A file mask is used to match files in the Import path	        | Bank123*
 **Error container name**  |	Enter the **error** path where the files that matches the Search mask, but haven’t successfully been imported, are copied to. Folders are not supported. | integration-error
@@ -130,6 +130,23 @@ Field         | Description                         | Example or Options
 **Archive SharePoint address**  |	Enter the SharePoint address where the imported files are to be copied to	| https://.../Shared Documents/Integration-archive
 **Import error SharePoint address** |	Enter the SharePoint address where the files that matches the Search mask, but haven’t successfully been imported, are copied to	| https://.../Shared Documents/Integration-error
 **Search mask**     |	A file mask is used to match files in the Import path	    | Bank123*
+
+### API Endpoint	
+
+> Note: Available **Web API types** can be viewed on ActionPane.
+
+Field         | Description                         | Example or Options
+:--           |:--                                  |:--
+Web API types  | Select applicable outgoing web service  | Options as per **Web API types**
+**Connection details** | | 
+Internet address  | Enter the internet address for the API Endpoint  | https://XX.azurewebsites.net/
+Service endpoint  | Enter the service point for the API Endpoint     | api/DFUWebAPIImportExport/importFile
+Validate connection endpoint | Service endpoint for **Validate connection** | api/HealthCheck/testConnection
+**OAUTH connection details** | | 
+Application ID  | Azure active directory application identifier
+Key vault secret name  | Azure active directory application secret key | Select the applicable **Secret** as setup in **Key vault parameters**
+Tenant ID        | Azure active directory tenant identifier          | XX.onmicrosoft.com
+Authority URI    | Azure active directory authority URI              | https://login.microsoftonline.com/
 
 
 ### Validate connection
