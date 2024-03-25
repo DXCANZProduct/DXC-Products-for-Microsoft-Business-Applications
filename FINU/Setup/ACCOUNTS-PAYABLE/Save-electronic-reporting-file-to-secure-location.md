@@ -117,7 +117,7 @@ These logs can then be used to set **Custom alerts**, for example using error lo
 | **Key vault certificate** |	Enabled when Credential type is set to _Key vault_. | Select applicable Key vault certificate.	|
 
 
-### API Endpoint	
+**API Endpoint:**
 
 > Note: Available **Web API types** can be viewed on ActionPane.
 
