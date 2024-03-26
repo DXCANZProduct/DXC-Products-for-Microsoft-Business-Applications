@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Bank statement reconciliation processing - Bank reconciliation worksheet 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-07-31
+ms.date: 2024-03-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,6 +28,8 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 ## Bank reconciliation worksheet
+
+> Note: Finance Utilities does not support feature 'Modern bank reconciliation' (preview in 10.0.39)
 
 The **Worksheet** page on the **Bank reconciliation** is used to match the bank transactions within your D365 environment and the bank statement files according to the matching rules that you have defined in the D365 environment.
 Finance utilities includes improved reconciliation worksheet matching capability.
