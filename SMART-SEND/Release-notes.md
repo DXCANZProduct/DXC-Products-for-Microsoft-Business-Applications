@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.37.20240301
+### Release 10.0.37.20240326
 
 DXC Smart Business Form Email Manager 10.0.37 runs on the following Microsoft releases
 
@@ -44,15 +44,16 @@ Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 
-#### Build 10.0.37.202403012
+#### Build 10.0.37.20240326?
 
 <ins>Bug fixes</ins>
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-16791	    | Error executing code: The field with ID '0' does not exist in table 'CustInvoiceTable'| resolved error displayed When attempting to perform the View >copy function on a Free Text Invoice|
-17094| Customer and Vendor Payment advice emails| When utilizing electronic reporting formats, the number of emails sent for the payment advice to customers or vendors was previously exponential to the number of lines for that vendor.|
-17123|Report  is not setup for Smart Send| Previously, when a user attempted to utilize the Smart Send functionality and their user security role was limited to a single legal organization, an error message would appear alerting them that Smart Send was not configured.
+17433	    | Report  is not setup for Smart Send| If a default report does not exist Smart Send will attempt to find the report by name.|
+
+
+
 
 ## Feature management
 From 10.0.34.20231026 Smart Send can be enabled via Feature management
@@ -66,6 +67,18 @@ If the above feature is not visible, press **Check for updates** to refresh the 
 	
 
 # Previous version(s)
+
+### Release 10.0.37.20240301
+#### Build 10.0.37.202403012
+
+<ins>Bug fixes</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+16791	    | Error executing code: The field with ID '0' does not exist in table 'CustInvoiceTable'| resolved error displayed When attempting to perform the View >copy function on a Free Text Invoice|
+17094| Customer and Vendor Payment advice emails| When utilizing electronic reporting formats, the number of emails sent for the payment advice to customers or vendors was previously exponential to the number of lines for that vendor.|
+17123|Report  is not setup for Smart Send| Previously, when a user attempted to utilize the Smart Send functionality and their user security role was limited to a single legal organization, an error message would appear alerting them that Smart Send was not configured.
+
 
 ### Release 10.0.36.20231026
 #### Build 10.0.36.202310262
