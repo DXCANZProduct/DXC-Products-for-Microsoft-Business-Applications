@@ -51,7 +51,7 @@ Release date: 02 April 2024
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 17151	| OData Event logging with Insights for D365 FO	| Add Telemetry logging support for all OData CRUD (Create, Read, Update, Delete) events. 
-17456	| Batch Task monitoring with Insights for D365 FO	| Add Telemetry logging support for batch tasks with Insights for D365 FO.
+17456	| Batch Task monitoring with Insights for D365 FO	| Add Telemetry logging support for batch tasks.
 
 
 <ins>Bug fixes</ins>
@@ -61,7 +61,7 @@ Number	| Name		 | Description
 16598	| Periodic monitoring configuration batch job	| Update periodic monitoring batch to ensure it is run in batch processing
 16932	| Business event logging with Insights for D365 FO	| Fix issues with logging of Business events resulting in empty "n/a" records getting logged into Azure App Insights.
 17016	| Business event logging with Insights for D365 FO	| Log Telemetry on active Business events only.
-17455	| Batch job monitoring with Insights for D365 FO	| Fix isues with RunBaseBatch based batch jobs not getting monitored with Insights for D365 FO. Refer to [Batch job limitations](./Limitations.md#product-limitations)
+17455	| Batch job monitoring with Insights for D365 FO	| Fix issues with RunBaseBatch based batch jobs not getting monitored with Insights for D365 FO. Refer to [Batch job limitations](./Limitations.md#product-limitations)
 
 # Previous Version(s)
 
