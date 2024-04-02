@@ -36,6 +36,6 @@ The following limitations apply to monitoring and telemtry logging with Insights
 2. Batch jobs will not be monitored / logged to Azure app insights during the time in between the enablement of Batch job monitoring on the Insights for D365 parameters form and the next scheduled run of the 'Insights for D365 monitoring automation' task. To compensate for this time window, the repeat interval of the 'Insights for D365 monitoring automation' can be reduced
 
 **OData Monitoring**
-1. The monitoring of OData calls with Insights for D365 FO is reliant on the attachment of event handlers on the AOS instances. However, these handlers detach during application downtime (maintenance, upgrades) and need to be reattached loading any form after application restart. OData calls won't be monitored between application downtime and the first form load after restart.
+1. The monitoring of OData calls with Insights for D365 FO is reliant on the attachment of event handlers on the AOS instances. However, these handlers detach during application downtime (maintenance, upgrades) and are re-attached by loading any form after application restart. OData calls won't be monitored between application downtime and the first form load after restart.
   
 
