@@ -52,6 +52,7 @@ Number	| Name		 | Description
 :--	|:--		  	|:--	
 17151	| OData Event logging with Insights for D365 FO	| Add Telemetry logging support for all OData CRUD (Create, Read, Update, Delete) events. 
 17456	| Batch Task monitoring with Insights for D365 FO	| Add Telemetry logging support for batch tasks.
+17414	| Application Insights Dashboard template | A new version of Application Insights Dashboard template
 
 
 <ins>Bug fixes</ins>
