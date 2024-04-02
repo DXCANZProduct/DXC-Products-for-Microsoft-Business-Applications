@@ -51,4 +51,4 @@ To setup monitoring, navigate to **System administration > Inquiries > Batch job
 Telemetry will be logged with Insights for D365 FO at the start and end of each batch job execution. A summary of batch jobs that finish behind schedule or too early is available on Azure Application Insights with the Insights for D365 FO Dashboard provided by DXC. You can also set up Alerts on Azure Application Insights to send a notification to a chosen destination, such as an email, SMS message, web hook, or it can even execute an action with Azure Logic App. Refer to [Setup alerts on continuous monitoring business rules](./Azure-application-insights/Azure_alerts.md#1-setup-alerts-on-continuous-monitoring-business-rules) to setup alerts  for critical batch jobs that are completing earlier than expected or if they are finishing later than anticipated.
 
 N.B
-Refer to [Batch jobs limitations](./Limitations.md#product-limitations) to understand current limitations on batch job monitoring
+Refer to [Batch job limitations](./Limitations.md#product-limitations) to understand current limitations on batch job monitoring

@@ -63,8 +63,7 @@ Number	| Name		 | Description
 16598	| Periodic monitoring configuration batch job	| Update periodic monitoring batch to ensure it is run in batch processing
 16932	| Business event logging with Insights for D365 FO	| Fix issues with logging of Business events resulting in empty "n/a" records getting logged into Azure App Insights.
 17016	| Business event logging with Insights for D365 FO	| Log Telemetry on active Business events only.
-17455	| Batch job monitoring with Insights for D365 FO	| Fix isues with RunBaseBatch based batch jobs not getting monitored with Insights for D365 FO.
-
+17455	| Batch job monitoring with Insights for D365 FO	| Fix isues with RunBaseBatch based batch jobs not getting monitored with Insights for D365 FO. Refer to [Batch job limitations](./Limitations.md#product-limitations)
 
 # Previous Version(s)
 
