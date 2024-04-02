@@ -45,7 +45,7 @@ Additionally, you can change how frequently this rule should run by opening the 
 ### 2.Start the Periodic Monitoring Batch Job
 The monitoring rules focus on polling the current system health. This is accomplished through a single batch job that executes the monitoring business rules. Navigate to **System administrators > Setup > Insights for D365 FO >Periodic monitoring > Periodic monitoring batch service**
 
-Only one instance is required, and it does not need recurrence as this is set automatcially based on the refresh intervals set in [Periodic Monitoring Configuration](Periodic_monitoring_configuration.md#1-periodic-monitoring-configuration). The batch job will manage itself and sleep until the next time it needs to run. Ensure to set the **Batch processing** option to 'Yes' and click *'OK'* to start the batch job.
+Only one instance is required, and it does not need recurrence as this is set automatcially based on the refresh intervals set in [Periodic Monitoring Configuration](Periodic_monitoring_configuration.md#1-periodic-monitoring-configuration). The batch job will manage itself and sleep until the next time it needs to run. The **Batch processing** option is set to 'Yes' by default. Click *'OK'* to start the batch job.
 
 ![Monitoring_batch](../IMAGES/Monitoring_batch.png)
 

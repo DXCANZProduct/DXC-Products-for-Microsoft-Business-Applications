@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.36.202311291
+### Release 10.0.36.202403261
 
 Insights for D365 FO 10.0.36 runs on the following Microsoft releases
 
@@ -42,6 +42,33 @@ Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
 Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
 Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
+Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
+Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
+
+#### Build 10.0.36.202403261
+Release date: 02 April 2024
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+17151	| OData Event logging with Insights for D365 FO	| Add Telemetry logging support for all OData CRUD (Create, Read, Update, Delete) events. 
+17456	| Batch Task monitoring with Insights for D365 FO	| Add Telemetry logging support for batch tasks with Insights for D365 FO.
+
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+16598	| Periodic monitoring configuration batch job	| Update periodic monitoring batch to ensure it is run in batch processing
+16932	| Business event logging with Insights for D365 FO	| Fix issues with logging of Business events resulting in empty "n/a" records getting logged into Azure App Insights.
+17016	| Business event logging with Insights for D365 FO	| Log Telemetry on active Business events only.
+17455	| Batch job monitoring with Insights for D365 FO	| Fix isues with RunBaseBatch based batch jobs not getting monitored with Insights for D365 FO.
+
+
+# Previous Version(s)
+
+### Release 10.0.36.202311291
 
 #### Build 10.0.36.202311291
 Release date: 29 November 2023
@@ -51,9 +78,6 @@ Release date: 29 November 2023
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 16609	| Telemetry logging with Insights for D365 FO	| Fix issues with telemetry logging when users are removed from the system.
-
-
-# Previous Version(s)
 
 ### Release 10.0.34.202310031
 
