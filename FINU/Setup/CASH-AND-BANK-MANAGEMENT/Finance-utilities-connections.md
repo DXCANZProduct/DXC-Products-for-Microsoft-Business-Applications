@@ -135,6 +135,8 @@ Field         | Description                         | Example or Options
 
 > Note: Available **Web API types** can be viewed on ActionPane.
 
+[Technical guide](../../Technical/Web-API-Endpoint.md) for Web API Endpoints.
+
 Field         | Description                         | Example or Options
 :--           |:--                                  |:--
 Web API types  | Select applicable import web service  | Options as per **Web API types**

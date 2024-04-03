@@ -132,6 +132,26 @@ Field         | Description                         | Example or Options
 **Search mask**     |	A file mask is used to match files in the Import path	    | Bank123*
 
 
+### API Endpoint	
+
+> Note: Available **Web API types** can be viewed on ActionPane.
+
+[Technical guide](../../Technical/Web-API-Endpoint.md) for Web API Endpoints.
+
+Field         | Description                         | Example or Options
+:--           |:--                                  |:--
+Web API types  | Select applicable import web service  | Options as per **Web API types**
+**Connection details** | | 
+Internet address  | Enter the internet address for the API Endpoint  | https://XX.azurewebsites.net/
+Service endpoint  | Enter the service point for the API Endpoint     | api/DFUWebAPIImportExport/importFile
+Validate connection endpoint | Service endpoint for **Validate connection** | api/HealthCheck/testConnection
+**OAUTH connection details** | | 
+Application ID  | Azure active directory application identifier
+Key vault secret name  | Azure active directory application secret key | Select the applicable **Secret** as setup in **Key vault parameters**
+Tenant ID        | Azure active directory tenant identifier          | XX.onmicrosoft.com
+Authority URI    | Azure active directory authority URI              | https://login.microsoftonline.com/
+
+
 ### Validate connection
 Use button **Validate connection** to validate the following:
 - Connection details
