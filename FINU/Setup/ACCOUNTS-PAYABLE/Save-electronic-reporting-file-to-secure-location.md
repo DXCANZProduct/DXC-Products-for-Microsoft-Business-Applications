@@ -121,6 +121,8 @@ These logs can then be used to set **Custom alerts**, for example using error lo
 
 > Note: Available **Web API types** can be viewed on ActionPane.
 
+[Technical guide](../../Technical/Web-API-Endpoint.md) for Web API Endpoints.
+
 Field         | Description                         | Example or Options
 :--           |:--                                  |:--
 Web API types  | Select applicable export web service  | Options as per **Web API types**
