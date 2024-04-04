@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor Documents - Vendor purchase order change
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-14
+ms.date: 2023-04-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -249,13 +249,14 @@ The following EDI Header staging fields are available on the header page.
 **ISO**                             | Ship to - Country/region ISO	
 **Latitude**                        | Ship to - Latitude	
 **Longitude**                       | Ship to - Longitude	
-**Delivery date**                   | Required delivery date	                                        | Delivery date
-**Site**                            | Storage dimension - Site	                                        | Site
-**Warehouse**                       | Storage dimension - Warehouse	                                    | Warehouse
+**Delivery date**                   | Required receipt date	                                                    | Delivery date
+**Confirmed receipt date**          | Acknowledged delivery date from the Vendor purchase order acknowledgement. Purchase order's Confirmed receipt date.                                 
+**Site**                            | Storage dimension - Site	                                                | Site
+**Warehouse**                       | Storage dimension - Warehouse	                                            | Warehouse
 **Delivery terms**                  | Delivery terms	
 **Delivery mode**                   | Delivery mode	
 **Text**                            | Header note to be sent with purchase order	
-**Requester**                       | Requester	                                                        | Requester
+**Requester**                       | Requester	                                                                | Requester
 **Requester email**                 | Requester's primary email	                  
 **Requester phone**                 | Requester's primary phone
 **Attention information**           | Attention information	
@@ -328,7 +329,8 @@ The following EDI Line staging fields are available on the lines page.
 **Inventory status**        | Inventory dimension - Inventory status	
 **Site**                    | Storage dimension - Site	
 **Warehouse**               | Storage dimension - Warehouse	
-**Requested receipt date**  | The requested receipt date
+**Requested receipt date**  | The requested receipt date from the purchase order line
+**Confirmed receipt date**  | The confirmed receipt date from the purchase order line. Populated from the Acknowledged delivery date in the Vendor purchase order acknowledgement.
 **Requester**               | Requester	
 **Attention information**   | Attention information	
 **Delivery name**           | Address for Delivery – Delivery name	
