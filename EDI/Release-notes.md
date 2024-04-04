@@ -38,6 +38,12 @@ Estimated release date: 30 April 2024
 
 <ins>New features</ins>
 
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+17001	| - Customer purchase order <br> - Customer purchase order change | New document setting **Price variance type** with options **Amount** and **Percentage**. <br> Previously the Maximum and Minimum price variance values were only in Amount. <br> Price variance type now allows **Percentage** option as well with this new document setting. <br>  ![Price variance type](RELEASE-NOTES-IMAGES/20240430_2.png "Price variance type")
+
 **Freight forwarder landed cost module**
 
 Number	| Name		 | Description
