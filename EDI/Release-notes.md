@@ -42,7 +42,7 @@ Estimated release date: 30 April 2024
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
-17434	| SFTP connection	| Upgrade SFTP to latest [2024.0.0](https://github.com/sshnet/SSH.NET/releases/tag/2024.0.0) release
+17434	| SFTP connection	| Upgrade SFTP SSH.NET to latest [2024.0.0](https://github.com/sshnet/SSH.NET/releases/tag/2024.0.0) release
 
 **Customer module**	
 
