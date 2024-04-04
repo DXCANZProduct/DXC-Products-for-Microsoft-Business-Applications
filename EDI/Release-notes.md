@@ -42,7 +42,7 @@ Estimated release date: 30 April 2024
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-16146	| Voyage advice		| Ability to create **Voyage advice** with Purchase order Confirmation or Confirm. <br> ![Purchase order Confirmation](RELEASE-NOTES-IMAGES/20240430_1.png "Purchase order Confirmation") 
+16146	| Voyage advice		| Ability to create **Voyage advice** with Purchase order **Confirmation** or **Confirm**. <br> [User guide](FREIGHT-FORWARDER/DOCUMENTS/Voyage-advice.md) <br> ![Purchase order Confirmation](RELEASE-NOTES-IMAGES/20240430_1.png "Purchase order Confirmation")
 
 # Current version
 
