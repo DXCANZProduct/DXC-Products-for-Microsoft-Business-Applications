@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-12-19
+ms.date: 2024-04-05
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,9 +45,10 @@ Release			| ETA
 ETA: 30 April 2024
 
 - Freight forwarder Voyage advice - Trigger outbound staging record using Purchase order Confirmation or Confirm
+- Price variance type - Option to use Percentage variance with customer and vendor price
+    - Customer purchase order
+    - Customer purchase order change
+    - Vendor purchase order acknowledgement
+- Upgrade SFTP   
 
-## Deprecate
-The following has been deprecated
 
-#### September 2022 release
-- MS has deprecated scripting. We have therefor removed setting **Enable scripting** from **EDI shared parameters** in the September 2022 release.
