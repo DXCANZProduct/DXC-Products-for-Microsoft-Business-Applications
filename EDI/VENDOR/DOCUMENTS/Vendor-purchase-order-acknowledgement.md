@@ -267,9 +267,9 @@ Field	                    | Description
 **Barcode**                 | Barcode for the item number from the purchase order
 **Product Name**            | Item name for the item number from the purchase order
 **Unit**                    | Unit from the purchase line
-**Vendor delivery date**         | Acknowledged delivery date received in the purchase order acknowledgement
-**System delivery date**         | Delivery date for each purchase line (requested delivery date). 
-**Confirmed delivery date**      | Requested delivery date to be sent on the purchase order confirmation (POC) to the vendor.
+**Vendor delivery date**         | Acknowledged delivery date received in the purchase order acknowledgement. This value is used in the Purchase order's **Confirmed receipt date**.
+**System delivery date**         | Delivery date for each purchase line (requested receipt date). This could be the same as vendor's delivery date, but could also have been overridden to a new value after the purchase order acknowledgement has been received.
+**Requested delivery date**      | Requested delivery date to be sent on the purchase order confirmation (POC) to the vendor. <br> Default is System delivery date
 **Confirmation auto triggered** | 	Indicates if the **Confirmed delivery date** is an auto triggered value
 
 ##### Buttons
@@ -278,8 +278,8 @@ It is possible to update the Purchase order and Confirmed values by using the av
 Button                  | Description
 :--                     |:--
 **Display dimensions**  | Update the dimensions displayed on the Confirmation page
-**Use system date**     | Update the PO line's **Confirmed delivery date** field to the system’s delivery date
-**Use vendor date**     | No update to purchase order. If update was automatically allowed, the PO line's **Confirmed delivery date** has already been updated with the vendor's date.
+**Use system date**     | Update **Requested receipt date** to purchase order line's **Requested receipt date**
+**Use vendor date**     | Update **Requested receipt date** to vendor's **Acknowledged delivery date** received in the purchase order acknowledgement
 
 
 #### Line pack
