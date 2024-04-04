@@ -64,6 +64,13 @@ Number	| Name		 | Description
 
 <ins>Bug fixes</ins>
 
+**Vendor module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+10755	| Vendor purchase order change | Fix to **Acknowledgement required**. If set to _Yes_, Purchase order's: <br> • **Approval status** set to _In external review_ <br> • **Acknowledgement status** set to _Acknowledgement pending_
+
+
 **3PL module**
 
 Number	| Name		 | Description
