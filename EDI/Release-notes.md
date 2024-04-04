@@ -64,6 +64,12 @@ Number	| Name		 | Description
 
 <ins>Bug fixes</ins>
 
+**Core module**	- Applies to all modules
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+17417	| SFTP connection	| Update **Private key** to Password style
+
 **Vendor module**	
 
 Number	| Name		 | Description
