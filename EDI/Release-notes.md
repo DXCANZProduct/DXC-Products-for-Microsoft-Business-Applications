@@ -44,6 +44,14 @@ Number	| Name		 | Description
 :--	|:--		  	|:--	
 16146	| Voyage advice		| Ability to create **Voyage advice** with Purchase order **Confirmation** or **Confirm**. <br> [User guide](FREIGHT-FORWARDER/DOCUMENTS/Voyage-advice.md) <br> ![Purchase order Confirmation](RELEASE-NOTES-IMAGES/20240430_1.png "Purchase order Confirmation")
 
+<ins>Bug fixes</ins>
+
+**3PL module**
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+16295	| Shipment advice - Voyage | Applicable to Voyages created for **Transfer orders**. **From warehouse** was used to determine if **Send to EDI** was enabled and applicable Trading partner settings. **To warehouse** for the Transfer order is now used.
+
 # Current version
 
 Next release is planned for 30 April 2024.
