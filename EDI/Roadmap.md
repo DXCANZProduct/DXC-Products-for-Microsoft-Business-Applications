@@ -45,7 +45,7 @@ Release			| ETA
 ETA: 30 April 2024
 
 - Freight forwarder Voyage advice - Trigger outbound staging record using Purchase order Confirmation or Confirm
-- Price variance type - Option to use Percentage variance with customer and vendor price
+- Price variance type - Option to use Percentage variance when using customer or vendor price
     - Customer purchase order
     - Customer purchase order change
     - Vendor purchase order acknowledgement
