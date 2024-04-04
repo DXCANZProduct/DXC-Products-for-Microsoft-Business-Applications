@@ -49,6 +49,6 @@ ETA: 30 April 2024
     - Customer purchase order
     - Customer purchase order change
     - Vendor purchase order acknowledgement
-- Upgrade SFTP   
+- Upgrade SFTP SSH.NET
 
 
