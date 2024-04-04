@@ -42,7 +42,13 @@ Estimated release date: 30 April 2024
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-17001	| - Customer purchase order <br> - Customer purchase order change | New document setting **Price variance type** with options **Amount** and **Percentage**. <br> Previously the Maximum and Minimum price variance values were only in Amount. <br> Price variance type now allows **Percentage** option as well with this new document setting. <br>  ![Price variance type](RELEASE-NOTES-IMAGES/20240430_2.png "Price variance type")
+17001	| - Customer purchase order <br> - Customer purchase order change | New document setting **Price variance type** with options **Amount** and **Percentage**. <br> Previously the **Maximum negative price variance** and **Maximum positive price variance** values were only in Amount. <br> Price variance type now allows **Percentage** option as well with this new document setting. <br> [User guide](CUSTOMER/SETUP/SETTING-PROFILES/Customer-purchase-order.md) <br>  ![Price variance type](RELEASE-NOTES-IMAGES/20240430_2.png "Price variance type")
+
+**Vendor module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+17004	| Vendor purchase order acknowledgement | New document setting **Price variance type** with options **Amount** and **Percentage**. <br> Previously the **Maximum negative price variance** and **Maximum positive price variance** values were only in Amount. <br> Price variance type now allows **Percentage** option as well with this new document setting. <br> [User guide](VENDOR/SETUP/SETTING-PROFILES/Vendor-purchase-order-acknowledgement.md) <br>  ![Price variance type](RELEASE-NOTES-IMAGES/20240430_3.png "Price variance type")
 
 **Freight forwarder landed cost module**
 
