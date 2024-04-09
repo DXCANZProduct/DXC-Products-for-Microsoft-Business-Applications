@@ -41,12 +41,12 @@ EDI purchase orders will be placed in **External review** if the Trading partner
 The following buttons have been added to the EDI tab on the Purchase order Action Pane.
 
 **Field**		| **Description**
-:--			|:--
+:--	          |:--
 <ins>**Purchase order confirmation**</ins>	|
 **Confirmation**	| Option to manually review the purchase order acknowledgement received from the vendor and process the purchase order confirmation to the vendor. The **Send to EDI** option is also included within this [page](Vendor-purchase-order-acknowledgement.md#processing-purchase-order-confirmation-poc).
 **Send to EDI**		| Press this button to manually create the Vendor purchase order confirmation staging record using the confirmed values as per **Confirmation** . This could also be setup to be sent automatically, by setting the Vendor purchase order acknowledgement's **Purchase order confirmation required** to _Yes (PO is auto-confirmed)_.
 **Reset flag**		| Select the **Reset flag** button to reset the EDI status to allow for re-sending of the purchase order confirmation to the staging table.
-<ins>**Reference**</ins>	
+<ins>**Reference**</ins>	 |
 **History**		| Select to view EDI records to the purchase order. See [EDI tab - History](#edi-tab--history) for more detail.
 **Trading partners**	| Link to Trading partner page for the purchase order's vendor
 
@@ -73,12 +73,12 @@ The following EDI fields have been added to the Purchase order and Purchase agre
 
 **Field**			| **Description**		| **Populated by** 
 :--				|:--				|:--							  	
-<ins>**Identification**</ins>		|
+<ins>**Identification**</ins>		|     | 
 **Original EDI number**		| EDI Vendor purchase order staging table record id			| Original	
 **Change EDI number**		| Latest EDI Vendor purchase order change staging table record id	| Change
 **Company GLN**			| The company’s global location number is shown here.			| Original
 **Trading partner GLN**		| The vendor’s global location number is shown here         | Trading partner
-<ins>**General**</ins>		
+<ins>**General**</ins>	| | 	
 **Original order date**		| The date the original purchase order version was created is shown here		| Original
 **Change order date**		| The date the latest change purchase order version was created is shown here	| Change
 **Requester**               | Requester sent on outbound EDI purchase order                                 | Original
@@ -87,11 +87,11 @@ The following EDI fields have been added to the Purchase order and Purchase agre
 **Order purpose code**      | Latest order purpose code is shown here: <br> • **Original** - Only the original/one EDI purchase order has been sent <br> •	**Change** - Last EDI message sent was a Purchase order change <br> •	**Confirmation** - Last EDI message sent was a Confirmation for a Purchase order acknowledgement <br> •	**Cancellation** - Last EDI message sent was a Cancellation for the PO  | Original / Change 
 **Bill to**                 | Our account number (as loaded on Vendor’s Invoice account)                    | Original
 **Ship to**                 | Our account number (as loaded on Vendor’s Order account)                      | Original
-<ins>**Delivery**</ins>	
+<ins>**Delivery**</ins>	| | 
 **Site**                    | The Site from the latest EDI purchase order is shown here                     | Original / Change
 **Warehouse**               | The Warehouse from the latest EDI purchase order is shown here                | Original / Change
 **Delivery date**           | The requested receipt date of the latest EDI purchase order is shown here     | Original / Change
-<ins>**Version**</ins>	
+<ins>**Version**</ins>	| | 
 **Original version number** | The D365 purchase order version number that generated the original EDI order record | Original
 **Change version number**   | The D365 purchase order version number that generated the latest change EDI order record    | Change
 **Acknowledged version number** | The version number acknowledged as per Vendor’s last Purchase order acknowledgement     | POA
@@ -104,7 +104,7 @@ The following EDI fields have been added to the Purchase order and Purchase agre
 
 **Field**			| **Description**                                       | **Populated by** 
 :--			     |:--                                                    |:--
-**Line number**     | EDI line number
+**Line number**     | EDI line number | 
 **Original ordered quantity**   | Purchase quantity sent on original EDI purchase order                     | Original purchase order
 **Change ordered quantity**     | Purchase quantity sent on latest change EDI purchase order. <br> Note: Any receipts are deducted on the purchase quantity sent, it only contains the ‘deliver remainder’ at the moment of generating the order change.                              | Change purchase order
 **Original line amount**        | Net line amount excluding tax sent on original EDI purchase order         | Original purchase order
@@ -127,7 +127,7 @@ Once the Vendor purchase order acknowledgement (POA) have been processed, the fo
 
 Example:
 <br>		| EDI order	        | Acknowledged	    | Acknowledgement response	        | Confirmation	    | Auto triggered
-|-          |-                  |-                  |-                                  |-                  |-
+-         |-                     |-                   |-                                     |-                   |-
 **Date**    | 4/12/2019	        | 5/12/2019	        | Header- accepted with reserved    |		            | 
 **Price**	| 40	            | 41	            | Line price – advise	            | 41	            | Yes
 **Quantity**| 100	            | 100	            | Line item – accept	            | 100	            | Yes
