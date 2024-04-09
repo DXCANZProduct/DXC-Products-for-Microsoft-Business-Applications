@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Accounts payable setup - Vendor Payments 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-03-20
+ms.date: 2024-04-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -68,7 +68,7 @@ The Method of payment form is used to set up and generate the EFT file from your
 
 ### File formats
 
-> Note: Recommended to use Generic electronic reporting formats.
+> Note: Recommended to use Generic electronic reporting formats. Only ER formats can be sent to secure location using [Electronic reporting export connections](Save-electronic-reporting-file-to-secure-location.md).
 
 Finance utilities EFT formats: When setting up Vendor **Methods of payment** and setting **Generic electronic Export format** to _No_, Finance utilities currently provides the following export formats:
 - ANZ Direct Credit Service (AU)
