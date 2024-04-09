@@ -127,7 +127,7 @@ Once the Vendor purchase order acknowledgement (POA) have been processed, the fo
 
 Example:
 <br>		| EDI order	        | Acknowledged	    | Acknowledgement response	        | Confirmation	    | Auto triggered
--         |-                     |-                   |-                                     |-                   |-
+:--       |:--                   |:--                 |:--                                   |:--                 |:-- 
 **Date**    | 4/12/2019	        | 5/12/2019	        | Header- accepted with reserved    |		            | 
 **Price**	| 40	            | 41	            | Line price – advise	            | 41	            | Yes
 **Quantity**| 100	            | 100	            | Line item – accept	            | 100	            | Yes
