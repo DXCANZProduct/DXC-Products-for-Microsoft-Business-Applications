@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor Documents - Review purchase order
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2021-11-12
+ms.date: 2024-04-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,7 +42,7 @@ The following buttons have been added to the EDI tab on the Purchase order Actio
 
 **Field**		| **Description**
 :--			|:--
-<ins>**Purchase order confirmation**</ins>	
+<ins>**Purchase order confirmation**</ins>	|
 **Confirmation**	| Option to manually review the purchase order acknowledgement received from the vendor and process the purchase order confirmation to the vendor. The **Send to EDI** option is also included within this [page](Vendor-purchase-order-acknowledgement.md#processing-purchase-order-confirmation-poc).
 **Send to EDI**		| Press this button to manually create the Vendor purchase order confirmation staging record using the confirmed values as per **Confirmation** . This could also be setup to be sent automatically, by setting the Vendor purchase order acknowledgement's **Purchase order confirmation required** to _Yes (PO is auto-confirmed)_.
 **Reset flag**		| Select the **Reset flag** button to reset the EDI status to allow for re-sending of the purchase order confirmation to the staging table.
