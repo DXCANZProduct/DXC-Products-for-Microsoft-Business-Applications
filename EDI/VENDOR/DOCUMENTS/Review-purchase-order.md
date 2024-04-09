@@ -73,7 +73,7 @@ The following EDI fields have been added to the Purchase order and Purchase agre
 
 **Field**			| **Description**		| **Populated by** 
 :--				|:--				|:--							  	
-<ins>**Identification**</ins>		
+<ins>**Identification**</ins>		|
 **Original EDI number**		| EDI Vendor purchase order staging table record id			| Original	
 **Change EDI number**		| Latest EDI Vendor purchase order change staging table record id	| Change
 **Company GLN**			| The company’s global location number is shown here.			| Original
