@@ -35,7 +35,7 @@ The [release notes](Release-notes.md) describes the features that are either new
 
 **Potential of Insights for D365 FO**
 
-Insights will capture data such as user information, time to load, and menu item used. Telemetry is subsequently transmitted through to a logging application. It will record errors, saving error messages and call stacks.  Insights can monitor recurring events and exceptions, even those occurring during Dual-write sync.
+Insights will capture data such as user information, time to load, and menu items used. Telemetry is subsequently transmitted through to a logging application. It will record errors, saving error messages and call stacks.  Insights can monitor recurring events and exceptions, even those occurring during Dual-write sync.
 
 Azure Application Insights has been incorporated as the default logging tool for the out of the box Insights for D365 FO package. Azure Application Insights collects the telemetry and helps analyze the operation and performance of the application. Organizations can use this information to identify problems that might be occurring or to identify improvements to the application that would most affect users.
 
