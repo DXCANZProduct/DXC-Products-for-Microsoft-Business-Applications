@@ -59,7 +59,7 @@ Navigate to **Accounts payable > Purchase orders > All purchase orders**
 - Assign applicable **Shipping company** on the Purchase order header Landed cost FastTab.
 - To create the outbound staging record use either of the following: 
     - **Send to EDI** on the Purchase order's Action Pane, Purchase tab, Landed cost heading
- 	- **Confirmation** or **Confirm** on the Purchase order's Action Pane, Purchase tab
+    - **Confirmation** or **Confirm** on the Purchase order's Action Pane, Purchase tab
 
 ## View staging table records
 To view the Voyage advice staging records, go to **EDI > Documents > Freight forwarder landed cost documents > Voyage advice**. <br>
