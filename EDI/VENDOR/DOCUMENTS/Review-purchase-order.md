@@ -126,7 +126,7 @@ Once the Vendor purchase order acknowledgement (POA) have been processed, the fo
 - Auto triggered - Indicates if the confirmation was auto triggered else it was manually set by a user on the Confirmation button on the EDI Action Pane
 
 Example:
-		| EDI order	        | Acknowledged	    | Acknowledgement response	        | Confirmation	    | Auto triggered
+Tab		| EDI order	        | Acknowledged	    | Acknowledgement response	        | Confirmation	    | Auto triggered
 :--       |:--                   |:--                 |:--                                   |:--                 |:-- 
 **Date**    | 4/12/2019	        | 5/12/2019	        | Header- accepted with reserved    |		            | 
 **Price**	| 40	            | 41	            | Line price – advise	            | 41	            | Yes
