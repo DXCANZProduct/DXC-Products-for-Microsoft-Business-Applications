@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-04-04
+ms.date: 2024-04-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,7 @@ This document describes the features that are either new or changed in the relea
 
 # Next version
 
-### Release 10.0.36.202404TBD
+### Release 10.0.37.202404TBD
 Estimated release date: 30 April 2024
 
 <ins>New features</ins>
