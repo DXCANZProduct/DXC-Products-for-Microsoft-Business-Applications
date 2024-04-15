@@ -5,7 +5,7 @@ title: DXC Finance Utilities - AR Utilities
 description: Customer remittance format setup
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-07-31
+ms.date: 2024-04-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -80,9 +80,9 @@ The mapping is made up of two sections: <br>
 | **Remittance format field**  | **Data management target** |
 :--                     |:--
 **Amount**              | Customer payment journal line entity > Credit
-**Reference number**    | Used to find D365 customer account and populate: Customer payment journal line entity > Ledger account <br> Account type is set to Customer.
+**Reference number**    | Used to find D365 customer account and populate: Customer payment journal line entity > Account <br> Account type is set to Customer.
 **Description**         | Customer payment journal line entity > Description
-**Invoice**             | Customer payment journal line entity > Invoice <br> If Reference number is not used to find Customer, the invoice can also be used to populate: <br> Customer payment journal line entity > Ledger account
+**Invoice**             | Customer payment journal line entity > Invoice <br> If Reference number is not used to find Customer, the invoice can also be used to populate: <br> Customer payment journal line entity > Account
 **Payment reference**   | Customer payment journal line entity > Payment reference
 **Date**                | Customer payment journal line entity > Date - If Methods of payment's **Posting date** is set to use _Remittance transaction date_
 
