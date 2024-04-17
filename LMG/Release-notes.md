@@ -45,6 +45,8 @@ This document describes the features that are either new or changed in the relea
     - [DXC License Manager](#dxc-license-manager-1)
   - [Microsoft Power Apps](#microsoft-power-apps-1)
     - [DXC License Manager Canvas App](#dxc-license-manager-canvas-app-1)
+  - [React Web App](#react-web-app-1)
+    - [DXC License Manager Web App](#dxc-license-manager-web-app-1)
     <!--/TOC-->
 
 # Current version
@@ -90,7 +92,7 @@ DXC License 10.0.34.20231031 runs on the following Microsoft releases
 | Microsoft Dynamics 365 application | 10.0.36 | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36) |
 | Microsoft Dynamics 365 application | 10.0.37 | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37) |
 | Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38) |
-| Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)         |
+| Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39) |
 
 <b>Build 7.0.6931.48 </b>
 
@@ -129,25 +131,17 @@ Release date: 17 July 2023
 
 ### DXC License Manager Web App
 
-#### **Release 20240227.1**
+#### **Release 20240417.1**
 
-Release date: 27 February 2024
+Release date: 17 April 2024
 
 <ins>New features</ins>
 
-| Number | Functionality                                                                     | Description                                                                                                                                                                                                                                                                                                                                       |
-| :----- | :-------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 14177  | React front-end for license management across different ISV partner organisations | New react-based front end has been designed for license management. This will replace the replace the existing PowerApp currently being used for managing customer license information. It includes all the existing functionlity within the PowerApp and some additional features described below in addition to multi-tenancy support           |
-| 15606  | Manage Product Data                                                               | Ability to manage product information.                                                                                                                                                                                                                                                                                                            |
-| 15609  | Manage Customer Data                                                              | Ability to manage customer information.                                                                                                                                                                                                                                                                                                           |
-| 15612  | Manage Customer Product Licenses                                                  | Ability to manage customer product licenses.                                                                                                                                                                                                                                                                                                      |
-| 15612  | Manage Customer Environments level                                                | Ability to customer environments. This functionality has been modified to enable environment management against customer records. In previous version this had to be done on a customer product                                                                                                                                                   |
-| 15621  | Product customers view                                                            | New view to access the list of customers for any product                                                                                                                                                                                                                                                                                          |
-| 15630  | License Expiry view                                                               | View upcoming license expiry information                                                                                                                                                                                                                                                                                                          |
-| 15633  | Single-sign on using organization email account                                   | Ability to sign up and sign in using the organization email account                                                                                                                                                                                                                                                                               |
-| 15636  | Manage user access                                                                | Added new capability for role based accessibility of all views within the app and define access privileges (Create, Read, Update, Delete permissions) for each role and view. Organisation administrators will have full access, can manage user access control and will be able to register or unregistered users within the app to grant access |
-| 16027  | Web App Theme and Styling access                                                  | Added new capability for organization admins to configure the color scheme of the app which is applicable to all users within the organization. Additionally, added ability to update the icon and default landing page upon sign in for the app.                                                                                                 |
-| 16559  | BI Reports                                                                        | New capability that allows organizations to setup and configure their own Power BI reports and configure workspace settings within the web app for viewing Power BI embedded reports. This feature includes report and page level access control within the web app.                                                                              |
+| Number | Functionality                               | Description                                                                                                                                                                                                         |
+| :----- | :------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 17299  | Modify expiry date from Licence Expiry View | Added ability to modify the expiry date of products assigned to customer from the license expiry view                                                                                                               |
+| 1727   | Enable default filter for Products view     | Added ability to define default filters for Products view which can be applied to all users. This will ensure that users are only able to view the accessible data while admins will still have access to all data. |
+| 17048  | Power BI Tiles                              | Added ability to configure and access tiles within the web app (access controlled).                                                                                                                                 |
 
 # Previous version(s)
 
@@ -276,3 +270,27 @@ Release date: 31 March 2023
 | Number | Functionality                                   | Description                                                                                                                                                                                                                                                |
 | :----- | :---------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 13085  | Enable multi-tenant support for license manager | - Enabled multi-tenant-based license manager views to display tenant specific data in correlation to the database instance for each unique tenant GUID <br> - Updated framework for data processing within Power Apps to use APIM using OAuth credentials. |
+
+## React Web App
+
+### DXC License Manager Web App
+
+#### **Release 20240227.1**
+
+Release date: 27 February 2024
+
+<ins>New features</ins>
+
+| Number | Functionality                                                                     | Description                                                                                                                                                                                                                                                                                                                                       |
+| :----- | :-------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 14177  | React front-end for license management across different ISV partner organisations | New react-based front end has been designed for license management. This will replace the replace the existing PowerApp currently being used for managing customer license information. It includes all the existing functionlity within the PowerApp and some additional features described below in addition to multi-tenancy support           |
+| 15606  | Manage Product Data                                                               | Ability to manage product information.                                                                                                                                                                                                                                                                                                            |
+| 15609  | Manage Customer Data                                                              | Ability to manage customer information.                                                                                                                                                                                                                                                                                                           |
+| 15612  | Manage Customer Product Licenses                                                  | Ability to manage customer product licenses.                                                                                                                                                                                                                                                                                                      |
+| 15612  | Manage Customer Environments level                                                | Ability to customer environments. This functionality has been modified to enable environment management against customer records. In previous version this had to be done on a customer product                                                                                                                                                   |
+| 15621  | Product customers view                                                            | New view to access the list of customers for any product                                                                                                                                                                                                                                                                                          |
+| 15630  | License Expiry view                                                               | View upcoming license expiry information                                                                                                                                                                                                                                                                                                          |
+| 15633  | Single-sign on using organization email account                                   | Ability to sign up and sign in using the organization email account                                                                                                                                                                                                                                                                               |
+| 15636  | Manage user access                                                                | Added new capability for role based accessibility of all views within the app and define access privileges (Create, Read, Update, Delete permissions) for each role and view. Organisation administrators will have full access, can manage user access control and will be able to register or unregistered users within the app to grant access |
+| 16027  | Web App Theme and Styling access                                                  | Added new capability for organization admins to configure the color scheme of the app which is applicable to all users within the organization. Additionally, added ability to update the icon and default landing page upon sign in for the app.                                                                                                 |
+| 16559  | BI Reports                                                                        | New capability that allows organizations to setup and configure their own Power BI reports and configure workspace settings within the web app for viewing Power BI embedded reports. This feature includes report and page level access control within the web app.                                                                              |
