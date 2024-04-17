@@ -296,6 +296,10 @@ For details on how to the data table functions see [Data table properties](#data
 
 ![](./IMAGES/WebApp/Img_19.png)
 
+**View/Update**  
+Allows users to view or update the license expiry details.
+![](./IMAGES/WebApp/Img_29.png)
+
 **Filter options:**
 
 - This Week
@@ -317,12 +321,15 @@ This section describes the reports accessible within the app
 
 App Bar Menu Item Name - **_Power BI_**
 
-On load, displays the list of reports accessible to the user.
+On load, displays the list of tiles and reports accessible to the user seperated by tabs.
 
 ![](./IMAGES/WebApp/Img_28.png)
 
-Select each report in the list to view the Power BI report in embedded view.
+Select each report to view the list of report pages
+![](./IMAGES/WebApp/Img_31.png)
 
+Select each item in the list to view the Power BI report in embedded view.
+![](./IMAGES/WebApp/Img_30.png)
 ![](./IMAGES/WebApp/Img_27.png)
 
 These reports are embedded using service principal and requires Power BI Pro license. User license is not required.
