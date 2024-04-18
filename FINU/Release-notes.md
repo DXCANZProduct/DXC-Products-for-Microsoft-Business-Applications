@@ -121,7 +121,9 @@ This section describes the features that have been removed, or planned to be rem
 
 # Previous version(s)
 
-Approximately two year of previous versions are included below.
+Approximately one year of previous versions are included below.
+
+### Release 10.0.36.20231116
 
 #### Build 10.0.36.2023111671
 Release date: 2 February 2024 <br>
