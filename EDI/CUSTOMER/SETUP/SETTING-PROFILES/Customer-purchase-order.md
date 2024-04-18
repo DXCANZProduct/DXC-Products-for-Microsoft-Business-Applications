@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Setup - Document type Setting profiles - Customer purchase order
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-04-04
+ms.date: 2024-04-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,7 +43,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Blank unit**    | Populate D365 sales order line's **Unit** with one of these options when the staging line's Unit is blank |  • **Sales unit** - Populate with item's sales unit <br> • **Sales trade agreement unit** - Populate with applicable sales trade agreement unit. Where the **Item id source** is set to _Barcode_ or _GTIN_, the Unit from Barcode and GTIN will be used. Where the **Item id source** is _Our item number_ or _External item number_ and no applicable sales trade agreement is found, the product's _Sales unit_ will be used. <br> • **Inventory unit** - Populate with item's inventory unit <br> • **Error** - Errors the complete staging record
 **Price includes tax**  |	Specify if the price (line amount &/or unit price) received from the Customer includes tax 	  | Yes/No
 **Use Customer Price**  |	Select this flag to use the customer's price on the sales order	                              | • **Yes**: If there is a variance between the trade agreement /list price stored in D365 and the Customers price received in the purchase order, the purchase order will be used if within the variance range. <br> • **No**: System price will be used when creating the sales order.
-**Price variance type** | Select if **Maximum negative price variance** and **Maximum positive price variance** is based on **Amount** or **Percentage**. For example 1 could be $1 or 1% variance compared to system unit price.
+**Price variance type** | Select if **Maximum negative price variance** and **Maximum positive price variance** is based on **Amount** or **Percentage**. For example 1 could be $1 or 1% variance compared to system unit price. | • Amount <br> • Percentage
 **Maximum negative price variance** |	Where **Use Customer Price** is set to _Yes_: <br> Specify the maximum negative price variance that can occur without warning. 	| It is recommended that these settings are set to at least 0.01 if the '**Price include tax** is ticked' to avoid any rounding differences between the two solutions being flagged.
 **Maximum positive price variance** | Where **Use Customer Price** is set to _Yes_: <br> Specify the maximum positive price variance that can occur without warning	| It is recommended that these settings are set to at least 0.01 if the 'include tax flag is ticked' to avoid any rounding differences between the two solutions being flagged.
 **Create release order without blanket order** | The action taken when a release order is received without a blanket order	| •	**No** - do not allow the release order <br> •	**Yes** - allow the release order <br> •	**Warning** - allow the release order with a warning message
