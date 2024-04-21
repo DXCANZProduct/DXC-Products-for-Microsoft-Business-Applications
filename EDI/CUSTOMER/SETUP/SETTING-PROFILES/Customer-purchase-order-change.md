@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Setup - Document type Setting profiles - Customer purchase order change
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-06-28
+ms.date: 2024-04-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -54,6 +54,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**. <br
 <ins>**Prices**</ins>   |   |
 **Price includes tax**  |	Specify if the price (line amount &/or unit price) received from the Customer includes tax 	  | Yes/No
 **Use Customer Price**  |	Select this flag to use the customer's price on the sales order	                              | • **Yes**: If there is a variance between the trade agreement /list price stored in D365 and the Customers price received in the purchase order, the purchase order will be used if within the variance range. <br> • **No**: System price will be used when creating the new or updating an existing sales order line.
+**Price variance type** | Select if **Maximum negative price variance** and **Maximum positive price variance** is based on **Amount** or **Percentage**. For example 1 could be $1 or 1% variance compared to system unit price. | • Amount <br> • Percentage
 **Maximum negative price variance** |	Where **Use Customer Price** is set to _Yes_: <br> Specify the maximum negative price variance that can occur without warning. 	| It is recommended that these settings are set to at least 0.01 if the '**Price include tax** is ticked' to avoid any rounding differences between the two solutions being flagged.
 **Maximum positive price variance** | Where **Use Customer Price** is set to _Yes_: <br> Specify the maximum positive price variance that can occur without warning	| It is recommended that these settings are set to at least 0.01 if the 'include tax flag is ticked' to avoid any rounding differences between the two solutions being flagged.
 <ins>**Quantities**</ins>   |   |
