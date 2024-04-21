@@ -5,7 +5,7 @@ title: EDI Vendor
 description: EDI Vendor Setup - Document type Setting profiles - Vendor purchase order acknowledgement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-04-04
+ms.date: 2024-04-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,7 +42,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Item ID source**  |	Determine the method of item identification used by this vendor when selling products	  | •	**Our Item number** - this is the item ID on the items form <br> •	**External item number** - this is the item Id on the vendor external item form <br> •	**GTIN** - this is the GTIN assigned to an item <br> •	**Barcode** - This is the Barcode assigned to an item.
 **Price includes sales tax**  |	Specify if the unit price received from the Vendor includes tax	  | •	**As per purchase order** – The vendor is setup in D365 to match vendor’s method of including/excluding tax in pricing <br> •	**Excluding tax** – Vendor sends pricing excluding tax <br> •	**Including tax** – Vendor sends pricing including tax
 **Use vendor price**  |	Select this flag to use the vendor's price on the purchase order	        | •	**Yes** - If there is a variance between the trade agreement /list price stored in D365 and the Vendor’s price received in the purchase order acknowledgement, the vendors price will be used if within the variance range. <br> • **No** - Use system price
-**Price variance type** | Select if **Maximum negative price variance** and **Maximum positive price variance** is based on **Amount** or **Percentage**. For example 1 could be $1 or 1% variance compared to system unit price.
+**Price variance type** | Select if **Maximum negative price variance** and **Maximum positive price variance** is based on **Amount** or **Percentage**. For example 1 could be $1 or 1% variance compared to system unit price. | • Amount <br> • Percentage
 **Maximum negative price variance** |	Where **Use Vendor Price** is set to _Yes_: <br> Specify the maximum negative price variance that can occur without warning. 	| It is recommended that these settings are set to at least 0.01 if POA pricing has to be converted to PO pricing (include/exclude tax) to avoid any rounding differences between the two solutions being flagged.
 **Maximum positive price variance** |	Where **Use Vendor Price** is set to _Yes_: <br> Specify the maximum positive price variance that can occur without warning	  | It is recommended that these settings are set to at least 0.01 if POA pricing has to be converted to PO pricing (include/exclude tax) to avoid any rounding differences between the two solutions being flagged.
 **Package size – inner/outer**      |	Specify if the inner or outer pack quantity is sent on the purchase order confirmation	| •	Inner <br> •	Outer
