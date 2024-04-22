@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-04-12
+ms.date: 2024-04-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -77,6 +77,7 @@ Number	| Name		 | Description
 10755	| Vendor purchase order change | Fix to **Acknowledgement required**. If set to _Yes_, Purchase order's: <br> • **Approval status** set to _In external review_ <br> • **Acknowledgement status** set to _Acknowledgement pending_
 16510	| Vendor purchase order change | Previously Vendor purchase order change line field **Requested receipt date** was set to POA's _Confirmed delivery date_. <br> Thus if PO line's **Requested receipt date** was manually overridden on the PO line after receiving the POA, this change didn't reflect in the Vendor purchase order change record. <br> Changes: <br> • New header and line field **Confirmed receipt date** - Source is Purchase order's Confirmed receipt date <br> • Existing header and line field **Requested receipt date** - Updated source is Purchase order's Requested receipt date <br> <br> • Processing Confirmation: <br> • Requested receipt date - Default is system delivery date. <br> • **Use vendor date** sets the Requested receipt date to Vendor's acknowledged delivery date from the POA <br> ![Confirmation](RELEASE-NOTES-IMAGES/20240430_5.png "Confirmation")  
 16785	| Vendor purchase order change | Incorrect order line change type **Delete items** assigned where line's Deliver remainder is zero because of full receipt.
+17307	| Vendor purchase order change | • When cancelled purchase order change is sent to vendor, and the vendor accepts the cancel in the returned POA: it shouldn't send another Vendor purchase order change with purpose Confirmation back to vendor <br> • When cancelling the complete purchase order and the 'Acknowledgement required' = Yes on Vendor purchase order change, the Purchase order's Approval status should be 'In external review', not 'Approved'. <br> • Cancel's 'Send to EDI' will now also default to No, since std prompts user to confirm the order again, which will result in the cancellation sent twice to the vendor.
 
 
 **3PL module**
