@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Inventory adjustment - Transfer
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-15
+ms.date: 2024-04-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,9 +31,13 @@ ms.dyn365.ops.version:  AX 7.0.1
 
 A 3PL warehouse, setup as an EDI trading partner, can send inventory adjustments in order to adjust the company's D365 on-hand for their warehouse.
 
-Processing the **Inventory adjustment - Transfer** document creates a transfer journal for the stock in the D365 warehouse transferring the stock between:
-- Batches
-- Inventory statuses
+Processing the **Inventory adjustment - Transfer** document creates a transfer journal for the stock in the D365 warehouse transferring the stock between **From inventory dimensions** to **To inventory dimensions**:
+
+**Transfer between**         |	**Applicable EDI staging line fields**             
+:--                          |:--                                           
+Batches                      | From batch number > To batch number         
+Inventory statuses           | Inventory status from > Inventory status to
+Locations                    | From location > To location
 
 Optional document settings also allows for automatically posting the transfer journal and creating the batch if it doesn't exist in D365.
 
@@ -195,3 +199,6 @@ The following EDI Line fields are available on the lines page. <br>
 **Expiration date**         | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an already D365 batch.	| Batches > Expiration date
 **Inventory status from**   | Storage dimensions – Inventory status. <br> Mapped value for [Inventory status](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) | Transfer journal line > From Inventory status
 **Inventory status to**     | Storage dimensions – Inventory status. <br> Mapped value for [Inventory status](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) | Transfer journal line > To Inventory status
+**From location**           | Storage dimensions – From location                                        | Transfer journal line > From location
+**To location**             | Storage dimensions – To location                                          | Transfer journal line > To location
+
