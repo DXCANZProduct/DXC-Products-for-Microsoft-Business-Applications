@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-04-22
+ms.date: 2024-04-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,6 +43,7 @@ Estimated release date: 30 April 2024
 Number	| Name		 | Description
 :--	|:--		  	|:--
 17434	| SFTP connection	| Upgrade SFTP SSH.NET to latest [2024.0.0](https://github.com/sshnet/SSH.NET/releases/tag/2024.0.0) release
+16962   | Connections | Increase EDT for usernames, passwords (sftp, ftp) and storage account name, storage account key (Azure blob)
 
 **Customer module**	
 
@@ -55,6 +56,13 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 17004	| Vendor purchase order acknowledgement | New document setting **Price variance type** with options **Amount** and **Percentage**. <br> Previously the **Maximum negative price variance** and **Maximum positive price variance** values were only in Amount. <br> Price variance type now allows **Percentage** option as well with this new document setting. <br> [User guide](VENDOR/SETUP/SETTING-PROFILES/Vendor-purchase-order-acknowledgement.md) <br>  ![Price variance type](RELEASE-NOTES-IMAGES/20240430_3.png "Price variance type")
+
+**3PL module**
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+17506	| Inventory adjustment - Transfer	| Ability to transfer between locations for the 3PL warehouse. <br> Additional fields: <br> • From location <br> • To location
+
 
 **Freight forwarder landed cost module**
 
