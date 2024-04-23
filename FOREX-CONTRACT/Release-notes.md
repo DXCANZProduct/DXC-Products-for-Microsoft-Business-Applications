@@ -1,11 +1,11 @@
----
+![image](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/assets/59988997/19119290-27ae-4bce-932c-177d943ad190)---
 # required metadata
 
 title: Forex contract
 description: Forex contract - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-10-04
+ms.date: 2024-04-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,6 +29,19 @@ ms.dyn365.ops.version: AX 7.0.1
 # Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
+# Next version
+
+### Release 10.0.37.202404TBD
+Estimated release date: 30 April 2024
+
+<ins>New features</ins>
+
+Number	| Functionality	  	| Description
+:--	|:--		  	|:--	
+17422		| N/A		| Update to **Table groups** to support "transaction" types being truncated in copy environment feature via Power platform admin center.
+
+
+
 # Current version
 
 ### Release 10.0.34.20230615
@@ -48,9 +61,16 @@ Release date: 15 June 2023
 
 <ins>New features</ins>
 
-Number	| Functionality	  	| Reason
+Number	| Functionality	  	| Description
 :--	|:--		  	|:--	
 N/A	| DXC License		| DXC License version 10.0.34.202306151
+
+<ins>Bug fixes</ins>
+
+Number	| Functionality	  	| Description
+:--	|:--		  	|:--	
+17624	| Workflow automated posting	| Instead of using linked Forex contract rate, the system spot rate was used when purchase invoice is submitted to workflow that automatically posts the invoice
+
 
 # Previous version(s)
 
