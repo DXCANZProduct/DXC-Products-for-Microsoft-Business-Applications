@@ -38,7 +38,7 @@ Estimated release date: 30 April 2024
 
 Number	| Functionality	  	| Description
 :--	|:--		  	|:--	
-17422		| N/A		| Update to **Table groups** to support "transaction" types being truncated in copy environment feature via Power platform admin center.
+17423 	| N/A		| Update to **Table groups** to support "transaction" types being truncated in copy environment feature via Power platform admin center.
 
 <ins>Bug fixes</ins>
 
