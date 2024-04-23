@@ -1,4 +1,4 @@
-![image](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/assets/59988997/19119290-27ae-4bce-932c-177d943ad190)---
+---
 # required metadata
 
 title: Forex contract
