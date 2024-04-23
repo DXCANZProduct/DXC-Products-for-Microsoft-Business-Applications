@@ -40,7 +40,11 @@ Number	| Functionality	  	| Description
 :--	|:--		  	|:--	
 17422		| N/A		| Update to **Table groups** to support "transaction" types being truncated in copy environment feature via Power platform admin center.
 
+<ins>Bug fixes</ins>
 
+Number	| Functionality	  	| Description
+:--	|:--		  	|:--	
+17624	| Workflow automated posting	| Instead of using linked Forex contract rate, the system spot rate was used when purchase invoice is submitted to workflow that automatically posts the invoice
 
 # Current version
 
@@ -65,11 +69,6 @@ Number	| Functionality	  	| Description
 :--	|:--		  	|:--	
 N/A	| DXC License		| DXC License version 10.0.34.202306151
 
-<ins>Bug fixes</ins>
-
-Number	| Functionality	  	| Description
-:--	|:--		  	|:--	
-17624	| Workflow automated posting	| Instead of using linked Forex contract rate, the system spot rate was used when purchase invoice is submitted to workflow that automatically posts the invoice
 
 
 # Previous version(s)
