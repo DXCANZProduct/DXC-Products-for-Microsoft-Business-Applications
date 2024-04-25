@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-04-23
+ms.date: 2024-04-26
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,6 +39,7 @@ Estimated release date: 30 April 2024
 Number	| Functionality	  	| Description
 :--	|:--		  	|:--	
 17423 	| N/A		| Update to **Table groups** to support "transaction" types being truncated in copy environment feature via Power platform admin center.
+17674	| Link to forex contract | Improved error message to include reason 'Invoice is not populated' when unable to link forex contract to invoice journal line where an invoice wasn't populated.
 
 <ins>Bug fixes</ins>
 
