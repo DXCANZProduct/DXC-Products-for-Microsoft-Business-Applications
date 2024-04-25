@@ -55,9 +55,9 @@ This document describes the features that are either new or changed in the relea
 
 ### DXC License Manager
 
-#### **Release 10.0.32.20230731**
+#### **Release 10.0.37.TBA**
 
-DXC License Manager 10.0.32.20230731 runs on the following Microsoft releases
+DXC License Manager 10.0.37.TBA runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                                 |
 | :--------------------------------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -70,20 +70,19 @@ DXC License Manager 10.0.32.20230731 runs on the following Microsoft releases
 | Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)         |
 | Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)         |
 
-<b>Build 7.0.6801.37 </b>
+<b>Build TBA </b>
 
 <ins>New features</ins>
 
-| Number | Functionality                                                   | Description                                                                                                                                                                  |
-| :----- | :-------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 15113  | Feature disabling based on disable date not working             | A fix has been made to force disable a feature using the expiry date and feature disable dates configured in backed for license controlled products with feature management. |
-| 15116  | Inclusion of additonal endpoint for non-production environments | An additional domain has been added to mark development environments as non-production within the IsProductEnvironment telemetry for app insights logging.                   |
+| Number | Functionality               | Description                                                                                                                            |
+| :----- | :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| 17724  | License manager improvement | Added exception handling improvements to force feature disbler functionality and included telemetry for license manager model versions |
 
 ### DXC License
 
-#### **Release 10.0.34.20231031**
+#### **Release 10.0.37.TBA**
 
-DXC License 10.0.34.20231031 runs on the following Microsoft releases
+DXC License 10.0.37.TBA runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                         |
 | :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -94,13 +93,14 @@ DXC License 10.0.34.20231031 runs on the following Microsoft releases
 | Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38) |
 | Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39) |
 
-<b>Build 7.0.6931.48 </b>
+<b>Build TBA </b>
 
 <ins>New features</ins>
 
-| Number | Functionality | Description                                                          |
-| :----- | :------------ | :------------------------------------------------------------------- |
-| 16411  | DXC License   | DXC License including feature managed SmartSend and Core extensions. |
+| Number | Functionality                | Description                                            |
+| :----- | :--------------------------- | :----------------------------------------------------- |
+| 17724  | License manager improvements | Fixed label issues for feature disabled notifications. |
+| 16778  | Data Anonymization Feature   | Added new feature key for data anonymization.          |
 
 ## Microsoft Power Apps
 
@@ -148,6 +148,30 @@ Release date: 17 April 2024
 ## D365 Finance and Operations
 
 ### DXC License Manager
+
+#### **Release 10.0.32.20230731**
+
+DXC License Manager 10.0.32.20230731 runs on the following Microsoft releases
+
+| Base                               | Version | Release                                                                                                                                                                 |
+| :--------------------------------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft Dynamics 365 application | 10.0.32 | [What’s new or changed in Dynamics 365 application version 10.0.32](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-32)         |
+| Microsoft Dynamics 365 application | 10.0.33 | [What’s new or changed in Dynamics 365 application version 10.0.33](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-changed-10-0-33) |
+| Microsoft Dynamics 365 application | 10.0.34 | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)         |
+| Microsoft Dynamics 365 application | 10.0.35 | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)         |
+| Microsoft Dynamics 365 application | 10.0.36 | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)         |
+| Microsoft Dynamics 365 application | 10.0.37 | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)         |
+| Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)         |
+| Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)         |
+
+<b>Build 7.0.6801.37 </b>
+
+<ins>New features</ins>
+
+| Number | Functionality                                                   | Description                                                                                                                                                                  |
+| :----- | :-------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 15113  | Feature disabling based on disable date not working             | A fix has been made to force disable a feature using the expiry date and feature disable dates configured in backed for license controlled products with feature management. |
+| 15116  | Inclusion of additonal endpoint for non-production environments | An additional domain has been added to mark development environments as non-production within the IsProductEnvironment telemetry for app insights logging.                   |
 
 #### **Release 10.8.32.10171**
 
@@ -214,6 +238,29 @@ Release date: 17 April 2024
 | Number | Functionality                                               | Description                                                                                                                                            |
 | :----- | :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 40     | Fixed synchronisation issues when performing license checks | Users experienced info logs stating the product is enabled but not licensed even though the product is licensed. This issues persisted intermittently. |
+
+### DXC License
+
+#### **Release 10.0.34.20231031**
+
+DXC License 10.0.34.20231031 runs on the following Microsoft releases
+
+| Base                               | Version | Release                                                                                                                                                         |
+| :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft Dynamics 365 application | 10.0.34 | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34) |
+| Microsoft Dynamics 365 application | 10.0.35 | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35) |
+| Microsoft Dynamics 365 application | 10.0.36 | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36) |
+| Microsoft Dynamics 365 application | 10.0.37 | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37) |
+| Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38) |
+| Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39) |
+
+<b>Build 7.0.6931.48 </b>
+
+<ins>New features</ins>
+
+| Number | Functionality | Description                                                          |
+| :----- | :------------ | :------------------------------------------------------------------- |
+| 16411  | DXC License   | DXC License including feature managed SmartSend and Core extensions. |
 
 ## Microsoft Power Apps
 
