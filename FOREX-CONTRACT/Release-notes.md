@@ -45,6 +45,8 @@ Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dyn
 #### Build 10.0.37.202404261
 Release date: 26 April 2024
 
+<ins>New features</ins>
+
 Number	| Functionality	  	| Description
 :--	|:--		  	|:--	
 17423 	| N/A			| Update to **Table groups** to support "transaction" types being truncated in copy environment feature via Power platform admin center.
