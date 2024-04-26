@@ -55,9 +55,9 @@ This document describes the features that are either new or changed in the relea
 
 ### DXC License Manager
 
-#### **Release 10.0.37.TBA**
+#### **Release 10.0.37.202404261**
 
-DXC License Manager 10.0.37.TBA runs on the following Microsoft releases
+DXC License Manager 10.0.37.202404261 runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                                 |
 | :--------------------------------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -70,19 +70,19 @@ DXC License Manager 10.0.37.TBA runs on the following Microsoft releases
 | Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)         |
 | Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)         |
 
-<b>Build TBA </b>
+<b>Build 7.0.7068.67 </b>
 
 <ins>New features</ins>
 
-| Number | Functionality               | Description                                                                                                                            |
-| :----- | :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
-| 17724  | License manager improvement | Added exception handling improvements to force feature disbler functionality and included telemetry for license manager model versions |
+| Number | Functionality                | Description                                                                                                                             |
+| :----- | :--------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+| 17724  | License manager improvements | Added exception handling improvements to force feature disabler functionality and included telemetry for license manager model versions |
 
 ### DXC License
 
-#### **Release 10.0.37.TBA**
+#### **Release 10.0.37.202404261**
 
-DXC License 10.0.37.TBA runs on the following Microsoft releases
+DXC License 10.0.37.202404261 runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                         |
 | :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -93,7 +93,7 @@ DXC License 10.0.37.TBA runs on the following Microsoft releases
 | Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38) |
 | Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39) |
 
-<b>Build TBA </b>
+<b>Build 7.0.7068.67 </b>
 
 <ins>New features</ins>
 
