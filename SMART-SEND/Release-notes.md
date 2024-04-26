@@ -44,16 +44,21 @@ Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 
-#### Build 10.0.37.202403262
+#### Build 10.0.37.202403263
 
 <ins>Bug fixes</ins>
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-17433	    | Report  is not setup for Smart Send| If a default report does not exist Smart Send will attempt to find the report by name.|
+16730	    | Smart Send License error| When users switched to the Feature management version of Smart Send they would receive an error advising the product was not licensed.  This has now been corrected and users should no longer receive errors when upgrading from a non-feature-managed version of Smart Send|
+17433	    | Report  is not set for Smart Send| If a default report has not been set in the Email Parameters and more than 1 report format per report is in use Smart Send will now attempt to find the report by name.|
+17623	    | Error Saving to Azure Storage| When the Company logo placeholder is used as part of an organisational email template some characters are being passed through as part of the Metadata that are not supported by Azure Blob storage.  This resulted in an error being displayed referring users to LCS. This has now  been updated and no Image metadata is passed through to Azure|
 
+<ins>New features</ins>
 
-
+Number	  | Name	          | Description
+:--       |:--              |:--
+17724		| Licensing	| Improvements to licensing - see [Licensing release notes](../LMG/Release-notes.md#release-10037202404262) for detailed information.
 
 ## Feature management
 From 10.0.34.20231026 Smart Send can be enabled via Feature management
@@ -100,7 +105,7 @@ Number	  | Name	          | Description
 Number	  | Name	          | Description
 :--       |:--              |:--
 12885	    | Sales agreement - Confirmation issues error TTSBEGIN/TTSCOMMIT| When posting a Confirmation on the Sales agreement form and you set  print to Yes, the “TTSBEGIN/TTSCOMMIT” error will no longer be displayed.
-13553	    | Final recipient missing semicolon in email address| When using the "Both" Selection under recipient for purchase order confirmations the final recipient would not have the semi-colon before the email address. With this correction, all email recipients are formatted correctly, and emails are delivered as per standard behavior.  
+13553	    | Final recipient missing semicolon in email address| When using the "Both" Selection under recipient for purchase order confirmations the final recipient would not have the semi-colon before the email address. With this correction, all email recipients are formatted correctly, and emails are delivered as per standard behaviour.  
 13707	    | Error on customer payment journal when processing Smart Send Email | When making multiple payments to a single Customer account in the customer payment journal only the first line will process the correct attachment.  This has now been corrected and each line will be sent to the related Smart Send contacts with the correct attachment.
 14831	    | Centralized payment only utilized set up from creation legal entity | When utilizing the Centralized Payment Functionality for Vendor Payment Journals Smart Send would utilize set up from the current legal entity.  This has been updated and centralized payment now can utilize Smart Send templates from multiple legal entities when making centralized vendor payments.
 13707	    | Smart Send does not recognize the difference between a free text invoice and a customer invoice on Invoice Journal | When issuing a Free Text Invoice utilizing the Tax Invoice Journal (Accounts receivable>Enquiries and reports> Invoices >Invoice Journal) a "Report is not setup for Smart Send" Error would appear if the Legal entity did not have a Customer Invoice report set as well.  This has been corrected and both Free text and Customer Invoice can be issued with independent templates.
@@ -110,7 +115,7 @@ Number	  | Name	          | Description
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-16329	    | GER payment advice - Duplicated lines and wrong recipient | When payment journal contains two lines (two different vendors), when both are lines selected the ‘Smart send payment advice’ functionality created an email to only one vendor and it sent the other vendor’s payment advice to the wrong vendor. The settled invoices lines were also duplicated. This previously applied to customer and vendor payments and has been corrected.
+16329	    | GER payment advice - Duplicated lines and wrong recipient | When the payment journal contains two lines (two different vendors), when both are lines selected the ‘Smart send payment advice’ functionality created an email to only one vendor and it sent the other vendor’s payment advice to the wrong vendor. The settled invoices lines were also duplicated. This previously applied to customer and vendor payments and has been corrected.
 
 <ins>New features</ins>
 
