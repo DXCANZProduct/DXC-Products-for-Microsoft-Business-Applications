@@ -29,17 +29,28 @@ ms.dyn365.ops.version: AX 7.0.1
 # Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-# Next version
+# Current version
 
-### Release 10.0.37.202404TBD
-Estimated release date: 30 April 2024
+### Release 10.0.37.20240426
 
-<ins>New features</ins>
+DXC Forex contract 10.0.37 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
+Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
+Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
+
+
+#### Build 10.0.37.202404261
+Release date: 26 April 2024
 
 Number	| Functionality	  	| Description
 :--	|:--		  	|:--	
-17423 	| N/A		| Update to **Table groups** to support "transaction" types being truncated in copy environment feature via Power platform admin center.
+17423 	| N/A			| Update to **Table groups** to support "transaction" types being truncated in copy environment feature via Power platform admin center.
 17674	| Link to forex contract | Improved error message to include reason 'Invoice is not populated' when unable to link forex contract to invoice journal line where an invoice wasn't populated.
+16365	| Security		| Set Maintain and View User License to None
+17724	| Licensing		| Improvements to licensing - see [Licensing release notes](../LMG/Release-notes.md#release-10037202404262) for detailed information.
 
 <ins>Bug fixes</ins>
 
@@ -47,19 +58,11 @@ Number	| Functionality	  	| Description
 :--	|:--		  	|:--	
 17624	| Workflow automated posting	| Instead of using linked Forex contract rate, the system spot rate was used when purchase invoice is submitted to workflow that automatically posts the invoice
 
-# Current version
+
+
+# Previous version(s)
 
 ### Release 10.0.34.20230615
-
-DXC Forex contract 10.0.34 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
-Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
-Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
-Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
-
 
 #### Build 10.0.34.202306151
 Release date: 15 June 2023
@@ -69,10 +72,6 @@ Release date: 15 June 2023
 Number	| Functionality	  	| Description
 :--	|:--		  	|:--	
 N/A	| DXC License		| DXC License version 10.0.34.202306151
-
-
-
-# Previous version(s)
 
 ### Release 10.0.29.20230510
 
