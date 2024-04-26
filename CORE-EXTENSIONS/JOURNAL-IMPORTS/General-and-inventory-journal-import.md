@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # General and Inventory Journal Import
 ## Overview
-The Import Journal functionality provides a user-friendly method to import general journal and inventory journal transaction data from Excel or CSV files. All the standard validation and defaulting will occur. Both General Journals and Inventory Journals are supported. The imports are based on Data Entities and allows configuration of new templates to be imported.
+The Import Journal functionality provides a user-friendly method to import general journal and inventory journal transaction data from Excel or CSV files. All the standard validation and defaulting will occur in the same was as the Data Management Framework (DMF). Both General Journals and Inventory Journals are supported. The imports are based on Data Entities and allow configuration of new templates to be imported.
 
 Benefits:
 * User friendly to import rather than having to open and paste into Excel adding or using the data management workspace
@@ -109,9 +109,9 @@ To import the journals;
     * **Inventory movement** - Inventory management > Periodic tasks > Import inventory movement journal
 2. Select the import processing group created, upload a file and click OK.
 
-When you click OK, the system will run the process in asynchronous mode (background). You will be redirected to the execution history. Click on the refresh button at the top to see latest status. 
+When you click OK, the system will run the process in asynchronous mode (background). You will be redirected to the execution history. Click on the refresh button at the top to see the latest status. 
 
-*Note: The inventory movement journal import uses the Inventory movement journal headers and lines V3 data entity which as standard loads the data based on the scenario where if an existing Inventory Movement Journal with less than 1,000 lines is “Not posted”, the imported lines will be appended to the existing journal, otherwise a new journal will be created.*
+*Note: The inventory movement journal import uses the Inventory movement journal headers and lines V4 data entity which as standard loads the data based on the scenario where if an existing Inventory Movement Journal with less than 1,000 lines is “Not posted”, the imported lines will be appended to the existing journal, otherwise a new journal will be created.*
 
 ## Data entities
 - Inventory adjustment journal headers and lines V2 entity
