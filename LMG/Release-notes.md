@@ -36,9 +36,9 @@ This document describes the features that are either new or changed in the relea
 
 ### DXC License Manager
 
-#### **Release 10.0.37.202404261**
+#### **Release 10.0.37.202404262**
 
-DXC License Manager 10.0.37.202404261 runs on the following Microsoft releases
+DXC License Manager 10.0.37.202404262 runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                                 |
 | :--------------------------------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
