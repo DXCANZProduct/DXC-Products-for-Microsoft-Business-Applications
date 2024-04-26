@@ -34,7 +34,7 @@ This document describes the features that are either new or changed in the relea
 
 ### Release 10.0.37.20240325
 
-DXC Finance Utilities 10.0.36 runs on the following Microsoft releases
+DXC Finance Utilities 10.0.37 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
