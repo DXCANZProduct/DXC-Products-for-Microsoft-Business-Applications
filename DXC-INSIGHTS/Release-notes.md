@@ -32,16 +32,30 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.36.202403261
+### Release 10.0.37.202404291
 
 Insights for D365 FO 10.0.36 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
 Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
+
+#### Build 10.0.37.202404291
+Release date: 29 April 2024
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+17544	| Data management framework (DMF) monitoring with Insights for D365 FO	| Add Telemetry logging support for all Data management framework (DMF) events and exceptions. Refer to [Insights for D365 FO Parameters](./setup.md#3-insights-for-d365-fo-parameters) 
+17464	| Feature state monitoring with Insights for D365 FO	| Add Telemetry logging support for logging feature state changes. Refer to [Insights for D365 FO Parameters](./setup.md#3-insights-for-d365-fo-parameters)
+17025	| Capture feature name within Page views monitoring | Add a custom dimension capturing the feature name within page views monitoring
+
+# Previous Version(s)
+
+### Release 10.0.36.202403261
 
 #### Build 10.0.36.202403261
 Release date: 02 April 2024
@@ -50,8 +64,8 @@ Release date: 02 April 2024
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-17151	| OData Event logging with Insights for D365 FO	| Add Telemetry logging support for all OData CRUD (Create, Read, Update, Delete) events. 
-17456	| Batch Task monitoring with Insights for D365 FO	| Add Telemetry logging support for batch tasks.
+17151	| OData Event logging with Insights for D365 FO	| Add Telemetry logging support for all OData CRUD (Create, Read, Update, Delete) events. Refer to [Insights for D365 FO Parameters](./setup.md#3-insights-for-d365-fo-parameters)
+17456	| Batch Task monitoring with Insights for D365 FO	| Add Telemetry logging support for batch tasks. Refer to [Insights for D365 FO Parameters](./setup.md#3-insights-for-d365-fo-parameters)
 17414	| Application Insights Dashboard template | A new version of Application Insights Dashboard template
 
 
@@ -63,8 +77,6 @@ Number	| Name		 | Description
 16932	| Business event logging with Insights for D365 FO	| Fix issues with logging of Business events resulting in empty "n/a" records getting logged into Azure App Insights.
 17016	| Business event logging with Insights for D365 FO	| Log Telemetry on active Business events only.
 17455	| Batch job monitoring with Insights for D365 FO	| Fix issues with RunBaseBatch based batch jobs not getting monitored with Insights for D365 FO. Refer to [Batch job limitations](./Limitations.md#product-limitations)
-
-# Previous Version(s)
 
 ### Release 10.0.36.202311291
 

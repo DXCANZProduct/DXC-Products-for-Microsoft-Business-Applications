@@ -49,7 +49,7 @@ Only one instance is required, and it does not need recurrence as this is set au
 
 ![Monitoring_batch](../IMAGES/Monitoring_batch.png)
 
-Once running, the monitoring batch job will re-scan for changes in settings and business rules on the Periodic Monitoring Configuration form. You can disable the batch job from **System administrators > Setup > Insights for D365 FO > Insights for D365 FO parameters > Periodic monitoring** tab if needed. Refer to section [Enable the Periodic monitoring](../setup.md#5-enable-the-periodic-monitoring)
+Once running, the monitoring batch job will re-scan for changes in settings and business rules on the Periodic Monitoring Configuration form. You can disable the batch job from **System administrators > Setup > Insights for D365 FO > Insights for D365 FO parameters > Periodic monitoring** tab if needed. Refer to section [Enable the Periodic monitoring](../setup.md#6-enable-the-periodic-monitoring)
 
 ### 3.Create Performance View
 The periodic monitoring for SQL performance may  result in default values being generated initially. This issue can be resolved by executing the 'Create performance view' job. This job is specifically designed to create the System SQL resource statistics view, which ensures accurate and meaningful performance data is captured. Navigate to **System administrators > Setup > Insights for D365 FO > Periodic monitoring > Create performance view**. 
