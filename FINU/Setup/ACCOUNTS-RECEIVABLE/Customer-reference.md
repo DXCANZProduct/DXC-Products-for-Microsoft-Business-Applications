@@ -5,7 +5,7 @@ title: DXC Finance Utilities
 description: Customer reference setup
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-04-18
+ms.date: 2024-04-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,7 +27,9 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Customer reference setup
-The fields as described in the following subsections are available to control the functionality for customer remittance import available in additional licensed feature **Finance utilities - AR utilities**.
+The fields as described in the following subsections are available to control the functionality for:
+- Customer remittance import available in additional licensed feature **Finance utilities - AR utilities**
+- Bank statement reconciliation - **Offset account reference bank statement** field is set to use a field from the bank statement field to find the applicable D365 customer account - [More info](../CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md#customer-payment-and-settle-of-invoice-11)
 
 ## Reference number type
 
@@ -39,6 +41,11 @@ On the Action Pane, select **New** and enter the following details.
 **Field** | **Description**   
 :--       |:--
 **Reference number type** | Set an unique reference number for each customer reference type.
+
+### Where used
+- Customer references on Customer
+- Method of payment for AR utilities
+- Financial utilities parameters, when using customer references in the Reconciliation matching rules to find the D365 customer account
 
 **Data entity**: Reference number type
 
