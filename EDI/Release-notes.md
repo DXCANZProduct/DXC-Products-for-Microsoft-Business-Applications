@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-04-23
+ms.date: 2024-04-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,6 +44,7 @@ Number	| Name		 | Description
 :--	|:--		  	|:--
 17434	| SFTP connection	| Upgrade SFTP SSH.NET to latest [2024.0.0](https://github.com/sshnet/SSH.NET/releases/tag/2024.0.0) release
 16962   | Connections | Increase EDT for usernames, passwords (sftp, ftp) and storage account name, storage account key (Azure blob)
+17724	| Licensing		| Improvements to licensing - see [Licensing release notes](../LMG/Release-notes.md#release-10037202404262) for detailed information.
 
 **Customer module**	
 
@@ -77,6 +78,7 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--
 17417	| SFTP connection	| Update **Private key** to Password style
+17599	| Filter		| Error when filtering on a custom view in 'Customer purchase order' and 'Inbound files': "Getting the parent node failed"
 
 **Vendor module**	
 
