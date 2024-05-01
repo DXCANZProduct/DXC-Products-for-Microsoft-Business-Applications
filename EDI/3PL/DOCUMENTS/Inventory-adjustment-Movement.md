@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Inventory adjustment - Movement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-15
+ms.date: 2024-05-01
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -192,6 +192,7 @@ The following EDI Line fields are available on the lines page. <br>
 :---                        |:---                                                                       |:---
 **Item number**             | The D365 item id                                                          | Movement journal line > Item number
 **Quantity counted**        | Variance quantity	| [Transaction direction](../SETUP/3PL-SETUP/Transaction-direction-mapping.md) mapped to: <br> • In: Quantity (used as-is) <br> • Out: **-** Quantity <br> Movement journal line > Quantity
+**Unit**                    | The 3PL's unit of measure for this line
 **Transaction direction**   | Indicates direction of variance quantity. <br> Mapped to an In / Out direction in [Transaction direction mapping](../SETUP/3PL-SETUP/Transaction-direction-mapping.md). <br> Blank is an acceptable value if mapped and assigned to the trading partner.
 **Colour**                  | Product dimensions – Colour	                                            | Movement journal line > Colour
 **Size**                    | Product dimensions – Size	                                                | Movement journal line > Size
