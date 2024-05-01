@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Inventory adjustment - Transfer
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-04-23
+ms.date: 2024-05-01
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -187,6 +187,7 @@ The following EDI Line fields are available on the lines page. <br>
 :---                        |:---                                                                       |:---
 **Item number**             | The D365 item id                                                          | Transfer journal line > Item number
 **Quantity**                | Inventory adjustment quantity	                                            | Transfer journal line > Quantity
+**Unit**                    | The 3PL's unit of measure for this line
 **Colour**                  | Product dimensions – Colour	                                            | Transfer journal line > Colour
 **Size**                    | Product dimensions – Size	                                                | Transfer journal line > Size
 **Style**                   | Product dimensions – Style	                                            | Transfer journal line > Style
