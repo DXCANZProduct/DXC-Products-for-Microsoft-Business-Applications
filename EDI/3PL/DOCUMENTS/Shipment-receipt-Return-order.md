@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Shipment receipt - Return order
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-15
+ms.date: 2024-05-01
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -207,6 +207,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Item number**             | The D365 item number                                                      | Used for validation <br> Arrival journal line > Item number
 **Lot Id**                  | Lot id for the return order line                                          | Used to find D365 source transaction line
 **Quantity**                | Received quantity. This must be a positive quantity.                      | • Arrival journal line > Quantity <br> • Packing slip journal line > Received
+**Unit**                    | The 3PL's unit of measure for this line
 **Disposition code**        | Specify how to process an item that is returned by a customer. Mapped value for [Disposition code mapping](../SETUP/3PL-SETUP/Disposition-code-mapping.md)	| Arrival journal line > Disposition code
 **Colour**                  | Product dimensions – Colour	                                            | Used for validation
 **Size**                    | Product dimensions – Size	                                                | Used for validation
