@@ -62,7 +62,8 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-17506	| Inventory adjustment - Transfer	| Ability to transfer between locations for the 3PL warehouse. <br> Additional fields: <br> • From location <br> • To location
+17506	| Inventory adjustment - Transfer	| Ability to transfer between **locations** for the 3PL warehouse. <br> Additional fields: <br> • From location <br> • To location
+17510	| UOM mapping		| Similar to Customer and Vendor module, **UOM mapping** functionality added to 3PL Trading partner. <br> • **Outbound files**: Where applicable, the mapped value will be sent. Where no mapped value for the unit, the unit will be sent as-is. <br> • **Inbound files**: Ability to receive and process mapped unit values on incoming documents. Where no unit is received, it will work as per prior this extra functionality.
 
 
 **Freight forwarder landed cost module**
