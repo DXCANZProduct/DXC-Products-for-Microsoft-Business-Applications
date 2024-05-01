@@ -47,7 +47,7 @@ The following table describes the 3PL module fields that are available on the **
 
 **Field**                            | **Description**               
 :---------                          |:--------
-**UOM**                             |	Unit of measure mappings. Ability to map a customer’s unit of measure (example kgs) to D365 unit of measure (example kg). Used on in- and outbound documents 
+**UOM**                             |	Unit of measure mappings. Ability to map a Trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). Used on in- and outbound documents 
 **Inventory journal name mapping**  |	Select inventory journal to use for inventory adjustments. <br> Note: For further information see [Setup inventory journal name mapping](3PL-SETUP/Inventory-journal-name-mapping.md)
 **Inventory status Id mapping**     |	Inventory statuses are used within D365 to categorize inventory. <br> Note: For further information see [Setup inventory status id mapping](3PL-SETUP/Inventory-status-Id-mapping.md)
 **Disposition code mapping**        |	Specify how to process an item that is returned by a customer. <br> Note: For further information see [Setup disposition code mapping](3PL-SETUP/Disposition-code-mapping.md)
