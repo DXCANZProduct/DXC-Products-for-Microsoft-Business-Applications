@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Shipment receipt - Purchase order
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-15
+ms.date: 2024-05-01
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -210,6 +210,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Document date**           | Document date of 3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note if header Document date is blank.        	| • Product receipt > Document date
 **Delivery note**           | 	3PL’s delivery note number. If setting **Auto post receipt** is enabled, this will be used in posting the delivery note if header Delivery note is blank. Grouped by Delivery note, i.e. multiple delivery notes can be posted for the Arrival journal.	    | • Product receipt > Delivery note/Packing slip
 **Quantity**                | Received quantity	                                                        | • Arrival journal line > Quantity <br> • Product receipt line > Received
+**Unit**                    | The 3PL's unit of measure for this line
 **Colour**                  | Product dimensions – Colour	                                            | Used for validation
 **Size**                    | Product dimensions – Size	                                                | Used for validation
 **Style**                   | Product dimensions – Style	                                            | Used for validation
