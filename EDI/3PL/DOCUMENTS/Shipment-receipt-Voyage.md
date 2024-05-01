@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Shipment receipt - Voyage
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-10-04
+ms.date: 2024-05-01
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -183,6 +183,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Item number**             | The D365 item number                                                      | Used for validation <br> Arrival journal line > Item number
 **Lot Id**                  | Lot id for the purchase/transfer order line                               | Used to find D365 source transaction line
 **Quantity**                | Received quantity	                                                        | Arrival journal line > Quantity
+**Unit**                    | The 3PL's unit of measure for this line
 **Colour**                  | Product dimensions – Colour	                                            | Used for validation
 **Size**                    | Product dimensions – Size	                                                | Used for validation
 **Style**                   | Product dimensions – Style	                                            | Used for validation
