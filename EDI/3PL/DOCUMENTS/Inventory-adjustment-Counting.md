@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Inventory adjustment - Counting
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-15
+ms.date: 2024-05-01
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -184,6 +184,7 @@ The following EDI Line fields are available on the lines page. <br>
 :---                        |:---                                                                       |:---
 **Item number**             | The D365 item id                                                          | Movement journal line > Item number
 **Quantity counted**        | 3PL's on hand quantity. <br> Note: Quantity in the staging table is the counted quantity.  The quantity in the movement journal is the variance between counted and D365 current on-hand.	| 3PL Quantity minus D365 Quantity = Movement journal line > Quantity
+**Unit**                    | The 3PL's unit of measure for this line
 **Colour**                  | Product dimensions – Colour	                                            | Movement journal line > Colour
 **Size**                    | Product dimensions – Size	                                                | Movement journal line > Size
 **Style**                   | Product dimensions – Style	                                            | Movement journal line > Style
