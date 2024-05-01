@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Picking list registration
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-15
+ms.date: 2024-05-01
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -212,6 +212,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Item number**             | The D365 item number                                                      | Used for validation
 **Lot Id**                  | Lot id for the sales/transfer order line. If ‘_Lot ID_ is used in **Line matching strategy** this needs to match to Lot ID from the related Picking list staging record.	             | Used to find matching line when **Line matching strategy** is _Lot ID_
 **Picked**                  | Picked Quantity	                                                        | Pick route line > Pick quantity
+**Unit**                    | The 3PL's unit of measure for this line
 **SSCC**                    | SSCC received from the 3PL provider	                                    | Pick route line > SSCC
 **Colour**                  | Product dimensions – Colour	                                            | Used for validation
 **Size**                    | Product dimensions – Size	                                                | Used for validation
