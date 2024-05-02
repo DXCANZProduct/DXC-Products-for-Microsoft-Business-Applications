@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Product master
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-07-13
+ms.date: 2024-05-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -70,6 +70,9 @@ Configuration           | Automatically populated when selecting variant number
 Size                    | Automatically populated when selecting variant number
 Color                   | Automatically populated when selecting variant number
 Style                   | Automatically populated when selecting variant number
+Unit                    | Populated with Inventory unit when record is created via Periodic task 'Product configuration update'. <br> Can manually create new lines for additional units
+Unit conversion         | Unit conversion between Unit and Inventory unit (display method)
+Inventory unit          | Inventory unit for the item number (display method)
 Site                    | Select the applicable site
 Warehouse               | Select the applicable warehouse. This needs to match to the 3PL warehouse trading partner
 Active                  | By default this will be set to _Yes_. <br> If changed to _No_, this line will be ignored in change tracking.
