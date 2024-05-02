@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-04-30
+ms.date: 2024-05-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -64,6 +64,7 @@ Number	| Name		 | Description
 :--	|:--		  	|:--	
 17506	| Inventory adjustment - Transfer	| Ability to transfer between **locations** for the 3PL warehouse. <br> Additional fields: <br> • From location <br> • To location
 17510	| UOM mapping		| Similar to Customer and Vendor module, **UOM mapping** functionality added to 3PL Trading partner. <br> Unit also added to all inbound and outbound 3PL documents <br> • **Outbound files**: Where applicable, the mapped value will be sent. Where no mapped value for the unit, the unit will be sent as-is. <br> • **Inbound files**: Ability to receive and process mapped unit values on incoming documents. Where no unit is received, it will work as per prior this extra functionality. 
+17509	| Product master - Unit	| Ability to send **Unit** on outbound **Product master**. <br> Periodic task **Product configuration update** creates records for inventory units, other units for the product can be manually added to **EDI 3PL product setup**. <br> New fields on **EDI 3PL product setup**: <br> • Unit - where blank, the inventory unit will be used <br> • Unit conversion (display method) <br> • Inventory unit (display method) <br> New field on **Product master** <br> • Unit
 
 
 **Freight forwarder landed cost module**
@@ -80,6 +81,13 @@ Number	| Name		 | Description
 :--	|:--		  	|:--
 17417	| SFTP connection	| Update **Private key** to Password style
 17599	| Filter		| Error when filtering on a custom view in 'Customer purchase order' and 'Inbound files': "Getting the parent node failed"
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+17260	| Sales order - Log | EDI tab 'Log' button on Sales order's ActionPane not showing message
+
 
 **Vendor module**	
 
