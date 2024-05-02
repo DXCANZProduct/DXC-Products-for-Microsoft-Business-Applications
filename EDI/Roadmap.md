@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-04-05
+ms.date: 2024-05-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,18 +37,13 @@ This page describes the features planned for future releases and planned release
 
 Release			| ETA
 :--			    |:--
-2024-04     | 30 April 2024
+2024-05     | 31 May 2024
 2024-07     | 31 July 2024
 
 
 ## Next release
-ETA: 30 April 2024
+ETA: 31 May 2024
 
-- Freight forwarder Voyage advice - Trigger outbound staging record using Purchase order Confirmation or Confirm
-- Price variance type - Option to use Percentage variance when using customer or vendor price
-    - Customer purchase order
-    - Customer purchase order change
-    - Vendor purchase order acknowledgement
-- Upgrade SFTP SSH.NET
+- X12 format in Standard formats module (additional licensed module)
 
 
