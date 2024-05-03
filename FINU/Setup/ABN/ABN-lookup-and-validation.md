@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Setup - ABN lookup and validation 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-08-15
+ms.date: 2024-05-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,8 +42,8 @@ After successful registration, the company will be provided with a security toke
    - **Description** - Enter a description for the ABN validation provider
    - **Provider** - Select _Australian Business Number (ABN)_	
    - **Token GUID** - Enter the security token received from the provider	
-   - **Max search results** - Enter the applicable result, example 0
-   - **Active only** - ABN validation can create Tax exempt numbers. Setting this option to only allow active, will limit the ability to create only Tax exempt numbers that are active
+   - **Max search results** - Enter the applicable result, example using 0 doesn't limit the search
+   - **Active only** - ABN validation can create Tax exempt numbers. Setting this option to only allow active, will limit the ability to create only Tax exempt numbers that are active. Enabling this option doesn't limit the update functionality, for example where a previously Active ABN changed to Cancelled.
 
 ## Setup legal entity
 1. Go to **Organization administration > Organizations > Legal entities** and select the applicable legal entity.
