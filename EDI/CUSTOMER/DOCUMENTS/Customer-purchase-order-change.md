@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer purchase order change
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-03-14
+ms.date: 2024-05-08
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ The following setup is prerequisites for the customer purchase order change
 
 1. If required to put sales orders on hold till the purchase order confirmation has been received, assign the applicable hold code to [POC pending hold code](../SETUP/CUSTOMER-SETUP/Hold-codes.md) in EDI parameters.
 3. Create [Order purpose groups](../SETUP/CUSTOMER-SETUP/Order-purpose-group.md) to map the customer's values to EDI order purpose groups.
-4. If Automatic processing will be used, create [Order line change type groups](../SETUP/CUSTOMER-SETUP/Order-line-change-type-group.md)
+4. Create [Order line change type groups](../SETUP/CUSTOMER-SETUP/Order-line-change-type-group.md) to map customer's value to EDI order line change type groups.
 5. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
 6. Create [Setting profile](../SETUP/SETTING-PROFILES/Customer-purchase-order-change.md) for the document.
 7. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Customer-purchase-order-change.md) for the document.
@@ -45,6 +45,9 @@ The following setup is prerequisites for the customer purchase order change
     - Setting profile
     - Validation profile
     - Search mask
+
+## Updates to D365 Sales order
+See [Order line change type groups](../SETUP/CUSTOMER-SETUP/Order-line-change-type-group.md) for details on how this document updates the D365 sales order
 
 ## Target D365 transactions
 
