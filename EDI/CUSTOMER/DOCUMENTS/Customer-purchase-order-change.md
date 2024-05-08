@@ -46,7 +46,7 @@ The following setup is prerequisites for the customer purchase order change
     - Validation profile
     - Search mask
 
-## Updates to D365 Sales order
+## Changes to D365 Sales order
 See [Order line change type groups](../SETUP/CUSTOMER-SETUP/Order-line-change-type-group.md) for details on how this document updates the D365 sales order
 
 ## Target D365 transactions
@@ -55,7 +55,7 @@ When a purchase order change file is imported, the file name is key to identifyi
 There are two order purposes (**Change** and **Cancellation**) that can be processed via the **Customer purchase order change** document. These order purposes can be specified in Trading partners and will change the way the record is processed.
 Expectation is the customer sends price inclusive of discounts. 
 
-The following [**Customer EDI order types**](../SETUP/CUSTOMER-SETUP/Purchase-order-types.md) and [**Order purposes**](../SETUP/CUSTOMER-SETUP/Order-purpose-group.md) are supported by each Customer inbound document:
+The following [Customer EDI order types](../SETUP/CUSTOMER-SETUP/Purchase-order-types.md) and [Order purposes](../SETUP/CUSTOMER-SETUP/Order-purpose-group.md) are supported by each Customer inbound document:
 
 **Document type**		              | **Order type**	| **Order purpose**
 :----                                 |:----                |:----
