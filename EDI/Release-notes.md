@@ -34,6 +34,8 @@ This document describes the features that are either new or changed in the relea
 # Next version
 Planned release date: 31 May 2024
 
+### Release 10.0.37.202405TBD
+
 <ins>New features</ins>
 
 **Core module**	- Applies to all modules
