@@ -31,6 +31,32 @@ ms.dyn365.ops.version: AX 7.0.1
 This document describes the features that are either new or changed in the release version mentioned.
 [Installation process](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/Release-notes.html#installation-process) 
 
+# Next version
+Planned release date: 31 May 2024
+
+<ins>New features</ins>
+
+**Core module**	- Applies to all modules
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+17218	| Connection types - Azure	| Replace deprecated [Microsoft.WindowsAzure.Storage](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/storage/windowsazurestorage%28deprecated%29?view=azure-dotnet-legacy) with [Azure.Storage.Blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-dotnet-get-started?tabs=azure-ad). 
+
+**3PL module**
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+17864	| Product master	| New fields: <br> • Inventory unit <br> • Unit conversion
+
+<ins>Bug fixes</ins>
+
+**3PL module**
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+17864	| Product master	| Fix to Barcode and GTIN after adding UOM mapping in 10.0.37.202405023
+
+
 # Current version
 
 Next release is planned for 31 May 2024.
