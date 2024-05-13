@@ -188,7 +188,9 @@ Color                       | Product dimenion's Color                          
 Size                        | Product dimenion's Size                                   | Inventory dimension > Size
 Style                       | Product dimenion's Style                                  | Inventory dimension > Style
 Bar code                    | D365 item number's Bar code                               | Inventory item bar code
-Unit                        | D365 item number's Unit                                   | EDI 3PL product setup > Unit - If blank, the Inventory unit will be used
+Unit                        | D365 item number's Unit                                   | EDI 3PL product setup > Unit - If blank, the Inventory unit will be used. <br> Mapped value if UOM mapping used.
+Inventory unit              | Inventory unit for the Item number                        | Released products > Inventory unit. <br> Mapped value if UOM mapping used.
+Unit conversion             | Unit conversion between Unit and Inventory unit           | Released products > Unit conversion
 Gross depth                 | D365 item number's Gross depth                            | Released products > Gross depth
 Gross height                | D365 item number's Gross height                           | Released products > Gross height
 Gross width                 | D365 item number's Gross width                            | Released products > Gross width
