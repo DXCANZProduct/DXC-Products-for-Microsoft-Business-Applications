@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-04-26
+ms.date: 2024-05-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
