@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-05-13
+ms.date: 2024-05-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,6 +50,21 @@ Feature	| 10.0.40 Feature state
 **Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the bank statement file | Mandatory
 **Modern bank reconciliation** | Preview
 
+
+#### Build 10.0.37.20240325TBD
+Release date: TBD May 2024 <br>
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+17524		| Various	| SFTP connection	| Upgrade SFTP SSH.NET to latest [2024.0.0](https://github.com/sshnet/SSH.NET/releases/tag/2024.0.0) release. Applicable to: <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections <br> • Accounts receivable > Payments setup > Financial utilities connections (AR utilities feature) <br> • Organization administration > Electronic reporting > Electronic reporting export connections
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+17966		| Accounts receivable	| Method of payment | Fix for error 'Root element is missing', when generating a payment using a non ER Export format.
 
 
 #### Build 10.0.37.2024032522
