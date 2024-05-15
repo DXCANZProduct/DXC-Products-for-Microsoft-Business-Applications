@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer purchase order acknowledgement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-10-20
+ms.date: 2024-05-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -348,6 +348,8 @@ The following EDI Header staging fields are available on the header page.
 **Sales taker**             | Sales taker from the sales order.                              | Sales order > Sales taker
 **Email**                   | Email from the sales order.                                    | Sales order > Email
 **Telephone**               | Telephone from the sales order.                                | Sales order > Telephone
+<ins>**Totals**</ins> |   |
+**Total charges**           | Total charges from the sales order                             | Sales order > Total charges 
 <ins>**Delivery address**</ins> |   |
 **Delivery name**           |	Address for Delivery	                                        | Sales order > Delivery Address Information
 **City**                    |	Delivery address - City	
