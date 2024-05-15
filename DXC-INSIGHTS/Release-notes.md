@@ -32,15 +32,25 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.37.202404291
+### Release 10.0.37.20240429
 
-Insights for D365 FO 10.0.36 runs on the following Microsoft releases
+Insights for D365 FO 10.0.37 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
+Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+
+#### Build 10.0.37.202404292
+Release date: 15 May 2024
+
+<ins>Bug fix</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+17937	| Periodic monitoring configuration batch job	| Fix an issue with the periodic monitoring batch job where the automatically set recurrennce of the batch job creeps down to zero.
 
 #### Build 10.0.37.202404291
 Release date: 29 April 2024
