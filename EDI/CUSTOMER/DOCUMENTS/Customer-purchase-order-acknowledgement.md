@@ -350,6 +350,8 @@ The following EDI Header staging fields are available on the header page.
 **Telephone**               | Telephone from the sales order.                                | Sales order > Telephone
 <ins>**Totals**</ins> |   |
 **Total charges**           | Total charges from the sales order                             | Sales order > Total charges 
+**Subtotal amount**         | Subtotal amount from the sales order                           | Sales order > Subtotal amount
+**Total amount**            | Total amount from the sales order                              | Sales order > Total amount
 <ins>**Delivery address**</ins> |   |
 **Delivery name**           |	Address for Delivery	                                        | Sales order > Delivery Address Information
 **City**                    |	Delivery address - City	
