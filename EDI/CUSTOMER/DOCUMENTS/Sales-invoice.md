@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Sales invoice
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2023-10-24
+ms.date: 2024-05-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -163,6 +163,7 @@ The following EDI Header staging fields are available on the header page.
 **Our account number**      | Our account number in the customers system	
 **Date**                    | Invoice date	                        | Invoice journal > Date
 **Due**                     | Invoice Due Date	                    | Invoice journal > Due Date
+**Total charges**           | Total charges from the sales order    | Sales order > Total charges 
 **Invoice amount excluding tax**    | Invoice amount excluding tax	| Invoice journal amount > Price excl. tax
 **Invoice tax amount**      | Invoice total tax amount	            | Invoice journal amount > Sales tax
 **Invoice amount including tax**    | Invoice amount including tax	| Invoice Journal Amount > Price incl. tax
