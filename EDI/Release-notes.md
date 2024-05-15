@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-05-07
+ms.date: 2024-05-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,6 +43,13 @@ Planned release date: 31 May 2024
 Number	| Name		 | Description
 :--	|:--		  	|:--
 17218	| Connection types - Azure	| Replace deprecated [Microsoft.WindowsAzure.Storage](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/storage/windowsazurestorage%28deprecated%29?view=azure-dotnet-legacy) with [Azure.Storage.Blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-dotnet-get-started?tabs=azure-ad). 
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+17851	| Customer purchase order acknowledgement | New field **Total charges**
+17850	| Sales invoice		| New field **Total charges**
 
 **3PL module**
 
