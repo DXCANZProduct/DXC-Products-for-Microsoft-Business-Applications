@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-05-15
+ms.date: 2024-05-16
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,8 +51,8 @@ Feature	| 10.0.40 Feature state
 **Modern bank reconciliation** | Preview
 
 
-#### Build 10.0.37.20240325TBD
-Release date: TBD May 2024 <br>
+#### Build 10.0.37.2024032531
+Release date: 16 May 2024 <br>
 
 <ins>New features</ins>
 
