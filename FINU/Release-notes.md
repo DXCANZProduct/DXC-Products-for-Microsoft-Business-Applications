@@ -64,7 +64,7 @@ Number	  	| Module	| Functionality	  	| Description
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-17966		| Accounts receivable	| Method of payment | Fix for error 'Root element is missing', when generating a payment using a non ER Export format.
+17966		| Accounts receivable	| Generate payments | Fix for error 'Root element is missing', when generating a payment using a non ER Export format.
 
 
 #### Build 10.0.37.2024032522
