@@ -42,12 +42,12 @@ Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
-
+Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 
 
 #### Build 10.0.36.202311301
 
-Release date: 30 NOvember 2023
+Release date: 30 November 2023
 
 <ins>New features</ins>
 
@@ -56,7 +56,7 @@ Number	  	| Functionality	  | Description
 14998		| DMF Toolbox	| Exposes 2 new fields in DMF data entities
 16043		| Scramble data in FinOps env to protect sensitive data	| Allows for information to be scrambled post a database copy or restore from a production into a sandbox environment.
 16013		| Export/import of Print management settings	| New feature that allows the import/Export of Printer management settings
-16514		| Reset Print Management | Resets Print management setting for the related module to Default, can be used in case of errors or query corruption. Available in the following Modules, Accounts receivable, Inventory management, Procurement and sourcing, Project management and accounting, Transportation management, Warehouse management
+16514		| Reset Print Management | Resets Print management setting for the related module to Default, can be used in case of errors or query corruption. Available in the following Modules, Accounts receivable, Inventory management, Procurement and sourcing, Project management and accounting, Transportation Management, Warehouse management
 16567		| Exchange Rate update	| When importing General Journals with no exchange rate the Journal is populated with the Default Exchange rate for that currency
 13552		| Feature management	| Core extensions now available via Feature management
 
@@ -66,7 +66,7 @@ Enable the following feature in D365 Feature management:
 
 - Core extensions
 
-If above feature is not visible, press **Check for updates** to refresh the feature management list.
+If the above feature is not visible, press **Check for updates** to refresh the feature management list.
 
 <ins>Bug fixes</ins>
 
@@ -153,7 +153,7 @@ To align with MS best practice and to protect our IP the following applies to th
 - We will not provide test models for the products, neither as binary or source code. 
 - We will only publish the release as a deployable package. 
 - Model source code can be provided at our discretion. It can be requested for debugging upgrade errors, or if required for extensions.
-	- If you have been given the source code to our model for extension or debugging purpose, never make modifications directly to our models! 
+	- If you have been given the source code to our model for extension or debugging purposes, never make modifications directly to our models! 
 	- If you need an extension point, please send an email to ECLANZProductSupport@dxc.com and request it to be implemented. 
 
 
@@ -172,8 +172,8 @@ If you’re installing the new release in an installation that already has a pre
 
 If you’re using our model source code for extension or debugging and would like to continue using it, please do the following to apply the new release with the source code. 
 
-1. Remove product license model from your source control that is applicable to the release. You’ll find the license model in the deployable package. It will either be called DXCLicense and Sable37License. 
-2. Apply the deployable package to your environment to install the latest binaries. Check in the binaries for the license model that was removed in step 1 to source control. Note, this step will also install the binaries for all the models in the new release. 
+1. Remove product license model from your source control that is applicable to the release. You’ll find the license model in the deployable package. It will either be called DXCLicense or Sable37License. 
+2. Apply the deployable package to your environment to install the latest binaries. Check in the binaries for the license model that was removed in step 1 to source control. Note, that this step will also install the binaries for all the models in the new release. 
 3. Install the product release model source code and check into source control. 
 
 If you don’t follow these instructions and continue building your installation deployable package using the license model source code, the installation will continue using the same license model as before applying the release. 
