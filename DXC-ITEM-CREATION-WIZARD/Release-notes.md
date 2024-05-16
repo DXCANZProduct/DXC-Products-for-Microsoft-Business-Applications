@@ -4,7 +4,7 @@
 title: DXC Item Creation Wizard
 description: DXC Item Creation Wizard - Release notes
 author: PeterM
-manager: Kym Parker
+Manager: Kym Parker
 ms.date: 2023-06-23
 ms.topic: article
 ms.prod: 
@@ -44,6 +44,7 @@ Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
+Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 
 #### Build 10.0.34.202310041 
 Release date: 4th October 2023
@@ -115,8 +116,8 @@ N/A		| License manager	| License manager version 10.8.32.10171 <br> Enhanced Lic
 Number	  | Functionality	  | Reason
 :--       |:--              |:--
 8335	|	Status Data Entities	| Data entities for the following tables have been included <BR> * DXCICStatusTable <BR> * DXCICStatusTransitionRule <BR> * DXCICStatusAutoRuleTable
-9192	|	Item creation import sessions	| The import sessions form will no longer display by default records with a status of Completed, Rejected or Cancelled. Visibility of these records can be toggled using the Show closed control. <BR> <BR> When the import session form is opened the latest record will be selected.
-9746	|	Item Creation list page| The item creation list page form will no longer display by default records with a status of Completed, Rejected or Cancelled. Visibility of these records can be toggled using the Show closed control.
+9192	|	Item creation import sessions	| The import sessions form will no longer display by default records with a status of Completed, Rejected or Cancelled. The visibility of these records can be toggled using the Show closed control. <BR> <BR> When the import session form is opened the latest record will be selected.
+9746	|	Item Creation list page| The item creation list page form will no longer display by default records with a status of Completed, Rejected or Cancelled. The visibility of these records can be toggled using the Show closed control.
 9748	|	Item status, released product variants	| The current item status for a product variant is now displayed within the release product variant form.
 9786	|	Create DXCICStatusItemTable record on variant creation	| When a product variant is created from a creation template, the variant will inherit the items status defined on the template.
 9926	|	Item status - block inventory transactions	| A new transaction type is available for blocking by using item statuses. The new option Inventory will enable the prevention of product or variants with the item status from being included in; <BR> * Inventory movement <BR> * Inventory adjustment <BR> * Inventory transfer <BR> * Inventory count
@@ -166,7 +167,7 @@ Number	  | Name	          | Description
 9174	  | Financial dimension defaults	| Default values set on item creation templates for financial dimensions are now being applied to the item. Where an alternative value is provided in the imported data, this will be used instead.
 9175	  | Approved vendor writing to target table prior to workflow completion	| A new table (DXCICCreationPdsApprovedVendorListTable) has been created to stage imported values during the workflow process, as the table structure is not compatible with the use of a TempDB. <BR> <BR> Templates that reference the previous Approved Vendor table will need to be updated to reference the value.
 9202	  | Import validation against multiple companies 	| Where import session lines are created for each company on the template header, a distinct validation will be for each record based on values appropriate for each company.
-9215	  | Import validation not completed on certain fields	| Fields which were not validating on import are now validated and a log provided to identify the incorrect value that has been imported.
+9215	  | Import validation not completed on certain fields	| Fields that were not validating on import are now validated and a log provided to identify the incorrect value that has been imported.
 
 ### Release 10.0.12.20210412
 
@@ -176,7 +177,7 @@ Number	  | Name	          | Description
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-6264	  | Financial dimension | Imported financial dimensions where not validated against existing values. User was not provided with a validation error or log when a value was unable to be imported. <BR> <BR> Validation error and log are now present when a financial dimension cannot be written to the designer.
+6264	  | Financial dimension | Imported financial dimensions were not validated against existing values. The user was not provided with a validation error or log when a value was unable to be imported. <BR> <BR> Validation errors and log are now present when a financial dimension cannot be written to the designer.
 
 ### Release 10.0.9.20210406
 
@@ -190,7 +191,7 @@ Number	  | Functionality	  | Reason
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-8402	  | Clear financial dimensions | The Clear field value defined on the item creation template header allows for a field to updated to a blank value when specified character/s are included in an import file. <BR> <BR> When used on a financial dimension field the existing financial dimension value was not being cleared. This is now supported.
+8402	  | Clear financial dimensions | The Clear field value defined on the item creation template header allows for a field to be updated to a blank value when specified character/s are included in an import file. <BR> <BR> When used on a financial dimension field the existing financial dimension value was not being cleared. This is now supported.
 8394	  | Update alternative item number | When importing a value into the field Alternative item number the value in the mapped field of the import file was not used.
 
 ### Release 10.0.9.20210205
@@ -199,7 +200,7 @@ Number	  | Name	          | Description
 
 Number	  | Functionality	  | Reason
 :--       |:--              |:--
-7865	|	Feature Management	| Move licensing to License manager and Feature Management.
+7865	|	Feature Management	| Move licensing to License Manager and Feature Management.
   
 ### Release 10.0.9.20201201
 
@@ -207,7 +208,7 @@ Number	  | Functionality	  | Reason
 
 Number	  | Functionality	  | Reason
 :--       |:--              |:--
-8344	|	MCRInventTable	| Change to extended data type (DXCICItemId) on MCRInventDim to improve query.
+8344	|	MCRInventTable	| Change to extended data type (DXCICItemId) on MCRInventDim to improve the query.
 
 ### Release 10.0.9.20201127
 
@@ -222,7 +223,7 @@ Number	  | Functionality	  | Reason
 Number	  | Name	          | Description
 :--       |:--              |:--
 8254	  | Generate variants automatically  | When marking the field Generate Variants Automatically in a creation template a validation is run to confirm the subtype is Product Master. This validation failed, preventing the record from being submitted to workflow.
-8274	  | Attribute values not recorded for all supplemental hierarchies | Attribute groups assigned to nodes in a category hierarchy of type Supplemental retail hierarchy allow for entry of attribute values using the Item Creation designer. <BR> <BR> This only works for the first hierarcy of this type, subsequent supplemental hierarchies do not return the attributes, preventing the value from being recorded on the product.
+8274	  | Attribute values not recorded for all supplemental hierarchies | Attribute groups assigned to nodes in a category hierarchy of type Supplemental retail hierarchy allow for entry of attribute values using the Item Creation designer. <BR> <BR> This only works for the first hierarchy of this type, subsequent supplemental hierarchies do not return the attributes, preventing the value from being recorded on the product.
 8334	  | Update alternative item number | A template with an assigned team can be seen by all users, so long as the template is active.
 
 ### Release 10.0.9.20201027
@@ -247,20 +248,20 @@ Number	  | Functionality	  | Reason
 
 Number	  | Functionality	  | Reason
 :--       |:--              |:--
-8028	|	Security enhancements	| Creation of two distinct security roles <BR>   Item creation clerk – Item creation user, able to intiate or update an item creation record. View and manage imported files <BR>   Item creation manager – module admin, can update parameters relating to Item creation and create/edit Item creation templates. <BR>  <BR> Security privilege added where not available <BR> 	Parameters form <BR>  Export template (Template steps) <BR> 	Creation import files form <BR> 	Create workflow
+8028	|	Security enhancements	| Creation of two distinct security roles <BR>   Item creation clerk – Item creation user, able to initiate or update an item creation record. View and manage imported files <BR>   Item creation manager – module admin, can update parameters relating to Item creation and create/edit Item creation templates. <BR>  <BR> Security privilege added where not available <BR> 	Parameters form <BR>  Export template (Template steps) <BR> 	Creation import files form <BR> 	Create workflow
 4808	|	Data entities	| New data entity added for the parameters table.
 8033	|	New tables	| New tables are available for use in templates; <BR> 	Approved vendor (PdsApprovedVendorList) <BR> 	Direct delivery (MCRInventTable)
-7690	|	Creation import session	| Template version used for import can now be view without having to navigate to line view <BR> A filtered view of creation import sessions showing only records assigned to the user has been added.
+7690	|	Creation import session	| Template version used for import can now be viewed without having to navigate to line view <BR> A filtered view of creation import sessions showing only records assigned to the user has been added.
 7942	|	Formatting changes	| Replaced references to PLM with Item creation <BR> Indented submenus within the setup section
   
 <ins>Bug fixes</ins>
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-7909	  | Default order setting – Site  | The field Site was unavailable for selection in the item creation template for the template table Inventory dimensions (Site specific purchase order settings - Default) but could be applied manually. Field was added to list for selection.
-7931	  | Changes to assigned team not reflected | When changing the assigned team on an Item creation template it does not update the visibility of the template for either the new or removed team members.
+7909	  | Default order setting – Site  | The field Site was unavailable for selection in the item creation template for the template table Inventory dimensions (Site-specific purchase order settings - Default) but could be applied manually. The field was added to the list for selection.
+7931	  | Changes to an assigned team not reflected | When changing the assigned team on an Item creation template it does not update the visibility of the template for either the new or removed team members.
 7903	  | Creation import files – Active | Only activated template versions should be visible within the list of templates on the Creation import files form
-7449	  | Reservation hierarchy | Field was unavailable for edit within the designer and could only be populated as a default
+7449	  | Reservation hierarchy | Field was unavailable for editing within the designer and could only be populated as a default
   
 # Installation process
 To align with MS best practice and to protect our IP the following applies to the release process.
@@ -268,7 +269,7 @@ To align with MS best practice and to protect our IP the following applies to th
 - We will not provide test models for the products, neither as binary or source code. 
 - We will only publish the release as a deployable package. 
 - Model source code can be provided at our discretion. It can be requested for debugging upgrade errors, or if required for extensions.
-	- If you have been given the source code to our model for extension or debugging purpose, never make modifications directly to our models! 
+	- If you have been given the source code to our model for extension or debugging purposes, never make modifications directly to our models! 
 	- If you need an extension point, please send an email to ECLANZProductSupport@dxc.com and request it to be implemented. 
 
 
@@ -287,8 +288,8 @@ If you’re installing the new release in an installation that already has a pre
 
 If you’re using our model source code for extension or debugging and would like to continue using it, please do the following to apply the new release with the source code. 
 
-1. Remove product license model from your source control that is applicable to the release. You’ll find the license model in the deployable package. It will either be called DXCLicense and Sable37License. 
-2. Apply the deployable package to your environment to install the latest binaries. Check in the binaries for the license model that was removed in step 1 to source control. Note, this step will also install the binaries for all the models in the new release. 
+1. Remove the product license model from your source control that is applicable to the release. You’ll find the license model in the deployable package. It will either be called DXCLicense or Sable37License. 
+2. Apply the deployable package to your environment to install the latest binaries. Check in the binaries for the license model that was removed in step 1 to source control. Note, that this step will also install the binaries for all the models in the new release. 
 3. Install the product release model source code and check into source control. 
 
 If you don’t follow these instructions and continue building your installation deployable package using the license model source code, the installation will continue using the same license model as before applying the release. 
