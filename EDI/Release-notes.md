@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-05-15
+ms.date: 2024-05-17
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,6 +58,12 @@ Number	| Name		 | Description
 17864	| Product master	| New fields: <br> • Inventory unit <br> • Unit conversion
 
 <ins>Bug fixes</ins>
+
+**Core module**	- Applies to all modules
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+17895	| Filter		| Incorrect filtering when accessing 'Customer purchase order' and 'Inbound files' with custom views via Document maintenance workspace
 
 **3PL module**
 
