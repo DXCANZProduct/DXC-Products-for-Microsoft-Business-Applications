@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 # Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
-# Compatibility
+# Version compatibility
 The matrix shows the DXC build versions compatiable for Microsoft versions and builds. <br>
 If blank: investigations are ongoing. <br>
 
