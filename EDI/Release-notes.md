@@ -31,6 +31,17 @@ ms.dyn365.ops.version: AX 7.0.1
 This document describes the features that are either new or changed in the release version mentioned.
 [Installation process](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/Release-notes.html#installation-process) 
 
+# Version compatibility
+The matrix shows the DXC build versions compatiable for Microsoft versions and builds. <br>
+If blank: investigations are ongoing. <br>
+
+D365 Version	  | Any issues found in testing?	  | Compatible product version
+:--       	  |:--           			  |:--
+Product version: 10.0.37 <br> App build: 10.0.1725	  | No	          | 10.0.34.202307311
+Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No            | 10.0.34.202310312
+Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No	          | 10.0.34.202310312
+Product version: 10.0.40 <br> App build: 10.0.1935.5	  | 	          | 
+
 # Next version
 Planned release date: 31 May 2024
 
