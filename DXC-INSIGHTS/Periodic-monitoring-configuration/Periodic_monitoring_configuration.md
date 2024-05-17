@@ -49,6 +49,8 @@ Only one instance is required, and it does not need recurrence as this is set au
 
 ![Monitoring_batch](../IMAGES/Monitoring_batch.png)
 
+To ensure telemetry data is captured from periodic monitoring, verify that the "custom events" option is enabled within the Telemetry monitoring configuration in **System administrators > Setup > Insights for D365 FO > Insights for D365 FO parameters**.
+
 Once running, the monitoring batch job will re-scan for changes in settings and business rules on the Periodic Monitoring Configuration form. You can disable the batch job from **System administrators > Setup > Insights for D365 FO > Insights for D365 FO parameters > Periodic monitoring** tab if needed. Refer to section [Enable the Periodic monitoring](../setup.md#6-enable-the-periodic-monitoring)
 
 ### 3.Create Performance View
