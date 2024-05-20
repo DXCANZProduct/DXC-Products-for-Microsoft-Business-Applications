@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-03-25
+ms.date: 2024-05-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,8 +35,6 @@ This page describes the features planned for future releases and planned release
 
 ## Release schedule
 
-Release			    | ETA
-:--			        |:--
 
 
 ### Next release
@@ -44,6 +42,9 @@ Release			    | ETA
 
 
 ## Roadmap
+
+#### Accounts payable 
+- Import Return files
 
 #### Accounts receivable
 - Option to exclude invoices from automatic settlement based on their Collection status, for example disputed.
