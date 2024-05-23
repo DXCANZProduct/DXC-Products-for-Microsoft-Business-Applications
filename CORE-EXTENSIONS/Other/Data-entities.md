@@ -49,3 +49,12 @@ The following is a summary of data entities available for the Core extension  mo
 1	                | Print management document settings  | Import/Export **Print management** settings.  Warehouse management > Setup>Warehouse management parameters > print management
 1	                | Print management document settings  | Import/Export **Print management** settings.  Transportation management>Setup > Transportation management parameters > print management 
 1	                | Print management document settings  | Import/Export **Print management** settings.  Inventory management > Setup > Inventory and warehouse management parameters > print 
+
+**Order**         | **Entity**                      | **Description**	                                         | **Dependency**
+:-----            |:------------------------        |:-------------------                                      |:------------------------
+1	                | DXC  | Import/Export **Data-Anonymization** settings.  Organization administration > Setup > Data anonymization.  
+1	                | DXC  | Import/Export **Data-Anonymization** settings.  Organization administration > Setup > Data anonymization
+1	                | DXC  | Import/Export **Data-Anonymization** settings.  Organization administration > Setup > Data anonymization
+1	                | DXC  | Import/Export **Data-Anonymization** settings.  Organization administration > Setup > Data anonymization
+1	                | DXC  | Import/Export **Data-Anonymization** settings.  Organization administration > Setup > Data anonymization
+
