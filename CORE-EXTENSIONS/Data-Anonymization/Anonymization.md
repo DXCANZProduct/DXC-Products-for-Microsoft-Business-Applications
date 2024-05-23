@@ -33,18 +33,17 @@ Data Anonymization is a process that allows for information to be scrambled post
 
 ### Setup Data Anonymization
 
-Data Anonymization has a separate Feature Key from Core extensions Core Extensions can be enabled via Feature management
+Data Anonymization has a separate Feature Key from Core extensions and can be enabled via Feature management
 Enable the following feature in D365 Feature management:
 
-- Core extensions
+- Data anonymization
 
-If the above feature is not visible, press **Check for updates** to refresh the feature management list.
+If the above feature is not visible, press **Check for updates** to refresh the feature management list. Navigate to **Organization administration > Setup > Data anonymization** 
 
+Once Enabled,  the Data Anonymization Menu is visible  under the Organization Administration module.
 
-
-Data Anonymization is available under the Organization administration menu once the Core Extensions feature has been enabled.
-
-The **Data anonymization parameters** page is used to ensure production values are safeguarded. The production URL is entered into the parameters form to prevent any users accidentally scrambling production values. 
+### Data anonymization parameters
+The **Data anonymization parameters** page is used to ensure production values are safeguarded. The production URL is entered into the parameters form to prevent  users from accidentally scrambling production values. 
 
 1. Navigate to **Organization administration > Setup > Data anonymization > Data anonymization parameters**
 2. Insert your production URL into the PROD URL field.
@@ -52,12 +51,13 @@ Once completed select Save and close the form.
 
 ![Anonymization](../IMAGES/Anonymization_parameters.png)
 
+
 ### Data anonymization profiles
 
-Data anonymization profiles allows user to set up individual combinations of tables and fields with set combinations of values that that can be saved and reused, streamlining the anonymization process for future requirements. You must create at least one profile to run the anonymization process.
+Data anonymization profiles allows users to set up individual combinations of tables and fields with set combinations of values that that can be saved and reused, streamlining the anonymization process for future requirements. You must create at least one profile to run the anonymization process.
 Navigate to **Organization administration > Setup > Data anonymization > Data anonymization profiles**
 
-The following table outlines the fields available in the Data anonymization profiles form, whether the field is mandatory, and some information about the field. If a field is not required to be selected by the user, it can be left blank, unless it is mandatory field.
+The following table outlines the fields available in the Data anonymization profiles form, whether the field is mandatory, and some information about the field. If a field is not required to be selected by the user, it can be left blank, unless it is a mandatory field.
 
 |  **Field**  | **Mandatory** | **Details** | 
 |:---|:---|:---|     
