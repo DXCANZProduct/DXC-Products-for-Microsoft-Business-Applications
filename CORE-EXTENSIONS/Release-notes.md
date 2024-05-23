@@ -44,6 +44,13 @@ Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 
+## Feature management
+From 10.0.36.20231130 Core Extensions can be enabled via Feature management
+Enable the following feature in D365 Feature management:
+
+- Core extensions
+
+If the above feature is not visible, press **Check for updates** to refresh the feature management list.
 
 #### Build 10.0.36.202311301
 
@@ -60,13 +67,7 @@ Number	  	| Functionality	  | Description
 16567		| Exchange Rate update	| When importing General Journals with no exchange rate the Journal is populated with the Default Exchange rate for that currency
 13552		| Feature management	| Core extensions now available via Feature management
 
-## Feature management
-From 10.0.36.20231130 Core Extensions can be enabled via Feature management
-Enable the following feature in D365 Feature management:
 
-- Core extensions
-
-If the above feature is not visible, press **Check for updates** to refresh the feature management list.
 
 <ins>Bug fixes</ins>
 
