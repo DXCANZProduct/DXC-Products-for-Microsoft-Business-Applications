@@ -13,15 +13,25 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: DXCDataAnonymizationParameters, Data anonymization profiles, Frequently Asked Questions, FAQ, Scamble, Core Extensions, anonymisation, anonymization
+# ms.search.form: DXCDataAnonymizationParameters, Data anonymization profiles, Frequently Asked Questions, FAQ, Scamble, Core Extensions, anonymisation, anonymization
 audience: Application User
 # ms.devlang: 
 ms.reviewer: Peter Musumeci
 
 # ms.tgt_pltfrm: 
-ms.search.region: CoreUtil
+ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: Peter Musumeci
 ms.search.validFrom: 2024-05-23
 ms.dyn365.ops.version: 10.0.39
 ---
+
+# 	Frequently Asked Questions
+
+### I receive an error when I enter my Production URL?
+
+If you attempt to enter an invalid web address into the PROD URL Field you will receive a pop-up similar to the one below
+
+![URL](../IMAGES/URL.png)
+
+Enter a valid Dynamics Finance and operation URL to proceed 
