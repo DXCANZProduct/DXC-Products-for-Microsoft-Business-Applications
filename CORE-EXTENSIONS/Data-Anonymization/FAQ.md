@@ -1,3 +1,4 @@
+---
 # required metadata
 
 title: Core Extensions
@@ -23,3 +24,4 @@ ms.search.region: CoreUtil
 ms.author: Peter Musumeci
 ms.search.validFrom: 2024-05-23
 ms.dyn365.ops.version: 10.0.39
+---
