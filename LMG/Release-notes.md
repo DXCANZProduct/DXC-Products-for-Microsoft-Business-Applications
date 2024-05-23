@@ -40,11 +40,11 @@ This document describes the features that are either new or changed in the relea
 
 DXC License Manager 10.0.37.202404262 runs on the following Microsoft releases
 
-| Base                               | Version | Release                                                                                                                                                                 |
-| :--------------------------------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft Dynamics 365 application | 10.0.37 | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)         |
-| Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)         |
-| Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)         |
+| Base                               | Version | Release                                                                                                                                                         |
+| :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft Dynamics 365 application | 10.0.37 | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37) |
+| Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38) |
+| Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39) |
 
 <b>Build 7.0.7068.67 </b>
 
@@ -56,15 +56,12 @@ DXC License Manager 10.0.37.202404262 runs on the following Microsoft releases
 
 ### DXC License
 
-#### **Release 10.0.37.202404262**
+#### **Release 10.0.37.202405231**
 
 DXC License 10.0.37.202404262 runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                         |
 | :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft Dynamics 365 application | 10.0.34 | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34) |
-| Microsoft Dynamics 365 application | 10.0.35 | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35) |
-| Microsoft Dynamics 365 application | 10.0.36 | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36) |
 | Microsoft Dynamics 365 application | 10.0.37 | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37) |
 | Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38) |
 | Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39) |
@@ -73,10 +70,10 @@ DXC License 10.0.37.202404262 runs on the following Microsoft releases
 
 <ins>New features</ins>
 
-| Number | Functionality                | Description                                            |
-| :----- | :--------------------------- | :----------------------------------------------------- |
-| 17724  | License manager improvements | Fixed label issues for feature disabled notifications. |
-| 16778  | Data Anonymization Feature   | Added new feature key for data anonymization.          |
+| Number | Functionality                                | Description                                                |
+| :----- | :------------------------------------------- | :--------------------------------------------------------- |
+| 18024  | Add new feature SecurityInsightsForD365FO    | New feature added to support security insights for D365 FO |
+| 18023  | Remove DXC from Forex Contracts Product Name | DXC keyword removed from Forex Contract product            |
 
 ## Microsoft Power Apps
 
@@ -216,6 +213,28 @@ DXC License Manager 10.0.32.20230731 runs on the following Microsoft releases
 | 40     | Fixed synchronisation issues when performing license checks | Users experienced info logs stating the product is enabled but not licensed even though the product is licensed. This issues persisted intermittently. |
 
 ### DXC License
+
+#### **Release 10.0.37.202404262**
+
+DXC License 10.0.37.202404262 runs on the following Microsoft releases
+
+| Base                               | Version | Release                                                                                                                                                         |
+| :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft Dynamics 365 application | 10.0.34 | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34) |
+| Microsoft Dynamics 365 application | 10.0.35 | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35) |
+| Microsoft Dynamics 365 application | 10.0.36 | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36) |
+| Microsoft Dynamics 365 application | 10.0.37 | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37) |
+| Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38) |
+| Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39) |
+
+<b>Build 7.0.7068.67 </b>
+
+<ins>New features</ins>
+
+| Number | Functionality                | Description                                            |
+| :----- | :--------------------------- | :----------------------------------------------------- |
+| 17724  | License manager improvements | Fixed label issues for feature disabled notifications. |
+| 16778  | Data Anonymization Feature   | Added new feature key for data anonymization.          |
 
 #### **Release 10.0.34.20231031**
 
