@@ -33,7 +33,7 @@ Data Anonymization is a process that allows for information to be scrambled post
 
 ### Enable Feature
 
-Data Anonymization has a separate Feature Key from Core extensions and must be enabled via Feature management in addition to the [Core Extensions](../Core-Extensions/Solution-overview.md) Feature Key.
+Data Anonymization has a separate Feature Key from Core extensions and must be enabled via Feature management in addition to the [Core Extensions](../CORE-EXTENSIONS/Release-notes.md#feature-management) Feature Key. 
 To Utilise Data Anonymization Enable the following feature in D365 Feature management:
 
 - Data anonymization
