@@ -2,9 +2,9 @@
 # required metadata
 
 title: Core Extensions 
-description: Finance Utilities - Frequently asked questions 
+description: Core Extensions - Frequently asked questions 
 author: Peter Musumeci
-manager: Kym Parker
+manager: Pontus Ek
 ms.date: 2023-11-30
 ms.topic: article
 ms.prod: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ### Where can I find contact information for support?
    
-Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > Product support**
+Support contact details can be located on the **Contact** tab at **Organization administration> Workspaces > Product support**
   
 ### Where can I identify the installed version of the Core Extensions module
 
