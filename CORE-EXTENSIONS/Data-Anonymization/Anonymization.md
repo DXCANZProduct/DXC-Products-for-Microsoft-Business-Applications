@@ -33,14 +33,14 @@ Data Anonymization is a process that allows for information to be scrambled post
 
 ### Setup Data Anonymization
 
-Data Anonymization has a separate Feature Key from Core extensions and can be enabled via Feature management
+Data Anonymization has a separate Feature Key from Core extensions and must be enabled via Feature management in addition to the Core Extensions [Core Extensions](../IMAGES/Solution-overview.md) Feature Key.
 Enable the following feature in D365 Feature management:
 
 - Data anonymization
 
-If the above feature is not visible, press **Check for updates** to refresh the feature management list. Navigate to **Organization administration > Setup > Data anonymization** 
+If the above feature is not visible, press **Check for updates** to refresh the feature management list.
 
-Once Enabled,  the Data Anonymization Menu is visible  under the Organization Administration module.
+Once Enabled,  the Data Anonymization Menu is visible  under the Organization Administration module.  Navigate to **Organization administration > Setup > Data anonymization**
 
 ### Data anonymization parameters
 The **Data anonymization parameters** page is used to ensure production values are safeguarded. The production URL is entered into the parameters form to prevent  users from accidentally scrambling production values. 
