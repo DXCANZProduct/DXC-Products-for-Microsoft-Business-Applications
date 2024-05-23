@@ -4,7 +4,7 @@
 title: Core Extensions
 description: Core Extensions - Data Anonymization
 author: Peter Musumeci
-manager: Kym Parker
+manager: Pontus Ek
 ms.date: 2023-10-31
 ms.topic: article
 ms.prod: 
