@@ -65,14 +65,14 @@ The following table outlines the fields available in the Data anonymization prof
 |:---|:---|:---|     
 |  **Name**  | Yes | Name of the anonymization profile |  
 |  **Description**  | Yes | Unique description for the anonymization profile that will be used to scramble data values. |  
-|  **Anonymization table**  | Yes | The D365 Table name that contains the sensitive data . |  
-|  **Run across all companies**  | No | When ticked this will apply the scramble values for the selected criteria in all legal entities within the environment. |  
+|  **Anonymization table**  | Yes | The D365 Table name that contains the sensitive data. |  
+|  **Run across all companies**  | No | When ticked this will apply the scramble values for the selected criteria in all legal entities within the environment.  In some cases where a table is global, this field is required in order to successfully scramble data |  
 |  **Company**  | Yes | Select the legal entity you wish to run the scramble for.  If “Run across all companies” is ticked this field is no longer mandatory and is greyed out. |  
-|  **Data anonymization field**  | Yes | This is then name of the field within your selected Anonymization table that contains the data you wish to. |  
-|  **Field label value**  | Yes | This is the common name (a.k.a Friendly name) of the field where the scrambled data will be inserted to replace existing values. |  
-|  **Field type**  | Yes | This will automatically populate and display the type of field you are updating data for. Eg String, Integer, Real, etc|  
-|  **Scrambled data value**  | No | The value you wish to replace existing data with, eg your scramble value.  While this field is not mandatory consideration should be given to the values used as fields requiring unique indexes or have minimum lengths may generate errors when values are populated. |  
-|  **Prefix for scrambled data value**  | No | Inserts a prefix to the scrambled value, currently only company Id is available.<br/><br/>Note: When making use of prefixes, the Run across all companies must be set to No (Unchecked). If it is checked, then the prefix will be ignored and only scramble value will be applied |  
+|  **Data anonymization field**  | Yes | This is the name of the field that contains the data within your selected  table |  
+|  **Field label value**  | Yes | This is the common name (a.k.a Friendly name) of the field where the scrambled data is stored.  This is commonly what is seen by users within the user interface |  
+|  **Field type**  | Yes | This will automatically populate and display the type of data that is input into this field. Eg String, date <br> Fields of Type VarString is a variable length field and cannot |  
+|  **Scrambled data value**  | No | The value you wish to replace existing data with, eg your scramble value.  While this field is not mandatory consideration should be given to the values used as fields requiring unique indexes or having minimum lengths may generate errors when values are populated. |  
+|  **Prefix for scrambled data value**  | No | Inserts a prefix to the scrambled value, currently only company Id is available.<br/><br/>Note: When making use of prefixes, the Run across all companies must be set to No (Unchecked). If it is checked, then the prefix will be ignored and only the scramble value will be applied |  
 
 
 ### Initiate data anonymization. 
