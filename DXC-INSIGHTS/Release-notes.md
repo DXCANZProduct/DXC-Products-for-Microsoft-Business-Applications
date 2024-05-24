@@ -43,6 +43,15 @@ Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 
+#### Build 10.0.37.202404293
+Release date: 24 May 2024
+
+<ins>Bug fix</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+18030	| Data management monitoring	| Fix an issue related to data conmversion for Data management monitoring telemetry data being sent from D365 F&O to Azure Application Insights
+
 #### Build 10.0.37.202404292
 Release date: 15 May 2024
 
