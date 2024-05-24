@@ -26,12 +26,12 @@ ms.search.validFrom: 2024-05-23
 ms.dyn365.ops.version: 10.0.39
 ---
 
-# 	Frequently Asked Questions
+# 	Frequently Asked Questions Data Anonymization
 
 ### I receive an error when I enter my Production URL?
 
-If you attempt to enter an invalid web address into the PROD URL Field you will receive a pop-up similar to the one below
+If you attempt to enter an invalid web address into the PROD URL Field you will receive an error "Invalid URI: The format of the URI could not be determined"  similar to the one below
 
 ![URL](../IMAGES/URL.png)
 
-Enter a valid Dynamics Finance and operation URL to proceed 
+To resolve this you must enter a valid Dynamics Finance and operation URL to proceed 
