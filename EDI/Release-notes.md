@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-05-17
+ms.date: 2024-05-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
