@@ -56,6 +56,7 @@ Planned release date: 31 May 2024
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
+17215		| Various 	| Azure Connection	| Replace deprecated [Microsoft.WindowsAzure.Storage](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/storage/windowsazurestorage%28deprecated%29?view=azure-dotnet-legacy) with [Azure.Storage.Blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-dotnet-get-started?tabs=azure-ad). <br> Applicable to: <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections <br> • Accounts receivable > Payments setup > Financial utilities connections (AR utilities feature) <br> • Organization administration > Electronic reporting > Electronic reporting export connections
 N/A		| DXC License	| Licensing		| New DXC License model 10.0.37.202405231. See [Release notes](../LMG/Release-notes.md) for more details.
 
 <ins>Bug fixes</ins>
@@ -63,6 +64,10 @@ N/A		| DXC License	| Licensing		| New DXC License model 10.0.37.202405231. See [
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
 17981		| Accounts payable | Pending invoice	| 10.0.40 build error caused by missing reference for the ProcessAutomation Model which is now used by the VendInvoiceInfoTable. <br> Used to determine whether the Pending invoices button is enabled/disabled in the Vendor Purchase Invoice form.
+17990		| Cash and bank management	| Reconciliation matching rule - Customer offset type using Customer references | The created customer payment journal uses the first customer account for all the found lines
+18014		| ABN validation	| Security	| New privileges added to access ABN lookup and ABN status
+17998		| ABN validation	| Rename objects	| Rename objects ending with DXC_Extension: <br> • TaxVATNumTableForm_DXC_Extension <br> • TaxSalesTaxProcessReferenceDataInquire.DXC_Extension <br> • TaxSalesTaxTransactionStatusInquire.DXC_Extension <br> • TaxSalesTaxTrnStatusInquirWithoutTaxPrv.DXC_Extension <br> • TaxVATNumTable.DXC_Extension
+18018		| Various   		| Rename objects	| Rename objects ending with DXC_Extension: <br> • BankStatementFormatForm_DXC_Extension <br> • BankChequeTableForm_DXC_Extension <br> • VendPaymMode_DXC_Extension <br> • BankTreasurerWorkspace_DXC_Extension <br> • VendorPaymentHistory_DXC_Extension <br> • BankReconciliationMatchRule_DXC_Extension <br> • CustPaymMode_DXC_Extension <br> • BankStatementTableForm_DXC_Extension
 
 # Current version
 
