@@ -40,7 +40,7 @@ D365 Version	  | Any issues found in testing?	  | Compatible product version
 Product version: 10.0.37 <br> App build: 10.0.1725	  | No	          | 10.0.34.202307311
 Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No            | 10.0.34.202310312
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No	          | 10.0.34.202310312
-Product version: 10.0.40 <br> App build: 10.0.1935.5	  | 	          | 
+Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17978 | • Functional: 10.0.37.202405023 <br> • Build error fixed in: 
 
 # Next version
 Planned release date: 31 May 2024
@@ -75,6 +75,13 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--
 17895	| Filter		| Incorrect filtering when accessing 'Customer purchase order' and 'Inbound files' with custom views via Document maintenance workspace
+17520	| Outbound files	| 'Original folder' not populated for File transfer type SFTP
+
+**Vendor module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+17978	| Pending invoice	| 10.0.40 build error caused by missing reference for the ProcessAutomation Model which is now used by the VendInvoiceInfoTable. <br> Used to determine whether the Pending invoices button is enabled/disabled in the Vendor Purchase Invoice form.
 
 **3PL module**
 
