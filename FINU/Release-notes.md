@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Pontus Ek
-ms.date: 2024-05-20
+ms.date: 2024-05-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,7 +38,7 @@ D365 Version	  | Any issues found in testing?	  | Compatible product version
 Product version: 10.0.37 <br> App build: 10.0.1725	  | Yes - see 16069 & 16244	          | 10.0.35.2023073122
 Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No				          | 10.0.35.2023073131
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No				          | 10.0.36.2023111671
-Product version: 10.0.40 <br> App build: 10.0.1935.5	  | 				          | 
+Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17981 | • Functional: 10.0.37.2024032522 <br> • Build error fixed in: 10.0.37.202405TBD
 
 #### Features not yet supported
 
@@ -46,6 +46,23 @@ Feature	| 10.0.40 Feature state
 :--       	|:--		
 **Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the custom bank statement format | Mandatory
 **Modern bank reconciliation** | Preview
+
+# Next version
+Planned release date: 31 May 2024
+
+### Release 10.0.37.202405TBD
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+N/A		| DXC License	| Licensing		| New DXC License model 10.0.37.202405231. See [Release notes](../LMG/Release-notes.md) for more details.
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+17981		| Accounts payable | Pending invoice	| 10.0.40 build error caused by missing reference for the ProcessAutomation Model which is now used by the VendInvoiceInfoTable. <br> Used to determine whether the Pending invoices button is enabled/disabled in the Vendor Purchase Invoice form.
 
 # Current version
 
