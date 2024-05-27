@@ -4,8 +4,8 @@
 title: EDI
 description: EDI - Release notes
 author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-05-27
+manager: Pontus Ek
+ms.date: 2024-05-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,7 @@ This document describes the features that are either new or changed in the relea
 The matrix shows the DXC build versions compatiable for Microsoft versions and builds. <br>
 If blank: investigations are ongoing. <br>
 
-D365 Version	  | Any issues found in testing?	  | Compatible product version
+D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
 Product version: 10.0.37 <br> App build: 10.0.1725	  | No	          | 10.0.34.202307311
 Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No            | 10.0.34.202310312
