@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract - Release notes
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-05-17
+ms.date: 2024-05-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,7 +38,26 @@ D365 Version	  | Any issues found in testing?	  | Compatible product version
 Product version: 10.0.37 <br> App build: 10.0.1725	  | No	          | 10.0.34.202306151
 Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No            | 10.0.34.202306151
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No	          | 10.0.34.202306151
-Product version: 10.0.40 <br> App build: 10.0.1935.5	  | 	          | 
+Product version: 10.0.40 <br> App build: 10.0.1935.5	  |  • No functional issues <br> • Build error fixed in 17982 | • Functional: 10.0.37.202404261 <br> • Build error fixed in: 10.0.37.202405TBD
+
+# Next version
+Planned release date: 31 May 2024
+
+### Release 10.0.37.202405TBD
+
+<ins>New features</ins>
+
+Number	| Functionality	  	| Description
+:--	|:--		  	|:--	
+18003	| Label			| Remove DXC from Forex contract name in About > Version and Feature management
+N/A	| DXC License		| New DXC License model 10.0.37.202405231. See [Release notes](../LMG/Release-notes.md) for more details.
+
+<ins>Bug fixes</ins>
+
+Number	| Functionality	  	| Description
+:--	|:--		  	|:--	
+17982	| Pending invoice	| 10.0.40 build error caused by missing reference for the ProcessAutomation Model which is now used by the VendInvoiceInfoTable. <br> Used to determine whether the Pending invoices button is enabled/disabled in the Vendor Purchase Invoice form.
+17803	| Link to Forex contract	| Link to Forex contract removed after adding Purchase order to Voyage
 
 # Current version
 
