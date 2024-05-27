@@ -4,7 +4,7 @@
 title: Forex contract
 description: Forex contract - Release notes
 author: jdutoit2
-manager: Kym Parker
+manager: Pontus Ek
 ms.date: 2024-05-27
 ms.topic: article
 ms.prod: 
