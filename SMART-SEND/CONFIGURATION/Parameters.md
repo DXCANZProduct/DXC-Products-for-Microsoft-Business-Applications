@@ -38,22 +38,22 @@ On the Smart Send tab of the Email parameters form you can configure the type of
 |  **Field**  | **Description** | 
 |:---|:---|     
 |  **Default**  | Select a default business form or report per document type. When the Smart Send button is clicked on each of the document forms, the default business form or report is used. If none are selected, then the system default will be used. |   
-|  **Report**  | Select from a list of business form or report types that are supported for Smart Send. <br/> * Customer account statement <br/> * Payment advice (Vendor payment advice) <br/> * Purchase order <br/> * Sales invoice <br/> * Free text invoice <br/> * Sales quotation <br/> * Project invoice <br/> * Sales order confirmation <br/> * Packing slip <br/> * Sales agreement confirmation <br/> * Project quotation <br/> * Collection letter <br/> * Customer payment advice <br/> * Request for quotation <br/> * Container contents <br/> * Bill of lading <br/> * Sales return <br/> * Transfer overview. |  
+|  **Report**  | Select from a list of business forms or report types that are supported for Smart Send. <br/> * Customer account statement <br/> * Payment advice (Vendor payment advice) <br/> * Purchase order <br/> * Sales invoice <br/> * Free text invoice <br/> * Sales quotation <br/> * Project invoice <br/> * Sales order confirmation <br/> * Packing slip <br/> * Sales agreement confirmation <br/> * Project quotation <br/> * Collection letter <br/> * Customer payment advice <br/> * Request for quotation <br/> * Container contents <br/> * Bill of lading <br/> * Sales return <br/> * Transfer overview. |  
 |  **Report format**  | Select the report name available in the system. |  
 |  **Description**  | Basic description of the business form. |  
 |  **Email ID**  | Email templates to use when emailing the business form. |  
-|  **File name**  | File name that will be generated for the business form or report. Placeholder tags are supported. This helps with giving meaningful name to the files. Refer to [Email placeholder](Email_placeholder.md) for further detail on supported placeholder tags. |  
-|  **Recipient**  | This field is enabled for the following document types.	<br/> * Sales agreement confirmation <br/> * Sales order confirmation <br/> * Sales invoice <br/> * 	Sales packing slip <br/> * Purchase order <br/> <br/> Each of these documents have an email address that can be entered on the header (Sales table and Purchase table). Note the Sales agreement confirmation allows a contact person to be nominated on header which the primary email address is derived. <br/> <br/> The following options are available: <br/> **Account** – use contact information from the customer or vendor. <br/> **Specific** – use the email address specified on the sales order header or purchase order header, or the Contact person (primary email address) specified on Sales agreement confirmation header. <br/>	**Both** – Both the specific and account contact information will be used. <br/> <br/> For the Transfer overview, only Account is selectable. Smart Send will find any Contacts with the relevant Purpose attached to the “To warehouse address” as specified on the Transfer order. |  
-|  **Include account contacts**  | When this parameter is enabled, in addition to the defined Recipients, Smart Send will also search for and email the business form to any Contact person attached to the Customer or Vendor account that hold the same Account and Contact information purpose as defined for this business form. |  
-|  **Hold email in the queue**  | By selecting to hold emails, the emails will be marked with status of “Suspended”. These will need to be released manually from the “Email sending status” form. | 
+|  **File name**  | File name that will be generated for the business form or report. Placeholder tags are supported. This helps with giving meaningful names to the files. Refer to [Email placeholder](Email_placeholder.md) for further details on supported placeholder tags. |  
+|  **Recipient**  | This field is enabled for the following document types.	<br/> * Sales agreement confirmation <br/> * Sales order confirmation <br/> * Sales invoice <br/> * 	Sales packing slip <br/> * Purchase order <br/> <br/> Each of these documents have an email address that can be entered on the header (Sales table and Purchase table). Note the Sales agreement confirmation allows a contact person to be nominated on the header from which the primary email address is derived. <br/> <br/> The following options are available: <br/> **Account** – use contact information from the customer or vendor. <br/> **Specific** – use the email address specified on the sales order header or purchase order header, or the Contact person (primary email address) specified on Sales agreement confirmation header. <br/>	**Both** – Both the specific and account contact information will be used. <br/> <br/> For the Transfer overview, only Account is selectable. Smart Send will find any Contacts with the relevant Purpose attached to the “To warehouse address” as specified on the Transfer order. |  
+|  **Include account contacts**  | When this parameter is enabled, in addition to the defined Recipients, Smart Send will also search for and email the business form to any Contact person attached to the Customer or Vendor account that holds the same Account and Contact information purpose as defined for this business form. |  
+|  **Hold email in the queue**  | By selecting to hold emails, the emails will be marked with the status of “Suspended”. These will need to be released manually from the “Email sending status” form. | 
 |  **Convert to PDF**  | This feature is only for documents created when using the smart send button. This will convert an electronic report from its base format to PDF.  <br/> <br/> When using print management, the electronic reporting destination is used to determine if the document is converted to PDF. | 
 |  **Purpose**  | A purpose must be selected. The purpose is used to find an email address from the customer or vendor contact information.  You can assign multiple purposes to a contact allowing one or multiple contact/s to be used for multiple SmartSend forms |  
 
 ## General
 
-In the general section you can define for the current business form
+In the general section, you can define for the current business form
 * Additional attachments to be included in the email
-* Alternative email to be used when and email address is not found.
+* Alternative email to be used when an email address is not found.
 * Azure Blob Storage to store copies of documents distributed.
 
 ### Additional attachments
@@ -69,7 +69,7 @@ In addition to the above, when a Smart Send email is sent, any files attached to
 Smart Send also includes an extension hook to enable a customer to create an extension class to attach a document handling attached file from another source, for example Purchase/Sales order lines. Refer to the Smart Send [technical guide](../TECHNICAL-GUIDE/Technical-guide.md).
 
 ### Sending User
-Sending user feature allows you add the sending user , i.e. the current logged on user (User options>Sender email see Figure 9. User options – Sender email) as an additional recipient, as either a To: Cc: or Bcc recipient. If the messages are sent in batch this will be based on the user that has set the batch process.
+The sending user feature allows you to add the sending user, i.e. the current logged-on user (User options>Sender email see Figure 9. User options – Sender email) as an additional recipient, as either a To: Cc: or Bcc recipient. If the messages are sent in batch this will be based on the user that has set the batch process.
 
 |  **Field**  | **Description** | 
 |:---|:---|     
