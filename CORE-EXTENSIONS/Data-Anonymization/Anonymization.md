@@ -102,7 +102,7 @@ When selected this function will bring up a list of common System tables and the
 
 ### Populating Data
 
-Once all fields have been added to the Data anonymization fields FastTab begin selecting the type of Data you want populated as outlined in  [Data anonymization profiles](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/master/CORE-EXTENSIONS/Data-Anonymization/Anonymization.md#data-anonymization-profiles) above.
+Once all fields have been added to the Data anonymization fields FastTab begin selecting the type of Data you want populated as outlined in  *Data anonymization profiles*
 
 Selecting Is randomized allows you to choose the data value type from the drop-down list of available formats and apply this individually to each record within that field to generate unique records
 
