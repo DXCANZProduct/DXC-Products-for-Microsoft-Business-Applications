@@ -95,11 +95,3 @@ Under the Smart Send tab, you can turn on Azure Blob Storage for each document t
 |  **Blob container**  | Container name which will be saved under. A container is created if it does not exist. This is a required field. |
 |  **Folder name**  | Folder name to save the file. This field can be left blank if you want all files to be created under the primary blob container. Placeholder tags can be utilized in this field to dynamically create folders. <br/> <br/> For example, you can create a folder based on the created date using %CreatedDate%. A backslash can be used to nest folders. <br/> <br/> The following will create a folder with the created date and the customer number. <br/> E.g. %CreatedDate%\%AccountNum% <br/> 20180622\C12345 <br/>  <br/> Refer to [Email Placeholder](Email_placeholder.md) for further detail on supported placeholder tags. |
 |  **Overwrite**  | If a file exists with the same name, it will be only overwritten if this field is ticked. |
-
-
-### Data Entities
-
-- Organization email template
-- Address and contact information purpose
-- Organization email template message
-- SmartSend setup
