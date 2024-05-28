@@ -38,7 +38,7 @@ To Utilise Data Anonymization Enable the following feature in D365 Feature manag
 
 - Data anonymization
 
-If the above feature is not visible, press **Check for updates** to refresh the feature management list.
+Press **Check for updates** to refresh the feature management list if the above feature is not visible.
 
 Once Enabled,  the Data Anonymization Menu is visible  under the Organization Administration module.  Navigate to **Organization administration > Setup > Data anonymization**
 
@@ -67,22 +67,22 @@ The following table outlines the fields available in the Data anonymization prof
 |  **Description**  | Yes | Unique description for the anonymization profile that will be used to scramble data values. |  
 |  **Anonymization table**  | Yes | The D365 Table name that contains the sensitive data. |  
 |  **Table Label**  | N/A | This is the label that has been given to the Table that is visible within the User Interface, sometimes referred to as a friendly name.  This field is displayed when  the Anonymization Dropdown is selected and will subsequently  populate when you nominate the requested Table.    |  
-|  **Run across all companies**  | No | When ticked this will apply the scramble values for the selected criteria in all legal entities within the environment.  In some cases where a table is global, this field is required in order to successfully scramble data |  
+|  **Run across all companies**  | No | When ticked this will apply the scramble values for the selected criteria in all legal entities within the environment.  In some cases where a table is global, this field is required in order to scramble data successfully |  
 |  **Company**  | Yes | Select the legal entity you wish to run the scramble for.  If “Run across all companies” is ticked this field is no longer mandatory and is greyed out. |  
 |  **Data anonymization field**  | Yes | This is the name of the field that contains the data within your selected  table |  
-|  **Field label value**  | Yes | This is the common name (a.k.a Friendly name) of the field where the scrambled data is stored.  This is commonly what is seen by users within the user interface |  
-|  **Field type**  | Auto | This will automatically populate and display the type of data that is input into this field. Eg String, date <br> Fields of Type VarString is a variable length field and does not allow data types other than Random |  
+|  **Field label value**  | Yes | This is the field's common name (a.k.a Friendly name) where the scrambled data is stored.  This is commonly what is seen by users within the user interface |  
+|  **Field type**  | Auto | This will automatically populate and display the data input type into this field. Eg String, date <br> Fields of Type VarString is a variable length field and does not allow data types other than Random |  
 |  **Is randomized**  | No | When enabled this field allows users to have Random Data, with various formats available,  generated per record. If not enabled the **Scrambled Data Value Type** will default to *custom* and will require a value to be specified |  
 |  **Scrambled data value Type**  | No | This field allows you to select the format the scrambled data will take. Currently you can choose from <br> • Full Name <br> • First Name <br> • Middle Name <br> • Last Name <br> • Suffix <br> • Email <br> • Street Name <br> • Address <br> • City <br> • Zip Code <br> • State <br> • Company Name <br> • Or Random , which generates a randomised data string
 |  **Scrambled data value**  | No | If you select *Custom*  in **Scrambled Data Value Type** the user must input a value that will be utilised for all records in the specified field, that are being Anonymized.  However, if **Is randomized** is enabled the value displayed is a sample that will be used based on the selection made in **Scrambled data value Type**
-|  **Prefix for scrambled data value**  | No | Inserts a prefix to the scrambled value, currently only company Id is available.<br/><br/>Note: When making use of prefixes, the Run across all companies must be set to No (Unchecked). If it is checked, then the prefix will be ignored and only the scramble value will be applied |  
+|  **Prefix for scrambled data value**  | No | Inserts a prefix to the scrambled value, currently only company ID is available.<br/><br/>Note: When making use of prefixes, the Run across all companies must be set to No (Unchecked). If it is checked, then the prefix will be ignored and only the scramble value will be applied |  
 
 
 ### Initiate data anonymization. 
 To initiate data anonymization, you first need to create the profile. 
 1. Navigate to **Organization administration > Setup > Data anonymization > Data anonymization profiles**
 2. Select “New” from the top menu ribbon, fill in Name and Description then click Save from the ribbon bar.
-3. on the Data anonymization Table Tab select New to begin selecting the relevant table/s from the drop-down menu or select from a predefined list of default tables using the *Load default tables* option.
+3. on the Data anonymization Table Tab select New to select the relevant table/s from the drop-down menu or select from a predefined list of default tables using the *Load default tables* option.
 4. Select Company or tick *Run across all companies* to update all legal entities, then save the selection.
    *You can subsequently edit and/or delete tables from the list as required.
 
@@ -102,20 +102,20 @@ When selected this function will bring up a list of common System tables and the
 
 ### Populating Data
 
-Once all fields have been added to the Data anonymization fieldsFastTab you can either select to populate the field with Random generated data 
+Once all fields have been added to the Data anonymization fields FastTab begin selecting the type of Data you want populated as outlined in  [Data anonymization profiles](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/master/CORE-EXTENSIONS/Data-Anonymization/Anonymization.md#data-anonymization-profiles) above.
 
+Selecting Is randomized allows you to choose the data value type from the drop-down list of available formats and apply this individually to each record within that field to generate unique records
 
+When *Is randomized* is unticked the *Scrambled data value type* will default to Custom and requires the Scrambled data value to be populated manually, which subsequently applies to all records
 
 
 Once all Tables and fields have been populated select the **Initiate data anonymisation** button from the ribbon bar and add the scramble job to the batch job processing queue.
 
-If the batch job completes successfully the below is displayed
+### Batch Processing
 
-![Ended](../IMAGES/Ended.png)
+When A batch process is initiated a runtime task is created with any associated description the user has provided for the task as well as a separate batch job/Task for each table that has been requested.  If All tables and fields are updated successfully  the user-initiated runtime task/job  status will be updated to ended
 
-However, if the batch job fails and the anonymisation process does not complete a error batch job is created for the table. 
+However, if a table cannot be updated a separate batch job identifying the Table (eg Process data anonymization for Customers table) will have an error status with a log of the error that can subsequently be reviewed.
 
-![Error](../IMAGES/Error.png)
 
-To identify the error that has caused the job to fail review the log from the batch tasks form as per standard batch job troubleshooting. 
 
