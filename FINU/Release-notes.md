@@ -38,7 +38,7 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 Product version: 10.0.37 <br> App build: 10.0.1725	  | Yes - see 16069 & 16244	          | 10.0.35.2023073122
 Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No				          | 10.0.35.2023073131
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No				          | 10.0.36.2023111671
-Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17981 | • Functional: 10.0.37.2024032522 <br> • Build error fixed in: 10.0.37.202405TBD
+Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17981 | • Functional: 10.0.37.2024032522 <br> • Build error fixed in: 10.0.37.202405291
 
 #### Features not yet supported
 
@@ -47,16 +47,27 @@ Feature	| 10.0.40 Feature state
 **Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the custom bank statement format | Mandatory
 **Modern bank reconciliation** | Preview
 
-# Next version
-Planned release date: 31 May 2024
+# Current version
 
-### Release 10.0.37.202405TBD
+### Release 10.0.37.20240529
+
+DXC Finance Utilities 10.0.37 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
+Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
+Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
+Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+
+#### Build 10.0.37.202405291
+Release date: 29 May 2024 <br>
 
 <ins>New features</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-17215		| Various 	| Azure Connection	| Replace deprecated [Microsoft.WindowsAzure.Storage](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/storage/windowsazurestorage%28deprecated%29?view=azure-dotnet-legacy) with [Azure.Storage.Blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-dotnet-get-started?tabs=azure-ad). <br> Applicable to: <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections <br> • Accounts receivable > Payments setup > Financial utilities connections (AR utilities feature) <br> • Organization administration > Electronic reporting > Electronic reporting export connections
+17215		| Various 	| Azure Connection	| Replace deprecated [Microsoft.WindowsAzure.Storage](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/storage/windowsazurestorage%28deprecated%29?view=azure-dotnet-legacy) with [Azure.Storage.Blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-dotnet-get-started?tabs=azure-ad).  <br> Applicable to: <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections <br> • Accounts receivable > Payments setup > Financial utilities connections (AR utilities feature) <br> • Organization administration > Electronic reporting > Electronic reporting export connections <br> <br> DXC_AzureClient 20240529.9.0
 16595		| Various	| Error messages	| Improved error messages for: <br> • Electronic reporting export connections - for errors with setup when generating ER file. <br> • Run reconcilation matching rule that can't find the customer account - include value of bank statement field with issue
 N/A		| DXC License	| Licensing		| New DXC License model 10.0.37.202405231. See [Release notes](../LMG/Release-notes.md) for more details.
 
@@ -70,18 +81,50 @@ Number	  	| Module	| Functionality	  	| Description
 17998		| ABN validation	| Rename objects	| Rename objects ending with DXC_Extension: <br> • TaxVATNumTableForm_DXC_Extension <br> • TaxSalesTaxProcessReferenceDataInquire.DXC_Extension <br> • TaxSalesTaxTransactionStatusInquire.DXC_Extension <br> • TaxSalesTaxTrnStatusInquirWithoutTaxPrv.DXC_Extension <br> • TaxVATNumTable.DXC_Extension
 18018		| Various   		| Rename objects	| Rename objects ending with DXC_Extension: <br> • BankStatementFormatForm_DXC_Extension <br> • BankChequeTableForm_DXC_Extension <br> • VendPaymMode_DXC_Extension <br> • BankTreasurerWorkspace_DXC_Extension <br> • VendorPaymentHistory_DXC_Extension <br> • BankReconciliationMatchRule_DXC_Extension <br> • CustPaymMode_DXC_Extension <br> • BankStatementTableForm_DXC_Extension
 
-# Current version
+
+
+# Deprecated features
+
+This section describes the features that have been removed, or planned to be removed from a Finance utilities version.
+
+### Vendor bank account change workflow
+- Reason for deprecation/removal - Replaced by D365 feature from 10.0.32 called 'Vendor bank account change proposal workflow' / 'Supplier bank account change proposal workflow'. [Learn more](https://learn.microsoft.com/en-gb/dynamics365/finance/accounts-payable/vendor-bank-account-workflow)
+- Impact - Removal of the following fields in Accounts payable parameters FastTab 'Vendor approval':
+	- Bank account number
+	- Bank account BSB
+	- Bank account biller code (Finance utilities field)
+	- Bank account lodgement reference (Finance utilities field)
+	- Bank account bank group
+	- Bank account SWIFT code
+	- Bank account IBAN
+	- Bank account active date
+	- Bank account expiration date
+- Notice date - 24 July 2023
+- Status - Completed in 10.0.36.202311161
+> Note: The Finance utilities fields (Biller code and Lodgement reference) have been added to standard 'Vendor bank account approval' FastTab in Accounts payable parameters in Finance Utilities version 10.0.35.202307311.
+
+### New bank statement transaction - Posting date
+- Finance Utilities functionality - Option to post **new** bank statement transaction at either **Today's date** or **Statement transaction date** (Statement's To date)
+- Recommended process: Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' is automatically enabled from 10.0.36. The feature automatically sets new 'Cash and bank management parameters' field 'Set the booking date as default accounting date for new transactions' to _Yes_. Select applicable option in this new field to set the default accounting date for new transactions:
+	- Yes: Bank statement line booking date
+ 	- No: Bank statement import date 
+- Reason for deprecation/removal - Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' was introduced in 10.0.31. In 10.0.35 MS has updated the feature which has resulted in a breaking change for Finance Utilities Posting date functionality. From 10.0.36 this feature is enabled by default.
+- Impact - Removal of the following fields & functionality:
+	- Posting date default on bank account <br>
+	- Posting date option on importing bank statement <br>
+ 	- Posting date on bank reconciliation <br>
+- Notice date - 4 September 2023
+- Status - Completed in 10.0.36.202311161
+
+![Bank statement](Images/Deprecate_PostingDate_1.png "Bank statement") <br>
+
+![Bank reconciliation](Images/Deprecate_PostingDate_2.png "Bank reconciliation")
+
+# Previous version(s)
+
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.37.20240325
-
-DXC Finance Utilities 10.0.37 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
-Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
-Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
-
 
 #### Build 10.0.37.2024032531
 Release date: 16 May 2024 <br>
@@ -149,47 +192,6 @@ Number	  	| Module	| Functionality	  	| Description
 17126		| Cash and bank management	| Reconciliation matching rule	| When used to create automatically posted Customer dishonour payments, the automatically matching in the Bank reconciliation failed. 
 17437		| Cash and bank management	| Bank statement periodic import | Archive issue when connection has high latency. File deleted before it could copy to Archive. Change: Before delete the result of copy is awaited and retried for 1 seconds 3 times before marking as an exception.
 
-
-# Deprecated features
-
-This section describes the features that have been removed, or planned to be removed from a Finance utilities version.
-
-### Vendor bank account change workflow
-- Reason for deprecation/removal - Replaced by D365 feature from 10.0.32 called 'Vendor bank account change proposal workflow' / 'Supplier bank account change proposal workflow'. [Learn more](https://learn.microsoft.com/en-gb/dynamics365/finance/accounts-payable/vendor-bank-account-workflow)
-- Impact - Removal of the following fields in Accounts payable parameters FastTab 'Vendor approval':
-	- Bank account number
-	- Bank account BSB
-	- Bank account biller code (Finance utilities field)
-	- Bank account lodgement reference (Finance utilities field)
-	- Bank account bank group
-	- Bank account SWIFT code
-	- Bank account IBAN
-	- Bank account active date
-	- Bank account expiration date
-- Notice date - 24 July 2023
-- Status - Completed in 10.0.36.202311161
-> Note: The Finance utilities fields (Biller code and Lodgement reference) have been added to standard 'Vendor bank account approval' FastTab in Accounts payable parameters in Finance Utilities version 10.0.35.202307311.
-
-### New bank statement transaction - Posting date
-- Finance Utilities functionality - Option to post **new** bank statement transaction at either **Today's date** or **Statement transaction date** (Statement's To date)
-- Recommended process: Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' is automatically enabled from 10.0.36. The feature automatically sets new 'Cash and bank management parameters' field 'Set the booking date as default accounting date for new transactions' to _Yes_. Select applicable option in this new field to set the default accounting date for new transactions:
-	- Yes: Bank statement line booking date
- 	- No: Bank statement import date 
-- Reason for deprecation/removal - Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' was introduced in 10.0.31. In 10.0.35 MS has updated the feature which has resulted in a breaking change for Finance Utilities Posting date functionality. From 10.0.36 this feature is enabled by default.
-- Impact - Removal of the following fields & functionality:
-	- Posting date default on bank account <br>
-	- Posting date option on importing bank statement <br>
- 	- Posting date on bank reconciliation <br>
-- Notice date - 4 September 2023
-- Status - Completed in 10.0.36.202311161
-
-![Bank statement](Images/Deprecate_PostingDate_1.png "Bank statement") <br>
-
-![Bank reconciliation](Images/Deprecate_PostingDate_2.png "Bank reconciliation")
-
-# Previous version(s)
-
-Approximately one year of previous versions are included below.
 
 ### Release 10.0.36.20231116
 
