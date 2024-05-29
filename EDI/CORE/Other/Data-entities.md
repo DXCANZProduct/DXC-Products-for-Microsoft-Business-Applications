@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Data entities
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-09-29
+ms.date: 2024-05-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -92,12 +92,16 @@ EDI > Setup > Document types (Template, Validation, Outbound file names and Stag
 1		  | EDI template code transformation	| Create new **Code transformation** template and setup
 2     | EDI template section  | Create new **section** for existing XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI template code transformation
 3    | EDI template fields   | Create new **fields** for existing sections for XSLT Transformation, XSLT Collection, JSON, JSON Collection or Code Transformation template types | • EDI template section
-**EDIFACT**       |  | Applicable to **EDI - Standard formats** module |
+**EDIFACT**       |  | Applicable to **EDI - Standard formats** module for **EDIFACT** types |
 1	   | EDI Template EDIFACT            | Create new **EDIFACT** template and setup					|
 2	   | EDI Template EDIFACT section    | Section details for the **EDIFACT** template				| • EDI Template EDIFACT
 3	   | EDI Template EDIFACT element    | Element details for each section for the **EDIFACT** template		| • EDI Template EDIFACT section
+**X12**       |  | Applicable to **EDI - Standard formats** module for **X12** types|
+1	   | EDI Template X12            | Create new **X12** template and setup					|
+2	   | EDI Template X12 section    | Section details for the **X12** template				| • EDI Template X12
+3	   | EDI Template X12 element    | Element details for each section for the **X12** template		| • EDI Template X12 section
 
-> Note: If the EDIFACT template has been created manually (not via data entity), first delete the default UNA elements before importing Section and Element entities for the template. <br> Re-import data package if elements are not populated.
+> Note: If the EDIFACT or X12 template has been created manually (not via data entity), first delete the default UNA / ISA elements before importing Section and Element entities for the template. <br> Re-import data package if elements are not populated.
 
 ### Setting profiles
 Setting profiles are module specific and discussed within each module.
