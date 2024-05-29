@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Pontus Ek
-ms.date: 2024-05-28
+ms.date: 2024-05-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,6 +55,12 @@ Number	| Name		 | Description
 :--	|:--		  	|:--
 17218	| Connection types - Azure	| Replace deprecated [Microsoft.WindowsAzure.Storage](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/storage/windowsazurestorage%28deprecated%29?view=azure-dotnet-legacy) with [Azure.Storage.Blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-dotnet-get-started?tabs=azure-ad). 
 N/A	| DXC License	| New DXC License model 10.0.37.202405231. See [Release notes](../LMG/Release-notes.md) for more details.
+
+**Standard formats module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+9488	| X12		 | Support for **X12** format in Template type. See [user guide](CORE/Setup/DocumentTypes/File-templates.md#x12-files)
 
 **Customer module**	
 
