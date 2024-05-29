@@ -4,8 +4,8 @@
 title: EDI Core
 description: EDI Core - Setup document types - File templates
 author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-03-14
+manager: Pontus Ek
+ms.date: 2024-05-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,6 +45,7 @@ Create new template:
     - [JSON Collection](#json-files) - multiple headers supported
     - [Code Transformation](#code-transformation-files) - single header supported
     - [EDIFACT](#edifact-files) - EDI - Standard formats license only
+    - [X12](#x12-files) - EDI - Standard formats license only
 - Select **Create**
 
 Copy existing template:
@@ -443,7 +444,124 @@ Header section	                   | UNH (Message header)         | Message refer
 <br>        		               | <br>                         | <br>                          | UN (Controlling agency, code)
 <br>        		               | <br>                         | <br>                          | EAN010 (Association assigned code)
 
-##### Custom format
+### X12 files
+
+#### Prerequisites
+License: IconEDIStandardFormats <br>
+Feature enabled: EDI - Standard formats
+
+#### X12 files templates setup
+If required, update the general settings by seleting the **Setup** button. <br>
+
+The following Options under General, are defaulted for EDIFACT and are used to populate the mappings in UNA Service string.
+
+**Field** 	                            | **Default**                      
+:---------------------------------------|:-------------------------------------
+**Delimiter**                           | ^
+**Decimal mark**                        | .
+**Segment terminator**                  | ~
+
+
+If required to update regional, decimals or date settings, see [Standard setup](#standard-setup).
+
+> Note: The **Decimal separator** is linked to the **Decimal mark**. <br>
+> Date formats can also be overridden for a specific field within Mappings by using [Custom format](#custom-format). For example, the document’s date format is set to yyyyMMdd, but can use yyyyMMddHHmm for specific field CreatedDateTime.
+
+#### X12 files template mappings
+
+Each document type has its own fields that can be either mapped to for incoming files or mapped from for outgoing files. When creating an X12 template, it automatically creates the EDI message and populates ISA section under Mappings. X12 mappings uses a tree structure, and normally includes a:
+- **Header section** – Header provides information related to the message, recipient, sender, reference, name and address, etc.
+- **Detail section** - Related to line-item information. For example: line number, item numbers, quantities, and pricing. Since this section needs to repeat per staging line: Select the line staging table in field **Staging table**.
+- **Summary section** – Document’s total monetary amounts. Also includes Section control, Control total and Message trailer.
+
+Select **Mappings** to access the template’s mappings.
+
+##### Sections
+
+- Select **Add section** and enter a **Name**. Sections can be added under existing sections to create a tree structure. <br>
+When creating the **Detail section** (that will be repeated for each line), select the applicable **Staging table** next to the Section’s **Name**. This will ensure the section is repeated for each line record. This is not required for Header or Summary section.
+<br>
+Example Sections are:
+- Header section
+- Detail section
+- Summary section
+
+> Note: To **Delete** a section, select the section then select **Delete section**.
+
+##### Segment
+
+The level under Section is called **Segments**. <br>
+- Select the applicable Section and select **New** to add a Segment.
+- Enter a **Static value** OR select the applicable **Staging field**. Segments are usually Static values like UNH, BGM, etc. <br>
+When selecting a **Staging field**, the Staging table options include the header, line staging tables. <br>
+It also includes **EDI X12 message**, which includes options like:
+    - Created date
+    - Created time
+    - Decimal mark
+    - Delimiter
+    - Reserved
+    - Segment terminator
+    - Segment count
+- **Name** is defaulted from the Static value / Staging field but can be overridden.
+- Where applicable, enter a [Custom format](#custom-format) for the field.
+
+> Note: To **Delete** a Segment, select the record then select **Delete**. <br>
+> Segments can be moved up or down within its Section by using the **Up** and **Down** buttons.
+
+
+##### Composites
+
+The level under Segments is called **Composites**. 
+- Select the applicable Segment and select **New** to add a Composite.
+- Enter a **Static value** OR select the applicable **Staging field**. <br>
+When selecting a **Staging field**, the Staging table options include the header, line staging tables. <br>
+It also includes **EDI X12 message**, which includes options like:
+    - Created date
+    - Created time
+    - Decimal mark
+    - Delimiter
+    - Reserved
+    - Segment terminator
+    - Segment count
+- **Name** is defaulted from the Static value / Staging field but can be overridden.
+- Where applicable, enter a [Custom format](#custom-format) for the field.
+
+> Note: To **Delete** a composite, select the record then select **Delete**. <br>
+> Composites can be moved up or down within its Segment by using the **Up** and **Down** buttons. <br>
+
+
+##### Elements
+
+The level under Composites is called **Elements**. 
+- Select the applicable Composite and select **New** to add an Element.
+- Enter a **Static value** OR select the applicable **Staging field**. <br>
+When selecting a **Staging field**, the Staging table options include the header, line staging tables. <br>
+It also includes **EDI X12 message**, which includes options like:
+    - Created date
+    - Created time
+    - Decimal mark
+    - Delimiter
+    - Reserved
+    - Segment terminator
+    - Segment count
+- **Name** is defaulted from the Static value / Staging field but can be overridden.
+- Where applicable, enter a [Custom format](#custom-format) for the field.
+
+> Note: To **Delete** an Element, select the record then select **Delete**. <br>
+> Elements can be moved up or down within its Composite by using the **Up** and **Down** buttons. <br> 
+
+
+Short example to display section, segment, composite, element relation:
+
+**Section** 	                   | **Segment**                  | **Composite**                                 
+:----------------------------------|:-----------------------------|:------------------------------
+Header section	                   | GS (Message header)          |                               
+<br>        		        	   | <br>                         | PO (Message type)             		
+<br>        		        	   | <br>                         | Application Sender Code                          
+<br>        		               | <br>                         | Application Receiver Code                         
+                   
+
+### Custom format
 
 Field mappings can have C# formats applied by using the field Custom format, some examples include: <br>
 
@@ -460,7 +578,7 @@ More examples:
 - [https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings)
 - [http://blog.stevex.net/string-formatting-in-csharp/](http://blog.stevex.net/string-formatting-in-csharp/)
 
-##### Example
+### Example
 
 An example of the document’s format can be viewed under the **Example** FastTab in **Mappings**. <br>
 **Segment** will display the selected Segment’s example, whereas **Message** displays the complete message’s example. <br>
