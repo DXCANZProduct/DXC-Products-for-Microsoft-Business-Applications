@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Pontus Ek
-ms.date: 2024-05-28
+ms.date: 2024-05-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -57,6 +57,7 @@ Planned release date: 31 May 2024
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
 17215		| Various 	| Azure Connection	| Replace deprecated [Microsoft.WindowsAzure.Storage](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/storage/windowsazurestorage%28deprecated%29?view=azure-dotnet-legacy) with [Azure.Storage.Blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-dotnet-get-started?tabs=azure-ad). <br> Applicable to: <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections <br> • Accounts receivable > Payments setup > Financial utilities connections (AR utilities feature) <br> • Organization administration > Electronic reporting > Electronic reporting export connections
+16595		| Various	| Error messages	| Improved error messages for: <br> • Electronic reporting export connections - for errors with setup when generating ER file. <br> • Run reconcilation matching rule that can't find the customer account - include value of bank statement field with issue
 N/A		| DXC License	| Licensing		| New DXC License model 10.0.37.202405231. See [Release notes](../LMG/Release-notes.md) for more details.
 
 <ins>Bug fixes</ins>
