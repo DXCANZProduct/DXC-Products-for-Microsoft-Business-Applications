@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Pontus Ek
-ms.date: 2024-05-29
+ms.date: 2024-05-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,7 +38,7 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 Product version: 10.0.37 <br> App build: 10.0.1725	  | Yes - see 16069 & 16244	          | 10.0.35.2023073122
 Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No				          | 10.0.35.2023073131
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No				          | 10.0.36.2023111671
-Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17981 | • Functional: 10.0.37.2024032522 <br> • Build error fixed in: 10.0.37.202405291
+Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17981 | • Functional: 10.0.37.2024032522 <br> • Build error fixed in: 10.0.37.202405302
 
 #### Features not yet supported
 
@@ -49,7 +49,7 @@ Feature	| 10.0.40 Feature state
 
 # Current version
 
-### Release 10.0.37.20240529
+### Release 10.0.37.20240530
 
 DXC Finance Utilities 10.0.37 runs on the following Microsoft releases
 
@@ -60,8 +60,8 @@ Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 
-#### Build 10.0.37.202405291
-Release date: 29 May 2024 <br>
+#### Build 10.0.37.202405302
+Release date: 30 May 2024 <br>
 
 <ins>New features</ins>
 
