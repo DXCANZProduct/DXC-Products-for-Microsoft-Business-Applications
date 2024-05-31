@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-05-03
+ms.date: 2024-05-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,13 +37,12 @@ This page describes the features planned for future releases and planned release
 
 Release			| ETA
 :--			    |:--
-2024-05     | 31 May 2024
-2024-07     | 31 July 2024
+2024-08     | 31 Aug 2024
+2024-11     | 29 Nov 2024
+
 
 
 ## Next release
-ETA: 31 May 2024
 
-- X12 format in Standard formats module (additional licensed module)
 
 
