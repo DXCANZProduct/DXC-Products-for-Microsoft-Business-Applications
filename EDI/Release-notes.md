@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: jdutoit2
 manager: Pontus Ek
-ms.date: 2024-05-29
+ms.date: 2024-05-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,12 +40,27 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 Product version: 10.0.37 <br> App build: 10.0.1725	  | No	          | 10.0.34.202307311
 Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No            | 10.0.34.202310312
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No	          | 10.0.34.202310312
-Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17978 | • Functional: 10.0.37.202405023 <br> • Build error fixed in: 10.0.37.202405TBD
+Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17978 | • Functional: 10.0.37.202405023 <br> • Build error fixed in: 10.0.37.202405302
 
-# Next version
-Planned release date: 31 May 2024
+# Current version
 
-### Release 10.0.37.202405TBD
+Next release is planned for 31 Aug 2024.
+
+### Release 10.0.37.20240530
+
+DXC EDI 10.0.37 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
+Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
+Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
+Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+
+
+#### Build  10.0.37.202405302
+Release date: 31 May 2024 <br>
+
 
 <ins>New features</ins>
 
@@ -53,7 +68,7 @@ Planned release date: 31 May 2024
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
-17218	| Connection types - Azure	| Replace deprecated [Microsoft.WindowsAzure.Storage](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/storage/windowsazurestorage%28deprecated%29?view=azure-dotnet-legacy) with [Azure.Storage.Blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-dotnet-get-started?tabs=azure-ad). 
+17218	| Connection types - Azure	| Replace deprecated [Microsoft.WindowsAzure.Storage](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/storage/windowsazurestorage%28deprecated%29?view=azure-dotnet-legacy) with [Azure.Storage.Blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-dotnet-get-started?tabs=azure-ad).  <br> DXC_AzureClient 2024.05.30.1
 N/A	| DXC License	| New DXC License model 10.0.37.202405231. See [Release notes](../LMG/Release-notes.md) for more details.
 
 **Standard formats module**	
@@ -97,20 +112,11 @@ Number	| Name		 | Description
 17864	| Product master	| Fix to Barcode and GTIN after adding UOM mapping in 10.0.37.202405023
 
 
-# Current version
+# Previous version(s)
 
-Next release is planned for 31 May 2024.
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.37.20240502
-
-DXC EDI 10.0.37 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
-Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
-Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
-
 
 #### Build  10.0.37.202405023
 Release date: 2 May 2024 <br>
@@ -184,9 +190,6 @@ Number	| Name		 | Description
 :--	|:--		  	|:--	
 16295	| Shipment advice - Voyage | Applicable to Voyages created for **Transfer orders**. **From warehouse** was used to determine if **Send to EDI** was enabled and applicable Trading partner settings. **To warehouse** for the Transfer order is now used.
 
-# Previous version(s)
-
-Approximately one year of previous versions are included below.
 
 ### Release 10.0.34.20231031
 
