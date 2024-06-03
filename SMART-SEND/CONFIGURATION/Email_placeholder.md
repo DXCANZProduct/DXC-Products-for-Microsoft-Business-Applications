@@ -30,12 +30,12 @@ ms.dyn365.ops.version: AX 7.0.1
 # Email Placeholder
 Placeholder tags are variables that are dynamically replaced during the execution of the business forms or reports. The following fields support placeholder tags:
 * Email Subject
-* Email body
+* Email Body
 * Filename
 * Azure blob storage folder name
 
 ## Fixed List Placeholder Tokens
-Each of the Smart Send supported documents have a fixed list of tags. These are listed below:
+Each of the SmartSend supported documents has a fixed list of tags. These are listed below:
 
 |  **Document**  | **Fixed token** | 
 |:---|:---|     
@@ -51,7 +51,7 @@ Each of the Smart Send supported documents have a fixed list of tags. These are 
 |  **Collection Letter**  | Collection Letter Number %CollectionLetterNum% <br/> Account Number: %AccountNum% <br/> Account Name: %AccountName% <br/> Date: %Date% <br/> Due Date: %DueDate <br/> Total: %Total% <br/> Notes: %Notes% |
 |  **Request for Quotation**  | RFQ Id: %RFQId% <br/> Account Number: %VendAccountNum% <br/> Account Name: %VendAccountName% <br/> RFQ Document Number: %RFQDocNum% <br/> RFQ Date: %RFQDate% <br/> RFQ Name: %RFQName% <br/> Vendor Reference: %VendRef% <br/> Orderer: %Orderer% <br/> Requested By Name %RequestedBy% |
 |  **Purchase Order**  | Purchase Order Id: %PurchaseOrderId% <br/> Purchase Journal: %PurchaseJournal% <br/> Order Account: %OrderAccount% <br/> Delivery Name: %DeliveryName% <br/> Purchase Date: %PurchaseDate% <br/> Created Date: %CreatedDate% <br/> Requestor’s Name: %RequestorName% <br/> Requestor’s Email: %RequestorEmail% <br/> Orderer’s Name: %OrdererName% <br/> Orderer’s Email: %OrdererEmail% <br/> Vendor Name: %VendorName%  |
-|  **Vendor Payment Advice**  | Account Number: %AccountNum% <br/> Account Name: %AccountName% <br/> Journal Number: %JournalNum% <br/> Payment Advice Date: %PaymAdviceDate% <br/> Created Date: %CreatedDate% |
+|  **Vendor Payment Advice**  | Account Number: %AccountNum% <br/> Account Name: %AccountName% <br/> Journal Number: %JournalNum% <br/> Payment Advice Date: %PaymAdviceDate% <br/> Created Date: %CreatedDate% <br/> Company Name: %CompanyName%  |
 |  **Project Quotation**  | Quotation Id: %QuotationId% <br/> Quotation Document Number: %QuotationDocNum% <br/> Invoice Account: %InvoiceAccount% <br/> Prospect: %Prospect% <br/> Delivery Name: %DeliveryName% <br/> Quotation Date: %QuotationDate% <br/> Deadline: %Deadline% <br/> Project Id: %ProjectId% <br/> Project Name: %ProjectName%  |
 |  **Project Invoice**  | Project Id: %ProjId% <br/> Project Name: %ProjName% <br/> Project Contract Id: %ProjContractId% <br/> Invoice Id: %InvoiceId% <br/> Invoice Account: %InvoiceAccount% <br/> Delivery Name: %DeliveryName% <br/> Invoice Date: %InvoiceDate% <br/> Due Date: %DueDate% <br/> Created Date: %CreatedDate% |
 |  **Transfer Overview**  | Transfer number: %TransferId% <br/> From warehouse: %LocationNameFrom% <br/> From address: %FromAddress% <br/> To warehouse: %LocationNameTo% <br/> To address: %ToAddress% <br/> Transfer status: %TransferStatus% <br/> Ship date: %ShipDate% |
