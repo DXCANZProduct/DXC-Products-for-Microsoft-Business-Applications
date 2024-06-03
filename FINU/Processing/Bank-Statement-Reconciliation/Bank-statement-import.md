@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Bank statement reconciliation processing - Bank statement import 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2022-06-17
+ms.date: 2024-06-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,7 +58,7 @@ In addition, where Import statement for multiple bank accounts in all legal enti
 
 ### Periodic import
 
-The bank statement can also automatically be imported by using periodic task [Import bank statements via financial utilities connection](../Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md).
+The bank statement can also automatically be imported by using periodic task [Import bank statements via financial utilities connection](../../Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md).
 
 Filter **Imported via financial utilities connection** on the Bank statement import, can be used to filter to bank statements imported using above periodic task.
 
