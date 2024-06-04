@@ -27,8 +27,19 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# 	Release notes
+# Release notes
 This document describes the features that are either new or changed in the release version mentioned.
+
+# Version compatibility
+The matrix shows the DXC build versions compatible with Microsoft versions and builds. <br>
+If blank: investigations are ongoing. <br>
+
+D365 Version	  | Any issues found in testing?	  | Product version tested
+:--       	  |:--           			  |:--
+Product version: 10.0.37 <br> App build: 10.0.1725	  | No          | 10.0.37.202403263
+Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No				          | 10.0.37.202403263
+Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No				          | 10.0.37.202403263
+Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | 10.0.37.202403263
 
 # Current version
 
