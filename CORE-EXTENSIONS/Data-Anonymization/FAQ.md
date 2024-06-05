@@ -35,3 +35,8 @@ If you attempt to enter an invalid web address into the PROD URL Field you will 
 ![URL](../IMAGES/URL.png)
 
 To resolve this you must enter a valid Dynamics Finance and operation URL to proceed 
+
+### How is the fake Data Generated in Data Anonymisation?
+
+We make use of a.Net package called Bogus, which makes it easy to generate phoney but realistic data for testing, prototyping, and other uses without requiring actual data. It directly uses locales from Faker.js, which are straightforward JavaScript files with data for creating fictitious addresses, phone numbers, and names that are geo-targeted to particular languages or locations. 
+
