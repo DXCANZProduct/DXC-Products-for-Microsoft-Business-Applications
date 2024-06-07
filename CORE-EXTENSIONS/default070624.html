@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    {% include head-custom.html %}
+  </head>
+  <body>
+
+      <header>
+        <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+        <a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications"><img src="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/IMAGES/DXC_Logo_PurpleBlackWhite.png" alt="Return to main page" style="width:43.33333
+px;height:72px; margin-top: 3px;"></a>
+        <!--
+            <div class="header-img"></div>
+        -->
+      </header>
+
+    <!--
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
+        {% if site.show_downloads %}
+          <div class="downloads">
+            <span>Downloads:</span>
+            <ul>
+              <li><a href="{{ site.github.zip_url }}" class="button">ZIP</a></li>
+              <li><a href="{{ site.github.tar_url }}" class="button">TAR</a></li>
+            </ul>
+          </div>
+        {% endif %}
+      </div><!-- end banner -->
+    -->
+    
+    <div class="wrapper">
+      <nav>
+        <div class="scroll">
+        <ul></ul>
+          </div>
+      </nav>
+
+      
+    <div id = "rightbox">
+      <style>
+    /* Remove default bullets */
+    ul, #myUL {
+      list-style-type: none;
+    }
+
+    /* Remove margins and padding from the parent ul */
+    #myUL {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style the caret/arrow */
+    .caret {
+      cursor: pointer;
+      user-select: none; /* Prevent text selection */
+    }
+
+    /* Create the caret/arrow with a unicode, and style it */
+    .caret::before {
+      content: "\25B6";
+      color: black;
+      display: inline-block;
+      margin-right: 4px;
+    }
+
+    /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+    .caret-down::before {
+      transform: rotate(90deg);
+    }
+
+    /* Hide the nested list */
+    .nested {
+      display: none;
+    }
+
+    /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+    .active {
+      display: block;
+    }
+
+    </style>
+    <div class="scroll">
+    <ul id="myUL" style="list-style-type: none; list-style-image:none;" >
+      <li><span id="CORE-EXTENSIONS" class="caret">Core extensions</span>
+         <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/Release-notes.html">Release notes</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/Solution-overview.html">Introduction</a></li> 
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/FAQ.html">FAQ</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/COMPANY-COLORS/Company-Colors.html">Company colors</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/EXCHANGE-RATE-IMPORT/Exchange-rate-import.html">Exchange rate import</a></li>    
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/RECIPROCAL/Company-Reciprocal.html">Reciprocal exchange rate</a></li>           
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/USER-SECURITY-AUDIT-DETAIL-REPORT/User-Security-audit-detail-report.html">User security audit detail report</a></li>             
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.html">General and inventory journal import</a></li> 
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/BUSINESS-PROCESS-LINKS/Business-process-links.html">Business process links</a></li> 
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/IMPORT-BUDGETS/Import-budgets.html">Import budgets</a></li> 
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/DMF-TOOLBOX.html">DMF Toolbox</a></li> 
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/Print-management.html">Print Management</a></li>
+          <li><span id="DATA-ANONYMIZATION" class="caret">Data Anonymization</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/Data-Anonymization/Anonymization">Data Anonymization</a></li> 
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/Data-Anonymization/FAQ">FAQ</a></li> 
+          </ul>  
+               <li><span id="Other" class="caret">Other</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/Other/Data-entities">Data-entities</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/Other/Security-configuration">Security-configuration</a></li>
+             </ul>
+         </li>  
+      </ul>
+      </li>
+      <li><span id="EDI" class="caret">Electronic Data Interchange (EDI)</span>
+         <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/Release-notes.html">Release notes</a></li> 
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/Introduction.html">Introduction</a></li>     
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FAQ.html">FAQ</a></li>
+           <li><span id="CORE" class="caret">Core module</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Introduction/Introduction.html">Introduction</a></li>
+                <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Introduction/Process-overview.html">Process overview</a></li>
+                <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Introduction/Trading-partners-and-documents.html">Trading partner and documents</a></li>
+                 <li><span id="Setup" class="caret">Setup</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/EDI-parameters.html">EDI parameters</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/EDI-shared-parameters.html">EDI shared parameters</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/Trading-partners.html">Trading partners</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/EDI-Batches.html">Batch control group</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/Document-type-mapping.html">Document type mapping</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/UOM-mapping.html">UOM mapping</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/Cleanup-profile.html">Cleanup profile</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/Reset-status.html">Reset status profile</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/Connection-setup.html">Connection setup</a></li>                     
+                      <li><span id="DocumentTypes" class="caret"><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/Document-types.html">Document types</span> 
+                        <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                          <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/DocumentTypes/File-templates.html">File templates</a></li>
+                          <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/DocumentTypes/Validation-profiles.html">Validation profiles</a></li>
+                          <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/DocumentTypes/Outbound-filenames.html">Outbound file names</a></li>
+                          <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/DocumentTypes/Field-metadata.html">Staging metadata</a></li>
+                        </ul>
+                       </li>                 
+                       <li><span id="SETTING-PROFILES" class="caret"><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/DocumentTypes/Setting-profiles.html">Setting profiles</span> 
+                        <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                          <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Setup/SETTING-PROFILES/Functional-acknowledgement.html">Functional acknowledgement</a></li>
+                        </ul>
+                      </li>  
+                    </ul>
+                  </li>
+                   <li><span id="Documents" class="caret">Processing</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Documents/Functional-acknowledgement-outbound.html">Functional acknowledgement outbound</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Documents/Functional-acknowledgement-inbound.html">Functional acknowledgement inbound</a></li>
+                    </ul>
+                  </li>  
+                  <li><span id="Managing-files" class="caret">Managing files</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Managing-files/Inbound-files.html">Inbound files</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Managing-files/Outbound-files.html">Outbound files</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Managing-files/Archiving-files.html">Archiving files</a></li>
+                    </ul>
+                  </li>  
+                  <li><span id="Workspaces" class="caret">Workspaces</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Workspaces/EDI-Document-maintenance-workspace.html">EDI Document maintenance workspace</a></li>
+                    </ul>
+                  </li>  
+                  <li><span id="Inquiries" class="caret">Inquiries</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Inquiries/Functional-acknowledgement-received.html">Functional acknowledgement received</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Inquiries/Trading-partner-documents.html">Trading partner documents</a></li>
+                    </ul>
+                  </li>      
+                  <li><span id="Other" class="caret">Other</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Other/Data-entities.html">Data entities</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Other/Security-configuration.html">Security configuration</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Other/Error-reporting.html">Error reporting</a></li>
+                    </ul>
+                  </li>  
+                  <li><span id="Technical-guide" class="caret">Technical guide</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Technical-guide/Web-API.html">Web API</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CORE/Technical-guide/Technical-FAQ.html">Technical FAQ</a></li>
+                    </ul>
+                  </li>  
+              </ul>
+           </li>
+           <li><span id="CUSTOMER" class="caret">Customer module</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/INTRODUCTION/Introduction.html">Introduction</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/INTRODUCTION/Process-overview.html">Process overview</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/INTRODUCTION/FAQ.html">FAQ</a></li>
+               <li><span id="SETUP" class="caret">Setup</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >  
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/Trading-partner.html">Trading partners</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/Warehouses.html">Warehouses</a></li>
+                      <li><span id="CUSTOMER-SETUP" class="caret"><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/Customer-setup.html">Customer setup</span> 
+                          <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/CUSTOMER-SETUP/Purchase-order-types.html">Customer EDI order type group</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/CUSTOMER-SETUP/Order-purpose-group.html">Order purpose group</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/CUSTOMER-SETUP/POA-response-code-group.html">POA response code group</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/CUSTOMER-SETUP/Order-line-change-type-group.html">Order line change type group</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/CUSTOMER-SETUP/Hold-codes.html">Hold codes</a></li>
+                          </ul>
+                      </li>
+                      <li><span id="SETTING-PROFILES" class="caret"><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/Setting-profiles.html">Setting profiles</span> 
+                          <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/SETTING-PROFILES/Customer-purchase-order.html">Customer purchase order</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/SETTING-PROFILES/Customer-purchase-order-change.html">Customer purchase order change</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement.html">Customer purchase order acknowledgement</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/SETTING-PROFILES/Customer-advanced-shipping-notice.html">Customer advanced shipping notice</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/SETTING-PROFILES/Sales-invoice.html">Sales invoice</a></li>
+                          </ul>
+                      </li>  
+                      <li><span id="VALIDATION-PROFILES" class="caret"><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/Validation-profiles.html">Validation profiles</span> 
+                          <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/VALIDATION-PROFILES/Customer-purchase-order.html">Customer purchase order</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/SETUP/VALIDATION-PROFILES/Customer-purchase-order-change.html">Customer purchase order change</a></li>
+                          </ul>
+                      </li>              
+                    </ul> 
+               </li>
+               <li><span id="DOCUMENTS" class="caret">Processing</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/DOCUMENTS/Customer-purchase-order.html">Customer purchase order</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/DOCUMENTS/Customer-purchase-order-change.html">Customer purchase order change</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/DOCUMENTS/Customer-purchase-order-acknowledgement.html">Customer purchase order acknowledgement</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/DOCUMENTS/Customer-advanced-shipping-notice.html">Customer advanced shipping notice</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/DOCUMENTS/Sales-invoice.html">Sales invoice</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/DOCUMENTS/Review-sales-order.html">Review sales order</a></li>
+                    </ul>
+                </li>
+               <li><span id="WORKSPACES" class="caret">Workspaces</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/WORKSPACES/EDI-Sales-order-processing.html">Sales order processing workspace</a></li>
+                    </ul>
+                </li>   
+                <li><span id="OTHER" class="caret">Other</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/OTHER/Data-entities.html">Data entities</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/CUSTOMER/OTHER/Security-configuration.html">Security configuration</a></li>
+                    </ul>
+                </li>               
+             </ul>
+           </li>
+           <li><span id="VENDOR" class="caret">Vendor module</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/INTRODUCTION/Introduction.html">Introduction</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/INTRODUCTION/Process-overview.html">Process overview</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/INTRODUCTION/FAQ.html">FAQ</a></li>
+               <li><span id="SETUP" class="caret">Setup</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >  
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/Trading-partner.html">Trading partners</a></li>
+                      <li><span id="VENDOR-SETUP" class="caret"><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/Vendor-setup.html">Vendor setup</span> 
+                          <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/VENDOR-SETUP/Order-type-group.html">Order type group</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/VENDOR-SETUP/Order-purpose-group.html">Order purpose group</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/VENDOR-SETUP/Order-line-change-type-group.html">Order line change type group</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/VENDOR-SETUP/Carrier-mode.html">Carrier mode</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/VENDOR-SETUP/Charges-code.html">Charges code</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/VENDOR-SETUP/POA-response-code-group.html">POA response code group</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/VENDOR-SETUP/Payment-terms-type-group.html">Payment terms type group</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator.html">Misc charge/allowance indicator</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/VENDOR-SETUP/Misc-method-of-handling.html">Misc method of handling</a></li>
+                          </ul>
+                      </li>
+                      <li><span id="SETTING-PROFILES" class="caret"><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/Setting-profiles.html">Setting profiles</span> 
+                          <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/SETTING-PROFILES/Vendor-purchase-order.html">Vendor purchase order</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/SETTING-PROFILES/Vendor-purchase-order-change.html">Vendor purchase order change</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/SETTING-PROFILES/Vendor-purchase-order-acknowledgement.html">Vendor purchase order acknowledgement</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/SETTING-PROFILES/Vendor-advanced-shipping-notice.html">Vendor advanced shipping notice</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/SETTING-PROFILES/Purchase-invoice.html">Purchase invoice</a></li>
+                          </ul>
+                      </li>  
+                      <li><span id="VALIDATION-PROFILES" class="caret"><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/Validation-profiles.html">Validation profiles</span> 
+                          <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/VALIDATION-PROFILES/Vendor-purchase-order-acknowledgement.html">Vendor purchase order acknowledgement</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/VALIDATION-PROFILES/Vendor-advanced-shipping-notice.html">Vendor advanced shipping notice</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/SETUP/VALIDATION-PROFILES/Purchase-invoice.html">Purchase invoice</a></li>
+                          </ul>
+                      </li>              
+                    </ul> 
+               </li>
+               <li><span id="DOCUMENTS" class="caret">Processing</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/DOCUMENTS/Vendor-purchase-order.html">Vendor purchase order</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/DOCUMENTS/Vendor-purchase-order-change.html">Vendor purchase order change</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/DOCUMENTS/Vendor-purchase-order-acknowledgement.html">Vendor purchase order acknowledgement</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/DOCUMENTS/Vendor-advanced-shipping-notice.html">Vendor advanced shipping notice</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/DOCUMENTS/Purchase-invoice.html">Purchase invoice</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/DOCUMENTS/Review-purchase-order.html">Review purchase order</a></li>
+                    </ul>
+                </li>
+               <li><span id="WORKSPACES" class="caret">Workspaces</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/WORKSPACES/EDI-Purchase-order-processing.html">Purchase order processing workspace</a></li>
+                    </ul>
+                </li>   
+                <li><span id="OTHER" class="caret">Other</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/OTHER/Data-entities.html">Data entities</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/VENDOR/OTHER/Security-configuration.html">Security configuration</a></li>
+                    </ul>
+                </li>               
+              </ul>
+             </li>
+             <li><span id="3PL" class="caret">3PL module</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/INTRODUCTION/Introduction.html">Introduction</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/INTRODUCTION/Process-overview.html">Process overview</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/INTRODUCTION/FAQ.html">FAQ</a></li>
+               <li><span id="SETUP" class="caret">Setup</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >  
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/Trading-partner.html">Trading partners</a></li>
+                      <li><span id="3PL-SETUP" class="caret"><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/3PL-setup.html">3PL setup</span> 
+                          <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/3PL-SETUP/Inventory-journal-name-mapping.html">Inventory journal name mapping</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/3PL-SETUP/Disposition-code-mapping.html">Disposition code mapping</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/3PL-SETUP/Inventory-status-Id-mapping.html">Inventory status id mapping</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/3PL-SETUP/Transaction-direction-mapping.html">Transaction direction mapping</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/3PL-SETUP/Order-purpose-group.html">Order purpose group</a></li>
+                          </ul>
+                      </li>
+                      <li><span id="SETTING-PROFILES" class="caret"><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/Setting-profiles.html">Setting profiles</span> 
+                          <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/SETTING-PROFILES/Picking-list.html">Picking list</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/SETTING-PROFILES/Picking-list-registration.html">Picking list registration</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/SETTING-PROFILES/Shipment-advice-Purchase-order.html">Shipment advice - Purchase order</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/SETTING-PROFILES/Shipment-advice-Return-order.html">Shipment advice - Return order</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/SETTING-PROFILES/Shipment-receipt-Purchase-order.html">Shipment receipt - Purchase order</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/SETTING-PROFILES/Shipment-receipt-Transfer-order.html">Shipment receipt - Transfer order</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/SETTING-PROFILES/Shipment-receipt-Return-order.html">Shipment receipt - Return order</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/SETTING-PROFILES/Shipment-receipt-Voyage.html">Shipment receipt - Voyage</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Transfer.html">Inventory adjustment advice - Transfer</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Counting.html">Inventory adjustment advice - Counting</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Reconciliation.html">Inventory adjustment advice - Reconciliation</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Movement.html">Inventory adjustment advice - Movement</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/SETTING-PROFILES/Product-master.html">Product master</a></li>
+                          </ul>
+                      </li>  
+                      <li><span id="VALIDATION-PROFILES" class="caret"><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/Validation-profiles.html">Validation profiles</span> 
+                          <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/VALIDATION-PROFILES/Picking-list-registration.html">Picking list registration</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/VALIDATION-PROFILES/Shipment-receipt-Purchase-order.html">Shipment receipt - Purchase order</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/VALIDATION-PROFILES/Shipment-receipt-Transfer-order.html">Shipment receipt - Transfer order</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/SETUP/VALIDATION-PROFILES/Shipment-receipt-Return-order.html">Shipment receipt - Return order</a></li>
+                          </ul>
+                      </li>              
+                    </ul> 
+               </li>
+               <li><span id="DOCUMENTS" class="caret">Processing</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/DOCUMENTS/Picking-list.html">Picking list</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/DOCUMENTS/Picking-list-registration.html">Picking list registration</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/DOCUMENTS/Shipment-advice-Purchase-order.html">Shipment advice - Purchase order</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/DOCUMENTS/Shipment-advice-Transfer-order.html">Shipment advice - Transfer order</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/DOCUMENTS/Shipment-advice-Return-order.html">Shipment advice - Return order</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/DOCUMENTS/Shipment-advice-Voyage.html">Shipment advice - Voyage</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/DOCUMENTS/Shipment-receipt-Purchase-order.html">Shipment receipt - Purchase order</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/DOCUMENTS/Shipment-receipt-Transfer-order.html">Shipment receipt - Transfer order</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/DOCUMENTS/Shipment-receipt-Return-order.html">Shipment receipt - Return order</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/DOCUMENTS/Shipment-receipt-Voyage.html">Shipment receipt - Voyage</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/DOCUMENTS/Inventory-adjustment-Transfer.html">Inventory adjustment - Transfer</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/DOCUMENTS/Inventory-adjustment-Counting.html">Inventory adjustment - Counting</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/DOCUMENTS/Inventory-adjustment-Reconciliation.html">Inventory adjustment - Reconciliation</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/DOCUMENTS/Inventory-adjustment-Movement.html">Inventory adjustment - Movement</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/DOCUMENTS/Product-master.html">Product master</a></li>
+                    </ul>
+                </li>
+               <li><span id="WORKSPACES" class="caret">Workspaces</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/WORKSPACES/EDI-Inventory-adjustment.html">Inventory adjustment</a></li>
+                    </ul>
+                </li>   
+                <li><span id="OTHER" class="caret">Other</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/OTHER/Data-entities.html">Data entities</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/3PL/OTHER/Security-configuration.html">Security configuration</a></li>
+                    </ul>
+                </li>               
+             </ul>
+           </li>
+           <li><span id="FREIGHT-FORWARDER" class="caret">Freight forwarder for Landed cost module</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/INTRODUCTION/Introduction.html">Introduction</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/INTRODUCTION/Process-overview.html">Process overview</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/INTRODUCTION/FAQ.html">FAQ</a></li>
+               <li><span id="SETUP" class="caret">Setup</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >  
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/SETUP/Trading-partner.html">Trading partners</a></li>
+                      <li><span id="FF-SETUP" class="caret"><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/SETUP/Freight-forwarder-setup.html">Freight forwarder for Landed cost setup</span> 
+                          <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/SETUP/FF-SETUP/Shipping-port-mapping.html">Shipping port mapping</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/SETUP/FF-SETUP/Modes-of-delivery-mapping.html">Modes of delivery mapping</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/SETUP/FF-SETUP/Customs-broker-mapping.html">Customs broker mapping</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/SETUP/FF-SETUP/Shipping-container-types-mapping.html">Shipping container type mapping</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/SETUP/FF-SETUP/Activity-mapping.html">Activity mapping</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/SETUP/FF-SETUP/Shipping-port-qualifier-mapping.html">Shipping port qualifier mapping</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/SETUP/FF-SETUP/Shipping-measurement-unit-mapping.html">Shipping measurement unit mapping</a></li>
+                          </ul>
+                      </li>
+                      <li><span id="SETTING-PROFILES" class="caret"><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/SETUP/Setting-profiles.html">Setting profiles</span> 
+                          <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/SETUP/SETTING-PROFILES/Voyage-creator.html">Voyage creator</a></li>
+                            <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/SETUP/SETTING-PROFILES/Voyage-tracking.html">Voyage tracking</a></li>
+                          </ul>
+                      </li>             
+                    </ul> 
+               </li>
+               <li><span id="DOCUMENTS" class="caret">Processing</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/DOCUMENTS/Voyage-advice.html">Voyage advice</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/DOCUMENTS/Voyage-creator.html">Voyage creator</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/DOCUMENTS/Voyage-tracking.html">Voyage tracking</a></li>
+                    </ul>  
+                </li>
+                <li><span id="OTHER" class="caret">Other</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/OTHER/Data-entities.html">Data entities</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/FREIGHT-FORWARDER/OTHER/Security-configuration.html">Security configuration</a></li>
+                    </ul>
+                </li>               
+             </ul>
+           </li>
+           <li><span id="INTEGRATION" class="caret">Integration systems module</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/INTEGRATION/INTRODUCTION/Introduction.html">Introduction</a></li>
+               <li><span id="SETUP" class="caret">Setup</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >  
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/INTEGRATION/SETUP/Integration-systems.html">Integration systems</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/INTEGRATION/SETUP/Trading-partner.html">Trading partners</a></li>  
+                    </ul> 
+               </li>
+               <li><span id="DOCUMENTS" class="caret">Processing</span> 
+                    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/INTEGRATION/DOCUMENTS/Customer.html">Customer</a></li>
+                      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/INTEGRATION/DOCUMENTS/Customer-group.html">Customer group</a></li>
+                    </ul>  
+                </li>              
+             </ul>
+           </li>           
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/Roadmap.html">Roadmap and release schedule</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/Acronyms.html">Definitions and Acronyms</a></li>           
+         </ul>
+      </li>
+      <li><span id="FINU" class="caret">Finance utilities</span>
+         <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Release-notes.html">Release notes</a></li>          
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/INTRODUCTION.html">Introduction</a></li>
+           <li><span id="Setup" class="caret">Setup</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+               <li><span id="CASH-AND-BANK-MANAGEMENT" class="caret">Cash and bank management</span>
+                   <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters.html">Financial utilities parameters</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.html">Financial utilities connections</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-format.html">Bank statement format</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/CASH-AND-BANK-MANAGEMENT/Populate-account-payable-payment-document-number.html">Populate accounts payable document number</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.html">Bank reconciliation matching rules</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/CASH-AND-BANK-MANAGEMENT/Bank-accounts.html">Bank accounts</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.html">Bank statement import</a></li>
+                   </ul>
+               </li>
+               <li><span id="ACCOUNTS-PAYABLE" class="caret">Accounts payable</span>
+                   <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ACCOUNTS-PAYABLE/Sundry-payment.html">Sundry payment</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ACCOUNTS-PAYABLE/BPAY-payment.html">BPAY payment</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ACCOUNTS-PAYABLE/Vendor-payments.html">Vendor payment</a></li> 
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ACCOUNTS-PAYABLE/Vendor-bank-account-changes-workflow.html">Vendor approval workflow</a></li> 
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.html">Save electronic reporting to secure location</a></li> 
+                   </ul>
+               </li>
+               <li><span id="ACCOUNTS-RECEIVABLE" class="caret">Accounts receivable</span>
+                   <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ACCOUNTS-RECEIVABLE/Customer-approval-workflow.html">Customer approval workflow</a></li>  
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ACCOUNTS-RECEIVABLE/Customer-payments.html">Customer payments</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ACCOUNTS-RECEIVABLE/Customer-reference.html">Customer reference</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ACCOUNTS-RECEIVABLE/Remittance-format.html">Remittance format</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.html">Customer remittance import</a></li>  
+                   </ul>
+               </li>
+               <li><span id="ABN" class="caret">ABN lookup</span>
+                   <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ABN/ABN-lookup-and-validation.html">ABN lookup and validation</a></li>
+                   </ul>
+               </li>
+               <li><span id="BUDGETING" class="caret">Budgeting</span>
+                   <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/BUDGETING/Budget-import.html">Budget import</a></li>
+                   </ul>
+               </li> 
+               <li><span id="ENCRYPTION" class="caret">Encryption/decryption</span>
+                   <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ENCRYPTION/Encryption-decryption.html">Encryption/decryption</a></li>
+                   </ul>
+               </li>
+             </ul>
+           </li>  
+          <li><span id="Processing" class="caret">Processing</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+               <li><span id="Bank-Statement-Reconciliation" class="caret">Cash and bank management</span>
+                   <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Processing/Bank-Statement-Reconciliation/Bank-statement-import.html">Bank statement import</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Processing/Bank-Statement-Reconciliation/Bank-reconciliation-worksheet.html">Bank reconciliation worksheet</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Processing/Bank-Statement-Reconciliation/Cash-and-bank-management-reports.html">Reports</a></li>
+                   </ul>
+               </li>
+              <li><span id="Accounts-Payable" class="caret">Accounts payable</span>
+                   <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Processing/Accounts-Payable/Sundry-payment.html">Sundry payment</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Processing/Accounts-Payable/BPAY-payment.html">BPAY payment</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Processing/Accounts-Payable/Vendor-payments.html">Vendor payment</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Processing/Accounts-Payable/Save-electronic-reporting-file-to-secure-location.html">Save electronic reporting file to secure location</a></li>
+                   </ul>
+               </li>       
+              <li><span id="Accounts-Receivable" class="caret">Accounts receivable</span>
+                   <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Processing/Accounts-Receivable/Customer-remittance.html">Customer remittance import</a></li>
+                   </ul>
+               </li>                
+             <li><span id="ABN" class="caret">ABN lookup</span>
+                   <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Processing/ABN/ABN-lookup-and-validation.html">ABN lookup and validation</a></li>
+                   </ul>
+               </li>      
+           <li><span id="Budgeting" class="caret">Budgeting</span>
+                   <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Processing/Budgeting/Budget-import.html">Budget import</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Processing/Budgeting/Example-file-format.html">Example file format</a></li>
+                   </ul>
+            </li>   
+           </ul>
+           </li>  
+        <li><span id="Other" class="caret">Other</span>
+           <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+             <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Other/Data-entities.html">Data entities</a></li>
+          </ul>
+        </li>
+        <li><span id="Technical" class="caret">Technical guide</span>
+           <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+             <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Technical/Web-API-Endpoint.html">Web API Endpoint</a></li>
+          </ul>
+        </li>
+        <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Roadmap.html">Roadmap and release schedule</a></li>
+        <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/FAQ.html">FAQ</a></li>   
+      </ul>            
+  </li>      
+  <li><span id="FOREX-CONTRACT" class="caret">Forex contract</span>
+         <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FOREX-CONTRACT/Release-notes.html">Release notes</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FOREX-CONTRACT/Introduction.html">Introduction</a></li>
+           <li><span id="SETUP" class="caret">Setup</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FOREX-CONTRACT/SETUP/Forex-contract-parameters.html">Forex contract parameters</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FOREX-CONTRACT/SETUP/Forex-over-allocation.html">Forex over allocation</a></li>
+            </ul>
+         </li>
+         <li><span id="PROCESSING" class="caret">Processing</span>
+            <ul class="nested" style="list-style-type: none; list-style-image:none;" >  
+              <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FOREX-CONTRACT/PROCESSING/Create-forex-contract.html">Create forex contract</a></li>
+              <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FOREX-CONTRACT/PROCESSING/Link-forex-contract.html">Link forex contract to documents</a></li>
+              <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FOREX-CONTRACT/PROCESSING/Changes.html">Changes to forex contract or document</a></li>
+              <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FOREX-CONTRACT/PROCESSING/Invoice-posting.html">Invoice posting</a></li>
+              <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FOREX-CONTRACT/PROCESSING/Cash-in.html">Cash in forex contracts</a></li>
+              <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FOREX-CONTRACT/PROCESSING/Inquiries.html">Inquiries</a></li>
+            </ul>
+          </li> 
+        <li><span id="OTHER" class="caret">Other</span>
+          <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+             <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FOREX-CONTRACT/OTHER/Data-entities.html">Data entities</a></li>
+             <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FOREX-CONTRACT/OTHER/Security-configuration.html">Security configuration</a></li>
+        </ul>
+      </li> 
+      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FOREX-CONTRACT/Roadmap.html">Roadmap</a></li>     
+    </ul>
+ </li>         
+ <li><span id="DXC-INSIGHTS" class="caret">Insights for D365 FO</span>
+    <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-INSIGHTS/Release-notes.html">Release notes</a></li>
+      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-INSIGHTS/Introduction.html">Introduction</a></li>
+      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-INSIGHTS/setup.html">Setup</a></li>
+      <li><span id="Periodic-monitoring-configuration" class="caret">Periodic monitoring</span>
+        <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+          <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-INSIGHTS/Periodic-monitoring-configuration/Periodic_monitoring_configuration.html">Periodic monitoring configuration</a></li>
+          <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-INSIGHTS/Periodic-monitoring-configuration/Number_sequence_monitoring.html">Number sequence monitoring</a></li>
+        </ul>
+      </li>  
+      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-INSIGHTS/Batch_job_monitoring.html">BatchJob monitoring</a></li> 
+      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-INSIGHTS/Review_and_set_up_monitored_data.html">Review and set up monitored data</a></li>
+      <li><span id="Azure-application-insights" class="caret">Azure Application Insights</span>
+        <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+          <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-INSIGHTS/Azure-application-insights/Dashboards.html">Dashboards</a></li>
+          <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-INSIGHTS/Azure-application-insights/Azure_alerts.html">Alerts on Azure Azure Application Insights</a></li>
+        </ul>
+      </li> 
+      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-INSIGHTS/Limitations.html">Limitations</a></li>  
+      <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-INSIGHTS/FAQ.html">FAQ</a></li> 
+    </ul>
+ </li>          
+      <li><span id="DXC-ITEM-CREATION-WIZARD" class="caret">Item creation wizard</span>
+         <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/Release-notes.html">Release notes</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/INTRODUCTION.html">Introduction</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/FAQ.html">FAQ</a></li>
+           <li><span id="SETUP" class="caret">Setup</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/SETUP/Item-creation-parameters.html">Item creation parameters</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/SETUP/Item-creation-workflows.html">Item creation workflows</a></li>
+               <li><span id="ITEM-CREATION" class="caret">Item creation</span>
+                <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                  <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/SETUP/ITEM-CREATION/Item-creation-template-file-masks.html">Item creation template file masks</a></li>
+                  <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/SETUP/ITEM-CREATION/Item-creation-template-tabs.html">Item creation template tabs</a></li>
+                  <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/SETUP/ITEM-CREATION/Item-creation-templates.html">Item creation templates</a></li>
+                  <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/SETUP/ITEM-CREATION/Managing-Item-Creation-Templates.html">Managing item creation templates</a></li>
+                </ul>
+              </li>  
+              <li><span id="ITEM-SETUP" class="caret">Item setup</span>
+                  <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                   <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/SETUP/ITEM-SETUP/Item-Status.html">Item status</a></li>
+                   <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/SETUP/ITEM-SETUP/Automatic-status-change-rules.html">Item creation workflows</a></li>
+                  </ul>
+              </li>  
+              <li><span id="FILE-MANAGEMENT" class="caret">File management</span>
+                  <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                    <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/SETUP/FILE-MANAGEMENT/File-management.html">File management</a></li>
+                  </ul>
+              </li>    
+            </ul>
+         </li>
+         <li><span id="PROCESSES" class="caret">Processing</span>
+            <ul class="nested" style="list-style-type: none; list-style-image:none;" >  
+              <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/PROCESSES/Creating-a-new-item.html">Creating a new item</a></li>
+              <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/PROCESSES/Updating-an-existing-item.html">Updating an existing item</a></li>
+              <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/PROCESSES/Releasing-an-existing-item-to-another-company.html">Releasing an existing item to another company</a></li>
+              <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/PROCESSES/Managing-item-statuses.html">Managing item statuses</a></li>
+              <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/PROCESSES/Bulk-Import-product-creation.html">Bulk import product creation</a></li>
+            </ul>
+          </li> 
+          <li><span id="PERIODIC-TASKS" class="caret">Periodic tasks</span>
+            <ul class="nested" style="list-style-type: none; list-style-image:none;" >  
+              <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/PERIODIC-TASKS/Update-item-status.html">Update item status</a></li>
+              <li><span id="CREATION" class="caret">Item creation</span>
+                <ul class="nested" style="list-style-type: none; list-style-image:none;" >  
+                  <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/PERIODIC-TASKS/CREATION/Creation-import-files.html">Creation import files</a></li>
+                  <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/PERIODIC-TASKS/CREATION/Item-Import.html">Item import</a></li>
+                </ul>
+              </li>
+          <li><span id="ITEM-STATUS" class="caret">Item status</span>
+            <ul class="nested" style="list-style-type: none; list-style-image:none;" >  
+              <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/PERIODIC-TASKS/ITEM-STATUS/Automatic-status-update.html">Automatic status update</a></li>
+            </ul>
+          </li>   
+        </ul>
+      </li>
+      <li><span id="INQUIRIES" class="caret">Inquiries</span>
+        <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+          <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/INQUIRIES/Creation-import-sessions.html">Creation import sessions</a></li>
+          </ul>      
+          <li><span id="Other" class="caret">Other</span>
+        <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+          <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/OTHER/Security-configuration.html">Security</a></li> 
+          <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/OTHER/Acronyms.html">Acronyms</a></li>
+          <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/OTHER/Data-entities.html">Data-entities</a></li>
+        </ul>  
+         </li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DXC-ITEM-CREATION-WIZARD/Roadmap.html">Roadmap</a></li> 
+     </ul>
+  </li>
+  <li><span id="LMG" class="caret">License manager</span>
+         <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/LMG/Release-notes.html">Release notes</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/LMG/Introduction.html">Introduction</a></li>        
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/LMG/FinOps.html">D365 FO</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/LMG/PowerApp.html">PowerApp</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/LMG/ReactWebApp.html">Web App</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/LMG/SupportMaintenance.html">Support and Maintenance</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/LMG/FAQ.html">FAQ</a></li>
+         </ul>
+   </li>  
+      <li><span id="SMART-SEND" class="caret">Smart Business Form Email Manager (Smart Send)</span>
+         <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND/Release-notes.html">Release notes</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND/Overview.html">Introduction</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND">FAQ</a></li>
+          <li><span id="CONFIGURATION" class="caret">Setup</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND/CONFIGURATION/Parameters.html">Parameters</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND/CONFIGURATION/Contact-information.html">Contact information</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND/CONFIGURATION/Address-and-contact-information-purpose.html">Address and contact information purpose</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND/CONFIGURATION/Email_placeholder.html">Email placeholder</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND/CONFIGURATION/Email-template.html">Email template</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND/CONFIGURATION/Security.html">Security</a></li>               
+          </ul>       
+           <li><span id="PROCESSES" class="caret">Processing</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND/PROCESSES/Email-processing.html">Email processing</a></li> 
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND/PROCESSES/Electronic_Reporting.html">Electronic Reporting</a></li>
+               </ul>      
+               <li><span id="Other" class="caret">Other</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND/CONFIGURATION/Security.html">Security</a></li> 
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND/OTHER/Acronyms.html">Acronyms</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND/OTHER/Data-entities.html">Data-entities</a></li>
+             </ul> 
+           </li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND/Roadmap.html">Roadmap</a></li>         
+         </ul>
+      </li>      
+      <li><span id="DOCUSIGN" class="caret">Solutions for DocuSign and Dynamics 365</span>
+         <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DOCUSIGN/Release-notes.html">Release notes</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DOCUSIGN/INTRODUCTION.html">Introduction</a></li>
+           <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DOCUSIGN/FAQ.html">FAQ</a></li>
+           <li><span id="SETUP" class="caret">Setup</span>
+             <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DOCUSIGN/SETUP/Parameters.html">Parameters</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DOCUSIGN/SETUP/Field-Types.html">Field-Types</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DOCUSIGN/SETUP/List.html">List</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DOCUSIGN/SETUP/Template.html">Templates</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DOCUSIGN/SETUP/Document-type.html">Document type</a></li>
+               <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DOCUSIGN/SETUP/Print-Management.html">Print management</a></li>          
+             </ul>  
+           </li>
+               <li><span id="INQUIRIES" class="caret">Inquiries</span>
+                   <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DOCUSIGN/INQUIRIES/Documents.html">Documents</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DOCUSIGN/INQUIRIES/Exception.html">Exceptions</a></li>
+              </ul>  
+            </li>
+                <li><span id="OTHER" class="caret">Other</span>
+                   <ul class="nested" style="list-style-type: none; list-style-image:none;" >
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DOCUSIGN/OTHER/Data-entities.html">Data-entities</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DOCUSIGN/OTHER/Security-configuration.html">Security-configuration</a></li>
+                     <li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DOCUSIGN/OTHER/Acronyms.html">Definitions and Acronyms</a></li>
+                   </ul>
+                 </li><a href="https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/DOCUSIGN/Roadmap.html">Roadmap</a></li>        
+         </ul>
+      </li>            
+     </ul>
+   </div>
+   <script>
+      var toggler = document.getElementsByClassName("caret");
+      var i;
+
+      for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function() {
+          this.parentElement.querySelector(".nested").classList.toggle("active");
+          this.classList.toggle("caret-down");
+        });
+      }
+    
+      var url = window.location.toString();
+      var parts = url.split("/");
+      var startURLInspection = 4;
+     
+     recurse(0, startURLInspection);
+          
+     function recurse(toggleCount, startURLInspection) {        
+        if (parts[startURLInspection] == toggler[toggleCount].id) {          
+          toggler[toggleCount].parentElement.querySelector(".nested").classList.toggle("active");
+          toggler[toggleCount].classList.toggle("caret-down");
+          startURLInspection++
+
+          if (toggleCount <= toggler.length) {
+            toggleCount++;
+            recurse(toggleCount, startURLInspection);
+          }
+        }
+        else {
+          if (toggleCount <= toggler.length) {
+            toggleCount++;
+            recurse(toggleCount, startURLInspection);
+          } 
+        }
+      }
+    </script>
+</div>
+
+      
+      <section>
+        {{ content }}
+
+      </section>        
+      
+      <footer>
+        <!--
+         {% if site.github.is_project_page %}
+          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
+      -->
+      </footer>
+    </div>
+    <center>© DXC Technology Company</center>
+  </body>
+</html>
