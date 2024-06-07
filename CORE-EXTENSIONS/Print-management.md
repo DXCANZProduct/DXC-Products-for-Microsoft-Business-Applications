@@ -5,7 +5,7 @@ title: Core Extensions
 description: Core Extensions - Import/Export Print management settings
 author: Peter Musumeci
 manager: Kym Parker
-ms.date: 2023-10-31
+ms.date: 2024-06-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,7 +47,7 @@ Print Management settings are available in the following Modules-<br>
 ### Data Entity Overview
 
 The *Print management document settings* entity allows for existing Print management settings to be exported into..  Complex conditional settings can be exported and copied to sandbox environments for testing or training as well as copying between legal entities, keeping in mind that number sequences and conditions are not always the same between legal entities.  
-Conditional settings can be set up with specific parameters related to customer/vendor accounts, transaction conditions and more.  These conditions are built as a query and stored in the database as a complex string of data.  Due to excel field limitations conditional format settings should only be exported using CSV format, not .xlxs
+Conditional settings can be set up with specific parameters related to customer/vendor accounts, transaction conditions and more.  These conditions are built as a query and stored in the database as a complex string of data.  Due to Excel field limitations conditional format settings should only be exported using CSV format, not .xlxs
 
 To Export Print management settings 
 1. Navigate to **Workspaces > Data management > Export**
@@ -55,7 +55,7 @@ To Export Print management settings
     * **Group name** - Enter a name for the processing group e.g. Printer setup
     * **Description**	- Enter a description for the processing group e.g. Print management Settings Date 
     * **Data project operation type**	- Export
-3.	Select Add entity
+3.	Select Add Entity
 4.	Complete the dialog, 
     * **Entity name**	- Print management document settings
     * **Target data format** - CSV (due to complex string data format Excel is not recommended if import is required at a later date)
@@ -72,6 +72,7 @@ Below is a brief outline of the fields in the entity.
 
 |  **Field**  | **Description** | 
 |:---|:---|     
+|  **PRINTMGMTDOCINSTANCENAME**  | This is the identifier for the record, For an original, the name is always Original. For a copy, you can customise a name. | 
 |  **NODETYPE**  | Finance and Operation area that the print settings relate to.  For Example, Sales, Purchase, Project etc. <br> The node does not represent the Module, for example Accounts receivable module holds settings for Sales and some Inventory related tasks such as picking list |   
 |  **PRIORITYID**  | Name of the form within Print management setup.  Eg. SalesOrderConfirmation. |  
 |  **DESCRIPTION**  | Select the report name available in the system. |  
