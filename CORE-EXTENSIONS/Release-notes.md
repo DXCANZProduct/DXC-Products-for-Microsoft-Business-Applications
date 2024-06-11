@@ -5,7 +5,7 @@ title: Core Extensions
 description: DXC Core extensions - Release notes
 author: PMusumeci
 manager: Pontus, Ek
-ms.date: 2023-08-14
+ms.date: 2024-06-11
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,7 +44,7 @@ Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 
 ## Feature management
-From 10.0.36.20231130 Core Extensions can be enabled via Feature management
+From 10.0.36.20231130 Core Extensions can be enabled via Feature management.
 Enable the following feature in D365 Feature management:
 
 - Core extensions
@@ -61,8 +61,17 @@ Number	  	| Functionality	  | Description
 :--       	|:--              |:--
 16778		| Separate Feature and License Key for Data Anonymization 	| Previously Data Anonymization was available as part of the Standard Core EXtensions Software piece.  From 10.0.36.20240530 this was corrected and Data Anonymization is licensed separately from the rest of the Core extension functions.
 
-
-
+<ins>New features</ins>
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+17503|Ability to update records with Unique values|generates individual values per line as part of Data Anonymization functionality 
+17475|Add user-friendly name (label) on table selection in the Data Anonymization Table|displays the "friendly" name of the table
+17576|Create Data entities for Data anoymization|allows Data anonymization profiles and set up to be exported 
+17474|Disable Initiate Data Anonymization button if no records exist on header or lines table| If no Tables exist on header or lines of Data Anonymisation you cannot perform the function 
+17476|Remove Data entities, staging tables, and Read/View only Tables from the list of selectable tables on table selection in the Data Anonymization Table|Removal of fields that are not updateable
+17472|Selected fields getting temporarily cleared|When adding fields to your table selection fields were being cleared
+17477|Validate URL in Parameters table on Update| The URL must be in a WEB format
+17473|Header Lines relationship between data anonymization table and fields|If Table fields have been added you can no longer remove the Header table from the list 
 
 # Previous version(s)
 ### Release 10.0.36.20231130
@@ -97,11 +106,9 @@ Number	  	| Functionality	  | Description
 Release date: 8 June 2023
 
 <ins>Bug fixes</ins>
-
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
 14330		| Build fixes	| 10.0.34 build error fix for: <br> - Add missing reference to model FinTag <br> - Update register symbolic link script
-
 
 #### Build 10.0.29.202304142
 
