@@ -34,9 +34,9 @@ This document describes the features that are either pending or planned in upcom
 
 
 
-Number	  	| Functionality	  | Description
+Number	  	| Name	  | Description
 :--       	|:--              |:--
-17503|Ability to update records with Unique values|generates individual values per line as part of Data Anonymization functionality 
+18156|The menu item with name ecl_budgetimport could not be opened.| The error is thrown when attempting to import budgets
 17475|Add user-friendly name (label) on table selection in the Data Anonymization Table|displays the "friendly" name of the table
 17576|Create Data entities for Data anoymization|allows Data anonymization profiles and set up to be exported 
 17474|Disable Initiate Data Anonymization button if no records exist on header or lines table| If no Tables exist on header or lines of Data Anonymisation you cannot perform the function 
