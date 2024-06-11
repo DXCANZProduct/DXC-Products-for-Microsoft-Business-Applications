@@ -28,4 +28,11 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # 	Coming Soon
-This document describes the features that are either pending ort planned in upcoming relreases
+This document describes the features that are either pending or planned in upcoming releases
+
+# Current version
+
+
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
