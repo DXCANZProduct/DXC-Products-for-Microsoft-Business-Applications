@@ -27,13 +27,15 @@ ms.dyn365.ops.version: 10.0.34
 ---
 
 # Data Anonymization
+Please note all features outlined below are currently available under preview and will be available soon
+
 ## Data Anonymization Overview
 
-Data Anonymization is a process that allows for information to be scrambled post a database copy or when restored from a production into a sandbox environment.  The process can assist in protecting sensitive or personal information like names, bank accounts, addresses and more from people who should or do not require visibility of sensitive data. The process can be used to protect data and confidentiality but still allow necessary third parties-access to your environment. 
+Data Anonymization is a process that allows for information to be scrambled after a database copy or when restored from a production into a sandbox environment.  The process can assist in protecting sensitive or personal information like names, bank accounts, addresses and more from people who should or do not require visibility of sensitive data. The process can be used to protect data and confidentiality but still allow necessary third parties-access to your environment. 
 
 ### Enable Feature
 
-Data Anonymization has a separate Feature Key from Core extensions and must be enabled via Feature management in addition to the [Core Extensions](../Release-notes.md#feature-management) Feature Key. 
+Data Anonymization has a separate Feature Key from Core extensions and from Release 10.0.36.20240530  is licensed as an individual product. Data Anonymization must be enabled via Feature management in addition to the [Core Extensions](../Release-notes.md#feature-management) Feature Key. 
 To Utilise Data Anonymization Enable the following feature in D365 Feature management:
 
 - Data anonymization
