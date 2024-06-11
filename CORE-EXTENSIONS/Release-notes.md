@@ -4,7 +4,7 @@
 title: Core Extensions
 description: DXC Core extensions - Release notes
 author: PMusumeci
-manager: Kym Parker
+manager: Pontus, Ek
 ms.date: 2023-08-14
 ms.topic: article
 ms.prod: 
@@ -22,7 +22,7 @@ ms.reviewer: Peter Musumeci
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: CoreUtil
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Liam Coll
+ms.author: Peter Musumeci
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -32,13 +32,12 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.36.20231130
+### Release 10.0.36.20240530
 
 DXC Core extensions 10.0.36 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
 Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
@@ -51,6 +50,22 @@ Enable the following feature in D365 Feature management:
 - Core extensions
 
 If the above feature is not visible, press **Check for updates** to refresh the feature management list.
+
+#### Build 10.0.36.202405301
+
+Release date: 30 May 2024
+
+<ins>Bug fixes</ins>
+
+Number	  	| Functionality	  | Description
+:--       	|:--              |:--
+16778		| Separate Feature and License Key for Data Anonymization 	| Previously Data Anonymization was available as part of the Standard Core EXtensions Software piece.  From 10.0.36.20240530 this was corrected and Data Anonymization is licensed separately from the rest of the Core extension functions.
+
+
+
+
+# Previous version(s)
+### Release 10.0.36.20231130
 
 #### Build 10.0.36.202311301
 
@@ -75,7 +90,7 @@ Number	  	| Functionality	  | Description
 :--       	|:--              |:--
 15670		| User security details report not generating	| corrected error when User security details report is run with privileges set to Yes
 
-# Previous version(s)
+
 
 #### Build 10.0.34.202306082
 
