@@ -36,3 +36,12 @@ This document describes the features that are either pending or planned in upcom
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
+17503|Ability to update records with Unique values|generates individual values per line as part of Data Anonymization functionality 
+17475|Add user-friendly name (label) on table selection in the Data Anonymization Table|displays the "friendly" name of the table
+17576|Create Data entities for Data anoymization|allows Data anonymization profiles and set up to be exported 
+17474|Disable Initiate Data Anonymization button if no records exist on header or lines table| If no Tables exist on header or lines of Data Anonymisation you cannot perform the function 
+17476|Remove Data entities, staging tables, and Read/View only Tables from the list of selectable tables on table selection in the Data Anonymization Table|Removal of fields that are not updateable
+17472|Selected fields getting temporarily cleared|When adding fields to your table selection fields were being cleared
+17477|Validate URL in Parameters table on Update| The URL must be in a WEB format
+17473|Header Lines relationship between data anonymization table and fields|If Table fields have been added you can no longer remove the Header table from the list 
+
