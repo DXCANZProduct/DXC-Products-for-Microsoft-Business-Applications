@@ -4,8 +4,8 @@
 title: EDI Customer
 description: EDI Customer Documents - Sales invoice
 author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-05-15
+manager: Pontus Ek
+ms.date: 2024-06-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -201,8 +201,8 @@ The following EDI Line staging fields are available on the lines page.
 
 **Field**	                | **Description**	                                        | **Source D365 field**
 :---                        |:---                                                       |:---
-**Line number**             | The line within the D365 Invoice                          | Invoice journal line > Line number
-**Line number document**    | The sequential D365 Invoice line number <br> Ensure **Assign sequential line number when posting customer invoice lines** in **Accounts receivable parameters** is set to _Yes_.                        |  Invoice journal line > Line creation sequence number                    
+**Line number**             | The line within the D365 Invoice. Where the invoice is for multiple sales orders, this field would contain the line number per sales order, for example 1, 2, 1, 2.                          | Invoice journal line > Line number
+**Line number document**    | The sequential D365 Invoice line number. Where the invoice is for multiple sales orders, this field would contain sequential line number, for example 1, 2, 3, 4 <br> Ensure **Assign sequential line number when posting customer invoice lines** in **Accounts receivable parameters** (Tab 'Updates', FastTab 'Optimize batch and posting processing' is set to _Yes_.                        |  Invoice journal line > Line creation sequence number                    
 **Item number**             | The D365 item id                                          | Invoice journal line > Item Number
 **Name**                    | The D365 item name	                                    | Invoice journal line > Item Name
 **Lot ID**                  | Lot Id / InventTransId for the invoice line	            | Inventory transaction > InventTransId
