@@ -26,7 +26,7 @@ ms.search.validFrom: 2023-10-31
 ms.dyn365.ops.version: 10.0.34
 ---
 
-# Data Anonymization
+# Data Anonymization (NEW PREVIEW ONLY)
 Please note all features outlined below are currently available under preview only and will be available for general release at a later date
 
 ## Data Anonymization Overview
