@@ -61,9 +61,9 @@ The following table outlines the fields available for Budget Import, whether the
 |  **Comment**  | No | Comment about the budget account entry. |  
 |  **Cash flow forecast**  | No | If this budget record is to be included in the cash flow forecast enter *Yes*, otherwise *No*. |  
 |  **GST group**  | No | The relevant GST group relating to the budget record. Typically, this would be left blank. |  
-|  **Account Structure**  | No | The account structure to use to resolve the main account. |  
-|  **Main Account**  | No | The GL Ledger Account for this budget record. |  
-|  **Dimensions**  | No | Dimension included in the Budgeting Dimension setup and value assigned here must exist in Dynamics 365. |  
+|  **Account Structure**  | Yes | The account structure to use to resolve the main account. Sourced from *General ledger>Chart of accounts>Structures>Configure account structures* |  
+|  **Main Account**  | No | The GL Ledger Account for this budget record. Note: If the Main Account is a required dimension the field is considerd mandatory|  
+|  **Dimensions**  | No | Dimension included in the Budgeting Dimension setup and value assigned here must exist in Dynamics 365.  |  
 |  **Dates**  | No | Dates for the current period will be generated at the top. |  
 
 *Note: Columns will be expanded for each Dimension and Date.*
