@@ -62,6 +62,7 @@ Number	  	| Functionality	  | Description
 16778		| Separate Feature and License Key for Data Anonymization 	| Previously Data Anonymization was available as part of the Standard Core EXtensions Software piece.  From 10.0.36.20240530 this was corrected and Data Anonymization is licensed separately from the rest of the Core extension functions.
 
 <ins>New features</ins>
+
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
 17503|Ability to update records with Unique values|generates individual values per line as part of Data Anonymization functionality 
