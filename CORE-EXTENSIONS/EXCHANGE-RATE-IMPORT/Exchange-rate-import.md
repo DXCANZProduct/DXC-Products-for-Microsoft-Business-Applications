@@ -31,7 +31,6 @@ ms.dyn365.ops.version: AX 7.0.1
 
 Microsoft Dynamics 365 offers functionality to import exchange rates based on limited sources. The Exchange Rate Import leverages the same standard framework of Microsoft Dynamics 365 but extends functionality to support the following additional sources:
 * Reserve Bank of Australia – Free service
-* Bank of Canada – Free service
 * Open Exchange Rates – Paid Subscription
 
 #### Assumptions
@@ -55,7 +54,6 @@ The following table shows the supported parameters.
 |  **Source**  | **Date range support** |  **Create necessary currency pairs** |  **Override existing exhange rates** |  **Prevent import on national holiday** | 
 |:---|:---|:---|:---|:---|      
 |  **Reserve Bank of Austalia**  | No | Yes | Yes | No |
-|  **Bank of Canada**  | No | Yes | Yes | No |
 |  **Open exchange rate**  | Yes | Yes | Yes | No |
 
 ## Data entities
@@ -65,5 +63,4 @@ The following table shows the supported parameters.
 
 1. A white paper is available for extending the framework. [Creating Exchange Rate Providers for Microsoft Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/financial/create-exchange-rate-providers).
 2. [Reserve Bank of Australia](http://www.rba.gov.au/statistics/frequency/exchange-rates.html)
-3. [Bank of Canada](https://www.bankofcanada.ca/rates/exchange/)
-4. [Open Exchange Rates](https://openexchangerates.org/) 
+3. [Open Exchange Rates](https://openexchangerates.org/) 
