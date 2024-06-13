@@ -73,6 +73,7 @@ Number	  	| Functionality	  | Description
 17477|Validate URL in Parameters table on Update| The URL must be in a WEB format
 17473|Header Lines relationship between data anonymization table and fields|If Table fields have been added you can no longer remove the Header table from the list 
 
+
 # Deprecated features
 
 This section describes the features that have been removed, or planned to be removed from a Core Extensions version.
