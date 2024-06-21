@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: jdutoit2
 manager: Pontus Ek
-ms.date: 2024-05-30
+ms.date: 2024-06-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,6 +46,24 @@ Feature	| 10.0.40 Feature state
 :--       	|:--		
 **Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the custom bank statement format | Mandatory
 **Modern bank reconciliation** | Preview
+
+# Next version
+
+### Release 10.0.37.202406TBD
+Estimated release date: 26 June 2024
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+18126		| Accounts payable	| Generate file per payment line	| New option called **Generate file per payment line** on **Method of payment** for _Electronic reporting export formats_. <br> When set to Yes, the vendor payment's **Generate payments** will create an EFT file per journal line. <br> ![Generate file per payment line](Images/ReleaseNotes_20240626_1.png "Generate file per payment line")
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+
+
 
 # Current version
 
