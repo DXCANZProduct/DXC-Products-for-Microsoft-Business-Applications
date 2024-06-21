@@ -4,8 +4,8 @@
 title: Finance Utilities 
 description: Cash and bank management setup - Finance utilities connections
 author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-03-25
+manager: Pontus Ek
+ms.date: 2024-06-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -103,7 +103,7 @@ Field         | Description                         | Example or Options
 **Credential type** |	Select applicable **Credential type** for Azure blob	| •	Key vault <br> •	Database
 **Storage account name**  |	Enter the **Storage account name** where Credential type = **Database**
 **Storage account key**   |	Enter the **Storage account key** where Credential type = **Database**	
-**Connection string**     |	Enabled when Credential type = **Key vault**. <br> Select the applicable **Secret** as setup in **Key vault parameters**. 
+**Connection string**     |	Enabled when Credential type = **Key vault**. <br> Select the applicable **Secret** as setup in **Key vault parameters**. <br> **Azure SAS Storage account level tokens** also supported. 
 **Archive container name**  |	Enter the **archive** path where the imported files are to be copied to. Folders are not supported	| integration-archive
 **Search mask**           |	A file mask is used to match files in the Import path	        | Bank123*
 **Error container name**  |	Enter the **error** path where the files that matches the Search mask, but haven’t successfully been imported, are copied to. Folders are not supported. | integration-error
