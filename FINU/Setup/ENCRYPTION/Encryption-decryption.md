@@ -4,8 +4,8 @@
 title: Finance Utilities 
 description: Encryption / decryption
 author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-03-05
+manager: Pontus Ek
+ms.date: 2024-06-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,7 +22,7 @@ ms.reviewer: jdutoit2
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: jdutoit2
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -59,9 +59,9 @@ Field                       | Description
 :--                         |:--                        
 **Encryption key name**     | Enter a unique name for the encryption
 **Passphrase**              |	Select the applicable **Secret** from **Key vault parameters**
-**Private key**             |	Select the applicable **Secret** from **Key vault parameters**
-**Public key**              |	Select the applicable **Secret** from **Key vault parameters**
-**Receiver's public key**     |	Select the applicable **Secret** from **Key vault parameters**
+**Private key**             |	Select the applicable **Secret** from **Key vault parameters**. <br> For inbound decryption this would be the bank's private key. <br> For outbound encryption this would be the company's private key.
+**Counter party's public key**    |	Select the applicable **Secret** from **Key vault parameters**. <br> For inbound decryption this would be the company's public key. <br> For outbound encryption this would be the bank's public key.
+
 
 ## Step 3 - Use Encryption in Finance utilities
 
