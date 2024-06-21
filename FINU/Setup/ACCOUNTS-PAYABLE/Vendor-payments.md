@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Accounts payable setup - Vendor Payments 
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-04-09
+ms.date: 2024-06-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -121,7 +121,16 @@ File name when **Enable file parameters** is set to:
 
 **Editor** button can be used to edit the file name mask. A combination of static values and placeholders can be assigned.
 
+### Generate file per payment line
+
+> Note: Applicable only to Electronic reporting formats
+
+**Generate file per payment line** provides functionality to create an EFT file _per payment line_ when using **Generate payments** on the Vendor payment journal.
+
+### Sundry method of payment
 - [Sundry method of payment](Sundry-payment.md)
+
+### BPAY method of payment
 - [BPAY method of payment](BPAY-payment.md)
 
 # Processing
