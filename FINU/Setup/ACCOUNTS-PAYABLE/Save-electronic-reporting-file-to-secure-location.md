@@ -4,8 +4,8 @@
 title: Finance Utilities 
 description: Accounts payable setup - Save electronic reporting file to secure location 
 author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-02-02
+manager: Pontus Ek
+ms.date: 2024-06-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -101,7 +101,7 @@ These logs can then be used to set **Custom alerts**, for example using error lo
 | **Credential type** |Select applicable Credential type for Azure blob |	•	Key vault <br> • Database |
 | **Storage account name** |	Enabled when Credential type is set to _Database_	||
 | **Storage account key** |	Enabled when Credential type is set to _Database_	||
-| **Connection string** |	Enabled when Credential type is set to _Key vault_||
+| **Connection string** |	Enabled when Credential type is set to _Key vault_ <br> Azure SAS Storage account level tokens also supported. ||
 
 **SFTP:**
 
