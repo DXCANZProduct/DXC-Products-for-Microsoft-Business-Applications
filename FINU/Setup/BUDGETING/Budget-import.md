@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Budgeting setup - Budget Import 
-author: helenho
-manager: Kym Parker
-ms.date: 2021-03-02
+author: jdutoit2
+manager: Pontus Ek
+ms.date: 2024-06-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,7 +22,7 @@ ms.reviewer: jdutoit2
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: jdutoit2
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -57,6 +57,10 @@ The following table describes the fields that are available on the **Budget impo
 | **Dimension code**    |  Select all the dimensions that will be included in the import file and press **Select**. If any dimensions are not visible, see [Dimensions](#dimensions). Note: Once the record is saved, this field will revert to blank as it is only used to populate the **Dimension format** field. | 
 | **Dimension segment delimiter**  |  Select the delimiter used as the delimiter between the dimension elements in the import fields  | - |
 | **Dimension format**  |  When the dimensions are selected in the **Dimension code** field, these will automatically populate the **Dimension format** field in financial dimension sort order.  To change the order of these fields, simply cut & paste dimensions into required order to match the import file. | BusinessUnit-CostCenter
+
+Use button **Generate template** to download csv template based on the following setup:
+- Number of months
+- Dimension format
 
 ### Budget import processing
 Budget import processing is discussed in detail at [Budget import processing](../../Processing/Budgeting/Budget-import.md).
