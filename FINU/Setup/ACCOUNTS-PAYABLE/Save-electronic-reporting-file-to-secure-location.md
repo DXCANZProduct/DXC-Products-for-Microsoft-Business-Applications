@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Accounts payable setup - Save electronic reporting file to secure location 
 author: jdutoit2
 manager: Pontus Ek
-ms.date: 2024-06-21
+ms.date: 2024-06-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -112,9 +112,12 @@ These logs can then be used to set **Custom alerts**, for example using error lo
 | **Port**	| Specify the Port for the SFTP site |	22 |
 | **Enable TLS** |	Select to enable SFTP over TLS | • Yes: SFTP over TLS <br> •	No: SFTP|
 | **User**	| Specify the **Username** used for authentication to the SFTP site	||
-| **Credential type**	| Select applicable Credential type for SFTP site |	•	Key vault <br> • Database |
+| **Credential type**	| Select applicable Credential type for SFTP site |	•	Key vault <br> • Database <br> • Private key (SSH key file stored in Azure) |
 | **Password**	| Enabled when Credential type is set to _Database_. Specify the Password used for authentication to the SFTP site. *Note: this is encrypted and displayed as •••••••••• within the form.* ||
-| **Key vault certificate** |	Enabled when Credential type is set to _Key vault_. | Select applicable Key vault certificate.	|
+| **Connection string** |	Enabled when Credential type is set to _Key vault_ or _Private key_. | Select applicable Key vault certificate.	|
+| **Container name**  | Enabled when Credential type is set to _Private key_. <br> Enter the Azure container that stores the SSH key file |  |
+| **File name**       | Enabled when Credential type is set to _Private key_. <br> Enter the file name for the SSH key file |  |
+| **Phass phrase**    | Enabled when Credential type is set to _Private key_. <br> If applicable, enter the phass phrase for the SSH key file |  |
 
 
 **API Endpoint:**
