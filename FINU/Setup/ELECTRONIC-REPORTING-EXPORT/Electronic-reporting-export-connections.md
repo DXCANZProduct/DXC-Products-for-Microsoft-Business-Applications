@@ -32,9 +32,9 @@ ms.dyn365.ops.version:: AX 7.0.1
 Finance utilities includes functionality to export an Electronic reporting format to a secure location.
 
 ## Setup steps
-1. [Electronic reporting export connections](
-2. Document types
-3. Electronic reporting destination
+1. [Electronic reporting export connections](#setup-electronic-reporting-export-connections)
+2. [Document types](Document-types.md)
+3. [Electronic reporting destination](Electronic-reporting-destination.md)
 
 The following section will describe the required setup for Step 1 for the secure location which is available in **Electronic reporting export connections**.
 
@@ -138,7 +138,7 @@ Key vault secret name  | Azure active directory application secret key | Select 
 Tenant ID        | Azure active directory tenant identifier          | XX.onmicrosoft.com
 Authority URI    | Azure active directory authority URI              | https://login.microsoftonline.com/
 
-### Validate connection
+#### Validate connection
 Use button **Validate connection** to validate the following:
 - Connection details
 - Export path or container
