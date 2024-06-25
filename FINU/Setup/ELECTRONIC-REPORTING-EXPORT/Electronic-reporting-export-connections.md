@@ -31,7 +31,7 @@ ms.dyn365.ops.version:: AX 7.0.1
 
 Finance utilities includes functionality to export an Electronic reporting format to a secure location.
 
-## Setup steps
+### Setup steps
 1. [Electronic reporting export connections](#setup-electronic-reporting-export-connections)
 2. [Document types](Document-types.md)
 3. [Electronic reporting destination](Electronic-reporting-destination.md)
