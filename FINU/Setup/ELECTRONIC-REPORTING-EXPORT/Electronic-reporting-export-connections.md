@@ -2,7 +2,7 @@
 # required metadata
 
 title: Finance Utilities 
-description: Accounts payable setup - Save electronic reporting file to secure location 
+description: Organization administration - Electronic reporting export connection 
 author: jdutoit2
 manager: Pontus Ek
 ms.date: 2024-06-25
@@ -27,27 +27,26 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version:: AX 7.0.1
 ---
 
-# Accounts payable functionality
-The fields as described in the following subsections are available to control the additional functionality for accounts payable.
+# Electronic reporting
 
-## Save Electronic reporting file to secure location
-The below setup can be used for any Electronic reporting file, but the example provided is for a Vendor GER EFT payment. The feature uses the **Archive** functionality with the following setup steps
--	Step 1: Setup **Electronic reporting export connection**
--	Step 2: Setup **Document types**, using Step 1’s Connection
--	Step 3: Setup **Electronic reporting destination**, using Step 2’s Document type
--	Step 4: Setup AP **Method of payment** and select the Export format configuration from Step 3
+Finance utilities includes functionality to export an Electronic reporting format to a secure location.
 
-Processing: When generating a payment for a method of payment with above GER, the Archive destination is defaulted, and the GER EFT payment file is saved to the assigned connection path.
+## Setup steps
+1. Electronic reporting export connections
+2. Document types
+3. Electronic reporting destination
 
-### Step 1 - Setup Electronic reporting export connections
+The following section will describe the required setup for Step 1 for the secure location which is available in **Electronic reporting export connections**.
+
+### Setup Electronic reporting export connections
 Users can access the page by navigating to **Organisation administration > Electronic reporting > Electronic reporting export connections**
 
-Select **New** to create the location where GER file is to be saved. Connection options include FTP/FTPS, SFTP or Azure blob
+Select **New** to create the location where GER file is to be saved. Connection options include FTP/FTPS, SFTP, Azure blob or API Endpoint
 
 |   Field             |   Description                                                 |   Example or Options   |
 |-|-|-|
 | **Name**            |	Enter a name for your connection                              | ANZ_FTP |
-| **Connection type**	| Select the applicable connection type	                        | •	FTP <br>	• Azure blob <br> • SFTP |
+| **Connection type**	| Select the applicable connection type	                        | •	FTP <br>	• Azure blob <br> • SFTP <br> • API Endpoint|
 | **Error action**    |	The action to take when there is an error with the connection | • Error <br> • Warning |
 | **Enable file encryption/decryption** | Set to _Yes_ if the export file should be encrypted | •	No <br>	• Yes  |
 | **Encryption key name** |	Select applicable **Encryption key name**. <br> See [DXC encryption parameters](../ENCRYPTION/Encryption-decryption.md) for additional details. 
@@ -56,7 +55,7 @@ Select **New** to create the location where GER file is to be saved. Connection 
 
 Select **Save** and the applicable **Setup** will be displayed as per the **Connection type** selected
 
-### Log
+#### Log
 All connection methods have the option to set **Log level** and **Retention periods**. <br>
 These logs can then be used to set **Custom alerts**, for example using error log to be notified when a connection can't connect.
 
@@ -144,43 +143,4 @@ Use button **Validate connection** to validate the following:
 - Connection details
 - Export path or container
 
-### Step 2 - Setup Document types
-
-Users can access the page by navigating to **Organisation administration > Document management > Document types**. <br> 
-Select **New** to create the **Document type** and assign the **Electronic reporting export connection** created in _step 1_.
-
-|   Field    |   Description   |   Example or Options   |
-|-|-|-|
-| **Type**  |  Enter the type  |  Example GER  |
-| **Name**  |  Enter a name for the document type  |  |
-| **Class**  |  Select **Attach file**  |  •	Attach file <br> •	Attach URL <br> •	Simple note      |
-| **Group**  |  Select  **File**   |  • Note <br> • File <br> • Image <br> • Document <br> • Worksheet <br> • URL         |
-| **Category**  |  Select a **Category**  |  •	None         |
-| **Location** | Not used, select any     |  • Azure storage <br> • Database <br> • SharePoint         |
-| **SharePoint address** |   Not used  
-| **Remove**  |  Document and physical file  |           |
-| **Ask for confirmation**  |  Should confirmation be requested priori to removing the file  |  • Yes <br> • No |
-| **Electronic report export connection**  |  Select the **Electronic reporting export connection** setup in _step 1_ |  Example ANZ_FTP         |
-
-### Step 3 - Electronic reporting destination
-Users can access the page by navigating to **Organisation administration > Electronic reporting > Electronic reporting destination**. <br> 
-Select **New** on the Action Pane to create an **Electronic reporting destination** for the selected GER and allocate **Document type** created in _step 2_.
-
-|   Field    |   Description   |    Example or Options   |
-|-|-|-|
-|  **Reference**  |  Select the  Electronic reporting Reference  |  Example ‘ANZ Direct Credit Service (AU)’  |
-|  Select  **New** on the **File destination** FastTab  |  |  |
-|  **Name** |  Enter name for the destination  |   |
-|  **File component name** |  Select  PaymentFile   |   PaymentFile   |
-|  **Stop processing on failure**  |  If enabled and there are errors when saving the file to location, vendor payment processing  **Generate payment**  will create a file and attach to the job. The Payment status will remain  **None**   |  •	Yes <br> •	No          |
-|  Select the **Settings** button on the **File destination** FastTab and select the **Archive** tab |  |  |
-|  **Enabled**  |  Enable the Archive destination  |  • Yes <br> • No          |
-|  **Save in job archive**  |  Enable saving  |  • Yes <br> • No          |
-|  **Type**  |  Select the **Document type** created in _step 2_  |  Example GER          |
-
-### Step 4 -	Method of payment
-On the selected **Method of payment**, enable **Generic electronic Export format**, and in the **Export format configuration** field select the **Reference** from _step 3_.
-
-## Processing
-Vendor payment processing using the above method of payment is discussed at [Processing](../../Processing/Accounts-Payable/Save-electronic-reporting-file-to-secure-location.md)
 
