@@ -2,7 +2,7 @@
 # required metadata
 
 title: Finance Utilities 
-description: Organization administration - Electronic reporting export connection 
+description: Organization administration - Document types 
 author: jdutoit2
 manager: Pontus Ek
 ms.date: 2024-06-25
