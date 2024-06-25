@@ -65,7 +65,7 @@ Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dyn
 Release date: 25 June 2024 <br>
 
 <ins>Manual steps required</ins>
-- If using DXC encrypyion / decryption, please see 17274. Required to update new field **Counter party's public key** with the applicable key.
+- If using DXC encryption / decryption, please see 17274. Required to update new field **Counter party's public key** with the applicable key.
 
 <ins>New features</ins>
 
