@@ -46,7 +46,7 @@ Product version: 10.0.40   - App build: 10.0.1935.5	  | No	| 10.0.34.202306151
 
 ### Release 10.0.34.20230615
 
-Product Lifecycle Management also known as  PLM 10.0.37 runs on the following Microsoft releases
+Product Lifecycle Management also known as  PLM 10.0.34 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
