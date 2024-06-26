@@ -4,7 +4,7 @@
 title: Finance Utilities 
 description: Budgeting processing  -Example file format
 author: jdutoit2
-manager:Pontus Ek
+manager: Pontus Ek
 ms.date: 2024-06-26
 ms.topic: article
 ms.prod: 
