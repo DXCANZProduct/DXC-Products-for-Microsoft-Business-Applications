@@ -4,8 +4,8 @@
 title: Finance Utilities 
 description: Budgeting processing  -Example file format
 author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-07-11
+manager:Pontus Ek
+ms.date: 2024-06-26
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,7 +22,7 @@ ms.reviewer: jdutoit2
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: jdutoit2
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version:: AX 7.0.1
 ---
@@ -48,4 +48,11 @@ From column (A), the column details are:
 -	Monthly values for each budget register entry
 
 [Example file](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/ExampleFiles/BudgetImportExample.csv)
+
+## Generate template
+
+Users can navigate to **Budgeting > Setup > Basic budgeting > Budget utilities parameters** and use button **Generate template** to download csv template based on the following setup:
+- Number of months
+- Dimension format
+
 
