@@ -118,7 +118,7 @@ Field         | Description                         | Example or Options
 **Credential type**	| Select applicable Credential type for SFTP site |	•	Key vault <br> • Database <br> • Private key (SSH key file stored in Azure)
 **User**            |	Specify the Username used for authentication to the SFTP site	
 **Password**        |	Specify the Password used for authentication to the SFTP site. <br> > Note: this is encrypted and displayed as •••••••••• within the form.	
-**Connection string** |	Enabled when Credential type is set to _Key vault_ or _Private key_. | Select applicable Key vault certificate.	|
+**Connection string** |	Enabled when Credential type is set to _Key vault_ or _Private key_. <br> _Private key_: In 'Key vault parameters' create a vault to store the access key of the storage account to access the sshkey file. | Select applicable Key vault certificate.	
 **Container name**  | Enabled when Credential type is set to _Private key_. <br> Enter the Azure container that stores the SSH key file |  
 **File name**       | Enabled when Credential type is set to _Private key_. <br> Enter the file name for the SSH key file |  
 **Phass phrase**    | Enabled when Credential type is set to _Private key_. <br> If applicable, enter the phass phrase for the SSH key file |  
