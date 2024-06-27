@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Organization administration - Electronic reporting export connection 
 author: jdutoit2
 manager: Pontus Ek
-ms.date: 2024-06-25
+ms.date: 2024-06-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,7 +22,7 @@ ms.reviewer: jdutoit2
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: jdutoit2
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version:: AX 7.0.1
 ---
@@ -113,7 +113,7 @@ These logs can then be used to set **Custom alerts**, for example using error lo
 | **User**	| Specify the **Username** used for authentication to the SFTP site	||
 | **Credential type**	| Select applicable Credential type for SFTP site |	•	Key vault <br> • Database <br> • Private key (SSH key file stored in Azure) |
 | **Password**	| Enabled when Credential type is set to _Database_. Specify the Password used for authentication to the SFTP site. *Note: this is encrypted and displayed as •••••••••• within the form.* ||
-| **Connection string** |	Enabled when Credential type is set to _Key vault_ or _Private key_. | Select applicable Key vault certificate.	|
+| **Connection string** |	Enabled when Credential type is set to _Key vault_ or _Private key_. <br> _Private key_: In 'Key vault parameters' create a vault to store the access key of the storage account to access the sshkey file. | Select applicable Key vault certificate.	|
 | **Container name**  | Enabled when Credential type is set to _Private key_. <br> Enter the Azure container that stores the SSH key file |  |
 | **File name**       | Enabled when Credential type is set to _Private key_. <br> Enter the file name for the SSH key file |  |
 | **Phass phrase**    | Enabled when Credential type is set to _Private key_. <br> If applicable, enter the phass phrase for the SSH key file |  |
