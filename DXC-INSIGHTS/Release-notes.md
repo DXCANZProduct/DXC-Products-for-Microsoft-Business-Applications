@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.37.20240429
+### Release 10.0.37.20240627 
 
 Insights for D365 FO 10.0.37 runs on the following Microsoft releases
 
@@ -42,6 +42,27 @@ Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+
+#### Build 10.0.37.202406271
+Release date: 27 June 2024
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+17295	| Ledger Journal Posting	| Add Telemetry logging support to comprehensively record errors encountered throughout the ledger journal posting process.
+18321	| Application Insights Dashboard template | A new version 1.5 of Application Insights Dashboard template has been published
+
+<ins>Bug fix</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+18185	| DMF error events	| Fix an issue related to logging of DMF export/import events where some info messages were getting logged as errors in Azure App Insights
+18319	| Batch error events	| Fix an issue related to logging of batch error events that were getting logged into custom events table as duplicate records.
+
+# Previous Version(s)
+
+### Release 10.0.37.20240429
 
 #### Build 10.0.37.202404293
 Release date: 24 May 2024
@@ -72,7 +93,6 @@ Number	| Name		 | Description
 17464	| Feature state monitoring with Insights for D365 FO	| Add Telemetry logging support for logging feature state changes. Refer to [Insights for D365 FO Parameters](./setup.md#3-insights-for-d365-fo-parameters)
 17025	| Capture feature name within Page views monitoring | Add a custom dimension capturing the feature name within page views monitoring
 
-# Previous Version(s)
 
 ### Release 10.0.36.202403261
 
