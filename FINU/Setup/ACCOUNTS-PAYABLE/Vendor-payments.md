@@ -4,8 +4,8 @@
 title: Finance Utilities 
 description: Accounts payable setup - Vendor Payments 
 author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-06-21
+manager: Pontus Ek
+ms.date: 2024-06-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,7 +45,7 @@ Expand the **Payment management** FastTab and set the applicable fields under he
 Finance utilities has parameterised the format of the last two balancing lines on EFT file payments. Standard Australian EFT file formats provided by Microsoft always include a balancing line; however, many Australian banks do not require it or require an additional totaling line. It also hardcodes the order of the dollar values in this total and so this enhancement allows both settings to be controlled through Bank account parameters.
 
 -	**Extra balance line on EFT** - some banks require an additional ‘balancing line’ to be the second last line of the EFT file generated. If your bank requires this, then enable this option.
--	**Include balance line in record count** – as per the above point, if the extra line is to be included in the last record line count, enabnle this field. This option is only selectable when the above option has been enabled.
+-	**Include balance line in record count** – as per the above point, if the extra balance line is to be included in the record line count, enable this field. 
 -	**Total line order** – here you can determine the order of amounts on the balance line in the EFT file.  The following options are available:
  <br> o	Total net, total credit, total debit
  <br> o	Total net, total debit, total credit
