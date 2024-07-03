@@ -51,7 +51,7 @@ Number	| Functionality	  	| Description
 :--	|:--		  	|:--	
 13793	| Forex contract link to document | New button **Link to invoice journal** added to **Forex contract**. Adds the ability to link open invoice journals for the same currency as the contract. <br> Existing button **Link to document** button updated to **Link to purchase order**. <br> ![Link to invoice journal](IMAGES/ReleaseNotes_202307_1.png "Link to invoice journal")
 14371	| Purchase order Prepayment invoice | Ability to link Forex contract to a Purchase order's Prepayment invoice
-14374	| Reciprocal exchange rate	| New option **Reciprocal exchange rate** in **Forex contract parameters**, allows users to enter the rates in the contract as reciprocal rate <br> ![Parameters](IMAGES/ReleaseNotes_202307_2.png "Parameters") <br> <br> For example, entering 2 in field **Exchange rate** is automatically converted to 0.5: <br> ![Contract](IMAGES/ReleaseNotes_202307_3.png "Contract")
+14374	| Reciprocal exchange rate	| New option **Reciprocal exchange rate** in **Forex contract parameters**, allows users to enter the rates in the contract as reciprocal rate <br> ![Parameters](IMAGES/ReleaseNotes_202307_2.png "Parameters") <br> <br> For example set **Reciprocal exchange rate** to _Yes_ and enter 2 in field **Exchange rate** will automatically convert to 0.5: <br> ![Contract](IMAGES/ReleaseNotes_202307_3.png "Contract")
 
 
 <ins>Bug fixes</ins>
