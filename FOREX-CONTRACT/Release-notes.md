@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract - Release notes
 author: jdutoit2
 manager: Pontus Ek
-ms.date: 2024-05-30
+ms.date: 2024-07-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,9 +40,27 @@ Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No            | 10.0.3
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No	          | 10.0.34.202306151
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  |  • No functional issues <br> • Build error fixed in 17982 | • Functional: 10.0.37.202404261 <br> • Build error fixed in: 10.0.37.202405301
 
+# Next version
+
+### Release 10.0.37.202407TBD
+Estimated release date: July 2024
+
+<ins>New features</ins>
+
+Number	| Functionality	  	| Description
+:--	|:--		  	|:--	
+13793	| Forex contract link	| New button **Link to invoice journal** added to **Forex contract**. Adds the ability to link open invoice journals for the same currency as the contract. <br> Existing button **Link to document** button updated to **Link to purchase order**. <br> ![Link to invoice journal](IMAGES/ReleaseNotes_202307_1.png "Link to invoice journal")
+
+
+<ins>Bug fixes</ins>
+
+Number	| Functionality	  	| Description
+:--	|:--		  	|:--	
+
+
 # Current version
 
-### Release 10.0.37.10.0.37.20240530
+### Release 10.0.37.20240530
 
 DXC Forex contract 10.0.37 runs on the following Microsoft releases
 
