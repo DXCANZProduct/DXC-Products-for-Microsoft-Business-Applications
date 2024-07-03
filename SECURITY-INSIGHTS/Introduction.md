@@ -1,4 +1,4 @@
-![image](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/assets/59988997/5854f54b-6f3a-424d-bdf1-751f2d46ed1b)---
+---
 # required metadata
 
 title: Security Insights for D365 FO
