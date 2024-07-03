@@ -2,7 +2,7 @@
 # required metadata
 
 title: Security Insights for D365 FO
-description: Setup for Security Insights for D365 FO
+description: Security diagnostics for Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
 ms.date: 2024-07-03
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: DXCSecurityInsightsParameters
+ms.search.form: 
 audience: Application User/ Azure Administrators
 # ms.devlang: 
 ms.reviewer: Monica du Toit
@@ -28,27 +28,13 @@ ms.dyn365.ops.version: 10.0.32
 
 # Security Insights for D365 FO
 
-###	1. Azure Application Insights instance
-Start by creating a new Application Insights instance in Azure. See [MS doc](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-new-resource)
+##	Security diagnostics
 
-Copy the Instrumentation Key. This will be used when configuring the Azure Application Insights instance in **Insights for user access and security parameters**.
-![Instrument Key](IMAGES/Instrument_key.png)
+**Security diagnostics** can be accessed for a menu item on the Options tab on the ActionPane.
 
-### 2.	Enable feature
-Find and enable the feature **Security Insights for D365FO** to enable the product
- 
-### 3.	Parameters
-The **Insights for user access and security parameters** page within Security admininstration is used to define the configuration required to connect to **Azure application insights**. <br>
-Multiple Insights connections can be configured and the applicable one selected when running **Fetch interaction data from application Insights** on page **Insights for user access and security** which fetches accessed menu items withing the selected time period.
+The following two fields have been added to display licensing info for Roles and Privileges:
+1. **Context \ Resource license** - License for the Menu item
+2. **License** - License for the Role or Privilege
 
-Navigate to **System administration > Security > Insights for user access and security parameters**
-
-- Click **New** to create a new record and enter the the following fields for the Azure Application Insights instance:
-- **Description** 
-- **Application Insights App ID** 
-- **Tenant ID** 
-- **Client ID** 
-- **Client secret** 
-
-Use the **Validate** button to validate the Insights instance.
+![Security diagnostics](IMAGES/Security-diagnostics.png)
 
