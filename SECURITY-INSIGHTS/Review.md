@@ -53,13 +53,21 @@ Fetch user interation data from Azure applicable Insights
 - Select the required start date in **Activities - start date time**
 - Select the required end date in **Activities - end date time**
 
-The records to include can be filtered to for example a User Id.
+The records to include are automatically filtered to enabled users and can also be filtered to User Id(s).
 
 ## 4. Calculate utilization rates
 Calculate utilization rates of user roles and privileges based on accessing menu items.
 
-The records to include can be filtered to for example a User Id.
+The records to include are automatically filtered to enabled users and can also be filtered to User Id(s).
 
 # Review
+
+Next step is to review the utilization. Example actions that could be taken after review: 
+- Where the user hasn't accessed any of the menu items in the specific role, it could be possible to remove the role from the user.
+- Where the user only accessed "lower" licensed menu items in the role, it could be possible to assign the applicable privileges to a different/new duty and add those to a different/new role which will result in a "lower" license for the user.
+
+After modifying security configuration, rerun the following to update the values on the form:
+- Fetch interaction data from application Insights
+- Calculate utilization rates
 
 ![Overview](IMAGES/Overview.png)
