@@ -3,9 +3,9 @@
 
 title: Forex contract
 description: Link Forex contract
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-04-14
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-07-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form: SAB_ForexContractTableListPage, PurchTableListPage, VendTrans
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: ICONForex
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -88,13 +88,14 @@ Go to **Accounts payable > Invoices > Invoice journal**
 
 Go to **Forex contracts > Forex contracts > All forex contracts**
 
-Purchase order headers can be allocated to forex contracts via:
+- Select the applicable forex contract.
+- On the Action Pane, on the **Forex contracts** tab, select:	
+    - **Link to purchase order** to allocate the contract to Purchase order header(s)
+    - **Link to invoice journal** to allocate the contract to Invoice journal line(s)
 
--	Select the applicable forex contract.
--	On the Action Pane, on the **Forex contracts** tab, select **Link to document**.
 
 <ins>Option 1 - Manually allocate amounts</ins>
--	Select the applicable **Purchase order(s)**. If the selected document’s unallocated amount is less than the forex contract’s amount, the user will be able to select multiple documents until the forex contract amount has been fully allocated.
+-	Select the applicable **Purchase order(s)** or **Invoice journal line(s)**. If the selected document’s unallocated amount is less than the forex contract’s amount, the user will be able to select multiple documents until the forex contract amount has been fully allocated.
 -	Enter amount in **Allocate** field, amounts needs to be:
     - Less or equal to the document’s unallocated amount.
     - Less or equal to the forex contract’s unallocated amount.
