@@ -28,14 +28,30 @@ ms.dyn365.ops.version: 10.0.32
 
 # Security Insights for D365 FO
 
-## Release notes
-The [release notes](Release-notes.md) describes the features that are either new or changed. 
+###	1. Azure Application Insights instance
+Start by creating a new Application Insights instance in Azure. See [MS doc](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-new-resource)
 
-## Introduction
+Copy the Instrumentation Key. This will be used to link the Insights for D365 FO logger to your Azure Application Insights instance.
+![Instrument Key](IMAGES/Instrument_key.png)
+
+### 2.	Enable feature
+
+Find and enable the feature ‘Insights for D365 FO’ to enable the product
+
+ 
+### 3.	Parameters
+
+The **Insights for user access and security parameters** page within Security admininstration is used to define the configuration required to connect to **Azure application insights**. <br>
+Multiple Insights connections can be configured and the applicable one selected when running **Fetch interaction data from application Insights** on page **Insights for user access and security** which fetches accessed menu items withing the selected time period.
+
+Navigate to **System administration > Security > Insights for user access and security parameters**, select **New** and set the following fields.
+
+Field    | Description
+:--      |:--
+Description    | 
+Applica
 
 
-
-### Topics
 
 
 
