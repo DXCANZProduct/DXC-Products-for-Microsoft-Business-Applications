@@ -1,4 +1,4 @@
----
+![image](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/assets/59988997/5854f54b-6f3a-424d-bdf1-751f2d46ed1b)---
 # required metadata
 
 title: Security Insights for D365 FO
@@ -33,11 +33,15 @@ The [release notes](Release-notes.md) describes the features that are either new
 
 ## Introduction
 
+Security Insights for D365FO ingests user behavior data from Azure Application Insights for security analysis. <br>
+Actively monitor user role assignments and utilization, thus enabling power users to optimize licensing and security of end users. <br>
+Identify and maintain underutilized/unused roles, duties, privileges that have enterprise licenses attached.
 
 
 ### Topics
-
-
+- [Setup](Parameters.md)
+- [Review](Review.md)
+- [Security diagnostics](Security-diagnostics.md)
 
 
 ## New ideas
