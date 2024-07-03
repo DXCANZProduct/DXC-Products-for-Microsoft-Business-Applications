@@ -40,7 +40,7 @@ Identify and maintain underutilized/unused roles, duties, privileges that have e
 
 ### Topics
 - [Setup](Parameters.md)
-- [Review](Review.md)
+- [Monitor](Review.md)
 - [Security diagnostics](Security-diagnostics.md)
 
 
