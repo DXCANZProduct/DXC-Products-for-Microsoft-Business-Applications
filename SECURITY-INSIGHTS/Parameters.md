@@ -31,30 +31,24 @@ ms.dyn365.ops.version: 10.0.32
 ###	1. Azure Application Insights instance
 Start by creating a new Application Insights instance in Azure. See [MS doc](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-new-resource)
 
-Copy the Instrumentation Key. This will be used to link the Insights for D365 FO logger to your Azure Application Insights instance.
+Copy the Instrumentation Key. This will be used when configuring the Azure Application Insights instance in **Insights for user access and security parameters**.
 ![Instrument Key](IMAGES/Instrument_key.png)
 
 ### 2.	Enable feature
-
-Find and enable the feature ‘Insights for D365 FO’ to enable the product
-
+Find and enable the feature **Security Insights for D365FO** to enable the product
  
 ### 3.	Parameters
-
 The **Insights for user access and security parameters** page within Security admininstration is used to define the configuration required to connect to **Azure application insights**. <br>
 Multiple Insights connections can be configured and the applicable one selected when running **Fetch interaction data from application Insights** on page **Insights for user access and security** which fetches accessed menu items withing the selected time period.
 
-Navigate to **System administration > Security > Insights for user access and security parameters**, select **New** and set the following fields.
+Navigate to **System administration > Security > Insights for user access and security parameters**
 
-Field    | Description
-:--      |:--
-Description    | 
-Applica
+- Click **New** to create a new record and enter the the following fields for the Azure Application Insights instance:
+- **Description** 
+- **Application Insights App ID** 
+- **Tenant ID** 
+- **Client ID** 
+- **Client secret** 
 
+Use the **Validate** button to validate the Insights instance.
 
-
-
-
-
-## New ideas
-Have a suggestion for a new product or a new feature for an existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
