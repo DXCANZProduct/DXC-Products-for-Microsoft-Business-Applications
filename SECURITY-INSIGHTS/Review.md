@@ -28,17 +28,38 @@ ms.dyn365.ops.version: 10.0.32
 
 # Security Insights for D365 FO
 
-## Release notes
-The [release notes](Release-notes.md) describes the features that are either new or changed. 
+**Insights for user access and security** is used to colate and review user access and security utilization.
 
-## Introduction
+# Processing
+The following steps are available to initiate or update the required fields.
 
+## 1. Synchronize user roles and access
+Synchronizes the current user roles, privileges and accessible menu items. This can only be run as batch.
 
+## 2. Initiate user security groups
+Automatically creates groups of similar users by analyzing user roles and privileges. <br>
 
-### Topics
+**Parameters:**
+- Use **Select foundation data for user group creation** to create the user groups by either:
+    - Security roles
+    - Security privileges
+- Enter the **Maximum number of groups** that should be created
 
+## 3. Fetch interaction data from application Insights
+Fetch user interation data from Azure applicable Insights
 
+**Parameters:**
+- Select the applicable **Azure application Insights connection** setup in [Insights for user access and security parameters](Parameters.md)
+- Select the required start date in **Activities - start date time**
+- Select the required end date in **Activities - end date time**
 
+The records to include can be filtered to for example a User Id.
 
-## New ideas
-Have a suggestion for a new product or a new feature for an existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
+## 4. Calculate utilization rates
+Calculate utilization rates of user roles and privileges based on accessing menu items.
+
+The records to include can be filtered to for example a User Id.
+
+# Review
+
+![Overview](IMAGES/Overview.png)
