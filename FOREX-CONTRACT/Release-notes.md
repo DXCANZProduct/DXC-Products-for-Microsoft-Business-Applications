@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract - Release notes
 author: jdutoit2
 manager: Pontus Ek
-ms.date: 2024-07-03
+ms.date: 2024-07-08
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,6 +58,7 @@ Number	| Functionality	  	| Description
 
 Number	| Functionality	  	| Description
 :--	|:--		  	|:--	
+18357	| Link to Forex contract	| Link to Forex contract removed after adding Purchase order to Voyage if feature **Performance Improvements for Post Receipt Function in Landed Cost** is disabled.
 
 
 # Current version
