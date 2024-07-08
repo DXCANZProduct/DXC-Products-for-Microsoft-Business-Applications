@@ -84,7 +84,7 @@ Version TBC - coming late 2024
 Reason for deprecation/removal  - no longer being used as a source of currency exchange rates
 
 ### Business Process links
-Reason for deprecation/removal
+Reason for deprecation/removal - Business Process links were originally designed for Mavim and SharePoint integration.  Both Mavim and Sharepoint have alternate connection capabilities with D365 Finance and operations and the product is no longer being utilised as part of the Core extension solutions 
 
 # Previous version(s)
 ### Release 10.0.36.20231130
