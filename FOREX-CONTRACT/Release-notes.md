@@ -3,9 +3,9 @@
 
 title: Forex contract
 description: Forex contract - Release notes
-author: jdutoit2
+author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-07-08
+ms.date: 2024-07-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: ICONForex
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -59,6 +59,7 @@ Number	| Functionality	  	| Description
 Number	| Functionality	  	| Description
 :--	|:--		  	|:--	
 18357	| Link to Forex contract	| Link to Forex contract removed after adding Purchase order to Voyage if feature **Performance Improvements for Post Receipt Function in Landed Cost** is disabled.
+14244	| Allocated documents  	| After posting the invoice, the line was displayed twice in Forex contract's Allocated documents.
 
 
 # Current version
