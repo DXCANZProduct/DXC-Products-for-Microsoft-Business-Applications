@@ -210,7 +210,7 @@ Number	  	| Module	| Functionality	  	| Description
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-16997		| Accounts payable	| EFT file name editor on Method of payment	| Refresh required to save updates to the file name using Editor
+16997		| Accounts payable	| EFT file name editor on Method of payment	| Refresh required to save updates to the file name using Editor <br> ![File name editor](Images/ReleaseNotes_20240329_10.png "File name editor")
 16827		| Accounts receivable | EFT file name on Method of payment | If the same payment method PaymMode exists in the Accounts payable (AP) module, the EFT file name setup from the AP method of payment was used
 17063		| Accounts receivable | Interest notes - Due date | Due date now updated before the transaction records are created. <br> Resolves error: "Cannot edit a record in Customer transactions (CustTrans). An update conflict occurred due to another user process deleting the record or changing one or more fields in the record."
 17119		| Accounts payable <br> Accounts receivable	| ABN lookup	| Fix to 'Company name' in Search results
