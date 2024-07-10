@@ -3,9 +3,9 @@
 
 title: Forex contract
 description: Forex contract - Release notes
-author: jdutoit2
+author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-07-03
+ms.date: 2024-07-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: ICONForex
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -49,13 +49,18 @@ Estimated release date: July 2024
 
 Number	| Functionality	  	| Description
 :--	|:--		  	|:--	
-13793	| Forex contract link	| New button **Link to invoice journal** added to **Forex contract**. Adds the ability to link open invoice journals for the same currency as the contract. <br> Existing button **Link to document** button updated to **Link to purchase order**. <br> ![Link to invoice journal](IMAGES/ReleaseNotes_202307_1.png "Link to invoice journal")
+13793	| Forex contract link to document | New button **Link to invoice journal** added to **Forex contract**. Adds the ability to link open invoice journals for the same currency as the contract. <br> Existing button **Link to document** button updated to **Link to purchase order**. <br> ![Link to invoice journal](IMAGES/ReleaseNotes_202307_1.png "Link to invoice journal")
+14371	| Purchase order Prepayment invoice | Ability to link Forex contract to a Purchase order's Prepayment invoice
+14374	| Reciprocal exchange rate	| New option **Reciprocal exchange rate** in **Forex contract parameters**, allows users to enter the rates in the contract as reciprocal rate <br> ![Parameters](IMAGES/ReleaseNotes_202307_2.png "Parameters") <br> <br> For example set **Reciprocal exchange rate** to _Yes_ and enter 2 in field **Exchange rate** will automatically convert to 0.5: <br> ![Contract](IMAGES/ReleaseNotes_202307_3.png "Contract")
 
 
 <ins>Bug fixes</ins>
 
 Number	| Functionality	  	| Description
 :--	|:--		  	|:--	
+18357	| Link to Forex contract	| Link to Forex contract removed after adding Purchase order to Voyage if feature **Performance Improvements for Post Receipt Function in Landed Cost** is disabled.
+18403	| Forex contracts	| Link to documents (purchase order and invoice journal) added to SAB_ForexContractTable. Previously only available from list page.
+14244	| Allocated documents  	| After posting the invoice, the line was displayed twice in Forex contract's Allocated documents.
 
 
 # Current version

@@ -3,9 +3,9 @@
 
 title: Forex contract
 description: Forex contract setup - Forex contract parameters
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-03-28
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-07-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form: SAB_ForexContractParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: ICONForex
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -43,6 +43,8 @@ The following table describes the fields that are available on the **General** t
 <ins>**Cash in**</ins>            |
 **Cash in journal**               |	The journal used to create cash in transactions.
 **Default bank account**          |	Default bank account for cash in journals.
+<ins>**General**</ins>            |
+**Reciprocal exchange rate**      | When set to _Yes_, allows users to enter the exchange rates in the forex contract as reciprocal rate.
 
 ## Number sequence
 Use the **Number sequences** tab on the **Forex contract parameters** page to assign number sequence codes to the Forex contracts module. The following table describes the purpose of each of those number sequences. For more information about number sequences, see [Number sequences overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview) and its related topics.
