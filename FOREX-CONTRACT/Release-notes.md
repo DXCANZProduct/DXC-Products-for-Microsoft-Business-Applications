@@ -62,6 +62,7 @@ Number	| Functionality	  	| Description
 18357	| Link to Forex contract	| Link to Forex contract removed after adding Purchase order to Voyage if feature **Performance Improvements for Post Receipt Function in Landed Cost** is disabled.
 18403	| Forex contracts	| Link to documents (purchase order and invoice journal) added to SAB_ForexContractTable. Previously only available from list page.
 14244	| Allocated documents  	| After posting the invoice, the line was displayed twice in Forex contract's Allocated documents.
+18417	| Changes to purchase order	| Link to Forex contract removed after changing a linked Purchase order, for example: increasing/decreasing purchase quantity, changing requested receipt date or updating financial dimensions.
 
 
 # Current version
