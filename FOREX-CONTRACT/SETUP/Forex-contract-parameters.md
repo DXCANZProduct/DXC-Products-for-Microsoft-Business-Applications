@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract setup - Forex contract parameters
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-07-03
+ms.date: 2024-07-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,6 +45,7 @@ The following table describes the fields that are available on the **General** t
 **Default bank account**          |	Default bank account for cash in journals.
 <ins>**General**</ins>            |
 **Reciprocal exchange rate**      | When set to _Yes_, allows users to enter the exchange rates in the forex contract as reciprocal rate.
+**Enable delete link of received purchase order to forex contract**  | Manage ability to delete a linked purchase order/line in **Allocated documents** after it has been received. When set to: <br> • **Yes** - Linked purchase order/line can be deleted in Allocated documents after Purchase order/line has been received <br> • **No** - Linked purchase order/line can not be deleted in Allocated documents after Purchase order/line has been received 
 
 ## Number sequence
 Use the **Number sequences** tab on the **Forex contract parameters** page to assign number sequence codes to the Forex contracts module. The following table describes the purpose of each of those number sequences. For more information about number sequences, see [Number sequences overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview) and its related topics.
