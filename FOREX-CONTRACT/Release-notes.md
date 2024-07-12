@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-07-09
+ms.date: 2024-07-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,6 +52,7 @@ Number	| Functionality	  	| Description
 13793	| Forex contract link to document | New button **Link to invoice journal** added to **Forex contract**. Adds the ability to link open invoice journals for the same currency as the contract. <br> Existing button **Link to document** button updated to **Link to purchase order**. <br> ![Link to invoice journal](IMAGES/ReleaseNotes_202307_1.png "Link to invoice journal")
 14371	| Purchase order Prepayment invoice | Ability to link Forex contract to a Purchase order's Prepayment invoice
 14374	| Reciprocal exchange rate	| New option **Reciprocal exchange rate** in **Forex contract parameters**, allows users to enter the rates in the contract as reciprocal rate <br> ![Parameters](IMAGES/ReleaseNotes_202307_2.png "Parameters") <br> <br> For example set **Reciprocal exchange rate** to _Yes_ and enter 2 in field **Exchange rate** will automatically convert to 0.5: <br> ![Contract](IMAGES/ReleaseNotes_202307_3.png "Contract")
+18420	| Deleting allocated documents | New Forex contract parameter option called **Enable delete link of received purchase order to forex contract** to manage ability to delete a linked purchase order/line in **Allocated documents** after it has been received. When set to: <br> • **Yes** - Linked purchase order/line can be deleted in Allocated documents after Purchase order/line has been received <br> • **No** - Linked purchase order/line can not be deleted in Allocated documents after Purchase order/line has been received 
 
 
 <ins>Bug fixes</ins>
