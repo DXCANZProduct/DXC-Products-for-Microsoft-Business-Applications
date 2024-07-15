@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Organization administration - Electronic reporting export connection 
-author: jdutoit2
+author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-06-27
+ms.date: 2024-07-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  ERFormatDestination, DXCEncryptionParameters, DocuType, DFUGERExportConnection
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version:: AX 7.0.1
 ---
@@ -55,7 +55,7 @@ Select **New** to create the location where GER file is to be saved. Connection 
 
 Select **Save** and the applicable **Setup** will be displayed as per the **Connection type** selected
 
-#### Log
+### Log
 All connection methods have the option to set **Log level** and **Retention periods**. <br>
 These logs can then be used to set **Custom alerts**, for example using error log to be notified when a connection can't connect.
 
@@ -79,7 +79,7 @@ These logs can then be used to set **Custom alerts**, for example using error lo
 **Log code**                        | Code that initiated the log.
 **Message**                         | Message for the log.
 
-**FTP:**
+### FTP
 
 |   Field    |   Description   |   Example or Options   |
 |-|-|-|
@@ -92,7 +92,7 @@ These logs can then be used to set **Custom alerts**, for example using error lo
 | **Password**	| Enabled when Credential type is set to _Database_. <br> Specify the Password used for authentication to the FTP site. <br> Note: this is encrypted and displayed as •••••••••• within the form.	||
 | **Key vault certificate** |	Enabled when Credential type is set to _Key vault_. | Select the applicable Key vault certificate.	|
 
-**Azure blob:**		
+### Azure blob
 
 |   Field    |   Description   |   Example or Options   |
 |-|-|-|
@@ -102,7 +102,7 @@ These logs can then be used to set **Custom alerts**, for example using error lo
 | **Storage account key** |	Enabled when Credential type is set to _Database_	||
 | **Connection string** |	Enabled when Credential type is set to _Key vault_. <br> **Azure SAS Storage account level tokens** also supported.  ||
 
-**SFTP:**
+### SFTP
 
 |   Field    |   Description   |   Example or Options   |
 |-|-|-|
@@ -119,7 +119,7 @@ These logs can then be used to set **Custom alerts**, for example using error lo
 | **Phass phrase**    | Enabled when Credential type is set to _Private key_. <br> If applicable, enter the phass phrase for the SSH key file |  |
 
 
-**API Endpoint:**
+### API Endpoint
 
 > Note: Available **Web API types** can be viewed on ActionPane.
 
@@ -138,7 +138,7 @@ Key vault secret name  | Azure active directory application secret key | Select 
 Tenant ID        | Azure active directory tenant identifier          | XX.onmicrosoft.com
 Authority URI    | Azure active directory authority URI              | https://login.microsoftonline.com/
 
-#### Validate connection
+### Validate connection
 Use button **Validate connection** to validate the following:
 - Connection details
 - Export path or container
