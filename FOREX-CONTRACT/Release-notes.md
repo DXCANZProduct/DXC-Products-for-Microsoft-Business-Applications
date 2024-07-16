@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-07-16
+ms.date: 2024-07-17
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -64,6 +64,7 @@ Number	| Functionality	  	| Description
 18403	| Forex contracts	| Link to documents (purchase order and invoice journal) added to SAB_ForexContractTable. Previously only available from list page.
 14244	| Allocated documents  	| After posting the invoice, the line was displayed twice in Forex contract's Allocated documents.
 18417	| Changes to purchase order	| Link to Forex contract removed after changing a linked Purchase order, for example: increasing/decreasing purchase quantity, changing requested receipt date or updating financial dimensions.
+18428	| Vendor transactions	| Error 'Cannot create a record in Forex contract lines (SAB_ForexContractTrans). Forex number: %, 1874. The record already exists'. Occured when clicking on a Vendor transaction for a purchase order with multiple lines and allocated to a Forex contract. 
 
 
 # Current version
