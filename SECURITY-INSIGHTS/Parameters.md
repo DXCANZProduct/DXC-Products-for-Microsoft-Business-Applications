@@ -62,7 +62,7 @@ The following batch process options can be used for batch performance improvemen
 
 Examples:
 
-Number of enabled D365 users   | Maximum batch tasks  | Minimum users per task  | Result: # of tasks
+Number of enabled D365 users   | Maximum batch tasks  | Minimum users per task  | Result: Number of tasks
 :--                            |:--                             |:--                                |:--
 110                            | 2                              | 10                                | 2            
 110                            | 20                             | 10                                | 11
