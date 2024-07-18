@@ -43,7 +43,7 @@ Multiple Insights connections can be configured and the applicable one selected 
 
 Navigate to **System administration > Security > Insights for user access and security parameters**
 
-### Configuration
+### 3.1 Configuration
 
 - Click **New** to create a new record and enter the the following fields for the Azure Application Insights instance:
 - **Description** - 
@@ -54,7 +54,7 @@ Navigate to **System administration > Security > Insights for user access and se
 
 Use the **Validate** button to validate the Insights instance.
 
-### Batch processes
+### 3.2 Batch processes
 
 The following batch process options can be used for batch performance improvement:
 - **Batch jobs** - **Maximum number of batch tasks** - Enter the maximum number of tasks the batch should be split into
