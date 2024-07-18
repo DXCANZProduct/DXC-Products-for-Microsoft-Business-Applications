@@ -72,7 +72,9 @@ Applies to the following two processes when run as batch:
 - Fetch interaction data from application insights
 - Calculate utilization rates
 
+## Data entities
 
-
+- **Configuration**: Azure application insights connection details
+- **Batch processes**: Insights for user access and security parameters
 
 
