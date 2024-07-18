@@ -40,10 +40,23 @@ Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No            | 10.0.3
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No	          | 10.0.34.202306151
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  |  • No functional issues <br> • Build error fixed in 17982 | • Functional: 10.0.37.202404261 <br> • Build error fixed in: 10.0.37.202405301
 
-# Next version
 
-### Release 10.0.37.202407TBD
-Estimated release date: July 2024
+# Current version
+
+### Release 10.0.37.20240718
+
+DXC Forex contract 10.0.37 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
+Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
+Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
+Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+
+
+#### Build 10.0.37.202407181
+Release date: 18 July 2024
 
 <ins>New features</ins>
 
@@ -68,19 +81,10 @@ Number	| Functionality	  	| Description
 18464	| Changes to purchase order	| Changes to linked purchase order's amount didn't update the allocated amounts accordingly.
 
 
-# Current version
+
+# Previous version(s)
 
 ### Release 10.0.37.20240530
-
-DXC Forex contract 10.0.37 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
-Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
-Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
-Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-
 
 #### Build 10.0.37.202405301
 Release date: 30 May 2024
@@ -99,9 +103,6 @@ Number	| Functionality	  	| Description
 17982	| Pending invoice	| 10.0.40 build error caused by missing reference for the ProcessAutomation Model which is now used by the VendInvoiceInfoTable. <br> Used to determine whether the Pending invoices button is enabled/disabled in the Vendor Purchase Invoice form.
 17803	| Link to Forex contract	| Link to Forex contract removed after adding Purchase order to Voyage
 
-
-
-# Previous version(s)
 
 ### Release 10.0.37.20240426
 
