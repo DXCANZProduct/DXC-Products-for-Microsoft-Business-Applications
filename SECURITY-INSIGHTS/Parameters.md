@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Setup for Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-07-03
+ms.date: 2024-07-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,21 +34,45 @@ Start by creating a new Application Insights instance in Azure. See [MS doc](htt
 Copy the Instrumentation Key. This will be used when configuring the Azure Application Insights instance in **Insights for user access and security parameters**.
 ![Instrument Key](IMAGES/Instrument_key.png)
 
-### 2.	Enable feature
+## 2.	Enable feature
 Find and enable the feature **Security Insights for D365FO** to enable the product
  
-### 3.	Parameters
+## 3.	Parameters
 The **Insights for user access and security parameters** page within Security admininstration is used to define the configuration required to connect to **Azure application insights**. <br>
 Multiple Insights connections can be configured and the applicable one selected when running **Fetch interaction data from application Insights** on page **Insights for user access and security** which fetches accessed menu items withing the selected time period.
 
 Navigate to **System administration > Security > Insights for user access and security parameters**
 
+### Configuration
+
 - Click **New** to create a new record and enter the the following fields for the Azure Application Insights instance:
-- **Description** 
-- **Application Insights App ID** 
-- **Tenant ID** 
-- **Client ID** 
-- **Client secret** 
+- **Description** - 
+- **Application Insights App ID** - 
+- **Tenant ID** - 
+- **Client ID** - 
+- **Client secret** - 
 
 Use the **Validate** button to validate the Insights instance.
+
+### Batch processes
+
+The following batch process options can be used for batch performance improvement:
+- **Batch jobs** - **Maximum number of batch tasks** - Enter the maximum number of tasks the batch should be split into
+- **Throttling** - **Minimum number of users per task** - Enter the minimum number of users per task
+
+Examples:
+
+Number of enabled D365 users   | Maximum number of batch tasks  | Minimum number of users per task  | Result: # of tasks
+:--                            |:--                             |:--                                |:--
+110                            | 2                              | 10                                | 2            
+110                            | 20                             | 10                                | 11
+
+
+Applies to the following two processes when run as batch:
+- Fetch interaction data from application insights
+- Calculate utilization rates
+
+
+
+
 
