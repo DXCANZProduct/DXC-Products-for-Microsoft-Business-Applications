@@ -76,7 +76,7 @@ Number	| Functionality	  	| Description
 18357	| Link to Forex contract	| Link to Forex contract removed after adding Purchase order to Voyage if feature **Performance Improvements for Post Receipt Function in Landed Cost** is disabled.
 18403	| Forex contracts	| Link to documents (purchase order and invoice journal) added to SAB_ForexContractTable. Previously only available from list page.
 14244	| Allocated documents  	| After posting the invoice, the line was displayed twice in Forex contract's Allocated documents.
-18428	| Vendor transactions	| Error 'Cannot create a record in Forex contract lines (SAB_ForexContractTrans). Forex number: %, 1874. The record already exists'. Occured when clicking on a Vendor transaction for a purchase order with multiple lines and allocated to a Forex contract. 
+18428	| Vendor transactions	| Error 'Cannot create a record in Forex contract lines (SAB_ForexContractTrans). Forex number: %, 1874. The record already exists'. Occurred when clicking on a Vendor transaction for a purchase order with multiple lines and allocated to a Forex contract. 
 18417	| Changes to purchase order	| Link to Forex contract removed after changing a linked Purchase order, for example: increasing/decreasing purchase quantity, changing requested receipt date or updating financial dimensions.
 18464	| Changes to purchase order	| Changes to linked purchase order's amount didn't update the allocated amounts accordingly.
 
