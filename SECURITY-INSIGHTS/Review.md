@@ -55,6 +55,8 @@ Fetch user interation data from Azure applicable Insights
 
 The records to include are automatically filtered to enabled users and can also be filtered to User Id(s).
 
+> Note: User accessed menu items date/time data: starts when logging usage data to AppInsights with either DXC's Insights or Standard monitoring.
+
 ## 4. Calculate utilization rates
 Calculate utilization rates of user roles and privileges based on accessing menu items.
 
