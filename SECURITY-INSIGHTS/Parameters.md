@@ -65,7 +65,7 @@ Navigate to **System administration > Security > Insights for user access and se
 
 Use the **Validate** button to validate the Insights instance.
 
-### 3.2 Batch processes
+### 4.2 Batch processes
 
 The following batch process options can be used for batch performance improvement:
 - **Batch jobs** - **Maximum batch tasks** - Enter the maximum number of tasks the batch should be split into
