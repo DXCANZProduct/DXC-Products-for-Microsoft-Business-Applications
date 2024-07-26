@@ -38,12 +38,7 @@ A list of installed models will be displayed on the **Version** tab.  Scroll to 
 
 ## Dependency and Security Information
 
-Security Insights for D365FO includes
-
-- Use of Microsoft Azure Application Insights library
-- Use of DXC.FnOInsights library, an extension of the Microsoft Azure Application Insights library to add additional telemetry metrics for enhanced logging capabilities. It still uses the same API that the Microsoft Azure Application Insights data collectors use.
-
-All telemetry is logged within the Microsoft Azure Application Insights only.
+Security Insights for D365FO only needs Read-Access to read data from Azure Application Insights.
 
 Note: DXC does not collect any usage information, or telemetry against any other installed system or ISV module from Security Insights for D365FO. 
 
