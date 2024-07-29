@@ -2,7 +2,7 @@
 
 **My report is not supported, can I still use Smart Send?**
 
-While out-of-the-box functionality is for the business forms listed [here](Overview), the solution can be extended to further business forms or reports. The [technical guide](TECHNICAL-GUIDE/Technical-guide.md) describes how the DXC Smart Business Form Email Manager solution can be extended by adding a custom report.
+While out-of-the-box functionality is for the business forms listed [here](Overview), the solution can be extended to further business forms or reports. The technical guide describes how the DXC Smart Business Form Email Manager solution can be extended by adding a custom report.
 
 **How can I use a different report format for different customers/vendors?**
 
