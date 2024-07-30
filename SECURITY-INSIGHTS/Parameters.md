@@ -52,7 +52,7 @@ Find and enable the feature **Security Insights for D365FO** to enable the produ
 The **Insights for user access and security parameters** page within Security admininstration is used to define the configuration required to connect to the app created for your **Azure application insights** in Step 2. <br>
 Multiple Insights connections can be configured and the applicable one selected when running **Fetch interaction data from application Insights** on page **Insights for user access and security** which fetches accessed menu items withing the selected time period.
 
-Navigate to **System administration > Security > Insights for user access and security parameters**
+Navigate to **System administration > Insights for user access and security > Insights for user access and security parameters**
 
 ### 4.1 Configuration
 
