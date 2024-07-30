@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer purchase order acknowledgement
 author: jdutoit2
 manager: Kym Parker
-ms.date: 2024-05-15
+ms.date: 2024-07-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -241,14 +241,28 @@ Button              | Description
 ### Automatically processing Purchase order acknowledgement
 
 Ability to automatically send customer purchase acknowledgements.
+
+#### Prerequisite setup
+Ensure the following setup are completed and assigned to applicable Trading partners:
+- [POA codes](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md#setup-poa-responde-codes) that should be automatically sent are:
+    -  **Allow auto trigger** set to _Yes_
+    -  **Allow auto send** set to _Yes_
+ - Customer purchase order acknowledgement's Setting profile has **Lock order** set to _Yes_
+
+Other required setup:
+ - [EDI parameters](../../CORE/Setup/EDI-parameters.md) **Hold codes** are setup (and different hold codes are used for each):
+     - POA pending hold code
+     - POC pending hold code (if Confirmation is required back from the customer after the POA has been sent, i.e.  Customer purchase order acknowledgement's Setting profile has **PO confirmation required** set to _Yes_)
+
+#### Periodic task
 Users can access the periodic job by navigating to **EDI > Periodic tasks > Send customer purchase order acknowledgement**.
 
 By default only sales orders that fall under the following criteria is included in POA being sent automatically:
 - Sales orders that doesn’t contain any POA response codes where **Allow auto send** is set to _No_ on [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md#setup-poa-responde-codes)
 - Sales orders that are not on hold (excluding POA and POC pending hold codes)
-- POA is pending (still required to be sent), which is determined by **POA status** is _Pending_ or _In progress_. A sales order's POA status is set to _Pending_ when the Purchase order acknowledgement setting **Lock order** is set to _Yes_. And changes to **In progress** when clicking on **Acknowledgement** page on the sales order header's EDI tab on the Action Pane and selecting _OK_. 
+- POA is pending (still required to be sent), which is determined by **POA status** is _Pending_ or _In progress_. A sales order's POA status is set to _Pending_ when the Purchase order acknowledgement setting **Lock order** is set to _Yes_. And changes to **In progress** when clicking on **Acknowledgement** page on the sales order header's EDI tab on the Action Pane and selecting _OK_.
 
-Additional sales order filter options are:
+Additional sales order filter options on the periodic task:
 - Include blank confirmed receipt date – Y/N
 - Include blank confirmed ship date – Y/N
 - Customer account
