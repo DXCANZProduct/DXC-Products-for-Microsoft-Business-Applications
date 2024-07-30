@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Introduction to Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-07-02
+ms.date: 2024-07-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,9 +39,9 @@ Identify and maintain underutilized/unused roles, duties, privileges that have e
 
 
 ### Topics
-- [Setup](Parameters.md)
-- [Monitor](Review.md)
-- [Security diagnostics](Security-diagnostics.md)
+- [Setup](Parameters.md) - Setup Azure Application Insights and Security Insights in D365 FO
+- [Monitor](Review.md) - Colate and review user access and security utilization
+- [Security diagnostics](Security-diagnostics.md) - Licensing information added to Security diagnostics to assist in allocating new roles to users going forward
 
 
 ## New ideas
