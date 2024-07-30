@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Review Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-07-03
+ms.date: 2024-07-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: DXCSecurityInsights
+ms.search.form: DXCSecurityInsightsUserView, DXCSecurityInsightsLicenseView
 audience: Application User/ Azure Administrators
 # ms.devlang: 
 ms.reviewer: Monica du Toit
@@ -28,7 +28,11 @@ ms.dyn365.ops.version: 10.0.32
 
 # Security Insights for D365 FO
 
-**Insights for user access and security** is used to colate and review user access and security utilization.
+The following views are available to colate and review user access and security utilization:
+- **Security insights by user**
+- **Security insights by license**
+
+These views are available by navigating to **System administration > Insights for user access and security**
 
 # Processing
 The following steps are available to initiate or update the required fields.
@@ -37,13 +41,15 @@ The following steps are available to initiate or update the required fields.
 Synchronizes the current user roles, privileges and accessible menu items. This can only be run as batch.
 
 ## 2. Initiate user security groups
-Automatically creates groups of similar users by analyzing user roles and privileges. <br>
+Automatically creates groups of similar users by analyzing user roles and privileges, or utilize existing D365 user groups. <br>
+This step is only available on **Security insights by user**. <br>
 
 **Parameters:**
 - Use **Select foundation data for user group creation** to create the user groups by either:
+    - User groups - utilizes D365 user groups setup in **System administration > Users > User groups**
     - Security roles
     - Security privileges
-- Enter the **Maximum number of groups** that should be created
+- Enter the **Maximum number of groups** that should be created. Disabled when 'User groups' are selected.
 
 ## 3. Fetch interaction data from application Insights
 Fetch user interation data from Azure applicable Insights
