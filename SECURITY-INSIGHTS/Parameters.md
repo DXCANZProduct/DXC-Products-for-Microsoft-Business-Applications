@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Setup for Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-07-18
+ms.date: 2024-07-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
