@@ -56,12 +56,15 @@ Navigate to **System administration > Insights for user access and security > In
 
 ### 4.1 Configuration
 
-- Click **New** to create a new record and enter the the following fields for the Azure Application Insights instance:
-- **Description** - a description for your app 
-- **Application Insights App ID** - the Application Id of your Azure Application Insights instance copied in Step 1 above.
-- **Tenant ID** - this is the unique identifier of the Azure Active Directory instance
-- **Client ID** - this identifier will be assigned when the Azure Application Insights instance is registered up as an application in Step 2.
-- **Client secret** - the secret value (string) that the application uses to prove its identity when requesting a token. Enter the secret value generated in Step 2 when a New client secret was created.
+Click **New** to create a new record and enter the the following fields for the Azure Application Insights instance.
+
+Field                           | Description
+:--                             |:--
+**Description**                 | A description for your app 
+**Application Insights App ID** | The Application Id of your Azure Application Insights instance copied in Step 1 above.
+**Tenant ID**                   | This is the unique identifier of the Azure Active Directory instance
+**Client ID**                   | This identifier will be assigned when the Azure Application Insights instance is registered up as an application in Step 2.
+**Client secret**               | The secret value (string) that the application uses to prove its identity when requesting a token. Enter the secret value generated in Step 2 when a New client secret was created.
 
 Use the **Validate** button to validate the Insights instance.
 
