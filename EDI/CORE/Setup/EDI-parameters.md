@@ -3,9 +3,9 @@
 
 title: EDI Core
 description: EDI Core - Setup EDI parameters
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-07-13
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-07-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  SAB_EDIParameters, DocuParameters, MCRHoldCodeTable, DocuType
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDI
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -100,7 +100,8 @@ If required, create new Hold codes via **Sales and marketing > Setup > Sales ord
 - Default for sales order
 - Remove inventory reservations
 
-The following table describes the fields that are available on the **Hold codes** tab of the **EDI parameters** page.
+The following table describes the fields that are available on the **Hold codes** tab of the **EDI parameters** page. <br>
+Ensure different hold codes are assigned for each.
 
 **Field** 	                      | **Description**
 :-------------------------------- |:-------------------------------------
