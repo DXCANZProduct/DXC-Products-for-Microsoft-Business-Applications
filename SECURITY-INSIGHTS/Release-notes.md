@@ -34,7 +34,7 @@ This document describes the features that are either new or changed in the relea
 
 ### Release 10.0.37.20240731
 
-Security Insights for D365 FO for D365 FO 10.0.37 runs on the following Microsoft releases
+Security Insights for D365 FO 10.0.37 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
