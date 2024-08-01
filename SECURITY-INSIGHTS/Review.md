@@ -47,7 +47,7 @@ This step is only available on **Security insights by user**. <br>
 
 **Parameters:**
 - Use **Select foundation data for user group creation** to create the user groups by either:
-    - User groups - utilizes D365 user groups setup in **System administration > Users > User groups**. For this option it is not required to rerun the initita step if more users are added or roles/privilegs change for a user.
+    - User groups - utilizes D365 user groups setup in **System administration > Users > User groups**. For this option it is not required to rerun the initiate step if more users are added or roles/privilegs change for a user.
     - Security roles - machine learning is used to group users with similar security roles.
     - Security privileges - machine learning is used to group users with similar security privileges.
 - Enter the **Maximum number of groups** that should be created. Disabled when 'User groups' are selected.
