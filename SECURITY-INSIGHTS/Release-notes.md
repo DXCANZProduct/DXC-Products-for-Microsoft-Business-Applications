@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Security Insights for D365 FO - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-07-03
+ms.date: 2024-08-01
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.37.202407TBD
+### Release 10.0.37.20240731
 
 Security Insights for D365 FO for D365 FO 10.0.37 runs on the following Microsoft releases
 
@@ -43,8 +43,8 @@ Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 
-#### Build 10.0.37.202407TBD
-Release date: TBD
+#### Build 10.0.37.202407311
+Release date: 31 July 2024
 
 First release
 
