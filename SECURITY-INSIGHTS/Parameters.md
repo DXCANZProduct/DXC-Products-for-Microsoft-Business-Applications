@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Setup for Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-07-30
+ms.date: 2024-08-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -71,7 +71,7 @@ Use the **Validate** button to validate the Insights instance.
 ### 4.2 Batch processes
 
 The following batch process options can be used for batch performance improvement:
-- **Batch jobs** - **Maximum batch tasks** - Enter the maximum number of tasks the batch should be split into
+- **Batch jobs** - **Maximum batch tasks** - Enter the maximum number of tasks the batch should be split into. Consider batch processing capacity, otherwise setting too high a value could create an unnecessary queue.
 - **Throttling** - **Minimum users per task** - Enter the minimum number of users per task
 
 Examples:
