@@ -40,3 +40,6 @@ To resolve this you must enter a valid Dynamics Finance and operation URL to pro
 
 We make use of a.Net package called Bogus, which makes it easy to generate phoney but realistic data for testing, prototyping, and other uses without requiring actual data. It directly uses locales from Faker.js, which are straightforward JavaScript files with data for creating fictitious addresses, phone numbers, and names that are geo-targeted to particular languages or locations. 
 
+### When attempting to mask address information in the *LOGISTICSPOSTALADDRESS* Table for all companies I get an error.
+
+To resolve this issue the LOGISTICSPOSTALADDRESS table can be run across individual legal entities (not across all companies) 
