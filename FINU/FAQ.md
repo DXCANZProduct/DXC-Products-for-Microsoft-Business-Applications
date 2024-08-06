@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Finance Utilities - Frequently asked questions 
-author: jdutoit2
+author: Monica du Toit
 manager: Kym Parker
-ms.date: 2024-06-06
+ms.date: 2024-08-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -137,3 +137,14 @@ Receive error 'No budget lines were imported succesfully. Review setup on budget
 
 #### Resolution
 Compare file's values to setup in 'Budget utilities parameters'. For example does the financial dimensions in file match setup in field 'Dimension format'.
+
+### Static IP address required for SFTP connection
+
+Where the bank requires a static IP address for connections for sending bank payment files to their SFTP
+
+#### Options
+ - Send file from D365 F&O via an Azure Logic App with a static IP
+      - [https://learn.microsoft.com/en-us/answers/questions/32399/azure-logic-apps-with-a-fixed-ip-address](https://learn.microsoft.com/en-us/answers/questions/32399/azure-logic-apps-with-a-fixed-ip-address)
+      - [https://learn.microsoft.com/en-us/azure/logic-apps/connect-virtual-network-vnet-set-up-single-ip-address](https://learn.microsoft.com/en-us/azure/logic-apps/connect-virtual-network-vnet-set-up-single-ip-address)
+
+ - Utilize the API option in Finance utilities connection
