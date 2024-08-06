@@ -36,4 +36,5 @@ This document describes the features that are either pending or planned in upcom
 
 Number	  	| Name	  | Description
 :--       	|:--              |:--
-18269|Cannot edit a record in Titles (HcmTitle). The record already exists.| A new Data Type of Title ID has been added to generate a random unique alphanumeric data string which can be used  to fill this field
+18269|Cannot edit a record in Titles (HcmTitle). The record already exists.| A new Data Type of Title ID has been added to generate random unique titles that can be used  to fill this field
+
