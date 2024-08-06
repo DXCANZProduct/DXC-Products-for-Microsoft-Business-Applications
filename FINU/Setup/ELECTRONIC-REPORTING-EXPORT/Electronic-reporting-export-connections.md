@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Organization administration - Electronic reporting export connection 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-07-15
+ms.date: 2024-08-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -142,5 +142,16 @@ Authority URI    | Azure active directory authority URI              | https://l
 Use button **Validate connection** to validate the following:
 - Connection details
 - Export path or container
+
+### Static IP address required for connection
+
+Where the bank requires a static IP address for connections for sending bank payment files to their SFTP
+
+#### Options
+ - Send file from D365 F&O via an Azure Logic App with a static IP
+      - [https://learn.microsoft.com/en-us/answers/questions/32399/azure-logic-apps-with-a-fixed-ip-address](https://learn.microsoft.com/en-us/answers/questions/32399/azure-logic-apps-with-a-fixed-ip-address)
+      - [https://learn.microsoft.com/en-us/azure/logic-apps/connect-virtual-network-vnet-set-up-single-ip-address](https://learn.microsoft.com/en-us/azure/logic-apps/connect-virtual-network-vnet-set-up-single-ip-address)
+
+ - Utilize the API option in Finance utilities connection
 
 
