@@ -3,9 +3,9 @@
 
 title: Finance Utilities
 description: Finance Utilities - Release notes
-author: jdutoit2
+author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-01
+ms.date: 2024-08-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -35,7 +35,6 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.37 <br> App build: 10.0.1725	  | Yes - see 16069 & 16244	          | 10.0.35.2023073122
 Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No				          | 10.0.35.2023073131
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No				          | 10.0.36.2023111671
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17981 | • Functional: 10.0.37.2024032522 <br> • Build error fixed in: 10.0.37.202405302
@@ -50,41 +49,27 @@ Feature	| 10.0.40 Feature state
 
 # Current version
 
-### Release 10.0.37.20240625
+### Release 10.0.38.20240807
 
-DXC Finance Utilities 10.0.37 runs on the following Microsoft releases
+DXC Finance Utilities 10.0.38 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 
-#### Build 10.0.37.202406251
-Release date: 25 June 2024 <br>
-
-<ins>Manual steps required</ins>
-- If using DXC encryption / decryption, please see 17274. Required to update new field **Counter party's public key** with the applicable key.
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-18126		| Accounts payable	| Generate file per payment line	| New option called **Generate file per payment line** on **Methods of payment** for _Electronic reporting export formats_. <br> When set to Yes, the vendor payment's **Generate payments** will create an EFT file per journal line. <br> ![Generate file per payment line](Images/ReleaseNotes_20240626_1.png "Generate file per payment line")
-17230		| Various 	| Azure Connection	| Ability to use **Azure SAS Storage account level token** for Connection string on Azure connections.  <br> Applicable to: <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections <br> • Accounts receivable > Payments setup > Financial utilities connections (AR utilities feature) <br> • Organization administration > Electronic reporting > Electronic reporting export connections
-18158		| Various 	| SFTP Connection	| New **Credential type** option **Private key** provides the option to store SSH key file in Azure, setup in D365 as Key vault parameter and use on Finance utilities SFTP connection. <br> Applicable to: <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections <br> • Accounts receivable > Payments setup > Financial utilities connections (AR utilities feature) <br> • Organization administration > Electronic reporting > Electronic reporting export connections <br> <br> ![Private key](Images/ReleaseNotes_20240626_3.png "Private key")
-17274		| Organization administration | DXC encryption parameters	| **Public key** (sender's public key) and **Receiver's public key** replaced with new field **Counter party's public key**. <br> Note: Manual step required to update new field with the applicable key.
-18149		| Budgeting	| Import budget | Ability to **Generate template** based on setup on **Budget utilities parameters**: <br> • Number of months <br> • Dimension format <br> ![Generate budget import template](Images/ReleaseNotes_20240626_2.png "Generate budget import template")
-
+#### Build 10.0.38.202408071
+Release date: 7 August 2024 <br>
 
 <ins>Bug fixes</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-18174		|  Cash and bank management	| Reconciliation matching rule set - Customer offset type | Where the Reconciliation matching rule set contained: <br> • Multiple **Mark new transactions** rules offsetting to **Customer** and <br> • Set to automatically post the journal and <br> • One of the rules failed to post the journal (for example customer was stopped for payments) <br> The subsequent rules were not run.
-18202		| Accounts receivable	| Interest notes - Due date	| When AR parameter field 'Use customer payment terms' for Interest notes is set to Yes, the Due date correctly included payment terms for the interest note in Customer transactions, but not on 'Settle transactions' or 'Detailed due date list report'.
-
+18347		| Cash and bank management | Bank accounts | Only enable field 'Include balance line in record count' when field 'Extra balance line on EFT' is enabled.
+18550		| Cash and bank management | Bank reconciliation	| Disable button 'Match id' in Bank reconciliation Worksheet when Financial utilities parameter field 'Auto assign Match Id' is set to _Yes_. Else it errors with 'No statement lines have been marked'. Clicking Match Id is unnecessary as the Match id will automatically be assigned when user clicks button 'Match' in the Bank reconciliation Worksheet.
+18692		| Cash and bank management | Bank reconciliation	| When feature 'Enable posting of new transactions in bank reconciliation' is enabled, the ability to post mark new transactions are available in the Bank reconciliation Worksheet. If user used this posting, and also posted the bank statement, a duplicate mark new transaction was posted.
+18689		| Organisation administration	| ABN validation report	| Previously when running report 'ABN validation' the API was run for each vendor/customer with an ABN allocated. Since the fields are now stored on the TaxVatNumTable the report will now not run the API anymore. The relevant fields on the TaxVatNumTable can be updated to current Australian Business Register data by either: <br> • Organisation administration > Periodic > Update ABN validation <br> • 'Run update' on 'Organisation administration > Enquiries and reports > ABN validation review. 
 
 
 # Deprecated features
@@ -127,6 +112,33 @@ This section describes the features that have been removed, or planned to be rem
 # Previous version(s)
 
 Approximately one year of previous versions are included below.
+
+### Release 10.0.37.20240625
+
+#### Build 10.0.37.202406251
+Release date: 25 June 2024 <br>
+
+<ins>Manual steps required</ins>
+- If using DXC encryption / decryption, please see 17274. Required to update new field **Counter party's public key** with the applicable key.
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+18126		| Accounts payable	| Generate file per payment line	| New option called **Generate file per payment line** on **Methods of payment** for _Electronic reporting export formats_. <br> When set to Yes, the vendor payment's **Generate payments** will create an EFT file per journal line. <br> ![Generate file per payment line](Images/ReleaseNotes_20240626_1.png "Generate file per payment line")
+17230		| Various 	| Azure Connection	| Ability to use **Azure SAS Storage account level token** for Connection string on Azure connections.  <br> Applicable to: <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections <br> • Accounts receivable > Payments setup > Financial utilities connections (AR utilities feature) <br> • Organization administration > Electronic reporting > Electronic reporting export connections
+18158		| Various 	| SFTP Connection	| New **Credential type** option **Private key** provides the option to store SSH key file in Azure, setup in D365 as Key vault parameter and use on Finance utilities SFTP connection. <br> Applicable to: <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections <br> • Accounts receivable > Payments setup > Financial utilities connections (AR utilities feature) <br> • Organization administration > Electronic reporting > Electronic reporting export connections <br> <br> ![Private key](Images/ReleaseNotes_20240626_3.png "Private key")
+17274		| Organization administration | DXC encryption parameters	| **Public key** (sender's public key) and **Receiver's public key** replaced with new field **Counter party's public key**. <br> Note: Manual step required to update new field with the applicable key.
+18149		| Budgeting	| Import budget | Ability to **Generate template** based on setup on **Budget utilities parameters**: <br> • Number of months <br> • Dimension format <br> ![Generate budget import template](Images/ReleaseNotes_20240626_2.png "Generate budget import template")
+
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+18174		|  Cash and bank management	| Reconciliation matching rule set - Customer offset type | Where the Reconciliation matching rule set contained: <br> • Multiple **Mark new transactions** rules offsetting to **Customer** and <br> • Set to automatically post the journal and <br> • One of the rules failed to post the journal (for example customer was stopped for payments) <br> The subsequent rules were not run.
+18202		| Accounts receivable	| Interest notes - Due date	| When AR parameter field 'Use customer payment terms' for Interest notes is set to Yes, the Due date correctly included payment terms for the interest note in Customer transactions, but not on 'Settle transactions' or 'Detailed due date list report'.
+
 
 ### Release 10.0.37.20240530
 
