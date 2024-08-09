@@ -3,7 +3,7 @@
 
 title: EDI
 description: EDI - Release notes
-author: jdutoit2
+author: Monica du Toit
 manager: Pontus Ek
 ms.date: 2024-05-31
 ms.topic: article
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDI
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:  2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -41,6 +41,7 @@ Product version: 10.0.37 <br> App build: 10.0.1725	  | No	          | 10.0.34.20
 Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No            | 10.0.34.202310312
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No	          | 10.0.34.202310312
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17978 | • Functional: 10.0.37.202405023 <br> • Build error fixed in: 10.0.37.202405302
+Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202405302
 
 # Current version
 
@@ -56,6 +57,7 @@ Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 
 
 #### Build  10.0.37.202405302
