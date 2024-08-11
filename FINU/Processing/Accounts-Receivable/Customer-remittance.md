@@ -3,9 +3,9 @@
 
 title: DXC Finance Utilities - AR Utilities
 description: Customer remittance processing
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-04-27
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-08-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form: LedgerJournalTable_CustPaym
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm: 
 # ms.custom: : ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -134,4 +134,6 @@ Scenarios for error in Data management:
 The Financial utilities connection includes an error file location. <br>
 A file will be moved to error location in the following scenarios:
 - Journal was set to automatically post, but posting process ended in error.
+
+If you receive error 'Number sequence 0 does not exist' in the periodic task - Ensure a Journal name has been selected in the Methods of payment's Name
 
