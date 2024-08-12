@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-07-18
+ms.date: 2024-08-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,6 +39,22 @@ Product version: 10.0.37 <br> App build: 10.0.1725	  | No	          | 10.0.34.20
 Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No            | 10.0.34.202306151
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No	          | 10.0.34.202306151
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  |  • No functional issues <br> • Build error fixed in 17982 | • Functional: 10.0.37.202404261 <br> • Build error fixed in: 10.0.37.202405301
+
+
+# Next version
+
+### Release 10.0.38.202408TBD
+Estimated release date: mid Aug 2024
+
+<ins>Bug fixes</ins>
+
+Number	| Functionality	  	| Description
+:--	|:--		  	|:--	
+18668	| Invoice journal	| Changes to invoice journal removed linked to Forex contract
+18746	| Invoice journal	| Changes to linked invoice journal's amount didn't update the allocated amounts accordingly
+18786	| Vendor payment journal	| Payment journal exchange rate wasn't utilizing the forex exchange rate
+18671	| Purchase order	| Splitting the physical and financial voucher correctly to purchase line/product level
+18759	| Customer and Vendor payment journal	| Receive error 'Object reference not set to an instance of an object' when trying to change Payment status
 
 
 # Current version
