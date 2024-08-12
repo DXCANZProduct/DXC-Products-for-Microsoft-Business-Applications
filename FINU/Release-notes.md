@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-07
+ms.date: 2024-08-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -160,7 +160,7 @@ Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
 17981		| Accounts payable | Pending invoice	| 10.0.40 build error caused by missing reference for the ProcessAutomation Model which is now used by the VendInvoiceInfoTable. <br> Used to determine whether the Pending invoices button is enabled/disabled in the Vendor Purchase Invoice form.
 17990		| Cash and bank management	| Reconciliation matching rule - Customer offset type using Customer references | The created customer payment journal uses the first customer account for all the found lines
-18014		| ABN validation	| Security	| New privileges added to access ABN lookup and ABN status
+18014		| ABN validation	| Security	| New privileges added to access ABN lookup and ABN status: <br> • ABN Validation <br> • Maintain ABN Status <br> •  Maintain ABN validation lookup <br> • Maintain ABN validation review <br> • View ABN Status <br> • View ABN validation lookup <br> • View ABN validation review
 17998		| ABN validation	| Rename objects	| Rename objects ending with DXC_Extension: <br> • TaxVATNumTableForm_DXC_Extension <br> • TaxSalesTaxProcessReferenceDataInquire.DXC_Extension <br> • TaxSalesTaxTransactionStatusInquire.DXC_Extension <br> • TaxSalesTaxTrnStatusInquirWithoutTaxPrv.DXC_Extension <br> • TaxVATNumTable.DXC_Extension
 18018		| Various   		| Rename objects	| Rename objects ending with DXC_Extension: <br> • BankStatementFormatForm_DXC_Extension <br> • BankChequeTableForm_DXC_Extension <br> • VendPaymMode_DXC_Extension <br> • BankTreasurerWorkspace_DXC_Extension <br> • VendorPaymentHistory_DXC_Extension <br> • BankReconciliationMatchRule_DXC_Extension <br> • CustPaymMode_DXC_Extension <br> • BankStatementTableForm_DXC_Extension
 
