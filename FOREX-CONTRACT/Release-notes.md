@@ -53,6 +53,7 @@ Number	| Functionality	  	| Description
 18668	| Invoice journal	| Changes to invoice journal removed linked to Forex contract
 18746	| Invoice journal	| Changes to linked invoice journal's amount didn't update the allocated amounts accordingly
 18786	| Vendor payment journal	| Payment journal exchange rate wasn't utilizing the forex exchange rate
+18805	| Invoice journal & Payment journal	| Incorrect exchange rate when multiple forex contracts linked to an invoice journal line
 18671	| Purchase order	| Splitting the physical and financial voucher correctly to purchase line/product level
 18759	| Customer and Vendor payment journal	| Receive error 'Object reference not set to an instance of an object' when trying to change Payment status
 
