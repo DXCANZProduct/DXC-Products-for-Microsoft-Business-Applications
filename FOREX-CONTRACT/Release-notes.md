@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-13
+ms.date: 2024-08-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,16 +35,26 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.37 <br> App build: 10.0.1725	  | No	          | 10.0.34.202306151
 Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No            | 10.0.34.202306151
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No	          | 10.0.34.202306151
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  |  • No functional issues <br> • Build error fixed in 17982 | • Functional: 10.0.37.202404261 <br> • Build error fixed in: 10.0.37.202405301
 
+# Current version
 
-# Next version
+### Release 10.0.38.20240813
 
-### Release 10.0.38.202408TBD
-Estimated release date: mid Aug 2024
+DXC Forex contract 10.0.38 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
+Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
+Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+
+
+#### Build 10.0.38.202408131
+Release date: 14 August 2024
+
 
 <ins>Bug fixes</ins>
 
@@ -58,19 +68,9 @@ Number	| Functionality	  	| Description
 18759	| Customer and Vendor payment journal	| Receive error 'Object reference not set to an instance of an object' when trying to change Payment status
 
 
-# Current version
+# Previous version(s)
 
 ### Release 10.0.37.20240718
-
-DXC Forex contract 10.0.37 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
-Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
-Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
-Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-
 
 #### Build 10.0.37.202407181
 Release date: 18 July 2024
@@ -96,10 +96,6 @@ Number	| Functionality	  	| Description
 18428	| Vendor transactions	| Error 'Cannot create a record in Forex contract lines (SAB_ForexContractTrans). Forex number: %, 1874. The record already exists'. Occurred when clicking on a Vendor transaction for a purchase order with multiple lines and allocated to a Forex contract. 
 18417	| Changes to purchase order	| Link to Forex contract removed after changing a linked Purchase order, for example: increasing/decreasing purchase quantity, changing requested receipt date or updating financial dimensions.
 18464	| Changes to purchase order	| Changes to linked purchase order's amount didn't update the allocated amounts accordingly.
-
-
-
-# Previous version(s)
 
 ### Release 10.0.37.20240530
 
