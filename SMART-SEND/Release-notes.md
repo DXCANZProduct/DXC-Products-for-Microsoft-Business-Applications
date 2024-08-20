@@ -4,7 +4,7 @@
 title: Smart-Send
 description: DXC Smart Business Form Email Manager - Release notes
 author: PeterM
-manager: Kym Parker
+manager: Pontus Ek
 ms.date: 2023-08-11
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: lcoll
+ms.reviewer: Peter Musumeci
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 This document describes the features that are either new or changed in the release version mentioned.
 
 # Version compatibility
-The matrix shows the DXC build versions compatible with Microsoft versions and builds. <br>
+The matrix shows the DXC build versions that are compatible with Microsoft versions and builds. <br>
 If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
@@ -40,7 +40,7 @@ Product version: 10.0.37 <br> App build: 10.0.1725	  | No          | 10.0.34.202
 Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No				          | 10.0.34.20231026
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | • No functional issues <br> • Build error fixed in 17017     | • Functional: 10.0.37.202403263 <br> • Build error fixed in: 10.0.36.202310262
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | 10.0.37.202403263
-Product version: 10.0.41 <br> App build: 10.0.2015.16	  | In Progress | 10.0.37.202403263
+Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | 10.0.37.202403263
 
 # Current version
 
