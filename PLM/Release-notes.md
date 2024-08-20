@@ -40,7 +40,7 @@ Product version: 10.0.37   - App build: 10.0.1725	  | No	          | 10.0.34.202
 Product version: 10.0.38   - App build: 10.0.1777.14	  | No				          | 10.0.34.202306151
 Product version: 10.0.39   - App build: 10.0.1860.18	  | No				          | 10.0.34.202306151
 Product version: 10.0.40   - App build: 10.0.1935.5	  | No	| 10.0.34.202306151
-
+Product version: 10.0.41   - App build: 10.0.2015.16	  | No	| 10.0.34.202306151
 
 # Current version
 
@@ -57,6 +57,7 @@ Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 
 #### Build 10.0.34.202306151
 Release date: 15 June 2023 <br>
