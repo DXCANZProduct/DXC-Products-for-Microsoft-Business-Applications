@@ -3,8 +3,8 @@
 
 title: Core Extensions
 description: Core Extensions - Exchange rate import
-author: Liam Coll
-manager: Kym Parker
+author: Peter Musumeci
+manager: Pontus Ek
 ms.date: 2021-08-02
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
 # ms.devlang: 
-ms.reviewer: Liam Coll
+ms.reviewer: Peter Musumeci
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: CoreUtil
@@ -34,9 +34,9 @@ Microsoft Dynamics 365 offers functionality to import exchange rates based on li
 * Open Exchange Rates – Paid Subscription
 
 #### Assumptions
-* The Core extensions supports only todays date, unless otherwise specified. 
-* Web Service availability is not guaranteed. Server or URL may be offline.
-* Free services are not guaranteed as the service providers may no longer provide it for free.
+* The Core extensions supports only today's date unless otherwise specified. 
+* Web Service availability is not guaranteed. The server or URL may be offline.
+* Free services are not guaranteed as the service providers may no longer provide them for free.
 
 ## Setup
 1. Navigate to **General ledger > Currencies > Configure Exchange Rate Providers**.
@@ -47,16 +47,16 @@ Microsoft Dynamics 365 offers functionality to import exchange rates based on li
 2. Set the relevant Exchange rate type and your desired Exchange rate provider.
    * The *Import as of* parameter is set to Today’s date by default.
 3. If required adjust your parameters based on the supported conditions in the table below.
-   * Setup the Batch recurrences for scheduled updates. It is recommended for a daily update.
+   * Set up the Batch recurrences for scheduled updates. It is recommended for a daily update.
 
 The following table shows the supported parameters.
 
 |  **Source**  | **Date range support** |  **Create necessary currency pairs** |  **Override existing exhange rates** |  **Prevent import on national holiday** | 
 |:---|:---|:---|:---|:---|      
 |  **Reserve Bank of Austalia**  | No | Yes | Yes | No |
-|  **Open exchange rate**  | Yes | Yes | Yes | No |
+|  **Open exchange rate**  | Yes | No | Yes | No |
 
-## Data entities
+## Data Entities
 - General journal entity
 
 ## References
