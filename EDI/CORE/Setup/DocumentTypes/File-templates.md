@@ -3,9 +3,9 @@
 
 title: EDI Core
 description: EDI Core - Setup document types - File templates
-author: jdutoit2
+author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-05-29
+ms.date: 2024-08-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  SAB_EDIDocumentTypeTable, SAB_EDITemplateFieldFunction, SAB_EDITemplateCodeTable
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: IconEDI
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -573,6 +573,7 @@ prefix{0,7:3,5}postfix	           | Align example with prefix and postfix       
 C4                                 | Currency with 4 decimals	  | 123.45676	                  | $123.4567
 N2	                               | 2 decimals	                  | 123.45676	                  | 123.45
 N0	                               | 0 decimals (for example line number)	| 1.0000000           |	1
+{0,-15}                            | Pad string with spaces to total of 15 characters    | ^1234^ | <code>^1234           ^</code>
 
 More examples:
 - [https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings)
