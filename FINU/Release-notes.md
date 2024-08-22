@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-13
+ms.date: 2024-08-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,16 +35,17 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No				          | 10.0.35.2023073131
-Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No				          | 10.0.36.2023111671
+Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No		  | 10.0.35.2023073131
+Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No		  | 10.0.36.2023111671
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17981 | • Functional: 10.0.37.2024032522 <br> • Build error fixed in: 10.0.37.202405302
+Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202406251
 
 #### Features not yet supported
 
-Feature	| 10.0.40 Feature state
+Feature	| 10.0.41 Feature state
 :--       	|:--		
 **Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the custom bank statement format | Mandatory
-**Modern bank reconciliation** | Preview
+**Modern bank reconciliation** | Blank
 
 
 # Current version
@@ -58,6 +59,7 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 
 #### Build 10.0.38.202408071
 Release date: 7 August 2024 <br>
