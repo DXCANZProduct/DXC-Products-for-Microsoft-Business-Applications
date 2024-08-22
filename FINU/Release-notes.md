@@ -45,7 +45,7 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37
 Feature	| 10.0.41 Feature state
 :--       	|:--		
 **Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the custom bank statement format | Mandatory
-**Modern bank reconciliation** | Blank
+**Modern bank reconciliation** | 
 
 
 # Current version
