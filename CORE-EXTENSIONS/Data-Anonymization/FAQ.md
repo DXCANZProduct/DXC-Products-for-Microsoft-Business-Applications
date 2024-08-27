@@ -42,4 +42,4 @@ We make use of a.Net package called Bogus, which makes it easy to generate phone
 
 ### When attempting to mask address information in the *LOGISTICSPOSTALADDRESS* Table for all companies I get an error.
 
-To resolve this issue the LOGISTICSPOSTALADDRESS table can be run across individual legal entities (not across all companies) 
+The LOGISTICSPOSTALADDRESS table can only be run set to individual legal entities (not across all companies). Select a single legal entity before running the process.
