@@ -573,7 +573,8 @@ prefix{0,7:3,5}postfix	           | Align example with prefix and postfix       
 C4                                 | Currency with 4 decimals	  | 123.45676	                  | $123.4567
 N2	                               | 2 decimals	                  | 123.45676	                  | 123.45
 N0	                               | 0 decimals (for example line number)	| 1.0000000           |	1
-{0,-15}                            | Pad string with spaces to total of 15 characters    | ^1234^ | <code>^1234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^</code>
+{0,-15}                            | Pad staging field with spaces to total of 15 characters  | ^1234^ | <code>^1234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^</code>
+15                                 | Pad static field with spaces to total of 15 characters   | ^1234^ | <code>^1234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^</code>
 
 More examples:
 - [https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings)
