@@ -3,9 +3,9 @@
 
 title: EDI Customer
 description: EDI Customer Setup - Trading partners
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-03-14
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-08-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: SAB_EDITradingPartner, CustTableListPage
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDICustomerDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -54,6 +54,7 @@ The following table describes the customer module fields that are available on t
 **POA response code group**       |	POA Response codes are used to identify the status of information used in a purchase order acknowledgement for each customer. Note: For further information see [Setup POA response codes](CUSTOMER-SETUP/POA-response-code-group.md)
 **No Backorders**                 |	Identify if the trading partner accepts backorders - Y/N. <br> Where the **Customer purchase order acknowledgement's** document setting **Quantity type** is set to **Reserved quantity**, the sales line’s ordered quantity is adjusted to the quantity reserved for the sales line. <br> The setting is also used on the Customer purchase order acknowledgement to identify **full** or **partial** shipments.
 **UOM**                           |	Unit of measure mappings. Ability to map a customer’s unit of measure (example kgs) to D365 unit of measure (example kg). Used on in- and outbound documents **Sales unit** <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM-mapping.md)
+**Enable store code identification**  | When set to _Yes_, the Customer purchase order header field **Store code** (instead of Trading partner GLN) will be used to find the applicable Trading partner to create the sales order against.
 
 - Data entity: EDI Customers
 
