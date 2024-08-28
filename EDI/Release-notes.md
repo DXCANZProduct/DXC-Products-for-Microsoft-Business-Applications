@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-05-31
+ms.date: 2024-08-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -69,6 +69,26 @@ Number	| Name		 | Description
 :--	|:--		  	|:--	
 18152	| Picking list		| Two new document line fields: <br> • SalesUnit <br> • SalesQty
 
+<ins>Bug fixes</ins>
+
+**Standard formats module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+18340	| X12		 | X12's Document type Template ISA mapping not displayed in Example section
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+18432	| Sales order packing slip	| Couldn't post a packing slip for a picking list when: <br> • Consignment note populated on picking list registration and <br> • Customer doesn't have Customer Advanced shipping notice <br> Incorrectly errored with "No document setting specified."
+
+**3PL module**
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+18315	| Product master	| Base physical dimensions on the Product master unit
+18596	| Transfer order picking list registration	| Error when processing Transfer order Picking list registration Inbound file to Staging: Function SAB_EDIStagingHistory::logHistory has been incorrectly called
 
 # Current version
 
