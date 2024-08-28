@@ -3,9 +3,9 @@
 
 title: EDI 3PL
 description: EDI 3PL Documents - Picking list
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-03-15
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-08-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  Action:SAB_EDIStagingFormRun_Picklist, SAB_EDI3PLWHSInventStatusMapping, SAB_EDI3PLOrderPurposeMapping
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: IconEDI3PLDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -174,8 +174,10 @@ The following EDI Line staging fields are available on the lines page.
 **GTIN**                    | D365 item id’s GTIN (based on unit)	                    | Released products > GTIN codes	
 **Description**             | D365 item id’s Description	                            | Released products > Product name
 **Lot Id**                  | Lot id for the transfer order line	                    | Order > Lot id
-**Quantity**                | Picking list quantity	                                    | Pick route line > Quantity
-**Unit**                    | Picking list quantity’s unit	                            | Released products > Inventory unit
+**Quantity** (InventQtyPick) | Picking list quantity	                                | Pick route line > Quantity
+**Unit** (UnitId)           | Picking list quantity’s unit (Inventory unit)	            | Released products > Inventory unit
+**Quantity** (SalesQty)     | Sales orders: Sales order quantity  <br> Transfer order: Inventory quantity   | Sales orders: Sales line > Quantity <br> Transfer order: Pick route line > Quantity
+**Unit** (SalesUnit)        | Sales orders: Sales order unit  <br> Transfer order: Picking list quantity’s unit (Inventory unit)  | Sales orders: Sales line > Sales unit <br> Transfer order: Released products > Inventory unit
 **Colour**                  | Product dimensions – colour	                            | Pick route line > Colour
 **Size**                    | Product dimensions – Size	                                | Pick route line > Size
 **Style**                   | Product dimensions – Style	                            | Pick route line > Style
