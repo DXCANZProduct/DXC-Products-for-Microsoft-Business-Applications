@@ -54,7 +54,7 @@ Estimated release date: 30 Aug 2024
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-18346	| Customer purchase order	| Find Customer and Address by Store code functionality. <br> New Customer Trading partner field **Enable store code identification** provides the ability to use the Customer purchase order header **Store code** field to find the applicable Trading partner to create the sales order against. <br> This is useful where the orders are sent for various GLN/Store codes, but these various GLN/store codes ared created as one D365 customer account.
+18346	| Customer purchase order	| Find Customer and Address by Store code functionality. <br> New Customer Trading partner field **Enable store code identification** provides the ability to use the Customer purchase order header **Store code** field to find the applicable Trading partner to create the sales order against. <br> This is useful where the orders are sent for various GLN/Store codes, but these various GLN/store codes are created as one D365 customer account.
 
 
 **3PL module**
