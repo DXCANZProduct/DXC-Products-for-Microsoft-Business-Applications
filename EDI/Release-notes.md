@@ -50,6 +50,12 @@ Estimated release date: 30 Aug 2024
 
 <ins>New features</ins>
 
+**Standard formats module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+18824	| X12 padding	 | **Custom format:** <br> Existing example: Can use **{0,-15}** for 15 character padding of **staging fields** <br> New example: Can use **15** for 15 character padding of **static fields**
+
 **Customer module**	
 
 Number	| Name		 | Description
