@@ -82,6 +82,7 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 18432	| Sales order packing slip	| Couldn't post a packing slip for a picking list when: <br> • Consignment note populated on picking list registration and <br> • Customer doesn't have Customer Advanced shipping notice <br> Incorrectly errored with "No document setting specified."
+18616	| Skip error lines	| Where the Customer purchase order acknowledgement line wasn't created on the sales order via 'Skip error lines' functionality, POA staging line fields 'Bar code' now obtained from the original Customer purchase order's 'Bar code' field.
 
 **3PL module**
 
