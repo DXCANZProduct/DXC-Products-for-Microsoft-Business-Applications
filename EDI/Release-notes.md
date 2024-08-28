@@ -54,7 +54,7 @@ Estimated release date: 30 Aug 2024
 
 Number	| Name		 | Description
 :--	|:--		 |:--
-18824	| X12 padding	 | **Custom format:** <br> Existing example: Can use **{0,-15}** for 15 character padding of **staging fields** <br> New example: Can use **15** for 15 character padding of **static fields**
+18824	| X12 padding	 | **Custom format:** <br> Existing example: Can use **{0,-9}** for 9 character padding of **staging fields** <br> New example: Can use **5** for 5 character padding of **static fields** <br>  ![Custom format](RELEASE-NOTES-IMAGES/20240830_1.png "Custom format")
 
 **Customer module**	
 
