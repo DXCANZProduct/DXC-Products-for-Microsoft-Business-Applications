@@ -43,6 +43,27 @@ Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No	          | 10.0.34
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17978 | • Functional: 10.0.37.202405023 <br> • Build error fixed in: 10.0.37.202405302
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202405302
 
+# Next version
+
+### Release 10.0.38.202408TBD
+Estimated release date: 30 Aug 2024
+
+<ins>New features</ins>
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+18346	| Customer purchase order	| Find Customer and Address by Store code functionality. <br> New Customer Trading partner field **Enable store code identification** provides the ability to use the Customer purchase order header **Store code** field to find the applicable Trading partner to create the sales order against. <br> This is useful where the orders are sent for various GLN/Store codes, but these various GLN/store codes ared created as one D365 customer account.
+
+
+**3PL module**
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+18152	| Picking list		| Two new document line fields: <br> • SalesUnit <br> • SalesQty
+
+
 # Current version
 
 Next release is planned for 31 Aug 2024.
