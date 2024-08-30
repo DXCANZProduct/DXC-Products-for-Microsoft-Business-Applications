@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-29
+ms.date: 2024-08-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,8 +45,8 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37
 
 # Next version
 
-### Release 10.0.38.202408TBD
-Estimated release date: 30 Aug 2024
+### Release 10.0.38.202409TBD
+Estimated release date: 4 September 2024
 
 <ins>New features</ins>
 
