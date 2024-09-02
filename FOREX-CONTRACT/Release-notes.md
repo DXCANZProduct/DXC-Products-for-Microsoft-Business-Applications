@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-26
+ms.date: 2024-09-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,24 +35,37 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No            | 10.0.34.202306151
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No	          | 10.0.34.202306151
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  |  • No functional issues <br> • Build error fixed in 17982 | • Functional: 10.0.37.202404261 <br> • Build error fixed in: 10.0.37.202405301
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.38.202408131
 
 # Current version
 
-### Release 10.0.38.20240813
+### Release 10.0.39.20240902
 
-DXC Forex contract 10.0.38 runs on the following Microsoft releases
+DXC Forex contract 10.0.39 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 
+
+#### Build 10.0.39.202409021
+Release date: 2 September 2024
+
+
+<ins>Bug fixes</ins>
+
+Number	| Functionality	  	| Description
+:--	|:--		  	|:--	
+18951	| Pending purchase invoice	| Error when posting a pending purchase invoice that isn't linked to a purchase order. <br> Error: "Cannot edit a record in Purchase orders (PurchTable). The record has never been selected."
+
+
+# Previous version(s)
+
+### Release 10.0.38.20240813
 
 #### Build 10.0.38.202408131
 Release date: 14 August 2024
@@ -68,9 +81,6 @@ Number	| Functionality	  	| Description
 18805	| Invoice journal & Payment journal	| Incorrect exchange rate when multiple forex contracts linked to an invoice journal line
 18671	| Purchase order	| Splitting the physical and financial voucher correctly to purchase line/product level
 18759	| Customer and Vendor payment journal	| Receive error 'Object reference not set to an instance of an object' when trying to change Payment status
-
-
-# Previous version(s)
 
 ### Release 10.0.37.20240718
 
