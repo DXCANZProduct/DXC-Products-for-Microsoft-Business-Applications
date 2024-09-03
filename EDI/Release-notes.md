@@ -50,7 +50,7 @@ Estimated release date: 4 September 2024
 
 <ins>Manual actions required</ins>
 
-If using Azure connections, and your existing Azure sites have **Azure connection type** set to blank, then select _Azure blob_
+With additional new Azure connection option **Azure file share**, we've added a new field called **Azure connection type** to Azure sites. <br> If using Azure connections, and your existing Azure sites have **Azure connection type** set to blank, please select _Azure blob_
 <br>  ![Azure connection type](RELEASE-NOTES-IMAGES/20240830_2.png "Azure connection type")
 
 <ins>New features</ins>
