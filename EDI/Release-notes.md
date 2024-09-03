@@ -59,6 +59,8 @@ With additional new Azure connection option **Azure file share**, we've added a 
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
+18222	| Connection type - Azure file share | New option to use **Azure file share** in Connection type **Azure sites**. <br>  ![Azure file share](RELEASE-NOTES-IMAGES/20240830_3.png "Azure file share")
+
 
 **Standard formats module**	
 
