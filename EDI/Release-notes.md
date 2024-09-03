@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-30
+ms.date: 2024-09-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -48,7 +48,17 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37
 ### Release 10.0.38.202409TBD
 Estimated release date: 4 September 2024
 
+<ins>Manual actions required</ins>
+
+If using Azure connections, and your existing Azure sites have **Azure connection type** set to blank, then select _Azure blob_
+<br>  ![Azure connection type](RELEASE-NOTES-IMAGES/20240830_2.png "Azure connection type")
+
 <ins>New features</ins>
+
+**Core module**	- Applies to all modules
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
 
 **Standard formats module**	
 
