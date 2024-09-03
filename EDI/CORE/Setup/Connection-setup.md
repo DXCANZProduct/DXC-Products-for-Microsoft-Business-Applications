@@ -3,9 +3,9 @@
 
 title: EDI Connection setup
 description: Overview of the EDI connection methods
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-03-20
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-09-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  SAB_EDIParameters, SAB_EDIFTPSite, SAB_EDISFTPSite, SAB_EDIAzureSite, SAB_EDIExternalWebServiceSetting
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDI
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:  AX 7.0.1
 # Connection methods
 
 ## Overview
-Various communication methods (FTP, FTPS, SFTP, Azure cloud blob storage and web services) can be used to:
+Various communication methods (FTP, FTPS, SFTP, Azure cloud blob storage and WebAPI services) can be used to:
 - Import EDI documents from the VAN or Trading partner and/or
 - Export EDI documents generated within D365 to the VAN or Trading partner.
 
@@ -95,7 +95,7 @@ It is possible to configure a different FTP site path per EDI document type.
 A common way to configure this is to setup a FTP site for the UAT environment versus the PROD environment so the PROD database can easily be rolled over into the UAT environment by simply changing the active site.
 
 <ins>**Incoming documents**</ins> <br>
-Incoming documents have 2 paths that are required to be defined:
+Incoming documents have the following available paths:
 - **Inbound** - The path the EDI document files will be retrieved from
 - **Archive** - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path
 Incoming documents also have 1 optional path:
@@ -156,7 +156,7 @@ It is possible to configure a different SFTP site path per EDI document type.
 A common way to configure this is to setup a SFTP site for the UAT environment versus the PROD environment so the PROD database can easily be rolled over into the UAT environment by simply changing the active site. 
 
 <ins>**Incoming documents**</ins> <br>
-Incoming documents have 2 paths that are required to be defined:
+Incoming documents have the following available paths:
 - **Inbound** - The path the EDI document files will be retrieved from
 - **Archive** - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path
 Incoming documents also have 1 optional path:
@@ -193,8 +193,9 @@ To begin, create a new Azure site record and fill out the connection parameters.
 | **Field** 					    | **Description**                      | 
 | :-------------------------------- |:-------------------------------------| 
 | **Site name**                		| Specify a **Name** for the Azure site |
-| **Active**                   	    | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
-**Credential type**					| Select between *Key vault* or *Database*
+| **Azure connection type**          | Select between _Azure blob_ or _Azure file share_
+| **Active**                   	     | Indicates if the site is active. <br> To activate, select the **Activate** button available in the ribbon. <br> To deactivate, select the **Deactivate** button available in the ribbon. |
+**Credential type**					| Select between *Key vault* (available for Azure blob and Azure file share) or *Database* (only available for Azure blob)
 | **Disable delete**          | When set to _Yes_, the file will not be deleted from the import path. This is useful where you don't have edit rights on the connection and don't want to see an error in the connection log.
 <ins>**Manual credentials**</ins> 			|	
 **Storage account name**			| If Credential type is set to **Database**: Specify the **storage account name** used for authentication to the Azure site
@@ -209,7 +210,7 @@ It is possible to configure a different Azure site path per EDI document type.
 A common way to configure this is to setup an Azure site for the UAT environment versus the PROD environment so the PROD database can easily be rolled over into the UAT environment by simply changing the active site. 
 
 <ins>**Incoming documents**</ins> <br>
-Incoming documents have 2 paths that are required to be defined:
+Incoming documents have the following available paths:
 - **Inbound** - The path the EDI document files will be retrieved from
 - **Archive** - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path
 Incoming documents also have 1 optional path:
@@ -222,7 +223,7 @@ Select **Populate paths** on the Action pane to create the incoming and outgoing
 | **EDI document type**             	| Specify the **Document type** the path relates to |
 | **Type**                				| The type of path: <br> • **Inbound** - The path the EDI document files will be retrieved from <br> • **Archive** - Once succesfully imported to EDI's Inbound files, the file is moved from Inbound to Archive path <br> • **Error** - If there is an error with the import, for example duplicate filename, the file is moved from Inbound to Error path |
 | **Search mode**		     		    | Specify to use either the Trading partner’s **Search mask** as prefix or suffix to identify ‘who’ the file is from. <br> Options: <br> **File name must start with** – Filename must start with Trading partner’s Search mask <br> **File name must end with** – Filename must end with Trading partner’s Search mask |
-| **Azure blob storage container name**	| Specify the blob storage container |
+| **Azure blob storage container name**	/ <br> **Azure file share** | Specify the blob storage container or Azure file share name |
 | **Folder name**                     | Where applicable, specify the folder name |
 
 Outgoing documents have a single path that is required to be defined
@@ -230,7 +231,7 @@ Outgoing documents have a single path that is required to be defined
 | **Field**                         	| **Description**                      | 
 | :-------------------------------- 	|:-------------------------------------| 
 | **EDI document type**             	| Specify the **Document type** the path relates to |
-| **Azure blob storage container name**	| Specify the blob storage container |
+| **Azure blob storage container name**	/ <br> **Azure file share** | Specify the blob storage container or Azure file share name |
 | **Folder name**                     | Where applicable, specify the folder name |
 
 > Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br>The results will be shown on the far right of the grid.*
