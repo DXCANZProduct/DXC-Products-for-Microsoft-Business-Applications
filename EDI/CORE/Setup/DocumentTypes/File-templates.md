@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Setup document types - File templates
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-22
+ms.date: 2024-09-05
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -574,7 +574,7 @@ C4                                 | Currency with 4 decimals	  | 123.45676	    
 N2	                               | 2 decimals	                  | 123.45676	                  | 123.45
 N0	                               | 0 decimals (for example line number)	| 1.0000000           |	1
 {0,-15}                            | Pad staging field with spaces to total of 15 characters  | ^1234^ | <code>^1234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^</code>
-15                                 | Pad static field with spaces to total of 15 characters   | ^1234^ | <code>^1234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^</code>
+
 
 More examples:
 - [https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings)
