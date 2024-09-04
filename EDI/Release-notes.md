@@ -62,11 +62,6 @@ Number	| Name		 | Description
 18222	| Connection type - Azure file share | New option to use **Azure file share** in Connection type **Azure sites**. <br>  ![Azure file share](RELEASE-NOTES-IMAGES/20240830_3.png "Azure file share")
 18224	| DXC connections	| Azure dll moved to new model called DXCConnections.
 
-**Standard formats module**	
-
-Number	| Name		 | Description
-:--	|:--		 |:--
-18824	| X12 padding	 | **Custom format:** <br> Existing example: Can use **{0,-9}** for 9 character padding of **staging fields** <br> New example: Can use **5** for 5 character padding of **static fields** <br>  ![Custom format](RELEASE-NOTES-IMAGES/20240830_1.png "Custom format")
 
 **Customer module**	
 
