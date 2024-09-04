@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-04
+ms.date: 2024-09-05
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -60,7 +60,7 @@ With additional new Azure connection option **Azure file share**, we've added a 
 Number	| Name		 | Description
 :--	|:--		  	|:--
 18222	| Connection type - Azure file share | New option to use **Azure file share** in Connection type **Azure sites**. <br>  ![Azure file share](RELEASE-NOTES-IMAGES/20240830_3.png "Azure file share")
-
+18224	| DXC connections	| Azure dll moved to new model called DXCConnections.
 
 **Standard formats module**	
 
