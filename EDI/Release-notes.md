@@ -37,16 +37,27 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.37 <br> App build: 10.0.1725	  | No	          | 10.0.34.202307311
-Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No            | 10.0.34.202310312
-Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No	          | 10.0.34.202310312
-Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17978 | • Functional: 10.0.37.202405023 <br> • Build error fixed in: 10.0.37.202405302
+Product version: 10.0.40 <br> App build: 10.0.1935.92	  | • No functional issues <br> • Build error fixed in 17978 | • Functional: 10.0.37.202405023 <br> • Build error fixed in: 10.0.37.202405302
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202405302
 
-# Next version
 
-### Release 10.0.38.202409TBD
-Estimated release date: 4 September 2024
+# Current version
+
+Next release is planned for 29 Nov 2024.
+
+### Release 10.0.40.20240905
+
+DXC EDI 10.0.40 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+Microsoft Dynamics 365 application	| 10.0.41 	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
+
+
+#### Build  10.0.40.202409051
+Release date: 5 September 2024 <br>
+
 
 <ins>Manual actions required</ins>
 
@@ -98,22 +109,12 @@ Number	| Name		 | Description
 18315	| Product master	| Base physical dimensions on the Product master unit
 18596	| Transfer order picking list registration	| Error when processing Transfer order Picking list registration Inbound file to Staging: Function SAB_EDIStagingHistory::logHistory has been incorrectly called
 
-# Current version
 
-Next release is planned for 31 Aug 2024.
+# Previous version(s)
+
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.37.20240530
-
-DXC EDI 10.0.37 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
-Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
-Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
-Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
-
 
 #### Build  10.0.37.202405302
 Release date: 31 May 2024 <br>
@@ -167,11 +168,6 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 17864	| Product master	| Fix to Barcode and GTIN after adding UOM mapping in 10.0.37.202405023
-
-
-# Previous version(s)
-
-Approximately one year of previous versions are included below.
 
 ### Release 10.0.37.20240502
 
