@@ -3,9 +3,9 @@
 
 title: EDI Core
 description: Introduction to EDI Core
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-12-01
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-09-05
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: SAB_EDIFunctionalAckReceivedTable 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDI
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -44,7 +44,7 @@ Depending on licensing additional documents are available per module, view all t
 ## Setup
 ### Core setup
 The following core setup is available under **EDI > Setup**:
-- [Connections](../Setup/Connection-setup.md) - Setup the applicable ftp/ftps/sftp/azure blob connection(s)
+- [Connections](../Setup/Connection-setup.md) - Setup the applicable ftp/ftps/sftp/azure blob connection(s)/ azure file share
 - [Cleanup profile](../Setup/Cleanup-profile.md) - (Optional) Can be used to automatically delete staging records based on status and age days
 - [Reset status](../Setup/Reset-status.md) - (Optional) Automatic retry by resetting Error records to Not started based on a recurrence pattern
 - [EDI parameters](../Setup/EDI-parameters.md) - Refresh module after deployment, and other parameter setup
