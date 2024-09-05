@@ -30,7 +30,7 @@ ms.dyn365.ops.version:  AX 7.0.1
 # Connection methods
 
 ## Overview
-Various communication methods (FTP, FTPS, SFTP, Azure cloud blob storage and WebAPI services) can be used to:
+Various communication methods (FTP, FTPS, SFTP, Azure cloud blob storage, Azure file share and WebAPI services) can be used to:
 - Import EDI documents from the VAN or Trading partner and/or
 - Export EDI documents generated within D365 to the VAN or Trading partner.
 
