@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Review Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-01
+ms.date: 2024-09-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,8 +43,13 @@ Synchronizes the current user roles, privileges and accessible menu items. This 
 Subsequent runs only required if menu item privileges change.
 
 ## 2. Initiate user security groups
-Automatically creates groups of similar users by analyzing user roles and privileges, or utilize existing D365 user groups. <br>
-This step is only available on **Security insights by user**. <br>
+Ability to automaticall group similar users by: 
+- **User groups** - Linked to 'System administration > Users > User groups'
+- **Microsoft Entra ID security groups** - Linked to 'System administration > Users > Groups'. Option controlled by the MSFT config key for AAD
+- **Security roles** - Machine learning used to group users by similar security roles. Ability to limit number of groups created with 'Maximum number of groups'
+- **Security privileges** - Machine learning used to group users by similar security privileges. Ability to limit number of groups created with 'Maximum number of groups'
+ 
+> Note: This step is only available on **Security insights by user**. <br>
 
 **Parameters:**
 - Use **Select foundation data for user group creation** to create the user groups by either:
