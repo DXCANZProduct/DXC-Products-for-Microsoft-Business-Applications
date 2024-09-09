@@ -47,6 +47,8 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37
 Number	| Name		 | Description
 :--	|:--		  	|:--
 18830	| Initiate user security groups	| Ability to use **Microsoft Entra ID security groups** when initiating user security groups on the **Security insights by user** view. <br> Option controlled by the MSFT config key for AAD.
+18764	| HR tables	| Ability to insert columns from HR tables. For example can insert Title for users, where person is assigned to users.
+18756	| Filter by Group	| Ability to filter by **User security group** on following steps: <br> • Fetch interaction data from application insights <br> • Calculate utilization rates
 
 # Current version
 
