@@ -32,6 +32,7 @@ The following views are available to colate and review user access and security 
 - **Security insights by user**
 - **Security insights by license**
 
+
 These views are available by navigating to **System administration > Insights for user access and security**
 
 # Processing
