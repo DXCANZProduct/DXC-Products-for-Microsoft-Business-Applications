@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Security Insights for D365 FO - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-29
+ms.date: 2024-09-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,6 +29,24 @@ ms.dyn365.ops.version: 10.0.31
 
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
+
+# Version compatibility
+The matrix shows the DXC build versions compatiable for Microsoft versions and builds. <br>
+If blank: investigations are ongoing. <br>
+
+D365 Version	  | Any issues found in testing?	  | Product version tested
+:--       	  |:--           			  |:--
+Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202407311
+
+# Next version
+
+### Release 10.0.40.202409TBD
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+18830	| Initiate user security groups	| Ability to use **Microsoft Entra ID security groups** when initiating user security groups on the **Security insights by user** view. <br> Option controlled by the MSFT config key for AAD.
 
 # Current version
 
