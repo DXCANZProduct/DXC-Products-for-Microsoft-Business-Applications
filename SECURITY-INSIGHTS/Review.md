@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Review Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-09
+ms.date: 2024-09-10
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,23 +43,20 @@ Synchronizes the current user roles, privileges and accessible menu items. This 
 Subsequent runs only required if menu item privileges change.
 
 ## 2. Initiate user security groups
-Ability to automaticall group similar users by: 
-- **User groups** - Linked to 'System administration > Users > User groups'
-- **Microsoft Entra ID security groups** - Linked to 'System administration > Users > Groups'. Option controlled by the MSFT config key for AAD
-- **Security roles** - Machine learning used to group users by similar security roles. Ability to limit number of groups created with 'Maximum number of groups'
-- **Security privileges** - Machine learning used to group users by similar security privileges. Ability to limit number of groups created with 'Maximum number of groups'
+Ability to automatically group similar users
  
 > Note: This step is only available on **Security insights by user**. <br>
 
 **Parameters:**
 - Use **Select foundation data for user group creation** to create the user groups by either:
-    - User groups - utilizes D365 user groups setup in **System administration > Users > User groups**. For this option it is not required to rerun the initiate step if more users are added or roles/privilegs change for a user.
-    - Security roles - machine learning is used to group users with similar security roles.
-    - Security privileges - machine learning is used to group users with similar security privileges.
-- Enter the **Maximum number of groups** that should be created. Disabled when 'User groups' are selected.
+    - **User groups** - utilizes D365 user groups setup in **System administration > Users > User groups**. For this option it is not required to rerun the initiate step if more users are added or roles/privilegs change for a user.
+    - **Microsoft Entra ID security groups** - utilizes Active Directory Security groups, available via 'System administration > Users > Groups'. Option controlled by the MSFT config key for AAD
+    - **Security roles** - machine learning is used to group users with similar security roles.
+    - **Security privileges** - machine learning is used to group users with similar security privileges.
+- Enter the **Maximum number of groups** that should be created. Enabled where 'Security roles' or 'Security privileges' are selected.
 
-## 3. Fetch interaction data from application Insights
-Fetch user interation data from Azure applicable Insights
+## 3. Fetch interaction data from application insights
+Fetch user interation data from Azure Applications Insights
 
 **Parameters:**
 - Select the applicable **Azure application Insights connection** setup in [Insights for user access and security parameters](Parameters.md)
