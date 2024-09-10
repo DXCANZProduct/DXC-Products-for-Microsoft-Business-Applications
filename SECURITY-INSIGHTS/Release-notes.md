@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Security Insights for D365 FO - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-09
+ms.date: 2024-09-10
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,9 +38,19 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202407311
 
-# Next version
+# Current version
 
-### Release 10.0.40.202409TBD
+### Release 10.0.40.20240910
+
+Security Insights for D365 FO 10.0.40 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
+
+#### Build 10.0.40.202409101
+Release date: 10 September 2024
 
 <ins>New features</ins>
 
@@ -50,28 +60,14 @@ Number	| Name		 | Description
 18764	| HR tables	| Ability to insert columns from HR tables. For example can insert Title for users, where person is assigned to users.
 18756	| Filter by Group	| Ability to filter by **User security group** on following steps: <br> • Fetch interaction data from application insights <br> • Calculate utilization rates
 
-# Current version
+# Previous Version(s)
 
 ### Release 10.0.37.20240731
-
-Security Insights for D365 FO 10.0.37 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
-Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
-Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
-Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 
 #### Build 10.0.37.202407311
 Release date: 31 July 2024
 
 First release
-
-# Previous Version(s)
-
-N/A
 
 # Installation process
 To align with MS best practice and to protect our IP the following applies to the release process.
