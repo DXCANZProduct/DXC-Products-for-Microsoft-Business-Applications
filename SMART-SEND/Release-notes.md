@@ -41,22 +41,47 @@ Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No				          | 10.0
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | • No functional issues <br> • Build error fixed in 17017     | • Functional: 10.0.37.202403263 <br> • Build error fixed in: 10.0.36.202310262
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | 10.0.37.202403263
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | 10.0.37.202403263
+Product version: 10.0.42
 
 # Current version
 
-### Release 10.0.37.20240326
+### Release 10.0.40.20240911
 
-DXC Smart Business Form Email Manager 10.0.37 runs on the following Microsoft releases
+DXC Smart Business Form Email Manager 10.0.40 runs on the following Microsoft releases
 
-Minimum supported version 10.0.37
+Minimum supported version 10.0.40 Proactive Quality Update (2) App build: 10.0.1935.92
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
-Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
-Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
+
+
+#### Build 10.0.40.202409111 
+
+<ins>Bug fixes</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+16791	    | The field with ID '0' does not exist in table 'CustInvoiceTable'| When attempting to perform the View >copy function on a Free Text Invoice the error was displayed.
+18226     | Free Text Invoices are not saved to Azure blob storage when issued in multiple | Previously when you selected more than 1 free text invoice or a combination of free text and customer tax Invoices only the first Free Text Invoice was sent to blob storage
+18275    |Tax Journal Screen resets when sending records across screens | Issue resolved when multiple records are selected and attempted to be sent via Smart Send
+17425  |Update Table Groups | Update Table Groups in line with proposed PPAC copy environment functionality to prevent loss of key data
+18916|Smart Send "Test Azure blob storage connection" button is not validating correctly| Changes to how FinOps validated blob storage connections have been made as a result of an invalid dll file bundled by Microsoft causing the failure. This change is designed to prevent future issues and reduce dependency
+18842|Azure blob storage setup  mismatches|When changing between Blob connection string or Key Vault storage the Blob connection string would still be displayed instead of looking for the key vault type. Also not allowing blob storage values to be blank when Storage options are set to none 
+18792| Request for quotation smart send button  will print to screen| When using the smart send button for Request for quotation this would previously print to screen 
+18983|Remove Catch statement| When saving files in blob storage a message would display "See event viewer in LCS for more detail" when a non-Smart Send error occurred. This has been removed in favour of original errors being passed back to Fin ops from blob storage
+
+## Feature management
+From 10.0.34.20231026 Smart Send can be enabled via Feature management
+Enable the following feature in D365 Feature management:
+
+- DXC Smart Send
+
+If the above feature is not visible, press **Check for updates** to refresh the feature management list.
+
+# Previous version(s)
+
 
 #### Build 10.0.37.202403263
 
@@ -74,18 +99,6 @@ Number	  | Name	          | Description
 :--       |:--              |:--
 17724		| Licensing	| Improvements to licensing - see [Licensing release notes](../LMG/Release-notes.md#release-10037202404262) for detailed information.
 
-## Feature management
-From 10.0.34.20231026 Smart Send can be enabled via Feature management
-Enable the following feature in D365 Feature management:
-
-- DXC Smart Send
-
-If the above feature is not visible, press **Check for updates** to refresh the feature management list.
-
-
-	
-
-# Previous version(s)
 
 ### Release 10.0.37.20240301
 #### Build 10.0.37.202403012
@@ -121,15 +134,15 @@ Number	  | Name	          | Description
 12885	    | Sales agreement - Confirmation issues error TTSBEGIN/TTSCOMMIT| When posting a Confirmation on the Sales agreement form and you set  print to Yes, the “TTSBEGIN/TTSCOMMIT” error will no longer be displayed.
 13553	    | Final recipient missing semicolon in email address| When using the "Both" Selection under recipient for purchase order confirmations the final recipient would not have the semi-colon before the email address. With this correction, all email recipients are formatted correctly, and emails are delivered as per standard behaviour.  
 13707	    | Error on customer payment journal when processing Smart Send Email | When making multiple payments to a single Customer account in the customer payment journal only the first line will process the correct attachment.  This has now been corrected and each line will be sent to the related Smart Send contacts with the correct attachment.
-14831	    | Centralized payment only utilized set up from creation legal entity | When utilizing the Centralized Payment Functionality for Vendor Payment Journals Smart Send would utilize set up from the current legal entity.  This has been updated and centralized payment now can utilize Smart Send templates from multiple legal entities when making centralized vendor payments.
-13707	    | Smart Send does not recognize the difference between a free text invoice and a customer invoice on Invoice Journal | When issuing a Free Text Invoice utilizing the Tax Invoice Journal (Accounts receivable>Enquiries and reports> Invoices >Invoice Journal) a "Report is not setup for Smart Send" Error would appear if the Legal entity did not have a Customer Invoice report set as well.  This has been corrected and both Free text and Customer Invoice can be issued with independent templates.
+14831	    | Centralized payment only utilized set up from creation legal entity | When utilizing the Centralized Payment Functionality for Vendor Payment Journals Smart Send would utilize set up from the current legal entity.  This has been updated and centralized payment can now use Smart Send templates from multiple legal entities when making centralized vendor payments.
+13707	    | Smart Send does not recognise the difference between a free text invoice and a customer invoice on Invoice Journal | When issuing a Free Text Invoice utilizing the Tax Invoice Journal (Accounts receivable>Enquiries and reports> Invoices >Invoice Journal) a "Report is not set up for Smart Send" Error would appear if the Legal entity did not have a Customer Invoice report set as well.  This has been corrected and both Free text and Customer Invoice can be issued with independent templates.
 16073	    | The BankPaymAdviceVendController class has become obsolete by Microsoft in version 10.0.37 and mandatory in 10.0.34 | Smart Send now will only support BankPaymAdviceVendController V2.  Activate “Enable batch processing for bank payment advice reports” via Feature management if not auto-enabled.   This feature lets you use batch processing for both the customer and vendor bank payment advice reports. To use this feature, you must use BankPaymAdviceVendV2 and BankPaymAdviceCustV2 bank payment advice and set them up as the customer and vendor report formats in print management.
 
 ![BankPaymAdviceVendV2Report](IMAGES/BankPaymAdviceVendV2Report.png)
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-16329	    | GER payment advice - Duplicated lines and wrong recipient | When the payment journal contains two lines (two different vendors), when both are lines selected the ‘Smart send payment advice’ functionality created an email to only one vendor and it sent the other vendor’s payment advice to the wrong vendor. The settled invoices lines were also duplicated. This previously applied to customer and vendor payments and has been corrected.
+16329	    | GER payment advice - Duplicated lines and wrong recipient | When the payment journal contains two lines (two different vendors), when both are lines selected the ‘Smart send payment advice’ functionality created an email to only one vendor and it sends the other vendor’s payment advice to the wrong vendor. The settled invoices lines were also duplicated. This previously applied to customer and vendor payments and has been corrected.
 
 <ins>New features</ins>
 
@@ -137,10 +150,10 @@ Number	  | Name	          | Description
 :--       |:--              |:--
 9233	    | Additional fields in organizational email template data entity| Additional fields have now been added to the Organization email template Data Entity to incorporate the To, CC and BCC fields from the Smart Send email templates.
 9483	    | Company logo placeholder for email template| You can now incorporate your company logo into your Smart Send email template.  Note you must use Tag `<img src="data:image/bmp;base64,%CompanyLogo%" alt="logo"/>` to render image correctly.
-9735	    | rich html editor | New ability to use HTML editor when building content for Smart Send email templates.
+9735	    | rich HTML editor | New ability to use HTML editor when building content for Smart Send email templates.
 12731	    | Additional placeholders | 2 additional placeholders have been added. For Purchase order confirmation (PurchTable.PurchName) %VendorName% For Sales order Confirmation (SalesTable.SalesName) %CustomerName%
-14174	    | key vault is now in drop down menu | key vault has now been updated to a drop-down menu.  Azure Blob storage will be deprecated in the future. Date to be announced. 
-14961	    | change to option "PRINTER DESTINATION IF NO SMART SEND RECIPIENT FOUND" | When no Smart send recipient has been selected you now have the option to set documents to not print via the renamed menu option "PRINTER DESTINATION IF NO SMART SEND RECIPIENT FOUND".  This setting works in conjunction with the Save to Azure Storage options and Alternate Email in email parameters. When “do not print” is enabled documents are not routed if no recipient is found.  By Default, this field is set with no option (Blank) which follows standard Smart Send logic and allows for both Azure storage or Alternate Email delivery.  “Do not print” if enabled will override alternate email and Azure storage options and document will not be routed.  Only occurs if no smart send recipient found.
+14174	    | key vault is now in drop-down menu | key vault has now been updated to a drop-down menu.  Azure Blob storage will be deprecated in the future. Date to be announced. 
+14961	    | change to option "PRINTER DESTINATION IF NO SMART SEND RECIPIENT FOUND" | When no Smart send recipient has been selected you now have the option to set documents to not print via the renamed menu option "PRINTER DESTINATION IF NO SMART SEND RECIPIENT FOUND".  This setting works in conjunction with the Save to Azure Storage options and Alternate Email in email parameters. When “do not print” is enabled documents are not routed if no recipient is found.  By Default, this field is set with no option (Blank) which follows standard Smart Send logic and allows for both Azure storage or Alternate Email delivery.  “Do not print” if enabled will override alternate email and Azure storage options and document will not be routed.  Only occurs if no smart send recipient is found.
 
 
 ![Override_print_destination](IMAGES/Override_print_destination.png)
@@ -148,7 +161,7 @@ Number	  | Name	          | Description
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-6735	    | Support the use of Rich HTML editor| HTML editor is included for editing the body of the organisational email template. To start editing select Email Message from the top menu to open the template then switch the “use HTML editor” toggle button to yes to allows editing fucntionality.
+6735	    | Support the use of Rich HTML editor| HTML editor is included for editing the body of the organisational email template. To start editing select Email Message from the top menu to open the template then switch the “use HTML editor” toggle button to Yes to allow editing functionality.
 
 ![Email_message_menu](IMAGES/Email_message_menu.png)
 
