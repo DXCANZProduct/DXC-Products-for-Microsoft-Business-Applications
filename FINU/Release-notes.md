@@ -57,6 +57,7 @@ Estimated release date: 13 September 2024
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
 18870		| Various	| ABN lookup	| New field **Search by ABN** available in **ABN lookup**. When set to: <br> • No: Search by Company name <br> • Yes: Search by ABN <br> ![ABN lookup](Images/ReleaseNotes_20240913_1.png "Search by ABN")
+18851		| Various	| ABN status	| Where the GST is **Cancelled** for an ABN, the **From date** will be obtained from Historical details to indicate from which date the GST has been cancelled. <br> ![ABN status](Images/ReleaseNotes_20240913_2.png "Cancelled From date")
 
 
 
