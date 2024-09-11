@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 The Import Journal functionality provides a user-friendly method to import general journal and inventory journal transaction data from Excel or CSV files. All the standard validation and defaulting will occur in the same way as the Data Management Framework (DMF). Both General Journals and Inventory Journals are supported. The imports are based on Data Entities and allow configuration of new templates to be imported.  Note: Standard DMF source formatting and field mapping limitations apply
 
 Benefits:
-* User friendly to import rather than having to open and paste into Excel adding or using the data management workspace
+* User-friendly to import rather than having to open and paste into Excel adding or using the data management workspace
 * Reduces the risk of making mistakes
 
 ## Setup
@@ -48,8 +48,8 @@ Data entity templates must be established to enable the importing of files into 
     * **Group name** - Enter a name for the processing group e.g. CREX-EXP
     * **Description**	- Enter a description for the processing group e.g. Core Extensions Template Export
     * **Data project operation type**	- Export
-3.	Select Add entity
-4.	Complete the dialog, for example
+3.	Select Add Entity
+4.	Complete the dialogue, for example
     * **Entity name**	- General Journal
     * **Target data format** - CSV
     * **Use sample file**	- No
@@ -73,25 +73,26 @@ An Import Project (processing group) must be established to enable the importing
     * **Description**	- Enter a description e.g. General Journal Import
     * **Data project operation type**	- Import
 3. Select Add file
-4. Complete the dialog with the following information
+4. Complete the dialogue with the following information
     * **Entity name** -	General journal
     * **Source data format** - CSV
     * **Use sample file** -	No
     * **Default refresh type** - Full push only
     * **Upload data file** - e.g. CREX-EXP-General journal.csv
 5. Select Upload and add and browse to the template file created in the previous step e.g. CREX-EXP-General journal.csv
-    * *Note some templates will require some manual cleansing, for example the General Journal entity includes the field ISPOSTED, and this column must be removed prior to Upload and Add*
+    * *Note some templates will require some manual cleansing, for example, the General Journal entity includes the field ISPOSTED, and this column must be removed prior to Upload and Add*
 6. Select Close
 7. Repeat the setup for
     * Inventory adjustment journal (Inventory adjustment journal headers and lines V2)
     * Inventory movement journal (Inventory movement journal headers and lines V3)
  
 ### Security Roles
-The Import project needs to have security roles applied to it in order for non-Administrator users to have permissions to import files into the journals. It is recommended that the following roles are set to use the import features:
+The Import project needs to have security roles applied to it for non-administrator users to have permission to import files into the journals and/or see the execution history resulting from the import. It is recommended that the following roles are set to use the import features:
 
 |  **Role**  | **Import Feature** | 
 |:---|:---|     
 |  **Accounting Manager**  | Import General Journal |   
+|  **Data management operations userr**  | View Execution History | 
 |  **Materials Manager**  | Import Inventory Adjustment Journal |   
 |  **Materials Manager**  | Import Inventory Movement Journal |   
 
