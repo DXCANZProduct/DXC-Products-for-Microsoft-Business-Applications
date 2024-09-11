@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-28
+ms.date: 2024-09-11
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,6 +46,18 @@ Feature	| 10.0.41 Feature state
 :--       	|:--		
 **Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the custom bank statement format | Mandatory
 **Modern bank reconciliation** | 
+
+# Next version
+
+### Release 10.0.40.202409TBD
+Estimated release date: 13 September 2024
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+18870		| Various	| ABN lookup	| New field **Search by ABN** available in **ABN lookup**. When set to: <br> • No: Search by Company name <br> • Yes: Search by ABN <br> ![ABN lookup](Images/ReleaseNotes_20240913_1.png "Search by ABN")
+
 
 
 # Current version
