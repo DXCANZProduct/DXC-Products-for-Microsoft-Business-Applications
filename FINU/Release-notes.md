@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-11
+ms.date: 2024-09-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -64,6 +64,7 @@ Number	  	| Module	| Functionality	  	| Description
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
 18984		| Organisation administration	| ABN validation review	| When **Reviewed** changes from _Yes_ to _No_ by an update to the ABN record, the **Reviewed by** used to still store the previously reviewed by user which is not valid since the record is not reviewed anymore.
+19014		| Cash and bank management | Web API import & DXC Encryption	| Added a check on warning for files imported via WebAPI . If file is empty, a warning will be added to the batch job logs and no files will be added for further process of mapping from file to BankStatement tables. <br> In addition to this, a check and warning has been added in the DXC Encryption model code. If an empty is received for decryption, a warning will be displayed to the user to indicate file stream is empty.
 
 # Current version
 
