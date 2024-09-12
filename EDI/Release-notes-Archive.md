@@ -3,9 +3,9 @@
 
 title: EDI
 description: EDI - Release notes - Archive
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-04-04
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-09-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDI
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:  2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -399,3 +399,21 @@ Number	| Functionality	  | Reason
 #### Build 10.0.18.202109284
 
 Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+### Release 10.0.16.20210817
+
+#### Build 10.0.16.202108171
+
+Excludes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+9312	| Reset status	| Staging form displaying duplicate records when using Reset status and multiple batches setup for ‘Process to target’ step. <br> Table SAB_EDIResetStatusTrans has been duplicated to new table SAB_EDIResetStatusSharedTrans. ‘Refresh module’ button now includes code to transfer records from old table to the new table with "Refresh module" button
+
+
+#### Build 10.0.16.202108172
+
+Includes Inbound Transportation management (ITM) & ITM version Freight forwarder
+
