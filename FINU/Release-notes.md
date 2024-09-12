@@ -50,7 +50,7 @@ Feature	| 10.0.41 Feature state
 # Next version
 
 ### Release 10.0.40.202409TBD
-Estimated release date: 13 September 2024
+Estimated release date: 17 September 2024
 
 <ins>New features</ins>
 
