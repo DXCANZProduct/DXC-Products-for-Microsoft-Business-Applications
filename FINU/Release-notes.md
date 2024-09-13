@@ -61,6 +61,7 @@ Number	  	| Module	| Functionality	  	| Description
 18987		| Various	| ABN / TaxVatNumTable	| New fields added to TaxVatNumTable: <br> • Created by <br> • Created date and time <br> • Modified by <br> • Modified date and time <br> • Reviewed date
 18509		| Accounts receivable	| AR Utilities	| Ability to obtain part of a field in the remittance file, by using **Field format** on below fields: <br> • Customer reference <br> • Tax invoice <br> [User guide](Setup/ACCOUNTS-RECEIVABLE/Remittance-format.md#field-format) <br>  <br> ![Field format](Images/ReleaseNotes_20240913_3.png "Field format") <br> ![Field format](Images/ReleaseNotes_20240913_4.png "Field format")
 19087		| Various	| Azure connections	| Azure dll moved to new model called DXCConnections
+19023		| Accounts payable	| Sundry method of payment	| Allow Generic electronic Export formats where Sundry method of payment is set to Yes.
 
 
 
