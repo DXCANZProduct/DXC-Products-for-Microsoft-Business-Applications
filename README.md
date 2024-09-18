@@ -8,11 +8,11 @@ Please select the applicable product from below:
 - [Electronic Data Interchange (EDI)](EDI/Introduction.md)
 - [Finance utilities](FINU/INTRODUCTION.md) (specific to ANZ region)
 - [Forex contracts](FOREX-CONTRACT/Introduction.md)
-- [Insights for D365 FO](DXC-INSIGHTS/Introduction.md)
+- [Insights for D365 FO](DXC-INSIGHTS/Introduction.md) - [demo](https://dynamics.dxc.technology/webinars/analysis-tool-for-performance-of-microsoft-dynamics-365-finance-and-operations-by-dxc-technology-2)
 - [Item creation wizard](DXC-ITEM-CREATION-WIZARD/INTRODUCTION.md)
 - [License manager](LMG/Introduction.md)
 - [Product Lifecycle Management (PLM)](PLM/Introduction.md)
-- [Security Insights for D365 FO](SECURITY-INSIGHTS/Introduction.md)
+- [Security Insights for D365 FO](SECURITY-INSIGHTS/Introduction.md) - [demo](https://dynamics.dxc.technology/microsoft-dynamics-365/security-insights-for-microsoft-dynamics-365-fo-solution-to-optimise-your-user-licensing)
 - [Smart Business Form Email Manager (Smart Send)](SMART-SEND/Overview.md)
 - [Solutions for DocuSign and Dynamics 365](DOCUSIGN/INTRODUCTION.md)
 
