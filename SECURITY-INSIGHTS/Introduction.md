@@ -45,7 +45,7 @@ Identify and maintain underutilized/unused roles, duties, privileges that have e
 
 ### Demonstration
 
-Watch DXC Technology’s short demonstration on Insights for D365 FO solution [here](https://dynamics.dxc.technology/microsoft-dynamics-365/security-insights-for-microsoft-dynamics-365-fo-solution-to-optimise-your-user-licensing)
+Watch DXC Technology’s short demonstration on Security Insights for D365 FO solution [here](https://dynamics.dxc.technology/microsoft-dynamics-365/security-insights-for-microsoft-dynamics-365-fo-solution-to-optimise-your-user-licensing)
 
 ## New ideas
 Have a suggestion for a new product or a new feature for an existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
