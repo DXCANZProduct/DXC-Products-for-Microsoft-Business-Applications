@@ -53,7 +53,7 @@ Feature	| 10.0.41 Feature state
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-18827		|Cash and bank management	| Reconciliation matching rules - offset to customer	| New option **Auto-post and transfer customer payment journal** enables customer payment journal to be posted and any error lines transferred to new unposted journal (example stopped customer). <br> ![Post and transfer](Images/ReleaseNotes_20240919_1.png "Post and transfer")
+18827		|Cash and bank management	| Reconciliation matching rules - offset to customer	| New option **Auto-post and transfer customer payment journal** enables customer payment journal to be posted and any error lines transferred to a new unposted journal (example stopped customer). Both customer payment journals' **Document** will refer to the Bank reconciliation. <br> ![Post and transfer](Images/ReleaseNotes_20240919_1.png "Post and transfer")
 
 # Current version
 
