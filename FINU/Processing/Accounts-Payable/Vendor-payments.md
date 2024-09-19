@@ -71,7 +71,7 @@ The source of the fields is linked to vendor payment journal line's Method of pa
 
 Field                            | BSB / Account                    | BPAY                          | Sundry
 :--       	                     |:--     	                        |:--                            |:-- 
-**Vendor Name**                  | Vendor bank account's **Name**  | Vendor bank account's **Name** | Vendor bank account's **Name**
+**Vendor Name**                  | Vendor bank account's **Name**  | Vendor bank account's **Name** | Vendor payment journal line's **Sundry vendor name**
 **BSB/Biller code**              | Vendor bank account's **Routing number**  | Vendor bank account's **Biller code**  | Vendor payment journal line's **Sundry BSB\routing number**
 **Account No./Lodgement Ref.**   | Vendor bank account's **Bank account number**  | Vendor bank account's **Lodgement reference** | Vendor payment journal line's **Sundry bank account**
 
