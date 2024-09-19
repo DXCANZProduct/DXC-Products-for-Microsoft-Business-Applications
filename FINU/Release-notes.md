@@ -45,22 +45,9 @@ Feature	| 10.0.41 Feature state
 **Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the custom bank statement format | Mandatory
 **Modern bank reconciliation** | 
 
-# Next version
-
-### Release 10.0.40.2024TBD
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-18827		| Cash and bank management	| Reconciliation matching rules - offset to customer	| New option **Auto-post and transfer customer payment journal** enables customer payment journal to be posted and any error lines transferred to a new unposted journal (example stopped customer). Both customer payment journals' **Document** will refer to the Bank reconciliation. <br> ![Post and transfer](Images/ReleaseNotes_20240919_1.png "Post and transfer")
-19151		| Cash and bank management	| Reconciliation matching rules - data entity	| Field 'Description mask' added to data entity
-18837		| Accounts payable	| Payments report | Use Vendor bank account's BPAY **Biller code** and **Lodgement reference** fields where payment line's method of payment **BPAY method of payment** is _Yes._ <br> [User guide](Processing/Accounts-Payable/Vendor-payments.md#payments-report) <br> <br> ![Payments](Images/ReleaseNotes_20240919_2.png "Payments")
-
-
 # Current version
 
-### Release 10.0.40.20240916
+### Release 10.0.40.20240919
 
 DXC Finance Utilities 10.0.40 runs on the following Microsoft releases
 
@@ -69,29 +56,16 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 
-#### Build 10.0.40.202409162
-Release date: 16 September 2024 <br>
+### Build 10.0.40.202409191
+Release date: 19 September 2024
 
 <ins>New features</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-18870		| Various	| ABN lookup	| New field **Search by ABN** available in **ABN lookup**. When set to: <br> • No: Search by Company name <br> • Yes: Search by ABN <br> ![ABN lookup](Images/ReleaseNotes_20240913_1.png "Search by ABN")
-18851		| Various	| ABN status	| Where the GST is **Cancelled** for an ABN, the **From date** will be obtained from Historical details to indicate from which date the GST has been cancelled. <br> ![ABN status](Images/ReleaseNotes_20240913_2.png "Cancelled From date")
-18987		| Various	| ABN / TaxVatNumTable	| New fields added to TaxVatNumTable: <br> • Created by <br> • Created date and time <br> • Modified by <br> • Modified date and time <br> • Reviewed date
-18509		| Accounts receivable	| AR Utilities	| Ability to obtain part of a field in the remittance file, by using **Field format** on below fields: <br> • Customer reference <br> • Tax invoice <br> [User guide](Setup/ACCOUNTS-RECEIVABLE/Remittance-format.md#field-format) <br>  <br> ![Field format](Images/ReleaseNotes_20240913_3.png "Field format") <br> ![Field format](Images/ReleaseNotes_20240913_4.png "Field format")
-19087		| Various	| Azure connections	| Azure dll moved to new model called DXCConnections
-19023		| Accounts payable	| Sundry method of payment	| Allow Generic electronic Export formats where Sundry method of payment is set to Yes.
-
-
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-18984		| Organisation administration	| ABN validation review	| When **Reviewed** changes from _Yes_ to _No_ by an update to the ABN record, the **Reviewed by** used to still store the previously reviewed by user which is not valid since the record is not reviewed anymore.
-19014		| Cash and bank management | Web API import & DXC Encryption	| Added a check on warning for files imported via WebAPI . If file is empty, a warning will be added to the batch job logs and no files will be added for further process of mapping from file to BankStatement tables. <br> In addition to this, a check and warning has been added in the DXC Encryption model code. If an empty is received for decryption, a warning will be displayed to the user to indicate file stream is empty. <br> New DXC Encryption version 10.0.41.202409161
-18802		| Various	| Azure connections	| Unable to find manual secret value
+18827		| Cash and bank management	| Reconciliation matching rules - offset to customer	| New option **Auto-post and transfer customer payment journal** enables customer payment journal to be posted and any error lines transferred to a new unposted journal (example stopped customer). Both customer payment journals' **Document** will refer to the Bank reconciliation. <br> ![Post and transfer](Images/ReleaseNotes_20240919_1.png "Post and transfer")
+19151		| Cash and bank management	| Reconciliation matching rules - data entity	| Field 'Description mask' added to data entity
+18837		| Accounts payable	| Payments report | Use Vendor bank account's BPAY **Biller code** and **Lodgement reference** fields where payment line's method of payment **BPAY method of payment** is _Yes._ <br> [User guide](Processing/Accounts-Payable/Vendor-payments.md#payments-report) <br> <br> ![Payments](Images/ReleaseNotes_20240919_2.png "Payments")
 
 
 # Deprecated features
@@ -134,6 +108,32 @@ This section describes the features that have been removed, or planned to be rem
 # Previous version(s)
 
 Approximately one year of previous versions are included below.
+
+### Release 10.0.40.20240916
+
+#### Build 10.0.40.202409162
+Release date: 16 September 2024 <br>
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+18870		| Various	| ABN lookup	| New field **Search by ABN** available in **ABN lookup**. When set to: <br> • No: Search by Company name <br> • Yes: Search by ABN <br> ![ABN lookup](Images/ReleaseNotes_20240913_1.png "Search by ABN")
+18851		| Various	| ABN status	| Where the GST is **Cancelled** for an ABN, the **From date** will be obtained from Historical details to indicate from which date the GST has been cancelled. <br> ![ABN status](Images/ReleaseNotes_20240913_2.png "Cancelled From date")
+18987		| Various	| ABN / TaxVatNumTable	| New fields added to TaxVatNumTable: <br> • Created by <br> • Created date and time <br> • Modified by <br> • Modified date and time <br> • Reviewed date
+18509		| Accounts receivable	| AR Utilities	| Ability to obtain part of a field in the remittance file, by using **Field format** on below fields: <br> • Customer reference <br> • Tax invoice <br> [User guide](Setup/ACCOUNTS-RECEIVABLE/Remittance-format.md#field-format) <br>  <br> ![Field format](Images/ReleaseNotes_20240913_3.png "Field format") <br> ![Field format](Images/ReleaseNotes_20240913_4.png "Field format")
+19087		| Various	| Azure connections	| Azure dll moved to new model called DXCConnections
+19023		| Accounts payable	| Sundry method of payment	| Allow Generic electronic Export formats where Sundry method of payment is set to Yes.
+
+
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+18984		| Organisation administration	| ABN validation review	| When **Reviewed** changes from _Yes_ to _No_ by an update to the ABN record, the **Reviewed by** used to still store the previously reviewed by user which is not valid since the record is not reviewed anymore.
+19014		| Cash and bank management | Web API import & DXC Encryption	| Added a check on warning for files imported via WebAPI . If file is empty, a warning will be added to the batch job logs and no files will be added for further process of mapping from file to BankStatement tables. <br> In addition to this, a check and warning has been added in the DXC Encryption model code. If an empty is received for decryption, a warning will be displayed to the user to indicate file stream is empty. <br> New DXC Encryption version 10.0.41.202409161
+18802		| Various	| Azure connections	| Unable to find manual secret value
 
 ### Release 10.0.38.20240823
 
