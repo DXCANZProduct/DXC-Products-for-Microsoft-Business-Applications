@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-12
+ms.date: 2024-09-17
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,10 +35,8 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No		  | 10.0.35.2023073131
-Product version: 10.0.39 <br> App build: 10.0.1860.18	  | No		  | 10.0.36.2023111671
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17981 | • Functional: 10.0.37.2024032522 <br> • Build error fixed in: 10.0.37.202405302
-Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202406251
+Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes - 18802	          | Fix available in 10.0.40.202409162
 
 #### Features not yet supported
 
@@ -47,10 +45,20 @@ Feature	| 10.0.41 Feature state
 **Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the custom bank statement format | Mandatory
 **Modern bank reconciliation** | 
 
-# Next version
 
-### Release 10.0.40.202409TBD
-Estimated release date: 13 September 2024
+# Current version
+
+### Release 10.0.40.20240916
+
+DXC Finance Utilities 10.0.40 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
+
+#### Build 10.0.40.202409162
+Release date: 16 September 2024 <br>
 
 <ins>New features</ins>
 
@@ -58,44 +66,20 @@ Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
 18870		| Various	| ABN lookup	| New field **Search by ABN** available in **ABN lookup**. When set to: <br> • No: Search by Company name <br> • Yes: Search by ABN <br> ![ABN lookup](Images/ReleaseNotes_20240913_1.png "Search by ABN")
 18851		| Various	| ABN status	| Where the GST is **Cancelled** for an ABN, the **From date** will be obtained from Historical details to indicate from which date the GST has been cancelled. <br> ![ABN status](Images/ReleaseNotes_20240913_2.png "Cancelled From date")
+18987		| Various	| ABN / TaxVatNumTable	| New fields added to TaxVatNumTable: <br> • Created by <br> • Created date and time <br> • Modified by <br> • Modified date and time <br> • Reviewed date
+18509		| Accounts receivable	| AR Utilities	| Ability to obtain part of a field in the remittance file, by using **Field format** on below fields: <br> • Customer reference <br> • Tax invoice <br> [User guide](Setup/ACCOUNTS-RECEIVABLE/Remittance-format.md#field-format) <br>  <br> ![Field format](Images/ReleaseNotes_20240913_3.png "Field format") <br> ![Field format](Images/ReleaseNotes_20240913_4.png "Field format")
+19087		| Various	| Azure connections	| Azure dll moved to new model called DXCConnections
+19023		| Accounts payable	| Sundry method of payment	| Allow Generic electronic Export formats where Sundry method of payment is set to Yes.
+
+
 
 <ins>Bug fixes</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
 18984		| Organisation administration	| ABN validation review	| When **Reviewed** changes from _Yes_ to _No_ by an update to the ABN record, the **Reviewed by** used to still store the previously reviewed by user which is not valid since the record is not reviewed anymore.
-19014		| Cash and bank management | Web API import & DXC Encryption	| Added a check on warning for files imported via WebAPI . If file is empty, a warning will be added to the batch job logs and no files will be added for further process of mapping from file to BankStatement tables. <br> In addition to this, a check and warning has been added in the DXC Encryption model code. If an empty is received for decryption, a warning will be displayed to the user to indicate file stream is empty.
-
-# Current version
-
-### Release 10.0.38.20240823
-
-DXC Finance Utilities 10.0.38 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
-Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
-Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
-
-#### Build 10.0.38.202408232
-Release date: 28 August 2024 <br>
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-18893		| Cash and bank management	| Bank statement import via Web API with decryption	| Fix for error 'This stream does not support seek operations. Batch task failed: NotSupportedException'
-
-#### Build 10.0.38.202408231
-Release date: 23 August 2024 <br>
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-18858		| Cash and bank management	| Bank statement import with decryption	| Error decrypting ER bank statement formats
+19014		| Cash and bank management | Web API import & DXC Encryption	| Added a check on warning for files imported via WebAPI . If file is empty, a warning will be added to the batch job logs and no files will be added for further process of mapping from file to BankStatement tables. <br> In addition to this, a check and warning has been added in the DXC Encryption model code. If an empty is received for decryption, a warning will be displayed to the user to indicate file stream is empty. <br> New DXC Encryption version 10.0.41.202409161
+18802		| Various	| Azure connections	| Unable to find manual secret value
 
 
 # Deprecated features
@@ -138,6 +122,26 @@ This section describes the features that have been removed, or planned to be rem
 # Previous version(s)
 
 Approximately one year of previous versions are included below.
+
+### Release 10.0.38.20240823
+
+#### Build 10.0.38.202408232
+Release date: 28 August 2024 <br>
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+18893		| Cash and bank management	| Bank statement import via Web API with decryption	| Fix for error 'This stream does not support seek operations. Batch task failed: NotSupportedException'
+
+#### Build 10.0.38.202408231
+Release date: 23 August 2024 <br>
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+18858		| Cash and bank management	| Bank statement import with decryption	| Error decrypting ER bank statement formats
 
 ### Release 10.0.38.20240807
 

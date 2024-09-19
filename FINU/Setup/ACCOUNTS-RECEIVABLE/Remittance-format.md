@@ -3,9 +3,9 @@
 
 title: DXC Finance Utilities - AR Utilities
 description: Customer remittance format setup
-author: jdutoit2
+author: Monica du Toit
 manager: Kym Parker
-ms.date: 2024-04-15
+ms.date: 2024-09-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  DXCARRemittanceFormat, SAB_FinUtilParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 # ms.custom: : ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -67,6 +67,29 @@ When **Custom format** is set to _Yes_: |
 **Record identifier position**  | Where the file is **Structured**, specify the Record identifier position.
 **Date format**                 | Select the applicable date format.
 **Decimal adjustment**          | This specifies the Decimal adjustment required for the Remittance’s **Amount**. For example remittance amount is 20055, but last two charactes are decimal, thus amount to be mapped to D365 Bank statement is 200.55 <br> For this example enter 2 in Decimal adjustment field.
+
+##### Field format
+The ability to set field format is available for the following fields:
+- Customer reference
+- Tax invoice
+
+Select the **Field format** for the applicable field and set one of the following options:
+- **No format** - The remittance field will be used as-is.
+- **Fixed field position** - Set **Start position** and **Length**.
+- **Delimited field position** - Set **Delimiter** (default is space) and **Field position**.
+- **Custom format** - Ability to use a [regex](https://regex101.com/) format
+
+The **Example** and **Value** field is automatically updated based on above selection.
+The user can also paste/type their own example into Example to view the resulted Value from their setup.
+
+Example result for each option:
+
+Option	  	| Setup             | Example <br> Bank statement field's original data	  | Value
+:--       	|:--                |:--                                                  |:--
+**No format**  |                 | xxUS-001xx                      | xxUS-001xx
+**Fixed field position**        | Start position: 2 <br> Length: 6  | xxUS-001xx        | US-001
+**Delimited field position**    | Delimiter:  <br> Field position: 0   | US-001 extra description  | US-001
+**Custom format**               | `\*(.+)\*`                         | \**US-001\**         | US-001
 
 
 ### Mapping

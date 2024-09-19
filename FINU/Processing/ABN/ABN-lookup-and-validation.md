@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Processing - ABN lookup and validation
-author: jdutoit2
+author: Monica du Toit
 manager: Kym Parker
-ms.date: 2024-03-19
+ms.date: 2024-09-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  DXC_ABNValidationProviderTypeTable
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 # ms.custom: : ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature 
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: Monica du Toit
 ms.search.validFrom:: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -46,12 +46,12 @@ The following setup are [prerequisites](../../Setup/ABN/ABN-lookup-and-validatio
 ## Vendors
 Go to **Accounts payable > Vendors > All vendors** and select the applicable Vendor. Choose either of the following: <br>
 - On the Action Pane, on the **Vendor** tab, in the **Registration** group, select **ABN lookup**. The vendor’s Name will be populated in the Search box. Add any advanced filters and select the **Search** button. In the Search results, select the applicable line and press OK, this will create (if required) and populate the **Tax exempt number** on the currently selected Vendor.
-- On the **Invoice and delivery** FastTab, select or view details on the **Tax exempt number** field. Select the **ABN lookup** button. Enter the company’s name in the Search box. Add any advanced filters and select the **Search** button. In the Search results, select the applicable line and press OK, this will create the Tax exempt number, but user still needs to assign it to the vendor in the **Invoice and delivery** FastTab.
+- On the **Invoice and delivery** FastTab, select or view details on the **Tax exempt number** field. Select the **ABN lookup** button. Enter the company’s name in the Search box. Add any advanced filters and select the **Search** button. In the Search results, select the applicable line and press OK, this will create the Tax exempt number, but user still needs to assign it to the vendor in the **Invoice and delivery** FastTab. If using ABN to search, turn on **Search by ABN**.  
 
 ## Customers
 Go to **Accounts receivable > Customers > All customers** and select the applicable Customer. Choose either of the following: <br>
 - On the Action Pane, on the **Customer** tab, in the **Registration** group, select **ABN lookup**. The customer’s Name will be populated in the Search box. Add any advanced filters and select the **Search** button. In the Search results, select the applicable line and press OK, this will create (if required) and populate the **Tax exempt number** on the currently selected Customer.
-- On the **Invoice and delivery** FastTab, select or view details on the **Tax exempt number** field. Select the **ABN lookup** button. Enter the company’s name in the Search box. Add any advanced filters and select the **Search** button. In the Search results, select the applicable line and press OK, this will create the Tax exempt number, but user still needs to assign it to the customer in the **Invoice and delivery** FastTab.
+- On the **Invoice and delivery** FastTab, select or view details on the **Tax exempt number** field. Select the **ABN lookup** button. Enter the company’s name in the Search box. Add any advanced filters and select the **Search** button. In the Search results, select the applicable line and press OK, this will create the Tax exempt number, but user still needs to assign it to the customer in the **Invoice and delivery** FastTab. If using ABN to search, turn on **Search by ABN**.  
 
 
 # ABN status / validation
@@ -63,7 +63,7 @@ The following **ABN Status** information will be displayed for the selected cust
 - **Trading name**
 - **State**
 - **Post code**
-- **GST from** - Populated where the ABN is registered for GST
+- **GST from** - From date for current GST registration status. Where the GST registration has been cancelled, the GST from date will be obtained from historical details.
 - **GST to** - Populated where the ABN is registered for GST
 - **GST registered** - Set to _Yes_ where 'GST to' date is in the future
 
