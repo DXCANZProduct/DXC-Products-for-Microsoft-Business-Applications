@@ -3,9 +3,9 @@
 
 title: Finance Utilities
 description: Cash and bank management setup - Bank reconciliation matching rules
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-03-18
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-09-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  BankReconciliationMatchRule
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -107,6 +107,7 @@ More detail for ** fields are discussed [here](#customer-payment-and-settle-of-i
 **Settle transaction** **	| Enabled when **Offset account type** is set to _Customer_. When creating the customer payment journal for the customer, should it attempt to settle the invoice. 
 **Settle transaction bank statement field** **	| Enabled when **Offset account type** is set to _Customer_. Option to map a field from the bank statement for the transaction (D365 invoice) to be settled in the Customer receipt journal line. <br> If **Offset account**, **Offset account bank statement field** and **Offset account reference bank statement field** are blank, this field will be used to find the D365 customer account to create the Customer payment journal line.
 **Auto-post customer payment journal** **	| Enabled when **Offset account type** is set to _Customer_. Indicates if the created (and settled if applicable) customer receipt journal should automatically be posted. If automatically posted, the newly created bank transaction(s) will also automatically be matched to the applicable bank statement lines. 
+**Auto-post and transfer customer payment journal** **	| Enabled when **Offset account type** is set to _Customer_. Indicates if the created (and settled if applicable) customer receipt journal should automatically be posted. If any errors found (example stopped customer), the error lines will be moved to a new journal. Both customer payment journals' **Document** will refer to the Bank reconciliation. If automatically posted, the newly created bank transaction(s) will also automatically be matched to the applicable bank statement lines. 
 | **GST Group**   |  Populates the field GST group in the Bank Statement Line Details form when a **Mark as new** line is created.   |
 | **Item GST Group**    |  Populates the field Item GST group in the Bank Statement Line Details form when a **Mark as new** line is created   |
 | **Description mask**    | Ability to set a Description mask for Mark new transactions. <br> **Editor** provides the ability to set a combination of static fields and placeholders: <br> • Currency <br> • Description <br> • Amount <br> • Document number <br> • Entry reference <br> • Bank statement transaction code <br> • Reference No. <br> • Related bank account <br> • Name (Trading party) <br> • Bank account <br> • Bank account number <br> • Bank groups <br> Note: If File name mask is not populated, the Bank statement line's Description will be written to new transaction's Description.
