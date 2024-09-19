@@ -56,7 +56,7 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 
-### Build 10.0.40.202409191
+#### Build 10.0.40.202409191
 Release date: 19 September 2024
 
 <ins>New features</ins>
