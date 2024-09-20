@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities setup - Data Entities 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-01-16
+ms.date: 2024-09-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
