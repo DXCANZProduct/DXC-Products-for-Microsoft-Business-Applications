@@ -50,7 +50,7 @@ Cash and bank management > Bank accounts > Bank accounts
 
 **Entity**                          | **Additional Finance utilities fields for standard entity**                
 :--       |:--                   
-**Bank accounts**                   | **EFT parameters:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> •	Extra balance line on EFT (DFUEXTRABALANCELINE) <br> • Include balance line in record count (DFUBALANCELINECOUNT) <br> • Total line order (DFUTOTALLINEORDER) <br> • Use vendor bank name (DFUUSEVENDBANKNAME) <br> • User identification (DFUEFTUSERID) <br> **BPAY:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> **Import financial utilities connection:** <br> • Financial utilities connection (DFUCONNECTIONNAME)
+**Bank accounts**                   | **EFT parameters:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> •	Extra balance line on EFT (DFUEXTRABALANCELINE) <br> • Include balance line in record count (DFUBALANCELINECOUNT) <br> • Total line order (DFUTOTALLINEORDER) <br> • Use vendor bank name (DFUUSEVENDBANKNAME) <br> • User identification (DFUEFTUSERID) <br> **Import financial utilities connection:** <br> • Financial utilities connection (DFUCONNECTIONNAME)
 
 ### Reconciliation matching rules
 Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules
