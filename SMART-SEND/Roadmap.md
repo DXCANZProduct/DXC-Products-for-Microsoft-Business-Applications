@@ -45,7 +45,6 @@ Coming Soon
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-18765	    | Field Label states "Blog Container Name" instead of "Blob Container Name"| Corrected spelling for Blob Container field.
-18979	    | Error "Unable to update metadata of the uploaded file" | When the Packing List is issued for a shipment "/n" was passed as part of the address string, which signifies a new line.  This string is considered invalid by the blob storage client and has been removed from the metadata being passed to the blob storage to prevent errors.
+
 
 <ins>New features</ins>
