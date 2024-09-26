@@ -45,6 +45,6 @@ Release			| ETA
 ## Next release
 
 ### Customer module
-- More functionality around 'Skip error lines'
+- Additional functionality around 'Skip error lines'
 
 
