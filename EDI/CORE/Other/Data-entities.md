@@ -23,7 +23,7 @@ ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDI
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
 
