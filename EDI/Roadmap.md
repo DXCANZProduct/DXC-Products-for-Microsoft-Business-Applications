@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-05
+ms.date: 2024-09-26
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,5 +44,7 @@ Release			| ETA
 
 ## Next release
 
+### Customer module
+- More functionality around 'Skip error lines'
 
 
