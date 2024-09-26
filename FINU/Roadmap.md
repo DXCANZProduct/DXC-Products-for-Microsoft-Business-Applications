@@ -39,7 +39,7 @@ This page describes the features planned for future releases and planned release
 
 ### Next release
 
-#### Accounts payable and Receivable
+#### Accounts payable and receivable
 - IRD number validation for New Zealand companies
 - ABN / IRD number change history
 
