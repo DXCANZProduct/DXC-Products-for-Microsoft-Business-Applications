@@ -41,7 +41,7 @@ This page describes the features planned for future releases and planned release
 
 #### Accounts payable and Receivable
 - IRD number validation for New Zealand companies
-- ABN change history
+- ABN / IRD number change history
 
 #### Accounts payable
 - Vendor self billing invoices (RCTI)
