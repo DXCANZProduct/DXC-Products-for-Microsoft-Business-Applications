@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-19
+ms.date: 2024-10-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,6 +38,19 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17981 | • Functional: 10.0.37.2024032522 <br> • Build error fixed in: 10.0.37.202405302
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes - 18802	          | Fix available in 10.0.40.202409162
 
+### Microsoft deprecation notice
+
+[Microsoft notice](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#feature-deprecation-effective-october-2024)
+- **Likely to affect**: Companies that doesn't already use **Shared access signature (SAS)** to access their **Azure blob** connections. These connections can be used to import bank statements and/or export electronic reporting format files. <br>
+- **Status**: Rollout for the change by Microsoft begins in **October 2024** in a phased manner. Changes will be backported to **10.0.41 (PU65)** and all later releases. <br> 
+- **Requirement**:
+  1. Ensure Finance Utilities version 10.0.40.202409192 is deployed
+  2. Create Blob servce SAS URL in Azure portal - (User guide)[https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview]
+  3. In **Key vault parameters** create a Secret using the value created in step 2.
+  4. Change all applicable **Azure blob** connections:
+	- Credential type: Key Vault
+ 	- Connection string: Secret setup in step 3
+
 #### Features not yet supported
 
 Feature	| 10.0.41 Feature state
@@ -55,6 +68,16 @@ Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
+
+#### Build 10.0.40.202409192
+Planned release date: 3 October 2024
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+19353		| Various	| Azure connections	| Fix to **Azure blob** connection types using **Shared access signature (SAS)** to access Azure Blob Storage at account level. Error: "No valid combination of account information found" <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities <br> • Organisation administration > Electronic reporting > Electronic reporting export connections. 
+
 
 #### Build 10.0.40.202409191
 Release date: 19 September 2024
