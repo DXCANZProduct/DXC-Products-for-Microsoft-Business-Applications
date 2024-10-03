@@ -43,7 +43,7 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes - 18802	          
 [Microsoft notice](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#feature-deprecation-effective-october-2024)
 - **Likely to affect**: Companies that doesn't already use **Shared access signature (SAS)** to access their **Azure blob** connections. These connections can be used to import bank statements and/or export electronic reporting format files. <br>
 - **Status**: Rollout for the change by Microsoft begins in **October 2024** in a phased manner. Changes will be backported to **10.0.41 (PU65)** and all later releases. <br> 
-- **What do you need to to if affected**:
+- **What do you need to do if affected**:
 1. Ensure Finance Utilities version 10.0.40.202409192 is deployed
 2. Create Blob servce SAS URL in Azure portal - [User guide](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)
 3. In **Key vault parameters** create a Secret using the value created in step 2.
