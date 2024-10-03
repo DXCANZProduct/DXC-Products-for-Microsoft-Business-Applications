@@ -44,7 +44,7 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes - 18802	          
 - **Likely to affect**: Companies that uses **Database** credential type for their **Azure blob** connections. These connections can be used to import bank statements and/or export electronic reporting format files. <br>
 - **Status**: Rollout for the change by Microsoft begins in **October 2024** in a phased manner. Changes will be backported to **10.0.41 (PU65)** and all later releases. <br> 
 - **What do you need to do if affected**:
-1. Ensure Finance Utilities version 10.0.40.202409192 is deployed if decide to use **Blob Service SAS URL** in Key vault. If using **Connection string** Key vaults, older versions should be fine.
+1. Ensure Finance Utilities version 10.0.40.202409192 is deployed if decide to use **Blob Service SAS URL** in Key vault. If using **Connection string** Key vaults, older Finance Utilities versions should be fine.
 2. Create Blob servce SAS URL / Connection string in Azure portal - [User guide](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)
 3. In **Key vault parameters** create a Secret using the value created in step 2.
 4. Change all applicable **Azure blob** connections:
