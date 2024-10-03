@@ -47,9 +47,9 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes - 18802	          
 	- Step 1 - Ensure Finance Utilities version 10.0.40.202409192 is deployed if decide to use **Blob Service SAS URL** in Key vault. If using **Connection string** Key vaults, older Finance Utilities versions should be fine.
 	- Step 2 - Create Blob servce SAS URL / Connection string in Azure portal - [User guide](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)
 	- Step 3 - In **Key vault parameters** create a Secret using the value created in step 2.
-	- Step 4 - Change all applicable **Azure blob** connections:
-			- Credential type: Key Vault
- 			- Connection string: Secret setup in step 3
+	- Step 4 - Change all applicable **Azure blob** connections: <br> 
+		• Credential type: Key Vault <br>
+ 		• Connection string: Secret setup in step 3
 
 #### Features not yet supported
 
