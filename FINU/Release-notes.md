@@ -47,9 +47,9 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes - 18802	          
 	- Step 1 - Ensure Finance Utilities version 10.0.40.202409192 is deployed if decide to use **Blob Service SAS URL** in Key vault. If using **Connection string** Key vaults, older Finance Utilities versions should be fine.
 	- Step 2 - Create Blob servce SAS URL / Connection string in Azure portal - [User guide](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)
 	- Step 3 - In **Key vault parameters** create a Secret using the value created in step 2.
-	- Step 4 - Change all applicable **Azure blob** connections: <br>
-		- Credential type: Key Vault
- 		- Connection string: Secret setup in step 3
+	- Step 4 - Change all applicable **Azure blob** connections:
+			- Credential type: Key Vault
+ 			- Connection string: Secret setup in step 3
 
 #### Features not yet supported
 
@@ -76,7 +76,7 @@ Release date: 3 October 2024
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-19353		| Various	| Azure connections	| Fix to **Azure blob** connection types using **Shared access signature (SAS)** to access Azure Blob Storage at account level. Fix for error: "**No valid combination of account information found**" <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities <br> • Organisation administration > Electronic reporting > Electronic reporting export connections. 
+19353		| Various	| Azure connections	| Fix to **Azure blob** connection types using **Shared access signature (SAS)** to access Azure Blob Storage at account level. <br> Fix for error: "**No valid combination of account information found**" <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities <br> • Organisation administration > Electronic reporting > Electronic reporting export connections. 
 
 
 #### Build 10.0.40.202409191
