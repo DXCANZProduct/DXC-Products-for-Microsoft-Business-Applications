@@ -45,7 +45,7 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes - 18802	          
 - **Status**: Rollout for the change by Microsoft begins in **October 2024** in a phased manner. Changes will be backported to **10.0.41 (PU65)** and all later releases. <br> 
 - **Requirement**:
   1. Ensure Finance Utilities version 10.0.40.202409192 is deployed
-  2. Create Blob servce SAS URL in Azure portal - (User guide)[https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview]
+  2. Create Blob servce SAS URL in Azure portal - [User guide](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)
   3. In **Key vault parameters** create a Secret using the value created in step 2.
   4. Change all applicable **Azure blob** connections:
 	- Credential type: Key Vault
