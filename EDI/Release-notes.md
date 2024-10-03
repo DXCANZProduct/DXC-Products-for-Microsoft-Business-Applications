@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-05
+ms.date: 2024-10-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,6 +39,18 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
 Product version: 10.0.40 <br> App build: 10.0.1935.92	  | • No functional issues <br> • Build error fixed in 17978 | • Functional: 10.0.37.202405023 <br> • Build error fixed in: 10.0.37.202405302
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202405302
+
+### Microsoft deprecation notice
+
+[Microsoft notice](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#feature-deprecation-effective-october-2024)
+- **Likely to affect**: Companies that uses **Database** credential type for their **Azure blob** connections. **Key Vault** credential type is not affected. These connections can be found at 'EDI > Setup > Connection setup > Azure sites' <br>
+- **Status**: Rollout for the change by Microsoft begins in **October 2024** in a phased manner. Changes will be backported to **10.0.41 (PU65)** and all later releases. <br> 
+- **What do you need to do if affected**: 
+	- Step 1 - Create Connection string in Azure portal
+	- Step 2 - In **Key vault parameters** create a Secret using the value created in step 1.
+	- Step 3 - Change all applicable **Azure blob** connections: <br> 
+		• Credential type: Key Vault <br>
+		• Key vault: Secret setup in step 2
 
 
 # Current version
