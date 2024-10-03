@@ -53,7 +53,7 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes - 18802	          
 	 		• Connection string: Secret setup in step 3
     - If decide to use **Connection string** in Key vault:
 		- Step 1 - If using **Connection string** Key vaults, older Finance Utilities versions should be fine. Not required to upgrade to 10.0.40.202409192
-		- Step 2 - Create Connection string in Azure portal - [User guide](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)
+		- Step 2 - Create Connection string in Azure portal
 		- Step 3 - In **Key vault parameters** create a Secret using the value created in step 2.
 		- Step 4 - Change all applicable **Azure blob** connections: <br> 
 			• Credential type: Key Vault <br>
