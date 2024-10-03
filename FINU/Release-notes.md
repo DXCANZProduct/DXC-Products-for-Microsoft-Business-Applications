@@ -84,7 +84,7 @@ Release date: 3 October 2024
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-19353		| Various	| Azure connections	| Fix to **Azure blob** connection types using **Shared access signature (SAS)** to access Azure Blob Storage at account level. <br> Fix for error: "**No valid combination of account information found**" <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities <br> • Organisation administration > Electronic reporting > Electronic reporting export connections. 
+19353		| Various	| Azure connections	| Fix to **Azure blob** connection types using **Shared access signature (SAS)** to access Azure Blob Storage at account level. <br> Fix for error: "**No valid combination of account information found**" <br> Applicable to versions 10.0.40.202409162 & 10.0.40.202409191 <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities <br> • Organisation administration > Electronic reporting > Electronic reporting export connections. 
 
 
 #### Build 10.0.40.202409191
