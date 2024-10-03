@@ -47,7 +47,7 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes - 18802	          
 	- Step 1 - Ensure Finance Utilities version 10.0.40.202409192 is deployed if decide to use **Blob Service SAS URL** in Key vault. If using **Connection string** Key vaults, older Finance Utilities versions should be fine.
 	- Step 2 - Create Blob servce SAS URL / Connection string in Azure portal - [User guide](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)
 	- Step 3 - In **Key vault parameters** create a Secret using the value created in step 2.
-	- Step 4 - Change all applicable **Azure blob** connections:
+	- Step 4 - Change all applicable **Azure blob** connections: <br>
 		- Credential type: Key Vault
  		- Connection string: Secret setup in step 3
 
@@ -70,13 +70,13 @@ Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or c
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 
 #### Build 10.0.40.202409192
-Planned release date: 3 October 2024
+Release date: 3 October 2024
 
 <ins>Bug fixes</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-19353		| Various	| Azure connections	| Fix to **Azure blob** connection types using **Shared access signature (SAS)** to access Azure Blob Storage at account level. Error: "No valid combination of account information found" <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities <br> • Organisation administration > Electronic reporting > Electronic reporting export connections. 
+19353		| Various	| Azure connections	| Fix to **Azure blob** connection types using **Shared access signature (SAS)** to access Azure Blob Storage at account level. Fix for error: "**No valid combination of account information found**" <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities <br> • Organisation administration > Electronic reporting > Electronic reporting export connections. 
 
 
 #### Build 10.0.40.202409191
