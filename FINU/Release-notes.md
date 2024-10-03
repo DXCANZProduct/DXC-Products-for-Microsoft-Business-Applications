@@ -48,8 +48,8 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes - 18802	          
 2. Create Blob servce SAS URL / Connection string in Azure portal - [User guide](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)
 3. In **Key vault parameters** create a Secret using the value created in step 2.
 4. Change all applicable **Azure blob** connections:
-	- Credential type: Key Vault
- 	- Connection string: Secret setup in step 3
+		- Credential type: Key Vault <br> 
+ 		- Connection string: Secret setup in step 3
 
 #### Features not yet supported
 
