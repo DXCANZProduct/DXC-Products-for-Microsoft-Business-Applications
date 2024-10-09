@@ -4,7 +4,7 @@
 title: Smart Send
 description: Smart Send - Email placeholder
 author: Peter Musumeci
-manager: Kym Parker
+manager: Pontus, Ek
 ms.date: 2021-07-29
 ms.topic: article
 ms.prod: 
@@ -60,12 +60,12 @@ Each of the SmartSend supported documents has a fixed list of tags. These are li
 |  **Commercial Invoice**  | Invoice account: %InvoiceAccount% <br/> Total value: %TotalValue% <br/> Account number: %AccountNum% <br/> Customer name: %CustName% <br/> Invoice address: %InvoiceAddress% <br/> Order number: %OrderNum% <br/> Shipment Id: %ShipmentId% <br/> Shipment date: %ShipmentDateTime% <br/> Delivery name: %DeliveryName% <br/> Delivery address: %DeliveryAddress% |
 |  **Packing List**  | Shipment Id: %ShipmentId% <br/> Number of containers: %NumberOfContainers% <br/> Account number: %AccountNum% <br/> Customer name: %CustName% <br/> Order number: %OrderNum% <br/> Shipment date: %ShipmentDateTime% <br/> Delivery name: %DeliveryName% <br/> Delivery address: %DeliveryAddress% |
 |  **Vendor Invoice**  | Invoice Id: %InvoiceId% <br/> Created Date: %CreatedDate% <br/> Invoice Due Date: %DueDate% <br/> Invoice Date: %InvoiceDate% <br/> Invoice Account Name: %InvoiceAccountName% <br/> Invoice Account: %InvoiceAccount% |
-|  **Company Logo**  | The compnay logo as set in Organisation Administration can be included in the body of the email however you must use Tag `<img src="data:image/bmp;base64,%CompanyLogo%" alt="logo"/>` to render image correctly.<br> Note: the Image itself will not be visible inside D365 only in external Email Program eg Outlook
+|  **Company Logo**  | The company logo as set in Organisation Administration can be included in the body of the email however you must use Tag `<img src="data:image/bmp;base64,%CompanyLogo%" alt="logo"/>` to render image correctly.<br> Note: the Image itself will not be visible inside D365 only in external Email Program eg Outlook
   
 
 ## Dynamic Placeholder Tokens
 
-Smart Send also supports dynamic place holder tags using the table and field names. This is helpful in advanced scenarios where the fixed list tags are not sufficient. It could avoid further development.
+Smart Send also supports dynamic placeholder tags using the table and field names. This is helpful in advanced scenarios where the fixed list tags are not sufficient, and it could avoid further development.
 Enter the query default table name and field name in the format of %TableName.FieldName%. Similarly, display method can also be used with the format %TableName.MethodName#%.
 For example, an account number can be retrieved using %CustTable.AccountNum% and the name can be retrieved using %CustTable.name#%.
 Below are some common documents with their primary table.
