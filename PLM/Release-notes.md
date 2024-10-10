@@ -27,6 +27,15 @@ ms.search.validFrom: 2024-06-26
 ms.dyn365.ops.version: 
 ---
 
+
+# Announcement
+
+DXC is always improving its ISV product line to give our clients the best possible value.  With effect from April 10, 2025, we have chosen to discontinue the option of continuing maintenance for our solution, "Product Lifecycle Management (PLM) for Dynamics 365 Finance and Operations."
+
+The final release of the product will occur on April 10, 2025, which is six months from now. We will give you the source code so you can keep using it, but you will be responsible for maintaining it after that. Alternatively, you can raise a T&M work order with DXC Customer Services if you'd like ongoing support. 
+
+To ensure that you have time to find a replacement product if needed, DXC will continue providing bug fixes for the next 6 months. 
+
 # Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
