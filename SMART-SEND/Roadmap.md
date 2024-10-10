@@ -45,6 +45,10 @@ Coming Soon
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-
+17452	    | Smart Send Architectural enhancements and optimization| Older, ineffective techniques were eliminated as part of the architectural adjustments needed to enable Smart Send to process forms in batch processing.  To simplify and improve the product's overall performance, changes were made to the code structure during this phase.  
 
 <ins>New features</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+17451	    | Batch Process for Smart Send Forms| For Forms that contain a "Smart Send" button you can now enable the ability to process these forms via Batch.
