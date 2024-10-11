@@ -12,7 +12,7 @@ Please select the applicable product from below:
 - [Item creation wizard](DXC-ITEM-CREATION-WIZARD/INTRODUCTION.md)
 - [License manager](LMG/Introduction.md)
 - [Product Lifecycle Management (PLM)](PLM/Introduction.md)
-- [Security Insights for D365 FO](SECURITY-INSIGHTS/Introduction.md) - [demo](https://dynamics.dxc.technology/microsoft-dynamics-365/security-insights-for-microsoft-dynamic-365-fo-solution-to-optimise-your-user-licensing)
+- [Security Insights for D365 FO](SECURITY-INSIGHTS/Introduction.md) - [demo](https://dynamics.dxc.technology/microsoft-dynamics-365/security-insights-for-microsoft-dynamics-365-fo-solution-to-optimise-your-user-licensing)
 - [Smart Business Form Email Manager (Smart Send)](SMART-SEND/Overview.md)
 - [Solutions for DocuSign and Dynamics 365](DOCUSIGN/INTRODUCTION.md)
 
