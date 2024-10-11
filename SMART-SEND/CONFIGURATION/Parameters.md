@@ -33,12 +33,12 @@ The parameters for Smart Send are contained within the standard Dynamics 365 ema
 
 ## Overview
 
-On the Smart Send tab of the Email parameters form you can configure the type of business form or report which should be sent using the Smart Send functionality. 
+On the Smart Send tab of the Email parameters form you can configure the type of business form or report which should be sent using the Smart Send functionality.
 
 |  **Field**  | **Description** | 
 |:---|:---|     
 |  **Default**  | Select a default business form or report per document type. When the Smart Send button is clicked on each of the document forms, the default business form or report is used. If none are selected, then the system default will be used. |   
-|  **Report**  | Select from a list of business forms or report types that are supported for Smart Send. <br/> * Customer account statement <br/> * Payment advice (Vendor payment advice) <br/> * Purchase order <br/> * Sales invoice <br/> * Free text invoice <br/> * Sales quotation <br/> * Project invoice <br/> * Sales order confirmation <br/> * Packing slip <br/> * Sales agreement confirmation <br/> * Project quotation <br/> * Collection letter <br/> * Customer payment advice <br/> * Request for quotation <br/> * Container contents <br/> * Bill of lading <br/> * Sales return <br/> * Transfer overview. |  
+|  **Report**  | Select from a list of business forms or report types that are supported for Smart Send, Below are supported out of the box. <br/> * Customer account statement <br/> * Payment advice (Vendor payment advice) <br/> * Purchase order <br/> * Sales invoice <br/> * Free text invoice <br/> * Sales quotation <br/> * Project invoice <br/> * Sales order confirmation <br/> * Packing slip <br/> * Sales agreement confirmation <br/> * Project quotation <br/> * Collection letter <br/> * Customer payment advice <br/> * Request for quotation <br/> * Container contents <br/> * Bill of lading <br/> * Sales return <br/> * Transfer overview. |  
 |  **Report format**  | Select the report name available in the system. |  
 |  **Description**  | Basic description of the business form. |  
 |  **Email ID**  | Email templates to use when emailing the business form. |  
