@@ -34,21 +34,23 @@ This page describes the features planned for future releases.
 
 ## Roadmap
 
-Coming Soon
+Coming Soon, currently in private preview 
 
 
 
 
-#### Build 10.0.41.2024xxxxx
+#### Build 10.0.40.202410021
 
 <ins>Bug fixes</ins>
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-17452	    | Smart Send Architectural enhancements and optimization| Older, ineffective techniques were eliminated as part of the architectural adjustments needed to enable Smart Send to process forms in batch processing.  To simplify and improve the product's overall performance, changes were made to the code structure during this phase.  
+17452	    | Smart Send Architectural enhancements and optimization| As part of the architectural changes required to enable Smart Send to process forms in batch processing, outdated and inefficient methods were removed.  During this phase, the code structure was changed to simplify and enhance the overall performance of the product. Old, outdated methods were removed, and multiple-form outputs were consolidated to use a common structure. streamlining the procedure for upcoming upgrades and/or extensions 
 
 <ins>New features</ins>
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-17451	    | Batch Process for Smart Send Forms| For Forms that contain a "Smart Send" button you can now enable the ability to process these forms via Batch.
+17451	    | Batch Process for Smart Send Forms| For Forms that contain a "Smart Send" button you can now enable the ability to process these forms via Batch. This feature can be controlled from the Email parameters screen.
+
+ 
