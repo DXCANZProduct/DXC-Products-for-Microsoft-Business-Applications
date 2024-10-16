@@ -185,7 +185,7 @@ The following fields are populated in the created customer payment journal:
      - **Date** - Populated from Bank statement line's Booking date
      - **Account** - Determined by offset details in rule
      - **Invoice** - If rule is set to settle and invoice is provided in bank statement
-     - **Description** - Populated from Bank statement line's Description
+     - **Description** - Populated from Reconciliation matching rule's Description mask. If Description mask is blank, it is populated with only the Bank statement line's Description
      - **Credit** - Bank statement line's amount
      - **Offset account** - Bank statement's Bank account
      - **Method of payment** - Set in Financial utilities parameters
