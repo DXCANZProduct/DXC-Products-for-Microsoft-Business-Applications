@@ -83,7 +83,7 @@ With additional new Azure connection option **Azure file share**, we've added a 
 Number	| Name		 | Description
 :--	|:--		  	|:--
 18222	| Connection type - Azure file share | New option to use **Azure file share** in Connection type **Azure sites**. <br>  ![Azure file share](RELEASE-NOTES-IMAGES/20240830_3.png "Azure file share")
-18224	| DXC connections	| Azure dll moved to new model called DXCConnections.
+18224	| DXC connections	| Azure dll moved to new model called DXCConnections. <br> DXC Connections release 10.0.40.202409192
 
 
 **Customer module**	
@@ -331,7 +331,7 @@ Number	| Name		 | Description
 
 **Freight forwarder landed cost module**
 
-Number	| Name		 | Description
+Number	| Name			| Description
 :--	|:--		  	|:--	
 16149	| Voyage creator	| When the purchase order line contained a different unit to the product's inventory unit and the voyage creator line used the same unit as the purchase order line, the voyage quantity was incorrectly multiplied by the unit conversion. <br> To support this fix, we implemented 16343 **Source line search strategy** called **Line number document** for voyage creator to find the applicable source line's unit for correct unit conversion. <br> Thus if your purchase order line's unit differ to inventory unit, you need to use this new source line search strategy option.
 10637	| Voyage creator <br> Voyage tracking	| Voyages button enabled prior to processing of record
