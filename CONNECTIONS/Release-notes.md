@@ -60,7 +60,6 @@ Number	| Name			| Description
 
 
 # Previous Version(s)
-Approximately one year of previous versions are included below.
 
 ### Release 10.0.40.20240919
 
