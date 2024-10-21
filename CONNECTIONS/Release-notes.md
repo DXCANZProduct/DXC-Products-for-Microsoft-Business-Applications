@@ -30,10 +30,15 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This document describes the features that are either new or changed in the release version mentioned.
 
+Model is used in below products:
+- Finance Utilities
+- Smart Business Form Email Manager (Smart Send)
+- Electronic Data Interchange (EDI)
+
 # Current version
 
 
-### Release 10.0.40.20240919
+### Release 10.0.40.20241021
 
 DXC License Manager 10.0.40 runs on the following Microsoft releases
 
@@ -43,18 +48,29 @@ Microsoft Dynamics 365 application | 10.0.40 | [What’s new or changed in Dynam
 Microsoft Dynamics 365 application | 10.0.41 | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) 
 
 
-#### Build 10.0.40.202409192
+#### Build 10.0.40.202410211
+Release date: 21 October 2024
 
 <ins>New features</ins>
 
-Number | Functionality                | Description                                                                                                                             
-:----- | :--------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- 
-
+Number	| Name			| Description
+:--	    |:--		  	|:--	
+19654   | uploadFile  | 
 
 
 
 # Previous Version(s)
-
-
 Approximately one year of previous versions are included below.
+
+### Release 10.0.40.20240919
+
+#### Build 10.0.40.202409192
+Release date: 19 September 2024
+
+Moved Azure dll to new model called **DXC Connections**. 
+
+To be used in below products:
+- Finance Utilities
+- Smart Business Form Email Manager (Smart Send)
+- Electronic Data Interchange (EDI)
 
