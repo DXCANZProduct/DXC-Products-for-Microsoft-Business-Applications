@@ -55,7 +55,7 @@ Release date: 21 October 2024
 
 Number	| Name			| Description
 :--	    |:--		  	|:--	
-19654   | uploadFile  | 
+19654   | uploadFile  | Improved the uploadFile method to update metadata of file during upload instead of sending metadata as a separate request.
 
 
 
