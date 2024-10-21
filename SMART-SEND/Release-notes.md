@@ -46,7 +46,7 @@ Product version: 10.0.42 <br> App build: TBA	  | Not tested | Not tested
 
 # Current version
 
-### Release 10.0.40.20240912
+### Release 10.0.40.2024091
 
 DXC Smart Business Form Email Manager 10.0.40 runs on the following Microsoft releases
 
@@ -58,14 +58,13 @@ Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 
 
-#### Build 10.0.40.202409112 
+#### Build 10.0.40.202409113 
 
 <ins>Bug fixes</ins>
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-18765	    | Field Label states "Blog Container Name" instead of "Blob Container Name"| Corrected spelling for Blob Container field.
-18979	    | Error "Unable to update metadata of the uploaded file" | When the Packing List is issued for a shipment "/n" was passed as part of the address string in the standard solution, this signifies a new line in FinOps code.  This string is considered invalid by the blob storage client and has been replaced with a blank string before  being passed to the blob storage.  Smart Send does not update the values of addresses or other string values that are added in the token map, but just receives and translates them to the metadata of the blob.  An additional method has been added that will look at removing these escape sequences before updating the metadata.
+19477	    | Server failed to authenticate the request. Please refer to the information in the www-authenticate header| Authentication credentials are not included in the Default endpoint connection string for blob storage, and when metadata is passed for update, Azure Blob storage throws an error which is then received by smart send and thrown to user. Unlike S.A.S strings that include the authentication credentials, so metadata update completes successfully when using S.A.S. Improvements were made to the DXC Connections model to update the metadata of the file during upload instead of sending metadata as a separate request.  <br> DXC Connections release information - [Release notes](../CONNECTIONS/Release-notes.md)
 
 ## Feature management
 From 10.0.34.20231026 Smart Send can be enabled via Feature management
@@ -76,6 +75,14 @@ Enable the following feature in D365 Feature management:
 If the above feature is not visible, press **Check for updates** to refresh the feature management list.
 
 # Previous version(s)
+#### Build 10.0.40.20240912 
+### Release 10.0.40.2024091
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+18765	    | Field Label states "Blog Container Name" instead of "Blob Container Name"| Corrected spelling for Blob Container field.
+18979	    | Error "Unable to update metadata of the uploaded file" | When the Packing List is issued for a shipment "/n" was passed as part of the address string in the standard solution, this signifies a new line in FinOps code.  This string is considered invalid by the blob storage client and has been replaced with a blank string before  being passed to the blob storage.  Smart Send does not update the values of addresses or other string values that are added in the token map, but just receives and translates them to the metadata of the blob.  An additional method has been added that will look at removing these escape sequences before updating the metadata.
+
 
 #### Build 10.0.40.202409111 
 ### Release 10.0.40.20240911
@@ -87,7 +94,7 @@ Number	  | Name	          | Description
 18226     | Free Text Invoices are not saved to Azure blob storage when issued in multiple | Previously when you selected more than 1 free text invoice or a combination of free text and customer tax Invoices only the first Free Text Invoice was sent to blob storage
 18275    |Tax Journal Screen resets when sending records across screens | Issue resolved when multiple records are selected and attempted to be sent via Smart Send
 17425  |Update Table Groups | Update Table Groups in line with proposed PPAC copy environment functionality to prevent loss of key data
-18916|Smart Send "Test Azure blob storage connection" button is not validating correctly| Changes to how FinOps validated blob storage connections have been made as a result of an invalid dll file bundled by Microsoft causing the failure. This change is designed to prevent future issues and reduce dependency
+18916|Smart Send "Test Azure blob storage connection" button is not validating correctly| Changes to how FinOps validated blob storage connections have been made as a result of an invalid dll file bundled by Microsoft causing the failure. As a result of this, the Azure dll was moved to a new model called DXCConnections.  <br> DXC Connections release information - [Release notes](../CONNECTIONS/Release-notes.md)
 18842|Azure blob storage setup  mismatches|When changing between Blob connection string or Key Vault storage the Blob connection string would still be displayed instead of looking for the key vault type. Also not allowing blob storage values to be blank when Storage options are set to none 
 18792| Request for quotation smart send button  will print to screen| When using the smart send button for Request for quotation this would previously print to screen 
 18983|Remove Catch statement| When saving files in blob storage a message would display "See event viewer in LCS for more detail" when a non-Smart Send error occurred. This has been removed in favour of original errors being passed back to Fin ops from blob storage
