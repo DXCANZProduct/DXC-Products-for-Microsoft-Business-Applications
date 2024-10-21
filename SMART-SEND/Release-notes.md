@@ -64,7 +64,7 @@ Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dyn
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-19477	    | Server failed to authenticate the request. Please refer to the information in the www-authenticate header| Authentication credentials are not included in the Default endpoint connection string for blob storage, and when metadata is passed for update, Azure Blob storage throws an error which is then received by smart send and thrown to user. Unlike S.A.S strings that include the authentication credentials, so metadata update completes successfully when using S.A.S. Improvements were made to the DXC Connections model to update the metadata of the file during upload instead of sending metadata as a separate request.  <br> DXC Connections release information - [Release notes](../CONNECTIONS/Release-notes.md)
+19477	    | Error "Server failed to authenticate the request. Please refer to the information in the www-authenticate header" only when using a Blob connection string | Authentication credentials are not included in the Default endpoint connection string for blob storage, and when metadata is passed for an update, Azure Blob storage throws an error which is then received by smart send and thrown to the user. When using  S.A.S strings the authentication credentials are included so metadata update completes successfully. Improvements were made to the DXC Connections model to update the metadata of the file during upload instead of sending metadata as a separate request.  <br> DXC Connections release information - [Release notes](../CONNECTIONS/Release-notes.md)
 
 ## Feature management
 From 10.0.34.20231026 Smart Send can be enabled via Feature management
