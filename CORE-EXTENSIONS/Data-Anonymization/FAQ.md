@@ -34,7 +34,7 @@ If you attempt to enter an invalid web address into the PROD URL Field you will 
 
 ![URL](../IMAGES/URL.png)
 
-To resolve this you must enter a valid Dynamics Finance and operation URL to proceed 
+To resolve this you must enter a valid Dynamics Finance and operation URL that is not a production or the current environment to proceed.
 
 ### How is the fake Data Generated in Data Anonymisation?
 

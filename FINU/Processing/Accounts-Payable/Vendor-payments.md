@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Accounts payable processing - Vendor Payments 
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-03-20
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-09-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  LedgerJournalTable5
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -63,10 +63,17 @@ The Payment advice report can be used in conjunction with sending via Email to t
 
 # Payments report
 When creating a **Vendor payment journal**, it can be useful to print the **Payments** report to reconcile vendor bank details, before generating the EFT file.
-Finance utilities has added the following fields on the right for each Vendor payment line:
-- Vendor bank name
-- Vendor BSB
-- Vendor account
+Finance utilities has added the following fields on the right for each Vendor payment line.
+The source of the fields is linked to vendor payment journal line's Method of payment.
+ - **BSB / Account** - Where Method of payment isn't BPAY or Sundry
+ - **BPAY** - Where Method of payment's **BPAY method of payment** is _Yes_
+ - **Sundry** - Where Method of payment's **Sundry method of payment** is _Yes_
+
+Field                            | BSB / Account                    | BPAY                          | Sundry
+:--       	                     |:--     	                        |:--                            |:-- 
+**Vendor Name**                  | Vendor bank account's **Name**  | Vendor bank account's **Name** | Vendor payment journal line's **Sundry vendor name**
+**BSB/Biller code**              | Vendor bank account's **Routing number**  | Vendor bank account's **Biller code**  | Vendor payment journal line's **Sundry BSB\routing number**
+**Account No./Lodgement Ref.**   | Vendor bank account's **Bank account number**  | Vendor bank account's **Lodgement reference** | Vendor payment journal line's **Sundry bank account**
 
 
 

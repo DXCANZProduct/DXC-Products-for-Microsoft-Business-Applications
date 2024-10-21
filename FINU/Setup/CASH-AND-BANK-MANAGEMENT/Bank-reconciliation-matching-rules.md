@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Bank reconciliation matching rules
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-19
+ms.date: 2024-10-17
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -182,10 +182,11 @@ The following fields are populated in the created customer payment journal:
      -  **Document** - Populated from **Reconciliation ID**
      -  **Posted** - Determined by rule's **Auto-post customer payment journal**
  - Line fields
+     - **Date** - Populated from Bank statement line's Booking date
      - **Account** - Determined by offset details in rule
      - **Invoice** - If rule is set to settle and invoice is provided in bank statement
-     - **Description** - Populated from Bank statement's Description
-     - **Credit** - Bank statement's amount
+     - **Description** - Populated from Reconciliation matching rule's Description mask. If Description mask is blank, it is populated with only the Bank statement line's Description
+     - **Credit** - Bank statement line's amount
      - **Offset account** - Bank statement's Bank account
      - **Method of payment** - Set in Financial utilities parameters
 

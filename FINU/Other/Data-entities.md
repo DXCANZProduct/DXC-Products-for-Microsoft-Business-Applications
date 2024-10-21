@@ -3,9 +3,9 @@
 
 title: Finance Utilities
 description: Finance Utilities setup - Data Entities 
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-01-16
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-09-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 # ms.custom: : ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -50,14 +50,14 @@ Cash and bank management > Bank accounts > Bank accounts
 
 **Entity**                          | **Additional Finance utilities fields for standard entity**                
 :--       |:--                   
-**Bank accounts**                   | **EFT parameters:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> •	Extra balance line on EFT (DFUEXTRABALANCELINE) <br> • Include balance line in record count (DFUBALANCELINECOUNT) <br> • Total line order (DFUTOTALLINEORDER) <br> • Use vendor bank name (DFUUSEVENDBANKNAME) <br> • User identification (DFUEFTUSERID) <br> **BPAY:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> **Import financial utilities connection:** <br> • Financial utilities connection (DFUCONNECTIONNAME)
+**Bank accounts**                   | **EFT parameters:** <br> • BPAY batch ID (DFUBPAYBATCHID) <br> •	Extra balance line on EFT (DFUEXTRABALANCELINE) <br> • Include balance line in record count (DFUBALANCELINECOUNT) <br> • Total line order (DFUTOTALLINEORDER) <br> • Use vendor bank name (DFUUSEVENDBANKNAME) <br> • User identification (DFUEFTUSERID) <br> **Import financial utilities connection:** <br> • Financial utilities connection (DFUCONNECTIONNAME)
 
 ### Reconciliation matching rules
 Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules
 
 **Entity**                          | **Additional Finance utilities fields for standard entity**                     
 :--       |:--
-**Reconciliation matching rules**   | **Step 2: Do not mark when there are matching bank transactions:** <br>  •	Group by document number (SYSTEMGENERATEDTYPE = ECL_GroupByDocumentNum) <br> • Include in (DFUBANKRULEACTIVATEINCLUDEIN) <br> **Step 3: Extended financial details:** <br> • Company (DFUCOMPANY) <br> •	Offset company (DFUOFFSETCOMPANY) <br> •	Offset account type (DFUOffsetAccountType) <br> •	Offset account (DFUOFFSETLEDGERDIMENSIONDISPLAYVALUE) <br> • Account's financial dimension values (DFUDEFAULTDIMENSIONDISPLAYVALUE) ** <br> •	Offset account's financial dimension values (DFUOFFSETDEFAULTDIMENSIONDISPLAYVALUE) ** <br> •	Offset account bank statement field (DFUOFFSETACCOUNTFIELDNAME) <br> • Settle transaction (DFUSETTLETRANS) <br> •	Settle transaction bank statement field (DFUSETTLETRANSFIELDNAME) <br> •	Auto-post customer payment journal (DFUCUSTPAYMAUTOPOST) <br> •	GST group (DFUTAXGROUP) <br> •	Item GST group (DFUTAXITEMGROUP) | 
+**Reconciliation matching rules**   | **Step 2: Do not mark when there are matching bank transactions:** <br>  •	Group by document number (SYSTEMGENERATEDTYPE = ECL_GroupByDocumentNum) <br> • Include in (DFUBANKRULEACTIVATEINCLUDEIN) <br> **Step 3: Extended financial details:** <br> • Company (DFUCOMPANY) <br> •	Offset company (DFUOFFSETCOMPANY) <br> •	Offset account type (DFUOffsetAccountType) <br> •	Offset account (DFUOFFSETLEDGERDIMENSIONDISPLAYVALUE) <br> • Account's financial dimension values (DFUDEFAULTDIMENSIONDISPLAYVALUE) ** <br> •	Offset account's financial dimension values (DFUOFFSETDEFAULTDIMENSIONDISPLAYVALUE) ** <br> •	Offset account bank statement field (DFUOFFSETACCOUNTFIELDNAME) <br> • Offset account reference bank statement field (DFUOFFSETACCOUNTREFERENCEFIELDNAME) <br> • Settle transaction (DFUSETTLETRANS) <br> •	Settle transaction bank statement field (DFUSETTLETRANSFIELDNAME) <br> •	Auto-post customer payment journal (DFUCUSTPAYMAUTOPOST) <br> •	Auto-post and transfer customer payment journal (DFUCUSTPAYMAUTOPOSTTRANSFER) <br> •	GST group (DFUTAXGROUP) <br> •	Item GST group (DFUTAXITEMGROUP)  <br> • Description mask (SAB_DESCRIPTIONMASK) | 
 
 > ** Note: Ensure the **Financial dimension configuration for integrating applications** dimension format aligns with dimensions on the bank reconciliation matching rule before importing the **Reconciliation matching rules** entity. General ledger > Chart of accounts > Dimensions > Financial dimension configuration for integrating applications. <br> Define data entity format for **Default dimensions integration** and **Ledger dimensions integration**. <br>
 > See [link](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration) for more detail.
@@ -91,7 +91,7 @@ Accounts payable > Payment setup > Methods of payments
 
 **Entity**                          | **Additional Finance utilities fields for standard entity**                 
 :--       |:--                                       
-**Vendor payment method**           | • Sundry method of payment (DFUSUNDRYPAYM) <br> • Auto payment reference number (DFUAUTOPAYMENTREFNUMBER) <br> • BPAY method of payment (DFUBPAYPAYM) <br> • Payment control > Lodgement reference is mandatory (DFUVALIDATELODGEMENTREFISMANDATORY) <br> • Payment attributes > Lodgement reference (DFUATTRIBUTELODGEMENTREFENABLED)
+**Vendor payment method**           | • Sundry method of payment (DFUSUNDRYPAYM) <br> • Auto payment reference number (DFUAUTOPAYMENTREFNUMBER) <br> • BPAY method of payment (DFUBPAYPAYM) <br> • Generate file per payment line (DFUFILEPERPAYMLINE) <br> • Payment control > Lodgement reference is mandatory (DFUVALIDATELODGEMENTREFISMANDATORY) <br> • Payment attributes > Lodgement reference (DFUATTRIBUTELODGEMENTREFENABLED) <br> • File name mask (DFUFILENAMEMASK)
 
 # Accounts receivable
 Finance utilities includes the following data entities in Accounts receivable:

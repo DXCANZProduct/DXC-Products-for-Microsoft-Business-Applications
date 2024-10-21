@@ -27,6 +27,14 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
+# Announcement
+
+With effect from October 31st, 2025, we have chosen to discontinue the option of continuing maintenance for our solution, "Item Creation (ICW) for Dynamics 365 Finance and Operations."
+
+The final release of the product will occur on October 31st, 2025, which is twelve months from now. We will give you the source code so you can keep using it, but you will be responsible for maintaining it after that. Alternatively, you can raise a T&M work order with DXC Customer Services if you'd like ongoing support. 
+
+To ensure that you have time to find a replacement product if needed, DXC will continue providing bug fixes for the next 6 months. 
+
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 This document describes the features that are either new or changed in the release version mentioned.
 
 # Version compatibility
-The matrix shows the DXC build versions that are compatible with Microsoft versions and builds. <br>
+The matrix shows the DXC build versions compatible with Microsoft versions and builds. <br>
 If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
@@ -41,11 +41,12 @@ Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No				          | 10.0
 Product version: 10.0.39 <br> App build: 10.0.1860.18	  | • No functional issues <br> • Build error fixed in 17017     | • Functional: 10.0.37.202403263 <br> • Build error fixed in: 10.0.36.202310262
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | 10.0.37.202403263
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | 10.0.37.202403263
+Product version: 10.0.42 <br> App build: TBA	  | Not tested | Not tested 
 
 
 # Current version
 
-### Release 10.0.40.20240911
+### Release 10.0.40.20240912
 
 DXC Smart Business Form Email Manager 10.0.40 runs on the following Microsoft releases
 
@@ -57,8 +58,27 @@ Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 
 
-#### Build 10.0.40.202409111 
+#### Build 10.0.40.202409112 
 
+<ins>Bug fixes</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+18765	    | Field Label states "Blog Container Name" instead of "Blob Container Name"| Corrected spelling for Blob Container field.
+18979	    | Error "Unable to update metadata of the uploaded file" | When the Packing List is issued for a shipment "/n" was passed as part of the address string in the standard solution, this signifies a new line in FinOps code.  This string is considered invalid by the blob storage client and has been replaced with a blank string before  being passed to the blob storage.  Smart Send does not update the values of addresses or other string values that are added in the token map, but just receives and translates them to the metadata of the blob.  An additional method has been added that will look at removing these escape sequences before updating the metadata.
+
+## Feature management
+From 10.0.34.20231026 Smart Send can be enabled via Feature management
+Enable the following feature in D365 Feature management:
+
+- DXC Smart Send
+
+If the above feature is not visible, press **Check for updates** to refresh the feature management list.
+
+# Previous version(s)
+
+#### Build 10.0.40.202409111 
+### Release 10.0.40.20240911
 <ins>Bug fixes</ins>
 
 Number	  | Name	          | Description
@@ -71,16 +91,6 @@ Number	  | Name	          | Description
 18842|Azure blob storage setup  mismatches|When changing between Blob connection string or Key Vault storage the Blob connection string would still be displayed instead of looking for the key vault type. Also not allowing blob storage values to be blank when Storage options are set to none 
 18792| Request for quotation smart send button  will print to screen| When using the smart send button for Request for quotation this would previously print to screen 
 18983|Remove Catch statement| When saving files in blob storage a message would display "See event viewer in LCS for more detail" when a non-Smart Send error occurred. This has been removed in favour of original errors being passed back to Fin ops from blob storage
-
-## Feature management
-From 10.0.34.20231026 Smart Send can be enabled via Feature management
-Enable the following feature in D365 Feature management:
-
-- DXC Smart Send
-
-If the above feature is not visible, press **Check for updates** to refresh the feature management list.
-
-# Previous version(s)
 
 
 #### Build 10.0.37.202403263
@@ -301,7 +311,7 @@ Number	  | Functionality	  | Reason
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-5999  | ‘Test azure blob storage connection' not working correctly	| The ‘Test azure blob storage connection’ button on the Email parameters>Smart Send form was not working correctly. It used to display ‘Test connection successful’ in most scenarios of the Blob connection string, even when an incorrect string was passed. This has now been resolved and appropriate errors will be displayed if the string is incorrect.
+5999  | ‘Test Azure blob storage connection' not working correctly	| The ‘Test Azure blob storage connection’ button on the Email parameters>Smart Send form was not working correctly. It used to display ‘Test connection successful’ in most scenarios of the Blob connection string, even when an incorrect string was passed. This has now been resolved and appropriate errors will be displayed if the string is incorrect.
 8785	  | Report title not visible	| The document title for customer invoice was not set and displayed as blank when the report was sent via Smart Send. This has now been fixed.
   
 <ins>Deprecation</ins>
@@ -316,7 +326,7 @@ To align with MS best practice and to protect our IP the following applies to th
 - The license models DXCLicense and Sable37License will only be released as binaries as part of a deployable package. 
 - We will not provide test models for the products, neither as binary or source code. 
 - We will only publish the release as a deployable package. 
-- Model source code can be provided at our discretion. It can be requested for debugging upgrade errors, or if required for extensions.
+We can provide model source code at our discretion. It can be requested to debug upgrade errors or if required for extensions.
 	- If you have been given the source code to our model for extension or debugging purpose, never make modifications directly to our models! 
 	- If you need an extension point, please send an email to ECLANZProductSupport@dxc.com and request it to be implemented. 
 
