@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-10-03
+ms.date: 2024-10-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -76,6 +76,18 @@ Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
+
+#### Build 10.0.40.202409193
+Release date: TBD October 2024
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+19571		| Cash and bank management	| Reconciliation matching rules - offset to same bank | Missing subledger entry when offsetting to same bank account. Issue came from 18692 in release 10.0.38.202408071
+19587		| Cash and bank management	| Reconciliation matching rules - offset to intercompany customer and settling invoice | Issue with finding the intercompany invoice
+19576		| Cash and bank management	| Reconciliation matching rules - offset to intercompany ledger	| Offset ledger not posted in Intercompany legal entity
+
 
 #### Build 10.0.40.202409192
 Release date: 3 October 2024
