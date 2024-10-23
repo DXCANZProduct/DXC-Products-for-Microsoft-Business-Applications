@@ -36,44 +36,41 @@ This document describes the features that are either new or changed in the relea
 
 ### DXC License Manager
 
-#### **Release 10.0.37.202404262**
+#### **Release 10.0.40.202410231**
 
-DXC License Manager 10.0.37.202404262 runs on the following Microsoft releases
+DXC License Manager 10.0.40.202410231 runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                         |
 | :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft Dynamics 365 application | 10.0.37 | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37) |
-| Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38) |
-| Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39) |
+| Microsoft Dynamics 365 application | 10.0.40 | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40) |
+| Microsoft Dynamics 365 application | 10.0.41 | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) |
 
-<b>Build 7.0.7068.67 </b>
+<b>Build 7.0.7279.122 </b>
 
 <ins>New features</ins>
 
-| Number | Functionality                | Description                                                                                                                             |
-| :----- | :--------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
-| 17724  | License manager improvements | Added exception handling improvements to force feature disabler functionality and included telemetry for license manager model versions |
+| Number | Functionality                                           | Description                                                                                                                                  |
+| :----- | :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------- |
+| 18579  | Added resiliency strategies when license server is down | Implemented new mechanisms to detect license validation call failures and graciously handle failure responses when licensing service is down |
 
 ### DXC License
 
-#### **Release 10.0.37.202405231**
+#### **Release 10.0.40.202410231**
 
-DXC License 10.0.37.202404262 runs on the following Microsoft releases
+DXC License 10.0.40.202410231 runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                         |
 | :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft Dynamics 365 application | 10.0.37 | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37) |
-| Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38) |
-| Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39) |
+| Microsoft Dynamics 365 application | 10.0.40 | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40) |
+| Microsoft Dynamics 365 application | 10.0.41 | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) |
 
-<b>Build 7.0.7068.67 </b>
+<b>Build 7.0.7279.122 </b>
 
 <ins>New features</ins>
 
-| Number | Functionality                                | Description                                                |
-| :----- | :------------------------------------------- | :--------------------------------------------------------- |
-| 18024  | Add new feature SecurityInsightsForD365FO    | New feature added to support security insights for D365 FO |
-| 18023  | Remove DXC from Forex Contracts Product Name | DXC keyword removed from Forex Contract product            |
+| Number | Functionality                                                     | Description                                                                                  |
+| :----- | :---------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
+| 19567  | Change Feature Key label for Data Anonymization include (Preview) | (Preview) keyword has been added to the data Anonymization feature key label and description |
 
 ## Microsoft Power Apps
 
@@ -121,6 +118,24 @@ Release date: 17 April 2024
 ## D365 Finance and Operations
 
 ### DXC License Manager
+
+#### **Release 10.0.37.202404262**
+
+DXC License Manager 10.0.37.202404262 runs on the following Microsoft releases
+
+| Base                               | Version | Release                                                                                                                                                         |
+| :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft Dynamics 365 application | 10.0.37 | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37) |
+| Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38) |
+| Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39) |
+
+<b>Build 7.0.7068.67 </b>
+
+<ins>New features</ins>
+
+| Number | Functionality                | Description                                                                                                                             |
+| :----- | :--------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+| 17724  | License manager improvements | Added exception handling improvements to force feature disabler functionality and included telemetry for license manager model versions |
 
 #### **Release 10.0.32.20230731**
 
@@ -213,6 +228,25 @@ DXC License Manager 10.0.32.20230731 runs on the following Microsoft releases
 | 40     | Fixed synchronisation issues when performing license checks | Users experienced info logs stating the product is enabled but not licensed even though the product is licensed. This issues persisted intermittently. |
 
 ### DXC License
+
+#### **Release 10.0.37.202405231**
+
+DXC License 10.0.37.202404262 runs on the following Microsoft releases
+
+| Base                               | Version | Release                                                                                                                                                         |
+| :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft Dynamics 365 application | 10.0.37 | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37) |
+| Microsoft Dynamics 365 application | 10.0.38 | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38) |
+| Microsoft Dynamics 365 application | 10.0.39 | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39) |
+
+<b>Build 7.0.7068.67 </b>
+
+<ins>New features</ins>
+
+| Number | Functionality                                | Description                                                |
+| :----- | :------------------------------------------- | :--------------------------------------------------------- |
+| 18024  | Add new feature SecurityInsightsForD365FO    | New feature added to support security insights for D365 FO |
+| 18023  | Remove DXC from Forex Contracts Product Name | DXC keyword removed from Forex Contract product            |
 
 #### **Release 10.0.37.202404262**
 
