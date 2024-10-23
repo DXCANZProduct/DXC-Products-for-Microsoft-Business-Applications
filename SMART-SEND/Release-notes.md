@@ -46,7 +46,7 @@ Product version: 10.0.42 <br> App build: TBA	  | Not tested | Not tested
 
 # Current version
 
-### Release 10.0.40.2024091
+### Release 10.0.40.20240911
 
 DXC Smart Business Form Email Manager 10.0.40 runs on the following Microsoft releases
 
@@ -75,8 +75,8 @@ Enable the following feature in D365 Feature management:
 If the above feature is not visible, press **Check for updates** to refresh the feature management list.
 
 # Previous version(s)
-#### Build 10.0.40.20240912 
-### Release 10.0.40.2024091
+#### Build 10.0.40.202409112 
+### Release 10.0.40.20240911
 
 Number	  | Name	          | Description
 :--       |:--              |:--
