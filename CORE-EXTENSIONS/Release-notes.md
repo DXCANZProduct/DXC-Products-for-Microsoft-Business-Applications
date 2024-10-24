@@ -32,17 +32,16 @@ This document describes the features that are either new or changed in the relea
 
 # Current version
 
-### Release 10.0.36.20240530
+### Release 10.0.40.20241023
 
-DXC Core extensions 10.0.36 runs on the following Microsoft releases
+DXC Core extensions 10.0.40 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
-Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
-Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41 	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
+
+
 
 ## Feature management
 From 10.0.36.20231130 Core Extensions can be enabled via Feature management.
@@ -50,7 +49,36 @@ Enable the following feature in D365 Feature management:
 
 - Core extensions
 
-If the above feature is not visible, press **Check for updates** to refresh the feature management list.
+Press **Check for updates** to refresh the feature management list if the above feature is not visible.
+
+#### Build 10.0.40.202410231
+
+Release date: 23 October 2024
+
+<ins>Bug fixes</ins>
+
+Number	  	| Name	  | Description
+:--       	|:--              |:--
+18269|Cannot edit a record in Titles (HcmTitle). The record already exists.| A new Data Type of Title ID has been added to generate random unique titles that can be used  to fill this field
+17084|Duplicate record exists when exporting print management settings | New field PRINTMGMTDOCINSTANCENAME has been introduced to the Data Entity to allow for the Title of the conditional setting to be saved
+18737|Refine "edit" capability for Data anonymization Table| When a record(s) exist in the *Data anonymization fields Table*, allow "Run across all companies" and "Company" to be edited and hold the information/selection in the Data anonymization fields Table below (existing logic remains that if "Company" is active, "Run across all companies" cannot be ticked )
+18180|Data anonymization Change of Legal entity| When switching "Run across all companies" and "Company" the legal entity selection in "company" will now clear 
+17915|Data anonymization Support other Languages|Data anonymization Supports Languages other than en-AU, and en-US
+19570|Change Feature Key description for Data Anonymization include (Preview)| Changes were made to the DXC License manager model (see [Release notes](../LMG/Release-notes.md) ) to highlight that Data anonymization is a preview product and still evolving 
+
+
+# Deprecated features
+
+This section describes the features that have been removed, or planned to be removed from a Core Extensions version.
+
+Deprecated in version 10.0.40.20241023
+### Exchange Rate Import - Bank of Canada Version TBC
+Reason for deprecation/removal  - no longer being used as a source of currency exchange rates
+
+### Business Process links
+Reason for deprecation/removal - Business Process links were originally designed for Mavim and SharePoint integration.  Both Mavim and Sharepoint have alternate connection capabilities with D365 Finance and operations and the product is no longer being utilised as part of the Core extension solutions 
+
+# Previous version(s)
 
 #### Build 10.0.36.202405301
 
@@ -76,18 +104,13 @@ Number	  	| Functionality	  | Description
 17473|Header Lines relationship between data anonymization table and fields|If Table fields have been added you can no longer remove the Header table from the list 
 
 
-# Deprecated features
 
-This section describes the features that have been removed, or planned to be removed from a Core Extensions version.
 
-Version TBC - coming late 2024
-### Exchange Rate Import - Bank of Canada Version TBC
-Reason for deprecation/removal  - no longer being used as a source of currency exchange rates
 
-### Business Process links
-Reason for deprecation/removal - Business Process links were originally designed for Mavim and SharePoint integration.  Both Mavim and Sharepoint have alternate connection capabilities with D365 Finance and operations and the product is no longer being utilised as part of the Core extension solutions 
 
-# Previous version(s)
+
+
+
 ### Release 10.0.36.20231130
 
 #### Build 10.0.36.202311301
