@@ -84,9 +84,9 @@ Release date: TBD October 2024
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-19571		| Cash and bank management	| Reconciliation matching rules - offset to same bank | Missing subledger entry when offsetting to same bank account. Issue came from 18692 in release 10.0.38.202408071
 19587		| Cash and bank management	| Reconciliation matching rules - offset to intercompany customer and settling invoice | Issue with finding the intercompany invoice
-19576		| Cash and bank management	| Reconciliation matching rules - offset to intercompany ledger	| Offset ledger not posted in Intercompany legal entity
+19571		| Cash and bank management	| Mark as new - offset to same bank account | Missing subledger entry when offsetting to same bank account. Issue came from 18692 in release 10.0.38.202408071
+19576		| Cash and bank management	| Mark as new - offset to intercompany account	| Offset ledger, customer and vendor not posted in Intercompany legal entity
 
 
 #### Build 10.0.40.202409192
