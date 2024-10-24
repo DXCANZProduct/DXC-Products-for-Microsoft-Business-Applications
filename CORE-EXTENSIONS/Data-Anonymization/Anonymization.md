@@ -26,19 +26,19 @@ ms.search.validFrom: 2023-10-31
 ms.dyn365.ops.version: 10.0.34
 ---
 
-# Data Anonymization (NEW PRODUCT PREVIEW ONLY)
-Please note all features outlined below are currently available under preview only and will be available for general release at a later date
+# Data Anonymization (Feature in Development PREVIEW ONLY)
+Please note all features outlined below are considered to be under  preview  and may be subject to change or further development 
 
 ## Data Anonymization Overview
 
-Data Anonymization is a process that allows for information to be scrambled after a database copy or when restored from production into a sandbox environment.  The process can assist in protecting sensitive or personal information like names, bank accounts, addresses and more from people who should or do not require visibility of sensitive data. The process can be used to protect data and confidentiality but still allow necessary third parties-access to your environment. 
+Data Anonymization is a process that allows for information to be scrambled after a database copy or when restored from production into a sandbox environment.  The process can assist in protecting sensitive or personal information like names, bank accounts, addresses and more from people who should or do not require visibility of sensitive data. The process can be used to protect data and confidentiality but still allow necessary third parties access to your environment. 
 
 ### Enable-Feature
 
-Data Anonymization has a separate Feature Key from Core extensions and from Release 10.0.36.20240530 is licensed as an individual product. Data Anonymization must be enabled via Feature management in addition to the [Core Extensions](../Release-notes.md#feature-management) Feature Key. 
+Data Anonymization has a separate Feature Key from Core extensions and is licensed as an individual product from Release 10.0.36.20240530. It must be enabled via Feature management in addition to the [Core Extensions](../Release-notes.md#feature-management) Feature Key. 
 To Utilise Data Anonymization Enable the following feature in D365 Feature management:
 
-- Data anonymization
+- Core Extensions - Data anonymization
 
 Press **Check for updates** to refresh the feature management list if the above feature is not visible.
 
@@ -58,7 +58,7 @@ Once completed select Save and close the form.
 
 ### Data anonymization profiles
 
-Data anonymization profiles allows users to set up individual combinations of tables and fields with set combinations of values that can be saved and reused, streamlining the anonymization process for future requirements. You must create at least one profile to run the anonymization process.
+Data anonymization profiles allow users to set up individual combinations of tables and fields with set combinations of values that can be saved and reused, streamlining the anonymization process for future requirements. You must create at least one profile to run the anonymization process.
 Navigate to **Organization administration > Setup > Data anonymization > Data anonymization profiles**
 
 The following table outlines the fields available in the Data anonymization profiles form, whether the field is mandatory, and some information about the field. If a field is not required to be selected by the user, it can be left blank, unless it is a mandatory field.
@@ -69,7 +69,7 @@ The following table outlines the fields available in the Data anonymization prof
 |  **Description**  | Yes | Unique description for the anonymization profile that will be used to scramble data values. |  
 |  **Anonymization table**  | Yes | The D365 Table name that contains the sensitive data. |  
 |  **Table Label**  | N/A | This is the label given to the Table that is visible within the User Interface, sometimes referred to as a friendly name.  This field is displayed when  the Anonymization Dropdown is selected and will subsequently  populate when you nominate the requested Table.    |  
-|  **Run across all companies**  | No | When ticked this will apply the scramble values for the selected criteria in all legal entities within the environment.  In some cases where a table is global, this field is required in order to scramble data successfully |  
+|  **Run across all companies**  | No | When ticked this will apply the scramble values for the selected criteria in all legal entities within the environment.  In some cases where a table is global, this field is required to scramble data successfully |  
 |  **Company**  | Yes | Select the legal entity you wish to run the scramble for.  If “Run across all companies” is ticked this field is no longer mandatory and is greyed out. |  
 |  **Data anonymization field**  | Yes | This is the name of the field that contains the data within your selected  table |  
 |  **Field label value**  | Yes | This is the field's common name (a.k.a Friendly name) where the scrambled data is stored.  This is commonly what is seen by users within the user interface |  
