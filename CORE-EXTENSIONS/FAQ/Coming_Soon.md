@@ -36,7 +36,4 @@ This document describes the features that are either pending or planned in upcom
 
 Number	  	| Name	  | Description
 :--       	|:--              |:--
-18269|Cannot edit a record in Titles (HcmTitle). The record already exists.| A new Data Type of Title ID has been added to generate random unique titles that can be used  to fill this field
-17084|Duplicate record exists when exporting print management settings | New field PRINTMGMTDOCINSTANCENAME has been introduced to the Data Entity to allow for the Title of the conditional setting to be saved
-
 
