@@ -49,6 +49,10 @@ Placeholder tokens can contain invalid characters being inserted in a filename a
 
 When sending a document via email, a basic email body can be included thanks to the *Document Report email body* functionality, which was enabled by default starting with version 10.0.39.  This is a different feature from Smart Send that creates dynamic, transaction-based email templates using the Organization email templates. 
 
+**How do I send my confirmation to the contact on my order instead of the main contact on the account ?**
+From the Recipient drop down menu in Email Parameters, simply select "Specific" for the nominated report.  This will use the email address specified on the sales order header or purchase order header.
+
+
 ### Blob Storage Errors
 
 **When sending my file via Smart Send I get "Message: The specified blob already exists."**
