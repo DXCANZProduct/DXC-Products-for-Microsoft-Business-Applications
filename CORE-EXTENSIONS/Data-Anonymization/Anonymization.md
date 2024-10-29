@@ -26,7 +26,7 @@ ms.search.validFrom: 2023-10-31
 ms.dyn365.ops.version: 10.0.34
 ---
 
-# Data Anonymization (Feature in Development PREVIEW ONLY)
+# Data Anonymization (Currently in Preview stage, under development)
 Please note all features outlined below are considered to be under  preview  and may be subject to change or further development 
 
 ## Data Anonymization Overview
@@ -68,9 +68,9 @@ The following table outlines the fields available in the Data anonymization prof
 |  **Name**  | Yes | Name of the anonymization profile |  
 |  **Description**  | Yes | Unique description for the anonymization profile that will be used to scramble data values. |  
 |  **Anonymization table**  | Yes | The D365 Table name that contains the sensitive data. |  
-|  **Table Label**  | N/A | This is the label given to the Table that is visible within the User Interface, sometimes referred to as a friendly name.  This field is displayed when  the Anonymization Dropdown is selected and will subsequently  populate when you nominate the requested Table.    |  
+|  **Table Label**  | N/A | This is the label given to the Table that is visible within the User Interface, sometimes referred to as a friendly name.  This field is displayed when  the Anonymization Dropdown is selected and will populate when you nominate the requested Table.    |  
 |  **Run across all companies**  | No | When ticked this will apply the scramble values for the selected criteria in all legal entities within the environment.  In some cases where a table is global, this field is required to scramble data successfully |  
-|  **Company**  | Yes | Select the legal entity you wish to run the scramble for.  If “Run across all companies” is ticked this field is no longer mandatory and is greyed out. |  
+|  **Company**  | Yes | Select the legal entity for which you wish to run the scramble.  If “Run across all companies” is ticked this field is no longer mandatory and is greyed out. *Note:* When a Global Table is selected,  data in all legal entities can be impacted |  
 |  **Data anonymization field**  | Yes | This is the name of the field that contains the data within your selected  table |  
 |  **Field label value**  | Yes | This is the field's common name (a.k.a Friendly name) where the scrambled data is stored.  This is commonly what is seen by users within the user interface |  
 |  **Field type**  | Auto | This will automatically populate and display the data input type into this field. Eg String, date <br> Fields of Type VarString is a variable length field and does not allow data types other than Random |  
