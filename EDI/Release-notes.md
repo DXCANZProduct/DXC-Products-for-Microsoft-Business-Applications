@@ -41,7 +41,7 @@ Product version: 10.0.40 <br> App build: 10.0.1935.92	  | • No functional issu
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202405302
 
 
-> Note: When using Preview feature **Unified pricing management**, the following error was experienced when processing 'Customer purchase order' staging record with D365 version **10.0.41 (10.0.2015.78)**: <br> "Cannot select a record in Current client sessions (SysClientSessions). SessionId: 0, 0.There is a temporary problem with the connection to the database. Please retry later. <br> % Cannot select a record in Commerce sales orders (RetailSalesTable). Reference: %, APEBXQD3AFKO.There is a temporary problem with the connection to the database. Please retry later." <br> This has been retested on **10.0.42 (10.0.2095.13)** with no errors.
+> Note: When using Preview feature **Unified pricing management**, the following error was experienced when processing 'Customer purchase order' staging record with D365 version **10.0.41 (10.0.2015.78)**: <br> "Cannot select a record in Current client sessions (SysClientSessions). SessionId: 0, 0.There is a temporary problem with the connection to the database. Please retry later. <br> % Cannot select a record in Commerce sales orders (RetailSalesTable). Reference: %, %.There is a temporary problem with the connection to the database. Please retry later." <br> This scenario has been retested on **10.0.42 (10.0.2095.13)** with no errors.
 
 
 
