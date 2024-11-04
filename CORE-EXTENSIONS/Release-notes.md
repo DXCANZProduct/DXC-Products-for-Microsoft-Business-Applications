@@ -64,6 +64,7 @@ Number	  	| Name	  | Description
 18737|Refine "edit" capability for Data anonymization Table| When a record(s) exist in the *Data anonymization fields Table*, allow "Run across all companies" and "Company" to be edited and hold the information/selection in the Data anonymization fields Table below (existing logic remains that if "Company" is active, "Run across all companies" cannot be ticked )
 18180|Data anonymization Change of Legal entity| When switching "Run across all companies" and "Company" the legal entity selection in "company" will now clear 
 17915|Data anonymization Support other Languages|Data anonymization Supports Languages other than en-AU, and en-US
+16616| Add warning or confirmation message before Reset print management is actioned| A new warning message was added when selecting "reset print management" to confirm actions cannot be undone
 19570|Change Feature Key description for Data Anonymization include (Preview)| Changes were made to the DXC License manager model (see [Release notes](../LMG/Release-notes.md) ) to highlight that Data anonymization is a preview product and still evolving 
 
 
