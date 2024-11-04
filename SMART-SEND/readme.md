@@ -52,6 +52,9 @@ When sending a document via email, a basic email body can be included thanks to 
 **How do I send my confirmation to the contact on my order instead of the main contact on the account ?**
 From the Recipient drop down menu in Email Parameters, simply select "Specific" for the nominated report.  This will use the email address specified on the sales order header or purchase order header.
 
+**My company logo stored in FinOps will not render in emails anymore.**
+Many mail clients such as outlook and most webmail services do not support the rendering of Base64 images anymore.  For this reason we recommend moving away from Base64 images and pulling from an online link, such as Blob storage.  An Example could be in the below format
+<img src="https://yourblobstorageaccount.blob.core.windows.net/imagelocation.png" width="200" height="200" alt="logoImage"/>
 
 ### Blob Storage Errors
 
