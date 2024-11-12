@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-12
+ms.date: 2024-11-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,10 +58,47 @@ Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40
 		• Credential type: Key Vault <br>
 		• Key vault: Secret setup in step 2
 
+# Next version
+
+### Release 10.0.40.202411TBD
+Planned release date: 29 November 2024
+
+<ins>New features</ins>
+
+**Core module**	- Applies to all modules
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+
+
+<ins>Bug fixes</ins>
+
+**Core module**	- Applies to all modules	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+18960	| Data entity 'EDI Azure container setup' | Missing field 'Folder name'
+
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+18814	| Customer purchase order - Skip error lines	| Also now includes stopped for sales orders for a specific site not on Rank 0
+19389	| Trading partner	| Fix to label 'Enable store code identification'
+
+
+**Vendor module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+19159	| Vendor purchase order acknowledgement - Unit conversion	| When vendor has UOM mapping assigned that has the D365 unit mapped to a different D365 unit. Error when processing document: "Unit conversion from % to % does not exist". Changed: Where the units are the same, it will now skip the logic to find unit conversion.
+
+
 
 # Current version
 
-Next release is planned for 29 Nov 2024.
+Next release is planned for 29 November 2024.
 
 ### Release 10.0.40.20240905
 
@@ -76,7 +113,6 @@ Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dy
 
 #### Build  10.0.40.202409051
 Release date: 5 September 2024 <br>
-
 
 <ins>Manual actions required</ins>
 
