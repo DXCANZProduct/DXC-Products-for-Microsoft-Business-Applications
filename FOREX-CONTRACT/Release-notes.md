@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-12
+ms.date: 2024-11-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,6 +37,7 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  |  • No functional issues <br> • Build error fixed in 17982 | • Functional: 10.0.37.202404261 <br> • Build error fixed in: 10.0.37.202405301
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.38.202408131
+Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40.202409121
 
 # Current version
 
@@ -48,6 +49,7 @@ Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
+Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 
 
 #### Build 10.0.40.202409121
