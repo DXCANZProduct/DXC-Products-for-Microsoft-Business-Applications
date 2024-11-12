@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-10-31
+ms.date: 2024-11-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,6 +39,7 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
 Product version: 10.0.40 <br> App build: 10.0.1935.92	  | • No functional issues <br> • Build error fixed in 17978 | • Functional: 10.0.37.202405023 <br> • Build error fixed in: 10.0.37.202405302
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202405302
+Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40.202409051
 
 
 > Note: When using Preview feature **Unified pricing management**, the following error was experienced when processing 'Customer purchase order' staging record with D365 version **10.0.41 (10.0.2015.78)**: <br> "Cannot select a record in Current client sessions (SysClientSessions). SessionId: 0, 0.There is a temporary problem with the connection to the database. Please retry later. <br> % Cannot select a record in Commerce sales orders (RetailSalesTable). Reference: %, %.There is a temporary problem with the connection to the database. Please retry later." <br> This scenario has been retested on **10.0.42 (10.0.2095.13)** with no errors.
@@ -70,6 +71,7 @@ Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41 	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
+Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 
 
 #### Build  10.0.40.202409051
