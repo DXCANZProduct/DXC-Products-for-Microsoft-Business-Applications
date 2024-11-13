@@ -71,6 +71,13 @@ Number	| Name		 | Description
 :--	|:--		  	|:--
 
 
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+18847	| EDI Sales order processing workspaces	- Skip error lines	| New tile and list **Skip error lines** added for Customer purchase order records that completed succesfully but contains skipped lines where the 'Skip error lines' document setting is used. <br>  ![Azure file share](RELEASE-NOTES-IMAGES/20240830_3.png "Azure file share")
+
+
 <ins>Bug fixes</ins>
 
 **Core module**	- Applies to all modules	
