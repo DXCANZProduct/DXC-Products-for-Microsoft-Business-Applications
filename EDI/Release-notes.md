@@ -2,7 +2,7 @@
 # required metadata
 
 title: EDI
-description: EDI - Release notes
+description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
 ms.date: 2024-11-13
@@ -65,10 +65,18 @@ Planned release date: 29 November 2024
 
 <ins>New features</ins>
 
-**Core module**	- Applies to all modules
+**Core module**	- Applies to all modules	
 
 Number	| Name		 | Description
-:--	|:--		  	|:--
+:--	|:--		 |:--
+19356	| Azure connection - SAS	| Support Azure blob site using SAS account level key vault
+
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+18847	| EDI Sales order processing workspaces	- Skip error lines	| New tile and list **Skip error lines** added for Customer purchase order records that completed succesfully but contains skipped lines where the 'Skip error lines' document setting is used. <br>  ![Skip error lines](RELEASE-NOTES-IMAGES/20241129_1.png "Skip error lines")
 
 
 <ins>Bug fixes</ins>
