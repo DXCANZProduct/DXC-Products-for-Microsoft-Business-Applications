@@ -69,7 +69,7 @@ Planned release date: 29 November 2024
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-18847	| EDI Sales order processing workspaces	- Skip error lines	| New tile and list **Skip error lines** added for Customer purchase order records that completed succesfully but contains skipped lines where the 'Skip error lines' document setting is used. <br>  ![Azure file share](RELEASE-NOTES-IMAGES/20240830_3.png "Azure file share")
+18847	| EDI Sales order processing workspaces	- Skip error lines	| New tile and list **Skip error lines** added for Customer purchase order records that completed succesfully but contains skipped lines where the 'Skip error lines' document setting is used. <br>  ![Skip error lines](RELEASE-NOTES-IMAGES/20241129_1.png "Skip error lines")
 
 
 <ins>Bug fixes</ins>
