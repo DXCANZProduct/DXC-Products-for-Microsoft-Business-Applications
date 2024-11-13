@@ -65,12 +65,6 @@ Planned release date: 29 November 2024
 
 <ins>New features</ins>
 
-**Core module**	- Applies to all modules
-
-Number	| Name		 | Description
-:--	|:--		  	|:--
-
-
 **Customer module**	
 
 Number	| Name		 | Description
