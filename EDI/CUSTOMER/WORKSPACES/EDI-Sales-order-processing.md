@@ -3,9 +3,9 @@
 
 title: EDI Customer
 description: EDI Customer workspaces - EDI Sales order processing
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2022-06-28
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-11-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: SAB_EDISalesTableProcessingWorkspace
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDICustomerDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -49,6 +49,19 @@ Field	            | Description
 :--               |:--
 **Log**           | Select the **Log** button to view the validation errors that have occurred for the order. 
 **Validate**      | Select the **Validate** button to check validation rules for a sales order. 
+
+### Skip error lines
+Customer purchase order records that completed succesfully but contains skipped lines (not created as sales order line) where the **Skip error lines** document setting is used.
+
+Filters           | Description
+:--               |:--
+**Excluded**      |	•	No (default) – Display record that hasn’t been marked as excluded from open list <br> •	Yes – Display records that has been marked as excluded from open list
+
+Buttons	          | Description
+:--               |:--
+**Exclude / Include** |	Ability to exclude/include records from open list
+**Version log**       | Ability to view the Version log for the record
+
 
 ### Pending PO changes
 Customer purchase order changes that are set to be processed manually (**Processing method** on [Document setting profile](../SETUP/SETTING-PROFILES/Customer-purchase-order-change.md) is set to _Manual_), will be available here for manual approval. Whether a POA is required can be set via the Customer purchase order change’s Document setting **Don’t send POA for changes**.
