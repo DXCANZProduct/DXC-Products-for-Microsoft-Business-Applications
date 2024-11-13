@@ -5,7 +5,7 @@ title: EDI Connection setup
 description: Overview of the EDI connection methods
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-04
+ms.date: 2024-11-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -201,7 +201,7 @@ To begin, create a new Azure site record and fill out the connection parameters.
 **Storage account name**			| If Credential type is set to **Database**: Specify the **storage account name** used for authentication to the Azure site
 **Storage account key**				| If Credential type is set to **Database**: Specify the **storage account key** used for authentication to the Azure site. 
 <ins>**Key vault**</ins> 			|	
-**Key Vault certificate**			| If Credential type is set to **Key vault**: Assign Key vault **Secret** setup in **Key vault parameters**
+**Key Vault certificate**			| If Credential type is set to **Key vault**: Assign Key vault **Secret** setup in **Key vault parameters**. Can also assign a Key vault for SAS on account level.
              		
 > Note: Select **Test Connection** to confirm that a connection can be made with the Azure site specified.
 
