@@ -2,7 +2,7 @@
 # required metadata
 
 title: EDI
-description: EDI - Release notes
+description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
 ms.date: 2024-11-13
