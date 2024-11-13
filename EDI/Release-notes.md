@@ -65,6 +65,13 @@ Planned release date: 29 November 2024
 
 <ins>New features</ins>
 
+**Core module**	- Applies to all modules	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+19356	| Azure connection - SAS	| Support Azure blob site using SAS account level key vault
+
+
 **Customer module**	
 
 Number	| Name		 | Description
