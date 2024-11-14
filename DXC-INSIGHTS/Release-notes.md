@@ -5,7 +5,7 @@ title: Insights for D365 FO
 description: Insights for D365 FO - Release notes
 author: Patrick Sharma
 manager: Kym Parker
-ms.date: 2023-11-29
+ms.date: 2024-11-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,6 +30,17 @@ ms.dyn365.ops.version: 10.0.31
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
 
+# Version compatibility
+The matrix shows the DXC build versions compatiable for Microsoft versions and builds. <br>
+If blank: investigations are ongoing. <br>
+
+D365 Version	  | Any issues found in testing?	  | Product version tested
+:--       	  |:--           			  |:--
+Product version: 10.0.40 <br> App build: 10.0.1935.92	  | No	          | 10.0.37.202406271
+Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202406271
+Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.37.202406271
+
+
 # Current version
 
 ### Release 10.0.37.20240627 
@@ -42,6 +53,8 @@ Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
+
 
 #### Build 10.0.37.202406271
 Release date: 27 June 2024
