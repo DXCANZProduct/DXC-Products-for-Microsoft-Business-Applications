@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-13
+ms.date: 2024-11-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -102,6 +102,7 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 19159	| Vendor purchase order acknowledgement - Unit conversion	| When vendor has UOM mapping assigned that has the D365 unit mapped to a different D365 unit. Error when processing document: "Unit conversion from % to % does not exist". Changed: Where the units are the same, it will now skip the logic to find unit conversion.
+19584	| Vendor purchase order change	| Only applicable to where the line's price unit was not 1. Incorrect 'Line change type' of 'Price change' where the price hasn't been changed.
 
 
 
