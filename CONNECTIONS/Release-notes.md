@@ -5,7 +5,7 @@ title: DXC Connections
 description: DXC Connections - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-10-21
+ms.date: 2024-11-14
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -46,6 +46,7 @@ Base                               | Version | Release
 :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 Microsoft Dynamics 365 application | 10.0.40 | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40) 
 Microsoft Dynamics 365 application | 10.0.41 | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) 
+Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 
 
 #### Build 10.0.40.202410211
