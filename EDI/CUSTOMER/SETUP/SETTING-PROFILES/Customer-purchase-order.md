@@ -3,9 +3,9 @@
 
 title: EDI Customer
 description: EDI Customer Setup - Document type Setting profiles - Customer purchase order
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-04-19
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-11-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: SAB_EDIDocumentTypeTable, SAB_EDITradingPartner 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDICustomerDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -51,6 +51,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Update confirmed ship date**  |	Similar to **Simulate delivery dates**, updates the **Confirmed ship date** and **Confirmed receipt date** on the sales order header, which are also used in the Customer purchase order acknowledgement. Confirmed dates are only updated when **Delivery date control** is not set to _None_. | Yes/No
 **Sales origin**  | If the target Sales order's **Sales origin** should be set to a specific value, select here. If field **Sales origin** is received in the import file, the staging value will be used to set the target Sales order's **Sales origin**. | EDI
 **Suppress add new address**  | Not applicable to staging records that have **Store code** populated, only applicable where the staging header's address fields are used to create the new sales order. When the staging header's address can't be found against the customer and **Suppress add new address** is set to _Yes_, a new address will not automatically be added to the customer and used on the sales order - the staging record will error instead. | Yes/No
+**Skip error lines**  | Ability to set if lines with below errors should be skip when processing the record. The sales order will still be created, without these error line(s). <br> The error lines will still be included in the outbound Customer purchase order acknowledgement with POA code mapping for 'Line item - error'. <br> Supported error scenarios: <br> • Item not found <br> • Item stopped for sales orders <br> • Sell by date in the past
 <ins>**Purchase agreement**</ins>   |   |
 **Agreement classification**	  | Select the agreement classification used when blanket orders are created	
 **Strip field delimiter**       |	Specify the delimiter used to identify a release order	Some of the trading partners use a slightly different PO number on the Blanket order compared with the Release order. An example of a Blanket order PO number is 0005055365-0000, they will then send four releases with the number 0005055365-0010, 0005055365-0020, 0005055365-0030 and 0005055365-0040. In the template the strip field delimiter would be set to “-“, it should then find the applicable sales agreement by using the number before the delimiter. 
