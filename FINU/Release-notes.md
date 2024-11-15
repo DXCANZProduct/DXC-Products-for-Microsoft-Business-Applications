@@ -86,7 +86,7 @@ Planned release date: TBD
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-19934		| Cash and bank management	| Mark as new - offset to intercompany account	| 1. Fix for related vouchers for intercompany vouchers. <br> 2. Fix to financial dimensions, as per below: <br> [Financial dimensions](Images/ReleaseNotes_20241115_1.png "Financial dimensions")
+19934		| Cash and bank management	| Mark as new - offset to intercompany account	| 1. Fix to related vouchers for intercompany vouchers. <br> 2. Fix to financial dimensions, as per below: <br> [Financial dimensions](Images/ReleaseNotes_20241115_1.png "Financial dimensions")
 20177		| Cash and bank management	| Mark as new | Blank distribute amount
 20180		| Cash and bank management	| Security privilege added for DFUBankStatementReversalDialog. Added to std duty 'Enable bank management process'
 
