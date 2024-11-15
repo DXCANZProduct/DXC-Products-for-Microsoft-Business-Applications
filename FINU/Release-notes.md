@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-14
+ms.date: 2024-11-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -78,6 +78,18 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
+
+#### Build 10.0.40.202409194
+Planned release date: TBD
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+19934		| Cash and bank management	| Mark as new - offset to intercompany account	| Fix to financial dimensions and related vouchers for intercompany vouchers
+20177		| Cash and bank management	| Mark as new | Blank distribute amount
+20180		| Cash and bank management	| Security privilege added for DFUBankStatementReversalDialog. Added to std duty 'Enable bank management process'
+
 
 #### Build 10.0.40.2024091931
 Release date: 28 October 2024
