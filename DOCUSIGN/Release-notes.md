@@ -45,6 +45,8 @@ Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
 Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
+Microsoft Dynamics 365 application	| 10.0.42	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 
 #### Build 10.0.34.202306151
 Release date: 15 June 2023
@@ -71,7 +73,7 @@ N/A		| License manager	| License manager version 10.8.32.10171 <br> Enhanced Lic
 Number	| Functionality	  | Reason
 :--     |:--              |:--
 9734	| Dropdown list Tag type	| Ability to create dropdown [lists](SETUP/List.md) and use these as tags in the [Template](SETUP/Template.md).
-10036	| Remove deprecated tables	| Removed tables SAB_DSUser and SAB_DSUserMapping which related to previous methods of establishing authentication. These are no longer required following the release of OAuth2 authentication.
+10036	| Remove deprecated tables	| Removed tables SAB_DSUser and SAB_DSUserMapping which are related to previous methods of establishing authentication. These are no longer required following the release of OAuth2 authentication.
 N/A	| License manager	| License manager version 10.8.32.10156. <br> **Help** includes links to applicable GitHub user guide page/s. <br> ![Help](IMAGES/ReleaseNotes_20230221_1.png "Help")
 
 ### Release 10.0.25.20220630
@@ -80,8 +82,8 @@ N/A	| License manager	| License manager version 10.8.32.10156. <br> **Help** inc
 
 Number	  | Functionality	  | Reason
 :--       |:--              |:--
-9888	    | Support for OAuth 2.0 | API with DocuSign now uses the OAuth 2.0 authentication type. The following fields have been added to the DocuSign Parameters form for establishing authentication <BR/> <BR/> **OAuth server URL** = account-d.docusign.com <BR/> **Integrator key** = select from configured [Key vault values](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/setting-up-azure-key-vault-client) <BR/> **User Id** = DocuSign user ID  <BR/> **RSA private key** = select from configured Key vault values <BR/><BR/> Initial authetication will require the granting of consent. This can be achieved from the same for by selecting *Grant consent* and logging in.
-10403	    | Send worker name for internal placeholder emails	| Support for the sending of distinct values for SignerEmail and SignerName when using purpose controlled placeholders for workers within document management. The value for the SignerName will be the account name for the worker. This feature must be enabled on each document type by selecting the field Use document type.
+9888	    | Support for OAuth 2.0 | API with DocuSign now uses the OAuth 2.0 authentication type. The following fields have been added to the DocuSign Parameters form for establishing authentication <BR/> <BR/> **OAuth server URL** = account-d.docusign.com <BR/> **Integrator key** = select from configured [Key vault values](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/setting-up-azure-key-vault-client) <BR/> **User Id** = DocuSign user ID  <BR/> **RSA private key** = select from configured Key vault values <BR/><BR/> Initial authentication will require the granting of consent. This can be achieved from the same form by selecting *Grant consent* and logging in.
+10403	    | Send worker name for internal placeholder emails	| Support for the sending of distinct values for SignerEmail and SignerName when using purpose-controlled placeholders for workers within document management. The value for the SignerName will be the account name for the worker. This feature must be enabled on each document type by selecting the field Use document type.
 
 
 ### Release 10.0.22.20220321
@@ -92,7 +94,7 @@ Number	  | Functionality	  | Reason
 :--       |:--              |:--
 9154	    | Support for textbox type | The tag type of text is now supported for envelope creation. A text character limit can be defined for each use of this tag type.
 9315	    | Send account name for placeholder emails	| Support for the sending of distinct values for SignerEmail and SignerName when using purpose controlled placeholders in document management. The value for the SignerName will be the account name for the party. Previously both values were communicated as the email address. This feature must be enabled on each document type by selecting the field Use document type.
-9793	    | Mandatory page number for specific page	| When selecting to use a specific page for tag placement the page number field in now mandatory. This is to prevent an issue with envelope creation and tag assignment to page 0.
+9793	    | Mandatory page number for specific page	| When selecting to use a specific page for tag placement the page number field is now mandatory. This is to prevent an issue with envelope creation and tag assignment to page 0.
 
 ### Release 10.0.12.20210701
 
@@ -137,7 +139,7 @@ If you’re installing the new release in an installation that already has a pre
 
 If you’re using our model source code for extension or debugging and would like to continue using it, please do the following to apply the new release with the source code. 
 
-1. Remove product license model from your source control that is applicable to the release. You’ll find the license model in the deployable package. It will either be called DXCLicense and Sable37License. 
+1. Remove the product license model from your source control that is applicable to the release. You’ll find the license model in the deployable package. It will either be called DXCLicense and Sable37License. 
 2. Apply the deployable package to your environment to install the latest binaries. Check in the binaries for the license model that was removed in step 1 to source control. Note, this step will also install the binaries for all the models in the new release. 
 3. Install the product release model source code and check into source control. 
 
