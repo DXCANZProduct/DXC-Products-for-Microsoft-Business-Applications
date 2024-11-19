@@ -77,7 +77,10 @@ Planned release date: Early December 2024
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-18867		| Various	| IRD number validation	| Check digit, length, digit separator validation for New Zealand IRD numbers. <br> Supports format xxx-xxx-xxx and xxxxxxxxx. <br> This option is enabled by allocating the applicable country, for example NZL, on the Legal entity. <br> <br> Examples: <br> • Incorrect number / Check digit: Expecting check digit 9, but found 8 for IRD no. 086689918 <br> •  Not a number format/incorrect separator: Invalid IRD number format. It should only contain digits having format xxx-xxx-xxx or xxxxxxxxx. <br> • Length: Invalid IRD number length, IRD number should be 9 digits long. <br> ![IRD number validation](Images/ReleaseNotes_20241206_1.png "IRD number validation") <br> <br> ![IRD number validation example](Images/ReleaseNotes_20241206_2.png "IRD number validation example")
+18867		| Various	| IRD number validation	| Modulus 11 digit check, length, digit separator validation for New Zealand IRD numbers. <br> Supports format xxx-xxx-xxx and xxxxxxxxx. <br> This option is enabled by allocating the applicable country, for example NZL, on the Legal entity. <br> <br> Examples: <br> • Incorrect number / Check digit: Expecting check digit 9, but found 8 for IRD no. 086689918 <br> •  Not a number format/incorrect separator: Invalid IRD number format. It should only contain digits having format xxx-xxx-xxx or xxxxxxxxx. <br> • Length: Invalid IRD number length, IRD number should be 9 digits long. <br> ![IRD number validation](Images/ReleaseNotes_20241206_1.png "IRD number validation") <br> <br> ![IRD number validation example](Images/ReleaseNotes_20241206_2.png "IRD number validation example")
+18875		| Data management	| ABN validation	| Data entities added
+19026		| Organization administration	| ABN validation review	| Organisation administration > Enquiries and reports > ABN validation review <br> Where ABN validation is enabled for the legal entity, users can use new button **Change history** to view changes made in D365 for each ABN.
+
 
 # Current version
 
