@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-15
+ms.date: 2024-11-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -79,16 +79,18 @@ Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or c
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 
-#### Build 10.0.40.202409194
-Planned release date: TBD
+#### Build 10.0.40.2024091941
+Planned release date: 19 November 2024
 
 <ins>Bug fixes</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-19934		| Cash and bank management	| Mark as new - offset to intercompany account	| 1. Fix to related vouchers for intercompany vouchers. <br> 2. Fix to financial dimensions, as per below: <br> ![Financial dimensions](Images/ReleaseNotes_20241115_1.png "Financial dimensions")
+19934 <br> 20173		| Cash and bank management	| Mark as new - offset to intercompany account	| 1. Fix to related vouchers for intercompany vouchers. <br> 2. Fix to financial dimensions, as per below. This also resolves the incorrect warning where a financial dimension is used for intercompany offset, but suspended for bank recon's legal entity. <br> ![Financial dimensions](Images/ReleaseNotes_20241115_1.png "Financial dimensions")
 20177		| Cash and bank management	| Mark as new | Blank distribute amount
 20180		| Cash and bank management	| Bank statement | New Security privilege 'Maintain vouchers to be reversed' added to DFUBankStatementReversalDialog. Added to std duty 'Enable bank management process'
+20184		| Cash and bank management	| Mark as new - offset to intercompany account with tax	| Where the intercompany offset type ledger included tax, the tax was incorrectly posted in bank recon's legal entity instead of with the expense/incomine in the intercompany legal entity.
+
 
 
 #### Build 10.0.40.2024091931
