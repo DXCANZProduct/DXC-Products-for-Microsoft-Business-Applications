@@ -4,8 +4,8 @@
 title: Finance Utilities 
 description: Processing - ABN lookup and validation
 author: Monica du Toit
-manager: Kym Parker
-ms.date: 2024-09-13
+manager: Pontus Ek
+ms.date: 2024-11-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -126,5 +126,6 @@ Users can review new/updated ABN records, for example an ABN is not registered f
 - **Related information** can be used to view the customer(s) and/or vendor(s) that have the ABN allocated.
 - Select applicable record(s) and select **Mark as reviewed** to update their reviewed status.
 - **Run update** can be used to run the web service to update ABNs with current data from the Australian Business Register.
+- **Change history** can be used to view changes made in D365 for each ABN.
 
   
