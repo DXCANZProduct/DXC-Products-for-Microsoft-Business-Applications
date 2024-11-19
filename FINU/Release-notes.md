@@ -67,6 +67,14 @@ Feature	| 10.0.41 Feature state
 **Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the custom bank statement format | Mandatory
 **Modern bank reconciliation** | 
 
+# Next version
+
+### Release 10.0.40.202412TBD
+
+Planned release date: Early December 2024
+
+
+
 # Current version
 
 ### Release 10.0.40.20240919
@@ -80,7 +88,7 @@ Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 
 #### Build 10.0.40.2024091941
-Planned release date: 19 November 2024
+Release date: 19 November 2024
 
 <ins>Bug fixes</ins>
 
