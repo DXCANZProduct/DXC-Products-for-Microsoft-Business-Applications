@@ -89,7 +89,7 @@ Number	  	| Module	| Functionality	  	| Description
 19934 <br> 20173		| Cash and bank management	| Mark as new - offset to intercompany account	| 1. Fix to related vouchers for intercompany vouchers. <br> 2. Fix to financial dimensions, as per below. This also resolves the incorrect warning where a financial dimension is used for intercompany offset, but suspended for bank recon's legal entity. <br> ![Financial dimensions](Images/ReleaseNotes_20241115_1.png "Financial dimensions")
 20177		| Cash and bank management	| Mark as new | Blank distribute amount
 20180		| Cash and bank management	| Bank statement | New Security privilege 'Maintain vouchers to be reversed' added to DFUBankStatementReversalDialog. Added to std duty 'Enable bank management process'
-20184		| Cash and bank management	| Mark as new - offset to intercompany account with tax	| Where the intercompany offset type ledger included tax, the tax was incorrectly posted in bank recon's legal entity instead of with the expense/incomine in the intercompany legal entity.
+20184		| Cash and bank management	| Mark as new - offset to intercompany account with tax	| Where the intercompany offset type ledger included tax, the tax was incorrectly posted in bank recon's legal entity. Tax is now posted with the expense/income in the intercompany legal entity.
 
 
 
