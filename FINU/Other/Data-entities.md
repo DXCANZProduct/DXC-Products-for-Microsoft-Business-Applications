@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities setup - Data Entities 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-20
+ms.date: 2024-11-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -103,6 +103,24 @@ Data entity: Reference number type
 ### Customer references
 Accounts receivable > Customers > All customers: Customer references <br>
 Data entity: Customer references
+
+# ABN and IRD number validation
+
+### Validation providers
+Organisation administration > Setup > Validation providers
+
+**Order** | **Entity**                            
+:--       |:--
+1         | Validation providers
+2         | Validation provider - ABN
+
+### Legal entities
+Organisation administration > Organisations > Legal entities
+
+**Entity**                          | **Additional Finance utilities fields for standard entity**                 
+:--       |:--                                       
+**Legal entities**           | For ABN validation: <br> • DXCABNValidationEnabled <br> • DXCABNValidationProviderTypeTable_Name <br> <br> For IRD number validation: <br> • DXCCountryRegionId
+
 
 # Budgeting
 Finance utilities includes the following data entities in Budgeting:
