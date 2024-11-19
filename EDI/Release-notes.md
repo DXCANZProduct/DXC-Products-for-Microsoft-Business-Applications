@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-15
+ms.date: 2024-11-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -95,6 +95,7 @@ Number	| Name		 | Description
 :--	|:--		  	|:--	
 18814	| Customer purchase order - Skip error lines	| Also now includes stopped for sales orders for a specific site not on Rank 0
 19389	| Trading partner	| Fix to label 'Enable store code identification'
+19316	| Sales order - EDI history	| Not all staging records displayed on EDI history - where same sales id used in multiple legal entities. This fix only works for new records.
 
 
 **Vendor module**	
