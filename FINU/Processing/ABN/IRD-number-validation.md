@@ -42,7 +42,7 @@ The following setup are [prerequisites](../../Setup/ABN/IRD-number-validation.md
 The following validations will occur when creating new records for allocated country.
 
 Example error messages for incorrect IRD numbers:
-- **Incorrect number / Check digit** - Expecting check digit 9, but found 8 for IRD no. 086689918
+- **Modulus 11 digit check** - Expecting check digit 9, but found 8 for IRD no. 086689918
 - **Not a number format/incorrect separator** - Invalid IRD number format. It should only contain digits having format xxx-xxx-xxx or xxxxxxxxx
 - **Length** - Invalid IRD number length, IRD number should be 9 digits long
 
