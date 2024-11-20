@@ -42,14 +42,32 @@ Select the **Invoice** tab, and expand **Self billing invoicing** FastTab
     - **Invoice date** -  The Invoice date date is used for Posting date.
     - **Today's date** - Today's date is used for Posting date.
 
+## Self billing invoice groups
+Users can access the form by navigating to **Accounts payable > Setup > Self billing invoice groups**
+These groups are assigned to applicable vendors.
 
-#### Data entities
-The new fields have been added to the applicable data entities:
+On the Action Pane, select New and enter the following details
+- **Self billing** - Ability to manage the self billing functionality on a group level. 
+- **Create invoice with product receipt** - Ability to automatically create the purchase invoice when the product receipt is posted
+    - **Yes** - Consolidate invoices is disabled as the purchase invoice is 1:1 with product receipt
+    - **No** - Consolidate invoices is enabled and periodic task **Create self billing invoices** needs to be setup to create the purchase invoice(s).
+- **Consolidate invoices** - Select method of consolidation when periodic task **Create self billing invoices**  is used to create the purchase invoice(s):
+    - **Product receipt** - Split one invoice per one uninvoiced product receipt
+    - **Purchase order** - Consolidate all uninvoiced product receipts per purchase order into one invoice
+    - **Invoice account** - Consolidate all uninvoiced product receipts per invoice account into one invoice
+    - **Receipt date** - Consolidate all uninvoiced product receipts per receipt date into one invoice
+- **Post invoice requirements** - Select applicable option for the created purchase invoice
+    - **Do not post** - Created invoice is not posted and remains as pending vendor invoice
+    - **Post** - Created invoice is automatically posted. If post failed, it will remain as pending vendor invoice
+    - **Post and print** - Created invoice is automatically posted. If post failed, it will remain as pending vendor invoice. The invoice is also automatically printed as per Print management destination. The following print management destination options are supported:
+        - Smart Send (where licensed)
+        - Email
+  
 
-Field                                         | Data entity            | DFU field  
-:--  | :--  | :--
+## Vendors
+Users can access the form by navigating to **Accounts payable > Vendors > All vendor**
 
-
+Assign the applicable **Self billing invoice group** setup in previous section to all applicable Vendor(s) in field **Self billing invoicing**
 
 ### Processing
 Processing is discussed in detail at [Self billing invoicing processing](../../Processing/Accounts-Payable/Self-billing-invoicing.md).
