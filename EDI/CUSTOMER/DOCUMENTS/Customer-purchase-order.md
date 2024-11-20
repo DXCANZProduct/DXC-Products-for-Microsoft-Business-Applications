@@ -3,9 +3,9 @@
 
 title: EDI Customer
 description: EDI Customer Documents - Customer purchase order
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-10-23
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-11-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  SalesTableListPage, SalesAgreementListPage, SAB_EDIStagingFormRun_PO, SAB_EDICustOrderTypeMapping, SAB_EDICustOrderPurposeMapping
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDICustomerDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -279,7 +279,7 @@ The following EDI Line fields are available on the lines page.
 **Line amount including tax**   | The total line amount including tax (if provided else 0)	            | Sales line > Unit price <br> If document setting's **Use customer price** is set to _Yes_ AND <br> Staging **Unit price** is blank AND <br> Document setting's **Prices include GST** is set to _Yes_: <br> Sales line unit price is calculated by **Line amount including tax** / **Customer sales quantity**
 **Customer inners**         | The customer’s inners per outer quantity	                                | Sales line > EDI > POA response > Customer > Inner
 **Customer pack**           | The customer’s pack quantity	                                            | Sales line > EDI > POA response > Customer > Pack
-**Configuration** <br> **Colour**  <br> **Size** <br> **Style** <br> **Version**  | Product dimension - Configuration <br> Product dimension - Colour <br> Product dimension - Size <br> Product dimension - Style  <br> Product dimension - Version | Sales line > Product dimension <br> If Item id Source <> Our item number and the External item number/ GTIN/Barcode is unique per variant, the customer doesn’t have to provide Variant details and EDI will find and populate the inventory dimensions on the sales line.
+**Configuration** <br> **Colour**  <br> **Size** <br> **Style** <br> **Version**  | Product dimension - Configuration <br> Product dimension - Colour <br> Product dimension - Size <br> Product dimension - Style  <br> Product dimension - Version | Sales line > Product dimension <br> If Item id Source <> Our item number and the External item number/ GTIN/Barcode is unique per variant, the customer doesn’t have to provide Variant details and EDI will find and populate the inventory dimensions on the sales line. <br> Where the product variant isn't provided by Staging, GTIN, Barcode or External item number, the default product variant will default to the sales order line.
 **Site**                    | Storage dimension - Site	                                                | Sales line > Site <br> If staging blank will be populated by Sales order Header. If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
 **Warehouse**               | Storage dimension - Warehouse	                                            | Sales line > Warehouse <br> If staging blank will be populated by Sales order Header. If the customer has no default to populate the Sales order Header, the default site/warehouse on the item’s sales order default order settings will be used.
 **Store code**              | The store code from the EDI saging line is shown here.	                | Sales line > EDI > Store code <br> EDI supports different store codes on line level
