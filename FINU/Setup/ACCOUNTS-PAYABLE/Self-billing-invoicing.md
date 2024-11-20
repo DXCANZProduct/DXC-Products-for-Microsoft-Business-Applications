@@ -43,7 +43,7 @@ Select the **Invoice** tab, and expand **Self billing invoicing** FastTab
     - **Today's date** - Today's date is used for Posting date.
 
 ## Self billing invoice groups
-Users can access the form by navigating to **Accounts payable > Setup > Self billing invoice groups**
+Users can access the form by navigating to **Accounts payable > Setup > Self billing invoice groups**. <br>
 These groups are assigned to applicable vendors.
 
 On the Action Pane, select New and enter the following details
