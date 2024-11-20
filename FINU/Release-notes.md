@@ -87,6 +87,7 @@ Number	  	| Module	| Functionality	  	| Description
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
 19459		| Cash and bank management	| Reconciliation matching rules - Offset type Ledger	| When entering new Offset account number, limited to only Main accounts. Offset financial dimensions needs to be entered Financial dimensions > Offset account
+19527		| Various	| ABN validation	| Fix to **From date** for _Cancelled_ GST records
 	
 
 # Current version
