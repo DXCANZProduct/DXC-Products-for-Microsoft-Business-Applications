@@ -137,23 +137,25 @@ Modification allows users to automatically save the electronic reporting file to
 - [Save electronic reporting file to secure location setup](Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md)
 - [Save electronic reporting file to secure location processing](Processing/Accounts-Payable/Save-electronic-reporting-file-to-secure-location.md)
 
+## Self billing invoicing / Recipient-Created Tax Invoice (RCTI)
+Provides the ability to automatically create a Purchase invoice for Product receipt(s)
 
-# ABN lookup and validation
+
+# ABN and IRD number validation
+
+## ABN lookup and validation
 > Note: Only applicable to Australia. 
 
 Where the company has registered to use ABN lookup Web API and the legal entity setup in D365, it is possible to lookup and validate customer and vendor’s ABN in D365.
 - [ABN lookup and validation setup](Setup/ABN/ABN-lookup-and-validation.md)
 - [ABN lookup and validation processing](Processing/ABN/ABN-lookup-and-validation.md)
 
-# IRD number validation
+## IRD number validation
 > Note: Only applicable to New Zealand. 
 
 Where the company has enabled IRD number validation for the legal entity.
 - [IRD number validation setup](Setup/ABN/IRD-number-validation.md)
 - [IRD number validation processing](Processing/ABN/IRD-number-validation.md)
-
-## Self billing invoicing / Recipient-Created Tax Invoice (RCTI)
-Provides the ability to automatically create a Purchase invoice for Product receipt(s)
 
 
 # Accounts receivable
