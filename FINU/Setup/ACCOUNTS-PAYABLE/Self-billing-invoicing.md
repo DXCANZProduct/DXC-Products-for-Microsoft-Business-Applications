@@ -62,12 +62,31 @@ On the Action Pane, select New and enter the following details
     - **Post and print** - Created invoice is automatically posted. If post failed, it will remain as pending vendor invoice. The invoice is also automatically printed as per Print management destination. The following print management destination options are supported:
         - Smart Send (where licensed)
         - Email
+- **Automatic approval** - Field is available for use in _Vendor invoice workflow_
+- **Invoice description** - Populates invoice's Invoice description
+- **Invoice number**
+    - **Invoice number mask** - Use **Editor** button to build an Invoice number mask using static or one/many of the following placholder fields:
+        - **Vendor account** - Vendor table's Vendor account
+        - **Group** - Invoice account's Group
+        - **Vendor account** - Purchase order's Vendor/Order account
+        - **Invoice account** - Purchase order's Invoice account
+        - **Purchase order** - Purchase order id
+        - **Company** - Purchase order's legal entity
+        - **Product receipt** - Product receipt
+    - **Add number sequence group** - where the invoice number mask will not result in a unique number, it is advised to add number sequence group to the end of the invoice number mask. For example where consolidating by purchase order and it could result in multiple invoices for the same purchase order.
+    - **Number sequence group** - where a Number sequence group hasn't been assigned to the vendor, this group will be used. 
+        - Order of which Number sequence group is used, if blank next one is used:
+            - Invoice account
+            - Order account
+            - Purchase order's Self billing invoice group
   
 
 ## Vendors
 Users can access the form by navigating to **Accounts payable > Vendors > All vendor**
 
 Assign the applicable **Self billing invoice group** setup in previous section to all applicable Vendor(s) in field **Self billing invoicing**
+
+ number sequence group
 
 ### Processing
 Processing is discussed in detail at [Self billing invoicing processing](../../Processing/Accounts-Payable/Self-billing-invoicing.md).
