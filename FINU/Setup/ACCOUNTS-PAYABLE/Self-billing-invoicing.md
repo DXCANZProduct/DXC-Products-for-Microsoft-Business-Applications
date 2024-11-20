@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: VendParameters, DFUSelfBillingInvoiceGroups
+ms.search.form: VendParameters, DFUSelfBillingInvoiceGroups, VendTableListPage
 audience: Application User
 # ms.devlang:
 ms.reviewer: Monica du Toit
@@ -80,13 +80,16 @@ On the Action Pane, select New and enter the following details
             - Order account
             - Purchase order's Self billing invoice group
   
+#### Populate Invoice number without automatically creating invoice
+When setting **Self billing** to _No_ and assigning the **Invoice number** fields, the group can be used to populate invoice numbers for manually created purchase invoices.
+
 
 ## Vendors
 Users can access the form by navigating to **Accounts payable > Vendors > All vendor**
 
-Assign the applicable **Self billing invoice group** setup in previous section to all applicable Vendor(s) in field **Self billing invoicing**
-
- number sequence group
+The following fields on the **Invoice and delivery** FastTab applies to the functionality:
+- Assign the applicable **Self billing invoice group** setup in previous section to all applicable Vendor(s) in field **Self billing invoicing**
+- Where applicable assign a **Number sequence group** to all applicable Vendor(s)
 
 ### Processing
 Processing is discussed in detail at [Self billing invoicing processing](../../Processing/Accounts-Payable/Self-billing-invoicing.md).
