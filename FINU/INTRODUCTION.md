@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Introduction to Finance Utilities 
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-03-18
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-11-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -47,7 +47,9 @@ The DXC Finance Utilities module provides enhanced functionalities to Microsoft 
     -   BPAY vendor payment
     -   Formatted Vendor Payment Advice
     -   ABN lookup and validation (Australia only)
-    -   Save GER to secure location, for example FTP/FTPS, SFTP or Azure blob. Encryption option included.
+    -   IRD number validation (New Zealand only)
+    -   Save GER to secure location, for example FTP/FTPS, SFTP or Azure blob. Encryption option included
+    -   Self billing invoicing / Recipient-Created Tax Invoice (RCTI)
 - **Accounts receivable**
     -   Customer bank account changes workflow
     -   ABN lookup and validation (Australia only)
@@ -135,12 +137,24 @@ Modification allows users to automatically save the electronic reporting file to
 - [Save electronic reporting file to secure location setup](Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md)
 - [Save electronic reporting file to secure location processing](Processing/Accounts-Payable/Save-electronic-reporting-file-to-secure-location.md)
 
+
 # ABN lookup and validation
 > Note: Only applicable to Australia. 
 
 Where the company has registered to use ABN lookup Web API and the legal entity setup in D365, it is possible to lookup and validate customer and vendor’s ABN in D365.
 - [ABN lookup and validation setup](Setup/ABN/ABN-lookup-and-validation.md)
 - [ABN lookup and validation processing](Processing/ABN/ABN-lookup-and-validation.md)
+
+# IRD number validation
+> Note: Only applicable to New Zealand. 
+
+Where the company has enabled IRD number validation for the legal entity.
+- [IRD number validation setup](Setup/ABN/IRD-number-validation.md)
+- [IRD number validation processing](Processing/ABN/IRD-number-validation.md)
+
+## Self billing invoicing / Recipient-Created Tax Invoice (RCTI)
+Provides the ability to automatically create a Purchase invoice for Product receipt(s)
+
 
 # Accounts receivable
 ## Customer references
