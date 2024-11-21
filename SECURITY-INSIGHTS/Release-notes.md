@@ -48,7 +48,7 @@ Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
-19492	| Highlight unused licenses	| Ability to highlight unused licenses for a user and each role for the selected user. Unused means the applicable user didn't access any menu items with that license type in the fetch period. <br> Clicking on a **Role name**, will open **Assign users to roles** form, thus enabling reviewer to see which other users have been assigned to the role with unused licenses as well. <br> <br> Select required colour in field **Background color for unused license fields** on Visual tab in **Insights for user access and security parameters** to enable the colour highlights for unused licenses. <br>  <br> ![Visual](IMAGES/ReleaseNotes_20241122_1.png "Visual")
+19492	| Highlight unused licenses	| Ability to highlight unused licenses for a user and each role for the selected user. Unused means the applicable user didn't access any menu items with that license type in the fetch period. <br> Clicking on a **Role name**, will open **Assign users to roles** form, thus enabling reviewer to see which other users have been assigned to the role with unused licenses as well. <br> <br> Select required highlight colour in field **Background color for unused license fields** on Visual tab in **Insights for user access and security parameters** to enable the colour highlights for unused licenses. <br> <br> In below example the selected user didn't access any Operations licenses in the fetch period <br> ![Visual](IMAGES/ReleaseNotes_20241122_1.png "Visual")
 
 
 <ins>Bug fixes</ins>
