@@ -5,7 +5,7 @@ title: Finance Utilities
 description:  Accounts payable setup - Self billing invoicing
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-20
+ms.date: 2024-11-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -90,6 +90,11 @@ Users can access the form by navigating to **Accounts payable > Vendors > All ve
 The following fields on the **Invoice and delivery** FastTab applies to the functionality:
 - Assign the applicable **Self billing invoice group** setup in previous section to all applicable Vendor(s) in field **Self billing invoicing**
 - Where applicable assign a **Number sequence group** to all applicable Vendor(s)
+
+## Periodic task
+
+Where the Self billing invoice group's **Create invoice with product receipt** is set to _No_, it is required to create a batch recurrence for the group using the following periodic task: <br> 
+**Accounts payable > Periodic tasks > Create self billing invoices**
 
 ### Processing
 Processing is discussed in detail at [Self billing invoicing processing](../../Processing/Accounts-Payable/Self-billing-invoicing.md).
