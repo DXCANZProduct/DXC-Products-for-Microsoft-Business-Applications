@@ -2,10 +2,10 @@
 # required metadata
 
 title: Finance Utilities 
-description:  Accounts payable processing - BPAY payment
-author: helenho
-manager: Kym Parker
-ms.date: 2023-08-09
+description:  Accounts payable processing - Self billing invoicing
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-11-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,46 +16,52 @@ ms.technology:
 ms.search.form: VendPaymMode, LedgerJournalTable5, LedgerJournalTable9
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm: 
 # ms.custom: : ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# Accounts payable functionality
-The features as described in the following subsections are available to control the additional functionality for accounts payable.
+# Self billing invoicing / RCTI
+The fields as described in the following subsections are available to control the additional functionality for Self billing invoicing / Recipient-Created Tax Invoice (RCTI). <br>
+This provides the ability to automatically create a Purchase invoice for Product receipt(s).
 
-## BPAY Payment
-Setup requirements are discussed in detail at [BPAY payment setup](../../Setup/ACCOUNTS-PAYABLE/BPAY-payment.md). <br>
-Processing of the vendor invoices and payments are discussed in the following subsections.
+## Prerequisites
+Setup requirements are discussed in detail at [Self billing invoicing setup](../../Setup/ACCOUNTS-PAYABLE/Self-billing-invoicing.md). <br>
+Processing are discussed in the following subsections.
 
-### 	BPAY Vendor invoices
-First step is to create and post the vendor invoices. <br>
-Vendor payment invoices can be created in various different pages. <br>
-The BPAY Finance utilities modification to capture BPAY details for your EFT payment have been added to:
-- **Accounts payable > Invoices > Tax invoice journal**
-- **Accounts payable > Invoices > Pending vendor invoices**
-- **Accounts payable > Invoices > Tax invoice register**
-- **General ledger > Journal entries > General journals**
-- **Project management and accounting > Journals > Expense**
+## Product receipt
 
-**Payment id** is currently on the vendor invoicing forms and will be utilized for BPAY **Customer Reference Number (CRN)**. <br>
-New BPAY field **Lodgement reference** has also been added.
+When the self billing purchase order is product receipted it becomes available to self billing invoicing
 
-- **Payment id** is populated by MS from the Vendor’s Payment id. The field can be manually edited on the vendor invoice entry prior to posting the invoice.
-- **Lodgement reference** is populated by Finance Utilities by the vendor/third party bank account on the invoice. When changing to a different vendor bank account, the Lodgement reference will automatically update. The field can also be manually edited on the vendor invoice entry prior to posting the invoice.
+## Invoice
 
-The BPAY modification uses the method of payment control settings to validate for mandatory fields Payment id and Lodgement reference (if also flagged as mandatory).
-If these Payment control mandatory fields are blank the invoice posting will error.
+### Create invoice
 
-### BPAY Vendor payments
-Second step is to pay the vendor invoices posted in previous step. Users can go to the **Vendor payment journal** page by navigating to **Accounts payable > Payments > Vendor payment journal**. <br>
+The Self billing invoice group's **Create invoice with product receipt** determines when the invoice is created:
+- **Yes** - The invoice is automatically created when the product receipt is posted
+- **No** - The invoice is automatically created when the periodic task runs: **Accounts payable > Periodic tasks > Create self billing invoices**
 
-New Finance utilities BPAY field **Lodgement reference** has been added to Vendor payment proposal page. 
-Standard D365 already groups payments by Payment ID, and with the BPAY modification the **Lodgement reference** is also used for additional grouping.
+Invoice fields populated from setup:
+- **Number** - Self billing invoice group's **Invoice number mask** + **Number sequence group** (where **Add number sequence group** is set to _Yes_).
+- **Invoice description** - Self billing invoice group's **Invoice description**.
+- **Invoice date** - Accounts payable parameter's **Invoice date**:
+    - **Product receipt date** -  The latest product receipt date is used for Invoice date.
+    - **Today's date** - Today's date is used for Invoice date.
+- **Posting date** - Accounts payable parameter's **Posting date**:
+    - **Invoice date** -  The Invoice date date is used for Posting date.
+    - **Today's date** - Today's date is used for Posting date.
 
-**Lodgement reference** can be viewed on the **Payment** tab. The field is editable.
+### Post invoice
+
+The Self billing invoice group's **Post invoice requirements** determines how the created invoice is posted:
+- **Do not post** - Created invoice is not posted and remains as pending vendor invoice
+- **Post** - Created invoice is automatically posted. If post failed, it will remain as pending vendor invoice
+- **Post and print** - Created invoice is automatically posted. If post failed, it will remain as pending vendor invoice. The invoice is also automatically printed as per Print management destination. The following print management destination options are supported:
+    - Smart Send (where licensed)
+    - Email
+
