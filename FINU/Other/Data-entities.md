@@ -106,7 +106,7 @@ Accounts payable > Setup > Accounts payable parameters
 
 
 ### Self billing invoice groups
-Accounts payable > Setup > Self billing invoice groups
+Accounts payable > Setup > Self billing invoice groups <br>
 Data entity: Self billing invoice groups
 
 
