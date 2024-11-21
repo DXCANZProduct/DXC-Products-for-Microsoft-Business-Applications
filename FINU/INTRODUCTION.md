@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Introduction to Finance Utilities 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-20
+ms.date: 2024-11-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -140,7 +140,8 @@ Modification allows users to automatically save the electronic reporting file to
 
 ## Self billing invoicing / Recipient-Created Tax Invoice (RCTI)
 Provides the ability to automatically create a Purchase invoice for Product receipt(s)
-
+- [Setup](Setup/ACCOUNTS-PAYABLE/Self-billing-invoicing.md)
+- [Processing](Processing/Accounts-Payable/Self-billing-invoicing.md)
 
 # ABN and IRD number validation
 
