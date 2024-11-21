@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities setup - Data Entities 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-20
+ms.date: 2024-11-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -92,6 +92,31 @@ Accounts payable > Payment setup > Methods of payments
 **Entity**                          | **Additional Finance utilities fields for standard entity**                 
 :--       |:--                                       
 **Vendor payment method**           | • Sundry method of payment (DFUSUNDRYPAYM) <br> • Auto payment reference number (DFUAUTOPAYMENTREFNUMBER) <br> • BPAY method of payment (DFUBPAYPAYM) <br> • Generate file per payment line (DFUFILEPERPAYMLINE) <br> • Payment control > Lodgement reference is mandatory (DFUVALIDATELODGEMENTREFISMANDATORY) <br> • Payment attributes > Lodgement reference (DFUATTRIBUTELODGEMENTREFENABLED) <br> • File name mask (DFUFILENAMEMASK)
+
+
+# Self billing invoicing / RCTI
+Finance utilities includes the following data entities for Self billing invoicing / Recipient-Created Tax Invoice (RCTI)
+
+### Accounts payable parameters
+Accounts payable > Setup > Accounts payable parameters
+
+**Entity**                          | **Additional Finance utilities fields for standard entity**                 
+:--       |:--                                       
+**Vendor parameters**           | • Enable self billing invoicing (DFUSELFBILLINGINVOICING) <br> • Invoice date (DFUSELFBILLINGINVOICEDATE) <br> • Posting date (DFUSELFBILLINGPOSTINGDATE)
+
+
+### Self billing invoice groups
+Accounts payable > Setup > Self billing invoice groups
+Data entity: Self billing invoice groups
+
+
+### Vendors
+Accounts payable > Vendors > All vendors
+
+**Entity**                          | **Additional Finance utilities fields for standard entity**                 
+:--       |:--                                       
+**Vendors V2**           | • Self billing invoicing
+
 
 # Accounts receivable
 Finance utilities includes the following data entities in Accounts receivable:
