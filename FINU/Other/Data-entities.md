@@ -115,7 +115,7 @@ Accounts payable > Vendors > All vendors
 
 **Entity**                          | **Additional Finance utilities fields for standard entity**                 
 :--       |:--                                       
-**Vendors V2**           | • Self billing invoicing
+**Vendors V2**           | • Self billing invoicing (DFUSELFBILLINGINVOICEGROUP)
 
 
 # Accounts receivable
