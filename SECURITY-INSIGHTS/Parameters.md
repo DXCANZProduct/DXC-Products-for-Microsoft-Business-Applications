@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Setup for Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-02
+ms.date: 2024-11-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -85,6 +85,13 @@ Number of enabled D365 users   | Maximum batch tasks  | Minimum users per task  
 Applies to the following two processes when run as batch:
 - Fetch interaction data from application insights
 - Calculate utilization rates
+
+### 4.3 Visual
+
+Ability to highlight unused licenses for a user and each role for the selected user in **Security insights by user** <br>
+Select required colour in field **Background color for unused license fields**.
+
+<br> ![Visual](IMAGES/Visual.png "Visual")
 
 ## Data entities
 
