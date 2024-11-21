@@ -48,7 +48,7 @@ Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
-19492	| Highlight unused licenses	| Ability to highlight unused licenses for a user and each role for the selected user. Select required colour in field **Background color for unused license fields** on Visual tab in **Insights for user access and security parameters**. <br> ![Visual](Images/ReleaseNotes_20241122_1_1.png "Visual")
+19492	| Highlight unused licenses	| Ability to highlight unused licenses for a user and each role for the selected user. Select required colour in field **Background color for unused license fields** on Visual tab in **Insights for user access and security parameters**. <br> ![Visual](IMAGES/ReleaseNotes_20241122_1.png "Visual")
 
 
 <ins>Bug fixes</ins>
