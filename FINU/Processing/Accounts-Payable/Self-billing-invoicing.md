@@ -56,6 +56,12 @@ Invoice fields populated from setup:
     - **Invoice date** -  The Invoice date date is used for Posting date.
     - **Today's date** - Today's date is used for Posting date.
 
+Invoices can be consolidated where **Create invoice with product receipt** is set to _No_, the **Consolidate invoices** options are
+- **Product receipt** - Split one invoice per one uninvoiced product receipt
+- **Purchase order** - Consolidate all uninvoiced product receipts per purchase order into one invoice
+- **Invoice account** - Consolidate all uninvoiced product receipts per invoice account into one invoice
+- **Receipt date** - Consolidate all uninvoiced product receipts per receipt date into one invoice
+
 ### Post invoice
 
 The Self billing invoice group's **Post invoice requirements** determines how the created invoice is posted:
