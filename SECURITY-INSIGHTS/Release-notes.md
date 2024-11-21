@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Security Insights for D365 FO - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-14
+ms.date: 2024-11-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,6 +39,24 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 Product version: 10.0.40 <br> App build: 10.0.1935.92	  | No		  | 
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202407311
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40.202409101
+
+# Next version
+
+### Release 10.0.40.TBD
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+19492	| Highlight unused licenses	| Ability to highlight unused licenses for a user and each role for the selected user. Select required colour in field **Background color for unused license fields** on Visual tab in **Insights for user access and security parameters**. <br> ![Visual](Images/ReleaseNotes_20241122_1_1.png "Visual")
+
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+19103	| Create privilege utilization record	| Fix for error "Cannot create a record in Privilege utilization (%) (DXCSecurityInsightsPrivilegeUtilization). Security privilege: 0, 0.00. The record already exists."
+19848	| Update conflight	| Fix to following error on step 'Synchronize user roles and access': "Cannot edit a record in User information (SysUserInfo). An update conflict occurred due to another user process deleting the record or changing one or more fields in the record."
 
 
 # Current version
