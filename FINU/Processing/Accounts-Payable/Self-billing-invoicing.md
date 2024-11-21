@@ -62,6 +62,8 @@ Invoices can be consolidated where **Create invoice with product receipt** is se
 - **Invoice account** - Consolidate all uninvoiced product receipts per invoice account into one invoice
 - **Receipt date** - Consolidate all uninvoiced product receipts per receipt date into one invoice
 
+The **Default from** is set to **Product receipt quantity**, and automatically matched to product receipt
+
 ### Post invoice
 
 The Self billing invoice group's **Post invoice requirements** determines how the created invoice is posted:
