@@ -95,7 +95,8 @@ Select required colour in field **Background color for unused license fields**.
 
 ## Data entities
 
-- **Configuration**: Azure application insights connection details
-- **Batch processes**: Insights for user access and security parameters
+- **Configuration** - Azure application insights connection details
+- **Batch processes** - Insights for user access and security parameters
+- **Insights for user access and security** - New export-only data entity. This provides a flat file of all user, role, privilege, menu items and calculated utilization. This is useful for taking a "snapshot" or reviewing in Excel. It is advised to filter records before exporting as this file can be large.
 
 
