@@ -62,6 +62,8 @@ Invoices can be consolidated where **Create invoice with product receipt** is se
 - **Invoice account** - Consolidate all uninvoiced product receipts per invoice account into one invoice
 - **Receipt date** - Consolidate all uninvoiced product receipts per receipt date into one invoice
 
+The consolidation options supports one invoice with multiple product receipts for the same purchase order line.
+
 The **Default from** is set to **Product receipt quantity**, and automatically matched to product receipt.
 
 New invoice header field **Self billing invoice** is set to _Yes_ for these automatically created purchase invoices. 
