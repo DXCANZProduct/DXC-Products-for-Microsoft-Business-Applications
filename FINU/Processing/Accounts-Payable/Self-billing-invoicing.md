@@ -73,7 +73,7 @@ New invoice header field **Self billing invoice** is set to _Yes_ for these auto
 The Self billing invoice group's **Post invoice requirements** determines how the created invoice is posted:
 - **Do not post** - Created invoice is not posted and remains as pending vendor invoice
 - **Post** - Created invoice is automatically posted. If post failed, it will remain as pending vendor invoice
-- **Post and print** - Created invoice is automatically posted. If post failed, it will remain as pending vendor invoice. The invoice is also automatically printed as per Print management destination. The following print management destination options are supported:
+- **Post and print** - Created invoice is automatically posted. If post failed, it will remain as pending vendor invoice. The posted invoice is also automatically printed as per Print management destination. The following print management destination options are supported:
     - Smart Send (where licensed)
     - Email
 
