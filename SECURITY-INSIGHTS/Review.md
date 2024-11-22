@@ -92,7 +92,16 @@ After modifying security configuration, rerun the following to update the values
 The following buttons are available on the views:
 - Assign privilege to duty - Security configuration is opended for the selected privilege with the ability to assign to multiple duties
 - Assign privilege to role - Security configuration is opended for the selected privilege with the ability to assign to multiple roles
-- Manage privilege assignments - Security configuration is opended for the selected privilege(s) 
+- Manage privilege assignments - Security configuration is opended for the selected privilege(s)
+
+#### Links 
+
+Clicking on a **Role name**, will open **Assign users to roles** form, thus enabling reviewer to see which other users have been assigned to the selected role.
+
+#### Data entities for review
+
+- **Insights for user access and security** - Export-only data entity. This provides a flat file of all user, role, privilege, menu items and calculated utilization. This is useful for taking a "snapshot" or reviewing in Excel. It is advised to filter records before exporting as this file can be large.
+
 
 #### Security insights by user
 ![Security insights by user](IMAGES/Overview.png)
