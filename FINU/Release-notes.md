@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-21
+ms.date: 2024-11-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -89,6 +89,7 @@ Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
 19459		| Cash and bank management	| Reconciliation matching rules - Offset type Ledger	| When entering new Offset account number, limited to only **Main accounts** (no financial dimensions). Offset financial dimensions needs to be entered Financial dimensions > Offset account
 19527		| Various	| ABN validation	| Fix to **From date** for _Cancelled_ GST records
+20187		| Accounts payable	| BPAY	| When overriding the vendor bank's default **lodgement reference** on a BPAY method of payment invoice and manually selecting the invoice for settlement on the payment journal line, the default lodgement reference wasn't overridden by the actual lodgement reference on the invoice. This issue only applied to manual settlement, not payment proposal process.
 	
 
 # Current version
