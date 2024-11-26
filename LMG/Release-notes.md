@@ -3,9 +3,9 @@
 
 title: License manager
 description: License manager - Release notes
-author: jdutoit2
+author: Monica du Toit
 manager: Kym Parker
-ms.date: 2024-03-01
+ms.date: 2024-11-27
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form:
 audience: Application User
 # ms.devlang:
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: DXCLicenseManager
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -44,6 +44,7 @@ DXC License Manager 10.0.40.202410231 runs on the following Microsoft releases
 | :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Microsoft Dynamics 365 application | 10.0.40 | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40) |
 | Microsoft Dynamics 365 application | 10.0.41 | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) |
+| Microsoft Dynamics 365 application | 10.0.42 | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42) |
 
 <b>Build 7.0.7279.122 </b>
 
