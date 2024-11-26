@@ -58,7 +58,7 @@ The following table describes the Freight forwarder module fields that are avail
 <ins>**Other mappings**</ins>	        |
 **Customs broker**                    |	Customs broker mapping <br> Note: For further information see [Setup customs broker mapping](FF-SETUP/Customs-broker-mapping.md)
 **UOM**                               |	Unit of measure mappings. Ability to map a trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM-mapping.md)
-**Auto send backorder voyage advice** | Ability to automatically trigger a new **Voyage advice** record for remaining purchase order lines after processing inbound **Voyage creator** when: <br> • Trading partner's **Auto send backorder voyage advice** set to _Yes_ <br> • Trading partner has **Voyage advice** document enabled <br> • Vendor's **No landed cost backorder** set to _No_ <br> • Purchase order line's **Deliver remainder** > 0 and <br> • Purchase order line's **Voyage** is blank
+**Auto send backorder voyage advice** | Ability to automatically trigger a new **Voyage advice** record for remaining purchase order lines after processing inbound **Voyage creator** when: <br> • Trading partner's **Auto send backorder voyage advice** set to _Yes_ <br> • Trading partner has **Voyage advice** document enabled <br> • Vendor's **No landed cost backorder** set to _No_ <br> • Purchase order line's **Deliver remainder** > 0 <br> • Purchase order line's **Voyage** is blank
 
 
 - Data entity: EDI Freight forwarders
