@@ -3,9 +3,9 @@
 
 title: EDI Freight forwarder
 description: EDI Freight forwarder Setup - Trading partners
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-11-26
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-11-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form: SAB_EDITradingPartner, VendTableListPage
 audience: Application User
 # ms.devlang:
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm:
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDIFreightForwarderDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:  2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -58,6 +58,8 @@ The following table describes the Freight forwarder module fields that are avail
 <ins>**Other mappings**</ins>	        |
 **Customs broker**                    |	Customs broker mapping <br> Note: For further information see [Setup customs broker mapping](FF-SETUP/Customs-broker-mapping.md)
 **UOM**                               |	Unit of measure mappings. Ability to map a trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM-mapping.md)
+**Auto send backorder voyage advice** | Ability to automatically trigger a new **Voyage advice** record for remaining purchase order lines after processing inbound **Voyage creator** when: <br> • Trading partner's **Auto send backorder voyage advice** set to _Yes_ <br> • Trading partner has **Voyage advice** document enabled <br> • Vendor's **No landed cost backorder** set to _No_ <br> • Purchase order line's **Deliver remainder** > 0 and <br> • Purchase order line's **Voyage** is blank
+
 
 - Data entity: EDI Freight forwarders
 
