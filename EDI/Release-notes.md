@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-22
+ms.date: 2024-11-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -79,6 +79,12 @@ Number	| Name		 | Description
 18847	| EDI Sales order processing workspaces	- Skip error lines	| New tile and list **Skip error lines** added for Customer purchase order records that completed succesfully but contains skipped lines where the 'Skip error lines' document setting is used. <br>  ![Skip error lines](RELEASE-NOTES-IMAGES/20241129_1.png "Skip error lines")
 18821	| Customer purchase order - Skip error lines	| 'The final sell date for item % has passed' now included in supported skip error lines scenarios. If skip error lines is set to No on the document setting, the staging record will error if the sell date has passed.
 19950	| Customer purchase order - Default product variant	| Where the product variant isn't provided by Staging, GTIN, Barcode or External item number, the default product variant will default to the sales order line.
+
+**Freight forwarder landed cost module**
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+19178	| Voyage advice	| Ability to automatically send a new **Voyage advice** to Freight forwarder Trading partner when processing inbound **Voyage creator** and the purchase order still has remaining items after. <br> The automatically triggered Voyage advice will contain purchase order lines where <br> • Deliver remainder > 0 and <br> • Voyage is blank <br> <br> In order to activate this new feature: <br> • Trading partner's **Auto send backorder voyage advice** set to _Yes_ and Voyage advice document enabled <br> • Vendor's **No landed cost backorder** set to _No_
 
 
 <ins>Bug fixes</ins>
