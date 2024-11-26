@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Encryption / decryption
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-26
+ms.date: 2024-11-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,12 +55,17 @@ To open the **DXC encryption parameters** page, go to **Organization administrat
 
 Select **New** and set the fields as described in the following subsection.
 
-Field                       | Description                             | Encryption     | Decryption
-:--                         |:--                                      |:--             |:-- 
-**Encryption key name**     | Enter a unique name for the encryption
-**Passphrase**              |	Select the applicable **Secret** from **Key vault parameters**
-**Private key**             |	Select the applicable **Secret** from **Key vault parameters** | Company's private key  | Bank's public key
-**Counter party's public key**    |	Select the applicable **Secret** from **Key vault parameters** | Bank's public key | Company's public key
+- If a Company is sending a file to the bank, then:
+  - The company uses their Private key, bank’s Public key and Passphrase to encrypt the file before sending
+
+- When the Bank receives the file:
+  - The Bank uses their Private key, the company’s Public key and the Passphrase to decrypt the file
+ 
+- When the Bank is sending the file to the company:
+  - The Bank uses their Private key, The company’s Public key and Passphrase to encrypt and send the file to the company
+
+- When the company receives the file:
+  - The company uses their Private Key, the bank’s Public key and the Passphrase to decrypt the file
 
 
 ## Step 3 - Use Encryption in Finance utilities
