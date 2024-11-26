@@ -3,9 +3,9 @@
 
 title: EDI Freight forwarder
 description: EDI Freight forwarder Documents - Voyage advice
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-04-04
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-11-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form: Action:SAB_EDIStagingFormRun_FFLCVoyageAdvice
 audience: Application User
 # ms.devlang:
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm:
 ms.custom: 
 ms.search.region: IconEDIFreightForwarderDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:  2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -60,6 +60,14 @@ Navigate to **Accounts payable > Purchase orders > All purchase orders**
 - To create the outbound staging record use either of the following: 
     - **Send to EDI** on the Purchase order's Action Pane, Purchase tab, Landed cost heading
     - **Confirmation** or **Confirm** on the Purchase order's Action Pane, Purchase tab
+
+#### Backorder Voyage advice 
+The module also includes the ability to automatically trigger a new **Voyage advice** record for remaining purchase order lines after processing inbound **Voyage creator** when:
+- Trading partner's **Auto send backorder voyage advice** set to _Yes_
+- Trading partner has **Voyage advice** document enabled
+- Vendor's **No landed cost backorder** set to _No_
+- Purchase order line's **Deliver remainder** > 0
+- Purchase order line's **Voyage** is blank
 
 ## View staging table records
 To view the Voyage advice staging records, go to **EDI > Documents > Freight forwarder landed cost documents > Voyage advice**. <br>
