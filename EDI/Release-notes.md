@@ -84,8 +84,7 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
-19178	| Voyage advice	| Ability to automatically send a new **Voyage advice** to Freight forwarder Trading partner when processing inbound **Voyage creator** and the purchase order still has remaining items after. <br> The automatically triggered Voyage advice will contain purchase order lines where <br> • Deliver remainder > 0 and <br> • Voyage is blank <br> <br> In order to activate this new feature: <br> • Trading partner's **Auto send backorder voyage advice** set to _Yes_ and Voyage advice document enabled <br> • Vendor's **No landed cost backorder** set to _No_
-
+19178	| Voyage advice	| Ability to automatically trigger a new **Voyage advice** record for remaining purchase order lines after processing inbound **Voyage creator** when: <br> • Trading partner's **Auto send backorder voyage advice** set to _Yes_ <br> • Trading partner has **Voyage advice** document enabled <br> • Vendor's **No landed cost backorder** set to _No_ <br> • Purchase order line's **Deliver remainder** > 0 and <br> • Purchase order line's **Voyage** is blank
 
 <ins>Bug fixes</ins>
 
