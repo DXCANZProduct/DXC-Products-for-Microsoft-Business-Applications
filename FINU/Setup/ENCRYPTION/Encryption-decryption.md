@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Encryption / decryption
-author: jdutoit2
+author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-06-21
+ms.date: 2024-11-26
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  DXCEncryptionParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -55,12 +55,12 @@ To open the **DXC encryption parameters** page, go to **Organization administrat
 
 Select **New** and set the fields as described in the following subsection.
 
-Field                       | Description                         
-:--                         |:--                        
+Field                       | Description                             | Encryption     | Decryption
+:--                         |:--                                      |:--             |:-- 
 **Encryption key name**     | Enter a unique name for the encryption
 **Passphrase**              |	Select the applicable **Secret** from **Key vault parameters**
-**Private key**             |	Select the applicable **Secret** from **Key vault parameters**. <br> For inbound decryption this would be the bank's private key. <br> For outbound encryption this would be the company's private key.
-**Counter party's public key**    |	Select the applicable **Secret** from **Key vault parameters**. <br> For inbound decryption this would be the company's public key. <br> For outbound encryption this would be the bank's public key.
+**Private key**             |	Select the applicable **Secret** from **Key vault parameters** | Company's private key  | Bank's public key
+**Counter party's public key**    |	Select the applicable **Secret** from **Key vault parameters** | Bank's public key | Company's public key
 
 
 ## Step 3 - Use Encryption in Finance utilities
