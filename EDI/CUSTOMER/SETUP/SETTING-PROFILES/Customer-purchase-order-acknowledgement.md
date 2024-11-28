@@ -3,9 +3,9 @@
 
 title: EDI Customer
 description: EDI Customer Setup - Document type Setting profiles - Customer purchase order acknowledgement
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-10-01
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2024-11-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  SAB_EDIDocumentTypeTable, SAB_EDITradingPartner
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDICustomerDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -39,7 +39,8 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Field**           |	**Description**	                          | **Options/Example**
 :-------            |:-------                                   |:----------
 <ins>**Purchase Order**</ins> |   |
-**Lock Order**      |	Specify if the order should be locked once a Purchase order acknowledgement (POA) has been sent. Also affects the POA status and if record will be included in **Send customer purchase order acknowledgement** periodic task	| •	**Yes** – Order is locked with **POA pending hold code** and **POA status = Pending** (included in **Send customer purchase order acknowledgement** periodic task) <br> •	**No** – Order isn’t locked with POA pending hold code and **POA status = Blank** (not included in Send customer purchase order acknowledgement periodic task)
+**POA required with order hold**      |	In previous EDI versions this field was called 'Lock order'. Specify if the sales order should be locked once a Purchase order acknowledgement (POA) has been sent. Also affects the POA status and if record will be included in **Send customer purchase order acknowledgement** periodic task	| •	**Yes** – Sales order is locked with **POA pending hold code** and **POA status = Pending** (included in **Send customer purchase order acknowledgement** periodic task) <br> •	**No** – Sales order isn’t locked with POA pending hold code and **POA status = Blank** (not included in Send customer purchase order acknowledgement periodic task)
+**POA required without order hold**      |	Affects the POA status and if record will be included in **Send customer purchase order acknowledgement** periodic task. Doesn't put the sales order on hold.	| •	**Yes** – Sales order's **POA status = Pending** (included in **Send customer purchase order acknowledgement** periodic task) <br> •	**No** – Sales order's **POA status = Blank** (not included in Send customer purchase order acknowledgement periodic task)
 **Safety level if POA sent**  |	Specify the level to which the sales order should be locked once the POA has been sent	| •	**None** – Sales order can be edited when a POA has been sent <br> •	**Warning** – a warning will be received if a sales order is edited after the POA has been sent <br> •	**Locked** – Sales order cannot be edited once the POA has been sent
 **PO confirmation required**  |	If POA has been sent and a POC is required in return	| •	**Yes** – Sales order cannot be actioned until POC has been received. The sales order locked with **POC pending hold code**. **POA status = Confirm pending** until confirmation is received <br> •	**No** – Sales order can be actioned without receiving a POC
 <ins>**Acknowledgement**</ins>  |   |
