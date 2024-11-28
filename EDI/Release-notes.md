@@ -76,6 +76,7 @@ Number	| Name		 | Description
 18821	| Customer purchase order - Skip error lines	| 'The final sell date for item % has passed' now included in supported skip error lines scenarios. If skip error lines is set to No on the document setting, the staging record will error if the sell date has passed.
 19950	| Customer purchase order - Default product variant	| Where the product variant isn't provided by Staging, GTIN, Barcode or External item number, the default product variant will default to the sales order line.
 19964	| Unified pricing management	| Ability to process Customer purchase order record with Unified pricing management enabled.
+20158	| Customer purchase order acknowledgement	| More options for POA required: <br> • **POA required with order hold** - Sales order **POA status** set to _Pending_ and Sales order **put on hold** (no change to processing, only relabeled to 'Lock order') <br> • **POA required without order hold** - Sales order **POA status** set to _Pending_ (new option) <br>  ![POA required](RELEASE-NOTES-IMAGES/20241129_2.png "POA required")
 
 
 **Freight forwarder landed cost module**
