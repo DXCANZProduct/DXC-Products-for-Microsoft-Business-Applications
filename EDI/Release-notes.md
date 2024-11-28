@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-27
+ms.date: 2024-11-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,10 +42,6 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40.202409051
 
 
-> Note: When using Preview feature **Unified pricing management**, the following error was experienced when processing 'Customer purchase order' staging record with D365 version **10.0.41 (10.0.2015.78)**: <br> "Cannot select a record in Current client sessions (SysClientSessions). SessionId: 0, 0.There is a temporary problem with the connection to the database. Please retry later. <br> % Cannot select a record in Commerce sales orders (RetailSalesTable). Reference: %, %.There is a temporary problem with the connection to the database. Please retry later." <br> This scenario has been retested on **10.0.42 (10.0.2095.13)** with no errors.
-
-
-
 ### Microsoft deprecation notice
 
 [Microsoft notice](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#feature-deprecation-effective-october-2024)
@@ -79,6 +75,8 @@ Number	| Name		 | Description
 18847	| EDI Sales order processing workspaces	- Skip error lines	| New tile and list **Skip error lines** added for Customer purchase order records that completed succesfully but contains skipped lines where the 'Skip error lines' document setting is used. <br>  ![Skip error lines](RELEASE-NOTES-IMAGES/20241129_1.png "Skip error lines")
 18821	| Customer purchase order - Skip error lines	| 'The final sell date for item % has passed' now included in supported skip error lines scenarios. If skip error lines is set to No on the document setting, the staging record will error if the sell date has passed.
 19950	| Customer purchase order - Default product variant	| Where the product variant isn't provided by Staging, GTIN, Barcode or External item number, the default product variant will default to the sales order line.
+19964	| Unified pricing management	| Ability to process Customer purchase order record with Unified pricing management enabled.
+
 
 **Freight forwarder landed cost module**
 
