@@ -31,8 +31,8 @@ ms.dyn365.ops.version: AX 7.0.1
 ## EDI Landed cost processing
 
 The EDI Landed cost processing workspace provides a quick and easy way to view the pending actions for EDI Freight forwarders. <br>
+Users can obtain purchase orders that needs to be sent as Voyage advice <br>
 
-Users can obtain pending purchase orders, to be sent as Voyage advice, that are setup for the trading partner but **Sent to EDI** is set to _No_. <br>
 Users can access the **EDI Landed cost processing workspace** by navigating to **EDI > Freight forwarder workspaces > EDI Landed cost processing**. <br> 
 
 The following subsections will discuss the various tiles and tabs available on the workspace.
