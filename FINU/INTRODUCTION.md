@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Introduction to Finance Utilities 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-21
+ms.date: 2024-12-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
