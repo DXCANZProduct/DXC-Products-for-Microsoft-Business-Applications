@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Finance utilities connections
 author: jdutoit2
 manager: Pontus Ek
-ms.date: 2024-06-25
+ms.date: 2024-12-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,8 +52,8 @@ Field         | Description                         | Example or Options
 **Connection type** |	Select the applicable connection type	  | •	FTP <br> •	Azure blob <br> •	SFTP <br> •	SharePoint <br> •	API Endpoint
 **Error action**    |	The action to take when there is an error with the connection | •	Error <br> •	Warning
 **Enabled**         |	Once all the mandatory fields have been completed the connection can be enabled	  | •	Yes <br> •	No
-| **Enable file encryption/decryption** | Set to _Yes_ if the import file should be decrypted | •	No <br>	• Yes  |
-| **Encryption key name** |	Select applicable **Encryption key name**. <br> See [DXC encryption parameters](../ENCRYPTION/Encryption-decryption.md) for additional details. 
+**Enable file encryption/decryption** | Set to _Yes_ if the import file should be decrypted | •	No <br>	• Yes 
+**Encryption key name** |	Select applicable **Encryption key name**. <br> See [DXC encryption parameters](../ENCRYPTION/Encryption-decryption.md) for additional details. 
 
 Click **Save** and the applicable Setup will be displayed as per Connection type selected. <br>
 

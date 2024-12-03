@@ -118,6 +118,13 @@ Within the Vendor payment proposal, grouping also occurs for the new BPAY field.
 - [BPAY setup](Setup/ACCOUNTS-PAYABLE/BPAY-payment.md)
 - [BPAY processing](Processing/Accounts-Payable/BPAY-payment.md)
 
+## Save Vendor payments file to secure location
+
+Where the **Method of payment** file uses Generic electronic Export format, the **Generate payments** file can be sent to a secure location like ftp, ftps, sftp, azure blob or api endpoint.<br>
+See [link](#save-electronic-reporting-file-to-secure-location) for more details.
+
+File can be PGP encrypted (optional).
+
 ## Payment advice report
 
 A custom-built report has been developed to provide a Payment advice to vendors upon processing an EFT payment run. The report will show the vendor bank account details where the payment is deposited as well as the invoice numbers paid, what amount and what discount applied. This remittance advice report works in conjunction with the Smart Send function.
@@ -130,13 +137,6 @@ Finance utilities have added additional fields to **Vendor approval** and **Vend
 This provides companies the option to submit changes to these fields to the standard vendor approval workflows.
 - [Vendor bank account changes worklow setup](Setup/ACCOUNTS-PAYABLE/Vendor-bank-account-changes-workflow.md)
 
-
-## Save electronic reporting file to secure location
-
-Modification allows users to automatically save the electronic reporting file to a secure location like ftp, ftps, sftp or azure blob.
-- [Encryption/decryption](Setup/ENCRYPTION/Encryption-decryption.md) - where the export file should be encrypted
-- [Save electronic reporting file to secure location setup](Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md)
-- [Save electronic reporting file to secure location processing](Processing/Accounts-Payable/Save-electronic-reporting-file-to-secure-location.md)
 
 ## Self billing invoicing / Recipient-Created Tax Invoice (RCTI)
 Provides the ability to automatically create a Purchase invoice for Product receipt(s)
@@ -191,6 +191,27 @@ The modification gives the user the ability to set the budget import file's form
 - [Budget import setup](Setup/BUDGETING/Budget-import.md)
 - [Budget import processing](Processing/Budgeting/Budget-import.md)
 - [Example file format](Processing/Budgeting/Example-file-format.md)
+
+# Electronic reporting
+
+## Save electronic reporting file to secure location
+
+Modification allows users to automatically save the electronic reporting file to a secure location like ftp, ftps, sftp, azure blob or api endpoint.
+- [Encryption/decryption](Setup/ENCRYPTION/Encryption-decryption.md) - where the export file should be encrypted
+- [Save electronic reporting file to secure location setup](Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md)
+- [Save electronic reporting file to secure location processing](Processing/Accounts-Payable/Save-electronic-reporting-file-to-secure-location.md)
+
+# Encryption / decryption
+
+##  Encrypt electronic reporting file with export
+- [Encryption/decryption](Setup/ENCRYPTION/Encryption-decryption.md) - Encryption / Decryption setup
+- [Connection](Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md) - Use the encryption on the export connection
+
+## Decrypt inbound file with import
+- [Encryption/decryption](Setup/ENCRYPTION/Encryption-decryption.md) - Encryption / Decryption setup
+- [Connection](Setup/ACCOUNTS-PAYABLE/Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md) - Use the decryption on the import bank statement connection
+- [Connection](/Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.html#financial-utilities-connection) - Use the decryption on the import customer remittance connection
+
 
 # Other
 
