@@ -66,6 +66,7 @@ Planned release date: 4 December 2024
 Number	| Name		 | Description
 :--	|:--		 |:--
 19356	| Azure connection - SAS	| Support Azure blob site using SAS account level key vault
+17514	| DXC License manager	| New DXC License manager 10.0.40.202412041. See [Release notes](../LMG/Release-notes.md#d365-finance-and-operations) for more detail.
 
 
 **Customer module**	
