@@ -4,7 +4,7 @@
 title: EDI Freight forwarder
 description: EDI Freight forwarder workspaces - EDI Landed cost processing
 author: Pontus Ek
-ms.date: 2024-11-29
+ms.date: 2024-12-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,7 +42,6 @@ Filters to D365 purchase orders where a Voyage advice is outstanding for the pur
 - Purchase order **Shipping company** is setup as a EDI Freight forwarder landed cost Trading partner and has **Voyage advice** document enabled
 - Purchase order status is _Open order_
 - Purchase order Voyage advice **Sent to EDI** is set to _No_
-- Purchase order **Lines pending** is set to _Yes_ AND Vendor's **No landed cost backorder** is set to _No_
 
 
 In addition, from within the workspace it is possible to view and even process information relating to the selected records. <br>
