@@ -206,7 +206,7 @@ Modification allows users to automatically save the electronic reporting file to
 ##  Encrypt electronic reporting file with export
 - [Encryption/decryption](Setup/ENCRYPTION/Encryption-decryption.md) - Encryption / Decryption setup
 - [Connection](Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md) - Use the encryption on the export connection
-- 
+
 ## Decrypt inbound file with import
 - [Encryption/decryption](Setup/ENCRYPTION/Encryption-decryption.md) - Encryption / Decryption setup
 - [Connection](Setup/ACCOUNTS-PAYABLE/Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md) - Use the decryption on the import bank statement connection
