@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-12-03
+ms.date: 2024-12-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -84,7 +84,7 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--
 19178	| Voyage advice	| Ability to automatically trigger a new **Voyage advice** record for remaining purchase order lines after processing inbound **Voyage creator** when: <br> • Trading partner's **Auto send backorder voyage advice** set to _Yes_ <br> • Trading partner has **Voyage advice** document enabled <br> • Vendor's **No landed cost backorder** set to _No_ <br> • Purchase order line's **Deliver remainder** > 0 <br> • Purchase order line's **Voyage** is blank
-19455	| Workspace	| New workspace **EDI Landed cost processing**. Ability to view purchase orders that that should still be sent as **Voyage advice**. <br> For example the Purchase order has been created, but not yet confirmed (which includes an auto Voyage advice), or Voyage creator has been imported which didn't include all the purchase order lines, i.e. some lines are still pending. <br> [User guide](FREIGHT-FORWARDER/WORKSPACES/EDI-Landed-cost-processing.md) <br> <br>  ![EDI Landed cost processing](RELEASE-NOTES-IMAGES/20241129_3.png "EDI Landed cost processing")
+19455	| Workspace	| New workspace **EDI Landed cost processing**. Ability to view purchase orders that that should still be sent as **Voyage advice**. <br> For example the Purchase order has been created, but not yet confirmed (which includes an auto Voyage advice). <br> [User guide](FREIGHT-FORWARDER/WORKSPACES/EDI-Landed-cost-processing.md) <br> <br>  ![EDI Landed cost processing](RELEASE-NOTES-IMAGES/20241129_3.png "EDI Landed cost processing")
 
 <ins>Bug fixes</ins>
 
