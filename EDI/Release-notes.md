@@ -54,10 +54,23 @@ Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40
 		• Credential type: Key Vault <br>
 		• Key vault: Secret setup in step 2
 
-# Next version
+# Current version
 
-### Release 10.0.40.202412TBD
-Planned release date: 4 December 2024
+Next release is planned for 31 March 2025.
+
+### Release 10.0.40.20241204
+
+DXC EDI 10.0.40 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+Microsoft Dynamics 365 application	| 10.0.41 	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
+Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
+
+
+#### Build 10.0.40.202412041
+Release date: 4 December 2024
 
 <ins>New features</ins>
 
@@ -115,20 +128,11 @@ Number	| Name		 | Description
 20117	| Vendor purchase order change	| Fix to cancelled purchase order line's 'Line change type' which were incorrectly 'Quantity decrease' instead of 'Delete items'.
 
 
-# Current version
+# Previous version(s)
 
-Next release is planned for 29 November 2024.
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.40.20240905
-
-DXC EDI 10.0.40 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-Microsoft Dynamics 365 application	| 10.0.41 	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
-Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
-
 
 #### Build  10.0.40.202409051
 Release date: 5 September 2024 <br>
@@ -183,10 +187,6 @@ Number	| Name		 | Description
 18315	| Product master	| Base physical dimensions on the Product master unit
 18596	| Transfer order picking list registration	| Error when processing Transfer order Picking list registration Inbound file to Staging: Function SAB_EDIStagingHistory::logHistory has been incorrectly called
 
-
-# Previous version(s)
-
-Approximately one year of previous versions are included below.
 
 ### Release 10.0.37.20240530
 
