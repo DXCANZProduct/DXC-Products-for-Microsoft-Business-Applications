@@ -67,7 +67,7 @@ Number	| Name		 | Description
 :--	|:--		 |:--
 19356	| Azure connection - SAS	| Support Azure blob site using SAS account level key vault.
 17514	| DXC License manager	| New DXC License manager 10.0.40.202412041. See [Release notes](../LMG/Release-notes.md#d365-finance-and-operations) for more detail.
-20389	| DXC Connections	| New DXC Connections 10.0.40.202412041. Affects Azure connections. See [Release notes](../CONNECTIONS/Release-notes.md) for more detail.
+20389	| DXC Connections	| New DXC Connections 10.0.40.202412041. Affects Azure connections. <br> See [Release notes](../CONNECTIONS/Release-notes.md) for more detail.
 
 **Customer module**	
 
