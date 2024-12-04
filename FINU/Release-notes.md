@@ -84,6 +84,7 @@ Number	  	| Module	| Functionality	  	| Description
 20197		| Accounts payable	| Self billing invoicing <br> Recipient-Created Tax Invoice (RCTI) | Ability to automatically create vendor invoices after a product receipt. <br> The invoice can be automatically created at the same time of product receipt, or split/consolidate using the periodic task. <br> <br> The periodic task split/consolidate options include: <br> • Product receipt <br> • Purchase order <br> • Invoice account <br> • Receipt date <br> <br> Post options: <br> • Do not post <br> • Post <br> • Post and print - using print management destinations email or SmartSend (if licensed) <br> <br> [Setup](Setup/ACCOUNTS-PAYABLE/Self-billing-invoicing.md) <br> [Processing](Processing/Accounts-Payable/Self-billing-invoicing.md) 
 20304		| Accounts payable	| Method of payment - BPAY	| Payment control **Payment ID** and Payment attributes **Payment ID** is still defaulted to Yes, but now no longer disabled
 17514	| DXC License manager	| Licensing | New DXC License manager 10.0.40.202412041. See [Release notes](../LMG/Release-notes.md#d365-finance-and-operations) for more detail.
+20389	| DXC Connections	| All Azure connections | New DXC Connections 10.0.40.202412041. See [Release notes](../CONNECTIONS/Release-notes.md) for more detail.
 
 <ins>Bug fixes</ins>
 
