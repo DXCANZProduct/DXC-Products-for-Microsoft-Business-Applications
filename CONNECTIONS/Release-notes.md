@@ -52,7 +52,7 @@ Build <b>7.0.7279.122 </b>
 DXCConnections.dll <b>1.0.2024.12043</b>  
 DXCConnectionsAzureLib.dll <b>1.0.2024.12043</b>
 
-Release date: 12 December 2024
+Release date: 04 December 2024
 
 <ins>New features</ins>
 
