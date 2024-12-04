@@ -36,9 +36,9 @@ This document describes the features that are either new or changed in the relea
 
 ### DXC License Manager
 
-#### **Release 10.0.40.202410231**
+#### **Release 10.0.40.202412041**
 
-DXC License Manager 10.0.40.202410231 runs on the following Microsoft releases
+DXC License Manager 10.0.40.202412041 runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                         |
 | :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,9 +50,9 @@ DXC License Manager 10.0.40.202410231 runs on the following Microsoft releases
 
 <ins>New features</ins>
 
-| Number | Functionality                                           | Description                                                                                                                                  |
-| :----- | :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------- |
-| 18579  | Added resiliency strategies when license server is down | Implemented new mechanisms to detect license validation call failures and graciously handle failure responses when licensing service is down |
+| Number | Functionality                                                       | Description                                                                                                                                             |
+| :----- | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 20571  | Update FinOps license validation service to new Microsoft Azure Org | License validation service in Dynamics 365 Finance and Operations for ISV products has been successfully migrated to a new Microsoft Azure Organization |
 
 ### DXC License
 
@@ -119,6 +119,24 @@ Release date: 17 April 2024
 ## D365 Finance and Operations
 
 ### DXC License Manager
+
+#### **Release 10.0.40.202410231**
+
+DXC License Manager 10.0.40.202410231 runs on the following Microsoft releases
+
+| Base                               | Version | Release                                                                                                                                                         |
+| :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft Dynamics 365 application | 10.0.40 | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40) |
+| Microsoft Dynamics 365 application | 10.0.41 | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) |
+| Microsoft Dynamics 365 application | 10.0.42 | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42) |
+
+<b>Build 7.0.7279.122 </b>
+
+<ins>New features</ins>
+
+| Number | Functionality                                           | Description                                                                                                                                  |
+| :----- | :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------- |
+| 18579  | Added resiliency strategies when license server is down | Implemented new mechanisms to detect license validation call failures and graciously handle failure responses when licensing service is down |
 
 #### **Release 10.0.37.202404262**
 

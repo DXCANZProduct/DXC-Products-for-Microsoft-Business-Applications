@@ -29,16 +29,6 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Frequently Asked Questions
 
-<!-- TOC -->
-
-FAQs
-
-- [Version and Support Information](#version-and-support-information)
-- [Dependency and Security Information](#dependency-and-security-information)
-- [Troubleshooting](#troubleshooting)
-
-<!-- /TOC -->
-
 ## Version and Support Information
 
 Where can I find contact information for support?

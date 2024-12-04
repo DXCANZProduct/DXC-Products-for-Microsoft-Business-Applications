@@ -24,25 +24,6 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # License Manager Web App
 
-<!--TOC-->
-
-- [License Manager Web App](#license-manager-web-app)
-  - [Overview](#overview)
-  - [How to gain access for your organization?](#how-to-gain-access-for-your-organization)
-  - [Granting access to organization users](#granting-access-to-organization-users)
-  - [Signing up or signing in](#signing-up-or-signing-in)
-    - [Sign up process](#sign-up-process)
-  - [Data table properties](#data-table-properties)
-  - [Products](#products)
-  - [Customers](#customers)
-    - [Customer Products](#customer-products)
-    - [Customer Environments](#customer-environments)
-  - [Reports](#reports)
-    - [License Expiry](#license-expiry)
-  - [Power BI](#power-bi)
-
-<!--/TOC-->
-
 ## Overview
 
 The license manager web app has been designed using React JS to enable customer license information management and accessibility across different user groups within an organization.
