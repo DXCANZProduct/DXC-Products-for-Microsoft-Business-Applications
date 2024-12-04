@@ -48,7 +48,7 @@ DXC License Manager 10.0.40.202412041 runs on the following Microsoft releases
 
 <b>Build 7.0.7279.122 </b>
 
-Release date: 12 December 2024
+Release date: 04 December 2024
 
 <ins>New features</ins>
 
