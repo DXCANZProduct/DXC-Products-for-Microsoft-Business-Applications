@@ -55,7 +55,7 @@ Number	| Name		 | Description
 19990	| Not assigned users	| When Initiating security group using **User groups** or **Microsoft Entra ID security groups**, an extra security group **Not assigned** will be created for users that doesn't fall within any of the existing groups.
 20430	| Only enabled users	| Only enabled users displayed in: <br> • Security insights by user <br> • Security insights by license
 19930	| View related roles	| Button **View related roles** added to Duties and Privileges FastTabs on 'Security insights by user'. Provides a "where used" functionality. <br> ![View related roles](IMAGES/ReleaseNotes_20241122_2.png "View related roles")
-20488	| Fetch interaction data from application Insights	| **Record count** now included per task in Fetch's batch job. Provides information on how many records were fetched, and since the job is split into tasks as per parameters, the batch job history infolog will display the number of records fetched per task.
+20488	| Fetch interaction data from application Insights	| **Record count** now included per task in Fetch's batch job infolog. Provides information on how many records were fetched, and since the job is split into tasks as per parameters, the batch job history infolog will display the number of records fetched per task.
 17514	| DXC License manager	| New DXC License manager 10.0.40.202412041. See [Release notes](../LMG/Release-notes.md#d365-finance-and-operations) for more detail.
 
 
