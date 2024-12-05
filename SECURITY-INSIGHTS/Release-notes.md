@@ -77,6 +77,7 @@ Number	| Name		 | Description
 19103	| Create privilege utilization record	| Fix for error "Cannot create a record in Privilege utilization (%) (DXCSecurityInsightsPrivilegeUtilization). Security privilege: 0, 0.00. The record already exists."
 19848	| Update conflict	| Fix to following error on step 'Synchronize user roles and access': "Cannot edit a record in User information (SysUserInfo). An update conflict occurred due to another user process deleting the record or changing one or more fields in the record."
 20395	| Refresh unfilters	| When user filters on the following, a Refresh (Shift + F5) will now not remove the filters: <br> • Security insights by user - Users FastTab <br> • Security insights by license - Licenses and Users FastTab
+20392	| Validation	| Incorrectly succesfully validated Azure application insights configuration in **Insights for user access and security parameters** when the **Application Insights App Id** was incorrect.
 
 
 # Previous Version(s)
