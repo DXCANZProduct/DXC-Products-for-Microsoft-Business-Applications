@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Security Insights for D365 FO - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-12-05
+ms.date: 2024-12-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,11 +40,22 @@ Product version: 10.0.40 <br> App build: 10.0.1935.92	  | No		  |
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202407311
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40.202409101
 
-# Next version
+# Current version
 
-### Release 10.0.40.202412TBD
+### Release 10.0.40.20241206
 
-Planned release date: Early December 2024
+Security Insights for D365 FO 10.0.40 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
+Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
+
+
+#### Build 10.0.40.202412061
+Release date: 6 December 2024
+
 
 <ins>New features</ins>
 
@@ -68,18 +79,9 @@ Number	| Name		 | Description
 20395	| Refresh unfilters	| When user filters on the following, a Refresh (Shift + F5) will now not remove the filters: <br> • Security insights by user - Users FastTab <br> • Security insights by license - Licenses and Users FastTab
 
 
-# Current version
+# Previous Version(s)
 
 ### Release 10.0.40.20240910
-
-Security Insights for D365 FO 10.0.40 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
-Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
-
 
 #### Build 10.0.40.202409101
 Release date: 10 September 2024
@@ -92,7 +94,6 @@ Number	| Name		 | Description
 18764	| HR tables	| Ability to insert columns from HR tables. For example can insert Title for users, where person is assigned to users.
 18756	| Filter by Group	| Ability to filter by **User security group** on following steps: <br> • Fetch interaction data from application insights <br> • Calculate utilization rates
 
-# Previous Version(s)
 
 ### Release 10.0.37.20240731
 
