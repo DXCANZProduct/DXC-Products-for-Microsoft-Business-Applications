@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-12-04
+ms.date: 2024-12-05
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -67,6 +67,20 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41 	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
+
+
+#### Build 10.0.40.2024120421
+Release date: 6 December 2024
+
+<ins>Bug fixes</ins>
+
+**Freight forwarder landed cost module**
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+20623	| Voyage creator  | Voyage creator failed when running in batch mode and set to auto create backorder voyage advice. <br> Error: "Stack trace: Cannot run form on non interactive session. EDI % Voyage creator Purchase order % line number % cannot be split because of following errors. You may need add the entire quantity of the order line to the voyage."
+
+
 
 
 #### Build 10.0.40.202412041
