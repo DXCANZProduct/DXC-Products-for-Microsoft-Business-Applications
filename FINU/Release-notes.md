@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-12-04
+ms.date: 2024-12-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -89,7 +89,7 @@ Number	  	| Module	| Functionality	  	| Description
 18875		| Data management	| ABN validation	| Data entities added
 19026		| Organization administration	| ABN validation review	| Where ABN validation is enabled for the legal entity, users can use new button **Change history** to view changes made in D365 for each ABN. <br> ![Change history](Images/ReleaseNotes_20241206_4.png "Change history") <br>  <br> ![Change history](Images/ReleaseNotes_20241206_3.png "Change history") 
 19549		| Organization administration	| ABN validation review	| Enabled the following buttons: New and Delete. <br> Added the following buttons: ABN lookup and ABN status <br> ![Buttons](Images/ReleaseNotes_20241206_5.png "Buttons")
-20197		| Accounts payable	| Self billing invoicing <br> Recipient-Created Tax Invoice (RCTI) | Ability to automatically create vendor invoices after a product receipt. <br> The invoice can be automatically created at the same time of product receipt, or split/consolidate using the periodic task. <br> <br> The periodic task split/consolidate options include: <br> • Product receipt <br> • Purchase order <br> • Invoice account <br> • Receipt date <br> <br> Post options: <br> • Do not post <br> • Post <br> • Post and print - using print management destinations email or SmartSend (if licensed) <br> <br> [Setup](Setup/ACCOUNTS-PAYABLE/Self-billing-invoicing.md) <br> [Processing](Processing/Accounts-Payable/Self-billing-invoicing.md) 
+20197		| Accounts payable	| Self billing invoicing <br> Recipient-Created Tax Invoice (RCTI) | Ability to automatically create vendor invoices after a product receipt. <br> The invoice can be automatically created at the same time of product receipt, or split/consolidate using the periodic task. <br> <br> The periodic task split/consolidate options include: <br> • Product receipt <br> • Purchase order <br> • Invoice account <br> • Receipt date <br> <br> Post options: <br> • Do not post - creates a pending invoice <br> • Post  - creates and post invoice <br> • Post and print - creates and post the invoice and print/send using print management destinations Email, SmartSend (if licensed) or Electronic reporting export connections <br> <br> [Setup](Setup/ACCOUNTS-PAYABLE/Self-billing-invoicing.md) <br> [Processing](Processing/Accounts-Payable/Self-billing-invoicing.md) 
 20304		| Accounts payable	| Method of payment - BPAY	| Payment control **Payment ID** and Payment attributes **Payment ID** is still defaulted to Yes, but now no longer disabled
 17514	| DXC License manager	| Licensing | New DXC License manager 10.0.40.202412041. See [Release notes](../LMG/Release-notes.md#d365-finance-and-operations) for more detail.
 20389	| DXC Connections	| All Azure connections | New DXC Connections 10.0.40.202412041. <br> See [Release notes](../CONNECTIONS/Release-notes.md) for more detail.
