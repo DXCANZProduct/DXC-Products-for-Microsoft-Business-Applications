@@ -21,7 +21,7 @@ ms.reviewer: Monica du Toit
 # ms.custom:
 ms.search.region: DXCLicenseManager
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
+ms.author: Artika Dutt
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -75,46 +75,23 @@ DXC License 10.0.40.202410231 runs on the following Microsoft releases
 | :----- | :---------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
 | 19567  | Change Feature Key label for Data Anonymization include (Preview) | (Preview) keyword has been added to the data Anonymization feature key label and description |
 
-## Microsoft Power Apps
-
-### DXC License Manager Canvas App
-
-#### **Release 2023060511**
-
-DXC version – 1.0.0.6 <br>
-Cepheo version – 1.0.0.5
-
-Release date: 17 July 2023
-
-<ins>Bug fixes</ins>
-
-| Number | Functionality                                                            | Description                                                                                                                                                                                                        |
-| ------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 14592  | Disable add button when customer edit view is enabled                    | A fix has been applied to disable users from trying to create a new button while in edit mode.                                                                                                                     |
-| 14593  | Customer list is not refreshed after adding/updating a customer record   | A fix has been made to resolve the refresh issue for customer record not appearing in the customer details list pane after add or update                                                                           |
-| 14594  | Blank customer name is accepted                                          | Customer name has been set to mandatory. In previous versions, the customer name could be reset to blank during update                                                                                             |
-| 14595  | Same name product can be created multiple times                          | Product name has been set to unique                                                                                                                                                                                |
-| 14596  | Blank tenant is saved successfully                                       | In previous versions, the tenant name could be left blank. Validation has been added for missing tenant name                                                                                                       |
-| 14597  | Environment count does not update                                        | A fix has been applied for the environment count refresh within the customer products list. In previous version, the environment count was not updated when the back button was pressed from the environments view |
-| 14598  | Product record still visible after delete                                | A fix has been made to the product list refresh. This will now reflect the delete of all product records                                                                                                           |
-| 14600  | Blank product name is accepted                                           | Product name is set to mandatory. The app will prompt for missing product name during creation and deletion                                                                                                        |
-| 14601  | New product not visible under product list in the customer products view | A fix has been made to refresh the product list after a product record is created.                                                                                                                                 |
-
 ## React Web App
 
 ### DXC License Manager Web App
 
-#### **Release 20240417.1**
+#### **Release 20240605.2**
 
-Release date: 17 April 2024
+Release date: 09 December 2024
 
 <ins>New features</ins>
 
-| Number | Functionality                               | Description                                                                                                                                                                                                         |
-| :----- | :------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 17299  | Modify expiry date from Licence Expiry View | Added ability to modify the expiry date of products assigned to customer from the license expiry view                                                                                                               |
-| 1727   | Enable default filter for Products view     | Added ability to define default filters for Products view which can be applied to all users. This will ensure that users are only able to view the accessible data while admins will still have access to all data. |
-| 17048  | Power BI Tiles                              | Added ability to configure and access tiles within the web app (access controlled).                                                                                                                                 |
+| Number | Functionality                                                | Description                                                                                     |
+| :----- | :----------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
+| 17553  | Update license management service to new Microsoft Azure Org | License management service has been successfully migrated to a new Microsoft Azure Organization |
+
+## Microsoft Power Apps
+
+### DXC License Manager Canvas App
 
 # Previous version(s)
 
@@ -314,7 +291,28 @@ DXC License 10.0.34.20231031 runs on the following Microsoft releases
 
 ## Microsoft Power Apps
 
-### DXC License Manager Canvas App
+### DXC License Manager Canvas App (Deprecated)
+
+#### **Release 2023060511**
+
+DXC version – 1.0.0.6 <br>
+Cepheo version – 1.0.0.5
+
+Release date: 17 July 2023
+
+<ins>Bug fixes</ins>
+
+| Number | Functionality                                                            | Description                                                                                                                                                                                                        |
+| ------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 14592  | Disable add button when customer edit view is enabled                    | A fix has been applied to disable users from trying to create a new button while in edit mode.                                                                                                                     |
+| 14593  | Customer list is not refreshed after adding/updating a customer record   | A fix has been made to resolve the refresh issue for customer record not appearing in the customer details list pane after add or update                                                                           |
+| 14594  | Blank customer name is accepted                                          | Customer name has been set to mandatory. In previous versions, the customer name could be reset to blank during update                                                                                             |
+| 14595  | Same name product can be created multiple times                          | Product name has been set to unique                                                                                                                                                                                |
+| 14596  | Blank tenant is saved successfully                                       | In previous versions, the tenant name could be left blank. Validation has been added for missing tenant name                                                                                                       |
+| 14597  | Environment count does not update                                        | A fix has been applied for the environment count refresh within the customer products list. In previous version, the environment count was not updated when the back button was pressed from the environments view |
+| 14598  | Product record still visible after delete                                | A fix has been made to the product list refresh. This will now reflect the delete of all product records                                                                                                           |
+| 14600  | Blank product name is accepted                                           | Product name is set to mandatory. The app will prompt for missing product name during creation and deletion                                                                                                        |
+| 14601  | New product not visible under product list in the customer products view | A fix has been made to refresh the product list after a product record is created.                                                                                                                                 |
 
 #### **Release 202306051**
 
@@ -371,6 +369,29 @@ Release date: 31 March 2023
 ## React Web App
 
 ### DXC License Manager Web App
+
+#### **Release 20240605.1**
+
+Release date: 05 June 2024
+
+<ins>New features</ins>
+
+| Number | Functionality                               | Description                                                                            |
+| :----- | :------------------------------------------ | :------------------------------------------------------------------------------------- |
+| 17048  | Power BI Reports- Alerts                    | Enabled ability to navigate to report within Web App from Power BI Alerts notification |
+| 17791  | Deleting dates doesn't result in blank date | Fixed issue with not being able to set blank date                                      |
+
+#### **Release 20240417.1**
+
+Release date: 17 April 2024
+
+<ins>New features</ins>
+
+| Number | Functionality                               | Description                                                                                                                                                                                                         |
+| :----- | :------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 17299  | Modify expiry date from Licence Expiry View | Added ability to modify the expiry date of products assigned to customer from the license expiry view                                                                                                               |
+| 1727   | Enable default filter for Products view     | Added ability to define default filters for Products view which can be applied to all users. This will ensure that users are only able to view the accessible data while admins will still have access to all data. |
+| 17048  | Power BI Tiles                              | Added ability to configure and access tiles within the web app (access controlled).                                                                                                                                 |
 
 #### **Release 20240227.1**
 
