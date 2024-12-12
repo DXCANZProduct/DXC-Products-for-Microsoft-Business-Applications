@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Review Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-22
+ms.date: 2024-12-05
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,6 +55,8 @@ Ability to automatically group similar users
     - **Security privileges** - machine learning is used to group users with similar security privileges.
 - Enter the **Maximum number of groups** that should be created. Enabled where 'Security roles' or 'Security privileges' are selected.
 
+When using **User groups** or **Microsoft Entra ID security groups** and an enabled user isn't assigned to one of the groups, a new group **Not assigned** will be created for these users.
+
 ## 3. Fetch interaction data from application insights
 Fetch user interation data from Azure Applications Insights
 
@@ -64,6 +66,8 @@ Fetch user interation data from Azure Applications Insights
 - Select the required end date in **Activities - end date time**
 
 The records to include are automatically filtered to enabled users and can also be filtered to User Id(s).
+
+The number of records fetched from Azure application Insights can be checked in the batch job history log.
 
 > Note: User accessed menu items date/time data: starts when logging usage data to AppInsights with either DXC's Insights or Standard monitoring.
 
@@ -90,9 +94,10 @@ After modifying security configuration, rerun the following to update the values
 #### Buttons
 
 The following buttons are available on the views:
-- Assign privilege to duty - Security configuration is opended for the selected privilege with the ability to assign to multiple duties
-- Assign privilege to role - Security configuration is opended for the selected privilege with the ability to assign to multiple roles
-- Manage privilege assignments - Security configuration is opended for the selected privilege(s)
+- **Assign privilege to duty** - Security configuration is opended for the selected privilege with the ability to assign to multiple duties
+- **Assign privilege to role** - Security configuration is opended for the selected privilege with the ability to assign to multiple roles
+- **Manage privilege assignments** - Security configuration is opended for the selected privilege(s)
+- **View related roles** - View related roles for the selected duty / privilege
 
 #### Links 
 

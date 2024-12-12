@@ -6,13 +6,13 @@ While out-of-the-box functionality is for the business forms listed [here](Overv
 
 **How can I use a different report format for different customers/vendors?**
 
-Firstly you need to set up each version of the report design in Smart Send Email parameters. For example, you may have two report designs for the Sales Invoice *SalesInvoice.Report* and *SalesInvoiceModern.Report*. Refer to [Smart send parameters](CONFIGURATION/Parameters.md).
+First, you'll need to set up each version of the report design in Smart Send Email parameters. For example, you may have two report designs for the Sales Invoice *SalesInvoice.Report* and *SalesInvoiceModern.Report*. Refer to [Smart send parameters](CONFIGURATION/Parameters.md).
 
 Then using Print Management conditions set a query with a set of criteria to use the different report design. When the report is run using Print Management the Smart Send button will choose the report design used per the Print Management setup. Refer to [Print management conditions](PROCESSES/Email-processing.md).
 
 **How can I use a different email template for different customers/vendors?**
 
-The Override email ID and Override file name allow the user to specify in print management an email template and file name different to that specified in Smart Send parameters. Refer to [Override Email Template and Filename](PROCESSES/Email-processing.md).
+The Override email ID and Override file name allow the user to specify in the print destination output  an email template and file name different to that specified in Smart Send parameters. Refer to [Override Email Template and Filename](PROCESSES/Email-processing.md).
 
 **How can I use a different filename for different customers/vendors?**
 
@@ -50,17 +50,17 @@ Placeholder tokens can contain invalid characters being inserted in a filename a
 When sending a document via email, a basic email body can be included thanks to the *Document Report email body* functionality, which was enabled by default starting with version 10.0.39.  This is a different feature from Smart Send that creates dynamic, transaction-based email templates using the Organization email templates. 
 
 **How do I send my confirmation to the contact on my order instead of the main contact on the account ?**
-From the Recipient drop down menu in Email Parameters, simply select "Specific" for the nominated report.  This will use the email address specified on the sales order header or purchase order header.
+From the Recipient drop-down menu in Email Parameters, simply select "Specific" for the nominated report.  This will use the email address specified on the sales order header or purchase order header.
 
 **My company logo stored in FinOps will not render in emails anymore.**
-Many mail clients such as outlook and most webmail services do not support the rendering of Base64 images anymore.  For this reason we recommend moving away from Base64 images and pulling from an online link, such as Blob storage.  An Example could be in the below format
+Many mail clients such as Outlook and most webmail services do not support the rendering of Base64 images anymore.  For this reason, we recommend moving away from Base64 images and pulling from an online link, such as Blob storage.  An Example could be in the below format
 <img src="https://yourblobstorageaccount.blob.core.windows.net/imagelocation.png" width="200" height="200" alt="logoImage"/>
 
 ### Blob Storage Errors
 
 **When sending my file via Smart Send I get "Message: The specified blob already exists."**
 
-This message indicates that the file name alreday exists in your blob storage location.  If you have the Overwirte radio button in your email parameters set to "No",  files are not automatically over written when saving to blob storage and an error is thrown to indicate as such.  
+This message indicates that the file name already exists in your blob storage location.  If you have the Overwrite radio button in your email parameters set to "No",  files are not automatically overwritten when saving to blob storage and an error is thrown to indicate as such.  
 
 
 ### Dependency and Security Information

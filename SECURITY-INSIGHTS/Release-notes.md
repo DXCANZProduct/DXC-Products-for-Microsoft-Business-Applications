@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Security Insights for D365 FO - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-12-04
+ms.date: 2024-12-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,33 +40,9 @@ Product version: 10.0.40 <br> App build: 10.0.1935.92	  | No		  |
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202407311
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40.202409101
 
-# Next version
-
-### Release 10.0.40.202412TBD
-
-Planned release date: Early December 2024
-
-<ins>New features</ins>
-
-Number	| Name		 | Description
-:--	|:--		  	|:--
-19165	| Data entity	| New export-only data entity called 'Insights for user access and security'. This provides a flat file of all user, role, privilege, menu items and calculated utilization. This is useful for taking a "snapshot" or reviewing in Excel. It is advised to filter records before exporting as this file can be large.
-19492	| Highlight unused licenses	| Ability to highlight unused licenses for a user and each role for the selected user. Unused means the applicable user didn't access any menu items with that license type in the fetch period. <br> Clicking on a **Role name**, will open **Assign users to roles** form, thus enabling reviewer to see which other users have been assigned to the role with unused licenses as well. <br> <br> Select required highlight colour in field **Background color for unused license fields** on Visual tab in **Insights for user access and security parameters** to enable the colour highlights for unused licenses. <br> <br> In below example the selected user didn't access any Operations licenses in the fetch period <br> ![Visual](IMAGES/ReleaseNotes_20241122_1.png "Visual")
-19990	| Not assigned users	| When Initiating security group using **User groups** or **Microsoft Entra ID security groups**, an extra security group **Not assigned** will be created for users that doesn't fall within any of the existing groups.
-17514	| DXC License manager	| New DXC License manager 10.0.40.202412041. See [Release notes](../LMG/Release-notes.md#d365-finance-and-operations) for more detail.
-
-
-<ins>Bug fixes</ins>
-
-Number	| Name		 | Description
-:--	|:--		  	|:--
-19103	| Create privilege utilization record	| Fix for error "Cannot create a record in Privilege utilization (%) (DXCSecurityInsightsPrivilegeUtilization). Security privilege: 0, 0.00. The record already exists."
-19848	| Update conflict	| Fix to following error on step 'Synchronize user roles and access': "Cannot edit a record in User information (SysUserInfo). An update conflict occurred due to another user process deleting the record or changing one or more fields in the record."
-
-
 # Current version
 
-### Release 10.0.40.20240910
+### Release 10.0.40.20241206
 
 Security Insights for D365 FO 10.0.40 runs on the following Microsoft releases
 
@@ -76,6 +52,37 @@ Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 
+
+#### Build 10.0.40.202412061
+Release date: 6 December 2024
+
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+19165	| Data entity	| New export-only data entity called 'Insights for user access and security'. This provides a flat file of all user, role, privilege, menu items and calculated utilization. This is useful for taking a "snapshot" or reviewing in Excel. It is advised to filter records before exporting as this file can be large.
+19492	| Highlight unused licenses	| Ability to highlight unused licenses for a user and each role for the selected user. Unused means the applicable user didn't access any menu items with that license type in the fetch period. <br> Clicking on a **Role name**, will open **Assign users to roles** form, thus enabling reviewer to see which other users have been assigned to the role with unused licenses as well. <br> <br> Select required highlight colour in field **Background color for unused license fields** on Visual tab in **Insights for user access and security parameters** to enable the colour highlights for unused licenses. <br> <br> In below example the selected user didn't access any Operations licenses in the fetch period <br> ![Visual](IMAGES/ReleaseNotes_20241122_1.png "Visual")
+19990	| Not assigned users	| When Initiating security group using **User groups** or **Microsoft Entra ID security groups**, an extra security group **Not assigned** will be created for users that doesn't fall within any of the existing groups.
+20430	| Only enabled users	| Only enabled users displayed in: <br> • Security insights by user <br> • Security insights by license
+19930	| View related roles	| Button **View related roles** added to Duties and Privileges FastTabs on 'Security insights by user'. Provides a "where used" functionality. <br> ![View related roles](IMAGES/ReleaseNotes_20241122_2.png "View related roles")
+20488	| Fetch interaction data from application Insights	| **Record count** now included per task in Fetch's batch job infolog. Provides information on how many records were fetched, and since the job is split into tasks as per parameters, the batch job history infolog will display the number of records fetched per task.
+17514	| DXC License manager	| New DXC License manager 10.0.40.202412041. See [Release notes](../LMG/Release-notes.md#d365-finance-and-operations) for more detail.
+
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+19103	| Create privilege utilization record	| Fix for error "Cannot create a record in Privilege utilization (%) (DXCSecurityInsightsPrivilegeUtilization). Security privilege: 0, 0.00. The record already exists."
+19848	| Update conflict	| Fix to following error on step 'Synchronize user roles and access': "Cannot edit a record in User information (SysUserInfo). An update conflict occurred due to another user process deleting the record or changing one or more fields in the record."
+20395	| Refresh unfilters	| When user filters on the following, a Refresh (Shift + F5) will now not remove the filters: <br> • Security insights by user - Users FastTab <br> • Security insights by license - Licenses and Users FastTab
+20392	| Validation	| Incorrectly successfully validated Azure application insights configuration in **Insights for user access and security parameters** when the **Application Insights App Id** was incorrect.
+
+
+# Previous Version(s)
+
+### Release 10.0.40.20240910
 
 #### Build 10.0.40.202409101
 Release date: 10 September 2024
@@ -88,7 +95,6 @@ Number	| Name		 | Description
 18764	| HR tables	| Ability to insert columns from HR tables. For example can insert Title for users, where person is assigned to users.
 18756	| Filter by Group	| Ability to filter by **User security group** on following steps: <br> • Fetch interaction data from application insights <br> • Calculate utilization rates
 
-# Previous Version(s)
 
 ### Release 10.0.37.20240731
 

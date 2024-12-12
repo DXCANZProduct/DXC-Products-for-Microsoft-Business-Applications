@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-12-04
+ms.date: 2024-12-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -67,11 +67,19 @@ Feature	| 10.0.41 Feature state
 **Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the custom bank statement format | Mandatory
 **Modern bank reconciliation** | 
 
-# Next version
+# Current version
 
-### Release 10.0.40.202412TBD
+### Release 10.0.40.20241204
 
-Planned release date: Early December 2024
+DXC Finance Utilities 10.0.40 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
+Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
+
+#### Build 10.0.40.202412041
 
 <ins>New features</ins>
 
@@ -81,7 +89,7 @@ Number	  	| Module	| Functionality	  	| Description
 18875		| Data management	| ABN validation	| Data entities added
 19026		| Organization administration	| ABN validation review	| Where ABN validation is enabled for the legal entity, users can use new button **Change history** to view changes made in D365 for each ABN. <br> ![Change history](Images/ReleaseNotes_20241206_4.png "Change history") <br>  <br> ![Change history](Images/ReleaseNotes_20241206_3.png "Change history") 
 19549		| Organization administration	| ABN validation review	| Enabled the following buttons: New and Delete. <br> Added the following buttons: ABN lookup and ABN status <br> ![Buttons](Images/ReleaseNotes_20241206_5.png "Buttons")
-20197		| Accounts payable	| Self billing invoicing <br> Recipient-Created Tax Invoice (RCTI) | Ability to automatically create vendor invoices after a product receipt. <br> The invoice can be automatically created at the same time of product receipt, or split/consolidate using the periodic task. <br> <br> The periodic task split/consolidate options include: <br> • Product receipt <br> • Purchase order <br> • Invoice account <br> • Receipt date <br> <br> Post options: <br> • Do not post <br> • Post <br> • Post and print - using print management destinations email or SmartSend (if licensed) <br> <br> [Setup](Setup/ACCOUNTS-PAYABLE/Self-billing-invoicing.md) <br> [Processing](Processing/Accounts-Payable/Self-billing-invoicing.md) 
+20197		| Accounts payable	| Self billing invoicing <br> Recipient-Created Tax Invoice (RCTI) | Ability to automatically create vendor invoices after a product receipt. <br> The invoice can be automatically created at the same time of product receipt, or split/consolidate using the periodic task. <br> <br> The periodic task split/consolidate options include: <br> • Product receipt <br> • Purchase order <br> • Invoice account <br> • Receipt date <br> <br> Post options: <br> • **Do not post** - Created invoice is not posted and remains as pending vendor invoice <br> • **Post** - Created invoice is automatically posted. If post failed, it will remain as pending vendor invoice <br> • **Post and print** - Created invoice is automatically posted. If post failed, it will remain as pending vendor invoice. The posted invoice is also automatically printed/sent as per Print management destination. The following print management destination options are supported: Smart Send (where licensed,  Email and Electronic reporting export connections <br> <br> [Setup](Setup/ACCOUNTS-PAYABLE/Self-billing-invoicing.md) <br> [Processing](Processing/Accounts-Payable/Self-billing-invoicing.md) 
 20304		| Accounts payable	| Method of payment - BPAY	| Payment control **Payment ID** and Payment attributes **Payment ID** is still defaulted to Yes, but now no longer disabled
 17514	| DXC License manager	| Licensing | New DXC License manager 10.0.40.202412041. See [Release notes](../LMG/Release-notes.md#d365-finance-and-operations) for more detail.
 20389	| DXC Connections	| All Azure connections | New DXC Connections 10.0.40.202412041. <br> See [Release notes](../CONNECTIONS/Release-notes.md) for more detail.
@@ -95,17 +103,48 @@ Number	  	| Module	| Functionality	  	| Description
 20187		| Accounts payable	| BPAY	| When overriding the vendor bank's default **lodgement reference** on a BPAY method of payment invoice and manually selecting the invoice for settlement on the payment journal line, the default lodgement reference wasn't overridden by the actual lodgement reference on the invoice. This issue only applied to manual settlement, not payment proposal process.
 	
 
-# Current version
+# Deprecated features
+
+This section describes the features that have been removed, or planned to be removed from a Finance utilities version.
+
+### Vendor bank account change workflow
+- Reason for deprecation/removal - Replaced by D365 feature from 10.0.32 called 'Vendor bank account change proposal workflow' / 'Supplier bank account change proposal workflow'. [Learn more](https://learn.microsoft.com/en-gb/dynamics365/finance/accounts-payable/vendor-bank-account-workflow)
+- Impact - Removal of the following fields in Accounts payable parameters FastTab 'Vendor approval':
+	- Bank account number
+	- Bank account BSB
+	- Bank account biller code (Finance utilities field)
+	- Bank account lodgement reference (Finance utilities field)
+	- Bank account bank group
+	- Bank account SWIFT code
+	- Bank account IBAN
+	- Bank account active date
+	- Bank account expiration date
+- Notice date - 24 July 2023
+- Status - Completed in 10.0.36.202311161
+> Note: The Finance utilities fields (Biller code and Lodgement reference) have been added to standard 'Vendor bank account approval' FastTab in Accounts payable parameters in Finance Utilities version 10.0.35.202307311.
+
+### New bank statement transaction - Posting date
+- Finance Utilities functionality - Option to post **new** bank statement transaction at either **Today's date** or **Statement transaction date** (Statement's To date)
+- Recommended process: Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' is automatically enabled from 10.0.36. The feature automatically sets new 'Cash and bank management parameters' field 'Set the booking date as default accounting date for new transactions' to _Yes_. Select applicable option in this new field to set the default accounting date for new transactions:
+	- Yes: Bank statement line booking date
+ 	- No: Bank statement import date 
+- Reason for deprecation/removal - Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' was introduced in 10.0.31. In 10.0.35 MS has updated the feature which has resulted in a breaking change for Finance Utilities Posting date functionality. From 10.0.36 this feature is enabled by default.
+- Impact - Removal of the following fields & functionality:
+	- Posting date default on bank account <br>
+	- Posting date option on importing bank statement <br>
+ 	- Posting date on bank reconciliation <br>
+- Notice date - 4 September 2023
+- Status - Completed in 10.0.36.202311161
+
+![Bank statement](Images/Deprecate_PostingDate_1.png "Bank statement") <br>
+
+![Bank reconciliation](Images/Deprecate_PostingDate_2.png "Bank reconciliation")
+
+# Previous version(s)
+
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.40.20240919
-
-DXC Finance Utilities 10.0.40 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
-Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 
 #### Build 10.0.40.2024091941
 Release date: 19 November 2024
@@ -153,48 +192,6 @@ Number	  	| Module	| Functionality	  	| Description
 18827		| Cash and bank management	| Reconciliation matching rules - offset to customer	| New option **Auto-post and transfer customer payment journal** enables customer payment journal to be posted and any error lines transferred to a new unposted journal (example stopped customer). Both customer payment journals' **Document** will refer to the Bank reconciliation. <br> ![Post and transfer](Images/ReleaseNotes_20240919_1.png "Post and transfer")
 19151		| Cash and bank management	| Reconciliation matching rules - data entity	| Field 'Description mask' added to data entity
 18837		| Accounts payable	| Payments report | Use Vendor bank account's BPAY **Biller code** and **Lodgement reference** fields where payment line's method of payment **BPAY method of payment** is _Yes._ <br> [User guide](Processing/Accounts-Payable/Vendor-payments.md#payments-report) <br> <br> ![Payments](Images/ReleaseNotes_20240919_2.png "Payments")
-
-
-# Deprecated features
-
-This section describes the features that have been removed, or planned to be removed from a Finance utilities version.
-
-### Vendor bank account change workflow
-- Reason for deprecation/removal - Replaced by D365 feature from 10.0.32 called 'Vendor bank account change proposal workflow' / 'Supplier bank account change proposal workflow'. [Learn more](https://learn.microsoft.com/en-gb/dynamics365/finance/accounts-payable/vendor-bank-account-workflow)
-- Impact - Removal of the following fields in Accounts payable parameters FastTab 'Vendor approval':
-	- Bank account number
-	- Bank account BSB
-	- Bank account biller code (Finance utilities field)
-	- Bank account lodgement reference (Finance utilities field)
-	- Bank account bank group
-	- Bank account SWIFT code
-	- Bank account IBAN
-	- Bank account active date
-	- Bank account expiration date
-- Notice date - 24 July 2023
-- Status - Completed in 10.0.36.202311161
-> Note: The Finance utilities fields (Biller code and Lodgement reference) have been added to standard 'Vendor bank account approval' FastTab in Accounts payable parameters in Finance Utilities version 10.0.35.202307311.
-
-### New bank statement transaction - Posting date
-- Finance Utilities functionality - Option to post **new** bank statement transaction at either **Today's date** or **Statement transaction date** (Statement's To date)
-- Recommended process: Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' is automatically enabled from 10.0.36. The feature automatically sets new 'Cash and bank management parameters' field 'Set the booking date as default accounting date for new transactions' to _Yes_. Select applicable option in this new field to set the default accounting date for new transactions:
-	- Yes: Bank statement line booking date
- 	- No: Bank statement import date 
-- Reason for deprecation/removal - Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' was introduced in 10.0.31. In 10.0.35 MS has updated the feature which has resulted in a breaking change for Finance Utilities Posting date functionality. From 10.0.36 this feature is enabled by default.
-- Impact - Removal of the following fields & functionality:
-	- Posting date default on bank account <br>
-	- Posting date option on importing bank statement <br>
- 	- Posting date on bank reconciliation <br>
-- Notice date - 4 September 2023
-- Status - Completed in 10.0.36.202311161
-
-![Bank statement](Images/Deprecate_PostingDate_1.png "Bank statement") <br>
-
-![Bank reconciliation](Images/Deprecate_PostingDate_2.png "Bank reconciliation")
-
-# Previous version(s)
-
-Approximately one year of previous versions are included below.
 
 ### Release 10.0.40.20240916
 
