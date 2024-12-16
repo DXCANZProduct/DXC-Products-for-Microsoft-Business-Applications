@@ -3,8 +3,8 @@
 
 title: DXC Smart Business Form Email Manager (Smart Send)
 description: Smart Send - Overview
-author: Liam Coll
-manager: Kym Parker
+author: Peter Musumeci 
+manager: Pontus Ek
 ms.date: 2023-03-29
 ms.topic: article
 ms.prod: 
