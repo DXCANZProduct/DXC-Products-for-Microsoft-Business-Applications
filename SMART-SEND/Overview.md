@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: Liam Coll
+ms.reviewer: Peter Musumeci 
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.1
 The [release notes](Release-notes.md) describes the features that are either new or changed. 
 
 ## Introduction
-DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Operations (or Smart Send) is a simple and smart solution for sending business forms and other reports to your customers and vendors. The solution automates distribution of business forms and reports based on contact preferences using rich format email templates. The following are example business forms processes that can be streamlined using the DXC Smart Business Form Email Manager solution:
+DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Operations (or Smart Send) is a simple and smart solution for sending business forms and other reports to your customers and vendors. The solution automates the distribution of business forms and reports based on contact preferences using rich-format email templates. The following are example business form processes that can be streamlined using the DXC Smart Business Form Email Manager solution:
 
 #### Customer
 * Sales agreement confirmation
@@ -72,19 +72,19 @@ DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Ope
 ####	Extendable to other business forms and reports
 
 ## Email Distribution
-Business forms are sent automatically using email templates and are directed to recipients based on contact information setup on the customer account. 
+Business forms are sent automatically using email templates and are directed to recipients based on contact information set up on the customer account. 
 * Email distribution may be controlled with the ability to hold and release documents before they are sent with the capability to fix and resend emails with incorrect addresses. 
-* Email content is authored using placeholder tags which dynamically looks information up from the business form or report to include in the email subject or body. 
+* Email content is authored using placeholder tags which dynamically look information up from the business form or report to include in the email subject or body. 
 * Email can include the business form as well as additional file attachments associated with the email template, business form or report.
 
 ## Save to Azure Storage
 DXC Smart Business Form Email Manager can also save copies of the emailed/printed business forms or reports into Azure storage. This allows for an archive of the actual business forms produced and sent. File location and file name can utilize placeholder tags which dynamically looks information up from the business form or report to include in the file name and define the Azure Storage location. Any fixed list placeholder tags are stored as metadata against the file in the Azure Storage.
 
 ## Extendable
-While out of the box functionality is for the business forms listed above, the solution can be extended on further business forms or reports. A [technical guide](TECHNICAL-GUIDE/Technical-guide.md) is provided or alternatively upon request can be evaluated for product enhancements.
-DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Operations is simple to deploy, setup, and configure. Using the Microsoft Dynamics 365 extension framework you can deploy continuous updates for your Microsoft Dynamics 365 installation while maintaining compatibility with the add-on without taking a new release or merging code.
+While out-of-the-box functionality is for the business forms listed above, the solution can be extended to further business forms or reports. A [technical guide](TECHNICAL-GUIDE/Technical-guide.md) is provided or alternatively upon request can be evaluated for product enhancements.
+DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Operations is simple to deploy, set up, and configure. Using the Microsoft Dynamics 365 extension framework you can deploy continuous updates for your Microsoft Dynamics 365 installation while maintaining compatibility with the add-on without taking a new release or merging code.
 
-*Note: Major updates to the underlying Microsoft Dynamics 365 solution may require a new version of the addon solution to remain compatible with Microsoft Dynamics 365. Best practices in extension based development are used to maintain maximum compatibility with future versions of Microsoft Dynamics 365. Most incremental Microsoft Dynamics 365 updates should not require a new version of the addon solution, but testing should always be performed before deploying to a production environment.*
+*Note: Major updates to the underlying Microsoft Dynamics 365 solution may require a new version of the addon solution to remain compatible with Microsoft Dynamics 365. Best practices in extension-based development are used to maintain maximum compatibility with future versions of Microsoft Dynamics 365. Most incremental Microsoft Dynamics 365 updates should not require a new version of the addon solution, but testing should always be performed before deploying to a production environment.*
 
 ## Configuration
 
@@ -99,6 +99,6 @@ The following setup is required to configure Smart Send:
 ## [Email processing](PROCESSES/Email-processing.md)
 
 ## New ideas
-Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
+Have a suggestion for a new product or a new feature for an existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
 
 
