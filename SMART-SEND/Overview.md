@@ -95,8 +95,8 @@ The following setup is required to configure Smart Send:
 - [Contact information purposes](CONFIGURATION/Address-and-contact-information-purpose.md) - Create or identify an existing contact information purpose as the intended destination of the business form or report.
 - [Contact information](CONFIGURATION/Contact-information.md) - Contact information with the appropriate purpose must be stored against the account or account contact.
 - [Security](CONFIGURATION/Security.md) - Lists the privileges associated with Smart Send and the security roles with access to the privilege
+- [Email processing](PROCESSES/Email-processing.md) - Configure print management or as required overide fucntionality.
 
-## [Email processing](PROCESSES/Email-processing.md)
 
 ## New ideas
 Have a suggestion for a new product or a new feature for an existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
