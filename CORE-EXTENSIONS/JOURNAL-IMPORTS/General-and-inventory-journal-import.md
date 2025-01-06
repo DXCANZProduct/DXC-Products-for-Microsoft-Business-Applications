@@ -28,28 +28,28 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # General and Inventory Journal Import
 ## Overview
-The Import Journal functionality provides a user-friendly method to import general journal and inventory journal transaction data from Excel or CSV files. All the standard validation and defaulting will occur in the same way as the Data Management Framework (DMF). Both General Journals and Inventory Journals are supported. The imports are based on Data Entities and allow configuration of new templates to be imported.  Note: Standard DMF source formatting and field mapping limitations apply
+The Import Journal functionality provides a user-friendly method to import general journal and inventory journal transaction data from Excel or CSV files. All the standard validation and defaulting occurs in the same way as the Data Management Framework (DMF). Both General Journals and Inventory Journals are supported. The imports are based on Data Entities and allow for the configuration of new templates to be imported. Note: Standard DMF source formatting and field mapping limitations apply.
 
 Benefits:
-* User-friendly to import rather than having to open and paste into Excel adding or using the data management workspace
-* Reduces the risk of making mistakes
+* User-friendly for importing rather than having to open and paste into Excel, adding or using the data management workspace.
+* Reduces the risk of making mistakes.
 
 ## Setup
 ### General journal data entities
-For the General journal import use the *General journal* entity. This entity supports on a journal of type Daily. The ledger types allowed are Ledger, Bank, Vendor and customer.
+For the General journal import, use the *General journal* entity. This entity supports journals of type Daily. The allowed ledger types are Ledger, Bank, Vendor, and Customer.
 
 ### Inventory journal data entities
-For the inventory journals the *Inventory adjustment journal headers and lines V2* and the *Inventory movement journal headers and lines V3* can be used.
+For inventory journals, the *Inventory adjustment journal headers and lines V2* and the *Inventory movement journal headers and lines V3* can be used.
 
 ### Create data entity file templates
-Data entity templates must be established to enable the importing of files into Dynamics 365.To create a data entity template; 
-1. Navigate to **Workspaces > Data management > Export**
-2. Create a new Group
-    * **Group name** - Enter a name for the processing group e.g. CREX-EXP
-    * **Description**	- Enter a description for the processing group e.g. Core Extensions Template Export
-    * **Data project operation type**	- Export
-3.	Select Add Entity
-4.	Complete the dialogue, for example
+Data entity templates must be established to enable the importing of files into Dynamics 365. To create a data entity template:
+1. Navigate to **Workspaces > Data management > Export**.
+2. Create a new Group.
+* **Group name** - Enter a name for the processing group, e.g. CREX-EXP.
+* **Description**	- Enter a description for the processing group, e.g. Core Extensions Template Export.
+* **Data project operation type**	- Export.
+3.	Select Add Entity.
+4.	Complete the dialogue, for example:
     * **Entity name**	- General Journal
     * **Target data format** - CSV
     * **Use sample file**	- No
