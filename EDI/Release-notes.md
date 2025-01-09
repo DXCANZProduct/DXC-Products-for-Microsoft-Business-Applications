@@ -41,6 +41,10 @@ Product version: 10.0.40 <br> App build: 10.0.1935.92	  | • No functional issu
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202405302
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40.202409051
 
+Release notes for other models included in product:
+- [DXC Connections](../CONNECTIONS/Release-notes.md)
+- [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
+- [DXC License](../LMG/Release-notes.md#dxc-license)
 
 ### Microsoft deprecation notice
 
