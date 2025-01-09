@@ -5,7 +5,7 @@ title: DXC Connections
 description: DXC Connections - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-14
+ms.date: 2025-01-09
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -35,6 +35,14 @@ Model is used in below products:
 - Finance Utilities
 - Smart Business Form Email Manager (Smart Send)
 - Electronic Data Interchange (EDI)
+
+# Version compatibility
+The matrix shows the DXC build versions compatiable for Microsoft versions and builds. <br>
+If blank: investigations are ongoing. <br>
+
+D365 Version	  | Any issues found in testing?	  | Product version tested
+:--       	  |:--           			  |:--
+Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.0.202411211
 
 # Current version
 
