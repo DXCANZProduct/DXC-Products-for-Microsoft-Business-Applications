@@ -39,6 +39,11 @@ Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issue
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes - 18802	          | Fix available in 10.0.40.202409162
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | DXC Finance Utilities 10.0.40.2024091931 <br> DXC ABN Validation 10.0.40.2024091931 <br> DXC Encryption 10.0.40.202409162
 
+Release notes for other models included in product:
+- [DXC Connections](../CONNECTIONS/Release-notes.md)
+- [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
+- [DXC License](../LMG/Release-notes.md#dxc-license)
+
 ### Microsoft deprecation notice
 
 [Microsoft notice](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#feature-deprecation-effective-october-2024)
