@@ -36,4 +36,6 @@ This document describes the features that are either pending or planned in upcom
 
 Number	  	| Name	  | Description
 :--       	|:--              |:--
+18101|Removal of references and model for Business Process Suite| Business Process links were originally designed for Mavim and SharePoint integration. Both Mavim and Sharepoint have alternate connection capabilities with D365 Finance and Operations and the product is no longer being utilised as part of Core Extensions.  References within the Core extension product have been removed and will no longer be included in releases.  Customers should remove the Model from existing environments. following the instructions outlined by Micorosft - [Uninstall a package](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package)
+18908|Ability to create multiple General Ledger Journals in Multiple legal entities from a single uplaod| A new data entity and menu item has been created to facilitate this functionality |
 
