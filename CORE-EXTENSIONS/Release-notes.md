@@ -39,6 +39,7 @@ D365 Version		  |Iissues found in testing?| Product version tested
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
+Product version: 10.0.43 <br> App build: not available	  |  | Not currently available 
 
 Release notes for other models included in the product:
 - [DXC Connections](../CONNECTIONS/Release-notes.md)
