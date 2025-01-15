@@ -42,7 +42,6 @@ Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DXC Core Extensio
 Product version: 10.0.43 <br> App build: not available	  |  | Not currently available 
 
 Release notes for other models included in the product:
-- [DXC Connections](../CONNECTIONS/Release-notes.md)
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
 
