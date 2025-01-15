@@ -36,9 +36,9 @@ If blank: investigations are ongoing. <br>
 
 D365 Version		  |Iissues found in testing?| Product version tested
 :--       	 		 |:--           			  |:--
-Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | 10.0.34.20230615
-Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | 10.0.34.20230615
-Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | 10.0.34.20230615
+Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615
+Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615
+Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615
 Product version: 10.0.43 <br> App build: not available	  |  | Not currently available 
 
 # Current version
@@ -49,8 +49,6 @@ DXC DocuSign 10.0.34 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
-Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
 Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
 Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
 Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
