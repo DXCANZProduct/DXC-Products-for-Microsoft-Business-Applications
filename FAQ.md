@@ -35,7 +35,7 @@ Support contact details can be located on the **Contact** tab at **Organization 
   
 ### Where can I identify the installed version of the applicable module
 
-On the Navigation bar, select **Help & support > About**. <br>
+On the Navigation bar, select **Help & Support > About**. <br>
 A list of installed models will be displayed on the **Version** tab.  Scroll to applicable product. The version information will be displayed on the right (example DXC Finance Utilities **10.0.40.202412041** (isv))
 
 ### Is my installed product version compatible with next D365 version
@@ -55,7 +55,7 @@ New coming feature
 
 ### Help in D365 Finance and Operations
 
-Access relevant GitHub user guide pages within D365 via **Help > DXC product help** <br>
+Access relevant GitHub user guide pages within D365 via **Help & Support > Help > DXC product help** <br>
 
 ![Help](IMAGES/Help.png "Help")
 
