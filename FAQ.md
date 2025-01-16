@@ -58,7 +58,7 @@ Repeat for each licensed product.
 
 ![Import solution](IMAGES/LCS_1.png "Import solution")
 
-Following steps are required for each upgrade: <br>
+Steps 2 and 3 are required with each upgrade: <br>
 **Step 2** - Get latest version <br>
 Select **Solution package**. Select the product and click **Versions**, select the latest version and click **Get version**. <br>
 Repeat for each licensed product.
