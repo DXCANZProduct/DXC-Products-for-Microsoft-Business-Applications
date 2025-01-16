@@ -37,7 +37,7 @@ Model is used in below products:
 - Electronic Data Interchange (EDI)
 
 # Version compatibility
-The matrix shows the DXC build versions compatiable for Microsoft versions and builds. <br>
+The matrix shows the minimum DXC build versions compatible per Microsoft versions and builds. <br>
 If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
