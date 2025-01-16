@@ -1,36 +1,57 @@
-A Microsoft Gold Partner, DXC Practice for Microsoft helps enterprise and mid-market organisations to digitally transform their business and move to the cloud with cost-effective, rapid projects using Microsoft applications and our team of experts.
+---
+# required metadata
 
-DXC Practice for Microsoft offers a variety of products for D365 Financials and Operations. <br>
-Please select the applicable product from below:
+title: FAQ
+description: IP support - Frequently asked questions 
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-01-16
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-### Product list
-- [Core extensions](CORE-EXTENSIONS/Solution-overview.md)
-- [Electronic Data Interchange (EDI)](EDI/Introduction.md)
-- [Finance utilities](FINU/INTRODUCTION.md) (specific to ANZ region)
-- [Forex contracts](FOREX-CONTRACT/Introduction.md)
-- [Insights for D365 FO](DXC-INSIGHTS/Introduction.md) - [demo](https://dynamics.dxc.technology/webinars/analysis-tool-for-performance-of-microsoft-dynamics-365-finance-and-operations-by-dxc-technology-2)
-- [Item creation wizard](DXC-ITEM-CREATION-WIZARD/INTRODUCTION.md)
-- [License manager](LMG/Introduction.md)
-- [Product Lifecycle Management (PLM)](PLM/Introduction.md)
-- [Security Insights for D365 FO](SECURITY-INSIGHTS/Introduction.md) - [demo](https://dynamics.dxc.technology/microsoft-dynamics-365/security-insights-for-microsoft-dynamics-365-fo-solution-to-optimise-your-user-licensing)
-- [Smart Business Form Email Manager (Smart Send)](SMART-SEND/Overview.md)
-- [Solutions for DocuSign and Dynamics 365](DOCUSIGN/INTRODUCTION.md)
+# optional metadata
 
-### Contact details
-- Interested in learning more about DXC Practice for Microsoft? [Talk to us](https://dxc.com/au/en/contact-us) <br>
-- Existing customers' support: <microsoft.supportAPAC@dxc.com>
+ms.search.form: DXCLicenseSupport
+audience: Application User
+# ms.devlang: 
+ms.reviewer: Monica du Toit
 
-### New ideas
-- Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
+# ms.tgt_pltfrm: 
+# ms.custom: ["21901", "intro-internal"]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: Monica du Toit
+ms.search.validFrom: 2016-05-31
+ms.dyn365.ops.version: AX 7.0.1
+---
 
-### Copyright Notice
-©2013-2024. Copyright DXC Eclipse Pty Limited ACN 051 758 199.  All rights reserved.
+# 	Frequently Asked Questions
 
-This document may not be distributed or copied, in whole or in part, without prior consent of DXC Eclipse Pty Limited or DXC Technology.
+### Where can I find contact information for support?
+   
+Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > Product support**
+  
+### Where can I identify the installed version of the applicable module
 
-Logos, brand names and product names used in this document are the trademarks or registered trademarks of DXC Technology or DXC Eclipse Pty Limited or their respective third-party owners.
+On the Navigation bar, select **Help & support > About**. <br>
+A list of installed models will be displayed on the **Version** tab.  Scroll to applicable product. The version information will be displayed on the right (example DXC Finance Utilities **10.0.40.202412041** (isv))
 
-Microsoft Dynamics is a trademark of Microsoft Corporation in the United States of America and/or other countries.
+### Help in D365 Finance and Operations
 
-### EULA
-The End User License Agreement (EULA) can be found [here](https://dxc.com/au/en/practices/microsoft/end-user-license-agreement).
+Access relevant GitHub user guide pages within D365 via **Help > DXC product help** <br>
+
+![Help](IMAGES/Help.png "Help")
+
+### Dependency and Security Information
+
+Can be found on each product's FAQ
+
+
+# 	Troubleshooting
+
+###   Product is installed but functionality not visible
+If the product is available in About > Version, check if it has been enabled in **Feature management**. <br>
+If you don't see the product, click **Check for updates** and **Enable** the feature. <br>
+
