@@ -50,18 +50,22 @@ The matrix shows the DXC build versions compatiable for the Microsoft versions a
 Our deployable packages are published on LCS. <br>
 Please contact us to be added to the solution.
 
-After you have been added to the solution please follow these steps:
+After you have been added to the solution please follow these steps in the LCS Project **Asset library**:
 
-**Step 1** - Import solution (only required once)
+**Step 1** - Import solution (only required once) <br>
+Select **Solution package**, click **Import**. Select licensed product and click **Pick**. <br>
+Repeat for each licensed product.
 
 ![Import solution](IMAGES/LCS_1.png "Import solution")
 
-Following steps required for each upgrade:
-**Step 2** - Get latest version
+Following steps are required for each upgrade: <br>
+**Step 2** - Get latest version <br>
+Select **Solution package**. Select the product and click **Versions**, select the latest version and click **Get version**. <br>
+Repeat for each licensed product.
 
 ![Get latest version](IMAGES/LCS_2.png "Get latest version")
 
-**Step 3** - Go to **Software deployable package**, select the solution (will have same version number) and select **Copy**.
+**Step 3** - Go to **Software deployable package**, select the solution (will have same version number) and click **Copy**.
 This step will create the project scope that can be deployed to an environment.
 
 ![Copy](IMAGES/LCS_3.png "Copy")
