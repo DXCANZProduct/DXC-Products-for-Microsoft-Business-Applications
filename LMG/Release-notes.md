@@ -37,7 +37,7 @@ This document describes the features that are either new or changed in the relea
 ### DXC License Manager
 
 #### Version compatibility
-The matrix shows the DXC build versions compatiable for Microsoft versions and builds. <br>
+The matrix shows the minimum DXC build versions compatible per Microsoft versions and builds. <br>
 If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
