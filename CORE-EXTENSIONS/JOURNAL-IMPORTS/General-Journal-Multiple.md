@@ -28,7 +28,15 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # General Journal Import for multiple Legal Entities 
 ## Overview
-The **Import ledger journal multi company** functionality provides a user-friendly method to import general journal transaction data for multiple legal entities all from one target sheet while also incorporating the  company offset field.  The import supports both Excel and CSV formats. All the standard validation and defaulting occur in the same way as the Data Management Framework (DMF) currently does for the standard General journal entity. 
+The **Import ledger journal multi company** functionality provides a user-friendly method to import general journal transaction data for multiple legal entities all from one target sheet while incorporating the  company offset field.  The import supports both Excel and CSV formats. All the standard validation and defaulting occur in the same way as the Data Management Framework (DMF) currently does for the standard General journal entity. 
+
+##Set up 
+
+
+|  **Field**  | **Description** |  **Mandatory** |
+|:---|:---|:---|    
+
+
 
 ##Core ledger journal entity##
 A new Data entry has been created titled *Core ledger journal entity* that incorporates additional fields and 
