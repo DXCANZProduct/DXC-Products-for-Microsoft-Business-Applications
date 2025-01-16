@@ -47,7 +47,24 @@ The matrix shows the DXC build versions compatiable for the Microsoft versions a
 
 ### How do I download the latest Product version
 
+Our deployable packages are published on LCS. <br>
+Please contact us to be added to the solution.
 
+After you have been added to the solution please follow these steps:
+
+**Step 1** - Import solution (only required once)
+
+![Import solution](IMAGES/LCS_1.png "Import solution")
+
+Following steps required for each upgrade:
+**Step 2** - Get latest version
+
+![Get latest version](IMAGES/LCS_2.png "Get latest version")
+
+**Step 3** - Go to **Software deployable package**, select the solution (will have same version number) and select **Copy**.
+This step will create the project scope that can be deployed to an environment.
+
+![Copy](IMAGES/LCS_3.png "Copy")
 
 ### Subscribe to notifications
 
