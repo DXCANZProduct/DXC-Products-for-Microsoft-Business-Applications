@@ -25,20 +25,36 @@ ms.author: Peter Musumeci
 ms.search.validFrom: 2025-01-06
 ms.dyn365.ops.version: AX 7.0.1
 ---
+Introduced in Release 202501XXX
 
 # General Journal Import for multiple Legal Entities 
 ## Overview
-The **Import ledger journal multi company** functionality provides a user-friendly method for importing general journal transaction data for multiple legal entities from one target sheet, incorporating the  company offset field.  The import supports both Excel and CSV formats. All the standard validation and defaulting occur in the same way as the Data Management Framework (DMF) currently does for the standard General journal entity. 
+The **Import ledger journal multi-company** functionality provides a user-friendly method for importing general journal transaction data for multiple legal entities from one target sheet, incorporating the  company offset field.  The import supports both Excel and CSV formats. All the standard validation and defaulting occur in the same way as the Data Management Framework (DMF) currently does for the standard General journal entity.  
 
 ## Setup
 ### New General journal data entity
-A new General journal Data Entity has been developed titled, *Core ledger journal entity*  This entity supports journals of type Daily. The allowed ledger types are Ledger, Bank, Vendor, and Customer.
+A new General journal Data Entity has been developed titled, *Core ledger journal entity*  This entity supports journals of type Daily. The allowed ledger types are Ledger, Bank, Vendor, and Customer. The entity will automatically populate the Journal number to the next available in that legal entity once the data is run to target.
 
-For first-time use 
+The new entity introduces the below key fields 
+|  **Field**  | **Description** |  **Mandatory** |
+|:---|:---|:---|    
+| **BATCHID** | This is utilised to track the actual values that were populated in the Excel template. When completing your Excel template, this field should be set to the same value as JOURNALBATCHNUMBER, which assigns the relevant Journal Number. <br>While importing a journal, you can use either BATCHID, JOURNALBATCHNUMBER, or both. After the import, the Journal batch number will update the target table to the next number available, but the batch ID will keep the actual number provided from the template.| No|
+|**InterCo_Entity** |:---|:---|
+|**TargetCompany** |:---|:---|
+
+This is utilised to track the actual values that were populated in the Excel template. When completing your Excel template, this field should be set to the same value as JOURNALBATCHNUMBER, which assigns the relevant Journal Number.
+
+While importing a journal, you can use either BATCHID, JOURNALBATCHNUMBER, or both. After the import, the Journal batch number will update the target table to the next number available, but the batch ID will keep the actual number provided from the template.
+
+# First-time use
+The entity needs to be configured as *set-based*
 
 Navigate to **Workspaces > Data management > Data entities** to display the list of available entities.
-Search for Core ledger journal entity in the *Entity* column
+Search for "Core ledger journal entity" in the *Entity* column
 Select *Edit* from the Action Pane and enable the *Set-based processing* tick box
+Click *Save* icon.
+
+
 
 |  **Field**  | **Description** |  **Mandatory** |
 |:---|:---|:---|    
