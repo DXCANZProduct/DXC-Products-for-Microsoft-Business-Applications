@@ -69,7 +69,7 @@ Release notes for other models included in product:
 
 Feature	| 10.0.42 Feature state
 :--       	|:--		
-**Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the custom bank statement format | Mandatory
+**Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't support converting date/time fields within the custom bank statement format as the field is date only | Mandatory
 **Modern bank reconciliation** | 
 **Enable posting of new transactions in bank reconciliation** <br> Not supported for intercompany mark as new transactions	| On by default
 
