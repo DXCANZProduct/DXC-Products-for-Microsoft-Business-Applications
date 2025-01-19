@@ -53,7 +53,7 @@ Data entity templates must be established to enable the importing of files into 
     * **Entity name**	- General Journal
     * **Target data format** - Excel
     * **Use sample file**	- No
-    * **Skip staging** - Yes
+    * **Skip staging** - No
     * **Default refresh type** - All fields
 5.	Select Add
 6.	Repeat 3 - 5 for each data entity that requires a template to be created.
