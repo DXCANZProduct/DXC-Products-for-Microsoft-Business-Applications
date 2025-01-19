@@ -26,9 +26,9 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# General and Inventory Journal Import
+# General and Inventory Journal Imports
 ## Overview
-The Import Journal functionality provides a user-friendly method to import general journal and inventory journal transaction data from Excel or CSV files. All the standard validation and defaulting occurs in the same way as the Data Management Framework (DMF). Both General Journals and Inventory Journals are supported. The imports are based on Data Entities and allow for the configuration of new templates to be imported. Note: Standard DMF source formatting and field mapping limitations apply.
+The Import Journal functionality provides a user-friendly method to import general journal and inventory journal transaction data from Excel or CSV files. All the standard validation and defaulting occur in the same way as the Data Management Framework (DMF). Both General Journals and Inventory Journals are supported. The imports are based on Data Entities and allow for the configuration of new templates to be imported. Note: Standard DMF source formatting and field mapping limitations apply.
 
 Benefits:
 * User-friendly for importing rather than having to open and paste into Excel, adding or using the data management workspace.
@@ -36,7 +36,7 @@ Benefits:
 
 ## Setup
 ### General journal data entities
-For the General journal import, use the *General journal* entity. This entity supports journals of type Daily. The allowed ledger types are Ledger, Bank, Vendor, and Customer.
+For the General journal import, use the *General journal* entity. This entity supports journals of type Daily. The allowed ledger types are Ledger, Bank, Vendor, and Customer. For multi-company import see See [General Journal Import for multiple Legal Entities](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/edit/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-Journal-Multiple.md#general-journal-import-for-multiple-legal-entities)
 
 ### Inventory journal data entities
 For inventory journals, the *Inventory adjustment journal headers and lines V2* and the *Inventory movement journal headers and lines V3* can be used.
@@ -92,8 +92,8 @@ The Import project needs to have security roles applied to it for non-administra
 
 |  **Role**  | **Import Feature** | 
 |:---|:---|     
-|  **Accounting Manager**  | Import General Journal |   
-|  **Data management operations userr**  | View Execution History | 
+|  **Accounting Manager**  | Import General Journal or Core ledger journal entity |   
+|  **Data management operations user**  | View Execution History | 
 |  **Materials Manager**  | Import Inventory Adjustment Journal |   
 |  **Materials Manager**  | Import Inventory Movement Journal |   
 
@@ -109,12 +109,13 @@ To import the journals;
     * **General ledger** - General ledger > Periodic tasks > Import ledger journal
     * **Inventory adjustment** - Inventory management > Periodic tasks > Import inventory adjustment journal
     * **Inventory movement** - Inventory management > Periodic tasks > Import inventory movement journal
+    * **Import ledger journal multi-company**  - General ledger > Periodic tasks > Import ledger journal multi company
 2. Select the import processing group created, upload a file and click OK.
 
 When you click OK, the system will run the process in asynchronous mode (background). You will be redirected to the execution history. Click on the refresh button at the top to see the latest status. 
 
 *Note: The inventory movement journal import uses the Inventory movement journal headers and lines V4 data entity which as standard loads the data based on the scenario where if an existing Inventory Movement Journal with less than 1,000 lines is “Not posted”, the imported lines will be appended to the existing journal, otherwise a new journal will be created.*
 
-## Data entities
+## Data Entities
 - Inventory adjustment journal headers and lines V2 entity
 - Inventory movement journal headers and lines V4 entity
