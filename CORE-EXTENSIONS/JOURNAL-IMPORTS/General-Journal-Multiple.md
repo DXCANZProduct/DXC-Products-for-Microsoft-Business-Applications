@@ -37,14 +37,11 @@ A new General journal Data Entity has been developed titled, *Core ledger journa
 
 The new entity introduces the below key fields 
 |  **Field**  | **Description** |  **Mandatory** |
-|:---|:---|:---|    
-| **BATCHID** | This is utilised to track the actual values that were populated in the Excel template. When completing your Excel template, this field should be set to the same value as JOURNALBATCHNUMBER, which assigns the relevant Journal Number. <br>While importing a journal, you can use either BATCHID, JOURNALBATCHNUMBER, or both. After the import, the Journal batch number will update the target table to the next number available, but the batch ID will keep the actual number provided from the template.| No|
-|**InterCo_Entity** |:---|:---|
-|**TargetCompany** |:---|:---|
+:---|:---|:---|   
+ **BATCHID** | When utilised, this is used to keep track of the actual values provided in the Excel template. When populating your Excel template, set this field to the same value as *JOURNALBATCHNUMBER*, which assigns the appropriate journal number. <br>When importing a journal, you can specify either *BATCHID*, *JOURNALBATCHNUMBER*, or both. When the journal batch number is populated after the import, it will be updated to the next available number in the target table. Still, the batch ID will keep the actual number specified in the template. If left blank, the field does not update on import. .| No|
+**InterCo_Entity** |This populates the Intercompany/ Offset company for that line |No|
+**TargetCompany** |This is the target Legal entity that the Journal is for.  The Target company will determine the required number sequence for *JOURNALBATCHNUMBER* |Yes|
 
-This is utilised to track the actual values that were populated in the Excel template. When completing your Excel template, this field should be set to the same value as JOURNALBATCHNUMBER, which assigns the relevant Journal Number.
-
-While importing a journal, you can use either BATCHID, JOURNALBATCHNUMBER, or both. After the import, the Journal batch number will update the target table to the next number available, but the batch ID will keep the actual number provided from the template.
 
 # First-time use
 The entity needs to be configured as *set-based*
@@ -54,23 +51,12 @@ Search for "Core ledger journal entity" in the *Entity* column
 Select *Edit* from the Action Pane and enable the *Set-based processing* tick box
 Click *Save* icon.
 
-
+Additional Instructions/References 
+To create a  [Data Import template](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.md#create-data-entity-file-templates)
+To Create [Data Entity Import Project](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.md#create-data-entity-import-project)
+For [Security Roles](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/edit/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.md#security-roles)
 
 |  **Field**  | **Description** |  **Mandatory** |
 |:---|:---|:---|    
 
 
-
-##Core ledger journal entity##
-A new Data entry has been created titled *Core ledger journal entity* that incorporates additional fields and 
-
-A new Data entity template can be created by following the standard [process](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.md#process)
-
-
-The imports are based on Data Entities and allow for the configuration of [new templates](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.md#create-data-entity-file-templates) to be imported. Note: Standard DMF source formatting and field mapping limitations apply.
-
-Benefits:
-* User-friendly for importing rather than having to open and paste into Excel, adding or using the data management workspace.
-* Reduces the risk of making mistakes.
-
-https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.md#create-data-entity-file-templates
