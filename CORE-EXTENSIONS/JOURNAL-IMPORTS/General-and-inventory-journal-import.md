@@ -45,20 +45,21 @@ For inventory journals, the *Inventory adjustment journal headers and lines V2* 
 Data entity templates must be established to enable the importing of files into Dynamics 365. To create a data entity template:
 1. Navigate to **Workspaces > Data management > Export**.
 2. Create a new Group.
-* **Group name** - Enter a name for the processing group, e.g. CREX-EXP.
-* **Description**	- Enter a description for the processing group, e.g. Core Extensions Template Export.
+* **Group name** - Enter a unique and meaningful name for the processing group, e.g. CREX-EXP or Multi-Entity.
+* **Description**	- Enter a meaningful description for the processing group, e.g. Core Extensions Template Export.
 * **Data project operation type**	- Export.
 3.	Select Add Entity.
 4.	Complete the dialogue, for example:
     * **Entity name**	- General Journal
-    * **Target data format** - CSV
+    * **Target data format** - Excel
     * **Use sample file**	- No
     * **Skip staging** - Yes
     * **Default refresh type** - All fields
 5.	Select Add
-6.	Repeat 3 - 5 for each of the data entities.
+6.	Repeat 3 - 5 for each data entity that requires a template to be created.
     * Inventory adjustment journal headers and lines V2
     * Inventory movement journal headers and lines V3
+    * Core ledger journal entity
 7.	Select Close
 8.	Select Export options > Export now from the action pane
 9.	Select each entity and select Download file from the menu bar
