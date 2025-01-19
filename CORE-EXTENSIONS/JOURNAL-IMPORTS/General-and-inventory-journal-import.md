@@ -81,14 +81,14 @@ An Import Project (processing group) must be established to enable the importing
     * **Default refresh type** - Full push only
     * **Upload data file** - e.g. CREX-EXP-General journal.csv
 5. Select Upload and add and browse to the template file created in the previous step e.g. CREX-EXP-General journal.csv
-    * *Note some templates will require some manual cleansing, for example, the General Journal entity includes the field ISPOSTED, and this column must be removed prior to Upload and Add*
+    * *Note some templates will require some manual cleansing, for example, the General Journal entity includes the field ISPOSTED, and this column must be removed before Upload and Add*
 6. Select Close
 7. Repeat the setup for
     * Inventory adjustment journal (Inventory adjustment journal headers and lines V2)
     * Inventory movement journal (Inventory movement journal headers and lines V3)
  
 ### Security Roles
-The Import project needs to have security roles applied to it for non-administrator users to have permission to import files into the journals and/or see the execution history resulting from the import. It is recommended that the following roles are set to use the import features:
+The Import projects need to have security roles applied to them for non-administrator users to have permission to import files into the journals and/or see the execution history resulting from the import. It is recommended that the following roles be set to use the import features:
 
 |  **Role**  | **Import Feature** | 
 |:---|:---|     
