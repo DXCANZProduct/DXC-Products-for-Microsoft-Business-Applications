@@ -43,20 +43,23 @@ The new entity introduces the below key fields
 **TargetCompany** |This is the target Legal entity that the Journal is for.  The Target company will determine the required number sequence for *JOURNALBATCHNUMBER* |Yes|
 
 
-# First-time use
+### First-time use
 The entity needs to be configured as *set-based*
 
 Navigate to **Workspaces > Data management > Data entities** to display the list of available entities.
 Search for "Core ledger journal entity" in the *Entity* column
 Select *Edit* from the Action Pane and enable the *Set-based processing* tick box
-Click *Save* icon.
+Click the *Save* icon.
+
+Create the security role for the data imports;
+
+Navigate to **Workspace > Data management > Set up roles for data projects**
+Select New
+Add the *Accounting Manager* security role to the nominated processing group
+
 
 Additional Instructions/References 
 To create a  [Data Import template](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.md#create-data-entity-file-templates)
 To Create [Data Entity Import Project](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.md#create-data-entity-import-project)
 For [Security Roles](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/edit/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.md#security-roles)
-
-|  **Field**  | **Description** |  **Mandatory** |
-|:---|:---|:---|    
-
 
