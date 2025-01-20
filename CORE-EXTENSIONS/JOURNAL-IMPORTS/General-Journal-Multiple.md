@@ -47,16 +47,16 @@ The new entity introduces the below key fields
 ### First-time use
 The entity needs to be configured as *set-based*
 
-Navigate to **Workspaces > Data management > Data entities** to display the list of available entities.
-Search for "Core ledger journal entity" in the *Entity* column
-Select *Edit* from the Action Pane and enable the *Set-based processing* tick box
+Navigate to **Workspaces > Data management > Data entities** to display the list of available entities.<br>
+Search for "Core ledger journal entity" in the *Entity* column <br>
+Select *Edit* from the Action Pane and enable the *Set-based processing* tick box <br>
 Click the *Save* icon.
 
 ### Create the security role for the data imports;
 
-Navigate to **Workspace > Data management > Set up roles for data projects**
-Select New
-Add the *Accounting Manager* security role to the nominated processing group
+Navigate to **Workspace > Data management > Set up roles for data projects** <br>
+Select New <br>
+Add the *Accounting Manager* security role to the nominated processing group <br>
 
 
 ### Additional Instructions/References 
