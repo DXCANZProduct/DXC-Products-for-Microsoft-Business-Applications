@@ -88,6 +88,7 @@ Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
 20860		| Cash and bank management	| Mark as new - offset to intercompany account | When using **Post** button in bank reconcilidation's New transactions and unselected new transaction record's Line details were offset to **intercompany** account, these records were also incorrectly posted in the intercompany and also still showed as unposted on the bank reconciliation.
 20960		| Cash and bank management	| Import bank statements | Removed **Recurrence** on Batch processing for Import bank statements. Also fixed issue where duplicate bank statements where imported when: <br> Batch processing enabled and <br> Was an issue with automatic reconcile after import and running default matching rule set.
+20959		| Cash and bank management	| Reconcile after import with default matching rule set	| Similar to 18174, also fixed issue where subsequent rules not run when the matching rule set contains a rule that errors and was automatically run with reconcile after import (set as default matching rule set on bank account).
 
 
 # Current version
