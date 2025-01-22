@@ -52,7 +52,7 @@ To open the **DXC encryption parameters** page, go to **Organization administrat
 
 Select **New** and set the fields as described in the following subsection.
 
-- Enter an unqiue **Encryption key name**
+- Enter a unique **Encryption key name**
 - Select the applicable **Key type** and select the applicable secrets setup in step 1 under **Pgp encryption key** FastTab. Only applicable secrets are enabled.
     - **Encrypt** - Low level of encryption
         - Counter party's public key
