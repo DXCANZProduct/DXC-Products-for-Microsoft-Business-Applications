@@ -92,7 +92,7 @@ Release date: 22 January 2025
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
 20611		| Cash and bank management	| Bank statement format | Increased Custom line code's **Line code** from 5 to 10 characters
-20434		| Various	| Encryption	| DXC Encryption 10.0.40.202412121. Ability to setup lower level of encryption. Key type options: <br> • Encrypt <br> • Encrypt and sign <br> • Decrypt <br> • Decrypt and verify
+20434		| Various	| Encryption	| DXC Encryption 10.0.40.202412121. Ability to setup lower level of encryption. [User guide](Setup/ENCRYPTION/Encryption-decryption.md) <br> Key type options: <br> • Encrypt <br> • Encrypt and sign <br> • Decrypt <br> • Decrypt and verify
 
 
 <ins>Bug fixes</ins>
