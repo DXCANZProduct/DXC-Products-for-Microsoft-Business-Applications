@@ -88,9 +88,7 @@ Assign to Finance utilites functionality:
 - Encrypt option on [Electronic reporting export connections](../ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md) to send encrypted GER Vendor EFT files
 - Decrypt option on [Financial utilities connection](../CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md) to decrypt a bank statement file imported using periodic task **Import bank statements via financial utilities connection**.
 
-Setup: 
+To enable encryption / decryption on the connection: 
+ - Set **Enable file encryption/decryption** to _Yes_
+ - Select applicable **Encryption key name** setup in Step 2
 
-Field                       | Description                         
-:--                         |:--                        
-**Enable file encryption/decryption**     | Set to _Yes_
-**Encryption key name**                   | Select applicable **Encryption key name** setup in Step 2
