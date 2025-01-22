@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-01-22
+ms.date: 2025-01-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -92,6 +92,8 @@ Release date: 22 January 2025
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
 20611		| Cash and bank management	| Bank statement format | Increased Custom line code's **Line code** from 5 to 10 characters
+20434		| Various	| Encryption	| DXC Encryption 10.0.40.202412121. Ability to setup lower level of encryption. Key type options: <br> • Encrypt <br> • Encrypt and sign <br> • Decrypt <br> • Decrypt and verify
+
 
 <ins>Bug fixes</ins>
 
