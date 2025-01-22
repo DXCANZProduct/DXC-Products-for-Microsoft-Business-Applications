@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Encryption / decryption
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-27
+ms.date: 2025-01-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,12 +38,9 @@ Once below has been setup, the functionality can be used on the following Financ
 ## Step 1 - Setup Secrets in Key vault parameters
 Setup the following as **Secrets** in **Key vault parameters** for the encryption/decryption:
 - Phassprase - Longer version of a password used to encrypt the sender's private key using a hash of the passphrase as the secret key
-- Private key - Sender's private key
-- Public key -  Sender's public key
-- Receiver's public key - Receiver's public key (used for decryption)
+- Private key - Company's private key
+- Counter party's public key
 
-Files are encrypted and signed with the sender's private key, receiver's public key, and the pass phrase. <br>
-Files are verified and decrypted with the recipient's private key, sender's public key and the pass phrase.
 
 PGP uses a passphrase to encrypt your private key on your machine. Your private key is encrypted on your disk using a hash of your passphrase as the secret key. You use the passphrase to decrypt and use your private key. A passphrase should be hard for you to forget and difficult for others to guess.
 
@@ -55,6 +52,23 @@ To open the **DXC encryption parameters** page, go to **Organization administrat
 
 Select **New** and set the fields as described in the following subsection.
 
+- Enter an unqiue **Encryption key name**
+- Select the applicable **Key type** and select the applicable secrets setup in step 1 under **Pgp encryption key** FastTab. Only applicable secrets are enabled.
+    - **Encrypt** - Low level of encryption
+        - Counter party's public key
+    - **Encrypt and sign** - High level of encryption
+        - Private key
+        - Counter party's public key
+        - Passphrase  
+    - **Decrypt** - Low level of decryption
+        - Private key
+        - Passphrase 
+    - **Decrypt and verify** - High level of decryption
+        - Private key
+        - Counter party's public key
+        - Passphrase  
+
+Notes on high level: 
 - If a Company is sending a file to the bank, then:
   - The company uses their Private key, bank’s Public key and Passphrase to encrypt the file before sending
 
