@@ -48,7 +48,7 @@ Release notes for other models included in the product:
 
 # Deprecated features
 
-This section describes the features that have been removed, or planned to be removed from a Core Extensions version.
+This section describes the features that have been removed or are planned to be removed from a Core Extensions version.
 
 Deprecated in version 10.0.40.20241023
 ### Exchange Rate Import - Bank of Canada Version TBC
