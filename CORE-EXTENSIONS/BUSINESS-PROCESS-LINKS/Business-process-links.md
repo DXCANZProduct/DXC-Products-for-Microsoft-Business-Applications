@@ -27,7 +27,7 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# Business Process Links
+# Business Process Links *Deprecated*
 ## Overview
 The business process links feature allows you to setup associated links to forms when the user clicks on the D365 Help icon. The associated links will display under the Process Links tab. This was designed for Mavim and SharePoint but will work for any external links.
 ## Setup

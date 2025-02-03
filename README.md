@@ -34,3 +34,6 @@ Microsoft Dynamics is a trademark of Microsoft Corporation in the United States 
 
 ### EULA
 The End User License Agreement (EULA) can be found [here](https://dxc.com/au/en/practices/microsoft/end-user-license-agreement).
+
+### FAQ
+Please see our [Frequently Asked Questions](FAQ.md) for general questions.

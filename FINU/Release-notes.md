@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-12-06
+ms.date: 2025-01-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,14 +30,19 @@ ms.dyn365.ops.version: AX 7.0.1
 This document describes the features that are either new or changed in the release version mentioned.
 
 # Version compatibility
-The matrix shows the DXC build versions compatiable for Microsoft versions and builds. <br>
+The matrix shows the minimum DXC build versions compatible per Microsoft versions and builds. <br>
 If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17981 | • Functional: 10.0.37.2024032522 <br> • Build error fixed in: 10.0.37.202405302
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes - 18802	          | Fix available in 10.0.40.202409162
-Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40.2024091931
+Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | DXC Finance Utilities 10.0.40.2024091931 <br> DXC ABN Validation 10.0.40.2024091931 <br> DXC Encryption 10.0.40.202409162
+
+Release notes for other models included in product:
+- [DXC Connections](../CONNECTIONS/Release-notes.md)
+- [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
+- [DXC License](../LMG/Release-notes.md#dxc-license)
 
 ### Microsoft deprecation notice
 
@@ -62,14 +67,14 @@ Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40
 
 #### Features not yet supported
 
-Feature	| 10.0.41 Feature state
+Feature	| 10.0.42 Feature state
 :--       	|:--		
-**Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't currently support converting date/time fields within the custom bank statement format | Mandatory
+**Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't support converting date/time fields within the custom bank statement format as the field is date only | Mandatory
 **Modern bank reconciliation** | 
 
 # Current version
 
-### Release 10.0.40.20241204
+### Release 10.0.40.20250122
 
 DXC Finance Utilities 10.0.40 runs on the following Microsoft releases
 
@@ -79,29 +84,27 @@ Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or c
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 
-#### Build 10.0.40.202412041
+#### Build 10.0.40.202501221
+Release date: 22 January 2025
 
 <ins>New features</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-18867		| Various	| IRD number validation	| Modulus 11 digit check, length, digit separator validation for New Zealand IRD numbers. <br> Supports format xxx-xxx-xxx and xxxxxxxxx. <br> This option is enabled by allocating the applicable country, for example NZL, on the Legal entity. <br> <br> Examples: <br> • Incorrect number / Check digit: Expecting check digit 9, but found 8 for IRD no. 086689918 <br> •  Not a number format/incorrect separator: Invalid IRD number format. It should only contain digits having format xxx-xxx-xxx or xxxxxxxxx. <br> • Length: Invalid IRD number length, IRD number should be 9 digits long. <br> ![IRD number validation](Images/ReleaseNotes_20241206_1.png "IRD number validation") <br> <br> ![IRD number validation example](Images/ReleaseNotes_20241206_2.png "IRD number validation example")
-18875		| Data management	| ABN validation	| Data entities added
-19026		| Organization administration	| ABN validation review	| Where ABN validation is enabled for the legal entity, users can use new button **Change history** to view changes made in D365 for each ABN. <br> ![Change history](Images/ReleaseNotes_20241206_4.png "Change history") <br>  <br> ![Change history](Images/ReleaseNotes_20241206_3.png "Change history") 
-19549		| Organization administration	| ABN validation review	| Enabled the following buttons: New and Delete. <br> Added the following buttons: ABN lookup and ABN status <br> ![Buttons](Images/ReleaseNotes_20241206_5.png "Buttons")
-20197		| Accounts payable	| Self billing invoicing <br> Recipient-Created Tax Invoice (RCTI) | Ability to automatically create vendor invoices after a product receipt. <br> The invoice can be automatically created at the same time of product receipt, or split/consolidate using the periodic task. <br> <br> The periodic task split/consolidate options include: <br> • Product receipt <br> • Purchase order <br> • Invoice account <br> • Receipt date <br> <br> Post options: <br> • **Do not post** - Created invoice is not posted and remains as pending vendor invoice <br> • **Post** - Created invoice is automatically posted. If post failed, it will remain as pending vendor invoice <br> • **Post and print** - Created invoice is automatically posted. If post failed, it will remain as pending vendor invoice. The posted invoice is also automatically printed/sent as per Print management destination. The following print management destination options are supported: Smart Send (where licensed,  Email and Electronic reporting export connections <br> <br> [Setup](Setup/ACCOUNTS-PAYABLE/Self-billing-invoicing.md) <br> [Processing](Processing/Accounts-Payable/Self-billing-invoicing.md) 
-20304		| Accounts payable	| Method of payment - BPAY	| Payment control **Payment ID** and Payment attributes **Payment ID** is still defaulted to Yes, but now no longer disabled
-17514	| DXC License manager	| Licensing | New DXC License manager 10.0.40.202412041. See [Release notes](../LMG/Release-notes.md#d365-finance-and-operations) for more detail.
-20389	| DXC Connections	| All Azure connections | New DXC Connections 10.0.40.202412041. <br> See [Release notes](../CONNECTIONS/Release-notes.md) for more detail.
+20611		| Cash and bank management	| Bank statement format | Increased Custom line code's **Line code** from 5 to 10 characters
+20434		| Various	| Encryption	| DXC Encryption 10.0.40.202412121. Ability to setup lower level of encryption. [User guide](Setup/ENCRYPTION/Encryption-decryption.md) <br> Key type options: <br> • Encrypt <br> • Encrypt and sign <br> • Decrypt <br> • Decrypt and verify <br> ![DXC encryption parameters](Images/ReleaseNotes_20250122_1.png "DXC encryption parameters")
+
 
 <ins>Bug fixes</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-19459		| Cash and bank management	| Reconciliation matching rules - Offset type Ledger	| When entering new Offset account number, limited to only **Main accounts** (no financial dimensions). Offset financial dimensions needs to be entered Financial dimensions > Offset account
-19527		| Various	| ABN validation	| Fix to **From date** for _Cancelled_ GST records
-20187		| Accounts payable	| BPAY	| When overriding the vendor bank's default **lodgement reference** on a BPAY method of payment invoice and manually selecting the invoice for settlement on the payment journal line, the default lodgement reference wasn't overridden by the actual lodgement reference on the invoice. This issue only applied to manual settlement, not payment proposal process.
-	
+20860		| Cash and bank management	| Mark as new - offset to intercompany account | When using **Post** button in bank reconcilidation's New transactions and unselected new transaction record's Line details were offset to **intercompany** account, these records were also incorrectly posted in the intercompany and also still showed as unposted on the bank reconciliation.
+20960		| Cash and bank management	| Import bank statements | Removed **Recurrence** on Batch processing for Import bank statements. Also fixed issue where duplicate bank statements where imported when: <br> Batch processing enabled and <br> Was an issue with automatic reconcile after import and running default matching rule set.
+20959		| Cash and bank management	| Reconcile after import with default matching rule set	| Similar to 18174, also fixed issue where subsequent rules not run when the matching rule set contains a rule that errors and was automatically run with reconcile after import (set as default matching rule set on bank account).
+
+
+
 
 # Deprecated features
 
@@ -143,6 +146,32 @@ This section describes the features that have been removed, or planned to be rem
 # Previous version(s)
 
 Approximately one year of previous versions are included below.
+
+### Release 10.0.40.20241204
+
+#### Build 10.0.40.202412041
+Release date: 4 December 2024
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+18867		| Various	| IRD number validation	| Modulus 11 digit check, length, digit separator validation for New Zealand IRD numbers. <br> Supports format xxx-xxx-xxx and xxxxxxxxx. <br> This option is enabled by allocating the applicable country, for example NZL, on the Legal entity. <br> <br> Examples: <br> • Incorrect number / Check digit: Expecting check digit 9, but found 8 for IRD no. 086689918 <br> •  Not a number format/incorrect separator: Invalid IRD number format. It should only contain digits having format xxx-xxx-xxx or xxxxxxxxx. <br> • Length: Invalid IRD number length, IRD number should be 9 digits long. <br> ![IRD number validation](Images/ReleaseNotes_20241206_1.png "IRD number validation") <br> <br> ![IRD number validation example](Images/ReleaseNotes_20241206_2.png "IRD number validation example")
+18875		| Data management	| ABN validation	| Data entities added
+19026		| Organization administration	| ABN validation review	| Where ABN validation is enabled for the legal entity, users can use new button **Change history** to view changes made in D365 for each ABN. <br> ![Change history](Images/ReleaseNotes_20241206_4.png "Change history") <br>  <br> ![Change history](Images/ReleaseNotes_20241206_3.png "Change history") 
+19549		| Organization administration	| ABN validation review	| Enabled the following buttons: New and Delete. <br> Added the following buttons: ABN lookup and ABN status <br> ![Buttons](Images/ReleaseNotes_20241206_5.png "Buttons")
+20197		| Accounts payable	| Self billing invoicing <br> Recipient-Created Tax Invoice (RCTI) | Ability to automatically create vendor invoices after a product receipt. <br> The invoice can be automatically created at the same time of product receipt, or split/consolidate using the periodic task. <br> <br> The periodic task split/consolidate options include: <br> • Product receipt <br> • Purchase order <br> • Invoice account <br> • Receipt date <br> <br> Post options: <br> • **Do not post** - Created invoice is not posted and remains as pending vendor invoice <br> • **Post** - Created invoice is automatically posted. If post failed, it will remain as pending vendor invoice <br> • **Post and print** - Created invoice is automatically posted. If post failed, it will remain as pending vendor invoice. The posted invoice is also automatically printed/sent as per Print management destination. The following print management destination options are supported: Smart Send (where licensed,  Email and Electronic reporting export connections <br> <br> [Setup](Setup/ACCOUNTS-PAYABLE/Self-billing-invoicing.md) <br> [Processing](Processing/Accounts-Payable/Self-billing-invoicing.md) 
+20304		| Accounts payable	| Method of payment - BPAY	| Payment control **Payment ID** and Payment attributes **Payment ID** is still defaulted to Yes, but now no longer disabled
+17514	| DXC License manager	| Licensing | New DXC License manager 10.0.40.202412041. See [Release notes](../LMG/Release-notes.md#d365-finance-and-operations) for more detail.
+20389	| DXC Connections	| All Azure connections | New DXC Connections 10.0.40.202412041. <br> See [Release notes](../CONNECTIONS/Release-notes.md) for more detail.
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+19459		| Cash and bank management	| Reconciliation matching rules - Offset type Ledger	| When entering new Offset account number, limited to only **Main accounts** (no financial dimensions). Offset financial dimensions needs to be entered Financial dimensions > Offset account
+19527		| Various	| ABN validation	| Fix to **From date** for _Cancelled_ GST records
+20187		| Accounts payable	| BPAY	| When overriding the vendor bank's default **lodgement reference** on a BPAY method of payment invoice and manually selecting the invoice for settlement on the payment journal line, the default lodgement reference wasn't overridden by the actual lodgement reference on the invoice. This issue only applied to manual settlement, not payment proposal process.
 
 ### Release 10.0.40.20240919
 
@@ -372,273 +401,6 @@ Number	  	| Module	| Functionality	  	| Description
 17012		| Cash and bank management	| Reverse mark as new transaction	| Support added for reversing **mark as new** transactions offsetting to **vendor, bank or customer** within the same legal entity. <br> 15693 resulted on an incorrect sign on the reverse transaction on the bank, vendor and customer <br> Supports features: <br> • Enable bank reconciliation reversal even new transactions exist in posted bank statement <br> • Reverse posted bank statement with new transactions <br>
 17126		| Cash and bank management	| Reconciliation matching rule	| When used to create automatically posted Customer dishonour payments, the automatically matching in the Bank reconciliation failed. 
 17437		| Cash and bank management	| Bank statement periodic import | Archive issue when connection has high latency. File deleted before it could copy to Archive. Change: Before delete the result of copy is awaited and retried for 1 seconds 3 times before marking as an exception.
-
-
-### Release 10.0.36.20231116
-
-#### Build 10.0.36.2023111671
-Release date: 2 February 2024 <br>
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-16332		| System administration 	| Business event for electronic reporting export | New Business event **Electronic reporting file exported to azure blob**. Option to create an event when exporting ER file to Azure Blob via 'Electronic reporting export connections'.
-16596		| Organization adminstration	| Electronic reporting export connection | 'Validate connection' functionality added
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-16873		| Accounts payable	| Payment advice print	| Finance utilities was referencing 'ECL_BankPaymAdviceVendV2' report when printing Vendor Payment advice. When the report wasn't deployed to an environment, printing would error with 'Parameter _reportName cannot be null or empty'. Reference to the ECL report has been removed.
-16897		| Accounts payable <br> Accounts receivable	| ABN validation	| Only applicable to 10.0.36.2023111661. When ABN validation was active for the legal entity, any changes on the vendor/customer resulted in ABN validation dialog popping up.
-16959		| Various	| - Financial utilities connections <br> - Electronic reporting export connections	| Increase EDT for usernames, passwords (sftp, ftp) and storage account name, storage account key (Azure blob)
-16976		| Accounts reveivable	| Interest note - Due date	| Waive, reinstate and reverse of interest notes also now utilize 'Use customer payment terms' option.
-
-
-#### Build 10.0.36.2023111661
-Release date: 12 January 2024 <br>
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-16822 <br> 16754 | Data management | ABN validation - Import entities TaxVATNumTable & VendVendorV2	| ABN validation GUI popup wrapped around a condition for data import scenarios. Also removed the previous 'Skip validation' method when importing Vendors entity. <br> When ABN validation is enabled for the legal entity and the entities imported, ABN validation will occur without the GUI popup. Records with valid ABNs will be imported and only invalid ABN staging records will error.
-
-
-
-#### Build 10.0.36.2023111651
-Release date: 21 December 2023 <br>
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-16794		| Accounts payable	| Vendor approval	| Related only to earlier versions of 10.0.36.20231116 - deprecating Vendor bank account approval. <br> Resulted in values not being retained for client extended fields in Vendor approval.
-
-
-#### Build 10.0.36.2023111642
-#### Build 10.0.35.2023111641
-Release date: 14 December 2023 <br>
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-16758		| Accounts payable	| Vendor approval	| Proposed changes disregarded for changes to standard vendor fields. 
-16765		| Accounts payable	| Method of payment <br> EFT file name Editor	| Label fix and saving of changes to file name mask.
-
-
-#### Build 10.0.36.2023111631
-Release date: 8 December 2023
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-16747		| N/A		| Deployment		| Bug fix only applicable to 10.0.36.2023111621, which included unit tests. <br> To remove unit tests, use the following [instructions](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package) to remove the package/uninstall unit tests.
-
-#### Build 10.0.36.2023111621
-#### Build 10.0.35.2023111622
-Release date: 30 November 2023 <br> 
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-15693		| Cash and bank management	| Reverse mark as new transaction	| Support added for reversing **mark as new** transactions offsetting to **vendor, bank or customer** within the same legal entity. <br> Supports features: <br> • Enable bank reconciliation reversal even new transactions exist in posted bank statement <br> • Reverse posted bank statement with new transactions <br>
-
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-16584		| Accounts payable	| Vendor bank account approval	| Proposed changes disregarded for changes to standard vendor bank account fields.
-
-
-#### Build 10.0.36.202311161
-#### Build 10.0.35.202311161
-Release date: 16 November 2023 <br> 
-
-<ins>Deprecated</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-15394		| Accounts payable	| Vendor bank account change workflow	| Deprecate Vendor bank account fields in Vendor approval. <br> See [Deprecated features notice - Vendor bank account change workflow](#vendor-bank-account-change-workflow) for more details.
-16002		| Cash and bank management	| Mark as new transaction's Posting date	| Deprecate **Posting date** functionality for Mark as new transactions. <br> See [Deprecated features notice - Posting date](#new-bank-statement-transaction---posting-date) for more details.
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-15488		| Accounts receivable	| Interest notes - Due date	| New field called **Use customer payment terms** added to **Accounts receivable parameters**  and **Credit and collections parameters** (Collections tab). <br> If set to _Yes_, the customer's payment terms will be used to determine Due date when posting Interest notes. <br> [Guide](Setup/ACCOUNTS-RECEIVABLE/Customer-parameters.md)
-16039		| Cash and bank management	| Bank statement import	| **Run in the background** functionality added to **Import bank statements** <br> ![Import bank statements](Images/ReleaseNotes_20231130_1.png "Import bank statements") 
-16471		| Encryption	| | DXC encryption parameters: Rename field KeyVaultSignerPublicKey (Signer's public key) to KeyVaultReceiverPublicKey (Receiver's public key)
-16401		| Accounts payable	| Vendor bank account - Lodgement reference	| Increased Lodgement reference EDT from 18 to 20
-N/A		| DXC License 	| | DXC License 10.0.34.202310311 - Includes feature managed SmartSend and Core extensions
-
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-16069		| Unit tests	| 	| Fix 10.0.37 build issues for Finance utilities Unit tests
-16244		| Cash and bank management	| Import statement	| Code change in 10.0.37 that makes 'Bank account' mandatory when using 'Import statement for multiple bank accounts in all legal entities'
-16036		| Data management	| Import data entity **Document types**	| Couldn't import the entity with Finance utilities field DFUGEREXPORTCONNECTION. <br> Error: 'The column ErrorCode in entity Document types has incorrect data. Please correct the data and try the import again.'
-
-### Release 10.0.35.20230731
-
-#### Build 10.0.35.2023073156
-Release date: 14 November 2023 <br> 
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-16460		| Cash and bank management	| Intercompany bank Mark as new transactions | 16338's change to intercompany bank mark as new, created a bank statement in the destination company to create intercompany reconciled bank transactions. This has now been changed to not create a bank statement in the destination legal entity. It now creates an unreconciled bank transaction in the destination company using the following from originating company: Debit/Credit Amount, OffsetLedgerDimension, BankTransType, OffsetTxt, OffsetCompany, OffsetAccountType, ExchRateSecond, ExchRate, CurrencyCode, Voucher, TransDate, LedgerDimension, AccountType, JournalNum
-
-
-#### Build 10.0.35.2023073143
-Release date: 2 November 2023 <br> 
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-16429		| Cash and bank management	| Bank statement / reconciliation	| Update ledgers used for mark as new **Intercompany bank** transactions. Previously used  LedgerInterCompany fields CustLedgerDimension and DebitLedgerDimension, but these aren't available in the Intercompany accounting form. Now using: OriginatingDebitLedgerDimension or OriginatingCreditLedgerDimension and DestinationCreditLedgerDimension or DestinationDebitLedgerDimension.
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-16338		| Cash and bank management	| Intercompany bank Mark as new transactions | Additions to 15578. Applicable to when a bank statement line is marked as new and offset to an **intercompany bank account**. <br> Previously only supported when bank statement is posted via 'Mark as reconciled' (Auto-post bank statement is set to _Yes_), and feature 'Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions' disabled. <br> Now supports the feature enabled and posting the bank statement from the Bank statement page (Auto-post bank statement is set to _No_) as well.
-16250		| Cash and bank management	| Import statement	| Incorrect warning message when importing bank statement and the file contains multiple bank accounts and the import parameters is filtered to one bank account that exists in the file: 'Failed to match with bank account'. <br> It also warned about No matching bank account found for bank accounts that doesn't exist in D365, but the import was only filtered to one specific bank account.
-
-
-#### Build 10.0.35.2023073131
-Release date: 4 October 2023 <br> 
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-16114		| ABN Validation	| Customer and Vendor ABN validation	| Decouple DXCABNValidation from DXCFinanceUtilities enabling companies to remove model DXCABNValidation.
-
-
-#### Build 10.0.35.2023073122
-Release date: 31 August 2023 <br> 
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-15017		| Accounts payable	| EFT file name generation	| Ability to set static values and select placeholders for EFT file name in Vendor's Method of payment <br> [User guide](Setup/ACCOUNTS-PAYABLE/Vendor-payments.md#eft-file-name-generation) <br> ![Method of payment](Images/ReleaseNotes_20230731_4.png "Method of payment") <br> ![Editor](Images/ReleaseNotes_20230731_5.png "Editor") 
-15578		| Cash and bank management	| Bank reconciliation	| When bank statement line is marked as new and offset to an **intercompany bank account**, the postings will now be created as intercompany. Example: <br>  • **Current company**: Debit I/C Receivable and Credit Bank account <br> • **Intercompany**: Debit Bank account and Credit I/C Payable
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-15891		| Cash and bank management	| Bank reconciliation | Only issue in **10.0.35.202307311**. <br> When running matching rules, the lines are not moved to matched/new transactions
-15976		| Cash and bank management	| Bank reconciliation	| When running Reconciliation matching rule offsetting to account type **Customer**, the customer payment journal line's **Approved** will now be set to _Yes_. Else the record is not available to be settled.
-15899		| Accounts payable	| Payments report	| Only issue in 10.0.35. <br> When printing the **Payments** report in Vendor payments, every 2nd page is blank.
-
-
-#### Build 10.0.35.202307311
-Release date: 31 July 2023 <br> 
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-14578		| Cash and bank management	| Bank reconciliation	| Support for manually setting offset details when enabling feature **Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions**. This feature adds section **New transactions** in the Bank reconciliation and in 10.0.35 MS added additional button **Line details**. <br> Finance utilities now utilises **Line details** for the ability to manually set offset details for mark as new transactions. <br> ![Line details](Images/ReleaseNotes_20230731_1.png "Line details") <br><br> _Note: Using button Cancel on Line details currently still saves any changes. Bug has been reported to Microsoft and fix will be included in 10.0.37_
-14929		| Cash and bank management	| Bank statement import	| **Decimal adjustment** was limited to 5 decimals. <br> Have been changed to dynamic and now supports higher than 5 decimals.
-14088		| Cash and bank management	| Bank statement import	- Periodic task | Currently when the periodic task **Import bank statements via financial utilities connection**'s Bank statement format's **Custom format** is: <br> • **Yes**: By design if there are issues with creating bank statement for any of the accounts in the file (example bank account doesn't exist in D365) , no bank statements are created and the file is moved to error path (instead of archive). <br> • **No**: Std creates bank statements for all valid bank accounts using the Electronic reporting configuration - we have no control over this. <br> **This change**: will move the file to **Error path / container** (instead of archive path) if not all bank statements could be created when using the periodic task and the bank statement format's **Custom format** is set to _No_.
-15410		| Accounts payable	| Vendor bank account approval	| Support for 10.0.32 feature 'Vendor bank account change proposal workflow’ / ‘Supplier bank account change proposal workflow' which is on by default from 10.0.35. <br> Added the following Finance utilities fields to **Vendor bank account approval**: <br> • Biller code <br> • Lodgement reference <br> Note: Finance utilities includes vendor bank accounts fields in **Vendor approval**, which has now been replaced by this MS feature, and will be deprecated in the next Finance utilities release. Please migrate your vendor bank account approval setup from **Vendor approval** to **Vendor bank account approval** before the next release. <br> [Deprecation notice](#vendor-bank-account-change-workflow) <br> ![Vendor bank account approval](Images/ReleaseNotes_20230731_2.png "Vendor bank account approval")
-14099		| Accounts receivable | AR Utilities	| Added Amount **Decimal adjustment** option to Remittance format <br> ![Remittance format](Images/ReleaseNotes_20230731_3.png "Remittance format")
-N/A		| Licensing	| DXC License & DXC License manager	| New versions included: <br> • DXC License 10.0.34.202307311 <br> • DXC License Manager 10.0.32.202307312
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-14619		| Cash and bank management	| Bank statement import	- Custom formats | Ability to map non transaction record custom line codes. Previously if Opening or Closing balance custom line codes where set in **Custom line codes**, these were imported as transaction records. 
-15482		| Cash and bank management	| Bank statement import	- Custom formats | When using mapped **Ending balance** field, the opening balance was added to the imported bank statement's ending balance
-15199		| Cash and bank management	| Reconciliation matching rules	set | Extension to **processMatchRuleSet** to support reprocessing unmatched bank statement lines. <br> The issue came in where the filter criteria for each rule in the set found the same bank statement lines, but the rules used different bank statement fields to find the D365 customer account to post the customer payment journal. <br> <br> Example - Reconciliation matching rule set where all the rules filters to same criteria that matches to 15 bank statement lines: <br> Rule 1: Uses Bank statement field **Description** to find the D365 customer account, but only 3 lines could find a D365 customer account in this field to successfully post. <br> Rule 2: Uses Bank statement field **Entry reference** to find the D365 customer account. The expectation would be that Rule 2 would find the remaining 12 bank statement lines and post the applicable ones, but it found 0. <br> Before this change, only rule 1 in the set found bank statement lines, and subsequent rules found 0.
-15390		| Cash and bank management	| Bank reconciliation	| When running a **Mark new transactions** Reconciliation matching rule that: <br> • Posts customer payment journals and <br> • Financial utilities parameters **Only match posted statement lines** was set to _Yes_ and <br> • **No** journals were successfully posted (for example couldn't find any matching D365 customer account for all the lines) <br> All unmatched bank statement transactions, that matched the criteria, where moved to matched.
-
-### Release 10.0.34.20230615
-
-#### Build 10.0.34.202306151
-Release date: 15 June 2023 <br> 
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-14332	| Cash and bank management <br> Accounts receivable | Financials utilities connection |  Update to support Azure Blob Storage related method depreciation in 10.0.34. <br> Replaced StartCopyFromBlob with BeginStartCopy <br> [Obsolete API](https://learn.microsoft.com/en-us/previous-versions/azure/jj732079(v=azure.100))
-12430		| Cash and bank management | Reconciliation matching rules | New field **Offset account reference bank statement field** provides the ability to use [Customer reference](Setup/ACCOUNTS-RECEIVABLE/Customer-reference.md) to find the applicable D365 customer account when running a Mark new transactions Reconciliation matching rule offsetting to customer. 
-14536	| Cash and bank management	| Bank statements	| Ability to map **Ending balance** on custom bank statement formats. Where this is mapped, the imported bank statement's ending balance will be used to populate the Bank statement's ending balance field. This is useful to validate that bank statements are imported in the correct sequence.
-14332	| Accounts payable	| Model reference	| Added FinTag model reference to Finance utilities
-14524	| Accounts payable	| Payments report	| Added new field for Vendor's bank name
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-14532		| Cash and bank management	| Bank reconciliation report	| Fixed Report's Txt field's ExtendedDataType to match Bank account transaction's Txt field.
-14696		| Cash and bank management	| Bank statement import	- Custom formats | Issue with 88 continuation line's string size. 
-
-
-### Release 10.0.31.20230518
-
-#### Build 10.0.31.202305181
-Release date: 18 May 2023 <br> 
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-12631		| Cash and bank management	| UI updates		| • Update header on Bank accounts 'EFT parameters' to 'AP EFT parameters' <br> • Bank reconciliation warning log updated where the customer payment journal isn't automatically posted: "Customer payment journal % has been created successfully. Please post the payment journal manually, refresh the worksheet and manually match with the new bank transactions."
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-14277		| Cash and bank management	| Bank statement	| Importing bank statement file that contains multiple bank accounts in different legal entity's errored with: "The bank account % must enable the parameter Advanced bank reconciliation" for bank accounts in different legal entity.
-13554		| Cash and bank management	| Bank reconciliation	| From 10.0.31 when feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' was enabled and running a mark as new reconciliation rule that offsets to Vendor, it didn't create the record in the vendor subledger.
-14096		| Cash and bank management	| Reconciliation report	| Timeout on report when bank account has a large number of transactions.
-14230		| Accounts receivable		| AR Utilities		| Update Error customer account logic to work with blank invoice.
-14239		| Accounts receivable		| Data management	| Importing entity 'Customers V3' errored when ABN lookup is enabled.
-12902		| Accounts payable		| Data management	| Importing entity 'Vendors V2' errored when ABN lookup is enabled.
-14333		| Accounts payable		| Generate payments	| Only issue where the GER file is automatically saved to Azure blob storage with keyvault. Added security privilege to duty 'Maintain vendor payments'. Error: "Access denied to field Key Vault secret key (SecretKey) in table Key Vault parameters (KeyVaultParameters)."
-
-
-### Release 10.0.29.20230505
-
-#### Build 10.0.29.202305051
-Release date: 5 May 2023 <br> 
-
-<ins>New features</ins>
-
-Number	  	| Functionality	  | Description
-:--       	|:--              |:--
-12644		| Customer references	| Ability to set multiple references against customers - [Setup](Setup/ACCOUNTS-RECEIVABLE/Customer-reference.md). <br> These references can be used in the following scenarios: <br> • Customer remittance file refers to a reference unique to the customer, but not an invoice number. This reference can be used to find the applicable customer account when creating the customer payment journal while importing customer remittances using the additional licensed feature AR Utilities. <br> • Roadmap: Reconciliation matching rules additional ability to use the customer reference to find the applicable customer account when creating the customer payment journal.
-11357		| Import customer remittance file	| New licensed feature included in **AR Utilities**. <br> Enhancement to import customer remittance files from ftp, sftp or Azure blob storage using data entity Customer payment journal. <br> A wide variety of setup options allows flexibility on method to find the customer account, settlement, posting date, custom file mapping etc. <br> • [Import customer remittance setup](Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md) <br> • [Import customer remittance processing](Processing/Accounts-Receivable/Customer-remittance.md)
-13907		| Financial utilities connection	| Where file is moved to **error** path/container, the Financial utilites connection's Log Level will be set to _Error_. <br> Set connection's **Logging level** to _Error_ and use custom alerts to be alerted when a file has been moved to error path. <br> ![Connection log](Images/ReleaseNotes_202304_1.png "Connection log")
-N/A		| License manager	| License manager version 10.8.32.10171 <br> Enhanced Licensing capabilities to assist with licensing support and scaling. <br> **Note:** Required to upgrade all installed DXC products to at least the following versions: <br> • EDI 10.0.29.202305053 <br> • Finance utilities 10.0.29.202305051 <br> • SmartSend 10.0.29.202304142 <br> • Core extensions 10.0.29.202304142 <br> • DocuSign 10.0.29.202304211 <br> • Item creation 10.0.29.202304211 <br> •  PLM 10.0.29.202304211 <br> • Forex 10.0.29.202305101  <br> ![System parameters](Images/ReleaseNotes_202304_2.png "System parameters")
-
-<ins>Bug fixes</ins>
-
-Number	  	| Functionality	  | Description
-:--       	|:--              |:--
-12857		| Data entity - Reconciliation matching rules	| Reverse changes for 11749. Removed fields added back.
-12888		| Data entity - Financial utilities connections	| Fixed entities required to import Financial utilties connections
-10429		| Data entity - Reconciliation matching rule 	| When importing entity, the Offset account was imported with Chart of account delimiter after the ledger account.
-14093		| Reconciliation matching rules | Security: Maintain privilege added for **Copy matching rule**. Added to Duty 'Enable bank management process'.
-
-
-
 
 
 ### Archive
