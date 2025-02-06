@@ -87,7 +87,7 @@ Press **Check for updates** to refresh the feature management list if the above 
 Number	  	| Name	  | Description
 :--       	|:--              |:--
 18339|Remove  Business Process Links from Core Extensions | The Business Process Suite Model has been removed from the deployable package.  It is recommended customers follow standard [uninstall](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package) Instructions to remove the model 
-18908| Import functionality creates multiple Journals in Multiple companies| New Import fucntionality has been developed that facilitates the import of multiple General Journals from one central sheet.  see 
+18908| Import functionality creates multiple Journals in Multiple companies| A New Import functionality has been developed that facilitates the import of multiple General Journals from one central sheet.  see [New Journal Upload](../CORE-EXTENSIONS/JOURNAL-IMPORTS/General-Journal-Multiple.md)
 
 
 
