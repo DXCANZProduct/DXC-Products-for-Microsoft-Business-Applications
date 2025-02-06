@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 This document describes the features that are either new or changed in the release version mentioned.
 
 # Version compatibility
-The matrix shows the minimum DXC build versions compatible with Microsoft versions and builds. <br>
+The matrix shows the minimum DXC build versions that are compatible with Microsoft versions and builds. <br>
 If blank: investigations are ongoing. <br>
 
 D365 Version		  |Iissues found in testing?| Product version tested
@@ -55,11 +55,12 @@ Deprecated in version 10.0.40.20241023
 Reason for deprecation/removal  - no longer being used as a source of currency exchange rates
 
 ### Business Process links
-Reason for deprecation/removal - Business Process links were originally designed for Mavim and SharePoint integration.  Both Mavim and Sharepoint have alternate connection capabilities with D365 Finance and operations and the product is no longer being utilised as part of the Core extension solutions 
+Reason for deprecation/removal - Business Process links were originally designed for Mavim and SharePoint integration.  Both Mavim and Sharepoint have alternate connection capabilities with D365 Finance and operations and the product is no longer being utilised as part of the Core extension solutions. The Model was removed in version 10.0.40.202502051
+
 
 # Current version
 
-### Release 10.0.40.20241023
+### Release 10.0.40.20250205
 
 DXC Core extensions 10.0.40 runs on the following Microsoft releases
 
@@ -79,6 +80,20 @@ Enable the following feature in D365 Feature management:
 
 Press **Check for updates** to refresh the feature management list if the above feature is not visible.
 
+#### Build 10.0.40.202502051
+
+<ins>New features</ins>
+
+Number	  	| Name	  | Description
+:--       	|:--              |:--
+18339|Remove  Business Process Links from Core Extensions | The Business Process Suite Model has been removed from the deployable package.  It is recommended customers follow standard [uninstall](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package) Instructions to remove the model 
+18908| Import functionality creates multiple Journals in Multiple companies| New Import fucntionality has been developed that facilitates the import of multiple General Journals from one central sheet.  see 
+
+
+
+# Previous version(s)
+
+### Release 10.0.40.20241023
 #### Build 10.0.40.202410231
 
 Release date: 23 October 2024
@@ -95,11 +110,7 @@ Number	  	| Name	  | Description
 16616| Add warning or confirmation message before Reset print management is actioned| A new warning message was added when selecting "reset print management" to confirm actions cannot be undone
 19570|Change Feature Key description for Data Anonymization include (Preview)| Changes were made to the DXC License manager model (see [Release notes](../LMG/Release-notes.md) ) to highlight that Data anonymization is a preview product and still evolving 
 
-
-
-
-# Previous version(s)
-
+### Release 10.0.36.20240530
 #### Build 10.0.36.202405301
 
 Release date: 30 May 2024
