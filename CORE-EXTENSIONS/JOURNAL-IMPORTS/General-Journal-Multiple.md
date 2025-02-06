@@ -65,5 +65,5 @@ Add the *Accounting Manager* security role to the nominated processing group <br
 To create a  [Data Import template](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.md#create-data-entity-file-templates)<br>
 To Create [Data Entity Import Project](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.md#create-data-entity-import-project)<br>
 For [Security Roles](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/edit/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.md#security-roles) and to Set up roles for data projects
-For [Processing instructions] (https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.html#process)
+For [Processing instructions](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.html#process)
 
