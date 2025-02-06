@@ -39,7 +39,7 @@ D365 Version		  |Iissues found in testing?| Product version tested
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
-Product version: 10.0.43 <br> App build: 10.0.2177	  | Currently being tested | pending testing results 
+Product version: 10.0.43 <br> App build: 10.0.2177	  | Currently being tested | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymization 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051
 
 
 Release notes for other models included in the product:
@@ -55,7 +55,7 @@ Deprecated in version 10.0.40.20241023
 Reason for deprecation/removal  - no longer being used as a source of currency exchange rates
 
 ### Business Process links
-Reason for deprecation/removal - Business Process links were originally designed for Mavim and SharePoint integration.  Both Mavim and Sharepoint have alternate connection capabilities with D365 Finance and operations and the product is no longer being utilised as part of the Core extension solutions. The Model was removed in version 10.0.40.202502051
+Reason for deprecation/removal - Business Process links (also referred to as Business Process Suite) were originally designed for Mavim and SharePoint integration.  Both Mavim and Sharepoint have alternate connection capabilities with D365 Finance and operations and the product is no longer being utilised as part of the Core extension solutions. The Model was removed in version 10.0.40.202502051
 
 
 # Current version
@@ -86,8 +86,8 @@ Press **Check for updates** to refresh the feature management list if the above 
 
 Number	  	| Name	  | Description
 :--       	|:--              |:--
-18339|Remove  Business Process Links from Core Extensions | The Business Process Suite model has been removed from the deployable package.  It is recommended customers follow standard [uninstall](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package) instructions to remove the model 
-18908| Import functionality creates multiple Journals in Multiple companies| A New Import functionality has been developed that facilitates the import of multiple General Journals, into multiple legal entites from one central sheet.  see [New Journal Upload](../CORE-EXTENSIONS/JOURNAL-IMPORTS/General-Journal-Multiple.md)
+18101|Removal of references and model for Business Process Suite| Business Process links were originally designed for Mavim and SharePoint integration. Both Mavim and Sharepoint have alternate connection capabilities with D365 Finance and Operations and the product is no longer being utilised as part of Core Extensions.  References within the Core extension product have been removed and will no longer be included in releases.  Customers should remove the Model from existing environments. following the instructions outlined by Micorosft - [Uninstall a package](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package)
+18908|Ability to create multiple General Ledger Journals in Multiple legal entities from a single uplaod| A new data entity and menu item have been created to facilitate this functionality. see [New Journal Upload](../CORE-EXTENSIONS/JOURNAL-IMPORTS/General-Journal-Multiple.md) for instructions on how to access and utilise this feature |
 
 
 
