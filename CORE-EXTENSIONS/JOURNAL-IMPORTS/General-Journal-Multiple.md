@@ -25,7 +25,7 @@ ms.author: Peter Musumeci
 ms.search.validFrom: 2025-01-06
 ms.dyn365.ops.version: AX 7.0.1
 ---
-Introduced in Release 202501XXX
+Introduced in Release 10.0.40.20250205
 
 # General Journal Import for multiple Legal Entities 
 ## Overview
@@ -33,7 +33,7 @@ The **Import ledger journal multi-company** functionality provides a user-friend
 
 ## Setup
 ### New General journal data entity
-A new General journal Data Entity has been developed titled, *Core ledger journal entity*  This entity supports journals of type Daily. The allowed ledger types are Ledger, Bank, Vendor, and Customer. The entity will automatically populate the Journal number to the next available in that legal entity once the data is run to target.
+A new General journal Data Entity has been developed titled, *Core ledger journal entity*  This entity supports journals of type Daily. The allowed ledger types are Ledger, Bank, Vendor, and Customer. Once the data is run to target, the entity will automatically populate the Journal number to the next available in that legal entity.
 
 The new entity introduces the below key fields 
 
