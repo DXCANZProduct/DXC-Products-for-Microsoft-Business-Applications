@@ -5,7 +5,7 @@ title: DXC Connections
 description: DXC Connections - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-01-09
+ms.date: 2025-02-12
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
