@@ -34,12 +34,12 @@ This document describes the features that are either new or changed in the relea
 The matrix shows the minimum DXC build versions that are compatible with Microsoft versions and builds. <br>
 If blank: investigations are ongoing. <br>
 
-D365 Version	  | Any issues found in testing?	  | Product version tested
+Microsoft D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | 10.0.37.202403263
-Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | 10.0.37.202403263
-Product version: 10.0.42 <br> App build: 10.0.2095	  | No | 10.0.40.202409113
-Product version: 10.0.43 <br> App build: 10.0.2177	  | Currently being tested | pending testing results 
+Product version: [10.0.40](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40) <br> App build: 10.0.1935.5	  | No | 10.0.37.202403263
+Product version: [10.0.41](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) <br> App build: 10.0.2015.16	  | No | 10.0.37.202403263
+Product version: [10.0.42](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42) <br> App build: 10.0.2095	  | No | 10.0.40.202409113
+Product version: [10.0.43](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43) <br> App build: 10.0.2177	  | Currently being tested | pending testing results 
 
 Release notes for other models included in the product:
 - [DXC Connections](../CONNECTIONS/Release-notes.md)
