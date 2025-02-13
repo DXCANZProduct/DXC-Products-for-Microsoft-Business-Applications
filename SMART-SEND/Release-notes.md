@@ -34,7 +34,7 @@ This document describes the features that are either new or changed in the relea
 The matrix shows the minimum DXC build versions that are compatible with Microsoft versions and builds. <br>
 If blank: investigations are ongoing. <br>
 
-Microsoft Dynamics 365 Finance Version		  | Any issues found in testing?	  | Product version tested
+Microsoft Dynamics 365 Finance Version		  | Any issues found in testing?	  | Smart Send Product version tested
 :--       	  |:--           			  |:--
 Microsoft Dynamics 365 Product version: [10.0.40](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40) <br> 	App build: 10.0.1935.5	  | No | 10.0.37.202403263
 Microsoft Dynamics 365 Product version: [10.0.41](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) <br> 	App build: 10.0.2015.16	  | No | 10.0.37.202403263
