@@ -31,8 +31,8 @@ ms.dyn365.ops.version: AX 7.0.1
 This document describes the features that are either new or changed in the release version mentioned.
 
 # Version compatibility
-The matrix shows the minimum DXC build versions compatible with Microsoft versions and builds. <br>
-If blank: investigations are ongoing. <br>
+The matrix displays the minimal DXC product version and its compatibility with Microsoft versions/builds.
+If it is blank or not listed, investigations are still underway. When upgrading Microsoft Dynamics 365 Finance and Operations, always use the most recent DXC release. <br>
 
 Microsoft Dynamics 365 Finance and Operations Version		  | Any issues found in testing?	  |Product version tested
 :--      			 	  |:--           			  |:--
