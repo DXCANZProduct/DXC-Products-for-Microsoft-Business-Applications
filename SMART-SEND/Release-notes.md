@@ -31,18 +31,15 @@ ms.dyn365.ops.version: AX 7.0.1
 This document describes the features that are either new or changed in the release version mentioned.
 
 # Version compatibility
-The matrix shows the minimum DXC build versions that are compatible with Microsoft versions and builds. <br>
-If blank: investigations are ongoing. <br>
+The matrix displays the minimal DXC product version and its compatibility with Microsoft versions/builds.
+If it is blank or not listed, investigations are still underway. When upgrading Microsoft Dynamics 365 Finance and Operations, always use the most recent DXC release. <br>
 
-D365 Version	  | Any issues found in testing?	  | Product version tested
-:--       	  |:--           			  |:--
-Product version: 10.0.37 <br> App build: 10.0.1725	  | No          | 10.0.34.20231026
-Product version: 10.0.38 <br> App build: 10.0.1777.14	  | No				          | 10.0.34.20231026
-Product version: 10.0.39 <br> App build: 10.0.1860.18	  | • No functional issues <br> • Build error fixed in 17017     | • Functional: 10.0.37.202403263 <br> • Build error fixed in: 10.0.36.202310262
-Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | 10.0.37.202403263
-Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | 10.0.37.202403263
-Product version: 10.0.42 <br> App build: 10.0.2095	  | No | 10.0.40.202409113
-Product version: 10.0.43 <br> App build: 10.0.2177	  | Currently being tested | pending testing results 
+Microsoft Dynamics 365 Finance and Operations Version		  | Any issues found in testing?	  |Product version tested
+:--      			 	  |:--           			  |:--
+Microsoft Dynamics 365 Product version:    [10.0.40](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40) <br> 	App build: 10.0.1935.5	  | No | 10.0.37.202403263
+Microsoft Dynamics 365 Product version:    [10.0.41](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) <br> 	App build: 10.0.2015.16	  | No | 10.0.37.202403263
+Microsoft Dynamics 365 Product version:    [ 10.0.42](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42) <br> 	App build: 10.0.2095	  | No | 10.0.40.202409113
+Microsoft Dynamics 365 Product version:    [10.0.43](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43) <br>	 App build: 10.0.2177	  | Currently being tested | pending testing results 
 
 Release notes for other models included in the product:
 - [DXC Connections](../CONNECTIONS/Release-notes.md)
@@ -51,7 +48,7 @@ Release notes for other models included in the product:
 
 # Upcoming framework changes 
 
-
+As part of our ongoing efforts to strengthen our ISV product line and give the most value to our clients, Smart Send will undergo architectural modifications in a future version later this year, replacing outdated and inefficient approaches. This phase will see changes to the code structure to simplify and improve the product's overall performance. Old, out-of-date methods will be removed, and multiple-form outputs will be combined into one structure. This simplifies the procedure for future updates and/or extensions. This may impact any custom changes or extensions made to the product. Customers using the base Smart Send version are expected to remain compatible after the release. Any impacts to customers with bespoke extensions/modifications must follow their standard troubleshooting process.   The release is targeted to occur before the 10.0.44  version release  Due April 2025 see [Targeted release schedule](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change) to allow Customers with custom extensions/modifications to handle any impacts.
 
 # Current version
 
@@ -67,7 +64,7 @@ Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 Microsoft Dynamics 365 application	| 10.0.42	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
-Microsoft Dynamics 365 application	| 10.0.44 	  | Due April 2025 see [Targeted release schedule](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change)
+
 
 #### Build 10.0.40.202409113 
 
@@ -163,7 +160,7 @@ Number	  | Name	          | Description
 13553	    | Final recipient missing semicolon in email address| When using the "Both" Selection under recipient for purchase order confirmations the final recipient would not have the semi-colon before the email address. With this correction, all email recipients are formatted correctly, and emails are delivered as per standard behaviour.  
 13707	    | Error on customer payment journal when processing Smart Send Email | When making multiple payments to a single Customer account in the customer payment journal only the first line will process the correct attachment.  This has now been corrected and each line will be sent to the related Smart Send contacts with the correct attachment.
 14831	    | Centralized payment only utilized set up from creation legal entity | When utilizing the Centralized Payment Functionality for Vendor Payment Journals Smart Send would utilize set up from the current legal entity.  This has been updated and centralized payment can now use Smart Send templates from multiple legal entities when making centralized vendor payments.
-13707	    | Smart Send does not recognise the difference between a free text invoice and a customer invoice on Invoice Journal | When issuing a Free Text Invoice utilizing the Tax Invoice Journal (Accounts receivable>Enquiries and reports> Invoices >Invoice Journal) a "Report is not set up for Smart Send" Error would appear if the Legal entity did not have a Customer Invoice report set as well.  This has been corrected and both Free text and Customer Invoice can be issued with independent templates.
+15821	    | Smart Send does not recognise the difference between a free text invoice and a customer invoice on Invoice Journal | When issuing a Free Text Invoice utilizing the Tax Invoice Journal (Accounts receivable>Enquiries and reports> Invoices >Invoice Journal) a "Report is not set up for Smart Send" Error would appear if the Legal entity did not have a Customer Invoice report set as well.  This has been corrected and both Free text and Customer Invoice can be issued with independent templates.
 16073	    | The BankPaymAdviceVendController class has become obsolete by Microsoft in version 10.0.37 and mandatory in 10.0.34 | Smart Send now will only support BankPaymAdviceVendController V2.  Activate “Enable batch processing for bank payment advice reports” via Feature management if not auto-enabled.   This feature lets you use batch processing for both the customer and vendor bank payment advice reports. To use this feature, you must use BankPaymAdviceVendV2 and BankPaymAdviceCustV2 bank payment advice and set them up as the customer and vendor report formats in print management.
 
 ![BankPaymAdviceVendV2Report](IMAGES/BankPaymAdviceVendV2Report.png)
