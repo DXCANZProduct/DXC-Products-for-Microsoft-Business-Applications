@@ -39,7 +39,7 @@ D365 Version		  |Iissues found in testing?| Product version tested
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615
-Product version: 10.0.43 <br> App build: 10.0.2177	  | Currently being tested | pending testing results 
+Product version: 10.0.43 <br> App build: 10.0.2177	  | No | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615
 
 # Current version
 
@@ -104,7 +104,7 @@ Number	  | Functionality	  | Reason
 Number	  | Functionality	  | Reason
 :--       |:--              |:--
 9154	    | Support for textbox type | The tag type of text is now supported for envelope creation. A text character limit can be defined for each use of this tag type.
-9315	    | Send account name for placeholder emails	| Support for the sending of distinct values for SignerEmail and SignerName when using purpose controlled placeholders in document management. The value for the SignerName will be the account name for the party. Previously both values were communicated as the email address. This feature must be enabled on each document type by selecting the field Use document type.
+9315	    | Send account name for placeholder emails	| Support for the sending of distinct values for SignerEmail and SignerName when using purpose-controlled placeholders in document management. The value for the SignerName will be the account name for the party. Previously both values were communicated as the email address. This feature must be enabled on each document type by selecting the field Use document type.
 9793	    | Mandatory page number for specific page	| When selecting to use a specific page for tag placement the page number field is now mandatory. This is to prevent an issue with envelope creation and tag assignment to page 0.
 
 ### Release 10.0.12.20210701
