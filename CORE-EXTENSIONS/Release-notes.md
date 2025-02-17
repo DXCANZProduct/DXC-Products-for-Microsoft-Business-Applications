@@ -39,7 +39,8 @@ D365 Version		  |Iissues found in testing?| Product version tested
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
-Product version: 10.0.43 <br> App build: not available	  |  | Not currently available 
+Product version: 10.0.43 <br> App build: 10.0.2177	  | No | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymization 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051
+
 
 Release notes for other models included in the product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
@@ -47,18 +48,19 @@ Release notes for other models included in the product:
 
 # Deprecated features
 
-This section describes the features that have been removed, or planned to be removed from a Core Extensions version.
+This section describes the features that have been removed or are planned to be removed from a Core Extensions version.
 
 Deprecated in version 10.0.40.20241023
 ### Exchange Rate Import - Bank of Canada Version TBC
 Reason for deprecation/removal  - no longer being used as a source of currency exchange rates
 
 ### Business Process links
-Reason for deprecation/removal - Business Process links were originally designed for Mavim and SharePoint integration.  Both Mavim and Sharepoint have alternate connection capabilities with D365 Finance and operations and the product is no longer being utilised as part of the Core extension solutions 
+Reason for deprecation/removal - Business Process links (also referred to as Business Process Suite) were originally designed for Mavim and SharePoint integration.  Both Mavim and Sharepoint have alternate connection capabilities with D365 Finance and operations and the product is no longer being utilised as part of the Core extension solutions. The Model was removed in version 10.0.40.202502051
+
 
 # Current version
 
-### Release 10.0.40.20241023
+### Release 10.0.40.20250205
 
 DXC Core extensions 10.0.40 runs on the following Microsoft releases
 
@@ -67,7 +69,7 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41 	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
-Microsoft Dynamics 365 application	| 10.0.43 	  | Not Yet released
+Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 
 
 ## Feature management
@@ -78,6 +80,20 @@ Enable the following feature in D365 Feature management:
 
 Press **Check for updates** to refresh the feature management list if the above feature is not visible.
 
+#### Build 10.0.40.202502051
+
+<ins>New features</ins>
+
+Number	  	| Name	  | Description
+:--       	|:--              |:--
+18101|Removal of references and model for Business Process Suite| Business Process links were originally designed for Mavim and SharePoint integration. Both Mavim and Sharepoint have alternate connection capabilities with D365 Finance and Operations and the product is no longer being utilised as part of Core Extensions.  References within the Core extension product have been removed and will no longer be included in releases.  Customers should remove the Model from existing environments. following the instructions outlined by Micorosft - [Uninstall a package](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package)
+18908|Ability to create multiple General Ledger Journals in Multiple legal entities from a single uplaod| A new data entity and menu item have been created to facilitate this functionality. see [New Journal Upload](../CORE-EXTENSIONS/JOURNAL-IMPORTS/General-Journal-Multiple.md) for instructions on how to access and utilise this feature |
+
+
+
+# Previous version(s)
+
+### Release 10.0.40.20241023
 #### Build 10.0.40.202410231
 
 Release date: 23 October 2024
@@ -94,11 +110,7 @@ Number	  	| Name	  | Description
 16616| Add warning or confirmation message before Reset print management is actioned| A new warning message was added when selecting "reset print management" to confirm actions cannot be undone
 19570|Change Feature Key description for Data Anonymization include (Preview)| Changes were made to the DXC License manager model (see [Release notes](../LMG/Release-notes.md) ) to highlight that Data anonymization is a preview product and still evolving 
 
-
-
-
-# Previous version(s)
-
+### Release 10.0.36.20240530
 #### Build 10.0.36.202405301
 
 Release date: 30 May 2024

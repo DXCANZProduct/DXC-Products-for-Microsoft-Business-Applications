@@ -4,7 +4,7 @@
 title: DXC Solutions for DocuSign and Dynamics 365
 description: DXC Solutions for DocuSign and Dynamics 365 - Release notes
 author: PeterM
-manager: Kym Parker
+manager: Pontus Ek
 ms.date: 2023-06-15
 ms.topic: article
 ms.prod: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 This document describes the features that are either new or changed in the release version mentioned.
 
 # Version compatibility
-The matrix shows the minimum DXC build versions that are compatible with Microsoft versions and builds. <br>
+The matrix shows the minimum DXC build versions compatible with Microsoft versions and builds. <br>
 If blank: investigations are ongoing. <br>
 
 D365 Version		  |Iissues found in testing?| Product version tested
@@ -39,7 +39,7 @@ D365 Version		  |Iissues found in testing?| Product version tested
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615
-Product version: 10.0.43 <br> App build: not available	  |  | Not currently available 
+Product version: 10.0.43 <br> App build: 10.0.2177	  | No | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615
 
 # Current version
 
@@ -49,13 +49,11 @@ DXC DocuSign 10.0.34 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
-Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
-Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
-Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 Microsoft Dynamics 365 application	| 10.0.42	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
+Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
+Microsoft Dynamics 365 application	| 10.0.44 	  | Due April 2025 see [Targeted release schedule](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change)
 
 Release notes for other models included in the product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
@@ -106,7 +104,7 @@ Number	  | Functionality	  | Reason
 Number	  | Functionality	  | Reason
 :--       |:--              |:--
 9154	    | Support for textbox type | The tag type of text is now supported for envelope creation. A text character limit can be defined for each use of this tag type.
-9315	    | Send account name for placeholder emails	| Support for the sending of distinct values for SignerEmail and SignerName when using purpose controlled placeholders in document management. The value for the SignerName will be the account name for the party. Previously both values were communicated as the email address. This feature must be enabled on each document type by selecting the field Use document type.
+9315	    | Send account name for placeholder emails	| Support for the sending of distinct values for SignerEmail and SignerName when using purpose-controlled placeholders in document management. The value for the SignerName will be the account name for the party. Previously both values were communicated as the email address. This feature must be enabled on each document type by selecting the field Use document type.
 9793	    | Mandatory page number for specific page	| When selecting to use a specific page for tag placement the page number field is now mandatory. This is to prevent an issue with envelope creation and tag assignment to page 0.
 
 ### Release 10.0.12.20210701

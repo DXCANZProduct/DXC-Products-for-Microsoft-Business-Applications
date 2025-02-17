@@ -62,6 +62,27 @@ All telemetry is collected and logged within Microsoft Azure Application Insight
 
 Note: License Manager does not collect any other information other than those specified above. It does not reference or collect any telemetry against any other installed system or ISV modules.
 
+## Dynamics 365 Finance and Operations
+
+### Customers receiving "Product XXX is enabled but not licensed" prompt in D365FO
+
+#### Only a few users experience the issue but works for the rest of the organization
+
+Please verify if there is no issue relating to network latency
+
+#### Multiple or all users experience the issue
+
+Please contact your system administrator to confirm if manually performing validate license within System parameters > Product licenses > Validate license resolves the issue.
+
+#### Prompt is referring to a subset of the products
+
+Please contact your licensing personnel to confirm whether the licenses are still active.
+
+#### Prompt occurs for all products
+
+In the case of such an event, please reach out to the DXC Product support team or [subscribe](./MARKETING-COMMUNICATIONS/subscribe.html) to get notifications.  
+DXC Product Support Team periodically sends out notifications in the event of a downtime or scheduled update.
+
 ## Troubleshooting
 
 1. Prompt with fix connection when accessing the Power App.  

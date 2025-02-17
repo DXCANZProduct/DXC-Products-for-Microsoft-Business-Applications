@@ -5,7 +5,7 @@ title: FAQ
 description: IP support - Frequently asked questions 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-01-16
+ms.date: 2025-01-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,8 +40,10 @@ A list of installed models will be displayed on the **Version** tab.  Scroll to 
 
 ### Is my installed product version compatible with next D365 version
 
-Check **Version compatibility** on the Product's **Release notes**. <br> 
-The matrix shows the DXC build versions compatible for the Microsoft versions and builds.
+Product's **Release notes**'s **Current version** section will specify what D365 version(s) are compatible with the latest release.
+
+For more details on what versions were tested with each D365 Preview and if there were any issues, see **Version compatibility**. <br> 
+The matrix shows the minimum DXC build versions compatible for the Microsoft versions and builds.
 
 > Note: Recommended to upgrade to latest Product version at time of D365 upgrade.
 

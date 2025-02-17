@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 With effect from October 31st, 2025, we have chosen to discontinue the option of continuing maintenance for our solution, "Item Creation (ICW) for Dynamics 365 Finance and Operations."
 
-The final release of the product will occur on October 31st, 2025, which is twelve months from now. We will give you the source code so you can keep using it, but you will be responsible for maintaining it after that. Alternatively, you can raise a T&M work order with DXC Customer Services if you'd like ongoing support. 
+The final release of the product will occur on October 31st, 2025, which is twelve months from now. We will give you the source code so you can keep using it, but you will be responsible for maintaining it after that. Alternatively, you can raise a T&M work order with DXC Customer Services if you require ongoing support. 
 
 To ensure that you have time to find a replacement product if needed, DXC will continue providing bug fixes for the next 6 months. 
 
@@ -46,15 +46,11 @@ DXC Item creation wizard 10.0.34.20231004 runs on the following Microsoft releas
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.34	  | [What’s new or changed in Dynamics 365 application version 10.0.34](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-34)
-Microsoft Dynamics 365 application	| 10.0.35	  | [What’s new or changed in Dynamics 365 application version 10.0.35](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-35)
-Microsoft Dynamics 365 application	| 10.0.36	  | [What’s new or changed in Dynamics 365 application version 10.0.36](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-36)
-Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
-Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
-Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 Microsoft Dynamics 365 application	| 10.0.42	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
+Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
+Microsoft Dynamics 365 application	| 10.0.44 	  | Due April 2025 see [Targeted release schedule](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change)
 
 #### Build 10.0.34.202310041 
 Release date: 4th October 2023
@@ -64,7 +60,7 @@ Release date: 4th October 2023
 Number	  | Name	          | Description
 :--       |:--              |:--
 15941   | During the manual update session, attributes are reset to "default" | When changing attributes against a *released product* all attribute values would previously be reset to the default value listed in the item creation template.  The creation designer's provided product attributes will not change unless a value is entered into the relevant field.  If the field is left blank or unchanged the value will not update.  See New Feature 16016 below for specifics on how the attribute fields in the creation designer look after processing an update.
-16021    | Production fields do not update when the Production Type is updated to Formula.  | When processing an update template to set the "Production Type" field to the value of Formula, while also incorporating changes to values in Production Group, Production Pool (all located under the Engineer tab) and Coverage Group (located under the planning Tab), the Production Type field would update to the value of Formula however the other fields would not update. Field values would display correctly in the Item Creation Designer (as per below if processing via UI) however would not process through to target.
+16021    | Production fields do not update when the Production Type is updated to Formula.  | When processing an updated template to set the "Production Type" field to the value of Formula, while also incorporating changes to values in Production Group, Production Pool (all located under the Engineer tab) and Coverage Group (located under the planning Tab), the Production Type field would update to the value of Formula, however, the other fields would not update. Field values would display correctly in the Item Creation Designer (as per below if processing via UI) however would not process through to target.
 
 ![ICW_Formula_update](IMAGES/ICW_Formula_update.png)
 This would occur during upload and via the user interface without warning or error being issued.
