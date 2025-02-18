@@ -45,6 +45,12 @@ Release notes for other models included in product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
 
+#### Features not yet supported
+
+Feature	| 10.0.43 Feature state
+:--       	|:--		
+**Modern bank reconciliation** | On by default
+
 ### Microsoft deprecation notice
 
 [Microsoft notice](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#feature-deprecation-effective-october-2024)
@@ -65,12 +71,6 @@ Release notes for other models included in product:
 		- Step 4 - Change all applicable **Azure blob** connections: <br> 
 			• Credential type: Key Vault <br>
 	 		• Connection string: Secret setup in step 3
-
-#### Features not yet supported
-
-Feature	| 10.0.43 Feature state
-:--       	|:--		
-**Modern bank reconciliation** | On by default
 
 # Current version
 
