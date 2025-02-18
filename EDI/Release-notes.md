@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-02-04
+ms.date: 2025-02-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,6 +58,17 @@ Release notes for other models included in product:
 	- Step 3 - Change all applicable **Azure blob** connections: <br> 
 		• Credential type: Key Vault <br>
 		• Key vault: Secret setup in step 2
+# Next version
+
+### Release 10.0.40.202502TBD
+
+<ins>New features</ins>
+
+**Core module**	- Applies to all modules	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+21113	| Outbound files - Cancel	| Ability to use **Cancel** to change Status to **Canceled** <br> ![Outbound files - Cancel](RELEASE-NOTES-IMAGES/20250218_1.png "Outbound files - Cancel")
 
 # Current version
 
