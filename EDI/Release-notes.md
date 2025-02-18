@@ -68,7 +68,7 @@ Release notes for other models included in product:
 
 Number	| Name		 | Description
 :--	|:--		 |:--
-21113	| Outbound files - Cancel	| Ability to use **Cancel** to change Status to **Canceled** <br> ![Outbound files - Cancel](RELEASE-NOTES-IMAGES/20250221_1.png "Outbound files - Cancel")
+21113	| Outbound files - Cancel	| Ability to use **Cancel** to change selected Outbound file's Status to **Canceled**. <br> The following statuses are excluded from cancel: <br> • Processed <br> • Processing <br> • Archived <br> <br> ![Outbound files - Cancel](RELEASE-NOTES-IMAGES/20250221_1.png "Outbound files - Cancel")
 
 # Current version
 
