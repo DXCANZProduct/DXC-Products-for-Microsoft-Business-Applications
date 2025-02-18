@@ -98,6 +98,13 @@ Number	| Name		 | Description
 20623	| Voyage creator  | Voyage creator failed when running in batch mode and set to auto create backorder voyage advice. <br> Error: "Stack trace: Cannot run form on non interactive session. EDI % Voyage creator Purchase order % line number % cannot be split because of following errors. You may need add the entire quantity of the order line to the voyage." <br> Issue only applicable to 10.0.40.202412041
 
 
+<ins>Bug fixes</ins>
+
+**Vendor module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+20857	| Vendor purchase order change | Additional fix to 19584, which didn't cover small rounding scenarios. 
 
 
 #### Build 10.0.40.202412041
