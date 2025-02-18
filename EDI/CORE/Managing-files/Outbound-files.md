@@ -3,9 +3,9 @@
 
 title: EDI Core
 description: Managing files in the EDI module
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-03-02
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-02-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  SAB_EDIFileExport, SAB_EDIExportBatchJobs
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDI
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -44,11 +44,13 @@ Automatic archiving of the document handling attachment can be setup with **Arch
   - **Error** – An error was identified during file processing.  The file has not been processed. Example issue: the outbound file path hasn't been setup on the connection.
   - **Processing** – File is currently processing
   - **Archived** – The file has been archived
+  - **Canceled** - The file has been cancelled by using the **Cancel** button
 - View the staging document by selecting **Staging document** from the ribbon.
 - To view errors, select the **Log** button from the ribbon.
 - Select **Reset Status** to update the status back to pending and reprocess the file.
 - See Retry/Reset process for more details on **Edit reset status recurrence**.
 - Select **Download attachment** to download the selected file/s attachment. When multiple files are selected a zip is created.
+- Select **Cancel** to change to outbound file's **Status** to _Cancelled_. This button is enabled when the outbound file's status is _Pending_ or _Error_.
 - The following fields are available on the **Overview** tab:
   - **EDI Document** – The inbound document type
   - **File Name** – Name of the file imported
