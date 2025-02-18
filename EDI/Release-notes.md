@@ -70,6 +70,22 @@ Number	| Name		 | Description
 :--	|:--		 |:--
 21113	| Outbound files - Cancel	| Ability to use **Cancel** to change selected Outbound file's Status to **Canceled**. <br> The following statuses are excluded from cancel: <br> • Processed <br> • Processing <br> • Archived <br> <br> ![Outbound files - Cancel](RELEASE-NOTES-IMAGES/20250221_1.png "Outbound files - Cancel")
 
+<ins>Bug fixes</ins>
+
+**Standard formats module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+18798	| X12 templates - Copy	| Copy functionality didn't copy all mappings for X12 templates
+
+
+**Vendor module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+20857	| Vendor purchase order change | Additional fix to 19584, which didn't cover small rounding scenarios. 
+
+
 # Current version
 
 Next release is planned for 31 March 2025.
@@ -96,15 +112,6 @@ Release date: 6 December 2024
 Number	| Name		 | Description
 :--	|:--		  	|:--
 20623	| Voyage creator  | Voyage creator failed when running in batch mode and set to auto create backorder voyage advice. <br> Error: "Stack trace: Cannot run form on non interactive session. EDI % Voyage creator Purchase order % line number % cannot be split because of following errors. You may need add the entire quantity of the order line to the voyage." <br> Issue only applicable to 10.0.40.202412041
-
-
-<ins>Bug fixes</ins>
-
-**Vendor module**	
-
-Number	| Name		 | Description
-:--	|:--		  	|:--	
-20857	| Vendor purchase order change | Additional fix to 19584, which didn't cover small rounding scenarios. 
 
 
 #### Build 10.0.40.202412041
