@@ -70,6 +70,13 @@ Number	| Name		 | Description
 :--	|:--		 |:--
 21113	| Outbound files - Cancel	| Ability to use **Cancel** to change selected Outbound file's Status to **Canceled**. <br> The following statuses are excluded from cancel: <br> • Processed <br> • Processing <br> • Archived <br> <br> ![Outbound files - Cancel](RELEASE-NOTES-IMAGES/20250221_1.png "Outbound files - Cancel")
 
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+21449	| Sales invoice		| Two extra header fields added: <br> • Line discount <br> • Total discount
+
+
 <ins>Bug fixes</ins>
 
 **Standard formats module**	
