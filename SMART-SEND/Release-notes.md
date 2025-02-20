@@ -39,7 +39,7 @@ Microsoft Dynamics 365 Finance and Operations Version		  | Any issues found in t
 Microsoft Dynamics 365 Product version:    [10.0.40](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40) <br> 	App build: 10.0.1935.5	  | No | 10.0.37.202403263
 Microsoft Dynamics 365 Product version:    [10.0.41](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) <br> 	App build: 10.0.2015.16	  | No | 10.0.37.202403263
 Microsoft Dynamics 365 Product version:    [ 10.0.42](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42) <br> 	App build: 10.0.2095	  | No | 10.0.40.202409113
-Microsoft Dynamics 365 Product version:    [10.0.43](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43) <br>	 App build: 10.0.2177	  | Currently being tested | pending testing results 
+Microsoft Dynamics 365 Product version:    [10.0.43](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43) <br>	 App build: 10.0.2177	  | No | 10.0.40.202409113 
 
 Release notes for other models included in the product:
 - [DXC Connections](../CONNECTIONS/Release-notes.md)
