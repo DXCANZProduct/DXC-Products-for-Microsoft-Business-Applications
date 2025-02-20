@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-02-18
+ms.date: 2025-02-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -77,6 +77,12 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		 |:--
 18798	| X12 templates - Copy	| Copy functionality didn't copy all mappings for X12 templates
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+21332	| Customer advanced shipping notice	| Auto assign consignment note number - Not populated where the lines were from different locations.
 
 
 **Vendor module**	
