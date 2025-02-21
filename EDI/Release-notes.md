@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-02-20
+ms.date: 2025-02-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,9 +58,24 @@ Release notes for other models included in product:
 	- Step 3 - Change all applicable **Azure blob** connections: <br> 
 		• Credential type: Key Vault <br>
 		• Key vault: Secret setup in step 2
-# Next version
 
-### Release 10.0.40.202502TBD
+# Current version
+
+### Release 10.0.40.20250221
+
+DXC EDI 10.0.40 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
+Microsoft Dynamics 365 application	| 10.0.41 	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
+Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
+Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
+
+
+#### Build 10.0.40.202502211
+Release date: 21 February 2025
+
 
 <ins>New features</ins>
 
@@ -99,21 +114,12 @@ Number	| Name		 | Description
 20857	| Vendor purchase order change | Additional fix to 19584, which didn't cover small rounding scenarios. 
 
 
-# Current version
 
-Next release is planned for 31 March 2025.
+# Previous version(s)
+
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.40.20241204
-
-DXC EDI 10.0.40 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-Microsoft Dynamics 365 application	| 10.0.41 	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
-Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
-Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
-
 
 #### Build 10.0.40.2024120421
 Release date: 6 December 2024
@@ -186,9 +192,6 @@ Number	| Name		 | Description
 20117	| Vendor purchase order change	| Fix to cancelled purchase order line's 'Line change type' which were incorrectly 'Quantity decrease' instead of 'Delete items'.
 
 
-# Previous version(s)
-
-Approximately one year of previous versions are included below.
 
 ### Release 10.0.40.20240905
 
