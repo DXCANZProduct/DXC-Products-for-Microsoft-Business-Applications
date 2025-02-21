@@ -37,8 +37,8 @@ This page describes the features planned for future releases and planned release
 
 Release			| ETA
 :--			    |:--
-2025-06     | 30 May 2025
-2025-09     | 29 August 2025
+2025-05     | 30 May 2025
+2025-08     | 29 August 2025
 
 
 
