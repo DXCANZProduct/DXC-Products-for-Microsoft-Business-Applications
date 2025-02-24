@@ -52,5 +52,6 @@ Number	  | Name	          | Description
 Number	  | Name	          | Description
 :--       |:--              |:--
 17451	    | Batch Process for Smart Send Forms| For Forms that contain a "Smart Send" button you can now enable the ability to process these forms via Batch. This feature can be controlled from the Email parameters screen.
+21356	    | Incorporate Use of "Customer" Account | For Sales Order Invoices and Sales Order Confirmations Smart Send now incorporates the ability to use  the "customer" account number to find the matching purpose and not just the "Invoice" account.
 
  
