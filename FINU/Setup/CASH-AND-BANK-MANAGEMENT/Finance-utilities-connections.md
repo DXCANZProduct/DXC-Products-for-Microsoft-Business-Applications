@@ -156,7 +156,8 @@ Key vault secret name  | Azure active directory application secret key | Select 
 Tenant ID        | Azure active directory tenant identifier          | XX.onmicrosoft.com
 Authority URI    | Azure active directory authority URI              | https://login.microsoftonline.com/
 
-#### Examples for Search mask:
+### Examples for Search mask:
+
 - Example 1: <br>
   - File mask: LCAB10 <br>
   - Search mode:  File name must start with <br>
