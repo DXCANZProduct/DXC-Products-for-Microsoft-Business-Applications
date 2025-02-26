@@ -3,7 +3,7 @@
 
 title: Finance Utilities 
 description: Cash and bank management setup - Finance utilities connections
-author: jdutoit2
+author: Monica du Toit
 manager: Pontus Ek
 ms.date: 2024-12-03
 ms.topic: article
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  DFUConnection, DXCEncryptionParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -155,6 +155,36 @@ Application ID  | Azure active directory application identifier
 Key vault secret name  | Azure active directory application secret key | Select the applicable **Secret** as setup in **Key vault parameters**
 Tenant ID        | Azure active directory tenant identifier          | XX.onmicrosoft.com
 Authority URI    | Azure active directory authority URI              | https://login.microsoftonline.com/
+
+#### Examples for Search mask:
+- Example 1: <br>
+  - File mask: LCAB10 <br>
+  - Search mode:  File name must start with <br>
+  - Will match file: **LCAB10**20170623.txt <br>
+  - Won’t match file: ACAB1020170623.txt <br>
+  
+- Example 2: <br>
+  - File mask: SalesInvoice.xml <br>
+  - Search mode:  File name must end with <br>
+  - Will match file: 20170623_**SalesInvoice.xml** <br>
+  - Won’t match file: 20170623_SalesInvoice.txt <br>
+
+Additionally, [regular expressions](https://regex101.com/) can be used for the file mask <br>
+
+- Example 3: <br>
+  - File mask: *US-001 or .*US-001 <br>
+  - The following file names will be matched:
+    - **US-001**_1234.json
+    - 1234_**US-001**
+    - 1234_**US-001**_5678.xml <br>
+
+- Example 4: <br>
+  - File mask: ^PO_.*_CustUS-001.xml <br>
+  - The following file names will be matched:
+    - **PO**347**CustUS-001.xml**
+    - **PO**6796**CustUs-001.xml** <br>
+
+  Note: ^ - String Anchor ‘Starts with’ and & - String Anchor ‘Ends with’
 
 
 ### Validate connection
