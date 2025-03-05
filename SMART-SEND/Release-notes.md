@@ -72,7 +72,7 @@ Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dy
 Number	  | Name	          | Description
 :--       |:--              |:--
 21310	    | Report name is not set. Please set report name using parmReportName method.| Where the  Sales invoice form is not set up in Email Parameters, an error would previously be thrown when attempting to issue a Freet Text invoice on the Tax Invoice journal form.  
-21413	    | Smart Send Architectural enhancements and optimization| As part of the architectural changes required to enable Smart Send to process forms in batch processing, outdated and inefficient methods were removed.  During this phase, the code structure was changed to simplify and enhance the overall performance of the product. Old, outdated methods were removed, and multiple-form outputs were consolidated to use a common structure. streamlining the procedure for upcoming upgrades and/or extensions 
+
 
 <ins>New features</ins>
 
