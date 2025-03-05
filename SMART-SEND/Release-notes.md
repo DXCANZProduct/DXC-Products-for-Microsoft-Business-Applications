@@ -46,13 +46,10 @@ Release notes for other models included in the product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
 
-# Upcoming framework changes 
-
-As part of our ongoing efforts to strengthen our ISV product line and give the most value to our clients, Smart Send will undergo architectural modifications in a future version later this year, replacing outdated and inefficient approaches. This phase will see changes to the code structure to simplify and improve the product's overall performance. Old, out-of-date methods will be removed, and multiple-form outputs will be combined into one structure. This simplifies the procedure for future updates and/or extensions. This may impact any custom changes or extensions made to the product. Customers using the base Smart Send version are expected to remain compatible after the release. Any impacts to customers with bespoke extensions/modifications must follow their standard troubleshooting process.   The release is targeted to occur before the 10.0.44  version release  Due April 2025 see [Targeted release schedule](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change) to allow Customers with custom extensions/modifications to handle any impacts.
 
 # Current version
 
-### Release 10.0.40.20240911
+### Release 10.0.42.20250304
 
 DXC Smart Business Form Email Manager 10.0.40 runs on the following Microsoft releases
 
@@ -74,7 +71,7 @@ Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dy
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-17452	    | Smart Send Architectural enhancements and optimization| As part of the architectural changes required to enable Smart Send to process forms in batch processing, outdated and inefficient methods were removed.  During this phase, the code structure was changed to simplify and enhance the overall performance of the product. Old, outdated methods were removed, and multiple-form outputs were consolidated to use a common structure. streamlining the procedure for upcoming upgrades and/or extensions 
+21310	    | Report name is not set. Please set report name using parmReportName method.| Where the  Sales invoice form is not set up in Email Parameters, an error would previously be thrown when attempting to issue a Freet Text invoice on the Tax Invoice journal form.  
 21413	    | Smart Send Architectural enhancements and optimization| As part of the architectural changes required to enable Smart Send to process forms in batch processing, outdated and inefficient methods were removed.  During this phase, the code structure was changed to simplify and enhance the overall performance of the product. Old, outdated methods were removed, and multiple-form outputs were consolidated to use a common structure. streamlining the procedure for upcoming upgrades and/or extensions 
 
 <ins>New features</ins>
@@ -83,8 +80,9 @@ Number	  | Name	          | Description
 :--       |:--              |:--
 17451	    | Batch Process for Smart Send Forms| For Forms that contain a "Smart Send" button you can now enable the ability to process these forms via Batch. This feature can be controlled from the Email parameters screen.
 21356	    | Incorporate Use of "Customer" Account | For Sales Order Invoices and Sales Order Confirmations Smart Send now incorporates the ability to use  the "customer" account number to find the matching purpose and not just the "Invoice" account
-21413		| Update to class ESS_EmailManager.sendToEmail()| In Line with Best practice SRSPrintMediumType::Email updated to SRSPrintMediumType::ECL_AutoEmail
+21413	    | Update to class ESS_EmailManager.sendToEmail()| In Line with Best practice SRSPrintMediumType::Email updated to SRSPrintMediumType::ECL_AutoEmail
 17452	    | Smart Send Architectural enhancements and optimization| As part of the architectural changes required to enable Smart Send to process forms in batch processing, outdated and inefficient methods were removed.  During this phase, the code structure was changed to simplify and enhance the overall performance of the product. Old, outdated methods were removed, and multiple-form outputs were consolidated to use a common structure. streamlining the procedure for upcoming upgrades and/or extensions 
+21283|Use Invoice Specific contact on Free Text Invoice| Free Text Invoice now incorporates the ability to select a "specific" contact which will distribute to the email address associated with the "contact" on the customer FastTab 
 
 ## Feature management
 From 10.0.34.20231026 Smart Send can be enabled via Feature management
@@ -96,7 +94,7 @@ If the above feature is not visible, press **Check for updates** to refresh the 
 
 # Previous version(s)
 #### Build 10.0.40.202409113 
-
+### Release 10.0.40.20240911
 <ins>Bug fixes</ins>
 
 Number	  | Name	          | Description
