@@ -71,7 +71,7 @@ Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dy
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-21310	    | Report name is not set. Please set report name using parmReportName method.| Where the  Sales invoice form is not set up in Email Parameters, an error would previously be thrown when attempting to issue a Freet Text invoice on the Tax Invoice journal form.  
+21310	    | Report name is not set. Please set report name using parmReportName method.| Where the  Sales invoice form is not set up in Email Parameters, an error would previously be thrown when attempting to issue a Free Text invoice on the Tax Invoice journal form.  
 
 
 <ins>New features</ins>
