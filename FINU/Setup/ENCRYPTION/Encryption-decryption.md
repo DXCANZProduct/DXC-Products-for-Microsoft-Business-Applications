@@ -65,15 +65,15 @@ Select **New** and set the fields as described in the following subsection.
     - **Encrypt** - Low level of encryption
         - Counter party's public key
     - **Encrypt and sign** - High level of encryption
-        - Private key
         - Counter party's public key
+        - Private key
         - Passphrase  
     - **Decrypt** - Low level of decryption
         - Private key
         - Passphrase 
     - **Decrypt and verify** - High level of decryption
-        - Private key
         - Counter party's public key
+        - Private key
         - Passphrase  
 
 Notes on high level: 
