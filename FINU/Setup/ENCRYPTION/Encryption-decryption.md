@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Encryption / decryption
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-01-23
+ms.date: 2025-03-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,6 +33,11 @@ Encryption / Decryption is available utilising the **DXC Encryption** model.
 Once below has been setup, the functionality can be used on the following Finance utilities functionality:
 - Encrypt option on [Electronic reporting export connections](../ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md) to send encrypted GER Vendor EFT files
 - Decrypt option on [Financial utilities connection](../CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md) to decrypt a bank statement file imported using periodic task **Import bank statements via financial utilities connection**
+
+## Generate
+DXC Encryption allows users to generate keys within Finance and Operations.
+Navigate to **Organization administration > Setup > DXC encryption > DXC encryption parameters** and use the **Generate** button to create keys that can be used in following steps.
+Can optionally also specify a **Passphrase** before generate.
 
 
 ## Step 1 - Setup Secrets in Key vault parameters
