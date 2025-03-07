@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-06
+ms.date: 2025-03-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -71,6 +71,21 @@ Feature	| 10.0.43 Feature state
 		- Step 4 - Change all applicable **Azure blob** connections: <br> 
 			• Credential type: Key Vault <br>
 	 		• Connection string: Secret setup in step 3
+
+# Next version
+
+### Release 10.0.42.202503TBD
+
+#### DXC Encryption Release 10.0.42.202503TBD
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+20654		| DXC Encryption	| Generate keys	| Ability to **Generate** encryption keys within FinOps on **DXC encryption parameters** <br> ![Generate encryption keys](Images/ReleaseNotes_20250331_1.png "Generate encryption keys")
+21545		| DXC Encryption	| Key values	| Previously the module only included the option for SAS URL to Azure blob file to store the Encryption keys. This change provides support for Secrets in Azure containing base 64 encoded data of the actual keys into D365 key vault. These secrets will then be pulled into FinOps as base64, and decoded before being used for encryption/decryption purposes.
+21548		| DXC Encryption	| Setup	| Moving **Private key** and **Counter party's public key** around in **DXC encryption parameters**
+
 
 # Current version
 

@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Encryption / decryption
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-01-23
+ms.date: 2025-03-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,6 +34,16 @@ Once below has been setup, the functionality can be used on the following Financ
 - Encrypt option on [Electronic reporting export connections](../ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md) to send encrypted GER Vendor EFT files
 - Decrypt option on [Financial utilities connection](../CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md) to decrypt a bank statement file imported using periodic task **Import bank statements via financial utilities connection**
 
+## Generate
+DXC Encryption allows users to generate keys within Finance and Operations.
+Navigate to **Organization administration > Setup > DXC encryption > DXC encryption parameters** and use the **Generate** button to create keys that can be used in following steps.
+Can optionally also specify a **Passphrase** before generate.
+
+## Encryption keys
+
+The following options are supported:
+- **Azure Storage SAS URL** - Private key, Public key, Receiver’s public key use Azure Storage SAS URL with read only access stored in the keyvault secrets. The SAS url points to the file and includes the token to access it.
+- **Azure Secrets** - Secrets in Azure containing base 64 encoded data of the actual keys into D365 key vault. These secrets will then be pulled into FinOps as base64, and decoded before being used for encryption/decryption purposes.
 
 ## Step 1 - Setup Secrets in Key vault parameters
 Setup the following as **Secrets** in **Key vault parameters** for the encryption/decryption:
@@ -41,10 +51,8 @@ Setup the following as **Secrets** in **Key vault parameters** for the encryptio
 - Private key - Company's private key
 - Counter party's public key
 
-
 PGP uses a passphrase to encrypt your private key on your machine. Your private key is encrypted on your disk using a hash of your passphrase as the secret key. You use the passphrase to decrypt and use your private key. A passphrase should be hard for you to forget and difficult for others to guess.
 
-> Note: It's recommended to for the Private key, Public key, Receiver’s public key use Azure Storage SAS URL with read only access stored in the keyvault secrets. The SAS url points to the file and includes the token to access it.
 
 ## Step 2 - Assign Secrets in DXC encryption parameters
 Assign above **Secrets** to the encryption/decryption. <br>
@@ -57,15 +65,15 @@ Select **New** and set the fields as described in the following subsection.
     - **Encrypt** - Low level of encryption
         - Counter party's public key
     - **Encrypt and sign** - High level of encryption
-        - Private key
         - Counter party's public key
+        - Private key
         - Passphrase  
     - **Decrypt** - Low level of decryption
         - Private key
         - Passphrase 
     - **Decrypt and verify** - High level of decryption
-        - Private key
         - Counter party's public key
+        - Private key
         - Passphrase  
 
 Notes on high level: 
