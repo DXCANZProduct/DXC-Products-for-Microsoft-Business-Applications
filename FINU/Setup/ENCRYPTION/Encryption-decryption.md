@@ -39,6 +39,11 @@ DXC Encryption allows users to generate keys within Finance and Operations.
 Navigate to **Organization administration > Setup > DXC encryption > DXC encryption parameters** and use the **Generate** button to create keys that can be used in following steps.
 Can optionally also specify a **Passphrase** before generate.
 
+## Encryption keys
+
+The following options are supported:
+- **Azure Storage SAS URL** - Private key, Public key, Receiver’s public key use Azure Storage SAS URL with read only access stored in the keyvault secrets. The SAS url points to the file and includes the token to access it.
+- **Azure Secrets** - Secrets in Azure containing base 64 encoded data of the actual keys into D365 key vault. These secrets will then be pulled into FinOps as base64, and decoded before being used for encryption/decryption purposes.
 
 ## Step 1 - Setup Secrets in Key vault parameters
 Setup the following as **Secrets** in **Key vault parameters** for the encryption/decryption:
@@ -46,10 +51,8 @@ Setup the following as **Secrets** in **Key vault parameters** for the encryptio
 - Private key - Company's private key
 - Counter party's public key
 
-
 PGP uses a passphrase to encrypt your private key on your machine. Your private key is encrypted on your disk using a hash of your passphrase as the secret key. You use the passphrase to decrypt and use your private key. A passphrase should be hard for you to forget and difficult for others to guess.
 
-> Note: It's recommended to for the Private key, Public key, Receiver’s public key use Azure Storage SAS URL with read only access stored in the keyvault secrets. The SAS url points to the file and includes the token to access it.
 
 ## Step 2 - Assign Secrets in DXC encryption parameters
 Assign above **Secrets** to the encryption/decryption. <br>
