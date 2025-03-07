@@ -88,7 +88,12 @@ Notes on high level:
 
 - When the company receives the file:
   - The company uses their Private Key, the bank’s Public key and the Passphrase to decrypt the file
+ 
+### Validate
 
+Select applicable **Encryption key name**, click **Validate** which will open a dialog to browse to a file. 
+- **Encrypt / Encrypt and sign** - select a file that should be encrypted, if setup is correct the encrypted file will be created that can be sent to counter party for testing.
+- **Decrypt / Decrypt and verify** - select encrypted file that should be decrypted, if setup is correct a decrypted file will be created.
 
 ## Step 3 - Use Encryption in Finance utilities
 
@@ -99,4 +104,6 @@ Assign to Finance utilites functionality:
 To enable encryption / decryption on the connection: 
  - Set **Enable file encryption/decryption** to _Yes_
  - Select applicable **Encryption key name** setup in Step 2
+
+
 
