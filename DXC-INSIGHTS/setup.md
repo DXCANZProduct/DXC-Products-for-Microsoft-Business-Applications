@@ -54,6 +54,7 @@ On the ‘Settings’ tab, update and save the types of telemetry that Insights 
 :--       |:--
 **Exceptions** | When enabled in parameters, logs all internal exceptions to a dedicated exceptions table within Azure AppInsights.
 **Form runs** | When enabled in parameters, logs all form opening and running events to a dedicated pageViews table within Azure AppInsights. Details on the form name, menu item name, user id, session id, and time duration required for loading the form will be logged. This telemetry will also facilitate the analysis of user behavior and form usage patterns.
+**Form edits** | When enabled in parameters, logs additonal telemtry to denote user has made edits on the form. This will enable monitoring of whether a user has merely viewed the form or has made edits.
 **Report runs**  | When enabled in parameters, tracks all report executions (e.g Purchase Order confirmations) along with time duration required to run the report as requests in the Azure AppInsights requests table.
 **Web services** | This parameter can be used to control the logging of web service calls to your D365 FO application. The telemtry logging on web services is not an out-of-box feature, but can be implemented on your custom web service calls as an extension.
 **Business events** | When enabled in parameters, logs all active business events that are triggered within you D365 FO (e.g., Purchase Order confirmation business event) to the Azure AppInsights custom events table.

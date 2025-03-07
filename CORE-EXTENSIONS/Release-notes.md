@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 This document describes the features that are either new or changed in the release version mentioned.
 
 # Version compatibility
-The matrix shows the minimum DXC build versions that are compatible with Microsoft versions and builds. <br>
+The matrix shows the minimum DXC build versions compatible with Microsoft versions and builds. <br>
 If blank: investigations are ongoing. <br>
 
 D365 Version		  |Iissues found in testing?| Product version tested
@@ -51,7 +51,7 @@ Release notes for other models included in the product:
 This section describes the features that have been removed or are planned to be removed from a Core Extensions version.
 
 Deprecated in version 10.0.40.20241023
-### Exchange Rate Import - Bank of Canada Version TBC
+### Exchange Rate Import - Bank of Canada
 Reason for deprecation/removal  - no longer being used as a source of currency exchange rates
 
 ### Business Process links

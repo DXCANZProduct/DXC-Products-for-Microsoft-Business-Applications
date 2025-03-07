@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-12-04
+ms.date: 2025-02-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,9 +37,8 @@ This page describes the features planned for future releases and planned release
 
 Release			| ETA
 :--			    |:--
-2025-03     | 31 March 2025
-2025-06     | 30 June 2025
-2025-09     | 30 September 2025
+2025-05     | 30 May 2025
+2025-08     | 29 August 2025
 
 
 

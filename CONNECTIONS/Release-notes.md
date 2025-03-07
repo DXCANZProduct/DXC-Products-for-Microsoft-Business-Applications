@@ -35,6 +35,7 @@ Model is used in below products:
 - Finance Utilities
 - Smart Business Form Email Manager (Smart Send)
 - Electronic Data Interchange (EDI)
+- DXC Insights for D365FO
 
 # Version compatibility
 The matrix shows the minimum DXC build versions compatible per Microsoft versions and builds. <br>
@@ -42,14 +43,14 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.0.202411211
-Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40.202412041
+Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.0.204120441
+Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40.204120441
 
 # Current version
 
-### Release 10.0.40.202412041
+### Release 10.0.40.2024120441
 
-DXC Connections 10.0.40.20412041 runs on the following Microsoft releases
+DXC Connections 10.0.40.204120441 runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                         |
 | :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -59,8 +60,22 @@ DXC Connections 10.0.40.20412041 runs on the following Microsoft releases
 | Microsoft Dynamics 365 application | 10.0.43 | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43) |
 
 Build <b>7.0.7279.122 </b>  
-DXCConnections.dll <b>1.0.2024.12043</b>  
-DXCConnectionsAzureLib.dll <b>1.0.2024.12043</b>
+DXCConnections.dll <b>1.0.2024.12044</b>  
+DXCConnectionsAzureLib.dll <b>1.0.2024.12044</b>
+
+Release date: 26 February 2025
+
+<ins>New features</ins>
+
+| Number | Name                                                              | Description                                                                                                                                                     |
+| :----- | :---------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 21561  | Get Blob Properties Information | Add a method that gets list of blobs along with properties information from Azure blob storage container. |
+
+# Previous Version(s)
+
+### Release 10.0.40.202412041
+
+#### Build 10.0.40.202412041
 
 Release date: 04 December 2024
 
@@ -69,8 +84,6 @@ Release date: 04 December 2024
 | Number | Name                                                              | Description                                                                                                                                                     |
 | :----- | :---------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 20389  | New DXC Connections assembly file and DXC_AzureClient deprecation | DXC_AzureClient assembly DLL has been deprecated and replaced with DXCConnections for Core features and DXCConnectionsAzureLib for Azure related functionality. |
-
-# Previous Version(s)
 
 ### Release 10.0.40.20241021
 

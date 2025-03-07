@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-02-04
+ms.date: 2025-02-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -61,9 +61,7 @@ Release notes for other models included in product:
 
 # Current version
 
-Next release is planned for 31 March 2025.
-
-### Release 10.0.40.20241204
+### Release 10.0.40.20250221
 
 DXC EDI 10.0.40 runs on the following Microsoft releases
 
@@ -75,6 +73,54 @@ Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dy
 Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 
 
+#### Build 10.0.40.202502211
+Release date: 21 February 2025
+
+
+<ins>New features</ins>
+
+**Core module**	- Applies to all modules	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+21113	| Outbound files - Cancel	| Ability to use **Cancel** to change selected Outbound file's Status to **Canceled**. <br> The following statuses are excluded from cancel: <br> • Processed <br> • Processing <br> • Archived <br> <br> ![Outbound files - Cancel](RELEASE-NOTES-IMAGES/20250221_1.png "Outbound files - Cancel")
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+21449	| Sales invoice		| Two extra header fields added: <br> • Line discount <br> • Total discount
+
+
+<ins>Bug fixes</ins>
+
+**Standard formats module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+18798	| X12 templates - Copy	| Copy functionality didn't copy all mappings for X12 templates
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+21332	| Customer advanced shipping notice	| Auto assign consignment note number - Not populated where the lines were from different locations.
+
+
+**Vendor module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+20857	| Vendor purchase order change | Additional fix to 19584, which didn't cover small rounding scenarios. 
+
+
+
+# Previous version(s)
+
+Approximately one year of previous versions are included below.
+
+### Release 10.0.40.20241204
+
 #### Build 10.0.40.2024120421
 Release date: 6 December 2024
 
@@ -85,8 +131,6 @@ Release date: 6 December 2024
 Number	| Name		 | Description
 :--	|:--		  	|:--
 20623	| Voyage creator  | Voyage creator failed when running in batch mode and set to auto create backorder voyage advice. <br> Error: "Stack trace: Cannot run form on non interactive session. EDI % Voyage creator Purchase order % line number % cannot be split because of following errors. You may need add the entire quantity of the order line to the voyage." <br> Issue only applicable to 10.0.40.202412041
-
-
 
 
 #### Build 10.0.40.202412041
@@ -148,9 +192,6 @@ Number	| Name		 | Description
 20117	| Vendor purchase order change	| Fix to cancelled purchase order line's 'Line change type' which were incorrectly 'Quantity decrease' instead of 'Delete items'.
 
 
-# Previous version(s)
-
-Approximately one year of previous versions are included below.
 
 ### Release 10.0.40.20240905
 

@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-01-23
+ms.date: 2025-03-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,11 +38,18 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17981 | • Functional: 10.0.37.2024032522 <br> • Build error fixed in: 10.0.37.202405302
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes - 18802	          | Fix available in 10.0.40.202409162
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | DXC Finance Utilities 10.0.40.2024091931 <br> DXC ABN Validation 10.0.40.2024091931 <br> DXC Encryption 10.0.40.202409162
+Product version: 10.0.43 <br> App build: 10.0.2177.18	  | Yes - 21291 Export file name on vendor payment journal line | DXC Finance Utilities 10.0.40.202501221 <br> DXC ABN Validation 10.0.40.202501221 <br> DXC Encryption 10.0.40.202412121
 
 Release notes for other models included in product:
 - [DXC Connections](../CONNECTIONS/Release-notes.md)
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
+
+#### Features not yet supported
+
+Feature	| 10.0.43 Feature state
+:--       	|:--		
+**Modern bank reconciliation** | On by default
 
 ### Microsoft deprecation notice
 
@@ -65,13 +72,6 @@ Release notes for other models included in product:
 			• Credential type: Key Vault <br>
 	 		• Connection string: Secret setup in step 3
 
-#### Features not yet supported
-
-Feature	| 10.0.42 Feature state
-:--       	|:--		
-**Time zone for importing bank statements using Electronic reporting** <br> Finance utilities doesn't support converting date/time fields within the custom bank statement format as the field is date only | Mandatory
-**Modern bank reconciliation** | 
-
 # Current version
 
 ### Release 10.0.40.20250122
@@ -83,6 +83,7 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
+Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 
 #### Build 10.0.40.202501221
 Release date: 22 January 2025

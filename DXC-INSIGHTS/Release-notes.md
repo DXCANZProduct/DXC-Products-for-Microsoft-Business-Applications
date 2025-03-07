@@ -36,29 +36,46 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.40 <br> App build: 10.0.1935.92	  | No	          | 10.0.37.202406271
-Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202406271
-Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.37.202406271
+Product version: 10.0.40 <br> App build: 10.0.1935.92	  | No	          | 10.0.40.20250226
+Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.40.20250226
+Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40.20250226
 
 Release notes for other models included in product:
+- [DXC Connections](../CONNECTIONS/Release-notes.md)
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
 
 # Current version
 
-### Release 10.0.37.20240627 
+### Release 10.0.40.20250226
 
-Insights for D365 FO 10.0.37 runs on the following Microsoft releases
+Insights for D365 FO 10.0.40 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.37	  | [What’s new or changed in Dynamics 365 application version 10.0.37](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-37)
-Microsoft Dynamics 365 application	| 10.0.38	  | [What’s new or changed in Dynamics 365 application version 10.0.38](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-38)
-Microsoft Dynamics 365 application	| 10.0.39	  | [What’s new or changed in Dynamics 365 application version 10.0.39](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-39)
 Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
 Microsoft Dynamics 365 application	| 10.0.41 	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 
+
+#### Build 10.0.40.202502261
+Release date: 26 February 2025
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+17862	| User activity logging	| Implement telemetry logging for user form interactions to distinguish between form views and edits. This will enable monitoring of whether a user has merely viewed the form or has made edits.
+
+<ins>Bug fix</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+21340	| Application Insights Dashboard	| Fix access related issues when downloading Application Insights Dashboard from D365 F&O.
+
+# Previous Version(s)
+
+### Release 10.0.37.20240627 
 
 #### Build 10.0.37.202406271
 Release date: 27 June 2024
@@ -76,8 +93,6 @@ Number	| Name		 | Description
 :--	|:--		  	|:--	
 18185	| DMF error events	| Fix an issue related to logging of DMF export/import events where some info messages were getting logged as errors in Azure App Insights
 18319	| Batch error events	| Fix an issue related to logging of batch error events that were getting logged into custom events table as duplicate records.
-
-# Previous Version(s)
 
 ### Release 10.0.37.20240429
 

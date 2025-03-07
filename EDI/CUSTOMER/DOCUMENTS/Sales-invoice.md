@@ -3,9 +3,9 @@
 
 title: EDI Customer
 description: EDI Customer Documents - Sales invoice
-author: jdutoit2
+author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-06-25
+ms.date: 2025-02-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: SalesTableListPage, Action:SAB_EDIStagingFormRun_Invoice
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: IconEDICustomerDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -168,7 +168,10 @@ The following EDI Header staging fields are available on the header page.
 **Invoice tax amount**      | Invoice total tax amount	            | Invoice journal amount > Sales tax
 **Invoice amount including tax**    | Invoice amount including tax	| Invoice Journal Amount > Price incl. tax
 **Tax rate**                | Calculated invoice tax rate	        | Invoice tax amount / Invoice amount excluding tax \*100
-**Discount percentage**     | Invoice discount percentage	
+**Discount percentage**     | Invoice discount percentage	        | 
+**Total discount**          | Invoice total discount                | Invoice journal > Total discount
+**Line discount**           | Invoice total line discount           | Invoice journal > Line discount
+**Invoice type**            | Invoice type, for example invoice or credit note    | Mapped value on Document type Setting profiles for Invoice type
 <ins>**Invoice address**</ins>      | Invoice address for customer   | Invoice journal > Invoice account > Address information
 **Building complement**     | Invoice address - Building complement	
 **City**                    | Invoice address - City	

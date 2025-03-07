@@ -46,9 +46,9 @@ The overrides can be set in runtime when selecting Smart Send as the Print desti
 ### Print management conditions
 These override settings are particularly useful when used in conjunction with print management conditions defined in form setup. Print management conditions are a standard Dynamics 365 option, which allows a user to define a criteria/query (a condition) to apply different print settings. 
 When using a condition, the override of either Email ID or File Name will allow a different email to be sent for each condition set. For example, an organization may wish to send different email layouts to their commercial/organization customers compared to their retail/individual customers.
-To set the overrides, navigate to the print management setup and in the Smart Send printer destination dialogue, select either or both the Override email id or Override file name.
+To set the overrides, navigate to the print management setup and in the Smart Send printer destination dialogue, select either or both the Override email id or Override file name.<br/> Note: For Forms that can select the "customer account" as part of the Recipient set up in Email Parameters, Smart Send will use this setting when accessing print management set up
 
-In addition to the Email ID and Filename override, the print management conditions can also determine a different report design is used. 
+In addition to the Email ID and Filename override, the print management conditions can also determine that a different report design is used. 
 
 *Note: If a report design is specified in a print management condition, the report design must also be set up in Email parameters in the Smart Send tab. This is so Smart Send can resolve other Smart Send settings to be used for that report design such as Email Id, Filename, Contact/Purpose, Attachment File types, and Azure Storage settings.*
 

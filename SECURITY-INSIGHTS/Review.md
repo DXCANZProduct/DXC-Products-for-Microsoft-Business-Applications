@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Review Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-12-05
+ms.date: 2025-02-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -83,6 +83,8 @@ Next step is to review the utilization by using either of the following two view
 - **Security insights by license**
 These views are available by navigating to **System administration > Insights for user access and security**
 
+The number of privileges for each license type is displayed on the user and role level.
+
 Example actions that could be taken after review: 
 - Where the user hasn't accessed any of the menu items in the specific role, it could be possible to remove the role from the user.
 - Where the user only accessed "lower" licensed menu items in the role, it could be possible to assign the applicable privileges to a different/new duty and add those to a different/new role which will result in a "lower" license for the user.
@@ -90,6 +92,7 @@ Example actions that could be taken after review:
 After modifying security configuration, rerun the following to update the values on the form:
 - Fetch interaction data from application Insights
 - Calculate utilization rates
+
 
 #### Buttons
 
