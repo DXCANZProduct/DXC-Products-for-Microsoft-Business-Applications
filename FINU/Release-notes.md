@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-06
+ms.date: 2025-03-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -71,6 +71,19 @@ Feature	| 10.0.43 Feature state
 		- Step 4 - Change all applicable **Azure blob** connections: <br> 
 			• Credential type: Key Vault <br>
 	 		• Connection string: Secret setup in step 3
+
+# Next version
+
+### Release 10.0.42.202503TBD
+
+#### DXC Encryption Release 10.0.42.202503TBD
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+20654		| DXC Encryption	| Generate keys	| Ability to generate encryption keys within FinOps <br> ![Generate encryption keys](Images/ReleaseNotes_20250331_1.png "Generate encryption keys")
+
 
 # Current version
 
