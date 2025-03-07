@@ -83,6 +83,7 @@ Feature	| 10.0.43 Feature state
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
 20654		| DXC Encryption	| Generate keys	| Ability to generate encryption keys within FinOps <br> ![Generate encryption keys](Images/ReleaseNotes_20250331_1.png "Generate encryption keys")
+21545		| DXC Encryption	| Key values	| Previously the module only included the option for SAS URL to Azure blob file to store the Encryption keys. This change provides support for Secrets in Azure containing base 64 encoded data of the actual keys into D365 key vault. These secrets will then be pulled into FinOps as base64, and decoded before being used for encryption/decryption purposes.
 
 
 # Current version
