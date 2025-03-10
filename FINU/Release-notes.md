@@ -76,6 +76,13 @@ Feature	| 10.0.43 Feature state
 
 ### Release 10.0.42.202503TBD
 
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+21210		| Various	| Encryption and Decryption	| Filtered drop-down options: <br> • Import connections to decrypt key types <br> • Export connections to encrypt key types <br> ![Decryption](Images/ReleaseNotes_20250331_3.png "Decryption") <br> <br> ![Encryption](Images/ReleaseNotes_20250331_4.png "Encryption")
+21719		| DXC Encryption	| Various	| New DXC Encryption release 10.0.42.202503TBD. See below for details.
+
 #### DXC Encryption Release 10.0.42.202503TBD
 
 <ins>New features</ins>
