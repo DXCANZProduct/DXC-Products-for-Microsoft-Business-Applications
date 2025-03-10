@@ -68,7 +68,9 @@ The following **ABN Status** information will be displayed for the selected cust
      - **Cancelled GST**: Obtained from historical details
      - **Not registered for GST**: Earliest ABN entity status from date
 - **GST to** - Populated where the ABN is registered for GST
-- **GST registered** - Set to _Yes_ where 'GST to' date is in the future
+- **GST registered**
+     - **Y**: 'GST to' date is in the future or 0001-01-01
+     - **C**: GST registration has been cancelled
 
 ## Vendors
 Go to **Accounts payable > Vendors > All vendors** and select the applicable Vendor and choose either of the following:
