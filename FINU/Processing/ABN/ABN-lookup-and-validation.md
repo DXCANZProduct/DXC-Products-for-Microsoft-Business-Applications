@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Processing - ABN lookup and validation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-20
+ms.date: 2025-03-11
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -63,7 +63,10 @@ The following **ABN Status** information will be displayed for the selected cust
 - **Trading name**
 - **State**
 - **Post code**
-- **GST from** - From date for current GST registration status. Where the GST registration has been cancelled, the GST from date will be obtained from historical details.
+- **GST from**
+     - **Registered for GST**: From date for current GST registration status
+     - **Cancelled GST**: Obtained from historical details
+     - **Not registered for GST**: Earliest ABN entity status from date
 - **GST to** - Populated where the ABN is registered for GST
 - **GST registered** - Set to _Yes_ where 'GST to' date is in the future
 
