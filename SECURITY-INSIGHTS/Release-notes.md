@@ -53,6 +53,7 @@ Release notes for other models included in product:
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
+20486	| Validation	| New parameter option **Warn when removing utilised reference in security configuration**. <br> When user selects **Remove reference** in **Security configuration** and new option is set to: <br> • **Yes** - If fetched utilization exists for the role/duty/privilege combination, warning will notify user before the reference is removed, and only removed once they confirm.  <br> • **No** - No warning <br> ![Parameters](IMAGES/ReleaseNotes_20250331_1.png "Parameters") <br> ![Security configuration](IMAGES/ReleaseNotes_20250331_2.png "Security configuration")
 
 
 <ins>Bug fixes</ins>
@@ -60,6 +61,7 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--
 20930	| User access and security groups | Fix for error 'Cannot edit a record in User access and security groups (DXCSecurityInsightsGroups). The record has never been selected.' When adding users to user groups via the users tab.
+21205	| Zero role utilization %	| When 1st user in group has 0 Overall user utilization %, and then clicking on user with non-zero %, the Role utilization % for that 2nd user incorrectly shows 0%
 
 
 # Current version

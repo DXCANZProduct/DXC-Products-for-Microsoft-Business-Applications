@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Setup for Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-22
+ms.date: 2025-03-11
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -68,7 +68,9 @@ Field                           | Description
 
 Use the **Validate** button to validate the Insights instance.
 
-### 4.2 Batch processes
+### 4.2 General
+
+#### Batch processes
 
 The following batch process options can be used for batch performance improvement:
 - **Batch jobs** - **Maximum batch tasks** - Enter the maximum number of tasks the batch should be split into. Consider batch processing capacity, otherwise setting too high a value could create an unnecessary queue.
@@ -85,6 +87,12 @@ Number of enabled D365 users   | Maximum batch tasks  | Minimum users per task  
 Applies to the following two processes when run as batch:
 - Fetch interaction data from application insights
 - Calculate utilization rates
+
+#### Validation
+
+Field **Warn when removing utilised reference in security configuration**. When user selects **Remove reference** in **Security configuration** and new option is set to:
+- **Yes** - If fetched utilization exists for the role/duty/privilege combination, warning will notify user before the reference is removed, and only removed once they confirm.
+- **No** - No warning
 
 ### 4.3 Visual
 
