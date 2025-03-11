@@ -63,6 +63,7 @@ Number	| Name		 | Description
 :--	|:--		  	|:--
 20930	| User access and security groups | Fix for error 'Cannot edit a record in User access and security groups (DXCSecurityInsightsGroups). The record has never been selected.' When adding users to user groups via the users tab.
 21205	| Zero role utilization %	| When 1st user in group has 0 Overall user utilization %, and then clicking on user with non-zero %, the Role utilization % for that 2nd user incorrectly shows 0%
+21531	| Visual highlights	| Incorrect visual highlight on Role utilization % and Activity license type 
 
 
 # Current version
