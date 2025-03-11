@@ -38,7 +38,7 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17981 | • Functional: 10.0.37.2024032522 <br> • Build error fixed in: 10.0.37.202405302
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes - 18802	          | Fix available in 10.0.40.202409162
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | DXC Finance Utilities 10.0.40.2024091931 <br> DXC ABN Validation 10.0.40.2024091931 <br> DXC Encryption 10.0.40.202409162
-Product version: 10.0.43 <br> App build: 10.0.2177.18	  | Yes - 21291 Export file name on vendor payment journal line | DXC Finance Utilities 10.0.40.202501221 <br> DXC ABN Validation 10.0.40.202501221 <br> DXC Encryption 10.0.40.202412121
+Product version: 10.0.43 <br> App build: 10.0.2177.18	  | Yes <br> • 21291 - Export file name on vendor payment journal line <br> • 21612 - Build error | DXC Finance Utilities 10.0.40.202501221 <br> DXC ABN Validation 10.0.40.202501221 <br> DXC Encryption 10.0.40.202412121
 
 Release notes for other models included in product:
 - [DXC Connections](../CONNECTIONS/Release-notes.md)
