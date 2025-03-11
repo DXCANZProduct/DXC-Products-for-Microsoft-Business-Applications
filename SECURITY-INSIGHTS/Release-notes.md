@@ -54,7 +54,7 @@ Release notes for other models included in product:
 Number	| Name		 | Description
 :--	|:--		  	|:--
 20486	| Validation	| New parameter option **Warn when removing utilised reference in security configuration**. <br> When user selects **Remove reference** in **Security configuration** and fetched utilization exists for the role/duty/privilege combination, and new option is set to: <br> • **Yes** - Warning will notify user before the reference is removed, and only removed once they confirm.  <br> • **No** - No warning <br> ![Parameters](IMAGES/ReleaseNotes_20250331_1.png "Parameters") <br> ![Security configuration](IMAGES/ReleaseNotes_20250331_2.png "Security configuration")
-19926	| Assign users to roles	| **Role utilization %** added to form **Assign users to roles** to assist in determining if other assigned users utilised the role in the fetched period. <br> ![Security configuration](IMAGES/ReleaseNotes_20250331_3.png "Security configuration")
+19926	| Assign users to roles	| **Role utilization %** added to form **Assign users to roles** to assist in determining if other assigned users utilised the role in the fetched period. Only supported for roles assigned to users in F&O (not 'Microsoft Entra ID security groups') <br> ![Security configuration](IMAGES/ReleaseNotes_20250331_3.png "Security configuration")
 
 
 <ins>Bug fixes</ins>
