@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Security Insights for D365 FO - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-02-25
+ms.date: 2025-03-11
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,6 +44,23 @@ Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40
 Release notes for other models included in product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
+
+# Next version
+
+### Release 10.0.42.202503TBD
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+20930	| User access and security groups | Fix for error 'Cannot edit a record in User access and security groups (DXCSecurityInsightsGroups). The record has never been selected.' When adding users to user groups via the users tab.
+
 
 # Current version
 
