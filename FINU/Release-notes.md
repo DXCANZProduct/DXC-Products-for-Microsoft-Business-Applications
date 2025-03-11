@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-07
+ms.date: 2025-03-11
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -82,6 +82,7 @@ Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
 21215		| Various	| ABN validation	| Where the ABN isn't registered for GST, use the earliest ABN entity status from date for **GST from** date.
 21210		| Various	| Encryption and Decryption	| Filtered drop-down options: <br> • Import connections to decrypt key types <br> • Export connections to encrypt key types <br> ![Decryption](Images/ReleaseNotes_20250331_3.png "Decryption") <br> <br> ![Encryption](Images/ReleaseNotes_20250331_4.png "Encryption")
+20946		| Cash and bank management	| Bank statement periodic import | Where the bank statement has no transactions - now moving the file to archive instead of error folder. Also updated error message to infolog 'No bank statement was created as file contained no transactions'
 21719		| DXC Encryption	| Various	| New DXC Encryption model release 10.0.42.202503TBD. See below for details.
 
 #### DXC Encryption Release 10.0.42.202503TBD
