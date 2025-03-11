@@ -53,7 +53,7 @@ Release notes for other models included in product:
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
-20486	| Warning option	| New parameter option **Warn when removing utilised reference in security configuration**. <br> When user selects **Remove reference** in **Security configuration** and new option is set to: <br> • **Yes** - If fetched utilization exists for the role/duty/privilege combination, warning will notify user before the reference is removed, and only removed once they confirm.  <br> • **No** - No warning <br> ![Parameters](IMAGES/ReleaseNotes_20250331_1.png "Parameters") <br> ![Security configuration](IMAGES/ReleaseNotes_20250331_2.png "Security configuration")
+20486	| Validation	| New parameter option **Warn when removing utilised reference in security configuration**. <br> When user selects **Remove reference** in **Security configuration** and new option is set to: <br> • **Yes** - If fetched utilization exists for the role/duty/privilege combination, warning will notify user before the reference is removed, and only removed once they confirm.  <br> • **No** - No warning <br> ![Parameters](IMAGES/ReleaseNotes_20250331_1.png "Parameters") <br> ![Security configuration](IMAGES/ReleaseNotes_20250331_2.png "Security configuration")
 
 
 <ins>Bug fixes</ins>
