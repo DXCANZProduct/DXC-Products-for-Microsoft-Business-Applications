@@ -117,7 +117,7 @@ To update below fields based on current government online information:
 - **Entity type** - Examples are Australian Private Company, Discretionary Trading Trust
 - **GST from** 
 - **GST to** 
-- **GST registered** - Calculated field as per criteria in [#abn-status--validation](ABN status)
+- **GST registered** - Calculated field as per criteria in [ABN status](#abn-status--validation)
 
 
 The following can be used:
