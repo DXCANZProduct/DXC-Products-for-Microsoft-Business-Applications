@@ -69,9 +69,9 @@ The following **ABN Status** information will be displayed for the selected cust
      - **Not registered for GST**: Earliest ABN entity status from date
 - **GST to** - Populated where the ABN is registered for GST
 - **GST registered**
-     - **Registered for GST**: Y
-     - **Cancelled GST**: C
-     - **Not registered for GST**: N
+     - **Registered for GST**: Y - where 'GST to' date is in the future or 0001-01-01
+     - **Cancelled GST**: C - where 'GST to' date is in the past
+     - **Not registered for GST**: N - never been registered for GST
 
 ## Vendors
 Go to **Accounts payable > Vendors > All vendors** and select the applicable Vendor and choose either of the following:
@@ -115,12 +115,9 @@ To update below fields based on current government online information:
 - **Company name** - where the Company name is blank
 - **Status** - Examples are Active, Cancelled or Invalid (not found in ABN lookup)
 - **Entity type** - Examples are Australian Private Company, Discretionary Trading Trust
-- **GST from** - Populated where the ABN is registered for GST
-- **GST to** - Populated where the ABN is registered for GST
-- **GST registered** - Set to:
-     - **Y** where 'GST to' date is in the future or 0001-01-01
-     - **C** where 'GST to' date is in the past
-     - **N** where never been registered for GST
+- **GST from** 
+- **GST to** 
+- **GST registered** - Calculated field as per criteria in [#abn-status--validation](ABN status)
 
 
 The following can be used:
