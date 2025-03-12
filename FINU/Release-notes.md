@@ -49,7 +49,7 @@ Release notes for other models included in product:
 
 Feature	| 10.0.43 Feature state
 :--       	|:--		
-**Modern bank reconciliation** | On by default
+**Modern bank reconciliation** | On by default, needs to be manually disabled
 
 ### Microsoft deprecation notice
 
