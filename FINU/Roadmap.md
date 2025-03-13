@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Roadmap
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-26
+ms.date: 2025-03-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,17 +35,21 @@ This page describes the features planned for future releases and planned release
 
 ## Release schedule
 
+- March 2024
 
 
 ### Next release
 
-#### Accounts payable and receivable
-- IRD number validation for New Zealand companies
-- ABN / IRD number change history
+#### Encryption / Decryption
+- Generate PGP key
+- Validate encryption keys
+- PGP values in key vault
 
-#### Accounts payable
-- Vendor self billing invoices (RCTI)
+### Connections
+- SFTP Proxy
 
+### Accounts payable
+- Create vendor from ABN - where ABN validation is enabled for the legal entity
 
 ## Roadmap
 
