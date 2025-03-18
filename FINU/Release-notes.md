@@ -81,7 +81,7 @@ Feature	| 10.0.43 Feature state
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-21612		| Various	| Validate connection	| Fix 10.0.43 build issue on **Validate connection**. <br> Microsoft.IdentityModel.Clients.ActiveDirectory has been deprecated and no longer supported by FinOps and needs to be upgraded to now use Microsoft.Identity.Client
+21612		| Various	| Validate connection	| Fix 10.0.43 build issue on 'Validate connection' for **API Endpoint** connection type. <br> Microsoft.IdentityModel.Clients.ActiveDirectory has been deprecated and no longer supported by FinOps and needs to be upgraded to now use Microsoft.Identity.Client
 
 <ins>New features</ins>
 
