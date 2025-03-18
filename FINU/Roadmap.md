@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Roadmap
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-14
+ms.date: 2025-03-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -54,6 +54,7 @@ This page describes the features planned for future releases and planned release
 ## Roadmap
 
 #### Accounts payable 
+- ER format Payment advice
 - Import Return files
 
 #### Accounts receivable
