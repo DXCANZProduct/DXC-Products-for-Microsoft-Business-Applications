@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-11
+ms.date: 2025-03-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -75,6 +75,13 @@ Feature	| 10.0.43 Feature state
 # Next version
 
 ### Release 10.0.42.202503TBD
+
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+21612		| Various	| Validate connection	| Fix 10.0.43 build issue on **Validate connection**. <br> Microsoft.IdentityModel.Clients.ActiveDirectory has been deprecated and no longer supported by FinOps and needs to be upgraded to now use Microsoft.Identity.Client
 
 <ins>New features</ins>
 
