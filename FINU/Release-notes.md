@@ -81,7 +81,7 @@ Feature	| 10.0.43 Feature state
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-21612		| Various	| Validate connection	| Fix 10.0.43 build issue on 'Validate connection' for **API Endpoint** connection type. <br> Microsoft.IdentityModel.Clients.ActiveDirectory has been deprecated and no longer supported by FinOps and needs to be upgraded to now use Microsoft.Identity.Client
+21612		| Various	| Validate connection	| Fix 10.0.43 build issue on 'Validate connection' for **API Endpoint** connection type. <br> Microsoft.IdentityModel.Clients.ActiveDirectory has been deprecated and no longer supported by FinOps and needs to be upgraded to now use Microsoft.Identity.Client <br> [Microsoft notice](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#azure-active-directory-authentication-library-adal)
 
 <ins>New features</ins>
 
