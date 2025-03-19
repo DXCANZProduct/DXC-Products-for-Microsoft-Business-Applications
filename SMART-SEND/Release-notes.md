@@ -51,14 +51,11 @@ Release notes for other models included in the product:
 
 ### Release 10.0.42.20250304
 
-DXC Smart Business Form Email Manager 10.0.40 runs on the following Microsoft releases
+DXC Smart Business Form Email Manager 10.0.42 runs on the following Microsoft releases
 
-Minimum supported version 10.0.40 Proactive Quality Update (2) App build: 10.0.1935.92
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 Microsoft Dynamics 365 application	| 10.0.42	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 
