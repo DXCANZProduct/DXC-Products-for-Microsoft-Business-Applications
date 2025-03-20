@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Announcement
-dEPRECATED aPRIL 1ST 2025
+Deprecated  April 1st 2025
 
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
