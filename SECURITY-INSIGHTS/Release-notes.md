@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Security Insights for D365 FO - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-18
+ms.date: 2025-03-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,6 +55,7 @@ Number	| Name		 | Description
 :--	|:--		  	|:--
 20486	| Validation	| New parameter option **Warn when removing utilised reference in security configuration**. <br> When user selects **Remove reference** in **Security configuration** and fetched utilization exists for the role/duty/privilege combination, and new option is set to: <br> • **Yes** - Warning will notify user before the reference is removed, and only removed once they confirm.  <br> • **No** - No warning <br> ![Parameters](IMAGES/ReleaseNotes_20250331_1.png "Parameters") <br> ![Security configuration](IMAGES/ReleaseNotes_20250331_2.png "Security configuration")
 19926	| Assign users to roles	| **Role utilization %** added to form **Assign users to roles** to assist in determining if other assigned users utilised the role in the fetched period. Only supported for roles assigned to users in F&O (not 'Microsoft Entra ID security groups') <br> ![Security configuration](IMAGES/ReleaseNotes_20250331_3.png "Security configuration")
+21534	| Go to batch jobs	| **Go to batch jobs** link on info log when running Security Insights steps as batch. <br> ![Go to batch jobs](IMAGES/ReleaseNotes_20250331_4.png "Go to batch jobs")
 
 
 <ins>Bug fixes</ins>
