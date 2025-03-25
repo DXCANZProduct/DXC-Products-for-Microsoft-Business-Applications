@@ -3,9 +3,9 @@
 
 title: DXC Finance Utilities - AR Utilities
 description: Customer remittance setup
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-07-10
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-03-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,20 +16,19 @@ ms.technology:
 ms.search.form:  CustParameters, DXCARRemittanceFormat, CustPaymMode, DXCARConnection
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Customer remittance setup
-The fields as described in the following subsections are available to control the functionality for customer remittance import available in additional licensed feature **Finance utilities - AR utilities**.
-
-> Note: The fields are only available where additional licensed feature **Finance utilities - AR utilities** is enabled.
+The functionality as described in the following subsections relates to customer remittance import available in additional feature **Finance utilities - AR utilities**. <br>
+If you are licensed for Finance Utilities, this extra feature can be added to your license on request.
 
 ## Feature management
 Enable feature called **Finance utilities - AR utilities**. <br>
