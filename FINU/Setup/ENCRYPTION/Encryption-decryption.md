@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Encryption / decryption
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-07
+ms.date: 2025-03-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,8 +42,9 @@ Can optionally also specify a **Passphrase** before generate.
 ## Encryption keys
 
 The following options are supported:
-- **Azure Storage SAS URL** - Private key, Public key, Receiver’s public key use Azure Storage SAS URL with read only access stored in the keyvault secrets. The SAS url points to the file and includes the token to access it.
-- **Azure Secrets** - Secrets in Azure containing base 64 encoded data of the actual keys into D365 key vault. These secrets will then be pulled into FinOps as base64, and decoded before being used for encryption/decryption purposes.
+- **Azure Storage SAS URL** - Private key, Public key, Receiver’s public key use Azure Storage SAS URL with read only access stored in the keyvault secrets. The SAS url points to the file and includes the token to access it. Step 1 required
+- **Azure Secrets** - Secrets in Azure containing base 64 encoded data of the actual keys into D365 key vault. These secrets will then be pulled into FinOps as base64, and decoded before being used for encryption/decryption purposes. Step 1 required
+- **String in FinOps** - Store key values as string within FinOps DXC Encryption parameters form. Step 1 not required
 
 ## Step 1 - Setup Secrets in Key vault parameters
 Setup the following as **Secrets** in **Key vault parameters** for the encryption/decryption:
@@ -61,20 +62,32 @@ To open the **DXC encryption parameters** page, go to **Organization administrat
 Select **New** and set the fields as described in the following subsection.
 
 - Enter a unique **Encryption key name**
-- Select the applicable **Key type** and select the applicable secrets setup in step 1 under **Pgp encryption key** FastTab. Only applicable secrets are enabled.
+- Select the applicable **Key type**:
     - **Encrypt** - Low level of encryption
-        - Counter party's public key
     - **Encrypt and sign** - High level of encryption
+    - **Decrypt** - Low level of decryption
+    - **Decrypt and verify** - High level of decryption
+- Select the applicable **Key source**: 
+    - **Key vault** (default) - Azure Storage SAS URL & Azure Secrets
+    - **String** - Store keys within FinOps without Azure + key vaults. Also includes option to download the public key
+
+- Select / enter applicable values under **Pgp encryption key** FastTab. Only applicable secrets are enabled.	
+    - **Encrypt**
+        - Counter party's public key
+        - Public key (optional for Key source String for 'Download public key')
+    - **Encrypt and sign**
         - Counter party's public key
         - Private key
         - Passphrase  
-    - **Decrypt** - Low level of decryption
+        - Public key (optional for Key source String for 'Download public key')
+    - **Decrypt**
         - Private key
         - Passphrase 
-    - **Decrypt and verify** - High level of decryption
-        - Counter party's public key
+    - **Decrypt and verify**
+        - Counter party's public key (for Key source String, this can be downloaded using 'Download counter party's public key')
         - Private key
-        - Passphrase  
+        - Passphrase
+
 
 Notes on high level: 
 - If a Company is sending a file to the bank, then:
