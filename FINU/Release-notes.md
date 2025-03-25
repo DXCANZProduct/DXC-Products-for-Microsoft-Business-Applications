@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-18
+ms.date: 2025-03-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -100,8 +100,10 @@ Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
 20654		| DXC Encryption	| Generate keys	| Ability to **Generate** encryption keys within FinOps on **DXC encryption parameters** <br> ![Generate encryption keys](Images/ReleaseNotes_20250331_1.png "Generate encryption keys")
 21545		| DXC Encryption	| Key values	| Previously the module only included the option for SAS URL to Azure blob file to store the Encryption keys. This change provides support for Secrets in Azure containing base 64 encoded data of the actual keys into D365 key vault. These secrets will then be pulled into FinOps as base64, and decoded before being used for encryption/decryption purposes.
+21698		| DXC Encryption	| Key values	| New field **Key source** provides the ability to store key values as string within FinOps. Options: <br> • **Key vault** (default) - Azure Storage SAS URL & Azure Secrets <br> • **String** - Store keys within FinOps without Azure + key vaults. Also includes option to download the public key <br> ![Store key values in FinOps](Images/ReleaseNotes_20250331_5.png "Store key values in FinOps")
 21548		| DXC Encryption	| Setup	| Moving **Private key** and **Counter party's public key** around in **DXC encryption parameters**
 21551		| DXC Encryption	| Validate	| Ability to validate encryption / decryption key name. Select applicable **Encryption key name**, click **Validate** which will open a dialog to browse to a file. <br> • **Encrypt / Encrypt and sign** - select a file that should be encrypted, if setup is correct the encrypted file will be created that can be sent to counter party for testing. <br> • **Decrypt / Decrypt and verify** - select encrypted file that should be decrypted, if setup is correct a decrypted file will be created. <br> ![Validate](Images/ReleaseNotes_20250331_2.png "Validate")
+
 
 # Current version
 
