@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Security Insights for D365 FO - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-24
+ms.date: 2025-03-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,18 +36,26 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.40 <br> App build: 10.0.1935.92	  | No		  | 
-Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202407311
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40.202409101
-Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40.202412061
+Product version: 10.0.43 <br> App build: 10.0.2177.18	  | • No functional issues <br> • Build error fixed in 21610	          | • Functional: 10.0.40.202412061 <br> • Build error fixed: 10.0.42.202503251
 
 Release notes for other models included in product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
 
-# Next version
+# Current version
 
-### Release 10.0.42.202503TBD
+### Release 10.0.42.20250325
+
+Security Insights for D365 FO 10.0.42 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
+Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
+
+#### Build 10.0.42.202503251
+Release date: 25 March 2025
 
 <ins>New features</ins>
 
@@ -56,6 +64,7 @@ Number	| Name		 | Description
 20486	| Validation	| New parameter option **Warn when removing utilised reference in security configuration**. <br> When user selects **Remove reference** in **Security configuration** and fetched utilization exists for the role/duty/privilege combination, and new option is set to: <br> • **Yes** - Warning will notify user before the reference is removed, and only removed once they confirm.  <br> • **No** - No warning <br> ![Parameters](IMAGES/ReleaseNotes_20250331_1.png "Parameters") <br> ![Security configuration](IMAGES/ReleaseNotes_20250331_2.png "Security configuration")
 19926	| Assign users to roles	| **Role utilization %** added to form **Assign users to roles** to assist in determining if other assigned users utilised the role in the fetched period. Only supported for roles assigned to users in F&O (not 'Microsoft Entra ID security groups') <br> ![Security configuration](IMAGES/ReleaseNotes_20250331_3.png "Security configuration")
 21534	| Go to batch jobs	| **Go to batch jobs** link on info log when running Security Insights steps as batch. <br> ![Go to batch jobs](IMAGES/ReleaseNotes_20250331_4.png "Go to batch jobs")
+21325	| Menu item name	| When running the **Synchronize user roles and access** step, **Menu item name** will be populated by custom logic to translate Menu item to it's label name. <br> ![Menu item name](IMAGES/ReleaseNotes_20250331_5.png "Menu item name")
 
 
 <ins>Bug fixes</ins>
@@ -64,23 +73,13 @@ Number	| Name		 | Description
 :--	|:--		  	|:--
 20930	| User access and security groups | Fix for error 'Cannot edit a record in User access and security groups (DXCSecurityInsightsGroups). The record has never been selected.' When adding users to user groups via the users tab.
 21205	| Zero role utilization %	| When 1st user in group has 0 Overall user utilization %, and then clicking on user with non-zero %, the Role utilization % for that 2nd user incorrectly shows 0%
-21531	| Visual highlights	| Incorrect visual highlight on Role utilization % and Activity license type 
+21531	| Visual highlights	| Incorrect visual highlights 
 21610	| 10.0.43 build issue	| Fix 10.0.43 build issue on **Fetch interaction data from application insights**. <br> Microsoft.IdentityModel.Clients.ActiveDirectory has been deprecated and no longer supported by FinOps and needs to be upgraded to now use Microsoft.Identity.Client <br> [Microsoft notice](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#azure-active-directory-authentication-library-adal)
 
 
-# Current version
+# Previous Version(s)
 
 ### Release 10.0.40.20241206
-
-Security Insights for D365 FO 10.0.40 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
-Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
-Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
-
 
 #### Build 10.0.40.202412061
 Release date: 6 December 2024
@@ -108,8 +107,6 @@ Number	| Name		 | Description
 20395	| Refresh unfilters	| When user filters on the following, a Refresh (Shift + F5) will now not remove the filters: <br> • Security insights by user - Users FastTab <br> • Security insights by license - Licenses and Users FastTab
 20392	| Validation	| Incorrectly successfully validated Azure application insights configuration in **Insights for user access and security parameters** when the **Application Insights App Id** was incorrect.
 
-
-# Previous Version(s)
 
 ### Release 10.0.40.20240910
 
