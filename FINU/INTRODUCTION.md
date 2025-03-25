@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Introduction to Finance Utilities 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-12-03
+ms.date: 2025-03-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -176,7 +176,7 @@ Ability to use Customer's payment terms when posting Interest notes.
 - [Customer parameters setup](Setup/ACCOUNTS-RECEIVABLE/Customer-parameters.md)
 
 ## Import customer remittance
-> Note: Additional licensed feature included in AR Utilities
+> Note: Additional feature included in AR Utilities. If you are licensed for Finance Utilities, this extra feature can be added to your license on request.
 
 Enhancement to import customer remittance files using data entity Customer payment journal.
 - [Import customer remittance setup](Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md)
