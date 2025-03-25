@@ -5,7 +5,7 @@ title: DXC Finance Utilities - AR Utilities
 description: Customer remittance processing
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-12
+ms.date: 2025-03-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,9 +28,8 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Customer remittance import 
 
-The functionality as described in the following subsections relates to customer remittance import available in additional licensed feature **Finance utilities - AR utilities**.
-
-> Note: The menu items and additional fields on existing menu items are only available where additional licensed feature **Finance utilities - AR utilities** is enabled.
+The functionality as described in the following subsections relates to customer remittance import available in additional feature **Finance utilities - AR utilities**. <br>
+If you are licensed for Finance Utilities, this extra feature can be added to your license on request.
 
 ## Functionality
 
