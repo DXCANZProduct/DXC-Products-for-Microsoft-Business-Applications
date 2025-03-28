@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-02-21
+ms.date: 2025-03-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,6 +58,28 @@ Release notes for other models included in product:
 	- Step 3 - Change all applicable **Azure blob** connections: <br> 
 		• Credential type: Key Vault <br>
 		• Key vault: Secret setup in step 2
+
+# Next version
+
+### Release 10.0.40.2025TBD
+
+<ins>New features</ins>
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+21615	| Customer purchase order acknowledgement (POA) | New **POA code** options on **POA response group**: <br> • Line - out of stock <br> • Line - partial stock <br> • Line - price advice <br> • Date - backorder <br> • Date - confirmed <br> <br> ![POA response group](RELEASE-NOTES-IMAGES/20250331_1.png "POA response group") <br> <br> <ins>Updated logic</ins>: <br> POA staging line field **POA code line**: <br> • **Line - out of stock**: 100% out of stock / full backorder** (no other change check required) <br> • **Line - partial stock**: <100% out of stock / partial backorder  <br> • **Line - price advice**: full shipment with only price change  <br> • **Line - advice**: full shipment with multiple changes  <br> • **Line - accept**: full shipment with no changes  <br> • **Line - reject**: line rejected <br> <br> New POA line staging field **POA code date**:  <br> • **Date - backorder**: When 'Line - out of stock' applies (only full backorder)  <br> • **Date - confirmed**: When 'Line - out of stock' doesn't applies (partial backorder and full shipment) <br> ![POA staging line](RELEASE-NOTES-IMAGES/20250331_2.png "POA staging line")
+
+
+<ins>Bug fixes</ins>
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+
+
 
 # Current version
 
