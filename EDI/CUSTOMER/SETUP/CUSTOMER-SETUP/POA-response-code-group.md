@@ -3,9 +3,9 @@
 
 title: EDI Customer
 description: EDI Customer setup - POA responde code group
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-10-23
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-03-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  SAB_EDICustPOACodesMapping
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDICustomerDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -59,9 +59,14 @@ POA Response codes are used to identify the status of information used in a Purc
 **Line item – inner accept**      |	Item inner accepted	                  | LIA                  | POA lines - POA code item
 **Line item – inner difference**  |	Advise of inner difference	          | ID                   | POA lines - POA code item
 **Line item - error**             | **Customer purchase order** setting profile option **Skip error lines** is set to _Yes_ and the staging line couldn't create a sales line    | POA lines - POA code item
-**Line item - accept**            | Item accepted                         | IA                   | POA lines - POA code line
-**Line item - advise**            | Advise of line                        | IC                   | POA lines - POA code line
-**Line item - reject**            | Item rejected                         | IR                   | POA lines - POA code line
+**Line - out of stock**           | 100% out of stock / full backorder        | IB               | POA lines - POA code line
+**Line - partial stock**          | <100% out of stock / partial backorder    | BP               | POA lines - POA code line
+**Line - price advise**           | Full shipment with only price change      | IP               | POA lines - POA code line
+**Line - advise**                 | Full shipment with multiple changes       | IC               | POA lines - POA code line
+**Line - accept**                 | Full shipment with no changes             | IA               | POA lines - POA code line
+**Line - reject**                 | Line rejected                             | IR               | POA lines - POA code line
+**Date - backorder**              | ‘Line - out of stock’ applies, only full backorder    | 017    | POA lines - POA code date
+**Date - confirmed**              | ‘Line - out of stock’ doesn’t applies (partial backorder and full shipment)    | 068 | POA lines - POA code date
 
 - In the **Allow auto trigger** field, select if the POA response can be triggered by **Auto set response codes**. <br> The following response codes can only be manually triggered and thus their **Allow auto trigger** is set to _No_ and disabled:
     - Header – not accepted
@@ -104,6 +109,9 @@ This is applicable to Response codes where **Allow auto trigger** is set to Yes.
 - **Line - accept**: If all the applicable line codes are accept
 - **Line - advise**: If all the applicable line codes are combination of advise and reject
 - **Line - reject**: If all the applicable line codes are reject
+- **Line - out of stock**: If 100% out of stock / full backorder
+- **Line - partial backorder**: If <100% out of stock / partial backorder
+- **Line - price advice**: If full shipment with only price change
 
 Response code is only applicable if mapped.
 
