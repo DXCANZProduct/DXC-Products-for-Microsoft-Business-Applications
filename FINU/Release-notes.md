@@ -74,7 +74,7 @@ Feature	| 10.0.43 Feature state
 
 # Next version
 
-### Release 10.0.42.202503TBD
+### Release 10.0.42.202504TBD
 
 
 <ins>Bug fixes</ins>
