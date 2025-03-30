@@ -35,7 +35,7 @@ This page describes the features planned for future releases and planned release
 
 ## Release schedule
 
-- March 2024
+- April 2024
 
 
 ### Next release
