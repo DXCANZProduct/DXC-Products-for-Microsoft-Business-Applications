@@ -78,7 +78,7 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		 |:--
-21811	| X12 template	 | Inbound documents: Added **Static value dynamic position**. In below example the values for VC, CG and IN can be found in any order in the file. <br> ![Static value dynamic position](RELEASE-NOTES-IMAGES/20250331_3.png "Static value dynamic position") <br> <br> Outbound documents: Added **Static value do not send if blank**. In below example if staging value for SKU is blank it won't send IN fields. <br> ![Static value do not send if blank](RELEASE-NOTES-IMAGES/20250331_4.png "Static value do not send if blank")
+21811	| X12 template	 | Inbound documents: Added **Static value dynamic position**. In below example the values for VC, CG and IN can be found in any order in the file. <br> ![Static value dynamic position](RELEASE-NOTES-IMAGES/20250331_3.png "Static value dynamic position") <br> <br> Outbound documents: Added **Static value do not send if blank**. In below example if staging value for SKU is blank it won't send IN elements. <br> ![Static value do not send if blank](RELEASE-NOTES-IMAGES/20250331_4.png "Static value do not send if blank")
 
 
 <ins>Bug fixes</ins>
