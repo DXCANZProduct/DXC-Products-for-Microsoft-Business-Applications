@@ -2,9 +2,9 @@
 # required metadata
 
 title: Care Services
-description: DXC Care Services/Aged Care - Release notes
+Description: DXC Care Services/Aged Care - Release notes
 author: PMusumeci
-manager: Pontus, Ek
+Manager: Pontus, Ek
 ms.date: 2025-02-05
 ms.topic: article
 ms.prod: 
@@ -34,32 +34,46 @@ This document describes the features that are either new or changed in the relea
 The matrix shows the minimum DXC build versions compatible with Microsoft versions and builds. <br>
 If blank: investigations are ongoing. <br>
 
-D365 Version		  |Iissues found in testing?| Product version tested
-:--       	 		 |:--           			  |:--
-Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | ?????? 
-Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | ??????
-Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | ??????
-Product version: 10.0.43 <br> App build: 10.0.2177	  | Currently being tested | pending testing results 
+Microsoft Dynamics 365 Finance and Operations Version		  | Any issues found in testing?	  |Product version tested
+:--      			 	  |:--           			  |:--
+Microsoft Dynamics 365 Product version:    [10.0.41](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) <br> 	App build: 10.0.2015.16	  | No | 
+Microsoft Dynamics 365 Product version:    [ 10.0.42](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42) <br> 	App build: 10.0.2095	  | No | 
+Microsoft Dynamics 365 Product version:    [10.0.43](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43) <br>	 App build: 10.0.2177	  | No | 10.0.41.202502262
 
 
 Release notes for other models included in the product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
-- [Smart-Send](SMART-SEND/Release-notes.md)
+- [Smart-Send](../SMART-SEND/Release-notes.md)
 
 
 
 
 # Current version
 
-### Release 10.0.
+### Release 10.0.41.20250226
 
-DXC Care Services 10.0.40 runs on the following Microsoft releases
+DXC Care Services  10.0.41 runs on the following Microsoft releases
+
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-Microsoft Dynamics 365 application	| 10.0.41 	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
-Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
+Microsoft Dynamics 365 application	| 10.0.42	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
-Microsoft Dynamics 365 application	| 10.0.44 	  | Due April 2025 see [Targeted release schedule](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change)
+
+#### Build 10.0.41.202502262
+
+<ins>Bug fixes</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+XXXX	    | XXXX| XXXX 
+
+
+<ins>New features</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+XXXX	    | XXXX| XXXX
+
+
