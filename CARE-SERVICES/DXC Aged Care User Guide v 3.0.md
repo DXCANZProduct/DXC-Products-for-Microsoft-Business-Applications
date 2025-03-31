@@ -202,30 +202,7 @@ Contents
 
 [13.7. Funding schedule lines update](#funding-schedule-lines-update)
 
-**Version**
-
-| Date       | Version | Change Reference                                                                                   |
-|------------|---------|----------------------------------------------------------------------------------------------------|
-| 26/07/2023 | 1.0     | Initial draft                                                                                      |
-| 02/08/2023 | 2.0     | Billing code association, Retirement Living transactions, Collection letters Inquiries and reports |
-
-# Introduction
-
-DXC Care services Accelerator is a modern, cloud-based software solution embedded in the Microsoft Dynamics 365 platform to support the Care services eco-system in Australia and New Zealand. It is developed and delivered by DXC Practice for Microsoft Business Solutions.
-
-DXC Care services Accelerator delivers functionality for:
-
--   Independent Living/Retirement Villages (IL)
--   Residential Care services (RAC)
--   Home Care (HC)
--   Department of Veteran Affairs Home Care (DVA HC)
--   National Disability Insurance Scheme (NDIS)
--   Allied Services
--   Client Management
--   Services Management
--   Accommodation Payment Management
--   Client Billing
--   Client Funding
+********************************************up to here
 
 # Customer and Client Management
 
