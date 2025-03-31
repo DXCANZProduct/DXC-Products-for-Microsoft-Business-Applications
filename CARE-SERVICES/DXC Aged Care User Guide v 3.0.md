@@ -231,14 +231,14 @@ DXC Care services Accelerator delivers functionality for:
 
 -   Client admissions, departures and transfers are managed in the client service entry details.
 -   Clients can have multiple contacts including address, contact details and relationship type(s).
--   The financial setup includes customer bank account, preferred method of payment, billing, accommodation payment and funding.
--   Customer organisations such as NDIS Plan Manager or DVA (Department of Veteran’s affair) are setup for third party billing.
+-   The financial setup includes customer bank account, the preferred method of payment, billing, accommodation payment and funding.
+-   Customer organisations such as NDIS Plan Manager or DVA (Department of Veteran’s Affairs) are set up for third-party billing.
 
 ### 
 
-### Add a new Organisation Customer for third party billing
+### Add a new Organisation Customer for third-party billing
 
-Customer organisations such as a NDIS Plan Manager or DVA (Department of Veteran’s affairs) are setup for third party billing. Organisations cannot have a service entry.
+Customer organisations such as a NDIS Plan Manager or DVA (Department of Veteran’s Affairs) are set up for third-party billing. Organisations cannot have a service entry.
 
 **Path: Care services \> All customers**
 
