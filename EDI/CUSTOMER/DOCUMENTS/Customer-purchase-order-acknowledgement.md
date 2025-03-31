@@ -3,9 +3,9 @@
 
 title: EDI Customer
 description: EDI Customer Documents - Customer purchase order acknowledgement
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-07-30
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-03-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  SalesTableListPage, Action:SAB_EDIStagingFormRun_POA, SAB_EDICustPOACodesMapping
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: IconEDICustomerDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -167,6 +167,7 @@ Field	                    | Description
 **Acknowledged quantity**   |	Acknowledged quantity to be sent to the customer. Note: The acknowledged quantity will be set as either the customer or reserved values dependant on the **Quantity type** set on the [Customer purchase order acknowledgement](../SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement.md) document type setting profile.
 **Qty code**                |	POA line quantity code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md) for the following line quantity responses: <br> •	**Line item accept** - Where the customer and acknowledged quantities are the same <br> • **Line item - out of stock** - Where the customer and acknowledged quantities are different <br> • **Line item - withdrawn** - Only available for manual selection.
 **Shipment code**           |	POA line shipment code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md) for the following line shipment responses: <br> • **Line shipment - full** - Where line item POA response is accept or where line item is out of inventory and the Trading partner setting **No backorder** is set to _Yes._ <br> • **Line shipment - partial** - Where line item POA response is out of inventory and the and the Trading partner setting **No backorder** is set to _No_.
+**POA code date**           | POA date code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md) for the following line shipment responses: <br> • **Date - backorder** - Where full backorder applies <br> • **Date - confirmed** - Where a quantity will be shipped
 **Auto triggered item**     |	Indicates if the **Qty code** is an auto triggered value
 **Auto triggered shipment** |	Indicates if the **Shipment code** is an auto triggered value
 
@@ -398,6 +399,7 @@ The ** fields will be populated where **Customer purchase order** setting profil
 **Barcode**             |	Barcode for the item number from the sales order	    | Sales line > Barcode
 **External item number**  |	The external item id specified for this customer/item combination. This is the part number for this item in the Customer’s system.	| Sales line> General > External references > External
 **EDI item number**  **    | Item number from the Customer purchase order staging line    | Customer purchase order lines > Item number / Bar code
+**SKU**                 | SKU from the Customer purchase order staging line           | Sales line > EDI > SKU
 **Configuration**       |	Product dimension - Configuration	                      | Sales line > Product dimension
 **Colour**	            |   Product dimension - Colour	                              | Sales line > Product dimension
 **Size**                |	Product dimension - Size	                              | Sales line > Product dimension
