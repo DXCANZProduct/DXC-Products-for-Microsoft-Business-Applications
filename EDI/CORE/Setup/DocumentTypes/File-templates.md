@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Setup document types - File templates
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-05
+ms.date: 2025-03-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -546,6 +546,8 @@ It also includes **EDI X12 message**, which includes options like:
     - Segment count
 - **Name** is defaulted from the Static value / Staging field but can be overridden.
 - Where applicable, enter a [Custom format](#custom-format) for the field.
+- For incoming documents, use **Static value dynamic position** to flag elements with dynamic positining (elements can be found in different order on the line). Set flag to _Yes_ on static qualifier.
+- For outgoing documents, use **Static value do not send if blank** to flag where if an element is blank, it shouldn't send the blank value and it's qualifier. Set flag to _Yes_ on static qualifier.
 
 > Note: To **Delete** an Element, select the record then select **Delete**. <br>
 > Elements can be moved up or down within its Composite by using the **Up** and **Down** buttons. <br> 
