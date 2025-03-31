@@ -3,9 +3,9 @@
 
 title: EDI Customer
 description: EDI Customer Documents - Customer advanced shipping notice
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-07-13
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-03-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  SAB_EDIConsignmentNoteTable, Action:SAB_EDIStagingFormRun_ASN, SAB_EDIASNLineConfigurationTable
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: IconEDICustomerDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -189,7 +189,7 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Identification**</ins>		|   |
 **EDI number**          | ASN number                                              | EDI parameters > Number sequences > ASN number
 **Company**             | Legal entity of the document
-**Company GLN**         | The company’s global location number is shown here      | 
+**Company GLN**         | The company’s global location number is shown here      | Sales order > EDI > Company GLN
 **Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	           
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue.	• **Canceled** – The record has been manually canceled and will be excluded from processing.
 <ins>**Reset status**</ins>		|   |
@@ -207,6 +207,7 @@ The following EDI Header staging fields are available on the header page.
 **Customer account**	    | Customer account for the ASN record	
 **Document date**		    | Document date for the record
 **Name**                    | Customer name	                                        | Consignment > Customer account (Name)
+**Buyer code**              | Buyer code for the record                             | Sales Order > EDI > Buyer code
 **Ship date**               | Date the goods were shipped	                        | Consignment > Ship date
 **Scheduled delivery date** | Scheduled date for delivery	                        | Consignment > Scheduled delivery date
 **Sales quantity**          | Total quantity within the consignment	
@@ -232,6 +233,7 @@ The following EDI Line staging fields are available on the lines page.
 **Text**                   | The D365 item name	                                        | Packing slip > Item Name
 **External item number**   | Customer external item number	<br> The intercompany ASN's External item number will be obtained from the originating sales order line - only applies to EDI orders.                      | Sales line > General > External
 **Bar code**               | The GTIN or barcode                                        | Sales line > EDI item number
+**SKU**                    | SKU from the Customer purchase order staging line          | Sales line > EDI > SKU
 **Store code**	           | Store code for the delivery line	                        | Sales line > Store Code
 **Delivery name**          | Delivery name and address information	                    | Consignment/Sales order > Delivery address information
 **Unit**                   | Unit of measure	                                        | Sales line > Unit
