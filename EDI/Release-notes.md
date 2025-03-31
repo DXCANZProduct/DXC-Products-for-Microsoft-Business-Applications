@@ -71,7 +71,7 @@ Number	| Name		 | Description
 :--	|:--		  	|:--	
 21615	| • Customer purchase order acknowledgement (POA) | New **POA code** options on **POA response group**: <br> • Line - out of stock <br> • Line - partial stock <br> • Line - price advice <br> • Date - backorder <br> • Date - confirmed <br> <br> ![POA response group](RELEASE-NOTES-IMAGES/20250331_1.png "POA response group") <br> <br> <ins>Updated logic</ins>: <br> POA staging line field **POA code line**: <br> • **Line - out of stock**: 100% out of stock / full backorder <br> • **Line - partial stock**: <100% out of stock / partial backorder  <br> • **Line - price advice**: full shipment with only price change  <br> • **Line - advice**: full shipment with multiple changes  <br> • **Line - accept**: full shipment with no changes  <br> • **Line - reject**: line rejected <br> <br> New POA line staging field **POA code date**:  <br> • **Date - backorder**: When 'Line - out of stock' applies (only full backorder)  <br> • **Date - confirmed**: When 'Line - out of stock' doesn't applies (partial backorder and full shipment) <br> ![POA staging line](RELEASE-NOTES-IMAGES/20250331_2.png "POA staging line")
 21729	| • Customer purchase order acknowledgement (POA) <br> • Customer advanced shipping notice (ASN) <br> • Sales invoice | Added line field **SKU** from EDI Customer purchase order lines to all outbound documents. Also added to Sales order Line details, EDI tab.
-21714	| • Customer advanced shipping notice (ASN) <br> • Sales invoice | Added field **Order line number** to staging lines. Source is EDI Customer purchase order line's 'Line number', and for non-EDI orders it will populate with same value as ASN and Invoice's 'Line number document'.
+21714	| • Customer advanced shipping notice (ASN) <br> • Sales invoice | Added field **Order line number** to staging lines. Source is EDI Customer purchase order line's 'Line number', and for non-EDI sales orders it will populate with same value as ASN and Invoice's 'Line number document'.
 21849	| • Customer advanced shipping notice (ASN) <br> • Sales invoice | Added header field **Buyer code** from EDI Customer purchase order header.
 
 **Standard formats module**	
@@ -87,7 +87,7 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-
+21725	| • Customer advanced shipping notice (ASN) <br> • Sales invoice | Use **Company GLN** from Customer purchase order staging record. For non EDI sales orders or consolidated packing slips, use the **Company GLN** from the Trading partner setup.
 
 
 # Current version
