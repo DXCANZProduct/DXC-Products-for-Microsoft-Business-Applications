@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Sales invoice
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-02-21
+ms.date: 2025-03-31
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -106,7 +106,7 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Identification**</ins>		|   |
 **EDI number**          | EDI Staging table record id                             | EDI parameters > Number sequences > EDI number
 **Company**             | Legal entity of the document
-**Company GLN**         | The company’s global location number is shown here      | 
+**Company GLN**         | The company’s global location number is shown here      |  Sales order > EDI > Company GLN
 **Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	           
 **Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
 <ins>**Reset status**</ins>		|   |
@@ -124,6 +124,7 @@ The following EDI Header staging fields are available on the header page.
 **Carrier**                 | Carrier assigned to the packing slip	| Consignments > Carrier
 **Bill of lading ID**		| Sales invoice's Bill of lading        | Sales invoice > Bill of lading
 **Customer GLN**            | The Global location number for this customer      | Sales Order > EDI > Customer GLN
+**Buyer code**              | Buyer code for the record                         | Sales Order > EDI > Buyer code
 <ins>**Status**</ins>       |   |
 **Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
 **Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
@@ -156,6 +157,8 @@ The following EDI Header staging fields are available on the header page.
 **Post box**                | Warehouse address - Post box	
 <ins>**Invoice**</ins>      | Invoice details		|
 **Invoice**                 | D365 Invoice number	                | Invoice > Invoice Number
+**Invoice account**         | D365 Invoice account                  | Invoice > Invoice account
+**Buyer code**              | Buyer code for the record             | Sales Order > EDI > Buyer code
 **Name**                    | Tax invoice account name	            | Invoice > Invoice Account Name
 **Invoice contact name**	| Invoice account’s primary contact name	| Customer > Contact information
 **Invoice phone number**	| Invoice account’s primary contact phone	| Customer > Contact information
@@ -211,6 +214,7 @@ The following EDI Line staging fields are available on the lines page.
 **Lot ID**                  | Lot Id / InventTransId for the invoice line	            | Inventory transaction > InventTransId
 **Bar code**                | The GTIN or barcode	                                    | Sales line > EDI > EDI item number
 **External item number**	| The external item number	                                | Sales line > General > External
+**SKU**                     | SKU from the Customer purchase order staging line         | Sales line > EDI > SKU
 **Unit price**	            | Discouned unit price for the item	                                | Sales line > Unit price (discounted)
 **Sales unit price**        | Unit price before discounts for the item	                | Sales line > Unit Price
 **Unit discount**           | Unit discount for the item	                            | Sales line > Unit discount
