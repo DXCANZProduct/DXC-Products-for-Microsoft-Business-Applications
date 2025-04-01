@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Customer and Client Management
 
--   Client admissions, departures and transfers are managed in the client service entry details.
+-   Client admissions, departures, and transfers are managed using the client service entry details.
 -   Clients can have multiple contacts including address, contact details and relationship type(s).
 -   The financial setup includes customer bank account, the preferred method of payment, billing, accommodation payment and funding.
 -   Customer organisations such as NDIS Plan Manager or DVA (Department of Veteran’s Affairs) are set up for third-party billing.
@@ -42,7 +42,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 Customer organisations such as a NDIS Plan Manager or DVA (Department of Veteran’s Affairs) are set up for third-party billing. Organisations cannot have a service entry.
 
-**Path: Care services \> All customers**
+Navigate to: **Care services \> All customers**
 
 1.  Click on **\<New\>**
 2.  **Type** - Select **‘Organisation’** from the Type
@@ -51,7 +51,7 @@ Customer organisations such as a NDIS Plan Manager or DVA (Department of Veteran
 5.  **Terms of payment** – Enter the organisation’s payment terms
 6.  **ABN** – Enter the ABN if an ABN record has been created in D365 for this organisation otherwise it can be entered later  
     **Address Tab**
-7.  **Add or Edit addresses** – Select Add or Edit as required and a pop up window will be displayed. Multiple addresses can be stored for each organisation customer with different purposes.
+7.  **Add or Edit addresses** – Select Add or Edit as required and a pop-up window will be displayed. Multiple addresses can be stored for each organisation customer with different purposes.
 8.  **Name or Description** – This does not print when an address is used in reports, invoices or statements etc. Enter a name to be associated with this address or a description of the type of address it is such as Office address, Postal address etc. The purpose can also be used for this type of function
 9.  **Purpose** – Select the purpose(s) for the address. The purpose is a field that can be customised by any organisation so that tailored purposes can be created to suit the organisation’s needs so ensure you select the purpose based on what that address should be used for. Eg. Invoice is the purpose that is usually used for the address that should appear on the invoice, Statement might also be used if this has a separate address
 10. **Address fields** – Enter the address into the appropriate fields. City and postcode verification is available.
@@ -70,9 +70,9 @@ Customer organisations such as a NDIS Plan Manager or DVA (Department of Veteran
 
 ### Add a new client
 
-**Path: Care services \> All customers**
+Navigate to: **Care services \> All customers**
 
-1.  Click on **\<New\>** and pop-up window will be displayed for entering the customer details
+1.  Click on **\<New\>** and a pop-up window will be displayed for entering the customer details
 2.  **Type** - Select **‘Person’** for anyone who will be receiving services
 3.  **First name** - Enter the first name.
 4.  **Middle name** – Optional to enter the Middle name
@@ -91,7 +91,7 @@ Customer organisations such as a NDIS Plan Manager or DVA (Department of Veteran
     Select the Carer status if that is relevant to the client
 15. **HCP** - Set to yes if the client has a home care package and requires the Home care unspent amount to be calculated by the system  
     **Address Tab**
-16. **Add or Edit addresses** – Select Add or Edit as required and a pop up window will be displayed. Multiple addresses can be stored for each client with different purposes.
+16. **Add or Edit addresses** – Select Add or Edit as required and a pop-up window will be displayed. Multiple addresses can be stored for each client with different purposes.
 17. **Name or Description** – This does not print when an address is used in reports, invoices or statements etc. Enter a name to be associated with this address or a description of the type of address it is such as Home address, service delivery address, carer address etc. The purpose can also be used for this type of function
 18. **Purpose** – Select the purpose(s) for the address. The purpose is a field that can be customised by any organisation so that tailored purposes can be created to suit the organisation’s needs so ensure you select the purpose based on what that address should be used for. Eg. Invoice is the purpose that is usually used for the address that should appear on the invoice, Service or Home might be used for clients who receive home care services to show which address is used by the client when they receive services
 19. **Address fields** – Enter the address into the appropriate fields. City and postcode verification is available.
@@ -111,13 +111,13 @@ Customer organisations such as a NDIS Plan Manager or DVA (Department of Veteran
 
 ### Client Bank account and method of payment
 
-**Path: Care services \> All customers \> Customer**
+Navigate to: **Care services \> All customers \> Customer**
 
--   Customers can have multiple bank accounts however only one can be setup as the direct debit bank account at a time.
+-   Customers can have multiple bank accounts however only one can be set up as a direct debit bank account at a time.
 -   When transactions are generated, they are tagged with the method of payment and bank account selected on the customer account at the time.
--   If a customer changes their bank account, then the existing bank account record can be edited. The bank account record name will remain the same, so the new BSB and account number will be used when generating the aba file. Note that using this method, historical bank records will not be available for the customer
--   If a new bank account record is created and then selected on the customer record, then only new transactions will be tagged with that bank account. Any existing transactions will still be tagged with the original bank account and payment method. There is a process in the direct debit processing to update the bank account and the payment method for the existing transactions, however these differences in the updating of the bank account records should be considered when deciding which update method to use.
-1.  Select the client the bank account is being setup for
+-   If a customer changes their bank account, then the existing bank account record can be edited. The bank account record name will remain the same, so the new BSB and account number will be used when generating the ABA file. Note that using this method, historical bank records will not be available for the customer
+-   If a new bank account record is created and then selected on the customer record, then only new transactions will be tagged with that bank account. Any existing transactions will still be tagged with the original bank account and payment method. There is a process in the direct debit processing to update the bank account and the payment method for the existing transactions, however,r these differences in the updating of the bank account records should be considered when deciding which update method to use.
+1.  Select the client the bank account is being set up for
 2.  Select **Setup \> Bank accounts** from the ribbon at the top.
 3.  Click **\<New\>**
 4.  **Bank account**  - Enter a code for the bank account eg. BANK, MAIN, FIRST etc.
@@ -130,7 +130,7 @@ Customer organisations such as a NDIS Plan Manager or DVA (Department of Veteran
 
 ### Client Contacts
 
-**Path: Care services \> All customers \> Customer\> Contacts**
+Navigate to: **Care services \> All customers \> Customer\> Contacts**
 
 1.  Select **\<View contacts\>** if you want to view or edit the existing contacts
 2.  To add a new contact select **\<Add contacts\>**
@@ -142,14 +142,14 @@ Customer organisations such as a NDIS Plan Manager or DVA (Department of Veteran
 7.  Account receiver – If the contact is to receive a copy of the customer statement set this to Yes
 8.  Statement preference - If the Account receiver is set to yes select the statement preference to Email or Mail. Email is recommended as the statement generated will be a copy of the statement sent to the customer and will have the same mailing address on it so the copy cannot be sent in a window face envelope.  
     **Address Tab**
-9.  **Add or Edit addresses** – Select Add or Edit as required and a pop up window will be displayed. Multiple addresses can be stored for each client with different purposes.
+9.  **Add or Edit addresses** – Select Add or Edit as required and a pop-up window will be displayed. Multiple addresses can be stored for each client with different purposes.
 10. **Name or Description** – This does not print when an address is used in reports, invoices or statements etc. Enter a name to be associated with this address or a description of the type of address it is such as Home address, service delivery address, carer address etc. The purpose can also be used for this type of function
 11. **Purpose** – Select the purpose(s) for the address. The purpose is a field that can be customised by any organisation so that tailored purposes can be created to suit the organisation’s needs so ensure you select the purpose based on what that address should be used for. Eg. Invoice is the purpose that is usually used for the address that should appear on the invoice, Service or Home might be used for clients who receive home care services to show which address is used by the client when they receive services
 12. **Address fields** – Enter the address into the appropriate fields. City and postcode verification is available.
 13. **Primary** – Select if this is expected to be the main address for the client. Each client can have only 1 Primary address  
     **Contact information**
 14. **Add Phone or Email address** – select **Add** and a new line will appear in the grid  
-    **Description** - Enter a description of the contact is such as Daughter – Susan or anything that is useful  
+    **Description** - Enter a description of the contact such as Daughter – Susan or anything useful  
     **Type** - Select the Type, phone or email etc.  
     **Contact number/address** - Enter the phone number or email address etc.  
     **Primary** – Tick if this is the primary record for that Contact Type. There can only be one Primary for each Type of contact, ie. You can add multiple phone numbers however only 1 can be primary, but a customer can have both a primary email and a primary phone etc.
@@ -161,7 +161,7 @@ Customer organisations such as a NDIS Plan Manager or DVA (Department of Veteran
 
 Clients can have multiple reference numbers such as Pension number or Care services client record
 
-**Path: Care services \> All customers \> Customer\> Setup \> Client reference number**
+Navigate to: **Care services \> All customers \> Customer\> Setup \> Client reference number**
 
 1.  Select **\<New\>**
 2.  **Reference number type** - Select the Reference number type.
@@ -169,13 +169,13 @@ Clients can have multiple reference numbers such as Pension number or Care servi
 4.  Select the **‘Active’** check box.
 5.  Repeat the process to add additional reference numbers.
 
-**![](media/4864991b358e426b582b1c7e91094c49.png)**
+![Client reference number](IMAGES/Client-reference-number.png)
 
 *Client reference number*
 
 ### Admit the client to a service
 
-**Path: Care services \> All customers \> Care services**
+Navigate to: **Care services \> All customers \> Care services**
 
 -   A client’s service entry tells us about the client’s journey within the organisation and when they were receiving care.
 -   The service entry will show which areas of the organisation were providing that care and whether they are continuing to receive that care.
@@ -205,7 +205,7 @@ Clients can have multiple reference numbers such as Pension number or Care servi
 
 ### Admit partners in Independent Living
 
-**Path: Care services \> All customers**
+Navigate to: **Care services \> All customers**
 
 -   Independent living often includes multiple clients residing in the same place, eg apartment, unit, townhouse etc
 -   The system allows for any number of clients in the same place, and they share a service entry providing the service has the “Allow Partnered” toggle set to Yes on the service record.
@@ -213,9 +213,9 @@ Clients can have multiple reference numbers such as Pension number or Care servi
 -   If the partner client leaves the service, the departure can also be recorded there.
 -   If the Primary client leaves the partner client can be switched to the Primary and all the setup and history is retained.
 1.  Create a new client account for the Partner as per previous instructions for client accounts (do not add a service entry)
-2.  Go to **Care services \> Customers \> All customers**
+2.  Go to ****Care services \> Customers \> All customers**
 3.  Select the Primary client from the client list
-4.  Click on **Care services \> Related information \> Service entries**
+4.  Click on ****Care services \> Related information \> Service entries**
 5.  If the Primary client does not already have a service entry for the shared place add a service entry as per above instructions
 6.  Open the Primary client service entry  
     **Identification tab**
@@ -234,7 +234,7 @@ Clients can have multiple reference numbers such as Pension number or Care servi
 -   Client-specific fees and rates are added to the client billing schedule and any lines that are not applicable to a client can be removed
 -   Fees setup with a funding offset amount (such as Means Tested Fee Clawback) will automatically generate the funding reduction in the Funding schedule.
 
-**Path: Care services \> All customers \> Invoice\> Setup \> Billing schedule/Funding Schedule**
+Navigate to: **Care services \> All customers \> Invoice\> Setup \> Billing schedule/Funding Schedule**
 
 1.  **Review** the automatically generated lines
 2.  **Delete a line** – If there are any lines that do not apply to this client select the line to be deleted then click \<Mark as created in error\>. When all unwanted lines have been marked as created in error, tick the view marked in error. The lines that were marked created in error will be displayed, select all lines and click \<Delete\>. Untick the View marked in error to return to the billing schedule
@@ -280,7 +280,7 @@ Clients can have multiple reference numbers such as Pension number or Care servi
 -   The values are updated via the periodic client capping calculation job.
 -   The First entry date refers to the date the client first began receiving Commonwealth funded Care services, including home care or care with another provider. This is the day that is used as the anniversary date for the annual capped amounts
 
-**Path: Care services \> All customers \> Customer\> Set up \> Capping limits setup**
+Navigate to: **Care services \> All customers \> Customer\> Set up \> Capping limits setup**
 
 1.  Click **\<Edit\>**
 2.  **Annual capping limits -** select the annual capping limit type that relates to the type of care the client is currently receiving
@@ -302,7 +302,7 @@ Clients can have multiple reference numbers such as Pension number or Care servi
 -   Billing codes that have been setup with a funding offset (such as Means Tested Care Fee or Hardship) will automatically generate the funding schedule claw back line or Hardship funding line when the fee is setup. The funding rate is associated with the billing rate with a negative of the rate on the billing schedule. Eg. Means test care fees will have a positive value on the billing schedule and a negative value on the funding schedule line and Hardship will have a negative value on the billing schedule line and a positive value on the funding schedule line.
 -   Funding codes that have been setup as Accommodation payment associated (such as Accommodation supplement) will automatically have the rate reduced by the Assessed amount from the Accommodation payment line.
 
-**Path: Care services \> All customers \> Invoice\> Funding schedule**
+Navigate to: **Care services \> All customers \> Invoice\> Funding schedule**
 
 1.  **Review** the automatically generated lines
 2.  **Delete a line** – If there are any lines that do not apply to this client select the line to be deleted then click \<Mark as created in error\>. When all unwanted lines have been marked as created in error, tick the view marked in error. The lines that were marked created in error will be displayed, select all lines and click \<Delete\>. Untick the View marked in error to return to the billing schedule
@@ -334,7 +334,7 @@ The available accommodation payment methods of payment options are the following
     -   If the client is paying the full amount themselves, it’s called a Daily Accommodation Payment (**DAP**).
 -   or a **Combination** of both (for instance, the agreed amount is \$400,000 the client could choose to pay \$100,000 as a refundable lump sum, and the rest through non-refundable daily payments).
 
-**Path: Care services \> All customers \> Invoice\> Accommodation payment**
+Navigate to: **Care services \> All customers \> Invoice\> Accommodation payment**
 
 1.  Select **\<Add line\>** to add a new line.
 2.  The **Effective date** will automatically populate from the client entry start date.
@@ -357,7 +357,7 @@ The available accommodation payment methods of payment options are the following
 
 Accommodation payments where the supported/accommodation payment status is Ingoing contribution, will require setup for DMF/CRF
 
-**Path: Care services \> All customers \> Invoice\> Accommodation payment**
+Navigate to: **Care services \> All customers \> Invoice\> Accommodation payment**
 
 1.  Select the DMF/CRF tab and populate the DMF/CRF capital gain or capital loss percentage share
 2.  Populate the Agreed amount and select the Billing account name
@@ -375,7 +375,7 @@ Accommodation payments where the supported/accommodation payment status is Ingoi
 
 ### Generate billing transactions
 
-**Path: Care services\> Billing\> Generate billing transaction**
+Navigate to: Care services\> Billing\> Generate billing transaction**
 
 1.  **Journal posting date –** Enter the posting date for the transaction
 2.  **End date –** Enter the last date to be included in the scheduled billing run, ie. The date you want to bill to.
@@ -390,7 +390,7 @@ Accommodation payments where the supported/accommodation payment status is Ingoi
 
 ### Enter billing transactions
 
-**Path: Care services\> Billing\> Billing transactions**
+Navigate to: Care services\> Billing\> Billing transactions**
 
 1.  Select **New billing transaction,** a pop up window will be displayed
 2.  **Customer account –** Enter the customer account that is responsible for paying the invoice, this may be the client or a third party.
@@ -417,7 +417,7 @@ Accommodation payments where the supported/accommodation payment status is Ingoi
 
 ### View billing transactions
 
-**Path: Care services\> Billing\> Billing transactions**
+Navigate to: Care services\> Billing\> Billing transactions**
 
 1.  Billing transactions where the document status is **‘Open’** will display. Open status means they have not yet been included in a billing invoice.
 2.  Select **\<Show all\>** to view all billing transactions if required.
@@ -429,7 +429,7 @@ Accommodation payments where the supported/accommodation payment status is Ingoi
 
 ### Edit billing transactions
 
-**Path: Care services\> Billing\> Billing transactions**
+Navigate to: Care services\> Billing\> Billing transactions**
 
 1.  Only Billing transactions where the document status is **‘Open’** can be edited. Open status means they have not yet been included in a billing invoice.
 2.  Open the billing transaction by clicking on the **Billing transaction id**
@@ -456,7 +456,7 @@ Accommodation payments where the supported/accommodation payment status is Ingoi
 
 ### Delete billing transactions
 
-**Path: Care services\> Billing\> Billing transactions**
+Navigate to: Care services\> Billing\> Billing transactions**
 
 1.  Only Billing transactions where the document status is **‘Open’** can be deleted. Open status means they have not yet been included in a billing invoice.
 2.  Select the billing transaction to be deleted and confirm that it is the only billing transaction that you have selected or if there are multiples check only Billing transactions that you want to delete are highlighted.
@@ -464,7 +464,7 @@ Accommodation payments where the supported/accommodation payment status is Ingoi
 
 ### Generate billing invoices
 
-**Path: Care services\> Billing\> Generate Billing invoices**
+Navigate to: Care services\> Billing\> Generate Billing invoices**
 
 1.  **Invoice date –** Enter the required invoice date, usually the date the invoice is being generated or may be based on the day or month the services were provided.
 2.  Click on **\<Filter\>**
@@ -478,7 +478,7 @@ Accommodation payments where the supported/accommodation payment status is Ingoi
 
 ### View billing invoices and generate billing journal
 
-**Path: Care services\> Billing\> Billing invoices**
+Navigate to: Care services\> Billing\> Billing invoices**
 
 1.  Billing invoices that have not had a journal raised yet will display on the billing invoice list.
 2.  Select **\<Show all\>** to view all billing invoices if required.
@@ -488,7 +488,7 @@ Accommodation payments where the supported/accommodation payment status is Ingoi
 
 ### Generate billing journals
 
-**Path: Care services\> Billing\>Generate Billing journals**
+Navigate to: Care services\> Billing\>Generate Billing journals**
 
 1.  Select the Billing journal type from the drop-down menu.
 2.  Click on **\<Filter\>**
@@ -502,7 +502,7 @@ Accommodation payments where the supported/accommodation payment status is Ingoi
 
 ### Review and post billing journals
 
-**Path: Care services\> Billing\>Journals\> Billing journal**
+Navigate to: Care services\> Billing\>Journals\> Billing journal**
 
 1.  The billing journal list will show journals that have not been posted.
 2.  Select ‘All’ or ‘Posted’ in the ‘Show’ drop down menu to view posted journals if required.
@@ -517,7 +517,7 @@ Accommodation payments where the supported/accommodation payment status is Ingoi
 
 ### Billing journal proposals
 
-**Path: Care services\> Billing\>Journals\> Billing journal**
+Navigate to: Care services\> Billing\>Journals\> Billing journal**
 
 -   The billing journal proposal end date controls the billing being generated.
 -   If the client has not been billed before, then the billing will be generated from the start day on the billing schedule to the end date on the billing proposal.
@@ -544,7 +544,7 @@ Accommodation payments where the supported/accommodation payment status is Ingoi
 
 ### Generate Billing journal proposal
 
-**Path: Care services \> Billing \> Journals \> Billing Journals**
+Navigate to: **Care services \> Billing \> Journals \> Billing Journals**
 
 1.  Click on **\<New\>** to create a new billing journal.
 2.  Select the relevant billing journal from the drop-down menu.
@@ -567,7 +567,7 @@ Accommodation payments where the supported/accommodation payment status is Ingoi
 
 ### Review and post Billing journal
 
-**Path: Care services \> Billing \> Journals \> Billing Journals**
+Navigate to: **Care services \> Billing \> Journals \> Billing Journals**
 
 1.  The billing journal list will show journals that have not been posted.
 2.  Select ‘All’ or ‘Posted’ in the ‘Show’ drop down menu to view posted journals.
@@ -578,7 +578,7 @@ Accommodation payments where the supported/accommodation payment status is Ingoi
 
 ### Third party billing
 
-**Path: Care services \> All Customers \>Invoice \> Billing journal schedule**
+Navigate to: **Care services \> All Customers \>Invoice \> Billing journal schedule**
 
 1.  Select the line for the fee paid by a third party.
 2.  Click on **\<Billing invoicee\>**
@@ -592,7 +592,7 @@ Accommodation payments where the supported/accommodation payment status is Ingoi
 
 ### Split billing
 
-**Path: Care services \> All Customers \>Invoice \> Billing journal schedule**
+Navigate to: **Care services \> All Customers \>Invoice \> Billing journal schedule**
 
 1.  Select the line for the fee to be paid by multiple parties.
 2.  Click on **\<Billing invoicee\>**
@@ -609,7 +609,7 @@ Accommodation payments where the supported/accommodation payment status is Ingoi
 
 The consolidation process is used when there are multiple journal lines in the same journal for the same customer, billing code & service code to combine the lines.
 
-**Path: Care services \> Billing \> Journals \> Billing Journals\> Lines**
+Navigate to: **Care services \> Billing \> Journals \> Billing Journals\> Lines**
 
 1.  Go to Billing proposal options \> Billing journal proposal.
 2.  Select **\<Consolidate journal lines\>**
@@ -620,7 +620,7 @@ The consolidation process is used when there are multiple journal lines in the s
 -   Billing schedule adjustments such as adding or ending fees and changes to the billing rates are managed via the client billing schedule.
 -   Global rate updates such as Basic Daily Care fee will not require a separate update for each client. The rate will be automatically updated for the relevant clients.
 
-**Path: Care services \> All Customers \>Invoice \> Billing journal schedule**
+Navigate to: **Care services \> All Customers \>Invoice \> Billing journal schedule**
 
 1.  Select the line for the fee to be adjusted.
 2.  Populate the end date if the fee is no longer billed. Leave it blank if the fee is still applicable.
@@ -647,7 +647,7 @@ Billing adjustments are run whenever a client has billing that is required to be
 -   has been billed in advance and then departs.
 -   has been billed in advance and after payment of the accommodation payment lumpsum, requests for fees to be drawn down instead.
 
-**Path: Care services \> Billing \> Journals \> Billing Journals\> Lines**
+Navigate to: **Care services \> Billing \> Journals \> Billing Journals\> Lines**
 
 1.  Go to Billing proposal options \> Billing journal proposal.
 2.  Select **\<Billing journal adjustment proposal\>**
@@ -673,10 +673,10 @@ Billing adjustments are run whenever a client has billing that is required to be
 -   Capping limits are the amounts specified by the government as the maximum annual or lifetime amount that can be charged of a particular type of fee such as means tested fees or income tested fees.
 -   If the ‘allow charge beyond capping limits’ is set to yes, then the billing will continue even if the cap has been reached.
 -   When the parameter is set to No, the billing will end when the capping limit has been reached.
--   Prior to generating the billing journal, ensure the capping limit setup has been completed for the client (Path: Care services \> All Customers \> Set up \> Capping limits setup)
+-   Prior to generating the billing journal, ensure the capping limit setup has been completed for the client (Path: **Care services \> All Customers \> Set up \> Capping limits setup)
 -   The client capping calculation periodic job updates the client capping limit setup after posting the journal.
 
-**Path: Care services \> Billing \> Journals \> Billing Journals\> Lines**
+Navigate to: **Care services \> Billing \> Journals \> Billing Journals\> Lines**
 
 1.  Go to Billing proposal options \> **Billing journal proposal**
 2.  Populate the journal posting date.
@@ -690,11 +690,11 @@ Billing adjustments are run whenever a client has billing that is required to be
 
 # Accommodation Payments
 
-Prior to generating Accommodation payment transactions, ensure the Accommodation payment setup has been completed for the client (Path: Care services \> All Customers \> Invoice \> Set up \> Accommodation payment)
+Prior to generating Accommodation payment transactions, ensure the Accommodation payment setup has been completed for the client (Path: **Care services \> All Customers \> Invoice \> Set up \> Accommodation payment)
 
 ### Accommodation payment lumpsum invoice
 
-**Path: Care services \> Billing \> Journals \> Billing Journals**
+Navigate to: **Care services \> Billing \> Journals \> Billing Journals**
 
 1.  Click on **\<New\>** to create a new billing journal.
 2.  Select the **relevant accommodation payment lumpsum invoice** journal from the drop-down menu
@@ -715,7 +715,7 @@ Prior to generating Accommodation payment transactions, ensure the Accommodation
 
 Daily accommodation payments or unpaid interest amounts can be drawn down from the lumpsum balance.
 
-**Path: Care services \> All customers \> Invoice\> Accommodation payment**
+Navigate to: **Care services \> All customers \> Invoice\> Accommodation payment**
 
 1.  Change the **Billing account name** on the accommodation payment line to the relevant accommodation payment billing account name.
 2.  When the lumpsum invoice has been fully or partially paid, the DAP/DAC and unpaid interest amounts will be drawn down from the lumpsum reducing the refundable balance.
@@ -725,7 +725,7 @@ Daily accommodation payments or unpaid interest amounts can be drawn down from t
 
 Fees can be drawn down from the lumpsum balance.
 
-**Path: Care services \> All customers \> Invoice\> Billing Schedule**
+Navigate to: **Care services \> All customers \> Invoice\> Billing Schedule**
 
 1.  Select the fee to be drawn down from the accommodation payment lumpsum.
 2.  Click on **\<Billing invoicee\>**
@@ -742,7 +742,7 @@ Fees can be drawn down from the lumpsum balance.
 
 Clients may request fees billed in advance to be drawn down from the accommodation payment lumpsum when it has been paid.
 
-**Path: Care services \> All customers \> Invoice\> Billing Schedule**
+Navigate to: **Care services \> All customers \> Invoice\> Billing Schedule**
 
 1.  Select the fee to be drawn down from the accommodation payment lumpsum.
 2.  Populate an **\<End date\>** and **\<Bill to date\>** for the day before the lumpsum receipt.
@@ -759,7 +759,7 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 -   The client may decide to change the payment method (e.g. from Lumpsum to Combination or from DAP/DAC to Combination etc)
 -   These adjustments are managed by adding a new accommodation payment line with the effective date and new values.
 
-**Path: Care services \> All customers \> Invoice\> Accommodation payment**
+Navigate to: **Care services \> All customers \> Invoice\> Accommodation payment**
 
 1.  Populate the relevant **end date** on the current accommodation payment line.
 2.  Click on **\<Add line\>** to add a new line.
@@ -772,7 +772,7 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 
 ### Accommodation payment billing proposal
 
-**Path: Care services \> Billing \> Journals \> Billing Journals**
+Navigate to: **Care services \> Billing \> Journals \> Billing Journals**
 
 1.  Click on **\<New\>** to create a new billing journal.
 2.  Select the **relevant billing journal** from the drop-down menu.
@@ -805,7 +805,7 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 -   If the reason for leaving is deceased, then the base rate is used until the Probate/Admin letter is received. The Probate/Admin letter date is populated in the client service entry when the letter is received.
 -   The MPIR will be applicable 14 days after the Probate/Admin letter date.
 
-**Path: Care services \> Billing \> Journals \> Billing Journals**
+Navigate to: **Care services \> Billing \> Journals \> Billing Journals**
 
 1.  Click on \<New\> to create a new billing journal.
 2.  Select the **relevant billing journal** from the drop-down menu.
@@ -833,7 +833,7 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 -   In addition to the accommodation charges in retirement villages, the client can also be charged Deferred Management Fees (DMF) and Capital Refurbishment fees (CRF).
 -   These can only be defined for the Accommodation payment status “Ingoing contribution”.
 
-**Path: Care services \> Billing \> Journals \> Billing Journals**
+Navigate to: **Care services \> Billing \> Journals \> Billing Journals**
 
 1.  Click on \<New\> to create a new billing journal.
 2.  Select the relevant billing journal from the drop-down menu.
@@ -865,7 +865,7 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 
 ### Collection letters – Residential Care services
 
-**Path: Credit and collections\> Collection letter**
+Navigate to: Credit and collections\> Collection letter**
 
 1.  Select **‘Create Residential care collection letters’**.
 2.  Populate the collection letter date.
@@ -884,7 +884,7 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 
 ### Collection letters – Community care
 
-**Path: Credit and collections\> Collection letter**
+Navigate to: Credit and collections\> Collection letter**
 
 1.  Select **‘Create community care collection letters’**.
 2.  Populate the collection letter date.
@@ -909,7 +909,7 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 
 ### Accommodation payment lumpsum receipt
 
-**Path: Care services \> Journals\> Receipt journal**
+Navigate to: **Care services \> Journals\> Receipt journal**
 
 1.  Click on **\<New\>** to create a new receipt journal.
 2.  Select the **relevant lumpsum receipt journal** from the drop-down menu.
@@ -930,7 +930,7 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 
 ### Manual receipt
 
-**Path: Care services \> Journals\> Receipt journal**
+Navigate to: **Care services \> Journals\> Receipt journal**
 
 1.  Click on **\<New\>** to create a new receipt journal.
 2.  Select the **relevant receipt journal** from the drop-down menu.
@@ -953,7 +953,7 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 -   Clients can request pre-set direct debit amount where the pre-set amount is always proposed.
 -   The bank account and method of payment must be setup.
 
-**Path: Care services \> All customers**
+Navigate to: **Care services \> All customers**
 
 1.  Click on **\<Account\>** to open the customer form.
 2.  Click on **\<Edit\>**
@@ -972,7 +972,7 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 -   Ensure the clients’ method of payment and bank accounts have been setup.
 -   Setup the direct debit limits or Pre-set direct debit amounts.
 
-**Path: Care services \> Journals\> Receipt journal**
+Navigate to: **Care services \> Journals\> Receipt journal**
 
 1.  Click on **\<New\>** to create a new receipt journal.
 2.  Select the **relevant receipt journal** from the drop-down menu.
@@ -1003,7 +1003,7 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 
 ### Generate funding claims
 
-**Path: Care services \> Funding \> Generate Funding Claims**
+Navigate to: **Care services \> Funding \> Generate Funding Claims**
 
 1.  Populate the End date.
 2.  Click on **\<Filter\>**
@@ -1018,7 +1018,7 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 
 ### Generate funding claim form
 
-**Path: Care services \> Funding \> Funding Claim form**
+Navigate to: **Care services \> Funding \> Funding Claim form**
 
 1.  Click on **\<New funding claim form\>**
 2.  Select Billing account name.
@@ -1035,7 +1035,7 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 
 ### Generate funding claim form file
 
-**Path: Care services \> Funding \> Funding Claim form**
+Navigate to: **Care services \> Funding \> Funding Claim form**
 
 1.  Select the relevant funding claim form.
 2.  Validate the data on the funding claim form lines.
@@ -1045,11 +1045,11 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 
 ### Generate funding journal
 
-**Path: Care services \> Funding \> Funding Claim form**
+Navigate to: **Care services \> Funding \> Funding Claim form**
 
 **OR**
 
-**Care services \> Funding \> Generate funding journals**
+****Care services \> Funding \> Generate funding journals**
 
 1.  Select the relevant funding claim form.
 2.  Validate the data on the funding claim form lines.
@@ -1065,7 +1065,7 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 
 ### Review and post funding journal
 
-**Path: Care services \> Funding \> Journals \> Funding journal**
+Navigate to: **Care services \> Funding \> Journals \> Funding journal**
 
 1.  Select the relevant funding journal.
 2.  Click on **\<Lines\>**
@@ -1076,7 +1076,7 @@ Clients may request fees billed in advance to be drawn down from the accommodati
 
 Payment statements must be downloaded from PRODA Care services Online Services (in a CSV format)
 
-**Path: Care services \> Funding \> Funding claim payment statement**
+Navigate to: **Care services \> Funding \> Funding claim payment statement**
 
 1.  Click on **\<New\>**
 2.  Select **\<Billing account name\>**
@@ -1093,7 +1093,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 
 ### Funding reconciliation
 
-**Path: Care services \> Funding \> Funding reconciliation**
+Navigate to: **Care services \> Funding \> Funding reconciliation**
 
 1.  Click on **\<New\>**
 2.  Select **\<Billing account name\>**
@@ -1131,7 +1131,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 
 ### Review and post Funding reconciliation journal
 
-**Path: Care services \> Funding \> Journals \> Funding reconciliation journal**
+Navigate to: **Care services \> Funding \> Journals \> Funding reconciliation journal**
 
 1.  Select the relevant journal.
 2.  Click on **\<Lines\>**
@@ -1151,7 +1151,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 
 ### Refund of fees
 
-**Path: Care services \> All customers \> Collect \> Client refund proposal**
+Navigate to: **Care services \> All customers \> Collect \> Client refund proposal**
 
 1.  Select ‘Partial refund’ in the Refund type and click \<Ok\>
 2.  Select the credit invoice(s) by ticking the ‘Mark’ check box
@@ -1162,7 +1162,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 
 ### Bed transfer – transfer within the same facility (service)
 
-**Path: Care services \> All customers \> Care services \> Service entries**
+Navigate to: **Care services \> All customers \> **Care services \> Service entries**
 
 1.  Open the service entry the resident is departing from.
 2.  Navigate to the **Transfer** section.
@@ -1203,7 +1203,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 
 ### Transfer to another facility (service)
 
-**Path: Care services \> All customers \> Care services \> Service entries**
+Navigate to: **Care services \> All customers \> **Care services \> Service entries**
 
 1.  Open the service entry the resident is departing from.
 2.  Populate **\<Departure Date\>**
@@ -1233,7 +1233,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 21. Navigate to the automatically created billing journal
 22. Review the details, then validate and post the journal
 23. The balance has now been transferred to the resident vendor account
-24. Go to **Care services \> Billing\> Billing Journals**
+24. Go to ****Care services \> Billing\> Billing Journals**
 25. Create a new Accommodation Payment Lumpsum invoice billing journal.
 26. Populate Date, Client account and Billing account name for the accommodation payment.
 27. Populate Service code for the **new facility.**
@@ -1242,7 +1242,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 30. Populate start and end dates.
 31. Populate the agreed lumpsum amount.
 32. Validate and post the journal.
-33. Go to **Care services \> Journals \> Receipt journal** and create a new **Lumpsum receipt** journal.
+33. Go to ****Care services \> Journals \> Receipt journal** and create a new **Lumpsum receipt** journal.
 34. Populate the date, client account and description.
 35. Select the service code for the **new facility** and **billing account name** for the accommodation payment.
 36. Select the **new accommodation payment ID.**
@@ -1253,7 +1253,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 
 ### Departures
 
-**Path: Care services \> All customers \> Care services \> Service entries**
+Navigate to: **Care services \> All customers \> **Care services \> Service entries**
 
 1.  Open the service entry the resident is departing from.
 2.  Populate **\<Departure Date\>**
@@ -1263,7 +1263,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 6.  When the probate has been received, populate the **Probate/Admin letter** date.
 7.  Click on **\<Save\>** and close the form.
 8.  Propose the interest payable in the Billing journal (refer to the billing journal section for more information)
-9.  Go to **Care services \> All Customers \> Invoice \> Accommodation Payments**
+9.  Go to ****Care services \> All Customers \> Invoice \> Accommodation Payments**
 10. Run the **‘Accommodation payment calculation’** to ensure all balances are updated.
 11. **Refund via All Customers\> Collect\> Client refund proposal:**
 12. Select the accommodation payment id
@@ -1276,7 +1276,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 
 ### Process the refund in a Vendor payment journal
 
-**Path:** **Accounts payable \> Payments\> Vendor payment journal**
+Navigate to:** **Accounts payable \> Payments\> Vendor payment journal**
 
 1.  Click on \<New\> to create a new journal, select the Name and click on Lines to open the journal
 2.  Select the vendor account
@@ -1299,26 +1299,26 @@ This process will:
 \- allow the Interest payable to be generated on the new accommodation payment and   
 \- allow the new accommodation payment to be refunded when ready.
 
-**Path: Care services \> All customers \> Care services \> Service entries**
+Navigate to: **Care services \> All customers \> **Care services \> Service entries**
 
 1.  Click on \<New\> to create a new service entry
 2.  Populate the same details as the original service entry, use the departure date from the original service entry to populate the entry, billing end date and departure date (overlaps are not allowed so the original entry date can’t be used for this purpose)
 
-**Path:** **Care services \> All customers \> Invoices \> Accommodation payments**
+Navigate to:** ****Care services \> All customers \> Invoices \> Accommodation payments**
 
 1.  Select the new accommodation payment header
 2.  Click on \<Add line\>
 3.  Populate the End date
 4.  Add the refundable balance in the agreed amount
 
-**Path:** **Care services \>Journals \> Billing journal**
+Navigate to:** ****Care services \>Journals \> Billing journal**
 
 1.  Create a new lumpsum billing journal then click on \<Lines\>
 2.  Populate the departure date in the ‘Date’ , ‘Start date’ and ‘End date’ fields, select the customer and the **new** accommodation payment id
 3.  Populate the refundable balance in the Rate field
 4.  Validate and post the journal
 
-**Path:** **Care services \>Journals \> Receipt journal**
+Navigate to:** ****Care services \>Journals \> Receipt journal**
 
 1.  Create a new lumpsum receipt journal then click on \<Lines\>
 2.  Populate the departure date in the ‘Date’, ‘Start date’ and ‘End date’ fields, select the customer
@@ -1333,19 +1333,19 @@ This process will:
 
 ### Daily client revenue
 
-**Path: Care services \> inquiries and reports \> Daily client revenue**
+Navigate to: **Care services \> inquiries and reports \> Daily client revenue**
 
 Generate the enquiry to view a summary of the total daily client revenue from the billing schedule, funding schedule, accommodation payment revenue and DMF revenue.
 
 ### In progress billing list
 
-**Path: Care services \> inquiries and reports \> In progress billing list**
+Navigate to: **Care services \> inquiries and reports \> In progress billing list**
 
 Generate the enquiry for a list of customer billing transactions that have not yet been posted.
 
 ### Service concessional/supported daily ratio
 
-**Path: Care services \> inquiries and reports \> Service concessional/supported daily ratio**
+Navigate to: **Care services \> inquiries and reports \> Service concessional/supported daily ratio**
 
 The concessional supported ratios will be updated via the periodic Concessional/Supported ratio calculation job. The form displays the Service number, Threshold, discount (the % reduction of the accommodation supplement) and the actual ratio for each service (facility)
 
