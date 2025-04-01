@@ -35,6 +35,7 @@ The following is a summary of data entities available for the Care Services modu
 
 **Order**| **Entity**                      | **Description**	                                                                                        | **Dependency**
 :-----   |:------------------------        |:-------------------                                                                                      |:------------------------
+
 0 |Care services accommodation payment|Care services accommodation payment|
 0 |Care services accommodation payment interest rate lines|Care services accommodation payment interest rate lines|
 0 |Care services accommodation payment interest rates|Care services accommodation payment interest rates|
