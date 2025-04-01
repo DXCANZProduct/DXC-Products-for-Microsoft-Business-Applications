@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Introduction to Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-18
+ms.date: 2025-04-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,7 +47,9 @@ Determine if users are utilising their assigned licenses effectively by fetching
 
 ### Demonstration
 
-Watch DXC Technology’s short demonstration on Security Insights for D365 FO solution [here](https://dynamics.dxc.technology/microsoft-dynamics-365/security-insights-for-microsoft-dynamics-365-fo-solution-to-optimise-your-user-licensing)
+Watch DXC Technology’s short demonstration on Security Insights for D365 FO solution here:
+- [First release](https://dynamics.dxc.technology/microsoft-dynamics-365/security-insights-for-microsoft-dynamics-365-fo-solution-to-optimise-your-user-licensing)
+- [Second release](https://www.youtube.com/watch?v=dSfv-7XYCTI&list=PLIM01nS-jtL-D-wvUbmncSwy3PYjLuig5&index=2)
 
 ## New ideas
 Have a suggestion for a new product or a new feature for an existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
