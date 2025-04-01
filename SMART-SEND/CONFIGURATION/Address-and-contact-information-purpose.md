@@ -4,7 +4,7 @@
 title: Smart Send
 description: Smart Send - Address and contact information purpose
 author: Liam Coll
-manager: Kym Parker
+Manager: Pontus Ek
 ms.date: 2021-07-29
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  LogisticsLocationRole
 audience: Application User
 # ms.devlang: 
-ms.reviewer: Liam Coll
+ms.reviewer: Peter Musumeci
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
