@@ -49,7 +49,7 @@ Determine if users are utilising their assigned licenses effectively by fetching
 
 Watch DXC Technology’s short demonstration on Security Insights for D365 FO solution here:
 - [First release](https://dynamics.dxc.technology/microsoft-dynamics-365/security-insights-for-microsoft-dynamics-365-fo-solution-to-optimise-your-user-licensing)
-- [Second release](https://www.youtube.com/watch?v=dSfv-7XYCTI&list=PLIM01nS-jtL-D-wvUbmncSwy3PYjLuig5&index=2)
+- [Second release](https://dynamics.dxc.technology/webinars/security-insights-for-d365fo)
 
 ## New ideas
 Have a suggestion for a new product or a new feature for an existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
