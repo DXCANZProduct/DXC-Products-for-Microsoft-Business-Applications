@@ -39,9 +39,9 @@ The main reasons this would occur:
 
 **Can I use images in the email body?**
 
-Yes. Although this feature is standard Dynamics 365 email functionality not Smart Send specific. However, to achieve this the image must be converted using a base64 encoder to convert the image into html.
+Yes. Although this feature is standard Dynamics 365 email functionality not Smart Send specific. However, to achieve this the image must be converted into html.
 
-**Why are the token placeholders used in the filename not the same as Dynamics 365 field?**
+**Why are the token placeholders used in the filename not the same as the Dynamics 365 field?**
 
 Placeholder tokens can contain invalid characters being inserted in a filename and therefore Smart Send is unable to create the file. A standard function "GetInvalidFileNameChars" is used to find and replace invalid characters with spaces.
 
@@ -55,6 +55,13 @@ From the Recipient drop-down menu in Email Parameters, simply select "Specific" 
 **My company logo stored in FinOps will not render in emails anymore.**
 Many mail clients such as Outlook and most webmail services do not support the rendering of Base64 images anymore.  For this reason, we recommend moving away from Base64 images and pulling from an online link, such as Blob storage.  An Example could be in the below format
 <img src="https://yourblobstorageaccount.blob.core.windows.net/imagelocation.png" width="200" height="200" alt="logoImage"/>
+
+If you are using Blob storage you can obtain the URL of the image by selecting "properties"
+![Blob_Storage_properties](IMAGES/Blob_Storage_properties.png)
+
+and paste the value in the *URL* field into the quotation marks after *img src=* in the provided example above and this will create your link. 
+
+![Azure_URL](IMAGES/Azure_URL.png)
 
 ### Blob Storage Errors
 
