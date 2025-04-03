@@ -188,7 +188,7 @@ A client’s service entry tells us about the client’s journey within the orga
 11. Initial & Departure capacity – This is for STRC clients, enter the initial capacity score at the time of entry
 12. Acer required – set to yes if a Care Services entry record is required to be generated for uploading to the Care Services portal
 13. Departure event required - set to yes if a Care Services departure event record is required to be generated for uploading to the Care Services portal when the client departs
-14. Click on **Save** to admit the client.  
+14. Click on **Save** to admit the client. 
     Place address transfer – if the prospect options in D365 are used for waitlist purposes prior to a client entering the service and the service record has place address transfer enabled this feature will automatically update the client address on their customer record to the address of the place they are now entering.
 15. The room (place) address will automatically be generated as the primary address for the resident with the purpose = Home. This purpose is set up in the Care services parameters so will default to whatever the organisation has selected there. This default can be edited.
 16. The previous home address from when they were on the waitlist will be retained, however, the purpose type will be changed to ‘Other’. This purpose is set up in the Care services parameters so will default to whatever the organisation has selected there. This default can be edited.
