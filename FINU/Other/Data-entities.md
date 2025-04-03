@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities setup - Data Entities 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-21
+ms.date: 2025-04-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -74,6 +74,24 @@ Bank statement format entities are a combination of Finance utilities entities a
 4         | **Line codes format**               | Finance utilities                         | - 
 
 > Note: If comma is used in **Field delimiter** on the **Bank statement format**, set SAB_FINFIELDDELIMITER **Text qualifier** to _Yes_ in Mapping details.
+
+# Electronic reporting export
+
+### Electronic reporting export connections
+Organisation administration > Electronic reporting > Electronic reporting export connections
+
+**Order** | **Entity**                            
+:--       |:--
+1 | **Electronic reporting Azure blob connection settings**  
+1 | **Electronic reporting FTP connection settings**
+1 | **Electronic reporting SFTP connection settings**
+
+
+### Document types
+
+**Order** | **Entity**                          | **Standard / Finance <br> utilities entity**   | **Additional Finance utilities fields for standard entity** 
+:--       |:--  |:--  |:--
+1         | **Document types**           | Standard                                  |  • Electronic reporting export connection (DFUGEREXPORTCONNECTION)
 
 
 # Accounts payable
