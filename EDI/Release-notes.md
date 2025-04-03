@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-28
+ms.date: 2025-04-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -59,9 +59,21 @@ Release notes for other models included in product:
 		• Credential type: Key Vault <br>
 		• Key vault: Secret setup in step 2
 
-# Next version
+# Current version
 
-### Release 10.0.40.2025TBD
+### Release 10.0.42.20250403
+
+DXC EDI 10.0.42 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
+Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
+
+
+#### Build 10.0.42.202504031
+Release date: 3 April 2025
+
 
 <ins>New features</ins>
 
@@ -73,6 +85,8 @@ Number	| Name		 | Description
 21729	| • Customer purchase order acknowledgement (POA) <br> • Customer advanced shipping notice (ASN) <br> • Sales invoice | Added line field **SKU** from EDI Customer purchase order lines to all outbound documents. Also added to Sales order Line details, EDI tab.
 21714	| • Customer advanced shipping notice (ASN) <br> • Sales invoice | Added field **Order line number** to staging lines. Source is EDI Customer purchase order line's 'Line number', and for non-EDI sales orders it will populate with same value as ASN and Invoice's 'Line number document'.
 21849	| • Customer advanced shipping notice (ASN) <br> • Sales invoice | Added header field **Buyer code** from EDI Customer purchase order header.
+21887	| • Customer Trading partner <br> • Customer purchase order	| Added new field **Buyer code** to Customer trading partner. Where **Buyer code** is blank in Customer purchase order header staging record, it will use the Buyer code from the Trading partner on the Sales order header, EDI section. And subsequently on all outbound customer documents.
+
 
 **Standard formats module**	
 
@@ -90,18 +104,11 @@ Number	| Name		 | Description
 21725	| • Customer advanced shipping notice (ASN) <br> • Sales invoice | Use **Company GLN** from Customer purchase order staging record. For non EDI sales orders or consolidated packing slips, use the **Company GLN** from the Trading partner setup.
 
 
-# Current version
+# Previous version(s)
+
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.40.20250221
-
-DXC EDI 10.0.40 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-Microsoft Dynamics 365 application	| 10.0.41 	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
-Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
-Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 
 
 #### Build 10.0.40.202502211
@@ -146,9 +153,6 @@ Number	| Name		 | Description
 
 
 
-# Previous version(s)
-
-Approximately one year of previous versions are included below.
 
 ### Release 10.0.40.20241204
 
