@@ -88,6 +88,7 @@ Organisation administration > Electronic reporting > Electronic reporting export
 
 
 ### Document types
+Organisation administration > Document management > Document types
 
 **Order** | **Entity**                          | **Standard / Finance <br> utilities entity**   | **Additional Finance utilities fields for standard entity** 
 :--       |:--  |:--  |:--
