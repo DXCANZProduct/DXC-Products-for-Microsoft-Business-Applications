@@ -27,36 +27,34 @@ ms.search.validFrom: 2025-03-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# DXC Care services
 
-# Customer and Client Management
+# Care services - Customer and Client Management
 -   Client admissions, departures, and transfers are managed using the client service entry details.
 -   Clients can have multiple contacts including address, contact details and relationship type(s).
--   The financial setup includes Customer bank account, the preferred method of payment, billing, accommodation payment and funding.
+-   The financial setup includes Customer bank account, the preferred payment method, billing, accommodation payment and funding.
 -   Customer organisations such as NDIS Plan Manager or DVA (Department of Veteran’s Affairs) are set up for third-party billing.
 
-### 
 
-### Add a new Organisation Customer for third-party billing
 
+## New Organisation Customer (for third-party billing)
 Customer organisations such as an NDIS Plan Manager or DVA (Department of Veteran’s Affairs) are set up for third-party billing. Organisations cannot have a service entry.<br>
 
-Navigate to: **Care services \> All customers**
-1.  Click on **\<New\>**
-2.  **Type** - Select **‘Organisation’** from the Type
+Navigate to: **Care services > All customers**
+1.  Click on **New**
+2.  **Type** - Select **Organisation** from the Type
 3.  Name - Populate the organisation name.
 4.  **Customer group** - Select the relevant customer group.
 5.  **Terms of payment** – Enter the organisation’s payment terms
-6.  **ABN** – Enter the ABN if an ABN record has been created in D365 for this organisation otherwise it can be entered later  
+6.  **ABN** – Enter the ABN,  if an ABN record has been created in D365 for this organisation otherwise it can be entered later  
     **Address Tab**
-7.  **Add or Edit addresses** – Select Add or Edit as required and a pop-up window will be displayed. Multiple addresses can be stored for each organisation customer with different purposes.
-8.  **Name or Description** – This does not print when an address is used in reports, invoices or statements etc. Enter a name to be associated with this address or a description of the type of address it is such as Office address, Postal address etc. The purpose can also be used for this type of function
+7.  **Add or Edit addresses**—Select Add or Edit as required, and a pop-up window will be displayed. Multiple addresses can be stored for each organisation's customer for different purposes.
+8.  **Name or Description** – This does not print when an address is used in reports, invoices, statements etc. Enter a name to be associated with this address or a description of the type of address it is such as Office address, Postal address etc. The purpose can also be used for this type of function
 9.  **Purpose** – Select the purpose(s) for the address. The purpose is a field that can be customised by any organisation so that tailored purposes can be created to suit the organisation’s needs so ensure you select the purpose based on what that address should be used for. Eg. Invoice is the purpose that is usually used for the address that should appear on the invoice, Statement might also be used if this has a separate address
 10. **Address fields** – Enter the address into the appropriate fields. City and postcode verification is available.
 11. **Primary** – Select if this is to be the main address for the organisation customer, only can be the 1 Primary address  
     **Contact information tab**
 12. **Add Phone or Email address** – select **Add** and a new line will appear in the grid  
-    **Description** - Enter a description of the contact is such as Care Co-ordinator, Accounts payable or anything that is useful  
+    **Description** - Enter a description of the contact such as Care Co-ordinator, Accounts payable or anything useful/recognisable.   
     **Type** - Select the Type, phone or email etc.  
     **Contact number/address** - Enter the phone number or email address etc.  
     **Primary** – Tick if this is the primary record for that Contact Type. There can only be one Primary for each Type of contact, ie. You can add multiple phone numbers however only 1 can be primary, but a customer can have both a primary email and a primary phone etc.
@@ -64,13 +62,13 @@ Navigate to: **Care services \> All customers**
     **Payment defaults tab**
 14. **Terms of payment** – Select the terms of payment for this customer record
 15. **Method of payment** – Select the method of payment. If the method of payment is a direct debit method ensure that the bank account is also setup.
-16. Click **\<Save\>** to add the new customer.
+16. Click **Save** to add the new customer.
 
-### Add a new client
+## Add a new client
 
-Navigate to: **Care services \> All customers**
+Navigate to: **Care services > All customers**
 
-1.  Click on **\<New\>** and a pop-up window will be displayed for entering the customer details
+1.  Click on **New** and a pop-up window will be displayed for entering the customer details
 2.  **Type** - Select **‘Person’** for anyone who will be receiving services
 3.  **First name** - Enter the first name.
 4.  **Middle name** – Optional to enter the Middle name
@@ -78,60 +76,62 @@ Navigate to: **Care services \> All customers**
 6.  **Customer group** - Select the relevant customer group for this client. This can be edited later if a customer’s service provision changes
 7.  **Terms of payment** – Enter the client’s payment terms
 8.  **Address** – Enter the address for the client’s invoices to be sent to if they are responsible for paying any bills. Other Addresses can be added after the customer account has been created.
-9.  **Contact information** – Enter the contact information, telephone and email, for the client or for the nominated account receiver. Other Contact information can be added after the customer account has been created.
-10. Click **\<Save\>** to add the new client.
+9.  **Contact information** – Enter the contact information, telephone and email, for the client or the nominated account receiver. Other Contact information can be added after the customer account has been created.
+10. Click **Save** to add the new client.
 11. Click on the new **Customer account id** to open the customer account record.  
     **General Tab**
 12. **Name details** – Add any titles and Known as (Preferred name)
 13. **Personal information** - Enter any other details such as gender, birth date and marital status.
 14. **Care services** – Select the customer’s statement preference (Mail or Email) and  
-    if they prefer a different name on their statements, eg. Instead oj James Smith it might be preferred to have Mr & Mrs Smith, enter this in the Customer statement name. This is most commonly used for independent living and   
+    if they prefer a different name on their statements, eg. Instead of James Smith it might be preferred to have Mr & Mrs Smith, enter this in the Customer statement name. This is most commonly used for independent living and   
     Select the Carer status if that is relevant to the client
 15. **HCP** - Set to yes if the client has a home care package and requires the Home care unspent amount to be calculated by the system  
     **Address Tab**
 16. **Add or Edit addresses** – Select Add or Edit as required and a pop-up window will be displayed. Multiple addresses can be stored for each client with different purposes.
-17. **Name or Description** – This does not print when an address is used in reports, invoices or statements etc. Enter a name to be associated with this address or a description of the type of address it is such as Home address, service delivery address, carer address etc. The purpose can also be used for this type of function
+17. **Name or Description** – This does not print when an address is used in reports, invoices, statements etc. Enter a name to be associated with this address or a description of the type of address it is such as Home address, service delivery address, carer address etc. The purpose can also be used for this type of function
 18. **Purpose** – Select the purpose(s) for the address. The purpose is a field that can be customised by any organisation so that tailored purposes can be created to suit the organisation’s needs so ensure you select the purpose based on what that address should be used for. Eg. Invoice is the purpose that is usually used for the address that should appear on the invoice, Service or Home might be used for clients who receive home care services to show which address is used by the client when they receive services
 19. **Address fields** – Enter the address into the appropriate fields. City and postcode verification is available.
 20. **Primary** – Select if this is expected to be the main address for the client. Each client can have only 1 Primary address  
     **Contact information**
 21. **Add Phone or Email address** – select **Add** and a new line will appear in the grid  
-    **Description** - Enter a description of the contact is such as Daughter – Susan or anything that is useful  
+    **Description** - Enter a description of the contact such as Care Co-ordinator, Accounts payable or anything useful/recognisable.  
     **Type** - Select the Type, phone or email etc.  
     **Contact number/address** - Enter the phone number or email address etc.  
     **Primary** – Tick if this is the primary record for that Contact Type. There can only be one Primary for each Type of contact, ie. You can add multiple phone numbers however only 1 can be primary, but a customer can have both a primary email and a primary phone etc.
-22. **Add Purpose to contact information** – Select the record the purpose is to be added to, then select **Advanced** and a popup window will be displayed. Select the required Purpose(s) and select **\<OK\>**  
+22. **Add Purpose to contact information** – Select the record the purpose is to be added to, then select **Advanced** and a popup window will be displayed. Select the required Purpose(s) and select **OK**  
     **Payment defaults**
 23. **Terms of payment** – Select the terms of payment for this customer record
 24. **Method of payment** – Select the method of payment. If the method of payment is a direct debit method ensure that the bank account is also setup.
 25. **Direct debit limit** – If there is a maximum amount for the customer to have debited from their account enter that amount in here.
 26. **Enable Pre-set direct debit amount** – Set to Yes if a set amount is to be debited from the customer’s account even if they don’t owe that much. This functionality is generally used for clients who want a set amount taken out of their account every pension day so it is a consistent amount every fortnight throughout the year. If this functionality is to be used also enter the set amount in the **Pre-set direct debit amount.**
 
-### Client Bank account and method of payment
+## Client Bank account and method of payment
 
-Navigate to: **Care services \> All customers \> Customer**
+Navigate to: **Care services > All customers > Customer**
 
 -   Customers can have multiple bank accounts however only one can be set up as a direct debit bank account at a time.
 -   When transactions are generated, they are tagged with the method of payment and bank account selected on the customer account at the time.
 -   If a customer changes their bank account, then the existing bank account record can be edited. The bank account record name will remain the same, so the new BSB and account number will be used when generating the ABA file. Note that using this method, historical bank records will not be available for the customer
--   If a new bank account record is created and then selected on the customer record, then only new transactions will be tagged with that bank account. Any existing transactions will still be tagged with the original bank account and payment method. There is a process in the direct debit processing to update the bank account and the payment method for the existing transactions, however,r these differences in the updating of the bank account records should be considered when deciding which update method to use.
+-   If a new bank account record is created and then selected on the customer record, then only new transactions will be tagged with that bank account. Any existing transactions will still be tagged with the original bank account and payment method. There is a process in the direct debit processing to update the bank account and the payment method for the existing transactions, however, these differences in the updating of the bank account records should be considered when deciding which update method to use.
+
+
 1.  Select the client the bank account is being set up for
-2.  Select **Setup \> Bank accounts** from the ribbon at the top.
-3.  Click **\<New\>**
+2.  Select **Setup > Bank accounts** from the ribbon at the top.
+3.  Click **New**
 4.  **Bank account**  - Enter a code for the bank account eg. BANK, MAIN, FIRST etc.
 5.  **Name** – Enter the bank account name
 6.  **Bank account number** – Enter the bank account number
 7.  **BSB number** – Enter the BSB number
-8.  Click on **\<Save\>** to save the bank account details.
-9.  Open the client details to select the relevant bank account in Customer\> Payment defaults \> Bank account.
-10. Select the preferred method of payment in Customer \>Payment defaults \> Method of payment.
+8.  Click on **Save** to save the bank account details.
+9.  Open the client details to select the relevant bank account in **Customer > Payment defaults > Bank account**
+10. Select the preferred method of payment in **Customer > Payment defaults > Method of payment**
 
-### Client Contacts
+## Client Contacts
 
-Navigate to: **Care services \> All customers \> Customer\> Contacts**
+Navigate to: **Care services > All customers > Customer > Contacts**
 
-1.  Select **\<View contacts\>** if you want to view or edit the existing contacts
-2.  To add a new contact select **\<Add contacts\>**
+1.  Select **View contacts** if you want to view or edit the existing contacts
+2.  To add a new contact select **Add contacts**
 3.  Populate the relevant name details and any other details under the General tab  
     **Contact additional information tab**
 4.  **Contact type** - Select all of the relevant contact types (e.g., wife, next-of-kin)
