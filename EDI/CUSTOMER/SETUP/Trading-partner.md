@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Setup - Trading partners
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-29
+ms.date: 2025-04-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,6 +47,9 @@ The following table describes the customer module fields that are available on t
 
 **Field**                          | **Description**               
 :---------                         |:--------
+**Company GLN**                    | Default Company's GLN. This can be overridden on Customer purchase order staging record, to be used on all outbound documents.
+**Trading partner GLN**            | Trading partner's GLN.
+**Buyer code**                     | Company's default Buyer code for the Trading partner. This can be overridden on Customer purchase order staging record, to be used on all outbound documents.
 <ins>**Order**</ins>	             |
 **Customer EDI order types**       |	EDI purchase orders can be received from trading partners with many order types.  The type identifier received can change the way the order is processed within D365. <br> Note: For further information see [Setup purchase order types](CUSTOMER-SETUP/Purchase-order-types.md)
 **Order purpose**                  |	Code identifying the purpose of the document. <br> Note: For further information see [Setup order purpose](CUSTOMER-SETUP/Order-purpose-group.md)
