@@ -39,9 +39,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ### Add a new Organisation Customer for third-party billing
 
-Customer organisations such as an NDIS Plan Manager or DVA (Department of Veteran’s Affairs) are set up for third-party billing. Organisations cannot have a service entry.
-Navigate to: **Care services \> All customers**
+Customer organisations such as an NDIS Plan Manager or DVA (Department of Veteran’s Affairs) are set up for third-party billing. Organisations cannot have a service entry.<br>
 
+Navigate to: **Care services \> All customers**
 1.  Click on **\<New\>**
 2.  **Type** - Select **‘Organisation’** from the Type
 3.  Name - Populate the organisation name.
