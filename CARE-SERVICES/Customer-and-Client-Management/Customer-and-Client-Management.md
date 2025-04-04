@@ -75,15 +75,14 @@ Navigate to: **Care services > All customers**
 5.  **Last name** – Enter the surname or family name
 6.  **Customer group** - Select the relevant customer group for this client. This can be edited later if a customer’s service provision changes
 7.  **Terms of payment** – Enter the client’s payment terms
-8.  **Address** – Enter the address for the client’s invoices to be sent to if they are responsible for paying any bills. Other Addresses can be added after the customer account has been created.
+8.  **Address**—If the client is responsible for paying bills, enter the address to which invoices will be sent. Other Addresses can be added after the customer account has been created.
 9.  **Contact information** – Enter the contact information, telephone and email, for the client or the nominated account receiver. Other Contact information can be added after the customer account has been created.
 10. Click **Save** to add the new client.
 11. Click on the new **Customer account id** to open the customer account record.  
     **General Tab**
 12. **Name details** – Add any titles and Known as (Preferred name)
 13. **Personal information** - Enter any other details such as gender, birth date and marital status.
-14. **Care services** – Select the customer’s statement preference (Mail or Email) and  
-    if they prefer a different name on their statements, eg. Instead of James Smith it might be preferred to have Mr & Mrs Smith, enter this in the Customer statement name. This is most commonly used for independent living and   
+14. **Care services** – Select the customer’s statement preference (Mail or Email). If they prefer a different name on their statements, eg. Instead of James Smith it might be preferred to have Mr & Mrs Smith, enter this in the Customer statement name. This is most commonly used for independent living and   
     Select the Carer status if that is relevant to the client
 15. **HCP** - Set to yes if the client has a home care package and requires the Home care unspent amount to be calculated by the system  
     **Address Tab**
@@ -107,13 +106,12 @@ Navigate to: **Care services > All customers**
 
 ## Client Bank account and method of payment
 
-Navigate to: **Care services > All customers > Customer**
-
 -   Customers can have multiple bank accounts however only one can be set up as a direct debit bank account at a time.
 -   When transactions are generated, they are tagged with the method of payment and bank account selected on the customer account at the time.
 -   If a customer changes their bank account, then the existing bank account record can be edited. The bank account record name will remain the same, so the new BSB and account number will be used when generating the ABA file. Note that using this method, historical bank records will not be available for the customer
 -   If a new bank account record is created and then selected on the customer record, then only new transactions will be tagged with that bank account. Any existing transactions will still be tagged with the original bank account and payment method. There is a process in the direct debit processing to update the bank account and the payment method for the existing transactions, however, these differences in the updating of the bank account records should be considered when deciding which update method to use.
 
+Navigate to: **Care services > All customers > Customer**
 
 1.  Select the client the bank account is being set up for
 2.  Select **Setup > Bank accounts** from the ribbon at the top.
@@ -231,39 +229,39 @@ Navigate to: **Care services  All customers**
 Navigate to: **Care services  All customers  Invoice Setup  Billing schedule/Funding Schedule**
 
 1.  **Review** the automatically generated lines
-2.  **Delete a line** – If there are any lines that do not apply to this client select the line to be deleted then click Mark as created in error. When all unwanted lines have been marked as created in error, tick the view marked in error. The lines that were marked created in error will be displayed, select all lines and click Delete. Untick the View marked in error to return to the billing schedule
+2.  **Delete a line** – If any lines do not apply to this client select the line to be deleted then click Mark as created in error. When all unwanted lines have been marked as created in error, tick the view marked in error. The lines that were marked created in error will be displayed, select all lines and click Delete. Untick the View marked in error to return to the billing schedule
 3.  **Add a Billing schedule line** - Select **New** to add a new line. A new line is created.
-4.  **Service group** - Select relevant Service group. Service groups are setup by the organisation and are designed so that users will see only the billing codes that relate to a particular client. Eg. If an organisation offers a package of services at some of their location only, a service group would be created that included the package and the users would select that service group here.
+4.  **Service group** - Select relevant Service group. Service groups are set up by the organisation and are designed so that users will see only the billing codes that relate to a particular client. Eg. If an organisation offers a package of services at some of their locations only, a service group would be created that includes the package and the users would select that service group here.
 5.  **Billing Code** – select the relevant billing code, only billing codes listed on that service group will be visible.
-6.  **Service code** – Select the service code where the services will be provided from. Eg At a co-located site any fees related to a retirement village would have th retirement village service code, however if the care facility provided Allied Health services on a weekly basis then the service code for that line would be the care facility service code.
-7.  **Start date** – Enter first date that should be billed as the start date.
-8.  **End date** – If the fee is to be charged for a limited time enter the last date to be charged. Eg Special promotion for first 2 weeks get a 50% discount, the discount line would have an end date 2 weeks after the start date.  
+6.  **Service code** – Select the service code where the services will be provided. Eg At a co-located site any fees related to a retirement village would have the retirement village service code, however, if the care facility provided Allied Health services on a weekly basis then the service code for that line would be the care facility service code.
+7.  **Start date** – Enter the first date that should be billed as the start date.
+8.  **End date** – If the fee is to be charged for a limited time enter the last date to be charged. Eg. A special promotion for the first 2 weeks get a 50% discount, and the discount line would have an end date 2 weeks after the start date.  
     **Billing rates**
-9.  **Review** the rates shown on the billing schedule lines, If all of the rates are correct, nothing further is required, however if any lines show \$0.00 or another incorrect rate, select the line that needs the rate altered.
+9.  **Review** the rates shown on the billing schedule lines, If all of the rates are correct, nothing further is required, however, if any lines show \$0.00 or another incorrect rate, select the line that needs the rate altered.
 10. Click on **Billing rates** and a new view will be displayed  
     **Add a new billing rate line**
 11. If there are no lines displayed or if there is only a line with the Valid for is All (this means it is a global rate) but that rate is not what this client is to be charged a new billing rate line will be required
-12. Select **New** to add a client specific rate.
-13. **Valid for** – Valid for should default to Table, this means that this billing rate applies to this client only. If creating a new global rate, a rate that will apply to everyone who doesn’t have their own client specific rate, set the Valid for to All.
+12. Select **New** to add a client-specific rate.
+13. **Valid for** – Valid for should default to Table, this means that this billing rate applies to this client only. If creating a new global rate, a rate that will apply to everyone who doesn’t have their own client-specific rate, set the Valid for to All.
 14. **Client account** – Will default to the client’s account code. This will be blank for global rates so if the ‘Valid for’ is changed to All the client code will be removed..
 15. **Start date** – Enter the Start date for this rate to apply
 16. **End date** – If the rate is to apply for a limited time, enter the last date that this rate will apply. If there is a new rate to be applied after that time then enter a new line with the new rate with the start date 1 day after the end date on the ended line.
-17. **Rate model** – This defaults to Amount and is only changed to Percentage if this rate is to be based on the rate for another billing code. Eg Special promotion for first 12 weeks get a 50% discount on the billing code ‘Extra’. The rate model would be changed to Percentage, the base billing code would be Extra, Rate percent would be -50%. The system will generate a credit for half of the ‘Extra’ billing code rate even if the rate changes during the 12 weeks the system will calculate the correct rate.
+17. **Rate model** – This defaults to Amount and is only changed to Percentage if this rate is to be based on the rate for another billing code. Eg. For a special promotion for the first 12 weeks get a 50% discount on the billing code ‘Extra’. The rate model would be changed to Percentage, the base billing code would be Extra, Rate per cent would be -50%. The system will generate a credit for half of the ‘Extra’ billing code rate even if the rate changes during the 12 weeks the system will calculate the correct rate.
 18. **Rate** – When the rate model is ‘Amount’ enter the rate that applies to this client for this billing code.
 19. Click **Save** and close the billing rates view when done.
 20. **Review** the rates shown on the billing schedule lines, and adjust the billing rates as per above for any that are not as required. Once all of the rates are correct, Click **Save** and close the Billing Schedule form.
 21. If the client has any billing schedule lines that affect the funding such as means tested fees or Hardship, open the Funding Schedule to confirm that the clawback line has been automatically created and the rates are correct.
 
 22. 
-![](media/73fdc47cbf8d77da7d62b8e12e29d173.png)
+![Billing_Schedule](../IMAGES/Billing_Schedule.png)
 
 *Billing Schedule*
 
-![](media/045553ab62e8b43194cde2abafdc884e.png)
+![Billing_Rates](../IMAGES/Billing_Rates.png)
 
 *Billing Rates*
 
-![](media/4d7ed0c550dfde71c67677944025998f.png)
+![Funding_Schedule](../IMAGES/Funding_Schedule.png)
 
 *Funding Schedule*
 
@@ -272,34 +270,34 @@ Navigate to: **Care services  All customers  Invoice Setup  Billing schedule/Fun
 -   Certain fees such as Means Tested Fees have an annual and lifetime cap.
 -   The capping limit thresholds are indexed bi-annually.
 -   The values are updated via the periodic client capping calculation job.
--   The First entry date refers to the date the client first began receiving Commonwealth funded Care services, including home care or care with another provider. This is the day that is used as the anniversary date for the annual capped amounts
+-   The First entry date refers to the date the client first began receiving Commonwealth-funded Care services, including home care or care with another provider. This is the day that is used as the anniversary date for the annual capped amounts
 
 Navigate to: **Care services  All customers  Customer Set up  Capping limits setup**
 
 1.  Click **Edit**
-2.  **Annual capping limits -** select the annual capping limit type that relates to the type of care the client is currently receiving
+2.  **Annual capping limits -** Select the annual capping limit type that relates to the type of care the client is currently receiving
 3.  **Lifetime capping limits –** Select the lifetime limits cap. The Lifetime limit applies to all care types
-4.  **First entry date –** This defaults to the entry date on the oldest funded service entry for ongoing care, respite is not included in determining this date. If the client has been receiving Commonwealth funded ongoing Care services previously, then populate the original date of entry. This date can be edited and will affect the anniversary date and the dates used to calculate the Annual balances.
+4.  **First entry date –** This defaults to the entry date on the oldest funded service entry for ongoing care, respite is not included in determining this date. If the client has been receiving Commonwealth-funded ongoing Care services previously, then populate the original date of entry. This date can be edited and will affect the anniversary date and the dates used to calculate the Annual balances.
 5.  The **first entry date** remains editable, so if the first entry date is not known when the record is originally created, it can be updated at any time. If the date is edited, when the Save button is selected, the dates on the capping lines will be updated. The calculations won’t be updated until the capping calculator is run.
 6.  Click on **Save**
-7.  **Opening balance** - If the client has previously been receiving Commonwealth funded ongoing care and the amount previously paid as been provided enter this amount in the **Opening balance** on the Lifetime line. If the amount is known for how much of that relates to the current Annual lines enter this in the Opening balance for the Annual line.
+7.  **Opening balance** - If the client has previously been receiving Commonwealth-funded ongoing care and the amount previously paid as been provided enter this amount in the **Opening balance** on the Lifetime line. If the amount is known for how much of that relates to the current Annual lines enter this in the Opening balance for the Annual line.
 
-![](media/aa882ea4604403101a8038e0f4f347e7.png)
+![Client_capping](../IMAGES/Client_capping..png)
 
 *Client capping*
 
 ### Client funding schedule
 
 -   The funding schedule allows the user to set a list of fees and charges that occur on a regular basis.
--   Funding claims applicable for all admissions are setup in global schedules and attached to the relevant care types. Upon admission the client’s funding schedule lines will automatically be generated
--   Client specific funding claims such as Oxygen are added to the client funding schedule.
--   Billing codes that have been setup with a funding offset (such as Means Tested Care Fee or Hardship) will automatically generate the funding schedule claw back line or Hardship funding line when the fee is setup. The funding rate is associated with the billing rate with a negative of the rate on the billing schedule. Eg. Means test care fees will have a positive value on the billing schedule and a negative value on the funding schedule line and Hardship will have a negative value on the billing schedule line and a positive value on the funding schedule line.
--   Funding codes that have been setup as Accommodation payment associated (such as Accommodation supplement) will automatically have the rate reduced by the Assessed amount from the Accommodation payment line.
+-   Funding claims applicable for all admissions are set in global schedules and attached to the relevant care types. Upon admission, the client’s funding schedule lines will automatically be generated
+-   Client-specific funding claims such as Oxygen are added to the client funding schedule.
+-   Billing codes that have been set with a funding offset (such as Means Tested Care Fee or Hardship) will automatically generate the funding schedule clawback line or Hardship funding line when the fee is set up. The funding rate is associated with the billing rate with a negative of the rate on the billing schedule. E.g.. This means test care fees will have a positive value on the billing schedule and a negative value on the funding schedule line and Hardship will have a negative value on the billing schedule line and a positive value on the funding schedule line.
+-   Funding codes that have been set up as Accommodation payment associated (such as Accommodation supplement) will automatically have the rate reduced by the Assessed amount from the Accommodation payment line.
 
 Navigate to: **Care services  All customers  Invoice Funding schedule**
 
 1.  **Review** the automatically generated lines
-2.  **Delete a line** – If there are any lines that do not apply to this client select the line to be deleted then click Mark as created in error. When all unwanted lines have been marked as created in error, tick the view marked in error. The lines that were marked created in error will be displayed, select all lines and click Delete. Untick the View marked in error to return to the billing schedule
+2.  **Delete a line** – If any lines do not apply to this client select the line to be deleted then click Mark as created in error. When all unwanted lines have been marked as created in error, tick the view marked in error. The lines that were marked created in error will be displayed, select all lines and click Delete. Untick the View marked in error to return to the billing schedule
 3.  **Add a Billing schedule line** - Select **New** to add a client specific funding schedule line. A new line is created.
 4.  **Service Group** - Select the Service group that relates to this client and care type
 5.  **Funding code** – Select the required funding code
@@ -309,7 +307,7 @@ Navigate to: **Care services  All customers  Invoice Funding schedule**
 9.  **Amount** – System field – this will display the rate that applies on the current day
 10. **Last calculated date** – System field – this will display the last date that has been generated in a funding claim
 
-![](media/4c1a73bd9be32cc72ff0e0781fcbfa39.png)
+![Funding_Schedule2](../IMAGES/Funding_Schedule2.png)
 
 *Funding Schedule*
 
@@ -333,7 +331,7 @@ Navigate to: **Care services  All customers  Invoice Accommodation payment**
 1.  Select **Add line** to add a new line.
 2.  The **Effective date** will automatically populate from the client entry start date.
 3.  Select **Payment method.**
-4.  The **Accommodation cost** will automatically populate from the bed price in the place setup.
+4.  The **Accommodation cost** will automatically populate from the bed price in the place set up.
 5.  The **Max DAP/DAC** is automatically calculated.
 6.  Populate the **Assessed amount** for DAC.
 7.  Populate the **Agreed amount.**
@@ -343,29 +341,29 @@ Navigate to: **Care services  All customers  Invoice Accommodation payment**
 11. The **Ongoing interest forecast** (DAP/DAC amount) will be calculated when running the Accommodation Payment calculation.
 12. The **Billing account name** defaults to the billing account type. Change to the Accommodation Payment account name if the DAP/DAC or unpaid interest is going to be draw down from the lumpsum. If the lumpsum has not been fully or partially paid, the DAP/DAC and unpaid interest will be billed to the client.
 
-![](media/ad21799005be19dc4ca0bcdc67188875.png)
+![Accommodation_Payment](../IMAGES/Accommodation_Payment.png)
 
 *Accommodation Payment*
 
 ### Client ingoing contribution setup
 
-Accommodation payments where the supported/accommodation payment status is Ingoing contribution, will require setup for DMF/CRF
+Accommodation payments where the supported/accommodation payment status is Ingoing contribution will require setup for DMF/CRF
 
 Navigate to: **Care services  All customers  Invoice Accommodation payment**
 
 1.  Select the DMF/CRF tab and populate the DMF/CRF capital gain or capital loss percentage share
 2.  Populate the Agreed amount and select the Billing account name
-3.  Select the DMF/CRF Applicable rates tab
+3.  Select the DMF/CRF Applicable Rates tab
 4.  Add a line and populate From and to Dates, the applicable DMF and CRF rates and codes
 5.  Return to the Overview tab
 6.  Select **Add line** to add a new line.
-7.  Select Payment method, add agreed amount, agreed lumpsum and select the billing account anme
+7.  Select Payment method, add the agreed amount, and agreed lumpsum and select the billing account name
 1.  Billing – Community and Disability Care
--   Services provided for community and disability clients can be imported manually or via integration as billing transactions in Dynamics 365 FO. Once they have been imported they are available to view or edit on the billing transactions view in the same way as any manually entered or system generated billing transactions
+-   Services provided for community and disability clients can be imported manually or via integration as billing transactions in Dynamics 365 FO. Once they have been imported they are available to view or edit on the billing transactions view in the same way as any manually entered or system-generated billing transactions
 -   Billing invoices are generated for billing transactions with the same invoice number or if invoice numbers are not allocated then all of the transactions for a particular client and service code will be grouped into a single invoice
 -   Billing transactions can also be generated from a billing schedule for any regular recurring fees.
 -   The total amount will be generated and posted in a Billing journal.
--   Customer accounts are setup for organisations paying for the client service transactions.
+-   Customer accounts are set up for organisations paying for client service transactions.
 
 ### Generate billing transactions
 
@@ -375,10 +373,10 @@ Navigate to: Care services Billing Generate billing transaction**
 2.  **End date –** Enter the last date to be included in the scheduled billing run, ie. The date you want to bill to.
 3.  Click on **Filter** - Use the filter options (Customer account, service code etc.) to select which clients or billing schedule lines will be included. The system will generate billing transactions for all clients where there are billing schedule lines that meet the filter requirements entered, so ensure that these filters allow the selection of only the billing schedule lines that you want to include.
 4.  Click **OK** when the filters have all been entered
-5.  Click **OK** to start the Generate billing transactions process unless you want to run it in batch processing or setup a recurrence – refer to steps 6 to 10 if this is required.
-6.  *If required, setup the job to run in the background. Select Batch processing to Yes.*
+5.  Click **OK** to start the Generate billing transactions process unless you want to run it in batch processing or set up a recurrence – refer to steps 6 to 10 if this is required.
+6.  *If required, set up the job to run in the background. Select Batch processing to Yes.*
 7.  *Click on* **Recurrence**
-8.  *The default value is for the job to run once (End after: 1) If it is a requirement for the job to run at a regular interval, then setup up the required recurrence pattern.*
+8.  *The default value is for the job to run once (End after: 1) If it is a requirement for the job to run at a regular interval, then set up the required recurrence pattern.*
 9.  *Click* **OK** *to close the Recurrence form.*
 10. *Click* **OK** *to add the job to the batch queue.*
 
@@ -386,7 +384,7 @@ Navigate to: Care services Billing Generate billing transaction**
 
 Navigate to: Care services Billing Billing transactions**
 
-1.  Select **New billing transaction,** a pop up window will be displayed
+1.  Select **New billing transaction,** a pop-up window will be displayed
 2.  **Customer account –** Enter the customer account that is responsible for paying the invoice, this may be the client or a third party.
 3.  **Client account –** Enter the Customer account for the client who received the service or item
 4.  **Billing code –** Enter the Billing code required for the service or item to be billed
@@ -395,15 +393,15 @@ Navigate to: Care services Billing Billing transactions**
 7.  **Rate –** Enter the per quantity rate
 8.  **Quantity –** Enter the quantity to be billed
 9.  **Amount –** The system will calculate the amount based on the rate and quantity
-10. **Description** – The system will auto populate the description from the billing code, it can then be edited. The description is what will appear as the description on the transactions line of the customer invoice.
+10. **Description** – The system will auto-populate the description from the billing code, it can then be edited. The description is what will appear as the description on the transactions line of the customer invoice.
 11. Select **OK** then **Refresh**
 12. Open the billing transaction by clicking on the **Billing transaction id**
-13. **Invoice number –** If this transaction is to be added with other transactions that have a specific invoice number add the invoice number. If this transaction will be invoice on its own or other transactions to be included on an invoice do not include an invoice number (ie. The invoice number will be system generated) leave the invoice number blank.
-14. **Transaction type** – Only Billing and Adjustment are relevant to Community or Disability care. Billing is used for standard transactions, however if a transaction is an adjustment that is related to previous transactions and organisation policy is to identify these separately, the adjustment option can be selected.
+13. **Invoice number –** If this transaction is to be added with other transactions that have a specific invoice number add the invoice number. If this transaction will be invoiced on its own or other transactions to be included on an invoice do not include an invoice number (ie. The invoice number will be system generated) leave the invoice number blank.
+14. **Transaction type** – Only Billing and Adjustment are relevant to Community or Disability care. Billing is used for standard transactions, however,r if a transaction is an adjustment that is related to previous transactions and organisation policy is to identify these separately, the adjustment option can be selected.
 15. **Provided by** – Enter the name of the person who provided the service if this is required
-16. **Billing account name** – The system will default a Billing account name based on the settings, however if this is not correct select the correct Billing account name.
+16. **Billing account name** – The system will default a Billing account name based on the settings, however, if this is not correct select the correct Billing account name.
 17. **External funding code** – Select the external funding code if there is a likelihood that this transaction may later be converted to a funding claim using the Funder switch function
-18. **Service code** – if the client has a service entry this will default to the current service entry, however if there is no service entry or the service was provided by a different service code then this should be entered or edited.
+18. **Service code** – if the client has a service entry this will default to the current service entry, however, if there is no service entry or the service was provided by a different service code then this should be entered or edited.
 19. **Client Reference** – Enter if a client reference number is required for the invoice or other reasons
 20. **Method of payment** – Enter the method of payment only if it is required to be different from any other billing transactions for the customer or from their customer account. Any billing transactions with different Methods of payment will generate separate invoices
 21. **Financial dimensions** – Enter the financial dimensions (cost centres etc.) for the control or debtor account part of the transaction. These do not have to be the same as the Offset dimensions but usually are.
@@ -428,8 +426,8 @@ Navigate to: Care services Billing Billing transactions**
 1.  Only Billing transactions where the document status is **‘Open’** can be edited. Open status means they have not yet been included in a billing invoice.
 2.  Open the billing transaction by clicking on the **Billing transaction id**
 3.  **Billing transaction id –** is not editable
-4.  **Invoice number –** If this transaction is to be added with other transactions that have a specific invoice number add the invoice number. If this transaction will be invoice on its own or other transactions to be included on an invoice do not include an invoice number (ie. The invoice number will be system generated) leave the invoice number blank.
-5.  **Transaction type** – Only Billing and Adjustment are relevant to Community or Disability care. Billing is used for standard transactions, however if a transaction is an adjustment that is related to previous transactions and organisation policy is to identify these separately, the adjustment option can be selected.
+4.  **Invoice number –** If this transaction is to be added with other transactions that have a specific invoice number add the invoice number. If this transaction will be invoiced on its own or other transactions to be included on an invoice do not include an invoice number (ie. The invoice number will be system generated) leave the invoice number blank.
+5.  **Transaction type** – Only Billing and Adjustment are relevant to Community or Disability care. Billing is used for standard transactions, however,r if a transaction is an adjustment that is related to previous transactions and organisation policy is to identify these separately, the adjustment option can be selected.
 6.  **Customer account –** Is not editable. Customer is the customer account that is responsible for paying the invoice, if this is incorrect the billing transaction should be deleted and a new transaction entered.
 7.  **Client account –** Is not editable.  The client is the person who received the service or item, if this is incorrect the billing transaction should be deleted and a new transaction entered.
 8.  **Description** – Edit the description if required. The description is what will appear as the description on the transactions line of the customer invoice.
@@ -437,9 +435,9 @@ Navigate to: Care services Billing Billing transactions**
 10. **Billing account name** – If the Billing account name is incorrect select the correct Billing account name.
 11. **Billing code –** If the billing code is incorrect select the correct Billing code for the service or item to be billed
 12. **External funding code** – Select the external funding code if there is a likelihood that this transaction may later be converted to a funding claim using the Funder switch function
-13. **Service code** – if the client has a service entry this will default to the current service entry, however if there is no service entry or the service was provided by a different service code then this should be entered or edited.
+13. **Service code** – if the client has a service entry this will default to the current service entry, however, if there is no service entry or the service was provided by a different service code then this should be entered or edited.
 14. **Quantity –** If the Quantity is incorrect enter the correct quantity to be billed
-15. **Rate –** If the Rate is incorrect enter the correct per quantity rate
+15. **Rate –** If the Rate is incorrect enter the correct per-quantity rate
 16. **Amount –** The amount is not editable. The system will calculate the amount based on the rate and quantity
 17. **Start date –** If the start date is incorrect enter the correct start date. The Start date is the date the service being billed for started to be provided or if it is an ongoing service enter the first day to be billed, usually the next day after the last date that has previously been billed. eg. If it is overnight accommodation enter the date of arrival here or if it is ongoing accommodation enter the first day to be billed. For items enter the date the item(s) was provided.
 18. **End date –** If the End date is incorrect enter the correct End date. The end date is the date the service being billed for ceased to be provided or the last day to be billed if it is an ongoing service. Eg. If it is overnight accommodation enter the departure date or if it is ongoing accommodation enter the last day to be billed. For items enter the date the item(s) was provided.
@@ -464,9 +462,9 @@ Navigate to: Care services Billing Generate Billing invoices**
 2.  Click on **Filter**
 3.  Specify the required criteria for generating the billing invoice (customer account, service code). The system will generate billing invoices for all clients where there are billing transactions that meet the filter requirements entered, so ensure that these filters allow the selection of only the transactions that you want to include.
 4.  Click **OK**
-5.  *If required, setup the job to run in the background. Select Batch processing to Yes.*
+5.  *If required, set up the job to run in the background. Select Batch processing to Yes.*
 6.  *Click on* **Recurrence**
-7.  *The default value is for the job to run once (End after: 1) If it is a requirement for the job to run at a regular interval, then setup up the required recurrence pattern.*
+7.  *The default value is for the job to run once (End after: 1) If it is a requirement for the job to run at a regular interval, then set up the required recurrence pattern.*
 8.  *Click* **OK** *to close the Recurrence form.*
 9.  *Click* **OK** *to add the job to the batch queue.*
 
@@ -474,7 +472,7 @@ Navigate to: Care services Billing Generate Billing invoices**
 
 Navigate to: Care services Billing Billing invoices**
 
-1.  Billing invoices that have not had a journal raised yet will display on the billing invoice list.
+1.  Billing invoices that have not had a journal raised yet will be displayed on the billing invoice list.
 2.  Select **Show all** to view all billing invoices if required.
 3.  Click on the relevant **Billing invoice id** to view the billing invoice details.
 4.  Click on **Generate billing journals** to generate a billing journal from the relevant invoice.
@@ -482,7 +480,7 @@ Navigate to: Care services Billing Billing invoices**
 
 ### Generate billing journals
 
-Navigate to: Care services BillingGenerate Billing journals**
+Navigate to: Care Services BillingGenerate Billing journals**
 
 1.  Select the Billing journal type from the drop-down menu.
 2.  Click on **Filter**
@@ -499,7 +497,7 @@ Navigate to: Care services BillingGenerate Billing journals**
 Navigate to: Care services BillingJournals Billing journal**
 
 1.  The billing journal list will show journals that have not been posted.
-2.  Select ‘All’ or ‘Posted’ in the ‘Show’ drop down menu to view posted journals if required.
+2.  Select ‘All’ or ‘Posted’ in the ‘Show’ drop-down menu to view posted journals if required.
 3.  Select the ‘Show user-created only’ to show journals you have created.
 4.  Select the relevant journal to review.
 5.  Click on ‘Journal batch number’ or **Lines** to open the billing journal.
@@ -515,7 +513,7 @@ Navigate to: Care services BillingJournals Billing journal**
 
 -   The billing journal proposal end date controls the billing being generated.
 -   If the client has not been billed before, then the billing will be generated from the start day on the billing schedule to the end date on the billing proposal.
--   If the client has been billed before, then there will be a ‘Last run date’ om the billing schedule line. The billing proposal will generate fees from the day after the ‘Last run date’ to the end date on the billing proposal.
+-   If the client has been billed before, then there will be a ‘Last run date’ on the billing schedule line. The billing proposal will generate fees from the day after the ‘Last run date’ to the end date on the billing proposal.
 -   There are multiple billing proposal options:
 
     **Billing journal proposal** – used to generate billing up to a specified date for a specified client(s) or service(s) from the billing schedule lines.
@@ -532,7 +530,7 @@ Navigate to: Care services BillingJournals Billing journal**
 
     **Exceeded leave adjustment proposal** – used to calculate any fees due to leave taken exceeding the Department of Health caps.
 
-![](media/81e1f10f898bc8b79e2100e2a039aabd.png)
+![Billing_Journal_proposal_options](../IMAGES/ABilling_Journal_proposal_options.png)
 
 *Billing Journal proposal options*
 
@@ -552,35 +550,35 @@ Navigate to: **Care services  Billing  Journals  Billing Journals**
 10. Click on **Filter**
 11. Specify the required criteria for generating the billing journals (customer account, Service code, billing code)
 12. Click **OK**
-13. *If required, setup the job to run in the background. Select Batch processing to Yes.*
+13. *If required, set up the job to run in the background. Select Batch processing to Yes.*
 14. *Click on Recurrence*
 15. *The default value is for the job to run once (End after:1) If it is a requirement for the job to run at a regular interval, then setup up the required recurrence pattern.*
 16. *Click OK to close the Recurrence form.*
 17. *Click OK to add the job to the batch queue.*
-18. The relevant lines will propose in the billing journal.
+18. The relevant lines will be proposed in the billing journal.
 
-### Review and post Billing journal
+### Review and post the Billing journal
 
 Navigate to: **Care services  Billing  Journals  Billing Journals**
 
 1.  The billing journal list will show journals that have not been posted.
-2.  Select ‘All’ or ‘Posted’ in the ‘Show’ drop down menu to view posted journals.
+2.  Select ‘All’ or ‘Posted’ in the ‘Show’ drop-down menu to view posted journals.
 3.  Select the ‘Show user-created only’ to show journals you have created.
 4.  Select the relevant journal to review.
 5.  Click on ‘Journal batch number’ or **Lines** to open the billing journal.
 6.  Review the details and then click **Post** to post the journal.
 
-### Third party billing
+### Third-party billing
 
 Navigate to: **Care services  All Customers Invoice  Billing journal schedule**
 
 1.  Select the line for the fee paid by a third party.
-2.  Click on **Billing invoicee**
+2.  Click on **Billing invoice**
 3.  Click on **Edit**
 4.  Select the relevant third party in the customer account (Refer to the Customer Management section for instructions on how to add customers)
 5.  Propose the billing journal. The transactions will be posted to the third-party customer account.
 
-**![](media/a65aa7248ec832cae480a4ec911280fc.png)**
+**![Billing-Invoice–Third-Party](../IMAGES/Billing-Invoice–Third-Party.png)**
 
 *Billing invoice – Third Party*
 
