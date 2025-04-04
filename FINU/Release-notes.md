@@ -82,6 +82,7 @@ Feature	| 10.0.43 Feature state
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
 21612		| Various	| 10.0.43 build issue	| Fix 10.0.43 build issue on **Validate connection** for **API Endpoint** connection type. <br> Microsoft.IdentityModel.Clients.ActiveDirectory has been deprecated and no longer supported by FinOps and needs to be upgraded to now use Microsoft.Identity.Client <br> [Microsoft notice](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#azure-active-directory-authentication-library-adal)
+21732		| Various	| ABN validation	| Incorrect GST registered status where ABN hasn't registered for GST and the ABN has been cancelled - showed GST registered as Cancelled
 
 <ins>New features</ins>
 
