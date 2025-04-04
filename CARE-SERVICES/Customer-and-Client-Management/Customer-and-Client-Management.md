@@ -282,7 +282,7 @@ Navigate to: **Care services  All customers  Customer Set up  Capping limits set
 6.  Click on **Save**
 7.  **Opening balance** - If the client has previously been receiving Commonwealth-funded ongoing care and the amount previously paid as been provided enter this amount in the **Opening balance** on the Lifetime line. If the amount is known for how much of that relates to the current Annual lines enter this in the Opening balance for the Annual line.
 
-![Client_capping](../IMAGES/Client_capping..png)
+![Client_capping](../IMAGES/Client_capping.png)
 
 *Client capping*
 
@@ -530,7 +530,7 @@ Navigate to: Care services BillingJournals Billing journal**
 
     **Exceeded leave adjustment proposal** – used to calculate any fees due to leave taken exceeding the Department of Health caps.
 
-![Billing_Journal_proposal_options](../IMAGES/ABilling_Journal_proposal_options.png)
+![Billing_Journal_proposal_options](../IMAGES/Billing_Journal_proposal_options.png)
 
 *Billing Journal proposal options*
 
