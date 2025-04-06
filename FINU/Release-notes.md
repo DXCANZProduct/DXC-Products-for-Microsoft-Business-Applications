@@ -93,7 +93,9 @@ Number	  	| Module	| Functionality	  	| Description
 20946		| Cash and bank management	| Bank statement periodic import | Where the bank statement has no transactions - now moving the file to archive instead of error folder. Also updated error message to infolog 'No bank statement was created as file contained no transactions'
 17536		| Cash and bank management	| Import bank statement	| New Financial utilities parameters field **Enable date range for custom bank statement formats** controls the **From date** and **To date** inputs on **Import bank statement** for custom bank statement formats. <br> • **No** (default) - From and To date won't be mandatory anymore and automatically calculate the from date as earliest date in file and To date as latest date in the file. Similar to our periodic import job. <br> • **Yes** - From and To date is still mandatory for custom bank statement formats. This is useful where a company only needs to import a certain date range for the particular bank statement.
 17536		| Cash and bank management	| Modern bank reconciliation	| Where the feature 'Modern bank reconciliation' is enabled, the bank statement form has been replaced with a new std form. Similar to Bank statement form with feature disabled, we replaced 'Import bank statement' dialog with Finance Utilities dialog which supports importing Finance Utilities custom formats.  
+21689		| DXC Connections	| New DXC Connections release 10.0.42.202504042. <br> • SFTP connection migrated to DXC Connections model. <br> • Azure blob connection: added ability to use container level shared access signature URI <br> • Upgraded SFTP to latest 2024.2.0 <br> • See [Release notes](../CONNECTIONS/Release-notes.md) for more detail.
 21719		| DXC Encryption	| Various	| New DXC Encryption model release 10.0.42.202503TBD. See below for details.
+
 
 #### DXC Encryption Release 10.0.42.202503TBD
 
