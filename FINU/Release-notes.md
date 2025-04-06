@@ -97,7 +97,7 @@ Number	  	| Module	| Functionality	  	| Description
 21719		| DXC Encryption	| Various	| New DXC Encryption model release 10.0.42.202503TBD. See below for details.
 
 
-#### DXC Encryption Release 10.0.42.202503TBD
+#### DXC Encryption Release 10.0.42.202504041
 
 <ins>New features</ins>
 
