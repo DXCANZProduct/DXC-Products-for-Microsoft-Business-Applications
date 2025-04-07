@@ -44,5 +44,5 @@ Examples where a file would we moved to **Import error path** are discussed in [
 
 To open the **Financial utilities connections** page, go to **Accounts receivable > Payments setup > Financial utilities connections**. Then set the fields as described in the following subsections.
 
-[Setup](../CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md)
+[Financial utilities connection setup](../CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md)
 
