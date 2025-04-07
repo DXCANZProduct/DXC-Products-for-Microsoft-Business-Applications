@@ -575,7 +575,8 @@ prefix{0,7:3,5}postfix	           | Align example with prefix and postfix       
 C4                                 | Currency with 4 decimals	  | 123.45676	                  | $123.4567
 N2	                               | 2 decimals	                  | 123.45676	                  | 123.45
 N0	                               | 0 decimals (for example line number)	| 1.0000000           |	1
-{0,-15}                            | Pad staging field with spaces to total of 15 characters  | ^1234^ | <code>^1234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^</code>
+{0,-10}                            | Pad staging field with spaces to total of 10 characters  | ^1234^ | <code>^1234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^</code>
+XX{0,-8}                           | Pad static value 'XX' with 8 characters    | ^XX^            | <code>^XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^</code>
 F                                  | No thousand separator        | 1,234                         | 1234
 ,##0.00;-#,##0.00;""               | Replace 0 with blank         | ^0^ <br> ^123.45^             | ^^ <br> ^123.45^ 
 
