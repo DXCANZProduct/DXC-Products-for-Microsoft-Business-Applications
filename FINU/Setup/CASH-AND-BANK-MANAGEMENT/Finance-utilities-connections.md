@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Finance utilities connections
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-12-03
+ms.date: 2025-04-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -101,9 +101,10 @@ Field         | Description                         | Example or Options
 :--           |:--                                  |:--
 **Container name**  |	Specify the **import** blob storage container. Folders are not supported	  | integration-import
 **Credential type** |	Select applicable **Credential type** for Azure blob	| •	Key vault <br> •	Database
+**Disable storage account access**  | Ability to use container level shared access signature URI | Value selected in Connection string is: <br> • **Yes** - Azure SAS Container level token <br> • **No** - Azure SAS Storage account level token or Connection string
 **Storage account name**  |	Enter the **Storage account name** where Credential type = **Database**
 **Storage account key**   |	Enter the **Storage account key** where Credential type = **Database**	
-**Connection string**     |	Enabled when Credential type = **Key vault**. <br> Select the applicable **Secret** as setup in **Key vault parameters**. <br> **Azure SAS Storage account level tokens** also supported. 
+**Connection string**     |	Enabled when Credential type = **Key vault**. <br> Select the applicable **Secret** as setup in **Key vault parameters**. <br> Azure SAS Storage account level & Container level tokens are also supported. 
 **Archive container name**  |	Enter the **archive** path where the imported files are to be copied to. Folders are not supported	| integration-archive
 **Search mask**           |	A file mask is used to match files in the Import path	        | Bank123*
 **Error container name**  |	Enter the **error** path where the files that matches the Search mask, but haven’t successfully been imported, are copied to. Folders are not supported. | integration-error
