@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Organization administration - Electronic reporting export connection 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-07
+ms.date: 2025-04-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -94,13 +94,14 @@ These logs can then be used to set **Custom alerts**, for example using error lo
 
 ### Azure blob
 
-|   Field    |   Description   |   Example or Options   |
-|-|-|-|
-| **Container name** |	Specify the blob storage container	||
-| **Credential type** |Select applicable Credential type for Azure blob |	•	Key vault <br> • Database |
-| **Storage account name** |	Enabled when Credential type is set to _Database_	||
-| **Storage account key** |	Enabled when Credential type is set to _Database_	||
-| **Connection string** |	Enabled when Credential type is set to _Key vault_. <br> **Azure SAS Storage account level tokens** also supported.  ||
+Field         | Description                         | Example or Options
+:--           |:--                                  |:--
+**Container name** |	Specify the blob storage container	|
+**Credential type** |Select applicable Credential type for Azure blob |	•	Key vault <br> • Database
+**Disable storage account access**  | Ability to use container level shared access signature URI | Value selected in Connection string is: <br> • **Yes** - Azure SAS Container level token <br> • **No** - Azure SAS Storage account level token or Connection string
+**Storage account name** |	Enabled when Credential type is set to _Database_	| 
+**Storage account key** |	Enabled when Credential type is set to _Database_	| 
+**Connection string** |	Enabled when Credential type = **Key vault**. <br> Select the applicable **Secret** as setup in **Key vault parameters**. <br> Azure SAS Storage account level & Container level tokens are also supported. 
 
 ### SFTP
 
