@@ -27,7 +27,7 @@ ms.search.validFrom: 2025-03-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# Billing – Community and Disability Care
+#Community and Disability Care
 
 -   Services provided for community and disability clients can be imported manually or via integration as billing transactions in Dynamics 365 FO. Once they have been imported they are available to view or edit on the billing transactions view in the same way as any manually entered or system-generated billing transactions
 -   Billing invoices are generated for billing transactions with the same invoice number or if invoice numbers are not allocated then all of the transactions for a particular client and service code will be grouped into a single invoice
