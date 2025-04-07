@@ -40,16 +40,17 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes <br> • 18802 - A
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | DXC Finance Utilities 10.0.40.2024091931 <br> DXC ABN Validation 10.0.40.2024091931 <br> DXC Encryption 10.0.40.202409162
 Product version: 10.0.43 <br> App build: 10.0.2177.18	  | Yes <br> • 21291 - Export file name on vendor payment journal line <br> • 21612 - Build error | DXC Finance Utilities 10.0.40.202501221 <br> DXC ABN Validation 10.0.40.202501221 <br> DXC Encryption 10.0.40.202412121
 
-Release notes for other models included in product:
-- [DXC Connections](../CONNECTIONS/Release-notes.md)
-- [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
-- [DXC License](../LMG/Release-notes.md#dxc-license)
 
 #### Features not yet supported
 
 Feature	| 10.0.43 Feature state
 :--       	|:--		
 **Modern bank reconciliation** | On by default, needs to be manually disabled
+
+Release notes for other models included in product:
+- [DXC Connections](../CONNECTIONS/Release-notes.md)
+- [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
+- [DXC License](../LMG/Release-notes.md#dxc-license)
 
 ### Microsoft deprecation notice
 
