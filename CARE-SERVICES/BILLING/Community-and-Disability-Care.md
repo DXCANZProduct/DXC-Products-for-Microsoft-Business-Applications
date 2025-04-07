@@ -27,7 +27,7 @@ ms.search.validFrom: 2025-03-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-#Community and Disability Care
+# Community and Disability Care
 
 -   Services provided for community and disability clients can be imported manually or via integration as billing transactions in Dynamics 365 FO. Once they have been imported they are available to view or edit on the billing transactions view in the same way as any manually entered or system-generated billing transactions
 -   Billing invoices are generated for billing transactions with the same invoice number or if invoice numbers are not allocated then all of the transactions for a particular client and service code will be grouped into a single invoice
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ### Generate billing transactions
 
-Navigate to: Care services Billing Generate billing transaction**
+Navigate to: **Care services >  Billing > Generate billing transaction**
 
 1.  **Journal posting date –** Enter the posting date for the transaction
 2.  **End date –** Enter the last date to be included in the scheduled billing run, ie. The date you want to bill to.
@@ -50,9 +50,9 @@ Navigate to: Care services Billing Generate billing transaction**
 9.  *Click* **OK** *to close the Recurrence form.*
 10. *Click* **OK** *to add the job to the batch queue.*
 
-### Enter billing transactions
+### Manually Enter billing transactions
 
-Navigate to: Care services Billing Billing transactions**
+Navigate to: **Care services >  Billing > Billing transactions**
 
 1.  Select **New billing transaction,** a pop-up window will be displayed
 2.  **Customer account –** Enter the customer account that is responsible for paying the invoice, this may be the client or a third party.
@@ -79,7 +79,7 @@ Navigate to: Care services Billing Billing transactions**
 
 ### View billing transactions
 
-Navigate to: Care services Billing Billing transactions**
+Navigate to: ** **Care services >  Billing > Billing transactions**
 
 1.  Billing transactions where the document status is **‘Open’** will display. Open status means they have not yet been included in a billing invoice.
 2.  Select **Show all** to view all billing transactions if required.
@@ -91,7 +91,7 @@ Navigate to: Care services Billing Billing transactions**
 
 ### Edit billing transactions
 
-Navigate to: Care services Billing Billing transactions**
+Navigate to: **Care services >  Billing > Billing transactions**
 
 1.  Only Billing transactions where the document status is **‘Open’** can be edited. Open status means they have not yet been included in a billing invoice.
 2.  Open the billing transaction by clicking on the **Billing transaction id**
@@ -118,7 +118,7 @@ Navigate to: Care services Billing Billing transactions**
 
 ### Delete billing transactions
 
-Navigate to: Care services Billing Billing transactions**
+Navigate to: **Care services >  Billing > Billing transactions**
 
 1.  Only Billing transactions where the document status is **‘Open’** can be deleted. Open status means they have not yet been included in a billing invoice.
 2.  Select the billing transaction to be deleted and confirm that it is the only billing transaction that you have selected or if there are multiples check only Billing transactions that you want to delete are highlighted.
