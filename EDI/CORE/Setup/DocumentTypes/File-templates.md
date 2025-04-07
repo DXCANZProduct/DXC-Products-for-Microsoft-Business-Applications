@@ -5,7 +5,7 @@ title: EDI Core
 description: EDI Core - Setup document types - File templates
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-04-02
+ms.date: 2025-04-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -577,6 +577,7 @@ N2	                               | 2 decimals	                  | 123.45676	   
 N0	                               | 0 decimals (for example line number)	| 1.0000000           |	1
 {0,-15}                            | Pad staging field with spaces to total of 15 characters  | ^1234^ | <code>^1234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^</code>
 F                                  | No thousand separator        | 1,234                         | 1234
+,##0.00;-#,##0.00;""               | Replace 0 with blank         | ^0^ <br> ^123.45^             | ^^ <br> ^123.45^ 
 
 
 More examples:
