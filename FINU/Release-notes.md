@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-25
+ms.date: 2025-04-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,7 +38,7 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 Product version: 10.0.40 <br> App build: 10.0.1935.5	  | • No functional issues <br> • Build error fixed in 17981 | • Functional: 10.0.37.2024032522 <br> • Build error fixed in: 10.0.37.202405302
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | Yes <br> • 18802 - Azure connections	          | Fix available in 10.0.40.202409162
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | DXC Finance Utilities 10.0.40.2024091931 <br> DXC ABN Validation 10.0.40.2024091931 <br> DXC Encryption 10.0.40.202409162
-Product version: 10.0.43 <br> App build: 10.0.2177.18	  | Yes <br> • 21291 - Export file name on vendor payment journal line <br> • 21612 - Build error | DXC Finance Utilities 10.0.40.202501221 <br> DXC ABN Validation 10.0.40.202501221 <br> DXC Encryption 10.0.40.202412121
+Product version: 10.0.43 <br> App build: 10.0.2177.18	  | Yes <br> • 21291 - Export file name on vendor payment journal line <br> • 21612 - Build error | DXC Finance Utilities 10.0.40.202501221 <br> DXC ABN Validation 10.0.40.202501221 <br> DXC Encryption 10.0.40.202412121 <br> 21612 Build error fixed in 10.0.42.202504081
 
 
 #### Features not yet supported
@@ -73,10 +73,19 @@ Release notes for other models included in product:
 			• Credential type: Key Vault <br>
 	 		• Connection string: Secret setup in step 3
 
-# Next version
+# Current version
 
-### Release 10.0.42.202504TBD
+### Release 10.0.42.20250408
 
+DXC Finance Utilities 10.0.42 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
+Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
+
+#### Build 10.0.42.202504081
+Release date: 8 April 2025
 
 <ins>Bug fixes</ins>
 
@@ -110,41 +119,6 @@ Number	  	| Module	| Functionality	  	| Description
 21698		| DXC Encryption	| Key values	| New field **Key source** provides the ability to store key values as string within FinOps. Options: <br> • **Key vault** (default) - Azure Storage SAS URL & Azure Secrets <br> • **String** - Store keys within FinOps without Azure + key vaults. Also includes option to download the public key <br> ![Store key values in FinOps](Images/ReleaseNotes_20250331_5.png "Store key values in FinOps")
 21548		| DXC Encryption	| Setup	| Moving **Private key** and **Counter party's public key** around in **DXC encryption parameters**
 21551		| DXC Encryption	| Validate	| Ability to validate encryption / decryption key name. Select applicable **Encryption key name**, click **Validate** which will open a dialog to browse to a file. <br> • **Encrypt / Encrypt and sign** - select a file that should be encrypted, if setup is correct the encrypted file will be created that can be sent to counter party for testing. <br> • **Decrypt / Decrypt and verify** - select encrypted file that should be decrypted, if setup is correct a decrypted file will be created. <br> ![Validate](Images/ReleaseNotes_20250331_2.png "Validate")
-
-
-# Current version
-
-### Release 10.0.40.20250122
-
-DXC Finance Utilities 10.0.40 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
-Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
-Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
-
-#### Build 10.0.40.202501221
-Release date: 22 January 2025
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-20611		| Cash and bank management	| Bank statement format | Increased Custom line code's **Line code** from 5 to 10 characters
-20434		| Various	| Encryption	| DXC Encryption 10.0.40.202412121. Ability to setup lower level of encryption. [User guide](Setup/ENCRYPTION/Encryption-decryption.md) <br> Key type options: <br> • Encrypt <br> • Encrypt and sign <br> • Decrypt <br> • Decrypt and verify <br> ![DXC encryption parameters](Images/ReleaseNotes_20250122_1.png "DXC encryption parameters")
-
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-20860		| Cash and bank management	| Mark as new - offset to intercompany account | When using **Post** button in bank reconcilidation's New transactions and unselected new transaction record's Line details were offset to **intercompany** account, these records were also incorrectly posted in the intercompany and also still showed as unposted on the bank reconciliation.
-20960		| Cash and bank management	| Import bank statements | Removed **Recurrence** on Batch processing for Import bank statements. Also fixed issue where duplicate bank statements where imported when: <br> Batch processing enabled and <br> Was an issue with automatic reconcile after import and running default matching rule set.
-20959		| Cash and bank management	| Reconcile after import with default matching rule set	| Similar to 18174, also fixed issue where subsequent rules not run when the matching rule set contains a rule that errors and was automatically run with reconcile after import (set as default matching rule set on bank account).
-
-
 
 
 # Deprecated features
@@ -187,6 +161,27 @@ This section describes the features that have been removed, or planned to be rem
 # Previous version(s)
 
 Approximately one year of previous versions are included below.
+
+### Release 10.0.40.20250122
+
+#### Build 10.0.40.202501221
+Release date: 22 January 2025
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+20611		| Cash and bank management	| Bank statement format | Increased Custom line code's **Line code** from 5 to 10 characters
+20434		| Various	| Encryption	| DXC Encryption 10.0.40.202412121. Ability to setup lower level of encryption. [User guide](Setup/ENCRYPTION/Encryption-decryption.md) <br> Key type options: <br> • Encrypt <br> • Encrypt and sign <br> • Decrypt <br> • Decrypt and verify <br> ![DXC encryption parameters](Images/ReleaseNotes_20250122_1.png "DXC encryption parameters")
+
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+20860		| Cash and bank management	| Mark as new - offset to intercompany account | When using **Post** button in bank reconcilidation's New transactions and unselected new transaction record's Line details were offset to **intercompany** account, these records were also incorrectly posted in the intercompany and also still showed as unposted on the bank reconciliation.
+20960		| Cash and bank management	| Import bank statements | Removed **Recurrence** on Batch processing for Import bank statements. Also fixed issue where duplicate bank statements where imported when: <br> Batch processing enabled and <br> Was an issue with automatic reconcile after import and running default matching rule set.
+20959		| Cash and bank management	| Reconcile after import with default matching rule set	| Similar to 18174, also fixed issue where subsequent rules not run when the matching rule set contains a rule that errors and was automatically run with reconcile after import (set as default matching rule set on bank account).
 
 ### Release 10.0.40.20241204
 
