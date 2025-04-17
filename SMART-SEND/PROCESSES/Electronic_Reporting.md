@@ -36,7 +36,7 @@ To use an electronic report with print management, an electronic report destinat
 
 ## Print Management
 
-When the matching default report from the Smart Send Email parameters is entered into the *report format* field as part of the Print management setup, Smart Send will generate a new ER Named Destination for the nominated form prefixed with "Smart Send" the first time the report is published, for example, Smart Send Purchase Order (Excel).  This defined destination for electronic reporting can then be modified to include additional outputs, such as Screen.
+When the matching default report from the Smart Send Email parameters is entered into the *report format* field as part of the Print management setup, Smart Send will generate a new ER Named Destination for the nominated form prefixed with "Smart Send" the first time the report is published, for example, Smart Send Purchase Order (Excel), if required.  This defined destination for electronic reporting can then be modified to include additional outputs, such as the Screen.
 
 
 
