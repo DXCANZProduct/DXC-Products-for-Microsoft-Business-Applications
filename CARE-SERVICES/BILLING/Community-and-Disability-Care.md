@@ -226,7 +226,7 @@ Navigate to: **Care services >  Billing > Journals > Billing journal**
 
 ### Review and post the Billing journal
 
-Navigate to: **Care services  Billing  Journals  Billing Journals**
+Navigate to: **Care services >  Billing > Journals > Billing journal**
 
 1.  The billing journal list will show journals that have not been posted.
 2.  Select ‘All’ or ‘Posted’ in the ‘Show’ drop-down menu to view posted journals.
@@ -237,10 +237,10 @@ Navigate to: **Care services  Billing  Journals  Billing Journals**
 
 ### Third-party billing
 
-Navigate to: **Care services  All Customers Invoice  Billing journal schedule**
+Navigate to: **Care services >  All Customers >  Invoice >  Billing  schedule**
 
 1.  Select the line for the fee paid by a third party.
-2.  Click on **Billing invoice**
+2.  Click on **Billing invoicee**
 3.  Click on **Edit**
 4.  Select the relevant third party in the customer account (Refer to the Customer Management section for instructions on how to add customers)
 5.  Propose the billing journal. The transactions will be posted to the third-party customer account.
@@ -251,7 +251,7 @@ Navigate to: **Care services  All Customers Invoice  Billing journal schedule**
 
 ### Split billing
 
-Navigate to: **Care services  All Customers Invoice  Billing journal schedule**
+Navigate to: **Care services >  All Customers >  Invoice >  Billing  schedule**
 
 1.  Select the line for the fee to be paid by multiple parties.
 2.  Click on **Billing invoicee**
@@ -270,20 +270,20 @@ The consolidation process is used when there are multiple journal lines in the s
 
 Navigate to: **Care services  Billing  Journals  Billing Journals Lines**
 
-1.  Go to Billing proposal options  Billing journal proposal.
+1.  Go to Billing proposal options,  Billing journal proposal.
 2.  Select **Consolidate journal lines**
 3.  Click **OK** to consolidate the relevant lines.
 
 ### Billing schedule and rate adjustments
 
--   Billing schedule adjustments such as adding or ending fees and changes to the billing rates are managed via the client billing schedule.
--   Global rate updates such as Basic Daily Care fee will not require a separate update for each client. The rate will be automatically updated for the relevant clients.
+-   Billing schedule adjustments, such as adding or ending fees and changes to the billing rates, are managed via the client billing schedule.
+-   Global rate updates, such as the  Basic Daily Care fee, will not require a separate update for each client. The rate will be automatically updated for the relevant clients.
 
 Navigate to: **Care services  All Customers Invoice  Billing journal schedule**
 
 1.  Select the line for the fee to be adjusted.
 2.  Populate the end date if the fee is no longer billed. Leave it blank if the fee is still applicable.
-3.  To update the billing rate, Click on **Billing rates**
+3.  To update the billing rate, click on **Billing rates**
 4.  Populate an end date on the existing rate.
 5.  Click **New** to create a new line.
 6.  Populate the new start date and new amount.
@@ -302,9 +302,9 @@ Navigate to: **Care services  All Customers Invoice  Billing journal schedule**
 
 Billing adjustments are run whenever a client has billing that is required to be reversed and possibly re-billed. Examples of this are when a client:
 
--   has been billed in advance and then the rate has been changed.
+-   has been billed in advance, and then the rate has been changed.
 -   has been billed in advance and then departs.
--   has been billed in advance and after payment of the accommodation payment lumpsum, requests for fees to be drawn down instead.
+-   has been billed in advance, and after payment of the accommodation payment lump sum, requests for fees to be drawn down instead.
 
 Navigate to: **Care services  Billing  Journals  Billing Journals Lines**
 
@@ -319,7 +319,7 @@ Navigate to: **Care services  Billing  Journals  Billing Journals Lines**
 9.  Click **OK**
 10. *If required, setup the job to run in the background. Select Batch processing to Yes*
 11. *Click on Recurrence*
-12. *The default value is for the job to run once (End after:1) If it is a requirement for the job to run at a regular interval, then setup up the required recurrence pattern.*
+12. *The default value is for the job to run once (End after:1) If it is a requirement for the job to run at a regular interval, then set up the required recurrence pattern.*
 13. *Click OK to close the Recurrence form.*
 14. *Click OK to add the job to the batch queue.*
 15. The total fee billed in advance will be reversed.
@@ -329,7 +329,7 @@ Navigate to: **Care services  Billing  Journals  Billing Journals Lines**
 
 ### Billing Capping limits
 
--   Capping limits are the amounts specified by the government as the maximum annual or lifetime amount that can be charged of a particular type of fee such as means tested fees or income tested fees.
+-   Capping limits are the amounts specified by the government as the maximum annual or lifetime amount that can be charged of a particular type of fee, such as means-tested fees or income-tested fees.
 -   If the ‘allow charge beyond capping limits’ is set to yes, then the billing will continue even if the cap has been reached.
 -   When the parameter is set to No, the billing will end when the capping limit has been reached.
 -   Prior to generating the billing journal, ensure the capping limit setup has been completed for the client (Path: **Care services  All Customers  Set up  Capping limits setup)
@@ -344,86 +344,86 @@ Navigate to: **Care services  Billing  Journals  Billing Journals Lines**
 5.  If required, filter on Advance or Arrears so that billing can be generated only for billing codes with advance or arrears selected on the billing code configuration.
 6.  Click on **Filter**
 7.  Specify the required criteria for generating the billing journals (customer account, Service code, billing code)
-8.  The capped amount will propose when the annual or lifetime cap has been reached.
+8.  The capped amount will be proposed when the annual or lifetime cap has been reached.
 9.  Validate and post the journal.
 
 # Accommodation Payments
 
 Prior to generating Accommodation payment transactions, ensure the Accommodation payment setup has been completed for the client (Path: **Care services  All Customers  Invoice  Set up  Accommodation payment)
 
-### Accommodation payment lumpsum invoice
+### Accommodation payment lump sum invoice
 
 Navigate to: **Care services  Billing  Journals  Billing Journals**
 
 1.  Click on **New** to create a new billing journal.
-2.  Select the **relevant accommodation payment lumpsum invoice** journal from the drop-down menu
+2.  Select the **relevant accommodation payment lump sum invoice** journal from the drop-down menu
 3.  Populate a meaningful description.
 4.  Click on **Lines**
-5.  Populate the date for the lumpsum invoice.
+5.  Populate the date for the lump sum invoice.
 6.  Select the client account.
 7.  Select the accommodation payment Billing account name.
 8.  Select the relevant service code.
-9.  Select the billing code for accommodation payment lumpsum.
+9.  Select the billing code for accommodation payment lump sum.
 10. Select the client’s accommodation payment id.
 11. Populate start date and end date.
 12. Leave the Qty/Days as 1.00
-13. Populate the lumpsum amount in the Rate field.
+13. Populate the lump sum amount in the Rate field.
 14. Validate and post the journal.
 
 ### Daily Payments (DAP/DAC) or unpaid interest drawn down from RAD/RAC
 
-Daily accommodation payments or unpaid interest amounts can be drawn down from the lumpsum balance.
+Daily accommodation payments or unpaid interest amounts can be drawn down from the lump sum balance.
 
 Navigate to: **Care services  All customers  Invoice Accommodation payment**
 
 1.  Change the **Billing account name** on the accommodation payment line to the relevant accommodation payment billing account name.
-2.  When the lumpsum invoice has been fully or partially paid, the DAP/DAC and unpaid interest amounts will be drawn down from the lumpsum reducing the refundable balance.
-3.  If the lumpsum has not been fully or partially paid, the DAP/DAC and unpaid interest will be billed to the client.
+2.  When the lump sum invoice has been fully or partially paid, the DAP/DAC and unpaid interest amounts will be drawn down from the lump sum, reducing the refundable balance.
+3.  If the lump sum has not been fully or partially paid, the DAP/DAC and unpaid interest will be billed to the client.
 
 ### Fees drawn down from RAD/RAC
 
-Fees can be drawn down from the lumpsum balance.
+Fees can be drawn down from the lump sum balance.
 
 Navigate to: **Care services  All customers  Invoice Billing Schedule**
 
-1.  Select the fee to be drawn down from the accommodation payment lumpsum.
+1.  Select the fee to be drawn down from the accommodation payment lump sum.
 2.  Click on **Billing invoicee**
 3.  Change the **Billing account name** to the relevant accommodation payment billing account name.
-4.  When the lumpsum invoice has been fully or partially paid, the fee will be drawn down from the lumpsum reducing the refundable balance.
-5.  If the lumpsum has not been fully or partially paid, the DAP/DAC and unpaid interest will be billed to the client.
+4.  When the lump sum invoice has been fully or partially paid, the fee will be drawn down from the lump sum, reducing the refundable balance.
+5.  If the lump sum has not been fully or partially paid, the DAP/DAC and unpaid interest will be billed to the client.
 6.  Follow the steps in the **Billing journal proposal** section to generate the transactions.
 
 ![](media/3e511a525ae57fe6e9395bbdd31dbfa8.png)
 
-*Change Billing account name for fee to be drawdown from the accommodation payment.*
+*Change Billing account name for fee to be drawn down from the accommodation payment.*
 
 ### Adjustments to Fees drawn down from RAD/RAC
 
-Clients may request fees billed in advance to be drawn down from the accommodation payment lumpsum when it has been paid.
+Clients may request fees billed in advance to be drawn down from the accommodation payment lump sum when it has been paid.
 
 Navigate to: **Care services  All customers  Invoice Billing Schedule**
 
-1.  Select the fee to be drawn down from the accommodation payment lumpsum.
-2.  Populate an **End date** and **Bill to date** for the day before the lumpsum receipt.
-3.  Create a new line for the same fee with a start date the day the lumpsum was paid.
+1.  Select the fee to be drawn down from the accommodation payment lump sum.
+2.  Populate an **End date** and **Bill to date** for the day before the lump sum receipt.
+3.  Create a new line for the same fee with a start date the day the lump sum was paid.
 4.  Go to **Billing Invoicee**
 5.  Change the Billing account name to the accommodation payment type.
 6.  Follow the steps in the **Billing journal adjustment section** to propose the adjustments.
-7.  The fees billed in advance will be reversed and two new lines generated, one for the fees billed up to the date of receipt and the second line for the drawdowns.
+7.  The fees billed in advance will be reversed and two new lines generated, one for the fees billed up to the date of receipt and the second line for the drawn downs.
 
 ### Managing changes to the accommodation payments
 
 -   Client’s DAC amount is regularly reviewed, and the amounts may require adjustments.
 -   DAC assessed amounts will automatically reduce the amount of accommodation supplement in the Funding schedule.
--   The client may decide to change the payment method (e.g. from Lumpsum to Combination or from DAP/DAC to Combination etc)
+-   The client may decide to change the payment method (e.g. from lump sum to Combination or from DAP/DAC to Combination etc)
 -   These adjustments are managed by adding a new accommodation payment line with the effective date and new values.
 
 Navigate to: **Care services  All customers  Invoice Accommodation payment**
 
 1.  Populate the relevant **end date** on the current accommodation payment line.
 2.  Click on **Add line** to add a new line.
-3.  If the **payment method** is changed, the select the relevant payment method.
-4.  Update the **agreed lumpsum** if required.
+3.  If the **payment method** is changed, select the relevant payment method.
+4.  Update the **agreed lump sum** if required.
 5.  If the **DAC amount** is changed, update the **Assessed amount.**
 6.  Click on **Save** to save the changes on the new line.
 7.  Click on **Accommodation Payment calculation** to update the accommodation payment form details.
@@ -442,23 +442,23 @@ Navigate to: **Care services  Billing  Journals  Billing Journals**
 7.  Populate the end date.
 8.  Select ‘Include departed clients’ or ‘Departed clients only’ if required.
 9.  Select ‘Include ongoing interest’ to include DAP/DAC/Periodic interest calculations.
-10. Select ‘Include unpaid lumpsum interest’ to include interest calculations on unpaid lumpsum (RAD/RAC)
+10. Select ‘Include unpaid lump sum interest’ to include interest calculations on the unpaid lump sum (RAD/RAC)
 11. Click on **Filter**
 12. Specify the required criteria for generating the billing journals (customer account, Service code)
 13. Click **OK**
-14. *If required, setup the job to run in the background. Select Batch processing to Yes*
+14. *If required, set up the job to run in the background. Select Batch processing to Yes*
 15. *Click on Recurrence*
-16. *The default value is for the job to run once (End after:1) If it is a requirement for the job to run at a regular interval, then setup up the required recurrence pattern.*
+16. *The default value is for the job to run once (End after:1) If it is a requirement for the job to run at a regular interval, then set up the required recurrence pattern.*
 17. *Click OK to close the Recurrence form.*
 18. *Click OK to add the job to the batch queue.*
-19. There will be separate lines generated for ongoing interest amounts (DAP/DAC) and interest on unpaid lumpsum.
+19. There will be separate lines generated for ongoing interest amounts (DAP/DAC) and interest on unpaid lump sum.
 20. The interest rate used for the calculations is the agreed interest rate on the client’s accommodation payment setup.
 21. If any adjustments are required, the original amount will be reversed, and new line(s) proposed with the relevant rates and amounts.
 22. Validate and post the journal.
 
 ### Interest payable to client proposal
 
--   Interest payable will be proposed if the lumpsum is not refunded within the legislative time frame following the departure of a client.
+-   Interest payable will be proposed if the lump sum is not refunded within the legislative time frame following the departure of a client.
 -   The base interest rate is used in the calculations for the first 14 days after departure.
 -   The Max permissible interest rate (MPIR) will be applicable in the calculations 14 days after departure.
 -   If the reason for leaving is deceased, then the base rate is used until the Probate/Admin letter is received. The Probate/Admin letter date is populated in the client service entry when the letter is received.
@@ -482,7 +482,7 @@ Navigate to: **Care services  Billing  Journals  Billing Journals**
 14. *Click OK to close the Recurrence form.*
 15. *Click OK to add the job to the batch queue.*
 16. The interest payable transactions will be calculated and proposed.
-17. There will be two lines if the lumpsum has not been refunded within 14 days.
+17. There will be two lines if the lump sum has not been refunded within 14 days.
 18. The first line will be calculated and proposed using the base rate for 14 days.
 19. The second line will be calculated with the Max permissible interest rate (MPIR)
 20. Validate and post the journal.
@@ -562,23 +562,23 @@ Navigate to: Credit and collections Collection letter**
 
 # Receipts
 
--   Payments of agreed lumpsum or other fees and charges are posted in Receipt journals.
+-   Payments of agreed lump sum or other fees and charges are posted in Receipt journals.
 -   Direct Debit payments can be proposed in receipt journals and the relevant bank file generated. Ensure the client bank account and method of payment is setup to be included in the Direct Debit proposals.
 -   Clients may also have a direct debit limit or a Pre-set direct debit amount.
 
-### Accommodation payment lumpsum receipt
+### Accommodation payment lump sum receipt
 
 Navigate to: **Care services  Journals Receipt journal**
 
 1.  Click on **New** to create a new receipt journal.
-2.  Select the **relevant lumpsum receipt journal** from the drop-down menu.
+2.  Select the **relevant lump sum receipt journal** from the drop-down menu.
 3.  Populate a meaningful description.
 4.  Click on **Lines**
 5.  Populate the date of receipt.
 6.  Select Client account.
 7.  Click **Save**
 8.  Click on **Settle transactions**
-9.  Select the Lumpsum invoice and select the **Mark** check box
+9.  Select the lump sum invoice and select the **Mark** check box
 10. If the amount **is not paid in full**, then populate the relevant amount paid in the ‘**Amount to settle’.**
 11. Click **OK**
 12. Populate a Description
@@ -641,7 +641,7 @@ Navigate to: **Care services  Journals Receipt journal**
 6.  Populate date range if required to exclude open invoices.
 7.  Select the ‘Apply Direct debit limits’ **OR** ‘Apply pre-set direct debit amount and limit’.
 8.  Click on **Filter** to select Customer account, service code, method of payment.
-9.  Select the **Billing account name for billing** to exclude accommodation payment drawdowns.
+9.  Select the **Billing account name for billing** to exclude accommodation payment drawn downs.
 10. Click **OK**
 11. Populate a Description
 12. Select Billing account name.
@@ -841,14 +841,14 @@ Navigate to: **Care services  All customers  **Care services  Service entries**
 11. Populate an **End date** on the line.
 12. Click **Save** to save the details.
 13. Click on **Add line** to add a new line.
-14. Populate Effective date and new **‘Agreed amount’** and **‘Agreed lumpsum’.**
+14. Populate Effective date and new **‘Agreed amount’** and **‘Agreed lump sum’.**
 15. **Process the difference in bed price:**
 16. Go to Care services Billing  Billing journal.
-17. Create a new accommodation payment lumpsum invoice journal.
+17. Create a new accommodation payment lump sum invoice journal.
 18. Populate the date and select the client account.
 19. Select the billing account name for the accommodation payment refund
 20. Select the Service code.
-21. Select the Billing Code for the partial refund (as specified in care services parameters  journals  Partial refund billing code) OR the lumpsum invoice billing code for the invoice
+21. Select the Billing Code for the partial refund (as specified in care services parameters  journals  Partial refund billing code) OR the lump sum invoice billing code for the invoice
 22. Populate the start and end dates.
 23. Add the refund amount credit in the Rate (e.g., -100 000) or additional invoice amount in debit
 24. Validate and post the journal.
@@ -882,7 +882,7 @@ Navigate to: **Care services  All customers  **Care services  Service entries**
 11. Go to Invoice Accommodation payment.
 12. A new **accommodation payment header** has been created for the new facility.
 13. Select the new header and click on **Add line**
-14. Populate the Agreed amount and Agreed Lumpsum and other relevant details.
+14. Populate the Agreed amount and Agreed lump sum and other relevant details.
 15. Click on **Save** and close the form.
 16. **Refund via All Customers Collect Client refund proposal:**
 17. Select the accommodation payment id for the service the resident is departing from
@@ -893,19 +893,19 @@ Navigate to: **Care services  All customers  **Care services  Service entries**
 22. Review the details, then validate and post the journal
 23. The balance has now been transferred to the resident vendor account
 24. Go to ****Care services  Billing Billing Journals**
-25. Create a new Accommodation Payment Lumpsum invoice billing journal.
+25. Create a new Accommodation Payment lump sum invoice billing journal.
 26. Populate Date, Client account and Billing account name for the accommodation payment.
 27. Populate Service code for the **new facility.**
-28. Select the Billing code for the accommodation payment lumpsum transfers.
+28. Select the Billing code for the accommodation payment lump sum transfers.
 29. Select the **new accommodation payment ID.**
 30. Populate start and end dates.
-31. Populate the agreed lumpsum amount.
+31. Populate the agreed lump sum amount.
 32. Validate and post the journal.
-33. Go to ****Care services  Journals  Receipt journal** and create a new **Lumpsum receipt** journal.
+33. Go to ****Care services  Journals  Receipt journal** and create a new **lump sum receipt** journal.
 34. Populate the date, client account and description.
 35. Select the service code for the **new facility** and **billing account name** for the accommodation payment.
 36. Select the **new accommodation payment ID.**
-37. Click on Settle transactions to mark the invoice for the agreed lumpsum in the new facility.
+37. Click on Settle transactions to mark the invoice for the agreed lump sum in the new facility.
 38. Select Offset account type = Vendor
 39. Select Offset account = The resident vendor account
 40. Validate and post the journal.
@@ -972,14 +972,14 @@ Navigate to:** ****Care services  All customers  Invoices  Accommodation payment
 
 Navigate to:** ****Care services Journals  Billing journal**
 
-1.  Create a new lumpsum billing journal then click on Lines
+1.  Create a new lump sum billing journal then click on Lines
 2.  Populate the departure date in the ‘Date’ , ‘Start date’ and ‘End date’ fields, select the customer and the **new** accommodation payment id
 3.  Populate the refundable balance in the Rate field
 4.  Validate and post the journal
 
 Navigate to:** ****Care services Journals  Receipt journal**
 
-1.  Create a new lumpsum receipt journal then click on Lines
+1.  Create a new lump sum receipt journal then click on Lines
 2.  Populate the departure date in the ‘Date’, ‘Start date’ and ‘End date’ fields, select the customer
 3.  Click Save and then Settle transactions
 4.  Select the invoice to settle by ticking the Mark checkbox
