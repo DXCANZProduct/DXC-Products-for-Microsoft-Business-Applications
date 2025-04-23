@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Community and Disability Care
 
--   Services provided for community and disability clients can be imported manually or via integration as billing transactions in Dynamics 365 FinOps. Once they have been imported, they are available to view or edit on the billing transactions view in the same way as any manually entered or system-generated billing transactions
+-   Services provided for community and disability clients can be imported manually or via integration as billing transactions in Dynamics 365 Finance and Operations. Once they have been imported, they are available to view or edit on the billing transactions view in the same way as any manually entered or system-generated billing transactions
 -   Billing invoices are generated for billing transactions with the same invoice number, or if invoice numbers are not allocated, then all of the transactions for a particular client and service code will be grouped into a single invoice
 -   Billing transactions can also be generated from a billing schedule for recurring fees.
 -   The total amount will be generated and posted in a Billing journal.
@@ -45,25 +45,24 @@ Navigate to: **Care services >  Billing > Generate billing transaction**
 4.  Click **OK** when the filters have all been entered
 5.  Click **OK** to start the Generate billing transactions process unless you want to run it in batch processing or set up a recurrence – refer to steps 6 to 10 if this is required.
 6.  *If required, set up the job to run in the background. Select Batch processing to Yes.*
-7.  *Click on* **Recurrence**
-8.  *The default value is for the job to run once (End after: 1). If it is a requirement for the job to run at a regular interval, then set up the required recurrence pattern.*
-9.  *Click* **OK** *to close the Recurrence form.*
-10. *Click* **OK** *to add the job to the batch queue.*
+7.  *Click on* **Recurrence** *The default value is for the job to run once (End after: 1). If it is a requirement for the job to run at a regular interval, then set up the required recurrence pattern.*
+8.  *Click* **OK** *to close the Recurrence form.*
+9. *Click* **OK** *to add the job to the batch queue.*
 
 ### Manually Enter billing transactions
 
 Navigate to: **Care services >  Billing > Billing transactions**
 
-1.  Select **New billing transaction,** a pop-up window will be displayed
+1.  Select **New billing transaction,** and a pop-up window will be displayed
 2.  **Customer account –** Enter the customer account that is responsible for paying the invoice; this may be the client or a third party.
 3.  **Client account –** Enter the Customer account for the client who received the service or item
 4.  **Billing code –** Enter the Billing code required for the service or item to be billed
-5.  **Start date –** Enter the date the service being billed for started to be provided or if it is an ongoing service, enter the first day to be billed, usually the next day after the last date that has previously been billed. eg. If it is overnight accommodation, enter the date of arrival here, or if it is ongoing accommodation, enter the first day to be billed. For items, enter the date the item(s) were provided.
+5.  **Start date –** Enter the date the service being billed for started to be provided, or if it is an ongoing service, enter the first day to be billed, usually the next day after the last date that has previously been billed. eg. If it is overnight accommodation, enter the date of arrival here, or if it is ongoing accommodation, enter the first day to be billed. For items, enter the date the item(s) were provided.
 6.  **End date –** Enter the date the service being billed for ceased to be provided or the last day to be billed if it is an ongoing service. Eg. if it is overnight accommodation, enter the departure date, or if it is ongoing accommodation, enter the last day to be billed. For items, enter the date the item(s) was provided.
 7.  **Rate –** Enter the per quantity rate
 8.  **Quantity –** Enter the quantity to be billed
 9.  **Amount –** The system will calculate the amount based on the rate and quantity
-10. **Description** – The system will auto-populate the description from the billing code, it can then be edited. The description is what will appear as the description on the transactions line of the customer invoice.
+10. **Description** – The system will auto-populate the description from the billing code, and it can then be edited. The description is what will appear as the description on the transactions line of the customer invoice.
 11. Select **OK** then **Refresh**
 12. Open the billing transaction by clicking on the **Billing transaction id**
 13. **Invoice number –** If this transaction is to be added with other transactions that have a specific invoice number, add the invoice number. If this transaction will be invoiced on its own or other transactions to be included on an invoice, do not include an invoice number (ie. the invoice number will be system-generated); leave the invoice number blank.
@@ -133,14 +132,13 @@ Navigate to: Care services Billing Generate Billing invoices**
 3.  Specify the required criteria for generating the billing invoice (customer account, service code). The system will generate billing invoices for all clients where there are billing transactions that meet the filter requirements entered, so ensure that these filters allow the selection of only the transactions that you want to include.
 4.  Click **OK**
 5.  *If required, set up the job to run in the background. Select Batch processing to Yes.*
-6.  *Click on* **Recurrence**
-7.  *The default value is for the job to run once (End after: 1) If it is a requirement for the job to run at a regular interval, then set up the required recurrence pattern.*
-8.  *Click* **OK** *to close the Recurrence form.*
-9.  *Click* **OK** *to add the job to the batch queue.*
+6.  *Click on* **Recurrence** *The default value is for the job to run once (End after: 1). If it is a requirement for the job to run at a regular interval, then set up the required recurrence pattern.*
+7.  *Click* **OK** *to close the Recurrence form.*
+8. *Click* **OK** *to add the job to the batch queue.*
 
-### View billing invoices and generate billing journal
+### View billing invoices and generate a billing journal
 
-Navigate to: Care services Billing Billing invoices**
+Navigate to: **Care services >  Billing > Billing  invoices**
 
 1.  Billing invoices that have not had a journal raised yet will be displayed on the billing invoice list.
 2.  Select **Show all** to view all billing invoices if required.
@@ -150,21 +148,20 @@ Navigate to: Care services Billing Billing invoices**
 
 ### Generate billing journals
 
-Navigate to: Care Services BillingGenerate Billing journals**
+Navigate to: **Care services >  Billing > Generate Billing journals**
 
 1.  Select the Billing journal type from the drop-down menu.
 2.  Click on **Filter**
 3.  Specify the required criteria for generating the billing journals (customer account, billing account). The system will generate billing journals for all clients where there are billing invoices that meet the filter requirements entered, so ensure that these filters allow the selection of only the invoices that you want to include.
 4.  Click **OK**
-5.  *If required, setup the job to run in the background. Select Batch processing to Yes.*
-6.  *Click on* **Recurrence**
-7.  *The default value is for the job to run once (End after:1) If it is a requirement for the job to run at a regular interval, then setup up the required recurrence pattern.*
-8.  *Click* **OK** *to close the Recurrence form.*
-9.  *Click* **OK** *to add the job to the batch queue.*
+5.  *If required, set up the job to run in the background. Select Batch processing to Yes.*
+6.  *Click on* **Recurrence** *The default value is for the job to run once (End after: 1). If it is a requirement for the job to run at a regular interval, then set up the required recurrence pattern.*
+7.  *Click* **OK** *to close the Recurrence form.*
+8. *Click* **OK** *to add the job to the batch queue.*
 
 ### Review and post billing journals
 
-Navigate to: Care services BillingJournals Billing journal**
+Navigate to: **Care services >  Billing > Journals > Billing journal**
 
 1.  The billing journal list will show journals that have not been posted.
 2.  Select ‘All’ or ‘Posted’ in the ‘Show’ drop-down menu to view posted journals if required.
@@ -175,11 +172,11 @@ Navigate to: Care services BillingJournals Billing journal**
 2.  Billing – Residential Care services and Retirement Villages
 -   Manual journals can be entered or imported into the system.
 -   Journals can be generated from the billing schedules by running the Billing journal proposal. The proposal utilises the Billing schedule to automatically generate transactions up to the selected end date.
--   Fees can be split to be paid by different parties such as family members or third-party organisations.
+-   Fees can be split to be paid by different parties, such as family members or third-party organisations.
 
 ### Billing journal proposals
 
-Navigate to: Care services BillingJournals Billing journal**
+Navigate to: **Care services >  Billing > Journals > Billing journal**
 
 -   The billing journal proposal end date controls the billing being generated.
 -   If the client has not been billed before, then the billing will be generated from the start day on the billing schedule to the end date on the billing proposal.
@@ -206,7 +203,7 @@ Navigate to: Care services BillingJournals Billing journal**
 
 ### Generate Billing journal proposal
 
-Navigate to: **Care services  Billing  Journals  Billing Journals**
+Navigate to: **Care services >  Billing > Journals > Billing journal**
 
 1.  Click on **New** to create a new billing journal.
 2.  Select the relevant billing journal from the drop-down menu.
