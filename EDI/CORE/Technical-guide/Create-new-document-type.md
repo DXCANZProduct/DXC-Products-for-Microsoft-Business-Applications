@@ -20,15 +20,17 @@ The DXC EDI module provides enhanced functionalities to Microsoft Dynamics 365 f
 1. Create and implement the document type class.
     - See [Implement SAB_EDIDocumentTypeClass for EDI documents](#implement-sab_edidocumenttypeclass-for-edi-documents) for more information.
 
-EDI > Setup > Document type 
+**EDI > Setup > Document type **
 
 ![alt text](./IMAGES/EDI-1.png)
 ---
-EDI > Files > Inbound files
+
+**EDI > Files > Inbound files**
 
 ![alt text](./IMAGES/EDI-2.png)  
 ----
-EDI > Files > Inbound files > Upload files  
+
+**EDI > Files > Inbound files > Upload files  **
 
 ![alt text](./IMAGES/EDI-3.png)  
 ----
