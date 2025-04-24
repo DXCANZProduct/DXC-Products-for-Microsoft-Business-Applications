@@ -262,7 +262,7 @@ EDI > Documents > Inbound example
 ![alt text](./IMAGES/EDI-6.png)
 
 ---
-![alt text](./IMAGES/EDI-7.png.png)
+![alt text](./IMAGES/EDI-7.png)
 
 
 #### Implement SAB_EDIStagingFormClass for EDI documents
