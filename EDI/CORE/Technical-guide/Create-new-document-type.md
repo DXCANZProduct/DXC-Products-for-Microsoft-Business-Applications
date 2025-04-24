@@ -21,17 +21,17 @@ The DXC EDI module provides enhanced functionalities to Microsoft Dynamics 365 f
 
 EDI > Setup > Document type 
 
-![alt text](./IMAGES/EDI/EDI-1.png)
+![alt text](./IMAGES/EDI-1.png)
 ---
 EDI > Files > Inbound files
 
-![alt text](./IMAGES/EDI/EDI-2.png)  
+![alt text](./IMAGES/EDI-2.png)  
 ----
 EDI > Files > Inbound files > Upload files  
 
-![alt text](./IMAGES/EDI/EDI-3.png)  
+![alt text](./IMAGES/EDI-3.png)  
 ----
-![alt text](./IMAGES/EDI/EDI-4.png)  
+![alt text](./IMAGES/EDI-4.png)  
 
 Note: If your document type if not visible, navigate to EDI > Setup > EDI parameters > General and run refresh module. 
 
@@ -122,10 +122,10 @@ Note: If your document type if not visible, navigate to EDI > Setup > EDI parame
     Example: SAB_EDIDocumentSettingProfile_[InboundExample]Entity, SAB_EDIDocumentSettingProfile_[InboundExample]EntityMaintain, SAB_EDIDocumentSettingProfile_[InboundExample]EntityView
 
 EDI > Setup > Document types
-![alt text](./IMAGES/EDI/EDI-8.png)
+![alt text](./IMAGES/EDI-8.png)
 ---
 [Document name] > Setting profiles > Setup
-![alt text](./IMAGES/EDI/EDI-9.png)
+![alt text](./IMAGES/EDI-9.png)
 
 #### Implement SAB_EDIDocumentSettingsContract class for document settings profile parameters
 1. Extend the abstract class [SAB_EDIDocumentSettingsContract](#sab_edidocumentsettingscontract)
@@ -182,7 +182,7 @@ EDI > Setup > Document types
         - Set the multi-select to yes for the non-single one  
       
       EDI > Documents > Inbound example (Note: This will be accessible once step 3 is completed)
-      ![alt text](./IMAGES/EDI/EDI-5.png)
+      ![alt text](./IMAGES/EDI-5.png)
 1. [Implement EDI processor class to process inbound documents](#implement-edi-processor-class-to-process-inbound-documents)
 1. [Create staging forms for EDI documents](#create-staging-forms-for-edi-documents)
 
@@ -259,10 +259,10 @@ EDI > Setup > Document types
 
 EDI > Documents > Inbound example
 
-![alt text](./IMAGES/EDI/EDI-6.png)
+![alt text](./IMAGES/EDI-6.png)
 
 ---
-![alt text](./IMAGES/EDI/EDI-7.png.png)
+![alt text](./IMAGES/EDI-7.png.png)
 
 
 #### Implement SAB_EDIStagingFormClass for EDI documents
