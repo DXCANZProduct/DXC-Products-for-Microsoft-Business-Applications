@@ -7,6 +7,7 @@ The DXC EDI module provides enhanced functionalities to Microsoft Dynamics 365 f
 [EDI module library for D365 FSCM](#edi-module-library-for-d365-fscm)
 
 ## Create new document type
+
 1. Update your model parameters to reference package, **DXC EDI**  
     Note: if working on customizations for any of the following modules, then please select the appropriate reference packages for it
     - **DXC EDI 3PL Documents**
