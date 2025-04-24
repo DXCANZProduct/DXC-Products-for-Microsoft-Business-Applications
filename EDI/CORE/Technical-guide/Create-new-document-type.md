@@ -20,7 +20,7 @@ The DXC EDI module provides enhanced functionalities to Microsoft Dynamics 365 f
 1. Create and implement the document type class.
     - See [Implement SAB_EDIDocumentTypeClass for EDI documents](#implement-sab_edidocumenttypeclass-for-edi-documents) for more information.
 
-**EDI > Setup > Document type **
+**EDI > Setup > Document type**
 
 ![alt text](./IMAGES/EDI-1.png)
 ---
@@ -30,7 +30,7 @@ The DXC EDI module provides enhanced functionalities to Microsoft Dynamics 365 f
 ![alt text](./IMAGES/EDI-2.png)  
 ----
 
-**EDI > Files > Inbound files > Upload files  **
+**EDI > Files > Inbound files > Upload files**
 
 ![alt text](./IMAGES/EDI-3.png)  
 ----
@@ -124,10 +124,11 @@ Note: If your document type if not visible, navigate to EDI > Setup > EDI parame
 1. Create data entity for the settings profile and assign security privileges as required  
     Example: SAB_EDIDocumentSettingProfile_[InboundExample]Entity, SAB_EDIDocumentSettingProfile_[InboundExample]EntityMaintain, SAB_EDIDocumentSettingProfile_[InboundExample]EntityView
 
-EDI > Setup > Document types
+**EDI > Setup > Document types**
+
 ![alt text](./IMAGES/EDI-8.png)
 ---
-[Document name] > Setting profiles > Setup
+**[Document name] > Setting profiles > Setup**
 ![alt text](./IMAGES/EDI-9.png)
 
 #### Implement SAB_EDIDocumentSettingsContract class for document settings profile parameters
@@ -184,7 +185,7 @@ EDI > Setup > Document types
         - Enum Parameter: [Inbound Example] - pass your document type enum  
         - Set the multi-select to yes for the non-single one  
       
-      EDI > Documents > Inbound example (Note: This will be accessible once step 3 is completed)
+     **EDI > Documents > Inbound example** (Note: This will be accessible once step 3 is completed)
       ![alt text](./IMAGES/EDI-5.png)
 1. [Implement EDI processor class to process inbound documents](#implement-edi-processor-class-to-process-inbound-documents)
 1. [Create staging forms for EDI documents](#create-staging-forms-for-edi-documents)
@@ -260,7 +261,7 @@ EDI > Setup > Document types
         - Enum Parameter: [Inbound Example] - pass your document type enum
 1. Extend the EDI menu item and add your staging form run action menu item under Documents
 
-EDI > Documents > Inbound example
+**EDI > Documents > Inbound example**
 
 ![alt text](./IMAGES/EDI-6.png)
 
