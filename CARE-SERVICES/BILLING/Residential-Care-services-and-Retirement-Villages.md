@@ -39,21 +39,19 @@ Navigate to: **Care services >  Billing > Journals > Billing journal**
 -   The billing journal proposal end date controls the billing being generated.
 -   If the client has not been billed before, then the billing will be generated from the start day on the billing schedule to the end date on the billing proposal.
 -   If the client has been billed before, then there will be a ‘Last run date’ on the billing schedule line. The billing proposal will generate fees from the day after the ‘Last run date’ to the end date on the billing proposal.
+
 -   There are multiple billing proposal options:
 
-    **Billing journal proposal** – used to generate billing up to a specified date for a specified client(s) or service(s) from the billing schedule lines.
+|  **Field**  | **Description** | 
+|:---|:---|   
+| **Billing journal proposal**|used to generate billing up to a specified date for a specified client(s) or service(s) from the billing schedule lines.|
+|    **Consolidate journal lines**|used to combine lines when there are multiple journal lines in the same journal for the same customer, billing code & service code.|
+|    **Billing journal adjustment proposal**|used to propose adjustments where there has been a change, such as a Departure or a rate change, that requires billing to be reversed and re-charged.|
+|    **Accommodation payment proposal**|used to charge unpaid interest and DAPs or DACs related to an accommodation payment.|
+|    **Interest payable to client proposal**|used to calculate interest payable to a departed client with an accommodation payment that has not yet been refunded.|
+|    **DMF/CRF proposal** |used to charge the deferred management and capital refurbishment fees for a retirement living lump sum payment.|
+|    **Exceeded leave adjustment proposal**|used to calculate any fees due to leave taken exceeding the Department of Health caps.|
 
-    **Consolidate journal lines** – used to combine lines when there are multiple journal lines in the same journal for the same customer, billing code & service code.
-
-    **Billing journal adjustment proposal** – used to propose adjustments where there has been a change, such as a Departure or a rate change, that requires billing to be reversed and re-charged.
-
-    **Accommodation payment proposal** – used to charge unpaid interest and DAPs or DACs related to an accommodation payment.
-
-    **Interest payable to client proposal** – used to calculate interest payable to a departed client with an accommodation payment that has not yet been refunded.
-
-    **DMF/CRF proposal** – used to charge the deferred management and capital refurbishment fees for a retirement living lump sum payment.
-
-    **Exceeded leave adjustment proposal** – used to calculate any fees due to leave taken exceeding the Department of Health caps.
 
 ![Billing_Journal_proposal_options](../IMAGES/Billing_Journal_proposal_options.png)
 
@@ -67,7 +65,7 @@ Navigate to: **Care services >  Billing > Journals > Billing journal**
 2.  Select the relevant billing journal from the drop-down menu.
 3.  Populate a meaningful description.
 4.  Click on **Lines**
-5.  Go to Billing proposal options  Billing journal proposal.
+5.  Go to Billing proposal options,  Billing journal proposal.
 6.  Populate the journal posting date.
 7.  Populate the end date.
 8.  Select ‘Include departed clients’ or ‘Departed clients only’ if required.
