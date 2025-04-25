@@ -27,7 +27,7 @@ ms.search.validFrom: 2025-03-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# Residential Care services and Retirement Villages
+# Residential Care Services and Retirement Villages
 Manual journals can be entered or imported into the system.
 -   Journals can be generated from the billing schedules by running the Billing journal proposal. The proposal utilises the Billing schedule to automatically generate transactions up to the selected end date.
 -   Fees can be split to be paid by different parties, such as family members or third-party organisations.
@@ -42,7 +42,7 @@ Navigate to: **Care services >  Billing > Journals > Billing journal**
 
 -   There are multiple billing proposal options:
 
-|  **Field**  | **Description** | 
+|  **Propposal Type**  | **Description** | 
 |:---|:---|   
 | **Billing journal proposal**|used to generate billing up to a specified date for a specified client(s) or service(s) from the billing schedule lines.|
 |    **Consolidate journal lines**|used to combine lines when there are multiple journal lines in the same journal for the same customer, billing code & service code.|
