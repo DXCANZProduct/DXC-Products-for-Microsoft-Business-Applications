@@ -12,6 +12,6 @@ For more information on the enums for DXC EDI and it's related modules, refer to
 |SAB_EDIDocumentTypeHierarchyType||
 
 ### Classes
-|Element| Description|
-|--|--|
-|Test|Test|
+| Element | Description |
+| -- | -- |
+| Test  | Test |
