@@ -116,7 +116,7 @@ Navigate to: **Care services >  All Customers >  Invoice >  Billing  schedule**
 5.  Click on **New** to create a new line, populate the second customer account, copy the accommodation payment reference from line 1 and the percentage rate.
 6.  Note that the total percentage must be 100.
 
-*![](media/56d97c501f855e5c7deb847ae33735e5.png)*
+![Billing-Invoice–Split-Billing](../IMAGES/Billing-Invoice–Split-Billing.png)
 
 *Billing invoice - Split billing*
 
@@ -132,7 +132,7 @@ Navigate to: **Care services  Billing  Journals  Billing Journals Lines**
 
 ### Billing schedule and rate adjustments
 
--   Billing schedule adjustments, such as adding or ending fees and changes to the billing rates, are managed via the client billing schedule.
+-   Billing schedule adjustments, such as adding or ending fees and changing billing rates, are managed via the client billing schedule.
 -   Global rate updates, such as the  Basic Daily Care fee, will not require a separate update for each client. The rate will be automatically updated for the relevant clients.
 
 Navigate to: **Care services  All Customers Invoice  Billing journal schedule**
@@ -144,13 +144,13 @@ Navigate to: **Care services  All Customers Invoice  Billing journal schedule**
 5.  Click **New** to create a new line.
 6.  Populate the new start date and new amount.
 7.  Click **Save** and close the Billing rates form.
-8.  The **‘Adjustment required’** flag will be set to Y when the fee has been billed in advanced (‘Last run date’ is after the start date of the new rate)
+8.  The **‘Adjustment required’** flag will be set to Y when the fee has been billed in advance (‘Last run date’ is after the start date of the new rate)
 
-![](media/af92b80784d128b74de7060d5b6a9a37.png)
+![New-billing-rate](../IMAGES/New-billing-rate.png)
 
 *New billing rate*
 
-![](media/3805792af743cb333a868176c41eb79a.png)
+![Adjustment-required-flag](../IMAGES/Adjustment-required-flag.png)
 
 *Adjustment required flag*
 
@@ -173,7 +173,7 @@ Navigate to: **Care services  Billing  Journals  Billing Journals Lines**
 7.  Click on **Filter**
 8.  Specify the required criteria for generating the billing journals (customer account, Service code, billing code)
 9.  Click **OK**
-10. *If required, setup the job to run in the background. Select Batch processing to Yes*
+10. *If required, set up the job to run in the background. Select Batch processing to Yes*
 11. *Click on Recurrence*
 12. *The default value is for the job to run once (End after:1) If it is a requirement for the job to run at a regular interval, then set up the required recurrence pattern.*
 13. *Click OK to close the Recurrence form.*
@@ -183,7 +183,7 @@ Navigate to: **Care services  Billing  Journals  Billing Journals Lines**
 17. One line will be for the relevant days on the old billing rate.
 18. The second line will be for the relevant days on the new billing rate.
 
-### Billing Capping limits
+### Billing Capping Limits
 
 -   Capping limits are the amounts specified by the government as the maximum annual or lifetime amount that can be charged of a particular type of fee, such as means-tested fees or income-tested fees.
 -   If the ‘allow charge beyond capping limits’ is set to yes, then the billing will continue even if the cap has been reached.
@@ -205,7 +205,7 @@ Navigate to: **Care services  Billing  Journals  Billing Journals Lines**
 
 # Accommodation Payments
 
-Prior to generating Accommodation payment transactions, ensure the Accommodation payment setup has been completed for the client (Path: **Care services  All Customers  Invoice  Set up  Accommodation payment)
+Before generating Accommodation payment transactions, ensure the Accommodation payment setup has been completed for the client (Path: **Care services  All Customers  Invoice  Set up  Accommodation payment)
 
 ### Accommodation payment lump sum invoice
 
