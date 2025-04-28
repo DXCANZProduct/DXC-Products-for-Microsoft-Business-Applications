@@ -332,14 +332,14 @@ Note: If your document type if not visible, navigate to EDI > Setup > EDI parame
 ### Enums
 For more information on the enums for DXC EDI and it's related modules, refer to the Application Explorer (AOT) within a D365 FSCM development environment.  
 
-|Enum name| Description|
+|Element| Description|
 |--|--|
 |SAB_EDIDocumentType||
 |SAB_EDIDocumentTypeHierarchyType||
 
 
 ### Classes
-|||
+|Element| Description|
 |--|--|
 |[SAB_EDIDocumentSettingsContract](#sab_edidocumentsettingscontract)|Abstract class for document settings profile parameters|
 |[SAB_EDIDocumentSettingsDialogService](#sab_edidocumentsettingsdialogservice)|Abstract class for document settings profile dialog|
@@ -354,7 +354,7 @@ For more information on the enums for DXC EDI and it's related modules, refer to
 |[SAB_EDIXSDGeneratorSchemaItem](#sab_edixsdgeneratorschemaitem)||
 
 #### SAB_EDIDocumentSettingsContract
-| Definition| |
+| Definition| Description|
 |--|--|  
 |__Access modifier__| public  |
 |__Non-access modifier__| abstract|
@@ -362,8 +362,8 @@ For more information on the enums for DXC EDI and it's related modules, refer to
 
 __Properties__
 
-||||
-|--|--|--|
+|Data type| Name| 
+|--|--|
 |SAB_EDIDocumentSettingsProfileRefRecId|profile|
 
 
@@ -380,7 +380,7 @@ __Methods__
 |serviceMethodStr|IdentifierName|Abstract method to return the name of your dialog service run method, example, methodStr(SAB_EDIDocumentSettingsDialogService_InboundExample, run)|
 
 #### SAB_EDIDocumentSettingsDialogService
-| Definition| |
+| Definition|Description |
 |--|--|  
 |__Access modifier__| public  |
 |__Non-access modifier__| abstract|
@@ -406,14 +406,14 @@ __Methods__
 |__Source__| SAB_EDIDocumentTypeClass.xpp |  
 
 __Constructors__
-|  |  |  |
-| -- | -- | -- |
+|  Method | Description  |
+| -- | -- | 
 | new() | Initializes a new instance of SAB_EDIDocumentTypeClass class. |
 
 __Properties__
 
-||||
-|--|--|--|
+|Data type|Name|
+|--|--|
 |SAB_EDIDocumentTypeTable|documentTypeTable|
 |SAB_EDIDocumentType|documentType|
 |UnknownNoYes|featureEnaled|
@@ -439,7 +439,7 @@ __Methods__
 |tableIdTradingPartnerDefault|TableId|The tableIdTradingPartnerDefault returns the table id of the trading partner defaulting table|
 
 #### SAB_EDIStagingFormClass
-| Definition| |
+| Definition| Description |
 |--|--|  
 |__Access modifier__| public  |
 |__Non-access modifier__| abstract|
@@ -455,7 +455,7 @@ __Methods__
 |mainGridFieldGroup|str|The mainGridFieldGroup the tableFieldGroupStr of the field group that comprises of all data required to be displayed on the main grid of the staging form|
 
 #### SAB_EDIProcessor
-| Definition| |
+| Definition| Description |
 |--|--|  
 |__Access modifier__| public  |
 |__Non-access modifier__| abstract|
@@ -463,8 +463,8 @@ __Methods__
 
 __Properties__
 
-||||
-|--|--|--|
+|Data type| Name|
+|--|--|
 |SAB_EDIStagingHeader|ediStagingHeader|
 |RecId|stagingTableRecId|
 |SAB_EDIDocumentType|documentType|
@@ -480,7 +480,7 @@ __Methods__
 |postProcess|void|Abstract method to perform any additional logic after document has been processed |
 
 #### SAB_EDIProcessor_PicklistRegistration
-| Definition| |
+| Definition| Description|
 |--|--|  
 |__Access modifier__| public  |
 |__Source__| SAB_EDIProcessor_PicklistRegistration.xpp |  
@@ -488,8 +488,8 @@ __Methods__
 
 __Properties__
 
-||||
-|--|--|--|
+|Data type|Name|
+|--|--|
 |SAB_EDIPicklistRegistrationStaging|stagingCaller|
 |SAB_EDIDocumentSettingsContract_PicklistRegistration|
 
@@ -502,7 +502,7 @@ __Methods__
 |processShipTransferOrder(WMSPickingRoute)|void|Process transfer order|
 
 #### SAB_EDIOutboundStagingWriter
-| Definition| |
+| Definition| Description|
 |--|--|  
 |__Access modifier__| public  |
 |__Non-access modifier__| abstract|
@@ -510,8 +510,8 @@ __Methods__
 
 __Properties__
 
-||||
-|--|--|--|
+|Data type| Name|
+|--|--|
 |QueryRun|queryRun|
 |Common|sourceBuffer|
 |SAB_EDIDocumentType|documentType|
@@ -540,15 +540,15 @@ __Methods__
 |tradingPartnerTableId|TableId | Returns the table Id for the trading partner |
 
 ### SAB_EDIXSDGenerator
-| Definition| |
+| Definition|Description |
 |--|--|  
 |__Access modifier__| public  |
 |__Source__| SAB_EDIXSDGenerator.xpp |  
 
 __Properties__
 
-||||
-|--|--|--|
+|Data type|Name|
+|--|--|
 |System.Xml.Schema.XmlSchema|schema|
 |SAB_EDITemplate|template|
 |SAB_EDIXSDGeneratorSchemaItem|currentSchemaItem|
@@ -562,7 +562,7 @@ __Methods__
 |createElement||Has been moved to [SAB_EDIXSDGeneratorSchemaItem](#sab_edixsdgeneratorschemaitem)| 
 
 #### SAB_EDIXSDGeneratorSchemaItem
-| Definition| |
+| Definition| Description|
 |--|--|  
 |__Access modifier__| public  |
 |__Source__| SAB_EDIXSDGeneratorSchemaItem.xpp |
@@ -574,7 +574,7 @@ __Methods__
 
 ### Maps
 
-|||
+|Element|Description|
 |--|--|
 |[SAB_EDIStagingHeader](#sab_edistagingheader)| Contains all fields required to be present within an EDI staging header table|
 |[SAB_EDIStagingLine](#sab_edistagingline)|Contains all fields required to be present within an EDI staging line table|
