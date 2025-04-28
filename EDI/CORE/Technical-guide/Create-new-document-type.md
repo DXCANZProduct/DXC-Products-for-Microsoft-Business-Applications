@@ -330,12 +330,14 @@ Note: If your document type if not visible, navigate to EDI > Setup > EDI parame
 
 ## EDI module library for D365 FSCM
 ### Enums
-For more information on the enums for DXC EDI and it's related modules, refer to the Application Explorer (AOT) within a D365 FSCM development environment.
-|||
+For more information on the enums for DXC EDI and it's related modules, refer to the Application Explorer (AOT) within a D365 FSCM development environment.  
+
+|Enum name| Description|
 |--|--|
 |SAB_EDIDocumentType||
 |SAB_EDIDocumentTypeHierarchyType||
-|||
+
+
 ### Classes
 |||
 |--|--|

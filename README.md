@@ -42,7 +42,3 @@ The End User License Agreement (EULA) can be found [here](https://dxc.com/au/en/
 ### FAQ
 
 Please see our [Frequently Asked Questions](FAQ.md) for general questions.
-
-### Subscribe to Notifications
-
-Please follow [this link ](./MARKETING-COMMUNICATIONS/subscribe.html) to subscribe.
