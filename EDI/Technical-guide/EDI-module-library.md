@@ -80,21 +80,22 @@ Methods for class SAB_EDIDocumentSettingsDialogService
 
 #### SAB_EDIDocumentSettingsUIBuilder
 For more information please reach out to the support team.  
-| Definition| |
+
+| Definition| Description|
 |--|--|  
 |__Access modifier__| public  |
+|__Extends__| SysOperationAutomaticUIBuilder|
 |__Source__| SAB_EDIDocumentSettingsUIBuilder.xpp |
-|__Extends__| SysOperationAutomaticUIBuilder |
+
 
 #### SAB_EDIDocumentTypeClass
 For more information please reach out to the support team.  
 
-Definition for class SAB_EDIDocumentTypeClass  
-| Definition| |
+| Definition| Description|
 |--|--|  
 |__Access modifier__| public  |
 |__Non-access modifier__| abstract|
-|__Source__| SAB_EDIDocumentTypeClass.xpp |  
+|__Source__| SAB_EDIDocumentTypeClass.xpp | 
 
 __Constructors__  
 Constructors for class SAB_EDIDocumentTypeClass  
@@ -134,12 +135,11 @@ Methods for class SAB_EDIDocumentTypeClass
 #### SAB_EDIStagingFormClass
 For more information please reach out to the support team.  
 
-Definition for class SAB_EDIStagingFormClass  
-| Definition| Description |
+| Definition| Description|
 |--|--|  
 |__Access modifier__| public  |
 |__Non-access modifier__| abstract|
-|__Source__| SAB_EDIStagingFormClass.xpp |  
+|__Source__| SAB_EDIStagingFormClass.xpp |
 
 __Methods__
 Methods for class SAB_EDIStagingFormClass  
@@ -153,11 +153,12 @@ Methods for class SAB_EDIStagingFormClass
 
 #### SAB_EDIProcessor
 For more information please reach out to the support team.  
-| Definition| Description |
+
+| Definition| Description|
 |--|--|  
 |__Access modifier__| public  |
 |__Non-access modifier__| abstract|
-|__Source__| SAB_EDIProcessor.xpp |  
+|__Source__| SAB_EDIProcessor.xpp |
 
 __Properties__  
 Properties for class SAB_EDIProcessor  
@@ -180,11 +181,13 @@ Methods for class SAB_EDIProcessor
 
 #### SAB_EDIProcessor_PicklistRegistration
 For more information please reach out to the support team.  
+
 | Definition| Description|
 |--|--|  
 |__Access modifier__| public  |
-|__Source__| SAB_EDIProcessor_PicklistRegistration.xpp |  
-|__Extends__|SAB_EDIProcessor_3PL|
+|__Extends__| SAB_EDIProcessor_3PL|
+|__Source__| SAB_EDIProcessor_PicklistRegistration.xpp |
+
 
 __Properties__  
 Properties for class SAB_EDIProcessor_PicklistRegistration  
