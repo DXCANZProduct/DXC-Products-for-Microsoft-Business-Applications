@@ -29,7 +29,7 @@ For more information please reach out to the support team.
 |[SAB_EDIXSDGenerator](#sab_edixsdgenerator)||
 |[SAB_EDIXSDGeneratorSchemaItem](#sab_edixsdgeneratorschemaitem)||
 
-#### SAB_EDIDocumentSettingsContract
+#### SAB_EDIDocumentSettingsContract  
 Definition for class SAB_EDIDocumentSettingsContract
 
 | Definition| Description|
@@ -38,15 +38,15 @@ Definition for class SAB_EDIDocumentSettingsContract
 |__Non-access modifier__| abstract|
 |__Source__| SAB_EDIDocumentSettingsContract.xpp |  
 
-__Properties__
-Properties for class SAB_EDIDocumentSettingsContract
+__Properties__  
+Properties for class SAB_EDIDocumentSettingsContract  
 
 |Data type| Name| 
 |--|--|
 |SAB_EDIDocumentSettingsProfileRefRecId|profile|
 
 
-__Methods__
+__Methods__  
 Methods for class SAB_EDIDocumentSettingsContract  
 
 |Name|Returns|Description|
@@ -60,24 +60,25 @@ Methods for class SAB_EDIDocumentSettingsContract
 |serviceClassStr|IdentifierName|Abstract method to return the name of your dialog service class example, classStr(SAB_EDIDocumentSettingsDialogService_InboundExample)|
 |serviceMethodStr|IdentifierName|Abstract method to return the name of your dialog service run method, example, methodStr(SAB_EDIDocumentSettingsDialogService_InboundExample, run)|
 
-#### SAB_EDIDocumentSettingsDialogService
-For more information please reach out to the support team.
+#### SAB_EDIDocumentSettingsDialogService  
+For more information please reach out to the support team.  
 
+Definition for class SAB_EDIDocumentSettingsDialogService  
 | Definition|Description |
 |--|--|  
 |__Access modifier__| public  |
 |__Non-access modifier__| abstract|
 |__Source__| SAB_EDIDocumentSettingsDialogService.xpp |
 
-__Methods__
-Methods for class SAB_EDIDocumentSettingsDialogService
+__Methods__  
+Methods for class SAB_EDIDocumentSettingsDialogService  
 
 |Name|Returns|Description|
 |--|--|--|
 |saveSettings(SAB_EDIDocumentSettingsContract) |final void|Saves the contract settings|
 
 #### SAB_EDIDocumentSettingsUIBuilder
-For more information please reach out to the support team.
+For more information please reach out to the support team.  
 | Definition| |
 |--|--|  
 |__Access modifier__| public  |
@@ -85,21 +86,23 @@ For more information please reach out to the support team.
 |__Extends__| SysOperationAutomaticUIBuilder |
 
 #### SAB_EDIDocumentTypeClass
-For more information please reach out to the support team.
+For more information please reach out to the support team.  
+
+Definition for class SAB_EDIDocumentTypeClass  
 | Definition| |
 |--|--|  
 |__Access modifier__| public  |
 |__Non-access modifier__| abstract|
 |__Source__| SAB_EDIDocumentTypeClass.xpp |  
 
-__Constructors__
-Constructors for class SAB_EDIDocumentTypeClass
+__Constructors__  
+Constructors for class SAB_EDIDocumentTypeClass  
 |  Method | Description  |
 | -- | -- | 
 | new() | Initializes a new instance of SAB_EDIDocumentTypeClass class. |
 
-__Properties__
-Properties for class SAB_EDIDocumentTypeClass
+__Properties__  
+Properties for class SAB_EDIDocumentTypeClass  
 |Data type|Name|
 |--|--|
 |SAB_EDIDocumentTypeTable|documentTypeTable|
@@ -107,8 +110,8 @@ Properties for class SAB_EDIDocumentTypeClass
 |UnknownNoYes|featureEnaled|
 |Map|documentTypeEnabledMap|
 
-__Methods__
-Methods for class SAB_EDIDocumentTypeClass
+__Methods__  
+Methods for class SAB_EDIDocumentTypeClass  
 |Name|Returns|Description|
 |--|--|--|
 |allowDuplicateStagingSourceDocs| boolean | The allowDuplicateStagingSourceDocs returns boolean flag to indicate if the document type allows duplicate staging source documents.|
@@ -128,7 +131,9 @@ Methods for class SAB_EDIDocumentTypeClass
 |tableIdTradingPartnerDefault|TableId|The tableIdTradingPartnerDefault returns the table id of the trading partner defaulting table|
 
 #### SAB_EDIStagingFormClass
-For more information please reach out to the support team.
+For more information please reach out to the support team.  
+
+Definition for class SAB_EDIStagingFormClass  
 | Definition| Description |
 |--|--|  
 |__Access modifier__| public  |
@@ -136,7 +141,7 @@ For more information please reach out to the support team.
 |__Source__| SAB_EDIStagingFormClass.xpp |  
 
 __Methods__
-Methods for class SAB_EDIStagingFormClass
+Methods for class SAB_EDIStagingFormClass  
 |Name|Returns|Description|
 |--|--|--|
 |DocumentType|SAB_EDIDocumentType| The DocumentType returns the document type enum value, SAB_EDIDocumentType(#enums)|
@@ -146,15 +151,15 @@ Methods for class SAB_EDIStagingFormClass
 |mainGridFieldGroup|str|The mainGridFieldGroup the tableFieldGroupStr of the field group that comprises of all data required to be displayed on the main grid of the staging form|
 
 #### SAB_EDIProcessor
-For more information please reach out to the support team.
+For more information please reach out to the support team.  
 | Definition| Description |
 |--|--|  
 |__Access modifier__| public  |
 |__Non-access modifier__| abstract|
 |__Source__| SAB_EDIProcessor.xpp |  
 
-__Properties__
-Properties for class SAB_EDIProcessor
+__Properties__  
+Properties for class SAB_EDIProcessor  
 |Data type| Name|
 |--|--|
 |SAB_EDIStagingHeader|ediStagingHeader|
@@ -164,8 +169,8 @@ Properties for class SAB_EDIProcessor
 |SAB_EDITradingPartner|tradingPartner|
 |NoYes|overrideError|
 
-__Methods__
-Methods for class SAB_EDIProcessor
+__Methods__  
+Methods for class SAB_EDIProcessor  
 |Name|Returns|Description|
 |--|--|--|
 |initDocument|void|Abstract method to initialize variables for document processing |
@@ -173,15 +178,15 @@ Methods for class SAB_EDIProcessor
 |postProcess|void|Abstract method to perform any additional logic after document has been processed |
 
 #### SAB_EDIProcessor_PicklistRegistration
-For more information please reach out to the support team.
+For more information please reach out to the support team.  
 | Definition| Description|
 |--|--|  
 |__Access modifier__| public  |
 |__Source__| SAB_EDIProcessor_PicklistRegistration.xpp |  
 |__Extends__|SAB_EDIProcessor_3PL|
 
-__Properties__
-Properties for class SAB_EDIProcessor_PicklistRegistration
+__Properties__  
+Properties for class SAB_EDIProcessor_PicklistRegistration  
 |Data type|Name|
 |--|--|
 |SAB_EDIPicklistRegistrationStaging|stagingCaller|
