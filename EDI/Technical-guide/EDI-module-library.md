@@ -104,12 +104,11 @@ Constructors for class SAB_EDIDocumentTypeClass
 | new() | Initializes a new instance of SAB_EDIDocumentTypeClass class. |
 
 __Properties__  
-Properties for class SAB_EDIDocumentTypeClass  
-|Data type|Name|
-|--|--|
-|SAB_EDIDocumentTypeTable|documentTypeTable|
-|SAB_EDIDocumentType|documentType|
-|UnknownNoYes|featureEnaled|
+| Data type| Name|
+|--|--|  
+|SAB_EDIDocumentTypeTable| documentTypeTable  |
+|SAB_EDIDocumentType| documentType |
+|UnknownNoYes| featureEnaled |
 |Map|documentTypeEnabledMap|
 
 __Methods__  
@@ -207,11 +206,12 @@ Methods for class SAB_EDIProcessor_PicklistRegistration
 
 #### SAB_EDIOutboundStagingWriter
 For more information please reach out to the support team.
+
 | Definition| Description|
 |--|--|  
 |__Access modifier__| public  |
 |__Non-access modifier__| abstract|
-|__Source__| SAB_EDIOutboundStagingWriter.xpp |  
+|__Source__| SAB_EDIOutboundStagingWriter.xpp |
 
 __Properties__
 Properties for class SAB_EDIOutboundStagingWriter
@@ -247,10 +247,11 @@ Methods for class SAB_EDIOutboundStagingWriter
 
 ### SAB_EDIXSDGenerator
 For more information please reach out to the support team.
-| Definition|Description |
+
+| Definition| Description|
 |--|--|  
 |__Access modifier__| public  |
-|__Source__| SAB_EDIXSDGenerator.xpp |  
+|__Source__| SAB_EDIXSDGenerator.xpp |
 
 __Properties__
 Properties for class SAB_EDIXSDGenerator
@@ -271,10 +272,12 @@ Methods for class SAB_EDIXSDGenerator
 
 #### SAB_EDIXSDGeneratorSchemaItem
 For more information please reach out to the support team.
+
 | Definition| Description|
 |--|--|  
 |__Access modifier__| public  |
 |__Source__| SAB_EDIXSDGeneratorSchemaItem.xpp |
+
 
 __Methods__
 Methods for class SAB_EDIXSDGeneratorSchemaItem
