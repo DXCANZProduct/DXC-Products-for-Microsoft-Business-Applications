@@ -60,7 +60,7 @@ For each integration, the **SAB_EDIExternalWebServiceIncoming** class needs to b
 This requires the web api settings for connection details.
 
 
-![Inbound services](../IMAGES/Web-API-inbound-services.png "Inbound services")
+![Inbound services](../Technical-guide/IMAGES/Web-API-inbound-services.png "Inbound services")
 
 ### GetAzureWriteUrl
 
