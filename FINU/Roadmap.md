@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Roadmap
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-19
+ms.date: 2025-04-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,14 +40,6 @@ This page describes the features planned for future releases and planned release
 
 ### Next release
 
-#### Encryption / Decryption
-- Generate PGP key
-- Validate encryption keys
-- PGP values in key vault
-
-### Connections
-- SFTP Proxy
-
 ### Accounts payable
 - Create vendor from ABN - where ABN validation is enabled for the legal entity
 
@@ -62,6 +54,9 @@ This page describes the features planned for future releases and planned release
 
 #### AR Utilities
 - Cleanup AR Utilities staging
+
+### Connections
+- SFTP Proxy
 
 
 
