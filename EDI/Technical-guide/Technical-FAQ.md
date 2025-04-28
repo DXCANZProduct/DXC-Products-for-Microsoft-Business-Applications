@@ -3,9 +3,9 @@
 
 title: EDI
 description: Technical guide - FAQ
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2022-06-20
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-04-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDI
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -33,7 +33,7 @@ ms.dyn365.ops.version:  AX 7.0.1
 
 Additional fields can be added to staging header and/or line table(s). Classes that need to be updated can be found by using references on other/similar fields from the applicable staging table(s). For instance references for DeliveryName on below screenshot.
 
-![Example](../Image/Technical-FAQ-1.png "Example")
+![Example](../IMAGES/Technical-FAQ-1.png "Example")
 
 The SAB_EDIStagingTableFieldMetaData table will be updated by the **Refresh EDI module** button on the **EDI parameters** form after staging fields were added.
  
@@ -68,7 +68,7 @@ Run full DB sync
 Standard actions you can try:
 
 1. Try to repeat the deploy one more time and/or restart UAT VM in case if something went wrong and the file mentioned  is really locked by some system process
-1. If still doesn’t work, follow the recommended implementation steps as per [release notes](../../Release-notes.md#installation-process) (example remove source code of previous EDI version)
+1. If still doesn’t work, follow the recommended implementation steps as per [release notes](../Release-notes.md#installation-process) (example remove source code of previous EDI version)
 
 ## Deployment issues with model source code
 
