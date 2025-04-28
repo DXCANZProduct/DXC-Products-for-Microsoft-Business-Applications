@@ -98,9 +98,7 @@ For more information please reach out to the support team.
 |__Source__| SAB_EDIDocumentTypeClass.xpp | 
 
 __Constructors__  
-| Method | Description|
-| -- | -- |
-|||
+Constructors for class SAB_EDIDocumentTypeClass  
 
 
 |  Method | Description  |
@@ -119,6 +117,7 @@ Properties for class SAB_EDIDocumentTypeClass
 
 __Methods__  
 Methods for class SAB_EDIDocumentTypeClass  
+
 |Name|Returns|Description|
 |--|--|--|
 |allowDuplicateStagingSourceDocs| boolean | The allowDuplicateStagingSourceDocs returns boolean flag to indicate if the document type allows duplicate staging source documents.|
@@ -137,7 +136,7 @@ Methods for class SAB_EDIDocumentTypeClass
 |tableIdLine|TableId|The tableIdLine returns the table Id for the EDI document line table|
 |tableIdTradingPartnerDefault|TableId|The tableIdTradingPartnerDefault returns the table id of the trading partner defaulting table|
 
-#### SAB_EDIStagingFormClass
+#### SAB_EDIStagingFormClass  
 For more information please reach out to the support team.  
 
 | Definition| Description|
@@ -146,8 +145,9 @@ For more information please reach out to the support team.
 |__Non-access modifier__| abstract|
 |__Source__| SAB_EDIStagingFormClass.xpp |
 
-__Methods__
+__Methods__  
 Methods for class SAB_EDIStagingFormClass  
+
 |Name|Returns|Description|
 |--|--|--|
 |DocumentType|SAB_EDIDocumentType| The DocumentType returns the document type enum value, SAB_EDIDocumentType(#enums)|
@@ -165,8 +165,9 @@ For more information please reach out to the support team.
 |__Non-access modifier__| abstract|
 |__Source__| SAB_EDIProcessor.xpp |
 
-__Properties__  
+__Properties__   
 Properties for class SAB_EDIProcessor  
+
 |Data type| Name|
 |--|--|
 |SAB_EDIStagingHeader|ediStagingHeader|
@@ -176,8 +177,9 @@ Properties for class SAB_EDIProcessor
 |SAB_EDITradingPartner|tradingPartner|
 |NoYes|overrideError|
 
-__Methods__  
-Methods for class SAB_EDIProcessor  
+__Methods__   
+Methods for class SAB_EDIProcessor   
+
 |Name|Returns|Description|
 |--|--|--|
 |initDocument|void|Abstract method to initialize variables for document processing |
@@ -196,13 +198,15 @@ For more information please reach out to the support team.
 
 __Properties__  
 Properties for class SAB_EDIProcessor_PicklistRegistration  
+
 |Data type|Name|
 |--|--|
 |SAB_EDIPicklistRegistrationStaging|stagingCaller|
 |SAB_EDIDocumentSettingsContract_PicklistRegistration|
 
-__Methods__
-Methods for class SAB_EDIProcessor_PicklistRegistration
+__Methods__  
+Methods for class SAB_EDIProcessor_PicklistRegistration 
+
 |Name|Returns|Description|
 |--|--|--|
 |processPackingSlip(WMSPickingRouteSAB_EDIWMSPickingRouteExt| void | Processes packing slip based on transType of the picking route.  Sales - Executes processPackingSlip_salesOrder. TransferOrderShip - Executes processShipTransferOrder. Default - Executes delegate processPackingSlip_delegate |
@@ -210,7 +214,7 @@ Methods for class SAB_EDIProcessor_PicklistRegistration
 |processPackingSlip_salesOrder(WMSPickingRoute)|void|Process sales order|
 |processShipTransferOrder(WMSPickingRoute)|void|Process transfer order|
 
-#### SAB_EDIOutboundStagingWriter
+#### SAB_EDIOutboundStagingWriter  
 For more information please reach out to the support team.
 
 | Definition| Description|
@@ -219,8 +223,9 @@ For more information please reach out to the support team.
 |__Non-access modifier__| abstract|
 |__Source__| SAB_EDIOutboundStagingWriter.xpp |
 
-__Properties__
-Properties for class SAB_EDIOutboundStagingWriter
+__Properties__  
+Properties for class SAB_EDIOutboundStagingWriter  
+
 |Data type| Name|
 |--|--|
 |QueryRun|queryRun|
@@ -237,8 +242,9 @@ Properties for class SAB_EDIOutboundStagingWriter
 |boolean|isDocumentHasLines|
 |SAB_EDILineNum|ediLineNumber|
 
-__Methods__
-Methods for class SAB_EDIOutboundStagingWriter
+__Methods__  
+Methods for class SAB_EDIOutboundStagingWriter  
+
 |Name|Returns|Description|
 |--|--|--|
 |caption|str|Name of the document|
@@ -259,8 +265,9 @@ For more information please reach out to the support team.
 |__Access modifier__| public  |
 |__Source__| SAB_EDIXSDGenerator.xpp |
 
-__Properties__
-Properties for class SAB_EDIXSDGenerator
+__Properties__  
+Properties for class SAB_EDIXSDGenerator  
+
 |Data type|Name|
 |--|--|
 |System.Xml.Schema.XmlSchema|schema|
@@ -268,8 +275,9 @@ Properties for class SAB_EDIXSDGenerator
 |SAB_EDIXSDGeneratorSchemaItem|currentSchemaItem|
 |SAB_EDIITemplateTreeNode|templateRootNode|
 
-__Methods__
-Methods for class SAB_EDIXSDGenerator
+__Methods__  
+Methods for class SAB_EDIXSDGenerator  
+
 |Name|Returns|Description|
 |--|--|--|
 |init|boolean||
@@ -286,12 +294,14 @@ For more information please reach out to the support team.
 
 
 __Methods__
-Methods for class SAB_EDIXSDGeneratorSchemaItem
+Methods for class SAB_EDIXSDGeneratorSchemaItem  
+
 |Name|Returns|Description|
 |--|--|--|
 |createElement(SAB_EDIField _ediField)|System.Xml.Schema.XmlSchemaElement||
 
-### Maps
+### Maps  
+For more information please reach out to the support team.
 
 |Element|Description|
 |--|--|
@@ -299,9 +309,11 @@ Methods for class SAB_EDIXSDGeneratorSchemaItem
 |[SAB_EDIStagingLine](#sab_edistagingline)|Contains all fields required to be present within an EDI staging line table|
 
 #### SAB_EDIStagingHeader
-For more information please reach out to the support team.
-__Methods__
-Methods for map SAB_EDIStagingHeader
+For more information please reach out to the support team.  
+
+__Methods__  
+Methods for map SAB_EDIStagingHeader  
+
 |Name|Returns|Description|
 |--|--|--|
 |newStagingHeader(SAB_EDIDocumentType)|SAB_EDIStagingHeader|The newStagingHeader returns staging header record based on the document type |
@@ -328,9 +340,11 @@ Methods for map SAB_EDIStagingHeader
 
 
 #### SAB_EDIStagingLine
-For more information please reach out to the support team.
-__Methods__
-Methods for map SAB_EDIStagingLine
+For more information please reach out to the support team.  
+
+__Methods__  
+Methods for map SAB_EDIStagingLine  
+
 
 |Name|Returns|Description|
 |--|--|--|
