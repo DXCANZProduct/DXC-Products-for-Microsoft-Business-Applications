@@ -63,6 +63,12 @@ Methods for class SAB_EDIDocumentSettingsContract
 #### SAB_EDIDocumentSettingsDialogService  
 For more information please reach out to the support team.  
 
+| Definition| Description|
+|--|--|  
+|__Access modifier__| public  |
+|__Non-access modifier__| abstract|
+|__Source__| SAB_EDIDocumentSettingsContract.xpp |
+
 Definition for class SAB_EDIDocumentSettingsDialogService  
 | Definition | Description |  
 | -- | -- |  
