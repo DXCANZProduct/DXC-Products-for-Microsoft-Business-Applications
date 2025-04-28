@@ -38,12 +38,10 @@ This page describes the features planned for future releases and planned release
 - April 2024
 
 
-### Next release
+## Roadmap features
 
 ### Accounts payable
 - Create vendor from ABN - where ABN validation is enabled for the legal entity
-
-## Roadmap
 
 #### Accounts payable 
 - ER format Payment advice
