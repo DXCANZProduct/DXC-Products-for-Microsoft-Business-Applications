@@ -33,7 +33,7 @@ ms.dyn365.ops.version:  AX 7.0.1
 
 Additional fields can be added to staging header and/or line table(s). Classes that need to be updated can be found by using references on other/similar fields from the applicable staging table(s). For instance references for DeliveryName on below screenshot.
 
-![Example](../IMAGES/Technical-FAQ-1.png "Example")
+![Example](../Technical-guide/IMAGES/Technical-FAQ-1.png "Example")
 
 The SAB_EDIStagingTableFieldMetaData table will be updated by the **Refresh EDI module** button on the **EDI parameters** form after staging fields were added.
  
@@ -68,7 +68,7 @@ Run full DB sync
 Standard actions you can try:
 
 1. Try to repeat the deploy one more time and/or restart UAT VM in case if something went wrong and the file mentioned  is really locked by some system process
-1. If still doesn’t work, follow the recommended implementation steps as per [release notes](../Release-notes.md#installation-process) (example remove source code of previous EDI version)
+1. If still doesn’t work, follow the recommended implementation steps as per [release notes](../../Release-notes.md#installation-process) (example remove source code of previous EDI version)
 
 ## Deployment issues with model source code
 
