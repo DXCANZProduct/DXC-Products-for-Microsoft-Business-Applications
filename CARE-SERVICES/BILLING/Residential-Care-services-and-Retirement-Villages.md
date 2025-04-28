@@ -124,7 +124,7 @@ Navigate to: **Care services >  All Customers >  Invoice >  Billing  schedule**
 
 The consolidation process is used when there are multiple journal lines in the same journal for the same customer, billing code & service code to combine the lines.
 
-Navigate to: **Care services  Billing  Journals  Billing Journals Lines**
+Navigate to: **Care services >  Billing > Journals > Billing journal > Lines**
 
 1.  Go to Billing proposal options,  Billing journal proposal.
 2.  Select **Consolidate journal lines**
@@ -135,7 +135,7 @@ Navigate to: **Care services  Billing  Journals  Billing Journals Lines**
 -   Billing schedule adjustments, such as adding or ending fees and changing billing rates, are managed via the client billing schedule.
 -   Global rate updates, such as the  Basic Daily Care fee, will not require a separate update for each client. The rate will be automatically updated for the relevant clients.
 
-Navigate to: **Care services  All Customers Invoice  Billing journal schedule**
+Navigate to: **Care services >  All Customers >  Invoice >  Billing  schedule**
 
 1.  Select the line for the fee to be adjusted.
 2.  Populate the end date if the fee is no longer billed. Leave it blank if the fee is still applicable.
@@ -162,9 +162,9 @@ Billing adjustments are run whenever a client has billing that is required to be
 -   has been billed in advance and then departs.
 -   has been billed in advance, and after payment of the accommodation payment lump sum, requests for fees to be drawn down instead.
 
-Navigate to: **Care services  Billing  Journals  Billing Journals Lines**
+Navigate to: **Care services >  Billing > Journals > Billing journal > Lines**
 
-1.  Go to Billing proposal options  Billing journal proposal.
+1.  Go to **Billing proposal options**.
 2.  Select **Billing journal adjustment proposal**
 3.  Populate the journal posting date.
 4.  Populate the end date.
@@ -175,13 +175,13 @@ Navigate to: **Care services  Billing  Journals  Billing Journals Lines**
 9.  Click **OK**
 10. *If required, set up the job to run in the background. Select Batch processing to Yes*
 11. *Click on Recurrence*
-12. *The default value is for the job to run once (End after:1) If it is a requirement for the job to run at a regular interval, then set up the required recurrence pattern.*
+12. *The default value is for the job to run once (End after:1). If it is a requirement for the job to run at a regular interval, then set up the required recurrence pattern.*
 13. *Click OK to close the Recurrence form.*
 14. *Click OK to add the job to the batch queue.*
 15. The total fee billed in advance will be reversed.
-16. There will be two new lines proposed.
-17. One line will be for the relevant days on the old billing rate.
-18. The second line will be for the relevant days on the new billing rate.
+    There will be two new lines proposed.
+    - One line will be for the relevant days on the old billing rate.
+    - The second line will be for the relevant days on the new billing rate.
 
 ### Billing Capping Limits
 
@@ -191,7 +191,7 @@ Navigate to: **Care services  Billing  Journals  Billing Journals Lines**
 -   Prior to generating the billing journal, ensure the capping limit setup has been completed for the client (Path: **Care services  All Customers  Set up  Capping limits setup)
 -   The client capping calculation periodic job updates the client capping limit setup after posting the journal.
 
-Navigate to: **Care services  Billing  Journals  Billing Journals Lines**
+Navigate to: **Care services >  Billing > Journals > Billing journal > Lines**
 
 1.  Go to Billing proposal options  **Billing journal proposal**
 2.  Populate the journal posting date.
