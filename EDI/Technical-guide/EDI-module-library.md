@@ -108,6 +108,8 @@ __Constructors__
 | new() | Initializes a new instance of SAB_EDIDocumentTypeClass class. |
 
 __Properties__  
+Properties for class SAB_EDIDocumentTypeClass  
+
 | Data type| Name|
 |--|--|  
 |SAB_EDIDocumentTypeTable| documentTypeTable  |
