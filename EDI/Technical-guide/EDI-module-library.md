@@ -30,6 +30,8 @@ For more information please reach out to the support team.
 |[SAB_EDIXSDGeneratorSchemaItem](#sab_edixsdgeneratorschemaitem)||
 
 #### SAB_EDIDocumentSettingsContract
+Definition for class SAB_EDIDocumentSettingsContract
+
 | Definition| Description|
 |--|--|  
 |__Access modifier__| public  |
@@ -37,6 +39,7 @@ For more information please reach out to the support team.
 |__Source__| SAB_EDIDocumentSettingsContract.xpp |  
 
 __Properties__
+Properties for class SAB_EDIDocumentSettingsContract
 
 |Data type| Name| 
 |--|--|
@@ -44,6 +47,8 @@ __Properties__
 
 
 __Methods__
+Methods for class SAB_EDIDocumentSettingsContract  
+
 |Name|Returns|Description|
 |--|--|--|
 |constructBasedOnDocumentType(SAB_EDIDocumentType, boolean _throwErrorOnNotFound = false |SAB_EDIDocumentSettingsContract||
@@ -56,6 +61,8 @@ __Methods__
 |serviceMethodStr|IdentifierName|Abstract method to return the name of your dialog service run method, example, methodStr(SAB_EDIDocumentSettingsDialogService_InboundExample, run)|
 
 #### SAB_EDIDocumentSettingsDialogService
+For more information please reach out to the support team.
+
 | Definition|Description |
 |--|--|  
 |__Access modifier__| public  |
