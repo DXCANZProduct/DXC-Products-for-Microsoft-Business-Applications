@@ -4,7 +4,7 @@ The DXC EDI module provides enhanced functionalities to Microsoft Dynamics 365 f
 
 **Table of contents**  
 [Create new document type](#create-new-document-type)  
-[Summary of breaking changes and mitigation steps](#summary-of-breaking-changes-and-mitigation-steps)
+[Summary of breaking changes and mitigation steps](#summary-of-breaking-changes-and-mitigation-steps)  
 [EDI module library for D365 FSCM](#edi-module-library-for-d365-fscm)
 
 ## Create new document type
