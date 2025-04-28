@@ -98,7 +98,11 @@ For more information please reach out to the support team.
 |__Source__| SAB_EDIDocumentTypeClass.xpp | 
 
 __Constructors__  
-Constructors for class SAB_EDIDocumentTypeClass  
+| Method | Description|
+| -- | -- |
+|||
+
+
 |  Method | Description  |
 | -- | -- | 
 | new() | Initializes a new instance of SAB_EDIDocumentTypeClass class. |
