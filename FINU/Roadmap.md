@@ -40,10 +40,8 @@ This page describes the features planned for future releases and planned release
 
 ## Roadmap features
 
-### Accounts payable
-- Create vendor from ABN - where ABN validation is enabled for the legal entity
-
 #### Accounts payable 
+- Create vendor from ABN - where ABN validation is enabled for the legal entity
 - ER format Payment advice
 - Import Return files
 
@@ -53,7 +51,7 @@ This page describes the features planned for future releases and planned release
 #### AR Utilities
 - Cleanup AR Utilities staging
 
-### Connections
+#### Connections
 - SFTP Proxy
 
 
