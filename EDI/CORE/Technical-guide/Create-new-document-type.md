@@ -4,6 +4,7 @@ The DXC EDI module provides enhanced functionalities to Microsoft Dynamics 365 f
 
 **Table of contents**  
 [Create new document type](#create-new-document-type)  
+[Summary of breaking changes and mitigation steps](#summary-of-breaking-changes-and-mitigation-steps)
 [EDI module library for D365 FSCM](#edi-module-library-for-d365-fscm)
 
 ## Create new document type
@@ -327,6 +328,50 @@ Note: If your document type if not visible, navigate to EDI > Setup > EDI parame
             return tableFieldGroupStr(EDIExtensionInboundHeaderStaging, Overview);
         }
         ```
+## Summary of breaking changes and mitigation steps
+As part of ongoing enhancements to the EDI core product, some changes introduced may impact customization. This section describes any known breaking and mitigation steps.
+
+### SAB_EDIDocumentSettingsContract
+The following changes affect extensions for this class. See [module library](#sab_edidocumentsettingscontract-1) for more info.
+
+1. findOrInitBufferForUpdate  
+   - Introduced In: 10.0.25.202206301  
+   - Description: Auto-resolves the document settings profile record given the table Id of the document settings profile document type table and field Id of the foreign key document setting profile field.  
+   - Impact: Two new abstract methods had been introduced. Both are required to be implemented in the extension classes.  
+     - Method 1: getPprofileTableId  
+        Example implementation:
+        ``` x++
+        returns tableNum(SAB_EDIDocumentSettingsProfile_ASN)
+        ```
+     - Method 2: getProfileFieldId  
+        Example implementation:
+        ```x++
+        returns fieldNum(SAB_EDIDocumentSettingsProfile_ASN, DocumentSettingsProfile)
+        ```
+
+### SAB_EDIXSDGenerator
+The following changes affect extensions for this class. See [module library](#sab_edixsdgenerator-1) for more info.
+
+1. init
+   - Introduced In: 10.0.25.202206301
+   - Description: Enhancement added to ensure XSD Generator is not executed if initialization did not occur as expected.
+   - Impact: Previously void, now expects a boolean value to be returned.
+2. writeStartSection
+    - Intoduced In: 10.0.25.202206301
+    - Description: Introduced SAB_EDIXSDGeneratorSchemaItem to host all logic related to schema item to enhance extensibility and maintainability
+    - Impact: A new parameter is required, sectionId (int64) to uniquely identify the section
+3. createElement
+   - Introduced In: 10.0.25.202206301 
+   - Description: 
+   - Impact: Moved to new class, SAB_EDIXSDGeneratorSchemaItem
+
+### SAB_EDIProcessor_PickinglistRegistration
+The following changes affect extensions for this class. See [module library](#sab_ediprocessor_picklistregistration) for more info.
+
+1. processPackingSlip
+   - Introduced In: 10.0.27.202211082
+   - Description: Parameter SAB_EDIWMSPickingRouteExt is now auto-resolved during initialized
+   - Impact: Parameter SAB_EDIWMSPickingRouteExt is no longer required. 
 
 ## EDI module library for D365 FSCM
 ### Enums
@@ -341,7 +386,7 @@ For more information on the enums for DXC EDI and it's related modules, refer to
 ### Classes
 |Element| Description|
 |--|--|
-|[SAB_EDIDocumentSettingsContract](#sab_edidocumentsettingscontract)|Abstract class for document settings profile parameters|
+|[SAB_EDIDocumentSettingsContract](#sab_edidocumentsettingscontract-1)|Abstract class for document settings profile parameters|
 |[SAB_EDIDocumentSettingsDialogService](#sab_edidocumentsettingsdialogservice)|Abstract class for document settings profile dialog|
 |[SAB_EDIDocumentSettingsUIBuilder](#sab_edidocumentsettingsuibuilder)|UI builder class for document settings profile dialog UI|
 |[SAB_EDIDocumentTypeClass](#sab_edidocumenttypeclass)| Abstract class for implement EDI document types. |
