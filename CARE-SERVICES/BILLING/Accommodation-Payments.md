@@ -2,7 +2,7 @@
 # required metadata
 
 title: DXC Care services 
-Description: Care services Accommodation Payments
+Description: Care services, Accommodation Payments
 author: Peter Musumeci 
 Manager: Pontus Ek
 ms.date: 2025-03-31
@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: Peter Musumeci
 ms.search.validFrom: 2025-03-31
-ms.dyn365.ops.version: AX 7.0.1
+ms.dyn365.ops.version: 10.0.40
 ---
 
 # Accommodation Payments
@@ -33,7 +33,7 @@ Before generating Accommodation payment transactions, ensure the Accommodation p
 
 ### Accommodation payment lump sum invoice
 
-Navigate to: **Care services > Billing > Journals > Billing journal **
+Navigate to: **Care services > Billing > Journals > Billing journal**
 
 1.  Click on **New** to create a new billing journal.
 2.  Select the relevant *accommodation payment lump sum invoice* journal from the drop-down menu
@@ -43,7 +43,7 @@ Navigate to: **Care services > Billing > Journals > Billing journal **
 6.  Select the client account.
 7.  Select the accommodation payment Billing account name.
 8.  Select the relevant service code.
-9.  Select the billing code for accommodation payment lump sum.
+9.  Select the billing code for the accommodation payment lump sum.
 10. Select the client’s accommodation payment id.
 11. Populate start date and end date.
 12. Leave the Qty/Days as 1.00
@@ -54,7 +54,7 @@ Navigate to: **Care services > Billing > Journals > Billing journal **
 
 Daily accommodation payments or unpaid interest amounts can be drawn down from the lump sum balance.
 
-Navigate to: **Care services  All customers  Invoice Accommodation payment**
+Navigate to: **Care services > All Customers > Invoice > Set up> Accommodation payment**
 
 1.  Change the **Billing account name** on the accommodation payment line to the relevant accommodation payment billing account name.
 2.  When the lump sum invoice has been fully or partially paid, the DAP/DAC and unpaid interest amounts will be drawn down from the lump sum, reducing the refundable balance.
@@ -64,7 +64,7 @@ Navigate to: **Care services  All customers  Invoice Accommodation payment**
 
 Fees can be drawn down from the lump sum balance.
 
-Navigate to: **Care services  All customers  Invoice Billing Schedule**
+Navigate to: **Care services > All Customers > Invoice > Set up > Billing schedule**
 
 1.  Select the fee to be drawn down from the accommodation payment lump sum.
 2.  Click on **Billing invoicee**
@@ -73,15 +73,15 @@ Navigate to: **Care services  All customers  Invoice Billing Schedule**
 5.  If the lump sum has not been fully or partially paid, the DAP/DAC and unpaid interest will be billed to the client.
 6.  Follow the steps in the **Billing journal proposal** section to generate the transactions.
 
-![](media/3e511a525ae57fe6e9395bbdd31dbfa8.png)
+![Change-Billing-account-name](../IMAGES/Change-Billing-account-name.png)
 
 *Change Billing account name for fee to be drawn down from the accommodation payment.*
 
 ### Adjustments to Fees drawn down from RAD/RAC
 
-Clients may request fees billed in advance to be drawn down from the accommodation payment lump sum when it has been paid.
+Care services > All Customers > Invoice > Set up >
 
-Navigate to: **Care services  All customers  Invoice Billing Schedule**
+Navigate to: **Care services > All Customers > Invoice > Set up > Billing Schedule**
 
 1.  Select the fee to be drawn down from the accommodation payment lump sum.
 2.  Populate an **End date** and **Bill to date** for the day before the lump sum receipt.
@@ -89,7 +89,7 @@ Navigate to: **Care services  All customers  Invoice Billing Schedule**
 4.  Go to **Billing Invoicee**
 5.  Change the Billing account name to the accommodation payment type.
 6.  Follow the steps in the **Billing journal adjustment section** to propose the adjustments.
-7.  The fees billed in advance will be reversed and two new lines generated, one for the fees billed up to the date of receipt and the second line for the drawn downs.
+7.  The fees billed in advance will be reversed and two new lines generated, one for the fees billed up to the date of receipt and the second line for the drawdowns.
 
 ### Managing changes to the accommodation payments
 
@@ -98,7 +98,7 @@ Navigate to: **Care services  All customers  Invoice Billing Schedule**
 -   The client may decide to change the payment method (e.g. from lump sum to Combination or from DAP/DAC to Combination etc)
 -   These adjustments are managed by adding a new accommodation payment line with the effective date and new values.
 
-Navigate to: **Care services  All customers  Invoice Accommodation payment**
+Navigate to: **Care services > All Customers > Invoice > Set up > Accommodation payment**
 
 1.  Populate the relevant **end date** on the current accommodation payment line.
 2.  Click on **Add line** to add a new line.
@@ -111,7 +111,7 @@ Navigate to: **Care services  All customers  Invoice Accommodation payment**
 
 ### Accommodation payment billing proposal
 
-Navigate to: **Care services  Billing  Journals  Billing Journals**
+Navigate to: **Care services > Billing > Journals > Billing journal**
 
 1.  Click on **New** to create a new billing journal.
 2.  Select the **relevant billing journal** from the drop-down menu.
@@ -131,7 +131,7 @@ Navigate to: **Care services  Billing  Journals  Billing Journals**
 16. *The default value is for the job to run once (End after:1) If it is a requirement for the job to run at a regular interval, then set up the required recurrence pattern.*
 17. *Click OK to close the Recurrence form.*
 18. *Click OK to add the job to the batch queue.*
-19. There will be separate lines generated for ongoing interest amounts (DAP/DAC) and interest on unpaid lump sum.
+19. There will be separate lines generated for ongoing interest amounts (DAP/DAC) and interest on an unpaid lump sum.
 20. The interest rate used for the calculations is the agreed interest rate on the client’s accommodation payment setup.
 21. If any adjustments are required, the original amount will be reversed, and new line(s) proposed with the relevant rates and amounts.
 22. Validate and post the journal.
@@ -144,7 +144,7 @@ Navigate to: **Care services  Billing  Journals  Billing Journals**
 -   If the reason for leaving is deceased, then the base rate is used until the Probate/Admin letter is received. The Probate/Admin letter date is populated in the client service entry when the letter is received.
 -   The MPIR will be applicable 14 days after the Probate/Admin letter date.
 
-Navigate to: **Care services  Billing  Journals  Billing Journals**
+Navigate to: **Care services > Billing > Journals > Billing journal**
 
 1.  Click on New to create a new billing journal.
 2.  Select the **relevant billing journal** from the drop-down menu.
@@ -172,9 +172,9 @@ Navigate to: **Care services  Billing  Journals  Billing Journals**
 -   In addition to the accommodation charges in retirement villages, the client can also be charged Deferred Management Fees (DMF) and Capital Refurbishment fees (CRF).
 -   These can only be defined for the Accommodation payment status “Ingoing contribution”.
 
-Navigate to: **Care services  Billing  Journals  Billing Journals**
+Navigate to: **Care services > Billing > Journals > Billing journal**
 
-1.  Click on New to create a new billing journal.
+1.  Click on *New* to create a new billing journal.
 2.  Select the relevant billing journal from the drop-down menu.
 3.  Populate a meaningful description.
 4.  Click on Lines
@@ -202,43 +202,7 @@ Navigate to: **Care services  Billing  Journals  Billing Journals**
 -   To generate the collection letter and email, ensure the client address or email has the purpose ‘Collection letter note’.
 -   If required, the logo from another legal entity can be used when creating the collection letter.
 
-### Collection letters – Residential Care services
 
-Navigate to: Credit and collections Collection letter**
-
-1.  Select **‘Create Residential care collection letters’**.
-2.  Populate the collection letter date.
-3.  Select the billing account name and legal entity for branding.
-4.  Click on Filter to specify customer or other criteria if required.
-5.  Click on Ok to create the residential care collection letters.
-6.  Go to **‘Review and process collection letters’**.
-7.  Filter on Collection letter type = Residential care.
-8.  Validate the collection letter code.
-9.  To print the selected letter, go to **PrintCollection letter note.**
-10. Validate the details on the letter and email.
-11. Go to ‘**Post collection letters’.**
-12. Populate the posting date and click on Filter to specify any additional criteria if required.
-13. Click OK to update the collection letter status to posted.
-14. Repeat the process, the next collection letter code will be generated as per setup in the relevant collection letter sequence.
-
-### Collection letters – Community care
-
-Navigate to: Credit and collections Collection letter**
-
-1.  Select **‘Create community care collection letters’**.
-2.  Populate the collection letter date.
-3.  Select the billing account name and legal entity for branding.
-4.  Click on Filter to specify customer or other criteria if required.
-5.  Click on Ok to create the community care collection letters.
-6.  Go to **‘Review and process collection letters’**.
-7.  Filter on Collection letter type = community care.
-8.  Validate the collection letter code.
-9.  To print the selected letter, go to **PrintCollection letter note.**
-10. Validate the details on the letter and email.
-11. Go to ‘**Post collection letters’.**
-12. Populate the posting date and click on Filter to specify any additional criteria if required.
-13. Click OK to update the collection letter status to posted.
-14. Repeat the process, the next collection letter code will be generated as per setup in the relevant collection letter sequence.
 
 # Receipts
 
