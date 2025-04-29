@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Care Services
-Description: DXC Care Services/Aged Care - Overview
+title: DXC Care services
+Description: DXC Care Services Aged Care - Overview
 author: PMusumeci
 Manager: Pontus, Ek
 ms.date: 2025-02-05
@@ -13,17 +13,17 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:
+ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: Peter Musumeci
+ms.reviewer: Peter Musumeci 
 
 # ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: Health, Care, Aged Care, Care Services
+ms.custom: ["21901", "intro-internal"]
+ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: Peter Musumeci
-ms.search.validFrom: 2025-02-05
+ms.search.validFrom: 2025-03-31
 ms.dyn365.ops.version: 10.0.40
 ---
 
