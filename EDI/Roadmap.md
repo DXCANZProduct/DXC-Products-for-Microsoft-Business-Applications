@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-04-28
+ms.date: 2025-05-01
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,12 +35,16 @@ This page describes the features planned for future releases and planned release
 
 ## Release schedule
 
-Release			| ETA
-:--			    |:--
-2025-05     | 30 May 2025
-2025-08     | 29 August 2025
+- May 2025
+- August 2025
+- December 2025
+- February 2026
 
 ## Roadmap features
+
+### Standard formats
+- Additional mapping functionality for X12 formats
+    - Option to skip applicable sections where staging values are blank or zero. For example can be used for 810 SAC section where the section is skipped when no charges applies to the invoice.
 
 ### Customer module
 - Project sales invoice outbound document
