@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-04-09
+ms.date: 2025-04-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -73,6 +73,25 @@ Release notes for other models included in product:
 			• Credential type: Key Vault <br>
 	 		• Connection string: Secret setup in step 3
 
+# Next version
+
+### Release 10.0.43.2025TBD
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+21806		| Various	| Azure connections	| Added ability to use container level shared access signature URI by setting new field **Disable storage account access** to _Yes_. <br> ![Container level SAS](Images/ReleaseNotes_20250331_6.png "Container level SAS") <br> ![Container level SAS](Images/ReleaseNotes_20250331_7.png "Container level SAS")
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+21957		| Various	| 10.0.43 build issue	| Fix 10.0.43 extra build issue on Reconciliation matching rules - Financial dimensions.
+21291		| Accounts payable	| Vendor payments	| Fix 10.0.43 issue where the value written to Finance Utilities field 'Export file name' was CustVendPaymERExport.updatePaymentItem instead of actual file name.
+21218		| Accounts payable	| Self billing / RCTI	| Fix to Consolidate by Receipt date. Issue occurred where multiple invoices were created for same purchase order.
+
+
 # Current version
 
 ### Release 10.0.42.20250408
@@ -103,7 +122,6 @@ Number	  	| Module	| Functionality	  	| Description
 20946		| Cash and bank management	| Bank statement periodic import | Where the bank statement has no transactions - now moving the file to archive instead of error folder. Also updated error message to infolog 'No bank statement was created as file contained no transactions'
 17536		| Cash and bank management	| Import bank statement	| New Financial utilities parameters field **Enable date range for custom bank statement formats** controls the **From date** and **To date** inputs on **Import bank statement** for custom bank statement formats. <br> • **No** (default) - From and To date won't be mandatory anymore and automatically calculate the from date as earliest date in file and To date as latest date in the file. Similar to our periodic import job. <br> • **Yes** - From and To date is still mandatory for custom bank statement formats. This is useful where a company only needs to import a certain date range for the particular bank statement.
 17536		| Cash and bank management	| Modern bank reconciliation	| Where the feature 'Modern bank reconciliation' is enabled, the bank statement form has been replaced with a new std form. Similar to Bank statement form with feature disabled, we replaced 'Import bank statement' dialog with Finance Utilities dialog which supports importing Finance Utilities custom formats.  
-21806		| Various	| Azure connections	| Added ability to use container level shared access signature URI by setting new field **Disable storage account access** to _Yes_. <br> ![Container level SAS](Images/ReleaseNotes_20250331_6.png "Container level SAS") <br> ![Container level SAS](Images/ReleaseNotes_20250331_7.png "Container level SAS")
 21689 <br> 21102 | Various	| DXC Connections	| New DXC Connections release 10.0.42.202504042 - [Release notes](../CONNECTIONS/Release-notes.md) <br> • SFTP connection migrated to DXC Connections model. <br> • Azure blob connection: added ability to use container level shared access signature URI <br> • Upgraded SFTP to latest 2024.2.0
 21719		| Various	| DXC Encryption	| New DXC Encryption release 10.0.42.202504041. See below for details.
 
