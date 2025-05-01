@@ -92,6 +92,7 @@ Number	  	| Module	| Functionality	  	| Description
 21957		| Various	| 10.0.43 build issue	| Fix 10.0.43 extra build issue on Reconciliation matching rules - Financial dimensions.
 21291		| Accounts payable	| Vendor payments	| Fix 10.0.43 issue where the value written to Finance Utilities field 'Export file name' was CustVendPaymERExport.updatePaymentItem instead of actual file name.
 21218		| Accounts payable	| Self billing / RCTI	| Fix to Consolidate by Receipt date. Issue occurred where multiple invoices were created for same purchase order.
+21950		| Cash and bank management	| Bank reconciliation	| Removed the requirement where a Bank transaction needs to be selected when using Match. This allows users to match two Bank statement transactions that balance to zero (reversals).
 
 
 # Current version
