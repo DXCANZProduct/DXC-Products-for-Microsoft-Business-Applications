@@ -42,7 +42,7 @@ This page describes the features planned for future releases and planned release
 
 ## Roadmap features
 
-### Standard formats
+### Standard formats module
 - Additional mapping functionality for X12 formats
     - Option to skip applicable sections where staging values are blank or zero. For example can be used for 810 SAC section where the section is skipped when no charges applies to the invoice.
 
