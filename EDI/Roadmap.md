@@ -42,17 +42,17 @@ This page describes the features planned for future releases and planned release
 
 ## Roadmap features
 
-### Standard formats module
+#### Standard formats module
 - Additional mapping functionality for X12 formats
     - Option to skip applicable sections where staging values are blank or zero. For example can be used for 810 SAC section where the section is skipped when no charges applies to the invoice.
 
-### Customer module
+#### Customer module
 - Project sales invoice outbound document
 
-### 3PL module
+#### 3PL module
 - Picking list registration Setting profile - Option to cancel deliver remainder
 
-### New module - Shipping carrier freight forwarder
+#### New module - Shipping carrier freight forwarder
 Outbound shipments for advanced and non advanced/basic warehouses
 
 - Outbound documents
