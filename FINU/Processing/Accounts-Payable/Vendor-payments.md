@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Accounts payable processing - Vendor Payments 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-09-19
+ms.date: 2025-05-01
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -60,6 +60,9 @@ The Payment advice report can be used in conjunction with sending via Email to t
 -	Accounts payable payment journal, from 'Accounts Payable > Payments > Payment journal' – when set as Sent the journal line is available for printing
 -	Vendor's transactions
 -	Payment history on the vendor
+
+- SSRS report - ECL_BankPaymAdviceVendV2
+- Electronic reporting (available on LCS solution) - Vendor payment adviceV2_DXC(Excel)
 
 # Payments report
 When creating a **Vendor payment journal**, it can be useful to print the **Payments** report to reconcile vendor bank details, before generating the EFT file.
