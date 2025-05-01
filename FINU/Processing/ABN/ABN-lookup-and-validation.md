@@ -46,7 +46,10 @@ The following setup are [prerequisites](../../Setup/ABN/ABN-lookup-and-validatio
 ## Vendors
 Go to **Accounts payable > Vendors > All vendors** and select the applicable Vendor. Choose either of the following: <br>
 - On the Action Pane, on the **Vendor** tab, in the **Registration** group, select **ABN lookup**. The vendor’s Name will be populated in the Search box. Add any advanced filters and select the **Search** button. In the Search results, select the applicable line and press OK, this will create (if required) and populate the **Tax exempt number** on the currently selected Vendor.
-- On the **Invoice and delivery** FastTab, select or view details on the **Tax exempt number** field. Select the **ABN lookup** button. Enter the company’s name in the Search box. Add any advanced filters and select the **Search** button. In the Search results, select the applicable line and press OK, this will create the Tax exempt number, but user still needs to assign it to the vendor in the **Invoice and delivery** FastTab. If using ABN to search, turn on **Search by ABN**.  
+- On the **Invoice and delivery** FastTab, select or view details on the **Tax exempt number** field. Select the **ABN lookup** button. Enter the company’s name in the Search box. Add any advanced filters and select the **Search** button. In the Search results, select the applicable line and press OK, this will create the Tax exempt number, but user still needs to assign it to the vendor in the **Invoice and delivery** FastTab. If using ABN to search, turn on **Search by ABN**.
+- **New ABN vendor** - Create a new vendor by entering their ABN. This automatically creates the new ABN and Vendor and populates vendor's name and assigns the ABN to the newly created vendor. Requirements:
+     - 'ABN validation' enabled for the legal entity
+     - Automatic number sequence used to create Vendor account ID
 
 ## Customers
 Go to **Accounts receivable > Customers > All customers** and select the applicable Customer. Choose either of the following: <br>
