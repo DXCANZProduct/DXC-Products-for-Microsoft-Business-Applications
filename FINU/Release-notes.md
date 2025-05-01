@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-04-30
+ms.date: 2025-05-01
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -82,6 +82,7 @@ Release notes for other models included in product:
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
 21806		| Various	| Azure connections	| Added ability to use container level shared access signature URI by setting new field **Disable storage account access** to _Yes_. <br> ![Container level SAS](Images/ReleaseNotes_20250331_6.png "Container level SAS") <br> ![Container level SAS](Images/ReleaseNotes_20250331_7.png "Container level SAS")
+21544		| Accounts payable	| ABN validation (only applicable to Australia)	| **New ABN vendor** - Create a new vendor by entering their ABN. This automatically creates the new ABN and Vendor and populates vendor's name and assigns the ABN to the newly created vendor. <br> Requirements: <br> • 'ABN validation' enabled for the legal entity <br> • Automatic number sequence used to create Vendor account ID <br> ![New ABN vendor](Images/ReleaseNotes_20250501_1.png "New ABN vendor")
 
 <ins>Bug fixes</ins>
 
