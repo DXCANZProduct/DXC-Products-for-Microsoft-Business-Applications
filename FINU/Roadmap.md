@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Roadmap
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-04-28
+ms.date: 2025-05-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,14 +35,12 @@ This page describes the features planned for future releases and planned release
 
 ## Release schedule
 
-- April 2024
+- June 2025
 
 
 ## Roadmap features
 
 #### Accounts payable 
-- Create vendor from ABN - where ABN validation is enabled for the legal entity
-- ER format Payment advice
 - Import Return files
 
 #### Accounts receivable
