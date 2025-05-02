@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-05-01
+ms.date: 2025-05-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -73,9 +73,18 @@ Release notes for other models included in product:
 			• Credential type: Key Vault <br>
 	 		• Connection string: Secret setup in step 3
 
-# Next version
+# Current version
 
-### Release 10.0.43.2025TBD
+### Release 10.0.43.20250502
+
+DXC Finance Utilities 10.0.43 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
+
+#### Build 10.0.43.202505021
+Release date: 2 May 2025
 
 <ins>New features</ins>
 
@@ -93,53 +102,6 @@ Number	  	| Module	| Functionality	  	| Description
 21291		| Accounts payable	| Vendor payments	| Fix 10.0.43 issue where the value written to Finance Utilities field 'Export file name' was CustVendPaymERExport.updatePaymentItem instead of actual file name.
 21218		| Accounts payable	| Self billing / RCTI	| Fix to Consolidate by Receipt date. Issue occurred where multiple invoices were created for same purchase order.
 21950		| Cash and bank management	| Bank reconciliation	| Removed the requirement where a Bank transaction needs to be selected when using Match. This allows users to match two Bank statement transactions that balance to zero (reversals).
-
-
-# Current version
-
-### Release 10.0.42.20250408
-
-DXC Finance Utilities 10.0.42 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
-Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
-
-#### Build 10.0.42.202504081
-Release date: 8 April 2025
-
-<ins>Bug fixes</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--   		|:--	           	|:--
-21612		| Various	| 10.0.43 build issue	| Fix 10.0.43 build issue on **Validate connection** for **API Endpoint** connection type. <br> Microsoft.IdentityModel.Clients.ActiveDirectory has been deprecated and no longer supported by FinOps and needs to be upgraded to now use Microsoft.Identity.Client <br> [Microsoft notice](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#azure-active-directory-authentication-library-adal)
-21732		| Various	| ABN validation	| Incorrect GST registered status where ABN hasn't registered for GST and the ABN has been cancelled - showed GST registered as Cancelled
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-21215		| Various	| ABN validation	| Where the ABN isn't registered for GST, use the earliest ABN entity status from date for **GST from** date.
-21210		| Various	| Encryption and Decryption	| Filtered drop-down options: <br> • Import connections to decrypt key types <br> • Export connections to encrypt key types <br> ![Decryption](Images/ReleaseNotes_20250331_3.png "Decryption") <br> <br> ![Encryption](Images/ReleaseNotes_20250331_4.png "Encryption")
-20946		| Cash and bank management	| Bank statement periodic import | Where the bank statement has no transactions - now moving the file to archive instead of error folder. Also updated error message to infolog 'No bank statement was created as file contained no transactions'
-17536		| Cash and bank management	| Import bank statement	| New Financial utilities parameters field **Enable date range for custom bank statement formats** controls the **From date** and **To date** inputs on **Import bank statement** for custom bank statement formats. <br> • **No** (default) - From and To date won't be mandatory anymore and automatically calculate the from date as earliest date in file and To date as latest date in the file. Similar to our periodic import job. <br> • **Yes** - From and To date is still mandatory for custom bank statement formats. This is useful where a company only needs to import a certain date range for the particular bank statement.
-17536		| Cash and bank management	| Modern bank reconciliation	| Where the feature 'Modern bank reconciliation' is enabled, the bank statement form has been replaced with a new std form. Similar to Bank statement form with feature disabled, we replaced 'Import bank statement' dialog with Finance Utilities dialog which supports importing Finance Utilities custom formats.  
-21689 <br> 21102 | Various	| DXC Connections	| New DXC Connections release 10.0.42.202504042 - [Release notes](../CONNECTIONS/Release-notes.md) <br> • SFTP connection migrated to DXC Connections model. <br> • Azure blob connection: added ability to use container level shared access signature URI <br> • Upgraded SFTP to latest 2024.2.0
-21719		| Various	| DXC Encryption	| New DXC Encryption release 10.0.42.202504041. See below for details.
-
-
-#### DXC Encryption Release 10.0.42.202504041
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-20654		| DXC Encryption	| Generate keys	| Ability to **Generate** encryption keys within FinOps on **DXC encryption parameters** <br> ![Generate encryption keys](Images/ReleaseNotes_20250331_1.png "Generate encryption keys")
-21545		| DXC Encryption	| Key values	| Previously the module only included the option for SAS URL to Azure blob file to store the Encryption keys. This change provides support for Secrets in Azure containing base 64 encoded data of the actual keys into D365 key vault. These secrets will then be pulled into FinOps as base64, and decoded before being used for encryption/decryption purposes.
-21698		| DXC Encryption	| Key values	| New field **Key source** provides the ability to store key values as string within FinOps. Options: <br> • **Key vault** (default) - Azure Storage SAS URL & Azure Secrets <br> • **String** - Store keys within FinOps without Azure + key vaults. Also includes option to download the public key <br> ![Store key values in FinOps](Images/ReleaseNotes_20250331_5.png "Store key values in FinOps")
-21548		| DXC Encryption	| Setup	| Moving **Private key** and **Counter party's public key** around in **DXC encryption parameters**
-21551		| DXC Encryption	| Validate	| Ability to validate encryption / decryption key name. Select applicable **Encryption key name**, click **Validate** which will open a dialog to browse to a file. <br> • **Encrypt / Encrypt and sign** - select a file that should be encrypted, if setup is correct the encrypted file will be created that can be sent to counter party for testing. <br> • **Decrypt / Decrypt and verify** - select encrypted file that should be decrypted, if setup is correct a decrypted file will be created. <br> ![Validate](Images/ReleaseNotes_20250331_2.png "Validate")
 
 
 # Deprecated features
@@ -182,6 +144,43 @@ This section describes the features that have been removed, or planned to be rem
 # Previous version(s)
 
 Approximately one year of previous versions are included below.
+
+### Release 10.0.42.20250408
+
+#### Build 10.0.42.202504081
+Release date: 8 April 2025
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+21612		| Various	| 10.0.43 build issue	| Fix 10.0.43 build issue on **Validate connection** for **API Endpoint** connection type. <br> Microsoft.IdentityModel.Clients.ActiveDirectory has been deprecated and no longer supported by FinOps and needs to be upgraded to now use Microsoft.Identity.Client <br> [Microsoft notice](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#azure-active-directory-authentication-library-adal)
+21732		| Various	| ABN validation	| Incorrect GST registered status where ABN hasn't registered for GST and the ABN has been cancelled - showed GST registered as Cancelled
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+21215		| Various	| ABN validation	| Where the ABN isn't registered for GST, use the earliest ABN entity status from date for **GST from** date.
+21210		| Various	| Encryption and Decryption	| Filtered drop-down options: <br> • Import connections to decrypt key types <br> • Export connections to encrypt key types <br> ![Decryption](Images/ReleaseNotes_20250331_3.png "Decryption") <br> <br> ![Encryption](Images/ReleaseNotes_20250331_4.png "Encryption")
+20946		| Cash and bank management	| Bank statement periodic import | Where the bank statement has no transactions - now moving the file to archive instead of error folder. Also updated error message to infolog 'No bank statement was created as file contained no transactions'
+17536		| Cash and bank management	| Import bank statement	| New Financial utilities parameters field **Enable date range for custom bank statement formats** controls the **From date** and **To date** inputs on **Import bank statement** for custom bank statement formats. <br> • **No** (default) - From and To date won't be mandatory anymore and automatically calculate the from date as earliest date in file and To date as latest date in the file. Similar to our periodic import job. <br> • **Yes** - From and To date is still mandatory for custom bank statement formats. This is useful where a company only needs to import a certain date range for the particular bank statement.
+17536		| Cash and bank management	| Modern bank reconciliation	| Where the feature 'Modern bank reconciliation' is enabled, the bank statement form has been replaced with a new std form. Similar to Bank statement form with feature disabled, we replaced 'Import bank statement' dialog with Finance Utilities dialog which supports importing Finance Utilities custom formats.  
+21689 <br> 21102 | Various	| DXC Connections	| New DXC Connections release 10.0.42.202504042 - [Release notes](../CONNECTIONS/Release-notes.md) <br> • SFTP connection migrated to DXC Connections model. <br> • Azure blob connection: added ability to use container level shared access signature URI <br> • Upgraded SFTP to latest 2024.2.0
+21719		| Various	| DXC Encryption	| New DXC Encryption release 10.0.42.202504041. See below for details.
+
+
+#### DXC Encryption Release 10.0.42.202504041
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+20654		| DXC Encryption	| Generate keys	| Ability to **Generate** encryption keys within FinOps on **DXC encryption parameters** <br> ![Generate encryption keys](Images/ReleaseNotes_20250331_1.png "Generate encryption keys")
+21545		| DXC Encryption	| Key values	| Previously the module only included the option for SAS URL to Azure blob file to store the Encryption keys. This change provides support for Secrets in Azure containing base 64 encoded data of the actual keys into D365 key vault. These secrets will then be pulled into FinOps as base64, and decoded before being used for encryption/decryption purposes.
+21698		| DXC Encryption	| Key values	| New field **Key source** provides the ability to store key values as string within FinOps. Options: <br> • **Key vault** (default) - Azure Storage SAS URL & Azure Secrets <br> • **String** - Store keys within FinOps without Azure + key vaults. Also includes option to download the public key <br> ![Store key values in FinOps](Images/ReleaseNotes_20250331_5.png "Store key values in FinOps")
+21548		| DXC Encryption	| Setup	| Moving **Private key** and **Counter party's public key** around in **DXC encryption parameters**
+21551		| DXC Encryption	| Validate	| Ability to validate encryption / decryption key name. Select applicable **Encryption key name**, click **Validate** which will open a dialog to browse to a file. <br> • **Encrypt / Encrypt and sign** - select a file that should be encrypted, if setup is correct the encrypted file will be created that can be sent to counter party for testing. <br> • **Decrypt / Decrypt and verify** - select encrypted file that should be decrypted, if setup is correct a decrypted file will be created. <br> ![Validate](Images/ReleaseNotes_20250331_2.png "Validate")
 
 ### Release 10.0.40.20250122
 
