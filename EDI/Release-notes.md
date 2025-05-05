@@ -37,8 +37,6 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.40 <br> App build: 10.0.1935.92	  | • No functional issues <br> • Build error fixed in 17978 | • Functional: 10.0.37.202405023 <br> • Build error fixed in: 10.0.37.202405302
-Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.37.202405302
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40.202409051
 Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40.2024120421
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | No	          | 10.0.42.202504031
