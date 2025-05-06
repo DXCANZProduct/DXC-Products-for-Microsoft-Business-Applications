@@ -5,7 +5,7 @@ title: License manager
 description: License manager - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-02-04
+ms.date: 2025-05-07
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -78,9 +78,8 @@ Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.37
 Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40.202410231
 
 #### **Release 10.0.40.20250221**
-DXC License 10.0.40.202502211 runs on the following Microsoft releases
+DXC License 10.0.40 runs on the following Microsoft releases
 
-DXC License 10.0.40.202502211 runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                         |
 | :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
