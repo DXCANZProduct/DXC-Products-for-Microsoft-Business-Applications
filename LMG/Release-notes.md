@@ -77,10 +77,10 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.37.202405231
 Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40.202410231
 
+#### **Release 10.0.40.20250221**
+DXC License 10.0.40.202502211 runs on the following Microsoft releases
 
-#### **Release 10.0.40.202410231**
-
-DXC License 10.0.40.202410231 runs on the following Microsoft releases
+DXC License 10.0.40.202502211 runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                         |
 | :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -91,11 +91,20 @@ Microsoft Dynamics 365 application	| 10.0.43  | [What’s new or changed in Dyna
 
 <b>Build 7.0.7279.122 </b>
 
+#### **Version 10.0.40.202502212 (Latest)**
+<ins>Bug fixes</ins>
+
+| Number | Functionality                                                     | Description                                                                                  |
+| :----- | :---------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
+| 22699  | Deployment failure due to expired DXCTechnologyCompany certificate | Removed DXCTechnologyCompany cetificate as no longer required |
+
+#### **Version 10.0.40.202502211**
+
 <ins>New features</ins>
 
 | Number | Functionality                                                     | Description                                                                                  |
 | :----- | :---------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
-| 19567  | Change Feature Key label for Data Anonymization include (Preview) | (Preview) keyword has been added to the data Anonymization feature key label and description |
+| 21135  | Added licensing and feature key for Care Services | Licensing and feature management controls for Care Services has been added |
 
 ## React Web App
 
@@ -221,6 +230,25 @@ DXC License Manager 10.0.32.20230731 runs on the following Microsoft releases
 | 40     | Fixed synchronisation issues when performing license checks | Users experienced info logs stating the product is enabled but not licensed even though the product is licensed. This issues persisted intermittently. |
 
 ### DXC License
+
+#### **Release 10.0.40.202410231**
+
+DXC License 10.0.40.202410231 runs on the following Microsoft releases
+
+| Base                               | Version | Release                                                                                                                                                         |
+| :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft Dynamics 365 application | 10.0.40 | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40) |
+| Microsoft Dynamics 365 application | 10.0.41 | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) |
+| Microsoft Dynamics 365 application | 10.0.42 | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42) |
+Microsoft Dynamics 365 application	| 10.0.43  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
+
+<b>Build 7.0.7279.122 </b>
+
+<ins>New features</ins>
+
+| Number | Functionality                                                     | Description                                                                                  |
+| :----- | :---------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
+| 19567  | Change Feature Key label for Data Anonymization include (Preview) | (Preview) keyword has been added to the data Anonymization feature key label and description |
 
 #### **Release 10.0.37.202405231**
 
