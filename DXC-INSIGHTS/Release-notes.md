@@ -64,7 +64,7 @@ Release date: 23 April 2025
 
 Number	| Name		 | Description
 :--	|:--		  	|:--	
-21355	| Form edits	| Fix an issue related to Feature check not wrapped correctly around form edit teleemtry logging
+21355	| Form edits	| Fix an issue related to Feature check not wrapped correctly around form edit telemetry logging
 
 # Previous Version(s)
 
