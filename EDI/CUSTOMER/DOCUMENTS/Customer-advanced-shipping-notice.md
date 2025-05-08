@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer advanced shipping notice
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-31
+ms.date: 2025-05-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -230,7 +230,8 @@ The following EDI Line staging fields are available on the lines page.
 **Line number**            | The line withing the D365 packing slip                     | Packing slip > Line number
 **Line number document**   | The line within the EDI table/file 
 **Item number**            | The D365 item number                                       | Packing slip > Item id
-**Text**                   | The D365 item name	                                        | Packing slip > Item Name
+**Product name**            | Product's name                                            | Sales line > Product name
+**Text**                    | Product's text                                            | Sales line > Text
 **External item number**   | Customer external item number	<br> The intercompany ASN's External item number will be obtained from the originating sales order line - only applies to EDI orders.                      | Sales line > General > External
 **Bar code**               | The GTIN or barcode                                        | Sales line > EDI item number
 **SKU**                    | SKU from the Customer purchase order staging line          | Sales line > EDI > SKU
