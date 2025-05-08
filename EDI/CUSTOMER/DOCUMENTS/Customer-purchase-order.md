@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer purchase order
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-21
+ms.date: 2025-05-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -268,7 +268,8 @@ The following EDI Line fields are available on the lines page.
 
 **Field**                   | **Description**                                                           | **Target D365 field**
 :---                        |:---                                                                       |:---
-**Line number**             | The line within the EDI table/file	                                    | Sales line > EDI > General > Line number
+**Line number**             | The line within the EDI table/file. Supports integer values 1, 10         | Sales line > EDI > General > Line number
+**Line number** (LineNumText)    | The line within the EDI table/file. Use this field if the line number format requires field type String. Supports 001, 1, 10  | Sales line > EDI > General > Line number (LineNumText)
 **Item number**             | The item identifier as sent by the trading partner. 	| Sales line > EDI > General > EDI Item number <br> When document type setting **Item Id source** is: <br> • **Our item number** or <br> • **External item number** <br> used to determine: Sales line > Item number
 **Bar code**                | The item identifier as sent by the trading partner. 	| When document type setting **Item Id source** is: <br> • **GTIN** or <br> • **Barcode** <br> used to determine: Sales line > Item number
 **SKU**                     | SKU for item	
