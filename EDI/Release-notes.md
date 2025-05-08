@@ -81,10 +81,10 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
-21982	| All customer documents	| **SKU** line field size increased
-21997	| All outbound customer documents	| **Product name** and **Text** line fields standardised across customer documents.
-22052	| All customer documents	| New **LineNumText** field added to in and outbound customer documents. This supports the requirement where the customer purchase order's line number field is not numeric (for example 001) and these needs to be used in the same format on the outbound documents.
-22067	| All customer documents	| Ten **Reserved** header string fields to assist rapid start implementations. These fields can be used where Customer purchase order values, not covered by existing EDI fields, needs to populate header fields on the outbound customer documents. <br> Companies can update the field label of these fields via Document types Staging metadata. <br> ![Reserved header fields](RELEASE-NOTES-IMAGES/20250520_2.png "Reserved header fields")
+21982	| • Customer purchase order <br> • Customer purchase order acknowledgement (POA) <br> • Customer advanced shipping notice (ASN) <br> • Sales invoice	| **SKU** line field size increased
+21997	| • Customer purchase order acknowledgement (POA) <br> • Customer advanced shipping notice (ASN) <br> • Sales invoice	| **Product name** and **Text** line fields standardised across customer documents.
+22052	| • Customer purchase order <br> • Customer purchase order acknowledgement (POA) <br> • Customer advanced shipping notice (ASN) <br> • Sales invoice	| New **LineNumText** field added to in and outbound customer documents. This supports the requirement where the customer purchase order's line number field is not numeric (for example 001) and these needs to be used in the same format on the outbound documents.
+22067	| • Customer purchase order <br> • Customer purchase order acknowledgement (POA) <br> • Customer advanced shipping notice (ASN) <br> • Sales invoice	| Ten **Reserved** header string fields to assist rapid start implementations. These fields can be used where Customer purchase order values, not covered by existing EDI fields, needs to populate header fields on the outbound customer documents. <br> Companies can update the field label of these fields via Document types Staging metadata. <br> ![Reserved header fields](RELEASE-NOTES-IMAGES/20250520_2.png "Reserved header fields")
 
 
 **Vendor module**	
