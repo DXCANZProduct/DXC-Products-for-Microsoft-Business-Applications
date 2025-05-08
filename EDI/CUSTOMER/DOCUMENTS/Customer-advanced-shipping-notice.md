@@ -220,6 +220,7 @@ The following EDI Header staging fields are available on the header page.
 <ins>**General FastTab**</ins>	|   |
 **Delivery address information**    | Delivery address details
 **Warehouse address information**   | Warehouse (ship from) address details
+**Reserved**                | Ten **Reserved** fields available. These fields are populated from the same Customer purchase order Reserved fields. 
 
 
 ### Line fields
