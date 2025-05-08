@@ -395,6 +395,8 @@ The ** fields will be populated where **Customer purchase order** setting profil
 **Field**	              | **Description**	                                      | **Source D365 field**
 :---                    |:---                                                   |:---
 **Store code**         |	The store code from the EDI order is shown here.	    | Sales line > EDI > Store code
+**Line number** (LineNum)        | The line number from the original Customer purchase order. Supports integer values 1, 10         | Sales line > EDI > General > Line number
+**Line number** (LineNumText)    | The line number from the original Customer purchase order. Use this field if the line number format requires field type String. Supports 001, 1, 10  | Sales line > EDI > General > Line number (LineNumText)
 **Item number**        |	Item number from the sales order	                    | Sales line > Item number
 **Barcode**             |	Barcode for the item number from the sales order	    | Sales line > Barcode
 **External item number**  |	The external item id specified for this customer/item combination. This is the part number for this item in the Customer’s system.	| Sales line> General > External references > External
@@ -421,4 +423,5 @@ The ** fields will be populated where **Customer purchase order** setting profil
 **Acknowledgement pack**    |	Pack quantity acknowledged	                      | Sales line > EDI > POA > Acknowledgement pack
 **Product name**            | Product's name                                        | Sales line > Product name
 **Text**                    | Product's text                                        | Sales line > Text
+
 
