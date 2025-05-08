@@ -228,7 +228,8 @@ The following EDI Line staging fields are available on the lines page.
 **Field**	               | **Description**	                                        | **Source D365 field**
 :---                       |:---                                                        |:---
 **Line number**            | The line withing the D365 packing slip                     | Packing slip > Line number
-**Line number document**   | The line within the EDI table/file 
+**Line number document**   | The line number from the original Customer purchase order. Supports integer values 1, 10  | Sales line > EDI > General > Line number
+**Line number** (LineNumText)    | The line number from the original Customer purchase order. Use this field if the line number format requires field type String. Supports 001, 1, 10  | Sales line > EDI > General > Line number (LineNumText)
 **Item number**            | The D365 item number                                       | Packing slip > Item id
 **Product name**            | Product's name                                            | Sales line > Product name
 **Text**                    | Product's text                                            | Sales line > Text
