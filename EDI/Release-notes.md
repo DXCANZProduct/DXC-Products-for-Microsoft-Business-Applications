@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-05-05
+ms.date: 2025-05-08
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -57,6 +57,40 @@ Release notes for other models included in product:
 	- Step 3 - Change all applicable **Azure blob** connections: <br> 
 		• Credential type: Key Vault <br>
 		• Key vault: Secret setup in step 2
+
+# Next version
+
+### Release 10.0.42.202505TBD
+
+<ins>New features</ins>
+
+**Core module**	- Applies to all modules	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+19356	| DXC connections - SFTP	| DXC Connections 10.0.42.202504042. SFTP library moved to DXC Connections model. [Release notes](../CONNECTIONS/Release-notes.md)
+
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+
+**Vendor module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+16024	| Purchase invoice	| Performance improvement on posting EDI Purchase invoice - Batch administration enabled.
+
+
+<ins>Bug fixes</ins>
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+21845	| Skip error lines	| Fix to incorrect error when staging line needs to be skipped where 'Skip error lines' applies to the Trading partner. Error 'Cannot edit a record in EDI sales order line (SAB_EDISalesOrderLineStaging).The record has never been selected.'
+
 
 # Current version
 
