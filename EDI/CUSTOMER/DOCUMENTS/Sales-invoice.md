@@ -200,6 +200,7 @@ The following EDI Header staging fields are available on the header page.
 **State**                   | Company address - State
 **Street**                  | Company address - Street
 **ZIP/postal code**         | Company address - ZIP/postal code
+**Reserved**                | Ten **Reserved** fields available. These fields are populated from the same Customer purchase order Reserved fields. 
 
 ### Line fields
 The following EDI Line staging fields are available on the lines page.
