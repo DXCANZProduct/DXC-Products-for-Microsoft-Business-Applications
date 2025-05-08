@@ -90,7 +90,7 @@ Release date: 2 May 2025
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-21806 <br> 22076 | Various	| Azure connections	| Added ability to use container level shared access signature URI by setting new field **Disable storage account access** to _Yes_. <br> ![Container level SAS](Images/ReleaseNotes_20250331_6.png "Container level SAS") <br> ![Container level SAS](Images/ReleaseNotes_20250331_7.png "Container level SAS")
+21806 <br> 22076 | Various	| Azure connections	| Added ability to use container level shared access signature URI by setting new field **Disable storage account access** to _Yes_. <br> ![Container level SAS](Images/ReleaseNotes_20250331_6.png "Container level SAS") <br> ![Container level SAS](Images/ReleaseNotes_20250501_2.png "Container level SAS")
 21544		| Accounts payable	| ABN validation (only applicable to Australia)	| **New ABN vendor** - Create a new vendor by entering their ABN. This automatically creates the new ABN and Vendor and populates vendor's name and assigns the ABN to the newly created vendor. <br> Requirements: <br> • 'ABN validation' enabled for the legal entity <br> • Automatic number sequence used to create Vendor account ID <br> ![New ABN vendor](Images/ReleaseNotes_20250501_1.png "New ABN vendor")
 21675		| Accounts payable	| Electronic reporting (ER) | Payment advice report: ER version of the SSRS report ECL_BankPaymAdviceVendV2.Report. Published on LCS solution as 'Vendor payment adviceV2_DXC(Excel)'
 

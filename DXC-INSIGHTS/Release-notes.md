@@ -57,6 +57,16 @@ Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.41 	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 
+#### Build 10.0.40.202502262
+Release date: 23 April 2025
+
+<ins>Bug fix</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+21355	| Form edits	| Fix an issue related to Feature check not wrapped correctly around form edit telemetry logging
+
+# Previous Version(s)
 
 #### Build 10.0.40.202502261
 Release date: 26 February 2025
@@ -72,8 +82,6 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--	
 21340	| Application Insights Dashboard	| Fix access related issues when downloading Application Insights Dashboard from D365 F&O.
-
-# Previous Version(s)
 
 ### Release 10.0.37.20240627 
 
