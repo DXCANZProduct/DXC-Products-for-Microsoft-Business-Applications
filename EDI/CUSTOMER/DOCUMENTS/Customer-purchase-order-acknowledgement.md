@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer purchase order acknowledgement
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-31
+ms.date: 2025-05-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -419,3 +419,6 @@ The ** fields will be populated where **Customer purchase order** setting profil
 **Backorder quantity**      | Where the Trading partner's **No backorder** is set to _No_, the difference between **Ordered quantity** and **Sales quantity**. <br> Where the Trading partner's **No backorder** is set to _Yes_, this will be set to 0. | Ordered quantity minus Sales quantity
 **Acknowledgement inners**  |	Acknowledged quantity of inners per outer	        | Sales line > EDI > POA > Acknowledgement inners
 **Acknowledgement pack**    |	Pack quantity acknowledged	                      | Sales line > EDI > POA > Acknowledgement pack
+**Product name**            | Product's name                                        | Sales line > Product name
+**Text**                    | Product's text                                        | Sales line > Text
+
