@@ -387,6 +387,7 @@ The following EDI Header staging fields are available on the header page.
 **Mode of delivery description**    | Description for the Mode of delivery                       | Mode of delivery > Description
 <ins>**Version**</ins>  |   |
 **PO version number**       | The PO version number from the EDI record.	                                | Sales order > EDI > Original version number
+**Reserved**                | Ten **Reserved** fields available. These fields are populated from the same Customer purchase order Reserved fields. 
 
 ### Line fields
 The following EDI Line staging fields are available on the lines page. <br>
