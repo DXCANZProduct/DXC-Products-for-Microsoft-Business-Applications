@@ -262,6 +262,7 @@ The following EDI Header staging fields are available on the header page.
 **Requested ship date**     | The requested ship date (delivery window) from the EDI record is shown here.	| Sales order > EDI > Requested ship date and <br> Sales order > Requested ship date: If staging blank will be populated by Transport days
 **Requested receipt date**  | The requested receipt date (delivery window) from the EDI record is shown here.	| Sales order > EDI > Requested receipt date <br> Sales order > Requested receipt date
 **Delivery time**           | The delivery time from the EDI record is shown here.                      | Sales order > EDI > Delivery time
+**Reserved**                | Ten **Reserved** fields available. These fields will populate the same reserved fields on all the outbound customer documents
 
 ### Line fields
 The following EDI Line fields are available on the lines page.
