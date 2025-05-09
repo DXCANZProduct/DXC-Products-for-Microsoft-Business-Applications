@@ -57,7 +57,8 @@ To create a new sundry vendor payment, go to **Accounts payable > Payments > Ven
 The Sundry invoices can now be paid using cheques or EFT, depending on the payment method entered on the invoice.
 
 Enter the journal header, select **Lines** button and select button **Payment proposal > Create payment proposal** on the Action Pane. <br>
-This function can be used to pay more than one sundry invoice; it breaks down the sundry invoices into separate lines. If due dates and EFT bank details match the sundry invoices will be grouped into one payment.
+The **Payment proposal** function should be used to pay more than one sundry invoice; it breaks down the sundry invoices into separate lines. If due dates and EFT bank details match the sundry invoices will be grouped into one payment.
+> Note: Do not use manual settlement for Sundry vendors, as this function doesn't group/split by sundry bank details.
 
 From the **General** tab it is possible to review the Sundry Vendor Name, Address, BSB and Account Number to be paid. <br>
 Selection of the **Generate payments** button will create a payment for each payment journal line using the sundry bank details. <br>
