@@ -548,7 +548,7 @@ It also includes **EDI X12 message**, which includes options like:
 - Where applicable, enter a [Custom format](#custom-format) for the field.
 - For incoming documents, use **Static value dynamic position** to flag elements with dynamic positining (elements can be found in different order on the line). Set flag to _Yes_ on static qualifier.
 - For outgoing documents, use **Static value do not send if blank** to flag where if an element is blank, it shouldn't send the blank value and it's qualifier. Set flag to _Yes_ on static qualifier.
-- For outgoing documents, use **Skip segment if blank** to flag where if staging value is blank/null, it shouldn't send the segment. Example is 'Total charges' in SAC segment. Set flag to _Yes_ on applicable staging line.
+- For outgoing documents, use **Skip segment if blank** to flag where if staging value is blank, it shouldn't send the segment. Example is 'Total charges' in SAC segment. Set flag to _Yes_ on applicable staging line. 
 
 > Note: To **Delete** an Element, select the record then select **Delete**. <br>
 > Elements can be moved up or down within its Composite by using the **Up** and **Down** buttons. <br> 
