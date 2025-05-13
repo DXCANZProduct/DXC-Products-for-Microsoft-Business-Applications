@@ -585,6 +585,7 @@ F                                  | No thousand separator        | 1,234       
 More examples:
 - [https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings)
 - [http://blog.stevex.net/string-formatting-in-csharp/](http://blog.stevex.net/string-formatting-in-csharp/)
+- [https://support.microsoft.com/en-us/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5](https://support.microsoft.com/en-us/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5)
 
 ### Example
 
