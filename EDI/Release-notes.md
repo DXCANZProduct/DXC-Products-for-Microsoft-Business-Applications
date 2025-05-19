@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-05-09
+ms.date: 2025-05-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -60,7 +60,7 @@ Release notes for other models included in product:
 
 # Current version
 
-### Release 10.0.43.20250509
+### Release 10.0.43.20250519
 
 DXC EDI 10.0.43 runs on the following Microsoft releases
 
@@ -69,6 +69,34 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 
+
+#### Build 10.0.43.202505191
+Release date: 19 May 2025
+
+<ins>New features</ins>
+
+
+**Standard formats module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+22871	| X12 template	| New outbound template mapping field **Skip segment if blank** now also includes support for **zero values**. Where set to Yes and the staging value is **blank or zero**, the segment will be skipped when creating the outbound X12 file. 
+
+
+<ins>Bug fixes</ins>
+
+**Standard formats module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+22720	| X12 template	 | New outbound template mapping field **Skip segment if blank** didn't work on Lines level.
+
+
+# Previous version(s)
+
+Approximately two years of previous versions are included below.
+
+### Release 10.0.43.20250509
 
 #### Build 10.0.43.202505091
 Release date: 9 May 2025
@@ -121,11 +149,6 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		 |:--
 22064	| X12 template	 | Few scenarios where hanging when processing X12 inbound file to processing. Issue on PO1 line level.
-
-
-# Previous version(s)
-
-Approximately two years of previous versions are included below.
 
 ### Release 10.0.42.20250403
 
