@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-05-02
+ms.date: 2025-05-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -75,33 +75,27 @@ Release notes for other models included in product:
 
 # Current version
 
-### Release 10.0.43.20250502
+### Release 10.0.43.20250521
 
 DXC Finance Utilities 10.0.43 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
+Microsoft Dynamics 365 application 	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 
-#### Build 10.0.43.202505021
-Release date: 2 May 2025
-
-<ins>New features</ins>
-
-Number	  	| Module	| Functionality	  	| Description
-:--       	|:--     	|:--	         	|:--
-21806 <br> 22076 | Various	| Azure connections	| Added ability to use container level shared access signature URI by setting new field **Disable storage account access** to _Yes_. <br> ![Container level SAS](Images/ReleaseNotes_20250331_6.png "Container level SAS") <br> ![Container level SAS](Images/ReleaseNotes_20250501_2.png "Container level SAS")
-21544		| Accounts payable	| ABN validation (only applicable to Australia)	| **New ABN vendor** - Create a new vendor by entering their ABN. This automatically creates the new ABN and Vendor and populates vendor's name and assigns the ABN to the newly created vendor. <br> Requirements: <br> • 'ABN validation' enabled for the legal entity <br> • Automatic number sequence used to create Vendor account ID <br> ![New ABN vendor](Images/ReleaseNotes_20250501_1.png "New ABN vendor")
-21675		| Accounts payable	| Electronic reporting (ER) | Payment advice report: ER version of the SSRS report ECL_BankPaymAdviceVendV2.Report. Published on LCS solution as 'Vendor payment adviceV2_DXC(Excel)'
+#### Build 10.0.43.202505211
+Release date: 21 May 2025
 
 <ins>Bug fixes</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-21957		| Various	| 10.0.43 build issue	| Fix 10.0.43 extra build issue on Reconciliation matching rules - Financial dimensions.
-21291		| Accounts payable	| Vendor payments	| Fix 10.0.43 issue where the value written to Finance Utilities field 'Export file name' was CustVendPaymERExport.updatePaymentItem instead of actual file name.
-21218		| Accounts payable	| Self billing / RCTI	| Fix to Consolidate by Receipt date. Issue occurred where multiple invoices were created for same purchase order.
-21950		| Cash and bank management	| Bank reconciliation	| Removed the requirement where a Bank transaction needs to be selected when using Match. This allows users to match two Bank statement transactions that balance to zero (reversals).
+22907		| Cash and bank management	| Posting new transactions	| Fix to error caused by 21957, only applicable to release 10.0.43.202505021. Error when posting new transaction: "Function SourceDocumentExtensionFactory::newObject has been incorrectly called."
+22709		| ABN validation	| Create new vendor	| Fix to label on Vendors Action pane - 'New ABN vendor'
+22783		| DXC Encryption	| 10.0.43 build error fix	| New DXC Encryption model 10.0.43.202505191 to fix 10.0.43 build error. Removed privilege 'Maintain DXC encryption parameters' from standard role 'Information technology manager'.
+22784		| Budgeting	| 10.0.43 build error fix	| Removed Finance Utilities privilege 'Maintain budget import' (SAB_FinBudgetMaintain) from standard role 'Budget manager'.
+22874		| Accounts payable	| Sundry vendor payment proposal	| When overriding fields on payment proposal, the sundry vendor lines were incorrectly grouped on payment journal line.
 
 
 # Deprecated features
@@ -144,6 +138,28 @@ This section describes the features that have been removed, or planned to be rem
 # Previous version(s)
 
 Approximately one year of previous versions are included below.
+
+### Release 10.0.43.20250502
+
+#### Build 10.0.43.202505021
+Release date: 2 May 2025
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+21806 <br> 22076 | Various	| Azure connections	| Added ability to use container level shared access signature URI by setting new field **Disable storage account access** to _Yes_. <br> ![Container level SAS](Images/ReleaseNotes_20250331_6.png "Container level SAS") <br> ![Container level SAS](Images/ReleaseNotes_20250501_2.png "Container level SAS")
+21544		| Accounts payable	| ABN validation (only applicable to Australia)	| **New ABN vendor** - Create a new vendor by entering their ABN. This automatically creates the new ABN and Vendor and populates vendor's name and assigns the ABN to the newly created vendor. <br> Requirements: <br> • 'ABN validation' enabled for the legal entity <br> • Automatic number sequence used to create Vendor account ID <br> ![New ABN vendor](Images/ReleaseNotes_20250501_1.png "New ABN vendor")
+21675		| Accounts payable	| Electronic reporting (ER) | Payment advice report: ER version of the SSRS report ECL_BankPaymAdviceVendV2.Report. Published on LCS solution as 'Vendor payment adviceV2_DXC(Excel)'
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+21957		| Various	| 10.0.43 build issue	| Fix 10.0.43 extra build issue on Reconciliation matching rules - Financial dimensions.
+21291		| Accounts payable	| Vendor payments	| Fix 10.0.43 issue where the value written to Finance Utilities field 'Export file name' was CustVendPaymERExport.updatePaymentItem instead of actual file name.
+21218		| Accounts payable	| Self billing / RCTI	| Fix to Consolidate by Receipt date. Issue occurred where multiple invoices were created for same purchase order.
+21950		| Cash and bank management	| Bank reconciliation	| Removed the requirement where a Bank transaction needs to be selected when using Match. This allows users to match two Bank statement transactions that balance to zero (reversals).
 
 ### Release 10.0.42.20250408
 
