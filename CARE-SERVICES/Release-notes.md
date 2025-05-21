@@ -51,9 +51,9 @@ Release notes for other models included in the product:
 
 # Current version
 
-### Release 10.0.41.20250226
+### Release 10.0.42.20250509
 
-DXC Care Services  10.0.41 runs on the following Microsoft releases
+DXC Care Services  10.0.42 runs on the following Microsoft releases
 
 
 Base	  | Version	  | Release
@@ -61,7 +61,7 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.42	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 
-#### Build 10.0.41.202502262
+#### Build 10.0.42.202505091
 
 <ins>Bug fixes</ins>
 
