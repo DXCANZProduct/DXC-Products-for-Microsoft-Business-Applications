@@ -42,7 +42,7 @@ Product version: 10.0.44 <br> App build: 10.0.2263.11	  | Only build errors 2278
 
 #### Features not yet supported
 
-Feature	| 10.0.43 Feature state
+Feature	| 10.0.44 Feature state
 :--       	|:--		
 **Modern bank reconciliation** | On by default, needs to be manually disabled
 
