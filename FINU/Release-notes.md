@@ -163,6 +163,16 @@ Number	  	| Module	| Functionality	  	| Description
 
 ### Release 10.0.42.20250408
 
+#### Build 10.0.42.2025040822
+Release date: 21 May 2025
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+22874		| Accounts payable	| Sundry vendor payment proposal	| When overriding fields on payment proposal, the sundry vendor lines were incorrectly grouped on payment journal line.
+
+
 #### Build 10.0.42.202504081
 Release date: 8 April 2025
 
