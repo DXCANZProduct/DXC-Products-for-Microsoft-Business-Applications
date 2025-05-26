@@ -40,7 +40,7 @@ Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | DXC Core Extension
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
 Product version: 10.0.43 <br> App build: 10.0.2177	  | No | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymization 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051
-Product version: 10.0.44 <br> App build: 10.0.2263	  | No | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymization 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051
+Product version: 10.0.44 <br> App build: 10.0.2263	  | yes | Errors found in build for Security roles.  New devlopment is pending 
 
 Release notes for other models included in the product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
