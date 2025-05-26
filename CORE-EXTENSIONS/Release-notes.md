@@ -32,7 +32,7 @@ This document describes the features that are either new or changed in the relea
 
 # Version compatibility
 The matrix shows the minimum DXC build versions compatible with Microsoft versions and builds. <br>
-If blank: investigations are ongoing. <br>
+If blank, investigations are ongoing. <br>
 
 D365 Version		  |Iissues found in testing?| Product version tested
 :--       	 		 |:--           			  |:--
@@ -40,7 +40,7 @@ Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | DXC Core Extension
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
 Product version: 10.0.43 <br> App build: 10.0.2177	  | No | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymization 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051
-
+Product version: 10.0.44 <br> App build: 10.0.2263	  | No | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymization 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051
 
 Release notes for other models included in the product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
@@ -52,10 +52,10 @@ This section describes the features that have been removed or are planned to be 
 
 Deprecated in version 10.0.40.20241023
 ### Exchange Rate Import - Bank of Canada
-Reason for deprecation/removal  - no longer being used as a source of currency exchange rates
+Reason for deprecation/removal: no longer being used as a source of currency exchange rates
 
 ### Business Process links
-Reason for deprecation/removal - Business Process links (also referred to as Business Process Suite) were originally designed for Mavim and SharePoint integration.  Both Mavim and Sharepoint have alternate connection capabilities with D365 Finance and operations and the product is no longer being utilised as part of the Core extension solutions. The Model was removed in version 10.0.40.202502051
+Reason for deprecation/removal - Business Process links (also referred to as Business Process Suite) were originally designed for Mavim and SharePoint integration.  Both Mavim and SharePoint have alternate connection capabilities with D365 Finance and Operations, and the product is no longer being utilised as part of the Core extension solutions. The Model was removed in version 10.0.40.202502051
 
 
 # Current version
@@ -70,10 +70,10 @@ Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.41 	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
 Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
-
+Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 
 ## Feature management
-From 10.0.36.20231130 Core Extensions can be enabled via Feature management.
+From 10.0.36.20231130, Core Extensions can be enabled via Feature management.
 Enable the following feature in D365 Feature management:
 
 - Core extensions
@@ -125,14 +125,14 @@ Number	  	| Functionality	  | Description
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-17503|Ability to update records with Unique values|generates individual values per line as part of Data Anonymization functionality 
-17475|Add user-friendly name (label) on table selection in the Data Anonymization Table|displays the "friendly" name of the table
-17576|Create Data entities for Data anoymization|allows Data anonymization profiles and set up to be exported 
-17474|Disable Initiate Data Anonymization button if no records exist on header or lines table| If no Tables exist on header or lines of Data Anonymisation you cannot perform the function 
-17476|Remove Data entities, staging tables, and Read/View only Tables from the list of selectable tables on table selection in the Data Anonymization Table|Removal of fields that are not updateable
+17503|Ability to update records with Unique values|generates individual values per line as part of the Data Anonymisation functionality 
+17475|Add user-friendly name (label) on table selection in the Data Anonymisation Table|displays the "friendly" name of the table
+17576|Create Data entities for Data anonymisation |allows Data anonymisation profiles and set up to be exported 
+17474|Disable Initiate Data Anonymisation button if no records exist on header or lines table| If no Tables exist on the header or lines of Data Anonymisation, you cannot perform the function 
+17476|Remove Data entities, staging tables, and Read/View only Tables from the list of selectable tables on table selection in the Data Anonymisation Table|Removal of fields that are not updatable
 17472|Selected fields getting temporarily cleared|When adding fields to your table selection fields were being cleared
 17477|Validate URL in Parameters table on Update| The URL must be in a WEB format
-17473|Header Lines relationship between data anonymization table and fields|If Table fields have been added you can no longer remove the Header table from the list 
+17473|Header Lines relationship between data anonymisation table and fields|If Table fields have been added, you can no longer remove the Header table from the list 
 
 
 
@@ -153,10 +153,10 @@ Release date: 30 November 2023
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
 14998		| DMF Toolbox	| Exposes 2 new fields in DMF data entities
-16043		| Scramble data in FinOps env to protect sensitive data	| Allows for information to be scrambled post a database copy or restore from a production into a sandbox environment.
+16043		| Scramble data in FinOps env to protect sensitive data	| Allows for information to be scrambled post a database copy or restore from a production environment into a sandbox environment.
 16013		| Export/import of Print management settings	| New feature that allows the import/Export of Printer management settings
-16514		| Reset Print Management | Resets Print management setting for the related module to Default, can be used in case of errors or query corruption. Available in the following Modules, Accounts receivable, Inventory management, Procurement and sourcing, Project management and accounting, Transportation Management, Warehouse management
-16567		| Exchange Rate update	| When importing General Journals with no exchange rate the Journal is populated with the Default Exchange rate for that currency
+16514		| Reset Print Management | Resets Print management setting for the related module to the Default, can be used in case of errors or query corruption. Available in the following Modules: Accounts receivable, Inventory management, Procurement and sourcing, Project management and accounting, Transportation Management, Warehouse management
+16567		| Exchange Rate update	| When importing General Journals with no exchange rate, the Journal is populated with the Default Exchange rate for that currency
 13552		| Feature management	| Core extensions now available via Feature management
 
 
@@ -215,7 +215,7 @@ Number	| Name	          | Description
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-10016	    | Import ledger journal no longer displays export templates  | The import ledger journal class displayed both import and export data entities. This has been amended to only display import data entities.
+10016	    | Import ledger journal no longer displays export templates  | The import ledger journal class displays both import and export data entities. This has been amended to only display import data entities.
 10017	    | Support inventory movement journal data entity V4  | Support inventory movement journal data entity V3 has been replaced with the updated V4. Support for this new data entity has been added to the inventory journal import feature.
 
 ### Release 10.0.16.20210413
