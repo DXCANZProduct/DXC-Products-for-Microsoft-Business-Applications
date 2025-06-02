@@ -40,7 +40,7 @@ Microsoft Dynamics 365 Product version:    [10.0.40](https://learn.microsoft.com
 Microsoft Dynamics 365 Product version:    [10.0.41](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) <br> 	App build: 10.0.2015.16	  | No | 10.0.37.202403263
 Microsoft Dynamics 365 Product version:    [ 10.0.42](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42) <br> 	App build: 10.0.2095	  | No | 10.0.40.202409113
 Microsoft Dynamics 365 Product version:    [10.0.43](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43) <br>	 App build: 10.0.2177	  | No | 10.0.40.202409113 
-Microsoft Dynamics 365 Product version:    [10.0.44](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44) <br>	 App build: 10.0.2263	  | Yes | Error when issuing Packing slip via Smart send as part of Wharehouse Management module 
+Microsoft Dynamics 365 Product version:    [10.0.44](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44) <br>	 App build: 10.0.2263	  | Yes | Error when issuing Packing slip via Smart send as part of Warehouse Management module 
 
 Release notes for other models included in the product:
 - [DXC Connections](../CONNECTIONS/Release-notes.md)
