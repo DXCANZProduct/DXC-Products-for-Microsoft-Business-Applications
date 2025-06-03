@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Roadmap
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-05-02
+ms.date: 2025-06-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,10 +35,19 @@ This page describes the features planned for future releases and planned release
 
 ## Release schedule
 
-- June 2025
+- August 2025
+- November 2025
+- March 2026
+- June 2026
 
 
 ## Roadmap features
+
+#### Cash and bank management
+Support for Modern bank reconciliation feature. Following Finance utilites functionality added to Modern bank recon:
+- **Offset company** for all offset types - offset transaction can be posted intercompany (ledger, bank, vendor and customer)
+- Offset type **Bank** for bank transfers - No Modern bank reconciliation Action type for bank transfers, thus we are adding this functionality to 'Generate voucher'
+- Offset type customer - TBD
 
 #### Accounts payable 
 - Import Return files
