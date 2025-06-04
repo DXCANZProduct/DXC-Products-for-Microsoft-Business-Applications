@@ -2,10 +2,10 @@
 # required metadata
 
 title: Finance Utilities
-description: Cash and bank management setup - Bank reconciliation matching rules
+description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-10-17
+ms.date: 2025-06-05
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  BankReconciliationMatchRule
+ms.search.form:  BankReconciliationMatchRule, SAB_FinUtilParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: Monica du Toit
@@ -28,9 +28,43 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Advanced bank reconciliation functionality
-The fields as described in the following subsections are available to control the additional functionality for advanced bank reconciliation.
+The fields as described in the following subsections are available to control the additional functionality for advanced bank reconciliation with **Modern bank reconciliation** feature.
+
+## Overview
+Modern bank reconciliation feature contains exciting changes to Advanced bank reconciliation. 
+The biggest change is the removal of Action **Mark new transactions**. This is replaced in std with:
+- **Generate voucher** - offset type ledger
+- **Generate vendor payment** - offset type vendor without settlement
+- **Generate customer payment** - offset type customer without settlement
+- **Settle customer invoice** - offset type customer with settlement
+
+Finance Utilities extensions to Modern bank reconciliation:
+- **Offset company** - Ability to post the offset to intercompany ledger, bank, vendor or customer.
+- **Offset type Bank** - Modern bank reconciliation doesn't include an option for offset type Bank, we've added this option to **Generate voucher**.
+- **Offset type Customer** - 
+
+Following Finance utilities fields are replaced with Modern bank reconciliation:
+
+**Finance utilities field**    | **Modern bank reconciliation replacement**
+:-------    |:-------                         
+<ins>**Financial utilities parameters**</ins> | 
+Reconciliation customer payment journal       | Bank accounts - Customer payment journal
+Method of payment                             | Reconciliation matching rules - Method of payment
+<ins>**Reconciliation matching rules**</ins> | 
+Tax fields                                    | 
+Financial dimensions                          | 
 
 ## Setup
+
+### Financial utilities parameters
+Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters
+In order to utilise Finance utilities extensions to Modern bank reconciliation, set **Enable modern bank reconciliation extensions** to _Yes_.
+
+### Bank account
+Cash and bank management > Bank statement reconciliation > Bank accounts
+The following standard setup is required on each applicable bank account if customer/vendor payments will be created either by running Reconciliation matching rules, or within the Bank reconciliation Worksheet:
+- 
+
 ## Bank Reconciliation Matching Rules
 
 ### Copy matching rule
