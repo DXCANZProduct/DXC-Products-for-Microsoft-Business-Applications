@@ -26,7 +26,7 @@ Please select the applicable product from below:
 
 ### Copyright Notice
 
-©2013-2024. Copyright DXC Eclipse Pty Limited ACN 051 758 199.  All rights reserved.
+©2013-2025. Copyright DXC Eclipse Pty Limited ACN 051 758 199.  All rights reserved.
 
 This document may not be distributed or copied, in whole or in part, without prior consent of DXC Eclipse Pty Limited or DXC Technology.
 
