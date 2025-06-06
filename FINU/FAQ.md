@@ -4,8 +4,8 @@
 title: Finance Utilities 
 description: Finance Utilities - Frequently asked questions 
 author: Monica du Toit
-manager: Kym Parker
-ms.date: 2024-08-07
+manager: Pontus Ek
+ms.date: 2025-06-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:  Finance Utilities 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -125,6 +125,17 @@ Select the Finance utilities report on [Payment advice](Setup/ACCOUNTS-PAYABLE/V
 
 If there is an error saving the file to secure location and **Stop processing on failure** was enabled on **Electronic reporting destination**, the processing will error and **Payment status** remains _None_. Example error: The process stopped because the delivery of file ‘%’ to the destination failed. The payments cannot be generated. <br>
 Check setup on the applicable [Electronic reporting export connections](Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md)
+
+### Encryption
+#### Issue
+Your export/import connection is setup to use DXC encryption / decryption and you receive error 'The remote server returned an error: (403) Forbidden.'
+
+#### Resolution
+This error indicates Azure blob storage connection string has expired. Options:
+- If still want to use SAS URL to Azure blob file to store the encryption keys: Create a new string
+- From Finance Utilities 10.0.42.202504081 the following two new options are also available:
+   -  Still using Key vault, but secrets can be stored in Azure containing base 64 encoded data of the actual keys into D365 key vault. These secrets will then be pulled into FinOps as base64, and decoded before being used for encryption/decryption purposes.
+   -  Using Key source String: Store keys within FinOps without Azure and Key vaults
 
 ### 	Number sequences are not available to setup
 
