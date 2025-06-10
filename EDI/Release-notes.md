@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-05-19
+ms.date: 2025-06-10
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -68,6 +68,18 @@ Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
+
+
+#### Build 10.0.43.2025051921
+Release date: 10 June 2025
+
+<ins>Bug fixes</ins>
+
+**3PL module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+23022	| Picking list	 | Reverting 10527.  Batch processing not creating Picking list EDI staging records.
 
 
 #### Build 10.0.43.202505191
