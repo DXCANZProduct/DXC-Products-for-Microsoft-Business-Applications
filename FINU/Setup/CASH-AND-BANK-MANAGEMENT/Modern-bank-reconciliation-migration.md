@@ -69,3 +69,12 @@ Action 'Mark new transactions'                | Action 'Generate customer paymen
 Tax fields                                    | 
 Financial dimensions                          | 
 
+### Data entities
+
+- Reconciliation matching rules
+
+### Tables:
+
+- BankReconciliationMatchRule - Shared across legal entities
+- BankReconciliationMatchRuleLine - Step 1 - Shared across legal entities
+- BankReconciliationMatchRule_PostingInfo - Step 2 - Legal entity specific offset details
