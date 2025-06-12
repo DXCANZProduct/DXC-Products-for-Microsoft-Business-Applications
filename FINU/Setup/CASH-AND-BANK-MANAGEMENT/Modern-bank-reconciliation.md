@@ -58,66 +58,39 @@ Financial dimensions                          |
 
 ### Financial utilities parameters
 Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters
-In order to utilise Finance utilities extensions to Modern bank reconciliation, set **Enable modern bank reconciliation extensions** to _Yes_.
+
+In order to utilise Finance utilities extensions to Modern bank reconciliation:
+- Enable feature **Modern bank reconciliation** and
+- Set **Enable modern bank reconciliation extensions** to _Yes_
 
 ### Bank account
 Cash and bank management > Bank statement reconciliation > Bank accounts
+
 The following standard setup is required on each applicable bank account if customer/vendor payments will be created either by running Reconciliation matching rules, or within the Bank reconciliation Worksheet:
-- 
 
-## Bank Reconciliation Matching Rules
+- Customer payment journal
+- Vendor payment journal
 
-### Copy matching rule
-User can select an existing rule, select **Copy matching rule** on the Action Pane to create a copy of the existing rule.
-User can then edit the new rule and activate.
+### Bank reconciliation matching rules
 
-### Group by document number
+Finance utilities extensions to Modern bank reconciliation adds the following functionality to each action that replaces **Mark new transactions**:
 
-Finance utilities functionality extends the automatic reconciliation matching rules by adding **Group by document number** to Reconciliation matching rules with Action **Match with bank statement** in 'Step 1: Define the matching rule'.
+- **Generate voucher**
+    - **Offset company** - ability to offset to a different legal entity (intercompany).
+    - **Offset account type** - ability to offset to ledger or bank.
+    - **Sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
+    - **Item sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
+ 
+- **Generate vendor payment**
+    - **Offset company** - ability to offset to a different legal entity (intercompany).
+ 
+- **Generate customer payment**
+    - **Offset company** - ability to offset to a different legal entity (intercompany).
+ 
+- **Settle customer invoice**
+    - **Offset company** - ability to offset to a different legal entity (intercompany).
 
-> Note: From **10.0.32** MS has added a feature called **Ability to post detailed vendor and customer payments, but summarize amounts to bank account**. <br>
->   -  If this feature is enabled and setup to summarise, journals that contain multiple lines that matches the criteria will be grouped into one bank transaction line. 
->   -  The new 'Bank transaction summarization id' is written to the Bank reconciliation's **Document number** for the Bank transaction.
->   -  This will affect companies that use Financial utilities parameter **Populate bank transaction document number** and **Group by document number** functionality on Reconciliation matching rules as the Payment journal's 'Journal batch number' isn't written to the Bank reconciliation's Document number (if the journal contains multiple lines that matches the criteria).
 
-The Finance utilities feature can be activated from **Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules**
-
-| Field | Description |
-|-|-|
-| **Group by document number** | This feature combines the D365 bank transactions amount that have the **same Document number** (populated with the Journal id or check number) during the Bank reconciliation process, from **Run matching rules.** |
-
-### Matching Parameter - Included In
-If the **Financial utilities parameter**'s **Extended matching rule operator** is set to _Yes_, the option **Included in** is available for selection in 'Step 1: Define the matching rule'. 
-
-When the Operator **Included in** is selected, D365 checks whether the value of **Field** is included in the value of the **Statement fields**.
-
--	**Contains** (which is STD) means that the field Payment Reference in D365 _contains_ the value of the Payment reference in the Bank File.
--	**Included in** heading means that the field Payment Reference in D365 is _included as a part of the value_ of the Payment reference in the Bank File.
-
-**Included in** example:
-
-|    Basic Criteria   |    Yes or No   |
-|-|-|
-|   Match Amount  |  Yes  |
-|   Match Date  |  Yes  |
-|   Match Document Number  |  No  |
-|   Match Transaction Type  |  No  |
-|   Match Payment Reference |  No  |
-
-|    Field   |    Operator   |    Included in   |    Value   |    Statement Fields   |
-|-|-|-|-|-|
-|   Payment reference  |  Contains  |  Tick  |    |  Document number  |
-
-|    Source              |   Matched   | Booking Date |   Debit   |   Credit   |   Bank Trx Type  |   Document number      |
-|-                       |:-:          |-             |-          |-           |-                 |-                       |
-| **D365 Bank Trx**      |             |              |           |            |                  |                        |
-| Line 1                 | X           |  14/01/2018  |           | 1000       | 01               | **AAU1367611**         |
-| Line 2                 |             |  14/01/2018  |           | 1000       | 01               | AAU1367612             |
-| **Bank Statement Trx** |             |              |           |            |                  |                        |
-| Line 1                 | X           |  14/01/2018  |           | 1000       | 699              | CBA pmt **AAU1367611** |
-| Line 2                 |             |  14/01/2018  |           | 1000       | 699              | CBA pmt AAU1367613     |
-
-In this example, when the above Reconciliation Matching rule is run, D365 Bank Transactions Line 1 will be matched with Bank Statement Transactions Line 1 because the **Document number** value “AAU1367611” is included in the value of the field Reference No “CBA pmt AAU1367611”.
 
 ### Mark as New - Additional defaults
 
