@@ -63,10 +63,21 @@ Action 'Mark new transactions'                | Action 'Generate vendor payment'
 :-------    |:-------                         
 <ins>**Financial utilities parameters**</ins> | 
 Reconciliation customer payment journal       | Bank accounts - Customer payment journal            
-Method of payment                             | Reconciliation matching rules - Method of payment
+Method of payment                             | Reconciliation matching rules - Step 3 Default method of payment
 <ins>**Reconciliation matching rules**</ins> | 
 Action 'Mark new transactions'                | Action 'Generate customer payment' or 'Settle customer invoice'
-Tax fields                                    | 
+Offset account type 'Customer'                | Not required
+Offset account                                | Step 3 - Automatic customer account matching set to _No_ and populate 'Customer account'
+Offset account bank statement field
+Offset account reference bank statement field
+Settle transaction
+Settle transaction bank statement field
+Field format
+Auto-post customer payment journal
+Auto-post and transfer customer payment journal
+Tax group                                   | 
+Item tax group
+Description mask                              | Enable feature 'Enable default descriptions for advanced bank reconciliation' and setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation). Finance utilities will use the same default description on the intercompany transaction.
 Financial dimensions                          | 
 
 ### Data entities
