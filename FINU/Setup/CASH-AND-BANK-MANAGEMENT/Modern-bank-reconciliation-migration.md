@@ -32,32 +32,48 @@ ms.dyn365.ops.version: AX 7.0.1
 The following sections describe the requirements to migrate previous **Mark new transaction** Finance utilities fields to **Modern bank reconciliation** functionality. <br>
 These can either be done manually or using data entities.
 
-Following Finance utilities fields are replaced with Modern bank reconciliation:
-
 ### Offset type Ledger
 
-**Finance utilities field**    | **Modern bank reconciliation replacement**                
+Following Finance utilities fields are replaced with Modern bank reconciliation:
+
+**Finance utilities field**    | **Table.Field**   | **Modern bank reconciliation replacement**                
 :-------    |:-------                         
 <ins>**Reconciliation matching rules**</ins> | 
-Action 'Mark new transactions'                | Action 'Generate voucher'
+Action 'Mark new transactions' | BankReconciliationMatchRule.MatchActionType               | Action 'Generate voucher'
+Offset account   | BankReconciliationMatchRule.SAB_FinOffsetLedgerDimension  |
+
+Following Finance utilities fields are still used with Modern bank reconciliation: 
+- Offset type | BankReconciliationMatchRule.SAB_FinOffsetAccountType | 
+
 
 ### Offset type Bank
 
+Following Finance utilities fields are replaced with Modern bank reconciliation:
+
 **Finance utilities field**    | **Modern bank reconciliation replacement**                
 :-------    |:-------                         
 <ins>**Reconciliation matching rules**</ins> | 
-Action 'Mark new transactions'                | Action 'Generate voucher'
+Action 'Mark new transactions'  | BankReconciliationMatchRule.MatchActionType              | Action 'Generate voucher'
+
+Following Finance utilities fields are still used with Modern bank reconciliation: 
+- Offset type (BankReconciliationMatchRule.SAB_FinOffsetAccountType)
+
 
 
 ### Offset type Vendor
 
+Following Finance utilities fields are replaced with Modern bank reconciliation:
+
 **Finance utilities field**    | **Modern bank reconciliation replacement**                
 :-------    |:-------                         
 <ins>**Reconciliation matching rules**</ins> | 
-Action 'Mark new transactions'                | Action 'Generate vendor payment'
+Action 'Mark new transactions'  | BankReconciliationMatchRule.MatchActionType              | Action 'Generate vendor payment'
+Offset account type 'Vendor'                  | Not required
 
 
 ### Offset type Customer
+
+Following Finance utilities fields are replaced with Modern bank reconciliation:
 
 **Finance utilities field**    | **Modern bank reconciliation replacement**                
 :-------    |:-------                         
@@ -65,7 +81,7 @@ Action 'Mark new transactions'                | Action 'Generate vendor payment'
 Reconciliation customer payment journal       | Bank accounts - Customer payment journal            
 Method of payment                             | Reconciliation matching rules - Step 3 Default method of payment
 <ins>**Reconciliation matching rules**</ins> | 
-Action 'Mark new transactions'                | Action 'Generate customer payment' or 'Settle customer invoice'
+Action 'Mark new transactions'   | BankReconciliationMatchRule.MatchActionType             | Action 'Generate customer payment' or 'Settle customer invoice'
 Offset account type 'Customer'                | Not required
 Offset account                                | Step 3 - Automatic customer account matching set to _No_ and populate 'Customer account'
 Offset account bank statement field
