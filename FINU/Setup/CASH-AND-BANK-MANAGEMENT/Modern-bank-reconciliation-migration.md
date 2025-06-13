@@ -37,13 +37,16 @@ These can either be done manually or using data entities.
 Following Finance utilities fields are replaced with Modern bank reconciliation:
 
 **Finance utilities field**    | **Table.Field**   | **Modern bank reconciliation replacement**                
-:-------    |:-------                         
+:-------                       |:-------           |:-------                 
 <ins>**Reconciliation matching rules**</ins> | 
 Action 'Mark new transactions' | BankReconciliationMatchRule.MatchActionType               | Action 'Generate voucher'
 Offset account   | BankReconciliationMatchRule.SAB_FinOffsetLedgerDimension  |
 
 Following Finance utilities fields are still used with Modern bank reconciliation: 
-- Offset type | BankReconciliationMatchRule.SAB_FinOffsetAccountType | 
+
+**Finance utilities field**    | **Table.Field**  
+:-------                       |:------- 
+Offset type | BankReconciliationMatchRule.SAB_FinOffsetAccountType | 
 
 
 ### Offset type Bank
@@ -56,7 +59,11 @@ Following Finance utilities fields are replaced with Modern bank reconciliation:
 Action 'Mark new transactions'  | BankReconciliationMatchRule.MatchActionType              | Action 'Generate voucher'
 
 Following Finance utilities fields are still used with Modern bank reconciliation: 
-- Offset type (BankReconciliationMatchRule.SAB_FinOffsetAccountType)
+
+
+**Finance utilities field**    | **Table.Field**  
+:-------                       |:------- 
+Offset type (BankReconciliationMatchRule.SAB_FinOffsetAccountType)
 
 
 
