@@ -40,8 +40,8 @@ The biggest change is the removal of Action **Mark new transactions**. This is r
 
 Finance Utilities extensions to Modern bank reconciliation:
 - **Offset company** - Ability to post the offset to intercompany ledger, bank, vendor or customer.
-- **Offset type Bank** - Modern bank reconciliation doesn't include an option for offset type Bank, we've added this option to **Generate voucher**.
-- **Offset type Customer** - 
+- **Offset type bank** - Modern bank reconciliation doesn't include an option for offset type Bank, we've added this option to **Generate voucher**.
+- **Offset type customer** - 
 
 ## Migration
 See the following [link](Modern-bank-reconciliation-migration.md) for migration details.
