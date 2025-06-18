@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-06-05
+ms.date: 2025-06-13
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,19 +40,12 @@ The biggest change is the removal of Action **Mark new transactions**. This is r
 
 Finance Utilities extensions to Modern bank reconciliation:
 - **Offset company** - Ability to post the offset to intercompany ledger, bank, vendor or customer.
-- **Offset type Bank** - Modern bank reconciliation doesn't include an option for offset type Bank, we've added this option to **Generate voucher**.
-- **Offset type Customer** - 
+- **Offset type bank** - Modern bank reconciliation doesn't include an option for offset type Bank, we've added this option to **Generate voucher**.
+- **Offset type customer** - 
 
-Following Finance utilities fields are replaced with Modern bank reconciliation:
+## Migration
+See the following [link](Modern-bank-reconciliation-migration.md) for migration details.
 
-**Finance utilities field**    | **Modern bank reconciliation replacement**
-:-------    |:-------                         
-<ins>**Financial utilities parameters**</ins> | 
-Reconciliation customer payment journal       | Bank accounts - Customer payment journal
-Method of payment                             | Reconciliation matching rules - Method of payment
-<ins>**Reconciliation matching rules**</ins> | 
-Tax fields                                    | 
-Financial dimensions                          | 
 
 ## Setup
 
