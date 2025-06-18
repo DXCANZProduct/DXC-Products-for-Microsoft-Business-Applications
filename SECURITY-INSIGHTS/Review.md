@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Review Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-11
+ms.date: 2025-06-18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -93,6 +93,11 @@ After modifying security configuration, rerun the following to update the values
 - Fetch interaction data from application Insights
 - Calculate utilization rates
 
+#### Interaction type
+**Interaction type** provides additional information on the accessed menu items. For example if the user only viewed Finance license type menu items, they could possibly be switched to a Team member / Activity license type role for the menu items. (Setup)[../Parameters.md#4--monitoring-and-telemetry-parameters]
+
+- **Viewed** - Only opened the form vs.
+- **Edited** - Modified / created records
 
 #### Buttons
 
