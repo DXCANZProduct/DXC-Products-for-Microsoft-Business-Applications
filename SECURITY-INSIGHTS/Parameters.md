@@ -53,12 +53,13 @@ Find and enable the feature **Security Insights for D365FO** to enable the produ
 ## 4.  Monitoring and telemetry parameters
 Refer to [Telemetry for Finance and Operations apps](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/monitoring-telemetry/monitoring-getting-started) to setup and send telemetry from Microsoft Dynamics 365 Finance environments to Azure Application Insights.
 
-Security Insights also provides the additional option to log Form/Page **Interaction type**: <br>
-- **Viewed** - Only opened the form vs.
-- **Edited** - Modified / created records
-
 Navigate to **System administration > Setup > Monitoring and telemetry parameters**. <br>
-Enable this additional telemetry field by setting **Form edits (Page edits)** to _Yes_.
+
+Field                           | Description
+:--                             |:--
+**Form runs (Page views)**      | Set to _Yes_ to enable page view telemetry monitoring
+**Form edits (Page edits)**     | Security Insights also provides the additional option to log Form/Page **Interaction type**: <br> - **Viewed** - Only opened the form vs. <br> - **Edited** - Modified / created records. <br> Enable this additional telemetry field by setting to _Yes_.
+
 
 ## 5.	Parameters
 The **Insights for user access and security parameters** page within Security admininstration is used to define the configuration required to connect to the app created for your **Azure application insights** in Step 2. <br>
