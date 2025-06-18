@@ -94,7 +94,7 @@ After modifying security configuration, rerun the following to update the values
 - Calculate utilization rates
 
 #### Interaction type
-**Interaction type** provides additional information on the accessed menu items. For example if the user only viewed Finance license type menu items, they could possibly be switched to a Team member / Activity license type role for the menu items. [Setup](../Parameters.md#4--monitoring-and-telemetry-parameters)
+**Interaction type** provides additional information on the accessed menu items. For example if the user only viewed Finance license type menu items, they could possibly be switched to a Team member / Activity license type role for the menu items. [Setup](Parameters.md#4--monitoring-and-telemetry-parameters)
 
 - **Viewed** - Only opened the form vs.
 - **Edited** - Modified / created records
