@@ -58,7 +58,7 @@ Navigate to **System administration > Setup > Monitoring and telemetry parameter
 Field                           | Description
 :--                             |:--
 **Form runs (Page views)**      | Set to _Yes_ to enable page view telemetry monitoring
-**Form edits (Page edits)**     | Security Insights also provides the additional option to log Form/Page **Interaction type**: <br> - **Viewed** - Only opened the form vs. <br> - **Edited** - Modified / created records. <br> Enable this additional telemetry field by setting to _Yes_.
+**Form edits (Page edits)**     | Security Insights also provides the additional option to log Form/Page **Interaction type**: <br> • **Viewed** - Only opened the form vs. <br> • **Edited** - Modified / created records. <br> Enable this additional telemetry field by setting to _Yes_.
 
 
 ## 5.	Parameters
