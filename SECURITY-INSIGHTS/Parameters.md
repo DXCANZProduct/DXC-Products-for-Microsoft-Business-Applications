@@ -47,8 +47,16 @@ Note: Copy the Tenant ID, Client ID and Client Secret values during this step. T
 
 ## 3.	Enable feature
 Find and enable the feature **Security Insights for D365FO** to enable the product
- 
-## 4.	Parameters
+
+## 4.  Monitoring and telemetry parameters
+Security Insights also provides the option to log Form/Page **Interaction type**: <br>
+- **Viewed** - Only opened the form vs.
+- **Edited** - Modified / created records
+
+Navigate to **System administration > Setup > Monitoring and telemetry parameters**. <br>
+Enable this additional telemetry field by setting **Form edits (Page edits)** to _Yes_.
+
+## 5.	Parameters
 The **Insights for user access and security parameters** page within Security admininstration is used to define the configuration required to connect to the app created for your **Azure application insights** in Step 2. <br>
 Multiple Insights connections can be configured and the applicable one selected when running **Fetch interaction data from application Insights** on page **Insights for user access and security** which fetches accessed menu items withing the selected time period.
 
