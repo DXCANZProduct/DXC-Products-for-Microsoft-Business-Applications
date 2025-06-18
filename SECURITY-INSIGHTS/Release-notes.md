@@ -44,6 +44,18 @@ Release notes for other models included in product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
 
+# Next version
+
+# Release 10.0.43.202506TBD
+
+Planned release date: June 2025
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+22736 <br> 22158	| **Interaction type**	| Ability to log Form/Page Interaction types **Viewed** (only opened the form) vs **Edited** (modified / created records). Enable this additional telemetry field by setting **Form edits (Page edits)** to _Yes_ on **Monitoring settings**. br> ![Monitoring settings](IMAGES/ReleaseNotes_20250619_1.png "Monitoring settings") <br> <br>  Where there was no interaction, or the interaction was prior enabling the new monitoring field, the Interaction type will be Blank. <br> <br> Interaction type has also been added to the following two Security Insights forms. Please note the Interaction type is a display method on the license view. br> ![User view](IMAGES/ReleaseNotes_20250619_2.png "User view") <br> <br> br> ![License view](IMAGES/ReleaseNotes_20250619_3.png "License view") 
+
 # Current version
 
 ### Release 10.0.42.20250325
