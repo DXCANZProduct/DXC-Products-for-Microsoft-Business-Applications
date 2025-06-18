@@ -30,6 +30,8 @@ ms.dyn365.ops.version: 10.0.32
 
 ###	1. Azure Application Insights instance
 Start by creating a new Application Insights instance in Azure. See [MS doc](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-new-resource).
+
+Costing of telemetry in Azure Application Insights - [Understand and control costs](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/monitoring-telemetry/monitoring-understanding-and-controlling-cost)
  
 Navigate to Configure > API Access and copy the Application Id. Refer to [Application Id](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-app-insights-keys?view=azure-bot-service-4.0#application-id)
 The application id will be used to link Security Insights for D365 FO to your Azure Application Insights instance in [Step 4](./Parameters.md#41-configuration) later.
