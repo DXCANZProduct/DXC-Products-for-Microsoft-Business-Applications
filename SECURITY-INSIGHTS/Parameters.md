@@ -49,7 +49,9 @@ Note: Copy the Tenant ID, Client ID and Client Secret values during this step. T
 Find and enable the feature **Security Insights for D365FO** to enable the product
 
 ## 4.  Monitoring and telemetry parameters
-Security Insights also provides the option to log Form/Page **Interaction type**: <br>
+Refer to [Telemetry for Finance and Operations apps](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/monitoring-telemetry/monitoring-getting-started) to setup and send telemetry from Microsoft Dynamics 365 Finance environments to Azure Application Insights.
+
+Security Insights also provides the additional option to log Form/Page **Interaction type**: <br>
 - **Viewed** - Only opened the form vs.
 - **Edited** - Modified / created records
 
