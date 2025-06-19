@@ -31,16 +31,17 @@ ms.dyn365.ops.version: AX 7.0.1
 This document describes the features that are either new or changed in the release version mentioned.
 
 # Version compatibility
-The matrix shows the minimum DXC build versions compatible with Microsoft versions and builds. <br>
+The matrix shows the minimum DXC build versions that are compatible with Microsoft versions and builds. <br>
 If blank, investigations are ongoing. <br>
 
 D365 Version		  |Iissues found in testing?| Product version tested
 :--       	 		 |:--           			  |:--
-Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
-Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
-Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymization 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
-Product version: 10.0.43 <br> App build: 10.0.2177	  | No | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymization 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051
-Product version: 10.0.44 <br> App build: 10.0.2263	  | yes | Errors found in build for Security roles.  New devlopment is pending 
+Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymisation 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
+Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymisation 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
+Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymisation 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
+Product version: 10.0.43 <br> App build: 10.0.2177	  | No | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymisation 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051
+Product version: 10.0.44 <br> App build: 10.0.2263	  | yes only build errors 22878 | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymisation 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051 <br> build errors fixed in 10.0.44.202506171
+ 
 
 Release notes for other models included in the product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
@@ -57,41 +58,37 @@ Reason for deprecation/removal: no longer being used as a source of currency exc
 ### Business Process links
 Reason for deprecation/removal - Business Process links (also referred to as Business Process Suite) were originally designed for Mavim and SharePoint integration.  Both Mavim and SharePoint have alternate connection capabilities with D365 Finance and Operations, and the product is no longer being utilised as part of the Core extension solutions. The Model was removed in version 10.0.40.202502051
 
-
 # Current version
 
-### Release 10.0.40.20250205
+### Release 10.0.44.20250617
 
-DXC Core extensions 10.0.40 runs on the following Microsoft releases
+DXC Core extensions 10.0.44 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-Microsoft Dynamics 365 application	| 10.0.41 	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
-Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
-Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 
-## Feature management
-From 10.0.36.20231130, Core Extensions can be enabled via Feature management.
-Enable the following feature in D365 Feature management:
+#### Build 10.0.44.202506171
 
-- Core extensions
+<ins>Bug fixes</ins>
 
-Press **Check for updates** to refresh the feature management list if the above feature is not visible.
+Number	  	| Name	  | Description
+:--       	|:--              |:--
+22878|Update to extension of standard Security roles| Extensions made to the standard security roles "BudgetManager", "LedgerAccountingManager", and "InventMaterialsManager" failed as part of the build process and were subsequently corrected to allow users to continue to use Core Extension functionality without the requirement to use the System Administrator role.  |
 
+
+
+# Previous version(s)
+### Release 10.0.40.20250205
 #### Build 10.0.40.202502051
 
 <ins>New features</ins>
 
 Number	  	| Name	  | Description
 :--       	|:--              |:--
-18101|Removal of references and model for Business Process Suite| Business Process links were originally designed for Mavim and SharePoint integration. Both Mavim and Sharepoint have alternate connection capabilities with D365 Finance and Operations and the product is no longer being utilised as part of Core Extensions.  References within the Core extension product have been removed and will no longer be included in releases.  Customers should remove the Model from existing environments. following the instructions outlined by Micorosft - [Uninstall a package](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package)
-18908|Ability to create multiple General Ledger Journals in Multiple legal entities from a single uplaod| A new data entity and menu item have been created to facilitate this functionality. see [New Journal Upload](../CORE-EXTENSIONS/JOURNAL-IMPORTS/General-Journal-Multiple.md) for instructions on how to access and utilise this feature |
+18101|Removal of references and model for Business Process Suite| Business Process links were originally designed for Mavim and SharePoint integration. Both Mavim and SharePoint have alternate connection capabilities with D365 Finance and Operations, and the product is no longer being utilised as part of Core Extensions.  References within the Core extension product have been removed and will no longer be included in releases.  Customers should remove the Model from existing environments. following the instructions outlined by Microsoft - [Uninstall a package](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package)
+18908|Ability to create multiple General Ledger Journals in Multiple legal entities from a single upload | A new data entity and menu item have been created to facilitate this functionality. see [New Journal Upload](../CORE-EXTENSIONS/JOURNAL-IMPORTS/General-Journal-Multiple.md) for instructions on how to access and utilise this feature |
 
-
-
-# Previous version(s)
 
 ### Release 10.0.40.20241023
 #### Build 10.0.40.202410231
@@ -102,13 +99,13 @@ Release date: 23 October 2024
 
 Number	  	| Name	  | Description
 :--       	|:--              |:--
-18269|Cannot edit a record in Titles (HcmTitle). The record already exists.| A new Data Type of Title ID has been added to generate random unique titles that can be used  to fill this field
-17084|Duplicate record exists when exporting print management settings | New field PRINTMGMTDOCINSTANCENAME has been introduced to the Data Entity to allow for the Title of the conditional setting to be saved
-18737|Refine "edit" capability for Data anonymization Table| When a record(s) exist in the *Data anonymization fields Table*, allow "Run across all companies" and "Company" to be edited and hold the information/selection in the Data anonymization fields Table below (existing logic remains that if "Company" is active, "Run across all companies" cannot be ticked )
-18180|Data anonymization Change of Legal entity| When switching "Run across all companies" and "Company" the legal entity selection in "company" will now clear 
-17915|Data anonymization Support other Languages|Data anonymization Supports Languages other than en-AU, and en-US
-16616| Add warning or confirmation message before Reset print management is actioned| A new warning message was added when selecting "reset print management" to confirm actions cannot be undone
-19570|Change Feature Key description for Data Anonymization include (Preview)| Changes were made to the DXC License manager model (see [Release notes](../LMG/Release-notes.md) ) to highlight that Data anonymization is a preview product and still evolving 
+18269|Cannot edit a record in Titles (HcmTitle). The record already exists.| A new Data Type of Title ID has been added to generate random, unique titles that can be used  to fill this field
+17084|Duplicate record exists when exporting print management settings | A New field, PRINTMGMTDOCINSTANCENAME has been introduced to the Data Entity to allow for the Title of the conditional setting to be saved
+18737|Refine "edit" capability for Data Anonymisation Table| When a record(s) exist in the *Data Anonymisation fields Table*, allow "Run across all companies" and "Company" to be edited and hold the information/selection in the Data Anonymisation fields Table below (existing logic remains that if "Company" is active, "Run across all companies" cannot be ticked )
+18180|Data anonymisation Change of Legal entity| When switching "Run across all companies" and "Company", the legal entity selection in "Company" will now clear 
+17915|Data anonymisation Support other Languages|Data anonymisation Supports Languages other than en-AU, and en-US
+16616| Add warning or confirmation message before Reset print management is actioned| A new warning message was added when selecting "reset print management" to confirm that actions cannot be undone
+19570|Change Feature Key description for Data Anonymisation include (Preview)| Changes were made to the DXC License manager model (see [Release notes](../LMG/Release-notes.md) ) to highlight that Data anonymisation is a preview product and still evolving 
 
 ### Release 10.0.36.20240530
 #### Build 10.0.36.202405301
@@ -119,7 +116,7 @@ Release date: 30 May 2024
 
 Number	  	| Functionality	  | Description
 :--       	|:--              |:--
-16778		| Separate Feature and License Key for Data Anonymization 	| Previously Data Anonymization was available as part of the Standard Core EXtensions Software piece.  From 10.0.36.20240530 this was corrected and Data Anonymization is licensed separately from the rest of the Core extension functions.
+16778		| Separate Feature and License Key for Data Anonymisation 	| Previously, Data Anonymisation was available as part of the Standard Core Extensions Software piece.  From 10.0.36.20240530 this was corrected, and Data Anonymisation is licensed separately from the rest of the Core extension functions.
 
 <ins>New features</ins>
 
@@ -133,14 +130,6 @@ Number	  	| Functionality	  | Description
 17472|Selected fields getting temporarily cleared|When adding fields to your table selection fields were being cleared
 17477|Validate URL in Parameters table on Update| The URL must be in a WEB format
 17473|Header Lines relationship between data anonymisation table and fields|If Table fields have been added, you can no longer remove the Header table from the list 
-
-
-
-
-
-
-
-
 
 ### Release 10.0.36.20231130
 
