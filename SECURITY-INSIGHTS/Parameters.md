@@ -28,6 +28,8 @@ ms.dyn365.ops.version: 10.0.32
 
 # Security Insights for D365 FO
 
+# Azure Application Insights
+
 ###	1. Azure Application Insights instance
 Start by creating a new Application Insights instance in Azure. See [MS doc](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-new-resource).
 
@@ -46,6 +48,8 @@ Follow the instructions in the below documents to register the Azure Application
 - [Set up authentication](https://learn.microsoft.com/en-us/azure/azure-monitor/app/azure-ad-authentication?tabs=net#set-up-authentication)
 
 Note: Copy the Tenant ID, Client ID and Client Secret values during this step. This will be used to link Security Insights for D365 FO to Azure Application Insights application in the next step ([Step 4](./Parameters.md#41-configuration)).
+
+# D365 Finance and Operations
 
 ## 3.	Enable feature
 Find and enable the feature **Security Insights for D365FO** to enable the product
