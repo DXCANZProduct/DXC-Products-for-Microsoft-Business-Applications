@@ -106,7 +106,9 @@ ms.dyn365.ops.version: 10.0.40
 3.  Validate the data on the funding journal lines.
 4.  Click on **\<Post\>** to post the journal.
 
+<div class="importSection" id="importSection">
 ### Import funding claim payment statement
+</div>
 
 Payment statements must be downloaded from PRODA Care services Online Services (in a CSV format)
 
