@@ -27,26 +27,19 @@ ms.search.validFrom: 2025-06-19
 ms.dyn365.ops.version: 10.0.40
 ---
 
-# Funding
+### Generate funding claim form
 
--   Funding is the most common income for Care services providers.
--   Transactions related to funding will not appear in the Customer transactions form because they are not related to the customer balance.
--   Funding claims for Community and Disability service providers can be imported via the data migration framework.
--   The funding claims for residential Care services providers will be generated from the residents’ funding schedules.
--   The Funding claim form will group all relevant funding claims to generate the funding claim file.
+**Path: Care services \> Funding \> Funding Claim form**
 
-### Generate funding claims
-
-**Path: Care services \> Funding \> Generate Funding Claims**
-
-1.  Populate the End date.
-2.  Click on **\<Filter\>**
-3.  Specify the required criteria for generating the funding claims (Service code or client account)
-4.  Click **\<OK\>**
-5.  *If required, setup the job to run in the background. Select Batch processing to Yes.*
-6.  *Click on \<Recurrence\>*
-7.  *The default value is for the job to run once (End after:1) If it is a requirement for the job to run at a regular interval, then setup up the required recurrence pattern.*
-8.  *Click \<OK\> to close the Recurrence form.*
-9.  *Click \<OK\> to add the job to the batch queue.*
-10. The relevant funding claims will be generated with the Document status = Open
-
+1.  Click on **\<New funding claim form\>**
+2.  Select Billing account name.
+3.  Click on **\<Filter\>**
+4.  Specify the required criteria for generating the funding claim form (End date, client account)
+5.  Click **\<OK\>**
+6.  *If required, setup the job to run in the background. Select Batch processing to Yes.*
+7.  *Click on \<Recurrence\>*
+8.  *The default value is for the job to run once (End after:1) If it is a requirement for the job to run at a regular interval, then setup up the required recurrence pattern.*
+9.  *Click \<OK\> to close the Recurrence form.*
+10. *Click \<OK\> to add the job to the batch queue.*
+11. The funding claim form will be generated with all the relevant funding claims.
+12. Populate the description, claim year, and claim month.
