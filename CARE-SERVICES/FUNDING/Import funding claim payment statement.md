@@ -108,7 +108,7 @@ ms.dyn365.ops.version: 10.0.40
 
 <div class="importSection" id="importSection">
 ### Import funding claim payment statement
-</div>
+
 
 Payment statements must be downloaded from PRODA Care services Online Services (in a CSV format)
 
@@ -126,7 +126,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 **![Funding payment statement](../IMAGES/Funding payment statement.png)**
 
 *Funding payment statement*
-
+</div>
 ### Funding reconciliation
 
 **Path: Care services \> Funding \> Funding reconciliation**
