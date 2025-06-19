@@ -121,7 +121,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 7.  Click on the **‘Refresh**’ button in the top right corner to refresh the form.
 8.  The statement lines will display.
 
-![](media/e906818ecc1787da4443d13436f84eea.png)
+**![Funding payment statement](../IMAGES/Funding payment statement.png)**
 
 *Funding payment statement*
 
