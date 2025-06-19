@@ -46,7 +46,7 @@ Release notes for other models included in product:
 
 # Current version
 
-# Release 10.0.43.20250619
+### Release 10.0.43.20250619
 
 Security Insights for D365 FO 10.0.43 runs on the following Microsoft releases
 
