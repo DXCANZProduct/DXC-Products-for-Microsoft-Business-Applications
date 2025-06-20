@@ -36,7 +36,7 @@ Billing rates, subsidy rates capping limits, and interest rates require regular 
 -   Fees on the ‘Department of Health and Care services Schedule of fees and charges’ are normally increased bi-annually.
 -   Update other fees when required.
 
-**Path: Care services\> Setup\> Billing\> Billing codes**
+**Navigate to: Care services\> Setup\> Billing\> Billing codes**
 
 1.  Select the relevant billing code.
 2.  Click on **\<Billing Rates\>**
@@ -51,7 +51,7 @@ Billing rates, subsidy rates capping limits, and interest rates require regular 
 
 Subsides and supplements on the Department of Health and Care services Schedule of subsidies and supplements have regular increases.
 
-**Path: Care services\> Setup\> Funding \> Funding codes**
+**Navigate to: Care services\> Setup\> Funding \> Funding codes**
 
 1.  Select the relevant funding code.
 2.  Click on **\<Funding Rates\>**
@@ -64,7 +64,7 @@ Subsides and supplements on the Department of Health and Care services Schedule 
 
 Interest rates have quarterly adjustments.
 
-**Path: Care services\> Setup\> Accommodation Payments \> Accommodation Payment interest rates**
+**Navigate to: Care services\> Setup\> Accommodation Payments \> Accommodation Payment interest rates**
 
 1.  Populate the ‘To date’ for the old rate.
 2.  Click on **\<New\>** to create a new line.
@@ -75,7 +75,7 @@ Interest rates have quarterly adjustments.
 
 The annual and lifetime capping limits for Means Tested Fees and Income Tested Fees are adjusted bi-annually
 
-**Path: Care services\> Setup\> Capping limits**
+**Navigate to: Care services\> Setup\> Capping limits**
 
 1.  Select the relevant capping limit.
 2.  Click on \<Edit\>
@@ -92,7 +92,7 @@ The annual and lifetime capping limits for Means Tested Fees and Income Tested F
 
 New fees are setup as billing codes.
 
-**Path: Care services\> Setup\> Billing \> Billing codes**
+**Navigate to: Care services\> Setup\> Billing \> Billing codes**
 
 1.  Click on **\<New\>**
 2.  Populate the billing code and description.
