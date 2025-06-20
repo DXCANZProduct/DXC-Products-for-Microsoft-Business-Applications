@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.40
 -   Clients can request pre-set direct debit amount where the pre-set amount is always proposed.
 -   The bank account and method of payment must be setup.
 
-**Path: Care services \> All customers**
+**Navigate to: Care services \> All customers**
 
 1.  Click on **\<Account\>** to open the customer form.
 2.  Click on **\<Edit\>**
