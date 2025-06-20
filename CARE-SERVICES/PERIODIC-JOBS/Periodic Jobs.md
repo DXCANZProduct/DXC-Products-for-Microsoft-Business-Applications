@@ -35,7 +35,6 @@ Periodic jobs can be setup to run at a regular interval to update information su
 
 ### Client capping calculation
 
-### 
 
 This function updates the Client capping records accessible from the customer account (Customer \> Action pane\> Setup \> Capping limit setup) to reflect changes in the annual and lifetime capping limit thresholds, along with all transactions that count towards reaching the threshold that have occurred since the last calculation date.
 
@@ -51,8 +50,6 @@ This function updates the Client capping records accessible from the customer ac
 
 ### Accommodation payment calculation
 
-### 
-
 This function updates the Accommodation payment details also accessible from the customer account (All Customers \> Invoice \> Accommodation Payment) to reflect changes in the balances following billing and receipting
 
 1.  Navigate to Care services \> Periodic \> Accommodation payment calculation
@@ -67,8 +64,6 @@ This function updates the Accommodation payment details also accessible from the
 10. Click **\<OK\>** to add the job to the batch queue to be processed at the set interval.
 
 ### Concessional/Supported ratio calculation
-
-### 
 
 This function calculates the Concessional/Supported ratios for all services (facilities). The result of the calculations is displayed in Inquiries and reports \> Service concessional/Supported daily ratio.
 
@@ -89,8 +84,6 @@ The job should be run before generating funding claims to ensure the accommodati
 
 ### Service listing calculation
 
-### 
-
 This function calculates the service listing information such as current clients, available places (beds), accommodation payment statistics for all services (facilities). The result of the calculations is displayed in All Services \> Service listing
 
 1.  Navigate to Care services \> Periodic \> Service listing calculation
@@ -102,7 +95,6 @@ This function calculates the service listing information such as current clients
 7.  Click **\<OK\>** to close the form.
 8.  Click **\<OK\>** to add the job to the batch queue to be processed at the set interval.
 
-### 
 
 ### Lumpsum journal type update for the posted customer transactions
 
