@@ -40,9 +40,9 @@ ms.dyn365.ops.version: 10.0.40
 7.  Click **\<OK\>**
 8.  The transfer line will be generated.
 
-   **![Transfer](../IMAGES/Transfer.png)**
+**![Transfer](../IMAGES/Transfer.png)**
 
-    *Transfer*
+*Transfer*
 
 9.  If required, **process a refund** if the new bed price is less than the original one or another invoice if the bed price is more than the original (subject to reason for the bed move)
 10. Go to **Invoice \> Accommodation Payment**
@@ -83,7 +83,7 @@ ms.dyn365.ops.version: 10.0.40
 9.  The previous facility home address purpose will be changed to ‘Other’
 10. The new facility address details will automatically be created with the purpose = Home
 
-**![FClient addresses](../IMAGES/Client addresses.png)**
+**![Client addresses](../IMAGES/Client addresses.png)**
 
 *Client addresses*
 
