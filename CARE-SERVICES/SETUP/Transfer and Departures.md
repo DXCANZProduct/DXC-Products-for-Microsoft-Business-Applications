@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.40
 
 ### Bed transfer – transfer within the same facility (service)
 
-**Path: Care services \> All customers \> Care services \> Service entries**
+**Navigate to: Care services \> All customers \> Care services \> Service entries**
 
 1.  Open the service entry the resident is departing from.
 2.  Navigate to the **Transfer** section.
@@ -70,7 +70,7 @@ ms.dyn365.ops.version: 10.0.40
 
 ### Transfer to another facility (service)
 
-**Path: Care services \> All customers \> Care services \> Service entries**
+**Navigate to: Care services \> All customers \> Care services \> Service entries**
 
 1.  Open the service entry the resident is departing from.
 2.  Populate **\<Departure Date\>**
@@ -120,7 +120,7 @@ ms.dyn365.ops.version: 10.0.40
 
 ### Departures
 
-**Path: Care services \> All customers \> Care services \> Service entries**
+**Navigate to: Care services \> All customers \> Care services \> Service entries**
 
 1.  Open the service entry the resident is departing from.
 2.  Populate **\<Departure Date\>**
