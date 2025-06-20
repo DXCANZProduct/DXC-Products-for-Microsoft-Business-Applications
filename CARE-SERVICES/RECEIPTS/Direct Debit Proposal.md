@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.40
 -   Ensure the clients’ method of payment and bank accounts have been setup.
 -   Setup the direct debit limits or Pre-set direct debit amounts.
 
-**Path: Care services \> Journals\> Receipt journal**
+**Navigate to: Care services \> Journals\> Receipt journal**
 
 1.  Click on **\<New\>** to create a new receipt journal.
 2.  Select the **relevant receipt journal** from the drop-down menu.
