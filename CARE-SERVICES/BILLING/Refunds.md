@@ -39,7 +39,7 @@ ms.dyn365.ops.version: 10.0.40
 
 ### Refund of fees
 
-**Path: Care services \> All customers \> Collect \> Client refund proposal**
+**Navigate to: Care services \> All customers \> Collect \> Client refund proposal**
 
 1.  Select ‘Partial refund’ in the Refund type and click \<Ok\>
 2.  Select the credit invoice(s) by ticking the ‘Mark’ check box
@@ -50,7 +50,7 @@ ms.dyn365.ops.version: 10.0.40
 
 ### Process the refund in a Vendor payment journal
 
-**Path:** **Accounts payable \> Payments\> Vendor payment journal**
+**Navigate to:** **Accounts payable \> Payments\> Vendor payment journal**
 
 1.  Click on \<New\> to create a new journal, select the Name and click on Lines to open the journal
 2.  Select the vendor account
@@ -73,26 +73,26 @@ This process will:
 \- allow the Interest payable to be generated on the new accommodation payment and   
 \- allow the new accommodation payment to be refunded when ready.
 
-**Path: Care services \> All customers \> Care services \> Service entries**
+**Navigate to: Care services \> All customers \> Care services \> Service entries**
 
 1.  Click on \<New\> to create a new service entry
 2.  Populate the same details as the original service entry, use the departure date from the original service entry to populate the entry, billing end date and departure date (overlaps are not allowed so the original entry date can’t be used for this purpose)
 
-**Path:** **Care services \> All customers \> Invoices \> Accommodation payments**
+**Navigate to:** **Care services \> All customers \> Invoices \> Accommodation payments**
 
 1.  Select the new accommodation payment header
 2.  Click on \<Add line\>
 3.  Populate the End date
 4.  Add the refundable balance in the agreed amount
 
-**Path:** **Care services \>Journals \> Billing journal**
+**Navigate to:** **Care services \>Journals \> Billing journal**
 
 1.  Create a new lumpsum billing journal then click on \<Lines\>
 2.  Populate the departure date in the ‘Date’ , ‘Start date’ and ‘End date’ fields, select the customer and the **new** accommodation payment id
 3.  Populate the refundable balance in the Rate field
 4.  Validate and post the journal
 
-**Path:** **Care services \>Journals \> Receipt journal**
+**Navigate to:** **Care services \>Journals \> Receipt journal**
 
 1.  Create a new lumpsum receipt journal then click on \<Lines\>
 2.  Populate the departure date in the ‘Date’, ‘Start date’ and ‘End date’ fields, select the customer
