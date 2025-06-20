@@ -47,7 +47,6 @@ Generate the enquiry for a list of customer billing transactions that have not y
 
 The concessional supported ratios will be updated via the periodic Concessional/Supported ratio calculation job. The form displays the Service number, Threshold, discount (the % reduction of the accommodation supplement) and the actual ratio for each service (facility)
 
-### 
 
 ### Resident information
 
