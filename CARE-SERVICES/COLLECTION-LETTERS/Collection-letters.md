@@ -44,7 +44,7 @@ Navigate to: **Credit and collections > Collection letter**
 11. Go to ‘**Post collection letters’.**
 12. Populate the posting date and click on Filter to specify any additional criteria if required.
 13. Click OK to update the collection letter status to posted.
-14. Repeat the process; the next collection letter code will be generated as per setup in the relevant collection letter sequence.
+14. Repeat the process; the next collection letter code will be generated as per the setup in the relevant collection letter sequence.
 
 ### Collection letters – Community care
 
@@ -63,4 +63,4 @@ Navigate to: **Credit and collections > Collection letter**
 11. Go to ‘**Post collection letters’.**
 12. Populate the posting date and click on Filter to specify any additional criteria if required.
 13. Click OK to update the collection letter status to posted.
-14. Repeat the process, the next collection letter code will be generated as per setup in the relevant collection letter sequence.
+14. Repeat the process; the next collection letter code will be generated as per the setup in the relevant collection letter sequence.
