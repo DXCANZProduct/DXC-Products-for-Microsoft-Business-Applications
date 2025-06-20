@@ -40,7 +40,7 @@ ms.dyn365.ops.version: 10.0.40
 7.  Click **\<OK\>**
 8.  The transfer line will be generated.
 
-   **![Transfer](../IMAGES/Transfert.png)**
+   **![Transfer](../IMAGES/Transfer.png)**
 
     *Transfer*
 
