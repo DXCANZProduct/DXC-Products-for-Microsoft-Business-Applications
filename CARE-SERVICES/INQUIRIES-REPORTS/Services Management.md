@@ -33,7 +33,7 @@ Services are setup for Residential Care services facilities, Retirement Villages
 
 ### Creating a new service type
 
-**Path: Care services \> Setup\> Service \> Service Types**
+**Navigate to: Care services \> Setup\> Service \> Service Types**
 
 1.  Click on \<New\> to add a new service type.
 2.  Enter a unique code and description of that service type
@@ -43,7 +43,7 @@ Services are setup for Residential Care services facilities, Retirement Villages
 
 ### Creating a new care type
 
-**Path: Care services \> Setup\> Service \> All services**
+**Navigate to: Care services \> Setup\> Service \> All services**
 
 1.  Click on \<New\> to add a new care type.
 2.  Enter a unique code and description of that care type
@@ -53,7 +53,7 @@ Services are setup for Residential Care services facilities, Retirement Villages
 
 ### Creating a new service
 
-**Path: Care services \> Setup\> Service \> All services**
+**Navigate to: Care services \> Setup\> Service \> All services**
 
 1.  Click on \<New\> to add a new service.
 2.  Populate the Service code, Service type and Description.
@@ -66,7 +66,7 @@ Services are setup for Residential Care services facilities, Retirement Villages
 
 ### Creating places
 
-**Path: Care services \> Setup\> Service \> All services \> Places**
+**Navigate to: Care services \> Setup\> Service \> All services \> Places**
 
 Services setup with ‘Place is required on service entry’ selected enables the ability to setup beds, rooms, units and other places.
 
