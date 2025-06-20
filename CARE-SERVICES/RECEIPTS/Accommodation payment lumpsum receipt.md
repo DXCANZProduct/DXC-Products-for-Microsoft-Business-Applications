@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.40
 
 ### Accommodation payment lumpsum receipt
 
-**Path: Care services \> Journals\> Receipt journal**
+**Navigate to: Care services \> Journals\> Receipt journal**
 
 1.  Click on **\<New\>** to create a new receipt journal.
 2.  Select the **relevant lumpsum receipt journal** from the drop-down menu.
