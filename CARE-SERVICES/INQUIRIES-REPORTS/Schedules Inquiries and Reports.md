@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.40
 
 ### Daily client revenue
 
-**Navigate to: **Care services > inquiries and reports > Daily client revenue**
+**Navigate to: Care services > inquiries and reports > Daily client revenue**
 
 Generate the enquiry to view a summary of the total daily client revenue from the billing schedule, funding schedule, accommodation payment revenue and DMF revenue.
 
