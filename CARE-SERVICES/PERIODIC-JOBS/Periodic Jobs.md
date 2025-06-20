@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.40
 
 Periodic jobs can be setup to run at a regular interval to update information such as client capping details.
 
-**Path: Care services\> Periodic**
+**Navigate to: Care services\> Periodic**
 
 ### Client capping calculation
 
