@@ -35,8 +35,8 @@ ms.dyn365.ops.version: 10.0.40
 
 **Navigate to: Care services > All customers**
 
-1.  Click on **<Account>** to open the customer form.
-2.  Click on **<Edit>**
+1.  Click on \<**Account**\> to open the customer form.
+2.  Click on \<**Edit**\>
 3.  Navigate to Payment defaults.
 4.  Populate the ‘**Direct debit limit’.**
 
