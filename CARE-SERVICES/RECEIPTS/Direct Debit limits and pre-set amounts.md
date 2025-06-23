@@ -45,4 +45,4 @@ ms.dyn365.ops.version: 10.0.40
 5.  If the client has requested a pre-set amount, then set the ‘**Enable pre-set direct debit amount’** to Yes.
 6.  Select the **Service code** for the direct debit.
 7.  Populate the **Pre-set direct debit amount.**
-8.  Click **<Save>** and close the form.
+8.  Click \<**Save**\> and close the form.
