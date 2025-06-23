@@ -84,7 +84,8 @@ ms.dyn365.ops.version: 10.0.40
 10. The new facility address details will automatically be created with the purpose = Home
 **![Client addresses](../IMAGES/Client addresses.png)**
 
-*Client addresses*
+**Client addresses**
+
 11.  Go to Invoice> Accommodation payment.
 12. A new **accommodation payment header** has been created for the new facility.
 13. Select the new header and click on **\<Add line\>**
