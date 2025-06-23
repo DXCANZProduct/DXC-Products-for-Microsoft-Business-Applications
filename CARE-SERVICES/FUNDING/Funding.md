@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 10.0.40
 
 ### Generate funding claims
 
-**Path: Care services > Funding > Generate Funding Claims**
+**Navigate to: Care services > Funding > Generate Funding Claims**
 
 1.  Populate the End date.
 2.  Click on **\<Filter\>**
@@ -52,7 +52,7 @@ ms.dyn365.ops.version: 10.0.40
 
 ### Generate funding claim form
 
-**Path: Care services > Funding > Funding Claim form**
+**Navigate to: Care services > Funding > Funding Claim form**
 
 1.  Click on **\<New funding claim form\>**
 2.  Select Billing account name.
@@ -69,7 +69,7 @@ ms.dyn365.ops.version: 10.0.40
 
 ### Generate funding claim form file
 
-**Path: Care services > Funding > Funding Claim form**
+**Navigate to: Care services > Funding > Funding Claim form**
 
 1.  Select the relevant funding claim form.
 2.  Validate the data on the funding claim form lines.
@@ -79,7 +79,7 @@ ms.dyn365.ops.version: 10.0.40
 
 ### Generate funding journal
 
-**Path: Care services > Funding > Funding Claim form**
+**Navigate to: Care services > Funding > Funding Claim form**
 
 **OR**
 
@@ -99,7 +99,7 @@ ms.dyn365.ops.version: 10.0.40
 
 ### Review and post funding journal
 
-**Path: Care services > Funding > Journals > Funding journal**
+**Navigate to: Care services > Funding > Journals > Funding journal**
 
 1.  Select the relevant funding journal.
 2.  Click on **\<Lines\>**
@@ -110,7 +110,7 @@ ms.dyn365.ops.version: 10.0.40
 
 Payment statements must be downloaded from PRODA Care services Online Services (in a CSV format)
 
-**Path: Care services > Funding > Funding claim payment statement**
+**Navigate to: Care services > Funding > Funding claim payment statement**
 
 1.  Click on **\<New\>**
 2.  Select **\<Billing account name\>**
@@ -127,7 +127,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 
 ### Funding reconciliation
 
-**Path: Care services > Funding > Funding reconciliation**
+**Navigate to: Care services > Funding > Funding reconciliation**
 
 1.  Click on **\<New\>**
 2.  Select **\<Billing account name\>**
@@ -165,7 +165,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 
 ### Review and post Funding reconciliation journal
 
-**Path: Care services > Funding > Journals > Funding reconciliation journal**
+**Navigate to: Care services > Funding > Journals > Funding reconciliation journal**
 
 1.  Select the relevant journal.
 2.  Click on **\<Lines\>**
