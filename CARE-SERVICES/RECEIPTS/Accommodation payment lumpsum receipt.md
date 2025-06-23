@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.40
 1.  Click on \<  **New** \>  to create a new receipt journal.
 2.  Select the **relevant lumpsum receipt journal** from the drop-down menu.
 3.  Populate a meaningful description.
-4.  Click on **<Lines>**
+4.  Click on ** \< Lines \>**
 5.  Populate the date of receipt.
 6.  Select Client account.
 7.  Click **<Save>**
