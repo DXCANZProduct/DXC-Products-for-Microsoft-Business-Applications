@@ -160,7 +160,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 17. Select \<**Post and Reconcile**\> to generate a Funding Reconciliation Journal
 
 **![Funding reconciliation worksheet](../IMAGES/Funding reconciliation worksheet.png)**
-
+**Funding reconciliation worksheet**
 
 
 ### Review and post Funding reconciliation journal
