@@ -82,6 +82,7 @@ ms.dyn365.ops.version: 10.0.40
 8.  Click **\<Save\>** and close the form.
 9.  The previous facility home address purpose will be changed to ‘Other’
 10. The new facility address details will automatically be created with the purpose = Home
+
 **![Client addresses](../IMAGES/Client addresses.png)**
 
 **Client addresses**
