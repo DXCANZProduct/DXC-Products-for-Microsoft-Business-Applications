@@ -82,12 +82,10 @@ ms.dyn365.ops.version: 10.0.40
 8.  Click **\<Save\>** and close the form.
 9.  The previous facility home address purpose will be changed to ‘Other’
 10. The new facility address details will automatically be created with the purpose = Home
-
 **![Client addresses](../IMAGES/Client addresses.png)**
 
 *Client addresses*
-
-11. Go to Invoice> Accommodation payment.
+11.  Go to Invoice> Accommodation payment.
 12. A new **accommodation payment header** has been created for the new facility.
 13. Select the new header and click on **\<Add line\>**
 14. Populate the Agreed amount and Agreed Lumpsum and other relevant details.
@@ -117,6 +115,7 @@ ms.dyn365.ops.version: 10.0.40
 38. Select Offset account type = Vendor
 39. Select Offset account = The resident vendor account
 40. Validate and post the journal.
+
 
 ### Departures
 
