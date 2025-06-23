@@ -45,8 +45,8 @@ This function updates the Client capping records accessible from the customer ac
 5.  Select batch processing to Yes
 6.  Click on Recurrence
 7.  Populate the dates and recurrence patterns
-8.  Click **<OK>** to close the form.
-9.  Click **<OK>** to add the job to the batch queue to be processed at the set interval.
+8.  Click **\<OK\>** to close the form.
+9.  Click **\<OK\>** to add the job to the batch queue to be processed at the set interval.
 
 ### Accommodation payment calculation
 
@@ -60,8 +60,8 @@ This function updates the Accommodation payment details also accessible from the
 6.  Select batch processing to Yes
 7.  Click on Recurrence
 8.  Populate the dates and recurrence patterns
-9.  Click **<OK>** to close the form.
-10. Click **<OK>** to add the job to the batch queue to be processed at the set interval.
+9.  Click **\<OK\>** to close the form.
+10. Click **\<OK\>** to add the job to the batch queue to be processed at the set interval.
 
 ### Concessional/Supported ratio calculation
 
@@ -75,8 +75,8 @@ The job should be run before generating funding claims to ensure the accommodati
 4.  To setup the job to run in the background at a regular interval, Select batch processing to Yes
 5.  Click on Recurrence
 6.  Populate the dates and recurrence patterns
-7.  Click **<OK>** to close the form.
-8.  Click **<OK>** to add the job to the batch queue to be processed at the set interval.
+7.  Click **\<OK\>** to close the form.
+8.  Click **\<OK\>** to add the job to the batch queue to be processed at the set interval.
 
 **![Service concessional](../IMAGES/Service concessional.png)**
 
@@ -92,8 +92,8 @@ This function calculates the service listing information such as current clients
 4.  To setup the job to run in the background at a regular interval, Select batch processing to Yes
 5.  Click on Recurrence
 6.  Populate the dates and recurrence patterns
-7.  Click **<OK>** to close the form.
-8.  Click **<OK>** to add the job to the batch queue to be processed at the set interval.
+7.  Click **\<OK\>** to close the form.
+8.  Click **\<OK\>** to add the job to the batch queue to be processed at the set interval.
 
 
 ### Lumpsum journal type update for the posted customer transactions
@@ -112,8 +112,8 @@ This function removes the limit reached flag to reset the calculations for the l
 4.  To setup the job to run in the background at a regular interval, Select batch processing to Yes
 5.  Click on Recurrence
 6.  Populate the dates and recurrence patterns
-7.  Click **<OK>** to close the form.
-8.  Click **<OK>** to add the job to the batch queue to be processed at the set interval.
+7.  Click **\<OK\>** to close the form.
+8.  Click **\<OK\>** to add the job to the batch queue to be processed at the set interval.
 
 ### Funding schedule lines update
 
@@ -122,5 +122,5 @@ This function removes the limit reached flag to reset the calculations for the l
 3.  To setup the job to run in the background at a regular interval, Select batch processing to Yes
 4.  Click on Recurrence
 5.  Populate the dates and recurrence patterns
-6.  Click **<OK>** to close the form.
-7.  Click **<OK>** to add the job to the batch queue to be processed at the set interval.
+6.  Click **\<OK\>** to close the form.
+7.  Click **\<OK\>** to add the job to the batch queue to be processed at the set interval.
