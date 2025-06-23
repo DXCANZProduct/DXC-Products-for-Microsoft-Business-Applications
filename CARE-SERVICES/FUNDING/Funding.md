@@ -122,7 +122,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 8.  The statement lines will display.
 
 **![Funding payment statement](../IMAGES/Funding payment statement.png)**
-
+**Funding payment statement**
 
 
 ### Funding reconciliation
