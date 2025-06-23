@@ -40,7 +40,7 @@ ms.dyn365.ops.version: 10.0.40
 6.  Select Client account.
 7.  Click \<**Save**\>
 8.  Click on \<**Settle transactions**\>
-9.  Select the relevant invoice(s) and select the <Mark> check box.
+9.  Select the relevant invoice(s) and select the \<**Mark**\> check box.
 10. Click \<**OK**\>
 11. Populate a Description
 12. Select Billing account name.
