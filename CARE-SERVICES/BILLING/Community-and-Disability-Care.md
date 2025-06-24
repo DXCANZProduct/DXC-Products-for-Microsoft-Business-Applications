@@ -78,7 +78,7 @@ Navigate to: **Care services >  Billing > Billing transactions**
 
 ### View billing transactions
 
-Navigate to: ** **Care services >  Billing > Billing transactions**
+Navigate to: **Care services >  Billing > Billing transactions**
 
 1.  Billing transactions where the document status is **‘Open’** will display. Open status means they have not yet been included in a billing invoice.
 2.  Select **Show all** to view all billing transactions if required.
@@ -138,7 +138,7 @@ Navigate to: Care services Billing Generate Billing invoices**
 
 ### View billing invoices and generate a billing journal
 
-Navigate to: **Care services >  Billing > Billing  invoices**
+Navigate to: **Care services > Billing > Billing invoices**
 
 1.  Billing invoices that have not had a journal raised yet will be displayed on the billing invoice list.
 2.  Select **Show all** to view all billing invoices if required.
