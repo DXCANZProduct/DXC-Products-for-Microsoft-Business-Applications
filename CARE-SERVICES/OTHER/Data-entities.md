@@ -30,7 +30,7 @@ ms.dyn365.ops.version:  D365
 # Data entities
 
 The following is a summary of data entities available for the Care Services module:
-## Email setup
+## Billing Journals
 
 
 
