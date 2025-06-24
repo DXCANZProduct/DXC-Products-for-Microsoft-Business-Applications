@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ### Generate billing transactions
 
-Navigate to: **Care services >  Billing > Generate billing transaction**
+Navigate to: **Care services \>  Billing \> Generate billing transaction**
 
 1.  **Journal posting date –** Enter the posting date for the transaction
 2.  **End date—** Enter the last date to be included in the scheduled billing run, i.e., the date you want to bill.
