@@ -37,6 +37,6 @@ The following is a summary of data entities available for the Care Services modu
 
 **Order**| **Entity**| **Description**| **Dependency**
 :-----|:------------------------|:-------------------|:------------------------
-0 |Care services accommodation payment|Care services accommodation payment|TBA
-0 |Care services accommodation payment interest rate lines|Care services accommodation payment interest rate lines|TBA
+1 |Aged care billing journal headers | Header for Aged Care Billing Journals |TBA
+2 |Aged care billing journal lines |Journal Lines for Billing Journal |Aged care billing journal headers
 
