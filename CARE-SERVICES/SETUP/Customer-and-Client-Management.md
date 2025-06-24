@@ -205,9 +205,9 @@ Navigate to: **Care services  All customers**
 -   If the partner client leaves the service, the departure can also be recorded there.
 -   If the Primary client leaves the partner client can be switched to the Primary and all the setup and history is retained.
 1.  Create a new client account for the Partner as per previous instructions for client accounts (do not add a service entry)
-2.  Go to ****Care services  Customers  All customers**
+2.  Go to **Care services  Customers  All customers**
 3.  Select the Primary client from the client list
-4.  Click on ****Care services  Related information  Service entries**
+4.  Click on **Care services  Related information  Service entries**
 5.  If the Primary client does not already have a service entry for the shared place add a service entry as per above instructions
 6.  Open the Primary client service entry  
     **Identification tab**
