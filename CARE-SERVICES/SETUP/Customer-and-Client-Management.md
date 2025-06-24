@@ -252,7 +252,7 @@ Navigate to: **Care services  All customers  Invoice Setup  Billing schedule/Fun
 20. **Review** the rates shown on the billing schedule lines, and adjust the billing rates as per above for any that are not as required. Once all of the rates are correct, Click **Save** and close the Billing Schedule form.
 21. If the client has any billing schedule lines that affect the funding such as means tested fees or Hardship, open the Funding Schedule to confirm that the clawback line has been automatically created and the rates are correct.
 
-22. 
+
 ![Billing_Schedule](../IMAGES/Billing_Schedule.png)
 
 *Billing Schedule*
