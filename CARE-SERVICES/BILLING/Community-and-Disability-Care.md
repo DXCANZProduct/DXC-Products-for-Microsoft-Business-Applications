@@ -125,7 +125,7 @@ Navigate to: **Care services >  Billing > Billing transactions**
 
 ### Generate billing invoices
 
-Navigate to: Care services Billing Generate Billing invoices**
+Navigate to: **Care services Billing Generate Billing invoices**
 
 1.  **Invoice date –** Enter the required invoice date, usually the date the invoice is being generated or may be based on the day or month the services were provided.
 2.  Click on **Filter**
