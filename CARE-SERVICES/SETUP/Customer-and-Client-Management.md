@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 
-# Care services<br> Customer and Client Management
+# Care services <br> <br> Customer and Client Management
 -   Client admissions, departures, and transfers are managed using the client service entry details.
 -   Clients can have multiple contacts, including address, contact details and relationship type(s).
 -   The financial setup includes the Customer's bank account, the preferred payment method, billing, accommodation payment and funding.
