@@ -51,7 +51,6 @@ DXC DocuSign 10.0.44 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 
 Release notes for other models included in the product:
@@ -66,7 +65,7 @@ Release date: 25 June 2025
 
 Number	| Functionality	  	| Reason
 :--	|:--		  	|:--	
-23017	|	Incompataible authentication with FinOps	| Upgraded System.IdentityModel.Tokens.Jwt (4.0.0 → 8.3.0) to address authentication compatibility with FinOps 10.0.43
+23017	|	Incompataible authentication with FinOps	| Upgraded System.IdentityModel.Tokens.Jwt (4.0.0 → 8.3.0) to address authentication compatibility with FinOps 10.0.44
 
 
 # Previous version(s)
