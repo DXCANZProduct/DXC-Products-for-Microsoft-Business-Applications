@@ -46,9 +46,9 @@ Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.37
 Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40.202412041
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | No	          | 10.0.40.202412041
 
-#### **Release 10.0.40.202412041**
+#### **Release 10.0.43.202506241**
 
-DXC License Manager 10.0.40.202412041 runs on the following Microsoft releases
+DXC License Manager 10.0.43.202506241 runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                         |
 | :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -59,15 +59,15 @@ Microsoft Dynamics 365 application	| 10.0.43  | [What’s new or changed in Dyna
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 
 
-<b>Build 7.0.7279.122 </b>
+<b>Build 7.0.7521.60 </b>
 
-Release date: 04 December 2024
+Release date: 24 June 2025
 
-<ins>New features</ins>
+<ins>Bugs</ins>
 
 | Number | Functionality                                                       | Description                                                                                                                                             |
 | :----- | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 20571  | Update FinOps license validation service to new Microsoft Azure Org | License validation service in Dynamics 365 Finance and Operations for ISV products has been successfully migrated to a new Microsoft Azure Organization |
+| 21608  | Upgraded license API authentication | Upgraded license API authentication from ADAL.NET to MSAL.NET, supported version 4.61.3.0 |
 
 ### DXC License
 
@@ -133,6 +133,28 @@ Release date: 09 December 2024
 ## D365 Finance and Operations
 
 ### DXC License Manager
+#### **Release 10.0.40.202412041**
+
+DXC License Manager 10.0.40.202412041 runs on the following Microsoft releases
+
+| Base                               | Version | Release                                                                                                                                                         |
+| :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft Dynamics 365 application | 10.0.40 | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40) |
+| Microsoft Dynamics 365 application | 10.0.41 | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) |
+| Microsoft Dynamics 365 application | 10.0.42 | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42) |
+Microsoft Dynamics 365 application	| 10.0.43  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
+Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
+
+
+<b>Build 7.0.7279.122 </b>
+
+Release date: 04 December 2024
+
+<ins>New features</ins>
+
+| Number | Functionality                                                       | Description                                                                                                                                             |
+| :----- | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 20571  | Update FinOps license validation service to new Microsoft Azure Org | License validation service in Dynamics 365 Finance and Operations for ISV products has been successfully migrated to a new Microsoft Azure Organization |
 
 #### **Release 10.0.40.202410231**
 
