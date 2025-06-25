@@ -40,30 +40,27 @@ Product version: 10.0.40 <br> App build: 10.0.1935.5	  | No | DocuSign Foundatio
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615
 Product version: 10.0.43 <br> App build: 10.0.2177	  | No | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615
-Product version: 10.0.44 <br> App build: 10.0.2263.11	  | Yes 23017 | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615 <br> Erros fixed in 10.0.44
+Product version: 10.0.44 <br> App build: 10.0.2263.11	  | Yes 23017 | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615 <br> Erros fixed in 10.0.44.202506252
 
 
 # Current version
 
-### Release 10.0.34.20230615
+### Release 10.0.44.20250625
 
-DXC DocuSign 10.0.34 runs on the following Microsoft releases
+DXC DocuSign 10.0.44 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.40	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
-Microsoft Dynamics 365 application	| 10.0.42	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
-Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
-Microsoft Dynamics 365 application	| 10.0.44 	  | Due April 2025 see [Targeted release schedule](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change)
+
+Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 
 Release notes for other models included in the product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
 
 
-#### Build 10.0.44.----
-Release date: XX June 2025
+#### Build 10.0.44.202506252
+Release date: 25 June 2025
 
 <ins>Bug Fixes</ins>
 
