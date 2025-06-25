@@ -75,7 +75,7 @@ Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dy
 
 Number	  	| Name	  | Description
 :--       	|:--              |:--
-23095 |Update to Data Entity "Core ledger journal entity"| This data entity has been deprecated and replaced by new version titled Core ledger journal entity V8  |
+23095 |Update to Data Entity "Core ledger journal entity"| The previous entity titled "Core ledger journal entity" has been deprecated and replaced with "Core ledger journal entity V8", incorporating key changes.   This entity is sued for the Ability to create multiple General Ledger Journals in Multiple legal entities from a single upload  |
 
 # Previous version(s)
 ### Release 10.0.44.20250617
