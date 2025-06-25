@@ -81,7 +81,7 @@ Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.37
 Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40.202410231
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | No	          | 10.0.40.202502211
 
-#### **Release 10.0.43.202506251**
+#### **Release 10.0.43.202506252**
 DXC License 10.0.43 runs on the following Microsoft releases
 
 
