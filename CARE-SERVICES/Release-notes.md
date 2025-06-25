@@ -39,7 +39,7 @@ Microsoft Dynamics 365 Finance and Operations Version		  | Any issues found in t
 Microsoft Dynamics 365 Product version:    [10.0.41](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) <br> 	App build: 10.0.2015.16	  | No | 
 Microsoft Dynamics 365 Product version:    [ 10.0.42](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42) <br> 	App build: 10.0.2095	  | No | 
 Microsoft Dynamics 365 Product version:    [10.0.43](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43) <br>	 App build: 10.0.2177	  | No | 10.0.41.202502262
-
+Microsoft Dynamics 365 Product version:    [10.0.44](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43) <br>	 App build: 10.0.2177	  | No | 10.0.41.202502262
 
 Release notes for other models included in the product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
@@ -51,7 +51,7 @@ Release notes for other models included in the product:
 
 # Current version
 
-### Release 10.0.42.20250509
+### Release 10.0.43.20250617
 
 DXC Care Services  10.0.42 runs on the following Microsoft releases
 
@@ -61,7 +61,7 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.42	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 
-#### Build 10.0.42.202505091
+#### Build 10.0.43.202506172
 
 <ins>Bug fixes</ins>
 
@@ -77,3 +77,7 @@ Number	  | Name	          | Description
 XXXX	    | XXXX| XXXX
 
 
+# Previous version(s)
+
+### Release 10.0.42.20250509
+#### Build 10.0.42.202505091

@@ -48,7 +48,7 @@ The following options are supported:
 
 ## Step 1 - Setup Secrets in Key vault parameters
 Setup the following as **Secrets** in **Key vault parameters** for the encryption/decryption:
-- Phassprase - Longer version of a password used to encrypt the sender's private key using a hash of the passphrase as the secret key
+- Passphrase - Longer version of a password used to encrypt the sender's private key using a hash of the passphrase as the secret key
 - Private key - Company's private key
 - Counter party's public key
 
