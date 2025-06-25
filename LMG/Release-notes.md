@@ -95,14 +95,6 @@ Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dy
 
 <b>Build 7.0.7521.60 </b>
 
-<ins>Bug fixes</ins>
-
-| Number | Functionality                                                     | Description                                                                                  |
-| :----- | :---------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
-| 22699  | Deployment failure due to expired DXCTechnologyCompany certificate | Removed DXCTechnologyCompany cetificate as no longer required |
-
-#### **Version 10.0.40.202502211**
-
 <ins>New features</ins>
 
 | Number | Functionality                                                     | Description                                                                                  |
