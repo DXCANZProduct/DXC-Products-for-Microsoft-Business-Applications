@@ -58,6 +58,9 @@ _Other telemetry retrieved relating to the ISV product installed_
 - Is installed - Indicates if ISV product is installed.
 - Is production environment - Indicates if environment is a production environment.
 
+_Customer telemetry retrieved by the DXC license (Applicable to DXC customers only)_
+- Enabled users count - Count of the number of enabled users
+
 All telemetry is collected and logged within Microsoft Azure Application Insights.
 
 Note: License Manager does not collect any other information other than those specified above. It does not reference or collect any telemetry against any other installed system or ISV modules.
