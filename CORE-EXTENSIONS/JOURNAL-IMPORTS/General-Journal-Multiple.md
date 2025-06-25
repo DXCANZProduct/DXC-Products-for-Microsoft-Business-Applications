@@ -29,11 +29,11 @@ Introduced in Release 10.0.40.20250205
 
 # General Journal Import for multiple Legal Entities 
 ## Overview
-The **Import ledger journal multi-company** functionality provides a user-friendly method for importing general journal transaction data for multiple legal entities from one target sheet, incorporating the  company offset field.  The import supports both Excel and CSV formats. All the standard validation and defaulting occur in the same way as the Data Management Framework (DMF) currently does for the standard General journal entity.  The new menu item General ledger > Periodic tasks > Import ledger journal multi company has been created see [Process](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.html#process) for further detail
+The **Import ledger journal multi-company** functionality provides a user-friendly method for importing general journal transaction data for multiple legal entities from one target sheet, incorporating the  company offset field.  The import supports both Excel and CSV formats. All the standard validation and defaulting occur in the same way as the Data Management Framework (DMF) currently does for the standard General journal entity.  The new menu item General ledger > Periodic tasks > Import ledger journal multi company has been created see [Process](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.html#process) for further details
 
 ## Setup
 ### New General journal data entity
-A new General journal Data Entity has been developed titled, *Core ledger journal entity*  This entity supports journals of type Daily. The allowed ledger types are Ledger, Bank, Vendor, and Customer. Once the data is run to target, the entity will automatically populate the Journal number to the next available in that legal entity.
+A new General journal Data Entity has been developed titled *Core ledger journal entity*.  This entity supports journals of type Daily. The allowed ledger types are Ledger, Bank, Vendor, and Customer. Once the data is run to target, the entity will automatically populate the Journal number with the next available in that legal entity.
 
 The new entity introduces the below key fields (that are not part of the standard *General journal* entity)
 
@@ -45,7 +45,7 @@ The new entity introduces the below key fields (that are not part of the standar
 
 
 ### First-time use
-Before use, The new entity needs to be configured as *set-based* following the below instructions
+Before use, the new entity needs to be configured as *set-based*, following the instructions below
 
 1. Navigate to **Workspaces > Data management > Data entities** to display the list of available entities.<br>
 2. Search for "Core ledger journal entity" in the *Entity* column <br>
