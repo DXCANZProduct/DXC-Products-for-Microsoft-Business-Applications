@@ -41,6 +41,7 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | DXC Core Extensio
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymisation 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
 Product version: 10.0.43 <br> App build: 10.0.2177	  | No | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymisation 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051
 Product version: 10.0.44 <br> App build: 10.0.2263	  | yes only build errors 22878 | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymisation 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051 <br> build errors fixed in 10.0.44.202506171
+Product version: 10.0.44 <br> App build: 10.0.2263	  | No | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymisation 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051 
  
 
 Release notes for other models included in the product:
@@ -60,15 +61,25 @@ Reason for deprecation/removal - Business Process links (also referred to as Bus
 
 # Current version
 
-### Release 10.0.44.20250617
+### Release 10.0.44.20250625
 
-DXC Core extensions 10.0.44 runs on the following Microsoft releases
+DXC Core extensions 10.0.44 run on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 
-#### Build 10.0.44.202506171
+#### Build 10.0.44.20250625
+
+<ins>Bug fixes</ins>
+
+Number	  	| Name	  | Description
+:--       	|:--              |:--
+23095 |Update to Data Entity "Core ledger journal entity"| This data entity has been deprecated and replaced by new version titled Core ledger journal entity V8  |
+
+# Previous version(s)
+### Release 10.0.44.20250617
+#### Build 10.0.40.202502051
 
 <ins>Bug fixes</ins>
 
@@ -76,9 +87,6 @@ Number	  	| Name	  | Description
 :--       	|:--              |:--
 22878|Update to extension of standard Security roles| Extensions made to the standard security roles "BudgetManager", "LedgerAccountingManager", and "InventMaterialsManager" failed as part of the build process and were subsequently corrected to allow users to continue to use Core Extension functionality without the requirement to use the System Administrator role.  |
 
-
-
-# Previous version(s)
 ### Release 10.0.40.20250205
 #### Build 10.0.40.202502051
 
