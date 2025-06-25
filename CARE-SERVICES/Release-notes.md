@@ -67,7 +67,8 @@ Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dy
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-XXXX	    | XXXX| XXXX 
+23045|Funding Journal not filtering correct Funding Code|updated selection criteria so the correct description is pulled through when the same funding code is used more than once
+
 
 
 <ins>New features</ins>
