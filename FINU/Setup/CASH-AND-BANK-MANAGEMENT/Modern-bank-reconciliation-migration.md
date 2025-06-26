@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-06-13
+ms.date: 2025-06-26
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -91,17 +91,16 @@ Method of payment                             | Reconciliation matching rules - 
 Action 'Mark new transactions'   | BankReconciliationMatchRule.MatchActionType             | Action 'Generate customer payment' or 'Settle customer invoice'
 Offset account type 'Customer'                | Not required
 Offset account                                | Step 3 - Automatic customer account matching set to _No_ and populate 'Customer account'
-Offset account bank statement field
-Offset account reference bank statement field
-Settle transaction
-Settle transaction bank statement field
-Field format
-Auto-post customer payment journal
-Auto-post and transfer customer payment journal
-Tax group                                   | 
-Item tax group
+Offset account bank statement field           | Not required
+Offset account reference bank statement field  | Replaced with using'Reference number' in 'Step 2 (Optional): Identify customer account through invoice matching'
+Settle transaction                            | Not required - utilise Action 'Settle customer invoice' where an invoice needs to be settled. Note: Settle customer invoice action will create one customer payment journal per bank statement line, so only use this action where an invoice will be settled.
+Settle transaction bank statement field        | Not required - utilise Action 'Settle customer invoice' and add required setup on 'Step 2 (Optional): Identify customer account through invoice matching'
+Field format                                    | Not required, replaced with Operator in 'Step 2 (Optional): Identify customer account through invoice matching'
+Auto-post customer payment journal &  Auto-post and transfer customer payment journal  | Replaced with new Finance utilities field Post with three drop-down options: <br> •	Do not post <br> •	Post <br> •	Post and transfer
+Tax group                                   | Std has added to 'Generate voucher'. Where the offset company is intercompany, Finance utilities tax field is enabled and will provide intercompany tax options.
+Item tax group                              | Std has added to 'Generate voucher'. Where the offset company is intercompany, Finance utilities tax field is enabled and will provide intercompany tax options.
 Description mask                              | Enable feature 'Enable default descriptions for advanced bank reconciliation' and setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation). Finance utilities will use the same default description on the intercompany transaction.
-Financial dimensions                          | 
+Financial dimensions                          | Replaced with std.
 
 ### Data entities
 
