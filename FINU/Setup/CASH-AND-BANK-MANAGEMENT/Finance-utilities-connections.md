@@ -157,7 +157,7 @@ Key vault secret name  | Azure active directory application secret key | Select 
 Tenant ID        | Azure active directory tenant identifier          | XX.onmicrosoft.com
 Authority URI    | Azure active directory authority URI              | https://login.microsoftonline.com/
 
-### Search mask:
+### Search mask
 
 Below are some examples for **Search mask**
 
