@@ -41,12 +41,18 @@ Following Finance utilities fields are replaced with Modern bank reconciliation:
 <ins>**Reconciliation matching rules**</ins> | 
 Action 'Mark new transactions' | BankReconciliationMatchRule.MatchActionType               | Action 'Generate voucher'
 Offset account   | BankReconciliationMatchRule.SAB_FinOffsetLedgerDimension  |
+Financial dimensions                          | Replaced with std.
 
 Following Finance utilities fields are still used with Modern bank reconciliation: 
 
 **Finance utilities field**    | **Table.Field**  
 :-------                       |:------- 
 Offset type | BankReconciliationMatchRule.SAB_FinOffsetAccountType | 
+
+
+
+Tax group                                   | Std has added to 'Generate voucher'. Where the offset company is intercompany, Finance utilities tax field is enabled and will provide intercompany tax options.
+Item tax group                              | Std has added to 'Generate voucher'. Where the offset company is intercompany, Finance utilities tax field is enabled and will provide intercompany tax options.
 
 
 ### Offset type Bank
@@ -57,6 +63,7 @@ Following Finance utilities fields are replaced with Modern bank reconciliation:
 :-------    |:-------                         
 <ins>**Reconciliation matching rules**</ins> | 
 Action 'Mark new transactions'  | BankReconciliationMatchRule.MatchActionType              | Action 'Generate voucher'
+Financial dimensions                          | Replaced with std.
 
 Following Finance utilities fields are still used with Modern bank reconciliation: 
 
@@ -76,6 +83,7 @@ Following Finance utilities fields are replaced with Modern bank reconciliation:
 <ins>**Reconciliation matching rules**</ins> | 
 Action 'Mark new transactions'  | BankReconciliationMatchRule.MatchActionType              | Action 'Generate vendor payment'
 Offset account type 'Vendor'                  | Not required
+Financial dimensions                          | Replaced with std.
 
 
 ### Offset type Customer
@@ -97,8 +105,6 @@ Settle transaction                            | Not required - utilise Action 'S
 Settle transaction bank statement field        | Not required - utilise Action 'Settle customer invoice' and add required setup on 'Step 2 (Optional): Identify customer account through invoice matching'
 Field format                                    | Not required, replaced with Operator in 'Step 2 (Optional): Identify customer account through invoice matching'
 Auto-post customer payment journal &  Auto-post and transfer customer payment journal  | Replaced with new Finance utilities field Post with three drop-down options: <br> •	Do not post <br> •	Post <br> •	Post and transfer
-Tax group                                   | Std has added to 'Generate voucher'. Where the offset company is intercompany, Finance utilities tax field is enabled and will provide intercompany tax options.
-Item tax group                              | Std has added to 'Generate voucher'. Where the offset company is intercompany, Finance utilities tax field is enabled and will provide intercompany tax options.
 Description mask                              | Enable feature 'Enable default descriptions for advanced bank reconciliation' and setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation). Finance utilities will use the same default description on the intercompany transaction.
 Financial dimensions                          | Replaced with std.
 
