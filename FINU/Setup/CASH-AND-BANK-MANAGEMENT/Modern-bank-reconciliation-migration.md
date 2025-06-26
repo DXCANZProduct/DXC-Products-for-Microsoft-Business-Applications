@@ -41,7 +41,9 @@ Following Finance utilities fields are replaced with Modern bank reconciliation:
 <ins>**Reconciliation matching rules**</ins> | 
 Action 'Mark new transactions' | BankReconciliationMatchRule.MatchActionType               | Action 'Generate voucher'
 Offset account   | BankReconciliationMatchRule.SAB_FinOffsetLedgerDimension  |
-Financial dimensions                          | Replaced with std.
+Tax group                      | Std has added to 'Generate voucher'. Where the offset company is intercompany, Finance utilities tax field is enabled and will provide intercompany tax options.
+Item tax group                 | Std has added to 'Generate voucher'. Where the offset company is intercompany, Finance utilities tax field is enabled and will provide intercompany tax options.
+Financial dimensions           | Replaced with std.
 
 Following Finance utilities fields are still used with Modern bank reconciliation: 
 
@@ -49,10 +51,6 @@ Following Finance utilities fields are still used with Modern bank reconciliatio
 :-------                       |:------- 
 Offset type | BankReconciliationMatchRule.SAB_FinOffsetAccountType | 
 
-
-
-Tax group                                   | Std has added to 'Generate voucher'. Where the offset company is intercompany, Finance utilities tax field is enabled and will provide intercompany tax options.
-Item tax group                              | Std has added to 'Generate voucher'. Where the offset company is intercompany, Finance utilities tax field is enabled and will provide intercompany tax options.
 
 
 ### Offset type Bank
