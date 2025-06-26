@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Bank statement reconciliation processing - Bank reconciliation worksheet 
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-03-27
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-06-26
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,25 +16,36 @@ ms.technology:
 ms.search.form:  BankReconciliationHeader
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
 ## Bank reconciliation worksheet
 
-> Note: Finance Utilities does not support feature 'Modern bank reconciliation' (preview in 10.0.39)
+> Note: The following section describes the Bank reconciliation worksheet process specific to feature **Modern bank reconciliation**.
 
 The **Worksheet** page on the **Bank reconciliation** is used to match the bank transactions within your D365 environment and the bank statement files according to the matching rules that you have defined in the D365 environment.
 Finance utilities includes improved reconciliation worksheet matching capability.
 
 Select **Workheet** on the Action Pane, by navigating to **Cash and bank management > Bank statement reconciliation > Bank reconciliation**
+
+### Prerequisites
+
+> Note: Ensure there are no Action **Mark new transactions** Reconciliation matching rules left before running **Cash and bank management > Setup > Advanced bank reconciliation setup > Advanced bank reconciliation data upgrade**, as this will delete these rules. 
+
+The following setup are prerequisites and is described in detail [here](../../Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation.md) when switching to Modern bank reconciliation:
+- Enable feature **Modern bank reconciliation**
+- Set **Enable modern bank reconciliation extensions** to _Yes_ in **Financial utilities parameters**
+- Assign **Customer payment journal** and **Vendor payment journal** on the company **Bank accounts** if actions 'Generate vendor payments', 'Generate customer payments' or 'Settle customer invoice' will be used
+- Migrate Action **Mark new transactions** Reconciliation matching rules to the applicable replacements. Ensure there are no Action **Mark new transactions** left before running the next step, as this will delete them.
+- Run **Cash and bank management > Setup > Advanced bank reconciliation setup > Advanced bank reconciliation data upgrade**
 
 ### Run matching rules
 The matching rule capability has been extended, and is activated when this process is executed from the Bank reconciliation. The Configuration section is where the facilities may be set up;
