@@ -38,10 +38,13 @@ The biggest change is the removal of Action **Mark new transactions**. This is r
 - **Generate customer payment** - offset type customer without settlement
 - **Settle customer invoice** - offset type customer with settlement
 
-Finance Utilities extensions to Modern bank reconciliation:
+Summary of Finance Utilities extensions to Modern bank reconciliation:
 - **Offset company** - Ability to post the offset to intercompany ledger, bank, vendor or customer.
 - **Offset type bank** - Modern bank reconciliation doesn't include an option for offset type Bank, we've added this option to **Generate voucher**.
-- **Offset type customer** - 
+- **Offset type customer**:
+    - Ability to use **Customer reference** to find the Customer account.
+    - One customer payment journal for all matched bank statement lines (only 'Generate customer payment).
+    - Posting options.
 
 ## Migration
 See the following [link](Modern-bank-reconciliation-migration.md) for migration details.
@@ -79,7 +82,7 @@ Finance utilities extensions to Modern bank reconciliation adds the following fu
  
 - **Customer**
 
-The following is applicable to both actions
+The following is applicable to both customer actions
 - **Generate customer payment**
 - **Settle customer invoice**
 
@@ -92,7 +95,7 @@ The following is applicable to both actions
 
 The following is only applicable to
 - **Generate customer payment**
-    - One journal for all matched bank statement lines.
+    - One journal for all matched bank statement lines. No setup required, this is automatic for this action.
  
 
 > **Important notes**:
@@ -101,7 +104,7 @@ The following is only applicable to
 > - If the customer had a method of payment in above view, this method of payment would be used in the customer payment journal. The default on the Reconciliation matching rule will only be used where the customer didn't have a method of payment assigned.
 > - Customer reference numbers must be kept unique accross all legal entities. Std code will look in current legal entity first, and then when it couldn't find it, Finance Utilities is able to look in the offset company. 
 
-### Banl reconciliation
+### Bank reconciliation
 
 Finance utilities extensions to Modern bank reconciliation adds the following functionality to the following in the Bank reconciliation Worksheet
 
