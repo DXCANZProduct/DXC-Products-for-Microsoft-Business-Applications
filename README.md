@@ -6,7 +6,7 @@ Please select the applicable product from below:
 ### Product list
 
 - [Core extensions](CORE-EXTENSIONS/Solution-overview.md)
-- [Electronic Data Interchange (EDI)](EDI/Introduction.md) - [EDI channel](https://www.youtube.com/playlist?list=PLIM01nS-jtL-vHddVb3MdI_s2zKtgBejk)
+- [Electronic Data Interchange (EDI)](EDI/Introduction.md) - [YouTube channel](https://www.youtube.com/playlist?list=PLIM01nS-jtL-vHddVb3MdI_s2zKtgBejk)
 - [Finance utilities](FINU/INTRODUCTION.md) (specific to ANZ region)
 - [Forex contracts](FOREX-CONTRACT/Introduction.md)
 - [Insights for D365 FO](DXC-INSIGHTS/Introduction.md) - [demo](https://dynamics.dxc.technology/webinars/analysis-tool-for-performance-of-microsoft-dynamics-365-finance-and-operations-by-dxc-technology-2)
