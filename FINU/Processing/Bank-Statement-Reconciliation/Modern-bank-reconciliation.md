@@ -27,71 +27,58 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-## Bank reconciliation worksheet
+# Prerequisites
 
-> Note: The following section describes the Bank reconciliation worksheet process specific to feature **Modern bank reconciliation**.
+The following is a summary of the prerequisites for using Finance utilities extensions to Modern bank reconciliation
 
-The **Worksheet** page on the **Bank reconciliation** is used to match the bank transactions within your D365 environment and the bank statement files according to the matching rules that you have defined in the D365 environment.
-Finance utilities includes improved reconciliation worksheet matching capability.
-
-Select **Workheet** on the Action Pane, by navigating to **Cash and bank management > Bank statement reconciliation > Bank reconciliation**
-
-### Prerequisites
-
-> Note: Ensure there are no Action **Mark new transactions** Reconciliation matching rules left before running **Cash and bank management > Setup > Advanced bank reconciliation setup > Advanced bank reconciliation data upgrade**, as this will delete these rules. 
+> ** Important note: Ensure there are no Action **Mark new transactions** Reconciliation matching rules left before running **Cash and bank management > Setup > Advanced bank reconciliation setup > Advanced bank reconciliation data upgrade**, as this will delete these rules. 
 
 The following setup are prerequisites and is described in detail [here](../../Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation.md) when switching to Modern bank reconciliation:
 - Enable feature **Modern bank reconciliation**
 - Set **Enable modern bank reconciliation extensions** to _Yes_ in **Financial utilities parameters**
 - Assign **Customer payment journal** and **Vendor payment journal** on the company **Bank accounts** if actions 'Generate vendor payments', 'Generate customer payments' or 'Settle customer invoice' will be used
-- Migrate Action **Mark new transactions** Reconciliation matching rules to the applicable replacements. Ensure there are no Action **Mark new transactions** left before running the next step, as this will delete them.
+- ** Migrate Action **Mark new transactions** Reconciliation matching rules to the applicable replacements. Ensure there are no Action **Mark new transactions** left before running the next step, as this will delete them.
 - Run **Cash and bank management > Setup > Advanced bank reconciliation setup > Advanced bank reconciliation data upgrade**
 
-### Run matching rules
-The matching rule capability has been extended, and is activated when this process is executed from the Bank reconciliation. The Configuration section is where the facilities may be set up;
-- The **Contains** and **Included in** capability
-- The transaction **Group by document number** capability
+# Bank reconciliation worksheet
 
-### Marking and Matching Capability
-Several changes have been implemented to improve the usability of the matching, including;
--	In standard you must highlight to match. This functionality allows the user to filter, check, filter again and check another record and match
--	Corrections (reversals) can be performed in line with the record
+> Note: The following section describes the Bank reconciliation worksheet process specific to feature **Modern bank reconciliation**.
 
-The changes required to support this functionality in the Bank reconciliation Worksheet are;
--	The addition of new buttons to facilitate Marking and Matching 
--	The additional Mark and Match Id columns
--	New checkboxes to keep the reconciled totals up to date, on the form
--	The standard click on Match re-sorts and removes filter; the filter is now retained.
+The **Worksheet** page on the **Bank reconciliation** is used to match the bank transactions within your D365 environment and the bank statement files according to the reconciliation matching rules that you have defined in the D365 environment. It also provides the ability to manually match the bank statement transactions not matched by your reconciliation matching rules.
 
-#### New Buttons
+With Modern bank reconciliation the FastTab **New transactions** is now longer applicable, and thus not available on the worksheet. <br>
+Posting Bank statements are also not available anymore.
 
-| **Buttons**   |    **Description**   |
-|-|-|
-| **Match ID**                        | Users can manually select this button when the system does not automatically assign a match id on mark transactions.  |
-| **Remove Match ID**                 | Once clicked this will remove the Match ID on both sides but will retain the mark on the ‘Mark’ checkbox column  |
-| **Clear All**                       | This button will unmark all transactions marked with match id transactions on both sides from the open statement and open bank document sections. <br> This removes all the match IDs on both statement and bank transaction. They are marked for matching where match ids are already assigned          |
-| **Mark filtered bank statement transactions** | This will allow the user to Mark All _filtered_ lines in the bank reconciliation worksheet for the **Bank statement transactions** grid  |
-| **Mark filtered bank transactions** | This will allow the user to Mark All _filtered_ lines in the bank reconciliation worksheet for the **Bank transactions** grid  |
-| **Maximise / Minimise**             | Maximise and Minimise the _unmatched_ transactions section  |
+Select **Workheet** on the Action Pane, by navigating to **Cash and bank management > Bank statement reconciliation > Bank reconciliation**
 
-#### Mark and Match Id Columns
-These columns provide more visibility of the matching process 
+The Modern bank reconciliation version of **Bank reconciliation worksheet** page is split into:
+- Unmatched transactions
+- Matched transactions
 
-| **Columns** | **Description**   |
-|-|-|
-| **Mark** |  This checkbox allows the user to match statement lines against bank transactions. It validates the following: <br> <br> •	When all lines with same **Match ID** are unmarked on the Statement side, the system prompts a warning **“Unmatch all of match id”** When users click **Yes** on the warning message the corresponding lines with the equivalent **Match ID** on the bank transactions side are unmarked automatically by the system. If users click **No** on the message, users must manually unmark the corresponding entries. When the users unmark the corresponding entries, the Match id disappears. <br> <br> • When all lines with same **Match ID** are unmarked on bank transactions side, the system would prompt a warning **“Unmatch all of match id”** When users click Yes on the warning message the corresponding lines with equivalent **Match ID** on statement lines are unmarked automatically by the system. If users click **No** on the message, users must manually unmark the corresponding entries. When the users manually unmark the corresponding entries, the Match id disappears. <br> <br> • The new **Mark** checkbox will update the **Total amount**, **Open Amount** and **Matched amount** that appears on top of open statement lines and open bank documents from Bank reconciliation worksheet. <br> <br> •	The new **Mark** checkbox will also update the **Unmatched amount** and the **Total amount** that appears at the bottom of open statement lines and open bank documents from Bank reconciliation worksheet. <br> <br> • **Mark** column is also added on the **Matched document** section of bank reconciliation worksheet.  |
-| **Match Id** |  This unique ID identifies which transactions are matching on both sides of the reconciliation worksheet. This is automatically assigned by the system based on the number sequence setup on [Financial utilities parameters](../../Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters.md#number-sequences) <br> <br> This button validates the following: <br> •	Matching is ONE TO ONE <br> •	Matching is ONE to MANY  <br> •	Matching is MANY to ONE <br> • Matching is MANY to MANY <br> • Matched transaction amounts on both sides are equal.  <br> <br> Match ID column is also added on the **Matched document** section of the bank reconciliation worksheet. Match ID can be auto assigned by using the Financial utilities parameter [Auto assign Match id](../../Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters.md) <br> Steps required when Financial utilities parameter **Auto assign Match id** is  <br> •	Enabled: <br> -	Mark bank statement and bank transactions <br> -	If balances: click Match. Match id is auto assigned <br> •	Disabled:  <br>   -	Mark bank statement and bank transactions <br> -	Click Match Id  <br> -	Click Match              |
+## Unmatched transactions
+
+Finance Utilities adds the following functionality to below in **Unmatched transactions**:
+
+### Generate payment journal
+
+After selecting **Payment type** (Customer payment, or Vendor payment), additional input fields are provided. <br> 
+
+Finance Utilities adds:
+- **Offset company** - defaults to current legal entity, but can be changed to an intercompany legal entity. The **Customer account** or **Vendor account** will show customers/vendors for the selected company. For intercompany offsets the customer or payment journal will still be created in the current legal entity, but using the applicable company account for the customer/vendor posting.
+
+### Generate voucher
 
 
-#### Check boxes showing reconciled totals
 
-These totals assist with balancing the in-progress Matching.
 
-|   **Location of Totals**    |   **Check Box**   |   **Description**   |
-|-|-|-|
-|   **Top of Open Statement lines**  |   Total amount <br> Matched amount  <br> Unmatched amount   |  These totals are updated when the Mark checkbox is activated or deactivated on the Bank Statement transactions  |
-|  **Top of Open Transaction lines**  |  Total amount <br>  Matched amount <br>  Unmatched amount |  These totals are updated when the Mark checkbox is activated or deactivated on the D365 Bank transactions |
-|  **Bottom of Open Statement lines**  |  Number of Transactions Marked <br> Total Amount Marked <br>  Unmatched amount |  These totals are updated when the Mark checkbox is activated or deactivated on the Bank Statement transactions |
+## Matched transactions
+
+### Matching ID
+
+Modern bank reconciliation includes new functionality **Matching ID**, which works similar to Finance Utilities **Match Id**
+
+Finance Utilities adds the following functionality to below in **Matched transactions**:
+- **Company** - For intercompany offsets, this will provide the offset company
 
 ### Mark as new extended financial details
 
