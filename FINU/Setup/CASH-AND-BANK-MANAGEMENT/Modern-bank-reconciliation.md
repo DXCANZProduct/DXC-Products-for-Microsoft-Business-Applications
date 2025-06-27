@@ -52,14 +52,14 @@ See the following [link](Modern-bank-reconciliation-migration.md) for migration 
 
 # Setup
 
-### Financial utilities parameters
+## Financial utilities parameters
 Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters
 
 In order to utilise Finance utilities extensions to Modern bank reconciliation:
 - Enable feature **Modern bank reconciliation** and
 - Set **Enable modern bank reconciliation extensions** to _Yes_
 
-### Bank account
+## Bank account
 Cash and bank management > Bank statement reconciliation > Bank accounts
 
 The following standard setup is required on each applicable bank account if customer/vendor payments will be created either by running Reconciliation matching rules, or within the Bank reconciliation Worksheet:
@@ -67,20 +67,32 @@ The following standard setup is required on each applicable bank account if cust
 - Customer payment journal
 - Vendor payment journal
 
-### Bank reconciliation matching rules
+## Bank reconciliation matching rules
 
 Finance utilities extensions to Modern bank reconciliation adds the following functionality to each action that replaces **Mark new transactions**:
 
+### Ledger
+
 - **Generate voucher**
     - **Offset company** - ability to offset to a different legal entity (intercompany).
-    - **Offset account type** - ability to offset to ledger or bank.
+    - **Offset account type** - select ledger to offset to an expense or income ledger account.
     - **Sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
     - **Item sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
+
+### Bank
+
+- **Generate voucher**
+    - **Offset company** - ability to offset to a different legal entity (intercompany).
+    - **Offset account type** - select bank for bank transfers.
+    - **Sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
+
+
+ ### Vendor
  
 - **Generate vendor payment**
     - **Offset company** - ability to offset to a different legal entity (intercompany).
  
-- **Customer**
+### Customer
 
 The following is applicable to both customer actions
 - **Generate customer payment**
