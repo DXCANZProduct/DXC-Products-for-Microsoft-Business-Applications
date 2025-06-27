@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Finance utilities connections
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-04-07
+ms.date: 2025-06-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -176,7 +176,13 @@ Below are some examples for **Search mask**
 Additionally, [regular expressions](https://regex101.com/) can be used for the file mask <br>
 
 - Example 3: <br>
-  - File mask: *US-001 or .*US-001 <br>
+  - File mask: *US-001 <br>
+  - The following file names will be matched:
+    - **US-001**_1234.json
+    - 1234_**US-001**
+    - 1234_**US-001**_5678.xml <br>
+
+  - File mask: .*US-001 <br>
   - The following file names will be matched:
     - **US-001**_1234.json
     - 1234_**US-001**
