@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-06-26
+ms.date: 2025-06-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,7 +40,7 @@ The biggest change is the removal of Action **Mark new transactions**. This is r
 
 Summary of Finance Utilities extensions to Modern bank reconciliation:
 - **Offset company** - Ability to post the offset to intercompany ledger, bank, vendor or customer.
-- **Offset type bank** - Modern bank reconciliation doesn't include an option for offset type Bank, we've added this option to **Generate voucher**.
+- **Offset type bank** - Modern bank reconciliation doesn't include an option for offset type Bank which is used for bank transfers. In Finance utilities we support this option under **Generate voucher**.
 - **Offset type customer**:
     - Ability to use **Customer reference** to find the Customer account.
     - One customer payment journal for all matched bank statement lines (only 'Generate customer payment).
@@ -71,7 +71,7 @@ The following standard setup is required on each applicable bank account if cust
 
 Finance utilities extensions to Modern bank reconciliation adds the following functionality to each action that replaces **Mark new transactions**:
 
-### Ledger
+#### Ledger
 
 - **Generate voucher**
     - **Offset company** - ability to offset to a different legal entity (intercompany).
@@ -79,7 +79,7 @@ Finance utilities extensions to Modern bank reconciliation adds the following fu
     - **Sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
     - **Item sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
 
-### Bank
+#### Bank
 
 - **Generate voucher**
     - **Offset company** - ability to offset to a different legal entity (intercompany).
@@ -87,12 +87,12 @@ Finance utilities extensions to Modern bank reconciliation adds the following fu
     - **Sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
 
 
-### Vendor
+#### Vendor
  
 - **Generate vendor payment**
     - **Offset company** - ability to offset to a different legal entity (intercompany).
  
-### Customer
+#### Customer
 
 The following is applicable to both customer actions
 - **Generate customer payment**
