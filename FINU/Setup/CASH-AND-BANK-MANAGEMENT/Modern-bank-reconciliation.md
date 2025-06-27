@@ -73,24 +73,30 @@ Finance utilities extensions to Modern bank reconciliation adds the following fu
 
 #### Ledger
 
-- **Generate voucher**
-    - **Offset company** - ability to offset to a different legal entity (intercompany).
-    - **Offset account type** - select ledger to offset to an expense or income ledger account.
-    - **Sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
-    - **Item sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
+Action: **Generate voucher** <br>
+Finance utilities functionality extends **Financial details** in **Step 2: Voucher parameters** with:
+
+- **Offset company** - ability to offset to a different legal entity (intercompany).
+- **Offset account type** - select ledger to offset to an expense or income ledger account.
+- **Sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
+- **Item sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
 
 #### Bank
 
-- **Generate voucher**
-    - **Offset company** - ability to offset to a different legal entity (intercompany).
-    - **Offset account type** - select bank for bank transfers.
-    - **Sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
+Action: **Generate voucher** <br>
+Finance utilities functionality extends **Financial details** in **Step 2: Voucher parameters** with:
+
+- **Offset company** - ability to offset to a different legal entity (intercompany).
+- **Offset account type** - select bank for bank transfers.
+- **Sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
 
 
 #### Vendor
  
-- **Generate vendor payment**
-    - **Offset company** - ability to offset to a different legal entity (intercompany).
+Action: **Generate vendor payment** <br>
+Finance utilities functionality extends **Financial details** in **Step 2: Vendor payment parameters** with:
+
+- **Offset company** - ability to offset to a different legal entity (intercompany).
  
 #### Customer
 
@@ -98,19 +104,22 @@ The following is applicable to both customer actions
 - **Generate customer payment**
 - **Settle customer invoice**
 
-    - **Offset company** - ability to offset to a different legal entity (intercompany).
-    - **Reference number** - in Step 2 when identitying customer account through invoice matching, the Finance utilities **Customer reference** can be used to find the D365 customer account.
-    - **Post** - provides the following three options:
-        -  **Do not post** - generally only used in initial testing. The customer payment journal will only be created (not posted). Once the user has reviewed and manually posted the customer payment journal, refresh the bank reconciliation’s worksheet to bring in the new bank transactions. User has to either use a match with bank statement rule or manually match the applicable bank statement lines with these new bank transactions. When running the reconciliation matching rule in the bank recon, the infolog will provide the journal number created.
-        -  **Post** -  Indicates if the created customer payment journal should automatically be posted. The newly posted bank transaction(s) will also automatically be matched to the applicable bank statement lines.
-        -  **Post and transfer** - Indicates if the created customer payment journal should automatically be posted. If any errors found (example stopped customer), the error lines will be moved to a new journal. The newly posted bank transaction(s) will also automatically be matched to the applicable bank statement lines.
+Finance utilities functionality extends **Customer invoice field** in **Step 2 (Optional): Identify customer account through invoice matching** with:
+- **Reference number** - in Step 2 when identitying customer account through invoice matching, the Finance utilities **Customer reference** can be used to find the D365 customer account.
+
+Finance utilities functionality extends **Financial details** in **Step 3: Customer payment journal parameters** with:
+- **Offset company** - ability to offset to a different legal entity (intercompany).
+- **Post** - provides the following three options:
+    -  **Do not post** - generally only used in initial testing. The customer payment journal will only be created (not posted). Once the user has reviewed and manually posted the customer payment journal, refresh the bank reconciliation’s worksheet to bring in the new bank transactions. User has to either use a match with bank statement rule or manually match the applicable bank statement lines with these new bank transactions. When running the reconciliation matching rule in the bank recon, the infolog will provide the journal number created.
+    -  **Post** -  Indicates if the created customer payment journal should automatically be posted. The newly posted bank transaction(s) will also automatically be matched to the applicable bank statement lines.
+    -  **Post and transfer** - Indicates if the created customer payment journal should automatically be posted. If any errors found (example stopped customer), the error lines will be moved to a new journal. The newly posted bank transaction(s) will also automatically be matched to the applicable bank statement lines.
 
 The following is only applicable to
 - **Generate customer payment**
     - One journal for all matched bank statement lines. No setup required, this is automatic for this action.
  
 
-> **Important notes**:
+> **Important notes for both Customer actions**:
 > When using **Step 2 (Optional): Identify customer account through invoice matching**:
 > - An invoice needs to exist for the customer, as std uses CustInvoiceForBankReconciliationView to find the customer.
 > - If the customer had a method of payment in above view, this method of payment would be used in the customer payment journal. The default on the Reconciliation matching rule will only be used where the customer didn't have a method of payment assigned.
