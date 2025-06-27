@@ -50,7 +50,7 @@ Summary of Finance Utilities extensions to Modern bank reconciliation:
 See the following [link](Modern-bank-reconciliation-migration.md) for migration details.
 
 
-## Setup
+# Setup
 
 ### Financial utilities parameters
 Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities parameters
@@ -104,7 +104,7 @@ The following is only applicable to
 > - If the customer had a method of payment in above view, this method of payment would be used in the customer payment journal. The default on the Reconciliation matching rule will only be used where the customer didn't have a method of payment assigned.
 > - Customer reference numbers must be kept unique accross all legal entities. Std code will look in current legal entity first, and then when it couldn't find it, Finance Utilities is able to look in the offset company.
 
-## Processing
+# Processing
 
 Processing is discussed in detail [here](../../Processing/Bank-Statement-Reconciliation/Modern-bank-reconciliation.md)
 
