@@ -87,7 +87,7 @@ Finance utilities extensions to Modern bank reconciliation adds the following fu
     - **Sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
 
 
- ### Vendor
+### Vendor
  
 - **Generate vendor payment**
     - **Offset company** - ability to offset to a different legal entity (intercompany).
