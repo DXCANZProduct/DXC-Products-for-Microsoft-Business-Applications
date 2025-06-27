@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-06-26
+ms.date: 2025-06-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -57,8 +57,8 @@ Offset type | BankReconciliationMatchRule.SAB_FinOffsetAccountType |
 
 Following Finance utilities fields are replaced with Modern bank reconciliation:
 
-**Finance utilities field**    | **Modern bank reconciliation replacement**                
-:-------    |:-------                         
+**Finance utilities field**  | **Table.Field**  | **Modern bank reconciliation replacement**                
+:-------    |:------- |:-------                         
 <ins>**Reconciliation matching rules**</ins> | 
 Action 'Mark new transactions'  | BankReconciliationMatchRule.MatchActionType              | Action 'Generate voucher'
 Financial dimensions            |   | Replaced with std.
@@ -110,7 +110,7 @@ Financial dimensions                          | Replaced with std.
 
 - Reconciliation matching rules
 
-### Tables:
+### Tables
 
 - BankReconciliationMatchRule - Shared across legal entities
 - BankReconciliationMatchRuleLine - Step 1 - Shared across legal entities
