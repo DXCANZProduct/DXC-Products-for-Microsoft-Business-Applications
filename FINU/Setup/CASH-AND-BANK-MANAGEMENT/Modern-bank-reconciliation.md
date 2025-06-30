@@ -109,14 +109,14 @@ Finance utilities functionality extends **Customer invoice field** in **Step 2 (
 
 Finance utilities functionality extends **Financial details** in **Step 3: Customer payment journal parameters** with:
 - **Offset company** - ability to offset to a different legal entity (intercompany).
-- **Post** - provides the following three options:
-    -  **Do not post** - generally only used in initial testing. The customer payment journal will only be created (not posted). Once the user has reviewed and manually posted the customer payment journal, refresh the bank reconciliation’s worksheet to bring in the new bank transactions. User has to either use a match with bank statement rule or manually match the applicable bank statement lines with these new bank transactions. When running the reconciliation matching rule in the bank recon, the infolog will provide the journal number created.
-    -  **Post** -  Indicates if the created customer payment journal should automatically be posted. The newly posted bank transaction(s) will also automatically be matched to the applicable bank statement lines.
-    -  **Post and transfer** - Indicates if the created customer payment journal should automatically be posted. If any errors found (example stopped customer), the error lines will be moved to a new journal. The newly posted bank transaction(s) will also automatically be matched to the applicable bank statement lines.
 
 The following is only applicable to
 - **Generate customer payment**
     - One journal for all matched bank statement lines. No setup required, this is automatic for this action.
+- **Post** - provides the following three options:
+    -  **Do not post** - generally only used in initial testing. The customer payment journal will only be created (not posted). Once the user has reviewed and manually posted the customer payment journal, refresh the bank reconciliation’s worksheet to bring in the new bank transactions. User has to either use a match with bank statement rule or manually match the applicable bank statement lines with these new bank transactions. When running the reconciliation matching rule in the bank recon, the infolog will provide the journal number created.
+    -  **Post** -  Indicates if the created customer payment journal should automatically be posted. The newly posted bank transaction(s) will also automatically be matched to the applicable bank statement lines.
+    -  **Post and transfer** - Indicates if the created customer payment journal should automatically be posted. If any errors found (example stopped customer), the error lines will be moved to a new journal. The newly posted bank transaction(s) will also automatically be matched to the applicable bank statement lines.
  
 
 > **Important notes for both Customer actions**:
