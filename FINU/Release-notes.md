@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-05-21
+ms.date: 2025-07-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -175,18 +175,22 @@ Number	  	| Module	| Functionality	  	| Description
 #### Build 10.0.42.202504081
 Release date: 8 April 2025
 
+<ins>Manual actions required</ins>
+- Delete any existing batch job for periodic task 'Update ABN validation' and create new batch job.
+
+
 <ins>Bug fixes</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
 21612		| Various	| 10.0.43 build issue	| Fix 10.0.43 build issue on **Validate connection** for **API Endpoint** connection type. <br> Microsoft.IdentityModel.Clients.ActiveDirectory has been deprecated and no longer supported by FinOps and needs to be upgraded to now use Microsoft.Identity.Client <br> [Microsoft notice](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#azure-active-directory-authentication-library-adal)
-21732		| Various	| ABN validation	| Incorrect GST registered status where ABN hasn't registered for GST and the ABN has been cancelled - showed GST registered as Cancelled
+21732		| Various	| ABN validation	| Incorrect GST registered status where ABN hasn't registered for GST and the ABN has been cancelled - showed GST registered as Cancelled.  
 
 <ins>New features</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-21215		| Various	| ABN validation	| Where the ABN isn't registered for GST, use the earliest ABN entity status from date for **GST from** date.
+21215		| Various	| ABN validation	| Where the ABN isn't registered for GST, use the earliest ABN entity status from date for **GST from** date. 
 21210		| Various	| Encryption and Decryption	| Filtered drop-down options: <br> • Import connections to decrypt key types <br> • Export connections to encrypt key types <br> ![Decryption](Images/ReleaseNotes_20250331_3.png "Decryption") <br> <br> ![Encryption](Images/ReleaseNotes_20250331_4.png "Encryption")
 20946		| Cash and bank management	| Bank statement periodic import | Where the bank statement has no transactions - now moving the file to archive instead of error folder. Also updated error message to infolog 'No bank statement was created as file contained no transactions'
 17536		| Cash and bank management	| Import bank statement	| New Financial utilities parameters field **Enable date range for custom bank statement formats** controls the **From date** and **To date** inputs on **Import bank statement** for custom bank statement formats. <br> • **No** (default) - From and To date won't be mandatory anymore and automatically calculate the from date as earliest date in file and To date as latest date in the file. Similar to our periodic import job. <br> • **Yes** - From and To date is still mandatory for custom bank statement formats. This is useful where a company only needs to import a certain date range for the particular bank statement.
@@ -232,6 +236,9 @@ Number	  	| Module	| Functionality	  	| Description
 
 #### Build 10.0.40.202412041
 Release date: 4 December 2024
+
+<ins>Manual actions required</ins>
+- Delete any existing batch job for periodic task 'Update ABN validation' and create new batch job.
 
 <ins>New features</ins>
 
@@ -307,6 +314,9 @@ Number	  	| Module	| Functionality	  	| Description
 
 #### Build 10.0.40.202409162
 Release date: 16 September 2024 <br>
+
+<ins>Manual actions required</ins>
+- Delete any existing batch job for periodic task 'Update ABN validation' and create new batch job.
 
 <ins>New features</ins>
 
@@ -396,6 +406,9 @@ Number	  	| Module	| Functionality	  	| Description
 
 #### Build 10.0.37.202405302
 Release date: 30 May 2024 <br>
+
+<ins>Manual actions required</ins>
+- Delete any existing batch job for periodic task 'Update ABN validation' and create new batch job.
 
 <ins>New features</ins>
 
