@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-06-27
+ms.date: 2025-07-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -124,6 +124,13 @@ The following is only applicable to
 > - An invoice needs to exist for the customer, as std uses CustInvoiceForBankReconciliationView to find the customer.
 > - If the customer had a method of payment in above view, this method of payment would be used in the customer payment journal. The default on the Reconciliation matching rule will only be used where the customer didn't have a method of payment assigned.
 > - Customer reference numbers must be kept unique accross all legal entities. Std code will look in current legal entity first, and then when it couldn't find it, Finance Utilities is able to look in the offset company.
+
+### Duplicate
+
+Modern bank reconciliation has added new button **Duplicate**, which allows users to copy matching rules. Similar to Finance Utilities **Copy matching rule**.
+
+When Financial utilities parameter **Enable modern bank reconciliation extensions** is set to _Yes_, the Finance Utilities button **Copy matching rule** is hidden (will be deprecated in future).
+The additional Finance Utilities fields for the new Modern bank reconciliation actions have been added the std's **Duplicate** button.
 
 # Processing
 
