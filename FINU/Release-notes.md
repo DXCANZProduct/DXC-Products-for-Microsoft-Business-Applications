@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-07-02
+ms.date: 2025-07-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -86,6 +86,9 @@ Microsoft Dynamics 365 application 	| 10.0.44 	  | [What’s new or changed in D
 #### Build 10.0.43.202505211
 Release date: 21 May 2025
 
+<ins>Manual actions required</ins>
+- Where **Import lines** is used to import budgets into **Budget register entries**, please add Finance utilities duty **Maintain budget import** to an existing/new role. We'll add it to a new role in the next planned August release.
+
 <ins>Bug fixes</ins>
 
 Number	  	| Module	| Functionality	  	| Description
@@ -93,7 +96,7 @@ Number	  	| Module	| Functionality	  	| Description
 22907		| Cash and bank management	| Posting new transactions	| Fix to error caused by 21957, only applicable to release 10.0.43.202505021. Error when posting new transaction: "Function SourceDocumentExtensionFactory::newObject has been incorrectly called."
 22709		| ABN validation	| Create new vendor	| Fix to label on Vendors Action pane - 'New ABN vendor'
 22783		| DXC Encryption	| 10.0.44 build error fix	| New DXC Encryption model 10.0.43.202505191 to fix build error. Removed privilege 'Maintain DXC encryption parameters' from standard role 'Information technology manager'.
-22784		| Budgeting	| 10.0.44 build error fix	| Removed Finance Utilities privilege 'Maintain budget import' (SAB_FinBudgetMaintain) from standard role 'Budget manager'.
+22784		| Budgeting	| 10.0.44 build error fix	| Removed Finance Utilities duty 'Maintain budget import' (SAB_FinBudgetMaintain) from standard role 'Budget manager'. <br> ![Security](Images/ReleaseNotes_20250521_1.png "Security")
 22874		| Accounts payable	| Sundry vendor payment proposal	| When overriding fields on payment proposal, the sundry vendor lines were incorrectly grouped on payment journal line.
 
 
