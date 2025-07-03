@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Budgeting processing - Importing the budget
-author: helenho
-manager: Kym Parker
-ms.date: 2021-03-02
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-07-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form:  BudgetTransactions
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm: 
 # ms.custom: : ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -51,3 +51,9 @@ Users can reach the **Budget register entries** page by navigating to **Budgetin
 -	Specify the **Number of Months** that will be imported - defaults from **Budget utilities parameters**.
 -	Select **Update Existing** to update existing budget entries. When selected to update existing, the new value imported will be added to the value already in the budget lines.  To overwrite values previously imported, delete the budget lines and re-import. 
 - Validate the imported data, then select **Update budget balances**.
+
+### Security configuration
+
+- **Import lines**
+  - Privilege: Budget set up and import
+  - Duty: Maintain budget import

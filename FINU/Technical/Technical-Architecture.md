@@ -104,7 +104,7 @@ Triggered by:
 ![alt text](./Images/image-15.png)
 
 Legend   
-<img src="image-2.png" alt="Alt Text" width="250" height="100">
+<img src="./Images/image-2.png" alt="Alt Text" width="250" height="100">
 
 External Service Connection
 The following external connections is used by DXC Finance Utilities export process.
