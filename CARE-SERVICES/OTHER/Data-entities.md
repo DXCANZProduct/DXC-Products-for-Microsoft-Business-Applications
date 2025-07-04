@@ -46,8 +46,8 @@ Care services billing rates import|Lines for billing rate |Care services billing
 Care services billing invoicee|Import billing invoicee for customer data|NIL
 Care services billing schedule lines|Header for billing schedule|NIL
 Care services billing rates|Lines for billing rates|Care services billing schedule lines
-"Care services billing transactions|Import Customer billing transactions Care services > Billing> Billing transactions|NIL"
-"Care services capping limits|Header for capping limits Care services>Setup>Capping limits|NIL"
+Care services billing transactions|Import Customer billing transactions Care services > Billing> Billing transactions|NIL
+Care services capping limits|Header for capping limits Care services>Setup>Capping limits|NIL
 Care services capping limit lines|Lines for capping limits header|Care services capping limits
 Care services care types|Header for care types Care services >Setup> Care types|NIL
 Care services client capping|Header for client capping Care services>Customers> Capping limit setup|NIL
