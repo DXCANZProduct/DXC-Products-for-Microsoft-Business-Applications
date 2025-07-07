@@ -87,7 +87,7 @@ Microsoft Dynamics 365 application 	| 10.0.44 	  | [What’s new or changed in D
 Release date: 21 May 2025
 
 <ins>Manual actions required</ins>
-- Where **Import lines** is used to import budgets into **Budget register entries**, please add Finance utilities duty **Maintain budget import** to an existing/new role. We'll add it to a new role in the next planned August release.
+- Where **Import lines** is used to import budgets into **Budget register entries**, please add Finance utilities duty **Maintain budget import** to an existing/new role. We'll add it to a new role in the next planned August release. Related to 22784.
 
 <ins>Bug fixes</ins>
 
