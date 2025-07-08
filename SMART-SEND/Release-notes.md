@@ -50,9 +50,9 @@ Release notes for other models included in the product:
 
 # Current version
 
-### Release 10.0.42.20250304
+### Release 10.0.43.202507081
 
-DXC Smart Business Form Email Manager 10.0.42 runs on the following Microsoft releases
+DXC Smart Business Form Email Manager 10.0.43 runs on the following Microsoft releases
 
 
 Base	  | Version	  | Release
@@ -63,8 +63,29 @@ Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dy
 
 
 
-#### Build 10.0.42.202503041 
+#### Build 10.0.43.202507081 
 
+<ins>Bug fixes</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+23149	    | Smart Send has not been configured for this report format.| When attempting to use Electronic Reporting (ER)Format for Sales Packing Slip or Project quotation  previoulsy an error woudl be issued advsing that the report format is not supported 
+21302	    | Smart Send Feature Manageemnt Key| Updsates to the Feature manageemnt config keys sued by Smart Send 
+
+
+
+## Feature management
+From 10.0.34.20231026, Smart Send can be enabled via Feature management
+Enable the following feature in D365 Feature management:
+
+- DXC Smart Send
+
+If the above feature is not visible, press **Check for updates** to refresh the feature management list.
+
+# Previous version(s)
+
+#### Build 10.0.42.202503041  
+### Release 10.0.42.20250304
 <ins>Bug fixes</ins>
 
 Number	  | Name	          | Description
@@ -76,21 +97,13 @@ Number	  | Name	          | Description
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-17451	    | Batch Process for Smart Send Forms| For Forms that contain a "Smart Send" button you can now enable the ability to process these forms via Batch. This feature can be controlled from the Email parameters screen.
-21356	    | Incorporate Use of "Customer" Account | For Sales Order Invoices and Sales Order Confirmations Smart Send now incorporates the ability to use  the "customer" account number to find the matching purpose and not just the "Invoice" account
+17451	    | Batch Process for Smart Send Forms| For Forms that contain a "Smart Send" button, you can now enable the ability to process these forms via Batch. This feature can be controlled from the Email parameters screen.
+21356	    | Incorporate Use of "Customer" Account | For Sales Order Invoices and Sales Order Confirmation.s Smart Send now incorporates the ability to use  the "customer" account number to find the matching purpose and not just the "Invoice" account
 21413	    | Update to class ESS_EmailManager.sendToEmail()| In Line with Best practice SRSPrintMediumType::Email updated to SRSPrintMediumType::ECL_AutoEmail
-17452	    | Smart Send Architectural enhancements and optimization| As part of the architectural changes required to enable Smart Send to process forms in batch processing, outdated and inefficient methods were removed.  During this phase, the code structure was changed to simplify and enhance the overall performance of the product. Old, outdated methods were removed, and multiple-form outputs were consolidated to use a common structure. streamlining the procedure for upcoming upgrades and/or extensions 
-21283|Use Invoice Specific contact on Free Text Invoice| Free Text Invoice now incorporates the ability to select a "specific" contact which will distribute to the email address associated with the "contact" on the customer FastTab 
+17452	    | Smart Send Architectural enhancements and optimisation | As part of the architectural changes required to enable Smart Send to process forms in batch processing, outdated and inefficient methods were removed.  During this phase, the code structure was changed to simplify and enhance the overall performance of the product. Old, outdated methods were removed, and multiple-form outputs were consolidated to use a common structure. streamlining the procedure for upcoming upgrades and/or extensions 
+21283|Use Invoice Specific contact on Free Text Invoice| Free Text Invoice now incorporates the ability to select a "specific" contact, which will distribute to the email address associated with the "contact" on the customer FastTab 
 
-## Feature management
-From 10.0.34.20231026 Smart Send can be enabled via Feature management
-Enable the following feature in D365 Feature management:
 
-- DXC Smart Send
-
-If the above feature is not visible, press **Check for updates** to refresh the feature management list.
-
-# Previous version(s)
 #### Build 10.0.40.202409113 
 ### Release 10.0.40.20240911
 <ins>Bug fixes</ins>
