@@ -57,7 +57,6 @@ DXC Smart Business Form Email Manager 10.0.43 runs on the following Microsoft re
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.42	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 
@@ -69,8 +68,8 @@ Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dy
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-23149	    | Smart Send has not been configured for this report format.| When attempting to use Electronic Reporting (ER)Format for Sales Packing Slip or Project quotation  previoulsy an error woudl be issued advsing that the report format is not supported 
-21302	    | Smart Send Feature Manageemnt Key| Updsates to the Feature manageemnt config keys sued by Smart Send 
+23149	    | Smart Send has not been configured for this report format.| When attempting to use Electronic Reporting (ER)Format for Sales Packing Slip or Project quotation,  previously an error would be issued advising that the report format is not supported 
+21302	    | Smart Send Feature Management Key| Updates to the Feature management config keys used by Smart Send 
 
 
 
