@@ -61,12 +61,13 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.42	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 
-#### Build 10.0.43.202506172
+#### Build 10.0.43.202506173
 
 <ins>Bug fixes</ins>
 
 Number	  | Name	          | Description
 :--       |:--              |:--
+
 23045|Funding Journal not filtering correct Funding Code|updated selection criteria so the correct description is pulled through when the same funding code is used 
 22985|update to unique Key for funding code |Allows  the same funding code to be used with a different billing account name; previously, this was unavailable
 23033|General Ledger Journal affected by Care Services deployment|corrected view issue in standard General Journal
