@@ -67,7 +67,6 @@ Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dy
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-
 23045|Funding Journal not filtering correct Funding Code|updated selection criteria so the correct description is pulled through when the same funding code is used 
 22985|update to unique Key for funding code |Allows  the same funding code to be used with a different billing account name; previously, this was unavailable
 23033|General Ledger Journal affected by Care Services deployment|corrected view issue in standard General Journal
@@ -85,7 +84,7 @@ Number	  | Name	          | Description
 23016|Service Entry Validations Enhancement|removed limitations that would normally restrict service entry types, enhancing integration with third-party systems 
 22989|Care Services Statement can display different  Organisation address|New functionality is added to the Care services parameters page ( Care services >Setup >Care services parameters) that allows an organisation to display a different organisational address on their statements
 22763|Client Refund Proposal|added toggle to allow for all open transactions to be displayed 
-
+23129|Client Refund Proposal Journal description field should populate from billing code| The source for the population of the description text for the refund journal will include the description on the billing code that has been used for the refund journal.
 
 
 # Previous version(s)
