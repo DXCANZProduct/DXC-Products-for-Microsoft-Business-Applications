@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-07-02
+ms.date: 2025-07-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -131,6 +131,14 @@ Modern bank reconciliation has added new button **Duplicate**, which allows user
 
 When Financial utilities parameter **Enable modern bank reconciliation extensions** is set to _Yes_, the Finance Utilities button **Copy matching rule** is hidden (will be deprecated in future).
 The additional Finance Utilities fields for the new Modern bank reconciliation actions have been added the std's **Duplicate** button.
+
+### Field format
+
+Pre-modern bank reconciliation Finance Utilities functionality **Field format** hasn't been added as extension to Modern bank reconciliation. <br> 
+
+Standard: The Operator **In** in **Step 2: Match open invoices** can be used to find the Customer account, Reference or Invoice within a bank statement field. <br>
+For example, finding invoice 'INV033718' in 'XXX INV033718 YYY'.
+
 
 # Processing
 
