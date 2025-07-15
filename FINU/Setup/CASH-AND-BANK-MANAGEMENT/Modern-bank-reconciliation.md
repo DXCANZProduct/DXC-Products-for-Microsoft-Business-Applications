@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-07-14
+ms.date: 2025-07-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -110,6 +110,8 @@ Finance utilities functionality extends **Customer invoice field** in **Step 2 (
 Finance utilities functionality extends **Financial details** in **Step 3: Customer payment journal parameters** with:
 - **Offset company** - ability to offset to a different legal entity (intercompany).
 
+Finance utilities **Description mask** is replaced with standard's [Default description](#default-description)
+
 The following is only applicable to
 - **Generate customer payment**
     - **One journal** for all matched bank statement lines. No setup required, this is automatic for this action.
@@ -138,6 +140,17 @@ Pre-modern bank reconciliation Finance Utilities functionality **Field format** 
 
 Standard: The Operator **In** in **Step 2: Match open invoices** can be used to find the Customer account, Reference or Invoice within a bank statement field. <br>
 For example, finding invoice 'INV033718' in 'XXX INV033718 YYY'.
+
+### Default description
+
+Enable feature **Enable default descriptions for advanced bank reconciliation** and setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation). <br> 
+Finance utilities will use the same default description on the intercompany transaction.
+
+This applies to all of the following actions: 
+- Generate customer payment
+- Generate vendor payment
+- Generate voucher
+- Settle customer invoice
 
 
 # Processing
