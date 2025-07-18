@@ -209,8 +209,8 @@ g)	Admission of resident paying accommodation payment as RAC/DAC combination.
 -	Discharge client
 -	Refund fees paid in advance.
 -	Refund accommodation payment balance.
--	
--	
+  
+  
 h)	Admission of resident paying accommodation payment as RAD lumpsum with - fees drawn down.
 -	Admission of resident,
 -	Setup billing schedule and configure fees to be drawn down
