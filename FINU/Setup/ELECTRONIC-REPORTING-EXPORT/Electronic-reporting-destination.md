@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Organization administration - Electronic reporting destination 
-author: jdutoit2
+author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-06-25
+ms.date: 2025-07-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  ERFormatDestination, DXCEncryptionParameters, DocuType, DFUGERExportConnection
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 # ms.custom: ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version:: AX 7.0.1
 ---
@@ -51,5 +51,5 @@ Select **New** on the Action Pane to create an **Electronic reporting destinatio
 |  **Stop processing on failure**  |  If enabled and there are errors when saving the file to location, vendor payment processing  **Generate payment**  will create a file and attach to the job. The Payment status will remain  **None**   |  •	Yes <br> •	No          |
 |  Select the **Settings** button on the **File destination** FastTab and select the **Archive** tab |  |  |
 |  **Enabled**  |  Enable the Archive destination  |  • Yes <br> • No          |
-|  **Save in job archive**  |  Enable saving  |  • Yes <br> • No          |
+|  **Save in job archive**  |  Enable saving to 'Electronic reporting archived jobs' |  • Yes <br> • No          |
 |  **Type**  |  Select the **Document type** created in _step 2_  |  Example GER          |
