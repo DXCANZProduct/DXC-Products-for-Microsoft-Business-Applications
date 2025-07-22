@@ -88,7 +88,6 @@ Finance utilities functionality extends **Financial details** in **Step 2: Vouch
 
 - **Offset company** - ability to offset to a different legal entity (intercompany).
 - **Offset account type** - select bank for bank transfers.
-- **Sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
 
 
 #### Vendor
