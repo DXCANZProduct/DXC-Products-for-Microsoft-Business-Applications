@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description:  Accounts payable processing - BPAY payment
-author: helenho
-manager: Kym Parker
-ms.date: 2023-08-09
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-07-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form: VendPaymMode, LedgerJournalTable5, LedgerJournalTable9
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm: 
 # ms.custom: : ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -44,10 +44,11 @@ The BPAY Finance utilities modification to capture BPAY details for your EFT pay
 - **Project management and accounting > Journals > Expense**
 
 **Payment id** is currently on the vendor invoicing forms and will be utilized for BPAY **Customer Reference Number (CRN)**. <br>
-New BPAY field **Lodgement reference** has also been added.
+New BPAY field **Lodgement reference** and **Biller code** has also been added.
 
 - **Payment id** is populated by MS from the Vendor’s Payment id. The field can be manually edited on the vendor invoice entry prior to posting the invoice.
 - **Lodgement reference** is populated by Finance Utilities by the vendor/third party bank account on the invoice. When changing to a different vendor bank account, the Lodgement reference will automatically update. The field can also be manually edited on the vendor invoice entry prior to posting the invoice.
+- **Biller code** is populated by Finance Utilities by the vendor/third party bank account on the invoice. When changing to a different vendor bank account, the Biller code will automatically update. The field can also be manually edited on the vendor invoice entry prior to posting the invoice.
 
 The BPAY modification uses the method of payment control settings to validate for mandatory fields Payment id and Lodgement reference (if also flagged as mandatory).
 If these Payment control mandatory fields are blank the invoice posting will error.
@@ -55,7 +56,7 @@ If these Payment control mandatory fields are blank the invoice posting will err
 ### BPAY Vendor payments
 Second step is to pay the vendor invoices posted in previous step. Users can go to the **Vendor payment journal** page by navigating to **Accounts payable > Payments > Vendor payment journal**. <br>
 
-New Finance utilities BPAY field **Lodgement reference** has been added to Vendor payment proposal page. 
-Standard D365 already groups payments by Payment ID, and with the BPAY modification the **Lodgement reference** is also used for additional grouping.
+New Finance utilities BPAY field **Lodgement reference** and **Biller code** has been added to Vendor payment proposal page. 
+Standard D365 already groups payments by Payment ID, and with the BPAY modification the **Lodgement reference** and **Biller code** is also used for additional grouping.
 
-**Lodgement reference** can be viewed on the **Payment** tab. The field is editable.
+**Lodgement reference** and **Biller code** can be viewed on the **Payment** tab. The field is editable.
