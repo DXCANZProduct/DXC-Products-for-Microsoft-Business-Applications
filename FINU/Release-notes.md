@@ -83,14 +83,16 @@ Number	  	| Module	| Functionality	  	| Description
 17513		| Cash and bank management	| Modern bank reconciliation	| Support for feature **Modern bank reconciliation**. [User guide](Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation.md)
 21820		| Accounts payable	| BPAY - Biller code		| Similar to how Finance Utilities 'Lodgement reference' works, ability to: <br> • Method of payment: Set Payment control and Payment attributes for **Biller code**. <br> • Ability to override the defaulted Biller code on Invoices.
 20204		| Various	| ABN validation	| Where using the 'Search by ABN' in ABN lookup and fullName isn't avaiable in the legalName section, a concat of givenName, otherGivenNames and familyName will be provided in the **Company name** in the Search result instead if blank.
+23156		| Budgeting	| Security configuration	| Created new role **Budget import manager** using duty 'Maintain budget import. Related to 22784.
 
 
 <ins>Bug fixes</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
-22938		| Organisation administration	| Electronic reporting export	| Missing security configuration on form. 
+22938		| Organisation administration	| Electronic reporting export	| Missing security configuration on 'Electronic reporting export connection'. 
 23048		| Cash and bank management	| Mark as reconciled in batch	| Where the bank statements were set to automatically post and the user selected 'Mark as reconciled in batch' (instead of 'Mark as reconciled', the bank statement wasn't automatically posted.
+23078		| Cash and bank management	| Financial dimensions on mark new transactions	| Issue in Financial dimensions for mark new transactions for currently legal entity offsets. The offset financial dimension was also used on the bank account posting.
 
 
 # Current version
