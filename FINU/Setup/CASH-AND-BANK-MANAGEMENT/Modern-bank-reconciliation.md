@@ -78,8 +78,8 @@ Finance utilities functionality extends **Financial details** in **Step 2: Vouch
 
 - **Offset company** - ability to offset to a different legal entity (intercompany).
 - **Offset account type** - select ledger to offset to an expense or income ledger account.
-- **Sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
-- **Item sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity.
+- **Sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity. For current legal entity company offsets, std's tax field is utilised.
+- **Item sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity. For current legal entity company offsets, std's tax field is utilised.
 
 #### Bank
 
