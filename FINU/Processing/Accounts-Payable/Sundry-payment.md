@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Accounts payable processing - Sundry payment
-author: helenho
-manager: Kym Parker
-ms.date: 2021-03-02
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-07-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form:  VendPaymMode, LedgerJournalTable5, LedgerJournalTable9
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm: 
 # ms.custom: : ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
@@ -50,6 +50,16 @@ To create a new sundry vendor invoice journal, go to **Accounts payable > Invoic
 The Sundry Vendor detail can be changed, prior to posting. <br>
 If any of the above fields are not entered for a sundry vendor invoice line, an error will stop the user from saving the journal line. <br>
 The error will specify which sundry field must be filled in.
+
+#### Duplicate invoice check
+
+Accounts payable paramater **Check the invoice number used** will now use the combination of the following to determine uniqueness of an invoice for sundry invoices:
+- Invoice
+- Sundry BSB\routing number
+- Sundry bank account
+
+For example where two invoices with same id are processed for the one Sundry vendor account, but the sundry bank details differ between the two invoices, they will not be seen as duplicates.
+
 
 ### Sundry Vendor Payments
 
