@@ -53,7 +53,7 @@ The error will specify which sundry field must be filled in.
 
 #### Duplicate invoice check
 
-Accounts payable paramater **Check the invoice number used** will now use the combination of the following to determine uniqueness of an invoice for sundry invoices:
+Accounts payable paramater **Check the invoice number used** will now use the combination of the following to determine uniqueness of sundry invoices:
 - Invoice
 - Sundry BSB\routing number
 - Sundry bank account
