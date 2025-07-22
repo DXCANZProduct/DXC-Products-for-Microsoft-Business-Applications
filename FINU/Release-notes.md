@@ -83,6 +83,8 @@ Number	  	| Module	| Functionality	  	| Description
 17513		| Cash and bank management	| Modern bank reconciliation	| Support for feature **Modern bank reconciliation**. [User guide](Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation.md)
 21820		| Accounts payable	| BPAY - Biller code		| Similar to how Finance Utilities 'Lodgement reference' works, ability to: <br> • Method of payment: Set Payment control and Payment attributes for **Biller code**. <br> • Ability to override the defaulted Biller code on Invoices.
 20204		| Various	| ABN validation	| Where using the 'Search by ABN' in ABN lookup and fullName isn't avaiable in the legalName section, a concat of givenName, otherGivenNames and familyName will be provided in the **Company name** in the Search result instead if blank.
+23214		| Organisation administration	| ABN validation	| Rename report 'Organisation admininstration > Enquiries and reports > ABN Validation' to 'Organisation admininstration > Enquiries and reports > ABN validation report'
+22984		| Accounts payable	| Sundry | One vendor account can used for multiple sundry vendors when using a Method of payment where 'Sundry method of payment' = Yes. <br> **Check the invoice number used** will now use the combination of Invoice, Sundry BSB\routing number and Sundry bank account to determine uniqueness of an invoice for sundry invoices.
 23156		| Budgeting	| Security configuration	| Created new role **Budget import manager** using duty 'Maintain budget import. Related to 22784.
 
 
