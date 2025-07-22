@@ -35,7 +35,7 @@ The following is a summary of the prerequisites for using Finance utilities exte
 
 The following setup are prerequisites and is described in detail [here](../../Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation.md) when switching to Modern bank reconciliation:
 - Enable feature **Modern bank reconciliation**
-- Set **Enable modern bank reconciliation extensions** to _Yes_ in **Financial utilities parameters**
+- Set **Enable modern bank reconciliation extensions** to _Yes_ in **Financial utilities parameters**.
 - Assign **Customer payment journal** and **Vendor payment journal** on the company **Bank accounts** if actions 'Generate vendor payments', 'Generate customer payments' or 'Settle customer invoice' will be used
 - ** Migrate Action **Mark new transactions** Reconciliation matching rules to the applicable replacements. Ensure there are no Action **Mark new transactions** left before running the next step, as this will delete them.
 - Run **Cash and bank management > Setup > Advanced bank reconciliation setup > Advanced bank reconciliation data upgrade**
