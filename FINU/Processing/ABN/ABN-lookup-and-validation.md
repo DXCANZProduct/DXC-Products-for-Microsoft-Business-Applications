@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Processing - ABN lookup and validation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-11
+ms.date: 2025-07-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -98,7 +98,7 @@ Available on the ActionPane in the following forms:
 - Project management and accounting > Journals > Expense
 
 # ABN validation report
-To run the **ABN validation** report, go to **Organization administration > Inquiries and reports > ABN validation**. <br>
+To run the **ABN validation** report, go to **Organization administration > Inquiries and reports > ABN validation report**. <br>
 Select the applicable parameters and press **OK**.
 
 ### Fields
