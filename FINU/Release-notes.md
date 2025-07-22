@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-07-03
+ms.date: 2025-07-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -71,6 +71,27 @@ Release notes for other models included in product:
 		- Step 4 - Change all applicable **Azure blob** connections: <br> 
 			• Credential type: Key Vault <br>
 	 		• Connection string: Secret setup in step 3
+
+# Next version
+
+### Release 10.0.43.202508TBD
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+17513		| Cash and bank management	| Modern bank reconciliation	| Support for feature **Modern bank reconciliation**. [User guide](Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation.md)
+21820		| Accounts payable	| BPAY - Biller code		| Similar to how Finance Utilities 'Lodgement reference' works, ability to: <br> • Method of payment: Set Payment control and Payment attributes for **Biller code**. <br> • Ability to override the defaulted Biller code on Invoices.
+20204		| Various	| ABN validation	| Where using the 'Search by ABN' in ABN lookup and fullName isn't avaiable in the legalName section, a concat of givenName, otherGivenNames and familyName will be provided in the **Company name** in the Search result instead if blank.
+
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+22938		| Organisation administration	| Electronic reporting export	| Missing security configuration on form. 
+23048		| Cash and bank management	| Mark as reconciled in batch	| Where the bank statements were set to automatically post and the user selected 'Mark as reconciled in batch' (instead of 'Mark as reconciled', the bank statement wasn't automatically posted.
+
 
 # Current version
 
