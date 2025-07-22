@@ -50,7 +50,6 @@ The following fields have been added as part of the BPAY modification, but are _
 -	**Payment control**
     -	Lodgement reference is mandatory
     -	Biller code is mandatory
--	
 -	**Payment attributes**
     -	Lodgement reference
     -	Biller code
