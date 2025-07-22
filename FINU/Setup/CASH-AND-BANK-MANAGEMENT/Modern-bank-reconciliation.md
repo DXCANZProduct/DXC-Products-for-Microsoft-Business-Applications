@@ -43,8 +43,8 @@ Summary of Finance Utilities extensions to Modern bank reconciliation:
 - **Offset type bank** - Modern bank reconciliation doesn't include an option for offset type Bank which is used for bank transfers. In Finance utilities we support this option under **Generate voucher**.
 - **Offset type customer**:
     - Ability to use **Customer reference** to find the Customer account.
-    - One customer payment journal for all matched bank statement lines (only 'Generate customer payment).
-    - Posting options.
+    - One customer payment journal for all matched bank statement lines (only 'Generate customer payment').
+    - Posting options (only 'Generate customer payment').
 
 ## Migration
 See the following [link](Modern-bank-reconciliation-migration.md) for migration details.
