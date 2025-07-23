@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-06-10
+ms.date: 2025-07-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -57,6 +57,32 @@ Release notes for other models included in product:
 	- Step 3 - Change all applicable **Azure blob** connections: <br> 
 		• Credential type: Key Vault <br>
 		• Key vault: Secret setup in step 2
+
+# Next version
+
+### Release 10.0.43.2025008TBD
+
+<ins>New features</ins>
+
+
+**Standard formats module**	
+
+Number	| Name		 | Description
+:--	|:--		 |:--
+22897	| X12		| Resolve Pull request (PR) comments for 22720 and 22897
+21307	| X12		| Modified data entities to support X12 data entity imports. [User guide](CORE/Other/Data-entities.md#document-types)
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+21322	| Project sales invoice	| New outbound customer document called **Project sales invoice**. Triggered by posting a Project's Invoice proposal for Sales orders where the customer is setup to receive this document.
+
+
+
+
+
+
 
 # Current version
 
