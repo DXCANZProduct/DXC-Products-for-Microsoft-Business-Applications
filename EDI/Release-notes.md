@@ -80,8 +80,13 @@ Number	| Name		 | Description
 
 
 
+<ins>Bug fixes</ins>
 
+**Vendor module**	
 
+Number	| Name		 | Description
+:--	|:--		  	|:--	
+22894	| Vendor purchase order change	| Modified price comparison calculations for determining 'Line change type'. Large price units were causing issues in the comparison.
 
 
 # Current version
