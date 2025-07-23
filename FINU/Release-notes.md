@@ -80,7 +80,7 @@ Release notes for other models included in product:
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-17513		| Cash and bank management	| Modern bank reconciliation	| Support for feature **Modern bank reconciliation**. <br> This release will exclude Reconciliation matching rules Data entity, as the std entity doesn't support Modern bank reconciliation yet - dependent on MS. [User guide](Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation.md)
+17513		| Cash and bank management	| Modern bank reconciliation	| Support for feature **Modern bank reconciliation**. <br> This release will exclude Reconciliation matching rules Data entity, as the std entity doesn't support Modern bank reconciliation yet - dependent on MS. <br> [User guide](Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation.md)
 21820		| Accounts payable	| BPAY - Biller code		| Similar to how Finance Utilities 'Lodgement reference' works, ability to: <br> • Method of payment: Set Payment control and Payment attributes for **Biller code**. <br> • Ability to override the defaulted Biller code on Invoices.
 20204		| Various	| ABN validation	| Where using the 'Search by ABN' in ABN lookup and fullName isn't available in the legalName section, a concat of givenName, otherGivenNames and familyName will be provided in the **Company name** in the Search result instead if blank.
 23214		| Organisation administration	| ABN validation	| Rename report 'Organisation admininstration > Enquiries and reports > ABN Validation' to 'Organisation admininstration > Enquiries and reports > ABN validation report'
