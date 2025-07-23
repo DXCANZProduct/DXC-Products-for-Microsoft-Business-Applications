@@ -3,9 +3,9 @@
 
 title: EDI Core
 description: EDI Core - Data entities
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-05-29
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-07-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  SAB_EDIFTPSite, SAB_EDIUOMMapping, SAB_EDICleanupProfile, SAB_EDIResetStatusProfile,  SAB_EDIFunctionalAckDocumentTypeMapping, SAB_EDIBatchControlGroup, SAB_EDIDocumentTypeTable
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDI
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -99,7 +99,9 @@ EDI > Setup > Document types (Template, Validation, Outbound file names and Stag
 **X12**       |  | Applicable to **EDI - Standard formats** module for **X12** types|
 1	   | EDI Template X12            | Create new **X12** template and setup					|
 2	   | EDI Template X12 section    | Section details for the **X12** template				| • EDI Template X12
-3	   | EDI Template X12 element    | Element details for each section for the **X12** template		| • EDI Template X12 section
+3    | EDI template X12 segment    | Segment details for the **X12** template       | • EDI Template X12 section
+4    | EDI template X12 composite  | Composite details for the **X12** template     | • EDI template X12 segment
+5	   | EDI Template X12 element    | Element details for the **X12** template		    | • EDI Template X12 element
 
 > Note: If the EDIFACT or X12 template has been created manually (not via data entity), first delete the default UNA / ISA elements before importing Section and Element entities for the template. <br> Re-import data package if elements are not populated.
 
