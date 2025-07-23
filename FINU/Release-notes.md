@@ -93,7 +93,7 @@ Number	  	| Module	| Functionality	  	| Description
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
 22938		| Organisation administration	| Electronic reporting export connection	| Missing security configuration on 'Electronic reporting export connection'. 
-23048		| Cash and bank management	| Mark as reconciled in batch	| Where the bank statements were set to automatically post and the user selected 'Mark as reconciled in batch' (instead of 'Mark as reconciled', the bank statement wasn't automatically posted.
+23048		| Cash and bank management	| Mark as reconciled in batch	| Where the bank statements were set to automatically post and the user selected 'Mark as reconciled in batch' (instead of 'Mark as reconciled'), the bank statement wasn't automatically posted.
 23078		| Cash and bank management	| Financial dimensions on mark new transactions	| Issue in Financial dimensions for mark new transactions for currently legal entity offsets. The offset financial dimension was also used on the bank account posting.
 
 
