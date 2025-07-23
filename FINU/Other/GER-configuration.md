@@ -38,64 +38,82 @@ Below sections describe which configurations apply to each format for the Accoun
 
 ### ANZ Domestic AU
 
-- ER files:
-  -  ANZ Direct Credit Service (AU) DXC.xml
+- File type: XML
+- External provider: ANZ bank
+
+1.  ANZ Direct Credit Service (AU) DXC.xml
 
 ### ANZ Domestic NZ
 
-ANZ Direct Credit Domestic (NZ).xml
+1. ANZ Direct Credit Domestic (NZ).xml
 
 ### ANZ International_Domestic ISO20022 payment format
 
-ISO20022 Credit transfer_DXC.xml
+1. ISO20022 Credit transfer_DXC.xml
 
 ### ASB Domestic NZ
 
-ASB Domestic (NZ).xml
-BNZ Direct Credit Domestic (NZ).xml
+1. ASB Domestic (NZ).xml
+1. BNZ Direct Credit Domestic (NZ).xml
 
 ### BNZ bank ib4b International payment format
 
-Payment model mapping 1611_DXC.xml
+- File type: Fixed width
+- External provider: BNZ bank
 
-### BNZ Direct Credit
+1. Payment model mapping 1611_DXC.xml
+1. BNZ International (Ib4b).xml
 
-Payment model mapping 1611.xml
+### BNZ Domestic Direct Credit
+
+- File type: XML
+- External provider: BNZ Bank
+
+1. Payment model mapping 1611.xml
+1. BNZ Direct Credit Domestic (NZ).xml
 
 
 ### Finance Utilities - Payment Advice
 
-- File format: Excel
-- ER files:
-  - PaymentModel_DXC.xml
-  - Payment advice model mapping DXC.xml
-  - Vendor payment adviceV2_DXC(Excel).xml
+- File type: Excel
+
+1. PaymentModel_DXC.xml
+1. Payment advice model mapping DXC.xml
+1. Vendor payment adviceV2_DXC(Excel).xml
 
 
 ### Wells Fargo ISO20022
 
-- File format: XML
+- File type: XML
 - External provider: Wells Fargo
 
-1. Payment model.xml
 1. Payment model (109).xml
 1. Payment model DXC.xml
 1. Payment model mapping 1611.xml
 1. Payment model mapping 1611 DXC.xml 
 1. Payment model mapping to destination ISO20022 DXC.xml
 1. ISO20022 Credit transfer.xml
-1. ISO20022 Credit transfer CCR.xml
-1. ISO20022 Credit transfer CHK.xml
-1. ISO20022 Credit transfer DAC.xml
+1. ISO20022 Credit transfer DAC.xml (CCD - Cash concentration and disbursement, PPD)
+1. ISO20022 Credit transfer CCR.xml (CCR CARD - Credit card)
+1. ISO20022 Credit transfer CHK.xml (CHK - Cheque)
+
 
 ### Westpac APT International payment format
 
+- File type: Fixed width
+- External provider: Westpac bank
+
+1. Payment model mapping 1611_DXC.xml
+2. WBC APT (International).xml
 
 # Account receivable module
 
 Below sections describe which configurations apply to each format for the Accounts receivable module.
 
 ### CBA Bank AR Customer Refund ABA format
+
+- File type: Fixed width
+- External provider: Commonwealth bank
 
 1. Payment model mapping 1611_DXC.xml
 2. CBA Direct Credit Service_DXC.xml
@@ -108,10 +126,12 @@ Below sections describe which configurations apply to each format for the Accoun
 4. Payment model mapping 1611 BPAY.xml
 5. NAB BPAY.xml
 
-# Cash and bank management mmodule
+# Cash and bank management module
 
 Below sections describe which configurations apply to each format for the Cash and bank management module.
 
 ### MT940 Bank Load (ANZ)
 
-ABR MT940 DXC.xml
+1. ABR MT940 DXC.xml
+
+
