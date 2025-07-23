@@ -60,7 +60,7 @@ Release notes for other models included in product:
 
 # Next version
 
-### Release 10.0.43.2025008TBD
+### Release 10.0.43.202508TBD
 
 <ins>New features</ins>
 
