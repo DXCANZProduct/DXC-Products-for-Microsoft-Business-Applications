@@ -55,7 +55,7 @@ DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Ope
 *	Vendor invoice
 
 #### Projects
-*	Project quotation (requires sales quotation in Email parameters)
+*	Project quotation (see [parameters](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/SMART-SEND/CONFIGURATION/Parameters.html#overview))
 *	Project invoice
 
 #### Inventory management
