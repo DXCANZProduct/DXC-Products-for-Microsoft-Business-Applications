@@ -3,9 +3,9 @@
 
 title: EDI Customer
 description: Introduction to EDI Customer
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-09-29
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-07-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  MCRHoldCodeTable, SAB_EDITradingPartner, SAB_EDIDocumentTypeTable, EcoResProductDetailsExtendedGrid
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDICustomerDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -49,6 +49,7 @@ EDI contains the following documents pertaining to Customer Trading partners.
 	- Customer purchase order acknowledgement (POA) - Allows D365 to send an Acknowledgement once a customer purchase order has been received and verified.
 	- Customer advanced shipping notice (ASN) - Allows D365 to send delivery information to the customer with the packaging details.
 	- Sales invoice - Allows D365 to send a tax invoice document to the customer.
+ 	- Project sales invoice - Allows D365 to send a project invoice for a sales order to the customer. 
 
 ## Setup
 ### Core setup
@@ -98,6 +99,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**
     - [Customer purchase order acknowledgement](../SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement.md)
     - [Customer advanced shipping notice](../SETUP/SETTING-PROFILES/Customer-advanced-shipping-notice.md)
     - [Sales invoice](../SETUP/SETTING-PROFILES/Sales-invoice.md)
+    - [Project sales invoice](../SETUP/SETTING-PROFILES/Project-sales-invoice.md)
 - Validation profiles: applicable to the following inbound document types
     - [Customer purchase order](../SETUP/VALIDATION-PROFILES/Customer-purchase-order.md)
     - [Customer purchase order change](../SETUP/VALIDATION-PROFILES/Customer-purchase-order-change.md)
@@ -127,6 +129,7 @@ Users can access the forms by navigating to **EDI > Documents > Customer documen
 - [Customer purchase order acknowledgement](../DOCUMENTS/Customer-purchase-order-acknowledgement.md)
 - [Customer advanced shipping notice](../DOCUMENTS/Customer-advanced-shipping-notice.md)
 - [Sales invoice](../DOCUMENTS/Sales-invoice.md)
+- [Project sales invoice](../DOCUMENTS/Project-sales-invoice.md)
 
 ### Review sales order
 The following section describes the additional EDI functionality on Sales orders.
