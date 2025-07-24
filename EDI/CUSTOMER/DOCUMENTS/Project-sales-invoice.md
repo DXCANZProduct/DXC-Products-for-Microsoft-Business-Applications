@@ -2,10 +2,10 @@
 # required metadata
 
 title: EDI Customer
-description: EDI Customer Documents - Sales invoice
+description: EDI Customer Documents - Project sales invoice
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-05-09
+ms.date: 2025-07-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,12 +27,10 @@ ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
 
-# Sales invoice
-EDI customers may require a Sales invoice for a sales order.
+# Project sales invoice
+EDI customers may require a Project invoice for a sales order.
 
-> Note: Sales invoices can also be sent for a sales order not created via EDI.
-
-The following subsections will describe how to view, process and send Sales invoices to applicable Customer Trading partners. <br>
+The following subsections will describe how to view, process and send Project sales invoices to applicable Customer Trading partners. <br>
 Viewing the [Staging table records](#view-staging-table-records) will also be discussed. <br>
 The created sales invoice record(s) can be viewed for a sales order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Sales order page.<br>
 
@@ -40,22 +38,22 @@ The created sales invoice record(s) can be viewed for a sales order, by selectin
 The following setup is prerequisites for the sales invoice
 
 1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-2. Create [Setting profile](../SETUP/SETTING-PROFILES/Sales-invoice.md) for the document.
+2. Create [Setting profile](../SETUP/SETTING-PROFILES/Project-sales-invoice.md) for the document.
 3. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
-4. If the customer [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner. <br> If the invoice account differs to the customer account, setup the **Invoice account** as EDI trading partner for the Sales invoice document.
+4. If the customer [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner. <br> If the invoice account differs to the customer account, setup the **Invoice account** as EDI trading partner for the Project sales invoice document.
 5. Add and enable the sales invoice to the [Customer trading partner](../SETUP/Trading-partner.md) and select the applicable:
     - Template
     - Setting profile
     - File name setup
 
 ## Processing
-### Post sales invoice
-When the document **Sales invoice** is enabled for the EDI customer, the post sales invoice page field **Send to EDI** will be set to _Yes._
-The Sales invoice [Document setting profile](../SETUP/SETTING-PROFILES/Sales-invoice.md) provides the option to exclude credits notes from creating a sales invoice staging record by setting **Don't send credit note** to _Yes._
+### Post project invoice proposal for sales order
+When the document **Project sales invoice** is enabled for the EDI customer and the project invoice proposal is for sales order lines, the post invoice proposal page's field **Send to EDI** will be set to _Yes_.
+The Project sales invoice [Document setting profile](../SETUP/SETTING-PROFILES/Project-sales-invoice.md) provides the option to exclude credits notes from creating a project sales invoice staging record by setting **Don't send credit note** to _Yes._
 
 ## View staging table records
-To view the Sales invoice staging records, go to **EDI > Documents > Customer documents > Sales invoice**. 
-Use this page to review staging and process EDI Sales invoice documents to an Outbound file.
+To view the Sales invoice staging records, go to **EDI > Documents > Customer documents > Project sales invoice**. 
+Use this page to review staging and process EDI Project sales invoice documents to an Outbound file.
 
 ### List page
 The following EDI fields are available on the list page.
