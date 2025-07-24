@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Sales invoice
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-05-09
+ms.date: 2025-07-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -65,6 +65,7 @@ The following EDI fields are available on the list page.
 **EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
 **Company**             | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
+**Template Id**         | Template id allocated to the record. This will be used when creating the outbound file.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. • **Canceled** – The record has been manually canceled and will be excluded from processing.
 **Trading partner account**     | Customer account assigned to the staging record.
 **Trading partner GLN**         | The Customer’s global location number is shown here.
@@ -75,7 +76,7 @@ The following EDI fields are available on the list page.
 **Received**                    | Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
 
 ### Buttons
-The following buttons are available on the **Customer advanced shipping notice** Action Pane, tab **Advanced shipping notice**.
+The following buttons are available on the **Sales invoice** Action Pane, tab **Sales invoice export**.
 
 **Button**	                    | **Description**
 :---                            |:----
