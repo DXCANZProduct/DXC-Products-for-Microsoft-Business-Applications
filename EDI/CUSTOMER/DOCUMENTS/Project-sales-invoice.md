@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SalesTableListPage, Action:SAB_EDIStagingFormRun_Invoice
+ms.search.form: SalesTableListPage, ProjProjectsListPage, Action:SAB_EDIStagingFormRun_ProjectInvoice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: Monica du Toit
@@ -63,17 +63,19 @@ The following EDI fields are available on the list page.
 **EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
 **Company**             | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
+**Template Id**         | Template id allocated to the record. This will be used when creating the outbound file.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. • **Canceled** – The record has been manually canceled and will be excluded from processing.
 **Trading partner account**     | Customer account assigned to the staging record.
 **Trading partner GLN**         | The Customer’s global location number is shown here.
-**Tax invoice**                 | Tax invoice number
-**Customer requisition**        | Sales order's Customer requisition
-**Customer reference**          | Sales order's Customer reference
+**Customer requisition**        | Sales order's Customer requisition - where only one sales order
+**Customer reference**          | Sales order's Customer reference - where only one sales order
+**Project contract ID**         | Project contract id for the selected project invoice
+**Invoice**                     | Project invoice number
 **Created Date and Time**       | The date and time the selected record was created in the staging table.
 **Received**                    | Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
 
 ### Buttons
-The following buttons are available on the **Customer advanced shipping notice** Action Pane, tab **Advanced shipping notice**.
+The following buttons are available on the **Project sales invoice** Action Pane, tab **Project sales invoice**.
 
 **Button**	                    | **Description**
 :---                            |:----
@@ -81,14 +83,14 @@ The following buttons are available on the **Customer advanced shipping notice**
 **Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_.
 **Outbound files**              | View the outbound file record created by the selected staging record.
 **Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page.
-**Invoice journal**             | View the tax invoice for the staging record.
+**Invoice journal**             | View the project invoice for the staging record.
 **Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
 **Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
 **Reset template**	            | Reset the template used to create the outbound file. <br> Only enabled where the **Staging to target status** is set to _Not started_.
 **Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
 
-The following buttons are available on the **Sales invoice**'s Action Pane, tab **Acknowledgement**.
+The following buttons are available on the **Project sales invoice**'s Action Pane, tab **Acknowledgement**.
 The **Acknowledgement** tab is available on all outgoing documents staging pages and enables the user to view the **Functional acknowledgement inbound** that has been received and processed for the outbound document.
 
 **Button**	                    | **Description**
@@ -115,6 +117,7 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Overview**</ins>	    |   |
 **Customer requisition**	| Customers purchase order number to be populated in the Customer requisition field of the sales order header | Sales Order > General > Customer requisition
 **Customer reference**	    | Customers purchase order number to be populated in the Customer reference field of the sales order header   |	Sales Order > General > Customer reference
+**Project contract ID**     | Project contract id for the selected project invoice
 <ins>**Details**</ins>		|   |
 **Delivery terms**          | Customer delivery terms	            | Sales Order > Delivery > Delivery terms
 **Terms of payment**	    | Terms of payment	                    | Sales Order > Price and discount > Payment
