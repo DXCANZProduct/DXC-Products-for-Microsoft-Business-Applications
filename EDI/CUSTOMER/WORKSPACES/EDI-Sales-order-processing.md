@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer workspaces - EDI Sales order processing
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-13
+ms.date: 2025-07-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -105,6 +105,21 @@ Buttons	          | Description
 
 ### Open invoice
 **Open invoice** can be used in scenarios where an EDI customer has sales invoices posted but not yet sent to EDI (staging record created) and has the **Sales invoice** document enabled on the trading partner.
+
+Filters           | Description
+:--               |:--
+**Sent to EDI**   |	•	No (default)- Display records that haven’t been sent to EDI <br> •	Yes – Display records that have been sent to EDI
+**Excluded**      |	•	No (default) – Display record that hasn’t been marked as excluded from open list <br> •	Yes – Display records that has been marked as excluded from open list
+
+
+Buttons	          | Description
+:--               |:--
+**Send to EDI**   |	Select the **Send to EDI** button to create a Sales invoice staging table record and update the record as Sent to EDI = Yes
+**Reset flag**    |	Select the **Reset flag** to update **Sent to EDI** to _No_
+**Exclude / Include** |	Ability to exclude/include records from open list
+
+### Open project sales invoice
+**Open project sales invoice** can be used in scenarios where an EDI customer has project sales invoices posted but not yet sent to EDI (staging record created) and has the **Project sales invoice** document enabled on the trading partner.
 
 Filters           | Description
 :--               |:--
