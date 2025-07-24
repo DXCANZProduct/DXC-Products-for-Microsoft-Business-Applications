@@ -3,9 +3,9 @@
 
 title: EDI Customer
 description: Overview of the Customer EDI module process
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-12-06
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-07-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: SAB_EDIDocumentWorkspace
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDICustomerDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -59,6 +59,10 @@ If the packing slip is automatically posted via EDI 3PL picking list registratio
 
 ### Sales invoice
 Sales invoice details can be sent to EDI customers setup with **Sales invoice**. <br>
+Where a customer can't process credit notes received via EDI, these can be disabled via document settings.
+
+### Project sales invoice
+Project sales order invoice details can be sent to EDI customers setup with **Project sales invoice**. <br>
 Where a customer can't process credit notes received via EDI, these can be disabled via document settings.
 
 ## Sales order
