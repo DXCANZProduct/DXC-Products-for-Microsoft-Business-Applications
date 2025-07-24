@@ -3,9 +3,9 @@
 
 title: EDI Customer
 description: EDI Customer - Data entities
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-03-06
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-07-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDICustomerDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -61,7 +61,8 @@ EDI > Setup > Document types (Setting profiles for EDI customer documents)
 2	    | EDI Settings - Customer purchase order change   | Create new document type **Settings profile** for Customer purchase order change |
 3	    | EDI Settings - POA                              | Create new document type **Settings profile** for Customer purchase order acknowledgement |
 4	    | EDI Settings - ASN                              | Create new document type **Settings profile** for Customer advanced shipping notice |
-5	    | EDI Settings - Sales Invoice                    | Create new document type **Settings profile** for Sales invoice |
+5	    | EDI Settings - Sales invoice                    | Create new document type **Settings profile** for Sales invoice |
+6     | EDI Settings - Project sales invoice            | Create new document type **Settings profile** for Project sales invoice |
 
 ## Document types
 EDI > Setup > Document types (Template, Validation, Outbound file names and EDI Field metadata)
