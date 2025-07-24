@@ -4,7 +4,7 @@
 title: EDI Customer
 description: EDI Customer Setting profiles - Project sales invoice
 author: Monica du Toit
-manager: Kym Parker
+manager: Pontus Ek
 ms.date: 2025-07-24
 ms.topic: article
 ms.prod: 
