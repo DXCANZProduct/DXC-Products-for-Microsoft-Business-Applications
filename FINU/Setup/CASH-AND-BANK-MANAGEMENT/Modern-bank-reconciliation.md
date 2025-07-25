@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-07-15
+ms.date: 2025-07-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -143,7 +143,9 @@ For example, finding invoice 'INV033718' in 'XXX INV033718 YYY'.
 
 ### Default description
 
-Enable feature **Enable default descriptions for advanced bank reconciliation** and setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation). <br> 
+1. Enable feature **Enable default descriptions for advanced bank reconciliation**
+2. Setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation) for **Bank - reconciliation worksheet**. <br> 
+
 Finance utilities will use the same default description on the intercompany transaction.
 
 This applies to all of the following actions: 
