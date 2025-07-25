@@ -212,6 +212,9 @@ The following EDI Line staging fields are available on the lines page.
 **Line number**             | The line within the D365 Invoice. Where the invoice is for multiple sales orders, this field would contain the line number per sales order, for example 1, 2, 1, 2.                          | Invoice journal line > Line number
 **Line number document**    | The sequential D365 Invoice line number. Where the invoice is for multiple sales orders, this field would contain sequential line number, for example 1, 2, 3, 4 <br> Ensure **Assign sequential line number when posting customer invoice lines** in **Accounts receivable parameters** (Tab 'Updates', FastTab 'Optimize batch and posting processing') is set to _Yes_.                        |  Invoice journal line > Line creation sequence number                    
 **Line number** (LineNumText)    | The line number from the original Customer purchase order. Use this field if the line number format requires field type String. Supports 001, 1, 10  | Sales line > EDI > General > Line number (LineNumText)
+**Project ID**              | Project id                                                | Invoice journal line > Project id
+**Project name**            | Project name                                              | Project > Project name
+**Contract date**           | Project contract date                                     | Project > Contract date
 **Item number**             | The D365 item id                                          | Invoice journal line > Item Number
 **Product name**            | Product's name                                            | Sales line > Product name
 **Text**                    | Product's text                                            | Sales line > Text
@@ -219,7 +222,7 @@ The following EDI Line staging fields are available on the lines page.
 **Bar code**                | The GTIN or barcode	                                    | Sales line > EDI > EDI item number
 **External item number**	| The external item number	                                | Sales line > General > External
 **SKU**                     | SKU from the Customer purchase order staging line         | Sales line > EDI > SKU
-**Unit price**	            | Discouned unit price for the item	                                | Sales line > Unit price (discounted)
+**Unit price**	            | Discouned unit price for the item	                        | Sales line > Unit price (discounted)
 **Sales unit price**        | Unit price before discounts for the item	                | Sales line > Unit Price
 **Unit discount**           | Unit discount for the item	                            | Sales line > Unit discount
 **Unit discount percent**   | Unit discount percentage for the item	                    | Sales line > Unit discount percent
