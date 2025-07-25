@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-07-23
+ms.date: 2025-07-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -125,42 +125,7 @@ Number	  	| Module	| Functionality	  	| Description
 22874		| Accounts payable	| Sundry vendor payment proposal	| When overriding fields on payment proposal, the sundry vendor lines were incorrectly grouped on payment journal line.
 
 
-# Deprecated features
 
-This section describes the features that have been removed, or planned to be removed from a Finance utilities version.
-
-### Vendor bank account change workflow
-- Reason for deprecation/removal - Replaced by D365 feature from 10.0.32 called 'Vendor bank account change proposal workflow' / 'Supplier bank account change proposal workflow'. [Learn more](https://learn.microsoft.com/en-gb/dynamics365/finance/accounts-payable/vendor-bank-account-workflow)
-- Impact - Removal of the following fields in Accounts payable parameters FastTab 'Vendor approval':
-	- Bank account number
-	- Bank account BSB
-	- Bank account biller code (Finance utilities field)
-	- Bank account lodgement reference (Finance utilities field)
-	- Bank account bank group
-	- Bank account SWIFT code
-	- Bank account IBAN
-	- Bank account active date
-	- Bank account expiration date
-- Notice date - 24 July 2023
-- Status - Completed in 10.0.36.202311161
-> Note: The Finance utilities fields (Biller code and Lodgement reference) have been added to standard 'Vendor bank account approval' FastTab in Accounts payable parameters in Finance Utilities version 10.0.35.202307311.
-
-### New bank statement transaction - Posting date
-- Finance Utilities functionality - Option to post **new** bank statement transaction at either **Today's date** or **Statement transaction date** (Statement's To date)
-- Recommended process: Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' is automatically enabled from 10.0.36. The feature automatically sets new 'Cash and bank management parameters' field 'Set the booking date as default accounting date for new transactions' to _Yes_. Select applicable option in this new field to set the default accounting date for new transactions:
-	- Yes: Bank statement line booking date
- 	- No: Bank statement import date 
-- Reason for deprecation/removal - Feature 'New voucher and date for new transactions in the advanced bank reconciliation bank statement' was introduced in 10.0.31. In 10.0.35 MS has updated the feature which has resulted in a breaking change for Finance Utilities Posting date functionality. From 10.0.36 this feature is enabled by default.
-- Impact - Removal of the following fields & functionality:
-	- Posting date default on bank account <br>
-	- Posting date option on importing bank statement <br>
- 	- Posting date on bank reconciliation <br>
-- Notice date - 4 September 2023
-- Status - Completed in 10.0.36.202311161
-
-![Bank statement](Images/Deprecate_PostingDate_1.png "Bank statement") <br>
-
-![Bank reconciliation](Images/Deprecate_PostingDate_2.png "Bank reconciliation")
 
 # Previous version(s)
 
