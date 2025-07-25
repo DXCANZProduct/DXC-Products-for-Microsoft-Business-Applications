@@ -3,9 +3,9 @@
 
 title: EDI Customer
 description: EDI Customer Setup - Document type Setting profiles
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-03-14
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-07-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  SAB_EDIDocumentTypeTable,  SAB_EDITradingPartner
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDICustomerDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -45,4 +45,5 @@ The following customer documents have setting profiles:
 - [Customer purchase order acknowledgement](SETTING-PROFILES/Customer-purchase-order-acknowledgement.md)
 - [Customer advanced shipping notice](SETTING-PROFILES/Customer-advanced-shipping-notice.md)
 - [Sales invoice](SETTING-PROFILES/Sales-invoice.md)
+- [Project sales invoice](SETTING-PROFILES/Project-sales-invoice.md)
 
