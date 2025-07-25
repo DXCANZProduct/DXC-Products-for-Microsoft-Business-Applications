@@ -76,7 +76,7 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
-21322 <br> 23030 | Project sales invoice	| New outbound customer document called **Project sales invoice**. Triggered by posting a Project's Invoice proposal for Sales orders where the customer is setup to receive this document. <br> • [Setting profile](SETUP/SETTING-PROFILES/Project-sales-invoice.md) <br> • [Processing](DOCUMENTS/Project-sales-invoice.md)
+21322 <br> 23030 | Project sales invoice	| New outbound customer document called **Project sales invoice**. Triggered by posting a Project's Invoice proposal for Sales orders where the customer is setup to receive this document. <br> • [Setting profile](CUSTOMER/SETUP/SETTING-PROFILES/Project-sales-invoice.md) <br> • [Processing](CUSTOMER/DOCUMENTS/Project-sales-invoice.md)
 
 
 
