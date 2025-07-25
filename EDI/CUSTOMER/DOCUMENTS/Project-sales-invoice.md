@@ -240,7 +240,6 @@ The following EDI Line staging fields are available on the lines page.
 **Store code**	            | Store code for the sales line	                            | Sales line > Store code
 **Customer reference**	    | Customers purchase order number as per Customer reference field in the sales order line	
 **Customer requisition**	| Customers purchase order number as per Customer requisition field of the sales order line	
-**Purchase order date**     | The purchase order date from the EDI order is shown here  | Sales order > Original order date	
 **Delivery note**           | Delivery note for the Sales invoice is shown here. If invoice processed with **Update** set to _Delivery note_ and only for one Delivery note.	
 **Document date**           | Document date for the Delivery note	
 **Consignment note number** | Delivery note’s Consignment note number	
