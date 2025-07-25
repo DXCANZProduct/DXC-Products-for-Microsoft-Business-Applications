@@ -45,6 +45,7 @@ Summary of Finance Utilities extensions to Modern bank reconciliation:
     - Ability to use **Customer reference** to find the Customer account.
     - One customer payment journal for all matched bank statement lines (only 'Generate customer payment').
     - Posting options (only 'Generate customer payment').
+ - **Correction amounts** - Ability to enter correction amounts at time of matching Bank statement transactions to Bank transactions.
 
 ## Migration
 See the following [link](Modern-bank-reconciliation-migration.md) for migration details.
