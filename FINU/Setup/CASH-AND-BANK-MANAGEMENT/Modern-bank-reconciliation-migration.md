@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-06-27
+ms.date: 2025-07-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -101,7 +101,6 @@ Offset account bank statement field           | For finding Customer account wit
 Offset account reference bank statement field  | For finding Customer account using Finanance utilites 'Customer reference' within a bank statement field: In 'Step 2 (Optional): Identify customer account through invoice matching' use 'Customer invoice field' set to 'Reference number'. 
 Settle transaction                            | Not required - utilise Action 'Settle customer invoice' where an invoice needs to be settled. Note: Settle customer invoice action will create one customer payment journal per bank statement line, so only use this action where an invoice will be settled.
 Settle transaction bank statement field        | For finding Customer account based on Invoice/Invoice to settle within a bank statement field: In 'Step 2 (Optional): Identify customer account through invoice matching' use 'Customer invoice field' set to 'Invoice'.
-Field format                                    | Not required, replaced with Operator in 'Step 2 (Optional): Identify customer account through invoice matching'. For example, Operator 'In' can be used to find invoice 'INV033718' in bank statement field value 'XXX INV033718 YYY'.
 Auto-post customer payment journal &  Auto-post and transfer customer payment journal  | Replaced with new Finance utilities field Post with three drop-down options: <br> •	Do not post <br> •	Post <br> •	Post and transfer. <br> Advised to use one of the post options as this will also automatically match the newly posted bank transaction to the matching bank statement record. Where do not post is used, it will only create the customer payment journal, not post it and thus not match to the bank statement record.
 Description mask                              | Enable feature 'Enable default descriptions for advanced bank reconciliation' and setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation). Finance utilities will use the same default description on the intercompany transaction.
 Financial dimensions                          | Replaced with std.
