@@ -131,7 +131,7 @@ Option	  	| Setup             | Example <br> Bank statement field's original dat
 **Custom format**               | `\*(.+)\*`     | \**US-001\**           | US-001
 
 > **Important notes for both Customer actions**:
-> When using **Step 2 (Optional): Identify customer account through invoice matching**:
+> When using **Step 2**:
 > - An invoice needs to exist for the customer, as std uses CustInvoiceForBankReconciliationView to find the customer.
 > - If the customer had a method of payment in above view, this method of payment would be used in the customer payment journal. The default on the Reconciliation matching rule will only be used where the customer didn't have a method of payment assigned.
 > - Customer reference numbers must be kept unique accross all legal entities. Std code will look in current legal entity first, and then when it couldn't find it, Finance Utilities is able to look in the offset company.
