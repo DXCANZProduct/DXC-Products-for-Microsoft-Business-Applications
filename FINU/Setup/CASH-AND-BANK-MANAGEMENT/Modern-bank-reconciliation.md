@@ -104,31 +104,13 @@ The following is applicable to both customer actions
 - **Generate customer payment**
 - **Settle customer invoice**
 
+#### Step 2
+
 Finance utilities functionality extends **Customer invoice field** in **Step 2 (Optional): Identify customer account through invoice matching** with:
 - **Reference number** - in Step 2 when identitying customer account through invoice matching, the Finance utilities **Customer reference** can be used to find the D365 customer account.
-- **Field format** - option to use part of a bank statement field to find the D365 customer acount. For example using only 'FTI00000453' from bank statement field value 'xx FTI00000453 yy'  
+- **Field format** - option to use part of a bank statement field to find the D365 customer acount. For example using only 'FTI00000453' from bank statement field value 'xx FTI00000453 yy'
 
-Finance utilities functionality extends **Financial details** in **Step 3: Customer payment journal parameters** with:
-- **Offset company** - ability to offset to a different legal entity (intercompany).
-
-Finance utilities **Description mask** is replaced with standard's [Default description](#default-description)
-
-The following is only applicable to
-- **Generate customer payment**
-    - **One journal** for all matched bank statement lines. No setup required, this is automatic for this action.
-    - **Post** - provides the following three options:
-        -  **Do not post** - generally only used in initial testing. The customer payment journal will only be created (not posted). Once the user has reviewed and manually posted the customer payment journal, refresh the bank reconciliation’s worksheet to bring in the new bank transactions. User has to either use a match with bank statement rule or manually match the applicable bank statement lines with these new bank transactions. When running the reconciliation matching rule in the bank recon, the infolog will provide the journal number created.
-        -  **Post** -  Indicates if the created customer payment journal should automatically be posted. The newly posted bank transaction(s) will also automatically be matched to the applicable bank statement lines.
-        -  **Post and transfer** - Indicates if the created customer payment journal should automatically be posted. If any errors found (example stopped customer), the error lines will be moved to a new journal. The newly posted bank transaction(s) will also automatically be matched to the applicable bank statement lines.
- 
-
-> **Important notes for both Customer actions**:
-> When using **Step 2 (Optional): Identify customer account through invoice matching**:
-> - An invoice needs to exist for the customer, as std uses CustInvoiceForBankReconciliationView to find the customer.
-> - If the customer had a method of payment in above view, this method of payment would be used in the customer payment journal. The default on the Reconciliation matching rule will only be used where the customer didn't have a method of payment assigned.
-> - Customer reference numbers must be kept unique accross all legal entities. Std code will look in current legal entity first, and then when it couldn't find it, Finance Utilities is able to look in the offset company.
-
-#### Field format
+##### Field format
 
 Select the applicable line in Step 2, and select **Field format**. The following options are provided:
 - **No format** - The bank statement field will be used as-is (default).
@@ -147,6 +129,28 @@ Option	  	| Setup             | Example <br> Bank statement field's original dat
 **Fixed field position**        | Start position: 2 <br> Length: 6  | xxUS-001xx        | US-001
 **Delimited field position**    | Delimiter:  <br> Field position: 0   | US-001 extra description  | US-001
 **Custom format**               | `\*(.+)\*`     | \**US-001\**           | US-001
+
+> **Important notes for both Customer actions**:
+> When using **Step 2 (Optional): Identify customer account through invoice matching**:
+> - An invoice needs to exist for the customer, as std uses CustInvoiceForBankReconciliationView to find the customer.
+> - If the customer had a method of payment in above view, this method of payment would be used in the customer payment journal. The default on the Reconciliation matching rule will only be used where the customer didn't have a method of payment assigned.
+> - Customer reference numbers must be kept unique accross all legal entities. Std code will look in current legal entity first, and then when it couldn't find it, Finance Utilities is able to look in the offset company.
+
+#### Step 3
+
+Finance utilities functionality extends **Financial details** in **Step 3: Customer payment journal parameters** with:
+- **Offset company** - ability to offset to a different legal entity (intercompany).
+
+Finance utilities **Description mask** is replaced with standard's [Default description](#default-description)
+
+The following is only applicable to
+- **Generate customer payment**
+    - **One journal** for all matched bank statement lines. No setup required, this is automatic for this action.
+    - **Post** - provides the following three options:
+        -  **Do not post** - generally only used in initial testing. The customer payment journal will only be created (not posted). Once the user has reviewed and manually posted the customer payment journal, refresh the bank reconciliation’s worksheet to bring in the new bank transactions. User has to either use a match with bank statement rule or manually match the applicable bank statement lines with these new bank transactions. When running the reconciliation matching rule in the bank recon, the infolog will provide the journal number created.
+        -  **Post** -  Indicates if the created customer payment journal should automatically be posted. The newly posted bank transaction(s) will also automatically be matched to the applicable bank statement lines.
+        -  **Post and transfer** - Indicates if the created customer payment journal should automatically be posted. If any errors found (example stopped customer), the error lines will be moved to a new journal. The newly posted bank transaction(s) will also automatically be matched to the applicable bank statement lines.
+ 
 
 ### Default description
 
