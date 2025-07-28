@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-07-25
+ms.date: 2025-07-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -106,6 +106,7 @@ The following is applicable to both customer actions
 
 Finance utilities functionality extends **Customer invoice field** in **Step 2 (Optional): Identify customer account through invoice matching** with:
 - **Reference number** - in Step 2 when identitying customer account through invoice matching, the Finance utilities **Customer reference** can be used to find the D365 customer account.
+- **Field format** - option to use part of a bank statement field to find the D365 customer acount. For example using only 'FTI00000453' from bank statement field value 'xx FTI00000453 yy'  
 
 Finance utilities functionality extends **Financial details** in **Step 3: Customer payment journal parameters** with:
 - **Offset company** - ability to offset to a different legal entity (intercompany).
@@ -127,19 +128,25 @@ The following is only applicable to
 > - If the customer had a method of payment in above view, this method of payment would be used in the customer payment journal. The default on the Reconciliation matching rule will only be used where the customer didn't have a method of payment assigned.
 > - Customer reference numbers must be kept unique accross all legal entities. Std code will look in current legal entity first, and then when it couldn't find it, Finance Utilities is able to look in the offset company.
 
-### Duplicate
-
-Modern bank reconciliation has added new button **Duplicate**, which allows users to copy matching rules. Similar to Finance Utilities **Copy matching rule**.
-
-When Financial utilities parameter **Enable modern bank reconciliation extensions** is set to _Yes_, the Finance Utilities button **Copy matching rule** is hidden (will be deprecated in future).
-The additional Finance Utilities fields for the new Modern bank reconciliation actions have been added the std's **Duplicate** button.
-
 ### Field format
 
-Pre-modern bank reconciliation Finance Utilities functionality **Field format** hasn't been added as extension to Modern bank reconciliation. <br> 
+Select the applicable line in Step 2, and select **Field format**. The following options are provided:
+- **No format** - The bank statement field will be used as-is (default).
+- **Fixed field position** - Set **Start position** and **Length**.
+- **Delimited field position** - Set **Delimiter** (default is space) and **Field position**.
+- **Custom format** - Ability to use a [regex](https://regex101.com/) format.
 
-Standard: The Operator **In** in **Step 2: Match open invoices** can be used to find the Customer account, Reference or Invoice within a bank statement field. <br>
-For example, finding invoice 'INV033718' in 'XXX INV033718 YYY'.
+The **Example** and **Value** field is automatically updated based on above selection.
+The user can also paste/type their own example into Example to view the resulted Value from their setup.
+
+Example result for each option:
+
+Option	  	| Setup             | Example <br> Bank statement field's original data	  | Value
+:--       	|:--                |:--                                                  |:--
+**No format**  |                 | xxUS-001xx                      | xxUS-001xx
+**Fixed field position**        | Start position: 2 <br> Length: 6  | xxUS-001xx        | US-001
+**Delimited field position**    | Delimiter:  <br> Field position: 0   | US-001 extra description  | US-001
+**Custom format**               | `\*(.+)\*`     | \**US-001\**           | US-001
 
 ### Default description
 
@@ -153,6 +160,13 @@ This applies to all of the following actions:
 - Generate vendor payment
 - Generate voucher
 - Settle customer invoice
+
+# Duplicate
+
+Modern bank reconciliation has added new button **Duplicate**, which allows users to copy matching rules. Similar to Finance Utilities **Copy matching rule**.
+
+When Financial utilities parameter **Enable modern bank reconciliation extensions** is set to _Yes_, the Finance Utilities button **Copy matching rule** is hidden (will be deprecated in future).
+The additional Finance Utilities fields for the new Modern bank reconciliation actions have been added the std's **Duplicate** button.
 
 
 # Processing
