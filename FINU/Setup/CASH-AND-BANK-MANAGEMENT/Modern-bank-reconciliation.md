@@ -72,7 +72,7 @@ The following standard setup is required on each applicable bank account if cust
 
 Finance utilities extensions to Modern bank reconciliation adds the following functionality to each action that replaces **Mark new transactions**:
 
-#### Ledger
+### Ledger
 
 Action: **Generate voucher** <br>
 Finance utilities functionality extends **Financial details** in **Step 2: Voucher parameters** with:
@@ -82,7 +82,7 @@ Finance utilities functionality extends **Financial details** in **Step 2: Vouch
 - **Sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity. For current legal entity company offsets, std's tax field is utilised.
 - **Item sales tax group** - only enabled for offset type ledger. If an intercompany offset company is selected, our field will provide tax drop-down options from the applicable intercompany legal entity. For current legal entity company offsets, std's tax field is utilised.
 
-#### Bank
+### Bank
 
 Action: **Generate voucher** <br>
 Finance utilities functionality extends **Financial details** in **Step 2: Voucher parameters** with:
@@ -91,14 +91,14 @@ Finance utilities functionality extends **Financial details** in **Step 2: Vouch
 - **Offset account type** - select bank for bank transfers.
 
 
-#### Vendor
+### Vendor
  
 Action: **Generate vendor payment** <br>
 Finance utilities functionality extends **Financial details** in **Step 2: Vendor payment parameters** with:
 
 - **Offset company** - ability to offset to a different legal entity (intercompany).
  
-#### Customer
+### Customer
 
 The following is applicable to both customer actions
 - **Generate customer payment**
@@ -128,7 +128,7 @@ The following is only applicable to
 > - If the customer had a method of payment in above view, this method of payment would be used in the customer payment journal. The default on the Reconciliation matching rule will only be used where the customer didn't have a method of payment assigned.
 > - Customer reference numbers must be kept unique accross all legal entities. Std code will look in current legal entity first, and then when it couldn't find it, Finance Utilities is able to look in the offset company.
 
-### Field format
+#### Field format
 
 Select the applicable line in Step 2, and select **Field format**. The following options are provided:
 - **No format** - The bank statement field will be used as-is (default).
@@ -161,7 +161,7 @@ This applies to all of the following actions:
 - Generate voucher
 - Settle customer invoice
 
-# Duplicate
+### Duplicate
 
 Modern bank reconciliation has added new button **Duplicate**, which allows users to copy matching rules. Similar to Finance Utilities **Copy matching rule**.
 
