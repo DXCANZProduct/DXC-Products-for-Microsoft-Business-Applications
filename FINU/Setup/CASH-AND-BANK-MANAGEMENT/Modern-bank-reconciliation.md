@@ -106,7 +106,7 @@ The following is applicable to both customer actions
 
 #### Step 2
 
-Finance utilities functionality extends **Customer invoice field** in **Step 2 (Optional): Identify customer account through invoice matching** with:
+Finance utilities functionality extends **Customer invoice field** in **Step 2 (Optional): Identify customer account through invoice matching / Match open invoices** with:
 - **Reference number** - in Step 2 when identitying customer account through invoice matching, the Finance utilities **Customer reference** can be used to find the D365 customer account.
 - **Field format** - option to use part of a bank statement field to find the D365 customer acount. For example using only 'FTI00000453' from bank statement field value 'xx FTI00000453 yy'
 
