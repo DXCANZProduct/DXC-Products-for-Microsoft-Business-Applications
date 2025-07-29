@@ -128,7 +128,7 @@ Option	  	| Setup             | Example <br> Bank statement field's original dat
 **No format**  |                 | xxUS-001xx                      | xxUS-001xx
 **Fixed field position**        | Start position: 2 <br> Length: 6  | xxUS-001xx        | US-001
 **Delimited field position**    | Delimiter:  <br> Field position: 0   | US-001 extra description  | US-001
-**Custom format**               | `\*(.+)\*`     | \**US-001\**           | US-001
+**Custom format**               | `\*(.+)\*` <br> (\w+\s*-\s*\d+)    | \**US-001\**  <br> xx FTI-0035345 yy         | US-001 <br> FTI-0035345
 
 > **Important notes for both Customer actions**:
 > When using **Step 2**:
