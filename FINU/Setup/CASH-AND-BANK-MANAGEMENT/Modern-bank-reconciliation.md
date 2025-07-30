@@ -133,10 +133,18 @@ Option	  	| Setup             | Example <br> Bank statement field's original dat
 > **Important notes for both Customer actions**:
 > When using **Step 2**:
 > - An invoice needs to exist for the customer, as std uses CustInvoiceForBankReconciliationView to find the customer.
-> - If the customer had a method of payment in above view, this method of payment would be used in the customer payment journal. The default on the Reconciliation matching rule will only be used where the customer didn't have a method of payment assigned.
+> - If the customer had a method of payment in above view, this method of payment would be used in the customer payment journal. The default on the Reconciliation matching rule will only be used where the customer didn't have a method of payment assigned in the view for the record.
 > - Customer reference numbers must be kept unique accross all legal entities. Std code will look in current legal entity first, and then when it couldn't find it, Finance Utilities is able to look in the offset company.
 
 #### Step 3
+
+Standard functionality: When **Automatic customer account matching** is set to _Yes_ in Step 3's Financial details, std will first try and find the customer account with bank statement field **Related bank account** in the customer's bank account **IBAN** and then **Bank account number** and will then use **Step 2**'s setup if it couldn't find via the customer bank account.
+
+Find customer order: 
+1. Customer bank account's IBAN
+2. Customer bank account's Bank account number
+3. Reconciliation matching rule's Step 2
+
 
 Finance utilities functionality extends **Financial details** in **Step 3: Customer payment journal parameters** with:
 - **Offset company** - ability to offset to a different legal entity (intercompany).
@@ -150,7 +158,8 @@ The following is only applicable to
         -  **Do not post** - generally only used in initial testing. The customer payment journal will only be created (not posted). Once the user has reviewed and manually posted the customer payment journal, refresh the bank reconciliation’s worksheet to bring in the new bank transactions. User has to either use a match with bank statement rule or manually match the applicable bank statement lines with these new bank transactions. When running the reconciliation matching rule in the bank recon, the infolog will provide the journal number created.
         -  **Post** -  Indicates if the created customer payment journal should automatically be posted. The newly posted bank transaction(s) will also automatically be matched to the applicable bank statement lines.
         -  **Post and transfer** - Indicates if the created customer payment journal should automatically be posted. If any errors found (example stopped customer), the error lines will be moved to a new journal. The newly posted bank transaction(s) will also automatically be matched to the applicable bank statement lines.
- 
+
+
 
 ### Default description
 
