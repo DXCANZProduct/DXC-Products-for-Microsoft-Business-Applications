@@ -172,7 +172,7 @@ This applies to all of the following actions:
 - Generate customer payment
 - Generate vendor payment
 - Generate voucher
-- Settle customer invoice
+- Settle customer invoice - std doesn't use default description for this action, added with Finance Utilities
 
 ### Duplicate
 
