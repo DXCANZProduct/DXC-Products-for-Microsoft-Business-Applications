@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-07-25
+ms.date: 2025-08-01
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -107,6 +107,16 @@ Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 Microsoft Dynamics 365 application 	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
+
+#### Build 10.0.43.2025052121
+Release date: 1 August 2025
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+23232		| Cash and bank management	| Bank statement import	| Replaced **DMFParameters::find().SharedFolderPath;** with **System.IO.Path::GetTempPath();** <br> Method depreciated by MS. <br> Issue with importing bank statements using a shared working directory
+
 
 #### Build 10.0.43.202505211
 Release date: 21 May 2025
