@@ -48,9 +48,9 @@ Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | No	          | 10.0.42.202504042
 
 # Current version
-### Release 10.0.42.202504042
+### Release 10.0.43.202508012
 
-DXC Connections 10.0.42 runs on the following Microsoft releases
+DXC Connections 10.0.43 runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                         |
 | :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -58,6 +58,23 @@ DXC Connections 10.0.42 runs on the following Microsoft releases
 | Microsoft Dynamics 365 application | 10.0.43 | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43) |
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 
+
+Build <b>7.0.7279.122 </b>  
+DXCConnections.dll <b>1.0.2025.08013</b>  
+DXCConnectionsAzureLib.dll <b>1.0.2025.08013</b>
+DXCConnectionsSFTPClientLib.dll <b>1.0.2025.08013</b>
+
+Release date: 1 August 2025
+
+<ins>New features</ins>
+
+| Number | Name                                                              | Description                                                                                                                                                     |
+| :----- | :---------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|22980|Upgrade SFTP library to latest 2025.0.0| Upgraded SSH.NET to latest, 2025.0.0|
+
+# Previous Version(s)
+
+### Release 10.0.42.202504042
 
 Build <b>7.0.7279.122 </b>  
 DXCConnections.dll <b>1.0.2025.04046</b>  
@@ -73,8 +90,6 @@ Release date: 4 April 2025
 | 20515  | Added support for SFTP | SFTP connection has been migrated for DXC Connection to enhance re-usability across multiple products. This is currently used in Finance Utilities and Electronic Data Interchange (EDI) |
 | 21690 | Added ability to use container level shared access signature URI| Azure blob connection has been modified to allow container level SAS URI to be utlized for authentication. This is useful when storage account access key is disabled |
 |21735|Upgraded SFTP to latest| Upgraded to version 2024.2.0|
-
-# Previous Version(s)
 
 ### Release 10.0.40.2024120441
 

@@ -105,15 +105,27 @@ Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dy
 
 ### DXC License Manager Web App
 
-#### **Release 20240605.2**
+#### **Release 20250730.1**
 
-Release date: 09 December 2024
+Release date: 30 July 2025
 
 <ins>New features</ins>
 
 | Number | Functionality                                                | Description                                                                                     |
 | :----- | :----------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
-| 17553  | Update license management service to new Microsoft Azure Org | License management service has been successfully migrated to a new Microsoft Azure Organization |
+| 18377  | Customer Products - Additional columns added to view | All fields available in the Customer Products View are now also accessible under View/Update. Additionally, WBS field has been added to the Customer Products View for enhanced visibility and tracking. |
+|23027| New License type - Managed services | Added a new License Type dropdown option: Managed Services. |
+
+<ins>Bug fixes</ins>
+
+| Number | Functionality                                                | Description                                                                                     |
+| :----- | :----------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
+| 20123 | Customer environment - Support "duplicate" serial | Restored the ability to add multiple tenants for the same serial number in customer environments.
+This supports scenarios where companies use a temporary, cost-effective tenant (e.g., onmicrosoft.com) prior to go-live, and later transition to their primary domain (e.g., .com).
+ |
+| 23075| Web app - License expiry | Fixed issues reported in the License Expiry Report for the upcoming three-month period.
+The report now accurately reflects licenses approaching expiration. |
+
 
 ## Microsoft Power Apps
 
@@ -407,6 +419,18 @@ Release date: 31 March 2023
 ## React Web App
 
 ### DXC License Manager Web App
+
+### DXC License Manager Web App
+
+#### **Release 20240605.2**
+
+Release date: 09 December 2024
+
+<ins>New features</ins>
+
+| Number | Functionality                                                | Description                                                                                     |
+| :----- | :----------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
+| 17553  | Update license management service to new Microsoft Azure Org | License management service has been successfully migrated to a new Microsoft Azure Organization |
 
 #### **Release 20240605.1**
 
