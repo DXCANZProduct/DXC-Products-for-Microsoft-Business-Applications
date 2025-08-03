@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer purchase order acknowledgement
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-05-09
+ms.date: 2025-08-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -248,7 +248,7 @@ Ensure the following setup are completed and assigned to applicable Trading part
 - [POA codes](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md#setup-poa-responde-codes) that should be automatically sent are:
     -  **Allow auto trigger** set to _Yes_
     -  **Allow auto send** set to _Yes_
- - Customer purchase order acknowledgement's Setting profile has **Lock order** set to _Yes_
+ - Customer purchase order acknowledgement's Setting profile has **POA required with order hold** or **POA required without order hold** set to _Yes_.
 
 Other required setup:
  - [EDI parameters](../../CORE/Setup/EDI-parameters.md) **Hold codes** are setup (and different hold codes are used for each):
