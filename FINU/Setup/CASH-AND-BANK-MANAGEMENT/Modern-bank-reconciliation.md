@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-07-30
+ms.date: 2025-08-07
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,6 +45,7 @@ Summary of Finance Utilities extensions to Modern bank reconciliation:
     - Ability to use **Customer reference** to find the Customer account.
     - One customer payment journal for all matched bank statement lines (only 'Generate customer payment').
     - Posting options (only 'Generate customer payment').
+    - Field format - enhanced option in Reconciliation matching rule for using part of a bank statement field to find the invoice / customer.
  - **Correction amounts** - Ability to enter correction amounts at time of matching Bank statement transactions to Bank transactions.
 
 ## Migration
