@@ -50,7 +50,7 @@ Release notes for other models included in the product:
 
 # Current version
 
-### Release 10.0.43.202507081
+### Release  10.0.43.20250730
 
 DXC Smart Business Form Email Manager 10.0.43 runs on the following Microsoft releases
 
@@ -62,14 +62,17 @@ Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dy
 
 
 
-#### Build 10.0.43.202507081 
+#### Build 10.0.43.202507302
 
 <ins>Bug fixes</ins>
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-23149	    | Smart Send has not been configured for this report format.| When attempting to use Electronic Reporting (ER)Format for Sales Packing Slip or Project quotation,  previously an error would be issued advising that the report format is not supported 
-21302	    | Smart Send Feature Management Key| Updates to the Feature management config keys used by Smart Send 
+23220|Smart Send button for Vendor payment journal does not distribute ER format correctly|updated logic  for both Vendor and Customer payment advice to automatically create ER Named destination when the Smart send button is triggered 
+23479|Smart Send intermittently issues an error for Delivery Note|Smart send  was previously utilising the Delivery note/Packing Slip  version to obtain the contact Email address.. This has been updated and will now reference the original Packing slip due to the uncommon circumstance that the Packing Slip version is corrected, which alters the matching record ID 
+23503|Smart send issues Email to the Batch Email Sending queue with blank recipient |When utilising an ER format report and no matching  email address was found, Smart Send would previously issue the email to the sending queue with no email recipient.  Now a warning message is displayed, and the email is not compiled
+
+
 
 
 
@@ -82,6 +85,16 @@ Enable the following feature in D365 Feature management:
 If the above feature is not visible, press **Check for updates** to refresh the feature management list.
 
 # Previous version(s)
+
+#### Build 10.0.43.202507081 
+### Release 10.0.43.202507081
+<ins>Bug fixes</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+23149	    | Smart Send has not been configured for this report format.| When attempting to use Electronic Reporting (ER)Format for Sales Packing Slip or Project quotation,  previously an error would be issued advising that the report format is not supported 
+21302	    | Smart Send Feature Management Key| Updates to the Feature management config keys used by Smart Send 
+
 
 #### Build 10.0.42.202503041  
 ### Release 10.0.42.20250304
