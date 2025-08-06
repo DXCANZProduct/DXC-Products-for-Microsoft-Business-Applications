@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-**My report is not supported, can I still use Smart Send?**
+**My report is not supported. Can I still use Smart Send?**
 
 While out-of-the-box functionality is for the business forms listed [here](Overview), the solution can be extended to further business forms or reports. The technical guide describes how the DXC Smart Business Form Email Manager solution can be extended by adding a custom report.
 
@@ -8,7 +8,7 @@ While out-of-the-box functionality is for the business forms listed [here](Overv
 
 First, you'll need to set up each version of the report design in Smart Send Email parameters. For example, you may have two report designs for the Sales Invoice *SalesInvoice.Report* and *SalesInvoiceModern.Report*. Refer to [Smart send parameters](CONFIGURATION/Parameters.md).
 
-Then using Print Management conditions set a query with a set of criteria to use the different report design. When the report is run using Print Management the Smart Send button will choose the report design used per the Print Management setup. Refer to [Print management conditions](PROCESSES/Email-processing.md).
+Then, using Print Management conditions, set a query with a set of criteria to use the different report design. When the report is run using Print Management the Smart Send button will choose the report design used per the Print Management setup. Refer to [Print management conditions](PROCESSES/Email-processing.md).
 
 **How can I use a different email template for different customers/vendors?**
 
@@ -26,7 +26,7 @@ Smart Send uses the primary table and the email template to look for additional 
 
 Smart Send also includes an extension hook to enable a customer to create an extension class to attach a document handling attached file from another source, for example, Purchase/Sales order lines. Refer to the Smart Send [technical guide](TECHNICAL-GUIDE/Technical-guide.md).
 
-**How can I use a token placeholder which is not on the primary table?**
+**How can I use a token placeholder that is not on the primary table?**
 
 Smart Send supports dynamic placeholder tags using the table and field names. Similarly, the display method can also be used with the format %TableName.MethodName#%. 
 If the field you wish to use is not on the primary table, you can add a display method to the table to return the data from another source. Refer to [Dynamic Placeholder Tokens](CONFIGURATION/Email_placeholder.md).
@@ -34,29 +34,29 @@ If the field you wish to use is not on the primary table, you can add a display 
 **Why are the token placeholders showing as the token as opposed to the value e.g. %PurchId%?**
 
 The main reasons this would occur:
-* The token placeholder is invalid. The syntax used on the token placeholder is not per the fixed token list for the report or the dynamic token is in the incorrect notation e.g. %TableName.FieldName% or %TableName.MethodName#%. Refer to [Dynamic Placeholder Tokens](CONFIGURATION/Email_placeholder.md).
-* HTML is not created using an HTML editor. Customers who have not used an HTML editor, for example creating the HTML using MS Word experience problems with the token placeholders.
+* The token placeholder is invalid. The syntax used on the token placeholder is not per the fixed token list for the report, or the dynamic token is in the incorrect notation e.g. %TableName.FieldName% or %TableName.MethodName#%. Refer to [Dynamic Placeholder Tokens](CONFIGURATION/Email_placeholder.md).
+* HTML is not created using an HTML editor. Customers who have not used an HTML editor, for example, creating the HTML using MS Word, experience problems with the token placeholders.
 
 **Can I use images in the email body?**
 
-Yes. Although this feature is standard Dynamics 365 email functionality not Smart Send specific. However, to achieve this the image must be converted into html.
+Yes. Although this feature is standard Dynamics 365 email functionality, not Smart Send specific. However, to achieve this, the image must be converted into html.
 
 **Why are the token placeholders used in the filename not the same as the Dynamics 365 field?**
 
-Placeholder tokens can contain invalid characters being inserted in a filename and therefore Smart Send is unable to create the file. A standard function "GetInvalidFileNameChars" is used to find and replace invalid characters with spaces.
+Placeholder tokens can contain invalid characters that are inserted in a filename, and therefore, Smart Send is unable to create the file. A standard function "GetInvalidFileNameChars" is used to find and replace invalid characters with spaces.
 
 **Can I use Smart Send with the Email Body feature in Print management?**
 
-When sending a document via email, a basic email body can be included thanks to the *Document Report email body* functionality, which was enabled by default starting with version 10.0.39.  This is a different feature from Smart Send that creates dynamic, transaction-based email templates using the Organization email templates. 
+When sending a document via email, a basic email body can be included thanks to the *Document Report email body* functionality, which was enabled by default starting with version 10.0.39.  This is a different feature from Smart Send that creates dynamic, transaction-based email templates using the Organisation email templates. 
 
 **How do I send my confirmation to the contact on my order instead of the main contact on the account ?**
 From the Recipient drop-down menu in Email Parameters, simply select "Specific" for the nominated report.  This will use the email address specified on the sales order header or purchase order header.
 
 **My company logo stored in FinOps will not render in emails anymore.**
-Many mail clients such as Outlook and most webmail services do not support the rendering of Base64 images anymore.  For this reason, we recommend moving away from Base64 images and pulling from an online link, such as Blob storage.  An Example could be in the below format<br>
+Many mail clients, such as Outlook and most webmail services, do not support the rendering of Base64 images anymore.  For this reason, we recommend moving away from Base64 images and pulling from an online link, such as Blob storage.  An Example could be in the format below <br>
 `<img src="https://yourblobstorageaccount.blob.core.windows.net/imagelocation.png" width="200" height="200" alt="logoImage"/`
 
-If you are using Blob storage you can obtain the URL of the image by selecting "properties"
+If you are using Blob storage, you can obtain the URL of the image by selecting "properties"
 ![Blob_Storage_properties](IMAGES/Blob_Storage_properties.png)
 
 and paste the value in the *URL* field into the quotation marks after *img src=* in the provided example above and this will create your link. 
@@ -65,14 +65,14 @@ and paste the value in the *URL* field into the quotation marks after *img src=*
 
 ### Blob Storage Errors
 
-**When sending my file via Smart Send I get "Message: The specified blob already exists."**
+**When sending my file via Smart Send, I get "Message: The specified blob already exists."**
 
 This message indicates that the file name already exists in your blob storage location.  If you have the Overwrite radio button in your email parameters set to "No",  files are not automatically overwritten when saving to blob storage and an error is thrown to indicate as such.  
 
 
 ### Dependency and Security Information
 
-Data stored securely inside Finance and operations
+Data stored securely inside Finance and Operations
 
 DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Operations (Smart Send) makes use of the existing email configuration influenced by a combination of administrator configuration, user configuration, and user choices.
 
