@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-07-25
+ms.date: 2025-08-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -71,6 +71,7 @@ Number	| Name		 | Description
 :--	|:--		 |:--
 22897	| X12		| Resolve Pull request (PR) comments for 22720 and 22897
 21307	| X12		| Modified data entities to support X12 data entity imports. [User guide](CORE/Other/Data-entities.md#document-types)
+22049	| X12		| New tab called **Preview** on **Inbound files** and **Outbound files** provides a user-friendly preview for X12 formats <br> ![X12 preview](RELEASE-NOTES-IMAGES/20250831_1.png "X12 preview")
 
 **Customer module**	
 
@@ -81,6 +82,13 @@ Number	| Name		 | Description
 
 
 <ins>Bug fixes</ins>
+
+**Customer module**	
+
+Number	| Name		 | Description
+:--	|:--		  	|:--
+22622	| Customer purchase order acknowledgement	| Where 'POA pending hold code' not setup in 'EDI parameters' and POA document settings 'POA required with order hold' set to No, the sales order was incorrectly created with **POA status** = Pending
+
 
 **Vendor module**	
 
