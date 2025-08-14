@@ -87,7 +87,7 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--	|:--		  	|:--
-22622	| Customer purchase order acknowledgement	| Where 'POA pending hold code' was not setup in 'EDI parameters' and POA document settings 'POA required with order hold' was set to No, the sales order was incorrectly created with **POA status** = Pending. <br> 'POA status' will now be created as blank for this scenario.
+22622	| Customer purchase order acknowledgement	| Where 'POA pending hold code' was not setup in 'EDI parameters' and POA document settings 'POA required with order hold' was set to No, the sales order was incorrectly created with 'POA status' = Pending. <br> 'POA status' will now be created as blank for this scenario.
 
 
 **Vendor module**	
