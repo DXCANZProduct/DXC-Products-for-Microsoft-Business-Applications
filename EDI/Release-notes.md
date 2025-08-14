@@ -98,6 +98,13 @@ Number	| Name		 | Description
 22894	| Vendor purchase order change	| Modified price comparison calculations for determining 'Line change type'. Large price units were causing issues in the comparison.
 
 
+**3PL module**	
+
+Number	| Name		 | Description
+:--		|:--		 |:--
+22950	| Transfer order - Picking list	| Issue in SAB_EDIOutboundStagingWriter_Picklist - there is no implementation for type transfer order only for sales order. Similar to SAB_EDISalesOrderHistoryOutboundProcessorInterface created interface for transfer order and any other related components. Implemented this class in SAB_EDIOutboundStagingWriter_Picklist.
+
+
 # Current version
 
 ### Release 10.0.43.20250519
