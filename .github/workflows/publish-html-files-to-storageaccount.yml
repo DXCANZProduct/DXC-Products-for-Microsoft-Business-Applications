@@ -28,7 +28,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@master
         with:
-          name: DXCProductHelpJSONContent
+          name: DXCProductHelpHTMLContent
           path: build\dxcproducthelp\DXCDocFX\DXCDocFX\_site\articles
       - uses: bacongobbler/azure-blob-storage-upload@main
         with:
