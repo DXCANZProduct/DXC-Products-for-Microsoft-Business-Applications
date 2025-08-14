@@ -1,4 +1,4 @@
-name: Test Product Help Content deploy
+name: Publish HTML to Storage Account
 
 on:
   workflow_dispatch
@@ -22,40 +22,17 @@ jobs:
         path: build\dxcproducthelp\DXCDocFX\DXCDocFX
         name: DXCProductHelpHTMLContent
 
-  generate-json-files:
-    needs: [generate-html-files]
-    runs-on: windows-2025
-    steps:
-      - uses: actions/checkout@master
-      - uses: actions/download-artifact@master
-        with:
-          name: DXCProductHelpHTMLContent
-          path: build\dxcproducthelp\DXCDocFX\DXCDocFX
-      - uses: nuget/setup-nuget@v1
-      - name: Restore nuget packages
-        run: nuget restore build\dxcproducthelp\ConvertHtmlToJson\ConvertHtmlToJson.sln
-      - uses: microsoft/setup-msbuild@v1.1.3
-      - name: Compile ConvertHtmlToJson.csproj
-        run: msbuild build\dxcproducthelp\ConvertHtmlToJson\ConvertHtmlToJson\ConvertHtmlToJson.csproj -t:rebuild -verbosity:diag -property:Configuration=Debug
-      - name: Convert Html to Json
-        shell: pwsh
-        run: build\dxcproducthelp\ConvertHtmlToJson\ConvertHtmlToJson\bin\Debug\ConvertHtmlToJson.exe --h build\dxcproducthelp\DXCDocFX\DXCDocFX\_site\articles -j build\dxcproducthelp\DXCDocFX\DXCDocFX\_site\articles\json
-      - uses: actions/upload-artifact@master
-        with:
-          path: build\dxcproducthelp\DXCDocFX\DXCDocFX\_site\articles\json
-          name: DXCProductHelpJSONContent
-
   publish-to-storage-account:
-    needs: [generate-html-files, generate-json-files]
+    needs: [generate-html-files]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@master
         with:
           name: DXCProductHelpJSONContent
-          path: build\dxcproducthelp\DXCDocFX\DXCDocFX\_site\articles\json
+          path: build\dxcproducthelp\DXCDocFX\DXCDocFX\_site\articles
       - uses: bacongobbler/azure-blob-storage-upload@main
         with:
-          source_dir: 'build\dxcproducthelp\DXCDocFX\DXCDocFX\_site\articles\json'
+          source_dir: 'build\dxcproducthelp\DXCDocFX\DXCDocFX\_site\articles'
           container_name: ${{ secrets.TESTDXCPRODUCTHELPBLOBSTORAGECONTAINERNAME }}
           connection_string: ${{ secrets.TESTDXCPRODUCTHELPBLOBSTORAGECONNECTIONSTRING }}
           name: Upload to blob storage
