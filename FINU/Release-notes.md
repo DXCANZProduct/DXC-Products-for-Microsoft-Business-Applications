@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-01
+ms.date: 2025-08-14
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -95,6 +95,7 @@ Number	  	| Module	| Functionality	  	| Description
 22938		| Organisation administration	| Electronic reporting export connection	| Missing security configuration on 'Electronic reporting export connection'. 
 23048		| Cash and bank management	| Mark as reconciled in batch	| Where the bank statements were set to automatically post and the user selected 'Mark as reconciled in batch' (instead of 'Mark as reconciled'), the bank statement wasn't automatically posted.
 23078		| Cash and bank management	| Financial dimensions on mark new transactions	| Issue in Financial dimensions for mark new transactions for currently legal entity offsets. The offset's financial dimension was also used on the bank account posting.
+23211		| Various	| ABN validation	| Reviewed **GST registered = C** ABN records, incorrectly changed to Reviewed = No, after running update with no changes to the record.
 
 
 # Current version
