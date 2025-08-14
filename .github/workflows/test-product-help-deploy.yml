@@ -24,7 +24,7 @@ jobs:
 
   generate-json-files:
     needs: [generate-html-files]
-    runs-on: windows-2019
+    runs-on: windows-2025
     steps:
       - uses: actions/checkout@master
       - uses: actions/download-artifact@master
