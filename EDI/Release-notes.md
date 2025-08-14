@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-14
+ms.date: 2025-08-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -88,6 +88,7 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--
 22622	| Customer purchase order acknowledgement	| Where 'POA pending hold code' was not setup in 'EDI parameters' and POA document settings 'POA required with order hold' was set to No, the sales order was incorrectly created with 'POA status' = Pending. <br> 'POA status' will now be created as blank for this scenario.
+23249	| Customer purchase order	| Where using 'Enable store code identification' on the customer trading partner (i.e. instead of Customer GLN) and the store code couldn't be found, the file will now rather error on inbound-to-staging step. This allows users to create the store code against the applicable trading partner and reprocess the inbound file and create the staging record against the correct trading partner.
 
 
 **Vendor module**	
