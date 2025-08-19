@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-07
+ms.date: 2025-08-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -68,6 +68,8 @@ The following standard setup is required on each applicable bank account if cust
 
 - Customer payment journal
 - Vendor payment journal
+
+> Note: Std doesn't allow journal names where **Summarise amounts in bank account** is _Yes_.
 
 ## Bank reconciliation matching rules
 
