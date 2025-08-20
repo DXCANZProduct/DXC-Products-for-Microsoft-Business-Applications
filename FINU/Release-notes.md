@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-19
+ms.date: 2025-08-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,9 +42,10 @@ Product version: 10.0.44 <br> App build: 10.0.2263.11	  | Only build errors 2278
 
 #### Features not yet supported
 
-Feature	| 10.0.44 Feature state
+Feature	| 10.0.45 Feature state
 :--       	|:--		
 **Modern bank reconciliation** | On by default, needs to be manually disabled. <br> Planned release end Aug 2025
+**Automatic vendor account matching**	| New from 10.0.45 and not supported yet. Don't enable.
 
 Release notes for other models included in product:
 - [DXC Connections](../CONNECTIONS/Release-notes.md)
