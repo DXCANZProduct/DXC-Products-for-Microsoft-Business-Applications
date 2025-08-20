@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Bank statement reconciliation processing - Bank reconciliation worksheet 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-07-25
+ms.date: 2025-08-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -74,6 +74,22 @@ Finance Utilities adds:
 - **Offset account type** - defaults to ledger for offsetting to an expense or income ledger account. Can also select **Bank** for bank transfers.
 - **Offset account number** - drop-down options determined by **Offset company** and **Offset account type**.
 - **Sales tax** - only enabled for Offset account type **Ledger**. Drop-down options determined by **Offset company**.
+
+### Correction amounts
+
+Ability to manually enter a Correction amount on the Bank transaction where the manual matching Bank statement record amount is different. <br>
+The Correction amount will be posted to the **Main account** associated with the correction line’s Bank transaction type as found on **Cash and bank management > Setup > Bank transaction types**.
+
+Applies to where the following Finance utilities parameter settings are _Yes_: 
+- Ability to enter reconciliation balancing entry
+- Enable modern bank reconciliation extensions
+
+Applies to the following Document types:
+- Others
+- BankClearing
+- CustPayment
+- VendPayment
+
 
 ## Matched transactions
 
