@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-19
+ms.date: 2025-08-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -167,7 +167,7 @@ The following is only applicable to
 ### Default description
 
 1. Enable feature **Enable default descriptions for advanced bank reconciliation**
-2. Setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation) for **Bank - reconciliation worksheet**. <br> 
+2. Setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation) for **Bank - reconciliation worksheet** for each applicable **Language**. <br> 
 
 Finance utilities will use the same default description on the intercompany transaction.
 
