@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-06-03
+ms.date: 2025-08-22
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,7 +39,8 @@ Product version: 10.0.40 <br> App build: 10.0.1935.5	  |  • No functional issu
 Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No	          | 10.0.38.202408131
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.40.202409121
 Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40.202409121
-Product version: 10.0.44 <br> App build: 10.0.2263.11	  | No		  | 10.0.40.202409121
+Product version: 10.0.44 <br> App build: 10.0.2263.11	  | No		 	  | 10.0.40.202409121
+Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No	          | 10.0.40.202409121
 
 Release notes for other models included in product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
@@ -58,6 +59,7 @@ Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dyn
 Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
+Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 
 
 #### Build 10.0.40.202409121
