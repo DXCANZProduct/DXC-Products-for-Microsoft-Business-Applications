@@ -64,11 +64,17 @@ Release notes for other models included in product:
 
 <ins>New features</ins>
 
+**Core module**	- Applies to all modules	
+
+Number	| Name		 | Description
+:--		|:--		 |:--
+23116	| Sales order <br> Purchase order	| New extra button called **EDI history** added to EDI core module. Enabled where the selected Sales or Purchase order has EDI staging history records. This was previously only available on the EDI tab on the ActionPane, which belongs to Customer and Vendor EDI modules. Sales orders and Purchase orders could also have history for 3PL and Freight forwarder EDI documents. <br> **EDI history** button added to: <br> • **Sales order** - Sales order tab on the ActionPane <br> • **Purchase order** - Purchase order tab on the ActionPane
+
 
 **Standard formats module**	
 
 Number	| Name		 | Description
-:--	|:--		 |:--
+:--		|:--		 |:--
 22897	| X12		| Resolve Pull request (PR) comments for 22720 and 22897
 21307	| X12		| Modified data entities to support X12 data entity imports. [User guide](CORE/Other/Data-entities.md#document-types)
 22049	| X12		| New tab called **Preview** on **Inbound files** and **Outbound files** provides a user-friendly preview for X12 formats <br> ![X12 preview](RELEASE-NOTES-IMAGES/20250831_1.png "X12 preview")
@@ -76,7 +82,7 @@ Number	| Name		 | Description
 **Customer module**	
 
 Number	| Name		 | Description
-:--	|:--		  	|:--
+:--		|:--		  	|:--
 21322 <br> 23030 | Project sales invoice	| New outbound customer document called **Project sales invoice**. Triggered by posting a Project's Invoice proposal for Sales orders where the customer is setup to receive this document. <br> • [Setting profile](CUSTOMER/SETUP/SETTING-PROFILES/Project-sales-invoice.md) <br> • [Processing](CUSTOMER/DOCUMENTS/Project-sales-invoice.md)
 22309	| Customer purchase order acknowledgement	| New **Close POA** button available on Sales order (EDI tab) and EDI Sales order processing workspace. Enabled where the Sales order has been fully delivered or invoiced and the 'POA status' is still 'Pending' or 'In progress'. Using this button changes the POA status to 'Cancelled'.
 
@@ -86,7 +92,7 @@ Number	| Name		 | Description
 **Customer module**	
 
 Number	| Name		 | Description
-:--	|:--		  	|:--
+:--		|:--		  	|:--
 22622	| Customer purchase order acknowledgement	| Where 'POA pending hold code' was not setup in 'EDI parameters' and POA document settings 'POA required with order hold' was set to No, the sales order was incorrectly created with 'POA status' = Pending. <br> 'POA status' will now be created as blank for this scenario.
 23249	| Customer purchase order	| Where using 'Enable store code identification' on the customer trading partner (i.e. instead of Customer GLN) and the store code couldn't be found, the file will now rather error on inbound-to-staging step. This allows users to create the store code against the applicable trading partner and reprocess the inbound file and create the staging record against the correct trading partner.
 
@@ -94,7 +100,7 @@ Number	| Name		 | Description
 **Vendor module**	
 
 Number	| Name		 | Description
-:--	|:--		  	|:--	
+:--		|:--		  	|:--	
 22894	| Vendor purchase order change	| Modified price comparison calculations for determining 'Line change type'. Large price units were causing issues in the comparison.
 
 
