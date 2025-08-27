@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-22
+ms.date: 2025-08-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -78,7 +78,7 @@ Number	| Name		 | Description
 Number	| Name		 | Description
 :--	|:--		  	|:--
 21322 <br> 23030 | Project sales invoice	| New outbound customer document called **Project sales invoice**. Triggered by posting a Project's Invoice proposal for Sales orders where the customer is setup to receive this document. <br> • [Setting profile](CUSTOMER/SETUP/SETTING-PROFILES/Project-sales-invoice.md) <br> • [Processing](CUSTOMER/DOCUMENTS/Project-sales-invoice.md)
-
+22309	| Customer purchase order acknowledgement	| New **Close POA** button available on Sales order (EDI tab) and EDI Sales order processing workspace. Enabled where the Sales order has been fully delivered or invoiced and the 'POA status' is still 'Pending' or 'In progress'. Using this button changes the POA status to 'Cancelled'.
 
 
 <ins>Bug fixes</ins>
