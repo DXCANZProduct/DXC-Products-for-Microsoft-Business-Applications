@@ -194,7 +194,7 @@ The following EDI fields have been added to the Sales order's Lines and is avail
 **Order line change type**  | If the order line was added or updated by a customer purchase order change, the [Order line change type](../SETUP/CUSTOMER-SETUP/Order-line-change-type-group.md#setup-order-line-change-type-group) will be displayed. Some examples: <br> • **Add additional item** - The line has been added by a change <br> • **Price change** - The sales line's unit price has been updated by a change <br> • **Delete items** - The sales line's deliver remainder has been cancelled by a change  | Change
 **Comments**                | The comments from the EDI order line is shown here | Original
 
-### POA resonse tab
+### POA response tab
 The following EDI fields have been added to the Sales order's Lines and is available on the **POA resonse** tab. <br>
 After selecting the applicable sales order, the following details available are: 
 - Customer - Customer purchase order values
