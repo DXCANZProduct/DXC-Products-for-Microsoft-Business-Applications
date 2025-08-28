@@ -68,7 +68,7 @@ Release notes for other models included in product:
 
 Number	| Name		 | Description
 :--		|:--		 |:--
-23116	| Sales order <br> Purchase order	| New extra button called **EDI history** added to EDI core module. Enabled where the selected Sales or Purchase order has EDI staging history records. This was previously only available on the EDI tab on the ActionPane, which belongs to Customer and Vendor EDI modules. Sales orders and Purchase orders could also have history for 3PL and Freight forwarder EDI documents. <br> **EDI history** button added to: <br> • **Sales order** - Sales order tab on the ActionPane <br> • **Purchase order** - Purchase order tab on the ActionPane
+23116	| Sales order <br> Purchase order	| New extra button called **EDI history** added to EDI core module. Enabled where the selected Sales or Purchase order has EDI staging history records. This was previously only available on the EDI tab on the ActionPane, which belongs to Customer and Vendor EDI modules. Sales orders and Purchase orders could also have history for 3PL and Freight forwarder EDI documents. <br> **EDI history** button added to: <br> • **Sales order** - Sales order tab on the Action Pane <br> • **Purchase order** - Purchase order tab on the Action Pane
 
 
 **Standard formats module**	
