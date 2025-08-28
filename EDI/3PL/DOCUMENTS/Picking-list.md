@@ -188,7 +188,9 @@ The following EDI Line staging fields are available on the lines page.
 **Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](..SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) | Pick route line > Inventory status
 
 ### EDI history
-All the EDI staging records applicable to the Sales order and Transfer order can be viewed via the **History** button.
+Where history logging is enabled, view the applicable EDI staging record(s) via:
+- **Sales order** - **EDI history** available on the Sales order tab on the Action Pane
+- **Transfer order** - **History** available on the Transfer order tab on the Action Pane
 
 **Field**			| **Description**
 :--				|:--
