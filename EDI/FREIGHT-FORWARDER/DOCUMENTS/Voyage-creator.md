@@ -3,9 +3,9 @@
 
 title: EDI Freight forwarder
 description: EDI Freight forwarder Documents - Voyage creator
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-03-15
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-08-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form: Action:SAB_EDIStagingFormRun_FFLCVoyageCreator, SAB_EDIFFLCShipPortTableMapping, SAB_EDIFFLCVendDlvModeMapping, SAB_EDIFFLCCustomsBrokerMapping, SAB_EDIFFLCShipContainerTypeMapping, SAB_EDIFFLCShipMeasurementUnitMapping 
 audience: Application User
 # ms.devlang:
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm:
 ms.custom: 
 ms.search.region: IconEDIFreightForwarderDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:  2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -265,4 +265,16 @@ The following EDI Line fields are available on the lines page. <br>
 **Shipment estimated delivery date**    | Estimated delivery date	                                    | Voyage > Estimated delivery date <br> Container > Estimated delivery date - if **Container estimated delivery date** blank
 **Container estimated delivery date**	| Estimated delivery date for container. <br> If blank, **Shipment estimated delivery date** will be used	| Container > Estimated delivery date
 **Shipping company seal number**    | Container’s shipping company seal number	                        | Container > Shipping company seal number
+
+### EDI history
+Where history logging is enabled, view the applicable EDI staging record(s) via:
+- **Voyage** - **History** available on the Manage tab on the Action Pane
+
+**Field**			        | **Description**
+:--				            |:--
+**EDI Document type**		| EDI document type of the staging record
+**EDI number**			    | EDI number and link to the staging record
+**Reference**			    | Additional information for the staging record
+**Created date and time**	| Created date and time of the EDI staging record
+
 
