@@ -3,9 +3,9 @@
 
 title: EDI 3PL
 description: EDI 3PL Documents - Shipment receipt - Return order
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-05-01
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-08-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  SAB_EDI3PLDispositionCodeMapping, SAB_EDI3PLWHSInventStatusMapping, Action:SAB_EDIStagingFormRun_StockTransferReceipt_RMA 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: IconEDI3PLDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -218,3 +218,13 @@ The following EDI Line fields are available on the lines page. <br>
 **Serial number**           | Tracking dimensions – Serial number	                                    | • Arrival journal line > Serial number <br> • Packing slip journal line > Serial number
 **Inventory status**        | Storage dimensions – Inventory status. Mapped value for [Inventory status](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md)  | Used for validation
 
+### EDI history
+Where history logging is enabled, view the applicable EDI staging record(s) via:
+- **Return order** - **History** available on the Return order tab on the Action Pane
+
+**Field**			        | **Description**
+:--				            |:--
+**EDI Document type**		| EDI document type of the staging record
+**EDI number**			    | EDI number and link to the staging record
+**Reference**			    | Additional information for the staging record
+**Created date and time**	| Created date and time of the EDI staging record
