@@ -164,7 +164,7 @@ The following EDI Line staging fields are available on the lines page.
 
 ### EDI history
 Where history logging is enabled, view the applicable EDI staging record(s) via:
-- **Purchase order** - **EDI history** available on the Purchase order tab on the Action Pane
+- **Voyage** - **History** available on the Manage tab on the Action Pane
 
 **Field**			        | **Description**
 :--				            |:--
