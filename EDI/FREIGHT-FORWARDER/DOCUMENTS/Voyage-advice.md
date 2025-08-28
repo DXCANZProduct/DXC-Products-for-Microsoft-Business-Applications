@@ -5,7 +5,7 @@ title: EDI Freight forwarder
 description: EDI Freight forwarder Documents - Voyage advice
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-27
+ms.date: 2025-08-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -167,4 +167,15 @@ The following EDI Line fields are available on the lines page. <br>
 **State of origin**         | Item's State of origin
 **Overdelivery**            | Allowed over delivery % on the purchase order line
 **Unit price**              | Unit price for the item on the purchase order line
+
+### EDI history
+Where history logging is enabled, view the applicable EDI staging record(s) via:
+- **Purchase order** - **EDI history** available on the Purchase order tab on the Action Pane
+
+**Field**			        | **Description**
+:--				            |:--
+**EDI Document type**		| EDI document type of the staging record
+**EDI number**			    | EDI number and link to the staging record
+**Reference**			    | Additional information for the staging record
+**Created date and time**	| Created date and time of the EDI staging record
 
