@@ -44,7 +44,6 @@ Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No			 | DXC Finance Ut
 
 Feature	| 10.0.45 Feature state
 :--       	|:--		
-**Modern bank reconciliation** | On by default, needs to be manually disabled. <br> Planned release end Aug 2025
 **Automatic vendor account matching**	| New from 10.0.45 and not supported yet. Don't enable.
 
 Release notes for other models included in product:
