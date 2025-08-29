@@ -5,7 +5,7 @@ title: EDI
 description: EDI - Roadmap
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-05-16
+ms.date: 2025-08-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,6 @@ This page describes the features planned for future releases and planned release
 
 ## Release schedule
 
-- August 2025
 - November 2025
 - March 2026
 
@@ -43,7 +42,6 @@ This page describes the features planned for future releases and planned release
 
 
 #### Customer module
-- Project sales invoice outbound document
 - Approved customer list (10.0.44 preview feature)
 
 #### 3PL module
