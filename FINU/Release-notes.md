@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-22
+ms.date: 2025-08-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -73,11 +73,22 @@ Release notes for other models included in product:
 			• Credential type: Key Vault <br>
 	 		• Connection string: Secret setup in step 3
 
-# Next version
+# Current version
 
-### Release 10.0.43.202508TBD
+### Release 10.0.43.20250829
 
-Planned release date: End Aug 2025
+DXC Finance Utilities 10.0.43 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
+Microsoft Dynamics 365 application 	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
+Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
+
+
+#### Build 10.0.43.202508291
+Release date: 29 August 2025
+
 
 <ins>New features</ins>
 
@@ -102,18 +113,11 @@ Number	  	| Module	| Functionality	  	| Description
 23211		| Various	| ABN validation	| Reviewed **GST registered = C** ABN records, incorrectly changed to Reviewed = No, after running update with no changes to the record.
 
 
-# Current version
+# Previous version(s)
+
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.43.20250521
-
-DXC Finance Utilities 10.0.43 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
-Microsoft Dynamics 365 application 	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
-Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
-
 
 #### Build 10.0.43.2025052121
 Release date: 1 August 2025
@@ -142,11 +146,6 @@ Number	  	| Module	| Functionality	  	| Description
 22874		| Accounts payable	| Sundry vendor payment proposal	| When overriding fields on payment proposal, the sundry vendor lines were incorrectly grouped on payment journal line.
 
 
-
-
-# Previous version(s)
-
-Approximately one year of previous versions are included below.
 
 ### Release 10.0.43.20250502
 
