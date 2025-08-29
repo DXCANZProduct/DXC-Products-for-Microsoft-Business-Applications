@@ -89,6 +89,7 @@ Number	  	| Module	| Functionality	  	| Description
 23214		| Organisation administration	| ABN validation	| Rename report 'Organisation admininstration > Enquiries and reports > ABN Validation' to 'Organisation admininstration > Enquiries and reports > ABN validation report'
 22984		| Accounts payable	| Sundry | One vendor account can used for multiple sundry vendors when using a Method of payment where 'Sundry method of payment' = Yes. <br> Accounts payable parameter **Check the invoice number used** will now use the combination of the following to determine uniqueness of sundry invoices: <br> • Invoice <br> • Sundry BSB\routing number <br> • Sundry bank account <br> <br> For example where two invoices with same id are processed for the one Sundry vendor account, but the sundry bank details differ between the two invoices, they will not be seen as duplicates.
 23156		| Budgeting	| Security configuration	| Created new role **Budget import manager** using duty 'Maintain budget import. Related to 22784.
+22980 		| Various	| DXC Connections - SFTP	| DXC Connections 10.0.43.202508012. Upgrade SFTP library to latest 2025.0.0 [Release notes](../CONNECTIONS/Release-notes.md) 
 
 
 <ins>Bug fixes</ins>
