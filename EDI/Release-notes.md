@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-27
+ms.date: 2025-08-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,9 +58,22 @@ Release notes for other models included in product:
 		• Credential type: Key Vault <br>
 		• Key vault: Secret setup in step 2
 
-# Next version
+# Current version
 
-### Release 10.0.43.202508TBD
+### Release 10.0.43.20250829
+
+DXC EDI 10.0.43 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
+Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
+Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
+
+
+#### Build 10.0.43.202508291
+Release date: 29 August 2025
+
 
 <ins>New features</ins>
 
@@ -111,18 +124,11 @@ Number	| Name		 | Description
 22950	| Transfer order - Picking list	| Issue in SAB_EDIOutboundStagingWriter_Picklist - there is no implementation for type transfer order only for sales order. Similar to SAB_EDISalesOrderHistoryOutboundProcessorInterface created interface for transfer order and any other related components. Implemented this class in SAB_EDIOutboundStagingWriter_Picklist.
 
 
-# Current version
+# Previous version(s)
+
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.43.20250519
-
-DXC EDI 10.0.43 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
-Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
-Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
-
 
 #### Build 10.0.43.2025051921
 Release date: 10 June 2025
@@ -157,10 +163,6 @@ Number	| Name		 | Description
 :--	|:--		 |:--
 22720	| X12 template	 | New outbound template mapping field **Skip segment if blank** didn't work on Lines level.
 
-
-# Previous version(s)
-
-Approximately two years of previous versions are included below.
 
 ### Release 10.0.43.20250509
 
