@@ -60,40 +60,6 @@ Electronic reporting consists out of the following configurations:
 1. Bank reconciliation match rule line model - related to BankReconciliationMatchRuleLine table
 1. Bank reconciliation match rule posting Info model - related to BankReconciliationMatchRule_PostingInfo table
 
-# Reconcilition matching rule Actions
-
-### Generate voucher
-
-Action **Generate voucher** is used for offsets to ledger and bank.
-
-- File 1 - Bank Reconciliation match rule
-- File 2 - Bank reconciliation match rule line (Step 1)
-- File 3 - Bank reconciliation match rule posting Info (Step 2)
-
-### Generate vendor payment
-
-Action **Generate vendor payment** is used for offsets to vendors.
-
-- File 1 - Bank Reconciliation match rule
-- File 2 - Bank reconciliation match rule line (Step 1)
-- File 3 - Bank reconciliation match rule posting Info (Step 2)
-
-### Generate customer payment
-
-Action **Generate customer payment** is used for offsets to customers.
-
-- File 1 - Bank Reconciliation match rule
-- File 2 - Bank reconciliation match rule line (Step 1 and 2)
-- File 3 - Bank reconciliation match rule posting Info (Step 3)
-
-### Settle customer invoice
-
-Action **Settle customer invoice** is used for offsets to customers.
-
-- File 1 - Bank Reconciliation match rule
-- File 2 - Bank reconciliation match rule line (Step 1 and 2)
-- File 3 - Bank reconciliation match rule posting Info (Step 3)
-
 ### Fields per table / configuration
 
 **File 1 - Table : Bank Reconciliation  match rule** (BankReconciliationMatchRule)
@@ -140,6 +106,41 @@ File 2 Field reference: <br>
 1.	Prepayment Journal Voucher
 1.	Posting Profile
 1.	Post
+
+# Reconcilition matching rule Actions
+
+### Generate voucher
+
+Action **Generate voucher** is used for offsets to ledger and bank.
+
+- File 1 - Bank Reconciliation match rule
+- File 2 - Bank reconciliation match rule line (Step 1)
+- File 3 - Bank reconciliation match rule posting Info (Step 2)
+
+### Generate vendor payment
+
+Action **Generate vendor payment** is used for offsets to vendors.
+
+- File 1 - Bank Reconciliation match rule
+- File 2 - Bank reconciliation match rule line (Step 1)
+- File 3 - Bank reconciliation match rule posting Info (Step 2)
+
+### Generate customer payment
+
+Action **Generate customer payment** is used for offsets to customers.
+
+- File 1 - Bank Reconciliation match rule
+- File 2 - Bank reconciliation match rule line (Step 1 and 2)
+- File 3 - Bank reconciliation match rule posting Info (Step 3)
+
+### Settle customer invoice
+
+Action **Settle customer invoice** is used for offsets to customers.
+
+- File 1 - Bank Reconciliation match rule
+- File 2 - Bank reconciliation match rule line (Step 1 and 2)
+- File 3 - Bank reconciliation match rule posting Info (Step 3)
+
 
 # Import
 
