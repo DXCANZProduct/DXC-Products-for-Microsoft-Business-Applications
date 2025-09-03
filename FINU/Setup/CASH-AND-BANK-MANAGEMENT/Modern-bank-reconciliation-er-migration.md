@@ -38,7 +38,8 @@ The following sections will describe the Electronic reporting import option.
 
 > Note: After enabling the **Modern bank reconciliation** feature, running the standard **Cash and bank management > Setup > Advanced bank reconciliation setup > Advanced bank reconciliation data upgrade** will **DELETE** all remaining **Mark new transaction** reconciliation matching rules. It is thus important to ensure all required rules have been migrated before running this upgrade.
 
-> Note: The Electronic reporting import option is only provided as **interim** solution and clients would need to map any additional fields including financial dimensions.
+> Note: The Electronic reporting import option is only provided as **interim** solution and clients would need to map any additional fields including financial dimensions. <br>
+> Validation hasn't been built into the import. <br>
 > The Electronic reporting configuration files will be published on the Finance Utilities LCS solution.
 
 # Tables and Configurations
@@ -55,9 +56,9 @@ Modern bank reconciliation rules are stored in the following tables:
 
 Electronic reporting consists out of the following configurations: 
 
-1. Bank reconciliation match rule model
-1. Bank reconciliation match rule line model
-1. Bank reconciliation match rule posting Info model
+1. Bank reconciliation match rule model - related to BankReconciliationMatchRule table
+1. Bank reconciliation match rule line model - related to BankReconciliationMatchRuleLine table
+1. Bank reconciliation match rule posting Info model - related to BankReconciliationMatchRule_PostingInfo table
 
 # Reconcilition matching rule Actions
 
@@ -97,42 +98,42 @@ Action **Settle customer invoice** is used for offsets to customers.
 
 **File 1 - Table : Bank Reconciliation  match rule** (BankReconciliationMatchRule)
 1.	Rule Id
-2.	Name
-3.  IsActive
-4.	MatchActionType
-5.	Search Matching Entry 
-6.	Matching Type
-7.	Require Manual Matching
+1.	Name
+1.  IsActive
+1.	MatchActionType
+1.	Search Matching Entry 
+1.	Matching Type
+1.	Require Manual Matching
 
 **File 2 - Table : Bank reconciliation match rule line (Step 1 & Step 2)** (BankReconciliationMatchRuleLine)
 1.	Rule Id
-2.	Compare Field String
-3.	Compare Field ID
-4.	Field ID
-5. 	Line Num
-6.	Line Type
-7. 	Operator
-8. 	Source Table ID
-9.	Value
-10. 	Offset Account Pattern
+1.	Compare Field String
+1.	Compare Field ID
+1.	Field ID
+1. 	Line Num
+1.	Line Type
+1. 	Operator
+1. 	Source Table ID
+1.	Value
+1. 	Offset Account Pattern
 
 **File 3 - Table : Bank reconciliation match rule posting Info** (BankReconciliationMatchRule_PostingInfo)
 1.	Rule ID
-2.	Legal Entity
-3.	Bank Transaction Type
-4.	Transaction Text
-5.	Offset Account Type
-6.	Offset Company
-7.	Customer Account
-8.	Vendor Account
-9.	Automatic Customer Account Matching
-10.	Account date type
-11.	Method of payment
-12.	Sales Tax Group
-13.	Item Sales Tax Group
-14.	Prepayment Journal Voucher
-15.	Posting Profile
-16.	Post
+1.	Legal Entity
+1.	Bank Transaction Type
+1.	Transaction Text
+1.	Offset Account Type
+1.	Offset Company
+1.	Customer Account
+1.	Vendor Account
+1.	Automatic Customer Account Matching
+1.	Account date type
+1.	Method of payment
+1.	Sales Tax Group
+1.	Item Sales Tax Group
+1.	Prepayment Journal Voucher
+1.	Posting Profile
+1.	Post
 
 ### Import process
 
@@ -142,5 +143,5 @@ After creating the three csv files (without headers), the files can be imported 
 
 Example import files: 
 
-Example Excel file for each action: 
+Excel file with headings and examples for each action: 
 
