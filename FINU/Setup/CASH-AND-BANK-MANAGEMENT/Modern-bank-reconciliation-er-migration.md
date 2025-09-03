@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation rule migration
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-09-03
+ms.date: 2025-09-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ Modern bank reconciliation includes major changes to Reconciliation matching rul
 
 Currently the standard **Reconciliation matching rules** data entity doesn't support Modern bank reconciliation new actions. <br>
 Interim option for migration is to either manually create/change the **Mark new transaction** rules to the new actions, or use Electronic reporting to create these new Reconciliation matching rules. <br>
-The following sections will describe the Electronic reporting import option.
+The following sections will describe the Electronic reporting import option that includes Finance Utilities fields and intercompany offset support.
 
 > Note: After enabling the **Modern bank reconciliation** feature, running the standard **Cash and bank management > Setup > Advanced bank reconciliation setup > Advanced bank reconciliation data upgrade** will **DELETE** all remaining **Mark new transaction** reconciliation matching rules. It is thus important to ensure all required rules have been migrated before running this upgrade.
 
