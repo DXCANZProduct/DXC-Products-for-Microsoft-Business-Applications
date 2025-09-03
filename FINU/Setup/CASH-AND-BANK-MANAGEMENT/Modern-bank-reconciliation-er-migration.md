@@ -41,44 +41,33 @@ The following sections will describe the Electronic reporting import option.
 > Note: The Electronic reporting import option is only provided as **interim** solution and clients would need to map any additional fields including financial dimensions.
 > The Electronic reporting configuration files will be published on the Finance Utilities LCS solution.
 
-# Overview
+# Tables and Configurations
 
 ### Tables
 
 Modern bank reconciliation rules are stored in the following tables:
 
-- BankReconciliationMatchRule - Shared across legal entities
-- BankReconciliationMatchRuleLine - Shared across legal entities
-- BankReconciliationMatchRule_PostingInfo - Legal entity specific offset details
+1. BankReconciliationMatchRule - Shared across legal entities
+1. BankReconciliationMatchRuleLine - Shared across legal entities
+1. BankReconciliationMatchRule_PostingInfo - Legal entity specific offset details
 
 ### Electronic reporting configurations
 
 Electronic reporting consists out of the following configurations: 
 
 1. Bank reconciliation match rule model
-2. Bank reconciliation match rule line model
-3. Bank reconciliation match rule posting Info model
+1. Bank reconciliation match rule line model
+1. Bank reconciliation match rule posting Info model
 
-
-
-### Import process
-
-After creating the three csv files (without headers), the files can be imported via the **Run** option on the mapping configuration.
-
-![ER import](../../Images/ER-import.png "Electronic reporting import")
-
-Example import files: 
-
-Example Excel file for each action: 
-
+# Reconcilition matching rule Actions
 
 ### Generate voucher
 
 Action **Generate voucher** is used for offsets to ledger and bank.
 
-- File 1 - Bank Reconciliation match rule
-- File 2 - Bank reconciliation match rule line (Step 1)
-- File 3 - Bank reconciliation match rule posting Info (Step 2)
+1. **File 1** - Bank Reconciliation match rule
+1. **File 2** - Bank reconciliation match rule line (Step 1)
+1. **File 3** - Bank reconciliation match rule posting Info (Step 2)
 
 ### Generate vendor payment
 
@@ -144,3 +133,14 @@ Action **Settle customer invoice** is used for offsets to customers.
 14.	Prepayment Journal Voucher
 15.	Posting Profile
 16.	Post
+
+### Import process
+
+After creating the three csv files (without headers), the files can be imported via the **Run** option on the mapping configuration.
+
+![ER import](../../Images/ER-import.png "Electronic reporting import")
+
+Example import files: 
+
+Example Excel file for each action: 
+
