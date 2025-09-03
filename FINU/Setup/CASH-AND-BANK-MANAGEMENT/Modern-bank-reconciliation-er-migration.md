@@ -124,6 +124,7 @@ Action **Settle customer invoice** is used for offsets to customers.
 1.	Transaction Text
 1.	Offset Account Type
 1.	Offset Company
+1.	Offset Ledger Dimension
 1.	Customer Account
 1.	Vendor Account
 1.	Automatic Customer Account Matching
