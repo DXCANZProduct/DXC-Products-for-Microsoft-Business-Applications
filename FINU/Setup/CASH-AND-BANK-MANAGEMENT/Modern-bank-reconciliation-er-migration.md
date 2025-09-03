@@ -2,7 +2,7 @@
 # required metadata
 
 title: Finance Utilities
-description: Cash and bank management setup - Modern bank reconciliation
+description: Cash and bank management setup - Modern bank reconciliation rule migration
 author: Monica du Toit
 manager: Pontus Ek
 ms.date: 2025-09-03
@@ -27,7 +27,7 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-# Modern bank reconciliation migration
+# Overview
 
 Modern bank reconciliation includes major changes to Reconciliation matching rules. <br>
 **Mark new transaction** rules have been replaced by new actions as described in more detail [here](Modern-bank-reconciliation.md) .
