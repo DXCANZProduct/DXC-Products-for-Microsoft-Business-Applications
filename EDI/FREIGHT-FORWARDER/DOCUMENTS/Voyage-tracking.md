@@ -3,9 +3,9 @@
 
 title: EDI Freight forwarder
 description: EDI Freight forwarder Documents - Voyage tracking
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-03-15
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-08-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.technology:
 ms.search.form: Action:SAB_EDIStagingFormRun_FFLCVoyageTracking, SAB_EDIFFLCShipPortTableMapping, SAB_EDIFFLCVendDlvModeMapping, SAB_EDIFFLCShipActivityTableMapping, SAB_EDIFFLCShipPortQualifierMapping
 audience: Application User
 # ms.devlang:
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm:
 ms.custom: 
 ms.search.region: IconEDIFreightForwarderDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:  2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -256,3 +256,15 @@ The following EDI Line fields are available on the lines page. <br>
 **Date**                    | Date the activity will or has occurred	| Voyage > Tracking > Start date OR <br> Estimated end date OR <br> Actual end date
 **Date qualifier**          | Specifies the type of Date and mapped in [document settings](../SETUP/SETTING-PROFILES/Voyage-tracking.md). Options are: <br> • Estimated <br> • Actual <br> Used to determine which Tracking date will be updated where the Activity is for an End date. <br> Start date doesn’t have an estimated vs. actual, therefor no effect on where date is populated for a Start date.	
 **Note**                    | Notes for the tracking update. Will override any current notes for the tracking leg.  | Voyage > Tracking > Notes
+
+### EDI history
+Where history logging is enabled, view the applicable EDI staging record(s) via:
+- **Voyage** - **History** available on the Manage tab on the Action Pane
+
+**Field**			        | **Description**
+:--				            |:--
+**EDI Document type**		| EDI document type of the staging record
+**EDI number**			    | EDI number and link to the staging record
+**Reference**			    | Additional information for the staging record
+**Created date and time**	| Created date and time of the EDI staging record
+

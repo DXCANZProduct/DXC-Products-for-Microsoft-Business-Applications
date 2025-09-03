@@ -5,7 +5,7 @@ title: EDI 3PL
 description: EDI 3PL Documents - Picking list
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-08-29
+ms.date: 2025-08-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -187,3 +187,14 @@ The following EDI Line staging fields are available on the lines page.
 **Serial number**           | Tracking dimensions – Serial number	                    | Pick route line > Serial number
 **Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](..SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) | Pick route line > Inventory status
 
+### EDI history
+Where history logging is enabled, view the applicable EDI staging record(s) via:
+- **Sales order** - **EDI history** available on the Sales order tab on the Action Pane
+- **Transfer order** - **History** available on the Transfer order tab on the Action Pane
+
+**Field**			| **Description**
+:--				|:--
+**EDI Document type**		| EDI document type of the staging record
+**EDI number**			| EDI number and link to the staging record
+**Reference**			| Additional information for the staging record
+**Created date and time**	| Created date and time of the EDI staging record

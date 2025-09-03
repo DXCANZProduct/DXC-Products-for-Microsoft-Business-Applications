@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-07
+ms.date: 2025-08-20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -48,9 +48,6 @@ Summary of Finance Utilities extensions to Modern bank reconciliation:
     - Posting options (only 'Generate customer payment').
  - **Correction amounts** - Ability to enter correction amounts at time of matching Bank statement transactions to Bank transactions.
 
-## Migration
-See the following [link](Modern-bank-reconciliation-migration.md) for migration details.
-
 
 # Setup
 
@@ -68,6 +65,8 @@ The following standard setup is required on each applicable bank account if cust
 
 - Customer payment journal
 - Vendor payment journal
+
+> Note: Std doesn't allow journal names where **Summarise amounts in bank account** is _Yes_.
 
 ## Bank reconciliation matching rules
 
@@ -165,7 +164,7 @@ The following is only applicable to
 ### Default description
 
 1. Enable feature **Enable default descriptions for advanced bank reconciliation**
-2. Setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation) for **Bank - reconciliation worksheet**. <br> 
+2. Setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation) for **Bank - reconciliation worksheet** for each applicable **Language** or select **user**. <br> 
 
 Finance utilities will use the same default description on the intercompany transaction.
 

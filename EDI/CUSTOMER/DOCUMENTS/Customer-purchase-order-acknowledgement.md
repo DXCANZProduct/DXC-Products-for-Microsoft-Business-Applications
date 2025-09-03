@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Documents - Customer purchase order acknowledgement
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-04
+ms.date: 2025-08-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -62,9 +62,10 @@ Users can access **All sales orders** page by navigating to **Sales and marketin
 
 Field	                  | Description
 :--                     |:--
-**Acknowledgement**     |	Select the **Acknowledgement** button to review order details for the POA. The details of this page will be discussed in below.
-**Send to EDI**         |	Select the **Send to EDI** button to create the **Customer purchase order acknowledgement** staging table record.
-**Reset flag**          |	Select the **Reset flag** button to reset the **EDI status** to allow for re-sending of the POA to the staging table. Note: The POA record on the staging table should be deleted manually before the sales order flag is reset.
+**Acknowledgement**     | Select the **Acknowledgement** button to review order details for the POA. The details of this page will be discussed in below.
+**Send to EDI**         | Select the **Send to EDI** button to create the **Customer purchase order acknowledgement** staging table record.
+**Reset flag**          | Select the **Reset flag** button to reset the **EDI status** to allow for re-sending of the POA to the staging table. Note: The POA record on the staging table should be deleted manually before the sales order flag is reset.
+**Close POA**           |  Enabled where the selected sales order has been fully delivered or invoiced and the 'POA status' is 'Pending' or 'In progress'. Changes the 'POA status' to 'Cancelled'.
 
 #### Sales order fields
 

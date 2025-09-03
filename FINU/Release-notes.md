@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-14
+ms.date: 2025-08-29
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,13 +38,13 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | DXC Finance Utilities 10.0.40.2024091931 <br> [DXC ABN Validation 10.0.40.2024091931] <br> [DXC Encryption 10.0.40.202409162]
 Product version: 10.0.43 <br> App build: 10.0.2177.18	  | Yes <br> • 21291 & 21612  | DXC Finance Utilities 10.0.40.202501221 <br> [DXC ABN Validation 10.0.40.202501221] <br> [DXC Encryption 10.0.40.202412121] <br> 21612 Build error fixed in 10.0.42.202504081 <br> 21291 Fixed in 10.0.43.20250502
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | Only build errors 22783 & 22784  | DXC Finance Utilities 10.0.42.202504081 <br> [DXC ABN Validation 10.0.42.202504081] <br> [DXC Encryption 10.0.42.202504041] <br> Build errors fixed in 10.0.43.202505211
-
+Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No			 | DXC Finance Utilities 10.0.43.2025052121 <br> [DXC ABN Validation 10.0.43.2025052121] <br> [DXC Encryption 10.0.43.202505191]
 
 #### Features not yet supported
 
-Feature	| 10.0.44 Feature state
+Feature	| 10.0.45 Feature state
 :--       	|:--		
-**Modern bank reconciliation** | On by default, needs to be manually disabled
+**Automatic vendor account matching**	| New from 10.0.45 and not supported yet. Don't enable.
 
 Release notes for other models included in product:
 - [DXC Connections](../CONNECTIONS/Release-notes.md)
@@ -72,20 +72,34 @@ Release notes for other models included in product:
 			• Credential type: Key Vault <br>
 	 		• Connection string: Secret setup in step 3
 
-# Next version
+# Current version
 
-### Release 10.0.43.202508TBD
+### Release 10.0.43.20250829
+
+DXC Finance Utilities 10.0.43 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
+Microsoft Dynamics 365 application 	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
+Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
+
+
+#### Build 10.0.43.202508293
+Release date: 29 August 2025
+
 
 <ins>New features</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-17513		| Cash and bank management	| Modern bank reconciliation	| Support for feature **Modern bank reconciliation**. <br> This release will exclude Reconciliation matching rules Data entity, as the std entity doesn't support Modern bank reconciliation yet - dependent on MS. <br> [User guide](Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation.md)
+17513		| Cash and bank management	| Modern bank reconciliation	| Support for feature **Modern bank reconciliation**. <br> [Setup](Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation.md) <br> [Processing](Processing/Bank-Statement-Reconciliation/Modern-bank-reconciliation.md) <br> <br> <ins>Excluded:</ins> <br> • Reconciliation matching rules Data entity, as the std entity doesn't support Modern bank reconciliation yet - dependent on MS. <br> • 10.0.45 feature Automatic vendor account matching
 21820		| Accounts payable	| BPAY - Biller code		| Similar to how Finance Utilities 'Lodgement reference' works, ability to: <br> • Method of payment: Set Payment control and Payment attributes for **Biller code**. <br> • Ability to override the defaulted Biller code on Invoices.
 20204		| Various	| ABN validation	| Where using the 'Search by ABN' in ABN lookup and fullName isn't available in the legalName section, a concat of givenName, otherGivenNames and familyName will be provided in the **Company name** in the Search result instead if blank.
-23214		| Organisation administration	| ABN validation	| Rename report 'Organisation admininstration > Enquiries and reports > ABN Validation' to 'Organisation admininstration > Enquiries and reports > ABN validation report'
+23214		| Organisation administration	| ABN validation	| Rename report 'Organisation administration > Enquiries and reports > ABN Validation' to 'Organisation administration > Enquiries and reports > ABN validation report'
 22984		| Accounts payable	| Sundry | One vendor account can used for multiple sundry vendors when using a Method of payment where 'Sundry method of payment' = Yes. <br> Accounts payable parameter **Check the invoice number used** will now use the combination of the following to determine uniqueness of sundry invoices: <br> • Invoice <br> • Sundry BSB\routing number <br> • Sundry bank account <br> <br> For example where two invoices with same id are processed for the one Sundry vendor account, but the sundry bank details differ between the two invoices, they will not be seen as duplicates.
 23156		| Budgeting	| Security configuration	| Created new role **Budget import manager** using duty 'Maintain budget import. Related to 22784.
+22980 		| Various	| DXC Connections - SFTP	| DXC Connections 10.0.43.202508012. Upgrade SFTP library to latest 2025.0.0 [Release notes](../CONNECTIONS/Release-notes.md) 
 
 
 <ins>Bug fixes</ins>
@@ -98,16 +112,11 @@ Number	  	| Module	| Functionality	  	| Description
 23211		| Various	| ABN validation	| Reviewed **GST registered = C** ABN records, incorrectly changed to Reviewed = No, after running update with no changes to the record.
 
 
-# Current version
+# Previous version(s)
+
+Approximately one year of previous versions are included below.
 
 ### Release 10.0.43.20250521
-
-DXC Finance Utilities 10.0.43 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
-Microsoft Dynamics 365 application 	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 
 #### Build 10.0.43.2025052121
 Release date: 1 August 2025
@@ -136,11 +145,6 @@ Number	  	| Module	| Functionality	  	| Description
 22874		| Accounts payable	| Sundry vendor payment proposal	| When overriding fields on payment proposal, the sundry vendor lines were incorrectly grouped on payment journal line.
 
 
-
-
-# Previous version(s)
-
-Approximately one year of previous versions are included below.
 
 ### Release 10.0.43.20250502
 

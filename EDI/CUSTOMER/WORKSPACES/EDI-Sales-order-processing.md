@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer workspaces - EDI Sales order processing
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-07-24
+ms.date: 2025-08-27
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -83,6 +83,7 @@ Field	                | Description
 :--                   |:--
 **Acknowledgement**   |	Select the **Acknowledgement** button to review order details for the POA.
 **Send to EDI**       | Select the **Send to EDI** button to create Customer purchase order acknowledgment staging table record.
+**Close POA**           |  Enabled where the selected sales order has been fully delivered or invoiced and the 'POA status' is 'Pending' or 'In progress'. Changes the 'POA status' to 'Cancelled'.
 
 ### Pending POA confirm
 EDI orders will be placed on hold when a Purchase order confirmation must be received from the customer following receipt of a POA. 

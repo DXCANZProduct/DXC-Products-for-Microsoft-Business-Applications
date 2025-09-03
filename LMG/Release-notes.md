@@ -5,7 +5,7 @@ title: License manager
 description: License manager - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-05-07
+ms.date: 2025-08-22
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -42,9 +42,9 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.37.202404262
 Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40.202412041
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | No	          | 10.0.40.202412041
+Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No	          | 10.0.43.202506241
 
 #### **Release 10.0.43.202506241**
 
@@ -52,11 +52,9 @@ DXC License Manager 10.0.43.202506241 runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                         |
 | :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft Dynamics 365 application | 10.0.40 | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40) |
-| Microsoft Dynamics 365 application | 10.0.41 | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) |
-| Microsoft Dynamics 365 application | 10.0.42 | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42) |
 Microsoft Dynamics 365 application	| 10.0.43  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
+Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 
 
 <b>Build 7.0.7521.60 </b>
@@ -77,9 +75,9 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | 10.0.37.202405231
 Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40.202410231
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | No	          | 10.0.40.202502211
+Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No           | 10.0.43.202506252
 
 #### **Release 10.0.43.202506252**
 DXC License 10.0.43 runs on the following Microsoft releases
@@ -87,11 +85,9 @@ DXC License 10.0.43 runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                         |
 | :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft Dynamics 365 application | 10.0.40 | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40) |
-| Microsoft Dynamics 365 application | 10.0.41 | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) |
-| Microsoft Dynamics 365 application | 10.0.42 | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42) |
 Microsoft Dynamics 365 application	| 10.0.43  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
+Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 
 <b>Build 7.0.7521.60 </b>
 
