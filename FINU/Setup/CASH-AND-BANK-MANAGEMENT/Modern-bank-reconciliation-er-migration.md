@@ -66,9 +66,9 @@ Electronic reporting consists out of the following configurations:
 
 Action **Generate voucher** is used for offsets to ledger and bank.
 
-1. **File 1** - Bank Reconciliation match rule
-1. **File 2** - Bank reconciliation match rule line (Step 1)
-1. **File 3** - Bank reconciliation match rule posting Info (Step 2)
+- File 1 - Bank Reconciliation match rule
+- File 2 - Bank reconciliation match rule line (Step 1)
+- File 3 - Bank reconciliation match rule posting Info (Step 2)
 
 ### Generate vendor payment
 
@@ -108,12 +108,12 @@ Action **Settle customer invoice** is used for offsets to customers.
 **File 2 - Table : Bank reconciliation match rule line (Step 1 & Step 2)** (BankReconciliationMatchRuleLine)
 1.	Rule Id
 1.	Compare Field String
-1.	Compare Field ID
-1.	Field ID
+1.	Compare Field ID - see table systablefieldidview for specific Table id
+1.	Field ID - see table systablefieldidview for specific Table id
 1. 	Line Num
 1.	Line Type
 1. 	Operator
-1. 	Source Table ID
+1. 	Source Table ID - see table systableidview
 1.	Value
 1. 	Offset Account Pattern
 
@@ -142,7 +142,10 @@ After creating the three csv files (without headers), the files can be imported 
 
 ![ER import](../../Images/ER-import.png "Electronic reporting import")
 
-Example import files: 
+# Examples
 
+### Example import files
+
+### Examples with table headings
 Excel file with headings and examples for each action: 
 
