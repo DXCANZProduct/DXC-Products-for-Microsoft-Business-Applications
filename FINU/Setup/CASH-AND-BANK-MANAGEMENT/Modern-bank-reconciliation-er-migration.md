@@ -119,6 +119,9 @@ Create a line for each line in the applicable step/s (i.e. could be multiple lin
 1.	Value
 1. 	Offset Account Pattern
 
+File 2 Field reference: <br> 
+![Field reference](../../Images/FieldReference.PNG "File 2 Field reference")
+
 **File 3 - Table : Bank reconciliation match rule posting Info** (BankReconciliationMatchRule_PostingInfo)
 1.	Rule ID
 1.	Legal Entity
@@ -137,6 +140,7 @@ Create a line for each line in the applicable step/s (i.e. could be multiple lin
 1.	Prepayment Journal Voucher
 1.	Posting Profile
 1.	Post
+
 
 ### Import process
 
