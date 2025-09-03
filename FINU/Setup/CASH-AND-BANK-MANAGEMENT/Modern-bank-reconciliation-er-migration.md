@@ -59,46 +59,6 @@ Electronic reporting consists out of the following configurations:
 2. Bank reconciliation match rule line model
 3. Bank reconciliation match rule posting Info model
 
-<ins>Fields per table / configuration</ins>
-
-**Table : Bank Reconciliation  match rule** (BankReconciliationMatchRule)
-1.	Rule Id
-2.	Name
-3.  IsActive
-4.	MatchActionType
-5.	Search Matching Entry 
-6.	Matching Type
-7.	Require Manual Matching
-
-**Table : Bank reconciliation match rule line (Step 1 & Step 2)** (BankReconciliationMatchRuleLine)
-1.	Rule Id
-2.	Compare Field String
-3.	Compare Field ID
-4.	Field ID
-5. 	Line Num
-6.	Line Type
-7. 	Operator
-8. 	Source Table ID
-9.	Value
-10. 	Offset Account Pattern
-
-**Table : Bank reconciliation match rule posting Info** (BankReconciliationMatchRule_PostingInfo)
-1.	Rule ID
-2.	Legal Entity
-3.	Bank Transaction Type
-4.	Transaction Text
-5.	Offset Account Type
-6.	Offset Company
-7.	Customer Account
-8.	Vendor Account
-9.	Automatic Customer Account Matching
-10.	Account date type
-11.	Method of payment
-12.	Sales Tax Group
-13.	Item Sales Tax Group
-14.	Prepayment Journal Voucher
-15.	Posting Profile
-16.	Post
 
 
 ### Import process
@@ -144,3 +104,43 @@ Action **Settle customer invoice** is used for offsets to customers.
 - File 2 - Bank reconciliation match rule line (Step 1 and 2)
 - File 3 - Bank reconciliation match rule posting Info (Step 3)
 
+### Fields per table / configuration
+
+**File 1 - Table : Bank Reconciliation  match rule** (BankReconciliationMatchRule)
+1.	Rule Id
+2.	Name
+3.  IsActive
+4.	MatchActionType
+5.	Search Matching Entry 
+6.	Matching Type
+7.	Require Manual Matching
+
+**File 2 - Table : Bank reconciliation match rule line (Step 1 & Step 2)** (BankReconciliationMatchRuleLine)
+1.	Rule Id
+2.	Compare Field String
+3.	Compare Field ID
+4.	Field ID
+5. 	Line Num
+6.	Line Type
+7. 	Operator
+8. 	Source Table ID
+9.	Value
+10. 	Offset Account Pattern
+
+**File 3 - Table : Bank reconciliation match rule posting Info** (BankReconciliationMatchRule_PostingInfo)
+1.	Rule ID
+2.	Legal Entity
+3.	Bank Transaction Type
+4.	Transaction Text
+5.	Offset Account Type
+6.	Offset Company
+7.	Customer Account
+8.	Vendor Account
+9.	Automatic Customer Account Matching
+10.	Account date type
+11.	Method of payment
+12.	Sales Tax Group
+13.	Item Sales Tax Group
+14.	Prepayment Journal Voucher
+15.	Posting Profile
+16.	Post
