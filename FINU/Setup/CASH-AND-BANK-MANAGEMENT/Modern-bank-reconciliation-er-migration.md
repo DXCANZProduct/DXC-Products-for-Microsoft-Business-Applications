@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-07-28
+ms.date: 2025-09-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,8 +29,40 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Modern bank reconciliation migration
 
-The following sections describe the requirements to migrate previous **Mark new transaction** Finance utilities fields to **Modern bank reconciliation** functionality. <br>
-These can either be done manually or using data entities.
+Modern bank reconciliation includes major changes to Reconciliation matching rules. <br>
+**Mark new transaction** rules have been replaced by new actions as described in more detail [here](Modern-bank-reconciliation.md) .
+
+Currently the standard **Reconciliation matching rules** data entity doesn't support Modern bank reconciliation new actions. <br>
+Interim option for migration is to either manually create/change the rules to new actions, or use Electronic reporting to create these new Reconciliation matching rules. <br>
+The following sections will describe the Electronic reporting import option.
+
+> Please note: The Electronic reporting import option is only provided as **interim** solution and clients would need to map any additional fields including financial dimensions.
+
+# Electronic reporting
+
+### Tables
+
+Modern bank reconciliation rules are stored in the following tables:
+
+- BankReconciliationMatchRule - Shared across legal entities
+- BankReconciliationMatchRuleLine - Step 1 - Shared across legal entities
+- BankReconciliationMatchRule_PostingInfo - Step 2/3 - Legal entity specific offset details
+
+### Electronic reporting configurations
+
+Electronic reporting consists out of the following configurations: 
+
+1. Bank reconciliation match rule model
+2. Bank reconciliation match rule line model
+3. Bank reconciliation match rule posting Info model
+
+### Import process
+
+After creating the three csv files (without headers), the files can be imported via the **Run** option on the mapping configuration.
+
+![ER import](../../Images/ER-import.png "Electronic reporting import")
+
+
 
 ### Offset type Ledger
 
