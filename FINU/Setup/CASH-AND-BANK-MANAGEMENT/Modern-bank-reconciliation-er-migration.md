@@ -105,8 +105,8 @@ Action **Settle customer invoice** is used for offsets to customers.
 1.	Matching Type
 1.	Require Manual Matching
 
-**File 2 - Table : Bank reconciliation match rule line (Step 1 & Step 2)** (BankReconciliationMatchRuleLine) <br>
-Create a line for each line in the step (i.e. could be multiple lines for the rule)
+**File 2 - Table : Bank reconciliation match rule line** (BankReconciliationMatchRuleLine) <br>
+Create a line for each line in the applicable step/s (i.e. could be multiple lines for the rule)
 
 1.	Rule Id
 1.	Compare Field String
