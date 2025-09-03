@@ -48,8 +48,8 @@ The following sections will describe the Electronic reporting import option.
 Modern bank reconciliation rules are stored in the following tables:
 
 - BankReconciliationMatchRule - Shared across legal entities
-- BankReconciliationMatchRuleLine - Step 1 - Shared across legal entities
-- BankReconciliationMatchRule_PostingInfo - Step 2/3 - Legal entity specific offset details
+- BankReconciliationMatchRuleLine - Shared across legal entities
+- BankReconciliationMatchRule_PostingInfo - Legal entity specific offset details
 
 ### Electronic reporting configurations
 
