@@ -1,0 +1,6 @@
+23483-L,ER import Ledger,No,Generate voucher,,,
+23483-B,ER import Bank,No,Generate voucher,,,
+23483-V,ER import Vendor,No,Generate vendor payment,,,
+23483-CP,ER import Customer payment Auto match,No,Generate customer payment,,,
+23483-CPF,ER import Customer payment Fixed customer,No,Generate customer payment,,,
+23483-CI,ER import Customer invoice,No,Settle customer invoice,,,
