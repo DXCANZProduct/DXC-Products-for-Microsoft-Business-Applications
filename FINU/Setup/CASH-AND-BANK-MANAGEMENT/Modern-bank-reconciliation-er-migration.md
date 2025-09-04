@@ -39,8 +39,8 @@ The following sections will describe the Electronic reporting import option that
 > Note: After enabling the **Modern bank reconciliation** feature, running the standard **Cash and bank management > Setup > Advanced bank reconciliation setup > Advanced bank reconciliation data upgrade** will **DELETE** all remaining **Mark new transaction** reconciliation matching rules. It is thus important to ensure all required rules have been migrated before running this upgrade.
 
 > Note: The Electronic reporting import option is only provided as **interim** solution and clients would need to map any additional fields including financial dimensions. <br>
-> Validation hasn't been built into the import. <br>
-> The Electronic reporting configuration files will be published on the Finance Utilities LCS solution.
+> Validation hasn't been built into the import, please ensure the data is correct. <br>
+
 
 # Tables and Configurations
 
@@ -153,7 +153,10 @@ After creating the three csv files (without headers), the files can be imported 
 # Examples
 
 ### Example import files
+- [File 1 - Bank Reconciliation match rule](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/ExampleFiles/bankReconmatchRule.csv)
+- [File 2 - Bank reconciliation match rule line](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/ExampleFiles/bankReconmatchRuleLine.csv)
+- [File 3 - Bank reconciliation match rule posting Info](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/ExampleFiles/BankReconMatchRulePostingInfo.csv)
 
 ### Examples with table headings
-Excel file with headings and examples for each action: 
+Excel file with headings and examples for each action: [Example file](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/ExampleFiles/ERimport-ExamplePerAction.xlsx)
 
