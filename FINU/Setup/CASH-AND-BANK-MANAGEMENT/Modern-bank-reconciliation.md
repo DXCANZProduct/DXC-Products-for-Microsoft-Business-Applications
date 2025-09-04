@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Modern bank reconciliation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-20
+ms.date: 2025-09-04
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -181,6 +181,11 @@ Modern bank reconciliation has added new button **Duplicate**, which allows user
 When Financial utilities parameter **Enable modern bank reconciliation extensions** is set to _Yes_, the Finance Utilities button **Copy matching rule** is hidden (will be deprecated in future).
 The additional Finance Utilities fields for the new Modern bank reconciliation actions have been added the std's **Duplicate** button.
 
+# Migration
+
+### Reconciliation matching rules
+
+See the following [page](Modern-bank-reconciliation-er-migration.md) for migrating 'Mark new transaction' Reconciliation matching rules to the new actions.
 
 # Processing
 
