@@ -35,7 +35,6 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No	          | DXC Finance Utilities 10.0.40.2024091931 <br> [DXC ABN Validation 10.0.40.2024091931] <br> [DXC Encryption 10.0.40.202409162]
 Product version: 10.0.43 <br> App build: 10.0.2177.18	  | Yes <br> • 21291 & 21612  | DXC Finance Utilities 10.0.40.202501221 <br> [DXC ABN Validation 10.0.40.202501221] <br> [DXC Encryption 10.0.40.202412121] <br> 21612 Build error fixed in 10.0.42.202504081 <br> 21291 Fixed in 10.0.43.20250502
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | Only build errors 22783 & 22784  | DXC Finance Utilities 10.0.42.202504081 <br> [DXC ABN Validation 10.0.42.202504081] <br> [DXC Encryption 10.0.42.202504041] <br> Build errors fixed in 10.0.43.202505211
 Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No			 | DXC Finance Utilities 10.0.43.2025052121 <br> [DXC ABN Validation 10.0.43.2025052121] <br> [DXC Encryption 10.0.43.202505191]
