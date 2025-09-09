@@ -41,7 +41,7 @@ Product version: 10.0.41 <br> App build: 10.0.2015.16	  | No | DXC Core Extensio
 Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DXC Core Extensions 10.0.40.202410231 <br> DXC Data Anonymisation 10.0.40.202410231 <br> DXC DMF Toolbox 10.0.40.202410231
 Product version: 10.0.43 <br> App build: 10.0.2177	  | No | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymisation 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051
 Product version: 10.0.44 <br> App build: 10.0.2263	  | yes only build errors 22878 | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymisation 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051 <br> build errors fixed in 10.0.44.202506171
-Product version: 10.0.44 <br> App build: 10.0.2263	  | No | DXC Core Extensions 10.0.44.20250625 <br> DXC Data Anonymisation 10.0.44.20250625 <br> DXC DMF Toolbox 10.0.44.20250625 
+Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No | DXC Core Extensions 10.0.44.20250625 <br> DXC Data Anonymisation 10.0.44.20250625 <br> DXC DMF Toolbox 10.0.44.20250625 
  
 
 Release notes for other models included in the product:
@@ -68,6 +68,7 @@ DXC Core extensions 10.0.44 run on the following Microsoft releases
 Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
+Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 
 #### Build 10.0.44.20250625
 
