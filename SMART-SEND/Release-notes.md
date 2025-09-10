@@ -141,13 +141,13 @@ Number	  | Name	          | Description
 Number	  | Name	          | Description
 :--       |:--              |:--
 16791	    | The field with ID '0' does not exist in table 'CustInvoiceTable'| When attempting to perform the View >copy function on a Free Text Invoice the error was displayed.
-18226     | Free Text Invoices are not saved to Azure blob storage when issued in multiple | Previously when you selected more than 1 free text invoice or a combination of free text and customer tax Invoices only the first Free Text Invoice was sent to blob storage
+18226     | Free Text Invoices are not saved to Azure blob storage when issued in multiple | Previously, when you selected more than 1 free text invoice or a combination of free text and customer tax Invoices, only the first Free Text Invoice was sent to blob storage
 18275    |Tax Journal Screen resets when sending records across screens | Issue resolved when multiple records are selected and attempted to be sent via Smart Send
 17425  |Update Table Groups | Update Table Groups in line with proposed PPAC copy environment functionality to prevent loss of key data
-18916|Smart Send "Test Azure blob storage connection" button is not validating correctly| Changes to how FinOps validated blob storage connections have been made as a result of an invalid dll file bundled by Microsoft causing the failure. As a result of this, the Azure dll was moved to a new model called DXCConnections.  <br> DXC Connections release information - [Release notes](../CONNECTIONS/Release-notes.md)
-18842|Azure blob storage setup  mismatches|When changing between Blob connection string or Key Vault storage the Blob connection string would still be displayed instead of looking for the key vault type. Also not allowing blob storage values to be blank when Storage options are set to none 
-18792| Request for quotation smart send button  will print to screen| When using the smart send button for Request for quotation this would previously print to screen 
-18983|Remove Catch statement| When saving files in blob storage a message would display "See event viewer in LCS for more detail" when a non-Smart Send error occurred. This has been removed in favour of original errors being passed back to Fin ops from blob storage
+18916|Smart Send "Test Azure blob storage connection" button is not validating correctly| Changes to how FinOps validated blob storage connections have been made as a result of an invalid dll file bundled by Microsoft, causing the failure. As a result of this, the Azure dll was moved to a new model called DXCConnections.  <br> DXC Connections release information - [Release notes](../CONNECTIONS/Release-notes.md)
+18842|Azure blob storage setup  mismatches|When changing between Blob connection string or Key Vault storage, the Blob connection string would still be displayed instead of looking for the Key Vault type. Also, not allowing blob storage values to be blank when Storage options are set to none 
+18792| Request for quotation smart send button  will print to screen| When using the smart send button for Request for quotation, this would previously print to screen 
+18983|Remove Catch statement| When saving files in blob storage, a message would display "See event viewer in LCS for more detail" when a non-Smart Send error occurred. This has been removed in favour of original errors being passed back to Fin ops from blob storage
 
 
 #### Build 10.0.37.202403263
@@ -156,9 +156,9 @@ Number	  | Name	          | Description
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-16730	    | Smart Send License error| When users switched to the Feature management version of Smart Send they would receive an error advising the product was not licensed.  This has now been corrected and users should no longer receive errors when upgrading from a non-feature-managed version of Smart Send|
-17433	    | Report  is not set for Smart Send| If a default report has not been set in the Email Parameters and more than 1 report format per report is in use Smart Send will now attempt to find the report by name.|
-17623	    | Error Saving to Azure Storage| When the Company logo placeholder is used as part of an organisational email template some characters are being passed through as part of the Metadata that are not supported by Azure Blob storage.  This resulted in an error being displayed referring users to LCS. This has now  been updated and no Image metadata is passed through to Azure|
+16730	    | Smart Send License error| When users switched to the Feature management version of Smart Send, they would receive an error advising the product was not licensed.  This has now been corrected, and users should no longer receive errors when upgrading from a non-feature-managed version of Smart Send|
+17433	    | Report  is not set for Smart Send| If a default report has not been set in the Email Parameters and more than 1 report format per report is in use, Smart Send will now attempt to find the report by name.|
+17623	    | Error Saving to Azure Storage| When the Company logo placeholder is used as part of an organisational email template, some characters are being passed through as part of the Metadata that are not supported by Azure Blob storage.  This resulted in an error being displayed, referring users to LCS. This has now  been updated, and no Image metadata is passed through to Azure|
 
 <ins>New features</ins>
 
@@ -174,9 +174,9 @@ Number	  | Name	          | Description
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-16791	    | Error executing code: The field with ID '0' does not exist in table 'CustInvoiceTable'| resolved error displayed When attempting to perform the View >copy function on a Free Text Invoice|
-17094| Customer and Vendor Payment advice emails| When utilizing electronic reporting formats, the number of emails sent for the payment advice to customers or vendors was previously exponential to the number of lines for that vendor.|
-17123|Report  is not setup for Smart Send| Previously, when a user attempted to utilize the Smart Send functionality and their user security role was limited to a single legal organization, an error message would appear alerting them that Smart Send was not configured.
+16791	    | Error executing code: The field with ID '0' does not exist in table 'CustInvoiceTable'| resolved error displayed when attempting to perform the View >copy function on a Free Text Invoice|
+17094| Customer and Vendor Payment Advice Emails | When utilising electronic reporting formats, the number of emails sent for the payment advice to customers or vendors was previously exponential to the number of lines for that vendor.|
+17123|Report  is not set up for Smart Send| Previously, when a user attempted to utilise the Smart Send functionality and their user security role was limited to a single legal organisation, an error message would appear alerting them that Smart Send was not configured.
 
 
 ### Release 10.0.36.20231026
@@ -186,7 +186,7 @@ Number	  | Name	          | Description
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-17069	    | Error: Report DXC_BankPaymAdviceVendV2.The report is not set up for Smart Send| Previously when issuing a Customer or Vendor Payment advice with a custom report an error is displayed advising that the report is not set up for Smart Send|
+17069	    | Error: Report DXC_BankPaymAdviceVendV2.The report is not set up for Smart Send| Previously, when issuing a Customer or Vendor Payment advice with a custom report, an error is displayed advising that the report is not set up for Smart Send|
 17017| Remove reference to ERDestinationNamedFeatur| Build issues were found in version 10.0.39 because feature key control over electronic reporting via print management was no longer in place and was enabled by default.   This problem has been fixed as Smart Send no longer makes reference to it.|
 
 
