@@ -63,8 +63,8 @@ Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in D
 Microsoft Dynamics 365 application 	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 
-#### Build 10.0.43.20250829TBD
-Release date: TBD (Next version)
+#### Build 10.0.43.20250829TBD (Next version)
+Release date: TBD 
 
 <ins>New features</ins>
 
@@ -80,7 +80,7 @@ Number	  	| Module	| Functionality	  	| Description
 23808		| Organisation administration	| ABN lookup	| Modifying ABN lookup to improve speed.
 24056		| Cash and bank management	| Modern bank reconciliation	| 'Import bank statement' button not available on form 'Bank statement' when Modern bank reconciliation feature is enabled and Finance Utilities feature is disabled. Only related to 10.0.43.202508293.
 
-#### Build 10.0.43.202508293
+#### Build 10.0.43.202508293 (Current version)
 Release date: 29 August 2025
 
 
