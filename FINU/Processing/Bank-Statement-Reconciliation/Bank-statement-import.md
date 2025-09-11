@@ -62,7 +62,7 @@ The bank statement can also automatically be imported by using periodic task [Im
 
 Filter **Imported via financial utilities connection** on the Bank statement import, can be used to filter to bank statements imported using above periodic task.
 
-### Periodic import - errors
+### Error processing
 Error process if there are issues with creating all the bank statement(s) for the file using the periodic task: 
 
 If the Bank statement format is:
