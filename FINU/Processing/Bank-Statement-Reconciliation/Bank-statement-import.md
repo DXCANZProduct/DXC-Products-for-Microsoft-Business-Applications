@@ -3,9 +3,9 @@
 
 title: Finance Utilities 
 description: Bank statement reconciliation processing - Bank statement import 
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-06-03
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-09-10
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,19 +16,19 @@ ms.technology:
 ms.search.form:  BankStatementTable
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 # ms.tgt_pltfrm: 
 # ms.custom: : ["21901", "intro-internal"]
 ms.search.region: FinanceUtilFeature
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
+ms.author: Monica du Toit
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ---
 
-## Bank statement import 
+# Bank statement import 
 
-### Manual import
+# Manual import
 The **Bank statement** page  is used to manually import the bank statement into your D365 environment. 
 Users can navigate to the page by going to **Cash and bank management > Bank statement reconciliation > Bank statements**
 
@@ -37,11 +37,11 @@ Users can navigate to the page by going to **Cash and bank management > Bank sta
 Select **Import statement**.
 Where the selected statement format is marked as **Customised format** the following additional fields are available on the import:
 
-| **Field**        | **Description**                                               | Options
-|-                 |-                                                              |-
-| **From date**    | Select transactions >= this date                              | Calendar
-| **To date**      | Select transactions <= this date                              | Calendar
-| **Date**         | Select which date to use when **Mark as new** <br> transactions are posted | •	Today’s date <br> •	Statement Transaction Date <br> (_To date_ of the Bank statement header)
+Field  	          | Description	                                                | Options
+:--               |:--                                                          |:--
+**From date**     | Select transactions >= this date                            | Calendar
+**To date**       | Select transactions <= this date                            | Calendar
+**Date**          | Select which date to use when **Mark as new** <br> transactions are posted | •	Today’s date <br> •	Statement Transaction Date <br> (_To date_ of the Bank statement header)
 
 > Note: Where the bank statement file contains transactions related to multiple dates and multiple bank accounts (i.e. the file is imported using the option **Import statement for multiple bank accounts in all legal entities**, separate bank statement records get created in D365 for each bank account. 
 
@@ -56,13 +56,13 @@ In addition, where Import statement for multiple bank accounts in all legal enti
 1.	Bank accounts with the same Bank account number in the same D365 entity in which user is importing the bank statement, system imports the bank statement to the first identified bank account record. 
 2.	If the bank account exists within multiple D365 entities, the bank statement is imported into the bank account in the D365 entity from which user is importing the bank statement. If this bank account is not in the entity in which user is importing the bank statement, system imports the bank statement to the first identified bank account record 
 
-### Periodic import
+# Periodic import
 
 The bank statement can also automatically be imported by using periodic task [Import bank statements via financial utilities connection](../../Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md).
 
 Filter **Imported via financial utilities connection** on the Bank statement import, can be used to filter to bank statements imported using above periodic task.
 
-#### Periodic import - errors
+### Periodic import - errors
 Error process if there are issues with creating all the bank statement(s) for the file using the periodic task: 
 
 If the Bank statement format is:
@@ -70,3 +70,38 @@ If the Bank statement format is:
 - **Generic electronic import format** - Std. will create the bank statements that can be created, and the file will be moved to the Financial utilities connection's **Archive path**.
 
 Example error that will result in not all bank statement(s) being created: An unique bank account was not found for a Bank account number within the file
+
+### File states for bank statement import
+
+View and manage Bank statement files imported via the periodic task. <br>
+It allows users to easily view logs and applicable files state for each bank statement file. 
+
+#### Fields
+
+Field  	          | Description	                                                | Options / Examples
+:--               |:--                                                          |:--
+**Name**              | Name of the Financial utilities connection                  | SFTP
+**File name**         | Name if the bank statement file                             | xxx.txt
+**Statement format**  | Name for the bank statement format used on the periodic task  | BAI2
+Status            | File state                                                  | • **Completed** - Succesfully created bank statement/s <br> • **Error** - Bank statement wasn't created, for example 'No matching bank account found' <br> • **Cancelled** - Option to cancel, which changes the status from Error to Cancelled.
+**Created date and time**  | Date and time the file was imported
+
+#### Buttons
+
+The following buttons are available on the Action Pane.
+
+Button 	          | Description	                                               
+:--               |:--    
+<ins> **Import** <ins>
+**Retrieve files**    | Opens periodic task 'Import bank statements via financial utilities connection'
+<ins> **Process** <ins>
+**Log**                | View info, warning or error logs
+**Process**            | Ability to reprocess error files
+<ins> **Process** <ins>
+**Bank statement**     | Opens Bank statement form, filtered to bank statement/s created for the file
+<ins> **Maintain** <ins>
+**Reset format**      | Ability to change error files to a different bank statement format
+**Cancel**            | Ability to change error files to cancelled status
+
+
+
