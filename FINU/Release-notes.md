@@ -91,7 +91,7 @@ Release date: TBD (Next version)
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
 23483		| Cash and bank management	| Modern bank reconciliation	| Electronic reporting import option to create Modern bank Reconciliation matching rules. <br>  [User guide](Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation-er-migration.md)
-23102		| Cash and bank management	| Import bank statement via financial utilities connection	| New form called **File states for bank statement import** to view and manage Bank statement files imported via periodic task **Import bank statements via financial utilities connection**. <br> It allows users to easily view logs and applicable files state for each file: <br> • Completed - Succesfully created bank statement/s <br> • Error - Bank statement wasn't created, for example 'No matching bank account found' <br> • Cancelled - Option to cancel, which changes the status from Error to Cancelled.
+23102		| Cash and bank management	| Import bank statement via Financial utilities connection	| New form called **File states for bank statement import** to view and manage Bank statement files imported via periodic task **Import bank statements via financial utilities connection**. <br> Electronic reporting and Custom bank statement formats are supported. <br> It allows users to easily view logs and applicable files state for each file: <br> • Completed - Succesfully created bank statement/s <br> • Error - Bank statement wasn't created, for example 'No matching bank account found' <br> • Cancelled - Option to cancel, which changes the status from Error to Cancelled.
 
 <ins>Bug fixes</ins>
 
