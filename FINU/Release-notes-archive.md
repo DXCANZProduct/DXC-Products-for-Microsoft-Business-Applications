@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes - Archive
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-07-25
+ms.date: 2025-09-11
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
