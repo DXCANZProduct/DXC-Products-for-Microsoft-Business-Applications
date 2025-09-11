@@ -83,6 +83,21 @@ Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in D
 Microsoft Dynamics 365 application 	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 
+#### Build 10.0.43.20250829TBD
+Release date: TBD (Next version)
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+23483		| Cash and bank management	| Modern bank reconciliation	| Electronic reporting import option to create Modern bank Reconciliation matching rules. <br>  [User guide](Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation-er-migration.md)
+23102		| Cash and bank management	| Import bank statement via financial utilities connection	| New form called **File states for bank statement import** to view and manage Bank statement files imported via periodic task **Import bank statements via financial utilities connection**. <br> It allows users to easily view logs and applicable files state for each file: <br> • Completed - Succesfully created bank statement/s <br> • Error - Bank statement wasn't created, for example 'No matching bank account found' <br> • Cancelled - Option to cancel, which changes the status from Error to Cancelled.
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+23808		| Organisation administration	| ABN lookup	| Modifying ABN lookup to improve speed.
 
 #### Build 10.0.43.202508293
 Release date: 29 August 2025
