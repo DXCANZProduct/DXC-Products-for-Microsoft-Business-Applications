@@ -98,7 +98,7 @@ Number	  	| Module	| Functionality	  	| Description
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
 23808		| Organisation administration	| ABN lookup	| Modifying ABN lookup to improve speed.
-24056		| Cash and bank management	| Modern bank reconciliation	| 'Import bank statement' button not available on form 'Bank statement' when Modern bank reconciliation is enabled and Finance Utilities is disabled. Only related to 10.0.43.202508293.
+24056		| Cash and bank management	| Modern bank reconciliation	| 'Import bank statement' button not available on form 'Bank statement' when Modern bank reconciliation feature is enabled and Finance Utilities feature is disabled. Only related to 10.0.43.202508293.
 
 #### Build 10.0.43.202508293
 Release date: 29 August 2025
