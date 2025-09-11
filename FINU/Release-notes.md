@@ -50,26 +50,6 @@ Release notes for other models included in product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
 
-### Microsoft deprecation notice
-
-[Microsoft notice](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#feature-deprecation-effective-october-2024)
-- **Likely to affect**: Companies that uses **Database** credential type for their **Azure blob** connections. These connections can be used to import bank statements and/or export electronic reporting format files. <br>
-- **Status**: Rollout for the change by Microsoft begins in **October 2024** in a phased manner. Changes will be backported to **10.0.41 (PU65)** and all later releases. <br> 
-- **What do you need to do if affected**: 
-	- If decide to use **Blob Service SAS URL** in Key vault:
-		- Step 1 - Ensure Finance Utilities version 10.0.40.202409192 is deployed . If using **Connection string** Key vaults, older Finance Utilities versions should be fine.
-		- Step 2 - Create Blob service SAS URL in Azure portal - [User guide](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)
-		- Step 3 - In **Key vault parameters** create a Secret using the value created in step 2.
-		- Step 4 - Change all applicable **Azure blob** connections: <br> 
-			• Credential type: Key Vault <br>
-	 		• Connection string: Secret setup in step 3
-    - If decide to use **Connection string** in Key vault:
-		- Step 1 - If using **Connection string** Key vaults, older Finance Utilities versions should be fine. Not required to upgrade to 10.0.40.202409192
-		- Step 2 - Create Connection string in Azure portal
-		- Step 3 - In **Key vault parameters** create a Secret using the value created in step 2.
-		- Step 4 - Change all applicable **Azure blob** connections: <br> 
-			• Credential type: Key Vault <br>
-	 		• Connection string: Secret setup in step 3
 
 # Current version
 
