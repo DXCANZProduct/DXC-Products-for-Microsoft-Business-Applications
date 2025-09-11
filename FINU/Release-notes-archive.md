@@ -89,6 +89,144 @@ This section describes the features that have been removed, or planned to be rem
 
 # Previous version(s)
 
+### Release 10.0.38.20240807
+
+#### Build 10.0.38.202408071
+Release date: 7 August 2024 <br>
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+18347		| Cash and bank management | Bank accounts | Only enable field 'Include balance line in record count' when field 'Extra balance line on EFT' is enabled.
+18550		| Cash and bank management | Bank reconciliation	| Disable button 'Match id' in Bank reconciliation Worksheet when Financial utilities parameter field 'Auto assign Match Id' is set to _Yes_. Else it errors with 'No statement lines have been marked'. Clicking Match Id is unnecessary as the Match id will automatically be assigned when user clicks button 'Match' in the Bank reconciliation Worksheet.
+18692		| Cash and bank management | Bank reconciliation	| When feature 'Enable posting of new transactions in bank reconciliation' is enabled, the ability to post mark new transactions are available in the Bank reconciliation Worksheet. If user used this posting, and also posted the bank statement, a duplicate mark new transaction was posted. <br> This was only relevant for offset types Customer (when manually marked as new in Recon - not via recon rule that creates customer payment journal), Vendor or Bank.
+18689		| Organisation administration	| ABN validation report	| Previously when running report 'ABN validation' the API was run for each vendor/customer with an ABN allocated. Since the fields are now stored on the TaxVatNumTable the report will now not run the API anymore. The relevant fields on the TaxVatNumTable can be updated to current Australian Business Register data by either: <br> • Organisation administration > Periodic > Update ABN validation <br> • 'Run update' on 'Organisation administration > Enquiries and reports > ABN validation review. 
+18158		| Various 	| SFTP Connection | PR fixes to 18158 SSH key vault Azure blob storage
+
+
+### Release 10.0.37.20240625
+
+#### Build 10.0.37.202406251
+Release date: 25 June 2024 <br>
+
+<ins>Manual steps required</ins>
+- If using DXC encryption / decryption, please see 17274. Required to update new field **Counter party's public key** with the applicable key.
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+18126		| Accounts payable	| Generate file per payment line	| New option called **Generate file per payment line** on **Methods of payment** for _Electronic reporting export formats_. <br> When set to Yes, the vendor payment's **Generate payments** will create an EFT file per journal line. <br> ![Generate file per payment line](Images/ReleaseNotes_20240626_1.png "Generate file per payment line")
+17230		| Various 	| Azure Connection	| Ability to use **Azure SAS Storage account level token** for Connection string on Azure connections.  <br> Applicable to: <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections <br> • Accounts receivable > Payments setup > Financial utilities connections (AR utilities feature) <br> • Organization administration > Electronic reporting > Electronic reporting export connections
+18158		| Various 	| SFTP Connection	| New **Credential type** option **Private key** provides the option to store SSH key file in Azure, setup in D365 as Key vault parameter and use on Finance utilities SFTP connection. <br> Applicable to: <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections <br> • Accounts receivable > Payments setup > Financial utilities connections (AR utilities feature) <br> • Organization administration > Electronic reporting > Electronic reporting export connections <br> <br> ![Private key](Images/ReleaseNotes_20240626_3.png "Private key")
+17274		| Organization administration | DXC encryption parameters	| **Public key** (sender's public key) and **Receiver's public key** replaced with new field **Counter party's public key**. <br> Note: Manual step required to update new field with the applicable key.
+18149		| Budgeting	| Import budget | Ability to **Generate template** based on setup on **Budget utilities parameters**: <br> • Number of months <br> • Dimension format <br> ![Generate budget import template](Images/ReleaseNotes_20240626_2.png "Generate budget import template")
+
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+18174		|  Cash and bank management	| Reconciliation matching rule set - Customer offset type | Where the Reconciliation matching rule set contained: <br> • Multiple **Mark new transactions** rules offsetting to **Customer** and <br> • Set to automatically post the journal and <br> • One of the rules failed to post the journal (for example customer was stopped for payments) <br> The subsequent rules were not run.
+18202		| Accounts receivable	| Interest notes - Due date	| When AR parameter field 'Use customer payment terms' for Interest notes is set to Yes, the Due date correctly included payment terms for the interest note in Customer transactions, but not on 'Settle transactions' or 'Detailed due date list report'.
+
+
+### Release 10.0.37.20240530
+
+#### Build 10.0.37.202405302
+Release date: 30 May 2024 <br>
+
+<ins>Manual actions required</ins>
+- Delete any existing batch job for periodic task 'Update ABN validation' and create new batch job.
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+17215		| Various 	| Azure Connection	| Replace deprecated [Microsoft.WindowsAzure.Storage](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/storage/windowsazurestorage%28deprecated%29?view=azure-dotnet-legacy) with [Azure.Storage.Blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-dotnet-get-started?tabs=azure-ad).  <br> Applicable to: <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections <br> • Accounts receivable > Payments setup > Financial utilities connections (AR utilities feature) <br> • Organization administration > Electronic reporting > Electronic reporting export connections <br> <br> DXC_AzureClient 2024.05.30.1
+16595		| Various	| Error messages	| Improved error messages for: <br> • Electronic reporting export connections - for errors with setup when generating ER file. <br> • Run reconcilation matching rule that can't find the customer account - include value of bank statement field with issue
+N/A		| DXC License	| Licensing		| New DXC License model 10.0.37.202405231. See [Release notes](../LMG/Release-notes.md) for more details.
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+17981		| Accounts payable | Pending invoice	| 10.0.40 build error caused by missing reference for the ProcessAutomation Model which is now used by the VendInvoiceInfoTable. <br> Used to determine whether the Pending invoices button is enabled/disabled in the Vendor Purchase Invoice form.
+17990		| Cash and bank management	| Reconciliation matching rule - Customer offset type using Customer references | The created customer payment journal uses the first customer account for all the found lines
+18014		| ABN validation	| Security	| New privileges added to access ABN lookup and ABN status: <br> • ABN Validation <br> • Maintain ABN Status <br> •  Maintain ABN validation lookup <br> • Maintain ABN validation review <br> • View ABN Status <br> • View ABN validation lookup <br> • View ABN validation review
+17998		| ABN validation	| Rename objects	| Rename objects ending with DXC_Extension: <br> • TaxVATNumTableForm_DXC_Extension <br> • TaxSalesTaxProcessReferenceDataInquire.DXC_Extension <br> • TaxSalesTaxTransactionStatusInquire.DXC_Extension <br> • TaxSalesTaxTrnStatusInquirWithoutTaxPrv.DXC_Extension <br> • TaxVATNumTable.DXC_Extension
+18018		| Various   		| Rename objects	| Rename objects ending with DXC_Extension: <br> • BankStatementFormatForm_DXC_Extension <br> • BankChequeTableForm_DXC_Extension <br> • VendPaymMode_DXC_Extension <br> • BankTreasurerWorkspace_DXC_Extension <br> • VendorPaymentHistory_DXC_Extension <br> • BankReconciliationMatchRule_DXC_Extension <br> • CustPaymMode_DXC_Extension <br> • BankStatementTableForm_DXC_Extension
+
+### Release 10.0.37.20240325
+
+#### Build 10.0.37.2024032531
+Release date: 16 May 2024 <br>
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+17524		| Various	| SFTP connection	| Upgrade SFTP SSH.NET to latest [2024.0.0](https://github.com/sshnet/SSH.NET/releases/tag/2024.0.0) release. Applicable to: <br> • Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections <br> • Accounts receivable > Payments setup > Financial utilities connections (AR utilities feature) <br> • Organization administration > Electronic reporting > Electronic reporting export connections
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+17966		| Accounts receivable	| Generate payments | Fix for error 'Root element is missing', when generating a payment using a non ER Export format.
+
+
+#### Build 10.0.37.2024032522
+Release date: 26 April 2024 <br>
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+17385		| Cash and bank management	| Reconciliation matching rule | Ability to set a **Description** mask for Mark new transactions for offset types **Ledger, Vendor and Bank**. <br> Related to 17290 that added this functionality for offset type Customer.  <br> **Editor** provides the ability to set a combination of static fields and placeholders: <br> • Currency <br> • Description <br> • Amount <br> • Document number <br> • Entry reference <br> • Bank statement transaction code <br> • Reference No. <br> • Related bank account <br> • Name (Trading party) <br> • Bank account <br> • Bank account number <br> • Bank groups <br> Note: If File name mask is not populated, the Bank statement line's Description will be written to new transaction's Description. <br> ![Recon matching rule](Images/ReleaseNotes_20240329_3.png "Recon matching rule")
+17724		| Licensing	| N/A			| Improvements to licensing - see [Licensing release notes](../LMG/Release-notes.md#release-10037202404262) for detailed information.
+
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+17633		| Accounts receivable	| Interest notes - Due date | When AR parameter setting 'Use Customer payment terms' was set to _Yes_, it resulted in incorrect due dates for Free text invoices. <br> Only relevant to release 10.0.36.202403251
+17448		| Accounts payable	| Method of payment - EFT file name Placeholders | Editor Placeholder picker displayed Bank statement fields added for Reconciliation matching rule's Description mask. <br> Only relevant to release 10.0.36.202403251
+17479		| Accounts receivable	| Method of payment - EFT file name Placeholders | Editor Placeholder picker displayed Vendor's Method of payment and Description. Updated to use Customer for these two fields. <br> Only relevant to release 10.0.36.202403251
+
+#### Build 10.0.36.202403251
+Release date: 25 March 2024 <br>
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+17092		| Accounts payable <br> Accounts receivable	| ABN and GST validation	| _Only applicable to Australia and only visible where ABN validation is enabled for the Legal entity_ <br> • New fields added to TaxVatNumTable: <br> - **Status**: ABN status for example Active or Cancelled <br> - **Entity type**: Entity type for the ABN, for example 'Australian Private Company' <br> - **GST from**: Populated where the ABN is registered for GST * <br> - **GST to**: Populated where the ABN is registered for GST * <br> - **GST registered**: Set to _Yes_ where 'GST to' date is in the future *  <br> ![ABN validation](Images/ReleaseNotes_20240329_1.png "ABN validation") <br> * The three new GST fields have also been added to the **ABN status** dialog. <br> ![ABN status](Images/ReleaseNotes_20240329_2.png "ABN status") <br> Above new fields are updated to current government data when running either: <br> • **Update ABN validation** periodic task <br> • **Run update** on ABN validation review form <br> • When adding new records via **ABN lookup** <br> [User guide](Processing/ABN/ABN-lookup-and-validation.md)
+17159 <br> 17233 | Accounts payable <br> Accounts receivable | ABN validation | _Only applicable to Australia and only visible where ABN validation is enabled for the Legal entity_ <br> New form **ABN validation review** for users to review new/updated ABN records. For example an ABN is not registered for GST anymore. <br> Select applicable record(s) and select **Mark as reviewed** to update their reviewed status. <br> **Run update** can be used to run the web service to update ABNs with current data from the Australian Business Register. <br> Update can also be run via 'Organization administration > Periodic > **Update ABN validation** <br> ![Review](Images/ReleaseNotes_20240329_8.png "Review")
+17286		| Accounts payable	| ABN validation | _Only applicable to Australia and only visible where ABN validation is enabled for the Legal entity_ <br> Ability for users to check the current ABN and GST status for a vendor while entering an invoice. <br> **ABN status** button is enabled when the 'Tax exempt number'/'ABN' is populated for the vendor invoice line. <br> ![Vendor invoice ABN status](Images/ReleaseNotes_20240329_7.png "Vendor invoice ABN status") 
+16924		| Organisation administration | Electronic reporting export connections | Log functionality added <br> ![Log](Images/ReleaseNotes_20240329_5.png "Log")
+17248		| Cash and bank management <br> Organisation administration | • Financial utilities connections <br> • Electronic reporting export connections | New Connection type option **API Endpoint**. <br> Can thus now import bank statements as an inbound web service or export ER files as an outbound web service. <br> Also works with Azure function. <br> [Import user guide](Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.html#api-endpoint) <br> [Export user guide](Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.html#step-1---setup-electronic-reporting-export-connections) <br> [Web API Endpoint Technical guide](Technical/Web-API-Endpoint.md)
+17290		| Cash and bank management	| Reconciliation matching rule | Ability to set a **Description** mask for Mark new transactions. <br> This release includes only **Customer** offset types. Roadmap: include the other offset types Vendor, Bank and Ledger. <br> **Editor** provides the ability to set a combination of static fields and placeholders: <br> • Currency <br> • Description <br> • Amount <br> • Document number <br> • Entry reference <br> • Bank statement transaction code <br> • Reference No. <br> • Related bank account <br> • Name (Trading party) <br> • Bank account <br> • Bank account number <br> • Bank groups <br> Note: If File name mask is not populated, the Bank statement line's Description will be written to new transaction's Description. <br> ![Recon matching rule](Images/ReleaseNotes_20240329_3.png "Recon matching rule") <br> ![Editor](Images/ReleaseNotes_20240329_4.png "Editor") <br> ![Journal](Images/ReleaseNotes_20240329_9.png "Journal")
+16827		| Accounts receivable	| EFT file name on Method of payment	| Ability to set EFT file name for Customer payment files (direct debits) on the Method of payment. <br> [User guide](Setup/ACCOUNTS-RECEIVABLE/Customer-payments.md)
+16600		| Accounts payable	| Vendor payment journal | When the vendor payment is generated, the **Export file name** displayed on the Generate payments dialog is written to the relevant vendor payment journal lines' new field called **Export file name**. <br> Note: This does not yet include file names generated by Electronic reporting config. <br> ![Export file name](Images/ReleaseNotes_20240329_6.png "Export file name")
+17422		| N/A		| N/A |  Update to **Table groups** to support "transaction" types being truncated in copy environment feature via Power platform admin center.
+
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+16997		| Accounts payable	| EFT file name editor on Method of payment	| Refresh required to save updates to the file name using Editor <br> ![File name editor](Images/ReleaseNotes_20240329_10.png "File name editor")
+16827		| Accounts receivable | EFT file name on Method of payment | If the same payment method PaymMode exists in the Accounts payable (AP) module, the EFT file name setup from the AP method of payment was used
+17063		| Accounts receivable | Interest notes - Due date | Due date now updated before the transaction records are created. <br> Resolves error: "Cannot edit a record in Customer transactions (CustTrans). An update conflict occurred due to another user process deleting the record or changing one or more fields in the record."
+17119		| Accounts payable <br> Accounts receivable	| ABN lookup	| Fix to 'Company name' in Search results
+16925		| Organisation administration	| Electronic reporting jobs	| When using an Electronic reporting destination with document type in conjunction with Electronic reporting export connection, the record created in the Electronic reporting jobs will now also contain: <br> • Document handling attachment - ensure your file extension is added to supported File types in Document management parameters <br> • Field 'Files' populated with the file name.
+17012		| Cash and bank management	| Reverse mark as new transaction	| Support added for reversing **mark as new** transactions offsetting to **vendor, bank or customer** within the same legal entity. <br> 15693 resulted on an incorrect sign on the reverse transaction on the bank, vendor and customer <br> Supports features: <br> • Enable bank reconciliation reversal even new transactions exist in posted bank statement <br> • Reverse posted bank statement with new transactions <br>
+17126		| Cash and bank management	| Reconciliation matching rule	| When used to create automatically posted Customer dishonour payments, the automatically matching in the Bank reconciliation failed. 
+17437		| Cash and bank management	| Bank statement periodic import | Archive issue when connection has high latency. File deleted before it could copy to Archive. Change: Before delete the result of copy is awaited and retried for 1 seconds 3 times before marking as an exception.
+
+
 ### Release 10.0.36.20231116
 
 #### Build 10.0.36.2023111671
