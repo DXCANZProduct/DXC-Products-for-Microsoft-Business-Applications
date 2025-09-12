@@ -63,6 +63,13 @@ Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in D
 Microsoft Dynamics 365 application 	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 
+#### Recordings
+
+The following recordings are available for this release:
+- [Modern bannk reconciliation - Overview](https://www.youtube.com/watch?v=taaHtFOrkXE&list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO&index=1)
+- [Modern bannk reconciliation - Deep-dive](https://www.youtube.com/watch?v=cfZSdWN3QoM&list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO&index=2)
+- [Modern bannk reconciliation - Electronic reporting import](https://www.youtube.com/watch?v=k4Swv6bFINQ&list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO&index=3)
+
 #### Build 10.0.43.20250829TBD (Next version)
 Release date: TBD 
 
