@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-09-11
+ms.date: 2025-09-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -70,8 +70,8 @@ The following recordings are available for this release:
 - [Modern bank reconciliation - Deep-dive](https://www.youtube.com/watch?v=cfZSdWN3QoM&list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO&index=2)
 - [Modern bank reconciliation - Electronic reporting import](https://www.youtube.com/watch?v=k4Swv6bFINQ&list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO&index=3)
 
-#### Build 10.0.43.20250829TBD (Next version)
-Release date: TBD 
+#### Build 10.0.43.202508291 (Current version)
+Release date: 15 September 2025 
 
 <ins>New features</ins>
 
@@ -87,7 +87,7 @@ Number	  	| Module	| Functionality	  	| Description
 23808		| Organisation administration	| ABN lookup	| Modifying ABN lookup to improve speed.
 24056		| Cash and bank management	| Modern bank reconciliation	| 'Import bank statement' button not available on form 'Bank statement' when Modern bank reconciliation feature is enabled and Finance Utilities feature is disabled. Only related to 10.0.43.202508293.
 
-#### Build 10.0.43.202508293 (Current version)
+#### Build 10.0.43.202508293 (Previous version)
 Release date: 29 August 2025
 
 
