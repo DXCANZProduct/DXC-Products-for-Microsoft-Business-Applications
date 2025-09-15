@@ -70,7 +70,7 @@ The following recordings are available for this release:
 - [Modern bank reconciliation - Deep-dive](https://www.youtube.com/watch?v=cfZSdWN3QoM&list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO&index=2)
 - [Modern bank reconciliation - Electronic reporting import](https://www.youtube.com/watch?v=k4Swv6bFINQ&list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO&index=3)
 
-#### Build 10.0.43.202508291 (Current version)
+#### Build 10.0.43.202508294 (Current version)
 Release date: 15 September 2025 
 
 <ins>New features</ins>
