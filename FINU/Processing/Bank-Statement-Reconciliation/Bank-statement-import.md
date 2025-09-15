@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Bank statement reconciliation processing - Bank statement import 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-09-10
+ms.date: 2025-09-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -96,7 +96,7 @@ Button 	          | Description
 **Retrieve files**    | Opens periodic task 'Import bank statements via financial utilities connection'
 <ins> **Process** <ins>
 **Log**                | View info, warning or error logs
-**Process**            | Ability to reprocess error files
+**Process**            | Ability to reprocess error files. File attached in document handling will be used for re-process - Required to assign a 'File attachment document type' in 'Financial utilities parameters.'
 <ins> **Process** <ins>
 **Bank statement**     | Opens Bank statement form, filtered to bank statement/s created for the file
 <ins> **Maintain** <ins>
