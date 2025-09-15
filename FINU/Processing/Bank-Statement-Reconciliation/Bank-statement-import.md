@@ -96,7 +96,7 @@ Button 	          | Description
 **Retrieve files**    | Opens periodic task 'Import bank statements via financial utilities connection'
 <ins> **Process** <ins> | 
 **Log**                | View info, warning or error logs
-**Process**            | Ability to reprocess error files. File attached in document handling will be used for re-process - Required to assign a 'File attachment document type' in 'Financial utilities parameters.'
+**Process**            | Ability to reprocess error files. File attached in document handling will be used for re-process - Required to assign a 'File attachment document type' in 'Financial utilities parameters' in order to attach the file when the file is imported with the periodic task.
 <ins> **Process** <ins> |
 **Bank statement**     | Opens Bank statement form, filtered to bank statement/s created for the file
 <ins> **Maintain** <ins> |
