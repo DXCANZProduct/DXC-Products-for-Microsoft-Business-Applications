@@ -3,9 +3,9 @@
 
 title: EDI 3PL
 description: EDI 3PL Setup - Trading partners
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-05-01
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-09-17
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  SAB_EDITradingPartner, InventLocations
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Monica du Toit
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
 ms.search.region: IconEDI3PLDocuments
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
+ms.author: Monica du Toit
 ms.search.validFrom:   2016-05-31
 ms.dyn365.ops.version:  AX 7.0.1
 ---
@@ -45,15 +45,15 @@ This section describes the setup applicable to **3PL** trading partners.
 #### Options
 The following table describes the 3PL module fields that are available on the **Options** FastTab of the **Trading partners** page.
 
-**Field**                            | **Description**               
-:---------                          |:--------
-**UOM**                             |	Unit of measure mappings. Ability to map a Trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). Used on in- and outbound documents 
-**Inventory journal name mapping**  |	Select inventory journal to use for inventory adjustments. <br> Note: For further information see [Setup inventory journal name mapping](3PL-SETUP/Inventory-journal-name-mapping.md)
-**Inventory status Id mapping**     |	Inventory statuses are used within D365 to categorize inventory. <br> Note: For further information see [Setup inventory status id mapping](3PL-SETUP/Inventory-status-Id-mapping.md)
-**Disposition code mapping**        |	Specify how to process an item that is returned by a customer. <br> Note: For further information see [Setup disposition code mapping](3PL-SETUP/Disposition-code-mapping.md)
-**Item arrival**                    |	Select item arrival journal to use for processing inventory receipts. Options from **Inventory management > Setup > Journal names > Warehouse management**
-**Transaction direction mapping**   |	Select transaction direction to use for processing inventory adjustment movement document. <br> Note: For further information see [Setup transaction direction mapping](3PL-SETUP/Transaction-direction-mapping.md)
-**Order purpose**                   |	Select order purpose to use when sending picking list. If left blank/unmapped: the values Original, Change or Cancellation will be sent to the 3PL Trading partner. <br> Note: For further information see [Setup order purpose group](3PL-SETUP/Order-purpose-group.md)
+**Field**                            | **Description**                | **Where used**
+:---------                          |:--------                        |:--------
+**UOM**                             |	Unit of measure mappings. Ability to map a Trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). | • In- and outbound documents 
+**Inventory journal name mapping**  |	Select inventory journal to use for inventory adjustments. <br> Note: For further information see [Setup inventory journal name mapping](3PL-SETUP/Inventory-journal-name-mapping.md) | • Inventory adjustment - Counting <br> • Inventory adjustment - Movement
+**Inventory status Id mapping**     |	Inventory statuses are used within D365 to categorize inventory. <br> Note: For further information see [Setup inventory status id mapping](3PL-SETUP/Inventory-status-Id-mapping.md) | • All inbound documents
+**Disposition code mapping**        |	Specify how to process an item that is returned by a customer. <br> Note: For further information see [Setup disposition code mapping](3PL-SETUP/Disposition-code-mapping.md) | • Shipment receipt - Return order
+**Item arrival**                    |	Select item arrival journal to use for processing inventory receipts. Options from **Inventory management > Setup > Journal names > Warehouse management** | • Inbound documents that create an arrival journal
+**Transaction direction mapping**   |	Select transaction direction to use for processing inventory adjustment movement document. <br> Note: For further information see [Setup transaction direction mapping](3PL-SETUP/Transaction-direction-mapping.md) | • Inventory adjustment - Movement
+**Order purpose**                   |	Select order purpose to use when sending picking list. If left blank/unmapped: the values Original, Change or Cancellation will be sent to the 3PL Trading partner. <br> Note: For further information see [Setup order purpose group](3PL-SETUP/Order-purpose-group.md) | • Picking list
 
 - Data entity: EDI Warehouses
 
