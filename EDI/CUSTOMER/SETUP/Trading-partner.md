@@ -5,7 +5,7 @@ title: EDI Customer
 description: EDI Customer Setup - Trading partners
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-04-03
+ms.date: 2025-09-17
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,10 +51,10 @@ The following table describes the customer module fields that are available on t
 **Trading partner GLN**            | Trading partner's GLN.
 **Buyer code**                     | Company's default Buyer code for the Trading partner. This can be overridden on Customer purchase order staging record, to be used on all outbound documents.
 <ins>**Order**</ins>	             |
-**Customer EDI order types**       |	EDI purchase orders can be received from trading partners with many order types.  The type identifier received can change the way the order is processed within D365. <br> Note: For further information see [Setup purchase order types](CUSTOMER-SETUP/Purchase-order-types.md)
-**Order purpose**                  |	Code identifying the purpose of the document. <br> Note: For further information see [Setup order purpose](CUSTOMER-SETUP/Order-purpose-group.md)
-**Order line change type group**   |	Code specifying the type of change to the line item. <br> Note: For further information see [Setup order line change type](CUSTOMER-SETUP/Order-line-change-type-group.md)
-**POA response code group**       |	POA Response codes are used to identify the status of information used in a purchase order acknowledgement for each customer. Note: For further information see [Setup POA response codes](CUSTOMER-SETUP/POA-response-code-group.md)
+**Customer EDI order types**       |	EDI purchase orders can be received from trading partners with many order types.  The type identifier received can change the way the order is processed within D365. <br> Applies to Customer purchase order and Customer purchase order change. <br> Note: For further information see [Setup purchase order types](CUSTOMER-SETUP/Purchase-order-types.md)
+**Order purpose**                  |	Code identifying the purpose of the document. <br> Applies to Customer purchase order and Customer purchase order change. <br> Note: For further information see [Setup order purpose](CUSTOMER-SETUP/Order-purpose-group.md)
+**Order line change type group**   |	Code specifying the type of change to the line item. <br> Applies to Customer purchase order change.  <br> Note: For further information see [Setup order line change type](CUSTOMER-SETUP/Order-line-change-type-group.md)
+**POA response code group**       |	POA Response codes are used to identify the status of information used in a purchase order acknowledgement for each customer. <br> Applies to Customer purchase order acknowledgement.  <br> Note: For further information see [Setup POA response codes](CUSTOMER-SETUP/POA-response-code-group.md)
 **No Backorders**                 |	Identify if the trading partner accepts backorders - Y/N. <br> Where the **Customer purchase order acknowledgement's** document setting **Quantity type** is set to **Reserved quantity**, the sales line’s ordered quantity is adjusted to the quantity reserved for the sales line. <br> The setting is also used on the Customer purchase order acknowledgement to identify **full** or **partial** shipments.
 **UOM**                           |	Unit of measure mappings. Ability to map a customer’s unit of measure (example kgs) to D365 unit of measure (example kg). Used on in- and outbound documents **Sales unit** <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM-mapping.md)
 **Enable store code identification**  | When set to _Yes_, the Customer purchase order header field **Store code** (instead of Trading partner GLN) will be used to find the applicable Trading partner to create the sales order against.
