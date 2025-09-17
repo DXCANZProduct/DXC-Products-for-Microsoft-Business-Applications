@@ -49,7 +49,7 @@ EDI contains the following documents pertaining to Customer Trading partners.
 	- Customer purchase order acknowledgement (POA) - Allows D365 to send an Acknowledgement once a customer purchase order has been received and verified.
 	- Customer advanced shipping notice (ASN) - Allows D365 to send delivery information to the customer with the packaging details.
 	- Sales invoice - Allows D365 to send a tax invoice document to the customer.
- 	- Project sales invoice - Allows D365 to send a project invoice for a sales order to the customer. 
+	- Project sales invoice - Allows D365 to send a project invoice for a sales order to the customer. 
 
 ## Setup
 ### Core setup
