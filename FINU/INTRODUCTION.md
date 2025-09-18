@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Introduction to Finance Utilities 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-03-25
+ms.date: 2025-09-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,6 +42,15 @@ The DXC Finance Utilities module provides enhanced functionalities to Microsoft 
         -   Ability to reconcile a small balance correction adjustment
         -   Ability to prevent reconciliation of unmatched statements
     -   Periodic task to automatically import bank statements from FTP/FTPS, SFTP or Azure blob. Decryption option included.
+    -   Modern bank reconciliation:
+        - Offset company - Ability to post the offset to intercompany ledger, bank, vendor or customer.
+        - Offset type bank - Modern bank reconciliation doesn't include an option for offset type Bank which is used for bank transfers. In Finance utilities we support this option under 'Generate voucher'.
+        - Offset type customer:
+            - Ability to use 'Customer reference' to find the Customer account.
+            - Field format - enhanced option in Reconciliation matching rule for using part of a bank statement field to find the invoice / customer.
+            - One customer payment journal for all matched bank statement lines (only 'Generate customer payment').
+            - Posting options (only 'Generate customer payment').
+     - Correction amounts - Ability to enter correction amounts at time of matching Bank statement transactions to Bank transactions.
 -   **Accounts payable**
     -   Sundry vendor payment management
     -   BPAY vendor payment
@@ -87,11 +96,13 @@ Finance utilities minimises the manual actions required for reconciling bank acc
 - [Populate accounts payable document number](Setup/CASH-AND-BANK-MANAGEMENT/Populate-account-payable-payment-document-number.md)
 - [Bank reconciliation matching rules](Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md)
 - [Customer payment and settle of one invoice via bank reconciliation](Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules.md#customer-payment-and-settle-of-invoice-11)
+- [Modern bank reconciliation](Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation.md)
 
 #### Processing
 - [Bank statement import](Processing/Bank-Statement-Reconciliation/Bank-statement-import.md)
 - [Bank reconciliation worksheet](Processing/Bank-Statement-Reconciliation/Bank-reconciliation-worksheet.md)
 - [Reports](Processing/Bank-Statement-Reconciliation/Cash-and-bank-management-reports.md)
+- [Modern bank reconciliation](Processing/Bank-Statement-Reconciliation/Modern-bank-reconciliation.md)
 
 #### Setup for automatic import of bank statement
 - [Encryption/decryption](Setup/ENCRYPTION/Encryption-decryption.md) - where the import file should be decrypted
