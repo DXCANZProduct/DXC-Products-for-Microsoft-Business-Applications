@@ -69,6 +69,8 @@ The DXC Finance Utilities module provides enhanced functionalities to Microsoft 
 - **Budgeting**
     -   Budget import with separate column for each period
 
+## Demonstration
+Watch DXC Technology’s short demonstration on Finance Utilities [here](https://www.youtube.com/playlist?list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO)
 
 #  Cash and bank management
 ## Bank statement import and reconciliation
@@ -226,8 +228,6 @@ Modification allows users to automatically save the electronic reporting file to
 
 # Other
 
-### Demonstration
-Watch DXC Technology’s short demonstration on Finance Utilities [here](https://www.youtube.com/playlist?list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO)
 
 ### Data entities
 Finance utilities include data entities to support its enhancements to D365.
