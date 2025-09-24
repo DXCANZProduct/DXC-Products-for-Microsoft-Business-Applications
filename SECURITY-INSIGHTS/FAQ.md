@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Security Insights for D365 FO - Frequently asked questions
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-07-03
+ms.date: 2025-09-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,11 +42,20 @@ Security Insights for D365FO only needs Read-Access to read data from Azure Appl
 
 Note: DXC does not collect any usage information, or telemetry against any other installed system or ISV module from Security Insights for D365FO. 
 
-## 	Troubleshooting
+# 	Troubleshooting
 
 ###   Product is installed but functionality not visible
 If the product is available in About > Version, check if it has been enabled in **Feature management**. <br>
 If you don't see **Security Insights for D365FO**, click **Check for updates**. <br>
 **Enable** the feature. <br>
+
+### Fetch error
+
+Error: The web service call failed for %. The remote server returned an error: (400) Bad Request. <br> 
+
+Method to fix:
+1. Check Validation on 'Insights for user access and security parameters' for the Azure Application Insights instance.
+2. Check for users with special characters in their id
+
   
 
