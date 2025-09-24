@@ -54,7 +54,7 @@ If you don't see **Security Insights for D365FO**, click **Check for updates**. 
 Error: The web service call failed for %. The remote server returned an error: (400) Bad Request. <br> 
 
 Method to fix:
-1. Check Validation on 'Insights for user access and security parameters' for the Azure Application Insights instance.
+1. Confirm configuration for the Azure Application Insights instance is correct and validate in 'Insights for user access and security parameters' .
 2. Check for users with special characters in their id
 
   
