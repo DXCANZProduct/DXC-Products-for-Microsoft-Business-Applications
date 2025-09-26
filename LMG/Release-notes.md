@@ -5,7 +5,7 @@ title: License manager
 description: License manager - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-22
+ms.date: 2025-09-26
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -65,7 +65,7 @@ Release date: 24 June 2025
 
 | Number | Functionality                                                       | Description                                                                                                                                             |
 | :----- | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 21608  | Upgraded license API authentication | Upgraded license API authentication from ADAL.NET to MSAL.NET, supported version 4.61.3.0 |
+| 21608  | Upgraded license API authentication | Upgraded license API authentication from ADAL.NET to MSAL.NET, supported version 4.61.3.0 | Microsoft.IdentityModel.Clients.ActiveDirectory has been deprecated and no longer supported by FinOps and needed to be upgraded to now use Microsoft.Identity.Client
 
 ### DXC License
 
@@ -114,13 +114,10 @@ Release date: 30 July 2025
 
 <ins>Bug fixes</ins>
 
-| Number | Functionality                                                | Description                                                                                     |
-| :----- | :----------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
-| 20123 | Customer environment - Support "duplicate" serial | Restored the ability to add multiple tenants for the same serial number in customer environments.
-This supports scenarios where companies use a temporary, cost-effective tenant (e.g., onmicrosoft.com) prior to go-live, and later transition to their primary domain (e.g., .com).
- |
-| 23075| Web app - License expiry | Fixed issues reported in the License Expiry Report for the upcoming three-month period.
-The report now accurately reflects licenses approaching expiration. |
+Number | Functionality                                                | Description                                                                                     
+:----- | :----------------------------------------------------------- | :----------------------------------------------------------------------------------------------
+20123 | Customer environment - Support "duplicate" serial | Restored the ability to add multiple tenants for the same serial number in customer environments. This supports scenarios where companies use a temporary, cost-effective tenant (e.g., onmicrosoft.com) prior to go-live, and later transition to their primary domain (e.g., .com).
+23075| Web app - License expiry | Fixed issues reported in the License Expiry Report for the upcoming three-month period. The report now accurately reflects licenses approaching expiration.
 
 
 ## Microsoft Power Apps
