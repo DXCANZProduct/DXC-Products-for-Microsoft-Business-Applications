@@ -118,10 +118,6 @@ Number | Functionality                                                | Descript
 23075| Web app - License expiry | Fixed issues reported in the License Expiry Report for the upcoming three-month period. The report now accurately reflects licenses approaching expiration.
 
 
-## Microsoft Power Apps
-
-### DXC License Manager Canvas App
-
 # Previous version(s)
 
 ## D365 Finance and Operations
