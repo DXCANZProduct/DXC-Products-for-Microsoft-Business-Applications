@@ -5,7 +5,7 @@ title: License manager
 description: License manager - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-09-26
+ms.date: 2025-09-30
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -46,26 +46,24 @@ Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | No	          | 10.0.40.202412041
 Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No	          | 10.0.43.202506241
 
-#### **Release 10.0.43.202506241**
+#### **Release 10.0.43.202509291**
 
-DXC License Manager 10.0.43.202506241 runs on the following Microsoft releases
+DXC License Manager 10.0.43 runs on the following Microsoft releases
 
-| Base                               | Version | Release                                                                                                                                                         |
-| :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+Base                               | Version | Release                                                                                                                                                         
+:--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 Microsoft Dynamics 365 application	| 10.0.43  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 
-
-<b>Build 7.0.7521.60 </b>
-
-Release date: 24 June 2025
+Release date: 29 September 2025
 
 <ins>Bugs</ins>
 
-| Number | Functionality                                                       | Description                                                                                                                                             |
-| :----- | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 21608  | Upgraded license API authentication | Upgraded license API authentication from ADAL.NET to MSAL.NET, supported version 4.61.3.0 | Microsoft.IdentityModel.Clients.ActiveDirectory has been deprecated and no longer supported by FinOps and needed to be upgraded to now use Microsoft.Identity.Client
+Number | Functionality                                                       | Description                                                                                                                                             
+:----- | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------ 
+24213  | Example models | License manager release 10.0.43.202506241 incorrectly included feature example models. 
+
 
 ### DXC License
 
@@ -129,18 +127,21 @@ Number | Functionality                                                | Descript
 ## D365 Finance and Operations
 
 ### DXC License Manager
+
+#### **Release 10.0.43.202506241**
+
+<b>Build 7.0.7521.60 </b>
+
+Release date: 24 June 2025
+
+<ins>Bugs</ins>
+
+| Number | Functionality                                                       | Description                                                                                                                                             |
+| :----- | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 21608  | Upgraded license API authentication | Upgraded license API authentication from ADAL.NET to MSAL.NET, supported version 4.61.3.0 | Microsoft.IdentityModel.Clients.ActiveDirectory has been deprecated and no longer supported by FinOps and needed to be upgraded to now use Microsoft.Identity.Client
+
+
 #### **Release 10.0.40.202412041**
-
-DXC License Manager 10.0.40.202412041 runs on the following Microsoft releases
-
-| Base                               | Version | Release                                                                                                                                                         |
-| :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft Dynamics 365 application | 10.0.40 | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40) |
-| Microsoft Dynamics 365 application | 10.0.41 | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) |
-| Microsoft Dynamics 365 application | 10.0.42 | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42) |
-Microsoft Dynamics 365 application	| 10.0.43  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
-Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
-
 
 <b>Build 7.0.7279.122 </b>
 
