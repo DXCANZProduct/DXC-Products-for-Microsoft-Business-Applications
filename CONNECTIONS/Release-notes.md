@@ -47,21 +47,9 @@ Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | No	          | 10.0.42.202504042
 Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No	          | 10.0.43.202508012
 
-# Next version
-
-### Release 10.0.43.202510TBD
-
-Release date: TBD October 2025
-
-<ins>New features</ins>
-
-Number	| Name		 | Description
-:--		  |:--		   |:--
-24071  	| SFTP	   | Specified the Renci.SSHNET dll version in DXC Connections referencing, to avoid conflicts with different versions of the dll file in the environment.
-
 
 # Current version
-### Release 10.0.43.202508012
+### Release 10.0.43.202510021
 
 DXC Connections 10.0.43 runs on the following Microsoft releases
 
@@ -71,6 +59,18 @@ Microsoft Dynamics 365 application  | 10.0.43 | [What’s new or changed in Dyna
 Microsoft Dynamics 365 application  | 10.0.44 | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 
+Release date: 2 October 2025
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--		  |:--		   |:--
+24071  	| SFTP	   | Specified the Renci.SSHNET dll version in DXC Connections referencing, to avoid conflicts with different versions of the dll file in the environment.
+
+
+# Previous Version(s)
+
+### Release 10.0.43.202508012
 
 Build <b>7.0.7279.122 </b>  
 DXCConnections.dll <b>1.0.2025.08013</b>  
@@ -84,8 +84,6 @@ Release date: 1 August 2025
 | Number | Name                                                              | Description                                                                                                                                                     |
 | :----- | :---------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 22980 | Upgrade SFTP library to latest 2025.0.0 | Upgraded SSH.NET to latest, 2025.0.0|
-
-# Previous Version(s)
 
 ### Release 10.0.42.202504042
 
