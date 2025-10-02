@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-29
+ms.date: 2025-10-02
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -70,19 +70,8 @@ Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dy
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 
-#### Build 10.0.43.20250829TBD (Next version)
-Release date: TBD
 
-<ins>Bug fixes</ins>
-
-**Core module**	- Applies to all modules	
-
-Number	| Name		 | Description
-:--		|:--		 |:--
-24071	| Connections - SFTP	| Since SFTP has been moved to DXC Connections, we have now removed the SFTP dll from EDI code as it is utilising it from DXC Connections. <br> This should help where the environment contains other ISV that also uses the renci.dll file with different versions.
-
-
-#### Build 10.0.43.202508291 (Current version)
+#### Build 10.0.43.202508291
 Release date: 29 August 2025
 
 
