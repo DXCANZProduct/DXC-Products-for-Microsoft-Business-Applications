@@ -44,6 +44,7 @@ c)	Partner admission to service apartment with primary partner transferring to r
 <br>
 (../IMAGES/Residential aged care-a-Admission of supported resident.png)
 <br>
+
 d) Single person admitted to retirement village with an ingoing contribution.
 -	Admission, setup billing schedule, and accommodation payment 
 -	Generate fees, payment of fees
