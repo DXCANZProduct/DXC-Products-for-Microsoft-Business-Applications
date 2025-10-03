@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-09-15
+ms.date: 2025-10-03
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -102,6 +102,7 @@ Number	  	| Module	| Functionality	  	| Description
 22984		| Accounts payable	| Sundry | One vendor account can used for multiple sundry vendors when using a Method of payment where 'Sundry method of payment' = Yes. <br> Accounts payable parameter **Check the invoice number used** will now use the combination of the following to determine uniqueness of sundry invoices: <br> • Invoice <br> • Sundry BSB\routing number <br> • Sundry bank account <br> <br> For example where two invoices with same id are processed for the one Sundry vendor account, but the sundry bank details differ between the two invoices, they will not be seen as duplicates.
 23156		| Budgeting	| Security configuration	| Created new role **Budget import manager** using duty 'Maintain budget import. Related to 22784.
 22980 		| Various	| DXC Connections - SFTP	| DXC Connections 10.0.43.202508012. Upgrade SFTP library to latest 2025.0.0 [Release notes](../CONNECTIONS/Release-notes.md) 
+19182		| Product Experience Metrics	| New model 'DXC Product Experience Metrics' - version 10.0.43.202508293. Product Experience Metrics is a foundational model that defines the structural and semantic framework for product support. It provides interfaces and dependencies that serves as a shared reference layer for all products. 
 
 
 <ins>Bug fixes</ins>
