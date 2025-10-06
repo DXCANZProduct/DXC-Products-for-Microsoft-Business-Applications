@@ -42,7 +42,6 @@ c)	Partner admission to service apartment with primary partner transferring to r
 -	Generate fees, payment of fees, 
 -	Discharged primary partner and transfer billing schedule to second partner.   
 <br>
-Retirementliving-a-b-c.png
 ![Retirement living-a-b-c](IMAGES/Retirementliving-a-b-c.png
  "Retirement living-a-b-c")
 <br>
