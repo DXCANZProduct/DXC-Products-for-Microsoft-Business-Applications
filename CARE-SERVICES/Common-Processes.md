@@ -264,7 +264,10 @@ i)	Admission of resident paying accommodation payment as RAD/DAP - combination w
 -	Discharge client
 -	Refund fees paid in advance.
 -	Refund accommodation payment balance.
-
+<br>
+![Residential aged care-i-Resident paying accommodation payment as RADDAP - combination with fees and DAP drawn down](IMAGES/Residentialagedcare-i-ResidentpayingaccommodationpaymentasRADDAP-combinationwithfeesandDAPdrawndown.png
+ "Residential aged care-i-Resident paying accommodation payment as RADDAP - combination with fees and DAP drawn down")
+<br>
 j)	Admission of resident paying accommodation payment as RAC lumpsum with fees drawn down
 -	Admission of resident,
 -	Setup billing schedule and configure fees to be drawn down
