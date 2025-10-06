@@ -41,8 +41,11 @@ c)	Partner admission to service apartment with primary partner transferring to r
 -	Setup billing schedule on primary partner.
 -	Generate fees, payment of fees, 
 -	Discharged primary partner and transfer billing schedule to second partner.   
-
-
+<br>
+Retirementliving-a-b-c.png
+![Retirement living-a-b-c](IMAGES/Retirementliving-a-b-c.png
+ "Retirement living-a-b-c")
+<br>
 d) Single person admitted to retirement village with an ingoing contribution.
 -	Admission, setup billing schedule, and accommodation payment 
 -	Generate fees, payment of fees
