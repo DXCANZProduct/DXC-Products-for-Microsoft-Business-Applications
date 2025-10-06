@@ -91,7 +91,10 @@ h)	Partner admission to retirement village with an ingoing contribution second p
 -	Generate DMF and CRF.
 -	Discharge secondary partner.
 -	Generate credit invoice for ingoing contributions to be used for the accommodation payment for the second partner in the residential aged care facility.
-
+<br>
+![Retirement living-Independent living-f-g-h](IMAGES/Retirementliving-Independentliving-f-g-h.png
+ "Retirement living-Independent living-f-g-h")
+<br>
 # Home care
 
 a)	Intake of client with low income and asset
