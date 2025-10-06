@@ -224,7 +224,11 @@ g)	Admission of resident paying accommodation payment as RAC/DAC combination.
 -	Discharge client
 -	Refund fees paid in advance.
 -	Refund accommodation payment balance.
-  
+<br>
+![Residential aged care-g-Resident paying accommodation payment as RACDAC combination](IMAGES/Residentialagedcare-g-ResidentpayingaccommodationpaymentasRACDACcombination.png
+ "Residential aged care-g-Resident paying accommodation payment as RACDAC combination")
+
+<br>
   
 h)	Admission of resident paying accommodation payment as RAD lumpsum with - fees drawn down.
 -	Admission of resident,
