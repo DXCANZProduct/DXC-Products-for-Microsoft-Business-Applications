@@ -157,7 +157,9 @@ c)	Admission of resident paying accommodation payment as RAD/DAP combination
 -	Discharge client
 -	Refund fees paid in advance.
 -	Refund accommodation payment balance.
-
+<br>
+![Residential aged care-c-Resident paying accommodation payment as RADDAP Combination](IMAGES/Residentialagedcare-c-ResidentpayingaccommodationpaymentasRADDAPCombination.png "Residential aged care-c-Resident paying accommodation payment as RADDAP Combination")
+<br>
 d)	Admission of resident paying accommodation payment as DAP only
 -	Admission of resident
 -	Setup billing schedule
