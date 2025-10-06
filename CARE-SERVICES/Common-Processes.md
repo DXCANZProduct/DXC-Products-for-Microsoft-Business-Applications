@@ -63,7 +63,10 @@ e) Single person admitted (with fees paid in advance) to retirement village with
 -	Discharge 
 -	Refund fees paid in advance
 -	Refund ingoing contribution
-
+<br>
+![Retirement living-Independent living-d-e](IMAGES/Retirementliving-Independentliving-d-e.png
+ "Retirement living-Independent living-d-e")
+<br>
 f) Partner admission to retirement village with an ingoing contribution.
 -	Admission, setup billing schedule, and accommodation payment on primary partner.
 -	Generate fees, payment of fees
