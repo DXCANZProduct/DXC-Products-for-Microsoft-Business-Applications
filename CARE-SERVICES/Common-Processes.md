@@ -41,9 +41,7 @@ c)	Partner admission to service apartment with primary partner transferring to r
 -	Setup billing schedule on primary partner.
 -	Generate fees, payment of fees, 
 -	Discharged primary partner and transfer billing schedule to second partner.   
-<br>
-![Admission of supported resident](IMAGES/Admission_of_supported_resident.png "Admission of supported resident")
-<br>
+
 
 d) Single person admitted to retirement village with an ingoing contribution.
 -	Admission, setup billing schedule, and accommodation payment 
@@ -121,7 +119,9 @@ a)	Admission of supported resident
 -	Reconcile funding
 -	Discharge client
 -	Refund fees paid in advance.
-
+<br>
+![Admission of supported resident](IMAGES/Admission_of_supported_resident.png "Admission of supported resident")
+<br>
 b)	Admission of resident paying accommodation payment as RAD lumpsum
 -	Admission of resident,
 -	Setup billing schedule
@@ -137,6 +137,10 @@ b)	Admission of resident paying accommodation payment as RAD lumpsum
 -	Discharge client
 -	Refund fees paid in advance.
 -	Refund accommodation payment balance.
+
+<br>
+![Residentialagedcare b) Resident paying accommodation payment as RAD lumpsum](IMAGES/Residentialagedcare-b-ResidentpayingaccommodationpaymentasRADlumpsum.png "Residentialagedcare b Resident paying accommodation payment as RAD lumpsum")
+<br>
 
 c)	Admission of resident paying accommodation payment as RAD/DAP combination
 -	Admission of resident
