@@ -283,7 +283,12 @@ j)	Admission of resident paying accommodation payment as RAC lumpsum with fees d
 -	Discharge client
 -	Refund fees paid in advance.
 -	Refund accommodation payment balance.
+<br>
+Residentialagedcare-j-ResidentpayingaccommodationpaymentasRAClumpsumwithfeesdrawndown.png
+![Residential aged care-j-Resident paying accommodation payment as RAC lumpsum with fees drawndown](IMAGES/Residentialagedcare-j-ResidentpayingaccommodationpaymentasRAClumpsumwithfeesdrawndown.png
+ "Residential aged care-j-Resident paying accommodation payment as RAC lumpsum with fees drawndown")
 
+<br>
 k)	Admission of resident paying accommodation payment as RAC/DAC combination with fees and DAC drawn down.
 
 -	Admission of resident
