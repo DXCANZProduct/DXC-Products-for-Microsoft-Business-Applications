@@ -5,7 +5,7 @@ title: Care Services
 Description: DXC Care Services/Aged Care - Release notes
 author: PMusumeci
 Manager: Pontus, Ek
-ms.date: 2025-02-05
+ms.date: 2025-10-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,7 +39,8 @@ Microsoft Dynamics 365 Finance and Operations Version		  | Any issues found in t
 Microsoft Dynamics 365 Product version:    [10.0.41](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41) <br> 	App build: 10.0.2015.16	  | No | 
 Microsoft Dynamics 365 Product version:    [ 10.0.42](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42) <br> 	App build: 10.0.2095	  | No | 
 Microsoft Dynamics 365 Product version:    [10.0.43](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43) <br>	 App build: 10.0.2177	  | No | 10.0.41.202502262
-Microsoft Dynamics 365 Product version:    [10.0.44](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43) <br>	 App build: 10.0.2177	  | No | 10.0.41.202502262
+Microsoft Dynamics 365 Product version:    [10.0.44](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44) <br>	 App build: 10.0.2177	  | No | 10.0.41.202502262
+Microsoft Dynamics 365 Product version:    [10.0.45](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45) <br>	 App build: 10.0.2345	  | No | 10.0.43.20250617
 
 Release notes for other models included in the product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
@@ -48,18 +49,33 @@ Release notes for other models included in the product:
 
 
 
-
 # Current version
 
-### Release 10.0.43.20250617
+### Release 10.0.43.20251006
 
-DXC Care Services  10.0.42 runs on the following Microsoft releases
+DXC Care Services  10.0.43 runs on the following Microsoft releases
 
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.42	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
 Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
+Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
+Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
+
+#### Build 10.0.43.202510061
+
+Release date: 6 October 2025
+
+<ins>Bug fixes</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+24232     | Billing statement  | Unable to generate and print **Billing Statement** for large number of customers in single batch
+
+
+# Previous version(s)
+
+### Release 10.0.43.20250617
 
 #### Build 10.0.43.202506173
 
@@ -75,8 +91,6 @@ Number	  | Name	          | Description
 22653|Client refund proposal is not filtering transactions based on the selected accommodation payment ID|The form will filter on the accommodation payment ID and service code
 
 
-
-
 <ins>New features</ins>
 
 Number	  | Name	          | Description
@@ -85,9 +99,6 @@ Number	  | Name	          | Description
 22989|Care Services Statement can display different  Organisation address|New functionality is added to the Care services parameters page ( Care services >Setup >Care services parameters) that allows an organisation to display a different organisational address on their statements
 22763|Client Refund Proposal|added toggle to allow for all open transactions to be displayed 
 23129|Client Refund Proposal Journal description field should populate from billing code| The source for the population of the description text for the refund journal will include the description on the billing code that has been used for the refund journal.
-
-
-# Previous version(s)
 
 ### Release 10.0.42.20250509
 #### Build 10.0.42.202505091
