@@ -172,7 +172,9 @@ d)	Admission of resident paying accommodation payment as DAP only
 -	Reconcile funding
 -	Discharge client
 -	Refund fees paid in advance.
-
+<br>
+![Residential aged care-d-Resident paying accommodation payment as DAP only](IMAGES/Residentialagedcare-d-ResidentpayingaccommodationpaymentasDAPonly.png "Residential aged care-d-Resident paying accommodation payment as DAP only")
+<br>
 
 e)	Admission of resident paying accommodation payment as DAC only.
 -	Admission of resident
