@@ -206,7 +206,9 @@ f)	Admission of resident paying accommodation payment as RAC only.
 -	Discharge client
 -	Refund fees paid in advance.
 -	Refund accommodation payment balance.
-
+<br>
+![Residential aged care-f-Resident paying accommodation payment as RAC only](IMAGES/Residentialagedcare-f-ResidentpayingaccommodationpaymentasRAConly.png "Residential aged care-f-Resident paying accommodation payment as RAC only")
+<br>
 g)	Admission of resident paying accommodation payment as RAC/DAC combination.
 -	Admission of resident
 -	Setup billing schedule
