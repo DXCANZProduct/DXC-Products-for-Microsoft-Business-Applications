@@ -188,7 +188,9 @@ e)	Admission of resident paying accommodation payment as DAC only.
 -	Reconcile funding
 -	Discharge client
 -	Refund fees paid in advance
-
+<br>
+![Residential aged care-e-Resident accommodation payment as DAC only](IMAGES/Residentialagedcare-e-ResidentaccommodationpaymentasDAConly.png "Admission of supported resident")
+<br>
 f)	Admission of resident paying accommodation payment as RAC only.
 -	Admission of resident,
 -	Setup billing schedule
