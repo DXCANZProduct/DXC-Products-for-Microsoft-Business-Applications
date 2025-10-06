@@ -42,7 +42,7 @@ c)	Partner admission to service apartment with primary partner transferring to r
 -	Generate fees, payment of fees, 
 -	Discharged primary partner and transfer billing schedule to second partner.   
 <br>
-![Admission of supported resident](../IMAGES/Admission_of_supported_resident.png)
+![Admission of supported resident](/IMAGES/Admission_of_supported_resident.png)
 <br>
 
 d) Single person admitted to retirement village with an ingoing contribution.
