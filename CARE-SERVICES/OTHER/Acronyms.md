@@ -4,7 +4,7 @@
 title: Care Services
 description: Care Services - Acronyms
 author: Peter
-manager: Kym Parker
+manager: Pontus Ek
 ms.date: 2025-10-08
 ms.topic: article
 ms.prod: 
