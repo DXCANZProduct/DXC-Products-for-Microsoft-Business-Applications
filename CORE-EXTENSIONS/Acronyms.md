@@ -4,7 +4,7 @@
 title: Core Extensions
 description: Core Extensions - Acronyms
 author: HelenHo
-manager: Kym Parker
+manager: Pontus Ek
 ms.date: 2024-01-25
 ms.topic: article
 ms.prod: 
@@ -24,7 +24,7 @@ ms.search.region: CoreExtensions
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: HelenHo
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+ms.dyn365.ops.version:D365 FSCM
 ---
 
 ## Definitions and Acronyms
