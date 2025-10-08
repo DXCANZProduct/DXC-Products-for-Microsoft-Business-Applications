@@ -24,7 +24,7 @@ ms.search.region: CoreExtensions
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: HelenHo
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version:D365 FSCM
+ms.dyn365.ops.version: D365 FSCM
 ---
 
 ## Definitions and Acronyms
