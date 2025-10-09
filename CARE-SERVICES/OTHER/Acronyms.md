@@ -41,11 +41,12 @@ ASD|Australian Signals Directorate
 B2G|Business-to-Government
 CHSP|Commonwealth Home Support Programme
 DAP|Residential Aged Care Daily Accommodation Payment
+ECR|Estimated Cost of Care
 GPMS|Government Provider Management System
 HCP|Home Care Packages
 IHACPA|Independent Health and Aged Care Pricing Authority
 IPA|Improved payment arrangements
-ITR|Interactive Test Run
+ITR|Integrated Test Results
 MFA|Multi-Factor Authentication
 MHR|My Health Record
 NAPS|National Approved Provider Service Identifier (NAPS Id)
@@ -62,4 +63,5 @@ SaH|Support at Home Program
 SIRS|Serious Incident Response Scheme
 STRC|Short-Term Restorative Care
 VHC|Veterans’ Home Care
+
 
