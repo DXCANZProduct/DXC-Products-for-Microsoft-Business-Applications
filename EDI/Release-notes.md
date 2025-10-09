@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-10-07
+ms.date: 2025-10-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -59,8 +59,18 @@ Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dy
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 
+#### Build 10.0.43.202508291(2) (Current version)
+Release date: 9 October 2025
 
-#### Build 10.0.43.202508291
+<ins>Bug fixes</ins>
+
+**3PL module**	
+
+Number	| Name		 | Description
+:--		|:--		 |:--
+24302	| Transfer order - Picking list	| When posting **Picking list** for **Transfer order** error with 'Function SAB_EDIStagingHistory::logHistory has been incorrectly called.'. <br> This was only applicable where the Transfer id didn't exist as a Sales id.
+
+#### Build 10.0.43.202508291 (Previous version)
 Release date: 29 August 2025
 
 
