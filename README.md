@@ -8,7 +8,6 @@ Please select the applicable product from below:
 - [Core extensions](CORE-EXTENSIONS/Solution-overview.md)
 - [Electronic Data Interchange (EDI)](EDI/Introduction.md) - [demo](https://www.youtube.com/playlist?list=PLIM01nS-jtL-vHddVb3MdI_s2zKtgBejk)
 - [Finance utilities](FINU/INTRODUCTION.md) (intended for ANZ region) - [demo](https://www.youtube.com/playlist?list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO)
-- [Forex contracts](FOREX-CONTRACT/Introduction.md)
 - [Insights for D365 FO](DXC-INSIGHTS/Introduction.md) - [demo](https://dynamics.dxc.technology/webinars/analysis-tool-for-performance-of-microsoft-dynamics-365-finance-and-operations-by-dxc-technology-2)
 - [License manager](LMG/Introduction.md)
 - [Security Insights for D365 FO](SECURITY-INSIGHTS/Introduction.md) - [demo 1](https://dynamics.dxc.technology/microsoft-dynamics-365/security-insights-for-microsoft-dynamics-365-fo-solution-to-optimise-your-user-licensing); [demo 2](https://dynamics.dxc.technology/webinars/security-insights-for-d365fo)
