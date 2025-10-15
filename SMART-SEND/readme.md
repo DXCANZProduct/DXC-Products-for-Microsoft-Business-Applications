@@ -8,7 +8,7 @@ While out-of-the-box functionality is for the business forms listed [here](Overv
 
 First, you'll need to set up each version of the report design in Smart Send Email parameters. For example, you may have two report designs for the Sales Invoice *SalesInvoice.Report* and *SalesInvoiceModern.Report*. Refer to [Smart send parameters](CONFIGURATION/Parameters.md).
 
-Then, using Print Management conditions, set a query with a set of criteria to use the different report design. When the report is run using Print Management the Smart Send button will choose the report design used per the Print Management setup. Refer to [Print management conditions](PROCESSES/Email-processing.md).
+Then, using Print Management conditions, set a query with a set of criteria to use the different report design. When the report is run using Print Management, the Smart Send button will select the report design according to the Print Management setup. Refer to [Print management conditions](PROCESSES/Email-processing.md).
 
 **How can I use a different email template for different customers/vendors?**
 
@@ -16,7 +16,7 @@ The Override email ID and Override file name allow the user to specify in the pr
 
 **How can I use a different filename for different customers/vendors?**
 
-The Override email ID and Override file name allow the user to specify in print management an email template and file name different to that specified in Smart Send parameters. Refer to [Override Email Template and Filename](PROCESSES/Email-processing.md).
+The Override email ID and Override file name allow the user to specify, in print management, an email template and file name different to that specified in Smart Send parameters. Refer to [Override Email Template and Filename](PROCESSES/Email-processing.md).
 
 **How can I include attachments for all emails, like terms and conditions?**
 
@@ -31,7 +31,7 @@ Smart Send also includes an extension hook to enable a customer to create an ext
 Smart Send supports dynamic placeholder tags using the table and field names. Similarly, the display method can also be used with the format %TableName.MethodName#%. 
 If the field you wish to use is not on the primary table, you can add a display method to the table to return the data from another source. Refer to [Dynamic Placeholder Tokens](CONFIGURATION/Email_placeholder.md).
 
-**Why are the token placeholders showing as the token as opposed to the value e.g. %PurchId%?**
+**Why are the token placeholders showing as the token as opposed to the value, e.g. %PurchId%?**
 
 The main reasons this would occur:
 * The token placeholder is invalid. The syntax used on the token placeholder is not per the fixed token list for the report, or the dynamic token is in the incorrect notation e.g. %TableName.FieldName% or %TableName.MethodName#%. Refer to [Dynamic Placeholder Tokens](CONFIGURATION/Email_placeholder.md).
@@ -59,7 +59,7 @@ Many mail clients, such as Outlook and most webmail services, do not support the
 If you are using Blob storage, you can obtain the URL of the image by selecting "properties"
 ![Blob_Storage_properties](IMAGES/Blob_Storage_properties.png)
 
-and paste the value in the *URL* field into the quotation marks after *img src=* in the provided example above and this will create your link. 
+and paste the value in the *URL* field into the quotation marks after *img src=* in the provided example above, and this will create your link. 
 
 ![Azure_URL](IMAGES/Azure_URL.png)
 
@@ -78,4 +78,4 @@ DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Ope
 
 The article ⁠[Configure and send email](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/organization-administration/configure-email) by Microsoft is divided into sections for administrators and users to make it easy to find relevant information, including setup for SMTP. The behaviour of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices.
 
-Note: DXC does not collect or store any usage information, or telemetry against any other installed system or ISV module from DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Operations (Smart Send)
+Note: DXC does not collect or store any usage information or telemetry against any other installed system or ISV module from DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Operations (Smart Send)
