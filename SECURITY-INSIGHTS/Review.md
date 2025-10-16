@@ -137,9 +137,6 @@ Clicking on a **Role name**, will open **Assign users to roles** form, thus enab
 
 Select required highlight colour in field **Background color for unused license fields** on Visual tab in **Insights for user access and security parameters** to enable the colour highlights for unused licenses. <br> <br> In below example the selected user didn't access any Operations licenses in the fetch period <br> ![Visual](IMAGES/ReleaseNotes_20241122_1.png "Visual")
 
-#### Data entities for review
-
-- **Insights for user access and security** - Export-only data entity. This provides a flat file of all user, role, privilege, menu items and calculated utilization. This is useful for taking a "snapshot" or reviewing in Excel. It is advised to filter records before exporting as this file can be large.
 
 
 #### Security insights by user
