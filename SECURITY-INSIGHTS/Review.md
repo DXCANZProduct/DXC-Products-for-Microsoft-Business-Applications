@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Review Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-06-18
+ms.date: 2025-10-15
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,25 +28,22 @@ ms.dyn365.ops.version: 10.0.32
 
 # Security Insights for D365 FO
 
-The following views are available to colate and review user access and security utilization:
+The following view is available to colate and review user access and security utilization:
 - **Security insights by user**
-- **Security insights by license**
 
-
-These views are available by navigating to **System administration > Insights for user access and security**
+Navigate to **System administration > Insights for user access and security**
 
 # Processing
 The following steps are available to initiate or update the required fields.
 
-## 1. Synchronize user roles and access
+## 1. Build license information
 Synchronizes the current user roles, privileges and accessible menu items. This can only be run as batch. <br>
 Subsequent runs only required if menu item privileges change.
+Uses new model of D365 licensing tables to build user licensing information.
 
 ## 2. Initiate user security groups
 Ability to automatically group similar users
  
-> Note: This step is only available on **Security insights by user**. <br>
-
 **Parameters:**
 - Use **Select foundation data for user group creation** to create the user groups by either:
     - **User groups** - utilizes D365 user groups setup in **System administration > Users > User groups**. For this option it is not required to rerun the initiate step if more users are added or roles/privilegs change for a user.
@@ -78,28 +75,42 @@ The records to include are automatically filtered to enabled users and can also 
 
 # Review
 
-Next step is to review the utilization by using either of the following two views
-- **Security insights by user**
-- **Security insights by license**
-These views are available by navigating to **System administration > Insights for user access and security**
-
-The number of privileges for each license type is displayed on the user and role level.
+Next step is to review the utilization.
 
 Example actions that could be taken after review: 
 - Where the user hasn't accessed any of the menu items in the specific role, it could be possible to remove the role from the user.
-- Where the user only accessed "lower" licensed menu items in the role, it could be possible to assign the applicable privileges to a different/new duty and add those to a different/new role which will result in a "lower" license for the user.
+- Where the user only accessed "lower" priority licensed menu items in the role, it could be possible to assign the applicable privileges to a different/new duty and add those to a different/new role which will result in a "lower" license for the user.
 
 After modifying security configuration, rerun the following to update the values on the form:
+- Build license information
 - Fetch interaction data from application Insights
 - Calculate utilization rates
 
-#### Interaction type
+### Key attributes
+
+The page is split into:
+- **Security groups** - Section on left, which are populated by **Initiate user security groups**. All enabled users are split within these groups.
+- **Users** - Enabled users per security group
+- **User roles** - Displays user roles for the selected user
+- **Duties for selected user roles** - Displays all duties for the selected user role
+- **Privileges for selected user roles** - Displays all privileges for the selected user role. These privileges could be via a duty or directly on the role.
+- **Menu items for selected privilege** - Displays the menu items for the selected privilege and the section is split into:
+   - Not accessed in fetch period - On left the menu items not accessed by the user
+   - Accessed in fetch period - On the right menu items accessed by the user
+- **Minimum required license** - Indicates the lowest priority license that can write access to this menu item, for example 'Operations - Activity'. Thus if this is the only 'Finance' accessed menu item by the user, they could be moved to a different role that excludes the other Finance menu items, and only include 'Operations - Activity' menu items which could reduce their required license from 'Finance' to 'Operations - Activity'. Blank values would be the 'Not required' / Read records in 'License usage summary'. This field is available on menu items for selected privilege FastTab.
+- **Active user license** - Indicates the lowest priority user license that can write access to this menu item. For example, the user requires SCM and Finance license, if the menu item can be write accessed by the lower priority license 'Finance', this field would be 'Finance' for this user. This license type is also where the count would be included, see below.
+- **Securable object entitled count** - The number of menu items / securable objects for each license type is displayed on the user, role, duty and privilege level. The page only shows the license count applicable to the user's required license types, but also indicates what would be the minimum license for the menu item. Where a user requires multiple license types, the page spreads the license count to the lowest priority applicable license. For example if the user needs SCM and Finance licenses, the count will only be included in the lowest priority license applicable for that securable object (menu item) and user. Thus if it could be accessed by SCM and Finance, only Finance count will include this menu item for this user. This makes it simpler to see if a license type is unused based on actual user access.
+
+
+
+
+### Interaction type
 **Interaction type** provides additional information on the accessed menu items. For example if the user only viewed Finance license type menu items, they could possibly be switched to a Team member / Activity license type role for the menu items. [Setup](Parameters.md#4--monitoring-and-telemetry-parameters)
 
 - **Viewed** - Only opened the form vs.
 - **Edited** - Modified / created records
 
-#### Buttons
+### Buttons
 
 The following buttons are available on the views:
 - **Assign privilege to duty** - Security configuration is opended for the selected privilege with the ability to assign to multiple duties
@@ -107,16 +118,17 @@ The following buttons are available on the views:
 - **Manage privilege assignments** - Security configuration is opended for the selected privilege(s)
 - **View related roles** - View related roles for the selected duty / privilege
 
-#### Links 
+### Links 
 
 Clicking on a **Role name**, will open **Assign users to roles** form, thus enabling reviewer to see which other users have been assigned to the selected role.
 
-#### Highlight unused licenses
+### Highlight unused licenses
 
 **Security insights by user** includes the ability to highlight unused licenses for a user and each role for the selected user. Unused means the applicable user didn't access any menu items with that license type in the fetch period. 
 
 Select required highlight colour in field **Background color for unused license fields** on Visual tab in **Insights for user access and security parameters** to enable the colour highlights for unused licenses. <br> <br> In below example the selected user didn't access any Operations licenses in the fetch period <br> ![Visual](IMAGES/ReleaseNotes_20241122_1.png "Visual")
 
+### 
 
 #### Data entities for review
 
@@ -126,9 +138,6 @@ Select required highlight colour in field **Background color for unused license 
 #### Security insights by user
 ![Security insights by user](IMAGES/Overview.png)
 
-
-#### Security insights by license
-![Security insights by ulicense](IMAGES/ByLicense.png)
 
 # Assign users to role
 **System administration > Security > Assign users to roles**
