@@ -58,6 +58,7 @@ Number	| Name		 | Description
 
 Number	| Name		 | Description
 :--		|:--		 |:--
+24311	| Security diagnostics	| Receive error 'Object reference not set to an instance of an object' after Security Diagnostics has been opened. Extra fields still used old metadata license types.
 
 # Current version
 
