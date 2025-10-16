@@ -44,9 +44,20 @@ Release notes for other models included in product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
 
-# Next version
 
-### Release 10.0.44.202510TBD
+# Current version
+
+### Release 10.0.44.20251017
+
+Security Insights for D365 FO 10.0.44 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
+Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
+
+#### Build 10.0.44.202510171
+Release date: 17 October 2025
 
 <ins>New features</ins>
 
@@ -60,17 +71,10 @@ Number	| Name		 | Description
 :--		|:--		 |:--
 24311	| Security diagnostics	| Receive error 'Object reference not set to an instance of an object' after Security Diagnostics has been opened. Extra fields still used old metadata license types.
 
-# Current version
+
+# Previous Version(s)
 
 ### Release 10.0.43.20250619
-
-Security Insights for D365 FO 10.0.43 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
-Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
-Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 
 #### Build 10.0.43.202506191
 Release date: 19 June 2025
@@ -82,7 +86,6 @@ Number	| Name		 | Description
 22736 <br> 22158	| **Interaction type**	| Ability to log Form/Page Interaction types **Viewed** (only opened the form) vs **Edited** (modified / created records) for the accessed menu items. Enable this additional telemetry field by setting **Form edits (Page edits)** to _Yes_ on **Monitoring and telemetry parameters**.  This is useful, for example if the user only viewed Finance license type menu items, they could possibly be switched to a Team member / Activity license type role for the menu items. <br> ![Monitoring settings](IMAGES/ReleaseNotes_20250619_1.png "Monitoring settings") <br> <br>  Where there was no interaction, or the interaction was prior enabling the new monitoring field, the Interaction type will be Blank. <br> <br> Interaction type has also been added to the following two Security Insights forms. Please note the Interaction type is a display method on the license view. <br> ![User view](IMAGES/ReleaseNotes_20250619_2.png "User view")  <br> <br> ![License view](IMAGES/ReleaseNotes_20250619_3.png "License view") 
 
 
-# Previous Version(s)
 
 ### Release 10.0.42.20250325
 
