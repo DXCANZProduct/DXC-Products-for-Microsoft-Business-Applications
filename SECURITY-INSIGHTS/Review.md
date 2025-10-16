@@ -81,7 +81,7 @@ Example actions that could be taken after review:
 - Where the user hasn't accessed any of the menu items in the specific role, it could be possible to remove the role from the user.
 - Where the user only accessed "lower" priority licensed menu items in the role, it could be possible to assign the applicable privileges to a different/new duty and add those to a different/new role which will result in a "lower" license for the user.
 
-After modifying security configuration, rerun the following to update the values on the form:
+After modifying security configuration, rerun the following to update the values on the page:
 - Build license information
 - Fetch interaction data from application Insights
 - Calculate utilization rates
@@ -97,7 +97,7 @@ The page is split into:
 - **Menu items for selected privilege** - Displays the menu items for the selected privilege and the section is split into:
    - Unused menu items - On left the menu items not accessed by the user in the fetch period.
    - Accessed menu items - On the right the menu items accessed by the user accessed by the user in the fetch period.
-- **Minimum required license** - Indicates the lowest priority license that can write access to this menu item, for example 'Operations - Activity'. Thus if this is the only 'Finance' accessed menu item by the user, they could be moved to a different role that excludes the other Finance menu items, and only include 'Operations - Activity' menu items which could reduce their required license from 'Finance' to 'Operations - Activity'. Blank values would be the 'Not required' / Read records in 'License usage summary'. This field is available on menu items for selected privilege FastTab.
+- **Minimum recommended license** - Indicates the lowest priority license that can write access to this menu item, for example 'Operations - Activity'. Thus if this is the only 'Finance' accessed menu item by the user, they could be moved to a different role that excludes the other Finance menu items, and only include 'Operations - Activity' menu items which could reduce their required license from 'Finance' to 'Operations - Activity'. Blank values would be the 'Not required' / Read records in 'License usage summary'. This field is available on menu items for selected privilege FastTab.
 - **Active user license** - Indicates the lowest priority user license that can write access to this menu item. For example, the user requires SCM and Finance license, if the menu item can be write accessed by the lower priority license 'Finance', this field would be 'Finance' for this user. This license type is also where the count would be included, see below.
 - **Securable object entitled count** - The number of menu items / securable objects for each license type is displayed on the user, role, duty and privilege level. The page only shows the license count applicable to the user's required license types, but also indicates what would be the minimum license for the menu item. Where a user requires multiple license types, the page spreads the license count to the lowest priority applicable license. For example if the user needs SCM and Finance licenses, the count will only be included in the lowest priority license applicable for that securable object (menu item) and user. Thus if it could be accessed by SCM and Finance, only Finance count will include this menu item for this user. This makes it simpler to see if a license type is unused based on actual user access.
 
@@ -127,8 +127,6 @@ Clicking on a **Role name**, will open **Assign users to roles** form, thus enab
 **Security insights by user** includes the ability to highlight unused licenses for a user and each role for the selected user. Unused means the applicable user didn't access any menu items with that license type in the fetch period. 
 
 Select required highlight colour in field **Background color for unused license fields** on Visual tab in **Insights for user access and security parameters** to enable the colour highlights for unused licenses. <br> <br> In below example the selected user didn't access any Operations licenses in the fetch period <br> ![Visual](IMAGES/ReleaseNotes_20241122_1.png "Visual")
-
-### 
 
 #### Data entities for review
 
