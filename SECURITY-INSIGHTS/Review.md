@@ -38,8 +38,17 @@ The following steps are available to initiate or update the required fields.
 
 ## 1. Build license information
 Synchronizes the current user roles, privileges and accessible menu items. This can only be run as batch. <br>
-Subsequent runs only required if menu item privileges change.
-Uses new model of D365 licensing tables to build user licensing information.
+Recommended to run again after Security configuration changes.
+Uses new model of D365 licensing tables (from 10.0.44 Security Governance) to build user licensing information.
+
+**Parameters:**
+
+> Note: Microsoft automatically updates License usage summary information daily. This update rebuilds the new licensing tables, and thus loses our Security Insights recommended license field data. We've thus added the following parameter option to this step.
+
+- **Sync recommended licenses only**
+   - **Yes** - Only updates the Security insights recommended license field. We recommend creating a batch processing with this field set to _Yes_ with a daily recurrence.
+   - **No** - Complete sync, also includes the Security insights recommended license field.
+
 
 ## 2. Initiate user security groups
 Ability to automatically group similar users
@@ -86,7 +95,7 @@ After modifying security configuration, rerun the following to update the values
 - Fetch interaction data from application Insights
 - Calculate utilization rates
 
-### Key attributes
+### Sections
 
 The page is split into:
 - **Security groups** - Section on left, which are populated by **Initiate user security groups**. All enabled users are split within these groups.
@@ -97,18 +106,18 @@ The page is split into:
 - **Menu items for selected privilege** - Displays the menu items for the selected privilege and the section is split into:
    - Unused menu items - On left the menu items not accessed by the user in the fetch period.
    - Accessed menu items - On the right the menu items accessed by the user accessed by the user in the fetch period.
-- **Minimum recommended license** - Indicates the lowest priority license that can write access to this menu item, for example 'Operations - Activity'. Thus if this is the only 'Finance' accessed menu item by the user, they could be moved to a different role that excludes the other Finance menu items, and only include 'Operations - Activity' menu items which could reduce their required license from 'Finance' to 'Operations - Activity'. Blank values would be the 'Not required' / Read records in 'License usage summary'. This field is available on menu items for selected privilege FastTab.
-- **Active user license** - Indicates the lowest priority user license that can write access to this menu item. For example, the user requires SCM and Finance license, if the menu item can be write accessed by the lower priority license 'Finance', this field would be 'Finance' for this user. This license type is also where the count would be included, see below.
-- **Securable object entitled count** - The number of menu items / securable objects for each license type is displayed on the user, role, duty and privilege level. The page only shows the license count applicable to the user's required license types, but also indicates what would be the minimum license for the menu item. Where a user requires multiple license types, the page spreads the license count to the lowest priority applicable license. For example if the user needs SCM and Finance licenses, the count will only be included in the lowest priority license applicable for that securable object (menu item) and user. Thus if it could be accessed by SCM and Finance, only Finance count will include this menu item for this user. This makes it simpler to see if a license type is unused based on actual user access.
+ 
+### Fields
 
+Description of a few of the key fields.
 
-
-
-### Interaction type
-**Interaction type** provides additional information on the accessed menu items. For example if the user only viewed Finance license type menu items, they could possibly be switched to a Team member / Activity license type role for the menu items. [Setup](Parameters.md#4--monitoring-and-telemetry-parameters)
-
-- **Viewed** - Only opened the form vs.
-- **Edited** - Modified / created records
+- **Minimum recommended license** - Indicates the lowest priority license that can write access to this menu item, for example 'Operations - Activity'. Thus if this is the only 'Finance' accessed menu item by the user, they could be moved to a different role that excludes the other Finance menu items, and only include 'Operations - Activity' menu items which could reduce their required license from 'Finance' to 'Operations - Activity'. Blank values would be the 'Not required' / Read records in 'License usage summary'. This field is available on menu items for selected privilege FastTab. Available on **Menu items for selected privilege**.
+- **Active user license** - Indicates the lowest priority user license that can write access to this menu item. For example, the user requires SCM and Finance license, if the menu item can be write accessed by the lower priority license 'Finance', this field would be 'Finance' for this user. This license type is also where the count would be included, see below. Available on **Menu items for selected privilege**.
+- **Securable object entitled count** - The number of menu items / securable objects for each license type is displayed on the user, role, duty and privilege level. The page only shows the license count applicable to the user's required license types, but also indicates what would be the minimum license for the menu item. Where a user requires multiple license types, the page spreads the license count to the lowest priority applicable license. For example if the user needs SCM and Finance licenses, the count will only be included in the lowest priority license applicable for that securable object (menu item) and user. Thus if it could be accessed by SCM and Finance, only Finance count will include this menu item for this user. This makes it simpler to see if a license type is unused based on actual user access. A licensed menu item is flagged as **Entitled** / Write on the **License usage summary**. Available on **Users**, **User roles**, **Duties for selected user roles** and **Privileges for selected user roles**.
+- **Utilization %** - Percentage utilization of the licensed menu items. For example if the User role has 20 licensed menu items and the user accessed 10 of those menu items in the fetch period, the role utilization % would be 50%. Available on **Users**, **User roles**, **Duties for selected user roles** and **Privileges for selected user roles**.
+- **Interaction type** - Provides additional information on the accessed menu items. For example if the user only viewed Finance license type menu items, they could possibly be switched to a Team member / Activity license type role for the menu items. [Setup](Parameters.md#4--monitoring-and-telemetry-parameters)
+    - **Viewed** - Only opened the form vs.
+    - **Edited** - Modified / created records
 
 ### Buttons
 
@@ -124,7 +133,7 @@ Clicking on a **Role name**, will open **Assign users to roles** form, thus enab
 
 ### Highlight unused licenses
 
-**Security insights by user** includes the ability to highlight unused licenses for a user and each role for the selected user. Unused means the applicable user didn't access any menu items with that license type in the fetch period. 
+**Security insights by user** includes the ability to highlight unused licenses for a user and each role for the selected user. Unused means the applicable user didn't access any menu items / securable object with that license type in the fetch period. 
 
 Select required highlight colour in field **Background color for unused license fields** on Visual tab in **Insights for user access and security parameters** to enable the colour highlights for unused licenses. <br> <br> In below example the selected user didn't access any Operations licenses in the fetch period <br> ![Visual](IMAGES/ReleaseNotes_20241122_1.png "Visual")
 
