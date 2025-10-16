@@ -105,7 +105,7 @@ The page is split into:
 - **Privileges for selected user roles** - Displays all privileges for the selected user role. These privileges could be via a duty or directly on the role.
 - **Menu items for selected privilege** - Displays the menu items for the selected privilege and the section is split into:
    - Unused menu items - On left the menu items not accessed by the user in the fetch period.
-   - Accessed menu items - On the right the menu items accessed by the user accessed by the user in the fetch period.
+   - Accessed menu items - On the right the menu items accessed by the user in the fetch period.
  
 ### Fields
 
