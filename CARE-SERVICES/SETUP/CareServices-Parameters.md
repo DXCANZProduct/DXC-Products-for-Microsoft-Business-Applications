@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: DXC Care services 
+title: DXC Care Services 
 description: Care Services Parameters
 author: Peter Musumeci 
 Manager: Pontus Ek
@@ -28,4 +28,4 @@ ms.dyn365.ops.version: 365 FSCM
 ---
 
 
-# Care services
+# Care Services Parameters
