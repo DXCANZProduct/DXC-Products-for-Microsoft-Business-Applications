@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-10-22
+ms.date: 2025-10-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,7 +43,7 @@ Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No			 | DXC Finance Ut
 
 Feature	| 10.0.45 Feature state
 :--       	|:--		
-**Automatic vendor account matching**	| New from 10.0.45 and not supported yet. Don't enable.
+**Automatic vendor account matching**	| New from 10.0.45 and not supported yet. Don't enable if using Advanced bank reconciliation and Modern bank reconciliation Generate vendor payment functionality. 
 
 Release notes for other models included in product:
 - [DXC Connections](../CONNECTIONS/Release-notes.md)
