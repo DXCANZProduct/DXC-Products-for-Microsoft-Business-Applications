@@ -20,7 +20,7 @@ ms.reviewer: Peter Musumeci
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
-ms.search.region: Core-extension security
+ms.search.region: Care Services security
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: Peter Musumeci
 ms.search.validFrom:   20125-10-23
@@ -28,3 +28,13 @@ ms.dyn365.ops.version:  D365 FSCM
 ---
 
 # Security configuration
+
+Care Services has custom security roles as well as privileges for various menu and form functionality 
+
+## Security Roles 
+
+**Roles**         | **Description**   | **AOT name**                 
+:-----            |:------------------------  |:------------------------  
+Care services user                   | The user performs daily tasks on care services information  |
+Care services administrator          | The user performs maintenance on care services information  |
+
