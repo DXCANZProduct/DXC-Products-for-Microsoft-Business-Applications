@@ -4,7 +4,7 @@
 title: Core extension
 description: Core extension - Security configuration
 author: HelenHo
-manager: Kym Parker
+manager: Pontus Ek
 ms.date: 2022-04-11
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: jdutoit2
+ms.reviewer: Peter Musumeci
 
 # ms.tgt_pltfrm: 
 ms.custom: ["21901", "intro-internal"]
@@ -30,23 +30,23 @@ ms.dyn365.ops.version:  AX 7.0.1
 # Security configuration
 
 ## Core Extension
-For Core extensions/Core Utilities there are no New Security roles as part of the ISV however we have extended standard security roles to allow for journal import menus to be displayed.  Additionally, you will require access to the required module and menu item to access the required enhanced feature.
+For Core Extensions/Core Utilities, there are no New Security roles as part of the ISV; however, we have extended standard security roles to allow for journal import menus to be displayed.  Additionally, you will require access to the required module and menu item to access the required enhanced feature.
 
 The Import projects need to have security roles applied to them for non-administrator users to have permission to import files into the journals. 
 It is recommended that the following roles be set to use the import features:
 
 **Roles**         | **Import Feature**                    
 :-----            |:------------------------        
-Accounting Manager                | 	Import General Journal and Import ledger journal multi company
+Accounting Manager                | 	Import General Journal and Import Ledger Journal multi-company
 Materials Manager                 |   Import Inventory Adjustment Journal
 Materials Manager                 |   Import Inventory Movement Journal
 
 
 To run the User security audit details report, you must be assigned the “Security administrator” role.
 
-**Data Anonymization**
+**Data Anonymisation**
  
-the Data Anonymization feature can only be accessed by the System administrator security role
+The Data Anonymisation feature can only be accessed by the System Administrator security role
  
-To  Import or Export Printer management settings you need access to the Data management Framework.  To View the results you require access to the relevant module and at minimum Data management operations user to view execution results 
+To  Import or Export Printer management settings, you need access to the Data Management Framework.  To view the results, you require access to the relevant module and at a minimum Data management operations user to view execution results 
 
