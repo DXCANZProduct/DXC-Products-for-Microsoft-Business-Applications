@@ -56,6 +56,11 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 
+### Recordings
+
+The following recording is available for this release:
+- [Security Insights for Microsoft Dynamics 365 FO to optimize user licensing – Oct 2025 update](https://www.youtube.com/watch?v=7rC7uf1fM5M&list=PLIM01nS-jtL-D-wvUbmncSwy3PYjLuig5&index=1)
+
 #### Build 10.0.44.202510171
 Release date: 17 October 2025
 
