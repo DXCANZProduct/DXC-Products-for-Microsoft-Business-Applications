@@ -51,6 +51,15 @@ When the Line Approval Workflow toggle is set to Yes, the Line Approval Workflow
 
 *Note* While a journal has an incomplete Line Approval Workflow process, the billing journal will not be available for posting, and the "Approval Workflow" (Header level) cannot be initiated. Disable the Header Workflow process if there is an active Line Approval Workflow, and complete before initiating the Header workflow.
 
+## Billing Schedule Workflow
+
+Navigate to:  **Care Services > Schedules > Billing schedules or Care Services > Customers > All Customers > Invoice > Setup > Billing schedule**
+
+Care Services Billing Schedule Workflow Activation. Navigate to:  **Care Services > Setup > Care Services Parameters > General**
+
+**![Billing_Schedule](../IMAGES/Billing_Schedule.png)**
+
+
 ## Create/Maintain Workflow
 
 Navigate to:  **Care Services > Setup > Care Services Workflows**
