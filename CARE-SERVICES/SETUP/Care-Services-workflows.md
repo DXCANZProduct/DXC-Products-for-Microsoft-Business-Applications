@@ -90,6 +90,12 @@ Billing Journal Line |Flow controls > Conditional decision|A conditional decisio
 Billing Journal Line |Flow controls > Manual decision|A manual decision is a point at which a workflow divides into two branches. A user must decide which branch is used. 
 Billing Journal Line |Flow controls > Parallel activity|A parallel activity is a workflow element that includes two or more workflow branches that run at the same time.
 Billing Journal Line |Flow controls > Subworkflow|A subworkflow is a workflow that runs within the context of another workflow. 
+Billing Schedule|Approvals > Approve billing schedule line, editable|Use this element to approve the billing schedule line. The assigned approver will be able to edit the Billing schedule lines.
+Billing Schedule|Flow controls > Conditional decision|A conditional decision is a point at which a workflow divides into two branches. The system will decide which branch is used on specified conditions. 
+Billing Schedule|Flow controls > Manual decision|A manual decision is a point at which a workflow divides into two branches. A user must decide which branch is used. 
+Billing Schedule|Flow controls > Parallel activity|A parallel activity is a workflow element that includes two or more workflow branches that run at the same time.
+Billing Schedule|Flow controls > Subworkflow|A subworkflow is a workflow that runs within the context of another workflow. 
+ 
 
 ## Assignment types 
 
@@ -106,7 +112,8 @@ In addition to the standard assignment types above, there is a  Special consider
 :-----            |:------------------------  
 Service manager hierarchy| Use to retrieve users assigned on <br> Care services > Setup > All Services > Staff information > Service manager
 
-This option is only available for the Journal level (Header) approval workflow, and looks at: 
+*This option is only available for the Billing Journal level (Header) approval workflow, and looks at:*
+
 1.	The service code on the first line of the journal
 2.	Look up that service code and find the "Service manager" Navigation  **Care services > Setup > All Services > Staff information > Service manager**
 3.	First approver selected is the Service manager identified above
