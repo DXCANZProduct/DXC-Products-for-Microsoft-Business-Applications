@@ -57,7 +57,7 @@ Navigate to:  **Care Services > Schedules > Billing schedules or Care Services >
 
 Care Services Billing Schedule Workflow Activation. Navigate to:  **Care Services > Setup > Care Services Parameters > General**
 
-**![Billing_Schedule](../IMAGES/Billing_Schedule.png)**
+**![Billing-Schedule-workflow](../IMAGES/Billing-Schedule-workflow.png)**
 
 
 ## Create/Maintain Workflow
