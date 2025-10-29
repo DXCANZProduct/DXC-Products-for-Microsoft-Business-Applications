@@ -40,6 +40,7 @@ It is recommended that the following roles be set to use the import features:
 Accounting Manager                | 	Import General Journal and Import Ledger Journal multi-company
 Materials Manager                 |   Import Inventory Adjustment Journal
 Materials Manager                 |   Import Inventory Movement Journal
+Budget Manager                    |  Import Budgets
 
 
 To run the User security audit details report, you must be assigned the “Security administrator” role.
