@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Finance utilities connections
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-06-27
+ms.date: 2025-11-12
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -97,17 +97,35 @@ Field         | Description                         | Example or Options
 
 ### Azure blob storage
 
+#### Azure SAS Storage account level or Connection string
+
+> Note: Folders are not supported
+
 Field         | Description                         | Example or Options
 :--           |:--                                  |:--
-**Container name**  |	Specify the **import** blob storage container. Folders are not supported	  | integration-import
-**Credential type** |	Select applicable **Credential type** for Azure blob	| •	Key vault <br> •	Database
-**Disable storage account access**  | Ability to use container level shared access signature URI | Value selected in Connection string is: <br> • **Yes** - Azure SAS Container level token <br> • **No** - Azure SAS Storage account level token or Connection string
-**Storage account name**  |	Enter the **Storage account name** where Credential type = **Database**
-**Storage account key**   |	Enter the **Storage account key** where Credential type = **Database**	
-**Connection string**     |	Enabled when Credential type = **Key vault**. <br> Select the applicable **Secret** as setup in **Key vault parameters**. <br> Azure SAS Storage account level & Container level tokens are also supported. 
-**Archive container name**  |	Enter the **archive** path where the imported files are to be copied to. Folders are not supported	| integration-archive
+**Container name**  |	Specify the **import** blob storage container. 	  | integration-import
+**Credential type** |	Select applicable **Credential type** for Azure blob	| •	Key vault 
+**Disable storage account access**  | Ability to use container level shared access signature URI | Value selected in Connection string is: <br> • **No** - Azure SAS Storage account level token or Connection string
+**Connection string**     |	Enabled when Credential type = **Key vault**. <br> Select the applicable **Secret** as setup in **Key vault parameters**. <br> Azure SAS Storage account level is also supported. 
+**Archive container name**  |	Enter the **archive** path where the imported files are to be copied to. | integration-archive
 **Search mask**           |	A file mask is used to match files in the Import path	        | Bank123*
-**Error container name**  |	Enter the **error** path where the files that matches the Search mask, but haven’t successfully been imported, are copied to. Folders are not supported. | integration-error
+**Error container name**  |	Enter the **error** path where the files that matches the Search mask, but haven’t successfully been imported, are copied to. | integration-error
+
+#### Azure SAS Container level
+
+> Note: For SAS URI container based, it is important the URI is generated on the container level not at the folder level.
+
+Field         | Description                         | Example or Options
+:--           |:--                                  |:--
+**Container name**  |	Specify the blob storage container that contains the inbound/archive/error folders. The URI needs to be created on this container level.	  | integration-import
+**Credential type** |	Select applicable **Credential type** for Azure blob	| •	Key vault 
+**Disable storage account access**  | Ability to use container level shared access signature URI | Value selected in Connection string is: <br> • **Yes** - Azure SAS Container level token
+**Connection string**     |	Enabled when Credential type = **Key vault**. <br> Select the applicable **Secret** as setup in **Key vault parameters**. Container level token required (not folder level)
+**Inbound folder name**   | Enter the **import** folder where the files will be imported from. | levela/in
+**Archive folder name**  |	Enter the **archive** folder where the imported files are to be copied to.	| levela/archive
+**Search mask**           |	A file mask is used to match files in the Import path	        | Bank123*
+**Error folder name**  |	Enter the **error** folder where the files that matches the Search mask, but haven’t successfully been imported, are copied to. | levela/error
+
 
 ### SFTP		
 
