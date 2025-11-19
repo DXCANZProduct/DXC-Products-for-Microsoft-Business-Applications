@@ -53,12 +53,13 @@ Release notes for other models included in product:
 Number	| Name		 | Description
 :--		|:--	     |:--
 22886	| License usage summary	| Added Security Insights fields to **License usage summary**: <br> • Utilization % <br> • Miniumum recommended license <br> • Interaction type (view vs.edit) <br> • Last interaction date
+24374	| Licensing tables	| Reworked extensions to std licensing tables - moved to Views. This removes the need for the 'Build license information' button, and 'Sync recommended licenses only' that was added in the previous release. If there are changes to security configuration, running the 'Calculate utilization rates' will refresh the views.
 
 <ins>Bug fixes</ins>
 
 Number	| Name		 | Description
 :--		|:--		 |:--
-24513	| User options	| Blank user options. Removed extension fields to sysuserinfo table
+24513	| User options	| Blank user options. Removed extension fields to sysuserinfo table.
 
 # Current version
 
