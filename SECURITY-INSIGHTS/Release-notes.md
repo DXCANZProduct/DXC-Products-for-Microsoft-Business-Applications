@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Security Insights for D365 FO - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-10-17
+ms.date: 2025-11-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,14 +36,29 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.43 <br> App build: 10.0.2177.18	  | • No functional issues <br> • Build error fixed in 21610	          | • Functional: 10.0.40.202412061 <br> • Build error fixed: 10.0.42.202503251
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | No	| 10.0.42.202503251
 Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No	| 10.0.43.202506191
+Product version: 10.0.46 <br> App build: 10.0.2428.15	  | No	| 10.0.44.202510171
 
 Release notes for other models included in product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
 
+# Next version
+
+### Release 10.0.44.202511TBD
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--		|:--	     |:--
+22886	| License usage summary	| Added Security Insights fields to **License usage summary**: <br> • Utilization % <br> • Miniumum recommended license <br> • Interaction type (view vs.edit) <br> • Last interaction date
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--		|:--		 |:--
+24513	| User options	| Blank user options. Removed extension fields to sysuserinfo table
 
 # Current version
 
@@ -55,6 +70,7 @@ Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
+Microsoft Dynamics 365 application	| 10.0.46 	  | [What’s new or changed in Dynamics 365 application version 10.0.46](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-46)
 
 ### Recordings
 
