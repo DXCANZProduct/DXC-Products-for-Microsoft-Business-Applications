@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Review Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-10-15
+ms.date: 2025-11-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -150,3 +150,12 @@ Select required highlight colour in field **Background color for unused license 
 **Role utilization %** on form **Assign users to roles** assists in determining if other assigned users utilised the role in the fetched period. 
 
 > Note: Only supported for roles assigned to users in F&O (not 'Microsoft Entra ID security groups')
+
+# License usage summary
+**System administration > Security > Security governance > Licenses usage summary**
+
+Following Security Insights fields have been added to this standard form: 
+- Utilization %
+- Miniumum recommended license
+- Interaction type (view vs.edit)
+- Last interaction date
