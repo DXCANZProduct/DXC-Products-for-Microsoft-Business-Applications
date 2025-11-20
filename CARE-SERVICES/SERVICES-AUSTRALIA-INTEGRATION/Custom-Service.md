@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: DXC Care services 
+title: DXC Care services API Suite Custom Service
 description: Services Australia Support at Home Custom Service
 author: Artika Dutt
 Manager: Pontus Ek

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: DXC Care services API Suite
+title: DXC Care services API Suite Overview
 Description: DXC Care Services API Suite - Overview
 author: Artika Dutt
 Manager: Pontus, Ek
