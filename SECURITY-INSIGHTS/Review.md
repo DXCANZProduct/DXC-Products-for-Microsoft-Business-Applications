@@ -78,8 +78,6 @@ Example actions that could be taken after review:
 - Where the user only accessed "lower" priority licensed menu items in the role, it could be possible to assign the applicable privileges to a different/new duty and add those to a different/new role which will result in a "lower" license for the user.
 
 After modifying security configuration, rerun the following to update the values on the page:
-- Build license information
-- Fetch interaction data from application Insights
 - Calculate utilization rates
 
 ### Sections
