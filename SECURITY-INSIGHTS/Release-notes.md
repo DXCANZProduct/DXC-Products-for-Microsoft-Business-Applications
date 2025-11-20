@@ -52,9 +52,10 @@ Release notes for other models included in product:
 
 Number	| Name		 | Description
 :--		|:--	     |:--
-22886	| License usage summary	| Added Security Insights fields to **License usage summary**: <br> • Utilization % <br> • Miniumum recommended license <br> • Interaction type (view vs. edit) <br> • Last interaction date
+22886	| License usage summary	| Added Security Insights fields to **License usage summary**: <br> • Utilization % <br> • Minimum recommended license <br> • Interaction type (view vs. edit) <br> • Last interaction date
 24374	| Licensing tables	| Reworked extensions to std licensing tables - moved to Views. This removes the need for the 'Build license information' button, and 'Sync recommended licenses only' that was added in the previous release. If there are changes to security configuration, running the 'Calculate utilization rates' will refresh the views.
 24365	| View related roles	| Added **View related roles** to form **Security insights by user** on the **Menu items for selected privilege**. This makes it easier to view where else (role, duty, privilege) the menu item is used.
+24493	| Read access level	| Populate read access level item's 'Minimum recommended license' and 'Active user license' with the Security Insights calculated value based on data from License usage summary. But the read access levels are still not included in license count, thus doesn't influence the utilization of the full license types.
 
 <ins>Bug fixes</ins>
 
