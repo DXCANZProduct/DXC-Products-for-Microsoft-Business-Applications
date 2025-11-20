@@ -111,7 +111,7 @@ The following buttons are available on the views:
 - **Assign privilege to duty** - Security configuration is opended for the selected privilege with the ability to assign to multiple duties
 - **Assign privilege to role** - Security configuration is opended for the selected privilege with the ability to assign to multiple roles
 - **Manage privilege assignments** - Security configuration is opended for the selected privilege(s)
-- **View related roles** - View related roles for the selected duty / privilege
+- **View related roles** - View related roles for the selected duty / privilege / menu item
 
 ### Links 
 
