@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 
-# Care services API Suite <br> <br> Services Australia Support at Home API Reference
+# Services Australia Support at Home API Reference
 
 ## Supported APIs
 This section describes the list of APIs supported.

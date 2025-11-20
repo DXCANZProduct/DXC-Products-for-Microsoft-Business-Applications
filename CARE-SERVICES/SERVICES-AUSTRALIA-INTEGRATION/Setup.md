@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 
-# Care services API Suite <br> <br> Services Australia Support at Home Integration Setup
+# Services Australia Support at Home Integration Setup
 Services Australia requires a PRODA account to be able to val
 1. **PRODA Authentication Profile** - A valid PRODA (Provider Digital Access) authentication profile
 2. **PRODA Setup** - PRODA configuration URLs

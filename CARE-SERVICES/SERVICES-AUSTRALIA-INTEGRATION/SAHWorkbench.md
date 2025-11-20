@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 
-# Care services API Suite <br> <br> Services Australia Support at Home Staging Workbench
+# Services Australia Support at Home Staging Workbench
 The Support at Home Staging Workbench provides a unified interface for managing API integration activities, including:
 - Viewing staging records
 - Monitoring API errors and responses

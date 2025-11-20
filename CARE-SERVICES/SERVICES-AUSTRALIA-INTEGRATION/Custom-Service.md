@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 
-# Care services API Suite <br> <br> Services Australia Support at Home Custom Service
+# Services Australia Support at Home Custom Service
 
 ## D365FO Custom Service
 The solution provides custom service endpoints for integrating with Services Australia Support at Home APIs. All APIs have been certified by Services Australia to ensure compliance and compatibility.
