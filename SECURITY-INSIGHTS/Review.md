@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Review Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-11-19
+ms.date: 2025-11-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,7 +50,7 @@ Uses new model of D365 licensing tables (from 10.0.44 Security Governance) to bu
    - **No** - Complete sync, also includes the Security insights recommended license field.
 
 
-## 2. Initiate user security groups
+## 1. Initiate user security groups
 Ability to automatically group similar users
  
 **Parameters:**
@@ -63,7 +63,7 @@ Ability to automatically group similar users
 
 When using **User groups** or **Microsoft Entra ID security groups** and an enabled user isn't assigned to one of the groups, a new group **Not assigned** will be created for these users.
 
-## 3. Fetch interaction data from application insights
+## 2. Fetch interaction data from application insights
 Fetch user interation data from Azure Applications Insights
 
 **Parameters:**
@@ -77,8 +77,9 @@ The number of records fetched from Azure application Insights can be checked in 
 
 > Note: User accessed menu items date/time data: starts when logging usage data to AppInsights with either DXC's Insights or Standard monitoring.
 
-## 4. Calculate utilization rates
-Calculate utilization rates of user roles and privileges based on accessing menu items.
+## 3. Calculate utilization rates
+Calculate utilization rates of user roles and privileges based on accessing menu items. <br>
+If there are changes to Security configuration, running this step will refresh the Security Insights' View tables.
 
 The records to include are automatically filtered to enabled users and can also be filtered to User Id(s).
 
