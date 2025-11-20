@@ -58,7 +58,7 @@ Release notes for other models included in product:
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-24106		| Various	| Connections - SFTP	| Removed SFTP renci.dll from product as it is in DXC Connections model.
+24106		| Various	| Connections - SFTP	| Removed SFTP renci.dll from product as it has been moved to DXC Connections model.
 24247		| Various	| Connections		| New DXC Connections version 10.0.43.202510021. <br> [Release notes](../CONNECTIONS/Release-notes.md)
 24214		| DXC License manager	| Licensing | New DXC License manager 10.0.43.202509291. <br> [Release notes](../LMG/Release-notes.md)
 24290		| Various	| ABN validation	| Updated headings and labels on ABN validation setup on Legal entities. Split into Australia and New Zealand validation.
