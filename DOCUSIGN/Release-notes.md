@@ -42,6 +42,7 @@ Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DocuSign Foundati
 Product version: 10.0.43 <br> App build: 10.0.2177	  | No | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | Yes 23017 | DocuSign Foundation 10.0.34.20230615 DocuSign 10.0.34.20230615 <br> Erros fixed in 10.0.44.202506252
 Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No | DocuSign Foundation 10.0.44.202506252 DocuSign 10.0.44.202506252
+Product version: 10.0.46 <br> App build: 10.0.2428	  | No | DocuSign Foundation 10.0.44.202506252 DocuSign 10.0.44.202506252
 
 # Current version
 
