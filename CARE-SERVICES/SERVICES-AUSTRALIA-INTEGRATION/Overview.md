@@ -41,7 +41,7 @@ The API integration offers several key advantages:
 - **Reliable authentication**: Leverage our PRODA authentication and API certification for reliable data access and connectivity
 - **Reduced implementation effort**: Avoid the complexity and time investment of implementing your own integration solution
 
-Getting started:
+# Getting started:
 
 1. **[Setup](./Setup.md)** - Detailed description of the setup requirements for accessing Services Australia APIs
 2. **[SAH workbench](./SAHWorkbench.md)** - Support at home workbench for interacting with the Services australia APIs.
