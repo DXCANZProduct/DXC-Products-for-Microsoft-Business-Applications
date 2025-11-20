@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-11-17
+ms.date: 2025-11-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,6 +49,26 @@ Release notes for other models included in product:
 - [DXC Connections](../CONNECTIONS/Release-notes.md)
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
+
+# Next version
+
+### Release 10.0.45.202511TBD
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+24106		| Various	| Connections - SFTP	| Removed SFTP renci.dll from product as it is in DXC Connections model.
+24247		| Various	| Connections		| New DXC Connections version 10.0.43.202510021. <br> [Release notes](../CONNECTIONS/Release-notes.md)
+24214		| DXC License manager	| Licensing | New DXC License manager 10.0.43.202509291. <br> [Release notes](../LMG/Release-notes.md)
+24290		| Various	| ABN validation	| Updated headings and labels on ABN validation setup on Legal entities. Split into Australia and New Zealand validation.
+24317		| Cash and bank management	| Bank statement format | Increased Custom line code's **Line code** from 10 to 30 characters
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+24259		| Accounts payable	| BPAY	| Fixed label issue on vendor Method of payment for 'Biller code is mandatory' under Payment control.
 
 
 # Current version
