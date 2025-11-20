@@ -36,20 +36,6 @@ Navigate to **System administration > Insights for user access and security**
 # Processing
 The following steps are available to initiate or update the required fields.
 
-## 1. Build license information
-Synchronizes the current user roles, privileges and accessible menu items. This can only be run as batch. <br>
-Recommended to run again after Security configuration changes.
-Uses new model of D365 licensing tables (from 10.0.44 Security Governance) to build user licensing information.
-
-**Parameters:**
-
-> Note: Microsoft automatically updates License usage summary information daily. This update rebuilds the new licensing tables, and thus loses our Security Insights recommended license field data. We've thus added the following parameter option to this step.
-
-- **Sync recommended licenses only**
-   - **Yes** - Only updates the Security insights recommended license field. We recommend creating a batch processing with this field set to _Yes_ with a daily recurrence.
-   - **No** - Complete sync, also includes the Security insights recommended license field.
-
-
 ## 1. Initiate user security groups
 Ability to automatically group similar users
  
