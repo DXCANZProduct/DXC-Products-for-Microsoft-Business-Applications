@@ -78,7 +78,7 @@ Business forms are sent automatically using email templates and are directed to 
 * Email can include the business form as well as additional file attachments associated with the email template, business form or report.
 
 ## Save to Azure Storage
-DXC Smart Business Form Email Manager can also save copies of the emailed/printed business forms or reports into Azure storage. This allows for an archive of the actual business forms produced and sent. File location and file name can utilise placeholder tags which dynamically look up information from the business form or report to include in the file name and define the Azure Storage location. Any fixed list placeholder tags are stored as metadata against the file in the Azure Storage.
+DXC Smart Business Form Email Manager can also save copies of the emailed/printed business forms or reports into Azure storage. This allows for an archive of the actual business forms produced and sent. File location and file name can utilise placeholder tags, which dynamically look up information from the business form or report to include in the file name and define the Azure Storage location. Any fixed list placeholder tags are stored as metadata against the file in the Azure Storage.
 
 ## Extendable
 While out-of-the-box functionality is for the business forms listed above, the solution can be extended to further business forms or reports. A [technical guide](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications-TechGuidance/blob/main/SmartSend.md) is provided or, upon request, can be evaluated for product enhancements.

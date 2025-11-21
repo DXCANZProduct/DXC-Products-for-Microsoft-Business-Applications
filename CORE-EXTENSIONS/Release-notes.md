@@ -42,7 +42,7 @@ Product version: 10.0.42 <br> App build: 10.0.2095.13	  | No | DXC Core Extensio
 Product version: 10.0.43 <br> App build: 10.0.2177	  | No | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymisation 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051
 Product version: 10.0.44 <br> App build: 10.0.2263	  | yes only build errors 22878 | DXC Core Extensions 10.0.40.202502051 <br> DXC Data Anonymisation 10.0.40.202502051 <br> DXC DMF Toolbox 10.0.40.202502051 <br> build errors fixed in 10.0.44.202506171
 Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No | DXC Core Extensions 10.0.44.20250625 <br> DXC Data Anonymisation 10.0.44.20250625 <br> DXC DMF Toolbox 10.0.44.20250625 
- 
+Product version: 10.0.46 <br> App build: 10.0.2428	  |  | DXC Core Extensions 10.0.44.202510171 <br> DXC Data Anonymisation 10.0.44.202510171 <br> DXC DMF Toolbox 10.0.44.202510171 
 
 Release notes for other models included in the product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
@@ -61,7 +61,7 @@ Reason for deprecation/removal - Business Process links (also referred to as Bus
 
 # Current version
 
-### Release 10.0.44.20250625
+### Release 10.0.44.202510171
 
 DXC Core extensions 10.0.44 run on the following Microsoft releases
 
@@ -69,8 +69,20 @@ Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
+Microsoft Dynamics 365 application	| 10.0.46 	  | [What’s new or changed in Dynamics 365 application version 10.0.46](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-46)
 
-#### Build 10.0.44.20250625
+#### Build 10.0.44.20251017
+
+<ins>Bug fixes</ins>
+
+Number	  	| Name	  | Description
+:--       	|:--              |:--
+24091 |Budget and Inventory Import security roles not allowing access| Extensions made to the standard security roles "BudgetManager", "LedgerAccountingManager", and "InventMaterialsManager" have been updated to allow Core Extension functionality without the requirement to use the System Administrator role  |
+
+# Previous version(s)
+
+### Release 10.0.44.20250625
+#### Build 10.0.44.202506251
 
 <ins>Bug fixes</ins>
 
@@ -78,7 +90,6 @@ Number	  	| Name	  | Description
 :--       	|:--              |:--
 23095 |Update to Data Entity "Core ledger journal entity"| The previous entity titled "Core ledger journal entity" has been deprecated and replaced with "Core ledger journal entity V8", incorporating key changes.   This entity is used for the Ability to create multiple General Ledger Journals in Multiple legal entities from a single upload  |
 
-# Previous version(s)
 ### Release 10.0.44.20250617
 #### Build 10.0.40.202502051
 

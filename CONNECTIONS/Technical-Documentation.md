@@ -1,7 +1,7 @@
 # Technical Documentation
 ## Secured File Transfer Protocol (SFTP)
 Libraries used:  
-- SSH.NET (2024.2.0)
+- SSH.NET (2025.0.0)
 - Newtonsoft.Json (13.0.3)
 
 Target Framework - net48

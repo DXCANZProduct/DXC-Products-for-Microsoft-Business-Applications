@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-09-15
+ms.date: 2025-11-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,12 +43,32 @@ Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No			 | DXC Finance Ut
 
 Feature	| 10.0.45 Feature state
 :--       	|:--		
-**Automatic vendor account matching**	| New from 10.0.45 and not supported yet. Don't enable.
+**Automatic vendor account matching**	| New from 10.0.45 and not supported yet. <br> Don't enable if using Advanced bank reconciliation and Modern bank reconciliation Generate vendor payment functionality. 
 
 Release notes for other models included in product:
 - [DXC Connections](../CONNECTIONS/Release-notes.md)
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
+
+# Next version
+
+### Release 10.0.45.202511TBD
+
+<ins>New features</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--     	|:--	         	|:--
+24106		| Various	| Connections - SFTP	| Removed SFTP renci.dll from product as it has been moved to DXC Connections model.
+24247		| Various	| Connections		| New DXC Connections version 10.0.43.202510021. <br> [Release notes](../CONNECTIONS/Release-notes.md)
+24214		| DXC License manager	| Licensing | New DXC License manager 10.0.43.202509291. <br> [Release notes](../LMG/Release-notes.md)
+24290		| Various	| ABN validation	| Updated headings and labels on ABN validation setup on Legal entities. Split into Australia and New Zealand validation.
+24317		| Cash and bank management	| Bank statement format | Increased Custom line code's **Line code** from 10 to 30 characters
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+24259		| Accounts payable	| BPAY	| Fixed label issue on vendor Method of payment for 'Biller code is mandatory' under Payment control.
 
 
 # Current version
@@ -63,14 +83,24 @@ Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in D
 Microsoft Dynamics 365 application 	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 
-#### Recordings
+### Recordings
 
 The following recordings are available for this release:
 - [Modern bank reconciliation - Overview](https://www.youtube.com/watch?v=taaHtFOrkXE&list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO&index=1)
 - [Modern bank reconciliation - Deep-dive](https://www.youtube.com/watch?v=cfZSdWN3QoM&list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO&index=2)
 - [Modern bank reconciliation - Electronic reporting import](https://www.youtube.com/watch?v=k4Swv6bFINQ&list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO&index=3)
 
-#### Build 10.0.43.202508294 (Current version)
+#### Build 10.0.43.202508295 (Current version)
+Release date: 22 October 2025 
+
+<ins>Bug fixes</ins>
+
+Number	  	| Module	| Functionality	  	| Description
+:--       	|:--   		|:--	           	|:--
+24368		| Accounts payable	| Vendor payment advice	| Removed the If statement from Vendor payment advice generation that only populated Finance utilities Vendor bank details in the BankPaymAdviceVendTmp table when it was a custom report.
+
+
+#### Build 10.0.43.202508294 (Previous version)
 Release date: 15 September 2025 
 
 <ins>New features</ins>
@@ -78,7 +108,7 @@ Release date: 15 September 2025
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
 23483		| Cash and bank management	| Modern bank reconciliation	| Electronic reporting import option to create Modern bank Reconciliation matching rules. <br> Interim option for migrating 'Mark new transactions' Reconciliation matching rules (Std data entity doesn't support Modern bank reconciliation) <br> [User guide](Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation-er-migration.md)
-23102		| Cash and bank management	| Import bank statement via Financial utilities connection	| New form called **File states for bank statement import** to view and manage Bank statement files imported via periodic task **Import bank statements via financial utilities connection**. <br> Electronic reporting and Custom bank statement formats are supported. <br> It allows users to easily view logs and applicable files state for each file: <br> • Completed - Succesfully created bank statement/s <br> • Error - Bank statement wasn't created, for example 'No matching bank account found' <br> • Cancelled - Option to cancel, which changes the status from Error to Cancelled.
+23102		| Cash and bank management	| Import bank statement via Financial utilities connection	| New form called **File states for bank statement import** to view and manage Bank statement files imported via periodic task **Import bank statements via financial utilities connection**. <br> Electronic reporting and Custom bank statement formats are supported. <br> It allows users to easily view logs and applicable files state for each file: <br> • Completed - Successfully created bank statement/s <br> • Error - Bank statement wasn't created, for example 'No matching bank account found' <br> • Cancelled - Option to cancel, which changes the status from Error to Cancelled. <br> ![File states](Images/ReleaseNotes_20250829_1.png "File states")
 
 <ins>Bug fixes</ins>
 
@@ -102,6 +132,7 @@ Number	  	| Module	| Functionality	  	| Description
 22984		| Accounts payable	| Sundry | One vendor account can used for multiple sundry vendors when using a Method of payment where 'Sundry method of payment' = Yes. <br> Accounts payable parameter **Check the invoice number used** will now use the combination of the following to determine uniqueness of sundry invoices: <br> • Invoice <br> • Sundry BSB\routing number <br> • Sundry bank account <br> <br> For example where two invoices with same id are processed for the one Sundry vendor account, but the sundry bank details differ between the two invoices, they will not be seen as duplicates.
 23156		| Budgeting	| Security configuration	| Created new role **Budget import manager** using duty 'Maintain budget import. Related to 22784.
 22980 		| Various	| DXC Connections - SFTP	| DXC Connections 10.0.43.202508012. Upgrade SFTP library to latest 2025.0.0 [Release notes](../CONNECTIONS/Release-notes.md) 
+19182		| Product Experience Metrics	| Product support | New model 'DXC Product Experience Metrics' - version 10.0.43.202508293. Product Experience Metrics is a foundational model that defines the structural and semantic framework for product support. It provides interfaces and dependencies that serves as a shared reference layer for all products. 
 
 
 <ins>Bug fixes</ins>
@@ -157,7 +188,7 @@ Release date: 2 May 2025
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-21806 <br> 22076 | Various	| Azure connections	| Added ability to use container level shared access signature URI by setting new field **Disable storage account access** to _Yes_. <br> ![Container level SAS](Images/ReleaseNotes_20250331_6.png "Container level SAS") <br> ![Container level SAS](Images/ReleaseNotes_20250501_2.png "Container level SAS")
+21806 <br> 22076 | Various	| Azure connections	| Added ability to use container level shared access signature URI by setting new field **Disable storage account access** to _Yes_. <br> Note: For SAS URI container based, it is important the URI is generated on the container level not at the folder level. <br> [User guide](Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md#azure-sas-container-level) <br> <br> ![Container level SAS](Images/ReleaseNotes_20250331_6.png "Container level SAS") <br> ![Container level SAS](Images/ReleaseNotes_20250501_2.png "Container level SAS")
 21544		| Accounts payable	| ABN validation (only applicable to Australia)	| **New ABN vendor** - Create a new vendor by entering their ABN. This automatically creates the new ABN and Vendor and populates vendor's name and assigns the ABN to the newly created vendor. <br> Requirements: <br> • 'ABN validation' enabled for the legal entity <br> • Automatic number sequence used to create Vendor account ID <br> ![New ABN vendor](Images/ReleaseNotes_20250501_1.png "New ABN vendor")
 21675		| Accounts payable	| Electronic reporting (ER) | Payment advice report: ER version of the SSRS report ECL_BankPaymAdviceVendV2.Report. Published on LCS solution as 'Vendor payment adviceV2_DXC(Excel)'
 

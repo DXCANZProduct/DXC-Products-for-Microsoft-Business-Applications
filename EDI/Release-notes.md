@@ -5,7 +5,7 @@ title: EDI
 description: Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-29
+ms.date: 2025-11-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,23 +40,13 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40.2024120421
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | No	          | 10.0.42.202504031
 Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No	          | 10.0.43.2025051921
+Product version: 10.0.46 <br> App build: 10.0.2428.15	  | No	          | 10.0.43.202508291(2)
 
 Release notes for other models included in product:
 - [DXC Connections](../CONNECTIONS/Release-notes.md)
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
 
-### Microsoft deprecation notice
-
-[Microsoft notice](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#feature-deprecation-effective-october-2024)
-- **Likely to affect**: Companies that uses **Database** credential type for their **Azure blob** connections. **Key Vault** credential type is not affected. These connections can be found at 'EDI > Setup > Connection setup > Azure sites' <br>
-- **Status**: Rollout for the change by Microsoft begins in **October 2024** in a phased manner. Changes will be backported to **10.0.41 (PU65)** and all later releases. <br> 
-- **What do you need to do if affected**: 
-	- Step 1 - Create Connection string in Azure portal
-	- Step 2 - In **Key vault parameters** create a Secret using the value created in step 1.
-	- Step 3 - Change all applicable **Azure blob** connections: <br> 
-		• Credential type: Key Vault <br>
-		• Key vault: Secret setup in step 2
 
 # Current version
 
@@ -69,9 +59,20 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
+Microsoft Dynamics 365 application	| 10.0.46 	  | [What’s new or changed in Dynamics 365 application version 10.0.46](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-46)
 
+#### Build 10.0.43.202508291(2) (Current version)
+Release date: 9 October 2025
 
-#### Build 10.0.43.202508291 (Current version)
+<ins>Bug fixes</ins>
+
+**3PL module**	
+
+Number	| Name		 | Description
+:--		|:--		 |:--
+24302	| Transfer order - Picking list	| When posting **Picking list** for **Transfer order** error with 'Function SAB_EDIStagingHistory::logHistory has been incorrectly called.'. <br> This was only applicable where the Transfer id didn't exist as a Sales id.
+
+#### Build 10.0.43.202508291 (Previous version)
 Release date: 29 August 2025
 
 

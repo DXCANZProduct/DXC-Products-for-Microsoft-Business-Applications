@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities setup - Data Entities 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-04-03
+ms.date: 2025-10-23
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -54,6 +54,9 @@ Cash and bank management > Bank accounts > Bank accounts
 
 ### Reconciliation matching rules
 Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules
+
+> Note: This standard entity doesn't support Modern bank reconciliation. <br>
+> Interim solution to import Modern bank reconciliation matching rules, see [ER migration](../Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation-er-migration.md)
 
 **Entity**                          | **Additional Finance utilities fields for standard entity**                     
 :--       |:--

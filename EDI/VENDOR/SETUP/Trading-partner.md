@@ -46,21 +46,21 @@ This section describes the setup applicable to **Vendor** trading partners.
 
 The following table describes the vendor module fields that are available on the **Options** FastTab of the **Trading partners** page.
 
-**Field**                          | **Description**               
-:---------                         |:--------
+**Field**                          | **Description**       | **Applies to**          
+:---------                         |:--------              |:--------
 <ins>**Order**</ins>	|
-**Order type**                     | EDI purchase orders can be sent to trading partners with many order types.  The type identifier is determined by the method the order is processed within D365. <br> Note: For further information see [Setup order type groups](VENDOR-SETUP/Order-type-group.md)
-**Order purpose**                  | Code identifying the purpose of the document. <br> Note: For further information see [Setup order purpose](VENDOR-SETUP/Order-purpose-group.md)
-**Order line change type**        |	Code specifying the type of change to the line item. <br> Note: For further information see [Setup order line change type](VENDOR-SETUP/Order-line-change-type-group.md)
-**Carrier mode**                  |	Code specifying the method or type of transportation for the shipment. <br> Note: For further information see [Setup carrier mode](VENDOR-SETUP/Carrier-mode.md)
-**Charges code**                  |	Code identifying the service, promotion, allowance, or charge. <br> Note: For further information see [Setup charges code](VENDOR-SETUP/Charges-code.md)
-**Payment terms type**            |	Code identifying the type of payment terms. <br> Note: For further information see [Setup payment terms type group](VENDOR-SETUP/Payment-terms-type-group.md)
-**Misc charge/allowance indicator** |	Code which indicates an allowance or charge for the service specified. <br> Note: For further information see [Setup misc. charge/allowance indicator](VENDOR-SETUP/Misc-charge-allowance-indicator.md)
-**Misc method of handling**       |	Code specifying if the misc. charge or allowance is required to be added to the D365 purchase invoice <br> Note: For further information see [Setup misc. method of handling](VENDOR-SETUP/Misc-method-of-handling.md)
+**Order type**                     | EDI purchase orders can be sent to trading partners with many order types.  The type identifier is determined by the method the order is processed within D365. <br> Note: For further information see [Setup order type groups](VENDOR-SETUP/Order-type-group.md) | • Vendor purchase order <br> • Vendor purchase order change
+**Order purpose**                  | Code identifying the purpose of the document. <br> Note: For further information see [Setup order purpose](VENDOR-SETUP/Order-purpose-group.md) | • Vendor purchase order <br> • Vendor purchase order change
+**Order line change type**        |	Code specifying the type of change to the line item. <br> Note: For further information see [Setup order line change type](VENDOR-SETUP/Order-line-change-type-group.md) | • Vendor purchase order change
+**Carrier mode**                  |	Code specifying the method or type of transportation for the shipment. <br> Note: For further information see [Setup carrier mode](VENDOR-SETUP/Carrier-mode.md) | • Vendor purchase order <br> • Vendor purchase order change
+**Charges code**                  |	Code identifying the service, promotion, allowance, or charge. <br> Note: For further information see [Setup charges code](VENDOR-SETUP/Charges-code.md) | • Vendor purchase order <br> • Vendor purchase order change <br>  • Purchase invoice
+**Payment terms type**            |	Code identifying the type of payment terms. <br> Note: For further information see [Setup payment terms type group](VENDOR-SETUP/Payment-terms-type-group.md) | • Vendor purchase order <br> • Vendor purchase order change <br>  • Purchase invoice
+**Misc charge/allowance indicator** |	Code which indicates an allowance or charge for the service specified. <br> Note: For further information see [Setup misc. charge/allowance indicator](VENDOR-SETUP/Misc-charge-allowance-indicator.md) | • Vendor purchase order <br> • Vendor purchase order change <br>  • Purchase invoice
+**Misc method of handling**       |	Code specifying if the misc. charge or allowance is required to be added to the D365 purchase invoice <br> Note: For further information see [Setup misc. method of handling](VENDOR-SETUP/Misc-method-of-handling.md) | • Purchase invoice
 <ins>**Acknowledgement**</ins>	|
-**POA response code group**       |	POA Response codes are used to identify the status of information used in a purchase order acknowledgement for each vendor. <br> Note: For further information see [Setup POA response codes](VENDOR-SETUP/POA-response-code-group.md)
+**POA response code group**       |	POA Response codes are used to identify the status of information used in a purchase order acknowledgement for each vendor. <br> Note: For further information see [Setup POA response codes](VENDOR-SETUP/POA-response-code-group.md) | • Vendor purchase order acknowledgement
 <ins>**Other**</ins>	|
-**UOM**                           |	Unit of measure mappings. Ability to map a trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM-mapping.md)
+**UOM**                           |	Unit of measure mappings. Ability to map a trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM-mapping.md) | All in- and outbound documents
 
 - Data entity: EDI Vendors
 

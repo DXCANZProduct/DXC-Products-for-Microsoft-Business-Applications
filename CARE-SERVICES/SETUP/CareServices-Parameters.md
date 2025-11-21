@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: DXC Care services 
-description: Care Services Customer and Client Management
+title: DXC Care Services 
+description: Care Services Parameters
 author: Peter Musumeci 
 Manager: Pontus Ek
 ms.date: 2025-03-31
@@ -24,8 +24,8 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: Peter Musumeci
 ms.search.validFrom: 2025-03-31
-ms.dyn365.ops.version: AX 7.0.1
+ms.dyn365.ops.version: 365 FSCM
 ---
 
 
-# Care services
+# Care Services Parameters

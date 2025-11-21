@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Security Insights for D365 FO - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-22
+ms.date: 2025-11-19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,26 +36,69 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.43 <br> App build: 10.0.2177.18	  | • No functional issues <br> • Build error fixed in 21610	          | • Functional: 10.0.40.202412061 <br> • Build error fixed: 10.0.42.202503251
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | No	| 10.0.42.202503251
 Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No	| 10.0.43.202506191
+Product version: 10.0.46 <br> App build: 10.0.2428.15	  | No	| 10.0.44.202510171
 
 Release notes for other models included in product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
 
+# Next version
+
+### Release 10.0.44.202511TBD
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--		|:--	     |:--
+22886	| License usage summary	| Added Security Insights fields to **License usage summary**: <br> • Utilization % <br> • Minimum recommended license <br> • Interaction type (view vs. edit) <br> • Last interaction date
+24374	| Licensing tables	| Reworked extensions to std licensing tables - moved to Views. This removes the need for the 'Build license information' button, and 'Sync recommended licenses only' that was added in the previous release. If there are changes to security configuration, running the 'Calculate utilization rates' will refresh the views.
+24365	| View related roles	| Added **View related roles** to form **Security insights by user** on the **Menu items for selected privilege**. This makes it easier to view where else (role, duty, privilege) the menu item is used.
+24493	| Read access level	| Populate read access level item's 'Minimum recommended license' and 'Active user license' with the Security Insights calculated value based on data from License usage summary. But the read access levels are still not included in license count, thus doesn't influence the utilization of the full license types.
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--		|:--		 |:--
+24513	| User options	| Blank user options. Removed extension fields to sysuserinfo table.
 
 # Current version
 
-### Release 10.0.43.20250619
+### Release 10.0.44.20251017
 
-Security Insights for D365 FO 10.0.43 runs on the following Microsoft releases
+Security Insights for D365 FO 10.0.44 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
+Microsoft Dynamics 365 application	| 10.0.46 	  | [What’s new or changed in Dynamics 365 application version 10.0.46](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-46)
+
+### Recordings
+
+The following recording is available for this release:
+- [Security Insights for Microsoft Dynamics 365 FO to optimize user licensing – Oct 2025 update](https://www.youtube.com/watch?v=7rC7uf1fM5M&list=PLIM01nS-jtL-D-wvUbmncSwy3PYjLuig5&index=1)
+
+#### Build 10.0.44.202510171
+Release date: 17 October 2025
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--		|:--	     |:--
+23142	| Security governance	| In 10.0.44 MS introduced new tables specifying user licensing requirements. We have now aligned our **build logic** to the newer model of D365 licensing from Security Governance. This aligns us to **License usage summary** and their new sets of licenses. Additional functionality we offer, not available in std: <br> • Actual usage and highlights unused license types <br> • Summarised / applicable values and license spread - We only show the license count applicable to the user's required license types, but also indicate what would be the minimum license for the menu item. Where a user requires multiple license types, we spread the license count to the lowest priority applicable license. For example if the user needs SCM and Finance licenses, the menu item count will only be included in the lowest priority license applicable for that menu item and user. Thus if it could be accessed by SCM and Finance, only Finance count will include this menu item for this user. This makes it simpler to see if a license type is unused based on actual user access. <br> • Microsoft Entra ID users  <br>  <br> The following updates have been made to **Security insights by user** page: <br> • Button **Build license information** - uses new model of D365 licensing tables to build user licensing information. Also doesn't reset fetched data anymore. <br> • License types - the columns indicating applicable licenses matches to new sets of licenses, for example includes Finance premium. <br> • New fields **Minimum recommended license** and **Active user license** in FastTab 'Menu items for selected privilege'. Example: The user requires SCM and Finance license, if the menu item can be write accessed by the lower priority license 'Finance', **Active user license** would be 'Finance' for this user. **Minimum required license** will indicate the lowest priority license that can write access this menu item, for example 'Operations - Activity'. Thus if this is the only 'Finance' accessed menu item by the user, they could be moved to a different role that excludes the other Finance menu items, and only include 'Operations - Activity' menu items which could reduce their required license from 'Finance' to 'Operations - Activity'.  Blank values would be the 'Not required' records in 'License usage summary'.  <br> <br> The **unused license types** can still be highlighted on user, roles, duties and privileges with colors to indicate that those license types could be removed from the user, by modifying the role or replacing with lower license roles to save user licensing costs. <br> <br> [User guide](Review.md) <br> <br> **Notes**: <br> • The data entity 'Insights for user access and security’ has been deprecated as it is no longer relevant. Previously D365 didn't have the breakdown of menu items linked to privileges, duties, roles and user, which is now available in Security governance. <br> •  We've removed page 'Security insights by license'. Std 'License usage summary' provides a license top-down view, we aim to include our usage data to the std form in next release.
+
+<ins>Bug fixes</ins>
+
+Number	| Name		 | Description
+:--		|:--		 |:--
+24311	| Security diagnostics	| Error 'Object reference not set to an instance of an object'. Related to telemetry capturing extensions.
+
+
+# Previous Version(s)
+
+### Release 10.0.43.20250619
 
 #### Build 10.0.43.202506191
 Release date: 19 June 2025
@@ -67,7 +110,6 @@ Number	| Name		 | Description
 22736 <br> 22158	| **Interaction type**	| Ability to log Form/Page Interaction types **Viewed** (only opened the form) vs **Edited** (modified / created records) for the accessed menu items. Enable this additional telemetry field by setting **Form edits (Page edits)** to _Yes_ on **Monitoring and telemetry parameters**.  This is useful, for example if the user only viewed Finance license type menu items, they could possibly be switched to a Team member / Activity license type role for the menu items. <br> ![Monitoring settings](IMAGES/ReleaseNotes_20250619_1.png "Monitoring settings") <br> <br>  Where there was no interaction, or the interaction was prior enabling the new monitoring field, the Interaction type will be Blank. <br> <br> Interaction type has also been added to the following two Security Insights forms. Please note the Interaction type is a display method on the license view. <br> ![User view](IMAGES/ReleaseNotes_20250619_2.png "User view")  <br> <br> ![License view](IMAGES/ReleaseNotes_20250619_3.png "License view") 
 
 
-# Previous Version(s)
 
 ### Release 10.0.42.20250325
 
