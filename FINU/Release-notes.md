@@ -38,12 +38,8 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 Product version: 10.0.43 <br> App build: 10.0.2177.18	  | Yes <br> • 21291 & 21612  | DXC Finance Utilities 10.0.40.202501221 <br> [DXC ABN Validation 10.0.40.202501221] <br> [DXC Encryption 10.0.40.202412121] <br> 21612 Build error fixed in 10.0.42.202504081 <br> 21291 Fixed in 10.0.43.20250502
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | Only build errors 22783 & 22784  | DXC Finance Utilities 10.0.42.202504081 <br> [DXC ABN Validation 10.0.42.202504081] <br> [DXC Encryption 10.0.42.202504041] <br> Build errors fixed in 10.0.43.202505211
 Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No			 | DXC Finance Utilities 10.0.43.2025052121 <br> [DXC ABN Validation 10.0.43.2025052121] <br> [DXC Encryption 10.0.43.202505191]
+Product version: 10.0.46 <br> App build: 10.0.2428.15	  | No			 | DXC Finance Utilities 10.0.43.202508295 <br> [DXC ABN Validation 10.0.43.202508295] <br> [DXC Encryption 10.0.43.202505191]
 
-#### Features not yet supported
-
-Feature	| 10.0.45 Feature state
-:--       	|:--		
-**Automatic vendor account matching**	| New from 10.0.45 and not supported yet. <br> Don't enable if using Advanced bank reconciliation and Modern bank reconciliation Generate vendor payment functionality. 
 
 Release notes for other models included in product:
 - [DXC Connections](../CONNECTIONS/Release-notes.md)
@@ -58,17 +54,21 @@ Release notes for other models included in product:
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
-24106		| Various	| Connections - SFTP	| Removed SFTP renci.dll from product as it has been moved to DXC Connections model.
-24247		| Various	| Connections		| New DXC Connections version 10.0.43.202510021. <br> [Release notes](../CONNECTIONS/Release-notes.md)
-24214		| DXC License manager	| Licensing | New DXC License manager 10.0.43.202509291. <br> [Release notes](../LMG/Release-notes.md)
-24290		| Various	| ABN validation	| Updated headings and labels on ABN validation setup on Legal entities. Split into Australia and New Zealand validation.
+24106		| Various	| Connections - SFTP	| Removed **SFTP** renci.dll from product as it has been moved to DXC Connections model.
+24247		| Various	| Connections		| New 'DXC Connections' version 10.0.43.202510021. <br> [Release notes](../CONNECTIONS/Release-notes.md)
+24214		| DXC License manager	| Licensing | New 'DXC License manager' version 10.0.43.202509291. <br> [Release notes](../LMG/Release-notes.md)
+23540		| Product Experience Metrics	| Product support | New 'Product Experience Metrics' version xx. Foundational model that defines the structural and semantic framework for product support. It provides interfaces and dependencies that serves as a shared reference layer for all products. Additional metrics added in this Finance Utilities release.
+24290		| Various	| ABN validation	| Updated headings and labels on ABN validation setup on **Legal entities**. Split into Australia and New Zealand validation.
+24082		| Accounts payable <br> Accounts receivable	| Bank account validation	| **Bank account validation** option when creating new vendor and customer bank accounts. Validation will also apply when importing vendor and customer bank account data entities. <br> <br> Fields added to Validation section on **Legal entites**: <br> • **Country/region** - Validation will only apply to bank accounts for this country. Once this field is populated, address becomes mandatory on vendor and customer bank accounts. <br> • **Bank account format validation** - No validation (default), Warning, Error <br> • **Routing / bsb number format** - example ###-### <br> •  **Bank account minimum number of digits** - example 6 for Australia, 15 for New Zealand <br> • **Bank account maximum number of digits** - example 9 for Australia, 17 for New Zealand <br> <br> Australia example: <br> ![Bank account validation](Images/ReleaseNotes_20251128_1.png "Bank account validation") <br> <br> New Zealand example: <br> ![Bank account validation](Images/ReleaseNotes_20251128_2.png "Bank account validation")
 24317		| Cash and bank management	| Bank statement format | Increased Custom line code's **Line code** from 10 to 30 characters
+23590		| Cash and bank management	| Automatic vendor account matching	| Finance Utilities **Intercompany** functionality added to 10.0.45 feature **Automatic vendor account matching**.
 
 <ins>Bug fixes</ins>
 
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--   		|:--	           	|:--
 24259		| Accounts payable	| BPAY	| Fixed label issue on vendor Method of payment for 'Biller code is mandatory' under Payment control.
+24202		| Cash and bank management	| Import bank statement	| Incorrect error when importing ER bank statement format and limiting it to one specific bank account. The messages incorrectly stated the operation was cancelled and error message. Bank statement still imported. Error message has now been updated.
 
 
 # Current version
@@ -82,6 +82,7 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application 	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 Microsoft Dynamics 365 application 	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
+Microsoft Dynamics 365 application	| 10.0.46 	  | [What’s new or changed in Dynamics 365 application version 10.0.46](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-46)
 
 ### Recordings
 
