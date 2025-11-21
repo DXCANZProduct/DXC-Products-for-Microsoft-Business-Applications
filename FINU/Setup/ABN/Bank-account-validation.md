@@ -38,7 +38,10 @@ Also applies to importing data entities:
 1. Go to **Organization administration > Organizations > Legal entities** and select the applicable legal entity.
 2. Use the setup available under **Validation** FastTab, heading **Bank account format validation**:
     - **Country/region** - Validation will only apply to bank accounts for this country. Once this field is populated, address becomes mandatory on vendor and customer bank accounts.
-    - **Bank account format validation** - No validation (default), Warning, Error
+    - **Bank account format validation**
+        - **No validation** (default) - incorrect formats will incur no validation.
+        - **Warning** - warning message, user will be allowed to save incorrect formats.
+        - **Error** - error message, user will not be allowed to save incorrect formats.
     - **Routing / bsb number format** - example ###-###
     - **Bank account minimum number of digits** - example 6 for Australia, 15 for New Zealand
     - **Bank account maximum number of digits** - example 9 for Australia, 17 for New Zealand
