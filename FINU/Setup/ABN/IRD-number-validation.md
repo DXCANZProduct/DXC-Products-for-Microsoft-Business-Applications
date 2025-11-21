@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Setup - IRD number validation 
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2024-11-20
+ms.date: 2025-11-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ The fields as described in the following subsections are available to control th
 
 ## Setup legal entity
 1. Go to **Organization administration > Organizations > Legal entities** and select the applicable legal entity.
-2. Use the setup available under **ABN Validation** FastTab to enable IRD number validation by allocating the applicable New Zealand country in field **Country/region**.
+2. Use the setup available under **Validation** FastTab, heading **New Zealand validation** to enable IRD number validation by allocating the applicable New Zealand country in field **Country/region**.
   
 ## Processing
 See [link](../../Processing/ABN/IRD-number-validation.md) for details on processing.
