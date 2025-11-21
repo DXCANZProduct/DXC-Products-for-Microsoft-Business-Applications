@@ -49,6 +49,13 @@ Release notes for other models included in product:
 
 ### Release 10.0.45.202511TBD
 
+DXC Finance Utilities 10.0.45 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
+Microsoft Dynamics 365 application	| 10.0.46 	  | [What’s new or changed in Dynamics 365 application version 10.0.46](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-46)
+
 <ins>New features</ins>
 
 Number	  	| Module	| Functionality	  	| Description
