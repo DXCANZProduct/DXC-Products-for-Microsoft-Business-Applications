@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Security Insights for D365 FO - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-11-19
+ms.date: 2025-11-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,9 +44,22 @@ Release notes for other models included in product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
 
-# Next version
 
-### Release 10.0.44.202511TBD
+# Current version
+
+### Release 10.0.44.20251121
+
+Security Insights for D365 FO 10.0.44 runs on the following Microsoft releases
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
+Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
+Microsoft Dynamics 365 application	| 10.0.46 	  | [What’s new or changed in Dynamics 365 application version 10.0.46](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-46)
+
+
+#### Build 10.0.44.202511211
+Release date: 21 November 2025
 
 <ins>New features</ins>
 
@@ -63,19 +76,12 @@ Number	| Name		 | Description
 :--		|:--		 |:--
 24513	| User options	| Blank user options. Removed extension fields to sysuserinfo table.
 
-# Current version
+
+# Previous Version(s)
 
 ### Release 10.0.44.20251017
 
-Security Insights for D365 FO 10.0.44 runs on the following Microsoft releases
-
-Base	  | Version	  | Release
-:--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
-Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
-Microsoft Dynamics 365 application	| 10.0.46 	  | [What’s new or changed in Dynamics 365 application version 10.0.46](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-46)
-
-### Recordings
+#### Recordings
 
 The following recording is available for this release:
 - [Security Insights for Microsoft Dynamics 365 FO to optimize user licensing – Oct 2025 update](https://www.youtube.com/watch?v=7rC7uf1fM5M&list=PLIM01nS-jtL-D-wvUbmncSwy3PYjLuig5&index=1)
@@ -95,8 +101,6 @@ Number	| Name		 | Description
 :--		|:--		 |:--
 24311	| Security diagnostics	| Error 'Object reference not set to an instance of an object'. Related to telemetry capturing extensions.
 
-
-# Previous Version(s)
 
 ### Release 10.0.43.20250619
 

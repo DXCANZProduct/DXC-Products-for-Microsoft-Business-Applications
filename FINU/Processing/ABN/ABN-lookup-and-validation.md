@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Processing - ABN lookup and validation
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-07-22
+ms.date: 2025-11-21
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  DXC_ABNValidationProviderTypeTable
+ms.search.form: DXC_ABNValidationReview
 audience: Application User
 # ms.devlang: 
 ms.reviewer: Monica du Toit

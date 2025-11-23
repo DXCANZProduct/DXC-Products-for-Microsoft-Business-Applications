@@ -5,7 +5,7 @@ title: Security Insights for D365 FO
 description: Review Security Insights for D365 FO
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-11-21
+ms.date: 2025-11-24
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -129,7 +129,7 @@ Select required highlight colour in field **Background color for unused license 
 ![Security insights by user](IMAGES/Overview.png)
 
 
-# Assign users to role
+# Role utilization % for all users
 **System administration > Security > Assign users to roles**
 
 **Role utilization %** on form **Assign users to roles** assists in determining if other assigned users utilised the role in the fetched period. 
