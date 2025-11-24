@@ -35,7 +35,7 @@ The matrix shows the minimum DXC build versions compatible per for Microsoft ver
 If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
-:--       	  |:--           			  |:--
+:--       	  	  |:--           			    	  |:--
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | No	| 10.0.42.202503251
 Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No	| 10.0.43.202506191
 Product version: 10.0.46 <br> App build: 10.0.2428.15	  | No	| 10.0.44.202510171
@@ -65,9 +65,9 @@ Release date: 21 November 2025
 
 Number	| Name		 | Description
 :--		|:--	     |:--
-22886	| License usage summary	| Added Security Insights fields to **License usage summary**: <br> • Utilization % <br> • Minimum recommended license <br> • Interaction type (view vs. edit) <br> • Last interaction date
+22886	| License usage summary	| Added Security Insights fields to **License usage summary**: <br> • Utilization % <br> • Minimum recommended license <br> • Interaction type (view vs. edit) <br> • Last interaction date <br> <br> ![User licenses](IMAGES/ReleaseNotes_20251121_1.png "User licenses")
 24374	| Licensing tables	| Reworked extensions to std licensing tables - moved to Views. This removes the need for the 'Build license information' button, and 'Sync recommended licenses only' that was added in the previous release. If there are changes to security configuration, running the 'Calculate utilization rates' will refresh the views.
-24365	| View related roles	| Added **View related roles** to form **Security insights by user** on the **Menu items for selected privilege**. This makes it easier to view where else (role, duty, privilege) the menu item is used.
+24365	| View related roles	| Added **View related roles** to form **Security insights by user** on the **Menu items for selected privilege**. This makes it easier to view where else (role, duty, privilege) the menu item is used. <br> <br> ![View related roles](IMAGES/ReleaseNotes_20251121_2.png "View related roles")
 24493	| Read access level	| Populate read access level item's 'Minimum recommended license' and 'Active user license' with the Security Insights calculated value based on data from License usage summary. But the read access levels are still not included in license count, thus doesn't influence the utilization of the full license types.
 
 <ins>Bug fixes</ins>
