@@ -69,7 +69,7 @@ Number	| Name		 | Description
 24374	| Licensing tables	| Reworked extensions to std licensing tables - moved to Views. This removes the need for the 'Build license information' button, and 'Sync recommended licenses only' that was added in the previous release. If there are changes to security configuration, running the 'Calculate utilization rates' will refresh the views.
 24365	| View related roles	| Added **View related roles** to form **Security insights by user** on the **Menu items for selected privilege**. This makes it easier to view where else (role, duty, privilege) the menu item is used. <br> <br> ![View related roles](IMAGES/ReleaseNotes_20251121_2.png "View related roles")
 24493	| Read access level	| Populate read access level item's 'Minimum recommended license' and 'Active user license' with the Security Insights calculated value based on data from License usage summary. But the read access levels are still not included in license count, thus doesn't influence the utilization of the full license types.
-24214		| DXC License manager	| New 'DXC License manager' version 10.0.43.202509291. <br> [Release notes](../LMG/Release-notes.md)
+24214		| DXC License manager	| New 'DXC License manager' version 10.0.43.202509291 <br> [Release notes](../LMG/Release-notes.md)
 
 <ins>Bug fixes</ins>
 
