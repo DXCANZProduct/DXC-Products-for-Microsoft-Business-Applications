@@ -51,7 +51,7 @@ Release notes for other models included in the product:
 
 # Current version
 
-### Release 10.0.44.20251119
+### Release 10.0.44.20251120
 
 DXC Care Services  10.0.44 runs on the following Microsoft releases
 
@@ -60,6 +60,21 @@ Base	  | Version	  | Release
 :--       |:--            |:--
 Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 
+#### Build 10.0.44.202511201
+
+Release date: 25 November 2025
+
+<ins>Bug fixes</ins>
+
+Number	  | Name	          | Description
+:--       |:--              |:--
+24425|Billing Journal should search and populate the Vendor account when processing a client refund  for a customer account| Billing Journal should populate the "vendor" account for a customer when a refund is processed
+24391|Client refund proposal function is  greyed out  for type organisation |allow client refund process to be initiated for customer type organisation
+24424|GST duplication on Reversal transaction part of the Billing adjustment proposal|If a Billing Journal is set to "no" for includes GST in Journal Amounts, the Billing adjustment proposal will not add GST as an additional amount within the Journal
+
+
+# Previous version(s)
+### Release 10.0.44.20251119
 #### Build 10.0.44.202511193
 
 Release date: 19 November 2025
@@ -68,7 +83,7 @@ Release date: 19 November 2025
 
 Number	  | Name	          | Description
 :--       |:--              |:--
-24012     | Services Australia API integration core  | Includes the core infrastructure infrastructure for Services Australia API integration in FinOps. The solution contains, PRODA authentication solution, Services Australia integration parameters setup forms, enhanced telemetry view and API raw response viewer.  
+24012     | Services Australia API integration core  | Includes the core infrastructure for Services Australia API integration in FinOps. The solution includes the PRODA authentication solution, setup forms for Services Australia integration parameters, an enhanced telemetry view, and an API raw response viewer.  
 24013 | Services Australia API integration support at home | Includes Services Australia support at home APIs integration functionality. All supported APIs have been certified by Services Australia. Included APIs: Budgets, Care recipient individual contribution, Entry and departure events, Oxygen supplements, Enteral feeding supplements, Invoices, Claims and Payment statements. 
 
 <ins>Bug fixes</ins>
@@ -78,7 +93,9 @@ Number	  | Name	          | Description
 24391 | Client refund proposal function is  greyed out  for type organization | Enable client refund proposal for providers that use brokers that are set as type organisation
 
 
-# Previous version(s)
+
+
+
 ### Release 10.0.43.20251006
 
 DXC Care Services  10.0.43 runs on the following Microsoft releases
