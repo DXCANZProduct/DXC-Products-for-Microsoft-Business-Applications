@@ -136,6 +136,8 @@ Select required highlight colour in field **Background color for unused license 
 
 > Note: Only supported for roles assigned to users in F&O (not 'Microsoft Entra ID security groups')
 
+<br> ![Role utilization all users](IMAGES/Role_utilization_all_users.png "Role utilization all users")
+
 # License usage summary
 **System administration > Security > Security governance > Licenses usage summary**
 
@@ -144,3 +146,6 @@ Following Security Insights fields have been added to this standard form:
 - Miniumum recommended license
 - Interaction type (view vs.edit)
 - Last interaction date
+
+![User licenses](IMAGES/ReleaseNotes_20251121_1.png "User licenses") <br> 
+![User role licenses](IMAGES/ReleaseNotes_20251121_3.png "User role licenses")
