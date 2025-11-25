@@ -5,7 +5,7 @@ title: DXC Connections
 description: DXC Connections - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-10-02
+ms.date: 2025-11-25
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -43,21 +43,33 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
-Product version: 10.0.43 <br> App build: 10.0.2177.18	  | No	          | 10.0.40.204120441
 Product version: 10.0.44 <br> App build: 10.0.2263.11	  | No	          | 10.0.42.202504042
 Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No	          | 10.0.43.202508012
+Product version: 10.0.46 <br> App build: 10.0.2428.15	  | No	          | 10.0.43.202510302
 
 
 # Current version
-### Release 10.0.43.202510021
+### Release 10.0.44.202511252
 
-DXC Connections 10.0.43 runs on the following Microsoft releases
+DXC Connections 10.0.44 runs on the following Microsoft releases
 
 Base                                | Version | Release                                                                                                                                                         
 :---------------------------------  | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-Microsoft Dynamics 365 application  | 10.0.43 | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
 Microsoft Dynamics 365 application  | 10.0.44 | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
+
+Release date: 25 November 2025
+
+<ins>New features</ins>
+
+Number	| Name		 | Description
+:--		  |:--		   |:--
+24591  	| Added ability to use Container level Account key shared access signature URI | Azure blob connection has been modified to support Container level Account key SAS URI to be utlized for authentication.  |
+
+
+# Previous Version(s)
+
+### Release 10.0.43.202510021
 
 Release date: 2 October 2025
 
@@ -66,9 +78,6 @@ Release date: 2 October 2025
 Number	| Name		 | Description
 :--		  |:--		   |:--
 24071  	| SFTP	   | Specified the Renci.SSHNET dll version in DXC Connections referencing, to avoid conflicts with different versions of the dll file in the environment.
-
-
-# Previous Version(s)
 
 ### Release 10.0.43.202508012
 
