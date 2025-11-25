@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-11-21
+ms.date: 2025-11-25
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -68,6 +68,7 @@ Number	  	| Module	| Functionality	  	| Description
 24082		| Accounts payable <br> Accounts receivable	| Bank account validation	| **Bank account validation** option when creating new vendor and customer bank accounts. Validation will also apply when importing vendor and customer bank account data entities. <br> <br> Fields added to Validation section on **Legal entites**: <br> • **Country/region** - Validation will only apply to bank accounts for this country. Once this field is populated, address becomes mandatory on vendor and customer bank accounts. <br> • **Bank account format validation** - No validation (default), Warning, Error <br> • **Routing / bsb number format** - example ###-### <br> •  **Bank account minimum number of digits** - example 6 for Australia, 15 for New Zealand <br> • **Bank account maximum number of digits** - example 9 for Australia, 17 for New Zealand <br> <br> • [Setup user guide](Setup/ABN/Bank-account-validation.md) <br> • [Processing user guide](Processing/ABN/Bank-account-validation.md) <br> <br> Australia example: <br> ![Bank account validation](Images/ReleaseNotes_20251128_1.png "Bank account validation") <br> <br> New Zealand example: <br> ![Bank account validation](Images/ReleaseNotes_20251128_2.png "Bank account validation")
 24317		| Cash and bank management	| Bank statement format | Increased Custom line code's **Line code** from 10 to 30 characters
 23590		| Cash and bank management	| Automatic vendor account matching	| Finance Utilities **Intercompany** functionality added to 10.0.45 feature **Automatic vendor account matching**.
+24591		| Cash and bank management	| Import bank statement via Financial utilies connection | Support for Azure SAS URI for container level with key access. Supported: <br> • SAS URI container level account key (new) <br> • SAS URI container level user-delegated <br> • SAS URI storage level (folders not supported)  <br> • Connection string (folders not supported) 
 
 <ins>Bug fixes</ins>
 
