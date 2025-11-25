@@ -61,7 +61,7 @@ Microsoft Dynamics 365 application	| 10.0.46 	  | [What’s new or changed in Dy
 Number	  	| Module	| Functionality	  	| Description
 :--       	|:--     	|:--	         	|:--
 24106		| Various	| Connections - SFTP	| Removed **SFTP** renci.dll from product as it has been moved to DXC Connections model.
-24247		| Various	| Connections		| New 'DXC Connections' version 10.0.43.202510021. <br> [Release notes](../CONNECTIONS/Release-notes.md)
+24247		| Various	| Connections		| New 'DXC Connections' version 10.0.44.202511252. <br> [Release notes](../CONNECTIONS/Release-notes.md)
 24214		| DXC License manager	| Licensing | New 'DXC License manager' version 10.0.43.202509291. <br> [Release notes](../LMG/Release-notes.md)
 23540		| Product Experience Metrics	| Product support | New 'Product Experience Metrics' version xx. Foundational model that defines the structural and semantic framework for product support. It provides interfaces and dependencies that serves as a shared reference layer for all products. Additional metrics added in this Finance Utilities release.
 24290		| Various	| ABN validation	| Updated headings and labels on ABN validation setup on **Legal entities**. Split into Australia and New Zealand validation.
