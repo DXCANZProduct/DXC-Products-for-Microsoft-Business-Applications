@@ -65,7 +65,7 @@ Release date: 25 November 2025
 
 Number	| Name		 | Description
 :--		  |:--		   |:--
-24591  	| Added ability to use Container level Account key shared access signature URI | Azure blob connection has been modified to support Container level Account key SAS URI to be utlized for authentication.  |
+24591  	| Container level Account key Shared Access Signature URI | Azure blob connection has been modified to support Container level **Account key** SAS URI to be utlized for authentication.  |
 
 
 # Previous Version(s)
