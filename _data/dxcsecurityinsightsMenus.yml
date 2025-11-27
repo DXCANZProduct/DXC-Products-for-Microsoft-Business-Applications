@@ -1,0 +1,11 @@
+toc:
+  - page: Introduction
+    url: /docs/dxc-security-insights
+  - page: Setup
+    url: /dxcsecurityinsights/userguides/Parameters
+  - page: Monitor
+    url: /dxcsecurityinsights/userguides/Review
+  - page: Security diagnostics
+    url: /dxcsecurityinsights/userguides/Security-diagnostics
+  - page: FAQ
+    url: /dxcsecurityinsights/userguides/FAQ

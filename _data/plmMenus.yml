@@ -1,0 +1,7 @@
+toc:
+  - page: Introduction
+    url: /docs/core-extensions
+  - title: Title
+    subfolderitems:
+      - page: Title
+        url: /coreextensions/userguides/

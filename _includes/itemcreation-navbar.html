@@ -1,0 +1,66 @@
+<div class="content">
+    <div class="row">
+      <details open>
+        <summary>Getting Started</summary>
+        <ul>
+          {% if site.data.itemcreationMenus.toc[0] %}
+            {% for item in site.data.itemcreationMenus.toc %}
+              {% if item.page %}
+                <li class="list-style-type">
+                  <a href="{{ item.url }}">{{ item.page }}</a>
+                </li>
+              {% endif %}
+              {% if item.Level_1_items[0] %}
+                <li class="list-style-type">
+                  <details id="{{ item.id }}">
+                    <summary>{{ item.title }}</summary>
+                    <ul>
+                      {% for entry in item.Level_1_items %}
+                          <li class="list-style-type"><a href="{{ entry.url }}">{{ entry.page }}</a>
+                            {% if entry.Level_2_items[0] %}
+                              <ul>
+                              {% for subentry in entry.Level_2_items %}
+                                  <li class="list-style-type"><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
+                              {% endfor %}
+                              </ul>
+                            {% endif %}
+                          </li>
+                      {% endfor %}
+                    </ul>
+                  </details>
+                </li>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </ul>
+      </details>
+      <details open>
+        <summary>Release Notes</summary>
+        <ul>
+            <li class="list-style-type">
+              {% assign records = site.itemcreation | sort: 'release-version' | reverse%}
+              {% for record in records %}
+                  {%if record.url contains "itemcreation/releasenotes" and record.markAsPrevious == false%}
+                  <li class="list-style-type">
+                    <a href="{{ record.url }}">{{record.title}}</a>
+                  </li>
+                  {% endif%}
+              {% endfor %}
+              <details>
+                <summary>Previous Versions</summary>
+                <ul>
+                    {% assign records = site.itemcreation | sort: 'release-version' | reverse%}
+                    {% for record in records %}
+                        {%if record.url contains "itemcreation/releasenotes" and record.markAsPrevious == true%}
+                        <li class="list-style-type">
+                            <a href="{{ record.url }}">{{record.title}}</a>
+                        </li>
+                        {% endif%}
+                    {% endfor %}
+                </ul>
+              </details>
+            </li>
+          </ul>
+      </details>
+    </div>
+  </div>

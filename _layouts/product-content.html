@@ -1,0 +1,95 @@
+---
+layout: default
+toc: true
+---
+<div class="container">
+  <div class="container-fluid pt-6 col-12">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-3">
+        {%if page.header == "License Manager" %}
+          {% include licensemanager-navbar.html %}
+        {% endif %}
+        {%if page.header == "Connections" %}
+          {% include connections-navbar.html %}
+        {% endif %}
+        {%if page.header == "Core Extensions" %}
+          {% include core-extensions-navbar.html %}
+        {% endif %}
+        {%if page.header == "Solutions for DocuSign and Dynamics 365 (DocuSign)" %}
+          {% include docusign-navbar.html %}
+        {% endif %}
+        {%if page.header == "Electronic Data Interchange (EDI)" %}
+          {% include edi-navbar.html %}
+        {% endif %}
+        {%if page.header == "Finance Utilities" %}
+          {% include financeutilities-navbar.html %}
+        {% endif %}
+        {%if page.header == "Forex Contracts" %}
+          {% include forex-navbar.html %}
+        {% endif %}
+        {%if page.header == "Insights for D365 FO" %}
+          {% include dxcinsights-navbar.html %}
+        {% endif %}
+        {%if page.header == "Item Creation Wizard" %}
+          {% include itemcreation-navbar.html %}
+        {% endif %}
+        {%if page.header == "Product Lifecycle Management (PLM)" %}
+          {% include plm-navbar.html %}
+        {% endif %}
+        {%if page.header == "Security Insights for D365 FO" %}
+          {% include dxcsecurityinsights.html %}
+        {% endif %}
+        {%if page.header == "Smart Business Form Email Manager (SmartSend)" %}
+          {% include smartsend-navbar.html %}
+        {% endif %}
+      </div>
+      <div class="col-12 col-md-9">
+            <!-- <h1>{{page.title}}</h1> -->
+            <!-- <h2>{{page.subTitle}}</h2> -->
+            <div class="content">
+              <div class="row">
+                <b>{{page.header}}</b>
+              </div>
+              <br/>
+              <div class="row">
+                <details>
+                  <summary>
+                    In this article
+                  </summary>
+                  <ul>
+                    <li class="list-style-type">
+                      {{ content | toc_only }}
+                    </li>
+                  </ul>
+                </details>
+              </div>
+              <div class="row">
+                {{content}}
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var currentUrl = window.location.href
+  
+  var enabledTitles = currentUrl.substring(
+                        currentUrl.indexOf("userguides/") + 11, 
+                        currentUrl.lastIndexOf("/")
+                      );
+
+  const myArray = enabledTitles.split("/");
+
+  var elementid = myArray[0].toString().toLowerCase();
+  const elementToModifyParent = document.getElementById(elementid);
+  elementToModifyParent.setAttribute("open", "");
+  console.log("this is enabled 1", elementToModifyParent)
+  for (var i = 1; i < myArray.length; i++) {
+    elementId = elementid + "/" + myArray[i].toString().toLowerCase();
+    const elementToModify = document.getElementById(elementId);
+    console.log("this is enabled", elementToModify)
+    elementToModify.setAttribute("open", "");
+  }
+
+</script>

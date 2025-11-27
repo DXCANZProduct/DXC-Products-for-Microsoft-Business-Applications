@@ -1,0 +1,28 @@
+---
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
+---
+
+# EDI shared parameters
+
+The **EDI shared parameters** page is used to define settings that apply across the **EDI** module. The setup on this page is shared across legal entities and can be modified by users with the appropriate security permissions.
+
+To open the **EDI shared parameters** page, go to **EDI > Setup > EDI shared parameters**. Then set the fields as described in the following subsections.
+
+## Prerequisites
+
+- Setup [Cleanup profile](Cleanup-profile.md)
+- Setup [Reset status profile](Reset-status.md#setup-reset-status-profile)
+
+## Setup EDI shared parameters
+
+The following table describes the fields that are available on the **General** tab on the **EDI shared parameters** page.
+
+| **Field**                   | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| :-------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <ins>**Cleanup**</ins>      |
+| **Cleanup profile**         | Specify the default cleanup profile that will apply to all inbound and outbound staging records. <br> Can be overridden on Trading partner or Trading partner’s document level. <br> This field can also be left blank here and selected on only the specific Trading partner or Trading partner’s document level. <br> _Note: Setup the periodic job to run the cleanup/delete of staging records via **EDI > Periodic tasks > Cleanup documents**_ |
+| <ins>**Reset status**</ins> |
+| **Documents reset status**  | Assign default Reset status profile for all staging documents. <br> Can be overridden on Trading partner’s document level. <br> This field can also be left blank here and selected on only the specific Trading partner’s document level. <br> _Note: Setup the periodic job to run the reset status of staging records via **EDI > Periodic tasks > Reset document status**_                                                                       |
+| **Files reset status**      | Assign default Reset status profile for all inbound and outbound files. This field can't be specified/overridden on a Trading partner's document level. <br> _Note: Setup the periodic job to run the reset status of inbound and outbound files via **EDI > Periodic tasks > Reset document status**_                                                                                                                                               |

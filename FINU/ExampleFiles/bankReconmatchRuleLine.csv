@@ -1,8 +1,0 @@
-23483-L,,0,14,1,Generate voucher,=,20771,005,
-23483-B,,0,14,1,Generate voucher,=,20771,007,
-23483-V,,0,14,1,Generate vendor payment,=,20771,000,
-23483-CP,,0,14,1,Generate customer payment,=,20771,050,
-23483-CP,,37,1,2,Match open and closed customer invoice,=,31005,,
-23483-CPF,,0,14,1,Generate customer payment,=,20771,050,
-23483-CI,,0,14,1,Statement of settle action,=,20771,050,
-23483-CI,,37,1,2,Settle customer invoice,=,31005,,(\w+\s*-\s*\d+)

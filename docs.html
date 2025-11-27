@@ -1,0 +1,28 @@
+---
+layout: home
+title: Products
+header: Product Documentation
+description: DXC Practice for Microsoft offers a variety of products for Dynamics 365 Finance and Operations.
+---
+
+{% if site.data.products %}
+
+<div class="container pt-6 pb-6">
+  <div class="row">
+    {% for product in site.data.products %}
+    {%if product.disableDocs == false%}
+    <div class="col-12 col-md-6 mb-3">
+      <div class="service service-summary">
+        <div class="service-content">
+          <h2 class="service-title">
+            <a href="{{ product.productDocsUrl | relative_url }}">{{ product.title }}</a>
+          </h2>
+          <p>{{ product.description }}</p>
+        </div>
+      </div>
+    </div>
+    {%endif%}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

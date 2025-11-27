@@ -1,0 +1,77 @@
+---
+layout: product-content
+header: Item Creation Wizard
+toc: true
+---
+
+# Managing Item Status
+
+## Updating using a creation template
+
+A status value can be assigned to an [item creation template](../SETUP/ITEM-CREATION/Item-creation-templates.md). Use of this template to create, release or update an item will apply the template status to the released product where the Change item status element has been included in the approval [workflow](../SETUP/Item-creation-workflows.md).
+
+Where no item status exists on a released product and the template does not have a value defined, the default value set in the [parameters](../SETUP/Item-creation-parameters.md) form will be used.
+
+## Updating a single item
+
+The item status can be held at the item or item dimension level. The item status can be manually updated via the _item status link_ menu in the action pane of the released products form. **Item creation > Products > Released products > Item creation > Item status link**.
+
+![Item Status link](../IMAGES/Item-Status-Link-Tab.png)
+
+By default, the form will display the current record on opening. Historical records can be viewed by selecting _As at date_ from the action pane or toggling "Display all records" to Yes
+
+![Display-records-at](../IMAGES/Display-records-at.png)
+
+Selecting **Display Dimensions** from the menu bar Enables the Dimensions display pane. This allows you to toggle onto the page the required product dimensions for your corresponding item and save the set-up for future use. You can choose to display all product dimensions or just the ones relevant to your organisation. <br/>**Product Dimensions**<br/> -Configuration <br/> -Size <br/> -colour <br/> -Style<br/>
+
+#### **To create a new item status;**
+
+1. Select _New_ from the action pane.
+2. Select the new _Status_ value and any required product dimensions.
+3. Enter the _effective date_ of the new status.
+4. Enter an Expiration date if required. If an expiration date is not required you can select _never_ from the drop-down calendar.
+5. Once all required fields have been populated Save your changes
+   - Where a previous record that matches the same dimensions exists the expiration date is set to the day prior.
+
+_Note: The Item Status displayed at the top of the released products form is the item status at the item level, not the item dimension level._
+
+![Item-Status-Level](../IMAGES/Item-Status-Level.png)
+
+## Updating a group of items
+
+A periodic job is available that can update the item status with a specified effective date, this can be run for a range of items. Category hierarchy can be used to help select these products to be included. This allows for item status to be planned and updated prior to the effective date. The periodic job can be accessed from **Item creation > Periodic tasks > Update item status**.
+
+#### Update item status
+
+1. Select the _From Status_, only the selected items matching this status will be updated.
+2. Select the _To Status_.
+3. Enter an _Effective date_ if required.
+   - To make it effective immediately, leave it blank.
+4. Select a _Category hierarchy_ if required to filter down to a group of products.
+5. Select the items to be updated.
+6. Select OK.
+
+_Note: Optionally select the Run in the background tab to run in batch processing. Please see [Microsoft User Guides](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) for further information_
+
+## Updating based on stock-on-hand rules
+
+[Automatic status change rules](../SETUP/ITEM-SETUP/Automatic-status-change-rules.md) can be set up to update the item status based on certain events. For example, a status that indicates a low level of inventory can be updated to a discontinued status once the stock on hand becomes zero. The periodic job can be accessed from **Item creation > Periodic tasks > Item status > Automatic status update**.
+
+#### Automatic status update
+
+1. Using the filter, select the _status_ being updated from and the _event_ being used
+   - To run for all events, leave blank
+2. Select OK.
+
+_Note: Optionally select the Run in the background tab to run in batch processing. Please see [Microsoft User Guides](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) for further information_
+
+# Item Status Visibility
+
+## Released products
+
+When viewing the Released Product details, the inventory status symbol will be displayed directly below the Item number and description.
+![Inventory-statusl](../IMAGES/Inventory-status.png)
+
+## Inventory transactions
+
+When creating a sales/purchase order, the inventory status symbol will be displayed on the sales/purchase line. This will enable the user to identify the current status at a glance.

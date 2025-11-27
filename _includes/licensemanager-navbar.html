@@ -1,0 +1,148 @@
+<div class="content">
+  <div class="row">
+    <details open>
+      <summary>Getting Started</summary>
+      <ul>
+        {% if site.data.licensemangerMenus.toc[0] %}
+          {% for item in site.data.licensemangerMenus.toc %}
+            {% if item.page %}
+              <li class="list-style-type">
+                <a href="{{ item.url }}">{{ item.page }}</a>
+              </li>
+            {% endif %}
+            {% if item.Level_1_items[0] %}
+              <li class="list-style-type">
+                <details id="{{ item.id }}">
+                  <summary>{{ item.title }}</summary>
+                  <ul>
+                    {% for entry in item.Level_1_items %}
+                        <li class="list-style-type"><a href="{{ entry.url }}">{{ entry.page }}</a>
+                          {% if entry.Level_2_items[0] %}
+                            <ul>
+                            {% for subentry in entry.Level_2_items %}
+                                <li class="list-style-type"><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
+                            {% endfor %}
+                            </ul>
+                          {% endif %}
+                        </li>
+                    {% endfor %}
+                  </ul>
+                </details>
+              </li>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </ul>
+    </details>
+    <details open>
+      <summary>Release Notes</summary>
+      <ul>
+        <li class="list-style-type">
+          <details open>
+            <summary>DXC License Manager</summary>
+            <ul>
+              {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
+              {% for lmg in licensemanager %}
+                  {%if lmg.url contains "releasenotes/dxclicensemanager" and lmg.markAsPrevious == false%}
+                  <li class="list-style-type">
+                    <a href="{{ lmg.url }}">{{lmg.title}}</a>
+                  </li>
+                  {% endif%}
+              {% endfor %}
+              <li class="list-style-type">
+                <details>
+                  <summary>Previous Version</summary>
+                  <ul>
+                    {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
+                    {% for lmg in licensemanager %}
+                        {%if lmg.url contains "releasenotes/dxclicensemanager" and lmg.markAsPrevious == true%}
+                        <li class="list-style-type">
+                          <a href="{{ lmg.url }}">{{lmg.title}}</a>
+                        </li>
+                        {% endif%}
+                    {% endfor %}
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="list-style-type">
+          <details open>
+            <summary>DXC License</summary>
+            <ul>
+              {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
+              {% for lmg in licensemanager %}
+                  {%if lmg.url contains "releasenotes/dxclicense/" and lmg.markAsPrevious == false%}
+                  <li class="list-style-type">
+                    <a href="{{ lmg.url }}">{{lmg.title}}</a>
+                  </li>
+                  {% endif%}
+              {% endfor %}
+              <li class="list-style-type">
+                <details>
+                  <summary>Previous Versions</summary>
+                  <ul>
+                    {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
+                    {% for lmg in licensemanager %}
+                        {%if lmg.url contains "releasenotes/dxclicense/" and lmg.markAsPrevious == true%}
+                        <li class="list-style-type">
+                          <a href="{{ lmg.url }}">{{lmg.title}}</a>
+                        </li>
+                        {% endif%}
+                    {% endfor %}
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="list-style-type">
+          <details open>
+            <summary>React Web App</summary>
+            <ul>
+              {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
+              {% for lmg in licensemanager %}
+                  {%if lmg.url contains "releasenotes/reactwebapp" and lmg.markAsPrevious == false%}
+                  <li class="list-style-type">
+                    <a href="{{ lmg.url }}">{{lmg.title}}</a>
+                  </li>
+                  {% endif%}
+              {% endfor %}
+              <li class="list-style-type">
+                <details>
+                  <summary>React Web App</summary>
+                  <ul>
+                    {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
+                    {% for lmg in licensemanager %}
+                        {%if lmg.url contains "releasenotes/reactwebapp" and lmg.markAsPrevious == true%}
+                        <li class="list-style-type">
+                          <a href="{{ lmg.url }}">{{lmg.title}}</a>
+                        </li>
+                        {% endif%}
+                    {% endfor %}
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="list-style-type">
+          <details>
+            <summary>Power App (Deprecated)</summary>
+            <ul>
+              {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
+              {% for lmg in licensemanager %}
+                  {%if lmg.url contains "releasenotes/powerapp"%}
+                  <li class="list-style-type">
+                    <a href="{{ lmg.url }}">{{lmg.title}}</a>
+                  </li>
+                  {% endif%}
+              {% endfor %}
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </details>
+  </div>
+</div>

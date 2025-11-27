@@ -1,0 +1,25 @@
+toc:
+  - page: Introduction
+    url: /docs/dxc-insights
+  - page: Setup
+    url: /dxcinsights/userguides/setup
+  - title: Periodic monitoring
+    Level_1_items:
+      - page: Periodic monitoring configuration
+        url: /dxcinsights/userguides/Periodic-monitoring-configuration/Periodic_monitoring_configuration
+      - page: Review and setup monitored data
+        url: /dxcinsights/userguides/Review_and_set_up_monitored_data
+  - title: Azure application insights
+    Level_1_items:
+      - page: Dashboards
+        url: /dxcinsights/userguides/Azure-application-insights/Dashboards
+      - page: Alerts on Azure Application Insights
+        url: /dxcinsights/userguides/Azure-application-insights/Azure_alerts
+  - page: Limitations
+    url: /dxcinsights/userguides/Limitations
+  - page: Security configuration
+    url: /dxcinsights/userguides/Security-configuration
+  - page: FAQ
+    url: /dxcinsights/userguides/FAQ
+  - page: Definitions and Acronyms
+    url: /dxcinsights/userguides/Acronyms

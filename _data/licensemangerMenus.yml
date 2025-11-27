@@ -1,0 +1,17 @@
+toc:
+  - page: Introduction
+    url: /docs/licensemanager
+  - title: User Guide
+    Level_1_items:
+      - page: D365 FO
+        url: /licensemanager/userguides/FinOps
+      - page: PowerApp
+        url: /licensemanager/userguides/PowerApp
+      - page: Web App
+        url: /licensemanager/userguides/ReactWebApp
+  - page: Support and Maintenance
+    url: /licensemanager/userguides/SupportMaintenance
+  - page: Acronyms
+    url: /licensemanager/userguides/Acronyms
+  - page: FAQ
+    url: /licensemanager/userguides/FAQ

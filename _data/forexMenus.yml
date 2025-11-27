@@ -1,0 +1,34 @@
+toc:
+  - page: Introduction
+    url: /docs/forex
+  - title: Setup
+    id: setup
+    Level_1_items:
+      - page: Forex contract parameters
+        url: /forex/userguides/SETUP/Forex-contract-parameters
+      - page: Forex over allocation
+        url: /forex/userguides/SETUP/Forex-over-allocation
+  - title: Processing
+    id: processing
+    Level_1_items:
+      - page: Create forex contract
+        url: /forex/userguides/PROCESSING/Create-forex-contract
+      - page: Link forex contract to documents
+        url: /forex/userguides/PROCESSING/Link-forex-contract
+      - page: Changes to forex contract or document
+        url: /forex/userguides/PROCESSING/Changes
+      - page: Invoice posting
+        url: /forex/userguides/PROCESSING/Invoice-posting
+      - page: Cash in forex contracts
+        url: /forex/userguides/PROCESSING/Cash-in
+      - page: Inquiries
+        url: /forex/userguides/PROCESSING/Inquiries
+  - title: Other
+    id: other
+    Level_1_items:
+      - page: Data entities
+        url: /forex/userguides/OTHER/Data-entities
+      - page: Security configuration
+        url: /forex/userguides/OTHER/Security-configuration
+  - page: Roadmap
+    url: /forex/userguides/Roadmap

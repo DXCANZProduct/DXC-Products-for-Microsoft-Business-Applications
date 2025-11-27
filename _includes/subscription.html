@@ -1,0 +1,13 @@
+<div id="subscribeList">
+    <br/>
+    <label class="small">Select the product for which you would like to receive news and updates.</label>
+    <br/>
+    <br/>
+    {% for product in site.data.products %}
+    <div class="mb-2 small">
+        {%if product.notificationsEnabled %}
+        <input type="checkbox" id="{{product.productName}}" value="{{product.productName}}"> {{product.title}}</input>
+        {% endif%}
+    </div>
+    {% endfor %}
+</div>

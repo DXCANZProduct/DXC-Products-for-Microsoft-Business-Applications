@@ -1,0 +1,39 @@
+---
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
+---
+
+# 3PL setup
+
+## 3PL document type validation profiles - Shipment receipt - Return order
+
+Users can access the form by navigating to **EDI > Setup > Document types**.
+
+Validation profiles are groups of business validation rules that can be applied to a trading partner. They provide the ability to set variable tolerances on various different aspects of the documents business process. Once a validation profile is created it can be configured by adding validation rules to it and defining the error tolerance of the rule. <br>
+Once setup for each document type, the validation profile can be assigned to each incoming document on the Trading partner setup in **EDI > Setup > Trading partners**.
+
+> Note: The validation profiles FastTab is only displayed from Document types that have valid validation options
+
+- To create a new record, select the **New** button in the validation profiles FastTab.
+- Specify the **Name** and **Description** of the profile.
+- Select the **Name** hyperlink or the **Setup** button to update profile details.
+- Select **Add** to add the validation rule.
+- Select the **Validation rule**.
+- Select the **Error tolerance** to specify the validation level. If a validation rule fails, this will be used to determine how it reacts. The logs can be viewed on the staging record's **Show log** or **Version log**. Options:
+  - **Info** - An Infolog is displayed with information only. If the validation rule fails a message will be written to the staging records log but the record will continue to process.
+  - **Warning** - An Infolog is displayed with a warning. If the validation rule fails a message will be written to the staging records log but the record will continue to process.
+  - **Error** - An Infolog is displayed with an error. If the validation rule fails, the staging records will be set to error state and the target document note created/updated.
+
+| **Validation instance**       | **Validation rule** | **Description**                                                                                                                                                                                                                                      | **Tolerance updates**                                                                                                                                                                                                                                                                                                                      |
+| :---------------------------- | :------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Item arrival journal line** | **Batch Id update** | Where the batch id received is different to batch id (example ABC123 vs. 123ABC) in the shipment advice, select the validation type. Document setting **Create batch** will determine if the 3PL's batch will be created if it doesn't exist in D365 | Options: <br> • **Info** - 3PL is allowed to update the receipt to a different batch id. <br> • **Warning** - 3PL is allowed to update the receipt to a different batch id, but warning infolog will be displayed. <br> • **Error** - 3PL is not allowed to update the receipt to a different batch id, and the staging record will error. |
+
+## Where used
+
+The **Validation profile** can be assigned on the Incoming documents FastTab to document type **Shipment receipt - Return order** for the 3PL Trading partner at **EDI > Setup > Trading partners**.
+
+## Data entity
+
+- EDI Validation profile
+- EDI Validation profile line

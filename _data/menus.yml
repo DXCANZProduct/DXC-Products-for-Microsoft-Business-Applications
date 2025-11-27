@@ -1,0 +1,12 @@
+main:
+  - name: ""
+    url: "/docs/"
+    weight: 2
+
+footer:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Subscribe"
+    url: "/subscribe"
+    weight: 2

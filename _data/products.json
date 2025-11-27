@@ -1,0 +1,98 @@
+[
+    {
+        "title": "Connections",
+        "description": "",
+        "productDocsUrl": "/connections",
+        "productName": "DXCConnections",
+        "disableDocs": false,
+        "notificationsEnabled": false
+    },
+    {
+        "title": "Core Extensions",
+        "description": "DXC Core Extensions for Microsoft Dynamics 365 is a set of productivity utilities providing functionality to complement the standard Microsoft solution.",
+        "productDocsUrl": "/coreextensions",
+        "productName": "CoreUtil",
+        "disableDocs": false,
+        "notificationsEnabled": true
+    },
+    {
+        "title": "Electronic Data Interchange (EDI)",
+        "description": "Expand your business efficiency with DXC Electronic Data Interchange for Microsoft Dynamics 365.",
+        "productDocsUrl": "/edi",
+        "productName": "ICONEDI",
+        "disableDocs": false,
+        "notificationsEnabled": true
+    },
+    {
+        "title": "Finance Utilities",
+        "description": "The DXC Finance Utilities module provides enhanced functionalities to Microsoft Dynamics 365 for cash and bank management, accounts payable and receivable and budgeting.",
+        "productDocsUrl": "/financeutilities",
+        "productName": "ICONFinanceUtilities",
+        "disableDocs": false,
+        "notificationsEnabled": true
+    },
+    {
+        "title": "Forex Contracts",
+        "description": "The Forex contract module is designed to allocate Forex contracts to purchase orders and invoice journals.",
+        "productDocsUrl": "/forex",
+        "productName": "Forex",
+        "disableDocs": true,
+        "notificationsEnabled": false
+    },
+    {
+        "title": "Insights for D365 FO",
+        "description": "Insights will capture data such as user information, time to load, and menu items used. Telemetry is subsequently transmitted through to a logging application.",
+        "productDocsUrl": "/dxcinsights",
+        "productName": "InsightsforD365FO",
+        "disableDocs": true,
+        "notificationsEnabled": false
+    },
+    {
+        "title": "Item Creation Wizard",
+        "description": "DXC Item Creation Wizard for Microsoft Dynamics 365 removes the risk of human error and establishes a repeatable workflow process for maximum efficiency in managing the creation and maintenance product information. Configure templates with pre-defined tables, fields, steps and data to ensure item information is accurate right from the start.",
+        "productDocsUrl": "/itemcreation",
+        "productName": "ItemCreation",
+        "disableDocs": true,
+        "notificationsEnabled": false
+    },
+    {
+        "title": "License Manager",
+        "description": "The license manager solution allows management of licenses for Dynamics 365 Finance and Operations ISV products. This module allows ISV partners to manage customer license information, control expired licenses and environments enabled, extend and incorporate license control for each ISV product and collect license based telemetry.",
+        "productDocsUrl": "/licensemanager",
+        "productName": "DXCLicenseManager",
+        "disableDocs": false,
+        "notificationsEnabled": false
+    },
+    {
+        "title": "Product Lifecycle Management (PLM)",
+        "description": "",
+        "productDocsUrl": "/plm",
+        "productName": "ClaimsProcessing",
+        "disableDocs": true,
+        "notificationsEnabled": false
+    },
+    {
+        "title": "Security Insights for D365 FO",
+        "description": "Security Insights for D365FO ingests user behavior data from Azure Application Insights for security analysis.",
+        "productDocsUrl": "/dxcsecurityinsights",
+        "productName": "SecurityInsightsForD365FO",
+        "disableDocs": false,
+        "notificationsEnabled": true
+    },
+    {
+        "title": "Smart Business Form Email Manager (SmartSend)",
+        "description": "DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Operations (or Smart Send) is a simple and smart solution for sending business forms and other reports to your customers and vendors.",
+        "productDocsUrl": "/smartsend",
+        "productName": "SmartSend",
+        "disableDocs": false,
+        "notificationsEnabled": true
+    },
+    {
+        "title": "Solutions for DocuSign and Dynamics 365",
+        "description": "DXC DocuSign for Dynamics 365 for Operations module couples Microsoft D365 Finance and Operations with the DocuSign® solution.",
+        "productDocsUrl": "/docs/docusign",
+        "productName": "DocuSign",
+        "disableDocs": true,
+        "notificationsEnabled": false
+    }
+]  
