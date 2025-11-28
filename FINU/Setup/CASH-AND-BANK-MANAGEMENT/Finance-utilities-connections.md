@@ -98,10 +98,10 @@ Field         | Description                         | Example or Options
 ### Azure blob storage
 
 Supported:
-- SAS URI container level account key (folders)
-- SAS URI container level user-delegated (folders)
 - SAS URI storage level (only containers)
 - Connection string (only containers)
+- SAS URI container level account key (folders)
+- SAS URI container level user-delegated (folders)
 
 #### Azure SAS Storage account level or Connection string
 
