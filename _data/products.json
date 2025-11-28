@@ -84,7 +84,7 @@
         "description": "Security Insights for D365FO ingests user behavior data from Azure Application Insights for security analysis.",
         "productDocsUrl": "/dxcsecurityinsights",
         "productName": "SecurityInsightsForD365FO",
-        "disableDocs": true,
+        "disableDocs": false,
         "notificationsEnabled": true
     },
     {
