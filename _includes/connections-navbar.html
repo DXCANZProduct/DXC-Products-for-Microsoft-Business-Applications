@@ -47,32 +47,33 @@
           {% endif %}
         </ul>
       </details>
-      <summary>Release Notes</summary>
-      <ul>
-        <li class="list-style-type">
-          {% assign connection = site.connections | sort: 'release-version' | reverse%}
-          {% for conn in connection %}
-              {%if conn.url contains "connections/releasenotes" and conn.markAsPrevious == false%}
-              <li class="list-style-type">
-                <a href="{{ conn.url }}">{{conn.title}}</a>
-              </li>
-              {% endif%}
-          {% endfor %}
-          <details>
-            <summary>Previous Versions</summary>
-            <ul>
-              {% assign connection = site.connections | sort: 'release-version' | reverse%}
-              {% for conn in connection %}
-                  {%if conn.url contains "connections/releasenotes" and conn.markAsPrevious == true%}
-                  <li class="list-style-type">
-                    <a href="{{ conn.url }}">{{conn.title}}</a>
-                  </li>
-                  {% endif%}
-              {% endfor %}
-            </ul>
-          </details>
-        </li>
-      </ul>
+      <details open>
+        <summary>Release Notes</summary>
+        <ul>
+          <li class="list-style-type">
+            {% assign connection = site.connections | sort: 'release-version' | reverse%}
+            {% for conn in connection %}
+                {%if conn.url contains "connections/releasenotes" and conn.markAsPrevious == false%}
+                <li class="list-style-type">
+                  <a href="{{ conn.url }}">{{conn.title}}</a>
+                </li>
+                {% endif%}
+            {% endfor %}
+            <details>
+              <summary>Previous Versions</summary>
+              <ul>
+                {% assign connection = site.connections | sort: 'release-version' | reverse%}
+                {% for conn in connection %}
+                    {%if conn.url contains "connections/releasenotes" and conn.markAsPrevious == true%}
+                    <li class="list-style-type">
+                      <a href="{{ conn.url }}">{{conn.title}}</a>
+                    </li>
+                    {% endif%}
+                {% endfor %}
+              </ul>
+            </details>
+          </li>
+        </ul>
     </details>
   </div>
 </div>

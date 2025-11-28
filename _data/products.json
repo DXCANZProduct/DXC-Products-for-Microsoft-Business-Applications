@@ -9,10 +9,10 @@
     },
     {
         "title": "Connections",
-        "description": "",
+        "description": "DXC Connections is a tool for integrating Microsoft Dynamics 365 Finance and Operations with Azure Blob Storage and SFTP connection types to facilitate automated data exchange.",
         "productDocsUrl": "/connections",
         "productName": "DXCConnections",
-        "disableDocs": true,
+        "disableDocs": false,
         "notificationsEnabled": false
     },
     {
