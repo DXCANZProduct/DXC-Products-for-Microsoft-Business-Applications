@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Finance Utilities - Roadmap
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-29
+ms.date: 2025-11-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,6 @@ This page describes the features planned for future releases and planned release
 
 ## Release schedule
 
-- November 2025
 - March 2026
 - June 2026
 
