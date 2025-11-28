@@ -4,7 +4,7 @@
         "description": "",
         "productDocsUrl": "/connections",
         "productName": "DXCConnections",
-        "disableDocs": false,
+        "disableDocs": true,
         "notificationsEnabled": false
     },
     {
@@ -20,7 +20,7 @@
         "description": "Expand your business efficiency with DXC Electronic Data Interchange for Microsoft Dynamics 365.",
         "productDocsUrl": "/edi",
         "productName": "ICONEDI",
-        "disableDocs": false,
+        "disableDocs": true,
         "notificationsEnabled": true
     },
     {
@@ -28,7 +28,7 @@
         "description": "The DXC Finance Utilities module provides enhanced functionalities to Microsoft Dynamics 365 for cash and bank management, accounts payable and receivable and budgeting.",
         "productDocsUrl": "/financeutilities",
         "productName": "ICONFinanceUtilities",
-        "disableDocs": false,
+        "disableDocs": true,
         "notificationsEnabled": true
     },
     {
@@ -60,7 +60,7 @@
         "description": "The license manager solution allows management of licenses for Dynamics 365 Finance and Operations ISV products. This module allows ISV partners to manage customer license information, control expired licenses and environments enabled, extend and incorporate license control for each ISV product and collect license based telemetry.",
         "productDocsUrl": "/licensemanager",
         "productName": "DXCLicenseManager",
-        "disableDocs": false,
+        "disableDocs": true,
         "notificationsEnabled": false
     },
     {
@@ -76,7 +76,7 @@
         "description": "Security Insights for D365FO ingests user behavior data from Azure Application Insights for security analysis.",
         "productDocsUrl": "/dxcsecurityinsights",
         "productName": "SecurityInsightsForD365FO",
-        "disableDocs": false,
+        "disableDocs": true,
         "notificationsEnabled": true
     },
     {
@@ -84,7 +84,7 @@
         "description": "DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Operations (or Smart Send) is a simple and smart solution for sending business forms and other reports to your customers and vendors.",
         "productDocsUrl": "/smartsend",
         "productName": "SmartSend",
-        "disableDocs": false,
+        "disableDocs": true,
         "notificationsEnabled": true
     },
     {
