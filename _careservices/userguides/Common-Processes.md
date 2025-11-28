@@ -1,30 +1,8 @@
+
 ---
-# required metadata
-
-title: DXC Care services
-Description: DXC Care Services Aged Care - Overview
-author: Helen Ho
-Manager: Pontus, Ek
-ms.date: 2025-07-18
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Peter Musumeci 
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Helen Ho
-ms.search.validFrom: 2025-07-18
-ms.dyn365.ops.version: 10.0.40
+layout: product-content
+header: Care Services
+toc: true
 ---
 
 

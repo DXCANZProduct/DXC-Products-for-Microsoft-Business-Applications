@@ -1,30 +1,8 @@
+
 ---
-# required metadata
-
-title: Care Services
-description: DXC Care Services - Coming Soon
-author: PMusumeci
-manager: Pontus Ek
-ms.date: 2025-11-05
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  Pending Release, Coming Soon, Updates, New
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Peter Musumeci
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: Care Services
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Peter Musumeci
-ms.search.validFrom: 2025-11-05
-ms.dyn365.ops.version: D365
+layout: product-content
+header: Care Services
+toc: true
 ---
 
 # 	Coming Soon
