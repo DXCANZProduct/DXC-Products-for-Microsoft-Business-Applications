@@ -1,33 +1,41 @@
-# .github/workflows/azure-static-web-apps.yml
 name: Azure Static Web Apps CI/CD
 
 on:
   push:
     branches:
-      - user/adutt2/updatedsite
+      - user/adutt2/updatedsite  # Change to your default branch if needed  # Change to your default branch if needed
 
 jobs:
-  build_and_deploy:
+  build_and_deploy_job:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Build site (Jekyll)
-        run: |
-          sudo apt-get update
-          sudo apt-get install ruby-full build-essential zlib1g-dev -y
-          gem install bundler
-          bundle install
-          bundle exec jekyll build -s . -d _site
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1' # Use your preferred Ruby version
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Upload artifact for deployment
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: _site
 
       - name: Deploy to Azure Static Web Apps
+        id: deploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for GitHub integrations (i.e., PR comments)
           action: "upload"
-          app_location: "."
-          output_location: "_site"
+          app_location: "/"      # Location of your application source code
+          output_location: "_site" # Built static files location
