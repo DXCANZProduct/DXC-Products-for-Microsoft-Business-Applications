@@ -17,14 +17,107 @@ $link-hover-color: lighten($primary, 10%);
 $link-hover-decoration: underline;
 
 // Fonts
-$font-family-base: Arial, Arial, sans-serif, -apple-system;
-$font-family-heading: "Playfair Display", serif, -apple-system;
+$font-family-base: 'Segoe UI', Arial, system-ui, sans-serif;
+$font-family-heading: 'Segoe UI', Arial, system-ui, sans-serif;
 
 // Footer
 $footer-background-color: $primary;
 $footer-text-color: $white;
 $sub-footer-background-color: darken($primary, 10%);
 $sub-footer-text-color: $white;
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 100;
+  padding-right: 2rem;
+}
+.sub-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 101;
+}
+body {
+  padding-bottom: 60px; /* adjust if footer is taller */
+}
+
+.sidebar, .content > .row > details {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.sidebar ul, .content > .row > details ul {
+  padding-left: 0;
+  margin: 0;
+}
+.sidebar li, .content > .row > details li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+.sidebar a, .content > .row > details a {
+  color: $primary;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  display: block;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.sidebar a:hover, .content > .row > details a:hover {
+  background: #e5f1fb;
+  text-decoration: underline;
+}
+.sidebar summary, .content > .row > details > summary {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.sidebar details[open] > summary, .content > .row > details[open] > summary {
+  color: $primary;
+}
+
+/* Main navigation bar */
+.header {
+  background: $white;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 1px 0 0 #e5e5e5;
+  box-sizing: border-box;
+}
+.header .logo a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: $primary;
+  text-decoration: none;
+}
+.main-menu ul {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+.main-menu li {
+  list-style: none;
+}
+.main-menu a {
+  color: $primary;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.main-menu a:hover, .main-menu .active > a {
+  background: #e5f1fb;
+  text-decoration: underline;
+}
 
 // Bootstrap 5.3.2
 
@@ -107,14 +200,80 @@ $sub-footer-text-color: $white;
 @import "pages/page-teams";
 @import "pages/page-service";
 
+
 body {
-  font-size: 16px;
-  line-height: 1.2;
+  font-size: 17px;
+  line-height: 1.7;
   font-family: $font-family-base;
-  @include media-breakpoint-up(md) {
-    font-size: 16px;
-    line-height: 1.3;
-  }
+  background: $white;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-left: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.main-content, .content {
+  max-width: 100%;
+  margin: 0;
+  padding: 0 0 90px 1.5rem;
+  background: $white;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+h1, h2, h3 {
+  font-family: $font-family-heading;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: $primary;
+  text-decoration: underline;
+  transition: background 0.2s;
+}
+a:hover {
+  background: #e5f1fb;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: #fafbfc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+th, td {
+  border: 1px solid #e1e4e8;
+  padding: 0.75rem 1rem;
+}
+tr:nth-child(even) {
+  background: #f5f7fa;
+}
+
+.note, .warning {
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+}
+.note {
+  background: #e5f6ff;
+  border-left: 4px solid #0067b8;
+}
+.warning {
+  background: #fff4e5;
+  border-left: 4px solid #ffb100;
 }
 
 .list-style-type {
