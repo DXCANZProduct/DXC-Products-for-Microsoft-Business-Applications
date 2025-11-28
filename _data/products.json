@@ -1,5 +1,13 @@
 [
     {
+        "title": "Care Services",
+        "description": "",
+        "productDocsUrl": "/careservices",
+        "productName": "DXCCareServices",
+        "disableDocs": false,
+        "notificationsEnabled": true
+    },
+    {
         "title": "Connections",
         "description": "",
         "productDocsUrl": "/connections",

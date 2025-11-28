@@ -39,6 +39,9 @@ logo:
   desktop_width: "120px"
 
 collections:
+  careservices:
+    output: true
+    # sort_by: release-version
   connections:
     output: true
     # sort_by: release-version
