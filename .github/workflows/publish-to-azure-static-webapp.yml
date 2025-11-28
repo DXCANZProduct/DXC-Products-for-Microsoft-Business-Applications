@@ -16,7 +16,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # Use your preferred Ruby version
+          ruby-version: '3.2' # Updated to meet bundler requirement
 
       - name: Install dependencies
         run: bundle install
