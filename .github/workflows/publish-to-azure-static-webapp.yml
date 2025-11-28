@@ -24,9 +24,6 @@ jobs:
       - name: Build Jekyll site
         run: bundle exec jekyll build
 
-      - name: Build Jekyll site
-        run: bundle exec jekyll build
-
       - name: Upload artifact for deployment
         uses: actions/upload-artifact@v4
         with:
