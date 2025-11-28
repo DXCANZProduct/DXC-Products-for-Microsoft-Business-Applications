@@ -1,5 +1,3 @@
-audience: Application User
-
 ---
 layout: product-content
 header: Care Services

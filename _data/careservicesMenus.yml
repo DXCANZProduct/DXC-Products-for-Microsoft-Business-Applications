@@ -1,3 +1,98 @@
 toc:
   - page: Introduction
     url: /careservices
+  - page: Schedules Inquiries and Reports
+    url: /careservices/userguides/Schedules-Inquiries-and-Reports
+  - page: Services Management
+    url: /careservices/userguides/Services-Management
+  - page: Common Processes
+    url: /careservices/userguides/Common-Processes
+  - title: Setup
+    id: setup
+    Level_1_items:
+      - page: Customer and Client Management
+        url: /careservices/userguides/SETUP/Customer-and-Client-Management
+      - page: Transfer and Departures
+        url: /careservices/userguides/SETUP/Transfer-and-Departures
+      - page: Care Services workflows
+        url: /careservices/userguides/SETUP/Care-Services-workflows
+  - title: Billing
+    id: billing
+    Level_1_items:
+      - page: Community and Disability Care
+        url: /careservices/userguides/BILLING/Community-and-Disability-Care
+      - page: Residential Care services and Retirement Villages
+        url: /careservices/userguides/BILLING/Residential-Care-services-and-Retirement-Villages
+      - page: Accommodation Payments
+        url: /careservices/userguides/BILLING/Accommodation-Payments
+      - page: Refunds
+        url: /careservices/userguides/BILLING/Refunds
+      - title: New Billing Codes and Rates Updates
+        id: new-billing-codes-and-rates-updates
+        Level_2_items:
+        - page: Billing Rates
+          url: /careservices/userguides/BILLING/BILLING-CODES-AND-RATES/New-Billing-Codes-and-Rates-Updates
+  - title: Collection Letters
+    id: collection-letters
+    Level_1_items:
+      - page: Collection Letters
+        url: /careservices/userguides/COLLECTION-LETTERS/Collection-letters
+  - title: Receipts
+    id: receipts
+    Level_1_items:
+      - page: Accommodation payment lumpsum receipt
+        url: /careservices/userguides/RECEIPTS/Accommodation-payment-lumpsum-receipt
+      - page: Manual receipt
+        url: /careservices/userguides/RECEIPTS/Manual-receipt
+      - page: Direct Debit limits and pre-set amounts
+        url: /careservices/userguides/RECEIPTS/Direct-Debit-limits-and-pre-set-amounts
+      - page: Direct Debit Proposal
+        url: /careservices/userguides/RECEIPTS/Direct-Debit-Proposal
+  - title: Funding
+    id: funding
+    Level_1_items:
+      - page: Generate funding claims
+        url: /careservices/userguides/FUNDING/Generate-funding-claims
+      - page: Generate funding claim form
+        url: /careservices/userguides/FUNDING/Generate-funding-claim-form
+      - page: Generate funding claim form file
+        url: /careservices/userguides/FUNDING/Generate-funding-claim-form-file
+      - page: Generate funding journal
+        url: /careservices/userguides/FUNDING/Generate-funding-journal
+      - page: Review and post funding journal
+        url: /careservices/userguides/FUNDING/Review-and-post-funding-journal
+      - page: Import funding claim payment statement
+        url: /careservices/userguides/FUNDING/Import-funding-claim-payment-statement
+      - page: Funding reconciliation
+        url: /careservices/userguides/FUNDING/Funding
+      - page: Review and post Funding reconciliation journal
+        url: /careservices/userguides/FUNDING/Review-and-post-Funding-reconciliation-journal
+      - page: Create funding code
+        url: /careservices/userguides/FUNDING/Create-funding-code
+  - title: Periodic Jobs
+    id: periodic-jobs
+    Level_1_items:
+      - page: Periodic Jobs
+        url: /careservices/userguides/PERIODIC-JOBS/Periodic-Jobs
+  - title: Services Australia Integration
+    id: services-australia-integration
+    Level_1_items:
+      - page: Overview
+        url: /careservices/userguides/SERVICES-AUSTRALIA-INTEGRATION/Overview
+      - page: Setup
+        url: /careservices/userguides/SERVICES-AUSTRALIA-INTEGRATION/Setup
+      - page: Custom Service
+        url: /careservices/userguides/SERVICES-AUSTRALIA-INTEGRATION/Custom-Service
+      - page: SAHWorkbench
+        url: /careservices/userguides/SERVICES-AUSTRALIA-INTEGRATION/SAHWorkbench
+      - page: API Reference
+        url: /careservices/userguides/SERVICES-AUSTRALIA-INTEGRATION/API-Reference
+  - title: Other
+    id: other
+    Level_1_items:
+      - page: Data entities
+        url: /careservices/userguides/OTHER/Data-entities
+      - page: Security configuration
+        url: /careservices/userguides/OTHER/Security-configuration
+      - page: Definition and Acronyms
+        url: /careservices/userguides/OTHER/Acronyms
