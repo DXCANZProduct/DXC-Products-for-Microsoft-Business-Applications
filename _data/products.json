@@ -68,7 +68,7 @@
         "description": "The license manager solution allows management of licenses for Dynamics 365 Finance and Operations ISV products. This module allows ISV partners to manage customer license information, control expired licenses and environments enabled, extend and incorporate license control for each ISV product and collect license based telemetry.",
         "productDocsUrl": "/licensemanager",
         "productName": "DXCLicenseManager",
-        "disableDocs": true,
+        "disableDocs": false,
         "notificationsEnabled": false
     },
     {

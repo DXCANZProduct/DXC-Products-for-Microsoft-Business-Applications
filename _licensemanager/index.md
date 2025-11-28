@@ -4,10 +4,6 @@ header: License Manager
 toc: true
 ---
 
-## Release notes
-
-The [release notes](Release-notes.md) describes the features that are either new or changed.
-
 ## Introduction
 
 The license manager solution allows management of licenses for Dynamics 365 Finance and Operations ISV products. This module allows ISV partners to manage customer license information, control expired licenses and environments enabled, extend and incorporate license control for each ISV product and collect license based telemetry.
@@ -25,7 +21,7 @@ License Manager can be implemented either using configuration keys or feature ma
 
 The objectives are:
 
-- [Describe enabling license control for product given a specific ISV partner in FinOps](./FinOps.md)
-- [Describe the License Manager Power App](./PowerApp.md)
-- [Describe the License Manager Web App](./ReactWebApp.md)
-- [Support and Maintenance](./SupportMaintenance.md)
+- [Describe enabling license control for product given a specific ISV partner in FinOps](./FinOps)
+- [Describe the License Manager Power App](./PowerApp)
+- [Describe the License Manager Web App](./ReactWebApp)
+- [Support and Maintenance](./SupportMaintenance)

@@ -1,6 +1,6 @@
 toc:
   - page: Introduction
-    url: /docs/dxc-security-insights
+    url: /dxcsecurityinsights
   - page: Setup
     url: /dxcsecurityinsights/userguides/Parameters
   - page: Monitor
