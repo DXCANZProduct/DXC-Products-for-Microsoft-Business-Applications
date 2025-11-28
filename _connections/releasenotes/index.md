@@ -4,6 +4,7 @@ header: Connections
 title: 10.0.44.202511252
 release-version: 10.0.44.202511252
 markAsPrevious: false
+toc: true
 ---
 
 # Release notes

@@ -4,6 +4,7 @@ header: Security Insights for D365 FO
 title: 10.0.44.20251121
 release-version: 10.0.44.20251121
 markAsPrevious: false
+toc: true
 ---
 
 # 	Release notes

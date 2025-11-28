@@ -2,10 +2,10 @@ toc:
   - page: Introduction
     url: /dxcsecurityinsights
   - page: Setup
-    url: /dxcsecurityinsights/userguides/Parameters
+    url: /dxcsecurityinsights/Parameters
   - page: Monitor
-    url: /dxcsecurityinsights/userguides/Review
+    url: /dxcsecurityinsights/Review
   - page: Security diagnostics
-    url: /dxcsecurityinsights/userguides/Security-diagnostics
+    url: /dxcsecurityinsights/Security-diagnostics
   - page: FAQ
-    url: /dxcsecurityinsights/userguides/FAQ
+    url: /dxcsecurityinsights/FAQ

@@ -2,43 +2,43 @@ toc:
   - page: Introduction
     url: /coreextensions
   - page: Company colors
-    url: /coreextensions/userguides/COMPANY-COLORS/Company-Colors
+    url: /coreextensions/COMPANY-COLORS/Company-Colors
   - page: Exchange rate import
-    url: /coreextensions/userguides/EXCHANGE-RATE-IMPORT/Exchange-rate-import
+    url: /coreextensions/EXCHANGE-RATE-IMPORT/Exchange-rate-import
   - page: Reciprocal exchange rate
-    url: /coreextensions/userguides/RECIPROCAL/Company-Reciprocal
+    url: /coreextensions/RECIPROCAL/Company-Reciprocal
   - page: User security audit details report
-    url: /coreextensions/userguides/USER-SECURITY-AUDIT-DETAIL-REPORT/User-Security-audit-detail-report
+    url: /coreextensions/USER-SECURITY-AUDIT-DETAIL-REPORT/User-Security-audit-detail-report
   - page: General and inventory audit detail report
-    url: /coreextensions/userguides/JOURNAL-IMPORTS/General-and-inventory-journal-import
+    url: /coreextensions/JOURNAL-IMPORTS/General-and-inventory-journal-import
   - page: General Journal for Multiple Legal Entities
-    url: /coreextensions/userguides/JOURNAL-IMPORTS/General-Journal-Multiple
+    url: /coreextensions/JOURNAL-IMPORTS/General-Journal-Multiple
   - page: Business process Links
-    url: /coreextensions/userguides/BUSINESS-PROCESS-LINKS/Business-process-links
+    url: /coreextensions/BUSINESS-PROCESS-LINKS/Business-process-links
   - page: Import budgets
-    url: /coreextensions/userguides/IMPORT-BUDGETS/Import-budgets
+    url: /coreextensions/IMPORT-BUDGETS/Import-budgets
   - page: DMF Toolbox
-    url: /coreextensions/userguides/DMF-TOOLBOX
+    url: /coreextensions/DMF-TOOLBOX
   - page: Print Management
-    url: /coreextensions/userguides/Print-management
+    url: /coreextensions/Print-management
   - title: Data Anonymization
     id: data-Anonymization
     Level_1_items:
       - page: Data Anonymization
-        url: /coreextensions/userguides/Data-Anonymization/Anonymization
+        url: /coreextensions/Data-Anonymization/Anonymization
       - page: FAQ
-        url: /coreextensions/userguides/Data-Anonymization/FAQ
+        url: /coreextensions/Data-Anonymization/FAQ
   - title: Other
     id: other
     Level_1_items:
       - page: Data-entities
-        url: /coreextensions/userguides/Other/Data-entities
+        url: /coreextensions/Other/Data-entities
       - page: Security-configuration
-        url: /coreextensions/userguides/Other/Security-configuration
+        url: /coreextensions/Other/Security-configuration
   - title: FAQ
     id: faq
     Level_1_items:
       - page: FAQ
-        url: /coreextensions/userguides/FAQ/
+        url: /coreextensions/FAQ/
       - page: Coming soon
-        url: /coreextensions/userguides/FAQ/Coming_Soon
+        url: /coreextensions/FAQ/Coming_Soon
