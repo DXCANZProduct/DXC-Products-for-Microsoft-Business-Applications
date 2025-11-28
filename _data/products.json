@@ -1,7 +1,7 @@
 [
     {
         "title": "Care Services",
-        "description": "",
+        "description": "DXC Care Services is a modern, cloud-based software solution embedded in the Microsoft Dynamics 365 platform to support the Care Services eco-system in Australia and New Zealand.",
         "productDocsUrl": "/careservices",
         "productName": "DXCCareServices",
         "disableDocs": false,
