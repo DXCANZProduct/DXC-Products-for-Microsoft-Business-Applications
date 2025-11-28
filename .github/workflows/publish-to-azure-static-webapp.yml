@@ -13,25 +13,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2' # Updated to meet bundler requirement
+      # - name: Setup Ruby
+      #   uses: ruby/setup-ruby@v1
+      #   with:
+      #     ruby-version: '3.2' # Updated to meet bundler requirement
 
-      - name: Install Bundler 2.7.2
-        run: gem install bundler -v 2.7.2
+      # - name: Install Bundler 2.7.2
+      #   run: gem install bundler -v 2.7.2
 
-      - name: Install dependencies
-        run: bundle _2.7.2_ install
+      # - name: Install dependencies
+      #   run: bundle _2.7.2_ install
 
-      - name: Build Jekyll site
-        run: bundle exec jekyll build
+      # - name: Build Jekyll site
+      #   run: bundle exec jekyll build
 
-      - name: Upload artifact for deployment
-        uses: actions/upload-artifact@v4
-        with:
-          name: build
-          path: _site
+      # - name: Upload artifact for deployment
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: build
+      #     path: _site
 
       - name: Deploy to Azure Static Web Apps
         id: deploy
