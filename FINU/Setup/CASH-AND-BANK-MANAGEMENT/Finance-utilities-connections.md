@@ -5,7 +5,7 @@ title: Finance Utilities
 description: Cash and bank management setup - Finance utilities connections
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-11-12
+ms.date: 2025-11-28
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -96,6 +96,12 @@ Field         | Description                         | Example or Options
 **Import error path** |	Enter the path where the files that matches the Search mask, but haven’t successfully been imported, are copied to	| /Integration/Error
 
 ### Azure blob storage
+
+Supported:
+- SAS URI container level account key (folders)
+- SAS URI container level user-delegated (folders)
+- SAS URI storage level (only containers)
+- Connection string (only containers)
 
 #### Azure SAS Storage account level or Connection string
 
