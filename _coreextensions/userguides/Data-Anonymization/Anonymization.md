@@ -1,29 +1,7 @@
 ---
-# required metadata
-
-title: Core Extensions
-description: Core Extensions - Data Anonymization
-author: Peter Musumeci
-manager: Pontus Ek
-ms.date: 2023-10-31
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DXCDataAnonymizationParameters, Data anonymization profiles, 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Peter Musumeci
-
-# ms.tgt_pltfrm: 
-ms.search.region: CoreUtil
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Peter Musumeci
-ms.search.validFrom: 2023-10-31
-ms.dyn365.ops.version: 10.0.34
+layout: product-content
+header: Core Extensions
+toc: true
 ---
 
 # Data Anonymization (Currently in Preview stage, under development)
@@ -35,7 +13,7 @@ Data Anonymization is a process that allows for information to be scrambled afte
 
 ### Enable-Feature
 
-Data Anonymization has a separate Feature Key from Core extensions and is licensed as an individual product from Release 10.0.36.20240530. It must be enabled via Feature management in addition to the [Core Extensions](../Release-notes.md#feature-management) Feature Key. 
+Data Anonymization has a separate Feature Key from Core extensions and is licensed as an individual product from Release 10.0.36.20240530. It must be enabled via Feature management in addition to the [Core Extensions](../Release-notes#feature-management) Feature Key. 
 To Utilise Data Anonymization Enable the following feature in D365 Feature management:
 
 - Core Extensions - Data anonymization

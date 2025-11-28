@@ -1,29 +1,7 @@
 ---
-# required metadata
-
-title: Core Extensions
-description: Core Extensions - General and inventory journal imports
-author: Liam Coll
-manager: Kym Parker
-ms.date: 2021-08-02
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DM_DataManagementWorkspaceMenuItem
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Liam Coll
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: CoreUtil
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Liam Coll
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Core Extensions
+toc: true
 ---
 
 # General and Inventory Journal Imports
@@ -36,7 +14,7 @@ Benefits:
 
 ## Setup
 ### General journal data entities
-For the General journal import, use the *General journal* entity. This entity supports journals of type Daily. The allowed ledger types are Ledger, Bank, Vendor, and Customer. For multi-company import see See [General Journal Import for multiple Legal Entities](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/edit/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-Journal-Multiple.md#general-journal-import-for-multiple-legal-entities)
+For the General journal import, use the *General journal* entity. This entity supports journals of type Daily. The allowed ledger types are Ledger, Bank, Vendor, and Customer. For multi-company import see See [General Journal Import for multiple Legal Entities](./userguides/JOURNAL-IMPORTS/General-Journal-Multiple#general-journal-import-for-multiple-legal-entities)
 
 ### Inventory journal data entities
 For inventory journals, the *Inventory adjustment journal headers and lines V2* and the *Inventory movement journal headers and lines V3* can be used.

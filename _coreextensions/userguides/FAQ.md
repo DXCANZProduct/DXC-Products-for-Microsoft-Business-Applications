@@ -1,29 +1,7 @@
 ---
-# required metadata
-
-title: Core Extensions 
-description: Core Extensions - Frequently asked questions 
-author: Peter Musumeci
-manager: Pontus Ek
-ms.date: 2023-11-30
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  Core Extensions
-audience: Application User
-# ms.devlang: 
-ms.reviewer: pmusumeci
-
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: pmusumeci
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Core Extensions
+toc: true
 ---
 
 # 	Frequently Asked Questions

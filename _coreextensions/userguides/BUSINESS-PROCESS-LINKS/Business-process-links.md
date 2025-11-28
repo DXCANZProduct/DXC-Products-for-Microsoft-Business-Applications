@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: Core Extensions
-description: Core Extensions - Business process links
-author: Liam Coll
-manager: Kym Parker
-ms.date: 2021-08-02
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SystemParameters, BPS_ProcessLink
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Liam Coll
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: CoreUtil
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Liam Coll
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Core Extensions
+toc: true
 ---
 
 # Business Process Links *Deprecated*

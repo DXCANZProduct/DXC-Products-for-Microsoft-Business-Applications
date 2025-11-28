@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: Core Extensions
-description: Display reciprocal exchange rates
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-02-22
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  OMLegalEntities
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: CoreUtil
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.valid from: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Core Extensions
+toc: true
 ---
 
 # Display reciprocal exchange rate

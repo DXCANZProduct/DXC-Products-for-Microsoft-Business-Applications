@@ -1,29 +1,7 @@
 ---
-# required metadata
-
-title: Core Extensions
-description: Core Extensions - DMF Toolbox
-author: Peter Musumeci
-manager: Pontus Ek
-ms.date: 2023-10-31
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  DXC_DMFUniqueIndexes, DXC_DMFEnumDataTypes
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Peter Musumeci
-
-# ms.tgt_pltfrm: 
-ms.search.region: CoreUtil
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Peter Musumeci
-ms.search.validFrom: 2023-10-31
-ms.dyn365.ops.version: 10.0.34
+layout: product-content
+header: Core Extensions
+toc: true
 ---
 
 # DMF Toolbox

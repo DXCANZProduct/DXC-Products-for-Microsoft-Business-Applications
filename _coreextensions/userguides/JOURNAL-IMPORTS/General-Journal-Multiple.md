@@ -1,30 +1,9 @@
 ---
-# required metadata
-
-title: Core Extensions
-description: Core Extensions - Multiple Legal Entity General Journal
-author: Peter Musumeci
-manager: Pontus, Ek
-ms.date: 2025-01-06
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DM_DataManagementWorkspaceMenuItem
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Peter Musumeci
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: CoreUtil
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Peter Musumeci
-ms.search.validFrom: 2025-01-06
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Core Extensions
+toc: true
 ---
+
 Introduced in Release 10.0.40.20250205
 
 # General Journal Import for multiple Legal Entities 
@@ -62,8 +41,9 @@ Add the *Accounting Manager* security role to the nominated processing group <br
 
 ### Additional Instructions/References 
 
-To create a  [Data Import template](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.md#create-data-entity-file-templates)<br>
-To Create [Data Entity Import Project](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/blob/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.md#create-data-entity-import-project)<br>
-For [Security Roles](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications/edit/master/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.md#security-roles) and to Set up roles for data projects
-For [Processing instructions](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/CORE-EXTENSIONS/JOURNAL-IMPORTS/General-and-inventory-journal-import.html#process)
+
+To create a [Data Import template](./userguides/JOURNAL-IMPORTS/General-and-inventory-journal-import#create-data-entity-file-templates)<br>
+To Create [Data Entity Import Project](./userguides/JOURNAL-IMPORTS/General-and-inventory-journal-import#create-data-entity-import-project)<br>
+For [Security Roles](./userguides/JOURNAL-IMPORTS/General-and-inventory-journal-import#security-roles) and to Set up roles for data projects
+For [Processing instructions](./userguides/JOURNAL-IMPORTS/General-and-inventory-journal-import#process)
 
