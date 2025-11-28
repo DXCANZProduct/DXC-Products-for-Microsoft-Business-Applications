@@ -16,7 +16,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7' # Match Oryx build environment
+          ruby-version: '3.2' # Updated to meet bundler requirement
 
       - name: Install Bundler 2.7.2
         run: gem install bundler -v 2.7.2
