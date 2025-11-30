@@ -1,9 +1,9 @@
 function getProductList() {
     var productsList = "";
 
-    if (document.getElementById('All').checked) {
-        productsList = "All";
-    } else {
+    // if (document.getElementById('All').checked) {
+        
+    // } else {
         if (document.getElementById('General').checked) {
             if (productsList == "") {
                 productsList = "General";
@@ -12,6 +12,15 @@ function getProductList() {
             }
         }
     
+        if (document.getElementById('DXCCareServices').checked) {
+            if (productsList == "") {
+                productsList = "DXCCareServices";
+            } else {
+                productsList += ",DXCCareServices";
+            }
+        }
+    
+
         if (document.getElementById('SmartSend').checked) {
             if (productsList == "") {
                 productsList = "SmartSend";
@@ -35,36 +44,12 @@ function getProductList() {
                 productsList += ",CoreUtil";
             }
         }
-    
-        if (document.getElementById('DocuSign').checked) {
-            if (productsList == "") {
-                productsList = "DocuSign";
-            } else {
-                productsList += ",DocuSign";
-            }
-        }
-    
+
         if (document.getElementById('ICONEDI').checked) {
             if (productsList == "") {
                 productsList = "ICONEDI";
             } else {
                 productsList += ",ICONEDI";
-            }
-        }
-    
-        if (document.getElementById('Forex').checked) {
-            if (productsList == "") {
-                productsList = "Forex";
-            } else {
-                productsList += ",Forex";
-            }
-        }
-    
-        if (document.getElementById('InsightsforD365FO').checked) {
-            if (productsList == "") {
-                productsList = "InsightsforD365FO";
-            } else {
-                productsList += ",InsightsforD365FO";
             }
         }
     
@@ -75,6 +60,10 @@ function getProductList() {
                 productsList += ",SecurityInsightsForD365FO";
             }
         }
+    // }
+
+    if (productsList == "") {
+        productsList = "All";
     }
 
     return productsList;
@@ -82,7 +71,7 @@ function getProductList() {
 
 function subscribe() {
     var productsList = getProductList()
-
+    
     var address = document.getElementById('EmailAddress').value
     var url = "https://dxcanzproductappsapi01.azurewebsites.net/subscribe?email=" + address + "&productList=" + productsList;
 
@@ -98,8 +87,7 @@ function unsubscribe() {
     var productsList = getProductList()
 
     var address = document.getElementById('EmailAddress').value
-    var comments = document.getElementById("comments").value
-    var url = "https://dxcanzproductappsapi01.azurewebsites.net/unsubscribe?email=" + address + "&productList=" + productsList + "&comments=" + comments
+    var url = "https://dxcanzproductappsapi01.azurewebsites.net/unsubscribe?email=" + address + "&productList=" + productsList
 
     document.getElementById("messagePlaceholder").innerHTML = "You have been unsubscribed"
     document.getElementById("messagePlaceholder").style.display = "block";
@@ -109,37 +97,48 @@ function unsubscribe() {
     xmlHttp.send( null );
 }
 
-function toggleOptions() {
-    var disable = false;
-    if (document.getElementById('All').checked) {
-        disable = true;
-    } 
+function agreeToSubscription() {
+    var subscribeBtn = document.getElementById("subscribebtn");
+    if (document.getElementById('General').checked) {
+        subscribeBtn.style.display = "block";
+    } else {
+        subscribeBtn.style.display = "none";
+    }
 
-    document.getElementById("General").disabled = disable
+    toggleOptions();
+}
+
+function toggleOptions() {
+    var disable = true;
+    if (document.getElementById('General').checked) {
+        disable = false;
+    }
+
+    // document.getElementById("General").disabled = disable
+    document.getElementById("DXCCareServices").disabled = disable
     document.getElementById("ICONFinanceUtilities").disabled = disable
     document.getElementById("CoreUtil").disabled = disable
-    document.getElementById("DocuSign").disabled = disable
     document.getElementById("ICONEDI").disabled = disable
-    document.getElementById("Forex").disabled = disable
-    document.getElementById("InsightsforD365FO").disabled = disable
     document.getElementById("SecurityInsightsForD365FO").disabled = disable
     document.getElementById("SmartSend").disabled = disable
 
-    document.getElementById("General").checked = false
-    document.getElementById("ICONFinanceUtilities").checked = false
-    document.getElementById("CoreUtil").checked = false
-    document.getElementById("DocuSign").checked = false
-    document.getElementById("ICONEDI").checked = false
-    document.getElementById("Forex").checked = false
-    document.getElementById("InsightsforD365FO").checked = false
-    document.getElementById("SecurityInsightsForD365FO").checked = false
-    document.getElementById("SmartSend").checked = false
+    // document.getElementById("General").checked = false
+    if (disable)
+    {
+        document.getElementById("DXCCareServices").checked = false
+        document.getElementById("ICONFinanceUtilities").checked = false
+        document.getElementById("CoreUtil").checked = false
+        document.getElementById("ICONEDI").checked = false
+        document.getElementById("SecurityInsightsForD365FO").checked = false
+        document.getElementById("SmartSend").checked = false
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("messagePlaceholder").style.display = "none"
+    agreeToSubscription();
 
-    toggleOptions();
+    toggleOptions(); 
 });
 
 

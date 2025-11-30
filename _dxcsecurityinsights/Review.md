@@ -31,7 +31,7 @@ When using **User groups** or **Microsoft Entra ID security groups** and an enab
 Fetch user interation data from Azure Applications Insights
 
 **Parameters:**
-- Select the applicable **Azure application Insights connection** setup in [Insights for user access and security parameters](Parameters.md)
+- Select the applicable **Azure application Insights connection** setup in [Insights for user access and security parameters](Parameters)
 - Select the required start date in **Activities - start date time**
 - Select the required end date in **Activities - end date time**
 
@@ -125,5 +125,5 @@ Following Security Insights fields have been added to this standard form:
 - Interaction type (view vs.edit)
 - Last interaction date
 
-![User licenses](IMAGES/ReleaseNotes_20251121_1.png "User licenses") <br> 
-![User role licenses](IMAGES/ReleaseNotes_20251121_3.png "User role licenses")
+![User licenses](./releasenotes/IMAGES/ReleaseNotes_20251121_1.png "User licenses") <br> 
+![User role licenses](./releasenotes/IMAGES/ReleaseNotes_20251121_3.png "User role licenses")
