@@ -6,9 +6,9 @@ function getProductList() {
     // } else {
         if (document.getElementById('General').checked) {
             if (productsList == "") {
-                productsList = "General";
+                productsList = "AllNews";
             } else {
-                productsList += ",General";
+                productsList += ",AllNews";
             }
         }
     

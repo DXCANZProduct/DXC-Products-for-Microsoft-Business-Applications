@@ -8,18 +8,18 @@ description: Sign up to receive email notifications about product updates and an
     <div class="mb-2">
         <input class="form-control me-2" type="email" id="EmailAddress" placeholder="Please provide your email" aria-label="Email">
     </div>
-    <div class="mb-2 small">
+    <!-- <div class="mb-2 small">
         <input type="checkbox" id="All" onclick="toggleOptions()" checked="true" value="All"> I would like to be updated with all news and announcements.</input>
-    </div>
+    </div> -->
     <div class="mb-2 small">
-        <input type="checkbox" id="General" value="General"> I would like to get updates on general news and announcements.</input>
+        <input type="checkbox" id="General" onclick="agreeToSubscription()" value="General"> I agree to get updates on general news and announcements.</input>
     </div>
     {% include subscription.html %}
     <br/>
     <br/>
     <div class="mb-2">
         <p id="messagePlaceholder">Thank you for subscribing</p>
-        <button class="button button-primary" onclick="subscribe()">Subscribe</button>
+        <button id="subscribebtn" class="button button-primary" onclick="subscribe()">Subscribe</button>
     </div>
     <br/>
     <br/>
