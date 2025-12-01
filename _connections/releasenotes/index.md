@@ -37,4 +37,4 @@ Microsoft Dynamics 365 application  | 10.0.44 | [What’s new or changed in Dyna
 Microsoft Dynamics 365 application	| 10.0.45 | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 Microsoft Dynamics 365 application	| 10.0.46 | [What’s new or changed in Dynamics 365 application version 10.0.46](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-46)
 
-{% include_relative 10.0.44.202511252.md %}
+{% include_relative {{page.release-version}}.md %}

@@ -23,11 +23,11 @@ Microsoft Dynamics 365 Product version:    [10.0.44](https://learn.microsoft.com
 Microsoft Dynamics 365 Product version:    [10.0.45](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45) <br>	 App build: 10.0.2345	  | No | 10.0.43.20250617
 
 Release notes for other models included in the product:
-- [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
-- [DXC License](../LMG/Release-notes.md#dxc-license)
-- [Smart-Send](../SMART-SEND/Release-notes.md)
+- [DXC License Manager](../../licensemanager/releasenotes/dxclicensemanager/)
+- [DXC License](../../licensemanager/releasenotes/dxclicense/)
+- [Smart-Send](../../smartsend/releasenotes/)
 
 
 
 # Current version
-{% include_relative 10.0.44.20251120.md %}
+{% include_relative {{page.release-version}}.md %}
