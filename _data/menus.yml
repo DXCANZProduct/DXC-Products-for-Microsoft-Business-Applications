@@ -1,6 +1,6 @@
 main:
   - name: ""
-    url: "/docs/"
+    url: "/docs"
     weight: 2
 
 footer:
@@ -9,4 +9,7 @@ footer:
     weight: 1
   - name: "Subscribe"
     url: "/subscribe"
+    weight: 2
+  - name: "FAQ"
+    url: "/FAQ"
     weight: 2
