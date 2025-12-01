@@ -1,3 +1,9 @@
+---
+layout: product-content
+header: Smart Business Form Email Manager (SmartSend)
+toc: true
+---
+
 # Frequently Asked Questions
 
 **My report is not supported. Can I still use Smart Send?**
