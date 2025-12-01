@@ -1,14 +1,14 @@
 ---
 layout: releasenotes-content
 header: License Manager
-title: 10.0.40.202412041 (Latest)
-release-version: 10.0.40.202412041
-release-date: 2024-12-04
+title: 10.0.43.202509291
+release-version: 10.0.43.202509291
+release-date: 2025-09-29
 markAsPrevious: false
 toc: true
 ---
 
-## D365 Finance and Operations
+## D365 Finance and Operations - License Manager
 
 #### Version compatibility
 
@@ -22,7 +22,7 @@ If blank: investigations are ongoing. <br>
 
 #### **Release Information**
 
-DXC License Manager {{page.Title}} runs on the following Microsoft releases
+DXC License Manager {{page.release-version}} runs on the following Microsoft releases
 
 | Base                               | Version | Release                                                                                                                                                         |
 | :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
