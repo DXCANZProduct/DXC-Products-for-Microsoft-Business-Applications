@@ -3,6 +3,7 @@ layout: releasenotes-content
 header: Connections
 title: 10.0.44.202511252
 release-version: 10.0.44.202511252
+release-date: 25 November 2025
 markAsPrevious: false
 toc: true
 ---
@@ -29,7 +30,7 @@ Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No	          | 10.0.43
 Product version: 10.0.46 <br> App build: 10.0.2428.15	  | No	          | 10.0.43.202510302
 
 # Current version
-DXC Connections 10.0.44 runs on the following Microsoft releases
+DXC Connections {{page.release-version}} runs on the following Microsoft releases
 
 Base                                | Version | Release                                                                                                                                                         
 :---------------------------------  | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- 

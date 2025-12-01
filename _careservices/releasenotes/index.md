@@ -27,7 +27,14 @@ Release notes for other models included in the product:
 - [DXC License](../../licensemanager/releasenotes/dxclicense/)
 - [Smart-Send](../../smartsend/releasenotes/)
 
-
-
 # Current version
+### Release {{page.release-version}}
+
+DXC Care Services {{page.release-version}} runs on the following Microsoft releases
+
+
+Base	  | Version	  | Release
+:--       |:--            |:--
+Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
+
 {% include_relative {{page.release-version}}.md %}
