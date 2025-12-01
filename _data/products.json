@@ -28,7 +28,7 @@
         "description": "Expand your business efficiency with DXC Electronic Data Interchange for Microsoft Dynamics 365.",
         "productDocsUrl": "/edi",
         "productName": "ICONEDI",
-        "disableDocs": false,
+        "disableDocs": true,
         "notificationsEnabled": true
     },
     {
@@ -36,7 +36,7 @@
         "description": "The DXC Finance Utilities module provides enhanced functionalities to Microsoft Dynamics 365 for cash and bank management, accounts payable and receivable and budgeting.",
         "productDocsUrl": "/financeutilities",
         "productName": "ICONFinanceUtilities",
-        "disableDocs": false,
+        "disableDocs": true,
         "notificationsEnabled": true
     },
     {
@@ -92,7 +92,7 @@
         "description": "DXC Smart Business Form Email Manager for Microsoft Dynamics 365 Finance and Operations (or Smart Send) is a simple and smart solution for sending business forms and other reports to your customers and vendors.",
         "productDocsUrl": "/smartsend",
         "productName": "SmartSend",
-        "disableDocs": false,
+        "disableDocs": true,
         "notificationsEnabled": true
     },
     {
