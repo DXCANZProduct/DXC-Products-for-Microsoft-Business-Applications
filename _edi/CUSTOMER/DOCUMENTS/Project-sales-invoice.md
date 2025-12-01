@@ -1,0 +1,268 @@
+---
+# required metadata
+
+title: EDI Customer
+description: EDI Customer Documents - Project sales invoice
+author: Monica du Toit
+manager: Pontus Ek
+ms.date: 2025-07-24
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SalesTableListPage, ProjProjectsListPage, Action:SAB_EDIStagingFormRun_ProjectInvoice
+audience: Application User
+# ms.devlang: 
+ms.reviewer: Monica du Toit
+
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.search.region: IconEDICustomerDocuments
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: Monica du Toit
+ms.search.validFrom:   2016-05-31
+ms.dyn365.ops.version:  AX 7.0.1
+---
+
+# Project sales invoice
+EDI customers may require a Project invoice for a sales order.
+
+The following subsections will describe how to view, process and send Project sales invoices to applicable Customer Trading partners. <br>
+Viewing the [Staging table records](#view-staging-table-records) will also be discussed. <br>
+The created sales invoice record(s) can be viewed for a sales order, by selecting the **History** button on the **EDI** tab on the Action Pane of the Sales order page.<br>
+
+## Prerequisites
+The following setup is prerequisites for the sales invoice
+
+1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
+2. Create [Setting profile](../SETUP/SETTING-PROFILES/Project-sales-invoice.md) for the document.
+3. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
+4. If the customer [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner. <br> If the invoice account differs to the customer account, setup the **Invoice account** as EDI trading partner for the Project sales invoice document.
+5. Add and enable the sales invoice to the [Customer trading partner](../SETUP/Trading-partner.md) and select the applicable:
+    - Template
+    - Setting profile
+    - File name setup
+
+## Processing
+### Post project invoice proposal for sales order
+When the document **Project sales invoice** is enabled for the EDI customer and the project invoice proposal is for sales order lines, the post invoice proposal page's field **Send to EDI** will be set to _Yes_.
+The Project sales invoice [Document setting profile](../SETUP/SETTING-PROFILES/Project-sales-invoice.md) provides the option to exclude credits notes from creating a project sales invoice staging record by setting **Don't send credit note** to _Yes._
+
+## View staging table records
+To view the Sales invoice staging records, go to **EDI > Documents > Customer documents > Project sales invoice**. 
+Use this page to review staging and process EDI Project sales invoice documents to an Outbound file.
+
+### List page
+The following EDI fields are available on the list page.
+
+**Field**               | **Description**
+:---                    |:---
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**Company**             | Legal entity of the document.
+**Company GLN**         | The company’s global location number is shown here.
+**Template Id**         | Template id allocated to the record. This will be used when creating the outbound file.
+**Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. • **Canceled** – The record has been manually canceled and will be excluded from processing.
+**Trading partner account**     | Customer account assigned to the staging record.
+**Trading partner GLN**         | The Customer’s global location number is shown here.
+**Customer requisition**        | Sales order's Customer requisition - where only one sales order
+**Customer reference**          | Sales order's Customer reference - where only one sales order
+**Project contract ID**         | Project contract id for the selected project invoice
+**Invoice**                     | Project invoice number
+**Created Date and Time**       | The date and time the selected record was created in the staging table.
+**Received**                    | Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
+
+### Buttons
+The following buttons are available on the **Project sales invoice** Action Pane, tab **Project sales invoice**.
+
+**Button**	                    | **Description**
+:---                            |:----
+**Create selected files**       | Creates the outbound file for selected records where **Staging to target status** is set to _Not started_.
+**Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_.
+**Outbound files**              | View the outbound file record created by the selected staging record.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page.
+**Invoice journal**             | View the project invoice for the staging record.
+**Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
+**Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
+**Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details
+**Reset template**	            | Reset the template used to create the outbound file. <br> Only enabled where the **Staging to target status** is set to _Not started_.
+**Cancel**                      | Select **Cancel** to update the **Staging to target status** to _Canceled_. Button is enabled when the **Staging to target status** is not set to _Completed_.
+
+The following buttons are available on the **Project sales invoice**'s Action Pane, tab **Acknowledgement**.
+The **Acknowledgement** tab is available on all outgoing documents staging pages and enables the user to view the **Functional acknowledgement inbound** that has been received and processed for the outbound document.
+
+**Button**	                    | **Description**
+:---                            |:----
+**Acknowledgement**             | Use this button to view the **Functional acknowledgement inbound** record received and processed for the outbound document.
+
+### Header fields
+The following EDI Header staging fields are available on the header page.
+
+**Field**	            | **Description**	                                      | **Source D365 field**
+:---                    |:---                                                     |:---
+<ins>**Identification FastTab**</ins>		|   |
+<ins>**Identification**</ins>		|   |
+**EDI number**          | EDI Staging table record id                             | EDI parameters > Number sequences > EDI number
+**Company**             | Legal entity of the document
+**Company GLN**         | The company’s global location number is shown here      |  Sales order > EDI > Company GLN
+**Template Id**                 | The EDI template that will be used to create the outbound file    | Trading partner > Template assigned to document type	           
+**Staging to target status**    |  The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
+<ins>**Reset status**</ins>		|   |
+**Reset status profile**    | Reset status profile assigned to the file/document. This will default from EDI shared parameters or can be overridden on Trading partner’s incoming and outgoing documents. The profile can also be changed to another profile which will also reset the **Reset status attempts** to 0 and reset the **Reset status date/time**	
+**Reset status date/time**  | Next date/time automatic reset status will run	
+**Reset status attempts**   | Number of reset attempts already processed. The reset attempts will stop once this number reaches the **End after** as per assigned **Reset status profile**’s Recurrence	
+**Recurrence**              | Recurrence text. Contains standard details of Recurrence, for example: <br> •	Interval (recurrence pattern) <br> • How many times the period will run (End after) <br> • From date/time the recurrence will start	
+<ins>**Overview**</ins>	    |   |
+**Customer requisition**	| Customers purchase order number to be populated in the Customer requisition field of the sales order header | Sales Order > General > Customer requisition
+**Customer reference**	    | Customers purchase order number to be populated in the Customer reference field of the sales order header   |	Sales Order > General > Customer reference
+**Project contract ID**     | Project contract id for the selected project invoice
+<ins>**Details**</ins>		|   |
+**Delivery terms**          | Customer delivery terms	            | Sales Order > Delivery > Delivery terms
+**Terms of payment**	    | Terms of payment	                    | Sales Order > Price and discount > Payment
+**Description**             | Terms of payment (Description)	    | Sales Order > Price and discount > Payment (Description)
+**Carrier**                 | Carrier assigned to the packing slip	| Consignments > Carrier
+**Bill of lading ID**		| Sales invoice's Bill of lading        | Sales invoice > Bill of lading
+**Customer GLN**            | The Global location number for this customer      | Sales Order > EDI > Customer GLN
+**Buyer code**              | Buyer code for the record                         | Sales Order > EDI > Buyer code
+<ins>**Status**</ins>       |   |
+**Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
+**Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
+<ins>**General FastTab**</ins>  |   |
+<ins>**Delivery address**</ins> |   |
+**Delivery name**           | Address for delivery	                | Sales Order > Delivery Address Information	
+**City**                    | Delivery address - City	
+**Country/region**          | Delivery address - Country/region	
+**ISO**                     | Delivery address - Country/region ISO	
+**County**                  | Delivery address - County	
+**District**                | Delivery address - District	
+**Post box**                | Delivery address - Post box	
+**State**                   | Delivery address - State	
+**Street**                  | Delivery address - Street	
+**Street number**           | Delivery address - Street number	
+**ZIP/postal code**         | Delivery address - Zip/postal code	
+**Building complement**     | Delivery address - Building complement	
+**Store code**              | Delivery address - Store code	
+<ins>**Warehouse**</ins>    | Address for warehouse                  |	Sales Order > Warehouse Information
+**State**                   | Warehouse address - State	
+**Street**                  | Warehouse address - Street	
+**Street number**           | Warehouse address - Street number	
+**ZIP/postal code**         | Warehouse address - ZIP/postal code	
+**Building complement**     | Warehouse address - Building complement	
+**City**                    | Warehouse address - City	
+**Country/region**          | Warehouse address - Country/region	
+**ISO**                     | Warehouse address - Country/region ISO	
+**County**                  | Warehouse address - County	
+**District**                | Warehouse address - District	
+**Post box**                | Warehouse address - Post box	
+<ins>**Invoice**</ins>      | Invoice details		|
+**Invoice**                 | D365 Invoice number	                | Invoice > Invoice Number
+**Invoice account**         | D365 Invoice account                  | Invoice > Invoice account
+**Buyer code**              | Buyer code for the record             | Sales Order > EDI > Buyer code
+**Name**                    | Tax invoice account name	            | Invoice > Invoice Account Name
+**Invoice contact name**	| Invoice account’s primary contact name	| Customer > Contact information
+**Invoice phone number**	| Invoice account’s primary contact phone	| Customer > Contact information
+**Tax exempt number**       | Invoice account’s tax exempt number	| Invoice > Invoice Account’s VATNum
+**Our account number**      | Our account number in the customers system	
+**Date**                    | Invoice date	                        | Invoice journal > Date
+**Due**                     | Invoice Due Date	                    | Invoice journal > Due Date
+**Total charges**           | Total charges from the invoice        | Invoice journal > Total charges 
+**Invoice amount excluding tax**    | Invoice amount excluding tax	| Invoice journal amount > Price excl. tax
+**Invoice tax amount**      | Invoice total tax amount	            | Invoice journal amount > Sales tax
+**Invoice amount including tax**    | Invoice amount including tax	| Invoice Journal Amount > Price incl. tax
+**Tax rate**                | Calculated invoice tax rate	        | Invoice tax amount / Invoice amount excluding tax \*100
+**Discount percentage**     | Invoice discount percentage	        | 
+**Total discount**          | Invoice total discount                | Invoice journal > Total discount
+**Line discount**           | Invoice total line discount           | Invoice journal > Line discount
+**Invoice type**            | Invoice type, for example invoice or credit note    | Mapped value on Document type Setting profiles for Invoice type
+<ins>**Invoice address**</ins>      | Invoice address for customer   | Invoice journal > Invoice account > Address information
+**Building complement**     | Invoice address - Building complement	
+**City**                    | Invoice address - City	
+**Country/region**          | Invoice address - Country/region	
+**ISO**                     | Invoice address - ISO	
+**County**                  | Invoice address - County	
+**District**                | Invoice address - District	
+**Post box**                | Invoice address - Post box	
+**State**                   | Invoice address - State	
+**Street**                  | Invoice address - Street	
+**Street number**           | Invoice address - Street number	
+**ZIP/postal code**         | Invoice address - ZIP/postal code	
+<ins>**Company**</ins>      | 		|
+**Company name**            | Company name	
+**Company address**         | Address for company                    | Invoice journal > Company > Address information
+**Street number**           | Company address - Street number
+**Building complement**     | Company address - Building complement
+**City**                    | Company address - City
+**Country/region**          | Company address - Country/region
+**County**                  | Company address - County
+**District**                | Company address - District
+**Post box**                | Company address - Post box
+**State**                   | Company address - State
+**Street**                  | Company address - Street
+**ZIP/postal code**         | Company address - ZIP/postal code
+**Reserved**                | Ten **Reserved** fields available. These fields are populated from the same Customer purchase order Reserved fields. 
+
+### Line fields
+The following EDI Line staging fields are available on the lines page.
+
+
+**Field**	                | **Description**	                                        | **Source D365 field**
+:---                        |:---                                                       |:---
+**Line number**             | The line within the D365 Invoice. Where the invoice is for multiple sales orders, this field would contain the line number per sales order, for example 1, 2, 1, 2.                          | Invoice journal line > Line number
+**Line number document**    | The sequential D365 Invoice line number. Where the invoice is for multiple sales orders, this field would contain sequential line number, for example 1, 2, 3, 4 <br> Ensure **Assign sequential line number when posting customer invoice lines** in **Accounts receivable parameters** (Tab 'Updates', FastTab 'Optimize batch and posting processing') is set to _Yes_.                        |  Invoice journal line > Line creation sequence number                    
+**Line number** (LineNumText)    | The line number from the original Customer purchase order. Use this field if the line number format requires field type String. Supports 001, 1, 10  | Sales line > EDI > General > Line number (LineNumText)
+**Project ID**              | Project id                                                | Invoice journal line > Project id
+**Project name**            | Project name                                              | Project > Project name
+**Contract date**           | Project contract date                                     | Project > Contract date
+**Item number**             | The D365 item id                                          | Invoice journal line > Item Number
+**Product name**            | Product's name                                            | Sales line > Product name
+**Text**                    | Product's text                                            | Sales line > Text
+**Lot ID**                  | Lot Id / InventTransId for the invoice line	            | Inventory transaction > InventTransId
+**Bar code**                | The GTIN or barcode	                                    | Sales line > EDI > EDI item number
+**External item number**	| The external item number	                                | Sales line > General > External
+**SKU**                     | SKU from the Customer purchase order staging line         | Sales line > EDI > SKU
+**Unit price**	            | Discouned unit price for the item	                        | Sales line > Unit price (discounted)
+**Sales unit price**        | Unit price before discounts for the item	                | Sales line > Unit Price
+**Unit discount**           | Unit discount for the item	                            | Sales line > Unit discount
+**Unit discount percent**   | Unit discount percentage for the item	                    | Sales line > Unit discount percent
+**Unit tax rate**	        | Tax unit rate included for the order line	                | Tax unit rate for the Tax & Item tax groups
+**Sales tax amount**	    | Tax line amount included for the order line	            | Tax amount for the Tax & Item tax groups
+**Unit Price incl. tax**    | Discounted unit price including tax	                    | Sales line > Unit price incl. tax (discounted)
+**Sales unit price include tax**    |	Unit price before discounts including tax	    | Sales Line > Unit Price incl. tax
+**Unit**                    | Unit of measure	                                        | Sales line > Unit
+**Quantity**                | Invoice quantity	                                        | Invoice journal line > Quantity
+**Ordered quantity**        | Sales order line’s quantity	                            | Sales line > Quantity
+**Backorder quantity**      | Ordered quantity minus Invoiced quantity
+**Line amount excluding tax**   | Line amount excluding tax	                            | Sales line amount > Line amount excl. tax
+**Line amount including tax**   | Line amount including tax	                            | Invoice journal line > Line amount incl. tax
+**Delivery name**		        |                                                       | Sales line > Delivery Address Information
+**Store code**	            | Store code for the sales line	                            | Sales line > Store code
+**Customer reference**	    | Customers purchase order number as per Customer reference field in the sales order line	
+**Customer requisition**	| Customers purchase order number as per Customer requisition field of the sales order line	
+**Delivery note**           | Delivery note for the Sales invoice is shown here. If invoice processed with **Update** set to _Delivery note_ and only for one Delivery note.	
+**Document date**           | Document date for the Delivery note	
+**Consignment note number** | Delivery note’s Consignment note number	
+**Sales order**             | Sales order number for the invoice	
+**Configuration**       |	Product dimension - Configuration	                      | Sales line > Product dimension
+**Colour**	            |   Product dimension - Colour	                              | Sales line > Product dimension
+**Size**                |	Product dimension - Size	                              | Sales line > Product dimension
+**Style**               |	Product dimension - Style	                              | Sales line > Product dimension
+**Version**             |   Product dimension - Version                               | Sales line > Product dimension
+**Customer account**    |	Sales order’s customer account	                          | Sales header > Customer account
+**Customer contact name**   | Sales order’s customer contact	                      | Sales header > Contact
+**Customer phone number**   | Sales order’s telephone	                              | Sales header > Telephone
+**Building complement**     | Delivery address from sales line	                      | Sales line > Delivery address
+**Street number**		    | Delivery address from sales line	                      | Sales line > Delivery address
+**Street**		            | Delivery address from sales line	                      | Sales line > Delivery address
+**County**		            | Delivery address from sales line	                      | Sales line > Delivery address
+**District**		        | Delivery address from sales line	                      | Sales line > Delivery address
+**City**		            | Delivery address from sales line	                      | Sales line > Delivery address
+**State**		            | Delivery address from sales line	                      | Sales line > Delivery address
+**Post box**		        | Delivery address from sales line	                      | Sales line > Delivery address
+**ZIP/postal code**	        | Delivery address from sales line	                      | Sales line > Delivery address
+**Store code**		        | Delivery address from sales line	                      | Sales line > Delivery address
+**Country/region**		    | Delivery address from sales line	                      | Sales line > Delivery address
+**ISO**		                | Delivery address from sales line	                      | Sales line > Delivery address
+**Sales responsible**       | Sales responsible for the sales order                   | Sales header > Sales responsible
+**Sales taker**             | Sales taker for the sales order                         | Sales header > Sales taker
