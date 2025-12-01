@@ -1,29 +1,7 @@
 ---
-# required metadata
-
-title: DXC Finance Utilities - AR Utilities
-description: Customer remittance processing
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-03-25
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalTable_CustPaym
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-# ms.tgt_pltfrm: 
-# ms.custom: : ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Customer remittance import 
@@ -67,16 +45,16 @@ The following assumptions apply to the functionality:
 ## Prerequisites
 The following setup are prerequisites for the Customer remittance import
 
-1. [Accounts receivable parameters](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md#accounts-receivable-parameters)
-2. [Remittance format](../../Setup/ACCOUNTS-RECEIVABLE/Remittance-format.md)
-3. [Methods of payment](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md#methods-of-payment)
-4. [Financial utilities connection](../../Setup/ACCOUNTS-RECEIVABLE/Finance-utilities-connections.md)
-5. [Periodic task](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md#periodic-task)
-6. [Customer references](../../Setup/ACCOUNTS-RECEIVABLE/Customer-reference.md) - if customer references are to be used to find the applicable D365 customer account
+1. [Accounts receivable parameters](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance#accounts-receivable-parameters)
+2. [Remittance format](../../Setup/ACCOUNTS-RECEIVABLE/Remittance-format)
+3. [Methods of payment](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance#methods-of-payment)
+4. [Financial utilities connection](../../Setup/ACCOUNTS-RECEIVABLE/Finance-utilities-connections)
+5. [Periodic task](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance#periodic-task)
+6. [Customer references](../../Setup/ACCOUNTS-RECEIVABLE/Customer-reference) - if customer references are to be used to find the applicable D365 customer account
 
 ## Processing
 
-When the file is imported using the [periodic task](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.md#periodic-task), AR Utilities converts the data as per setup and creates an import using Data management composite entity **Customer payment journal**.
+When the file is imported using the [periodic task](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance#periodic-task), AR Utilities converts the data as per setup and creates an import using Data management composite entity **Customer payment journal**.
 
 If the journal hasn't been created, review **Execution details** in Data management Job history.
 

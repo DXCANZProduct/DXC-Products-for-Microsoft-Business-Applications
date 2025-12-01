@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Budgeting processing - Example file format
-author: jdutoit2
-manager: Pontus Ek
-ms.date: 2024-06-26
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SAB_FinBudgetParameters, BudgetTransactions
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version:: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Budgeting functionality

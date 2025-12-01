@@ -1,29 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Accounts payable processing - Sundry payment
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-07-22
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  VendPaymMode, LedgerJournalTable5, LedgerJournalTable9
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-# ms.tgt_pltfrm: 
-# ms.custom: : ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Accounts payable functionality
@@ -33,12 +11,12 @@ The features as described in the following subsections are available to control 
 
 The functionality gives the ability to enter a supplier name and address on an individual invoice allowing these details to be used on cheque payments, as well as one-off BSB and Account Number for EFT Payments. Therefore, many one-time vendor invoices can be stored on a single sundry vendor record but allowing for separate payments without a change to the vendor record information.  This also makes it possible to pay all sundry invoices in one payment proposal.
 
-Setup requirements are discussed in detail at [Sundry payment setup](../../Setup/ACCOUNTS-PAYABLE/Sundry-payment.md). <br>
+Setup requirements are discussed in detail at [Sundry payment setup](../../Setup/ACCOUNTS-PAYABLE/Sundry-payment). <br>
 Processing of the sundry vendor invoices and payments are discussed in the following subsections.
 
 ### Sundry Vendor invoices
 
-To create a new sundry vendor invoice journal, go to **Accounts payable > Invoices > Invoice journal**, create the new invoice journal header as per standard D365 and press the Lines button to begin entering the invoice/s. Selection of the [**Sundry Vendor**](../../Setup/ACCOUNTS-PAYABLE/Sundry-payment.md#sundry-vendor) created in the sundry payment setup will require the addition of details associated with the Payment of each Vendor (on each Invoice line):
+To create a new sundry vendor invoice journal, go to **Accounts payable > Invoices > Invoice journal**, create the new invoice journal header as per standard D365 and press the Lines button to begin entering the invoice/s. Selection of the [**Sundry Vendor**](../../Setup/ACCOUNTS-PAYABLE/Sundry-payment#sundry-vendor) created in the sundry payment setup will require the addition of details associated with the Payment of each Vendor (on each Invoice line):
 
 |    Field  |    Description   |
 |-|-|
@@ -74,4 +52,4 @@ From the **General** tab it is possible to review the Sundry Vendor Name, Addres
 Selection of the **Generate payments** button will create a payment for each payment journal line using the sundry bank details. <br>
 
 The Finance utilities **Payment advice** report also uses the Bank account number and BSB from the sundry fields, and not from the Vendor. <br>
-> Note: Setup the [**Payment advice**](../../Setup/ACCOUNTS-PAYABLE/Vendor-payments.md#payment-advice-report) report to use the applicable Finance utilities report.
+> Note: Setup the [**Payment advice**](../../Setup/ACCOUNTS-PAYABLE/Vendor-payments#payment-advice-report) report to use the applicable Finance utilities report.

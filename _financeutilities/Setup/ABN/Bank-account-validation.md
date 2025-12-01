@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Setup - Bank account validation 
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-11-21
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  OMLegalEntities
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Bank account validation
@@ -47,4 +24,4 @@ Also applies to importing data entities:
     - **Bank account maximum number of digits** - example 9 for Australia, 17 for New Zealand
   
 ## Processing
-See [link](../../Processing/ABN/Bank-account-validation.md) for details on processing.
+See [link](../../Processing/ABN/Bank-account-validation) for details on processing.

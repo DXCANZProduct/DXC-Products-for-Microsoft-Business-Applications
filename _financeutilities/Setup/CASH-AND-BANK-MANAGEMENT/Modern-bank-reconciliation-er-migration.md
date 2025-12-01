@@ -1,36 +1,13 @@
 ---
-# required metadata
-
-title: Finance Utilities
-description: Cash and bank management setup - Modern bank reconciliation rule migration
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-09-04
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  BankReconciliationMatchRule, SAB_FinUtilParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Overview
 
 Modern bank reconciliation includes major changes to Reconciliation matching rules. <br>
-**Mark new transaction** rules have been replaced by new actions as described in more detail [here](Modern-bank-reconciliation.md) .
+**Mark new transaction** rules have been replaced by new actions as described in more detail [here](Modern-bank-reconciliation) .
 
 Currently the standard **Reconciliation matching rules** data entity doesn't support Modern bank reconciliation new actions. <br>
 Interim option for migration is to either manually create/change the **Mark new transaction** rules to the new actions, or use Electronic reporting to create these new Reconciliation matching rules. <br>

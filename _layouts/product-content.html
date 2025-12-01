@@ -54,7 +54,7 @@ toc: true
                 <h1>{{page.header}}</h1>
               </div>
               <br/>
-              <div class="row">
+              <!-- <div class="row">
                 <details>
                   <summary>
                     In this article
@@ -65,7 +65,7 @@ toc: true
                     </li>
                   </ul>
                 </details>
-              </div>
+              </div> -->
               <div class="row">
                 {{content}}
               </div>
@@ -75,15 +75,69 @@ toc: true
   </div>
 </div>
 <script>
+document.addEventListener("DOMContentLoaded", function() {
+  var currentUrl = window.location.pathname.toLowerCase();
+
+  // Adjust these as needed for your folder structure
+  var sections = ["careservices", "coreextensions", "financeutilities"];
+  var foundSection = sections.find(section => currentUrl.includes(section));
+  if (!foundSection) return;
+
+  // Get the part after the section name
+  var index = currentUrl.indexOf(foundSection + "/") + foundSection.length + 1;
+  var enabledTitles = currentUrl.substring(index, currentUrl.lastIndexOf("/"));
+  if (!enabledTitles) return;
+
+  var myArray = enabledTitles.split("/").filter(Boolean);
+  if (myArray.length === 0) return;
+
+  // // Open parent section
+  // var elementId = myArray[0];
+  // var parent = document.getElementById(elementId);
+  // if (parent) parent.setAttribute("open", "");
+
+  // // Open nested sections if any
+  // var path = elementId;
+  // for (var i = 1; i < myArray.length; i++) {
+  //   path += "/" + myArray[i];
+  //   var el = document.getElementById(path);
+  //   if (el) el.setAttribute("open", "");
+  // }
+  // Iteratively build the ID and open each parent
+    let elementId = "";
+    myArray.forEach(function(part, idx) {
+      elementId = elementId ? elementId + "/" + part : part;
+      var el = document.getElementById(elementId);
+      if (el) el.setAttribute("open", "");
+    });
+
+    var previousVersion = document.getElementById("previous-versions");
+    if (previousVersion) previousVersion.setAttribute("open", "");
+    var archiveVersion = document.getElementById("archive-versions");
+    if (archiveVersion) archiveVersion.setAttribute("open", "");
+});
+</script>
+
+<!-- <script>
   var currentUrl = window.location.href
+
+  var index = 0;
+
+  if (currentUrl.includes("careservices")) {
+    index = currentUrl.indexOf("careservices/") + 13;
+  }
+  else if (currentUrl.includes("coreextensions")) {
+    index = currentUrl.indexOf("coreextensions/") + 15;
+  }
   
   var enabledTitles = currentUrl.substring(
-                        currentUrl.indexOf("userguides/") + 11, 
+                        index, 
                         currentUrl.lastIndexOf("/")
                       );
 
   const myArray = enabledTitles.split("/");
 
+  console.log("this is enabled titles", myArray);
   var elementid = myArray[0].toString().toLowerCase();
   const elementToModifyParent = document.getElementById(elementid);
   elementToModifyParent.setAttribute("open", "");
@@ -95,4 +149,4 @@ toc: true
     elementToModify.setAttribute("open", "");
   }
 
-</script>
+</script> -->

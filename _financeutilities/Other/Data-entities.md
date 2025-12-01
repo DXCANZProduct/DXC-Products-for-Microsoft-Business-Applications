@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities
-description: Finance Utilities setup - Data Entities 
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-10-23
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-# ms.custom: : ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Cash and bank management
@@ -56,7 +33,7 @@ Cash and bank management > Bank accounts > Bank accounts
 Cash and bank management > Setup > Advanced bank reconciliation setup > Reconciliation matching rules
 
 > Note: This standard entity doesn't support Modern bank reconciliation. <br>
-> Interim solution to import Modern bank reconciliation matching rules, see [ER migration](../Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation-er-migration.md)
+> Interim solution to import Modern bank reconciliation matching rules, see [ER migration](../Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation-er-migration)
 
 **Entity**                          | **Additional Finance utilities fields for standard entity**                     
 :--       |:--

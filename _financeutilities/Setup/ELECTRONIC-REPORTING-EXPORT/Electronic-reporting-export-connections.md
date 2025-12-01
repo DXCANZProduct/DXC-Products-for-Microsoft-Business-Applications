@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Organization administration - Electronic reporting export connection 
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-04-07
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  ERFormatDestination, DXCEncryptionParameters, DocuType, DFUGERExportConnection
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version:: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Electronic reporting
@@ -33,8 +10,8 @@ Finance utilities includes functionality to export an Electronic reporting forma
 
 ### Setup steps
 1. [Electronic reporting export connections](#setup-electronic-reporting-export-connections)
-2. [Document types](Document-types.md)
-3. [Electronic reporting destination](Electronic-reporting-destination.md)
+2. [Document types](Document-types)
+3. [Electronic reporting destination](Electronic-reporting-destination)
 
 The following section will describe the required setup for Step 1 for the secure location which is available in **Electronic reporting export connections**.
 
@@ -49,7 +26,7 @@ Select **New** to create the location where GER file is to be saved. Connection 
 | **Connection type**	| Select the applicable connection type	                        | •	FTP <br>	• Azure blob <br> • SFTP <br> • API Endpoint|
 | **Error action**    |	The action to take when there is an error with the connection | • Error <br> • Warning |
 | **Enable file encryption/decryption** | Set to _Yes_ if the export file should be encrypted | •	No <br>	• Yes  |
-| **Encryption key name** |	Select applicable **Encryption key name**. <br> See [DXC encryption parameters](../ENCRYPTION/Encryption-decryption.md) for additional details. 
+| **Encryption key name** |	Select applicable **Encryption key name**. <br> See [DXC encryption parameters](../ENCRYPTION/Encryption-decryption) for additional details. 
 | **Enable business event**  | Option to create an event when file is saved to Azure blob. <br> Setup required: <br> • Set this option to Yes <br> • Active Business event 'Electronic reporting file exported to azure blob' •	No <br>	• Yes  |
 
 
@@ -124,7 +101,7 @@ Field         | Description                         | Example or Options
 
 > Note: Available **Web API types** can be viewed on ActionPane.
 
-[Technical guide](../../Technical/Web-API-Endpoint.md) for Web API Endpoints.
+[Technical guide](../../Technical/Web-API-Endpoint) for Web API Endpoints.
 
 Field         | Description                         | Example or Options
 :--           |:--                                  |:--

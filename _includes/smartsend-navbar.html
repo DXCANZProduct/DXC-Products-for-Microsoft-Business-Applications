@@ -1,6 +1,44 @@
 <div class="content">
     <div class="row">
       <details open>
+        <summary>Release Notes</summary>
+        <ul>
+            <li class="list-style-type">
+              {% assign records = site.smartsend | sort: 'release-version' | reverse%}
+              {% for record in records %}
+                  {%if record.url contains "smartsend/releasenotes" and record.markAsPrevious == false%}
+                  <li class="list-style-type">
+                    <a href="{{ record.url }}">{{record.title}}</a>
+                  </li>
+                  {% endif%}
+              {% endfor %}
+              <details>
+                <summary>Previous Versions</summary>
+                <ul>
+                    {% assign records = site.smartsend | sort: 'release-version' | reverse%}
+                    {% for record in records %}
+                        {%if record.url contains "smartsend/releasenotes" and record.markAsPrevious == true%}
+                        <li class="list-style-type">
+                            <a href="{{ record.url }}">{{record.title}}</a>
+                        </li>
+                        {% endif%}
+                    {% endfor %}
+                </ul>
+              </details>
+            </li>
+          </ul>
+      </details>
+      <details>
+        <summary>
+          In this article
+        </summary>
+        <ul>
+          <li class="list-style-type">
+            {{ content | toc_only }}
+          </li>
+        </ul>
+      </details>
+      <details open>
         <summary>Getting Started</summary>
         <ul>
           {% if site.data.smartsendMenus.toc[0] %}
@@ -33,34 +71,6 @@
             {% endfor %}
           {% endif %}
         </ul>
-      </details>
-      <details open>
-        <summary>Release Notes</summary>
-        <ul>
-            <li class="list-style-type">
-              {% assign records = site.smartsend | sort: 'release-version' | reverse%}
-              {% for record in records %}
-                  {%if record.url contains "smartsend/releasenotes" and record.markAsPrevious == false%}
-                  <li class="list-style-type">
-                    <a href="{{ record.url }}">{{record.title}}</a>
-                  </li>
-                  {% endif%}
-              {% endfor %}
-              <details>
-                <summary>Previous Versions</summary>
-                <ul>
-                    {% assign records = site.smartsend | sort: 'release-version' | reverse%}
-                    {% for record in records %}
-                        {%if record.url contains "smartsend/releasenotes" and record.markAsPrevious == true%}
-                        <li class="list-style-type">
-                            <a href="{{ record.url }}">{{record.title}}</a>
-                        </li>
-                        {% endif%}
-                    {% endfor %}
-                </ul>
-              </details>
-            </li>
-          </ul>
       </details>
     </div>
   </div>

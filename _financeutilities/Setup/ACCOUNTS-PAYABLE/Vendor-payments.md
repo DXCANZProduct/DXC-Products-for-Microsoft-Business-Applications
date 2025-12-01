@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Accounts payable setup - Vendor Payments 
-author: jdutoit2
-manager: Pontus Ek
-ms.date: 2024-06-28
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  LedgerJournalTable5, VendPaymMode, BankAccountTableListPage
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 **Accounts payable functionality**
@@ -68,7 +45,7 @@ The Method of payment form is used to set up and generate the EFT file from your
 
 ### File formats
 
-> Note: Recommended to use Generic electronic reporting formats. Only ER formats can be sent to secure location using [Electronic reporting export connections](Save-electronic-reporting-file-to-secure-location.md).
+> Note: Recommended to use Generic electronic reporting formats. Only ER formats can be sent to secure location using [Electronic reporting export connections](Save-electronic-reporting-file-to-secure-location).
 
 Finance utilities EFT formats: When setting up Vendor **Methods of payment** and setting **Generic electronic Export format** to _No_, Finance utilities currently provides the following export formats:
 - ANZ Direct Credit Service (AU)
@@ -128,10 +105,10 @@ File name when **Enable file parameters** is set to:
 **Generate file per payment line** provides functionality to create an EFT file _per payment line_ when using **Generate payments** on the Vendor payment journal.
 
 ### Sundry method of payment
-- [Sundry method of payment](Sundry-payment.md)
+- [Sundry method of payment](Sundry-payment)
 
 ### BPAY method of payment
-- [BPAY method of payment](BPAY-payment.md)
+- [BPAY method of payment](BPAY-payment)
 
 # Processing
-Processing user guide for Vendor payments can be found [here](../../Processing/Accounts-Payable/Vendor-payments.md)
+Processing user guide for Vendor payments can be found [here](../../Processing/Accounts-Payable/Vendor-payments)

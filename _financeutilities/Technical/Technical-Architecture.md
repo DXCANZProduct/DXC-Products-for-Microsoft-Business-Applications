@@ -1,3 +1,9 @@
+---
+layout: product-content
+header: Finance Utilities
+toc: true
+---
+
 # Technical Architecture
 
 ## Import Process  
@@ -65,7 +71,7 @@ The following illustration describes how SFTP is used during the import process.
 ![alt text](./Images/image-8.png)
 
 Note: The SFTP service will have to be hosted and managed by the customer, Finance utilities can only establish a connection using the provided credentials. Finance Utilities does not manipulate any information passed or retrieved during the communication.  
-For more details on DXCConnections please review documentation available [here.](../../CONNECTIONS/Technical-Documentation.md)
+For more details on DXCConnections please review documentation available [here.](../../CONNECTIONS/Technical-Documentation)
 
 ### Microsoft Azure Blob (AzureBlob)
 The following illustration describes how AzureBlob is used during the import process.
@@ -75,7 +81,7 @@ The following illustration describes how AzureBlob is used during the import pro
 ![alt text](./Images/image-11.png)
 
 Note: The Azure Blob storage account will have to be hosted and managed by the customer, Finance utilities can only establish a connection using the provided credentials. Finance Utilities does not manipulate any information passed or retrieved during the communication.  
-For more details on DXCConnections please review documentation available [here.](../../CONNECTIONS/Technical-Documentation.md)
+For more details on DXCConnections please review documentation available [here.](../../CONNECTIONS/Technical-Documentation)
 
 ### Sharepoint
 The following illustration describes how Sharepoint is used during the import process.
@@ -93,7 +99,7 @@ The following illustration describes how Web API Endpoint is used during the imp
 
 Note: The API endpoint implementation needs to be managed by the customer as extensions. DXC Finance Utilities does not provide any pre-existing API endpoints. 
 
-For more details on Web API please review documentation available [here.](./Web-API-Endpoint.md)
+For more details on Web API please review documentation available [here.](./Web-API-Endpoint)
 
 ## Export Process
 The following illustration describes the export process within DXC Finance Utilities.
@@ -126,7 +132,7 @@ The following illustration describes how SFTP is used during the export process.
 ![alt text](./Images/image-17.png)
 
 Note: The SFTP service will have to be hosted and managed by the customer, Finance utilities can only establish a connection using the provided credentials. Finance Utilities does not manipulate any information passed or retrieved during the communication.  
-For more details on DXCConnections please review documentation available [here.](../../CONNECTIONS/Technical-Documentation.md)
+For more details on DXCConnections please review documentation available [here.](../../CONNECTIONS/Technical-Documentation)
 
 ### Microsoft Azure Blob (AzureBlob)
 The following illustration describes how AzureBlob is used during the export process.
@@ -134,7 +140,7 @@ The following illustration describes how AzureBlob is used during the export pro
 ![alt text](./Images/image-18.png)
 
 Note: The Azure Blob storage account will have to be hosted and managed by the customer, Finance utilities can only establish a connection using the provided credentials. Finance Utilities does not manipulate any information passed or retrieved during the communication.  
-For more details on DXCConnections please review documentation available [here.](../../CONNECTIONS/Technical-Documentation.md)
+For more details on DXCConnections please review documentation available [here.](../../CONNECTIONS/Technical-Documentation)
 
 ### Web API
 The following illustration describes how Web API Endpoint is used during the import process.
@@ -143,4 +149,4 @@ The following illustration describes how Web API Endpoint is used during the imp
 
 Note: The API endpoint implementation needs to be managed by the customer as extensions. DXC Finance Utilities does not provide any pre-existing API endpoints. 
 
-For more details on Web API please review documentation available [here.](./Web-API-Endpoint.md)
+For more details on Web API please review documentation available [here.](./Web-API-Endpoint)

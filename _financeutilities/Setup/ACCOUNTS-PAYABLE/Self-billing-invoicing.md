@@ -1,29 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description:  Accounts payable setup - Self billing invoicing
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2024-11-21
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: VendParameters, DFUSelfBillingInvoiceGroups, VendTableListPage
-audience: Application User
-# ms.devlang:
-ms.reviewer: Monica du Toit
-# ms.tgt_pltfrm:
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Self billing invoicing / RCTI
@@ -96,4 +74,4 @@ The following fields on the **Invoice and delivery** FastTab applies to the func
 Where the Self billing invoice group's **Create invoice with product receipt** is set to _No_, it is required to create a batch recurrence for the group using the following periodic task: **Accounts payable > Periodic tasks > Create self billing invoices**
 
 ### Processing
-Processing is discussed in detail at [Self billing invoicing processing](../../Processing/Accounts-Payable/Self-billing-invoicing.md).
+Processing is discussed in detail at [Self billing invoicing processing](../../Processing/Accounts-Payable/Self-billing-invoicing).

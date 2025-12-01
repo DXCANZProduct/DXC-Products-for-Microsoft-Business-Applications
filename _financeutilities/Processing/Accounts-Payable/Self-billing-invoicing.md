@@ -1,29 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description:  Accounts payable processing - Self billing invoicing
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2024-11-21
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: VendPaymMode, LedgerJournalTable5, LedgerJournalTable9
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-# ms.tgt_pltfrm: 
-# ms.custom: : ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Self billing invoicing / RCTI
@@ -31,7 +9,7 @@ The fields as described in the following subsections are available to control th
 This provides the ability to automatically create a Purchase invoice for Product receipt(s).
 
 ## Prerequisites
-Setup requirements are discussed in detail at [Self billing invoicing setup](../../Setup/ACCOUNTS-PAYABLE/Self-billing-invoicing.md). <br>
+Setup requirements are discussed in detail at [Self billing invoicing setup](../../Setup/ACCOUNTS-PAYABLE/Self-billing-invoicing). <br>
 Processing are discussed in the following subsections.
 
 ## Product receipt

@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Setup - ABN lookup and validation 
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-11-21
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  DXC_ABNValidationProviderTypeTable, OMLegalEntities
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # ABN lookup and validation
@@ -52,4 +29,4 @@ After successful registration, the company will be provided with a security toke
     - Select the applicable **ABN provider** from the drop-down as setup in the previous section **ABN validation providers**.
   
 ## Processing
-See [link](../../Processing/ABN/ABN-lookup-and-validation.md) for details on processing.
+See [link](../../Processing/ABN/ABN-lookup-and-validation) for details on processing.

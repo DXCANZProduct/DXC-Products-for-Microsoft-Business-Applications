@@ -1,42 +1,19 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Cash and bank management setup - Periodic import Bank statement
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-12-07
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  BankStatementTable, DFUConnection
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-# ms.custom: : ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 ## Bank statement periodic import
 When the bank statements are to be imported via the periodic task **Import bank statements via financial utilities connection**, the following prerequisites are required.
 
 ### Prerequisites
-1.	Setup [Financial utilities connection](Finance-utilities-connections.md)
-1.	Setup [Bank accounts](Bank-accounts.md):
+1.	Setup [Financial utilities connection](Finance-utilities-connections)
+1.	Setup [Bank accounts](Bank-accounts):
       - Select applicable **Financial utilities connection** - Optional (for info)
 
 ### Optional
-1. Setup **File attachment document type** on [Financial utilities parameters](Finance-utilities-parameters.md) to attach the import file to the created D365 Bank statement(s).
+1. Setup **File attachment document type** on [Financial utilities parameters](Finance-utilities-parameters) to attach the import file to the created D365 Bank statement(s).
 
 ### Batch job
 After the prerequisites have been completed, setup required batch job(s) by using **Cash and bank management > Periodic tasks > Import bank statements via financial utilities connection**

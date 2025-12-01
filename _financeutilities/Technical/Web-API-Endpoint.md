@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI
-description: Technical guide - Web API Endpoint
-author: adutt2
-manager: Kym Parker
-ms.date: 2023-07-06
-ms.topic: article
-ms.prod:
-ms.service: dynamics-ax-applications
-ms.technology:
-
-# optional metadata
-
-ms.search.form:
-audience: Application User
-# ms.devlang:
-ms.reviewer: adutt2
-
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: adutt2
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Technical guide - Web API Endpoint

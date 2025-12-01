@@ -1,29 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Accounts payable setup - Vendor bank account changes workflow 
-author: helenho
-manager: Kym Parker
-ms.date: 2023-11-17
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  VendParameters
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Accounts payable functionality

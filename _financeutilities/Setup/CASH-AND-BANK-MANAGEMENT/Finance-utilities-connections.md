@@ -1,38 +1,15 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Cash and bank management setup - Finance utilities connections
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-11-12
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  DFUConnection, DXCEncryptionParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 ## Financial utilities connection
 When the bank statements are to be imported via the periodic task **Import bank statements via financial utilities connection**, the applicable connection type must be setup using the **Financial utilities connections** page.
 
 **Financial utilities connections** are used in the following:
-1.	Assigned to the applicable [Bank accounts](Bank-accounts.md) - Optional (for info).
-2.	Mandatory parameter in the periodic task [Import bank statements via financial utilities connection](Bank-statement-import.md). Only enabled connections can be selected in the periodic task.
+1.	Assigned to the applicable [Bank accounts](Bank-accounts) - Optional (for info).
+2.	Mandatory parameter in the periodic task [Import bank statements via financial utilities connection](Bank-statement-import). Only enabled connections can be selected in the periodic task.
 
 The import file can be attached to the created D365 bank statement(s), by setting **File attachment document type** on **Financial utilities parameters**.
 
@@ -53,7 +30,7 @@ Field         | Description                         | Example or Options
 **Error action**    |	The action to take when there is an error with the connection | •	Error <br> •	Warning
 **Enabled**         |	Once all the mandatory fields have been completed the connection can be enabled	  | •	Yes <br> •	No
 **Enable file encryption/decryption** | Set to _Yes_ if the import file should be decrypted | •	No <br>	• Yes 
-**Encryption key name** |	Select applicable **Encryption key name**. <br> See [DXC encryption parameters](../ENCRYPTION/Encryption-decryption.md) for additional details. 
+**Encryption key name** |	Select applicable **Encryption key name**. <br> See [DXC encryption parameters](../ENCRYPTION/Encryption-decryption) for additional details. 
 
 Click **Save** and the applicable Setup will be displayed as per Connection type selected. <br>
 
@@ -160,7 +137,7 @@ Field         | Description                         | Example or Options
 
 > Note: Available **Web API types** can be viewed on ActionPane.
 
-[Technical guide](../../Technical/Web-API-Endpoint.md) for Web API Endpoints.
+[Technical guide](../../Technical/Web-API-Endpoint) for Web API Endpoints.
 
 Field         | Description                         | Example or Options
 :--           |:--                                  |:--

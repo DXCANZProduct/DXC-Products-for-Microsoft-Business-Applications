@@ -1,38 +1,15 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Encryption / decryption
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-03-25
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  DXCEncryptionParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Encryption / Decryption
 Encryption / Decryption is available utilising the **DXC Encryption** model.
 
 Once below has been setup, the functionality can be used on the following Finance utilities functionality:
-- Encrypt option on [Electronic reporting export connections](../ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md) to send encrypted GER Vendor EFT files
-- Decrypt option on [Financial utilities connection](../CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md) to decrypt a bank statement file imported using periodic task **Import bank statements via financial utilities connection**
+- Encrypt option on [Electronic reporting export connections](../ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location) to send encrypted GER Vendor EFT files
+- Decrypt option on [Financial utilities connection](../CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections) to decrypt a bank statement file imported using periodic task **Import bank statements via financial utilities connection**
 
 ## Generate
 DXC Encryption allows users to generate keys within Finance and Operations.
@@ -111,8 +88,8 @@ Select applicable **Encryption key name**, click **Validate** which will open a 
 ## Step 3 - Use Encryption in Finance utilities
 
 Assign to Finance utilites functionality:
-- Encrypt option on [Electronic reporting export connections](../ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.md) to send encrypted GER Vendor EFT files
-- Decrypt option on [Financial utilities connection](../CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.md) to decrypt a bank statement file imported using periodic task **Import bank statements via financial utilities connection**.
+- Encrypt option on [Electronic reporting export connections](../ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location) to send encrypted GER Vendor EFT files
+- Decrypt option on [Financial utilities connection](../CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections) to decrypt a bank statement file imported using periodic task **Import bank statements via financial utilities connection**.
 
 To enable encryption / decryption on the connection: 
  - Set **Enable file encryption/decryption** to _Yes_

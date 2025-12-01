@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities
-description: Cash and bank management setup - Modern bank reconciliation
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-09-12
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  BankReconciliationMatchRule, SAB_FinUtilParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Advanced bank reconciliation functionality
@@ -185,10 +162,10 @@ The additional Finance Utilities fields for the new Modern bank reconciliation a
 
 ### Reconciliation matching rules
 
-See the following [page](Modern-bank-reconciliation-er-migration.md) for migrating 'Mark new transaction' Reconciliation matching rules to the new actions.
+See the following [page](Modern-bank-reconciliation-er-migration) for migrating 'Mark new transaction' Reconciliation matching rules to the new actions.
 
 # Processing
 
-Processing is discussed in detail [here](../../Processing/Bank-Statement-Reconciliation/Modern-bank-reconciliation.md)
+Processing is discussed in detail [here](../../Processing/Bank-Statement-Reconciliation/Modern-bank-reconciliation)
 
 

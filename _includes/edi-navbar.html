@@ -1,5 +1,43 @@
 <div class="content">
+    <details open>
+        <summary>Release Notes</summary>
+        <ul>
+            <li class="list-style-type">
+              {% assign edis = site.edi | sort: 'release-version' | reverse%}
+              {% for record in edis %}
+                  {%if record.url contains "edi/releasenotes" and record.markAsPrevious == false%}
+                  <li class="list-style-type">
+                    <a href="{{ record.url }}">{{record.title}}</a>
+                  </li>
+                  {% endif%}
+              {% endfor %}
+              <details>
+                <summary>Previous Versions</summary>
+                <ul>
+                    {% assign coreextension = site.coreextensions | sort: 'release-version' | reverse%}
+                    {% for coreext in coreextension %}
+                        {%if coreext.url contains "coreextensions/releasenotes" and coreext.markAsPrevious == true%}
+                        <li class="list-style-type">
+                          <a href="{{ coreext.url }}">{{coreext.title}}</a>
+                        </li>
+                        {% endif%}
+                    {% endfor %}
+                </ul>
+              </details>
+            </li>
+          </ul>
+      </details>
     <div class="row">
+      <details>
+      <summary>
+        In this article
+      </summary>
+      <ul>
+        <li class="list-style-type">
+          {{ content | toc_only }}
+        </li>
+      </ul>
+    </details>
       <details open>
         <summary>Getting Started</summary>
         <ul>
@@ -46,34 +84,6 @@
             {% endfor %}
           {% endif %}
         </ul>
-      </details>
-      <details open>
-        <summary>Release Notes</summary>
-        <ul>
-            <li class="list-style-type">
-              {% assign edis = site.edi | sort: 'release-version' | reverse%}
-              {% for record in edis %}
-                  {%if record.url contains "edi/releasenotes" and record.markAsPrevious == false%}
-                  <li class="list-style-type">
-                    <a href="{{ record.url }}">{{record.title}}</a>
-                  </li>
-                  {% endif%}
-              {% endfor %}
-              <details>
-                <summary>Previous Versions</summary>
-                <ul>
-                    {% assign coreextension = site.coreextensions | sort: 'release-version' | reverse%}
-                    {% for coreext in coreextension %}
-                        {%if coreext.url contains "coreextensions/releasenotes" and coreext.markAsPrevious == true%}
-                        <li class="list-style-type">
-                          <a href="{{ coreext.url }}">{{coreext.title}}</a>
-                        </li>
-                        {% endif%}
-                    {% endfor %}
-                </ul>
-              </details>
-            </li>
-          </ul>
       </details>
     </div>
   </div>

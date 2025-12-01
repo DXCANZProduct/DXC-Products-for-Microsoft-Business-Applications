@@ -1,29 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Bank statement reconciliation processing - Bank statement import 
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-09-15
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  BankStatementTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-# ms.tgt_pltfrm: 
-# ms.custom: : ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Bank statement import 
@@ -32,7 +10,7 @@ ms.dyn365.ops.version: AX 7.0.1
 The **Bank statement** page  is used to manually import the bank statement into your D365 environment. 
 Users can navigate to the page by going to **Cash and bank management > Bank statement reconciliation > Bank statements**
 
-> Note: Setup **File attachment document type** on [Financial utilities parameters](../../Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters.md) to attach the import file to the created D365 Bank statement(s).
+> Note: Setup **File attachment document type** on [Financial utilities parameters](../../Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters) to attach the import file to the created D365 Bank statement(s).
 
 Select **Import statement**.
 Where the selected statement format is marked as **Customised format** the following additional fields are available on the import:
@@ -58,7 +36,7 @@ In addition, where Import statement for multiple bank accounts in all legal enti
 
 # Periodic import
 
-The bank statement can also automatically be imported by using periodic task [Import bank statements via financial utilities connection](../../Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.md).
+The bank statement can also automatically be imported by using periodic task [Import bank statements via financial utilities connection](../../Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import).
 
 Filter **Imported via financial utilities connection** on the Bank statement import, can be used to filter to bank statements imported using above periodic task.
 

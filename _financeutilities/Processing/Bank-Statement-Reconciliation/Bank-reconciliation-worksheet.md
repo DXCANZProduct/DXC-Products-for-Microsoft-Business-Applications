@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Bank statement reconciliation processing - Bank reconciliation worksheet 
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-03-27
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  BankReconciliationHeader
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 ## Bank reconciliation worksheet
@@ -69,7 +46,7 @@ These columns provide more visibility of the matching process
 | **Columns** | **Description**   |
 |-|-|
 | **Mark** |  This checkbox allows the user to match statement lines against bank transactions. It validates the following: <br> <br> •	When all lines with same **Match ID** are unmarked on the Statement side, the system prompts a warning **“Unmatch all of match id”** When users click **Yes** on the warning message the corresponding lines with the equivalent **Match ID** on the bank transactions side are unmarked automatically by the system. If users click **No** on the message, users must manually unmark the corresponding entries. When the users unmark the corresponding entries, the Match id disappears. <br> <br> • When all lines with same **Match ID** are unmarked on bank transactions side, the system would prompt a warning **“Unmatch all of match id”** When users click Yes on the warning message the corresponding lines with equivalent **Match ID** on statement lines are unmarked automatically by the system. If users click **No** on the message, users must manually unmark the corresponding entries. When the users manually unmark the corresponding entries, the Match id disappears. <br> <br> • The new **Mark** checkbox will update the **Total amount**, **Open Amount** and **Matched amount** that appears on top of open statement lines and open bank documents from Bank reconciliation worksheet. <br> <br> •	The new **Mark** checkbox will also update the **Unmatched amount** and the **Total amount** that appears at the bottom of open statement lines and open bank documents from Bank reconciliation worksheet. <br> <br> • **Mark** column is also added on the **Matched document** section of bank reconciliation worksheet.  |
-| **Match Id** |  This unique ID identifies which transactions are matching on both sides of the reconciliation worksheet. This is automatically assigned by the system based on the number sequence setup on [Financial utilities parameters](../../Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters.md#number-sequences) <br> <br> This button validates the following: <br> •	Matching is ONE TO ONE <br> •	Matching is ONE to MANY  <br> •	Matching is MANY to ONE <br> • Matching is MANY to MANY <br> • Matched transaction amounts on both sides are equal.  <br> <br> Match ID column is also added on the **Matched document** section of the bank reconciliation worksheet. Match ID can be auto assigned by using the Financial utilities parameter [Auto assign Match id](../../Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters.md) <br> Steps required when Financial utilities parameter **Auto assign Match id** is  <br> •	Enabled: <br> -	Mark bank statement and bank transactions <br> -	If balances: click Match. Match id is auto assigned <br> •	Disabled:  <br>   -	Mark bank statement and bank transactions <br> -	Click Match Id  <br> -	Click Match              |
+| **Match Id** |  This unique ID identifies which transactions are matching on both sides of the reconciliation worksheet. This is automatically assigned by the system based on the number sequence setup on [Financial utilities parameters](../../Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters#number-sequences) <br> <br> This button validates the following: <br> •	Matching is ONE TO ONE <br> •	Matching is ONE to MANY  <br> •	Matching is MANY to ONE <br> • Matching is MANY to MANY <br> • Matched transaction amounts on both sides are equal.  <br> <br> Match ID column is also added on the **Matched document** section of the bank reconciliation worksheet. Match ID can be auto assigned by using the Financial utilities parameter [Auto assign Match id](../../Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters) <br> Steps required when Financial utilities parameter **Auto assign Match id** is  <br> •	Enabled: <br> -	Mark bank statement and bank transactions <br> -	If balances: click Match. Match id is auto assigned <br> •	Disabled:  <br>   -	Mark bank statement and bank transactions <br> -	Click Match Id  <br> -	Click Match              |
 
 
 #### Check boxes showing reconciled totals

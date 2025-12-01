@@ -36,7 +36,7 @@
         "description": "The DXC Finance Utilities module provides enhanced functionalities to Microsoft Dynamics 365 for cash and bank management, accounts payable and receivable and budgeting.",
         "productDocsUrl": "/financeutilities",
         "productName": "ICONFinanceUtilities",
-        "disableDocs": true,
+        "disableDocs": false,
         "notificationsEnabled": true
     },
     {

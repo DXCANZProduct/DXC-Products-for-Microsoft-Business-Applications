@@ -1,29 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Budgeting processing - Importing the budget
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-07-02
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  BudgetTransactions
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-# ms.tgt_pltfrm: 
-# ms.custom: : ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Budgeting functionality
@@ -33,10 +11,10 @@ The following subsections describe the processing requirement for the additional
 Finance utilities includes the ability to import a csv budget file with monthly columns.
 
 ## Example file format
-See [Example file format](Example-file-format.md) for example file.
+See [Example file format](Example-file-format) for example file.
 
 ### Setup budget import
-Setup requirements are discussed in detail at [Budget import setup](../../Setup/BUDGETING/Budget-import.md). <br>
+Setup requirements are discussed in detail at [Budget import setup](../../Setup/BUDGETING/Budget-import). <br>
 Importing the budget file will be discussed in the following subsections.
 
 ### Importing the budget file

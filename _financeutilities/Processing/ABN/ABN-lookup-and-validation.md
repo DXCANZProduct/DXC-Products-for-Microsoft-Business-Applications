@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Processing - ABN lookup and validation
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-11-21
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DXC_ABNValidationReview
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-# ms.custom: : ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature 
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # ABN lookup
@@ -38,7 +15,7 @@ Advanced filters are also available to limit the search results: <br>
 - Active - No / Yes
 
 ## Prerequisites
-The following setup are [prerequisites](../../Setup/ABN/ABN-lookup-and-validation.md) for ABN lookup and validation:
+The following setup are [prerequisites](../../Setup/ABN/ABN-lookup-and-validation) for ABN lookup and validation:
 - Register for Web API
 - Setup ABN validation providers
 - Setup legal entity to use the ABN validation provider

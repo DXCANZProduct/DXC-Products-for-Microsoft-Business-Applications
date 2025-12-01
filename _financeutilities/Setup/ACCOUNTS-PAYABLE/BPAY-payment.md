@@ -1,29 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description:  Accounts payable setup - BPAY payment
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-07-22
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: VendPaymMode
-audience: Application User
-# ms.devlang:
-ms.reviewer: Monica du Toit
-# ms.tgt_pltfrm:
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Accounts payable functionality
@@ -80,4 +58,4 @@ The new BPAY fields have been added to the applicable data entities:
 | **Lodgement reference attribute**             | Vendor payment method  | VendPaymModeTable.DFUAtrributeLodgementRefEnabled  |
 
 ### BPAY payment processing
-BPAY payment processing is discussed in detail at [BPAY payment processing](../../Processing/Accounts-Payable/BPAY-payment.md).
+BPAY payment processing is discussed in detail at [BPAY payment processing](../../Processing/Accounts-Payable/BPAY-payment).

@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Processing - Bank account validation
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-11-21
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  VendBankAccounts, CustBankAccounts
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-# ms.custom: : ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature 
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Bank account validation
@@ -32,7 +9,7 @@ ms.dyn365.ops.version: AX 7.0.1
 When Bank account validation has been enabled for the legal entity and country, new vendor and customer bank accounts created with the allocated Country/region as setup in Legal entity goes through extra validation to ensure the length and/or format.
 
 ## Prerequisites
-The following setup are [prerequisites](../../Setup/ABN/Bank-account-validation.md) for Bank account validation:
+The following setup are [prerequisites](../../Setup/ABN/Bank-account-validation) for Bank account validation:
 
 
 ## Validation

@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Setup - IRD number validation 
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-11-21
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  OMLegalEntities
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # IRD number validation
@@ -37,4 +14,4 @@ The fields as described in the following subsections are available to control th
 2. Use the setup available under **Validation** FastTab, heading **New Zealand validation** to enable IRD number validation by allocating the applicable New Zealand country in field **Country/region**.
   
 ## Processing
-See [link](../../Processing/ABN/IRD-number-validation.md) for details on processing.
+See [link](../../Processing/ABN/IRD-number-validation) for details on processing.

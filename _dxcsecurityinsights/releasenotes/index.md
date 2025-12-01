@@ -24,7 +24,6 @@ Release notes for other models included in product:
 - [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
 - [DXC License](../LMG/Release-notes.md#dxc-license)
 
-
 # Current version
 
 Security Insights for D365 FO 10.0.44 runs on the following Microsoft releases
@@ -35,7 +34,7 @@ Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dy
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 Microsoft Dynamics 365 application	| 10.0.46 	  | [What’s new or changed in Dynamics 365 application version 10.0.46](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-46)
 
-{% include_relative 10.0.44.20251121.md %}
+{% include_relative {{page.release-version}}.md %}
 
 First release
 

@@ -26,3 +26,5 @@ Watch DXC Technology’s short demonstration on Security Insights for D365 FO so
 
 ## New ideas
 Have a suggestion for a new product or a new feature for an existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
+
+<iframe width="560" height="560" src="https://www.youtube.com/embed/3UfacOHGWr8" title="YouTube video" frameborder="0" allowfullscreen></iframe>

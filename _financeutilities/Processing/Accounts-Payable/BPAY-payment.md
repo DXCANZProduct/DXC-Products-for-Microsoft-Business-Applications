@@ -1,36 +1,14 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description:  Accounts payable processing - BPAY payment
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-07-22
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: VendPaymMode, LedgerJournalTable5, LedgerJournalTable9
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-# ms.tgt_pltfrm: 
-# ms.custom: : ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Accounts payable functionality
 The features as described in the following subsections are available to control the additional functionality for accounts payable.
 
 ## BPAY Payment
-Setup requirements are discussed in detail at [BPAY payment setup](../../Setup/ACCOUNTS-PAYABLE/BPAY-payment.md). <br>
+Setup requirements are discussed in detail at [BPAY payment setup](../../Setup/ACCOUNTS-PAYABLE/BPAY-payment). <br>
 Processing of the vendor invoices and payments are discussed in the following subsections.
 
 ### 	BPAY Vendor invoices

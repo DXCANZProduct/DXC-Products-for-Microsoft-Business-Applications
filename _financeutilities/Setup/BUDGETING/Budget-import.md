@@ -1,31 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Budgeting setup - Budget Import 
-author: jdutoit2
-manager: Pontus Ek
-ms.date: 2024-06-24
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SAB_FinBudgetParameters, BudgetTransactions
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Budgeting functionality
@@ -63,4 +39,4 @@ Use button **Generate template** to download csv template based on the following
 - Dimension format
 
 ### Budget import processing
-Budget import processing is discussed in detail at [Budget import processing](../../Processing/Budgeting/Budget-import.md).
+Budget import processing is discussed in detail at [Budget import processing](../../Processing/Budgeting/Budget-import).

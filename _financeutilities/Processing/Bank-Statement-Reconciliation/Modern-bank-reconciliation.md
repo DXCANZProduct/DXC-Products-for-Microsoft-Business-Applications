@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Bank statement reconciliation processing - Bank reconciliation worksheet 
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-08-20
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  BankReconciliationHeader
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Prerequisites
@@ -33,7 +10,7 @@ The following is a summary of the prerequisites for using Finance utilities exte
 
 > ** Important note: Ensure there are no Action **Mark new transactions** Reconciliation matching rules left before running **Cash and bank management > Setup > Advanced bank reconciliation setup > Advanced bank reconciliation data upgrade**, as this will delete these rules. 
 
-The following setup are prerequisites and is described in detail [here](../../Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation.md) when switching to Modern bank reconciliation:
+The following setup are prerequisites and is described in detail [here](../../Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation) when switching to Modern bank reconciliation:
 - Enable feature **Modern bank reconciliation**
 - Set **Enable modern bank reconciliation extensions** to _Yes_ in **Financial utilities parameters**.
 - Assign **Customer payment journal** and **Vendor payment journal** on the company **Bank accounts** if actions 'Generate vendor payments', 'Generate customer payments' or 'Settle customer invoice' will be used

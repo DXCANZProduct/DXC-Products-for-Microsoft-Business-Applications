@@ -3,7 +3,7 @@ layout: releasenotes-content
 header: Care Services
 title: Archive
 release-version: 10.0.43.20250617
-markAsPrevious: true
+state: archive
 toc: true
 ---
 

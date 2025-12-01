@@ -1,29 +1,7 @@
 ---
-# required metadata
-
-title: DXC Finance Utilities
-description: Cash and bank management setup - Financial utilities parameters
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-06-09
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology:  
-
-# optional metadata
-
-ms.search.form:  SAB_FinUtilParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Advanced bank reconciliation functionality
@@ -43,7 +21,7 @@ Then set the fields as described in the following subsections.
 :--       |:--
 **Extended matching rule operator** | This parameter activates a new operator **Included in** in the Reconciliation matching rules form. It supplements the **Contains** capability, and means that the field selected is a part of the nominated Bank statement field.
 **Extended financial details for new transaction** | This parameter enables the capture of the following details automatically if the bank statement line is marked as 'New' <br> • Financial dimensions <br> • GST  <br> • Sub-Ledger offset account
-**Reference type**  | Populate [Reference type](../ACCOUNTS-RECEIVABLE/Customer-reference.md#reference-number-type) where Customer references are used to find D365 customer account for mark as new Reconciliation matching rules using field **Offset account reference bank statement field**.
+**Reference type**  | Populate [Reference type](../ACCOUNTS-RECEIVABLE/Customer-reference#reference-number-type) where Customer references are used to find D365 customer account for mark as new Reconciliation matching rules using field **Offset account reference bank statement field**.
 
 **Bank reconciliation**
 
@@ -62,7 +40,7 @@ Then set the fields as described in the following subsections.
 **File attachment document type** | Select applicable document type. When populated, the import file will be attached to the created bank statement(s). This applies to bank statements created with manual or periodic job import. <br> Ensure the file extension is setup in all applicable legal entities **File types** in **Document management parameters**.
 
 **Setup for customer payment journal**
-Required when using Bank reconciliation matching rules to create customer payment journals - see [here](Bank-reconciliation-matching-rules.md#customer-payment-and-settle-of-invoice-11) for more information.
+Required when using Bank reconciliation matching rules to create customer payment journals - see [here](Bank-reconciliation-matching-rules#customer-payment-and-settle-of-invoice-11) for more information.
 
 **Field** | **Description**
 :--       |:--

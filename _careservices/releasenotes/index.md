@@ -3,7 +3,7 @@ layout: releasenotes-content
 header: Care Services
 title: 10.0.44.20251120
 release-version: 10.0.44.20251120
-markAsPrevious: false
+state: current
 toc: true
 ---
 

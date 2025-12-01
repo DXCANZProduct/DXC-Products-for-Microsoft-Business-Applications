@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: Finance Utilities 
-description: Organization administration - Document types 
-author: jdutoit2
-manager: Pontus Ek
-ms.date: 2024-06-25
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  ERFormatDestination, DXCEncryptionParameters, DocuType, DFUGERExportConnection
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: FinanceUtilFeature
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: helenho
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version:: AX 7.0.1
+layout: product-content
+header: Finance Utilities
+toc: true
 ---
 
 # Electronic reporting
@@ -32,9 +9,9 @@ ms.dyn365.ops.version:: AX 7.0.1
 Finance utilities includes functionality to export an Electronic reporting format to a secure location.
 
 ### Setup steps
-1. [Electronic reporting export connections](Electronic-reporting-export-connections.md)
+1. [Electronic reporting export connections](Electronic-reporting-export-connections)
 2. [Document types](#setup-document-types)
-3. [Electronic reporting destination](Electronic-reporting-destination.md)
+3. [Electronic reporting destination](Electronic-reporting-destination)
 
 The following section will describe the required setup for Step 2 for assigning the secure location created in **Electronic reporting export connections** to a **Document type**.
 
