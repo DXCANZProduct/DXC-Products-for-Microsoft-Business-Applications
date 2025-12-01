@@ -1,0 +1,6 @@
+23483-L,USMF,005,,Ledger,USRT,600155,,,,Booking date,,10Pct,ALL,,,
+23483-B,USMF,005,,Bank,USRT,USRT OPER,,,,Booking date,,,,,,
+23483-V,USMF,000,,,USRT,,,9001,No,Booking date,ELECTRONIC,,,,GEN,
+23483-CP,USMF,050,,,USRT,,,,Yes,Booking date,ELECTRONIC,,,,GEN,Post and transfer
+23483-CPF,USMF,050,,,USRT,,004003,,No,Booking date,ELECTRONIC,,,,GEN,Post and transfer
+23483-CI,USMF,050,,,USRT,,,,Yes,Booking date,ELECTRONIC,,,,GEN,
