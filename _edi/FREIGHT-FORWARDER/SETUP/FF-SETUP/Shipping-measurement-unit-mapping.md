@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Freight forwarder
-description: EDI Freight forwarder setup - Shipping measurement unit mapping
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-11-25
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIFFLCShipMeasurementUnitMapping
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIFreightForwarderDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Freight forwarder setup
@@ -43,7 +20,7 @@ Used where the Freight forwarder’s shipping measurement units value differs to
 -	Specify the Freight forwarder's **Value**. Blank is allowed.
 
 ## Where used
-Shipping measurement unit mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading-partner.md) Options field called **Measurement unit**.
+Shipping measurement unit mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading-partner) Options field called **Measurement unit**.
 
 Used on the following EDI documents (field):
 - Voyage creator (ShipMeasurementUnitExternal) 

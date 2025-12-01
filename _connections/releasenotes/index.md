@@ -4,7 +4,7 @@ header: Connections
 title: 10.0.44.202511252
 release-version: 10.0.44.202511252
 release-date: 25 November 2025
-markAsPrevious: false
+state: current
 toc: true
 ---
 

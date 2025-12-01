@@ -1,431 +1,431 @@
 toc:
   - page: Introduction
-    url: /docs/edi
+    url: /edi
   - page: FAQ
-    url: /edi/userguides/FAQ
+    url: /edi/FAQ
   - title: Core module
     id: core
     Level_1_items:
       - page: Introduction
-        url: /edi/userguides/CORE/Introduction/Introduction
+        url: /edi/CORE/Introduction/Introduction
       - page: Process overview
-        url: /edi/userguides/CORE/Introduction/Process-overview
+        url: /edi/CORE/Introduction/Process-overview
       - page: Trading partners and documents
-        url: /edi/userguides/CORE/Introduction/Trading-partners-and-documents
+        url: /edi/CORE/Introduction/Trading-partners-and-documents
       - page: Trading partners and documents
-        url: /edi/userguides/CORE/Introduction/Trading-partners-and-documents 
+        url: /edi/CORE/Introduction/Trading-partners-and-documents 
       - title: Setup
         id: core/setup
         Level_2_items:
         - page: EDI parameters
-          url: /edi/userguides/CORE/Setup/EDI-parameters
+          url: /edi/CORE/Setup/EDI-parameters
         - page: EDI shared parameters
-          url: /edi/userguides/CORE/Setup/EDI-shared-parameters
+          url: /edi/CORE/Setup/EDI-shared-parameters
         - page: Trading partners
-          url: /edi/userguides/CORE/Setup/Trading-partners
+          url: /edi/CORE/Setup/Trading-partners
         - page: Batch control group
-          url: /edi/userguides/CORE/Setup/EDI-Batches
+          url: /edi/CORE/Setup/EDI-Batches
         - page: Document type mapping
-          url: /edi/userguides/CORE/Setup/Document-type-mapping
+          url: /edi/CORE/Setup/Document-type-mapping
         - page: UOM mapping
-          url: /edi/userguides/CORE/Setup/UOM-mapping
+          url: /edi/CORE/Setup/UOM-mapping
         - page: Cleanup profile
-          url: /edi/userguides/CORE/Setup/Cleanup-profile
+          url: /edi/CORE/Setup/Cleanup-profile
         - page: Reset status
-          url: /edi/userguides/CORE/Setup/Reset-status
+          url: /edi/CORE/Setup/Reset-status
         - page: Connection setup
-          url: /edi/userguides/CORE/Setup/Connection-setup
+          url: /edi/CORE/Setup/Connection-setup
         - title: Document types
           id: core/setup/documenttypes
           Level_3_items:
           - page: File templates
-            url: /edi/userguides/CORE/Setup/DocumentTypes/File-templates
+            url: /edi/CORE/Setup/DocumentTypes/File-templates
           - page: Validation profiles
-            url: /edi/userguides/CORE/Setup/DocumentTypes/Validation-profiles
+            url: /edi/CORE/Setup/DocumentTypes/Validation-profiles
           - page: Outbound file names
-            url: /edi/userguides/CORE/Setup/DocumentTypes/Outbound-filenames
+            url: /edi/CORE/Setup/DocumentTypes/Outbound-filenames
           - page: Staging metadata
-            url: /edi/userguides/CORE/Setup/DocumentTypes/Field-metadata
+            url: /edi/CORE/Setup/DocumentTypes/Field-metadata
         - title: Settings profile
           id: core/setup/settings-profile
           Level_3_items:
           - page: Functional
-            url: /edi/userguides/CORE/Setup/SETTING-PROFILES/Functional-acknowledgement
+            url: /edi/CORE/Setup/SETTING-PROFILES/Functional-acknowledgement
           - page: Acknowledgement
-            url: /edi/userguides/CORE/Setup/SETTING-PROFILES/Functional-acknowledgement
+            url: /edi/CORE/Setup/SETTING-PROFILES/Functional-acknowledgement
       - title: Processing
         id: core/documents
         Level_2_items:
         - page: Functional acknowledgement outbound
-          url: /edi/userguides/CORE/Documents/Functional-acknowledgement-outbound
+          url: /edi/CORE/Documents/Functional-acknowledgement-outbound
         - page: Functional acknowledgement inbound
-          url: /edi/userguides/CORE/Documents/Functional-acknowledgement-inbound
+          url: /edi/CORE/Documents/Functional-acknowledgement-inbound
       - title: Managing files
         id: core/managing-files
         Level_2_items:
         - page: Inbound files
-          url: /edi/userguides/CORE/Managing-files/Inbound-files
+          url: /edi/CORE/Managing-files/Inbound-files
         - page: Outbound files
-          url: /edi/userguides/CORE/Managing-files/Outbound-files
+          url: /edi/CORE/Managing-files/Outbound-files
         - page: Archiving files
-          url: /edi/userguides/CORE/Managing-files/Archiving-files
+          url: /edi/CORE/Managing-files/Archiving-files
       - title: Workspaces
         id: core/workspaces
         Level_2_items:
         - page: EDI document maintenance workspace
-          url: /edi/userguides/CORE/Workspaces/EDI-Document-maintenance-workspace
+          url: /edi/CORE/Workspaces/EDI-Document-maintenance-workspace
       - title: Inquiries
         id: core/inquiries
         Level_2_items:
         - page: Functional acknowledgement received
-          url: /edi/userguides/CORE/Inquiries/Functional-acknowledgement-received
+          url: /edi/CORE/Inquiries/Functional-acknowledgement-received
         - page: Trading partner documents
-          url: /edi/userguides/CORE/Inquiries/Trading-partner-documents
+          url: /edi/CORE/Inquiries/Trading-partner-documents
       - title: Other
         id: core/other
         Level_2_items:
         - page: Data entities
-          url: /edi/userguides/CORE/Other/Data-entities
+          url: /edi/CORE/Other/Data-entities
         - page: Security configuration
-          url: /edi/userguides/CORE/Other/Security-configuration
+          url: /edi/CORE/Other/Security-configuration
         - page: Error reporting
-          url: /edi/userguides/CORE/Other/Error-reporting
+          url: /edi/CORE/Other/Error-reporting
       - title: Technical Guide
         id: core/technical-guide
         Level_2_items:
         - page: Web API
-          url: /edi/userguides/CORE/Technical-guide/Web-API
+          url: /edi/CORE/Technical-guide/Web-API
         - page: Technical FAQ
-          url: /edi/userguides/CORE/Technical-guide/Technical-FAQ
+          url: /edi/CORE/Technical-guide/Technical-FAQ
   - title: Customer module
     id: customer
     Level_1_items:
     - page: Introduction
-      url: /edi/userguides/CUSTOMER/INTRODUCTION/Introduction
+      url: /edi/CUSTOMER/INTRODUCTION/Introduction
     - page: Process overview
-      url: /edi/userguides/CUSTOMER/INTRODUCTION/Process-overview
+      url: /edi/CUSTOMER/INTRODUCTION/Process-overview
     - page: FAQ
-      url: /edi/userguides/CUSTOMER/INTRODUCTION/FAQ
+      url: /edi/CUSTOMER/INTRODUCTION/FAQ
     - title: Setup
       id: customer/setup
       Level_2_items:
       - page: Trading partners
-        url: /edi/userguides/CUSTOMER/SETUP/Trading-partner
+        url: /edi/CUSTOMER/SETUP/Trading-partner
       - page: Warehouses
-        url: /edi/userguides/CUSTOMER/SETUP/Warehouses
+        url: /edi/CUSTOMER/SETUP/Warehouses
       - title: Customer setup
         id: customer/setup/customer-setup
         Level_3_items:
         - page: Customer EDI order type group
-          url: /edi/userguides/CUSTOMER/SETUP/CUSTOMER-SETUP/Purchase-order-types
+          url: /edi/CUSTOMER/SETUP/CUSTOMER-SETUP/Purchase-order-types
         - page: Order purpose group
-          url: /edi/userguides/CUSTOMER/SETUP/CUSTOMER-SETUP/Order-purpose-group
+          url: /edi/CUSTOMER/SETUP/CUSTOMER-SETUP/Order-purpose-group
         - page: POA response code group
-          url: /edi/userguides/CUSTOMER/SETUP/CUSTOMER-SETUP/POA-response-code-group
+          url: /edi/CUSTOMER/SETUP/CUSTOMER-SETUP/POA-response-code-group
         - page: Order line charge type groups
-          url: /edi/userguides/CUSTOMER/SETUP/CUSTOMER-SETUP/Order-line-change-type-group
+          url: /edi/CUSTOMER/SETUP/CUSTOMER-SETUP/Order-line-change-type-group
         - page: Hold codes
-          url: /edi/userguides/CUSTOMER/SETUP/CUSTOMER-SETUP/Hold-codes
+          url: /edi/CUSTOMER/SETUP/CUSTOMER-SETUP/Hold-codes
       - title: Setting profiles
         id: customer/setup/setting-profiles
         Level_3_items:
         - page: Customer purchse order
-          url: /edi/userguides/CUSTOMER/SETUP/SETTING-PROFILES/Customer-purchase-order
+          url: /edi/CUSTOMER/SETUP/SETTING-PROFILES/Customer-purchase-order
         - page: Customer purchse order change
-          url: /edi/userguides/CUSTOMER/SETUP/SETTING-PROFILES/Customer-purchase-order
+          url: /edi/CUSTOMER/SETUP/SETTING-PROFILES/Customer-purchase-order
         - page: Customer purchse order acknowledgement
-          url: /edi/userguides/CUSTOMER/SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement
+          url: /edi/CUSTOMER/SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement
         - page: Customer advanced shipping notice
-          url: /edi/userguides/CUSTOMER/SETUP/SETTING-PROFILES/Customer-advanced-shipping-notice
+          url: /edi/CUSTOMER/SETUP/SETTING-PROFILES/Customer-advanced-shipping-notice
         - page: Sales invoice
-          url: /edi/userguides/CUSTOMER/SETUP/SETTING-PROFILES/Sales-invoice
+          url: /edi/CUSTOMER/SETUP/SETTING-PROFILES/Sales-invoice
       - title: Validation profiles
         id: customer/setup/validation-profiles
         Level_3_items:
         - page: Customer purchse order
-          url: /edi/userguides/CUSTOMER/SETUP/VALIDATION-PROFILES/Customer-purchase-order
+          url: /edi/CUSTOMER/SETUP/VALIDATION-PROFILES/Customer-purchase-order
         - page: Customer purchse order change
-          url: /edi/userguides/CUSTOMER/SETUP/VALIDATION-PROFILES/Customer-purchase-order-change
+          url: /edi/CUSTOMER/SETUP/VALIDATION-PROFILES/Customer-purchase-order-change
     - title: Processing
       id: customer/documents
       Level_2_items:
       - page: Customer purchse order
-        url: /edi/userguides/CUSTOMER/DOCUMENTS/Customer-purchase-order
+        url: /edi/CUSTOMER/DOCUMENTS/Customer-purchase-order
       - page: Customer purchse order change
-        url: /edi/userguides/CUSTOMER/DOCUMENTS/Customer-purchase-order-change
+        url: /edi/CUSTOMER/DOCUMENTS/Customer-purchase-order-change
       - page: Customer purchse order acknowledgement
-        url: /edi/userguides/CUSTOMER/DOCUMENTS/Customer-purchase-order-acknowledgement
+        url: /edi/CUSTOMER/DOCUMENTS/Customer-purchase-order-acknowledgement
       - page: Customer advanced shipping notice
-        url: /edi/userguides/CUSTOMER/DOCUMENTS/Customer-advanced-shipping-notice
+        url: /edi/CUSTOMER/DOCUMENTS/Customer-advanced-shipping-notice
       - page: Sales invoice
-        url: /edi/userguides/CUSTOMER/DOCUMENTS/Sales-invoice
+        url: /edi/CUSTOMER/DOCUMENTS/Sales-invoice
       - page: Review sales order
-        url: /edi/userguides/CUSTOMER/DOCUMENTS/Review-sales-order
+        url: /edi/CUSTOMER/DOCUMENTS/Review-sales-order
     - title: Workspaces
       id: customer/workspaces
       Level_2_items:
       - page: Sales order processing workspace
-        url: /edi/userguides/CUSTOMER/WORKSPACES/EDI-Sales-order-processing
+        url: /edi/CUSTOMER/WORKSPACES/EDI-Sales-order-processing
     - title: Other
       id: customer/other
       Level_2_items:
       - page: Data entities
-        url: /edi/userguides/CUSTOMER/OTHER/Data-entities
+        url: /edi/CUSTOMER/OTHER/Data-entities
       - page: Security configuration
-        url: /edi/userguides/CUSTOMER/OTHER/Security-configuration
+        url: /edi/CUSTOMER/OTHER/Security-configuration
   - title: Vendor module
     id: vendor
     Level_1_items:
     - page: Introduction
-      url: /edi/userguides/VENDOR/INTRODUCTION/Introduction
+      url: /edi/VENDOR/INTRODUCTION/Introduction
     - page: Process overview
-      url: /edi/userguides/VENDOR/INTRODUCTION/Process-overview
+      url: /edi/VENDOR/INTRODUCTION/Process-overview
     - page: FAQ
-      url: /edi/userguides/VENDOR/INTRODUCTION/FAQ
+      url: /edi/VENDOR/INTRODUCTION/FAQ
     - title: Setup
       id: vendor/setup
       Level_2_items:
       - page: Trading partners
-        url: /edi/userguides/VENDOR/SETUP/Trading-partner
+        url: /edi/VENDOR/SETUP/Trading-partner
       - title: Vendor setup
         id: vendor/setup/vendor-setup
         Level_3_items:
         - page: Order type group
-          url: /edi/userguides/VENDOR/SETUP/VENDOR-SETUP/Order-type-group
+          url: /edi/VENDOR/SETUP/VENDOR-SETUP/Order-type-group
         - page: Order purpose group
-          url: /edi/userguides/VENDOR/SETUP/VENDOR-SETUP/Order-purpose-group
+          url: /edi/VENDOR/SETUP/VENDOR-SETUP/Order-purpose-group
         - page: Order line change type group
-          url: /edi/userguides/VENDOR/SETUP/VENDOR-SETUP/Order-line-change-type-group
+          url: /edi/VENDOR/SETUP/VENDOR-SETUP/Order-line-change-type-group
         - page: Carrier mode
-          url: /edi/userguides/VENDOR/SETUP/VENDOR-SETUP/Carrier-mode
+          url: /edi/VENDOR/SETUP/VENDOR-SETUP/Carrier-mode
         - page: Charges code
-          url: /edi/userguides/VENDOR/SETUP/VENDOR-SETUP/Charges-code
+          url: /edi/VENDOR/SETUP/VENDOR-SETUP/Charges-code
         - page: POA response code group
-          url: /edi/userguides/VENDOR/SETUP/VENDOR-SETUP/POA-response-code-group
+          url: /edi/VENDOR/SETUP/VENDOR-SETUP/POA-response-code-group
         - page: Payment terms type group
-          url: /edi/userguides/VENDOR/SETUP/VENDOR-SETUP/Payment-terms-type-group
+          url: /edi/VENDOR/SETUP/VENDOR-SETUP/Payment-terms-type-group
         - page: Misc charge/allowance indicator
-          url: /edi/userguides/VENDOR-SETUP/Misc-charge-allowance-indicator
+          url: /edi/VENDOR-SETUP/Misc-charge-allowance-indicator
         - page: Misc method of handling
-          url: /edi/userguides/VENDOR-SETUP/Misc-method-of-handling
+          url: /edi/VENDOR-SETUP/Misc-method-of-handling
       - title: Setting profiles
         id: vendor/setup/settings-profile
         Level_3_items:
         - page: Vendor purchase order
-          url: /edi/userguides/VENDOR/SETUP/SETTING-PROFILES/Vendor-purchase-order
+          url: /edi/VENDOR/SETUP/SETTING-PROFILES/Vendor-purchase-order
         - page: Vendor purchase order change
-          url: /edi/userguides/VENDOR/SETUP/SETTING-PROFILES/Vendor-purchase-order-change
+          url: /edi/VENDOR/SETUP/SETTING-PROFILES/Vendor-purchase-order-change
         - page: Vendor purchase order acknowledgement
-          url: /edi/userguides/VENDOR/SETUP/SETTING-PROFILES/Vendor-purchase-order-acknowledgement
+          url: /edi/VENDOR/SETUP/SETTING-PROFILES/Vendor-purchase-order-acknowledgement
         - page: Vendor advanced shipping notice
-          url: /edi/userguides/VENDOR/SETUP/SETTING-PROFILES/Vendor-advanced-shipping-notice
+          url: /edi/VENDOR/SETUP/SETTING-PROFILES/Vendor-advanced-shipping-notice
         - page: Purchase invoice
-          url: /edi/userguides/VENDOR/SETUP/SETTING-PROFILES/Purchase-invoice
+          url: /edi/VENDOR/SETUP/SETTING-PROFILES/Purchase-invoice
       - title: Validation profiles
         id: vendor/setup/validation-profiles
         Level_3_items:
         - page: Vendor purchase order acknowledgement
-          url: /edi/userguides/VENDOR/SETUP/VALIDATION-PROFILES/Vendor-purchase-order-acknowledgement
+          url: /edi/VENDOR/SETUP/VALIDATION-PROFILES/Vendor-purchase-order-acknowledgement
         - page: Vendor advanced shipping notice
-          url: /edi/userguides/VENDOR/SETUP/VALIDATION-PROFILES/Vendor-advanced-shipping-notice
+          url: /edi/VENDOR/SETUP/VALIDATION-PROFILES/Vendor-advanced-shipping-notice
         - page: Purchase invoice
-          url: /edi/userguides/VENDOR/SETUP/VALIDATION-PROFILES/Purchase-invoice
+          url: /edi/VENDOR/SETUP/VALIDATION-PROFILES/Purchase-invoice
     - title: Processing
       id: vendor/documents
       Level_2_items:
       - page: Vendor purchase order
-        url: /edi/userguides/VENDOR/DOCUMENTS/Vendor-purchase-order
+        url: /edi/VENDOR/DOCUMENTS/Vendor-purchase-order
       - page: Vendor purchase order change
-        url: /edi/userguides/VENDOR/DOCUMENTS/Vendor-purchase-order-change
+        url: /edi/VENDOR/DOCUMENTS/Vendor-purchase-order-change
       - page: Vendor purchase order acknowledgement
-        url: /edi/userguides/VENDOR/DOCUMENTS/Vendor-purchase-order-acknowledgement
+        url: /edi/VENDOR/DOCUMENTS/Vendor-purchase-order-acknowledgement
       - page: Vendor advanced shipping notice
-        url: /edi/userguides/VENDOR/DOCUMENTS/Vendor-advanced-shipping-notice
+        url: /edi/VENDOR/DOCUMENTS/Vendor-advanced-shipping-notice
       - page: Purchase invoice
-        url: /edi/userguides/VENDOR/DOCUMENTS/Purchase-invoice
+        url: /edi/VENDOR/DOCUMENTS/Purchase-invoice
       - page: Review purchase order
-        url: /edi/userguides/VENDOR/DOCUMENTS/Review-purchase-order
+        url: /edi/VENDOR/DOCUMENTS/Review-purchase-order
     - title: Workspaces
       id: vendor/workspaces
       Level_2_items:
       - page: Purchase order processing workspace
-        url: /edi/userguides/VENDOR/WORKSPACES/EDI-Purchase-order-processing
+        url: /edi/VENDOR/WORKSPACES/EDI-Purchase-order-processing
     - title: Other
       id: vendor/other
       Level_2_items:
       - page: Data entities
-        url: /edi/userguides/VENDOR/OTHER/Data-entities
+        url: /edi/VENDOR/OTHER/Data-entities
       - page: Security configuration
-        url: /edi/userguides/VENDOR/OTHER/Security-configuration
+        url: /edi/VENDOR/OTHER/Security-configuration
   - title: 3PL module
     id: 3pl
     Level_1_items:
     - page: Introduction
-      url: /edi/userguides/3PL/INTRODUCTION/Introduction
+      url: /edi/3PL/INTRODUCTION/Introduction
     - page: Process overview
-      url: /edi/userguides/3PL/INTRODUCTION/Process-overview
+      url: /edi/3PL/INTRODUCTION/Process-overview
     - page: FAQ
-      url: /edi/userguides/3PL/INTRODUCTION/FAQ
+      url: /edi/3PL/INTRODUCTION/FAQ
     - title: Setup
       id: 3pl/setup
       Level_2_items:
       - page: Trading partners
-        url: /edi/userguides/3PL/SETUP/Trading-partner
+        url: /edi/3PL/SETUP/Trading-partner
       - title: 3PL setup
         id: 3pl-setup
         Level_3_items:
         - page: Inventory journal name mapping
-          url: /edi/userguides/3PL-SETUP/Inventory-journal-name-mapping
+          url: /edi/3PL-SETUP/Inventory-journal-name-mapping
         - page: Disposition code mapping
-          url: /edi/userguides/3PL-SETUP/Disposition-code-mapping
+          url: /edi/3PL-SETUP/Disposition-code-mapping
         - page: Inventory status id mapping
-          url: /edi/userguides/3PL-SETUP/Inventory-status-Id-mapping
+          url: /edi/3PL-SETUP/Inventory-status-Id-mapping
         - page: Transaction direction mapping
-          url: /edi/userguides/3PL-SETUP/Transaction-direction-mapping
+          url: /edi/3PL-SETUP/Transaction-direction-mapping
         - page: Order purpose group
-          url: /edi/userguides/3PL-SETUP/Order-purpose-group
+          url: /edi/3PL-SETUP/Order-purpose-group
       - title: Setting profiles
         id: 3pl/setup/setting-profiles
         Level_3_items:
         - page: Picking list 
-          url: /edi/userguides/3PL/SETUP/SETTING-PROFILES/Picking-list
+          url: /edi/3PL/SETUP/SETTING-PROFILES/Picking-list
         - page: Picking list registration 
-          url: /edi/userguides/3PL/SETUP/SETTING-PROFILES/Picking-list-registration
+          url: /edi/3PL/SETUP/SETTING-PROFILES/Picking-list-registration
         - page: Shipment advice - Purchase order 
-          url: /edi/userguides/3PL/SETUP/SETTING-PROFILES/Shipment-advice-Purchase-order
+          url: /edi/3PL/SETUP/SETTING-PROFILES/Shipment-advice-Purchase-order
         - page: Shipment advice - Return order 
-          url: /edi/userguides/3PL/SETUP/SETTING-PROFILES/Shipment-advice-Return-order
+          url: /edi/3PL/SETUP/SETTING-PROFILES/Shipment-advice-Return-order
         - page: Shipment receipt - Purchase order 
-          url: /edi/userguides/3PL/SETUP/SETTING-PROFILES/Shipment-receipt-Purchase-order
+          url: /edi/3PL/SETUP/SETTING-PROFILES/Shipment-receipt-Purchase-order
         - page: Shipment receipt - Transfer order 
-          url: /edi/userguides/3PL/SETUP/SETTING-PROFILES/Shipment-receipt-Transfer-order
+          url: /edi/3PL/SETUP/SETTING-PROFILES/Shipment-receipt-Transfer-order
         - page: Shipment receipt - Return order 
-          url: /edi/userguides/3PL/SETUP/SETTING-PROFILES/Shipment-receipt-Return-order
+          url: /edi/3PL/SETUP/SETTING-PROFILES/Shipment-receipt-Return-order
         - page: Shipment receipt - Voyage 
-          url: /edi/userguides/3PL/SETUP/SETTING-PROFILES/Shipment-receipt-Voyage
+          url: /edi/3PL/SETUP/SETTING-PROFILES/Shipment-receipt-Voyage
         - page: Inventory adjustment advice - Transfer 
-          url: /edi/userguides/3PL/SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Transfer
+          url: /edi/3PL/SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Transfer
         - page: Inventory adjustment advice - Counting 
-          url: /edi/userguides/3PL/SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Counting
+          url: /edi/3PL/SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Counting
         - page: Inventory adjustment advice - Reconciliation 
-          url: /edi/userguides/3PL/SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Reconciliation
+          url: /edi/3PL/SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Reconciliation
         - page: Inventory adjustment advice - Movement 
-          url: /edi/userguides/3PL/SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Movement
+          url: /edi/3PL/SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Movement
         - page: Product master 
-          url: /edi/userguides/3PL/SETUP/SETTING-PROFILES/Product-master
+          url: /edi/3PL/SETUP/SETTING-PROFILES/Product-master
         - page: Inventory 
-          url: /edi/userguides/
+          url: /edi/
       - title: Validation profiles
         id: 3pl/setup/validation-profiles
         Level_3_items:
         - page: Picking list registration 
-          url: /edi/userguides/3PL/SETUP/VALIDATION-PROFILES/Picking-list-registration
+          url: /edi/3PL/SETUP/VALIDATION-PROFILES/Picking-list-registration
         - page: Shipment receipt - Purchase order 
-          url: /edi/userguides/3PL/SETUP/VALIDATION-PROFILES/Shipment-receipt-Purchase-order
+          url: /edi/3PL/SETUP/VALIDATION-PROFILES/Shipment-receipt-Purchase-order
         - page: Shipment receipt - Transfer order 
-          url: /edi/userguides/3PL/SETUP/VALIDATION-PROFILES/Shipment-receipt-Transfer-order
+          url: /edi/3PL/SETUP/VALIDATION-PROFILES/Shipment-receipt-Transfer-order
         - page: Shipment receipt - Return order 
-          url: /edi/userguides/3PL/SETUP/VALIDATION-PROFILES/Shipment-receipt-Return-order
+          url: /edi/3PL/SETUP/VALIDATION-PROFILES/Shipment-receipt-Return-order
     - title: Processing
       id: 3pl/setup/documents
       Level_2_items:
       - page: Picking list
-        url: /edi/userguides/3PL/DOCUMENTS/Picking-list
+        url: /edi/3PL/DOCUMENTS/Picking-list
       - page: Picking list registration
-        url: /edi/userguides/3PL/DOCUMENTS/Picking-list-registration
+        url: /edi/3PL/DOCUMENTS/Picking-list-registration
       - page: Shipment advice - Purchase order
-        url: /edi/userguides/3PL/DOCUMENTS/Shipment-advice-Purchase-order
+        url: /edi/3PL/DOCUMENTS/Shipment-advice-Purchase-order
       - page: Shipment advice - Transfer order
-        url: /edi/userguides/3PL/DOCUMENTS/Shipment-advice-Transfer-order
+        url: /edi/3PL/DOCUMENTS/Shipment-advice-Transfer-order
       - page: Shipment advice - Return order
-        url: /edi/userguides/3PL/DOCUMENTS/Shipment-advice-Return-order
+        url: /edi/3PL/DOCUMENTS/Shipment-advice-Return-order
       - page: Shipment advice - Voyage
-        url: /edi/userguides/3PL/DOCUMENTS/Shipment-advice-Voyage
+        url: /edi/3PL/DOCUMENTS/Shipment-advice-Voyage
       - page: Shipment receipt - Purchase order
-        url: /edi/userguides/3PL/DOCUMENTS/Shipment-receipt-Purchase-order
+        url: /edi/3PL/DOCUMENTS/Shipment-receipt-Purchase-order
       - page: Shipment receipt - Transfer order
-        url: /edi/userguides/3PL/DOCUMENTS/Shipment-receipt-Transfer-order
+        url: /edi/3PL/DOCUMENTS/Shipment-receipt-Transfer-order
       - page: Shipment receipt - Return order
-        url: /edi/userguides/3PL/DOCUMENTS/Shipment-receipt-Return-order
+        url: /edi/3PL/DOCUMENTS/Shipment-receipt-Return-order
       - page: Shipment receipt - Voyage
-        url: /edi/userguides/3PL/DOCUMENTS/Shipment-receipt-Voyage
+        url: /edi/3PL/DOCUMENTS/Shipment-receipt-Voyage
       - page: Inventory adjustment - Transfer
-        url: /edi/userguides/3PL/DOCUMENTS/Inventory-adjustment-Transfer
+        url: /edi/3PL/DOCUMENTS/Inventory-adjustment-Transfer
       - page: Inventory adjustment - Counting
-        url: /edi/userguides/3PL/DOCUMENTS/Inventory-adjustment-Counting
+        url: /edi/3PL/DOCUMENTS/Inventory-adjustment-Counting
       - page: Inventory adjustment - Reconciliation
-        url: /edi/userguides/3PL/DOCUMENTS/Inventory-adjustment-Reconciliation
+        url: /edi/3PL/DOCUMENTS/Inventory-adjustment-Reconciliation
       - page: Inventory adjustment - Movement
-        url: /edi/userguides/3PL/DOCUMENTS/Inventory-adjustment-Movement
+        url: /edi/3PL/DOCUMENTS/Inventory-adjustment-Movement
       - page: Product master
-        url: /edi/userguides/3PL/DOCUMENTS/Product-master
+        url: /edi/3PL/DOCUMENTS/Product-master
     - title: Workspaces
       id: 3pl/setup/workspaces
       Level_2_items:
       - page: Inventory adjustment
-        url: /edi/userguides/3PL/WORKSPACES/EDI-Inventory-adjustment
+        url: /edi/3PL/WORKSPACES/EDI-Inventory-adjustment
     - title: Other
       id: 3pl/setup/other
       Level_2_items:
       - page: Data entities
-        url: /edi/userguides/3PL/OTHER/Data-entities
+        url: /edi/3PL/OTHER/Data-entities
       - page: Security configuration
-        url: /edi/userguides/3PL/OTHER/Security-configuration
+        url: /edi/3PL/OTHER/Security-configuration
   - title: Freight forwarder for Landed cost module
     id: freight-forwarder
     Level_1_items:
     - page: FAQ
-      url: /edi/userguides/FREIGHT-FORWARDER/INTRODUCTION/FAQ
+      url: /edi/FREIGHT-FORWARDER/INTRODUCTION/FAQ
     - title: Setup
       id: freight-forwarder/setup
       Level_2_items:
       - page: Trading partners
-        url: /edi/userguides/FREIGHT-FORWARDER/SETUP/Trading-partner
+        url: /edi/FREIGHT-FORWARDER/SETUP/Trading-partner
       - title: Freight forwarder for Landed cost setup
         id: freight-forwarder/setup/ff-setup
         Level_3_items:
         - page: Shipping port mapping
-          url: /edi/userguides/FREIGHT-FORWARDER/SETUP/FF-SETUP/Shipping-port-mapping
+          url: /edi/FREIGHT-FORWARDER/SETUP/FF-SETUP/Shipping-port-mapping
         - page: Modes of delivery mapping
-          url: /edi/userguides/FREIGHT-FORWARDER/SETUP/FF-SETUP/Modes-of-delivery-mapping
+          url: /edi/FREIGHT-FORWARDER/SETUP/FF-SETUP/Modes-of-delivery-mapping
         - page: Customs broker mapping
-          url: /edi/userguides/FREIGHT-FORWARDER/SETUP/FF-SETUP/Customs-broker-mapping
+          url: /edi/FREIGHT-FORWARDER/SETUP/FF-SETUP/Customs-broker-mapping
         - page: Shipping container type mapping
-          url: /edi/userguides/FREIGHT-FORWARDER/SETUP/FF-SETUP/Shipping-container-types-mapping
+          url: /edi/FREIGHT-FORWARDER/SETUP/FF-SETUP/Shipping-container-types-mapping
         - page: Activity mapping
-          url: /edi/userguides/FREIGHT-FORWARDER/SETUP/FF-SETUP/Activity-mapping
+          url: /edi/FREIGHT-FORWARDER/SETUP/FF-SETUP/Activity-mapping
         - page: Shipping port qualifier mapping
-          url: /edi/userguides/FREIGHT-FORWARDER/SETUP/FF-SETUP/Shipping-port-qualifier-mapping
+          url: /edi/FREIGHT-FORWARDER/SETUP/FF-SETUP/Shipping-port-qualifier-mapping
         - page: Shipping measurement unit mapping
-          url: /edi/userguides/FREIGHT-FORWARDER/SETUP/FF-SETUP/Shipping-measurement-unit-mapping
+          url: /edi/FREIGHT-FORWARDER/SETUP/FF-SETUP/Shipping-measurement-unit-mapping
       - title: Setting profiles
         id: freight-forwarder/setup/settings-profile
         Level_3_items:
         - page: Voyage creator
-          url: /edi/userguides/FREIGHT-FORWARDER/SETUP/SETTING-PROFILES/Voyage-creator
+          url: /edi/FREIGHT-FORWARDER/SETUP/SETTING-PROFILES/Voyage-creator
         - page: Voyage tracking
-          url: /edi/userguides/FREIGHT-FORWARDER/SETUP/SETTING-PROFILES/Voyage-tracking
+          url: /edi/FREIGHT-FORWARDER/SETUP/SETTING-PROFILES/Voyage-tracking
     - title: Processing
       id: freight-forwarder/documents
       Level_2_items:
       - page: Voyage advice
-        url: /edi/userguides/FREIGHT-FORWARDER/DOCUMENTS/Voyage-advice
+        url: /edi/FREIGHT-FORWARDER/DOCUMENTS/Voyage-advice
       - page: Voyage creator
-        url: /edi/userguides/FREIGHT-FORWARDER/DOCUMENTS/Voyage-creator
+        url: /edi/FREIGHT-FORWARDER/DOCUMENTS/Voyage-creator
       - page: Voyage tracking
-        url: /edi/userguides/FREIGHT-FORWARDER/DOCUMENTS/Voyage-tracking
+        url: /edi/FREIGHT-FORWARDER/DOCUMENTS/Voyage-tracking
     - title: Workspaces
       id: freight-forwarder/workspaces
       Level_2_items:
       - page: Landed cost processing workspace
-        url: /edi/userguides/FREIGHT-FORWARDER/WORKSPACES/EDI-Landed-cost-processing
+        url: /edi/FREIGHT-FORWARDER/WORKSPACES/EDI-Landed-cost-processing
     - title: Other
       id: freight-forwarder/other
       Level_2_items:
       - page: Data entities
-        url: /edi/userguides/FREIGHT-FORWARDER/OTHER/Data-entities
+        url: /edi/FREIGHT-FORWARDER/OTHER/Data-entities
       - page: Security configuration
-        url: /edi/userguides/FREIGHT-FORWARDER/OTHER/Security-configuration
+        url: /edi/FREIGHT-FORWARDER/OTHER/Security-configuration
   - title: Integration systems module
     id: integration
     Level_1_items:
@@ -433,17 +433,17 @@ toc:
       id: integration/setup
       Level_2_items:
       - page: Integration systems
-        url: /edi/userguides/INTEGRATION/SETUP/Integration-systems
+        url: /edi/INTEGRATION/SETUP/Integration-systems
       - page: Trading partners
-        url: /edi/userguides/INTEGRATION/SETUP/Trading-partner
+        url: /edi/INTEGRATION/SETUP/Trading-partner
     - title: Processing
       id: integration/documents
       Level_2_items:
       - page: Customer
-        url: /edi/userguides/INTEGRATION/DOCUMENTS/Customer
+        url: /edi/INTEGRATION/DOCUMENTS/Customer
       - page: Customer group
-        url: /edi/userguides/INTEGRATION/DOCUMENTS/Customer-group
+        url: /edi/INTEGRATION/DOCUMENTS/Customer-group
   - page: Roadmap and release schedule
-    url: /edi/userguides/Roadmap
+    url: /edi/Roadmap
   - page: Definitions and Acronyms
-    url: /edi/userguides/Acronyms
+    url: /edi/Acronyms

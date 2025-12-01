@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Customer
-description: EDI Customer Documents - Customer advanced shipping notice
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-05-09
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIConsignmentNoteTable, Action:SAB_EDIStagingFormRun_ASN, SAB_EDIASNLineConfigurationTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: IconEDICustomerDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Customer advanced shipping notice (ASN)
@@ -40,15 +17,15 @@ The created ASN record(s) can be viewed for a sales order, by selecting the **Hi
 ## Prerequisites
 The following setup is prerequisites for the customer advanced shipping notice
 
-1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-2. Create [Setting profile](../SETUP/SETTING-PROFILES/Customer-advanced-shipping-notice.md) for the document.
-3. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
-4. If the customer [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
-5. Add and enable the customer advanced shipping notice to the [Customer trading partner](../SETUP/Trading-partner.md) and select the applicable:
+1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+2. Create [Setting profile](../SETUP/SETTING-PROFILES/Customer-advanced-shipping-notice) for the document.
+3. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames) for the document.
+4. If the customer [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
+5. Add and enable the customer advanced shipping notice to the [Customer trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - File name setup
-6. Assign [ASN line configuration](../SETUP/Warehouses.md) to all the 'ship from' warehouses.
+6. Assign [ASN line configuration](../SETUP/Warehouses) to all the 'ship from' warehouses.
 7. Setup [Auto generate consignment note number](#auto-generate-a-consignment-note-number) where applicable.
 8. Setup Periodic task [Send customer advanced shipping notice](#periodic-task) if applicable for consolidated packing slips.
 
@@ -67,7 +44,7 @@ When posting a packing slip for a sales order, it is possible to add consignment
     - **Single packing slip**, the Send to EDI flag will be set to _Yes_.  Once the packing slip is posted, a Customer advanced shipping notice record will be created in the staging table.
     - **Consolidated packing slip**, the Send to EDI flag will be set to _No_. Users still need to assign the Consignment note, but the ASN must be sent to EDI from the [Consignment notes](#consignment-notes) page before a Customer advanced shipping notice staging record will be created.
 
-> Note: **ASN strategy** is setup on the [Customer advanced shipping notice setting profile](../SETUP/SETTING-PROFILES/Customer-advanced-shipping-notice.md)
+> Note: **ASN strategy** is setup on the [Customer advanced shipping notice setting profile](../SETUP/SETTING-PROFILES/Customer-advanced-shipping-notice)
 and assigned to the Trading partner when setting up the document on their outgoing documents. 
 
 > Note: If the packing slip was posted without assigning a consignment note, it is possible to [add the packing slip](#add-packing-slips-to-a-consignment-note) to a consignment note afterwards.
@@ -118,7 +95,7 @@ To enable the consignment note to be auto generated, the following criteria must
 - **Number sequence and Document setting**
 This option applies to sales orders where no shipping carrier is assigned, or the shipping carrier doesn't auto generate consignment notes.
 
-    - Number sequence: Assign EDI parameters Number sequence for [Consignment note number](../../CORE/Setup/EDI-parameters.md#number-sequence) 
+    - Number sequence: Assign EDI parameters Number sequence for [Consignment note number](../../CORE/Setup/EDI-parameters#number-sequence) 
 
     - Document setting: Set Customer advanced shipping notice **Auto assign consignment note number** to _Yes_. Where the document setting's ASN strategy is set to _Consolidated packing slips_ and **Auto assign consignment note number** is set to _Yes_, the packing slip will automatically be assigned to latest open (not sent to EDI) consignment that matches the packing slip (for example shipping carrier, customer, address). If an open consignment note is not found, a new consignment note will be created and the packing slip assigned. _Single packing slips_ will always create a new Consignment note.
 
@@ -145,13 +122,13 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company**             | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. • **Canceled** – The record has been manually canceled and will be excluded from processing.
 **Trading partner account**     | Customer account assigned to the staging record.
 **Trading partner GLN**         | The Customer’s global location number is shown here.
-**ASN Number**                  | ASN number record id. The number sequence is determined by [ASN number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**ASN Number**                  | ASN number record id. The number sequence is determined by [ASN number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Consignment note number**     | Consignment note identification for the delivery
 **Delivery note**               | Packing slip number
 **Created Date and Time**       | The date and time the selected record was created in the staging table.
@@ -165,7 +142,7 @@ The following buttons are available on the **Customer advanced shipping notice**
 **Create selected files**       | Creates the outbound file for selected records where **Staging to target status** is set to _Not started_.
 **Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_.
 **Outbound files**              | View the outbound file record created by the selected staging record.
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner) page.
 **Consignment notes**           | View the consignment note relating to the packing slip record.
 **Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
 **Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
@@ -263,7 +240,7 @@ The following EDI Line staging fields are available on the lines page.
 **Customer requisition**   | Customers purchase order number to be populated in the Customer requisition field of the sales order header | Header > General > Customer requisition
 **Customer reference**     | Customers purchase order reference to be populated in the Customer reference field of the sales order header |	Header > General > Customer reference
 **Shipment type**          | Status of the shipment (Full/Partial)	
-**SSCC**                   | SSCC #. Dependent on the [ASN line configuration](../SETUP/Warehouses.md#asn-line-configurations) set assigned to the sales order’s warehouse | **Picking List** – Pick List Registration SSCC on the pick lines <br> **WHSContainerization** – Container# <br> **WHSDeliveredLP** – License Plate# 
+**SSCC**                   | SSCC #. Dependent on the [ASN line configuration](../SETUP/Warehouses#asn-line-configurations) set assigned to the sales order’s warehouse | **Picking List** – Pick List Registration SSCC on the pick lines <br> **WHSContainerization** – Container# <br> **WHSDeliveredLP** – License Plate# 
 **Packing slip**            | Packing slip ID                                           | Packing slip > Packing slip ID
 **Email**                   | Email from the sales order                                     | Sales order > Email
 **Telephone**               | Telephone from the sales order                                 | Sales order > Telephone

@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Vendor
-description: EDI Vendor Documents - Review purchase order
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-04-09
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  PurchTableListPage
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIVendorDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Review purchase order
@@ -43,7 +20,7 @@ The following buttons have been added to the EDI tab on the Purchase order Actio
 **Field**		| **Description**
 :--	          |:--
 <ins>**Purchase order confirmation**</ins>	|
-**Confirmation**	| Option to manually review the purchase order acknowledgement received from the vendor and process the purchase order confirmation to the vendor. The **Send to EDI** option is also included within this [page](Vendor-purchase-order-acknowledgement.md#processing-purchase-order-confirmation-poc).
+**Confirmation**	| Option to manually review the purchase order acknowledgement received from the vendor and process the purchase order confirmation to the vendor. The **Send to EDI** option is also included within this [page](Vendor-purchase-order-acknowledgement#processing-purchase-order-confirmation-poc).
 **Send to EDI**		| Press this button to manually create the Vendor purchase order confirmation staging record using the confirmed values as per **Confirmation** . This could also be setup to be sent automatically, by setting the Vendor purchase order acknowledgement's **Purchase order confirmation required** to _Yes (PO is auto-confirmed)_.
 **Reset flag**		| Select the **Reset flag** button to reset the EDI status to allow for re-sending of the purchase order confirmation to the staging table.
 <ins>**Reference**</ins>	 |

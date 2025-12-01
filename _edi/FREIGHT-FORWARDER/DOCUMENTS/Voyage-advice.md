@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Freight forwarder
-description: EDI Freight forwarder Documents - Voyage advice
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-08-29
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: Action:SAB_EDIStagingFormRun_FFLCVoyageAdvice
-audience: Application User
-# ms.devlang:
-ms.reviewer: Monica du Toit
-# ms.tgt_pltfrm:
-ms.custom: 
-ms.search.region: IconEDIFreightForwarderDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Voyage advice
@@ -39,14 +16,14 @@ The following setup is prerequisites for the **Voyage advice**
 
 ### Document type setup
 EDI > Setup > Document types: Voyage creator
-1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-2. Create [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
+1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+2. Create [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames) for the document.
 
 
 ### Trading partners
 EDI > Setup > Trading partners
-1. If the Freight forwarder landed cost [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
-1. Add and enable the **Voyage advice** document to the [Freight forwarder landed cost trading partner](../SETUP/Trading-partner.md) and select the applicable:
+1. If the Freight forwarder landed cost [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
+1. Add and enable the **Voyage advice** document to the [Freight forwarder landed cost trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - File name setup
 
@@ -78,7 +55,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created/added to Landed cost voyage(s). <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -95,7 +72,7 @@ The following buttons are available on the **Voyage creator**'s Action Pane, tab
 **Create selected files**       | Creates the outbound file for selected records where **Staging to target status** is set to _Not started_
 **Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_
 **Outbound files**              | View the outbound file record created by the selected staging record
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner) page
 **Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
 **Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details

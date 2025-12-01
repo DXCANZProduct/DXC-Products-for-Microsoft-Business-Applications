@@ -1,29 +1,9 @@
 ---
-# required metadata
-
-title: Finance Utilities
-description: Finance Utilities - Release notes - Archive
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-09-11
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: releasenotes-content
+header: Electronic Data Interchange (EDI)
+title: Archive
+release-version: Archive
+state: archive
 ---
 
 # Release notes - Archive

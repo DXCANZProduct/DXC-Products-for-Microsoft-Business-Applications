@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Customer
-description: EDI Customer Setup - Trading partners
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-09-17
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SAB_EDITradingPartner, CustTableListPage
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDICustomerDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Customer setup
@@ -37,7 +14,7 @@ It also provides the setup for trading partner level options as well as defining
 To open the **Trading partners** page, go to **EDI > Setup > Trading partners**. Then set the fields as described in the following subsections.
 
 ### All trading partners
-The [Core trading partner setup](../../CORE/Setup/Trading-partners.md) describes the setup applicable to **All** types of trading partners.
+The [Core trading partner setup](../../CORE/Setup/Trading-partners) describes the setup applicable to **All** types of trading partners.
 
 ### Customer trading partners details
 This section describes the setup applicable to **Customer** trading partners.
@@ -51,12 +28,12 @@ The following table describes the customer module fields that are available on t
 **Trading partner GLN**            | Trading partner's GLN.
 **Buyer code**                     | Company's default Buyer code for the Trading partner. This can be overridden on Customer purchase order staging record, to be used on all outbound documents.
 <ins>**Order**</ins>	             |
-**Customer EDI order types**       |	EDI purchase orders can be received from trading partners with many order types.  The type identifier received can change the way the order is processed within D365. <br> Applies to Customer purchase order and Customer purchase order change. <br> Note: For further information see [Setup purchase order types](CUSTOMER-SETUP/Purchase-order-types.md)
-**Order purpose**                  |	Code identifying the purpose of the document. <br> Applies to Customer purchase order and Customer purchase order change. <br> Note: For further information see [Setup order purpose](CUSTOMER-SETUP/Order-purpose-group.md)
-**Order line change type group**   |	Code specifying the type of change to the line item. <br> Applies to Customer purchase order change.  <br> Note: For further information see [Setup order line change type](CUSTOMER-SETUP/Order-line-change-type-group.md)
-**POA response code group**       |	POA Response codes are used to identify the status of information used in a purchase order acknowledgement for each customer. <br> Applies to Customer purchase order acknowledgement.  <br> Note: For further information see [Setup POA response codes](CUSTOMER-SETUP/POA-response-code-group.md)
+**Customer EDI order types**       |	EDI purchase orders can be received from trading partners with many order types.  The type identifier received can change the way the order is processed within D365. <br> Applies to Customer purchase order and Customer purchase order change. <br> Note: For further information see [Setup purchase order types](CUSTOMER-SETUP/Purchase-order-types)
+**Order purpose**                  |	Code identifying the purpose of the document. <br> Applies to Customer purchase order and Customer purchase order change. <br> Note: For further information see [Setup order purpose](CUSTOMER-SETUP/Order-purpose-group)
+**Order line change type group**   |	Code specifying the type of change to the line item. <br> Applies to Customer purchase order change.  <br> Note: For further information see [Setup order line change type](CUSTOMER-SETUP/Order-line-change-type-group)
+**POA response code group**       |	POA Response codes are used to identify the status of information used in a purchase order acknowledgement for each customer. <br> Applies to Customer purchase order acknowledgement.  <br> Note: For further information see [Setup POA response codes](CUSTOMER-SETUP/POA-response-code-group)
 **No Backorders**                 |	Identify if the trading partner accepts backorders - Y/N. <br> Where the **Customer purchase order acknowledgement's** document setting **Quantity type** is set to **Reserved quantity**, the sales line’s ordered quantity is adjusted to the quantity reserved for the sales line. <br> The setting is also used on the Customer purchase order acknowledgement to identify **full** or **partial** shipments.
-**UOM**                           |	Unit of measure mappings. Ability to map a customer’s unit of measure (example kgs) to D365 unit of measure (example kg). Used on in- and outbound documents **Sales unit** <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM-mapping.md)
+**UOM**                           |	Unit of measure mappings. Ability to map a customer’s unit of measure (example kgs) to D365 unit of measure (example kg). Used on in- and outbound documents **Sales unit** <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM-mapping)
 **Enable store code identification**  | When set to _Yes_, the Customer purchase order header field **Store code** (instead of Trading partner GLN) will be used to find the applicable Trading partner to create the sales order against.
 
 - Data entity: EDI Customers
@@ -77,7 +54,7 @@ If the Purchase order refers to a new store code which hasn’t been mapped to a
 The Outgoing documents FastTab defines the outgoing EDI document types that have been configured and enabled for the trading partner. It brings the document template and mappings together with the settings profile to enable the document for the trading partner.
 Also specifies if an Inbound Functional Acknowledgement is required for each outgoing document.
 
-The **Outgoing documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Outgoing documents](../../CORE/Setup/Trading-partners.md#outgoing-documents)
+The **Outgoing documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Outgoing documents](../../CORE/Setup/Trading-partners#outgoing-documents)
 
 - Data entity: EDI Documents - Customers
 
@@ -85,7 +62,7 @@ The **Outgoing documents** FastTab of the **Trading partners** page is discussed
 The Incoming documents FastTab defines the incoming EDI document types that have been configured and enabled for the trading partner. It brings the document template, mappings, validation profile and setting profiles together along with a file mask for importing to enable the document for the trading partner.
 Also specifies if the Trading partner requires an Outbound Functional Acknowledgement to be sent for each incoming document.
 
-The **Incoming documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Incoming documents](../../CORE/Setup/Trading-partners.md#incoming-documents)
+The **Incoming documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Incoming documents](../../CORE/Setup/Trading-partners#incoming-documents)
 
 - Data entity: EDI Documents - Customers
 

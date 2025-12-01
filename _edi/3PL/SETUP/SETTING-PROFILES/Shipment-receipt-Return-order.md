@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI 3PL
-description: EDI 3PL Setup - Document type Setting profiles - Shipment receipt - Return order
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-04-13
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIDocumentTypeTable, SAB_EDITradingPartner
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDI3PLDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # 3PL document type setting profiles - Shipment receipt - Return order
@@ -43,7 +20,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Cancel return quantity remainder**  | When the receipt qty < Return order line’s qty, the return order line’s qty is updated to match receipt. i.e. not split line created for 'remainder'	| If receipt qty < return qty: <br> • **No** – Return order line is split for the 'remainder' <br> • **Yes** – Return order line isn’t split for the 'remainder' and the existing line’s qty is updated to match receipt qty
 
 ## Where used
-The **Setting profile** can be assigned on the Incoming documents FastTab to document type [Shipment receipt - Return order](../../DOCUMENTS/Shipment-receipt-Return-order.md) for the 3PL Trading partner at **EDI > Setup > Trading partners**.
+The **Setting profile** can be assigned on the Incoming documents FastTab to document type [Shipment receipt - Return order](../../DOCUMENTS/Shipment-receipt-Return-order) for the 3PL Trading partner at **EDI > Setup > Trading partners**.
 
 ## Data entity
 - EDI Settings Shipment Receipt - Return order

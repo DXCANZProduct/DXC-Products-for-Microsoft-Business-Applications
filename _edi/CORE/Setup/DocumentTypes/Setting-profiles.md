@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Core
-description: EDI Core - Setup document types - Setting profiles
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-03-14
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIDocumentTypeTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: IconEDI
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Document types - Setting profiles
@@ -48,7 +25,7 @@ Copy existing setting profile:
 Each document's Setting profile will be discussed in more detail with each document's details.
 
 Document setting profiles available per module:
-- [3PL](../../../3PL/SETUP/Setting-profiles.md)
-- [Customer](../../../CUSTOMER/SETUP/Setting-profiles.md)
-- [Vendor](../../../VENDOR/SETUP/Setting-profiles.md)
-- [Freight forwarder for Landed cost](../../../FREIGHT-FORWARDER/SETUP/Setting-profiles.md)
+- [3PL](../../../3PL/SETUP/Setting-profiles)
+- [Customer](../../../CUSTOMER/SETUP/Setting-profiles)
+- [Vendor](../../../VENDOR/SETUP/Setting-profiles)
+- [Freight forwarder for Landed cost](../../../FREIGHT-FORWARDER/SETUP/Setting-profiles)

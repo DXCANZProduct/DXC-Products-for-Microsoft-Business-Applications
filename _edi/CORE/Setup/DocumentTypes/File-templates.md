@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Core
-description: EDI Core - Setup document types - File templates
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-05-09
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIDocumentTypeTable, SAB_EDITemplateFieldFunction, SAB_EDITemplateCodeTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: IconEDI
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Document types - File templates
@@ -268,7 +245,7 @@ Paste XLST code on XLST tab. Can use **Run transformation** to check for compile
 When opening the form, it will also display any compile errors.
 **Validate XSD** is used to validate transformed XML, not the XSLT.
 Click **Save XSLT**.
-If scripting is allowed, ensure [EDI Shared parameter](../EDI-shared-parameters.md) **Enable XLST scripting** is enabled.
+If scripting is allowed, ensure [EDI Shared parameter](../EDI-shared-parameters) **Enable XLST scripting** is enabled.
 
 ### JSON files
 
@@ -595,4 +572,4 @@ An example of the document’s format can be viewed under the **Example** FastTa
 Where **Set data** is blank, the Example message staging fields will not be populated, but will display the mapped {Table.Field} value. <br>
 
 ### Data entities
-See [Data entities](../../Other/Data-entities.md) for importing document type templates
+See [Data entities](../../Other/Data-entities) for importing document type templates

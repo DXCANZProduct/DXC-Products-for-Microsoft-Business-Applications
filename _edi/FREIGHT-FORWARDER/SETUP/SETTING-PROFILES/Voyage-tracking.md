@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Freight forwarder
-description: EDI Freight forwarder Setup - Document type Setting profiles - Voyage tracking
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-11-25
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDITradingPartner, SAB_EDIDocumentTypeTable
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIFreightForwarderDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Freight forwarder document type setting profiles - Voyage tracking
@@ -52,7 +29,7 @@ The **Setting profile** can be assigned on the Incoming documents FastTab to doc
 ### Date qualifiers and Activity example
 When a Voyage tracking document is imported, the following fields determine with date field is updated on the Voyage's tracking leg:
 - **Date qualifier** - Actual or Estimated
-- [Activity mappings](../FF-SETUP/Activity-mapping.md)'s **Date selection** - Start date or End date
+- [Activity mappings](../FF-SETUP/Activity-mapping)'s **Date selection** - Start date or End date
 
 Date qualifier      | Activity mapping's Date selection   | Tracking leg field updated 
 :-------            |:----------                          |:----    

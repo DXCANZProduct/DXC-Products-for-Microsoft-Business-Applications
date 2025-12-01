@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Customer
-description: EDI Customer workspaces - EDI Sales order processing
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-08-27
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SAB_EDISalesTableProcessingWorkspace
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDICustomerDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Workspaces
@@ -40,7 +17,7 @@ The following subsections will discuss the various tabs available on the workspa
 
 ### Warning/Error
 Sales order warnings and errors are identified based on the validation profiles setup for the Customer purchase order document at **EDI > Setup > Document types** and assigned to the incoming document when setting up the customer trading partner.
-> Note: For further information relating to validation refer to the [validation setup](../SETUP/Validation-profiles.md) and [validation processing](../DOCUMENTS/Customer-purchase-order.md#step-3---staging-to-target) sections.
+> Note: For further information relating to validation refer to the [validation setup](../SETUP/Validation-profiles) and [validation processing](../DOCUMENTS/Customer-purchase-order#step-3---staging-to-target) sections.
 
 > Note: If a sales order has both errors and warning validations, it will be displayed in the error list only.
 
@@ -64,7 +41,7 @@ Buttons	          | Description
 
 
 ### Pending PO changes
-Customer purchase order changes that are set to be processed manually (**Processing method** on [Document setting profile](../SETUP/SETTING-PROFILES/Customer-purchase-order-change.md) is set to _Manual_), will be available here for manual approval. Whether a POA is required can be set via the Customer purchase order change’s Document setting **Don’t send POA for changes**.
+Customer purchase order changes that are set to be processed manually (**Processing method** on [Document setting profile](../SETUP/SETTING-PROFILES/Customer-purchase-order-change) is set to _Manual_), will be available here for manual approval. Whether a POA is required can be set via the Customer purchase order change’s Document setting **Don’t send POA for changes**.
 
 Field	            | Description
 :--               |:--
@@ -73,7 +50,7 @@ Field	            | Description
 
 ### Pending POA
 EDI orders will be placed on hold when a purchase order acknowledgement (POA) is required for the customer. 
-> Note: Where a POA is required for a Customer, the Customer purchase order acknowledgment document must be setup on the Trading partner record and the **Lock order** field in the [POA document settings profile](../SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement.md) must be active. This hold will be released once the POA has been sent to the Customer. <br>
+> Note: Where a POA is required for a Customer, the Customer purchase order acknowledgment document must be setup on the Trading partner record and the **Lock order** field in the [POA document settings profile](../SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement) must be active. This hold will be released once the POA has been sent to the Customer. <br>
 
 Displays Sales orders with **POA status** set to _Pending_ or _In progress_.
 
@@ -87,10 +64,10 @@ Field	                | Description
 
 ### Pending POA confirm
 EDI orders will be placed on hold when a Purchase order confirmation must be received from the customer following receipt of a POA. 
-Note: Purchase order confirmation requirements are setup via **PO confirmation required** field on the Customer [POA document settings profiles](../SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement.md).
+Note: Purchase order confirmation requirements are setup via **PO confirmation required** field on the Customer [POA document settings profiles](../SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement).
 
 ### Open consignment notes
-Open consignments will be available where the [Customer advanced shipping notice document setting profile](../SETUP/SETTING-PROFILES/Customer-advanced-shipping-notice.md)'s **ASN strategy** is set to _consolidated_ packing slips. Where this is the case, a consolidated consignment should be sent at the end of each day to coincide with the dispatch of the goods.
+Open consignments will be available where the [Customer advanced shipping notice document setting profile](../SETUP/SETTING-PROFILES/Customer-advanced-shipping-notice)'s **ASN strategy** is set to _consolidated_ packing slips. Where this is the case, a consolidated consignment should be sent at the end of each day to coincide with the dispatch of the goods.
 
 Filters           | Description
 :--               |:--

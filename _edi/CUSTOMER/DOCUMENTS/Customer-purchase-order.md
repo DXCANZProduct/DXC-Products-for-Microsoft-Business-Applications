@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Customer
-description: EDI Customer Documents - Customer purchase order
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-05-09
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SalesTableListPage, SalesAgreementListPage, SAB_EDIStagingFormRun_PO, SAB_EDICustOrderTypeMapping, SAB_EDICustOrderPurposeMapping
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDICustomerDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Customer purchase order
@@ -32,22 +9,22 @@ ms.dyn365.ops.version:  AX 7.0.1
 ## Prerequisites
 The following setup is prerequisites for the customer purchase order
 
-1. If required to put sales orders on hold till the purchase order confirmation has been received, assign the applicable hold code to [POC pending hold code](../SETUP/CUSTOMER-SETUP/Hold-codes.md) in EDI parameters.
-2. Create [Purchase order types](../SETUP/CUSTOMER-SETUP/Purchase-order-types.md) to map the customer's values to EDI purchase order types.
-3. Create [Order purpose groups](../SETUP/CUSTOMER-SETUP/Order-purpose-group.md) to map the customer's values to EDI order purpose groups.
-4. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-5. Create [Setting profile](../SETUP/SETTING-PROFILES/Customer-purchase-order.md) for the document.
-6. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Customer-purchase-order.md) for the document.
-7. If the customer [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+1. If required to put sales orders on hold till the purchase order confirmation has been received, assign the applicable hold code to [POC pending hold code](../SETUP/CUSTOMER-SETUP/Hold-codes) in EDI parameters.
+2. Create [Purchase order types](../SETUP/CUSTOMER-SETUP/Purchase-order-types) to map the customer's values to EDI purchase order types.
+3. Create [Order purpose groups](../SETUP/CUSTOMER-SETUP/Order-purpose-group) to map the customer's values to EDI order purpose groups.
+4. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+5. Create [Setting profile](../SETUP/SETTING-PROFILES/Customer-purchase-order) for the document.
+6. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Customer-purchase-order) for the document.
+7. If the customer [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
 8. Assign the Purchase order type and Order purpose group to the customer trading partner.
-9. Add and enable the customer purchase order document to the [Customer trading partner](../SETUP/Trading-partner.md) and select the applicable:
+9. Add and enable the customer purchase order document to the [Customer trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - Validation profile
     - Search mask
 
 ## Target D365 transactions
-The following [**Customer EDI order types**](../SETUP/CUSTOMER-SETUP/Purchase-order-types.md) and [**Order purposes**](../SETUP/CUSTOMER-SETUP/Order-purpose-group.md) are supported by each Customer inbound document:
+The following [**Customer EDI order types**](../SETUP/CUSTOMER-SETUP/Purchase-order-types) and [**Order purposes**](../SETUP/CUSTOMER-SETUP/Order-purpose-group) are supported by each Customer inbound document:
 
 **Document type**		                  | **Order type**	| **Order purpose**
 :----                                 |:----            |:----
@@ -76,7 +53,7 @@ Header checks are performed when:
 ![alt text](../IMAGE/HeaderChecks_CustomerPO.png "Header checks for Customer purchase order")
 
 ## Step 1 - Import
-When a purchase order file is imported, the file name is key to identifying the customer and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
+When a purchase order file is imported, the file name is key to identifying the customer and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
 
 > Note: The file mask is used to identify the trading partner and therefore template
 
@@ -161,7 +138,7 @@ Create release order without blanket order	| The action taken when a release ord
 
 At this step the issues are usually around mapping/business logic issues. <br>
 Review the **Log** or **Version log** for the applicable record to find the issue. <br>
-Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#customer-purchase-order).
+Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ#customer-purchase-order).
 
 ## View staging table records
 To view the Customer purchase order's staging records, go to **EDI > Documents > Customer documents > Customer purchase order**. 
@@ -172,7 +149,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created a D365 Sales order, Sales agreement or Release order. • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -195,7 +172,7 @@ The following buttons are available on the **Customer purchase order** Action Pa
 **Process selected purchase orders** | Create D365 Sales order, Sales agreement or Release order for the selected record in the staging table.
 **Process all purchase order**	| Create all D365 Sales order, Sales agreement or Release order for the staging records that have a **Staging to target status** set to _Not started_. 
 **Inbound files**               | View the inbound file record the selected staging record.
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner) page.
 **Sales Order**	                | If the staging record has been completed it is possible to inquire on the **Sales order** or **Release order** it created from this button.
 **Sales agreement**             | If the EDI blanket order staging record has been completed it is possible to inquire on the **Sales agreement** it created from this button.
 **Customers**                   | Inquire on the Customer for the selected record.

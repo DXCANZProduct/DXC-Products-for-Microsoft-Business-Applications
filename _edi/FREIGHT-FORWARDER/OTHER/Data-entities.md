@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Freight forwarder
-description: EDI Freight forwarder - Data entities
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-11-30
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SAB_EDIFFLCShipPortTableMapping, SAB_EDIFFLCVendDlvModeMapping, SAB_EDIFFLCCustomsBrokerMapping, SAB_EDIFFLCShipContainerTypeMapping, SAB_EDIFFLCShipActivityTableMapping, SAB_EDIFFLCShipPortQualifierMapping, SAB_EDIFFLCShipMeasurementUnitMapping, SAB_EDITradingPartner, SAB_EDIDocumentTypeTable, VendTableListPage
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIFreightForwarderDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Data entities
@@ -63,7 +40,7 @@ EDI > Setup > Document types (Setting profiles for EDI Freight forwarder landed 
 ## Document types
 EDI > Setup > Document types (Template, Validation, Outbound file names and EDI Field metadata)
 
-See [Core data entities](../../CORE/OTHER/Data-entities.md#document-types)
+See [Core data entities](../../CORE/OTHER/Data-entities#document-types)
 
 ## Vendors
 Accounts payable > Vendors > All vendors
@@ -79,4 +56,4 @@ EDI > Setup > Trading partner
 **Order**         | **Entity**						| **Description**                             | **Dependency**
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
 1                 | EDI Freight forwarders                          | Create new Freight forwarder landed cost trading partner   | • [Freight forwarder landed cost setup](#freight-forwarder-landed-cost-setup)
-2                 | EDI Documents - Freight forwarder               | Add incoming and outgoing documents to Freight forwarder landed cost trading partner | • EDI Freight forwarders <br> • [Setting profiles](#document-setting-profiles) <br> •  [Document types](../../CORE/OTHER/Data-entities.md#document-types)
+2                 | EDI Documents - Freight forwarder               | Add incoming and outgoing documents to Freight forwarder landed cost trading partner | • EDI Freight forwarders <br> • [Setting profiles](#document-setting-profiles) <br> •  [Document types](../../CORE/OTHER/Data-entities#document-types)

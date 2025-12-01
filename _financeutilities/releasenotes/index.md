@@ -3,7 +3,7 @@ layout: releasenotes-content
 header: Finance Utilities
 title: 10.0.43.20250521 (Current)
 release-version: 10.0.43.20250521
-markAsPrevious: false
+state: current
 ---
 
 # Version compatibility

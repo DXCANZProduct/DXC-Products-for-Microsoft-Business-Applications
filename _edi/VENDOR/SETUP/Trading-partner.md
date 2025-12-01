@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Vendor
-description: EDI Vendor Setup - Trading partners
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-03-14
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDITradingPartner, VendTableListPage
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIVendorDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Vendor setup
@@ -37,7 +14,7 @@ It also provides the setup for trading partner level options as well as defining
 To open the **Trading partners** page, go to **EDI > Setup > Trading partners**. Then set the fields as described in the following subsections.
 
 ### All trading partners
-The [Core trading partner setup](../../CORE/Setup/Trading-partners.md) describes the setup applicable to **All** types of trading partners.
+The [Core trading partner setup](../../CORE/Setup/Trading-partners) describes the setup applicable to **All** types of trading partners.
 
 ### Vendor trading partners details
 This section describes the setup applicable to **Vendor** trading partners.
@@ -49,18 +26,18 @@ The following table describes the vendor module fields that are available on the
 **Field**                          | **Description**       | **Applies to**          
 :---------                         |:--------              |:--------
 <ins>**Order**</ins>	|
-**Order type**                     | EDI purchase orders can be sent to trading partners with many order types.  The type identifier is determined by the method the order is processed within D365. <br> Note: For further information see [Setup order type groups](VENDOR-SETUP/Order-type-group.md) | • Vendor purchase order <br> • Vendor purchase order change
-**Order purpose**                  | Code identifying the purpose of the document. <br> Note: For further information see [Setup order purpose](VENDOR-SETUP/Order-purpose-group.md) | • Vendor purchase order <br> • Vendor purchase order change
-**Order line change type**        |	Code specifying the type of change to the line item. <br> Note: For further information see [Setup order line change type](VENDOR-SETUP/Order-line-change-type-group.md) | • Vendor purchase order change
-**Carrier mode**                  |	Code specifying the method or type of transportation for the shipment. <br> Note: For further information see [Setup carrier mode](VENDOR-SETUP/Carrier-mode.md) | • Vendor purchase order <br> • Vendor purchase order change
-**Charges code**                  |	Code identifying the service, promotion, allowance, or charge. <br> Note: For further information see [Setup charges code](VENDOR-SETUP/Charges-code.md) | • Vendor purchase order <br> • Vendor purchase order change <br>  • Purchase invoice
-**Payment terms type**            |	Code identifying the type of payment terms. <br> Note: For further information see [Setup payment terms type group](VENDOR-SETUP/Payment-terms-type-group.md) | • Vendor purchase order <br> • Vendor purchase order change <br>  • Purchase invoice
-**Misc charge/allowance indicator** |	Code which indicates an allowance or charge for the service specified. <br> Note: For further information see [Setup misc. charge/allowance indicator](VENDOR-SETUP/Misc-charge-allowance-indicator.md) | • Vendor purchase order <br> • Vendor purchase order change <br>  • Purchase invoice
-**Misc method of handling**       |	Code specifying if the misc. charge or allowance is required to be added to the D365 purchase invoice <br> Note: For further information see [Setup misc. method of handling](VENDOR-SETUP/Misc-method-of-handling.md) | • Purchase invoice
+**Order type**                     | EDI purchase orders can be sent to trading partners with many order types.  The type identifier is determined by the method the order is processed within D365. <br> Note: For further information see [Setup order type groups](VENDOR-SETUP/Order-type-group) | • Vendor purchase order <br> • Vendor purchase order change
+**Order purpose**                  | Code identifying the purpose of the document. <br> Note: For further information see [Setup order purpose](VENDOR-SETUP/Order-purpose-group) | • Vendor purchase order <br> • Vendor purchase order change
+**Order line change type**        |	Code specifying the type of change to the line item. <br> Note: For further information see [Setup order line change type](VENDOR-SETUP/Order-line-change-type-group) | • Vendor purchase order change
+**Carrier mode**                  |	Code specifying the method or type of transportation for the shipment. <br> Note: For further information see [Setup carrier mode](VENDOR-SETUP/Carrier-mode) | • Vendor purchase order <br> • Vendor purchase order change
+**Charges code**                  |	Code identifying the service, promotion, allowance, or charge. <br> Note: For further information see [Setup charges code](VENDOR-SETUP/Charges-code) | • Vendor purchase order <br> • Vendor purchase order change <br>  • Purchase invoice
+**Payment terms type**            |	Code identifying the type of payment terms. <br> Note: For further information see [Setup payment terms type group](VENDOR-SETUP/Payment-terms-type-group) | • Vendor purchase order <br> • Vendor purchase order change <br>  • Purchase invoice
+**Misc charge/allowance indicator** |	Code which indicates an allowance or charge for the service specified. <br> Note: For further information see [Setup misc. charge/allowance indicator](VENDOR-SETUP/Misc-charge-allowance-indicator) | • Vendor purchase order <br> • Vendor purchase order change <br>  • Purchase invoice
+**Misc method of handling**       |	Code specifying if the misc. charge or allowance is required to be added to the D365 purchase invoice <br> Note: For further information see [Setup misc. method of handling](VENDOR-SETUP/Misc-method-of-handling) | • Purchase invoice
 <ins>**Acknowledgement**</ins>	|
-**POA response code group**       |	POA Response codes are used to identify the status of information used in a purchase order acknowledgement for each vendor. <br> Note: For further information see [Setup POA response codes](VENDOR-SETUP/POA-response-code-group.md) | • Vendor purchase order acknowledgement
+**POA response code group**       |	POA Response codes are used to identify the status of information used in a purchase order acknowledgement for each vendor. <br> Note: For further information see [Setup POA response codes](VENDOR-SETUP/POA-response-code-group) | • Vendor purchase order acknowledgement
 <ins>**Other**</ins>	|
-**UOM**                           |	Unit of measure mappings. Ability to map a trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM-mapping.md) | All in- and outbound documents
+**UOM**                           |	Unit of measure mappings. Ability to map a trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM-mapping) | All in- and outbound documents
 
 - Data entity: EDI Vendors
 
@@ -71,7 +48,7 @@ The following table describes the vendor module fields that are available on the
 The Outgoing documents FastTab defines the outgoing EDI document types that have been configured and enabled for the trading partner. It brings the document template and mappings together with the settings profile to enable the document for the trading partner.
 Also specifies if an Inbound Functional Acknowledgement is required for each outgoing document.
 
-The **Outgoing documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Outgoing documents](../../CORE/Setup/Trading-partners.md#outgoing-documents)
+The **Outgoing documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Outgoing documents](../../CORE/Setup/Trading-partners#outgoing-documents)
 
 - Data entity: EDI Documents - Vendors
 
@@ -79,7 +56,7 @@ The **Outgoing documents** FastTab of the **Trading partners** page is discussed
 The Incoming documents FastTab defines the incoming EDI document types that have been configured and enabled for the trading partner. It brings the document template, mappings, validation profile and setting profiles together along with a file mask for importing to enable the document for the trading partner.
 Also specifies if the Trading partner requires an Outbound Functional Acknowledgement to be sent for each incoming document.
 
-The **Incoming documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Incoming documents](../../CORE/Setup/Trading-partners.md#incoming-documents)
+The **Incoming documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Incoming documents](../../CORE/Setup/Trading-partners#incoming-documents)
 
 - Data entity: EDI Documents - Vendors
 

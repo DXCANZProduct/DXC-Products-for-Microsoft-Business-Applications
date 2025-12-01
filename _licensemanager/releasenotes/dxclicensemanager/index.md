@@ -4,7 +4,7 @@ header: License Manager
 title: 10.0.43.202509291
 release-version: 10.0.43.202509291
 release-date: 2025-09-29
-markAsPrevious: false
+state: current
 toc: true
 ---
 

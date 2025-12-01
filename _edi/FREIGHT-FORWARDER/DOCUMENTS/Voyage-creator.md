@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Freight forwarder
-description: EDI Freight forwarder Documents - Voyage creator
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-08-29
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: Action:SAB_EDIStagingFormRun_FFLCVoyageCreator, SAB_EDIFFLCShipPortTableMapping, SAB_EDIFFLCVendDlvModeMapping, SAB_EDIFFLCCustomsBrokerMapping, SAB_EDIFFLCShipContainerTypeMapping, SAB_EDIFFLCShipMeasurementUnitMapping 
-audience: Application User
-# ms.devlang:
-ms.reviewer: Monica du Toit
-# ms.tgt_pltfrm:
-ms.custom: 
-ms.search.region: IconEDIFreightForwarderDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Voyage creator
@@ -40,27 +17,27 @@ The following setup is prerequisites for the **Voyage creator**
 ### Freight forwarder landed cost setup
 EDI > Setup > Freight forwarder landed cost setup <br>
 Where the Freight forwarder's values differ to D365/EDI values - use the following mappings for the Voyage creator:
-1. Create [Shipping port mapping](../SETUP/FF-SETUP/Shipping-port-mapping.md) to map the Trading partner's values to D365 Landed cost shipping port.
-2. Create [Modes of delivery mapping](../SETUP/FF-SETUP/Modes-of-delivery-mapping.md) to map the Trading partner's values to D365 Modes of delivery.
-3. Create [Customs broker mapping](../SETUP/FF-SETUP/Customs-broker-mapping.md) to map the Trading partner's values to D365 Vendor of Shipping type set to _Customs broker_.
-4. Create [Shipping container types mapping](../SETUP/FF-SETUP/Shipping-container-types-mapping.md) to map the Trading partner's values to D365 Landed cost shipping conntainer types.
-5. Create [Shipping measurement unit mapping](../SETUP/FF-SETUP/Shipping-measurement-unit-mapping.md) to map the Trading partner's values to D365 Landed cost shipping measurement units.
+1. Create [Shipping port mapping](../SETUP/FF-SETUP/Shipping-port-mapping) to map the Trading partner's values to D365 Landed cost shipping port.
+2. Create [Modes of delivery mapping](../SETUP/FF-SETUP/Modes-of-delivery-mapping) to map the Trading partner's values to D365 Modes of delivery.
+3. Create [Customs broker mapping](../SETUP/FF-SETUP/Customs-broker-mapping) to map the Trading partner's values to D365 Vendor of Shipping type set to _Customs broker_.
+4. Create [Shipping container types mapping](../SETUP/FF-SETUP/Shipping-container-types-mapping) to map the Trading partner's values to D365 Landed cost shipping conntainer types.
+5. Create [Shipping measurement unit mapping](../SETUP/FF-SETUP/Shipping-measurement-unit-mapping) to map the Trading partner's values to D365 Landed cost shipping measurement units.
 
 ### Document type setup
 EDI > Setup > Document types: Voyage creator
-1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING-PROFILES/Voyage-creator.md) for the document.
+1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+1. Create [Setting profile](../SETUP/SETTING-PROFILES/Voyage-creator) for the document.
 
 ### Trading partners
 EDI > Setup > Trading partners
-1. If the Freight forwarder landed cost [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+1. If the Freight forwarder landed cost [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
 1. Assign the Freight forwarder landed cost setup to the trading partner's options:
     -  Shipping port mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Shipping port mapping**
     -  Modes of delivery mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Modes of delivery mapping**
     -  Customs broker mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Customs broker mapping**
     -  Shipping container types mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Shipping container types mapping**
     -  Shipping measurement unit mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Shipping measurement unit mapping**
-1. Add and enable the **Voyage creator** document to the [Freight forwarder landed cost trading partner](../SETUP/Trading-partner.md) and select the applicable:
+1. Add and enable the **Voyage creator** document to the [Freight forwarder landed cost trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - Search mask
@@ -83,7 +60,7 @@ Header checks are performed when:
 ![alt text](../IMAGE/HeaderChecks_FFVoyageCreator.png "Header checks for Voyage creator")
 
 ### Step 1 - Import
-When an EDI file is imported, the file name is key to identifying the trading partner and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
+When an EDI file is imported, the file name is key to identifying the trading partner and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
 
 > Note: The file mask is used to identify the trading partner and therefore template
 
@@ -118,7 +95,7 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 At this step the issues are usually around mapping/business logic issues. <br>
 Review the **Log** or **Version log** for the applicable record to find the issue. <br>
-Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#voyage-creator).
+Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ#voyage-creator).
 
 ### Staging line validation
 
@@ -152,7 +129,7 @@ CNSHA-USLGB(S)	    | CNSHA	        | USLGB	        | 40	            | √	      
 **Journey template** (ShipJourneyId) field in the Voyage creator, also allows for inbound file to specify the Journey template which will then disregard the port and delivery mode fields. This field isn’t mandatory but provides flexibility.
 
 ### Duplicate tolerance
-Document setting [Duplicate tolerance](../SETUP/SETTING-PROFILES/Voyage-creator.md) manages the outcome when an EDI Voyage creator document is received and the **Booking reference** is already used on an existing D365 Landed cost Voyage. The options are:
+Document setting [Duplicate tolerance](../SETUP/SETTING-PROFILES/Voyage-creator) manages the outcome when an EDI Voyage creator document is received and the **Booking reference** is already used on an existing D365 Landed cost Voyage. The options are:
 - **Accept** – Add to existing Open Voyage
 - **Warning** – Creates new Voyage and staging record has Warning log
 - **Error** – Staging record errors, and Voyage isn’t created
@@ -168,7 +145,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created/added to Landed cost voyage(s). <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -186,7 +163,7 @@ The following buttons are available on the **Voyage creator**'s Action Pane, tab
 **Process selected voyages**    | Process voyage creator for the selected record in the staging table.
 **Process all voyages**         | Process voyage creator for the staging records that have a **Staging to target status** set to _Not started_. 
 **Inbound files**               | View the inbound file record the selected staging record.
-**Trading partner**             | View the trading partner details in the [Trading partners](../SETUP/Trading-partner.md) page.
+**Trading partner**             | View the trading partner details in the [Trading partners](../SETUP/Trading-partner) page.
 **Voyages**                     | If the EDI staging record has been completed it is possible to inquire on the Landed cost voyages created or added to.
 **Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
 **Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
@@ -231,7 +208,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Description**             | Voyage description	                                                    | Voyage > Description
 **Voyage**                  | Populated with target Voyage, once staging record has been completed and created a voyage/s	| Voyage > Voyage
 **Shipping container**      | Shipping container identification. Used to create a new Landed cost shipping container or add to existing container for the voyage  | Voyage lines > Shipping container
-**Shipping container type** | Used to populate to Shipping container type for the target Shipping container. Mapped values can be used by assigning [Shipping container types mapping](../SETUP/FF-SETUP/Shipping-container-types-mapping.md) to the Trading partner.	| Shipping container > Shipping container type
+**Shipping container type** | Used to populate to Shipping container type for the target Shipping container. Mapped values can be used by assigning [Shipping container types mapping](../SETUP/FF-SETUP/Shipping-container-types-mapping) to the Trading partner.	| Shipping container > Shipping container type
 **Ship date**               | Voyage and Shipping container’s ship date	                                | Voyage > Ship date <br> Shipping container > Ship date
 **From port**               | The originating **From port**. If Journey template is not provided, this field is used to determine Journey template	| Used in [calculation](#journey-template-calculation) for Voyage > Journey template
 **To port**                 | The final destination’s **To port**. If Journey template not provided, this field is used to determine Journey template	| Used in [calculation](#journey-template-calculation) for Voyage > Journey template
@@ -246,17 +223,17 @@ The following EDI Line fields are available on the lines page. <br>
 **Configuration**           | Product dimension - Configuration	                                    | Voyage lines > Configuration
 **Color**                   | Product dimension - Colour	                                        | Voyage lines > Color
 **Quantity**                | Voyage line’s quantity	                                                | Voyage lines > Quantity
-**Unit**                    | Unit of measure of Voyage line quantity. <br> Mapped values can be used by assigning [UOM mapping](../../CORE/Setup/UOM-mapping.md) to the Trading partner.	    | Voyage line details > Reference > Unit
+**Unit**                    | Unit of measure of Voyage line quantity. <br> Mapped values can be used by assigning [UOM mapping](../../CORE/Setup/UOM-mapping) to the Trading partner.	    | Voyage line details > Reference > Unit
 **House air waybill/Bill of lading**    | HAWB for voyage line	                                        | Voyage > House air waybill/Bill of lading
 **Master air waybill/Bill of lading**   | MAWB for voyage line	                                        | Voyage > Master air waybill/Bill of lading
 **Folio**                   | Folio for voyage line. <br> If blank, the Landed cost Folio number sequence will be used to create a new folio | Voyage lines > Folio
 **Vendor account**          | Folio’s vendor account	                                                | Folios > Vendor account
-**Customs broker**          | Folio’s customer broker. <br> Mapped values can be used by assigning [Customs broker mapping](../SETUP/FF-SETUP/Customs-broker-mapping.md) to the Trading partner.	| Folios > Customs broker
+**Customs broker**          | Folio’s customer broker. <br> Mapped values can be used by assigning [Customs broker mapping](../SETUP/FF-SETUP/Customs-broker-mapping) to the Trading partner.	| Folios > Customs broker
 **Number of cartons**       | Voyage line and folio’s number of cartons	                                | Voyage lines > Number of cartons <br> Folios > Number of cartons
 **Measurement**             | Voyage measurement	                                                    | oyage > Measurement
-**Measurement unit**        | Voyage measurement unit. <br> Mapped values can be used by assigning [Shipping measurement unit mapping](../SETUP/FF-SETUP/Shipping-measurement-unit-mapping.md) to the Trading partner.	| Voyage > Measurement unit
+**Measurement unit**        | Voyage measurement unit. <br> Mapped values can be used by assigning [Shipping measurement unit mapping](../SETUP/FF-SETUP/Shipping-measurement-unit-mapping) to the Trading partner.	| Voyage > Measurement unit
 **Line measurement**        | Voyage line measurement	                                                | Voyage lines > Measurement
-**Line measurement unit**   | Voyage line measurement unit. <br> Mapped values can be used by assigning [Shipping measurement unit mapping](../SETUP/FF-SETUP/Shipping-measurement-unit-mapping.md) to the Trading partner.	 | Voyage lines > Measurement unit
+**Line measurement unit**   | Voyage line measurement unit. <br> Mapped values can be used by assigning [Shipping measurement unit mapping](../SETUP/FF-SETUP/Shipping-measurement-unit-mapping) to the Trading partner.	 | Voyage lines > Measurement unit
 **Vessel**                  | Voyage vessel	                                                            | Voyage > Vessel
 **External Voyage Id**      | External voyage identification	                                        | Voyage > External voyage ID
 **Journey template**        | Journey template to be used for Landed cost Tracking. <br> If blank, the following will be used to determine the applicable Journey template: <br> • From port <br> •	To port <br> •	Mode of delivery    | Voyage > Journey template

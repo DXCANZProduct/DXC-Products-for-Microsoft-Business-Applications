@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Integration systems
-description: Introduction to EDI Integration systems
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2022-08-12
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIIntegrationSystemsDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Introduction to EDI Integrations systems
@@ -51,7 +28,7 @@ EDI contains the following documents pertaining to Integration system Trading pa
 
 ## Setup
 ### Core setup
-Core setup is discussed in detail [here](../../CORE/Introduction/Introduction.md#setup)
+Core setup is discussed in detail [here](../../CORE/Introduction/Introduction#setup)
 
 ### Integration setup
 
@@ -59,37 +36,37 @@ Core setup is discussed in detail [here](../../CORE/Introduction/Introduction.md
 Setup Document types which will be assigned on Integrations Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Document types**
 
-- [File templates](../../CORE/Setup/DocumentTypes/File-templates.md): applicable to all document types
-- [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames.md): applicable to all outbound document types
-- [Field metadata](../../CORE/Setup/DocumentTypes/Field-metadata.md): optionally update staging form's display name and help text per field
+- [File templates](../../CORE/Setup/DocumentTypes/File-templates): applicable to all document types
+- [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames): applicable to all outbound document types
+- [Field metadata](../../CORE/Setup/DocumentTypes/Field-metadata): optionally update staging form's display name and help text per field
 
 #### Integration systems
 Integrations trading partner isn't linked to D365 customer, vendor or warehouse. <br> 
 This form allows the ability to create the Integration systems account that will be used when creating the Integrations Trading partner.
- - [Integration systems](../SETUP/Integration-systems.md)
+ - [Integration systems](../SETUP/Integration-systems)
 
 #### Trading partner setup
 Create new trading partners and assign setup and incoming/outgoing documents. <br>
 Users can access the form by navigating to **EDI > Setup > Trading partners**
-- [Trading partner](../SETUP/Trading-partner.md)
+- [Trading partner](../SETUP/Trading-partner)
 
 ## Processing
 
 ### Import files
 Ability to manually import or review inbound files
-- [Inbound files](../../CORE/Managing-files/Inbound-files.md)
+- [Inbound files](../../CORE/Managing-files/Inbound-files)
 
 ### Export files
 Ability to manually export or review outbound files
-- [Outbound files](../../CORE/Managing-files/Outbound-files.md)
+- [Outbound files](../../CORE/Managing-files/Outbound-files)
 
 ### Export batch jobs
 Integration systems module utilizes the **Export batch jobs** to schedule outgoing documents.
-- [Export batch jobs](../../CORE/Setup/EDI-Batches.md#export-batch-jobs)
+- [Export batch jobs](../../CORE/Setup/EDI-Batches#export-batch-jobs)
 
 ### Integrations documents
 Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents > Integration systems documents**
-- [Customer](../DOCUMENTS/Customer.md)
-- [Customer group](../DOCUMENTS/Customer-group.md)
+- [Customer](../DOCUMENTS/Customer)
+- [Customer group](../DOCUMENTS/Customer-group)
 

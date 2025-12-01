@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Vendor
-description: EDI Vendor Setup - Document type Validation profiles
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2022-12-15
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDITradingPartner, SAB_EDIDocumentTypeTable
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIVendorDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Vendor setup
@@ -48,6 +25,6 @@ Once setup for each document type, the validation profile can be assigned to eac
   - **Error** - An Infolog is displayed with an error. If the validation rule fails, the staging records will be set to error state and the target document note created/updated. 
 
 The following incoming vendor documents have validation profiles:
-- [Vendor purchase order acknowledgement](VALIDATION-PROFILES/Vendor-purchase-order-acknowledgement.md)
-- [Vendor advanced shipping notice](VALIDATION-PROFILES/Vendor-advanced-shipping-notice.md)
-- [Purchase invoice](VALIDATION-PROFILES/Purchase-invoice.md)
+- [Vendor purchase order acknowledgement](VALIDATION-PROFILES/Vendor-purchase-order-acknowledgement)
+- [Vendor advanced shipping notice](VALIDATION-PROFILES/Vendor-advanced-shipping-notice)
+- [Purchase invoice](VALIDATION-PROFILES/Purchase-invoice)

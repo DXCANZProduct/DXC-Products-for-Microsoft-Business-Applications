@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Customer
-description: EDI Customer Documents - Review sales order
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2022-12-09
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SalesTableListPage, SAB_EDIParameters 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDICustomerDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Review sales order
@@ -38,8 +15,8 @@ When the sales order validation resulted in a warning or error, the **EDI log** 
 
 To view the actual validation error messages, select the **Log** button available via the **EDI** tab on the Action Pane of the sales order. 
 
-> Note: To setup EDI order validation, see [Setup validation profiles](../SETUP/Validation-profiles.md) <br>
-> Note: For further information relating to validation refer to the validation section(s) in the processing of [Customer purchase order](Customer-purchase-order.md).
+> Note: To setup EDI order validation, see [Setup validation profiles](../SETUP/Validation-profiles) <br>
+> Note: For further information relating to validation refer to the validation section(s) in the processing of [Customer purchase order](Customer-purchase-order).
 
 ## Sales order holds
 EDI sales orders can be placed on hold for the following reasons (one or more could apply) The below also displays which Hold code would be used as setup in **EDI > Setup > EDI parameters**. 
@@ -177,7 +154,7 @@ The following EDI fields have been added to the Sales order's Header and is avai
 **Original version number**	| The original version number from the EDI order.			| Original
 **Change version number**	| The latest PO version number from the EDI order change		| Change
 <ins>**Settings**</ins>		|   |
-**Bypass duplicate check**	| Used to validate the customer purchase order number. <br> Note: For further information see **Duplicate tolerance** in [Customer purchase order settings profiles](../SETUP/SETTING-PROFILES/Customer-purchase-order.md)			  | Doc setting
+**Bypass duplicate check**	| Used to validate the customer purchase order number. <br> Note: For further information see **Duplicate tolerance** in [Customer purchase order settings profiles](../SETUP/SETTING-PROFILES/Customer-purchase-order)			  | Doc setting
 **No backorders**		| Identify if the trading partner accepts backorders. <br> Note: Copied from the trading partner setup **No backorders** and used on the **Customer purchase order acknowledgement** to identify full or partial shipments. 			 | Trading partner
 <ins>**Status**</ins>		|   |
 **POA status**			| Current purchase order acknowledgement status. This field is populated by the EDI module and not editable. Options are: <br> • **Pending** - The POA document setting **Lock order** is set to _Yes_ which makes the POA required but in this scenario haven’t been sent yet. <br> • **Sent** - The POA has been sent and a Confirmation is not required as POA document setting **PO confirmation required** is set to _No_. <br> •	**Confirm pending** - The POA has been sent and a Confirmation is required. POA document setting **PO confirmation required** is set to _Yes_. <br> • **POC received** - The Confirmation has been received from the Customer. | Doc setting, <br> POA and POC
@@ -191,7 +168,7 @@ The following EDI fields have been added to the Sales order's Lines and is avail
 **Line number**			| EDI line number                                   | Original / Change
 **Store code**			| Store code for the individual line                | Original / Change
 **EDI item number**		| Item number as provided on EDI inbound document   | Original / Change
-**Order line change type**  | If the order line was added or updated by a customer purchase order change, the [Order line change type](../SETUP/CUSTOMER-SETUP/Order-line-change-type-group.md#setup-order-line-change-type-group) will be displayed. Some examples: <br> • **Add additional item** - The line has been added by a change <br> • **Price change** - The sales line's unit price has been updated by a change <br> • **Delete items** - The sales line's deliver remainder has been cancelled by a change  | Change
+**Order line change type**  | If the order line was added or updated by a customer purchase order change, the [Order line change type](../SETUP/CUSTOMER-SETUP/Order-line-change-type-group#setup-order-line-change-type-group) will be displayed. Some examples: <br> • **Add additional item** - The line has been added by a change <br> • **Price change** - The sales line's unit price has been updated by a change <br> • **Delete items** - The sales line's deliver remainder has been cancelled by a change  | Change
 **Comments**                | The comments from the EDI order line is shown here | Original
 
 ### POA response tab
@@ -200,7 +177,7 @@ After selecting the applicable sales order, the following details available are:
 - Customer - Customer purchase order values
 Once the Customer purchase order acknowledgement (POA) has been sent, these following values are populated:
 - Acknowledged - Acknowledged value sent on the customer purchase order acknowledgement
-- Customer code - The customer's mapped value for the response as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md)
+- Customer code - The customer's mapped value for the response as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group)
 - Auto triggered - Indicates if the acknowledgement was auto triggered else it was manually set by a user.
 
 Example:
@@ -221,7 +198,7 @@ POA response's auto triggered values are calculated by:
 - **Quantity**: Customer purchase order acknowledgement document setting profile **Quantity type**:
     - **Customer quantity** - EDI order line's quantity
     - **Reserved quantity** - Sales order line's reserved quantity
-- **Shipment**: Will there be more shipments for the order line. **POA code** for [POA responde code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md):
+- **Shipment**: Will there be more shipments for the order line. **POA code** for [POA responde code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group):
     - **Line shipment - full** - Full EDI order line quantity is reserved on the sales order line or Trading partner setting **No backorders** is set to _Yes_. 
     - **Line shipment - partial** -  Partial EDI order line quantity is reserved for the sales order line, or the **Customer purchase order acknowledgement** document setting profile **Quantity type** is set to use _Customer quantity_.
 - **Pack**: Customer purchase order acknowledgement document setting profile **Pack type**

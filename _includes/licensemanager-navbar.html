@@ -9,7 +9,7 @@
             <ul>
               {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
               {% for lmg in licensemanager %}
-                  {%if lmg.url contains "releasenotes/dxclicensemanager" and lmg.markAsPrevious == false%}
+                  {%if lmg.url contains "releasenotes/dxclicensemanager" and lmg.state == "current"%}
                   <li class="list-style-type">
                     <a href="{{ lmg.url }}">{{lmg.title}}</a>
                   </li>
@@ -17,11 +17,24 @@
               {% endfor %}
               <li class="list-style-type">
                 <details>
-                  <summary>Previous Version</summary>
+                  <summary>Previous Versions</summary>
                   <ul>
                     {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
                     {% for lmg in licensemanager %}
-                        {%if lmg.url contains "releasenotes/dxclicensemanager" and lmg.markAsPrevious == true%}
+                        {%if lmg.url contains "releasenotes/dxclicensemanager" and lmg.state == "previous"%}
+                        <li class="list-style-type">
+                          <a href="{{ lmg.url }}">{{lmg.title}}</a>
+                        </li>
+                        {% endif%}
+                    {% endfor %}
+                  </ul>
+                </details>
+                <details>
+                  <summary>Archive</summary>
+                  <ul>
+                    {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
+                    {% for lmg in licensemanager %}
+                        {%if lmg.url contains "releasenotes/dxclicensemanager" and lmg.state == "archive"%}
                         <li class="list-style-type">
                           <a href="{{ lmg.url }}">{{lmg.title}}</a>
                         </li>
@@ -39,7 +52,7 @@
             <ul>
               {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
               {% for lmg in licensemanager %}
-                  {%if lmg.url contains "releasenotes/dxclicense/" and lmg.markAsPrevious == false%}
+                  {%if lmg.url contains "releasenotes/dxclicense/" and lmg.state == "current"%}
                   <li class="list-style-type">
                     <a href="{{ lmg.url }}">{{lmg.title}}</a>
                   </li>
@@ -51,7 +64,20 @@
                   <ul>
                     {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
                     {% for lmg in licensemanager %}
-                        {%if lmg.url contains "releasenotes/dxclicense/" and lmg.markAsPrevious == true%}
+                        {%if lmg.url contains "releasenotes/dxclicense/" and lmg.state == "previous"%}
+                        <li class="list-style-type">
+                          <a href="{{ lmg.url }}">{{lmg.title}}</a>
+                        </li>
+                        {% endif%}
+                    {% endfor %}
+                  </ul>
+                </details>
+                <details>
+                  <summary>Archive</summary>
+                  <ul>
+                    {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
+                    {% for lmg in licensemanager %}
+                        {%if lmg.url contains "releasenotes/dxclicense/" and lmg.state == "archive"%}
                         <li class="list-style-type">
                           <a href="{{ lmg.url }}">{{lmg.title}}</a>
                         </li>
@@ -69,7 +95,7 @@
             <ul>
               {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
               {% for lmg in licensemanager %}
-                  {%if lmg.url contains "releasenotes/reactwebapp" and lmg.markAsPrevious == false%}
+                  {%if lmg.url contains "releasenotes/reactwebapp" and lmg.state == "current"%}
                   <li class="list-style-type">
                     <a href="{{ lmg.url }}">{{lmg.title}}</a>
                   </li>
@@ -77,11 +103,24 @@
               {% endfor %}
               <li class="list-style-type">
                 <details>
-                  <summary>React Web App</summary>
+                  <summary>Previous Versions</summary>
                   <ul>
                     {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
                     {% for lmg in licensemanager %}
-                        {%if lmg.url contains "releasenotes/reactwebapp" and lmg.markAsPrevious == true%}
+                        {%if lmg.url contains "releasenotes/reactwebapp" and lmg.state == "previous"%}
+                        <li class="list-style-type">
+                          <a href="{{ lmg.url }}">{{lmg.title}}</a>
+                        </li>
+                        {% endif%}
+                    {% endfor %}
+                  </ul>
+                </details>
+                <details>
+                  <summary>Archive</summary>
+                  <ul>
+                    {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
+                    {% for lmg in licensemanager %}
+                        {%if lmg.url contains "releasenotes/reactwebapp" and lmg.state == "archive"%}
                         <li class="list-style-type">
                           <a href="{{ lmg.url }}">{{lmg.title}}</a>
                         </li>

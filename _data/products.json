@@ -28,7 +28,7 @@
         "description": "Expand your business efficiency with DXC Electronic Data Interchange for Microsoft Dynamics 365.",
         "productDocsUrl": "/edi",
         "productName": "ICONEDI",
-        "disableDocs": true,
+        "disableDocs": false,
         "notificationsEnabled": true
     },
     {

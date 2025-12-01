@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Customer
-description: EDI Customer Documents - Customer purchase order change
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-05-08
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SalesTableListPage, SAB_EDIStagingFormRun_Cust_POC, SAB_EDICustOrderPurposeMapping, SAB_EDICustOrderLineChangeMapping
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDICustomerDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Customer purchase order change
@@ -32,30 +9,30 @@ ms.dyn365.ops.version:  AX 7.0.1
 ## Prerequisites
 The following setup is prerequisites for the customer purchase order change
 
-1. If required to put sales orders on hold till the purchase order confirmation has been received, assign the applicable hold code to [POC pending hold code](../SETUP/CUSTOMER-SETUP/Hold-codes.md) in EDI parameters.
-3. Create [Order purpose groups](../SETUP/CUSTOMER-SETUP/Order-purpose-group.md) to map the customer's values to EDI order purpose groups.
-4. Create [Order line change type groups](../SETUP/CUSTOMER-SETUP/Order-line-change-type-group.md) to map customer's value to EDI order line change type groups.
-5. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-6. Create [Setting profile](../SETUP/SETTING-PROFILES/Customer-purchase-order-change.md) for the document.
-7. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Customer-purchase-order-change.md) for the document.
-8. If the customer [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+1. If required to put sales orders on hold till the purchase order confirmation has been received, assign the applicable hold code to [POC pending hold code](../SETUP/CUSTOMER-SETUP/Hold-codes) in EDI parameters.
+3. Create [Order purpose groups](../SETUP/CUSTOMER-SETUP/Order-purpose-group) to map the customer's values to EDI order purpose groups.
+4. Create [Order line change type groups](../SETUP/CUSTOMER-SETUP/Order-line-change-type-group) to map customer's value to EDI order line change type groups.
+5. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+6. Create [Setting profile](../SETUP/SETTING-PROFILES/Customer-purchase-order-change) for the document.
+7. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Customer-purchase-order-change) for the document.
+8. If the customer [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
 9. Assign the Order purpose group and Order line change type group (where applicable) to the customer trading partner.
-10. Add and enable the customer purchase order change document to the [Customer trading partner](../SETUP/Trading-partner.md) and select the applicable:
+10. Add and enable the customer purchase order change document to the [Customer trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - Validation profile
     - Search mask
 
 ## Changes to D365 Sales order
-See [Order line change type groups](../SETUP/CUSTOMER-SETUP/Order-line-change-type-group.md) for details on how this document updates the D365 sales order
+See [Order line change type groups](../SETUP/CUSTOMER-SETUP/Order-line-change-type-group) for details on how this document updates the D365 sales order
 
 ## Target D365 transactions
 
-When a purchase order change file is imported, the file name is key to identifying the customer and therefore the document template. See [Trading partners](../SETUP/Trading-partner.md) at **EDI > Setup > Trading partners** for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table.  
+When a purchase order change file is imported, the file name is key to identifying the customer and therefore the document template. See [Trading partners](../SETUP/Trading-partner) at **EDI > Setup > Trading partners** for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table.  
 There are two order purposes (**Change** and **Cancellation**) that can be processed via the **Customer purchase order change** document. These order purposes can be specified in Trading partners and will change the way the record is processed.
 Expectation is the customer sends price inclusive of discounts. 
 
-The following [Customer EDI order types](../SETUP/CUSTOMER-SETUP/Purchase-order-types.md) and [Order purposes](../SETUP/CUSTOMER-SETUP/Order-purpose-group.md) are supported by each Customer inbound document:
+The following [Customer EDI order types](../SETUP/CUSTOMER-SETUP/Purchase-order-types) and [Order purposes](../SETUP/CUSTOMER-SETUP/Order-purpose-group) are supported by each Customer inbound document:
 
 **Document type**		              | **Order type**	| **Order purpose**
 :----                                 |:----                |:----
@@ -83,7 +60,7 @@ Header checks are performed when:
 ![alt text](../IMAGE/Process_CustomerPOChange.png "Customer purchase order change process")
 
 ## Step 1 - Import
-When a purchase order change file is imported, the file name is key to identifying the customer and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
+When a purchase order change file is imported, the file name is key to identifying the customer and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
 
 > Note: The file mask is used to identify the trading partner and therefore template
 
@@ -150,7 +127,7 @@ The following sales order checks are done when the document is being:
 
 At this step the issues are usually around setup/business logic issues. <br>
 Review the **Log** or **Version log** for the applicable record to find the issue. <br>
-Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#customer-purchase-order-change)
+Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ#customer-purchase-order-change)
 
 #### Settings
 Settings profiles can be specified and linked to the template which is used to determine how D365 will react.  Options are:
@@ -179,7 +156,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – the order change has been successfully processed from the inbound file to the staging table but not processed. <br> •	**Error** – The order change has been processed from the staging table, but no updates processed to existing D365 Sales order.  There are errors with the record that need to be reviewed. <br> •	**Completed** – The order change has been processed and either automatically processed and D365 Sales order updated or ready for Manual approval. • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -201,7 +178,7 @@ The following buttons are available on the **Customer purchase order change** Ac
 **Process customer changes**    |	Process selected record’s change. If document setting's **Processing method** is: <br> • **Automatic** – The **Update tolerance** on Order line change type group’ is used to determine if the line can be changed. <br>    - **Approve**: If all the line changes received are approved, the sales order will be updated. <br>   -	**Approve with warning log**: If all the line changes received are approved, the sales order will be updated. Warning log created on EDI staging record. <br>   - **Reject with warning log**: If any of the line changes received are Reject, the sales order will not be updated. The Staging record will error, but change can still be viewed via Changes on the Sales order header – EDI ribbon <br> •	**Manual** – The record is processed and available for manual Approve/Reject on ‘EDI Sales order processing > Pending PO changes’ or via Changes on the Sales order header on the EDI tab on the ActionPane.
 **Process all customer changes**	| As per above, but for all staging records that have a **Staging to target status** set to _Not started_. 
 **Inbound files**               | View the inbound file record the selected staging record.
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner) page.
 **Sales Order**	                | If the staging record has been completed it is possible to inquire on the **Sales order** it updated from this button.
 **Customers**                   | Inquire on the Customer for the selected record.
 **Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.

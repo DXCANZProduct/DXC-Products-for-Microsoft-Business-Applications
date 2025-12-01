@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI 3PL
-description: EDI 3PL Documents - Picking list
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-08-29
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  Action:SAB_EDIStagingFormRun_Picklist, SAB_EDI3PLWHSInventStatusMapping, SAB_EDI3PLOrderPurposeMapping
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: IconEDI3PLDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Picking list
@@ -34,20 +11,20 @@ The following setup is prerequisites for the picking list
 
 ### 3PL setup
 EDI > Setup > 3PL setup
-1. Create [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) to map the 3PL's values to D365 inventory statuses.
-2. Create [Order purpose group](../SETUP/3PL-SETUP/Order-purpose-group.md) to map the 3PL's values to EDI order purpose groups.
+1. Create [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping) to map the 3PL's values to D365 inventory statuses.
+2. Create [Order purpose group](../SETUP/3PL-SETUP/Order-purpose-group) to map the 3PL's values to EDI order purpose groups.
 
 ### Document type setup
 EDI > Setup > Document types: Picking list
-1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-2. Create [Setting profile](../SETUP/SETTING-PROFILES/Picking-list.md) for the document.
-3. Create [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
+1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+2. Create [Setting profile](../SETUP/SETTING-PROFILES/Picking-list) for the document.
+3. Create [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames) for the document.
 
 ### Trading partners
 EDI > Setup > Trading partners
-1. If the warehouse [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+1. If the warehouse [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
 1. Assign the **3PL setup** to the warehouse trading partner's options.
-1. Add and enable the **picking list** document to the [Warehouse trading partner](../SETUP/Trading-partner.md) and select the applicable:
+1. Add and enable the **picking list** document to the [Warehouse trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - File name setup
@@ -79,7 +56,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company**             | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -102,7 +79,7 @@ The following buttons are available on the **Picking list** Action Pane, tab **P
 **Create selected files**       | Creates the outbound file for selected records where **Staging to target status** is set to _Not started_
 **Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_
 **Outbound files**              | View the outbound file record created by the selected staging record
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner) page
 **Picking list registration**   | View the picking list registration
 **Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
 **Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
@@ -141,7 +118,7 @@ The following EDI Header staging fields are available on the header page.
 **Order Id**                | Sales or transfer order's identification	                                    | Picking route > Number
 **Customer requisition**    | Customers purchase order number	    | Sales Order > Customer requisition
 **Your ref.**               | Customers reference	                | Sales Order > Customer reference
-**EDI order purpose**       | The EDI order purpose is shown here. <br> Mapped value from [Order purpose group](../SETUP/3PL-SETUP/Order-purpose-group.md)  | Order purpose code
+**EDI order purpose**       | The EDI order purpose is shown here. <br> Mapped value from [Order purpose group](../SETUP/3PL-SETUP/Order-purpose-group)  | Order purpose code
 <ins>**Status**</ins>	    |
 **Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
 **Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
@@ -185,7 +162,7 @@ The following EDI Line staging fields are available on the lines page.
 **Version**                 | Product dimensions – Version                              | Pick route line > Version
 **Batch number**            | Tracking dimensions – Batch number	                    | Pick route line > Batch number
 **Serial number**           | Tracking dimensions – Serial number	                    | Pick route line > Serial number
-**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](..SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) | Pick route line > Inventory status
+**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](..SETUP/3PL-SETUP/Inventory-status-Id-mapping) | Pick route line > Inventory status
 
 ### EDI history
 Where history logging is enabled, view the applicable EDI staging record(s) via:

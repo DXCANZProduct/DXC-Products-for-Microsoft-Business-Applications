@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Freight forwarder
-description: EDI Freight forwarder Setup - Document type Setting profiles
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-11-25
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDITradingPartner, SAB_EDIDocumentTypeTable
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIFreightForwarderDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Freight forwarder setup
@@ -40,5 +17,5 @@ Setting profiles can be created to specify the handling of specific scenarios. O
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details. 
 
 The following Freight forwarder documents have setting profiles:
-- [Voyage creator](SETTING-PROFILES/Voyage-creator.md)
-- [Voyage tracking](SETTING-PROFILES/Voyage-tracking.md)
+- [Voyage creator](SETTING-PROFILES/Voyage-creator)
+- [Voyage tracking](SETTING-PROFILES/Voyage-tracking)

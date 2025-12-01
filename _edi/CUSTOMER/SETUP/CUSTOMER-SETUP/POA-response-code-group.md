@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Customer
-description: EDI Customer setup - POA responde code group
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-03-28
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDICustPOACodesMapping
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDICustomerDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Customer setup
@@ -147,7 +124,7 @@ The following responses are deemed Reject:
     - Line response codes have no effect
 
 ## Where used
-POA response code group is assigned on the [Customer Trading partner's](../Trading-partner.md) Options field called **POA responde code group**.
+POA response code group is assigned on the [Customer Trading partner's](../Trading-partner) Options field called **POA responde code group**.
 
 ## Data entities:
 - POA response code group

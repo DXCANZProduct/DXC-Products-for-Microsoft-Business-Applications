@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Customer
-description: EDI Customer Setup - Document type Validation profiles
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-10-04
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SAB_EDIDocumentTypeTable, SAB_EDITradingPartner
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDICustomerDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Customer setup
@@ -48,5 +25,5 @@ Once setup for each document type, the validation profile can be assigned to eac
   - **Error** - An Infolog is displayed with an error. If the validation rule fails, the staging records will be set to error state and the target document note created/updated. Except for Customer module where an order hold will be applied to the sales order. The **Validation error hold code** that was assigned in EDI parameters will be applied to the Sales order.
 
 The following customer documents have validation profiles:
-- [Customer purchase order](VALIDATION-PROFILES/Customer-purchase-order.md)
-- [Customer purchase order change](VALIDATION-PROFILES/Customer-purchase-order-change.md)
+- [Customer purchase order](VALIDATION-PROFILES/Customer-purchase-order)
+- [Customer purchase order change](VALIDATION-PROFILES/Customer-purchase-order-change)

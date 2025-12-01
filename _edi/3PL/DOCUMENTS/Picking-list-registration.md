@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI 3PL
-description: EDI 3PL Documents - Picking list registration
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-08-29
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: Action:SAB_EDIStagingFormRun_PicklistRegistration, SAB_EDI3PLWHSInventStatusMapping
-audience: Application User
-# ms.devlang:
-ms.reviewer: Monica du Toit
-# ms.tgt_pltfrm:
-ms.custom: 
-ms.search.region: IconEDI3PLDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Picking list registration
@@ -43,20 +20,20 @@ The following setup is prerequisites for the picking list registration
 
 ### 3PL setup
 EDI > Setup > 3PL setup
-1. Create [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) to map the 3PL's values to D365 inventory statuses.
+1. Create [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping) to map the 3PL's values to D365 inventory statuses.
 
 ### Document type setup
 EDI > Setup > Document types: Picking list registration
-1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING-PROFILES/Picking-list-registration.md) for the document.
-1. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Picking-list-registration.md) for the document.
+1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+1. Create [Setting profile](../SETUP/SETTING-PROFILES/Picking-list-registration) for the document.
+1. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Picking-list-registration) for the document.
 
 ### Trading partners
 EDI > Setup > Trading partners
-1. If the warehouse [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+1. If the warehouse [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
 1. Assign the 3PL setup to the warehouse trading partner's options:
     - Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
-1. Add and enable the **Picking list registration** document to the [Warehouse trading partner](../SETUP/Trading-partner.md) and select the applicable:
+1. Add and enable the **Picking list registration** document to the [Warehouse trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - Validation profile
@@ -78,7 +55,7 @@ Header checks are performed when:
 3. Processing from staging to target
 
 ### Step 1 - Import
-When an EDI file is imported, the file name is key to identifying the trading partner and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
+When an EDI file is imported, the file name is key to identifying the trading partner and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
 
 > Note: The file mask is used to identify the trading partner and therefore template
 
@@ -113,7 +90,7 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 At this step the issues are usually around mapping/business logic issues. <br>
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table. <br> 
-Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#picking-list-registration).
+Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ#picking-list-registration).
 
 #### Staging line validation - Picking list registration
 
@@ -123,7 +100,7 @@ Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#
 
 ### Validation
 
-[Validation profiles](../SETUP/VALIDATION-PROFILES/Picking-list-registration.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
+[Validation profiles](../SETUP/VALIDATION-PROFILES/Picking-list-registration) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
 -	**Info** - An infolog is displayed with information only, it is not identified as a warning
 -	**Warning** - An infolog is displayed with a warning. It is possible to carry on processing
 -	**Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error
@@ -144,7 +121,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and updated the D365 picking list lines to either picked or cancelled. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -162,7 +139,7 @@ The following buttons are available on the **Picking list registration**'s Actio
 **Process pick list registration**   | Process picking list registration for the selected record in the staging table.
 **Process all pick list registrations**   | Process picking list registration for the staging records that have a **Staging to target status** set to _Not started_. 
 **Inbound files**               | View the inbound file record the selected staging record.
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner) page.
 **Pick list registration**      | If the staging record has been completed it is possible to inquire on the pick list registration it updated from this button.
 **Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
 **Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
@@ -221,7 +198,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Version**                 | Product dimensions – Version                                              | Used for validation
 **Batch number**            | Tracking dimensions – Batch number	                                    | Used for validation. If **Batch id** allows update, can also update Pick route line > Batch number
 **Serial number**           | Tracking dimensions – Serial number	                                    | Pick route line > Serial number
-**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md)  | Used for validation
+**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](../SETUP/3PL-SETUP/Inventory-status-Id-mapping)  | Used for validation
 
 ### EDI history
 Where history logging is enabled, view the applicable EDI staging record(s) via:

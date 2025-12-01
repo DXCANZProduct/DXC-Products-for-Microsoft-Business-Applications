@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI 3PL
-description: EDI 3PL Documents - Product master
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-05-02
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SAB_EDI3PLProductConfiguration, EcoResProductDetailsExtendedGrid, Action:SAB_EDIStagingFormRun_ProductMaster
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDI3PLDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Product master
@@ -37,19 +14,19 @@ The following setup is prerequisites for the 3PL document:
 
 ### Document type setup
 EDI > Setup > Document types: Product master
-1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING-PROFILES/Product-master.md) for the document.
-1. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
+1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+1. Create [Setting profile](../SETUP/SETTING-PROFILES/Product-master) for the document.
+1. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames) for the document.
 
 ### Trading partners
 EDI > Setup > Trading partners
-1. If the warehouse [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
-1. Add and enable the **Product master** document to the [Warehouse trading partner](../SETUP/Trading-partner.md) and select the applicable:
+1. If the warehouse [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
+1. Add and enable the **Product master** document to the [Warehouse trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - File name setup
     - Change tracking
-1. Trigger for creating staging record(s): Create a new batch job for the trading partner and document in [Export batch jobs](../../CORE/Setup/EDI-Batches.md#export-batch-jobs)
+1. Trigger for creating staging record(s): Create a new batch job for the trading partner and document in [Export batch jobs](../../CORE/Setup/EDI-Batches#export-batch-jobs)
 
 ### Product setup
 
@@ -116,7 +93,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company**             | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Template Id**                 | The EDI template that will be used to create the outbound file
@@ -135,7 +112,7 @@ The following buttons are available on the **Product master**'s Action Pane, tab
 **Create selected files**       | Creates the outbound file for selected records where **Staging to target status** is set to _Not started_.
 **Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_.
 **Outbound files**              | View the outbound file record created by the selected staging record.
-**Trading partner**             | View the trading partner details in the [Trading partners](../SETUP/Trading-partner.md) page.
+**Trading partner**             | View the trading partner details in the [Trading partners](../SETUP/Trading-partner) page.
 **Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
 **Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
 **Edit reset status recurrence**    | If the underlying issue was resolved after all the reset attempts have been completed the user can use this button to edit the recurrence field/s. This will: <br> • Update **Reset status profile** to _blank_ <br> • Update the **Reset status date/time** to next time reset will run <br> • **Reset status attempts** set to _Zero_ and <br> • **Recurrence** text updated with changed recurrence details

@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Vendor
-description: Introduction to EDI Vendor
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-11-08
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDITradingPartner, SAB_EDIVendOrderTypeMapping, SAB_EDIVendOrderPurposeMapping, SAB_EDIVendOrderLineChangeMapping, SAB_EDIVendCarrierModeMapping, SAB_EDIVendChargesCodeMapping, SAB_EDIVendPOACodesMapping, SAB_EDIVendPaymentTermsMapping, SAB_EDIVendMiscChargeIndicatorMapping, SAB_EDIVendMiscMethodHandlingMapping
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIVendorDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Introduction to Vendor EDI
@@ -53,99 +30,99 @@ EDI contains the following documents pertaining to Vendor Trading partners.
 
 ## Setup
 ### Core setup
-Core setup is discussed in detail [here](../../CORE/Introduction/Introduction.md#setup)
+Core setup is discussed in detail [here](../../CORE/Introduction/Introduction#setup)
 
 ### Vendor setup
 
 #### Assigned on items:
 - Required where the confirmed pack sizes within the Vendor purchase order acknowledgement is set to use System pack and/or System inner. Setup at **Product information management > Products > Released products and selecting FastTab Manage inventory**
-	- [Item pack sizes](../../CORE/Setup/Item-pack-sizes.md)
+	- [Item pack sizes](../../CORE/Setup/Item-pack-sizes)
 
 #### Mappings assigned on Vendor Trading partner
 Used to map D365/EDI value to Vendor's value and assigned on Vendor Trading partner: <br>
 
 - Vendor setup and which EDI document (and field) it is mapped to/from: **EDI > Setup > Vendor setup** <br>
-	- [Order type group](../SETUP/VENDOR-SETUP/Order-type-group.md)
+	- [Order type group](../SETUP/VENDOR-SETUP/Order-type-group)
 		- Vendor purchase order (OrderType)
 		- Vendor purchase order change (OrderType)
-	- [Order purpose group](../SETUP/VENDOR-SETUP/Order-purpose-group.md)
+	- [Order purpose group](../SETUP/VENDOR-SETUP/Order-purpose-group)
 		- Vendor purchase order (OrderPurpose)
 		- Vendor purchase order change (OrderPurpose)
-	- [Order line change type group](../SETUP/VENDOR-SETUP/Order-line-change-type-group.md)
+	- [Order line change type group](../SETUP/VENDOR-SETUP/Order-line-change-type-group)
 		- Vendor purchase order change (LineChangeType)
-	- [Carrier mode](../SETUP/VENDOR-SETUP/Carrier-mode.md)
+	- [Carrier mode](../SETUP/VENDOR-SETUP/Carrier-mode)
 		- Vendor purchase order (CarrierMode)
 		- Vendor purchase order change (CarrierMode)
-	- [Charges code](../SETUP/VENDOR-SETUP/Charges-code.md)
+	- [Charges code](../SETUP/VENDOR-SETUP/Charges-code)
 		- Vendor purchase order (MiscCode)
 		- Vendor purchase order change (MiscCode)
 		- Purchase invoice (MiscCode)
-	- [POA response code group](../SETUP/VENDOR-SETUP/POA-response-code-group.md)
+	- [POA response code group](../SETUP/VENDOR-SETUP/POA-response-code-group)
 		- Vendor purchase order acknowledgement (POAVendCode, POAVendCodeItem and POAVendCodeShipment)
-	- [Payment terms type group](../SETUP/VENDOR-SETUP/Payment-terms-type-group.md)
+	- [Payment terms type group](../SETUP/VENDOR-SETUP/Payment-terms-type-group)
 		- Vendor purchase order (TermsTypeCode) 
 		- Vendor purchase order change (TermsTypeCode)
 		- Purchase invoice (TermsTypeCode)
-	- [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator.md)
+	- [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator)
 		- Vendor purchase order (MiscIndicator) 
 		- Vendor purchase order change (MiscIndicator)
 		- Purchase invoice (MiscIndicator)
-	- [Misc method of handling](../SETUP/VENDOR-SETUP/Misc-method-of-handling.md)
+	- [Misc method of handling](../SETUP/VENDOR-SETUP/Misc-method-of-handling)
 		- Purchase invoice (MiscMethodHandling)
 
 - Core Setup: **EDI > Setup** <br>
-	- [Unit of measure mapping](../../CORE/Setup/UOM-mapping.md)
+	- [Unit of measure mapping](../../CORE/Setup/UOM-mapping)
 
 #### Vendor Document type setup
 Setup Document types which will be assigned on Vendor Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Document types**
 
-- [File templates](../../CORE/Setup/DocumentTypes/File-templates.md): applicable to all document types
+- [File templates](../../CORE/Setup/DocumentTypes/File-templates): applicable to all document types
 - Setting profiles: applicable to the following document types
-    - [Vendor purchase order](../SETUP/SETTING-PROFILES/Vendor-purchase-order.md)
-    - [Vendor purchase order change](../SETUP/SETTING-PROFILES/Vendor-purchase-order-change.md)
-    - [Vendor purchase order acknowledgement](../SETUP/SETTING-PROFILES/Vendor-purchase-order-acknowledgement.md)
-    - [Vendor advanced shipping notice](../SETUP/SETTING-PROFILES/Vendor-advanced-shipping-notice.md)
-    - [Purchase invoice](../SETUP/SETTING-PROFILES/Purchase-invoice.md)
+    - [Vendor purchase order](../SETUP/SETTING-PROFILES/Vendor-purchase-order)
+    - [Vendor purchase order change](../SETUP/SETTING-PROFILES/Vendor-purchase-order-change)
+    - [Vendor purchase order acknowledgement](../SETUP/SETTING-PROFILES/Vendor-purchase-order-acknowledgement)
+    - [Vendor advanced shipping notice](../SETUP/SETTING-PROFILES/Vendor-advanced-shipping-notice)
+    - [Purchase invoice](../SETUP/SETTING-PROFILES/Purchase-invoice)
 - Validation profiles: applicable to the following inbound document types
-    - [Vendor purchase order acknowledgement](../SETUP/VALIDATION-PROFILES/Vendor-purchase-order-acknowledgement.md)
-    - [Vendor advanced shipping notice](../SETUP/VALIDATION-PROFILES/Vendor-advanced-shipping-notice.md)
-    - [Purchase invoice](../SETUP/VALIDATION-PROFILES/Purchase-invoice.md)
-- [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames.md): applicable to all outbound document types
-- [Field metadata](../../CORE/Setup/DocumentTypes/Field-metadata.md): optionally update staging form's display name and help text per field
+    - [Vendor purchase order acknowledgement](../SETUP/VALIDATION-PROFILES/Vendor-purchase-order-acknowledgement)
+    - [Vendor advanced shipping notice](../SETUP/VALIDATION-PROFILES/Vendor-advanced-shipping-notice)
+    - [Purchase invoice](../SETUP/VALIDATION-PROFILES/Purchase-invoice)
+- [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames): applicable to all outbound document types
+- [Field metadata](../../CORE/Setup/DocumentTypes/Field-metadata): optionally update staging form's display name and help text per field
 
 #### Trading partner setup
 Create new trading partners and assign setup and incoming/outgoing documents. <br>
 Users can access the form by navigating to **EDI > Setup > Trading partners**
-- [Trading partner](../SETUP/Trading-partner.md)
+- [Trading partner](../SETUP/Trading-partner)
 
 ## Processing
 
 ### Import files
 Ability to manually import or review inbound files
-- [Inbound files](../../CORE/Managing-files/Inbound-files.md)
+- [Inbound files](../../CORE/Managing-files/Inbound-files)
 
 ### Export files
 Ability to manually export or review outbound files
-- [Outbound files](../../CORE/Managing-files/Outbound-files.md)
+- [Outbound files](../../CORE/Managing-files/Outbound-files)
 
 ### Vendor documents
 Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents > Vendor documents**
-- [Vendor purchase order](../DOCUMENTS/Vendor-purchase-order.md)
-- [Vendor purchase order change](../DOCUMENTS/Vendor-purchase-order-change.md)
-- [Vendor purchase order acknowledgement](../DOCUMENTS/Vendor-purchase-order-acknowledgement.md)
-- [Vendor advanced shipping notice](../DOCUMENTS/Vendor-advanced-shipping-notice.md)
-- [Purchase invoice](../DOCUMENTS/Purchase-invoice.md)
+- [Vendor purchase order](../DOCUMENTS/Vendor-purchase-order)
+- [Vendor purchase order change](../DOCUMENTS/Vendor-purchase-order-change)
+- [Vendor purchase order acknowledgement](../DOCUMENTS/Vendor-purchase-order-acknowledgement)
+- [Vendor advanced shipping notice](../DOCUMENTS/Vendor-advanced-shipping-notice)
+- [Purchase invoice](../DOCUMENTS/Purchase-invoice)
 
-[Process overview](Process-overview.md) for Vendor EDI documents.
+[Process overview](Process-overview) for Vendor EDI documents.
 
 ### Workspaces
 The following workspaces are available:
-- [EDI Document maintenance](../../CORE/Workspaces/EDI-Document-maintenance-workspace.md)
-- [EDI Purchase order processing](../WORKSPACES/EDI-Purchase-order-processing.md)
+- [EDI Document maintenance](../../CORE/Workspaces/EDI-Document-maintenance-workspace)
+- [EDI Purchase order processing](../WORKSPACES/EDI-Purchase-order-processing)
 
 ## Other
-- [Data entities](../OTHER/Data-entities.md)
-- [Security configuration](../OTHER/Security-configuration.md)
-- [Frequently asked questions](FAQ.md) - Includes example errors and recommended fixes
+- [Data entities](../OTHER/Data-entities)
+- [Security configuration](../OTHER/Security-configuration)
+- [Frequently asked questions](FAQ) - Includes example errors and recommended fixes

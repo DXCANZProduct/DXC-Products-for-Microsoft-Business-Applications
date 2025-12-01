@@ -1,9 +1,9 @@
 ---
 layout: releasenotes-content
 header: License Manager
-title: 20240605.2
-release-version: 20240605.2
-markAsPrevious: false
+title: 20250730.1
+release-version: 20250730.1
+state: current
 toc: true
 ---
 

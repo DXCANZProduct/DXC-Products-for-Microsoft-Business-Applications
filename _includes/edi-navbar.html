@@ -1,11 +1,12 @@
 <div class="content">
-    <details open>
+    <div class="row">
+      <details open>
         <summary>Release Notes</summary>
         <ul>
             <li class="list-style-type">
               {% assign edis = site.edi | sort: 'release-version' | reverse%}
               {% for record in edis %}
-                  {%if record.url contains "edi/releasenotes" and record.markAsPrevious == false%}
+                  {%if record.url contains "edi/releasenotes" and record.state == "current"%}
                   <li class="list-style-type">
                     <a href="{{ record.url }}">{{record.title}}</a>
                   </li>
@@ -14,11 +15,24 @@
               <details>
                 <summary>Previous Versions</summary>
                 <ul>
-                    {% assign coreextension = site.coreextensions | sort: 'release-version' | reverse%}
-                    {% for coreext in coreextension %}
-                        {%if coreext.url contains "coreextensions/releasenotes" and coreext.markAsPrevious == true%}
+                    {% assign edis = site.edi | sort: 'release-version' | reverse%}
+                    {% for record in edis %}
+                        {%if record.url contains "edi/releasenotes" and record.state == "previous"%}
                         <li class="list-style-type">
-                          <a href="{{ coreext.url }}">{{coreext.title}}</a>
+                          <a href="{{ record.url }}">{{record.title}}</a>
+                        </li>
+                        {% endif%}
+                    {% endfor %}
+                </ul>
+              </details>
+              <details>
+                <summary>Archive</summary>
+                <ul>
+                    {% assign edis = site.edi | sort: 'release-version' | reverse%}
+                    {% for record in edis %}
+                        {%if record.url contains "edi/releasenotes" and record.state == "archive"%}
+                        <li class="list-style-type">
+                          <a href="{{ record.url }}">{{record.title}}</a>
                         </li>
                         {% endif%}
                     {% endfor %}
@@ -27,7 +41,6 @@
             </li>
           </ul>
       </details>
-    <div class="row">
       <details>
       <summary>
         In this article

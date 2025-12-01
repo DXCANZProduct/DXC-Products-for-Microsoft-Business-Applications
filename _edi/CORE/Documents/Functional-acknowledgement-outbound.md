@@ -1,48 +1,25 @@
 ---
-# required metadata
-
-title: EDI Core
-description: EDI Core Documents - Functional acknowledgement outbound
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-09-23
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIFunctionalAckDocumentTypeMapping
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDI
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Functional acknowledgement outbound
 
 When a Trading partner requires a Functional Acknowledgement for sent EDI files, the following is required:
-1.	Create document [Template](../Setup/DocumentTypes/File-templates.md) for Functional acknowledgement outbound.
-2.	If required, create [Setting profile](../Setup/DocumentTypes/Setting-profiles.md) for the Functional acknowledgement outbound. See below.
-3.	Add the Functional acknowledgement outbound document type to [Trading Partner’s](../Setup/Trading-partners.md) Outgoing documents and Enable.
-4.	On each applicable incoming documents for the [Trading partner](../Setup/Trading-partners.md), set **Acknowledgement** to _Yes_.
+1.	Create document [Template](../Setup/DocumentTypes/File-templates) for Functional acknowledgement outbound.
+2.	If required, create [Setting profile](../Setup/DocumentTypes/Setting-profiles) for the Functional acknowledgement outbound. See below.
+3.	Add the Functional acknowledgement outbound document type to [Trading Partner’s](../Setup/Trading-partners) Outgoing documents and Enable.
+4.	On each applicable incoming documents for the [Trading partner](../Setup/Trading-partners), set **Acknowledgement** to _Yes_.
 
 ## Setting profiles
 
 Users can access the form by navigating to **EDI > Setup > Document types** and filtering/selecting the **Functional acknowledgement outbound** document. <br>
-See [Setting profiles](../Setup/DocumentTypes/Setting-profiles.md) for more details on how to create a Setting profile.
+See [Setting profiles](../Setup/DocumentTypes/Setting-profiles) for more details on how to create a Setting profile.
 
 **Field** 	                                | **Description**                     | **Options/example**
 :--------------------------------           |:------------------------------------|:------------------------------------
-**Document type mapping**                   | Assign applicable document type mapping to setting	| Mappings setup at [**EDI > Setup > Document type mapping**](../Setup/Document-type-mapping.md)
+**Document type mapping**                   | Assign applicable document type mapping to setting	| Mappings setup at [**EDI > Setup > Document type mapping**](../Setup/Document-type-mapping)
 
 ## View Staging table records
 
@@ -68,7 +45,7 @@ Use this form to review staging records and optionally manually process the stag
 **Trading partner GLN**           |	The trading partners’ global location number is shown here.
 **Company GLN**                   |	The company’s global location number is shown here.
 **Group control number**          |	Trading partner’s original document that is being acknowledged's group control number.
-**Document type**                 |	Trading partner’s original document type being acknowledged. [Document type mapping](../Setup/Document-type-mapping.md)
+**Document type**                 |	Trading partner’s original document type being acknowledged. [Document type mapping](../Setup/Document-type-mapping)
 **Created date and time**         |	The date and time the staging record was created.
 
 #### Buttons

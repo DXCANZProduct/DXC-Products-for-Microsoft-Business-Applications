@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI 3PL
-description: EDI 3PL Documents - Inventory adjustment - Transfer
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2024-05-01
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDI3PLWHSInventStatusMapping, Action:SAB_EDIStagingFormRun_InventAdjAdvice
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: IconEDI3PLDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Inventory adjustment - Transfer
@@ -49,19 +26,19 @@ The following setup is prerequisites for the Inventory adjustment - Transfer
 
 ### 3PL setup
 EDI > Setup > 3PL setup
-1. Create [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) to map the 3PL's values to D365 inventory statuses.
+1. Create [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping) to map the 3PL's values to D365 inventory statuses.
 
 ### Document type setup
 EDI > Setup > Document types: Inventory adjustment - Transfer
-1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Transfer.md) for the document.
+1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+1. Create [Setting profile](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Transfer) for the document.
 
 ### Trading partners
 EDI > Setup > Trading partners
-1. If the warehouse [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+1. If the warehouse [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
 1. Assign the 3PL setup to the warehouse trading partner's options:
     -  Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
-1. Add and enable the **Inventory adjustment - Transfer** document to the [Warehouse trading partner](../SETUP/Trading-partner.md) and select the applicable:
+1. Add and enable the **Inventory adjustment - Transfer** document to the [Warehouse trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - Search mask
@@ -82,7 +59,7 @@ Header checks are performed when:
 3. Processing from staging to target
 
 ### Step 1 - Import
-When an EDI file is imported, the file name is key to identifying the trading partner and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
+When an EDI file is imported, the file name is key to identifying the trading partner and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
 
 > Note: The file mask is used to identify the trading partner and therefore template
 
@@ -117,7 +94,7 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 At this step the issues are usually around mapping/business logic issues. <br>
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table. <br>
-Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#inventory-adjustment-transfer).
+Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ#inventory-adjustment-transfer).
 
 ## View staging table records
 To view the Inventory adjustment - Transfer staging records, go to **EDI > Documents > 3PL documents > Inventory adjustment > Inventory adjustment - Transfer**. <br>
@@ -128,7 +105,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created the transfer journal and optional posted the transfer journal. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -146,7 +123,7 @@ The following buttons are available on the **Inventory adjustment - Transfer**'s
 **Process inventory adjustment**| Process inventory adjustment for the selected record in the staging table.
 **Process all inventory adjustments**	| Process inventory adjustments for the staging records that have a **Staging to target status** set to _Not started_.
 **Inbound files**               | View the inbound file record the selected staging record.
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner) page.
 **Transfer**                    | If the EDI document has been completed it is possible to inquire on the transfer journal from this button.
 **Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
 **Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
@@ -198,8 +175,8 @@ The following EDI Line fields are available on the lines page. <br>
 **To batch number**         | Tracking dimensions – Batch number. <br> If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch.	| Transfer journal line > To batch number
 **Manufacturing date**      | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an existing D365 batch.	| Batches > Manufacturing date
 **Expiration date**         | If D365 batch doesn’t exists, and document setting **Create batch** allows batch creation this will be used in creating the new D365 batch. Doesn't update an already D365 batch.	| Batches > Expiration date
-**Inventory status from**   | Storage dimensions – Inventory status. <br> Mapped value for [Inventory status](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) | Transfer journal line > From Inventory status
-**Inventory status to**     | Storage dimensions – Inventory status. <br> Mapped value for [Inventory status](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) | Transfer journal line > To Inventory status
+**Inventory status from**   | Storage dimensions – Inventory status. <br> Mapped value for [Inventory status](../SETUP/3PL-SETUP/Inventory-status-Id-mapping) | Transfer journal line > From Inventory status
+**Inventory status to**     | Storage dimensions – Inventory status. <br> Mapped value for [Inventory status](../SETUP/3PL-SETUP/Inventory-status-Id-mapping) | Transfer journal line > To Inventory status
 **From location**           | Storage dimensions – From location                                        | Transfer journal line > From location
 **To location**             | Storage dimensions – To location                                          | Transfer journal line > To location
 

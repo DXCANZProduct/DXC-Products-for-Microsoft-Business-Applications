@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI
-description: Technical guide - FAQ
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-04-28
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDI
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Technical FAQ
@@ -68,7 +45,7 @@ Run full DB sync
 Standard actions you can try:
 
 1. Try to repeat the deploy one more time and/or restart UAT VM in case if something went wrong and the file mentioned  is really locked by some system process
-1. If still doesn’t work, follow the recommended implementation steps as per [release notes](../../Release-notes.md#installation-process) (example remove source code of previous EDI version)
+1. If still doesn’t work, follow the recommended implementation steps as per [release notes](../../Release-notes#installation-process) (example remove source code of previous EDI version)
 
 ## Deployment issues with model source code
 

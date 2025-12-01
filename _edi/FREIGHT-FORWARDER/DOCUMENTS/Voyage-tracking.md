@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Freight forwarder
-description: EDI Freight forwarder Documents - Voyage tracking
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-08-29
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: Action:SAB_EDIStagingFormRun_FFLCVoyageTracking, SAB_EDIFFLCShipPortTableMapping, SAB_EDIFFLCVendDlvModeMapping, SAB_EDIFFLCShipActivityTableMapping, SAB_EDIFFLCShipPortQualifierMapping
-audience: Application User
-# ms.devlang:
-ms.reviewer: Monica du Toit
-# ms.tgt_pltfrm:
-ms.custom: 
-ms.search.region: IconEDIFreightForwarderDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Voyage tracking
@@ -50,25 +27,25 @@ The following setup is prerequisites for the **Voyage tracking**
 ### Freight forwarder landed cost setup
 EDI > Setup > Freight forwarder landed cost setup <br>
 Where the Freight forwarder's values differ to D365/EDI values - use the following mappings for the Voyage tracking:
-1. Create [Shipping port mapping](../SETUP/FF-SETUP/Shipping-port-mapping.md) to map the Trading partner's values to D365 Landed cost shipping port.
-2. Create [Modes of delivery mapping](../SETUP/FF-SETUP/Modes-of-delivery-mapping.md) to map the Trading partner's values to D365 Modes of delivery.
-3. Create [Activity mapping](../SETUP/FF-SETUP/Activity-mapping.md) to map the Trading partner's values to EDI Activities.
-4. Create [Shipping port qualifier mapping](../SETUP/FF-SETUP/Shipping-port-qualifier-mapping.md) to map the Trading partner's values to EDI Shipping port qualifier.
+1. Create [Shipping port mapping](../SETUP/FF-SETUP/Shipping-port-mapping) to map the Trading partner's values to D365 Landed cost shipping port.
+2. Create [Modes of delivery mapping](../SETUP/FF-SETUP/Modes-of-delivery-mapping) to map the Trading partner's values to D365 Modes of delivery.
+3. Create [Activity mapping](../SETUP/FF-SETUP/Activity-mapping) to map the Trading partner's values to EDI Activities.
+4. Create [Shipping port qualifier mapping](../SETUP/FF-SETUP/Shipping-port-qualifier-mapping) to map the Trading partner's values to EDI Shipping port qualifier.
 
 ### Document type setup
 EDI > Setup > Document types: Voyage tracking
-1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING-PROFILES/Voyage-tracking.md) for the document.
+1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+1. Create [Setting profile](../SETUP/SETTING-PROFILES/Voyage-tracking) for the document.
 
 ### Trading partners
 EDI > Setup > Trading partners
-1. If the Freight forwarder landed cost [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+1. If the Freight forwarder landed cost [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
 1. Assign the Freight forwarder landed cost setup to the trading partner's options:
     -  Shipping port mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Shipping port mapping**
     -  Modes of delivery mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Modes of delivery mapping**
     -  Activity mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Activity mapping**
     -  Shipping port qualifier mapping: Options from **EDI > Setup > Freight forwarder landed cost setup > Shipping port qualifier mapping**
-1. Add and enable the **Voyage tracking** document to the [Freight forwarder landed cost trading partner](../SETUP/Trading-partner.md) and select the applicable:
+1. Add and enable the **Voyage tracking** document to the [Freight forwarder landed cost trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - Search mask
@@ -91,7 +68,7 @@ Header checks are performed when:
 ![alt text](../IMAGE/HeaderLineChecks_FFVoyageTracking.png "Header and line checks for Voyage tracking")
 
 ### Step 1 - Import
-When an EDI file is imported, the file name is key to identifying the trading partner and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
+When an EDI file is imported, the file name is key to identifying the trading partner and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
 
 > Note: The file mask is used to identify the trading partner and therefore template
 
@@ -126,7 +103,7 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 At this step the issues are usually around mapping/business logic issues. <br>
 Review the **Log** or **Version log** for the applicable record to find the issue. <br>
-Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#voyage-tracking).
+Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ#voyage-tracking).
 
 ### Staging line validation
 
@@ -138,7 +115,7 @@ Voyage	                    | Find the D365 Voyage to which the voyage tracking b
 ### Activity
 Activity is mapped on Trading partner form’s Options. This is used to find the applicable leg on the Voyage’s tracking and if the start or end date should be updated. 
 
-Example X12 Shipment status codes mapped to D365 Activity in EDI's [Activity mapping](../SETUP/FF-SETUP/Activity-mapping.md):
+Example X12 Shipment status codes mapped to D365 Activity in EDI's [Activity mapping](../SETUP/FF-SETUP/Activity-mapping):
 
 X12 Shipment status code    | X12 Description	                                | Landed cost Activity	    | Date selection
 :--                         |:--                                                |:--                        |:--
@@ -152,7 +129,7 @@ X12 Shipment status code    | X12 Description	                                | 
 **D**                       | Actual Door Delivery	                            | Local	                    | End date
 
 #### Estimated/Actual days
-The [Voyage tracking’s](../SETUP/SETTING-PROFILES/Voyage-tracking.md) document setup specifies what indicator the Trading partner will use for estimated vs. actual days. <br>
+The [Voyage tracking’s](../SETUP/SETTING-PROFILES/Voyage-tracking) document setup specifies what indicator the Trading partner will use for estimated vs. actual days. <br>
 Since Landed cost only has an estimate for end dates, the date qualifier doesn’t affect start dates. <br>
 
 Example X12 date qualifiers:
@@ -189,7 +166,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and updated Landed cost Voyage's tracking leg. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -207,7 +184,7 @@ The following buttons are available on the **Voyage tracking**'s Action Pane, ta
 **Process selected voyages**    | Process voyage tracking for the selected record in the staging table.
 **Process all voyages**         | Process voyage tracking for the staging records that have a **Staging to target status** set to _Not started_. 
 **Inbound files**               | View the inbound file record the selected staging record.
-**Trading partner**             | View the trading partner details in the [Trading partners](../SETUP/Trading-partner.md) page.
+**Trading partner**             | View the trading partner details in the [Trading partners](../SETUP/Trading-partner) page.
 **Voyages**                     | If the EDI staging record has been completed it is possible to inquire on the applicable Landed cost voyages.
 **Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
 **Version log**                 | View all log versions. When a document’s status is reset and reprocessed, a new log version is created. Can view all log versions.
@@ -254,7 +231,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Port qualifier**          | If port is provided, indicates if it is the **From** or **To port** for the leg	| Used to find Voyage tracking leg
 **Mode of delivery**        | Mode of delivery for the leg	
 **Date**                    | Date the activity will or has occurred	| Voyage > Tracking > Start date OR <br> Estimated end date OR <br> Actual end date
-**Date qualifier**          | Specifies the type of Date and mapped in [document settings](../SETUP/SETTING-PROFILES/Voyage-tracking.md). Options are: <br> • Estimated <br> • Actual <br> Used to determine which Tracking date will be updated where the Activity is for an End date. <br> Start date doesn’t have an estimated vs. actual, therefor no effect on where date is populated for a Start date.	
+**Date qualifier**          | Specifies the type of Date and mapped in [document settings](../SETUP/SETTING-PROFILES/Voyage-tracking). Options are: <br> • Estimated <br> • Actual <br> Used to determine which Tracking date will be updated where the Activity is for an End date. <br> Start date doesn’t have an estimated vs. actual, therefor no effect on where date is populated for a Start date.	
 **Note**                    | Notes for the tracking update. Will override any current notes for the tracking leg.  | Voyage > Tracking > Notes
 
 ### EDI history

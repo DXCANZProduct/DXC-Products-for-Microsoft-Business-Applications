@@ -3,7 +3,7 @@ layout: releasenotes-content
 header: Finance Utilities
 title: Release notes - Archive
 release-version: 10.0.36.20231116
-markAsPrevious: true
+state: archive
 ---
 
 ### Release 10.0.36.20231116

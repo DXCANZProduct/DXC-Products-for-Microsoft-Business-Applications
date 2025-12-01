@@ -6,7 +6,7 @@
         <li class="list-style-type">
           {% assign connection = site.connections | sort: 'release-version' | reverse%}
           {% for conn in connection %}
-              {%if conn.url contains "connections/releasenotes" and conn.markAsPrevious == false%}
+              {%if conn.url contains "connections/releasenotes" and conn.state == "current"%}
               <li class="list-style-type">
                 <a href="{{ conn.url }}">{{conn.title}}</a>
               </li>
@@ -17,7 +17,20 @@
             <ul>
               {% assign connection = site.connections | sort: 'release-version' | reverse%}
               {% for conn in connection %}
-                  {%if conn.url contains "connections/releasenotes" and conn.markAsPrevious == true%}
+                  {%if conn.url contains "connections/releasenotes" and conn.state == "previous"%}
+                  <li class="list-style-type">
+                    <a href="{{ conn.url }}">{{conn.title}}</a>
+                  </li>
+                  {% endif%}
+              {% endfor %}
+            </ul>
+          </details>
+          <details>
+            <summary>Archive</summary>
+            <ul>
+              {% assign connection = site.connections | sort: 'release-version' | reverse%}
+              {% for conn in connection %}
+                  {%if conn.url contains "connections/releasenotes" and conn.state == "archive"%}
                   <li class="list-style-type">
                     <a href="{{ conn.url }}">{{conn.title}}</a>
                   </li>

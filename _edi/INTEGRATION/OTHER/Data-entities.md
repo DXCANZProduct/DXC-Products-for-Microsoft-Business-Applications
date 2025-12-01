@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Customer
-description: EDI Customer - Data entities
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-07-20
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIDocumentTypeTable, SAB_EDIParameters, SAB_EDICustOrderTypeMapping, SAB_EDICustOrderPurposeMapping, SAB_EDICustPOACodesMapping,SAB_EDICustOrderLineChangeMapping
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIIntegrationSystemsDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Data entities
@@ -65,7 +42,7 @@ EDI > Setup > Document types (Setting profiles for EDI customer documents)
 ## Document types
 EDI > Setup > Document types (Template, Validation, Outbound file names and EDI Field metadata)
 
-See [Core data entities](../../CORE/OTHER/Data-entities.md#document-types)
+See [Core data entities](../../CORE/OTHER/Data-entities#document-types)
 
 ## Trading partner
 EDI > Setup > Trading partner
@@ -73,5 +50,5 @@ EDI > Setup > Trading partner
 **Order**         | **Entity**						| **Description**                             | **Dependency**
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
 1                 | EDI Customers                           | Create new Customer trading partner   | [Customer setup](#customer-setup)
-2                 | EDI Documents - Customers               | Add incoming and outgoing documents to Customer trading partner | EDI Customers, [Customer setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data-entities.md#document-types)
+2                 | EDI Documents - Customers               | Add incoming and outgoing documents to Customer trading partner | EDI Customers, [Customer setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data-entities#document-types)
 3                 | Customer postal addresses                 | Standard data entity with addition of EDI field SAB_EDIStoreCode | 

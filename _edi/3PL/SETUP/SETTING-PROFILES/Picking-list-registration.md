@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI 3PL
-description: EDI 3PL Setup - Document type Setting profiles - Picking list registration
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-04-13
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIDocumentTypeTable, SAB_EDITradingPartner
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDI3PLDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # 3PL document type setting profiles - Picking list registration
@@ -47,7 +24,7 @@ Users can access the form by navigating to **EDI > Setup > Document types**.
 **Ship transfer order** |	When the pick list registration is received and processed, the transfer order can be automatically shipped.	| • **No** – Only the picking list registration is posted. User will need to manually Ship transfer order <br> • **Yes** – The picking list registration is posted, and the Transfer order is automatically shipped. The posting date will be set to Today’s date (as per user’s time zone)
 
 ## Where used
-The **Setting profile** can be assigned on the Incoming documents FastTab to document type [Picking list registration](../../DOCUMENTS/Picking-list-registration.md) for the 3PL Trading partner at **EDI > Setup > Trading partners**.
+The **Setting profile** can be assigned on the Incoming documents FastTab to document type [Picking list registration](../../DOCUMENTS/Picking-list-registration) for the 3PL Trading partner at **EDI > Setup > Trading partners**.
 
 ## Data entity
 - EDI Settings - Picking list registration

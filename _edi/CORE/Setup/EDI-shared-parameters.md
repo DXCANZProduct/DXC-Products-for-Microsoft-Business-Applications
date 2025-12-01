@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Core
-description: EDI Core - Setup EDI shared parameters
-author: jdutoi2
-manager: Kym Parker
-ms.date: 2022-09-27
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDISharedParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDI
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # EDI shared parameters
@@ -33,8 +10,8 @@ The **EDI shared parameters** page is used to define settings that apply across 
 To open the **EDI shared parameters** page, go to **EDI > Setup > EDI shared parameters**. Then set the fields as described in the following subsections.
 
 ## Prerequisites ##
-* Setup [Cleanup profile](Cleanup-profile.md)
-* Setup [Reset status profile](Reset-status.md#setup-reset-status-profile)
+* Setup [Cleanup profile](Cleanup-profile)
+* Setup [Reset status profile](Reset-status#setup-reset-status-profile)
 
 ## Setup EDI shared parameters
 The following table describes the fields that are available on the **General** tab on the **EDI shared parameters** page.

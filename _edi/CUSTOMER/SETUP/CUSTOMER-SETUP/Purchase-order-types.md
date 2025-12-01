@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Customer
-description: EDI Customer setup - Purchase order types
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-09-23
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDICustOrderTypeMapping
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDICustomerDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Customer setup
@@ -56,7 +33,7 @@ Examples: <br>
 **Release order**                 |	**RL** - Release or Delivery Order	  | **226** - Call off order
 
 ## Where used
-Customer EDI order type group is assigned on the [Customer Trading partner's](../Trading-partner.md) Options field called **Customer EDI order types**.
+Customer EDI order type group is assigned on the [Customer Trading partner's](../Trading-partner) Options field called **Customer EDI order types**.
 
 ## Data entities:
 - Customer EDI order type group

@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Vendor
-description: EDI Vendor - Data entities
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-11-16
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIVendOrderTypeMapping, SAB_EDIVendOrderPurposeMapping, SAB_EDIVendOrderLineChangeMapping, SAB_EDIVendCarrierModeMapping, SAB_EDIVendChargesCodeMapping, SAB_EDIVendPOACodesMapping, SAB_EDIVendPaymentTermsMapping, SAB_EDIVendMiscChargeIndicatorMapping, SAB_EDIVendMiscMethodHandlingMapping , SAB_EDIDocumentTypeTable, SAB_EDITradingPartner
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIVendorDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Data entities
@@ -70,7 +47,7 @@ EDI > Setup > Document types (Setting profiles for EDI vendor documents)
 ## Document types
 EDI > Setup > Document types (Template, Validation, Outbound file names and EDI Field metadata)
 
-See [Core data entities](../../CORE/OTHER/Data-entities.md#document-types)
+See [Core data entities](../../CORE/OTHER/Data-entities#document-types)
 
 ## Trading partner
 EDI > Setup > Trading partner
@@ -78,4 +55,4 @@ EDI > Setup > Trading partner
 **Order**         | **Entity**						| **Description**                             | **Dependency**
 :-----------------|:------------------------------------		|:------------------------- |:-------------------------
 1                 | EDI Vendors                             | Create new Vendor trading partner   | [Vendor setup](#vendor-setup)
-2                 | EDI Documents - Vendors                 | Add incoming and outgoing documents to Vendor trading partner | EDI Vendors, [Vendor setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data-entities.md#document-types)
+2                 | EDI Documents - Vendors                 | Add incoming and outgoing documents to Vendor trading partner | EDI Vendors, [Vendor setting profiles](#document-setting-profiles)  and [Document types](../../CORE/OTHER/Data-entities#document-types)

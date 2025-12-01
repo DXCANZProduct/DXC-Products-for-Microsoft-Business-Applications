@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Freight forwarder
-description: EDI Freight forwarder setup - Activity mapping
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-11-25
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIFFLCShipActivityTableMapping, ITMActivityTable
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIFreightForwarderDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Freight forwarder setup
@@ -45,7 +22,7 @@ Code mapping the Freight forwarders's value to a D365 Landed cost Activity and i
 -	Specify the Freight forwarder's **Value**. Blank is not allowed.
 
 ## Where used
-Activity mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading-partner.md) Options field called **Activity**.
+Activity mapping is assigned on the [Freight forwarder landed cost Trading partner's](../Trading-partner) Options field called **Activity**.
 
 Used on the following EDI documents (field):
 - Voyage tracking (Activity)

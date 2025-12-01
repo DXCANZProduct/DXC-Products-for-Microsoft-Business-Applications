@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Vendor
-description: EDI Vendor Documents - Vendor purchase order
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-03-14
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PurchTableListPage, Action:SAB_EDIStagingFormRun_VendPO, SAB_EDIVendOrderTypeMapping, SAB_EDIVendOrderPurposeMapping, SAB_EDIVendCarrierModeMapping, SAB_EDIVendChargesCodeMapping, SAB_EDIVendPaymentTermsMapping, SAB_EDIVendMiscChargeIndicatorMapping
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: 
-ms.search.region: IconEDIVendorDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Vendor purchase order
@@ -34,24 +11,24 @@ The following setup is prerequisites for the vendor purchase order
 
 ### Vendor setup
 EDI > Setup > Vendor setup
-1. Create [Order type group](../SETUP/VENDOR-SETUP/Order-type-group.md) - mapped to OrderType on the document.
-1. Create [Order purpose groups](../SETUP/VENDOR-SETUP/Order-purpose-group.md) - mapped to OrderPurpose on the document.
-2. Create [Carrier mode](../SETUP/VENDOR-SETUP/Carrier-mode.md) - mapped to CarrierMode on the document.
-1. Create [Charges code](../SETUP/VENDOR-SETUP/Charges-code.md) - mapped to MiscCode on the document.
-1. Create [Payment terms type group](../SETUP/VENDOR-SETUP/Payment-terms-type-group.md) - mapped to TermsTypeCode on the document.
-1. Create [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator.md) - mapped to MiscIndicator on the document.
+1. Create [Order type group](../SETUP/VENDOR-SETUP/Order-type-group) - mapped to OrderType on the document.
+1. Create [Order purpose groups](../SETUP/VENDOR-SETUP/Order-purpose-group) - mapped to OrderPurpose on the document.
+2. Create [Carrier mode](../SETUP/VENDOR-SETUP/Carrier-mode) - mapped to CarrierMode on the document.
+1. Create [Charges code](../SETUP/VENDOR-SETUP/Charges-code) - mapped to MiscCode on the document.
+1. Create [Payment terms type group](../SETUP/VENDOR-SETUP/Payment-terms-type-group) - mapped to TermsTypeCode on the document.
+1. Create [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator) - mapped to MiscIndicator on the document.
 
 ### Document type setup
 EDI > Setup > Document types: Vendor purchase order
-1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-2. Create [Setting profile](../SETUP/SETTING-PROFILES/Vendor-purchase-order.md) for the document.
-3. Create [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
+1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+2. Create [Setting profile](../SETUP/SETTING-PROFILES/Vendor-purchase-order) for the document.
+3. Create [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames) for the document.
 
 ### Trading partners
 EDI > Setup > Trading partners
-1. If the vendor [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+1. If the vendor [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
 1. Assign the **Vendor setup** to the vendor trading partner's options.
-1. Add and enable the **vendor purchase order** document to the [Vendor trading partner](../SETUP/Trading-partner.md) and select the applicable:
+1. Add and enable the **vendor purchase order** document to the [Vendor trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - File name setup
@@ -124,7 +101,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company**             | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -147,7 +124,7 @@ The following buttons are available on the **Vendor purchase order** Action Pane
 **Create selected files**       | Creates the outbound file for selected records where **Staging to target status** is set to _Not started_
 **Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_
 **Outbound files**              | View the outbound file record created by the selected staging record
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner) page
 **Purchase order**              | View the originating purchase order; enabled where the record was created from a purchase order
 **Purchase agreement**          | View the originating purchase agreement; enabled where the record was created from a purchase agreement
 **Vendor**                      | View the vendor account
@@ -184,8 +161,8 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Overview**</ins>		|
 **Purchase order**          | The D365 purchase order number	
 **Purchase order date**     | The original purchase order date from the purchase order is shown here	| Original order date
-**EDI order type**          | The EDI order type is shown here. <br> Mapped value from [Order type group](../SETUP/VENDOR-SETUP/Order-type-group.md)  | Order type
-**EDI order purpose**       | The EDI order purpose is shown here. <br> Mapped value from [Order purpose group](../SETUP/VENDOR-SETUP/Order-purpose-group.md)  | Order purpose code
+**EDI order type**          | The EDI order type is shown here. <br> Mapped value from [Order type group](../SETUP/VENDOR-SETUP/Order-type-group)  | Order type
+**EDI order purpose**       | The EDI order purpose is shown here. <br> Mapped value from [Order purpose group](../SETUP/VENDOR-SETUP/Order-purpose-group)  | Order purpose code
 <ins>**Status**</ins>	|
 **Group control number**    |	Group control number for the outbound document. To be used to match inbound functional acknowledgement, where applicable.
 **Received**                |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
@@ -259,10 +236,10 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Transportation**</ins>		|
 **Shipping carrier**                | Shipping carrier	
 **Carrier qualifier**               | Code designating the system/method of code structure used for shipping carrier	
-**EDI carrier mode**                | Code specifying the method or type of transportation for the shipment. <br> Mapped value from [Carrier mode](../SETUP/VENDOR-SETUP/Carrier-mode.md)
+**EDI carrier mode**                | Code specifying the method or type of transportation for the shipment. <br> Mapped value from [Carrier mode](../SETUP/VENDOR-SETUP/Carrier-mode)
 <ins>**Miscellaneous**</ins>		|
-**Misc. indicator**                 | Code which indicates an allowance or charge for the service specified. <br> Mapped value from [Misc. charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator.md)	
-**EDI charges code**                | Code identifying the service, promotion, allowance, or charge. <br> Mapped value from [Charges code](../SETUP/VENDOR-SETUP/Charges-code.md)
+**Misc. indicator**                 | Code which indicates an allowance or charge for the service specified. <br> Mapped value from [Misc. charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator)	
+**EDI charges code**                | Code identifying the service, promotion, allowance, or charge. <br> Mapped value from [Charges code](../SETUP/VENDOR-SETUP/Charges-code)
 <ins>**Totals**</ins>	            |
 **Subtotal amount**                 | Subtotal of all purchase order lines	
 **Line discount**                   | Discount for all purchase order lines	
@@ -272,7 +249,7 @@ The following EDI Header staging fields are available on the header page.
 **Total amount**                    | Total amount	
 <ins>**Payment**</ins>		        |
 **Currency**	                    | Currency	
-**Terms code**                      | Payment terms. <br> Mapped value from [Payment terms type group](../SETUP/VENDOR-SETUP/Payment-terms-type-group.md)
+**Terms code**                      | Payment terms. <br> Mapped value from [Payment terms type group](../SETUP/VENDOR-SETUP/Payment-terms-type-group)
 **Terms net days**                  | Payment terms net due days calculated from delivery date. <br> Example with delivery date 16/04/2019 <br> •	Current month + 30 days = 44 <br> •	Current month + 2 months + 20 days and payment day = 15th = 90 <br> •	Current quarter + 15 days = 90 <br> •	Current year + 1 month = 290 <br> •	Current week + 7 days = 11 <br> •	Net + 1 month + 15 days = 45 <br> •	COD = 0
 **Cash discount**                   | Settlement discount percentage	
 **Days**                            | Settlement days	
@@ -301,7 +278,7 @@ The following EDI Line staging fields are available on the lines page.
 **Net unit price**          | Unit price net of all discounts	
 **Charges on purchases**    | The purchase charge that is calculated as a charge that is independent of the quantity on the purchase order line	
 **Misc charges**            | Miscellaneous charge/allowance allocated to purchase order line (Maintain charges)	
-**Misc indicator**          | Code which indicates an allowance or charge for the service specified. <br> Mapped value from [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator.md)
+**Misc indicator**          | Code which indicates an allowance or charge for the service specified. <br> Mapped value from [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator)
 **Line amount excluding tax**   | Net line amount excluding tax	                        | Original line amount
 **Line amount tax**         | Line tax amount	
 **Line amount including tax**   | Net line amount including tax	
@@ -311,7 +288,7 @@ The following EDI Line staging fields are available on the lines page.
 **Expiration date**         | Purchase agreement line expiration date	                | Original expiration date
 **Currency**                | Currency	
 **Inners quantity**         | Unit conversion quantity of inners to outers <br> Example qty 12 ea (inner) per box (outer)	
-**Inners unit**             | Inners unit of measure as setup on item’s [pack size](../../CORE/Setup/Item-pack-sizes.md)
+**Inners unit**             | Inners unit of measure as setup on item’s [pack size](../../CORE/Setup/Item-pack-sizes)
 **Pack quantity**           | Package quantity. Package (inner or outer) determined by purchase order / purchase order change’s setting profile **Package size – inner/outer**	
 **Pack unit**               | Unit determined by purchase order / purchase order change’s setting profile **Package size – inner/outer** <br> Inner and Outer unit setup on Item
 **Batch number**            | Batch number for the purchase line	

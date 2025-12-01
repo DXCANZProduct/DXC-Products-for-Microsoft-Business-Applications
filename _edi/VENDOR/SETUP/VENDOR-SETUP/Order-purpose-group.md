@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Vendor
-description: EDI Vendor setup - Order purpose group
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-11-09
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SAB_EDIVendOrderPurposeMapping  
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIVendorDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Vendor setup
@@ -54,7 +31,7 @@ Examples: <br>
 **Confirmation**                  |	06	                                  | 6
 
 ## Where used
-Order purpose group is assigned on the [Vendor Trading partner's](../Trading-partner.md) Options field called **Order purpose**. <br>
+Order purpose group is assigned on the [Vendor Trading partner's](../Trading-partner) Options field called **Order purpose**. <br>
 Used on field **OrderPurpose** on EDI documents:
 - Vendor purchase order
 - Vendor purchase order change

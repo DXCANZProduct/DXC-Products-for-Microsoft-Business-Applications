@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Customer
-description: EDI Customer Setup - Document type Setting profiles
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-07-25
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIDocumentTypeTable,  SAB_EDITradingPartner
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDICustomerDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Customer setup
@@ -40,10 +17,10 @@ Setting profiles can be created to specify the handling of specific scenarios. O
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details. 
 
 The following customer documents have setting profiles:
-- [Customer purchase order](SETTING-PROFILES/Customer-purchase-order.md)
-- [Customer purchase order change](SETTING-PROFILES/Customer-purchase-order-change.md)
-- [Customer purchase order acknowledgement](SETTING-PROFILES/Customer-purchase-order-acknowledgement.md)
-- [Customer advanced shipping notice](SETTING-PROFILES/Customer-advanced-shipping-notice.md)
-- [Sales invoice](SETTING-PROFILES/Sales-invoice.md)
-- [Project sales invoice](SETTING-PROFILES/Project-sales-invoice.md)
+- [Customer purchase order](SETTING-PROFILES/Customer-purchase-order)
+- [Customer purchase order change](SETTING-PROFILES/Customer-purchase-order-change)
+- [Customer purchase order acknowledgement](SETTING-PROFILES/Customer-purchase-order-acknowledgement)
+- [Customer advanced shipping notice](SETTING-PROFILES/Customer-advanced-shipping-notice)
+- [Sales invoice](SETTING-PROFILES/Sales-invoice)
+- [Project sales invoice](SETTING-PROFILES/Project-sales-invoice)
 

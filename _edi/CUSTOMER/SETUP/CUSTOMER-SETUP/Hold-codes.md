@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Customer
-description: EDI Customer setup - Order hold codes
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-10-01
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SAB_EDIParameters,  MCRHoldCodeTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDICustomerDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Customer setup
@@ -49,7 +26,7 @@ Users can access the form by navigating to **Sales and marketing > Setup > Sales
 < Note: This option should **not** be selected for EDI hold codes
 
 ## Where used
-The created Order hold codes are assigned on [EDI parameters](../../../CORE/Setup/EDI-parameters.md). <br>
+The created Order hold codes are assigned on [EDI parameters](../../../CORE/Setup/EDI-parameters). <br>
 Users can access the form by navigating to **EDI > Setup > EDI parameters**
 
 **Field** 	                    | **Description**

@@ -1,35 +1,12 @@
 ---
-# required metadata
-
-title: EDI Vendor
-description: EDI Vendor Documents - Vendor purchase order acknowledgement
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-04-27
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  PurchTableListPage, Action:SAB_EDIStagingFormRun_VendPOA, SAB_EDIVendPOACodesMapping
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIVendorDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Vendor purchase order acknowledgement
 
-Companies may require a vendor to send a purchase order acknowledgement (POA) for an order and can be one of the reasons a purchase order status is 'In external review'. <br> Where the [Vendor purchase order document setting profile](../SETUP/SETTING-PROFILES/Vendor-purchase-order.md) **Acknowledgement required** is set to _Yes_, the purchase order status will be set to **In external review** upon confirmation.
+Companies may require a vendor to send a purchase order acknowledgement (POA) for an order and can be one of the reasons a purchase order status is 'In external review'. <br> Where the [Vendor purchase order document setting profile](../SETUP/SETTING-PROFILES/Vendor-purchase-order) **Acknowledgement required** is set to _Yes_, the purchase order status will be set to **In external review** upon confirmation.
 
 The following subsections will describe how to view, process the acknowledgement and send a Vendor purchase order confirmation (if required). <br>
 The Acknowledgement can be viewed from the [Purchase order](#purchase-order) and confirmation values will be populated with default values per Trading partner.<br>
@@ -40,13 +17,13 @@ The processed purchase order acknowledgement and sent confirmation record(s) can
 ## Prerequisites
 The following setup is prerequisites for the vendor purchase order acknowledgement
 
-1. Create [POA response code groups](../SETUP/VENDOR-SETUP/POA-response-code-group.md) to map the vendor's values to EDI POA responses code groups.
-1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING-PROFILES/Vendor-purchase-order-acknowledgement.md) for the document.
-1. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Vendor-purchase-order-acknowledgement.md) for the document.
-1. If the vendor [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+1. Create [POA response code groups](../SETUP/VENDOR-SETUP/POA-response-code-group) to map the vendor's values to EDI POA responses code groups.
+1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+1. Create [Setting profile](../SETUP/SETTING-PROFILES/Vendor-purchase-order-acknowledgement) for the document.
+1. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Vendor-purchase-order-acknowledgement) for the document.
+1. If the vendor [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
 1. Assign the applicable POA response code group to the vendor trading partner.
-1. Add and enable the vendor purchase order acknowledgement document to the [Vendor trading partner](../SETUP/Trading-partner.md) and select the applicable:
+1. Add and enable the vendor purchase order acknowledgement document to the [Vendor trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - Validation profile
@@ -71,7 +48,7 @@ Header checks are performed when:
 ![alt text](../IMAGE/HeaderChecks_VendorPOA.png "Header checks for Vendor purchase order acknowledgement")
 
 ### Step 1 - Import
-When a purchase order acknowledgement file is imported, the file name is key to identifying the vendor and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
+When a purchase order acknowledgement file is imported, the file name is key to identifying the vendor and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
 
 > Note: The file mask is used to identify the trading partner and therefore template
 
@@ -115,11 +92,11 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 At this step the issues are usually around mapping/business logic issues. <br> 
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table. <br>
-Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#vendor-purchase-order-acknowledgement)
+Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ#vendor-purchase-order-acknowledgement)
 
 ### Validation
 
-[Validation profiles](../SETUP/VALIDATION-PROFILES/Vendor-purchase-order-acknowledgement.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
+[Validation profiles](../SETUP/VALIDATION-PROFILES/Vendor-purchase-order-acknowledgement) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
 -	**Info** - An infolog is displayed with information only, it is not identified as a warning
 -	**Warning** - An infolog is displayed with a warning. It is possible to carry on processing
 -	**Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error
@@ -175,7 +152,7 @@ The Confirmation page is split into five tabs:
 6. [Line pack](#line-pack) - Manage the POC line pack response, example Vendor pack vs. System pack
 7. [Line inner](#line-inner) - Manage the POC line inner response, example Vendor inner vs. System inner
 
-Vendor mapped values for POA response codes are setup in [POA response code group](../SETUP/VENDOR-SETUP/POA-response-code-group.md) and assigned to the Vendor trading partner's **POA response code group**.
+Vendor mapped values for POA response codes are setup in [POA response code group](../SETUP/VENDOR-SETUP/POA-response-code-group) and assigned to the Vendor trading partner's **POA response code group**.
 
 #### Header
 The following tables describe the fields and buttons that are available on the **Header** tab of the Confirmation page. <br>
@@ -214,7 +191,7 @@ Field	                    | Description
 **Unit**                    | Unit from the purchase line
 **Vendor price**            | Price received in the purchase order acknowledgement, converted to purchase unit where POA unit different to PO unit
 **System price**            | Unit price from D365 purchase order
-**Confirmed price**         | Confirmed price to be sent on the purchase order confirmation (POC) to the vendor. <br> Note: The confirmed price will be set as either the vendor or system values dependant on the parameter set on the [POA setting profile](../SETUP/SETTING-PROFILES/Vendor-purchase-order-acknowledgement.md): <br> •	Use vendor price (Y/N), and if Y falls within variance range: <br> •	Maximum negative price variance <br> •	Maximum positive price variance
+**Confirmed price**         | Confirmed price to be sent on the purchase order confirmation (POC) to the vendor. <br> Note: The confirmed price will be set as either the vendor or system values dependant on the parameter set on the [POA setting profile](../SETUP/SETTING-PROFILES/Vendor-purchase-order-acknowledgement): <br> •	Use vendor price (Y/N), and if Y falls within variance range: <br> •	Maximum negative price variance <br> •	Maximum positive price variance
 **Confirmation auto triggered** | Indicates if the **Confirmed price** is an auto triggered value
 
 
@@ -340,7 +317,7 @@ Button                      | Description
 
 ### Automatically processing Purchase order confirmation
 
-Vendor EDI module includes the ability to automatically send vendor purchase confirmations by setting **Purchase order confirmation required** to _Yes (PO is auto-confirmed)_ on the [Vendor purchase order acknowledgement](../SETUP/SETTING-PROFILES/Vendor-purchase-order-acknowledgement.md) document setting and assigning it to the Vendor trading partner on the incoming document **Vendor purchase order acknowledgement** (POA). Once a POA is received from the Vendor, EDI will use document settings and validation to automatically send a confirmation to the vendor. <br>
+Vendor EDI module includes the ability to automatically send vendor purchase confirmations by setting **Purchase order confirmation required** to _Yes (PO is auto-confirmed)_ on the [Vendor purchase order acknowledgement](../SETUP/SETTING-PROFILES/Vendor-purchase-order-acknowledgement) document setting and assigning it to the Vendor trading partner on the incoming document **Vendor purchase order acknowledgement** (POA). Once a POA is received from the Vendor, EDI will use document settings and validation to automatically send a confirmation to the vendor. <br>
 The confirmations can be viewed in:
 - **History** tab on the D365 Purchase order Action Pane, EDI tab. If **Reference** is set to _Confirmation_, the Confirmation matched the Vendor's POA. If set to _Change_, the Confirmation didn't match and sent a change to the vendor.
 - **EDI > Documents > Vendor purchase order change**. If **EDI order purpose** is set to mapped value for _Confirmation_, the Confirmation matched the Vendor's POA. If set to mapped value for _Change_, the Confirmation didn't match and sent a change to the vendor.
@@ -354,7 +331,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and updated the D365 purchase order and sent a purchase order confirmation (where set to automatic). <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -364,7 +341,7 @@ The following EDI fields are available on the list page.
 **PO version number**           | The version of the purchase order number being acknowledged.
 **Purchase order date**         | The purchase order date from the PO that is being acknowledged is shown here.
 **Acknowledged status date**    | The purchase order acknowledgement date from the EDI POA is shown here.
-**POA code**                    | POA Header code group as mapped in [POA response code group](../SETUP/VENDOR-SETUP/POA-response-code-group.md).
+**POA code**                    | POA Header code group as mapped in [POA response code group](../SETUP/VENDOR-SETUP/POA-response-code-group).
 **EDI order purpose**           | The EDI order purpose is shown here.
 **Created date and time**       | The date and time the selected record was created in the staging table.
 **Sent**                        | Indicates if the **Functional acknowledgement outbound** has been sent to the trading partner for the inbound document record.
@@ -377,7 +354,7 @@ The following buttons are available on the **Vendor purchase order acknowledgeme
 **Process purchase order acknowledgment**   | Process purchase order acknowledgement for the selected record in the staging table.
 **Process all purchase order acknowledgment**   | Process purchase order acknowledgement for the staging records that have a **Staging to target status** set to _Not started_. 
 **Inbound files**               | View the inbound file record the selected staging record.
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner) page.
 **Purchase order**              | If the EDI POA has been completed it is possible to inquire on the linked Purchase order the POA was created for.
 **Vendor**                      | Inquire on the Vendor for the selected record.
 **Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
@@ -483,10 +460,10 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Transportation**</ins>		|
 **Shipping carrier**        | Shipping carrier	
 **Carrier qualifier**       | Code designating the system/method of code structure used for shipping carrier	
-**EDI carrier mode**        | Code specifying the method or type of transportation for the shipment. Mapped value setup in [Carrier mode](../SETUP/VENDOR-SETUP/Carrier-mode.md).
+**EDI carrier mode**        | Code specifying the method or type of transportation for the shipment. Mapped value setup in [Carrier mode](../SETUP/VENDOR-SETUP/Carrier-mode).
 <ins>**Miscellaneous**</ins>		|
-**Misc. indicator**         | Code which indicates an allowance or charge for the service specified. Mapped value setup in [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator.md).
-**EDI charges code**	    | Code identifying the service, promotion, allowance, or charge. Mapped value setup in [Charges code](../SETUP/VENDOR-SETUP/Charges-code.md).
+**Misc. indicator**         | Code which indicates an allowance or charge for the service specified. Mapped value setup in [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator).
+**EDI charges code**	    | Code identifying the service, promotion, allowance, or charge. Mapped value setup in [Charges code](../SETUP/VENDOR-SETUP/Charges-code).
 <ins>**Totals**</ins>       |
 **Subtotal amount**         | Subtotal of all purchase order lines	
 **Line discount**           | Discount for all purchase order lines	
@@ -496,7 +473,7 @@ The following EDI Header staging fields are available on the header page.
 **Total amount**            | Total amount	
 <ins>**Payment**</ins>      |           
 **Currency**                | Currency	
-**Terms code**              | Payment terms. Mapped value setup in [Payment terms type group](../SETUP/VENDOR-SETUP/Payment-terms-type-group.md).
+**Terms code**              | Payment terms. Mapped value setup in [Payment terms type group](../SETUP/VENDOR-SETUP/Payment-terms-type-group).
 **Terms net days**          | Payment terms net due days
 **Cash discount**           | Settlement discount percentage	
 **Days**                    | Settlement days	
@@ -530,7 +507,7 @@ If update to purchase order line is allowed, column **D365 PO line update** indi
 **Line amount including tax**   | Net line amount including tax	
 **Currency**                | Currency	
 **Inners quantity**         | Unit conversion quantity of inners to outers. <br> Example qty 12 ea (inner) per box (outer)	    | EDI acknowledgement tab > Acknowledged inner
-**Inners unit**             | Inners unit of measure as setup on item’s [pack size](../../CORE/Setup/Item-pack-sizes.md)    | 
+**Inners unit**             | Inners unit of measure as setup on item’s [pack size](../../CORE/Setup/Item-pack-sizes)    | 
 **Pack quantity**           | Package quantity	                                                                                | EDI acknowledgement tab > Acknowledged pack
 **Pack unit**	            | Package unit of measure	
 **Configuration**           | Product dimension - Configuration	

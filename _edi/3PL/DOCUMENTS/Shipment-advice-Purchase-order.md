@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI 3PL
-description: EDI 3PL Documents - Shipment advice - Purchase order
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-08-29
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SAB_EDIStagingFormRun_StockTransferShip_PO, SAB_EDI3PLWHSInventStatusMapping  
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: IconEDI3PLDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Shipment advice - Purchase order
@@ -37,19 +14,19 @@ The following setup is prerequisites for the Shipment advice - Purchase order
 
 ### 3PL setup
 EDI > Setup > 3PL setup
-1. Create [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) to map the 3PL's values to D365 inventory statuses.
+1. Create [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping) to map the 3PL's values to D365 inventory statuses.
 
 ### Document type setup
 EDI > Setup > Document types: Shipment advice - Purchase order
-1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-2. Create [Setting profile](../SETUP/SETTING-PROFILES/Shipment-advice-Purchase-order.md) for the document.
-3. Create [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
+1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+2. Create [Setting profile](../SETUP/SETTING-PROFILES/Shipment-advice-Purchase-order) for the document.
+3. Create [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames) for the document.
 
 ### Trading partners
 EDI > Setup > Trading partners
-1. If the warehouse [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+1. If the warehouse [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
 1. Assign the **3PL setup** to the warehouse trading partner's options.
-1. Add and enable the **Shipment advice - Purchase order** document to the [3PL trading partner](../SETUP/Trading-partner.md) and select the applicable:
+1. Add and enable the **Shipment advice - Purchase order** document to the [3PL trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - File name setup
@@ -74,7 +51,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company**             | Legal entity of the document
 **Company GLN**         | The company’s global location number is shown here
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -96,7 +73,7 @@ The following buttons are available on the **Stock transfer advice > Purchase or
 **Create selected files**       | Creates the outbound file for selected records where **Staging to target status** is set to _Not started_
 **Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_
 **Outbound files**              | View the outbound file record created by the selected staging record
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner) page
 **Purchase order**              | View the purchase order
 **Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
 **Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.
@@ -158,7 +135,7 @@ The following EDI Line staging fields are available on the lines page.
 **Version**                 | Product dimensions – Version                              | Purchase order lines > Version
 **Batch number**            | Tracking dimensions – Batch number	                    | Purchase order lines > Batch number
 **Serial number**           | Tracking dimensions – Serial number	                    | Purchase order lines > Serial number
-**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) | Purchase order lines > Inventory status
+**Inventory status**        | Storage dimensions – Inventory status <br> Mapped value for [Inventory status](../SETUP/3PL-SETUP/Inventory-status-Id-mapping) | Purchase order lines > Inventory status
 
 ### EDI history
 Where history logging is enabled, view the applicable EDI staging record(s) via:

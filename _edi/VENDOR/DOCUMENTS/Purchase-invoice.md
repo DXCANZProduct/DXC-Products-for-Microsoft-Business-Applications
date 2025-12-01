@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Vendor
-description: EDI Vendor Documents - Purchase invoice
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-03-14
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PurchTableListPage, Action:SAB_EDIStagingFormRun_VendInvoice, SAB_EDIVendChargesCodeMapping, SAB_EDIVendPaymentTermsMapping, SAB_EDIVendMiscChargeIndicatorMapping, SAB_EDIVendMiscMethodHandlingMapping
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: 
-ms.search.region: IconEDIVendorDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Purchase invoice
@@ -33,7 +10,7 @@ EDI vendors can send a purchase invoice for one or multiple purchase orders. <br
 An EDI purchase invoice can be received and processed for D365 purchase orders not sent to the vendor via EDI.
 The following subsections will describe how to view and process the invoice for purchase orders. <br>
 
-Based on [document settings](../SETUP/SETTING-PROFILES/Purchase-invoice.md), the EDI purchase invoice can either:
+Based on [document settings](../SETUP/SETTING-PROFILES/Purchase-invoice), the EDI purchase invoice can either:
 - Create a pending purchase order invoice where the match status fails
 - Post the purchase order invoice if match status passes, or
 - Submit pending purchase order invoice to workflow
@@ -44,16 +21,16 @@ The processed EDI purchase invoice record(s) can be viewed for a purchase order,
 ## Prerequisites
 The following setup is prerequisites for the purchase invoice:
 
-1. Create [Charges code](../SETUP/VENDOR-SETUP/Charges-code.md) to map the vendor's values to D365 Charges codes.
-2. Create [Payment terms type group](../SETUP/VENDOR-SETUP/Payment-terms-type-group.md) to map the vendor's values to D365 Payment terms.
-3. Create [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator.md) to map the vendor's values to EDI Indicator.
-4. Create [Misc method of handling](../SETUP/VENDOR-SETUP/Misc-method-of-handling.md) to map the vendor's values to EDI Method of handling.
-5. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-6. Create [Setting profile](../SETUP/SETTING-PROFILES/Purchase-invoice.md) for the document.
-7. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Purchase-invoice.md) for the document.
-8. If the vendor [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+1. Create [Charges code](../SETUP/VENDOR-SETUP/Charges-code) to map the vendor's values to D365 Charges codes.
+2. Create [Payment terms type group](../SETUP/VENDOR-SETUP/Payment-terms-type-group) to map the vendor's values to D365 Payment terms.
+3. Create [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator) to map the vendor's values to EDI Indicator.
+4. Create [Misc method of handling](../SETUP/VENDOR-SETUP/Misc-method-of-handling) to map the vendor's values to EDI Method of handling.
+5. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+6. Create [Setting profile](../SETUP/SETTING-PROFILES/Purchase-invoice) for the document.
+7. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Purchase-invoice) for the document.
+8. If the vendor [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
 9. Assign the applicable Charges code, Payment terms type group, Misc charge/allowance indicator and Misc method of handling to the vendor trading partner.
-10. Add and enable the purchase invoice document to the [Vendor trading partner](../SETUP/Trading-partner.md) and select the applicable:
+10. Add and enable the purchase invoice document to the [Vendor trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - Validation profile
@@ -77,7 +54,7 @@ Header checks are performed when:
 ![alt text](../IMAGE/HeaderChecks_PurchaseInvoice.png "Header checks for Purchase invoice")
 
 ## Step 1 - Import
-When a purchase invoice file is imported, the file name is key to identifying the vendor and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
+When a purchase invoice file is imported, the file name is key to identifying the vendor and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
 
 > Note: The file mask is used to identify the trading partner and therefore template
 
@@ -112,7 +89,7 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 At this step the issues are usually around mapping/business logic issues. <br> 
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table. <br>
-Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#purchase-invoice)
+Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ#purchase-invoice)
 
 ### Staging line validation - Purchase invoice
 
@@ -127,7 +104,7 @@ Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#
 
 ### Validation
 
-[Validation profiles](../SETUP/VALIDATION-PROFILES/Purchase-invoice.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
+[Validation profiles](../SETUP/VALIDATION-PROFILES/Purchase-invoice) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
 -	**Info** - An infolog is displayed with information only, it is not identified as a warning
 -	**Warning** - An infolog is displayed with a warning. It is possible to carry on processing
 -	**Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error
@@ -147,7 +124,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created a D365 purchase order invoice <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -167,7 +144,7 @@ The following buttons are available on the **Purchase invoice**'s Action Pane, t
 **Process purchase invoice**    | Create Purchase invoice Target for the selected record in the staging table.
 **Process all purchase invoices**   | Create Purchase invoice Target for the staging records that have a **Staging to target status** set to _Not started_.
 **Inbound files**               | View the inbound file record the selected staging record.
-**Trading partner**             | View the trading partner details in the [Trading partners](../SETUP/Trading-partner.md) page.
+**Trading partner**             | View the trading partner details in the [Trading partners](../SETUP/Trading-partner) page.
 **All purchase order**          | If the EDI Purchase invoice has been completed it is possible to inquire on all the linked Purchase order/s the Purchase invoice was created for.
 **Vendor**                      | Inquire on the Vendor for the selected record.
 **Invoice**                     | If the staging record has been successfully processed and Purchase invoice **posted** it is possible to inquire on the purchase invoice.
@@ -270,8 +247,8 @@ xCBL standard has the option of sending miscellaneous charges/ allowance as eith
 **Country/region**          | Ship to - Country/region	
 **Attention information**   | Attention information	
 <ins>**Miscellaneous**</ins>		|
-**Misc indicator**	        | Code which indicates an allowance or charge for the service specified. Mapped value setup in [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator.md). <br> Mandatory if Misc amount, Misc quantity or Misc percent populated. <br> If the indicator indicates it is an Allowance the EDI values provided will be made negative since all EDI values would be positive.	    | Invoice > Affects sign of Invoice charges value
-**EDI charges code**        | Code identifying the service, promotion, allowance, or charge. Mapped value setup in [Charges code](../SETUP/VENDOR-SETUP/Charges-code.md). | Charges code, if Charges document setting **As per EDI document** is set to _Yes_
+**Misc indicator**	        | Code which indicates an allowance or charge for the service specified. Mapped value setup in [Misc charge/allowance indicator](../SETUP/VENDOR-SETUP/Misc-charge-allowance-indicator). <br> Mandatory if Misc amount, Misc quantity or Misc percent populated. <br> If the indicator indicates it is an Allowance the EDI values provided will be made negative since all EDI values would be positive.	    | Invoice > Affects sign of Invoice charges value
+**EDI charges code**        | Code identifying the service, promotion, allowance, or charge. Mapped value setup in [Charges code](../SETUP/VENDOR-SETUP/Charges-code). | Charges code, if Charges document setting **As per EDI document** is set to _Yes_
 **Misc quantity**           | Specifies the allowance or charge where the calculation is based on quantity	| Charges Value = sum (Invoice quantity for all invoice lines) * Misc quantity
 **Misc percent**            | Specifies the allowance or charge based on a percentage.	| Charges value = Invoice subtotal amount * Misc percent / 100
 **Misc method of handling** | Specifies how the allowance or charge will be settled. 	| If **Add to invoice** is set to _Yes_: the charge will be added to the invoice
@@ -290,7 +267,7 @@ xCBL standard has the option of sending miscellaneous charges/ allowance as eith
 **Reference currency**      | Holds the reference currency of the rate of exchange. This is the currency from which the monetary value is to be converted from.	
 **Exchange rate**           | Holds the value that the reference currency is to be multiplied by to convert it to the target currency. <br> If Invoice currency doesn’t equal to PO currency this will be used to convert to PO currency if document setting ‘Use vendor exchange rate’ = Yes	| Invoice’s exchange rate if document setting **Use vendor exchange rate** is set to _Yes_
 **Exchange rate date**      | Date of above exchange rate	
-**Terms code**              | Payment terms. Mapped value setup in [Payment terms type group](../SETUP/VENDOR-SETUP/Payment-terms-type-group.md).	
+**Terms code**              | Payment terms. Mapped value setup in [Payment terms type group](../SETUP/VENDOR-SETUP/Payment-terms-type-group).	
 **Terms net days**          | Payment terms net due days
 **Invoice due date**        | Date invoice is due for payment. Only applicable to xCBL. Terms net days used for X12 and EDIFACT	 | If document setting **Due date** is set to _Vendor due date_, used for Invoice's due date
 **Cash discount**           | Settlement discount percentage	

@@ -3,7 +3,7 @@ layout: releasenotes-content
 header: License Manager
 title: 10.0.43.202506252
 release-version: 10.0.43.202506252
-markAsPrevious: false
+state: current
 toc: true
 ---
 

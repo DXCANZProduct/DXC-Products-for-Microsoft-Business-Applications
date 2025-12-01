@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Vendor
-description: EDI Vendor Documents - Vendor advanced shipping notice
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-04-12
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PurchTableListPage, Action:SAB_EDIStagingFormRun_VendASN
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: 
-ms.search.region: IconEDIVendorDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Vendor advanced shipping notice (ASN)
@@ -33,7 +10,7 @@ EDI vendors can send an advanced shipping notice (ASN) for one or multiple purch
 An EDI ASN can be received and processed for D365 purchase orders not sent to the vendor via EDI.
 The following subsections will describe how to view and process the ASN. <br>
 
-Based on [document settings](../SETUP/SETTING-PROFILES/Vendor-advanced-shipping-notice.md), the EDI ASN can either:
+Based on [document settings](../SETUP/SETTING-PROFILES/Vendor-advanced-shipping-notice), the EDI ASN can either:
 - Basic warehousing (Ship to warehouse is setup for basic warehousing):
     - Create arrival journal, but leave unposted
     - Create and post arrival journal
@@ -47,11 +24,11 @@ The processed EDI ASN record(s) can be viewed for a purchase order, by selecting
 ## Prerequisites
 The following setup is prerequisites for the vendor advanced shipping notice
 
-1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING-PROFILES/Vendor-advanced-shipping-notice.md) for the document.
-1. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Vendor-advanced-shipping-notice.md) for the document.
-1. If the vendor [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
-1. Add and enable the vendor advanced shipping notice document to the [Vendor trading partner](../SETUP/Trading-partner.md) and select the applicable:
+1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+1. Create [Setting profile](../SETUP/SETTING-PROFILES/Vendor-advanced-shipping-notice) for the document.
+1. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Vendor-advanced-shipping-notice) for the document.
+1. If the vendor [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
+1. Add and enable the vendor advanced shipping notice document to the [Vendor trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - Validation profile
@@ -75,7 +52,7 @@ Header checks are performed when:
 ![alt text](../IMAGE/HeaderChecks_VendorASN.png "Header checks for Vendor advanced shipping notice")
 
 ## Step 1 - Import
-When an advanced shipping notice file is imported, the file name is key to identifying the vendor and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
+When an advanced shipping notice file is imported, the file name is key to identifying the vendor and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
 
 > Note: The file mask is used to identify the trading partner and therefore template
 
@@ -110,7 +87,7 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 At this step the issues are usually around mapping/business logic issues. <br>
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table. <br>
-Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#vendor-advanced-shipping-notice)
+Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ#vendor-advanced-shipping-notice)
 
 ### Staging line validation - Advanced shipping notice
 
@@ -125,7 +102,7 @@ Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#
 
 ### Validation
 
-[Validation profiles](../SETUP/VALIDATION-PROFILES/Vendor-advanced-shipping-notice.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
+[Validation profiles](../SETUP/VALIDATION-PROFILES/Vendor-advanced-shipping-notice) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
 -	**Info** - An infolog is displayed with information only, it is not identified as a warning
 -	**Warning** - An infolog is displayed with a warning. It is possible to carry on processing
 -	**Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error
@@ -151,7 +128,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and created an arrival journal, product receipt or load. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -170,7 +147,7 @@ The following buttons are available on the **Vendor advanced shipping notice**'s
 **Process advanced ship notice**        | Create ASN Target (item arrival, load or register non-stock product) for the selected record in the staging table.
 **Process all advanced ship notice**    | Create ASN Target (item arrival, load or register non-stock product) for the staging records that have a **Staging to target status** set to _Not started_.
 **Inbound files**               | View the inbound file record the selected staging record.
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner) page.
 **All purchase order**          | If the EDI ASN has been completed it is possible to inquire on all the linked Purchase order(s) the ASN was created for.
 **Item arrival**                | If the EDI ASN has been completed for a basic warehouse with stocked products, it is possible to inquire on the Item arrival created from this button.
 **Product receipt**             | If the EDI ASN has been completed for a basic warehouse with stocked products and the document setting includes posting the product receipt, it is possible to inquire on the Product receipt created from this button.
@@ -229,7 +206,7 @@ The following EDI Header staging fields are available on the header page.
 <ins>**Transportation**</ins>		|
 **Shipping carrier**        | Shipping carrier for the consignment	                | • Load > Shipping carrier
 **Carrier qualifier**       | Code designating the system/method of code structure used for shipping carrier	
-**EDI carrier mode**        | Code specifying the method or type of transportation for the shipment. Mapped value setup in [Carrier mode](../SETUP/VENDOR-SETUP/Carrier-mode.md).
+**EDI carrier mode**        | Code specifying the method or type of transportation for the shipment. Mapped value setup in [Carrier mode](../SETUP/VENDOR-SETUP/Carrier-mode).
 <ins>**Delivery**</ins>		|
 **Delivery name**           | Ship to - Name
 **Our account number**      | Ship to - Our account number in the vendor’s system. As per ‘Our account number’ loaded on Vendor’s Invoice account	

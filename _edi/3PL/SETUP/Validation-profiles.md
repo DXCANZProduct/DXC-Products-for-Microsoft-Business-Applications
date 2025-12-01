@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI 3PL
-description: EDI 3PL Setup - Document type Validation profiles
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-11-19
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIDocumentTypeTable, SAB_EDITradingPartner
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDI3PLDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # 3PL setup
@@ -48,7 +25,7 @@ Once setup for each document type, the validation profile can be assigned to eac
   - **Error** - An Infolog is displayed with an error. If the validation rule fails, the staging records will be set to error state and the target document note created/updated. 
 
 The following incoming 3PL documents have validation profiles:
-- [Picking list registration](VALIDATION-PROFILES/Picking-list-registration.md)
-- [Shipment receipt - Purchase order](VALIDATION-PROFILES/Shipment-receipt-Purchase-order.md)
-- [Shipment receipt - Transfer order](VALIDATION-PROFILES/Shipment-receipt-Transfer-order.md)
-- [Shipment receipt - Return order](VALIDATION-PROFILES/Shipment-receipt-Return-order.md)
+- [Picking list registration](VALIDATION-PROFILES/Picking-list-registration)
+- [Shipment receipt - Purchase order](VALIDATION-PROFILES/Shipment-receipt-Purchase-order)
+- [Shipment receipt - Transfer order](VALIDATION-PROFILES/Shipment-receipt-Transfer-order)
+- [Shipment receipt - Return order](VALIDATION-PROFILES/Shipment-receipt-Return-order)

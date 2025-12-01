@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Vendor
-description: EDI Vendor setup - Misc method of handling
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-11-09
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIVendMiscMethodHandlingMapping
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIVendorDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Vendor setup
@@ -51,7 +28,7 @@ Used to indicate if the charge / allowance on the vendor invoice should be paid 
 -	**Add to Invoice** - Indicates if charge/allowance should be added to D365 Purchase invoice
 
 ## Where used
-Misc method of handling is assigned on the [Vendor Trading partner's](../Trading-partner.md) Options field called **Misc method of handling**. <br>
+Misc method of handling is assigned on the [Vendor Trading partner's](../Trading-partner) Options field called **Misc method of handling**. <br>
 Used on field **MiscMethodHandling** on EDI documents:
 - Purchase invoice
 

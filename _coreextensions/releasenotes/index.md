@@ -3,7 +3,7 @@ layout: releasenotes-content
 header: Core Extensions
 title: 10.0.44.202510171
 release-version: 10.0.44.202510171
-markAsPrevious: false
+state: current
 toc: true
 ---
 # Version compatibility

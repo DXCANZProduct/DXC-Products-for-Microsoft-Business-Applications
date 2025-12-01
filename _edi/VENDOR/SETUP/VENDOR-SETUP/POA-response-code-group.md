@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Vendor
-description: EDI Vendor setup - POA responde code group
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-01-19
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIVendPOACodesMapping
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIVendorDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Vendor setup
@@ -61,7 +38,7 @@ POA Response codes are used to identify the status of information used in a Purc
 **Line item - added**             | Add new line to purchase order        | POAVendCodeItem / POA code item      | ITA
 
 ## Where used
-POA response code group is assigned on the [Vendor Trading partner's](../Trading-partner.md) Options field called **POA responde code group**. <br>
+POA response code group is assigned on the [Vendor Trading partner's](../Trading-partner) Options field called **POA responde code group**. <br>
 Used on fields **POAVendCode**, **POAVendCodeItem** and **POAVendCodeShipment** on EDI documents:
 - Vendor purchase order acknowledgement
 

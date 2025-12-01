@@ -6,7 +6,7 @@
             <li class="list-style-type">
               {% assign coreextension = site.coreextensions | sort: 'release-version' | reverse%}
               {% for coreext in coreextension %}
-                  {%if coreext.url contains "coreextensions/releasenotes" and coreext.markAsPrevious == false%}
+                  {%if coreext.url contains "coreextensions/releasenotes" and coreext.state == "current"%}
                   <li class="list-style-type">
                     <a href="{{ coreext.url }}">{{coreext.title}}</a>
                   </li>
@@ -17,7 +17,20 @@
                 <ul>
                     {% assign coreextension = site.coreextensions | sort: 'release-version' | reverse%}
                     {% for coreext in coreextension %}
-                        {%if coreext.url contains "coreextensions/releasenotes" and coreext.markAsPrevious == true%}
+                        {%if coreext.url contains "coreextensions/releasenotes" and coreext.state == "previous"%}
+                        <li class="list-style-type">
+                          <a href="{{ coreext.url }}">{{coreext.title}}</a>
+                        </li>
+                        {% endif%}
+                    {% endfor %}
+                </ul>
+              </details>
+              <details>
+                <summary>Archive</summary>
+                <ul>
+                    {% assign coreextension = site.coreextensions | sort: 'release-version' | reverse%}
+                    {% for coreext in coreextension %}
+                        {%if coreext.url contains "coreextensions/releasenotes" and coreext.state == "archive"%}
                         <li class="list-style-type">
                           <a href="{{ coreext.url }}">{{coreext.title}}</a>
                         </li>

@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Vendor
-description: EDI Vendor Setup - Document type Setting profiles
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-11-09
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDITradingPartner, SAB_EDIDocumentTypeTable
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIVendorDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Vendor setup
@@ -40,9 +17,9 @@ Setting profiles can be created to specify the handling of specific scenarios. O
 - Select the Settings profile id hyperlink or the **Setup** button to update profile details. 
 
 The following vendor documents have setting profiles:
-- [Vendor purchase order](SETTING-PROFILES/Vendor-purchase-order.md)
-- [Vendor purchase order change](SETTING-PROFILES/Vendor-purchase-order-change.md)
-- [Vendor purchase order acknowledgement](SETTING-PROFILES/Vendor-purchase-order-acknowledgement.md)
-- [Vendor advanced shipping notice](SETTING-PROFILES/Vendor-advanced-shipping-notice.md)
-- [Purchase invoice](SETTING-PROFILES/Purchase-invoice.md)
+- [Vendor purchase order](SETTING-PROFILES/Vendor-purchase-order)
+- [Vendor purchase order change](SETTING-PROFILES/Vendor-purchase-order-change)
+- [Vendor purchase order acknowledgement](SETTING-PROFILES/Vendor-purchase-order-acknowledgement)
+- [Vendor advanced shipping notice](SETTING-PROFILES/Vendor-advanced-shipping-notice)
+- [Purchase invoice](SETTING-PROFILES/Purchase-invoice)
 

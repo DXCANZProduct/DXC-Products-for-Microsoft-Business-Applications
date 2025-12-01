@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Core
-description: EDI Core - Frequently asked questions
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-09-27
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  NumberSequenceTableListPage
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-# ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDI
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Frequently asked questions
@@ -79,7 +56,7 @@ Example: <br>
 The module specific FAQ can be found below. <br>
 FAQ includes example errors and methods to fix.
 
-- [Customer](CUSTOMER/INTRODUCTION/FAQ.md)
-- [Vendor](VENDOR/INTRODUCTION/FAQ.md)
-- [3PL](3PL/INTRODUCTION/FAQ.md)
-- [Freight forwarder for Landed cost](FREIGHT-FORWARDER/INTRODUCTION/FAQ.md)
+- [Customer](CUSTOMER/INTRODUCTION/FAQ)
+- [Vendor](VENDOR/INTRODUCTION/FAQ)
+- [3PL](3PL/INTRODUCTION/FAQ)
+- [Freight forwarder for Landed cost](FREIGHT-FORWARDER/INTRODUCTION/FAQ)

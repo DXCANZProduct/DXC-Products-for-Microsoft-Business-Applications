@@ -1,3 +1,9 @@
+---
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
+---
+
 # DXC Electronic Data Interchange (EDI) - Technical Guide
 
 The DXC EDI module provides enhanced functionalities to Microsoft Dynamics 365 for Finance and Operations (FinOps). This guide provides an overview of the technical requirements for making extensions to specific features.

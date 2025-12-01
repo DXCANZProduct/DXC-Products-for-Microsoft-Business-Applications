@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI 3PL
-description: EDI 3PL setup - Transaction direction mapping
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2021-11-17
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDI3PLTransactionDirectionMapping
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDI3PLDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # 3PL setup
@@ -43,7 +20,7 @@ With some EDI standards quantities are always positive. The transaction directio
 -	Specify the 3PL's value used to identify the **EDI code**
 
 ## Where used
-Transaction direction mapping is assigned on the [3PL Trading partner's](../Trading-partner.md) Options field called **Transaction direction mapping**. <br>
+Transaction direction mapping is assigned on the [3PL Trading partner's](../Trading-partner) Options field called **Transaction direction mapping**. <br>
 Used on field **TransactionDirection** on EDI documents:
 - Inventory adjustment - Movement
 

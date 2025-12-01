@@ -1,35 +1,12 @@
 ---
-# required metadata
-
-title: EDI Customer
-description: EDI Customer Documents - Customer purchase order acknowledgement
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-08-27
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SalesTableListPage, Action:SAB_EDIStagingFormRun_POA, SAB_EDICustPOACodesMapping
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: IconEDICustomerDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Customer purchase order acknowledgement
 
-EDI customers may require a purchase order acknowledgement (POA) for an order and can be one of the reasons a sales order is being put on hold. Where the [Customer purchase order acknowledgement document setting profile](../SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement.md) **Lock order** is set to _Yes_, the sales order will be put on hold till the the POA has been sent. The Hold code that will be used is determined by the **POA pending hold code** assigned on **EDI > Setup > EDI parameters** tab **Hold codes**.
+EDI customers may require a purchase order acknowledgement (POA) for an order and can be one of the reasons a sales order is being put on hold. Where the [Customer purchase order acknowledgement document setting profile](../SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement) **Lock order** is set to _Yes_, the sales order will be put on hold till the the POA has been sent. The Hold code that will be used is determined by the **POA pending hold code** assigned on **EDI > Setup > EDI parameters** tab **Hold codes**.
 
 > Note: Customer purchase order acknowledgement (POA) can only be sent for a sales order created via EDI.
 
@@ -42,14 +19,14 @@ The created POA record can be viewed for a sales order, by selecting the **Histo
 ## Prerequisites
 The following setup is prerequisites for the customer purchase order acknowledgement
 
-1. If required to put sales orders on hold till the POA has been sent, assign the applicable hold code to [POA pending hold code](../SETUP/CUSTOMER-SETUP/Hold-codes.md) in EDI parameters.
-2. Create [POA response groups](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md) to map the customer's values to EDI POA response groups.
-3. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-4. Create [Setting profile](../SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement.md) for the document.
-5. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
-6. If the customer [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+1. If required to put sales orders on hold till the POA has been sent, assign the applicable hold code to [POA pending hold code](../SETUP/CUSTOMER-SETUP/Hold-codes) in EDI parameters.
+2. Create [POA response groups](../SETUP/CUSTOMER-SETUP/POA-response-code-group) to map the customer's values to EDI POA response groups.
+3. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+4. Create [Setting profile](../SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement) for the document.
+5. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames) for the document.
+6. If the customer [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
 7. Assign the applicable POA response group to the customer trading partner.
-8. Add and enable the customer purchase order acknowledgement document to the [Customer trading partner](../SETUP/Trading-partner.md) and select the applicable:
+8. Add and enable the customer purchase order acknowledgement document to the [Customer trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - File name setup
@@ -92,7 +69,7 @@ The Acknowledgement page is split into five tabs:
 5. [Line pack](#line-pack) - Manage the POA line' pack response, example Customer pack vs. System pack
 6. [Line inner](#line-inner) - Manage the POA line' inner response, example Customer inner vs. System inner
 
-Customer mapped values for POA response codes are setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md) and assigned to the Customer trading partner's **POA response code group**.
+Customer mapped values for POA response codes are setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group) and assigned to the Customer trading partner's **POA response code group**.
 
 #### Header
 The following tables describe the fields and buttons that are available on the **Header** tab of the Acknowledgement page. <br>
@@ -109,7 +86,7 @@ Field	                  | Description
 **Customer**        |	Customer requested receipt date (end of delivery window)
 **Acknowledged**    |	Acknowledged delivery date to be sent to the customer. Updates Sales order header's **Confirmed receipt date**.
 <ins>**POA**</ins>              |
-**POA code**        |	POA header code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md) for the following header responses: <br> •	**Header – accept** – Where all response codes are _Accept_ <br> •	**Header - change** - Where the customer and acknowledged dates are different <br> •	**Header - accepted with reserved** - Where the customer and acknowledged dates are the same, however one or more lines have an _Advise_ POA difference code.
+**POA code**        |	POA header code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group) for the following header responses: <br> •	**Header – accept** – Where all response codes are _Accept_ <br> •	**Header - change** - Where the customer and acknowledged dates are different <br> •	**Header - accepted with reserved** - Where the customer and acknowledged dates are the same, however one or more lines have an _Advise_ POA difference code.
 **Auto triggered**  |	Indicates if the **POA code** is an auto triggered value.
 
 ##### Buttons
@@ -136,8 +113,8 @@ Field	                    | Description
 **Unit**                  |	Unit from the sales line
 **Customer sales price**  |	Unit price received in the EDI purchase order
 **Net system price**      |	Valid trade agreement unit price for the customer, net off discounts
-**Acknowledged price**    |	Acknowledged price to be sent to the customer. Note: The acknowledged price will be automatically set as either the customer or system values dependant on the **Use customer price** setting on the [Customer purchase order](../SETUP/SETTING-PROFILES/Customer-purchase-order.md) document type setting profile.
-**Price code**            | POA line price code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md) for the following line price responses: <br> •	**Line price - accept** - Where the customer and acknowledged price are the same <br> • **Line price - advise** - Where the customer and acknowledged price are different
+**Acknowledged price**    |	Acknowledged price to be sent to the customer. Note: The acknowledged price will be automatically set as either the customer or system values dependant on the **Use customer price** setting on the [Customer purchase order](../SETUP/SETTING-PROFILES/Customer-purchase-order) document type setting profile.
+**Price code**            | POA line price code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group) for the following line price responses: <br> •	**Line price - accept** - Where the customer and acknowledged price are the same <br> • **Line price - advise** - Where the customer and acknowledged price are different
 **Auto triggered item**   |	Indicates if the **Price code** is an auto triggered value
 **PO change**             | Indicates if the price was updated by a **Customer purchase order change** record
 
@@ -165,10 +142,10 @@ Field	                    | Description
 **Unit**                  |	Unit from the sales line
 **Customer sales quantity** |	Quantity received in the purchase order
 **Reserved sales quantity** |	Reserved quantity for each sales line. If reservation is set to manual, users have to reserve stock first if “Reserved qty” is to be used for POA since it updates the Sales order line as per POA's **Acknowledged quantity**. 
-**Acknowledged quantity**   |	Acknowledged quantity to be sent to the customer. Note: The acknowledged quantity will be set as either the customer or reserved values dependant on the **Quantity type** set on the [Customer purchase order acknowledgement](../SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement.md) document type setting profile.
-**Qty code**                |	POA line quantity code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md) for the following line quantity responses: <br> •	**Line item accept** - Where the customer and acknowledged quantities are the same <br> • **Line item - out of stock** - Where the customer and acknowledged quantities are different <br> • **Line item - withdrawn** - Only available for manual selection.
-**Shipment code**           |	POA line shipment code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md) for the following line shipment responses: <br> • **Line shipment - full** - Where line item POA response is accept or where line item is out of inventory and the Trading partner setting **No backorder** is set to _Yes._ <br> • **Line shipment - partial** - Where line item POA response is out of inventory and the and the Trading partner setting **No backorder** is set to _No_.
-**POA code date**           | POA date code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md) for the following line shipment responses: <br> • **Date - backorder** - Where full backorder applies <br> • **Date - confirmed** - Where a quantity will be shipped
+**Acknowledged quantity**   |	Acknowledged quantity to be sent to the customer. Note: The acknowledged quantity will be set as either the customer or reserved values dependant on the **Quantity type** set on the [Customer purchase order acknowledgement](../SETUP/SETTING-PROFILES/Customer-purchase-order-acknowledgement) document type setting profile.
+**Qty code**                |	POA line quantity code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group) for the following line quantity responses: <br> •	**Line item accept** - Where the customer and acknowledged quantities are the same <br> • **Line item - out of stock** - Where the customer and acknowledged quantities are different <br> • **Line item - withdrawn** - Only available for manual selection.
+**Shipment code**           |	POA line shipment code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group) for the following line shipment responses: <br> • **Line shipment - full** - Where line item POA response is accept or where line item is out of inventory and the Trading partner setting **No backorder** is set to _Yes._ <br> • **Line shipment - partial** - Where line item POA response is out of inventory and the and the Trading partner setting **No backorder** is set to _No_.
+**POA code date**           | POA date code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group) for the following line shipment responses: <br> • **Date - backorder** - Where full backorder applies <br> • **Date - confirmed** - Where a quantity will be shipped
 **Auto triggered item**     |	Indicates if the **Qty code** is an auto triggered value
 **Auto triggered shipment** |	Indicates if the **Shipment code** is an auto triggered value
 
@@ -198,7 +175,7 @@ Field	                    | Description
 **Customer pack**         |	Pack quantity received in the purchase order
 **System pack**           |	Valid system pack for the inner or outer as specified on **Package size - inner/outer** on the settings profile for the Customer purchase order acknowledgement
 **Acknowledged pack**     |	Acknowledged pack quantity to be sent to the customer. Note: The automatically acknowledged pack (Customer or System) is set on **Pack type** on the settings profile for the Customer purchase order acknowledgement.
-**Pack code**             |	POA line pack code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md) for the following line pack responses: <br> • **Line item - pack accept** - Where the customer and acknowledged packs are the same <br> • **Line item - pack difference** - Where the customer and acknowledged packs are different
+**Pack code**             |	POA line pack code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group) for the following line pack responses: <br> • **Line item - pack accept** - Where the customer and acknowledged packs are the same <br> • **Line item - pack difference** - Where the customer and acknowledged packs are different
 **Auto triggered item**   |	Indicates if the **Pack code** is an auto triggered value
 
 ##### Buttons
@@ -228,7 +205,7 @@ Field	                    | Description
 **Customer inners**       | Number of inners received in the purchase order
 **System inners**         |	Valid system number of inners. Note: The number of inners is calculated based on the quantity within an outer and inner.
 **Acknowledged inners**   |	Acknowledged number of inners. Note: The automatically acknowledged inner (Customer or System) is set on **Inner type** on the settings profile for the Customer purchase order acknowledgement.
-**Inner code**            |	POA line inner code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md) for the following line inner responses: <br> • **Line item - inner accept** - Where the customer and acknowledged inners are the same <br> • **Line item - inner difference** - Where the customer and acknowledged inners are different
+**Inner code**            |	POA line inner code to be sent to the customer. Displays the mapped value as setup in [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group) for the following line inner responses: <br> • **Line item - inner accept** - Where the customer and acknowledged inners are the same <br> • **Line item - inner difference** - Where the customer and acknowledged inners are different
 **Auto triggered item**   |	Indicates if the **Inner code** is an auto triggered value
 
 ##### Buttons
@@ -246,13 +223,13 @@ Ability to automatically send customer purchase acknowledgements.
 
 #### Prerequisite setup
 Ensure the following setup are completed and assigned to applicable Trading partners:
-- [POA codes](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md#setup-poa-responde-codes) that should be automatically sent are:
+- [POA codes](../SETUP/CUSTOMER-SETUP/POA-response-code-group#setup-poa-responde-codes) that should be automatically sent are:
     -  **Allow auto trigger** set to _Yes_
     -  **Allow auto send** set to _Yes_
  - Customer purchase order acknowledgement's Setting profile has **POA required with order hold** or **POA required without order hold** set to _Yes_.
 
 Other required setup:
- - [EDI parameters](../../CORE/Setup/EDI-parameters.md) **Hold codes** are setup (and different hold codes are used for each):
+ - [EDI parameters](../../CORE/Setup/EDI-parameters) **Hold codes** are setup (and different hold codes are used for each):
      - POA pending hold code
      - POC pending hold code (if Confirmation is required back from the customer after the POA has been sent, i.e.  Customer purchase order acknowledgement's Setting profile has **PO confirmation required** set to _Yes_)
 
@@ -260,7 +237,7 @@ Other required setup:
 Users can access the periodic job by navigating to **EDI > Periodic tasks > Send customer purchase order acknowledgement**.
 
 By default only sales orders that fall under the following criteria is included in POA being sent automatically:
-- Sales orders that doesn’t contain any POA response codes where **Allow auto send** is set to _No_ on [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md#setup-poa-responde-codes)
+- Sales orders that doesn’t contain any POA response codes where **Allow auto send** is set to _No_ on [POA response code group](../SETUP/CUSTOMER-SETUP/POA-response-code-group#setup-poa-responde-codes)
 - Sales orders that are not on hold (excluding POA and POC pending hold codes)
 - POA is pending (still required to be sent), which is determined by **POA status** is _Pending_ or _In progress_. A sales order's POA status is set to _Pending_ when the Purchase order acknowledgement setting **Lock order** is set to _Yes_. And changes to **In progress** when clicking on **Acknowledgement** page on the sales order header's EDI tab on the Action Pane and selecting _OK_.
 
@@ -280,7 +257,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company**             | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been created but no outbound file has yet been generated. <br> • **Error** – The staging record has been processed, but no outbound file has been created.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and added to the outbound file queue. • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -289,7 +266,7 @@ The following EDI fields are available on the list page.
 **Customer Requisition**        | Customer purchase order's Customer requisition.
 **Sales order**                 |	Sales order number for the staging record.
 **Customer reference**          |	Customer purchase order's Customer reference.
-**POA code**                    |	POA Header code group as mapped in [POA response code groups](../SETUP/CUSTOMER-SETUP/POA-response-code-group.md#setup-poa-responde-codes)
+**POA code**                    |	POA Header code group as mapped in [POA response code groups](../SETUP/CUSTOMER-SETUP/POA-response-code-group#setup-poa-responde-codes)
 **Created Date and Time**       | The date and time the selected record was created in the staging table.
 **Received**                    |	Indicates if the **Functional acknowledgement inbound** has been received from the trading partner for the outbound document record.
 
@@ -301,7 +278,7 @@ The following buttons are available on the **Customer purchase order acknowledge
 **Create selected files**       | Creates the outbound file for selected records where **Staging to target status** is set to _Not started_.
 **Create files**	              | Creates the outbound file for all records where **Staging to target status** is set to _Not started_.
 **Outbound files**              | View the outbound file record created by the selected staging record.
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner) page.
 **Sales Order**	                | The sales order relating to the selected staging record.
 **Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
 **Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.

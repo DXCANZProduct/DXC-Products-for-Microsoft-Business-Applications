@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Connection setup
-description: Overview of the EDI connection methods
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2024-11-13
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIParameters, SAB_EDIFTPSite, SAB_EDISFTPSite, SAB_EDIAzureSite, SAB_EDIExternalWebServiceSetting
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDI
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Connection methods
@@ -35,7 +12,7 @@ Various communication methods (FTP, FTPS, SFTP, Azure cloud blob storage, Azure 
 - Export EDI documents generated within D365 to the VAN or Trading partner.
 
 Default EDI connection is determined by: <br>
-- Outgoing documents: Connection profile setup on [EDI > Setup > EDI parameters](EDI-parameters.md) <br> 
+- Outgoing documents: Connection profile setup on [EDI > Setup > EDI parameters](EDI-parameters) <br> 
 - Incoming documents: All active connection incoming paths as setup below. <br>
 
 The default EDI connection can be overridden on Trading partner or Trading partner document level for outgoing and incoming documents.
@@ -239,7 +216,7 @@ Outgoing documents have a single path that is required to be defined
 
 ### Web services
 This is a base framework that will allow developers to build custom connections to consume external APIs and integrate them with the module. Out of the box the module does not include any functional connections and only provides development examples as a guide. 
-For further information, please see [Technical guide - Web API](../Technical-guide/Web-API.md)
+For further information, please see [Technical guide - Web API](../Technical-guide/Web-API)
 
 Users can access the form by navigating to **EDI > Setup > Connection setup > Web API settings**
 

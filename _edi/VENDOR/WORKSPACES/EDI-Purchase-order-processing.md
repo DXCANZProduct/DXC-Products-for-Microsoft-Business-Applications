@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Vendor
-description: EDI Vendor workspaces - EDI Purchase order processing
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-04-27
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIPurchTableProcessingWorkspace
-audience: Application User
-# ms.devlang:
-ms.reviewer: jdutoit2
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIVendorDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Workspaces
@@ -61,7 +38,7 @@ Filters to D365 purchase orders where **Acknowledgement status** is set to _Conf
 > - Purchase order acknowledgement document must be setup on the Trading partner
 > - Set **Vendor purchase order acknowledgement** document setting _Purchase order confirmation required_ to _Yes (PO is manual-confirmed)_ 
 
-The **Acknowledgement status** will update once the purchase order confirmation has been sent to the Vendor. See [link](../DOCUMENTS/Vendor-purchase-order-acknowledgement.md#processing-purchase-order-confirmation-poc) for more details on how to send a confirmation to the vendor.
+The **Acknowledgement status** will update once the purchase order confirmation has been sent to the Vendor. See [link](../DOCUMENTS/Vendor-purchase-order-acknowledgement#processing-purchase-order-confirmation-poc) for more details on how to send a confirmation to the vendor.
 
 In addition, from within the workspace it is possible to view and even process information relating to the selected records. <br>
 The following buttons are available in the Workspace and is similar to the buttons found to manually process the confirmation on the purchase order.
@@ -74,7 +51,7 @@ Field	              | Description
 ### Validation
 Warnings and errors are identified based on the validation profiles setup for the incoming vendor documents at **EDI > Setup > Document types** and assigned to the incoming document when setting up the vendor trading partner.
 
-> Note: For further information relating to validation refer to the [validation setup](../SETUP/Validation-profiles.md). <br>
+> Note: For further information relating to validation refer to the [validation setup](../SETUP/Validation-profiles). <br>
 > If a document has both Errors and warnings, it will be displayed in the Error list only.
 
 **POA errors** allows users to manually override error validation by using button **Override error validation**.

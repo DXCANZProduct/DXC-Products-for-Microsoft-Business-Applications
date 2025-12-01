@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Freight forwarder
-description: EDI Freight forwarder Setup - Trading partners
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-09-17
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SAB_EDITradingPartner, VendTableListPage
-audience: Application User
-# ms.devlang:
-ms.reviewer: Monica du Toit
-# ms.tgt_pltfrm:
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDIFreightForwarderDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:  2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Freight forwarder landed cost setup
@@ -37,7 +14,7 @@ It also provides the setup for trading partner level options as well as defining
 To open the **Trading partners** page, go to **EDI > Setup > Trading partners**. Then set the fields as described in the following subsections.
 
 ### All trading partners
-The [Core trading partner setup](../../CORE/Setup/Trading-partners.md) describes the setup applicable to **All** types of trading partners.
+The [Core trading partner setup](../../CORE/Setup/Trading-partners) describes the setup applicable to **All** types of trading partners.
 
 ### Freight forwarder landed cost trading partners details
 This section describes the setup applicable to **Freight forwarder landed cost** trading partners.
@@ -48,16 +25,16 @@ The following table describes the Freight forwarder module fields that are avail
 **Field**                             | **Description**     | **Applies to**         
 :---------                            |:--------            |:--------
 <ins>**Container mapping**</ins>      |
-**Container type**                    |	Container type identifiers <br> Note: For further information see [Setup shipping container types mapping](FF-SETUP/Shipping-container-types-mapping.md)  | • Voyage creator
-**Measurement unit**                  |	Shipping measurement unit mapping <br> Note: For further information see [Setup shipping measurement unit mapping](FF-SETUP/Shipping-measurement-unit-mapping.md) | • Voyage creator
+**Container type**                    |	Container type identifiers <br> Note: For further information see [Setup shipping container types mapping](FF-SETUP/Shipping-container-types-mapping)  | • Voyage creator
+**Measurement unit**                  |	Shipping measurement unit mapping <br> Note: For further information see [Setup shipping measurement unit mapping](FF-SETUP/Shipping-measurement-unit-mapping) | • Voyage creator
 <ins>**Journey mapping**</ins>	      |
-**Port**                              |	Shipping port mapping <br> Note: For further information see [Setup shipping port mapping](FF-SETUP/Shipping-port-mapping.md) | • Voyage creator <br> • Voyage tracking
-**Port qualifier**                    |	Shipping port qualifier mapping <br> Note: For further information see [Setup shipping port qualifier mapping](FF-SETUP/Shipping-port-qualifier-mapping.md)  | • Voyage tracking
-**Mode of delivery**                  |	Mode of delivery mapping <br> Note: For further information see [Setup modes of delivery mapping](FF-SETUP/Modes-of-delivery-mapping.md) | • Voyage creator <br> • Voyage tracking
-**Activity**                          |	Activity mapping <br> Note: For further information see [Setup activity mapping](FF-SETUP/Activity-mapping.md) | • Voyage tracking
+**Port**                              |	Shipping port mapping <br> Note: For further information see [Setup shipping port mapping](FF-SETUP/Shipping-port-mapping) | • Voyage creator <br> • Voyage tracking
+**Port qualifier**                    |	Shipping port qualifier mapping <br> Note: For further information see [Setup shipping port qualifier mapping](FF-SETUP/Shipping-port-qualifier-mapping)  | • Voyage tracking
+**Mode of delivery**                  |	Mode of delivery mapping <br> Note: For further information see [Setup modes of delivery mapping](FF-SETUP/Modes-of-delivery-mapping) | • Voyage creator <br> • Voyage tracking
+**Activity**                          |	Activity mapping <br> Note: For further information see [Setup activity mapping](FF-SETUP/Activity-mapping) | • Voyage tracking
 <ins>**Other mappings**</ins>	        |
-**Customs broker**                    |	Customs broker mapping <br> Note: For further information see [Setup customs broker mapping](FF-SETUP/Customs-broker-mapping.md) | • Voyage creator
-**UOM**                               |	Unit of measure mappings. Ability to map a trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM-mapping.md) | • Voyage advise <br> • Voyage creator
+**Customs broker**                    |	Customs broker mapping <br> Note: For further information see [Setup customs broker mapping](FF-SETUP/Customs-broker-mapping) | • Voyage creator
+**UOM**                               |	Unit of measure mappings. Ability to map a trading partner’s unit of measure (example kgs) to D365 unit of measure (example kg). <br> Note: For further information see [Setup unit of measure mapping](../../CORE/Setup/UOM-mapping) | • Voyage advise <br> • Voyage creator
 **Auto send backorder voyage advice** | Ability to automatically trigger a new **Voyage advice** record for remaining purchase order lines after processing inbound **Voyage creator** when: <br> • Trading partner's **Auto send backorder voyage advice** set to _Yes_ <br> • Trading partner has **Voyage advice** document enabled <br> • Vendor's **No landed cost backorder** set to _No_ <br> • Purchase order line's **Deliver remainder** > 0 <br> • Purchase order line's **Voyage** is blank | • Voyage advise
 
 
@@ -67,7 +44,7 @@ The following table describes the Freight forwarder module fields that are avail
 The Outgoing documents FastTab defines the outgoing EDI document types that have been configured and enabled for the trading partner. It brings the document template and mappings together with the settings profile to enable the document for the trading partner.
 Also specifies if an Inbound Functional Acknowledgement is required for each outgoing document.
 
-The **Outgoing documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Outgoing documents](../../CORE/Setup/Trading-partners.md#outgoing-documents)
+The **Outgoing documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Outgoing documents](../../CORE/Setup/Trading-partners#outgoing-documents)
 
 - Data entity: EDI - Documents freight forwarder landed cost
 
@@ -75,7 +52,7 @@ The **Outgoing documents** FastTab of the **Trading partners** page is discussed
 The Incoming documents FastTab defines the incoming EDI document types that have been configured and enabled for the trading partner. It brings the document template, mappings, validation profile and setting profiles together along with a file mask for importing to enable the document for the trading partner.
 Also specifies if the Trading partner requires an Outbound Functional Acknowledgement to be sent for each incoming document.
 
-The **Incoming documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Incoming documents](../../CORE/Setup/Trading-partners.md#incoming-documents)
+The **Incoming documents** FastTab of the **Trading partners** page is discussed in detail in [Core trading partner setup - Incoming documents](../../CORE/Setup/Trading-partners#incoming-documents)
 
 - Data entity: EDI - Documents freight forwarder landed cost
 

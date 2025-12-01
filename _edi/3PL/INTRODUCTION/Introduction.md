@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI 3PL
-description: Introduction to EDI 3PL
-author: jdutoit2
-manager: Kym Parker
-ms.date: 2023-04-11
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDIDocumentTypeTable, SAB_EDITradingPartner
-audience: Application User
-# ms.devlang: 
-ms.reviewer: jdutoit2
-
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: IconEDI3PLDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jdutoit2
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Introduction to 3PL EDI
@@ -64,18 +41,18 @@ EDI contains the following documents pertaining to 3PL Trading partners.
 
 ## Setup
 ### Core setup
-Core setup is discussed in detail [here](../../CORE/Introduction/Introduction.md#setup)
+Core setup is discussed in detail [here](../../CORE/Introduction/Introduction#setup)
 
 ### 3PL setup
 
 #### Mappings assigned on 3PL Trading partner
 3PL setup and which EDI document (and field) it is mapped to/from: **EDI > Setup > 3PL setup** <br>
-- [Inventory journal name mapping](../SETUP/3PL-SETUP/Inventory-journal-name-mapping.md)
+- [Inventory journal name mapping](../SETUP/3PL-SETUP/Inventory-journal-name-mapping)
 	- Inventory adjustment - Counting (InventJournalNameIdExternal)
 	- Inventory adjustment - Movement (InventJournalNameIdExternal)
-- [Disposition code mapping](../SETUP/3PL-SETUP/Disposition-code-mapping.md)
+- [Disposition code mapping](../SETUP/3PL-SETUP/Disposition-code-mapping)
 	- Shipment receipt - Return order (DispositionCodeExternal)
-- [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md)
+- [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping)
 	- Picking list (InventStatusId)
 	- Picking list registration (InventStatusId)
 	- Shipment advice - Purchase order (InventStatusId)
@@ -90,9 +67,9 @@ Core setup is discussed in detail [here](../../CORE/Introduction/Introduction.md
 	- Inventory adjustment - Counting (InventStatusId)
 	- Inventory adjustment - Reconciliation (InventStatusId)
 	- Inventory adjustment - Movement (InventStatusId)
-- [Transaction direction mapping](../SETUP/3PL-SETUP/Transaction-direction-mapping.md)
+- [Transaction direction mapping](../SETUP/3PL-SETUP/Transaction-direction-mapping)
 	- Inventory adjustment - Movement (TransactionDirection)
-- [Order purpose group](../SETUP/3PL-SETUP/Order-purpose-group.md)
+- [Order purpose group](../SETUP/3PL-SETUP/Order-purpose-group)
 	- Picking list (OrderPurpose)
 
 #### Journal names assigned on 3PL Trading partner
@@ -107,71 +84,71 @@ Journal name with **Journal type** set to _Item arrival_. To be used to register
 Setup Document types which will be assigned on 3PL Trading partner. <br>
 Users can access the form by navigating to **EDI > Setup > Document types**
 
-- [File templates](../../CORE/Setup/DocumentTypes/File-templates.md): applicable to all document types
+- [File templates](../../CORE/Setup/DocumentTypes/File-templates): applicable to all document types
 - Setting profiles: applicable to the following document types
-    - [Picking list](../SETUP/SETTING-PROFILES/Picking-list.md)
-    - [Picking list registration](../SETUP/SETTING-PROFILES/Picking-list-registration.md)
-    - [Shipment advice - Purchase order](../SETUP/SETTING-PROFILES/Shipment-advice-Purchase-order.md)
-    - [Shipment advice - Return order](../SETUP/SETTING-PROFILES/Shipment-advice-Return-order.md)
-    - [Shipment receipt - Purchase order](../SETUP/SETTING-PROFILES/Shipment-receipt-Purchase-order.md)
-    - [Shipment receipt - Transfer order](../SETUP/SETTING-PROFILES/Shipment-receipt-Transfer-order.md)
-    - [Shipment receipt - Return order](../SETUP/SETTING-PROFILES/Shipment-receipt-Return-order.md)
-    - [Shipment receipt - Voyage](../SETUP/SETTING-PROFILES/Shipment-receipt-Voyage.md)
-    - [Inventory adjustment advice - Transfer](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Transfer.md)
-    - [Inventory adjustment advice - Counting](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Counting.md)
-    - [Inventory adjustment advice - Reconciliation](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Reconciliation.md)
-    - [Inventory adjustment advice - Movement](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Movement.md)
-    - [Product master](../SETUP/SETTING-PROFILES/Product-master.md)
+    - [Picking list](../SETUP/SETTING-PROFILES/Picking-list)
+    - [Picking list registration](../SETUP/SETTING-PROFILES/Picking-list-registration)
+    - [Shipment advice - Purchase order](../SETUP/SETTING-PROFILES/Shipment-advice-Purchase-order)
+    - [Shipment advice - Return order](../SETUP/SETTING-PROFILES/Shipment-advice-Return-order)
+    - [Shipment receipt - Purchase order](../SETUP/SETTING-PROFILES/Shipment-receipt-Purchase-order)
+    - [Shipment receipt - Transfer order](../SETUP/SETTING-PROFILES/Shipment-receipt-Transfer-order)
+    - [Shipment receipt - Return order](../SETUP/SETTING-PROFILES/Shipment-receipt-Return-order)
+    - [Shipment receipt - Voyage](../SETUP/SETTING-PROFILES/Shipment-receipt-Voyage)
+    - [Inventory adjustment advice - Transfer](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Transfer)
+    - [Inventory adjustment advice - Counting](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Counting)
+    - [Inventory adjustment advice - Reconciliation](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Reconciliation)
+    - [Inventory adjustment advice - Movement](../SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Movement)
+    - [Product master](../SETUP/SETTING-PROFILES/Product-master)
 - Validation profiles: applicable to the following inbound document types
-    - [Picking list registration](../SETUP/VALIDATION-PROFILES/Picking-list-registration.md)
-    - [Shipment receipt - Purchase order](../SETUP/VALIDATION-PROFILES/Shipment-receipt-Purchase-order.md)
-    - [Shipment receipt - Transfer order](../SETUP/VALIDATION-PROFILES/Shipment-receipt-Transfer-order.md)
-    - [Shipment receipt - Return order](../SETUP/VALIDATION-PROFILES/Shipment-receipt-Return-order.md)
-- [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames.md): applicable to all outbound document types
-- [Field metadata](../../CORE/Setup/DocumentTypes/Field-metadata.md): optionally update staging form's display name and help text per field
+    - [Picking list registration](../SETUP/VALIDATION-PROFILES/Picking-list-registration)
+    - [Shipment receipt - Purchase order](../SETUP/VALIDATION-PROFILES/Shipment-receipt-Purchase-order)
+    - [Shipment receipt - Transfer order](../SETUP/VALIDATION-PROFILES/Shipment-receipt-Transfer-order)
+    - [Shipment receipt - Return order](../SETUP/VALIDATION-PROFILES/Shipment-receipt-Return-order)
+- [Outbound file names](../../CORE/Setup/DocumentTypes/Outbound-filenames): applicable to all outbound document types
+- [Field metadata](../../CORE/Setup/DocumentTypes/Field-metadata): optionally update staging form's display name and help text per field
 
 #### Trading partner setup
 Create new trading partners and assign setup and incoming/outgoing documents. <br>
 Users can access the form by navigating to **EDI > Setup > Trading partners**
-- [Trading partner](../SETUP/Trading-partner.md)
+- [Trading partner](../SETUP/Trading-partner)
 
 ## Processing
 
 ### Import files
 Ability to manually import or review inbound files
-- [Inbound files](../../CORE/Managing-files/Inbound-files.md)
+- [Inbound files](../../CORE/Managing-files/Inbound-files)
 
 ### Export files
 Ability to manually export or review outbound files
-- [Outbound files](../../CORE/Managing-files/Outbound-files.md)
+- [Outbound files](../../CORE/Managing-files/Outbound-files)
 
 ### 3PL documents
 Review staging records. <br>
 Users can access the forms by navigating to **EDI > Documents > 3PL documents**
-- [Picking list](../DOCUMENTS/Picking-list.md)
-- [Picking list registration](../DOCUMENTS/Picking-list-registration.md)
-- [Shipment advice - Purchase order](../DOCUMENTS/Shipment-advice-Purchase-order.md)
-- [Shipment advice - Transfer order](../DOCUMENTS/Shipment-advice-Transfer-order.md)
-- [Shipment advice - Return order](../DOCUMENTS/Shipment-advice-Return-order.md)
-- [Shipment advice - Voyage](../DOCUMENTS/Shipment-advice-Voyage.md)
-- [Shipment receipt - Purchase order](../DOCUMENTS/Shipment-receipt-Purchase-order.md)
-- [Shipment receipt - Transfer order](../DOCUMENTS/Shipment-receipt-Transfer-order.md)
-- [Shipment receipt - Return order](../DOCUMENTS/Shipment-receipt-Return-order.md)
-- [Shipment receipt - Voyage](../DOCUMENTS/Shipment-receipt-Voyage.md)
-- [Inventory adjustment advice - Transfer](../DOCUMENTS/Inventory-adjustment-Transfer.md)
-- [Inventory adjustment advice - Counting](../DOCUMENTS/Inventory-adjustment-Counting.md)
-- [Inventory adjustment advice - Reconciliation](../DOCUMENTS/Inventory-adjustment-Reconciliation.md)
-- [Inventory adjustment advice - Movement](../DOCUMENTS/Inventory-adjustment-Movement.md)
-- [Product master](../DOCUMENTS/Product-master.md)
+- [Picking list](../DOCUMENTS/Picking-list)
+- [Picking list registration](../DOCUMENTS/Picking-list-registration)
+- [Shipment advice - Purchase order](../DOCUMENTS/Shipment-advice-Purchase-order)
+- [Shipment advice - Transfer order](../DOCUMENTS/Shipment-advice-Transfer-order)
+- [Shipment advice - Return order](../DOCUMENTS/Shipment-advice-Return-order)
+- [Shipment advice - Voyage](../DOCUMENTS/Shipment-advice-Voyage)
+- [Shipment receipt - Purchase order](../DOCUMENTS/Shipment-receipt-Purchase-order)
+- [Shipment receipt - Transfer order](../DOCUMENTS/Shipment-receipt-Transfer-order)
+- [Shipment receipt - Return order](../DOCUMENTS/Shipment-receipt-Return-order)
+- [Shipment receipt - Voyage](../DOCUMENTS/Shipment-receipt-Voyage)
+- [Inventory adjustment advice - Transfer](../DOCUMENTS/Inventory-adjustment-Transfer)
+- [Inventory adjustment advice - Counting](../DOCUMENTS/Inventory-adjustment-Counting)
+- [Inventory adjustment advice - Reconciliation](../DOCUMENTS/Inventory-adjustment-Reconciliation)
+- [Inventory adjustment advice - Movement](../DOCUMENTS/Inventory-adjustment-Movement)
+- [Product master](../DOCUMENTS/Product-master)
 
-[Process overview](Process-overview.md) for 3PL EDI documents.
+[Process overview](Process-overview) for 3PL EDI documents.
 
 ### Workspaces
 The following workspaces are available:
-- [EDI Document maintenance](../../CORE/Workspaces/EDI-Document-maintenance-workspace.md) - Manage file import and staging record errors. These records have not been successfully processed to a target D365 document
-- [EDI Inventory adjustment](../WORKSPACES/EDI-Inventory-adjustment.md) - Manage open inventory reconciliations and unposted inventory journal targets created by succesfully processing Inventory adjustment documents
+- [EDI Document maintenance](../../CORE/Workspaces/EDI-Document-maintenance-workspace) - Manage file import and staging record errors. These records have not been successfully processed to a target D365 document
+- [EDI Inventory adjustment](../WORKSPACES/EDI-Inventory-adjustment) - Manage open inventory reconciliations and unposted inventory journal targets created by succesfully processing Inventory adjustment documents
 
 ## Other
-- [Data entities](../OTHER/Data-entities.md)
-- [Security configuration](../OTHER/Security-configuration.md)
-- [Frequently asked questions](FAQ.md) - Includes example errors and recommended fixes
+- [Data entities](../OTHER/Data-entities)
+- [Security configuration](../OTHER/Security-configuration)
+- [Frequently asked questions](FAQ) - Includes example errors and recommended fixes

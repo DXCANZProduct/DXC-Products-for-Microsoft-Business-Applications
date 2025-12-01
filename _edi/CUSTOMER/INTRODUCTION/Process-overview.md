@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Customer
-description: Overview of the Customer EDI module process
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-07-24
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SAB_EDIDocumentWorkspace
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-ms.custom: ["21901", "intro-internal"]
-ms.search.region: IconEDICustomerDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Process Overview
@@ -77,9 +54,9 @@ When an outgoing staging record/document errors, it has not created the Outbound
 
 Staging/document errors can be viewed at: <br>
 - **EDI > Documents** - On each document type, user can set filter **Staging to target status** to _Error_
-- [**EDI > EDI Document maintenance**](../../CORE/WORKSPACES/EDI-Document-maintenance-workspace.md) - The workspace contains a tile and tab for each document type.
+- [**EDI > EDI Document maintenance**](../../CORE/WORKSPACES/EDI-Document-maintenance-workspace) - The workspace contains a tile and tab for each document type.
 
 Users can use **Show log** and **Version log** to review the issues. And after the issue has been fixed, reset the status of the record. The next processing batch will pick up the _Not started_ status record.
 
 ### Fixing Staging-to-Target EDI errors 
-See [FAQ](FAQ.md#fixing-staging-to-target-edi-errors) for example errors and possible method(s) of fixing.
+See [FAQ](FAQ#fixing-staging-to-target-edi-errors) for example errors and possible method(s) of fixing.

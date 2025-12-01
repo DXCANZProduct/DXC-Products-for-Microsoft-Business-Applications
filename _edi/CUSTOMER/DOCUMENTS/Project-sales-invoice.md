@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI Customer
-description: EDI Customer Documents - Project sales invoice
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-07-24
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SalesTableListPage, ProjProjectsListPage, Action:SAB_EDIStagingFormRun_ProjectInvoice
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: IconEDICustomerDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Project sales invoice
@@ -37,11 +14,11 @@ The created sales invoice record(s) can be viewed for a sales order, by selectin
 ## Prerequisites
 The following setup is prerequisites for the sales invoice
 
-1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-2. Create [Setting profile](../SETUP/SETTING-PROFILES/Project-sales-invoice.md) for the document.
-3. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames.md) for the document.
-4. If the customer [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner. <br> If the invoice account differs to the customer account, setup the **Invoice account** as EDI trading partner for the Project sales invoice document.
-5. Add and enable the sales invoice to the [Customer trading partner](../SETUP/Trading-partner.md) and select the applicable:
+1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+2. Create [Setting profile](../SETUP/SETTING-PROFILES/Project-sales-invoice) for the document.
+3. Create [Outbound filenames](../../CORE/Setup/DocumentTypes/Outbound-filenames) for the document.
+4. If the customer [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner. <br> If the invoice account differs to the customer account, setup the **Invoice account** as EDI trading partner for the Project sales invoice document.
+5. Add and enable the sales invoice to the [Customer trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - File name setup
@@ -49,7 +26,7 @@ The following setup is prerequisites for the sales invoice
 ## Processing
 ### Post project invoice proposal for sales order
 When the document **Project sales invoice** is enabled for the EDI customer and the project invoice proposal is for sales order lines, the post invoice proposal page's field **Send to EDI** will be set to _Yes_.
-The Project sales invoice [Document setting profile](../SETUP/SETTING-PROFILES/Project-sales-invoice.md) provides the option to exclude credits notes from creating a project sales invoice staging record by setting **Don't send credit note** to _Yes._
+The Project sales invoice [Document setting profile](../SETUP/SETTING-PROFILES/Project-sales-invoice) provides the option to exclude credits notes from creating a project sales invoice staging record by setting **Don't send credit note** to _Yes._
 
 ## View staging table records
 To view the Sales invoice staging records, go to **EDI > Documents > Customer documents > Project sales invoice**. 
@@ -60,7 +37,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company**             | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Template Id**         | Template id allocated to the record. This will be used when creating the outbound file.
@@ -82,7 +59,7 @@ The following buttons are available on the **Project sales invoice** Action Pane
 **Create selected files**       | Creates the outbound file for selected records where **Staging to target status** is set to _Not started_.
 **Create files**	            | Creates the outbound file for all records where **Staging to target status** is set to _Not started_.
 **Outbound files**              | View the outbound file record created by the selected staging record.
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner) page.
 **Invoice journal**             | View the project invoice for the staging record.
 **Show log**                    | If there are logs created within the **Process to outbound** step it is possible to review them at any time using this button. Shows only the current version.
 **Reset Status**                | You can reset the the **Staging to target status** to _Not started_. This can be used to reprocess the selected record/s. Documents can only be processed if **Staging to target status** is set to _Not started_.

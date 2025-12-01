@@ -1,30 +1,7 @@
 ---
-# required metadata
-
-title: EDI 3PL
-description: EDI 3PL Documents - Shipment receipt - Return order
-author: Monica du Toit
-manager: Pontus Ek
-ms.date: 2025-08-29
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SAB_EDI3PLDispositionCodeMapping, SAB_EDI3PLWHSInventStatusMapping, Action:SAB_EDIStagingFormRun_StockTransferReceipt_RMA 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: Monica du Toit
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: IconEDI3PLDocuments
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: Monica du Toit
-ms.search.validFrom:   2016-05-31
-ms.dyn365.ops.version:  AX 7.0.1
+layout: product-content
+header: Electronic Data Interchange (EDI)
+toc: true
 ---
 
 # Shipment receipt - Return order
@@ -43,23 +20,23 @@ The following setup is prerequisites for the Shipment receipt - Return order
 
 ### 3PL setup
 EDI > Setup > 3PL setup
-1. Create [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md) to map the 3PL's values to D365 inventory statuses.
-1. Create [Disposition code mapping](../SETUP/3PL-SETUP/Disposition-code-mapping.md) to map the 3PL's values to D365 disposition codes.
+1. Create [Inventory status Id mapping](../SETUP/3PL-SETUP/Inventory-status-Id-mapping) to map the 3PL's values to D365 inventory statuses.
+1. Create [Disposition code mapping](../SETUP/3PL-SETUP/Disposition-code-mapping) to map the 3PL's values to D365 disposition codes.
 
 ### Document type setup
 EDI > Setup > Document types: Shipment receipt - Return order
-1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates.md) for the document.
-1. Create [Setting profile](../SETUP/SETTING-PROFILES/Shipment-receipt-Return-order.md) for the document.
-1. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Shipment-receipt-Return-order.md) for the document.
+1. Create [Template](../../CORE/Setup/DocumentTypes/File-templates) for the document.
+1. Create [Setting profile](../SETUP/SETTING-PROFILES/Shipment-receipt-Return-order) for the document.
+1. Create [Validation profile](../SETUP/VALIDATION-PROFILES/Shipment-receipt-Return-order) for the document.
 
 ### Trading partners
 EDI > Setup > Trading partners
-1. If the warehouse [trading partner](../SETUP/Trading-partner.md) doesn't exist, create the new trading partner.
+1. If the warehouse [trading partner](../SETUP/Trading-partner) doesn't exist, create the new trading partner.
 1. Assign the 3PL setup to the warehouse trading partner's options:
     -  Inventory status Id mapping: Options from **EDI > Setup > 3PL setup > Inventory status Id mapping**
     -  Item arrival: Select item arrival journal to use for processing inventory receipts. Options from **Inventory management > Setup > Journal names > Warehouse management**
     -  Disposition code mapping: Options from **EDI > Setup > 3PL setup > Disposition code mapping**
-1. Add and enable the **Shipment receipt - Return order** document to the [Warehouse trading partner](../SETUP/Trading-partner.md) and select the applicable:
+1. Add and enable the **Shipment receipt - Return order** document to the [Warehouse trading partner](../SETUP/Trading-partner) and select the applicable:
     - Template
     - Setting profile
     - Validation profile
@@ -81,7 +58,7 @@ Header checks are performed when:
 3. Processing from staging to target
 
 ### Step 1 - Import
-When an EDI file is imported, the file name is key to identifying the trading partner and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners.md) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
+When an EDI file is imported, the file name is key to identifying the trading partner and therefore the document template. See [Trading partners](../../CORE/Setup/Trading-partners) for further details.  It is based on this document template that the data within the file is identified and a record created in the EDI staging table in the next step.
 
 > Note: The file mask is used to identify the trading partner and therefore template
 
@@ -116,11 +93,11 @@ If the processing of **Staging to target** errors, the staging record's **Stagin
 
 At this step the issues are usually around mapping/business logic issues. <br>
 Review the **Log** or **Version log** for the applicable record to find the issue. Example errors and method to fix are discussed in below table. <br>
-Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ.md#shipment-receipt-return-order).
+Example errors and possible fixes are discussed in [FAQ](../INTRODUCTION/FAQ#shipment-receipt-return-order).
 
 ### Validation
 
-[Validation profiles](../SETUP/VALIDATION-PROFILES/Shipment-receipt-Return-order.md) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
+[Validation profiles](../SETUP/VALIDATION-PROFILES/Shipment-receipt-Return-order) can be specified and linked to the template along with a rule error tolerance which is used to determine how D365 will react.  Options are:
 -	**Info** - An infolog is displayed with information only, it is not identified as a warning
 -	**Warning** - An infolog is displayed with a warning. It is possible to carry on processing
 -	**Error** - An infolog is displayed with an error. It is not possible to carry on processing until the error has been corrected. EDI Status = Error
@@ -140,7 +117,7 @@ The following EDI fields are available on the list page.
 
 **Field**               | **Description**
 :---                    |:---
-**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters.md#number-sequence) on the **EDI parameters**.
+**EDI number**          |	EDI Staging table record id. Select **EDI number** or the **Details** button on the Action Pane, to view the details for the selected record. The number sequence is determined by [EDI number](../../CORE/Setup/EDI-parameters#number-sequence) on the **EDI parameters**.
 **Company account**     | Legal entity of the document.
 **Company GLN**         | The company’s global location number is shown here.
 **Staging to target status**    | The current status of the staging record. Options include: <br> • **Not Started** – The staging record has been successfully processed from the inbound file to the staging table but not processed to target. <br> • **Error** – The staging record has been processed from the staging table but no target has yet been created/updated.  There are errors with the staging record that needs to be reviewed. <br> • **Completed** – The staging record has been succesfully processed and posted the arrival journal and optional product receipt. <br> • **Canceled** – The record has been manually canceled and will be excluded from processing.
@@ -160,7 +137,7 @@ The following buttons are available on the **Shipment receipt - Return order**'s
 **Process stock receipt**   | Process stock receipt for the selected record in the staging table.
 **Process all stock receipts**   | Process stock receipt for the staging records that have a **Staging to target status** set to _Not started_. 
 **Inbound files**               | View the inbound file record the selected staging record.
-**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner.md) page.
+**Trading partner**             | View the trading partner details in the [**Trading partners**](../SETUP/Trading-partner) page.
 **Return orders**               | If the EDI document has been completed it is possible to inquire on the return orders from this button.
 **Item arrival**                | If the EDI document has been completed it is possible to inquire on the item arrival journal from this button.
 **Show log**                    | If there are Errors within the document, it is possible to review them at any time using this button. Shows only the current version.
@@ -208,7 +185,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Lot Id**                  | Lot id for the return order line                                          | Used to find D365 source transaction line
 **Quantity**                | Received quantity. This must be a positive quantity.                      | • Arrival journal line > Quantity <br> • Packing slip journal line > Received
 **Unit**                    | The 3PL's unit of measure for this line
-**Disposition code**        | Specify how to process an item that is returned by a customer. Mapped value for [Disposition code mapping](../SETUP/3PL-SETUP/Disposition-code-mapping.md)	| Arrival journal line > Disposition code
+**Disposition code**        | Specify how to process an item that is returned by a customer. Mapped value for [Disposition code mapping](../SETUP/3PL-SETUP/Disposition-code-mapping)	| Arrival journal line > Disposition code
 **Colour**                  | Product dimensions – Colour	                                            | Used for validation
 **Size**                    | Product dimensions – Size	                                                | Used for validation
 **Style**                   | Product dimensions – Style	                                            | Used for validation
@@ -216,7 +193,7 @@ The following EDI Line fields are available on the lines page. <br>
 **Version**                 | Product dimensions – Version                                              | Used for validation
 **Batch number**            | Tracking dimensions – Batch number <br> If D365 batch doesn’t exists, and document setting allows batch creation this will be used in creating the new D365 batch.                                       | • Arrival journal line > Batch number <br> • Packing slip journal line > Batch number
 **Serial number**           | Tracking dimensions – Serial number	                                    | • Arrival journal line > Serial number <br> • Packing slip journal line > Serial number
-**Inventory status**        | Storage dimensions – Inventory status. Mapped value for [Inventory status](../SETUP/3PL-SETUP/Inventory-status-Id-mapping.md)  | Used for validation
+**Inventory status**        | Storage dimensions – Inventory status. Mapped value for [Inventory status](../SETUP/3PL-SETUP/Inventory-status-Id-mapping)  | Used for validation
 
 ### EDI history
 Where history logging is enabled, view the applicable EDI staging record(s) via:
