@@ -21,7 +21,7 @@ License Manager can be implemented either using configuration keys or feature ma
 
 The objectives are:
 
-- [Describe enabling license control for product given a specific ISV partner in FinOps](./FinOps)
+- [Describe enabling license control for product given a specific ISV partner in FinOps](./FinOps.md)
 - [Describe the License Manager Power App](./PowerApp)
-- [Describe the License Manager Web App](./ReactWebApp)
-- [Support and Maintenance](./SupportMaintenance)
+- [Describe the License Manager Web App](./ReactWebApp.md)
+- [Support and Maintenance](./SupportMaintenance.md)
