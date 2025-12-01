@@ -14,9 +14,9 @@ Determine if users are utilising their assigned licenses effectively by fetching
 
 
 ### Topics
-- [Setup](./Parameters) - Setup Azure Application Insights and Security Insights in D365 FO
-- [Monitor](./Review) - Colate and review user access and security utilization
-- [Security diagnostics](./Security-diagnostics) - Licensing information added to Security diagnostics to assist in allocating new roles to users going forward
+- [Setup]({{ '/dxcsecurityinsights/Parameters' | relative_url }}) - Setup Azure Application Insights and Security Insights in D365 FO
+- [Monitor]({{ '/dxcsecurityinsights/Review' | relative_url }}) - Colate and review user access and security utilization
+- [Security diagnostics]({{ '/dxcsecurityinsights/Security-diagnostics' | relative_url }}) - Licensing information added to Security diagnostics to assist in allocating new roles to users going forward
 
 ### Demonstration
 
