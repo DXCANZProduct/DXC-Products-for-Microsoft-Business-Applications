@@ -26,3 +26,37 @@ description: DXC Practice for Microsoft offers a variety of products for Dynamic
   </div>
 </div>
 {% endif %}
+
+<div class="container-fluid">
+  <h2>Suggest New Idea </h2>
+  {% capture newIdea %}
+  {% include_relative suggest-new-idea.md %}
+  {% endcapture %}
+  {{ newIdea | markdownify }}
+</div>
+
+<div class="container-fluid">
+  <h2>EULA </h2>
+  {% capture eula_notice %}
+  {% include_relative eula.md %}
+  {% endcapture %}
+  {{ eula_notice | markdownify }}
+</div>
+
+<div class="container-fluid">
+  <h2>Copyright Notice </h2>
+  {% capture copyright %}
+  {% include_relative copyright-notice.md %}
+  {% endcapture %}
+  {{ copyright | markdownify }}
+</div>
+
+  
+<!-- </div> -->
+<!-- <div class="container-fluid pt-6 pb-6">
+  <div class="row">
+    <div class="col-12 col-md-6 mb-3">
+        
+    </div>
+  </div>
+</div> -->
