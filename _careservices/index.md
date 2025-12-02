@@ -4,9 +4,9 @@ header: Care Services
 toc: true
 ---
 
-# Introduction
+<h1> Introduction </h1>
 
-DXC Care Services  is a modern, cloud-based software solution embedded in the Microsoft Dynamics 365 platform to support the Care Services eco-system in Australia and New Zealand. It is developed and delivered by DXC Practice for Microsoft Business Solutions.
+<h2>DXC Care Services  is a modern, cloud-based software solution embedded in the Microsoft Dynamics 365 platform to support the Care Services eco-system in Australia and New Zealand. It is developed and delivered by DXC Practice for Microsoft Business Solutions. </h2>
 
 DXC Care Services Product delivers functionality for:
 

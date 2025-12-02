@@ -2,6 +2,15 @@
 layout: default
 toc: true
 ---
+<div class="container-fluid" style="position: sticky; top: 0; z-index: 100; background: #fff;">
+  <div class="container-fluid row justify-content-start">
+    <div class="col-12 col-md-8">
+      <h1 class="title">{{page.header}}</h1>
+      <!-- <h2>{{page.subHeader}}</h2>
+      <p>{{page.description}}</p> -->
+    </div>
+  </div>
+</div>
 <div class="container-fluid">
   <div class="container-fluid pt-6 col-12">
     <div class="row justify-content-center">
@@ -50,25 +59,7 @@ toc: true
         {% endif %}
       </div>
       <div class="col-12 col-md-9">
-            <!-- <h1>{{page.title}}</h1> -->
-            <!-- <h2>{{page.subTitle}}</h2> -->
             <div class="content">
-              <div class="row">
-                <h1>{{page.header}}</h1>
-              </div>
-              <br/>
-              <!-- <div class="row">
-                <details>
-                  <summary>
-                    In this article
-                  </summary>
-                  <ul>
-                    <li class="list-style-type">
-                      {{ content | toc_only }}
-                    </li>
-                  </ul>
-                </details>
-              </div> -->
               <div class="row">
                 {{content}}
               </div>
