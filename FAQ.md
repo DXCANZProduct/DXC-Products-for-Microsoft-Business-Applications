@@ -4,6 +4,10 @@ header: Frequently Asked Questions
 toc: true
 ---
 
+## End User License Agreement (EULA)
+
+The End User License Agreement (EULA) can be found [here](https://dxc.com/au/en/practices/microsoft/end-user-license-agreement)
+
 ## Where can I find contact information for support?
    
 Support contact details can be located on the **Contact** tab at **Organization admininstration > Workspaces > Product support**
