@@ -24,9 +24,9 @@ Release notes for other models included in product:
 
 # Current version
 
-### Release {{page.release-version}}
+# Current version
 
-DXC Finance Utilities {{page.release-version}} runs on the following Microsoft releases
+DXC Finance Utilities 10.0.45 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
