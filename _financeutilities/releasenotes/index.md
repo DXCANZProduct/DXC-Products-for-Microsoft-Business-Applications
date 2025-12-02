@@ -17,12 +17,10 @@ Product version: 10.0.46 <br> App build: 10.0.2428.15	  | No			 | DXC Finance Ut
 
 
 Release notes for other models included in product:
-- [DXC Connections](../CONNECTIONS/Release-notes.md)
-- [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
-- [DXC License](../LMG/Release-notes.md#dxc-license)
+- [DXC Connections]({{'connections/releasenotes/' | relative_url }})
+- [DXC License Manager]({{'licensemanager/releasenotes/dxclicensemanager/' | relative_url }})
+- [DXC License]({{'licensemanager/releasenotes/dxclicense' | relative_url }})
 
-
-# Current version
 
 # Current version
 
