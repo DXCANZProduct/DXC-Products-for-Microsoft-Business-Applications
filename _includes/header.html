@@ -1,9 +1,30 @@
 <div class='header'>
   <div class="container-fluid">
-    <div class="container-fluid logo">
-      <!-- <a href="{{ site.baseurl }}"><img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" /></a> -->
-      <a href="/">{{site.title}}</a>
+    <div class="container-fluid logo header-padding">
+      <div class="social-media-links-align">
+        <div class="social-media-links">
+          <a href="/"><img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" />{{site.title}}</a>
+        </div>
+        <div class="social-media-links">
+          <b>FOLLOW US ON</b>
+        </div>
+      </div>
+      <div class="social-media-links-align">
+        <div class="social-media-links">
+          
+        </div>
+        <div class="social-media-links">
+          <a href="https://www.youtube.com/@DXCEnterprise" target="_blank" rel="noopener" class="social-media-links-end">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" width="32" height="32" style="object-fit:contain;" />
+          </a>
+          <a href="https://au.linkedin.com/showcase/dxcpracticemicrosoft" target="_blank" rel="noopener" class="social-media-links-end">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="32" height="32" style="object-fit:contain;" />
+          </a>
+        </div>
+      </div>
     </div>
-    {% include main-menu.html %}
+    <div class="row">
+      {% include main-menu.html %}
+    </div>
   </div>
 </div>

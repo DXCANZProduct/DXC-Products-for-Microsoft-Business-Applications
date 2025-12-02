@@ -1,46 +1,5 @@
 <div class="content">
     <div class="row">
-      <details open>
-        <summary>Release Notes</summary>
-        <ul>
-            <li class="list-style-type">
-              {% assign coreextension = site.coreextensions | sort: 'release-version' | reverse%}
-              {% for coreext in coreextension %}
-                  {%if coreext.url contains "coreextensions/releasenotes" and coreext.state == "current"%}
-                  <li class="list-style-type">
-                    <a href="{{ coreext.url }}">{{coreext.title}}</a>
-                  </li>
-                  {% endif%}
-              {% endfor %}
-              <details>
-                <summary>Previous Versions</summary>
-                <ul>
-                    {% assign coreextension = site.coreextensions | sort: 'release-version' | reverse%}
-                    {% for coreext in coreextension %}
-                        {%if coreext.url contains "coreextensions/releasenotes" and coreext.state == "previous"%}
-                        <li class="list-style-type">
-                          <a href="{{ coreext.url }}">{{coreext.title}}</a>
-                        </li>
-                        {% endif%}
-                    {% endfor %}
-                </ul>
-              </details>
-              <details>
-                <summary>Archive</summary>
-                <ul>
-                    {% assign coreextension = site.coreextensions | sort: 'release-version' | reverse%}
-                    {% for coreext in coreextension %}
-                        {%if coreext.url contains "coreextensions/releasenotes" and coreext.state == "archive"%}
-                        <li class="list-style-type">
-                          <a href="{{ coreext.url }}">{{coreext.title}}</a>
-                        </li>
-                        {% endif%}
-                    {% endfor %}
-                </ul>
-              </details>
-            </li>
-          </ul>
-      </details>
       <details>
       <summary>
         In this article
@@ -84,6 +43,47 @@
             {% endfor %}
           {% endif %}
         </ul>
+      </details>
+      <details open>
+        <summary>Release Notes</summary>
+        <ul>
+            <li class="list-style-type">
+              {% assign coreextension = site.coreextensions | sort: 'release-version' | reverse%}
+              {% for coreext in coreextension %}
+                  {%if coreext.url contains "coreextensions/releasenotes" and coreext.state == "current"%}
+                  <li class="list-style-type">
+                    <a href="{{ coreext.url }}">{{coreext.title}}</a>
+                  </li>
+                  {% endif%}
+              {% endfor %}
+              <details>
+                <summary>Previous Versions</summary>
+                <ul>
+                    {% assign coreextension = site.coreextensions | sort: 'release-version' | reverse%}
+                    {% for coreext in coreextension %}
+                        {%if coreext.url contains "coreextensions/releasenotes" and coreext.state == "previous"%}
+                        <li class="list-style-type">
+                          <a href="{{ coreext.url }}">{{coreext.title}}</a>
+                        </li>
+                        {% endif%}
+                    {% endfor %}
+                </ul>
+              </details>
+              <details>
+                <summary>Archive</summary>
+                <ul>
+                    {% assign coreextension = site.coreextensions | sort: 'release-version' | reverse%}
+                    {% for coreext in coreextension %}
+                        {%if coreext.url contains "coreextensions/releasenotes" and coreext.state == "archive"%}
+                        <li class="list-style-type">
+                          <a href="{{ coreext.url }}">{{coreext.title}}</a>
+                        </li>
+                        {% endif%}
+                    {% endfor %}
+                </ul>
+              </details>
+            </li>
+          </ul>
       </details>
     </div>
   </div>

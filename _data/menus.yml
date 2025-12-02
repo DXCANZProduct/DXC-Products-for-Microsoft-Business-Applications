@@ -1,15 +1,15 @@
 main:
-  - name: ""
-    url: "/docs"
-    weight: 2
-
-footer:
   - name: "Home"
     url: "/"
-    weight: 1
-  - name: "Subscribe"
-    url: "/subscribe"
     weight: 2
+  - name: "Subcribe news"
+    url: "/subscribe"
+    weight: 3
   - name: "FAQ"
+    url: "/FAQ"
+    weight: 4
+
+footer:
+  - name: ""
     url: "/FAQ"
     weight: 2

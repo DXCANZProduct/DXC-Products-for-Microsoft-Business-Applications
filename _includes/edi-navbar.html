@@ -1,56 +1,15 @@
 <div class="content">
     <div class="row">
-      <details open>
-        <summary>Release Notes</summary>
-        <ul>
-            <li class="list-style-type">
-              {% assign edis = site.edi | sort: 'release-version' | reverse%}
-              {% for record in edis %}
-                  {%if record.url contains "edi/releasenotes" and record.state == "current"%}
-                  <li class="list-style-type">
-                    <a href="{{ record.url }}">{{record.title}}</a>
-                  </li>
-                  {% endif%}
-              {% endfor %}
-              <details>
-                <summary>Previous Versions</summary>
-                <ul>
-                    {% assign edis = site.edi | sort: 'release-version' | reverse%}
-                    {% for record in edis %}
-                        {%if record.url contains "edi/releasenotes" and record.state == "previous"%}
-                        <li class="list-style-type">
-                          <a href="{{ record.url }}">{{record.title}}</a>
-                        </li>
-                        {% endif%}
-                    {% endfor %}
-                </ul>
-              </details>
-              <details>
-                <summary>Archive</summary>
-                <ul>
-                    {% assign edis = site.edi | sort: 'release-version' | reverse%}
-                    {% for record in edis %}
-                        {%if record.url contains "edi/releasenotes" and record.state == "archive"%}
-                        <li class="list-style-type">
-                          <a href="{{ record.url }}">{{record.title}}</a>
-                        </li>
-                        {% endif%}
-                    {% endfor %}
-                </ul>
-              </details>
-            </li>
-          </ul>
-      </details>
       <details>
-      <summary>
-        In this article
-      </summary>
-      <ul>
-        <li class="list-style-type">
-          {{ content | toc_only }}
-        </li>
-      </ul>
-    </details>
+        <summary>
+          In this article
+        </summary>
+        <ul>
+          <li class="list-style-type">
+            {{ content | toc_only }}
+          </li>
+        </ul>
+      </details>
       <details open>
         <summary>Getting Started</summary>
         <ul>
@@ -97,6 +56,47 @@
             {% endfor %}
           {% endif %}
         </ul>
+      </details>
+      <details open>
+        <summary>Release Notes</summary>
+        <ul>
+            <li class="list-style-type">
+              {% assign edis = site.edi | sort: 'release-version' | reverse%}
+              {% for record in edis %}
+                  {%if record.url contains "edi/releasenotes" and record.state == "current"%}
+                  <li class="list-style-type">
+                    <a href="{{ record.url }}">{{record.title}}</a>
+                  </li>
+                  {% endif%}
+              {% endfor %}
+              <details>
+                <summary>Previous Versions</summary>
+                <ul>
+                    {% assign edis = site.edi | sort: 'release-version' | reverse%}
+                    {% for record in edis %}
+                        {%if record.url contains "edi/releasenotes" and record.state == "previous"%}
+                        <li class="list-style-type">
+                          <a href="{{ record.url }}">{{record.title}}</a>
+                        </li>
+                        {% endif%}
+                    {% endfor %}
+                </ul>
+              </details>
+              <details>
+                <summary>Archive</summary>
+                <ul>
+                    {% assign edis = site.edi | sort: 'release-version' | reverse%}
+                    {% for record in edis %}
+                        {%if record.url contains "edi/releasenotes" and record.state == "archive"%}
+                        <li class="list-style-type">
+                          <a href="{{ record.url }}">{{record.title}}</a>
+                        </li>
+                        {% endif%}
+                    {% endfor %}
+                </ul>
+              </details>
+            </li>
+          </ul>
       </details>
     </div>
   </div>

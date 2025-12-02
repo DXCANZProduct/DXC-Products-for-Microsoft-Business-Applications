@@ -94,31 +94,62 @@ body {
 .header .logo a {
   font-size: 1.3rem;
   font-weight: bold;
-  color: $primary;
+  color: $primary-dark;
   text-decoration: none;
 }
+
+.header-padding {
+  padding-top: 2% !important; // Increase space above the main menu
+  padding-bottom: 2% !important; // Increase space below the main menu
+}
+
 .main-menu ul {
   display: flex;
   gap: 1.5rem;
   margin: 0;
   padding: 0;
 }
+
+.main-menu {
+  background-color: $primary;
+}
+
 .main-menu li {
   list-style: none;
 }
 .main-menu a {
-  color: $primary;
-  font-weight: 500;
+  color: $white !important;
+  font-weight: bold !important;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
   border-radius: 4px;
   transition: background 0.2s;
 }
 .main-menu a:hover, .main-menu .active > a {
-  background: #e5f1fb;
-  text-decoration: underline;
+  background: lighten($primary, 10%);
+  color: $white !important;
+  // text-decoration: underline;
 }
 
+.side-links {
+  display: flex;
+  flex-direction: column;
+}
+.side-links a:first-child {
+  align-self: flex-end;
+}
+.side-links a:last-child {
+  align-self: flex-start;
+}
+
+.social-media-links-align {
+  display: flex; justify-content: space-between; align-items: center; width: 100%;
+}
+
+.social-media-links 
+{
+  display: flex; gap: 1rem;
+}
 // Bootstrap 5.3.2
 
 // 1. Include Bootstrap functions first
