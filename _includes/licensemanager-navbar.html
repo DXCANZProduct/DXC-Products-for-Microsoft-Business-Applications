@@ -132,21 +132,6 @@
             </ul>
           </details>
         </li>
-        <li class="list-style-type">
-          <details>
-            <summary>Power App (Deprecated)</summary>
-            <ul>
-              {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
-              {% for lmg in licensemanager %}
-                  {%if lmg.url contains "releasenotes/powerapp"%}
-                  <li class="list-style-type">
-                    <a href="{{ lmg.url }}">{{lmg.title}}</a>
-                  </li>
-                  {% endif%}
-              {% endfor %}
-            </ul>
-          </details>
-        </li>
       </ul>
     </details>
     <details>
