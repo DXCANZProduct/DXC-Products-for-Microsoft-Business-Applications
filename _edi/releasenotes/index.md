@@ -8,7 +8,7 @@ state: current
 
 # 	Release notes
 This document describes the features that are either new or changed in the release version mentioned.
-[Installation process](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/EDI/Release-notes.html#installation-process) 
+[Installation process](Release-notes.html#installation-process) 
 
 # Version compatibility
 The matrix shows the minimum DXC build versions compatible per Microsoft versions and builds. <br>
