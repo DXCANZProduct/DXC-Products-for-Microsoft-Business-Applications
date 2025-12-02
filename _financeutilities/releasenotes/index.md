@@ -4,7 +4,11 @@ header: Finance Utilities
 title: 10.0.45.20251128
 release-version: 10.0.45.20251128
 state: current
+toc: true
 ---
+
+# 	Release notes
+This document describes the features that are either new or changed in the release version mentioned.
 
 # Version compatibility
 The matrix shows the minimum DXC build versions compatible per Microsoft versions and builds. <br>
