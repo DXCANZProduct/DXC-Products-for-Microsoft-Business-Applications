@@ -2,7 +2,7 @@ toc:
   - page: Introduction
     url: /smart-send
   - page: FAQ
-    url: /smartsend/FAQ
+    url: /smartsend/readme
   - title: Setup
     id: configuration
     Level_1_items:
