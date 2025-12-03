@@ -46,3 +46,13 @@ jobs:
         run: |
           npm install cheerio
           node assets/js/html-to-json.js
+      - name: Upload site to Azure Blob Storage
+        uses: azure/cli@v1
+        with:
+          inlineScript: |
+            az storage blob upload-batch \
+              --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
+              --destination '$web' \
+              --source ./converted-json \
+              --auth-mode key \
+              --account-key ${{ secrets.AZURE_STORAGE_KEY }}
