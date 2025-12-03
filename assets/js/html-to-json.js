@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const cheerio = require('cheerio');
 
-const htmlDir = './_careservices'; // adjust as needed
+const htmlDir = './_site'; // adjust as needed
 const outputDir = './converted-json';
 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
 
