@@ -25,7 +25,7 @@ Follow the instructions in the below documents to register the Azure Application
 - [Register an App to request authorization tokens and work with APIs](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/register-app-for-token?tabs=portal#register-an-app)
 - [Set up authentication](https://learn.microsoft.com/en-us/azure/azure-monitor/app/azure-ad-authentication?tabs=net#set-up-authentication)
 
-Note: Copy the Tenant ID, Client ID and Client Secret values during this step. This will be used to link Security Insights for D365 FO to Azure Application Insights application in the next step ([Step 3](./#b3-parameters)).
+Note: Copy the Tenant ID, Client ID and Client Secret values during this step. This will be used to link Security Insights for D365 FO to Azure Application Insights application in the next step [Step 3](./Parameters#b3-parameters).
 
 # B. D365 Finance and Operations
 
