@@ -4,6 +4,8 @@ header: Finance Utilities
 toc: true
 ---
 
+# Data entities
+
 # Cash and bank management
 Finance utilities includes the following data entities in Cash and bank management:
 
