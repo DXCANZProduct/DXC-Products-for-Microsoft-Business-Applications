@@ -35,8 +35,8 @@ logo:
   mobile_height: "32px"
   mobile_width: "53px"
   desktop: "assets/images/logo/logo.png"
-  desktop_height: "32px"
-  desktop_width: "53px"
+  desktop_height: "40px"
+  desktop_width: "66px"
 
 collections:
   careservices:
