@@ -14,7 +14,7 @@ Start by creating a new Application Insights instance in Azure. See [MS doc](htt
 Costing of telemetry in Azure Application Insights - [Understand and control costs](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/monitoring-telemetry/monitoring-understanding-and-controlling-cost)
  
 Navigate to Configure > API Access and copy the Application Id. Refer to [Application Id](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-resources-app-insights-keys?view=azure-bot-service-4.0#application-id)
-The application id will be used to link Security Insights for D365 FO to your Azure Application Insights instance in [Step 4](./Parameters#41-configuration) later.
+The application id will be used to link Security Insights for D365 FO to your Azure Application Insights instance in [Step 3](./Parameters#b3-parameters) later.
 
 ![AppInsights Application ID](IMAGES/AppInsightsApplicationID.png)
 
@@ -25,7 +25,7 @@ Follow the instructions in the below documents to register the Azure Application
 - [Register an App to request authorization tokens and work with APIs](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/api/register-app-for-token?tabs=portal#register-an-app)
 - [Set up authentication](https://learn.microsoft.com/en-us/azure/azure-monitor/app/azure-ad-authentication?tabs=net#set-up-authentication)
 
-Note: Copy the Tenant ID, Client ID and Client Secret values during this step. This will be used to link Security Insights for D365 FO to Azure Application Insights application in the next step ([Step 4](./Parameters#41-configuration)).
+Note: Copy the Tenant ID, Client ID and Client Secret values during this step. This will be used to link Security Insights for D365 FO to Azure Application Insights application in the next step ([Step 3](./#b3-parameters)).
 
 # B. D365 Finance and Operations
 
