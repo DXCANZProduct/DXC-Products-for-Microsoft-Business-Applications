@@ -42,3 +42,17 @@ jobs:
           action: "upload"
           app_location: "/"      # Location of your application source code
           output_location: "_site" # Built static files location
+      - name: Convert HTML to JSON
+        run: |
+          npm install cheerio
+          node assets/js/html-to-json.js
+      - name: Upload site to Azure Blob Storage
+        uses: azure/cli@v1
+        with:
+          inlineScript: |
+            az storage blob upload-batch \
+              --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
+              --destination 'docs-site' \
+              --source ./converted-json \
+              --auth-mode key \
+              --account-key ${{ secrets.AZURE_STORAGE_KEY }}
