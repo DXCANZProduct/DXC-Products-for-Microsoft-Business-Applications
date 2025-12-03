@@ -144,6 +144,8 @@ toc:
     Level_1_items:
       - page: Web API Endpoint
         url: /financeutilities/Technical/Web-API-Endpoint
+      - page: Technical Architecture
+        url: /financeutilities/Technical/Technical-Architecture        
   - page: Roadmap and release schedule
     url: /financeutilities/Roadmap
   - page: FAQ
