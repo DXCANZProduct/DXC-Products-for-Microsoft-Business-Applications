@@ -130,6 +130,6 @@ toc:
       - page: Web API Endpoint
         url: /financeutilities/Technical/Web-API-Endpoint
   - page: Roadmap and release schedule
-    url: /financeutilities/
+    url: /financeutilities/Roadmap
   - page: FAQ
-    url: /financeutilities/
+    url: /financeutilities/FAQ
