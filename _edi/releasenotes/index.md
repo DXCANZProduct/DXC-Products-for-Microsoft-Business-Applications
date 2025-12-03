@@ -22,9 +22,9 @@ Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No	          | 10.0.43
 Product version: 10.0.46 <br> App build: 10.0.2428.15	  | No	          | 10.0.43.202508291(2)
 
 Release notes for other models included in product:
-- [DXC Connections](../CONNECTIONS/Release-notes.md)
-- [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
-- [DXC License](../LMG/Release-notes.md#dxc-license)
+- [DXC Connections]({{'connections/releasenotes/' | relative_url }})
+- [DXC License Manager]({{'licensemanager/releasenotes/dxclicensemanager/' | relative_url }})
+- [DXC License]({{'licensemanager/releasenotes/dxclicense' | relative_url }})
 
 
 # Current version

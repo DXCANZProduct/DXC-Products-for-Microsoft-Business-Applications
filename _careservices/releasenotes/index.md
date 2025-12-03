@@ -22,10 +22,10 @@ Microsoft Dynamics 365 Product version:    [10.0.43](https://learn.microsoft.com
 Microsoft Dynamics 365 Product version:    [10.0.44](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44) <br>	 App build: 10.0.2177	  | No | 10.0.41.202502262
 Microsoft Dynamics 365 Product version:    [10.0.45](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45) <br>	 App build: 10.0.2345	  | No | 10.0.43.20250617
 
-Release notes for other models included in the product:
-- [DXC License Manager](../../licensemanager/releasenotes/dxclicensemanager/)
-- [DXC License](../../licensemanager/releasenotes/dxclicense/)
-- [Smart-Send](../../smartsend/releasenotes/)
+Release notes for other models included in product:
+- [DXC License Manager]({{'licensemanager/releasenotes/dxclicensemanager/' | relative_url }})
+- [DXC License]({{'licensemanager/releasenotes/dxclicense' | relative_url }})
+- [Smart-Send]({{'smartsend/releasenotes/' | relative_url }})
 
 # Current version
 ### Release {{page.release-version}}

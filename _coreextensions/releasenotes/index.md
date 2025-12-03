@@ -20,9 +20,9 @@ Product version: 10.0.44 <br> App build: 10.0.2263	  | yes only build errors 228
 Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No | DXC Core Extensions 10.0.44.20250625 <br> DXC Data Anonymisation 10.0.44.20250625 <br> DXC DMF Toolbox 10.0.44.20250625 
 Product version: 10.0.46 <br> App build: 10.0.2428	  |  | DXC Core Extensions 10.0.44.202510171 <br> DXC Data Anonymisation 10.0.44.202510171 <br> DXC DMF Toolbox 10.0.44.202510171 
 
-Release notes for other models included in the product:
-- [DXC License Manager](../LMG/Release-notes.md#dxc-license-manager)
-- [DXC License](../LMG/Release-notes.md#dxc-license)
+Release notes for other models included in product:
+- [DXC License Manager]({{'licensemanager/releasenotes/dxclicensemanager/' | relative_url }})
+- [DXC License]({{'licensemanager/releasenotes/dxclicense' | relative_url }})
 
 # Deprecated features
 
