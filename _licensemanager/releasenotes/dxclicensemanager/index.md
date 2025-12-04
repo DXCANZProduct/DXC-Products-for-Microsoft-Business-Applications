@@ -1,8 +1,8 @@
 ---
 layout: releasenotes-content
 header: License Manager
-title: 10.0.43.20250929
-release-version: 10.0.43.20250929
+title: 10.0.43.202509291
+release-version: 10.0.43.202509291
 release-date: 2025-09-29
 state: current
 toc: true
