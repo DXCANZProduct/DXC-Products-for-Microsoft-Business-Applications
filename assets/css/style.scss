@@ -320,11 +320,11 @@ tr:nth-child(even) {
 @media (min-width: 400px) {
   .col-md-3 {
     position: sticky;
-    top: 0;
+    top: 100px; // Adjust this value to match the height of your header/menu
     align-self: flex-start; /* Ensures it doesn't stretch vertically */
     z-index: 100;
-    height: 100vh; /* Optional: makes sidebar full viewport height */
-    overflow-y: auto; /* Optional: adds scroll if sidebar is taller than viewport */
+    height: calc(100vh - 100px); /* Sidebar height minus header/menu height */
+    overflow-y: auto; /* Adds scroll if sidebar is taller than viewport */
     // background: #f8f6fc; /* Optional: match your sidebar background */
   }
 }
