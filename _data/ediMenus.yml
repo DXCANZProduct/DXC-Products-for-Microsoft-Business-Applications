@@ -12,8 +12,6 @@ toc:
         url: /edi/CORE/Introduction/Process-overview
       - page: Trading partners and documents
         url: /edi/CORE/Introduction/Trading-partners-and-documents
-      - page: Trading partners and documents
-        url: /edi/CORE/Introduction/Trading-partners-and-documents 
       - title: Setup
         id: core/setup
         Level_2_items:
@@ -49,9 +47,7 @@ toc:
         - title: Settings profile
           id: core/setup/settings-profile
           Level_3_items:
-          - page: Functional
-            url: /edi/CORE/Setup/SETTING-PROFILES/Functional-acknowledgement
-          - page: Acknowledgement
+          - page: Functional acknowledgement
             url: /edi/CORE/Setup/SETTING-PROFILES/Functional-acknowledgement
       - title: Processing
         id: core/documents
@@ -93,10 +89,16 @@ toc:
       - title: Technical Guide
         id: core/technical-guide
         Level_2_items:
-        - page: Web API
-          url: /edi/CORE/Technical-guide/Web-API
         - page: Technical FAQ
           url: /edi/CORE/Technical-guide/Technical-FAQ
+        - page: EDI module library
+          url: /edi/CORE/Technical-guide/EDI-module-library   
+        - page: Create new document type
+          url: /edi/CORE/Technical-guide/Create-new-document-type   
+        - page: Web API
+          url: /edi/CORE/Technical-guide/Web-API          
+        - page: Breaking changes
+          url: /edi/CORE/Technical-guide/Summary-Breaking-changes             
   - title: Customer module
     id: customer
     Level_1_items:
@@ -139,6 +141,8 @@ toc:
           url: /edi/CUSTOMER/SETUP/SETTING-PROFILES/Customer-advanced-shipping-notice
         - page: Sales invoice
           url: /edi/CUSTOMER/SETUP/SETTING-PROFILES/Sales-invoice
+        - page: Project sales invoice
+          url: /edi/CUSTOMER/SETUP/SETTING-PROFILES/Project-sales-invoice          
       - title: Validation profiles
         id: customer/setup/validation-profiles
         Level_3_items:
@@ -159,6 +163,8 @@ toc:
         url: /edi/CUSTOMER/DOCUMENTS/Customer-advanced-shipping-notice
       - page: Sales invoice
         url: /edi/CUSTOMER/DOCUMENTS/Sales-invoice
+      - page: Project sales invoice
+        url: /edi/CUSTOMER/DOCUMENTS/Project-sales-invoice        
       - page: Review sales order
         url: /edi/CUSTOMER/DOCUMENTS/Review-sales-order
     - title: Workspaces
@@ -313,8 +319,6 @@ toc:
           url: /edi/3PL/SETUP/SETTING-PROFILES/Inventory-adjustment-advice-Movement
         - page: Product master 
           url: /edi/3PL/SETUP/SETTING-PROFILES/Product-master
-        - page: Inventory 
-          url: /edi/
       - title: Validation profiles
         id: 3pl/setup/validation-profiles
         Level_3_items:
@@ -374,6 +378,10 @@ toc:
   - title: Freight forwarder for Landed cost module
     id: freight-forwarder
     Level_1_items:
+    - page: Introduction
+      url: /edi/FREIGHT-FORWARDER/INTRODUCTION/Introduction
+    - page: Process overview
+      url: /edi/FREIGHT-FORWARDER/INTRODUCTION/Process-overview
     - page: FAQ
       url: /edi/FREIGHT-FORWARDER/INTRODUCTION/FAQ
     - title: Setup
@@ -429,6 +437,8 @@ toc:
   - title: Integration systems module
     id: integration
     Level_1_items:
+    - page: Introduction
+      url: /edi/INTEGRATION/INTRODUCTION/Introduction
     - title: Setup
       id: integration/setup
       Level_2_items:
