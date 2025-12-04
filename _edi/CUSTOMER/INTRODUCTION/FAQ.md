@@ -4,7 +4,7 @@ header: Electronic Data Interchange (EDI)
 toc: true
 ---
 
-# Frequently asked questions
+# Frequently asked questions - Customer
 
 ## Generic EDI queries
 
