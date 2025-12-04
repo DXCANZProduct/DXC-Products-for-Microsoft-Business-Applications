@@ -22,6 +22,5 @@ License Manager can be implemented either using configuration keys or feature ma
 The objectives are:
 
 - [Describe enabling license control for product given a specific ISV partner in FinOps]({{ '/licensemanager/FinOps' | relative_url }})
-- [Describe the License Manager Power App]({{ '/licensemanager/PowerApp' | relative_url }})
 - [Describe the License Manager Web App]({{ '/licensemanager/ReactWebApp' | relative_url }})
 - [Support and Maintenance]({{ '/licensemanager/SupportMaintenance' | relative_url }})
