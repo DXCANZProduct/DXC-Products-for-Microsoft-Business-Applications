@@ -31,6 +31,16 @@
                               <ul>
                               {% for subentry in entry.Level_2_items %}
                                   <li class="list-style-type"><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
+                                {% if subentry.Level_3_items[0] %}
+                                <details id="{{ subentry.id }}">
+                                    <summary>{{ subentry.title }}</summary>
+                                    <ul>
+                                       {% for subsubentry in subentry.Level_3_items %}
+                                        <li class="list-style-type"><a href="{{ subsubentry.url }}">{{ subsubentry.page }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                    </details>
+                                {% endif %}                                 
                               {% endfor %}
                               </ul>
                             {% endif %}

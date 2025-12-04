@@ -36,7 +36,6 @@ Microsoft Dynamics 365 application	| 10.0.46 	  | [What’s new or changed in Dy
 
 {% include_relative {{page.release-version}}.md %}
 
-First release
 
 # Installation process
 To align with MS best practice and to protect our IP the following applies to the release process.

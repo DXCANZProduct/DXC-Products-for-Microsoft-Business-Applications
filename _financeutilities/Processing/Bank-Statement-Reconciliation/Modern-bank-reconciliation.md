@@ -4,6 +4,8 @@ header: Finance Utilities
 toc: true
 ---
 
+# Modern bank reconciliation
+
 # Prerequisites
 
 The following is a summary of the prerequisites for using Finance utilities extensions to Modern bank reconciliation

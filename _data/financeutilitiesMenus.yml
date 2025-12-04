@@ -21,6 +21,8 @@ toc:
           url: /financeutilities/Setup/CASH-AND-BANK-MANAGEMENT/Bank-accounts
         - page: Bank statement import
           url: /financeutilities/Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import
+        - page: Modern bank reconciliation
+          url: /financeutilities/Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation          
       - title: Accounts payable
         id: setup/accounts-payable
         Level_2_items:
@@ -49,13 +51,15 @@ toc:
           url: /financeutilities/Setup/ACCOUNTS-RECEIVABLE/Remittance-format
         - page: Customer remittance import
           url: /financeutilities/Setup/ACCOUNTS-RECEIVABLE/Customer-remittance
-      - title: ABN and IRD validation
+      - title: Validation
         id: setup/abn
         Level_2_items:
         - page: ABN lookup and validation
           url: /financeutilities/Setup/ABN/ABN-lookup-and-validation
         - page: IRD number validation
           url: /financeutilities/Setup/ABN/IRD-number-validation
+        - page: Bank account validation
+          url: /financeutilities/Setup/ABN/Bank-account-validation          
       - title: Budgeting
         id: setup/budgeting
         Level_2_items:
@@ -87,6 +91,8 @@ toc:
           url: /financeutilities/Processing/Bank-Statement-Reconciliation/Bank-reconciliation-worksheet
         - page: Reports
           url: /financeutilities/Processing/Bank-Statement-Reconciliation/Cash-and-bank-management-reports
+        - page: Modern bank reconciliation
+          url: /financeutilities/Processing/Bank-Statement-Reconciliation/Modern-bank-reconciliation          
       - title: Accounts payable
         id: processing/accounts-payable
         Level_2_items:
@@ -100,13 +106,20 @@ toc:
           url: /financeutilities/Processing/Accounts-Payable/Save-electronic-reporting-file-to-secure-location
         - page: Self billing invoicing
           url: /financeutilities/Processing/Accounts-Payable/Self-billing-invoicing
-      - title: ABN and IRD validation
+      - title: Accounts receivable
+        id: processing/accounts-receivable
+        Level_2_items:
+        - page: Customer remittance import
+          url: /financeutilities/Processing/Accounts-Receivable/Customer-remittance          
+      - title: Validation
         id: processing/abn
         Level_2_items:
         - page: ABN lookup and validation
           url: /financeutilities/Processing/ABN/ABN-lookup-and-validation
         - page: IRD number validation
           url: /financeutilities/Processing/ABN/IRD-number-validation
+        - page: Bank account validation
+          url: /financeutilities/Processing/ABN/Bank-account-validation          
       - title: Budgeting
         id: processing/budgeting
         Level_2_items:
@@ -124,12 +137,16 @@ toc:
     Level_1_items:
       - page: Data entities
         url: /financeutilities/Other/Data-entities
+      - page: GER configuration
+        url: /financeutilities/Other/GER-configuration   
   - title: Technical guide
     id: technical
     Level_1_items:
       - page: Web API Endpoint
         url: /financeutilities/Technical/Web-API-Endpoint
+      - page: Technical Architecture
+        url: /financeutilities/Technical/Technical-Architecture        
   - page: Roadmap and release schedule
-    url: /financeutilities/
+    url: /financeutilities/Roadmap
   - page: FAQ
-    url: /financeutilities/
+    url: /financeutilities/FAQ

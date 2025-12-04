@@ -33,10 +33,10 @@ releasepath: https://dxcanzproductstorage.blob.core.windows.net/dxcanzproductrel
 logo:
   mobile: "assets/images/logo/logo.png"
   mobile_height: "32px"
-  mobile_width: "32px"
+  mobile_width: "53px"
   desktop: "assets/images/logo/logo.png"
-  desktop_height: "32px"
-  desktop_width: "120px"
+  desktop_height: "40px"
+  desktop_width: "66px"
 
 collections:
   careservices:
