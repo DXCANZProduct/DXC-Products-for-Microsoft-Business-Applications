@@ -17,7 +17,6 @@ Model is used in below products:
 - Finance Utilities
 - Smart Business Form Email Manager (Smart Send)
 - Electronic Data Interchange (EDI)
-- DXC Insights for D365FO
 
 # Version compatibility
 The matrix shows the minimum DXC build versions compatible per Microsoft versions and builds. <br>
