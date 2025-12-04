@@ -2,7 +2,7 @@
 layout: releasenotes-content
 header: Security Insights for D365 FO
 title: Installation process
-release-version: 10.0.44.20251121
+release-version: installation
 state: current
 toc: installation
 ---
