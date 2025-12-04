@@ -2,7 +2,7 @@
 layout: releasenotes-content
 header: Finance Utilities
 title: Deprecated
-state: archive
+state: previous
 ---
 
 # Deprecated
