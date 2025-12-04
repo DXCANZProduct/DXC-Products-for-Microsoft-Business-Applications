@@ -2,7 +2,7 @@
 layout: releasenotes-content
 header: Security Insights for D365 FO
 title: Installation process
-release-version: installation
+release-version: 10.0.1
 state: current
 toc: true
 ---
