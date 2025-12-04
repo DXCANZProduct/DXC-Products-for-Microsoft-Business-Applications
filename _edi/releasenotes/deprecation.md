@@ -2,7 +2,7 @@
 layout: releasenotes-content
 header: Electronic Data Interchange (EDI)
 title: Deprecated
-state: archive
+state: previous
 ---
 
 # Deprecated
