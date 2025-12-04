@@ -4,7 +4,7 @@ header: Security Insights for D365 FO
 title: Installation process
 release-version: installation
 state: current
-toc: installation
+toc: true
 ---
 
 # Installation process
