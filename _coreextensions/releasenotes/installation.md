@@ -8,7 +8,7 @@ toc: true
 
 # Installation process
 To align with MS best practice and to protect our IP the following applies to the release process.
-- The license models DXCLicense and Sable37License will only be released as binaries as part of a deployable package. 
+- The license models DXCLicense will only be released as binaries as part of a deployable package. 
 - We will not provide test models for the products as binary or source code. 
 - We will only publish the release as a deployable package. 
 - Model source code can be provided at our discretion. It can be requested for debugging upgrade errors, or if required for extensions.
