@@ -20,7 +20,7 @@ Powerful functionality extends Microsoft Dynamics 365:
 ## Demonstration
 Watch DXC Technology’s short demonstration on each EDI module:
 
-### Customer
+### **Customer**
 **Duration: 3.5 minutes**
 
 The EDI Customer module provides the ability to receive EDI communications from your customers and create, update or confirm D365 sales order, agreements or release orders. <br> 
@@ -28,7 +28,7 @@ The modules also provides the ability to send EDI communications to your custome
 
 [Watch recording](https://youtu.be/QI3MiG8AtLg?si=0B0AiEd-zbVayYIR)
 
-### Vendor
+### **Vendor**
 **Duration: 7 minutes**
 
 The EDI Vendor module provides the ability to send EDI communications to your vendors for new and changes to existing D365 purchase orders. <br> 
@@ -36,7 +36,7 @@ The modules also provides the ability to receive EDI communication from your ven
 
 [Watch recording](https://youtu.be/3GsbWkzRAl8?si=VZkEZlQ37w3JGTMa)
 
-### 3PL
+### **3PL**
 **Duration: 7.5 minutes**
 
 The EDI 3PL module provides the ability to send and receive EDI communications to your 3PL warehouse. <br> 
@@ -47,7 +47,7 @@ Master data - ability to send new / updates to existing products that are applic
 
 [Watch recording](https://youtu.be/eaFji8BO3-Q?si=E6a0O8Ag2wiuwF5A)
 
-### Freight forwarder
+### **Freight forwarder**
 **Duration: 7 minutes**
 
 The Freight forwarder Landed cost module contains the following EDI communications for D365 companies to and from their Freight forwarder. <br>
