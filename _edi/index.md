@@ -55,7 +55,7 @@ Outbound it contains the Voyage advice, which provides the ability to send appli
 Inbound, the Voyage creator document can be used to receive Shipment details from the Freight forwarder to create Landed cost Voyages. If the inbound document doesn't utilise the complete Purchase order, setup on the Trading partner and Vendor will determine if a backorder Voyage advice is automatically sent to the Freight forwarder for the Purchase order remainder. <br> 
 Inbound document Voyage tracking has the ability to update the created Finance and Operations Landed cost voyage tracking leg dates and notes.
 
-[Watch recording](https://youtu.be/8IFWtku5R6U?si=FwZ0GBw7qf7ElUm4))
+[Watch recording](https://youtu.be/8IFWtku5R6U?si=FwZ0GBw7qf7ElUm4)
 
 
 ## Product documentation
