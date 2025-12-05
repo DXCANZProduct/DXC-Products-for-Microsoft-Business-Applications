@@ -27,4 +27,13 @@ Watch DXC Technology’s short demonstration on Security Insights for D365 FO so
 ## New ideas
 Have a suggestion for a new product or a new feature for an existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
 
-<iframe width="560" height="560" src="https://www.youtube.com/embed/3UfacOHGWr8" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+<iframe
+	width="560"
+	height="315"
+	src="https://www.youtube-nocookie.com/embed/3UfacOHGWr8?rel=0&modestbranding=1{% if site.url %}&origin={{ site.url | uri_escape }}{{ site.baseurl | default: '' }}{% endif %}"
+	title="Security Insights for D365 FO Demo"
+	referrerpolicy="strict-origin-when-cross-origin"
+	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+	frameborder="0"
+	allowfullscreen>
+</iframe>
