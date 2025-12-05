@@ -31,13 +31,19 @@ The modules also provides the ability to send EDI communications to your custome
 ### Vendor
 **Duration: 7 minutes**
 
-The EDI Vendor module the ability to send EDI communications to your vendors for new and changes to existing D365 purchase orders. <br> 
+The EDI Vendor module provides the ability to send EDI communications to your vendors for new and changes to existing D365 purchase orders. <br> 
 The modules also provides the ability to receive EDI communication from your vendors to update, product receipt and/or invoice your D365 Purchase orders.
 
 [Watch recording](https://youtu.be/3GsbWkzRAl8?si=VZkEZlQ37w3JGTMa)
 
 ### 3PL
 **Duration: 7.5 minutes**
+
+The EDI 3PL module provides the ability to send and receive EDI communications to your 3PL warehouse. <br> 
+Ship from warehouse - send and receive picking list registration for Sales and Transfer orders. <br> 
+Ship to warehouse - send and receive shipment advice for Purchase, Transfers, Return orders and Landed cost voyages. <br> 
+Inventory adjustments - the 3PL can send inventory adjustments to adjust the on-hand stock for their warehouse in D365. <br>
+Master data - ability to send new / updates to existing products that are applicable to the 3PL warehouse.
 
 [Watch recording](https://youtu.be/eaFji8BO3-Q?si=E6a0O8Ag2wiuwF5A)
 
