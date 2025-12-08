@@ -45,6 +45,42 @@ The DXC Finance Utilities module provides enhanced functionalities to Microsoft 
 ## Demonstration
 Watch DXC Technology’s short demonstration on Finance Utilities [here](https://www.youtube.com/playlist?list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO)
 
+### Modern bank reconciliation - Overview
+**Duration: 7.5 minutes**
+
+A brief overview of the key enhancements Finance Utilities introduces to Modern Bank Reconciliation
+
+[Watch recording](https://youtu.be/taaHtFOrkXE?si=OE5azLlWiS9Hk5OF)
+
+### Accounts Payable
+**Duration: 13.25 minutes**
+
+Demonstration for various Accounts Payable functionalities using Finance Utilities in D365 Finance and Operations.
+
+[Watch recording](https://youtu.be/VKssfqil1sw?si=7vAC-WWRwAYFF3oJ)
+
+### Self billing / Recipient-created tax invoices (RCTI)
+**Duration: 11 minutes**
+
+Demonstration for automatically creating Recipient-created tax invoices for Purchase order’s Product receipts using Finance Utilities in D365 Finance and Operations. <br>
+The invoices can be automatically created at time of product receipt, or with a periodic task that has various consolidation options available.
+
+[Watch recording](https://youtu.be/bD6-Wz0VGW0?si=CXMTTbYRS9jvj3Ul)
+
+### Electronic reporting export
+**Duration: 6.5 minutes**
+
+Demonstration for exporting Electronic reporting files to secure locations using Finance Utilities.
+
+[Watch recording](https://youtu.be/k4Swv6bFINQ?si=e7MXxoY26IHaee9-)
+
+### Customer remittance import
+**Duration: 8.5 minutes**
+
+Demonstration for importing Customer remittance files from secure locations using Finance Utilities.
+
+[Watch recording](https://youtu.be/JpKETZekivM?si=t3588ATwLTPyoep-)
+
 #  Cash and bank management
 ## Bank statement import and reconciliation
 
