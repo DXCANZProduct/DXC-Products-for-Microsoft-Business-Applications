@@ -14,8 +14,8 @@ Benefits:
 
 ## Setup
 ### General journal data entities
-For the General journal import, use the *General journal* entity. This entity supports journals of type Daily. The allowed ledger types are Ledger, Bank, Vendor, and Customer. For multi-company import see See [General Journal Import for multiple Legal Entities](./userguides/JOURNAL-IMPORTS/General-Journal-Multiple#general-journal-import-for-multiple-legal-entities) <br>
-[[General Journal Import for multiple Legal Entities]({{ '/coreextensions/JOURNAL-IMPORTS/General-Journal-Multiple#general-journal-import-for-multiple-legal-entities' | relative_url }})
+For the General journal import, use the *General journal* entity. This entity supports journals of type Daily. The allowed ledger types are Ledger, Bank, Vendor, and Customer. For multi-company import see 
+[General Journal Import for multiple Legal Entities]({{ '/coreextensions/JOURNAL-IMPORTS/General-Journal-Multiple#general-journal-import-for-multiple-legal-entities' | relative_url }})
 
 ### Inventory journal data entities
 For inventory journals, the *Inventory adjustment journal headers and lines V2* and the *Inventory movement journal headers and lines V3* can be used.
