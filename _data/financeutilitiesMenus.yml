@@ -22,7 +22,19 @@ toc:
         - page: Bank statement import
           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-statement-import
         - page: Modern bank reconciliation
-          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Modern-bank-reconciliation          
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Modern-bank-reconciliation 
+    Level_1_items:
+      - title: Processing
+        id: cash-and-bank-management/processing
+        Level_2_items:
+        - page: Bank statement import
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Bank-statement-import
+        - page: Bank reconciliation worksheet
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Bank-reconciliation-worksheet
+        - page: Reports
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Cash-and-bank-management-reports
+        - page: Modern bank reconciliation
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Modern-bank-reconciliation                 
       - title: Accounts payable
         id: setup/accounts-payable
         Level_2_items:
@@ -80,19 +92,7 @@ toc:
         - page: Electronic reporting destination
           url: /financeutilities/Setup/ELECTRONIC-REPORTING-EXPORT/Electronic-reporting-destination
   - title: Processing
-    id: processing
-    Level_1_items:
-      - title: Cash and bank management
-        id: processing/bank-statement-reconciliation
-        Level_2_items:
-        - page: Bank statement import
-          url: /financeutilities/Processing/Bank-Statement-Reconciliation/Bank-statement-import
-        - page: Bank reconciliation worksheet
-          url: /financeutilities/Processing/Bank-Statement-Reconciliation/Bank-reconciliation-worksheet
-        - page: Reports
-          url: /financeutilities/Processing/Bank-Statement-Reconciliation/Cash-and-bank-management-reports
-        - page: Modern bank reconciliation
-          url: /financeutilities/Processing/Bank-Statement-Reconciliation/Modern-bank-reconciliation          
+    id: processing   
       - title: Accounts payable
         id: processing/accounts-payable
         Level_2_items:
