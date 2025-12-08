@@ -44,7 +44,7 @@ In addition to the above, when a Smart Send email is sent, any files attached to
 |:---|:---|     
 |  **File type**  | Select a file type to use for additional attachments when sending emails. <br/> Refer to Microsoft guide on [configuring document management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management). |   
 
-Smart Send also includes an extension hook to enable a customer to create an extension class to attach a document handling attached file from another source, for example, Purchase/Sales order lines. Refer to the Smart Send [technical guide]([../TECHNICAL-GUIDE/Technical-guide](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications-TechGuidance/blob/main/SmartSend.md)).
+Smart Send also includes an extension hook to enable a customer to create an extension class to attach a document handling attached file from another source, for example, Purchase/Sales order lines. Refer to the Smart Send [technical guide}(https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications-TechGuidance/blob/main/SmartSend.md).
 
 ### Sending User
 The sending user feature allows you to add the sending user, i.e. the currently logged-on user (User options>Sender email, see Figure 9. User options – Sender email) as an additional recipient, as either a To: Cc: or Bcc recipient. If the messages are sent in batch, this will be based on the user who has set the batch process.
