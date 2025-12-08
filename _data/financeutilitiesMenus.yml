@@ -22,7 +22,16 @@ toc:
         - page: Bank statement import
           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-statement-import
         - page: Modern bank reconciliation
-          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Modern-bank-reconciliation                 
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Modern-bank-reconciliation    
+      - title: Processing
+        id: cash-and-bank-management/processing
+        Level_2_items:
+        - page: Bank statement import
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Bank-statement-import
+        - page: Bank reconciliation worksheet
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Bank-reconciliation-worksheet
+        - page: Reports
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Cash-and-bank-management-reports
       - title: Accounts payable
         id: setup/accounts-payable
         Level_2_items:
