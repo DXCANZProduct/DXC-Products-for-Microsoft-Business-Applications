@@ -44,9 +44,7 @@ Add the *Accounting Manager* security role to the nominated processing group <br
 
 To create a [Data Import templates]({{ '/coreextensions/JOURNAL-IMPORTS/General-and-inventory-journal-import#create-data-entity-file-templates' | relative_url }})
 <br>
-To Create [Data Entity Import Project]
-({{ '/coreextensions/JOURNAL-IMPORTS/General-and-inventory-journal-import#create-data-entity-import-project' | relative_url }}) <br>
+To Create [Data Entity Import Project]({{ '/coreextensions/JOURNAL-IMPORTS/General-and-inventory-journal-import#create-data-entity-import-project' | relative_url }}) <br>
 For [Security Roles]({{ '/coreextensions/JOURNAL-IMPORTS/General-and-inventory-journal-import#security-roles' | relative_url }}) and to Set up roles for data projects
-For [Processing instructions]
-({{ '/coreextensions/JOURNAL-IMPORTS/General-and-inventory-journal-import#process' | relative_url }})
+For [Processing instructions]({{ '/coreextensions/JOURNAL-IMPORTS/General-and-inventory-journal-import#process' | relative_url }})
 
