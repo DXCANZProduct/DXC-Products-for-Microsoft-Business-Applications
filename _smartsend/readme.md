@@ -30,7 +30,7 @@ Smart Send uses the primary table and the email template to look for additional 
 
 **How can I include attachments that are not attached to the primary table or email template?**
 
-Smart Send also includes an extension hook to enable a customer to create an extension class to attach a document handling attached file from another source, for example, Purchase/Sales order lines. Refer to the Smart Send [technical guide](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications-TechGuidance/blob/main/SmartSend).
+Smart Send also includes an extension hook to enable a customer to create an extension class to attach a document handling attached file from another source, for example, Purchase/Sales order lines. Refer to the Smart Send [technical guide](https://github.com/DXCANZProduct/DXC-Products-for-Microsoft-Business-Applications-TechGuidance/blob/main/SmartSend.md).
 
 **How can I use a token placeholder that is not on the primary table?**
 
