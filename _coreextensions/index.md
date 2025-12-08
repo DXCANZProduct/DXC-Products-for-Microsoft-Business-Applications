@@ -11,7 +11,7 @@ The release notes describes the features that are either new or changed.
 ## Solution Overview
 DXC Core Extensions for Microsoft Dynamics 365 is a set of productivity utilities providing functionality to complement the standard Microsoft solution. Core Extensions includes the following components:
 
-### [Company Colors](COMPANY-COLORS/Company-Colors)
+### [Company Colors](./COMPANY-COLORS/Company-Colors)
 Company colors allow a user to select a preferred color theme for a company. Standard D365 allows you to only define a color theme per user. This feature, however, extends that capability to allow you to define a theme at company level. This will enable the user to differentiate each company by the color selected.
 
 ### [Exchange Rate Import](EXCHANGE-RATE-IMPORT/Exchange-rate-import)
@@ -28,7 +28,7 @@ The report “User security audit details report” included in the Core Extensi
 ### [General and Inventory Journal Import](JOURNAL-IMPORTS/General-and-inventory-journal-import)
 The Import Journal functionality provides a user-friendly method to import general journal and inventory journal transaction data from Excel or CSV files. All the standard validation and defaulting will occur. Both General Journals and Inventory Journals are supported. The imports are based on Data Entities and allows configuration of new templates to be imported.
 
-### [Business Process Links](BUSINESS-PROCESS-LINKS/Business-process-links.md)
+### [Business Process Links](BUSINESS-PROCESS-LINKS/Business-process-links)
 The business process links feature allows you to setup associated links to forms when the user clicks on the Dynamics 365 Help icon. The associated links will display under the Process Links tab. This was designed for Mavim and SharePoint but will work for any external links.
 
 ### [Import Budgets](IMPORT-BUDGETS/Import-budgets)
