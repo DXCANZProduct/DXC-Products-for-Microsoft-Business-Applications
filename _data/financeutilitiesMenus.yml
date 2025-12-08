@@ -25,7 +25,6 @@ toc:
           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-statement-import
         - page: Modern bank reconciliation
           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Modern-bank-reconciliation 
-    Level_1_items:
       - title: Processing
         id: cash-and-bank-management/processing
         Level_2_items:
