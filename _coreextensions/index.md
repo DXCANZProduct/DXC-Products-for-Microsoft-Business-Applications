@@ -11,7 +11,7 @@ The release notes describes the features that are either new or changed.
 ## Solution Overview
 DXC Core Extensions for Microsoft Dynamics 365 is a set of productivity utilities providing functionality to complement the standard Microsoft solution. Core Extensions includes the following components:
 
-### [Company Colors](./COMPANY-COLORS/Company-Colors)
+### [Company Colors](COMPANY-COLORS/Company-Colors)
 Company colors allow a user to select a preferred color theme for a company. Standard D365 allows you to only define a color theme per user. This feature, however, extends that capability to allow you to define a theme at company level. This will enable the user to differentiate each company by the color selected.
 
 ### [Exchange Rate Import](EXCHANGE-RATE-IMPORT/Exchange-rate-import.md)
