@@ -12,7 +12,7 @@ There are a few ways of sending business forms or reports to Smart Send.
 * Set print management to use an electronic report format and include Smart Send within the electronic reporting destinations.
 
 ## Print management setup
-Defaulting to Smart send can be achieved using the standard Dynamics 365 for finance and operations form setup, print management configuration.  Open the relevant module form setup menu and select the print management option. Select the relevant business form or report and specify Smart Send in the destination field. For further details on the configuration for use with electronic reports, see [Electronic Reporting](../PROCESSES/Electronic_Reporting.md)
+Defaulting to Smart send can be achieved using the standard Dynamics 365 for finance and operations form setup, print management configuration.  Open the relevant module form setup menu and select the print management option. Select the relevant business form or report and specify Smart Send in the destination field. For further details on the configuration for use with electronic reports, see [Electronic Reporting](../PROCESSES/Electronic_Reporting)
  
 ## Printer destination Smart Send
 To use the Smart send functionality, select it under the Print *destination* settings when printing the given business form or report. If no recipient is found the selected printer setting will be used instead. 
