@@ -1,28 +1,28 @@
 toc:
   - page: Introduction
     url: /financeutilities
-  - title: Setup
-    id: setup
+  - title: Cash and bank management
+    id: Cash and bank management
     Level_1_items:
-      - title: Cash and bank management
-        id: setup/cash-and-bank-management
+      - title: Setup
+        id: cash-and-bank-management/setup
         Level_2_items:
         - page: Financial utilities parameters
-          url: /financeutilities/Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Finance-utilities-parameters
         - page: Financial utilities connections
-          url: /financeutilities/Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Finance-utilities-connections
         - page: Bank statement format
-          url: /financeutilities/Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-format
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-statement-format
         - page: Populate accounts payable document number
-          url: /financeutilities/Setup/CASH-AND-BANK-MANAGEMENT/Populate-account-payable-payment-document-number
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Populate-account-payable-payment-document-number
         - page: Bank reconciliation matching rules
-          url: /financeutilities/Setup/CASH-AND-BANK-MANAGEMENT/Bank-reconciliation-matching-rules
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-reconciliation-matching-rules
         - page: Bank accounts
-          url: /financeutilities/Setup/CASH-AND-BANK-MANAGEMENT/Bank-accounts
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-accounts
         - page: Bank statement import
-          url: /financeutilities/Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-statement-import
         - page: Modern bank reconciliation
-          url: /financeutilities/Setup/CASH-AND-BANK-MANAGEMENT/Modern-bank-reconciliation          
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Modern-bank-reconciliation          
       - title: Accounts payable
         id: setup/accounts-payable
         Level_2_items:
