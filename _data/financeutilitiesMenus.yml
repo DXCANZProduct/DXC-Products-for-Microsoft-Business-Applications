@@ -33,7 +33,105 @@ toc:
         - page: Reports
           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Cash-and-bank-management-reports
         - page: Modern bank reconciliation
-          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Modern-bank-reconciliation       
+          url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Modern-bank-reconciliation                 
+      - title: Accounts payable
+        id: setup/accounts-payable
+        Level_2_items:
+        - page: Sundry payment
+          url: /financeutilities/Setup/ACCOUNTS-PAYABLE/Sundry-payment
+        - page: BPAY payment
+          url: /financeutilities/Setup/ACCOUNTS-PAYABLE/BPAY-payment
+        - page: Vendor payment
+          url: /financeutilities/Setup/ACCOUNTS-PAYABLE/Vendor-payments
+        - page: Vendor approval workflow
+          url: /financeutilities/Setup/ACCOUNTS-PAYABLE/Vendor-bank-account-changes-workflow
+        - page: Save electronic reporting to secure location
+          url: /financeutilities/Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location
+        - page: Self billing invoicing
+          url: /financeutilities/Setup/ACCOUNTS-PAYABLE/Self-billing-invoicing
+      - title: Accounts receivable
+        id: setup/accounts-receivable
+        Level_2_items:
+        - page: Customer approval workflow
+          url: /financeutilities/Setup/ACCOUNTS-RECEIVABLE/Customer-approval-workflow
+        - page: Customer payments
+          url: /financeutilities/Setup/ACCOUNTS-RECEIVABLE/Customer-payments
+        - page: Customer reference
+          url: /financeutilities/Setup/ACCOUNTS-RECEIVABLE/Customer-reference
+        - page: Remittance format
+          url: /financeutilities/Setup/ACCOUNTS-RECEIVABLE/Remittance-format
+        - page: Customer remittance import
+          url: /financeutilities/Setup/ACCOUNTS-RECEIVABLE/Customer-remittance
+      - title: Validation
+        id: setup/abn
+        Level_2_items:
+        - page: ABN lookup and validation
+          url: /financeutilities/Setup/ABN/ABN-lookup-and-validation
+        - page: IRD number validation
+          url: /financeutilities/Setup/ABN/IRD-number-validation
+        - page: Bank account validation
+          url: /financeutilities/Setup/ABN/Bank-account-validation          
+      - title: Budgeting
+        id: setup/budgeting
+        Level_2_items:
+        - page: Budget import
+          url: /financeutilities/Setup/BUDGETING/Budget-import
+      - title: Encryption/decryption
+        id: setup/encryption
+        Level_2_items:
+        - page: Encryption/decryption
+          url: /financeutilities/Setup/ENCRYPTION/Encryption-decryption
+      - title: Electronic reporting export
+        id: setup/electronic-reporting-export
+        Level_2_items:
+        - page: Electronic reporting export connection
+          url: /financeutilities/Setup/ELECTRONIC-REPORTING-EXPORT/Electronic-reporting-export-connections
+        - page: Document types
+          url: /financeutilities/Setup/ELECTRONIC-REPORTING-EXPORT/Document-types
+        - page: Electronic reporting destination
+          url: /financeutilities/Setup/ELECTRONIC-REPORTING-EXPORT/Electronic-reporting-destination
+  - title: Processing
+    id: processing  
+    Level_1_items: 
+      - title: Accounts payable
+        id: processing/accounts-payable
+        Level_2_items:
+        - page: Sundry payment
+          url: /financeutilities/Processing/Accounts-Payable/Sundry-payment
+        - page: BPAY payment
+          url: /financeutilities/Processing/Accounts-Payable/BPAY-payment
+        - page: Vendor payment
+          url: /financeutilities/Processing/Accounts-Payable/Vendor-payments
+        - page: Save electronic reporting file to secure location
+          url: /financeutilities/Processing/Accounts-Payable/Save-electronic-reporting-file-to-secure-location
+        - page: Self billing invoicing
+          url: /financeutilities/Processing/Accounts-Payable/Self-billing-invoicing
+      - title: Accounts receivable
+        id: processing/accounts-receivable
+        Level_2_items:
+        - page: Customer remittance import
+          url: /financeutilities/Processing/Accounts-Receivable/Customer-remittance          
+      - title: Validation
+        id: processing/abn
+        Level_2_items:
+        - page: ABN lookup and validation
+          url: /financeutilities/Processing/ABN/ABN-lookup-and-validation
+        - page: IRD number validation
+          url: /financeutilities/Processing/ABN/IRD-number-validation
+        - page: Bank account validation
+          url: /financeutilities/Processing/ABN/Bank-account-validation          
+      - title: Budgeting
+        id: processing/budgeting
+        Level_2_items:
+        - page: Budget import
+          url: /financeutilities/Processing/Budgeting/Budget-import
+        - page: Example file format
+          url: /financeutilities/Processing/Budgeting/Example-file-format
+      - title: Electronic reporting export
+        id: processing/electronic-reporting-export
+        Level_2_items:
+        - page: Export electronic reporting file
+          url: /financeutilities/Processing/Electronic-reporting-export/Save-electronic-reporting-file-to-secure-locationfile-to-secure-location
   - title: Other
     id: other
     Level_1_items:
