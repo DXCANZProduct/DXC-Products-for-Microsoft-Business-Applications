@@ -9,7 +9,7 @@ toc:
     url: /coreextensions/RECIPROCAL/Company-Reciprocal
   - page: User security audit details report
     url: /coreextensions/USER-SECURITY-AUDIT-DETAIL-REPORT/User-Security-audit-detail-report
-  - page: General and inventory audit detail report
+  - page: General and inventory journal import
     url: /coreextensions/JOURNAL-IMPORTS/General-and-inventory-journal-import
   - page: General Journal for Multiple Legal Entities
     url: /coreextensions/JOURNAL-IMPORTS/General-Journal-Multiple
