@@ -34,7 +34,7 @@ The business process links feature allows you to setup associated links to forms
 ### [Import Budgets]({{ '/coreextensions/IMPORT-BUDGETS/Import-budgets' | relative_url }})
 The Import Budgets extension allows importing budget from Microsoft Excel templates where period budgets are presented in a traditional columnar format including dynamically adding financial dimensions and financial period across columns.
 
-### [DMF Toolbox]({{ '/coreextensionsDMF-TOOLBOX' | relative_url }})
+### [DMF Toolbox]({{ '/coreextensions/DMF-TOOLBOX' | relative_url }})
 The DMF toolbox provides users with the visibility of 2 additional fields within Data Management Entities.
 
 Enum values - a special data type that enables for a variable to be a set of predefined constants. The variable must be equal to one of the values that have been predefined for it. For example, in the Customers data entity the field Time Zone has a pre-defined list of values that can be selected. 
