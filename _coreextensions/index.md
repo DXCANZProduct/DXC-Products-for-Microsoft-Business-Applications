@@ -11,10 +11,10 @@ The release notes describes the features that are either new or changed.
 ## Solution Overview
 DXC Core Extensions for Microsoft Dynamics 365 is a set of productivity utilities providing functionality to complement the standard Microsoft solution. Core Extensions includes the following components:
 
-### [Company Colors](./COMPANY-COLORS/Company-Colors)
+### [Company Colors]({{ '/coreextensions/COMPANY-COLORS/Company-Colors' | relative_url }})
 Company colors allow a user to select a preferred color theme for a company. Standard D365 allows you to only define a color theme per user. This feature, however, extends that capability to allow you to define a theme at company level. This will enable the user to differentiate each company by the color selected.
 
-### [Exchange Rate Import](EXCHANGE-RATE-IMPORT/Exchange-rate-import)
+### [Company Colors]({{ '/coreextensions/EXCHANGE-RATE-IMPORT/Exchange-rate-import' | relative_url }})
 Microsoft Dynamics 365 offers functionality to import exchange rates based on limited sources. The Exchange Rate Import leverages the same standard framework of Microsoft Dynamics 365 but extends functionality to support the following additional sources; Reserve Bank of Australia, Bank of Canada, Open Exchange Rates.
 
 ### [Display reciprocal exchange rate](RECIPROCAL/Company-Reciprocal)
