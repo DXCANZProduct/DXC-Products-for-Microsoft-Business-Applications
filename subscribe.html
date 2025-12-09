@@ -1,29 +1,20 @@
 ---
-layout: home
-header: Subscribe
-description: Sign up to receive email notifications about product updates and announcements from DXC Practice for Microsoft.
+layout: default
 ---
 
-<div>
-    <div class="mb-2">
-        <input class="form-control me-2" type="email" id="EmailAddress" placeholder="Please provide your email" aria-label="Email">
+<div class="subscribe-card">
+    <h2>Subscribe to Product News</h2>
+    <div class="form-group">
+        <label for="EmailAddress">Email:</label>
+        <input type="email" id="EmailAddress" placeholder="Please provide your email" aria-label="Email">
     </div>
-    <!-- <div class="mb-2 small">
-        <input type="checkbox" id="All" onclick="toggleOptions()" checked="true" value="All"> I would like to be updated with all news and announcements.</input>
-    </div> -->
-    <div class="mb-2 small">
-        <input type="checkbox" id="General" onclick="agreeToSubscription()" value="General"> I agree to get updates on general news and announcements.</input>
+    <div class="form-group">
+        <input type="checkbox" id="General" onclick="agreeToSubscription()" value="General">
+        <label for="General">I agree to get updates on general news and announcements.</label>
     </div>
     {% include subscription.html %}
-    <br/>
-    <br/>
-    <div class="mb-2">
-        <p id="messagePlaceholder">Thank you for subscribing</p>
-        <button id="subscribebtn" class="button button-primary" onclick="subscribe()">Subscribe</button>
-    </div>
-    <br/>
-    <br/>
-    <a href="./unsubscribe.html">Click here to unsubscribe</a>
+    <button id="subscribebtn" class="button-primary" onclick="subscribe()">Subscribe</button>
+    <a href="./unsubscribe.html" class="unsubscribe-link">Unsubscribe</a>
 </div>
 
 <script src="./assets/js/subscribe.js"></script>

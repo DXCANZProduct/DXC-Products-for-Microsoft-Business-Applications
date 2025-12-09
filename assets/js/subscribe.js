@@ -75,12 +75,15 @@ function subscribe() {
     var address = document.getElementById('EmailAddress').value
     var url = "https://dxcanzproductappsapi01.azurewebsites.net/subscribe?email=" + address + "&productList=" + productsList;
 
-    document.getElementById("messagePlaceholder").innerHTML = "Thank you for subscribing"
-    document.getElementById("messagePlaceholder").style.display = "block";
-
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", url, false); // false for synchronous request
-    xmlHttp.send( null );
+    try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", url, false); // false for synchronous request
+        xmlHttp.send( null );
+    } catch (e) {
+        // Optionally log error or ignore
+    }
+    // Redirect to status page regardless of error
+    window.location.href = "./subscription-status.html?status=subscribed";
 }
 
 function unsubscribe() {
@@ -89,12 +92,15 @@ function unsubscribe() {
     var address = document.getElementById('EmailAddress').value
     var url = "https://dxcanzproductappsapi01.azurewebsites.net/unsubscribe?email=" + address + "&productList=" + productsList
 
-    document.getElementById("messagePlaceholder").innerHTML = "You have been unsubscribed"
-    document.getElementById("messagePlaceholder").style.display = "block";
-
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", url, false); // false for synchronous request
-    xmlHttp.send( null );
+    try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", url, false); // false for synchronous request
+        xmlHttp.send( null );
+    } catch (e) {
+        // Optionally log error or ignore
+    }
+    // Redirect to status page regardless of error
+    window.location.href = "./subscription-status.html?status=unsubscribed";
 }
 
 function agreeToSubscription() {
@@ -113,6 +119,8 @@ function toggleOptions() {
     if (document.getElementById('General').checked) {
         disable = false;
     }
+
+    console.log("disable: " + disable)
 
     // document.getElementById("General").disabled = disable
     document.getElementById("DXCCareServices").disabled = disable
@@ -135,10 +143,21 @@ function toggleOptions() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById("messagePlaceholder").style.display = "none"
+    if (document.getElementById("messagePlaceholder")) {
+        document.getElementById("messagePlaceholder").style.display = "none"
+    }
+    
     agreeToSubscription();
 
     toggleOptions(); 
+});
+
+// Also ensure options are set on full page load
+window.addEventListener('load', function() {
+    if (document.getElementById("messagePlaceholder")) {
+        document.getElementById("messagePlaceholder").style.display = "none"
+    }
+    toggleOptions();
 });
 
 

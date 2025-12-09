@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="subscription-status-container">
+    <div class="icon" id="statusIcon">🎉</div>
+    <h2 id="statusHeading">Subscription Status</h2>
+    <p id="statusMessage">Thank you for joining the our news family!<br>You're officially in the loop for all the latest updates.</p>
+    <a href="./unsubscribe.html" id="unsubscribeBtn">Unsubscribe</a>
+    <a href="./subscribe.html" id="subscribeBtn">Subscribe again</a>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const status = params.get('status');
+const statusMessage = document.getElementById('statusMessage');
+const statusHeading = document.getElementById('statusHeading');
+const statusIcon = document.getElementById('statusIcon');
+const unsubscribeBtn = document.getElementById('unsubscribeBtn');
+const subscribeBtn = document.getElementById('subscribeBtn');
+
+if (status === 'unsubscribed') {
+    statusIcon.textContent = '👋';
+    statusHeading.textContent = 'Unsubscribed';
+    statusMessage.innerHTML = "You've been unsubscribed.<br>We're sad to see you go, but you can always rejoin for updates!";
+    unsubscribeBtn.style.display = 'none';
+    subscribeBtn.style.display = 'inline-block';
+} else if (status === 'subscribed') {
+    statusIcon.textContent = '🎉';
+    statusHeading.textContent = 'Subscribed!';
+    statusMessage.innerHTML = "Thank you for joining the DXC news family!<br>You're officially in the loop for all the latest updates.";
+    unsubscribeBtn.style.display = 'inline-block';
+    subscribeBtn.style.display = 'none';
+} else if (status === 'thankyou') {
+    statusIcon.textContent = '🎉';
+    statusHeading.textContent = 'Thank You!';
+    statusMessage.innerHTML = "Thank you for your submission!<br>We'll be in touch soon.";
+    unsubscribeBtn.style.display = 'none';
+    subscribeBtn.style.display = 'none';
+}
+</script>

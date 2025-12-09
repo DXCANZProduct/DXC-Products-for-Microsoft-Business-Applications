@@ -85,18 +85,6 @@ document.addEventListener("DOMContentLoaded", function() {
   var myArray = enabledTitles.split("/").filter(Boolean);
   if (myArray.length === 0) return;
 
-  // // Open parent section
-  // var elementId = myArray[0];
-  // var parent = document.getElementById(elementId);
-  // if (parent) parent.setAttribute("open", "");
-
-  // // Open nested sections if any
-  // var path = elementId;
-  // for (var i = 1; i < myArray.length; i++) {
-  //   path += "/" + myArray[i];
-  //   var el = document.getElementById(path);
-  //   if (el) el.setAttribute("open", "");
-  // }
   // Iteratively build the ID and open each parent
     let elementId = "";
     myArray.forEach(function(part, idx) {
@@ -111,36 +99,3 @@ document.addEventListener("DOMContentLoaded", function() {
     if (archiveVersion) archiveVersion.setAttribute("open", "");
 });
 </script>
-
-<!-- <script>
-  var currentUrl = window.location.href
-
-  var index = 0;
-
-  if (currentUrl.includes("careservices")) {
-    index = currentUrl.indexOf("careservices/") + 13;
-  }
-  else if (currentUrl.includes("coreextensions")) {
-    index = currentUrl.indexOf("coreextensions/") + 15;
-  }
-  
-  var enabledTitles = currentUrl.substring(
-                        index, 
-                        currentUrl.lastIndexOf("/")
-                      );
-
-  const myArray = enabledTitles.split("/");
-
-  console.log("this is enabled titles", myArray);
-  var elementid = myArray[0].toString().toLowerCase();
-  const elementToModifyParent = document.getElementById(elementid);
-  elementToModifyParent.setAttribute("open", "");
-  console.log("this is enabled 1", elementToModifyParent)
-  for (var i = 1; i < myArray.length; i++) {
-    elementId = elementid + "/" + myArray[i].toString().toLowerCase();
-    const elementToModify = document.getElementById(elementId);
-    console.log("this is enabled", elementToModify)
-    elementToModify.setAttribute("open", "");
-  }
-
-</script> -->

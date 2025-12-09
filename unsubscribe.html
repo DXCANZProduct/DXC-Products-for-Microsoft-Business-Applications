@@ -1,26 +1,20 @@
 ---
-layout: home
-header: Unsubscribe
-description: Unsubscribe from receiving email notifications about product updates and announcements from DXC Practice for Microsoft.
+layout: default
 ---
 
-<div>
-    <div class="mb-2">
-        <input class="form-control me-2" type="email" id="EmailAddress" placeholder="Please provide your email" aria-label="Email">
+<div class="subscribe-card">
+    <h2>Unsubscribe to Product News</h2>
+    <div class="form-group">
+        <label for="EmailAddress">Email:</label>
+        <input type="email" id="EmailAddress" placeholder="Please provide your email" aria-label="Email">
+    </div>
+    <div class="form-group">
+        <input type="checkbox" id="General" onclick="agreeToSubscription()" value="General">
+        <label for="General">I agree to unsubscribe</label>
     </div>
     {% include subscription.html %}
-    <br/>
-    <br/>
-    <!-- <div class="mb-2 small">
-        <input type="checkbox" id="All" value="All"> I want to be removed from all news and announcements</input>
-    </div>
-    <div class="mb-2 small">
-        <input type="checkbox" id="General" value="General"> I want to be removed from all general news and announcements.</input>
-    </div> -->
-    <div class="mb-2">
-        <p id="messagePlaceholder">You have been unsubscribed</p>
-        <button class="button button-secondary" onclick="unsubscribe()">Unsubscribe</button>
-    </div>
+    <button id="subscribebtn" class="button-primary" onclick="unsubscribe()">Unsubscribe</button>
+    <a href="./subscribe.html" class="unsubscribe-link">Subscribe</a>
 </div>
 
 <script src="./assets/js/subscribe.js"></script>
