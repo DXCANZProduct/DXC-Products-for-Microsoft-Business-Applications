@@ -69,7 +69,7 @@
                   </li>
                   {% endif%}
               {% endfor %}
-              <details id="previous-versions">
+              <details class="sticky-subsection" {% if page.url contains "careservices/releasenotes" and page.state == "previous" %}open{% endif %}>
                 <summary>Previous Versions</summary>
                 <ul>
                     {% assign careservice = site.careservices | sort: 'release-version' | reverse%}
@@ -82,7 +82,7 @@
                     {% endfor %}
                 </ul>
               </details>
-              <details id="archive-versions">
+              <details class="sticky-subsection" {% if page.url contains "careservices/releasenotes" and page.state == "archive" %}open{% endif %}>
                 <summary>Archive</summary>
                 <ul>
                     {% assign careservice = site.careservices | sort: 'release-version' | reverse%}

@@ -69,7 +69,7 @@
               </li>
               {% endif%}
           {% endfor %}
-          <details>
+          <details class="sticky-subsection" {% if page.url contains "connections/releasenotes" and page.state == "previous" %}open{% endif %}>
             <summary>Previous Versions</summary>
             <ul>
               {% assign connection = site.connections | sort: 'release-version' | reverse%}
@@ -82,7 +82,7 @@
               {% endfor %}
             </ul>
           </details>
-          <details>
+          <details class="sticky-subsection" {% if page.url contains "connections/releasenotes" and page.state == "archive" %}open{% endif %}>
             <summary>Archive</summary>
             <ul>
               {% assign connection = site.connections | sort: 'release-version' | reverse%}

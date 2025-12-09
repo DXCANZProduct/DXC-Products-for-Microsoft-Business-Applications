@@ -13,11 +13,18 @@ description: DXC Practice for Microsoft offers a variety of products for Dynamic
     {%if product.disableDocs == false%}
     <div class="col-12 col-md-6 mb-3">
       <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="{{ product.productDocsUrl | relative_url }}">{{ product.title }}</a>
-          </h2>
-          <p>{{ product.description }}</p>
+        <div class="service-content d-flex align-items-start gap-3">
+          {% if product.image %}
+              {% if product.image %}
+              <img src="{{ product.image | relative_url }}" alt="{{ product.title }} logo" style="max-width: 32px; height: 32px; flex-shrink: 0; margin-top: 4px;" aria-hidden="true" class="align-self-center">
+            {% endif %}
+          {% endif %}
+          <div class="service-text">
+            <h2 class="service-title mb-2">
+              <a href="{{ product.productDocsUrl | relative_url }}">{{ product.title }}</a>
+            </h2>
+            <p class="mb-0">{{ product.description }}</p>
+          </div>
         </div>
       </div>
     </div>

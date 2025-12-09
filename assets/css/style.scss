@@ -316,16 +316,29 @@ tr:nth-child(even) {
     list-style-type: none;
 }
 
-/* Make the left sidebar sticky */
-@media (min-width: 400px) {
+/* Sticky product page header */
+.page-sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 200; // above sidebar/nav
+  background: #fff;
+}
+
+/* Prevent overlap in mobile: reduce sidebar z-index and add spacing if title wraps */
+@media (max-width: 576px) {
+  .page-sticky-header {
+    /* Extra padding to accommodate multi-line titles */
+    padding-bottom: 0.5rem;
+    box-shadow: 0 1px 0 0 #e5e5e5;
+  }
+
   .col-md-3 {
-    position: sticky;
-    top: 100px; // Adjust this value to match the height of your header/menu
-    align-self: flex-start; /* Ensures it doesn't stretch vertically */
-    z-index: 100;
-    height: calc(100vh - 100px); /* Sidebar height minus header/menu height */
-    overflow-y: auto; /* Adds scroll if sidebar is taller than viewport */
-    // background: #f8f6fc; /* Optional: match your sidebar background */
+    z-index: 50; // keep below header
+  }
+
+  /* Ensure content doesn’t slide under the sticky header when scrolled */
+  .content, .main-content {
+    scroll-margin-top: 72px; // helps anchor jumps under sticky header
   }
 }
   
@@ -515,3 +528,25 @@ tr:nth-child(even) {
   background: #f3eaff;
   color: #5a2580;
 }
+
+/* Top-level sticky headers */
+.sticky-section > summary {
+  position: sticky;
+  top: 0;                 /* bump this if a fixed site header overlaps */
+  z-index: 10;
+  // background: #fff;
+  padding: 0.5rem 0.75rem;
+  // border-bottom: 1px solid #e5e5e5;
+}
+
+/* Subsection sticky headers (Previous Versions, Archive) */
+.sticky-subsection > summary {
+  position: sticky;
+  top: 2.25rem;           /* sits under the Release Notes header; adjust spacing */
+  z-index: 9;
+  // background: #fff;
+  padding: 0.4rem 0.6rem;
+  // border-bottom: 1px solid #eee;
+}
+
+details > summary { cursor: pointer; }
