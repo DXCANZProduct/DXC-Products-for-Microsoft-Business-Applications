@@ -32,21 +32,37 @@ toc:
           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Bank-reconciliation-worksheet
         - page: Reports
           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Cash-and-bank-management-reports
-      - title: Accounts payable
-        id: setup/accounts-payable
+  - title: Accounts payable
+    id: accounts-payable
+    Level_1_items:
+      - title: Setup
+        id: accounts-payable/setup
         Level_2_items:
         - page: Sundry payment
-          url: /financeutilities/Setup/ACCOUNTS-PAYABLE/Sundry-payment
+          url: /financeutilities/ACCOUNTS-PAYABLE/Setup/Sundry-payment
         - page: BPAY payment
-          url: /financeutilities/Setup/ACCOUNTS-PAYABLE/BPAY-payment
+          url: /financeutilities/ACCOUNTS-PAYABLE/Setup/BPAY-payment
         - page: Vendor payment
-          url: /financeutilities/Setup/ACCOUNTS-PAYABLE/Vendor-payments
+          url: /financeutilities/ACCOUNTS-PAYABLE/Setup/Vendor-payments
         - page: Vendor approval workflow
-          url: /financeutilities/Setup/ACCOUNTS-PAYABLE/Vendor-bank-account-changes-workflow
+          url: /financeutilities/ACCOUNTS-PAYABLE/Setup/Vendor-bank-account-changes-workflow
         - page: Save electronic reporting to secure location
-          url: /financeutilities/Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location
+          url: /financeutilities/Setup/ACCOUNTS-PAYABLE/Setup/Save-electronic-reporting-file-to-secure-location
         - page: Self billing invoicing
-          url: /financeutilities/Setup/ACCOUNTS-PAYABLE/Self-billing-invoicing
+          url: /financeutilities/ACCOUNTS-PAYABLE/Setup/Self-billing-invoicing
+      - title: Processing
+        id: accounts-payable/processing
+        Level_2_items:
+        - page: Sundry payment
+          url: /financeutilities/ACCOUNTS-PAYABLE/Processing/Sundry-payment
+        - page: BPAY payment
+          url: /financeutilities/ACCOUNTS-PAYABLE/Processing/BPAY-payment
+        - page: Vendor payment
+          url: /financeutilities/ACCOUNTS-PAYABLE/Processing/Vendor-payments
+        - page: Save electronic reporting file to secure location
+          url: /financeutilities/ACCOUNTS-PAYABLE/Processing/Save-electronic-reporting-file-to-secure-location
+        - page: Self billing invoicing
+          url: /financeutilities/ACCOUNTS-PAYABLE/Processing/Self-billing-invoicing
       - title: Accounts receivable
         id: setup/accounts-receivable
         Level_2_items:
@@ -94,16 +110,7 @@ toc:
       - title: Accounts payable
         id: processing/accounts-payable
         Level_2_items:
-        - page: Sundry payment
-          url: /financeutilities/Processing/Accounts-Payable/Sundry-payment
-        - page: BPAY payment
-          url: /financeutilities/Processing/Accounts-Payable/BPAY-payment
-        - page: Vendor payment
-          url: /financeutilities/Processing/Accounts-Payable/Vendor-payments
-        - page: Save electronic reporting file to secure location
-          url: /financeutilities/Processing/Accounts-Payable/Save-electronic-reporting-file-to-secure-location
-        - page: Self billing invoicing
-          url: /financeutilities/Processing/Accounts-Payable/Self-billing-invoicing
+        
       - title: Accounts receivable
         id: processing/accounts-receivable
         Level_2_items:
