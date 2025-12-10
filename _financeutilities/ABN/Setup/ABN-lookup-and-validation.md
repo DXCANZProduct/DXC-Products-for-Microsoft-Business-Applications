@@ -29,4 +29,4 @@ After successful registration, the company will be provided with a security toke
     - Select the applicable **ABN provider** from the drop-down as setup in the previous section **ABN validation providers**.
   
 ## Processing
-See [link](../../Processing/ABN/ABN-lookup-and-validation) for details on processing.
+See [link](../Processing/ABN-lookup-and-validation) for details on processing.

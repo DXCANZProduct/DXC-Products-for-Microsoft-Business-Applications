@@ -11,7 +11,7 @@ When IRD number validation has been enabled for the legal entity, the new IRD nu
 Supports format xxx-xxx-xxx and xxxxxxxxx.
 
 ## Prerequisites
-The following setup are [prerequisites](../../Setup/ABN/IRD-number-validation) for IRD number validation:
+The following setup are [prerequisites](../Setup/IRD-number-validation) for IRD number validation:
 - Assign New Zealand country in **Country/region** for each applicable legal entity
 
 

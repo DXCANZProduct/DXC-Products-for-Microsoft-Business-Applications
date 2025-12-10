@@ -24,4 +24,4 @@ Also applies to importing data entities:
     - **Bank account maximum number of digits** - example 9 for Australia, 17 for New Zealand
   
 ## Processing
-See [link](../../Processing/ABN/Bank-account-validation) for details on processing.
+See [link](../Processing/Bank-account-validation) for details on processing.

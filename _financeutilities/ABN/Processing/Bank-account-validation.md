@@ -9,7 +9,7 @@ toc: true
 When Bank account validation has been enabled for the legal entity and country, new vendor and customer bank accounts created with the allocated Country/region as setup in Legal entity goes through extra validation to ensure the length and/or format.
 
 ## Prerequisites
-The following setup are [prerequisites](../../Setup/ABN/Bank-account-validation) for Bank account validation:
+The following setup are [prerequisites](../Setup/Bank-account-validation) for Bank account validation:
 
 
 ## Validation

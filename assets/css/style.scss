@@ -341,53 +341,6 @@ tr:nth-child(even) {
     scroll-margin-top: 72px; // helps anchor jumps under sticky header
   }
 }
-  
-.gcse-search {
-  margin-bottom: 1.5em;
-  background: #fff;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  padding: 1em;
-}
-.gsc-control-cse {
-  background: none;
-  border: none;
-  box-shadow: none;
-  padding: 0;
-}
-.gsc-input-box, .gsc-input {
-  border-radius: 8px;
-  border: 1px solid #d1d5db;
-  background: #fff;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-  display: flex;
-  align-items: center;
-}
-.gsc-input-box input.gsc-input {
-  border: none;
-  background: none;
-  box-shadow: none;
-  font-size: 1em;
-  padding: 0.5em 0.5em 0.5em 2em;
-  color: #222;
-}
-.gsc-input-box input.gsc-input::placeholder {
-  color: #6b7280;
-  font-size: 1em;
-}
-.gsc-search-button-v2 {
-  background: #fff;
-  color: #5F249F;
-  border: none;
-  box-shadow: none;
-  font-weight: bold;
-  font-size: 1em;
-  padding: 0.5em 1em;
-  border-radius: 8px;
-}
-.gsc-input-box svg, .gsc-input-box .gscb_a {
-  display: none !important;
-}
 
 .subscribe-card {
     max-width: 640px;

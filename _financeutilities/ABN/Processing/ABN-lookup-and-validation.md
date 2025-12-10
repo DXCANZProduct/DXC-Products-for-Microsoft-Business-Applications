@@ -15,7 +15,7 @@ Advanced filters are also available to limit the search results: <br>
 - Active - No / Yes
 
 ## Prerequisites
-The following setup are [prerequisites](../../Setup/ABN/ABN-lookup-and-validation) for ABN lookup and validation:
+The following setup are [prerequisites](../Setup/ABN-lookup-and-validation) for ABN lookup and validation:
 - Register for Web API
 - Setup ABN validation providers
 - Setup legal entity to use the ABN validation provider
