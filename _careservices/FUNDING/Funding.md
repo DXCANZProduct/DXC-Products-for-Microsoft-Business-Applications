@@ -17,7 +17,7 @@ toc: true
 **Navigate to: Care services > Funding > Generate Funding Claims**
 
 1.  Populate the End date.
-2.  Click on **\<\Filter\>\**
+2.  Click on \<  **Filter** \> 
 3.  Specify the required criteria for generating the funding claims (Service code or client account)
 4.  Click **\<OK\>**
 5.  *If required, setup the job to run in the background. Select Batch processing to Yes.*
