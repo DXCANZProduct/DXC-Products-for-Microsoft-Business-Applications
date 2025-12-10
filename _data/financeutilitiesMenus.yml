@@ -4,11 +4,11 @@ toc:
   - title: Cash and bank management
     id: cash-and-bank-management
     Level_1_items:
-      - page: Introduction
-      - url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Introduction
-      - title: Setup
-      - id: cash-and-bank-management/setup
-      -  Level_2_items:
+    - page: Introduction
+      url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Introduction
+    - title: Setup
+      id: cash-and-bank-management/setup
+      Level_2_items:
          - page: Financial utilities parameters
            url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Finance-utilities-parameters
          - page: Financial utilities connections
@@ -25,9 +25,9 @@ toc:
            url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-statement-import
          - page: Modern bank reconciliation
            url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Modern-bank-reconciliation    
-      - title: Processing
-        id: cash-and-bank-management/processing
-        Level_2_items:
+    - title: Processing
+      id: cash-and-bank-management/processing
+      Level_2_items:
         - page: Bank statement import
           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Bank-statement-import
         - page: Bank reconciliation worksheet
