@@ -8,7 +8,7 @@ toc: true
 The features as described in the following subsections are available to control the additional functionality for accounts payable.
 
 ## Save electronic reporting file to secure location
-Setup requirements are discussed in detail at [Save electronic reporting file to secure location setup](../../Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location). <br>
+Setup requirements are discussed in detail at [Save electronic reporting file to secure location setup](../Setup/Save-electronic-reporting-file-to-secure-location). <br>
 Generating the payments are discussed in the following subsections.
 
 ## Generate payment
