@@ -83,7 +83,7 @@ toc:
         id: accounts-receivable/processing
         Level_2_items:
         - page: Customer remittance import
-          url: /financeutilities/Accounts-Receivable/Processing/Customer-remittance          
+          url: /financeutilities/ACCOUNTS-RECEIVABLE/Processing/Customer-remittance          
   - title: Validation
     id: abn
     Level_1_items:
@@ -117,9 +117,9 @@ toc:
         id: budgeting/processing
         Level_2_items:
         - page: Budget import
-          url: /financeutilities/Budgeting/Processing/Budget-import
+          url: /financeutilities/BUDGETING/Processing/Budget-import
         - page: Example file format
-          url: /financeutilities/Budgeting/Processing/Example-file-format
+          url: /financeutilities/BUDGETING/Processing/Example-file-format
   - title: Encryption/decryption
     id: encryption
     Level_1_items:
@@ -135,16 +135,16 @@ toc:
         id: electronic-reporting-export/setup
         Level_2_items:
         - page: Electronic reporting export connection
-          url: /financeutilities/Setup/ELECTRONIC-REPORTING-EXPORT/Electronic-reporting-export-connections
+          url: /financeutilities/ELECTRONIC-REPORTING-EXPORT/Setup/Electronic-reporting-export-connections
         - page: Document types
-          url: /financeutilities/Setup/ELECTRONIC-REPORTING-EXPORT/Document-types
+          url: /financeutilities/ELECTRONIC-REPORTING-EXPORT/Setup/Document-types
         - page: Electronic reporting destination
-          url: /financeutilities/Setup/ELECTRONIC-REPORTING-EXPORT/Electronic-reporting-destination
+          url: /financeutilities/ELECTRONIC-REPORTING-EXPORT/Setup/Electronic-reporting-destination
       - title: Processing
         id: electronic-reporting-export/processing  
         Level_2_items:
         - page: Export electronic reporting file
-          url: /financeutilities/Electronic-reporting-export/Processing/Save-electronic-reporting-file-to-secure-location
+          url: /financeutilities/ELECTRONIC-REPORTING-EXPORT/Processing/Save-electronic-reporting-file-to-secure-location
   - title: Other
     id: other
     Level_1_items:
