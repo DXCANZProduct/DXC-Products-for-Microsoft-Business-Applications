@@ -26,5 +26,47 @@
     <div class="row">
       {% include main-menu.html %}
     </div>
+    <div style="margin-top: 8px; text-align: end; width: 500px;">
+      <div class="gcse-search"></div>
+    </div>
   </div>
 </div>
+<script>
+  // Place in a script tag after the search box loads
+document.addEventListener("DOMContentLoaded", function() {
+  var style = document.createElement('style');
+  style.innerHTML = `
+    
+    .gsc-search-button-v2 {
+      background: #5f249f !important;
+      border-radius: 4px !important;
+      color: #fff !important;
+      border: none !important;
+      padding: 8px 16px !important;
+    }
+
+    .gcse-search {
+      background: none !important;
+      border: none !important;
+      padding: 0 !important;
+      margin: 24px 0 32px 0;
+    }
+
+    .gsc-control-cse, .gsc-control-cse table, .gsc-control-cse .gsc-search-box, .gsc-control-cse .gsc-search-box table {
+      background: none !important;
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .gsc-control-cse .gsc-branding, 
+    .gsc-control-cse .gsc-branding-text, 
+    .gsc-control-cse .gsc-branding-img, 
+    .gsc-control-cse .gsc-clear-button {
+      display: none !important;
+    }
+  `;
+  document.head.appendChild(style);
+});
+</script>
