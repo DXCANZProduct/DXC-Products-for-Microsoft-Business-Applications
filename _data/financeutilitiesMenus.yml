@@ -5,9 +5,9 @@ toc:
     id: cash-and-bank-management
     Level_1_items:
       - page: Introduction
-        url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Introduction
+      - url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Introduction
       - title: Setup
-        id: cash-and-bank-management/setup
+      - id: cash-and-bank-management/setup
       -  Level_2_items:
          - page: Financial utilities parameters
            url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Finance-utilities-parameters
