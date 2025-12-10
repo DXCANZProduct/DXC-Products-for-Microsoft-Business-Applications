@@ -37,6 +37,8 @@ toc:
   - title: Accounts payable
     id: accounts-payable
     Level_1_items:
+      - page: Introduction
+        url: /financeutilities/ACCOUNTS-PAYABLE/Introduction
       - title: Setup
         id: accounts-payable/setup
         Level_2_items:
@@ -68,6 +70,8 @@ toc:
   - title: Accounts receivable
     id: accounts-receivable
     Level_1_items:
+      - page: Introduction
+        url: /financeutilities/ACCOUNTS-RECEIVABLE/Introduction
       - title: Setup
         id: accounts-receivable/setup
         Level_2_items:
@@ -89,6 +93,8 @@ toc:
   - title: Validation
     id: abn
     Level_1_items:
+      - page: Introduction
+        url: /financeutilities/ABN/Introduction
       - title: Setup
         id: abn/setup
         Level_2_items:
@@ -110,6 +116,8 @@ toc:
   - title: Budgeting
     id: budgeting
     Level_1_items:
+      - page: Introduction
+        url: /financeutilities/BUDGETING/Introduction
       - title: Setup
         id: budgeting/setup
         Level_2_items:
@@ -125,6 +133,8 @@ toc:
   - title: Encryption/decryption
     id: encryption
     Level_1_items:
+      - page: Introduction
+        url: /financeutilities/ENCRYPTION/Introduction
       - title: Setup
         id: encryption/setup
         Level_2_items:
@@ -133,6 +143,8 @@ toc:
   - title: Electronic reporting export
     id: electronic-reporting-export
     Level_1_items:
+      - page: Introduction
+        url: /financeutilities/ELECTRONIC-REPORTING-EXPORT/Introduction
       - title: Setup
         id: electronic-reporting-export/setup
         Level_2_items:
