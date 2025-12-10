@@ -63,19 +63,27 @@ toc:
           url: /financeutilities/ACCOUNTS-PAYABLE/Processing/Save-electronic-reporting-file-to-secure-location
         - page: Self billing invoicing
           url: /financeutilities/ACCOUNTS-PAYABLE/Processing/Self-billing-invoicing
-      - title: Accounts receivable
-        id: setup/accounts-receivable
+  - title: Accounts receivable
+    id: accounts-receivable
+    Level_1_items:
+      - title: Setup
+        id: accounts-receivable/setup
         Level_2_items:
         - page: Customer approval workflow
-          url: /financeutilities/Setup/ACCOUNTS-RECEIVABLE/Customer-approval-workflow
+          url: /financeutilities/ACCOUNTS-RECEIVABLE/Setup/Customer-approval-workflow
         - page: Customer payments
-          url: /financeutilities/Setup/ACCOUNTS-RECEIVABLE/Customer-payments
+          url: /financeutilities/ACCOUNTS-RECEIVABLE/Setup/Customer-payments
         - page: Customer reference
-          url: /financeutilities/Setup/ACCOUNTS-RECEIVABLE/Customer-reference
+          url: /financeutilities/ACCOUNTS-RECEIVABLE/Setup/Customer-reference
         - page: Remittance format
-          url: /financeutilities/Setup/ACCOUNTS-RECEIVABLE/Remittance-format
+          url: /financeutilities/ACCOUNTS-RECEIVABLE/Setup/Remittance-format
         - page: Customer remittance import
-          url: /financeutilities/Setup/ACCOUNTS-RECEIVABLE/Customer-remittance
+          url: /financeutilities/ACCOUNTS-RECEIVABLE/Setup/Customer-remittance
+      - title: Processing
+        id: accounts-receivable/processing
+        Level_2_items:
+        - page: Customer remittance import
+          url: /financeutilities/Accounts-Receivable/Processing/Customer-remittance          
       - title: Validation
         id: setup/abn
         Level_2_items:
@@ -106,16 +114,7 @@ toc:
           url: /financeutilities/Setup/ELECTRONIC-REPORTING-EXPORT/Electronic-reporting-destination
   - title: Processing
     id: processing   
-    Level_1_items:
-      - title: Accounts payable
-        id: processing/accounts-payable
-        Level_2_items:
-        
-      - title: Accounts receivable
-        id: processing/accounts-receivable
-        Level_2_items:
-        - page: Customer remittance import
-          url: /financeutilities/Processing/Accounts-Receivable/Customer-remittance          
+    Level_1_items:       
       - title: Validation
         id: processing/abn
         Level_2_items:
