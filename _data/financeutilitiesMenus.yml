@@ -4,27 +4,27 @@ toc:
   - title: Cash and bank management
     id: cash-and-bank-management
     Level_1_items:
-    - page: Introduction
-      url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Introduction
-    - title: Setup
-      id: cash-and-bank-management/setup
-      Level_2_items:
-         - page: Financial utilities parameters
-           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Finance-utilities-parameters
-         - page: Financial utilities connections
-           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Finance-utilities-connections
-         - page: Bank statement format
-           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-statement-format
-         - page: Populate accounts payable document number
-           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Populate-account-payable-payment-document-number
-         - page: Bank reconciliation matching rules
-           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-reconciliation-matching-rules
-         - page: Bank accounts
-           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-accounts
-         - page: Bank statement import
-           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-statement-import
-         - page: Modern bank reconciliation
-           url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Modern-bank-reconciliation    
+      - page: Introduction
+        url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Introduction
+      - title: Setup
+        id: cash-and-bank-management/setup
+        Level_2_items:
+          - page: Financial utilities parameters
+            url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Finance-utilities-parameters
+          - page: Financial utilities connections
+            url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Finance-utilities-connections
+          - page: Bank statement format
+            url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-statement-format
+          - page: Populate accounts payable document number
+            url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Populate-account-payable-payment-document-number
+          - page: Bank reconciliation matching rules
+            url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-reconciliation-matching-rules
+          - page: Bank accounts
+            url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-accounts
+          - page: Bank statement import
+            url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Bank-statement-import
+          - page: Modern bank reconciliation
+            url: /financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Modern-bank-reconciliation    
     - title: Processing
       id: cash-and-bank-management/processing
       Level_2_items:
@@ -37,8 +37,8 @@ toc:
   - title: Accounts payable
     id: accounts-payable
     Level_1_items:
-    - page: Introduction
-      url: /financeutilities/ACCOUNTS-PAYABLE/Introduction
+      - page: Introduction
+        url: /financeutilities/ACCOUNTS-PAYABLE/Introduction
       - title: Setup
         id: accounts-payable/setup
         Level_2_items:
@@ -70,8 +70,8 @@ toc:
   - title: Accounts receivable
     id: accounts-receivable
     Level_1_items:
-    - page: Introduction
-      url: /financeutilities/ACCOUNTS-RECEIVABLE/Introduction
+      - page: Introduction
+        url: /financeutilities/ACCOUNTS-RECEIVABLE/Introduction
       - title: Setup
         id: accounts-receivable/setup
         Level_2_items:
@@ -93,8 +93,8 @@ toc:
   - title: Validation
     id: abn
     Level_1_items:
-    - page: Introduction
-      url: /financeutilities/ABN/Introduction
+      - page: Introduction
+        url: /financeutilities/ABN/Introduction
       - title: Setup
         id: abn/setup
         Level_2_items:
@@ -116,8 +116,8 @@ toc:
   - title: Budgeting
     id: budgeting
     Level_1_items:
-    - page: Introduction
-      url: /financeutilities/BUDGETING/Introduction
+      - page: Introduction
+        url: /financeutilities/BUDGETING/Introduction
       - title: Setup
         id: budgeting/setup
         Level_2_items:
@@ -133,8 +133,8 @@ toc:
   - title: Encryption/decryption
     id: encryption
     Level_1_items:
-    - page: Introduction
-      url: /financeutilities/ENCRYPTION/Introduction
+      - page: Introduction
+        url: /financeutilities/ENCRYPTION/Introduction
       - title: Setup
         id: encryption/setup
         Level_2_items:
@@ -143,8 +143,8 @@ toc:
   - title: Electronic reporting export
     id: electronic-reporting-export
     Level_1_items:
-    - page: Introduction
-      url: /financeutilities/ELECTRONIC-REPORTING-EXPORT/Introduction
+      - page: Introduction
+        url: /financeutilities/ELECTRONIC-REPORTING-EXPORT/Introduction
       - title: Setup
         id: electronic-reporting-export/setup
         Level_2_items:
