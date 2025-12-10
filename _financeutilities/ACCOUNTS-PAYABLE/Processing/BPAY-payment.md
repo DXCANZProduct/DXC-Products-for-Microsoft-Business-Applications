@@ -8,7 +8,7 @@ toc: true
 The features as described in the following subsections are available to control the additional functionality for accounts payable.
 
 ## BPAY Payment
-Setup requirements are discussed in detail at [BPAY payment setup](../../Setup/ACCOUNTS-PAYABLE/BPAY-payment). <br>
+Setup requirements are discussed in detail at [BPAY payment setup](../Setup/BPAY-payment). <br>
 Processing of the vendor invoices and payments are discussed in the following subsections.
 
 ### 	BPAY Vendor invoices
