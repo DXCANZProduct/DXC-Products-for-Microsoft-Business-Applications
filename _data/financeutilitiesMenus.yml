@@ -84,27 +84,55 @@ toc:
         Level_2_items:
         - page: Customer remittance import
           url: /financeutilities/Accounts-Receivable/Processing/Customer-remittance          
-      - title: Validation
-        id: setup/abn
+  - title: Validation
+    id: abn
+    Level_1_items:
+      - title: Setup
+        id: abn/setup
         Level_2_items:
         - page: ABN lookup and validation
-          url: /financeutilities/Setup/ABN/ABN-lookup-and-validation
+          url: /financeutilities/ABN/Setup/ABN-lookup-and-validation
         - page: IRD number validation
-          url: /financeutilities/Setup/ABN/IRD-number-validation
+          url: /financeutilities/ABN/Setup/IRD-number-validation
         - page: Bank account validation
-          url: /financeutilities/Setup/ABN/Bank-account-validation          
-      - title: Budgeting
-        id: setup/budgeting
+          url: /financeutilities/ABN/Setup/Bank-account-validation          
+      - title: Processing
+        id: abn/processing
+        Level_2_items:
+        - page: ABN lookup and validation
+          url: /financeutilities/ABN/Processing/ABN-lookup-and-validation
+        - page: IRD number validation
+          url: /financeutilities/ABN/Processing/IRD-number-validation
+        - page: Bank account validation
+          url: /financeutilities/ABN/Processing/Bank-account-validation
+  - title: Budgeting
+    id: budgeting
+    Level_1_items:
+      - title: Setup
+        id: budgeting/setup
         Level_2_items:
         - page: Budget import
-          url: /financeutilities/Setup/BUDGETING/Budget-import
-      - title: Encryption/decryption
-        id: setup/encryption
+          url: /financeutilities/BUDGETING/Setup/Budget-import
+      - title: Budgeting
+        id: budgeting/processing
+        Level_2_items:
+        - page: Budget import
+          url: /financeutilities/Budgeting/Processing/Budget-import
+        - page: Example file format
+          url: /financeutilities/Budgeting/Processing/Example-file-format
+  - title: Encryption/decryption
+    id: encryption
+    Level_1_items:
+      - title: Setup
+        id: encryption/setup
         Level_2_items:
         - page: Encryption/decryption
-          url: /financeutilities/Setup/ENCRYPTION/Encryption-decryption
-      - title: Electronic reporting export
-        id: setup/electronic-reporting-export
+          url: /financeutilities/ENCRYPTION/Setup/Encryption-decryption
+  - title: Electronic reporting export
+    id: electronic-reporting-export
+    Level_1_items:
+      - title: Setup
+        id: electronic-reporting-export/setup
         Level_2_items:
         - page: Electronic reporting export connection
           url: /financeutilities/Setup/ELECTRONIC-REPORTING-EXPORT/Electronic-reporting-export-connections
@@ -112,30 +140,11 @@ toc:
           url: /financeutilities/Setup/ELECTRONIC-REPORTING-EXPORT/Document-types
         - page: Electronic reporting destination
           url: /financeutilities/Setup/ELECTRONIC-REPORTING-EXPORT/Electronic-reporting-destination
-  - title: Processing
-    id: processing   
-    Level_1_items:       
-      - title: Validation
-        id: processing/abn
-        Level_2_items:
-        - page: ABN lookup and validation
-          url: /financeutilities/Processing/ABN/ABN-lookup-and-validation
-        - page: IRD number validation
-          url: /financeutilities/Processing/ABN/IRD-number-validation
-        - page: Bank account validation
-          url: /financeutilities/Processing/ABN/Bank-account-validation          
-      - title: Budgeting
-        id: processing/budgeting
-        Level_2_items:
-        - page: Budget import
-          url: /financeutilities/Processing/Budgeting/Budget-import
-        - page: Example file format
-          url: /financeutilities/Processing/Budgeting/Example-file-format
-      - title: Electronic reporting export
-        id: processing/electronic-reporting-export
+      - title: Processing
+        id: electronic-reporting-export/processing  
         Level_2_items:
         - page: Export electronic reporting file
-          url: /financeutilities/Processing/Electronic-reporting-export/Save-electronic-reporting-file-to-secure-location
+          url: /financeutilities/Electronic-reporting-export/Processing/Save-electronic-reporting-file-to-secure-location
   - title: Other
     id: other
     Level_1_items:
