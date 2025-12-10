@@ -19,12 +19,12 @@ toc: true
 1.  Populate the End date.
 2.  Click on \<  **Filter** \> 
 3.  Specify the required criteria for generating the funding claims (Service code or client account)
-4.  Click **\<OK\>**
+4.  Click \< **OK** \>
 5.  *If required, setup the job to run in the background. Select Batch processing to Yes.*
-6.  *Click on \<Recurrence\>*
+6.  Click on \< **Recurrence** \> 
 7.  *The default value is for the job to run once (End after:1) If it is a requirement for the job to run at a regular interval, then setup up the required recurrence pattern.*
-8.  *Click \<OK\> to close the Recurrence form.*
-9.  *Click \<OK\> to add the job to the batch queue.*
+8.  Click \<  **OK** \> to close the Recurrence form.
+9.  Click \< **OK** \> to add the job to the batch queue.*
 10. The relevant funding claims will be generated with the Document status = Open
 
 ### Generate funding claim form
@@ -50,8 +50,8 @@ toc: true
 
 1.  Select the relevant funding claim form.
 2.  Validate the data on the funding claim form lines.
-3.  Click on **\<Generate funding claim form file\>**
-4.  Click **\<OK\>**
+3.  Click on \<  **Generate funding claim form file** \>
+4.  Click \<  **OK** \>
 5.  The file will be generated for the relevant billing account type.
 
 ### Generate funding journal
@@ -64,14 +64,14 @@ toc: true
 
 1.  Select the relevant funding claim form.
 2.  Validate the data on the funding claim form lines.
-3.  Click on **\<Generate funding journal\>**
+3.  Click on \<  **Generate funding journal** \>
 4.  Populate Transaction date.
-5.  Click **\<OK\>**
+5.  Click \< **OK** \>
 6.  *If required, setup the job to run in the background. Select Batch processing to Yes.*
-7.  *Click on \<Recurrence\>*
+7.  Click on \< **Recurrence** \>
 8.  *The default value is for the job to run once (End after:1) If it is a requirement for the job to run at a regular interval, then setup up the required recurrence pattern.*
-9.  *Click \<OK\> to close the Recurrence form.*
-10. *Click \<OK\> to add the job to the batch queue.*
+9.  Click \< **OK**\> to close the Recurrence form.
+10. Click \< **OK**\> to add the job to the batch queue.
 11. The funding journal will be generated.
 
 ### Review and post funding journal
@@ -79,9 +79,9 @@ toc: true
 **Navigate to: Care services > Funding > Journals > Funding journal**
 
 1.  Select the relevant funding journal.
-2.  Click on **\<Lines\>**
+2.  Click on \< **Lines** \>
 3.  Validate the data on the funding journal lines.
-4.  Click on **\<Post\>** to post the journal.
+4.  Click on \< **Post**\> to post the journal.
 
 ### Import funding claim payment statement
 
@@ -89,12 +89,12 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 
 **Navigate to: Care services > Funding > Funding claim payment statement**
 
-1.  Click on **\<New\>**
-2.  Select **\<Billing account name\>**
+1.  Click on \<  **New** \>
+2.  Select \< **Billing account name** \>
 3.  Click on **\<Import statement\>**
-4.  Click on **\<Browse\>** to browse and select the required payment statement file for import.
-5.  Click **\<Upload\>**
-6.  Click **\<OK\>**
+4.  Click on \<  **Browse** \> to browse and select the required payment statement file for import.
+5.  Click \< **Upload** \>
+6.  Click \<  **OK** \>
 7.  Click on the **‘Refresh**’ button in the top right corner to refresh the form.
 8.  The statement lines will display.
 
@@ -106,13 +106,13 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 
 **Navigate to: Care services > Funding > Funding reconciliation**
 
-1.  Click on **\<New\>**
-2.  Select **\<Billing account name\>**
-3.  Select **\<Funding payment statement id\>**
+1.  Click on \<  **New** \>
+2.  Select \<  **Billing account name** \>
+3.  Select \< **Funding payment statement id** \>
 4.  Populate the **Department service ID.**
 5.  Populate the **To date.**
-6.  Click **\<OK\>**
-7.  Select **\<Worksheet\>** to open the Funding Reconciliation worksheet.
+6.  Click \< **OK** \>
+7.  Select \<  **Worksheet** \> to open the Funding Reconciliation worksheet.
 8.  The worksheet is divided into three sections:
     -   **Unmatched transactions**
 
@@ -145,7 +145,7 @@ Payment statements must be downloaded from PRODA Care services Online Services (
 **Navigate to: Care services > Funding > Journals > Funding reconciliation journal**
 
 1.  Select the relevant journal.
-2.  Click on **\<Lines\>**
+2.  Click on \< **Lines** \>
 3.  The journal lines from the matched transactions in the Funding reconciliation worksheet will be generated.
 4.  There will be journal lines for the adjustment transactions in the Funding reconciliation worksheet.
 5.  Validate and post the journal.
