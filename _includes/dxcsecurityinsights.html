@@ -66,7 +66,7 @@
                   </li>
                   {% endif%}
               {% endfor %}
-              <details>
+              <details class="sticky-subsection" {% if page.url contains "dxcsecurityinsights/releasenotes" and page.state == "previous" %}open{% endif %}>
                 <summary>Previous Versions</summary>
                 <ul>
                     {% assign records = site.dxcsecurityinsights | sort: 'release-version' | reverse%}
@@ -79,7 +79,7 @@
                     {% endfor %}
                 </ul>
               </details>
-              <details>
+              <details class="sticky-subsection" {% if page.url contains "dxcsecurityinsights/releasenotes" and page.state == "archive" %}open{% endif %}>
                 <summary>Archive</summary>
                 <ul>
                     {% assign records = site.dxcsecurityinsights | sort: 'release-version' | reverse%}

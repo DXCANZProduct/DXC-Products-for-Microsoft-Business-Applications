@@ -146,7 +146,7 @@
                   {% endif%}
               {% endfor %}
               <li class="list-style-type">
-                <details>
+                <details class="sticky-subsection" {% if page.url contains "licensemanager/releasenotes" and page.state == "previous" %}open{% endif %}>
                   <summary>Previous Versions</summary>
                   <ul>
                     {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}
@@ -159,7 +159,7 @@
                     {% endfor %}
                   </ul>
                 </details>
-                <details>
+                <details class="sticky-subsection" {% if page.url contains "licensemanager/releasenotes" and page.state == "archive" %}open{% endif %}>
                   <summary>Archive</summary>
                   <ul>
                     {% assign licensemanager = site.licensemanager | sort: 'release-version' | reverse%}

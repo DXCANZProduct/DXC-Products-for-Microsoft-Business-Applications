@@ -5,7 +5,8 @@
         "productDocsUrl": "/careservices",
         "productName": "DXCCareServices",
         "disableDocs": false,
-        "notificationsEnabled": true
+        "notificationsEnabled": true,
+        "image": "/assets/images/products/logoCareServices.svg"
     },
     {
         "title": "Connections",
@@ -13,7 +14,8 @@
         "productDocsUrl": "/connections",
         "productName": "DXCConnections",
         "disableDocs": false,
-        "notificationsEnabled": false
+        "notificationsEnabled": false,
+        "image": "/assets/images/products/logoConnections.svg"
     },
     {
         "title": "Core Extensions",
@@ -21,7 +23,8 @@
         "productDocsUrl": "/coreextensions",
         "productName": "CoreUtil",
         "disableDocs": false,
-        "notificationsEnabled": true
+        "notificationsEnabled": true,
+        "image": "/assets/images/products/logoCoreExtensions.svg"
     },
     {
         "title": "Electronic Data Interchange (EDI)",
@@ -29,7 +32,8 @@
         "productDocsUrl": "/edi",
         "productName": "ICONEDI",
         "disableDocs": false,
-        "notificationsEnabled": true
+        "notificationsEnabled": true,
+        "image": "/assets/images/products/logoEDI.svg"
     },
     {
         "title": "Finance Utilities",
@@ -37,7 +41,8 @@
         "productDocsUrl": "/financeutilities",
         "productName": "ICONFinanceUtilities",
         "disableDocs": false,
-        "notificationsEnabled": true
+        "notificationsEnabled": true,
+        "image": "/assets/images/products/logoFinanceUtilities.svg"
     },
     {
         "title": "Forex Contracts",
@@ -45,7 +50,8 @@
         "productDocsUrl": "/forex",
         "productName": "Forex",
         "disableDocs": true,
-        "notificationsEnabled": false
+        "notificationsEnabled": false,
+        "image": ""
     },
     {
         "title": "Insights for D365 FO",
@@ -53,7 +59,8 @@
         "productDocsUrl": "/dxcinsights",
         "productName": "InsightsforD365FO",
         "disableDocs": true,
-        "notificationsEnabled": false
+        "notificationsEnabled": false,
+        "image": ""
     },
     {
         "title": "Item Creation Wizard",
@@ -61,7 +68,8 @@
         "productDocsUrl": "/itemcreation",
         "productName": "ItemCreation",
         "disableDocs": true,
-        "notificationsEnabled": false
+        "notificationsEnabled": false,
+        "image": ""
     },
     {
         "title": "License Manager",
@@ -69,7 +77,8 @@
         "productDocsUrl": "/licensemanager",
         "productName": "DXCLicenseManager",
         "disableDocs": false,
-        "notificationsEnabled": false
+        "notificationsEnabled": false,
+        "image": "/assets/images/products/logoLicense.svg"
     },
     {
         "title": "Product Lifecycle Management (PLM)",
@@ -77,7 +86,8 @@
         "productDocsUrl": "/plm",
         "productName": "ClaimsProcessing",
         "disableDocs": true,
-        "notificationsEnabled": false
+        "notificationsEnabled": false,
+        "image": ""
     },
     {
         "title": "Security Insights for D365 FO",
@@ -85,7 +95,8 @@
         "productDocsUrl": "/dxcsecurityinsights",
         "productName": "SecurityInsightsForD365FO",
         "disableDocs": false,
-        "notificationsEnabled": true
+        "notificationsEnabled": true,
+        "image": "assets/images/products/logoSecurityInsights.svg"
     },
     {
         "title": "Smart Business Form Email Manager (SmartSend)",
@@ -93,7 +104,8 @@
         "productDocsUrl": "/smartsend",
         "productName": "SmartSend",
         "disableDocs": false,
-        "notificationsEnabled": true
+        "notificationsEnabled": true,
+        "image": "/assets/images/products/logoSmartSend.svg"
     },
     {
         "title": "Solutions for DocuSign and Dynamics 365",
@@ -101,6 +113,7 @@
         "productDocsUrl": "/docs/docusign",
         "productName": "DocuSign",
         "disableDocs": true,
-        "notificationsEnabled": false
+        "notificationsEnabled": false,
+        "image": ""
     }
 ]  
