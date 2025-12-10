@@ -9,7 +9,7 @@ The fields as described in the following subsections are available to control th
 This provides the ability to automatically create a Purchase invoice for Product receipt(s).
 
 ## Prerequisites
-Setup requirements are discussed in detail at [Self billing invoicing setup](../../Setup/ACCOUNTS-PAYABLE/Self-billing-invoicing). <br>
+Setup requirements are discussed in detail at [Self billing invoicing setup](../Setup/Self-billing-invoicing). <br>
 Processing are discussed in the following subsections.
 
 ## Product receipt
