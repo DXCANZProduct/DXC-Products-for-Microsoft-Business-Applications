@@ -1,18 +1,44 @@
 ---
 ---
 // Colors
-$primary: #5F249F;
-$primary-dark: #330072;
+$primary: #0E1020;
+$primary-dark: darken(#0E1020, 12%);
 $secondary: #FFFFFF;
 $black: #2f2f41;
 $white: #ffffff;
-$white-offset: #fff6f8;
+$white-offset: mix(#F6F3F0, white, 85%);
 $steel: #5c5a5a;
+$text: #0E1020;
+// Extended palette
+$gray-100: #F6F3F0;
+$gray-200: #0E1020;
+$gray-300: #F6F3F0;
+$gray-400: mix(#F6F3F0, white, 80%);
+$blue-100: #A1E6FF;
+$blue-200: mix(#A1E6FF, white, 80%);
+$blue-700: #4995FF;
+$warning-100: mix(#FFC982, white, 80%);
+$warning-500: #FFAE41;
+$table-bg: #F6F3F0;
+
+$peach: #FFC982;
+
+// Inspired palette helpers
+$text: #0E1020;                // Midnight Blue for text
+$border: rgba(#0E1020, 0.12);  // Subtle dividers
+$hover-bg: #A1E6FF;           // Sky for hover/focus
+
+// Subscribe/Status palette
+$accent-purple: #0E1020;
+$accent-purple-light: lighten(#0E1020, 12%);
+$accent-bg: #F6F3F0;
+$accent-border: rgba(#0E1020, 0.12);
+$accent-text: #0E1020;
 
 // Links
-$link-color: $primary;
+$link-color: $blue-700;
 $link-decoration: none;
-$link-hover-color: lighten($primary, 10%);
+$link-hover-color: darken($blue-700, 8%);
 $link-hover-decoration: underline;
 
 // Fonts
@@ -44,8 +70,26 @@ body {
   padding-bottom: 60px; /* adjust if footer is taller */
 }
 
+/* Header layout */
+.site-header__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 24px;
+  background: $accent-bg; /* Midnight Blue */
+  box-shadow: 0 1px 0 0 $border;
+}
+.site-header__brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
+.site-header__title { color: $primary; font-weight: 700; }
+.site-header__logo { display: block; }
+.site-header__nav { flex: 1; display: flex; justify-content: center; }
+.site-header__right { display: flex; align-items: center; }
+.site-header__actions { display: inline-flex; align-items: center; gap: 12px; }
+.site-header__social { display: inline-flex; align-items: center; }
+
 .sidebar, .content > .row > details {
-  background: #f5f5f5;
+  background: $gray-100;
   border-radius: 8px;
   padding: 1.5rem 1rem;
   margin-bottom: 2rem;
@@ -55,7 +99,7 @@ body {
 th {
   font-weight: bold;
   background: $primary; /* Primary color */
-  color: #fff;
+  color: $white;
 }
 
 .sidebar ul, .content > .row > details ul {
@@ -76,7 +120,7 @@ th {
   transition: background 0.2s;
 }
 .sidebar a:hover, .content > .row > details a:hover {
-  background: #e5f1fb;
+  background: $blue-100;
   text-decoration: underline;
 }
 .sidebar summary, .content > .row > details > summary {
@@ -92,8 +136,8 @@ th {
 /* Main navigation bar */
 .header {
   background: $white;
-  border-bottom: 1px solid #e5e5e5;
-  box-shadow: 0 1px 0 0 #e5e5e5;
+  border-bottom: 1px solid $border;
+  box-shadow: 0 1px 0 0 $border;
   box-sizing: border-box;
 }
 .header .logo a {
@@ -116,14 +160,14 @@ th {
 }
 
 .main-menu {
-  background-color: $primary;
+  background-color: $accent-bg;
 }
 
 .main-menu li {
   list-style: none;
 }
 .main-menu a {
-  color: $white !important;
+  color: $primary !important;
   font-weight: bold !important;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
@@ -272,30 +316,57 @@ h1, h2, h3 {
   margin-bottom: 1rem;
 }
 
+// ...existing code...
 a {
   color: $primary;
   text-decoration: underline;
   transition: background 0.2s;
 }
 a:hover {
-  background: #e5f1fb;
+  background: $hover-bg;
   text-decoration: none;
 }
 
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   margin: 2rem 0;
-  background: #fafbfc;
-  border-radius: 6px;
-  overflow: hidden;
+  background: $table-bg;
+  font-family: $font-family-base;
+  color: $text;
 }
-th, td {
-  border: 1px solid #e1e4e8;
-  padding: 0.75rem 1rem;
+th {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $peach; /* Peach accent */
+  border-bottom: 2px solid $border;
+  background: none;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  letter-spacing: 0.04em;
+  font-size: 1.05rem;
 }
-tr:nth-child(even) {
-  background: #f5f7fa;
+td {
+  border: none;
+  border-bottom: 1.5px solid $border;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.05rem;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+tr {
+  background: none;
+}
+tr td:first-child {
+  color: $text;
+  font-weight: 500;
+}
+tr td {
+  font-weight: 400;
+}
+tr td strong {
+  font-weight: 700;
 }
 
 .note, .warning {
@@ -304,12 +375,12 @@ tr:nth-child(even) {
   margin: 1.5rem 0;
 }
 .note {
-  background: #e5f6ff;
-  border-left: 4px solid #0067b8;
+  background: $blue-200;
+  border-left: 4px solid $blue-700;
 }
 .warning {
-  background: #fff4e5;
-  border-left: 4px solid #ffb100;
+  background: $warning-100;
+  border-left: 4px solid $warning-500;
 }
 
 .list-style-type {
@@ -321,7 +392,11 @@ tr:nth-child(even) {
   position: sticky;
   top: 0;
   z-index: 200; // above sidebar/nav
-  background: #fff;
+  background: $secondary; // Midnight Blue
+  box-shadow: 0 1px 0 0 $border;
+}
+.page-sticky-header .title {
+  color: $primary
 }
 
 /* Prevent overlap in mobile: reduce sidebar z-index and add spacing if title wraps */
@@ -329,7 +404,7 @@ tr:nth-child(even) {
   .page-sticky-header {
     /* Extra padding to accommodate multi-line titles */
     padding-bottom: 0.5rem;
-    box-shadow: 0 1px 0 0 #e5e5e5;
+    box-shadow: 0 1px 0 0 $border;
   }
 
   .col-md-3 {
@@ -343,26 +418,26 @@ tr:nth-child(even) {
 }
 
 .subscribe-card {
-    max-width: 640px;
-    margin: 64px auto;
-    background: #f8f7ff;
+  max-width: 640px;
+  margin: 64px auto;
+  background: $accent-bg;
     border-radius: 20px;
     box-shadow: 0 6px 32px rgba(80, 40, 120, 0.13);
-    padding: 56px 48px 40px 48px;
-    text-align: left;
-    color: #222;
+  padding: 56px 48px 40px 48px;
+  text-align: left;
+  color: $accent-text;
 }
 .subscribe-card h2 {
     font-size: 2.4rem;
     margin-bottom: 22px;
     font-weight: 700;
-    color: #5a2580;
+  color: $accent-purple;
     text-align: center;
 }
 .subscribe-card p {
     font-size: 1.15rem;
     margin-bottom: 32px;
-    color: #5a2580;
+  color: $accent-purple;
     text-align: center;
 }
 .subscribe-card .form-group {
@@ -379,25 +454,25 @@ tr:nth-child(even) {
     width: 100%;
     padding: 16px;
     border-radius: 8px;
-    border: 1px solid #d1c4e9;
+    border: 1px solid $accent-border;
     font-size: 1.08rem;
     margin-top: 8px;
-    background: #fff;
+    background: $white;
     box-sizing: border-box;
 }
 .subscribe-card input[type="checkbox"] {
     margin-right: 10px;
-    accent-color: #7c3aed;
+    accent-color: $accent-purple-light;
     transform: scale(1.15);
 }
 .subscribe-card label {
     font-size: 1.08rem;
-    color: #5a2580;
+    color: $accent-purple;
     font-weight: 500;
 }
 .subscribe-card .button-primary {
-    background: #5a2580;
-    color: #fff;
+    background: $accent-purple;
+    color: $white;
     border: none;
     border-radius: 10px;
     padding: 18px 0;
@@ -412,31 +487,31 @@ tr:nth-child(even) {
     letter-spacing: 1px;
 }
 .subscribe-card .button-primary:hover {
-    background: #7c3aed;
+    background: $accent-purple-light;
 }
 .subscribe-card .unsubscribe-link {
     display: block;
     margin: 28px auto 0 auto;
     text-align: center;
-    color: #5a2580;
+    color: $accent-purple;
     font-weight: 600;
     text-decoration: underline;
     font-size: 1.08rem;
     transition: color 0.2s;
 }
 .subscribe-card .unsubscribe-link:hover {
-    color: #7c3aed;
+    color: $accent-purple-light;
 }
 
 .subscription-status-container {
   max-width: 480px;
   margin: 48px auto;
-  background: linear-gradient(135deg, #7c3aed 0%, #5a2580 100%);
+  background: linear-gradient(135deg, $accent-purple-light 0%, $accent-purple 100%);
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(80, 40, 120, 0.15);
   padding: 40px 36px 32px 36px;
   text-align: center;
-  color: #fff;
+  color: $white;
   position: relative;
   overflow: hidden;
 }
@@ -455,7 +530,7 @@ tr:nth-child(even) {
   margin-bottom: 12px;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #fff;
+  color: $white;
   text-shadow: 0 2px 8px rgba(90,37,128,0.18);
 }
 .subscription-status-container p {
@@ -469,8 +544,8 @@ tr:nth-child(even) {
   margin: 10px 8px;
   padding: 12px 28px;
   border-radius: 8px;
-  background: #fff;
-  color: #7c3aed;
+  background: $white;
+  color: $accent-purple-light;
   text-decoration: none;
   font-weight: 700;
   font-size: 1rem;
@@ -479,7 +554,7 @@ tr:nth-child(even) {
 }
 .subscription-status-container a:hover {
   background: #f3eaff;
-  color: #5a2580;
+  color: $accent-purple;
 }
 
 /* Top-level sticky headers */

@@ -1,44 +1,34 @@
-<div class='header'>
-  <div class="container-fluid">
-    <div class="container-fluid logo header-padding">
-      <div class="social-media-links-align">
-        <div class="social-media-links">
-          <img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" /><a href="/">{{site.title}}</a>
-        </div>
-        <div class="social-media-links">
-          <b>FOLLOW US ON</b>
-        </div>
-      </div>
-      <div class="social-media-links-align">
-        <div class="social-media-links">
-          
-        </div>
-        <div class="social-media-links">
-          <a href="https://www.youtube.com/@DXCEnterprise" target="_blank" rel="noopener" class="social-media-links-end">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" width="32" height="32" style="object-fit:contain;" />
-          </a>
-          <a href="https://au.linkedin.com/showcase/dxcpracticemicrosoft" target="_blank" rel="noopener" class="social-media-links-end">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="32" height="32" style="object-fit:contain;" />
-          </a>
-        </div>
-      </div>
+<header class="site-header" role="banner">
+  <div class="site-header__bar">
+    <div class="site-header__left">
+      <a class="site-header__brand" href="/">
+        <img class="site-header__logo" width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" />
+        <span class="site-header__title">{{ site.title }}</span>
+      </a>
     </div>
-    <div class="row">
+    <nav class="site-header__nav" aria-label="Primary">
       {% include main-menu.html %}
-    </div>
-    <div style="margin-top: 8px; text-align: end; width: 500px;">
-      <div class="gcse-search"></div>
+    </nav>
+    <div class="site-header__right">
+      <div class="site-header__actions">
+        <div class="gcse-search"></div>
+        <a href="https://www.youtube.com/@DXCEnterprise" target="_blank" rel="noopener" aria-label="YouTube" class="site-header__social">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" width="24" height="24" />
+        </a>
+        <a href="https://au.linkedin.com/showcase/dxcpracticemicrosoft" target="_blank" rel="noopener" aria-label="LinkedIn" class="site-header__social">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="24" height="24" />
+        </a>
+      </div>
     </div>
   </div>
-</div>
+</header>
 <script>
   // Place in a script tag after the search box loads
 document.addEventListener("DOMContentLoaded", function() {
   var style = document.createElement('style');
   style.innerHTML = `
-    
     .gsc-search-button-v2 {
-      background: #5f249f !important;
+      background: #0E1020 !important;
       border-radius: 4px !important;
       color: #fff !important;
       border: none !important;
@@ -49,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
       background: none !important;
       border: none !important;
       padding: 0 !important;
-      margin: 24px 0 32px 0;
+      margin: 0;
     }
 
     .gsc-control-cse, .gsc-control-cse table, .gsc-control-cse .gsc-search-box, .gsc-control-cse .gsc-search-box table {

@@ -6,7 +6,7 @@
         "productName": "DXCCareServices",
         "disableDocs": false,
         "notificationsEnabled": true,
-        "image": "/assets/images/products/logoCareServices.svg"
+        "image": "/assets/images/products/logoCareServices.png"
     },
     {
         "title": "Connections",
@@ -15,7 +15,7 @@
         "productName": "DXCConnections",
         "disableDocs": false,
         "notificationsEnabled": false,
-        "image": "/assets/images/products/logoConnections.svg"
+        "image": "/assets/images/products/logoConnections.png"
     },
     {
         "title": "Core Extensions",
@@ -24,7 +24,7 @@
         "productName": "CoreUtil",
         "disableDocs": false,
         "notificationsEnabled": true,
-        "image": "/assets/images/products/logoCoreExtensions.svg"
+        "image": "/assets/images/products/logoCoreExtensions.png"
     },
     {
         "title": "Electronic Data Interchange (EDI)",
@@ -33,7 +33,7 @@
         "productName": "ICONEDI",
         "disableDocs": false,
         "notificationsEnabled": true,
-        "image": "/assets/images/products/logoEDI.svg"
+        "image": "/assets/images/products/logoEDI.png"
     },
     {
         "title": "Finance Utilities",
@@ -42,7 +42,7 @@
         "productName": "ICONFinanceUtilities",
         "disableDocs": false,
         "notificationsEnabled": true,
-        "image": "/assets/images/products/logoFinanceUtilities.svg"
+        "image": "/assets/images/products/logoFinanceUtilities.png"
     },
     {
         "title": "Forex Contracts",
@@ -78,7 +78,7 @@
         "productName": "DXCLicenseManager",
         "disableDocs": false,
         "notificationsEnabled": false,
-        "image": "/assets/images/products/logoLicense.svg"
+        "image": "/assets/images/products/logoLicense.png"
     },
     {
         "title": "Product Lifecycle Management (PLM)",
@@ -96,7 +96,7 @@
         "productName": "SecurityInsightsForD365FO",
         "disableDocs": false,
         "notificationsEnabled": true,
-        "image": "assets/images/products/logoSecurityInsights.svg"
+        "image": "assets/images/products/logoSecurityInsights.png"
     },
     {
         "title": "Smart Business Form Email Manager (SmartSend)",
@@ -105,7 +105,7 @@
         "productName": "SmartSend",
         "disableDocs": false,
         "notificationsEnabled": true,
-        "image": "/assets/images/products/logoSmartSend.svg"
+        "image": "/assets/images/products/logoSmartSend.png"
     },
     {
         "title": "Solutions for DocuSign and Dynamics 365",
