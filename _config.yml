@@ -30,6 +30,12 @@ twitter_username: jekyllrb
 github_username: jekyll
 releasepath: https://dxcanzproductstorage.blob.core.windows.net/dxcanzproductreleases/
 
+# Application Insights Configuration
+# Replace with your actual Application Insights Connection String
+application_insights:
+  connection_string: "InstrumentationKey=925418e6-e57a-4d03-ba00-01f11f4cbadc;IngestionEndpoint=https://australiasoutheast-0.in.applicationinsights.azure.com/;LiveEndpoint=https://australiasoutheast.livediagnostics.monitor.azure.com/;ApplicationId=c2d56017-7c7a-4fd4-ac65-ed30e9ff80ce"
+  enable_tracking: true
+
 logo:
   mobile: "assets/images/logo/logo.png"
   mobile_height: "32px"

@@ -1,0 +1,92 @@
+---
+layout: product-content
+header: Product Name
+toc: true
+---
+<!-- <div class="container-fluid landing-hero-section py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 text-center">
+        <h1 class="display-4 fw-bold mb-4">{{page.header}}</h1>
+        {% if page.tagline %}
+        <p class="lead mb-4">{{page.tagline}}</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container my-5">
+  <!-- Intro Card Section -->
+  {% if page.intro_card %}
+  <div class="row justify-content-center mb-5">
+    <div class="col-12 col-md-10">
+      <div class="card shadow-sm border-0 landing-intro-card">
+        <div class="card-body p-4">
+          <div class="row align-items-center">
+            {% if page.intro_card.icon %}
+            <div class="col-12 col-md-2 text-center mb-3 mb-md-0">
+              <i class="{{page.intro_card.icon}} fa-4x text-primary"></i>
+            </div>
+            {% endif %}
+            <div class="col-12 col-md-{% if page.intro_card.icon %}10{% else %}12{% endif %}">
+              {% if page.intro_card.title %}
+              <h3 class="card-title mb-3"><b>{{page.intro_card.title}}</b></h3>
+              {% endif %}
+              <p class="card-text">{{page.intro_card.description}}</p>
+              {% if page.intro_card.buttons %}
+              <!-- <div class="mt-3">
+                {% for button in page.intro_card.buttons %}
+                <a href="{{button.url | relative_url}}" class="btn btn-{{button.style | default: 'primary'}} me-2 mb-2">{{button.text}}</a>
+                {% endfor %}
+              </div> -->
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Video Section -->
+  {% if page.videos %}
+  <div class="row mb-5">
+    <div class="col-12">
+      <h2 class="text-center mb-4">{{page.videos.title | default: 'Watch Our Videos'}}</h2>
+    </div>
+    {% for video in page.videos.items %}
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <div class="card h-100 shadow-sm border-0 landing-video-card">
+        <div class="card-body">
+          <h5 class="card-title mb-3">{{video.title}}</h5>
+          {% if video.description %}
+          <p class="card-text text-muted small mb-3">{{video.description}}</p>
+          {% endif %}
+          <div class="ratio ratio-16x9">
+            {% if video.type == 'youtube' %}
+            <iframe src="https://www.youtube.com/embed/{{video.id}}" title="{{video.title}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            {% elsif video.type == 'vimeo' %}
+            <iframe src="https://player.vimeo.com/video/{{video.id}}" title="{{video.title}}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            {% elsif video.type == 'embed' %}
+            <iframe src="{{video.url}}" title="{{video.title}}" frameborder="0" allowfullscreen></iframe>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- Main Content Area -->
+  {% if content != '' %}
+  <div class="row">
+    <div class="col-12">
+      <div class="landing-content">
+        {{content}}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</div>
