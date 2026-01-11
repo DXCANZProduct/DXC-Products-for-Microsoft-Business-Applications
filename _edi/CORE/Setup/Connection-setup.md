@@ -41,7 +41,14 @@ These logs can then be used to set **Custom alerts**, for example using error lo
 **Log code**                        | Code that initiated the log.
 **Message**                         | Message for the log.
 
+### Cleanup log
 
+In order to create a batch to delete connection logs older than the retention period, follow these steps:
+
+1. Select the connection, then select the **Log** button.
+2. Select **Cleanup log**. The retention settings are automatically copied to **Duration** and **Period**.
+3. Set **Batch processing** to _Yes_ and update the **Task description** if required.
+4. Click **OK**.
 
 ### FTP sites
 Users can access the form by navigating to **EDI > Setup > Connection setup > FTP sites**
