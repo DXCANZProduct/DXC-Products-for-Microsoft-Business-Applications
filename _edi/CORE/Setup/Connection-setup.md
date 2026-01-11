@@ -47,7 +47,7 @@ In order to create a batch to delete connection logs older than the retention pe
 
 1. Select the connection, then select the **Log** button.
 2. Select **Cleanup log**. The retention settings are automatically copied to **Duration** and **Period**.
-3. Set **Batch processing** to _Yes_ and update the **Task description** if required.
+3. Set **Batch processing** to _Yes_, set the **Recurrence** and update the **Task description** if required.
 4. Click **OK**.
 
 ### FTP sites
