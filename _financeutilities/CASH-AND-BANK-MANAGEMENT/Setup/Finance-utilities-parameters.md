@@ -21,7 +21,7 @@ Then set the fields as described in the following subsections.
 :--       |:--
 **Extended matching rule operator** | This parameter activates a new operator **Included in** in the Reconciliation matching rules form. It supplements the **Contains** capability, and means that the field selected is a part of the nominated Bank statement field.
 **Extended financial details for new transaction** | This parameter enables the capture of the following details automatically if the bank statement line is marked as 'New' <br> • Financial dimensions <br> • GST  <br> • Sub-Ledger offset account
-**Reference type**  | Populate [Reference type](../ACCOUNTS-RECEIVABLE/Customer-reference#reference-number-type) where Customer references are used to find D365 customer account for mark as new Reconciliation matching rules using field **Offset account reference bank statement field**.
+**Reference type**  | Populate [Reference type](../../ACCOUNTS-RECEIVABLE/Setup/Customer-reference#reference-number-type) where Customer references are used to find D365 customer account for mark as new Reconciliation matching rules using field **Offset account reference bank statement field**.
 
 **Bank reconciliation**
 

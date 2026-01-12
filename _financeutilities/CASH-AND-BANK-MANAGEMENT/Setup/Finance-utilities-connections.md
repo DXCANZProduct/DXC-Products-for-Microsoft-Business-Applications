@@ -30,7 +30,7 @@ Field         | Description                         | Example or Options
 **Error action**    |	The action to take when there is an error with the connection | •	Error <br> •	Warning
 **Enabled**         |	Once all the mandatory fields have been completed the connection can be enabled	  | •	Yes <br> •	No
 **Enable file encryption/decryption** | Set to _Yes_ if the import file should be decrypted | •	No <br>	• Yes 
-**Encryption key name** |	Select applicable **Encryption key name**. <br> See [DXC encryption parameters](../ENCRYPTION/Encryption-decryption) for additional details. 
+**Encryption key name** |	Select applicable **Encryption key name**. <br> See [DXC encryption parameters](../../ENCRYPTION/Setup/Encryption-decryption) for additional details. 
 
 Click **Save** and the applicable Setup will be displayed as per Connection type selected. <br>
 

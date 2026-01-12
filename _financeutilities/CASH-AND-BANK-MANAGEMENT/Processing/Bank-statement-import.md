@@ -10,7 +10,7 @@ toc: true
 The **Bank statement** page  is used to manually import the bank statement into your D365 environment. 
 Users can navigate to the page by going to **Cash and bank management > Bank statement reconciliation > Bank statements**
 
-> Note: Setup **File attachment document type** on [Financial utilities parameters](../../Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-parameters) to attach the import file to the created D365 Bank statement(s).
+> Note: Setup **File attachment document type** on [Financial utilities parameters](../Setup/Finance-utilities-parameters) to attach the import file to the created D365 Bank statement(s).
 
 Select **Import statement**.
 Where the selected statement format is marked as **Customised format** the following additional fields are available on the import:
@@ -36,7 +36,7 @@ In addition, where Import statement for multiple bank accounts in all legal enti
 
 # Periodic import
 
-The bank statement can also automatically be imported by using periodic task [Import bank statements via financial utilities connection](../../Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import).
+The bank statement can also automatically be imported by using periodic task [Import bank statements via financial utilities connection](../Setup/Bank-statement-import).
 
 Filter **Imported via financial utilities connection** on the Bank statement import, can be used to filter to bank statements imported using above periodic task.
 
