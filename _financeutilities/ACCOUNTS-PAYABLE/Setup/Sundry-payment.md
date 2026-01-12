@@ -27,4 +27,4 @@ Users can access the **All vendors** page by navigating to **Accounts payable > 
 Define the Vendor to be used for Sundry payments, and set the vendor's **Method of payment** to the Sundry method of payment setup in previous step.
 
 ### Sundry payment processing
-Sundry payment processing is discussed in detail at [Sundry payment processing](../../Processing/Accounts-Payable/Sundry-payment).
+Sundry payment processing is discussed in detail at [Sundry payment processing](../Processing/Sundry-payment).
