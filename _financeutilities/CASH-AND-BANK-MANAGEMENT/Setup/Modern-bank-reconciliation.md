@@ -166,6 +166,6 @@ See the following [page](Modern-bank-reconciliation-er-migration) for migrating 
 
 # Processing
 
-Processing is discussed in detail [here](../../Processing/Bank-Statement-Reconciliation/Modern-bank-reconciliation)
+Processing is discussed in detail [here](../Processing/Modern-bank-reconciliation)
 
 
