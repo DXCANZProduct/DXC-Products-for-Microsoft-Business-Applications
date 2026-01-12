@@ -123,7 +123,7 @@ toc:
         Level_2_items:
         - page: Budget import
           url: /financeutilities/BUDGETING/Setup/Budget-import
-      - title: Budgeting
+      - title: Processing
         id: budgeting/processing
         Level_2_items:
         - page: Budget import
