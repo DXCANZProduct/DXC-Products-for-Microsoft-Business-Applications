@@ -9,9 +9,9 @@ The features as described in the following subsections are available to control 
 
 ## Prerequisites
 Setup requirements are discussed in detail at:
-1. Create the secure location in [Electronic reporting export connections](../../Setup/ELECTRONIC-REPORTING-EXPORT/Electronic-reporting-export-connections)
-2. Assign to secure location created in step 1 to applicable [Document types](../../Setup/ELECTRONIC-REPORTING-EXPORT/Document-types)
-3. Create the [Electronic reporting destination](../../Setup/ELECTRONIC-REPORTING-EXPORT/Electronic-reporting-destination) for the applicable Electronic reporting configuration and assign the Document type created in step 2
+1. Create the secure location in [Electronic reporting export connections](../Setup/ELECTRONIC-REPORTING-EXPORT/Electronic-reporting-export-connections)
+2. Assign to secure location created in step 1 to applicable [Document types](../Setup/ELECTRONIC-REPORTING-EXPORT/Document-types)
+3. Create the [Electronic reporting destination](../Setup/ELECTRONIC-REPORTING-EXPORT/Electronic-reporting-destination) for the applicable Electronic reporting configuration and assign the Document type created in step 2
 
 
 ## Save electronic reporting file to secure location
