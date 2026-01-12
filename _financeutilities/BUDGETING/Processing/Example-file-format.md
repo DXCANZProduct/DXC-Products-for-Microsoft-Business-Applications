@@ -24,7 +24,7 @@ From column (A), the column details are:
 -	Start Date - for the 1st period of the register entry (i.e. 01/01/2017)
 -	Monthly values for each budget register entry
 
-[Example file](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/ExampleFiles/BudgetImportExample.csv)
+[Example file](../../ExampleFiles/BudgetImportExample.csv)
 
 ## Generate template
 
