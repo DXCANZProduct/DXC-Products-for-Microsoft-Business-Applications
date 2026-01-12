@@ -39,4 +39,4 @@ Use button **Generate template** to download csv template based on the following
 - Dimension format
 
 ### Budget import processing
-Budget import processing is discussed in detail at [Budget import processing](../../Processing/Budgeting/Budget-import).
+Budget import processing is discussed in detail at [Budget import processing](../Processing/Budget-import).
