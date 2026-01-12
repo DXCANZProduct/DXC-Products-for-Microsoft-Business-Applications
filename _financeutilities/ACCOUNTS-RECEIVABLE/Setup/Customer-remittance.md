@@ -77,6 +77,6 @@ Duty: Maintain customer payments
 
 ## Processing
 
-Processing the Customer remittance is discussed [here](../../Processing/Accounts-Receivable/Customer-remittance)
+Processing the Customer remittance is discussed [here](../Processing/Customer-remittance)
 
 
