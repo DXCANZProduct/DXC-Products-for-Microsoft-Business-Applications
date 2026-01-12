@@ -26,7 +26,7 @@ Select **New** to create the location where GER file is to be saved. Connection 
 | **Connection type**	| Select the applicable connection type	                        | •	FTP <br>	• Azure blob <br> • SFTP <br> • API Endpoint|
 | **Error action**    |	The action to take when there is an error with the connection | • Error <br> • Warning |
 | **Enable file encryption/decryption** | Set to _Yes_ if the export file should be encrypted | •	No <br>	• Yes  |
-| **Encryption key name** |	Select applicable **Encryption key name**. <br> See [DXC encryption parameters](../ENCRYPTION/Encryption-decryption) for additional details. 
+| **Encryption key name** |	Select applicable **Encryption key name**. <br> See [DXC encryption parameters](../../ENCRYPTION/Setup/Encryption-decryption) for additional details. 
 | **Enable business event**  | Option to create an event when file is saved to Azure blob. <br> Setup required: <br> • Set this option to Yes <br> • Active Business event 'Electronic reporting file exported to azure blob' •	No <br>	• Yes  |
 
 
