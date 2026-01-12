@@ -36,7 +36,7 @@ Finance utilities minimises the manual actions required for reconciling bank acc
 - [Modern bank reconciliation]({{ '/financeutilities/CASH-AND-BANK-MANAGEMENT/Setup/Modern-bank-reconciliation' | relative_url }})
 
 ### Processing
-- [Bank statement import]({{ '/financeutilities/Processing/Bank-Statement-Reconciliation/Bank-statement-import' | relative_url }})
+- [Bank statement import]({{ '/financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Bank-statement-import' | relative_url }})
 - [Bank reconciliation worksheet]({{ '/financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Bank-reconciliation-worksheet' | relative_url }})
 - [Reports]({{ '/financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Cash-and-bank-management-reports' | relative_url }})
 - [Modern bank reconciliation]({{ '/financeutilities/CASH-AND-BANK-MANAGEMENT/Processing/Modern-bank-reconciliation' | relative_url }})
