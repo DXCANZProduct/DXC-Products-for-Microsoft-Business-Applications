@@ -49,6 +49,6 @@ This provides companies the option to submit changes to these fields to the stan
 ## Self billing invoicing / Recipient-Created Tax Invoice (RCTI)
 Provides the ability to automatically create a Purchase invoice for Product receipt(s)
 - [Setup]({{ '/financeutilities/ACCOUNTS-PAYABLE/Setup/Self-billing-invoicing' | relative_url }})
-- [Processing]({{ '/financeutilities/Accounts-Payable/Processing/Self-billing-invoicing' | relative_url }})
+- [Processing]({{ '/financeutilities/ACCOUNTS-PAYABLE/Processing/Self-billing-invoicing' | relative_url }})
 
 
