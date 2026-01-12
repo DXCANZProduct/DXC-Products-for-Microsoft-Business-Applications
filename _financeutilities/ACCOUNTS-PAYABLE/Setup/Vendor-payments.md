@@ -111,4 +111,4 @@ File name when **Enable file parameters** is set to:
 - [BPAY method of payment](BPAY-payment)
 
 # Processing
-Processing user guide for Vendor payments can be found [here](../../Processing/Accounts-Payable/Vendor-payments)
+Processing user guide for Vendor payments can be found [here](../Processing/Vendor-payments)
