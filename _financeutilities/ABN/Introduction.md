@@ -30,9 +30,3 @@ Where the company has enabled Bank account format validation for the legal entit
 - [Bank account format validation setup]({{ '/financeutilities/ABN/Setup/Bank-account-validation' | relative_url }})
 - [Bank account format validation processing]({{ '/financeutilities/ABN/Processing/Bank-account-validation' | relative_url }})
 
-
-
-- [FAQ]({{ '/financeutilities/FAQ' | relative_url }})
-
-## New ideas
-Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
