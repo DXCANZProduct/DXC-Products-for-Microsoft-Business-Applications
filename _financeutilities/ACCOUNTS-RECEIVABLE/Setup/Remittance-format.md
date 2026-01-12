@@ -169,11 +169,11 @@ Buttons **Select all** and **Clear all** are also available to easily select or 
 ### Where used
 
 The **Remittance format** is assigned on **Methods of payment**. <br>
-The **Methods of payment** is assigned in the Periodic task called [Payment journal import](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.html#periodic-task).
+The **Methods of payment** is assigned in the Periodic task called [Payment journal import](Customer-remittance.html#periodic-task).
 
 Also see:
-- [Setup](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.html)
-- [Processing](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Processing/Accounts-Receivable/Customer-remittance.html)
+- [Setup](Customer-remittance.html)
+- [Processing](../Processing/Customer-remittance.html)
 
 ### Data entities
 

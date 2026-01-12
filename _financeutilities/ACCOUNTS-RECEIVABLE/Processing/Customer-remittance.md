@@ -45,16 +45,16 @@ The following assumptions apply to the functionality:
 ## Prerequisites
 The following setup are prerequisites for the Customer remittance import
 
-1. [Accounts receivable parameters](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance#accounts-receivable-parameters)
-2. [Remittance format](../../Setup/ACCOUNTS-RECEIVABLE/Remittance-format)
-3. [Methods of payment](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance#methods-of-payment)
-4. [Financial utilities connection](../../Setup/ACCOUNTS-RECEIVABLE/Finance-utilities-connections)
-5. [Periodic task](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance#periodic-task)
-6. [Customer references](../../Setup/ACCOUNTS-RECEIVABLE/Customer-reference) - if customer references are to be used to find the applicable D365 customer account
+1. [Accounts receivable parameters](../Setup/Customer-remittance#accounts-receivable-parameters)
+2. [Remittance format](../Setup/Remittance-format)
+3. [Methods of payment](../Setup/Customer-remittance#methods-of-payment)
+4. [Financial utilities connection](../Setup/Finance-utilities-connections)
+5. [Periodic task](../Setup/Customer-remittance#periodic-task)
+6. [Customer references](../Setup/Customer-reference) - if customer references are to be used to find the applicable D365 customer account
 
 ## Processing
 
-When the file is imported using the [periodic task](../../Setup/ACCOUNTS-RECEIVABLE/Customer-remittance#periodic-task), AR Utilities converts the data as per setup and creates an import using Data management composite entity **Customer payment journal**.
+When the file is imported using the [periodic task](../Setup/Customer-remittance#periodic-task), AR Utilities converts the data as per setup and creates an import using Data management composite entity **Customer payment journal**.
 
 If the journal hasn't been created, review **Execution details** in Data management Job history.
 

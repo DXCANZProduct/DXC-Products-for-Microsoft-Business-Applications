@@ -16,7 +16,7 @@ Processing of the sundry vendor invoices and payments are discussed in the follo
 
 ### Sundry Vendor invoices
 
-To create a new sundry vendor invoice journal, go to **Accounts payable > Invoices > Invoice journal**, create the new invoice journal header as per standard D365 and press the Lines button to begin entering the invoice/s. Selection of the [**Sundry Vendor**](../Setup/Sundry-payment#sundry-vendor) created in the sundry payment setup will require the addition of details associated with the Payment of each Vendor (on each Invoice line):
+To create a new sundry vendor invoice journal, go to **Accounts payable > Invoices > Invoice journal**, create the new invoice journal header as per standard D365 and press the Lines button to begin entering the invoice/s. Selection of the [Sundry Vendor](../Setup/Sundry-payment#sundry-vendor) created in the sundry payment setup will require the addition of details associated with the Payment of each Vendor (on each Invoice line):
 
 |    Field  |    Description   |
 |-|-|
@@ -52,4 +52,4 @@ From the **General** tab it is possible to review the Sundry Vendor Name, Addres
 Selection of the **Generate payments** button will create a payment for each payment journal line using the sundry bank details. <br>
 
 The Finance utilities **Payment advice** report also uses the Bank account number and BSB from the sundry fields, and not from the Vendor. <br>
-> Note: Setup the [**Payment advice**](../Setup/Vendor-payments#payment-advice-report) report to use the applicable Finance utilities report.
+> Note: Setup the [Payment advice](../Setup/Vendor-payments#payment-advice-report) report to use the applicable Finance utilities report.
