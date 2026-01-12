@@ -14,7 +14,7 @@ Finance utilities includes the ability to import a csv budget file with monthly 
 See [Example file format](Example-file-format) for example file.
 
 ### Setup budget import
-Setup requirements are discussed in detail at [Budget import setup](../../Setup/BUDGETING/Budget-import). <br>
+Setup requirements are discussed in detail at [Budget import setup](../Setup/Budget-import). <br>
 Importing the budget file will be discussed in the following subsections.
 
 ### Importing the budget file
