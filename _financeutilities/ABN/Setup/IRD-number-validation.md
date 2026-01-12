@@ -14,4 +14,4 @@ The fields as described in the following subsections are available to control th
 2. Use the setup available under **Validation** FastTab, heading **New Zealand validation** to enable IRD number validation by allocating the applicable New Zealand country in field **Country/region**.
   
 ## Processing
-See [link](../../Processing/ABN/IRD-number-validation) for details on processing.
+See [link](../Processing/IRD-number-validation) for details on processing.
