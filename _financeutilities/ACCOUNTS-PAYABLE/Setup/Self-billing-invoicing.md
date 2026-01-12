@@ -74,4 +74,4 @@ The following fields on the **Invoice and delivery** FastTab applies to the func
 Where the Self billing invoice group's **Create invoice with product receipt** is set to _No_, it is required to create a batch recurrence for the group using the following periodic task: **Accounts payable > Periodic tasks > Create self billing invoices**
 
 ### Processing
-Processing is discussed in detail at [Self billing invoicing processing](../../Processing/Accounts-Payable/Self-billing-invoicing).
+Processing is discussed in detail at [Self billing invoicing processing](../Processing/Self-billing-invoicing).
