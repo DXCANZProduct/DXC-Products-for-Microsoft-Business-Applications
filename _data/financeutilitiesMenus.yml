@@ -51,7 +51,7 @@ toc:
         - page: Vendor approval workflow
           url: /financeutilities/ACCOUNTS-PAYABLE/Setup/Vendor-bank-account-changes-workflow
         - page: Save electronic reporting to secure location
-          url: /financeutilities/Setup/ACCOUNTS-PAYABLE/Setup/Save-electronic-reporting-file-to-secure-location
+          url: /financeutilities/ACCOUNTS-PAYABLE/Setup/Save-electronic-reporting-file-to-secure-location
         - page: Self billing invoicing
           url: /financeutilities/ACCOUNTS-PAYABLE/Setup/Self-billing-invoicing
       - title: Processing
