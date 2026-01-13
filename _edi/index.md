@@ -70,5 +70,3 @@ Inbound document Voyage tracking has the ability to update the created Finance a
 ## Definitions and Acronyms
 Definitions and Acronyms can be found [here]({{ 'edi/Acronyms' | relative_url }}).
 
-## New ideas
-Have a suggestion for new product or new feature for existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
