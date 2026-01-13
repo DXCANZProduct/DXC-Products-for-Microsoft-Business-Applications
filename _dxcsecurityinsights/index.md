@@ -24,8 +24,6 @@ Watch DXC Technology’s short demonstration on Security Insights for D365 FO so
 - [Webinar](https://dynamics.dxc.technology/webinars/security-insights-for-d365fo)
 - [Demo playlist](https://www.youtube.com/playlist?list=PLIM01nS-jtL-D-wvUbmncSwy3PYjLuig5)
 
-## New ideas
-Have a suggestion for a new product or a new feature for an existing product? [Suggest a New idea](https://forms.office.com/r/U9twpSt3in)
 
 <iframe
 	width="560"
