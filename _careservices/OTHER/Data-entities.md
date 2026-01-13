@@ -82,8 +82,8 @@ Care services place valuations|Lines for places|Care services places
 Care services place features|Lines for place|Care services places
 Care services|Header for care service Care services> Setup>Service>All services|NIL
 Care services service care types|Lines for care services|Care services services
-Care services service types|Header for service type Care services >Setup>Servcie>Service types|NIL
-Care services service groups|Header for servcie group Care services>Setup>Service>Service groups|NIL
+Care services service types|Header for service type Care services >Setup> Service>Service types|NIL
+Care services service groups|Header for service group Care services>Setup>Service>Service groups|NIL
 Care services service group billing codes|Lines for service group|Care services service groups
 Care services service group funding codes|Lines for service group|Care services service groups
 Care services service group service codes|Lines for service group|Care services service groups
@@ -101,3 +101,9 @@ Care services billing journal headers|Header for billing journal|NIL
 Care services billing journal lines|Journal lines for billing journal|Care services billing journal headers
 Care services receipt journal headers|Header for receipt journal header|Care services billing journal headers
 Care services receipt journal lines|Lines for receipt journal|Care services receipt journal headers
+
+The following entities are available for the Care Services module as "open in Excel" functionality and are designed to be used with the Excel Add-in.  The entities below are not compatible with the DMf (import/export functionality) 
+
+**Entity**| **Description**| **Navigation**
+:------------------------|:-------------------|:------------------------
+Care Services Billing Journal Line Entry V2| used to edit | Care Services>Journals>Billing journal
