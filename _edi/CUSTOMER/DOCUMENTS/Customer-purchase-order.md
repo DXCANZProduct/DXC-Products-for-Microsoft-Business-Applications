@@ -220,7 +220,7 @@ The following EDI Header staging fields are available on the header page.
 **Currency**                | The currency of the order	                                    | Sales order > Price and discount > Currency
 **Company GLN**             | The company’s global location number is shown here. 	        | Sales order > EDI > Company GLN <br> If the **Company GLN** staging field is blank, the Company GLN on the Trading partner will be used to populate the **Company GLN** on the Sales order header.
 **Customer GLN**            | The Customer’s global location number is shown here.  | Sales order > EDI > Customer GLN <br> If the **Trading partner GLN** staging field is blank, the Trading partner GLN on the Trading partner will be used to populate the **Customer GLN** on the Sales order header.
-**Buyer code**              | The customer’s buyer code from the EDI record is shown here.	| Sales order > EDI > Buyer code
+**Buyer code**              | The customer’s buyer code from the EDI record is shown here. <br> Where Buyer code is blank in Customer purchase order header staging record, it will use the Buyer code from the Trading partner on the Sales order header, EDI section. And subsequently on all outbound customer documents	| Sales order > EDI > Buyer code
 **Retail buyer location**   | The customer’s retail buyer location from the EDI record is shown here.	| Sales order > EDI > Retail buyer location code
 **Purpose code**            | The customer’s purpose code from the EDI record is shown here.	        | Sales order > EDI > Purpose code
 **Department**              | The customer’s department from the EDI PO is shown here.	                | Sales order > EDI > Department

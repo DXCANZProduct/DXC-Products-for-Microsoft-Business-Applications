@@ -46,11 +46,6 @@ Quick method to download header and line fields for a document type: <br>
 By design, data refresh doesn't copy passwords for connections. When opening the connection, user will receive a 'Encryption error occured with exception'. <br>
 If the connection is to be used in this environment, update the details (for example different paths for UAT) and update the password.
 
-### No document setting specified
-Posting some transactions require an EDI document setting specified. <br>
-If you receive error 'Update has been cancelled. No document setting specified.' please check if you have a 'Setting profile' assigned for the trading partner's document. <br>
-Example: <br>
-![EDI Trading partners](CORE/Image/NoDocSettingSpecified.png "EDI Trading partners")
 
 ### Module FAQ
 The module specific FAQ can be found below. <br>
