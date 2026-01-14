@@ -13,7 +13,7 @@ toc:
       - page: Trading partners and documents
         url: /edi/CORE/Introduction/Trading-partners-and-documents
       - page: FAQ
-        url: /edi/CORE/INTRODUCTION/FAQ  
+        url: /edi/CORE/Introduction/FAQ  
       - title: Setup
         id: core/setup
         Level_2_items:
