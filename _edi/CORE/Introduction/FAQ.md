@@ -11,7 +11,7 @@ toc: true
 See [EDI FAQ](../../FAQ) for generic EDI queries
 
 ## Fixing EDI errors
-The following table describes a few staging errors that could be experienced with EDI documents. Short description of possible fixes are discussed. After fix, reset status on the record and either manually process again or leave for batch to process.
+The following table describes a few core errors (not module specific) that could be experienced with EDI documents. Short description of possible fixes are discussed. After fix, reset status on the record and either manually process again or leave for batch to process.
 
 > Note: % contains staging data for the record
 
