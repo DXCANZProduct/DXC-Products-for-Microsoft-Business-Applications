@@ -40,3 +40,11 @@ Order purpose 'Original' not valid for change document | Order purpose 'Original
 Price is outside of tolerance (Price = %, agreed price = %) | The unit price change is outside the allowed variance as set in the [document setting profile](../SETUP/SETTING-PROFILES/Customer-purchase-order-change).
 Sales order for PO % and customer % doesn't exist.  | EDI can't find the D365 based on staging field **Customer requisition**. Either the sales order hasn't been created or the values don't match to D365. Fix staging or D365 sales order.
 
+## Fixing Outbound EDI errors
+The following table describes a few staging errors that could be experienced with customer outbound documents at the create staging step. Short description of possible fixes are discussed. 
+
+### Sales invoice
+
+Error	message           | Method to fix
+:--                     |:--
+**No document setting specified** | If you receive error 'Update has been cancelled. No document setting specified.' when trying to post a sales invoice for an EDI customer, please check if you have a 'Setting profile' assigned for the trading partner's document. <br> Example: <br> ![EDI Trading partners](../../CORE/Image/NoDocSettingSpecified.png "EDI Trading partners")
