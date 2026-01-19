@@ -25,6 +25,12 @@ Summary of Finance Utilities extensions to Modern bank reconciliation:
     - Posting options (only 'Generate customer payment').
  - **Correction amounts** - Ability to enter correction amounts at time of matching Bank statement transactions to Bank transactions.
 
+## Demonstration
+
+The following demonstrations are available for Finance Utilities additions to Modern bank reconciliation
+- [Overview](https://www.youtube.com/watch?v=taaHtFOrkXE&list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO&index=7) - 7 minutes
+- [Deep dive](https://www.youtube.com/watch?v=cfZSdWN3QoM&list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO&index=6) - 20 minutes
+- [Electronic reporting import for bank reconciliation matching rules](https://www.youtube.com/watch?v=k4Swv6bFINQ&list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO&index=5) - 6 minutes
 
 # Setup
 
