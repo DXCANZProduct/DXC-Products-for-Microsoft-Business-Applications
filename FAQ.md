@@ -83,6 +83,11 @@ If you’re using our model source code for extension or debugging and would lik
 
 If you don’t follow these instructions and continue building your installation deployable package using the license model source code, the installation will continue using the same license model as before applying the release. 
 
+### Links
+- From a technical perspective, to be performed in dev environments - [Manage third-party models and runtime packages by using source control](https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Fdev-tools%2Fmanage-runtime-packages&data=05%7C02%7Cjdutoit2%40dxc.com%7C577dd190757e4df6fbe508de5d4066c8%7C93f33571550f43cfb09fcd331338d086%7C0%7C0%7C639050728360713965%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=XcI7QK0%2FvazJlfgcfL2SaZhjtKoq77YtOBboBFWPgxM%3D&reserved=0)
+- Creating deployable packages - [All-in-one deployable packages](https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Fdev-tools%2Faio-deployable-packages&data=05%7C02%7Cjdutoit2%40dxc.com%7C577dd190757e4df6fbe508de5d4066c8%7C93f33571550f43cfb09fcd331338d086%7C0%7C0%7C639050728360738467%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=X%2FyathQjLHy1VVjNwAdqZavox%2FdqYzdCIY5frxidsr4%3D&reserved=0)
+- [Including ISV Binaries in Your Package](https://www.codecrib.com/2021/01/including-isv-binaries-in-your-package.html)
+- [Install ISV package](https://community.dynamics.com/forums/thread/details/?threadid=a7eecaf4-d092-4eef-bd54-30f92b0a162f)
 
 ## Subscribe to notifications
 
@@ -91,7 +96,7 @@ New coming feature
 
 ## Dependency and Security Information
 
-Can be found on each product's FAQ
+Can be found on each product's FAQ.
 
 
 ## 	Troubleshooting
