@@ -37,7 +37,7 @@ DXC EDI
 ## Feature management
 Enable the following features in D365 Feature management:
 - Finance utilities
-- Finance utilities - AR utilities (additional license option)
+- Finance utilities - AR utilities (additional license option, included in subscription)
 
 If above feature is not visible, press **Check for updates** to refresh the feature management list.
 
