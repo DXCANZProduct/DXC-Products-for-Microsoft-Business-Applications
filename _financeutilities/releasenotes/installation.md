@@ -10,6 +10,30 @@ toc: true
 
 See [FAQ](../../FAQ#installation-process) 
 
+# ISV Product Dependency
+
+Dependency Summary Table
+
+| Product / Module | Depends On |
+|------------------|------------|
+| DXC Finance Utilities | DXC License Manager,  DXC License,  DXC Connections, DXC Encryption, DXC ABN Validation | 
+| DXC Connections | None | 
+| DXC Encryption  | None |
+| DXC ABN Validation | None | 
+| DXC License | DXC License Manager | 
+| DXC License Manager | None |
+
+---
+
+```
+DXC EDI
+   ├── DXC Connections
+   ├── DXC License
+   │       └── DXC License Manager
+   └── DXC License Manager
+```
+
+
 ## Feature management
 Enable the following features in D365 Feature management:
 - Finance utilities
