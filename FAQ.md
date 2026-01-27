@@ -51,7 +51,7 @@ This step will create the project scope that can be deployed to an environment.
 
 ![Copy](IMAGES/LCS_3.png "Copy")
 
-# Installation process
+## Installation process
 To align with MS best practice and to protect our IP the following applies to the release process.
 - The license models DXCLicense will only be released as binaries as part of a deployable package. 
 - We will not provide test models for the products, neither as binary or source code. 
@@ -63,13 +63,13 @@ To align with MS best practice and to protect our IP the following applies to th
 
 Depending on the installation history follow one of these guides to install the new release. 
 
-## Installation without existing installed product
+### Installation without existing installed product
 1. Apply the deployable package to your environment. 
 2. If you have requested any model for extension or debugging purposes. Install the model source code. 
 a.	Note, once the model source code is compiled it will overwrite the binaries installed when the deployable package was applied. 
 
 
-## Installation with existing installed product
+### Installation with existing installed product
 If you’re installing the new release in an installation that already has a previous version of the product installed and you’re not using it for debugging or extension. We recommend that you;  
 1. Remove the release product model source code from your source control, if source control is used. 
 2. Apply the deployable package, installing the latest version of the product models as binaries.  
