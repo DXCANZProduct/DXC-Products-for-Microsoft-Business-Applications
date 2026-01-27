@@ -102,7 +102,7 @@ Care services billing journal lines|Journal lines for billing journal|Care servi
 Care services receipt journal headers|Header for receipt journal header|Care services billing journal headers
 Care services receipt journal lines|Lines for receipt journal|Care services receipt journal headers
 
-The following entities are available for the Care Services module as "open in Excel" functionality and are designed to be used with the Excel Add-in.  The entities below are not compatible with the DMf (import/export functionality) 
+The following entities are available for the Care Services module as "open in Excel" functionality and are designed to be used with the Excel Add-in.  The entities below are not compatible with the DMF (import/export functionality) 
 
 **Entity**| **Description**| **Navigation**
 :------------------------|:-------------------|:------------------------
