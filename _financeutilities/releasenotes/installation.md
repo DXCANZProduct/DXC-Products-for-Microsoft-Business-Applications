@@ -6,7 +6,7 @@ state: current
 toc: true
 ---
 
-# 	Release notes
+# Installation process
 
 See [FAQ](../../FAQ#installation-process) 
 
