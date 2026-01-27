@@ -29,3 +29,10 @@ DXC Core Extensions
    └── DXC License Manager
 ```
 
+## Feature management
+Enable the following features in D365 Feature management:
+- Core extensions
+- (Preview) Core Extensions - Data anonymization (available on request)
+
+If above features are not visible, press **Check for updates** to refresh the feature management list.
+
