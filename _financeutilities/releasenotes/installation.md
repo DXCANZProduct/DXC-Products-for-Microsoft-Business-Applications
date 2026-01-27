@@ -26,8 +26,10 @@ Dependency Summary Table
 ---
 
 ```
-DXC EDI
+DXC Finance Utilities
    ├── DXC Connections
+   ├── DXC Encryption
+   ├── DXC ABN Validation
    ├── DXC License
    │       └── DXC License Manager
    └── DXC License Manager
