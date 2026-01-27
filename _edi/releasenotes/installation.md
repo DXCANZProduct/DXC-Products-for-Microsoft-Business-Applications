@@ -8,7 +8,7 @@ toc: true
 
 # Installation process
 
-See [FAQ](../../FAQ.md#installation-process)
+See [FAQ](../../FAQ#installation-process) 
 
 ## Feature management
 Enable all licensed modules via Feature management. Features are called:
