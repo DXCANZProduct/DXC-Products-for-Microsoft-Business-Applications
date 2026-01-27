@@ -10,14 +10,9 @@ toc: true
 
 See [FAQ](../../FAQ#installation-process) 
 
-# ISV Product Dependency Documentation
+# ISV Product Dependency
 
-## 1. Overview
-Provide a brief description of the ISV solution and how dependencies are structured.
-
----
-
-## 2. Dependency Summary Table
+Dependency Summary Table
 
 | Product / Module | Depends On |
 |------------------|------------|
