@@ -10,6 +10,32 @@ toc: true
 
 See [FAQ](../../FAQ#installation-process) 
 
+# ISV Product Dependency Documentation
+
+## 1. Overview
+Provide a brief description of the ISV solution and how dependencies are structured.
+
+---
+
+## 2. Dependency Summary Table
+
+| Product / Module | Depends On |
+|------------------|------------|
+| DXC EDI | DXC License Manager,  DXC License,  DXC Connections | 
+| DXC Connections | None | 
+| DXC License | DXC License Manager | 
+| DXC License Manager | None |
+
+---
+
+```
+DXC EDI
+   ├── DXC Connections
+   ├── DXC License
+   │       └── DXC License Manager
+   └── DXC License Manager
+```
+
 ## Feature management
 Enable all licensed modules via Feature management. Features are called:
 - EDI (enable first)
