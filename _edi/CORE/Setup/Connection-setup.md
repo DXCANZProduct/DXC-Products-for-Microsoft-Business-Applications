@@ -50,6 +50,8 @@ In order to create a batch to delete connection logs older than the retention pe
 3. Set **Batch processing** to _Yes_, set the **Recurrence** and update the **Task description** if required.
 4. Click **OK**.
 
+Running **Test connection** also deletes the connection log records that falls outside the retention period for the connection.
+
 ### FTP sites
 Users can access the form by navigating to **EDI > Setup > Connection setup > FTP sites**
 
