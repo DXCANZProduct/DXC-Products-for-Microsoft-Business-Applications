@@ -41,6 +41,11 @@ These logs can then be used to set **Custom alerts**, for example using error lo
 **Log code**                        | Code that initiated the log.
 **Message**                         | Message for the log.
 
+**Note:**
+Enabling logging could create numerous records, thus recommended to keep logging level and retention periods to a minimum. <br> 
+This should also be reviewed regurarly to determine if the level and retention could be reduced. <br> 
+In order to delete connection log records outside the retention period, please see below section.
+
 ### Cleanup log
 
 In order to create a batch to delete connection logs older than the retention period, follow these steps:
