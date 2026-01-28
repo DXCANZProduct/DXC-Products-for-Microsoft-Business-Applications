@@ -57,7 +57,7 @@ In order to create a batch to delete connection logs older than the retention pe
 
 Running **Test connection** also deletes the connection log records that falls outside the retention period for the connection.
 
-### FTP sites
+## FTP sites
 Users can access the form by navigating to **EDI > Setup > Connection setup > FTP sites**
 
 FTP is a communication method that can be used for this module. FTPS and FTP protocols are supported. 
@@ -111,7 +111,7 @@ Outgoing documents have a single path that is required to be defined
 
 > Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br>The results will be shown on the far right of the grid.
 
-### SFTP sites
+## SFTP sites
 Users can access the form by navigating to **EDI > Setup > Connection setup > SFTP sites**
 
 The SFTP sites setup form holds the information required to connect to, retrieve and create files in/from SFTP sites as well as the EDI document paths in the SFTP site.
@@ -172,7 +172,7 @@ Outgoing documents have a single path that is required to be defined
 
 > Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br>The results will be shown on the far right of the grid.
 
-### Azure blob storage sites
+## Azure blob storage sites
 Users can access the form by navigating to **EDI > Setup > Connection setup > Azure sites**
 
 Azure cloud blob storage is a communication method that can be used for this module. 
@@ -228,7 +228,7 @@ Outgoing documents have a single path that is required to be defined
 > Note: Each site path can be tested to ensure it is valid by selecting the path records to be tested and pressing the **Test path connection** button on the Incoming and/or Outgoing path's toolbar. <br>The results will be shown on the far right of the grid.*
 > **Folder name** is excluded in **Test path connection**.
 
-### Web services
+## Web services
 This is a base framework that will allow developers to build custom connections to consume external APIs and integrate them with the module. Out of the box the module does not include any functional connections and only provides development examples as a guide. 
 For further information, please see [Technical guide - Web API](../Technical-guide/Web-API)
 
