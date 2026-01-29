@@ -5,7 +5,7 @@ title: Forex contract
 description: Forex contract - Release notes
 author: Monica du Toit
 manager: Pontus Ek
-ms.date: 2025-08-22
+ms.date: 2026-01-30
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -48,19 +48,24 @@ Release notes for other models included in product:
 
 # Current version
 
-### Release 10.0.40.20240912
+### Release 10.0.45.20260130
 
-DXC Forex contract 10.0.40 runs on the following Microsoft releases
+DXC Forex contract 10.0.45 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.40 10.0.1935.92	  | [What’s new or changed in Dynamics 365 application version 10.0.40](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-40)
-Microsoft Dynamics 365 application	| 10.0.41	  | [What’s new or changed in Dynamics 365 application version 10.0.41](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-41)
-Microsoft Dynamics 365 application	| 10.0.42 	  | [What’s new or changed in Dynamics 365 application version 10.0.42](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-42)
-Microsoft Dynamics 365 application	| 10.0.43 	  | [What’s new or changed in Dynamics 365 application version 10.0.43](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43)
-Microsoft Dynamics 365 application	| 10.0.44 	  | [What’s new or changed in Dynamics 365 application version 10.0.44](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44)
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 
+
+#### Build 10.0.45.202601301
+Release date: 30 January 2026
+
+Final deprecated release without **Feature management** and **Licensing**
+
+
+# Previous version(s)
+
+### Release 10.0.40.20240912
 
 #### Build 10.0.40.202409121
 Release date: 12 September 2024
@@ -71,9 +76,6 @@ Release date: 12 September 2024
 Number	| Functionality	  	| Description
 :--	|:--		  	|:--	
 19123	| Purchase order Change management	| Couldn't post Purchase order Product receipt when Change management activated. Error with: "Changes to the document are only allowed in state Draft, because change management is activated."
-
-
-# Previous version(s)
 
 ### Release 10.0.39.20240902
 
