@@ -99,7 +99,7 @@ Care services invoice|Header for Care services invoice|NIL
 Care services invoice line|Lines for Care service invoice|Care services invoice
 Care services billing journal headers|Header for billing journal|NIL
 Care services billing journal lines|Journal lines for billing journal|Care services billing journal headers
-Care services billing journal lines V2 |replaces Care services billing journal lines|Care services billing journal headers
+Care services billing journal lines V2 |replaces Care services billing journal lines|Care services billing journal headers| see note below for additional logic control
 Care services receipt journal headers|Header for receipt journal header|Care services billing journal headers
 Care services receipt journal lines|Lines for receipt journal|Care services receipt journal headers
 
@@ -108,3 +108,24 @@ The following entities are available for the Care Services module as "open in Ex
 **Entity**| **Navigation**| **Comments/Available fields**|
 :------------------------|:-------------------|:------------------------
 Care Services Billing Journal Line Entry V2| Care Services>Journals>Billing journal | Replaces Care Services Billing Journal Line Entry<br/> Available Fields
+
+
+
+
+**Field Name**|  **Data Source**|  **Path**|  **Logic engages under condition**|
+:------------------------|:-------------------|:------------------------|:-------------------
+Text (Description) |Billing codes description|Care services > Setup > Billing > Billing codes|default value after leave value in excel blank
+Offset text|Billing codes description|Care services > Setup > Billing > Billing codes|default value after leave value in excel blank
+Tax group|Billing codes Tax group|Care services > Setup > Billing > Billing codes|default value after leave value in excel blank
+Tax item group|Billing codes Tax item group|Care services > Setup > Billing > Billing codes|default value after leave value in excel blank|
+Offset dimension|Service code financial dimensions|Care services > Setup > Services > All services|default value  by deleting entire column|
+Default dimension|Service code default dimensions|Care services > Setup > Services > All services|default value  by deleting entire column|
+Home based care set id|Billing codes Home based care set|Care services > Setup > Billing > Billing codes|default value after leave value in excel blank|
+Home based care category id|Billing codes Home based care category|Care services > Setup > Billing > Billing codes|Currently Not Used in DMF|
+Unit|Billing codes unit|Care services > Setup > Billing > Billing codes|Currently Not Used in DMF|
+Recurrence pattern|Billing codes recurrence pattern|Care services > Setup > Billing > Billing codes|default value  by deleting entire column|
+Billing account name|Journal Name|General Ledger > Setup > Journal setup > Journal names|default value after leave value in excel blank|
+Payment terms|Customer record|Care services > Customers > All customers >Customer record > Payment defaults||
+Method of Payment|Customer record|Care services > Customers > All customers >Customer record > Payment defaults||
+
+
