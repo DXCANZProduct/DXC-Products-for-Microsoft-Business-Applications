@@ -8,8 +8,8 @@ toc: true
 
 The following is a summary of data entities available for the Care Services module:
 
-**Entity**| **Description/comments**| **Dependency**
-:------------------------|:-------------------|:------------------------
+**Entity**| **Description/comments**| **Dependency**| Comments
+:------------------------|:-------------------|:------------------------|:------------------------
 Care services accommodation payment interest rates|Header for accommodation payment interest rates|Header
 Care services accommodation payment interest rate lines|Lines for accommodation payment interest rates|Aged care accommodation payment interest rates
 Care services accommodation payment|Header for accommodation payment|Header
@@ -99,6 +99,7 @@ Care services invoice|Header for Care services invoice|NIL
 Care services invoice line|Lines for Care service invoice|Care services invoice
 Care services billing journal headers|Header for billing journal|NIL
 Care services billing journal lines|Journal lines for billing journal|Care services billing journal headers
+Care services billing journal lines V2 |replaces Care services billing journal lines|Care services billing journal headers
 Care services receipt journal headers|Header for receipt journal header|Care services billing journal headers
 Care services receipt journal lines|Lines for receipt journal|Care services receipt journal headers
 
