@@ -8,13 +8,13 @@ toc: true
 
 The following is a summary of data entities available for the Care Services module:
 
-**Entity**| **Description**| **Dependency**
+**Entity**| **Description/comments**| **Dependency**
 :------------------------|:-------------------|:------------------------
 Care services accommodation payment interest rates|Header for accommodation payment interest rates|Header
 Care services accommodation payment interest rate lines|Lines for accommodation payment interest rates|Aged care accommodation payment interest rates
 Care services accommodation payment|Header for accommodation payment|Header
 Care services accommodation payment lines|Lines for accommodation payment lines|Care services accommodation payment
-Care services accommodation payment lines import|Import accommodation payment lines for customer under the accommodation payment for the customer|NIL
+Care services accommodation payment lines import|Import accommodation payment lines for the customer under the accommodation payment for the customer|NIL
 Care services accommodation payment type|Import accommodation payment type|NIL
 Care services billing account types|Import billing account name|NIL
 Care services billing codes|Header for billing code|Header
@@ -104,6 +104,6 @@ Care services receipt journal lines|Lines for receipt journal|Care services rece
 
 The following entities are available for the Care Services module as "open in Excel" functionality and are designed to be used with the Excel Add-in.  The entities below are not compatible with the DMF (import/export functionality) 
 
-**Entity**| **Description**| **Navigation**
+**Entity**| **Navigation**| **Comments/Available fields**|
 :------------------------|:-------------------|:------------------------
-Care Services Billing Journal Line Entry V2| used to edit | Care Services>Journals>Billing journal
+Care Services Billing Journal Line Entry V2| Care Services>Journals>Billing journal | Replaces Care Services Billing Journal Line Entry<br/> Available Fields
