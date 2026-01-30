@@ -91,3 +91,4 @@ Navigate to: Care services > Journal > Funding Journal
 30) Item GST group
 31) Voucher
 32) Reversing date
+33) Journal totals (Debit and credit total)
