@@ -55,7 +55,11 @@ Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dy
 #### Build 10.0.45.202601301
 Release date: 30 January 2026
 
-Final deprecated release without **Feature management** and **Licensing**
+<ins>New features</ins>
+
+Number	| Functionality	  	| Description
+:--	|:--		  	|:--
+24376	| Final deprecated release without **Licensing** | New feature **Forex contract without license req** controls the Forex functionality and is set to 'On by default'. This replaces the previous license controlled feature. <br> New 'DXC license' 10.0.45.202601302 also has Forex removed. 
 
 
 # Previous version(s)
