@@ -70,7 +70,7 @@ The invoices can be automatically created at time of product receipt, or with a 
 [Watch recording](https://youtu.be/bD6-Wz0VGW0?si=CXMTTbYRS9jvj3Ul)
 
 ### Electronic reporting export
-**Duration: 6.5 minutes**
+**Duration: 4.5 minutes**
 
 Demonstration for exporting Electronic reporting files to secure locations using Finance Utilities.
 
