@@ -74,7 +74,7 @@ The invoices can be automatically created at time of product receipt, or with a 
 
 Demonstration for exporting Electronic reporting files to secure locations using Finance Utilities.
 
-[Watch recording](https://youtu.be/k4Swv6bFINQ?si=e7MXxoY26IHaee9-)
+[Watch recording](https://youtu.be/FlukDXw_FPM?si=x0w_sLjNWJC2_75g))
 
 ### Customer remittance import
 **Duration: 8.5 minutes**
