@@ -107,9 +107,9 @@ The following entities are available for the Care Services module as "open in Ex
 
 **Entity**| **Navigation**| **Comments/Available fields**|
 :------------------------|:-------------------|:------------------------
-Care Services Funding Journal Entry| Care Services>Journals>Funding journal| New entity for Funding journal<br/> Available Fields. <br> Refer to test [Document Template]({{ 'careservices/OTHER/Document_template#care-services-funding-journal-entry' | relative_url }})
-Care Services Billing Journal Line Entry V2| Care Services>Journals>Billing journal | Replaces Care Services Billing Journal Line Entry<br/> Available Fields
-Care Services Receipt Journal  Line Entry V2| Care Services>Journals>Receipt Journal| Replaces Care Services Receipt Journal Line Entry<br/> Available Fields
+Care Services Funding Journal Entry| Care Services>Journals>Funding journal| New entity for Funding journal<br/> Available Fields. <br> Refer to [Document Template]({{ 'careservices/OTHER/Document_template#care-services-funding-journal-entry' | relative_url }})
+Care Services Billing Journal Line Entry V2| Care Services>Journals>Billing journal | Replaces Care Services Billing Journal Line Entry<br/> Available Fields [Document Template]({{ 'careservices/OTHER/Document_template#care-services-billing-journal-line-entry-v2' | relative_url }})
+Care Services Receipt Journal  Line Entry V2| Care Services>Journals>Receipt Journal| Replaces Care Services Receipt Journal Line Entry<br/> Available Fields [Document Template]({{ 'careservices/OTHER/Document_template#care-services-receipt-journal--line-entry-v2' | relative_url }})
 
 
 Billing Journal Lines V2 Data entity contains additional default logic that facilitates updates to the environment.  This is outlined below 
