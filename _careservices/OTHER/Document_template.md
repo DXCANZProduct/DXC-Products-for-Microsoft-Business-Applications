@@ -58,7 +58,7 @@ Navigate to: Care services > Journal > Receipt journal
 
 
 Navigate to: Care services > Journal > Funding Journal
-### Care services funding journal  Entry
+### Care services funding journal Entry
 1) Journal batch number  <br>
 2) Description  <br>
 3) Name  <br>
