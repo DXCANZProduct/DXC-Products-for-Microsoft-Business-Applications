@@ -1,7 +1,30 @@
 ---
-layout: product-content
-header: Care Services
-toc: true
+# required metadata
+
+title: Care Services
+description: Care Services- Data Entities
+Author: Helen
+Manager: Pontus Ek
+ms.date: 2026-02-01
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: peter Musumeci
+
+# ms.tgt_pltfrm: 
+ms.custom: [21901, intro-internal]
+ms.search.region: Care Services
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: Peter Musumeci 
+ms.search.validFrom:   2026-02-01
+ms.dyn365.ops.version:  D365
 ---
 
 ## Document template (Open lines in Excel)
