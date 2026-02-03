@@ -12,83 +12,83 @@ iii) Care services funding journal  Entry  <br>
 
 Navigate to: Care services > Journal > Billing journal
 ### Care services billing journal line Entry V2
-1) Journal batch number
-2) Description
-3) Name (Journal name)
-4) Posted
-5) Date
-6) Company
-7) Client reference
-8) Client account
-9) Client name
-10) Billing Code
-11) Service code
-12) Billing account name
-13) Start date
-14) End date
-15) Qty/Days
-16) Reversing date
-17) Reversing entry
-18) Line number
-19) Voucher
-20) Journal totals (Debit and credit total)
+1) Journal batch number <br>
+2) Description <br>
+3) Name (Journal name) <br>
+4) Posted  <br>
+5) Date  <br> 
+6) Company  <br>
+7) Client reference  <br>
+8) Client account  <br>
+9) Client name  <br>
+10) Billing Code  <br>
+11) Service code  <br>
+12) Billing account name  <br>
+13) Start date  <br>
+14) End date  <br>
+15) Qty/Days  <br>
+16) Reversing date  <br>
+17) Reversing entry  <br>
+18) Line number  <br>
+19) Voucher  <br>
+20) Journal totals (Debit and credit total)  <br>
 
 Navigate to: Care services > Journal > Receipt journal
 ### Care Services Receipt Journal  Line Entry V2
-1) Journal batch number
-2) Description
-3) Name (Journal name)
-4) Posted
-5) Date
-6) Company
-7) Client account
-8) Billing Code
-9) Description
-10) Service code
-11) Billing account name
-12) AccountName
-13) Method of payment
-14) Start date
-15) End date
-16) Quantity
-17) Debit
-18) Credit
-19) Line number
-20) Journal totals (Debit and credit total)
+1) Journal batch number  <br>
+2) Description  <br>
+3) Name (Journal name)  <br>
+4) Posted  <br>
+5) Date  <br>
+6) Company  <br>
+7) Client account  <br>
+8) Billing Code  <br>
+9) Description <br>
+10) Service code <br>
+11) Billing account name  <br>
+12) AccountName  <br>
+13) Method of payment  <br>
+14) Start date  <br>
+15) End date  <br>
+16) Quantity  <br>
+17) Debit  <br>
+18) Credit  <br>
+19) Line number  <br>
+20) Journal totals (Debit and credit total)  <br>
 
 
 Navigate to: Care services > Journal > Funding Journal
 ### Care services funding journal  Entry
-1) Journal batch number
-2) Description
-3) Name
-4) Posted
-5) Line number
-6) Date
-7) Company
-8) Account type
-9) Billing Code
-10) Client account
-11) Client name
-12) Customer group
-13) Customer status
-14) Description
-15) Credit
-16) Debit
-17) Currency
-18) Quantity
-19) Start date
-20) End date
-21) Exchange rate
-22) Funding code
-23) Offset account
-24) Offset account type
-25) Offset company
-26) Offset transaction text
-27) Reversal
-28) Service code
-29) GST group
-30) Item GST group
-31) Voucher
-32) Reversing date
-33) Journal totals (Debit and credit total)
+1) Journal batch number  <br>
+2) Description  <br>
+3) Name  <br>
+4) Posted  <br>
+5) Line number  <br>
+6) Date  <br>
+7) Company  <br>
+8) Account type  <br>
+9) Billing Code  <br>
+10) Client account  <br>
+11) Client name  <br>
+12) Customer group  <br>
+13) Customer status  <br>
+14) Description  <br>
+15) Credit  <br>
+16) Debit  <br>
+17) Currency  <br>
+18) Quantity  <br>
+19) Start date  <br>
+20) End date  <br>
+21) Exchange rate  <br>
+22) Funding code  <br>
+23) Offset account  <br>
+24) Offset account type  <br>
+25) Offset company  <br>
+26) Offset transaction text  <br>
+27) Reversal  <br>
+28) Service code  <br>
+29) GST group  <br>
+30) Item GST group  <br>
+31) Voucher  <br>
+32) Reversing date  <br>
+33) Journal totals (Debit and credit total)  
