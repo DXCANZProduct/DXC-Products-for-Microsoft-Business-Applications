@@ -43,14 +43,14 @@ Yes. Although this feature is standard Dynamics 365 email functionality, not Sma
 
 **Why are the token placeholders used in the filename not the same as the Dynamics 365 field?**
 
-Placeholder tokens can contain invalid characters that are inserted in a filename, and therefore, Smart Send is unable to create the file. A standard function "GetInvalidFileNameChars" is used to find and replace invalid characters with spaces.
+Placeholder tokens can contain invalid characters that are inserted in a filename, and therefore, Smart Send is unable to create the file. A standard function, "GetInvalidFileNameChars" is used to find and replace invalid characters with spaces.
 
 **Can I use Smart Send with the Email Body feature in Print management?**
 
 When sending a document via email, a basic email body can be included thanks to the *Document Report email body* functionality, which was enabled by default starting with version 10.0.39.  This is a different feature from Smart Send that creates dynamic, transaction-based email templates using the Organisation email templates. 
 
 **How do I send my confirmation to the contact on my order instead of the main contact on the account ?**
-From the Recipient drop-down menu in Email Parameters, simply select "Specific" for the nominated report.  This will use the email address specified on the sales order header or purchase order header.
+From the Recipient drop-down menu in Email Parameters, select "Specific" for the nominated report.  This will use the email address specified on the sales order header or purchase order header.
 
 **My company logo stored in FinOps will not render in emails anymore.**
 Many mail clients, such as Outlook and most webmail services, do not support the rendering of Base64 images anymore.  For this reason, we recommend moving away from Base64 images and pulling from an online link, such as Blob storage.  An Example could be in the format below <br>
@@ -62,6 +62,10 @@ If you are using Blob storage, you can obtain the URL of the image by selecting 
 and paste the value in the *URL* field into the quotation marks after *img src=* in the provided example above, and this will create your link. 
 
 ![Azure_URL](IMAGES/Azure_URL.png)
+
+**My Vendor Payment Advice Batch task failed with "An error occurred when running report".**
+When populating your Vednor Journal lines enure that the “Offset account type” or “Method of payment” are populated and not left blank
+
 
 ### Blob Storage Errors
 
