@@ -69,6 +69,10 @@ and paste the value in the *URL* field into the quotation marks after *img src=*
 
 ![Azure_URL](IMAGES/Azure_URL.png)
 
+**My Vendor Payment Advice Batch task failed with "An error occurred when running report".**
+When populating your Vednor Journal lines enure that the “Offset account type” or “Method of payment” are populated and not left blank
+
+
 ### Blob Storage Errors
 
 **When sending my file via Smart Send, I get "Message: The specified blob already exists."**
