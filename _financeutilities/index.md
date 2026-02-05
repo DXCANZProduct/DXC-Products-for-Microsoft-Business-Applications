@@ -37,7 +37,7 @@ The DXC Finance Utilities module provides enhanced functionalities to Microsoft 
     -   Customer bank account changes workflow
     -   ABN lookup and validation (Australia only)
     -   IRD number validation (New Zealand only)
-    -   VCustomer bank account format validation
+    -   Customer bank account format validation
     -   Customer references
     -   Option to use Customer's payment terms for Due date on Interest notes
     -   Import customer remittance files
