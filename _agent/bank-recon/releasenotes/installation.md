@@ -27,8 +27,8 @@ Dependency Summary Table
 DXC Agent for Bank reconciliation in D365 FSCM
    ├── DXC License
    │       └── DXC License Manager
-   └── DXC License Manager
-   ├── DXC Agent for FSCM
+   ├── DXC License Manager
+   └── DXC Agent for FSCM
 ```
 
 ## Feature management
