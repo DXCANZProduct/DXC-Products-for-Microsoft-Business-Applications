@@ -1,6 +1,6 @@
 ---
 layout: product-content
-header: DXC Agents for D365 FSCM framework
+header: DXC Agent for finance & supply chain management
 toc: true
 ---
 
