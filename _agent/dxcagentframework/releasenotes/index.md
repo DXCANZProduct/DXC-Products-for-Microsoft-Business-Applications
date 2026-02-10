@@ -1,6 +1,6 @@
 ---
 layout: releasenotes-content
-header: DXC Agent for D365 FSCM
+header: DXC Agent for finance & supply chain management
 title: 10.0.45.202602TBD
 release-version: 10.0.45.202602TBD
 state: current
