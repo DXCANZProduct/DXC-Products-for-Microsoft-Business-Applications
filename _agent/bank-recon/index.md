@@ -23,5 +23,5 @@ This guide is intended for finance professionals, accountants, and system admini
 
 
 ### Topics
-- [Setup](Setup)
-- [Processing](Processing)
+- [Setup](Setup.md)
+- [Processing](Processing.md)
