@@ -8,8 +8,10 @@ toc: true
 
 # A. Microsoft Foundry
 
-Start by creating 
-
+Start by creating your Microsoft Foundry resources. See:
+- [Quikstart](https://learn.microsoft.com/en-us/azure/ai-foundry/quickstarts/get-started-code?view=foundry&preserve-view=true&tabs=python)
+- [Create resources](https://learn.microsoft.com/en-us/azure/ai-foundry/tutorials/quickstart-create-foundry-resources?view=foundry&tabs=azurecli)
+- [Pricing](https://azure.microsoft.com/en-au/pricing/details/microsoft-foundry/)
 
 
 # B. D365 Finance and Operations
@@ -32,12 +34,14 @@ Field                  | Description
 
 Navigate to **System administration > Agents for finance & supply chain management > All agent** to setup the **DXC Agent for bank reconciliation**
 
-Select **New** and populate the following:
+When opening the form, it checks for any new agents and self populates from details from code
+
+Information on fields.
 
 Field                  | Description
 :--                    |:--
-**Agent name**         | Enter **DXCAgentForBankReconciliation**
-**Agent description**  | Enter a description, for example **Agent for bank reconciliation**
+**Agent name**         | DXCAgentForBankReconciliation
+**Agent description**  | Agent for bank reconciliation
 **Agent connection details**  | Select the agent created in B.2.
 **Enabled**            | Set to _Yes_ in order to enable the agent
 **Enable agent response validation**  | Additional validation is available that can review the matching results from the agent instructions. Set to _Yes_ to enable validation.
