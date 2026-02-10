@@ -17,7 +17,9 @@ Start by creating your Microsoft Foundry resources. See:
 # B. D365 Finance and Operations
 
 ## B.1.	Enable feature
-After deployment, find and enable the feature **DXC Agent for bank reconciliation** to enable the product.
+After deployment, find and enable the following features:
+1. DXC Agent for finance & supply chain management
+2. DXC Agent for bank reconciliation
 
 ## B.2.  Agent connection parameters
 
