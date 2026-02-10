@@ -6,33 +6,17 @@ toc: true
 
 # DXC Agent for Bank reconciliation in D365 FSCM
 
-# A. Microsoft Foundry
+## Prerequisites
 
-Start by creating your Microsoft Foundry resources. See:
-- [Quikstart](https://learn.microsoft.com/en-us/azure/ai-foundry/quickstarts/get-started-code?view=foundry&preserve-view=true&tabs=python)
-- [Create resources](https://learn.microsoft.com/en-us/azure/ai-foundry/tutorials/quickstart-create-foundry-resources?view=foundry&tabs=azurecli)
-- [Pricing](https://azure.microsoft.com/en-au/pricing/details/microsoft-foundry/)
+Start by setting up the prerequisite **Microsoft Foundry** and **DXC Agent for finance & supply chain management** - [user guide](../dxcagentframework/Setup.md)
 
+## DXC Agent for Bank reconciliation
 
-# B. D365 Finance and Operations
-
-## B.1.	Enable feature
+###  Enable feature
 After deployment, find and enable the following features:
-1. DXC Agent for finance & supply chain management
-2. DXC Agent for bank reconciliation
+1. DXC Agent for bank reconciliation
 
-## B.2.  Agent connection parameters
-
-Navigate to **System administration > Agents for finance & supply chain management > Agent connection parameters** to add the **Microsoft Foundry** details created in section A. <br>
-
-Field                  | Description
-:--                    |:--
-**Deployment name**    | Enter the Deployment name. Example dxcagentforfscm-gpt-5.2-chat
-**Target URI**         | Paste the URI. Example https://xx-us-reso.cognitiveservices.azure.com/
-**API key**            | Enter the API key
-
-
-## B.3.  All agents
+###  All agents
 
 Navigate to **System administration > Agents for finance & supply chain management > All agent** to setup the **DXC Agent for bank reconciliation**
 
@@ -48,7 +32,7 @@ Field                  | Description
 **Enabled**            | Set to _Yes_ in order to enable the agent
 **Enable agent response validation**  | Additional validation is available that can review the matching results from the agent instructions. Set to _Yes_ to enable validation.
 
-## B.4. Bank accounts
+### Bank accounts
 
 Where you want the agent to automatically run when importing the bank statement, navigate to **Cash and bank management > Bank statement reconciliation > Bank accounts**.
 
