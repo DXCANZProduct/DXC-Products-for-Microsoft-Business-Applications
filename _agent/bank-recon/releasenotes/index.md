@@ -16,8 +16,7 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  	  |:--           			    	  |:--
-Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No	| 10.0.43.202506191
-Product version: 10.0.46 <br> App build: 10.0.2428.15	  | No	| 10.0.44.202510171
+Product version: 10.0.47 <br> App build: 10.0.2527.17	  | No	| 10.0.45.202602TBD
 
 Release notes for other models included in product:
 - [DXC License Manager]({{'licensemanager/releasenotes/dxclicensemanager/' | relative_url }})
