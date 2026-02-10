@@ -1,6 +1,6 @@
 ---
 layout: releasenotes-content
-header: Security Insights for D365 FO
+header: DXC Agent for Bank reconciliation in D365 FSCM
 title: Installation process
 release-version: 10.0.1
 state: current
@@ -17,22 +17,24 @@ Dependency Summary Table
 
 | Product / Module | Depends On |
 |------------------|------------|
-| DXC Security Insights for D365FO | DXC License Manager,  DXC License | 
+| DXC Agent for Bank reconciliation in D365 FSCM | DXC License Manager,  DXC License, DXC Agent for FSCM | 
 | DXC License | DXC License Manager | 
 | DXC License Manager | None |
 
 ---
 
 ```
-DXC Security Insights for D365FO
+DXC Agent for Bank reconciliation in D365 FSCM
    ├── DXC License
    │       └── DXC License Manager
    └── DXC License Manager
+   ├── DXC Agent for FSCM
 ```
 
 ## Feature management
 
 Enable the following feature in D365 Feature management:
+- **DXC Agent for finance & supply chain management**
 - **Security Insights for D365FO**
 
 If above feature is not visible, press **Check for updates** to refresh the feature management list.
