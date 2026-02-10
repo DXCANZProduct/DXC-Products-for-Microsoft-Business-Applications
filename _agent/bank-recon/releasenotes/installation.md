@@ -36,6 +36,6 @@ DXC Agent for Bank reconciliation in D365 FSCM
 
 Enable the following feature in D365 Feature management:
 - **DXC Agent for finance & supply chain management**
-- **Security Insights for D365FO**
+- **DXC Agent for bank reconciliation**
 
 If above feature is not visible, press **Check for updates** to refresh the feature management list.
