@@ -6,23 +6,22 @@ toc: true
 
 ## Introduction
 
-Security Insights for D365FO ingests user behavior data from Azure Application Insights for security analysis. <br>
-Actively monitor user role assignments and utilization, thus enabling power users to optimize licensing and security of end users. <br>
-Identify and maintain underutilized/unused roles, duties, privileges that have enterprise licenses attached. <br> 
-<br>
-Determine if users are utilising their assigned licenses effectively by fetching user menu access telemetry from Azure Applications Insights for selected time-period. Ability to view % utilisation on menu items, privileges, duties, user roles and overall user level. Can also view user’s menu item interaction type (viewed vs. edited), interaction count and last interaction date. To speed up the process of finding optimisation opportunities the solution is capable of grouping the users into logic groups based on a range of criteria like security access in Finance and operations.
+The **DXC Agent for Bank Reconciliation in Microsoft Dynamics 365 Finance and Operations** (D365 F&O) is designed to streamline and automate the process of reconciling bank statements with system transactions. <br> 
+By leveraging **Microsoft Foundry** and DXC Agent instructions, the agent helps organizations reduce manual effort, improve accuracy, and accelerate period-end close activities.
+
+This user guide provides an overview of the Bank Reconciliation Agent’s purpose, capabilities, and usage within D365 Finance and Operations. It is intended to help users understand how the agent supports efficient bank reconciliation and how it fits into the overall cash and bank management process.
+
+
+The **DXC Agent for Bank Reconciliation** assists finance teams by:
+- Automatically matching bank statement lines with bank transactions
+- Easily identify transactions that were matched with the agent
+- Reduce manual reconciliations, allowing users to focus on unmatched or unusual items
+- Users are not required to create/maintain Reconciliation matching rules
+
+
+This guide is intended for finance professionals, accountants, and system administrators who are responsible for managing bank reconciliations in D365 Finance and Operations.
 
 
 ### Topics
-- [Setup]({{ '/dxcsecurityinsights/Parameters' | relative_url }}) - Setup Azure Application Insights and Security Insights in D365 FO
-- [Monitor]({{ '/dxcsecurityinsights/Review' | relative_url }}) - Colate and review user access and security utilization
-- [Security diagnostics]({{ '/dxcsecurityinsights/Security-diagnostics' | relative_url }}) - Licensing information added to Security diagnostics to assist in allocating new roles to users going forward
-
-### Demonstration
-
-Watch DXC Technology’s short demonstration on Security Insights for D365 FO solution here:
-- [Webinar](https://dynamics.dxc.technology/webinars/security-insights-for-d365fo)
-- [Demo playlist](https://www.youtube.com/playlist?list=PLIM01nS-jtL-D-wvUbmncSwy3PYjLuig5)
-
-
-</iframe>
+- [Setup]({{ '/agent/bank-recon/Setup' | relative_url }})
+- [Processing]({{ '/agent/bank-recon/Processing' | relative_url }})
