@@ -37,7 +37,7 @@ Select **New** and populate the following:
 Field                  | Description
 :--                    |:--
 **Agent name**         | Enter **DXCAgentForBankReconciliation**
-**Agent description**  |
+**Agent description**  | Enter a description, for example **Agent for bank reconciliation**
 **Agent connection details**  | Select the agent created in B.2.
 **Enabled**            | Set to _Yes_ in order to enable the agent
 **Enable agent response validation**  | Additional validation is available that can review the matching results from the agent instructions. Set to _Yes_ to enable validation.
