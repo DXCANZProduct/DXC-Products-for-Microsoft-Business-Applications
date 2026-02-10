@@ -24,7 +24,11 @@ Microsoft Foundry used by the agent is controlled by the client.
 
 ###   Product is installed but functionality not visible
 If the product is available in About > Version, check if it has been enabled in **Feature management**. <br>
-If you don't see **DXC Agent for bank reconciliation**, click **Check for updates**. <br>
-**Enable** the feature. <br>
+
+**Enable** the features in the following order. <br>
+1. DXC Agent for finance & supply chain management
+2. DXC Agent for bank reconciliation
+
+If you don't see the features, click **Check for updates**. <br>
 
 
