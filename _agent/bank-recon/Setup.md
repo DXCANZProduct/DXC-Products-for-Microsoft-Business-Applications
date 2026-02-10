@@ -23,9 +23,9 @@ Navigate to **System administration > Agents for finance & supply chain manageme
 
 Field                  | Description
 :--                    |:--
-**Deployment name**    | 
-**Target URI**         | 
-**API key**            | 
+**Deployment name**    | Enter the Deployment name. Example dxcagentforfscm-gpt-5.2-chat
+**Target URI**         | Paste the URI. Example https://xx-us-reso.cognitiveservices.azure.com/
+**API key**            | Enter the API key
 
 
 ## B.3.  All agents
@@ -36,4 +36,10 @@ Select **New** and populate the following:
 
 Field                  | Description
 :--                    |:--
-**Agent name**         | 
+**Agent name**         | Enter **DXCAgentForBankReconciliation**
+**Agent description**  |
+**Agent connection details**  | Select the agent created in B.2.
+**Enabled**            | Set to _Yes_ in order to enable the agent
+**Enable agent response validation**  | Additional validation is available that can review the matching results from the agent instructions. Set to _Yes_ to enable validation.
+
+
