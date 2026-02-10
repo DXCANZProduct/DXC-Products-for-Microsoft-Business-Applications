@@ -28,7 +28,7 @@ Field                  | Description
 :--                    |:--
 **Agent name**         | DXCAgentForBankReconciliation
 **Agent description**  | Agent for bank reconciliation
-**Agent connection details**  | Select the agent created in B.2.
+**Agent connection details**  | Select the agent created in Prerequisite [Agent connection parameters](../dxcagentframework/Setup.md#b2--agent-connection-parameters)
 **Enabled**            | Set to _Yes_ in order to enable the agent
 **Enable agent response validation**  | Additional validation is available that can review the matching results from the agent instructions. Set to _Yes_ to enable validation.
 
