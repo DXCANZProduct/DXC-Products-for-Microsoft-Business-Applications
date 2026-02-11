@@ -19,6 +19,10 @@ A list of installed models will be displayed on the **Version** tab.  Scroll to 
 
 Microsoft Foundry used by the agent is controlled by the client.
 
+### How many tokens does it use
+Approximately 115 tokens per record. <br>
+Using gpt5.2 has 250000 tokens limit per minute. <br>
+250000 tokens limit is about 2,200 records combined statements and transactions. <br>
 
 # 	Troubleshooting
 
