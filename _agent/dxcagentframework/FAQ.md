@@ -19,6 +19,8 @@ A list of installed models will be displayed on the **Version** tab.  Scroll to 
 
 Microsoft Foundry used by the agent is controlled by the client.
 
+### How many tokens does it use
+Approximately 115 tokens per record.
 
 # 	Troubleshooting
 
