@@ -13,7 +13,7 @@ Support contact details can be located on the **Contact** tab at **Organization 
 ### Where can I identify the installed version of the DXC Agent module
 
 On the Navigation bar, select **Help & support > About**. <br>
-A list of installed models will be displayed on the **Version** tab.  Scroll to **DXC Agent For Finance**. The version information will be displayed on the right (i.e. DXC Agent For Finance **10.0.45.20260227** (isv))
+A list of installed models will be displayed on the **Version** tab.  Scroll to **DXC Agent For Finance**. The version information will be displayed on the right (i.e. DXC Agent For Finance **10.0.45.202602131** (isv))
 
 ### Dependency and Security Information
 
