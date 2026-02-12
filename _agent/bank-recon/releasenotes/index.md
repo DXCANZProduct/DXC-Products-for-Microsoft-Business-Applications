@@ -1,8 +1,8 @@
 ---
 layout: releasenotes-content
 header: DXC Agent for Bank reconciliation in D365 FSCM
-title: 10.0.45.202602TBD
-release-version: 10.0.45.202602TBD
+title: 10.0.45.20260213
+release-version: 10.0.45.20260213
 state: current
 toc: true
 ---
@@ -16,7 +16,7 @@ If blank: investigations are ongoing. <br>
 
 D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  	  |:--           			    	  |:--
-Product version: 10.0.47 <br> App build: 10.0.2527.17	  | No	| 10.0.45.202602TBD
+Product version: 10.0.47 <br> App build: 10.0.2527.17	  | No	| 10.0.45.202602131
 
 Release notes for other models included in product:
 - [DXC License Manager]({{'licensemanager/releasenotes/dxclicensemanager/' | relative_url }})
