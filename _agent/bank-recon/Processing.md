@@ -39,4 +39,4 @@ Where the agent is enabled, the following buttons will be enabled in the **Unmat
 
 The transactions that have been matched by the Agent can easily be viewed in **Matched transactions** as these are flagged in **Matching rule** with **DXCAgentForBankRecon**.
 
-
+![Worksheet-prompt](IMAGES/agent-bankrecon-worksheet3.png)
