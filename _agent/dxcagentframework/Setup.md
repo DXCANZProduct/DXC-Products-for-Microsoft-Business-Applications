@@ -13,7 +13,7 @@ Start with [Deploy Microsoft Foundry Models in the Foundry portal](https://learn
 Note the following to paste in **Agent Connection Parameters**:
 - Target Uri
 - Model deployment name
-- Key to paste
+- Key
 
 
 
