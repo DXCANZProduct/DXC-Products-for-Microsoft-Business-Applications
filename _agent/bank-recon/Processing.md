@@ -37,6 +37,8 @@ Where the agent is enabled, the following buttons will be enabled in the **Unmat
 
 ### Matched transactions
 
-The transactions that have been matched by the Agent can easily be viewed in **Matched transactions** as these are flagged in **Matching rule** with **DXCAgentForBankRecon**.
+The transactions that have been matched by the Agent can easily be viewed in **Matched transactions** as these are flagged in **Matching rule** with **DXCAgentForBankRecon**. <br>
+
+> Note: Reconciliation matching rule **DXCAgentForBankRecon** is automatically created by the product, but only the name is used for flagging the applicable Matched transactions.
 
 ![Worksheet-prompt](IMAGES/agent-bankrecon-worksheet3.png)
