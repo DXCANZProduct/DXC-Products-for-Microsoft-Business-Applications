@@ -19,14 +19,19 @@ When importing bank statements with **Reconcile after import** enabled and the p
 The agent can be manually run by navigating to **Cash and bank management > Bank statement reconciliation > Bank reconciliation** and selecting the applicable reconciliation's **Worksheet**.
 
 Where the agent is enabled, the following buttons will be enabled in the **Unmatched transactions** tab: 
-- **Match with reconciliation agent**
+1. **Match with reconciliation agent**
     - To run the agent for all unmatched bank statement transactions, no need to select any records only click **Match with reconciliation agent**.
     - To run the agent for manually selected records, select the applicable unmatched bank statement transactions and click **Match with reconciliation agent**
-- **Prompt**
+
+![Worksheet-match](IMAGES/agent-bankrecon-worksheet1.png)
+
+2. **Prompt**
     - Instead of manually selecting applicable records, the user can use clear and specific language to specify which records the agent should attempt to match. Examples:
         -  Only match transactions where Related party type is Vendor
-        -  Only match where amount is less than 150
+        -  Only match where amount is less than 1500
         -  Only match transactions where Related party type is Vendor and amount is less than 300
+     
+![Worksheet-prompt](IMAGES/agent-bankrecon-worksheet2.png)
 
 ## Results
 
