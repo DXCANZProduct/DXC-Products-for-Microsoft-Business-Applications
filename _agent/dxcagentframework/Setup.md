@@ -8,7 +8,16 @@ toc: true
 
 # A. Microsoft Foundry
 
-Start by creating your Microsoft Foundry resources. See:
+Start with [Deploy Microsoft Foundry Models in the Foundry portal](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/how-to/deploy-foundry-models?view=foundry-classic)
+
+Note the following to paste in **Agent Connection Parameters**:
+- Target Uri
+- Model deployment name
+- Key to paste
+
+
+
+Additional resources:
 - [Quikstart](https://learn.microsoft.com/en-us/azure/ai-foundry/quickstarts/get-started-code?view=foundry&preserve-view=true&tabs=python)
 - [Create resources](https://learn.microsoft.com/en-us/azure/ai-foundry/tutorials/quickstart-create-foundry-resources?view=foundry&tabs=azurecli)
 - [Pricing](https://azure.microsoft.com/en-au/pricing/details/microsoft-foundry/)
