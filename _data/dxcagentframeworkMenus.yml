@@ -1,7 +1,7 @@
 toc:
   - page: Introduction
-    url: /dxcagentframework
+    url: /agent/dxcagentframework
   - page: Setup
-    url: /dxcagentframework/Setup
+    url: /agent/dxcagentframework/Setup
   - page: FAQ
-    url: /dxcagentframework/FAQ
+    url: /agent/dxcagentframework/FAQ

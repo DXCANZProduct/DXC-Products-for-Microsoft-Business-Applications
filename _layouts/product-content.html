@@ -60,6 +60,12 @@ toc: true
         {%if page.header == "Product Name" %}
           {% include sample-navbar.html %}
         {% endif %}
+        {%if page.header == "DXC Agent for Bank reconciliation in D365 FSCM" %}
+          {% include agent-bank-recon-navbar.html %}
+        {% endif %}
+        {%if page.header == "DXC Agent for finance & supply chain management" %}
+          {% include agent-framework-navbar.html %}
+        {% endif %}
       </div>
       <div class="col-12 col-md-9">
             <div class="content">
@@ -76,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var currentUrl = window.location.pathname.toLowerCase();
 
   // Adjust these as needed for your folder structure
-  var sections = ["careservices", "coreextensions", "financeutilities", "edi", "licensemanager", "dxcsecurityinsights", "smartsend", "connections"];
+  var sections = ["careservices", "coreextensions", "financeutilities", "edi", "licensemanager", "dxcsecurityinsights", "smartsend", "connections", "agent"];
   var foundSection = sections.find(section => currentUrl.includes(section));
   if (!foundSection) return;
 

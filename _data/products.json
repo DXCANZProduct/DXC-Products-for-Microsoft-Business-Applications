@@ -1,5 +1,14 @@
 [
     {
+        "title": "DXC Agents for D365 FSCM",
+        "description": "DXC Agents is a modern, cloud-based software solution embedded in the Microsoft Dynamics 365 platform",
+        "productDocsUrl": "/agent",
+        "productName": "DXCAgents",
+        "disableDocs": false,
+        "notificationsEnabled": true,
+        "image": "/assets/images/products/logoAgents.png"
+    },
+    {
         "title": "Care Services",
         "description": "DXC Care Services is a modern, cloud-based software solution embedded in the Microsoft Dynamics 365 platform to support the Care Services eco-system in Australia and New Zealand.",
         "productDocsUrl": "/careservices",

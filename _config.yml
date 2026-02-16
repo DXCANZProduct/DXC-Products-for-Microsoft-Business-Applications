@@ -84,6 +84,9 @@ collections:
   smartsend:
     output: true
     # sort_by: release-version
+  agent:
+    output: true
+    # sort_by: release-version
 
 # Build settings
 theme: minima

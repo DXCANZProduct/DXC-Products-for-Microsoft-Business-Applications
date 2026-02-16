@@ -1,0 +1,20 @@
+[
+    {
+        "title": "DXC Agent for Bank reconciliation in D365 FSCM",
+        "description": "DXC Agents is a modern, cloud-based software solution embedded in the Microsoft Dynamics 365 platform",
+        "productDocsUrl": "/agent/bank-recon",
+        "productName": "DXCAgents",
+        "disableDocs": false,
+        "notificationsEnabled": true,
+        "image": "/assets/images/products/logoAgents.png"
+    },
+    {
+        "title": "DXC Agent for finance & supply chain management",
+        "description": "DXC Care Services is a modern, cloud-based software solution embedded in the Microsoft Dynamics 365 platform to support the Care Services eco-system in Australia and New Zealand.",
+        "productDocsUrl": "/agent/dxcagentframework",
+        "productName": "DXCAgents",
+        "disableDocs": false,
+        "notificationsEnabled": true,
+        "image": "/assets/images/products/logoCareServices.png"
+    }
+]  

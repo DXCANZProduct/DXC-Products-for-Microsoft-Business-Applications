@@ -1,9 +1,9 @@
 toc:
   - page: Introduction
-    url: /bank-recon
+    url: /agent/bank-recon
   - page: Setup
-    url: /bank-recon/Setup
+    url: /agent/bank-recon/Setup
   - page: Processing
-    url: /bank-recon/Processing 
+    url: /agent/bank-recon/Processing 
   - page: FAQ
-    url: /bank-recon/FAQ
+    url: /agent/bank-recon/FAQ

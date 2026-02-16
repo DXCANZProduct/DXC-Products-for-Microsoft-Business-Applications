@@ -1,0 +1,102 @@
+<div class="content">
+  <div class="row">
+    <details>
+      <summary>
+        In this article
+      </summary>
+      <ul>
+        <li class="list-style-type">
+          {{ content | toc_only }}
+        </li>
+      </ul>
+    </details>
+    <details open>
+      <summary>Product Information</summary>
+        <ul>
+          {% if site.data.dxcagentframeworkMenus.toc[0] %}
+            {% for item in site.data.dxcagentframeworkMenus.toc %}
+              {% if item.page %}
+                <li class="list-style-type">
+                  <a href="{{ item.url }}">{{ item.page }}</a>
+                </li>
+              {% endif %}
+              {% if item.Level_1_items[0] %}
+                <li class="list-style-type">
+                  <details id="{{ item.id }}">
+                    <summary>{{ item.title }}</summary>
+                    <ul>
+                        {% for entry in item.Level_1_items %}
+                        <li class="list-style-type"><a href="{{ entry.url }}">{{ entry.page }}</a>
+                          {% if entry.Level_2_items[0] %}
+                          <details id="{{ entry.id }}">
+                            <summary>{{ entry.title }}</summary>
+                            <ul>
+                            {% for subentry in entry.Level_2_items %}
+                                <li class="list-style-type"><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
+                                {% if subentry.Level_3_items[0] %}
+                                <details id="{{ subentry.id }}">
+                                    <summary>{{ subentry.title }}</summary>
+                                    <ul>
+                                       {% for subsubentry in subentry.Level_3_items %}
+                                        <li class="list-style-type"><a href="{{ subsubentry.url }}">{{ subsubentry.page }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                    </details>
+                                {% endif %}
+                            {% endfor %}
+                            </ul>
+                          </details>
+                          {% endif %}
+                        </li>
+                    {% endfor %}
+                    </ul>
+                  </details>
+                </li>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </ul>
+      </details>
+      <details open>
+      <summary>Release Notes</summary>
+      <ul>
+        <li class="list-style-type">
+          {% assign agnt = site.agent | sort: 'release-version' | reverse%}
+          {% for cur in agnt %}
+              {%if cur.url contains "dxcagentframework/releasenotes" and cur.state == "current"%}
+              <li class="list-style-type">
+                <a href="{{ cur.url }}">{{cur.title}}</a>
+              </li>
+              {% endif%}
+          {% endfor %}
+          <details class="sticky-subsection" {% if page.url contains "agent/dxcagentframework/releasenotes" and page.state == "previous" %}open{% endif %}>
+            <summary>Previous Versions</summary>
+            <ul>
+              {% assign agnt = site.agent | sort: 'release-version' | reverse%}
+              {% for cur in agnt %}
+                  {%if cur.url contains "dxcagentframework/releasenotes" and cur.state == "previous"%}
+                  <li class="list-style-type">
+                    <a href="{{ cur.url }}">{{cur.title}}</a>
+                  </li>
+                  {% endif%}
+              {% endfor %}
+            </ul>
+          </details>
+          <details class="sticky-subsection" {% if page.url contains "agent/dxcagentframework/releasenotes" and page.state == "archive" %}open{% endif %}>
+            <summary>Archive</summary>
+            <ul>
+              {% assign agnt = site.agent | sort: 'release-version' | reverse%}
+              {% for cur in agnt %}
+                  {%if cur.url contains "dxcagentframework/releasenotes" and cur.state == "archive"%}
+                  <li class="list-style-type">
+                    <a href="{{ cur.url }}">{{cur.title}}</a>
+                  </li>
+                  {% endif%}
+              {% endfor %}
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </details>
+  </div>
+</div>

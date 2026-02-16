@@ -1,0 +1,35 @@
+---
+layout: home
+header: DXC Agents for D365 FSCM
+title: DXC ANZ Products for Microsoft Business Applications
+description: DXC Agents for D365 FSCM utilises **Microsoft Foundry** which is a code‑first and studio experience for building scalable AI applications and agents with complete control of models, prompts, tools, and data.
+---
+
+{% if site.data.agents %}
+
+<div class="container-fluid pt-6 pb-6">
+  <div class="row">
+    {% for agent in site.data.agents %}
+    {%if agent.disableDocs == false%}
+    <div class="col-12 col-md-6 mb-3">
+      <div class="service service-summary">
+        <div class="service-content d-flex align-items-start gap-3">
+          {% if agent.image %}
+              {% if agent.image %}
+              <img src="{{ agent.image | relative_url }}" alt="{{ agent.title }} logo" style="max-width: 32px; height: 32px; flex-shrink: 0; margin-top: 4px;" aria-hidden="true" class="align-self-center">
+            {% endif %}
+          {% endif %}
+          <div class="service-text">
+            <h2 class="service-title mb-2">
+              <a href="{{ agent.productDocsUrl | relative_url }}">{{ agent.title }}</a>
+            </h2>
+            <p class="mb-0">{{ agent.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {%endif%}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
