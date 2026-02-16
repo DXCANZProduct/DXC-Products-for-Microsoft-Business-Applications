@@ -23,5 +23,5 @@ This guide is intended for finance professionals, accountants, and system admini
 
 
 ### Topics
-- [Setup](bank-recon/Setup.md)
-- [Processing](bank-recon/Processing.md)
+- [Setup]({{ '/bank-recon/Setup' | relative_url }})
+- [Processing]({{ '/bank-recon/Processing' | relative_url }})
