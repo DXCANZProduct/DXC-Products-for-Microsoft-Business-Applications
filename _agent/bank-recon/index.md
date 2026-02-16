@@ -23,5 +23,5 @@ This guide is intended for finance professionals, accountants, and system admini
 
 
 ### Topics
-- [Setup]({{ '/bank-recon/Setup' | relative_url }})
-- [Processing]({{ '/bank-recon/Processing' | relative_url }})
+- [Setup]({{ '/agent/bank-recon/Setup' | relative_url }})
+- [Processing]({{ '/agent/bank-recon/Processing' | relative_url }})
