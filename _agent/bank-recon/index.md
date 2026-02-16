@@ -23,5 +23,5 @@ This guide is intended for finance professionals, accountants, and system admini
 
 
 ### Topics
-- [Setup](Setup.md)
-- [Processing](Processing.md)
+- [Setup](bank-recon/Setup.md)
+- [Processing](bank-recon/Processing.md)
