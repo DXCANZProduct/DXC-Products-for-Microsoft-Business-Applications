@@ -8,7 +8,7 @@ toc: true
 
 ## Prerequisites
 
-Start by setting up the prerequisite **Microsoft Foundry** and **DXC Agent for finance & supply chain management** - [user guide](../dxcagentframework/Setup.md)
+Start by setting up the prerequisite **Microsoft Foundry** and **DXC Agent for finance & supply chain management** - [user guide]({{ '/agent/dxcagentframework/Setup' | relative_url }})
 
 ## DXC Agent for Bank reconciliation
 
