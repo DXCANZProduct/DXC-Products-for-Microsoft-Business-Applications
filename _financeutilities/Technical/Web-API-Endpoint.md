@@ -12,12 +12,10 @@ The Web API endpoint connection allows files to processed against an external we
 
 The connection setup for Web API endpoint need to be specified here:
 
-- **Cash and bank management > Setup > Advanced bank reconciliation setup > Financial utilities connections**  
-  See [guide](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.html) for more details.
-- **Accounts receivable > Setup > Finance utilities connections**  
-  See [guide](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/CASH-AND-BANK-MANAGEMENT/Finance-utilities-connections.html) for more details.
-- **Organisation administration > Electronic reporting > Electronic reporting export connections**  
-  See [guide](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.html) for more details.
+- **Financial utilities connections**  
+  See [guide](../CASH-AND-BANK-MANAGEMENT/Setup/Finance-utilities-connections) for more details.
+- **Electronic reporting export connections**  
+  See [guide](../ELECTRONIC-REPORTING-EXPORT/Setup/Electronic-reporting-export-connections) for more details.
 
 # Web API Types
 
@@ -29,9 +27,9 @@ The list consists of the details of the Web API types implemented for processing
 
 Currently, the solution contains implementation for importing and exporting file. This has been configured to work for the following
 
-- Bank statement import. See [guide](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/CASH-AND-BANK-MANAGEMENT/Bank-statement-import.html)
-- Customer remittance import. See [guide](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ACCOUNTS-RECEIVABLE/Customer-remittance.html)
-- Accounts receivable save electronic report file to secure location. See [guide](https://dxcanzproduct.github.io/DXC-Products-for-Microsoft-Business-Applications/FINU/Setup/ACCOUNTS-PAYABLE/Save-electronic-reporting-file-to-secure-location.html).
+- Bank statement import. See [guide](../CASH-AND-BANK-MANAGEMENT/Setup/Bank-statement-import)
+- Customer remittance import. See [guide](../ACCOUNTS-RECEIVABLE/Setup/Customer-remittance)
+- Save electronic report file to secure location. See [guide](../ELECTRONIC-REPORTING-EXPORT/Processing/Save-electronic-reporting-file-to-secure-location).
 
 # File import/export processing
 
