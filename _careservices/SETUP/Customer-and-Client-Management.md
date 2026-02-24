@@ -22,7 +22,7 @@ Navigate to: **Care services > All customers**
 3.  Name - Populate the organisation name.
 4.  **Customer group** - Select the relevant customer group.
 5.  **Terms of payment** – Enter the organisation’s payment terms
-6.  **ABN** – Enter the ABN,  if an ABN record has been created in D365 for this organisation, otherwise it can be entered later  
+6.  **ABN** – Enter the ABN;  if an ABN record has been created in D365 for this organisation.  Alternativley it can be entered later.  
     **Address Tab**
 7.  **Add or Edit addresses**—Select Add or Edit as required, and a pop-up window will be displayed. Multiple addresses can be stored for each organisation's customer for different purposes.
 8.  **Name or Description** – This does not print when an address is used in reports, invoices, statements etc. Enter a name to be associated with this address or a description of the type of address it is, such as Office address, Postal address etc. The purpose can also be used for this type of function
@@ -34,11 +34,11 @@ Navigate to: **Care services > All customers**
     **Description** - Enter a description of the contact such as Care Co-ordinator, Accounts payable or anything useful/recognisable.   
     **Type** - Select the Type, phone or email etc.  
     **Contact number/address** - Enter the phone number or email address etc.  
-    **Primary** – Tick if this is the primary record for that Contact Type. There can only be one Primary for each Type of contact, ie. You can add multiple phone numbers however, only 1 can be primary, but a customer can have both a primary email and a primary phone etc.
-13. **Add Purpose to contact information** – Select the record the purpose is to be added to, then select **Advanced** and a popup window will be displayed. Select the required Purpose(s) and select **OK**  
+    **Primary** – Tick if this is the primary record for that Contact Type. There can only be one Primary for each Type of contact, ie. You can add multiple phone numbers; however, only 1 can be primary, but a customer can have both a primary email and a primary phone etc.
+13. **Add Purpose to contact information** – Select the record the purpose is to be added to, then select **Advanced** and a pop-up window will be displayed. Select the required Purpose(s) and select **OK**  
     **Payment defaults tab**
 14. **Terms of payment** – Select the terms of payment for this customer record
-15. **Method of payment** – Select the method of payment. If the method of payment is a direct debit method, ensure that the bank account is also set up.
+15. **Method of payment** – Select the method of payment. If the method of payment is a direct debit, ensure the bank account is also set up. Note if *Method of payment* is specified on the Customer group (Accounts receivable > Setup > Customer groups), this will default at the time of creation 
 16. Click **Save** to add the new customer.
 
 ## Add a new client
