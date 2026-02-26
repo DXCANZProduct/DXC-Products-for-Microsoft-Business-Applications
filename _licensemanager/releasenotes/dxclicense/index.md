@@ -18,6 +18,7 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 :--       	  |:--           			  |:--
 Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No	          | 10.0.43.202506241
 Product version: 10.0.46 <br> App build: 10.0.2428.15	  | No	          | 10.0.43.202506252 
+Product version: 10.0.47 <br> App build: 10.0.2527.17	  | No	          | 10.0.45.202601303
 
 # Current version
 
@@ -27,5 +28,6 @@ Base                               | Version | Release
 :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 Microsoft Dynamics 365 application	| 10.0.46 	  | [What’s new or changed in Dynamics 365 application version 10.0.46](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-46)
+Microsoft Dynamics 365 application	| 10.0.47 	  | [What’s new or changed in Dynamics 365 application version 10.0.47](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-47)
 
 {% include_relative {{page.release-version}}.md %}
