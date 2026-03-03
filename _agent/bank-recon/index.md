@@ -15,7 +15,7 @@ This user guide provides an overview of the Bank Reconciliation Agent’s purpos
 The **DXC Agent for Bank Reconciliation** assists finance teams by:
 - Automatically matching bank statement lines with bank transactions
 - Easily identify transactions that were matched with the agent
-- Reduce manual reconciliations, allowing users to focus on unmatched or unusual items
+- Reduce manual reconciliations
 - Users are not required to create/maintain Reconciliation matching rules
 
 
@@ -25,3 +25,9 @@ This guide is intended for finance professionals, accountants, and system admini
 ### Topics
 - [Setup]({{ '/agent/bank-recon/Setup' | relative_url }})
 - [Processing]({{ '/agent/bank-recon/Processing' | relative_url }})
+
+### Demonstration
+
+Watch DXC Technology’s short demonstration on **DXC Agent for Bank reconciliation in D365FSCM** solution here:
+- [Watch recording](https://www.youtube.com/watch?v=wXCjh0GDJf8). Duration: 2 minutes
+
