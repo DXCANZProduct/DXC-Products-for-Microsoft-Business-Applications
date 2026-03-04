@@ -61,7 +61,7 @@ Field  	          | Description	                                                
 **Name**              | Name of the Financial utilities connection                  | SFTP
 **File name**         | Name if the bank statement file                             | xxx.txt
 **Statement format**  | Name for the bank statement format used on the periodic task  | BAI2
-Status            | File state                                                  | • **Completed** - Succesfully created bank statement/s <br> • **Error** - Bank statement wasn't created, for example 'No matching bank account found' <br> • **Cancelled** - Option to cancel, which changes the status from Error to Cancelled.
+**Status**            | File state                                                  | • **Completed** - Succesfully created bank statement/s <br> • **Completed with warning** - Imports where the import batch job didn't error but there was a warning. Examples: <br> - Existing confirmed bank statement for same date. <br> - No bank statements were created as the file contained no transactions.  <br> • **Error** - Bank statement wasn't created, for example 'No matching bank account found' <br> • **Cancelled** - Option to cancel, which changes the status from Error to Cancelled.
 **Created date and time**  | Date and time the file was imported
 
 #### Buttons
