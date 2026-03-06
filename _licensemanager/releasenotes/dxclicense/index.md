@@ -1,8 +1,8 @@
 ---
 layout: releasenotes-content
 header: License Manager
-title: 10.0.45.202601302
-release-version: 10.0.45.202601302
+title: 10.0.45.20260306
+release-version: 10.0.45.20260306
 state: current
 toc: true
 ---
@@ -22,7 +22,7 @@ Product version: 10.0.47 <br> App build: 10.0.2527.17	  | No	          | 10.0.45
 
 # Current version
 
-DXC License Manager {{page.release-version}} runs on the following Microsoft releases
+DXC License  {{page.release-version}} runs on the following Microsoft releases
 
 Base                               | Version | Release                                                                                                                                                         
 :--------------------------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- 
