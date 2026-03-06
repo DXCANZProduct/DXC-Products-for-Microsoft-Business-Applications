@@ -1,0 +1,7 @@
+<b>Build 10.0.45.202603061 </b>
+
+<ins>New features</ins>
+
+| Number | Functionality                                                     | Description                                                                                  |
+| :----- | :---------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
+| 25100  | Removed license **InsightsForD365FO** and InsightsForD365FODualWrite | Product **DXC Insights for D365FO** deprecated |
