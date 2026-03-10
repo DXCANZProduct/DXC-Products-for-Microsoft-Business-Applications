@@ -92,6 +92,13 @@ Finance utilities functionality extends **Customer invoice field** in **Step 2 (
 - **Reference number** - in Step 2 when identitying customer account through invoice matching, the Finance utilities **Customer reference** can be used to find the D365 customer account.
 - **Field format** - option to use part of a bank statement field to find the D365 customer acount. For example using only 'FTI00000453' from bank statement field value 'xx FTI00000453 yy'
 
+> **Important notes for both Customer actions**:
+> When using **Step 2**:
+> - An invoice needs to exist for the customer, as std uses CustInvoiceForBankReconciliationView to find the customer.
+> - If the customer had a method of payment in above view, this method of payment would be used in the customer payment journal. The default on the Reconciliation matching rule will only be used where the customer didn't have a method of payment assigned in the view for the record.
+> - Customer reference numbers must be kept unique accross all legal entities. Std code will look in current legal entity first, and then when it couldn't find it, Finance Utilities is able to look in the offset company.
+
+
 ##### Field format
 
 Select the applicable line in Step 2, and select **Field format**. The following options are provided:
@@ -112,11 +119,6 @@ Option	  	| Setup             | Example <br> Bank statement field's original dat
 **Delimited field position**    | Delimiter:  <br> Field position: 0   | US-001 extra description  | US-001
 **Custom format**               | `\*(.+)\*` <br> (\w+\s\*-\s\*\d+) <br> [1-9][0-9]* <br> \d+  | \**US-001\**  <br> xx FTI-0035345 yy <br>  CR025126 <br> xx 001234 yy | US-001 <br> FTI-0035345 <br> 25126 <br> 001234
 
-> **Important notes for both Customer actions**:
-> When using **Step 2**:
-> - An invoice needs to exist for the customer, as std uses CustInvoiceForBankReconciliationView to find the customer.
-> - If the customer had a method of payment in above view, this method of payment would be used in the customer payment journal. The default on the Reconciliation matching rule will only be used where the customer didn't have a method of payment assigned in the view for the record.
-> - Customer reference numbers must be kept unique accross all legal entities. Std code will look in current legal entity first, and then when it couldn't find it, Finance Utilities is able to look in the offset company.
 
 #### Step 3
 
