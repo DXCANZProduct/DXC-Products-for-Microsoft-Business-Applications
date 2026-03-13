@@ -117,7 +117,7 @@ Option	  	| Setup             | Example <br> Bank statement field's original dat
 **No format**  |                 | xxUS-001xx                      | xxUS-001xx
 **Fixed field position**        | Start position: 2 <br> Length: 6  | xxUS-001xx        | US-001
 **Delimited field position**    | Delimiter:  <br> Field position: 0   | US-001 extra description  | US-001
-**Custom format**               | `\*(.+)\*` <br> (\w+\s\*-\s\*\d+) <br> [1-9][0-9]* <br> \d+ <br> C\d+ | \**US-001\**  <br> xx FTI-0035345 yy <br>  CR025126 <br> xx 001234 yy <br> xx 123 C0467847 363 yy | US-001 <br> FTI-0035345 <br> 25126 <br> 001234 <br> C0467847
+**Custom format** <br> **(regex pattern)**               | `\*(.+)\*` <br> (\w+\s\*-\s\*\d+) <br> [1-9][0-9]* <br> \d+ <br> C\d+ | \**US-001\**  <br> xx FTI-0035345 yy <br>  CR025126 <br> xx 001234 yy <br> xx 123 C0467847 363 yy | US-001 <br> FTI-0035345 <br> 25126 <br> 001234 <br> C0467847
 
 
 #### Step 3
