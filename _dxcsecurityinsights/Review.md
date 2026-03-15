@@ -127,3 +127,15 @@ Following Security Insights fields have been added to this standard form:
 
 ![User licenses](./releasenotes/IMAGES/ReleaseNotes_20251121_1.png "User licenses") <br> 
 ![User role licenses](./releasenotes/IMAGES/ReleaseNotes_20251121_3.png "User role licenses")
+
+# Data entities
+
+The following export / read-only data entities are available to review the data outside of FSCM:
+
+1. Security Insights user utilization (%)
+2. Security Insights role utilization (%)
+3. Security Insights duty utilization (%)
+4. Security Insights privilege utilization (%)
+5. Security Insights privilege entitlement objects view
+6. Security Insights user privilege entitlement objects view
+
