@@ -99,7 +99,8 @@ The Outgoing documents FastTab defines the outgoing EDI document types that have
 **Cleanup profile**               |	Ability to override the default [Cleanup profile](Cleanup-profile) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](EDI-shared-parameters) will be used.
 **Reset status profile**          |	Ability to override the default [Reset status](Reset-status) on document level. If blank, [EDI shared parameters](EDI-shared-parameters) will be used.
 **Acknowledgement**               |	An Inbound Functional Acknowledgement is required from the trading partner for the outgoing document. Note: Also required to setup the Functional acknowledgement inbound document under Incoming documents.
-**Enabled**                       |	Enable the document for the Trading partner – Yes/No
+**Enabled**                       |	Enable the document for the Trading partner – No/Yes
+**Disable history logging**       | Ability to disable history logging on source document - No/Yes
 
 ### Incoming documents
 
@@ -121,7 +122,8 @@ The Incoming documents FastTab defines the incoming EDI document types that have
 **Cleanup profile**               |	Ability to override the default [Cleanup profile](Cleanup-profile) on document level. If blank, the trading partner’s Cleanup profile will be used. If Trading partner's Cleanup profile is blank, the default Cleanup profile on [EDI shared parameters](EDI-shared-parameters) will be used.
 **Reset status profile**          |	Ability to override the default [Reset status](Reset-status) on document level. If blank, [EDI shared parameters](EDI-shared-parameters) will be used.
 **Acknowledgement**               |	Trading partner requires an Outbound Functional Acknowledgement for the incoming document. Note: Also required to setup the Functional acknowledgement outbound document under Outgoing documents.
-**Enabled**                       |	Enable the document for the Trading partner – Yes/No
+**Enabled**                       |	Enable the document for the Trading partner – No/Yes
+**Disable history logging**       | Ability to disable history logging on source document - No/Yes
 
 #### Examples for Search mask:
 - Example 1: <br>
