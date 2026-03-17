@@ -1,0 +1,31 @@
+---
+layout: releasenotes-content
+header: Electronic Data Interchange (EDI)
+title: 10.0.45.202603TBD
+release-version: 10.0.45.202603TBD
+state: current
+---
+
+### Release 10.0.45.202603TBD
+
+#### Build 10.0.45.202603TBD
+Release date: TBD March/April 2026
+
+
+<ins>New features</ins>
+
+
+**Core module**	
+
+Number	| Name		     | Description
+:--	    |:--		       |:--
+22954	  | History log  | Ability to disable History logging on Trading partner incoming and outgoing documents, for example viewing EDI staging record Note: This will only enable history logging on the source document where the functionality currently exist.
+
+
+<ins>Bug fixes</ins>
+
+**Customer module**	
+
+Number	 | Name		 | Description
+:--	     |:--		 |:--
+24546    | Project invoice  | From 10.0.45 Project invoice journal V2 form introduced. Added our EDI buttons 'Send to EDI' and 'Reset flag' to V2 form for the document type **Project sales invoice**
