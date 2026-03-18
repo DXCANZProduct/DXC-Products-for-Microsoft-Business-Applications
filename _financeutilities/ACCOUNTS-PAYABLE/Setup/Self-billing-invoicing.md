@@ -67,7 +67,7 @@ Users can access the form by navigating to **Accounts payable > Vendors > All ve
 
 The following fields on the **Invoice and delivery** FastTab applies to the functionality:
 - Assign the applicable **Self billing invoice group** setup in previous section to all applicable Vendor(s) in field **Self billing invoicing**
-- Where applicable assign a **Number sequence group** to all applicable Vendor(s)
+- Where applicable assign a **Number sequence group** to all applicable Vendor(s). Please note if the same Number sequence group is assigned on both the Self billing invoicing group and the Vendor, the std posting step also uses a number in the sequence. Thus if you want to avoid "gaps", don't assign to both.
 
 ## Periodic task
 
