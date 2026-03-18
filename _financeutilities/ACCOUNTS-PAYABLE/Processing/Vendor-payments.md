@@ -37,7 +37,7 @@ The Payment advice report can be used in conjunction with sending via Email to t
 -	Accounts payable payment journal, from 'Accounts Payable > Payments > Payment journal' – when set as Sent the journal line is available for printing
 -	Payment history on the vendor (excludes intercompany / centralised vendor payments)
 
-Available:
+Reports available:
 - SSRS report - ECL_BankPaymAdviceVendV2
 - Electronic reporting (available on LCS solution) - Vendor payment adviceV2_DXC(Excel)
 
