@@ -51,7 +51,7 @@ If the connection is to be used in this environment, update the details (for exa
 The module specific FAQ can be found below. <br>
 FAQ includes example errors and methods to fix.
 
-- [Core](CORE/INTRODUCTION/FAQ)
+- [Core](CORE/Introduction/FAQ)
 - [Customer](CUSTOMER/INTRODUCTION/FAQ)
 - [Vendor](VENDOR/INTRODUCTION/FAQ)
 - [3PL](3PL/INTRODUCTION/FAQ)
