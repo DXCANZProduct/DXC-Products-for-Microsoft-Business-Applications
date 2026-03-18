@@ -45,29 +45,31 @@ Navigate to:  **Care Services > Setup > Care Services Workflows**
 
 **Workflow type**         | **Description**         
 :-----            |:------------------------  
-Aged care billing journal                  | Use this type to create approval workflows for billing journals  |
-Aged care billing journal lines          | Use this type to create approval workflows for billing journal lines |
+Care Service billing journal                  | Use this type to create approval workflows for billing journals  |
+Care Service billing journal lines          | Use this type to create approval workflows for billing journal lines |
+Care Service billing schedules                  | Use this type to create approval workflows for billing schedules  |
+
 
 ## Workflow Elements
 
 **Workflow Area**         | **Workflow Element**         | **details** 
 :----------------------            |:------------------------  |:------------------------  
 Billing Journal |Approvals > Approve Billing Journal|Use this element to approve the Billing Journal.
-Billing Journal |Approvals > Approve Billing Journal, editable|Use this element to approve the Billing Journal. The assigned approver will be able to edit the Billing Journal lines.
+Billing Journal |Approvals > Approve Billing Journal, editable|Use this element to approve the Billing Journal. The assigned approver can edit the Billing Journal lines.
 Billing Journal |Automated tasks > Auto post Billing Journal|Use this element to post the Billing Journal automatically.
-Billing Journal |Flow controls > Conditional decision|A conditional decision is a point at which a workflow divides into two branches. The system will decide which branch is used under specified conditions. 
+Billing Journal |Flow controls > Conditional decision|A conditional decision is a point at which a workflow divides into two branches. The system will determine which branch to use under specified conditions. 
 Billing Journal |Flow controls > Manual decision|A manual decision is a point at which a workflow divides into two branches. A user must decide which branch is used. 
 Billing Journal |Flow controls > Parallel activity|A parallel activity is a workflow element that includes two or more workflow branches that run at the same time.
 Billing Journal |Flow controls > Subworkflow|A subworkflow is a workflow that runs within the context of another workflow. 
 Billing Journal |Line item workflows > Billing Journal line|Use this type to create billing line approvals for the Billing Journals.
 Billing Journal |Tasks > Import Billing Journal lines, editable|Use this element to import Billing Journal lines manually. <br>*Note:* This approval task allows editing and can only be done by the person who is designated as the owner of that task.
 Billing Journal Line |Approvals > Approve Billing Journal line|Use this element to approve the Billing Journal line. 
-Billing Journal Line |Approvals > Approve Billing Journal line, editable|Use this element to approve the Billing Journal line. The assigned approver will be able to edit the Billing journal lines.
-Billing Journal Line |Flow controls > Conditional decision|A conditional decision is a point at which a workflow divides into two branches. The system will decide which branch is used under specified conditions. 
+Billing Journal Line |Approvals > Approve Billing Journal line, editable|Use this element to approve the Billing Journal line. The assigned approver can edit the Billing journal lines.
+Billing Journal Line |Flow controls > Conditional decision|A conditional decision is a point at which a workflow divides into two branches. The system will determine which branch to use under specified conditions. 
 Billing Journal Line |Flow controls > Manual decision|A manual decision is a point at which a workflow divides into two branches. A user must decide which branch is used. 
 Billing Journal Line |Flow controls > Parallel activity|A parallel activity is a workflow element that includes two or more workflow branches that run at the same time.
 Billing Journal Line |Flow controls > Subworkflow|A subworkflow is a workflow that runs within the context of another workflow. 
-Billing Schedule|Approvals > Approve billing schedule line, editable|Use this element to approve the billing schedule line. The assigned approver will be able to edit the Billing schedule lines.
+Billing Schedule|Approvals > Approve billing schedule line, editable|Use this element to approve the billing schedule line. The assigned approver can edit the Billing schedule lines.
 Billing Schedule|Flow controls > Conditional decision|A conditional decision is a point at which a workflow divides into two branches. The system will decide which branch is used on specified conditions. 
 Billing Schedule|Flow controls > Manual decision|A manual decision is a point at which a workflow divides into two branches. A user must decide which branch is used. 
 Billing Schedule|Flow controls > Parallel activity|A parallel activity is a workflow element that includes two or more workflow branches that run at the same time.
