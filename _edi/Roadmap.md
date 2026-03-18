@@ -20,7 +20,7 @@ This page describes the features planned for future releases and planned release
 
 
 #### Customer module
-- Approved customer list (10.0.44 preview feature)
+- Approved customer list
 
 #### 3PL module
 - Picking list registration Setting profile - Option to cancel deliver remainder
