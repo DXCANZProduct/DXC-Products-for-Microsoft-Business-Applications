@@ -146,7 +146,7 @@ Navigate to: **Care services > All customers > Customer > Setup > Client referen
 
 *Client reference number*
 
-## Admit the client to a service/ New Service Entry
+## New Service Entry (Admit the client to a service)
 A client’s service entry tells us about the client’s journey within the organisation and when they were receiving care. The service entry will show which areas of the organisation were providing that care and whether they are continuing to receive that care. A client may have only 1 service entry, or they may have several as they have utilised different service offerings of the organisation. Eg. A client may have a service entry for a retirement village, then they add a home care package to that, and they might also require respite care after an incident.  They may have all three of these service entries active at the same time.
 
   Navigate to: **Care services > All customers > Care services**
