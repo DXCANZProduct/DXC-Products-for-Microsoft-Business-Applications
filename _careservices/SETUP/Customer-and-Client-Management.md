@@ -26,7 +26,7 @@ Navigate to: **Care services > All customers**
     **Address Tab**
 7.  **Add or Edit addresses**—Select Add or Edit as required, and a pop-up window will be displayed. Multiple addresses can be stored for each organisation's customer for different purposes.
 8.  **Name or Description** – This does not print when an address is used in reports, invoices, statements etc. Enter a name to be associated with this address or a description of the type of address it is, such as Office address, Postal address etc. The purpose can also be used for this type of function
-9.  **Purpose** – Select the purpose(s) for the address. The purpose is a field that can be customised by any organisation so that tailored purposes can be created to suit the organisation’s needs. Ensure you select the purpose based on what the address should be used for. Eg. Invoice is the purpose that is usually used for the address that should appear on the invoice, Statement might also be used if this has a separate address
+9.  **Purpose** – Select the purpose(s) for the address. The purpose is a field that can be customised by any organisation so that tailored purposes can be created to suit the organisation’s needs. Ensure you select the purpose based on what the address should be used for. Eg. Invoice is the purpose that is usually used for the address that should appear on the invoice, Statement might also be used if it has a separate address
 10. **Address fields** – Enter the address into the appropriate fields. City and postcode verification is available.
 11. **Primary** – Select if this is to be the main address for the organisation customer, can only be the 1 Primary address  
     **Contact information tab**
@@ -151,22 +151,23 @@ A client’s service entry tells us about the client’s journey within the orga
 
   Navigate to: **Care services > All customers > Care services**
 1.  Click on **New  Service entry**
-2.  Care type – Select the type of care or service being provided, eg. Permanent residential care, Home care etc.
+2.  Care type – Select the type of care or service being provided, eg, Permanent residential care, Home care etc.
 3.  Service - Select the service that will be the main provider of that care type
-4.  Place – The place is the room, apartment, unit etc. where the client will be residing. Place is usually not required for community-based care, though this is optional
-5.  Funded – This toggle will default to the setting on the service, however, it can be edited as required. Eg. A service may usually provide funded care so the default is funded, however, there may also be some private, unfunded clients at this service, so the flag should be set to No for these clients.
-6.  Supported/accommodation payment status - Select the relevant Supported/accommodation payment status for this client. This can be edited at any time so if you’re not sure of the status you can select the most likely one at this stage and edit it later if necessary.
+4.  Place – The place is the room, apartment, unit, etc., where the client will be residing. Place is usually not required for community-based care, though this is optional
+5.  Funded – This toggle will default to the setting on the service; however, it can be edited as required. Eg, A service may usually provide funded care, so the default is funded; however, there may also be some private, unfunded clients at this service, so the flag should be set to No for these clients.
+6.  Supported/accommodation payment status - Select the relevant Supported/accommodation payment status for this client. This can be edited at any time so if you’re not sure of the status, you can select the most likely one at this stage and edit it later if necessary.
 7.  Entry date – Enter the actual date of arrival or the commencement of the service agreement.
-8.  Billing start date – The billing start date will default to the entry date, however, this can be edited if a different start date is agreed to. Eg if a room has been held for a client they may be billed for a few days before their entry date
+8.  Billing start date – The billing start date will default to the entry date; however, this can be edited if a different start date is agreed to. Eg if a room has been held for a client, they may be billed for a few days before their entry date
 9.  ‘Care before 01/07/2014 - Defaults to No, however, select ‘Care before 01/07/2014?’ if the client’s original admission to Care services is before 1st July 2014
-10. Subject to new means testing – Defaults to Yes, however, this should be set to no for clients who were first admitted to Care services before 01/07/2014 and have not opted into the post 1/7/2014 means tested fee system
-11. Initial & Departure capacity – This is for STRC clients, enter the initial capacity score at the time of entry
+10. Subject to new means testing – Defaults to Yes; however, this should be set to no for clients who were first admitted to Care services before 01/07/2014 and have not opted into the post 1/7/2014 means-tested fee system
+11. Initial & Departure capacity – This is for STRC clients. Enter the initial capacity score at the time of entry
 12. Acer required – set to yes if a Care Services entry record is required to be generated for uploading to the Care Services portal
 13. Departure event required - set to yes if a Care Services departure event record is required to be generated for uploading to the Care Services portal when the client departs
 14. Click on **Save** to admit the client. 
-    Place address transfer – if the prospect options in D365 are used for waitlist purposes prior to a client entering the service and the service record has place address transfer enabled this feature will automatically update the client address on their customer record to the address of the place they are now entering.
-15. The room (place) address will automatically be generated as the primary address for the resident with the purpose = Home. This purpose is set up in the Care services parameters so will default to whatever the organisation has selected there. This default can be edited.
-16. The previous home address from when they were on the waitlist will be retained, however, the purpose type will be changed to ‘Other’. This purpose is set up in the Care services parameters so will default to whatever the organisation has selected there. This default can be edited.
+    Place address transfer – if the prospect options in D365 are used for waitlist purposes prior to a client entering the service, and the service record has place address transfer enabled, this feature will automatically update the client address on their customer record to the address of the place they are now entering.
+15. The room (place) address will automatically be generated as the primary address for the resident with the purpose = Home. This purpose is set up in the Care services parameters, so it will default to whatever the organisation has selected there. This default can be edited.
+    *Note: if admitting a client to a place with a Bill to date is later than the start date, the Bill to date is adjusted to the Billing start date on the newly created service entry record minus 1 day*
+17. The previous home address from when they were on the waitlist will be retained; however, the purpose type will be changed to ‘Other’. This purpose is set up in the Care services parameters, so it will default to whatever the organisation has selected there. This default can be edited.
 
 ![Client_addresses](../IMAGES/Client_addresses.png)
 
