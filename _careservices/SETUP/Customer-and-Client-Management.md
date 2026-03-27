@@ -175,43 +175,43 @@ A client’s service entry tells us about the client’s journey within the orga
 
 ### Admit partners in Independent Living
 
-Navigate to: **Care services  All customers**
+Navigate to: **Care services > All customers**
 
--   Independent living often includes multiple clients residing in the same place, eg apartment, unit, townhouse etc
+-   Independent living often includes multiple clients residing in the same place, e.g., apartment, unit, townhouse, etc
 -   The system allows for any number of clients in the same place, and they share a service entry providing the service has the “Allow Partnered” toggle set to Yes on the service record.
 -   The partnered tab on the service entry records the partner client(s).
 -   If the partner client leaves the service, the departure can also be recorded there.
--   If the Primary client leaves the partner client can be switched to the Primary and all the setup and history is retained.
+-   If the Primary client leaves, the partner client can be switched to the Primary, and all the setup and history is retained.
 1.  Create a new client account for the Partner as per previous instructions for client accounts (do not add a service entry)
 2.  Go to **Care services  Customers  All customers**
 3.  Select the Primary client from the client list
 4.  Click on **Care services  Related information  Service entries**
-5.  If the Primary client does not already have a service entry for the shared place add a service entry as per above instructions
+5.  If the Primary client does not already have a service entry for the shared place, add a service entry as per the above instructions
 6.  Open the Primary client service entry  
     **Identification tab**
 7.  **Partnered toggle** – Set to Yes to enable the partner ta
 8.  **Partnered tab –** Click on Add line
 9.  **Customer account** - Select the Partner client
 10. The remaining fields will default from the General tab
-11. **Entry date** – this will default from the General tab however, it can be edited if the partner did not arrive on the same date as the Primary client.
+11. **Entry date** – this will default from the General tab; however, it can be edited if the partner did not arrive on the same date as the Primary client.
 12. Click on **Save**
 13. Repeat from the Partnered tab onwards to add any further clients residing in the same place
 
 ### Client billing schedule
 
--   The billing schedule allows the user to set a list of fees and charges that occur on a regular basis.
+-   The billing schedule allows the user to set a list of fees and charges that occur regularly.
 -   Fees applicable for most clients are set up in a schedule template and attached to the relevant care types. Upon entry, the client’s billing schedule lines will automatically be generated
--   Client-specific fees and rates are added to the client's billing schedule, and any lines that are not applicable to a client can be removed
+-   Client-specific fees and rates are added to the client's billing schedule, and any lines that do not apply to a client can be removed
 -   Fees set up with a funding offset amount (such as Means Tested Fee Clawback) will automatically generate the funding reduction in the Funding schedule.
 
-Navigate to: **Care services  All customers  Invoice Setup  Billing schedule/Funding Schedule**
+Navigate to: **Care services > All customers > Invoice > Setup > Billing schedule/Funding Schedule**
 
 1.  **Review** the automatically generated lines
 2.  **Delete a line** – If any lines do not apply to this client, select the line to be deleted, then click Mark as created in error. When all unwanted lines have been marked as created in error, tick the view marked in error. The lines that were marked in error will be displayed. Select all lines and click Delete. Untick the View marked in error to return to the billing schedule
 3.  **Add a Billing schedule line** - Select **New** to add a new line. A new line is created.
 4.  **Service group** - Select relevant Service group. Service groups are set up by the organisation and are designed so that users will see only the billing codes that relate to a particular client. Eg. If an organisation offers a package of services at some of their locations only, a service group would be created that includes the package, and the users would select that service group here.
 5.  **Billing Code** – select the relevant billing code; only billing codes listed on that service group will be visible.
-6.  **Service code** – Select the service code where the services will be provided. e.g., At a co-located site, any fees related to a retirement village would have the retirement village service code; however, if the care facility provided Allied Health services on a weekly basis then the service code for that line would be the care facility service code.
+6.  **Service code** – Select the service code where the services will be provided. e.g., At a co-located site, any fees related to a retirement village would have the retirement village service code; however, if the care facility provided Allied Health services weekly, then the service code for that line would be the care facility service code.
 7.  **Start date** – Enter the first date that should be billed as the start date.
 8.  **End date** – If the fee is to be charged for a limited time, enter the last date to be charged. Eg, A special promotion for the first 2 weeks is to get a 50% discount, and the discount line would have an end date 2 weeks after the start date.  
     **Billing rates**
@@ -224,11 +224,11 @@ Navigate to: **Care services  All customers  Invoice Setup  Billing schedule/Fun
 14. **Client account** – Will default to the client’s account code. This will be blank for global rates so if the ‘Valid for’ is changed to All, the client code will be removed.
 15. **Start date** – Enter the Start date for this rate to apply
 16. **End date** – If the rate is to apply for a limited time, enter the last date that this rate will apply. If there is a new rate to be applied after that time, then enter a new line with the new rate with the start date 1 day after the end date on the ended line.
-17. **Rate model** – This defaults to Amount and is only changed to Percentage if this rate is to be based on the rate for another billing code. Eg. For a special promotion for the first 12 weeks, get a 50% discount on the billing code ‘Extra’. The rate model would be changed to Percentage, the base billing code would be Extra, Rate per cent would be -50%. The system will generate a credit for half of the ‘Extra’ billing code rate, even if the rate changes during the 12 weeks, the system will calculate the correct rate.
+17. **Rate model** – This defaults to Amount and is only changed to Percentage if this rate is to be based on the rate for another billing code. Eg. For a special promotion for the first 12 weeks, get a 50% discount on the billing code ‘Extra’. The rate model would be changed to Percentage, the base billing code would be Extra, the rate per cent would be -50%. The system will generate a credit for half of the ‘Extra’ billing code rate, even if the rate changes during the 12 weeks, the system will calculate the correct rate.
 18. **Rate** – When the rate model is ‘Amount’, enter the rate that applies to this client for this billing code.
 19. Click **Save** and close the billing rates view when done.
-20. **Review** the rates shown on the billing schedule lines, and adjust the billing rates as per above for any that are not as required. Once all of the rates are correct, Click **Save** and close the Billing Schedule form.
-21. If the client has any billing schedule lines that affect the funding such as means tested fees or Hardship, open the Funding Schedule to confirm that the clawback line has been automatically created and the rates are correct.
+20. **Review** the rates shown on the billing schedule lines, and adjust the billing rates as per above for any that are not as required. Once all of the rates are correct, click **Save** and close the Billing Schedule form.
+21. If the client has any billing schedule lines that affect the funding, such as means-tested fees or Hardship, open the Funding Schedule to confirm that the clawback line has been automatically created and the rates are correct.
 
 
 ![Billing_Schedule](../IMAGES/Billing_Schedule.png)
@@ -250,7 +250,7 @@ Navigate to: **Care services  All customers  Invoice Setup  Billing schedule/Fun
 -   The values are updated via the periodic client capping calculation job.
 -   The First entry date refers to the date the client first began receiving Commonwealth-funded Care services, including home care or care with another provider. This is the day that is used as the anniversary date for the annual capped amounts
 
-Navigate to: **Care services  All customers  Customer Set up  Capping limits setup**
+Navigate to: **Care services > All customers > Customer > Set up > Capping limits setup**
 
 1.  Click **Edit**
 2.  **Annual capping limits -** Select the annual capping limit type that relates to the type of care the client is currently receiving
@@ -272,7 +272,7 @@ Navigate to: **Care services  All customers  Customer Set up  Capping limits set
 -   Billing codes that have been set with a funding offset (such as Means Tested Care Fee or Hardship) will automatically generate the funding schedule clawback line or Hardship funding line when the fee is set up. The funding rate is associated with the billing rate, with a negative rate on the billing schedule. E.g.. This means test care fees will have a positive value on the billing schedule and a negative value on the funding schedule line, and Hardship will have a negative value on the billing schedule line and a positive value on the funding schedule line.
 -   Funding codes that have been set up as Accommodation payment associated (such as Accommodation supplement) will automatically have the rate reduced by the assessed amount from the Accommodation payment line.
 
-Navigate to: **Care services  All customers  Invoice Funding schedule**
+Navigate to: **Care services > All customers > Invoice > Funding schedule**
 
 1.  **Review** the automatically generated lines
 2.  **Delete a line** – If any lines do not apply to this client, select the line to be deleted, then click Mark as created in error. When all unwanted lines have been marked as created in error, tick the view marked in error. The lines that were marked in error will be displayed. Select all lines and click Delete. Untick the View marked in error to return to the billing schedule
@@ -302,9 +302,9 @@ The available accommodation payment methods of payment options are the following
 -   **DAP/DAC or Periodic** rental-style daily payments (**a** **daily accommodation payment or contribution**)
     -   If the government is helping with the costs, this is called a Daily Accommodation Contribution (**DAC**).
     -   If the client is paying the full amount themselves, it’s called a Daily Accommodation Payment (**DAP**).
--   or a **Combination** of both (for instance, the agreed amount is \$400,000 the client could choose to pay \$100,000 as a refundable lump sum, and the rest through non-refundable daily payments).
+-   or a **Combination** of both (for instance, the agreed amount is \$400,000, the client could choose to pay \$100,000 as a refundable lump sum, and the rest through non-refundable daily payments).
 
-Navigate to: **Care services  All customers  Invoice Accommodation payment**
+Navigate to: **Care services > All customers > Invoice > Accommodation payment**
 
 1.  Select **Add line** to add a new line.
 2.  The **Effective date** will automatically populate from the client entry start date.
@@ -327,7 +327,7 @@ Navigate to: **Care services  All customers  Invoice Accommodation payment**
 
 Accommodation payments where the supported/accommodation payment status is Ingoing contribution will require setup for DMF/CRF
 
-Navigate to: **Care services  All customers  Invoice Accommodation payment**
+Navigate to: **Care services > All customers > Invoice > Accommodation payment**
 
 1.  Select the DMF/CRF tab and populate the DMF/CRF capital gain or capital loss percentage share
 2.  Populate the Agreed amount and select the Billing account name
