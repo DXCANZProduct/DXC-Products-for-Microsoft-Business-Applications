@@ -5,14 +5,12 @@ toc: true
 ---
 
 
-## Billing journal generation automation
+# Billing journal generation automation
 
-# Navigation : Care Services > Setup > Billing journal generation automation
-
+## Navigation : Care Services > Setup > Billing journal generation automation
 
 |  **Field**  | **Values** | **Description** |
-|:---|:---|:---| 
-
+|:---|:---|:---|   
 |**Journal name**|Journal names <br>  General ledger > Setup > Journal names (only those with Care services billing journal as the journal type are available for use)|Select the journal name to be used for the billing journal batch. Must be a billing journal type|
 |**Journal header description**|Text to be used in the journal header description field. Enter the text to be used when the journal batch header is created.  The journal end date will be added to this text each month|Enter the text to be used when the journal batch header is created.  The journal end date will be added to this text each month|
 |**Proposal type**|Values: <br> <br> •	Billing journal proposal <br> <br> •	Billing journal adjustment proposal <br> Care services > Journals > Billing journal > Billing proposal options|Select Billing journal proposal for a new billing period or Select Billing journal adjustment proposal for backdated adjustments|
