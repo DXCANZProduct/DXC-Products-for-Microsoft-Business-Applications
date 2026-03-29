@@ -11,7 +11,7 @@ The following is a summary of data entities available for the Care Services modu
 **Entity**| **Description/comments**| **Dependency**| Comments
 :------------------------|:-------------------|:------------------------|:------------------------
 Care services accommodation payment interest rates|Header for accommodation payment interest rates|Header
-Care services accommodation payment interest rate lines|Lines for accommodation payment interest rates|Aged care accommodation payment interest rates
+Care services, accommodation payment interest rate lines|Lines for accommodation payment interest rates|Aged care accommodation payment interest rates
 Care services accommodation payment|Header for accommodation payment|Header
 Care services accommodation payment lines|Lines for accommodation payment lines|Care services accommodation payment
 Care services accommodation payment lines import|Import accommodation payment lines for the customer under the accommodation payment for the customer|NIL
@@ -67,8 +67,8 @@ Care services funding reconciliation journal headers|Header for funding reconcil
 Care services funding reconciliation journal lines|Lines for funding reconciliation journal - Export only|Care services funding reconciliation journal headers
 Care services funding streams|Header for funding stream. - Export only|NIL
 Care services funding stream reporting field setup|Lines for funding streams|Care services funding streams
-Care services home based care categories|Header for home-based care categories|NIL
-Care services home based care set|Header for home-based care  set|NIL
+Care services home-based care categories|Header for home-based care categories|NIL
+Care services home-based care set|Header for home-based care  set|NIL
 Care services home care package summary|For Export purposes only|NIL
 Care services leave types|Header for leave types|NIL
 Care services occupancy history|Header for occupancy history - For Export only.|NIL
@@ -88,7 +88,7 @@ Care services service group billing codes|Lines for service group|Care services 
 Care services service group funding codes|Lines for service group|Care services service groups
 Care services service group service codes|Lines for service group|Care services service groups
 Care services schedule creation templates|Header for Care services schedule creation templates Care services >Setup>Schedule creation template|
-Care services schedule creation billing codes|Lines for Care services schedule creation templates|Care services schedule creation templates
+Care services schedule creation, billing codes|Lines for Care services schedule creation templates|Care services schedule creation templates
 Care services schedule creation funding codes|Lines for Care services schedule creation templates|Care services schedule creation templates
 Care services subsidy type|Header for subsidy type Care services>Setup>Subsidy type|NIL
 Care services subsidy rates|Lines for subsidy type|Care services subsidy type
@@ -122,8 +122,8 @@ Tax group|Billing codes Tax group|Care services > Setup > Billing > Billing code
 Tax item group|Billing codes Tax item group|Care services > Setup > Billing > Billing codes|default value after leave value in Excel blank|
 Offset dimension|Service code financial dimensions|Care services > Setup > Services > All services|default value by deleting entire column|
 Default dimension|Service code default dimensions|Care services > Setup > Services > All services|default value by deleting entire column|
-Home based care set id|Billing codes Home based care set|Care services > Setup > Billing > Billing codes|default value after leave value in Excel blank|
-Home based care category id|Billing codes Home based care category|Care services > Setup > Billing > Billing codes|Currently Not Used in DMF|
+Home-based care set ID |Billing codes Home-based care set|Care services > Setup > Billing > Billing codes|default value after leave value in Excel blank|
+Home-based care category ID |Billing codes Home-based care category|Care services > Setup > Billing > Billing codes|Currently Not Used in DMF|
 Unit|Billing codes unit|Care services > Setup > Billing > Billing codes|Currently Not Used in DMF|
 Recurrence pattern|Billing codes recurrence pattern|Care services > Setup > Billing > Billing codes|default value by deleting entire column|
 Billing account name|Journal Name|General Ledger > Setup > Journal setup > Journal names|default value after leave value in Excel blank|
