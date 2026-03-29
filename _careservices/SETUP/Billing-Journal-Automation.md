@@ -24,13 +24,8 @@ toc: true
 |**Last end date**|Date will be updated from the End date used for the batch when each batch is generated|Use this field to set or reset the Next run date and Journal end date|
 |**Filter – Customer Group**|Drop down of Customer Groups<br>Accounts receivable > Setup > Customers > Customer Groups|If the batch is to be run for a specific customer group only, then select a customer group from this list|
 |**Filter – Customer Classification Group**|Drop down of Customer Classification Groups<br>Sales and marketing > Setup > Customers > Customer classification groups|If the batch is to be run for a specific customer classification group only, then select a customer classification group from this list|
-|**Filter – Service code**|Drop down of Service codes
-Care services > Setup > Services > All services|If the batch is to be run for a specific service code or a group of service codes, then select the service code(s) from this list |
-|**Filter – Customer status**|Active 
-Inactive
-
-Allow for Excluding either value by prefixing with an exclamation mark|If the batch is to include or exclude specific customer status, then enter the status.  Prefix with an exclamation mark to exclude a status|
-|**Email template**|Drop down of Email templates
-System administration > Setup > Email > System email templates|Ensure a System email template has been created for this task and select that template|
+|**Filter – Service code**|Drop down of Service codes<br>Care services > Setup > Services > All services|If the batch is to be run for a specific service code or a group of service codes, then select the service code(s) from this list |
+|**Filter – Customer status**|Active or Inactive<br>Allows for excluding either value by prefixing with an exclamation mark|If the batch is to include or exclude specific customer status, then enter the status.  Prefix with an exclamation mark to exclude a status|
+|**Email template**|Drop down of Email templates<br>System administration > Setup > Email > System email templates|Ensure a System email template has been created for this task and select that template|
 |**Email 1**||Enter an email address to receive a notification when the batch job has completed|
 |**Email 2**||Enter an email address to receive a notification when the batch job has completed|
