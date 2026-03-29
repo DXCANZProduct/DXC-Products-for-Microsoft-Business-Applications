@@ -17,6 +17,8 @@ Navigate to: **Care services >  Billing > Journals > Billing journal**
 -   If the client has not been billed before, then the billing will be generated from the start day on the billing schedule to the end date on the billing proposal.
 -   If the client has been billed before, then there will be a ‘Last run date’ on the billing schedule line. The billing proposal will generate fees from the day after the ‘Last run date’ to the end date on the billing proposal.
 
+To Automate Billing Journal proposals, see [Billing Journal Automation]({{ 'careservices/SETUP/Billing-Journal-Automation#Billing-Journal-Automation' | relative_url }})
+
 -   There are multiple billing proposal options:
 
 |  **Propposal Type**  | **Description** | 
@@ -52,7 +54,7 @@ Navigate to: **Care services >  Billing > Journals > Billing journal**
 12. Click **OK**
 13. *If required, set up the job to run in the background. Select Batch processing to Yes.*
 14. *Click on Recurrence*
-15. *The default value is for the job to run once (End after:1) If it is a requirement for the job to run at a regular interval, then setup up the required recurrence pattern.*
+15. *The default value is for the job to run once (End after:1) If it is a requirement for the job to run at a regular interval, then set up the required recurrence pattern.*
 16. *Click OK to close the Recurrence form.*
 17. *Click OK to add the job to the batch queue.*
 18. The relevant lines will be proposed in the billing journal.
