@@ -6,11 +6,16 @@ toc: true
 
 ## Document template (Open lines in Excel)
 
+The following Document Templates are available as part of the Care Services Solution, which facilitates editing in Excel of relevant Journals
+
 i) Care services billing journal line Entry V2 <br>
 ii) Care Services Receipt Journal  Line Entry V2   <br>
 iii) Care services funding journal  Entry  <br>
 
-Navigate to: Care services > Journal > Billing journal
+# Navigate to: Care services > Journal > Billing journal
+
+The following fields are available for interaction 
+
 ### Care services billing journal line Entry V2
 1) Journal batch number <br>
 2) Description <br>
@@ -33,7 +38,10 @@ Navigate to: Care services > Journal > Billing journal
 19) Voucher  <br>
 20) Journal totals (Debit and credit total)  <br>
 
-Navigate to: Care services > Journal > Receipt journal
+# Navigate to: Care services > Journal > Receipt journal
+
+The following fields are available for interaction 
+
 ### Care Services Receipt Journal  Line Entry V2
 1) Journal batch number  <br>
 2) Description  <br>
@@ -57,8 +65,11 @@ Navigate to: Care services > Journal > Receipt journal
 20) Journal totals (Debit and credit total)  <br>
 
 
-Navigate to: Care services > Journal > Funding Journal
-### Care services funding journal Entry
+# Navigate to: Care services > Journal > Funding Journal
+
+The following fields are available for interaction 
+
+### Care Services Funding Journal Entry
 1) Journal batch number  <br>
 2) Description  <br>
 3) Name  <br>
