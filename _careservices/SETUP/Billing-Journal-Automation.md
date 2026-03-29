@@ -16,26 +16,10 @@ toc: true
 |**Journal header description**|Text to be used in the journal header description field. Enter the text to be used when the journal batch header is created.  The journal end date will be added to this text each month|Enter the text to be used when the journal batch header is created.  The journal end date will be added to this text each month|
 |**Proposal type**|Values: <br> <br> •	Billing journal proposal <br> <br> •	Billing journal adjustment proposal <br> Care services > Journals > Billing journal > Billing proposal options|Select Billing journal proposal for a new billing period or Select Billing journal adjustment proposal for backdated adjustments|
 |**Recurrence type**|Values: <br> •	Weekly<br> •	Fortnightly<br> •	Monthly<br> •	Quarterly|Select the frequency the billing should be run|
-|**Monthly run day**|Monthly & Quarterly Values: <br> •	Numbers 1 to 31<br> •	If the monthly run day is greater than the current month, then use the lower of <br>
-Ie. If the month has only 28 days but the value is 31, ensure 28 is used, not 31. |Select the day of the month to be used as the run day for each batch or ‘31’ if the billing should be run on the last day of the month|
-|**Scheduled posting day**|Weekly and Fortnightly Values
-<br> •	Leave blank and disable
-Monthly & Quarterly Values: 
-<br> •	Numbers 1 to 31
-<br> •	If the monthly run day is greater than the current month then use the lower of|Select the day of the month to be used as the posting day for each batch or ‘31’ if the posting date should be the last day of the month or Journal end date if the last day of the billing should be used as the posting date|
-|**Scheduled end day**|Weekly and Fortnightly Values
-<br> •	Leave blank and disable
-Monthly & Quarterly Values: 
-<br> •	Numbers 1 to 31
-<br> •	If the monthly run day is greater than the current month then use the lower of
-
-Ie. If month has only 28 days but value is 31, ensure 28 is used not 31|System will set for Weekly & Fortnightly recurrences. For Monthly, select the day of the month to be used as the last day for each monthly billing run or ‘Last day’ if the end date should be the last day of the month|
-|**Next run date**|Calculated date:
-<br> •	Weekly formula: Last end date plus 7 days
-<br> •	Fortnightly formula: Last end date plus 14 days
-<br> •	Monthly Formula: Set the month and year as  Last end date plus 1 month and set the day from the Monthly run day
-<br> •	Quarterly formula: Set the month and year as  Last end date plus 3 months and set the day from the Monthly run day
-<br> •	Recalculate if Last end date is updated|Calculated field based on the last end date and the recurrence type|
+|**Monthly run day**|Monthly & Quarterly Values: <br> •	Numbers 1 to 31<br> •	If the monthly run day is greater than the current month, then use the lower of <br> Ie. If the month has only 28 days but the value is 31, ensure 28 is used, not 31. |Select the day of the month to be used as the run day for each batch or ‘31’ if the billing should be run on the last day of the month|
+|**Scheduled posting day**|Monthly & Quarterly Values: <br> •	Numbers 1 to 31<br> •	If the monthly run day is greater than the current month then use the lower of|Select the day of the month to be used as the posting day for each batch or ‘31’ if the posting date should be the last day of the month or Journal end date if the last day of the billing should be used as the posting date|
+|**Scheduled end day**|Monthly & Quarterly Values: <br> •	Numbers 1 to 31<br> •	If the monthly run day is greater than the current month, then use the lower of <br> Ie. If the month has only 28 days but the value is 31, ensure 28 is used, not 31|System will set for Weekly & Fortnightly recurrences. For Monthly, select the day of the month to be used as the last day for each monthly billing run or ‘Last day’ if the end date should be the last day of the month|
+|**Next run date**|Calculated date:<br> •	Weekly formula: Last end date plus 7 days<br> •	Fortnightly formula: Last end date plus 14 days<br> •	Monthly Formula: Set the month and year as  the last end date plus 1 month, and set the day from the Monthly run day<br> •	Quarterly formula: Set the month and year as  the last end date plus 3 months, and set the day from the Monthly run day<br> •	Recalculate if Last end date is updated|Calculated field based on the last end date and the recurrence type|
 |**Journal posting date**|Calculated date:
 <br> •	Weekly formula: Last end date plus 7 days
 <br> •	Fortnightly formula: Last end date plus 14 days
