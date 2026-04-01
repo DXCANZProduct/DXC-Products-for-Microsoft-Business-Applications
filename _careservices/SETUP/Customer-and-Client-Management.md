@@ -318,8 +318,8 @@ Navigate to: **Care services > All customers > Invoice > Accommodation payment**
 10. Populate the **Agreed Lumpsum** if the client is paying a lump sum.
 11. The **Ongoing interest forecast** (DAP/DAC amount) will be calculated when running the Accommodation Payment calculation.
 12. The **Billing account name** defaults to the billing account type. Change to the Accommodation Payment account name if the DAP/DAC or unpaid interest is going to be drawn down from the lump sum. If the lump sum has not been fully or partially paid, the DAP/DAC and unpaid interest will be billed to the client.
-13. Click Save
-14. Select the Accommodation payment calculation and run for the selected client
+13. Click **Save**
+14. Select the **Accommodation payment calculation** and run for the selected client
     
 ![Accommodation_Payment](../IMAGES/Accommodation_Payment.png)
 
