@@ -1,8 +1,8 @@
 ---
 layout: releasenotes-content
 header: License Manager
-title: 10.0.45.202603061
-release-version: 10.0.45.202603061
+title: 10.0.45.20260414
+release-version: 10.0.45.20260414
 state: current
 toc: true
 ---
