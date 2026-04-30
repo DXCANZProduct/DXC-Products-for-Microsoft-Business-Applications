@@ -12,34 +12,21 @@ Start by setting up the prerequisite **Microsoft Foundry** and **DXC Agent for f
 
 ## DXC Agent for Bank reconciliation
 
-###  Enable feature
-After deployment, find and enable the following features:
-1. DXC Agent for bank reconciliation
-
-###  All agents
-
-Navigate to **System administration > Agents for finance & supply chain management > All agent** to setup the **DXC Agent for bank reconciliation**
-
-When opening the form, it checks for any new agents and self populates from details from code
-
-Information on fields.
-
-Field                  | Description
-:--                    |:--
-**Agent name**         | DXCAgentForBankReconciliation
-**Agent description**  | Agent for bank reconciliation
-**Agent connection details**  | Select the agent created in prerequisite [Agent connection parameters](../dxcagentframework/Setup.md#b2--agent-connection-parameters)
-**Enabled**            | Set to _Yes_ in order to enable the agent
-**Enable agent response validation**  | Additional validation is available that can review the matching results from the agent instructions. Set to _Yes_ to enable validation.
+See following links for setup specific to each functionality (licensed separately):
+ - [Match with bank documents](match.md)
+ - [Generate voucher](voucher.md)
+ - Generate customer payments (coming soon)
+ - Generate vendor payments (coming soon)
 
 ### Bank accounts
 
 Where you want the agent to automatically run when importing the bank statement, navigate to **Cash and bank management > Bank statement reconciliation > Bank accounts**.
 
-Select the applicable company bank account, and where **Reconcile after import** is _Yes_ you will be able to set **Run reconciliation agent** to _Yes_.
+1. Select the applicable company bank account, and where **Reconcile after import** is _Yes_ you will be able to set **Run reconciliation agent** to _Yes_.
 
 > Note: The agent will only automatically run where:
 > Bank account's **Reconcile after import** is _Yes_, and **Run reconciliation agent** is _Yes_, and
 > Import bank statement **Reconcile after import** is _Yes_
 
+2. If you want to override the default workflow or agent, assign a workflow or agent in **xx**
 
