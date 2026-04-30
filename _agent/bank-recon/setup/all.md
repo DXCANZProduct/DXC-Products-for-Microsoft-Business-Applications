@@ -28,5 +28,17 @@ Where you want the agent to automatically run when importing the bank statement,
 > Bank account's **Reconcile after import** is _Yes_, and **Run reconciliation agent** is _Yes_, and
 > Import bank statement **Reconcile after import** is _Yes_
 
-2. If you want to override the default workflow or agent, assign a workflow or agent in **xx**
+
+## Workflow
+
+### Setup
+
+
+### Override default
+
+If you want to override the default workflow or agent, assign a workflow or agent in:
+ - **Cash and bank parameters** - this will override the agent default
+ - Bank account - this will override any overide in Cash and bank parameters
+
+
 
