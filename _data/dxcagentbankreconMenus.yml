@@ -5,15 +5,15 @@ toc:
       id: setup
       Level_1_items:
          - page: Setup
-           url: /agent/bank-recon/all
+           url: /agent/bank-recon/setup/all
          - page: Match with bank documents
-           url: /agent/bank-recon/match
+           url: /agent/bank-recon/setup/match
          - page: Generate voucher
-           url: /agent/bank-recon/voucher
+           url: /agent/bank-recon/setup/voucher
          - page: Generate customer payment
-           url: /agent/bank-recon/customer
+           url: /agent/bank-recon/setup/customer
          - page: Generate vendor payment
-           url: /agent/bank-recon/vendor  
+           url: /agent/bank-recon/setup/vendor  
   - page: Processing
     url: /agent/bank-recon/Processing 
   - page: FAQ
