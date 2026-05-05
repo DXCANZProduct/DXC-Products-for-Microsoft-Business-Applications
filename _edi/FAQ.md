@@ -46,6 +46,9 @@ Quick method to download header and line fields for a document type: <br>
 By design, data refresh doesn't copy passwords for connections. When opening the connection, user will receive a 'Encryption error occured with exception'. <br>
 If the connection is to be used in this environment, update the details (for example different paths for UAT) and update the password.
 
+### Data refresh - Document attachments
+Inbound files and Outbound files from a data refresh do not have any document handling attachments.
+
 
 ### Module FAQ
 The module specific FAQ can be found below. <br>
