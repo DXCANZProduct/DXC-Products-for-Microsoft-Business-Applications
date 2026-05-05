@@ -90,6 +90,6 @@ When you enable the PDF Security radio button, you will be prompted with 2 passw
 |  **Field**  | **Description** | 
 |:---|:---|     
 |User password|The User password can be used either separately or in conjunction with the Owner Password and provides the ability to restrict the view of the PDF document. <br> Note: It is recommended that the user password be provided in conjunction with the Owner password to prevent all editing. Without a user password, online PDF conversion to other formats (e.g., Word or Excel) can still take place; however, in-document editing is not possible |  
-|Owner password|The owner password is mandatory for use with PDF Security and must be provided to prevent in-document editing via PDF editing software (e.g., Adobe Acrobat) <br> Note: The owner password does not prevent online conversion to other formats, as these do not require write permission of the document  |  
+|Owner password|The owner password is mandatory for use with PDF Security and must be provided to prevent in-document editing via PDF editing software(e.g., Adobe Acrobat).  This allows end recipients the ability to view the document without the requirement of a password.  <br> Note: The owner password does not prevent online conversion to other formats, as these do not require write permission of the document  |  
 
 Note: not currently supported for use with ER format documents 
