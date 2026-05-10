@@ -10,7 +10,7 @@ The **DXC Agent for Bank reconciliation in D365 FSCM** can be run by:
 
 ## Automatically with Bank statement import
 
-See [setup]({{ '/agent/bank-recon/Setup#b4-bank-accounts' | relative_url }}) for prerequisites.
+See [setup]({{ '/agent/bank-recon/setup/all#b4-bank-accounts' | relative_url }}) for prerequisites.
 
 When importing bank statements with **Reconcile after import** enabled and the prerequisite setup are met the agent will automatically run and match the transactions in applicable Bank reconciliations.
 
