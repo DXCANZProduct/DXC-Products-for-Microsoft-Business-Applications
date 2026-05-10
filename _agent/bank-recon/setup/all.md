@@ -13,8 +13,8 @@ Start by setting up the prerequisite **Microsoft Foundry** and **DXC Agent for f
 ## DXC Agent for Bank reconciliation
 
 See following links for setup specific to each functionality (licensed separately):
- - [Match with bank documents]({{ '/match' | relative_url }})
- - [Generate voucher]({{ '/voucher' | relative_url }})
+ - [Match with bank documents]({{ '/agent/bank-recon/setup/match' | relative_url }})
+ - [Generate voucher]({{ '/agent/bank-recon/setup/voucher' | relative_url }})
  - Generate customer payments (coming soon)
  - Generate vendor payments (coming soon)
 
