@@ -38,7 +38,7 @@ Where you want the agent to automatically run when importing the bank statement,
 
 If you want to override the default workflow or agent, assign a workflow or agent in:
  - **Cash and bank parameters** - this will override the agent default
- - Bank account - this will override any overide in Cash and bank parameters
+ - **Bank account** - this will override any overide in Cash and bank parameters
 
 
 
