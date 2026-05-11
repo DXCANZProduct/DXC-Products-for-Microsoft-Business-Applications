@@ -22,15 +22,12 @@ The following features are licensed individually to ensure organizations pay onl
 
 This user guide provides an overview of the Bank Reconciliation Agent’s purpose, capabilities, and usage within D365 Finance and Operations. It is intended to help users understand how the agent supports efficient bank reconciliation and how it fits into the overall cash and bank management process.
 
-
-### Topics
-
-#### Setup
+### Setup
 - [All]({{ '/agent/bank-recon/setup/all' | relative_url }})
 - [DXC Agent for bank reconciliation]({{ '/agent/bank-recon/setup/match' | relative_url }})
 - [DXC Agent for bank reconciliation voucher generation]({{ '/agent/bank-recon/setup/voucher' | relative_url }})
 
-#### Processing
+### Processing
 - [Processing]({{ '/agent/bank-recon/Processing' | relative_url }})
 
 ### Demonstration
