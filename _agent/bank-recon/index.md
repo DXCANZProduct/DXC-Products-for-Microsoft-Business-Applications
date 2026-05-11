@@ -26,6 +26,7 @@ This user guide provides an overview of the Bank Reconciliation Agent’s purpos
 ### Topics
 
 #### Setup
+
     - [All]({{ '/agent/bank-recon/setup/all' | relative_url }})
     - [DXC Agent for bank reconciliation]({{ '/agent/bank-recon/setup/match' | relative_url }})
     - [DXC Agent for bank reconciliation voucher generation]({{ '/agent/bank-recon/setup/voucher' | relative_url }})
