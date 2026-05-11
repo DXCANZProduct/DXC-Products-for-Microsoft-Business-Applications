@@ -9,21 +9,25 @@ toc: true
 The **DXC Agent for Bank Reconciliation in Microsoft Dynamics 365 Finance and Operations** (D365 F&O) is designed to streamline and automate the process of reconciling bank statements with system transactions. <br> 
 By leveraging **Microsoft Foundry** and DXC Agent instructions, the agent helps organizations reduce manual effort, improve accuracy, and accelerate period-end close activities.
 
-This user guide provides an overview of the Bank Reconciliation Agent’s purpose, capabilities, and usage within D365 Finance and Operations. It is intended to help users understand how the agent supports efficient bank reconciliation and how it fits into the overall cash and bank management process.
-
-
 The **DXC Agent for Bank Reconciliation** assists finance teams by:
 - Automatically matching bank statement lines with bank transactions
 - Easily identify transactions that were matched with the agent
 - Reduce manual reconciliations
 - Users are not required to create/maintain Reconciliation matching rules
 
+The following features are licensed individually to ensure organizations pay only for the actions that apply to them:
+- **DXC Agent for bank reconciliation** - Match bank statement transactions with bank documents, and bank documents to bank documents.
+- **DXC Agent for bank reconciliation voucher generation** - Create new voucher transaction based on history for the bank account.
 
-This guide is intended for finance professionals, accountants, and system administrators who are responsible for managing bank reconciliations in D365 Finance and Operations.
+
+This user guide provides an overview of the Bank Reconciliation Agent’s purpose, capabilities, and usage within D365 Finance and Operations. It is intended to help users understand how the agent supports efficient bank reconciliation and how it fits into the overall cash and bank management process.
 
 
 ### Topics
-- [Setup]({{ '/agent/bank-recon/Setup' | relative_url }})
+- Setup
+    - [All]({{ '/agent/bank-recon/setup/all' | relative_url }})
+    - [DXC Agent for bank reconciliation]({{ '/agent/bank-recon/setup/match' | relative_url }})
+    - [DXC Agent for bank reconciliation voucher generation]({{ '/agent/bank-recon/setup/voucher' | relative_url }})
 - [Processing]({{ '/agent/bank-recon/Processing' | relative_url }})
 
 ### Demonstration
