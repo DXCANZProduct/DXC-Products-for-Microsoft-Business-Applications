@@ -1,8 +1,8 @@
 ---
 layout: releasenotes-content
 header: DXC Agent for Bank reconciliation in D365 FSCM
-title: 10.0.45.20260213
-release-version: 10.0.45.20260213
+title: 10.0.45.202605TBD
+release-version: 10.0.45.202605TBD
 state: current
 toc: true
 ---
