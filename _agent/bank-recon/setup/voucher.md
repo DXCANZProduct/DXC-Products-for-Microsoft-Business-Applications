@@ -8,17 +8,17 @@ toc: true
 
 ## Prerequisites
 
-Start by setting up the prerequisite **Microsoft Foundry** and **DXC Agent for finance & supply chain management** - [user guide]({{ '/agent/dxcagentframework/Setup' | relative_url }})
+Start by setting up the prerequisites - [user guide]({{ 'agent/bank-recon/setup/all' | relative_url }})
 
-## DXC Agent for Bank reconciliation
+## DXC Agent for Bank reconciliation - Generate voucher
 
 ###  Enable feature
 After deployment, find and enable the following features:
-1. DXC Agent for bank reconciliation
+1. DXC Agent for bank reconciliation voucher generation
 
 ###  All agents
 
-Navigate to **System administration > Agents for finance & supply chain management > All agent** to setup the **DXC Agent for bank reconciliation**
+Navigate to **Organisation administration > Agents for finance & supply chain management > All agent** to setup the **DXC Agent for bank reconciliation**
 
 When opening the form, it checks for any new agents and self populates from details from code
 
@@ -26,21 +26,19 @@ Information on fields.
 
 Field                  | Description
 :--                    |:--
-**Agent name**         | DXCAgentForBankReconciliation
-**Agent description**  | Agent for bank reconciliation
+**Agent name**         | DXCAgentForBankReconciliationVoucherGeneration
+**Agent description**  | Agent for Bank Reconciliation Voucher Generation
 **Agent connection details**  | Select the agent created in prerequisite [Agent connection parameters](../dxcagentframework/Setup.md#b2--agent-connection-parameters)
+**Agent instructions**  | Automatically populated with default Agent instructions
+**Agent output format**  | Automatically populated with default output format
 **Enabled**            | Set to _Yes_ in order to enable the agent
-**Enable agent response validation**  | Additional validation is available that can review the matching results from the agent instructions. Set to _Yes_ to enable validation.
+**Enable telemetry**   | See [detail]({{ 'agent/bank-recon/setup/all.md#telemetry' | relative_url }})
 
-### Bank accounts
+### Bank transaction types
 
-Where you want the agent to automatically run when importing the bank statement, navigate to **Cash and bank management > Bank statement reconciliation > Bank accounts**.
+Navigate to **Cash and bank management > Setup > Bank transaction types** and assign the applicable **Action** to each bank transaction type.
 
-Select the applicable company bank account, and where **Reconcile after import** is _Yes_ you will be able to set **Run reconciliation agent** to _Yes_.
+### Transaction code mapping
 
-> Note: The agent will only automatically run where:
-> Bank account's **Reconcile after import** is _Yes_, and **Run reconciliation agent** is _Yes_, and
-> Import bank statement **Reconcile after import** is _Yes_
-
-
+Navigate to **Cash and bank management > Setup > Advanced bank reconciliation setup > Transaction code mapping** and ensure all the applicable bank transaction types are mapped for the bank account.
 
