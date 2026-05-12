@@ -18,7 +18,7 @@ After deployment, find and enable the following features:
 
 ###  All agents
 
-Navigate to **System administration > Agents for finance & supply chain management > All agent** to setup the **DXC Agent for bank reconciliation**
+Navigate to **Organisation administration > Agents for finance & supply chain management > All agent** to setup the **DXC Agent for bank reconciliation**
 
 When opening the form, it checks for any new agents and self populates from details from code
 
