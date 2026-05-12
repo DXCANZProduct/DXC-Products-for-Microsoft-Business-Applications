@@ -51,4 +51,12 @@ The **All agents** form, provides the option to log and view telemetry for _appl
 
 View the telemetry by using **Go to dashboard**.
 
+## B.4. Agent workflows
+Provides the ability to run multiple agents in a specific order.
+
+Navigate to **Organisation administration > Agents for finance & supply chain management > Agent workflows**.
+
+Click **New** to create a new workflow and select the applicable Agents under **workflow agents setup**.
+The default **Agent instructions** could also be overridden per workflow.
+
 
