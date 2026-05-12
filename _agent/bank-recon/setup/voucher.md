@@ -42,3 +42,13 @@ Navigate to **Cash and bank management > Setup > Bank transaction types** and as
 
 Navigate to **Cash and bank management > Setup > Advanced bank reconciliation setup > Transaction code mapping** and ensure all the applicable bank transaction types are mapped for the bank account.
 
+### Main account - Sales tax
+
+Navigate to **General ledger > Chart of accounts > Accounts > Main accounts**
+
+Where the offset account needs to include tax in the new voucher transaction, ensure the following two fields are setup on each applicable **Main account**.
+- Sales tax group
+- Item sales tax group
+
+
+
