@@ -31,8 +31,9 @@ Where you want the agent to automatically run when importing the bank statement,
 
 ## Workflow
 
-### Setup
+Provides the ability to run multiple licensed agents in a specific order. For example where you want the agent to match and thereafter create new transactions.
 
+See [framework agent workflow guide]({{ '/agent/dxcagentframework/Setup.md#b4-agent-workflows' | relative_url }}) for steps on creating a new workflow.
 
 ### Override default
 
