@@ -32,7 +32,7 @@ After deployment, find and enable the following features:
 
 ## B.2.  Agent connection parameters
 
-Navigate to **System administration > Agents for finance & supply chain management > Agent connection parameters** to add the **Microsoft Foundry** details created in section A. <br>
+Navigate to **Organisation administration > Agents for finance & supply chain management > Agent connection parameters** to add the **Microsoft Foundry** details created in section A. <br>
 
 Field                  | Description
 :--                    |:--
@@ -43,4 +43,4 @@ Field                  | Description
 
 ## B.3.  All agents
 
-Navigate to **System administration > Agents for finance & supply chain management > All agent** to setup the applicable licensed agents.
+Navigate to **Organisation administration > Agents for finance & supply chain management > All agent** to setup the applicable licensed agents.
