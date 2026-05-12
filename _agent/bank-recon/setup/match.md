@@ -32,4 +32,10 @@ Field                  | Description
 **Enabled**            | Set to _Yes_ in order to enable the agent
 **Enable agent response validation**  | Additional validation is available that can review the matching results from the agent instructions. Set to _Yes_ to enable validation.
 
+### Cash and bank parameters
 
+Navigate to **Cash and bank management > Setup > Cash and bank management parameters**.
+
+The following parameters on the **Bank reconciliation** tab influences matching by the agent:  
+- **Validate transaction type mapping** - where set to _Yes_, the agent will use **Transaction code mapping** for the bank reconciliation's bank account in the matching criteria
+- **Validate date difference between statement lines and bank documents during bank reconciliation process** - where set to _Yes_, the **Allowed date difference** is applied in matching criteria.
