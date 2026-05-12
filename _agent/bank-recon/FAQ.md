@@ -17,7 +17,8 @@ A list of installed models will be displayed on the **Version** tab.  Scroll to 
 
 ### Dependency and Security Information
 
-Microsoft Foundry used by the agent is controlled by the client.
+Microsoft Foundry used by the agent is controlled by the client. <br> 
+Data Isolation: Data used in Microsoft Foundry remains within the customer's Azure tenant and is encrypted at rest.
 
 ### How many tokens does it use
 Approximately 115 tokens per record. <br>
