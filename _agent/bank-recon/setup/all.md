@@ -46,12 +46,19 @@ Navigate to **Organisation administration > Agents for finance & supply chain ma
 Set **Enable telemetry** to _Yes_ to log and view telemetry for _applicable_ agents. <br>
 View the telemetry by using **Go to dashboard** on the ActionPane. This is only enabled for applicable agents.
 
-### Examples: 
+### Agents: 
+
+Per each run, the following telemetry could be logged per agent. The data is displayed by month: 
 
 #### DXC Agent for bank reconciliation (Match with bank documents): 
-
+- Statement count
+- Document count
+- Matched statement count
+- Matched document count
+- Number of matches
+- Number of runs
 
 #### DXC Agent for bank reconciliation voucher generation (Generate voucher): 
-
-
-
+- Statement count
+- Generated voucher count
+- Number of runs
