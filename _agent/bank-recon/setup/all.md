@@ -40,5 +40,18 @@ If you want to override the default workflow or agent, assign a workflow or agen
  - **Cash and bank parameters** - this will override the agent default
  - **Bank account** - this will override any overide in Cash and bank parameters
 
+## Telemetry
+
+Navigate to **Organisation administration > Agents for finance & supply chain management > All agent**. <br>
+Set **Enable telemetry** to _Yes_ to log and view telemetry for _applicable_ agents. <br>
+View the telemetry by using **Go to dashboard** on the ActionPane. This is only enabled for applicable agents.
+
+### Examples: 
+
+#### DXC Agent for bank reconciliation (Match with bank documents): 
+
+
+#### DXC Agent for bank reconciliation voucher generation (Generate voucher): 
+
 
 
