@@ -44,3 +44,11 @@ Field                  | Description
 ## B.3.  All agents
 
 Navigate to **Organisation administration > Agents for finance & supply chain management > All agent** to setup the applicable licensed agents.
+
+### Telemetry
+
+The **All agents** form, provides the option to log and view telemetry for _applicable_ agents, by setting the **Enable telemetry** to _Yes_.
+
+View the telemetry by using **Go to dashboard**.
+
+
