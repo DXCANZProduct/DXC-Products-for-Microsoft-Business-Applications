@@ -23,7 +23,7 @@ Where the agent is enabled, the following buttons will be enabled in the **Unmat
     - To run the agent for all unmatched bank statement transactions, no need to select any records only click **Match with reconciliation agent**.
     - To run the agent for manually selected records, select the applicable unmatched bank statement transactions and click **Match with reconciliation agent**
 
-![Worksheet-match](IMAGES/agent-bankrecon-worksheet1.png)
+![Worksheet-match](../IMAGES/agent-bankrecon-worksheet1.png)
 
 2. **Prompt**
     - Instead of manually selecting applicable records, the user can use clear and specific language to specify which records the agent should attempt to match. Examples:
@@ -31,7 +31,7 @@ Where the agent is enabled, the following buttons will be enabled in the **Unmat
         -  Only match where amount is less than 1500
         -  Only match transactions where Related party type is Vendor and amount is less than 300
      
-![Worksheet-prompt](IMAGES/agent-bankrecon-worksheet2.png)
+![Worksheet-prompt](../IMAGES/agent-bankrecon-worksheet2.png)
 
 ## Results
 
@@ -41,4 +41,4 @@ The transactions that have been matched by the Agent can easily be viewed in **M
 
 > Note: Reconciliation matching rule **DXCAgentForBankRecon** is automatically created by the product, but only the name is used for flagging the applicable Matched transactions.
 
-![Worksheet-prompt](IMAGES/agent-bankrecon-worksheet3.png)
+![Worksheet-prompt](../IMAGES/agent-bankrecon-worksheet3.png)
