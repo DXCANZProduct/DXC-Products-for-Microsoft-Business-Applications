@@ -26,11 +26,13 @@ Information on fields.
 
 Field                  | Description
 :--                    |:--
-**Agent name**         | DXCAgentForBankReconciliation
-**Agent description**  | Agent for bank reconciliation
+**Agent name**         | DXCAgentForBankReconciliation & DXCAgentForBankReconciliationValidation
+**Agent description**  | Agent for bank reconciliation & Agent for Bank Reconciliation Validation
 **Agent connection details**  | Select the agent created in prerequisite [Agent connection parameters](../dxcagentframework/Setup.md#b2--agent-connection-parameters)
+**Agent instructions**  | Automatically populated with default agent instructions
+**Agent output format**  | Automatically populated with default output format
 **Enabled**            | Set to _Yes_ in order to enable the agent
-**Enable agent response validation**  | Additional validation is available that can review the matching results from the agent instructions. Set to _Yes_ to enable validation.
+**Enable telemetry**   | See [detail]({{ 'agent/bank-recon/setup/all.md#telemetry' | relative_url }})
 
 ### Cash and bank parameters
 
