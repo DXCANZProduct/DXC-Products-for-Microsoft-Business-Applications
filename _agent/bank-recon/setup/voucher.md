@@ -46,7 +46,7 @@ Example: **Bank transaction type** value **07** has Action **Generate voucher** 
 
 Navigate to **Cash and bank management > Setup > Advanced bank reconciliation setup > Transaction code mapping** and ensure all the applicable bank transaction types are mapped for the bank account.
 
-Example: Company bank account has **Statement transaction code** value **005** assigned to **Bank transaction type** value **07**. <br> 
+Example: Company bank account has **Statement transaction code** value **005** mapped to **Bank transaction type** value **07**. <br> 
 Thus all bank statement records with **Bank transaction code** value **005** will be compared to applicable values in table DXCAgentBankStmtVoucherHistoryView. Where the agent determines a matching unique offset history value exists, this will be used when generating the voucher for this bank statement record. <br> 
 
 The following will be used from the unique history record:
