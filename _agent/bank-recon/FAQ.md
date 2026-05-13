@@ -32,7 +32,10 @@ If the product is available in About > Version, check if it has been enabled in 
 
 **Enable** the features in the following order. <br>
 1. DXC Agent for finance & supply chain management
-2. DXC Agent for bank reconciliation
+
+The following can be enabled in any order after 1. has been enabled (where licensed):
+- DXC Agent for bank reconciliation
+- DXC Agent for bank reconciliation voucher generation
 
 If you don't see the features, click **Check for updates**. <br>
 
