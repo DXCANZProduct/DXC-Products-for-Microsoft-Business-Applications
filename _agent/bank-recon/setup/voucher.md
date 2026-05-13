@@ -14,7 +14,8 @@ Start by setting up the prerequisites - [user guide]({{ 'agent/bank-recon/setup/
 
 ###  Enable feature
 After deployment, find and enable the following features:
-1. DXC Agent for bank reconciliation voucher generation
+1. DXC Agent for finance & supply chain management
+2. DXC Agent for bank reconciliation voucher generation
 
 ###  All agents
 
