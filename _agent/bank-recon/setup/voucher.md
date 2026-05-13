@@ -37,11 +37,17 @@ Field                  | Description
 
 ### Bank transaction types
 
-Navigate to **Cash and bank management > Setup > Bank transaction types** and assign the applicable **Action** to each bank transaction type.
+Navigate to **Cash and bank management > Setup > Bank transaction types** and assign the applicable **Action** to each bank transaction type. <br>
+This feature will review the bank statement records where the Action **Generate voucher** is mapped.
+
+Example: **Bank transaction type** value **07** has Action **Generate voucher** assigned.
 
 ### Transaction code mapping
 
 Navigate to **Cash and bank management > Setup > Advanced bank reconciliation setup > Transaction code mapping** and ensure all the applicable bank transaction types are mapped for the bank account.
+
+Example: Company bank account has **Statement transaction code** value **005** assigned to **Bank transaction type** value **07**. <br> 
+Thus all bank statement records with **Bank transaction code** value **005** will be compared to applicable values in table DXCAgentBankStmtVoucherHistoryView. If a matching unique offset history value exists, this will be used when generating the voucher for this bank statement record.
 
 ### Main account - Sales tax
 
