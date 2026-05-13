@@ -24,11 +24,12 @@ This user guide provides an overview of the Bank Reconciliation Agent’s purpos
 
 ### Setup
 - [Framework]({{ '/agent/bank-recon/setup/all' | relative_url }})
-- [DXC Agent for bank reconciliation]({{ '/agent/bank-recon/setup/match' | relative_url }})
-- [DXC Agent for bank reconciliation voucher generation]({{ '/agent/bank-recon/setup/voucher' | relative_url }})
+- **Match with bank documents** - [DXC Agent for bank reconciliation]({{ '/agent/bank-recon/setup/match' | relative_url }})
+- **Generate voucher** - [DXC Agent for bank reconciliation voucher generation]({{ '/agent/bank-recon/setup/voucher' | relative_url }})
 
 ### Processing
-- [Processing]({{ '/agent/bank-recon/Processing' | relative_url }})
+- **Match with bank documents** - [DXC Agent for bank reconciliation]({{ '/agent/bank-recon/processing/match' | relative_url }})
+- **Generate voucher** - [DXC Agent for bank reconciliation voucher generation]({{ '/agent/bank-recon/processing/voucher' | relative_url }})
 
 ### Demonstration
 
