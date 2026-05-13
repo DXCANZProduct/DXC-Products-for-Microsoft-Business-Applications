@@ -32,7 +32,7 @@ Field                  | Description
 **Agent instructions**  | Automatically populated with default agent instructions
 **Agent output format**  | Automatically populated with default output format
 **Enabled**            | Set to _Yes_ in order to enable the agent
-**Enable telemetry**   | See [detail]({{ 'agent/bank-recon/setup/all.md#telemetry' | relative_url }})
+**Enable telemetry**   | See [detail]({{ 'agent/bank-recon/setup/all#telemetry' | relative_url }})
 
 ### Cash and bank parameters
 
