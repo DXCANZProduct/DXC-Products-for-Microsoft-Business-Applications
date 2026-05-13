@@ -34,6 +34,7 @@ Field                  | Description
 **Enabled**            | Set to _Yes_ in order to enable the agent
 **Enable telemetry**   | See [detail]({{ 'agent/bank-recon/setup/all#telemetry' | relative_url }})
 
+
 ### Cash and bank parameters
 
 Navigate to **Cash and bank management > Setup > Cash and bank management parameters**.
