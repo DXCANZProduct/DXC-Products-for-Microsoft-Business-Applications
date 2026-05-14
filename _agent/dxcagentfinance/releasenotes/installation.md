@@ -17,25 +17,28 @@ Dependency Summary Table
 
 | Product / Module | Depends On |
 |------------------|------------|
-| DXC Agent for Bank reconciliation in D365 FSCM | DXC License Manager,  DXC License, DXC Agent for finance & supply chain management | 
+| DXC Agent For Finance | DXC License Manager,  DXC License, DXC Agent for FSCM | 
 | DXC License | DXC License Manager | 
 | DXC License Manager | None |
-| DXC Agent for finance & supply chain management | DXC License Manager,  DXC License |
+| DXC Agent for FSCM | DXC License Manager,  DXC License |
 
 ---
 
 ```
-DXC Agent for Bank reconciliation in D365 FSCM
+DXC Agent For Finance
    ├── DXC License
    │       └── DXC License Manager
    ├── DXC License Manager
-   └── DXC Agent for finance & supply chain management
+   └── DXC Agent for FSCM
 ```
 
 ## Feature management
 
-Enable the following feature in D365 Feature management:
+Enable the following features in D365 Feature management (if licensed):
 - **DXC Agent for finance & supply chain management**
-- **DXC Agent for bank reconciliation**
 
-If above feature is not visible, press **Check for updates** to refresh the feature management list.
+The following can be enabled in any order:
+- **DXC Agent for bank reconciliation**
+- **DXC Agent for bank reconciliation voucher generation**
+
+If above features are not visible, press **Check for updates** to refresh the feature management list.
