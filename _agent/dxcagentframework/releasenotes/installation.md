@@ -17,7 +17,7 @@ Dependency Summary Table
 
 | Product / Module | Depends On |
 |------------------|------------|
-| DXC Agent for finance & supply chain management | DXC License Manager,  DXC License |
+| DXC Agent for FSCM | DXC License Manager,  DXC License |
 | DXC License | DXC License Manager | 
 | DXC License Manager | None |
 
@@ -25,7 +25,7 @@ Dependency Summary Table
 ---
 
 ```
-DXC Agent for finance & supply chain management
+DXC Agent for FSCM
    ├── DXC License
    │       └── DXC License Manager
    └── DXC License Manager
