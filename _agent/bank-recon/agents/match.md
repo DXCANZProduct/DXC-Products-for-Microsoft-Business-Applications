@@ -1,10 +1,10 @@
 ---
 layout: product-content
-header: DXC Agent for Bank reconciliation in D365 FSCM
+header: DXC Agent for Bank reconciliation
 toc: true
 ---
 
-# DXC Agent for Bank reconciliation in D365 FSCM
+# DXC Agent for Bank reconciliation
 
 # Setup
 
@@ -12,15 +12,30 @@ toc: true
 
 Start by setting up the prerequisite **Microsoft Foundry** and **DXC Agent for finance & supply chain management** - [user guide]({{ '/agent/dxcagentframework/Setup' | relative_url }})
 
-## DXC Agent for Bank reconciliation
+##  Enable feature
+After deployment, find and enable the following features:
+1. DXC Agent for finance & supply chain management
+2. DXC Agent for bank reconciliation
 
-See following links for setup specific to each functionality (licensed separately):
- - [Match with bank documents]({{ '/agent/bank-recon/setup/match' | relative_url }})
- - [Generate voucher]({{ '/agent/bank-recon/setup/voucher' | relative_url }})
- - Generate customer payments (coming soon)
- - Generate vendor payments (coming soon)
+##  All agents
 
-### Bank accounts
+Navigate to **Organisation administration > Agents for finance & supply chain management > All agent** to setup the **DXC Agent for bank reconciliation**
+
+When opening the form, it checks for any new agents and self populates from details from code
+
+Information on fields.
+
+Field                  | Description
+:--                    |:--
+**Agent name**         | DXCAgentForBankReconciliation & DXCAgentForBankReconciliationValidation
+**Agent description**  | Agent for bank reconciliation & Agent for Bank Reconciliation Validation
+**Agent connection details**  | Select the agent created in prerequisite [Agent connection parameters](../dxcagentframework/Setup.md#b2--agent-connection-parameters)
+**Agent instructions**  | Automatically populated with default agent instructions
+**Agent output format**  | Automatically populated with default output format
+**Enabled**            | Set to _Yes_ in order to enable the agent
+**Enable telemetry**   | See [detail]({{ 'agent/bank-recon/setup/all#telemetry' | relative_url }})
+
+## Bank accounts
 
 Where you want the agent to automatically run when importing the bank statement, navigate to **Cash and bank management > Bank statement reconciliation > Bank accounts**.
 
@@ -59,33 +74,8 @@ Per each run, the following telemetry could be logged per agent. The data is dis
 - Number of matches
 - Number of runs
 
-## DXC Agent for Bank reconciliation - Match with bank documents
 
-###  Enable feature
-After deployment, find and enable the following features:
-1. DXC Agent for finance & supply chain management
-2. DXC Agent for bank reconciliation
-
-###  All agents
-
-Navigate to **Organisation administration > Agents for finance & supply chain management > All agent** to setup the **DXC Agent for bank reconciliation**
-
-When opening the form, it checks for any new agents and self populates from details from code
-
-Information on fields.
-
-Field                  | Description
-:--                    |:--
-**Agent name**         | DXCAgentForBankReconciliation & DXCAgentForBankReconciliationValidation
-**Agent description**  | Agent for bank reconciliation & Agent for Bank Reconciliation Validation
-**Agent connection details**  | Select the agent created in prerequisite [Agent connection parameters](../dxcagentframework/Setup.md#b2--agent-connection-parameters)
-**Agent instructions**  | Automatically populated with default agent instructions
-**Agent output format**  | Automatically populated with default output format
-**Enabled**            | Set to _Yes_ in order to enable the agent
-**Enable telemetry**   | See [detail]({{ 'agent/bank-recon/setup/all#telemetry' | relative_url }})
-
-
-### Cash and bank parameters
+## Cash and bank parameters
 
 Navigate to **Cash and bank management > Setup > Cash and bank management parameters**.
 
