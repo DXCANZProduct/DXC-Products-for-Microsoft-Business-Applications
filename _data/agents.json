@@ -10,11 +10,11 @@
     },
     {
         "title": "DXC Agent for finance & supply chain management",
-        "description": "DXC Care Services is a modern, cloud-based software solution embedded in the Microsoft Dynamics 365 platform to support the Care Services eco-system in Australia and New Zealand.",
+        "description": "DXC Agents for D365 FSCM utilises Microsoft Foundry which is a code‑first and studio experience for building scalable AI applications and agents with complete control of models, prompts, tools, and data.",
         "productDocsUrl": "/agent/dxcagentframework",
         "productName": "DXCAgents",
         "disableDocs": false,
         "notificationsEnabled": true,
-        "image": "/assets/images/products/logoCareServices.png"
+        "image": "/assets/images/products/logoAgent.png"
     }
 ]  
