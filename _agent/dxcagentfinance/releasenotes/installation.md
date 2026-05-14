@@ -1,6 +1,6 @@
 ---
 layout: releasenotes-content
-header: DXC Agent for Bank Reconciliation
+header: DXC Agent for Finance in D365 FSCM
 title: Installation process
 release-version: 10.0.1
 state: current
