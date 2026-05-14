@@ -33,7 +33,22 @@ Field                  | Description
 **Agent instructions**  | Automatically populated with default agent instructions
 **Agent output format**  | Automatically populated with default output format
 **Enabled**            | Set to _Yes_ in order to enable the agent
-**Enable telemetry**   | See [detail]({{ 'agent/bank-recon/setup/all#telemetry' | relative_url }})
+**Enable telemetry**   | See below for more details
+
+### Telemetry
+
+Set **Enable telemetry** to _Yes_ to log and view telemetry for _applicable_ agents. <br>
+View the telemetry by using **Go to dashboard** on the ActionPane. This is only enabled for applicable agents.
+
+Per each run, the following telemetry could be logged per agent. The data is displayed by month: 
+
+#### DXC Agent for bank reconciliation (Match with bank documents): 
+- Statement count
+- Document count
+- Matched statement count
+- Matched document count
+- Number of matches
+- Number of runs
 
 ## Bank accounts
 
@@ -57,22 +72,6 @@ See [framework agent workflow guide]({{ '/agent/dxcagentframework/Setup.md#b4-ag
 If you want to override the default workflow or agent, assign a workflow or agent in:
  - **Cash and bank parameters** - this will override the agent default
  - **Bank account** - this will override any overide in Cash and bank parameters
-
-## Telemetry
-
-Navigate to **Organisation administration > Agents for finance & supply chain management > All agent**. <br>
-Set **Enable telemetry** to _Yes_ to log and view telemetry for _applicable_ agents. <br>
-View the telemetry by using **Go to dashboard** on the ActionPane. This is only enabled for applicable agents.
-
-Per each run, the following telemetry could be logged per agent. The data is displayed by month: 
-
-#### DXC Agent for bank reconciliation (Match with bank documents): 
-- Statement count
-- Document count
-- Matched statement count
-- Matched document count
-- Number of matches
-- Number of runs
 
 
 ## Cash and bank parameters

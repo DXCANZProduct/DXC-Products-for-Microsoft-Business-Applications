@@ -4,22 +4,23 @@ header: DXC Agent for Bank reconciliation in D365 FSCM
 toc: true
 ---
 
-# DXC Agent for Bank reconciliation in D365 FSCM
+# DXC Agent for bank reconciliation voucher generation
+
+# Setup
 
 ## Prerequisites
 
-Start by setting up the prerequisites - [user guide]({{ 'agent/bank-recon/setup/all' | relative_url }})
+Start by setting up the prerequisite **Microsoft Foundry** and **DXC Agent for finance & supply chain management** - [user guide]({{ '/agent/dxcagentframework/Setup' | relative_url }})
 
-## DXC Agent for Bank reconciliation - Generate voucher
-
-###  Enable feature
+##  Enable feature
 After deployment, find and enable the following features:
 1. DXC Agent for finance & supply chain management
 2. DXC Agent for bank reconciliation voucher generation
 
-###  All agents
 
-Navigate to **Organisation administration > Agents for finance & supply chain management > All agent** to setup the **DXC Agent for bank reconciliation**
+##  All agents
+
+Navigate to **Organisation administration > Agents for finance & supply chain management > All agent** to setup the applicable agent.
 
 When opening the form, it checks for any new agents and self populates from details from code
 
@@ -33,16 +34,28 @@ Field                  | Description
 **Agent instructions**  | Automatically populated with default Agent instructions
 **Agent output format**  | Automatically populated with default output format
 **Enabled**            | Set to _Yes_ in order to enable the agent
-**Enable telemetry**   | See [detail]({{ 'agent/bank-recon/setup/all#telemetry' | relative_url }})
+**Enable telemetry**   | See below for more details
 
-### Bank transaction types
+### Telemetry
+
+Set **Enable telemetry** to _Yes_ to log and view telemetry for _applicable_ agents. <br>
+View the telemetry by using **Go to dashboard** on the ActionPane. This is only enabled for applicable agents.
+
+Per each run, the following telemetry could be logged per agent. The data is displayed by month: 
+
+#### Agent for Bank Reconciliation Voucher Generation (Generate voucher): 
+- Statement count
+- Generated voucher count
+- Number of runs
+
+## Bank transaction types
 
 Navigate to **Cash and bank management > Setup > Bank transaction types** and assign the applicable **Action** to each bank transaction type. <br>
 This feature will review the bank statement records where the Action **Generate voucher** is mapped.
 
 Example: **Bank transaction type** value **07** has Action **Generate voucher** assigned.
 
-### Transaction code mapping
+## Transaction code mapping
 
 Navigate to **Cash and bank management > Setup > Advanced bank reconciliation setup > Transaction code mapping** and ensure all the applicable bank transaction types are mapped for the bank account.
 
@@ -53,7 +66,7 @@ The following will be used from the unique history record:
 - Offset account
 - Financial dimensions for offset account
 
-### Main account - Sales tax
+## Main account - Sales tax
 
 Navigate to **General ledger > Chart of accounts > Accounts > Main accounts**
 
@@ -61,14 +74,14 @@ Where the offset account needs to include tax in the new voucher transaction, en
 - Sales tax group
 - Item sales tax group
 
-### Default description
+## Default description
 
 This feature uses **Default description** when creating the new transaction.
 
 1. Enable feature **Enable default descriptions for advanced bank reconciliation**
 2. Setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation) for **Bank - reconciliation worksheet** for each applicable **Language** or select **user**. <br> 
 
-# DXC Agent for Bank reconciliation in D365 FSCM
+# Processing
 
 The **DXC Agent for Bank reconciliation in D365 FSCM** can be run by: 
 
