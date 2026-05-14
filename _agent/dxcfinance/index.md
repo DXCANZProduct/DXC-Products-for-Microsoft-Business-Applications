@@ -6,7 +6,7 @@ toc: true
 
 ## Introduction
 
-The **DXC Agent for Bank Finance in Microsoft Dynamics 365 Finance and Operations** (D365 F&O) is designed to streamline and automate the process of Finance processes in D365 FSCM. <br> 
+The **DXC Agent for Finance in Microsoft Dynamics 365 Finance and Operations** (D365 F&O) is designed to streamline and automate the process of Finance processes in D365 FSCM. <br> 
 By leveraging **Microsoft Foundry** and DXC Agent instructions, the agent helps organizations reduce manual effort, improve accuracy, and accelerate period-end close activities.
 
 ### DXC Agent for Bank Reconciliation
