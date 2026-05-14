@@ -20,7 +20,7 @@ The **DXC Agent for Bank Reconciliation** assists finance teams by:
 
 This user guide provides an overview of the Bank Reconciliation Agent’s purpose, capabilities, and usage within D365 Finance and Operations. It is intended to help users understand how the agent supports efficient bank reconciliation and how it fits into the overall cash and bank management process.
 
-The following agents are available (as licensed): 
+The following agents are available (if licensed): 
 - **DXC Agent for bank reconciliation** - Match bank statement transactions with bank documents, and bank documents to bank documents.
 - **DXC Agent for bank reconciliation voucher generation** - Create new voucher transaction based on history for the bank account.
 
