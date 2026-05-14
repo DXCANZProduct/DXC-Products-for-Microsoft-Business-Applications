@@ -63,18 +63,18 @@
         <li class="list-style-type">
           {% assign agnt = site.agent | sort: 'release-version' | reverse%}
           {% for cur in agnt %}
-              {%if cur.url contains "dxcfinance-agents/releasenotes" and cur.state == "current"%}
+              {%if cur.url contains "dxcagentfinance/releasenotes" and cur.state == "current"%}
               <li class="list-style-type">
                 <a href="{{ cur.url }}">{{cur.title}}</a>
               </li>
               {% endif%}
           {% endfor %}
-          <details class="sticky-subsection" {% if page.url contains "agent/dxcfinance-agents/releasenotes" and page.state == "previous" %}open{% endif %}>
+          <details class="sticky-subsection" {% if page.url contains "agent/dxcagentfinance/releasenotes" and page.state == "previous" %}open{% endif %}>
             <summary>Previous Versions</summary>
             <ul>
               {% assign agnt = site.agent | sort: 'release-version' | reverse%}
               {% for cur in agnt %}
-                  {%if cur.url contains "dxcfinance-agents/releasenotes" and cur.state == "previous"%}
+                  {%if cur.url contains "dxcagentfinance/releasenotes" and cur.state == "previous"%}
                   <li class="list-style-type">
                     <a href="{{ cur.url }}">{{cur.title}}</a>
                   </li>
@@ -82,12 +82,12 @@
               {% endfor %}
             </ul>
           </details>
-          <details class="sticky-subsection" {% if page.url contains "agent/dxcfinance-agents/releasenotes" and page.state == "archive" %}open{% endif %}>
+          <details class="sticky-subsection" {% if page.url contains "agent/dxcagentfinance/releasenotes" and page.state == "archive" %}open{% endif %}>
             <summary>Archive</summary>
             <ul>
               {% assign agnt = site.agent | sort: 'release-version' | reverse%}
               {% for cur in agnt %}
-                  {%if cur.url contains "dxcfinance-agents/releasenotes" and cur.state == "archive"%}
+                  {%if cur.url contains "dxcagentfinance/releasenotes" and cur.state == "archive"%}
                   <li class="list-style-type">
                     <a href="{{ cur.url }}">{{cur.title}}</a>
                   </li>
