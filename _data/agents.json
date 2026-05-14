@@ -2,7 +2,7 @@
     {
         "title": "DXC Agent for Finance in D365 FSCM",
         "description": "DXC Agents is a modern, cloud-based software solution embedded in the Microsoft Dynamics 365 platform",
-        "productDocsUrl": "/agent/dxcfinance-agents",
+        "productDocsUrl": "/agent/dxcagentfinance",
         "productName": "DXCAgents",
         "disableDocs": false,
         "notificationsEnabled": true,
