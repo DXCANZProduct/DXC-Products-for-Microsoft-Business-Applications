@@ -1,13 +1,15 @@
 ---
 layout: product-content
-header: DXC Agent for Bank reconciliation in D365 FSCM
+header: DXC Agent for Finance in D365 FSCM
 toc: true
 ---
 
 ## Introduction
 
-The **DXC Agent for Bank Reconciliation in Microsoft Dynamics 365 Finance and Operations** (D365 F&O) is designed to streamline and automate the process of reconciling bank statements with system transactions. <br> 
+The **DXC Agent for Finance in Microsoft Dynamics 365 Finance and Operations** (D365 F&O) is designed to streamline and automate the Finance processin D365 FSCM. <br> 
 By leveraging **Microsoft Foundry** and DXC Agent instructions, the agent helps organizations reduce manual effort, improve accuracy, and accelerate period-end close activities.
+
+### DXC Agent for Bank Reconciliation
 
 The **DXC Agent for Bank Reconciliation** assists finance teams by:
 - Automatically matching bank statement lines with bank transactions
