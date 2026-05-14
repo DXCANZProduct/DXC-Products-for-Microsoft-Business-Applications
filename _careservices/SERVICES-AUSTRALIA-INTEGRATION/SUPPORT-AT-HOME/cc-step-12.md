@@ -10,7 +10,7 @@ image: "./IMAGES/claim-pending-approval.png"
 caption: "Operation completed. Claim 100000005947, invoice 1000110518, NAPS ID 19463 — pending approval at Services Australia. The funding claim is in. Now you wait for payment."
 prev_url: "./cc-step-11.html"
 prev_label: "← Step 11"
-next_url: "./03-getting-paid.html"
+next_url: "./gp-step-01.html"
 next_label: "Getting Paid →"
 view_all_url: "./cc-view-all.html"
 ---

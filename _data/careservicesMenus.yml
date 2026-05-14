@@ -121,8 +121,15 @@ toc:
                 url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/gp-step-01
               - page: View all steps
                 url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/gp-view-all
-          - page: Closing the Loop
-            url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/04-closing-the-loop
+          - title: Closing the Loop
+            id: services-australia-integration/support-at-home/closing-the-loop
+            Level_3_items:
+              - page: Overview
+                url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/04-closing-the-loop
+              - page: Step by step
+                url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/cl-step-01
+              - page: View all steps
+                url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/cl-view-all
   - title: Other
     id: other
     Level_1_items:

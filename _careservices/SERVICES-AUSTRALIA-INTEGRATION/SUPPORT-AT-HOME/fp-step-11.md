@@ -10,7 +10,7 @@ image: "./IMAGES/account-summary-transactions.png"
 caption: "Every processed claim is listed — date, amount, payment reference, payment identifier. This is the live view of where you stand with Services Australia before raising a new funding claim."
 prev_url: "./fp-step-10.html"
 prev_label: "← Step 10"
-next_url: "./02-creating-the-claim.html"
+next_url: "./cc-step-01.html"
 next_label: "Creating the Funding Claim →"
 view_all_url: "./fp-view-all.html"
 ---

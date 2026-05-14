@@ -10,7 +10,7 @@ image: "./IMAGES/gp-11-reconciliation-matched.png"
 caption: "Reconciliation complete. The variance of -15.91 is the individual contribution deduction — expected and correct. The funding claim cycle for this service is closed."
 prev_url: "./gp-step-10.html"
 prev_label: "← Step 10"
-next_url: "./04-closing-the-loop.html"
+next_url: "./cl-step-01.html"
 next_label: "Closing the Loop →"
 view_all_url: "./gp-view-all.html"
 ---
