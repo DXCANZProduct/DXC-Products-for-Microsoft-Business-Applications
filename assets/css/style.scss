@@ -88,6 +88,119 @@ body {
 .site-header__actions { display: inline-flex; align-items: center; gap: 12px; }
 .site-header__social { display: inline-flex; align-items: center; }
 
+/* ── Step-by-step page layout ─────────────────────────────────────── */
+
+/* Wrapper becomes a flex column — site header takes natural height,
+   everything below fills the rest */
+.wrapper:has(.step-page) {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* page-sticky-header doesn't need to be sticky when there's no scroll */
+.wrapper:has(.step-page) .page-sticky-header {
+  flex-shrink: 0;
+  position: static;
+}
+
+/* Step page outer wrapper — fills remaining height after the sticky header */
+.step-outer {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+/* The step page itself fills the content column */
+.step-page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  padding: 1rem 2rem 0.75rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.step-back-link {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: $steel;
+  text-decoration: none;
+  flex-shrink: 0;
+  &:hover { color: $blue-700; text-decoration: underline; }
+}
+
+.step-page-title {
+  margin: 0.2rem 0 0.5rem;
+  flex-shrink: 0;
+  font-size: 1.05rem;
+  color: $primary;
+}
+
+.step-action {
+  flex-shrink: 0;
+  font-size: 0.88rem;
+  color: $steel;
+  margin: 0 0 0.6rem;
+  line-height: 1.4;
+}
+
+.step-img {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+}
+
+.step-img img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: left top;
+  border: 1px solid $border;
+  border-radius: 4px;
+  display: block;
+}
+
+.step-caption {
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  color: $text;
+  line-height: 1.5;
+  margin: 0.6rem 0 0.5rem;
+}
+
+.step-nav {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-top: 1px solid $border;
+  font-size: 0.88rem;
+}
+
+.step-nav-prev, .step-nav-next {
+  font-weight: 600;
+  color: $blue-700;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+.step-nav-all {
+  font-size: 0.78rem;
+  color: $steel;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+/* ───────────────────────────────────────────────────────────────────── */
+
 .sidebar, .content > .row > details {
   background: $gray-100;
   border-radius: 8px;

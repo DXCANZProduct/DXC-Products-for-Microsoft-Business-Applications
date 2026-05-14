@@ -89,6 +89,40 @@ toc:
         url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SAHWorkbench
       - page: API Reference
         url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/API-Reference
+      - title: Support at Home
+        id: services-australia-integration/support-at-home
+        Level_2_items:
+          - page: Overview
+            url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/
+          - title: Your Funding Position
+            id: services-australia-integration/support-at-home/your-funding-position
+            Level_3_items:
+              - page: Overview
+                url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/01-funding-position
+              - page: Step by step
+                url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/fp-step-01
+              - page: View all steps
+                url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/fp-view-all
+          - title: Creating the Funding Claim
+            id: services-australia-integration/support-at-home/creating-the-claim
+            Level_3_items:
+              - page: Overview
+                url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/02-creating-the-claim
+              - page: Step by step
+                url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/cc-step-01
+              - page: View all steps
+                url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/cc-view-all
+          - title: Getting Paid
+            id: services-australia-integration/support-at-home/getting-paid
+            Level_3_items:
+              - page: Overview
+                url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/03-getting-paid
+              - page: Step by step
+                url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/gp-step-01
+              - page: View all steps
+                url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/gp-view-all
+          - page: Closing the Loop
+            url: /careservices/SERVICES-AUSTRALIA-INTEGRATION/SUPPORT-AT-HOME/04-closing-the-loop
   - title: Other
     id: other
     Level_1_items:

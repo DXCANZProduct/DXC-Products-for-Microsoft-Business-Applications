@@ -1,0 +1,45 @@
+---
+layout: default
+---
+{% case page.section %}
+  {% when "Your Funding Position" %}
+    {% assign overview_url = "./01-funding-position.html" %}
+  {% when "Creating the Funding Claim" %}
+    {% assign overview_url = "./02-creating-the-claim.html" %}
+  {% when "Getting Paid" %}
+    {% assign overview_url = "./03-getting-paid.html" %}
+  {% else %}
+    {% assign overview_url = "./index.html" %}
+{% endcase %}
+<div class="container-fluid page-sticky-header">
+  <div class="container-fluid row justify-content-start">
+    <div class="col-12 col-md-8">
+      <h1 class="title">{{ page.header }}</h1>
+    </div>
+  </div>
+</div>
+<div class="step-outer">
+  <div class="step-page">
+
+    <a class="step-back-link" href="{{ overview_url }}">← {{ page.section }}</a>
+
+    <div class="step-page-title">
+      <strong>Step {{ page.step }} of {{ page.total_steps }} — {{ page.step_title }}</strong>
+    </div>
+
+    <p class="step-action">{{ page.action }}</p>
+
+    <div class="step-img">
+      <img src="{{ page.image }}" alt="{{ page.step_title }}">
+    </div>
+
+    <p class="step-caption">{{ page.caption }}</p>
+
+    <div class="step-nav">
+      <a class="step-nav-prev" href="{{ page.prev_url }}">{{ page.prev_label }}</a>
+      <a class="step-nav-all" href="{{ page.view_all_url }}">View all {{ page.total_steps }} steps</a>
+      <a class="step-nav-next" href="{{ page.next_url }}">{{ page.next_label }}</a>
+    </div>
+
+  </div>
+</div>

@@ -66,6 +66,10 @@ toc: true
         {%if page.header == "DXC Agent for finance & supply chain management" %}
           {% include agent-framework-navbar.html %}
         {% endif %}
+        {% if page.nav_section %}
+        var navSection = document.getElementById("{{ page.nav_section }}");
+        if (navSection) navSection.setAttribute("open", "");
+        {% endif %}
       </div>
       <div class="col-12 col-md-9">
             <div class="content">
