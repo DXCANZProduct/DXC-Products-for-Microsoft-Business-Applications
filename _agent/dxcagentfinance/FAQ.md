@@ -1,6 +1,6 @@
 ---
 layout: product-content
-header: DXC Agent for Bank reconciliation in D365 FSCM
+header: DXC Agent for Finance in D365 FSCM
 toc: true
 ---
 
@@ -33,7 +33,7 @@ If the product is available in About > Version, check if it has been enabled in 
 **Enable** the features in the following order. <br>
 1. DXC Agent for finance & supply chain management
 
-The following can be enabled in any order after 1. has been enabled (where licensed):
+The following can be enabled in any order after 1. has been enabled (if licensed):
 - DXC Agent for bank reconciliation
 - DXC Agent for bank reconciliation voucher generation
 
