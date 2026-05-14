@@ -1,12 +1,12 @@
 toc:
   - page: Introduction
-    url: /agent/dxcfinance-agents
+    url: /agent/dxcagentfinance
   - title: Finance agents
-    id: dxcfinance-agents
+    id: dxcagentfinance
     Level_1_items:
        - page: DXC Agent for bank reconciliation
-         url: /agent/dxcfinance-agents/bank-recon/match
+         url: /agent/dxcagentfinance/bank-recon/match
        - page: DXC Agent for bank reconciliation voucher generation
-         url: /agent/dxcfinance-agents/bank-recon/voucher
+         url: /agent/dxcagentfinance/bank-recon/voucher
   - page: FAQ
-    url: /agent/dxcfinance-agents/FAQ
+    url: /agent/dxcagentfinance/FAQ
