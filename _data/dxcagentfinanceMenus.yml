@@ -1,8 +1,8 @@
 toc:
   - page: Introduction
     url: /agent/dxcfinance-agents
-  - title: Bank reconciliation agents
-    id: bank-recon
+  - title: Finance agents
+    id: dxcfinance-agents
     Level_1_items:
        - page: DXC Agent for bank reconciliation
          url: /agent/dxcfinance-agents/bank-recon/match
