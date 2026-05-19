@@ -19,6 +19,7 @@ D365 Version	  | Any issues found in testing?	  | Product version tested
 Product version: 10.0.45 <br> App build: 10.0.2345.13	  | No			 | DXC Finance Utilities 10.0.43.2025052121 <br> [DXC ABN Validation 10.0.43.2025052121] <br> [DXC Encryption 10.0.43.202505191]
 Product version: 10.0.46 <br> App build: 10.0.2428.15	  | No			 | DXC Finance Utilities 10.0.43.202508295 <br> [DXC ABN Validation 10.0.43.202508295] <br> [DXC Encryption 10.0.43.202505191]
 Product version: 10.0.47 <br> App build: 10.0.2527.17	  | No       | DXC Finance Utilities 10.0.45.202511281 <br> [DXC ABN Validation 10.0.45.20251128] <br> [DXC Encryption 10.0.43.202505191]
+Product version: 10.0.48 <br> App build: 10.0.2645.12	  | No       | DXC Finance Utilities 10.0.45.202603191 <br> [DXC ABN Validation 10.0.45.202603191] <br> [DXC Encryption 10.0.43.202505191]
 
 
 Release notes for other models included in product:
@@ -36,6 +37,7 @@ Base	  | Version	  | Release
 Microsoft Dynamics 365 application	| 10.0.45 	  | [What’s new or changed in Dynamics 365 application version 10.0.45](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45)
 Microsoft Dynamics 365 application	| 10.0.46 	  | [What’s new or changed in Dynamics 365 application version 10.0.46](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-46)
 Microsoft Dynamics 365 application	| 10.0.47 	  | [What’s new or changed in Dynamics 365 application version 10.0.47](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-47)
+Microsoft Dynamics 365 application	| 10.0.48 	  | [What’s new or changed in Dynamics 365 application version 10.0.48](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-48)
 
 {% include_relative {{page.release-version}}.md %}
 
