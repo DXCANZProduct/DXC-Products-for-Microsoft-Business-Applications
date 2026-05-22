@@ -24,6 +24,8 @@ The following agents are available (if licensed):
 - **DXC Agent for bank reconciliation** - Match bank statement transactions with bank documents, and bank documents to bank documents.
 - **DXC Agent for bank reconciliation voucher generation** - Create new voucher transaction based on history for the bank account.
 
+### Disclaimer
+The AI functionality provided by this software is offered on an ‘as is’ basis and may generate inaccurate, incomplete, or misleading information. Users must independently review and verify all outputs before reliance or use.
 
 ### Demonstration
 
