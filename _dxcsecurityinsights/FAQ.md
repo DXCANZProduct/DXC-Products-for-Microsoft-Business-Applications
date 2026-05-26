@@ -34,5 +34,11 @@ Method to fix:
 1. Confirm configuration for the Azure Application Insights instance is correct and validate in 'Insights for user access and security parameters' .
 2. Check for users with special characters in their id
 
+### Securable object entitled count comparison
+
+When comparing **License usage summary**'s Entitled count to **Security Insight**'s Securable object entitled count, you could notice a lower number in Security Insights. <br> 
+In Security insights we exclude the Read Access level Entitled securable objects in the count, as these on it's own wouldn't require a license.
+Otherwise if the user accessed only this read object, it might incorrectly display they require the full license type.
+
   
 
