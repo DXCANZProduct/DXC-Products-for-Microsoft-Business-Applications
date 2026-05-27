@@ -12,9 +12,6 @@ If it is blank or not listed, investigations are still underway. When upgrading 
 
 Microsoft Dynamics 365 Finance and Operations Version		  | Any issues found in testing?	  |Product version tested
 :--      			 	  |:--           			  |:--
-Microsoft Dynamics 365 Product version:    [10.0.43](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-43) <br>	 App build: 10.0.2177	  | No | 10.0.40.202409113 
-Microsoft Dynamics 365 Product version:    [10.0.44](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-44) <br>	 App build: 10.0.2263	  | No | 10.0.42.20250304 
-Microsoft Dynamics 365 Product version:    [10.0.45](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-45) <br>	 App build: 10.0.2345	  | No | 10.0.43.20250730
 Microsoft Dynamics 365 Product version:    [10.0.46](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-46) <br>	 App build: 10.0.2428  | No | 10.0.43.202507302
 Microsoft Dynamics 365 Product version:    [10.0.47](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-47) <br>	 App build: 10.0.2527  | No | 10.0.43.202507302
 Microsoft Dynamics 365 Product version:    [10.0.48](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-48) <br>	 App build: 10.0.2645  | No | 10.0.45.20260422
