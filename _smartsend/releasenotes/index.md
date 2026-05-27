@@ -18,6 +18,8 @@ Microsoft Dynamics 365 Product version:    [10.0.45](https://learn.microsoft.com
 Microsoft Dynamics 365 Product version:    [10.0.46](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-46) <br>	 App build: 10.0.2428  | No | 10.0.43.202507302
 Microsoft Dynamics 365 Product version:    [10.0.47](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-47) <br>	 App build: 10.0.2527  | No | 10.0.43.202507302
 Microsoft Dynamics 365 Product version:    [10.0.48](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-48) <br>	 App build: 10.0.2645  | No | 10.0.45.20260422
+
+
 Release notes for other models included in the product:
 - [DXC Connections]({{'connections/releasenotes/' | relative_url }})
 - [DXC License Manager]({{'licensemanager/releasenotes/dxclicensemanager/' | relative_url }})
