@@ -18,6 +18,9 @@ Determine if users are utilising their assigned licenses effectively by fetching
 - [Monitor]({{ '/dxcsecurityinsights/Review' | relative_url }}) - Colate and review user access and security utilization
 - [Security diagnostics]({{ '/dxcsecurityinsights/Security-diagnostics' | relative_url }}) - Licensing information added to Security diagnostics to assist in allocating new roles to users going forward
 
+### Microsoft Marketplace
+The product is available on [Microsoft Marketplace](https://marketplace.microsoft.com/en-us/product/dxc.sol-120326-sin?tab=Overview)
+
 ### Demonstration
 
 Watch DXC Technology’s short demonstration on Security Insights for D365 FO solution here:
