@@ -101,6 +101,15 @@ Where the agent is enabled, the following buttons will be enabled in the **Unmat
 
 ### Matched transactions
 
+#### Journals
+Where the Bank account's **Customer payment journal posting** was set to _Yes_, button **Journals** will be enabled and allow the user to navigate to the posted journal.
+
+#### Cancel payment
+Button **Cancel payment** can be used to create an "opposite"/reversing transaction and move the posted bank document to unmatched.
+
+> Note: Ensure **Bank transaction type** setup against field **NSF** in **Cash and bank management parameters** is the same as your Bank transaction type in your **Method of payment**. If they differ, standard matching doesn't allow these two bank document records to matched against each other, and throws the following error:
+> "The criteria to reconcile have not been met. You can reconcile either a single canceled check or two transactions. To reconcile two transactions, the document type must be Other, and the documents must have the same bank account, transaction type, payment reference and have opposite amounts.
+
 #### Matching rule
 The transactions that have been matched by the Agent can easily be viewed in **Matched transactions** as these are flagged in **Matching rule** with **DXCAgent**. <br>
 
