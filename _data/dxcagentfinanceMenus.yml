@@ -8,5 +8,7 @@ toc:
       url: /agent/dxcagentfinance/bank-recon/match
     - page: DXC Agent for bank reconciliation voucher generation
       url: /agent/dxcagentfinance/bank-recon/voucher
+    - page: DXC Agent for bank reconciliation customer payment generation
+      url: /agent/dxcagentfinance/bank-recon/customer  
   - page: FAQ
     url: /agent/dxcagentfinance/FAQ
