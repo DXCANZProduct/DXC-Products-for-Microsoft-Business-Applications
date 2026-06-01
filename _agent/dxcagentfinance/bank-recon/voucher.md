@@ -6,7 +6,7 @@ toc: true
 
 # DXC Agent for bank reconciliation voucher generation
 
-The **DXC Agent for bank reconciliation voucher generation** allows users to automatically create new voucher bank documents for relevant bank statement records, based on historical data.
+The **DXC Agent for bank reconciliation voucher generation** allows users to automatically create new voucher bank documents for relevant bank statement records, based on historical data for the bank account.
 
 # Setup
 
