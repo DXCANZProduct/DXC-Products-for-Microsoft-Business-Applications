@@ -50,7 +50,11 @@ Per each run, the following telemetry could be logged per agent. The data is dis
 
 
 ## Bank accounts
-posting
+
+Navigate to **Cash and bank management > Setup > Bank accounts** to setup the following:
+- **Customer payment journal posting** - Determines if the created customer payment journal should be posted.
+    - **Yes** - The journal will be created, posted and automatically matched to the original bank statement line. **Journal** button on **Matched transactions** in the Reconciliation worksheet allows user to easily navigate to these posted customer payment journals.
+    - **No** - The journal will be created, but _not_ posted. The message in Action center will list the **Journal batch numbers** that were created. If the agent is run again, these bank statement records won't be included again, thus no duplication. **Journal** button on **Matched transactions** can't be used for these as the journal has not been posted by the agent. Once the journals have been reviewed and posted, the matching can be done in the reconciliation either by running agent 'DXC Agent for bank reconciliation', reconciliation matching rules or manual matching.
 
 
 ## Bank transaction types
