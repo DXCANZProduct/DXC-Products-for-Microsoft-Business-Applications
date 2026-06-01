@@ -24,7 +24,7 @@ Navigate to **Organisation administration > Agents for finance & supply chain ma
 
 When opening the form, it checks for any new agents and self populates from details from code
 
-Information on fields.
+Information on fields:
 
 Field                  | Description
 :--                    |:--
