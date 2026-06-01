@@ -6,6 +6,8 @@ toc: true
 
 # DXC Agent for Bank reconciliation
 
+The **DXC Agent for Bank reconciliation** allows users to match bank statement transactions with bank documents, and bank documents to bank documents.
+
 # Setup
 
 ## Prerequisites
