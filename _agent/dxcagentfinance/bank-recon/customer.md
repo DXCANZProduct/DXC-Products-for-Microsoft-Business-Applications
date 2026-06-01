@@ -6,7 +6,7 @@ toc: true
 
 # DXC Agent for bank reconciliation customer payment generation
 
-The **DXC Agent for bank reconciliation customer payment generation** allows users to automatically create new customer payment journals for relevant bank documents. Users can also choose to post and match these journals as part of the agent process.
+The **DXC Agent for bank reconciliation customer payment generation** allows users to automatically create new customer payment journals for relevant bank statement records. Users can also choose to post and match these journals as part of the agent process.
 
 # Setup
 
