@@ -112,8 +112,11 @@ Where the agent is enabled, the following buttons will be enabled in the **Unmat
 
 ### Matched transactions
 
+Where the Bank account's **Customer payment journal posting** was set to _Yes_, the Customer payment journals are posted and automatically matched to the original bank statement record. 
+The following sections only applies to above set to _Yes_.
+
 #### Journals
-Where the Bank account's **Customer payment journal posting** was set to _Yes_, button **Journals** will be enabled and allow the user to navigate to the posted journal.
+Button **Journals** will be enabled and allow the user to navigate to the posted journal.
 
 #### Cancel payment
 Button **Cancel payment** can be used to create an "opposite"/reversing transaction and move the posted bank document to unmatched.
@@ -131,3 +134,8 @@ The transactions that have been matched by the Agent can easily be viewed in **M
 To view Agent reasoning, see **Matching justification** for more information.
 
 ![Matching justification](../IMAGES/agent-bankrecon-justification.png)
+
+#### Matching type
+
+The **Matching type** will be **Generate customer payment**.
+
