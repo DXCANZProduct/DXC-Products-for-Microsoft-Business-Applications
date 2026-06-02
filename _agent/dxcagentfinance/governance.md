@@ -281,6 +281,7 @@ The following automated controls are availabe in DXC Agent for Bank reconciliati
   - **Run reconciliation agent** - This setting allows users to automatically run agent/workflow with 'Reconcile after import'. If the bank account has a 'Default matching rule set' assigned, this set will be run first and thereafter the agent/workflow.
   - **Agent or workflow id** - Provides the ability to run multiple licensed agents in a specific order. For example where you want the agent to match first and thereafter create new transactions. 
   - **Customer payment journal posting** - The Agent for Customer Payment Journal Generation will leave the created customer payment journal unposted where this field is set to _No_, which is then available for Human review for manual posting.
+- **Bank transaction types** - Assign the applicable "new transaction" action to each Bank transaction type, this limits which bank statement records are included in each "new transaction" run.
 - **All agents**
     - **Enabled** - The agent functionality is only available to users where this field is set to _Yes_.
     - **Agent output format** - This field is automatically populated per agent and not editable by power users, as a specific output format is expected by the agent.
@@ -290,6 +291,8 @@ The following automated controls are availabe in DXC Agent for Bank reconciliati
 - **Bank reconciliation Worksheet**
     - The agent buttons are only enabled for users where the specific agents are enabled.
     - A Prompt option is available to limit what bank statement records can be used in the matching, for example 'Only match where amount is less than 1500'.
+
+> Note: "New transaction" are the actions that create a new bank transaction: Generate voucher, Generate customer payment, Settle customer invoice and Generate vendor payment.
 
 ### Level 2: Human Review
 
