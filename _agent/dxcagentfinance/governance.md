@@ -266,3 +266,28 @@ For a production bank reconciliation AI agent, a strong governance structure wou
 
 A useful principle is that the AI should be treated as a preparer or analyst, not as the final approver of financial records. Final accountability for reconciliations and financial reporting should remain with authorized finance personnel.
 
+# Governance in DXC Agent for Finance
+
+## Level 1: Automated controls
+
+The following automated controls are availabe in DXC Agent for Bank reconciliation:
+- **Cash and bank management parameters**
+    -  **Validate date difference between statement lines and bank documents during bank reconciliation process** - The agent will only match bank statements to bank documents that fall within the allowed date difference if this setting is set to _Yes_.
+    -  **Validate transaction type mapping** - The agent will apply this restriction if set to _Yes_.
+    -  - **Agent or workflow id** - Provides the ability to run multiple licensed agents in a specific order. For example where you want the agent to match and thereafter create new transactions. This field is also available on the Bank account, if not assigned on Bank account, the agent/workflow assigned here would apply. If not assigned on the parameters, the default 'DXCAgentForBankReconciliation & DXCAgentForBankReconciliationValidation' will be run.
+    -  **Agent historical reference period** - Specifies how many months of historical data the agent can use during its run when creating new voucher transactions.
+- **Bank accounts**
+  - **Allowed penny difference** - The agent only matches one-to-one bank statement transactions to bank transactions where the amount variance falls within the allowed penny difference for the bank account when the bank reconciliation was created.
+  - **Run reconciliation agent** - This setting allows users to automatically run agent/workflow with 'Reconcile after import'. T=If the bank account has any 'Default matching rule set', this set will be run first, then the agent/workflow
+  - **Agent or workflow id** - Provides the ability to run multiple licensed agents in a specific order. For example where you want the agent to match and thereafter create new transactions. 
+  - **Customer payment journal posting** - The Agent for Customer Payment Journal Generation will leave the created customer payment journal unposted where this field is set to _No_ which is then available for Human review.
+- **All agents**
+    - **Enabled** - The agent functionality is only available to users where this field is set to _Yes_.
+    - **Agent output format** - This field is automatically populated per agent and not editable by power users, as a specific output format is expected by the agent.
+    - **Knowledge sources** - The Agent for Customer Payment Journal Generation will look for values matching the set criteria, for example Invoice format
+- **Agent workflows**
+    - Ability to set order of agents to be run if the bank account is set to automatically run with Reconcile after import 
+- **Bank reconciliation Worksheet**
+    - The agent buttons are only enabled for users where the specific agents are enabled.
+    - A Prompt option is available to limit what bank statement records can be used in the matching, for example 'Only match where amount is less than 1500'.
+
