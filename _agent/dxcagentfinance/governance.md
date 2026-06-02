@@ -274,7 +274,7 @@ The following automated controls are availabe in DXC Agent for Bank reconciliati
 - **Cash and bank management parameters**
     -  **Validate date difference between statement lines and bank documents during bank reconciliation process** - The agent will only match bank statements to bank documents that fall within the allowed date difference if this setting is set to _Yes_.
     -  **Validate transaction type mapping** - The agent will apply this restriction if set to _Yes_.
-    -  - **Agent or workflow id** - Provides the ability to run multiple licensed agents in a specific order. For example where you want the agent to match and thereafter create new transactions. This field is also available on the Bank account, if not assigned on Bank account, the agent/workflow assigned here would apply. If not assigned on the parameters, the default 'DXCAgentForBankReconciliation & DXCAgentForBankReconciliationValidation' will be run.
+    -  **Agent or workflow id** - Provides the ability to run multiple licensed agents in a specific order. For example where you want the agent to match and thereafter create new transactions. This field is also available on the Bank account, if not assigned on Bank account, the agent/workflow assigned here would apply. If not assigned on the parameters, the default 'DXCAgentForBankReconciliation & DXCAgentForBankReconciliationValidation' will be run.
     -  **Agent historical reference period** - Specifies how many months of historical data the agent can use during its run when creating new voucher transactions.
 - **Bank accounts**
   - **Allowed penny difference** - The agent only matches one-to-one bank statement transactions to bank transactions where the amount variance falls within the allowed penny difference for the bank account when the bank reconciliation was created.
@@ -310,4 +310,8 @@ The following human review options are available in DXC Agent for Bank reconcili
 
 ### Level 4: Management Reporting
 
+The following reporting is available in DXC Agent for Bank reconciliation:
+
+- **All agents**
+    - **Dashboard** - Where dashboard applies to the agent and 'Enable telemetry' is set to _Yes_, the power user can view telemetry data on 'Go to dashboard' and the data is displayed by month. Examples of what is logged can be viewed on each agent's user guide.
 
