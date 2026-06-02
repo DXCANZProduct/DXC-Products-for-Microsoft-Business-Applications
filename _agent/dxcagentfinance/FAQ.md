@@ -20,6 +20,10 @@ A list of installed models will be displayed on the **Version** tab.  Scroll to 
 Microsoft Foundry used by the agent is controlled by the client. <br> 
 Data Isolation: Data used in Microsoft Foundry remains within the customer's Azure tenant and is encrypted at rest.
 
+### Governance
+
+See the following section for more details around [Governance]({{ '/agent/dxcagentfinance/governance' | relative_url }})
+
 ### How many tokens does it use
 Approximately 115 tokens per record. <br>
 Using gpt5.2 has 250000 tokens limit per minute. <br>
@@ -36,6 +40,7 @@ If the product is available in About > Version, check if it has been enabled in 
 The following can be enabled in any order after 1. has been enabled (if licensed):
 - DXC Agent for bank reconciliation
 - DXC Agent for bank reconciliation voucher generation
+- DXC Agent for bank reconciliation payment journal generation
 
 If you don't see the features, click **Check for updates**. <br>
 
