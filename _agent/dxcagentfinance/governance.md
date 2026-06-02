@@ -268,7 +268,7 @@ A useful principle is that the AI should be treated as a preparer or analyst, no
 
 # Governance in DXC Agent for Finance
 
-## Level 1: Automated controls
+### Level 1: Automated controls
 
 The following automated controls are availabe in DXC Agent for Bank reconciliation:
 - **Cash and bank management parameters**
@@ -290,4 +290,24 @@ The following automated controls are availabe in DXC Agent for Bank reconciliati
 - **Bank reconciliation Worksheet**
     - The agent buttons are only enabled for users where the specific agents are enabled.
     - A Prompt option is available to limit what bank statement records can be used in the matching, for example 'Only match where amount is less than 1500'.
+
+### Level 2: Human Review
+
+The following human review options are available in DXC Agent for Bank reconciliation:
+
+- **Bank accounts**
+    - **Customer payment journal posting** - The Agent for Customer Payment Journal Generation will leave the created customer payment journal unposted where this field is set to _No_ which is then available for Human review.
+- **Bank reconciliation**
+    - **Matched transactions** - Where the agent matched or posted a new transaction the following are available for human review:
+        -  **Matching rule** - 'DXCAgent' is assigned to easily identify which records where matched/posted by the agent/s
+        -  **Matching type** - The applicable matching type is automatically assigned, for example 'Match with bank document', 'Generate voucher', 'Generate customer payment' or 'Generate vendor payment'. This makes it easier for human to determine if the agent matched or generated a new transaction.
+        -  **Matching justification** - The agent populates this field with a justification / audit trial for its reasoning.
+        -  **Unmatch / Reverse / Cancel payment** - Where the human review determines the agent matched/posted incorrect transaction, these buttons can be used to unmatch or reverse the new transaction.
+
+### Level 3: Independent Oversight
+
+
+
+### Level 4: Management Reporting
+
 
