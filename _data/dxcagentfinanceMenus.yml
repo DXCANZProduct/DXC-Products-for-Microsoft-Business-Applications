@@ -10,5 +10,7 @@ toc:
       url: /agent/dxcagentfinance/bank-recon/voucher
     - page: DXC Agent for bank reconciliation customer payment generation
       url: /agent/dxcagentfinance/bank-recon/customer  
+  - page: Governance
+    url: /agent/dxcagentfinance/governance  
   - page: FAQ
     url: /agent/dxcagentfinance/FAQ
