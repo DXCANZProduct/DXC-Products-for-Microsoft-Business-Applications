@@ -278,15 +278,15 @@ The following automated controls are availabe in DXC Agent for Bank reconciliati
     -  **Agent historical reference period** - Specifies how many months of historical data the agent can use during its run when creating new voucher transactions.
 - **Bank accounts**
   - **Allowed penny difference** - The agent only matches one-to-one bank statement transactions to bank transactions where the amount variance falls within the allowed penny difference for the bank account when the bank reconciliation was created.
-  - **Run reconciliation agent** - This setting allows users to automatically run agent/workflow with 'Reconcile after import'. T=If the bank account has any 'Default matching rule set', this set will be run first, then the agent/workflow
-  - **Agent or workflow id** - Provides the ability to run multiple licensed agents in a specific order. For example where you want the agent to match and thereafter create new transactions. 
-  - **Customer payment journal posting** - The Agent for Customer Payment Journal Generation will leave the created customer payment journal unposted where this field is set to _No_ which is then available for Human review.
+  - **Run reconciliation agent** - This setting allows users to automatically run agent/workflow with 'Reconcile after import'. If the bank account has a 'Default matching rule set' assigned, this set will be run first and thereafter the agent/workflow.
+  - **Agent or workflow id** - Provides the ability to run multiple licensed agents in a specific order. For example where you want the agent to match first and thereafter create new transactions. 
+  - **Customer payment journal posting** - The Agent for Customer Payment Journal Generation will leave the created customer payment journal unposted where this field is set to _No_ which is then available for Human review for manual posting.
 - **All agents**
     - **Enabled** - The agent functionality is only available to users where this field is set to _Yes_.
     - **Agent output format** - This field is automatically populated per agent and not editable by power users, as a specific output format is expected by the agent.
-    - **Knowledge sources** - The Agent for Customer Payment Journal Generation will look for values matching the set criteria, for example Invoice format
+    - **Knowledge sources** - The Agent for Customer Payment Journal Generation will look for values matching the set criteria, for example Invoice format.
 - **Agent workflows**
-    - Ability to set order of agents to be run if the bank account is set to automatically run with Reconcile after import 
+    - Ability to set order of agents to be run if the bank account is set to automatically run with Reconcile after import .
 - **Bank reconciliation Worksheet**
     - The agent buttons are only enabled for users where the specific agents are enabled.
     - A Prompt option is available to limit what bank statement records can be used in the matching, for example 'Only match where amount is less than 1500'.
@@ -299,10 +299,10 @@ The following human review options are available in DXC Agent for Bank reconcili
     - **Customer payment journal posting** - The Agent for Customer Payment Journal Generation will leave the created customer payment journal unposted where this field is set to _No_ which is then available for Human review.
 - **Bank reconciliation**
     - **Matched transactions** - Where the agent matched or posted a new transaction the following are available for human review:
-        -  **Matching rule** - 'DXCAgent' is assigned to easily identify which records where matched/posted by the agent/s
+        -  **Matching rule** - 'DXCAgent' is assigned to easily identify which records where matched/posted by the agent/s.
         -  **Matching type** - The applicable matching type is automatically assigned, for example 'Match with bank document', 'Generate voucher', 'Generate customer payment' or 'Generate vendor payment'. This makes it easier for human to determine if the agent matched or generated a new transaction.
         -  **Matching justification** - The agent populates this field with a justification / audit trial for its reasoning.
-        -  **Unmatch / Reverse / Cancel payment** - Where the human review determines the agent matched/posted incorrect transaction, these buttons can be used to unmatch or reverse the new transaction.
+        -  **Unmatch / Reverse / Cancel payment** - Where the human review determines the agent matched/posted an incorrect transaction, these buttons can be used to unmatch or reverse the new transaction.
 
 ### Level 3: Independent Oversight
 
