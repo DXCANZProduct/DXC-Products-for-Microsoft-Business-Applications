@@ -309,7 +309,7 @@ The following human review options are available in DXC Agent for Bank reconcili
 The DXC Agents are included in the Regression testing program with each new D365 preview version. <br>
 Once testing is complete, the result is logged on Release notes. 
 
-> Notes: The regression testing covers a wide scenario range but is not guarenteed to cover all possible scenarios. It is still recommended customer tests in their environment on their data.
+> Note: The regression testing covers a wide scenario range but is not guarenteed to cover all possible scenarios. It is still recommended customer tests in their environment on their data.
 
 ### Level 4: Management Reporting
 
