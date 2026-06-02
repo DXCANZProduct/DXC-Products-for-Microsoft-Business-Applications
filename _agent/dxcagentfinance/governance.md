@@ -280,7 +280,7 @@ The following automated controls are availabe in DXC Agent for Bank reconciliati
   - **Allowed penny difference** - The agent only matches one-to-one bank statement transactions to bank transactions where the amount variance falls within the allowed penny difference for the bank account when the bank reconciliation was created.
   - **Run reconciliation agent** - This setting allows users to automatically run agent/workflow with 'Reconcile after import'. If the bank account has a 'Default matching rule set' assigned, this set will be run first and thereafter the agent/workflow.
   - **Agent or workflow id** - Provides the ability to run multiple licensed agents in a specific order. For example where you want the agent to match first and thereafter create new transactions. 
-  - **Customer payment journal posting** - The Agent for Customer Payment Journal Generation will leave the created customer payment journal unposted where this field is set to _No_ which is then available for Human review for manual posting.
+  - **Customer payment journal posting** - The Agent for Customer Payment Journal Generation will leave the created customer payment journal unposted where this field is set to _No_, which is then available for Human review for manual posting.
 - **All agents**
     - **Enabled** - The agent functionality is only available to users where this field is set to _Yes_.
     - **Agent output format** - This field is automatically populated per agent and not editable by power users, as a specific output format is expected by the agent.
@@ -296,7 +296,7 @@ The following automated controls are availabe in DXC Agent for Bank reconciliati
 The following human review options are available in DXC Agent for Bank reconciliation:
 
 - **Bank accounts**
-    - **Customer payment journal posting** - The Agent for Customer Payment Journal Generation will leave the created customer payment journal unposted where this field is set to _No_ which is then available for Human review.
+    - **Customer payment journal posting** - The Agent for Customer Payment Journal Generation will leave the created customer payment journal unposted where this field is set to _No_, which is then available for Human review.
 - **Bank reconciliation**
     - **Matched transactions** - Where the agent matched or posted a new transaction the following are available for human review:
         -  **Matching rule** - 'DXCAgent' is assigned to easily identify which records where matched/posted by the agent/s.
