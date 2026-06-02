@@ -313,5 +313,5 @@ The following human review options are available in DXC Agent for Bank reconcili
 The following reporting is available in DXC Agent for Bank reconciliation:
 
 - **All agents**
-    - **Dashboard** - Where dashboard applies to the agent and 'Enable telemetry' is set to _Yes_, the power user can view telemetry data on 'Go to dashboard' and the data is displayed by month. Examples of what is logged can be viewed on each agent's user guide.
+    - **Dashboard** - Where dashboard applies to the agent and 'Enable telemetry' is set to _Yes_, the power user can view telemetry by month on 'Go to dashboard'. Examples of what is logged can be viewed on each agent's user guide.
 
