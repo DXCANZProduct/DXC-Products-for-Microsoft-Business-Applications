@@ -37,6 +37,8 @@ This setup will use the **Vendor bank account name** instead of the **Vendor nam
 
 -	Expand the Payment Management FastTab and select whether the EFT file should **Use vendor bank name**.
 
+> Note: When  generating the payment and the vendor bank account name / vendor name is **blank** (depending on which one is used), you will receive an error about it being missing for the specific vendor/s.
+
 ### User identification
 Option to set the User identification to be used when generating the vendor payment.
 
