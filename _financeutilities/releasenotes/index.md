@@ -27,6 +27,12 @@ Release notes for other models included in product:
 - [DXC License Manager]({{'licensemanager/releasenotes/dxclicensemanager/' | relative_url }})
 - [DXC License]({{'licensemanager/releasenotes/dxclicense' | relative_url }})
 
+# Features not yet supported
+
+Feature name	  | D365 version	  
+:--       	  |:--        
+Display payee name for customer/vendor payment information  | 10.0.47
+
 
 # Current version
 
