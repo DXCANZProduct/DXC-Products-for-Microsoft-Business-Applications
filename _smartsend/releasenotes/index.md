@@ -1,8 +1,8 @@
 ---
 layout: releasenotes-content
 header: Smart Business Form Email Manager (SmartSend)
-title: 10.0.45.20260609
-release-version: 10.0.45.20260609
+title: 10.0.45.202606111
+release-version: 10.0.45.202606111
 state: current
 ---
 
