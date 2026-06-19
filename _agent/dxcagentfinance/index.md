@@ -24,7 +24,7 @@ The following agents are available (if licensed):
 - [DXC Agent for bank reconciliation]({{ '/agent/dxcagentfinance/bank-recon/match' | relative_url }}) - **Match** bank statement transactions with bank documents, and bank documents to bank documents.
 - [DXC Agent for bank reconciliation voucher generation]({{ '/agent/dxcagentfinance/bank-recon/voucher' | relative_url }}) - Create new **voucher** transaction based on history for the bank account.
 - DXC Agent for bank reconciliation payment journal generation contains both of the following:
-    - [Customer payments]({{ '/agent/dxcagentfinance/bank-recon/customer' | relative_url }}) - Create new **customer** payment journals. Users can also choose to post and match these journals as part of the agent process, or leave the journal unposted for review.
+    - [Customer payments]({{ '/agent/dxcagentfinance/bank-recon/customer' | relative_url }}) - Create new **customer** payment journals and settle invoice where applicable. Users can also choose to post and match these journals as part of the agent process, or leave the journal unposted for review.
     - [Vendor payments]({{ '/agent/dxcagentfinance/bank-recon/vendor' | relative_url }}) - Create new **vendor** payment journals. Users can also choose to post and match these journals as part of the agent process, or leave the journal unposted for review.
 
 ### Disclaimer
