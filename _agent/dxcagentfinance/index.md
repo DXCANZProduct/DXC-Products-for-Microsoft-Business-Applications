@@ -21,8 +21,8 @@ The **DXC Agent for Bank Reconciliation** assists finance teams by:
 This user guide provides an overview of the Bank Reconciliation Agent’s purpose, capabilities, and usage within D365 Finance and Operations. It is intended to help users understand how the agent supports efficient bank reconciliation and how it fits into the overall cash and bank management process.
 
 The following agents are available (if licensed): 
-- [**DXC Agent for bank reconciliation**]({{ '/agent/dxcagentfinance/bank-recon/match' | relative_url }}) - **Match** bank statement transactions with bank documents, and bank documents to bank documents.
-- [**DXC Agent for bank reconciliation voucher generation**]({{ '/agent/dxcagentfinance/bank-recon/voucher' | relative_url }}) - Create new **voucher** transaction based on history for the bank account.
+- **DXC Agent for bank reconciliation** - [Match]({{ '/agent/dxcagentfinance/bank-recon/match' | relative_url }}) bank statement transactions with bank documents, and bank documents to bank documents.
+- **DXC Agent for bank reconciliation voucher generation** - [Create new voucher]({{ '/agent/dxcagentfinance/bank-recon/voucher' | relative_url }}) transaction based on history for the bank account.
 - **DXC Agent for bank reconciliation payment journal generation** contains both of the following:
     - [Customer payments]({{ '/agent/dxcagentfinance/bank-recon/customer' | relative_url }}) - Create new **customer** payment journals and settle invoice where applicable. Users can also choose to post and match these journals as part of the agent process, or leave the journal unposted for review.
     - [Vendor payments]({{ '/agent/dxcagentfinance/bank-recon/vendor' | relative_url }}) - Create new **vendor** payment journals. Users can also choose to post and match these journals as part of the agent process, or leave the journal unposted for review.
