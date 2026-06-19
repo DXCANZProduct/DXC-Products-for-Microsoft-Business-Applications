@@ -30,8 +30,8 @@ See below table for information on fields.
 
 Field                  | Description
 :--                    |:--
-**Agent name**         | DXCAgentForBankReconciliationCustPaymentJournalGeneration
-**Agent description**  | Agent for Customer Payment Journal Generation
+**Agent name**         | DXCAgentForBankReconciliationVendPaymentJournalGeneration
+**Agent description**  | Agent for Vendor Payment Journal Generation
 **Agent connection details**  | Select the agent created in prerequisite [Agent connection parameters](../dxcagentframework/Setup.md#b2--agent-connection-parameters)
 **Agent instructions**  | Automatically populated with default Agent instructions
 **Agent output format**  | Automatically populated with default output format
@@ -50,39 +50,46 @@ Per each run, the following telemetry could be logged per agent. The data is dis
 
 ### Agent knowledge sources
 
-The following **Agent knowledge sources** are automatically created for this agent based on Number sequences assigned for the applicable **Accounts receivable parameter**fields.
+**Agent knowledge sources** are available to select which table and fields the agent needs to use to find values in the bank statement that will help determine the Vendor account.
 
-These can be disabled, edited (for example adding more values), etc.
+**Fields:**
+- Enabled - Enable / disable the knowledge source record
+- Type - Select the applicable type of source, options are Text, Public website or Field
+- Table - Select the applicable table, options are VendBankAccount (Vendor bank accounts), VendInvoiceJour (Vendor invoice journal), VendTable  (Vendors)
+- Table name - Display field for table selected
+- Field ID - Select the applicable field from the selected table
+- Field name - Display field for field selected
 
-Name        | Description         | Type      | Example value
-:--         |:--                  |:--        |:--  
-AccountNum    | Customer account    | Text    | The AccountNum will appear in the following format: AG### where ### represents numeric digits.
-Invoice       | Invoice             | Text    | The Invoice will appear in the following format: CIV-######## or FTI-######## where ######## represents numeric digits.
-PackingSlipId | Packing slip number    | Text    | The PackingSlipId will appear in the following format: SPK-######## where ######## represents numeric digits.
-SalesId        | Sales order        | Text    | The SalesId will appear in the following format: ###### or SO###### where ###### represents numeric digits.
+**Examples:**
+
+Type         | Table     | Table name    | Field ID | Field name    | Value
+:--          |:--        |:--            |:--        |:--             |:--   
+Field        | VendTable    |  Vendors   | AccountNum    | Vendor account | The AccountNum will appear in the following format: C### where # represents numeric digits.
+Field        | VendBankAccount    |  Vendor bank accounts   | SWIFTNo    | SWIFT code | The SWIFTNo will appear in the following format: ANZBAU3M##### where # represents numeric digits.
+Field        | VendInvoiceJour    |  Vendor invoice journal   | InvoiceId    | Invoice | The InvoiceId will appear in the following format: I####### or IN####### or POI######## or ######-# where # represents numeric digits.
 
 
 ## Bank accounts
 
 Navigate to **Cash and bank management > Setup > Bank accounts** to setup the following:
-- **Customer payment journal posting** - Determines if the created customer payment journal should be posted.
-    - **Yes** - The journal will be created, posted and automatically matched to the original bank statement line. **Journal** button on **Matched transactions** in the Reconciliation worksheet allows user to easily navigate to these posted customer payment journals.
+- **Vendor payment journal posting** - Determines if the created vendor payment journal should be posted.
+    - **Yes** - The journal will be created, posted and automatically matched to the original bank statement line. **Journal** button on **Matched transactions** in the Reconciliation worksheet allows user to easily navigate to these posted vendor payment journals. 
     - **No** - The journal will be created, but _not_ posted. The message in Action center will list the **Journal batch numbers** that were created. If the agent is run again, these bank statement records won't be included again, thus no duplication. **Journal** button on **Matched transactions** can't be used for these as the journal has not been posted by the agent. Once the journals have been reviewed and posted, the matching can be done in the reconciliation either by running agent 'DXC Agent for bank reconciliation', reconciliation matching rules or manual matching.
 
 
 ## Bank transaction types
 
 Navigate to **Cash and bank management > Setup > Bank transaction types** and assign the applicable **Action** to each bank transaction type. <br>
-This feature will review the bank statement records where the Action **Generate customer payment** or **Settle customer invoice** is mapped.
+This feature will review the bank statement records where the Action **Generate vendor payment** is mapped.
 
-Example: **Bank transaction type** value **01** has Action **Settle customer invoice** assigned.
+Example: **Bank transaction type** value **12** has Action **Generate vendor payment** assigned.
 
 ## Transaction code mapping
 
 Navigate to **Cash and bank management > Setup > Advanced bank reconciliation setup > Transaction code mapping** and ensure all the applicable bank transaction types are mapped for the bank account.
 
-Example: Company bank account has **Statement transaction code** value **050** mapped to **Bank transaction type** value **01**. <br> 
-Thus all bank statement records with **Bank transaction code** value **050** will be reviewed against **Agent knowledge sources** and table **CustInvoiceForBankReconciliationView**. Where the D365 Customer account can be determined, the customer payment journal will be created. If the **Invoice** was provided within a Bank statement field, this will be populated in the Invoice field in the journal and settled where the Action was **Settle customer invoice**. <br> 
+Example: Company bank account has **Statement transaction code** value **000** mapped to **Bank transaction type** value **12**. <br> 
+Thus all bank statement records with **Bank transaction code** value **000** will be reviewed against **Agent knowledge sources**. Where the D365 Vendor account can be determined, the vendor payment journal will be created. 
 
 
 ## Default description
