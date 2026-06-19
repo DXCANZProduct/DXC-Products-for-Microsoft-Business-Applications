@@ -13,8 +13,9 @@ This page describes the features planned for future releases and planned release
 
 ## Release schedule
 
-- July 2026
-- October 2026
+- September 2026
+- March 2027
+- June 2027
 
 ## Roadmap features
 
