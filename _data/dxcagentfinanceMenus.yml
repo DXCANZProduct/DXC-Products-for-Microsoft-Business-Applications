@@ -9,7 +9,9 @@ toc:
     - page: DXC Agent for bank reconciliation voucher generation
       url: /agent/dxcagentfinance/bank-recon/voucher
     - page: DXC Agent for bank reconciliation customer payment generation
-      url: /agent/dxcagentfinance/bank-recon/customer  
+      url: /agent/dxcagentfinance/bank-recon/customer
+    - page: DXC Agent for bank reconciliation vendor payment generation
+      url: /agent/dxcagentfinance/bank-recon/vendor      
   - page: Governance
     url: /agent/dxcagentfinance/governance  
   - page: FAQ
