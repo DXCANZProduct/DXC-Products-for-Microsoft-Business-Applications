@@ -113,15 +113,15 @@ When importing bank statements with **Reconcile after import** enabled and the p
 
 The agent can be manually run by navigating to **Cash and bank management > Bank statement reconciliation > Bank reconciliation** and selecting the applicable reconciliation's **Worksheet**.
 
-Where the agent is enabled, the **Create customer payment with agent** button will be enabled in the **Unmatched transactions** tab. 
-- To run the agent for all unmatched bank statement transactions, no need to select any records only click **Create customer payment with agent**.
-- To run the agent for manually selected records, select the applicable unmatched bank statement transactions and click **Create customer payment with agent**
+Where the agent is enabled, the **Create vendor payment with agent** button will be enabled in the **Unmatched transactions** tab. 
+- To run the agent for all unmatched bank statement transactions, no need to select any records only click **Create vendor payment with agent**.
+- To run the agent for manually selected records, select the applicable unmatched bank statement transactions and click **Create vendor payment with agent**
 
 ## Results
 
 ### Matched transactions
 
-Where the Bank account's **Customer payment journal posting** was set to _Yes_, the Customer payment journals are posted and automatically matched to the original bank statement record. 
+Where the Bank account's **Vendor payment journal posting** was set to _Yes_, the Vendor payment journals are posted and automatically matched to the original bank statement record. 
 The following sections only applies to above set to _Yes_.
 
 #### Journals
@@ -146,4 +146,4 @@ To view Agent reasoning, see **Matching justification** for more information.
 
 #### Matching type
 
-The **Matching type** will be **Generate customer payment**.
+The **Matching type** will be **Generate vendor payment**.
