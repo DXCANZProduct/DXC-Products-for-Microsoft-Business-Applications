@@ -4,13 +4,13 @@ toc:
   - title: Bank reconciliation agents
     id: dxcagentfinance/bank-recon
     Level_1_items:
-    - page: DXC Agent for bank reconciliation
+    - page: Match with bank document
       url: /agent/dxcagentfinance/bank-recon/match
-    - page: DXC Agent for bank reconciliation voucher generation
+    - page: Generate voucher
       url: /agent/dxcagentfinance/bank-recon/voucher
-    - page: DXC Agent for bank reconciliation customer payment generation
+    - page: Generate customer payment
       url: /agent/dxcagentfinance/bank-recon/customer
-    - page: DXC Agent for bank reconciliation vendor payment generation
+    - page: Generate vendor payment
       url: /agent/dxcagentfinance/bank-recon/vendor      
   - page: Governance
     url: /agent/dxcagentfinance/governance  
