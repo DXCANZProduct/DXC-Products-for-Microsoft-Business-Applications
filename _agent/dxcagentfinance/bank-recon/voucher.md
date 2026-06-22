@@ -79,7 +79,13 @@ Where the offset account needs to include tax in the new voucher transaction, en
 This feature uses **Default description** when creating the new transaction.
 
 1. Enable feature **Enable default descriptions for advanced bank reconciliation**
-2. Setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation) for **Bank - reconciliation worksheet** for each applicable **Language** or select **user**. <br> 
+2. Setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation) for **Bank - reconciliation worksheet** for each applicable **Language** or select **user**. <br>
+
+## Cash and bank parameters
+
+Navigate to **Cash and bank management > Setup > Cash and bank parameters**.
+
+- **Agent historical reference period** - Applies only to Agent for Bank Reconciliation Voucher Generation. Specifies how many months of historical transaction data the agent can use during its first run when creating new transactions. This setting does not apply to subsequent runs.
 
 # Processing
 
