@@ -120,3 +120,11 @@ To view Agent reasoning, see **Matching justification** for more information.
 
 ![Matching justification](../IMAGES/agent-bankrecon-justification.png)
 
+### Bank reconciliation
+
+The following agent numbers are available to view on each bank reconciliation and the General tab:
+- **Bank statements matched by agent** - Count of bank statements matched by agent for the bank reconciliation
+- **Percentage of bank statements matched by agent** - Percentage of bank statements matched by agent for the bank reconciliation
+- **Vouchers created by agent** - Count of vouchers created by agent for the bank reconciliation
+
+
