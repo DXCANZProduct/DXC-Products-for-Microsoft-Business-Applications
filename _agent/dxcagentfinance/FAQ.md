@@ -45,6 +45,6 @@ The following can be enabled in any order after 1. has been enabled (if licensed
 If you don't see the features, click **Check for updates**. <br>
 
 ### Error: Generating receipt journal fails. Please refresh the page to retry.
-Will receive this error when the bank account is set to not automatically post customer or vendor payments and a user tries to use the agent to create a duplicate payment journal, i.e the agent has already created an open payment journal for the record, thus blocks duplicate agent created journals.
+This error occurs when the bank account is configured not to automatically post agent created customer or vendor payments, and a user attempts to use the agent to create a payment journal that already exists. For example, if the agent has already created an open payment journal for the bank statement record, it will prevent the creation of another agent-generated payment journal to avoid duplicates.
 
 
