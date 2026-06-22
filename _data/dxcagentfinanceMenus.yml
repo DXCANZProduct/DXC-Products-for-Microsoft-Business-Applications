@@ -6,11 +6,11 @@ toc:
     Level_1_items:
     - page: Match with bank document
       url: /agent/dxcagentfinance/bank-recon/match
-    - page: Generate voucher
+    - page: Create voucher
       url: /agent/dxcagentfinance/bank-recon/voucher
-    - page: Generate customer payment
+    - page: Create customer payment
       url: /agent/dxcagentfinance/bank-recon/customer
-    - page: Generate vendor payment
+    - page: Create vendor payment
       url: /agent/dxcagentfinance/bank-recon/vendor      
   - page: Governance
     url: /agent/dxcagentfinance/governance  
