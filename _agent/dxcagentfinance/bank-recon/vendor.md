@@ -147,3 +147,11 @@ To view Agent reasoning, see **Matching justification** for more information.
 #### Matching type
 
 The **Matching type** will be **Generate vendor payment**.
+
+### Bank reconciliation
+
+The following agent numbers are available to view on each bank reconciliation and the General tab:
+- **Bank statements matched by agent** - Count of bank statements matched by agent for the bank reconciliation
+- **Percentage of bank statements matched by agent** - Percentage of bank statements matched by agent for the bank reconciliation
+- **Vendor payments created by agent** - Count of Vendor payments created by agent for the bank reconciliation
+
