@@ -142,7 +142,7 @@ The transactions that have been matched by the Agent can easily be viewed in **M
 
 To view Agent reasoning, see **Matching justification** for more information.
 
-![Matching justification](../IMAGES/agent-bankrecon-justification.png)
+![Matching justification](../IMAGES/agent-bankrecon-matched-vendor.png)
 
 #### Matching type
 
