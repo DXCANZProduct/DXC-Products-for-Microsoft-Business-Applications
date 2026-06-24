@@ -49,6 +49,13 @@ The DXC Finance Utilities module provides enhanced functionalities to Microsoft 
 ## Demonstration
 Watch DXC Technology’s short demonstration on Finance Utilities [here](https://www.youtube.com/playlist?list=PLIM01nS-jtL_uUFd0JRmQx1MV6WsaMfLO)
 
+### Agent
+**Duration: 2 minutes**
+
+A brief overview of DXC Agent for Finance's Bank reconciliation functionality
+
+- [Watch recording](https://www.youtube.com/watch?v=wXCjh0GDJf8). Duration: 2 minutes
+
 ### Modern bank reconciliation - Overview
 **Duration: 7.5 minutes**
 
