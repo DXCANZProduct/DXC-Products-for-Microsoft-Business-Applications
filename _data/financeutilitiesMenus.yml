@@ -1,6 +1,11 @@
 toc:
   - page: Introduction
     url: /financeutilities
+  - title: Agent
+    id: dxcagentfinance
+    Level_1_items:
+    - page: Bank reconciliation
+      url: /financeutilities/dxcagentfinance/bank-recon
   - title: Cash and bank management
     id: cash-and-bank-management
     Level_1_items:
