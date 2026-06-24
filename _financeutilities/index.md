@@ -54,7 +54,7 @@ Watch DXC Technology’s short demonstration on Finance Utilities [here](https:/
 
 A brief overview of DXC Agent for Finance's Bank reconciliation functionality
 
-- [Watch recording](https://www.youtube.com/watch?v=wXCjh0GDJf8). Duration: 2 minutes
+- [Watch recording](https://www.youtube.com/watch?v=wXCjh0GDJf8)
 
 ### Modern bank reconciliation - Overview
 **Duration: 7.5 minutes**
