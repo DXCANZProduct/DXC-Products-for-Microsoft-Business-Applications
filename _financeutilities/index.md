@@ -8,7 +8,7 @@ toc: true
 The DXC Finance Utilities module provides enhanced functionalities to Microsoft Dynamics 365 for the following:
 
 -   **Agent**
-    - Agent for Modern bank reconciliation (licensed separately). DXC Agent for Bank Reconciliation in D365 FSCM automates the bank reconciliation process by intelligently matching transactions and creating new reconciliation entries without relying on traditional Reconciliation matching rules. See [link](AGENT-FINANCE/bank-recon) for more details.
+    - Agent for Modern bank reconciliation (licensed separately). DXC Agent for Bank Reconciliation in D365 FSCM automates the bank reconciliation process by intelligently matching transactions and creating new reconciliation entries without relying on traditional Reconciliation matching rules. See [link](_financeutilities/AGENT-FINANCE/bank-recon) for more details.
 -   **Cash and bank management**
     -   Bank statement import formatting
     -   Advanced bank reconciliation, including:
