@@ -6,6 +6,8 @@ toc: true
 
 ## DXC Agent for Finance
 
+DXC Agent for Finance in D365 FSCM automates the bank reconciliation process by intelligently matching transactions and creating new reconciliation entries without relying on traditional Reconciliation matching rules. <br>
+
 The Finance Utilities deployable package contains the models used by [DXC Agent for Finance]({{ '/agent/dxcagentfinance' | relative_url }}). <br> 
 Its functionality is grouped into the following features, each licensed separately:
 
