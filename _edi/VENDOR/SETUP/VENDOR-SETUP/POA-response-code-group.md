@@ -36,6 +36,7 @@ POA Response codes are used to identify the status of information used in a Purc
 **Line item – inner accept**      |	Item inner accepted	                  | POAVendCodeItem / POA code item      | LIA
 **Line item – inner difference**  |	Advise of inner difference	          | POAVendCodeItem / POA code item      | ID
 **Line item - added**             | Add new line to purchase order        | POAVendCodeItem / POA code item      | ITA
+**Line - advise**                 | Advise of a change to any of the following: price, quantity and/or date  | POAVendCodeItem / POA code item | 3
 
 ## Where used
 POA response code group is assigned on the [Vendor Trading partner's](../Trading-partner) Options field called **POA responde code group**. <br>
