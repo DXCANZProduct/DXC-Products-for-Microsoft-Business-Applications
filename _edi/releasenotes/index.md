@@ -1,8 +1,8 @@
 ---
 layout: releasenotes-content
 header: Electronic Data Interchange (EDI)
-title: 10.0.45.20260625
-release-version: 10.0.45.20260625
+title: 10.0.45.20260630
+release-version: 10.0.45.20260630
 state: current
 ---
 
