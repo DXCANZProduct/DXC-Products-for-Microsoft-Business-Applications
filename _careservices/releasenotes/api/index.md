@@ -1,8 +1,8 @@
 ---
 layout: releasenotes-content
 header: Care Services
-title: 10.0.46.202606172
-release-version: 10.0.46.202606172
+title: 10.0.46.20260604
+release-version: 10.0.46.20260604
 state: current
 toc: true
 ---
