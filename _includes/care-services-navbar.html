@@ -61,40 +61,86 @@
         <summary>Release Notes</summary>
         <ul>
             <li class="list-style-type">
-              {% assign careservice = site.careservices | sort: 'release-version' | reverse%}
-              {% for cs in careservice %}
-                  {%if cs.url contains "careservices/releasenotes" and cs.state == 'current'%}
-                  <li class="list-style-type">
-                    <a href="{{ cs.url }}">{{cs.title}}</a>
-                  </li>
-                  {% endif%}
-              {% endfor %}
-              <details class="sticky-subsection" {% if page.url contains "careservices/releasenotes" and page.state == "previous" %}open{% endif %}>
-                <summary>Previous Versions</summary>
-                <ul>
+              <details open>
+                <summary>Care Services</summary>
+                  <ul>
                     {% assign careservice = site.careservices | sort: 'release-version' | reverse%}
                     {% for cs in careservice %}
-                        {%if cs.url contains "careservices/releasenotes" and cs.state == 'previous'%}
+                        {%if cs.url contains "careservices/releasenotes/careservices" and cs.state == 'current'%}
                         <li class="list-style-type">
                           <a href="{{ cs.url }}">{{cs.title}}</a>
                         </li>
                         {% endif%}
                     {% endfor %}
-                </ul>
-              </details>
-              <details class="sticky-subsection" {% if page.url contains "careservices/releasenotes" and page.state == "archive" %}open{% endif %}>
-                <summary>Archive</summary>
-                <ul>
+                    <details class="sticky-subsection" {% if page.url contains "careservices/releasenotes/careservices" and page.state == "previous" %}open{% endif %}>
+                      <summary>Previous Versions</summary>
+                      <ul>
+                          {% assign careservice = site.careservices | sort: 'release-version' | reverse%}
+                          {% for cs in careservice %}
+                              {%if cs.url contains "careservices/releasenotes/careservices" and cs.state == 'previous'%}
+                              <li class="list-style-type">
+                                <a href="{{ cs.url }}">{{cs.title}}</a>
+                              </li>
+                              {% endif%}
+                          {% endfor %}
+                      </ul>
+                    </details>
+                    <details class="sticky-subsection" {% if page.url contains "careservices/releasenotes/careservices" and page.state == "archive" %}open{% endif %}>
+                      <summary>Archive</summary>
+                      <ul>
+                          {% assign careservice = site.careservices | sort: 'release-version' | reverse%}
+                          {% for cs in careservice %}
+                              {%if cs.url contains "careservices/releasenotes/careservices" and cs.state == 'archive'%}
+                              <li class="list-style-type">
+                                <a href="{{ cs.url }}">{{cs.title}}</a>
+                              </li>
+                              {% endif%}
+                          {% endfor %}
+                      </ul>
+                    </details>
+                  </ul>
+                </details>
+            </li>
+            <li class="list-style-type">
+              <details open>
+                <summary>Services Australia APIs</summary>
+                  <ul>
                     {% assign careservice = site.careservices | sort: 'release-version' | reverse%}
                     {% for cs in careservice %}
-                        {%if cs.url contains "careservices/releasenotes" and cs.state == 'archive'%}
+                        {%if cs.url contains "careservices/releasenotes/api" and cs.state == 'current'%}
                         <li class="list-style-type">
                           <a href="{{ cs.url }}">{{cs.title}}</a>
                         </li>
                         {% endif%}
                     {% endfor %}
-                </ul>
-              </details>
+                    <details class="sticky-subsection" {% if page.url contains "careservices/releasenotes/api" and page.state == "previous" %}open{% endif %}>
+                      <summary>Previous Versions</summary>
+                      <ul>
+                          {% assign careservice = site.careservices | sort: 'release-version' | reverse%}
+                          {% for cs in careservice %}
+                              {%if cs.url contains "careservices/releasenotes/api" and cs.state == 'previous'%}
+                              <li class="list-style-type">
+                                <a href="{{ cs.url }}">{{cs.title}}</a>
+                              </li>
+                              {% endif%}
+                          {% endfor %}
+                      </ul>
+                    </details>
+                    <details class="sticky-subsection" {% if page.url contains "careservices/releasenotes/api" and page.state == "archive" %}open{% endif %}>
+                      <summary>Archive</summary>
+                      <ul>
+                          {% assign careservice = site.careservices | sort: 'release-version' | reverse%}
+                          {% for cs in careservice %}
+                              {%if cs.url contains "careservices/releasenotes/api" and cs.state == 'archive'%}
+                              <li class="list-style-type">
+                                <a href="{{ cs.url }}">{{cs.title}}</a>
+                              </li>
+                              {% endif%}
+                          {% endfor %}
+                      </ul>
+                    </details>
+                  </ul>
+                </details>
             </li>
           </ul>
       </details>

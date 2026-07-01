@@ -7,7 +7,7 @@ state: current
 toc: true
 ---
 
-# 	Release notes
+# 	Release notes - DXC Care Services
 This document describes the features that are either new or changed in the release version mentioned.
 
 # Version compatibility
