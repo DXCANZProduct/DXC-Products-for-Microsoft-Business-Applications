@@ -100,7 +100,7 @@ To update below fields based on current government online information:
 - **GST registered** - Calculated field as per criteria in [ABN status](#abn-status--validation)
 
 
-The following can be used:
+The following can be used to update the ABN values:
 - **Update ABN validation** periodic task (Organisation administration > Periodic > Update ABN validation)
 - **Run update** on **ABN validation review** form (Organisation administration > Enquiries and reports > ABN validation review)
 - When adding new records via **ABN lookup** (on Vendors or Customers forms)
