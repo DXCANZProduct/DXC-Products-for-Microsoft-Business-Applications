@@ -44,9 +44,9 @@ Set **Enable telemetry** to _Yes_ to log and view telemetry for _applicable_ age
 View the telemetry by using **Go to dashboard** on the ActionPane. This is only enabled for applicable agents.
 
 Per each run, the following telemetry could be logged per agent. The data is displayed by month: 
-- Statement count
-- Generated voucher count
-- Number of runs
+- Statement count - Number of bank statement records included in runs
+- Generated voucher count - Number of vouchers created
+- Number of runs - Each time the agent is run, either via import or button in bank reconciliation worksheet
 
 ## Bank transaction types
 
