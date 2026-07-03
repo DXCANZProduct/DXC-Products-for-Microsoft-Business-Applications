@@ -51,7 +51,7 @@ Per each run, the following telemetry could be logged per agent. The data is dis
 
 ### Agent knowledge sources
 
-The following **Agent knowledge sources** are automatically created for this agent based on Number sequences assigned for the applicable **Accounts receivable parameter**fields.
+The following **Agent knowledge sources** are automatically created for this agent based on Number sequences assigned for the applicable **Accounts receivable parameter** fields.
 
 These can be disabled, edited (for example adding more values), etc.
 
