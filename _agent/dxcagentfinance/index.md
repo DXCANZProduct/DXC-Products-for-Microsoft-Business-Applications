@@ -30,11 +30,9 @@ DXC Agent for bank reconciliation payment journal generation | • [Generate cus
 
 ### Reporting
 
-The following reporting is available in DXC Agent for Bank reconciliation:
+The following [reporting]({{ '/agent/dxcagentfinance/reporting' | relative_url }}) is available in DXC Agent for Bank reconciliation:
 
-- **All agents**
-    - **Dashboard** - Power user can view telemetry by month for applicable agents.
-      
+- **All agents dashboard** - Power users can view telemetry by month for applicable agents.
 - **Bank reconciliation** - Displays agent results for each reconciliation's Matched transactions.
 
 ### Disclaimer
