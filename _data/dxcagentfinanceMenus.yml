@@ -12,6 +12,8 @@ toc:
       url: /agent/dxcagentfinance/bank-recon/customer
     - page: Create vendor payment
       url: /agent/dxcagentfinance/bank-recon/vendor      
+  - page: Reporting
+    url: /agent/dxcagentfinance/reporting
   - page: Governance
     url: /agent/dxcagentfinance/governance  
   - page: FAQ
