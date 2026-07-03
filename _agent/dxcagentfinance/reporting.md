@@ -18,7 +18,7 @@ Navigate to **Organization administration > Agents for finance & supply chain ma
 Power users can view telemetry by month for applicable agents.
 
 Field	                                            | Match agent | Voucher agent | Customer agent  | Vendor agent	  	
-:--                                               |:--:	        |:--:           |:--:             |:--:
+:--                                               |:--:	    |:--:           |:--:             |:--:
 Statement count                                   | X           | X             | X               | X 
 Document count                                    | X           | 
 Matched statement count                           | X           | 
@@ -31,7 +31,9 @@ Generated vendor payment journal count            |             |               
 Number of runs                                    | X           | X             | X               | X 
 
       
-#### Bank reconciliation
+### Bank reconciliation
+
+Navigate to **Cash and bank management > Bank statement reconciliation > Bank reconciliation**
 
 Displays agent results for each reconciliation's Matched transactions.
 
