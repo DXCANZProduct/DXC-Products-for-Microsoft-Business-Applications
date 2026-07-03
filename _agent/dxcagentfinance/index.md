@@ -28,7 +28,14 @@ DXC Agent for bank reconciliation    | • [Match with bank documents]({{ '/agen
 DXC Agent for bank reconciliation voucher generation | • [Generate voucher]({{ '/agent/dxcagentfinance/bank-recon/voucher' | relative_url }}) - Create a new voucher transaction based on history for the bank account.
 DXC Agent for bank reconciliation payment journal generation | • [Generate customer payment]({{ '/agent/dxcagentfinance/bank-recon/customer' | relative_url }}) - Create a new customer payment journal and settle an invoice where applicable. <br> • [Generate vendor payment]({{ '/agent/dxcagentfinance/bank-recon/vendor' | relative_url }}) -  Create a new vendor payment journal 
 
+### Reporting
 
+The following reporting is available in DXC Agent for Bank reconciliation:
+
+- **All agents**
+    - **Dashboard** - Power user can view telemetry by month for applicable agents.
+      
+- **Bank reconciliation** - Displays agent results for each reconciliation's Matched transactions.
 
 ### Disclaimer
 The AI functionality provided by this software is offered on an ‘as is’ basis and may generate inaccurate, incomplete, or misleading information. Users must independently review and verify all outputs before reliance or use.
