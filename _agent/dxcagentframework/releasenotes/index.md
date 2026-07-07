@@ -1,8 +1,8 @@
 ---
 layout: releasenotes-content
 header: DXC Agent for finance & supply chain management
-title: 10.0.46.20260514
-release-version: 10.0.46.20260514
+title: 10.0.46.20260707
+release-version: 10.0.46.20260707
 state: current
 toc: true
 ---
@@ -25,11 +25,10 @@ Release notes for other models included in product:
 
 # Current version
 
-DXC Agent for D365 FSCM 10.0.45 runs on the following Microsoft releases
+DXC Agent for D365 FSCM 10.0.47 runs on the following Microsoft releases
 
 Base	  | Version	  | Release
 :--       |:--            |:--
-Microsoft Dynamics 365 application	| 10.0.46 	  | [What’s new or changed in Dynamics 365 application version 10.0.46](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-46)
 Microsoft Dynamics 365 application	| 10.0.47 	  | [What’s new or changed in Dynamics 365 application version 10.0.47](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-47)
 Microsoft Dynamics 365 application	| 10.0.48 	  | [What’s new or changed in Dynamics 365 application version 10.0.48](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-changed-10-0-48)
 
