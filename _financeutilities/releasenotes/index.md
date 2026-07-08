@@ -32,6 +32,7 @@ Feature name	  | D365 version
 Display payee name for customer/vendor payment information  | 10.0.47
 
 
+
 # Current version
 
 DXC Finance Utilities 10.0.47 runs on the following Microsoft releases
