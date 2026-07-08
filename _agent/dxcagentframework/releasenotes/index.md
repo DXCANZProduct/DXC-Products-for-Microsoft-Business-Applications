@@ -1,8 +1,8 @@
 ---
 layout: releasenotes-content
 header: DXC Agent for finance & supply chain management
-title: 10.0.46.20260707
-release-version: 10.0.46.20260707
+title: 10.0.47.20260707
+release-version: 10.0.47.20260707
 state: current
 toc: true
 ---
