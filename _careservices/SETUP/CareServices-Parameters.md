@@ -68,7 +68,7 @@ Billing schedule workflows
 ## Journal 
 On the Journal tab of the Care services parameters form, you can configure the journal information for care services
 
-Journal names
+### Journal names
 
 |  **Field**  | **Description** | 
 |:---|:---| 
@@ -84,7 +84,7 @@ Journal names
 |  Funding reconciliation adj jnl  | Default name for Default name for Care services adjustment billing journal residential account type  | 
 |  Refund journal  | Default name for refund journal for residential account type | 
 
-Journal defaults
+### Journal defaults
 
 |  **Field**  | **Description** | 
 |:---|:---| 
@@ -95,7 +95,7 @@ Journal defaults
 |  Refund billing account name | ult billing account name for refund accommodation account type | 
 
 ## Billing
-Billing parameter
+### Billing parameter
 On the Billing tab of the Care services parameters form, you can configure the billing information for care services
 
 |  **Field**  | **Description** | 
@@ -111,5 +111,23 @@ On the Billing tab of the Care services parameters form, you can configure the b
 |  HELF indexation factor | Factor for HELF | 
 |  HELF index number| Index number for HELF | 
 
+### Billing journal
 
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  Number of threads  | **Description** | 
+|  Auto post | **Description** | 
+
+### Billing line restriction exclusion
+
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  User group  | **Description** | 
+
+### Import parameters
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  Billing rate ER import mapping id | **Description** | 
+
+## Funding
 
