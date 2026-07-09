@@ -233,4 +233,15 @@ Number of threads generating funding journal via the funding claim form
 |  Allow Negative Lump Sum Balance  | Determines whether accommodation lump sum balances can become negative. | 
 |  Default Retention Billing Account Type  | Specifies the default billing account used when retention transactions are generated. <br> •	Posts retention charges automatically. <br> •	Supports financial reporting and auditing| 
 
+## Services
+### Set up services for care services
+
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  Departure Reason – Inactive  | Specifies the default departure reason used when a resident or client is marked as inactive. | 
+|  Enable Place Address Transfer  | Controls whether address information is automatically transferred between resident records and related place records. | 
+|  Default Place Address Purpose  | Determines the default address purpose assigned when a new place address is created. | 
+|  Default deprecated address purpose  | select the default purpose of the deprecated address  on client transfer | 
+|  Calculate Current Service Entry  | Determines whether the system automatically calculates a resident's current service entry status.| 
+|  Enable Service Listing Syncing  | Controls whether service listings are synchronized automatically with related care service records.| 
 
