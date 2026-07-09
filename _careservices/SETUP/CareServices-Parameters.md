@@ -194,7 +194,7 @@ Number of threads generating funding journal via the funding claim form
 |  **Field**  | **Description** | 
 |:---|:---| 
 |  Interest Payable Billing Account Name  | Defines the billing account used to record accommodation payment interest charges. | 
-|  Allow Agreed Amount to Exceed Accommodation Price  | *Determines whether the agreed accommodation payment amount can be higher than the published accommodation price. | 
+|  Allow Agreed Amount to Exceed Accommodation Price  | Determines whether the agreed accommodation payment amount can be higher than the published accommodation price. | 
 |  DAP Consumer Price Index %*  | Specifies the Consumer Price Index (CPI) rate configuration used when calculating Daily Accommodation Payments (DAP). <br> •	Supports DAP interest calculations. <br> •	Applies CPI adjustments where required. <br> •	Maintains current accommodation pricing calculations.| 
 
 ### Accommodation Payment Transactions
