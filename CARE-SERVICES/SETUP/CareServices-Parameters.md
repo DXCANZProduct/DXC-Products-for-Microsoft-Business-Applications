@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 365 FSCM
 
 
 # Care Services Parameters
-# Care Services Parameters
+
 The parameters for Care Services are contained within the standard Dynamics 365 Care Services parameter form. 
 Navigate to Care services > Setup > Care services parameter
 
@@ -67,23 +67,24 @@ The Care services aged debtors report can include debt collection notes.  The no
 
 ### Workflow
 Billing journal workflows
+
 |  **Field**  | **Description** | 
 |:---|:---|  
 |Override 'Disallow approval by submitter’ | This toggle allows an initiator of a journal to also be an approver.|
 
 Billing journal line workflows
+
 |  **Field**  | **Description** | 
 |:---|:---|  
 | Auto approve lines created from billing journal proposals | Auto approve lines created from billing schedules – This toggle allows the system to set the approved flag to Yes for all system generated billing journal lines on creation |
-
-
-|  **Field**  | **Description** | 
-|:---|:---|  
 |Override 'Disallow approval by submitter'|This toggle allows an initiator of a journal line to also be an approver.|
 
 
 Billing schedule workflows
+
 |  **Field**  | **Description** | 
 |:---|:---| 
 | Enable billing schedule workflow | Use this toggle to turn the Billing schedule workflow on or off |
 | Override 'Disallow approval by submitter' | This toggle allows an initiator of a Billing schedule line to also be an approver. |
+
+
