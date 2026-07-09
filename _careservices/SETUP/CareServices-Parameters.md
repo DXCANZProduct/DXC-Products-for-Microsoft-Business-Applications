@@ -158,15 +158,13 @@ Number of threads generating funding journal via the funding claim form
 |:---|:---| 
 |  Billing Account Name for HCP Funding  | Defines the billing account that receives Home Care Package funding from the government.sed when funding claims are processed.
 •	Records HCP funding income transactions.
-•	Supports reconciliation of funding received.
- | 
+•	Supports reconciliation of funding received. | 
 |  Billing Account Name for HCP Billing | Specifies the billing account used for charging services delivered under Home Care Packages. •	Generates resident or client service charges.
 •	Links delivered services to the HCP billing ledger.
 •	Supports invoicing and reporting. | 
 |  Home Based Care Category for Income  | Determines the income category assigned to Home Care Package revenues. •	Categorizes HCP income.
 •	Supports financial reporting and analysis.
-•	Ensures consistent classification of package funding.
- | 
+•	Ensures consistent classification of package funding.| 
 | Billing Code for Client Unspent Finalisation | Defines the billing code used when processing final client unspent balances after package closure.•	Applies during client exit processing.
 •	Records final unspent balance adjustments.
 •	Supports regulatory compliance. | 
@@ -175,24 +173,19 @@ Number of threads generating funding journal via the funding claim form
 •	Supports financial reconciliation.| 
 |  Funding Code for CW Unspent Finalisation | Specifies funding codes used when finalizing Commonwealth unspent funds. •	Calculates government-returnable funds.
 •	Records Commonwealth unspent fund transactions.
-•	Supports final package closure processes.
-| 
+•	Supports final package closure processes.| 
 |  HCP Unspent Liability Account  | Defines the General Ledger liability account used to hold unspent Home Care Package balances. •	Tracks client unspent funds.
 •	Supports financial statements.
-•	Maintains compliance with HCP regulations.
- | 
+•	Maintains compliance with HCP regulations.| 
 |  Unspent File Format  | Specifies the format used when exporting unspent fund information. •	Generates regulatory submissions.
 •	Produces reconciliation files.
-•	Supports integration with external financial systems.
- | 
+•	Supports integration with external financial systems.| 
  | HCP Refund Due Days  | Defines the number of days allowed to process unspent fund refunds after package closure. •	Controls refund timelines.
 •	Supports compliance requirements.
-•	Triggers refund monitoring processes.
- | 
+•	Triggers refund monitoring processes. | 
  |  HCP Client Report Due Days  | Specifies the timeframe for issuing client reports following package events. •	Supports legislative reporting obligations.
 •	Monitors report generation deadlines.
-•	Ensures timely client communication.
- | 
+•	Ensures timely client communication.| 
  |  HCP Funding Reconciliation Adjustment Account | Defines the General Ledger account used for reconciliation adjustment postings. •	Records funding variances.
 •	Supports end-of-period reconciliation.
 •	Maintains audit traceability.| 
