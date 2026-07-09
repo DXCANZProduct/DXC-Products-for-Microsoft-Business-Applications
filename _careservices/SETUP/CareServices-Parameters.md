@@ -119,15 +119,10 @@ On the Billing tab of the Care services parameters form, you can configure the b
 |  Auto post | Auto post the billing journal from batch processing | 
 
 ### Billing line restriction exclusion
-
-|  **Field**  | **Description** | 
-|:---|:---| 
-|  User group  | **Description** | 
+The Billing line restriction exclusion field in the Care Service Parameters has been deprecated
 
 ### Import parameters
-|  **Field**  | **Description** | 
-|:---|:---| 
-|  Billing rate ER import mapping id | **Description** | 
+The Billing rate ER import mapping id  field in the Care Service Parameters has been deprecated
 
 ## Funding
 ###  Funding parameter
