@@ -218,6 +218,19 @@ Number of threads generating funding journal via the funding claim form
 |  Ingoing Contribution  | Defines the billing category used for resident ingoing contributions. <br> •	Records entry contributions. <br> •	Supports accommodation funding administration.|
 |  Supported / Accommodation Payment  | Defines the billing type used when accommodation is supported through funding assistance programs. <br> •	Identifies subsidized accommodation arrangements. <br> •	Supports government funding reporting. |
 
+### Import parameters
 
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  Accommodation Payment Line ER Import Mapping | Defines the Electronic Reporting (ER) mapping used when importing accommodation payment information. <br> •	Supports data migration. <br> •	Automates accommodation payment imports. <br> •	Reduces manual data entry. | 
+
+### Retentions
+
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  Annual Retention Rate  | Defines the annual retention percentage applied to accommodation deposits. <br> Example <br> Retention Rate: 2% <br> Accommodation Deposit: $100,000 <br> Annual Retention: <br> $100,000 × 2% = $2,000  | 
+|  Retention Capped Years  | Defines the maximum number of years retention amounts can be applied. <br> Example <br> If retention is capped at 5 years: <br> •	Retention applies annually for five years. <br> •	No additional retention is charged after the fifth year.| 
+|  Allow Negative Lump Sum Balance  | Determines whether accommodation lump sum balances can become negative. | 
+|  Default Retention Billing Account Type  | Specifies the default billing account used when retention transactions are generated. <br> •	Posts retention charges automatically. <br> •	Supports financial reporting and auditing| 
 
 
