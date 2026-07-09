@@ -11,7 +11,7 @@ The parameters for Care Services are contained within the standard Dynamics 365 
 Navigate to Care services > Setup > Care services parameter
 
 ## General
-On the General tab of the Email parameters form, you can configure the generic type of care services business logic
+On the General tab of the Care services parameters form, you can configure the generic type of care services business logic
 
 ### Non care services statement
 
@@ -66,7 +66,7 @@ Billing schedule workflows
 | Override 'Disallow approval by submitter' | This toggle allows an initiator of a Billing schedule line to also be an approver. |
 
 ## Journal 
-On the Journal tab of the Email parameters form, you can configure the journal information for care services
+On the Journal tab of the Care services parameters form, you can configure the journal information for care services
 
 Journal names
 
@@ -95,5 +95,21 @@ Journal defaults
 |  Refund billing account name | ult billing account name for refund accommodation account type | 
 
 ## Billing
+Billing parameter
+On the Billing tab of the Care services parameters form, you can configure the billing information for care services
+
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  Enable invoice billing functionality  | This toggle allows the billing transactions and Invoice functionality to be utilised instead of only having the billing journal functionality. This is usually used when customers have a high volume of transactions which are then combined into a single customer transaction line | 
+|  Enable billing transactions invoice id  | This toggle allows invoice numbers to be automatically allocated to each billing journal line | 
+|  Enable default dimensions  | This toggle allows default dimensions in the system to auto populate on the billing journals | 
+|  Enable auto journal approval  | This toggle allows billing journals to be set to approved on creation | 
+|  Enable zero-dollar billing transactions  | Enable zero-dollar billing transactions – This toggle allows billing transactions where there is a zero-dollar value to be posted so that they can be included on the invoice for Customer information | 
+|  Days weeks start | This is used by the Weekly & Fortnightly billing recurrences to determine which day should be used to start the period so all customers are aligned | 
+|  Enable auto billing journal proposal tax invoice number  | This will allow the use to automatically create and select a new number sequence format for the billing journal proposal tax invoice | 
+|  Include service group on billing journal | To show and include service group in the billing journal| 
+|  HELF indexation factor | Factor for HELF | 
+|  HELF index number| Index number for HELF | 
+
 
 
