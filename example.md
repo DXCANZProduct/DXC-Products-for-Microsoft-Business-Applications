@@ -106,3 +106,12 @@ Emojis can be found here, copy and paste
 
 ## Use width in % for images to make them responsive  
 <img src="./IMAGES/DXC_Logo_PurpleBlackWhite.png" style="width:100%; max-width:400px; border-radius:8px;" alt="Responsive Example">
+
+<video controls width="100%" poster="/assets/images/video-poster.jpg">
+  <source src="{{ '/agent/dxcagentfinance/videos/DXC-AgentForBankReconciliation-in-D365-FSCM.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<video controls autoplay muted playsinline width="100%">
+  <source src="{{ '/agent/dxcagentfinance/videos/DXC-AgentForBankReconciliation-in-D365-FSCM.mp4' | relative_url }}" type="video/mp4">
+</video>
