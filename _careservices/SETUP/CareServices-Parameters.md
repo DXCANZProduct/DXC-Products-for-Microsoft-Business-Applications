@@ -168,6 +168,14 @@ Number of threads generating funding journal via the funding claim form
  |  HCP Client Report Due Days  | Specifies the timeframe for issuing client reports following package events. <br> •	Supports legislative reporting obligations. <br> •	Monitors report generation deadlines. <br> •	Ensures timely client communication.| 
  |  HCP Funding Reconciliation Adjustment Account | Defines the General Ledger account used for reconciliation adjustment postings. <br> •	Records funding variances. <br> •	Supports end-of-period reconciliation. <br> •	Maintains audit traceability.| 
 
+### Support at home
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  Billing Account Type Support at Home Funding  |Defines the billing account used to record Support at Home funding transactions received from the funding authority. <br> •	Records Support at Home funding income. <br> •	Used during funding claim processing. <br> •	Supports funding reconciliation and reporting.| 
+| Billing Account Type for Client Contributions  | Defines the billing account used to record client contribution charges. <br> •	Posts client contributions to the appropriate ledger account. <br> •	Supports invoicing and payment tracking. <br> •	Separates government funding from client-funded amounts.  | 
+|  *Billing Code for Client Contributions  | Specifies the billing code used when charging client contribution fees. <br> •	Generates client contribution transactions. <br> •	Identifies contribution charges in reports and invoices. <br> •	Supports financial tracking and auditing.  | 
+|  Billing Code for Client Contribution Adjustments| Defines the billing code used when correcting or adjusting previously charged client contribution amounts. <br> •	Processes refunds or corrections. <br> •	Adjusts billing errors. <br> •	Manages retrospective fee changes. | 
+|  Maximum Funding Claims on Funding Claim Form  | Determines the maximum number of funding claim lines that can be included on a single funding claim form. <br> •	Controls claim form size. <br> •	Improves claim processing efficiency. <br> •	Supports compliance with funding submission requirements.  | 
 
 
 
