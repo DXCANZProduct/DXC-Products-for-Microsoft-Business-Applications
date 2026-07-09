@@ -115,8 +115,8 @@ On the Billing tab of the Care services parameters form, you can configure the b
 
 |  **Field**  | **Description** | 
 |:---|:---| 
-|  Number of threads  | **Description** | 
-|  Auto post | **Description** | 
+|  Number of threads  | To handle number of transactions in batch when generating billing journal | 
+|  Auto post | Auto post the billing journal from batch processing | 
 
 ### Billing line restriction exclusion
 
