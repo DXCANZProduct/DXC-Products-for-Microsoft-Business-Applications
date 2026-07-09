@@ -177,5 +177,47 @@ Number of threads generating funding journal via the funding claim form
 |  Billing Code for Client Contribution Adjustments| Defines the billing code used when correcting or adjusting previously charged client contribution amounts. <br> •	Processes refunds or corrections. <br> •	Adjusts billing errors. <br> •	Manages retrospective fee changes. | 
 |  Maximum Funding Claims on Funding Claim Form  | Determines the maximum number of funding claim lines that can be included on a single funding claim form. <br> •	Controls claim form size. <br> •	Improves claim processing efficiency. <br> •	Supports compliance with funding submission requirements.  | 
 
+## Capping limits
+### Capping limits setup
+
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  Allow Charge Beyond Capping Limits | Controls whether service charges can continue after a resident reaches their annual or lifetime capping limit. | 
+|  Auto Create Client Capping | Automatically creates capping records for new residents or clients requiring capping management | 
+|  Annual Capping Limit  | Defines the annual contribution threshold that a resident can be charged within a financial year | 
+|  Lifetime Capping Limits  | Specifies the lifetime capping limit configuration used by the system. | 
+|  Total Years of Billing for NCCC  | Determines the number of years used when calculating contribution caps under the NCCC billing framework. | 
+
+## Accommodation payment 
+### Interest Rate Setup
+
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  Interest Payable Billing Account Name  | Defines the billing account used to record accommodation payment interest charges. | 
+|  Allow Agreed Amount to Exceed Accommodation Price  | *Determines whether the agreed accommodation payment amount can be higher than the published accommodation price. | 
+|  DAP Consumer Price Index %*  | Specifies the Consumer Price Index (CPI) rate configuration used when calculating Daily Accommodation Payments (DAP). <br> •	Supports DAP interest calculations. <br> •	Applies CPI adjustments where required. <br> •	Maintains current accommodation pricing calculations.| 
+
+### Accommodation Payment Transactions
+
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  Include Transactions Up To  | Determines the historical transaction period included when processing accommodation payment calculations. | 
+
+### Accommodation Payment Types
+
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  Accommodation Bond  | Defines the accommodation bond payment category used for legacy bond arrangements. | 
+|  RAD/DAP | Specifies the accommodation payment type used for	Refundable Accommodation Deposits (RAD)  and Daily Accommodation Payments (DAP) <br> •	Calculates daily accommodation fees. <br> •	Tracks resident accommodation arrangements.| 
+|  Concessional  | Used for residents classified under concessional accommodation arrangements. <br> •	Applies concessional accommodation rules. <br> •	Supports government-funded accommodation programs.| 
+|  Fully Supported  | Identifies residents eligible for full accommodation support. <br> •	Exempts residents from accommodation payment obligations where applicable. <br> •	Applies government-supported accommodation funding.| 
+|  Partially Supported – Assisted | Defines accommodation charges for partially supported residents receiving assisted accommodation support. <br> •	Calculates resident accommodation contributions. <br> •	Supports mixed funding arrangements.| 
+|  Partially Supported – RAC/DAC  | Specifies billing treatment for partially supported residents under RAC/DAC accommodation arrangements. <br> •	Tracks accommodation subsidies. <br> •	Supports accommodation funding calculations. | 
+|  Accommodation Charge – Assisted  | Defines accommodation charge billing rules for assisted residents. <br> •	Generates accommodation charge transactions. <br> •	Supports resident billing. | 
+|  Full Accommodation Charge  | Used when residents are responsible for the entire accommodation payment amount. <br> •	Applies full accommodation fees. <br> •	Generates accommodation invoices. | 
+|  Ingoing Contribution  | Defines the billing category used for resident ingoing contributions. <br> •	Records entry contributions. <br> •	Supports accommodation funding administration.|
+|  Supported / Accommodation Payment  | Defines the billing type used when accommodation is supported through funding assistance programs. <br> •	Identifies subsidized accommodation arrangements. <br> •	Supports government funding reporting. |
+
+
 
 
