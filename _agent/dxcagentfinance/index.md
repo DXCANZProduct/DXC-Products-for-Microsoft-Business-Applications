@@ -42,5 +42,4 @@ The AI functionality provided by this software is offered on an ‘as is’ basi
 
 Watch DXC Technology’s short demonstration on **DXC Agent for Bank reconciliation in D365FSCM** solution here:
 - [Watch recording](https://www.youtube.com/watch?v=wXCjh0GDJf8). Duration: 2 minutes
-- [Demo](https://app.box.com/s/hr6iwadwgrgd4i5ssojf0n5n9jwtqb2q) Duration 3.5 minutes
 
