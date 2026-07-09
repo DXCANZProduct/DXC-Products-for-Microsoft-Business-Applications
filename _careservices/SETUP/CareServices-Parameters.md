@@ -245,3 +245,37 @@ Number of threads generating funding journal via the funding claim form
 |  Calculate Current Service Entry  | Determines whether the system automatically calculates a resident's current service entry status.| 
 |  Enable Service Listing Syncing  | Controls whether service listings are synchronized automatically with related care service records.| 
 
+
+## Services Australia Integration
+### PRODA Connection Profile 
+Defines the environment-specific connection used for Services Australia integration.
+
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  New   | Create a new PRODA connection profile | 
+|  Delete   | Remove an existing profile | 
+|  Validate Key Vault Connection  | Verify access to authentication certificates and secrets. | 
+|  Activate Device   | Register and activate the device for PRODA communication | 
+|  PRODA connection profile  | Defines the environment-specific connection used for Services Australia integration. | 
+|  Organisation ID  | Identifies the registered organization within PRODA and Services Australia. | 
+|  Device Name   | Identifies the registered integration device used to communicate with Services Australia.* | 
+|  Device Expiry   | Displays the expiration date of the registered device certificate. | 
+
+### General
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  Auth  | Select the authentication profile to be used for this connection. | 
+| Config  | Choose the configuration settings associated with the profile. | 
+|  Product   | Select the Services Australia product configured above. | 
+|  Base URL   | Aged care API endpoint | 
+|  Override HTTP Timeout   | Determines whether a custom timeout value will be used instead of the system default | 
+|  Timeout in Seconds   | Specifies the maximum amount of time allowed for an API response. | 
+|  Batch Jobs   | Defines the number of parallel batch tasks used when processing Services Australia transactions. | 
+
+## Print management
+The Print Management displays available Care Services documents and their associated print settings.
+The following document types are available for configuration:
+<br> •	Care Services Accommodation Payment Statement
+<br> •	Care Services Billing Statement
+<br> •	Care Services Statement
+
