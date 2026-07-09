@@ -214,10 +214,7 @@ Number of threads generating funding journal via the funding claim form
 |  Supported / Accommodation Payment  | Defines the billing type used when accommodation is supported through funding assistance programs. <br> •	Identifies subsidized accommodation arrangements. <br> •	Supports government funding reporting. |
 
 ### Import parameters
-
-|  **Field**  | **Description** | 
-|:---|:---| 
-|  Accommodation Payment Line ER Import Mapping | Defines the Electronic Reporting (ER) mapping used when importing accommodation payment information. <br> •	Supports data migration. <br> •	Automates accommodation payment imports. <br> •	Reduces manual data entry. | 
+The Accommodation Payment Line ER Import Mapping  field in the Care Service Parameters has been deprecated
 
 ### Retentions
 
