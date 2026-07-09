@@ -87,4 +87,33 @@ Billing schedule workflows
 | Enable billing schedule workflow | Use this toggle to turn the Billing schedule workflow on or off |
 | Override 'Disallow approval by submitter' | This toggle allows an initiator of a Billing schedule line to also be an approver. |
 
+## Journal 
+On the Journal tab of the Email parameters form, you can configure the journal information for care services
+
+Journal names
+
+|  **Field**  | **Description** | 
+|:---|:---| 
+| Billing journal | Default name for Care services billing journal residential account type | 
+|  Funding journal  | Default name for Care services funding journal | 
+|  Receipt journal  | *Default name for Care services receipt journal | 
+|  Funding reconciliation journal  | Default name for Care services funding reconciliation journal | 
+| Lumpsum invoice journal  | Default name for Care services billing journal for accommodation account type | 
+|  Lumpsum receipt journal  | Default name for Care services receipt journal accommodation account type | 
+|  CRF Journal  | Default name for Care service CRF Journal | 
+|  DMF Journal  | Default name for Care service DMF Journal | 
+|  Capital gain journal  | Default name for Capital Gain Journal | 
+|  Funding reconciliation adj jnl  | Default name for Default name for Care services adjustment billing journal residential account type  | 
+|  Refund journal  | Default name for refund journal for residential account type | 
+
+Journal defaults
+
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  Receipt journal billing account name | Default receipt account name when a new receipt journal lines is created | 
+|  Billing journal billing account name  | Default billing journal lines account name when s new billing journal lines is created | 
+|  Refund billing code  | Default refund billing code when new refund journal line is created | 
+|  Account payable billing account code | Default billing account code for refund payment | 
+|  Refund billing account name | ult billing account name for refund accommodation account type | 
+
 
