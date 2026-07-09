@@ -43,6 +43,7 @@ Aged debtors report note purpose
 The Care services aged debtors report can include debt collection notes.  The note type/purpose is selected here
 
 ### Workflow
+
 Billing journal workflows
 
 |  **Field**  | **Description** | 
