@@ -115,7 +115,7 @@ Emojis can be found here, copy and paste
 </video>
 
 ## Simple embed with poster
-<video controls width="100%" poster="{{ '/agent/dxcagentfinance/IMAGES/Screenshot 2026-07-09 110216.png' | relative_url }}"> <source src="{{ '/agent/dxcagentfinance/videos/DXC-AgentForBankReconciliation-in-D365-FSCM.mp4' | relative_url }}" type="video/mp4"> Your browser does not support the video tag. </video>
+<video controls width="100%" poster="{{ '/agent/dxcagentfinance/IMAGES/BankReconAgentVideoPoster.png' | relative_url }}"> <source src="{{ '/agent/dxcagentfinance/videos/DXC-AgentForBankReconciliation-in-D365-FSCM.mp4' | relative_url }}" type="video/mp4"> Your browser does not support the video tag. </video>
 
 ## With auto play
 <video controls autoplay muted playsinline width="100%">
