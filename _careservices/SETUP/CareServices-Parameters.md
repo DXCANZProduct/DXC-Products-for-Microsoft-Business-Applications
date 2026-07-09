@@ -73,7 +73,7 @@ Journal names
 |:---|:---| 
 | Billing journal | Default name for Care services billing journal residential account type | 
 |  Funding journal  | Default name for Care services funding journal | 
-|  Receipt journal  | *Default name for Care services receipt journal | 
+|  Receipt journal  | Default name for Care services receipt journal | 
 |  Funding reconciliation journal  | Default name for Care services funding reconciliation journal | 
 | Lumpsum invoice journal  | Default name for Care services billing journal for accommodation account type | 
 |  Lumpsum receipt journal  | Default name for Care services receipt journal accommodation account type | 
@@ -92,3 +92,7 @@ Journal defaults
 |  Refund billing code  | Default refund billing code when new refund journal line is created | 
 |  Account payable billing account code | Default billing account code for refund payment | 
 |  Refund billing account name | ult billing account name for refund accommodation account type | 
+
+## Billing
+
+
