@@ -5,7 +5,7 @@ title: DXC Care Services
 description: Care Services Parameters
 author: Peter Musumeci 
 Manager: Pontus Ek
-ms.date: 2025-03-31
+ms.date: 2026-07-09
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: 365 FSCM
 
 # Care Services Parameters
 
-The parameters for Care Services are contained within the standard Dynamics 365 Care Services parameter form. 
-Navigate to Care services > Setup > Care services parameter
+The set-up and configuration parameters for Care Services are contained within the Dynamics 365 Care Services parameter form. 
+Navigate to **Care Services> Setup > Care services parameters**
 
 ## General
-On the General tab of the Email parameters form, you can configure the generic type of care services business logic
+The General tab of the Care Services Parameters form allows you to configure generic elements of care services business logic.
 
 ### Non care services statement
 
@@ -43,12 +43,12 @@ When the "Use customer statement name" parameter is enabled (Yes) in Care Servic
 2.	Care services accommodation payment statement.
 
 ### Payment cancellation parameter
-Activate cancel payment option for summarized transactions
-Selecting the Activate cancel payment option for summarized transactions allows users to cancel customer payments even when the bank transaction has been summarized into a single bank transaction.  The bank transaction will be adjusted by the amount of the cancelled payment.
+Activate cancel payment option for summarised transactions
+Selecting the Activate cancel payment option for summarised transactions allows users to cancel customer payments even when the bank transaction has been summarised into a single bank transaction.  The bank transaction will be adjusted by the amount of the cancelled payment.
 
 ### Address and contact purpose
 Previous occupant update email
-When a new service entry is created the system checks to see if anyone else is being billed for charges related to that accommodation.  If a billing schedule line is found those charges are ended and an email is sent to advise of this.
+When a new service entry is created, the system checks to see if anyone else is being billed for charges related to that accommodation.  If a billing schedule line is found, those charges are ended and an email is sent to advise of this.
 
 
 |  **Field**  | **Description** | 
@@ -76,7 +76,7 @@ Billing journal line workflows
 
 |  **Field**  | **Description** | 
 |:---|:---|  
-| Auto approve lines created from billing journal proposals | Auto approve lines created from billing schedules – This toggle allows the system to set the approved flag to Yes for all system generated billing journal lines on creation |
+| Auto approve lines created from billing journal proposals | Auto approve lines created from billing schedules – This toggle allows the system to set the approved flag to Yes for all system-generated billing journal lines on creation |
 |Override 'Disallow approval by submitter'|This toggle allows an initiator of a journal line to also be an approver.|
 
 
@@ -110,7 +110,7 @@ Journal defaults
 
 |  **Field**  | **Description** | 
 |:---|:---| 
-|  Receipt journal billing account name | Default receipt account name when a new receipt journal lines is created | 
+|  Receipt journal billing account name | Default receipt account name when a new receipt journal line is created | 
 |  Billing journal billing account name  | Default billing journal lines account name when s new billing journal lines is created | 
 |  Refund billing code  | Default refund billing code when new refund journal line is created | 
 |  Account payable billing account code | Default billing account code for refund payment | 
