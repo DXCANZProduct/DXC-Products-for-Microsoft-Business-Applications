@@ -44,18 +44,19 @@ This applies to the following statements.
 2.	Care services accommodation payment statement.
 
 ### Payment cancellation parameter
-Activate cancel payment option for summarised transactions
-Selecting the Activate cancel payment option for summarised transactions allows users to cancel customer payments even when the bank transaction has been summarised into a single bank transaction.  The bank transaction will be adjusted by the amount of the cancelled payment.
+**Activate cancel payment option for summarised transactions** <br>
+When a user performs a direct debit run, there is the option to have all of the payments 'summarised' into a single line on the bank reconciliation page. 
+When enabled (Yes), this parameter allows users to reverse customer payments from the bank reconciliation amount even when the payment transaction has been summarised into a single bank transaction line.  The amount of the cancelled payment on the bank reconciliation line will reduce the bank transaction even if it has been reconciled.
 
 ### Address and contact purpose
 Previous occupant update email
-When a new service entry is created, the system checks to see if anyone else is being billed for charges related to that accommodation.  If a billing schedule line is found, those charges are ended, and an email is sent to advise of this.
+When a new service entry is created, the system checks to see if anyone else is being billed for charges related to that accommodation/ Service Entry.  If a billing schedule line is found, those charges are ended, and an email notification is sent to advise of this.
 
 
 |  **Field**  | **Description** | 
 |:---|:---|     
-|  Purpose | The purpose for the email address to be used is selected here. | 
-|  Template  | Select the template for the email alert| 
+|  Purpose | The purpose assigned to the email contact for the relevant service/ (Care services > Setup > Service > All services > ) | 
+|  Template  | Specifies the pre-configured email template from Organisation email templates (Organisation administration > Setup > Organisation email templates) to be used for the email notification. | 
 
 ### Report
 
