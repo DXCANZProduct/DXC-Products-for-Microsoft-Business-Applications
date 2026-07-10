@@ -30,15 +30,16 @@ ms.dyn365.ops.version: 365 FSCM
 
 # Care Services Parameters
 
-The set-up and configuration parameters for Care Services are contained within the Dynamics 365 Care Services parameter form. 
+The setup and configuration parameters for Care Services are available in the Dynamics 365 Care Services parameter form. 
 Navigate to **Care Services> Setup > Care services parameters**
 
 ## General
 The General tab of the Care Services Parameters form allows you to configure generic elements of care services business logic.
 
-### Non care services statement
+### Non-care services statement
 
-When the "Use customer statement name" parameter is enabled (Yes) in Care Services Parameters, the system will use the value entered in the Customer Statement Name field in customer table when generating the Customer Statement.
+When the "Use customer statement name" parameter is enabled (Yes) in Care Services Parameters, the system will use the value entered in the *Customer Statement Name* field on the customer record when generating Customer Statements. This allows clients to have a preferred/personlaised  name displayed, such as Matt Trakker, instead of Mr Matthew C. Trakker. 
+This applies to the following statements.
 1.	Care services billing statement.
 2.	Care services accommodation payment statement.
 
@@ -48,7 +49,7 @@ Selecting the Activate cancel payment option for summarised transactions allows 
 
 ### Address and contact purpose
 Previous occupant update email
-When a new service entry is created, the system checks to see if anyone else is being billed for charges related to that accommodation.  If a billing schedule line is found, those charges are ended and an email is sent to advise of this.
+When a new service entry is created, the system checks to see if anyone else is being billed for charges related to that accommodation.  If a billing schedule line is found, those charges are ended, and an email is sent to advise of this.
 
 
 |  **Field**  | **Description** | 
