@@ -45,17 +45,16 @@ This applies to the following statements.
 
 ### Payment cancellation parameter
 **Activate cancel payment option for summarised transactions** <br>
-When a user performs a direct debit run, there is the option to have all of the payments 'summarised' into a single line on the bank reconciliation page. 
-When enabled (Yes), this parameter allows users to reverse customer payments from the bank reconciliation amount even when the payment transaction has been summarised into a single bank transaction line.  The amount of the cancelled payment on the bank reconciliation line will reduce the bank transaction even if it has been reconciled.
+When a user performs a direct debit run, there is an option to have all payments summarised into a single line on the bank reconciliation page. When this option is enabled (Yes), users can reverse individual customer payments from the bank reconciliation amount even if those payments have been summarised into a single bank transaction line. The value of any cancelled payment will reduce the amount of the corresponding bank reconciliation line, even if that line has already been reconciled.
 
 ### Address and contact purpose
 Previous occupant update email
-When a new service entry is created, the system checks to see if anyone else is being billed for charges related to that accommodation/ Service Entry.  If a billing schedule line is found, those charges are ended, and an email notification is sent to advise of this.
+When a new Service entry is created, the system checks whether any other customers are currently being billed for charges related to that accommodation or "Service". If a billing schedule line is found, those charges are subsequently ended, and an email notification is sent to the corresponding contact with a matching purpose to advise of this.
 
 
 |  **Field**  | **Description** | 
 |:---|:---|     
-|  Purpose | The purpose assigned to the email contact for the relevant service/ (Care services > Setup > Service > All services > ) | 
+|  Purpose | The purpose assigned to the email contact for the relevant Service (Care services > Setup > Service > All services > ) | 
 |  Template  | Specifies the pre-configured email template from Organisation email templates (Organisation administration > Setup > Organisation email templates) to be used for the email notification. | 
 
 ### Report
