@@ -18,6 +18,8 @@ toc:
         url: /careservices/SETUP/Care-Services-workflows
       - page: Billing Journal Automation
         url: /careservices/SETUP/Billing-Journal-Automation
+      - page: Care Services Parameters
+        url: /careservices/SETUP/CareServices-Parameters
   - title: Billing
     id: billing
     Level_1_items:
