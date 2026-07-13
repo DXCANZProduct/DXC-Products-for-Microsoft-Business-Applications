@@ -66,7 +66,7 @@ Billing schedule workflows
 | Override 'Disallow approval by submitter' | This toggle allows an initiator of a Billing schedule line to also be an approver. |
 
 ## Journals 
-On the Journal tab of the Care services parameters form, you can configure the journal information for care services
+On the Journals tab of the Care services parameters form, you can configure naming conventions and default settings for the different types of journals used in Care Services.
 
 ### Journal names
 
