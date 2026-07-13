@@ -41,6 +41,8 @@ Field                  | Description
 **API key**            | Enter the API key
 
 
+> Note: Not shared across legal entities; to enable companies to keep separate model deployments / costs in MS Foundry.
+
 ## B.3.  All agents
 
 Navigate to **Organisation administration > Agents for finance & supply chain management > All agent** to setup the applicable licensed agents.
