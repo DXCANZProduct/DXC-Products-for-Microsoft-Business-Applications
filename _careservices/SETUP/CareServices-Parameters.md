@@ -40,7 +40,9 @@ When a new service entry is created, the system checks to see if anyone else is 
 |  Address and contact information purpose | The purpose selected here determines which Legal entity (Organisation administration > Organisations> Legal entities) address and contact information is displayed  when populating reports, such as customer invoices and statements. The selected purpose must match a purpose that is assigned to an address on the legal entity.
 |  Aged debtors report note purpose | The Care Services Aged Debtors report can include debt collection notes. Select the note type/purpose to be used for these notes here. Only includes the latest note against the customer record when the note type matches. 
 
-### Workflows (see [Care Services Workflows]({{ '/careservices/SETUP/Care-Services-workflows' | relative_url }}))
+### Workflows 
+
+See [care services workflows] ({{ '/careservices/SETUP/Care-Services-workflows' | relative_url }})) for further details around set up, workflow elements and assignment types 
 
 Billing journal workflows
 
