@@ -35,3 +35,4 @@ Users can reach the **Budget register entries** page by navigating to **Budgetin
 - **Import lines**
   - Privilege: Budget set up and import
   - Duty: Maintain budget import
+  - Role: Budget import manager
