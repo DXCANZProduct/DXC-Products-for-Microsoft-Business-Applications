@@ -40,13 +40,13 @@ When a new service entry is created, the system checks to see if anyone else is 
 |  Address and contact information purpose | The purpose selected here determines which Legal entity (Organisation administration > Organisations> Legal entities) address and contact information is displayed  when populating reports, such as customer invoices and statements. The selected purpose must match a purpose that is assigned to an address on the legal entity.
 |  Aged debtors report note purpose | The Care Services Aged Debtors report can include debt collection notes. Select the note type/purpose to be used for these notes here. Only includes the latest note against the customer record when the note type matches. 
 
-### Workflow
+### Workflows
 
 Billing journal workflows
 
 |  **Field**  | **Description** | 
 |:---|:---|  
-|Override 'Disallow approval by submitter’ | This toggle allows an initiator of a journal to also be an approver.|
+|Override 'Disallow approval by submitter’ | This toggle allows a journal initiator to also be an approver.|
 
 Billing journal line workflows
 
@@ -63,7 +63,7 @@ Billing schedule workflows
 | Enable billing schedule workflow | Use this toggle to turn the Billing schedule workflow on or off |
 | Override 'Disallow approval by submitter' | This toggle allows an initiator of a Billing schedule line to also be an approver. |
 
-## Journal 
+## Journals 
 On the Journal tab of the Care services parameters form, you can configure the journal information for care services
 
 ### Journal names
@@ -104,7 +104,7 @@ On the Billing tab of the Care services parameters form, you can configure the b
 |  Enable auto journal approval  | This toggle allows billing journals to be set to approved on creation | 
 |  Enable zero-dollar billing transactions  | Enable zero-dollar billing transactions – This toggle allows billing transactions where there is a zero-dollar value to be posted so that they can be included on the invoice for Customer information | 
 |  Days weeks start | This is used by the Weekly & Fortnightly billing recurrences to determine which day should be used to start the period so all customers are aligned | 
-|  Enable auto billing journal proposal tax invoice number  | This will allow the use to automatically create and select a new number sequence format for the billing journal proposal tax invoice | 
+|  Enable auto billing journal proposal tax invoice number  | This will allow the user to automatically create and select a new number sequence format for the billing journal proposal tax invoice | 
 |  Include service group on billing journal | To show and include service group in the billing journal| 
 |  HELF indexation factor | Factor for HELF | 
 |  HELF index number| Index number for HELF | 
@@ -113,7 +113,7 @@ On the Billing tab of the Care services parameters form, you can configure the b
 
 |  **Field**  | **Description** | 
 |:---|:---| 
-|  Number of threads  | To handle number of transactions in batch when generating billing journal | 
+|  Number of threads  | To handle the number of transactions in a batch when generating billing journal | 
 |  Auto post | Auto post the billing journal from batch processing | 
 
 ### Billing line restriction exclusion
@@ -129,7 +129,7 @@ The Billing rate ER import mapping id  field in the Care Service Parameters has 
 |:---|:---| 
 |  Enable default dimensions | Determines whether default financial dimensions are automatically assigned to funding transactions. | 
 |  Enable auto journal approval | Automatically approves generated funding journals when enabled. | 
-|  Support ratio reduction  | Set the Supported ratio reduction to the percentage that the funding will be reduced by  | 
+|  Support ratio reduction  | Set the supported ratio reduction to the percentage that the funding will be reduced by  | 
 |  Support ratio threshold  | Set the Supported ratio threshold to the ratio set by the Department to specify the minimum percentage of supported residents required before the funding is reduced.  | 
 
 ### Subsidy
@@ -154,7 +154,7 @@ Number of threads generating funding journal via the funding claim form
 |  Home Based Care Category for Income  | Determines the income category assigned to Home Care Package revenues. <br> •	Categorizes HCP income. <br> •	Supports financial reporting and analysis. <br> •	Ensures consistent classification of package funding.| 
 | Billing Code for Client Unspent Finalisation | Defines the billing code used when processing final client unspent balances after package closure. <br> •	Applies during client exit processing. <br> •	Records final unspent balance adjustments.<br> •	Supports regulatory compliance. | 
 |  Billing Code for ITF Adjustment  | Identifies the billing code used when Income Tested Fee (ITF) adjustments are required. <br> •	Processes ITF corrections. <br>•	Records fee amendments. <br> •	Supports financial reconciliation.| 
-|  Funding Code for CW Unspent Finalisation | Specifies funding codes used when finalizing Commonwealth unspent funds. <br> •	Calculates government-returnable funds. <br> •	Records Commonwealth unspent fund transactions. <br> •	Supports final package closure processes.| 
+|  Funding Code for CW Unspent Finalisation | Specifies funding codes used when finalising Commonwealth unspent funds. <br> •	Calculates government-returnable funds. <br> •	Records Commonwealth unspent fund transactions. <br> •	Supports final package closure processes.| 
 |  HCP Unspent Liability Account  | Defines the General Ledger liability account used to hold unspent Home Care Package balances. <br> •	Tracks client unspent funds. <br> •	Supports financial statements. <br> •	Maintains compliance with HCP regulations.| 
 |  Unspent File Format  | Specifies the format used when exporting unspent fund information. <br> •	Generates regulatory submissions. <br> •	Produces reconciliation files. <br> •	Supports integration with external financial systems.| 
  | HCP Refund Due Days  | Defines the number of days allowed to process unspent fund refunds after package closure. <br> •	Controls refund timelines. <br> •	Supports compliance requirements. <br> •	Triggers refund monitoring processes. | 
@@ -188,7 +188,7 @@ Number of threads generating funding journal via the funding claim form
 |:---|:---| 
 |  Interest Payable Billing Account Name  | Defines the billing account used to record accommodation payment interest charges. | 
 |  Allow Agreed Amount to Exceed Accommodation Price  | Determines whether the agreed accommodation payment amount can be higher than the published accommodation price. | 
-|  DAP Consumer Price Index %*  | Specifies the Consumer Price Index (CPI) rate configuration used when calculating Daily Accommodation Payments (DAP). <br> •	Supports DAP interest calculations. <br> •	Applies CPI adjustments where required. <br> •	Maintains current accommodation pricing calculations.| 
+|  DAP Consumer Price Index %*  | Specifies the Consumer Price Index (CPI) rate used to calculate Daily Accommodation Payments (DAP). <br> •	Supports DAP interest calculations. <br> •	Applies CPI adjustments where required. <br> •	Maintains current accommodation pricing calculations.| 
 
 ### Accommodation Payment Transactions
 
@@ -209,7 +209,7 @@ Number of threads generating funding journal via the funding claim form
 |  Accommodation Charge – Assisted  | Defines accommodation charge billing rules for assisted residents. <br> •	Generates accommodation charge transactions. <br> •	Supports resident billing. | 
 |  Full Accommodation Charge  | Used when residents are responsible for the entire accommodation payment amount. <br> •	Applies full accommodation fees. <br> •	Generates accommodation invoices. | 
 |  Ingoing Contribution  | Defines the billing category used for resident ingoing contributions. <br> •	Records entry contributions. <br> •	Supports accommodation funding administration.|
-|  Supported / Accommodation Payment  | Defines the billing type used when accommodation is supported through funding assistance programs. <br> •	Identifies subsidized accommodation arrangements. <br> •	Supports government funding reporting. |
+|  Supported / Accommodation Payment  | Defines the billing type used when accommodation is supported through funding assistance programs. <br> •	Identifies subsidised accommodation arrangements. <br> •	Supports government funding reporting. |
 
 ### Import parameters
 The Accommodation Payment Line ER Import Mapping  field in the Care Service Parameters has been deprecated
@@ -221,7 +221,7 @@ The Accommodation Payment Line ER Import Mapping  field in the Care Service Para
 |  Annual Retention Rate  | Defines the annual retention percentage applied to accommodation deposits. <br> Example <br> Retention Rate: 2% <br> Accommodation Deposit: $100,000 <br> Annual Retention: <br> $100,000 × 2% = $2,000  | 
 |  Retention Capped Years  | Defines the maximum number of years retention amounts can be applied. <br> Example <br> If retention is capped at 5 years: <br> •	Retention applies annually for five years. <br> •	No additional retention is charged after the fifth year.| 
 |  Allow Negative Lump Sum Balance  | Determines whether accommodation lump sum balances can become negative. | 
-|  Default Retention Billing Account Type  | Specifies the default billing account used when retention transactions are generated. <br> •	Posts retention charges automatically. <br> •	Supports financial reporting and auditing| 
+|  Default Retention Billing Account Type  | Specifies the default billing account used when retention transactions are generated. <br> •	Posts retention charges automatically. <br> •	Supports financial reporting and auditing.| 
 
 ## Services
 ### Set up services for care services
@@ -231,9 +231,9 @@ The Accommodation Payment Line ER Import Mapping  field in the Care Service Para
 |  Departure Reason – Inactive  | Specifies the default departure reason used when a resident or client is marked as inactive. | 
 |  Enable Place Address Transfer  | Controls whether address information is automatically transferred between resident records and related place records. | 
 |  Default Place Address Purpose  | Determines the default address purpose assigned when a new place address is created. | 
-|  Default deprecated address purpose  | select the default purpose of the deprecated address  on client transfer | 
+|  Default deprecated address purpose  | Select the default purpose of the deprecated address  on client transfer | 
 |  Calculate Current Service Entry  | Determines whether the system automatically calculates a resident's current service entry status.| 
-|  Enable Service Listing Syncing  | Controls whether service listings are synchronized automatically with related care service records.| 
+|  Enable Service Listing Syncing  | Controls whether service listings are synchronised automatically with related care service records.| 
 
 
 ## Services Australia Integration
@@ -247,7 +247,7 @@ Defines the environment-specific connection used for Services Australia integrat
 |  Validate Key Vault Connection  | Verify access to authentication certificates and secrets. | 
 |  Activate Device   | Register and activate the device for PRODA communication | 
 |  PRODA connection profile  | Defines the environment-specific connection used for Services Australia integration. | 
-|  Organisation ID  | Identifies the registered organization within PRODA and Services Australia. | 
+|  Organisation ID  | Identifies the registered organisation within PRODA and Services Australia. | 
 |  Device Name   | Identifies the registered integration device used to communicate with Services Australia.* | 
 |  Device Expiry   | Displays the expiration date of the registered device certificate. | 
 
