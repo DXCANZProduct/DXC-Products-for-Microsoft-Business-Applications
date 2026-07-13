@@ -8,24 +8,24 @@ toc: true
 # Care Services Parameters
 
 The parameters for Care Services are contained within the standard Dynamics 365 Care Services parameter form. 
-Navigate to Care services > Setup > Care services parameter
+Navigate to Care Services> Setup > Care Services parameter
 
 ## General
-On the General tab of the Care services parameters form, you can configure the generic type of care services business logic
+On the General tab of the Care Services parameters form, you can configure the generic type of care services business logic
 
 ### Non care services statement
 
-When the "Use customer statement name" parameter is enabled (Yes) in Care Services Parameters, the system will use the value entered in the Customer Statement Name field in customer table when generating the Customer Statement.
+When the "Use customer statement name" parameter is enabled (Yes) in Care Services Parameters, the system will use the value entered in the Customer Statement Name field in the Customer table when generating the Customer Statement.
 1.	Care services billing statement.
 2.	Care services accommodation payment statement.
 
 ### Payment cancellation parameter
-Activate cancel payment option for summarized transactions
-Selecting the Activate cancel payment option for summarized transactions allows users to cancel customer payments even when the bank transaction has been summarized into a single bank transaction.  The bank transaction will be adjusted by the amount of the cancelled payment.
+Activate cancel payment option for summarised transactions
+Selecting the Activate cancel payment option for summarised transactions allows users to cancel customer payments even when the bank transaction has been summarised into a single bank transaction.  The bank transaction will be adjusted by the amount of the cancelled payment.
 
 ### Address and contact purpose
 Previous occupant update email
-When a new service entry is created the system checks to see if anyone else is being billed for charges related to that accommodation.  If a billing schedule line is found those charges are ended and an email is sent to advise of this.
+When a new service entry is created, the system checks to see if anyone else is being billed for charges related to that accommodation.  If a billing schedule line is found those charges are ended and an email is sent to advise of this.
 
 
 |  **Field**  | **Description** | 
@@ -33,14 +33,12 @@ When a new service entry is created the system checks to see if anyone else is b
 |  Purpose | The purpose for the email address to be used is selected here. | 
 |  Template  | Select the template for the email alert| 
 
-### Report
+### Reports
 
-Address and contact information purpose
-The purpose selected here informs the system which legal entity address and contact information should be used when these are populated on reports such as Customer invoice/statements
-
-
-Aged debtors report note purpose
-The Care services aged debtors report can include debt collection notes.  The note type/purpose is selected here
+|  **Field**  | **Description** | 
+|:---|:---|     
+|  Address and contact information purpose | The purpose selected here determines which Legal entity (Organisation administration > Organisations> Legal entities) address and contact information is displayed  when populating reports, such as customer invoices and statements. The selected purpose must match a purpose that is assigned to an address on the legal entity.
+|  Aged debtors report note purpose | The Care Services Aged Debtors report can include debt collection notes. Select the note type/purpose to be used for these notes here. Only includes the latest note against the customer record when the note type matches. 
 
 ### Workflow
 
@@ -54,7 +52,7 @@ Billing journal line workflows
 
 |  **Field**  | **Description** | 
 |:---|:---|  
-| Auto approve lines created from billing journal proposals | Auto approve lines created from billing schedules – This toggle allows the system to set the approved flag to Yes for all system generated billing journal lines on creation |
+| Auto approve lines created from billing journal proposals | Auto approve lines created from billing schedules – This toggle allows the system to set the approved flag to Yes for all system-generated billing journal lines on creation |
 |Override 'Disallow approval by submitter'|This toggle allows an initiator of a journal line to also be an approver.|
 
 
