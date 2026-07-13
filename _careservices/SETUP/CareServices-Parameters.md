@@ -25,7 +25,7 @@ Selecting the Activate cancel payment option for summarised transactions allows 
 
 ### Address and contact purpose
 Previous occupant update email
-When a new service entry is created, the system checks to see if anyone else is being billed for charges related to that accommodation.  If a billing schedule line is found those charges are ended and an email is sent to advise of this.
+When a new service entry is created, the system checks to see if anyone else is being billed for charges related to that accommodation.  If a billing schedule line is found, those charges are ended, and an email is sent to advise of this.
 
 
 |  **Field**  | **Description** | 
@@ -40,7 +40,7 @@ When a new service entry is created, the system checks to see if anyone else is 
 |  Address and contact information purpose | The purpose selected here determines which Legal entity (Organisation administration > Organisations> Legal entities) address and contact information is displayed  when populating reports, such as customer invoices and statements. The selected purpose must match a purpose that is assigned to an address on the legal entity.
 |  Aged debtors report note purpose | The Care Services Aged Debtors report can include debt collection notes. Select the note type/purpose to be used for these notes here. Only includes the latest note against the customer record when the note type matches. 
 
-### Workflows
+### Workflows (see [Care Services Workflows]({{ '/_careservices/SETUP/Care-Services-workflows' | relative_url }}))
 
 Billing journal workflows
 
@@ -79,7 +79,7 @@ On the Journal tab of the Care services parameters form, you can configure the j
 |  CRF Journal  | Default name for Care service CRF Journal | 
 |  DMF Journal  | Default name for Care service DMF Journal | 
 |  Capital gain journal  | Default name for Capital Gain Journal | 
-|  Funding reconciliation adj jnl  | Default name for Default name for Care services adjustment billing journal residential account type  | 
+|  Funding reconciliation adj jnl  | Default name for Care services adjustment billing journal residential account type  | 
 |  Refund journal  | Default name for refund journal for residential account type | 
 
 ### Journal defaults
@@ -114,7 +114,7 @@ On the Billing tab of the Care services parameters form, you can configure the b
 |  **Field**  | **Description** | 
 |:---|:---| 
 |  Number of threads  | To handle the number of transactions in a batch when generating billing journal | 
-|  Auto post | Auto post the billing journal from batch processing | 
+|  Auto post | Auto-post the billing journal from batch processing | 
 
 ### Billing line restriction exclusion
 The Billing line restriction exclusion field in the Care Service Parameters has been deprecated
