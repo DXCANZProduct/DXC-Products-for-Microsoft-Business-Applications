@@ -8,6 +8,11 @@ toc: true
 
 The **DXC Agent for bank reconciliation payment journal generation** allows users to automatically create new customer payment journals for relevant bank statement records. Users can also choose to post and match these journals as part of the agent process, or leave the journal unposted for review.
 
+Customer payments could be created by the Agent from:
+1. **Customer remittance pending payments** - Customer sends a remittance for their payment settling one or more invoices, these records can be stored in the agent's 'Customer remittance pending payments'. Once the payment is received in the bank reconciliation, the agent can create the customer payment and settle the applicable invoices as per the remittance.
+2. **Bank statement referring to one invoice** - Customer refers to one invoice on the bank statement record, the agent will create the payment and settle the one invoice.
+3. **Bank statement referring no invoice** - Customer doesn't send a remittance and no invoice referenced in the bank statement, the customer is identified either by related bank account or agent knowledge sources.
+
 # Setup
 
 ## Prerequisites
@@ -69,6 +74,10 @@ Navigate to **Cash and bank management > Setup > Bank accounts** to setup the fo
 - **Customer payment journal posting** - Determines if the created customer payment journal should be posted.
     - **Yes** - The journal will be created, posted and automatically matched to the original bank statement line. **Journal** button on **Matched transactions** in the Reconciliation worksheet allows user to easily navigate to these posted customer payment journals.
     - **No** - The journal will be created, but _not_ posted. The message in Action center will list the **Journal batch numbers** that were created. If the agent is run again, these bank statement records won't be included again, thus no duplication. **Journal** button on **Matched transactions** can't be used for these as the journal has not been posted by the agent. Once the journals have been reviewed and posted, the matching can be done in the reconciliation either by running agent 'DXC Agent for bank reconciliation', reconciliation matching rules or manual matching.
+- **Customer payment creation** - Determines the customer payment creation processes applicable to the bank account.
+    -  **Do not use remittance** - Agent's 'Customer remittance pending payments' is not in use, and can be skipped.
+    -  **Settle from remittance and continue** - Agent's 'Customer remittance pending payments' should be used first and thereafter customer payments can also be created using related bank account and agent knowledge sources.
+    -  **Settle from remittance only** - Agent's 'Customer remittance pending payments' should only be used. 
 
 
 ## Bank transaction types
