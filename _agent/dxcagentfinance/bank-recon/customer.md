@@ -145,6 +145,16 @@ Where the agent is enabled, the **Create customer payment with agent** button wi
 - To run the agent for all unmatched bank statement transactions, no need to select any records only click **Create customer payment with agent**.
 - To run the agent for manually selected records, select the applicable unmatched bank statement transactions and click **Create customer payment with agent**
 
+## Customer remittance pending payments
+
+Navigate to **Cash and bank management > Enquiries and reports > Customer remittance pending payments**.
+
+This form contains Customer remittance payments used in creating customer payments from the bank reconciliation.
+
+The records can be created from: 
+1. Process emails with agent - Process messages in DXCAgentEmailContentTable where DXCAgentId is DXCAgentForPendingRemittanceCreation and MessageStatus is set to Waiting.
+2. Data entities: Pending remittance header & Pending remittance lines
+
 ## Results
 
 ### Matched transactions
