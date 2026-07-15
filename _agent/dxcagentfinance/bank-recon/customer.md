@@ -33,6 +33,8 @@ When opening the form, it checks for any new agents and self populates from deta
 
 See below table for information on fields.
 
+### Agent for Customer Payment Journal Generation
+
 Field                  | Description
 :--                    |:--
 **Agent name**         | DXCAgentForBankReconciliationCustPaymentJournalGeneration
@@ -43,18 +45,7 @@ Field                  | Description
 **Enabled**            | Set to _Yes_ in order to enable the agent
 **Enable telemetry**   | See below for more details
 
-### Telemetry
-
-Set **Enable telemetry** to _Yes_ to log and view telemetry for _applicable_ agents. <br>
-View the telemetry by using **Go to dashboard** on the ActionPane. This is only enabled for applicable agents.
-
-Per each run, the following telemetry could be logged per agent. The data is displayed by month: 
-- Statement count - Number of bank statement records included in runs
-- Generated customer payment journal count - Number of customer payments created with _no_ invoice settled
-- Generated settled customer payment journal count - Number of customer payments created with invoice settled
-- Number of runs - Each time the agent is run, either via import or button in bank reconciliation worksheet
-
-### Agent knowledge sources
+#### Agent knowledge sources
 
 The following **Agent knowledge sources** are automatically created for this agent based on Number sequences assigned for the applicable **Accounts receivable parameter** fields.
 
@@ -66,6 +57,33 @@ AccountNum    | Customer account    | Text    | The AccountNum will appear in th
 Invoice       | Invoice             | Text    | The Invoice will appear in the following format: CIV-######## or FTI-######## where ######## represents numeric digits.
 PackingSlipId | Packing slip number    | Text    | The PackingSlipId will appear in the following format: SPK-######## where ######## represents numeric digits.
 SalesId        | Sales order        | Text    | The SalesId will appear in the following format: ###### or SO###### where ###### represents numeric digits.
+
+#### Telemetry
+
+Set **Enable telemetry** to _Yes_ to log and view telemetry for _applicable_ agents. <br>
+View the telemetry by using **Go to dashboard** on the ActionPane. This is only enabled for applicable agents.
+
+Per each run, the following telemetry could be logged per agent. The data is displayed by month: 
+- Statement count - Number of bank statement records included in runs
+- Generated customer payment journal count - Number of customer payments created with _no_ invoice settled
+- Generated settled customer payment journal count - Number of customer payments created with invoice settled
+- Number of runs - Each time the agent is run, either via import or button in bank reconciliation worksheet
+
+
+### Agent for Pending Remittance Creation
+
+Field                  | Description
+:--                    |:--
+**Agent name**         | DXCAgentForPendingRemittanceCreation
+**Agent description**  | TBD
+**Agent connection details**  | Select the agent created in prerequisite [Agent connection parameters](../dxcagentframework/Setup.md#b2--agent-connection-parameters)
+**Agent instructions**  | Automatically populated with default Agent instructions
+**Agent output format**  | Automatically populated with default output format
+**Enabled**            | Set to _Yes_ in order to enable the agent
+
+#### Agent knowledge sources
+
+This agent doesn't have any Agent knowledge sources.
 
 
 ## Bank accounts
