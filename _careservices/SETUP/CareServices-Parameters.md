@@ -48,14 +48,14 @@ Billing journal workflows
 
 |  **Field**  | **Description** | 
 |:---|:---|  
-|Override 'Disallow approval by submitter’ | This toggle allows a journal initiator to also be an approver.|
+|Override 'Disallow approval by submitter’ | This toggle allows a journal initiator also to be an approver.|
 
 Billing journal line workflows
 
 |  **Field**  | **Description** | 
 |:---|:---|  
 | Auto approve lines created from billing journal proposals | Auto approve lines created from billing schedules – This toggle allows the system to set the approved flag to Yes for all system-generated billing journal lines on creation |
-|Override 'Disallow approval by submitter'|This toggle allows an initiator of a journal line to also be an approver.|
+|Override 'Disallow approval by submitter'|This toggle allows an initiator of a journal line also to be an approver.|
 
 
 Billing schedule workflows
@@ -72,11 +72,11 @@ On the Journals tab of the Care services parameters form, you can configure nami
 
 |  **Field**  | **Description** | 
 |:---|:---| 
-| Billing journal | Default name for Care services billing journal residential account type | 
-|  Funding journal  | Default name for Care services funding journal | 
-|  Receipt journal  | Default name for Care services receipt journal | 
-|  Funding reconciliation journal  | Default name for Care services funding reconciliation journal | 
-| Lumpsum invoice journal  | Default name for Care services billing journal for accommodation account type | 
+| Billing journal | Default name and subsequent setup for the Care services Billing journal residential account type | 
+|  Funding journal  | Default name and subsequent setup for the Care services Funding journal | 
+|  Receipt journal  | Default name and subsequent setup for the Care services Receipt journal | 
+|  Funding reconciliation journal  | Default name and subsequent setup for the Care services Funding Reconciliation Journal | 
+| Lumpsum invoice journal  | Default name and subsequent setup for the Care services Billing Journal for accommodation account type | 
 |  Lumpsum receipt journal  | Default name for Care services receipt journal accommodation account type | 
 |  CRF Journal  | Default name for Capital Refurbishment Fees  Journal | 
 |  DMF Journal  | Default name for Deferred Management Fees  Journal | 
