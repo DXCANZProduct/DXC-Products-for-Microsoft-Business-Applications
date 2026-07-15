@@ -8,7 +8,7 @@ toc: true
 
 The **DXC Agent for bank reconciliation payment journal generation** allows users to automatically create new customer payment journals for relevant bank statement records. Users can also choose to post and match these journals as part of the agent process, or leave the journal unposted for review.
 
-Customer payments could be created by the Agent from:
+Customer payments could be created by the Agent for the following scenarios:
 1. **Customer remittance pending payments** - Customer sends a remittance for their payment settling one or more invoices, these records can be stored in the agent's 'Customer remittance pending payments'. Once the payment is received in the bank reconciliation, the agent can create the customer payment and settle the applicable invoices as per the remittance.
 2. **Bank statement referring to one invoice** - Customer refers to one invoice on the bank statement record, the agent will create the payment and settle the one invoice.
 3. **Bank statement referring to no invoice, but contains a different reference that can be used to find customer account** - Customer doesn't send a remittance and no invoice referenced in the bank statement, the customer is identified either by related bank account or agent knowledge sources. Agent creates the customer payment journal, without any invoices settled.
