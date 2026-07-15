@@ -78,8 +78,8 @@ On the Journals tab of the Care services parameters form, you can configure nami
 |  Funding reconciliation journal  | Default name for Care services funding reconciliation journal | 
 | Lumpsum invoice journal  | Default name for Care services billing journal for accommodation account type | 
 |  Lumpsum receipt journal  | Default name for Care services receipt journal accommodation account type | 
-|  CRF Journal  | Default name for Care service CRF Journal | 
-|  DMF Journal  | Default name for Care service DMF Journal | 
+|  CRF Journal  | Default name for Capital Refurbishment Fees  Journal | 
+|  DMF Journal  | Default name for Deferred Management Fees  Journal | 
 |  Capital gain journal  | Default name for Capital Gain Journal | 
 |  Funding reconciliation adj jnl  | Default name for Care services adjustment billing journal residential account type  | 
 |  Refund journal  | Default name for refund journal for residential account type | 
@@ -102,7 +102,7 @@ On the Billing tab of the Care services parameters form, you can configure the b
 |:---|:---| 
 |  Enable invoice billing functionality  | This toggle allows the billing transactions and Invoice functionality to be utilised instead of only having the billing journal functionality. This is usually used when customers have a high volume of transactions which are then combined into a single customer transaction line | 
 |  Enable billing transactions invoice id  | This toggle allows invoice numbers to be automatically allocated to each billing journal line | 
-|  Enable default dimensions  | This toggle allows default dimensions in the system to auto populate on the billing journals | 
+|  Enable default dimensions  | This toggle allows default dimensions in the system to auto-populate on the billing journals | 
 |  Enable auto journal approval  | This toggle allows billing journals to be set to approved on creation | 
 |  Enable zero-dollar billing transactions  | Enable zero-dollar billing transactions – This toggle allows billing transactions where there is a zero-dollar value to be posted so that they can be included on the invoice for Customer information | 
 |  Days weeks start | This is used by the Weekly & Fortnightly billing recurrences to determine which day should be used to start the period so all customers are aligned | 
