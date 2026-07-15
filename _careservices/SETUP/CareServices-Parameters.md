@@ -89,13 +89,13 @@ On the Journals tab of the Care services parameters form, you can configure nami
 |  **Field**  | **Description** | 
 |:---|:---| 
 |  Receipt journal billing account name | Default receipt account name when a new receipt journal lines is created | 
-|  Billing journal billing account name  | Default billing journal lines account name when s new billing journal lines is created | 
-|  Refund billing code  | Default refund billing code when new refund journal line is created | 
+|  Billing journal billing account name  | Default billing journal lines account name when a new billing journal line is created | 
+|  Refund billing code  | Default refund billing code when a new refund journal line is created | 
 |  Account payable billing account code | Default billing account code for refund payment | 
-|  Refund billing account name | ult billing account name for refund accommodation account type | 
+|  Refund billing account name | Default billing account name for refund accommodation account type | 
 
 ## Billing
-### Billing parameter
+### Billing parameters
 On the Billing tab of the Care services parameters form, you can configure the billing information for care services
 
 |  **Field**  | **Description** | 
