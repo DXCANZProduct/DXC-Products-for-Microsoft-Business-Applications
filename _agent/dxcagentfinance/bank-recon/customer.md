@@ -149,11 +149,12 @@ Where the agent is enabled, the **Create customer payment with agent** button wi
 
 Navigate to **Cash and bank management > Enquiries and reports > Customer remittance pending payments**.
 
-This form contains Customer remittance payments used in creating customer payments from the bank reconciliation.
+This form contains Customer remittance records that could refer to one or multiple invoices as per the customer's remittance. It is used in creating customer payments from the bank reconciliation and settling all the invoices as per this form. This only applies to where the Bank account's **Customer payment creation** is set to either _Settle from remittance and continue_ or _Settle from remittance only_.
 
 The records can be created from: 
 1. Process emails with agent - Process messages in DXCAgentEmailContentTable where DXCAgentId is DXCAgentForPendingRemittanceCreation and MessageStatus is set to Waiting.
 2. Data entities: Pending remittance header & Pending remittance lines
+
 
 ## Results
 
