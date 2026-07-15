@@ -100,7 +100,12 @@ Thus all bank statement records with **Bank transaction code** value **050** wil
 This feature uses **Default description** when creating the payment journal line.
 
 1. Enable feature **Enable default descriptions for advanced bank reconciliation**
-2. Setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation) for **Bank - reconciliation worksheet** for each applicable **Language** or select **user**. <br> 
+2. Setup [Default descriptions](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/apply-cash-adv-bank-rec#enable-default-descriptions-for-advanced-bank-reconciliation) for **Bank - reconciliation worksheet** for each applicable **Language** or select **user**. <br>
+
+## Cash and bank management parameters
+
+Navigate to **Cash and bank management > Setup > Cash and bank management parameters**.
+- **Number sequences** - Setup a **Pending remittance id** number sequence if **Customer remittance pending payments** are to be used.
 
 # Processing
 
