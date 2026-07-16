@@ -70,27 +70,30 @@ On the Journals tab of the Care services parameters form, you can configure nami
 
 ### Journal names
 
+The Ledger Journal names that are pertinent to the relevant segment of the Care Services Product are included in this section. This incoportaes the relevant journal configuration and dimension setup in accordance with standard D365 behaviours.
+
 |  **Field**  | **Description** | 
 |:---|:---| 
-| Billing journal | Default name and subsequent setup for the Care services Billing journal residential account type | 
-|  Funding journal  | Default name and subsequent setup for the Care services Funding journal | 
-|  Receipt journal  | Default name and subsequent setup for the Care services Receipt journal | 
-|  Funding reconciliation journal  | Default name and subsequent setup for the Care services Funding Reconciliation Journal | 
-| Lumpsum invoice journal  | Default name and subsequent setup for the Care services Billing Journal for accommodation account type | 
-|  Lumpsum receipt journal  | Default name for Care services receipt journal accommodation account type | 
+| Billing journal | Default name  for the Care services Billing journal residential account type | 
+|  Funding journal  | Default name for the Care services Funding journal | 
+|  Receipt journal  | Default name for the Care services Receipt journal | 
+|  Funding reconciliation journal  | Default name for the Care services Funding Reconciliation Journal | 
+| Lumpsum invoice journal  | Default name  for the Care services Billing Journal for accommodation account type | 
+|  Lumpsum receipt journal  | Default name for the receipt journal accommodation account type | 
 |  CRF Journal  | Default name for Capital Refurbishment Fees  Journal | 
 |  DMF Journal  | Default name for Deferred Management Fees  Journal | 
-|  Capital gain journal  | Default name for Capital Gain Journal | 
+|  Capital gain journal  | Default name for Capital Gains Journal | 
 |  Funding reconciliation adj jnl  | Default name for Care services adjustment billing journal residential account type  | 
 |  Refund journal  | Default name for refund journal for residential account type | 
 
 ### Journal defaults
-
+Specifies the default value that will be used within the journal for the corespioning action type 
 |  **Field**  | **Description** | 
 |:---|:---| 
-|  Receipt journal billing account name | Default receipt account name when a new receipt journal lines is created | 
-|  Billing journal billing account name  | Default billing journal lines account name when a new billing journal line is created | 
-|  Refund billing code  | Default refund billing code when a new refund journal line is created | 
+|  Receipt journal billing account name | When a new receipt journal line is established, the default billing account name is used. | 
+|  Billing journal billing account name  | When a new billing journal line is established, the default billing account name is used. | 
+|  Refund billing code  | Default value will be used when generating refund  transactions from the client refund proposal | 
+| Partial refund billing code | Default value will be used when generating a partial refund from the client refund proposal
 |  Account payable billing account code | Default billing account code for refund payment | 
 |  Refund billing account name | Default billing account name for refund accommodation account type | 
 
