@@ -66,7 +66,7 @@ Billing schedule workflows
 | Override 'Disallow approval by submitter' | This toggle allows an initiator of a Billing schedule line to also be an approver. |
 
 ## Journals 
-On the Journals tab of the Care services parameters form, you can configure naming conventions and default settings for the different types of journals used in Care Services.
+On the Journals tab of the Care Services parameters form, you can configure naming conventions and default settings for the different types of journals used in Care Services.
 
 ### Journal names
 
@@ -103,16 +103,23 @@ On the Billing tab of the Care services parameters form, you can configure the b
 
 |  **Field**  | **Description** | 
 |:---|:---| 
-|  Enable invoice billing functionality  | Instead of just having the billing journal capabilities, this toggle enables the use of the billing transactions and invoice functionality. This is typically applied when a large number of transactions are made by customers and merged into a single customer transaction line. | 
+|  Enable invoice billing functionality  | Instead of just having the billing journal capabilities, this toggle enables the use of the billing transactions and invoice functionality. This is typically applied when customers have a large number of transactions that are merged into a single customer transaction line. | 
 |  Enable billing transactions invoice id  | This toggle allows invoice numbers to be automatically allocated to each billing journal line | 
 |  Enable default dimensions  | This toggle allows default dimensions in the system to auto-populate on the billing journals | 
 |  Enable auto journal approval  | Billing journals can be configured to be approved upon creation using this toggle. | 
 |  Enable zero-dollar billing transactions  |This option permits billing transactions with a zero-dollar value to be posted so that customer information can be included on the invoice.| 
-|  Days weeks start | This is used by the Weekly & Fortnightly billing recurrences to determine which day should be used to start the period so all customers are aligned | 
-|  Enable auto billing journal proposal tax invoice number  | This will allow the user to automatically create and select a new number sequence format for the billing journal proposal tax invoice | 
-|  Include service group on billing journal | To show and include service group in the billing journal| 
-|  HELF indexation factor | Factor for Higher Everyday Living Fee | 
+|  Day weeks start | The Weekly & Fortnightly billing recurrences use this to determine which day should be used to start the period so all customers are aligned | 
+|  Enable auto billing journal proposal tax invoice number  | This will allow the user to automatically create and select a new number sequence format for the billing journal proposal tax invoice| 
+|  Include service group on billing journal | To show and include service group on the billing journal| 
+
+The Higher Everyday Living Fee (HELF) is an optional fee for enhanced lifestyle and comfort services in residential aged care. Because HELF is an optional, direct-contracted service rather than a government-subsidised care fee, it does not use a statutory or government accommodation payment interest code.  Because it is an optional extra, any interest, late payment terms, or billing methods for HELF are outlined separately.
+
+|  **Field**  | **Description** | 
+|:---|:---| 
+|  HELF indexation factor |  The accommodation payment interest code used for the Higher Everyday Living Fee (HELF) Indexation Factor | 
 |  HELF index number| Index number for Higher Everyday Living Fee | 
+
+
 
 ### Billing journal
 
