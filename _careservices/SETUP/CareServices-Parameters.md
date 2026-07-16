@@ -70,7 +70,7 @@ On the Journals tab of the Care services parameters form, you can configure nami
 
 ### Journal names
 
-The Ledger Journal names that are pertinent to the relevant segment of the Care Services Product are included in this section. This incoportaes the relevant journal configuration and dimension setup in accordance with standard D365 behaviours.
+The Ledger Journal names that are pertinent to the relevant segment of the Care Services Product are included in this section. This incorporates the relevant journal configuration and dimension setup in accordance with standard D365 behaviours.
 
 |  **Field**  | **Description** | 
 |:---|:---| 
@@ -87,12 +87,12 @@ The Ledger Journal names that are pertinent to the relevant segment of the Care 
 |  Refund journal  | Default name for refund journal for residential account type | 
 
 ### Journal defaults
-Specifies the default value that will be used within the journal for the corespioning action type 
+Specifies the default value that will be used within the journal for the corresponding action type 
 |  **Field**  | **Description** | 
 |:---|:---| 
 |  Receipt journal billing account name | When a new receipt journal line is established, the default billing account name is used. | 
 |  Billing journal billing account name  | When a new billing journal line is established, the default billing account name is used. | 
-|  Refund billing code  | Default value will be used when generating refund  transactions from the client refund proposal | 
+|  Refund billing code  | The default value will be used when generating refund  transactions from the client refund proposal | 
 | Partial refund billing code | Default value will be used when generating a partial refund from the client refund proposal
 |  Account payable billing account code | Default billing account code for refund payment | 
 |  Refund billing account name | Default billing account name for refund accommodation account type | 
@@ -103,16 +103,16 @@ On the Billing tab of the Care services parameters form, you can configure the b
 
 |  **Field**  | **Description** | 
 |:---|:---| 
-|  Enable invoice billing functionality  | This toggle allows the billing transactions and Invoice functionality to be utilised instead of only having the billing journal functionality. This is usually used when customers have a high volume of transactions which are then combined into a single customer transaction line | 
+|  Enable invoice billing functionality  | Instead of just having the billing journal capabilities, this toggle enables the use of the billing transactions and invoice functionality. This is typically applied when a large number of transactions are made by customers and merged into a single customer transaction line. | 
 |  Enable billing transactions invoice id  | This toggle allows invoice numbers to be automatically allocated to each billing journal line | 
 |  Enable default dimensions  | This toggle allows default dimensions in the system to auto-populate on the billing journals | 
-|  Enable auto journal approval  | This toggle allows billing journals to be set to approved on creation | 
-|  Enable zero-dollar billing transactions  | Enable zero-dollar billing transactions – This toggle allows billing transactions where there is a zero-dollar value to be posted so that they can be included on the invoice for Customer information | 
+|  Enable auto journal approval  | Billing journals can be configured to be approved upon creation using this toggle. | 
+|  Enable zero-dollar billing transactions  |This option permits billing transactions with a zero-dollar value to be posted so that customer information can be included on the invoice.| 
 |  Days weeks start | This is used by the Weekly & Fortnightly billing recurrences to determine which day should be used to start the period so all customers are aligned | 
 |  Enable auto billing journal proposal tax invoice number  | This will allow the user to automatically create and select a new number sequence format for the billing journal proposal tax invoice | 
 |  Include service group on billing journal | To show and include service group in the billing journal| 
-|  HELF indexation factor | Factor for HELF | 
-|  HELF index number| Index number for HELF | 
+|  HELF indexation factor | Factor for Higher Everyday Living Fee | 
+|  HELF index number| Index number for Higher Everyday Living Fee | 
 
 ### Billing journal
 
