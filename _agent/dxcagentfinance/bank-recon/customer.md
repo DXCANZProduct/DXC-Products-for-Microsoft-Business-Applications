@@ -136,8 +136,35 @@ Navigate to **Cash and bank management > Enquiries and reports > Customer remitt
 This form contains Customer remittance records that could refer to one or multiple invoices as per the customer's remittance. It is used in creating customer payments from the bank reconciliation and settling all the invoices as per this form. This only applies to where the Bank account's **Customer payment creation** is set to either _Settle from remittance and continue_ or _Settle from remittance only_.
 
 The records can be created from: 
-1. Process emails with agent - Process messages in DXCAgentEmailContentTable where DXCAgentId is DXCAgentForPendingRemittanceCreation and MessageStatus is set to Waiting.
-2. Data entities: Pending remittance header & Pending remittance lines
+1. **Process emails with agent**: **Agent for pending remittance creation** process messages in DXCAgentEmailContentTable where DXCAgentId is DXCAgentForPendingRemittanceCreation and MessageStatus is set to Waiting. 
+2. **Data entities**: Pending remittance header & Pending remittance lines.
+3. **New**: Users could use the New buttons to manually create remittance header and lines.
+
+The following fields are available.
+
+### Pending remittance header
+
+Name        | Description when created with Process emails with agent     
+:--         |:--  
+**Pending remittance id**    | Unique identifier for the remittance record. Created by using the number sequence **Pending remittance id** in Cash and bank management parameters.
+**Customer account**         | Customer account is determined by the first invoice in the remittance.
+**Payment reference**        | Populated from the remittance.
+**Payment date**             | Populated from the remittance.
+**Remittance status**        | Record is created with _Pending_ status. Once used in bank reconciliation customer payment creation, the status is changed to _Processed_. Users can also manually change a record's status to _Cancelled_ to exclude it from processing.
+**Currency**                 | Populated from the remittance.
+**Amount in transaction currency**    | Total payment amount from the remittance.
+
+### Pending remittance lines
+
+Name        | Description when created with Process emails with agent     
+:--         |:--
+**Invoice**    | Populated from the remittance.
+**Currency**   | Populated from the remittance.
+**Amount in transaction currency**    | Payment amount per invoice from the remittance.
+
+### Line details
+
+Line details are display fields based on the invoice selected in the Pending remittance lines
 
 ## Bank reconciliation
 
