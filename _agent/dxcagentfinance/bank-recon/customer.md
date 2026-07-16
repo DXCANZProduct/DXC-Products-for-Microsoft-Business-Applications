@@ -129,22 +129,6 @@ Navigate to **Cash and bank management > Setup > Cash and bank management parame
 
 # Processing
 
-The **DXC Agent for Bank reconciliation in D365 FSCM** can be run by: 
-
-## Automatically with Bank statement import
-
-See [setup]({{ '/agent/bank-recon/setup/all#b4-bank-accounts' | relative_url }}) for prerequisites.
-
-When importing bank statements with **Reconcile after import** enabled and the prerequisite setup are met the agent will automatically run the licensed agents assigned to the workflow that is either assigned to the Bank account, Cash and bank parameters or the system default.
-
-## Manually in Bank reconciliation Worksheet
-
-The agent can be manually run by navigating to **Cash and bank management > Bank statement reconciliation > Bank reconciliation** and selecting the applicable reconciliation's **Worksheet**.
-
-Where the agent is enabled, the **Create customer payment with agent** button will be enabled in the **Unmatched transactions** tab. 
-- To run the agent for all unmatched bank statement transactions, no need to select any records only click **Create customer payment with agent**.
-- To run the agent for manually selected records, select the applicable unmatched bank statement transactions and click **Create customer payment with agent**
-
 ## Customer remittance pending payments
 
 Navigate to **Cash and bank management > Enquiries and reports > Customer remittance pending payments**.
@@ -155,10 +139,26 @@ The records can be created from:
 1. Process emails with agent - Process messages in DXCAgentEmailContentTable where DXCAgentId is DXCAgentForPendingRemittanceCreation and MessageStatus is set to Waiting.
 2. Data entities: Pending remittance header & Pending remittance lines
 
+## Bank reconciliation
 
-## Results
+The **DXC Agent for Bank reconciliation in D365 FSCM** can be run by: 
 
-### Matched transactions
+### Automatically with Bank statement import
+
+See [setup]({{ '/agent/bank-recon/setup/all#b4-bank-accounts' | relative_url }}) for prerequisites.
+
+When importing bank statements with **Reconcile after import** enabled and the prerequisite setup are met the agent will automatically run the licensed agents assigned to the workflow that is either assigned to the Bank account, Cash and bank parameters or the system default.
+
+### Manually in Bank reconciliation Worksheet
+
+The agent can be manually run by navigating to **Cash and bank management > Bank statement reconciliation > Bank reconciliation** and selecting the applicable reconciliation's **Worksheet**.
+
+Where the agent is enabled, the **Create customer payment with agent** button will be enabled in the **Unmatched transactions** tab. 
+- To run the agent for all unmatched bank statement transactions, no need to select any records only click **Create customer payment with agent**.
+- To run the agent for manually selected records, select the applicable unmatched bank statement transactions and click **Create customer payment with agent**
+
+
+### Results - Matched transactions
 
 Where the Bank account's **Customer payment journal posting** was set to _Yes_, the Customer payment journals are posted and automatically matched to the original bank statement record. 
 The following sections only applies to above set to _Yes_.
@@ -187,7 +187,7 @@ To view Agent reasoning, see **Matching justification** for more information.
 
 The **Matching type** will be **Generate customer payment**.
 
-### Bank reconciliation
+### Analytics
 
 The following agent numbers are available to view on each bank reconciliation and the General tab:
 - **Bank statements matched by agent** - Count of bank statements matched by agent for the bank reconciliation
