@@ -70,14 +70,14 @@ Per each run, the following telemetry could be logged per agent. The data is dis
 - Number of runs - Each time the agent is run, either via import or button in bank reconciliation worksheet
 
 
-### Agent for Pending Remittance Creation
+### Agent for pending remittance creation
 
 Utilised for creating the **Customer remittance pending payments** from  Agent Email Content.
 
 Field                  | Description
 :--                    |:--
 **Agent name**         | DXCAgentForPendingRemittanceCreation
-**Agent description**  | TBD
+**Agent description**  | Agent for pending remittance creation
 **Agent connection details**  | Select the agent created in prerequisite [Agent connection parameters](../dxcagentframework/Setup.md#b2--agent-connection-parameters)
 **Agent instructions**  | Automatically populated with default Agent instructions
 **Agent output format**  | Automatically populated with default output format
@@ -85,7 +85,7 @@ Field                  | Description
 
 #### Agent knowledge sources
 
-This agent doesn't have any Agent knowledge sources.
+This agent doesn't require any Agent knowledge sources.
 
 
 ## Bank accounts
