@@ -79,7 +79,7 @@ Navigate to **Cash and bank management > Setup > Bank accounts** to setup the fo
 
 ## Bank transaction types
 
-Navigate to **Cash and bank management > Setup > Bank transaction types** and assign the applicable **Action** to each bank transaction type. <br>
+Navigate to **Cash and bank management > Setup > Bank transaction types** and assign the applicable **Action** to each bank transaction type. Only the Actions that create a new bank transaction applies. <br>
 This feature will review the bank statement records where the Action **Generate vendor payment** is mapped.
 
 Example: **Bank transaction type** value **12** has Action **Generate vendor payment** assigned.
