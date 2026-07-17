@@ -199,6 +199,11 @@ Button **Cancel payment** can be used to create an "opposite"/reversing transact
 > Note: Ensure **Bank transaction type** setup against field **NSF** in **Cash and bank management parameters** is the same as your Bank transaction type in your **Method of payment**. If they differ, standard matching doesn't allow these two bank document records to matched against each other, and throws the following error:
 > "The criteria to reconcile have not been met. You can reconcile either a single canceled check or two transactions. To reconcile two transactions, the document type must be Other, and the documents must have the same bank account, transaction type, payment reference and have opposite amounts.
 
+#### Customer remittance
+Button **Customer remittance** is enabled for customer payments created using **Customer remittance pending payments**. This opens the **Customer remittance pending payments** page, for the selected Remittance record that was used in the payment creation.
+
+Field **Pending remittance id** is also populated on the bank statement record with the applicable remittance id.
+
 #### Matching rule
 The transactions that have been matched by the Agent can easily be viewed in **Matched transactions** as these are flagged in **Matching rule** with **DXCAgent**. <br>
 
