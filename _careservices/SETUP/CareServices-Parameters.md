@@ -8,24 +8,25 @@ toc: true
 # Care Services Parameters
 
 The parameters for Care Services are contained within the standard Dynamics 365 Care Services parameter form. 
-Navigate to Care Services> Setup > Care Services parameter
+Navigate to **Care services> Setup > Care services parameters**
 
 ## General
-On the General tab of the Care Services parameters form, you can configure the generic type of care services business logic
+On the General tab of the Care services parameters form, you can configure the generic type of Care Services business logic
 
 ### Non care services statement
 
-When the "Use customer statement name" parameter is enabled (Yes) in Care Services Parameters, the system will use the value entered in the Customer Statement Name field in the Customer table when generating the Customer Statement.
+When the "Use customer statement name" parameter is enabled (Yes) in Care services parameters, the system will use the value entered in the Customer statement name field in the Customer table when generating the Customer statement.
 1.	Care services billing statement.
 2.	Care services accommodation payment statement.
 
-### Payment cancellation parameter
-Activate cancel payment option for summarised transactions
-Selecting the Activate cancel payment option for summarised transactions allows users to cancel customer payments even when the bank transaction has been summarised into a single bank transaction.  The bank transaction will be adjusted by the amount of the cancelled payment.
+### Payment cancellation parameters
+**Activate cancel payment option for summarised transactions** <br>
+When a user performs a direct debit run, there is the option to have all of the payments 'summarised' into a single line on the bank reconciliation page. 
+When enabled (Yes), this parameter allows users to reverse customer payments from the bank reconciliation amount even when the payment transaction has been summarised into a single bank transaction line.  The amount of the cancelled payment on the bank reconciliation line will reduce the bank transaction even if it has been reconciled.
 
 ### Address and contact purpose
-Previous occupant update email
-When a new service entry is created, the system checks to see if anyone else is being billed for charges related to that accommodation.  If a billing schedule line is found, those charges are ended, and an email is sent to advise of this.
+**Previous occupant update email** <br>
+When a new service entry is created, the system checks whether anyone else is being billed for charges related to that accommodation/Service code.  If a billing schedule line is found, those charges are ended, and an email is sent to the corresponding email contact against that Service code to advise of this. You can nominate the purpose to be used for the matching email address and which organisational email template ( should be utilised 
 
 
 |  **Field**  | **Description** | 
