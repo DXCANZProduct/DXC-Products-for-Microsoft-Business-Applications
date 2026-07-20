@@ -157,7 +157,7 @@ Number of threads| Number of threads generating funding journal via the funding 
 
 |  **Field**  | **Description** | 
 |:---|:---| 
-|  Billing Account Name for HCP Funding  | Defines the billing account that receives Home Care Package funding from the government.Used when HCP funding claims are processed. <br> •	Records HCP funding income transactions. <br> •	Supports reconciliation of funding received. | 
+|  Billing Account Name for HCP Funding  | Defines the billing account that receives Home Care Package funding from the government.  Used when HCP funding claims are processed. <br> •	Records HCP funding income transactions. <br> •	Supports reconciliation of funding received. | 
 |  Billing Account Name for HCP Billing | Specifies the billing account used for charging services delivered under Home Care Packages. <br> •	Generates resident or client service charges. <br> •	Links delivered services to the HCP billing ledger. <br> •	Supports invoicing and reporting. | 
 |  Home Based Care Category for Income  | Determines the income category assigned to Home Care Package revenues. <br> •	Categorizes HCP income. <br> •	Supports financial reporting and analysis. <br> •	Ensures consistent classification of package funding.| 
 | Billing Code for Client Unspent Finalisation | Defines the billing code used when processing final client unspent balances after package closure. <br> •	Applies during client exit processing. <br> •	Records final unspent balance adjustments.<br> •	Supports regulatory compliance. | 
@@ -175,7 +175,7 @@ Number of threads| Number of threads generating funding journal via the funding 
 |:---|:---| 
 |  Billing Account Type Support at Home Funding  |Defines the billing account used to record Support at Home funding transactions received from the funding authority. <br> •	Records Support at Home funding income. <br> •	Used during funding claim processing. <br> •	Supports funding reconciliation and reporting.| 
 | Billing Account Type for Client Contributions  | Defines the billing account used to record client contribution charges. <br> •	Posts client contributions to the appropriate ledger account. <br> •	Supports invoicing and payment tracking. <br> •	Separates government funding from client-funded amounts.  | 
-|  *Billing Code for Client Contributions  | Specifies the billing code used when charging client contribution fees. <br> •	Generates client contribution transactions. <br> •	Identifies contribution charges in reports and invoices. <br> •	Supports financial tracking and auditing.  | 
+|  Billing Code for Client Contributions  | Specifies the billing code used when charging client contribution fees. <br> •	Generates client contribution transactions. <br> •	Identifies contribution charges in reports and invoices. <br> •	Supports financial tracking and auditing.  | 
 |  Billing Code for Client Contribution Adjustments| Defines the billing code used when correcting or adjusting previously charged client contribution amounts. <br> •	Processes refunds or corrections. <br> •	Adjusts billing errors. <br> •	Manages retrospective fee changes. | 
 |  Maximum Funding Claims on Funding Claim Form  | Determines the maximum number of funding claim lines that can be included on a single funding claim form. <br> •	Controls claim form size. <br> •	Improves claim processing efficiency. <br> •	Supports compliance with funding submission requirements.  | 
 
