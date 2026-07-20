@@ -131,17 +131,14 @@ The Higher Everyday Living Fee (HELF) is an optional fee for enhanced lifestyle 
 |  Auto post | Allows the system to Auto-post the billing journal generated from batch processing | 
 
 ## Funding
-###  Funding parameter
+###  Funding parameters
 
 |  **Field**  | **Description** | 
 |:---|:---| 
 |  Enable default dimensions | Determines whether default financial dimensions are automatically assigned to funding transactions. | 
 |  Enable auto journal approval | Automatically approves generated funding journals when enabled. | 
-|  Support ratio reduction  | Set the supported ratio reduction to the percentage that the funding will be reduced by.  | 
-|  Support ratio threshold  | Set the Supported ratio threshold to the ratio set by the Department to specify the minimum percentage of supported residents required before the funding is reduced.| 
-
-### Subsidy
-The Subsidy field in the Care Service Parameters has been deprecated
+|  Support ratio reduction  | This ratio is the percentage used to  reduce the accommodation payment amounts if the supported ratio threshold was not reached.  Set the percentage that the funding will be reduced by.  | 
+|  Support ratio threshold  | Set the supported ratio threshold to the ratio specified by the Department to indicate the minimum percentage of supported residents required before funding is reduced. | 
 
 ### Funding journal
 Number of threads generating funding journal via the funding claim form
