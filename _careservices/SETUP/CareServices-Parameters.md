@@ -141,7 +141,10 @@ The Higher Everyday Living Fee (HELF) is an optional fee for enhanced lifestyle 
 |  Support ratio threshold  | Set the supported ratio threshold to the ratio specified by the Department to indicate the minimum percentage of supported residents required before funding is reduced. | 
 
 ### Funding journal
-Number of threads generating funding journal via the funding claim form
+
+|  **Field**  | **Description** | 
+|:---|:---| 
+Number of threads| Number of threads generating funding journal via the funding claim form
 
 ### Funding reconciliation
 
