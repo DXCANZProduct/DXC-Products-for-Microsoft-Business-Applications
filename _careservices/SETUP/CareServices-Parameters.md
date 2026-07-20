@@ -263,6 +263,7 @@ Defines the environment-specific connection used for Services Australia integrat
 |  Device Expiry   | Displays the expiration date of the registered device certificate. | 
 
 ### General
+
 |  **Field**  | **Description** | 
 |:---|:---| 
 |  Auth  | Select the authentication profile to be used for this connection. | 
@@ -278,7 +279,7 @@ In line with standard D365 operations, Print Management provides the centralised
 
 The following document types are available for configuration:
 
-|  **Docuemnt name**  | **Description** | **Navigation** |
+|  **Document name**  | **Description** | **Navigation** |
 |:---|:---| :---|
 |Care services Accommodation Payment Statement|Generate the report for resident/client accommodation payment transactions, lump sum invoices, payments and drawdowns from the accommodation payment.| Care services > inquiries and reports > Care services accommodation payment statement| 
 |Care Services Billing Statement| Generate the report for resident/client billing transactions, payments and drawdowns from the accommodation payment.| Care services > inquiries and reports > Care services billing statement|
