@@ -127,14 +127,8 @@ The Higher Everyday Living Fee (HELF) is an optional fee for enhanced lifestyle 
 
 |  **Field**  | **Description** | 
 |:---|:---| 
-|  Number of threads  | To handle the number of transactions in a batch when generating billing journal | 
-|  Auto post | Auto-post the billing journal from batch processing | 
-
-### Billing line restriction exclusion
-The Billing line restriction exclusion field in the Care Service Parameters has been deprecated
-
-### Import parameters
-The Billing rate ER import mapping id  field in the Care Service Parameters has been deprecated
+|  Number of threads  | Used to handle the number of transactions in a batch when generating a billing journal | 
+|  Auto post | Allows the system to Auto-post the billing journal generated from batch processing | 
 
 ## Funding
 ###  Funding parameter
@@ -143,8 +137,8 @@ The Billing rate ER import mapping id  field in the Care Service Parameters has 
 |:---|:---| 
 |  Enable default dimensions | Determines whether default financial dimensions are automatically assigned to funding transactions. | 
 |  Enable auto journal approval | Automatically approves generated funding journals when enabled. | 
-|  Support ratio reduction  | Set the supported ratio reduction to the percentage that the funding will be reduced by  | 
-|  Support ratio threshold  | Set the Supported ratio threshold to the ratio set by the Department to specify the minimum percentage of supported residents required before the funding is reduced.  | 
+|  Support ratio reduction  | Set the supported ratio reduction to the percentage that the funding will be reduced by.  | 
+|  Support ratio threshold  | Set the Supported ratio threshold to the ratio set by the Department to specify the minimum percentage of supported residents required before the funding is reduced.| 
 
 ### Subsidy
 The Subsidy field in the Care Service Parameters has been deprecated
@@ -156,8 +150,8 @@ Number of threads generating funding journal via the funding claim form
 
 |  **Field**  | **Description** | 
 |:---|:---| 
-|  Billing account name used for residential billing  | Select the billing account name to be used for the billing adjustment transactions, usually MTCF, raised from the funding reconciliation | 
-|  Billing code for MTCF adjustment  | Select the billing code to be used for billing adjustment transactions, usually MTCF, raised from the funding reconciliation | 
+|  Billing account name used for residential billing  | Select the billing account name to be used for the billing adjustment transactions, usually Means-Tested Care Fee (MTCF), raised from the funding reconciliation | 
+|  Billing code for MTCF adjustment  | Select the billing code to be used for billing adjustment transactions, usually Means-Tested Care Fee (MTCF), raised from the funding reconciliation | 
 
 ### Home care packages
 
@@ -176,6 +170,7 @@ Number of threads generating funding journal via the funding claim form
  |  HCP Funding Reconciliation Adjustment Account | Defines the General Ledger account used for reconciliation adjustment postings. <br> •	Records funding variances. <br> •	Supports end-of-period reconciliation. <br> •	Maintains audit traceability.| 
 
 ### Support at home
+
 |  **Field**  | **Description** | 
 |:---|:---| 
 |  Billing Account Type Support at Home Funding  |Defines the billing account used to record Support at Home funding transactions received from the funding authority. <br> •	Records Support at Home funding income. <br> •	Used during funding claim processing. <br> •	Supports funding reconciliation and reporting.| 
