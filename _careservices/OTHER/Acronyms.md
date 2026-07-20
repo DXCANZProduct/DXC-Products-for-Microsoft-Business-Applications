@@ -27,6 +27,7 @@ ITR|Integrated Test Results
 MFA|Multi-Factor Authentication
 MHR|My Health Record
 MPIR|Maximum Permissible Interest Rate 
+MTCF| Means-Tested Care Fee 
 NAPS|National Approved Provider Service Identifier (NAPS Id)
 NDIS|National Disability Insurance Scheme
 NOI|Notice of Integration
