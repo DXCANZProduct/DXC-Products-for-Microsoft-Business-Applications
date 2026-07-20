@@ -203,7 +203,7 @@ Number of threads| Number of threads generating funding journal via the funding 
 
 |  **Field**  | **Description** | 
 |:---|:---| 
-|  Include Transactions Up To  | Determines the historical transaction period included when processing accommodation payment calculations. | 
+|  Include Transactions Up To  | Determines the historical transaction period included when processing accommodation payment calculations. Allows a range of one, two or three months. | 
 
 ### Accommodation Payment Types
 
@@ -220,9 +220,6 @@ Number of threads| Number of threads generating funding journal via the funding 
 |  Ingoing Contribution  | Defines the billing category used for resident ingoing contributions. <br> •	Records entry contributions. <br> •	Supports accommodation funding administration.|
 |  Supported / Accommodation Payment  | Defines the billing type used when accommodation is supported through funding assistance programs. <br> •	Identifies subsidised accommodation arrangements. <br> •	Supports government funding reporting. |
 
-### Import parameters
-The Accommodation Payment Line ER Import Mapping  field in the Care Service Parameters has been deprecated
-
 ### Retentions
 
 |  **Field**  | **Description** | 
@@ -230,17 +227,22 @@ The Accommodation Payment Line ER Import Mapping  field in the Care Service Para
 |  Annual Retention Rate  | Defines the annual retention percentage applied to accommodation deposits. <br> Example <br> Retention Rate: 2% <br> Accommodation Deposit: $100,000 <br> Annual Retention: <br> $100,000 × 2% = $2,000  | 
 |  Retention Capped Years  | Defines the maximum number of years retention amounts can be applied. <br> Example <br> If retention is capped at 5 years: <br> •	Retention applies annually for five years. <br> •	No additional retention is charged after the fifth year.| 
 |  Allow Negative Lump Sum Balance  | Determines whether accommodation lump sum balances can become negative. | 
-|  Default Retention Billing Account Type  | Specifies the default billing account used when retention transactions are generated.| 
+|  Default Retention Billing Account Type  | Specifies the default customer billing account type used when retention transactions are generated.| 
 
 ## Services
 ### Set up services for care services
 
 |  **Field**  | **Description** | 
 |:---|:---| 
-|  Departure Reason – Inactive  | Specifies the default departure reason used when a resident or client is marked as inactive. | 
-|  Enable Place Address Transfer  | Controls whether address information is automatically transferred between resident records and related place records. | 
-|  Default Place Address Purpose  | Determines the default address purpose assigned when a new place address is created. | 
-|  Default deprecated address purpose  | Select the default purpose of the deprecated address  on client transfer | 
+|  Departure Reason – Inactive  | Specifies the default departure reason used when a service entry is marked as inactive. | 
+|  Enable Place Address Transfer  | Enables transfer of a place address to the customer’s primary address when a customer is admitted to a service. | 
+|  Default Place Address Purpose  |Used in conjunction with *Enable place address transfer* determines the default address purpose assigned when the new address record is created on the customer account as a result of the place address transferring upon entering a service | 
+|  Default deprecated address purpose  | Select the default purpose to be assigned to the deprecated address  upon client transfer | 
+
+### Service entry setup
+
+|  **Field**  | **Description** | 
+|:---|:---| 
 |  Calculate Current Service Entry  | Determines whether the system automatically calculates a resident's current service entry status.| 
 |  Enable Service Listing Syncing  | Controls whether service listings are synchronised automatically with related care service records.| 
 
