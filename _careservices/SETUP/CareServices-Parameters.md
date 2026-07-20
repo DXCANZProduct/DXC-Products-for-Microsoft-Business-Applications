@@ -43,7 +43,7 @@ When a new service entry is created, the system checks whether anyone else is be
 
 ### Workflows 
 
-See [care services workflows] ({{ '/careservices/SETUP/Care-Services-workflows' | relative_url }})) for further details around set up, workflow elements and assignment types 
+See [care services workflows] ({{ /careservices/SETUP/Care-Services-workflows' | relative_url }})) for further details around set up, workflow elements and assignment types 
 
 Billing journal workflows
 
