@@ -106,12 +106,12 @@ On the Billing tab of the Care services parameters form, you can configure the b
 |  **Field**  | **Description** | 
 |:---|:---| 
 |  Enable invoice billing functionality  | Instead of just having the billing journal capabilities, this toggle enables the use of the billing transactions and invoice functionality. This is typically applied when customers have a large number of transactions that are merged into a single customer transaction line. | 
-|  Enable billing transactions invoice id  | This toggle allows invoice numbers to be automatically allocated to each billing journal line | 
+|  Enable billing transactions invoice id  | This toggle allows invoice number IDs to be allocated to billing transactions | 
 |  Enable default dimensions  | This toggle allows default dimensions in the system to auto-populate on the billing journals | 
 |  Enable auto journal approval  | Billing journals can be configured to be approved upon creation using this toggle. | 
 |  Enable zero-dollar billing transactions  |This option permits billing transactions with a zero-dollar value to be posted so that customer information can be included on the invoice.| 
-|  Day weeks start | The Weekly & Fortnightly billing recurrences use this to determine which day should be used to start the period so all customers are aligned | 
-|  Enable auto billing journal proposal tax invoice number  | This will allow the user to automatically create and select a new number sequence format for the billing journal proposal tax invoice| 
+|  Day week starts | The Weekly & Fortnightly billing recurrences use this to determine which day should be used to start the period so all customers are aligned | 
+|  Enable auto billing journal proposal tax invoice number  | This will allow the user to automatically create and select a new number sequence format for the billing journal proposal tax invoice, and for those numbers to be allocated to Billing journal lines| 
 |  Include service group on billing journal | To show and include service group on the billing journal| 
 
 The Higher Everyday Living Fee (HELF) is an optional fee for enhanced lifestyle and comfort services in residential aged care. Because HELF is an optional, direct-contracted service rather than a government-subsidised care fee, it does not use a statutory or government accommodation payment interest code.  Because it is an optional extra, any interest, late payment terms, or billing methods for HELF are outlined separately.
@@ -156,7 +156,7 @@ Number of threads generating funding journal via the funding claim form
 
 |  **Field**  | **Description** | 
 |:---|:---| 
-|  Billing account name user for residential billing  | Select the billing account name to be used for the billing adjustment transactions, usually MTCF, raised from the funding reconciliation | 
+|  Billing account name used for residential billing  | Select the billing account name to be used for the billing adjustment transactions, usually MTCF, raised from the funding reconciliation | 
 |  Billing code for MTCF adjustment  | Select the billing code to be used for billing adjustment transactions, usually MTCF, raised from the funding reconciliation | 
 
 ### Home care packages
