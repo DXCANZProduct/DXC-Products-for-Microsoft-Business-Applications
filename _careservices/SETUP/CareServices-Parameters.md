@@ -70,7 +70,6 @@ Billing schedule workflows
 On the Journals tab of the Care services parameters form, you can configure naming conventions and default settings for the different types of journals used in Care Services.
 
 ### Journal names
-
 The Ledger Journal names that are used by default for system-generated journals in the relevant segments of the Care Services Product are included in this section. This incorporates the relevant journal configuration and dimension setup in accordance with standard D365 behaviours.
 
 |  **Field**  | **Description** | 
