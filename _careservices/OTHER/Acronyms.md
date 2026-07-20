@@ -21,6 +21,7 @@ DAP|Residential Aged Care Daily Accommodation Payment
 ECR|Estimated Cost of Care
 GPMS|Government Provider Management System
 HCP|Home Care Packages
+HELF|Higher Everyday Living Fee
 IHACPA|Independent Health and Aged Care Pricing Authority
 IPA|Improved payment arrangements
 ITR|Integrated Test Results
