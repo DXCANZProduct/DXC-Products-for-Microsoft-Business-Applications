@@ -274,9 +274,14 @@ Defines the environment-specific connection used for Services Australia integrat
 |  Batch Jobs   | Defines the number of parallel batch tasks used when processing Services Australia transactions. | 
 
 ## Print management
-The Print Management displays available Care Services documents and their associated print settings.
+In line with standard D365 operations, Print Management provides the centralised framework used to configure how common Care Services documents are generated and distributed.
+
 The following document types are available for configuration:
-<br> •	Care Services Accommodation Payment Statement
-<br> •	Care Services Billing Statement
-<br> •	Care Services Statement
+
+|  **Docuemnt name**  | **Description** | **Navigation** |
+|:---|:---| :---|
+|Care services Accommodation Payment Statement|Generate the report for resident/client accommodation payment transactions, lump sum invoices, payments and drawdowns from the accommodation payment.| Care services > inquiries and reports > Care services accommodation payment statement| 
+|Care Services Billing Statement| Generate the report for resident/client billing transactions, payments and drawdowns from the accommodation payment.| Care services > inquiries and reports > Care services billing statement|
+|Care Services Statement|:---| Care services > inquiries and reports > Care Services Statement|
+
 
