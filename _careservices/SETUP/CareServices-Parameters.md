@@ -13,25 +13,25 @@ Navigate to **Care services> Setup > Care services parameters**
 ## General
 On the General tab of the Care services parameters form, you can configure the generic type of Care Services business logic
 
-### Non care services statement
+### Non-care services statement
 
-When the "Use customer statement name" parameter is enabled (Yes) in Care services parameters, the system will use the value entered in the Customer statement name field in the Customer table when generating the Customer statement.
+When the "Use customer statement name" parameter is enabled (Yes) in the Care services parameters, the system uses the value entered in the Customer statement name field in the Customer table when generating the customer statement, rather than the entered client details. For example, instead of James Smith, the client may prefer to use Mr & Mrs Smith; enter this in the Customer statement name field. This will affect the following reports:
 1.	Care services billing statement.
 2.	Care services accommodation payment statement.
 
 ### Payment cancellation parameters
 **Activate cancel payment option for summarised transactions** <br>
 When a user performs a direct debit run, there is the option to have all of the payments 'summarised' into a single line on the bank reconciliation page. 
-When enabled (Yes), this parameter allows users to reverse customer payments from the bank reconciliation amount even when the payment transaction has been summarised into a single bank transaction line.  The amount of the cancelled payment on the bank reconciliation line will reduce the bank transaction even if it has been reconciled.
+When enabled (Yes), this parameter allows users to reverse customer payments from the bank reconciliation amount even when the payment transaction has been summarised into a single bank transaction line.  The amount of the cancelled payment on the bank reconciliation line will subsequently be reduced on the bank transaction even if it has been reconciled.
 
 ### Address and contact purpose
 **Previous occupant update email** <br>
-When a new service entry is created, the system checks whether anyone else is being billed for charges related to that accommodation/Service code.  If a billing schedule line is found, those charges are ended, and an email is sent to the corresponding email contact against that Service code to advise of this. You can nominate the purpose to be used for the matching email address and which organisational email template ( should be utilised 
+When a new service entry is created, the system checks whether anyone else is being billed for charges related to that accommodation/Service code.  If a billing schedule line is found, those charges are ended, and an email is sent to the corresponding email contact against that Service code to advise of this. You can nominate the purpose to be used for the matching email address and which organisational email template (Organisation administration > Setup > Organisation email templates) should be utilised 
 
 
 |  **Field**  | **Description** | 
 |:---|:---|     
-|  Purpose | The purpose for the email address to be used is selected here. | 
+|  Purpose | The purpose for the email address to be used for the previous occupant assigned to the service code is selected here. | 
 |  Template  | Select the template for the email alert| 
 
 ### Reports
@@ -67,25 +67,26 @@ Billing schedule workflows
 | Override 'Disallow approval by submitter' | This toggle allows an initiator of a Billing schedule line to also be an approver. |
 
 ## Journals 
-On the Journals tab of the Care Services parameters form, you can configure naming conventions and default settings for the different types of journals used in Care Services.
+On the Journals tab of the Care services parameters form, you can configure naming conventions and default settings for the different types of journals used in Care Services.
 
 ### Journal names
 
-The Ledger Journal names that are pertinent to the relevant segment of the Care Services Product are included in this section. This incorporates the relevant journal configuration and dimension setup in accordance with standard D365 behaviours.
+The Ledger Journal names that are used by default for system-generated journals in the relevant segments of the Care Services Product are included in this section. This incorporates the relevant journal configuration and dimension setup in accordance with standard D365 behaviours.
 
 |  **Field**  | **Description** | 
 |:---|:---| 
-| Billing journal | Default name  for the Care services Billing journal residential account type | 
-|  Funding journal  | Default name for the Care services Funding journal | 
-|  Receipt journal  | Default name for the Care services Receipt journal | 
-|  Funding reconciliation journal  | Default name for the Care services Funding Reconciliation Journal | 
-| Lumpsum invoice journal  | Default name  for the Care services Billing Journal for accommodation account type | 
-|  Lumpsum receipt journal  | Default name for the receipt journal accommodation account type | 
-|  CRF Journal  | Default name for Capital Refurbishment Fees  Journal | 
-|  DMF Journal  | Default name for Deferred Management Fees  Journal | 
-|  Capital gain journal  | Default name for Capital Gains Journal | 
-|  Funding reconciliation adj jnl  | Default name for Care services adjustment billing journal residential account type  | 
-|  Refund journal  | Default name for refund journal for residential account type | 
+| Billing journal | Default Journal name  for the Care services Billing journal residential account type | 
+|  Funding journal  | Default Journal name for the Care services Funding journal | 
+|  Receipt journal  | Default Journal name for the Care services Receipt journal | 
+|  Funding reconciliation journal  | Default Journal name for the Care services Funding Reconciliation Journal | 
+| Lumpsum invoice journal  | Default Journal name  for the Care services Billing Journal for accommodation account type | 
+|  Lumpsum receipt journal  | Default Journal name for the receipt journal accommodation account type | 
+|  CRF Journal  | Default Journal name for Capital Refurbishment Fees  Journal | 
+|  DMF Journal  | Default Journal name for Deferred Management Fees  Journal | 
+|  Capital gain journal  | Default Journal name for Capital Gains Journal | 
+|  Capital loss journal  | Default Journal name for Capital loss Journal | 
+|  Funding reconciliation adj jnl  | Default Journal name for Care services adjustment billing journal, residential account type  | 
+|  Refund journal  | Default Journal name for refund journal for residential account type | 
 
 ### Journal defaults
 Specifies the default value that will be used within the journal for the corresponding action type 
