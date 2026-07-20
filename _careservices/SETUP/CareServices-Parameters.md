@@ -89,6 +89,7 @@ The Ledger Journal names that are used by default for system-generated journals 
 
 ### Journal defaults
 Specifies the default value that will be used within the journal for the corresponding action type 
+
 |  **Field**  | **Description** | 
 |:---|:---| 
 |  Receipt journal billing account name | When a new receipt journal line is established, the default billing account name is used. | 
