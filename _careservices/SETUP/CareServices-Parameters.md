@@ -186,16 +186,16 @@ Number of threads| Number of threads generating funding journal via the funding 
 |:---|:---| 
 |  Allow Charge Beyond Capping Limits | Controls whether service charges can continue after a resident reaches their annual or lifetime capping limit. | 
 |  Auto Create Client Capping | Automatically creates capping records for new residents or clients requiring capping management | 
-|  Annual Capping Limit  | Defines the annual contribution threshold that a resident can be charged within a financial year | 
-|  Lifetime Capping Limits  | Specifies the lifetime capping limit configuration used by the system. | 
-|  Total Years of Billing for NCCC  | Determines the number of years used when calculating contribution caps under the NCCC billing framework. | 
+|  Annual Capping Limit  | Specifies the default annual capping limit threshold type that a resident can be charged within the year from their first date of entry to care | 
+|  Lifetime Capping Limits  | Specifies the default lifetime capping limit threshold type that a resident can be charged for the duration of their care provision  | 
+|  Total Years of Billing for NCCC  | Determines the number of years used when calculating contribution caps under the Non-clinical Care Contribution (NCCC) framework. | 
 
 ## Accommodation payment 
 ### Interest Rate Setup
 
 |  **Field**  | **Description** | 
 |:---|:---| 
-|  Interest Payable Billing Account Name  | Defines the billing account used to record accommodation payment interest charges. | 
+|  Interest Payable Billing Account Name  | Defines the billing account used when generating billing journals for accommodation payment interest payable to the departed resident | 
 |  Allow Agreed Amount to Exceed Accommodation Price  | Determines whether the agreed accommodation payment amount can be higher than the published accommodation price. | 
 |  DAP Consumer Price Index %*  | Specifies the Consumer Price Index (CPI) rate used to calculate Daily Accommodation Payments (DAP). <br> •	Supports DAP interest calculations. <br> •	Applies CPI adjustments where required. <br> •	Maintains current accommodation pricing calculations.| 
 
@@ -230,7 +230,7 @@ The Accommodation Payment Line ER Import Mapping  field in the Care Service Para
 |  Annual Retention Rate  | Defines the annual retention percentage applied to accommodation deposits. <br> Example <br> Retention Rate: 2% <br> Accommodation Deposit: $100,000 <br> Annual Retention: <br> $100,000 × 2% = $2,000  | 
 |  Retention Capped Years  | Defines the maximum number of years retention amounts can be applied. <br> Example <br> If retention is capped at 5 years: <br> •	Retention applies annually for five years. <br> •	No additional retention is charged after the fifth year.| 
 |  Allow Negative Lump Sum Balance  | Determines whether accommodation lump sum balances can become negative. | 
-|  Default Retention Billing Account Type  | Specifies the default billing account used when retention transactions are generated. <br> •	Posts retention charges automatically. <br> •	Supports financial reporting and auditing.| 
+|  Default Retention Billing Account Type  | Specifies the default billing account used when retention transactions are generated.| 
 
 ## Services
 ### Set up services for care services
