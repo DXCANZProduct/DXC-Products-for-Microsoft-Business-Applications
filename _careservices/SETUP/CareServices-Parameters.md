@@ -285,4 +285,5 @@ The following document types are available for configuration:
 |Care Services Billing Statement| Generate the report for resident/client billing transactions, payments and drawdowns from the accommodation payment.| Care services > inquiries and reports > Care services billing statement|
 |Care Services Statement|:---| Care services > inquiries and reports > Care Services Statement|
 
-
+##  Number sequences
+Set up number sequences for care services documents and tasks
